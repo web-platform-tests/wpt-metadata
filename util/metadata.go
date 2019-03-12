@@ -13,6 +13,7 @@ func CheckError(err error) {
 		fmt.Println(err)
 	}
 }
+
 // CollectMetadata iterates through wpt-metadata repository and returns a
 // map that maps a test path to its META.yml file content.
 func CollectMetadata() map[string][]byte{
