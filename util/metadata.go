@@ -1,4 +1,4 @@
-package main
+package util
 
 import (
 	"fmt"
@@ -39,8 +39,4 @@ func CollectMetadata() map[string][]byte{
 		ymlMap[testPath] = data 
 	}
 	return ymlMap
-}
-
-func main() {
-	fmt.Println(CollectMetadata())
 }
