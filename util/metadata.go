@@ -2,7 +2,6 @@ package util
 
 import (
 	"archive/tar"
-	"bytes"
 	"compress/gzip"
 	"fmt"
 	"io"
@@ -20,21 +19,15 @@ func CollectMetadata() (res map[string][]byte, err error) {
 	if err != nil {
 		return nil, err
 	}
+	defer resp.Body.Close()
 
 	statusCode := resp.StatusCode
-	// The statuscode could be one of redirect codes.
-	if !(statusCode == 200 || (statusCode >= 300 && statusCode <= 308)) {
+	if !(statusCode >= 200 && statusCode <= 299) {
 		err := fmt.Errorf("Bad status code:%d, Unable to download wpt-metadata", statusCode)
 		return nil, err
 	}
 
-	defer resp.Body.Close()
-	body, err := ioutil.ReadAll(resp.Body)
-	if err != nil {
-		return nil, err
-	}
-
-	gzip, err := gzip.NewReader(bytes.NewReader(body))
+	gzip, err := gzip.NewReader(resp.Body)
 	if err != nil {
 		return nil, err
 	}
@@ -62,9 +55,7 @@ func CollectMetadata() (res map[string][]byte, err error) {
 			continue
 		}
 
-		data := make([]byte, header.Size)
-
-		_, err = tarReader.Read(data)
+		data, err := ioutil.ReadAll(tarReader)
 		if err != nil && err != io.EOF {
 			return nil, err
 		}
