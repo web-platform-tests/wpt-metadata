@@ -62,6 +62,7 @@ func CollectMetadata() (res map[string][]byte, err error) {
 
 		// Removes `owner-repo` prefix in the file name.
 		relativeFileName := header.Name[strings.Index(header.Name, "/")+1:]
+		relativeFileName = strings.TrimSuffix(relativeFileName, "/META.yml")
 		metadataMap[relativeFileName] = data
 	}
 
