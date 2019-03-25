@@ -14,8 +14,8 @@ const url = "https://api.github.com/repos/web-platform-tests/wpt-metadata/tarbal
 
 // CollectMetadata iterates through wpt-metadata repository and returns a
 // map that maps a test path to its META.yml file content.
-func CollectMetadata() (res map[string][]byte, err error) {
-	resp, err := http.Get(url)
+func CollectMetadata(client *http.Client) (res map[string][]byte, err error) {
+	resp, err := client.Get(url)
 	if err != nil {
 		return nil, err
 	}
