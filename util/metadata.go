@@ -1,42 +1,70 @@
 package util
 
 import (
+	"archive/tar"
+	"compress/gzip"
 	"fmt"
+	"io"
 	"io/ioutil"
-	"os"
-	"path/filepath"
+	"net/http"
 	"strings"
 )
 
+const url = "https://api.github.com/repos/web-platform-tests/wpt-metadata/tarball"
+
 // CollectMetadata iterates through wpt-metadata repository and returns a
 // map that maps a test path to its META.yml file content.
-func CollectMetadata() map[string][]byte {
-	ymlFiles := []string{}
-	curPath, err := os.Executable()
+func CollectMetadata(client *http.Client) (res map[string][]byte, err error) {
+	resp, err := client.Get(url)
 	if err != nil {
-		panic(err)
+		return nil, err
+	}
+	defer resp.Body.Close()
+
+	statusCode := resp.StatusCode
+	if !(statusCode >= 200 && statusCode <= 299) {
+		err := fmt.Errorf("Bad status code:%d, Unable to download wpt-metadata", statusCode)
+		return nil, err
 	}
 
-	rootDir := filepath.Dir(filepath.Dir(curPath))
-	walkErr := filepath.Walk(rootDir, func(path string, f os.FileInfo, err error) error {
-		if f.Name() == "META.yml" {
-			ymlFiles = append(ymlFiles, path)
+	gzip, err := gzip.NewReader(resp.Body)
+	if err != nil {
+		return nil, err
+	}
+	defer gzip.Close()
+
+	tarReader := tar.NewReader(gzip)
+	var metadataMap = make(map[string][]byte)
+	for {
+		header, err := tarReader.Next()
+
+		if err == io.EOF {
+			break
 		}
-		return err
-	})
-	if walkErr != nil {
-		fmt.Println(walkErr)
-	}
 
-	ymlMap := make(map[string][]byte)
-	for _, file := range ymlFiles {
-		data, err := ioutil.ReadFile(file)
 		if err != nil {
-			fmt.Println(err)
+			return nil, err
 		}
-		testPath := strings.TrimPrefix(file, rootDir)
-		ymlMap[testPath] = data
+
+		// Not a regular file.
+		if header.Typeflag != tar.TypeReg {
+			continue
+		}
+
+		if !strings.HasSuffix(header.Name, "META.yml") {
+			continue
+		}
+
+		data, err := ioutil.ReadAll(tarReader)
+		if err != nil && err != io.EOF {
+			return nil, err
+		}
+
+		// Removes `owner-repo` prefix in the file name.
+		relativeFileName := header.Name[strings.Index(header.Name, "/")+1:]
+		relativeFileName = strings.TrimSuffix(relativeFileName, "/META.yml")
+		metadataMap[relativeFileName] = data
 	}
 
-	return ymlMap
+	return metadataMap, nil
 }
