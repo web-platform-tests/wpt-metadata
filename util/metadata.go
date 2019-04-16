@@ -10,12 +10,12 @@ import (
 	"strings"
 )
 
-const url = "https://api.github.com/repos/web-platform-tests/wpt-metadata/tarball"
+const metadataRepoURL = "https://api.github.com/repos/web-platform-tests/wpt-metadata/tarball"
 
 // CollectMetadata iterates through wpt-metadata repository and returns a
 // map that maps a test path to its META.yml file content.
 func CollectMetadata(client *http.Client) (res map[string][]byte, err error) {
-	resp, err := client.Get(url)
+	resp, err := client.Get(metadataRepoURL)
 	if err != nil {
 		return nil, err
 	}
@@ -31,6 +31,10 @@ func CollectMetadata(client *http.Client) (res map[string][]byte, err error) {
 	if err != nil {
 		return nil, err
 	}
+	return parseMetadataFromGZip(gzip)
+}
+
+func parseMetadataFromGZip(gzip *gzip.Reader) (res map[string][]byte, err error) {
 	defer gzip.Close()
 
 	tarReader := tar.NewReader(gzip)
