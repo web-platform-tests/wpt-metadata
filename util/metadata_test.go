@@ -9,6 +9,7 @@ import (
 
 func TestParseMetadataFromGZip_Success(t *testing.T) {
 	f, _ := os.Open("gzip_testfile.tar.gz")
+	defer f.Close()
 	reader, _ := gzip.NewReader(f)
 	expectedValIndexedDB :=
 		`links:
