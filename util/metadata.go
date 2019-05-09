@@ -15,7 +15,13 @@ const metadataArchiveURL = "https://api.github.com/repos/web-platform-tests/wpt-
 // CollectMetadata iterates through wpt-metadata repository and returns a
 // map that maps a test path to its META.yml file content.
 func CollectMetadata(client *http.Client) (res map[string][]byte, err error) {
-	resp, err := client.Get(metadataArchiveURL)
+	return CollectMetadataWithURL(client, metadataArchiveURL)
+}
+
+// CollectMetadataWithURL iterates through wpt-metadata repository and returns a
+// map that maps a test path to its META.yml file content, using a given URL.
+func CollectMetadataWithURL(client *http.Client, url string) (res map[string][]byte, err error) {
+	resp, err := client.Get(url)
 	if err != nil {
 		return nil, err
 	}
@@ -33,7 +39,6 @@ func CollectMetadata(client *http.Client) (res map[string][]byte, err error) {
 	}
 	return parseMetadataFromGZip(gzip)
 }
-
 func parseMetadataFromGZip(gzip *gzip.Reader) (res map[string][]byte, err error) {
 	defer gzip.Close()
 
