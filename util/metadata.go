@@ -10,10 +10,11 @@ import (
 	"strings"
 )
 
+const metadataArchiveURL = "https://api.github.com/repos/web-platform-tests/wpt-metadata/tarball"
 
 // CollectMetadata iterates through wpt-metadata repository and returns a
 // map that maps a test path to its META.yml file content.
-func CollectMetadata(client *http.Client, metadataArchiveURL string) (res map[string][]byte, err error) {
+func CollectMetadata(client *http.Client) (res map[string][]byte, err error) {
 	resp, err := client.Get(metadataArchiveURL)
 	if err != nil {
 		return nil, err
