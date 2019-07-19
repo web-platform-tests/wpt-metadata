@@ -11,6 +11,7 @@ import (
 	"strings"
 	"testing"
 
+	mapset "github.com/deckarep/golang-set"
 	"github.com/go-yaml/yaml"
 	"github.com/stretchr/testify/assert"
 	"github.com/web-platform-tests/wpt.fyi/shared"
@@ -37,11 +38,43 @@ func TestParseMetadata(t *testing.T) {
 			assert.Nil(t, err)
 			if strings.Contains(string(data), "links:") {
 				assert.Greater(t, len(metadata.Links), 0)
+				linkMap := make(map[string]string)
 				for _, link := range metadata.Links {
 					assert.Greater(t, len(link.Results), 0)
+					assert.Greater(t, len(link.URL), 0)
+					checkDuplicationAcrossLinks(t, link, linkMap)
+					resultSet := mapset.NewSet()
+					for _, result := range link.Results {
+						assert.Greater(t, len(result.TestPath), 0)
+						checkDuplicationWithinResults(t, result, resultSet)
+					}
 				}
 			}
 		})
 		return nil
 	})
+}
+
+func checkDuplicationAcrossLinks(t *testing.T, link shared.MetadataLink, linkMap map[string]string) {
+	val, ok := linkMap[link.URL]
+	expected := serializeStrings(link.Product.String())
+	if ok {
+		assert.NotEqual(t, val, expected, "duplicated entries between two links")
+	}
+	linkMap[link.URL] = expected
+}
+
+func checkDuplicationWithinResults(t *testing.T, result shared.MetadataTestResult, resultSet mapset.Set) {
+	expected := serializeStrings(result.TestPath, result.SubtestName, result.Status.String())
+	assert.False(t, resultSet.Contains(expected), "duplicated entries within results")
+	resultSet.Add(expected)
+}
+
+func serializeStrings(val ...string) string {
+	var returnVal string
+	for i := 0; i < len(val); i++ {
+		returnVal += strings.TrimSpace(val[i])
+	}
+
+	return returnVal
 }
