@@ -10,6 +10,7 @@ links:
     url: [URL]	
     results:
     - test: [Test path] 
+      subtest: [Subtest name] (optional)
       status: [Specific test result status] (optional)
   - ...
 ```
