@@ -1,0 +1,17 @@
+links:
+- product: firefox
+  results:
+  - subtest: 'createDocument test 195: metadata for null,null,DocumentType node <!DOCTYPE
+      html>'
+    test: DOMImplementation-createDocument.html
+  - subtest: 'createDocument test: null,"",DocumentType node <!DOCTYPE html -//W3C//DTD
+      XHTML 1.0 Transitional//EN http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd>'
+    test: DOMImplementation-createDocument.html
+  - subtest: 'createDocument test: null,null,DocumentType node <!DOCTYPE html>,null'
+    test: DOMImplementation-createDocument.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=520969
+- product: firefox
+  results:
+  - subtest: First set attribute is returned with mapped attribute set first
+    test: attributes.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1303629
