@@ -1,0 +1,24 @@
+links:
+- product: firefox
+  results:
+  - subtest: 'Document interface: attribute origin'
+    test: interfaces.html
+  - subtest: 'Document interface: xmlDoc must inherit property "origin" with the proper
+      type (3)'
+    test: interfaces.html
+  - subtest: 'Document interface: new Document() must inherit property "origin" with
+      the proper type (3)'
+    test: interfaces.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=931884
+- product: firefox
+  results:
+  - subtest: 'Historical DOM features must be removed: CDATASection'
+    test: historical.html
+  - subtest: 'Historical DOM features must be removed: createCDATASection'
+    test: historical.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=660660
+- product: firefox
+  results:
+  - subtest: 'Historical DOM features must be removed: DOMRequest'
+    test: historical.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1499547

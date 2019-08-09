@@ -1,0 +1,43 @@
+links:
+- product: firefox
+  results:
+  - subtest: setRemoteDescription() and peerIdentity should reject with OperationError
+      if IdP return validated identity that is different from its own domain
+    test: RTCPeerConnection-peerIdentity.https.html
+  - subtest: setRemoteDescription() with peerIdentity set and with IdP proxy that
+      return validationAssertion with mismatch contents should reject with OperationError
+    test: RTCPeerConnection-peerIdentity.https.html
+  - subtest: createAnswer() should reject with OperationError if identity assertion
+      request fails
+    test: RTCPeerConnection-getIdentityAssertion.sub.https.html
+  - subtest: createOffer() should reject with OperationError if identity assertion
+      request fails
+    test: RTCPeerConnection-getIdentityAssertion.sub.https.html
+  - subtest: getIdentityAssertion() should reject with OperationError if mock-idp.js
+      return invalid result
+    test: RTCPeerConnection-getIdentityAssertion.sub.https.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1538778
+- product: firefox
+  results:
+  - subtest: IdP failure with no target peer identity should have following setRemoteDescription()
+      succeed and replace pc.peerIdentity with a new promise
+    test: RTCPeerConnection-peerIdentity.https.html
+  - subtest: When IdP throws error and pc has target peer identity, setRemoteDescription()
+      and peerIdentity rejected with RTCError('idp-execution-error')
+    test: RTCPeerConnection-peerIdentity.https.html
+  - subtest: getIdentityAssertion() should reject with RTCError('idp-load-failure')
+      if IdP cannot be loaded
+    test: RTCPeerConnection-getIdentityAssertion.sub.https.html
+  - subtest: getIdentityAssertion() should reject with RTCError('idp-need-login')
+      when mock-idp.js requires login
+    test: RTCPeerConnection-getIdentityAssertion.sub.https.html
+  - subtest: getIdentityAssertion() should reject with RTCError('idp-bad-script-failure')
+      if IdP proxy script do not register its callback
+    test: RTCPeerConnection-getIdentityAssertion.sub.https.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1527916
+- product: firefox
+  results:
+  - subtest: getIdentityAssertion() should reject with RTCError('idp-execution-failure')
+      if mock-idp.js throws error
+    test: RTCPeerConnection-getIdentityAssertion.sub.https.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1538807

@@ -1,0 +1,29 @@
+links:
+- product: firefox
+  results:
+  - subtest: document.open() after parser is aborted
+    test: aborted-parser.window.html
+  - subtest: async document.open() after parser is aborted
+    test: aborted-parser.window.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1475000
+- product: firefox
+  results:
+  - subtest: document.open() removes the document's children (non-active document
+      with an associated Window object; frame is removed)
+    test: active.window.html
+  - subtest: document.open() removes the document's children (active but not fully
+      active document)
+    test: active.window.html
+  - subtest: Custom event listeners are to be removed from Window for a non-active
+      document that is the associated Document of a Window (frame is removed)
+    test: event-listeners.window.html
+  - subtest: Standard event listeners are to be removed from Window for a non-active
+      document that is the associated Document of a Window (frame is removed)
+    test: event-listeners.window.html
+  - subtest: Standard event listeners are to be removed from Window for an active
+      but not fully active document
+    test: event-listeners.window.html
+  - subtest: Custom event listeners are to be removed from Window for an active but
+      not fully active document
+    test: event-listeners.window.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1520333

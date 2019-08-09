@@ -1,0 +1,12 @@
+links:
+- product: firefox
+  results:
+  - subtest: 'Window interface: window must have own property "window"'
+    test: interfaces.https.html?include=(Document|Window)
+  - subtest: 'Window interface: window must have own property "document"'
+    test: interfaces.https.html?include=(Document|Window)
+  - subtest: 'Window interface: window must have own property "top"'
+    test: interfaces.https.html?include=(Document|Window)
+  - subtest: 'Window interface: window must have own property "location"'
+    test: interfaces.https.html?include=(Document|Window)
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1510437
