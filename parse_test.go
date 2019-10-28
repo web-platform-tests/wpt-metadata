@@ -65,7 +65,15 @@ func checkDuplicationAcrossLinks(t *testing.T, link shared.MetadataLink, linkMap
 }
 
 func checkDuplicationWithinResults(t *testing.T, result shared.MetadataTestResult, resultSet mapset.Set) {
-	expected := serializeStrings(result.TestPath, result.SubtestName, result.Status.String())
+	subtestName := ""
+	if result.SubtestName != nil {
+		subtestName = *result.SubtestName
+	}
+	status := ""
+	if result.Status != nil {
+		status = result.Status.String()
+	}
+	expected := serializeStrings(result.TestPath, subtestName, status)
 	assert.False(t, resultSet.Contains(expected), "duplicated entries within results")
 	resultSet.Add(expected)
 }
