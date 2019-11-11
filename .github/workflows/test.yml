@@ -14,10 +14,19 @@ jobs:
         go-version: 1.11.x
     - name: Set GOPATH
       # temporary fix
+      # see https://github.com/actions/setup-go/issues/12
       # see https://github.com/actions/setup-go/issues/14
       run: |
         echo "##[set-env name=GOPATH;]$(dirname $GITHUB_WORKSPACE)"
         echo "##[add-path]$(dirname $GITHUB_WORKSPACE)/bin"
       shell: bash
-    - run: go get ./...
+
+    - name: Get dependencies
+      run: |
+        go get -v -t -d ./...
+        if [ -f Gopkg.toml ]; then
+            curl https://raw.githubusercontent.com/golang/dep/master/install.sh | sh
+            dep ensure
+        fi
+
     - run: go test -v ./...
