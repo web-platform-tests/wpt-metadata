@@ -1,0 +1,31 @@
+on:
+  push:
+    branches:
+      - master
+  pull_request: {}
+name: test
+jobs:
+  test:
+    runs-on: ubuntu-18.04
+    steps:
+    - uses: actions/setup-go@v1
+    - uses: actions/checkout@v1
+      with:
+        go-version: 1.11.x
+    - name: Set GOPATH
+      # temporary fix
+      # see https://github.com/actions/setup-go/issues/12
+      # see https://github.com/actions/setup-go/issues/14
+      run: |
+        echo "##[set-env name=GOPATH;]$(dirname $GITHUB_WORKSPACE)"
+        echo "##[add-path]$(dirname $GITHUB_WORKSPACE)/bin"
+
+    - name: Get dependencies
+      run: |
+        go get -v -t -d ./...
+        if [ -f Gopkg.toml ]; then
+            curl -s https://raw.githubusercontent.com/golang/dep/master/install.sh | sh
+            dep ensure
+        fi
+
+    - run: go test -v ./...
