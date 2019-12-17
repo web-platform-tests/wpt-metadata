@@ -36,18 +36,19 @@ func TestParseMetadata(t *testing.T) {
 			}
 			err = yaml.Unmarshal(data, &metadata)
 			assert.Nil(t, err)
-			if strings.Contains(string(data), "links:") {
-				assert.Greater(t, len(metadata.Links), 0)
-				linkMap := make(map[string]string)
-				for _, link := range metadata.Links {
-					assert.Greater(t, len(link.Results), 0)
-					assert.Greater(t, len(link.URL), 0)
-					checkDuplicationAcrossLinks(t, link, linkMap)
-					resultSet := mapset.NewSet()
-					for _, result := range link.Results {
-						assert.Greater(t, len(result.TestPath), 0)
-						checkDuplicationWithinResults(t, result, resultSet)
-					}
+
+			linkCount := strings.Count(string(data), "links:")
+			assert.Equal(t, linkCount, 1, "YML file should only contain one `links:` key")
+			assert.Greater(t, len(metadata.Links), 0)
+			linkMap := make(map[string]string)
+			for _, link := range metadata.Links {
+				assert.Greater(t, len(link.Results), 0)
+				assert.Greater(t, len(link.URL), 0)
+				checkDuplicationAcrossLinks(t, link, linkMap)
+				resultSet := mapset.NewSet()
+				for _, result := range link.Results {
+					assert.Greater(t, len(result.TestPath), 0)
+					checkDuplicationWithinResults(t, result, resultSet)
 				}
 			}
 		})
