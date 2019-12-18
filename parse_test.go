@@ -38,7 +38,7 @@ func TestParseMetadata(t *testing.T) {
 			assert.Nil(t, err)
 
 			linkCount := strings.Count(string(data), "links:")
-			assert.Equal(t, linkCount, 1, "YML file should contain exactly one links: key")
+			assert.Equal(t, 1, linkCount, "YML file should contain exactly one links: key")
 			assert.Greater(t, len(metadata.Links), 0)
 			linkMap := make(map[string]string)
 			for _, link := range metadata.Links {
