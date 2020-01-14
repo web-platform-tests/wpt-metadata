@@ -25,19 +25,19 @@ Where
 - Test result status is a status as defined in the wpt.fyi codebase.
 
 ## How to contribute to wpt-metadata repository
-If you are a memeber of web-platform-tests org, you can contribute to the wpt-metadata repo by sending out a PR directly or through a UI-based approach on wpt.fyi. We also have a Triage Metadata API available for trusted third parties
+If you are a memeber of the web-platform-tests org, you can contribute to the wpt-metadata repo by sending out a PR directly or through a UI-based approach on wpt.fyi. We also have a Triage Metadata API available for trusted third parties
 
 ### Triage through wpt.fyi UI
 For information about how to use the triage service on wpt.fyi, see here - UPCOMING
 
 ### Triage Metadata API for trusted third parties
-In order to use Triage Metadata API, you first need to log in on [wpt.fyi](https://wpt.fyi/) through the GitHub OAuth integration. For more information on wpt.fyi login, see [here](https://docs.google.com/document/d/1iRkaK6cGgXp3DKbNbPMVsYGMaOHO-5CfqEuLPUR_2HM)
+In order to use the Triage Metadata API, first you need to log in on [wpt.fyi](https://wpt.fyi/) through the GitHub OAuth integration. For more information on wpt.fyi login, see [here](https://docs.google.com/document/d/1iRkaK6cGgXp3DKbNbPMVsYGMaOHO-5CfqEuLPUR_2HM)
 
-The logged-in user also needs to be a part of web-platform-tests org. To join, please file an issue or contact us directly.
+The logged-in user also needs to be a part of the web-platform-tests org. To join, please file an issue or contact us directly.
 
 Upon a login, you can send a request to /api/metadata/triage endpoint to triage metadata. This endpoint only accepts PATCH request and JSON object body. The JSON object is a flattened YAML `Links` structure which is keyed by test name [Test path].
 
-<details><summary><b>Example JSON</b></summary>
+<details><summary><b>Example JSON Body</b></summary>
 
 ```json
 {
