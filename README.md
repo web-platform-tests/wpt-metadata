@@ -22,7 +22,7 @@ Where
   - e.g. `chrome`, `safari-12`, or `firefox-63.0-linux`
 - If omitted, the link will apply to all products in the directory.
 - Test path is relative to the current directory, so will typically be just a filename.
-- Test result status is a status as defined in the wpt.fyi codebase.
+- Test result status is a status as defined in the [wpt.fyi codebase](https://github.com/web-platform-tests/wpt.fyi/blob/master/shared/statuses.go).
 
 ## How to contribute to wpt-metadata repository
 You can contribute to the wpt-metadata repo by sending out a PR directly or through the Triage Metadata API available for trusted third parties.
@@ -47,11 +47,11 @@ Once logged in, you can send a request to https://wpt.fyi/api/metadata/triage to
       "results:" [
         {
           "subtest": "Blob with type \"image/gif;\"",
-          "status": "UNKNOWN"
+          "status": 6
         },
         {
           "subtest": "Invalid contentType (\"text/plain\")",
-          "status": "UNKNOWN"
+          "status": 0
         }
       ]
     }
