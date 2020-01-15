@@ -28,7 +28,7 @@ Where
 You can contribute to the wpt-metadata repo by sending out a PR directly or through the Triage Metadata API available for trusted third parties.
 
 ### Triage Metadata API for trusted third parties
-In order to use the Triage Metadata API, first you need to log in on [wpt.fyi](https://wpt.fyi/) through the GitHub OAuth integration. For more information on wpt.fyi login, see [here](https://docs.google.com/document/d/1iRkaK6cGgXp3DKbNbPMVsYGMaOHO-5CfqEuLPUR_2HM).
+To use the Triage Metadata API, you first need to sign in to [wpt.fyi](https://wpt.fyi/) (top-right corner; 'Sign in with GitHub'). For more information on wpt.fyi login, see [here](https://docs.google.com/document/d/1iRkaK6cGgXp3DKbNbPMVsYGMaOHO-5CfqEuLPUR_2HM).
 
 The logged-in user also needs to belong to the ['web-platform-tests' GitHub organization](https://github.com/orgs/web-platform-tests/people). To join, please file an issue or contact us directly.
 
