@@ -25,13 +25,10 @@ Where
 - Test result status is a status as defined in the wpt.fyi codebase.
 
 ## How to contribute to wpt-metadata repository
-If you are a memeber of the web-platform-tests org, you can contribute to the wpt-metadata repo by sending out a PR directly or through a UI-based approach on wpt.fyi. We also have a Triage Metadata API available for trusted third parties
-
-### Triage through wpt.fyi UI
-For information about how to use the triage service on wpt.fyi, see here - UPCOMING
+You can contribute to the wpt-metadata repo by sending out a PR directly or through the Triage Metadata API available for trusted third parties.
 
 ### Triage Metadata API for trusted third parties
-In order to use the Triage Metadata API, first you need to log in on [wpt.fyi](https://wpt.fyi/) through the GitHub OAuth integration. For more information on wpt.fyi login, see [here](https://docs.google.com/document/d/1iRkaK6cGgXp3DKbNbPMVsYGMaOHO-5CfqEuLPUR_2HM)
+In order to use the Triage Metadata API, first you need to log in on [wpt.fyi](https://wpt.fyi/) through the GitHub OAuth integration. For more information on wpt.fyi login, see [here](https://docs.google.com/document/d/1iRkaK6cGgXp3DKbNbPMVsYGMaOHO-5CfqEuLPUR_2HM).
 
 The logged-in user also needs to be a part of the web-platform-tests org. To join, please file an issue or contact us directly.
 
