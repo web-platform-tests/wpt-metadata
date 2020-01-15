@@ -37,7 +37,7 @@ The logged-in user also needs to be a part of the web-platform-tests org. To joi
 
 Upon a login, you can send a request to /api/metadata/triage endpoint to triage metadata. This endpoint only accepts PATCH request and JSON object body. The JSON object is a flattened YAML `Links` structure which is keyed by test name [Test path].
 
-/api/metadata/triage returns the url of a PR that is created in the wpt-metadat repo.
+/api/metadata/triage returns the url of a PR that is created in the wpt-metadata repo.
 
 <details><summary><b>Example JSON Body</b></summary>
 
