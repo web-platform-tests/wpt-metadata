@@ -32,7 +32,7 @@ To use the Triage Metadata API, you first need to sign in to [wpt.fyi](https://w
 
 The logged-in user also needs to belong to the ['web-platform-tests' GitHub organization](https://github.com/orgs/web-platform-tests/people). To join, please [file an issue](https://github.com/web-platform-tests/wpt/issues/new?).
 
-Once logged in, you can send a request to https://wpt.fyi/api/metadata/triage to triage metadata. This endpoint only accepts PATCH requests, with a body that contains a valid triage JSON object. The JSON object is a flattened YAML `Links` structure that is keyed by test name [Test path]; see below for an example.
+Once logged in, you can send a request to https://wpt.fyi/api/metadata/triage to triage metadata. This endpoint only accepts PATCH requests, with a body that contains a valid triage JSON object. The JSON object is a flattened YAML `Links` structure that is keyed by test name [Test path](https://docs.google.com/document/d/1oWYVkc2ztANCGUxwNVTQHlWV32zq6Ifq9jkkbYNbSAg/edit#heading=h.t7ysbpr8er1y); see below for an example.
 
 /api/metadata/triage returns the url of a PR that is created in the wpt-metadata repo.
 
