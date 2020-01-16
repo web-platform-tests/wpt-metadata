@@ -20,5 +20,5 @@ Where
   - `{browser-name}[-{browser-version}[-{os}[-{os-version}]]]`
   - e.g. `chrome`, `safari-12`, or `firefox-63.0-linux`
 - If omitted, the link will apply to all products in the directory.
-- Test path is a filename, which is relative to the current directory. If it is *, the link will apply to all tests in the current directory and its subdirectories.
+- Test path is a filename, which is relative to the current directory. If it is `*`, the link will apply to all tests in the current directory and its subdirectories.
 - Test result status is a status as defined in the wpt.fyi codebase.
