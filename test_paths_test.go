@@ -96,7 +96,8 @@ func TestResultsTestPaths(t *testing.T) {
 
 				for _, link := range metadata.Links {
 					for _, result := range link.Results {
-						if result.TestPath != "" {
+						// TODO: support testing wildcard (*) TestPaths
+						if result.TestPath != "" && !strings.HasSuffix(result.TestPath, "*") {
 							fullPath := path.Join(fileDir, result.TestPath)
 							t.Run(fullPath, func(t *testing.T) {
 								assert.True(
