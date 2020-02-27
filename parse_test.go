@@ -12,8 +12,9 @@ import (
 	"testing"
 
 	mapset "github.com/deckarep/golang-set"
-	"github.com/go-yaml/yaml"
 	"github.com/stretchr/testify/assert"
+	"gopkg.in/yaml.v2"
+
 	"github.com/web-platform-tests/wpt.fyi/shared"
 )
 
