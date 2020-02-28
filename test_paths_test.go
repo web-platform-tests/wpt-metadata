@@ -74,14 +74,20 @@ func TestResultsTestPaths(t *testing.T) {
 				seen := mapset.NewSet()
 				for _, link := range metadata.Links {
 					for _, result := range link.Results {
-						// TODO: support testing wildcard (*) TestPaths
-						if result.TestPath == "" || strings.HasSuffix(result.TestPath, "*") || seen.Contains(result.TestPath) {
+						if result.TestPath == "" || seen.Contains(result.TestPath) {
 							continue
 						}
 						seen.Add(result.TestPath)
-						fullPath := path.Join(fileDir, result.TestPath)
+
 						t.Run(result.TestPath, func(t *testing.T) {
-							ok, err := manifest.ContainsTest(fullPath)
+							fullPath := path.Join(fileDir, result.TestPath)
+							var ok bool
+							var err error
+							if result.TestPath == "*" {
+								ok, err = manifest.ContainsFile(fileDir)
+							} else {
+								ok, err = manifest.ContainsTest(fullPath)
+							}
 							assert.Nil(t, err)
 							assert.True(t, ok,
 								"%s is not a test path found in the manifest @ %s", fullPath, sha)
