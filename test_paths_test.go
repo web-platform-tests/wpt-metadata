@@ -19,7 +19,6 @@ import (
 	"github.com/go-yaml/yaml"
 	"github.com/stretchr/testify/assert"
 
-	mapset "github.com/deckarep/golang-set"
 	"github.com/web-platform-tests/wpt.fyi/shared"
 )
 
@@ -44,34 +43,11 @@ func TestResultsTestPaths(t *testing.T) {
 	}
 
 	t.Run(fmt.Sprintf("Manifest @ %s", sha), func(t *testing.T) {
-		unmarshalled := shared.Manifest{}
-		err := json.Unmarshal(data, &unmarshalled)
+		manifest := shared.Manifest{}
+		err := json.Unmarshal(data, &manifest)
 		if err != nil {
 			panic(err)
 		}
-
-		validPaths := mapset.NewSet()
-		manifestItems := []shared.ManifestItem{
-			unmarshalled.Items.Manual,
-			unmarshalled.Items.Reftest,
-			unmarshalled.Items.TestHarness,
-			unmarshalled.Items.WDSpec,
-		}
-		for _, m := range manifestItems {
-			if m == nil {
-				continue
-			}
-			for _, items := range m {
-				for _, item := range items {
-					var url string
-					if err = json.Unmarshal(*item[0], &url); err != nil {
-						continue
-					}
-					validPaths.Add(url)
-				}
-			}
-		}
-		log.Printf("Found %v test paths", validPaths.Cardinality())
 
 		// Crawl + test all the metadata
 		filepath.Walk(".", func(filePath string, info os.FileInfo, err error) error {
@@ -99,10 +75,11 @@ func TestResultsTestPaths(t *testing.T) {
 						// TODO: support testing wildcard (*) TestPaths
 						if result.TestPath != "" && !strings.HasSuffix(result.TestPath, "*") {
 							fullPath := path.Join(fileDir, result.TestPath)
+							hasTest, _ := manifest.ContainsTest(fullPath)
 							t.Run(fullPath, func(t *testing.T) {
 								assert.True(
 									t,
-									validPaths.Contains(fullPath),
+									hasTest,
 									"%s is not a test path found in the manifest @ %s", fullPath, sha,
 								)
 							})
