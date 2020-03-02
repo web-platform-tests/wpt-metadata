@@ -1,0 +1,13 @@
+links:
+- product: chrome
+  url: https://bugs.chromium.org/p/chromium/issues/detail?id=868224
+  results:
+  - test: Event-dispatch-on-disabled-elements.html
+    status: TIMEOUT
+- product: chrome
+  url: https://bugs.chromium.org/p/chromium/issues/detail?id=1014421
+  results:
+  - test: EventListener-handleEvent.html
+    subtest: 'throws if `handleEvent` is falsy and not callable'
+  - test: EventListener-handleEvent.html
+    subtest: 'throws if `handleEvent` is thruthy and not callable'

@@ -10,7 +10,7 @@ links:
   - product: [product spec] (optional)
     url: [URL]	
     results:
-    - test: [Test path] 
+    - test: [Test name] 
       subtest: [Subtest name] (optional)
       status: [Specific test result status] (optional)
   - ...
@@ -21,8 +21,10 @@ Where
   - `{browser-name}[-{browser-version}[-{os}[-{os-version}]]]`
   - e.g. `chrome`, `safari-12`, or `firefox-63.0-linux`
 - If omitted, the link will apply to all products in the directory.
-- Test path is relative to the current directory, so will typically be just a filename.
-- Test result status is a status as defined in the [wpt.fyi codebase](https://github.com/web-platform-tests/wpt.fyi/blob/master/shared/statuses.go).
+- 'Test name' is a filename, which is relative to the current directory. If it
+  is `"*"` (note that asterisks must be quoted in YAML), the link will apply to
+  all tests in the current directory and its subdirectories.
+- Test result status is a status as defined in the wpt.fyi codebase.
 
 ## How to contribute to wpt-metadata repository
 You can contribute to the wpt-metadata repo by sending out a PR directly or through the Triage Metadata API available for trusted third parties.

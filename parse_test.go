@@ -12,8 +12,9 @@ import (
 	"testing"
 
 	mapset "github.com/deckarep/golang-set"
-	"github.com/go-yaml/yaml"
 	"github.com/stretchr/testify/assert"
+	"gopkg.in/yaml.v2"
+
 	"github.com/web-platform-tests/wpt.fyi/shared"
 )
 
@@ -48,6 +49,7 @@ func TestParseMetadata(t *testing.T) {
 				resultSet := mapset.NewSet()
 				for _, result := range link.Results {
 					assert.Greater(t, len(result.TestPath), 0)
+					assert.False(t, strings.Contains(result.TestPath, "/"), "Test files must not be paths")
 					checkDuplicationWithinResults(t, result, resultSet)
 				}
 			}
