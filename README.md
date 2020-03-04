@@ -1,3 +1,4 @@
+## wpt-metadata
 wpt-metadata is a repo for storing [wpt.fyi](https://github.com/web-platform-tests/wpt.fyi) test-result metadata, about tests defined in the [wpt](https://github.com/web-platform-tests/wpt) repo, in metadata yml files.
 
 [Design Doc](https://docs.google.com/document/d/1oWYVkc2ztANCGUxwNVTQHlWV32zq6Ifq9jkkbYNbSAg/edit)
@@ -24,3 +25,9 @@ Where
   is `"*"` (note that asterisks must be quoted in YAML), the link will apply to
   all tests in the current directory and its subdirectories.
 - Test result status is a status as defined in the wpt.fyi codebase.
+
+## How to contribute to wpt-metadata repository
+You can contribute to the wpt-metadata repo by sending out a PR directly or through the Triage Metadata API available for trusted third parties.
+
+### Triage Metadata API for trusted third parties
+See [/api/metadat/triage](https://github.com/web-platform-tests/wpt.fyi/tree/master/api#apimetadatatriage) for more information.
