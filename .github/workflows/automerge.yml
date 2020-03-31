@@ -23,7 +23,9 @@ jobs:
     steps:
       - name: automerge
         uses: "pascalgn/automerge-action@135f0bdb927d9807b5446f7ca9ecc2c51de03c4a"
+        # https://github.com/pascalgn/automerge-action#configuration
         env:
           GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
+          MERGE_LABELS: ""
           MERGE_FORKS: false
           MERGE_FILTER_AUTHOR: "wptfyibot"
