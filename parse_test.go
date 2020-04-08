@@ -78,7 +78,6 @@ func checkDuplicationWithinResults(t *testing.T, result shared.MetadataTestResul
 	}
 	expected := serializeStrings(result.TestPath, subtestName, status)
 	assert.False(t, resultSet.Contains(expected), "duplicated entries within results")
-	resultSet.Add(result.TestPath)
 	resultSet.Add(expected)
 }
 
