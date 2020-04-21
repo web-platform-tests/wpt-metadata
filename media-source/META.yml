@@ -9,3 +9,37 @@ links:
   results:
   - test: mediasource-seek-beyond-duration.html
     status: TIMEOUT
+- product: safari
+  url: https://bugs.webkit.org/show_bug.cgi?id=161725
+  results:
+  - test: URL-createObjectURL-revoke.html
+    status: FAIL
+  - test: mediasource-append-buffer.html
+    status: FAIL
+  - test: mediasource-appendbuffer-quota-exceeded.html
+    status: TIMEOUT
+  - test: mediasource-config-change-mp4-av-framesize.html
+    status: TIMEOUT
+  - test: mediasource-endofstream.html
+    status: TIMEOUT
+  - test: mediasource-errors.html
+    status: FAIL
+  - test: mediasource-is-type-supported.html
+    status: FAIL
+  - test: mediasource-seek-beyond-duration.html
+    status: FAIL
+  - test: mediasource-seek-during-pending-seek.html
+    status: FAIL
+  - test: mediasource-sequencemode-append-buffer.html
+    status: FAIL
+  - test: mediasource-sourcebuffer-mode-timestamps.html
+    status: FAIL
+  - test: mediasource-sourcebuffer-mode.html
+    status: FAIL
+- product: safari
+  url: https://bugs.webkit.org/show_bug.cgi?id=153588
+  results:
+  - test: mediasource-correct-frames-after-reappend.html
+    status: TIMEOUT
+  - test: mediasource-correct-frames.html
+    status: TIMEOUT
