@@ -28,3 +28,17 @@ links:
     subtest: 'Feature policy "microphone" can be enabled in cross-origin iframes using "allow" attribute.'
   - test: MediaStream-default-feature-policy.https.html
     subtest: 'Feature policy "camera" can be enabled in cross-origin iframes using "allow" attribute.'
+- product: webkitgtk
+  url: https://bugs.webkit.org/show_bug.cgi?id=206656
+  results:
+  - test: MediaStream-removetrack.https.html
+    status: FAIL
+  - test: MediaStreamTrack-MediaElement-disabled-video-is-black.https.html
+    status: FAIL
+  - test: MediaStreamTrack-getSettings.https.html
+    status: FAIL
+- product: webkitgtk
+  url: https://bugs.webkit.org/show_bug.cgi?id=189995
+  results:
+  - test: MediaStream-MediaElement-srcObject.https.html
+    status: FAIL
