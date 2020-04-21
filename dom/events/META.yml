@@ -11,3 +11,13 @@ links:
     subtest: 'throws if `handleEvent` is falsy and not callable'
   - test: EventListener-handleEvent.html
     subtest: 'throws if `handleEvent` is thruthy and not callable'
+- product: webkitgtk
+  url: https://bugs.webkit.org/show_bug.cgi?id=177447
+  results:
+  - test: Event-timestamp-high-resolution.html
+    status: FAIL
+- product: webkitgtk
+  url: https://bugs.webkit.org/show_bug.cgi?id=153707
+  results:
+  - test: EventTarget-dispatchEvent.html
+    status: FAIL
