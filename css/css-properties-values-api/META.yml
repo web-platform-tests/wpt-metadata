@@ -1,9 +1,14 @@
 links:
 - product: safari
-  url: https://bugs.webkit.org/show_bug.cgi?id=189692
   results:
-  - test: "*"
+  - test: '*'
+  url: https://bugs.webkit.org/show_bug.cgi?id=189692
 - product: webkitgtk
-  url: https://bugs.webkit.org/show_bug.cgi?id=189692
   results:
-  - test: "*"
+  - test: '*'
+  url: https://bugs.webkit.org/show_bug.cgi?id=189692
+- product: firefox
+  results:
+  - subtest: '@property rules in shadow trees should have no effect'
+    test: at-property-shadow.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1634365
