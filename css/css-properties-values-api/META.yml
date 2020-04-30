@@ -1,9 +1,129 @@
 links:
 - product: safari
-  url: https://bugs.webkit.org/show_bug.cgi?id=189692
   results:
-  - test: "*"
+  - test: '*'
+  url: https://bugs.webkit.org/show_bug.cgi?id=189692
 - product: webkitgtk
-  url: https://bugs.webkit.org/show_bug.cgi?id=189692
   results:
-  - test: "*"
+  - test: '*'
+  url: https://bugs.webkit.org/show_bug.cgi?id=189692
+- product: firefox
+  results:
+  - subtest: '@keyframes picks up the latest @property in the document'
+    test: at-property-animation.html
+  - subtest: Ongoing animation picks up redeclared custom property
+    test: at-property-animation.html
+  - subtest: Ongoing animation picks up redeclared intial value
+    test: at-property-animation.html
+  - subtest: Ongoing animation picks up redeclared inherits flag
+    test: at-property-animation.html
+  - subtest: Ongoing animation matches new keyframes against the current registration
+    test: at-property-animation.html
+  - subtest: Ongoing animation picks up redeclared meaning of 'unset'
+    test: at-property-animation.html
+  - subtest: '@keyframes works with @property'
+    test: at-property-animation.html
+  - subtest: Rule applied [<transform-list>, rotateX(0deg), false]
+    test: at-property.html
+  - subtest: Rule applied [<color>, rgb(1, 2, 3), false]
+    test: at-property.html
+  - subtest: Attribute 'inherits' returns expected value for ["false"]
+    test: at-property.html
+  - subtest: Rule applied [<number>, 2.5, false]
+    test: at-property.html
+  - subtest: Rule applied [<angle>, 42deg, false]
+    test: at-property.html
+  - subtest: Attribute 'inherits' returns expected value for [0]
+    test: at-property.html
+  - subtest: Rule applied [<angle>, 1turn, false]
+    test: at-property.html
+  - subtest: Rule applied [<length-percentage>, 10px, false]
+    test: at-property.html
+  - subtest: Rule applied [<length-percentage>, 10%, false]
+    test: at-property.html
+  - subtest: Attribute 'syntax' returns expected value for [rgb(255, 0, 0)]
+    test: at-property.html
+  - subtest: Rule applied [<integer>, 5, false]
+    test: at-property.html
+  - subtest: Attribute 'initial-value' returns expected value for [red]
+    test: at-property.html
+  - subtest: Attribute 'syntax' returns expected value for ["<color># | <image> |
+      none"]
+    test: at-property.html
+  - subtest: Rule applied [*, if(){}, false]
+    test: at-property.html
+  - subtest: Rule applied [<color>, green, false]
+    test: at-property.html
+  - subtest: Inherited properties inherit
+    test: at-property.html
+  - subtest: Attribute 'initial-value' returns expected value for [rgb(1, 2, 3)]
+    test: at-property.html
+  - subtest: Rule applied [<resolution>, 96dpi, false]
+    test: at-property.html
+  - subtest: Attribute 'inherits' returns expected value for [none]
+    test: at-property.html
+  - subtest: Non-inherited properties do not inherit
+    test: at-property.html
+  - subtest: Attribute 'inherits' returns expected value for ["true"]
+    test: at-property.html
+  - subtest: Rule applied [<color>, tomato, false]
+    test: at-property.html
+  - subtest: Rule applied [<time>, 10s, false]
+    test: at-property.html
+  - subtest: Rule applied [<length>, 10px, false]
+    test: at-property.html
+  - subtest: Attribute 'initial-value' returns expected value for [var(--x)]
+    test: at-property.html
+  - subtest: Rule applied [<transform-list>, rotateX(0deg) translateX(10px), false]
+    test: at-property.html
+  - subtest: Rule applied [<length-percentage>, calc(10% + 10px), false]
+    test: at-property.html
+  - subtest: Attribute 'syntax' returns expected value for ["notasyntax"]
+    test: at-property.html
+  - subtest: Rule applied [<time>, 1000ms, false]
+    test: at-property.html
+  - subtest: Attribute 'syntax' returns expected value for ["foo | bar | baz"]
+    test: at-property.html
+  - subtest: Attribute 'initial-value' returns expected value for [if(){}]
+    test: at-property.html
+  - subtest: Attribute 'syntax' returns expected value for [foo | bar]
+    test: at-property.html
+  - subtest: Attribute 'inherits' returns expected value for [1]
+    test: at-property.html
+  - subtest: Rule applied [<image>, url("http://a/"), false]
+    test: at-property.html
+  - subtest: Attribute 'initial-value' returns expected value for [10px]
+    test: at-property.html
+  - subtest: Attribute 'inherits' returns expected value for [true]
+    test: at-property.html
+  - subtest: Attribute 'syntax' returns expected value for ["*"]
+    test: at-property.html
+  - subtest: Attribute 'syntax' returns expected value for ["<color>"]
+    test: at-property.html
+  - subtest: Attribute 'initial-value' returns expected value for [foo]
+    test: at-property.html
+  - subtest: Attribute 'syntax' returns expected value for [red]
+    test: at-property.html
+  - subtest: Attribute 'syntax' returns expected value for [<color>]
+    test: at-property.html
+  - subtest: Rule applied [<percentage>, 10%, false]
+    test: at-property.html
+  - subtest: Rule applied [<url>, url("http://a/"), false]
+    test: at-property.html
+  - subtest: Initial value may be omitted for universal registration
+    test: at-property.html
+  - subtest: Rule applied [<color>, tomato, true]
+    test: at-property.html
+  - subtest: Attribute 'syntax' returns expected value for ["<color> | none"]
+    test: at-property.html
+  - subtest: Rule applied [<resolution>, 50dppx, false]
+    test: at-property.html
+  - subtest: Initial values substituted as computed value
+    test: at-property.html
+  - subtest: Attribute 'inherits' returns expected value for [calc(0)]
+    test: at-property.html
+  - subtest: Attribute 'inherits' returns expected value for [false]
+    test: at-property.html
+  - subtest: Rule applied [<transform-function>, rotateX(0deg), false]
+    test: at-property.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1634378
