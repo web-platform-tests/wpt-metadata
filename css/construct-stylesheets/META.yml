@@ -1,0 +1,30 @@
+links:
+- product: firefox
+  results:
+  - subtest: 'Document interface: document must inherit property "adoptedStyleSheets"
+      with the proper type'
+    test: idlharness.html
+  - subtest: 'CSSStyleSheet interface: new CSSStyleSheet() must inherit property "replace(USVString)"
+      with the proper type'
+    test: idlharness.html
+  - subtest: 'ShadowRoot interface: attribute adoptedStyleSheets'
+    test: idlharness.html
+  - subtest: 'CSSStyleSheet interface: operation replaceSync(USVString)'
+    test: idlharness.html
+  - subtest: 'CSSStyleSheet interface: calling replace(USVString) on new CSSStyleSheet()
+      with too few arguments must throw TypeError'
+    test: idlharness.html
+  - subtest: 'CSSStyleSheet interface: new CSSStyleSheet() must inherit property "replaceSync(USVString)"
+      with the proper type'
+    test: idlharness.html
+  - subtest: 'CSSStyleSheet interface: calling replaceSync(USVString) on new CSSStyleSheet()
+      with too few arguments must throw TypeError'
+    test: idlharness.html
+  - subtest: 'CSSStyleSheet interface: operation replace(USVString)'
+    test: idlharness.html
+  - subtest: 'Document interface: attribute adoptedStyleSheets'
+    test: idlharness.html
+  - subtest: 'ShadowRoot interface: shadowRoot must inherit property "adoptedStyleSheets"
+      with the proper type'
+    test: idlharness.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1634401
