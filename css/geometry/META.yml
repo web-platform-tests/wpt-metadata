@@ -1,11 +1,20 @@
 links:
 - product: safari
-  url: https://bugs.webkit.org/show_bug.cgi?id=153675
   results:
-  - test: WebKitCSSMatrix.html
-    status: FAIL
+  - status: FAIL
+    test: WebKitCSSMatrix.html
+  url: https://bugs.webkit.org/show_bug.cgi?id=153675
 - product: webkitgtk
-  url: https://bugs.webkit.org/show_bug.cgi?id=153675
   results:
-  - test: WebKitCSSMatrix.html
-    status: FAIL
+  - status: FAIL
+    test: WebKitCSSMatrix.html
+  url: https://bugs.webkit.org/show_bug.cgi?id=153675
+- product: firefox
+  results:
+  - subtest: 'DOMPoint interface: legacy window alias'
+    test: idlharness.html
+  - subtest: 'DOMRect interface: legacy window alias'
+    test: idlharness.html
+  - subtest: 'DOMMatrix interface: legacy window alias'
+    test: idlharness.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1634355
