@@ -9,6 +9,39 @@ links:
   url: https://bugs.webkit.org/show_bug.cgi?id=189692
 - product: firefox
   results:
+  - test: determine-registration.html
+  - subtest: '@property registrations are cleared when rule removed'
+    test: determine-registration.html
+  - subtest: Previous invalid rule does not prevent valid rule from causing registration
+    test: determine-registration.html
+  - subtest: CSS.registerProperty determines the registration when uncontested
+    test: determine-registration.html
+  - subtest: '@property later in stylesheet wins'
+    test: determine-registration.html
+  - subtest: Invalid @property rule (missing syntax) does not overwrite previous valid
+      rule
+    test: determine-registration.html
+  - subtest: Invalid @property rule (missing initial-value) does not overwrite previous
+      valid rule
+    test: determine-registration.html
+  - subtest: '@property determines the registration when uncontested'
+    test: determine-registration.html
+  - subtest: CSS.registerProperty wins over @property
+    test: determine-registration.html
+  - subtest: Computed value becomes token sequence when @property is removed
+    test: determine-registration.html
+  - subtest: Invalid @property rule (missing inherits descriptor) does not overwrite
+      previous valid rule
+    test: determine-registration.html
+  - subtest: '@property later in document order wins'
+    test: determine-registration.html
+  - subtest: Unknown descriptors are ignored and do not invalidate rule
+    test: determine-registration.html
+  - subtest: Inherited status is reflected in computed styles when @property is removed
+    test: determine-registration.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1634403
+- product: firefox
+  results:
   - test: at-property-animation.html
   - subtest: No transition when changing types
     test: at-property-animation.html
