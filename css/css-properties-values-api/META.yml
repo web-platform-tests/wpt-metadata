@@ -362,3 +362,11 @@ links:
   - subtest: registerProperty requires inherits
     test: register-property.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1634362
+- product: firefox
+  results:
+  - test: at-property-typedom.html
+  - subtest: Properties declared with @property reify correctly
+    test: at-property-typedom.html
+  - subtest: Re-declaring a property with a different type affects reification
+    test: at-property-typedom.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1634457
