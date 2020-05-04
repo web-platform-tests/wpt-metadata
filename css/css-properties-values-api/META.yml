@@ -11,3 +11,358 @@ links:
   results:
   - test: determine-registration.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1634354
+- product: firefox
+  results:
+  - subtest: '@keyframes picks up the latest @property in the document'
+    test: at-property-animation.html
+  - subtest: Ongoing animation picks up redeclared custom property
+    test: at-property-animation.html
+  - subtest: Ongoing animation picks up redeclared intial value
+    test: at-property-animation.html
+  - subtest: Ongoing animation picks up redeclared inherits flag
+    test: at-property-animation.html
+  - subtest: Ongoing animation matches new keyframes against the current registration
+    test: at-property-animation.html
+  - subtest: Ongoing animation picks up redeclared meaning of 'unset'
+    test: at-property-animation.html
+  - subtest: '@keyframes works with @property'
+    test: at-property-animation.html
+  - subtest: Valid fallback does not invalidate var()-reference [<length> | <color>,
+      red]
+    test: var-reference-registered-properties.html
+  - subtest: Registered lists may be concatenated
+    test: var-reference-registered-properties.html
+  - subtest: var() references work with registered properties
+    test: var-reference-registered-properties.html
+  - subtest: Valid fallback does not invalidate var()-reference [<length>, 10px]
+    test: var-reference-registered-properties.html
+  - subtest: Invalid fallback invalidates var()-reference [<length>, red]
+    test: var-reference-registered-properties.html
+  - subtest: References to registered var()-properties work in registered lists
+    test: var-reference-registered-properties.html
+  - subtest: Valid fallback does not invalidate var()-reference [<length> | none,
+      none]
+    test: var-reference-registered-properties.html
+  - subtest: Invalid fallback invalidates var()-reference [<length>, var(--novar)]
+    test: var-reference-registered-properties.html
+  - subtest: Calc expressions are resolved when substituting
+    test: var-reference-registered-properties.html
+  - subtest: Font-relative units are absolutized when substituting
+    test: var-reference-registered-properties.html
+  - subtest: Invalid fallback invalidates var()-reference [<length> | none, nolength]
+    test: var-reference-registered-properties.html
+  - subtest: Lists with relative units are absolutized when substituting
+    test: var-reference-registered-properties.html
+  - subtest: Values are absolutized when substituting into properties with universal
+      syntax
+    test: var-reference-registered-properties.html
+  - subtest: References to mixed registered and unregistered var()-properties work
+      in registered lists
+    test: var-reference-registered-properties.html
+  - subtest: <length>+ values are computed correctly [10px 3em]
+    test: registered-property-computation.html
+  - subtest: <length> values are computed correctly [25.4mm]
+    test: registered-property-computation.html
+  - subtest: <angle> values are computed correctly [calc(360deg + 400grad)]
+    test: registered-property-computation.html
+  - subtest: <length-percentage>+ values are computed correctly [calc(50% + 1em) 4px]
+    test: registered-property-computation.html
+  - subtest: <length> values are computed correctly [14em]
+    test: registered-property-computation.html
+  - subtest: <color> values are computed correctly [#ff0000]
+    test: registered-property-computation.html
+  - subtest: <integer>+ values are computed correctly [15 calc(2.4) calc(2.6)]
+    test: registered-property-computation.html
+  - subtest: <integer> values are computed correctly [15]
+    test: registered-property-computation.html
+  - subtest: '* values are computed correctly [50dpi]'
+    test: registered-property-computation.html
+  - subtest: <color> values are computed correctly [#badbee33]
+    test: registered-property-computation.html
+  - subtest: <time> values are computed correctly [calc(1000ms + 1s)]
+    test: registered-property-computation.html
+  - subtest: <transform-function>+ values are computed correctly [translateX(10%)
+      scale(2)]
+    test: registered-property-computation.html
+  - subtest: <length-percentage># values are computed correctly [3% , 10vmax  , 22px]
+    test: registered-property-computation.html
+  - subtest: tomato | plum values are computed correctly [plum]
+    test: registered-property-computation.html
+  - subtest: <color> values are computed correctly [currentcolor]
+    test: registered-property-computation.html
+  - subtest: <resolution> values are computed correctly [96dpi]
+    test: registered-property-computation.html
+  - subtest: <length> values computed are correctly via var()-reference when font-size
+      is inherited
+    test: registered-property-computation.html
+  - subtest: <length># values are computed correctly [10px, 3em]
+    test: registered-property-computation.html
+  - subtest: <length># values are computed correctly [8em]
+    test: registered-property-computation.html
+  - subtest: <length> values are computed correctly when font-size is inherited [calc(14em
+      + 10px)]
+    test: registered-property-computation.html
+  - subtest: <time> values are computed correctly [1000ms]
+    test: registered-property-computation.html
+  - subtest: <transform-function> values are computed correctly [translateX(2px)]
+    test: registered-property-computation.html
+  - subtest: <length>+ values are computed correctly [4em 9px]
+    test: registered-property-computation.html
+  - subtest: <length> values are computed correctly [13vw]
+    test: registered-property-computation.html
+  - subtest: <length-percentage># values are computed correctly [calc(50% + 1em),
+      4px]
+    test: registered-property-computation.html
+  - subtest: <integer> values are computed correctly [calc(15 + 15)]
+    test: registered-property-computation.html
+  - subtest: <color> values are computed correctly [plum]
+    test: registered-property-computation.html
+  - subtest: <length> values are computed correctly [6pc]
+    test: registered-property-computation.html
+  - subtest: <color> values are computed correctly [tomato]
+    test: registered-property-computation.html
+  - subtest: <color> values are computed correctly [#000f00]
+    test: registered-property-computation.html
+  - subtest: <resolution> values are computed correctly [calc(1dppx + 96dpi)]
+    test: registered-property-computation.html
+  - subtest: <length> values are computed correctly [1in]
+    test: registered-property-computation.html
+  - subtest: <length> values are computed correctly [15vmin]
+    test: registered-property-computation.html
+  - subtest: tomato | plum | <color> values are computed correctly [plum]
+    test: registered-property-computation.html
+  - subtest: <length-percentage> values are computed correctly [calc(19em - 2%)]
+    test: registered-property-computation.html
+  - subtest: <integer> values are computed correctly [calc(2.4)]
+    test: registered-property-computation.html
+  - subtest: <length> values are computed correctly [72pt]
+    test: registered-property-computation.html
+  - subtest: <integer> values are computed correctly [calc(2.6)]
+    test: registered-property-computation.html
+  - subtest: <length-percentage> values are computed correctly [18%]
+    test: registered-property-computation.html
+  - subtest: <transform-function> values are computed correctly [translateX(calc(11em
+      + 10%))]
+    test: registered-property-computation.html
+  - subtest: <length> values computed are correctly via var()-reference
+    test: registered-property-computation.html
+  - subtest: '* values are computed correctly [50s]'
+    test: registered-property-computation.html
+  - subtest: <length> values are computed correctly [2.54cm]
+    test: registered-property-computation.html
+  - subtest: <length> values are computed correctly when font-size is inherited [14em]
+    test: registered-property-computation.html
+  - subtest: <color> values are computed correctly [#badbee]
+    test: registered-property-computation.html
+  - subtest: <color> values are computed correctly [#00000a]
+    test: registered-property-computation.html
+  - subtest: <angle> values are computed correctly [180deg]
+    test: registered-property-computation.html
+  - subtest: <resolution> values are computed correctly [1dppx]
+    test: registered-property-computation.html
+  - subtest: '* values are computed correctly [-50grad]'
+    test: registered-property-computation.html
+  - subtest: <time> values are computed correctly [1s]
+    test: registered-property-computation.html
+  - subtest: <length> values are computed correctly [calc(16px - 7em + 10vh)]
+    test: registered-property-computation.html
+  - subtest: <angle> values are computed correctly [400grad]
+    test: registered-property-computation.html
+  - subtest: <length># values are computed correctly [4em ,9px]
+    test: registered-property-computation.html
+  - subtest: <length-percentage># values are computed correctly [calc(13% + 37px)]
+    test: registered-property-computation.html
+  - subtest: <length> values are computed correctly [12px]
+    test: registered-property-computation.html
+  - subtest: <length-percentage> values are computed correctly [17em]
+    test: registered-property-computation.html
+  - subtest: <transform-function> values are computed correctly [translateX(10em)]
+    test: registered-property-computation.html
+  - subtest: '* values are computed correctly [tomato]'
+    test: registered-property-computation.html
+  - subtest: <integer> values are computed correctly [calc(2.6 + 3.1)]
+    test: registered-property-computation.html
+  - subtest: <length-percentage>+ values are computed correctly [3% 10vmax 22px]
+    test: registered-property-computation.html
+  - subtest: Default initial values of generated properties are valid (self-test).
+    test: self-utils.html
+  - subtest: Generated properties respect inherits flag
+    test: self-utils.html
+  - subtest: Rule applied [<transform-list>, rotateX(0deg), false]
+    test: at-property.html
+  - subtest: Rule applied [<color>, rgb(1, 2, 3), false]
+    test: at-property.html
+  - subtest: Attribute 'inherits' returns expected value for ["false"]
+    test: at-property.html
+  - subtest: Rule applied [<number>, 2.5, false]
+    test: at-property.html
+  - subtest: Rule applied [<angle>, 42deg, false]
+    test: at-property.html
+  - subtest: Attribute 'inherits' returns expected value for [0]
+    test: at-property.html
+  - subtest: Rule applied [<angle>, 1turn, false]
+    test: at-property.html
+  - subtest: Rule applied [<length-percentage>, 10px, false]
+    test: at-property.html
+  - subtest: Rule applied [<length-percentage>, 10%, false]
+    test: at-property.html
+  - subtest: Attribute 'syntax' returns expected value for [rgb(255, 0, 0)]
+    test: at-property.html
+  - subtest: Rule applied [<integer>, 5, false]
+    test: at-property.html
+  - subtest: Attribute 'initial-value' returns expected value for [red]
+    test: at-property.html
+  - subtest: Attribute 'syntax' returns expected value for ["<color># | <image> |
+      none"]
+    test: at-property.html
+  - subtest: Rule applied [*, if(){}, false]
+    test: at-property.html
+  - subtest: Rule applied [<color>, green, false]
+    test: at-property.html
+  - subtest: Inherited properties inherit
+    test: at-property.html
+  - subtest: Attribute 'initial-value' returns expected value for [rgb(1, 2, 3)]
+    test: at-property.html
+  - subtest: Rule applied [<resolution>, 96dpi, false]
+    test: at-property.html
+  - subtest: Attribute 'inherits' returns expected value for [none]
+    test: at-property.html
+  - subtest: Non-inherited properties do not inherit
+    test: at-property.html
+  - subtest: Attribute 'inherits' returns expected value for ["true"]
+    test: at-property.html
+  - subtest: Rule applied [<color>, tomato, false]
+    test: at-property.html
+  - subtest: Rule applied [<time>, 10s, false]
+    test: at-property.html
+  - subtest: Rule applied [<length>, 10px, false]
+    test: at-property.html
+  - subtest: Attribute 'initial-value' returns expected value for [var(--x)]
+    test: at-property.html
+  - subtest: Rule applied [<transform-list>, rotateX(0deg) translateX(10px), false]
+    test: at-property.html
+  - subtest: Rule applied [<length-percentage>, calc(10% + 10px), false]
+    test: at-property.html
+  - subtest: Attribute 'syntax' returns expected value for ["notasyntax"]
+    test: at-property.html
+  - subtest: Rule applied [<time>, 1000ms, false]
+    test: at-property.html
+  - subtest: Attribute 'syntax' returns expected value for ["foo | bar | baz"]
+    test: at-property.html
+  - subtest: Attribute 'initial-value' returns expected value for [if(){}]
+    test: at-property.html
+  - subtest: Attribute 'syntax' returns expected value for [foo | bar]
+    test: at-property.html
+  - subtest: Attribute 'inherits' returns expected value for [1]
+    test: at-property.html
+  - subtest: Rule applied [<image>, url("http://a/"), false]
+    test: at-property.html
+  - subtest: Attribute 'initial-value' returns expected value for [10px]
+    test: at-property.html
+  - subtest: Attribute 'inherits' returns expected value for [true]
+    test: at-property.html
+  - subtest: Attribute 'syntax' returns expected value for ["*"]
+    test: at-property.html
+  - subtest: Attribute 'syntax' returns expected value for ["<color>"]
+    test: at-property.html
+  - subtest: Attribute 'initial-value' returns expected value for [foo]
+    test: at-property.html
+  - subtest: Attribute 'syntax' returns expected value for [red]
+    test: at-property.html
+  - subtest: Attribute 'syntax' returns expected value for [<color>]
+    test: at-property.html
+  - subtest: Rule applied [<percentage>, 10%, false]
+    test: at-property.html
+  - subtest: Rule applied [<url>, url("http://a/"), false]
+    test: at-property.html
+  - subtest: Rule applied [<color>, tomato, true]
+    test: at-property.html
+  - subtest: Attribute 'syntax' returns expected value for ["<color> | none"]
+    test: at-property.html
+  - subtest: Rule applied [<resolution>, 50dppx, false]
+    test: at-property.html
+  - subtest: Initial values substituted as computed value
+    test: at-property.html
+  - subtest: Attribute 'inherits' returns expected value for [calc(0)]
+    test: at-property.html
+  - subtest: Attribute 'inherits' returns expected value for [false]
+    test: at-property.html
+  - subtest: Rule applied [<transform-function>, rotateX(0deg), false]
+    test: at-property.html
+  - subtest: Initial non-inherited value can be substituted [calc(13% + 37%), --x]
+    test: registered-property-initial.html
+  - subtest: Initial value for <length> correctly computed [2.54cm]
+    test: registered-property-initial.html
+  - subtest: Initial value for <transform-list> correctly computed [scale(calc(2 +
+      2))]
+    test: registered-property-initial.html
+  - subtest: "Initial non-inherited value can be substituted [\t1turn, --x]"
+    test: registered-property-initial.html
+  - subtest: Initial value for <length> correctly computed [72pt]
+    test: registered-property-initial.html
+  - subtest: Initial value for <transform-function> correctly computed [rotate(42deg)]
+    test: registered-property-initial.html
+  - subtest: Initial value for <percentage> correctly computed [calc(10% + 20%)]
+    test: registered-property-initial.html
+  - subtest: Initial value for <color> correctly computed [pink, inherits]
+    test: registered-property-initial.html
+  - subtest: Initial non-inherited value can be substituted [calc(20 + 20 + 10), --x]
+    test: registered-property-initial.html
+  - subtest: Initial non-inherited value can be substituted [pink, background-color]
+    test: registered-property-initial.html
+  - subtest: "Initial non-inherited value can be substituted [\tcalc(13% + 37px),\
+      \ --x]"
+    test: registered-property-initial.html
+  - subtest: Initial value for <url> correctly computed [url(a)]
+    test: registered-property-initial.html
+  - subtest: Initial inherited value can be substituted [purple, color]
+    test: registered-property-initial.html
+  - subtest: Initial non-inherited value can be substituted [scale(calc(2 + 2)) translateX(calc(3px
+      + 1px)), --x]
+    test: registered-property-initial.html
+  - subtest: Initial non-inherited value can be substituted [2000ms, --x]
+    test: registered-property-initial.html
+  - subtest: Initial non-inherited value can be substituted [ pink , --x]
+    test: registered-property-initial.html
+  - subtest: Initial value for <color> correctly computed [purple]
+    test: registered-property-initial.html
+  - subtest: Initial value for <length-percentage> correctly computed [calc(1in +
+      10% + 4px)]
+    test: registered-property-initial.html
+  - subtest: Initial non-inherited value can be substituted [calc(10px + 15px), --x]
+    test: registered-property-initial.html
+  - subtest: Initial value for <length> correctly computed [calc(10px + 15px)]
+    test: registered-property-initial.html
+  - subtest: Initial value for <length> correctly computed [25.4mm]
+    test: registered-property-initial.html
+  - subtest: Initial non-inherited value can be substituted [calc(13 + 37), --x]
+    test: registered-property-initial.html
+  - subtest: Initial value for <length> correctly computed [6pc]
+    test: registered-property-initial.html
+  - subtest: Initial value for <length> correctly computed [1in]
+    test: registered-property-initial.html
+  - subtest: Initial non-inherited value can be substituted [scale(calc(2 + 2)), --x]
+    test: registered-property-initial.html
+  - subtest: "Initial non-inherited value can be substituted [\tfoo\t, --x]"
+    test: registered-property-initial.html
+  - subtest: Initial value for <transform-list> correctly computed [scale(calc(2 +
+      1)) translateX(calc(3px + 1px))]
+    test: registered-property-initial.html
+  - subtest: "Initial non-inherited value can be substituted [\ttest, --x]"
+    test: registered-property-initial.html
+  - subtest: Initial value for <url>+ correctly computed [url(a) url(a)]
+    test: registered-property-initial.html
+  - test: typedom.html
+  - subtest: Computed * is reified as CSSUnparsedValue
+    test: typedom.html
+  - subtest: registerProperty fails for an already registered property
+    test: register-property.html
+  - subtest: registerProperty only allows omitting initialValue if syntax is '*'
+    test: register-property.html
+  - subtest: Registering a property should not cause a transition
+    test: register-property.html
+  - subtest: registerProperty requires a name matching <custom-property-name>
+    test: register-property.html
+  - subtest: registerProperty requires inherits
+    test: register-property.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1634362
