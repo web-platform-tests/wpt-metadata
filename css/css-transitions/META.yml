@@ -1,11 +1,17 @@
 links:
 - product: safari
-  url: https://bugs.webkit.org/show_bug.cgi?id=203416
   results:
-  - test: before-load-001.html
-    status: TIMEOUT
+  - status: TIMEOUT
+    test: before-load-001.html
+  url: https://bugs.webkit.org/show_bug.cgi?id=203416
 - product: webkitgtk
-  url: https://bugs.webkit.org/show_bug.cgi?id=203416
   results:
-  - test: properties-value-auto-001.html
-    status: FAIL
+  - status: FAIL
+    test: properties-value-auto-001.html
+  url: https://bugs.webkit.org/show_bug.cgi?id=203416
+- product: firefox
+  results:
+  - subtest: CSS Transitions targetting (pseudo-)elements should have correct order
+      after sorting (::marker)
+    test: Document-getAnimations.tentative.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1635407
