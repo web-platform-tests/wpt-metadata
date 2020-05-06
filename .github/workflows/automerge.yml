@@ -26,7 +26,8 @@ jobs:
         # https://github.com/pascalgn/automerge-action#configuration
         env:
           GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
-          MERGE_LABELS: ""
+          MERGE_LABELS: "!do not merge yet"
           MERGE_FORKS: false
-          MERGE_FILTER_AUTHOR: "wptfyibot"
           MERGE_METHOD: "rebase"
+          MERGE_RETRIES: "3"
+          MERGE_RETRY_SLEEP: "90000"
