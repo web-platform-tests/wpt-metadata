@@ -1,0 +1,18 @@
+links:
+- product: firefox
+  results:
+  - test: marker-content-020.html
+  - subtest: outside image ::marker
+    test: marker-hit-testing.html
+  - subtest: outside nested image ::marker
+    test: marker-hit-testing.html
+  - subtest: outside nested string ::marker
+    test: marker-hit-testing.html
+  - subtest: outside string ::marker
+    test: marker-hit-testing.html
+  - test: marker-content-019.html
+  - subtest: ::marker with no box due to 'list-style'
+    test: marker-computed-size.html
+  - subtest: ::marker with no box due to 'content'
+    test: marker-computed-size.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1634330
