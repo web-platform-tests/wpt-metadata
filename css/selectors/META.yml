@@ -12,16 +12,21 @@ links:
   - test: selector-placeholder-shown-type-change-001.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1401657
 - product: safari
-  url: https://bugs.webkit.org/show_bug.cgi?id=64861
   results:
-  - test: selectors-dir-selector-ltr-001.html
-    status: FAIL
-  - test: selectors-dir-selector-rtl-001.html
-    status: FAIL
+  - status: FAIL
+    test: selectors-dir-selector-ltr-001.html
+  - status: FAIL
+    test: selectors-dir-selector-rtl-001.html
+  url: https://bugs.webkit.org/show_bug.cgi?id=64861
 - product: webkitgtk
-  url: https://bugs.webkit.org/show_bug.cgi?id=64861
   results:
-  - test: selectors-dir-selector-ltr-001.html
-    status: FAIL
-  - test: selectors-dir-selector-rtl-001.html
-    status: FAIL
+  - status: FAIL
+    test: selectors-dir-selector-ltr-001.html
+  - status: FAIL
+    test: selectors-dir-selector-rtl-001.html
+  url: https://bugs.webkit.org/show_bug.cgi?id=64861
+- product: firefox
+  results:
+  - subtest: Programmatic focus after click should not match :focus-visible
+    test: focus-visible-005.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1642831
