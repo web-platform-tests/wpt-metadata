@@ -182,3 +182,11 @@ links:
       inherit property "item(unsigned long)" with the proper type'
     test: idlharness.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1634398
+- product: firefox
+  results:
+  - subtest: Origin-clean check in cross-origin CSSOM Stylesheets (redirect from cross-origin
+      to same-origin)
+    test: stylesheet-same-origin.sub.html
+  - subtest: Origin-clean check in loading error CSSOM Stylesheets
+    test: stylesheet-same-origin.sub.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1644462
