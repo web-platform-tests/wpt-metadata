@@ -10,3 +10,18 @@ links:
   - subtest: 'Window interface: window must have own property "location"'
     test: idlharness.https.html?include=(Document|Window)
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1510437
+- product: firefox
+  results:
+  - subtest: 'source : unpaired surrogate codepoint should be replaced with U+FFFD'
+    test: usvstring-reflection.https.html
+  - subtest: 'anchor : unpaired surrogate codepoint should be replaced with U+FFFD'
+    test: usvstring-reflection.https.html
+  - subtest: 'area : unpaired surrogate codepoint should be replaced with U+FFFD'
+    test: usvstring-reflection.https.html
+  - subtest: 'storage event : unpaired surrogate codepoint should be replaced with
+      U+FFFD'
+    test: usvstring-reflection.https.html
+  - subtest: 'UnregisterProtocolHandler URL: unpaired surrogate codepoint should not
+      make any exceptions.'
+    test: usvstring-reflection.https.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1645268

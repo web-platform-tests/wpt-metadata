@@ -1,0 +1,33 @@
+links:
+- product: firefox
+  results:
+  - test: modulepreload.html
+  - subtest: link rel=modulepreload as=script
+    test: modulepreload.html
+  - subtest: cross-origin link rel=modulepreload
+    test: modulepreload.html
+  - subtest: link rel=modulepreload with bad href attribute
+    test: modulepreload.html
+  - subtest: link rel=modulepreload with integrity mismatch
+    test: modulepreload.html
+  - subtest: link rel=modulepreload for a module with syntax error
+    test: modulepreload.html
+  - subtest: cross-origin link rel=modulepreload crossorigin=anonymous
+    test: modulepreload.html
+  - subtest: same-origin link rel=modulepreload crossorigin=anonymous
+    test: modulepreload.html
+  - subtest: link rel=modulepreload with integrity match
+    test: modulepreload.html
+  - subtest: link rel=modulepreload with invalid as= value
+    test: modulepreload.html
+  - subtest: same-origin link rel=modulepreload crossorigin=use-credentials
+    test: modulepreload.html
+  - subtest: cross-origin link rel=modulepreload crossorigin=use-credentials
+    test: modulepreload.html
+  - subtest: link rel=modulepreload for a module with network error
+    test: modulepreload.html
+  - subtest: link rel=modulepreload with submodules
+    test: modulepreload.html
+  - subtest: link rel=modulepreload
+    test: modulepreload.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1645098
