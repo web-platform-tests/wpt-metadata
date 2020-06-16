@@ -1,11 +1,18 @@
 links:
 - product: safari
-  url: https://bugs.webkit.org/show_bug.cgi?id=196698
   results:
-  - test: iframe-loading-lazy.tentative.html
-    status: FAIL
+  - status: FAIL
+    test: iframe-loading-lazy.tentative.html
+  url: https://bugs.webkit.org/show_bug.cgi?id=196698
 - product: webkitgtk
-  url: https://bugs.webkit.org/show_bug.cgi?id=196698
   results:
-  - test: iframe-loading-lazy.tentative.html
-    status: FAIL
+  - status: FAIL
+    test: iframe-loading-lazy.tentative.html
+  url: https://bugs.webkit.org/show_bug.cgi?id=196698
+- product: firefox
+  results:
+  - subtest: Navigation resulted download in sandbox is blocked.
+    test: iframe_sandbox_navigation_download_block_downloads.sub.tentative.html
+  - subtest: <a download> triggered download in sandbox is blocked.
+    test: iframe_sandbox_anchor_download_block_downloads.sub.tentative.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1646031
