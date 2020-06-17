@@ -1,0 +1,16 @@
+links:
+- product: firefox
+  results:
+  - subtest: Property content-visibility value 'visible'
+    test: content-visibility-computed.html
+  - subtest: Property content-visibility value 'hidden'
+    test: content-visibility-computed.html
+  - subtest: Property content-visibility value 'auto'
+    test: content-visibility-computed.html
+  - subtest: e.style['content-visibility'] = "visible" should set the property value
+    test: content-visibility-valid.html
+  - subtest: e.style['content-visibility'] = "auto" should set the property value
+    test: content-visibility-valid.html
+  - subtest: e.style['content-visibility'] = "hidden" should set the property value
+    test: content-visibility-valid.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1646355
