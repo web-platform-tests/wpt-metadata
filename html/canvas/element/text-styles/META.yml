@@ -1,11 +1,24 @@
 links:
 - product: safari
-  url: https://bugs.webkit.org/show_bug.cgi?id=202517
   results:
-  - test: 2d.text.draw.baseline.ideographic.html
-    status: FAIL
+  - status: FAIL
+    test: 2d.text.draw.baseline.ideographic.html
+  url: https://bugs.webkit.org/show_bug.cgi?id=202517
 - product: webkitgtk
-  url: https://bugs.webkit.org/show_bug.cgi?id=202517
   results:
-  - test: 2d.text.draw.baseline.ideographic.html
-    status: FAIL
+  - status: FAIL
+    test: 2d.text.draw.baseline.ideographic.html
+  url: https://bugs.webkit.org/show_bug.cgi?id=202517
+- product: firefox
+  results:
+  - subtest: 'Canvas test: 2d.text.font.parse.size.percentage'
+    test: 2d.text.font.parse.size.percentage.html
+  - subtest: 'Canvas test: 2d.text.font.parse.size.percentage.default'
+    test: 2d.text.font.parse.size.percentage.default.html
+  - subtest: 'Canvas test: 2d.text.font.relative_size'
+    test: 2d.text.font.relative_size.html
+  - subtest: System fonts must be computed to explicit values
+    test: 2d.text.font.parse.system.html
+  - subtest: 'Canvas test: 2d.text.font.parse.complex'
+    test: 2d.text.font.parse.complex.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1646754
