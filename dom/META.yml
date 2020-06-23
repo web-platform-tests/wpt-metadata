@@ -1,9 +1,9 @@
 links:
 - product: chrome
-  url: https://bugs.chromium.org/p/chromium/issues/detail?id=460725
   results:
-    - test: historical.html
-      subtest: 'Historical DOM features must be removed: DOMError'
+  - subtest: 'Historical DOM features must be removed: DOMError'
+    test: historical.html
+  url: https://bugs.chromium.org/p/chromium/issues/detail?id=460725
 - product: firefox
   results:
   - subtest: 'Document interface: attribute origin'
@@ -27,3 +27,9 @@ links:
   - subtest: 'Historical DOM features must be removed: DOMRequest'
     test: historical.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1499547
+- product: firefox
+  results:
+  - subtest: 'Document interface: existence and properties of interface prototype
+      object''s @@unscopables property'
+    test: idlharness.window.html?exclude=Node
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1647538

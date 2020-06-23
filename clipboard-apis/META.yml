@@ -1,6 +1,30 @@
 links:
 - product: webkitgtk
-  url: https://bugs.webkit.org/show_bug.cgi?id=206653
   results:
-  - test: async-navigator-clipboard-basics.https.html
-    status: FAIL
+  - status: FAIL
+    test: async-navigator-clipboard-basics.https.html
+  url: https://bugs.webkit.org/show_bug.cgi?id=206653
+- product: firefox
+  results:
+  - subtest: 'ClipboardItem interface: existence and properties of interface prototype
+      object'
+    test: async-idlharness.https.html
+  - subtest: 'ClipboardItem interface: operation getType(DOMString)'
+    test: async-idlharness.https.html
+  - subtest: 'ClipboardItem interface: existence and properties of interface prototype
+      object''s "constructor" property'
+    test: async-idlharness.https.html
+  - subtest: 'ClipboardItem interface: existence and properties of interface object'
+    test: async-idlharness.https.html
+  - subtest: 'ClipboardItem interface: existence and properties of interface prototype
+      object''s @@unscopables property'
+    test: async-idlharness.https.html
+  - subtest: ClipboardItem interface object length
+    test: async-idlharness.https.html
+  - subtest: 'ClipboardItem interface: attribute types'
+    test: async-idlharness.https.html
+  - subtest: 'ClipboardItem interface: attribute presentationStyle'
+    test: async-idlharness.https.html
+  - subtest: ClipboardItem interface object name
+    test: async-idlharness.https.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1647538

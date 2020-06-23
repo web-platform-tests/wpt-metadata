@@ -25,3 +25,23 @@ links:
   - subtest: mouse Event sequence at implicit release on click
     test: pointerevent_boundary_events_at_implicit_release_hoverable_pointers.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1645239
+- product: firefox
+  results:
+  - subtest: 'PointerEvent interface: new PointerEvent("type") must inherit property
+      "getPredictedEvents()" with the proper type'
+    test: idlharness.window.html
+  - subtest: 'PointerEvent interface: operation getPredictedEvents()'
+    test: idlharness.window.html
+  - subtest: 'Document interface: attribute onpointerrawupdate'
+    test: idlharness.window.html
+  - subtest: 'Document interface: document must inherit property "onpointerrawupdate"
+      with the proper type'
+    test: idlharness.window.html
+  - subtest: 'Window interface: attribute onpointerrawupdate'
+    test: idlharness.window.html
+  - subtest: 'HTMLElement interface: attribute onpointerrawupdate'
+    test: idlharness.window.html
+  - subtest: 'Window interface: window must inherit property "onpointerrawupdate"
+      with the proper type'
+    test: idlharness.window.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1647540
