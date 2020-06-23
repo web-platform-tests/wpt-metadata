@@ -1,9 +1,38 @@
 links:
 - product: safari
-  url: https://bugs.webkit.org/show_bug.cgi?id=183300
   results:
-  - test: "*"
+  - test: '*'
+  url: https://bugs.webkit.org/show_bug.cgi?id=183300
 - product: webkitgtk
-  url: https://bugs.webkit.org/show_bug.cgi?id=183300
   results:
-  - test: "*"
+  - test: '*'
+  url: https://bugs.webkit.org/show_bug.cgi?id=183300
+- product: firefox
+  results:
+  - subtest: 'FeaturePolicy interface: operation getAllowlistForFeature(DOMString)'
+    test: idlharness.window.html
+  - subtest: 'FeaturePolicy interface: existence and properties of interface prototype
+      object''s "constructor" property'
+    test: idlharness.window.html
+  - subtest: FeaturePolicy interface object name
+    test: idlharness.window.html
+  - subtest: 'FeaturePolicy interface: operation allowedFeatures()'
+    test: idlharness.window.html
+  - subtest: FeaturePolicy must be primary interface of document.featurePolicy
+    test: idlharness.window.html
+  - subtest: FeaturePolicy interface object length
+    test: idlharness.window.html
+  - subtest: 'FeaturePolicy interface: operation features()'
+    test: idlharness.window.html
+  - subtest: 'FeaturePolicy interface: existence and properties of interface object'
+    test: idlharness.window.html
+  - subtest: 'FeaturePolicy interface: operation allowsFeature(DOMString, optional
+      DOMString)'
+    test: idlharness.window.html
+  - subtest: 'FeaturePolicy interface: existence and properties of interface prototype
+      object''s @@unscopables property'
+    test: idlharness.window.html
+  - subtest: 'FeaturePolicy interface: existence and properties of interface prototype
+      object'
+    test: idlharness.window.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1647538

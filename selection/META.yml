@@ -1,13 +1,23 @@
 links:
 - product: chrome
-  url: https://bugs.chromium.org/p/chromium/issues/detail?id=941913
   results:
   - test: Document-open.html
+  url: https://bugs.chromium.org/p/chromium/issues/detail?id=941913
 - product: safari
-  url: https://bugs.webkit.org/show_bug.cgi?id=145212
   results:
-  - test: "*"
+  - test: '*'
+  url: https://bugs.webkit.org/show_bug.cgi?id=145212
 - product: webkitgtk
-  url: https://bugs.webkit.org/show_bug.cgi?id=145212
   results:
-  - test: "*"
+  - test: '*'
+  url: https://bugs.webkit.org/show_bug.cgi?id=145212
+- product: firefox
+  results:
+  - subtest: 'Window interface: attribute onselectionchange'
+    test: idlharness.window.html
+  - subtest: 'HTMLElement interface: attribute onselectionchange'
+    test: idlharness.window.html
+  - subtest: 'Window interface: window must inherit property "onselectionchange" with
+      the proper type'
+    test: idlharness.window.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1647539
