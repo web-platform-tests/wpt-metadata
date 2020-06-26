@@ -1,0 +1,21 @@
+links:
+- product: firefox
+  results:
+  - subtest: Non-synthetic errors for same-origin scripts redirected to a cross-origin
+      URL and redirected back to same-origin should be muted
+    test: muted-errors.sub.html
+  - subtest: Errors for cross-origin script should be muted even if the script is
+      once loaded as same-origin
+    test: muted-errors.sub.html
+  - subtest: Errors for cross-origin scripts redirected to a same-origin url should
+      be muted
+    test: muted-errors.sub.html
+  - subtest: Syntax error for same-origin script redirected to a cross-origin URL
+      and redirected back to same-origin should be muted
+    test: muted-errors.sub.html
+  - subtest: Errors for cross-origin script should be muted
+    test: muted-errors.sub.html
+  - subtest: Errors for same-origin scripts redirected to a cross-origin url and redirected
+      back to same-origin should be muted
+    test: muted-errors.sub.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1648828
