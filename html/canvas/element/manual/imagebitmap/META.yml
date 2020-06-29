@@ -1,6 +1,13 @@
 links:
 - product: safari
-  url: https://bugs.webkit.org/show_bug.cgi?id=202458
   results:
-  - test: canvas-createImageBitmap-resize.html
-    status: FAIL
+  - status: FAIL
+    test: canvas-createImageBitmap-resize.html
+  url: https://bugs.webkit.org/show_bug.cgi?id=202458
+- product: firefox
+  results:
+  - subtest: Serialize ImageBitmap created from an OffscreenCanvas
+    test: createImageBitmap-serializable.html
+  - subtest: Transfer ImageBitmap created from an OffscreenCanvas
+    test: createImageBitmap-transfer.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1649264
