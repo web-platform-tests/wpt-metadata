@@ -1,9 +1,655 @@
 links:
 - product: safari
-  url: https://bugs.webkit.org/show_bug.cgi?id=192328
   results:
-  - test: "*"
+  - test: '*'
+  url: https://bugs.webkit.org/show_bug.cgi?id=192328
 - product: webkitgtk
-  url: https://bugs.webkit.org/show_bug.cgi?id=192328
   results:
-  - test: "*"
+  - test: '*'
+  url: https://bugs.webkit.org/show_bug.cgi?id=192328
+- product: firefox
+  results:
+  - subtest: Importing a same-origin script with credentials=omit should not send
+      the credentials
+    test: paint-worklet-credentials.https.html
+  - subtest: Importing a remote-origin script with credentials=same-origin should
+      not send the credentials
+    test: paint-worklet-credentials.https.html
+  - subtest: Importing a remote-origin script with the default WorkletOptions should
+      not send the credentials
+    test: paint-worklet-credentials.https.html
+  - subtest: Importing a remote-origin script with credentials=include should send
+      the credentials
+    test: paint-worklet-credentials.https.html
+  - subtest: Importing a remote-origin script with credentials=omit should not send
+      the credentials
+    test: paint-worklet-credentials.https.html
+  - subtest: A same-origin worklet importing a remote-origin-redirected script should
+      not be blocked by the worker-src directive because worklets obey the script-src
+      directive.
+    test: paint-worklet-csp.https.html
+  - subtest: A remote-origin worklet should not be blocked because the script-src
+      directive specifying the origin allows it.
+    test: paint-worklet-csp.https.html
+  - subtest: A remote-origin worklet should not be blocked by the worker-src directive
+      because worklets obey the script-src directive.
+    test: paint-worklet-csp.https.html
+  - subtest: A same-origin worklet importing a remote-origin script should not be
+      blocked because the script-src directive specifying the origin allows it.
+    test: paint-worklet-csp.https.html
+  - subtest: A remote-origin worklet importing a remote-origin script should be blocked
+      by the script-src 'self' directive.
+    test: paint-worklet-csp.https.html
+  - subtest: A remote-origin-redirected worklet should not be blocked because the
+      script-src * directive allows it.
+    test: paint-worklet-csp.https.html
+  - subtest: A same-origin worklet importing an insecure-origin-redirected script
+      should be blocked because of mixed contents.
+    test: paint-worklet-csp.https.html
+  - subtest: An insecure-origin-redirected worklet should be blocked because of mixed
+      contents.
+    test: paint-worklet-csp.https.html
+  - subtest: A same-origin worklet importing a remote-origin script should be blocked
+      by the script-src 'self' directive.
+    test: paint-worklet-csp.https.html
+  - subtest: A same-origin worklet importing a remote-origin script should not be
+      blocked by the worker-src directive because worklets obey the script-src directive.
+    test: paint-worklet-csp.https.html
+  - subtest: A remote-origin worklet importing a remote-origin script should not be
+      blocked because the script-src * directive allows it.
+    test: paint-worklet-csp.https.html
+  - subtest: A same-origin worklet importing a remote-origin-redirected script should
+      be blocked by the script-src 'self' directive.
+    test: paint-worklet-csp.https.html
+  - subtest: A remote-origin-redirected worklet should not be blocked because the
+      script-src directive specifying the origin allows it.
+    test: paint-worklet-csp.https.html
+  - subtest: A remote-origin-redirected worklet should be blocked by the script-src
+      'self' directive.
+    test: paint-worklet-csp.https.html
+  - subtest: A remote-origin worklet importing a remote-origin script should not be
+      blocked by the worker-src directive because worklets obey the script-src directive.
+    test: paint-worklet-csp.https.html
+  - subtest: A same-origin worklet importing a remote-origin script should not be
+      blocked because the script-src * directive allows it.
+    test: paint-worklet-csp.https.html
+  - subtest: A same-origin worklet importing an insecure-origin script should be blocked
+      because of mixed contents.
+    test: paint-worklet-csp.https.html
+  - subtest: An insecure-origin worklet should be blocked because of mixed contents.
+    test: paint-worklet-csp.https.html
+  - subtest: A same-origin worklet importing a remote-origin-redirected script should
+      not be blocked because the script-src directive specifying the origin allows
+      it.
+    test: paint-worklet-csp.https.html
+  - subtest: A remote-origin worklet should be blocked by the script-src 'self' directive.
+    test: paint-worklet-csp.https.html
+  - subtest: A remote-origin worklet should not be blocked because the script-src
+      * directive allows it.
+    test: paint-worklet-csp.https.html
+  - subtest: A same-origin worklet importing a remote-origin-redirected script should
+      not be blocked because the script-src * directive allows it.
+    test: paint-worklet-csp.https.html
+  - subtest: A remote-origin worklet importing a remote-origin script should not be
+      blocked because the script-src directive specifying the origin allows it.
+    test: paint-worklet-csp.https.html
+  - subtest: A remote-origin-redirected worklet should not be blocked by the worker-src
+      directive because worklets obey the script-src directive.
+    test: paint-worklet-csp.https.html
+  - subtest: Importing a remote-origin script from a remote-origin worklet script
+      that has "no-referrer" referrer policy should not send referrer.
+    test: paint-worklet-referrer.https.html
+  - subtest: Importing a remote-origin script from a page that has "origin" referrer
+      policy should send only an origin as referrer.
+    test: paint-worklet-referrer.https.html
+  - subtest: Importing a same-origin script from a page that has "same-origin" referrer
+      policy should send referrer.
+    test: paint-worklet-referrer.https.html
+  - subtest: Importing a same-origin script from a same-origin worklet script that
+      has "same-origin" referrer policy should send referrer.
+    test: paint-worklet-referrer.https.html
+  - subtest: Importing a remote-origin script from a same-origin worklet script that
+      has "same-origin" referrer policy should not send referrer.
+    test: paint-worklet-referrer.https.html
+  - subtest: Importing a remote-origin script from a page that has "same-origin" referrer
+      policy should not send referrer.
+    test: paint-worklet-referrer.https.html
+  - subtest: Importing a same-origin script from a remote-origin worklet script that
+      has "origin" referrer policy should send referrer.
+    test: paint-worklet-referrer.https.html
+  - subtest: Importing a same-origin script from a page that has "no-referrer" referrer
+      policy should not send referrer.
+    test: paint-worklet-referrer.https.html
+  - subtest: Importing a remote-origin script from a same-origin worklet script that
+      has "no-referrer" referrer policy should not send referrer.
+    test: paint-worklet-referrer.https.html
+  - subtest: Importing a same-origin script from a same-origin worklet script that
+      has "origin" referrer policy should send referrer.
+    test: paint-worklet-referrer.https.html
+  - subtest: Importing a same-origin script from a same-origin worklet script that
+      has "no-referrer" referrer policy should not send referrer.
+    test: paint-worklet-referrer.https.html
+  - subtest: Importing a same-origin script from a remote-origin worklet script that
+      has "same-origin" referrer policy should not send referrer.
+    test: paint-worklet-referrer.https.html
+  - subtest: Importing a remote-origin script from a page that has "no-referrer" referrer
+      policy should not send referrer.
+    test: paint-worklet-referrer.https.html
+  - subtest: Importing a remote-origin script from a remote-origin worklet script
+      that has "same-origin" referrer policy should send referrer.
+    test: paint-worklet-referrer.https.html
+  - subtest: Importing a same-origin script from a page that has "origin" referrer
+      policy should send only an origin as referrer.
+    test: paint-worklet-referrer.https.html
+  - subtest: Importing a remote-origin script from a same-origin worklet script that
+      has "origin" referrer policy should send referrer.
+    test: paint-worklet-referrer.https.html
+  - subtest: Importing a same-origin script from a remote-origin worklet script that
+      has "no-referrer" referrer policy should not send referrer.
+    test: paint-worklet-referrer.https.html
+  - subtest: Importing a remote-origin script from a remote-origin worklet script
+      that has "origin" referrer policy should send referrer.
+    test: paint-worklet-referrer.https.html
+  - subtest: Importing an invalid URL should reject the given promise with a SyntaxError.
+    test: animation-worklet-import.https.html
+  - subtest: Importing a data URL should resolve the given promise.
+    test: animation-worklet-import.https.html
+  - subtest: Importing a script which throws should still resolve the given promise.
+    test: animation-worklet-import.https.html
+  - subtest: Importing nested scripts resolves the given promise
+    test: animation-worklet-import.https.html
+  - subtest: Importing a non-existent script rejects the given promise with an AbortError.
+    test: animation-worklet-import.https.html
+  - subtest: Importing a cross origin resource with the Access-Control-Allow-Origin
+      header should resolve the given promise
+    test: animation-worklet-import.https.html
+  - subtest: Importing a script that has a syntax error should reject the given promise.
+    test: animation-worklet-import.https.html
+  - subtest: Importing a nested script that has a syntax error should reject the given
+      promise.
+    test: animation-worklet-import.https.html
+  - subtest: Importing scripts resolves all the given promises.
+    test: animation-worklet-import.https.html
+  - subtest: Importing a cross-origin-redirected resource with the Access-Control-Allow-Origin
+      header should resolve the given promise
+    test: animation-worklet-import.https.html
+  - subtest: Importing about:blank should reject the given promise.
+    test: animation-worklet-import.https.html
+  - subtest: Importing a cross-origin-redirected resource without the Access-Control-Allow-Origin
+      header should reject the given promise
+    test: animation-worklet-import.https.html
+  - subtest: Importing a cross origin resource without the Access-Control-Allow-Origin
+      header should reject the given promise
+    test: animation-worklet-import.https.html
+  - subtest: Importing a file:// URL should reject the given promise.
+    test: animation-worklet-import.https.html
+  - subtest: Importing a script resolves the given promise.
+    test: animation-worklet-import.https.html
+  - subtest: Importing a script that imports an invalid identifier should reject the
+      given promise.
+    test: animation-worklet-import.https.html
+  - subtest: Importing a blob URL should resolve the given promise.
+    test: animation-worklet-import.https.html
+  - subtest: Importing cyclic scripts resolves the given promise
+    test: animation-worklet-import.https.html
+  - subtest: Importing a remote-origin script from a remote-origin worklet script
+      that has "no-referrer" referrer policy should not send referrer.
+    test: layout-worklet-referrer.https.html
+  - subtest: Importing a remote-origin script from a page that has "origin" referrer
+      policy should send only an origin as referrer.
+    test: layout-worklet-referrer.https.html
+  - subtest: Importing a same-origin script from a page that has "same-origin" referrer
+      policy should send referrer.
+    test: layout-worklet-referrer.https.html
+  - subtest: Importing a same-origin script from a same-origin worklet script that
+      has "same-origin" referrer policy should send referrer.
+    test: layout-worklet-referrer.https.html
+  - subtest: Importing a remote-origin script from a same-origin worklet script that
+      has "same-origin" referrer policy should not send referrer.
+    test: layout-worklet-referrer.https.html
+  - subtest: Importing a remote-origin script from a page that has "same-origin" referrer
+      policy should not send referrer.
+    test: layout-worklet-referrer.https.html
+  - subtest: Importing a same-origin script from a remote-origin worklet script that
+      has "origin" referrer policy should send referrer.
+    test: layout-worklet-referrer.https.html
+  - subtest: Importing a same-origin script from a page that has "no-referrer" referrer
+      policy should not send referrer.
+    test: layout-worklet-referrer.https.html
+  - subtest: Importing a remote-origin script from a same-origin worklet script that
+      has "no-referrer" referrer policy should not send referrer.
+    test: layout-worklet-referrer.https.html
+  - subtest: Importing a same-origin script from a same-origin worklet script that
+      has "origin" referrer policy should send referrer.
+    test: layout-worklet-referrer.https.html
+  - subtest: Importing a same-origin script from a same-origin worklet script that
+      has "no-referrer" referrer policy should not send referrer.
+    test: layout-worklet-referrer.https.html
+  - subtest: Importing a same-origin script from a remote-origin worklet script that
+      has "same-origin" referrer policy should not send referrer.
+    test: layout-worklet-referrer.https.html
+  - subtest: Importing a remote-origin script from a page that has "no-referrer" referrer
+      policy should not send referrer.
+    test: layout-worklet-referrer.https.html
+  - subtest: Importing a remote-origin script from a remote-origin worklet script
+      that has "same-origin" referrer policy should send referrer.
+    test: layout-worklet-referrer.https.html
+  - subtest: Importing a same-origin script from a page that has "origin" referrer
+      policy should send only an origin as referrer.
+    test: layout-worklet-referrer.https.html
+  - subtest: Importing a remote-origin script from a same-origin worklet script that
+      has "origin" referrer policy should send referrer.
+    test: layout-worklet-referrer.https.html
+  - subtest: Importing a same-origin script from a remote-origin worklet script that
+      has "no-referrer" referrer policy should not send referrer.
+    test: layout-worklet-referrer.https.html
+  - subtest: Importing a remote-origin script from a remote-origin worklet script
+      that has "origin" referrer policy should send referrer.
+    test: layout-worklet-referrer.https.html
+  - subtest: Importing a same-origin script with credentials=omit should not send
+      the credentials
+    test: animation-worklet-credentials.https.html
+  - subtest: Importing a remote-origin script with credentials=same-origin should
+      not send the credentials
+    test: animation-worklet-credentials.https.html
+  - subtest: Importing a remote-origin script with the default WorkletOptions should
+      not send the credentials
+    test: animation-worklet-credentials.https.html
+  - subtest: Importing a remote-origin script with credentials=include should send
+      the credentials
+    test: animation-worklet-credentials.https.html
+  - subtest: Importing a remote-origin script with credentials=omit should not send
+      the credentials
+    test: animation-worklet-credentials.https.html
+  - subtest: Importing an invalid URL should reject the given promise with a SyntaxError.
+    test: audio-worklet-import.https.html
+  - subtest: Importing nested scripts resolves the given promise
+    test: audio-worklet-import.https.html
+  - subtest: Importing a non-existent script rejects the given promise with an AbortError.
+    test: audio-worklet-import.https.html
+  - subtest: Importing a script that has a syntax error should reject the given promise.
+    test: audio-worklet-import.https.html
+  - subtest: Importing a nested script that has a syntax error should reject the given
+      promise.
+    test: audio-worklet-import.https.html
+  - subtest: Importing about:blank should reject the given promise.
+    test: audio-worklet-import.https.html
+  - subtest: Importing a cross-origin-redirected resource without the Access-Control-Allow-Origin
+      header should reject the given promise
+    test: audio-worklet-import.https.html
+  - subtest: Importing a cross origin resource without the Access-Control-Allow-Origin
+      header should reject the given promise
+    test: audio-worklet-import.https.html
+  - subtest: Importing a file:// URL should reject the given promise.
+    test: audio-worklet-import.https.html
+  - subtest: Importing a script that imports an invalid identifier should reject the
+      given promise.
+    test: audio-worklet-import.https.html
+  - subtest: Importing cyclic scripts resolves the given promise
+    test: audio-worklet-import.https.html
+  - subtest: Importing an invalid URL should reject the given promise with a SyntaxError.
+    test: layout-worklet-import.https.html
+  - subtest: Importing a data URL should resolve the given promise.
+    test: layout-worklet-import.https.html
+  - subtest: Importing a script which throws should still resolve the given promise.
+    test: layout-worklet-import.https.html
+  - subtest: Importing nested scripts resolves the given promise
+    test: layout-worklet-import.https.html
+  - subtest: Importing a non-existent script rejects the given promise with an AbortError.
+    test: layout-worklet-import.https.html
+  - subtest: Importing a cross origin resource with the Access-Control-Allow-Origin
+      header should resolve the given promise
+    test: layout-worklet-import.https.html
+  - subtest: Importing a script that has a syntax error should reject the given promise.
+    test: layout-worklet-import.https.html
+  - subtest: Importing a nested script that has a syntax error should reject the given
+      promise.
+    test: layout-worklet-import.https.html
+  - subtest: Importing scripts resolves all the given promises.
+    test: layout-worklet-import.https.html
+  - subtest: Importing a cross-origin-redirected resource with the Access-Control-Allow-Origin
+      header should resolve the given promise
+    test: layout-worklet-import.https.html
+  - subtest: Importing about:blank should reject the given promise.
+    test: layout-worklet-import.https.html
+  - subtest: Importing a cross-origin-redirected resource without the Access-Control-Allow-Origin
+      header should reject the given promise
+    test: layout-worklet-import.https.html
+  - subtest: Importing a cross origin resource without the Access-Control-Allow-Origin
+      header should reject the given promise
+    test: layout-worklet-import.https.html
+  - subtest: Importing a file:// URL should reject the given promise.
+    test: layout-worklet-import.https.html
+  - subtest: Importing a script resolves the given promise.
+    test: layout-worklet-import.https.html
+  - subtest: Importing a script that imports an invalid identifier should reject the
+      given promise.
+    test: layout-worklet-import.https.html
+  - subtest: Importing a blob URL should resolve the given promise.
+    test: layout-worklet-import.https.html
+  - subtest: Importing cyclic scripts resolves the given promise
+    test: layout-worklet-import.https.html
+  - subtest: Importing an invalid URL should reject the given promise with a SyntaxError.
+    test: paint-worklet-import.https.html
+  - subtest: Importing a data URL should resolve the given promise.
+    test: paint-worklet-import.https.html
+  - subtest: Importing a script which throws should still resolve the given promise.
+    test: paint-worklet-import.https.html
+  - subtest: Importing nested scripts resolves the given promise
+    test: paint-worklet-import.https.html
+  - subtest: Importing a non-existent script rejects the given promise with an AbortError.
+    test: paint-worklet-import.https.html
+  - subtest: Importing a cross origin resource with the Access-Control-Allow-Origin
+      header should resolve the given promise
+    test: paint-worklet-import.https.html
+  - subtest: Importing a script that has a syntax error should reject the given promise.
+    test: paint-worklet-import.https.html
+  - subtest: Importing a nested script that has a syntax error should reject the given
+      promise.
+    test: paint-worklet-import.https.html
+  - subtest: Importing scripts resolves all the given promises.
+    test: paint-worklet-import.https.html
+  - subtest: Importing a cross-origin-redirected resource with the Access-Control-Allow-Origin
+      header should resolve the given promise
+    test: paint-worklet-import.https.html
+  - subtest: Importing about:blank should reject the given promise.
+    test: paint-worklet-import.https.html
+  - subtest: Importing a cross-origin-redirected resource without the Access-Control-Allow-Origin
+      header should reject the given promise
+    test: paint-worklet-import.https.html
+  - subtest: Importing a cross origin resource without the Access-Control-Allow-Origin
+      header should reject the given promise
+    test: paint-worklet-import.https.html
+  - subtest: Importing a file:// URL should reject the given promise.
+    test: paint-worklet-import.https.html
+  - subtest: Importing a script resolves the given promise.
+    test: paint-worklet-import.https.html
+  - subtest: Importing a script that imports an invalid identifier should reject the
+      given promise.
+    test: paint-worklet-import.https.html
+  - subtest: Importing a blob URL should resolve the given promise.
+    test: paint-worklet-import.https.html
+  - subtest: Importing cyclic scripts resolves the given promise
+    test: paint-worklet-import.https.html
+  - subtest: A same-origin worklet importing a remote-origin-redirected script should
+      not be blocked by the worker-src directive because worklets obey the script-src
+      directive.
+    test: audio-worklet-csp.https.html
+  - subtest: A same-origin worklet importing a remote-origin script should not be
+      blocked because the script-src directive specifying the origin allows it.
+    test: audio-worklet-csp.https.html
+  - subtest: A same-origin worklet importing a remote-origin script should not be
+      blocked by the worker-src directive because worklets obey the script-src directive.
+    test: audio-worklet-csp.https.html
+  - subtest: A remote-origin worklet importing a remote-origin script should not be
+      blocked because the script-src * directive allows it.
+    test: audio-worklet-csp.https.html
+  - subtest: A remote-origin worklet importing a remote-origin script should not be
+      blocked by the worker-src directive because worklets obey the script-src directive.
+    test: audio-worklet-csp.https.html
+  - subtest: A same-origin worklet importing a remote-origin script should not be
+      blocked because the script-src * directive allows it.
+    test: audio-worklet-csp.https.html
+  - subtest: A same-origin worklet importing a remote-origin-redirected script should
+      not be blocked because the script-src directive specifying the origin allows
+      it.
+    test: audio-worklet-csp.https.html
+  - subtest: A same-origin worklet importing a remote-origin-redirected script should
+      not be blocked because the script-src * directive allows it.
+    test: audio-worklet-csp.https.html
+  - subtest: A remote-origin worklet importing a remote-origin script should not be
+      blocked because the script-src directive specifying the origin allows it.
+    test: audio-worklet-csp.https.html
+  - subtest: Importing a same-origin script with credentials=omit should not send
+      the credentials
+    test: layout-worklet-credentials.https.html
+  - subtest: Importing a remote-origin script with credentials=same-origin should
+      not send the credentials
+    test: layout-worklet-credentials.https.html
+  - subtest: Importing a remote-origin script with the default WorkletOptions should
+      not send the credentials
+    test: layout-worklet-credentials.https.html
+  - subtest: Importing a remote-origin script with credentials=include should send
+      the credentials
+    test: layout-worklet-credentials.https.html
+  - subtest: Importing a remote-origin script with credentials=omit should not send
+      the credentials
+    test: layout-worklet-credentials.https.html
+  - subtest: Importing a same-origin script with credentials=omit should not send
+      the credentials
+    test: audio-worklet-credentials.https.html
+  - subtest: Importing a remote-origin script from a remote-origin worklet script
+      that has "no-referrer" referrer policy should not send referrer.
+    test: audio-worklet-referrer.https.html
+  - subtest: Importing a same-origin script from a same-origin worklet script that
+      has "same-origin" referrer policy should send referrer.
+    test: audio-worklet-referrer.https.html
+  - subtest: Importing a remote-origin script from a same-origin worklet script that
+      has "same-origin" referrer policy should not send referrer.
+    test: audio-worklet-referrer.https.html
+  - subtest: Importing a same-origin script from a remote-origin worklet script that
+      has "origin" referrer policy should send referrer.
+    test: audio-worklet-referrer.https.html
+  - subtest: Importing a remote-origin script from a same-origin worklet script that
+      has "no-referrer" referrer policy should not send referrer.
+    test: audio-worklet-referrer.https.html
+  - subtest: Importing a same-origin script from a same-origin worklet script that
+      has "origin" referrer policy should send referrer.
+    test: audio-worklet-referrer.https.html
+  - subtest: Importing a same-origin script from a same-origin worklet script that
+      has "no-referrer" referrer policy should not send referrer.
+    test: audio-worklet-referrer.https.html
+  - subtest: Importing a same-origin script from a remote-origin worklet script that
+      has "same-origin" referrer policy should not send referrer.
+    test: audio-worklet-referrer.https.html
+  - subtest: Importing a remote-origin script from a remote-origin worklet script
+      that has "same-origin" referrer policy should send referrer.
+    test: audio-worklet-referrer.https.html
+  - subtest: Importing a remote-origin script from a same-origin worklet script that
+      has "origin" referrer policy should send referrer.
+    test: audio-worklet-referrer.https.html
+  - subtest: Importing a same-origin script from a remote-origin worklet script that
+      has "no-referrer" referrer policy should not send referrer.
+    test: audio-worklet-referrer.https.html
+  - subtest: Importing a remote-origin script from a remote-origin worklet script
+      that has "origin" referrer policy should send referrer.
+    test: audio-worklet-referrer.https.html
+  - subtest: A same-origin worklet importing a remote-origin-redirected script should
+      not be blocked by the worker-src directive because worklets obey the script-src
+      directive.
+    test: layout-worklet-csp.https.html
+  - subtest: A remote-origin worklet should not be blocked because the script-src
+      directive specifying the origin allows it.
+    test: layout-worklet-csp.https.html
+  - subtest: A remote-origin worklet should not be blocked by the worker-src directive
+      because worklets obey the script-src directive.
+    test: layout-worklet-csp.https.html
+  - subtest: A same-origin worklet importing a remote-origin script should not be
+      blocked because the script-src directive specifying the origin allows it.
+    test: layout-worklet-csp.https.html
+  - subtest: A remote-origin worklet importing a remote-origin script should be blocked
+      by the script-src 'self' directive.
+    test: layout-worklet-csp.https.html
+  - subtest: A remote-origin-redirected worklet should not be blocked because the
+      script-src * directive allows it.
+    test: layout-worklet-csp.https.html
+  - subtest: A same-origin worklet importing an insecure-origin-redirected script
+      should be blocked because of mixed contents.
+    test: layout-worklet-csp.https.html
+  - subtest: An insecure-origin-redirected worklet should be blocked because of mixed
+      contents.
+    test: layout-worklet-csp.https.html
+  - subtest: A same-origin worklet importing a remote-origin script should be blocked
+      by the script-src 'self' directive.
+    test: layout-worklet-csp.https.html
+  - subtest: A same-origin worklet importing a remote-origin script should not be
+      blocked by the worker-src directive because worklets obey the script-src directive.
+    test: layout-worklet-csp.https.html
+  - subtest: A remote-origin worklet importing a remote-origin script should not be
+      blocked because the script-src * directive allows it.
+    test: layout-worklet-csp.https.html
+  - subtest: A same-origin worklet importing a remote-origin-redirected script should
+      be blocked by the script-src 'self' directive.
+    test: layout-worklet-csp.https.html
+  - subtest: A remote-origin-redirected worklet should not be blocked because the
+      script-src directive specifying the origin allows it.
+    test: layout-worklet-csp.https.html
+  - subtest: A remote-origin-redirected worklet should be blocked by the script-src
+      'self' directive.
+    test: layout-worklet-csp.https.html
+  - subtest: A remote-origin worklet importing a remote-origin script should not be
+      blocked by the worker-src directive because worklets obey the script-src directive.
+    test: layout-worklet-csp.https.html
+  - subtest: A same-origin worklet importing a remote-origin script should not be
+      blocked because the script-src * directive allows it.
+    test: layout-worklet-csp.https.html
+  - subtest: A same-origin worklet importing an insecure-origin script should be blocked
+      because of mixed contents.
+    test: layout-worklet-csp.https.html
+  - subtest: An insecure-origin worklet should be blocked because of mixed contents.
+    test: layout-worklet-csp.https.html
+  - subtest: A same-origin worklet importing a remote-origin-redirected script should
+      not be blocked because the script-src directive specifying the origin allows
+      it.
+    test: layout-worklet-csp.https.html
+  - subtest: A remote-origin worklet should be blocked by the script-src 'self' directive.
+    test: layout-worklet-csp.https.html
+  - subtest: A remote-origin worklet should not be blocked because the script-src
+      * directive allows it.
+    test: layout-worklet-csp.https.html
+  - subtest: A same-origin worklet importing a remote-origin-redirected script should
+      not be blocked because the script-src * directive allows it.
+    test: layout-worklet-csp.https.html
+  - subtest: A remote-origin worklet importing a remote-origin script should not be
+      blocked because the script-src directive specifying the origin allows it.
+    test: layout-worklet-csp.https.html
+  - subtest: A remote-origin-redirected worklet should not be blocked by the worker-src
+      directive because worklets obey the script-src directive.
+    test: layout-worklet-csp.https.html
+  - subtest: A same-origin worklet importing a remote-origin-redirected script should
+      not be blocked by the worker-src directive because worklets obey the script-src
+      directive.
+    test: animation-worklet-csp.https.html
+  - subtest: A remote-origin worklet should not be blocked because the script-src
+      directive specifying the origin allows it.
+    test: animation-worklet-csp.https.html
+  - subtest: A remote-origin worklet should not be blocked by the worker-src directive
+      because worklets obey the script-src directive.
+    test: animation-worklet-csp.https.html
+  - subtest: A same-origin worklet importing a remote-origin script should not be
+      blocked because the script-src directive specifying the origin allows it.
+    test: animation-worklet-csp.https.html
+  - subtest: A remote-origin worklet importing a remote-origin script should be blocked
+      by the script-src 'self' directive.
+    test: animation-worklet-csp.https.html
+  - subtest: A remote-origin-redirected worklet should not be blocked because the
+      script-src * directive allows it.
+    test: animation-worklet-csp.https.html
+  - subtest: A same-origin worklet importing an insecure-origin-redirected script
+      should be blocked because of mixed contents.
+    test: animation-worklet-csp.https.html
+  - subtest: An insecure-origin-redirected worklet should be blocked because of mixed
+      contents.
+    test: animation-worklet-csp.https.html
+  - subtest: A same-origin worklet importing a remote-origin script should be blocked
+      by the script-src 'self' directive.
+    test: animation-worklet-csp.https.html
+  - subtest: A same-origin worklet importing a remote-origin script should not be
+      blocked by the worker-src directive because worklets obey the script-src directive.
+    test: animation-worklet-csp.https.html
+  - subtest: A remote-origin worklet importing a remote-origin script should not be
+      blocked because the script-src * directive allows it.
+    test: animation-worklet-csp.https.html
+  - subtest: A same-origin worklet importing a remote-origin-redirected script should
+      be blocked by the script-src 'self' directive.
+    test: animation-worklet-csp.https.html
+  - subtest: A remote-origin-redirected worklet should not be blocked because the
+      script-src directive specifying the origin allows it.
+    test: animation-worklet-csp.https.html
+  - subtest: A remote-origin-redirected worklet should be blocked by the script-src
+      'self' directive.
+    test: animation-worklet-csp.https.html
+  - subtest: A remote-origin worklet importing a remote-origin script should not be
+      blocked by the worker-src directive because worklets obey the script-src directive.
+    test: animation-worklet-csp.https.html
+  - subtest: A same-origin worklet importing a remote-origin script should not be
+      blocked because the script-src * directive allows it.
+    test: animation-worklet-csp.https.html
+  - subtest: A same-origin worklet importing an insecure-origin script should be blocked
+      because of mixed contents.
+    test: animation-worklet-csp.https.html
+  - subtest: An insecure-origin worklet should be blocked because of mixed contents.
+    test: animation-worklet-csp.https.html
+  - subtest: A same-origin worklet importing a remote-origin-redirected script should
+      not be blocked because the script-src directive specifying the origin allows
+      it.
+    test: animation-worklet-csp.https.html
+  - subtest: A remote-origin worklet should be blocked by the script-src 'self' directive.
+    test: animation-worklet-csp.https.html
+  - subtest: A remote-origin worklet should not be blocked because the script-src
+      * directive allows it.
+    test: animation-worklet-csp.https.html
+  - subtest: A same-origin worklet importing a remote-origin-redirected script should
+      not be blocked because the script-src * directive allows it.
+    test: animation-worklet-csp.https.html
+  - subtest: A remote-origin worklet importing a remote-origin script should not be
+      blocked because the script-src directive specifying the origin allows it.
+    test: animation-worklet-csp.https.html
+  - subtest: A remote-origin-redirected worklet should not be blocked by the worker-src
+      directive because worklets obey the script-src directive.
+    test: animation-worklet-csp.https.html
+  - subtest: Importing a remote-origin script from a remote-origin worklet script
+      that has "no-referrer" referrer policy should not send referrer.
+    test: animation-worklet-referrer.https.html
+  - subtest: Importing a remote-origin script from a page that has "origin" referrer
+      policy should send only an origin as referrer.
+    test: animation-worklet-referrer.https.html
+  - subtest: Importing a same-origin script from a page that has "same-origin" referrer
+      policy should send referrer.
+    test: animation-worklet-referrer.https.html
+  - subtest: Importing a same-origin script from a same-origin worklet script that
+      has "same-origin" referrer policy should send referrer.
+    test: animation-worklet-referrer.https.html
+  - subtest: Importing a remote-origin script from a same-origin worklet script that
+      has "same-origin" referrer policy should not send referrer.
+    test: animation-worklet-referrer.https.html
+  - subtest: Importing a remote-origin script from a page that has "same-origin" referrer
+      policy should not send referrer.
+    test: animation-worklet-referrer.https.html
+  - subtest: Importing a same-origin script from a remote-origin worklet script that
+      has "origin" referrer policy should send referrer.
+    test: animation-worklet-referrer.https.html
+  - subtest: Importing a same-origin script from a page that has "no-referrer" referrer
+      policy should not send referrer.
+    test: animation-worklet-referrer.https.html
+  - subtest: Importing a remote-origin script from a same-origin worklet script that
+      has "no-referrer" referrer policy should not send referrer.
+    test: animation-worklet-referrer.https.html
+  - subtest: Importing a same-origin script from a same-origin worklet script that
+      has "origin" referrer policy should send referrer.
+    test: animation-worklet-referrer.https.html
+  - subtest: Importing a same-origin script from a same-origin worklet script that
+      has "no-referrer" referrer policy should not send referrer.
+    test: animation-worklet-referrer.https.html
+  - subtest: Importing a same-origin script from a remote-origin worklet script that
+      has "same-origin" referrer policy should not send referrer.
+    test: animation-worklet-referrer.https.html
+  - subtest: Importing a remote-origin script from a page that has "no-referrer" referrer
+      policy should not send referrer.
+    test: animation-worklet-referrer.https.html
+  - subtest: Importing a remote-origin script from a remote-origin worklet script
+      that has "same-origin" referrer policy should send referrer.
+    test: animation-worklet-referrer.https.html
+  - subtest: Importing a same-origin script from a page that has "origin" referrer
+      policy should send only an origin as referrer.
+    test: animation-worklet-referrer.https.html
+  - subtest: Importing a remote-origin script from a same-origin worklet script that
+      has "origin" referrer policy should send referrer.
+    test: animation-worklet-referrer.https.html
+  - subtest: Importing a same-origin script from a remote-origin worklet script that
+      has "no-referrer" referrer policy should not send referrer.
+    test: animation-worklet-referrer.https.html
+  - subtest: Importing a remote-origin script from a remote-origin worklet script
+      that has "origin" referrer policy should send referrer.
+    test: animation-worklet-referrer.https.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1649264
