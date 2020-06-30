@@ -1,0 +1,28 @@
+links:
+- product: firefox
+  results:
+  - subtest: cross-origin <frame name=>
+    test: name-attribute.window.html
+  - subtest: same-origin <frame name=>
+    test: name-attribute.window.html
+  - subtest: cross-origin <iframe name=initialvalue>
+    test: name-attribute.window.html
+  - subtest: same-origin <iframe name=>
+    test: name-attribute.window.html
+  - subtest: cross-origin <iframe>
+    test: name-attribute.window.html
+  - subtest: cross-origin <frame name=initialvalue>
+    test: name-attribute.window.html
+  - subtest: cross-origin <iframe name=>
+    test: name-attribute.window.html
+  - subtest: same-origin <iframe>
+    test: name-attribute.window.html
+  - subtest: same-origin <iframe name=initialvalue>
+    test: name-attribute.window.html
+  - subtest: cross-origin <frame>
+    test: name-attribute.window.html
+  - subtest: same-origin <frame>
+    test: name-attribute.window.html
+  - subtest: same-origin <frame name=initialvalue>
+    test: name-attribute.window.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1649514
