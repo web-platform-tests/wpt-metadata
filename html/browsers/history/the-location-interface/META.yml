@@ -1,6 +1,11 @@
 links:
 - product: webkitgtk
-  url: https://bugs.webkit.org/show_bug.cgi?id=197709
   results:
-  - test: location_hash.html
-    status: FAIL
+  - status: FAIL
+    test: location_hash.html
+  url: https://bugs.webkit.org/show_bug.cgi?id=197709
+- product: firefox
+  results:
+  - subtest: URL that fails to parse
+    test: location_replace.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1649091
