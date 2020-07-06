@@ -6,6 +6,36 @@ links:
   url: https://bugs.webkit.org/show_bug.cgi?id=202458
 - product: firefox
   results:
+  - test: createImageBitmap-origin.sub.html
+  - subtest: 'cross-origin HTMLVideoElement: origin unclear bitmaprenderer.transferFromImageBitmap'
+    test: createImageBitmap-origin.sub.html
+  - subtest: 'redirected to cross-origin HTMLVideoElement: origin unclear 2dContext.drawImage'
+    test: createImageBitmap-origin.sub.html
+  - subtest: 'redirected to same-origin HTMLVideoElement: origin unclear getImageData'
+    test: createImageBitmap-origin.sub.html
+  - subtest: 'redirected to same-origin HTMLVideoElement: origin unclear 2dContext.drawImage'
+    test: createImageBitmap-origin.sub.html
+  - subtest: 'unclean HTMLCanvasElement: origin unclear bitmaprenderer.transferFromImageBitmap'
+    test: createImageBitmap-origin.sub.html
+  - subtest: 'unclean ImageBitmap: origin unclear getImageData'
+    test: createImageBitmap-origin.sub.html
+  - subtest: 'unclean HTMLCanvasElement: origin unclear getImageData'
+    test: createImageBitmap-origin.sub.html
+  - subtest: 'unclean ImageBitmap: origin unclear bitmaprenderer.transferFromImageBitmap'
+    test: createImageBitmap-origin.sub.html
+  - subtest: 'unclean HTMLCanvasElement: origin unclear 2dContext.drawImage'
+    test: createImageBitmap-origin.sub.html
+  - subtest: 'redirected to cross-origin HTMLVideoElement: origin unclear bitmaprenderer.transferFromImageBitmap'
+    test: createImageBitmap-origin.sub.html
+  - subtest: 'redirected to same-origin HTMLVideoElement: origin unclear bitmaprenderer.transferFromImageBitmap'
+    test: createImageBitmap-origin.sub.html
+  - subtest: 'redirected to cross-origin HTMLVideoElement: origin unclear getImageData'
+    test: createImageBitmap-origin.sub.html
+  - subtest: 'unclean ImageBitmap: origin unclear 2dContext.drawImage'
+    test: createImageBitmap-origin.sub.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1649514
+- product: firefox
+  results:
   - subtest: Serialize ImageBitmap created from an OffscreenCanvas
     test: createImageBitmap-serializable.html
   - subtest: Transfer ImageBitmap created from an OffscreenCanvas
