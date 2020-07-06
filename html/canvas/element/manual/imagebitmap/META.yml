@@ -34,3 +34,10 @@ links:
   - subtest: 'unclean ImageBitmap: origin unclear 2dContext.drawImage'
     test: createImageBitmap-origin.sub.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1649514
+- product: firefox
+  results:
+  - subtest: Serialize ImageBitmap created from an OffscreenCanvas
+    test: createImageBitmap-serializable.html
+  - subtest: Transfer ImageBitmap created from an OffscreenCanvas
+    test: createImageBitmap-transfer.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1649264

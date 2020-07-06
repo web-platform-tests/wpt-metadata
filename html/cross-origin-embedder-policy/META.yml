@@ -1,5 +1,75 @@
 links:
 - product: firefox
   results:
+  - subtest: 'parent: |header(cross-origin-embedder-policy-report-only,require-corp),
+      target: |header(cross-origin-embedder-policy,require-corp), with empty frame:
+      true'
+    test: reporting-navigation.https.html
+  - subtest: 'parent: |header(cross-origin-embedder-policy-report-only,require-corp),
+      target: |header(cross-origin-resource-policy,cross-origin), with empty frame:
+      true'
+    test: reporting-navigation.https.html
+  - subtest: 'parent: |header(cross-origin-embedder-policy,require-corp), target:
+      |header(cross-origin-embedder-policy-report-only,require-corp)|header(cross-origin-resource-policy,cross-origin),
+      with empty frame: true'
+    test: reporting-navigation.https.html
+  - subtest: 'parent: |header(cross-origin-embedder-policy-report-only,require-corp),
+      target: |header(cross-origin-resource-policy,cross-origin), with empty frame:
+      false'
+    test: reporting-navigation.https.html
+  - subtest: 'parent: |header(cross-origin-embedder-policy,require-corp), target:
+      |header(cross-origin-embedder-policy,require-corp), with empty frame: false'
+    test: reporting-navigation.https.html
+  - subtest: 'parent: |header(cross-origin-embedder-policy,require-corp), target:
+      |header(cross-origin-embedder-policy-report-only,require-corp)|header(cross-origin-resource-policy,cross-origin),
+      with empty frame: false'
+    test: reporting-navigation.https.html
+  - subtest: 'parent: |header(cross-origin-embedder-policy-report-only,require-corp),
+      target: |header(cross-origin-embedder-policy,require-corp), with empty frame:
+      false'
+    test: reporting-navigation.https.html
+  - subtest: 'parent: |header(cross-origin-embedder-policy,require-corp), target:
+      |header(cross-origin-resource-policy,cross-origin), with empty frame: true'
+    test: reporting-navigation.https.html
+  - subtest: 'parent: |header(cross-origin-embedder-policy,require-corp), target:
+      |header(cross-origin-resource-policy,cross-origin), with empty frame: false'
+    test: reporting-navigation.https.html
+  - subtest: 'parent: |header(cross-origin-embedder-policy,require-corp), target:
+      (none), with empty frame: false'
+    test: reporting-navigation.https.html
+  - subtest: 'parent: |header(cross-origin-embedder-policy-report-only,require-corp),
+      target: (none), with empty frame: false'
+    test: reporting-navigation.https.html
+  - subtest: 'parent: |header(cross-origin-embedder-policy,require-corp), target:
+      |header(cross-origin-embedder-policy,require-corp), with empty frame: true'
+    test: reporting-navigation.https.html
+  - subtest: 'parent: |header(cross-origin-embedder-policy-report-only,require-corp),
+      target: (none), with empty frame: true'
+    test: reporting-navigation.https.html
+  - subtest: 'parent: |header(cross-origin-embedder-policy,require-corp), target:
+      (none), with empty frame: true'
+    test: reporting-navigation.https.html
+  - subtest: Fetch cross-origin no-cors cors-enabled corp-undefined from network and
+      CacheStorage.
+    test: require-corp-load-from-cache-storage.https.html
+  - subtest: Fetch cross-origin no-cors cors-disabled corp-undefined from network
+      and CacheStorage.
+    test: require-corp-load-from-cache-storage.https.html
+  - subtest: importScripts() fails for a script with no corp.
+    test: require-corp-sw.https.html
   - test: cache-storage-reporting-document.https.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1649514
+  - subtest: '[document] blocked during redirect'
+    test: reporting-subresource-corp.https.html
+  - subtest: '[service worker] blocked due to COEP'
+    test: reporting-subresource-corp.https.html
+  - subtest: '[between service worker and page] blocked due to COEP'
+    test: reporting-subresource-corp.https.html
+  - subtest: '[document] blocked due to COEP'
+    test: reporting-subresource-corp.https.html
+  - subtest: '[between service worker and page] blocked during redirect'
+    test: reporting-subresource-corp.https.html
+  - subtest: '[service worker] blocked during redirect'
+    test: reporting-subresource-corp.https.html
+  - subtest: 'CORP: same-site is checked and blocked.'
+    test: require-corp.https.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1649264
