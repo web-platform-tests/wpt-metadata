@@ -464,3 +464,28 @@ links:
       repeat(2 auto);'
     test: grid-inline-support-repeat-001.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1639412
+- product: firefox
+  results:
+  - subtest: '''grid'' with: grid-template-areas: "head head" "nav main" "foot ....";'
+    test: grid-support-grid-template-areas-001.html
+  - subtest: '''grid'' with: grid-template-areas: "a   b"   "c   d";'
+    test: grid-support-grid-template-areas-001.html
+  - subtest: '''grid'' with: grid-template-areas: "..a" "b a" ".a";'
+    test: grid-support-grid-template-areas-001.html
+  - subtest: '''grid'' with: grid-template-areas: ".. a" "b a" "... a";'
+    test: grid-support-grid-template-areas-001.html
+  - subtest: '''grid'' with: grid-template-areas: ".a..." "b a c";'
+    test: grid-support-grid-template-areas-001.html
+  - subtest: '''grid'' with: grid-template-areas: "head head" "nav main" "foot.";'
+    test: grid-support-grid-template-areas-001.html
+  - subtest: '''grid'' with: grid-template-areas: ".. a ..." "b a c";'
+    test: grid-support-grid-template-areas-001.html
+  - subtest: '''grid'' with: grid-template-areas: "... header header ...." "nav main
+      main main" "nav footer footer ....";'
+    test: grid-support-grid-template-areas-001.html
+  - subtest: '''grid'' with: grid-template-areas: "...header header...." "nav main
+      main main" "nav footer footer....";'
+    test: grid-support-grid-template-areas-001.html
+  - subtest: '''grid'' with: grid-template-areas: "... ...." "a a";'
+    test: grid-support-grid-template-areas-001.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1650967
