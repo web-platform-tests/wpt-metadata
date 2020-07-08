@@ -1,11 +1,15 @@
 links:
 - product: webkitgtk
-  results:
-  - status: FAIL
-    test: location_hash.html
   url: https://bugs.webkit.org/show_bug.cgi?id=197709
-- product: firefox
   results:
-  - subtest: URL that fails to parse
-    test: location_replace.html
+  - test: location_hash.html
+    status: FAIL
+- product: firefox
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1649091
+  results:
+  - test: location_replace.html
+    subtest: URL that fails to parse
+- product: chrome
+  url: https://crbug.com/691952
+  results:
+  - test: location-stringifier.html
