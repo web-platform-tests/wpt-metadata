@@ -21,12 +21,12 @@ func start() {
 	}
 	defer f.Close()
 
+	bsfSet := getBSF()
 	scanner := bufio.NewScanner(f)
 	for scanner.Scan() {
 		expectation := scanner.Text()
 		url, tags, testname, results := parseExpectation(expectation)
 		if isMeetCriteria(url, tags, testname, results) {
-			bsfSet := getBSF()
 			if bsfSet.Contains(testname) {
 				fmt.Println(expectation)
 			}
@@ -133,6 +133,7 @@ func getBSF() mapset.Set {
 	return bsfSet
 }
 
+// Parser for getting all Chrome-specific test failures.
 func parseBSF() {
 	data, err := ioutil.ReadFile("BSF.txt")
 	if err != nil {
