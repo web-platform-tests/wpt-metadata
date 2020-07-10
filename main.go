@@ -4,9 +4,12 @@ import (
 	"bufio"
 	"fmt"
 	mapset "github.com/deckarep/golang-set"
+	"github.com/web-platform-tests/wpt.fyi/shared"
+	"gopkg.in/yaml.v2"
 	"io/ioutil"
 	"log"
 	"os"
+	"path"
 	"strings"
 )
 
@@ -15,22 +18,27 @@ func main() {
 }
 
 func start() {
-	f, err := os.Open("TestExpectations.txt")
+	//f, err := os.Open("TestExpectations.txt")
+	f, err := os.Open("a.txt")
 	if err != nil {
 		log.Fatal(err)
 	}
 	defer f.Close()
 
-	bsfSet := getBSF()
+	//bsfSet := getBSF()
 	scanner := bufio.NewScanner(f)
 	for scanner.Scan() {
 		expectation := scanner.Text()
-		url, tags, testname, results := parseExpectation(expectation)
-		if isMeetCriteria(url, tags, testname, results) {
-			if bsfSet.Contains(testname) {
-				fmt.Println(expectation)
+		url, _, testname, results := parseExpectation(expectation)
+		/*
+			if isMeetCriteria(url, tags, testname, results) {
+				if bsfSet.Contains(testname) {
+					fmt.Println(expectation)
+				}
 			}
-		}
+		*/
+		toWPTMetadata(url, testname, results)
+
 	}
 
 	if err := scanner.Err(); err != nil {
@@ -101,7 +109,7 @@ func parseExpectation(line string) (url string, tags string, testname string, re
 
 		if strings.HasPrefix(split[i], "external/wpt/") {
 			//fmt.Println(split[i])
-			testname = split[i][len("external/wpt"):]
+			testname = split[i][len("external/wpt/"):]
 			//fmt.Println(testname)
 		}
 	}
@@ -109,8 +117,117 @@ func parseExpectation(line string) (url string, tags string, testname string, re
 	return
 }
 
-func toWPTMetadata(line string) string {
-	return ""
+func toWPTMetadata(url, filename, expectationStatus string) {
+	dirpath := path.Dir(filename)
+	testpath := path.Base(filename)
+	createDirIfNeeded(dirpath)
+	status := toMetadataStatus(expectationStatus)
+
+	filepath := dirpath + "/META.yml"
+	f, err := os.OpenFile(filepath, os.O_RDWR|os.O_CREATE, 0755)
+	if err != nil {
+		log.Fatal(err)
+	}
+	defer f.Close()
+
+	fi, err := f.Stat()
+	if err != nil {
+		log.Fatal(err)
+	}
+
+	var metadata shared.Metadata
+	if fi.Size() == 0 {
+		fmt.Println("New File....")
+		// New metadata
+		metadata = shared.Metadata{
+			Links: []shared.MetadataLink{
+				shared.MetadataLink{
+					Product: shared.ParseProductSpecUnsafe("chrome"),
+					URL:     url,
+					Results: []shared.MetadataTestResult{{
+						TestPath: testpath,
+						Status:   &status,
+					}},
+				},
+			},
+		}
+		writeToFile(metadata, f)
+		return
+	}
+
+	data, err := ioutil.ReadAll(f)
+	if err != nil {
+		log.Fatal(err)
+	}
+
+	hasAdded := false
+	err = yaml.Unmarshal(data, &metadata)
+	for index, link := range metadata.Links {
+		if link.Product.String() != "chrome" {
+			continue
+		}
+
+		for _, result := range link.Results {
+			if result.TestPath == testpath {
+				return
+			}
+		}
+
+		// Add a new result under the same URL
+		if link.URL == url {
+			fmt.Println("New Result...")
+			metadata.Links[index].Results = append(link.Results, shared.MetadataTestResult{TestPath: testpath, Status: &status})
+			hasAdded = true
+			break
+		}
+	}
+
+	// New link
+	if !hasAdded {
+		fmt.Println("New Link...")
+		newLink := shared.MetadataLink{
+			Product: shared.ParseProductSpecUnsafe("chrome"),
+			URL:     url,
+			Results: []shared.MetadataTestResult{{
+				TestPath: testpath,
+				Status:   &status,
+			}},
+		}
+		metadata.Links = append(metadata.Links, newLink)
+	}
+
+	writeToFile(metadata, f)
+}
+
+func writeToFile(metadata shared.Metadata, f *os.File) {
+	fmt.Println("Write to file...")
+	metadataBytes, err := yaml.Marshal(metadata)
+	if err != nil {
+		log.Fatal(err)
+	}
+
+	_, err = f.WriteAt(metadataBytes, 0)
+	if err != nil {
+		log.Fatal(err)
+	}
+}
+
+func toMetadataStatus(status string) shared.TestStatus {
+	if status == "Failure" {
+		return shared.TestStatusFail
+	}
+
+	return shared.TestStatusTimeout
+}
+
+func createDirIfNeeded(dir string) {
+	_, err := os.Stat(dir)
+	if !os.IsNotExist(err) {
+		return
+	}
+
+	fmt.Println("making dir")
+	os.MkdirAll(dir, os.ModePerm)
 }
 
 func getBSF() mapset.Set {
