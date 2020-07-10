@@ -19,7 +19,7 @@ func main() {
 
 func start() {
 	//f, err := os.Open("TestExpectations.txt")
-	f, err := os.Open("a.txt")
+	f, err := os.Open("PortableTestExpectation.txt")
 	if err != nil {
 		log.Fatal(err)
 	}
