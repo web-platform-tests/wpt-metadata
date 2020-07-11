@@ -64,6 +64,8 @@ func TestResultsTestPaths(t *testing.T) {
 				if err != nil {
 					panic(err)
 				}
+				defer f.Close()
+
 				data, err := ioutil.ReadAll(f)
 				if err != nil {
 					panic(err)
