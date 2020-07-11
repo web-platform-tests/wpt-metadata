@@ -1,17 +1,22 @@
 links:
 - product: safari
-  results:
-  - status: TIMEOUT
-    test: before-load-001.html
   url: https://bugs.webkit.org/show_bug.cgi?id=203416
+  results:
+  - test: before-load-001.html
+    status: TIMEOUT
 - product: webkitgtk
-  results:
-  - status: FAIL
-    test: properties-value-auto-001.html
   url: https://bugs.webkit.org/show_bug.cgi?id=203416
-- product: firefox
   results:
-  - subtest: CSS Transitions targetting (pseudo-)elements should have correct order
-      after sorting (::marker)
-    test: Document-getAnimations.tentative.html
+  - test: properties-value-auto-001.html
+    status: FAIL
+- product: firefox
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1635407
+  results:
+  - test: Document-getAnimations.tentative.html
+    subtest: CSS Transitions targetting (pseudo-)elements should have correct order
+      after sorting (::marker)
+- product: chrome
+  url: crbug.com/1074547
+  results:
+  - test: transitioncancel-002.html
+    status: TIMEOUT

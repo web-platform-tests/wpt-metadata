@@ -1,12 +1,12 @@
 links:
 - product: firefox
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1201160
   results:
   - test: fetch-request-css-base-url.https.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1201160
 - product: firefox
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1532331
   results:
   - test: fetch-request-css-images.https.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1532331
 - product: safari
   url: https://bugs.webkit.org/show_bug.cgi?id=182176
   results:
@@ -37,3 +37,8 @@ links:
   results:
   - test: fetch-canvas-tainting-video-with-range-request.https.html
     status: TIMEOUT
+- product: chrome
+  url: crbug.com/595993
+  results:
+  - test: fetch-header-visibility.https.html
+    status: FAIL
