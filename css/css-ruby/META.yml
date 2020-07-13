@@ -1,19 +1,24 @@
 links:
 - product: firefox
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1634324
   results:
   - test: ruby-box-model-001.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1634324
 - product: firefox
-  results:
-  - subtest: ruby-position:over on <rt> works
-    test: ruby-position.html
-  - subtest: ruby-position:under on <rt> works
-    test: ruby-position.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1634417
-- product: firefox
   results:
-  - subtest: Don't Consume half-leading of the next line with text-emphasis
-    test: line-spacing.html
-  - subtest: Don't Consume half-leading of the previous line with text-emphasis
-    test: line-spacing.html
+  - test: ruby-position.html
+    subtest: ruby-position:over on <rt> works
+  - test: ruby-position.html
+    subtest: ruby-position:under on <rt> works
+- product: firefox
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1646777
+  results:
+  - test: line-spacing.html
+    subtest: Don't Consume half-leading of the next line with text-emphasis
+  - test: line-spacing.html
+    subtest: Don't Consume half-leading of the previous line with text-emphasis
+- product: chrome
+  url: crbug.com/27659
+  results:
+  - test: ruby-intrinsic-isize-002.html
+    status: FAIL
