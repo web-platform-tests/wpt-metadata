@@ -85,6 +85,9 @@ func TestResultsTestPaths(t *testing.T) {
 							fullPath := path.Join(fileDir, result.TestPath)
 							var ok bool
 							var err error
+
+							assert.False(t, strings.Contains(result.TestPath, "/"),
+								"%s is not the correct directory for %s", fileDir, result.TestPath)
 							if result.TestPath == "*" {
 								ok, err = manifest.ContainsFile(fileDir)
 							} else {
