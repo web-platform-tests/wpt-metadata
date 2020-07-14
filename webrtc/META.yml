@@ -1,16 +1,46 @@
 links:
 - product: firefox
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1550493
   results:
   - test: RTCPeerConnection-setRemoteDescription-tracks.https.html
   - test: RTCDTMFSender-ontonechange.https.html
   - test: RTCRtpTransceiver.https.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1550493
 - product: firefox
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1525394
   results:
   - test: RTCRtpReceiver-getSynchronizationSources.https.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1525394
 - product: webkitgtk
   url: https://bugs.webkit.org/show_bug.cgi?id=172521
   results:
   - test: getstats.html
     status: TIMEOUT
+- product: chrome
+  url: crbug.com/1045403
+  results:
+  - test: RTCConfiguration-iceServers.html
+    status: FAIL
+- product: chrome
+  url: crbug.com/964184
+  results:
+  - test: RTCPeerConnection-addIceCandidate.html
+    status: FAIL
+- product: chrome
+  url: crbug.com/1094930
+  results:
+  - test: receiver-track-live.https.html
+    status: FAIL
+- product: chrome
+  url: crbug.com/924255
+  results:
+  - test: RTCTrackEvent-constructor.html
+    status: FAIL
+- product: chrome
+  url: crbug.com/1050317
+  results:
+  - test: RTCPeerConnection-setLocalDescription-answer.html
+    status: FAIL
+- product: chrome
+  url: crbug.com/1057527
+  results:
+  - test: RTCPeerConnection-setLocalDescription-parameterless.https.html
+    status: FAIL

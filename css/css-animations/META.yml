@@ -1,11 +1,21 @@
 links:
 - product: firefox
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1634352
   results:
   - test: animation-important-001.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1634352
 - product: firefox
-  results:
-  - subtest: CSS Animations targetting (pseudo-)elements should have correct order
-      after sorting (::marker)
-    test: Document-getAnimations.tentative.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1635063
+  results:
+  - test: Document-getAnimations.tentative.html
+    subtest: CSS Animations targetting (pseudo-)elements should have correct order
+      after sorting (::marker)
+- product: chrome
+  url: crbug.com/1064065
+  results:
+  - test: event-dispatch.tentative.html
+    status: FAIL
+- product: chrome
+  url: crbug.com/868224
+  results:
+  - test: idlharness.html
+    status: FAIL

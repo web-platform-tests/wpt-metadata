@@ -1,10 +1,20 @@
 links:
 - product: firefox
-  results:
-  - subtest: Test that in viewport images with loading='lazy' and changed to loading='eager'
-      do not block the window load event.
-    test: image-loading-lazy-in-viewport-dynamic.html
-  - subtest: Test that below viewport images with loading='lazy' and changed to loading='eager'
-      load and do not block the window load event.
-    test: image-loading-lazy-below-viewport-dynamic.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1650947
+  results:
+  - test: image-loading-lazy-in-viewport-dynamic.html
+    subtest: Test that in viewport images with loading='lazy' and changed to loading='eager'
+      do not block the window load event.
+  - test: image-loading-lazy-below-viewport-dynamic.html
+    subtest: Test that below viewport images with loading='lazy' and changed to loading='eager'
+      load and do not block the window load event.
+- product: chrome
+  url: crbug.com/651762
+  results:
+  - test: relevant-mutations.html
+    status: FAIL
+- product: chrome
+  url: crbug.com/1000273
+  results:
+  - test: img.complete.html
+    status: FAIL
