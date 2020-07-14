@@ -1,122 +1,128 @@
 links:
 - product: chrome
+  results:
+  - status: FAIL
+    test: font-feature-settings-descriptor-01.html
   url: https://bugs.chromium.org/p/chromium/issues/detail?id=443467
-  results:
-  - test: font-feature-settings-descriptor-01.html
-    status: FAIL
 - product: chrome
+  results:
+  - status: FAIL
+    test: inheritance.html
+  - status: FAIL
+    test: font-synthesis-01.html
+  - status: FAIL
+    test: font-synthesis-02.html
+  - status: FAIL
+    test: font-synthesis-03.html
+  - status: FAIL
+    test: font-synthesis-04.html
   url: https://bugs.chromium.org/p/chromium/issues/detail?id=509989
-  results:
-  - test: inheritance.html
-    status: FAIL
-  - test: font-synthesis-01.html
-    status: FAIL
-  - test: font-synthesis-02.html
-    status: FAIL
-  - test: font-synthesis-03.html
-    status: FAIL
-  - test: font-synthesis-04.html
-    status: FAIL
 - product: chrome
+  results:
+  - status: FAIL
+    test: font-variant-alternates-parsing.html
+  - status: FAIL
+    test: font-variant-alternates-02.html
   url: https://bugs.chromium.org/p/chromium/issues/detail?id=716567
-  results:
-  - test: font-variant-alternates-parsing.html
-    status: FAIL
-  - test: font-variant-alternates-02.html
-    status: FAIL
 - product: safari
-  url: https://bugs.webkit.org/show_bug.cgi?id=15257
   results:
-  - test: font-size-adjust-002.html
-    status: FAIL
-  - test: font-size-adjust-005.xht
-    status: FAIL
+  - status: FAIL
+    test: font-size-adjust-002.html
+  - status: FAIL
+    test: font-size-adjust-005.xht
+  url: https://bugs.webkit.org/show_bug.cgi?id=15257
 - product: webkitgtk
-  url: https://bugs.webkit.org/show_bug.cgi?id=15257
   results:
-  - test: font-size-adjust-002.html
-    status: FAIL
-  - test: font-size-adjust-005.xht
-    status: FAIL
+  - status: FAIL
+    test: font-size-adjust-002.html
+  - status: FAIL
+    test: font-size-adjust-005.xht
+  url: https://bugs.webkit.org/show_bug.cgi?id=15257
 - product: safari
+  results:
+  - status: FAIL
+    test: font-default-01.html
+  - status: FAIL
+    test: font-default-02.html
   url: https://bugs.webkit.org/show_bug.cgi?id=206883
-  results:
-  - test: font-default-01.html
-    status: FAIL
-  - test: font-default-02.html
-    status: FAIL
 - product: webkitgtk
+  results:
+  - status: FAIL
+    test: quoted-generic-ignored.html
   url: https://bugs.webkit.org/show_bug.cgi?id=206885
-  results:
-  - test: quoted-generic-ignored.html
-    status: FAIL
 - product: firefox
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1634400
   results:
-  - test: idlharness.html
-    subtest: 'CSSFontFeatureValuesRule interface: attribute styleset'
-  - test: idlharness.html
-    subtest: 'CSSRule interface: constant FONT_PALETTE_VALUES_RULE on interface object'
-  - test: idlharness.html
-    subtest: 'CSSFontFeatureValuesRule interface: attribute swash'
-  - test: idlharness.html
-    subtest: 'CSSFontPaletteValuesRule interface: existence and properties of interface
+  - subtest: 'CSSFontFeatureValuesRule interface: attribute styleset'
+    test: idlharness.html
+  - subtest: 'CSSRule interface: constant FONT_PALETTE_VALUES_RULE on interface object'
+    test: idlharness.html
+  - subtest: 'CSSFontFeatureValuesRule interface: attribute swash'
+    test: idlharness.html
+  - subtest: 'CSSFontPaletteValuesRule interface: existence and properties of interface
       prototype object''s @@unscopables property'
-  - test: idlharness.html
-    subtest: CSSFontFeatureValuesMap interface object length
-  - test: idlharness.html
-    subtest: 'CSSRule interface: cssRule must inherit property "FONT_PALETTE_VALUES_RULE"
+    test: idlharness.html
+  - subtest: CSSFontFeatureValuesMap interface object length
+    test: idlharness.html
+  - subtest: 'CSSRule interface: cssRule must inherit property "FONT_PALETTE_VALUES_RULE"
       with the proper type'
-  - test: idlharness.html
-    subtest: CSSFontPaletteValuesRule interface object length
-  - test: idlharness.html
-    subtest: CSSFontPaletteValuesRule interface object name
-  - test: idlharness.html
-    subtest: 'CSSFontFeatureValuesMap interface: existence and properties of interface
+    test: idlharness.html
+  - subtest: CSSFontPaletteValuesRule interface object length
+    test: idlharness.html
+  - subtest: CSSFontPaletteValuesRule interface object name
+    test: idlharness.html
+  - subtest: 'CSSFontFeatureValuesMap interface: existence and properties of interface
       prototype object''s @@unscopables property'
-  - test: idlharness.html
-    subtest: 'CSSFontFeatureValuesMap interface: existence and properties of interface
+    test: idlharness.html
+  - subtest: 'CSSFontFeatureValuesMap interface: existence and properties of interface
       prototype object'
-  - test: idlharness.html
-    subtest: 'CSSFontPaletteValuesRule interface: existence and properties of interface
+    test: idlharness.html
+  - subtest: 'CSSFontPaletteValuesRule interface: existence and properties of interface
       prototype object'
-  - test: idlharness.html
-    subtest: 'CSSFontFeatureValuesMap interface: operation set(CSSOMString, (unsigned
+    test: idlharness.html
+  - subtest: 'CSSFontFeatureValuesMap interface: operation set(CSSOMString, (unsigned
       long or sequence<unsigned long>))'
-  - test: idlharness.html
-    subtest: 'CSSFontFeatureValuesRule interface: attribute characterVariant'
-  - test: idlharness.html
-    subtest: 'CSSFontPaletteValuesRule interface: attribute fontFamily'
-  - test: idlharness.html
-    subtest: 'CSSFontFeatureValuesRule interface: attribute ornaments'
-  - test: idlharness.html
-    subtest: 'CSSRule interface: cssFontFaceRule must inherit property "FONT_PALETTE_VALUES_RULE"
+    test: idlharness.html
+  - subtest: 'CSSFontFeatureValuesRule interface: attribute characterVariant'
+    test: idlharness.html
+  - subtest: 'CSSFontPaletteValuesRule interface: attribute fontFamily'
+    test: idlharness.html
+  - subtest: 'CSSFontFeatureValuesRule interface: attribute ornaments'
+    test: idlharness.html
+  - subtest: 'CSSRule interface: cssFontFaceRule must inherit property "FONT_PALETTE_VALUES_RULE"
       with the proper type'
-  - test: idlharness.html
-    subtest: 'CSSRule interface: constant FONT_PALETTE_VALUES_RULE on interface prototype
+    test: idlharness.html
+  - subtest: 'CSSRule interface: constant FONT_PALETTE_VALUES_RULE on interface prototype
       object'
-  - test: idlharness.html
-    subtest: 'CSSFontFeatureValuesMap interface: existence and properties of interface
+    test: idlharness.html
+  - subtest: 'CSSFontFeatureValuesMap interface: existence and properties of interface
       prototype object''s "constructor" property'
-  - test: idlharness.html
-    subtest: 'CSSFontFeatureValuesRule interface: attribute stylistic'
-  - test: idlharness.html
-    subtest: 'CSSFontFeatureValuesRule interface: attribute annotation'
-  - test: idlharness.html
-    subtest: 'CSSFontPaletteValuesRule interface: existence and properties of interface
+    test: idlharness.html
+  - subtest: 'CSSFontFeatureValuesRule interface: attribute stylistic'
+    test: idlharness.html
+  - subtest: 'CSSFontFeatureValuesRule interface: attribute annotation'
+    test: idlharness.html
+  - subtest: 'CSSFontPaletteValuesRule interface: existence and properties of interface
       object'
-  - test: idlharness.html
-    subtest: 'CSSFontFeatureValuesMap interface: existence and properties of interface
+    test: idlharness.html
+  - subtest: 'CSSFontFeatureValuesMap interface: existence and properties of interface
       object'
-  - test: idlharness.html
-    subtest: 'CSSFontPaletteValuesRule interface: attribute basePalette'
-  - test: idlharness.html
-    subtest: CSSFontFeatureValuesMap interface object name
-  - test: idlharness.html
-    subtest: 'CSSFontPaletteValuesRule interface: existence and properties of interface
+    test: idlharness.html
+  - subtest: 'CSSFontPaletteValuesRule interface: attribute basePalette'
+    test: idlharness.html
+  - subtest: CSSFontFeatureValuesMap interface object name
+    test: idlharness.html
+  - subtest: 'CSSFontPaletteValuesRule interface: existence and properties of interface
       prototype object''s "constructor" property'
+    test: idlharness.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1634400
 - product: chrome
-  url: crbug.com/481430
   results:
-  - test: font-language-override-02.html
-    status: FAIL
+  - status: FAIL
+    test: font-language-override-02.html
+  url: crbug.com/481430
+- product: firefox
+  results:
+  - subtest: We should use the local font to render the page when the primary remote
+      font is loading
+    test: fallback-url-to-local.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1652663
