@@ -14,10 +14,10 @@ import (
 )
 
 func main() {
-	start()
+	processMonorailFruits()
 }
 
-func start() {
+func portTestExpectations() {
 	//f, err := os.Open("TestExpectations.txt")
 	f, err := os.Open("PortableTestExpectation.txt")
 	if err != nil {
@@ -264,4 +264,99 @@ func parseBSF() {
 			fmt.Println(part[len("{\"test\":"):])
 		}
 	}
+}
+
+func processMonorailFruits() {
+	peSet := getPESet()
+	// Read monorail-CSF-results.txt
+	f, err := os.Open("monorail-CSF-results.txt")
+	if err != nil {
+		log.Fatal(err)
+	}
+	defer f.Close()
+
+	scanner := bufio.NewScanner(f)
+	for scanner.Scan() {
+		monorailResult := scanner.Text()
+		// Get tests with one link
+		testname, bug := parseMonorailResult(monorailResult)
+		if testname == "" {
+			continue
+		}
+
+		// Filter out the ported Test Expectations.
+		if peSet.Contains(testname[1:]) {
+			continue
+		}
+
+		toWPTMetadata("crbug.com/"+bug, testname[1:], "Failure")
+	}
+
+	if err := scanner.Err(); err != nil {
+		log.Fatal(err)
+	}
+
+}
+
+func parseMonorailResult(monorailResult string) (string, string) {
+	split := strings.Split(monorailResult, "=>")
+	testname := strings.TrimSpace(split[0])
+	right := strings.TrimSpace(split[1])
+	if right == "[]" {
+		return "", ""
+	}
+
+	bugs := strings.Split(right, ",")
+	if len(bugs) != 1 {
+		return "", ""
+	}
+
+	bug := bugs[0][1 : len(bugs[0])-1]
+	return testname, bug
+}
+
+func getPESet() mapset.Set {
+	// A non-filtered list of portable Test Expectations.
+	f, err := os.Open("PE.txt")
+	if err != nil {
+		log.Fatal(err)
+	}
+	defer f.Close()
+
+	peSet := mapset.NewSet()
+	scanner := bufio.NewScanner(f)
+	for scanner.Scan() {
+		expectation := scanner.Text()
+		_, _, testname, _ := parseExpectation(expectation)
+		peSet.Add(testname)
+	}
+
+	if err := scanner.Err(); err != nil {
+		log.Fatal(err)
+	}
+
+	return peSet
+}
+
+func getOptOutSet() mapset.Set {
+	// A non-filtered list of portable Test Expectations.
+	f, err := os.Open("PE.txt")
+	if err != nil {
+		log.Fatal(err)
+	}
+	defer f.Close()
+
+	peSet := mapset.NewSet()
+	scanner := bufio.NewScanner(f)
+	for scanner.Scan() {
+		expectation := scanner.Text()
+		_, _, testname, _ := parseExpectation(expectation)
+		peSet.Add(testname)
+	}
+
+	if err := scanner.Err(); err != nil {
+		log.Fatal(err)
+	}
+
+	return peSet
 }
