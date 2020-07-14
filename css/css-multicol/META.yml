@@ -1,20 +1,66 @@
 links:
 - product: safari
-  results:
-  - status: FAIL
-    test: multicol-rule-004.xht
   url: https://bugs.webkit.org/show_bug.cgi?id=148816
-- product: webkitgtk
   results:
-  - status: FAIL
-    test: multicol-rule-dashed-000.xht
+  - test: multicol-rule-004.xht
+    status: FAIL
+- product: webkitgtk
   url: https://bugs.webkit.org/show_bug.cgi?id=153698
-- product: webkitgtk
   results:
-  - status: FAIL
-    test: multicol-rule-004.xht
+  - test: multicol-rule-dashed-000.xht
+    status: FAIL
+- product: webkitgtk
   url: https://bugs.webkit.org/show_bug.cgi?id=148816
+  results:
+  - test: multicol-rule-004.xht
+    status: FAIL
 - product: firefox
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1651811
   results:
   - test: non-adjacent-spanners-001.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1651811
+- product: chrome
+  url: crbug.com/792437
+  results:
+  - test: multicol-rule-inset-000.xht
+    status: FAIL
+  - test: multicol-rule-outset-000.xht
+    status: FAIL
+- product: chrome
+  url: crbug.com/990240
+  results:
+  - test: multicol-rule-nested-balancing-004.html
+    status: FAIL
+- product: chrome
+  url: crbug.com/874051
+  results:
+  - test: multicol-span-all-fieldset-001.html
+    status: FAIL
+  - test: multicol-span-all-fieldset-002.html
+    status: FAIL
+  - test: multicol-span-all-fieldset-003.html
+    status: FAIL
+- product: chrome
+  url: crbug.com/577282
+  results:
+  - test: multicol-span-all-005.html
+    status: FAIL
+  - test: multicol-span-all-006.html
+    status: FAIL
+  - test: multicol-span-all-007.html
+    status: FAIL
+  - test: multicol-span-all-009.html
+    status: FAIL
+  - test: multicol-span-all-008.html
+    status: FAIL
+  - test: multicol-span-all-011.html
+    status: FAIL
+- product: chrome
+  url: crbug.com/829028
+  results:
+  - test: multicol-span-all-margin-bottom-001.xht
+    status: FAIL
+- product: chrome
+  url: crbug.com/792446
+  results:
+  - test: multicol-span-float-001.xht
+    status: FAIL
