@@ -21,3 +21,14 @@ links:
   - subtest: Below-viewport iframes load lazily
     test: iframe-loading-lazy.tentative.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1650947
+- product: firefox
+  results:
+  - subtest: When a loading=lazy iframe is loaded, it loads relative to the document's
+      base URL computed at parse-time.
+    test: iframe-loading-lazy-base-url.html
+  - subtest: Below-viewport iframes load lazily
+    test: iframe-loading-lazy.html
+  - subtest: When a loading=lazy iframe is loaded, it loads relative to the document's
+      base URL computed at parse-time.
+    test: iframe-loading-lazy-base-url-2.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1653078
