@@ -1,0 +1,16 @@
+links:
+- product: firefox
+  results:
+  - subtest: share() rejects when URL is invalid
+    test: share-url-invalid.https.html
+  - subtest: share with a dictionary containing only surplus fields
+    test: share-empty.https.html
+  - subtest: share with an empty dictionary
+    test: share-empty.https.html
+  - subtest: share with a undefined argument (same as empty dictionary)
+    test: share-empty.https.html
+  - subtest: share with no arguments (same as empty dictionary)
+    test: share-empty.https.html
+  - subtest: share with a null argument (same as empty dictionary)
+    test: share-empty.https.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1653170
