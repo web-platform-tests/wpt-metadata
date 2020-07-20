@@ -1,27 +1,32 @@
 links:
 - product: firefox
-  results:
-  - subtest: table 9
-    test: caption.html
-  - subtest: table 8
-    test: caption.html
-  - subtest: table 3
-    test: caption.html
-  - subtest: table 2
-    test: caption.html
-  - subtest: table 1
-    test: caption.html
-  - subtest: table 7
-    test: caption.html
-  - subtest: table 5
-    test: caption.html
-  - subtest: table 4
-    test: caption.html
-  - subtest: table 11
-    test: caption.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1640246
-- product: firefox
   results:
-  - subtest: table 12
-    test: colspan-redistribution.html
+  - test: caption.html
+    subtest: table 9
+  - test: caption.html
+    subtest: table 8
+  - test: caption.html
+    subtest: table 3
+  - test: caption.html
+    subtest: table 2
+  - test: caption.html
+    subtest: table 1
+  - test: caption.html
+    subtest: table 7
+  - test: caption.html
+    subtest: table 5
+  - test: caption.html
+    subtest: table 4
+  - test: caption.html
+    subtest: table 11
+- product: firefox
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1650712
+  results:
+  - test: colspan-redistribution.html
+    subtest: table 12
+- product: chrome
+  url: crbug.com/958381
+  results:
+  - test: colspan-redistribution.html
+    status: FAIL
