@@ -9,3 +9,33 @@ links:
   results:
   - test: header-user-agent-sync.htm
     status: FAIL
+- product: chrome
+  url: crbug.com/651750
+  results:
+  - test: responseXML-unavailable-in-worker.html
+    status: FAIL
+  - test: send-content-type-charset.htm
+    status: FAIL
+  - test: responsetype.any.worker.html
+    status: FAIL
+  - test: send-authentication-cors-setrequestheader-no-cred.htm
+    status: FAIL
+  - test: event-readystatechange-loaded.any.html
+    status: FAIL
+  - test: open-during-abort-processing.htm
+    status: FAIL
+  - test: event-readystatechange-loaded.any.worker.html
+    status: FAIL
+  - test: abort-after-send.any.html
+    status: FAIL
+  - test: response-data-progress.htm
+    status: FAIL
+  - test: responseType-document-in-worker.html
+    status: FAIL
+  - test: setrequestheader-combining.window.html
+    status: FAIL
+- product: chrome
+  url: crbug.com/787704
+  results:
+  - test: send-redirect-to-cors.htm
+    status: FAIL
