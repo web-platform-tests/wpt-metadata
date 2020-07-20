@@ -14,3 +14,21 @@ links:
   results:
   - test: location-valueof.html
   - test: location-stringifier.html
+- product: chrome
+  url: crbug.com/664681
+  results:
+  - test: location-prototype-setting-goes-cross-origin-domain.sub.html
+    status: FAIL
+  - test: location-prototype-setting-cross-origin-domain.sub.html
+    status: FAIL
+  - test: location-prototype-setting-same-origin.html
+    status: FAIL
+  - test: location-prototype-setting-same-origin-domain.sub.html
+    status: FAIL
+  - test: location-prototype-setting-cross-origin.sub.html
+    status: FAIL
+- product: chrome
+  url: crbug.com/678633
+  results:
+  - test: location-protocol-setter-non-broken.html
+    status: FAIL

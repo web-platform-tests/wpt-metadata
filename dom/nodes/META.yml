@@ -3,53 +3,70 @@ links:
   url: https://bugs.chromium.org/p/chromium/issues/detail?id=569690
   results:
   - test: Document-createEvent.https.html
-    subtest: 'Should throw NOT_SUPPORTED_ERR for non-legacy event interface "AnimationEvent"'
+    subtest: Should throw NOT_SUPPORTED_ERR for non-legacy event interface "AnimationEvent"
   - test: Document-createEvent.https.html
-    subtest: 'Should throw NOT_SUPPORTED_ERR for non-legacy event interface "CloseEvent"'
+    subtest: Should throw NOT_SUPPORTED_ERR for non-legacy event interface "CloseEvent"
   - test: Document-createEvent.https.html
-    subtest: 'Should throw NOT_SUPPORTED_ERR for non-legacy event interface "ErrorEvent"'
+    subtest: Should throw NOT_SUPPORTED_ERR for non-legacy event interface "ErrorEvent"
   - test: Document-createEvent.https.html
-    subtest: 'Should throw NOT_SUPPORTED_ERR for non-legacy event interface "IDBVersionChangeEvent"'
+    subtest: Should throw NOT_SUPPORTED_ERR for non-legacy event interface "IDBVersionChangeEvent"
   - test: Document-createEvent.https.html
-    subtest: 'Should throw NOT_SUPPORTED_ERR for non-legacy event interface "PageTransitionEvent"'
+    subtest: Should throw NOT_SUPPORTED_ERR for non-legacy event interface "PageTransitionEvent"
   - test: Document-createEvent.https.html
-    subtest: 'Should throw NOT_SUPPORTED_ERR for non-legacy event interface "TrackEvent"'
+    subtest: Should throw NOT_SUPPORTED_ERR for non-legacy event interface "TrackEvent"
   - test: Document-createEvent.https.html
-    subtest: 'Should throw NOT_SUPPORTED_ERR for non-legacy event interface "TransitionEvent"'
+    subtest: Should throw NOT_SUPPORTED_ERR for non-legacy event interface "TransitionEvent"
   - test: Document-createEvent.https.html
-    subtest: 'Should throw NOT_SUPPORTED_ERR for non-legacy event interface "WebGLContextEvent"'
+    subtest: Should throw NOT_SUPPORTED_ERR for non-legacy event interface "WebGLContextEvent"
 - product: chrome
   url: https://bugs.chromium.org/p/chromium/issues/detail?id=921880
   results:
   - test: Element-matches.html
-    subtest: 'In-document Element.matches: :link and :visited pseudo-class selectors, matching link elements with href attributes (with no refNodes): #head :link, #head :visited'
+    subtest: 'In-document Element.matches: :link and :visited pseudo-class selectors,
+      matching link elements with href attributes (with no refNodes): #head :link,
+      #head :visited'
   - test: Element-matches.html
-    subtest: 'In-document Element.matches: :link and :visited pseudo-class selectors, matching link elements with href attributes (with refNode Element): :link, #head :visited'
+    subtest: 'In-document Element.matches: :link and :visited pseudo-class selectors,
+      matching link elements with href attributes (with refNode Element): :link, #head
+      :visited'
   - test: Element-webkitMatchesSelector.html
-    subtest: 'In-document Element.webkitMatchesSelector: :link and :visited pseudo-class selectors, matching link elements with href attributes (with no refNodes): #head :link, #head :visited'
+    subtest: 'In-document Element.webkitMatchesSelector: :link and :visited pseudo-class
+      selectors, matching link elements with href attributes (with no refNodes): #head
+      :link, #head :visited'
   - test: Element-webkitMatchesSelector.html
-    subtest: 'In-document Element.webkitMatchesSelector: :link and :visited pseudo-class selectors, matching link elements with href attributes (with refNode Element): :link, #head :visited'
+    subtest: 'In-document Element.webkitMatchesSelector: :link and :visited pseudo-class
+      selectors, matching link elements with href attributes (with refNode Element):
+      :link, #head :visited'
   - test: ParentNode-querySelector-All-xht.xht
-    subtest: 'Document.querySelectorAll: :link and :visited pseudo-class selectors, matching link elements with href attributes: #head :link, #head :visited'
+    subtest: 'Document.querySelectorAll: :link and :visited pseudo-class selectors,
+      matching link elements with href attributes: #head :link, #head :visited'
   - test: ParentNode-querySelector-All-xht.xht
-    subtest: 'Document.querySelector: :link and :visited pseudo-class selectors, matching link elements with href attributes: #head :link, #head :visited'
+    subtest: 'Document.querySelector: :link and :visited pseudo-class selectors, matching
+      link elements with href attributes: #head :link, #head :visited'
   - test: ParentNode-querySelector-All.html
-    subtest: 'Document.querySelectorAll: :link and :visited pseudo-class selectors, matching link elements with href attributes: #head :link, #head :visited'
+    subtest: 'Document.querySelectorAll: :link and :visited pseudo-class selectors,
+      matching link elements with href attributes: #head :link, #head :visited'
   - test: ParentNode-querySelector-All.html
-    subtest: 'Document.querySelector: :link and :visited pseudo-class selectors, matching link elements with href attributes: #head :link, #head :visited'
+    subtest: 'Document.querySelector: :link and :visited pseudo-class selectors, matching
+      link elements with href attributes: #head :link, #head :visited'
 - product: firefox
-  results:
-  - subtest: 'createDocument test 195: metadata for null,null,DocumentType node <!DOCTYPE
-      html>'
-    test: DOMImplementation-createDocument.html
-  - subtest: 'createDocument test: null,"",DocumentType node <!DOCTYPE html -//W3C//DTD
-      XHTML 1.0 Transitional//EN http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd>'
-    test: DOMImplementation-createDocument.html
-  - subtest: 'createDocument test: null,null,DocumentType node <!DOCTYPE html>,null'
-    test: DOMImplementation-createDocument.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=520969
-- product: firefox
   results:
-  - subtest: First set attribute is returned with mapped attribute set first
-    test: attributes.html
+  - test: DOMImplementation-createDocument.html
+    subtest: 'createDocument test 195: metadata for null,null,DocumentType node <!DOCTYPE
+      html>'
+  - test: DOMImplementation-createDocument.html
+    subtest: 'createDocument test: null,"",DocumentType node <!DOCTYPE html -//W3C//DTD
+      XHTML 1.0 Transitional//EN http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd>'
+  - test: DOMImplementation-createDocument.html
+    subtest: 'createDocument test: null,null,DocumentType node <!DOCTYPE html>,null'
+- product: firefox
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1303629
+  results:
+  - test: attributes.html
+    subtest: First set attribute is returned with mapped attribute set first
+- product: chrome
+  url: crbug.com/1068619
+  results:
+  - test: ParentNode-querySelector-escapes.html
+    status: FAIL

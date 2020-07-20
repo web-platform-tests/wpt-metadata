@@ -32,3 +32,11 @@ links:
       base URL computed at parse-time.
     test: iframe-loading-lazy-base-url-2.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1653078
+- product: firefox
+  results:
+  - test: iframe-network-error.sub.html
+  - subtest: 'navigating an existing iframe: nonexistent host'
+    test: iframe-network-error.sub.html
+  - subtest: 'new iframe: nonexistent host'
+    test: iframe-network-error.sub.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1653034
