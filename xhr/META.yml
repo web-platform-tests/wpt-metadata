@@ -3,7 +3,7 @@ links:
   url: crbug.com/571722
   results:
   - test: setrequestheader-header-allowed.htm
-    subtest: "XMLHttpRequest: setRequestHeader() - headers that are allowed (User-Agent)"
+    subtest: 'XMLHttpRequest: setRequestHeader() - headers that are allowed (User-Agent)'
 - product: webkitgtk
   url: https://bugs.webkit.org/show_bug.cgi?id=209801
   results:
@@ -34,8 +34,22 @@ links:
     status: FAIL
   - test: setrequestheader-combining.window.html
     status: FAIL
+  - test: idlharness.any.worker.html
+    status: FAIL
+  - test: responsexml-media-type.htm
+    status: FAIL
 - product: chrome
   url: crbug.com/787704
   results:
   - test: send-redirect-to-cors.htm
+    status: FAIL
+- product: chrome
+  url: crbug.com/699085
+  results:
+  - test: overridemimetype-blob.html
+    status: FAIL
+- product: chrome
+  url: crbug.com/588103
+  results:
+  - test: response-json.htm
     status: FAIL
