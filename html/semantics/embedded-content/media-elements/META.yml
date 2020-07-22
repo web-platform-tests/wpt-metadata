@@ -6,3 +6,12 @@ links:
   - subtest: audio.mozPreservesPitch should not be supported
     test: historical.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1652950
+- product: firefox
+  results:
+  - subtest: Slow-downs should change the pitch when preservesPitch=false
+    test: preserves-pitch.html
+  - subtest: Speed-ups should change the pitch when preservesPitch=false
+    test: preserves-pitch.html
+  - subtest: Test that preservesPitch is present and unprefixed.
+    test: preserves-pitch.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1654518
