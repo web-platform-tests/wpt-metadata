@@ -1,0 +1,28 @@
+links:
+- product: firefox
+  results:
+  - subtest: 'Verify write and read clipboard given text: Clipboard write ([text/plain
+      ClipboardItem) -> read text test'
+    test: async-write-readText.https.html
+  - subtest: "Verify write and read clipboard given text: non-Latin1 text encoding\
+      \ test \u30C7\u30FC\u30BF"
+    test: async-write-readText.https.html
+  - subtest: 'Verify write and read clipboard given text: Clipboard write ([text/plain
+      ClipboardItem]) -> read ([text/plain ClipboardItem]) test'
+    test: async-write-read.https.html
+  - subtest: "Verify write and read clipboard given text: non-Latin1 text encoding\
+      \ test \u30C7\u30FC\u30BF"
+    test: async-write-read.https.html
+  - subtest: 'Verify write and read clipboard given text: Clipboard write text ->
+      read ([text/plain ClipboardItem]) test'
+    test: async-writeText-read.https.html
+  - subtest: "Verify write and read clipboard given text: non-Latin1 text encoding\
+      \ test \u30C7\u30FC\u30BF"
+    test: async-writeText-read.https.html
+  - subtest: "Verify write and read clipboard given text: non-Latin1 text encoding\
+      \ test \u30C7\u30FC\u30BF"
+    test: async-writeText-readText.https.html
+  - subtest: 'Verify write and read clipboard given text: Clipboard write text ->
+      read text test'
+    test: async-writeText-readText.https.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1655754

@@ -28,3 +28,12 @@ links:
   - subtest: ClipboardItem interface object name
     test: async-idlharness.https.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1647538
+- product: firefox
+  results:
+  - subtest: Verify write and read clipboard (multiple types)
+    test: async-write-blobs-read-blobs.https.html
+  - subtest: Verify write error on malformed data [image/png ClipboardItem]
+    test: async-write-image-read-image.https.html
+  - subtest: Verify write and read clipboard [image/png Blob]
+    test: async-write-image-read-image.https.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1655754
