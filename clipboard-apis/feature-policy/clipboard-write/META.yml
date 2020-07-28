@@ -6,3 +6,9 @@ links:
   - subtest: Feature-Policy header clipboard-write "*" allows the top-level document.
     test: clipboard-write-enabled-by-feature-policy.tentative.https.sub.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1652051
+- product: firefox
+  results:
+  - subtest: Feature-Policy header clipboard-write "none" disallows the top-level
+      document.
+    test: clipboard-write-disabled-by-feature-policy.tentative.https.sub.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1655754

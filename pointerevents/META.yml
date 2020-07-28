@@ -45,3 +45,70 @@ links:
       with the proper type'
     test: idlharness.window.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1647540
+- product: firefox
+  results:
+  - test: pointerevent_touch-action-pan-left-css_touch.html
+  - subtest: pointerrawupdate event received
+    test: pointerevent_pointerrawupdate.html
+  - test: pointerevent_pointerout_pen.html
+  - subtest: 'setPointerCapture: DOMException NotFoundError'
+    test: pointerevent_setpointercapture_invalid_pointerid.html
+  - test: pointerevent_releasepointercapture_onpointercancel_touch.html
+  - test: pointerevent_touch-action-svg-none-test_touch.html
+  - test: pointerevent_touch-action-pan-up-css_touch.html
+  - test: pointerevent_releasepointercapture_events_to_original_target.html
+  - subtest: mouse click target during capture
+    test: pointerevent_click_during_capture.html
+  - test: pointerevent_sequence_at_implicit_release_on_click.html
+  - test: pointerevent_touch-action-inherit_child-pan-x-child-pan-x_touch.html
+  - test: pointerevent_touch-action-none-css_touch.html
+  - test: pointerevent_touch-action-pan-x-pan-y_touch.html
+  - test: pointerevent_attributes_nohover_pointers.html
+  - test: pointerevent_touch-action-table-none-test_touch.html
+  - test: pointerevent_change-touch-action-onpointerdown_touch.html
+  - test: pointerevent_coalesced_events_attributes.html
+  - subtest: ' mouse pointerenter.fromElement value is null.'
+    test: pointerevent_pointerenter_does_not_bubble.html
+  - subtest: ' mouse pointerenter.toElement attribute exists'
+    test: pointerevent_pointerenter_does_not_bubble.html
+  - subtest: ' mouse pointerenter.fromElement attribute exists'
+    test: pointerevent_pointerenter_does_not_bubble.html
+  - subtest: ' mouse pointerenter.toElement value is null.'
+    test: pointerevent_pointerenter_does_not_bubble.html
+  - test: pointerevent_touch-action-pan-x-css_touch.html
+  - test: pointerevent_sequence_at_implicit_release_on_drag.html
+  - test: pointerevent_pointerout_after_pointercancel_touch.html
+  - test: pointerevent_touch-action-inherit_child-auto-child-none_touch.html
+  - subtest: Mouse down and capture to green, move to blue and release capture
+    test: pointerevent_mouse_capture_change_hover.html
+  - subtest: Mouse down at green and capture to blue.
+    test: pointerevent_mouse_capture_change_hover.html
+  - test: pointerevent_touch-action-pan-x-pan-y-pan-y_touch.html
+  - test: pointerevent_disabled_form_control.html
+  - test: pointerevent_touch-action-inherit_highest-parent-none_touch.html
+  - test: pointerevent_pointercapture_in_frame.html
+  - test: pointerevent_attributes_hoverable_pointers.html
+  - test: pointerevent_touch-action-pan-right-css_touch.html
+  - test: pointerevent_touch-action-pan-y-css_touch.html
+  - test: pointerevent_pointerleave_after_pointercancel_touch.html
+  - test: pointerevent_pointercancel_touch.html
+  - test: pointerevent_touch-action-inherit_parent-none_touch.html
+  - test: pointerevent_touch-action-span-none-test_touch.html
+  - test: pointerevent_touch-action-none-on-body-when-style-propagates-to-viewport_touch.html
+  - test: pointerevent_touch-action-inherit_child-pan-x-child-pan-y_touch.html
+  - test: pointerevent_touch-action-button-none-test_touch.html
+  - test: pointerevent_touch-action-pan-down-css_touch.html
+  - subtest: 'releasePointerCapture: DOMException NotFoundError'
+    test: pointerevent_releasepointercapture_invalid_pointerid.html
+  - test: pointerevent_touch-action-auto-css_touch.html
+  - subtest: ' mouse pointerleave.toElement value is null.'
+    test: pointerevent_pointerleave_does_not_bubble.html
+  - subtest: ' mouse pointerleave.fromElement value is null.'
+    test: pointerevent_pointerleave_does_not_bubble.html
+  - subtest: ' mouse pointerleave.toElement attribute exists'
+    test: pointerevent_pointerleave_does_not_bubble.html
+  - subtest: ' mouse pointerleave.fromElement attribute exists'
+    test: pointerevent_pointerleave_does_not_bubble.html
+  - test: pointerevent_boundary_events_in_capturing.html
+  - test: pointerevent_touch-action-inherit_child-none_touch.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1655753
