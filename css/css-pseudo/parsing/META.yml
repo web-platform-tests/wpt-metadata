@@ -1,6 +1,27 @@
 links:
 - product: chrome
-  url: crbug.com/1092652
   results:
-  - test: marker-supported-properties-in-animation.html
-    status: FAIL
+  - status: FAIL
+    test: marker-supported-properties-in-animation.html
+  url: crbug.com/1092652
+- product: firefox
+  results:
+  - subtest: Property animation value '1s linear 2s infinite alternate forwards paused
+      anim' in ::marker
+    test: marker-supported-properties.html
+  - subtest: Property transition value 'display 1s linear 2s' in ::marker
+    test: marker-supported-properties.html
+  - subtest: Property font value 'italic small-caps 900 expanded 25px / 50px Ahem'
+      in ::marker
+    test: marker-supported-properties.html
+  - subtest: Property list-style value 'inside url('foo') decimal' in ::marker
+    test: marker-supported-properties.html
+  - subtest: Transition of font in ::marker
+    test: marker-supported-properties-in-animation.html
+  - subtest: Animation of list-style in ::marker
+    test: marker-supported-properties-in-animation.html
+  - subtest: Animation of font in ::marker
+    test: marker-supported-properties-in-animation.html
+  - subtest: Transition of list-style in ::marker
+    test: marker-supported-properties-in-animation.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1655828
