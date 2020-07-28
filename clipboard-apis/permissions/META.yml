@@ -1,0 +1,12 @@
+links:
+- product: firefox
+  results:
+  - subtest: navigator.clipboard.writeText() fails when permission denied
+    test: writeText-denied.https.html
+  - subtest: navigator.clipboard.readText() fails when permission denied
+    test: readText-denied.https.html
+  - subtest: navigator.clipboard.writeText() succeeds when permission granted
+    test: writeText-granted.https.html
+  - subtest: navigator.clipboard.readText() succeeds when permission granted
+    test: readText-granted.https.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1655754

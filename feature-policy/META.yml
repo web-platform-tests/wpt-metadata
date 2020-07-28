@@ -36,3 +36,40 @@ links:
       object'
     test: idlharness.window.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1647538
+- product: firefox
+  results:
+  - subtest: Feature-Policy allow="picture-in-picture" allows same-origin navigation
+      in an iframe.
+    test: picture-in-picture-allowed-by-feature-policy-attribute-redirect-on-load.https.sub.html
+  - subtest: Feature-Policy allow="picture-in-picture" disallows cross-origin navigation
+      in an iframe.
+    test: picture-in-picture-allowed-by-feature-policy-attribute-redirect-on-load.https.sub.html
+  - subtest: 'Feature-Policy header: picture-in-picture "none" disallows cross-origin
+      iframes.'
+    test: picture-in-picture-disabled-by-feature-policy.https.sub.html
+  - subtest: 'Feature-Policy header: picture-in-picture "none" disallows same-origin
+      iframes.'
+    test: picture-in-picture-disabled-by-feature-policy.https.sub.html
+  - subtest: 'Feature-Policy header: picture-in-picture "none" disallows the top-level
+      document.'
+    test: picture-in-picture-disabled-by-feature-policy.https.sub.html
+  - subtest: Default "picture-in-picture" feature policy [*] allows cross-origin iframes.
+    test: picture-in-picture-default-feature-policy.https.sub.html
+  - subtest: Default "picture-in-picture" feature policy [*] allows same-origin iframes.
+    test: picture-in-picture-default-feature-policy.https.sub.html
+  - subtest: Default "picture-in-picture" feature policy [*] allows the top-level
+      document.
+    test: picture-in-picture-default-feature-policy.https.sub.html
+  - subtest: 'Feature-Policy header: picture-in-picture * allows the top-level document.'
+    test: picture-in-picture-allowed-by-feature-policy.https.sub.html
+  - subtest: 'Feature-Policy header: picture-in-picture * allows cross-origin iframes.'
+    test: picture-in-picture-allowed-by-feature-policy.https.sub.html
+  - subtest: 'Feature-Policy header: picture-in-picture * allows same-origin iframes.'
+    test: picture-in-picture-allowed-by-feature-policy.https.sub.html
+  - subtest: Feature policy "picture-in-picture" can be enabled in same-origin iframe
+      using allow="picture-in-picture" attribute
+    test: picture-in-picture-allowed-by-feature-policy-attribute.https.sub.html
+  - subtest: Feature policy "picture-in-picture" can be enabled in cross-origin iframe
+      using allow="picture-in-picture" attribute
+    test: picture-in-picture-allowed-by-feature-policy-attribute.https.sub.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1655754
