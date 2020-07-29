@@ -143,3 +143,8 @@ links:
     subtest: Unregister then register does not resolve to the original value even if the registration is in use.
   - test: unregister-then-register.https.html
     subtest: Unregister then register does not resurrect the registration
+- product: chrome
+  url: https://crbug.com/582750
+  results:
+  - test: appcache-ordering-main.https.html
+  - test: claim-fetch-with-appcache.https.html
