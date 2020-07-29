@@ -115,3 +115,31 @@ links:
   results:
   - test: fetch-event.https.html
     subtest: Service Worker responds to fetch event with the correct integrity_metadata
+- product: chrome
+  url: https://crbug.com/1111016
+  results:
+  - test: fetch-request-xhr.https.html
+    subtest: event.request has the expected headers for same-origin GET.
+  - test: fetch-request-xhr.https.html
+    subtest: event.request has the expected headers for same-origin POST.
+  - test: fetch-request-xhr.https.html
+    subtest: event.request has the expected headers for cross-origin GET.
+  - test: fetch-request-xhr.https.html
+    subtest: event.request has the expected headers for cross-origin POST.
+- product: chrome
+  url: https://crbug.com/1111017
+  results:
+  - test: ready.https.window.html
+    subtest: resolve ready after unregistering
+- product: chrome
+  url: https://crbug.com/595993
+  results:
+  - test: request-end-to-end.https.html
+    subtest: Test FetchEvent.request passed to onfetch
+- product: chrome
+  url: https://crbug.com/1111021
+  results:
+  - test: unregister-then-register.https.html
+    subtest: Unregister then register does not resolve to the original value even if the registration is in use.
+  - test: unregister-then-register.https.html
+    subtest: Unregister then register does not resurrect the registration
