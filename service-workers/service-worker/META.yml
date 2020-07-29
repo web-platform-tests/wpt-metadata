@@ -131,3 +131,10 @@ links:
   results:
   - test: request-end-to-end.https.html
     subtest: Test FetchEvent.request passed to onfetch
+- product: chrome
+  url: https://crbug.com/1111021
+  results:
+  - test: unregister-then-register.https.html
+    subtest: Unregister then register does not resolve to the original value even if the registration is in use.
+  - test: unregister-then-register.https.html
+    subtest: Unregister then register does not resurrect the registration
