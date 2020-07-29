@@ -121,3 +121,8 @@ links:
     subtest: event.request has the expected headers for cross-origin GET.
   - test: fetch-request-xhr.https.html
     subtest: event.request has the expected headers for cross-origin POST.
+- product: chrome
+  url: https://crbug.com/1111017
+  results:
+  - test: ready.https.window.html
+    subtest: resolve ready after unregistering
