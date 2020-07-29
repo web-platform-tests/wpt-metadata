@@ -105,3 +105,8 @@ links:
     subtest: Non-navigation, follow redirect, no-cors mode Request redirected to no-cors with credentials should succeed interception and response should not be redirected
   - test: fetch-event-redirect.https.html
     subtest: Non-navigation, follow redirect, no-cors mode Request redirected to cors with credentials should succeed interception and response should not be redirected
+- product: chrome
+  url: https://crbug.com/1111012
+  results:
+  - test: navigate-window.https.html
+    subtest: Clients.matchAll() should not show an old window as controlled after it navigates.
