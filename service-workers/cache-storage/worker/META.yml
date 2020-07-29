@@ -9,3 +9,8 @@ links:
   results:
   - test: cache-matchAll.https.html
     status: FAIL
+- product: chrome
+  url: https://crbug.com/432746
+  results:
+  - test: cache-storage.https.html
+    subtest: CacheStorage names are DOMStrings not USVStrings
