@@ -9,3 +9,10 @@ links:
   results:
   - test: cache-storage.https.html
     status: FAIL
+- product: chrome
+  url: https://crbug.com/756796
+  results:
+  - test: cache-matchAll.https.html
+    subtest: Cache.matchAll with responses containing "Vary" header
+  - test: cache-matchAll.https.html
+    subtest: Cache.matchAll with multiple vary pairs
