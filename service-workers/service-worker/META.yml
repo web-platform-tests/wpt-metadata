@@ -126,3 +126,8 @@ links:
   results:
   - test: ready.https.window.html
     subtest: resolve ready after unregistering
+- product: chrome
+  url: https://crbug.com/595993
+  results:
+  - test: request-end-to-end.https.html
+    subtest: Test FetchEvent.request passed to onfetch
