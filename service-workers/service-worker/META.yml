@@ -92,3 +92,16 @@ links:
   results:
   - test: unregister-then-register-new-script.https.html
     status: FAIL
+- product: chrome
+  url: https://crbug.com/1111010
+  results:
+  - test: fetch-event-redirect.https.html
+    subtest: Non-navigation, follow redirect, cors mode Request redirected to same-origin with credentials should succeed interception and response should be redirected
+  - test: fetch-event-redirect.https.html
+    subtest: Non-navigation, follow redirect, same-origin mode Request redirected to same-origin with credentials should succeed interception and response should be redirected
+  - test: fetch-event-redirect.https.html
+    subtest: Non-navigation, follow redirect, no-cors mode Request redirected to same-origin with credentials should succeed interception and response should be redirected
+  - test: fetch-event-redirect.https.html
+    subtest: Non-navigation, follow redirect, no-cors mode Request redirected to no-cors with credentials should succeed interception and response should not be redirected
+  - test: fetch-event-redirect.https.html
+    subtest: Non-navigation, follow redirect, no-cors mode Request redirected to cors with credentials should succeed interception and response should not be redirected
