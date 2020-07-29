@@ -110,3 +110,14 @@ links:
   results:
   - test: navigate-window.https.html
     subtest: Clients.matchAll() should not show an old window as controlled after it navigates.
+- product: chrome
+  url: https://crbug.com/1111016
+  results:
+  - test: fetch-request-xhr.https.html
+    subtest: event.request has the expected headers for same-origin GET.
+  - test: fetch-request-xhr.https.html
+    subtest: event.request has the expected headers for same-origin POST.
+  - test: fetch-request-xhr.https.html
+    subtest: event.request has the expected headers for cross-origin GET.
+  - test: fetch-request-xhr.https.html
+    subtest: event.request has the expected headers for cross-origin POST.
