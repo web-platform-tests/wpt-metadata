@@ -110,3 +110,8 @@ links:
   results:
   - test: navigate-window.https.html
     subtest: Clients.matchAll() should not show an old window as controlled after it navigates.
+- product: chrome
+  url: https://crbug.com/850825
+  results:
+  - test: fetch-event.https.html
+    subtest: Service Worker responds to fetch event with the correct integrity_metadata
