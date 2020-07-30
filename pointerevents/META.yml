@@ -112,3 +112,16 @@ links:
   - test: pointerevent_boundary_events_in_capturing.html
   - test: pointerevent_touch-action-inherit_child-none_touch.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1655753
+- product: firefox
+  results:
+  - subtest: 'PointerEvent interface: new PointerEvent("type") must inherit property
+      "azimuthAngle" with the proper type'
+    test: idlharness.window.html
+  - subtest: 'PointerEvent interface: attribute azimuthAngle'
+    test: idlharness.window.html
+  - subtest: 'PointerEvent interface: attribute altitudeAngle'
+    test: idlharness.window.html
+  - subtest: 'PointerEvent interface: new PointerEvent("type") must inherit property
+      "altitudeAngle" with the proper type'
+    test: idlharness.window.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1656377
