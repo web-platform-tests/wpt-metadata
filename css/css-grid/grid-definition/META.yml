@@ -489,3 +489,96 @@ links:
   - subtest: '''grid'' with: grid-template-areas: "... ...." "a a";'
     test: grid-support-grid-template-areas-001.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1650967
+- product: firefox
+  results:
+  - subtest: 'undefined ''gridAutoFlowColumnItemsPositions'' with: grid-template-columns:
+      ; and grid-template-rows: 60px;'
+    test: grid-template-columns-rows-resolved-values-001.html
+  - subtest: 'undefined ''gridAutoFlowColumnItemsPositions'' with: grid-template-columns:
+      ; and grid-template-rows: ;'
+    test: grid-template-columns-rows-resolved-values-001.html
+  - subtest: 'undefined ''gridAutoFlowColumn'' with: grid-template-columns: ; and
+      grid-template-rows: 50px;'
+    test: grid-template-columns-rows-resolved-values-001.html
+  - subtest: 'undefined ''gridAutoFlowColumn'' with: grid-template-columns: 100px
+      60px; and grid-template-rows: 50px;'
+    test: grid-template-columns-rows-resolved-values-001.html
+  - subtest: 'undefined ''gridAutoFlowColumn'' with: grid-template-columns: ; and
+      grid-template-rows: auto auto;'
+    test: grid-template-columns-rows-resolved-values-001.html
+  - subtest: 'undefined ''gridAutoFlowColumn'' with: grid-template-columns: 100px
+      60px; and grid-template-rows: ;'
+    test: grid-template-columns-rows-resolved-values-001.html
+  - subtest: 'undefined ''gridAutoFlowColumn'' with: grid-template-columns: 60px;
+      and grid-template-rows: 50px 30px;'
+    test: grid-template-columns-rows-resolved-values-001.html
+  - subtest: 'undefined ''gridAutoFlowColumnItemsPositions'' with: grid-template-columns:
+      60px; and grid-template-rows: ;'
+    test: grid-template-columns-rows-resolved-values-001.html
+  - subtest: 'undefined ''gridAutoFlowColumn'' with: grid-template-columns: ; and
+      grid-template-rows: 50px 30px;'
+    test: grid-template-columns-rows-resolved-values-001.html
+  - subtest: 'undefined ''gridAutoFlowColumnItemsPositions'' with: grid-template-columns:
+      60px; and grid-template-rows: 60px 70px;'
+    test: grid-template-columns-rows-resolved-values-001.html
+  - subtest: 'undefined ''gridAutoFlowColumnItemsPositions'' with: grid-template-columns:
+      60px; and grid-template-rows: 60px;'
+    test: grid-template-columns-rows-resolved-values-001.html
+  - subtest: 'undefined ''gridAutoFlowColumn'' with: grid-template-columns: ; and
+      grid-template-rows: ;'
+    test: grid-template-columns-rows-resolved-values-001.html
+  - subtest: 'undefined ''gridAutoFlowColumn'' with: grid-template-columns: 60px;
+      and grid-template-rows: 50px;'
+    test: grid-template-columns-rows-resolved-values-001.html
+  - subtest: 'undefined ''gridAutoFlowColumn'' with: grid-template-columns: 60px;
+      and grid-template-rows: ;'
+    test: grid-template-columns-rows-resolved-values-001.html
+  - subtest: 'undefined ''gridAutoFlowColumnItemsPositions'' with: grid-template-columns:
+      ; and grid-template-rows: 60px 70px;'
+    test: grid-template-columns-rows-resolved-values-001.html
+  - subtest: 'undefined ''gridAutoFlowColumnItemsPositions'' with: grid-template-columns:
+      ; and grid-template-rows: 60px;'
+    test: grid-inline-template-columns-rows-resolved-values-001.html
+  - subtest: 'undefined ''gridAutoFlowColumnItemsPositions'' with: grid-template-columns:
+      ; and grid-template-rows: ;'
+    test: grid-inline-template-columns-rows-resolved-values-001.html
+  - subtest: 'undefined ''gridAutoFlowColumn'' with: grid-template-columns: ; and
+      grid-template-rows: 50px;'
+    test: grid-inline-template-columns-rows-resolved-values-001.html
+  - subtest: 'undefined ''gridAutoFlowColumn'' with: grid-template-columns: 100px
+      60px; and grid-template-rows: 50px;'
+    test: grid-inline-template-columns-rows-resolved-values-001.html
+  - subtest: 'undefined ''gridAutoFlowColumn'' with: grid-template-columns: ; and
+      grid-template-rows: auto auto;'
+    test: grid-inline-template-columns-rows-resolved-values-001.html
+  - subtest: 'undefined ''gridAutoFlowColumn'' with: grid-template-columns: 100px
+      60px; and grid-template-rows: ;'
+    test: grid-inline-template-columns-rows-resolved-values-001.html
+  - subtest: 'undefined ''gridAutoFlowColumn'' with: grid-template-columns: 60px;
+      and grid-template-rows: 50px 30px;'
+    test: grid-inline-template-columns-rows-resolved-values-001.html
+  - subtest: 'undefined ''gridAutoFlowColumnItemsPositions'' with: grid-template-columns:
+      60px; and grid-template-rows: ;'
+    test: grid-inline-template-columns-rows-resolved-values-001.html
+  - subtest: 'undefined ''gridAutoFlowColumn'' with: grid-template-columns: ; and
+      grid-template-rows: 50px 30px;'
+    test: grid-inline-template-columns-rows-resolved-values-001.html
+  - subtest: 'undefined ''gridAutoFlowColumnItemsPositions'' with: grid-template-columns:
+      60px; and grid-template-rows: 60px 70px;'
+    test: grid-inline-template-columns-rows-resolved-values-001.html
+  - subtest: 'undefined ''gridAutoFlowColumnItemsPositions'' with: grid-template-columns:
+      60px; and grid-template-rows: 60px;'
+    test: grid-inline-template-columns-rows-resolved-values-001.html
+  - subtest: 'undefined ''gridAutoFlowColumn'' with: grid-template-columns: ; and
+      grid-template-rows: ;'
+    test: grid-inline-template-columns-rows-resolved-values-001.html
+  - subtest: 'undefined ''gridAutoFlowColumn'' with: grid-template-columns: 60px;
+      and grid-template-rows: 50px;'
+    test: grid-inline-template-columns-rows-resolved-values-001.html
+  - subtest: 'undefined ''gridAutoFlowColumn'' with: grid-template-columns: 60px;
+      and grid-template-rows: ;'
+    test: grid-inline-template-columns-rows-resolved-values-001.html
+  - subtest: 'undefined ''gridAutoFlowColumnItemsPositions'' with: grid-template-columns:
+      ; and grid-template-rows: 60px 70px;'
+    test: grid-inline-template-columns-rows-resolved-values-001.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1656584
