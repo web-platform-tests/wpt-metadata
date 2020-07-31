@@ -167,3 +167,13 @@ links:
     subtest: Unregister then register does not resolve to the original value even if the registration is in use.
   - test: unregister-then-register.https.html
     subtest: Unregister then register does not resurrect the registration
+- product: chrome
+  url: crbug.com/1072298
+  results:
+  - test: next-hop-protocol.https.html
+    subtest: nextHopProtocol reports H2 correctly when routed via a service worker.
+- product: edge
+  url: crbug.com/1072298
+  results:
+  - test: next-hop-protocol.https.html
+    subtest: nextHopProtocol reports H2 correctly when routed via a service worker.
