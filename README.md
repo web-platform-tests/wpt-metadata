@@ -7,7 +7,7 @@ YAML Link Format Specs:
 
 ```
 links:
-  - product: [product spec] (optional)
+  - product: [product spec]
     url: [URL]	
     results:
     - test: [Test name] 
@@ -20,8 +20,7 @@ Where
 - `product` is a browser name with an option of [product spec](https://github.com/web-platform-tests/wpt.fyi/blob/master/api/README.md)
   - `{browser-name}[-{browser-version}[-{os}[-{os-version}]]]`
   - e.g. `chrome`, `safari-12`, or `firefox-63.0-linux`
-- If omitted, the link will apply to all products in the directory.
-- 'Test name' is a filename, which is relative to the current directory. If it
+- `Test name` is a filename, which is relative to the current directory. If it
   is `"*"` (note that asterisks must be quoted in YAML), the link will apply to
   all tests in the current directory and its subdirectories.
 - `Test result status` is an optional field that records the WPT test result, as 
