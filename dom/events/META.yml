@@ -25,3 +25,16 @@ links:
   results:
   - test: document-level-touchmove-event-listener-passive-by-default.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1655754
+- product: firefox
+  results:
+  - subtest: event state during post-click handling
+    test: Event-dispatch-click.html
+  - subtest: redispatch during post-click handling
+    test: Event-dispatch-click.html
+  - subtest: disabled checkbox still has activation behavior, part 2
+    test: Event-dispatch-click.html
+  - subtest: pick the first with activation behavior <input type=checkbox>
+    test: Event-dispatch-click.html
+  - subtest: look at parents only when event bubbles
+    test: Event-dispatch-click.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1658996
