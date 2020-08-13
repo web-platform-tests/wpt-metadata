@@ -26,7 +26,7 @@ Where
 - `Test result status` is an optional field that records the WPT test result, as 
   [defined](https://github.com/web-platform-tests/wpt.fyi/blob/master/shared/statuses.go#L52) 
   in the wpt.fyi codebase. When the WPT version or the browser version 
-  changes, this field could be used to indicate that a test is out-of-date.
+  changes, this field could be used to indicate that a test is out-of-date. It is currently unused by tooling.
 
 ## How to contribute to wpt-metadata repository
 You can contribute to the wpt-metadata repo by sending out a PR directly or through the Triage Metadata API available for trusted third parties.
