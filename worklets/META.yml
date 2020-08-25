@@ -653,3 +653,32 @@ links:
       that has "origin" referrer policy should send referrer.
     test: animation-worklet-referrer.https.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1649264
+- product: firefox
+  results:
+  - subtest: addModule() on a controlled document should be intercepted by a service
+      worker.
+    test: layout-worklet-service-worker-interception.https.html
+  - subtest: addModule() on a non-controlled document should not be intercepted by
+      a service worker even if the script is under the service worker scope.
+    test: layout-worklet-service-worker-interception.https.html
+  - subtest: Static import should be intercepted by a service worker.
+    test: layout-worklet-service-worker-interception.https.html
+  - subtest: addModule() on a controlled document should be intercepted by a service
+      worker.
+    test: paint-worklet-service-worker-interception.https.html
+  - subtest: addModule() on a non-controlled document should not be intercepted by
+      a service worker even if the script is under the service worker scope.
+    test: paint-worklet-service-worker-interception.https.html
+  - subtest: Static import should be intercepted by a service worker.
+    test: paint-worklet-service-worker-interception.https.html
+  - subtest: Static import should be intercepted by a service worker.
+    test: audio-worklet-service-worker-interception.https.html
+  - subtest: addModule() on a controlled document should be intercepted by a service
+      worker.
+    test: animation-worklet-service-worker-interception.https.html
+  - subtest: addModule() on a non-controlled document should not be intercepted by
+      a service worker even if the script is under the service worker scope.
+    test: animation-worklet-service-worker-interception.https.html
+  - subtest: Static import should be intercepted by a service worker.
+    test: animation-worklet-service-worker-interception.https.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1661040
