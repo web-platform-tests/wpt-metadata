@@ -73,3 +73,11 @@ links:
   - subtest: 'CORP: same-site is checked and blocked.'
     test: require-corp.https.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1649264
+- product: firefox
+  results:
+  - test: header-parsing.https.html
+  - subtest: navigation allowed for ["require-corp",""]
+    test: header-parsing.https.html
+  - subtest: navigation allowed for ["","require-corp"]
+    test: header-parsing.https.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1661440
