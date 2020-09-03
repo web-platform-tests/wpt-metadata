@@ -44,3 +44,46 @@ links:
   results:
   - test: flex-and-intrinsic-sizes-002.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1658676
+- product: firefox
+  results:
+  - subtest: '''grid'' with: grid-template-columns: max-content; and grid-template-rows:
+      max-content;'
+    test: grid-intrinsic-track-sizes-001.html
+  - subtest: '''grid'' with: grid-template-columns: minmax(0, max-content); and grid-template-rows:
+      minmax(0, max-content);'
+    test: grid-intrinsic-track-sizes-001.html
+  - subtest: '''grid'' with: grid-template-columns: minmax(max-content, 10px); and
+      grid-template-rows: minmax(max-content, 10px);'
+    test: grid-intrinsic-track-sizes-001.html
+  - subtest: '''grid'' with: grid-template-columns: auto auto; and grid-template-rows:
+      auto auto;'
+    test: grid-intrinsic-track-sizes-001.html
+  - subtest: '''grid'' with: grid-template-columns: max-content max-content; and grid-template-rows:
+      max-content max-content;'
+    test: grid-intrinsic-track-sizes-001.html
+  - subtest: '''grid'' with: grid-template-columns: minmax(0, auto) minmax(0, auto);
+      and grid-template-rows: minmax(0, auto) minmax(0, auto);'
+    test: grid-intrinsic-track-sizes-001.html
+  - subtest: '''grid'' with: grid-template-columns: minmax(0, max-content) minmax(0,
+      max-content); and grid-template-rows: minmax(0, max-content) minmax(0, max-content);'
+    test: grid-intrinsic-track-sizes-001.html
+  - subtest: '''grid'' with: grid-template-columns: minmax(max-content, 10px) minmax(max-content,
+      10px); and grid-template-rows: minmax(max-content, 10px) minmax(max-content,
+      10px);'
+    test: grid-intrinsic-track-sizes-001.html
+  - subtest: '''grid'' with: grid-template-columns: 20px max-content; and grid-template-rows:
+      20px max-content;'
+    test: grid-intrinsic-track-sizes-001.html
+  - subtest: '''grid'' with: grid-template-columns: 20px minmax(0, max-content); and
+      grid-template-rows: 20px minmax(0, max-content);'
+    test: grid-intrinsic-track-sizes-001.html
+  - subtest: '''grid'' with: grid-template-columns: 20px minmax(max-content, 6px);
+      and grid-template-rows: 20px minmax(max-content, 6px);'
+    test: grid-intrinsic-track-sizes-001.html
+  - subtest: '''grid'' with: grid-template-columns: 20px minmax(max-content, 30px);
+      and grid-template-rows: 20px minmax(max-content, 30px);'
+    test: grid-intrinsic-track-sizes-001.html
+  - subtest: '''grid'' with: grid-template-columns: max-content min-content; and grid-template-rows:
+      max-content min-content;'
+    test: grid-intrinsic-track-sizes-001.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1663035
