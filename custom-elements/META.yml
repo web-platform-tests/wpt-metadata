@@ -1,16 +1,27 @@
 links:
 - product: chrome
-  url: https://bugs.chromium.org/p/chromium/issues/detail?id=977577
   results:
-  - test: perform-microtask-checkpoint-before-construction.html
-    status: FAIL
-  - test: HTMLElement-constructor.html
-    status: FAIL
-  - test: CustomElementRegistry.html
-    status: FAIL
-  - test: historical.html
-    status: FAIL
+  - status: FAIL
+    test: perform-microtask-checkpoint-before-construction.html
+  - status: FAIL
+    test: HTMLElement-constructor.html
+  - status: FAIL
+    test: CustomElementRegistry.html
+  - status: FAIL
+    test: historical.html
+  url: https://bugs.chromium.org/p/chromium/issues/detail?id=977577
 - product: safari
-  url: https://bugs.webkit.org/show_bug.cgi?id=182671
   results:
   - test: builtin-coverage.html
+  url: https://bugs.webkit.org/show_bug.cgi?id=182671
+- product: firefox
+  results:
+  - subtest: customElements.define must get callbacks of the constructor prototype
+    test: CustomElementRegistry.html
+  - subtest: customElements.define must rethrow an exception thrown while getting
+      callbacks on the constructor prototype
+    test: CustomElementRegistry.html
+  - subtest: customElements.define must rethrow an exception thrown while converting
+      a callback value to Function callback type
+    test: CustomElementRegistry.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1663878
