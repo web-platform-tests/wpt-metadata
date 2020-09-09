@@ -1,17 +1,32 @@
 links:
 - product: webkitgtk
+  results:
+  - status: FAIL
+    test: overflow-padding.html
   url: https://bugs.webkit.org/show_bug.cgi?id=206409
-  results:
-  - test: overflow-padding.html
-    status: FAIL
 - product: chrome
+  results:
+  - status: FAIL
+    test: overflow-codependent-scrollbars.html
   url: crbug.com/1007065
-  results:
-  - test: overflow-codependent-scrollbars.html
-    status: FAIL
 - product: chrome
-  url: https://crbug.com/966283
   results:
   - test: overflow-body-propagation-007.html
   - test: overflow-body-propagation-008.html
   - test: overflow-body-propagation-009.html
+  url: https://crbug.com/966283
+- product: firefox
+  results:
+  - subtest: 'Unexpected layout: overflow scroll, scrollbar-gutter auto, horizontal-tb'
+    test: scrollbar-gutter-001.html
+  - subtest: 'Unexpected layout: overflow scroll, scrollbar-gutter auto, vertical-rl'
+    test: scrollbar-gutter-001.html
+  - subtest: 'Unexpected layout: overflow scroll, scrollbar-gutter stable, horizontal-tb'
+    test: scrollbar-gutter-002.html
+  - subtest: 'Unexpected layout: overflow scroll, scrollbar-gutter stable, vertical-rl'
+    test: scrollbar-gutter-002.html
+  - subtest: 'Unexpected layout: overflow scroll, scrollbar-gutter always, horizontal-tb'
+    test: scrollbar-gutter-003.html
+  - subtest: 'Unexpected layout: overflow scroll, scrollbar-gutter always, vertical-rl'
+    test: scrollbar-gutter-003.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1663882
