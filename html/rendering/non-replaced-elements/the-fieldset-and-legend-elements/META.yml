@@ -1,20 +1,25 @@
 links:
 - product: chrome
+  results:
+  - status: FAIL
+    test: fieldset-overflow.html
   url: crbug.com/786475
-  results:
-  - test: fieldset-overflow.html
-    status: FAIL
 - product: chrome
+  results:
+  - status: FAIL
+    test: fieldset-multicol.html
   url: crbug.com/875235
-  results:
-  - test: fieldset-multicol.html
-    status: FAIL
 - product: chrome
+  results:
+  - subtest: fieldset multicol
+    test: fieldset-multicol.html
   url: https://bugs.chromium.org/p/chromium/issues/detail?id=874051
-  results:
-  - test: fieldset-multicol.html
-    subtest: fieldset multicol
 - product: chrome
-  url: https:/crbug.com/880822
   results:
   - test: legend-align-text-align.html
+  url: https:/crbug.com/880822
+- product: firefox
+  results:
+  - subtest: The rendered LEGEND should work well for :hover.
+    test: legend-hover.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1665005
