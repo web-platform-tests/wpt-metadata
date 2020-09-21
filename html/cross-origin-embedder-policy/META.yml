@@ -81,3 +81,12 @@ links:
   - subtest: navigation allowed for ["","require-corp"]
     test: header-parsing.https.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1661440
+- product: firefox
+  results:
+  - subtest: subresource CORP
+    test: reporting-to-endpoint.https.html
+  - subtest: navigation CORP
+    test: reporting-to-endpoint.https.html
+  - subtest: COEP violation on nested frame navigation
+    test: reporting-to-endpoint.https.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1666276
