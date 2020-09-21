@@ -43,3 +43,52 @@ links:
       (AVIF, BMP, ICO, PNG, WEBP) with resize.
     test: canvas-createImageBitmap-e_srgb.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1658092
+- product: firefox
+  results:
+  - test: canvas-colorManaged-convertToBlob-roundtrip.html
+  - subtest: Overall test
+    test: canvas-colorManaged-convertToBlob-roundtrip.html
+  - subtest: 'Test canvas convertToBlob(): mimeType: image/png, blobPixelFormat: uint8,
+      source color space: srgb, pixel format: uint8, alpha: 0.5'
+    test: canvas-colorManaged-convertToBlob-roundtrip.html
+  - subtest: 'Test color managed cretateImageData: {srgb, uint8} -> {srgb, uint8}'
+    test: canvas-createPutGetImageData-colorManaged.html
+  - subtest: 'Test color managed getImageData: {srgb, uint8} -> {srgb, uint8}'
+    test: canvas-createPutGetImageData-colorManaged.html
+  - subtest: 'Canvas color params: srgb, uint8. Testing 2x2_8bit_ProPhoto_transparent.png
+      vs 2x2_16bit_ProPhoto_transparent.png'
+    test: canvas-draw-high-bit-depth-images.html
+  - subtest: 'Canvas color params: srgb, uint8. Testing 2x2_8bit_ProPhoto_transparent.png
+      vs 2x2_16bit_interlaced_ProPhoto_transparent.png'
+    test: canvas-draw-high-bit-depth-images.html
+  - subtest: 'Test drawing color managed OffscreenCanvas: Canvas color params: srgb,
+      uint8;  OffscreenCanvas color params: srgb, uint8'
+    test: canvas-drawImage-offscreenCanvas.html
+  - subtest: 'Test drawing color managed OffscreenCanvas: Canvas color params: srgb,
+      uint8;  OffscreenCanvas color params: srgb, float16'
+    test: canvas-drawImage-offscreenCanvas.html
+  - subtest: 'Testing ImageBitmapRenderingContext: Source color space: srgb, pixel
+      format: uint8, alpha: 0.5, intermediate color space: none'
+    test: transferFromImageBitmap.html
+  - subtest: 'Testing ImageBitmapRenderingContext: Source color space: srgb, pixel
+      format: uint8, alpha: 0.5, intermediate color space: default'
+    test: transferFromImageBitmap.html
+  - subtest: 'Testing ImageBitmapRenderingContext: Source color space: srgb, pixel
+      format: uint8, alpha: 1, intermediate color space: none'
+    test: transferFromImageBitmap.html
+  - subtest: 'Testing ImageBitmapRenderingContext: Source color space: srgb, pixel
+      format: uint8, alpha: 1, intermediate color space: default'
+    test: transferFromImageBitmap.html
+  - subtest: 'Testing ImageBitmapRenderingContext: Source color space: srgb, pixel
+      format: float16, alpha: 0.5, intermediate color space: none'
+    test: transferFromImageBitmap.html
+  - subtest: 'Testing ImageBitmapRenderingContext: Source color space: srgb, pixel
+      format: float16, alpha: 0.5, intermediate color space: default'
+    test: transferFromImageBitmap.html
+  - subtest: 'Testing ImageBitmapRenderingContext: Source color space: srgb, pixel
+      format: float16, alpha: 1, intermediate color space: none'
+    test: transferFromImageBitmap.html
+  - subtest: 'Testing ImageBitmapRenderingContext: Source color space: srgb, pixel
+      format: float16, alpha: 1, intermediate color space: default'
+    test: transferFromImageBitmap.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1666278
