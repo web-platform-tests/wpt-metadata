@@ -1,25 +1,34 @@
 links:
 - product: firefox
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1634400
   results:
-  - test: idlharness.https.html
-    subtest: 'FontFace interface: attribute variationSettings'
-  - test: idlharness.https.html
-    subtest: FontFaceSet interface object length
-  - test: idlharness.https.html
-    subtest: 'FontFace interface: fontFace must inherit property "variationSettings"
+  - subtest: 'FontFace interface: attribute variationSettings'
+    test: idlharness.https.html
+  - subtest: FontFaceSet interface object length
+    test: idlharness.https.html
+  - subtest: 'FontFace interface: fontFace must inherit property "variationSettings"
       with the proper type'
+    test: idlharness.https.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1634400
 - product: firefox
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1647585
   results:
   - test: fontface-load-in-modal-dialog.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1647585
 - product: chrome
+  results:
+  - status: FAIL
+    test: fontface-descriptor-updates.html
   url: crbug.com/965409
-  results:
-  - test: fontface-descriptor-updates.html
-    status: FAIL
 - product: chrome
-  url: crbug.com/651795
   results:
-  - test: idlharness.https.html
-    status: FAIL
+  - status: FAIL
+    test: idlharness.https.html
+  url: crbug.com/651795
+- product: firefox
+  results:
+  - status: CRASH
+    test: fontface-override-descriptor-getter-setter.sub.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1667519
+- product: firefox
+  results:
+  - test: fontfaceset-load-var.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1668347
