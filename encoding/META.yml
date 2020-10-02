@@ -18,3 +18,10 @@ links:
     subtest: 'TextEncoder interface: new TextEncoder() must inherit property "encodeInto(USVString, Uint8Array)" with the proper type'
   - test: idlharness.any.html
     subtest: 'TextEncoder interface: calling encodeInto(USVString, Uint8Array) on new TextEncoder() with too few arguments must throw TypeError'
+- product: safari
+  url: https://bugs.webkit.org/show_bug.cgi?id=149850
+  results:
+  - test: encodeInto.any.sharedworker.html
+  - test: idlharness.any.sharedworker.html
+  - test: textdecoder-copy.any.sharedworker.html
+  - test: textdecoder-streaming.any.sharedworker.html
