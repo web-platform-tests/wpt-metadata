@@ -1,14 +1,19 @@
 links:
 - product: safari
-  url: https://bugs.webkit.org/show_bug.cgi?id=119175
   results:
-  - test: "*"
-- product: webkitgtk
+  - test: '*'
   url: https://bugs.webkit.org/show_bug.cgi?id=119175
-  results:
-  - test: "*"
 - product: webkitgtk
+  results:
+  - test: '*'
+  url: https://bugs.webkit.org/show_bug.cgi?id=119175
+- product: webkitgtk
+  results:
+  - status: FAIL
+    test: type-change-state.html
   url: https://bugs.webkit.org/show_bug.cgi?id=180645
+- product: firefox
   results:
-  - test: type-change-state.html
-    status: FAIL
+  - subtest: keyword _charset_
+    test: hidden-charset-case-sensitive.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1670136
