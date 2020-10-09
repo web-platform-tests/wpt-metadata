@@ -237,3 +237,10 @@ links:
   results:
   - test: minmax-number-serialize.html
     status: FAIL
+- product: chrome
+  url: crbug.com/1050968
+  results:
+  - test: calc-background-position-003.html
+    subtest: 'testing background-position: calc(6px + 21%) calc(7em + 22%)'
+  - test: calc-background-position-003.html
+    subtest: 'testing background-position: calc(-8px + 23%) calc(-9em + 24%)'
