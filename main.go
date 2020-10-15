@@ -4,6 +4,7 @@ import (
 	"bufio"
 	"flag"
 	"fmt"
+	mapset "github.com/deckarep/golang-set"
 	"github.com/web-platform-tests/wpt.fyi/shared"
 	"gopkg.in/yaml.v2"
 	"io/ioutil"
@@ -21,6 +22,11 @@ type expectation struct {
 	results  string
 	// Used for debugging only
 	raw string
+}
+
+func getKnownBadCrbugs() mapset.Set {
+	// crbug.com/626703 is a tracking bug for untriaged tests
+	return mapset.NewSetFromSlice([]interface{}{"crbug.com/626703"})
 }
 
 func main() {
@@ -137,6 +143,11 @@ func meetsCriteria(exp *expectation, filter string) bool {
 
 	if exp.url == "" {
 		fmt.Println("SKIPPED:", exp.testname, "[ No associated crbug ]")
+		return false
+	}
+
+	if getKnownBadCrbugs().Contains(exp.url) {
+		fmt.Println("SKIPPED:", exp.testname, "[ Associated with known-bad crbug", exp.url, "]")
 		return false
 	}
 
