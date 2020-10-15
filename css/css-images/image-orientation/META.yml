@@ -1,9 +1,40 @@
 links:
 - product: firefox
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1634347
   results:
   - test: svg-image-orientation.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1634347
 - product: firefox
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1635064
   results:
   - test: svg-image-orientation-none.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1635064
+- product: chrome
+  url: crbug.com/997202
+  results:
+  - test: image-orientation-default.html
+  - test: image-orientation-from-image-composited-dynamic1.html
+  - test: image-orientation-from-image-composited.html
+  - test: image-orientation-from-image-content-images.html
+  - test: image-orientation-from-image-dynamic1.html
+  - test: image-orientation-from-image-embedded-content.html
+  - test: image-orientation-from-image.html
+  - test: image-orientation-none-image-document.html
+  - test: image-orientation-from-image-composited-dynamic2.html
+  - test: image-orientation-from-image-dynamic2.html
+  - test: image-orientation-none-content-images.html
+  - test: image-orientation-none.html
+  - test: svg-image-orientation.html
+  - test: svg-image-orientation-none.html
+  - test: svg-image-orientation-aspect-ratio.html
+  - test: image-orientation-background-position.html
+  - test: image-orientation-background-properties.html
+- product: chrome
+  url: crbug.com/1076121
+  results:
+  - test: image-orientation-list-style-image.html
+  - test: image-orientation-border-image.html
+  - test: image-orientation-background-image.html
+- product: chrome
+  url: crbug.com/1110330
+  results:
+  - test: image-orientation-none-cross-origin.html
+  - test: image-orientation-none-cross-origin-canvas.html
