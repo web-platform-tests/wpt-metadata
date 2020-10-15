@@ -170,7 +170,6 @@ func toWPTMetadata(exp expectation) {
 	dirpath := path.Dir(exp.testname)
 	testpath := path.Base(exp.testname)
 	createDirIfNeeded(dirpath)
-	status := toMetadataStatus(exp.results)
 
 	// Open the META.yml file that we would write to, if it exists. In the case
 	// where it does exist we don't want to overwrite the file, so open in
@@ -190,7 +189,7 @@ func toWPTMetadata(exp expectation) {
 	if fi.Size() == 0 {
 		// This is an entirely new META.yml file, so create a new
 		// shared.Metadata representation for our expectation and write it out.
-		fmt.Println("CREATED-META-YML: for test", exp.testname, "with url", exp.url, "and status", status)
+		fmt.Println("CREATED-META-YML: for test", exp.testname, "with url", exp.url)
 		metadata := shared.Metadata{
 			Links: []shared.MetadataLink{
 				{
@@ -198,7 +197,6 @@ func toWPTMetadata(exp expectation) {
 					URL:     exp.url,
 					Results: []shared.MetadataTestResult{{
 						TestPath: testpath,
-						Status:   &status,
 					}},
 				},
 			},
@@ -236,8 +234,8 @@ func toWPTMetadata(exp expectation) {
 		}
 
 		if link.URL == exp.url {
-			fmt.Println("APPEND-LINK: for test", exp.testname, "with url", exp.url, "and status", status)
-			metadata.Links[index].Results = append(link.Results, shared.MetadataTestResult{TestPath: testpath, Status: &status})
+			fmt.Println("APPEND-LINK: for test", exp.testname, "with url", exp.url)
+			metadata.Links[index].Results = append(link.Results, shared.MetadataTestResult{TestPath: testpath})
 			hasAdded = true
 			break
 		}
@@ -249,13 +247,12 @@ func toWPTMetadata(exp expectation) {
 	// TODO: This does not handle the case where a single test may be
 	// associated with multiple links - should it?
 	if !hasAdded {
-		fmt.Println("NEW-LINK: for test", exp.testname, "with url", exp.url, "and status", status)
+		fmt.Println("NEW-LINK: for test", exp.testname, "with url", exp.url)
 		newLink := shared.MetadataLink{
 			Product: shared.ParseProductSpecUnsafe("chrome"),
 			URL:     exp.url,
 			Results: []shared.MetadataTestResult{{
 				TestPath: testpath,
-				Status:   &status,
 			}},
 		}
 		metadata.Links = append(metadata.Links, newLink)
@@ -272,22 +269,6 @@ func createDirIfNeeded(dir string) {
 		return
 	}
 	os.MkdirAll(dir, os.ModePerm)
-}
-
-// toMetadataStatus maps TestExpectation statuses to constants known to
-// wpt.fyi's metadata support.
-func toMetadataStatus(status string) shared.TestStatus {
-	if status == "failure" {
-		return shared.TestStatusFail
-	}
-	if status == "timeout" {
-		return shared.TestStatusTimeout
-	}
-	if status == "skip" {
-		return shared.TestStatusSkip
-	}
-	log.Fatal("Unknown status in toMetadataStatus:", status)
-	return shared.TestStatusUnknown
 }
 
 // writeToFile writes out a wpt.fyi shared.Metadata entry to a given file handle.
