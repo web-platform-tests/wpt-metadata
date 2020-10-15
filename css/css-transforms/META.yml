@@ -86,6 +86,10 @@ links:
   results:
   - test: preserve-3d-flat-grouping-properties.tentative.html
     status: FAIL
+  - test: 3d-rendering-context-behavior.tentative.html
+  - test: backface-visibility-hidden-004.tentative.html
+  - test: backface-visibility-hidden-005.tentative.html
+  - test: backface-visibility-hidden-animated-002.html
 - product: chrome
   url: crbug.com/753080
   results:
@@ -101,3 +105,16 @@ links:
     status: FAIL
   - test: transform3d-sorting-004.html
     status: FAIL
+- product: chrome
+  url: crbug.com/986110
+  results:
+  - test: perspective-transforms-equivalence.html
+- product: chrome
+  url: crbug.com/954591
+  results:
+  - test: composited-under-rotateY-180deg.html
+  - test: composited-under-rotateY-180deg-clip.html
+- product: chrome
+  url: crbug.com/1029997
+  results:
+  - test: transform-scale-percent-001.html

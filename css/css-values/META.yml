@@ -202,13 +202,17 @@ links:
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1635972
   results:
   - test: ch-pseudo-recalc-on-font-load.html
-    subtest: ch in pseudo-element ::after should be recalculated after loading a web font
+    subtest: ch in pseudo-element ::after should be recalculated after loading a web
+      font
   - test: ch-pseudo-recalc-on-font-load.html
-    subtest: ch in pseudo-element ::marker should be recalculated after loading a web font
+    subtest: ch in pseudo-element ::marker should be recalculated after loading a
+      web font
   - test: ch-pseudo-recalc-on-font-load.html
-    subtest: ch in pseudo-element ::before should be recalculated after loading a web font
+    subtest: ch in pseudo-element ::before should be recalculated after loading a
+      web font
   - test: ch-pseudo-recalc-on-font-load.html
-    subtest: ch in pseudo-element ::first-line should be recalculated after loading a web font
+    subtest: ch in pseudo-element ::first-line should be recalculated after loading
+      a web font
 - product: chrome
   url: crbug.com/931216
   results:
@@ -249,3 +253,7 @@ links:
   - test: calc-nesting-002.html
     subtest: testing calc(50px + calc(40%))
   - test: calc-serialization-002.html
+- product: chrome
+  url: crbug.com/1053965
+  results:
+  - test: ex-unit-004.html
