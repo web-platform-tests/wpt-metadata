@@ -35,3 +35,10 @@ links:
   - subtest: :is() inside :host-context()
     test: is-where-shadow.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1669120
+- product: firefox
+  results:
+  - subtest: :not(:is(div > :not(#e))) matches expected elements
+    test: is-where-not.html
+  - subtest: ':not(:is(div > :not(:where(#e, #f)))) matches expected elements'
+    test: is-where-not.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1671573
