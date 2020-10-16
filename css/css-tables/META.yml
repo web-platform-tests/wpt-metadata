@@ -1,37 +1,37 @@
 links:
 - product: chrome
-  results:
-  - status: FAIL
-    test: subpixel-table-cell-height-001.html
-  - status: FAIL
-    test: subpixel-table-cell-width-001.html
-  - status: FAIL
-    test: subpixel-table-cell-width-002.html
-  - status: FAIL
-    test: subpixel-table-width-001.html
   url: crbug.com/377847
-- product: chrome
   results:
-  - status: FAIL
-    test: toggle-row-display-property-001.html
+  - test: subpixel-table-cell-height-001.html
+    status: FAIL
+  - test: subpixel-table-cell-width-001.html
+    status: FAIL
+  - test: subpixel-table-cell-width-002.html
+    status: FAIL
+  - test: subpixel-table-width-001.html
+    status: FAIL
+- product: chrome
   url: crbug.com/764031
+  results:
+  - test: toggle-row-display-property-001.html
+    status: FAIL
 - product: chrome
-  results:
-  - status: FAIL
-    test: table-model-fixup-2.html
   url: crbug.com/771492
-- product: firefox
   results:
-  - subtest: Replaced elements outside a table cannot be table-row-group and are considered
-      block -- img elements
-    test: table-model-fixup-2.html
-  - subtest: Replaced elements outside a table cannot be table-row-group and are considered
-      block -- input=file elements
-    test: table-model-fixup-2.html
-  - subtest: Replaced elements outside a table cannot be table-row and are considered
-      block -- input=file elements
-    test: table-model-fixup-2.html
-  - subtest: Replaced elements outside a table cannot be table-row and are considered
-      block -- img elements
-    test: table-model-fixup-2.html
+  - test: table-model-fixup-2.html
+    status: FAIL
+- product: firefox
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1660014
+  results:
+  - test: table-model-fixup-2.html
+    subtest: Replaced elements outside a table cannot be table-row-group and are considered block -- img elements
+  - test: table-model-fixup-2.html
+    subtest: Replaced elements outside a table cannot be table-row-group and are considered block -- input=file elements
+  - test: table-model-fixup-2.html
+    subtest: Replaced elements outside a table cannot be table-row and are considered block -- input=file elements
+  - test: table-model-fixup-2.html
+    subtest: Replaced elements outside a table cannot be table-row and are considered block -- img elements
+- product: chrome
+  url: crbug.com/598134
+  results:
+  - test: table-has-box-sizing-border-box-002.html
