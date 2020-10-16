@@ -11,22 +11,27 @@ links:
   - test: contain-size-003.html
     status: FAIL
 - product: firefox
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1560420
   results:
   - test: contain-size-flexbox-002.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1560420
 - product: firefox
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1488878
   results:
   - test: contain-size-grid-002.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1488878
 - product: firefox
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1554327
   results:
   - test: contain-layout-005.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1554327
 - product: safari
   url: https://bugs.webkit.org/show_bug.cgi?id=172026
   results:
-  - test: "*"
+  - test: '*'
 - product: webkitgtk
   url: https://bugs.webkit.org/show_bug.cgi?id=172026
   results:
-  - test: "*"
+  - test: '*'
+- product: chrome
+  url: crbug.com/847274
+  results:
+  - test: contain-paint-005.html
+  - test: contain-paint-006.html
