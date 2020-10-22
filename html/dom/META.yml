@@ -1137,3 +1137,8 @@ links:
   - subtest: 'HTMLMediaElement interface: attribute preservesPitch'
     test: idlharness.https.html?include=HTML.*
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1662664
+- product: firefox
+  results:
+  - subtest: 'ElementInternals interface: attribute shadowRoot'
+    test: idlharness.https.html?exclude=(Document|Window|HTML.*)
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1672688
