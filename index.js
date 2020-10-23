@@ -5,8 +5,6 @@ const path = require('path');
 
 const fetch = require('node-fetch');
 const { JSDOM } = require('jsdom');
-const klaw = require('klaw');
-const yaml = require('js-yaml');
 
 const bugInfoCache = new Map();
 
@@ -17,7 +15,7 @@ async function getBugInfo(url) {
   }
   const body = await (await fetch(url)).text();
   const dom = new JSDOM(body);
-  const title = dom.window.document.title;
+  const title = dom.window.document.getElementById('short_desc_nonedit_display').textContent;
   const status = dom.window.document.getElementById('static_bug_status')
       .textContent.split(/\s+/).filter(s=>s).join(' ');
   const info = {title, status};
@@ -25,46 +23,38 @@ async function getBugInfo(url) {
   return info;
 }
 
-const dotFilter = (item) => {
-  const basename = path.basename(item);
-  return basename === '.' || basename[0] !== '.';
-};
-
 async function main() {
-  const files = await new Promise((resolve, reject) => {
-    const files = [];
-    klaw(__dirname, {filter: dotFilter})
-        .on('data', (item) => {
-          if (path.basename(item.path) === 'META.yml') {
-            files.push(path.relative(__dirname, item.path));
-          }
-        })
-        .on('error', reject)
-        .on('end', () => {
-          files.sort();
-          resolve(files);
-        });
-  });
+  const metadataURL = 'https://wpt.fyi/api/metadata?product=safari&product=webkitgtk';
+  const metadata = await (await fetch(metadataURL)).json();
 
-  for (const filename of files) {
-    if (!filename.startsWith('css/css-grid/')) {
+  const bugs = new Map();
+  for (const [pattern, links] of Object.entries(metadata)) {
+    if (!pattern.startsWith('/css/css-flexbox/')) {
       continue;
     }
-    const dirname = path.dirname(filename);
-    const doc = yaml.safeLoad(await fs.readFile(filename, 'utf8'));
-    for (const link of doc.links) {
-      if (link.product !== 'safari' && link.product !== 'webkitgtk') {
-        continue;
+    for (const link of links) {
+      const url = new URL(link.url).toString();
+      let patterns = bugs.get(url);
+      if (!patterns) {
+        patterns = new Set();
+        bugs.set(url, patterns);
       }
-      for (const result of link.results) {
-        const {title, status} = await getBugInfo(link.url);
-        if (result.test) {
-          console.log(`${link.url}\t${title}\t${status}\t${path.join(dirname, result.test)}`);
-        }
+      patterns.add(pattern);
+    }
+  }
+  const sortedBugs = Array.from(bugs.keys()).sort();
+  for (const url of sortedBugs) {
+    const {title, status} = await getBugInfo(url);
+    const sortedPatterns = Array.from(bugs.get(url)).sort();
+    for (const [i, pattern] of Object.entries(sortedPatterns)) {
+      if (i === "0") {
+        console.log(`${url}\t${title}\t${status}\t${pattern}`);
+      } else {
+        console.log(`\t\t\t${pattern}`);
       }
     }
   }
-};
+}
 
 if (require.main === module) {
   main().catch((error) => {
