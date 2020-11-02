@@ -1,16 +1,59 @@
 links:
 - product: chrome
+  results:
+  - status: FAIL
+    test: font-variation-settings-interpolation.html
   url: https://bugs.chromium.org/p/chromium/issues/detail?id=1005355
-  results:
-  - test: font-variation-settings-interpolation.html
-    status: FAIL
 - product: safari
-  url: https://bugs.webkit.org/show_bug.cgi?id=15257
   results:
-  - test: font-size-adjust-interpolation.html
-    status: FAIL
+  - status: FAIL
+    test: font-size-adjust-interpolation.html
+  url: https://bugs.webkit.org/show_bug.cgi?id=15257
 - product: webkitgtk
-  url: https://bugs.webkit.org/show_bug.cgi?id=15257
   results:
-  - test: font-size-adjust-interpolation.html
-    status: FAIL
+  - status: FAIL
+    test: font-size-adjust-interpolation.html
+  url: https://bugs.webkit.org/show_bug.cgi?id=15257
+- product: firefox
+  results:
+  - subtest: 'Compositing: property <font-variation-settings> underlying [''aaaa''
+      100, ''bbbb'' 200] from add [''aaaa'' 20, ''bbbb'' 50] to add [''aaaa'' 30,
+      ''bbbb'' 100] at (-0.3) should be [''aaaa'' 117, ''bbbb'' 235]'
+    test: font-variation-settings-composition.html
+  - subtest: 'Compositing: property <font-variation-settings> underlying [''aaaa''
+      100, ''bbbb'' 200] from add [''aaaa'' 20, ''bbbb'' 50] to add [''aaaa'' 30,
+      ''bbbb'' 100] at (0) should be [''aaaa'' 120, ''bbbb'' 250]'
+    test: font-variation-settings-composition.html
+  - subtest: 'Compositing: property <font-variation-settings> underlying [''aaaa''
+      100, ''bbbb'' 200] from add [''aaaa'' 20, ''bbbb'' 50] to add [''aaaa'' 30,
+      ''bbbb'' 100] at (0.5) should be [''aaaa'' 125, ''bbbb'' 275]'
+    test: font-variation-settings-composition.html
+  - subtest: 'Compositing: property <font-variation-settings> underlying [''aaaa''
+      100, ''bbbb'' 200] from add [''aaaa'' 20, ''bbbb'' 50] to add [''aaaa'' 30,
+      ''bbbb'' 100] at (1) should be [''aaaa'' 130, ''bbbb'' 300]'
+    test: font-variation-settings-composition.html
+  - subtest: 'Compositing: property <font-variation-settings> underlying [''aaaa''
+      100, ''bbbb'' 200] from add [''aaaa'' 20, ''bbbb'' 50] to add [''aaaa'' 30,
+      ''bbbb'' 100] at (1.5) should be [''aaaa'' 135, ''bbbb'' 325]'
+    test: font-variation-settings-composition.html
+  - subtest: 'Compositing: property <font-variation-settings> underlying [''test''
+      100] from add [''aaaa'' 20, ''bbbb'' 50] to add [''aaaa'' 30, ''bbbb'' 100]
+      at (-0.3) should be [''aaaa'' 17, ''bbbb'' 35]'
+    test: font-variation-settings-composition.html
+  - subtest: 'Compositing: property <font-variation-settings> underlying [''test''
+      100] from add [''aaaa'' 20, ''bbbb'' 50] to add [''aaaa'' 30, ''bbbb'' 100]
+      at (0) should be [''aaaa'' 20, ''bbbb'' 50]'
+    test: font-variation-settings-composition.html
+  - subtest: 'Compositing: property <font-variation-settings> underlying [''test''
+      100] from add [''aaaa'' 20, ''bbbb'' 50] to add [''aaaa'' 30, ''bbbb'' 100]
+      at (0.5) should be [''aaaa'' 25, ''bbbb'' 75]'
+    test: font-variation-settings-composition.html
+  - subtest: 'Compositing: property <font-variation-settings> underlying [''test''
+      100] from add [''aaaa'' 20, ''bbbb'' 50] to add [''aaaa'' 30, ''bbbb'' 100]
+      at (1) should be [''aaaa'' 30, ''bbbb'' 100]'
+    test: font-variation-settings-composition.html
+  - subtest: 'Compositing: property <font-variation-settings> underlying [''test''
+      100] from add [''aaaa'' 20, ''bbbb'' 50] to add [''aaaa'' 30, ''bbbb'' 100]
+      at (1.5) should be [''aaaa'' 35, ''bbbb'' 125]'
+    test: font-variation-settings-composition.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1674746
