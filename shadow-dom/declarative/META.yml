@@ -479,3 +479,13 @@ links:
   - subtest: getInnerHTML() on <aside>, with mode=closed, delegatesFocus=false.
     test: getinnerhtml.tentative.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1651486
+- product: firefox
+  results:
+  - subtest: iframe, no sandbox - supports DSD by default
+    test: declarative-shadow-dom-opt-in.tentative.html
+  - subtest: iframe with allow-declarative-shadow-dom sandbox flag allows declarative
+      Shadow DOM
+    test: declarative-shadow-dom-opt-in.tentative.html
+  - subtest: iframe with no sandbox flag allows declarative Shadow DOM
+    test: declarative-shadow-dom-opt-in.tentative.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1676075
