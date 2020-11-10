@@ -1,43 +1,50 @@
 links:
-    - product: chrome
-      url: https://bugs.chromium.org/p/chromium/issues/detail?id=460725
-      results:
-        - test: historical.html
-          subtest: 'Historical DOM features must be removed: DOMError'
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=931884
-      results:
-        - test: idlharness.window.html?exclude=Node
-          subtest: 'Document interface: attribute origin'
-        - test: idlharness.window.html?exclude=Node
-          subtest: 'Document interface: xmlDoc must inherit property "origin" with the proper type (3)'
-        - test: idlharness.window.html?exclude=Node
-          subtest: 'Document interface: new Document() must inherit property "origin" with the proper type (3)'
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=660660
-      results:
-        - test: historical.html
-          subtest: 'Historical DOM features must be removed: CDATASection'
-        - test: historical.html
-          subtest: 'Historical DOM features must be removed: createCDATASection'
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1499547
-      results:
-        - test: historical.html
-          subtest: 'Historical DOM features must be removed: DOMRequest'
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1647538
-      results:
-        - test: idlharness.window.html?exclude=Node
-          subtest: 'Document interface: existence and properties of interface prototype object''s @@unscopables property'
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1653592
-      results:
-        - test: idlharness.window.html?exclude=Node
-          subtest: Stringification of document.createNSResolver(document.body)
-    - product: chrome
-      url: https://bugs.chromium.org/p/chromium/issues/detail?id=992606
-      results:
-        - test: idlharness.window.html?exclude=Node
-          subtest: StaticRange interface object length
-
+- product: chrome
+  results:
+  - subtest: 'Historical DOM features must be removed: DOMError'
+    test: historical.html
+  url: https://bugs.chromium.org/p/chromium/issues/detail?id=460725
+- product: firefox
+  results:
+  - subtest: 'Document interface: attribute origin'
+    test: idlharness.window.html?exclude=Node
+  - subtest: 'Document interface: xmlDoc must inherit property "origin" with the proper
+      type (3)'
+    test: idlharness.window.html?exclude=Node
+  - subtest: 'Document interface: new Document() must inherit property "origin" with
+      the proper type (3)'
+    test: idlharness.window.html?exclude=Node
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=931884
+- product: firefox
+  results:
+  - subtest: 'Historical DOM features must be removed: CDATASection'
+    test: historical.html
+  - subtest: 'Historical DOM features must be removed: createCDATASection'
+    test: historical.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=660660
+- product: firefox
+  results:
+  - subtest: 'Historical DOM features must be removed: DOMRequest'
+    test: historical.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1499547
+- product: firefox
+  results:
+  - subtest: 'Document interface: existence and properties of interface prototype
+      object''s @@unscopables property'
+    test: idlharness.window.html?exclude=Node
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1647538
+- product: firefox
+  results:
+  - subtest: Stringification of document.createNSResolver(document.body)
+    test: idlharness.window.html?exclude=Node
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1653592
+- product: chrome
+  results:
+  - subtest: StaticRange interface object length
+    test: idlharness.window.html?exclude=Node
+  url: https://bugs.chromium.org/p/chromium/issues/detail?id=992606
+- product: firefox
+  results:
+  - subtest: 'ShadowRoot interface: attribute onslotchange'
+    test: idlharness.window.html?exclude=Node
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1676455
