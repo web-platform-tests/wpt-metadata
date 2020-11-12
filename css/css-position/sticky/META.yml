@@ -22,3 +22,56 @@ links:
   - test: position-sticky-nested-table.html
   - test: position-sticky-writing-modes.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1676564
+- product: safari
+  results:
+  - status: FAIL
+    test: position-sticky-hyperlink.html
+  - status: FAIL
+    test: position-sticky-inline.html
+  - status: FAIL
+    test: position-sticky-nested-inline.html
+  - status: FAIL
+    test: position-sticky-nested-table.html
+  - status: FAIL
+    test: position-sticky-rendering.html
+  - status: FAIL
+    test: position-sticky-table-parts.html
+  - status: FAIL
+    test: position-sticky-table-th-bottom.html
+  - status: FAIL
+    test: position-sticky-writing-modes.html
+  url: https://bugs.webkit.org/show_bug.cgi?id=203450
+- product: webkitgtk
+  results:
+  - status: FAIL
+    test: position-sticky-hyperlink.html
+  - status: FAIL
+    test: position-sticky-inline.html
+  - status: FAIL
+    test: position-sticky-nested-inline.html
+  - status: FAIL
+    test: position-sticky-nested-table.html
+  - status: FAIL
+    test: position-sticky-rendering.html
+  - status: FAIL
+    test: position-sticky-table-parts.html
+  - status: FAIL
+    test: position-sticky-table-th-bottom.html
+  - status: FAIL
+    test: position-sticky-writing-modes.html
+  url: https://bugs.webkit.org/show_bug.cgi?id=203450
+- product: chrome
+  results:
+  - status: FAIL
+    test: position-sticky-table-tr-top.html
+  - status: FAIL
+    test: position-sticky-table-tr-bottom.html
+  - status: FAIL
+    test: position-sticky-table-tfoot-bottom.html
+  - status: FAIL
+    test: position-sticky-table-thead-top.html
+  url: crbug.com/702927
+- product: chrome
+  results:
+  - test: position-sticky-offset-overflow.html
+  url: crbug.com/752022
