@@ -489,3 +489,65 @@ links:
   - subtest: iframe with no sandbox flag allows declarative Shadow DOM
     test: declarative-shadow-dom-opt-in.tentative.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1676075
+- product: firefox
+  results:
+  - subtest: 'Declarative Shadow DOM: Basic test'
+    test: declarative-shadow-dom-basic.tentative.html
+  - subtest: 'Declarative Shadow DOM: Feature detection'
+    test: declarative-shadow-dom-basic.tentative.html
+  - subtest: 'Declarative Shadow DOM: Multiple roots'
+    test: declarative-shadow-dom-basic.tentative.html
+  - subtest: 'Declarative Shadow DOM: template containing declarative shadow root'
+    test: declarative-shadow-dom-basic.tentative.html
+  - subtest: 'Declarative Shadow DOM: template containing declarative shadow root
+      and UA shadow root'
+    test: declarative-shadow-dom-basic.tentative.html
+  - subtest: Non-fragment parsing needs no opt-in
+    test: declarative-shadow-dom-opt-in.tentative.html
+  - subtest: document.write allowed from synchronous script loaded from main document
+    test: declarative-shadow-dom-opt-in.tentative.html
+  - subtest: iframe
+    test: declarative-shadow-dom-opt-in.tentative.html
+  - subtest: iframe, no sandbox
+    test: declarative-shadow-dom-opt-in.tentative.html
+  - subtest: sandboxed iframe allows declarative Shadow DOM
+    test: declarative-shadow-dom-opt-in.tentative.html
+  - subtest: iframe with no sandbox allows declarative Shadow DOM
+    test: declarative-shadow-dom-opt-in.tentative.html
+  - subtest: getInnerHTML() on <article>, with mode=closed, delegatesFocus=true.
+    test: getinnerhtml.tentative.html
+  - subtest: getInnerHTML() on <aside>, with mode=closed, delegatesFocus=true.
+    test: getinnerhtml.tentative.html
+  - subtest: getInnerHTML() on <blockquote>, with mode=closed, delegatesFocus=true.
+    test: getinnerhtml.tentative.html
+  - subtest: getInnerHTML() on <body>, with mode=closed, delegatesFocus=true.
+    test: getinnerhtml.tentative.html
+  - subtest: getInnerHTML() on <div>, with mode=closed, delegatesFocus=true.
+    test: getinnerhtml.tentative.html
+  - subtest: getInnerHTML() on <footer>, with mode=closed, delegatesFocus=true.
+    test: getinnerhtml.tentative.html
+  - subtest: getInnerHTML() on <h1>, with mode=closed, delegatesFocus=true.
+    test: getinnerhtml.tentative.html
+  - subtest: getInnerHTML() on <h2>, with mode=closed, delegatesFocus=true.
+    test: getinnerhtml.tentative.html
+  - subtest: getInnerHTML() on <h3>, with mode=closed, delegatesFocus=true.
+    test: getinnerhtml.tentative.html
+  - subtest: getInnerHTML() on <h4>, with mode=closed, delegatesFocus=true.
+    test: getinnerhtml.tentative.html
+  - subtest: getInnerHTML() on <h5>, with mode=closed, delegatesFocus=true.
+    test: getinnerhtml.tentative.html
+  - subtest: getInnerHTML() on <h6>, with mode=closed, delegatesFocus=true.
+    test: getinnerhtml.tentative.html
+  - subtest: getInnerHTML() on <header>, with mode=closed, delegatesFocus=true.
+    test: getinnerhtml.tentative.html
+  - subtest: getInnerHTML() on <nav>, with mode=closed, delegatesFocus=true.
+    test: getinnerhtml.tentative.html
+  - subtest: getInnerHTML() on <p>, with mode=closed, delegatesFocus=true.
+    test: getinnerhtml.tentative.html
+  - subtest: getInnerHTML() on <section>, with mode=closed, delegatesFocus=true.
+    test: getinnerhtml.tentative.html
+  - subtest: getInnerHTML() on <span>, with mode=closed, delegatesFocus=true.
+    test: getinnerhtml.tentative.html
+  - subtest: getInnerHTML() on <htmlunknown>
+    test: getinnerhtml.tentative.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1676798
