@@ -1,4 +1,27 @@
 links:
+- product: firefox
+  results:
+  - subtest: the inner sticky can stick before the outer one if necessary
+    test: position-sticky-nested-bottom.html
+  - subtest: neither sticky can escape their containing block
+    test: position-sticky-nested-bottom.html
+  - subtest: the inner sticky can stick before the outer one if necessary
+    test: position-sticky-nested-right.html
+  - subtest: neither sticky can escape their containing block
+    test: position-sticky-nested-right.html
+  - subtest: A sticky element should attach to an overflow:hidden ancestor inside
+      a table
+    test: position-sticky-overflow-hidden.html
+  - subtest: Ancestor overflow padding does not allow a sticky element to escape its
+      container
+    test: position-sticky-overflow-padding.html
+  - subtest: Sticky position and its overflow contribution
+    test: position-sticky-scrolled-remove-sibling.html
+  - test: position-sticky-fixed-ancestor-iframe.html
+  - test: position-sticky-fixed-ancestor.html
+  - test: position-sticky-nested-table.html
+  - test: position-sticky-writing-modes.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1676564
 - product: safari
   results:
   - status: FAIL
@@ -37,13 +60,6 @@ links:
   - status: FAIL
     test: position-sticky-writing-modes.html
   url: https://bugs.webkit.org/show_bug.cgi?id=203450
-- product: firefox
-  results:
-  - test: position-sticky-nested-table.html
-  - test: position-sticky-writing-modes.html
-  - test: position-sticky-fixed-ancestor.html
-  - test: position-sticky-table-parts.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1634350
 - product: chrome
   results:
   - status: FAIL
