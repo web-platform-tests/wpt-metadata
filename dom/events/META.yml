@@ -1,54 +1,63 @@
 links:
-- product: chrome
-  url: https://bugs.chromium.org/p/chromium/issues/detail?id=868224
-  results:
-  - test: Event-dispatch-on-disabled-elements.html
-    status: TIMEOUT
-- product: chrome
-  url: https://bugs.chromium.org/p/chromium/issues/detail?id=1014421
-  results:
-  - test: EventListener-handleEvent.html
-    subtest: throws if `handleEvent` is falsy and not callable
-  - test: EventListener-handleEvent.html
-    subtest: throws if `handleEvent` is thruthy and not callable
-- product: webkitgtk
-  url: https://bugs.webkit.org/show_bug.cgi?id=177447
-  results:
-  - test: Event-timestamp-high-resolution.html
-    status: FAIL
-- product: webkitgtk
-  url: https://bugs.webkit.org/show_bug.cgi?id=153707
-  results:
-  - test: EventTarget-dispatchEvent.html
-    status: FAIL
-- product: firefox
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1655754
-  results:
-  - test: document-level-touchmove-event-listener-passive-by-default.html
-- product: firefox
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1658996
-  results:
-  - test: Event-dispatch-click.html
-    subtest: event state during post-click handling
-  - test: Event-dispatch-click.html
-    subtest: redispatch during post-click handling
-  - test: Event-dispatch-click.html
-    subtest: disabled checkbox still has activation behavior, part 2
-  - test: Event-dispatch-click.html
-    subtest: pick the first with activation behavior <input type=checkbox>
-  - test: Event-dispatch-click.html
-    subtest: look at parents only when event bubbles
-- product: firefox
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1659525
-  results:
-  - test: Event-dispatch-click.html
-    subtest: disabled checkbox should get legacy-canceled-activation behavior 2
-  - test: Event-dispatch-click.html
-    subtest: disabled radio should get legacy-canceled-activation behavior 2
-- product: chrome
-  url: https://bugs.chromium.org/p/chromium/issues/detail?id=1115661
-  results:
-  - test: Event-dispatch-click.html
-    subtest: disabled checkbox should be checked from dispatchEvent(new MouseEvent("click"))
-  - test: Event-dispatch-click.html
-    subtest: disabled radio should be checked from dispatchEvent(new MouseEvent("click"))
+    - product: chrome
+      url: https://bugs.chromium.org/p/chromium/issues/detail?id=868224
+      results:
+        - test: Event-dispatch-on-disabled-elements.html
+          status: TIMEOUT
+    - product: chrome
+      url: https://bugs.chromium.org/p/chromium/issues/detail?id=1014421
+      results:
+        - test: EventListener-handleEvent.html
+          subtest: throws if `handleEvent` is falsy and not callable
+        - test: EventListener-handleEvent.html
+          subtest: throws if `handleEvent` is thruthy and not callable
+    - product: webkitgtk
+      url: https://bugs.webkit.org/show_bug.cgi?id=177447
+      results:
+        - test: Event-timestamp-high-resolution.html
+          status: FAIL
+    - product: webkitgtk
+      url: https://bugs.webkit.org/show_bug.cgi?id=153707
+      results:
+        - test: EventTarget-dispatchEvent.html
+          status: FAIL
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1655754
+      results:
+        - test: document-level-touchmove-event-listener-passive-by-default.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1658996
+      results:
+        - test: Event-dispatch-click.html
+          subtest: event state during post-click handling
+        - test: Event-dispatch-click.html
+          subtest: redispatch during post-click handling
+        - test: Event-dispatch-click.html
+          subtest: disabled checkbox still has activation behavior, part 2
+        - test: Event-dispatch-click.html
+          subtest: pick the first with activation behavior <input type=checkbox>
+        - test: Event-dispatch-click.html
+          subtest: look at parents only when event bubbles
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1659525
+      results:
+        - test: Event-dispatch-click.html
+          subtest: disabled checkbox should get legacy-canceled-activation behavior 2
+        - test: Event-dispatch-click.html
+          subtest: disabled radio should get legacy-canceled-activation behavior 2
+    - product: chrome
+      url: https://bugs.chromium.org/p/chromium/issues/detail?id=1115661
+      results:
+        - test: Event-dispatch-click.html
+          subtest: disabled checkbox should be checked from dispatchEvent(new MouseEvent("click"))
+        - test: Event-dispatch-click.html
+          subtest: disabled radio should be checked from dispatchEvent(new MouseEvent("click"))
+    - product: chrome
+      url: https://bugs.chromium.org/p/chromium/issues/detail?id=826702
+      results:
+        - test: relatedTarget.window.html
+          subtest: Retarget a shadow-tree relatedTarget
+        - test: relatedTarget.window.html
+          subtest: Reset targets on early return
+        - test: relatedTarget.window.html
+          subtest: Reset targets before activation behavior
