@@ -11,3 +11,15 @@ links:
   - subtest: 'oncancel: the content attribute must execute when an event is dispatched'
     test: event-handler-all-global-events.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1662664
+- product: firefox
+  results:
+  - subtest: 'onslotchange: must be on the appropriate locations for GlobalEventHandlers'
+    test: event-handler-all-global-events.html
+  - subtest: 'onslotchange: the default value must be null'
+    test: event-handler-all-global-events.html
+  - subtest: 'onslotchange: the content attribute must be compiled into a function
+      as the corresponding property'
+    test: event-handler-all-global-events.html
+  - subtest: 'onslotchange: the content attribute must execute when an event is dispatched'
+    test: event-handler-all-global-events.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1680298

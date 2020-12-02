@@ -1191,3 +1191,12 @@ links:
       property "onslotchange" with the proper type'
     test: idlharness.https.html?include=HTML.*
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1676455
+- product: firefox
+  results:
+  - subtest: 'TextMetrics interface: attribute hangingBaseline'
+    test: idlharness.worker.html
+  - subtest: 'TextMetrics interface: attribute alphabeticBaseline'
+    test: idlharness.worker.html
+  - subtest: 'TextMetrics interface: attribute ideographicBaseline'
+    test: idlharness.worker.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1680298
