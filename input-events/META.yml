@@ -3,3 +3,13 @@ links:
   results:
   - test: input-events-typing.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1655753
+- product: firefox
+  results:
+  - test: input-events-get-target-ranges.html
+  - subtest: getTargetRanges() returns correct range and cleared after dispatch.
+    test: input-events-get-target-ranges.html
+  - subtest: Actions other than deletion should have current selection as target ranges.
+    test: input-events-get-target-ranges.html
+  - subtest: Textarea should have empty target range.
+    test: input-events-get-target-ranges.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1680426
