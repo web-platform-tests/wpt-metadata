@@ -1,8 +1,23 @@
 links:
 - product: chrome
-  url: crbug.com/1087077
   results:
-  - test: form-double-submit.html
-    status: FAIL
-  - test: form-double-submit-3.html
-    status: FAIL
+  - status: FAIL
+    test: form-double-submit.html
+  - status: FAIL
+    test: form-double-submit-3.html
+  url: crbug.com/1087077
+- product: firefox
+  results:
+  - subtest: 'Form newline normalization: \n in the value becomes \r\n'
+    test: newline-normalization.html
+  - subtest: 'Form newline normalization: \r in the value becomes \r\n'
+    test: newline-normalization.html
+  - subtest: 'Form newline normalization: \n\r in the value becomes \r\n\r\n'
+    test: newline-normalization.html
+  - subtest: 'Form newline normalization: \n in the name becomes \r\n'
+    test: newline-normalization.html
+  - subtest: 'Form newline normalization: \r in the name becomes \r\n'
+    test: newline-normalization.html
+  - subtest: 'Form newline normalization: \n\r in the name becomes \r\n\r\n'
+    test: newline-normalization.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1680725
