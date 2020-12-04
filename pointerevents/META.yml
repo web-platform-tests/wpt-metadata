@@ -152,3 +152,11 @@ links:
   results:
   - test: pointerevent_click_is_a_pointerevent.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1679046
+- product: firefox
+  results:
+  - test: pointerevent_capture_suppressing_mouse.html
+  - subtest: pointerout event after lostpointercapture received
+    test: pointerevent_capture_suppressing_mouse.html
+  - subtest: pointerleave event after lostpointercapture received
+    test: pointerevent_capture_suppressing_mouse.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1680651
