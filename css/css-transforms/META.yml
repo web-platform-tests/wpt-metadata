@@ -114,6 +114,17 @@ links:
       url: crbug.com/1029997
       results:
         - test: transform-scale-percent-001.html
+    - product: safari
+      url: https://bugs.webkit.org/show_bug.cgi?id=219562
+      results:
+        - test: preserve-3d-flat-grouping-properties.html
+          subtest: Preserve-3d element flattened due to opacity
+        - test: preserve-3d-flat-grouping-properties.html
+          subtest: Preserve-3d element flattened due to backdrop-filter
+        - test: preserve-3d-flat-grouping-properties.html
+          subtest: Preserve-3d element flattened due to isolation
+        - test: preserve-3d-flat-grouping-properties.html
+          subtest: Preserve-3d element flattened due to mask
     - product: firefox
       url: https://bugzilla.mozilla.org/show_bug.cgi?id=1680863
       results:
