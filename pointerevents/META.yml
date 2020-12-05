@@ -148,3 +148,19 @@ links:
   - subtest: contextmenu is a PointerEvent
     test: pointerevent_contextmenu_is_a_pointerevent.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1675246
+- product: firefox
+  results:
+  - test: pointerevent_click_is_a_pointerevent.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1679046
+- product: firefox
+  results:
+  - test: pointerevent_capture_suppressing_mouse.html
+  - subtest: pointerout event after lostpointercapture received
+    test: pointerevent_capture_suppressing_mouse.html
+  - subtest: pointerleave event after lostpointercapture received
+    test: pointerevent_capture_suppressing_mouse.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1680651
+- product: firefox
+  results:
+  - test: pointerevent_fractional_coordinates.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1680669

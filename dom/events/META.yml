@@ -1,59 +1,80 @@
 links:
-    - product: chrome
-      url: https://bugs.chromium.org/p/chromium/issues/detail?id=868224
-      results:
-        - test: Event-dispatch-on-disabled-elements.html
-          status: TIMEOUT
-    - product: chrome
-      url: https://bugs.chromium.org/p/chromium/issues/detail?id=1014421
-      results:
-        - test: EventListener-handleEvent.html
-          subtest: throws if `handleEvent` is falsy and not callable
-        - test: EventListener-handleEvent.html
-          subtest: throws if `handleEvent` is thruthy and not callable
-    - product: webkitgtk
-      url: https://bugs.webkit.org/show_bug.cgi?id=177447
-      results:
-        - test: Event-timestamp-high-resolution.html
-          status: FAIL
-    - product: webkitgtk
-      url: https://bugs.webkit.org/show_bug.cgi?id=153707
-      results:
-        - test: EventTarget-dispatchEvent.html
-          status: FAIL
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1655754
-      results:
-        - test: document-level-touchmove-event-listener-passive-by-default.html
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1658996
-      results:
-        - test: Event-dispatch-click.html
-          subtest: event state during post-click handling
-        - test: Event-dispatch-click.html
-          subtest: redispatch during post-click handling
-        - test: Event-dispatch-click.html
-          subtest: disabled checkbox still has activation behavior, part 2
-        - test: Event-dispatch-click.html
-          subtest: pick the first with activation behavior <input type=checkbox>
-        - test: Event-dispatch-click.html
-          subtest: look at parents only when event bubbles
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1659525
-      results:
-        - test: Event-dispatch-click.html
-          subtest: disabled checkbox should get legacy-canceled-activation behavior 2
-        - test: Event-dispatch-click.html
-          subtest: disabled radio should get legacy-canceled-activation behavior 2
-    - product: chrome
-      url: https://bugs.chromium.org/p/chromium/issues/detail?id=1115661
-      results:
-        - test: Event-dispatch-click.html
-          subtest: disabled checkbox should be checked from dispatchEvent(new MouseEvent("click"))
-        - test: Event-dispatch-click.html
-          subtest: disabled radio should be checked from dispatchEvent(new MouseEvent("click"))
-    - product: chrome
-      url: https://bugs.chromium.org/p/chromium/issues/detail?id=1052152
-      results:
-        - test: Event-dispatch-listener-order.window.html
-          subtest: Event-dispatch-listener-order
+- product: chrome
+  results:
+  - status: TIMEOUT
+    test: Event-dispatch-on-disabled-elements.html
+  url: https://bugs.chromium.org/p/chromium/issues/detail?id=868224
+- product: chrome
+  results:
+  - subtest: throws if `handleEvent` is falsy and not callable
+    test: EventListener-handleEvent.html
+  - subtest: throws if `handleEvent` is thruthy and not callable
+    test: EventListener-handleEvent.html
+  url: https://bugs.chromium.org/p/chromium/issues/detail?id=1014421
+- product: webkitgtk
+  results:
+  - status: FAIL
+    test: Event-timestamp-high-resolution.html
+  url: https://bugs.webkit.org/show_bug.cgi?id=177447
+- product: webkitgtk
+  results:
+  - status: FAIL
+    test: EventTarget-dispatchEvent.html
+  url: https://bugs.webkit.org/show_bug.cgi?id=153707
+- product: firefox
+  results:
+  - test: document-level-touchmove-event-listener-passive-by-default.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1655754
+- product: firefox
+  results:
+  - subtest: event state during post-click handling
+    test: Event-dispatch-click.html
+  - subtest: redispatch during post-click handling
+    test: Event-dispatch-click.html
+  - subtest: disabled checkbox still has activation behavior, part 2
+    test: Event-dispatch-click.html
+  - subtest: pick the first with activation behavior <input type=checkbox>
+    test: Event-dispatch-click.html
+  - subtest: look at parents only when event bubbles
+    test: Event-dispatch-click.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1658996
+- product: firefox
+  results:
+  - subtest: disabled checkbox should get legacy-canceled-activation behavior 2
+    test: Event-dispatch-click.html
+  - subtest: disabled radio should get legacy-canceled-activation behavior 2
+    test: Event-dispatch-click.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1659525
+- product: chrome
+  results:
+  - subtest: disabled checkbox should be checked from dispatchEvent(new MouseEvent("click"))
+    test: Event-dispatch-click.html
+  - subtest: disabled radio should be checked from dispatchEvent(new MouseEvent("click"))
+    test: Event-dispatch-click.html
+  url: https://bugs.chromium.org/p/chromium/issues/detail?id=1115661
+- product: chrome
+  results:
+  - subtest: Listeners are invoked in correct order (AT_TARGET phase)
+    test: Event-dispatch-order-at-target.html
+  url: https://bugs.chromium.org/p/chromium/issues/detail?id=1052152
+- product: firefox
+  results:
+  - subtest: Passing an AbortSignal to addEventListener works with the once flag
+    test: AddEventListenerOptions-signal.any.html
+  - subtest: Passing an AbortSignal to multiple listeners
+    test: AddEventListenerOptions-signal.any.html
+  - subtest: Aborting from a listener does not call future listeners
+    test: AddEventListenerOptions-signal.any.html
+  - test: AddEventListenerOptions-signal.any.worker.html
+  - subtest: Passing an AbortSignal to addEventListener works with the once flag
+    test: AddEventListenerOptions-signal.any.worker.html
+  - subtest: Passing an AbortSignal to multiple listeners
+    test: AddEventListenerOptions-signal.any.worker.html
+  - subtest: Aborting from a listener does not call future listeners
+    test: AddEventListenerOptions-signal.any.worker.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1680530
+- product: chrome
+  url: https://bugs.chromium.org/p/chromium/issues/detail?id=1052152
+  results:
+  - test: Event-dispatch-listener-order.window.html
+    subtest: Event-dispatch-listener-order
