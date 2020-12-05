@@ -58,6 +58,8 @@ links:
     test: Event-dispatch-order-at-target.html
   - subtest: Event-dispatch-listener-order
     test: Event-dispatch-listener-order.window.html
+  - subtest: Capturing event listeners should be called before non-capturing ones
+    test: EventTarget-dispatchEvent.html
   url: https://bugs.chromium.org/p/chromium/issues/detail?id=1052152
 - product: firefox
   results:
@@ -84,8 +86,3 @@ links:
     subtest: Reset targets on early return
   - test: relatedTarget.window.html
     subtest: Reset targets before activation behavior
-- product: chrome
-  url: https://bugs.chromium.org/p/chromium/issues/detail?id=1052152
-  results:
-  - test: EventTarget-dispatchEvent.html
-    subtest: Capturing event listeners should be called before non-capturing ones
