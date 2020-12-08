@@ -1,0 +1,75 @@
+links:
+- product: firefox
+  results:
+  - subtest: 'coop reporting test Report only tests for an opener without any COOP/COOP
+      report only set to SAME_ORIGIN with , , same-origin; report-to="coop-popup-report-only-endpoint", '
+    test: report-only-from-unsafe-none.https.html
+  - subtest: 'coop reporting test Report only tests for an opener without any COOP/COOP
+      report only set to CROSS_ORIGIN with , , same-origin; report-to="coop-popup-report-only-endpoint", '
+    test: report-only-from-unsafe-none.https.html
+  - subtest: 'coop reporting test reporting same origin with report-to to SAME_ORIGIN
+      with same-origin; report-to="coop-popup-report-endpoint", , , '
+    test: reporting-popup-same-origin-allow-popups-report-to.https.html
+  - subtest: 'coop reporting test reporting same origin with report-to to CROSS_ORIGIN
+      with same-origin-allow-popups; report-to="coop-popup-report-endpoint", require-corp,
+      , '
+    test: reporting-popup-same-origin-allow-popups-report-to.https.html
+  - subtest: 'coop reporting test reporting same origin with report-to to CROSS_ORIGIN
+      with same-origin, require-corp, , '
+    test: reporting-popup-same-origin-allow-popups-report-to.https.html
+  - subtest: 'coop reporting test reporting same origin with report-to to CROSS_ORIGIN
+      with same-origin; report-to="coop-popup-report-endpoint", , , '
+    test: reporting-popup-same-origin-report-to.https.html
+  - subtest: 'coop reporting test reporting same origin with report-to to SAME_ORIGIN
+      with unsafe-none; report-to="coop-popup-report-endpoint", , , '
+    test: reporting-popup-same-origin-report-to.https.html
+  - subtest: 'coop reporting test reporting same origin with report-to to SAME_ORIGIN
+      with same-origin; report-to="coop-popup-report-endpoint", require-corp, , '
+    test: reporting-popup-same-origin-report-to.https.html
+  - subtest: 'coop reporting test reporting same origin with report-to to CROSS_ORIGIN
+      with unsafe-none; report-to="coop-popup-report-endpoint", , , '
+    test: reporting-popup-same-origin-report-to.https.html
+  - subtest: 'coop reporting test reporting same origin with report-to to SAME_ORIGIN
+      with unsafe-none, , , '
+    test: reporting-popup-same-origin-report-to.https.html
+  - subtest: 'coop reporting test reporting same origin to CROSS_ORIGIN with same-origin;
+      report-to="coop-popup-report-endpoint", , , '
+    test: reporting-popup-same-origin.https.html
+  - subtest: 'coop reporting test reporting same origin to SAME_ORIGIN with unsafe-none;
+      report-to="coop-popup-report-endpoint", , , '
+    test: reporting-popup-same-origin.https.html
+  - subtest: 'coop reporting test reporting same origin to CROSS_ORIGIN with unsafe-none;
+      report-to="coop-popup-report-endpoint", , , '
+    test: reporting-popup-same-origin.https.html
+  - subtest: 'coop reporting test reporting same origin with report-to to SAME_ORIGIN
+      with same-origin; report-to="coop-popup-report-endpoint", , , '
+    test: reporting-popup-unsafe-none-report-to.https.html
+  - subtest: 'coop reporting test reporting same origin with report-to to SAME_ORIGIN
+      with same-origin, , , '
+    test: reporting-popup-unsafe-none-report-to.https.html
+  - subtest: 'coop reporting test reporting same origin with report-to to CROSS_ORIGIN
+      with same-origin; report-to="coop-popup-report-endpoint", , , '
+    test: reporting-popup-unsafe-none-report-to.https.html
+  - subtest: coop reporting test A test with both COOP and COOP report only setup
+      to CROSS_ORIGIN with same-origin-allow-popups; report-to="coop-popup-report-endpoint",
+      require-corp, same-origin; report-to="coop-popup-report-only-endpoint", require-corp
+    test: report-only-four-reports.https.html
+  - subtest: 'coop reporting test reporting same origin with report-to to CROSS_ORIGIN
+      with , , , '
+    test: report-only-same-origin-report-to.https.html
+  - subtest: 'coop reporting test reporting same origin with report-to to CROSS_ORIGIN
+      with , , same-origin; report-to="coop-popup-report-only-endpoint", '
+    test: report-only-same-origin-report-to.https.html
+  - subtest: 'coop reporting test reporting same origin with report-to to SAME_ORIGIN
+      with , require-corp, same-origin; report-to="coop-popup-report-only-endpoint", '
+    test: report-only-same-origin.https.html
+  - subtest: coop reporting test reporting same origin with report-to to SAME_ORIGIN
+      with , , same-origin; report-to="coop-popup-report-only-endpoint", require-corp
+    test: report-only-same-origin.https.html
+  - test: reporting-coop-navigated-popup.https.html
+  - subtest: Open a popup to a document without COOP, then navigate it to a document
+      with
+    test: reporting-coop-navigated-popup.https.html
+  - subtest: verify remaining reports
+    test: reporting-coop-navigated-popup.https.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1681361
