@@ -13,3 +13,11 @@ links:
   - subtest: Textarea should have empty target range.
     test: input-events-get-target-ranges.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1680426
+- product: firefox
+  results:
+  - subtest: Event order and dataTransfer on contenteditable.
+    test: input-events-cut-paste.html
+  - subtest: preventDefault() should prevent DOM modification but allow clipboard
+      updates.
+    test: input-events-cut-paste.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1681432
