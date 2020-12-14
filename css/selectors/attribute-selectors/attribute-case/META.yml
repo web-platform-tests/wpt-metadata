@@ -4,6 +4,68 @@ links:
       results:
         - test: cssom.html
           subtest: '[foo="bar" s] insertRule'
+        - test: cssom.html
+          subtest: '[foo="bar" s] getting CSSRule#cssText'
+        - test: cssom.html
+          subtest: '[foo="bar" s] getting CSSStyleRule#selectorText'
+        - test: cssom.html
+          subtest: '[foo="bar" s] setting CSSStyleRule#selectorText'
+        - test: cssom.html
+          subtest: '[foo="bar" s] insertRule in @media'
+        - test: cssom.html
+          subtest: '[foo="bar" s] getting CSSRule#cssText in @media'
+        - test: cssom.html
+          subtest: '[foo="bar" s] getting CSSStyleRule#selectorText in @media'
+        - test: cssom.html
+          subtest: '[foo="bar" s] setting CSSStyleRule#selectorText in @media'
+        - test: cssom.html
+          subtest: '[foo="bar" /**/ s] insertRule'
+        - test: cssom.html
+          subtest: '[foo="bar" /**/ s] getting CSSRule#cssText'
+        - test: cssom.html
+          subtest: '[foo="bar" /**/ s] getting CSSStyleRule#selectorText'
+        - test: cssom.html
+          subtest: '[foo="bar" /**/ s] setting CSSStyleRule#selectorText'
+        - test: cssom.html
+          subtest: '[foo="bar" /**/ s] insertRule in @media'
+        - test: cssom.html
+          subtest: '[foo="bar" /**/ s] getting CSSRule#cssText in @media'
+        - test: cssom.html
+          subtest: '[foo="bar" /**/ s] getting CSSStyleRule#selectorText in @media'
+        - test: cssom.html
+          subtest: '[foo="bar" /**/ s] setting CSSStyleRule#selectorText in @media'
+        - test: cssom.html
+          subtest: '[foo="bar"/**/s] insertRule'
+        - test: cssom.html
+          subtest: '[foo="bar"/**/s] getting CSSRule#cssText'
+        - test: cssom.html
+          subtest: '[foo="bar"/**/s] getting CSSStyleRule#selectorText'
+        - test: cssom.html
+          subtest: '[foo="bar"/**/s] setting CSSStyleRule#selectorText'
+        - test: cssom.html
+          subtest: '[foo="bar"/**/s] insertRule in @media'
+        - test: cssom.html
+          subtest: '[foo="bar"/**/s] getting CSSRule#cssText in @media'
+        - test: cssom.html
+          subtest: '[foo="bar"/**/s] getting CSSStyleRule#selectorText in @media'
+        - test: cssom.html
+          subtest: '[foo="bar"/**/s] setting CSSStyleRule#selectorText in @media'
+        - test: cssom.html
+          subtest: '[*|foo="bar" s] insertRule'
+        - test: cssom.html
+          subtest: '[*|foo="bar" s] getting CSSRule#cssText'
+        - test: cssom.html
+          subtest: '[*|foo="bar" s] getting CSSStyleRule#selectorText'
+        - test: cssom.html
+          subtest: '[*|foo="bar" s] setting CSSStyleRule#selectorText'
+        - test: cssom.html
+          subtest: '[*|foo="bar" s] insertRule in @media'
+        - test: cssom.html
+          subtest: '[*|foo="bar" s] getting CSSRule#cssText in @media'
+        - test: cssom.html
+          subtest: '[*|foo="bar" s] setting CSSStyleRule#selectorText in @media'
+        - test: cssom.html
+          subtest: '[*|foo="bar" s] getting CSSStyleRule#selectorText in @media'
         - test: semantics.html
           subtest: '[foo=''bar'' s] <div foo="bar"> in standards mode'
         - test: semantics.html
@@ -892,65 +954,309 @@ links:
           subtest: '[foo|=''ä'' s] /* COMBINING in attribute */ <div foo="Ä"> with querySelector in XML'
         - test: semantics.html
           subtest: '[foo=''Ä'' s] /* COMBINING in attribute */ <div foo="ä"> in XML'
-        - test: cssom.html
-          subtest: '[foo="bar" s] getting CSSRule#cssText'
-        - test: cssom.html
-          subtest: '[foo="bar" s] getting CSSStyleRule#selectorText'
-        - test: cssom.html
-          subtest: '[foo="bar" s] setting CSSStyleRule#selectorText'
-        - test: cssom.html
-          subtest: '[foo="bar" s] insertRule in @media'
-        - test: cssom.html
-          subtest: '[foo="bar" s] getting CSSRule#cssText in @media'
-        - test: cssom.html
-          subtest: '[foo="bar" s] getting CSSStyleRule#selectorText in @media'
-        - test: cssom.html
-          subtest: '[foo="bar" s] setting CSSStyleRule#selectorText in @media'
-        - test: cssom.html
-          subtest: '[foo="bar" /**/ s] insertRule'
-        - test: cssom.html
-          subtest: '[foo="bar" /**/ s] getting CSSRule#cssText'
-        - test: cssom.html
-          subtest: '[foo="bar" /**/ s] getting CSSStyleRule#selectorText'
-        - test: cssom.html
-          subtest: '[foo="bar" /**/ s] setting CSSStyleRule#selectorText'
-        - test: cssom.html
-          subtest: '[foo="bar" /**/ s] insertRule in @media'
-        - test: cssom.html
-          subtest: '[foo="bar" /**/ s] getting CSSRule#cssText in @media'
-        - test: cssom.html
-          subtest: '[foo="bar" /**/ s] getting CSSStyleRule#selectorText in @media'
-        - test: cssom.html
-          subtest: '[foo="bar" /**/ s] setting CSSStyleRule#selectorText in @media'
-        - test: cssom.html
-          subtest: '[foo="bar"/**/s] insertRule'
-        - test: cssom.html
-          subtest: '[foo="bar"/**/s] getting CSSRule#cssText'
-        - test: cssom.html
-          subtest: '[foo="bar"/**/s] getting CSSStyleRule#selectorText'
-        - test: cssom.html
-          subtest: '[foo="bar"/**/s] setting CSSStyleRule#selectorText'
-        - test: cssom.html
-          subtest: '[foo="bar"/**/s] insertRule in @media'
-        - test: cssom.html
-          subtest: '[foo="bar"/**/s] getting CSSRule#cssText in @media'
-        - test: cssom.html
-          subtest: '[foo="bar"/**/s] getting CSSStyleRule#selectorText in @media'
-        - test: cssom.html
-          subtest: '[foo="bar"/**/s] setting CSSStyleRule#selectorText in @media'
-        - test: cssom.html
-          subtest: '[*|foo="bar" s] insertRule'
-        - test: cssom.html
-          subtest: '[*|foo="bar" s] getting CSSRule#cssText'
-        - test: cssom.html
-          subtest: '[*|foo="bar" s] getting CSSStyleRule#selectorText'
-        - test: cssom.html
-          subtest: '[*|foo="bar" s] setting CSSStyleRule#selectorText'
-        - test: cssom.html
-          subtest: '[*|foo="bar" s] insertRule in @media'
-        - test: cssom.html
-          subtest: '[*|foo="bar" s] getting CSSRule#cssText in @media'
-        - test: cssom.html
-          subtest: '[*|foo="bar" s] setting CSSStyleRule#selectorText in @media'
-        - test: cssom.html
-          subtest: '[*|foo="bar" s] getting CSSStyleRule#selectorText in @media'
+        - test: syntax.html
+          subtest: '[baz=''quux'' s] in standards mode'
+        - test: syntax.html
+          subtest: '[baz=''quux'' s] with querySelector in standards mode'
+        - test: syntax.html
+          subtest: '[baz=''quux'' S] in standards mode'
+        - test: syntax.html
+          subtest: '[baz=''quux'' S] with querySelector in standards mode'
+        - test: syntax.html
+          subtest: '[baz=quux s] in standards mode'
+        - test: syntax.html
+          subtest: '[baz=quux s] with querySelector in standards mode'
+        - test: syntax.html
+          subtest: '[baz="quux" s] in standards mode'
+        - test: syntax.html
+          subtest: '[baz="quux" s] with querySelector in standards mode'
+        - test: syntax.html
+          subtest: '[baz=''quux''s] in standards mode'
+        - test: syntax.html
+          subtest: '[baz=''quux''s] with querySelector in standards mode'
+        - test: syntax.html
+          subtest: '[baz=''quux''s ] in standards mode'
+        - test: syntax.html
+          subtest: '[baz=''quux''s ] with querySelector in standards mode'
+        - test: syntax.html
+          subtest: '[baz=''quux'' s ] in standards mode'
+        - test: syntax.html
+          subtest: '[baz=''quux'' s ] with querySelector in standards mode'
+        - test: syntax.html
+          subtest: '[baz=''quux'' /**/ s] in standards mode'
+        - test: syntax.html
+          subtest: '[baz=''quux'' /**/ s] with querySelector in standards mode'
+        - test: syntax.html
+          subtest: '[baz=''quux'' s /**/ ] in standards mode'
+        - test: syntax.html
+          subtest: '[baz=''quux'' s /**/ ] with querySelector in standards mode'
+        - test: syntax.html
+          subtest: '[baz=''quux''/**/s/**/] in standards mode'
+        - test: syntax.html
+          subtest: '[baz=''quux''/**/s/**/] with querySelector in standards mode'
+        - test: syntax.html
+          subtest: '[baz=quux/**/s] in standards mode'
+        - test: syntax.html
+          subtest: '[baz=quux/**/s] with querySelector in standards mode'
+        - test: syntax.html
+          subtest: "[baz='quux'\ts\t] /* \\t */ in standards mode"
+        - test: syntax.html
+          subtest: "[baz='quux'\ts\t] /* \\t */ with querySelector in standards mode"
+        - test: syntax.html
+          subtest: |-
+            [baz='quux'
+            s
+            ] /* \n */ in standards mode
+        - test: syntax.html
+          subtest: "[baz='quux'\rs\r] /* \\r */ in standards mode"
+        - test: syntax.html
+          subtest: |-
+            [baz='quux'
+            s
+            ] /* \n */ with querySelector in standards mode
+        - test: syntax.html
+          subtest: "[baz='quux'\rs\r] /* \\r */ with querySelector in standards mode"
+        - test: syntax.html
+          subtest: '[baz=''quux'' \s] in standards mode'
+        - test: syntax.html
+          subtest: '[baz=''quux'' \s] with querySelector in standards mode'
+        - test: syntax.html
+          subtest: '[baz=''quux'' \73] in standards mode'
+        - test: syntax.html
+          subtest: '[baz=''quux'' \73] with querySelector in standards mode'
+        - test: syntax.html
+          subtest: '[baz=''quux'' \53] in standards mode'
+        - test: syntax.html
+          subtest: '[baz~=''quux'' s] in standards mode'
+        - test: syntax.html
+          subtest: '[baz=''quux'' \53] with querySelector in standards mode'
+        - test: syntax.html
+          subtest: '[baz~=''quux'' s] with querySelector in standards mode'
+        - test: syntax.html
+          subtest: '[baz^=''quux'' s] in standards mode'
+        - test: syntax.html
+          subtest: '[baz^=''quux'' s] with querySelector in standards mode'
+        - test: syntax.html
+          subtest: '[baz$=''quux'' s] in standards mode'
+        - test: syntax.html
+          subtest: '[baz$=''quux'' s] with querySelector in standards mode'
+        - test: syntax.html
+          subtest: '[baz*=''quux'' s] in standards mode'
+        - test: syntax.html
+          subtest: '[baz*=''quux'' s] with querySelector in standards mode'
+        - test: syntax.html
+          subtest: '[baz|=''quux'' s] in standards mode'
+        - test: syntax.html
+          subtest: '[baz|=''quux'' s] with querySelector in standards mode'
+        - test: syntax.html
+          subtest: '[|baz=''quux'' s] with querySelector in standards mode'
+        - test: syntax.html
+          subtest: '[|baz=''quux'' s] in standards mode'
+        - test: syntax.html
+          subtest: '[*|baz=''quux'' s] in standards mode'
+        - test: syntax.html
+          subtest: '[*|baz=''quux'' s] with querySelector in standards mode'
+        - test: syntax.html
+          subtest: '[baz=''quux'' s] in quirks mode'
+        - test: syntax.html
+          subtest: '[baz=''quux'' s] with querySelector in quirks mode'
+        - test: syntax.html
+          subtest: '[baz=''quux'' S] in quirks mode'
+        - test: syntax.html
+          subtest: '[baz=''quux'' S] with querySelector in quirks mode'
+        - test: syntax.html
+          subtest: '[baz=quux s] in quirks mode'
+        - test: syntax.html
+          subtest: '[baz=quux s] with querySelector in quirks mode'
+        - test: syntax.html
+          subtest: '[baz="quux" s] in quirks mode'
+        - test: syntax.html
+          subtest: '[baz="quux" s] with querySelector in quirks mode'
+        - test: syntax.html
+          subtest: '[baz=''quux''s] in quirks mode'
+        - test: syntax.html
+          subtest: '[baz=''quux''s] with querySelector in quirks mode'
+        - test: syntax.html
+          subtest: '[baz=''quux''s ] in quirks mode'
+        - test: syntax.html
+          subtest: '[baz=''quux''s ] with querySelector in quirks mode'
+        - test: syntax.html
+          subtest: '[baz=''quux'' s ] in quirks mode'
+        - test: syntax.html
+          subtest: '[baz=''quux'' s ] with querySelector in quirks mode'
+        - test: syntax.html
+          subtest: '[baz=''quux'' /**/ s] in quirks mode'
+        - test: syntax.html
+          subtest: '[baz=''quux'' /**/ s] with querySelector in quirks mode'
+        - test: syntax.html
+          subtest: '[baz=''quux'' s /**/ ] in quirks mode'
+        - test: syntax.html
+          subtest: '[baz=''quux'' s /**/ ] with querySelector in quirks mode'
+        - test: syntax.html
+          subtest: '[baz=''quux''/**/s/**/] with querySelector in quirks mode'
+        - test: syntax.html
+          subtest: '[baz=''quux''/**/s/**/] in quirks mode'
+        - test: syntax.html
+          subtest: '[baz=quux/**/s] with querySelector in quirks mode'
+        - test: syntax.html
+          subtest: '[baz=quux/**/s] in quirks mode'
+        - test: syntax.html
+          subtest: "[baz='quux'\ts\t] /* \\t */ in quirks mode"
+        - test: syntax.html
+          subtest: "[baz='quux'\ts\t] /* \\t */ with querySelector in quirks mode"
+        - test: syntax.html
+          subtest: |-
+            [baz='quux'
+            s
+            ] /* \n */ in quirks mode
+        - test: syntax.html
+          subtest: |-
+            [baz='quux'
+            s
+            ] /* \n */ with querySelector in quirks mode
+        - test: syntax.html
+          subtest: "[baz='quux'\rs\r] /* \\r */ in quirks mode"
+        - test: syntax.html
+          subtest: "[baz='quux'\rs\r] /* \\r */ with querySelector in quirks mode"
+        - test: syntax.html
+          subtest: '[baz=''quux'' \s] in quirks mode'
+        - test: syntax.html
+          subtest: '[baz=''quux'' \s] with querySelector in quirks mode'
+        - test: syntax.html
+          subtest: '[baz=''quux'' \73] in quirks mode'
+        - test: syntax.html
+          subtest: '[baz=''quux'' \73] with querySelector in quirks mode'
+        - test: syntax.html
+          subtest: '[baz=''quux'' \53] in quirks mode'
+        - test: syntax.html
+          subtest: '[baz=''quux'' \53] with querySelector in quirks mode'
+        - test: syntax.html
+          subtest: '[baz~=''quux'' s] in quirks mode'
+        - test: syntax.html
+          subtest: '[baz~=''quux'' s] with querySelector in quirks mode'
+        - test: syntax.html
+          subtest: '[baz^=''quux'' s] in quirks mode'
+        - test: syntax.html
+          subtest: '[baz^=''quux'' s] with querySelector in quirks mode'
+        - test: syntax.html
+          subtest: '[baz$=''quux'' s] with querySelector in quirks mode'
+        - test: syntax.html
+          subtest: '[baz$=''quux'' s] in quirks mode'
+        - test: syntax.html
+          subtest: '[baz*=''quux'' s] in quirks mode'
+        - test: syntax.html
+          subtest: '[baz*=''quux'' s] with querySelector in quirks mode'
+        - test: syntax.html
+          subtest: '[baz|=''quux'' s] in quirks mode'
+        - test: syntax.html
+          subtest: '[baz|=''quux'' s] with querySelector in quirks mode'
+        - test: syntax.html
+          subtest: '[|baz=''quux'' s] in quirks mode'
+        - test: syntax.html
+          subtest: '[|baz=''quux'' s] with querySelector in quirks mode'
+        - test: syntax.html
+          subtest: '[*|baz=''quux'' s] in quirks mode'
+        - test: syntax.html
+          subtest: '[*|baz=''quux'' s] with querySelector in quirks mode'
+        - test: syntax.html
+          subtest: '[baz=''quux'' s] in XML'
+        - test: syntax.html
+          subtest: '[baz=''quux'' s] with querySelector in XML'
+        - test: syntax.html
+          subtest: '[baz=''quux'' S] in XML'
+        - test: syntax.html
+          subtest: '[baz=''quux'' S] with querySelector in XML'
+        - test: syntax.html
+          subtest: '[baz=quux s] in XML'
+        - test: syntax.html
+          subtest: '[baz=quux s] with querySelector in XML'
+        - test: syntax.html
+          subtest: '[baz="quux" s] in XML'
+        - test: syntax.html
+          subtest: '[baz="quux" s] with querySelector in XML'
+        - test: syntax.html
+          subtest: '[baz=''quux''s] in XML'
+        - test: syntax.html
+          subtest: '[baz=''quux''s] with querySelector in XML'
+        - test: syntax.html
+          subtest: '[baz=''quux''s ] in XML'
+        - test: syntax.html
+          subtest: '[baz=''quux''s ] with querySelector in XML'
+        - test: syntax.html
+          subtest: '[baz=''quux'' s ] in XML'
+        - test: syntax.html
+          subtest: '[baz=''quux'' s ] with querySelector in XML'
+        - test: syntax.html
+          subtest: '[baz=''quux'' /**/ s] in XML'
+        - test: syntax.html
+          subtest: '[baz=''quux'' /**/ s] with querySelector in XML'
+        - test: syntax.html
+          subtest: '[baz=''quux'' s /**/ ] in XML'
+        - test: syntax.html
+          subtest: '[baz=''quux'' s /**/ ] with querySelector in XML'
+        - test: syntax.html
+          subtest: '[baz=''quux''/**/s/**/] in XML'
+        - test: syntax.html
+          subtest: '[baz=''quux''/**/s/**/] with querySelector in XML'
+        - test: syntax.html
+          subtest: '[baz=quux/**/s] in XML'
+        - test: syntax.html
+          subtest: '[baz=quux/**/s] with querySelector in XML'
+        - test: syntax.html
+          subtest: "[baz='quux'\ts\t] /* \\t */ in XML"
+        - test: syntax.html
+          subtest: "[baz='quux'\ts\t] /* \\t */ with querySelector in XML"
+        - test: syntax.html
+          subtest: |-
+            [baz='quux'
+            s
+            ] /* \n */ in XML
+        - test: syntax.html
+          subtest: |-
+            [baz='quux'
+            s
+            ] /* \n */ with querySelector in XML
+        - test: syntax.html
+          subtest: "[baz='quux'\rs\r] /* \\r */ in XML"
+        - test: syntax.html
+          subtest: "[baz='quux'\rs\r] /* \\r */ with querySelector in XML"
+        - test: syntax.html
+          subtest: '[baz=''quux'' \s] in XML'
+        - test: syntax.html
+          subtest: '[baz=''quux'' \s] with querySelector in XML'
+        - test: syntax.html
+          subtest: '[baz=''quux'' \73] in XML'
+        - test: syntax.html
+          subtest: '[baz=''quux'' \73] with querySelector in XML'
+        - test: syntax.html
+          subtest: '[baz=''quux'' \53] in XML'
+        - test: syntax.html
+          subtest: '[baz=''quux'' \53] with querySelector in XML'
+        - test: syntax.html
+          subtest: '[baz~=''quux'' s] in XML'
+        - test: syntax.html
+          subtest: '[baz~=''quux'' s] with querySelector in XML'
+        - test: syntax.html
+          subtest: '[baz^=''quux'' s] in XML'
+        - test: syntax.html
+          subtest: '[baz^=''quux'' s] with querySelector in XML'
+        - test: syntax.html
+          subtest: '[baz$=''quux'' s] in XML'
+        - test: syntax.html
+          subtest: '[baz$=''quux'' s] with querySelector in XML'
+        - test: syntax.html
+          subtest: '[baz*=''quux'' s] in XML'
+        - test: syntax.html
+          subtest: '[baz*=''quux'' s] with querySelector in XML'
+        - test: syntax.html
+          subtest: '[baz|=''quux'' s] in XML'
+        - test: syntax.html
+          subtest: '[baz|=''quux'' s] with querySelector in XML'
+        - test: syntax.html
+          subtest: '[|baz=''quux'' s] in XML'
+        - test: syntax.html
+          subtest: '[|baz=''quux'' s] with querySelector in XML'
+        - test: syntax.html
+          subtest: '[*|baz=''quux'' s] in XML'
+        - test: syntax.html
+          subtest: '[*|baz=''quux'' s] with querySelector in XML'
