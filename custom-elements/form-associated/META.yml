@@ -1,0 +1,42 @@
+links:
+- product: firefox
+  results:
+  - subtest: Single value - empty name exists
+    test: ElementInternals-setFormValue.html
+  - subtest: Single value - Non-empty name exists
+    test: ElementInternals-setFormValue.html
+  - subtest: Null value should submit nothing
+    test: ElementInternals-setFormValue.html
+  - subtest: Multiple values - name content attribute is ignored
+    test: ElementInternals-setFormValue.html
+  - subtest: setFormValue with an empty FormData should submit nothing
+    test: ElementInternals-setFormValue.html
+  - subtest: Newline normalization - \n in name
+    test: ElementInternals-setFormValue.html
+  - subtest: Newline normalization - \r in name
+    test: ElementInternals-setFormValue.html
+  - subtest: Newline normalization - \r\n in name
+    test: ElementInternals-setFormValue.html
+  - subtest: Newline normalization - \n\r in name
+    test: ElementInternals-setFormValue.html
+  - subtest: Newline normalization - \n in value
+    test: ElementInternals-setFormValue.html
+  - subtest: Newline normalization - \r in value
+    test: ElementInternals-setFormValue.html
+  - subtest: Newline normalization - \r\n in value
+    test: ElementInternals-setFormValue.html
+  - subtest: Newline normalization - \n\r in value
+    test: ElementInternals-setFormValue.html
+  - subtest: Newline normalization - \n in filename
+    test: ElementInternals-setFormValue.html
+  - subtest: Newline normalization - \r in filename
+    test: ElementInternals-setFormValue.html
+  - subtest: Newline normalization - \r\n in filename
+    test: ElementInternals-setFormValue.html
+  - subtest: Newline normalization - \n\r in filename
+    test: ElementInternals-setFormValue.html
+  - subtest: Newline normalization - \r\n in FormData name
+    test: ElementInternals-setFormValue.html
+  - subtest: Newline normalization - \r\n in FormData value
+    test: ElementInternals-setFormValue.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1682205
