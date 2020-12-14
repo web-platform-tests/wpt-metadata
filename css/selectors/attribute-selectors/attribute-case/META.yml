@@ -892,3 +892,65 @@ links:
           subtest: '[foo|=''ä'' s] /* COMBINING in attribute */ <div foo="Ä"> with querySelector in XML'
         - test: semantics.html
           subtest: '[foo=''Ä'' s] /* COMBINING in attribute */ <div foo="ä"> in XML'
+        - test: cssom.html
+          subtest: '[foo="bar" s] getting CSSRule#cssText'
+        - test: cssom.html
+          subtest: '[foo="bar" s] getting CSSStyleRule#selectorText'
+        - test: cssom.html
+          subtest: '[foo="bar" s] setting CSSStyleRule#selectorText'
+        - test: cssom.html
+          subtest: '[foo="bar" s] insertRule in @media'
+        - test: cssom.html
+          subtest: '[foo="bar" s] getting CSSRule#cssText in @media'
+        - test: cssom.html
+          subtest: '[foo="bar" s] getting CSSStyleRule#selectorText in @media'
+        - test: cssom.html
+          subtest: '[foo="bar" s] setting CSSStyleRule#selectorText in @media'
+        - test: cssom.html
+          subtest: '[foo="bar" /**/ s] insertRule'
+        - test: cssom.html
+          subtest: '[foo="bar" /**/ s] getting CSSRule#cssText'
+        - test: cssom.html
+          subtest: '[foo="bar" /**/ s] getting CSSStyleRule#selectorText'
+        - test: cssom.html
+          subtest: '[foo="bar" /**/ s] setting CSSStyleRule#selectorText'
+        - test: cssom.html
+          subtest: '[foo="bar" /**/ s] insertRule in @media'
+        - test: cssom.html
+          subtest: '[foo="bar" /**/ s] getting CSSRule#cssText in @media'
+        - test: cssom.html
+          subtest: '[foo="bar" /**/ s] getting CSSStyleRule#selectorText in @media'
+        - test: cssom.html
+          subtest: '[foo="bar" /**/ s] setting CSSStyleRule#selectorText in @media'
+        - test: cssom.html
+          subtest: '[foo="bar"/**/s] insertRule'
+        - test: cssom.html
+          subtest: '[foo="bar"/**/s] getting CSSRule#cssText'
+        - test: cssom.html
+          subtest: '[foo="bar"/**/s] getting CSSStyleRule#selectorText'
+        - test: cssom.html
+          subtest: '[foo="bar"/**/s] setting CSSStyleRule#selectorText'
+        - test: cssom.html
+          subtest: '[foo="bar"/**/s] insertRule in @media'
+        - test: cssom.html
+          subtest: '[foo="bar"/**/s] getting CSSRule#cssText in @media'
+        - test: cssom.html
+          subtest: '[foo="bar"/**/s] getting CSSStyleRule#selectorText in @media'
+        - test: cssom.html
+          subtest: '[foo="bar"/**/s] setting CSSStyleRule#selectorText in @media'
+        - test: cssom.html
+          subtest: '[*|foo="bar" s] insertRule'
+        - test: cssom.html
+          subtest: '[*|foo="bar" s] getting CSSRule#cssText'
+        - test: cssom.html
+          subtest: '[*|foo="bar" s] getting CSSStyleRule#selectorText'
+        - test: cssom.html
+          subtest: '[*|foo="bar" s] setting CSSStyleRule#selectorText'
+        - test: cssom.html
+          subtest: '[*|foo="bar" s] insertRule in @media'
+        - test: cssom.html
+          subtest: '[*|foo="bar" s] getting CSSRule#cssText in @media'
+        - test: cssom.html
+          subtest: '[*|foo="bar" s] setting CSSStyleRule#selectorText in @media'
+        - test: cssom.html
+          subtest: '[*|foo="bar" s] getting CSSStyleRule#selectorText in @media'
