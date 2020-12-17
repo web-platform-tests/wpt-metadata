@@ -78,11 +78,16 @@ links:
     test: AddEventListenerOptions-signal.any.worker.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1680530
 - product: chrome
-  url: https://bugs.chromium.org/p/chromium/issues/detail?id=826702
   results:
-  - test: relatedTarget.window.html
-    subtest: Retarget a shadow-tree relatedTarget
-  - test: relatedTarget.window.html
-    subtest: Reset targets on early return
-  - test: relatedTarget.window.html
-    subtest: Reset targets before activation behavior
+  - subtest: Retarget a shadow-tree relatedTarget
+    test: relatedTarget.window.html
+  - subtest: Reset targets on early return
+    test: relatedTarget.window.html
+  - subtest: Reset targets before activation behavior
+    test: relatedTarget.window.html
+  url: https://bugs.chromium.org/p/chromium/issues/detail?id=826702
+- product: firefox
+  results:
+  - subtest: Event-stopPropagation-cancel-bubbling
+    test: Event-stopPropagation-cancel-bubbling.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1683163
