@@ -1200,3 +1200,11 @@ links:
   - subtest: 'TextMetrics interface: attribute ideographicBaseline'
     test: idlharness.worker.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1680298
+- product: firefox
+  results:
+  - subtest: 'Window interface: attribute originAgentCluster'
+    test: idlharness.https.html?include=(Document|Window)
+  - subtest: 'Window interface: window must inherit property "originAgentCluster"
+      with the proper type'
+    test: idlharness.https.html?include=(Document|Window)
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1683909
