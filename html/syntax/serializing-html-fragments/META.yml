@@ -1,0 +1,16 @@
+links:
+- product: firefox
+  results:
+  - subtest: DOMParser.parseFromString
+    test: escaping.html
+  - subtest: template.innerHTML
+    test: escaping.html
+  - subtest: document.implementation.createHTMLDocument and innerHTML
+    test: escaping.html
+  - subtest: document.implementation.createHTMLDocument and createContextualFragment
+    test: escaping.html
+  - subtest: document.implementation.createHTMLDocument and document.write
+    test: escaping.html
+  - subtest: XMLHttpRequest
+    test: escaping.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1684130
