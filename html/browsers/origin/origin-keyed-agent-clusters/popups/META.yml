@@ -1,0 +1,64 @@
+links:
+- product: firefox
+  results:
+  - subtest: messageerror event must occur
+    test: opener-no-openee-yes-port.sub.https.html
+  - subtest: setting document.domain must not give sync access
+    test: opener-no-openee-yes-port.sub.https.html
+  - subtest: 'opener: originAgentCluster must equal false'
+    test: opener-no-openee-yes-port.sub.https.html
+  - subtest: 'openee: originAgentCluster must equal true'
+    test: opener-no-openee-yes-port.sub.https.html
+  - subtest: 'opener: originAgentCluster must equal false'
+    test: opener-no-openee-yes-same.sub.https.html
+  - subtest: 'openee: originAgentCluster must equal false'
+    test: opener-no-openee-yes-same.sub.https.html
+  - subtest: messageerror event must occur
+    test: opener-no-openee-yes-subdomain.sub.https.html
+  - subtest: setting document.domain must not give sync access
+    test: opener-no-openee-yes-subdomain.sub.https.html
+  - subtest: 'opener: originAgentCluster must equal false'
+    test: opener-no-openee-yes-subdomain.sub.https.html
+  - subtest: 'openee: originAgentCluster must equal true'
+    test: opener-no-openee-yes-subdomain.sub.https.html
+  - subtest: messageerror event must occur
+    test: opener-yes-openee-no-port.sub.https.html
+  - subtest: setting document.domain must not give sync access
+    test: opener-yes-openee-no-port.sub.https.html
+  - subtest: 'opener: originAgentCluster must equal true'
+    test: opener-yes-openee-no-port.sub.https.html
+  - subtest: 'openee: originAgentCluster must equal false'
+    test: opener-yes-openee-no-port.sub.https.html
+  - subtest: 'opener: originAgentCluster must equal true'
+    test: opener-yes-openee-no-same.sub.https.html
+  - subtest: 'openee: originAgentCluster must equal true'
+    test: opener-yes-openee-no-same.sub.https.html
+  - subtest: messageerror event must occur
+    test: opener-yes-openee-no-subdomain.sub.https.html
+  - subtest: setting document.domain must not give sync access
+    test: opener-yes-openee-no-subdomain.sub.https.html
+  - subtest: 'opener: originAgentCluster must equal true'
+    test: opener-yes-openee-no-subdomain.sub.https.html
+  - subtest: 'openee: originAgentCluster must equal false'
+    test: opener-yes-openee-no-subdomain.sub.https.html
+  - subtest: 'opener: originAgentCluster must equal true'
+    test: opener-yes-openee-yes-same.sub.https.html
+  - subtest: 'openee: originAgentCluster must equal true'
+    test: opener-yes-openee-yes-same.sub.https.html
+  - subtest: messageerror event must occur
+    test: opener-yes-openee-yes-subdomain.sub.https.html
+  - subtest: setting document.domain must not give sync access
+    test: opener-yes-openee-yes-subdomain.sub.https.html
+  - subtest: 'opener: originAgentCluster must equal true'
+    test: opener-yes-openee-yes-subdomain.sub.https.html
+  - subtest: 'openee: originAgentCluster must equal true'
+    test: opener-yes-openee-yes-subdomain.sub.https.html
+  - subtest: messageerror event must occur
+    test: opener-yes-openee-yes-port.sub.https.html
+  - subtest: setting document.domain must not give sync access
+    test: opener-yes-openee-yes-port.sub.https.html
+  - subtest: 'opener: originAgentCluster must equal true'
+    test: opener-yes-openee-yes-port.sub.https.html
+  - subtest: 'openee: originAgentCluster must equal true'
+    test: opener-yes-openee-yes-port.sub.https.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1686555

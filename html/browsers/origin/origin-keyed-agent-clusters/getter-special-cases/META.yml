@@ -1,0 +1,30 @@
+links:
+- product: firefox
+  results:
+  - subtest: originAgentCluster must equal true
+    test: csp-sandbox-no.https.html
+  - subtest: originAgentCluster must equal true
+    test: csp-sandbox-yes.https.html
+  - subtest: originAgentCluster must equal true
+    test: data-to-javascript-no.https.html
+  - subtest: originAgentCluster must equal true
+    test: data-to-javascript-yes.https.html
+  - subtest: 'data: URL child: originAgentCluster must equal true'
+    test: data-url-no.https.html
+  - subtest: 'data: URL child: originAgentCluster must equal true'
+    test: data-url-yes.https.html
+  - subtest: 'data: URL child: originAgentCluster must equal true'
+    test: javascript-url-no.https.html
+  - subtest: 'data: URL child: originAgentCluster must equal true'
+    test: javascript-url-yes.https.html
+  - subtest: Removing the iframe does not change originAgentCluster
+    test: removed-iframe.sub.https.html
+  - subtest: originAgentCluster must equal true
+    test: sandboxed-iframe-no.https.html
+  - subtest: originAgentCluster must equal true
+    test: sandboxed-iframe-yes.https.html
+  - subtest: originAgentCluster must equal false
+    test: sandboxed-same-origin-iframe-no.https.html
+  - subtest: originAgentCluster must equal true
+    test: sandboxed-same-origin-iframe-yes.https.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1686555

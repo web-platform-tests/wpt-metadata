@@ -1,0 +1,102 @@
+links:
+- product: firefox
+  results:
+  - subtest: 'before parent: originAgentCluster must equal false'
+    test: parent-no-1-no-same-2-yes-port.sub.https.html
+  - subtest: 'before child: originAgentCluster must equal false'
+    test: parent-no-1-no-same-2-yes-port.sub.https.html
+  - subtest: 'After: parent to child: messageerror event must occur'
+    test: parent-no-1-no-same-2-yes-port.sub.https.html
+  - subtest: 'After: parent to child: setting document.domain must not give sync access'
+    test: parent-no-1-no-same-2-yes-port.sub.https.html
+  - subtest: 'after parent: originAgentCluster must equal false'
+    test: parent-no-1-no-same-2-yes-port.sub.https.html
+  - subtest: 'after child: originAgentCluster must equal true'
+    test: parent-no-1-no-same-2-yes-port.sub.https.html
+  - subtest: 'before parent: originAgentCluster must equal false'
+    test: parent-no-1-no-same-2-yes-subdomain.sub.https.html
+  - subtest: 'before child: originAgentCluster must equal false'
+    test: parent-no-1-no-same-2-yes-subdomain.sub.https.html
+  - subtest: 'After: parent to child: messageerror event must occur'
+    test: parent-no-1-no-same-2-yes-subdomain.sub.https.html
+  - subtest: 'After: parent to child: setting document.domain must not give sync access'
+    test: parent-no-1-no-same-2-yes-subdomain.sub.https.html
+  - subtest: 'after parent: originAgentCluster must equal false'
+    test: parent-no-1-no-same-2-yes-subdomain.sub.https.html
+  - subtest: 'after child: originAgentCluster must equal true'
+    test: parent-no-1-no-same-2-yes-subdomain.sub.https.html
+  - subtest: 'before parent: originAgentCluster must equal false'
+    test: parent-no-1-no-subdomain-2-yes-subdomain.sub.https.html
+  - subtest: 'before child: originAgentCluster must equal false'
+    test: parent-no-1-no-subdomain-2-yes-subdomain.sub.https.html
+  - subtest: 'after parent: originAgentCluster must equal false'
+    test: parent-no-1-no-subdomain-2-yes-subdomain.sub.https.html
+  - subtest: 'after child: originAgentCluster must equal false'
+    test: parent-no-1-no-subdomain-2-yes-subdomain.sub.https.html
+  - subtest: 'before parent: originAgentCluster must equal false'
+    test: parent-no-1-no-subdomain-2-yes-subdomain2.sub.https.html
+  - subtest: 'before child: originAgentCluster must equal false'
+    test: parent-no-1-no-subdomain-2-yes-subdomain2.sub.https.html
+  - subtest: 'After: parent to child: messageerror event must occur'
+    test: parent-no-1-no-subdomain-2-yes-subdomain2.sub.https.html
+  - subtest: 'After: parent to child: setting document.domain must not give sync access'
+    test: parent-no-1-no-subdomain-2-yes-subdomain2.sub.https.html
+  - subtest: 'after parent: originAgentCluster must equal false'
+    test: parent-no-1-no-subdomain-2-yes-subdomain2.sub.https.html
+  - subtest: 'after child: originAgentCluster must equal true'
+    test: parent-no-1-no-subdomain-2-yes-subdomain2.sub.https.html
+  - subtest: 'Before: parent to child: messageerror event must occur'
+    test: parent-no-1-subdomain-yes-2-subdomain2-no.sub.https.html
+  - subtest: 'Before: parent to child: setting document.domain must not give sync
+      access'
+    test: parent-no-1-subdomain-yes-2-subdomain2-no.sub.https.html
+  - subtest: 'before parent: originAgentCluster must equal false'
+    test: parent-no-1-subdomain-yes-2-subdomain2-no.sub.https.html
+  - subtest: 'before child: originAgentCluster must equal true'
+    test: parent-no-1-subdomain-yes-2-subdomain2-no.sub.https.html
+  - subtest: 'after parent: originAgentCluster must equal false'
+    test: parent-no-1-subdomain-yes-2-subdomain2-no.sub.https.html
+  - subtest: 'after child: originAgentCluster must equal false'
+    test: parent-no-1-subdomain-yes-2-subdomain2-no.sub.https.html
+  - subtest: 'Before: parent to child: messageerror event must occur'
+    test: parent-no-1-yes-subdomain-2-no-subdomain.sub.https.html
+  - subtest: 'Before: parent to child: setting document.domain must not give sync
+      access'
+    test: parent-no-1-yes-subdomain-2-no-subdomain.sub.https.html
+  - subtest: 'before parent: originAgentCluster must equal false'
+    test: parent-no-1-yes-subdomain-2-no-subdomain.sub.https.html
+  - subtest: 'before child: originAgentCluster must equal true'
+    test: parent-no-1-yes-subdomain-2-no-subdomain.sub.https.html
+  - subtest: 'After: parent to child: messageerror event must occur'
+    test: parent-no-1-yes-subdomain-2-no-subdomain.sub.https.html
+  - subtest: 'After: parent to child: setting document.domain must not give sync access'
+    test: parent-no-1-yes-subdomain-2-no-subdomain.sub.https.html
+  - subtest: 'after parent: originAgentCluster must equal false'
+    test: parent-no-1-yes-subdomain-2-no-subdomain.sub.https.html
+  - subtest: 'after child: originAgentCluster must equal true'
+    test: parent-no-1-yes-subdomain-2-no-subdomain.sub.https.html
+  - subtest: 'before parent: originAgentCluster must equal true'
+    test: parent-yes-1-no-same-2-no-port.sub.https.html
+  - subtest: 'before child: originAgentCluster must equal true'
+    test: parent-yes-1-no-same-2-no-port.sub.https.html
+  - subtest: 'After: parent to child: messageerror event must occur'
+    test: parent-yes-1-no-same-2-no-port.sub.https.html
+  - subtest: 'After: parent to child: setting document.domain must not give sync access'
+    test: parent-yes-1-no-same-2-no-port.sub.https.html
+  - subtest: 'after parent: originAgentCluster must equal true'
+    test: parent-yes-1-no-same-2-no-port.sub.https.html
+  - subtest: 'after child: originAgentCluster must equal false'
+    test: parent-yes-1-no-same-2-no-port.sub.https.html
+  - subtest: 'before parent: originAgentCluster must equal true'
+    test: parent-yes-1-no-same-2-no-subdomain.sub.https.html
+  - subtest: 'before child: originAgentCluster must equal true'
+    test: parent-yes-1-no-same-2-no-subdomain.sub.https.html
+  - subtest: 'After: parent to child: messageerror event must occur'
+    test: parent-yes-1-no-same-2-no-subdomain.sub.https.html
+  - subtest: 'After: parent to child: setting document.domain must not give sync access'
+    test: parent-yes-1-no-same-2-no-subdomain.sub.https.html
+  - subtest: 'after parent: originAgentCluster must equal true'
+    test: parent-yes-1-no-same-2-no-subdomain.sub.https.html
+  - subtest: 'after child: originAgentCluster must equal false'
+    test: parent-yes-1-no-same-2-no-subdomain.sub.https.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1686555
