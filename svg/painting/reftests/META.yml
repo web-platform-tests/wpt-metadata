@@ -1,6 +1,11 @@
 links:
-- product: chrome
-  url: crbug.com/1056492
-  results:
-  - test: marker-path-001.svg
-    status: FAIL
+    - product: chrome
+      url: crbug.com/1056492
+      results:
+        - test: marker-path-001.svg
+          status: FAIL
+    - product: chrome
+      url: https://crbug.com/367737
+      results:
+        - test: paint-context-002.svg
+          subtest: Harness status
