@@ -1,179 +1,183 @@
 links:
-- product: firefox
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1201160
-  results:
-  - test: fetch-request-css-base-url.https.html
-- product: firefox
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1532331
-  results:
-  - test: fetch-request-css-images.https.html
-- product: safari
-  url: https://bugs.webkit.org/show_bug.cgi?id=182176
-  results:
-  - test: appcache-ordering-main.https.html
-    status: FAIL
-- product: safari
-  url: https://bugs.webkit.org/show_bug.cgi?id=201665
-  results:
-  - test: fetch-canvas-tainting-video.https.html
-    status: FAIL
-- product: safari
-  url: https://bugs.webkit.org/show_bug.cgi?id=201666
-  results:
-  - test: fetch-canvas-tainting-video-with-range-request.https.html
-    status: FAIL
-- product: webkitgtk
-  url: https://bugs.webkit.org/show_bug.cgi?id=175419
-  results:
-  - test: registration-script.https.html
-    status: FAIL
-- product: webkitgtk
-  url: https://bugs.webkit.org/show_bug.cgi?id=201665
-  results:
-  - test: fetch-canvas-tainting-video.https.html
-    status: FAIL
-- product: webkitgtk
-  url: https://bugs.webkit.org/show_bug.cgi?id=201666
-  results:
-  - test: fetch-canvas-tainting-video-with-range-request.https.html
-    status: TIMEOUT
-- product: chrome
-  url: crbug.com/595993
-  results:
-  - test: fetch-header-visibility.https.html
-    status: FAIL
-- product: chrome
-  url: crbug.com/824647
-  results:
-  - test: update-registration-with-type.https.html
-    status: FAIL
-- product: chrome
-  url: crbug.com/807720
-  results:
-  - test: local-url-inherit-controller.https.html
-    status: FAIL
-- product: chrome
-  url: crbug.com/617886
-  results:
-  - test: update-recovery.https.html
-    status: FAIL
-- product: chrome
-  url: crbug.com/889798
-  results:
-  - test: import-scripts-redirect.https.html
-    status: FAIL
-- product: chrome
-  url: crbug.com/876223
-  results:
-  - test: navigation-redirect.https.html
-    status: FAIL
-- product: chrome
-  url: crbug.com/854058
-  results:
-  - test: detached-context.https.html
-    status: FAIL
-- product: chrome
-  url: crbug.com/751959
-  results:
-  - test: clients-matchall-client-types.https.html
-    status: FAIL
-- product: chrome
-  url: crbug.com/1014676
-  results:
-  - test: fetch-waits-for-activate.https.html
-    status: FAIL
-- product: chrome
-  url: crbug.com/969740
-  results:
-  - test: registration-updateviacache.https.html
-    status: FAIL
-- product: chrome
-  url: crbug.com/988582
-  results:
-  - test: unregister-then-register-new-script.https.html
-    status: FAIL
-- product: chrome
-  url: https://crbug.com/1111010
-  results:
-  - test: fetch-event-redirect.https.html
-    subtest: Non-navigation, follow redirect, cors mode Request redirected to same-origin with credentials should succeed interception and response should be redirected
-  - test: fetch-event-redirect.https.html
-    subtest: Non-navigation, follow redirect, same-origin mode Request redirected to same-origin with credentials should succeed interception and response should be redirected
-  - test: fetch-event-redirect.https.html
-    subtest: Non-navigation, follow redirect, no-cors mode Request redirected to same-origin with credentials should succeed interception and response should be redirected
-  - test: fetch-event-redirect.https.html
-    subtest: Non-navigation, follow redirect, no-cors mode Request redirected to no-cors with credentials should succeed interception and response should not be redirected
-  - test: fetch-event-redirect.https.html
-    subtest: Non-navigation, follow redirect, no-cors mode Request redirected to cors with credentials should succeed interception and response should not be redirected
-- product: chrome
-  url: https://crbug.com/1111012
-  results:
-  - test: navigate-window.https.html
-    subtest: Clients.matchAll() should not show an old window as controlled after it navigates.
-- product: chrome
-  url: https://crbug.com/850825
-  results:
-  - test: fetch-event.https.html
-    subtest: Service Worker responds to fetch event with the correct integrity_metadata
-- product: chrome
-  url: https://crbug.com/1111016
-  results:
-  - test: fetch-request-xhr.https.html
-    subtest: event.request has the expected headers for same-origin GET.
-  - test: fetch-request-xhr.https.html
-    subtest: event.request has the expected headers for same-origin POST.
-  - test: fetch-request-xhr.https.html
-    subtest: event.request has the expected headers for cross-origin GET.
-  - test: fetch-request-xhr.https.html
-    subtest: event.request has the expected headers for cross-origin POST.
-- product: chrome
-  url: https://crbug.com/1111017
-  results:
-  - test: ready.https.window.html
-    subtest: resolve ready after unregistering
-- product: chrome
-  url: https://crbug.com/595993
-  results:
-  - test: request-end-to-end.https.html
-    subtest: Test FetchEvent.request passed to onfetch
-- product: chrome
-  url: https://crbug.com/652994
-  results:
-  - test: interface-requirements-sw.https.html
-    subtest: Event constructors
-- product: chrome
-  url: https://crbug.com/1111021
-  results:
-  - test: unregister-then-register.https.html
-    subtest: Unregister then register does not resolve to the original value even if the registration is in use.
-  - test: unregister-then-register.https.html
-    subtest: Unregister then register does not resurrect the registration
-- product: chrome
-  url: https://crbug.com/582750
-  results:
-  - test: appcache-ordering-main.https.html
-  - test: claim-fetch-with-appcache.https.html
-- product: chrome
-  url: crbug.com/805225
-  results:
-  - test: unregister-then-register.https.html
-    subtest: Unregister then register does not resolve to the original value even if the registration is in use.
-  - test: unregister-then-register.https.html
-    subtest: Unregister then register does not resurrect the registration
-- product: edge
-  url: crbug.com/805225
-  results:
-  - test: unregister-then-register.https.html
-    subtest: Unregister then register does not resolve to the original value even if the registration is in use.
-  - test: unregister-then-register.https.html
-    subtest: Unregister then register does not resurrect the registration
-- product: chrome
-  url: crbug.com/1072298
-  results:
-  - test: next-hop-protocol.https.html
-    subtest: nextHopProtocol reports H2 correctly when routed via a service worker.
-- product: edge
-  url: crbug.com/1072298
-  results:
-  - test: next-hop-protocol.https.html
-    subtest: nextHopProtocol reports H2 correctly when routed via a service worker.
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1201160
+      results:
+        - test: fetch-request-css-base-url.https.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1532331
+      results:
+        - test: fetch-request-css-images.https.html
+    - product: safari
+      url: https://bugs.webkit.org/show_bug.cgi?id=182176
+      results:
+        - test: appcache-ordering-main.https.html
+          status: FAIL
+    - product: safari
+      url: https://bugs.webkit.org/show_bug.cgi?id=201665
+      results:
+        - test: fetch-canvas-tainting-video.https.html
+          status: FAIL
+    - product: safari
+      url: https://bugs.webkit.org/show_bug.cgi?id=201666
+      results:
+        - test: fetch-canvas-tainting-video-with-range-request.https.html
+          status: FAIL
+    - product: webkitgtk
+      url: https://bugs.webkit.org/show_bug.cgi?id=175419
+      results:
+        - test: registration-script.https.html
+          status: FAIL
+    - product: webkitgtk
+      url: https://bugs.webkit.org/show_bug.cgi?id=201665
+      results:
+        - test: fetch-canvas-tainting-video.https.html
+          status: FAIL
+    - product: webkitgtk
+      url: https://bugs.webkit.org/show_bug.cgi?id=201666
+      results:
+        - test: fetch-canvas-tainting-video-with-range-request.https.html
+          status: TIMEOUT
+    - product: chrome
+      url: crbug.com/595993
+      results:
+        - test: fetch-header-visibility.https.html
+          status: FAIL
+    - product: chrome
+      url: crbug.com/824647
+      results:
+        - test: update-registration-with-type.https.html
+          status: FAIL
+    - product: chrome
+      url: crbug.com/807720
+      results:
+        - test: local-url-inherit-controller.https.html
+          status: FAIL
+    - product: chrome
+      url: crbug.com/617886
+      results:
+        - test: update-recovery.https.html
+          status: FAIL
+    - product: chrome
+      url: crbug.com/889798
+      results:
+        - test: import-scripts-redirect.https.html
+          status: FAIL
+    - product: chrome
+      url: crbug.com/876223
+      results:
+        - test: navigation-redirect.https.html
+          status: FAIL
+    - product: chrome
+      url: crbug.com/854058
+      results:
+        - test: detached-context.https.html
+          status: FAIL
+    - product: chrome
+      url: crbug.com/751959
+      results:
+        - test: clients-matchall-client-types.https.html
+          status: FAIL
+    - product: chrome
+      url: crbug.com/1014676
+      results:
+        - test: fetch-waits-for-activate.https.html
+          status: FAIL
+    - product: chrome
+      url: crbug.com/969740
+      results:
+        - test: registration-updateviacache.https.html
+          status: FAIL
+    - product: chrome
+      url: crbug.com/988582
+      results:
+        - test: unregister-then-register-new-script.https.html
+          status: FAIL
+    - product: chrome
+      url: https://crbug.com/1111010
+      results:
+        - test: fetch-event-redirect.https.html
+          subtest: Non-navigation, follow redirect, cors mode Request redirected to same-origin with credentials should succeed interception and response should be redirected
+        - test: fetch-event-redirect.https.html
+          subtest: Non-navigation, follow redirect, same-origin mode Request redirected to same-origin with credentials should succeed interception and response should be redirected
+        - test: fetch-event-redirect.https.html
+          subtest: Non-navigation, follow redirect, no-cors mode Request redirected to same-origin with credentials should succeed interception and response should be redirected
+        - test: fetch-event-redirect.https.html
+          subtest: Non-navigation, follow redirect, no-cors mode Request redirected to no-cors with credentials should succeed interception and response should not be redirected
+        - test: fetch-event-redirect.https.html
+          subtest: Non-navigation, follow redirect, no-cors mode Request redirected to cors with credentials should succeed interception and response should not be redirected
+    - product: chrome
+      url: https://crbug.com/1111012
+      results:
+        - test: navigate-window.https.html
+          subtest: Clients.matchAll() should not show an old window as controlled after it navigates.
+    - product: chrome
+      url: https://crbug.com/850825
+      results:
+        - test: fetch-event.https.html
+          subtest: Service Worker responds to fetch event with the correct integrity_metadata
+    - product: chrome
+      url: https://crbug.com/1111016
+      results:
+        - test: fetch-request-xhr.https.html
+          subtest: event.request has the expected headers for same-origin GET.
+        - test: fetch-request-xhr.https.html
+          subtest: event.request has the expected headers for same-origin POST.
+        - test: fetch-request-xhr.https.html
+          subtest: event.request has the expected headers for cross-origin GET.
+        - test: fetch-request-xhr.https.html
+          subtest: event.request has the expected headers for cross-origin POST.
+    - product: chrome
+      url: https://crbug.com/1111017
+      results:
+        - test: ready.https.window.html
+          subtest: resolve ready after unregistering
+    - product: chrome
+      url: https://crbug.com/595993
+      results:
+        - test: request-end-to-end.https.html
+          subtest: Test FetchEvent.request passed to onfetch
+    - product: chrome
+      url: https://crbug.com/652994
+      results:
+        - test: interface-requirements-sw.https.html
+          subtest: Event constructors
+    - product: chrome
+      url: https://crbug.com/1111021
+      results:
+        - test: unregister-then-register.https.html
+          subtest: Unregister then register does not resolve to the original value even if the registration is in use.
+        - test: unregister-then-register.https.html
+          subtest: Unregister then register does not resurrect the registration
+    - product: chrome
+      url: https://crbug.com/582750
+      results:
+        - test: appcache-ordering-main.https.html
+        - test: claim-fetch-with-appcache.https.html
+    - product: chrome
+      url: crbug.com/805225
+      results:
+        - test: unregister-then-register.https.html
+          subtest: Unregister then register does not resolve to the original value even if the registration is in use.
+        - test: unregister-then-register.https.html
+          subtest: Unregister then register does not resurrect the registration
+    - product: edge
+      url: crbug.com/805225
+      results:
+        - test: unregister-then-register.https.html
+          subtest: Unregister then register does not resolve to the original value even if the registration is in use.
+        - test: unregister-then-register.https.html
+          subtest: Unregister then register does not resurrect the registration
+    - product: chrome
+      url: crbug.com/1072298
+      results:
+        - test: next-hop-protocol.https.html
+          subtest: nextHopProtocol reports H2 correctly when routed via a service worker.
+    - product: edge
+      url: crbug.com/1072298
+      results:
+        - test: next-hop-protocol.https.html
+          subtest: nextHopProtocol reports H2 correctly when routed via a service worker.
+    - product: chrome
+      url: https://crbug.com/1017034
+      results:
+        - test: client-url-of-blob-url-worker.https.html
