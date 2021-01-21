@@ -8,3 +8,13 @@ links:
   results:
   - test: sandbox-document-open.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1681906
+- product: firefox
+  results:
+  - test: sandbox-inherited-from-required-csp.html
+  - subtest: blob URL
+    test: sandbox-inherited-from-required-csp.html
+  - subtest: same-origin
+    test: sandbox-inherited-from-required-csp.html
+  - subtest: cross-origin
+    test: sandbox-inherited-from-required-csp.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1688075
