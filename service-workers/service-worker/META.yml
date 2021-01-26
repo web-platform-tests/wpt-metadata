@@ -38,16 +38,6 @@ links:
         - test: fetch-canvas-tainting-video-with-range-request.https.html
           status: TIMEOUT
     - product: chrome
-      url: https://crbug.com/595993
-      results:
-        - test: fetch-header-visibility.https.html
-          status: FAIL
-    - product: chrome
-      url: https://crbug.com/824647
-      results:
-        - test: update-registration-with-type.https.html
-          status: FAIL
-    - product: chrome
       url: https://crbug.com/807720
       results:
         - test: local-url-inherit-controller.https.html
@@ -134,6 +124,8 @@ links:
     - product: chrome
       url: https://crbug.com/595993
       results:
+        - test: fetch-header-visibility.https.html
+          status: FAIL
         - test: request-end-to-end.https.html
           subtest: Test FetchEvent.request passed to onfetch
     - product: chrome
@@ -195,6 +187,8 @@ links:
         - test: import-module-scripts.https.html
         - test: registration-scope-module-static-import.https.html
         - test: registration-script-module.https.html
+        - test: update-registration-with-type.https.html
+          status: FAIL
     - product: chrome
       url: https://bugs.chromium.org/p/chromium/issues/detail?id=906991
       results:
