@@ -18,3 +18,11 @@ links:
   - subtest: cross-origin
     test: sandbox-inherited-from-required-csp.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1688075
+- product: firefox
+  results:
+  - test: window-open-blank-from-different-initiator.html
+  - subtest: One pending navigation
+    test: window-open-blank-from-different-initiator.html
+  - subtest: No pending navigation
+    test: window-open-blank-from-different-initiator.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1689160
