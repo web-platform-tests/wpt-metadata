@@ -1,29 +1,28 @@
 links:
-- product: firefox
-  results:
-  - subtest: document.open() after parser is aborted
-    test: aborted-parser.window.html
-  - subtest: async document.open() after parser is aborted
-    test: aborted-parser.window.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1475000
-- product: firefox
-  results:
-  - subtest: document.open() removes the document's children (non-active document
-      with an associated Window object; frame is removed)
-    test: active.window.html
-  - subtest: document.open() removes the document's children (active but not fully
-      active document)
-    test: active.window.html
-  - subtest: Custom event listeners are to be removed from Window for a non-active
-      document that is the associated Document of a Window (frame is removed)
-    test: event-listeners.window.html
-  - subtest: Standard event listeners are to be removed from Window for a non-active
-      document that is the associated Document of a Window (frame is removed)
-    test: event-listeners.window.html
-  - subtest: Standard event listeners are to be removed from Window for an active
-      but not fully active document
-    test: event-listeners.window.html
-  - subtest: Custom event listeners are to be removed from Window for an active but
-      not fully active document
-    test: event-listeners.window.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1520333
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1475000
+      results:
+        - test: aborted-parser.window.html
+          subtest: document.open() after parser is aborted
+        - test: aborted-parser.window.html
+          subtest: async document.open() after parser is aborted
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1520333
+      results:
+        - test: active.window.html
+          subtest: document.open() removes the document's children (non-active document with an associated Window object; frame is removed)
+        - test: active.window.html
+          subtest: document.open() removes the document's children (active but not fully active document)
+        - test: event-listeners.window.html
+          subtest: Custom event listeners are to be removed from Window for a non-active document that is the associated Document of a Window (frame is removed)
+        - test: event-listeners.window.html
+          subtest: Standard event listeners are to be removed from Window for a non-active document that is the associated Document of a Window (frame is removed)
+        - test: event-listeners.window.html
+          subtest: Standard event listeners are to be removed from Window for an active but not fully active document
+        - test: event-listeners.window.html
+          subtest: Custom event listeners are to be removed from Window for an active but not fully active document
+    - product: chrome
+      url: https://bugs.chromium.org/p/chromium/issues/detail?id=1046898
+      results:
+        - test: url.window.html
+          subtest: document.open() does not change document's URL (active but not fully active document)
