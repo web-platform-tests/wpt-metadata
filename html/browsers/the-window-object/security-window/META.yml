@@ -1,13 +1,11 @@
 links:
-- product: firefox
-  results:
-  - subtest: A SecurityError exception must be thrown when window.onmousewheel is
-      accessed from a different origin.
-    test: window-security.https.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1649514
-- product: firefox
-  results:
-  - subtest: A SecurityError exception must be thrown when window.oncancel is accessed
-      from a different origin.
-    test: window-security.https.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1649264
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1649514
+      results:
+        - test: window-security.https.html
+          subtest: A SecurityError exception must be thrown when window.onmousewheel is accessed from a different origin.
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1649264
+      results:
+        - test: window-security.https.html
+          subtest: A SecurityError exception must be thrown when window.oncancel is accessed from a different origin.

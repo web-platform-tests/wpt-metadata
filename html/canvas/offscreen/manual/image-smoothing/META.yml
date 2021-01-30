@@ -1,54 +1,40 @@
 links:
-- product: firefox
-  results:
-  - subtest: On getting imageSmoothingEnabled, the user agent must return the last
-      value it was set to.
-    test: image.smoothing.html
-  - subtest: Test that imageSmoothingEnabled = false (nearest-neighbor interpolation)
-      works with stroke() and createPattern().
-    test: image.smoothing.html
-  - subtest: When the context is created, imageSmoothingEnabled must be set to true.
-    test: image.smoothing.html
-  - subtest: Test that imageSmoothingEnabled = false (nearest-neighbor interpolation)
-      works with drawImage().
-    test: image.smoothing.html
-  - subtest: Test that image smoothing works when imageSmoothingEnabled is set to
-      true
-    test: image.smoothing.html
-  - subtest: Test that image smoothing is actually on by default.
-    test: image.smoothing.html
-  - subtest: Test that imageSmoothingEnabled = false (nearest-neighbor interpolation)
-      works with fillRect and createPattern().
-    test: image.smoothing.html
-  - subtest: Test that imageSmoothingEnabled = false (nearest-neighbor interpolation)
-      works with fill() and createPattern().
-    test: image.smoothing.html
-  - subtest: Test that imageSmoothingEnabled = false (nearest-neighbor interpolation)
-      still works after repaints.
-    test: image.smoothing.html
-  - subtest: On getting imageSmoothingEnabled, the user agent must return the last
-      value it was set to.
-    test: image.smoothing.worker.html
-  - subtest: Test that imageSmoothingEnabled = false (nearest-neighbor interpolation)
-      works with stroke() and createPattern().
-    test: image.smoothing.worker.html
-  - subtest: When the context is created, imageSmoothingEnabled must be set to true.
-    test: image.smoothing.worker.html
-  - subtest: Test that imageSmoothingEnabled = false (nearest-neighbor interpolation)
-      works with drawImage().
-    test: image.smoothing.worker.html
-  - subtest: Test that image smoothing works when imageSmoothingEnabled is set to
-      true
-    test: image.smoothing.worker.html
-  - subtest: Test that image smoothing is actually on by default.
-    test: image.smoothing.worker.html
-  - subtest: Test that imageSmoothingEnabled = false (nearest-neighbor interpolation)
-      works with fillRect and createPattern().
-    test: image.smoothing.worker.html
-  - subtest: Test that imageSmoothingEnabled = false (nearest-neighbor interpolation)
-      works with fill() and createPattern().
-    test: image.smoothing.worker.html
-  - subtest: Test that imageSmoothingEnabled = false (nearest-neighbor interpolation)
-      still works after repaints.
-    test: image.smoothing.worker.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1645555
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1645555
+      results:
+        - test: image.smoothing.html
+          subtest: On getting imageSmoothingEnabled, the user agent must return the last value it was set to.
+        - test: image.smoothing.html
+          subtest: Test that imageSmoothingEnabled = false (nearest-neighbor interpolation) works with stroke() and createPattern().
+        - test: image.smoothing.html
+          subtest: When the context is created, imageSmoothingEnabled must be set to true.
+        - test: image.smoothing.html
+          subtest: Test that imageSmoothingEnabled = false (nearest-neighbor interpolation) works with drawImage().
+        - test: image.smoothing.html
+          subtest: Test that image smoothing works when imageSmoothingEnabled is set to true
+        - test: image.smoothing.html
+          subtest: Test that image smoothing is actually on by default.
+        - test: image.smoothing.html
+          subtest: Test that imageSmoothingEnabled = false (nearest-neighbor interpolation) works with fillRect and createPattern().
+        - test: image.smoothing.html
+          subtest: Test that imageSmoothingEnabled = false (nearest-neighbor interpolation) works with fill() and createPattern().
+        - test: image.smoothing.html
+          subtest: Test that imageSmoothingEnabled = false (nearest-neighbor interpolation) still works after repaints.
+        - test: image.smoothing.worker.html
+          subtest: On getting imageSmoothingEnabled, the user agent must return the last value it was set to.
+        - test: image.smoothing.worker.html
+          subtest: Test that imageSmoothingEnabled = false (nearest-neighbor interpolation) works with stroke() and createPattern().
+        - test: image.smoothing.worker.html
+          subtest: When the context is created, imageSmoothingEnabled must be set to true.
+        - test: image.smoothing.worker.html
+          subtest: Test that imageSmoothingEnabled = false (nearest-neighbor interpolation) works with drawImage().
+        - test: image.smoothing.worker.html
+          subtest: Test that image smoothing works when imageSmoothingEnabled is set to true
+        - test: image.smoothing.worker.html
+          subtest: Test that image smoothing is actually on by default.
+        - test: image.smoothing.worker.html
+          subtest: Test that imageSmoothingEnabled = false (nearest-neighbor interpolation) works with fillRect and createPattern().
+        - test: image.smoothing.worker.html
+          subtest: Test that imageSmoothingEnabled = false (nearest-neighbor interpolation) works with fill() and createPattern().
+        - test: image.smoothing.worker.html
+          subtest: Test that imageSmoothingEnabled = false (nearest-neighbor interpolation) still works after repaints.

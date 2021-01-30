@@ -1,169 +1,136 @@
 links:
-- product: safari
-  results:
-  - status: FAIL
-    test: canvas-createImageBitmap-resize.html
-  url: https://bugs.webkit.org/show_bug.cgi?id=202458
-- product: firefox
-  results:
-  - test: createImageBitmap-origin.sub.html
-  - subtest: 'cross-origin HTMLVideoElement: origin unclear bitmaprenderer.transferFromImageBitmap'
-    test: createImageBitmap-origin.sub.html
-  - subtest: 'redirected to cross-origin HTMLVideoElement: origin unclear 2dContext.drawImage'
-    test: createImageBitmap-origin.sub.html
-  - subtest: 'redirected to same-origin HTMLVideoElement: origin unclear getImageData'
-    test: createImageBitmap-origin.sub.html
-  - subtest: 'redirected to same-origin HTMLVideoElement: origin unclear 2dContext.drawImage'
-    test: createImageBitmap-origin.sub.html
-  - subtest: 'unclean HTMLCanvasElement: origin unclear bitmaprenderer.transferFromImageBitmap'
-    test: createImageBitmap-origin.sub.html
-  - subtest: 'unclean ImageBitmap: origin unclear getImageData'
-    test: createImageBitmap-origin.sub.html
-  - subtest: 'unclean HTMLCanvasElement: origin unclear getImageData'
-    test: createImageBitmap-origin.sub.html
-  - subtest: 'unclean ImageBitmap: origin unclear bitmaprenderer.transferFromImageBitmap'
-    test: createImageBitmap-origin.sub.html
-  - subtest: 'unclean HTMLCanvasElement: origin unclear 2dContext.drawImage'
-    test: createImageBitmap-origin.sub.html
-  - subtest: 'redirected to cross-origin HTMLVideoElement: origin unclear bitmaprenderer.transferFromImageBitmap'
-    test: createImageBitmap-origin.sub.html
-  - subtest: 'redirected to same-origin HTMLVideoElement: origin unclear bitmaprenderer.transferFromImageBitmap'
-    test: createImageBitmap-origin.sub.html
-  - subtest: 'redirected to cross-origin HTMLVideoElement: origin unclear getImageData'
-    test: createImageBitmap-origin.sub.html
-  - subtest: 'unclean ImageBitmap: origin unclear 2dContext.drawImage'
-    test: createImageBitmap-origin.sub.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1649514
-- product: firefox
-  results:
-  - subtest: Serialize ImageBitmap created from an OffscreenCanvas
-    test: createImageBitmap-serializable.html
-  - subtest: Transfer ImageBitmap created from an OffscreenCanvas
-    test: createImageBitmap-transfer.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1649264
-- product: firefox
-  results:
-  - subtest: createImageBitmap with an HTMLCanvasElement source and a value of 0 int
-      resizeWidth
-    test: createImageBitmap-invalid-args.html
-  - subtest: createImageBitmap with an HTMLCanvasElement source and a value of 0 in
-      resizeHeight
-    test: createImageBitmap-invalid-args.html
-  - subtest: createImageBitmap with an HTMLCanvasElement source and a value between
-      0 and 1 in resizeWidth
-    test: createImageBitmap-invalid-args.html
-  - subtest: createImageBitmap with an HTMLCanvasElement source and a value between
-      0 and 1 in resizeHeight
-    test: createImageBitmap-invalid-args.html
-  - subtest: createImageBitmap with an HTMLVideoElement source and a value of 0 int
-      resizeWidth
-    test: createImageBitmap-invalid-args.html
-  - subtest: createImageBitmap with an HTMLVideoElement source and a value of 0 in
-      resizeHeight
-    test: createImageBitmap-invalid-args.html
-  - subtest: createImageBitmap with an HTMLVideoElement source and a value between
-      0 and 1 in resizeWidth
-    test: createImageBitmap-invalid-args.html
-  - subtest: createImageBitmap with an HTMLVideoElement source and a value between
-      0 and 1 in resizeHeight
-    test: createImageBitmap-invalid-args.html
-  - subtest: createImageBitmap with an HTMLVideoElement from a data URL source and
-      a value of 0 int resizeWidth
-    test: createImageBitmap-invalid-args.html
-  - subtest: createImageBitmap with an HTMLVideoElement from a data URL source and
-      a value of 0 in resizeHeight
-    test: createImageBitmap-invalid-args.html
-  - subtest: createImageBitmap with an HTMLVideoElement from a data URL source and
-      a value between 0 and 1 in resizeWidth
-    test: createImageBitmap-invalid-args.html
-  - subtest: createImageBitmap with an HTMLVideoElement from a data URL source and
-      a value between 0 and 1 in resizeHeight
-    test: createImageBitmap-invalid-args.html
-  - subtest: createImageBitmap with a bitmap HTMLImageElement source and a value of
-      0 int resizeWidth
-    test: createImageBitmap-invalid-args.html
-  - subtest: createImageBitmap with a bitmap HTMLImageElement source and a value of
-      0 in resizeHeight
-    test: createImageBitmap-invalid-args.html
-  - subtest: createImageBitmap with a bitmap HTMLImageElement source and a value between
-      0 and 1 in resizeWidth
-    test: createImageBitmap-invalid-args.html
-  - subtest: createImageBitmap with a bitmap HTMLImageElement source and a value between
-      0 and 1 in resizeHeight
-    test: createImageBitmap-invalid-args.html
-  - subtest: createImageBitmap with a vector HTMLImageElement source and a value of
-      0 int resizeWidth
-    test: createImageBitmap-invalid-args.html
-  - subtest: createImageBitmap with a vector HTMLImageElement source and a value of
-      0 in resizeHeight
-    test: createImageBitmap-invalid-args.html
-  - subtest: createImageBitmap with a vector HTMLImageElement source and a value between
-      0 and 1 in resizeWidth
-    test: createImageBitmap-invalid-args.html
-  - subtest: createImageBitmap with a vector HTMLImageElement source and a value between
-      0 and 1 in resizeHeight
-    test: createImageBitmap-invalid-args.html
-  - subtest: createImageBitmap with a bitmap SVGImageElement source and a value of
-      0 int resizeWidth
-    test: createImageBitmap-invalid-args.html
-  - subtest: createImageBitmap with a bitmap SVGImageElement source and a value of
-      0 in resizeHeight
-    test: createImageBitmap-invalid-args.html
-  - subtest: createImageBitmap with a bitmap SVGImageElement source and a value between
-      0 and 1 in resizeWidth
-    test: createImageBitmap-invalid-args.html
-  - subtest: createImageBitmap with a bitmap SVGImageElement source and a value between
-      0 and 1 in resizeHeight
-    test: createImageBitmap-invalid-args.html
-  - subtest: createImageBitmap with an OffscreenCanvas source and sw set to 0
-    test: createImageBitmap-invalid-args.html
-  - subtest: createImageBitmap with an OffscreenCanvas source and sh set to 0
-    test: createImageBitmap-invalid-args.html
-  - subtest: createImageBitmap with an OffscreenCanvas source and oversized (unallocatable)
-      crop region
-    test: createImageBitmap-invalid-args.html
-  - subtest: createImageBitmap with an OffscreenCanvas source and a value of 0 int
-      resizeWidth
-    test: createImageBitmap-invalid-args.html
-  - subtest: createImageBitmap with an OffscreenCanvas source and a value of 0 in
-      resizeHeight
-    test: createImageBitmap-invalid-args.html
-  - subtest: createImageBitmap with an OffscreenCanvas source and a value between
-      0 and 1 in resizeWidth
-    test: createImageBitmap-invalid-args.html
-  - subtest: createImageBitmap with an OffscreenCanvas source and a value between
-      0 and 1 in resizeHeight
-    test: createImageBitmap-invalid-args.html
-  - subtest: createImageBitmap with an ImageData source and a value of 0 int resizeWidth
-    test: createImageBitmap-invalid-args.html
-  - subtest: createImageBitmap with an ImageData source and a value of 0 in resizeHeight
-    test: createImageBitmap-invalid-args.html
-  - subtest: createImageBitmap with an ImageData source and a value between 0 and
-      1 in resizeWidth
-    test: createImageBitmap-invalid-args.html
-  - subtest: createImageBitmap with an ImageData source and a value between 0 and
-      1 in resizeHeight
-    test: createImageBitmap-invalid-args.html
-  - subtest: createImageBitmap with an ImageBitmap source and a value of 0 int resizeWidth
-    test: createImageBitmap-invalid-args.html
-  - subtest: createImageBitmap with an ImageBitmap source and a value of 0 in resizeHeight
-    test: createImageBitmap-invalid-args.html
-  - subtest: createImageBitmap with an ImageBitmap source and a value between 0 and
-      1 in resizeWidth
-    test: createImageBitmap-invalid-args.html
-  - subtest: createImageBitmap with an ImageBitmap source and a value between 0 and
-      1 in resizeHeight
-    test: createImageBitmap-invalid-args.html
-  - subtest: createImageBitmap with a Blob source and a value of 0 int resizeWidth
-    test: createImageBitmap-invalid-args.html
-  - subtest: createImageBitmap with a Blob source and a value of 0 in resizeHeight
-    test: createImageBitmap-invalid-args.html
-  - subtest: createImageBitmap with a Blob source and a value between 0 and 1 in resizeWidth
-    test: createImageBitmap-invalid-args.html
-  - subtest: createImageBitmap with a Blob source and a value between 0 and 1 in resizeHeight
-    test: createImageBitmap-invalid-args.html
-  - subtest: createImageBitmap with CanvasRenderingContext2D image source.
-    test: createImageBitmap-invalid-args.html
-  - subtest: createImageBitmap with an invalid OffscreenCanvas source.
-    test: createImageBitmap-invalid-args.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1687882
+    - product: safari
+      url: https://bugs.webkit.org/show_bug.cgi?id=202458
+      results:
+        - test: canvas-createImageBitmap-resize.html
+          status: FAIL
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1649514
+      results:
+        - test: createImageBitmap-origin.sub.html
+        - test: createImageBitmap-origin.sub.html
+          subtest: 'cross-origin HTMLVideoElement: origin unclear bitmaprenderer.transferFromImageBitmap'
+        - test: createImageBitmap-origin.sub.html
+          subtest: 'redirected to cross-origin HTMLVideoElement: origin unclear 2dContext.drawImage'
+        - test: createImageBitmap-origin.sub.html
+          subtest: 'redirected to same-origin HTMLVideoElement: origin unclear getImageData'
+        - test: createImageBitmap-origin.sub.html
+          subtest: 'redirected to same-origin HTMLVideoElement: origin unclear 2dContext.drawImage'
+        - test: createImageBitmap-origin.sub.html
+          subtest: 'unclean HTMLCanvasElement: origin unclear bitmaprenderer.transferFromImageBitmap'
+        - test: createImageBitmap-origin.sub.html
+          subtest: 'unclean ImageBitmap: origin unclear getImageData'
+        - test: createImageBitmap-origin.sub.html
+          subtest: 'unclean HTMLCanvasElement: origin unclear getImageData'
+        - test: createImageBitmap-origin.sub.html
+          subtest: 'unclean ImageBitmap: origin unclear bitmaprenderer.transferFromImageBitmap'
+        - test: createImageBitmap-origin.sub.html
+          subtest: 'unclean HTMLCanvasElement: origin unclear 2dContext.drawImage'
+        - test: createImageBitmap-origin.sub.html
+          subtest: 'redirected to cross-origin HTMLVideoElement: origin unclear bitmaprenderer.transferFromImageBitmap'
+        - test: createImageBitmap-origin.sub.html
+          subtest: 'redirected to same-origin HTMLVideoElement: origin unclear bitmaprenderer.transferFromImageBitmap'
+        - test: createImageBitmap-origin.sub.html
+          subtest: 'redirected to cross-origin HTMLVideoElement: origin unclear getImageData'
+        - test: createImageBitmap-origin.sub.html
+          subtest: 'unclean ImageBitmap: origin unclear 2dContext.drawImage'
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1649264
+      results:
+        - test: createImageBitmap-serializable.html
+          subtest: Serialize ImageBitmap created from an OffscreenCanvas
+        - test: createImageBitmap-transfer.html
+          subtest: Transfer ImageBitmap created from an OffscreenCanvas
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1687882
+      results:
+        - test: createImageBitmap-invalid-args.html
+          subtest: createImageBitmap with an HTMLCanvasElement source and a value of 0 int resizeWidth
+        - test: createImageBitmap-invalid-args.html
+          subtest: createImageBitmap with an HTMLCanvasElement source and a value of 0 in resizeHeight
+        - test: createImageBitmap-invalid-args.html
+          subtest: createImageBitmap with an HTMLCanvasElement source and a value between 0 and 1 in resizeWidth
+        - test: createImageBitmap-invalid-args.html
+          subtest: createImageBitmap with an HTMLCanvasElement source and a value between 0 and 1 in resizeHeight
+        - test: createImageBitmap-invalid-args.html
+          subtest: createImageBitmap with an HTMLVideoElement source and a value of 0 int resizeWidth
+        - test: createImageBitmap-invalid-args.html
+          subtest: createImageBitmap with an HTMLVideoElement source and a value of 0 in resizeHeight
+        - test: createImageBitmap-invalid-args.html
+          subtest: createImageBitmap with an HTMLVideoElement source and a value between 0 and 1 in resizeWidth
+        - test: createImageBitmap-invalid-args.html
+          subtest: createImageBitmap with an HTMLVideoElement source and a value between 0 and 1 in resizeHeight
+        - test: createImageBitmap-invalid-args.html
+          subtest: createImageBitmap with an HTMLVideoElement from a data URL source and a value of 0 int resizeWidth
+        - test: createImageBitmap-invalid-args.html
+          subtest: createImageBitmap with an HTMLVideoElement from a data URL source and a value of 0 in resizeHeight
+        - test: createImageBitmap-invalid-args.html
+          subtest: createImageBitmap with an HTMLVideoElement from a data URL source and a value between 0 and 1 in resizeWidth
+        - test: createImageBitmap-invalid-args.html
+          subtest: createImageBitmap with an HTMLVideoElement from a data URL source and a value between 0 and 1 in resizeHeight
+        - test: createImageBitmap-invalid-args.html
+          subtest: createImageBitmap with a bitmap HTMLImageElement source and a value of 0 int resizeWidth
+        - test: createImageBitmap-invalid-args.html
+          subtest: createImageBitmap with a bitmap HTMLImageElement source and a value of 0 in resizeHeight
+        - test: createImageBitmap-invalid-args.html
+          subtest: createImageBitmap with a bitmap HTMLImageElement source and a value between 0 and 1 in resizeWidth
+        - test: createImageBitmap-invalid-args.html
+          subtest: createImageBitmap with a bitmap HTMLImageElement source and a value between 0 and 1 in resizeHeight
+        - test: createImageBitmap-invalid-args.html
+          subtest: createImageBitmap with a vector HTMLImageElement source and a value of 0 int resizeWidth
+        - test: createImageBitmap-invalid-args.html
+          subtest: createImageBitmap with a vector HTMLImageElement source and a value of 0 in resizeHeight
+        - test: createImageBitmap-invalid-args.html
+          subtest: createImageBitmap with a vector HTMLImageElement source and a value between 0 and 1 in resizeWidth
+        - test: createImageBitmap-invalid-args.html
+          subtest: createImageBitmap with a vector HTMLImageElement source and a value between 0 and 1 in resizeHeight
+        - test: createImageBitmap-invalid-args.html
+          subtest: createImageBitmap with a bitmap SVGImageElement source and a value of 0 int resizeWidth
+        - test: createImageBitmap-invalid-args.html
+          subtest: createImageBitmap with a bitmap SVGImageElement source and a value of 0 in resizeHeight
+        - test: createImageBitmap-invalid-args.html
+          subtest: createImageBitmap with a bitmap SVGImageElement source and a value between 0 and 1 in resizeWidth
+        - test: createImageBitmap-invalid-args.html
+          subtest: createImageBitmap with a bitmap SVGImageElement source and a value between 0 and 1 in resizeHeight
+        - test: createImageBitmap-invalid-args.html
+          subtest: createImageBitmap with an OffscreenCanvas source and sw set to 0
+        - test: createImageBitmap-invalid-args.html
+          subtest: createImageBitmap with an OffscreenCanvas source and sh set to 0
+        - test: createImageBitmap-invalid-args.html
+          subtest: createImageBitmap with an OffscreenCanvas source and oversized (unallocatable) crop region
+        - test: createImageBitmap-invalid-args.html
+          subtest: createImageBitmap with an OffscreenCanvas source and a value of 0 int resizeWidth
+        - test: createImageBitmap-invalid-args.html
+          subtest: createImageBitmap with an OffscreenCanvas source and a value of 0 in resizeHeight
+        - test: createImageBitmap-invalid-args.html
+          subtest: createImageBitmap with an OffscreenCanvas source and a value between 0 and 1 in resizeWidth
+        - test: createImageBitmap-invalid-args.html
+          subtest: createImageBitmap with an OffscreenCanvas source and a value between 0 and 1 in resizeHeight
+        - test: createImageBitmap-invalid-args.html
+          subtest: createImageBitmap with an ImageData source and a value of 0 int resizeWidth
+        - test: createImageBitmap-invalid-args.html
+          subtest: createImageBitmap with an ImageData source and a value of 0 in resizeHeight
+        - test: createImageBitmap-invalid-args.html
+          subtest: createImageBitmap with an ImageData source and a value between 0 and 1 in resizeWidth
+        - test: createImageBitmap-invalid-args.html
+          subtest: createImageBitmap with an ImageData source and a value between 0 and 1 in resizeHeight
+        - test: createImageBitmap-invalid-args.html
+          subtest: createImageBitmap with an ImageBitmap source and a value of 0 int resizeWidth
+        - test: createImageBitmap-invalid-args.html
+          subtest: createImageBitmap with an ImageBitmap source and a value of 0 in resizeHeight
+        - test: createImageBitmap-invalid-args.html
+          subtest: createImageBitmap with an ImageBitmap source and a value between 0 and 1 in resizeWidth
+        - test: createImageBitmap-invalid-args.html
+          subtest: createImageBitmap with an ImageBitmap source and a value between 0 and 1 in resizeHeight
+        - test: createImageBitmap-invalid-args.html
+          subtest: createImageBitmap with a Blob source and a value of 0 int resizeWidth
+        - test: createImageBitmap-invalid-args.html
+          subtest: createImageBitmap with a Blob source and a value of 0 in resizeHeight
+        - test: createImageBitmap-invalid-args.html
+          subtest: createImageBitmap with a Blob source and a value between 0 and 1 in resizeWidth
+        - test: createImageBitmap-invalid-args.html
+          subtest: createImageBitmap with a Blob source and a value between 0 and 1 in resizeHeight
+        - test: createImageBitmap-invalid-args.html
+          subtest: createImageBitmap with CanvasRenderingContext2D image source.
+        - test: createImageBitmap-invalid-args.html
+          subtest: createImageBitmap with an invalid OffscreenCanvas source.

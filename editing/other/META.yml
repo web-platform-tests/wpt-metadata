@@ -1,15 +1,14 @@
 links:
-- product: firefox
-  results:
-  - subtest: 'execCommand("delete", false, ""): "a&nbsp;&nbsp;&nbsp;&nbsp;||&nbsp;[]&nbsp;&nbsp;&nbsp;c"'
-    test: white-spaces-after-execCommand-delete.tentative.html
-  - subtest: 'execCommand("delete", false, ""): "a&nbsp;&nbsp;&nbsp;&nbsp;||[]&nbsp;&nbsp;&nbsp;&nbsp;c"'
-    test: white-spaces-after-execCommand-delete.tentative.html
-  - subtest: 'execCommand("delete", false, ""): "a&nbsp;&nbsp;&nbsp;&nbsp;|[]|&nbsp;&nbsp;&nbsp;&nbsp;c"'
-    test: white-spaces-after-execCommand-delete.tentative.html
-  - subtest: 'execCommand("delete", false, ""): "a&nbsp;&nbsp;&nbsp;&nbsp;[]||&nbsp;&nbsp;&nbsp;&nbsp;c"'
-    test: white-spaces-after-execCommand-delete.tentative.html
-  - subtest: 'execCommand("delete", false, ""): "<span>abc&nbsp;</span><span>&nbsp;
-      []def</span>"'
-    test: white-spaces-after-execCommand-delete.tentative.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1678168
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1678168
+      results:
+        - test: white-spaces-after-execCommand-delete.tentative.html
+          subtest: 'execCommand("delete", false, ""): "a&nbsp;&nbsp;&nbsp;&nbsp;||&nbsp;[]&nbsp;&nbsp;&nbsp;c"'
+        - test: white-spaces-after-execCommand-delete.tentative.html
+          subtest: 'execCommand("delete", false, ""): "a&nbsp;&nbsp;&nbsp;&nbsp;||[]&nbsp;&nbsp;&nbsp;&nbsp;c"'
+        - test: white-spaces-after-execCommand-delete.tentative.html
+          subtest: 'execCommand("delete", false, ""): "a&nbsp;&nbsp;&nbsp;&nbsp;|[]|&nbsp;&nbsp;&nbsp;&nbsp;c"'
+        - test: white-spaces-after-execCommand-delete.tentative.html
+          subtest: 'execCommand("delete", false, ""): "a&nbsp;&nbsp;&nbsp;&nbsp;[]||&nbsp;&nbsp;&nbsp;&nbsp;c"'
+        - test: white-spaces-after-execCommand-delete.tentative.html
+          subtest: 'execCommand("delete", false, ""): "<span>abc&nbsp;</span><span>&nbsp; []def</span>"'

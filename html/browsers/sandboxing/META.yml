@@ -1,28 +1,28 @@
 links:
-- product: firefox
-  results:
-  - subtest: window.open in sandbox iframe
-    test: sandbox-disallow-popups.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1659088
-- product: firefox
-  results:
-  - test: sandbox-document-open.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1681906
-- product: firefox
-  results:
-  - test: sandbox-inherited-from-required-csp.html
-  - subtest: blob URL
-    test: sandbox-inherited-from-required-csp.html
-  - subtest: same-origin
-    test: sandbox-inherited-from-required-csp.html
-  - subtest: cross-origin
-    test: sandbox-inherited-from-required-csp.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1688075
-- product: firefox
-  results:
-  - test: window-open-blank-from-different-initiator.html
-  - subtest: One pending navigation
-    test: window-open-blank-from-different-initiator.html
-  - subtest: No pending navigation
-    test: window-open-blank-from-different-initiator.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1689160
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1659088
+      results:
+        - test: sandbox-disallow-popups.html
+          subtest: window.open in sandbox iframe
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1681906
+      results:
+        - test: sandbox-document-open.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1688075
+      results:
+        - test: sandbox-inherited-from-required-csp.html
+        - test: sandbox-inherited-from-required-csp.html
+          subtest: blob URL
+        - test: sandbox-inherited-from-required-csp.html
+          subtest: same-origin
+        - test: sandbox-inherited-from-required-csp.html
+          subtest: cross-origin
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1689160
+      results:
+        - test: window-open-blank-from-different-initiator.html
+        - test: window-open-blank-from-different-initiator.html
+          subtest: One pending navigation
+        - test: window-open-blank-from-different-initiator.html
+          subtest: No pending navigation

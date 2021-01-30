@@ -1,20 +1,20 @@
 links:
-- product: firefox
-  results:
-  - test: pointerevent_touch-action_two-finger_interaction.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1655753
-- product: firefox
-  results:
-  - test: pointerevent_compat-mouse-events-when-removing-nodes.html
-  - subtest: Click and drag outside of object event sequence
-    test: pointerevent_mouse-on-object.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1658406
-- product: firefox
-  results:
-  - subtest: Compat mouse events with node removal on pointerup
-    test: pointerevent_compat-mouse-events-when-removing-nodes.html
-  - subtest: Compat mouse events with node removal on pointerdown
-    test: pointerevent_compat-mouse-events-when-removing-nodes.html
-  - subtest: Compat mouse events with node removal on pointermove
-    test: pointerevent_compat-mouse-events-when-removing-nodes.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1658642
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1655753
+      results:
+        - test: pointerevent_touch-action_two-finger_interaction.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1658406
+      results:
+        - test: pointerevent_compat-mouse-events-when-removing-nodes.html
+        - test: pointerevent_mouse-on-object.html
+          subtest: Click and drag outside of object event sequence
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1658642
+      results:
+        - test: pointerevent_compat-mouse-events-when-removing-nodes.html
+          subtest: Compat mouse events with node removal on pointerup
+        - test: pointerevent_compat-mouse-events-when-removing-nodes.html
+          subtest: Compat mouse events with node removal on pointerdown
+        - test: pointerevent_compat-mouse-events-when-removing-nodes.html
+          subtest: Compat mouse events with node removal on pointermove

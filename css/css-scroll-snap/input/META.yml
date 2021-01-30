@@ -1,16 +1,12 @@
 links:
-- product: firefox
-  results:
-  - subtest: If there is no valid snap offset on the arrow key's direction other than
-      the current offset, and the scroll-snap-type is proximity, go to the original
-      intended offset
-    test: keyboard.html
-  - subtest: If the original intended offset is valid as making a snap area cover
-      the snapport, but there's a defined snap offset in between, use the defined
-      snap offset.
-    test: keyboard.html
-  - subtest: Snaps to top-left after pressing ArrowUp
-    test: keyboard.html
-  - subtest: Snaps to top-left after pressing ArrowLeft
-    test: keyboard.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1642830
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1642830
+      results:
+        - test: keyboard.html
+          subtest: If there is no valid snap offset on the arrow key's direction other than the current offset, and the scroll-snap-type is proximity, go to the original intended offset
+        - test: keyboard.html
+          subtest: If the original intended offset is valid as making a snap area cover the snapport, but there's a defined snap offset in between, use the defined snap offset.
+        - test: keyboard.html
+          subtest: Snaps to top-left after pressing ArrowUp
+        - test: keyboard.html
+          subtest: Snaps to top-left after pressing ArrowLeft

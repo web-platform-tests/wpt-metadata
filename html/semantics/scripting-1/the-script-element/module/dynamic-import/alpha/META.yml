@@ -1,19 +1,19 @@
 links:
-- product: firefox
-  results:
-  - subtest: Relative URL-like from worker top-level script
-    test: base-url-worker.sub.html
-  - subtest: Absolute URL-like from cross-origin importScripts()
-    test: base-url-worker.sub.html
-  - subtest: Absolute URL-like from worker top-level script
-    test: base-url-worker.sub.html
-  - subtest: Absolute URL-like from same-origin importScripts()
-    test: base-url-worker.sub.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1657120
-- product: firefox
-  results:
-  - subtest: Absolute URL-like from cross-origin importScripts()
-    test: base-url-worker-importScripts.html
-  - subtest: Absolute URL-like from same-origin importScripts()
-    test: base-url-worker-importScripts.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1657279
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1657120
+      results:
+        - test: base-url-worker.sub.html
+          subtest: Relative URL-like from worker top-level script
+        - test: base-url-worker.sub.html
+          subtest: Absolute URL-like from cross-origin importScripts()
+        - test: base-url-worker.sub.html
+          subtest: Absolute URL-like from worker top-level script
+        - test: base-url-worker.sub.html
+          subtest: Absolute URL-like from same-origin importScripts()
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1657279
+      results:
+        - test: base-url-worker-importScripts.html
+          subtest: Absolute URL-like from cross-origin importScripts()
+        - test: base-url-worker-importScripts.html
+          subtest: Absolute URL-like from same-origin importScripts()

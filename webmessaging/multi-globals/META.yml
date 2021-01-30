@@ -1,11 +1,9 @@
 links:
-- product: firefox
-  results:
-  - test: broadcastchannel-incumbent.sub.html
-  - subtest: The incumbent page being cross-origin must not prevent the BroadcastChannel
-      message from being seen
-    test: broadcastchannel-incumbent.sub.html
-  - subtest: The current page being cross-origin must prevent the BroadcastChannel
-      message from being seen
-    test: broadcastchannel-current.sub.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1652767
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1652767
+      results:
+        - test: broadcastchannel-incumbent.sub.html
+        - test: broadcastchannel-incumbent.sub.html
+          subtest: The incumbent page being cross-origin must not prevent the BroadcastChannel message from being seen
+        - test: broadcastchannel-current.sub.html
+          subtest: The current page being cross-origin must prevent the BroadcastChannel message from being seen

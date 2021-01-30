@@ -1,34 +1,34 @@
 links:
-- product: firefox
-  results:
-  - subtest: H.264 and VP8 should be negotiated after handshake
-    test: video-codecs.https.html
-  - subtest: All H.264 codecs MUST include profile-level-id
-    test: video-codecs.https.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1534687
-- product: firefox
-  results:
-  - subtest: H.264 and VP8 should be supported in initial offer
-    test: video-codecs.https.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1534688
-- product: firefox
-  results:
-  - subtest: Adding only caller -> callee candidates gives a connection
-    test: candidate-exchange.https.html
-  - subtest: Adding only callee -> caller candidates gives a connection
-    test: candidate-exchange.https.html
-  - subtest: Explicit offer/answer exchange gives a connection
-    test: candidate-exchange.https.html
-  - subtest: Adding callee -> caller candidates from end-of-candidates gives a connection
-    test: candidate-exchange.https.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1278299
-- product: firefox
-  results:
-  - subtest: PC should enter disconnected state when a failing candidate is sent
-    test: ice-state.https.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1557053
-- product: firefox
-  results:
-  - subtest: createOffer() with multiple send encodings should create simulcast offer
-    test: simulcast-answer.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1547036
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1534687
+      results:
+        - test: video-codecs.https.html
+          subtest: H.264 and VP8 should be negotiated after handshake
+        - test: video-codecs.https.html
+          subtest: All H.264 codecs MUST include profile-level-id
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1534688
+      results:
+        - test: video-codecs.https.html
+          subtest: H.264 and VP8 should be supported in initial offer
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1278299
+      results:
+        - test: candidate-exchange.https.html
+          subtest: Adding only caller -> callee candidates gives a connection
+        - test: candidate-exchange.https.html
+          subtest: Adding only callee -> caller candidates gives a connection
+        - test: candidate-exchange.https.html
+          subtest: Explicit offer/answer exchange gives a connection
+        - test: candidate-exchange.https.html
+          subtest: Adding callee -> caller candidates from end-of-candidates gives a connection
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1557053
+      results:
+        - test: ice-state.https.html
+          subtest: PC should enter disconnected state when a failing candidate is sent
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1547036
+      results:
+        - test: simulcast-answer.html
+          subtest: createOffer() with multiple send encodings should create simulcast offer

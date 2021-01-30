@@ -1,12 +1,12 @@
 links:
-- product: firefox
-  results:
-  - subtest: Verify read fails on detaching iframe
-    test: read-on-detaching-iframe.https.html
-  - subtest: Verify readText and writeText fails on detached iframe
-    test: writeText-readText-on-detached-iframe.https.html
-  - subtest: Verify read and write fail on detached iframe
-    test: write-read-on-detached-iframe.https.html
-  - subtest: Verify write fails on detaching iframe
-    test: write-on-detaching-iframe.https.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1655754
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1655754
+      results:
+        - test: read-on-detaching-iframe.https.html
+          subtest: Verify read fails on detaching iframe
+        - test: writeText-readText-on-detached-iframe.https.html
+          subtest: Verify readText and writeText fails on detached iframe
+        - test: write-read-on-detached-iframe.https.html
+          subtest: Verify read and write fail on detached iframe
+        - test: write-on-detaching-iframe.https.html
+          subtest: Verify write fails on detaching iframe

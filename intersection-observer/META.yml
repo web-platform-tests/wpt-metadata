@@ -1,14 +1,13 @@
 links:
-- product: chrome
-  results:
-  - status: FAIL
-    test: same-origin-grand-child-iframe.sub.html
-  url: https://bugs.chromium.org/p/chromium/issues/detail?id=1007229
-- product: firefox
-  results:
-  - subtest: IntersectionObserverEntry interface object length
-    test: idlharness.window.html
-  - subtest: 'IntersectionObserver interface: observer must inherit property "thresholds"
-      with the proper type'
-    test: idlharness.window.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1637558
+    - product: chrome
+      url: https://bugs.chromium.org/p/chromium/issues/detail?id=1007229
+      results:
+        - test: same-origin-grand-child-iframe.sub.html
+          status: FAIL
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1637558
+      results:
+        - test: idlharness.window.html
+          subtest: IntersectionObserverEntry interface object length
+        - test: idlharness.window.html
+          subtest: 'IntersectionObserver interface: observer must inherit property "thresholds" with the proper type'

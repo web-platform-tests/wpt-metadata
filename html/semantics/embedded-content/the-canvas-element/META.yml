@@ -1,8 +1,8 @@
 links:
-- product: firefox
-  results:
-  - subtest: Resetting the canvas state resets the origin-clean flag
-    test: security.reset.redirect.html
-  - subtest: Resetting the canvas state resets the origin-clean flag
-    test: security.reset.cross.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1649264
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1649264
+      results:
+        - test: security.reset.redirect.html
+          subtest: Resetting the canvas state resets the origin-clean flag
+        - test: security.reset.cross.html
+          subtest: Resetting the canvas state resets the origin-clean flag

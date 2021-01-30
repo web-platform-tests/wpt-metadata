@@ -1,46 +1,46 @@
 links:
-- product: firefox
-  results:
-  - subtest: Meta color-scheme initially 'dark'.
-    test: meta-color-scheme-attribute-changes.html
-  - subtest: Removed name attribute from meta color-scheme.
-    test: meta-color-scheme-attribute-changes.html
-  - subtest: Set meta name to color-scheme.
-    test: meta-color-scheme-attribute-changes.html
-  - subtest: Set content attribute of meta color-scheme to empty string.
-    test: meta-color-scheme-attribute-changes.html
-  - subtest: Set content attribute of meta color-scheme to an invalid value.
-    test: meta-color-scheme-attribute-changes.html
-  - subtest: Set content attribute of meta color-scheme to 'light'.
-    test: meta-color-scheme-attribute-changes.html
-  - subtest: Removed the content attribute of meta color-scheme.
-    test: meta-color-scheme-attribute-changes.html
-  - subtest: Meta color-scheme with empty content attribute has no effect.
-    test: meta-color-scheme-empty-content-value.html
-  - subtest: Tree order decides which meta color-scheme applies.
-    test: meta-color-scheme-first-valid-applies.html
-  - subtest: Initial color-scheme
-    test: meta-color-scheme-insert.html
-  - subtest: Inserted meta color-scheme applies
-    test: meta-color-scheme-insert.html
-  - subtest: Inserted meta color-scheme before existing in head applies
-    test: meta-color-scheme-insert.html
-  - subtest: Meta color-scheme without content attribute has no effect.
-    test: meta-color-scheme-no-content-value.html
-  - subtest: Author origin style rule overrides meta color-scheme.
-    test: meta-color-scheme-presentational-hint.html
-  - subtest: Meta color-scheme applies.
-    test: meta-color-scheme-remove-head.html
-  - subtest: Initial value after removing head including meta color-scheme.
-    test: meta-color-scheme-remove-head.html
-  - subtest: First meta applies.
-    test: meta-color-scheme-remove.html
-  - subtest: Second meta applies after first one is removed.
-    test: meta-color-scheme-remove.html
-  - subtest: Initial color-scheme with both meta elements removed.
-    test: meta-color-scheme-remove.html
-  - subtest: Meta color-scheme in head applies.
-    test: meta-color-scheme-single-value-in-head.html
-  - subtest: Meta color-scheme in shadow tree does not apply.
-    test: meta-color-scheme-single-value-in-shadow-tree.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1667168
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1667168
+      results:
+        - test: meta-color-scheme-attribute-changes.html
+          subtest: Meta color-scheme initially 'dark'.
+        - test: meta-color-scheme-attribute-changes.html
+          subtest: Removed name attribute from meta color-scheme.
+        - test: meta-color-scheme-attribute-changes.html
+          subtest: Set meta name to color-scheme.
+        - test: meta-color-scheme-attribute-changes.html
+          subtest: Set content attribute of meta color-scheme to empty string.
+        - test: meta-color-scheme-attribute-changes.html
+          subtest: Set content attribute of meta color-scheme to an invalid value.
+        - test: meta-color-scheme-attribute-changes.html
+          subtest: Set content attribute of meta color-scheme to 'light'.
+        - test: meta-color-scheme-attribute-changes.html
+          subtest: Removed the content attribute of meta color-scheme.
+        - test: meta-color-scheme-empty-content-value.html
+          subtest: Meta color-scheme with empty content attribute has no effect.
+        - test: meta-color-scheme-first-valid-applies.html
+          subtest: Tree order decides which meta color-scheme applies.
+        - test: meta-color-scheme-insert.html
+          subtest: Initial color-scheme
+        - test: meta-color-scheme-insert.html
+          subtest: Inserted meta color-scheme applies
+        - test: meta-color-scheme-insert.html
+          subtest: Inserted meta color-scheme before existing in head applies
+        - test: meta-color-scheme-no-content-value.html
+          subtest: Meta color-scheme without content attribute has no effect.
+        - test: meta-color-scheme-presentational-hint.html
+          subtest: Author origin style rule overrides meta color-scheme.
+        - test: meta-color-scheme-remove-head.html
+          subtest: Meta color-scheme applies.
+        - test: meta-color-scheme-remove-head.html
+          subtest: Initial value after removing head including meta color-scheme.
+        - test: meta-color-scheme-remove.html
+          subtest: First meta applies.
+        - test: meta-color-scheme-remove.html
+          subtest: Second meta applies after first one is removed.
+        - test: meta-color-scheme-remove.html
+          subtest: Initial color-scheme with both meta elements removed.
+        - test: meta-color-scheme-single-value-in-head.html
+          subtest: Meta color-scheme in head applies.
+        - test: meta-color-scheme-single-value-in-shadow-tree.html
+          subtest: Meta color-scheme in shadow tree does not apply.

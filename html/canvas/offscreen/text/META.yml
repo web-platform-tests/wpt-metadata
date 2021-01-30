@@ -1,36 +1,36 @@
 links:
-- product: chrome
-  results:
-  - test: 2d.text.measure.width.space.html
-  - test: 2d.text.measure.width.space.worker.html
-  url: https://crbug.com/1066953
-- product: webkitgtk
-  results:
-  - test: '*'
-  url: https://bugs.webkit.org/show_bug.cgi?id=186759
-- product: firefox
-  results:
-  - subtest: textAlign end with ltr is the right edge
-    test: 2d.text.draw.align.end.ltr.html
-  - subtest: textAlign end with ltr is the right edge
-    test: 2d.text.draw.align.end.ltr.worker.html
-  - subtest: textAlign end with rtl is the left edge
-    test: 2d.text.draw.align.end.rtl.html
-  - subtest: textAlign end with rtl is the left edge
-    test: 2d.text.draw.align.end.rtl.worker.html
-  - subtest: textAlign start with ltr is the left edge
-    test: 2d.text.draw.align.start.ltr.html
-  - subtest: textAlign start with ltr is the left edge
-    test: 2d.text.draw.align.start.ltr.worker.html
-  - subtest: textAlign start with rtl is the right edge
-    test: 2d.text.draw.align.start.rtl.html
-  - subtest: textAlign start with rtl is the right edge
-    test: 2d.text.draw.align.start.rtl.worker.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1676454
-- product: firefox
-  results:
-  - subtest: fillText handles maxWidth correctly
-    test: 2d.text.draw.fill.maxWidth.zero.html
-  - subtest: fillText handles maxWidth correctly
-    test: 2d.text.draw.fill.maxWidth.zero.worker.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1688982
+    - product: chrome
+      url: https://crbug.com/1066953
+      results:
+        - test: 2d.text.measure.width.space.html
+        - test: 2d.text.measure.width.space.worker.html
+    - product: webkitgtk
+      url: https://bugs.webkit.org/show_bug.cgi?id=186759
+      results:
+        - test: '*'
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1676454
+      results:
+        - test: 2d.text.draw.align.end.ltr.html
+          subtest: textAlign end with ltr is the right edge
+        - test: 2d.text.draw.align.end.ltr.worker.html
+          subtest: textAlign end with ltr is the right edge
+        - test: 2d.text.draw.align.end.rtl.html
+          subtest: textAlign end with rtl is the left edge
+        - test: 2d.text.draw.align.end.rtl.worker.html
+          subtest: textAlign end with rtl is the left edge
+        - test: 2d.text.draw.align.start.ltr.html
+          subtest: textAlign start with ltr is the left edge
+        - test: 2d.text.draw.align.start.ltr.worker.html
+          subtest: textAlign start with ltr is the left edge
+        - test: 2d.text.draw.align.start.rtl.html
+          subtest: textAlign start with rtl is the right edge
+        - test: 2d.text.draw.align.start.rtl.worker.html
+          subtest: textAlign start with rtl is the right edge
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1688982
+      results:
+        - test: 2d.text.draw.fill.maxWidth.zero.html
+          subtest: fillText handles maxWidth correctly
+        - test: 2d.text.draw.fill.maxWidth.zero.worker.html
+          subtest: fillText handles maxWidth correctly

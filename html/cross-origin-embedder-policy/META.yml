@@ -1,102 +1,80 @@
 links:
-- product: firefox
-  results:
-  - subtest: 'parent: |header(cross-origin-embedder-policy-report-only,require-corp),
-      target: |header(cross-origin-embedder-policy,require-corp), with empty frame:
-      true'
-    test: reporting-navigation.https.html
-  - subtest: 'parent: |header(cross-origin-embedder-policy-report-only,require-corp),
-      target: |header(cross-origin-resource-policy,cross-origin), with empty frame:
-      true'
-    test: reporting-navigation.https.html
-  - subtest: 'parent: |header(cross-origin-embedder-policy,require-corp), target:
-      |header(cross-origin-embedder-policy-report-only,require-corp)|header(cross-origin-resource-policy,cross-origin),
-      with empty frame: true'
-    test: reporting-navigation.https.html
-  - subtest: 'parent: |header(cross-origin-embedder-policy-report-only,require-corp),
-      target: |header(cross-origin-resource-policy,cross-origin), with empty frame:
-      false'
-    test: reporting-navigation.https.html
-  - subtest: 'parent: |header(cross-origin-embedder-policy,require-corp), target:
-      |header(cross-origin-embedder-policy,require-corp), with empty frame: false'
-    test: reporting-navigation.https.html
-  - subtest: 'parent: |header(cross-origin-embedder-policy,require-corp), target:
-      |header(cross-origin-embedder-policy-report-only,require-corp)|header(cross-origin-resource-policy,cross-origin),
-      with empty frame: false'
-    test: reporting-navigation.https.html
-  - subtest: 'parent: |header(cross-origin-embedder-policy-report-only,require-corp),
-      target: |header(cross-origin-embedder-policy,require-corp), with empty frame:
-      false'
-    test: reporting-navigation.https.html
-  - subtest: 'parent: |header(cross-origin-embedder-policy,require-corp), target:
-      |header(cross-origin-resource-policy,cross-origin), with empty frame: true'
-    test: reporting-navigation.https.html
-  - subtest: 'parent: |header(cross-origin-embedder-policy,require-corp), target:
-      |header(cross-origin-resource-policy,cross-origin), with empty frame: false'
-    test: reporting-navigation.https.html
-  - subtest: 'parent: |header(cross-origin-embedder-policy,require-corp), target:
-      (none), with empty frame: false'
-    test: reporting-navigation.https.html
-  - subtest: 'parent: |header(cross-origin-embedder-policy-report-only,require-corp),
-      target: (none), with empty frame: false'
-    test: reporting-navigation.https.html
-  - subtest: 'parent: |header(cross-origin-embedder-policy,require-corp), target:
-      |header(cross-origin-embedder-policy,require-corp), with empty frame: true'
-    test: reporting-navigation.https.html
-  - subtest: 'parent: |header(cross-origin-embedder-policy-report-only,require-corp),
-      target: (none), with empty frame: true'
-    test: reporting-navigation.https.html
-  - subtest: 'parent: |header(cross-origin-embedder-policy,require-corp), target:
-      (none), with empty frame: true'
-    test: reporting-navigation.https.html
-  - subtest: Fetch cross-origin no-cors cors-enabled corp-undefined from network and
-      CacheStorage.
-    test: require-corp-load-from-cache-storage.https.html
-  - subtest: Fetch cross-origin no-cors cors-disabled corp-undefined from network
-      and CacheStorage.
-    test: require-corp-load-from-cache-storage.https.html
-  - subtest: importScripts() fails for a script with no corp.
-    test: require-corp-sw.https.html
-  - test: cache-storage-reporting-document.https.html
-  - subtest: '[document] blocked during redirect'
-    test: reporting-subresource-corp.https.html
-  - subtest: '[service worker] blocked due to COEP'
-    test: reporting-subresource-corp.https.html
-  - subtest: '[between service worker and page] blocked due to COEP'
-    test: reporting-subresource-corp.https.html
-  - subtest: '[document] blocked due to COEP'
-    test: reporting-subresource-corp.https.html
-  - subtest: '[between service worker and page] blocked during redirect'
-    test: reporting-subresource-corp.https.html
-  - subtest: '[service worker] blocked during redirect'
-    test: reporting-subresource-corp.https.html
-  - subtest: 'CORP: same-site is checked and blocked.'
-    test: require-corp.https.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1649264
-- product: firefox
-  results:
-  - test: header-parsing.https.html
-  - subtest: navigation allowed for ["require-corp",""]
-    test: header-parsing.https.html
-  - subtest: navigation allowed for ["","require-corp"]
-    test: header-parsing.https.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1661440
-- product: firefox
-  results:
-  - subtest: subresource CORP
-    test: reporting-to-endpoint.https.html
-  - subtest: navigation CORP
-    test: reporting-to-endpoint.https.html
-  - subtest: COEP violation on nested frame navigation
-    test: reporting-to-endpoint.https.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1666276
-- product: firefox
-  results:
-  - subtest: 'shared worker: withCoopCoep = true'
-    test: cross-origin-isolated-permission.https.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1667169
-- product: firefox
-  results:
-  - subtest: 'destination: script'
-    test: reporting-subresource-corp.https.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1684138
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1649264
+      results:
+        - test: reporting-navigation.https.html
+          subtest: 'parent: |header(cross-origin-embedder-policy-report-only,require-corp), target: |header(cross-origin-embedder-policy,require-corp), with empty frame: true'
+        - test: reporting-navigation.https.html
+          subtest: 'parent: |header(cross-origin-embedder-policy-report-only,require-corp), target: |header(cross-origin-resource-policy,cross-origin), with empty frame: true'
+        - test: reporting-navigation.https.html
+          subtest: 'parent: |header(cross-origin-embedder-policy,require-corp), target: |header(cross-origin-embedder-policy-report-only,require-corp)|header(cross-origin-resource-policy,cross-origin), with empty frame: true'
+        - test: reporting-navigation.https.html
+          subtest: 'parent: |header(cross-origin-embedder-policy-report-only,require-corp), target: |header(cross-origin-resource-policy,cross-origin), with empty frame: false'
+        - test: reporting-navigation.https.html
+          subtest: 'parent: |header(cross-origin-embedder-policy,require-corp), target: |header(cross-origin-embedder-policy,require-corp), with empty frame: false'
+        - test: reporting-navigation.https.html
+          subtest: 'parent: |header(cross-origin-embedder-policy,require-corp), target: |header(cross-origin-embedder-policy-report-only,require-corp)|header(cross-origin-resource-policy,cross-origin), with empty frame: false'
+        - test: reporting-navigation.https.html
+          subtest: 'parent: |header(cross-origin-embedder-policy-report-only,require-corp), target: |header(cross-origin-embedder-policy,require-corp), with empty frame: false'
+        - test: reporting-navigation.https.html
+          subtest: 'parent: |header(cross-origin-embedder-policy,require-corp), target: |header(cross-origin-resource-policy,cross-origin), with empty frame: true'
+        - test: reporting-navigation.https.html
+          subtest: 'parent: |header(cross-origin-embedder-policy,require-corp), target: |header(cross-origin-resource-policy,cross-origin), with empty frame: false'
+        - test: reporting-navigation.https.html
+          subtest: 'parent: |header(cross-origin-embedder-policy,require-corp), target: (none), with empty frame: false'
+        - test: reporting-navigation.https.html
+          subtest: 'parent: |header(cross-origin-embedder-policy-report-only,require-corp), target: (none), with empty frame: false'
+        - test: reporting-navigation.https.html
+          subtest: 'parent: |header(cross-origin-embedder-policy,require-corp), target: |header(cross-origin-embedder-policy,require-corp), with empty frame: true'
+        - test: reporting-navigation.https.html
+          subtest: 'parent: |header(cross-origin-embedder-policy-report-only,require-corp), target: (none), with empty frame: true'
+        - test: reporting-navigation.https.html
+          subtest: 'parent: |header(cross-origin-embedder-policy,require-corp), target: (none), with empty frame: true'
+        - test: require-corp-load-from-cache-storage.https.html
+          subtest: Fetch cross-origin no-cors cors-enabled corp-undefined from network and CacheStorage.
+        - test: require-corp-load-from-cache-storage.https.html
+          subtest: Fetch cross-origin no-cors cors-disabled corp-undefined from network and CacheStorage.
+        - test: require-corp-sw.https.html
+          subtest: importScripts() fails for a script with no corp.
+        - test: cache-storage-reporting-document.https.html
+        - test: reporting-subresource-corp.https.html
+          subtest: '[document] blocked during redirect'
+        - test: reporting-subresource-corp.https.html
+          subtest: '[service worker] blocked due to COEP'
+        - test: reporting-subresource-corp.https.html
+          subtest: '[between service worker and page] blocked due to COEP'
+        - test: reporting-subresource-corp.https.html
+          subtest: '[document] blocked due to COEP'
+        - test: reporting-subresource-corp.https.html
+          subtest: '[between service worker and page] blocked during redirect'
+        - test: reporting-subresource-corp.https.html
+          subtest: '[service worker] blocked during redirect'
+        - test: require-corp.https.html
+          subtest: 'CORP: same-site is checked and blocked.'
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1661440
+      results:
+        - test: header-parsing.https.html
+        - test: header-parsing.https.html
+          subtest: navigation allowed for ["require-corp",""]
+        - test: header-parsing.https.html
+          subtest: navigation allowed for ["","require-corp"]
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1666276
+      results:
+        - test: reporting-to-endpoint.https.html
+          subtest: subresource CORP
+        - test: reporting-to-endpoint.https.html
+          subtest: navigation CORP
+        - test: reporting-to-endpoint.https.html
+          subtest: COEP violation on nested frame navigation
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1667169
+      results:
+        - test: cross-origin-isolated-permission.https.html
+          subtest: 'shared worker: withCoopCoep = true'
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1684138
+      results:
+        - test: reporting-subresource-corp.https.html
+          subtest: 'destination: script'

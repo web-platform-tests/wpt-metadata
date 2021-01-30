@@ -1,72 +1,67 @@
 links:
-- product: firefox
-  results:
-  - test: about-blank.https.sub.html
-  - subtest: 'parent to about:blank: message event must occur'
-    test: about-blank.https.sub.html
-  - subtest: 'parent to about:blank: setting document.domain must give sync access'
-    test: about-blank.https.sub.html
-  - subtest: 'about:blank to child2: messageerror event must occur'
-    test: about-blank.https.sub.html
-  - subtest: 'about:blank to child2: setting document.domain must not give sync access'
-    test: about-blank.https.sub.html
-  - subtest: 'child2 to about:blank: messageerror event must occur'
-    test: about-blank.https.sub.html
-  - subtest: 'child2 to about:blank: setting document.domain must not give sync access'
-    test: about-blank.https.sub.html
-  - subtest: 'parent: originAgentCluster must equal true'
-    test: about-blank.https.sub.html
-  - subtest: 'about:blank: originAgentCluster must equal true'
-    test: about-blank.https.sub.html
-  - subtest: 'child2: originAgentCluster must equal false'
-    test: about-blank.https.sub.html
-  - subtest: Setting document.domain must not change same-originness
-    test: document-domain.sub.https.html
-  - subtest: Having an origin-keyed subdomain child try to set document.domain must
-      not change the document.domain value it sees
-    test: document-domain.sub.https.html
-  - subtest: 'Before navigation: parent to child1: messageerror event must occur'
-    test: going-back.sub.https.html
-  - subtest: 'Before navigation: parent to child1: setting document.domain must not
-      give sync access'
-    test: going-back.sub.https.html
-  - subtest: 'After navigation: parent to child2: messageerror event must occur'
-    test: going-back.sub.https.html
-  - subtest: 'After navigation: parent to child2: setting document.domain must not
-      give sync access'
-    test: going-back.sub.https.html
-  - subtest: 'After back: parent to child1: messageerror event must occur'
-    test: going-back.sub.https.html
-  - subtest: 'After back: parent to child1: setting document.domain must not give
-      sync access'
-    test: going-back.sub.https.html
-  - subtest: 'After back: parent to child2: messageerror event must occur'
-    test: going-back.sub.https.html
-  - subtest: 'After back: parent to child2: setting document.domain must not give
-      sync access'
-    test: going-back.sub.https.html
-  - subtest: 'parent: originAgentCluster must equal false'
-    test: insecure-http.sub.html
-  - subtest: 'child: originAgentCluster must equal false'
-    test: insecure-http.sub.html
-  - subtest: 'Before: messageerror event must occur'
-    test: removing-iframes.sub.https.html
-  - subtest: 'Before: setting document.domain must not give sync access'
-    test: removing-iframes.sub.https.html
-  - subtest: 'parent: originAgentCluster must equal true'
-    test: removing-iframes.sub.https.html
-  - subtest: 'child1: originAgentCluster must equal false'
-    test: removing-iframes.sub.https.html
-  - subtest: 'Parent to child2: messageerror event must occur'
-    test: removing-iframes.sub.https.html
-  - subtest: 'Parent to child2: setting document.domain must not give sync access'
-    test: removing-iframes.sub.https.html
-  - subtest: 'Parent to child3: messageerror event must occur'
-    test: removing-iframes.sub.https.html
-  - subtest: 'Parent to child3: setting document.domain must not give sync access'
-    test: removing-iframes.sub.https.html
-  - subtest: 'child2: originAgentCluster must equal false'
-    test: removing-iframes.sub.https.html
-  - subtest: 'child3: originAgentCluster must equal false'
-    test: removing-iframes.sub.https.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1686555
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1686555
+      results:
+        - test: about-blank.https.sub.html
+        - test: about-blank.https.sub.html
+          subtest: 'parent to about:blank: message event must occur'
+        - test: about-blank.https.sub.html
+          subtest: 'parent to about:blank: setting document.domain must give sync access'
+        - test: about-blank.https.sub.html
+          subtest: 'about:blank to child2: messageerror event must occur'
+        - test: about-blank.https.sub.html
+          subtest: 'about:blank to child2: setting document.domain must not give sync access'
+        - test: about-blank.https.sub.html
+          subtest: 'child2 to about:blank: messageerror event must occur'
+        - test: about-blank.https.sub.html
+          subtest: 'child2 to about:blank: setting document.domain must not give sync access'
+        - test: about-blank.https.sub.html
+          subtest: 'parent: originAgentCluster must equal true'
+        - test: about-blank.https.sub.html
+          subtest: 'about:blank: originAgentCluster must equal true'
+        - test: about-blank.https.sub.html
+          subtest: 'child2: originAgentCluster must equal false'
+        - test: document-domain.sub.https.html
+          subtest: Setting document.domain must not change same-originness
+        - test: document-domain.sub.https.html
+          subtest: Having an origin-keyed subdomain child try to set document.domain must not change the document.domain value it sees
+        - test: going-back.sub.https.html
+          subtest: 'Before navigation: parent to child1: messageerror event must occur'
+        - test: going-back.sub.https.html
+          subtest: 'Before navigation: parent to child1: setting document.domain must not give sync access'
+        - test: going-back.sub.https.html
+          subtest: 'After navigation: parent to child2: messageerror event must occur'
+        - test: going-back.sub.https.html
+          subtest: 'After navigation: parent to child2: setting document.domain must not give sync access'
+        - test: going-back.sub.https.html
+          subtest: 'After back: parent to child1: messageerror event must occur'
+        - test: going-back.sub.https.html
+          subtest: 'After back: parent to child1: setting document.domain must not give sync access'
+        - test: going-back.sub.https.html
+          subtest: 'After back: parent to child2: messageerror event must occur'
+        - test: going-back.sub.https.html
+          subtest: 'After back: parent to child2: setting document.domain must not give sync access'
+        - test: insecure-http.sub.html
+          subtest: 'parent: originAgentCluster must equal false'
+        - test: insecure-http.sub.html
+          subtest: 'child: originAgentCluster must equal false'
+        - test: removing-iframes.sub.https.html
+          subtest: 'Before: messageerror event must occur'
+        - test: removing-iframes.sub.https.html
+          subtest: 'Before: setting document.domain must not give sync access'
+        - test: removing-iframes.sub.https.html
+          subtest: 'parent: originAgentCluster must equal true'
+        - test: removing-iframes.sub.https.html
+          subtest: 'child1: originAgentCluster must equal false'
+        - test: removing-iframes.sub.https.html
+          subtest: 'Parent to child2: messageerror event must occur'
+        - test: removing-iframes.sub.https.html
+          subtest: 'Parent to child2: setting document.domain must not give sync access'
+        - test: removing-iframes.sub.https.html
+          subtest: 'Parent to child3: messageerror event must occur'
+        - test: removing-iframes.sub.https.html
+          subtest: 'Parent to child3: setting document.domain must not give sync access'
+        - test: removing-iframes.sub.https.html
+          subtest: 'child2: originAgentCluster must equal false'
+        - test: removing-iframes.sub.https.html
+          subtest: 'child3: originAgentCluster must equal false'

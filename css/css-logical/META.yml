@@ -1,50 +1,49 @@
 links:
-- product: firefox
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=137688
-  results:
-  - test: logical-box-inset.html
-    subtest: Test that inset-inline shorthand sets longhands and serializes correctly.
-  - test: logical-box-inset.html
-    subtest: Test that inset shorthand sets longhands and serializes correctly.
-  - test: logical-box-inset.html
-    subtest: Test that inset-block shorthand sets longhands and serializes correctly.
-  - test: logical-box-margin.html
-    subtest: Test that margin-inline shorthand sets longhands and serializes correctly.
-  - test: logical-box-margin.html
-    subtest: Test that margin shorthand sets longhands and serializes correctly.
-  - test: logical-box-margin.html
-    subtest: Test that margin-block shorthand sets longhands and serializes correctly.
-  - test: logical-box-padding.html
-    subtest: Test that padding-block shorthand sets longhands and serializes correctly.
-  - test: logical-box-padding.html
-    subtest: Test that padding-inline shorthand sets longhands and serializes correctly.
-  - test: logical-box-padding.html
-    subtest: Test that padding shorthand sets longhands and serializes correctly.
-- product: firefox
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1289155
-  results:
-  - test: animation-001.html
-    subtest: Logical shorthands follow the usual prioritization based on number of
-      component longhands
-- product: firefox
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1520069
-  results:
-  - test: animation-001.html
-    subtest: Physical shorthands win over logical shorthands
-  - test: animation-001.html
-    subtest: Physical shorthands using variables win over logical shorthands
-- product: safari
-  url: https://bugs.webkit.org/show_bug.cgi?id=190032
-  results:
-  - test: animation-003.tentative.html
-    status: FAIL
-- product: webkitgtk
-  url: https://bugs.webkit.org/show_bug.cgi?id=190032
-  results:
-  - test: animation-003.tentative.html
-    status: FAIL
-- product: chrome
-  url: https://crbug.com/865579
-  results:
-  - test: animation-002.html
-    status: FAIL
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=137688
+      results:
+        - test: logical-box-inset.html
+          subtest: Test that inset-inline shorthand sets longhands and serializes correctly.
+        - test: logical-box-inset.html
+          subtest: Test that inset shorthand sets longhands and serializes correctly.
+        - test: logical-box-inset.html
+          subtest: Test that inset-block shorthand sets longhands and serializes correctly.
+        - test: logical-box-margin.html
+          subtest: Test that margin-inline shorthand sets longhands and serializes correctly.
+        - test: logical-box-margin.html
+          subtest: Test that margin shorthand sets longhands and serializes correctly.
+        - test: logical-box-margin.html
+          subtest: Test that margin-block shorthand sets longhands and serializes correctly.
+        - test: logical-box-padding.html
+          subtest: Test that padding-block shorthand sets longhands and serializes correctly.
+        - test: logical-box-padding.html
+          subtest: Test that padding-inline shorthand sets longhands and serializes correctly.
+        - test: logical-box-padding.html
+          subtest: Test that padding shorthand sets longhands and serializes correctly.
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1289155
+      results:
+        - test: animation-001.html
+          subtest: Logical shorthands follow the usual prioritization based on number of component longhands
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1520069
+      results:
+        - test: animation-001.html
+          subtest: Physical shorthands win over logical shorthands
+        - test: animation-001.html
+          subtest: Physical shorthands using variables win over logical shorthands
+    - product: safari
+      url: https://bugs.webkit.org/show_bug.cgi?id=190032
+      results:
+        - test: animation-003.tentative.html
+          status: FAIL
+    - product: webkitgtk
+      url: https://bugs.webkit.org/show_bug.cgi?id=190032
+      results:
+        - test: animation-003.tentative.html
+          status: FAIL
+    - product: chrome
+      url: https://crbug.com/865579
+      results:
+        - test: animation-002.html
+          status: FAIL
