@@ -1,13 +1,10 @@
 links:
-- product: firefox
-  results:
-  - subtest: Window's associated Document object is used for finding named objects
-      (<object> with browsing ccontext via srcdoc <iframe)>
-    test: navigated-named-objects.window.html
-  - subtest: Window's associated Document object is used for finding named objects
-      (<object> with browsing ccontext via same-origin <iframe)>
-    test: navigated-named-objects.window.html
-  - subtest: Window's associated Document object is used for finding named objects
-      (<object> with browsing ccontext via cross-site <iframe)>
-    test: navigated-named-objects.window.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1649264
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1649264
+      results:
+        - test: navigated-named-objects.window.html
+          subtest: Window's associated Document object is used for finding named objects (<object> with browsing ccontext via srcdoc <iframe)>
+        - test: navigated-named-objects.window.html
+          subtest: Window's associated Document object is used for finding named objects (<object> with browsing ccontext via same-origin <iframe)>
+        - test: navigated-named-objects.window.html
+          subtest: Window's associated Document object is used for finding named objects (<object> with browsing ccontext via cross-site <iframe)>

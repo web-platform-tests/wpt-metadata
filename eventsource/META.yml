@@ -1,12 +1,12 @@
 links:
-- product: firefox
-  results:
-  - subtest: 'EventSource: id field set to %00x'
-    test: format-field-id-null.window.html
-  - subtest: 'EventSource: id field set to x%00'
-    test: format-field-id-null.window.html
-  - subtest: 'EventSource: id field set to x%00x'
-    test: format-field-id-null.window.html
-  - subtest: 'EventSource: id field set to %20%00'
-    test: format-field-id-null.window.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1646744
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1646744
+      results:
+        - test: format-field-id-null.window.html
+          subtest: 'EventSource: id field set to %00x'
+        - test: format-field-id-null.window.html
+          subtest: 'EventSource: id field set to x%00'
+        - test: format-field-id-null.window.html
+          subtest: 'EventSource: id field set to x%00x'
+        - test: format-field-id-null.window.html
+          subtest: 'EventSource: id field set to %20%00'

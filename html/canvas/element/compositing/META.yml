@@ -1,11 +1,11 @@
 links:
-- product: webkitgtk
-  results:
-  - status: FAIL
-    test: 2d.composite.globalAlpha.canvascopy.html
-  url: https://bugs.webkit.org/show_bug.cgi?id=202459
-- product: firefox
-  results:
-  - subtest: 'Canvas test: 2d.composite.operation.clear'
-    test: 2d.composite.operation.clear.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1646754
+    - product: webkitgtk
+      url: https://bugs.webkit.org/show_bug.cgi?id=202459
+      results:
+        - test: 2d.composite.globalAlpha.canvascopy.html
+          status: FAIL
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1646754
+      results:
+        - test: 2d.composite.operation.clear.html
+          subtest: 'Canvas test: 2d.composite.operation.clear'

@@ -1,67 +1,66 @@
 links:
-- product: firefox
-  results:
-  - subtest: Property color-scheme value 'initial'
-    test: color-scheme-computed.html
-  - subtest: Property color-scheme value 'revert'
-    test: color-scheme-computed.html
-  - subtest: Property color-scheme value 'light only'
-    test: color-scheme-computed.html
-  - subtest: Property color-scheme value 'light unknown'
-    test: color-scheme-computed.html
-  - subtest: Property color-scheme value 'none'
-    test: color-scheme-computed.html
-  - subtest: Property color-scheme value 'only light'
-    test: color-scheme-computed.html
-  - subtest: Property color-scheme value 'light light'
-    test: color-scheme-computed.html
-  - subtest: Property color-scheme value 'dark light'
-    test: color-scheme-computed.html
-  - subtest: Property color-scheme value 'inherit'
-    test: color-scheme-computed.html
-  - subtest: Property color-scheme value 'normal'
-    test: color-scheme-computed.html
-  - subtest: Property color-scheme value 'unset'
-    test: color-scheme-computed.html
-  - subtest: Property color-scheme value 'light dark'
-    test: color-scheme-computed.html
-  - subtest: e.style['color-scheme'] = "light purple" should set the property value
-    test: color-scheme-valid.html
-  - subtest: e.style['color-scheme'] = "dark" should set the property value
-    test: color-scheme-valid.html
-  - subtest: e.style['color-scheme'] = "initial" should set the property value
-    test: color-scheme-valid.html
-  - subtest: e.style['color-scheme'] = "light dark" should set the property value
-    test: color-scheme-valid.html
-  - subtest: e.style['color-scheme'] = "only light dark" should set the property value
-    test: color-scheme-valid.html
-  - subtest: e.style['color-scheme'] = "light" should set the property value
-    test: color-scheme-valid.html
-  - subtest: e.style['color-scheme'] = "only" should set the property value
-    test: color-scheme-valid.html
-  - subtest: e.style['color-scheme'] = "light only" should set the property value
-    test: color-scheme-valid.html
-  - subtest: e.style['color-scheme'] = "inherit" should set the property value
-    test: color-scheme-valid.html
-  - subtest: e.style['color-scheme'] = "dark dark" should set the property value
-    test: color-scheme-valid.html
-  - subtest: e.style['color-scheme'] = "purple dark interesting" should set the property
-      value
-    test: color-scheme-valid.html
-  - subtest: e.style['color-scheme'] = "only light" should set the property value
-    test: color-scheme-valid.html
-  - subtest: e.style['color-scheme'] = "dark light" should set the property value
-    test: color-scheme-valid.html
-  - subtest: e.style['color-scheme'] = "light none" should set the property value
-    test: color-scheme-valid.html
-  - subtest: e.style['color-scheme'] = "revert" should set the property value
-    test: color-scheme-valid.html
-  - subtest: e.style['color-scheme'] = "none" should set the property value
-    test: color-scheme-valid.html
-  - subtest: e.style['color-scheme'] = "normal" should set the property value
-    test: color-scheme-valid.html
-  - subtest: e.style['color-scheme'] = "unset" should set the property value
-    test: color-scheme-valid.html
-  - subtest: e.style['color-scheme'] = "light light" should set the property value
-    test: color-scheme-valid.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1643828
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1643828
+      results:
+        - test: color-scheme-computed.html
+          subtest: Property color-scheme value 'initial'
+        - test: color-scheme-computed.html
+          subtest: Property color-scheme value 'revert'
+        - test: color-scheme-computed.html
+          subtest: Property color-scheme value 'light only'
+        - test: color-scheme-computed.html
+          subtest: Property color-scheme value 'light unknown'
+        - test: color-scheme-computed.html
+          subtest: Property color-scheme value 'none'
+        - test: color-scheme-computed.html
+          subtest: Property color-scheme value 'only light'
+        - test: color-scheme-computed.html
+          subtest: Property color-scheme value 'light light'
+        - test: color-scheme-computed.html
+          subtest: Property color-scheme value 'dark light'
+        - test: color-scheme-computed.html
+          subtest: Property color-scheme value 'inherit'
+        - test: color-scheme-computed.html
+          subtest: Property color-scheme value 'normal'
+        - test: color-scheme-computed.html
+          subtest: Property color-scheme value 'unset'
+        - test: color-scheme-computed.html
+          subtest: Property color-scheme value 'light dark'
+        - test: color-scheme-valid.html
+          subtest: e.style['color-scheme'] = "light purple" should set the property value
+        - test: color-scheme-valid.html
+          subtest: e.style['color-scheme'] = "dark" should set the property value
+        - test: color-scheme-valid.html
+          subtest: e.style['color-scheme'] = "initial" should set the property value
+        - test: color-scheme-valid.html
+          subtest: e.style['color-scheme'] = "light dark" should set the property value
+        - test: color-scheme-valid.html
+          subtest: e.style['color-scheme'] = "only light dark" should set the property value
+        - test: color-scheme-valid.html
+          subtest: e.style['color-scheme'] = "light" should set the property value
+        - test: color-scheme-valid.html
+          subtest: e.style['color-scheme'] = "only" should set the property value
+        - test: color-scheme-valid.html
+          subtest: e.style['color-scheme'] = "light only" should set the property value
+        - test: color-scheme-valid.html
+          subtest: e.style['color-scheme'] = "inherit" should set the property value
+        - test: color-scheme-valid.html
+          subtest: e.style['color-scheme'] = "dark dark" should set the property value
+        - test: color-scheme-valid.html
+          subtest: e.style['color-scheme'] = "purple dark interesting" should set the property value
+        - test: color-scheme-valid.html
+          subtest: e.style['color-scheme'] = "only light" should set the property value
+        - test: color-scheme-valid.html
+          subtest: e.style['color-scheme'] = "dark light" should set the property value
+        - test: color-scheme-valid.html
+          subtest: e.style['color-scheme'] = "light none" should set the property value
+        - test: color-scheme-valid.html
+          subtest: e.style['color-scheme'] = "revert" should set the property value
+        - test: color-scheme-valid.html
+          subtest: e.style['color-scheme'] = "none" should set the property value
+        - test: color-scheme-valid.html
+          subtest: e.style['color-scheme'] = "normal" should set the property value
+        - test: color-scheme-valid.html
+          subtest: e.style['color-scheme'] = "unset" should set the property value
+        - test: color-scheme-valid.html
+          subtest: e.style['color-scheme'] = "light light" should set the property value

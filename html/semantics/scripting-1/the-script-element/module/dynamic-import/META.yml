@@ -1,12 +1,11 @@
 links:
-- product: firefox
-  results:
-  - subtest: Dynamic imports should be loaded with or without the credentials based
-      on the same-origin-ness and the parent script's crossOrigin attribute
-    test: dynamic-imports-credentials.sub.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1342012
-- product: firefox
-  results:
-  - subtest: Cross-origin dynamic import from classic script (crossOrigin=use-credentials)
-    test: dynamic-imports-credentials.sub.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1674887
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1342012
+      results:
+        - test: dynamic-imports-credentials.sub.html
+          subtest: Dynamic imports should be loaded with or without the credentials based on the same-origin-ness and the parent script's crossOrigin attribute
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1674887
+      results:
+        - test: dynamic-imports-credentials.sub.html
+          subtest: Cross-origin dynamic import from classic script (crossOrigin=use-credentials)

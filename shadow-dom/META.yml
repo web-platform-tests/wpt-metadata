@@ -1,52 +1,50 @@
 links:
-- product: safari
-  results:
-  - status: FAIL
-    test: directionality-002.tentative.html
-  url: https://bugs.webkit.org/show_bug.cgi?id=202495
-- product: webkitgtk
-  results:
-  - status: FAIL
-    test: directionality-002.tentative.html
-  url: https://bugs.webkit.org/show_bug.cgi?id=202495
-- product: chrome
-  results:
-  - status: FAIL
-    test: offsetParent-across-shadow-boundaries.html
-  url: https://crbug.com/920069
-- product: chrome
-  results:
-  - subtest: event.path should not exist
-    test: historical.html
-  - subtest: HTMLContentElement should not exist
-    test: historical.html
-  url: https://bugs.chromium.org/p/chromium/issues/detail?id=937746
-- product: firefox
-  results:
-  - subtest: slotchange event must not fire synchronously.
-    test: slots-imperative-api-slotchange.tentative.html
-  - subtest: slotchange event should not fire when assignments do not change assignedNodes.
-    test: slots-imperative-api-slotchange.tentative.html
-  - subtest: slotchange event should not fire when same node is assigned.
-    test: slots-imperative-api-slotchange.tentative.html
-  - subtest: Fire slotchange event when slot's assigned nodes changes.
-    test: slots-imperative-api-slotchange.tentative.html
-  - subtest: Fire slotchange event on previous slot and new slot when node is reassigned.
-    test: slots-imperative-api-slotchange.tentative.html
-  - subtest: Fire slotchange event on node assignment and when assigned node is removed.
-    test: slots-imperative-api-slotchange.tentative.html
-  - subtest: Fire slotchange event when order of assigned nodes changes.
-    test: slots-imperative-api-slotchange.tentative.html
-  - subtest: Fire slotchange event when assigned node is removed.
-    test: slots-imperative-api-slotchange.tentative.html
-  - subtest: Fire slotchange event when removing a slot from Shadows Root that changes
-      its assigned nodes.
-    test: slots-imperative-api-slotchange.tentative.html
-  - subtest: No slotchange event when adding or removing an empty slot.
-    test: slots-imperative-api-slotchange.tentative.html
-  - subtest: No slotchange event when adding another slotable.
-    test: slots-imperative-api-slotchange.tentative.html
-  - subtest: Fire slotchange event when assign node to nested slot, ensure event bubbles
-      ups.
-    test: slots-imperative-api-slotchange.tentative.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1682652
+    - product: safari
+      url: https://bugs.webkit.org/show_bug.cgi?id=202495
+      results:
+        - test: directionality-002.tentative.html
+          status: FAIL
+    - product: webkitgtk
+      url: https://bugs.webkit.org/show_bug.cgi?id=202495
+      results:
+        - test: directionality-002.tentative.html
+          status: FAIL
+    - product: chrome
+      url: https://crbug.com/920069
+      results:
+        - test: offsetParent-across-shadow-boundaries.html
+          status: FAIL
+    - product: chrome
+      url: https://bugs.chromium.org/p/chromium/issues/detail?id=937746
+      results:
+        - test: historical.html
+          subtest: event.path should not exist
+        - test: historical.html
+          subtest: HTMLContentElement should not exist
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1682652
+      results:
+        - test: slots-imperative-api-slotchange.tentative.html
+          subtest: slotchange event must not fire synchronously.
+        - test: slots-imperative-api-slotchange.tentative.html
+          subtest: slotchange event should not fire when assignments do not change assignedNodes.
+        - test: slots-imperative-api-slotchange.tentative.html
+          subtest: slotchange event should not fire when same node is assigned.
+        - test: slots-imperative-api-slotchange.tentative.html
+          subtest: Fire slotchange event when slot's assigned nodes changes.
+        - test: slots-imperative-api-slotchange.tentative.html
+          subtest: Fire slotchange event on previous slot and new slot when node is reassigned.
+        - test: slots-imperative-api-slotchange.tentative.html
+          subtest: Fire slotchange event on node assignment and when assigned node is removed.
+        - test: slots-imperative-api-slotchange.tentative.html
+          subtest: Fire slotchange event when order of assigned nodes changes.
+        - test: slots-imperative-api-slotchange.tentative.html
+          subtest: Fire slotchange event when assigned node is removed.
+        - test: slots-imperative-api-slotchange.tentative.html
+          subtest: Fire slotchange event when removing a slot from Shadows Root that changes its assigned nodes.
+        - test: slots-imperative-api-slotchange.tentative.html
+          subtest: No slotchange event when adding or removing an empty slot.
+        - test: slots-imperative-api-slotchange.tentative.html
+          subtest: No slotchange event when adding another slotable.
+        - test: slots-imperative-api-slotchange.tentative.html
+          subtest: Fire slotchange event when assign node to nested slot, ensure event bubbles ups.

@@ -1,93 +1,91 @@
 links:
-- product: chrome
-  results:
-  - status: FAIL
-    test: marker-supported-properties-in-animation.html
-  url: https://crbug.com/1092652
-- product: firefox
-  results:
-  - subtest: Property animation value '1s linear 2s infinite alternate forwards paused
-      anim' in ::marker
-    test: marker-supported-properties.html
-  - subtest: Property transition value 'display 1s linear 2s' in ::marker
-    test: marker-supported-properties.html
-  - subtest: Property font value 'italic small-caps 900 expanded 25px / 50px Ahem'
-      in ::marker
-    test: marker-supported-properties.html
-  - subtest: Property list-style value 'inside url('foo') decimal' in ::marker
-    test: marker-supported-properties.html
-  - subtest: Transition of font in ::marker
-    test: marker-supported-properties-in-animation.html
-  - subtest: Animation of list-style in ::marker
-    test: marker-supported-properties-in-animation.html
-  - subtest: Animation of font in ::marker
-    test: marker-supported-properties-in-animation.html
-  - subtest: Transition of list-style in ::marker
-    test: marker-supported-properties-in-animation.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1655828
-- product: firefox
-  results:
-  - subtest: Animation of text-transform in ::marker
-    test: marker-supported-properties-in-animation.html
-  - subtest: Transition of text-transform in ::marker
-    test: marker-supported-properties-in-animation.html
-  - subtest: Property text-transform value 'uppercase' in ::marker
-    test: marker-supported-properties.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1662826
-- product: firefox
-  results:
-  - subtest: Animation of hyphens in ::marker
-    test: marker-supported-properties-in-animation.html
-  - subtest: Animation of letter-spacing in ::marker
-    test: marker-supported-properties-in-animation.html
-  - subtest: Animation of line-break in ::marker
-    test: marker-supported-properties-in-animation.html
-  - subtest: Animation of overflow-wrap in ::marker
-    test: marker-supported-properties-in-animation.html
-  - subtest: Animation of tab-size in ::marker
-    test: marker-supported-properties-in-animation.html
-  - subtest: Animation of word-break in ::marker
-    test: marker-supported-properties-in-animation.html
-  - subtest: Animation of word-spacing in ::marker
-    test: marker-supported-properties-in-animation.html
-  - subtest: Animation of text-decoration-skip-ink in ::marker
-    test: marker-supported-properties-in-animation.html
-  - subtest: Animation of text-shadow in ::marker
-    test: marker-supported-properties-in-animation.html
-  - subtest: Transition of hyphens in ::marker
-    test: marker-supported-properties-in-animation.html
-  - subtest: Transition of letter-spacing in ::marker
-    test: marker-supported-properties-in-animation.html
-  - subtest: Transition of line-break in ::marker
-    test: marker-supported-properties-in-animation.html
-  - subtest: Transition of overflow-wrap in ::marker
-    test: marker-supported-properties-in-animation.html
-  - subtest: Transition of tab-size in ::marker
-    test: marker-supported-properties-in-animation.html
-  - subtest: Transition of word-break in ::marker
-    test: marker-supported-properties-in-animation.html
-  - subtest: Transition of word-spacing in ::marker
-    test: marker-supported-properties-in-animation.html
-  - subtest: Transition of text-decoration-skip-ink in ::marker
-    test: marker-supported-properties-in-animation.html
-  - subtest: Transition of text-shadow in ::marker
-    test: marker-supported-properties-in-animation.html
-  - subtest: Property hyphens value 'none' in ::marker
-    test: marker-supported-properties.html
-  - subtest: Property letter-spacing value '10px' in ::marker
-    test: marker-supported-properties.html
-  - subtest: Property line-break value 'anywhere' in ::marker
-    test: marker-supported-properties.html
-  - subtest: Property overflow-wrap value 'anywhere' in ::marker
-    test: marker-supported-properties.html
-  - subtest: Property tab-size value '10px' in ::marker
-    test: marker-supported-properties.html
-  - subtest: Property word-break value 'break-word' in ::marker
-    test: marker-supported-properties.html
-  - subtest: Property word-spacing value '10px' in ::marker
-    test: marker-supported-properties.html
-  - subtest: Property text-decoration-skip-ink value 'none' in ::marker
-    test: marker-supported-properties.html
-  - subtest: Property text-shadow value 'rgb(0, 255, 0) 1px 2px 3px' in ::marker
-    test: marker-supported-properties.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1673735
+    - product: chrome
+      url: https://crbug.com/1092652
+      results:
+        - test: marker-supported-properties-in-animation.html
+          status: FAIL
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1655828
+      results:
+        - test: marker-supported-properties.html
+          subtest: Property animation value '1s linear 2s infinite alternate forwards paused anim' in ::marker
+        - test: marker-supported-properties.html
+          subtest: Property transition value 'display 1s linear 2s' in ::marker
+        - test: marker-supported-properties.html
+          subtest: Property font value 'italic small-caps 900 expanded 25px / 50px Ahem' in ::marker
+        - test: marker-supported-properties.html
+          subtest: Property list-style value 'inside url('foo') decimal' in ::marker
+        - test: marker-supported-properties-in-animation.html
+          subtest: Transition of font in ::marker
+        - test: marker-supported-properties-in-animation.html
+          subtest: Animation of list-style in ::marker
+        - test: marker-supported-properties-in-animation.html
+          subtest: Animation of font in ::marker
+        - test: marker-supported-properties-in-animation.html
+          subtest: Transition of list-style in ::marker
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1662826
+      results:
+        - test: marker-supported-properties-in-animation.html
+          subtest: Animation of text-transform in ::marker
+        - test: marker-supported-properties-in-animation.html
+          subtest: Transition of text-transform in ::marker
+        - test: marker-supported-properties.html
+          subtest: Property text-transform value 'uppercase' in ::marker
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1673735
+      results:
+        - test: marker-supported-properties-in-animation.html
+          subtest: Animation of hyphens in ::marker
+        - test: marker-supported-properties-in-animation.html
+          subtest: Animation of letter-spacing in ::marker
+        - test: marker-supported-properties-in-animation.html
+          subtest: Animation of line-break in ::marker
+        - test: marker-supported-properties-in-animation.html
+          subtest: Animation of overflow-wrap in ::marker
+        - test: marker-supported-properties-in-animation.html
+          subtest: Animation of tab-size in ::marker
+        - test: marker-supported-properties-in-animation.html
+          subtest: Animation of word-break in ::marker
+        - test: marker-supported-properties-in-animation.html
+          subtest: Animation of word-spacing in ::marker
+        - test: marker-supported-properties-in-animation.html
+          subtest: Animation of text-decoration-skip-ink in ::marker
+        - test: marker-supported-properties-in-animation.html
+          subtest: Animation of text-shadow in ::marker
+        - test: marker-supported-properties-in-animation.html
+          subtest: Transition of hyphens in ::marker
+        - test: marker-supported-properties-in-animation.html
+          subtest: Transition of letter-spacing in ::marker
+        - test: marker-supported-properties-in-animation.html
+          subtest: Transition of line-break in ::marker
+        - test: marker-supported-properties-in-animation.html
+          subtest: Transition of overflow-wrap in ::marker
+        - test: marker-supported-properties-in-animation.html
+          subtest: Transition of tab-size in ::marker
+        - test: marker-supported-properties-in-animation.html
+          subtest: Transition of word-break in ::marker
+        - test: marker-supported-properties-in-animation.html
+          subtest: Transition of word-spacing in ::marker
+        - test: marker-supported-properties-in-animation.html
+          subtest: Transition of text-decoration-skip-ink in ::marker
+        - test: marker-supported-properties-in-animation.html
+          subtest: Transition of text-shadow in ::marker
+        - test: marker-supported-properties.html
+          subtest: Property hyphens value 'none' in ::marker
+        - test: marker-supported-properties.html
+          subtest: Property letter-spacing value '10px' in ::marker
+        - test: marker-supported-properties.html
+          subtest: Property line-break value 'anywhere' in ::marker
+        - test: marker-supported-properties.html
+          subtest: Property overflow-wrap value 'anywhere' in ::marker
+        - test: marker-supported-properties.html
+          subtest: Property tab-size value '10px' in ::marker
+        - test: marker-supported-properties.html
+          subtest: Property word-break value 'break-word' in ::marker
+        - test: marker-supported-properties.html
+          subtest: Property word-spacing value '10px' in ::marker
+        - test: marker-supported-properties.html
+          subtest: Property text-decoration-skip-ink value 'none' in ::marker
+        - test: marker-supported-properties.html
+          subtest: Property text-shadow value 'rgb(0, 255, 0) 1px 2px 3px' in ::marker

@@ -1,13 +1,13 @@
 links:
-- product: firefox
-  results:
-  - subtest: Feature-Policy header clipboard-read "none" disallows the top-level document.
-    test: clipboard-read-disabled-by-feature-policy.tentative.https.sub.html
-  - subtest: Feature-Policy header clipboard-read "*" allows the top-level document.
-    test: clipboard-read-enabled-by-feature-policy.tentative.https.sub.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1652051
-- product: firefox
-  results:
-  - subtest: Feature-Policy header clipboard-read "self" allows the top-level document.
-    test: clipboard-read-enabled-on-self-origin-by-feature-policy.tentative.https.sub.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1655754
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1652051
+      results:
+        - test: clipboard-read-disabled-by-feature-policy.tentative.https.sub.html
+          subtest: Feature-Policy header clipboard-read "none" disallows the top-level document.
+        - test: clipboard-read-enabled-by-feature-policy.tentative.https.sub.html
+          subtest: Feature-Policy header clipboard-read "*" allows the top-level document.
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1655754
+      results:
+        - test: clipboard-read-enabled-on-self-origin-by-feature-policy.tentative.https.sub.html
+          subtest: Feature-Policy header clipboard-read "self" allows the top-level document.

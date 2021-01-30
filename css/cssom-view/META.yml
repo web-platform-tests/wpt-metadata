@@ -1,54 +1,51 @@
 links:
-- product: firefox
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1474448
-  results:
-  - test: table-offset-props.html
-    subtest: Caption with margin
-- product: firefox
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1556685
-  results:
-  - test: position-sticky-root-scroller-with-scroll-behavior.html
-    subtest: Sticky elements work with the root (document) scroller
-  - test: scroll-behavior-smooth.html
-    subtest: BODY element scroll-behavior should not propagate to viewport
-- product: safari
-  url: https://bugs.webkit.org/show_bug.cgi?id=182292
-  results:
-  - test: scrollingElement-quirks-dynamic-001.html
-    status: FAIL
-  - test: scrollingElement-quirks-dynamic-002.html
-    status: FAIL
-- product: webkitgtk
-  url: https://bugs.webkit.org/show_bug.cgi?id=182292
-  results:
-  - test: scrollingElement-quirks-dynamic-001.html
-    status: FAIL
-  - test: scrollingElement-quirks-dynamic-002.html
-    status: FAIL
-- product: firefox
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1634112
-  results:
-  - test: idlharness.html
-    subtest: 'Partial interface MouseEvent: member names are unique'
-  - test: idlharness.html
-    subtest: 'CSSPseudoElement interface: operation convertPointFromNode(DOMPointInit,
-      GeometryNode, optional ConvertCoordinateOptions)'
-  - test: idlharness.html
-    subtest: 'Screen interface: existence and properties of interface object'
-  - test: idlharness.html
-    subtest: 'CSSPseudoElement interface: operation convertRectFromNode(DOMRectReadOnly,
-      GeometryNode, optional ConvertCoordinateOptions)'
-  - test: idlharness.html
-    subtest: 'Partial dictionary MouseEventInit: member names are unique'
-  - test: idlharness.html
-    subtest: 'CSSPseudoElement interface: operation convertQuadFromNode(DOMQuadInit,
-      GeometryNode, optional ConvertCoordinateOptions)'
-  - test: idlharness.html
-    subtest: 'Screen interface: existence and properties of interface prototype object'
-  - test: idlharness.html
-    subtest: 'CSSPseudoElement interface: operation getBoxQuads(optional BoxQuadOptions)'
-- product: chrome
-  url: https://crbug.com/1014421
-  results:
-  - test: MediaQueryList-addListener-handleEvent.html
-    status: TIMEOUT
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1474448
+      results:
+        - test: table-offset-props.html
+          subtest: Caption with margin
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1556685
+      results:
+        - test: position-sticky-root-scroller-with-scroll-behavior.html
+          subtest: Sticky elements work with the root (document) scroller
+        - test: scroll-behavior-smooth.html
+          subtest: BODY element scroll-behavior should not propagate to viewport
+    - product: safari
+      url: https://bugs.webkit.org/show_bug.cgi?id=182292
+      results:
+        - test: scrollingElement-quirks-dynamic-001.html
+          status: FAIL
+        - test: scrollingElement-quirks-dynamic-002.html
+          status: FAIL
+    - product: webkitgtk
+      url: https://bugs.webkit.org/show_bug.cgi?id=182292
+      results:
+        - test: scrollingElement-quirks-dynamic-001.html
+          status: FAIL
+        - test: scrollingElement-quirks-dynamic-002.html
+          status: FAIL
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1634112
+      results:
+        - test: idlharness.html
+          subtest: 'Partial interface MouseEvent: member names are unique'
+        - test: idlharness.html
+          subtest: 'CSSPseudoElement interface: operation convertPointFromNode(DOMPointInit, GeometryNode, optional ConvertCoordinateOptions)'
+        - test: idlharness.html
+          subtest: 'Screen interface: existence and properties of interface object'
+        - test: idlharness.html
+          subtest: 'CSSPseudoElement interface: operation convertRectFromNode(DOMRectReadOnly, GeometryNode, optional ConvertCoordinateOptions)'
+        - test: idlharness.html
+          subtest: 'Partial dictionary MouseEventInit: member names are unique'
+        - test: idlharness.html
+          subtest: 'CSSPseudoElement interface: operation convertQuadFromNode(DOMQuadInit, GeometryNode, optional ConvertCoordinateOptions)'
+        - test: idlharness.html
+          subtest: 'Screen interface: existence and properties of interface prototype object'
+        - test: idlharness.html
+          subtest: 'CSSPseudoElement interface: operation getBoxQuads(optional BoxQuadOptions)'
+    - product: chrome
+      url: https://crbug.com/1014421
+      results:
+        - test: MediaQueryList-addListener-handleEvent.html
+          status: TIMEOUT

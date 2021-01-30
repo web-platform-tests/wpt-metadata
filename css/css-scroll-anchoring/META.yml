@@ -1,22 +1,21 @@
 links:
-- product: firefox
-  results:
-  - subtest: Anchor selection accounts for negative positioning.
-    test: negative-layout-overflow.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1517287
-- product: firefox
-  results:
-  - subtest: Line at edge of scrollport shouldn't jump visually when content is inserted
-      before
-    test: text-anchor-in-vertical-rl.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1447743
-- product: firefox
-  results:
-  - subtest: Verify scroll anchoring interaction with fragment scrolls
-    test: fragment-scrolling-anchors.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1637415
-- product: firefox
-  results:
-  - subtest: Anchor selection prioritized focused element.
-    test: focus-prioritized.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1660352
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1517287
+      results:
+        - test: negative-layout-overflow.html
+          subtest: Anchor selection accounts for negative positioning.
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1447743
+      results:
+        - test: text-anchor-in-vertical-rl.html
+          subtest: Line at edge of scrollport shouldn't jump visually when content is inserted before
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1637415
+      results:
+        - test: fragment-scrolling-anchors.html
+          subtest: Verify scroll anchoring interaction with fragment scrolls
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1660352
+      results:
+        - test: focus-prioritized.html
+          subtest: Anchor selection prioritized focused element.

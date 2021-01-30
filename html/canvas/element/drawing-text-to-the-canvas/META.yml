@@ -1,17 +1,17 @@
 links:
-- product: firefox
-  results:
-  - subtest: Testing width advances
-    test: 2d.text.measure.advances.html
-  - subtest: Testing fontBoundingBox
-    test: 2d.text.measure.fontBoundingBox.html
-  - subtest: Testing baselines
-    test: 2d.text.measure.baselines.html
-  - subtest: Testing emHeights
-    test: 2d.text.measure.emHeights.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1646754
-- product: firefox
-  results:
-  - subtest: Testing fontBoundingBox for font ahem
-    test: 2d.text.measure.fontBoundingBox.ahem.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1666598
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1646754
+      results:
+        - test: 2d.text.measure.advances.html
+          subtest: Testing width advances
+        - test: 2d.text.measure.fontBoundingBox.html
+          subtest: Testing fontBoundingBox
+        - test: 2d.text.measure.baselines.html
+          subtest: Testing baselines
+        - test: 2d.text.measure.emHeights.html
+          subtest: Testing emHeights
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1666598
+      results:
+        - test: 2d.text.measure.fontBoundingBox.ahem.html
+          subtest: Testing fontBoundingBox for font ahem

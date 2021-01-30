@@ -1,72 +1,69 @@
 links:
-- product: firefox
-  results:
-  - subtest: drawImage with zero-sized source rectangle draws nothing without exception
-    test: 2d.drawImage.zerosource.html
-  - subtest: drawImage with zero-sized source rectangle from image draws nothing without
-      exception
-    test: 2d.drawImage.zerosource.image.html
-  - subtest: drawImage with zero-sized source rectangle from image draws nothing without
-      exception
-    test: 2d.drawImage.zerosource.image.worker.html
-  - subtest: drawImage with zero-sized source rectangle draws nothing without exception
-    test: 2d.drawImage.zerosource.worker.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1672955
-- product: firefox
-  results:
-  - subtest: 2d
-    test: 2d.drawImage.3arg.worker.html
-  - subtest: 2d
-    test: 2d.drawImage.5arg.worker.html
-  - subtest: 2d
-    test: 2d.drawImage.9arg.basic.worker.html
-  - subtest: 2d
-    test: 2d.drawImage.9arg.destpos.worker.html
-  - subtest: 2d
-    test: 2d.drawImage.9arg.destsize.worker.html
-  - subtest: 2d
-    test: 2d.drawImage.9arg.sourcepos.worker.html
-  - subtest: 2d
-    test: 2d.drawImage.9arg.sourcesize.worker.html
-  - subtest: 2d
-    test: 2d.drawImage.alpha.worker.html
-  - subtest: drawImage() of an APNG draws the poster frame
-    test: 2d.drawImage.animated.poster.worker.html
-  - subtest: 2d
-    test: 2d.drawImage.broken.worker.html
-  - subtest: 2d
-    test: 2d.drawImage.canvas.worker.html
-  - subtest: 2d
-    test: 2d.drawImage.clip.worker.html
-  - subtest: 2d
-    test: 2d.drawImage.composite.worker.html
-  - subtest: 2d
-    test: 2d.drawImage.floatsource.worker.html
-  - subtest: Negative destination width/height represents the correct rectangle
-    test: 2d.drawImage.negativedest.worker.html
-  - subtest: Negative dimensions do not affect the direction of the image
-    test: 2d.drawImage.negativedir.worker.html
-  - subtest: Negative source width/height represents the correct rectangle
-    test: 2d.drawImage.negativesource.worker.html
-  - subtest: drawImage() with Infinity/NaN is ignored
-    test: 2d.drawImage.nonfinite.worker.html
-  - subtest: Stretched images do not get pixels wrapping around the edges
-    test: 2d.drawImage.nowrap.worker.html
-  - subtest: 2d
-    test: 2d.drawImage.null.worker.html
-  - subtest: 2d
-    test: 2d.drawImage.path.worker.html
-  - subtest: 2d
-    test: 2d.drawImage.self.1.worker.html
-  - subtest: 2d
-    test: 2d.drawImage.self.2.worker.html
-  - subtest: drawImage() of an SVG image
-    test: 2d.drawImage.svg.worker.html
-  - subtest: 2d
-    test: 2d.drawImage.transform.worker.html
-  - subtest: Incorrect image types in drawImage do not match any defined overloads,
-      so WebIDL throws a TypeError
-    test: 2d.drawImage.wrongtype.worker.html
-  - subtest: 2d
-    test: 2d.drawImage.zerocanvas.worker.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1688982
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1672955
+      results:
+        - test: 2d.drawImage.zerosource.html
+          subtest: drawImage with zero-sized source rectangle draws nothing without exception
+        - test: 2d.drawImage.zerosource.image.html
+          subtest: drawImage with zero-sized source rectangle from image draws nothing without exception
+        - test: 2d.drawImage.zerosource.image.worker.html
+          subtest: drawImage with zero-sized source rectangle from image draws nothing without exception
+        - test: 2d.drawImage.zerosource.worker.html
+          subtest: drawImage with zero-sized source rectangle draws nothing without exception
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1688982
+      results:
+        - test: 2d.drawImage.3arg.worker.html
+          subtest: 2d
+        - test: 2d.drawImage.5arg.worker.html
+          subtest: 2d
+        - test: 2d.drawImage.9arg.basic.worker.html
+          subtest: 2d
+        - test: 2d.drawImage.9arg.destpos.worker.html
+          subtest: 2d
+        - test: 2d.drawImage.9arg.destsize.worker.html
+          subtest: 2d
+        - test: 2d.drawImage.9arg.sourcepos.worker.html
+          subtest: 2d
+        - test: 2d.drawImage.9arg.sourcesize.worker.html
+          subtest: 2d
+        - test: 2d.drawImage.alpha.worker.html
+          subtest: 2d
+        - test: 2d.drawImage.animated.poster.worker.html
+          subtest: drawImage() of an APNG draws the poster frame
+        - test: 2d.drawImage.broken.worker.html
+          subtest: 2d
+        - test: 2d.drawImage.canvas.worker.html
+          subtest: 2d
+        - test: 2d.drawImage.clip.worker.html
+          subtest: 2d
+        - test: 2d.drawImage.composite.worker.html
+          subtest: 2d
+        - test: 2d.drawImage.floatsource.worker.html
+          subtest: 2d
+        - test: 2d.drawImage.negativedest.worker.html
+          subtest: Negative destination width/height represents the correct rectangle
+        - test: 2d.drawImage.negativedir.worker.html
+          subtest: Negative dimensions do not affect the direction of the image
+        - test: 2d.drawImage.negativesource.worker.html
+          subtest: Negative source width/height represents the correct rectangle
+        - test: 2d.drawImage.nonfinite.worker.html
+          subtest: drawImage() with Infinity/NaN is ignored
+        - test: 2d.drawImage.nowrap.worker.html
+          subtest: Stretched images do not get pixels wrapping around the edges
+        - test: 2d.drawImage.null.worker.html
+          subtest: 2d
+        - test: 2d.drawImage.path.worker.html
+          subtest: 2d
+        - test: 2d.drawImage.self.1.worker.html
+          subtest: 2d
+        - test: 2d.drawImage.self.2.worker.html
+          subtest: 2d
+        - test: 2d.drawImage.svg.worker.html
+          subtest: drawImage() of an SVG image
+        - test: 2d.drawImage.transform.worker.html
+          subtest: 2d
+        - test: 2d.drawImage.wrongtype.worker.html
+          subtest: Incorrect image types in drawImage do not match any defined overloads, so WebIDL throws a TypeError
+        - test: 2d.drawImage.zerocanvas.worker.html
+          subtest: 2d

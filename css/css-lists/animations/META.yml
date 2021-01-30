@@ -1,213 +1,121 @@
 links:
-- product: chrome
-  results:
-  - status: FAIL
-    test: list-style-image-interpolation.html
-  url: https://crbug.com/1029358
-- product: firefox
-  results:
-  - subtest: 'CSS Transitions: property <list-style-image> from neutral to [url(../resources/stripes-20.png)]
-      at (-0.3) should be [url(../resources/green-20.png)]'
-    test: list-style-image-interpolation.html
-  - subtest: 'CSS Transitions: property <list-style-image> from neutral to [url(../resources/stripes-20.png)]
-      at (0) should be [url(../resources/green-20.png)]'
-    test: list-style-image-interpolation.html
-  - subtest: 'CSS Transitions with transition: all: property <list-style-image> from
-      neutral to [url(../resources/stripes-20.png)] at (-0.3) should be [url(../resources/green-20.png)]'
-    test: list-style-image-interpolation.html
-  - subtest: 'CSS Transitions with transition: all: property <list-style-image> from
-      neutral to [url(../resources/stripes-20.png)] at (0) should be [url(../resources/green-20.png)]'
-    test: list-style-image-interpolation.html
-  - subtest: 'CSS Transitions: property <list-style-image> from [inherit] to [url(../resources/stripes-20.png)]
-      at (-0.3) should be [url(../resources/blue-20.png)]'
-    test: list-style-image-interpolation.html
-  - subtest: 'CSS Transitions: property <list-style-image> from [inherit] to [url(../resources/stripes-20.png)]
-      at (0) should be [url(../resources/blue-20.png)]'
-    test: list-style-image-interpolation.html
-  - subtest: 'CSS Transitions with transition: all: property <list-style-image> from
-      [inherit] to [url(../resources/stripes-20.png)] at (-0.3) should be [url(../resources/blue-20.png)]'
-    test: list-style-image-interpolation.html
-  - subtest: 'CSS Transitions with transition: all: property <list-style-image> from
-      [inherit] to [url(../resources/stripes-20.png)] at (0) should be [url(../resources/blue-20.png)]'
-    test: list-style-image-interpolation.html
-  - subtest: 'CSS Transitions: property <list-style-image> from [unset] to [url(../resources/stripes-20.png)]
-      at (-0.3) should be [url(../resources/blue-20.png)]'
-    test: list-style-image-interpolation.html
-  - subtest: 'CSS Transitions: property <list-style-image> from [unset] to [url(../resources/stripes-20.png)]
-      at (0) should be [url(../resources/blue-20.png)]'
-    test: list-style-image-interpolation.html
-  - subtest: 'CSS Transitions with transition: all: property <list-style-image> from
-      [unset] to [url(../resources/stripes-20.png)] at (-0.3) should be [url(../resources/blue-20.png)]'
-    test: list-style-image-interpolation.html
-  - subtest: 'CSS Transitions with transition: all: property <list-style-image> from
-      [unset] to [url(../resources/stripes-20.png)] at (0) should be [url(../resources/blue-20.png)]'
-    test: list-style-image-interpolation.html
-  - subtest: 'CSS Transitions: property <list-style-image> from [url(../resources/green-20.png)]
-      to [url(../resources/stripes-20.png)] at (-0.3) should be [url(../resources/green-20.png)]'
-    test: list-style-image-interpolation.html
-  - subtest: 'CSS Transitions: property <list-style-image> from [url(../resources/green-20.png)]
-      to [url(../resources/stripes-20.png)] at (0) should be [url(../resources/green-20.png)]'
-    test: list-style-image-interpolation.html
-  - subtest: 'CSS Transitions with transition: all: property <list-style-image> from
-      [url(../resources/green-20.png)] to [url(../resources/stripes-20.png)] at (-0.3)
-      should be [url(../resources/green-20.png)]'
-    test: list-style-image-interpolation.html
-  - subtest: 'CSS Transitions with transition: all: property <list-style-image> from
-      [url(../resources/green-20.png)] to [url(../resources/stripes-20.png)] at (0)
-      should be [url(../resources/green-20.png)]'
-    test: list-style-image-interpolation.html
-  - subtest: 'CSS Transitions: property <list-style-image> from [url(../resources/green-20.png)]
-      to [linear-gradient(45deg, blue, orange)] at (-0.3) should be [url(../resources/green-20.png)]'
-    test: list-style-image-interpolation.html
-  - subtest: 'CSS Transitions: property <list-style-image> from [url(../resources/green-20.png)]
-      to [linear-gradient(45deg, blue, orange)] at (0) should be [url(../resources/green-20.png)]'
-    test: list-style-image-interpolation.html
-  - subtest: 'CSS Transitions: property <list-style-image> from [url(../resources/green-20.png)]
-      to [linear-gradient(45deg, blue, orange)] at (0.6) should be [linear-gradient(45deg,
-      blue, orange)]'
-    test: list-style-image-interpolation.html
-  - subtest: 'CSS Transitions: property <list-style-image> from [url(../resources/green-20.png)]
-      to [linear-gradient(45deg, blue, orange)] at (1) should be [linear-gradient(45deg,
-      blue, orange)]'
-    test: list-style-image-interpolation.html
-  - subtest: 'CSS Transitions: property <list-style-image> from [url(../resources/green-20.png)]
-      to [linear-gradient(45deg, blue, orange)] at (1.5) should be [linear-gradient(45deg,
-      blue, orange)]'
-    test: list-style-image-interpolation.html
-  - subtest: 'CSS Transitions with transition: all: property <list-style-image> from
-      [url(../resources/green-20.png)] to [linear-gradient(45deg, blue, orange)] at
-      (-0.3) should be [url(../resources/green-20.png)]'
-    test: list-style-image-interpolation.html
-  - subtest: 'CSS Transitions with transition: all: property <list-style-image> from
-      [url(../resources/green-20.png)] to [linear-gradient(45deg, blue, orange)] at
-      (0) should be [url(../resources/green-20.png)]'
-    test: list-style-image-interpolation.html
-  - subtest: 'CSS Transitions with transition: all: property <list-style-image> from
-      [url(../resources/green-20.png)] to [linear-gradient(45deg, blue, orange)] at
-      (0.6) should be [linear-gradient(45deg, blue, orange)]'
-    test: list-style-image-interpolation.html
-  - subtest: 'CSS Transitions with transition: all: property <list-style-image> from
-      [url(../resources/green-20.png)] to [linear-gradient(45deg, blue, orange)] at
-      (1) should be [linear-gradient(45deg, blue, orange)]'
-    test: list-style-image-interpolation.html
-  - subtest: 'CSS Transitions with transition: all: property <list-style-image> from
-      [url(../resources/green-20.png)] to [linear-gradient(45deg, blue, orange)] at
-      (1.5) should be [linear-gradient(45deg, blue, orange)]'
-    test: list-style-image-interpolation.html
-  - subtest: 'CSS Animations: property <list-style-image> from [url(../resources/green-20.png)]
-      to [linear-gradient(45deg, blue, orange)] at (-0.3) should be [url(../resources/green-20.png)]'
-    test: list-style-image-interpolation.html
-  - subtest: 'CSS Animations: property <list-style-image> from [url(../resources/green-20.png)]
-      to [linear-gradient(45deg, blue, orange)] at (0) should be [url(../resources/green-20.png)]'
-    test: list-style-image-interpolation.html
-  - subtest: 'CSS Animations: property <list-style-image> from [url(../resources/green-20.png)]
-      to [linear-gradient(45deg, blue, orange)] at (0.6) should be [linear-gradient(45deg,
-      blue, orange)]'
-    test: list-style-image-interpolation.html
-  - subtest: 'CSS Animations: property <list-style-image> from [url(../resources/green-20.png)]
-      to [linear-gradient(45deg, blue, orange)] at (1) should be [linear-gradient(45deg,
-      blue, orange)]'
-    test: list-style-image-interpolation.html
-  - subtest: 'CSS Animations: property <list-style-image> from [url(../resources/green-20.png)]
-      to [linear-gradient(45deg, blue, orange)] at (1.5) should be [linear-gradient(45deg,
-      blue, orange)]'
-    test: list-style-image-interpolation.html
-  - subtest: 'Web Animations: property <list-style-image> from [url(../resources/green-20.png)]
-      to [linear-gradient(45deg, blue, orange)] at (-0.3) should be [url(../resources/green-20.png)]'
-    test: list-style-image-interpolation.html
-  - subtest: 'Web Animations: property <list-style-image> from [url(../resources/green-20.png)]
-      to [linear-gradient(45deg, blue, orange)] at (0) should be [url(../resources/green-20.png)]'
-    test: list-style-image-interpolation.html
-  - subtest: 'Web Animations: property <list-style-image> from [url(../resources/green-20.png)]
-      to [linear-gradient(45deg, blue, orange)] at (0.6) should be [linear-gradient(45deg,
-      blue, orange)]'
-    test: list-style-image-interpolation.html
-  - subtest: 'Web Animations: property <list-style-image> from [url(../resources/green-20.png)]
-      to [linear-gradient(45deg, blue, orange)] at (1) should be [linear-gradient(45deg,
-      blue, orange)]'
-    test: list-style-image-interpolation.html
-  - subtest: 'Web Animations: property <list-style-image> from [url(../resources/green-20.png)]
-      to [linear-gradient(45deg, blue, orange)] at (1.5) should be [linear-gradient(45deg,
-      blue, orange)]'
-    test: list-style-image-interpolation.html
-  - subtest: 'CSS Transitions: property <list-style-image> from [linear-gradient(-45deg,
-      red, yellow)] to [linear-gradient(45deg, blue, orange)] at (-0.3) should be
-      [linear-gradient(-45deg, red, yellow)]'
-    test: list-style-image-interpolation.html
-  - subtest: 'CSS Transitions: property <list-style-image> from [linear-gradient(-45deg,
-      red, yellow)] to [linear-gradient(45deg, blue, orange)] at (0) should be [linear-gradient(-45deg,
-      red, yellow)]'
-    test: list-style-image-interpolation.html
-  - subtest: 'CSS Transitions: property <list-style-image> from [linear-gradient(-45deg,
-      red, yellow)] to [linear-gradient(45deg, blue, orange)] at (0.6) should be [linear-gradient(45deg,
-      blue, orange)]'
-    test: list-style-image-interpolation.html
-  - subtest: 'CSS Transitions: property <list-style-image> from [linear-gradient(-45deg,
-      red, yellow)] to [linear-gradient(45deg, blue, orange)] at (1) should be [linear-gradient(45deg,
-      blue, orange)]'
-    test: list-style-image-interpolation.html
-  - subtest: 'CSS Transitions: property <list-style-image> from [linear-gradient(-45deg,
-      red, yellow)] to [linear-gradient(45deg, blue, orange)] at (1.5) should be [linear-gradient(45deg,
-      blue, orange)]'
-    test: list-style-image-interpolation.html
-  - subtest: 'CSS Transitions with transition: all: property <list-style-image> from
-      [linear-gradient(-45deg, red, yellow)] to [linear-gradient(45deg, blue, orange)]
-      at (-0.3) should be [linear-gradient(-45deg, red, yellow)]'
-    test: list-style-image-interpolation.html
-  - subtest: 'CSS Transitions with transition: all: property <list-style-image> from
-      [linear-gradient(-45deg, red, yellow)] to [linear-gradient(45deg, blue, orange)]
-      at (0) should be [linear-gradient(-45deg, red, yellow)]'
-    test: list-style-image-interpolation.html
-  - subtest: 'CSS Transitions with transition: all: property <list-style-image> from
-      [linear-gradient(-45deg, red, yellow)] to [linear-gradient(45deg, blue, orange)]
-      at (0.6) should be [linear-gradient(45deg, blue, orange)]'
-    test: list-style-image-interpolation.html
-  - subtest: 'CSS Transitions with transition: all: property <list-style-image> from
-      [linear-gradient(-45deg, red, yellow)] to [linear-gradient(45deg, blue, orange)]
-      at (1) should be [linear-gradient(45deg, blue, orange)]'
-    test: list-style-image-interpolation.html
-  - subtest: 'CSS Transitions with transition: all: property <list-style-image> from
-      [linear-gradient(-45deg, red, yellow)] to [linear-gradient(45deg, blue, orange)]
-      at (1.5) should be [linear-gradient(45deg, blue, orange)]'
-    test: list-style-image-interpolation.html
-  - subtest: 'CSS Animations: property <list-style-image> from [linear-gradient(-45deg,
-      red, yellow)] to [linear-gradient(45deg, blue, orange)] at (-0.3) should be
-      [linear-gradient(-45deg, red, yellow)]'
-    test: list-style-image-interpolation.html
-  - subtest: 'CSS Animations: property <list-style-image> from [linear-gradient(-45deg,
-      red, yellow)] to [linear-gradient(45deg, blue, orange)] at (0) should be [linear-gradient(-45deg,
-      red, yellow)]'
-    test: list-style-image-interpolation.html
-  - subtest: 'CSS Animations: property <list-style-image> from [linear-gradient(-45deg,
-      red, yellow)] to [linear-gradient(45deg, blue, orange)] at (0.6) should be [linear-gradient(45deg,
-      blue, orange)]'
-    test: list-style-image-interpolation.html
-  - subtest: 'CSS Animations: property <list-style-image> from [linear-gradient(-45deg,
-      red, yellow)] to [linear-gradient(45deg, blue, orange)] at (1) should be [linear-gradient(45deg,
-      blue, orange)]'
-    test: list-style-image-interpolation.html
-  - subtest: 'CSS Animations: property <list-style-image> from [linear-gradient(-45deg,
-      red, yellow)] to [linear-gradient(45deg, blue, orange)] at (1.5) should be [linear-gradient(45deg,
-      blue, orange)]'
-    test: list-style-image-interpolation.html
-  - subtest: 'Web Animations: property <list-style-image> from [linear-gradient(-45deg,
-      red, yellow)] to [linear-gradient(45deg, blue, orange)] at (-0.3) should be
-      [linear-gradient(-45deg, red, yellow)]'
-    test: list-style-image-interpolation.html
-  - subtest: 'Web Animations: property <list-style-image> from [linear-gradient(-45deg,
-      red, yellow)] to [linear-gradient(45deg, blue, orange)] at (0) should be [linear-gradient(-45deg,
-      red, yellow)]'
-    test: list-style-image-interpolation.html
-  - subtest: 'Web Animations: property <list-style-image> from [linear-gradient(-45deg,
-      red, yellow)] to [linear-gradient(45deg, blue, orange)] at (0.6) should be [linear-gradient(45deg,
-      blue, orange)]'
-    test: list-style-image-interpolation.html
-  - subtest: 'Web Animations: property <list-style-image> from [linear-gradient(-45deg,
-      red, yellow)] to [linear-gradient(45deg, blue, orange)] at (1) should be [linear-gradient(45deg,
-      blue, orange)]'
-    test: list-style-image-interpolation.html
-  - subtest: 'Web Animations: property <list-style-image> from [linear-gradient(-45deg,
-      red, yellow)] to [linear-gradient(45deg, blue, orange)] at (1.5) should be [linear-gradient(45deg,
-      blue, orange)]'
-    test: list-style-image-interpolation.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1674748
+    - product: chrome
+      url: https://crbug.com/1029358
+      results:
+        - test: list-style-image-interpolation.html
+          status: FAIL
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1674748
+      results:
+        - test: list-style-image-interpolation.html
+          subtest: 'CSS Transitions: property <list-style-image> from neutral to [url(../resources/stripes-20.png)] at (-0.3) should be [url(../resources/green-20.png)]'
+        - test: list-style-image-interpolation.html
+          subtest: 'CSS Transitions: property <list-style-image> from neutral to [url(../resources/stripes-20.png)] at (0) should be [url(../resources/green-20.png)]'
+        - test: list-style-image-interpolation.html
+          subtest: 'CSS Transitions with transition: all: property <list-style-image> from neutral to [url(../resources/stripes-20.png)] at (-0.3) should be [url(../resources/green-20.png)]'
+        - test: list-style-image-interpolation.html
+          subtest: 'CSS Transitions with transition: all: property <list-style-image> from neutral to [url(../resources/stripes-20.png)] at (0) should be [url(../resources/green-20.png)]'
+        - test: list-style-image-interpolation.html
+          subtest: 'CSS Transitions: property <list-style-image> from [inherit] to [url(../resources/stripes-20.png)] at (-0.3) should be [url(../resources/blue-20.png)]'
+        - test: list-style-image-interpolation.html
+          subtest: 'CSS Transitions: property <list-style-image> from [inherit] to [url(../resources/stripes-20.png)] at (0) should be [url(../resources/blue-20.png)]'
+        - test: list-style-image-interpolation.html
+          subtest: 'CSS Transitions with transition: all: property <list-style-image> from [inherit] to [url(../resources/stripes-20.png)] at (-0.3) should be [url(../resources/blue-20.png)]'
+        - test: list-style-image-interpolation.html
+          subtest: 'CSS Transitions with transition: all: property <list-style-image> from [inherit] to [url(../resources/stripes-20.png)] at (0) should be [url(../resources/blue-20.png)]'
+        - test: list-style-image-interpolation.html
+          subtest: 'CSS Transitions: property <list-style-image> from [unset] to [url(../resources/stripes-20.png)] at (-0.3) should be [url(../resources/blue-20.png)]'
+        - test: list-style-image-interpolation.html
+          subtest: 'CSS Transitions: property <list-style-image> from [unset] to [url(../resources/stripes-20.png)] at (0) should be [url(../resources/blue-20.png)]'
+        - test: list-style-image-interpolation.html
+          subtest: 'CSS Transitions with transition: all: property <list-style-image> from [unset] to [url(../resources/stripes-20.png)] at (-0.3) should be [url(../resources/blue-20.png)]'
+        - test: list-style-image-interpolation.html
+          subtest: 'CSS Transitions with transition: all: property <list-style-image> from [unset] to [url(../resources/stripes-20.png)] at (0) should be [url(../resources/blue-20.png)]'
+        - test: list-style-image-interpolation.html
+          subtest: 'CSS Transitions: property <list-style-image> from [url(../resources/green-20.png)] to [url(../resources/stripes-20.png)] at (-0.3) should be [url(../resources/green-20.png)]'
+        - test: list-style-image-interpolation.html
+          subtest: 'CSS Transitions: property <list-style-image> from [url(../resources/green-20.png)] to [url(../resources/stripes-20.png)] at (0) should be [url(../resources/green-20.png)]'
+        - test: list-style-image-interpolation.html
+          subtest: 'CSS Transitions with transition: all: property <list-style-image> from [url(../resources/green-20.png)] to [url(../resources/stripes-20.png)] at (-0.3) should be [url(../resources/green-20.png)]'
+        - test: list-style-image-interpolation.html
+          subtest: 'CSS Transitions with transition: all: property <list-style-image> from [url(../resources/green-20.png)] to [url(../resources/stripes-20.png)] at (0) should be [url(../resources/green-20.png)]'
+        - test: list-style-image-interpolation.html
+          subtest: 'CSS Transitions: property <list-style-image> from [url(../resources/green-20.png)] to [linear-gradient(45deg, blue, orange)] at (-0.3) should be [url(../resources/green-20.png)]'
+        - test: list-style-image-interpolation.html
+          subtest: 'CSS Transitions: property <list-style-image> from [url(../resources/green-20.png)] to [linear-gradient(45deg, blue, orange)] at (0) should be [url(../resources/green-20.png)]'
+        - test: list-style-image-interpolation.html
+          subtest: 'CSS Transitions: property <list-style-image> from [url(../resources/green-20.png)] to [linear-gradient(45deg, blue, orange)] at (0.6) should be [linear-gradient(45deg, blue, orange)]'
+        - test: list-style-image-interpolation.html
+          subtest: 'CSS Transitions: property <list-style-image> from [url(../resources/green-20.png)] to [linear-gradient(45deg, blue, orange)] at (1) should be [linear-gradient(45deg, blue, orange)]'
+        - test: list-style-image-interpolation.html
+          subtest: 'CSS Transitions: property <list-style-image> from [url(../resources/green-20.png)] to [linear-gradient(45deg, blue, orange)] at (1.5) should be [linear-gradient(45deg, blue, orange)]'
+        - test: list-style-image-interpolation.html
+          subtest: 'CSS Transitions with transition: all: property <list-style-image> from [url(../resources/green-20.png)] to [linear-gradient(45deg, blue, orange)] at (-0.3) should be [url(../resources/green-20.png)]'
+        - test: list-style-image-interpolation.html
+          subtest: 'CSS Transitions with transition: all: property <list-style-image> from [url(../resources/green-20.png)] to [linear-gradient(45deg, blue, orange)] at (0) should be [url(../resources/green-20.png)]'
+        - test: list-style-image-interpolation.html
+          subtest: 'CSS Transitions with transition: all: property <list-style-image> from [url(../resources/green-20.png)] to [linear-gradient(45deg, blue, orange)] at (0.6) should be [linear-gradient(45deg, blue, orange)]'
+        - test: list-style-image-interpolation.html
+          subtest: 'CSS Transitions with transition: all: property <list-style-image> from [url(../resources/green-20.png)] to [linear-gradient(45deg, blue, orange)] at (1) should be [linear-gradient(45deg, blue, orange)]'
+        - test: list-style-image-interpolation.html
+          subtest: 'CSS Transitions with transition: all: property <list-style-image> from [url(../resources/green-20.png)] to [linear-gradient(45deg, blue, orange)] at (1.5) should be [linear-gradient(45deg, blue, orange)]'
+        - test: list-style-image-interpolation.html
+          subtest: 'CSS Animations: property <list-style-image> from [url(../resources/green-20.png)] to [linear-gradient(45deg, blue, orange)] at (-0.3) should be [url(../resources/green-20.png)]'
+        - test: list-style-image-interpolation.html
+          subtest: 'CSS Animations: property <list-style-image> from [url(../resources/green-20.png)] to [linear-gradient(45deg, blue, orange)] at (0) should be [url(../resources/green-20.png)]'
+        - test: list-style-image-interpolation.html
+          subtest: 'CSS Animations: property <list-style-image> from [url(../resources/green-20.png)] to [linear-gradient(45deg, blue, orange)] at (0.6) should be [linear-gradient(45deg, blue, orange)]'
+        - test: list-style-image-interpolation.html
+          subtest: 'CSS Animations: property <list-style-image> from [url(../resources/green-20.png)] to [linear-gradient(45deg, blue, orange)] at (1) should be [linear-gradient(45deg, blue, orange)]'
+        - test: list-style-image-interpolation.html
+          subtest: 'CSS Animations: property <list-style-image> from [url(../resources/green-20.png)] to [linear-gradient(45deg, blue, orange)] at (1.5) should be [linear-gradient(45deg, blue, orange)]'
+        - test: list-style-image-interpolation.html
+          subtest: 'Web Animations: property <list-style-image> from [url(../resources/green-20.png)] to [linear-gradient(45deg, blue, orange)] at (-0.3) should be [url(../resources/green-20.png)]'
+        - test: list-style-image-interpolation.html
+          subtest: 'Web Animations: property <list-style-image> from [url(../resources/green-20.png)] to [linear-gradient(45deg, blue, orange)] at (0) should be [url(../resources/green-20.png)]'
+        - test: list-style-image-interpolation.html
+          subtest: 'Web Animations: property <list-style-image> from [url(../resources/green-20.png)] to [linear-gradient(45deg, blue, orange)] at (0.6) should be [linear-gradient(45deg, blue, orange)]'
+        - test: list-style-image-interpolation.html
+          subtest: 'Web Animations: property <list-style-image> from [url(../resources/green-20.png)] to [linear-gradient(45deg, blue, orange)] at (1) should be [linear-gradient(45deg, blue, orange)]'
+        - test: list-style-image-interpolation.html
+          subtest: 'Web Animations: property <list-style-image> from [url(../resources/green-20.png)] to [linear-gradient(45deg, blue, orange)] at (1.5) should be [linear-gradient(45deg, blue, orange)]'
+        - test: list-style-image-interpolation.html
+          subtest: 'CSS Transitions: property <list-style-image> from [linear-gradient(-45deg, red, yellow)] to [linear-gradient(45deg, blue, orange)] at (-0.3) should be [linear-gradient(-45deg, red, yellow)]'
+        - test: list-style-image-interpolation.html
+          subtest: 'CSS Transitions: property <list-style-image> from [linear-gradient(-45deg, red, yellow)] to [linear-gradient(45deg, blue, orange)] at (0) should be [linear-gradient(-45deg, red, yellow)]'
+        - test: list-style-image-interpolation.html
+          subtest: 'CSS Transitions: property <list-style-image> from [linear-gradient(-45deg, red, yellow)] to [linear-gradient(45deg, blue, orange)] at (0.6) should be [linear-gradient(45deg, blue, orange)]'
+        - test: list-style-image-interpolation.html
+          subtest: 'CSS Transitions: property <list-style-image> from [linear-gradient(-45deg, red, yellow)] to [linear-gradient(45deg, blue, orange)] at (1) should be [linear-gradient(45deg, blue, orange)]'
+        - test: list-style-image-interpolation.html
+          subtest: 'CSS Transitions: property <list-style-image> from [linear-gradient(-45deg, red, yellow)] to [linear-gradient(45deg, blue, orange)] at (1.5) should be [linear-gradient(45deg, blue, orange)]'
+        - test: list-style-image-interpolation.html
+          subtest: 'CSS Transitions with transition: all: property <list-style-image> from [linear-gradient(-45deg, red, yellow)] to [linear-gradient(45deg, blue, orange)] at (-0.3) should be [linear-gradient(-45deg, red, yellow)]'
+        - test: list-style-image-interpolation.html
+          subtest: 'CSS Transitions with transition: all: property <list-style-image> from [linear-gradient(-45deg, red, yellow)] to [linear-gradient(45deg, blue, orange)] at (0) should be [linear-gradient(-45deg, red, yellow)]'
+        - test: list-style-image-interpolation.html
+          subtest: 'CSS Transitions with transition: all: property <list-style-image> from [linear-gradient(-45deg, red, yellow)] to [linear-gradient(45deg, blue, orange)] at (0.6) should be [linear-gradient(45deg, blue, orange)]'
+        - test: list-style-image-interpolation.html
+          subtest: 'CSS Transitions with transition: all: property <list-style-image> from [linear-gradient(-45deg, red, yellow)] to [linear-gradient(45deg, blue, orange)] at (1) should be [linear-gradient(45deg, blue, orange)]'
+        - test: list-style-image-interpolation.html
+          subtest: 'CSS Transitions with transition: all: property <list-style-image> from [linear-gradient(-45deg, red, yellow)] to [linear-gradient(45deg, blue, orange)] at (1.5) should be [linear-gradient(45deg, blue, orange)]'
+        - test: list-style-image-interpolation.html
+          subtest: 'CSS Animations: property <list-style-image> from [linear-gradient(-45deg, red, yellow)] to [linear-gradient(45deg, blue, orange)] at (-0.3) should be [linear-gradient(-45deg, red, yellow)]'
+        - test: list-style-image-interpolation.html
+          subtest: 'CSS Animations: property <list-style-image> from [linear-gradient(-45deg, red, yellow)] to [linear-gradient(45deg, blue, orange)] at (0) should be [linear-gradient(-45deg, red, yellow)]'
+        - test: list-style-image-interpolation.html
+          subtest: 'CSS Animations: property <list-style-image> from [linear-gradient(-45deg, red, yellow)] to [linear-gradient(45deg, blue, orange)] at (0.6) should be [linear-gradient(45deg, blue, orange)]'
+        - test: list-style-image-interpolation.html
+          subtest: 'CSS Animations: property <list-style-image> from [linear-gradient(-45deg, red, yellow)] to [linear-gradient(45deg, blue, orange)] at (1) should be [linear-gradient(45deg, blue, orange)]'
+        - test: list-style-image-interpolation.html
+          subtest: 'CSS Animations: property <list-style-image> from [linear-gradient(-45deg, red, yellow)] to [linear-gradient(45deg, blue, orange)] at (1.5) should be [linear-gradient(45deg, blue, orange)]'
+        - test: list-style-image-interpolation.html
+          subtest: 'Web Animations: property <list-style-image> from [linear-gradient(-45deg, red, yellow)] to [linear-gradient(45deg, blue, orange)] at (-0.3) should be [linear-gradient(-45deg, red, yellow)]'
+        - test: list-style-image-interpolation.html
+          subtest: 'Web Animations: property <list-style-image> from [linear-gradient(-45deg, red, yellow)] to [linear-gradient(45deg, blue, orange)] at (0) should be [linear-gradient(-45deg, red, yellow)]'
+        - test: list-style-image-interpolation.html
+          subtest: 'Web Animations: property <list-style-image> from [linear-gradient(-45deg, red, yellow)] to [linear-gradient(45deg, blue, orange)] at (0.6) should be [linear-gradient(45deg, blue, orange)]'
+        - test: list-style-image-interpolation.html
+          subtest: 'Web Animations: property <list-style-image> from [linear-gradient(-45deg, red, yellow)] to [linear-gradient(45deg, blue, orange)] at (1) should be [linear-gradient(45deg, blue, orange)]'
+        - test: list-style-image-interpolation.html
+          subtest: 'Web Animations: property <list-style-image> from [linear-gradient(-45deg, red, yellow)] to [linear-gradient(45deg, blue, orange)] at (1.5) should be [linear-gradient(45deg, blue, orange)]'

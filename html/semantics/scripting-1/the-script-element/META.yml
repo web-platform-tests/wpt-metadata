@@ -1,38 +1,33 @@
 links:
-- product: firefox
-  results:
-  - subtest: Non-synthetic errors for same-origin scripts redirected to a cross-origin
-      URL and redirected back to same-origin should be muted
-    test: muted-errors.sub.html
-  - subtest: Errors for cross-origin script should be muted even if the script is
-      once loaded as same-origin
-    test: muted-errors.sub.html
-  - subtest: Errors for cross-origin scripts redirected to a same-origin url should
-      be muted
-    test: muted-errors.sub.html
-  - subtest: Syntax error for same-origin script redirected to a cross-origin URL
-      and redirected back to same-origin should be muted
-    test: muted-errors.sub.html
-  - subtest: Errors for cross-origin script should be muted
-    test: muted-errors.sub.html
-  - subtest: Errors for same-origin scripts redirected to a cross-origin url and redirected
-      back to same-origin should be muted
-    test: muted-errors.sub.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1648828
-- product: firefox
-  results:
-  - subtest: Modify inline script element's text after prepare-a-script before evaluation
-    test: script-text-modifications.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1651092
-- product: chrome
-  results:
-  - status: FAIL
-    test: script-charset-01.html
-  url: https://crbug.com/651762
-- product: firefox
-  results:
-  - subtest: Test evaluation order of modules
-    test: evaluation-order-1-sharedworker.html
-  - subtest: Test evaluation order of modules
-    test: evaluation-order-1-worker.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1681584
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1648828
+      results:
+        - test: muted-errors.sub.html
+          subtest: Non-synthetic errors for same-origin scripts redirected to a cross-origin URL and redirected back to same-origin should be muted
+        - test: muted-errors.sub.html
+          subtest: Errors for cross-origin script should be muted even if the script is once loaded as same-origin
+        - test: muted-errors.sub.html
+          subtest: Errors for cross-origin scripts redirected to a same-origin url should be muted
+        - test: muted-errors.sub.html
+          subtest: Syntax error for same-origin script redirected to a cross-origin URL and redirected back to same-origin should be muted
+        - test: muted-errors.sub.html
+          subtest: Errors for cross-origin script should be muted
+        - test: muted-errors.sub.html
+          subtest: Errors for same-origin scripts redirected to a cross-origin url and redirected back to same-origin should be muted
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1651092
+      results:
+        - test: script-text-modifications.html
+          subtest: Modify inline script element's text after prepare-a-script before evaluation
+    - product: chrome
+      url: https://crbug.com/651762
+      results:
+        - test: script-charset-01.html
+          status: FAIL
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1681584
+      results:
+        - test: evaluation-order-1-sharedworker.html
+          subtest: Test evaluation order of modules
+        - test: evaluation-order-1-worker.html
+          subtest: Test evaluation order of modules

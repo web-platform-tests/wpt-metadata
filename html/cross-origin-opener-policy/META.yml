@@ -1,16 +1,13 @@
 links:
-- product: firefox
-  results:
-  - subtest: 'same-origin with structured headers document opening popup to https://web-platform.test:8443
-      with COOP: "same-origin; report-to=endpoint"'
-    test: popup-with-structured-header.https.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1645233
-- product: firefox
-  results:
-  - subtest: 'unspecified document opening popup to https://web-platform.test:8443
-      with COOP: "same-origin;same-origin"'
-    test: header-parsing.https.html
-  - subtest: 'unspecified document opening popup to https://web-platform.test:8443
-      with COOP: "same-origin; foo=bar"'
-    test: header-parsing.https.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1661118
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1645233
+      results:
+        - test: popup-with-structured-header.https.html
+          subtest: 'same-origin with structured headers document opening popup to https://web-platform.test:8443 with COOP: "same-origin; report-to=endpoint"'
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1661118
+      results:
+        - test: header-parsing.https.html
+          subtest: 'unspecified document opening popup to https://web-platform.test:8443 with COOP: "same-origin;same-origin"'
+        - test: header-parsing.https.html
+          subtest: 'unspecified document opening popup to https://web-platform.test:8443 with COOP: "same-origin; foo=bar"'

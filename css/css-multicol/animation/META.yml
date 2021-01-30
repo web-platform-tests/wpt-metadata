@@ -1,16 +1,12 @@
 links:
-- product: firefox
-  results:
-  - subtest: 'CSS Transitions: property <column-count> from [10] to [1] at (-0.5)
-      should be [15]'
-    test: column-count-interpolation.html
-  - subtest: 'CSS Transitions with transition: all: property <column-count> from [10]
-      to [1] at (-0.5) should be [15]'
-    test: column-count-interpolation.html
-  - subtest: 'CSS Animations: property <column-count> from [10] to [1] at (-0.5) should
-      be [15]'
-    test: column-count-interpolation.html
-  - subtest: 'Web Animations: property <column-count> from [10] to [1] at (-0.5) should
-      be [15]'
-    test: column-count-interpolation.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1674747
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1674747
+      results:
+        - test: column-count-interpolation.html
+          subtest: 'CSS Transitions: property <column-count> from [10] to [1] at (-0.5) should be [15]'
+        - test: column-count-interpolation.html
+          subtest: 'CSS Transitions with transition: all: property <column-count> from [10] to [1] at (-0.5) should be [15]'
+        - test: column-count-interpolation.html
+          subtest: 'CSS Animations: property <column-count> from [10] to [1] at (-0.5) should be [15]'
+        - test: column-count-interpolation.html
+          subtest: 'Web Animations: property <column-count> from [10] to [1] at (-0.5) should be [15]'
