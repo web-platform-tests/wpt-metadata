@@ -61,3 +61,7 @@ links:
           subtest: Feature policy "picture-in-picture" can be enabled in same-origin iframe using allow="picture-in-picture" attribute
         - test: picture-in-picture-allowed-by-feature-policy-attribute.https.sub.html
           subtest: Feature policy "picture-in-picture" can be enabled in cross-origin iframe using allow="picture-in-picture" attribute
+    - product: chrome
+      url: https://crbug.com/1133498
+      results:
+        - test: idlharness.window.html
