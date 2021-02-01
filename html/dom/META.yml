@@ -964,3 +964,13 @@ links:
           subtest: 'Window interface: attribute originAgentCluster'
         - test: idlharness.https.html?include=(Document|Window)
           subtest: 'Window interface: window must inherit property "originAgentCluster" with the proper type'
+    - product: chrome
+      url: https://crbug.com/1154650
+      results:
+        - test: idlharness.https.html?exclude=(Document|Window|HTML.*)
+    - product: chrome
+      url: https://crbug.com/651762
+      results:
+        - test: reflection-embedded.html
+        - test: reflection-misc.html
+        - test: reflection-text.html

@@ -4,3 +4,17 @@ links:
       results:
         - test: 085.html
           status: FAIL
+    - product: chrome
+      url: https://crbug.com/1045479
+      results:
+        - test: 106-defer-import.html
+        - test: 106-defer-noimport.html
+        - test: 106-external-module-import.html
+        - test: 106-external-module-noimport.html
+        - test: 106-module-import.html
+        - test: 106-module-noimport.html
+    - product: chrome
+      url: https://crbug.com/917116
+      results:
+        - test: 106-import-xhtml.xhtml
+        - test: 106-noimport-xhtml.xhtml

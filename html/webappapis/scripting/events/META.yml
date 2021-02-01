@@ -21,3 +21,15 @@ links:
           subtest: 'onslotchange: the content attribute must be compiled into a function as the corresponding property'
         - test: event-handler-all-global-events.html
           subtest: 'onslotchange: the content attribute must execute when an event is dispatched'
+    - product: chrome
+      url: https://crbug.com/1006096
+      results:
+        - test: event-handler-all-global-events.html
+    - product: chrome
+      url: https://crbug.com/651762
+      results:
+        - test: event-handler-attributes-body-window.html
+    - product: chrome
+      url: https://crbug.com/1092092
+      results:
+        - test: event-handler-attributes-windowless-body.html

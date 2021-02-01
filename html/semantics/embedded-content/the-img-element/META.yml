@@ -21,3 +21,12 @@ links:
       results:
         - test: list-of-available-images-matching.https.html
           subtest: list of available images tuple-matching logic
+    - product: chrome
+      url: https://crbug.com/985227
+      results:
+        - test: image-loading-lazy-base-url-2.html
+        - test: image-loading-lazy-base-url.html
+    - product: chrome
+      url: https://crbug.com/1072018
+      results:
+        - test: image-loading-lazy-multiple-times.html

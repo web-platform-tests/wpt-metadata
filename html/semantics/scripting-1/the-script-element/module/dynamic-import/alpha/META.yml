@@ -17,3 +17,8 @@ links:
           subtest: Absolute URL-like from cross-origin importScripts()
         - test: base-url-worker-importScripts.html
           subtest: Absolute URL-like from same-origin importScripts()
+    - product: chrome
+      url: https://crbug.com/1082086
+      results:
+        - test: base-url.sub.html
+        - test: base-url-worker-importScripts.html

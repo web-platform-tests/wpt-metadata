@@ -122,3 +122,7 @@ links:
           subtest: Test that 'alpha' context creation attribute is true by default
         - test: offscreencanvas.getcontext.html
           subtest: Test that 2dcontext.canvas should return the original OffscreenCanvas
+    - product: chrome
+      url: https://crbug.com/1093709
+      results:
+        - test: offscreencanvas.resize.html

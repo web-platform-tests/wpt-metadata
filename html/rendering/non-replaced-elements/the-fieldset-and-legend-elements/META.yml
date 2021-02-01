@@ -23,3 +23,12 @@ links:
       results:
         - test: legend-hover.html
           subtest: The rendered LEGEND should work well for :hover.
+    - product: chrome
+      url: https://crbug.com/880062
+      results:
+        - test: fieldset-content-before-legend.html
+        - test: legend.html
+    - product: chrome
+      url: https://crbug.com/895846
+      results:
+        - test: legend-block-margins-2.html
