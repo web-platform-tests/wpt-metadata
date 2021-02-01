@@ -1,37 +1,42 @@
 links:
-- product: firefox
-  results:
-  - test: body-fills-html-quirk-vertical.html
-  - test: body-fills-html-quirk.html
-  - test: html-fills-viewport-quirk-vertical.html
-  - test: html-fills-viewport-quirk.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1677620
-- product: safari
-  results:
-  - test: percentage-height-quirk-excludes-flex-grid-001.html
-  url: https://bugs.webkit.org/show_bug.cgi?id=210791
-- product: firefox
-  results:
-  - subtest: The line height calculation quirk, span { margin:1px }<div id=test><span></span></div><div
-      id=ref></div><div id=s_ref>x</div>
-    test: line-height-calculation.html
-  - subtest: The line height calculation quirk, span { margin:0 1px }<div id=test><span></span></div><div
-      id=ref></div><div id=s_ref>x</div>
-    test: line-height-calculation.html
-  - subtest: The line height calculation quirk, span { margin:0 1px; padding:1px 0
-      }<div id=test><span></span></div><div id=ref></div><div id=s_ref>x</div>
-    test: line-height-calculation.html
-  - subtest: The line height calculation quirk, span { display:inline-block; height:1px
-      }<div id=test><i><span></span> </i></div><span id=ref></span><div id=s_ref>x</div>
-    test: line-height-calculation.html
-  - subtest: 'The line height calculation quirk, div { line-height: 0;} span { margin:0
-      1px; line-height: normal; }<div id=test>x<span></span></div><div id=ref>x</div><div
-      id=s_ref>x<span>x</span></div>'
-    test: line-height-calculation.html
-  - subtest: The table cell width calculation quirk, the quirk shouldn't apply for
-      generated content
-    test: table-cell-width-calculation.html
-  - subtest: The table cell width calculation quirk, the quirk shouldn't apply for
-      <input>
-    test: table-cell-width-calculation.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1690242
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1677620
+      results:
+        - test: body-fills-html-quirk-vertical.html
+        - test: body-fills-html-quirk.html
+        - test: html-fills-viewport-quirk-vertical.html
+        - test: html-fills-viewport-quirk.html
+    - product: firefox
+      results:
+        - subtest: The line height calculation quirk, span { margin:1px }<div id=test><span></span></div><div
+            id=ref></div><div id=s_ref>x</div>
+          test: line-height-calculation.html
+        - subtest: The line height calculation quirk, span { margin:0 1px }<div id=test><span></span></div><div
+            id=ref></div><div id=s_ref>x</div>
+          test: line-height-calculation.html
+        - subtest: The line height calculation quirk, span { margin:0 1px; padding:1px 0
+            }<div id=test><span></span></div><div id=ref></div><div id=s_ref>x</div>
+          test: line-height-calculation.html
+        - subtest: The line height calculation quirk, span { display:inline-block; height:1px
+            }<div id=test><i><span></span> </i></div><span id=ref></span><div id=s_ref>x</div>
+          test: line-height-calculation.html
+        - subtest: 'The line height calculation quirk, div { line-height: 0;} span { margin:0
+            1px; line-height: normal; }<div id=test>x<span></span></div><div id=ref>x</div><div
+            id=s_ref>x<span>x</span></div>'
+          test: line-height-calculation.html
+        - subtest: The table cell width calculation quirk, the quirk shouldn't apply for
+            generated content
+          test: table-cell-width-calculation.html
+        - subtest: The table cell width calculation quirk, the quirk shouldn't apply for
+            <input>
+          test: table-cell-width-calculation.html
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1690242
+    - product: safari
+      url: https://bugs.webkit.org/show_bug.cgi?id=210791
+      results:
+        - test: percentage-height-quirk-excludes-flex-grid-001.html
+    - product: chrome
+      url: https://crbug.com/651768
+      results:
+        - test: percentage-height-calculation.html
+

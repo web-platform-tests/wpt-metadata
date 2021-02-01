@@ -31,3 +31,15 @@ links:
           subtest: link rel=modulepreload with submodules
         - test: modulepreload.html
           subtest: link rel=modulepreload
+    - product: chrome
+      url: https://crbug.com/1164459
+      results:
+        - test: download-resources.html
+    - product: chrome
+      url: https://crbug.com/770028
+      results:
+        - test: modulepreload.html
+    - product: chrome
+      url: https://crbug.com/981419
+      results:
+        - test: subresource-integrity.html
