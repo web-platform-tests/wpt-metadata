@@ -49,3 +49,11 @@ links:
           subtest: canShare with empty URL
         - test: canShare.tentative.https.html
           subtest: canShare with URL having no scheme
+    - product: chrome
+      url: https://crbug.com/1079104
+      results:
+        - test: disabled-by-feature-policy.https.sub.html
+    - product: chrome
+      url: https://crbug.com/1002514
+      results:
+        - test: share-sharePromise-internal-slot.https.html

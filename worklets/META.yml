@@ -489,3 +489,7 @@ links:
           subtest: addModule() on a non-controlled document should not be intercepted by a service worker even if the script is under the service worker scope.
         - test: animation-worklet-service-worker-interception.https.html
           subtest: Static import should be intercepted by a service worker.
+    - product: chrome
+      url: https://crbug.com/726125
+      results:
+        - test: layout-worklet-credentials.https.html
