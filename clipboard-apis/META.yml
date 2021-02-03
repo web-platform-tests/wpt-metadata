@@ -34,3 +34,8 @@ links:
           subtest: Verify write error on malformed data [image/png ClipboardItem]
         - test: async-write-image-read-image.https.html
           subtest: Verify write and read clipboard [image/png Blob]
+    - product: chrome
+      url: https://crbug.com/1110511
+      results:
+        - test: async-svg-script-removal.https.html
+        - test: async-write-svg-read-svg.https.html

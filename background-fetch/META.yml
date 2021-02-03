@@ -4,3 +4,11 @@ links:
       results:
         - test: abort.https.window.html
           status: ERROR
+    - product: chrome
+      url: https://crbug.com/882282
+      results:
+        - test: fetch.https.window.html
+        - test: fetch-uploads.https.window.html
+        - test: match.https.window.html
+        - test: mixed-content-and-allowed-schemes.https.window.html
+        - test: update-ui.https.window.html
