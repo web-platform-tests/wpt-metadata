@@ -9,3 +9,8 @@ links:
       results:
         - test: dynamic-imports-credentials.sub.html
           subtest: Cross-origin dynamic import from classic script (crossOrigin=use-credentials)
+    - product: chrome
+      url: https://crbug.com/1133238
+      results:
+        - test: dynamic-imports-credentials-setTimeout.sub.html
+        - test: string-compilation-nonce-classic.html

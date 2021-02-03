@@ -24,3 +24,7 @@ links:
           subtest: Radio buttons in an orphan tree should make a group
         - test: radio.html
           subtest: Radio buttons in different groups (because they have different form owners or no form owner) do not affect each other's checkedness
+    - product: chrome
+      url: https://crbug.com/521871
+      results:
+        - test: datetime-local.html

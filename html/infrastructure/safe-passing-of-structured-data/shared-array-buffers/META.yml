@@ -8,3 +8,10 @@ links:
       url: https://bugzilla.mozilla.org/show_bug.cgi?id=1661040
       results:
         - test: window-serviceworker-failure.https.html
+    - product: chrome
+      url: https://crbug.com/1144104
+      results:
+        - test: no-coop-coep.https.any.html
+        - test: no-coop-coep.https.any.serviceworker.html
+        - test: no-coop-coep.https.any.sharedworker.html
+        - test: no-coop-coep.https.any.worker.html

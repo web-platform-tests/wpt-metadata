@@ -6,3 +6,11 @@ links:
           subtest: detects whether point is in the area contained by the stroke of the path
         - test: 2d.path.isPointInStroke.basic.worker.html
           subtest: detects whether point is in the area contained by the stroke of the path
+    - product: chrome
+      url: https://crbug.com/644067
+      results:
+        - test: 2d.path.stroke.prune.arc.html
+        - test: 2d.path.stroke.prune.closed.html
+        - test: 2d.path.stroke.prune.curve.html
+        - test: 2d.path.stroke.prune.line.html
+        - test: 2d.path.stroke.prune.rect.html

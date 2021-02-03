@@ -1,8 +1,12 @@
 links:
-- product: firefox
-  results:
-  - subtest: popup element exists
-    test: popup-element-basic.tentative.html
-  - subtest: Popups located inside shadow DOM can still be shown
-    test: popup-shadow-dom.tentative.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1690424
+    - product: firefox
+      results:
+        - subtest: popup element exists
+          test: popup-element-basic.tentative.html
+        - subtest: Popups located inside shadow DOM can still be shown
+          test: popup-shadow-dom.tentative.html
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1690424
+    - product: chrome
+      url: https://crbug.com/1170977
+      results:
+        - test: popup-shadow-dom.tentative.html

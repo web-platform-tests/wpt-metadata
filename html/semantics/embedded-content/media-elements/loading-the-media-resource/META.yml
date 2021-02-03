@@ -23,3 +23,20 @@ links:
       results:
         - test: resource-selection-invoke-insert-into-iframe.html
           status: FAIL
+    - product: chrome
+      url: https://crbug.com/593289
+      results:
+        - test: resource-selection-candidate-insert-before.html
+        - test: resource-selection-invoke-in-sync-event.html
+        - test: resource-selection-invoke-load.html
+        - test: resource-selection-invoke-pause.html
+        - test: resource-selection-invoke-play.html
+        - test: resource-selection-pointer-remove-text.html
+        - test: resource-selection-remove-source.html
+        - test: resource-selection-remove-src.html
+        - test: resource-selection-source-media.html
+    - product: chrome
+      url: https://crbug.com/848738
+      results:
+        - test: resource-selection-candidate-remove-addEventListener.html
+        - test: resource-selection-candidate-remove-onerror.html
