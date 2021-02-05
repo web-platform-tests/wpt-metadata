@@ -20,3 +20,14 @@ links:
           subtest: Event order and dataTransfer on contenteditable.
         - test: input-events-cut-paste.html
           subtest: preventDefault() should prevent DOM modification but allow clipboard updates.
+    - product: chrome
+      url: https://crbug.com/1149212
+      results:
+        - test: input-events-get-target-ranges-deleting-in-list-items.tentative.html?Backspace,ol
+        - test: input-events-get-target-ranges-deleting-in-list-items.tentative.html?Backspace,ul
+        - test: input-events-get-target-ranges-deleting-in-list-items.tentative.html?Delete,ol
+        - test: input-events-get-target-ranges-deleting-in-list-items.tentative.html?Delete,ul
+    - product: chrome
+      url: https://crbug.com/1132898
+      results:
+        - test: input-events-get-target-ranges-non-collapsed-selection.tentative.html?TypingA
