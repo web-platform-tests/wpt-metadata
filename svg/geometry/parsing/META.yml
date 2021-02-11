@@ -15,3 +15,14 @@ links:
           subtest: e.style['y'] = "10" should not set the property value
         - test: x-invalid.svg
           subtest: e.style['x'] = "10" should not set the property value
+    - product: chrome
+      url: https://bugs.chromium.org/p/chromium/issues/detail?id=1177498
+      results:
+        - test: height-computed.svg
+          subtest: 'SVG Geometry Properties: getComputedStyle().height, <svg> initial'
+        - test: height-computed.svg
+          subtest: 'SVG Geometry Properties: getComputedStyle().height, <svg> presentation attribute'
+        - test: height-computed.svg
+          subtest: 'SVG Geometry Properties: getComputedStyle().height, <svg> inline style (auto)'
+        - test: height-computed.svg
+          subtest: 'SVG Geometry Properties: getComputedStyle().height, <svg> inline style (percentage)'
