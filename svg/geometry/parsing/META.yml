@@ -8,13 +8,8 @@ links:
           subtest: e.style['rx'] = "10" should not set the property value
         - test: r-invalid.svg
           subtest: e.style['r'] = "10" should not set the property value
-    - product: chrome
-      url: https://bugs.chromium.org/p/chromium/issues/detail?id=899074
-      results:
-        - test: y-invalid.svg
-          subtest: e.style['y'] = "10" should not set the property value
         - test: x-invalid.svg
-          subtest: e.style['x'] = "10" should not set the property value
+        - test: y-invalid.svg
     - product: chrome
       url: https://bugs.chromium.org/p/chromium/issues/detail?id=1177498
       results:
