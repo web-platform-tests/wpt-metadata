@@ -15,6 +15,14 @@ links:
     - product: chrome
       url: https://bugs.chromium.org/p/chromium/issues/detail?id=1177498
       results:
+        - test: width-computed.svg
+          subtest: 'SVG Geometry Properties: getComputedStyle().width, <svg> initial'
+        - test: width-computed.svg
+          subtest: 'SVG Geometry Properties: getComputedStyle().width, <svg> presentation attribute'
+        - test: width-computed.svg
+          subtest: 'SVG Geometry Properties: getComputedStyle().width, <svg> inline style (auto)'
+        - test: width-computed.svg
+          subtest: 'SVG Geometry Properties: getComputedStyle().width, <svg> inline style (percentage)'
         - test: height-computed.svg
           subtest: 'SVG Geometry Properties: getComputedStyle().height, <svg> initial'
         - test: height-computed.svg
