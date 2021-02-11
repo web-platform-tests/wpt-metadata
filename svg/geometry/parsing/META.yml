@@ -8,8 +8,18 @@ links:
           subtest: e.style['rx'] = "10" should not set the property value
         - test: r-invalid.svg
           subtest: e.style['r'] = "10" should not set the property value
-    - product: chrome
-      url: https://bugs.chromium.org/p/chromium/issues/detail?id=899074
-      results:
+        - test: x-invalid.svg
+        - test: y-invalid.svg
         - test: cy-invalid.svg
         - test: cx-invalid.svg
+    - product: chrome
+      url: https://bugs.chromium.org/p/chromium/issues/detail?id=1177498
+      results:
+        - test: height-computed.svg
+          subtest: 'SVG Geometry Properties: getComputedStyle().height, <svg> initial'
+        - test: height-computed.svg
+          subtest: 'SVG Geometry Properties: getComputedStyle().height, <svg> presentation attribute'
+        - test: height-computed.svg
+          subtest: 'SVG Geometry Properties: getComputedStyle().height, <svg> inline style (auto)'
+        - test: height-computed.svg
+          subtest: 'SVG Geometry Properties: getComputedStyle().height, <svg> inline style (percentage)'
