@@ -1,0 +1,18 @@
+links:
+    - product: chrome
+      url: https://bugs.chromium.org/p/chromium/issues/detail?id=1177583
+      results:
+        - test: text-decoration-stroke-valid.svg
+          subtest: e.style['text-decoration-stroke'] = "none" should set the property value
+        - test: text-decoration-stroke-valid.svg
+          subtest: e.style['text-decoration-stroke'] = "context-fill" should set the property value
+        - test: text-decoration-stroke-valid.svg
+          subtest: e.style['text-decoration-stroke'] = "context-stroke" should set the property value
+        - test: text-decoration-stroke-valid.svg
+          subtest: e.style['text-decoration-stroke'] = "rgb(12, 34, 56)" should set the property value
+        - test: text-decoration-stroke-valid.svg
+          subtest: e.style['text-decoration-stroke'] = "url(\"https://example.com/\")" should set the property value
+        - test: text-decoration-stroke-valid.svg
+          subtest: e.style['text-decoration-stroke'] = "url(\"https://example.com/\") none" should set the property value
+        - test: text-decoration-stroke-valid.svg
+          subtest: e.style['text-decoration-stroke'] = "url(\"https://example.com/\") rgb(12, 34, 56)" should set the property value
