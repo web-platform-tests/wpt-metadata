@@ -14,3 +14,20 @@ links:
           subtest: e.style['shape-inside'] = "url(\"https://example.com/\")" should set the property value
         - test: shape-inside-valid.svg
           subtest: e.style['shape-inside'] = "circle(10px at 20px -30px) url(\"https://example.com/\") ellipse(10px 20px at -30px 40px)" should set the property value
+    - product: chrome
+      url: https://bugs.chromium.org/p/chromium/issues/detail?id=910446
+      results:
+        - test: text-decoration-fill-valid.svg
+          subtest: e.style['text-decoration-fill'] = "context-fill" should set the property value
+        - test: text-decoration-fill-valid.svg
+          subtest: e.style['text-decoration-fill'] = "none" should set the property value
+        - test: text-decoration-fill-valid.svg
+          subtest: e.style['text-decoration-fill'] = "context-stroke" should set the property value
+        - test: text-decoration-fill-valid.svg
+          subtest: e.style['text-decoration-fill'] = "rgb(12, 34, 56)" should set the property value
+        - test: text-decoration-fill-valid.svg
+          subtest: e.style['text-decoration-fill'] = "url(\"https://example.com/\")" should set the property value
+        - test: text-decoration-fill-valid.svg
+          subtest: e.style['text-decoration-fill'] = "url(\"https://example.com/\") none" should set the property value
+        - test: text-decoration-fill-valid.svg
+          subtest: e.style['text-decoration-fill'] = "url(\"https://example.com/\") rgb(12, 34, 56)" should set the property value
