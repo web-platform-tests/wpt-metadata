@@ -31,3 +31,14 @@ links:
           subtest: 'SVG Geometry Properties: getComputedStyle().height, <svg> inline style (auto)'
         - test: height-computed.svg
           subtest: 'SVG Geometry Properties: getComputedStyle().height, <svg> inline style (percentage)'
+    - product: chrome
+      url: https://bugs.chromium.org/p/chromium/issues/detail?id=467917
+      results:
+        - test: width-computed.svg
+          subtest: 'SVG Geometry Properties: getComputedStyle().width, <svg> initial'
+        - test: width-computed.svg
+          subtest: 'SVG Geometry Properties: getComputedStyle().width, <svg> presentation attribute'
+        - test: width-computed.svg
+          subtest: 'SVG Geometry Properties: getComputedStyle().width, <svg> inline style (auto)'
+        - test: width-computed.svg
+          subtest: 'SVG Geometry Properties: getComputedStyle().width, <svg> inline style (percentage)'
