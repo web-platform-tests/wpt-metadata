@@ -16,3 +16,7 @@ links:
           subtest: Cache.matchAll with responses containing "Vary" header
         - test: cache-matchAll.https.html
           subtest: Cache.matchAll with multiple vary pairs
+    - product: chrome
+      url: https://crbug.com/847357
+      results:
+        - test: cache-keys-attributes-for-service-worker.https.html
