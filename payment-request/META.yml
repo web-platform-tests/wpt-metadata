@@ -12,3 +12,5 @@ links:
           subtest: If there are multiple shipping options all with `selected` set to false, then .shippingOption is null.
         - test: payment-request-shippingOption-attribute.https.html
           subtest: If there is a single shipping option, but selected is false, then .shippingOption must be null.
+        - test: payment-request-constructor.https.sub.html
+          subtest: If requestShipping is set, and if there is a multiple selected shipping options, only the last is selected.
