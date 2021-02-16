@@ -25,3 +25,8 @@ links:
       results:
         - test: url-setters.html
           status: FAIL
+    - product: safari
+      url: https://bugs.webkit.org/show_bug.cgi?id=220778
+      results:
+        - test: a-element-origin.html
+          subtest: "Parsing origin: <http://\x1F!\"$&'()*+,-.;=_`{|}~/> against <about:blank>"
