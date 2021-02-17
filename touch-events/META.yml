@@ -1,6 +1,10 @@
 links:
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1687918
-      results:
-        - test: historical.html
-          subtest: TouchEvent::initTouchEvent
+- product: firefox
+  results:
+  - subtest: TouchEvent::initTouchEvent
+    test: historical.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1687918
+- product: firefox
+  results:
+  - test: multi-touch-interfaces.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1693303
