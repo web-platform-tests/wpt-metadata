@@ -1,48 +1,147 @@
 links:
-    - product: webkitgtk
-      url: https://bugs.webkit.org/show_bug.cgi?id=206409
-      results:
-        - test: overflow-padding.html
-          status: FAIL
-    - product: chrome
-      url: https://crbug.com/1007065
-      results:
-        - test: overflow-codependent-scrollbars.html
-          status: FAIL
-    - product: chrome
-      url: https://crbug.com/966283
-      results:
-        - test: overflow-body-propagation-007.html
-        - test: overflow-body-propagation-008.html
-        - test: overflow-body-propagation-009.html
-    - product: chrome
-      url: https://crbug.com/993813
-      results:
-        - test: webkit-line-clamp-008.html
-        - test: webkit-line-clamp-029.html
-    - product: chrome
-      url: https://crbug.com/305376
-      results:
-        - test: webkit-line-clamp-018.html
-        - test: webkit-line-clamp-024.html
-    - product: chrome
-      url: https://crbug.com/745905
-      results:
-        - test: text-overflow-scroll-vertical-lr-001.html
-        - test: text-overflow-scroll-vertical-lr-rtl-001.html
-        - test: text-overflow-scroll-vertical-rl-001.html
-        - test: text-overflow-scroll-vertical-rl-rtl-001.html
-        - test: text-overflow-scroll-001.html
-        - test: text-overflow-scroll-rtl-001.html
-    - product: chrome
-      url: https://crbug.com/1067031
-      results:
-        - test: webkit-line-clamp-035.html
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1672652
-      results:
-        - test: overflow-clip-margin-002.html
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1685743
-      results:
-        - test: overflow-clip-margin-005.html
+- product: webkitgtk
+  results:
+  - status: FAIL
+    test: overflow-padding.html
+  url: https://bugs.webkit.org/show_bug.cgi?id=206409
+- product: chrome
+  results:
+  - status: FAIL
+    test: overflow-codependent-scrollbars.html
+  url: https://crbug.com/1007065
+- product: chrome
+  results:
+  - test: overflow-body-propagation-007.html
+  - test: overflow-body-propagation-008.html
+  - test: overflow-body-propagation-009.html
+  url: https://crbug.com/966283
+- product: chrome
+  results:
+  - test: webkit-line-clamp-008.html
+  - test: webkit-line-clamp-029.html
+  url: https://crbug.com/993813
+- product: chrome
+  results:
+  - test: webkit-line-clamp-018.html
+  - test: webkit-line-clamp-024.html
+  url: https://crbug.com/305376
+- product: chrome
+  results:
+  - test: text-overflow-scroll-vertical-lr-001.html
+  - test: text-overflow-scroll-vertical-lr-rtl-001.html
+  - test: text-overflow-scroll-vertical-rl-001.html
+  - test: text-overflow-scroll-vertical-rl-rtl-001.html
+  - test: text-overflow-scroll-001.html
+  - test: text-overflow-scroll-rtl-001.html
+  url: https://crbug.com/745905
+- product: chrome
+  results:
+  - test: webkit-line-clamp-035.html
+  url: https://crbug.com/1067031
+- product: firefox
+  results:
+  - test: overflow-clip-margin-002.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1672652
+- product: firefox
+  results:
+  - test: overflow-clip-margin-005.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1685743
+- product: firefox
+  results:
+  - subtest: overflow auto, scrollbar-gutter always
+    test: scrollbar-gutter-001.html
+  - subtest: overflow auto, scrollbar-gutter always force
+    test: scrollbar-gutter-001.html
+  - subtest: overflow visible, scrollbar-gutter always force
+    test: scrollbar-gutter-001.html
+  - subtest: overflow hidden, scrollbar-gutter always force
+    test: scrollbar-gutter-001.html
+  - subtest: overflow clip, scrollbar-gutter always force
+    test: scrollbar-gutter-001.html
+  - subtest: overflow auto, scrollbar-gutter always both
+    test: scrollbar-gutter-001.html
+  - subtest: overflow scroll, scrollbar-gutter always both
+    test: scrollbar-gutter-001.html
+  - subtest: overflow auto, scrollbar-gutter always both force
+    test: scrollbar-gutter-001.html
+  - subtest: overflow scroll, scrollbar-gutter always both force
+    test: scrollbar-gutter-001.html
+  - subtest: overflow visible, scrollbar-gutter always both force
+    test: scrollbar-gutter-001.html
+  - subtest: overflow hidden, scrollbar-gutter always both force
+    test: scrollbar-gutter-001.html
+  - subtest: overflow clip, scrollbar-gutter always both force
+    test: scrollbar-gutter-001.html
+  - subtest: overflow auto, scrollbar-gutter always
+    test: scrollbar-gutter-rtl-001.html
+  - subtest: overflow auto, scrollbar-gutter always force
+    test: scrollbar-gutter-rtl-001.html
+  - subtest: overflow visible, scrollbar-gutter always force
+    test: scrollbar-gutter-rtl-001.html
+  - subtest: overflow hidden, scrollbar-gutter always force
+    test: scrollbar-gutter-rtl-001.html
+  - subtest: overflow clip, scrollbar-gutter always force
+    test: scrollbar-gutter-rtl-001.html
+  - subtest: overflow auto, scrollbar-gutter always both
+    test: scrollbar-gutter-rtl-001.html
+  - subtest: overflow scroll, scrollbar-gutter always both
+    test: scrollbar-gutter-rtl-001.html
+  - subtest: overflow auto, scrollbar-gutter always both force
+    test: scrollbar-gutter-rtl-001.html
+  - subtest: overflow scroll, scrollbar-gutter always both force
+    test: scrollbar-gutter-rtl-001.html
+  - subtest: overflow visible, scrollbar-gutter always both force
+    test: scrollbar-gutter-rtl-001.html
+  - subtest: overflow hidden, scrollbar-gutter always both force
+    test: scrollbar-gutter-rtl-001.html
+  - subtest: overflow clip, scrollbar-gutter always both force
+    test: scrollbar-gutter-rtl-001.html
+  - subtest: overflow auto, scrollbar-gutter always
+    test: scrollbar-gutter-vertical-lr-001.html
+  - subtest: overflow auto, scrollbar-gutter always force
+    test: scrollbar-gutter-vertical-lr-001.html
+  - subtest: overflow visible, scrollbar-gutter always force
+    test: scrollbar-gutter-vertical-lr-001.html
+  - subtest: overflow hidden, scrollbar-gutter always force
+    test: scrollbar-gutter-vertical-lr-001.html
+  - subtest: overflow clip, scrollbar-gutter always force
+    test: scrollbar-gutter-vertical-lr-001.html
+  - subtest: overflow auto, scrollbar-gutter always both
+    test: scrollbar-gutter-vertical-lr-001.html
+  - subtest: overflow scroll, scrollbar-gutter always both
+    test: scrollbar-gutter-vertical-lr-001.html
+  - subtest: overflow auto, scrollbar-gutter always both force
+    test: scrollbar-gutter-vertical-lr-001.html
+  - subtest: overflow scroll, scrollbar-gutter always both force
+    test: scrollbar-gutter-vertical-lr-001.html
+  - subtest: overflow visible, scrollbar-gutter always both force
+    test: scrollbar-gutter-vertical-lr-001.html
+  - subtest: overflow hidden, scrollbar-gutter always both force
+    test: scrollbar-gutter-vertical-lr-001.html
+  - subtest: overflow clip, scrollbar-gutter always both force
+    test: scrollbar-gutter-vertical-lr-001.html
+  - subtest: overflow auto, scrollbar-gutter always
+    test: scrollbar-gutter-vertical-rl-001.html
+  - subtest: overflow auto, scrollbar-gutter always force
+    test: scrollbar-gutter-vertical-rl-001.html
+  - subtest: overflow visible, scrollbar-gutter always force
+    test: scrollbar-gutter-vertical-rl-001.html
+  - subtest: overflow hidden, scrollbar-gutter always force
+    test: scrollbar-gutter-vertical-rl-001.html
+  - subtest: overflow clip, scrollbar-gutter always force
+    test: scrollbar-gutter-vertical-rl-001.html
+  - subtest: overflow auto, scrollbar-gutter always both
+    test: scrollbar-gutter-vertical-rl-001.html
+  - subtest: overflow scroll, scrollbar-gutter always both
+    test: scrollbar-gutter-vertical-rl-001.html
+  - subtest: overflow auto, scrollbar-gutter always both force
+    test: scrollbar-gutter-vertical-rl-001.html
+  - subtest: overflow scroll, scrollbar-gutter always both force
+    test: scrollbar-gutter-vertical-rl-001.html
+  - subtest: overflow visible, scrollbar-gutter always both force
+    test: scrollbar-gutter-vertical-rl-001.html
+  - subtest: overflow hidden, scrollbar-gutter always both force
+    test: scrollbar-gutter-vertical-rl-001.html
+  - subtest: overflow clip, scrollbar-gutter always both force
+    test: scrollbar-gutter-vertical-rl-001.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1694388
