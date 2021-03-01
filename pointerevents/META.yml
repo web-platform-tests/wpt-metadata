@@ -56,10 +56,8 @@ links:
   - test: pointerevent_releasepointercapture_onpointercancel_touch.html
   - test: pointerevent_touch-action-svg-none-test_touch.html
   - test: pointerevent_touch-action-pan-up-css_touch.html
-  - test: pointerevent_releasepointercapture_events_to_original_target.html
   - subtest: mouse click target during capture
     test: pointerevent_click_during_capture.html
-  - test: pointerevent_sequence_at_implicit_release_on_click.html
   - test: pointerevent_touch-action-inherit_child-pan-x-child-pan-x_touch.html
   - test: pointerevent_touch-action-none-css_touch.html
   - test: pointerevent_touch-action-pan-x-pan-y_touch.html
@@ -84,9 +82,7 @@ links:
   - subtest: Mouse down at green and capture to blue.
     test: pointerevent_mouse_capture_change_hover.html
   - test: pointerevent_touch-action-pan-x-pan-y-pan-y_touch.html
-  - test: pointerevent_disabled_form_control.html
   - test: pointerevent_touch-action-inherit_highest-parent-none_touch.html
-  - test: pointerevent_pointercapture_in_frame.html
   - test: pointerevent_attributes_hoverable_pointers.html?mouse
   - test: pointerevent_attributes_hoverable_pointers.html?pen
   - test: pointerevent_touch-action-pan-right-css_touch.html
@@ -110,7 +106,6 @@ links:
     test: pointerevent_pointerleave_does_not_bubble.html
   - subtest: ' mouse pointerleave.fromElement attribute exists'
     test: pointerevent_pointerleave_does_not_bubble.html
-  - test: pointerevent_boundary_events_in_capturing.html
   - test: pointerevent_touch-action-inherit_child-none_touch.html
   - test: pointerevent_movementxy.html?mouse
   - test: pointerevent_movementxy.html?pen
@@ -145,15 +140,9 @@ links:
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1664335
 - product: firefox
   results:
-  - subtest: click is a PointerEvent
-    test: pointerevent_click_is_a_pointerevent.html
   - subtest: contextmenu is a PointerEvent
     test: pointerevent_contextmenu_is_a_pointerevent.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1675246
-- product: firefox
-  results:
-  - test: pointerevent_click_is_a_pointerevent.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1679046
 - product: firefox
   results:
   - test: pointerevent_capture_suppressing_mouse.html
@@ -162,10 +151,6 @@ links:
   - subtest: pointerleave event after lostpointercapture received
     test: pointerevent_capture_suppressing_mouse.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1680651
-- product: firefox
-  results:
-  - test: pointerevent_fractional_coordinates.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1680669
 - product: firefox
   results:
   - test: pointerevent_touch-action-mouse.html
