@@ -10,3 +10,17 @@ links:
       url: https://bugs.chromium.org/p/chromium/issues/detail?id=910446
       results:
         - test: stroke-valid.svg
+          subtest: e.style['stroke'] = "context-fill" should set the property value
+        - test: stroke-valid.svg
+          subtest: e.style['stroke'] = "context-stroke" should set the property value
+        - test: fill-valid.svg
+          subtest: e.style['fill'] = "context-fill" should set the property value
+        - test: fill-valid.svg
+          subtest: e.style['fill'] = "context-stroke" should set the property value
+    - product: chrome
+      url: https://bugs.chromium.org/p/chromium/issues/detail?id=903021
+      results:
+        - test: image-rendering-computed.svg
+          subtest: Property image-rendering value 'optimizequality'
+        - test: image-rendering-computed.svg
+          subtest: Property image-rendering value 'optimizespeed'

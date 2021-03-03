@@ -1,5 +1,78 @@
 links:
-    - product: chrome
-      url: https://crbug.com/108489
-      results:
-        - test: hash-name-reference.html
+- product: chrome
+  results:
+  - test: hash-name-reference.html
+  url: https://crbug.com/108489
+- product: firefox
+  results:
+  - subtest: HTML (standards) IMG usemap="#hash-name"
+    test: hash-name-reference.html
+  - subtest: HTML (standards) IMG usemap="#non-map-with-this-name"
+    test: hash-name-reference.html
+  - subtest: HTML (standards) IMG usemap="#two-maps-with-this-name"
+    test: hash-name-reference.html
+  - subtest: HTML (standards) IMG usemap="#two-maps-with-this-name-or-id"
+    test: hash-name-reference.html
+  - subtest: HTML (standards) IMG usemap="# "
+    test: hash-name-reference.html
+  - subtest: HTML (standards) IMG usemap="#percent-escape-name-%42"
+    test: hash-name-reference.html
+  - subtest: HTML (standards) IMG usemap="# hash-space-name"
+    test: hash-name-reference.html
+  - subtest: 'HTML (standards) IMG usemap=" #space-before-hash-name"'
+    test: hash-name-reference.html
+  - subtest: HTML (standards) IMG usemap="http://example.org/#garbage-before-hash-name"
+    test: hash-name-reference.html
+  - subtest: HTML (quirks) IMG usemap="#hash-name"
+    test: hash-name-reference.html
+  - subtest: HTML (quirks) IMG usemap="#non-map-with-this-name"
+    test: hash-name-reference.html
+  - subtest: HTML (quirks) IMG usemap="#two-maps-with-this-name"
+    test: hash-name-reference.html
+  - subtest: HTML (quirks) IMG usemap="#two-maps-with-this-name-or-id"
+    test: hash-name-reference.html
+  - subtest: HTML (quirks) IMG usemap="# "
+    test: hash-name-reference.html
+  - subtest: HTML (quirks) IMG usemap="#percent-escape-name-%42"
+    test: hash-name-reference.html
+  - subtest: HTML (quirks) IMG usemap="# hash-space-name"
+    test: hash-name-reference.html
+  - subtest: 'HTML (quirks) IMG usemap=" #space-before-hash-name"'
+    test: hash-name-reference.html
+  - subtest: HTML (quirks) IMG usemap="http://example.org/#garbage-before-hash-name"
+    test: hash-name-reference.html
+  - subtest: XHTML img usemap="#hash-name"
+    test: hash-name-reference.html
+  - subtest: XHTML img usemap="#hash-id"
+    test: hash-name-reference.html
+  - subtest: XHTML img usemap="#non-map-with-this-name"
+    test: hash-name-reference.html
+  - subtest: XHTML img usemap="#two-maps-with-this-name"
+    test: hash-name-reference.html
+  - subtest: XHTML img usemap="#two-maps-with-this-id"
+    test: hash-name-reference.html
+  - subtest: XHTML img usemap="#two-maps-with-this-name-or-id"
+    test: hash-name-reference.html
+  - subtest: XHTML img usemap="#two-maps-with-this-id-or-name"
+    test: hash-name-reference.html
+  - subtest: XHTML img usemap="# "
+    test: hash-name-reference.html
+  - subtest: XHTML img usemap="#\n"
+    test: hash-name-reference.html
+  - subtest: XHTML img usemap="#percent-escape-name-%42"
+    test: hash-name-reference.html
+  - subtest: XHTML img usemap="#percent-escape-id-%42"
+    test: hash-name-reference.html
+  - subtest: XHTML img usemap="# hash-space-name"
+    test: hash-name-reference.html
+  - subtest: XHTML img usemap="# hash-space-id"
+    test: hash-name-reference.html
+  - subtest: 'XHTML img usemap=" #space-before-hash-name"'
+    test: hash-name-reference.html
+  - subtest: 'XHTML img usemap=" #space-before-hash-id"'
+    test: hash-name-reference.html
+  - subtest: XHTML img usemap="http://example.org/#garbage-before-hash-name"
+    test: hash-name-reference.html
+  - subtest: XHTML img usemap="http://example.org/#garbage-before-hash-id"
+    test: hash-name-reference.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1696070
