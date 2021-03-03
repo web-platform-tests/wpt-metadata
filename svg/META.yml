@@ -482,3 +482,10 @@ links:
           subtest: 'SVGElement interface: objects.view must inherit property "correspondingElement" with the proper type'
         - test: idlharness.window.html
           subtest: 'SVGElement interface: objects.view must inherit property "correspondingUseElement" with the proper type'
+    - product: chrome
+      url: https://bugs.chromium.org/p/chromium/issues/detail?id=835431
+      results:
+        - test: idlharness.window.html
+          subtest: 'SVGGeometryElement interface: operation isPointInFill(optional DOMPointInit)'
+        - test: idlharness.window.html
+          subtest: 'SVGGeometryElement interface: operation isPointInStroke(optional DOMPointInit)'
