@@ -21,4 +21,10 @@ links:
       url: https://bugs.chromium.org/p/chromium/issues/detail?id=903021
       results:
         - test: image-rendering-valid.svg
+          subtest: e.style['image-rendering'] = "optimizequality" should set the property value
+        - test: image-rendering-valid.svg
+          subtest: e.style['image-rendering'] = "optimizespeed" should set the property value
         - test: image-rendering-computed.svg
+          subtest: Property image-rendering value 'optimizequality'
+        - test: image-rendering-computed.svg
+          subtest: Property image-rendering value 'optimizespeed'
