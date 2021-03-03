@@ -35,3 +35,12 @@ links:
         - test: SVGAnimatedEnumeration-SVGMarkerElement.html
         - test: SVGAnimatedRect.html
         - test: SVGLength-px.html
+    - product: chrome
+      url: https://bugs.chromium.org/p/chromium/issues/detail?id=1184452
+      results:
+        - test: SVGGraphicsElement.svg
+          subtest: getBBox() returns instance of DOMRect
+        - test: SVGGraphicsElement.svg
+          subtest: getCTM() returns instance of DOMMatrix
+        - test: SVGGraphicsElement.svg
+          subtest: getScreenCTM() returns instance of DOMMatrix
