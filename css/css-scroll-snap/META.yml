@@ -1,10 +1,14 @@
 links:
-- product: chrome
-  results:
-  - status: FAIL
-    test: overflowing-snap-areas.html
-  url: https://crbug.com/954898
-- product: firefox
-  results:
-  - test: snap-at-user-scroll-end.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1694016
+    - product: chrome
+      url: https://crbug.com/954898
+      results:
+        - test: overflowing-snap-areas.html
+          status: FAIL
+    - product: chrome
+      url: https://crbug.com/956576
+      results:
+        - test: snap-inline-block.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1694016
+      results:
+        - test: snap-at-user-scroll-end.html
