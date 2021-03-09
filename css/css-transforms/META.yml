@@ -134,3 +134,81 @@ links:
           subtest: Preserve-3d element flattened due to backdrop-filter
         - test: preserve-3d-flat-grouping-properties.html
           subtest: Preserve-3d element flattened due to isolation
+    - product: chrome
+      url: https://bugs.chromium.org/p/chromium/issues/detail?id=1175179
+      results:
+        - test: css-transforms-transformlist.html
+        - test: transform-background-001.html
+        - test: transform-background-002.html
+        - test: transform-background-007.html
+        - test: transform-background-008.html
+        - test: transform-fixed-bg-006.html
+        - test: transform-fixed-bg-007.html
+        - test: transform-fixed-bg-001.html
+        - test: transform-fixed-bg-002.html
+        - test: transform-fixed-bg-003.html
+        - test: transform-fixed-bg-004.html
+        - test: transform-scaley-001.html
+        - test: transform-table-006.html
+        - test: transform-table-007.html
+        - test: transform-table-008.html
+        - test: transform-rotate-007.html
+        - test: transform-scale-001.html
+        - test: transform-input-012.html
+        - test: transform-input-016.html
+        - test: translate.html
+        - test: transform-translatex-006.html
+        - test: skew-test1.html
+        - test: transform-image-001.html
+        - test: transform-rotate-006.html
+        - test: transform-percent-008.html
+        - test: ttwf-transform-skewy-001.html
+        - test: transform-scale-002.html
+        - test: transform-origin-01.html
+        - test: ttwf-transform-translatex-001.html
+        - test: ttwf-transform-skewx-001.html
+        - test: transforms-rotate-degree-45.html
+        - test: 2d-rotate-001.html
+        - test: css-skew-002.html
+        - test: rotate_45deg.html
+        - test: scaley.html
+    - product: chrome
+      url: https://bugs.chromium.org/p/chromium/issues/detail?id=753080
+      results:
+        - test: rotate_x_45deg.html
+        - test: rotate_y_45deg.html
+        - test: ttwf-css-3d-polygon-cycle-mismatch.html
+        - test: ttwf-css-3d-polygon-cycle.html
+        - test: transform3d-rotatex-perspective-003.html
+        - test: transform-3d-rotateY-stair-below-001.xht
+        - test: transform3d-preserve3d-010.html
+        - test: transform3d-preserve3d-013.html
+        - test: transform3d-sorting-006.html
+    - product: chrome
+      url: crbug.com/1051143
+      results:
+        - test: transform-input-015.html
+    - product: chrome
+      url: crbug.com/900119
+      results:
+        - test: inheritance.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1693820
+      results:
+        - test: inheritance.html
+    - product: chrome
+      url: crbug.com/1008483
+      results:
+        - test: preserve-3d-flat-grouping-properties-containing-block.tentative.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1693837
+      results:
+        - test: preserve-3d-flat-grouping-properties-containing-block.tentative.html
+    - product: chrome
+      url: crbug.com/1076121
+      results:
+        - test: perspective-transforms-equivalence.html
+    - product: chrome
+      url: crbug.com/1181103
+      results:
+        - test: transform-inline-001.html

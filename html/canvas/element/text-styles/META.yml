@@ -1,32 +1,37 @@
 links:
-    - product: safari
-      url: https://bugs.webkit.org/show_bug.cgi?id=202517
-      results:
-        - test: 2d.text.draw.baseline.ideographic.html
-          status: FAIL
-    - product: webkitgtk
-      url: https://bugs.webkit.org/show_bug.cgi?id=202517
-      results:
-        - test: 2d.text.draw.baseline.ideographic.html
-          status: FAIL
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1646754
-      results:
-        - test: 2d.text.font.parse.size.percentage.html
-          subtest: 'Canvas test: 2d.text.font.parse.size.percentage'
-        - test: 2d.text.font.parse.size.percentage.default.html
-          subtest: 'Canvas test: 2d.text.font.parse.size.percentage.default'
-        - test: 2d.text.font.relative_size.html
-          subtest: 'Canvas test: 2d.text.font.relative_size'
-        - test: 2d.text.font.parse.system.html
-          subtest: System fonts must be computed to explicit values
-        - test: 2d.text.font.parse.complex.html
-          subtest: 'Canvas test: 2d.text.font.parse.complex'
-    - product: chrome
-      url: https://crbug.com/1066953
-      results:
-        - test: 2d.text.draw.space.collapse.end.html
-        - test: 2d.text.draw.space.collapse.other.html
-        - test: 2d.text.draw.space.collapse.space.html
-        - test: 2d.text.draw.space.collapse.start.html
-        - test: 2d.text.measure.width.space.html
+- product: safari
+  results:
+  - status: FAIL
+    test: 2d.text.draw.baseline.ideographic.html
+  url: https://bugs.webkit.org/show_bug.cgi?id=202517
+- product: webkitgtk
+  results:
+  - status: FAIL
+    test: 2d.text.draw.baseline.ideographic.html
+  url: https://bugs.webkit.org/show_bug.cgi?id=202517
+- product: firefox
+  results:
+  - subtest: 'Canvas test: 2d.text.font.parse.size.percentage'
+    test: 2d.text.font.parse.size.percentage.html
+  - subtest: 'Canvas test: 2d.text.font.parse.size.percentage.default'
+    test: 2d.text.font.parse.size.percentage.default.html
+  - subtest: 'Canvas test: 2d.text.font.relative_size'
+    test: 2d.text.font.relative_size.html
+  - subtest: System fonts must be computed to explicit values
+    test: 2d.text.font.parse.system.html
+  - subtest: 'Canvas test: 2d.text.font.parse.complex'
+    test: 2d.text.font.parse.complex.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1646754
+- product: chrome
+  results:
+  - test: 2d.text.draw.space.collapse.end.html
+  - test: 2d.text.draw.space.collapse.other.html
+  - test: 2d.text.draw.space.collapse.space.html
+  - test: 2d.text.draw.space.collapse.start.html
+  - test: 2d.text.measure.width.space.html
+  url: https://crbug.com/1066953
+- product: firefox
+  results:
+  - subtest: 'Canvas test: 2d.text.font.parse.invalid'
+    test: 2d.text.font.parse.invalid.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1691665

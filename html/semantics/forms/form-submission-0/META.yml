@@ -1,23 +1,28 @@
 links:
-    - product: chrome
-      url: https://crbug.com/1087077
-      results:
-        - test: form-double-submit.html
-          status: FAIL
-        - test: form-double-submit-3.html
-          status: FAIL
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1680725
-      results:
-        - test: newline-normalization.html
-          subtest: 'Form newline normalization: \n in the value becomes \r\n'
-        - test: newline-normalization.html
-          subtest: 'Form newline normalization: \r in the value becomes \r\n'
-        - test: newline-normalization.html
-          subtest: 'Form newline normalization: \n\r in the value becomes \r\n\r\n'
-        - test: newline-normalization.html
-          subtest: 'Form newline normalization: \n in the name becomes \r\n'
-        - test: newline-normalization.html
-          subtest: 'Form newline normalization: \r in the name becomes \r\n'
-        - test: newline-normalization.html
-          subtest: 'Form newline normalization: \n\r in the name becomes \r\n\r\n'
+- product: chrome
+  results:
+  - status: FAIL
+    test: form-double-submit.html
+  - status: FAIL
+    test: form-double-submit-3.html
+  url: https://crbug.com/1087077
+- product: firefox
+  results:
+  - subtest: 'Form newline normalization: \n in the value becomes \r\n'
+    test: newline-normalization.html
+  - subtest: 'Form newline normalization: \r in the value becomes \r\n'
+    test: newline-normalization.html
+  - subtest: 'Form newline normalization: \n\r in the value becomes \r\n\r\n'
+    test: newline-normalization.html
+  - subtest: 'Form newline normalization: \n in the name becomes \r\n'
+    test: newline-normalization.html
+  - subtest: 'Form newline normalization: \r in the name becomes \r\n'
+    test: newline-normalization.html
+  - subtest: 'Form newline normalization: \n\r in the name becomes \r\n\r\n'
+    test: newline-normalization.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1680725
+- product: firefox
+  results:
+  - subtest: Empty <input type=file> is still added to the form's entry list
+    test: form-data-set-empty-file.window.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1691655

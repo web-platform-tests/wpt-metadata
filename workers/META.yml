@@ -3,3 +3,17 @@ links:
       url: https://crbug.com/1071345
       results:
         - test: dedicated-worker-parse-error-failure.html
+    - product: chrome
+      url: https://crbug.com/1055693
+      results:
+        - test: shared-worker-in-data-url-context.window.html
+          subtest: Create a shared worker in a data url frame
+        - test: shared-worker-in-data-url-context.window.html
+          subtest: Create a data url shared worker in a data url frame
+    - product: chrome
+      url: https://crbug.com/1055697
+      results:
+        - test: dedicated-worker-in-data-url-context.window.html
+          subtest: Create a dedicated worker in a data url frame
+        - test: dedicated-worker-in-data-url-context.window.html
+          subtest: Create a dedicated worker in a data url dedicated worker

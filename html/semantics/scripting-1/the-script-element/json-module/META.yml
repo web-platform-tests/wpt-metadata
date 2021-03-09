@@ -1,10 +1,16 @@
 links:
-    - product: chrome
-      url: https://crbug.com/967018
-      results:
-        - test: json-module-service-worker-test.https.tentative.html
-          status: FAIL
-    - product: chrome
-      url: https://crbug.com/1142419
-      results:
-        - test: parse-error.tentative.html
+- product: chrome
+  results:
+  - status: FAIL
+    test: json-module-service-worker-test.https.tentative.html
+  url: https://crbug.com/967018
+- product: chrome
+  results:
+  - test: parse-error.tentative.html
+  url: https://crbug.com/1142419
+- product: firefox
+  results:
+  - test: module.tentative.html
+  - test: utf8.tentative.html
+  - test: valid-content-type.tentative.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1692131

@@ -4,3 +4,22 @@ links:
       results:
         - test: tabindex-focus-flag.svg
           subtest: The document root element should be focusable.
+    - product: chrome
+      url: https://bugs.chromium.org/p/chromium/issues/detail?id=912612
+      results:
+        - test: tabindex-focus-flag.svg
+          subtest: iframe should be focusable.
+        - test: tabindex-focus-flag.svg
+          subtest: rect[focusable=true] should be focusable.
+        - test: tabindex-focus-flag.svg
+          subtest: a[focusable=false] should not be focusable.
+        - test: tabindex-focus-flag.svg
+          subtest: mesh[tabindex] should be focusable.
+        - test: tabindex-focus-flag.svg
+          subtest: unknown[tabindex] should be focusable.
+        - test: tabindex-focus-flag.svg
+          subtest: audio[controls] should be focusable.
+        - test: tabindex-focus-flag.svg
+          subtest: video[controls] should be focusable.
+        - test: tabindex-focus-flag.svg
+          subtest: canvas[tabindex] should be focusable.

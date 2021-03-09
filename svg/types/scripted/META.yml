@@ -28,3 +28,21 @@ links:
           subtest: SVGGeometryElement.prototype.isPointInStroke, no arguments.
         - test: SVGGeometryElement.isPointInFill-01.svg
           subtest: SVGGeometryElement.prototype.isPointInFill, no arguments.
+    - product: chrome
+      url: https://bugs.chromium.org/p/chromium/issues/detail?id=1184450
+      results:
+        - test: SVGLength-px.html
+          subtest: SVGLength, converting from 'px' to other units (detached), percentage
+        - test: SVGLength-px.html
+          subtest: SVGLength, converting from 'px' to other units (detached), ems
+        - test: SVGLength-px.html
+          subtest: SVGLength, converting from 'px' to other units (detached), exs
+        - test: SVGAnimatedEnumeration-SVGFECompositeElement.html
+        - test: SVGAnimatedEnumeration-SVGMarkerElement.html
+        - test: SVGAnimatedRect.html
+        - test: SVGLength-px.html
+    - product: chrome
+      url: https://bugs.chromium.org/p/chromium/issues/detail?id=1184452
+      results:
+        - test: SVGGraphicsElement.getBBox-02.html
+        - test: SVGGraphicsElement.svg
