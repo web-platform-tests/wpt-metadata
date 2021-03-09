@@ -67,8 +67,26 @@ links:
           status: FAIL
         - test: idlharness.https.window.html
           status: FAIL
+        - test: RTCPeerConnection-setRemoteDescription-offer.html
+        - test: RTCRtpTransceiver.https.html
     - product: chrome
       url: https://crbug.com/812552
       results:
         - test: RTCDataChannel-send.html
           status: FAIL
+    - product: chrome
+      url: https://crbug.com/1134607
+      results:
+        - test: RTCDataChannel-binaryType.window.html
+    - product: chrome
+      url: https://crbug.com/788737
+      results:
+        - test: RTCPeerConnection-setRemoteDescription.html
+    - product: chrome
+      url: https://crbug.com/944821
+      results:
+        - test: RTCPeerConnection-setRemoteDescription-simulcast.https.html
+    - product: chrome
+      url: https://crbug.com/1084006
+      results:
+        - test: RTCRtpSender-replaceTrack.https.html
