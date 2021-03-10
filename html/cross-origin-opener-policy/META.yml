@@ -25,3 +25,10 @@ links:
   - subtest: Cross origin popup redirects to same-origin with same-origin-allow-popups
     test: popup-redirect-same-origin-allow-popups.https.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1697378
+- product: firefox
+  results:
+  - status: CRASH
+    test: navigate-to-aboutblank.https.html
+  - status: CRASH
+    test: navigate-top-to-aboutblank.https.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1697386
