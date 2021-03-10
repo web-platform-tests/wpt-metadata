@@ -1,540 +1,1045 @@
 links:
-    - product: chrome
-      url: https://crbug.com/1029529
-      results:
-        - test: background-image-interpolation.html
-          status: FAIL
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1674750
-      results:
-        - test: background-image-interpolation.html
-          subtest: 'CSS Transitions: property <background-image> from neutral to [url(../resources/green-100.png)] at (-0.3) should be [url(../resources/blue-100.png)]'
-        - test: background-image-interpolation.html
-          subtest: 'CSS Transitions: property <background-image> from neutral to [url(../resources/green-100.png)] at (0) should be [url(../resources/blue-100.png)]'
-        - test: background-image-interpolation.html
-          subtest: 'CSS Transitions with transition: all: property <background-image> from neutral to [url(../resources/green-100.png)] at (-0.3) should be [url(../resources/blue-100.png)]'
-        - test: background-image-interpolation.html
-          subtest: 'CSS Transitions with transition: all: property <background-image> from neutral to [url(../resources/green-100.png)] at (0) should be [url(../resources/blue-100.png)]'
-        - test: background-image-interpolation.html
-          subtest: 'CSS Transitions: property <background-image> from [inherit] to [url(../resources/green-100.png)] at (-0.3) should be [url(../resources/blue-100.png)]'
-        - test: background-image-interpolation.html
-          subtest: 'CSS Transitions: property <background-image> from [inherit] to [url(../resources/green-100.png)] at (0) should be [url(../resources/blue-100.png)]'
-        - test: background-image-interpolation.html
-          subtest: 'CSS Transitions with transition: all: property <background-image> from [inherit] to [url(../resources/green-100.png)] at (-0.3) should be [url(../resources/blue-100.png)]'
-        - test: background-image-interpolation.html
-          subtest: 'CSS Transitions with transition: all: property <background-image> from [inherit] to [url(../resources/green-100.png)] at (0) should be [url(../resources/blue-100.png)]'
-        - test: background-image-interpolation.html
-          subtest: 'CSS Transitions: property <background-image> from [url(../resources/blue-100.png)] to [url(../resources/green-100.png)] at (-0.3) should be [url(../resources/blue-100.png)]'
-        - test: background-image-interpolation.html
-          subtest: 'CSS Transitions: property <background-image> from [url(../resources/blue-100.png)] to [url(../resources/green-100.png)] at (0) should be [url(../resources/blue-100.png)]'
-        - test: background-image-interpolation.html
-          subtest: 'CSS Transitions with transition: all: property <background-image> from [url(../resources/blue-100.png)] to [url(../resources/green-100.png)] at (-0.3) should be [url(../resources/blue-100.png)]'
-        - test: background-image-interpolation.html
-          subtest: 'CSS Transitions with transition: all: property <background-image> from [url(../resources/blue-100.png)] to [url(../resources/green-100.png)] at (0) should be [url(../resources/blue-100.png)]'
-        - test: background-image-interpolation.html
-          subtest: 'CSS Transitions: property <background-image> from [url(../resources/blue-100.png)] to [cross-fade(url(../resources/green-100.png), url(../resources/stripes-100.png), 0.5)] at (0.6) should be [cross-fade(url(../resources/green-100.png), url(../resources/stripes-100.png), 0.5)]'
-        - test: background-image-interpolation.html
-          subtest: 'CSS Transitions: property <background-image> from [url(../resources/blue-100.png)] to [cross-fade(url(../resources/green-100.png), url(../resources/stripes-100.png), 0.5)] at (1) should be [cross-fade(url(../resources/green-100.png), url(../resources/stripes-100.png), 0.5)]'
-        - test: background-image-interpolation.html
-          subtest: 'CSS Transitions: property <background-image> from [url(../resources/blue-100.png)] to [cross-fade(url(../resources/green-100.png), url(../resources/stripes-100.png), 0.5)] at (1.5) should be [cross-fade(url(../resources/green-100.png), url(../resources/stripes-100.png), 0.5)]'
-        - test: background-image-interpolation.html
-          subtest: 'CSS Transitions with transition: all: property <background-image> from [url(../resources/blue-100.png)] to [cross-fade(url(../resources/green-100.png), url(../resources/stripes-100.png), 0.5)] at (0.6) should be [cross-fade(url(../resources/green-100.png), url(../resources/stripes-100.png), 0.5)]'
-        - test: background-image-interpolation.html
-          subtest: 'CSS Transitions with transition: all: property <background-image> from [url(../resources/blue-100.png)] to [cross-fade(url(../resources/green-100.png), url(../resources/stripes-100.png), 0.5)] at (1) should be [cross-fade(url(../resources/green-100.png), url(../resources/stripes-100.png), 0.5)]'
-        - test: background-image-interpolation.html
-          subtest: 'CSS Transitions with transition: all: property <background-image> from [url(../resources/blue-100.png)] to [cross-fade(url(../resources/green-100.png), url(../resources/stripes-100.png), 0.5)] at (1.5) should be [cross-fade(url(../resources/green-100.png), url(../resources/stripes-100.png), 0.5)]'
-        - test: background-image-interpolation.html
-          subtest: 'CSS Animations: property <background-image> from [url(../resources/blue-100.png)] to [cross-fade(url(../resources/green-100.png), url(../resources/stripes-100.png), 0.5)] at (0.6) should be [cross-fade(url(../resources/green-100.png), url(../resources/stripes-100.png), 0.5)]'
-        - test: background-image-interpolation.html
-          subtest: 'CSS Animations: property <background-image> from [url(../resources/blue-100.png)] to [cross-fade(url(../resources/green-100.png), url(../resources/stripes-100.png), 0.5)] at (1) should be [cross-fade(url(../resources/green-100.png), url(../resources/stripes-100.png), 0.5)]'
-        - test: background-image-interpolation.html
-          subtest: 'CSS Animations: property <background-image> from [url(../resources/blue-100.png)] to [cross-fade(url(../resources/green-100.png), url(../resources/stripes-100.png), 0.5)] at (1.5) should be [cross-fade(url(../resources/green-100.png), url(../resources/stripes-100.png), 0.5)]'
-        - test: background-image-interpolation.html
-          subtest: 'Web Animations: property <background-image> from [url(../resources/blue-100.png)] to [cross-fade(url(../resources/green-100.png), url(../resources/stripes-100.png), 0.5)] at (0.6) should be [cross-fade(url(../resources/green-100.png), url(../resources/stripes-100.png), 0.5)]'
-        - test: background-image-interpolation.html
-          subtest: 'Web Animations: property <background-image> from [url(../resources/blue-100.png)] to [cross-fade(url(../resources/green-100.png), url(../resources/stripes-100.png), 0.5)] at (1) should be [cross-fade(url(../resources/green-100.png), url(../resources/stripes-100.png), 0.5)]'
-        - test: background-image-interpolation.html
-          subtest: 'Web Animations: property <background-image> from [url(../resources/blue-100.png)] to [cross-fade(url(../resources/green-100.png), url(../resources/stripes-100.png), 0.5)] at (1.5) should be [cross-fade(url(../resources/green-100.png), url(../resources/stripes-100.png), 0.5)]'
-        - test: background-image-interpolation.html
-          subtest: 'CSS Transitions: property <background-image> from [url(../resources/stripes-100.png), url(../resources/blue-100.png)] to [url(../resources/blue-100.png), url(../resources/stripes-100.png)] at (-0.3) should be [url(../resources/stripes-100.png), url(../resources/blue-100.png)]'
-        - test: background-image-interpolation.html
-          subtest: 'CSS Transitions: property <background-image> from [url(../resources/stripes-100.png), url(../resources/blue-100.png)] to [url(../resources/blue-100.png), url(../resources/stripes-100.png)] at (0) should be [url(../resources/stripes-100.png), url(../resources/blue-100.png)]'
-        - test: background-image-interpolation.html
-          subtest: 'CSS Transitions with transition: all: property <background-image> from [url(../resources/stripes-100.png), url(../resources/blue-100.png)] to [url(../resources/blue-100.png), url(../resources/stripes-100.png)] at (-0.3) should be [url(../resources/stripes-100.png), url(../resources/blue-100.png)]'
-        - test: background-image-interpolation.html
-          subtest: 'CSS Transitions with transition: all: property <background-image> from [url(../resources/stripes-100.png), url(../resources/blue-100.png)] to [url(../resources/blue-100.png), url(../resources/stripes-100.png)] at (0) should be [url(../resources/stripes-100.png), url(../resources/blue-100.png)]'
-        - test: background-image-interpolation.html
-          subtest: 'CSS Transitions: property <background-image> from [url(../resources/blue-100.png)] to [url(../resources/stripes-100.png), url(../resources/green-100.png)] at (0) should be [url(../resources/blue-100.png)]'
-        - test: background-image-interpolation.html
-          subtest: 'CSS Transitions with transition: all: property <background-image> from [url(../resources/blue-100.png)] to [url(../resources/stripes-100.png), url(../resources/green-100.png)] at (0) should be [url(../resources/blue-100.png)]'
-        - test: background-position-interpolation.html
-          subtest: 'CSS Transitions: property <background-position> from [top 0px left 0px] to [left 80px top 80px] at (-0.25) should be [-20px -20px, -20px -20px, -20px -20px, -20px -20px]'
-        - test: background-position-interpolation.html
-          subtest: 'CSS Transitions: property <background-position> from [top 0px left 0px] to [left 80px top 80px] at (0) should be [  0px   0px,   0px   0px,   0px   0px,   0px   0px]'
-        - test: background-position-interpolation.html
-          subtest: 'CSS Transitions: property <background-position> from [top 0px left 0px] to [left 80px top 80px] at (0.25) should be [ 20px  20px,  20px  20px,  20px  20px,  20px  20px]'
-        - test: background-position-interpolation.html
-          subtest: 'CSS Transitions: property <background-position> from [top 0px left 0px] to [left 80px top 80px] at (0.5) should be [ 40px  40px,  40px  40px,  40px  40px,  40px  40px]'
-        - test: background-position-interpolation.html
-          subtest: 'CSS Transitions: property <background-position> from [top 0px left 0px] to [left 80px top 80px] at (0.75) should be [ 60px  60px,  60px  60px,  60px  60px,  60px  60px]'
-        - test: background-position-interpolation.html
-          subtest: 'CSS Transitions: property <background-position> from [top 0px left 0px] to [left 80px top 80px] at (1) should be [ 80px  80px,  80px  80px,  80px  80px,  80px  80px]'
-        - test: background-position-interpolation.html
-          subtest: 'CSS Transitions: property <background-position> from [top 0px left 0px] to [left 80px top 80px] at (1.25) should be [100px 100px, 100px 100px, 100px 100px, 100px 100px]'
-        - test: background-position-interpolation.html
-          subtest: 'CSS Transitions with transition: all: property <background-position> from [top 0px left 0px] to [left 80px top 80px] at (-0.25) should be [-20px -20px, -20px -20px, -20px -20px, -20px -20px]'
-        - test: background-position-interpolation.html
-          subtest: 'CSS Transitions with transition: all: property <background-position> from [top 0px left 0px] to [left 80px top 80px] at (0) should be [  0px   0px,   0px   0px,   0px   0px,   0px   0px]'
-        - test: background-position-interpolation.html
-          subtest: 'CSS Transitions with transition: all: property <background-position> from [top 0px left 0px] to [left 80px top 80px] at (0.25) should be [ 20px  20px,  20px  20px,  20px  20px,  20px  20px]'
-        - test: background-position-interpolation.html
-          subtest: 'CSS Transitions with transition: all: property <background-position> from [top 0px left 0px] to [left 80px top 80px] at (0.5) should be [ 40px  40px,  40px  40px,  40px  40px,  40px  40px]'
-        - test: background-position-interpolation.html
-          subtest: 'CSS Transitions with transition: all: property <background-position> from [top 0px left 0px] to [left 80px top 80px] at (0.75) should be [ 60px  60px,  60px  60px,  60px  60px,  60px  60px]'
-        - test: background-position-interpolation.html
-          subtest: 'CSS Transitions with transition: all: property <background-position> from [top 0px left 0px] to [left 80px top 80px] at (1) should be [ 80px  80px,  80px  80px,  80px  80px,  80px  80px]'
-        - test: background-position-interpolation.html
-          subtest: 'CSS Transitions with transition: all: property <background-position> from [top 0px left 0px] to [left 80px top 80px] at (1.25) should be [100px 100px, 100px 100px, 100px 100px, 100px 100px]'
-        - test: background-position-interpolation.html
-          subtest: 'CSS Animations: property <background-position> from [top 0px left 0px] to [left 80px top 80px] at (-0.25) should be [-20px -20px, -20px -20px, -20px -20px, -20px -20px]'
-        - test: background-position-interpolation.html
-          subtest: 'CSS Animations: property <background-position> from [top 0px left 0px] to [left 80px top 80px] at (0) should be [  0px   0px,   0px   0px,   0px   0px,   0px   0px]'
-        - test: background-position-interpolation.html
-          subtest: 'CSS Animations: property <background-position> from [top 0px left 0px] to [left 80px top 80px] at (0.25) should be [ 20px  20px,  20px  20px,  20px  20px,  20px  20px]'
-        - test: background-position-interpolation.html
-          subtest: 'CSS Animations: property <background-position> from [top 0px left 0px] to [left 80px top 80px] at (0.5) should be [ 40px  40px,  40px  40px,  40px  40px,  40px  40px]'
-        - test: background-position-interpolation.html
-          subtest: 'CSS Animations: property <background-position> from [top 0px left 0px] to [left 80px top 80px] at (0.75) should be [ 60px  60px,  60px  60px,  60px  60px,  60px  60px]'
-        - test: background-position-interpolation.html
-          subtest: 'CSS Animations: property <background-position> from [top 0px left 0px] to [left 80px top 80px] at (1) should be [ 80px  80px,  80px  80px,  80px  80px,  80px  80px]'
-        - test: background-position-interpolation.html
-          subtest: 'CSS Animations: property <background-position> from [top 0px left 0px] to [left 80px top 80px] at (1.25) should be [100px 100px, 100px 100px, 100px 100px, 100px 100px]'
-        - test: background-position-interpolation.html
-          subtest: 'Web Animations: property <background-position> from [top 0px left 0px] to [left 80px top 80px] at (-0.25) should be [-20px -20px, -20px -20px, -20px -20px, -20px -20px]'
-        - test: background-position-interpolation.html
-          subtest: 'Web Animations: property <background-position> from [top 0px left 0px] to [left 80px top 80px] at (0) should be [  0px   0px,   0px   0px,   0px   0px,   0px   0px]'
-        - test: background-position-interpolation.html
-          subtest: 'Web Animations: property <background-position> from [top 0px left 0px] to [left 80px top 80px] at (0.25) should be [ 20px  20px,  20px  20px,  20px  20px,  20px  20px]'
-        - test: background-position-interpolation.html
-          subtest: 'Web Animations: property <background-position> from [top 0px left 0px] to [left 80px top 80px] at (0.5) should be [ 40px  40px,  40px  40px,  40px  40px,  40px  40px]'
-        - test: background-position-interpolation.html
-          subtest: 'Web Animations: property <background-position> from [top 0px left 0px] to [left 80px top 80px] at (0.75) should be [ 60px  60px,  60px  60px,  60px  60px,  60px  60px]'
-        - test: background-position-interpolation.html
-          subtest: 'Web Animations: property <background-position> from [top 0px left 0px] to [left 80px top 80px] at (1) should be [ 80px  80px,  80px  80px,  80px  80px,  80px  80px]'
-        - test: background-position-interpolation.html
-          subtest: 'Web Animations: property <background-position> from [top 0px left 0px] to [left 80px top 80px] at (1.25) should be [100px 100px, 100px 100px, 100px 100px, 100px 100px]'
-        - test: background-position-interpolation.html
-          subtest: 'CSS Transitions: property <background-position> from [0px 0px, 80px 0px] to [40px 40px, 80px 80px, 0px 80px] at (-0.25) should be [-10px -10px, 80px -20px, 0px -20px, 90px -10px]'
-        - test: background-position-interpolation.html
-          subtest: 'CSS Transitions: property <background-position> from [0px 0px, 80px 0px] to [40px 40px, 80px 80px, 0px 80px] at (0) should be [  0px   0px, 80px   0px, 0px   0px, 80px   0px]'
-        - test: background-position-interpolation.html
-          subtest: 'CSS Transitions: property <background-position> from [0px 0px, 80px 0px] to [40px 40px, 80px 80px, 0px 80px] at (0.25) should be [ 10px  10px, 80px  20px, 0px  20px, 70px  10px]'
-        - test: background-position-interpolation.html
-          subtest: 'CSS Transitions: property <background-position> from [0px 0px, 80px 0px] to [40px 40px, 80px 80px, 0px 80px] at (0.5) should be [ 20px  20px, 80px  40px, 0px  40px, 60px  20px]'
-        - test: background-position-interpolation.html
-          subtest: 'CSS Transitions: property <background-position> from [0px 0px, 80px 0px] to [40px 40px, 80px 80px, 0px 80px] at (0.75) should be [ 30px  30px, 80px  60px, 0px  60px, 50px  30px]'
-        - test: background-position-interpolation.html
-          subtest: 'CSS Transitions: property <background-position> from [0px 0px, 80px 0px] to [40px 40px, 80px 80px, 0px 80px] at (1) should be [ 40px  40px, 80px  80px, 0px  80px, 40px  40px]'
-        - test: background-position-interpolation.html
-          subtest: 'CSS Transitions: property <background-position> from [0px 0px, 80px 0px] to [40px 40px, 80px 80px, 0px 80px] at (1.25) should be [ 50px  50px, 80px 100px, 0px 100px, 30px  50px]'
-        - test: background-position-interpolation.html
-          subtest: 'CSS Transitions with transition: all: property <background-position> from [0px 0px, 80px 0px] to [40px 40px, 80px 80px, 0px 80px] at (-0.25) should be [-10px -10px, 80px -20px, 0px -20px, 90px -10px]'
-        - test: background-position-interpolation.html
-          subtest: 'CSS Transitions with transition: all: property <background-position> from [0px 0px, 80px 0px] to [40px 40px, 80px 80px, 0px 80px] at (0) should be [  0px   0px, 80px   0px, 0px   0px, 80px   0px]'
-        - test: background-position-interpolation.html
-          subtest: 'CSS Transitions with transition: all: property <background-position> from [0px 0px, 80px 0px] to [40px 40px, 80px 80px, 0px 80px] at (0.25) should be [ 10px  10px, 80px  20px, 0px  20px, 70px  10px]'
-        - test: background-position-interpolation.html
-          subtest: 'CSS Transitions with transition: all: property <background-position> from [0px 0px, 80px 0px] to [40px 40px, 80px 80px, 0px 80px] at (0.5) should be [ 20px  20px, 80px  40px, 0px  40px, 60px  20px]'
-        - test: background-position-interpolation.html
-          subtest: 'CSS Transitions with transition: all: property <background-position> from [0px 0px, 80px 0px] to [40px 40px, 80px 80px, 0px 80px] at (0.75) should be [ 30px  30px, 80px  60px, 0px  60px, 50px  30px]'
-        - test: background-position-interpolation.html
-          subtest: 'CSS Transitions with transition: all: property <background-position> from [0px 0px, 80px 0px] to [40px 40px, 80px 80px, 0px 80px] at (1) should be [ 40px  40px, 80px  80px, 0px  80px, 40px  40px]'
-        - test: background-position-interpolation.html
-          subtest: 'CSS Transitions with transition: all: property <background-position> from [0px 0px, 80px 0px] to [40px 40px, 80px 80px, 0px 80px] at (1.25) should be [ 50px  50px, 80px 100px, 0px 100px, 30px  50px]'
-        - test: background-position-interpolation.html
-          subtest: 'CSS Animations: property <background-position> from [0px 0px, 80px 0px] to [40px 40px, 80px 80px, 0px 80px] at (-0.25) should be [-10px -10px, 80px -20px, 0px -20px, 90px -10px]'
-        - test: background-position-interpolation.html
-          subtest: 'CSS Animations: property <background-position> from [0px 0px, 80px 0px] to [40px 40px, 80px 80px, 0px 80px] at (0) should be [  0px   0px, 80px   0px, 0px   0px, 80px   0px]'
-        - test: background-position-interpolation.html
-          subtest: 'CSS Animations: property <background-position> from [0px 0px, 80px 0px] to [40px 40px, 80px 80px, 0px 80px] at (0.25) should be [ 10px  10px, 80px  20px, 0px  20px, 70px  10px]'
-        - test: background-position-interpolation.html
-          subtest: 'CSS Animations: property <background-position> from [0px 0px, 80px 0px] to [40px 40px, 80px 80px, 0px 80px] at (0.5) should be [ 20px  20px, 80px  40px, 0px  40px, 60px  20px]'
-        - test: background-position-interpolation.html
-          subtest: 'CSS Animations: property <background-position> from [0px 0px, 80px 0px] to [40px 40px, 80px 80px, 0px 80px] at (0.75) should be [ 30px  30px, 80px  60px, 0px  60px, 50px  30px]'
-        - test: background-position-interpolation.html
-          subtest: 'CSS Animations: property <background-position> from [0px 0px, 80px 0px] to [40px 40px, 80px 80px, 0px 80px] at (1) should be [ 40px  40px, 80px  80px, 0px  80px, 40px  40px]'
-        - test: background-position-interpolation.html
-          subtest: 'CSS Animations: property <background-position> from [0px 0px, 80px 0px] to [40px 40px, 80px 80px, 0px 80px] at (1.25) should be [ 50px  50px, 80px 100px, 0px 100px, 30px  50px]'
-        - test: background-position-interpolation.html
-          subtest: 'Web Animations: property <background-position> from [0px 0px, 80px 0px] to [40px 40px, 80px 80px, 0px 80px] at (-0.25) should be [-10px -10px, 80px -20px, 0px -20px, 90px -10px]'
-        - test: background-position-interpolation.html
-          subtest: 'Web Animations: property <background-position> from [0px 0px, 80px 0px] to [40px 40px, 80px 80px, 0px 80px] at (0) should be [  0px   0px, 80px   0px, 0px   0px, 80px   0px]'
-        - test: background-position-interpolation.html
-          subtest: 'Web Animations: property <background-position> from [0px 0px, 80px 0px] to [40px 40px, 80px 80px, 0px 80px] at (0.25) should be [ 10px  10px, 80px  20px, 0px  20px, 70px  10px]'
-        - test: background-position-interpolation.html
-          subtest: 'Web Animations: property <background-position> from [0px 0px, 80px 0px] to [40px 40px, 80px 80px, 0px 80px] at (0.5) should be [ 20px  20px, 80px  40px, 0px  40px, 60px  20px]'
-        - test: background-position-interpolation.html
-          subtest: 'Web Animations: property <background-position> from [0px 0px, 80px 0px] to [40px 40px, 80px 80px, 0px 80px] at (0.75) should be [ 30px  30px, 80px  60px, 0px  60px, 50px  30px]'
-        - test: background-position-interpolation.html
-          subtest: 'Web Animations: property <background-position> from [0px 0px, 80px 0px] to [40px 40px, 80px 80px, 0px 80px] at (1) should be [ 40px  40px, 80px  80px, 0px  80px, 40px  40px]'
-        - test: background-position-interpolation.html
-          subtest: 'Web Animations: property <background-position> from [0px 0px, 80px 0px] to [40px 40px, 80px 80px, 0px 80px] at (1.25) should be [ 50px  50px, 80px 100px, 0px 100px, 30px  50px]'
-        - test: background-position-origin-interpolation.html
-          subtest: 'CSS Transitions: property <background-position> from [initial] to [left 20px top 20px] at (0.25) should be [5px 5px]'
-        - test: background-position-origin-interpolation.html
-          subtest: 'CSS Transitions: property <background-position> from [initial] to [left 20px top 20px] at (0.5) should be [10px 10px]'
-        - test: background-position-origin-interpolation.html
-          subtest: 'CSS Transitions: property <background-position> from [initial] to [left 20px top 20px] at (0.75) should be [15px 15px]'
-        - test: background-position-origin-interpolation.html
-          subtest: 'CSS Transitions: property <background-position> from [initial] to [left 20px top 20px] at (1) should be [20px 20px]'
-        - test: background-position-origin-interpolation.html
-          subtest: 'CSS Transitions with transition: all: property <background-position> from [initial] to [left 20px top 20px] at (0.25) should be [5px 5px]'
-        - test: background-position-origin-interpolation.html
-          subtest: 'CSS Transitions with transition: all: property <background-position> from [initial] to [left 20px top 20px] at (0.5) should be [10px 10px]'
-        - test: background-position-origin-interpolation.html
-          subtest: 'CSS Transitions with transition: all: property <background-position> from [initial] to [left 20px top 20px] at (0.75) should be [15px 15px]'
-        - test: background-position-origin-interpolation.html
-          subtest: 'CSS Transitions with transition: all: property <background-position> from [initial] to [left 20px top 20px] at (1) should be [20px 20px]'
-        - test: background-position-origin-interpolation.html
-          subtest: 'CSS Animations: property <background-position> from [initial] to [left 20px top 20px] at (0.25) should be [5px 5px]'
-        - test: background-position-origin-interpolation.html
-          subtest: 'CSS Animations: property <background-position> from [initial] to [left 20px top 20px] at (0.5) should be [10px 10px]'
-        - test: background-position-origin-interpolation.html
-          subtest: 'CSS Animations: property <background-position> from [initial] to [left 20px top 20px] at (0.75) should be [15px 15px]'
-        - test: background-position-origin-interpolation.html
-          subtest: 'CSS Animations: property <background-position> from [initial] to [left 20px top 20px] at (1) should be [20px 20px]'
-        - test: background-position-origin-interpolation.html
-          subtest: 'Web Animations: property <background-position> from [initial] to [left 20px top 20px] at (0.25) should be [5px 5px]'
-        - test: background-position-origin-interpolation.html
-          subtest: 'Web Animations: property <background-position> from [initial] to [left 20px top 20px] at (0.5) should be [10px 10px]'
-        - test: background-position-origin-interpolation.html
-          subtest: 'Web Animations: property <background-position> from [initial] to [left 20px top 20px] at (0.75) should be [15px 15px]'
-        - test: background-position-origin-interpolation.html
-          subtest: 'Web Animations: property <background-position> from [initial] to [left 20px top 20px] at (1) should be [20px 20px]'
-        - test: background-position-origin-interpolation.html
-          subtest: 'CSS Transitions: property <background-position> from [unset] to [left 20px top 20px] at (0.25) should be [5px 5px]'
-        - test: background-position-origin-interpolation.html
-          subtest: 'CSS Transitions: property <background-position> from [unset] to [left 20px top 20px] at (0.5) should be [10px 10px]'
-        - test: background-position-origin-interpolation.html
-          subtest: 'CSS Transitions: property <background-position> from [unset] to [left 20px top 20px] at (0.75) should be [15px 15px]'
-        - test: background-position-origin-interpolation.html
-          subtest: 'CSS Transitions: property <background-position> from [unset] to [left 20px top 20px] at (1) should be [20px 20px]'
-        - test: background-position-origin-interpolation.html
-          subtest: 'CSS Transitions with transition: all: property <background-position> from [unset] to [left 20px top 20px] at (0.25) should be [5px 5px]'
-        - test: background-position-origin-interpolation.html
-          subtest: 'CSS Transitions with transition: all: property <background-position> from [unset] to [left 20px top 20px] at (0.5) should be [10px 10px]'
-        - test: background-position-origin-interpolation.html
-          subtest: 'CSS Transitions with transition: all: property <background-position> from [unset] to [left 20px top 20px] at (0.75) should be [15px 15px]'
-        - test: background-position-origin-interpolation.html
-          subtest: 'CSS Transitions with transition: all: property <background-position> from [unset] to [left 20px top 20px] at (1) should be [20px 20px]'
-        - test: background-position-origin-interpolation.html
-          subtest: 'CSS Animations: property <background-position> from [unset] to [left 20px top 20px] at (0.25) should be [5px 5px]'
-        - test: background-position-origin-interpolation.html
-          subtest: 'CSS Animations: property <background-position> from [unset] to [left 20px top 20px] at (0.5) should be [10px 10px]'
-        - test: background-position-origin-interpolation.html
-          subtest: 'CSS Animations: property <background-position> from [unset] to [left 20px top 20px] at (0.75) should be [15px 15px]'
-        - test: background-position-origin-interpolation.html
-          subtest: 'CSS Animations: property <background-position> from [unset] to [left 20px top 20px] at (1) should be [20px 20px]'
-        - test: background-position-origin-interpolation.html
-          subtest: 'Web Animations: property <background-position> from [unset] to [left 20px top 20px] at (0.25) should be [5px 5px]'
-        - test: background-position-origin-interpolation.html
-          subtest: 'Web Animations: property <background-position> from [unset] to [left 20px top 20px] at (0.5) should be [10px 10px]'
-        - test: background-position-origin-interpolation.html
-          subtest: 'Web Animations: property <background-position> from [unset] to [left 20px top 20px] at (0.75) should be [15px 15px]'
-        - test: background-position-origin-interpolation.html
-          subtest: 'Web Animations: property <background-position> from [unset] to [left 20px top 20px] at (1) should be [20px 20px]'
-        - test: background-position-origin-interpolation.html
-          subtest: 'CSS Transitions: property <background-position> from [center center] to [left 20px top 20px] at (1) should be [20px 20px]'
-        - test: background-position-origin-interpolation.html
-          subtest: 'CSS Transitions with transition: all: property <background-position> from [center center] to [left 20px top 20px] at (1) should be [20px 20px]'
-        - test: background-position-origin-interpolation.html
-          subtest: 'CSS Animations: property <background-position> from [center center] to [left 20px top 20px] at (1) should be [20px 20px]'
-        - test: background-position-origin-interpolation.html
-          subtest: 'Web Animations: property <background-position> from [center center] to [left 20px top 20px] at (1) should be [20px 20px]'
-        - test: background-position-origin-interpolation.html
-          subtest: 'CSS Transitions: property <background-position> from [center center] to [center top 20px] at (1) should be [50% 20px]'
-        - test: background-position-origin-interpolation.html
-          subtest: 'CSS Transitions with transition: all: property <background-position> from [center center] to [center top 20px] at (1) should be [50% 20px]'
-        - test: background-position-origin-interpolation.html
-          subtest: 'CSS Animations: property <background-position> from [center center] to [center top 20px] at (1) should be [50% 20px]'
-        - test: background-position-origin-interpolation.html
-          subtest: 'Web Animations: property <background-position> from [center center] to [center top 20px] at (1) should be [50% 20px]'
-        - test: background-position-origin-interpolation.html
-          subtest: 'CSS Transitions: property <background-position> from [center center] to [right 20px top 20px] at (1) should be [calc(-20px + 100%) 20px]'
-        - test: background-position-origin-interpolation.html
-          subtest: 'CSS Transitions with transition: all: property <background-position> from [center center] to [right 20px top 20px] at (1) should be [calc(-20px + 100%) 20px]'
-        - test: background-position-origin-interpolation.html
-          subtest: 'CSS Animations: property <background-position> from [center center] to [right 20px top 20px] at (1) should be [calc(-20px + 100%) 20px]'
-        - test: background-position-origin-interpolation.html
-          subtest: 'Web Animations: property <background-position> from [center center] to [right 20px top 20px] at (1) should be [calc(-20px + 100%) 20px]'
-        - test: background-position-origin-interpolation.html
-          subtest: 'CSS Transitions: property <background-position> from [center center] to [left 20px center] at (1) should be [20px 50%]'
-        - test: background-position-origin-interpolation.html
-          subtest: 'CSS Transitions with transition: all: property <background-position> from [center center] to [left 20px center] at (1) should be [20px 50%]'
-        - test: background-position-origin-interpolation.html
-          subtest: 'CSS Animations: property <background-position> from [center center] to [left 20px center] at (1) should be [20px 50%]'
-        - test: background-position-origin-interpolation.html
-          subtest: 'Web Animations: property <background-position> from [center center] to [left 20px center] at (1) should be [20px 50%]'
-        - test: background-position-origin-interpolation.html
-          subtest: 'CSS Transitions: property <background-position> from [center center] to [left 20px bottom 20px] at (1) should be [20px calc(-20px + 100%)]'
-        - test: background-position-origin-interpolation.html
-          subtest: 'CSS Transitions with transition: all: property <background-position> from [center center] to [left 20px bottom 20px] at (1) should be [20px calc(-20px + 100%)]'
-        - test: background-position-origin-interpolation.html
-          subtest: 'CSS Animations: property <background-position> from [center center] to [left 20px bottom 20px] at (1) should be [20px calc(-20px + 100%)]'
-        - test: background-position-origin-interpolation.html
-          subtest: 'Web Animations: property <background-position> from [center center] to [left 20px bottom 20px] at (1) should be [20px calc(-20px + 100%)]'
-        - test: background-size-interpolation.html
-          subtest: 'CSS Transitions: property <background-size> from [0px auto, 0px 0px, contain, cover] to [40px auto, 40px 40px, contain, cover] at (-0.25) should be [ 0px auto,  0px  0px, contain, cover]'
-        - test: background-size-interpolation.html
-          subtest: 'CSS Transitions: property <background-size> from [0px auto, 0px 0px, contain, cover] to [40px auto, 40px 40px, contain, cover] at (0) should be [ 0px auto,  0px  0px, contain, cover]'
-        - test: background-size-interpolation.html
-          subtest: 'CSS Transitions: property <background-size> from [0px auto, 0px 0px, contain, cover] to [40px auto, 40px 40px, contain, cover] at (0.25) should be [10px auto, 10px 10px, contain, cover]'
-        - test: background-size-interpolation.html
-          subtest: 'CSS Transitions: property <background-size> from [0px auto, 0px 0px, contain, cover] to [40px auto, 40px 40px, contain, cover] at (0.5) should be [20px auto, 20px 20px, contain, cover]'
-        - test: background-size-interpolation.html
-          subtest: 'CSS Transitions: property <background-size> from [0px auto, 0px 0px, contain, cover] to [40px auto, 40px 40px, contain, cover] at (0.75) should be [30px auto, 30px 30px, contain, cover]'
-        - test: background-size-interpolation.html
-          subtest: 'CSS Transitions: property <background-size> from [0px auto, 0px 0px, contain, cover] to [40px auto, 40px 40px, contain, cover] at (1.25) should be [50px auto, 50px 50px, contain, cover]'
-        - test: background-size-interpolation.html
-          subtest: 'CSS Transitions with transition: all: property <background-size> from [0px auto, 0px 0px, contain, cover] to [40px auto, 40px 40px, contain, cover] at (-0.25) should be [ 0px auto,  0px  0px, contain, cover]'
-        - test: background-size-interpolation.html
-          subtest: 'CSS Transitions with transition: all: property <background-size> from [0px auto, 0px 0px, contain, cover] to [40px auto, 40px 40px, contain, cover] at (0) should be [ 0px auto,  0px  0px, contain, cover]'
-        - test: background-size-interpolation.html
-          subtest: 'CSS Transitions with transition: all: property <background-size> from [0px auto, 0px 0px, contain, cover] to [40px auto, 40px 40px, contain, cover] at (0.25) should be [10px auto, 10px 10px, contain, cover]'
-        - test: background-size-interpolation.html
-          subtest: 'CSS Transitions with transition: all: property <background-size> from [0px auto, 0px 0px, contain, cover] to [40px auto, 40px 40px, contain, cover] at (0.5) should be [20px auto, 20px 20px, contain, cover]'
-        - test: background-size-interpolation.html
-          subtest: 'CSS Transitions with transition: all: property <background-size> from [0px auto, 0px 0px, contain, cover] to [40px auto, 40px 40px, contain, cover] at (0.75) should be [30px auto, 30px 30px, contain, cover]'
-        - test: background-size-interpolation.html
-          subtest: 'CSS Transitions with transition: all: property <background-size> from [0px auto, 0px 0px, contain, cover] to [40px auto, 40px 40px, contain, cover] at (1.25) should be [50px auto, 50px 50px, contain, cover]'
-        - test: background-size-interpolation.html
-          subtest: 'CSS Animations: property <background-size> from [0px auto, 0px 0px, contain, cover] to [40px auto, 40px 40px, contain, cover] at (0.25) should be [10px auto, 10px 10px, contain, cover]'
-        - test: background-size-interpolation.html
-          subtest: 'CSS Animations: property <background-size> from [0px auto, 0px 0px, contain, cover] to [40px auto, 40px 40px, contain, cover] at (0.5) should be [20px auto, 20px 20px, contain, cover]'
-        - test: background-size-interpolation.html
-          subtest: 'CSS Animations: property <background-size> from [0px auto, 0px 0px, contain, cover] to [40px auto, 40px 40px, contain, cover] at (0.75) should be [30px auto, 30px 30px, contain, cover]'
-        - test: background-size-interpolation.html
-          subtest: 'CSS Animations: property <background-size> from [0px auto, 0px 0px, contain, cover] to [40px auto, 40px 40px, contain, cover] at (1.25) should be [50px auto, 50px 50px, contain, cover]'
-        - test: background-size-interpolation.html
-          subtest: 'Web Animations: property <background-size> from [0px auto, 0px 0px, contain, cover] to [40px auto, 40px 40px, contain, cover] at (0.25) should be [10px auto, 10px 10px, contain, cover]'
-        - test: background-size-interpolation.html
-          subtest: 'Web Animations: property <background-size> from [0px auto, 0px 0px, contain, cover] to [40px auto, 40px 40px, contain, cover] at (0.5) should be [20px auto, 20px 20px, contain, cover]'
-        - test: background-size-interpolation.html
-          subtest: 'Web Animations: property <background-size> from [0px auto, 0px 0px, contain, cover] to [40px auto, 40px 40px, contain, cover] at (0.75) should be [30px auto, 30px 30px, contain, cover]'
-        - test: background-size-interpolation.html
-          subtest: 'Web Animations: property <background-size> from [0px auto, 0px 0px, contain, cover] to [40px auto, 40px 40px, contain, cover] at (1.25) should be [50px auto, 50px 50px, contain, cover]'
-        - test: background-size-interpolation.html
-          subtest: 'CSS Animations: property <background-size> from [0px 0px, 80px 0px] to [40px 40px, 80px 80px, 0px 80px] at (-0.25) should be [ 0px  0px, 80px   0px, 0px   0px, 90px  0px]'
-        - test: background-size-interpolation.html
-          subtest: 'CSS Animations: property <background-size> from [0px 0px, 80px 0px] to [40px 40px, 80px 80px, 0px 80px] at (0) should be [ 0px  0px, 80px   0px, 0px   0px, 80px  0px]'
-        - test: background-size-interpolation.html
-          subtest: 'CSS Animations: property <background-size> from [0px 0px, 80px 0px] to [40px 40px, 80px 80px, 0px 80px] at (0.25) should be [10px 10px, 80px  20px, 0px  20px, 70px 10px]'
-        - test: background-size-interpolation.html
-          subtest: 'CSS Animations: property <background-size> from [0px 0px, 80px 0px] to [40px 40px, 80px 80px, 0px 80px] at (0.5) should be [20px 20px, 80px  40px, 0px  40px, 60px 20px]'
-        - test: background-size-interpolation.html
-          subtest: 'CSS Animations: property <background-size> from [0px 0px, 80px 0px] to [40px 40px, 80px 80px, 0px 80px] at (0.75) should be [30px 30px, 80px  60px, 0px  60px, 50px 30px]'
-        - test: background-size-interpolation.html
-          subtest: 'CSS Animations: property <background-size> from [0px 0px, 80px 0px] to [40px 40px, 80px 80px, 0px 80px] at (1) should be [40px 40px, 80px  80px, 0px  80px, 40px 40px]'
-        - test: background-size-interpolation.html
-          subtest: 'CSS Animations: property <background-size> from [0px 0px, 80px 0px] to [40px 40px, 80px 80px, 0px 80px] at (1.25) should be [50px 50px, 80px 100px, 0px 100px, 30px 50px]'
-        - test: background-size-interpolation.html
-          subtest: 'Web Animations: property <background-size> from [0px 0px, 80px 0px] to [40px 40px, 80px 80px, 0px 80px] at (-0.25) should be [ 0px  0px, 80px   0px, 0px   0px, 90px  0px]'
-        - test: background-size-interpolation.html
-          subtest: 'Web Animations: property <background-size> from [0px 0px, 80px 0px] to [40px 40px, 80px 80px, 0px 80px] at (0) should be [ 0px  0px, 80px   0px, 0px   0px, 80px  0px]'
-        - test: background-size-interpolation.html
-          subtest: 'Web Animations: property <background-size> from [0px 0px, 80px 0px] to [40px 40px, 80px 80px, 0px 80px] at (0.25) should be [10px 10px, 80px  20px, 0px  20px, 70px 10px]'
-        - test: background-size-interpolation.html
-          subtest: 'Web Animations: property <background-size> from [0px 0px, 80px 0px] to [40px 40px, 80px 80px, 0px 80px] at (0.5) should be [20px 20px, 80px  40px, 0px  40px, 60px 20px]'
-        - test: background-size-interpolation.html
-          subtest: 'Web Animations: property <background-size> from [0px 0px, 80px 0px] to [40px 40px, 80px 80px, 0px 80px] at (0.75) should be [30px 30px, 80px  60px, 0px  60px, 50px 30px]'
-        - test: background-size-interpolation.html
-          subtest: 'Web Animations: property <background-size> from [0px 0px, 80px 0px] to [40px 40px, 80px 80px, 0px 80px] at (1) should be [40px 40px, 80px  80px, 0px  80px, 40px 40px]'
-        - test: background-size-interpolation.html
-          subtest: 'Web Animations: property <background-size> from [0px 0px, 80px 0px] to [40px 40px, 80px 80px, 0px 80px] at (1.25) should be [50px 50px, 80px 100px, 0px 100px, 30px 50px]'
-        - test: border-color-interpolation.html
-          subtest: 'CSS Transitions: property <border-color> from [rgb(20, 30, 40) rgb(40, 50, 60)] to [rgb(10, 20, 30) rgb(40, 50, 60) rgb(30, 40, 50) rgb(50, 60, 70)] at (-0.3) should be [rgb(23, 33, 43) rgb(40, 50, 60) rgb(17, 27, 37) rgb(37, 47, 57)]'
-        - test: border-color-interpolation.html
-          subtest: 'CSS Transitions: property <border-color> from [rgb(20, 30, 40) rgb(40, 50, 60)] to [rgb(10, 20, 30) rgb(40, 50, 60) rgb(30, 40, 50) rgb(50, 60, 70)] at (0) should be [rgb(20, 30, 40) rgb(40, 50, 60)]'
-        - test: border-color-interpolation.html
-          subtest: 'CSS Transitions: property <border-color> from [rgb(20, 30, 40) rgb(40, 50, 60)] to [rgb(10, 20, 30) rgb(40, 50, 60) rgb(30, 40, 50) rgb(50, 60, 70)] at (0.3) should be [rgb(17, 27, 37) rgb(40, 50, 60) rgb(23, 33, 43) rgb(43, 53, 63)]'
-        - test: border-color-interpolation.html
-          subtest: 'CSS Transitions: property <border-color> from [rgb(20, 30, 40) rgb(40, 50, 60)] to [rgb(10, 20, 30) rgb(40, 50, 60) rgb(30, 40, 50) rgb(50, 60, 70)] at (0.6) should be [rgb(14, 24, 34) rgb(40, 50, 60) rgb(26, 36, 46) rgb(46, 56, 66)]'
-        - test: border-color-interpolation.html
-          subtest: 'CSS Transitions: property <border-color> from [rgb(20, 30, 40) rgb(40, 50, 60)] to [rgb(10, 20, 30) rgb(40, 50, 60) rgb(30, 40, 50) rgb(50, 60, 70)] at (1) should be [rgb(10, 20, 30) rgb(40, 50, 60) rgb(30, 40, 50) rgb(50, 60, 70)]'
-        - test: border-color-interpolation.html
-          subtest: 'CSS Transitions: property <border-color> from [rgb(20, 30, 40) rgb(40, 50, 60)] to [rgb(10, 20, 30) rgb(40, 50, 60) rgb(30, 40, 50) rgb(50, 60, 70)] at (1.5) should be [rgb(5, 15, 25) rgb(40, 50, 60) rgb(35, 45, 55) rgb(55, 65, 75)]'
-        - test: border-color-interpolation.html
-          subtest: 'CSS Transitions with transition: all: property <border-color> from [rgb(20, 30, 40) rgb(40, 50, 60)] to [rgb(10, 20, 30) rgb(40, 50, 60) rgb(30, 40, 50) rgb(50, 60, 70)] at (-0.3) should be [rgb(23, 33, 43) rgb(40, 50, 60) rgb(17, 27, 37) rgb(37, 47, 57)]'
-        - test: border-color-interpolation.html
-          subtest: 'CSS Transitions with transition: all: property <border-color> from [rgb(20, 30, 40) rgb(40, 50, 60)] to [rgb(10, 20, 30) rgb(40, 50, 60) rgb(30, 40, 50) rgb(50, 60, 70)] at (0) should be [rgb(20, 30, 40) rgb(40, 50, 60)]'
-        - test: border-color-interpolation.html
-          subtest: 'CSS Transitions with transition: all: property <border-color> from [rgb(20, 30, 40) rgb(40, 50, 60)] to [rgb(10, 20, 30) rgb(40, 50, 60) rgb(30, 40, 50) rgb(50, 60, 70)] at (0.3) should be [rgb(17, 27, 37) rgb(40, 50, 60) rgb(23, 33, 43) rgb(43, 53, 63)]'
-        - test: border-color-interpolation.html
-          subtest: 'CSS Transitions with transition: all: property <border-color> from [rgb(20, 30, 40) rgb(40, 50, 60)] to [rgb(10, 20, 30) rgb(40, 50, 60) rgb(30, 40, 50) rgb(50, 60, 70)] at (0.6) should be [rgb(14, 24, 34) rgb(40, 50, 60) rgb(26, 36, 46) rgb(46, 56, 66)]'
-        - test: border-color-interpolation.html
-          subtest: 'CSS Transitions with transition: all: property <border-color> from [rgb(20, 30, 40) rgb(40, 50, 60)] to [rgb(10, 20, 30) rgb(40, 50, 60) rgb(30, 40, 50) rgb(50, 60, 70)] at (1) should be [rgb(10, 20, 30) rgb(40, 50, 60) rgb(30, 40, 50) rgb(50, 60, 70)]'
-        - test: border-color-interpolation.html
-          subtest: 'CSS Transitions with transition: all: property <border-color> from [rgb(20, 30, 40) rgb(40, 50, 60)] to [rgb(10, 20, 30) rgb(40, 50, 60) rgb(30, 40, 50) rgb(50, 60, 70)] at (1.5) should be [rgb(5, 15, 25) rgb(40, 50, 60) rgb(35, 45, 55) rgb(55, 65, 75)]'
-        - test: border-color-interpolation.html
-          subtest: 'CSS Animations: property <border-color> from [rgb(20, 30, 40) rgb(40, 50, 60)] to [rgb(10, 20, 30) rgb(40, 50, 60) rgb(30, 40, 50) rgb(50, 60, 70)] at (-0.3) should be [rgb(23, 33, 43) rgb(40, 50, 60) rgb(17, 27, 37) rgb(37, 47, 57)]'
-        - test: border-color-interpolation.html
-          subtest: 'CSS Animations: property <border-color> from [rgb(20, 30, 40) rgb(40, 50, 60)] to [rgb(10, 20, 30) rgb(40, 50, 60) rgb(30, 40, 50) rgb(50, 60, 70)] at (0) should be [rgb(20, 30, 40) rgb(40, 50, 60)]'
-        - test: border-color-interpolation.html
-          subtest: 'CSS Animations: property <border-color> from [rgb(20, 30, 40) rgb(40, 50, 60)] to [rgb(10, 20, 30) rgb(40, 50, 60) rgb(30, 40, 50) rgb(50, 60, 70)] at (0.3) should be [rgb(17, 27, 37) rgb(40, 50, 60) rgb(23, 33, 43) rgb(43, 53, 63)]'
-        - test: border-color-interpolation.html
-          subtest: 'CSS Animations: property <border-color> from [rgb(20, 30, 40) rgb(40, 50, 60)] to [rgb(10, 20, 30) rgb(40, 50, 60) rgb(30, 40, 50) rgb(50, 60, 70)] at (0.6) should be [rgb(14, 24, 34) rgb(40, 50, 60) rgb(26, 36, 46) rgb(46, 56, 66)]'
-        - test: border-color-interpolation.html
-          subtest: 'CSS Animations: property <border-color> from [rgb(20, 30, 40) rgb(40, 50, 60)] to [rgb(10, 20, 30) rgb(40, 50, 60) rgb(30, 40, 50) rgb(50, 60, 70)] at (1) should be [rgb(10, 20, 30) rgb(40, 50, 60) rgb(30, 40, 50) rgb(50, 60, 70)]'
-        - test: border-color-interpolation.html
-          subtest: 'CSS Animations: property <border-color> from [rgb(20, 30, 40) rgb(40, 50, 60)] to [rgb(10, 20, 30) rgb(40, 50, 60) rgb(30, 40, 50) rgb(50, 60, 70)] at (1.5) should be [rgb(5, 15, 25) rgb(40, 50, 60) rgb(35, 45, 55) rgb(55, 65, 75)]'
-        - test: border-color-interpolation.html
-          subtest: 'Web Animations: property <border-color> from [rgb(20, 30, 40) rgb(40, 50, 60)] to [rgb(10, 20, 30) rgb(40, 50, 60) rgb(30, 40, 50) rgb(50, 60, 70)] at (-0.3) should be [rgb(23, 33, 43) rgb(40, 50, 60) rgb(17, 27, 37) rgb(37, 47, 57)]'
-        - test: border-color-interpolation.html
-          subtest: 'Web Animations: property <border-color> from [rgb(20, 30, 40) rgb(40, 50, 60)] to [rgb(10, 20, 30) rgb(40, 50, 60) rgb(30, 40, 50) rgb(50, 60, 70)] at (0) should be [rgb(20, 30, 40) rgb(40, 50, 60)]'
-        - test: border-color-interpolation.html
-          subtest: 'Web Animations: property <border-color> from [rgb(20, 30, 40) rgb(40, 50, 60)] to [rgb(10, 20, 30) rgb(40, 50, 60) rgb(30, 40, 50) rgb(50, 60, 70)] at (0.3) should be [rgb(17, 27, 37) rgb(40, 50, 60) rgb(23, 33, 43) rgb(43, 53, 63)]'
-        - test: border-color-interpolation.html
-          subtest: 'Web Animations: property <border-color> from [rgb(20, 30, 40) rgb(40, 50, 60)] to [rgb(10, 20, 30) rgb(40, 50, 60) rgb(30, 40, 50) rgb(50, 60, 70)] at (0.6) should be [rgb(14, 24, 34) rgb(40, 50, 60) rgb(26, 36, 46) rgb(46, 56, 66)]'
-        - test: border-color-interpolation.html
-          subtest: 'Web Animations: property <border-color> from [rgb(20, 30, 40) rgb(40, 50, 60)] to [rgb(10, 20, 30) rgb(40, 50, 60) rgb(30, 40, 50) rgb(50, 60, 70)] at (1) should be [rgb(10, 20, 30) rgb(40, 50, 60) rgb(30, 40, 50) rgb(50, 60, 70)]'
-        - test: border-color-interpolation.html
-          subtest: 'Web Animations: property <border-color> from [rgb(20, 30, 40) rgb(40, 50, 60)] to [rgb(10, 20, 30) rgb(40, 50, 60) rgb(30, 40, 50) rgb(50, 60, 70)] at (1.5) should be [rgb(5, 15, 25) rgb(40, 50, 60) rgb(35, 45, 55) rgb(55, 65, 75)]'
-        - test: border-radius-interpolation.html
-          subtest: 'CSS Transitions: property <border-radius> from [20px 40px 60px 80px / 120px 140px 160px 180px] to [30px 50px 70px 90px / 130px 150px 170px 190px] at (-0.3) should be [17px 37px 57px 77px / 117px 137px 157px 177px]'
-        - test: border-radius-interpolation.html
-          subtest: 'CSS Transitions: property <border-radius> from [20px 40px 60px 80px / 120px 140px 160px 180px] to [30px 50px 70px 90px / 130px 150px 170px 190px] at (0) should be [20px 40px 60px 80px / 120px 140px 160px 180px]'
-        - test: border-radius-interpolation.html
-          subtest: 'CSS Transitions: property <border-radius> from [20px 40px 60px 80px / 120px 140px 160px 180px] to [30px 50px 70px 90px / 130px 150px 170px 190px] at (0.3) should be [23px 43px 63px 83px / 123px 143px 163px 183px]'
-        - test: border-radius-interpolation.html
-          subtest: 'CSS Transitions: property <border-radius> from [20px 40px 60px 80px / 120px 140px 160px 180px] to [30px 50px 70px 90px / 130px 150px 170px 190px] at (0.6) should be [26px 46px 66px 86px / 126px 146px 166px 186px]'
-        - test: border-radius-interpolation.html
-          subtest: 'CSS Transitions: property <border-radius> from [20px 40px 60px 80px / 120px 140px 160px 180px] to [30px 50px 70px 90px / 130px 150px 170px 190px] at (1) should be [30px 50px 70px 90px / 130px 150px 170px 190px]'
-        - test: border-radius-interpolation.html
-          subtest: 'CSS Transitions: property <border-radius> from [20px 40px 60px 80px / 120px 140px 160px 180px] to [30px 50px 70px 90px / 130px 150px 170px 190px] at (1.5) should be [35px 55px 75px 95px / 135px 155px 175px 195px]'
-        - test: border-radius-interpolation.html
-          subtest: 'CSS Transitions with transition: all: property <border-radius> from [20px 40px 60px 80px / 120px 140px 160px 180px] to [30px 50px 70px 90px / 130px 150px 170px 190px] at (-0.3) should be [17px 37px 57px 77px / 117px 137px 157px 177px]'
-        - test: border-radius-interpolation.html
-          subtest: 'CSS Transitions with transition: all: property <border-radius> from [20px 40px 60px 80px / 120px 140px 160px 180px] to [30px 50px 70px 90px / 130px 150px 170px 190px] at (0) should be [20px 40px 60px 80px / 120px 140px 160px 180px]'
-        - test: border-radius-interpolation.html
-          subtest: 'CSS Transitions with transition: all: property <border-radius> from [20px 40px 60px 80px / 120px 140px 160px 180px] to [30px 50px 70px 90px / 130px 150px 170px 190px] at (0.3) should be [23px 43px 63px 83px / 123px 143px 163px 183px]'
-        - test: border-radius-interpolation.html
-          subtest: 'CSS Transitions with transition: all: property <border-radius> from [20px 40px 60px 80px / 120px 140px 160px 180px] to [30px 50px 70px 90px / 130px 150px 170px 190px] at (0.6) should be [26px 46px 66px 86px / 126px 146px 166px 186px]'
-        - test: border-radius-interpolation.html
-          subtest: 'CSS Transitions with transition: all: property <border-radius> from [20px 40px 60px 80px / 120px 140px 160px 180px] to [30px 50px 70px 90px / 130px 150px 170px 190px] at (1) should be [30px 50px 70px 90px / 130px 150px 170px 190px]'
-        - test: border-radius-interpolation.html
-          subtest: 'CSS Transitions with transition: all: property <border-radius> from [20px 40px 60px 80px / 120px 140px 160px 180px] to [30px 50px 70px 90px / 130px 150px 170px 190px] at (1.5) should be [35px 55px 75px 95px / 135px 155px 175px 195px]'
-        - test: border-radius-interpolation.html
-          subtest: 'CSS Animations: property <border-radius> from [20px 40px 60px 80px / 120px 140px 160px 180px] to [30px 50px 70px 90px / 130px 150px 170px 190px] at (-0.3) should be [17px 37px 57px 77px / 117px 137px 157px 177px]'
-        - test: border-radius-interpolation.html
-          subtest: 'CSS Animations: property <border-radius> from [20px 40px 60px 80px / 120px 140px 160px 180px] to [30px 50px 70px 90px / 130px 150px 170px 190px] at (0) should be [20px 40px 60px 80px / 120px 140px 160px 180px]'
-        - test: border-radius-interpolation.html
-          subtest: 'CSS Animations: property <border-radius> from [20px 40px 60px 80px / 120px 140px 160px 180px] to [30px 50px 70px 90px / 130px 150px 170px 190px] at (0.3) should be [23px 43px 63px 83px / 123px 143px 163px 183px]'
-        - test: border-radius-interpolation.html
-          subtest: 'CSS Animations: property <border-radius> from [20px 40px 60px 80px / 120px 140px 160px 180px] to [30px 50px 70px 90px / 130px 150px 170px 190px] at (0.6) should be [26px 46px 66px 86px / 126px 146px 166px 186px]'
-        - test: border-radius-interpolation.html
-          subtest: 'CSS Animations: property <border-radius> from [20px 40px 60px 80px / 120px 140px 160px 180px] to [30px 50px 70px 90px / 130px 150px 170px 190px] at (1) should be [30px 50px 70px 90px / 130px 150px 170px 190px]'
-        - test: border-radius-interpolation.html
-          subtest: 'CSS Animations: property <border-radius> from [20px 40px 60px 80px / 120px 140px 160px 180px] to [30px 50px 70px 90px / 130px 150px 170px 190px] at (1.5) should be [35px 55px 75px 95px / 135px 155px 175px 195px]'
-        - test: border-radius-interpolation.html
-          subtest: 'Web Animations: property <border-radius> from [20px 40px 60px 80px / 120px 140px 160px 180px] to [30px 50px 70px 90px / 130px 150px 170px 190px] at (-0.3) should be [17px 37px 57px 77px / 117px 137px 157px 177px]'
-        - test: border-radius-interpolation.html
-          subtest: 'Web Animations: property <border-radius> from [20px 40px 60px 80px / 120px 140px 160px 180px] to [30px 50px 70px 90px / 130px 150px 170px 190px] at (0) should be [20px 40px 60px 80px / 120px 140px 160px 180px]'
-        - test: border-radius-interpolation.html
-          subtest: 'Web Animations: property <border-radius> from [20px 40px 60px 80px / 120px 140px 160px 180px] to [30px 50px 70px 90px / 130px 150px 170px 190px] at (0.3) should be [23px 43px 63px 83px / 123px 143px 163px 183px]'
-        - test: border-radius-interpolation.html
-          subtest: 'Web Animations: property <border-radius> from [20px 40px 60px 80px / 120px 140px 160px 180px] to [30px 50px 70px 90px / 130px 150px 170px 190px] at (0.6) should be [26px 46px 66px 86px / 126px 146px 166px 186px]'
-        - test: border-radius-interpolation.html
-          subtest: 'Web Animations: property <border-radius> from [20px 40px 60px 80px / 120px 140px 160px 180px] to [30px 50px 70px 90px / 130px 150px 170px 190px] at (1) should be [30px 50px 70px 90px / 130px 150px 170px 190px]'
-        - test: border-radius-interpolation.html
-          subtest: 'Web Animations: property <border-radius> from [20px 40px 60px 80px / 120px 140px 160px 180px] to [30px 50px 70px 90px / 130px 150px 170px 190px] at (1.5) should be [35px 55px 75px 95px / 135px 155px 175px 195px]'
-        - test: border-width-interpolation.html
-          subtest: 'CSS Transitions: property <border-width> from [20px 40px 60px 80px] to [30px 50px 70px 90px] at (-0.3) should be [17px 37px 57px 77px]'
-        - test: border-width-interpolation.html
-          subtest: 'CSS Transitions: property <border-width> from [20px 40px 60px 80px] to [30px 50px 70px 90px] at (0) should be [20px 40px 60px 80px]'
-        - test: border-width-interpolation.html
-          subtest: 'CSS Transitions: property <border-width> from [20px 40px 60px 80px] to [30px 50px 70px 90px] at (0.3) should be [23px 43px 63px 83px]'
-        - test: border-width-interpolation.html
-          subtest: 'CSS Transitions: property <border-width> from [20px 40px 60px 80px] to [30px 50px 70px 90px] at (0.6) should be [26px 46px 66px 86px]'
-        - test: border-width-interpolation.html
-          subtest: 'CSS Transitions: property <border-width> from [20px 40px 60px 80px] to [30px 50px 70px 90px] at (1) should be [30px 50px 70px 90px]'
-        - test: border-width-interpolation.html
-          subtest: 'CSS Transitions: property <border-width> from [20px 40px 60px 80px] to [30px 50px 70px 90px] at (1.5) should be [35px 55px 75px 95px]'
-        - test: border-width-interpolation.html
-          subtest: 'CSS Transitions with transition: all: property <border-width> from [20px 40px 60px 80px] to [30px 50px 70px 90px] at (-0.3) should be [17px 37px 57px 77px]'
-        - test: border-width-interpolation.html
-          subtest: 'CSS Transitions with transition: all: property <border-width> from [20px 40px 60px 80px] to [30px 50px 70px 90px] at (0) should be [20px 40px 60px 80px]'
-        - test: border-width-interpolation.html
-          subtest: 'CSS Transitions with transition: all: property <border-width> from [20px 40px 60px 80px] to [30px 50px 70px 90px] at (0.3) should be [23px 43px 63px 83px]'
-        - test: border-width-interpolation.html
-          subtest: 'CSS Transitions with transition: all: property <border-width> from [20px 40px 60px 80px] to [30px 50px 70px 90px] at (0.6) should be [26px 46px 66px 86px]'
-        - test: border-width-interpolation.html
-          subtest: 'CSS Transitions with transition: all: property <border-width> from [20px 40px 60px 80px] to [30px 50px 70px 90px] at (1) should be [30px 50px 70px 90px]'
-        - test: border-width-interpolation.html
-          subtest: 'CSS Transitions with transition: all: property <border-width> from [20px 40px 60px 80px] to [30px 50px 70px 90px] at (1.5) should be [35px 55px 75px 95px]'
-        - test: border-width-interpolation.html
-          subtest: 'CSS Animations: property <border-width> from [20px 40px 60px 80px] to [30px 50px 70px 90px] at (-0.3) should be [17px 37px 57px 77px]'
-        - test: border-width-interpolation.html
-          subtest: 'CSS Animations: property <border-width> from [20px 40px 60px 80px] to [30px 50px 70px 90px] at (0) should be [20px 40px 60px 80px]'
-        - test: border-width-interpolation.html
-          subtest: 'CSS Animations: property <border-width> from [20px 40px 60px 80px] to [30px 50px 70px 90px] at (0.3) should be [23px 43px 63px 83px]'
-        - test: border-width-interpolation.html
-          subtest: 'CSS Animations: property <border-width> from [20px 40px 60px 80px] to [30px 50px 70px 90px] at (0.6) should be [26px 46px 66px 86px]'
-        - test: border-width-interpolation.html
-          subtest: 'CSS Animations: property <border-width> from [20px 40px 60px 80px] to [30px 50px 70px 90px] at (1) should be [30px 50px 70px 90px]'
-        - test: border-width-interpolation.html
-          subtest: 'CSS Animations: property <border-width> from [20px 40px 60px 80px] to [30px 50px 70px 90px] at (1.5) should be [35px 55px 75px 95px]'
-        - test: border-width-interpolation.html
-          subtest: 'Web Animations: property <border-width> from [20px 40px 60px 80px] to [30px 50px 70px 90px] at (-0.3) should be [17px 37px 57px 77px]'
-        - test: border-width-interpolation.html
-          subtest: 'Web Animations: property <border-width> from [20px 40px 60px 80px] to [30px 50px 70px 90px] at (0) should be [20px 40px 60px 80px]'
-        - test: border-width-interpolation.html
-          subtest: 'Web Animations: property <border-width> from [20px 40px 60px 80px] to [30px 50px 70px 90px] at (0.3) should be [23px 43px 63px 83px]'
-        - test: border-width-interpolation.html
-          subtest: 'Web Animations: property <border-width> from [20px 40px 60px 80px] to [30px 50px 70px 90px] at (0.6) should be [26px 46px 66px 86px]'
-        - test: border-width-interpolation.html
-          subtest: 'Web Animations: property <border-width> from [20px 40px 60px 80px] to [30px 50px 70px 90px] at (1) should be [30px 50px 70px 90px]'
-        - test: border-width-interpolation.html
-          subtest: 'Web Animations: property <border-width> from [20px 40px 60px 80px] to [30px 50px 70px 90px] at (1.5) should be [35px 55px 75px 95px]'
-        - test: border-width-interpolation.html
-          subtest: 'CSS Animations: property <border-left-width> from [initial] to [20px] at (0) should be [3px]'
-        - test: border-width-interpolation.html
-          subtest: 'CSS Animations: property <border-left-width> from [initial] to [20px] at (0.3) should be [8.1px]'
-        - test: border-width-interpolation.html
-          subtest: 'CSS Animations: property <border-left-width> from [initial] to [20px] at (0.6) should be [13.2px]'
-        - test: border-width-interpolation.html
-          subtest: 'CSS Animations: property <border-left-width> from [initial] to [20px] at (1.5) should be [28.5px]'
-        - test: border-width-interpolation.html
-          subtest: 'Web Animations: property <border-left-width> from [initial] to [20px] at (0) should be [3px]'
-        - test: border-width-interpolation.html
-          subtest: 'Web Animations: property <border-left-width> from [initial] to [20px] at (0.3) should be [8.1px]'
-        - test: border-width-interpolation.html
-          subtest: 'Web Animations: property <border-left-width> from [initial] to [20px] at (0.6) should be [13.2px]'
-        - test: border-width-interpolation.html
-          subtest: 'Web Animations: property <border-left-width> from [initial] to [20px] at (1.5) should be [28.5px]'
-        - test: border-width-interpolation.html
-          subtest: 'CSS Animations: property <border-left-width> from [unset] to [20px] at (0) should be [3px]'
-        - test: border-width-interpolation.html
-          subtest: 'CSS Animations: property <border-left-width> from [unset] to [20px] at (0.3) should be [8.1px]'
-        - test: border-width-interpolation.html
-          subtest: 'CSS Animations: property <border-left-width> from [unset] to [20px] at (0.6) should be [13.2px]'
-        - test: border-width-interpolation.html
-          subtest: 'CSS Animations: property <border-left-width> from [unset] to [20px] at (1.5) should be [28.5px]'
-        - test: border-width-interpolation.html
-          subtest: 'Web Animations: property <border-left-width> from [unset] to [20px] at (0) should be [3px]'
-        - test: border-width-interpolation.html
-          subtest: 'Web Animations: property <border-left-width> from [unset] to [20px] at (0.3) should be [8.1px]'
-        - test: border-width-interpolation.html
-          subtest: 'Web Animations: property <border-left-width> from [unset] to [20px] at (0.6) should be [13.2px]'
-        - test: border-width-interpolation.html
-          subtest: 'Web Animations: property <border-left-width> from [unset] to [20px] at (1.5) should be [28.5px]'
-        - test: box-shadow-composition.html
-          subtest: 'Compositing: property <box-shadow> underlying [rgb(10, 20, 30) 1px 2px 3px 4px, rgb(20, 40, 60) 2px 4px 6px 8px] from add [rgb(100, 100, 100) 10px 20px 30px 40px] to replace [rgb(200, 200, 200) 20px 40px 60px 80px] at (1) should be [rgb(200, 200, 200) 20px 40px 60px 80px]'
-        - test: box-shadow-composition.html
-          subtest: 'Compositing: property <box-shadow> underlying [rgb(10, 20, 30) 1px 2px 3px 4px, rgb(20, 40, 60) 2px 4px 6px 8px] from replace [rgb(100, 100, 100) 10px 20px 30px 40px] to add [rgb(200, 200, 200) 20px 40px 60px 80px] at (0) should be [rgb(100, 100, 100) 10px 20px 30px 40px]'
-        - test: box-shadow-composition.html
-          subtest: 'Compositing: property <box-shadow> underlying [rgb(10, 20, 30) 1px 2px 3px 4px, rgb(20, 40, 60) 2px 4px 6px 8px, rgb(40, 80, 120) 4px 8px 12px 16px] from add [rgb(100, 100, 100) 10px 20px 30px 40px, rgb(200, 200, 200) 20px 40px 60px 80px] to replace [rgb(200, 200, 200) 20px 40px 60px 80px] at (1) should be [rgb(200, 200, 200) 20px 40px 60px 80px]'
-    - product: chrome
-      url: https://bugs.chromium.org/p/chromium/issues/detail?id=900581
-      results:
-        - test: box-shadow-interpolation.html
-        - test: border-image-source-interpolation.html
+- product: chrome
+  results:
+  - status: FAIL
+    test: background-image-interpolation.html
+  url: https://crbug.com/1029529
+- product: firefox
+  results:
+  - subtest: 'CSS Transitions: property <background-image> from neutral to [url(../resources/green-100.png)]
+      at (-0.3) should be [url(../resources/blue-100.png)]'
+    test: background-image-interpolation.html
+  - subtest: 'CSS Transitions: property <background-image> from neutral to [url(../resources/green-100.png)]
+      at (0) should be [url(../resources/blue-100.png)]'
+    test: background-image-interpolation.html
+  - subtest: 'CSS Transitions with transition: all: property <background-image> from
+      neutral to [url(../resources/green-100.png)] at (-0.3) should be [url(../resources/blue-100.png)]'
+    test: background-image-interpolation.html
+  - subtest: 'CSS Transitions with transition: all: property <background-image> from
+      neutral to [url(../resources/green-100.png)] at (0) should be [url(../resources/blue-100.png)]'
+    test: background-image-interpolation.html
+  - subtest: 'CSS Transitions: property <background-image> from [inherit] to [url(../resources/green-100.png)]
+      at (-0.3) should be [url(../resources/blue-100.png)]'
+    test: background-image-interpolation.html
+  - subtest: 'CSS Transitions: property <background-image> from [inherit] to [url(../resources/green-100.png)]
+      at (0) should be [url(../resources/blue-100.png)]'
+    test: background-image-interpolation.html
+  - subtest: 'CSS Transitions with transition: all: property <background-image> from
+      [inherit] to [url(../resources/green-100.png)] at (-0.3) should be [url(../resources/blue-100.png)]'
+    test: background-image-interpolation.html
+  - subtest: 'CSS Transitions with transition: all: property <background-image> from
+      [inherit] to [url(../resources/green-100.png)] at (0) should be [url(../resources/blue-100.png)]'
+    test: background-image-interpolation.html
+  - subtest: 'CSS Transitions: property <background-image> from [url(../resources/blue-100.png)]
+      to [url(../resources/green-100.png)] at (-0.3) should be [url(../resources/blue-100.png)]'
+    test: background-image-interpolation.html
+  - subtest: 'CSS Transitions: property <background-image> from [url(../resources/blue-100.png)]
+      to [url(../resources/green-100.png)] at (0) should be [url(../resources/blue-100.png)]'
+    test: background-image-interpolation.html
+  - subtest: 'CSS Transitions with transition: all: property <background-image> from
+      [url(../resources/blue-100.png)] to [url(../resources/green-100.png)] at (-0.3)
+      should be [url(../resources/blue-100.png)]'
+    test: background-image-interpolation.html
+  - subtest: 'CSS Transitions with transition: all: property <background-image> from
+      [url(../resources/blue-100.png)] to [url(../resources/green-100.png)] at (0)
+      should be [url(../resources/blue-100.png)]'
+    test: background-image-interpolation.html
+  - subtest: 'CSS Transitions: property <background-image> from [url(../resources/blue-100.png)]
+      to [cross-fade(url(../resources/green-100.png), url(../resources/stripes-100.png),
+      0.5)] at (0.6) should be [cross-fade(url(../resources/green-100.png), url(../resources/stripes-100.png),
+      0.5)]'
+    test: background-image-interpolation.html
+  - subtest: 'CSS Transitions: property <background-image> from [url(../resources/blue-100.png)]
+      to [cross-fade(url(../resources/green-100.png), url(../resources/stripes-100.png),
+      0.5)] at (1) should be [cross-fade(url(../resources/green-100.png), url(../resources/stripes-100.png),
+      0.5)]'
+    test: background-image-interpolation.html
+  - subtest: 'CSS Transitions: property <background-image> from [url(../resources/blue-100.png)]
+      to [cross-fade(url(../resources/green-100.png), url(../resources/stripes-100.png),
+      0.5)] at (1.5) should be [cross-fade(url(../resources/green-100.png), url(../resources/stripes-100.png),
+      0.5)]'
+    test: background-image-interpolation.html
+  - subtest: 'CSS Transitions with transition: all: property <background-image> from
+      [url(../resources/blue-100.png)] to [cross-fade(url(../resources/green-100.png),
+      url(../resources/stripes-100.png), 0.5)] at (0.6) should be [cross-fade(url(../resources/green-100.png),
+      url(../resources/stripes-100.png), 0.5)]'
+    test: background-image-interpolation.html
+  - subtest: 'CSS Transitions with transition: all: property <background-image> from
+      [url(../resources/blue-100.png)] to [cross-fade(url(../resources/green-100.png),
+      url(../resources/stripes-100.png), 0.5)] at (1) should be [cross-fade(url(../resources/green-100.png),
+      url(../resources/stripes-100.png), 0.5)]'
+    test: background-image-interpolation.html
+  - subtest: 'CSS Transitions with transition: all: property <background-image> from
+      [url(../resources/blue-100.png)] to [cross-fade(url(../resources/green-100.png),
+      url(../resources/stripes-100.png), 0.5)] at (1.5) should be [cross-fade(url(../resources/green-100.png),
+      url(../resources/stripes-100.png), 0.5)]'
+    test: background-image-interpolation.html
+  - subtest: 'CSS Animations: property <background-image> from [url(../resources/blue-100.png)]
+      to [cross-fade(url(../resources/green-100.png), url(../resources/stripes-100.png),
+      0.5)] at (0.6) should be [cross-fade(url(../resources/green-100.png), url(../resources/stripes-100.png),
+      0.5)]'
+    test: background-image-interpolation.html
+  - subtest: 'CSS Animations: property <background-image> from [url(../resources/blue-100.png)]
+      to [cross-fade(url(../resources/green-100.png), url(../resources/stripes-100.png),
+      0.5)] at (1) should be [cross-fade(url(../resources/green-100.png), url(../resources/stripes-100.png),
+      0.5)]'
+    test: background-image-interpolation.html
+  - subtest: 'CSS Animations: property <background-image> from [url(../resources/blue-100.png)]
+      to [cross-fade(url(../resources/green-100.png), url(../resources/stripes-100.png),
+      0.5)] at (1.5) should be [cross-fade(url(../resources/green-100.png), url(../resources/stripes-100.png),
+      0.5)]'
+    test: background-image-interpolation.html
+  - subtest: 'Web Animations: property <background-image> from [url(../resources/blue-100.png)]
+      to [cross-fade(url(../resources/green-100.png), url(../resources/stripes-100.png),
+      0.5)] at (0.6) should be [cross-fade(url(../resources/green-100.png), url(../resources/stripes-100.png),
+      0.5)]'
+    test: background-image-interpolation.html
+  - subtest: 'Web Animations: property <background-image> from [url(../resources/blue-100.png)]
+      to [cross-fade(url(../resources/green-100.png), url(../resources/stripes-100.png),
+      0.5)] at (1) should be [cross-fade(url(../resources/green-100.png), url(../resources/stripes-100.png),
+      0.5)]'
+    test: background-image-interpolation.html
+  - subtest: 'Web Animations: property <background-image> from [url(../resources/blue-100.png)]
+      to [cross-fade(url(../resources/green-100.png), url(../resources/stripes-100.png),
+      0.5)] at (1.5) should be [cross-fade(url(../resources/green-100.png), url(../resources/stripes-100.png),
+      0.5)]'
+    test: background-image-interpolation.html
+  - subtest: 'CSS Transitions: property <background-image> from [url(../resources/stripes-100.png),
+      url(../resources/blue-100.png)] to [url(../resources/blue-100.png), url(../resources/stripes-100.png)]
+      at (-0.3) should be [url(../resources/stripes-100.png), url(../resources/blue-100.png)]'
+    test: background-image-interpolation.html
+  - subtest: 'CSS Transitions: property <background-image> from [url(../resources/stripes-100.png),
+      url(../resources/blue-100.png)] to [url(../resources/blue-100.png), url(../resources/stripes-100.png)]
+      at (0) should be [url(../resources/stripes-100.png), url(../resources/blue-100.png)]'
+    test: background-image-interpolation.html
+  - subtest: 'CSS Transitions with transition: all: property <background-image> from
+      [url(../resources/stripes-100.png), url(../resources/blue-100.png)] to [url(../resources/blue-100.png),
+      url(../resources/stripes-100.png)] at (-0.3) should be [url(../resources/stripes-100.png),
+      url(../resources/blue-100.png)]'
+    test: background-image-interpolation.html
+  - subtest: 'CSS Transitions with transition: all: property <background-image> from
+      [url(../resources/stripes-100.png), url(../resources/blue-100.png)] to [url(../resources/blue-100.png),
+      url(../resources/stripes-100.png)] at (0) should be [url(../resources/stripes-100.png),
+      url(../resources/blue-100.png)]'
+    test: background-image-interpolation.html
+  - subtest: 'CSS Transitions: property <background-image> from [url(../resources/blue-100.png)]
+      to [url(../resources/stripes-100.png), url(../resources/green-100.png)] at (0)
+      should be [url(../resources/blue-100.png)]'
+    test: background-image-interpolation.html
+  - subtest: 'CSS Transitions with transition: all: property <background-image> from
+      [url(../resources/blue-100.png)] to [url(../resources/stripes-100.png), url(../resources/green-100.png)]
+      at (0) should be [url(../resources/blue-100.png)]'
+    test: background-image-interpolation.html
+  - subtest: 'CSS Transitions: property <background-position> from [top 0px left 0px]
+      to [left 80px top 80px] at (-0.25) should be [-20px -20px, -20px -20px, -20px
+      -20px, -20px -20px]'
+    test: background-position-interpolation.html
+  - subtest: 'CSS Transitions: property <background-position> from [top 0px left 0px]
+      to [left 80px top 80px] at (0) should be [  0px   0px,   0px   0px,   0px   0px,   0px   0px]'
+    test: background-position-interpolation.html
+  - subtest: 'CSS Transitions: property <background-position> from [top 0px left 0px]
+      to [left 80px top 80px] at (0.25) should be [ 20px  20px,  20px  20px,  20px  20px,  20px  20px]'
+    test: background-position-interpolation.html
+  - subtest: 'CSS Transitions: property <background-position> from [top 0px left 0px]
+      to [left 80px top 80px] at (0.5) should be [ 40px  40px,  40px  40px,  40px  40px,  40px  40px]'
+    test: background-position-interpolation.html
+  - subtest: 'CSS Transitions: property <background-position> from [top 0px left 0px]
+      to [left 80px top 80px] at (0.75) should be [ 60px  60px,  60px  60px,  60px  60px,  60px  60px]'
+    test: background-position-interpolation.html
+  - subtest: 'CSS Transitions: property <background-position> from [top 0px left 0px]
+      to [left 80px top 80px] at (1) should be [ 80px  80px,  80px  80px,  80px  80px,  80px  80px]'
+    test: background-position-interpolation.html
+  - subtest: 'CSS Transitions: property <background-position> from [top 0px left 0px]
+      to [left 80px top 80px] at (1.25) should be [100px 100px, 100px 100px, 100px
+      100px, 100px 100px]'
+    test: background-position-interpolation.html
+  - subtest: 'CSS Transitions with transition: all: property <background-position>
+      from [top 0px left 0px] to [left 80px top 80px] at (-0.25) should be [-20px
+      -20px, -20px -20px, -20px -20px, -20px -20px]'
+    test: background-position-interpolation.html
+  - subtest: 'CSS Transitions with transition: all: property <background-position>
+      from [top 0px left 0px] to [left 80px top 80px] at (0) should be [  0px   0px,   0px   0px,   0px   0px,   0px   0px]'
+    test: background-position-interpolation.html
+  - subtest: 'CSS Transitions with transition: all: property <background-position>
+      from [top 0px left 0px] to [left 80px top 80px] at (0.25) should be [ 20px  20px,  20px  20px,  20px  20px,  20px  20px]'
+    test: background-position-interpolation.html
+  - subtest: 'CSS Transitions with transition: all: property <background-position>
+      from [top 0px left 0px] to [left 80px top 80px] at (0.5) should be [ 40px  40px,  40px  40px,  40px  40px,  40px  40px]'
+    test: background-position-interpolation.html
+  - subtest: 'CSS Transitions with transition: all: property <background-position>
+      from [top 0px left 0px] to [left 80px top 80px] at (0.75) should be [ 60px  60px,  60px  60px,  60px  60px,  60px  60px]'
+    test: background-position-interpolation.html
+  - subtest: 'CSS Transitions with transition: all: property <background-position>
+      from [top 0px left 0px] to [left 80px top 80px] at (1) should be [ 80px  80px,  80px  80px,  80px  80px,  80px  80px]'
+    test: background-position-interpolation.html
+  - subtest: 'CSS Transitions with transition: all: property <background-position>
+      from [top 0px left 0px] to [left 80px top 80px] at (1.25) should be [100px 100px,
+      100px 100px, 100px 100px, 100px 100px]'
+    test: background-position-interpolation.html
+  - subtest: 'CSS Animations: property <background-position> from [top 0px left 0px]
+      to [left 80px top 80px] at (-0.25) should be [-20px -20px, -20px -20px, -20px
+      -20px, -20px -20px]'
+    test: background-position-interpolation.html
+  - subtest: 'CSS Animations: property <background-position> from [top 0px left 0px]
+      to [left 80px top 80px] at (0) should be [  0px   0px,   0px   0px,   0px   0px,   0px   0px]'
+    test: background-position-interpolation.html
+  - subtest: 'CSS Animations: property <background-position> from [top 0px left 0px]
+      to [left 80px top 80px] at (0.25) should be [ 20px  20px,  20px  20px,  20px  20px,  20px  20px]'
+    test: background-position-interpolation.html
+  - subtest: 'CSS Animations: property <background-position> from [top 0px left 0px]
+      to [left 80px top 80px] at (0.5) should be [ 40px  40px,  40px  40px,  40px  40px,  40px  40px]'
+    test: background-position-interpolation.html
+  - subtest: 'CSS Animations: property <background-position> from [top 0px left 0px]
+      to [left 80px top 80px] at (0.75) should be [ 60px  60px,  60px  60px,  60px  60px,  60px  60px]'
+    test: background-position-interpolation.html
+  - subtest: 'CSS Animations: property <background-position> from [top 0px left 0px]
+      to [left 80px top 80px] at (1) should be [ 80px  80px,  80px  80px,  80px  80px,  80px  80px]'
+    test: background-position-interpolation.html
+  - subtest: 'CSS Animations: property <background-position> from [top 0px left 0px]
+      to [left 80px top 80px] at (1.25) should be [100px 100px, 100px 100px, 100px
+      100px, 100px 100px]'
+    test: background-position-interpolation.html
+  - subtest: 'Web Animations: property <background-position> from [top 0px left 0px]
+      to [left 80px top 80px] at (-0.25) should be [-20px -20px, -20px -20px, -20px
+      -20px, -20px -20px]'
+    test: background-position-interpolation.html
+  - subtest: 'Web Animations: property <background-position> from [top 0px left 0px]
+      to [left 80px top 80px] at (0) should be [  0px   0px,   0px   0px,   0px   0px,   0px   0px]'
+    test: background-position-interpolation.html
+  - subtest: 'Web Animations: property <background-position> from [top 0px left 0px]
+      to [left 80px top 80px] at (0.25) should be [ 20px  20px,  20px  20px,  20px  20px,  20px  20px]'
+    test: background-position-interpolation.html
+  - subtest: 'Web Animations: property <background-position> from [top 0px left 0px]
+      to [left 80px top 80px] at (0.5) should be [ 40px  40px,  40px  40px,  40px  40px,  40px  40px]'
+    test: background-position-interpolation.html
+  - subtest: 'Web Animations: property <background-position> from [top 0px left 0px]
+      to [left 80px top 80px] at (0.75) should be [ 60px  60px,  60px  60px,  60px  60px,  60px  60px]'
+    test: background-position-interpolation.html
+  - subtest: 'Web Animations: property <background-position> from [top 0px left 0px]
+      to [left 80px top 80px] at (1) should be [ 80px  80px,  80px  80px,  80px  80px,  80px  80px]'
+    test: background-position-interpolation.html
+  - subtest: 'Web Animations: property <background-position> from [top 0px left 0px]
+      to [left 80px top 80px] at (1.25) should be [100px 100px, 100px 100px, 100px
+      100px, 100px 100px]'
+    test: background-position-interpolation.html
+  - subtest: 'CSS Transitions: property <background-position> from [0px 0px, 80px
+      0px] to [40px 40px, 80px 80px, 0px 80px] at (-0.25) should be [-10px -10px,
+      80px -20px, 0px -20px, 90px -10px]'
+    test: background-position-interpolation.html
+  - subtest: 'CSS Transitions: property <background-position> from [0px 0px, 80px
+      0px] to [40px 40px, 80px 80px, 0px 80px] at (0) should be [  0px   0px, 80px   0px,
+      0px   0px, 80px   0px]'
+    test: background-position-interpolation.html
+  - subtest: 'CSS Transitions: property <background-position> from [0px 0px, 80px
+      0px] to [40px 40px, 80px 80px, 0px 80px] at (0.25) should be [ 10px  10px, 80px  20px,
+      0px  20px, 70px  10px]'
+    test: background-position-interpolation.html
+  - subtest: 'CSS Transitions: property <background-position> from [0px 0px, 80px
+      0px] to [40px 40px, 80px 80px, 0px 80px] at (0.5) should be [ 20px  20px, 80px  40px,
+      0px  40px, 60px  20px]'
+    test: background-position-interpolation.html
+  - subtest: 'CSS Transitions: property <background-position> from [0px 0px, 80px
+      0px] to [40px 40px, 80px 80px, 0px 80px] at (0.75) should be [ 30px  30px, 80px  60px,
+      0px  60px, 50px  30px]'
+    test: background-position-interpolation.html
+  - subtest: 'CSS Transitions: property <background-position> from [0px 0px, 80px
+      0px] to [40px 40px, 80px 80px, 0px 80px] at (1) should be [ 40px  40px, 80px  80px,
+      0px  80px, 40px  40px]'
+    test: background-position-interpolation.html
+  - subtest: 'CSS Transitions: property <background-position> from [0px 0px, 80px
+      0px] to [40px 40px, 80px 80px, 0px 80px] at (1.25) should be [ 50px  50px, 80px
+      100px, 0px 100px, 30px  50px]'
+    test: background-position-interpolation.html
+  - subtest: 'CSS Transitions with transition: all: property <background-position>
+      from [0px 0px, 80px 0px] to [40px 40px, 80px 80px, 0px 80px] at (-0.25) should
+      be [-10px -10px, 80px -20px, 0px -20px, 90px -10px]'
+    test: background-position-interpolation.html
+  - subtest: 'CSS Transitions with transition: all: property <background-position>
+      from [0px 0px, 80px 0px] to [40px 40px, 80px 80px, 0px 80px] at (0) should be
+      [  0px   0px, 80px   0px, 0px   0px, 80px   0px]'
+    test: background-position-interpolation.html
+  - subtest: 'CSS Transitions with transition: all: property <background-position>
+      from [0px 0px, 80px 0px] to [40px 40px, 80px 80px, 0px 80px] at (0.25) should
+      be [ 10px  10px, 80px  20px, 0px  20px, 70px  10px]'
+    test: background-position-interpolation.html
+  - subtest: 'CSS Transitions with transition: all: property <background-position>
+      from [0px 0px, 80px 0px] to [40px 40px, 80px 80px, 0px 80px] at (0.5) should
+      be [ 20px  20px, 80px  40px, 0px  40px, 60px  20px]'
+    test: background-position-interpolation.html
+  - subtest: 'CSS Transitions with transition: all: property <background-position>
+      from [0px 0px, 80px 0px] to [40px 40px, 80px 80px, 0px 80px] at (0.75) should
+      be [ 30px  30px, 80px  60px, 0px  60px, 50px  30px]'
+    test: background-position-interpolation.html
+  - subtest: 'CSS Transitions with transition: all: property <background-position>
+      from [0px 0px, 80px 0px] to [40px 40px, 80px 80px, 0px 80px] at (1) should be
+      [ 40px  40px, 80px  80px, 0px  80px, 40px  40px]'
+    test: background-position-interpolation.html
+  - subtest: 'CSS Transitions with transition: all: property <background-position>
+      from [0px 0px, 80px 0px] to [40px 40px, 80px 80px, 0px 80px] at (1.25) should
+      be [ 50px  50px, 80px 100px, 0px 100px, 30px  50px]'
+    test: background-position-interpolation.html
+  - subtest: 'CSS Animations: property <background-position> from [0px 0px, 80px 0px]
+      to [40px 40px, 80px 80px, 0px 80px] at (-0.25) should be [-10px -10px, 80px
+      -20px, 0px -20px, 90px -10px]'
+    test: background-position-interpolation.html
+  - subtest: 'CSS Animations: property <background-position> from [0px 0px, 80px 0px]
+      to [40px 40px, 80px 80px, 0px 80px] at (0) should be [  0px   0px, 80px   0px,
+      0px   0px, 80px   0px]'
+    test: background-position-interpolation.html
+  - subtest: 'CSS Animations: property <background-position> from [0px 0px, 80px 0px]
+      to [40px 40px, 80px 80px, 0px 80px] at (0.25) should be [ 10px  10px, 80px  20px,
+      0px  20px, 70px  10px]'
+    test: background-position-interpolation.html
+  - subtest: 'CSS Animations: property <background-position> from [0px 0px, 80px 0px]
+      to [40px 40px, 80px 80px, 0px 80px] at (0.5) should be [ 20px  20px, 80px  40px,
+      0px  40px, 60px  20px]'
+    test: background-position-interpolation.html
+  - subtest: 'CSS Animations: property <background-position> from [0px 0px, 80px 0px]
+      to [40px 40px, 80px 80px, 0px 80px] at (0.75) should be [ 30px  30px, 80px  60px,
+      0px  60px, 50px  30px]'
+    test: background-position-interpolation.html
+  - subtest: 'CSS Animations: property <background-position> from [0px 0px, 80px 0px]
+      to [40px 40px, 80px 80px, 0px 80px] at (1) should be [ 40px  40px, 80px  80px,
+      0px  80px, 40px  40px]'
+    test: background-position-interpolation.html
+  - subtest: 'CSS Animations: property <background-position> from [0px 0px, 80px 0px]
+      to [40px 40px, 80px 80px, 0px 80px] at (1.25) should be [ 50px  50px, 80px 100px,
+      0px 100px, 30px  50px]'
+    test: background-position-interpolation.html
+  - subtest: 'Web Animations: property <background-position> from [0px 0px, 80px 0px]
+      to [40px 40px, 80px 80px, 0px 80px] at (-0.25) should be [-10px -10px, 80px
+      -20px, 0px -20px, 90px -10px]'
+    test: background-position-interpolation.html
+  - subtest: 'Web Animations: property <background-position> from [0px 0px, 80px 0px]
+      to [40px 40px, 80px 80px, 0px 80px] at (0) should be [  0px   0px, 80px   0px,
+      0px   0px, 80px   0px]'
+    test: background-position-interpolation.html
+  - subtest: 'Web Animations: property <background-position> from [0px 0px, 80px 0px]
+      to [40px 40px, 80px 80px, 0px 80px] at (0.25) should be [ 10px  10px, 80px  20px,
+      0px  20px, 70px  10px]'
+    test: background-position-interpolation.html
+  - subtest: 'Web Animations: property <background-position> from [0px 0px, 80px 0px]
+      to [40px 40px, 80px 80px, 0px 80px] at (0.5) should be [ 20px  20px, 80px  40px,
+      0px  40px, 60px  20px]'
+    test: background-position-interpolation.html
+  - subtest: 'Web Animations: property <background-position> from [0px 0px, 80px 0px]
+      to [40px 40px, 80px 80px, 0px 80px] at (0.75) should be [ 30px  30px, 80px  60px,
+      0px  60px, 50px  30px]'
+    test: background-position-interpolation.html
+  - subtest: 'Web Animations: property <background-position> from [0px 0px, 80px 0px]
+      to [40px 40px, 80px 80px, 0px 80px] at (1) should be [ 40px  40px, 80px  80px,
+      0px  80px, 40px  40px]'
+    test: background-position-interpolation.html
+  - subtest: 'Web Animations: property <background-position> from [0px 0px, 80px 0px]
+      to [40px 40px, 80px 80px, 0px 80px] at (1.25) should be [ 50px  50px, 80px 100px,
+      0px 100px, 30px  50px]'
+    test: background-position-interpolation.html
+  - subtest: 'CSS Transitions: property <background-position> from [initial] to [left
+      20px top 20px] at (0.25) should be [5px 5px]'
+    test: background-position-origin-interpolation.html
+  - subtest: 'CSS Transitions: property <background-position> from [initial] to [left
+      20px top 20px] at (0.5) should be [10px 10px]'
+    test: background-position-origin-interpolation.html
+  - subtest: 'CSS Transitions: property <background-position> from [initial] to [left
+      20px top 20px] at (0.75) should be [15px 15px]'
+    test: background-position-origin-interpolation.html
+  - subtest: 'CSS Transitions: property <background-position> from [initial] to [left
+      20px top 20px] at (1) should be [20px 20px]'
+    test: background-position-origin-interpolation.html
+  - subtest: 'CSS Transitions with transition: all: property <background-position>
+      from [initial] to [left 20px top 20px] at (0.25) should be [5px 5px]'
+    test: background-position-origin-interpolation.html
+  - subtest: 'CSS Transitions with transition: all: property <background-position>
+      from [initial] to [left 20px top 20px] at (0.5) should be [10px 10px]'
+    test: background-position-origin-interpolation.html
+  - subtest: 'CSS Transitions with transition: all: property <background-position>
+      from [initial] to [left 20px top 20px] at (0.75) should be [15px 15px]'
+    test: background-position-origin-interpolation.html
+  - subtest: 'CSS Transitions with transition: all: property <background-position>
+      from [initial] to [left 20px top 20px] at (1) should be [20px 20px]'
+    test: background-position-origin-interpolation.html
+  - subtest: 'CSS Animations: property <background-position> from [initial] to [left
+      20px top 20px] at (0.25) should be [5px 5px]'
+    test: background-position-origin-interpolation.html
+  - subtest: 'CSS Animations: property <background-position> from [initial] to [left
+      20px top 20px] at (0.5) should be [10px 10px]'
+    test: background-position-origin-interpolation.html
+  - subtest: 'CSS Animations: property <background-position> from [initial] to [left
+      20px top 20px] at (0.75) should be [15px 15px]'
+    test: background-position-origin-interpolation.html
+  - subtest: 'CSS Animations: property <background-position> from [initial] to [left
+      20px top 20px] at (1) should be [20px 20px]'
+    test: background-position-origin-interpolation.html
+  - subtest: 'Web Animations: property <background-position> from [initial] to [left
+      20px top 20px] at (0.25) should be [5px 5px]'
+    test: background-position-origin-interpolation.html
+  - subtest: 'Web Animations: property <background-position> from [initial] to [left
+      20px top 20px] at (0.5) should be [10px 10px]'
+    test: background-position-origin-interpolation.html
+  - subtest: 'Web Animations: property <background-position> from [initial] to [left
+      20px top 20px] at (0.75) should be [15px 15px]'
+    test: background-position-origin-interpolation.html
+  - subtest: 'Web Animations: property <background-position> from [initial] to [left
+      20px top 20px] at (1) should be [20px 20px]'
+    test: background-position-origin-interpolation.html
+  - subtest: 'CSS Transitions: property <background-position> from [unset] to [left
+      20px top 20px] at (0.25) should be [5px 5px]'
+    test: background-position-origin-interpolation.html
+  - subtest: 'CSS Transitions: property <background-position> from [unset] to [left
+      20px top 20px] at (0.5) should be [10px 10px]'
+    test: background-position-origin-interpolation.html
+  - subtest: 'CSS Transitions: property <background-position> from [unset] to [left
+      20px top 20px] at (0.75) should be [15px 15px]'
+    test: background-position-origin-interpolation.html
+  - subtest: 'CSS Transitions: property <background-position> from [unset] to [left
+      20px top 20px] at (1) should be [20px 20px]'
+    test: background-position-origin-interpolation.html
+  - subtest: 'CSS Transitions with transition: all: property <background-position>
+      from [unset] to [left 20px top 20px] at (0.25) should be [5px 5px]'
+    test: background-position-origin-interpolation.html
+  - subtest: 'CSS Transitions with transition: all: property <background-position>
+      from [unset] to [left 20px top 20px] at (0.5) should be [10px 10px]'
+    test: background-position-origin-interpolation.html
+  - subtest: 'CSS Transitions with transition: all: property <background-position>
+      from [unset] to [left 20px top 20px] at (0.75) should be [15px 15px]'
+    test: background-position-origin-interpolation.html
+  - subtest: 'CSS Transitions with transition: all: property <background-position>
+      from [unset] to [left 20px top 20px] at (1) should be [20px 20px]'
+    test: background-position-origin-interpolation.html
+  - subtest: 'CSS Animations: property <background-position> from [unset] to [left
+      20px top 20px] at (0.25) should be [5px 5px]'
+    test: background-position-origin-interpolation.html
+  - subtest: 'CSS Animations: property <background-position> from [unset] to [left
+      20px top 20px] at (0.5) should be [10px 10px]'
+    test: background-position-origin-interpolation.html
+  - subtest: 'CSS Animations: property <background-position> from [unset] to [left
+      20px top 20px] at (0.75) should be [15px 15px]'
+    test: background-position-origin-interpolation.html
+  - subtest: 'CSS Animations: property <background-position> from [unset] to [left
+      20px top 20px] at (1) should be [20px 20px]'
+    test: background-position-origin-interpolation.html
+  - subtest: 'Web Animations: property <background-position> from [unset] to [left
+      20px top 20px] at (0.25) should be [5px 5px]'
+    test: background-position-origin-interpolation.html
+  - subtest: 'Web Animations: property <background-position> from [unset] to [left
+      20px top 20px] at (0.5) should be [10px 10px]'
+    test: background-position-origin-interpolation.html
+  - subtest: 'Web Animations: property <background-position> from [unset] to [left
+      20px top 20px] at (0.75) should be [15px 15px]'
+    test: background-position-origin-interpolation.html
+  - subtest: 'Web Animations: property <background-position> from [unset] to [left
+      20px top 20px] at (1) should be [20px 20px]'
+    test: background-position-origin-interpolation.html
+  - subtest: 'CSS Transitions: property <background-position> from [center center]
+      to [left 20px top 20px] at (1) should be [20px 20px]'
+    test: background-position-origin-interpolation.html
+  - subtest: 'CSS Transitions with transition: all: property <background-position>
+      from [center center] to [left 20px top 20px] at (1) should be [20px 20px]'
+    test: background-position-origin-interpolation.html
+  - subtest: 'CSS Animations: property <background-position> from [center center]
+      to [left 20px top 20px] at (1) should be [20px 20px]'
+    test: background-position-origin-interpolation.html
+  - subtest: 'Web Animations: property <background-position> from [center center]
+      to [left 20px top 20px] at (1) should be [20px 20px]'
+    test: background-position-origin-interpolation.html
+  - subtest: 'CSS Transitions: property <background-position> from [center center]
+      to [center top 20px] at (1) should be [50% 20px]'
+    test: background-position-origin-interpolation.html
+  - subtest: 'CSS Transitions with transition: all: property <background-position>
+      from [center center] to [center top 20px] at (1) should be [50% 20px]'
+    test: background-position-origin-interpolation.html
+  - subtest: 'CSS Animations: property <background-position> from [center center]
+      to [center top 20px] at (1) should be [50% 20px]'
+    test: background-position-origin-interpolation.html
+  - subtest: 'Web Animations: property <background-position> from [center center]
+      to [center top 20px] at (1) should be [50% 20px]'
+    test: background-position-origin-interpolation.html
+  - subtest: 'CSS Transitions: property <background-position> from [center center]
+      to [right 20px top 20px] at (1) should be [calc(-20px + 100%) 20px]'
+    test: background-position-origin-interpolation.html
+  - subtest: 'CSS Transitions with transition: all: property <background-position>
+      from [center center] to [right 20px top 20px] at (1) should be [calc(-20px +
+      100%) 20px]'
+    test: background-position-origin-interpolation.html
+  - subtest: 'CSS Animations: property <background-position> from [center center]
+      to [right 20px top 20px] at (1) should be [calc(-20px + 100%) 20px]'
+    test: background-position-origin-interpolation.html
+  - subtest: 'Web Animations: property <background-position> from [center center]
+      to [right 20px top 20px] at (1) should be [calc(-20px + 100%) 20px]'
+    test: background-position-origin-interpolation.html
+  - subtest: 'CSS Transitions: property <background-position> from [center center]
+      to [left 20px center] at (1) should be [20px 50%]'
+    test: background-position-origin-interpolation.html
+  - subtest: 'CSS Transitions with transition: all: property <background-position>
+      from [center center] to [left 20px center] at (1) should be [20px 50%]'
+    test: background-position-origin-interpolation.html
+  - subtest: 'CSS Animations: property <background-position> from [center center]
+      to [left 20px center] at (1) should be [20px 50%]'
+    test: background-position-origin-interpolation.html
+  - subtest: 'Web Animations: property <background-position> from [center center]
+      to [left 20px center] at (1) should be [20px 50%]'
+    test: background-position-origin-interpolation.html
+  - subtest: 'CSS Transitions: property <background-position> from [center center]
+      to [left 20px bottom 20px] at (1) should be [20px calc(-20px + 100%)]'
+    test: background-position-origin-interpolation.html
+  - subtest: 'CSS Transitions with transition: all: property <background-position>
+      from [center center] to [left 20px bottom 20px] at (1) should be [20px calc(-20px
+      + 100%)]'
+    test: background-position-origin-interpolation.html
+  - subtest: 'CSS Animations: property <background-position> from [center center]
+      to [left 20px bottom 20px] at (1) should be [20px calc(-20px + 100%)]'
+    test: background-position-origin-interpolation.html
+  - subtest: 'Web Animations: property <background-position> from [center center]
+      to [left 20px bottom 20px] at (1) should be [20px calc(-20px + 100%)]'
+    test: background-position-origin-interpolation.html
+  - subtest: 'CSS Transitions: property <background-size> from [0px auto, 0px 0px,
+      contain, cover] to [40px auto, 40px 40px, contain, cover] at (-0.25) should
+      be [ 0px auto,  0px  0px, contain, cover]'
+    test: background-size-interpolation.html
+  - subtest: 'CSS Transitions: property <background-size> from [0px auto, 0px 0px,
+      contain, cover] to [40px auto, 40px 40px, contain, cover] at (0) should be [
+      0px auto,  0px  0px, contain, cover]'
+    test: background-size-interpolation.html
+  - subtest: 'CSS Transitions: property <background-size> from [0px auto, 0px 0px,
+      contain, cover] to [40px auto, 40px 40px, contain, cover] at (0.25) should be
+      [10px auto, 10px 10px, contain, cover]'
+    test: background-size-interpolation.html
+  - subtest: 'CSS Transitions: property <background-size> from [0px auto, 0px 0px,
+      contain, cover] to [40px auto, 40px 40px, contain, cover] at (0.5) should be
+      [20px auto, 20px 20px, contain, cover]'
+    test: background-size-interpolation.html
+  - subtest: 'CSS Transitions: property <background-size> from [0px auto, 0px 0px,
+      contain, cover] to [40px auto, 40px 40px, contain, cover] at (0.75) should be
+      [30px auto, 30px 30px, contain, cover]'
+    test: background-size-interpolation.html
+  - subtest: 'CSS Transitions: property <background-size> from [0px auto, 0px 0px,
+      contain, cover] to [40px auto, 40px 40px, contain, cover] at (1.25) should be
+      [50px auto, 50px 50px, contain, cover]'
+    test: background-size-interpolation.html
+  - subtest: 'CSS Transitions with transition: all: property <background-size> from
+      [0px auto, 0px 0px, contain, cover] to [40px auto, 40px 40px, contain, cover]
+      at (-0.25) should be [ 0px auto,  0px  0px, contain, cover]'
+    test: background-size-interpolation.html
+  - subtest: 'CSS Transitions with transition: all: property <background-size> from
+      [0px auto, 0px 0px, contain, cover] to [40px auto, 40px 40px, contain, cover]
+      at (0) should be [ 0px auto,  0px  0px, contain, cover]'
+    test: background-size-interpolation.html
+  - subtest: 'CSS Transitions with transition: all: property <background-size> from
+      [0px auto, 0px 0px, contain, cover] to [40px auto, 40px 40px, contain, cover]
+      at (0.25) should be [10px auto, 10px 10px, contain, cover]'
+    test: background-size-interpolation.html
+  - subtest: 'CSS Transitions with transition: all: property <background-size> from
+      [0px auto, 0px 0px, contain, cover] to [40px auto, 40px 40px, contain, cover]
+      at (0.5) should be [20px auto, 20px 20px, contain, cover]'
+    test: background-size-interpolation.html
+  - subtest: 'CSS Transitions with transition: all: property <background-size> from
+      [0px auto, 0px 0px, contain, cover] to [40px auto, 40px 40px, contain, cover]
+      at (0.75) should be [30px auto, 30px 30px, contain, cover]'
+    test: background-size-interpolation.html
+  - subtest: 'CSS Transitions with transition: all: property <background-size> from
+      [0px auto, 0px 0px, contain, cover] to [40px auto, 40px 40px, contain, cover]
+      at (1.25) should be [50px auto, 50px 50px, contain, cover]'
+    test: background-size-interpolation.html
+  - subtest: 'CSS Animations: property <background-size> from [0px auto, 0px 0px,
+      contain, cover] to [40px auto, 40px 40px, contain, cover] at (0.25) should be
+      [10px auto, 10px 10px, contain, cover]'
+    test: background-size-interpolation.html
+  - subtest: 'CSS Animations: property <background-size> from [0px auto, 0px 0px,
+      contain, cover] to [40px auto, 40px 40px, contain, cover] at (0.5) should be
+      [20px auto, 20px 20px, contain, cover]'
+    test: background-size-interpolation.html
+  - subtest: 'CSS Animations: property <background-size> from [0px auto, 0px 0px,
+      contain, cover] to [40px auto, 40px 40px, contain, cover] at (0.75) should be
+      [30px auto, 30px 30px, contain, cover]'
+    test: background-size-interpolation.html
+  - subtest: 'CSS Animations: property <background-size> from [0px auto, 0px 0px,
+      contain, cover] to [40px auto, 40px 40px, contain, cover] at (1.25) should be
+      [50px auto, 50px 50px, contain, cover]'
+    test: background-size-interpolation.html
+  - subtest: 'Web Animations: property <background-size> from [0px auto, 0px 0px,
+      contain, cover] to [40px auto, 40px 40px, contain, cover] at (0.25) should be
+      [10px auto, 10px 10px, contain, cover]'
+    test: background-size-interpolation.html
+  - subtest: 'Web Animations: property <background-size> from [0px auto, 0px 0px,
+      contain, cover] to [40px auto, 40px 40px, contain, cover] at (0.5) should be
+      [20px auto, 20px 20px, contain, cover]'
+    test: background-size-interpolation.html
+  - subtest: 'Web Animations: property <background-size> from [0px auto, 0px 0px,
+      contain, cover] to [40px auto, 40px 40px, contain, cover] at (0.75) should be
+      [30px auto, 30px 30px, contain, cover]'
+    test: background-size-interpolation.html
+  - subtest: 'Web Animations: property <background-size> from [0px auto, 0px 0px,
+      contain, cover] to [40px auto, 40px 40px, contain, cover] at (1.25) should be
+      [50px auto, 50px 50px, contain, cover]'
+    test: background-size-interpolation.html
+  - subtest: 'CSS Animations: property <background-size> from [0px 0px, 80px 0px]
+      to [40px 40px, 80px 80px, 0px 80px] at (-0.25) should be [ 0px  0px, 80px   0px,
+      0px   0px, 90px  0px]'
+    test: background-size-interpolation.html
+  - subtest: 'CSS Animations: property <background-size> from [0px 0px, 80px 0px]
+      to [40px 40px, 80px 80px, 0px 80px] at (0) should be [ 0px  0px, 80px   0px,
+      0px   0px, 80px  0px]'
+    test: background-size-interpolation.html
+  - subtest: 'CSS Animations: property <background-size> from [0px 0px, 80px 0px]
+      to [40px 40px, 80px 80px, 0px 80px] at (0.25) should be [10px 10px, 80px  20px,
+      0px  20px, 70px 10px]'
+    test: background-size-interpolation.html
+  - subtest: 'CSS Animations: property <background-size> from [0px 0px, 80px 0px]
+      to [40px 40px, 80px 80px, 0px 80px] at (0.5) should be [20px 20px, 80px  40px,
+      0px  40px, 60px 20px]'
+    test: background-size-interpolation.html
+  - subtest: 'CSS Animations: property <background-size> from [0px 0px, 80px 0px]
+      to [40px 40px, 80px 80px, 0px 80px] at (0.75) should be [30px 30px, 80px  60px,
+      0px  60px, 50px 30px]'
+    test: background-size-interpolation.html
+  - subtest: 'CSS Animations: property <background-size> from [0px 0px, 80px 0px]
+      to [40px 40px, 80px 80px, 0px 80px] at (1) should be [40px 40px, 80px  80px,
+      0px  80px, 40px 40px]'
+    test: background-size-interpolation.html
+  - subtest: 'CSS Animations: property <background-size> from [0px 0px, 80px 0px]
+      to [40px 40px, 80px 80px, 0px 80px] at (1.25) should be [50px 50px, 80px 100px,
+      0px 100px, 30px 50px]'
+    test: background-size-interpolation.html
+  - subtest: 'Web Animations: property <background-size> from [0px 0px, 80px 0px]
+      to [40px 40px, 80px 80px, 0px 80px] at (-0.25) should be [ 0px  0px, 80px   0px,
+      0px   0px, 90px  0px]'
+    test: background-size-interpolation.html
+  - subtest: 'Web Animations: property <background-size> from [0px 0px, 80px 0px]
+      to [40px 40px, 80px 80px, 0px 80px] at (0) should be [ 0px  0px, 80px   0px,
+      0px   0px, 80px  0px]'
+    test: background-size-interpolation.html
+  - subtest: 'Web Animations: property <background-size> from [0px 0px, 80px 0px]
+      to [40px 40px, 80px 80px, 0px 80px] at (0.25) should be [10px 10px, 80px  20px,
+      0px  20px, 70px 10px]'
+    test: background-size-interpolation.html
+  - subtest: 'Web Animations: property <background-size> from [0px 0px, 80px 0px]
+      to [40px 40px, 80px 80px, 0px 80px] at (0.5) should be [20px 20px, 80px  40px,
+      0px  40px, 60px 20px]'
+    test: background-size-interpolation.html
+  - subtest: 'Web Animations: property <background-size> from [0px 0px, 80px 0px]
+      to [40px 40px, 80px 80px, 0px 80px] at (0.75) should be [30px 30px, 80px  60px,
+      0px  60px, 50px 30px]'
+    test: background-size-interpolation.html
+  - subtest: 'Web Animations: property <background-size> from [0px 0px, 80px 0px]
+      to [40px 40px, 80px 80px, 0px 80px] at (1) should be [40px 40px, 80px  80px,
+      0px  80px, 40px 40px]'
+    test: background-size-interpolation.html
+  - subtest: 'Web Animations: property <background-size> from [0px 0px, 80px 0px]
+      to [40px 40px, 80px 80px, 0px 80px] at (1.25) should be [50px 50px, 80px 100px,
+      0px 100px, 30px 50px]'
+    test: background-size-interpolation.html
+  - subtest: 'CSS Transitions: property <border-color> from [rgb(20, 30, 40) rgb(40,
+      50, 60)] to [rgb(10, 20, 30) rgb(40, 50, 60) rgb(30, 40, 50) rgb(50, 60, 70)]
+      at (-0.3) should be [rgb(23, 33, 43) rgb(40, 50, 60) rgb(17, 27, 37) rgb(37,
+      47, 57)]'
+    test: border-color-interpolation.html
+  - subtest: 'CSS Transitions: property <border-color> from [rgb(20, 30, 40) rgb(40,
+      50, 60)] to [rgb(10, 20, 30) rgb(40, 50, 60) rgb(30, 40, 50) rgb(50, 60, 70)]
+      at (0) should be [rgb(20, 30, 40) rgb(40, 50, 60)]'
+    test: border-color-interpolation.html
+  - subtest: 'CSS Transitions: property <border-color> from [rgb(20, 30, 40) rgb(40,
+      50, 60)] to [rgb(10, 20, 30) rgb(40, 50, 60) rgb(30, 40, 50) rgb(50, 60, 70)]
+      at (0.3) should be [rgb(17, 27, 37) rgb(40, 50, 60) rgb(23, 33, 43) rgb(43,
+      53, 63)]'
+    test: border-color-interpolation.html
+  - subtest: 'CSS Transitions: property <border-color> from [rgb(20, 30, 40) rgb(40,
+      50, 60)] to [rgb(10, 20, 30) rgb(40, 50, 60) rgb(30, 40, 50) rgb(50, 60, 70)]
+      at (0.6) should be [rgb(14, 24, 34) rgb(40, 50, 60) rgb(26, 36, 46) rgb(46,
+      56, 66)]'
+    test: border-color-interpolation.html
+  - subtest: 'CSS Transitions: property <border-color> from [rgb(20, 30, 40) rgb(40,
+      50, 60)] to [rgb(10, 20, 30) rgb(40, 50, 60) rgb(30, 40, 50) rgb(50, 60, 70)]
+      at (1) should be [rgb(10, 20, 30) rgb(40, 50, 60) rgb(30, 40, 50) rgb(50, 60,
+      70)]'
+    test: border-color-interpolation.html
+  - subtest: 'CSS Transitions: property <border-color> from [rgb(20, 30, 40) rgb(40,
+      50, 60)] to [rgb(10, 20, 30) rgb(40, 50, 60) rgb(30, 40, 50) rgb(50, 60, 70)]
+      at (1.5) should be [rgb(5, 15, 25) rgb(40, 50, 60) rgb(35, 45, 55) rgb(55, 65,
+      75)]'
+    test: border-color-interpolation.html
+  - subtest: 'CSS Transitions with transition: all: property <border-color> from [rgb(20,
+      30, 40) rgb(40, 50, 60)] to [rgb(10, 20, 30) rgb(40, 50, 60) rgb(30, 40, 50)
+      rgb(50, 60, 70)] at (-0.3) should be [rgb(23, 33, 43) rgb(40, 50, 60) rgb(17,
+      27, 37) rgb(37, 47, 57)]'
+    test: border-color-interpolation.html
+  - subtest: 'CSS Transitions with transition: all: property <border-color> from [rgb(20,
+      30, 40) rgb(40, 50, 60)] to [rgb(10, 20, 30) rgb(40, 50, 60) rgb(30, 40, 50)
+      rgb(50, 60, 70)] at (0) should be [rgb(20, 30, 40) rgb(40, 50, 60)]'
+    test: border-color-interpolation.html
+  - subtest: 'CSS Transitions with transition: all: property <border-color> from [rgb(20,
+      30, 40) rgb(40, 50, 60)] to [rgb(10, 20, 30) rgb(40, 50, 60) rgb(30, 40, 50)
+      rgb(50, 60, 70)] at (0.3) should be [rgb(17, 27, 37) rgb(40, 50, 60) rgb(23,
+      33, 43) rgb(43, 53, 63)]'
+    test: border-color-interpolation.html
+  - subtest: 'CSS Transitions with transition: all: property <border-color> from [rgb(20,
+      30, 40) rgb(40, 50, 60)] to [rgb(10, 20, 30) rgb(40, 50, 60) rgb(30, 40, 50)
+      rgb(50, 60, 70)] at (0.6) should be [rgb(14, 24, 34) rgb(40, 50, 60) rgb(26,
+      36, 46) rgb(46, 56, 66)]'
+    test: border-color-interpolation.html
+  - subtest: 'CSS Transitions with transition: all: property <border-color> from [rgb(20,
+      30, 40) rgb(40, 50, 60)] to [rgb(10, 20, 30) rgb(40, 50, 60) rgb(30, 40, 50)
+      rgb(50, 60, 70)] at (1) should be [rgb(10, 20, 30) rgb(40, 50, 60) rgb(30, 40,
+      50) rgb(50, 60, 70)]'
+    test: border-color-interpolation.html
+  - subtest: 'CSS Transitions with transition: all: property <border-color> from [rgb(20,
+      30, 40) rgb(40, 50, 60)] to [rgb(10, 20, 30) rgb(40, 50, 60) rgb(30, 40, 50)
+      rgb(50, 60, 70)] at (1.5) should be [rgb(5, 15, 25) rgb(40, 50, 60) rgb(35,
+      45, 55) rgb(55, 65, 75)]'
+    test: border-color-interpolation.html
+  - subtest: 'CSS Animations: property <border-color> from [rgb(20, 30, 40) rgb(40,
+      50, 60)] to [rgb(10, 20, 30) rgb(40, 50, 60) rgb(30, 40, 50) rgb(50, 60, 70)]
+      at (-0.3) should be [rgb(23, 33, 43) rgb(40, 50, 60) rgb(17, 27, 37) rgb(37,
+      47, 57)]'
+    test: border-color-interpolation.html
+  - subtest: 'CSS Animations: property <border-color> from [rgb(20, 30, 40) rgb(40,
+      50, 60)] to [rgb(10, 20, 30) rgb(40, 50, 60) rgb(30, 40, 50) rgb(50, 60, 70)]
+      at (0) should be [rgb(20, 30, 40) rgb(40, 50, 60)]'
+    test: border-color-interpolation.html
+  - subtest: 'CSS Animations: property <border-color> from [rgb(20, 30, 40) rgb(40,
+      50, 60)] to [rgb(10, 20, 30) rgb(40, 50, 60) rgb(30, 40, 50) rgb(50, 60, 70)]
+      at (0.3) should be [rgb(17, 27, 37) rgb(40, 50, 60) rgb(23, 33, 43) rgb(43,
+      53, 63)]'
+    test: border-color-interpolation.html
+  - subtest: 'CSS Animations: property <border-color> from [rgb(20, 30, 40) rgb(40,
+      50, 60)] to [rgb(10, 20, 30) rgb(40, 50, 60) rgb(30, 40, 50) rgb(50, 60, 70)]
+      at (0.6) should be [rgb(14, 24, 34) rgb(40, 50, 60) rgb(26, 36, 46) rgb(46,
+      56, 66)]'
+    test: border-color-interpolation.html
+  - subtest: 'CSS Animations: property <border-color> from [rgb(20, 30, 40) rgb(40,
+      50, 60)] to [rgb(10, 20, 30) rgb(40, 50, 60) rgb(30, 40, 50) rgb(50, 60, 70)]
+      at (1) should be [rgb(10, 20, 30) rgb(40, 50, 60) rgb(30, 40, 50) rgb(50, 60,
+      70)]'
+    test: border-color-interpolation.html
+  - subtest: 'CSS Animations: property <border-color> from [rgb(20, 30, 40) rgb(40,
+      50, 60)] to [rgb(10, 20, 30) rgb(40, 50, 60) rgb(30, 40, 50) rgb(50, 60, 70)]
+      at (1.5) should be [rgb(5, 15, 25) rgb(40, 50, 60) rgb(35, 45, 55) rgb(55, 65,
+      75)]'
+    test: border-color-interpolation.html
+  - subtest: 'Web Animations: property <border-color> from [rgb(20, 30, 40) rgb(40,
+      50, 60)] to [rgb(10, 20, 30) rgb(40, 50, 60) rgb(30, 40, 50) rgb(50, 60, 70)]
+      at (-0.3) should be [rgb(23, 33, 43) rgb(40, 50, 60) rgb(17, 27, 37) rgb(37,
+      47, 57)]'
+    test: border-color-interpolation.html
+  - subtest: 'Web Animations: property <border-color> from [rgb(20, 30, 40) rgb(40,
+      50, 60)] to [rgb(10, 20, 30) rgb(40, 50, 60) rgb(30, 40, 50) rgb(50, 60, 70)]
+      at (0) should be [rgb(20, 30, 40) rgb(40, 50, 60)]'
+    test: border-color-interpolation.html
+  - subtest: 'Web Animations: property <border-color> from [rgb(20, 30, 40) rgb(40,
+      50, 60)] to [rgb(10, 20, 30) rgb(40, 50, 60) rgb(30, 40, 50) rgb(50, 60, 70)]
+      at (0.3) should be [rgb(17, 27, 37) rgb(40, 50, 60) rgb(23, 33, 43) rgb(43,
+      53, 63)]'
+    test: border-color-interpolation.html
+  - subtest: 'Web Animations: property <border-color> from [rgb(20, 30, 40) rgb(40,
+      50, 60)] to [rgb(10, 20, 30) rgb(40, 50, 60) rgb(30, 40, 50) rgb(50, 60, 70)]
+      at (0.6) should be [rgb(14, 24, 34) rgb(40, 50, 60) rgb(26, 36, 46) rgb(46,
+      56, 66)]'
+    test: border-color-interpolation.html
+  - subtest: 'Web Animations: property <border-color> from [rgb(20, 30, 40) rgb(40,
+      50, 60)] to [rgb(10, 20, 30) rgb(40, 50, 60) rgb(30, 40, 50) rgb(50, 60, 70)]
+      at (1) should be [rgb(10, 20, 30) rgb(40, 50, 60) rgb(30, 40, 50) rgb(50, 60,
+      70)]'
+    test: border-color-interpolation.html
+  - subtest: 'Web Animations: property <border-color> from [rgb(20, 30, 40) rgb(40,
+      50, 60)] to [rgb(10, 20, 30) rgb(40, 50, 60) rgb(30, 40, 50) rgb(50, 60, 70)]
+      at (1.5) should be [rgb(5, 15, 25) rgb(40, 50, 60) rgb(35, 45, 55) rgb(55, 65,
+      75)]'
+    test: border-color-interpolation.html
+  - subtest: 'CSS Transitions: property <border-radius> from [20px 40px 60px 80px
+      / 120px 140px 160px 180px] to [30px 50px 70px 90px / 130px 150px 170px 190px]
+      at (-0.3) should be [17px 37px 57px 77px / 117px 137px 157px 177px]'
+    test: border-radius-interpolation.html
+  - subtest: 'CSS Transitions: property <border-radius> from [20px 40px 60px 80px
+      / 120px 140px 160px 180px] to [30px 50px 70px 90px / 130px 150px 170px 190px]
+      at (0) should be [20px 40px 60px 80px / 120px 140px 160px 180px]'
+    test: border-radius-interpolation.html
+  - subtest: 'CSS Transitions: property <border-radius> from [20px 40px 60px 80px
+      / 120px 140px 160px 180px] to [30px 50px 70px 90px / 130px 150px 170px 190px]
+      at (0.3) should be [23px 43px 63px 83px / 123px 143px 163px 183px]'
+    test: border-radius-interpolation.html
+  - subtest: 'CSS Transitions: property <border-radius> from [20px 40px 60px 80px
+      / 120px 140px 160px 180px] to [30px 50px 70px 90px / 130px 150px 170px 190px]
+      at (0.6) should be [26px 46px 66px 86px / 126px 146px 166px 186px]'
+    test: border-radius-interpolation.html
+  - subtest: 'CSS Transitions: property <border-radius> from [20px 40px 60px 80px
+      / 120px 140px 160px 180px] to [30px 50px 70px 90px / 130px 150px 170px 190px]
+      at (1) should be [30px 50px 70px 90px / 130px 150px 170px 190px]'
+    test: border-radius-interpolation.html
+  - subtest: 'CSS Transitions: property <border-radius> from [20px 40px 60px 80px
+      / 120px 140px 160px 180px] to [30px 50px 70px 90px / 130px 150px 170px 190px]
+      at (1.5) should be [35px 55px 75px 95px / 135px 155px 175px 195px]'
+    test: border-radius-interpolation.html
+  - subtest: 'CSS Transitions with transition: all: property <border-radius> from
+      [20px 40px 60px 80px / 120px 140px 160px 180px] to [30px 50px 70px 90px / 130px
+      150px 170px 190px] at (-0.3) should be [17px 37px 57px 77px / 117px 137px 157px
+      177px]'
+    test: border-radius-interpolation.html
+  - subtest: 'CSS Transitions with transition: all: property <border-radius> from
+      [20px 40px 60px 80px / 120px 140px 160px 180px] to [30px 50px 70px 90px / 130px
+      150px 170px 190px] at (0) should be [20px 40px 60px 80px / 120px 140px 160px
+      180px]'
+    test: border-radius-interpolation.html
+  - subtest: 'CSS Transitions with transition: all: property <border-radius> from
+      [20px 40px 60px 80px / 120px 140px 160px 180px] to [30px 50px 70px 90px / 130px
+      150px 170px 190px] at (0.3) should be [23px 43px 63px 83px / 123px 143px 163px
+      183px]'
+    test: border-radius-interpolation.html
+  - subtest: 'CSS Transitions with transition: all: property <border-radius> from
+      [20px 40px 60px 80px / 120px 140px 160px 180px] to [30px 50px 70px 90px / 130px
+      150px 170px 190px] at (0.6) should be [26px 46px 66px 86px / 126px 146px 166px
+      186px]'
+    test: border-radius-interpolation.html
+  - subtest: 'CSS Transitions with transition: all: property <border-radius> from
+      [20px 40px 60px 80px / 120px 140px 160px 180px] to [30px 50px 70px 90px / 130px
+      150px 170px 190px] at (1) should be [30px 50px 70px 90px / 130px 150px 170px
+      190px]'
+    test: border-radius-interpolation.html
+  - subtest: 'CSS Transitions with transition: all: property <border-radius> from
+      [20px 40px 60px 80px / 120px 140px 160px 180px] to [30px 50px 70px 90px / 130px
+      150px 170px 190px] at (1.5) should be [35px 55px 75px 95px / 135px 155px 175px
+      195px]'
+    test: border-radius-interpolation.html
+  - subtest: 'CSS Animations: property <border-radius> from [20px 40px 60px 80px /
+      120px 140px 160px 180px] to [30px 50px 70px 90px / 130px 150px 170px 190px]
+      at (-0.3) should be [17px 37px 57px 77px / 117px 137px 157px 177px]'
+    test: border-radius-interpolation.html
+  - subtest: 'CSS Animations: property <border-radius> from [20px 40px 60px 80px /
+      120px 140px 160px 180px] to [30px 50px 70px 90px / 130px 150px 170px 190px]
+      at (0) should be [20px 40px 60px 80px / 120px 140px 160px 180px]'
+    test: border-radius-interpolation.html
+  - subtest: 'CSS Animations: property <border-radius> from [20px 40px 60px 80px /
+      120px 140px 160px 180px] to [30px 50px 70px 90px / 130px 150px 170px 190px]
+      at (0.3) should be [23px 43px 63px 83px / 123px 143px 163px 183px]'
+    test: border-radius-interpolation.html
+  - subtest: 'CSS Animations: property <border-radius> from [20px 40px 60px 80px /
+      120px 140px 160px 180px] to [30px 50px 70px 90px / 130px 150px 170px 190px]
+      at (0.6) should be [26px 46px 66px 86px / 126px 146px 166px 186px]'
+    test: border-radius-interpolation.html
+  - subtest: 'CSS Animations: property <border-radius> from [20px 40px 60px 80px /
+      120px 140px 160px 180px] to [30px 50px 70px 90px / 130px 150px 170px 190px]
+      at (1) should be [30px 50px 70px 90px / 130px 150px 170px 190px]'
+    test: border-radius-interpolation.html
+  - subtest: 'CSS Animations: property <border-radius> from [20px 40px 60px 80px /
+      120px 140px 160px 180px] to [30px 50px 70px 90px / 130px 150px 170px 190px]
+      at (1.5) should be [35px 55px 75px 95px / 135px 155px 175px 195px]'
+    test: border-radius-interpolation.html
+  - subtest: 'Web Animations: property <border-radius> from [20px 40px 60px 80px /
+      120px 140px 160px 180px] to [30px 50px 70px 90px / 130px 150px 170px 190px]
+      at (-0.3) should be [17px 37px 57px 77px / 117px 137px 157px 177px]'
+    test: border-radius-interpolation.html
+  - subtest: 'Web Animations: property <border-radius> from [20px 40px 60px 80px /
+      120px 140px 160px 180px] to [30px 50px 70px 90px / 130px 150px 170px 190px]
+      at (0) should be [20px 40px 60px 80px / 120px 140px 160px 180px]'
+    test: border-radius-interpolation.html
+  - subtest: 'Web Animations: property <border-radius> from [20px 40px 60px 80px /
+      120px 140px 160px 180px] to [30px 50px 70px 90px / 130px 150px 170px 190px]
+      at (0.3) should be [23px 43px 63px 83px / 123px 143px 163px 183px]'
+    test: border-radius-interpolation.html
+  - subtest: 'Web Animations: property <border-radius> from [20px 40px 60px 80px /
+      120px 140px 160px 180px] to [30px 50px 70px 90px / 130px 150px 170px 190px]
+      at (0.6) should be [26px 46px 66px 86px / 126px 146px 166px 186px]'
+    test: border-radius-interpolation.html
+  - subtest: 'Web Animations: property <border-radius> from [20px 40px 60px 80px /
+      120px 140px 160px 180px] to [30px 50px 70px 90px / 130px 150px 170px 190px]
+      at (1) should be [30px 50px 70px 90px / 130px 150px 170px 190px]'
+    test: border-radius-interpolation.html
+  - subtest: 'Web Animations: property <border-radius> from [20px 40px 60px 80px /
+      120px 140px 160px 180px] to [30px 50px 70px 90px / 130px 150px 170px 190px]
+      at (1.5) should be [35px 55px 75px 95px / 135px 155px 175px 195px]'
+    test: border-radius-interpolation.html
+  - subtest: 'CSS Transitions: property <border-width> from [20px 40px 60px 80px]
+      to [30px 50px 70px 90px] at (-0.3) should be [17px 37px 57px 77px]'
+    test: border-width-interpolation.html
+  - subtest: 'CSS Transitions: property <border-width> from [20px 40px 60px 80px]
+      to [30px 50px 70px 90px] at (0) should be [20px 40px 60px 80px]'
+    test: border-width-interpolation.html
+  - subtest: 'CSS Transitions: property <border-width> from [20px 40px 60px 80px]
+      to [30px 50px 70px 90px] at (0.3) should be [23px 43px 63px 83px]'
+    test: border-width-interpolation.html
+  - subtest: 'CSS Transitions: property <border-width> from [20px 40px 60px 80px]
+      to [30px 50px 70px 90px] at (0.6) should be [26px 46px 66px 86px]'
+    test: border-width-interpolation.html
+  - subtest: 'CSS Transitions: property <border-width> from [20px 40px 60px 80px]
+      to [30px 50px 70px 90px] at (1) should be [30px 50px 70px 90px]'
+    test: border-width-interpolation.html
+  - subtest: 'CSS Transitions: property <border-width> from [20px 40px 60px 80px]
+      to [30px 50px 70px 90px] at (1.5) should be [35px 55px 75px 95px]'
+    test: border-width-interpolation.html
+  - subtest: 'CSS Transitions with transition: all: property <border-width> from [20px
+      40px 60px 80px] to [30px 50px 70px 90px] at (-0.3) should be [17px 37px 57px
+      77px]'
+    test: border-width-interpolation.html
+  - subtest: 'CSS Transitions with transition: all: property <border-width> from [20px
+      40px 60px 80px] to [30px 50px 70px 90px] at (0) should be [20px 40px 60px 80px]'
+    test: border-width-interpolation.html
+  - subtest: 'CSS Transitions with transition: all: property <border-width> from [20px
+      40px 60px 80px] to [30px 50px 70px 90px] at (0.3) should be [23px 43px 63px
+      83px]'
+    test: border-width-interpolation.html
+  - subtest: 'CSS Transitions with transition: all: property <border-width> from [20px
+      40px 60px 80px] to [30px 50px 70px 90px] at (0.6) should be [26px 46px 66px
+      86px]'
+    test: border-width-interpolation.html
+  - subtest: 'CSS Transitions with transition: all: property <border-width> from [20px
+      40px 60px 80px] to [30px 50px 70px 90px] at (1) should be [30px 50px 70px 90px]'
+    test: border-width-interpolation.html
+  - subtest: 'CSS Transitions with transition: all: property <border-width> from [20px
+      40px 60px 80px] to [30px 50px 70px 90px] at (1.5) should be [35px 55px 75px
+      95px]'
+    test: border-width-interpolation.html
+  - subtest: 'CSS Animations: property <border-width> from [20px 40px 60px 80px] to
+      [30px 50px 70px 90px] at (-0.3) should be [17px 37px 57px 77px]'
+    test: border-width-interpolation.html
+  - subtest: 'CSS Animations: property <border-width> from [20px 40px 60px 80px] to
+      [30px 50px 70px 90px] at (0) should be [20px 40px 60px 80px]'
+    test: border-width-interpolation.html
+  - subtest: 'CSS Animations: property <border-width> from [20px 40px 60px 80px] to
+      [30px 50px 70px 90px] at (0.3) should be [23px 43px 63px 83px]'
+    test: border-width-interpolation.html
+  - subtest: 'CSS Animations: property <border-width> from [20px 40px 60px 80px] to
+      [30px 50px 70px 90px] at (0.6) should be [26px 46px 66px 86px]'
+    test: border-width-interpolation.html
+  - subtest: 'CSS Animations: property <border-width> from [20px 40px 60px 80px] to
+      [30px 50px 70px 90px] at (1) should be [30px 50px 70px 90px]'
+    test: border-width-interpolation.html
+  - subtest: 'CSS Animations: property <border-width> from [20px 40px 60px 80px] to
+      [30px 50px 70px 90px] at (1.5) should be [35px 55px 75px 95px]'
+    test: border-width-interpolation.html
+  - subtest: 'Web Animations: property <border-width> from [20px 40px 60px 80px] to
+      [30px 50px 70px 90px] at (-0.3) should be [17px 37px 57px 77px]'
+    test: border-width-interpolation.html
+  - subtest: 'Web Animations: property <border-width> from [20px 40px 60px 80px] to
+      [30px 50px 70px 90px] at (0) should be [20px 40px 60px 80px]'
+    test: border-width-interpolation.html
+  - subtest: 'Web Animations: property <border-width> from [20px 40px 60px 80px] to
+      [30px 50px 70px 90px] at (0.3) should be [23px 43px 63px 83px]'
+    test: border-width-interpolation.html
+  - subtest: 'Web Animations: property <border-width> from [20px 40px 60px 80px] to
+      [30px 50px 70px 90px] at (0.6) should be [26px 46px 66px 86px]'
+    test: border-width-interpolation.html
+  - subtest: 'Web Animations: property <border-width> from [20px 40px 60px 80px] to
+      [30px 50px 70px 90px] at (1) should be [30px 50px 70px 90px]'
+    test: border-width-interpolation.html
+  - subtest: 'Web Animations: property <border-width> from [20px 40px 60px 80px] to
+      [30px 50px 70px 90px] at (1.5) should be [35px 55px 75px 95px]'
+    test: border-width-interpolation.html
+  - subtest: 'CSS Animations: property <border-left-width> from [initial] to [20px]
+      at (0) should be [3px]'
+    test: border-width-interpolation.html
+  - subtest: 'CSS Animations: property <border-left-width> from [initial] to [20px]
+      at (0.3) should be [8.1px]'
+    test: border-width-interpolation.html
+  - subtest: 'CSS Animations: property <border-left-width> from [initial] to [20px]
+      at (0.6) should be [13.2px]'
+    test: border-width-interpolation.html
+  - subtest: 'CSS Animations: property <border-left-width> from [initial] to [20px]
+      at (1.5) should be [28.5px]'
+    test: border-width-interpolation.html
+  - subtest: 'Web Animations: property <border-left-width> from [initial] to [20px]
+      at (0) should be [3px]'
+    test: border-width-interpolation.html
+  - subtest: 'Web Animations: property <border-left-width> from [initial] to [20px]
+      at (0.3) should be [8.1px]'
+    test: border-width-interpolation.html
+  - subtest: 'Web Animations: property <border-left-width> from [initial] to [20px]
+      at (0.6) should be [13.2px]'
+    test: border-width-interpolation.html
+  - subtest: 'Web Animations: property <border-left-width> from [initial] to [20px]
+      at (1.5) should be [28.5px]'
+    test: border-width-interpolation.html
+  - subtest: 'CSS Animations: property <border-left-width> from [unset] to [20px]
+      at (0) should be [3px]'
+    test: border-width-interpolation.html
+  - subtest: 'CSS Animations: property <border-left-width> from [unset] to [20px]
+      at (0.3) should be [8.1px]'
+    test: border-width-interpolation.html
+  - subtest: 'CSS Animations: property <border-left-width> from [unset] to [20px]
+      at (0.6) should be [13.2px]'
+    test: border-width-interpolation.html
+  - subtest: 'CSS Animations: property <border-left-width> from [unset] to [20px]
+      at (1.5) should be [28.5px]'
+    test: border-width-interpolation.html
+  - subtest: 'Web Animations: property <border-left-width> from [unset] to [20px]
+      at (0) should be [3px]'
+    test: border-width-interpolation.html
+  - subtest: 'Web Animations: property <border-left-width> from [unset] to [20px]
+      at (0.3) should be [8.1px]'
+    test: border-width-interpolation.html
+  - subtest: 'Web Animations: property <border-left-width> from [unset] to [20px]
+      at (0.6) should be [13.2px]'
+    test: border-width-interpolation.html
+  - subtest: 'Web Animations: property <border-left-width> from [unset] to [20px]
+      at (1.5) should be [28.5px]'
+    test: border-width-interpolation.html
+  - subtest: 'Compositing: property <box-shadow> underlying [rgb(10, 20, 30) 1px 2px
+      3px 4px, rgb(20, 40, 60) 2px 4px 6px 8px] from add [rgb(100, 100, 100) 10px
+      20px 30px 40px] to replace [rgb(200, 200, 200) 20px 40px 60px 80px] at (1) should
+      be [rgb(200, 200, 200) 20px 40px 60px 80px]'
+    test: box-shadow-composition.html
+  - subtest: 'Compositing: property <box-shadow> underlying [rgb(10, 20, 30) 1px 2px
+      3px 4px, rgb(20, 40, 60) 2px 4px 6px 8px] from replace [rgb(100, 100, 100) 10px
+      20px 30px 40px] to add [rgb(200, 200, 200) 20px 40px 60px 80px] at (0) should
+      be [rgb(100, 100, 100) 10px 20px 30px 40px]'
+    test: box-shadow-composition.html
+  - subtest: 'Compositing: property <box-shadow> underlying [rgb(10, 20, 30) 1px 2px
+      3px 4px, rgb(20, 40, 60) 2px 4px 6px 8px, rgb(40, 80, 120) 4px 8px 12px 16px]
+      from add [rgb(100, 100, 100) 10px 20px 30px 40px, rgb(200, 200, 200) 20px 40px
+      60px 80px] to replace [rgb(200, 200, 200) 20px 40px 60px 80px] at (1) should
+      be [rgb(200, 200, 200) 20px 40px 60px 80px]'
+    test: box-shadow-composition.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1674750
+- product: chrome
+  results:
+  - test: box-shadow-interpolation.html
+  - test: border-image-source-interpolation.html
+  url: https://bugs.chromium.org/p/chromium/issues/detail?id=900581
+- product: firefox
+  results:
+  - subtest: 'CSS Animations: property <border-left-width> from [initial] to [23px]
+      at (0) should be [3px]'
+    test: border-width-interpolation.html
+  - subtest: 'CSS Animations: property <border-left-width> from [initial] to [23px]
+      at (0.3) should be [9px]'
+    test: border-width-interpolation.html
+  - subtest: 'CSS Animations: property <border-left-width> from [initial] to [23px]
+      at (0.6) should be [15px]'
+    test: border-width-interpolation.html
+  - subtest: 'CSS Animations: property <border-left-width> from [initial] to [23px]
+      at (1.5) should be [33px]'
+    test: border-width-interpolation.html
+  - subtest: 'Web Animations: property <border-left-width> from [initial] to [23px]
+      at (0) should be [3px]'
+    test: border-width-interpolation.html
+  - subtest: 'Web Animations: property <border-left-width> from [initial] to [23px]
+      at (0.3) should be [9px]'
+    test: border-width-interpolation.html
+  - subtest: 'Web Animations: property <border-left-width> from [initial] to [23px]
+      at (0.6) should be [15px]'
+    test: border-width-interpolation.html
+  - subtest: 'Web Animations: property <border-left-width> from [initial] to [23px]
+      at (1.5) should be [33px]'
+    test: border-width-interpolation.html
+  - subtest: 'CSS Animations: property <border-left-width> from [unset] to [23px]
+      at (0) should be [3px]'
+    test: border-width-interpolation.html
+  - subtest: 'CSS Animations: property <border-left-width> from [unset] to [23px]
+      at (0.3) should be [9px]'
+    test: border-width-interpolation.html
+  - subtest: 'CSS Animations: property <border-left-width> from [unset] to [23px]
+      at (0.6) should be [15px]'
+    test: border-width-interpolation.html
+  - subtest: 'CSS Animations: property <border-left-width> from [unset] to [23px]
+      at (1.5) should be [33px]'
+    test: border-width-interpolation.html
+  - subtest: 'Web Animations: property <border-left-width> from [unset] to [23px]
+      at (0) should be [3px]'
+    test: border-width-interpolation.html
+  - subtest: 'Web Animations: property <border-left-width> from [unset] to [23px]
+      at (0.3) should be [9px]'
+    test: border-width-interpolation.html
+  - subtest: 'Web Animations: property <border-left-width> from [unset] to [23px]
+      at (0.6) should be [15px]'
+    test: border-width-interpolation.html
+  - subtest: 'Web Animations: property <border-left-width> from [unset] to [23px]
+      at (1.5) should be [33px]'
+    test: border-width-interpolation.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1697383
