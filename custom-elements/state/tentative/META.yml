@@ -1,20 +1,29 @@
 links:
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1655831
-      results:
-        - test: state-pseudo-class.html
-          subtest: :state() and :host()
-        - test: state-pseudo-class.html
-          subtest: :state() and ::part()
-        - test: state-pseudo-class.html
-          subtest: :state() in simple cases
-        - test: state-pseudo-class.html
-          subtest: :state() and other pseudo classes
-        - test: state-pseudo-class.html
-          subtest: :state() serialization
-        - test: ElementInternals-states.html
-          subtest: 'DOMTokenList behavior of ElementInternals.states: Initial state'
-        - test: ElementInternals-states.html
-          subtest: 'DOMTokenList behavior of ElementInternals.states: Exceptions'
-        - test: ElementInternals-states.html
-          subtest: 'DOMTokenList behavior of ElementInternals.states: Modifications'
+- product: firefox
+  results:
+  - subtest: :state() and :host()
+    test: state-pseudo-class.html
+  - subtest: :state() and ::part()
+    test: state-pseudo-class.html
+  - subtest: :state() in simple cases
+    test: state-pseudo-class.html
+  - subtest: :state() and other pseudo classes
+    test: state-pseudo-class.html
+  - subtest: :state() serialization
+    test: state-pseudo-class.html
+  - subtest: 'DOMTokenList behavior of ElementInternals.states: Initial state'
+    test: ElementInternals-states.html
+  - subtest: 'DOMTokenList behavior of ElementInternals.states: Exceptions'
+    test: ElementInternals-states.html
+  - subtest: 'DOMTokenList behavior of ElementInternals.states: Modifications'
+    test: ElementInternals-states.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1655831
+- product: firefox
+  results:
+  - subtest: 'CustomStateSet behavior of ElementInternals.states: Initial state'
+    test: ElementInternals-states.html
+  - subtest: 'CustomStateSet behavior of ElementInternals.states: Exceptions'
+    test: ElementInternals-states.html
+  - subtest: 'CustomStateSet behavior of ElementInternals.states: Modifications'
+    test: ElementInternals-states.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1697820
