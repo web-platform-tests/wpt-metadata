@@ -28,3 +28,18 @@ links:
           subtest: e.style['background-position-x'] = "0.5em, x-start, x-end" should set the property value
         - test: background-position-x-valid.html
           subtest: e.style['background-position-x'] = "calc(10px - 0.5em), left -20%, right 10px" should set the property value
+    - product: chrome
+      url: https://bugs.chromium.org/p/chromium/issues/detail?id=1047174
+      results:
+        - test: background-position-x-computed.html
+          subtest: Property background-position-x value 'x-start'
+        - test: background-position-x-computed.html
+          subtest: Property background-position-x value 'x-end'
+        - test: background-position-x-computed.html
+          subtest: Property background-position-x value 'left -20%'
+        - test: background-position-x-computed.html
+          subtest: Property background-position-x value 'right -10px'
+        - test: background-position-x-computed.html
+          subtest: Property background-position-x value 'calc(10px - 0.5em), left -20%, right 10px'
+        - test: background-position-x-computed.html
+          subtest: Property background-position-x value '0.5em, x-start, x-end'
