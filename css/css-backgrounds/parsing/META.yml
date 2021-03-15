@@ -7,29 +7,10 @@ links:
       url: https://bugs.chromium.org/p/chromium/issues/detail?id=639228
       results:
         - test: background-position-x-valid.html
-          subtest: e.style['background-position-x'] = "center" should set the property value
-        - test: background-position-x-valid.html
-          subtest: e.style['background-position-x'] = "left" should set the property value
-        - test: background-position-x-valid.html
-          subtest: e.style['background-position-x'] = "right" should set the property value
-        - test: background-position-x-valid.html
-          subtest: e.style['background-position-x'] = "x-start" should set the property value
-        - test: background-position-x-valid.html
-          subtest: e.style['background-position-x'] = "x-end" should set the property value
-        - test: background-position-x-valid.html
-          subtest: e.style['background-position-x'] = "calc(10px - 0.5em)" should set the property value
-        - test: background-position-x-valid.html
-          subtest: e.style['background-position-x'] = "left -20%" should set the property value
-        - test: background-position-x-valid.html
-          subtest: e.style['background-position-x'] = "right 10px" should set the property value
-        - test: background-position-x-valid.html
-          subtest: e.style['background-position-x'] = "center, left, right" should set the property value
-        - test: background-position-x-valid.html
-          subtest: e.style['background-position-x'] = "0.5em, x-start, x-end" should set the property value
-        - test: background-position-x-valid.html
-          subtest: e.style['background-position-x'] = "calc(10px - 0.5em), left -20%, right 10px" should set the property value
+        - test: background-position-y-valid.html
     - product: chrome
       url: https://bugs.chromium.org/p/chromium/issues/detail?id=1047174
       results:
+        - test: background-position-computed.html
         - test: background-position-x-computed.html
         - test: background-position-y-computed.html
