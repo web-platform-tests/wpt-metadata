@@ -14,3 +14,28 @@ links:
         - test: background-position-computed.html
         - test: background-position-x-computed.html
         - test: background-position-y-computed.html
+    - product: chrome
+      url: https://bugs.chromium.org/p/chromium/issues/detail?id=1188410
+      results:
+        - test: border-shorthand.html
+          subtest: e.style['border'] = "5px dotted blue" should set border-image-outset
+        - test: border-shorthand.html
+          subtest: e.style['border'] = "5px dotted blue" should set border-image-repeat
+        - test: border-shorthand.html
+          subtest: e.style['border'] = "5px dotted blue" should set border-image-slice
+        - test: border-shorthand.html
+          subtest: e.style['border'] = "5px dotted blue" should set border-image-source
+        - test: border-shorthand.html
+          subtest: e.style['border'] = "5px dotted blue" should set border-image-width
+        - test: border-shorthand.html
+          subtest: e.style['border-top'] = "thin" should set border-top-color
+        - test: border-shorthand.html
+          subtest: e.style['border-top'] = "thin" should set border-top-style
+        - test: border-shorthand.html
+          subtest: e.style['border-right'] = "double" should set border-right-color
+        - test: border-shorthand.html
+          subtest: e.style['border-right'] = "double" should set border-right-width
+        - test: border-shorthand.html
+          subtest: e.style['border-bottom'] = "green" should set border-bottom-style
+        - test: border-shorthand.html
+          subtest: e.style['border-bottom'] = "green" should set border-bottom-width
