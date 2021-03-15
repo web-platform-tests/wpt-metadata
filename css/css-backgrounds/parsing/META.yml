@@ -39,3 +39,12 @@ links:
           subtest: e.style['border-bottom'] = "green" should set border-bottom-style
         - test: border-shorthand.html
           subtest: e.style['border-bottom'] = "green" should set border-bottom-width
+    - product: chrome
+      url: https://bugs.chromium.org/p/chromium/issues/detail?id=1188413
+      results:
+        - test: background-image-valid.html
+          subtest: e.style['background-image'] = "cross-fade(50% url(http://www.example.com), 50% url(http://www.example.com))" should set the property value
+        - test: background-image-valid.html
+          subtest: e.style['background-image'] = "cross-fade(33% red, 33% white, blue)" should set the property value
+        - test: background-image-valid.html
+          subtest: e.style['background-image'] = "cross-fade(blue, linear-gradient(90deg, rgb(2, 0, 36) 0%, rgb(0, 212, 255) 100%))" should set the property value
