@@ -1,73 +1,84 @@
 links:
-    - product: chrome
-      url: https://crbug.com/377847
-      results:
-        - test: subpixel-table-cell-height-001.html
-          status: FAIL
-        - test: subpixel-table-cell-width-001.html
-          status: FAIL
-        - test: subpixel-table-cell-width-002.html
-          status: FAIL
-        - test: subpixel-table-width-001.html
-          status: FAIL
-        - test: subpixel-collapsed-borders-003.html
-    - product: chrome
-      url: https://crbug.com/764031
-      results:
-        - test: toggle-row-display-property-001.html
-          status: FAIL
-    - product: chrome
-      url: https://crbug.com/771492
-      results:
-        - test: table-model-fixup-2.html
-          status: FAIL
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1660014
-      results:
-        - test: table-model-fixup-2.html
-          subtest: Replaced elements outside a table cannot be table-row-group and are considered block -- img elements
-        - test: table-model-fixup-2.html
-          subtest: Replaced elements outside a table cannot be table-row-group and are considered block -- input=file elements
-        - test: table-model-fixup-2.html
-          subtest: Replaced elements outside a table cannot be table-row and are considered block -- input=file elements
-        - test: table-model-fixup-2.html
-          subtest: Replaced elements outside a table cannot be table-row and are considered block -- img elements
-    - product: chrome
-      url: https://crbug.com/598134
-      results:
-        - test: table-has-box-sizing-border-box-002.html
-    - product: chrome
-      url: https://crbug.com/694374
-      results:
-        - test: anonymous-table-ws-001.html
-    - product: chrome
-      url: https://crbug.com/174167
-      results:
-        - test: visibility-collapse-col-002.html
-        - test: visibility-collapse-col-003.html
-        - test: visibility-collapse-col-005.html
-        - test: visibility-collapse-rowcol-002.html
-        - test: visibility-collapse-row-004.html
-        - test: visibility-collapse-col-001.html
-        - test: visibility-collapse-colspan-002.html
-        - test: visibility-collapse-colspan-003.html
-        - test: visibility-collapse-rowcol-001.html
-        - test: visibility-collapse-col-004-dynamic.html
-        - test: visibility-collapse-colspan-001.html
-    - product: chrome
-      url: https://crbug.com/613753
-      results:
-        - test: border-spacing-included-in-sizes-001.html
-    - product: chrome
-      url: https://crbug.com/1108224
-      results:
-        - test: min-max-size-table-content-box.html
-    - product: chrome
-      url: https://crbug.com/760764
-      results:
-        - test: fixed-layout-excess-width-distribution-001.html
-    - product: chrome
-      url: https://crbug.com/958381
-      results:
-        - test: html5-table-formatting-1.html
-        - test: html5-table-formatting-2.html
+- product: chrome
+  results:
+  - status: FAIL
+    test: subpixel-table-cell-height-001.html
+  - status: FAIL
+    test: subpixel-table-cell-width-001.html
+  - status: FAIL
+    test: subpixel-table-cell-width-002.html
+  - status: FAIL
+    test: subpixel-table-width-001.html
+  - test: subpixel-collapsed-borders-003.html
+  url: https://crbug.com/377847
+- product: chrome
+  results:
+  - status: FAIL
+    test: toggle-row-display-property-001.html
+  url: https://crbug.com/764031
+- product: chrome
+  results:
+  - status: FAIL
+    test: table-model-fixup-2.html
+  url: https://crbug.com/771492
+- product: firefox
+  results:
+  - subtest: Replaced elements outside a table cannot be table-row-group and are considered
+      block -- img elements
+    test: table-model-fixup-2.html
+  - subtest: Replaced elements outside a table cannot be table-row-group and are considered
+      block -- input=file elements
+    test: table-model-fixup-2.html
+  - subtest: Replaced elements outside a table cannot be table-row and are considered
+      block -- input=file elements
+    test: table-model-fixup-2.html
+  - subtest: Replaced elements outside a table cannot be table-row and are considered
+      block -- img elements
+    test: table-model-fixup-2.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1660014
+- product: chrome
+  results:
+  - test: table-has-box-sizing-border-box-002.html
+  url: https://crbug.com/598134
+- product: chrome
+  results:
+  - test: anonymous-table-ws-001.html
+  url: https://crbug.com/694374
+- product: chrome
+  results:
+  - test: visibility-collapse-col-002.html
+  - test: visibility-collapse-col-003.html
+  - test: visibility-collapse-col-005.html
+  - test: visibility-collapse-rowcol-002.html
+  - test: visibility-collapse-row-004.html
+  - test: visibility-collapse-col-001.html
+  - test: visibility-collapse-colspan-002.html
+  - test: visibility-collapse-colspan-003.html
+  - test: visibility-collapse-rowcol-001.html
+  - test: visibility-collapse-col-004-dynamic.html
+  - test: visibility-collapse-colspan-001.html
+  url: https://crbug.com/174167
+- product: chrome
+  results:
+  - test: border-spacing-included-in-sizes-001.html
+  url: https://crbug.com/613753
+- product: chrome
+  results:
+  - test: min-max-size-table-content-box.html
+  url: https://crbug.com/1108224
+- product: chrome
+  results:
+  - test: fixed-layout-excess-width-distribution-001.html
+  url: https://crbug.com/760764
+- product: chrome
+  results:
+  - test: html5-table-formatting-1.html
+  - test: html5-table-formatting-2.html
+  url: https://crbug.com/958381
+- product: firefox
+  results:
+  - subtest: collapsed row should not contribute to overflow
+    test: visibility-collapse-row-005.html
+  - subtest: collapsed section should not contribute to overflow
+    test: visibility-collapse-row-005.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1698757
