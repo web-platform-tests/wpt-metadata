@@ -1,10 +1,29 @@
 links:
-    - product: chrome
-      url: https://crbug.com/701960
-      results:
-        - test: windowproxy-prototype-setting-goes-cross-origin-domain.sub.html
-          status: FAIL
-        - test: windowproxy-prototype-setting-cross-origin.sub.html
-          status: FAIL
-        - test: windowproxy-prototype-setting-cross-origin-domain.sub.html
-          status: FAIL
+- product: chrome
+  results:
+  - status: FAIL
+    test: windowproxy-prototype-setting-goes-cross-origin-domain.sub.html
+  - status: FAIL
+    test: windowproxy-prototype-setting-cross-origin.sub.html
+  - status: FAIL
+    test: windowproxy-prototype-setting-cross-origin-domain.sub.html
+  url: https://crbug.com/701960
+- product: firefox
+  results:
+  - subtest: '[[DefineOwnProperty]] success: "window"'
+    test: windowproxy-define-own-property-unforgeable-same-origin.html
+  - subtest: '[[DefineOwnProperty]] failure: "window"'
+    test: windowproxy-define-own-property-unforgeable-same-origin.html
+  - subtest: '[[DefineOwnProperty]] success: "document"'
+    test: windowproxy-define-own-property-unforgeable-same-origin.html
+  - subtest: '[[DefineOwnProperty]] failure: "document"'
+    test: windowproxy-define-own-property-unforgeable-same-origin.html
+  - subtest: '[[DefineOwnProperty]] success: "location"'
+    test: windowproxy-define-own-property-unforgeable-same-origin.html
+  - subtest: '[[DefineOwnProperty]] failure: "location"'
+    test: windowproxy-define-own-property-unforgeable-same-origin.html
+  - subtest: '[[DefineOwnProperty]] success: "top"'
+    test: windowproxy-define-own-property-unforgeable-same-origin.html
+  - subtest: '[[DefineOwnProperty]] failure: "top"'
+    test: windowproxy-define-own-property-unforgeable-same-origin.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1698782
