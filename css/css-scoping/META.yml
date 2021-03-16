@@ -1,6 +1,13 @@
 links:
-    - product: chrome
-      url: https://crbug.com/838526
-      results:
-        - test: keyframes-004.html
-        - test: keyframes-005.html
+- product: chrome
+  results:
+  - test: keyframes-004.html
+  - test: keyframes-005.html
+  url: https://crbug.com/838526
+- product: firefox
+  results:
+  - subtest: '":host-context(.a)" should be a valid selector'
+    test: host-context-parsing.html
+  - subtest: '":host-context(div.a)" should be a valid selector'
+    test: host-context-parsing.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1698804
