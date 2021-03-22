@@ -163,3 +163,11 @@ links:
   results:
   - test: pointerevent_iframe-touch-action-none_touch.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1694881
+- product: firefox
+  results:
+  - subtest: 'Test mousepointer capture in same-origin frame: Pointer down at outer
+      frame body and set pointer capture.'
+    test: pointerevent_pointercapture_in_frame.html?mouse
+  - test: pointerevent_pointercapture_in_frame.html?pen
+  - test: pointerevent_pointercapture_in_frame.html?touch
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1700234
