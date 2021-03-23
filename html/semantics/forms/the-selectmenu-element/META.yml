@@ -1,0 +1,21 @@
+links:
+- product: firefox
+  results:
+  - subtest: To receive option part controller code, an element labeled as an option
+      must be a descendant of the listbox part in a flat tree traversal
+    test: selectmenu-parts-structure.tentative.html
+  - subtest: To receive button part controller code, an element labeled as a button
+      must not be a descendant of the listbox part in a flat tree traversal
+    test: selectmenu-parts-structure.tentative.html
+  - subtest: Test that HTMLSelectMenu with no options has empty string for value
+    test: selectmenu-value.tentative.html
+  - subtest: Test value with HTMLOptionElement element option parts
+    test: selectmenu-value.tentative.html
+  - subtest: Test value with non-HTMLOptionElement element option parts
+    test: selectmenu-value.tentative.html
+  - subtest: Test that slotted-in selected-value part is updated to value of selectmenu
+    test: selectmenu-value.tentative.html
+  - subtest: Test that option parts in a slotted-in listbox are reflected in the value
+      property
+    test: selectmenu-value.tentative.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1700268
