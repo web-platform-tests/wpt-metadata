@@ -1,52 +1,60 @@
 links:
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1634400
-      results:
-        - test: idlharness.https.html
-          subtest: 'FontFace interface: attribute variationSettings'
-        - test: idlharness.https.html
-          subtest: FontFaceSet interface object length
-        - test: idlharness.https.html
-          subtest: 'FontFace interface: fontFace must inherit property "variationSettings" with the proper type'
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1647585
-      results:
-        - test: fontface-load-in-modal-dialog.html
-    - product: chrome
-      url: https://crbug.com/965409
-      results:
-        - test: fontface-descriptor-updates.html
-          status: FAIL
-    - product: chrome
-      url: https://crbug.com/651795
-      results:
-        - test: idlharness.https.html
-          status: FAIL
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1667519
-      results:
-        - test: fontface-override-descriptor-getter-setter.sub.html
-          status: CRASH
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1668347
-      results:
-        - test: fontfaceset-load-var.html
-    - product: safari
-      url: https://bugs.webkit.org/show_bug.cgi?id=84635
-      results:
-        - test: fontface-load-in-modal-dialog.html
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1672687
-      results:
-        - test: idlharness.https.html
-          subtest: 'FontFace interface: attribute ascentOverride'
-        - test: idlharness.https.html
-          subtest: 'FontFace interface: attribute descentOverride'
-        - test: idlharness.https.html
-          subtest: 'FontFace interface: attribute lineGapOverride'
-        - test: idlharness.https.html
-          subtest: 'FontFace interface: fontFace must inherit property "ascentOverride" with the proper type'
-        - test: idlharness.https.html
-          subtest: 'FontFace interface: fontFace must inherit property "descentOverride" with the proper type'
-        - test: idlharness.https.html
-          subtest: 'FontFace interface: fontFace must inherit property "lineGapOverride" with the proper type'
+- product: firefox
+  results:
+  - subtest: 'FontFace interface: attribute variationSettings'
+    test: idlharness.https.html
+  - subtest: FontFaceSet interface object length
+    test: idlharness.https.html
+  - subtest: 'FontFace interface: fontFace must inherit property "variationSettings"
+      with the proper type'
+    test: idlharness.https.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1634400
+- product: firefox
+  results:
+  - test: fontface-load-in-modal-dialog.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1647585
+- product: chrome
+  results:
+  - status: FAIL
+    test: fontface-descriptor-updates.html
+  url: https://crbug.com/965409
+- product: chrome
+  results:
+  - status: FAIL
+    test: idlharness.https.html
+  url: https://crbug.com/651795
+- product: firefox
+  results:
+  - status: CRASH
+    test: fontface-override-descriptor-getter-setter.sub.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1667519
+- product: firefox
+  results:
+  - test: fontfaceset-load-var.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1668347
+- product: safari
+  results:
+  - test: fontface-load-in-modal-dialog.html
+  url: https://bugs.webkit.org/show_bug.cgi?id=84635
+- product: firefox
+  results:
+  - subtest: 'FontFace interface: attribute ascentOverride'
+    test: idlharness.https.html
+  - subtest: 'FontFace interface: attribute descentOverride'
+    test: idlharness.https.html
+  - subtest: 'FontFace interface: attribute lineGapOverride'
+    test: idlharness.https.html
+  - subtest: 'FontFace interface: fontFace must inherit property "ascentOverride"
+      with the proper type'
+    test: idlharness.https.html
+  - subtest: 'FontFace interface: fontFace must inherit property "descentOverride"
+      with the proper type'
+    test: idlharness.https.html
+  - subtest: 'FontFace interface: fontFace must inherit property "lineGapOverride"
+      with the proper type'
+    test: idlharness.https.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1672687
+- product: firefox
+  results:
+  - test: fontface-override-descriptors.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1700258
