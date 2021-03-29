@@ -18,3 +18,12 @@ links:
   results:
   - test: popup-open-overflow-display.tentative.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1693657
+- product: firefox
+  results:
+  - subtest: anchor references do not cross shadow boundaries
+    test: popup-shadow-dom.tentative.html
+  - subtest: anchor references use the DOM tree not the flat tree
+    test: popup-shadow-dom.tentative.html
+  - subtest: The popup stack is preserved across shadow-inclusive ancestors
+    test: popup-shadow-dom.tentative.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1701823
