@@ -1,16 +1,189 @@
 links:
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1655748
-      results:
-        - test: 2d.path.isPointInStroke.basic.html
-          subtest: detects whether point is in the area contained by the stroke of the path
-        - test: 2d.path.isPointInStroke.basic.worker.html
-          subtest: detects whether point is in the area contained by the stroke of the path
-    - product: chrome
-      url: https://crbug.com/644067
-      results:
-        - test: 2d.path.stroke.prune.arc.html
-        - test: 2d.path.stroke.prune.closed.html
-        - test: 2d.path.stroke.prune.curve.html
-        - test: 2d.path.stroke.prune.line.html
-        - test: 2d.path.stroke.prune.rect.html
+- product: firefox
+  results:
+  - subtest: detects whether point is in the area contained by the stroke of the path
+    test: 2d.path.isPointInStroke.basic.html
+  - subtest: detects whether point is in the area contained by the stroke of the path
+    test: 2d.path.isPointInStroke.basic.worker.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1655748
+- product: chrome
+  results:
+  - test: 2d.path.stroke.prune.arc.html
+  - test: 2d.path.stroke.prune.closed.html
+  - test: 2d.path.stroke.prune.curve.html
+  - test: 2d.path.stroke.prune.line.html
+  - test: 2d.path.stroke.prune.rect.html
+  url: https://crbug.com/644067
+- product: firefox
+  results:
+  - subtest: Verify that when two radii are given to roundRect(), the first radius,
+      specified as a DOMPoint, applies to the top-left and bottom-left corners.
+    test: 2d.path.roundrect.1.radius.dompoint.html
+  - subtest: Verify that when two radii are given to roundRect(), the first radius,
+      specified as a DOMPoint, applies to the top-left and bottom-left corners.
+    test: 2d.path.roundrect.1.radius.dompoint.worker.html
+  - subtest: Verify that when one radius is given to roundRect(), specified as a double,
+      it applies to all corners.
+    test: 2d.path.roundrect.1.radius.double.html
+  - subtest: Verify that when one radius is given to roundRect(), specified as a double,
+      it applies to all corners.
+    test: 2d.path.roundrect.1.radius.double.worker.html
+  - subtest: Verify that when two radii are given to roundRect(), the first radius,
+      specified as a DOMPoint, applies to the top-left and bottom-right corners.
+    test: 2d.path.roundrect.2.radii.1.dompoint.html
+  - subtest: Verify that when two radii are given to roundRect(), the first radius,
+      specified as a DOMPoint, applies to the top-left and bottom-right corners.
+    test: 2d.path.roundrect.2.radii.1.dompoint.worker.html
+  - subtest: Verify that when two radii are given to roundRect(), the first radius,
+      specified as a double, applies to the top-left and bottom-right corners.
+    test: 2d.path.roundrect.2.radii.1.double.html
+  - subtest: Verify that when two radii are given to roundRect(), the first radius,
+      specified as a double, applies to the top-left and bottom-right corners.
+    test: 2d.path.roundrect.2.radii.1.double.worker.html
+  - subtest: Verify that when two radii are given to roundRect(), the second radius,
+      specified as a DOMPoint, applies to the top-right and bottom-left corners.
+    test: 2d.path.roundrect.2.radii.2.dompoint.html
+  - subtest: Verify that when two radii are given to roundRect(), the second radius,
+      specified as a DOMPoint, applies to the top-right and bottom-left corners.
+    test: 2d.path.roundrect.2.radii.2.dompoint.worker.html
+  - subtest: Verify that when two radii are given to roundRect(), the second radius,
+      specified as a double, applies to the top-right and bottom-left corners.
+    test: 2d.path.roundrect.2.radii.2.double.html
+  - subtest: Verify that when two radii are given to roundRect(), the second radius,
+      specified as a double, applies to the top-right and bottom-left corners.
+    test: 2d.path.roundrect.2.radii.2.double.worker.html
+  - subtest: Verify that when three radii are given to roundRect(), the first radius,
+      specified as a DOMPoint, applies to the top-left corner.
+    test: 2d.path.roundrect.3.radii.1.dompoint.html
+  - subtest: Verify that when three radii are given to roundRect(), the first radius,
+      specified as a DOMPoint, applies to the top-left corner.
+    test: 2d.path.roundrect.3.radii.1.dompoint.worker.html
+  - subtest: Verify that when three radii are given to roundRect(), the first radius,
+      specified as a double, applies to the top-left corner.
+    test: 2d.path.roundrect.3.radii.1.double.html
+  - subtest: Verify that when three radii are given to roundRect(), the first radius,
+      specified as a double, applies to the top-left corner.
+    test: 2d.path.roundrect.3.radii.1.double.worker.html
+  - subtest: Verify that when three radii are given to roundRect(), the second radius,
+      specified as a DOMPoint, applies to the top-right and bottom-left corners.
+    test: 2d.path.roundrect.3.radii.2.dompoint.html
+  - subtest: Verify that when three radii are given to roundRect(), the second radius,
+      specified as a DOMPoint, applies to the top-right and bottom-left corners.
+    test: 2d.path.roundrect.3.radii.2.dompoint.worker.html
+  - subtest: Verify that when three radii are given to roundRect(), the second radius,
+      specified as a double, applies to the top-right and bottom-left corners.
+    test: 2d.path.roundrect.3.radii.2.double.html
+  - subtest: Verify that when three radii are given to roundRect(), the second radius,
+      specified as a double, applies to the top-right and bottom-left corners.
+    test: 2d.path.roundrect.3.radii.2.double.worker.html
+  - subtest: Verify that when three radii are given to roundRect(), the third radius,
+      specified as a DOMPoint, applies to the bottom-right corner.
+    test: 2d.path.roundrect.3.radii.3.dompoint.html
+  - subtest: Verify that when three radii are given to roundRect(), the third radius,
+      specified as a DOMPoint, applies to the bottom-right corner.
+    test: 2d.path.roundrect.3.radii.3.dompoint.worker.html
+  - subtest: Verify that when three radii are given to roundRect(), the third radius,
+      specified as a double, applies to the bottom-right corner.
+    test: 2d.path.roundrect.3.radii.3.double.html
+  - subtest: Verify that when three radii are given to roundRect(), the third radius,
+      specified as a double, applies to the bottom-right corner.
+    test: 2d.path.roundrect.3.radii.3.double.worker.html
+  - subtest: Verify that when four radii are given to roundRect(), the first radius,
+      specified as a DOMPoint, applies to the top-left corner.
+    test: 2d.path.roundrect.4.radii.1.dompoint.html
+  - subtest: Verify that when four radii are given to roundRect(), the first radius,
+      specified as a DOMPoint, applies to the top-left corner.
+    test: 2d.path.roundrect.4.radii.1.dompoint.worker.html
+  - subtest: Verify that when four radii are given to roundRect(), the first radius,
+      specified as a double, applies to the top-left corner.
+    test: 2d.path.roundrect.4.radii.1.double.html
+  - subtest: Verify that when four radii are given to roundRect(), the first radius,
+      specified as a double, applies to the top-left corner.
+    test: 2d.path.roundrect.4.radii.1.double.worker.html
+  - subtest: Verify that when four radii are given to roundRect(), the second radius,
+      specified as a DOMPoint, applies to the top-right corner.
+    test: 2d.path.roundrect.4.radii.2.dompoint.html
+  - subtest: Verify that when four radii are given to roundRect(), the second radius,
+      specified as a DOMPoint, applies to the top-right corner.
+    test: 2d.path.roundrect.4.radii.2.dompoint.worker.html
+  - subtest: Verify that when four radii are given to roundRect(), the second radius,
+      specified as a double, applies to the top-right corner.
+    test: 2d.path.roundrect.4.radii.2.double.html
+  - subtest: Verify that when four radii are given to roundRect(), the second radius,
+      specified as a double, applies to the top-right corner.
+    test: 2d.path.roundrect.4.radii.2.double.worker.html
+  - subtest: Verify that when four radii are given to roundRect(), the third radius,
+      specified as a DOMPoint, applies to the bottom-right corner.
+    test: 2d.path.roundrect.4.radii.3.dompoint.html
+  - subtest: Verify that when four radii are given to roundRect(), the third radius,
+      specified as a DOMPoint, applies to the bottom-right corner.
+    test: 2d.path.roundrect.4.radii.3.dompoint.worker.html
+  - subtest: Verify that when four radii are given to roundRect(), the third radius,
+      specified as a double, applies to the bottom-right corner.
+    test: 2d.path.roundrect.4.radii.3.double.html
+  - subtest: Verify that when four radii are given to roundRect(), the third radius,
+      specified as a double, applies to the bottom-right corner.
+    test: 2d.path.roundrect.4.radii.3.double.worker.html
+  - subtest: Verify that when four radii are given to roundRect(), the fourth radius,
+      specified as a DOMPoint, applies to the bottom-left corner.
+    test: 2d.path.roundrect.4.radii.4.dompoint.html
+  - subtest: Verify that when four radii are given to roundRect(), the fourth radius,
+      specified as a DOMPoint, applies to the bottom-left corner.
+    test: 2d.path.roundrect.4.radii.4.dompoint.worker.html
+  - subtest: Verify that when four radii are given to roundRect(), the fourth radius,
+      specified as a double, applies to the bottom-left corner.
+    test: 2d.path.roundrect.4.radii.4.double.html
+  - subtest: Verify that when four radii are given to roundRect(), the fourth radius,
+      specified as a double, applies to the bottom-left corner.
+    test: 2d.path.roundrect.4.radii.4.double.worker.html
+  - subtest: 'OffscreenCanvas test: 2d.path.roundrect.closed'
+    test: 2d.path.roundrect.closed.html
+  - subtest: 2d
+    test: 2d.path.roundrect.closed.worker.html
+  - subtest: 'OffscreenCanvas test: 2d.path.roundrect.end.1'
+    test: 2d.path.roundrect.end.1.html
+  - subtest: 2d
+    test: 2d.path.roundrect.end.1.worker.html
+  - subtest: 'OffscreenCanvas test: 2d.path.roundrect.end.2'
+    test: 2d.path.roundrect.end.2.html
+  - subtest: 2d
+    test: 2d.path.roundrect.end.2.worker.html
+  - subtest: 'OffscreenCanvas test: 2d.path.roundrect.end.3'
+    test: 2d.path.roundrect.end.3.html
+  - subtest: 2d
+    test: 2d.path.roundrect.end.3.worker.html
+  - subtest: 'OffscreenCanvas test: 2d.path.roundrect.end.4'
+    test: 2d.path.roundrect.end.4.html
+  - subtest: 2d
+    test: 2d.path.roundrect.end.4.worker.html
+  - subtest: 'OffscreenCanvas test: 2d.path.roundrect.newsubpath'
+    test: 2d.path.roundrect.newsubpath.html
+  - subtest: 2d
+    test: 2d.path.roundrect.newsubpath.worker.html
+  - subtest: Check that roundRect throws an IndexSizeError if radii is an empty array.
+    test: 2d.path.roundrect.radius.none.html
+  - subtest: Check that roundRect throws an IndexSizeError if radii is an empty array.
+    test: 2d.path.roundrect.radius.none.worker.html
+  - subtest: Check that roundRect throws an IndeSizeError if radii has more than four
+      items.
+    test: 2d.path.roundrect.radius.toomany.html
+  - subtest: Check that roundRect throws an IndeSizeError if radii has more than four
+      items.
+    test: 2d.path.roundrect.radius.toomany.worker.html
+  - subtest: 'OffscreenCanvas test: 2d.path.roundrect.selfintersect'
+    test: 2d.path.roundrect.selfintersect.html
+  - subtest: 2d
+    test: 2d.path.roundrect.selfintersect.worker.html
+  - subtest: 'OffscreenCanvas test: 2d.path.roundrect.zero.3'
+    test: 2d.path.roundrect.zero.3.html
+  - subtest: 2d
+    test: 2d.path.roundrect.zero.3.worker.html
+  - subtest: 'OffscreenCanvas test: 2d.path.roundrect.zero.5'
+    test: 2d.path.roundrect.zero.5.html
+  - subtest: 2d
+    test: 2d.path.roundrect.zero.5.worker.html
+  - subtest: 'OffscreenCanvas test: 2d.path.roundrect.zero.6'
+    test: 2d.path.roundrect.zero.6.html
+  - subtest: 2d
+    test: 2d.path.roundrect.zero.6.worker.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1701968
