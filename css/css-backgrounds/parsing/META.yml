@@ -1,54 +1,78 @@
 links:
-    - product: chrome
-      url: https://crbug.com/1065636
-      results:
-        - test: background-image-computed.sub.html
-    - product: chrome
-      url: https://bugs.chromium.org/p/chromium/issues/detail?id=639228
-      results:
-        - test: background-position-x-valid.html
-        - test: background-position-y-valid.html
-    - product: chrome
-      url: https://bugs.chromium.org/p/chromium/issues/detail?id=1047174
-      results:
-        - test: background-position-computed.html
-        - test: background-position-x-computed.html
-        - test: background-position-y-computed.html
-    - product: chrome
-      url: https://bugs.chromium.org/p/chromium/issues/detail?id=1188410
-      results:
-        - test: border-shorthand.html
-          subtest: e.style['border'] = "5px dotted blue" should set border-image-outset
-        - test: border-shorthand.html
-          subtest: e.style['border'] = "5px dotted blue" should set border-image-repeat
-        - test: border-shorthand.html
-          subtest: e.style['border'] = "5px dotted blue" should set border-image-slice
-        - test: border-shorthand.html
-          subtest: e.style['border'] = "5px dotted blue" should set border-image-source
-        - test: border-shorthand.html
-          subtest: e.style['border'] = "5px dotted blue" should set border-image-width
-        - test: border-shorthand.html
-          subtest: e.style['border-top'] = "thin" should set border-top-color
-        - test: border-shorthand.html
-          subtest: e.style['border-top'] = "thin" should set border-top-style
-        - test: border-shorthand.html
-          subtest: e.style['border-right'] = "double" should set border-right-color
-        - test: border-shorthand.html
-          subtest: e.style['border-right'] = "double" should set border-right-width
-        - test: border-shorthand.html
-          subtest: e.style['border-bottom'] = "green" should set border-bottom-style
-        - test: border-shorthand.html
-          subtest: e.style['border-bottom'] = "green" should set border-bottom-width
-    - product: chrome
-      url: https://bugs.chromium.org/p/chromium/issues/detail?id=1188413
-      results:
-        - test: background-image-valid.html
-    - product: chrome
-      url: https://bugs.chromium.org/p/chromium/issues/detail?id=614906
-      results:
-        - test: background-image-valid.html
-          subtest: e.style['background-image'] = "cross-fade(50% url(http://www.example.com), 50% url(http://www.example.com))" should set the property value
-        - test: background-image-valid.html
-          subtest: e.style['background-image'] = "cross-fade(33% red, 33% white, blue)" should set the property value
-        - test: background-image-valid.html
-          subtest: e.style['background-image'] = "cross-fade(blue, linear-gradient(90deg, rgb(2, 0, 36) 0%, rgb(0, 212, 255) 100%))" should set the property value
+- product: chrome
+  results:
+  - test: background-image-computed.sub.html
+  url: https://crbug.com/1065636
+- product: chrome
+  results:
+  - test: background-position-x-valid.html
+  - test: background-position-y-valid.html
+  url: https://bugs.chromium.org/p/chromium/issues/detail?id=639228
+- product: chrome
+  results:
+  - test: background-position-computed.html
+  - test: background-position-x-computed.html
+  - test: background-position-y-computed.html
+  url: https://bugs.chromium.org/p/chromium/issues/detail?id=1047174
+- product: chrome
+  results:
+  - subtest: e.style['border'] = "5px dotted blue" should set border-image-outset
+    test: border-shorthand.html
+  - subtest: e.style['border'] = "5px dotted blue" should set border-image-repeat
+    test: border-shorthand.html
+  - subtest: e.style['border'] = "5px dotted blue" should set border-image-slice
+    test: border-shorthand.html
+  - subtest: e.style['border'] = "5px dotted blue" should set border-image-source
+    test: border-shorthand.html
+  - subtest: e.style['border'] = "5px dotted blue" should set border-image-width
+    test: border-shorthand.html
+  - subtest: e.style['border-top'] = "thin" should set border-top-color
+    test: border-shorthand.html
+  - subtest: e.style['border-top'] = "thin" should set border-top-style
+    test: border-shorthand.html
+  - subtest: e.style['border-right'] = "double" should set border-right-color
+    test: border-shorthand.html
+  - subtest: e.style['border-right'] = "double" should set border-right-width
+    test: border-shorthand.html
+  - subtest: e.style['border-bottom'] = "green" should set border-bottom-style
+    test: border-shorthand.html
+  - subtest: e.style['border-bottom'] = "green" should set border-bottom-width
+    test: border-shorthand.html
+  url: https://bugs.chromium.org/p/chromium/issues/detail?id=1188410
+- product: chrome
+  results:
+  - test: background-image-valid.html
+  url: https://bugs.chromium.org/p/chromium/issues/detail?id=1188413
+- product: chrome
+  results:
+  - subtest: e.style['background-image'] = "cross-fade(50% url(http://www.example.com),
+      50% url(http://www.example.com))" should set the property value
+    test: background-image-valid.html
+  - subtest: e.style['background-image'] = "cross-fade(33% red, 33% white, blue)"
+      should set the property value
+    test: background-image-valid.html
+  - subtest: e.style['background-image'] = "cross-fade(blue, linear-gradient(90deg,
+      rgb(2, 0, 36) 0%, rgb(0, 212, 255) 100%))" should set the property value
+    test: background-image-valid.html
+  url: https://bugs.chromium.org/p/chromium/issues/detail?id=614906
+- product: firefox
+  results:
+  - subtest: Property border-radius value '1px'
+    test: border-radius-computed.html
+  - subtest: Property border-radius value '1px 2% 3px 4%'
+    test: border-radius-computed.html
+  - subtest: Property border-radius value '5em / 1px 2% 3px 4%'
+    test: border-radius-computed.html
+  - subtest: Property border-radius value '1px 2% 3px 4% / 5em'
+    test: border-radius-computed.html
+  - subtest: Property border-radius value '1px 1px 1px 2% / 1px 2% 1px 2%'
+    test: border-radius-computed.html
+  - subtest: Property border-radius value '1px 1px 1px 1px / 1px 1px 2% 1px'
+    test: border-radius-computed.html
+  - subtest: Property border-radius value '1px 1px 2% 2%'
+    test: border-radius-computed.html
+  - subtest: Property border-radius value '1px 2% 1px 1px'
+    test: border-radius-computed.html
+  - subtest: Property border-radius value '1px 2% 2% 2% / 1px 2% 3px 2%'
+    test: border-radius-computed.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1702143
