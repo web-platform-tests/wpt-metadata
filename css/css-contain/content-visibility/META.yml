@@ -1,102 +1,112 @@
 links:
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1646355
-      results:
-        - test: content-visibility-044.html
-        - test: content-visibility-044.html
-          subtest: 'Content Visibility: slot moved after container is hidden'
-        - test: content-visibility-040.html
-        - test: content-visibility-010.html
-        - test: content-visibility-072.html
-          subtest: 'five.getBoundingClientRect(): '
-        - test: content-visibility-072.html
-          subtest: 'two.getBoundingClientRect(): '
-        - test: content-visibility-072.html
-          subtest: 'three.getBoundingClientRect(): '
-        - test: content-visibility-072.html
-          subtest: 'four.getBoundingClientRect(): '
-        - test: content-visibility-029.html
-          subtest: innerText on locked element.
-        - test: content-visibility-026.html
-          subtest: 'content-visibility: hidden adds contain: size layout style;'
-        - test: content-visibility-026.html
-          subtest: 'content-visibility: auto adds contain: size layout style paint, can''t be overridden'
-        - test: content-visibility-026.html
-          subtest: content-visibility keeps all containment even when shorthands are specified
-        - test: content-visibility-026.html
-          subtest: 'content-visibility: auto adds contain: size layout style paint;'
-        - test: content-visibility-018.html
-          subtest: 'Content Visibility: hit testing (composited with a composited child)'
-        - test: content-visibility-017.html
-          subtest: 'Content Visibility: hit testing (composited child)'
-        - test: content-visibility-058.html
-        - test: content-visibility-059.html
-        - test: content-visibility-011.html
-        - test: content-visibility-034.html
-        - test: content-visibility-008.html
-        - test: content-visibility-064.html
-        - test: content-visibility-030.html
-          subtest: IntersectionObserver interactions
-        - test: content-visibility-009.html
-        - test: content-visibility-070.html
-          subtest: 'Content Visibility: off-screen selection'
-        - test: content-visibility-055.html
-        - test: content-visibility-045.html
-        - test: content-visibility-038.html
-          subtest: Measure Forced Layout
-        - test: content-visibility-067.html
-        - test: inheritance.html
-          subtest: Property content-visibility does not inherit
-        - test: inheritance.html
-          subtest: Property content-visibility has initial value visible
-        - test: content-visibility-037.html
-        - test: content-visibility-032.html
-        - test: content-visibility-001.html
-        - test: content-visibility-005.html
-        - test: content-visibility-007.html
-        - test: content-visibility-035.html
-          subtest: Testing focus and force layout on element with hidden flat-tree ancestor
-        - test: content-visibility-031.html
-        - test: content-visibility-031.html
-          subtest: ResizeObserver skipped while hidden
-        - test: content-visibility-033.sub.https.html
-        - test: content-visibility-022.html
-        - test: content-visibility-004.html
-        - test: content-visibility-071.html
-          subtest: 'Range flipped from back to front: '
-        - test: content-visibility-071.html
-          subtest: 'Range goes back and forth: '
-        - test: content-visibility-071.html
-          subtest: 'Range flipped from front to back: '
-        - test: content-visibility-071.html
-          subtest: 'Range shrunk to cover fewer elements: '
-        - test: content-visibility-071.html
-          subtest: 'Range extended to cover more elements: '
-        - test: content-visibility-071.html
-          subtest: 'One elements selected: '
-        - test: content-visibility-006.html
-        - test: content-visibility-048.html
-          subtest: Fragment navigation with content-visibility; single text
-        - test: content-visibility-048.html
-          subtest: Fragment navigation with content-visibility; range across blocks
-        - test: content-visibility-051.html
-        - test: content-visibility-003.html
-        - test: content-visibility-015.html
-          subtest: 'Content Visibility: hit testing'
-        - test: content-visibility-019.sub.https.html
-        - test: content-visibility-047.html
-          subtest: Tab order navigation skips hidden subtrees
-        - test: content-visibility-068.html
-          subtest: 'Content Visibility: off-screen focus'
-        - test: content-visibility-020.html
-        - test: content-visibility-041.html
-        - test: content-visibility-043.html
-        - test: content-visibility-056.html
-        - test: content-visibility-021.html
-        - test: content-visibility-016.html
-          subtest: 'Content Visibility: hit testing (composited)'
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1668136
-      results:
-        - test: content-visibility-075.html
-        - test: content-visibility-076.html
+- product: firefox
+  results:
+  - test: content-visibility-044.html
+  - subtest: 'Content Visibility: slot moved after container is hidden'
+    test: content-visibility-044.html
+  - test: content-visibility-040.html
+  - test: content-visibility-010.html
+  - subtest: 'five.getBoundingClientRect(): '
+    test: content-visibility-072.html
+  - subtest: 'two.getBoundingClientRect(): '
+    test: content-visibility-072.html
+  - subtest: 'three.getBoundingClientRect(): '
+    test: content-visibility-072.html
+  - subtest: 'four.getBoundingClientRect(): '
+    test: content-visibility-072.html
+  - subtest: innerText on locked element.
+    test: content-visibility-029.html
+  - subtest: 'content-visibility: hidden adds contain: size layout style;'
+    test: content-visibility-026.html
+  - subtest: 'content-visibility: auto adds contain: size layout style paint, can''t
+      be overridden'
+    test: content-visibility-026.html
+  - subtest: content-visibility keeps all containment even when shorthands are specified
+    test: content-visibility-026.html
+  - subtest: 'content-visibility: auto adds contain: size layout style paint;'
+    test: content-visibility-026.html
+  - subtest: 'Content Visibility: hit testing (composited with a composited child)'
+    test: content-visibility-018.html
+  - subtest: 'Content Visibility: hit testing (composited child)'
+    test: content-visibility-017.html
+  - test: content-visibility-058.html
+  - test: content-visibility-059.html
+  - test: content-visibility-011.html
+  - test: content-visibility-034.html
+  - test: content-visibility-008.html
+  - test: content-visibility-064.html
+  - subtest: IntersectionObserver interactions
+    test: content-visibility-030.html
+  - test: content-visibility-009.html
+  - subtest: 'Content Visibility: off-screen selection'
+    test: content-visibility-070.html
+  - test: content-visibility-055.html
+  - test: content-visibility-045.html
+  - subtest: Measure Forced Layout
+    test: content-visibility-038.html
+  - test: content-visibility-067.html
+  - subtest: Property content-visibility does not inherit
+    test: inheritance.html
+  - subtest: Property content-visibility has initial value visible
+    test: inheritance.html
+  - test: content-visibility-037.html
+  - test: content-visibility-032.html
+  - test: content-visibility-001.html
+  - test: content-visibility-005.html
+  - test: content-visibility-007.html
+  - subtest: Testing focus and force layout on element with hidden flat-tree ancestor
+    test: content-visibility-035.html
+  - test: content-visibility-031.html
+  - subtest: ResizeObserver skipped while hidden
+    test: content-visibility-031.html
+  - test: content-visibility-033.sub.https.html
+  - test: content-visibility-022.html
+  - test: content-visibility-004.html
+  - subtest: 'Range flipped from back to front: '
+    test: content-visibility-071.html
+  - subtest: 'Range goes back and forth: '
+    test: content-visibility-071.html
+  - subtest: 'Range flipped from front to back: '
+    test: content-visibility-071.html
+  - subtest: 'Range shrunk to cover fewer elements: '
+    test: content-visibility-071.html
+  - subtest: 'Range extended to cover more elements: '
+    test: content-visibility-071.html
+  - subtest: 'One elements selected: '
+    test: content-visibility-071.html
+  - test: content-visibility-006.html
+  - subtest: Fragment navigation with content-visibility; single text
+    test: content-visibility-048.html
+  - subtest: Fragment navigation with content-visibility; range across blocks
+    test: content-visibility-048.html
+  - test: content-visibility-051.html
+  - test: content-visibility-003.html
+  - subtest: 'Content Visibility: hit testing'
+    test: content-visibility-015.html
+  - test: content-visibility-019.sub.https.html
+  - subtest: Tab order navigation skips hidden subtrees
+    test: content-visibility-047.html
+  - subtest: 'Content Visibility: off-screen focus'
+    test: content-visibility-068.html
+  - test: content-visibility-020.html
+  - test: content-visibility-041.html
+  - test: content-visibility-043.html
+  - test: content-visibility-056.html
+  - test: content-visibility-021.html
+  - subtest: 'Content Visibility: hit testing (composited)'
+    test: content-visibility-016.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1646355
+- product: firefox
+  results:
+  - test: content-visibility-075.html
+  - test: content-visibility-076.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1668136
+- product: firefox
+  results:
+  - subtest: Animation events do not fire for a CSS animation running in a display
+      locked subtree
+    test: animation-display-lock.html
+  - subtest: Events and promises are handled normally for animations without an owning
+      element
+    test: animation-display-lock.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1702083
