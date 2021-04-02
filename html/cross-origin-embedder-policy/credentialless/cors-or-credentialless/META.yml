@@ -19,3 +19,12 @@ links:
   results:
   - test: link.tentative.https.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1695148
+- product: firefox
+  results:
+  - subtest: COEP:require-corp embeds same-origin COEP:credentialless
+    test: iframe-coep-require-corp.tentative.https.html
+  - subtest: COEP:require-corp embeds same-origin COEP:credentialless, CORP:cross-origin
+    test: iframe-coep-require-corp.tentative.https.html
+  - subtest: COEP:require-corp embeds cross-origin COEP:credentialless, CORP:cross-origin
+    test: iframe-coep-require-corp.tentative.https.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1702799
