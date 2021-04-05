@@ -1,6 +1,20 @@
 links:
-    - product: chrome
-      url: https://crbug.com/978151
-      results:
-        - test: Create-on-worker-shutdown.any.html
-          status: FAIL
+- product: chrome
+  results:
+  - status: FAIL
+    test: Create-on-worker-shutdown.any.html
+  url: https://crbug.com/978151
+- product: firefox
+  results:
+  - status: CRASH
+    test: basic-auth.any.worker.html?wpt_flags=h2
+  - status: CRASH
+    test: basic-auth.any.sharedworker.html?wpt_flags=h2
+  - status: CRASH
+    test: basic-auth.any.serviceworker.html?wpt_flags=h2
+  - status: CRASH
+    test: basic-auth.any.html?wpt_flags=h2
+  - status: CRASH
+    test: extended-payload-length.html?wpt_flags=h2
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1702390
+
