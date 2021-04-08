@@ -1,9 +1,14 @@
 links:
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1645222
-      results:
-        - test: pointerevent_pointermove_in_pointerlock.html
-    - product: chrome
-      url: https://crbug.com/1136687
-      results:
-        - test: pointerevent_pointerlock_supercedes_capture.html
+- product: firefox
+  results:
+  - test: pointerevent_pointermove_in_pointerlock.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1645222
+- product: chrome
+  results:
+  - test: pointerevent_pointerlock_supercedes_capture.html
+  url: https://crbug.com/1136687
+- product: firefox
+  results:
+  - subtest: pointerrawupdate event received
+    test: pointerevent_pointerrawupdate_in_pointerlock.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1703888
