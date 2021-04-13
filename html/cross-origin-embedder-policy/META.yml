@@ -115,3 +115,24 @@ links:
       with empty frame: true'
     test: reporting-navigation.https.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1703981
+- product: firefox
+  results:
+  - subtest: navigation blocked for ["require-corp"]
+    test: header-parsing.https.html
+  - subtest: navigation blocked for [" require-corp "]
+    test: header-parsing.https.html
+  - subtest: navigation blocked for ["\trequire-corp\t"]
+    test: header-parsing.https.html
+  - subtest: navigation blocked for [" \trequire-corp"]
+    test: header-parsing.https.html
+  - subtest: navigation blocked for ["require-corp\t "]
+    test: header-parsing.https.html
+  - subtest: navigation blocked for ["require-corp; foo=bar"]
+    test: header-parsing.https.html
+  - subtest: navigation blocked for ["require-corp;require-corp"]
+    test: header-parsing.https.html
+  - subtest: navigation blocked for ["require-corp; report-to=\"data:","\""]
+    test: header-parsing.https.html
+  - subtest: Two COEP headers, split inside report-to value
+    test: reporting-to-endpoint.https.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1704791
