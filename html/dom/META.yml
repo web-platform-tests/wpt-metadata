@@ -1,966 +1,1223 @@
 links:
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1510437
-      results:
-        - test: idlharness.https.html?include=(Document|Window)
-          subtest: 'Window interface: window must have own property "window"'
-        - test: idlharness.https.html?include=(Document|Window)
-          subtest: 'Window interface: window must have own property "document"'
-        - test: idlharness.https.html?include=(Document|Window)
-          subtest: 'Window interface: window must have own property "top"'
-        - test: idlharness.https.html?include=(Document|Window)
-          subtest: 'Window interface: window must have own property "location"'
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1645268
-      results:
-        - test: usvstring-reflection.https.html
-          subtest: 'source : unpaired surrogate codepoint should be replaced with U+FFFD'
-        - test: usvstring-reflection.https.html
-          subtest: 'anchor : unpaired surrogate codepoint should be replaced with U+FFFD'
-        - test: usvstring-reflection.https.html
-          subtest: 'area : unpaired surrogate codepoint should be replaced with U+FFFD'
-        - test: usvstring-reflection.https.html
-          subtest: 'storage event : unpaired surrogate codepoint should be replaced with U+FFFD'
-        - test: usvstring-reflection.https.html
-          subtest: 'UnregisterProtocolHandler URL: unpaired surrogate codepoint should not make any exceptions.'
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1647538
-      results:
-        - test: idlharness.https.html?exclude=(Document|Window|HTML.*)
-          subtest: 'AudioTrack interface: existence and properties of interface prototype object'
-        - test: idlharness.https.html?exclude=(Document|Window|HTML.*)
-          subtest: 'AudioTrack interface: attribute language'
-        - test: idlharness.https.html?exclude=(Document|Window|HTML.*)
-          subtest: 'AudioTrackList interface: existence and properties of interface prototype object'
-        - test: idlharness.https.html?exclude=(Document|Window|HTML.*)
-          subtest: 'OffscreenCanvasRenderingContext2D interface: attribute filter'
-        - test: idlharness.https.html?exclude=(Document|Window|HTML.*)
-          subtest: AudioTrack interface object length
-        - test: idlharness.https.html?exclude=(Document|Window|HTML.*)
-          subtest: 'OffscreenCanvasRenderingContext2D interface: attribute shadowOffsetX'
-        - test: idlharness.https.html?exclude=(Document|Window|HTML.*)
-          subtest: 'ApplicationCache interface: attribute onprogress'
-        - test: idlharness.https.html?exclude=(Document|Window|HTML.*)
-          subtest: 'OffscreenCanvasRenderingContext2D interface: operation getImageData(long, long, long, long)'
-        - test: idlharness.https.html?exclude=(Document|Window|HTML.*)
-          subtest: 'OffscreenCanvasRenderingContext2D interface: operation fill(optional CanvasFillRule)'
-        - test: idlharness.https.html?exclude=(Document|Window|HTML.*)
-          subtest: 'ApplicationCache interface: existence and properties of interface prototype object''s "constructor" property'
-        - test: idlharness.https.html?exclude=(Document|Window|HTML.*)
-          subtest: 'AudioTrackList interface: operation getTrackById(DOMString)'
-        - test: idlharness.https.html?exclude=(Document|Window|HTML.*)
-          subtest: 'External interface: existence and properties of interface prototype object''s "constructor" property'
-        - test: idlharness.https.html?exclude=(Document|Window|HTML.*)
-          subtest: ApplicationCache must be primary interface of window.applicationCache
-        - test: idlharness.https.html?exclude=(Document|Window|HTML.*)
-          subtest: 'ElementInternals interface: operation reportValidity()'
-        - test: idlharness.https.html?exclude=(Document|Window|HTML.*)
-          subtest: 'CanvasRenderingContext2D interface: operation scrollPathIntoView()'
-        - test: idlharness.https.html?exclude=(Document|Window|HTML.*)
-          subtest: 'OffscreenCanvasRenderingContext2D interface: attribute shadowColor'
-        - test: idlharness.https.html?exclude=(Document|Window|HTML.*)
-          subtest: 'VideoTrackList interface: existence and properties of interface object'
-        - test: idlharness.https.html?exclude=(Document|Window|HTML.*)
-          subtest: 'OffscreenCanvasRenderingContext2D interface: operation isPointInStroke(unrestricted double, unrestricted double)'
-        - test: idlharness.https.html?exclude=(Document|Window|HTML.*)
-          subtest: 'OffscreenCanvas interface: operation convertToBlob(optional ImageEncodeOptions)'
-        - test: idlharness.https.html?exclude=(Document|Window|HTML.*)
-          subtest: 'DOMStringList interface: calling item(unsigned long) on location.ancestorOrigins with too few arguments must throw TypeError'
-        - test: idlharness.https.html?exclude=(Document|Window|HTML.*)
-          subtest: 'VideoTrack interface: existence and properties of interface prototype object'
-        - test: idlharness.https.html?exclude=(Document|Window|HTML.*)
-          subtest: 'OffscreenCanvasRenderingContext2D interface: operation quadraticCurveTo(unrestricted double, unrestricted double, unrestricted double, unrestricted double)'
-        - test: idlharness.https.html?exclude=(Document|Window|HTML.*)
-          subtest: 'OffscreenCanvasRenderingContext2D interface: attribute shadowOffsetY'
-        - test: idlharness.https.html?exclude=(Document|Window|HTML.*)
-          subtest: 'OffscreenCanvasRenderingContext2D interface: operation setLineDash(sequence<unrestricted double>)'
-        - test: idlharness.https.html?exclude=(Document|Window|HTML.*)
-          subtest: 'ApplicationCache interface: constant UNCACHED on interface object'
-        - test: idlharness.https.html?exclude=(Document|Window|HTML.*)
-          subtest: 'OffscreenCanvasRenderingContext2D interface: attribute strokeStyle'
-        - test: idlharness.https.html?exclude=(Document|Window|HTML.*)
-          subtest: 'ElementInternals interface: attribute labels'
-        - test: idlharness.https.html?exclude=(Document|Window|HTML.*)
-          subtest: 'OffscreenCanvasRenderingContext2D interface: operation commit()'
-        - test: idlharness.https.html?exclude=(Document|Window|HTML.*)
-          subtest: 'OffscreenCanvasRenderingContext2D interface: attribute lineDashOffset'
-        - test: idlharness.https.html?exclude=(Document|Window|HTML.*)
-          subtest: 'OffscreenCanvas interface: operation getContext(OffscreenRenderingContextId, optional any)'
-        - test: idlharness.https.html?exclude=(Document|Window|HTML.*)
-          subtest: AudioTrack interface object name
-        - test: idlharness.https.html?exclude=(Document|Window|HTML.*)
-          subtest: 'VideoTrackList interface: existence and properties of interface prototype object''s @@unscopables property'
-        - test: idlharness.https.html?exclude=(Document|Window|HTML.*)
-          subtest: 'CanvasRenderingContext2D interface: attribute direction'
-        - test: idlharness.https.html?exclude=(Document|Window|HTML.*)
-          subtest: 'ApplicationCache interface: window.applicationCache must inherit property "abort()" with the proper type'
-        - test: idlharness.https.html?exclude=(Document|Window|HTML.*)
-          subtest: 'OffscreenCanvasRenderingContext2D interface: operation createRadialGradient(double, double, double, double, double, double)'
-        - test: idlharness.https.html?exclude=(Document|Window|HTML.*)
-          subtest: VideoTrackList interface object name
-        - test: idlharness.https.html?exclude=(Document|Window|HTML.*)
-          subtest: 'VideoTrackList interface: attribute onaddtrack'
-        - test: idlharness.https.html?exclude=(Document|Window|HTML.*)
-          subtest: 'TextMetrics interface: attribute fontBoundingBoxDescent'
-        - test: idlharness.https.html?exclude=(Document|Window|HTML.*)
-          subtest: 'External interface: existence and properties of interface prototype object'
-        - test: idlharness.https.html?exclude=(Document|Window|HTML.*)
-          subtest: 'ApplicationCache interface: attribute status'
-        - test: idlharness.https.html?exclude=(Document|Window|HTML.*)
-          subtest: 'OffscreenCanvasRenderingContext2D interface: operation arcTo(unrestricted double, unrestricted double, unrestricted double, unrestricted double, unrestricted double)'
-        - test: idlharness.https.html?exclude=(Document|Window|HTML.*)
-          subtest: 'AudioTrackList interface: attribute onaddtrack'
-        - test: idlharness.https.html?exclude=(Document|Window|HTML.*)
-          subtest: 'External interface: existence and properties of interface prototype object''s @@unscopables property'
-        - test: idlharness.https.html?exclude=(Document|Window|HTML.*)
-          subtest: 'OffscreenCanvasRenderingContext2D interface: attribute lineWidth'
-        - test: idlharness.https.html?exclude=(Document|Window|HTML.*)
-          subtest: 'BarProp interface: attribute visible'
-        - test: idlharness.https.html?exclude=(Document|Window|HTML.*)
-          subtest: 'ApplicationCache interface: existence and properties of interface prototype object''s @@unscopables property'
-        - test: idlharness.https.html?exclude=(Document|Window|HTML.*)
-          subtest: 'OffscreenCanvasRenderingContext2D interface: attribute canvas'
-        - test: idlharness.https.html?exclude=(Document|Window|HTML.*)
-          subtest: 'VideoTrack interface: attribute selected'
-        - test: idlharness.https.html?exclude=(Document|Window|HTML.*)
-          subtest: 'OffscreenCanvasRenderingContext2D interface: operation putImageData(ImageData, long, long)'
-        - test: idlharness.https.html?exclude=(Document|Window|HTML.*)
-          subtest: 'AudioTrackList interface: existence and properties of interface prototype object''s @@unscopables property'
-        - test: idlharness.https.html?exclude=(Document|Window|HTML.*)
-          subtest: 'OffscreenCanvasRenderingContext2D interface: operation save()'
-        - test: idlharness.https.html?exclude=(Document|Window|HTML.*)
-          subtest: 'OffscreenCanvasRenderingContext2D interface: operation closePath()'
-        - test: idlharness.https.html?exclude=(Document|Window|HTML.*)
-          subtest: 'AudioTrack interface: existence and properties of interface prototype object''s "constructor" property'
-        - test: idlharness.https.html?exclude=(Document|Window|HTML.*)
-          subtest: 'OffscreenCanvasRenderingContext2D interface: existence and properties of interface prototype object''s "constructor" property'
-        - test: idlharness.https.html?exclude=(Document|Window|HTML.*)
-          subtest: 'OffscreenCanvasRenderingContext2D interface: attribute imageSmoothingEnabled'
-        - test: idlharness.https.html?exclude=(Document|Window|HTML.*)
-          subtest: 'CanvasRenderingContext2D interface: document.createElement("canvas").getContext("2d") must inherit property "direction" with the proper type'
-        - test: idlharness.https.html?exclude=(Document|Window|HTML.*)
-          subtest: 'ApplicationCache interface: constant UPDATEREADY on interface prototype object'
-        - test: idlharness.https.html?exclude=(Document|Window|HTML.*)
-          subtest: 'ApplicationCache interface: constant OBSOLETE on interface prototype object'
-        - test: idlharness.https.html?exclude=(Document|Window|HTML.*)
-          subtest: 'CanvasRenderingContext2D interface: operation scrollPathIntoView(Path2D)'
-        - test: idlharness.https.html?exclude=(Document|Window|HTML.*)
-          subtest: 'OffscreenCanvasRenderingContext2D interface: operation translate(unrestricted double, unrestricted double)'
-        - test: idlharness.https.html?exclude=(Document|Window|HTML.*)
-          subtest: 'OffscreenCanvasRenderingContext2D interface: attribute fillStyle'
-        - test: idlharness.https.html?exclude=(Document|Window|HTML.*)
-          subtest: 'Navigator interface: calling unregisterProtocolHandler(DOMString, USVString) on window.navigator with too few arguments must throw TypeError'
-        - test: idlharness.https.html?exclude=(Document|Window|HTML.*)
-          subtest: 'OffscreenCanvas interface: existence and properties of interface prototype object'
-        - test: idlharness.https.html?exclude=(Document|Window|HTML.*)
-          subtest: 'OffscreenCanvasRenderingContext2D interface: operation stroke(Path2D)'
-        - test: idlharness.https.html?exclude=(Document|Window|HTML.*)
-          subtest: 'OffscreenCanvasRenderingContext2D interface: operation ellipse(unrestricted double, unrestricted double, unrestricted double, unrestricted double, unrestricted double, unrestricted double, unrestricted double, optional boolean)'
-        - test: idlharness.https.html?exclude=(Document|Window|HTML.*)
-          subtest: ApplicationCache interface object length
-        - test: idlharness.https.html?exclude=(Document|Window|HTML.*)
-          subtest: 'OffscreenCanvasRenderingContext2D interface: operation resetTransform()'
-        - test: idlharness.https.html?exclude=(Document|Window|HTML.*)
-          subtest: 'VideoTrack interface: attribute label'
-        - test: idlharness.https.html?exclude=(Document|Window|HTML.*)
-          subtest: 'OffscreenCanvas interface: existence and properties of interface prototype object''s "constructor" property'
-        - test: idlharness.https.html?exclude=(Document|Window|HTML.*)
-          subtest: 'OffscreenCanvasRenderingContext2D interface: attribute imageSmoothingQuality'
-        - test: idlharness.https.html?exclude=(Document|Window|HTML.*)
-          subtest: 'OffscreenCanvasRenderingContext2D interface: operation clip(Path2D, optional CanvasFillRule)'
-        - test: idlharness.https.html?exclude=(Document|Window|HTML.*)
-          subtest: 'ApplicationCache interface: existence and properties of interface prototype object'
-        - test: idlharness.https.html?exclude=(Document|Window|HTML.*)
-          subtest: 'CanvasRenderingContext2D interface: attribute imageSmoothingQuality'
-        - test: idlharness.https.html?exclude=(Document|Window|HTML.*)
-          subtest: 'DOMStringList interface: calling contains(DOMString) on location.ancestorOrigins with too few arguments must throw TypeError'
-        - test: idlharness.https.html?exclude=(Document|Window|HTML.*)
-          subtest: 'ApplicationCache interface: constant CHECKING on interface object'
-        - test: idlharness.https.html?exclude=(Document|Window|HTML.*)
-          subtest: 'OffscreenCanvasRenderingContext2D interface: attribute lineJoin'
-        - test: idlharness.https.html?exclude=(Document|Window|HTML.*)
-          subtest: FormDataEvent interface object length
-        - test: idlharness.https.html?exclude=(Document|Window|HTML.*)
-          subtest: 'VideoTrackList interface: existence and properties of interface prototype object'
-        - test: idlharness.https.html?exclude=(Document|Window|HTML.*)
-          subtest: Stringification of window.applicationCache
-        - test: idlharness.https.html?exclude=(Document|Window|HTML.*)
-          subtest: 'ElementInternals interface: attribute validationMessage'
-        - test: idlharness.https.html?exclude=(Document|Window|HTML.*)
-          subtest: 'VideoTrack interface: existence and properties of interface prototype object''s @@unscopables property'
-        - test: idlharness.https.html?exclude=(Document|Window|HTML.*)
-          subtest: 'OffscreenCanvas interface: attribute height'
-        - test: idlharness.https.html?exclude=(Document|Window|HTML.*)
-          subtest: Stringification of location.ancestorOrigins
-        - test: idlharness.https.html?exclude=(Document|Window|HTML.*)
-          subtest: 'External interface: operation IsSearchProviderInstalled()'
-        - test: idlharness.https.html?exclude=(Document|Window|HTML.*)
-          subtest: 'CanvasRenderingContext2D interface: document.createElement("canvas").getContext("2d") must inherit property "scrollPathIntoView(Path2D)" with the proper type'
-        - test: idlharness.https.html?exclude=(Document|Window|HTML.*)
-          subtest: 'AudioTrack interface: attribute id'
-        - test: idlharness.https.html?exclude=(Document|Window|HTML.*)
-          subtest: 'OffscreenCanvasRenderingContext2D interface: existence and properties of interface object'
-        - test: idlharness.https.html?exclude=(Document|Window|HTML.*)
-          subtest: 'ApplicationCache interface: attribute oncached'
-        - test: idlharness.https.html?exclude=(Document|Window|HTML.*)
-          subtest: 'Navigator interface: operation unregisterProtocolHandler(DOMString, USVString)'
-        - test: idlharness.https.html?exclude=(Document|Window|HTML.*)
-          subtest: 'External interface: operation AddSearchProvider()'
-        - test: idlharness.https.html?exclude=(Document|Window|HTML.*)
-          subtest: 'ApplicationCache interface: constant IDLE on interface prototype object'
-        - test: idlharness.https.html?exclude=(Document|Window|HTML.*)
-          subtest: DOMStringList must be primary interface of location.ancestorOrigins
-        - test: idlharness.https.html?exclude=(Document|Window|HTML.*)
-          subtest: 'OffscreenCanvasRenderingContext2D interface: operation createImageData(ImageData)'
-        - test: idlharness.https.html?exclude=(Document|Window|HTML.*)
-          subtest: 'TextMetrics interface: attribute hangingBaseline'
-        - test: idlharness.https.html?exclude=(Document|Window|HTML.*)
-          subtest: 'TextMetrics interface: attribute fontBoundingBoxAscent'
-        - test: idlharness.https.html?exclude=(Document|Window|HTML.*)
-          subtest: 'Location interface: window.location must have own property "ancestorOrigins"'
-        - test: idlharness.https.html?exclude=(Document|Window|HTML.*)
-          subtest: 'CanvasPattern interface: operation setTransform(optional DOMMatrix2DInit)'
-        - test: idlharness.https.html?exclude=(Document|Window|HTML.*)
-          subtest: 'DOMStringList interface: location.ancestorOrigins must inherit property "length" with the proper type'
-        - test: idlharness.https.html?exclude=(Document|Window|HTML.*)
-          subtest: 'ApplicationCache interface: constant UNCACHED on interface prototype object'
-        - test: idlharness.https.html?exclude=(Document|Window|HTML.*)
-          subtest: 'OffscreenCanvasRenderingContext2D interface: attribute textBaseline'
-        - test: idlharness.https.html?exclude=(Document|Window|HTML.*)
-          subtest: 'OffscreenCanvasRenderingContext2D interface: operation isPointInStroke(Path2D, unrestricted double, unrestricted double)'
-        - test: idlharness.https.html?exclude=(Document|Window|HTML.*)
-          subtest: 'Navigator interface: window.navigator must inherit property "unregisterProtocolHandler(DOMString, USVString)" with the proper type'
-        - test: idlharness.https.html?exclude=(Document|Window|HTML.*)
-          subtest: 'CanvasRenderingContext2D interface: document.createElement("canvas").getContext("2d") must inherit property "scrollPathIntoView()" with the proper type'
-        - test: idlharness.https.html?exclude=(Document|Window|HTML.*)
-          subtest: 'SVGElement interface: attribute autofocus'
-        - test: idlharness.https.html?exclude=(Document|Window|HTML.*)
-          subtest: External interface object length
-        - test: idlharness.https.html?exclude=(Document|Window|HTML.*)
-          subtest: 'AudioTrackList interface: attribute length'
-        - test: idlharness.https.html?exclude=(Document|Window|HTML.*)
-          subtest: 'ApplicationCache interface: operation abort()'
-        - test: idlharness.https.html?exclude=(Document|Window|HTML.*)
-          subtest: 'VideoTrack interface: attribute id'
-        - test: idlharness.https.html?exclude=(Document|Window|HTML.*)
-          subtest: 'OffscreenCanvasRenderingContext2D interface: operation clip(optional CanvasFillRule)'
-        - test: idlharness.https.html?exclude=(Document|Window|HTML.*)
-          subtest: 'ApplicationCache interface: operation swapCache()'
-        - test: idlharness.https.html?exclude=(Document|Window|HTML.*)
-          subtest: 'OffscreenCanvasRenderingContext2D interface: operation lineTo(unrestricted double, unrestricted double)'
-        - test: idlharness.https.html?exclude=(Document|Window|HTML.*)
-          subtest: 'OffscreenCanvasRenderingContext2D interface: attribute globalAlpha'
-        - test: idlharness.https.html?exclude=(Document|Window|HTML.*)
-          subtest: 'CanvasRenderingContext2D interface: operation getContextAttributes()'
-        - test: idlharness.https.html?exclude=(Document|Window|HTML.*)
-          subtest: 'OffscreenCanvasRenderingContext2D interface: operation fillText(DOMString, unrestricted double, unrestricted double, optional unrestricted double)'
-        - test: idlharness.https.html?exclude=(Document|Window|HTML.*)
-          subtest: 'OffscreenCanvasRenderingContext2D interface: attribute globalCompositeOperation'
-        - test: idlharness.https.html?exclude=(Document|Window|HTML.*)
-          subtest: 'VideoTrack interface: attribute kind'
-        - test: idlharness.https.html?exclude=(Document|Window|HTML.*)
-          subtest: 'ApplicationCache interface: attribute onnoupdate'
-        - test: idlharness.https.html?exclude=(Document|Window|HTML.*)
-          subtest: 'TextMetrics interface: attribute ideographicBaseline'
-        - test: idlharness.https.html?exclude=(Document|Window|HTML.*)
-          subtest: 'OffscreenCanvasRenderingContext2D interface: operation beginPath()'
-        - test: idlharness.https.html?exclude=(Document|Window|HTML.*)
-          subtest: 'OffscreenCanvasRenderingContext2D interface: operation fill(Path2D, optional CanvasFillRule)'
-        - test: idlharness.https.html?exclude=(Document|Window|HTML.*)
-          subtest: 'OffscreenCanvasRenderingContext2D interface: existence and properties of interface prototype object''s @@unscopables property'
-        - test: idlharness.https.html?exclude=(Document|Window|HTML.*)
-          subtest: External must be primary interface of window.external
-        - test: idlharness.https.html?exclude=(Document|Window|HTML.*)
-          subtest: 'ApplicationCache interface: constant OBSOLETE on interface object'
-        - test: idlharness.https.html?exclude=(Document|Window|HTML.*)
-          subtest: 'ApplicationCache interface: attribute onchecking'
-        - test: idlharness.https.html?exclude=(Document|Window|HTML.*)
-          subtest: 'VideoTrackList interface: attribute selectedIndex'
-        - test: idlharness.https.html?exclude=(Document|Window|HTML.*)
-          subtest: External interface object name
-        - test: idlharness.https.html?exclude=(Document|Window|HTML.*)
-          subtest: 'OffscreenCanvasRenderingContext2D interface: attribute lineCap'
-        - test: idlharness.https.html?exclude=(Document|Window|HTML.*)
-          subtest: 'OffscreenCanvas interface: attribute width'
-        - test: idlharness.https.html?exclude=(Document|Window|HTML.*)
-          subtest: 'OffscreenCanvasRenderingContext2D interface: attribute shadowBlur'
-        - test: idlharness.https.html?exclude=(Document|Window|HTML.*)
-          subtest: 'ApplicationCache interface: constant DOWNLOADING on interface object'
-        - test: idlharness.https.html?exclude=(Document|Window|HTML.*)
-          subtest: 'OffscreenCanvasRenderingContext2D interface: operation rect(unrestricted double, unrestricted double, unrestricted double, unrestricted double)'
-        - test: idlharness.https.html?exclude=(Document|Window|HTML.*)
-          subtest: 'OffscreenCanvasRenderingContext2D interface: attribute direction'
-        - test: idlharness.https.html?exclude=(Document|Window|HTML.*)
-          subtest: 'VideoTrack interface: attribute language'
-        - test: idlharness.https.html?exclude=(Document|Window|HTML.*)
-          subtest: 'DOMStringList interface: location.ancestorOrigins must inherit property "contains(DOMString)" with the proper type'
-        - test: idlharness.https.html?exclude=(Document|Window|HTML.*)
-          subtest: 'VideoTrackList interface: attribute onchange'
-        - test: idlharness.https.html?exclude=(Document|Window|HTML.*)
-          subtest: 'OffscreenCanvasRenderingContext2D interface: operation setTransform(unrestricted double, unrestricted double, unrestricted double, unrestricted double, unrestricted double, unrestricted double)'
-        - test: idlharness.https.html?exclude=(Document|Window|HTML.*)
-          subtest: 'DOMStringList interface: location.ancestorOrigins must inherit property "item(unsigned long)" with the proper type'
-        - test: idlharness.https.html?exclude=(Document|Window|HTML.*)
-          subtest: OffscreenCanvasRenderingContext2D interface object name
-        - test: idlharness.https.html?exclude=(Document|Window|HTML.*)
-          subtest: 'OffscreenCanvasRenderingContext2D interface: operation drawImage(CanvasImageSource, unrestricted double, unrestricted double)'
-        - test: idlharness.https.html?exclude=(Document|Window|HTML.*)
-          subtest: 'OffscreenCanvasRenderingContext2D interface: operation strokeRect(unrestricted double, unrestricted double, unrestricted double, unrestricted double)'
-        - test: idlharness.https.html?exclude=(Document|Window|HTML.*)
-          subtest: 'OffscreenCanvasRenderingContext2D interface: operation getTransform()'
-        - test: idlharness.https.html?exclude=(Document|Window|HTML.*)
-          subtest: 'OffscreenCanvasRenderingContext2D interface: operation createImageData(long, long)'
-        - test: idlharness.https.html?exclude=(Document|Window|HTML.*)
-          subtest: 'OffscreenCanvasRenderingContext2D interface: operation createLinearGradient(double, double, double, double)'
-        - test: idlharness.https.html?exclude=(Document|Window|HTML.*)
-          subtest: 'AudioTrackList interface: attribute onchange'
-        - test: idlharness.https.html?exclude=(Document|Window|HTML.*)
-          subtest: 'AudioTrack interface: attribute kind'
-        - test: idlharness.https.html?exclude=(Document|Window|HTML.*)
-          subtest: 'ElementInternals interface: attribute willValidate'
-        - test: idlharness.https.html?exclude=(Document|Window|HTML.*)
-          subtest: OffscreenCanvas interface object length
-        - test: idlharness.https.html?exclude=(Document|Window|HTML.*)
-          subtest: 'OffscreenCanvasRenderingContext2D interface: operation createPattern(CanvasImageSource, DOMString)'
-        - test: idlharness.https.html?exclude=(Document|Window|HTML.*)
-          subtest: 'OffscreenCanvasRenderingContext2D interface: operation transform(unrestricted double, unrestricted double, unrestricted double, unrestricted double, unrestricted double, unrestricted double)'
-        - test: idlharness.https.html?exclude=(Document|Window|HTML.*)
-          subtest: 'OffscreenCanvasRenderingContext2D interface: operation rotate(unrestricted double)'
-        - test: idlharness.https.html?exclude=(Document|Window|HTML.*)
-          subtest: 'AudioTrack interface: existence and properties of interface object'
-        - test: idlharness.https.html?exclude=(Document|Window|HTML.*)
-          subtest: 'AudioTrackList interface: attribute onremovetrack'
-        - test: idlharness.https.html?exclude=(Document|Window|HTML.*)
-          subtest: OffscreenCanvas interface object name
-        - test: idlharness.https.html?exclude=(Document|Window|HTML.*)
-          subtest: 'OffscreenCanvasRenderingContext2D interface: operation arc(unrestricted double, unrestricted double, unrestricted double, unrestricted double, unrestricted double, optional boolean)'
-        - test: idlharness.https.html?exclude=(Document|Window|HTML.*)
-          subtest: 'External interface: existence and properties of interface object'
-        - test: idlharness.https.html?exclude=(Document|Window|HTML.*)
-          subtest: 'OffscreenCanvasRenderingContext2D interface: attribute textAlign'
-        - test: idlharness.https.html?exclude=(Document|Window|HTML.*)
-          subtest: 'AudioTrack interface: existence and properties of interface prototype object''s @@unscopables property'
-        - test: idlharness.https.html?exclude=(Document|Window|HTML.*)
-          subtest: VideoTrack interface object name
-        - test: idlharness.https.html?exclude=(Document|Window|HTML.*)
-          subtest: 'ImageBitmapRenderingContext interface: attribute canvas'
-        - test: idlharness.https.html?exclude=(Document|Window|HTML.*)
-          subtest: 'VideoTrackList interface: attribute onremovetrack'
-        - test: idlharness.https.html?exclude=(Document|Window|HTML.*)
-          subtest: 'OffscreenCanvas interface: existence and properties of interface prototype object''s @@unscopables property'
-        - test: idlharness.https.html?exclude=(Document|Window|HTML.*)
-          subtest: 'TextMetrics interface: attribute emHeightAscent'
-        - test: idlharness.https.html?exclude=(Document|Window|HTML.*)
-          subtest: 'ApplicationCache interface: constant UPDATEREADY on interface object'
-        - test: idlharness.https.html?exclude=(Document|Window|HTML.*)
-          subtest: 'AudioTrackList interface: existence and properties of interface object'
-        - test: idlharness.https.html?exclude=(Document|Window|HTML.*)
-          subtest: 'OffscreenCanvasRenderingContext2D interface: operation measureText(DOMString)'
-        - test: idlharness.https.html?exclude=(Document|Window|HTML.*)
-          subtest: 'CanvasRenderingContext2D interface: document.createElement("canvas").getContext("2d") must inherit property "imageSmoothingQuality" with the proper type'
-        - test: idlharness.https.html?exclude=(Document|Window|HTML.*)
-          subtest: OffscreenCanvasRenderingContext2D interface object length
-        - test: idlharness.https.html?exclude=(Document|Window|HTML.*)
-          subtest: 'OffscreenCanvasRenderingContext2D interface: operation clearRect(unrestricted double, unrestricted double, unrestricted double, unrestricted double)'
-        - test: idlharness.https.html?exclude=(Document|Window|HTML.*)
-          subtest: 'OffscreenCanvasRenderingContext2D interface: operation getLineDash()'
-        - test: idlharness.https.html?exclude=(Document|Window|HTML.*)
-          subtest: AudioTrackList interface object name
-        - test: idlharness.https.html?exclude=(Document|Window|HTML.*)
-          subtest: 'OffscreenCanvasRenderingContext2D interface: operation isPointInPath(unrestricted double, unrestricted double, optional CanvasFillRule)'
-        - test: idlharness.https.html?exclude=(Document|Window|HTML.*)
-          subtest: 'ElementInternals interface: attribute validity'
-        - test: idlharness.https.html?exclude=(Document|Window|HTML.*)
-          subtest: 'OffscreenCanvasRenderingContext2D interface: operation restore()'
-        - test: idlharness.https.html?exclude=(Document|Window|HTML.*)
-          subtest: 'CanvasRenderingContext2D interface: document.createElement("canvas").getContext("2d") must inherit property "getContextAttributes()" with the proper type'
-        - test: idlharness.https.html?exclude=(Document|Window|HTML.*)
-          subtest: 'ElementInternals interface: operation checkValidity()'
-        - test: idlharness.https.html?exclude=(Document|Window|HTML.*)
-          subtest: 'VideoTrack interface: existence and properties of interface prototype object''s "constructor" property'
-        - test: idlharness.https.html?exclude=(Document|Window|HTML.*)
-          subtest: 'SVGElement interface: attribute oncancel'
-        - test: idlharness.https.html?exclude=(Document|Window|HTML.*)
-          subtest: 'ApplicationCache interface: attribute onupdateready'
-        - test: idlharness.https.html?exclude=(Document|Window|HTML.*)
-          subtest: ApplicationCache interface object name
-        - test: idlharness.https.html?exclude=(Document|Window|HTML.*)
-          subtest: 'ApplicationCache interface: attribute onerror'
-        - test: idlharness.https.html?exclude=(Document|Window|HTML.*)
-          subtest: 'ApplicationCache interface: constant DOWNLOADING on interface prototype object'
-        - test: idlharness.https.html?exclude=(Document|Window|HTML.*)
-          subtest: AudioTrackList interface object length
-        - test: idlharness.https.html?exclude=(Document|Window|HTML.*)
-          subtest: 'VideoTrackList interface: operation getTrackById(DOMString)'
-        - test: idlharness.https.html?exclude=(Document|Window|HTML.*)
-          subtest: 'CanvasRenderingContext2D interface: calling scrollPathIntoView(Path2D) on document.createElement("canvas").getContext("2d") with too few arguments must throw TypeError'
-        - test: idlharness.https.html?exclude=(Document|Window|HTML.*)
-          subtest: 'VideoTrackList interface: existence and properties of interface prototype object''s "constructor" property'
-        - test: idlharness.https.html?exclude=(Document|Window|HTML.*)
-          subtest: VideoTrackList interface object length
-        - test: idlharness.https.html?exclude=(Document|Window|HTML.*)
-          subtest: 'TextMetrics interface: attribute emHeightDescent'
-        - test: idlharness.https.html?exclude=(Document|Window|HTML.*)
-          subtest: 'ApplicationCache interface: existence and properties of interface object'
-        - test: idlharness.https.html?exclude=(Document|Window|HTML.*)
-          subtest: 'OffscreenCanvasRenderingContext2D interface: operation bezierCurveTo(unrestricted double, unrestricted double, unrestricted double, unrestricted double, unrestricted double, unrestricted double)'
-        - test: idlharness.https.html?exclude=(Document|Window|HTML.*)
-          subtest: 'ApplicationCache interface: constant CHECKING on interface prototype object'
-        - test: idlharness.https.html?exclude=(Document|Window|HTML.*)
-          subtest: 'OffscreenCanvasRenderingContext2D interface: operation drawImage(CanvasImageSource, unrestricted double, unrestricted double, unrestricted double, unrestricted double)'
-        - test: idlharness.https.html?exclude=(Document|Window|HTML.*)
-          subtest: 'OffscreenCanvasRenderingContext2D interface: operation scale(unrestricted double, unrestricted double)'
-        - test: idlharness.https.html?exclude=(Document|Window|HTML.*)
-          subtest: 'OffscreenCanvasRenderingContext2D interface: operation stroke()'
-        - test: idlharness.https.html?exclude=(Document|Window|HTML.*)
-          subtest: 'OffscreenCanvas interface: existence and properties of interface object'
-        - test: idlharness.https.html?exclude=(Document|Window|HTML.*)
-          subtest: 'OffscreenCanvasRenderingContext2D interface: existence and properties of interface prototype object'
-        - test: idlharness.https.html?exclude=(Document|Window|HTML.*)
-          subtest: 'AudioTrackList interface: existence and properties of interface prototype object''s "constructor" property'
-        - test: idlharness.https.html?exclude=(Document|Window|HTML.*)
-          subtest: 'ApplicationCache interface: attribute ondownloading'
-        - test: idlharness.https.html?exclude=(Document|Window|HTML.*)
-          subtest: 'OffscreenCanvasRenderingContext2D interface: attribute miterLimit'
-        - test: idlharness.https.html?exclude=(Document|Window|HTML.*)
-          subtest: 'OffscreenCanvasRenderingContext2D interface: operation isPointInPath(Path2D, unrestricted double, unrestricted double, optional CanvasFillRule)'
-        - test: idlharness.https.html?exclude=(Document|Window|HTML.*)
-          subtest: 'OffscreenCanvasRenderingContext2D interface: operation drawImage(CanvasImageSource, unrestricted double, unrestricted double, unrestricted double, unrestricted double, unrestricted double, unrestricted double, unrestricted double, unrestricted double)'
-        - test: idlharness.https.html?exclude=(Document|Window|HTML.*)
-          subtest: 'ElementInternals interface: attribute form'
-        - test: idlharness.https.html?exclude=(Document|Window|HTML.*)
-          subtest: 'ApplicationCache interface: operation update()'
-        - test: idlharness.https.html?exclude=(Document|Window|HTML.*)
-          subtest: 'OffscreenCanvasRenderingContext2D interface: attribute font'
-        - test: idlharness.https.html?exclude=(Document|Window|HTML.*)
-          subtest: 'OffscreenCanvasRenderingContext2D interface: operation putImageData(ImageData, long, long, long, long, long, long)'
-        - test: idlharness.https.html?exclude=(Document|Window|HTML.*)
-          subtest: 'OffscreenCanvasRenderingContext2D interface: operation moveTo(unrestricted double, unrestricted double)'
-        - test: idlharness.https.html?exclude=(Document|Window|HTML.*)
-          subtest: 'OffscreenCanvasRenderingContext2D interface: operation strokeText(DOMString, unrestricted double, unrestricted double, optional unrestricted double)'
-        - test: idlharness.https.html?exclude=(Document|Window|HTML.*)
-          subtest: 'TextMetrics interface: attribute alphabeticBaseline'
-        - test: idlharness.https.html?exclude=(Document|Window|HTML.*)
-          subtest: 'VideoTrackList interface: attribute length'
-        - test: idlharness.https.html?exclude=(Document|Window|HTML.*)
-          subtest: VideoTrack interface object length
-        - test: idlharness.https.html?exclude=(Document|Window|HTML.*)
-          subtest: 'VideoTrack interface: existence and properties of interface object'
-        - test: idlharness.https.html?exclude=(Document|Window|HTML.*)
-          subtest: 'OffscreenCanvasRenderingContext2D interface: operation fillRect(unrestricted double, unrestricted double, unrestricted double, unrestricted double)'
-        - test: idlharness.https.html?exclude=(Document|Window|HTML.*)
-          subtest: 'OffscreenCanvasRenderingContext2D interface: operation setTransform(optional DOMMatrix2DInit)'
-        - test: idlharness.https.html?exclude=(Document|Window|HTML.*)
-          subtest: 'AudioTrack interface: attribute label'
-        - test: idlharness.https.html?exclude=(Document|Window|HTML.*)
-          subtest: 'OffscreenCanvas interface: operation transferToImageBitmap()'
-        - test: idlharness.https.html?exclude=(Document|Window|HTML.*)
-          subtest: 'ApplicationCache interface: constant IDLE on interface object'
-        - test: idlharness.https.html?exclude=(Document|Window|HTML.*)
-          subtest: 'AudioTrack interface: attribute enabled'
-        - test: idlharness.https.html?exclude=(Document|Window|HTML.*)
-          subtest: 'ApplicationCache interface: attribute onobsolete'
-        - test: idlharness.https.html?exclude=(Document|Window|HTML.*)
-          subtest: 'ElementInternals interface: operation setFormValue((File or USVString or FormData)?, optional (File or USVString or FormData)?)'
-        - test: idlharness.worker.html
-          subtest: 'OffscreenCanvasRenderingContext2D interface: attribute globalAlpha'
-        - test: idlharness.worker.html
-          subtest: 'OffscreenCanvasRenderingContext2D interface: existence and properties of interface prototype object''s "constructor" property'
-        - test: idlharness.worker.html
-          subtest: 'OffscreenCanvasRenderingContext2D interface: operation measureText(DOMString)'
-        - test: idlharness.worker.html
-          subtest: 'OffscreenCanvasRenderingContext2D interface: attribute imageSmoothingEnabled'
-        - test: idlharness.worker.html
-          subtest: 'OffscreenCanvasRenderingContext2D interface: attribute shadowOffsetX'
-        - test: idlharness.worker.html
-          subtest: 'OffscreenCanvasRenderingContext2D interface: attribute shadowOffsetY'
-        - test: idlharness.worker.html
-          subtest: 'OffscreenCanvasRenderingContext2D interface: attribute strokeStyle'
-        - test: idlharness.worker.html
-          subtest: 'OffscreenCanvasRenderingContext2D interface: operation fillText(DOMString, unrestricted double, unrestricted double, optional unrestricted double)'
-        - test: idlharness.worker.html
-          subtest: OffscreenCanvasRenderingContext2D interface object length
-        - test: idlharness.worker.html
-          subtest: 'OffscreenCanvasRenderingContext2D interface: operation clearRect(unrestricted double, unrestricted double, unrestricted double, unrestricted double)'
-        - test: idlharness.worker.html
-          subtest: 'OffscreenCanvasRenderingContext2D interface: operation getLineDash()'
-        - test: idlharness.worker.html
-          subtest: 'CanvasGradient interface: existence and properties of interface object'
-        - test: idlharness.worker.html
-          subtest: 'OffscreenCanvasRenderingContext2D interface: attribute globalCompositeOperation'
-        - test: idlharness.worker.html
-          subtest: 'OffscreenCanvasRenderingContext2D interface: operation getImageData(long, long, long, long)'
-        - test: idlharness.worker.html
-          subtest: 'OffscreenCanvasRenderingContext2D interface: operation fill(optional CanvasFillRule)'
-        - test: idlharness.worker.html
-          subtest: 'OffscreenCanvasRenderingContext2D interface: operation isPointInPath(unrestricted double, unrestricted double, optional CanvasFillRule)'
-        - test: idlharness.worker.html
-          subtest: 'OffscreenCanvasRenderingContext2D interface: operation restore()'
-        - test: idlharness.worker.html
-          subtest: 'OffscreenCanvasRenderingContext2D interface: attribute shadowColor'
-        - test: idlharness.worker.html
-          subtest: 'OffscreenCanvasRenderingContext2D interface: operation isPointInPath(Path2D, unrestricted double, unrestricted double, optional CanvasFillRule)'
-        - test: idlharness.worker.html
-          subtest: 'Path2D interface: existence and properties of interface object'
-        - test: idlharness.worker.html
-          subtest: TextMetrics interface object length
-        - test: idlharness.worker.html
-          subtest: 'TextMetrics interface: attribute emHeightAscent'
-        - test: idlharness.worker.html
-          subtest: 'DedicatedWorkerGlobalScope interface: calling requestAnimationFrame(FrameRequestCallback) on self with too few arguments must throw TypeError'
-        - test: idlharness.worker.html
-          subtest: 'OffscreenCanvasRenderingContext2D interface: operation beginPath()'
-        - test: idlharness.worker.html
-          subtest: 'OffscreenCanvasRenderingContext2D interface: attribute lineWidth'
-        - test: idlharness.worker.html
-          subtest: 'OffscreenCanvasRenderingContext2D interface: operation fill(Path2D, optional CanvasFillRule)'
-        - test: idlharness.worker.html
-          subtest: 'CanvasGradient interface: operation addColorStop(double, DOMString)'
-        - test: idlharness.worker.html
-          subtest: 'OffscreenCanvasRenderingContext2D interface: existence and properties of interface object'
-        - test: idlharness.worker.html
-          subtest: 'OffscreenCanvasRenderingContext2D interface: attribute filter'
-        - test: idlharness.worker.html
-          subtest: 'OffscreenCanvasRenderingContext2D interface: operation isPointInStroke(unrestricted double, unrestricted double)'
-        - test: idlharness.worker.html
-          subtest: 'OffscreenCanvas interface: operation convertToBlob(optional ImageEncodeOptions)'
-        - test: idlharness.worker.html
-          subtest: 'OffscreenCanvas interface: existence and properties of interface object'
-        - test: idlharness.worker.html
-          subtest: 'OffscreenCanvasRenderingContext2D interface: existence and properties of interface prototype object''s @@unscopables property'
-        - test: idlharness.worker.html
-          subtest: 'OffscreenCanvasRenderingContext2D interface: operation drawImage(CanvasImageSource, unrestricted double, unrestricted double, unrestricted double, unrestricted double, unrestricted double, unrestricted double, unrestricted double, unrestricted double)'
-        - test: idlharness.worker.html
-          subtest: 'OffscreenCanvasRenderingContext2D interface: operation translate(unrestricted double, unrestricted double)'
-        - test: idlharness.worker.html
-          subtest: 'Path2D interface: operation moveTo(unrestricted double, unrestricted double)'
-        - test: idlharness.worker.html
-          subtest: 'TextMetrics interface: attribute actualBoundingBoxAscent'
-        - test: idlharness.worker.html
-          subtest: 'OffscreenCanvas interface: existence and properties of interface prototype object'
-        - test: idlharness.worker.html
-          subtest: 'OffscreenCanvasRenderingContext2D interface: operation stroke(Path2D)'
-        - test: idlharness.worker.html
-          subtest: 'CanvasPattern interface: existence and properties of interface prototype object''s @@unscopables property'
-        - test: idlharness.worker.html
-          subtest: 'TextMetrics interface: existence and properties of interface prototype object''s @@unscopables property'
-        - test: idlharness.worker.html
-          subtest: Path2D interface object name
-        - test: idlharness.worker.html
-          subtest: 'OffscreenCanvasRenderingContext2D interface: operation quadraticCurveTo(unrestricted double, unrestricted double, unrestricted double, unrestricted double)'
-        - test: idlharness.worker.html
-          subtest: 'DedicatedWorkerGlobalScope interface: self must inherit property "cancelAnimationFrame(unsigned long)" with the proper type'
-        - test: idlharness.worker.html
-          subtest: 'OffscreenCanvasRenderingContext2D interface: operation resetTransform()'
-        - test: idlharness.worker.html
-          subtest: 'ImageBitmapRenderingContext interface: attribute canvas'
-        - test: idlharness.worker.html
-          subtest: 'OffscreenCanvas interface: existence and properties of interface prototype object''s "constructor" property'
-        - test: idlharness.worker.html
-          subtest: 'OffscreenCanvasRenderingContext2D interface: attribute imageSmoothingQuality'
-        - test: idlharness.worker.html
-          subtest: Path2D interface object length
-        - test: idlharness.worker.html
-          subtest: 'TextMetrics interface: attribute emHeightDescent'
-        - test: idlharness.worker.html
-          subtest: 'OffscreenCanvasRenderingContext2D interface: operation lineTo(unrestricted double, unrestricted double)'
-        - test: idlharness.worker.html
-          subtest: CanvasGradient interface object length
-        - test: idlharness.worker.html
-          subtest: 'Path2D interface: existence and properties of interface prototype object'
-        - test: idlharness.worker.html
-          subtest: 'OffscreenCanvasRenderingContext2D interface: operation bezierCurveTo(unrestricted double, unrestricted double, unrestricted double, unrestricted double, unrestricted double, unrestricted double)'
-        - test: idlharness.worker.html
-          subtest: 'OffscreenCanvasRenderingContext2D interface: operation clip(Path2D, optional CanvasFillRule)'
-        - test: idlharness.worker.html
-          subtest: 'OffscreenCanvasRenderingContext2D interface: operation drawImage(CanvasImageSource, unrestricted double, unrestricted double, unrestricted double, unrestricted double)'
-        - test: idlharness.worker.html
-          subtest: 'Path2D interface: operation quadraticCurveTo(unrestricted double, unrestricted double, unrestricted double, unrestricted double)'
-        - test: idlharness.worker.html
-          subtest: 'OffscreenCanvasRenderingContext2D interface: attribute lineCap'
-        - test: idlharness.worker.html
-          subtest: 'OffscreenCanvasRenderingContext2D interface: operation scale(unrestricted double, unrestricted double)'
-        - test: idlharness.worker.html
-          subtest: 'OffscreenCanvas interface: attribute width'
-        - test: idlharness.worker.html
-          subtest: 'OffscreenCanvasRenderingContext2D interface: operation stroke()'
-        - test: idlharness.worker.html
-          subtest: 'OffscreenCanvasRenderingContext2D interface: attribute lineJoin'
-        - test: idlharness.worker.html
-          subtest: 'CanvasPattern interface: existence and properties of interface prototype object''s "constructor" property'
-        - test: idlharness.worker.html
-          subtest: 'OffscreenCanvasRenderingContext2D interface: operation rect(unrestricted double, unrestricted double, unrestricted double, unrestricted double)'
-        - test: idlharness.worker.html
-          subtest: 'OffscreenCanvasRenderingContext2D interface: attribute direction'
-        - test: idlharness.worker.html
-          subtest: 'OffscreenCanvasRenderingContext2D interface: attribute shadowBlur'
-        - test: idlharness.worker.html
-          subtest: 'Path2D interface: operation rect(unrestricted double, unrestricted double, unrestricted double, unrestricted double)'
-        - test: idlharness.worker.html
-          subtest: 'TextMetrics interface: attribute actualBoundingBoxDescent'
-        - test: idlharness.worker.html
-          subtest: 'OffscreenCanvasRenderingContext2D interface: existence and properties of interface prototype object'
-        - test: idlharness.worker.html
-          subtest: 'TextMetrics interface: attribute actualBoundingBoxLeft'
-        - test: idlharness.worker.html
-          subtest: 'OffscreenCanvas interface: attribute height'
-        - test: idlharness.worker.html
-          subtest: CanvasPattern interface object name
-        - test: idlharness.worker.html
-          subtest: 'OffscreenCanvasRenderingContext2D interface: operation setTransform(unrestricted double, unrestricted double, unrestricted double, unrestricted double, unrestricted double, unrestricted double)'
-        - test: idlharness.worker.html
-          subtest: 'CanvasGradient interface: existence and properties of interface prototype object'
-        - test: idlharness.worker.html
-          subtest: OffscreenCanvasRenderingContext2D interface object name
-        - test: idlharness.worker.html
-          subtest: 'OffscreenCanvasRenderingContext2D interface: operation drawImage(CanvasImageSource, unrestricted double, unrestricted double)'
-        - test: idlharness.worker.html
-          subtest: 'OffscreenCanvasRenderingContext2D interface: attribute miterLimit'
-        - test: idlharness.worker.html
-          subtest: 'OffscreenCanvasRenderingContext2D interface: operation strokeRect(unrestricted double, unrestricted double, unrestricted double, unrestricted double)'
-        - test: idlharness.worker.html
-          subtest: 'OffscreenCanvasRenderingContext2D interface: operation save()'
-        - test: idlharness.worker.html
-          subtest: 'OffscreenCanvasRenderingContext2D interface: operation commit()'
-        - test: idlharness.worker.html
-          subtest: 'OffscreenCanvasRenderingContext2D interface: operation getTransform()'
-        - test: idlharness.worker.html
-          subtest: 'OffscreenCanvasRenderingContext2D interface: attribute lineDashOffset'
-        - test: idlharness.worker.html
-          subtest: 'CanvasGradient interface: existence and properties of interface prototype object''s "constructor" property'
-        - test: idlharness.worker.html
-          subtest: 'TextMetrics interface: existence and properties of interface object'
-        - test: idlharness.worker.html
-          subtest: 'OffscreenCanvas interface: operation getContext(OffscreenRenderingContextId, optional any)'
-        - test: idlharness.worker.html
-          subtest: 'OffscreenCanvasRenderingContext2D interface: operation createImageData(long, long)'
-        - test: idlharness.worker.html
-          subtest: 'Path2D interface: operation lineTo(unrestricted double, unrestricted double)'
-        - test: idlharness.worker.html
-          subtest: 'CanvasPattern interface: existence and properties of interface prototype object'
-        - test: idlharness.worker.html
-          subtest: 'OffscreenCanvasRenderingContext2D interface: operation createImageData(ImageData)'
-        - test: idlharness.worker.html
-          subtest: 'OffscreenCanvasRenderingContext2D interface: attribute font'
-        - test: idlharness.worker.html
-          subtest: 'OffscreenCanvasRenderingContext2D interface: operation putImageData(ImageData, long, long, long, long, long, long)'
-        - test: idlharness.worker.html
-          subtest: 'Path2D interface: operation arc(unrestricted double, unrestricted double, unrestricted double, unrestricted double, unrestricted double, optional boolean)'
-        - test: idlharness.worker.html
-          subtest: 'DedicatedWorkerGlobalScope interface: calling cancelAnimationFrame(unsigned long) on self with too few arguments must throw TypeError'
-        - test: idlharness.worker.html
-          subtest: 'OffscreenCanvasRenderingContext2D interface: operation moveTo(unrestricted double, unrestricted double)'
-        - test: idlharness.worker.html
-          subtest: OffscreenCanvas interface object length
-        - test: idlharness.worker.html
-          subtest: 'OffscreenCanvasRenderingContext2D interface: operation strokeText(DOMString, unrestricted double, unrestricted double, optional unrestricted double)'
-        - test: idlharness.worker.html
-          subtest: 'Path2D interface: operation closePath()'
-        - test: idlharness.worker.html
-          subtest: 'TextMetrics interface: attribute width'
-        - test: idlharness.worker.html
-          subtest: 'Path2D interface: existence and properties of interface prototype object''s @@unscopables property'
-        - test: idlharness.worker.html
-          subtest: 'OffscreenCanvasRenderingContext2D interface: operation createLinearGradient(double, double, double, double)'
-        - test: idlharness.worker.html
-          subtest: 'TextMetrics interface: attribute actualBoundingBoxRight'
-        - test: idlharness.worker.html
-          subtest: 'TextMetrics interface: attribute fontBoundingBoxAscent'
-        - test: idlharness.worker.html
-          subtest: 'OffscreenCanvasRenderingContext2D interface: operation createPattern(CanvasImageSource, DOMString)'
-        - test: idlharness.worker.html
-          subtest: 'CanvasPattern interface: existence and properties of interface object'
-        - test: idlharness.worker.html
-          subtest: 'OffscreenCanvasRenderingContext2D interface: operation transform(unrestricted double, unrestricted double, unrestricted double, unrestricted double, unrestricted double, unrestricted double)'
-        - test: idlharness.worker.html
-          subtest: 'OffscreenCanvasRenderingContext2D interface: operation rotate(unrestricted double)'
-        - test: idlharness.worker.html
-          subtest: 'CanvasPattern interface: operation setTransform(optional DOMMatrix2DInit)'
-        - test: idlharness.worker.html
-          subtest: 'OffscreenCanvasRenderingContext2D interface: operation setLineDash(sequence<unrestricted double>)'
-        - test: idlharness.worker.html
-          subtest: 'TextMetrics interface: existence and properties of interface prototype object'
-        - test: idlharness.worker.html
-          subtest: 'Path2D interface: existence and properties of interface prototype object''s "constructor" property'
-        - test: idlharness.worker.html
-          subtest: 'OffscreenCanvasRenderingContext2D interface: operation createRadialGradient(double, double, double, double, double, double)'
-        - test: idlharness.worker.html
-          subtest: OffscreenCanvas interface object name
-        - test: idlharness.worker.html
-          subtest: 'OffscreenCanvasRenderingContext2D interface: operation setTransform(optional DOMMatrix2DInit)'
-        - test: idlharness.worker.html
-          subtest: 'CanvasGradient interface: existence and properties of interface prototype object''s @@unscopables property'
-        - test: idlharness.worker.html
-          subtest: 'TextMetrics interface: attribute fontBoundingBoxDescent'
-        - test: idlharness.worker.html
-          subtest: 'Path2D interface: operation ellipse(unrestricted double, unrestricted double, unrestricted double, unrestricted double, unrestricted double, unrestricted double, unrestricted double, optional boolean)'
-        - test: idlharness.worker.html
-          subtest: 'OffscreenCanvasRenderingContext2D interface: operation arc(unrestricted double, unrestricted double, unrestricted double, unrestricted double, unrestricted double, optional boolean)'
-        - test: idlharness.worker.html
-          subtest: 'OffscreenCanvasRenderingContext2D interface: attribute textBaseline'
-        - test: idlharness.worker.html
-          subtest: 'OffscreenCanvasRenderingContext2D interface: operation isPointInStroke(Path2D, unrestricted double, unrestricted double)'
-        - test: idlharness.worker.html
-          subtest: 'OffscreenCanvas interface: operation transferToImageBitmap()'
-        - test: idlharness.worker.html
-          subtest: 'OffscreenCanvasRenderingContext2D interface: operation arcTo(unrestricted double, unrestricted double, unrestricted double, unrestricted double, unrestricted double)'
-        - test: idlharness.worker.html
-          subtest: 'OffscreenCanvasRenderingContext2D interface: operation closePath()'
-        - test: idlharness.worker.html
-          subtest: 'Path2D interface: operation arcTo(unrestricted double, unrestricted double, unrestricted double, unrestricted double, unrestricted double)'
-        - test: idlharness.worker.html
-          subtest: 'OffscreenCanvasRenderingContext2D interface: operation ellipse(unrestricted double, unrestricted double, unrestricted double, unrestricted double, unrestricted double, unrestricted double, unrestricted double, optional boolean)'
-        - test: idlharness.worker.html
-          subtest: 'TextMetrics interface: existence and properties of interface prototype object''s "constructor" property'
-        - test: idlharness.worker.html
-          subtest: 'DedicatedWorkerGlobalScope interface: self must inherit property "requestAnimationFrame(FrameRequestCallback)" with the proper type'
-        - test: idlharness.worker.html
-          subtest: 'OffscreenCanvasRenderingContext2D interface: attribute textAlign'
-        - test: idlharness.worker.html
-          subtest: 'Path2D interface: operation bezierCurveTo(unrestricted double, unrestricted double, unrestricted double, unrestricted double, unrestricted double, unrestricted double)'
-        - test: idlharness.worker.html
-          subtest: 'OffscreenCanvasRenderingContext2D interface: attribute fillStyle'
-        - test: idlharness.worker.html
-          subtest: 'OffscreenCanvasRenderingContext2D interface: attribute canvas'
-        - test: idlharness.worker.html
-          subtest: 'OffscreenCanvasRenderingContext2D interface: operation putImageData(ImageData, long, long)'
-        - test: idlharness.worker.html
-          subtest: 'DedicatedWorkerGlobalScope interface: operation cancelAnimationFrame(unsigned long)'
-        - test: idlharness.worker.html
-          subtest: 'DedicatedWorkerGlobalScope interface: operation requestAnimationFrame(FrameRequestCallback)'
-        - test: idlharness.worker.html
-          subtest: 'Path2D interface: operation addPath(Path2D, optional DOMMatrix2DInit)'
-        - test: idlharness.worker.html
-          subtest: 'OffscreenCanvas interface: existence and properties of interface prototype object''s @@unscopables property'
-        - test: idlharness.worker.html
-          subtest: 'OffscreenCanvasRenderingContext2D interface: operation clip(optional CanvasFillRule)'
-        - test: idlharness.worker.html
-          subtest: CanvasPattern interface object length
-        - test: idlharness.worker.html
-          subtest: 'OffscreenCanvasRenderingContext2D interface: operation fillRect(unrestricted double, unrestricted double, unrestricted double, unrestricted double)'
-        - test: idlharness.worker.html
-          subtest: CanvasGradient interface object name
-        - test: idlharness.worker.html
-          subtest: TextMetrics interface object name
-        - test: idlharness.https.html?include=HTML.*
-          subtest: 'HTMLDialogElement interface: existence and properties of interface object'
-        - test: idlharness.https.html?include=HTML.*
-          subtest: 'HTMLInputElement interface: attribute dirName'
-        - test: idlharness.https.html?include=HTML.*
-          subtest: 'HTMLVideoElement interface: attribute playsInline'
-        - test: idlharness.https.html?include=HTML.*
-          subtest: 'HTMLInputElement interface: createInput("range") must inherit property "dirName" with the proper type'
-        - test: idlharness.https.html?include=HTML.*
-          subtest: 'HTMLMediaElement interface: document.createElement("audio") must inherit property "audioTracks" with the proper type'
-        - test: idlharness.https.html?include=HTML.*
-          subtest: 'HTMLMediaElement interface: document.createElement("audio") must inherit property "videoTracks" with the proper type'
-        - test: idlharness.https.html?include=HTML.*
-          subtest: 'HTMLInputElement interface: createInput("url") must inherit property "dirName" with the proper type'
-        - test: idlharness.https.html?include=HTML.*
-          subtest: 'HTMLInputElement interface: createInput("reset") must inherit property "dirName" with the proper type'
-        - test: idlharness.https.html?include=HTML.*
-          subtest: 'HTMLTextAreaElement interface: attribute dirName'
-        - test: idlharness.https.html?include=HTML.*
-          subtest: 'HTMLElement interface: document.createElement("noscript") must inherit property "autocapitalize" with the proper type'
-        - test: idlharness.https.html?include=HTML.*
-          subtest: 'HTMLInputElement interface: createInput("time") must inherit property "dirName" with the proper type'
-        - test: idlharness.https.html?include=HTML.*
-          subtest: 'HTMLElement interface: document.createElement("noscript") must inherit property "translate" with the proper type'
-        - test: idlharness.https.html?include=HTML.*
-          subtest: 'HTMLInputElement interface: createInput("number") must inherit property "dirName" with the proper type'
-        - test: idlharness.https.html?include=HTML.*
-          subtest: 'HTMLElement interface: attribute oncancel'
-        - test: idlharness.https.html?include=HTML.*
-          subtest: 'HTMLMediaElement interface: new Audio() must inherit property "audioTracks" with the proper type'
-        - test: idlharness.https.html?include=HTML.*
-          subtest: HTMLDialogElement interface object length
-        - test: idlharness.https.html?include=HTML.*
-          subtest: 'HTMLElement interface: attribute autofocus'
-        - test: idlharness.https.html?include=HTML.*
-          subtest: 'HTMLInputElement interface: createInput("submit") must inherit property "dirName" with the proper type'
-        - test: idlharness.https.html?include=HTML.*
-          subtest: 'HTMLInputElement interface: createInput("file") must inherit property "dirName" with the proper type'
-        - test: idlharness.https.html?include=HTML.*
-          subtest: 'HTMLElement interface: document.createElement("noscript") must inherit property "oncancel" with the proper type'
-        - test: idlharness.https.html?include=HTML.*
-          subtest: 'HTMLInputElement interface: createInput("text") must inherit property "dirName" with the proper type'
-        - test: idlharness.https.html?include=HTML.*
-          subtest: 'HTMLDialogElement interface: operation show()'
-        - test: idlharness.https.html?include=HTML.*
-          subtest: 'HTMLInputElement interface: createInput("month") must inherit property "dirName" with the proper type'
-        - test: idlharness.https.html?include=HTML.*
-          subtest: 'HTMLInputElement interface: createInput("search") must inherit property "dirName" with the proper type'
-        - test: idlharness.https.html?include=HTML.*
-          subtest: 'HTMLElement interface: document.createElement("noscript") must inherit property "autofocus" with the proper type'
-        - test: idlharness.https.html?include=HTML.*
-          subtest: 'HTMLElement interface: attribute enterKeyHint'
-        - test: idlharness.https.html?include=HTML.*
-          subtest: 'HTMLInputElement interface: createInput("checkbox") must inherit property "dirName" with the proper type'
-        - test: idlharness.https.html?include=HTML.*
-          subtest: 'HTMLDialogElement interface: existence and properties of interface prototype object'
-        - test: idlharness.https.html?include=HTML.*
-          subtest: 'HTMLMediaElement interface: document.createElement("video") must inherit property "getStartDate()" with the proper type'
-        - test: idlharness.https.html?include=HTML.*
-          subtest: 'HTMLInputElement interface: createInput("color") must inherit property "dirName" with the proper type'
-        - test: idlharness.https.html?include=HTML.*
-          subtest: 'HTMLInputElement interface: createInput("hidden") must inherit property "dirName" with the proper type'
-        - test: idlharness.https.html?include=HTML.*
-          subtest: 'HTMLCanvasElement interface: operation transferControlToOffscreen()'
-        - test: idlharness.https.html?include=HTML.*
-          subtest: 'HTMLInputElement interface: createInput("week") must inherit property "dirName" with the proper type'
-        - test: idlharness.https.html?include=HTML.*
-          subtest: 'HTMLVideoElement interface: document.createElement("video") must inherit property "playsInline" with the proper type'
-        - test: idlharness.https.html?include=HTML.*
-          subtest: 'HTMLCanvasElement interface: document.createElement("canvas") must inherit property "transferControlToOffscreen()" with the proper type'
-        - test: idlharness.https.html?include=HTML.*
-          subtest: 'HTMLInputElement interface: createInput("date") must inherit property "dirName" with the proper type'
-        - test: idlharness.https.html?include=HTML.*
-          subtest: 'HTMLInputElement interface: createInput("datetime-local") must inherit property "dirName" with the proper type'
-        - test: idlharness.https.html?include=HTML.*
-          subtest: 'HTMLDialogElement interface: attribute open'
-        - test: idlharness.https.html?include=HTML.*
-          subtest: 'HTMLDialogElement interface: operation showModal()'
-        - test: idlharness.https.html?include=HTML.*
-          subtest: 'HTMLInputElement interface: createInput("tel") must inherit property "dirName" with the proper type'
-        - test: idlharness.https.html?include=HTML.*
-          subtest: 'HTMLInputElement interface: createInput("password") must inherit property "dirName" with the proper type'
-        - test: idlharness.https.html?include=HTML.*
-          subtest: 'HTMLInputElement interface: document.createElement("input") must inherit property "dirName" with the proper type'
-        - test: idlharness.https.html?include=HTML.*
-          subtest: 'HTMLMediaElement interface: new Audio() must inherit property "videoTracks" with the proper type'
-        - test: idlharness.https.html?include=HTML.*
-          subtest: 'HTMLDialogElement interface: existence and properties of interface prototype object''s "constructor" property'
-        - test: idlharness.https.html?include=HTML.*
-          subtest: 'HTMLMediaElement interface: attribute videoTracks'
-        - test: idlharness.https.html?include=HTML.*
-          subtest: 'HTMLElement interface: attribute translate'
-        - test: idlharness.https.html?include=HTML.*
-          subtest: 'HTMLInputElement interface: createInput("image") must inherit property "dirName" with the proper type'
-        - test: idlharness.https.html?include=HTML.*
-          subtest: 'HTMLDialogElement interface: existence and properties of interface prototype object''s @@unscopables property'
-        - test: idlharness.https.html?include=HTML.*
-          subtest: 'HTMLMediaElement interface: attribute audioTracks'
-        - test: idlharness.https.html?include=HTML.*
-          subtest: 'HTMLInputElement interface: createInput("email") must inherit property "dirName" with the proper type'
-        - test: idlharness.https.html?include=HTML.*
-          subtest: HTMLDialogElement interface object name
-        - test: idlharness.https.html?include=HTML.*
-          subtest: 'HTMLInputElement interface: createInput("radio") must inherit property "dirName" with the proper type'
-        - test: idlharness.https.html?include=HTML.*
-          subtest: 'HTMLTextAreaElement interface: document.createElement("textarea") must inherit property "dirName" with the proper type'
-        - test: idlharness.https.html?include=HTML.*
-          subtest: 'HTMLInputElement interface: createInput("button") must inherit property "dirName" with the proper type'
-        - test: idlharness.https.html?include=HTML.*
-          subtest: 'HTMLMediaElement interface: operation getStartDate()'
-        - test: idlharness.https.html?include=HTML.*
-          subtest: 'HTMLDialogElement interface: attribute returnValue'
-        - test: idlharness.https.html?include=HTML.*
-          subtest: 'HTMLMediaElement interface: new Audio() must inherit property "getStartDate()" with the proper type'
-        - test: idlharness.https.html?include=HTML.*
-          subtest: 'HTMLMediaElement interface: document.createElement("video") must inherit property "audioTracks" with the proper type'
-        - test: idlharness.https.html?include=HTML.*
-          subtest: 'HTMLElement interface: attribute autocapitalize'
-        - test: idlharness.https.html?include=HTML.*
-          subtest: 'HTMLDialogElement interface: operation close(optional DOMString)'
-        - test: idlharness.https.html?include=HTML.*
-          subtest: 'HTMLMediaElement interface: document.createElement("audio") must inherit property "getStartDate()" with the proper type'
-        - test: idlharness.https.html?include=HTML.*
-          subtest: 'HTMLMediaElement interface: document.createElement("video") must inherit property "videoTracks" with the proper type'
-        - test: idlharness.https.html?include=HTML.*
-          subtest: 'HTMLElement interface: document.createElement("noscript") must inherit property "enterKeyHint" with the proper type'
-        - test: idlharness.https.html?include=(Document|Window)
-          subtest: 'Document interface: new Document() must inherit property "onsecuritypolicyviolation" with the proper type'
-        - test: idlharness.https.html?include=(Document|Window)
-          subtest: 'Document interface: attribute oncancel'
-        - test: idlharness.https.html?include=(Document|Window)
-          subtest: 'Document interface: documentWithHandlers must inherit property "onsecuritypolicyviolation" with the proper type'
-        - test: idlharness.https.html?include=(Document|Window)
-          subtest: 'Document interface: new Document() must inherit property "oncancel" with the proper type'
-        - test: idlharness.https.html?include=(Document|Window)
-          subtest: 'Document interface: attribute onsecuritypolicyviolation'
-        - test: idlharness.https.html?include=(Document|Window)
-          subtest: 'Window interface: window must inherit property "oncancel" with the proper type'
-        - test: idlharness.https.html?include=(Document|Window)
-          subtest: 'Document interface: iframe.contentDocument must inherit property "onsecuritypolicyviolation" with the proper type'
-        - test: idlharness.https.html?include=(Document|Window)
-          subtest: 'Document interface: documentWithHandlers must inherit property "oncancel" with the proper type'
-        - test: idlharness.https.html?include=(Document|Window)
-          subtest: 'Document interface: iframe.contentDocument must inherit property "oncancel" with the proper type'
-        - test: idlharness.https.html?include=(Document|Window)
-          subtest: 'Window interface: attribute oncancel'
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1662664
-      results:
-        - test: idlharness.https.html?include=(Document|Window)
-          subtest: 'Window interface: attribute originIsolated'
-        - test: idlharness.https.html?include=(Document|Window)
-          subtest: 'Window interface: window must inherit property "originIsolated" with the proper type'
-        - test: idlharness.https.html?include=HTML.*
-          subtest: 'HTMLIFrameElement interface: attribute loading'
-        - test: idlharness.https.html?include=HTML.*
-          subtest: 'HTMLMediaElement interface: document.createElement("video") must inherit property "preservesPitch" with the proper type'
-        - test: idlharness.https.html?include=HTML.*
-          subtest: 'HTMLMediaElement interface: document.createElement("audio") must inherit property "preservesPitch" with the proper type'
-        - test: idlharness.https.html?include=HTML.*
-          subtest: 'HTMLMediaElement interface: new Audio() must inherit property "preservesPitch" with the proper type'
-        - test: idlharness.https.html?include=HTML.*
-          subtest: 'HTMLMediaElement interface: attribute preservesPitch'
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1672688
-      results:
-        - test: idlharness.https.html?exclude=(Document|Window|HTML.*)
-          subtest: 'ElementInternals interface: attribute shadowRoot'
-    - product: chrome
-      url: https://bugs.chromium.org/p/chromium/issues/detail?id=648207
-      results:
-        - test: idlharness.https.html?include=HTML.*
-          subtest: 'HTMLMediaElement interface: document.createElement("video") must inherit property "fastSeek(double)" with the proper type'
-        - test: idlharness.https.html?include=HTML.*
-          subtest: 'HTMLMediaElement interface: calling fastSeek(double) on document.createElement("video") with too few arguments must throw TypeError'
-        - test: idlharness.https.html?include=HTML.*
-          subtest: 'HTMLMediaElement interface: document.createElement("audio") must inherit property "fastSeek(double)" with the proper type'
-        - test: idlharness.https.html?include=HTML.*
-          subtest: 'HTMLMediaElement interface: calling fastSeek(double) on document.createElement("audio") with too few arguments must throw TypeError'
-        - test: idlharness.https.html?include=HTML.*
-          subtest: 'HTMLMediaElement interface: new Audio() must inherit property "fastSeek(double)" with the proper type'
-        - test: idlharness.https.html?include=HTML.*
-          subtest: 'HTMLMediaElement interface: calling fastSeek(double) on new Audio() with too few arguments must throw TypeError'
-        - test: idlharness.https.html?include=HTML.*
-          subtest: 'HTMLMediaElement interface: operation fastSeek(double)'
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1676455
-      results:
-        - test: idlharness.https.html?exclude=(Document|Window|HTML.*)
-          subtest: 'SVGElement interface: attribute onslotchange'
-        - test: idlharness.https.html?include=(Document|Window)
-          subtest: 'Window interface: attribute onslotchange'
-        - test: idlharness.https.html?include=(Document|Window)
-          subtest: 'Window interface: window must inherit property "onslotchange" with the proper type'
-        - test: idlharness.https.html?include=(Document|Window)
-          subtest: 'Document interface: attribute onslotchange'
-        - test: idlharness.https.html?include=(Document|Window)
-          subtest: 'Document interface: iframe.contentDocument must inherit property "onslotchange" with the proper type'
-        - test: idlharness.https.html?include=(Document|Window)
-          subtest: 'Document interface: new Document() must inherit property "onslotchange" with the proper type'
-        - test: idlharness.https.html?include=(Document|Window)
-          subtest: 'Document interface: documentWithHandlers must inherit property "onslotchange" with the proper type'
-        - test: idlharness.https.html?include=HTML.*
-          subtest: 'HTMLElement interface: attribute onslotchange'
-        - test: idlharness.https.html?include=HTML.*
-          subtest: 'HTMLElement interface: document.createElement("noscript") must inherit property "onslotchange" with the proper type'
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1680298
-      results:
-        - test: idlharness.worker.html
-          subtest: 'TextMetrics interface: attribute hangingBaseline'
-        - test: idlharness.worker.html
-          subtest: 'TextMetrics interface: attribute alphabeticBaseline'
-        - test: idlharness.worker.html
-          subtest: 'TextMetrics interface: attribute ideographicBaseline'
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1683909
-      results:
-        - test: idlharness.https.html?include=(Document|Window)
-          subtest: 'Window interface: attribute originAgentCluster'
-        - test: idlharness.https.html?include=(Document|Window)
-          subtest: 'Window interface: window must inherit property "originAgentCluster" with the proper type'
+- product: firefox
+  results:
+  - subtest: 'Window interface: window must have own property "window"'
+    test: idlharness.https.html?include=(Document|Window)
+  - subtest: 'Window interface: window must have own property "document"'
+    test: idlharness.https.html?include=(Document|Window)
+  - subtest: 'Window interface: window must have own property "top"'
+    test: idlharness.https.html?include=(Document|Window)
+  - subtest: 'Window interface: window must have own property "location"'
+    test: idlharness.https.html?include=(Document|Window)
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1510437
+- product: firefox
+  results:
+  - subtest: 'source : unpaired surrogate codepoint should be replaced with U+FFFD'
+    test: usvstring-reflection.https.html
+  - subtest: 'anchor : unpaired surrogate codepoint should be replaced with U+FFFD'
+    test: usvstring-reflection.https.html
+  - subtest: 'area : unpaired surrogate codepoint should be replaced with U+FFFD'
+    test: usvstring-reflection.https.html
+  - subtest: 'storage event : unpaired surrogate codepoint should be replaced with
+      U+FFFD'
+    test: usvstring-reflection.https.html
+  - subtest: 'UnregisterProtocolHandler URL: unpaired surrogate codepoint should not
+      make any exceptions.'
+    test: usvstring-reflection.https.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1645268
+- product: firefox
+  results:
+  - subtest: 'AudioTrack interface: existence and properties of interface prototype
+      object'
+    test: idlharness.https.html?exclude=(Document|Window|HTML.*)
+  - subtest: 'AudioTrack interface: attribute language'
+    test: idlharness.https.html?exclude=(Document|Window|HTML.*)
+  - subtest: 'AudioTrackList interface: existence and properties of interface prototype
+      object'
+    test: idlharness.https.html?exclude=(Document|Window|HTML.*)
+  - subtest: 'OffscreenCanvasRenderingContext2D interface: attribute filter'
+    test: idlharness.https.html?exclude=(Document|Window|HTML.*)
+  - subtest: AudioTrack interface object length
+    test: idlharness.https.html?exclude=(Document|Window|HTML.*)
+  - subtest: 'OffscreenCanvasRenderingContext2D interface: attribute shadowOffsetX'
+    test: idlharness.https.html?exclude=(Document|Window|HTML.*)
+  - subtest: 'ApplicationCache interface: attribute onprogress'
+    test: idlharness.https.html?exclude=(Document|Window|HTML.*)
+  - subtest: 'OffscreenCanvasRenderingContext2D interface: operation getImageData(long,
+      long, long, long)'
+    test: idlharness.https.html?exclude=(Document|Window|HTML.*)
+  - subtest: 'OffscreenCanvasRenderingContext2D interface: operation fill(optional
+      CanvasFillRule)'
+    test: idlharness.https.html?exclude=(Document|Window|HTML.*)
+  - subtest: 'ApplicationCache interface: existence and properties of interface prototype
+      object''s "constructor" property'
+    test: idlharness.https.html?exclude=(Document|Window|HTML.*)
+  - subtest: 'AudioTrackList interface: operation getTrackById(DOMString)'
+    test: idlharness.https.html?exclude=(Document|Window|HTML.*)
+  - subtest: 'External interface: existence and properties of interface prototype
+      object''s "constructor" property'
+    test: idlharness.https.html?exclude=(Document|Window|HTML.*)
+  - subtest: ApplicationCache must be primary interface of window.applicationCache
+    test: idlharness.https.html?exclude=(Document|Window|HTML.*)
+  - subtest: 'ElementInternals interface: operation reportValidity()'
+    test: idlharness.https.html?exclude=(Document|Window|HTML.*)
+  - subtest: 'CanvasRenderingContext2D interface: operation scrollPathIntoView()'
+    test: idlharness.https.html?exclude=(Document|Window|HTML.*)
+  - subtest: 'OffscreenCanvasRenderingContext2D interface: attribute shadowColor'
+    test: idlharness.https.html?exclude=(Document|Window|HTML.*)
+  - subtest: 'VideoTrackList interface: existence and properties of interface object'
+    test: idlharness.https.html?exclude=(Document|Window|HTML.*)
+  - subtest: 'OffscreenCanvasRenderingContext2D interface: operation isPointInStroke(unrestricted
+      double, unrestricted double)'
+    test: idlharness.https.html?exclude=(Document|Window|HTML.*)
+  - subtest: 'OffscreenCanvas interface: operation convertToBlob(optional ImageEncodeOptions)'
+    test: idlharness.https.html?exclude=(Document|Window|HTML.*)
+  - subtest: 'DOMStringList interface: calling item(unsigned long) on location.ancestorOrigins
+      with too few arguments must throw TypeError'
+    test: idlharness.https.html?exclude=(Document|Window|HTML.*)
+  - subtest: 'VideoTrack interface: existence and properties of interface prototype
+      object'
+    test: idlharness.https.html?exclude=(Document|Window|HTML.*)
+  - subtest: 'OffscreenCanvasRenderingContext2D interface: operation quadraticCurveTo(unrestricted
+      double, unrestricted double, unrestricted double, unrestricted double)'
+    test: idlharness.https.html?exclude=(Document|Window|HTML.*)
+  - subtest: 'OffscreenCanvasRenderingContext2D interface: attribute shadowOffsetY'
+    test: idlharness.https.html?exclude=(Document|Window|HTML.*)
+  - subtest: 'OffscreenCanvasRenderingContext2D interface: operation setLineDash(sequence<unrestricted
+      double>)'
+    test: idlharness.https.html?exclude=(Document|Window|HTML.*)
+  - subtest: 'ApplicationCache interface: constant UNCACHED on interface object'
+    test: idlharness.https.html?exclude=(Document|Window|HTML.*)
+  - subtest: 'OffscreenCanvasRenderingContext2D interface: attribute strokeStyle'
+    test: idlharness.https.html?exclude=(Document|Window|HTML.*)
+  - subtest: 'ElementInternals interface: attribute labels'
+    test: idlharness.https.html?exclude=(Document|Window|HTML.*)
+  - subtest: 'OffscreenCanvasRenderingContext2D interface: operation commit()'
+    test: idlharness.https.html?exclude=(Document|Window|HTML.*)
+  - subtest: 'OffscreenCanvasRenderingContext2D interface: attribute lineDashOffset'
+    test: idlharness.https.html?exclude=(Document|Window|HTML.*)
+  - subtest: 'OffscreenCanvas interface: operation getContext(OffscreenRenderingContextId,
+      optional any)'
+    test: idlharness.https.html?exclude=(Document|Window|HTML.*)
+  - subtest: AudioTrack interface object name
+    test: idlharness.https.html?exclude=(Document|Window|HTML.*)
+  - subtest: 'VideoTrackList interface: existence and properties of interface prototype
+      object''s @@unscopables property'
+    test: idlharness.https.html?exclude=(Document|Window|HTML.*)
+  - subtest: 'CanvasRenderingContext2D interface: attribute direction'
+    test: idlharness.https.html?exclude=(Document|Window|HTML.*)
+  - subtest: 'ApplicationCache interface: window.applicationCache must inherit property
+      "abort()" with the proper type'
+    test: idlharness.https.html?exclude=(Document|Window|HTML.*)
+  - subtest: 'OffscreenCanvasRenderingContext2D interface: operation createRadialGradient(double,
+      double, double, double, double, double)'
+    test: idlharness.https.html?exclude=(Document|Window|HTML.*)
+  - subtest: VideoTrackList interface object name
+    test: idlharness.https.html?exclude=(Document|Window|HTML.*)
+  - subtest: 'VideoTrackList interface: attribute onaddtrack'
+    test: idlharness.https.html?exclude=(Document|Window|HTML.*)
+  - subtest: 'TextMetrics interface: attribute fontBoundingBoxDescent'
+    test: idlharness.https.html?exclude=(Document|Window|HTML.*)
+  - subtest: 'External interface: existence and properties of interface prototype
+      object'
+    test: idlharness.https.html?exclude=(Document|Window|HTML.*)
+  - subtest: 'ApplicationCache interface: attribute status'
+    test: idlharness.https.html?exclude=(Document|Window|HTML.*)
+  - subtest: 'OffscreenCanvasRenderingContext2D interface: operation arcTo(unrestricted
+      double, unrestricted double, unrestricted double, unrestricted double, unrestricted
+      double)'
+    test: idlharness.https.html?exclude=(Document|Window|HTML.*)
+  - subtest: 'AudioTrackList interface: attribute onaddtrack'
+    test: idlharness.https.html?exclude=(Document|Window|HTML.*)
+  - subtest: 'External interface: existence and properties of interface prototype
+      object''s @@unscopables property'
+    test: idlharness.https.html?exclude=(Document|Window|HTML.*)
+  - subtest: 'OffscreenCanvasRenderingContext2D interface: attribute lineWidth'
+    test: idlharness.https.html?exclude=(Document|Window|HTML.*)
+  - subtest: 'BarProp interface: attribute visible'
+    test: idlharness.https.html?exclude=(Document|Window|HTML.*)
+  - subtest: 'ApplicationCache interface: existence and properties of interface prototype
+      object''s @@unscopables property'
+    test: idlharness.https.html?exclude=(Document|Window|HTML.*)
+  - subtest: 'OffscreenCanvasRenderingContext2D interface: attribute canvas'
+    test: idlharness.https.html?exclude=(Document|Window|HTML.*)
+  - subtest: 'VideoTrack interface: attribute selected'
+    test: idlharness.https.html?exclude=(Document|Window|HTML.*)
+  - subtest: 'OffscreenCanvasRenderingContext2D interface: operation putImageData(ImageData,
+      long, long)'
+    test: idlharness.https.html?exclude=(Document|Window|HTML.*)
+  - subtest: 'AudioTrackList interface: existence and properties of interface prototype
+      object''s @@unscopables property'
+    test: idlharness.https.html?exclude=(Document|Window|HTML.*)
+  - subtest: 'OffscreenCanvasRenderingContext2D interface: operation save()'
+    test: idlharness.https.html?exclude=(Document|Window|HTML.*)
+  - subtest: 'OffscreenCanvasRenderingContext2D interface: operation closePath()'
+    test: idlharness.https.html?exclude=(Document|Window|HTML.*)
+  - subtest: 'AudioTrack interface: existence and properties of interface prototype
+      object''s "constructor" property'
+    test: idlharness.https.html?exclude=(Document|Window|HTML.*)
+  - subtest: 'OffscreenCanvasRenderingContext2D interface: existence and properties
+      of interface prototype object''s "constructor" property'
+    test: idlharness.https.html?exclude=(Document|Window|HTML.*)
+  - subtest: 'OffscreenCanvasRenderingContext2D interface: attribute imageSmoothingEnabled'
+    test: idlharness.https.html?exclude=(Document|Window|HTML.*)
+  - subtest: 'CanvasRenderingContext2D interface: document.createElement("canvas").getContext("2d")
+      must inherit property "direction" with the proper type'
+    test: idlharness.https.html?exclude=(Document|Window|HTML.*)
+  - subtest: 'ApplicationCache interface: constant UPDATEREADY on interface prototype
+      object'
+    test: idlharness.https.html?exclude=(Document|Window|HTML.*)
+  - subtest: 'ApplicationCache interface: constant OBSOLETE on interface prototype
+      object'
+    test: idlharness.https.html?exclude=(Document|Window|HTML.*)
+  - subtest: 'CanvasRenderingContext2D interface: operation scrollPathIntoView(Path2D)'
+    test: idlharness.https.html?exclude=(Document|Window|HTML.*)
+  - subtest: 'OffscreenCanvasRenderingContext2D interface: operation translate(unrestricted
+      double, unrestricted double)'
+    test: idlharness.https.html?exclude=(Document|Window|HTML.*)
+  - subtest: 'OffscreenCanvasRenderingContext2D interface: attribute fillStyle'
+    test: idlharness.https.html?exclude=(Document|Window|HTML.*)
+  - subtest: 'Navigator interface: calling unregisterProtocolHandler(DOMString, USVString)
+      on window.navigator with too few arguments must throw TypeError'
+    test: idlharness.https.html?exclude=(Document|Window|HTML.*)
+  - subtest: 'OffscreenCanvas interface: existence and properties of interface prototype
+      object'
+    test: idlharness.https.html?exclude=(Document|Window|HTML.*)
+  - subtest: 'OffscreenCanvasRenderingContext2D interface: operation stroke(Path2D)'
+    test: idlharness.https.html?exclude=(Document|Window|HTML.*)
+  - subtest: 'OffscreenCanvasRenderingContext2D interface: operation ellipse(unrestricted
+      double, unrestricted double, unrestricted double, unrestricted double, unrestricted
+      double, unrestricted double, unrestricted double, optional boolean)'
+    test: idlharness.https.html?exclude=(Document|Window|HTML.*)
+  - subtest: ApplicationCache interface object length
+    test: idlharness.https.html?exclude=(Document|Window|HTML.*)
+  - subtest: 'OffscreenCanvasRenderingContext2D interface: operation resetTransform()'
+    test: idlharness.https.html?exclude=(Document|Window|HTML.*)
+  - subtest: 'VideoTrack interface: attribute label'
+    test: idlharness.https.html?exclude=(Document|Window|HTML.*)
+  - subtest: 'OffscreenCanvas interface: existence and properties of interface prototype
+      object''s "constructor" property'
+    test: idlharness.https.html?exclude=(Document|Window|HTML.*)
+  - subtest: 'OffscreenCanvasRenderingContext2D interface: attribute imageSmoothingQuality'
+    test: idlharness.https.html?exclude=(Document|Window|HTML.*)
+  - subtest: 'OffscreenCanvasRenderingContext2D interface: operation clip(Path2D,
+      optional CanvasFillRule)'
+    test: idlharness.https.html?exclude=(Document|Window|HTML.*)
+  - subtest: 'ApplicationCache interface: existence and properties of interface prototype
+      object'
+    test: idlharness.https.html?exclude=(Document|Window|HTML.*)
+  - subtest: 'CanvasRenderingContext2D interface: attribute imageSmoothingQuality'
+    test: idlharness.https.html?exclude=(Document|Window|HTML.*)
+  - subtest: 'DOMStringList interface: calling contains(DOMString) on location.ancestorOrigins
+      with too few arguments must throw TypeError'
+    test: idlharness.https.html?exclude=(Document|Window|HTML.*)
+  - subtest: 'ApplicationCache interface: constant CHECKING on interface object'
+    test: idlharness.https.html?exclude=(Document|Window|HTML.*)
+  - subtest: 'OffscreenCanvasRenderingContext2D interface: attribute lineJoin'
+    test: idlharness.https.html?exclude=(Document|Window|HTML.*)
+  - subtest: FormDataEvent interface object length
+    test: idlharness.https.html?exclude=(Document|Window|HTML.*)
+  - subtest: 'VideoTrackList interface: existence and properties of interface prototype
+      object'
+    test: idlharness.https.html?exclude=(Document|Window|HTML.*)
+  - subtest: Stringification of window.applicationCache
+    test: idlharness.https.html?exclude=(Document|Window|HTML.*)
+  - subtest: 'ElementInternals interface: attribute validationMessage'
+    test: idlharness.https.html?exclude=(Document|Window|HTML.*)
+  - subtest: 'VideoTrack interface: existence and properties of interface prototype
+      object''s @@unscopables property'
+    test: idlharness.https.html?exclude=(Document|Window|HTML.*)
+  - subtest: 'OffscreenCanvas interface: attribute height'
+    test: idlharness.https.html?exclude=(Document|Window|HTML.*)
+  - subtest: Stringification of location.ancestorOrigins
+    test: idlharness.https.html?exclude=(Document|Window|HTML.*)
+  - subtest: 'External interface: operation IsSearchProviderInstalled()'
+    test: idlharness.https.html?exclude=(Document|Window|HTML.*)
+  - subtest: 'CanvasRenderingContext2D interface: document.createElement("canvas").getContext("2d")
+      must inherit property "scrollPathIntoView(Path2D)" with the proper type'
+    test: idlharness.https.html?exclude=(Document|Window|HTML.*)
+  - subtest: 'AudioTrack interface: attribute id'
+    test: idlharness.https.html?exclude=(Document|Window|HTML.*)
+  - subtest: 'OffscreenCanvasRenderingContext2D interface: existence and properties
+      of interface object'
+    test: idlharness.https.html?exclude=(Document|Window|HTML.*)
+  - subtest: 'ApplicationCache interface: attribute oncached'
+    test: idlharness.https.html?exclude=(Document|Window|HTML.*)
+  - subtest: 'Navigator interface: operation unregisterProtocolHandler(DOMString,
+      USVString)'
+    test: idlharness.https.html?exclude=(Document|Window|HTML.*)
+  - subtest: 'External interface: operation AddSearchProvider()'
+    test: idlharness.https.html?exclude=(Document|Window|HTML.*)
+  - subtest: 'ApplicationCache interface: constant IDLE on interface prototype object'
+    test: idlharness.https.html?exclude=(Document|Window|HTML.*)
+  - subtest: DOMStringList must be primary interface of location.ancestorOrigins
+    test: idlharness.https.html?exclude=(Document|Window|HTML.*)
+  - subtest: 'OffscreenCanvasRenderingContext2D interface: operation createImageData(ImageData)'
+    test: idlharness.https.html?exclude=(Document|Window|HTML.*)
+  - subtest: 'TextMetrics interface: attribute hangingBaseline'
+    test: idlharness.https.html?exclude=(Document|Window|HTML.*)
+  - subtest: 'TextMetrics interface: attribute fontBoundingBoxAscent'
+    test: idlharness.https.html?exclude=(Document|Window|HTML.*)
+  - subtest: 'Location interface: window.location must have own property "ancestorOrigins"'
+    test: idlharness.https.html?exclude=(Document|Window|HTML.*)
+  - subtest: 'CanvasPattern interface: operation setTransform(optional DOMMatrix2DInit)'
+    test: idlharness.https.html?exclude=(Document|Window|HTML.*)
+  - subtest: 'DOMStringList interface: location.ancestorOrigins must inherit property
+      "length" with the proper type'
+    test: idlharness.https.html?exclude=(Document|Window|HTML.*)
+  - subtest: 'ApplicationCache interface: constant UNCACHED on interface prototype
+      object'
+    test: idlharness.https.html?exclude=(Document|Window|HTML.*)
+  - subtest: 'OffscreenCanvasRenderingContext2D interface: attribute textBaseline'
+    test: idlharness.https.html?exclude=(Document|Window|HTML.*)
+  - subtest: 'OffscreenCanvasRenderingContext2D interface: operation isPointInStroke(Path2D,
+      unrestricted double, unrestricted double)'
+    test: idlharness.https.html?exclude=(Document|Window|HTML.*)
+  - subtest: 'Navigator interface: window.navigator must inherit property "unregisterProtocolHandler(DOMString,
+      USVString)" with the proper type'
+    test: idlharness.https.html?exclude=(Document|Window|HTML.*)
+  - subtest: 'CanvasRenderingContext2D interface: document.createElement("canvas").getContext("2d")
+      must inherit property "scrollPathIntoView()" with the proper type'
+    test: idlharness.https.html?exclude=(Document|Window|HTML.*)
+  - subtest: 'SVGElement interface: attribute autofocus'
+    test: idlharness.https.html?exclude=(Document|Window|HTML.*)
+  - subtest: External interface object length
+    test: idlharness.https.html?exclude=(Document|Window|HTML.*)
+  - subtest: 'AudioTrackList interface: attribute length'
+    test: idlharness.https.html?exclude=(Document|Window|HTML.*)
+  - subtest: 'ApplicationCache interface: operation abort()'
+    test: idlharness.https.html?exclude=(Document|Window|HTML.*)
+  - subtest: 'VideoTrack interface: attribute id'
+    test: idlharness.https.html?exclude=(Document|Window|HTML.*)
+  - subtest: 'OffscreenCanvasRenderingContext2D interface: operation clip(optional
+      CanvasFillRule)'
+    test: idlharness.https.html?exclude=(Document|Window|HTML.*)
+  - subtest: 'ApplicationCache interface: operation swapCache()'
+    test: idlharness.https.html?exclude=(Document|Window|HTML.*)
+  - subtest: 'OffscreenCanvasRenderingContext2D interface: operation lineTo(unrestricted
+      double, unrestricted double)'
+    test: idlharness.https.html?exclude=(Document|Window|HTML.*)
+  - subtest: 'OffscreenCanvasRenderingContext2D interface: attribute globalAlpha'
+    test: idlharness.https.html?exclude=(Document|Window|HTML.*)
+  - subtest: 'CanvasRenderingContext2D interface: operation getContextAttributes()'
+    test: idlharness.https.html?exclude=(Document|Window|HTML.*)
+  - subtest: 'OffscreenCanvasRenderingContext2D interface: operation fillText(DOMString,
+      unrestricted double, unrestricted double, optional unrestricted double)'
+    test: idlharness.https.html?exclude=(Document|Window|HTML.*)
+  - subtest: 'OffscreenCanvasRenderingContext2D interface: attribute globalCompositeOperation'
+    test: idlharness.https.html?exclude=(Document|Window|HTML.*)
+  - subtest: 'VideoTrack interface: attribute kind'
+    test: idlharness.https.html?exclude=(Document|Window|HTML.*)
+  - subtest: 'ApplicationCache interface: attribute onnoupdate'
+    test: idlharness.https.html?exclude=(Document|Window|HTML.*)
+  - subtest: 'TextMetrics interface: attribute ideographicBaseline'
+    test: idlharness.https.html?exclude=(Document|Window|HTML.*)
+  - subtest: 'OffscreenCanvasRenderingContext2D interface: operation beginPath()'
+    test: idlharness.https.html?exclude=(Document|Window|HTML.*)
+  - subtest: 'OffscreenCanvasRenderingContext2D interface: operation fill(Path2D,
+      optional CanvasFillRule)'
+    test: idlharness.https.html?exclude=(Document|Window|HTML.*)
+  - subtest: 'OffscreenCanvasRenderingContext2D interface: existence and properties
+      of interface prototype object''s @@unscopables property'
+    test: idlharness.https.html?exclude=(Document|Window|HTML.*)
+  - subtest: External must be primary interface of window.external
+    test: idlharness.https.html?exclude=(Document|Window|HTML.*)
+  - subtest: 'ApplicationCache interface: constant OBSOLETE on interface object'
+    test: idlharness.https.html?exclude=(Document|Window|HTML.*)
+  - subtest: 'ApplicationCache interface: attribute onchecking'
+    test: idlharness.https.html?exclude=(Document|Window|HTML.*)
+  - subtest: 'VideoTrackList interface: attribute selectedIndex'
+    test: idlharness.https.html?exclude=(Document|Window|HTML.*)
+  - subtest: External interface object name
+    test: idlharness.https.html?exclude=(Document|Window|HTML.*)
+  - subtest: 'OffscreenCanvasRenderingContext2D interface: attribute lineCap'
+    test: idlharness.https.html?exclude=(Document|Window|HTML.*)
+  - subtest: 'OffscreenCanvas interface: attribute width'
+    test: idlharness.https.html?exclude=(Document|Window|HTML.*)
+  - subtest: 'OffscreenCanvasRenderingContext2D interface: attribute shadowBlur'
+    test: idlharness.https.html?exclude=(Document|Window|HTML.*)
+  - subtest: 'ApplicationCache interface: constant DOWNLOADING on interface object'
+    test: idlharness.https.html?exclude=(Document|Window|HTML.*)
+  - subtest: 'OffscreenCanvasRenderingContext2D interface: operation rect(unrestricted
+      double, unrestricted double, unrestricted double, unrestricted double)'
+    test: idlharness.https.html?exclude=(Document|Window|HTML.*)
+  - subtest: 'OffscreenCanvasRenderingContext2D interface: attribute direction'
+    test: idlharness.https.html?exclude=(Document|Window|HTML.*)
+  - subtest: 'VideoTrack interface: attribute language'
+    test: idlharness.https.html?exclude=(Document|Window|HTML.*)
+  - subtest: 'DOMStringList interface: location.ancestorOrigins must inherit property
+      "contains(DOMString)" with the proper type'
+    test: idlharness.https.html?exclude=(Document|Window|HTML.*)
+  - subtest: 'VideoTrackList interface: attribute onchange'
+    test: idlharness.https.html?exclude=(Document|Window|HTML.*)
+  - subtest: 'OffscreenCanvasRenderingContext2D interface: operation setTransform(unrestricted
+      double, unrestricted double, unrestricted double, unrestricted double, unrestricted
+      double, unrestricted double)'
+    test: idlharness.https.html?exclude=(Document|Window|HTML.*)
+  - subtest: 'DOMStringList interface: location.ancestorOrigins must inherit property
+      "item(unsigned long)" with the proper type'
+    test: idlharness.https.html?exclude=(Document|Window|HTML.*)
+  - subtest: OffscreenCanvasRenderingContext2D interface object name
+    test: idlharness.https.html?exclude=(Document|Window|HTML.*)
+  - subtest: 'OffscreenCanvasRenderingContext2D interface: operation drawImage(CanvasImageSource,
+      unrestricted double, unrestricted double)'
+    test: idlharness.https.html?exclude=(Document|Window|HTML.*)
+  - subtest: 'OffscreenCanvasRenderingContext2D interface: operation strokeRect(unrestricted
+      double, unrestricted double, unrestricted double, unrestricted double)'
+    test: idlharness.https.html?exclude=(Document|Window|HTML.*)
+  - subtest: 'OffscreenCanvasRenderingContext2D interface: operation getTransform()'
+    test: idlharness.https.html?exclude=(Document|Window|HTML.*)
+  - subtest: 'OffscreenCanvasRenderingContext2D interface: operation createImageData(long,
+      long)'
+    test: idlharness.https.html?exclude=(Document|Window|HTML.*)
+  - subtest: 'OffscreenCanvasRenderingContext2D interface: operation createLinearGradient(double,
+      double, double, double)'
+    test: idlharness.https.html?exclude=(Document|Window|HTML.*)
+  - subtest: 'AudioTrackList interface: attribute onchange'
+    test: idlharness.https.html?exclude=(Document|Window|HTML.*)
+  - subtest: 'AudioTrack interface: attribute kind'
+    test: idlharness.https.html?exclude=(Document|Window|HTML.*)
+  - subtest: 'ElementInternals interface: attribute willValidate'
+    test: idlharness.https.html?exclude=(Document|Window|HTML.*)
+  - subtest: OffscreenCanvas interface object length
+    test: idlharness.https.html?exclude=(Document|Window|HTML.*)
+  - subtest: 'OffscreenCanvasRenderingContext2D interface: operation createPattern(CanvasImageSource,
+      DOMString)'
+    test: idlharness.https.html?exclude=(Document|Window|HTML.*)
+  - subtest: 'OffscreenCanvasRenderingContext2D interface: operation transform(unrestricted
+      double, unrestricted double, unrestricted double, unrestricted double, unrestricted
+      double, unrestricted double)'
+    test: idlharness.https.html?exclude=(Document|Window|HTML.*)
+  - subtest: 'OffscreenCanvasRenderingContext2D interface: operation rotate(unrestricted
+      double)'
+    test: idlharness.https.html?exclude=(Document|Window|HTML.*)
+  - subtest: 'AudioTrack interface: existence and properties of interface object'
+    test: idlharness.https.html?exclude=(Document|Window|HTML.*)
+  - subtest: 'AudioTrackList interface: attribute onremovetrack'
+    test: idlharness.https.html?exclude=(Document|Window|HTML.*)
+  - subtest: OffscreenCanvas interface object name
+    test: idlharness.https.html?exclude=(Document|Window|HTML.*)
+  - subtest: 'OffscreenCanvasRenderingContext2D interface: operation arc(unrestricted
+      double, unrestricted double, unrestricted double, unrestricted double, unrestricted
+      double, optional boolean)'
+    test: idlharness.https.html?exclude=(Document|Window|HTML.*)
+  - subtest: 'External interface: existence and properties of interface object'
+    test: idlharness.https.html?exclude=(Document|Window|HTML.*)
+  - subtest: 'OffscreenCanvasRenderingContext2D interface: attribute textAlign'
+    test: idlharness.https.html?exclude=(Document|Window|HTML.*)
+  - subtest: 'AudioTrack interface: existence and properties of interface prototype
+      object''s @@unscopables property'
+    test: idlharness.https.html?exclude=(Document|Window|HTML.*)
+  - subtest: VideoTrack interface object name
+    test: idlharness.https.html?exclude=(Document|Window|HTML.*)
+  - subtest: 'ImageBitmapRenderingContext interface: attribute canvas'
+    test: idlharness.https.html?exclude=(Document|Window|HTML.*)
+  - subtest: 'VideoTrackList interface: attribute onremovetrack'
+    test: idlharness.https.html?exclude=(Document|Window|HTML.*)
+  - subtest: 'OffscreenCanvas interface: existence and properties of interface prototype
+      object''s @@unscopables property'
+    test: idlharness.https.html?exclude=(Document|Window|HTML.*)
+  - subtest: 'TextMetrics interface: attribute emHeightAscent'
+    test: idlharness.https.html?exclude=(Document|Window|HTML.*)
+  - subtest: 'ApplicationCache interface: constant UPDATEREADY on interface object'
+    test: idlharness.https.html?exclude=(Document|Window|HTML.*)
+  - subtest: 'AudioTrackList interface: existence and properties of interface object'
+    test: idlharness.https.html?exclude=(Document|Window|HTML.*)
+  - subtest: 'OffscreenCanvasRenderingContext2D interface: operation measureText(DOMString)'
+    test: idlharness.https.html?exclude=(Document|Window|HTML.*)
+  - subtest: 'CanvasRenderingContext2D interface: document.createElement("canvas").getContext("2d")
+      must inherit property "imageSmoothingQuality" with the proper type'
+    test: idlharness.https.html?exclude=(Document|Window|HTML.*)
+  - subtest: OffscreenCanvasRenderingContext2D interface object length
+    test: idlharness.https.html?exclude=(Document|Window|HTML.*)
+  - subtest: 'OffscreenCanvasRenderingContext2D interface: operation clearRect(unrestricted
+      double, unrestricted double, unrestricted double, unrestricted double)'
+    test: idlharness.https.html?exclude=(Document|Window|HTML.*)
+  - subtest: 'OffscreenCanvasRenderingContext2D interface: operation getLineDash()'
+    test: idlharness.https.html?exclude=(Document|Window|HTML.*)
+  - subtest: AudioTrackList interface object name
+    test: idlharness.https.html?exclude=(Document|Window|HTML.*)
+  - subtest: 'OffscreenCanvasRenderingContext2D interface: operation isPointInPath(unrestricted
+      double, unrestricted double, optional CanvasFillRule)'
+    test: idlharness.https.html?exclude=(Document|Window|HTML.*)
+  - subtest: 'ElementInternals interface: attribute validity'
+    test: idlharness.https.html?exclude=(Document|Window|HTML.*)
+  - subtest: 'OffscreenCanvasRenderingContext2D interface: operation restore()'
+    test: idlharness.https.html?exclude=(Document|Window|HTML.*)
+  - subtest: 'CanvasRenderingContext2D interface: document.createElement("canvas").getContext("2d")
+      must inherit property "getContextAttributes()" with the proper type'
+    test: idlharness.https.html?exclude=(Document|Window|HTML.*)
+  - subtest: 'ElementInternals interface: operation checkValidity()'
+    test: idlharness.https.html?exclude=(Document|Window|HTML.*)
+  - subtest: 'VideoTrack interface: existence and properties of interface prototype
+      object''s "constructor" property'
+    test: idlharness.https.html?exclude=(Document|Window|HTML.*)
+  - subtest: 'SVGElement interface: attribute oncancel'
+    test: idlharness.https.html?exclude=(Document|Window|HTML.*)
+  - subtest: 'ApplicationCache interface: attribute onupdateready'
+    test: idlharness.https.html?exclude=(Document|Window|HTML.*)
+  - subtest: ApplicationCache interface object name
+    test: idlharness.https.html?exclude=(Document|Window|HTML.*)
+  - subtest: 'ApplicationCache interface: attribute onerror'
+    test: idlharness.https.html?exclude=(Document|Window|HTML.*)
+  - subtest: 'ApplicationCache interface: constant DOWNLOADING on interface prototype
+      object'
+    test: idlharness.https.html?exclude=(Document|Window|HTML.*)
+  - subtest: AudioTrackList interface object length
+    test: idlharness.https.html?exclude=(Document|Window|HTML.*)
+  - subtest: 'VideoTrackList interface: operation getTrackById(DOMString)'
+    test: idlharness.https.html?exclude=(Document|Window|HTML.*)
+  - subtest: 'CanvasRenderingContext2D interface: calling scrollPathIntoView(Path2D)
+      on document.createElement("canvas").getContext("2d") with too few arguments
+      must throw TypeError'
+    test: idlharness.https.html?exclude=(Document|Window|HTML.*)
+  - subtest: 'VideoTrackList interface: existence and properties of interface prototype
+      object''s "constructor" property'
+    test: idlharness.https.html?exclude=(Document|Window|HTML.*)
+  - subtest: VideoTrackList interface object length
+    test: idlharness.https.html?exclude=(Document|Window|HTML.*)
+  - subtest: 'TextMetrics interface: attribute emHeightDescent'
+    test: idlharness.https.html?exclude=(Document|Window|HTML.*)
+  - subtest: 'ApplicationCache interface: existence and properties of interface object'
+    test: idlharness.https.html?exclude=(Document|Window|HTML.*)
+  - subtest: 'OffscreenCanvasRenderingContext2D interface: operation bezierCurveTo(unrestricted
+      double, unrestricted double, unrestricted double, unrestricted double, unrestricted
+      double, unrestricted double)'
+    test: idlharness.https.html?exclude=(Document|Window|HTML.*)
+  - subtest: 'ApplicationCache interface: constant CHECKING on interface prototype
+      object'
+    test: idlharness.https.html?exclude=(Document|Window|HTML.*)
+  - subtest: 'OffscreenCanvasRenderingContext2D interface: operation drawImage(CanvasImageSource,
+      unrestricted double, unrestricted double, unrestricted double, unrestricted
+      double)'
+    test: idlharness.https.html?exclude=(Document|Window|HTML.*)
+  - subtest: 'OffscreenCanvasRenderingContext2D interface: operation scale(unrestricted
+      double, unrestricted double)'
+    test: idlharness.https.html?exclude=(Document|Window|HTML.*)
+  - subtest: 'OffscreenCanvasRenderingContext2D interface: operation stroke()'
+    test: idlharness.https.html?exclude=(Document|Window|HTML.*)
+  - subtest: 'OffscreenCanvas interface: existence and properties of interface object'
+    test: idlharness.https.html?exclude=(Document|Window|HTML.*)
+  - subtest: 'OffscreenCanvasRenderingContext2D interface: existence and properties
+      of interface prototype object'
+    test: idlharness.https.html?exclude=(Document|Window|HTML.*)
+  - subtest: 'AudioTrackList interface: existence and properties of interface prototype
+      object''s "constructor" property'
+    test: idlharness.https.html?exclude=(Document|Window|HTML.*)
+  - subtest: 'ApplicationCache interface: attribute ondownloading'
+    test: idlharness.https.html?exclude=(Document|Window|HTML.*)
+  - subtest: 'OffscreenCanvasRenderingContext2D interface: attribute miterLimit'
+    test: idlharness.https.html?exclude=(Document|Window|HTML.*)
+  - subtest: 'OffscreenCanvasRenderingContext2D interface: operation isPointInPath(Path2D,
+      unrestricted double, unrestricted double, optional CanvasFillRule)'
+    test: idlharness.https.html?exclude=(Document|Window|HTML.*)
+  - subtest: 'OffscreenCanvasRenderingContext2D interface: operation drawImage(CanvasImageSource,
+      unrestricted double, unrestricted double, unrestricted double, unrestricted
+      double, unrestricted double, unrestricted double, unrestricted double, unrestricted
+      double)'
+    test: idlharness.https.html?exclude=(Document|Window|HTML.*)
+  - subtest: 'ElementInternals interface: attribute form'
+    test: idlharness.https.html?exclude=(Document|Window|HTML.*)
+  - subtest: 'ApplicationCache interface: operation update()'
+    test: idlharness.https.html?exclude=(Document|Window|HTML.*)
+  - subtest: 'OffscreenCanvasRenderingContext2D interface: attribute font'
+    test: idlharness.https.html?exclude=(Document|Window|HTML.*)
+  - subtest: 'OffscreenCanvasRenderingContext2D interface: operation putImageData(ImageData,
+      long, long, long, long, long, long)'
+    test: idlharness.https.html?exclude=(Document|Window|HTML.*)
+  - subtest: 'OffscreenCanvasRenderingContext2D interface: operation moveTo(unrestricted
+      double, unrestricted double)'
+    test: idlharness.https.html?exclude=(Document|Window|HTML.*)
+  - subtest: 'OffscreenCanvasRenderingContext2D interface: operation strokeText(DOMString,
+      unrestricted double, unrestricted double, optional unrestricted double)'
+    test: idlharness.https.html?exclude=(Document|Window|HTML.*)
+  - subtest: 'TextMetrics interface: attribute alphabeticBaseline'
+    test: idlharness.https.html?exclude=(Document|Window|HTML.*)
+  - subtest: 'VideoTrackList interface: attribute length'
+    test: idlharness.https.html?exclude=(Document|Window|HTML.*)
+  - subtest: VideoTrack interface object length
+    test: idlharness.https.html?exclude=(Document|Window|HTML.*)
+  - subtest: 'VideoTrack interface: existence and properties of interface object'
+    test: idlharness.https.html?exclude=(Document|Window|HTML.*)
+  - subtest: 'OffscreenCanvasRenderingContext2D interface: operation fillRect(unrestricted
+      double, unrestricted double, unrestricted double, unrestricted double)'
+    test: idlharness.https.html?exclude=(Document|Window|HTML.*)
+  - subtest: 'OffscreenCanvasRenderingContext2D interface: operation setTransform(optional
+      DOMMatrix2DInit)'
+    test: idlharness.https.html?exclude=(Document|Window|HTML.*)
+  - subtest: 'AudioTrack interface: attribute label'
+    test: idlharness.https.html?exclude=(Document|Window|HTML.*)
+  - subtest: 'OffscreenCanvas interface: operation transferToImageBitmap()'
+    test: idlharness.https.html?exclude=(Document|Window|HTML.*)
+  - subtest: 'ApplicationCache interface: constant IDLE on interface object'
+    test: idlharness.https.html?exclude=(Document|Window|HTML.*)
+  - subtest: 'AudioTrack interface: attribute enabled'
+    test: idlharness.https.html?exclude=(Document|Window|HTML.*)
+  - subtest: 'ApplicationCache interface: attribute onobsolete'
+    test: idlharness.https.html?exclude=(Document|Window|HTML.*)
+  - subtest: 'ElementInternals interface: operation setFormValue((File or USVString
+      or FormData)?, optional (File or USVString or FormData)?)'
+    test: idlharness.https.html?exclude=(Document|Window|HTML.*)
+  - subtest: 'OffscreenCanvasRenderingContext2D interface: attribute globalAlpha'
+    test: idlharness.worker.html
+  - subtest: 'OffscreenCanvasRenderingContext2D interface: existence and properties
+      of interface prototype object''s "constructor" property'
+    test: idlharness.worker.html
+  - subtest: 'OffscreenCanvasRenderingContext2D interface: operation measureText(DOMString)'
+    test: idlharness.worker.html
+  - subtest: 'OffscreenCanvasRenderingContext2D interface: attribute imageSmoothingEnabled'
+    test: idlharness.worker.html
+  - subtest: 'OffscreenCanvasRenderingContext2D interface: attribute shadowOffsetX'
+    test: idlharness.worker.html
+  - subtest: 'OffscreenCanvasRenderingContext2D interface: attribute shadowOffsetY'
+    test: idlharness.worker.html
+  - subtest: 'OffscreenCanvasRenderingContext2D interface: attribute strokeStyle'
+    test: idlharness.worker.html
+  - subtest: 'OffscreenCanvasRenderingContext2D interface: operation fillText(DOMString,
+      unrestricted double, unrestricted double, optional unrestricted double)'
+    test: idlharness.worker.html
+  - subtest: OffscreenCanvasRenderingContext2D interface object length
+    test: idlharness.worker.html
+  - subtest: 'OffscreenCanvasRenderingContext2D interface: operation clearRect(unrestricted
+      double, unrestricted double, unrestricted double, unrestricted double)'
+    test: idlharness.worker.html
+  - subtest: 'OffscreenCanvasRenderingContext2D interface: operation getLineDash()'
+    test: idlharness.worker.html
+  - subtest: 'CanvasGradient interface: existence and properties of interface object'
+    test: idlharness.worker.html
+  - subtest: 'OffscreenCanvasRenderingContext2D interface: attribute globalCompositeOperation'
+    test: idlharness.worker.html
+  - subtest: 'OffscreenCanvasRenderingContext2D interface: operation getImageData(long,
+      long, long, long)'
+    test: idlharness.worker.html
+  - subtest: 'OffscreenCanvasRenderingContext2D interface: operation fill(optional
+      CanvasFillRule)'
+    test: idlharness.worker.html
+  - subtest: 'OffscreenCanvasRenderingContext2D interface: operation isPointInPath(unrestricted
+      double, unrestricted double, optional CanvasFillRule)'
+    test: idlharness.worker.html
+  - subtest: 'OffscreenCanvasRenderingContext2D interface: operation restore()'
+    test: idlharness.worker.html
+  - subtest: 'OffscreenCanvasRenderingContext2D interface: attribute shadowColor'
+    test: idlharness.worker.html
+  - subtest: 'OffscreenCanvasRenderingContext2D interface: operation isPointInPath(Path2D,
+      unrestricted double, unrestricted double, optional CanvasFillRule)'
+    test: idlharness.worker.html
+  - subtest: 'Path2D interface: existence and properties of interface object'
+    test: idlharness.worker.html
+  - subtest: TextMetrics interface object length
+    test: idlharness.worker.html
+  - subtest: 'TextMetrics interface: attribute emHeightAscent'
+    test: idlharness.worker.html
+  - subtest: 'DedicatedWorkerGlobalScope interface: calling requestAnimationFrame(FrameRequestCallback)
+      on self with too few arguments must throw TypeError'
+    test: idlharness.worker.html
+  - subtest: 'OffscreenCanvasRenderingContext2D interface: operation beginPath()'
+    test: idlharness.worker.html
+  - subtest: 'OffscreenCanvasRenderingContext2D interface: attribute lineWidth'
+    test: idlharness.worker.html
+  - subtest: 'OffscreenCanvasRenderingContext2D interface: operation fill(Path2D,
+      optional CanvasFillRule)'
+    test: idlharness.worker.html
+  - subtest: 'CanvasGradient interface: operation addColorStop(double, DOMString)'
+    test: idlharness.worker.html
+  - subtest: 'OffscreenCanvasRenderingContext2D interface: existence and properties
+      of interface object'
+    test: idlharness.worker.html
+  - subtest: 'OffscreenCanvasRenderingContext2D interface: attribute filter'
+    test: idlharness.worker.html
+  - subtest: 'OffscreenCanvasRenderingContext2D interface: operation isPointInStroke(unrestricted
+      double, unrestricted double)'
+    test: idlharness.worker.html
+  - subtest: 'OffscreenCanvas interface: operation convertToBlob(optional ImageEncodeOptions)'
+    test: idlharness.worker.html
+  - subtest: 'OffscreenCanvas interface: existence and properties of interface object'
+    test: idlharness.worker.html
+  - subtest: 'OffscreenCanvasRenderingContext2D interface: existence and properties
+      of interface prototype object''s @@unscopables property'
+    test: idlharness.worker.html
+  - subtest: 'OffscreenCanvasRenderingContext2D interface: operation drawImage(CanvasImageSource,
+      unrestricted double, unrestricted double, unrestricted double, unrestricted
+      double, unrestricted double, unrestricted double, unrestricted double, unrestricted
+      double)'
+    test: idlharness.worker.html
+  - subtest: 'OffscreenCanvasRenderingContext2D interface: operation translate(unrestricted
+      double, unrestricted double)'
+    test: idlharness.worker.html
+  - subtest: 'Path2D interface: operation moveTo(unrestricted double, unrestricted
+      double)'
+    test: idlharness.worker.html
+  - subtest: 'TextMetrics interface: attribute actualBoundingBoxAscent'
+    test: idlharness.worker.html
+  - subtest: 'OffscreenCanvas interface: existence and properties of interface prototype
+      object'
+    test: idlharness.worker.html
+  - subtest: 'OffscreenCanvasRenderingContext2D interface: operation stroke(Path2D)'
+    test: idlharness.worker.html
+  - subtest: 'CanvasPattern interface: existence and properties of interface prototype
+      object''s @@unscopables property'
+    test: idlharness.worker.html
+  - subtest: 'TextMetrics interface: existence and properties of interface prototype
+      object''s @@unscopables property'
+    test: idlharness.worker.html
+  - subtest: Path2D interface object name
+    test: idlharness.worker.html
+  - subtest: 'OffscreenCanvasRenderingContext2D interface: operation quadraticCurveTo(unrestricted
+      double, unrestricted double, unrestricted double, unrestricted double)'
+    test: idlharness.worker.html
+  - subtest: 'DedicatedWorkerGlobalScope interface: self must inherit property "cancelAnimationFrame(unsigned
+      long)" with the proper type'
+    test: idlharness.worker.html
+  - subtest: 'OffscreenCanvasRenderingContext2D interface: operation resetTransform()'
+    test: idlharness.worker.html
+  - subtest: 'ImageBitmapRenderingContext interface: attribute canvas'
+    test: idlharness.worker.html
+  - subtest: 'OffscreenCanvas interface: existence and properties of interface prototype
+      object''s "constructor" property'
+    test: idlharness.worker.html
+  - subtest: 'OffscreenCanvasRenderingContext2D interface: attribute imageSmoothingQuality'
+    test: idlharness.worker.html
+  - subtest: Path2D interface object length
+    test: idlharness.worker.html
+  - subtest: 'TextMetrics interface: attribute emHeightDescent'
+    test: idlharness.worker.html
+  - subtest: 'OffscreenCanvasRenderingContext2D interface: operation lineTo(unrestricted
+      double, unrestricted double)'
+    test: idlharness.worker.html
+  - subtest: CanvasGradient interface object length
+    test: idlharness.worker.html
+  - subtest: 'Path2D interface: existence and properties of interface prototype object'
+    test: idlharness.worker.html
+  - subtest: 'OffscreenCanvasRenderingContext2D interface: operation bezierCurveTo(unrestricted
+      double, unrestricted double, unrestricted double, unrestricted double, unrestricted
+      double, unrestricted double)'
+    test: idlharness.worker.html
+  - subtest: 'OffscreenCanvasRenderingContext2D interface: operation clip(Path2D,
+      optional CanvasFillRule)'
+    test: idlharness.worker.html
+  - subtest: 'OffscreenCanvasRenderingContext2D interface: operation drawImage(CanvasImageSource,
+      unrestricted double, unrestricted double, unrestricted double, unrestricted
+      double)'
+    test: idlharness.worker.html
+  - subtest: 'Path2D interface: operation quadraticCurveTo(unrestricted double, unrestricted
+      double, unrestricted double, unrestricted double)'
+    test: idlharness.worker.html
+  - subtest: 'OffscreenCanvasRenderingContext2D interface: attribute lineCap'
+    test: idlharness.worker.html
+  - subtest: 'OffscreenCanvasRenderingContext2D interface: operation scale(unrestricted
+      double, unrestricted double)'
+    test: idlharness.worker.html
+  - subtest: 'OffscreenCanvas interface: attribute width'
+    test: idlharness.worker.html
+  - subtest: 'OffscreenCanvasRenderingContext2D interface: operation stroke()'
+    test: idlharness.worker.html
+  - subtest: 'OffscreenCanvasRenderingContext2D interface: attribute lineJoin'
+    test: idlharness.worker.html
+  - subtest: 'CanvasPattern interface: existence and properties of interface prototype
+      object''s "constructor" property'
+    test: idlharness.worker.html
+  - subtest: 'OffscreenCanvasRenderingContext2D interface: operation rect(unrestricted
+      double, unrestricted double, unrestricted double, unrestricted double)'
+    test: idlharness.worker.html
+  - subtest: 'OffscreenCanvasRenderingContext2D interface: attribute direction'
+    test: idlharness.worker.html
+  - subtest: 'OffscreenCanvasRenderingContext2D interface: attribute shadowBlur'
+    test: idlharness.worker.html
+  - subtest: 'Path2D interface: operation rect(unrestricted double, unrestricted double,
+      unrestricted double, unrestricted double)'
+    test: idlharness.worker.html
+  - subtest: 'TextMetrics interface: attribute actualBoundingBoxDescent'
+    test: idlharness.worker.html
+  - subtest: 'OffscreenCanvasRenderingContext2D interface: existence and properties
+      of interface prototype object'
+    test: idlharness.worker.html
+  - subtest: 'TextMetrics interface: attribute actualBoundingBoxLeft'
+    test: idlharness.worker.html
+  - subtest: 'OffscreenCanvas interface: attribute height'
+    test: idlharness.worker.html
+  - subtest: CanvasPattern interface object name
+    test: idlharness.worker.html
+  - subtest: 'OffscreenCanvasRenderingContext2D interface: operation setTransform(unrestricted
+      double, unrestricted double, unrestricted double, unrestricted double, unrestricted
+      double, unrestricted double)'
+    test: idlharness.worker.html
+  - subtest: 'CanvasGradient interface: existence and properties of interface prototype
+      object'
+    test: idlharness.worker.html
+  - subtest: OffscreenCanvasRenderingContext2D interface object name
+    test: idlharness.worker.html
+  - subtest: 'OffscreenCanvasRenderingContext2D interface: operation drawImage(CanvasImageSource,
+      unrestricted double, unrestricted double)'
+    test: idlharness.worker.html
+  - subtest: 'OffscreenCanvasRenderingContext2D interface: attribute miterLimit'
+    test: idlharness.worker.html
+  - subtest: 'OffscreenCanvasRenderingContext2D interface: operation strokeRect(unrestricted
+      double, unrestricted double, unrestricted double, unrestricted double)'
+    test: idlharness.worker.html
+  - subtest: 'OffscreenCanvasRenderingContext2D interface: operation save()'
+    test: idlharness.worker.html
+  - subtest: 'OffscreenCanvasRenderingContext2D interface: operation commit()'
+    test: idlharness.worker.html
+  - subtest: 'OffscreenCanvasRenderingContext2D interface: operation getTransform()'
+    test: idlharness.worker.html
+  - subtest: 'OffscreenCanvasRenderingContext2D interface: attribute lineDashOffset'
+    test: idlharness.worker.html
+  - subtest: 'CanvasGradient interface: existence and properties of interface prototype
+      object''s "constructor" property'
+    test: idlharness.worker.html
+  - subtest: 'TextMetrics interface: existence and properties of interface object'
+    test: idlharness.worker.html
+  - subtest: 'OffscreenCanvas interface: operation getContext(OffscreenRenderingContextId,
+      optional any)'
+    test: idlharness.worker.html
+  - subtest: 'OffscreenCanvasRenderingContext2D interface: operation createImageData(long,
+      long)'
+    test: idlharness.worker.html
+  - subtest: 'Path2D interface: operation lineTo(unrestricted double, unrestricted
+      double)'
+    test: idlharness.worker.html
+  - subtest: 'CanvasPattern interface: existence and properties of interface prototype
+      object'
+    test: idlharness.worker.html
+  - subtest: 'OffscreenCanvasRenderingContext2D interface: operation createImageData(ImageData)'
+    test: idlharness.worker.html
+  - subtest: 'OffscreenCanvasRenderingContext2D interface: attribute font'
+    test: idlharness.worker.html
+  - subtest: 'OffscreenCanvasRenderingContext2D interface: operation putImageData(ImageData,
+      long, long, long, long, long, long)'
+    test: idlharness.worker.html
+  - subtest: 'Path2D interface: operation arc(unrestricted double, unrestricted double,
+      unrestricted double, unrestricted double, unrestricted double, optional boolean)'
+    test: idlharness.worker.html
+  - subtest: 'DedicatedWorkerGlobalScope interface: calling cancelAnimationFrame(unsigned
+      long) on self with too few arguments must throw TypeError'
+    test: idlharness.worker.html
+  - subtest: 'OffscreenCanvasRenderingContext2D interface: operation moveTo(unrestricted
+      double, unrestricted double)'
+    test: idlharness.worker.html
+  - subtest: OffscreenCanvas interface object length
+    test: idlharness.worker.html
+  - subtest: 'OffscreenCanvasRenderingContext2D interface: operation strokeText(DOMString,
+      unrestricted double, unrestricted double, optional unrestricted double)'
+    test: idlharness.worker.html
+  - subtest: 'Path2D interface: operation closePath()'
+    test: idlharness.worker.html
+  - subtest: 'TextMetrics interface: attribute width'
+    test: idlharness.worker.html
+  - subtest: 'Path2D interface: existence and properties of interface prototype object''s
+      @@unscopables property'
+    test: idlharness.worker.html
+  - subtest: 'OffscreenCanvasRenderingContext2D interface: operation createLinearGradient(double,
+      double, double, double)'
+    test: idlharness.worker.html
+  - subtest: 'TextMetrics interface: attribute actualBoundingBoxRight'
+    test: idlharness.worker.html
+  - subtest: 'TextMetrics interface: attribute fontBoundingBoxAscent'
+    test: idlharness.worker.html
+  - subtest: 'OffscreenCanvasRenderingContext2D interface: operation createPattern(CanvasImageSource,
+      DOMString)'
+    test: idlharness.worker.html
+  - subtest: 'CanvasPattern interface: existence and properties of interface object'
+    test: idlharness.worker.html
+  - subtest: 'OffscreenCanvasRenderingContext2D interface: operation transform(unrestricted
+      double, unrestricted double, unrestricted double, unrestricted double, unrestricted
+      double, unrestricted double)'
+    test: idlharness.worker.html
+  - subtest: 'OffscreenCanvasRenderingContext2D interface: operation rotate(unrestricted
+      double)'
+    test: idlharness.worker.html
+  - subtest: 'CanvasPattern interface: operation setTransform(optional DOMMatrix2DInit)'
+    test: idlharness.worker.html
+  - subtest: 'OffscreenCanvasRenderingContext2D interface: operation setLineDash(sequence<unrestricted
+      double>)'
+    test: idlharness.worker.html
+  - subtest: 'TextMetrics interface: existence and properties of interface prototype
+      object'
+    test: idlharness.worker.html
+  - subtest: 'Path2D interface: existence and properties of interface prototype object''s
+      "constructor" property'
+    test: idlharness.worker.html
+  - subtest: 'OffscreenCanvasRenderingContext2D interface: operation createRadialGradient(double,
+      double, double, double, double, double)'
+    test: idlharness.worker.html
+  - subtest: OffscreenCanvas interface object name
+    test: idlharness.worker.html
+  - subtest: 'OffscreenCanvasRenderingContext2D interface: operation setTransform(optional
+      DOMMatrix2DInit)'
+    test: idlharness.worker.html
+  - subtest: 'CanvasGradient interface: existence and properties of interface prototype
+      object''s @@unscopables property'
+    test: idlharness.worker.html
+  - subtest: 'TextMetrics interface: attribute fontBoundingBoxDescent'
+    test: idlharness.worker.html
+  - subtest: 'Path2D interface: operation ellipse(unrestricted double, unrestricted
+      double, unrestricted double, unrestricted double, unrestricted double, unrestricted
+      double, unrestricted double, optional boolean)'
+    test: idlharness.worker.html
+  - subtest: 'OffscreenCanvasRenderingContext2D interface: operation arc(unrestricted
+      double, unrestricted double, unrestricted double, unrestricted double, unrestricted
+      double, optional boolean)'
+    test: idlharness.worker.html
+  - subtest: 'OffscreenCanvasRenderingContext2D interface: attribute textBaseline'
+    test: idlharness.worker.html
+  - subtest: 'OffscreenCanvasRenderingContext2D interface: operation isPointInStroke(Path2D,
+      unrestricted double, unrestricted double)'
+    test: idlharness.worker.html
+  - subtest: 'OffscreenCanvas interface: operation transferToImageBitmap()'
+    test: idlharness.worker.html
+  - subtest: 'OffscreenCanvasRenderingContext2D interface: operation arcTo(unrestricted
+      double, unrestricted double, unrestricted double, unrestricted double, unrestricted
+      double)'
+    test: idlharness.worker.html
+  - subtest: 'OffscreenCanvasRenderingContext2D interface: operation closePath()'
+    test: idlharness.worker.html
+  - subtest: 'Path2D interface: operation arcTo(unrestricted double, unrestricted
+      double, unrestricted double, unrestricted double, unrestricted double)'
+    test: idlharness.worker.html
+  - subtest: 'OffscreenCanvasRenderingContext2D interface: operation ellipse(unrestricted
+      double, unrestricted double, unrestricted double, unrestricted double, unrestricted
+      double, unrestricted double, unrestricted double, optional boolean)'
+    test: idlharness.worker.html
+  - subtest: 'TextMetrics interface: existence and properties of interface prototype
+      object''s "constructor" property'
+    test: idlharness.worker.html
+  - subtest: 'DedicatedWorkerGlobalScope interface: self must inherit property "requestAnimationFrame(FrameRequestCallback)"
+      with the proper type'
+    test: idlharness.worker.html
+  - subtest: 'OffscreenCanvasRenderingContext2D interface: attribute textAlign'
+    test: idlharness.worker.html
+  - subtest: 'Path2D interface: operation bezierCurveTo(unrestricted double, unrestricted
+      double, unrestricted double, unrestricted double, unrestricted double, unrestricted
+      double)'
+    test: idlharness.worker.html
+  - subtest: 'OffscreenCanvasRenderingContext2D interface: attribute fillStyle'
+    test: idlharness.worker.html
+  - subtest: 'OffscreenCanvasRenderingContext2D interface: attribute canvas'
+    test: idlharness.worker.html
+  - subtest: 'OffscreenCanvasRenderingContext2D interface: operation putImageData(ImageData,
+      long, long)'
+    test: idlharness.worker.html
+  - subtest: 'DedicatedWorkerGlobalScope interface: operation cancelAnimationFrame(unsigned
+      long)'
+    test: idlharness.worker.html
+  - subtest: 'DedicatedWorkerGlobalScope interface: operation requestAnimationFrame(FrameRequestCallback)'
+    test: idlharness.worker.html
+  - subtest: 'Path2D interface: operation addPath(Path2D, optional DOMMatrix2DInit)'
+    test: idlharness.worker.html
+  - subtest: 'OffscreenCanvas interface: existence and properties of interface prototype
+      object''s @@unscopables property'
+    test: idlharness.worker.html
+  - subtest: 'OffscreenCanvasRenderingContext2D interface: operation clip(optional
+      CanvasFillRule)'
+    test: idlharness.worker.html
+  - subtest: CanvasPattern interface object length
+    test: idlharness.worker.html
+  - subtest: 'OffscreenCanvasRenderingContext2D interface: operation fillRect(unrestricted
+      double, unrestricted double, unrestricted double, unrestricted double)'
+    test: idlharness.worker.html
+  - subtest: CanvasGradient interface object name
+    test: idlharness.worker.html
+  - subtest: TextMetrics interface object name
+    test: idlharness.worker.html
+  - subtest: 'HTMLDialogElement interface: existence and properties of interface object'
+    test: idlharness.https.html?include=HTML.*
+  - subtest: 'HTMLInputElement interface: attribute dirName'
+    test: idlharness.https.html?include=HTML.*
+  - subtest: 'HTMLVideoElement interface: attribute playsInline'
+    test: idlharness.https.html?include=HTML.*
+  - subtest: 'HTMLInputElement interface: createInput("range") must inherit property
+      "dirName" with the proper type'
+    test: idlharness.https.html?include=HTML.*
+  - subtest: 'HTMLMediaElement interface: document.createElement("audio") must inherit
+      property "audioTracks" with the proper type'
+    test: idlharness.https.html?include=HTML.*
+  - subtest: 'HTMLMediaElement interface: document.createElement("audio") must inherit
+      property "videoTracks" with the proper type'
+    test: idlharness.https.html?include=HTML.*
+  - subtest: 'HTMLInputElement interface: createInput("url") must inherit property
+      "dirName" with the proper type'
+    test: idlharness.https.html?include=HTML.*
+  - subtest: 'HTMLInputElement interface: createInput("reset") must inherit property
+      "dirName" with the proper type'
+    test: idlharness.https.html?include=HTML.*
+  - subtest: 'HTMLTextAreaElement interface: attribute dirName'
+    test: idlharness.https.html?include=HTML.*
+  - subtest: 'HTMLElement interface: document.createElement("noscript") must inherit
+      property "autocapitalize" with the proper type'
+    test: idlharness.https.html?include=HTML.*
+  - subtest: 'HTMLInputElement interface: createInput("time") must inherit property
+      "dirName" with the proper type'
+    test: idlharness.https.html?include=HTML.*
+  - subtest: 'HTMLElement interface: document.createElement("noscript") must inherit
+      property "translate" with the proper type'
+    test: idlharness.https.html?include=HTML.*
+  - subtest: 'HTMLInputElement interface: createInput("number") must inherit property
+      "dirName" with the proper type'
+    test: idlharness.https.html?include=HTML.*
+  - subtest: 'HTMLElement interface: attribute oncancel'
+    test: idlharness.https.html?include=HTML.*
+  - subtest: 'HTMLMediaElement interface: new Audio() must inherit property "audioTracks"
+      with the proper type'
+    test: idlharness.https.html?include=HTML.*
+  - subtest: HTMLDialogElement interface object length
+    test: idlharness.https.html?include=HTML.*
+  - subtest: 'HTMLElement interface: attribute autofocus'
+    test: idlharness.https.html?include=HTML.*
+  - subtest: 'HTMLInputElement interface: createInput("submit") must inherit property
+      "dirName" with the proper type'
+    test: idlharness.https.html?include=HTML.*
+  - subtest: 'HTMLInputElement interface: createInput("file") must inherit property
+      "dirName" with the proper type'
+    test: idlharness.https.html?include=HTML.*
+  - subtest: 'HTMLElement interface: document.createElement("noscript") must inherit
+      property "oncancel" with the proper type'
+    test: idlharness.https.html?include=HTML.*
+  - subtest: 'HTMLInputElement interface: createInput("text") must inherit property
+      "dirName" with the proper type'
+    test: idlharness.https.html?include=HTML.*
+  - subtest: 'HTMLDialogElement interface: operation show()'
+    test: idlharness.https.html?include=HTML.*
+  - subtest: 'HTMLInputElement interface: createInput("month") must inherit property
+      "dirName" with the proper type'
+    test: idlharness.https.html?include=HTML.*
+  - subtest: 'HTMLInputElement interface: createInput("search") must inherit property
+      "dirName" with the proper type'
+    test: idlharness.https.html?include=HTML.*
+  - subtest: 'HTMLElement interface: document.createElement("noscript") must inherit
+      property "autofocus" with the proper type'
+    test: idlharness.https.html?include=HTML.*
+  - subtest: 'HTMLElement interface: attribute enterKeyHint'
+    test: idlharness.https.html?include=HTML.*
+  - subtest: 'HTMLInputElement interface: createInput("checkbox") must inherit property
+      "dirName" with the proper type'
+    test: idlharness.https.html?include=HTML.*
+  - subtest: 'HTMLDialogElement interface: existence and properties of interface prototype
+      object'
+    test: idlharness.https.html?include=HTML.*
+  - subtest: 'HTMLMediaElement interface: document.createElement("video") must inherit
+      property "getStartDate()" with the proper type'
+    test: idlharness.https.html?include=HTML.*
+  - subtest: 'HTMLInputElement interface: createInput("color") must inherit property
+      "dirName" with the proper type'
+    test: idlharness.https.html?include=HTML.*
+  - subtest: 'HTMLInputElement interface: createInput("hidden") must inherit property
+      "dirName" with the proper type'
+    test: idlharness.https.html?include=HTML.*
+  - subtest: 'HTMLCanvasElement interface: operation transferControlToOffscreen()'
+    test: idlharness.https.html?include=HTML.*
+  - subtest: 'HTMLInputElement interface: createInput("week") must inherit property
+      "dirName" with the proper type'
+    test: idlharness.https.html?include=HTML.*
+  - subtest: 'HTMLVideoElement interface: document.createElement("video") must inherit
+      property "playsInline" with the proper type'
+    test: idlharness.https.html?include=HTML.*
+  - subtest: 'HTMLCanvasElement interface: document.createElement("canvas") must inherit
+      property "transferControlToOffscreen()" with the proper type'
+    test: idlharness.https.html?include=HTML.*
+  - subtest: 'HTMLInputElement interface: createInput("date") must inherit property
+      "dirName" with the proper type'
+    test: idlharness.https.html?include=HTML.*
+  - subtest: 'HTMLInputElement interface: createInput("datetime-local") must inherit
+      property "dirName" with the proper type'
+    test: idlharness.https.html?include=HTML.*
+  - subtest: 'HTMLDialogElement interface: attribute open'
+    test: idlharness.https.html?include=HTML.*
+  - subtest: 'HTMLDialogElement interface: operation showModal()'
+    test: idlharness.https.html?include=HTML.*
+  - subtest: 'HTMLInputElement interface: createInput("tel") must inherit property
+      "dirName" with the proper type'
+    test: idlharness.https.html?include=HTML.*
+  - subtest: 'HTMLInputElement interface: createInput("password") must inherit property
+      "dirName" with the proper type'
+    test: idlharness.https.html?include=HTML.*
+  - subtest: 'HTMLInputElement interface: document.createElement("input") must inherit
+      property "dirName" with the proper type'
+    test: idlharness.https.html?include=HTML.*
+  - subtest: 'HTMLMediaElement interface: new Audio() must inherit property "videoTracks"
+      with the proper type'
+    test: idlharness.https.html?include=HTML.*
+  - subtest: 'HTMLDialogElement interface: existence and properties of interface prototype
+      object''s "constructor" property'
+    test: idlharness.https.html?include=HTML.*
+  - subtest: 'HTMLMediaElement interface: attribute videoTracks'
+    test: idlharness.https.html?include=HTML.*
+  - subtest: 'HTMLElement interface: attribute translate'
+    test: idlharness.https.html?include=HTML.*
+  - subtest: 'HTMLInputElement interface: createInput("image") must inherit property
+      "dirName" with the proper type'
+    test: idlharness.https.html?include=HTML.*
+  - subtest: 'HTMLDialogElement interface: existence and properties of interface prototype
+      object''s @@unscopables property'
+    test: idlharness.https.html?include=HTML.*
+  - subtest: 'HTMLMediaElement interface: attribute audioTracks'
+    test: idlharness.https.html?include=HTML.*
+  - subtest: 'HTMLInputElement interface: createInput("email") must inherit property
+      "dirName" with the proper type'
+    test: idlharness.https.html?include=HTML.*
+  - subtest: HTMLDialogElement interface object name
+    test: idlharness.https.html?include=HTML.*
+  - subtest: 'HTMLInputElement interface: createInput("radio") must inherit property
+      "dirName" with the proper type'
+    test: idlharness.https.html?include=HTML.*
+  - subtest: 'HTMLTextAreaElement interface: document.createElement("textarea") must
+      inherit property "dirName" with the proper type'
+    test: idlharness.https.html?include=HTML.*
+  - subtest: 'HTMLInputElement interface: createInput("button") must inherit property
+      "dirName" with the proper type'
+    test: idlharness.https.html?include=HTML.*
+  - subtest: 'HTMLMediaElement interface: operation getStartDate()'
+    test: idlharness.https.html?include=HTML.*
+  - subtest: 'HTMLDialogElement interface: attribute returnValue'
+    test: idlharness.https.html?include=HTML.*
+  - subtest: 'HTMLMediaElement interface: new Audio() must inherit property "getStartDate()"
+      with the proper type'
+    test: idlharness.https.html?include=HTML.*
+  - subtest: 'HTMLMediaElement interface: document.createElement("video") must inherit
+      property "audioTracks" with the proper type'
+    test: idlharness.https.html?include=HTML.*
+  - subtest: 'HTMLElement interface: attribute autocapitalize'
+    test: idlharness.https.html?include=HTML.*
+  - subtest: 'HTMLDialogElement interface: operation close(optional DOMString)'
+    test: idlharness.https.html?include=HTML.*
+  - subtest: 'HTMLMediaElement interface: document.createElement("audio") must inherit
+      property "getStartDate()" with the proper type'
+    test: idlharness.https.html?include=HTML.*
+  - subtest: 'HTMLMediaElement interface: document.createElement("video") must inherit
+      property "videoTracks" with the proper type'
+    test: idlharness.https.html?include=HTML.*
+  - subtest: 'HTMLElement interface: document.createElement("noscript") must inherit
+      property "enterKeyHint" with the proper type'
+    test: idlharness.https.html?include=HTML.*
+  - subtest: 'Document interface: new Document() must inherit property "onsecuritypolicyviolation"
+      with the proper type'
+    test: idlharness.https.html?include=(Document|Window)
+  - subtest: 'Document interface: attribute oncancel'
+    test: idlharness.https.html?include=(Document|Window)
+  - subtest: 'Document interface: documentWithHandlers must inherit property "onsecuritypolicyviolation"
+      with the proper type'
+    test: idlharness.https.html?include=(Document|Window)
+  - subtest: 'Document interface: new Document() must inherit property "oncancel"
+      with the proper type'
+    test: idlharness.https.html?include=(Document|Window)
+  - subtest: 'Document interface: attribute onsecuritypolicyviolation'
+    test: idlharness.https.html?include=(Document|Window)
+  - subtest: 'Window interface: window must inherit property "oncancel" with the proper
+      type'
+    test: idlharness.https.html?include=(Document|Window)
+  - subtest: 'Document interface: iframe.contentDocument must inherit property "onsecuritypolicyviolation"
+      with the proper type'
+    test: idlharness.https.html?include=(Document|Window)
+  - subtest: 'Document interface: documentWithHandlers must inherit property "oncancel"
+      with the proper type'
+    test: idlharness.https.html?include=(Document|Window)
+  - subtest: 'Document interface: iframe.contentDocument must inherit property "oncancel"
+      with the proper type'
+    test: idlharness.https.html?include=(Document|Window)
+  - subtest: 'Window interface: attribute oncancel'
+    test: idlharness.https.html?include=(Document|Window)
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1647538
+- product: firefox
+  results:
+  - subtest: 'Window interface: attribute originIsolated'
+    test: idlharness.https.html?include=(Document|Window)
+  - subtest: 'Window interface: window must inherit property "originIsolated" with
+      the proper type'
+    test: idlharness.https.html?include=(Document|Window)
+  - subtest: 'HTMLIFrameElement interface: attribute loading'
+    test: idlharness.https.html?include=HTML.*
+  - subtest: 'HTMLMediaElement interface: document.createElement("video") must inherit
+      property "preservesPitch" with the proper type'
+    test: idlharness.https.html?include=HTML.*
+  - subtest: 'HTMLMediaElement interface: document.createElement("audio") must inherit
+      property "preservesPitch" with the proper type'
+    test: idlharness.https.html?include=HTML.*
+  - subtest: 'HTMLMediaElement interface: new Audio() must inherit property "preservesPitch"
+      with the proper type'
+    test: idlharness.https.html?include=HTML.*
+  - subtest: 'HTMLMediaElement interface: attribute preservesPitch'
+    test: idlharness.https.html?include=HTML.*
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1662664
+- product: firefox
+  results:
+  - subtest: 'ElementInternals interface: attribute shadowRoot'
+    test: idlharness.https.html?exclude=(Document|Window|HTML.*)
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1672688
+- product: chrome
+  results:
+  - subtest: 'HTMLMediaElement interface: document.createElement("video") must inherit
+      property "fastSeek(double)" with the proper type'
+    test: idlharness.https.html?include=HTML.*
+  - subtest: 'HTMLMediaElement interface: calling fastSeek(double) on document.createElement("video")
+      with too few arguments must throw TypeError'
+    test: idlharness.https.html?include=HTML.*
+  - subtest: 'HTMLMediaElement interface: document.createElement("audio") must inherit
+      property "fastSeek(double)" with the proper type'
+    test: idlharness.https.html?include=HTML.*
+  - subtest: 'HTMLMediaElement interface: calling fastSeek(double) on document.createElement("audio")
+      with too few arguments must throw TypeError'
+    test: idlharness.https.html?include=HTML.*
+  - subtest: 'HTMLMediaElement interface: new Audio() must inherit property "fastSeek(double)"
+      with the proper type'
+    test: idlharness.https.html?include=HTML.*
+  - subtest: 'HTMLMediaElement interface: calling fastSeek(double) on new Audio()
+      with too few arguments must throw TypeError'
+    test: idlharness.https.html?include=HTML.*
+  - subtest: 'HTMLMediaElement interface: operation fastSeek(double)'
+    test: idlharness.https.html?include=HTML.*
+  url: https://bugs.chromium.org/p/chromium/issues/detail?id=648207
+- product: firefox
+  results:
+  - subtest: 'SVGElement interface: attribute onslotchange'
+    test: idlharness.https.html?exclude=(Document|Window|HTML.*)
+  - subtest: 'Window interface: attribute onslotchange'
+    test: idlharness.https.html?include=(Document|Window)
+  - subtest: 'Window interface: window must inherit property "onslotchange" with the
+      proper type'
+    test: idlharness.https.html?include=(Document|Window)
+  - subtest: 'Document interface: attribute onslotchange'
+    test: idlharness.https.html?include=(Document|Window)
+  - subtest: 'Document interface: iframe.contentDocument must inherit property "onslotchange"
+      with the proper type'
+    test: idlharness.https.html?include=(Document|Window)
+  - subtest: 'Document interface: new Document() must inherit property "onslotchange"
+      with the proper type'
+    test: idlharness.https.html?include=(Document|Window)
+  - subtest: 'Document interface: documentWithHandlers must inherit property "onslotchange"
+      with the proper type'
+    test: idlharness.https.html?include=(Document|Window)
+  - subtest: 'HTMLElement interface: attribute onslotchange'
+    test: idlharness.https.html?include=HTML.*
+  - subtest: 'HTMLElement interface: document.createElement("noscript") must inherit
+      property "onslotchange" with the proper type'
+    test: idlharness.https.html?include=HTML.*
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1676455
+- product: firefox
+  results:
+  - subtest: 'TextMetrics interface: attribute hangingBaseline'
+    test: idlharness.worker.html
+  - subtest: 'TextMetrics interface: attribute alphabeticBaseline'
+    test: idlharness.worker.html
+  - subtest: 'TextMetrics interface: attribute ideographicBaseline'
+    test: idlharness.worker.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1680298
+- product: firefox
+  results:
+  - subtest: 'Window interface: attribute originAgentCluster'
+    test: idlharness.https.html?include=(Document|Window)
+  - subtest: 'Window interface: window must inherit property "originAgentCluster"
+      with the proper type'
+    test: idlharness.https.html?include=(Document|Window)
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1683909
+- product: firefox
+  results:
+  - subtest: 'HTMLSourceElement interface: attribute width'
+    test: idlharness.https.html?include=HTML.*
+  - subtest: 'HTMLSourceElement interface: attribute height'
+    test: idlharness.https.html?include=HTML.*
+  - subtest: 'HTMLSourceElement interface: document.createElement("source") must inherit
+      property "width" with the proper type'
+    test: idlharness.https.html?include=HTML.*
+  - subtest: 'HTMLSourceElement interface: document.createElement("source") must inherit
+      property "height" with the proper type'
+    test: idlharness.https.html?include=HTML.*
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1705830
