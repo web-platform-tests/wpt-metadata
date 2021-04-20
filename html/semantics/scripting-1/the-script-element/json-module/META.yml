@@ -14,3 +14,16 @@ links:
   - test: utf8.tentative.html
   - test: valid-content-type.tentative.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1692131
+- product: firefox
+  results:
+  - subtest: Imported JSON module, cross-origin with CORS
+    test: cors-crossorigin-requests.html
+  - subtest: Imported JSON module, cross-origin, missing CORS ACAO header
+    test: cors-crossorigin-requests.html
+  - subtest: Imported JSON module with parse error, cross-origin, with CORS
+    test: cors-crossorigin-requests.html
+  - subtest: JSON Modules should be loaded with or without the credentials based on
+      the same-origin-ness and the crossOrigin attribute
+    test: credentials.sub.html
+  - test: referrer-policies.sub.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1706244
