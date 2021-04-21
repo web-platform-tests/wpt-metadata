@@ -14,7 +14,6 @@ require (
 	golang.org/x/sys v0.0.0-20200223170610-d5e6a3e2c0ae // indirect
 	golang.org/x/tools v0.0.0-20200228194328-a628ca32ebc0 // indirect
 	google.golang.org/genproto v0.0.0-20200228133532-8c2c7df3a383 // indirect
-	gopkg.in/yaml.v2 v2.2.8
-	gopkg.in/yaml.v3 v3.0.0-20210107192922-496545a6307b // indirect
+	gopkg.in/yaml.v3 v3.0.0-20210107192922-496545a6307b
 	honnef.co/go/tools v0.0.1-2020.1.3 // indirect
 )
