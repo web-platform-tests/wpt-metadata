@@ -20,3 +20,34 @@ links:
   - subtest: Computed style
     test: video-aspect-ratio.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1692404
+- product: firefox
+  results:
+  - subtest: Computed style for width/height/aspect-ratio
+    test: picture-aspect-ratio.html
+  - subtest: Source width/height should take precedence over img attributes.
+    test: picture-aspect-ratio.html
+  - subtest: If the <source> has only one of width/height, we don't get an aspect
+      ratio, even if the <img> has both.
+    test: picture-aspect-ratio.html
+  - subtest: If we only have one width attribute, we should get width mapped but no
+      aspect ratio, even if <img> has attributes.
+    test: picture-aspect-ratio.html
+  - subtest: If we only have height attribute, we should get height mapped but no
+      aspect ratio, even if <img> has attributes.
+    test: picture-aspect-ratio.html
+  - subtest: Dynamically changing width/height should change computed style
+    test: picture-aspect-ratio.html
+  - subtest: Changing which <source> matches should change computed style
+    test: picture-aspect-ratio.html
+  - subtest: Percentages on source should be ignored for aspect-ratio but used for
+      width/height.
+    test: picture-aspect-ratio.html
+  - subtest: Trailing garbage should be ignored but not make the attribute invalid
+    test: picture-aspect-ratio.html
+  - subtest: 'Loaded picture test: <source> with width and height attributes, <img>
+      without width and height attributes'
+    test: picture-aspect-ratio.html
+  - subtest: 'Loaded picture test: Both <source> and <img> are with width and height
+      attributes'
+    test: picture-aspect-ratio.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1706847
