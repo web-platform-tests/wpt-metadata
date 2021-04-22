@@ -27,3 +27,17 @@ links:
     test: credentials.sub.html
   - test: referrer-policies.sub.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1706244
+- product: firefox
+  results:
+  - test: charset-2.html
+  - test: charset.html
+  - test: integrity.html
+  - subtest: text/json
+    test: valid-content-type.tentative.html
+  - subtest: application/json
+    test: valid-content-type.tentative.html
+  - subtest: text/json;boundary=something
+    test: valid-content-type.tentative.html
+  - subtest: text/json;foo=bar
+    test: valid-content-type.tentative.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1707081
