@@ -27,3 +27,23 @@ links:
     test: credentials.sub.html
   - test: referrer-policies.sub.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1706244
+- product: firefox
+  results:
+  - test: load-error-events.html
+  - subtest: inline, 200, parser-inserted
+    test: load-error-events.html
+  - subtest: inline, 404, parser-inserted
+    test: load-error-events.html
+  - subtest: src, 200, parser-inserted
+    test: load-error-events.html
+  - subtest: src, 404, parser-inserted
+    test: load-error-events.html
+  - subtest: src, 200, not parser-inserted
+    test: load-error-events.html
+  - subtest: src, 404, not parser-inserted
+    test: load-error-events.html
+  - subtest: inline, 200, not parser-inserted
+    test: load-error-events.html
+  - subtest: inline, 404, not parser-inserted
+    test: load-error-events.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1707164
