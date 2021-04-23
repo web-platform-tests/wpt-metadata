@@ -528,6 +528,9 @@ links:
         - test: aspect-ratio-intrinsic-size-005.html
         - test: aspect-ratio-intrinsic-size-006.html
         - test: table-as-item-inflexible-in-row-2.html
+        - test: table-as-item-narrow-content-2.html
+        - test: table-as-item-stretch-cross-size-2.html
+        - test: table-as-item-percent-width-cell-001.html
     - product: chrome
       url: https://bugs.chromium.org/p/chromium/issues/detail?id=581545
       results:
@@ -574,3 +577,15 @@ links:
         - test: table-as-item-inflexible-in-column-1.html
         - test: table-as-item-inflexible-in-column-2.html
         - test: table-as-item-min-height-1.html
+        - test: table-as-item-specified-height.html
+    - product: chrome
+      url: table-as-item-min-height-1.html
+      results:
+        - test: table-as-item-min-height-1.html
+    - product: chrome
+      url: https://bugs.chromium.org/p/chromium/issues/detail?id=1114306
+      results:
+        - test: negative-overflow.html
+          subtest: .flexbox 5
+        - test: negative-overflow.html
+          subtest: .flexbox 11

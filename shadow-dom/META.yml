@@ -24,71 +24,71 @@ links:
 - product: firefox
   results:
   - subtest: slotchange event must not fire synchronously.
-    test: slots-imperative-api-slotchange.tentative.html
+    test: imperative-slot-api-slotchange.html
   - subtest: slotchange event should not fire when assignments do not change assignedNodes.
-    test: slots-imperative-api-slotchange.tentative.html
+    test: imperative-slot-api-slotchange.html
   - subtest: slotchange event should not fire when same node is assigned.
-    test: slots-imperative-api-slotchange.tentative.html
+    test: imperative-slot-api-slotchange.html
   - subtest: Fire slotchange event when slot's assigned nodes changes.
-    test: slots-imperative-api-slotchange.tentative.html
+    test: imperative-slot-api-slotchange.html
   - subtest: Fire slotchange event on previous slot and new slot when node is reassigned.
-    test: slots-imperative-api-slotchange.tentative.html
+    test: imperative-slot-api-slotchange.html
   - subtest: Fire slotchange event on node assignment and when assigned node is removed.
-    test: slots-imperative-api-slotchange.tentative.html
+    test: imperative-slot-api-slotchange.html
   - subtest: Fire slotchange event when order of assigned nodes changes.
-    test: slots-imperative-api-slotchange.tentative.html
+    test: imperative-slot-api-slotchange.html
   - subtest: Fire slotchange event when assigned node is removed.
-    test: slots-imperative-api-slotchange.tentative.html
+    test: imperative-slot-api-slotchange.html
   - subtest: Fire slotchange event when removing a slot from Shadows Root that changes
       its assigned nodes.
-    test: slots-imperative-api-slotchange.tentative.html
+    test: imperative-slot-api-slotchange.html
   - subtest: No slotchange event when adding or removing an empty slot.
-    test: slots-imperative-api-slotchange.tentative.html
+    test: imperative-slot-api-slotchange.html
   - subtest: No slotchange event when adding another slotable.
-    test: slots-imperative-api-slotchange.tentative.html
+    test: imperative-slot-api-slotchange.html
   - subtest: Fire slotchange event when assign node to nested slot, ensure event bubbles
       ups.
-    test: slots-imperative-api-slotchange.tentative.html
+    test: imperative-slot-api-slotchange.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1682652
 - product: firefox
   results:
   - subtest: Imperative slot API throws exception when not slotAssignment != 'manual'.
-    test: slots-imperative-slot-api.tentative.html
+    test: imperative-slot-api.html
   - subtest: Imperative slot API throws exception when slottable parentNode != slot's
       host.
-    test: slots-imperative-slot-api.tentative.html
+    test: imperative-slot-api.html
   - subtest: Imperative slot API can assign nodes in manual slot assignment.
-    test: slots-imperative-slot-api.tentative.html
+    test: imperative-slot-api.html
   - subtest: Order of slottables is preserved in manual slot assignment.
-    test: slots-imperative-slot-api.tentative.html
+    test: imperative-slot-api.html
   - subtest: Previously assigned slottable is moved to new slot when it's reassigned.
-    test: slots-imperative-slot-api.tentative.html
+    test: imperative-slot-api.html
   - subtest: Order and assignment of nodes are preserved during multiple assignment
       in a row.
-    test: slots-imperative-slot-api.tentative.html
+    test: imperative-slot-api.html
   - subtest: Assigning invalid nodes causes exception and slot returns to its previous
       state.
-    test: slots-imperative-slot-api.tentative.html
+    test: imperative-slot-api.html
   - subtest: Moving a slot to a new host, the slot loses its previously assigned slottables.
-    test: slots-imperative-slot-api.tentative.html
+    test: imperative-slot-api.html
   - subtest: Moving a slot's tree order position within a shadow host has no impact
       on its assigned slottables.
-    test: slots-imperative-slot-api.tentative.html
+    test: imperative-slot-api.html
   - subtest: Appending slottable to different host, it loses slot assignment. It can
       be re-assigned within a new host.
-    test: slots-imperative-slot-api.tentative.html
+    test: imperative-slot-api.html
   - subtest: Previously assigned node should not be assigned if slot moved to a new
       shadow root. The slot remains empty when moved back, no trigger recalc.
-    test: slots-imperative-slot-api.tentative.html
+    test: imperative-slot-api.html
   - subtest: Previously assigned node should not be assigned if slot moved to a new
       shadow root. The slot remains empty when moved back, trigger recalc.
-    test: slots-imperative-slot-api.tentative.html
+    test: imperative-slot-api.html
   - subtest: Assignment with the same node in parameters should be ignored, last one
       wins.
-    test: slots-imperative-slot-api.tentative.html
+    test: imperative-slot-api.html
   - subtest: Removing a slot from DOM resets its slottable's slot assignment.
-    test: slots-imperative-slot-api.tentative.html
+    test: imperative-slot-api.html
   - subtest: A slot should be cleared of assigned nodes even if it's re-inserted into
       the same shadow root.
-    test: slots-imperative-slot-api.tentative.html
+    test: imperative-slot-api.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1690964
