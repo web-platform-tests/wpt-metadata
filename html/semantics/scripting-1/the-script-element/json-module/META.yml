@@ -11,7 +11,6 @@ links:
 - product: firefox
   results:
   - test: module.tentative.html
-  - test: utf8.tentative.html
   - test: valid-content-type.tentative.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1692131
 - product: firefox
@@ -47,3 +46,16 @@ links:
   - subtest: inline, 404, not parser-inserted
     test: load-error-events.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1707164
+- product: firefox
+  - test: charset-2.html
+  - test: charset.html
+  - test: integrity.html
+  - subtest: text/json
+    test: valid-content-type.tentative.html
+  - subtest: application/json
+    test: valid-content-type.tentative.html
+  - subtest: text/json;boundary=something
+    test: valid-content-type.tentative.html
+  - subtest: text/json;foo=bar
+    test: valid-content-type.tentative.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1707081
