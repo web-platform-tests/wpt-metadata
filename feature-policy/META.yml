@@ -8,31 +8,6 @@ links:
       results:
         - test: '*'
     - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1647538
-      results:
-        - test: idlharness.window.html
-          subtest: 'FeaturePolicy interface: operation getAllowlistForFeature(DOMString)'
-        - test: idlharness.window.html
-          subtest: 'FeaturePolicy interface: existence and properties of interface prototype object''s "constructor" property'
-        - test: idlharness.window.html
-          subtest: FeaturePolicy interface object name
-        - test: idlharness.window.html
-          subtest: 'FeaturePolicy interface: operation allowedFeatures()'
-        - test: idlharness.window.html
-          subtest: FeaturePolicy must be primary interface of document.featurePolicy
-        - test: idlharness.window.html
-          subtest: FeaturePolicy interface object length
-        - test: idlharness.window.html
-          subtest: 'FeaturePolicy interface: operation features()'
-        - test: idlharness.window.html
-          subtest: 'FeaturePolicy interface: existence and properties of interface object'
-        - test: idlharness.window.html
-          subtest: 'FeaturePolicy interface: operation allowsFeature(DOMString, optional DOMString)'
-        - test: idlharness.window.html
-          subtest: 'FeaturePolicy interface: existence and properties of interface prototype object''s @@unscopables property'
-        - test: idlharness.window.html
-          subtest: 'FeaturePolicy interface: existence and properties of interface prototype object'
-    - product: firefox
       url: https://bugzilla.mozilla.org/show_bug.cgi?id=1655754
       results:
         - test: picture-in-picture-allowed-by-feature-policy-attribute-redirect-on-load.https.sub.html
@@ -61,7 +36,3 @@ links:
           subtest: Feature policy "picture-in-picture" can be enabled in same-origin iframe using allow="picture-in-picture" attribute
         - test: picture-in-picture-allowed-by-feature-policy-attribute.https.sub.html
           subtest: Feature policy "picture-in-picture" can be enabled in cross-origin iframe using allow="picture-in-picture" attribute
-    - product: chrome
-      url: https://crbug.com/1133498
-      results:
-        - test: idlharness.window.html
