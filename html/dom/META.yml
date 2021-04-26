@@ -1221,3 +1221,15 @@ links:
       property "height" with the proper type'
     test: idlharness.https.html?include=HTML.*
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1705830
+- product: firefox
+  results:
+  - subtest: 'HTMLIFrameElement interface: document.createElement("iframe") must inherit
+      property "loading" with the proper type'
+    test: idlharness.https.html?include=HTML.*
+  - subtest: 'HTMLSlotElement interface: document.createElement("slot") must inherit
+      property "assign((Element or Text)...)" with the proper type'
+    test: idlharness.https.html?include=HTML.*
+  - subtest: 'HTMLSlotElement interface: calling assign((Element or Text)...) on document.createElement("slot")
+      with too few arguments must throw TypeError'
+    test: idlharness.https.html?include=HTML.*
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1707599
