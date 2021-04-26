@@ -1,11 +1,17 @@
 links:
-    - product: safari
-      url: https://bugs.webkit.org/show_bug.cgi?id=183258
-      results:
-        - test: text-justify-001.html
-          status: FAIL
-    - product: webkitgtk
-      url: https://bugs.webkit.org/show_bug.cgi?id=183258
-      results:
-        - test: text-justify-001.html
-          status: FAIL
+- product: safari
+  results:
+  - status: FAIL
+    test: text-justify-001.html
+  url: https://bugs.webkit.org/show_bug.cgi?id=183258
+- product: webkitgtk
+  results:
+  - status: FAIL
+    test: text-justify-001.html
+  url: https://bugs.webkit.org/show_bug.cgi?id=183258
+- product: firefox
+  results:
+  - test: text-justify-and-trailing-spaces-001.html
+  - test: text-justify-and-trailing-spaces-002.html
+  - test: text-justify-and-trailing-spaces-004.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1707757
