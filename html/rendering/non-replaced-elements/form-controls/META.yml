@@ -1,10 +1,23 @@
 links:
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1665703
-      results:
-        - test: placeholder-opacity-default.tentative.html
-          subtest: Default opacity value is '1'
-    - product: chrome
-      url: https://crbug.com/962927
-      results:
-        - test: button-style.html
+- product: firefox
+  results:
+  - subtest: Default opacity value is '1'
+    test: placeholder-opacity-default.tentative.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1665703
+- product: chrome
+  results:
+  - test: button-style.html
+  url: https://crbug.com/962927
+- product: firefox
+  results:
+  - subtest: <option> (in <select><optgroup>) - text-align
+    test: resets.html
+  - subtest: <optgroup> - line-height
+    test: resets.html
+  - subtest: <optgroup> - text-indent
+    test: resets.html
+  - subtest: <option> - line-height
+    test: resets.html
+  - subtest: <option> - text-indent
+    test: resets.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1708370
