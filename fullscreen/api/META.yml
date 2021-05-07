@@ -1,6 +1,15 @@
 links:
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1650459
-      results:
-        - test: element-request-fullscreen-dialog.html
-          subtest: Element#requestFullscreen() for dialog element
+- product: firefox
+  results:
+  - subtest: Element#requestFullscreen() for dialog element
+    test: element-request-fullscreen-dialog.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1650459
+- product: firefox
+  results:
+  - subtest: Document#fullscreenEnabled removing allowfullscreen after load and then
+      navigating
+    test: document-fullscreen-enabled-removing-allowfullscreen.sub.html
+  - subtest: Document#fullscreenEnabled setting allowfullscreen after document creation,
+      before response
+    test: document-fullscreen-enabled-setting-allowfullscreen-timing.sub.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1710022
