@@ -24,7 +24,6 @@ func resolveMergeConflict() {
 			toWPTMetadata(testName[1:], link)
 		}
 	}
-
 }
 
 // toWPTMetadata converts a pending metadata entry to a wpt-metadata META.yml
@@ -168,6 +167,10 @@ func getPendingMetadata() shared.MetadataResults {
 	err = json.Unmarshal(data, &metadata)
 	if err != nil {
 		panic(err)
+	}
+
+	if len(metadata) == 0 {
+		log.Println("No pending metadata")
 	}
 	return metadata
 }
