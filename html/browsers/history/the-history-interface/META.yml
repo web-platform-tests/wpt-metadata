@@ -1,6 +1,13 @@
 links:
-    - product: chrome
-      url: https://bugs.chromium.org/p/chromium/issues/detail?id=592874
-      results:
-        - test: 007.html
-          status: FAIL
+- product: chrome
+  results:
+  - status: FAIL
+    test: 007.html
+  url: https://bugs.chromium.org/p/chromium/issues/detail?id=592874
+- product: firefox
+  results:
+  - subtest: Traversing the history during beforeunload
+    test: traverse-during-beforeunload.html
+  - subtest: Traversing the history during unload
+    test: traverse-during-unload.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1710538
