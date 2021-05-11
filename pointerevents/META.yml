@@ -171,3 +171,14 @@ links:
   - test: pointerevent_pointercapture_in_frame.html?pen
   - test: pointerevent_pointercapture_in_frame.html?touch
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1700234
+- product: firefox
+  results:
+  - test: pointerevent_click_is_a_pointerevent.html?pen
+  - subtest: click using mouse is a PointerEvent
+    test: pointerevent_click_is_a_pointerevent.html?mouse
+  - test: pointerevent_click_is_a_pointerevent.html?touch
+  - subtest: click using mouse is a PointerEvent
+    test: pointerevent_click_is_a_pointerevent_multiple_clicks.html?mouse
+  - test: pointerevent_click_is_a_pointerevent_multiple_clicks.html?touch
+  - test: pointerevent_click_is_a_pointerevent_multiple_clicks.html?pen
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1710498
