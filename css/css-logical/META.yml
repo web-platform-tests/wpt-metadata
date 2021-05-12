@@ -1,61 +1,72 @@
 links:
-- product: firefox
-  results:
-  - subtest: Test that inset-inline shorthand sets longhands and serializes correctly.
-    test: logical-box-inset.html
-  - subtest: Test that inset shorthand sets longhands and serializes correctly.
-    test: logical-box-inset.html
-  - subtest: Test that inset-block shorthand sets longhands and serializes correctly.
-    test: logical-box-inset.html
-  - subtest: Test that margin-inline shorthand sets longhands and serializes correctly.
-    test: logical-box-margin.html
-  - subtest: Test that margin shorthand sets longhands and serializes correctly.
-    test: logical-box-margin.html
-  - subtest: Test that margin-block shorthand sets longhands and serializes correctly.
-    test: logical-box-margin.html
-  - subtest: Test that padding-block shorthand sets longhands and serializes correctly.
-    test: logical-box-padding.html
-  - subtest: Test that padding-inline shorthand sets longhands and serializes correctly.
-    test: logical-box-padding.html
-  - subtest: Test that padding shorthand sets longhands and serializes correctly.
-    test: logical-box-padding.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=137688
-- product: firefox
-  results:
-  - subtest: Logical shorthands follow the usual prioritization based on number of
-      component longhands
-    test: animation-001.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1289155
-- product: firefox
-  results:
-  - subtest: Physical shorthands win over logical shorthands
-    test: animation-001.html
-  - subtest: Physical shorthands using variables win over logical shorthands
-    test: animation-001.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1520069
-- product: safari
-  results:
-  - status: FAIL
-    test: animation-003.tentative.html
-  url: https://bugs.webkit.org/show_bug.cgi?id=190032
-- product: webkitgtk
-  results:
-  - status: FAIL
-    test: animation-003.tentative.html
-  url: https://bugs.webkit.org/show_bug.cgi?id=190032
-- product: chrome
-  results:
-  - status: FAIL
-    test: animation-002.html
-  url: https://crbug.com/865579
-- product: firefox
-  results:
-  - subtest: Logical longhands with variables - margin-inline
-    test: logicalprops-with-variables.html
-  - subtest: Logical shorthand with 1 variable - margin-inline
-    test: logicalprops-with-variables.html
-  - subtest: Logical shorthand with 2 variables - margin-inline
-    test: logicalprops-with-variables.html
-  - subtest: Logical shorthand with 1 variable and 1 length - margin-inline
-    test: logicalprops-with-variables.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1708715
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=137688
+      results:
+        - test: logical-box-inset.html
+          subtest: Test that inset-inline shorthand sets longhands and serializes correctly.
+        - test: logical-box-inset.html
+          subtest: Test that inset shorthand sets longhands and serializes correctly.
+        - test: logical-box-inset.html
+          subtest: Test that inset-block shorthand sets longhands and serializes correctly.
+        - test: logical-box-margin.html
+          subtest: Test that margin-inline shorthand sets longhands and serializes correctly.
+        - test: logical-box-margin.html
+          subtest: Test that margin shorthand sets longhands and serializes correctly.
+        - test: logical-box-margin.html
+          subtest: Test that margin-block shorthand sets longhands and serializes correctly.
+        - test: logical-box-padding.html
+          subtest: Test that padding-block shorthand sets longhands and serializes correctly.
+        - test: logical-box-padding.html
+          subtest: Test that padding-inline shorthand sets longhands and serializes correctly.
+        - test: logical-box-padding.html
+          subtest: Test that padding shorthand sets longhands and serializes correctly.
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1289155
+      results:
+        - test: animation-001.html
+          subtest: Logical shorthands follow the usual prioritization based on number of component longhands
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1520069
+      results:
+        - test: animation-001.html
+          subtest: Physical shorthands win over logical shorthands
+        - test: animation-001.html
+          subtest: Physical shorthands using variables win over logical shorthands
+    - product: safari
+      url: https://bugs.webkit.org/show_bug.cgi?id=190032
+      results:
+        - test: animation-003.tentative.html
+          status: FAIL
+    - product: webkitgtk
+      url: https://bugs.webkit.org/show_bug.cgi?id=190032
+      results:
+        - test: animation-003.tentative.html
+          status: FAIL
+    - product: chrome
+      url: https://crbug.com/865579
+      results:
+        - test: animation-002.html
+          status: FAIL
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1708715
+      results:
+        - test: logicalprops-with-variables.html
+          subtest: Logical longhands with variables - margin-inline
+        - test: logicalprops-with-variables.html
+          subtest: Logical shorthand with 1 variable - margin-inline
+        - test: logicalprops-with-variables.html
+          subtest: Logical shorthand with 2 variables - margin-inline
+        - test: logicalprops-with-variables.html
+          subtest: Logical shorthand with 1 variable and 1 length - margin-inline
+    - product: chrome
+      url: https://bugs.chromium.org/p/chromium/issues/detail?id=538475
+      results:
+        - test: logical-box-inset.html
+        - test: logical-box-border-color.html
+        - test: logical-box-border-shorthands.html
+        - test: logical-box-border-style.html
+        - test: logical-box-border-width.html
+        - test: logical-box-border-radius.html
+        - test: logical-box-margin.html
+        - test: logical-box-padding.html
+        - test: logical-box-size.html
