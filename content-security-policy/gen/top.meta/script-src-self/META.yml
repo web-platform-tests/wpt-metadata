@@ -1,0 +1,12 @@
+links:
+    - product: safari
+      url: https://bugs.webkit.org/show_bug.cgi?id=225862
+      results:
+        - test: worklet-audio.https.html
+          subtest: 'Content Security Policy: Expects blocked for worklet-audio to cross-https origin and keep-origin redirection from https context.'
+        - test: worklet-audio.https.html
+          subtest: 'Content Security Policy: Expects blocked for worklet-audio to cross-https origin and no-redirect redirection from https context.'
+        - test: worklet-audio.https.html
+          subtest: 'Content Security Policy: Expects blocked for worklet-audio to cross-https origin and swap-origin redirection from https context.'
+        - test: worklet-audio.https.html
+          subtest: 'Content Security Policy: Expects blocked for worklet-audio to same-https origin and swap-origin redirection from https context.'
