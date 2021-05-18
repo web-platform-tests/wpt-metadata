@@ -9,6 +9,7 @@ import (
 	"os"
 	"path"
 
+	"github.com/web-platform-tests/wpt-metadata/go_util"
 	"github.com/web-platform-tests/wpt.fyi/shared"
 	"gopkg.in/yaml.v3"
 )
@@ -77,26 +78,7 @@ func writePendingMetadata(testName string, link shared.MetadataLink) {
 		log.Fatal(err)
 	}
 
-	// First check whether we have an existing link in this META.yml; if
-	// so we just want to append our testname to the set of tests associated
-	// with it.
-	hasAdded := false
-	for index, existingLink := range metadata.Links {
-		if existingLink.URL == link.URL && link.Product.MatchesProductSpec(existingLink.Product) {
-			fmt.Println("APPEND-LINK: for test", testName, "with url", link.URL)
-			metadata.Links[index].Results = append(existingLink.Results, link.Results...)
-			hasAdded = true
-			break
-		}
-	}
-
-	// Otherwise, this is a brand new entry in the META.yml, so add a new
-	// link to it.
-	if !hasAdded {
-		fmt.Println("NEW-LINK: for test", testName, "with url", link.URL)
-		metadata.Links = append(metadata.Links, link)
-	}
-
+	go_util.AppendPendingMetadata(testName, link, &metadata)
 	writeToFile(metadata, f)
 }
 
