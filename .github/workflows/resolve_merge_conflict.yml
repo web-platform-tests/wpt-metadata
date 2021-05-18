@@ -23,12 +23,11 @@ jobs:
       uses: peter-evans/create-pull-request@v3
       with:
         token: ${{ secrets.GITHUB_TOKEN }}
+        author: wpt-pr-bot <wpt-pr-bot@users.noreply.github.com>
         title: "Resolve pending metadata"
         commit-message: "Reapply pending metadata from /api/metadata/pending in wpt.fyi"
         body: |
-          This automated pull request reapplies pending metadata to the head of
-
-          the wpt-metadata repository.
+          This automated pull request reapplies pending metadata to the head of the wpt-metadata repository.
         branch: actions/merge-conflicts
         delete-branch: true
         labels: do not merge yet

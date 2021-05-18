@@ -21,26 +21,30 @@ func resolveMergeConflict() {
 	pendingMetadata := getPendingMetadata()
 	for testName, links := range pendingMetadata {
 		for _, link := range links {
-			toWPTMetadata(testName[1:], link)
+			writePendingMetadata(testName[1:], link)
 		}
 	}
 }
 
-// toWPTMetadata converts a pending metadata entry to a wpt-metadata META.yml
+// writePendingMetadata converts a pending metadata entry to a wpt-metadata META.yml
 // entry and writes it to disk.
+//
+// When two people try to link different bugs under the same directory at the same time,
+// one of two PRs will merge first, and the other PR will likely be stuck due to merge conflict.
+// This function will reapply the pending metadata from /api/metadata/pending to the head of
+// the wpt-metadat repo.
 //
 // Directories and META.yml files are created as needed, or an existing one may
 // be updated.
-func toWPTMetadata(testName string, link shared.MetadataLink) {
+func writePendingMetadata(testName string, link shared.MetadataLink) {
 	dirpath := path.Dir(testName)
-	testpath := path.Base(testName)
-	createDirIfNeeded(dirpath)
+	os.MkdirAll(dirpath, os.ModePerm)
 
 	// Open the META.yml file that we would write to, if it exists. In the case
 	// where it does exist we don't want to overwrite the file, so open in
 	// read-write-or-create mode.
 	filepath := dirpath + "/META.yml"
-	f, err := os.OpenFile(filepath, os.O_RDWR|os.O_CREATE, 0755)
+	f, err := os.OpenFile(filepath, os.O_RDWR|os.O_CREATE, 0644)
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -56,15 +60,7 @@ func toWPTMetadata(testName string, link shared.MetadataLink) {
 		// shared.Metadata representation for our expectation and write it out.
 		fmt.Println("CREATED-META-YML: for test", testName, "with url", link.URL)
 		metadata := shared.Metadata{
-			Links: []shared.MetadataLink{
-				{
-					Product: link.Product,
-					URL:     link.URL,
-					Results: []shared.MetadataTestResult{{
-						TestPath: testpath,
-					}},
-				},
-			},
+			Links: []shared.MetadataLink{link},
 		}
 		writeToFile(metadata, f)
 		return
@@ -81,62 +77,32 @@ func toWPTMetadata(testName string, link shared.MetadataLink) {
 		log.Fatal(err)
 	}
 
-	// First check whether we have an existing crbug link in this META.yml; if
+	// First check whether we have an existing link in this META.yml; if
 	// so we just want to append our testname to the set of tests associated
 	// with it.
 	hasAdded := false
 	for index, existingLink := range metadata.Links {
-		if !link.Product.MatchesProductSpec(existingLink.Product) {
-			continue
-		}
-
-		// Check whether we are already listed in this entry.
-		for _, result := range existingLink.Results {
-			if result.TestPath == testpath {
-				fmt.Println("EXISTING-LINK: for test", testName, "with url", link.URL)
-				return
-			}
-		}
-
-		if existingLink.URL == link.URL {
+		if existingLink.URL == link.URL && link.Product.MatchesProductSpec(existingLink.Product) {
 			fmt.Println("APPEND-LINK: for test", testName, "with url", link.URL)
-			metadata.Links[index].Results = append(existingLink.Results, shared.MetadataTestResult{TestPath: testpath})
+			metadata.Links[index].Results = append(existingLink.Results, link.Results...)
 			hasAdded = true
 			break
 		}
 	}
 
-	// Otherwise, this is a brand new crbug entry in the META.yml, so add a new
+	// Otherwise, this is a brand new entry in the META.yml, so add a new
 	// link to it.
 	if !hasAdded {
 		fmt.Println("NEW-LINK: for test", testName, "with url", link.URL)
-		newLink := shared.MetadataLink{
-			Product: link.Product,
-			URL:     link.URL,
-			Results: []shared.MetadataTestResult{{
-				TestPath: testpath,
-			}},
-		}
-		metadata.Links = append(metadata.Links, newLink)
+		metadata.Links = append(metadata.Links, link)
 	}
 
 	writeToFile(metadata, f)
 }
 
-// createDirIfNeeded is a helper function to create a directory if it doesn't
-// already exist. It handles recursive directory creation.
-func createDirIfNeeded(dir string) {
-	_, err := os.Stat(dir)
-	if !os.IsNotExist(err) {
-		return
-	}
-	os.MkdirAll(dir, os.ModePerm)
-}
-
 // writeToFile writes out a wpt.fyi shared.Metadata entry to a given file handle.
 //
-// TODO: This seems to cause a lot of existing metadata files to be completely
-// rewritten; what's the underlying problem here?
+// TODO(kyleju): https://github.com/web-platform-tests/wpt.fyi/issues/1957.
 func writeToFile(metadata shared.Metadata, f *os.File) {
 	metadataBytes, err := yaml.Marshal(metadata)
 	if err != nil {
@@ -149,24 +115,25 @@ func writeToFile(metadata shared.Metadata, f *os.File) {
 	}
 }
 
-// getPendingMetadata fetches pending metadata from wpt.fyi/api/metadata/pending.
+// getPendingMetadata fetches pending metadata from
+// https://github.com/web-platform-tests/wpt.fyi/blob/main/api/README.md#apimetadatapending.
 func getPendingMetadata() shared.MetadataResults {
 	log.Println("Fetching pending metadata")
 	resp, err := http.Get("https://wpt.fyi/api/metadata/pending")
 	if err != nil {
-		panic(err)
+		log.Fatal(err)
 	}
 	defer resp.Body.Close()
 
 	data, err := ioutil.ReadAll(resp.Body)
 	if err != nil {
-		panic(err)
+		log.Fatal(err)
 	}
 
 	var metadata shared.MetadataResults
 	err = json.Unmarshal(data, &metadata)
 	if err != nil {
-		panic(err)
+		log.Fatal(err)
 	}
 
 	if len(metadata) == 0 {
