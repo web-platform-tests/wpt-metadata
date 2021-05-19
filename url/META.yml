@@ -51,3 +51,7 @@ links:
           subtest: "Parsing: <sc://\x1F!\"$&'()*+,-.;=_`{|}~/> against <about:blank>"
         - test: url-origin.any.worker.html
           subtest: "Origin parsing: <http://\x1F!\"$&'()*+,-.;=_`{|}~/> against <about:blank>"
+    - product: chrome
+      url: https://crbug.com/1018721
+      results:
+        - test: url-setters.html
