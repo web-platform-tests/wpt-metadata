@@ -829,3 +829,12 @@ links:
         - test: registered-property-initial.html
         - test: self-utils.html
         - test: typedom.html
+    - product: chrome
+      url: https://bugs.chromium.org/p/chromium/issues/detail?id=911156
+      results:
+        - test: at-property.html
+          subtest: Rule applied [<transform-function>, rotateX(0deg), false]
+        - test: at-property.html
+          subtest: Rule applied [<transform-list>, rotateX(0deg), false]
+        - test: at-property.html
+          subtest: Rule applied [<transform-list>, rotateX(0deg) translateX(10px), false]
