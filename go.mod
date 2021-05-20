@@ -3,17 +3,15 @@ module github.com/web-platform-tests/wpt-metadata
 go 1.13
 
 require (
-	cloud.google.com/go/datastore v1.1.0 // indirect
+	cloud.google.com/go/logging v1.4.0 // indirect
 	github.com/deckarep/golang-set v1.7.1
-	github.com/golang/protobuf v1.3.4 // indirect
-	github.com/stretchr/testify v1.5.1
-	github.com/web-platform-tests/wpt.fyi v0.0.0-20200228203122-a83ed75d6423
-	golang.org/x/crypto v0.0.0-20200221231518-2aa609cf4a9d // indirect
-	golang.org/x/exp v0.0.0-20200224162631-6cc2880d07d6 // indirect
-	golang.org/x/net v0.0.0-20200226121028-0de0cce0169b // indirect
-	golang.org/x/sys v0.0.0-20200223170610-d5e6a3e2c0ae // indirect
-	golang.org/x/tools v0.0.0-20200228194328-a628ca32ebc0 // indirect
-	google.golang.org/genproto v0.0.0-20200228133532-8c2c7df3a383 // indirect
+	github.com/stretchr/testify v1.7.0
+	github.com/web-platform-tests/wpt.fyi v0.0.0-20210419164438-b38fe796a603
+	golang.org/x/crypto v0.0.0-20210415154028-4f45737414dc // indirect
+	golang.org/x/net v0.0.0-20210420210106-798c2154c571 // indirect
+	golang.org/x/sys v0.0.0-20210420205809-ac73e9fd8988 // indirect
+	google.golang.org/api v0.45.0 // indirect
+	google.golang.org/genproto v0.0.0-20210420162539-3c870d7478d2 // indirect
+	gopkg.in/check.v1 v1.0.0-20190902080502-41f04d3bba15 // indirect
 	gopkg.in/yaml.v3 v3.0.0-20210107192922-496545a6307b
-	honnef.co/go/tools v0.0.1-2020.1.3 // indirect
 )

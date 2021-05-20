@@ -1,0 +1,33 @@
+name: 'Resolve Merge Conflicts'
+on:
+  schedule:
+    - cron: '0 0 * * *'
+  workflow_dispatch:
+jobs:
+  resolve-merge-conflicts:
+    runs-on: ubuntu-20.04
+    steps:
+    - uses: actions/checkout@v2
+
+    - uses: actions/setup-go@v2
+      with:
+        go-version: 1.13.x
+
+    - name: build main
+      run: go build main.go
+
+    - name: run main
+      run: ./main
+
+    - name: Create pull request
+      uses: peter-evans/create-pull-request@v3
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+        author: wpt-pr-bot <wpt-pr-bot@users.noreply.github.com>
+        title: "Resolve pending metadata"
+        commit-message: "Reapply pending metadata from /api/metadata/pending in wpt.fyi"
+        body: |
+          This automated pull request reapplies pending metadata to the head of the wpt-metadata repository.
+        branch: actions/merge-conflicts
+        delete-branch: true
+        labels: do not merge yet
