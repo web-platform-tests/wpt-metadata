@@ -1,19 +1,30 @@
 links:
-    - product: chrome
-      url: https://bugs.chromium.org/p/chromium/issues/detail?id=793204
-      results:
-        - test: default-iterator-object.html
-          status: FAIL
-        - test: class-string-iterator-prototype-object.any.worker.html
-        - test: iterator-prototype-object.html
-        - test: class-string-iterator-prototype-object.any.html
-    - product: chrome
-      url: https://crbug.com/947523
-      results:
-        - test: constructors.html
-          status: FAIL
-    - product: chrome
-      url: https://crbug.com/715122
-      results:
-        - test: sequence-conversion.html
-          status: FAIL
+- product: chrome
+  results:
+  - status: FAIL
+    test: default-iterator-object.html
+  - test: class-string-iterator-prototype-object.any.worker.html
+  - test: iterator-prototype-object.html
+  - test: class-string-iterator-prototype-object.any.html
+  url: https://bugs.chromium.org/p/chromium/issues/detail?id=793204
+- product: chrome
+  results:
+  - status: FAIL
+    test: constructors.html
+  url: https://crbug.com/947523
+- product: chrome
+  results:
+  - status: FAIL
+    test: sequence-conversion.html
+  url: https://crbug.com/715122
+- product: firefox
+  results:
+  - subtest: '[[GetOwnProperty]]'
+    test: window-named-properties-object.html
+  - subtest: '[[HasProperty]]'
+    test: window-named-properties-object.html
+  - subtest: '[[Get]]'
+    test: window-named-properties-object.html
+  - subtest: '[[OwnPropertyKeys]]'
+    test: window-named-properties-object.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1712277
