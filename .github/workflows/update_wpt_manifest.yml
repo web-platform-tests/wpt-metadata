@@ -1,0 +1,25 @@
+name: 'Update WPT Manifest'
+on:
+  schedule:
+    - cron: '0 0 * * *'
+  workflow_dispatch:
+jobs:
+  resolve-merge-conflicts:
+    runs-on: ubuntu-20.04
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Download latest WPT Manifest
+      run: curl -s -S https://wpt.fyi/api/manifest?sha=latest >> go_test/WPT_MANIFEST 
+
+    - name: Create pull request
+      uses: peter-evans/create-pull-request@v3
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+        author: wpt-pr-bot <wpt-pr-bot@users.noreply.github.com>
+        title: "Update latest WPT Manifest for go_test"
+        commit-message: "Run curl -s -S https://wpt.fyi/api/manifest?sha=latest >> WPT_MANIFEST"
+        body: |
+          This automated pull request updates the WPT_MANIFEST file to the latest WPT manifest daily.
+        branch: actions/wpt-manifest
+        delete-branch: true
