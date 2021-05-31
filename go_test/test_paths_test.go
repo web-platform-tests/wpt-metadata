@@ -8,8 +8,6 @@ import (
 	"encoding/json"
 	"fmt"
 	"io/ioutil"
-	"log"
-	"net/http"
 	"os"
 	"path"
 	"path/filepath"
@@ -26,24 +24,18 @@ import (
 // TestResultsTestPaths enumerates all the metadata in the repo and ensures that
 // a test by the given name exists in the latest manifest.
 func TestResultsTestPaths(t *testing.T) {
-	log.Println("Fetching latest manifest...")
-	resp, err := http.Get("https://wpt.fyi/api/manifest?sha=latest")
+	wpt_manifest, err := os.Open("MANIFEST.json")
 	if err != nil {
 		panic(err)
 	}
-	defer resp.Body.Close()
-	data, err := ioutil.ReadAll(resp.Body)
+	defer wpt_manifest.Close()
+
+	data, err := ioutil.ReadAll(wpt_manifest)
 	if err != nil {
 		panic(err)
-	}
-	sha := resp.Header.Get("x-wpt-sha")
-	if sha == "" {
-		sha = shared.LatestSHA
-	} else {
-		sha = sha[:7]
 	}
 
-	t.Run(fmt.Sprintf("Manifest @ %s", sha), func(t *testing.T) {
+	t.Run(fmt.Sprintf("Run against WPT's MANIFEST.json"), func(t *testing.T) {
 		var manifest shared.Manifest
 		err := json.Unmarshal(data, &manifest)
 		if err != nil {
@@ -92,7 +84,7 @@ func TestResultsTestPaths(t *testing.T) {
 							}
 							assert.Nil(t, err)
 							assert.True(t, ok,
-								"%s is not a test path found in the manifest @ %s", fullPath, sha)
+								"%s is not a test path found in the manifest", fullPath)
 						})
 					}
 				}
