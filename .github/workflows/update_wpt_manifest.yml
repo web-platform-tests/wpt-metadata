@@ -18,7 +18,7 @@ jobs:
         token: ${{ secrets.GITHUB_TOKEN }}
         author: wpt-pr-bot <wpt-pr-bot@users.noreply.github.com>
         title: "Update latest WPT Manifest for go_test"
-        commit-message: "Run curl -s -S https://wpt.fyi/api/manifest?sha=latest >> WPT_MANIFEST"
+        commit-message: "Run curl -s -S https://wpt.fyi/api/manifest?sha=latest >> go_test/MANIFEST.json"
         body: |
           This automated pull request updates the MANIFEST.json file to the latest WPT manifest daily. GitHub checks run against this manifest. If checks fail in this PR, the failing metadata should be either renamed or deleted according to the WPT repository.
         branch: actions/wpt-manifest
