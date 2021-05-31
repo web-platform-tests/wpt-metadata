@@ -24,7 +24,7 @@ import (
 // TestResultsTestPaths enumerates all the metadata in the repo and ensures that
 // a test by the given name exists in the latest manifest.
 func TestResultsTestPaths(t *testing.T) {
-	wpt_manifest, err := os.Open("WPT_MANIFEST")
+	wpt_manifest, err := os.Open("MANIFEST.json")
 	if err != nil {
 		panic(err)
 	}
@@ -35,7 +35,7 @@ func TestResultsTestPaths(t *testing.T) {
 		panic(err)
 	}
 
-	t.Run(fmt.Sprintf("Run against WPT_MANIFEST"), func(t *testing.T) {
+	t.Run(fmt.Sprintf("Run against WPT's MANIFEST.json"), func(t *testing.T) {
 		var manifest shared.Manifest
 		err := json.Unmarshal(data, &manifest)
 		if err != nil {
