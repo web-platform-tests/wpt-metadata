@@ -14,3 +14,8 @@ links:
         - test: declarations-trim-whitespace.html
         - test: unicode-range-selector.html
         - test: urange-parsing.html
+    - product: chrome
+      url: https://crbug.com/841960
+      results:
+        - test: decimal-points-in-numbers.html
+          subtest: decimal point after digits is invalid in a dimension
