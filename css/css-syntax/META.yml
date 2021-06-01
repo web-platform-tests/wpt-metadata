@@ -34,3 +34,8 @@ links:
           subtest: '--foo-6: bar !important ;'
         - test: declarations-trim-whitespace.html
           subtest: --foo-9:bar (then ws until end of rule)
+    - product: chrome
+      url: https://crbug.com/1215056
+      results:
+        - test: unicode-range-selector.html
+          subtest: Unicode range is not a token, and doesn't cause confusion in selectors
