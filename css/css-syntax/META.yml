@@ -53,3 +53,22 @@ links:
           subtest: '"u/**/+/**/?" => "U+0-F"'
         - test: urange-parsing.html
           subtest: u+a is a valid selector
+    - product: chrome
+      url: https://crbug.com/1215071
+      results:
+        - test: urange-parsing.html
+          subtest: '"u+aaaaaa" is invalid'
+        - test: urange-parsing.html
+          subtest: '"u+a?????" is invalid'
+        - test: urange-parsing.html
+          subtest: '"u+22222a" is invalid'
+        - test: urange-parsing.html
+          subtest: '"u+222222" is invalid'
+        - test: urange-parsing.html
+          subtest: '"u+2?????" is invalid'
+        - test: urange-parsing.html
+          subtest: '"u+222222-22222a" is invalid'
+        - test: urange-parsing.html
+          subtest: '"u+0-222222" is invalid'
+        - test: urange-parsing.html
+          subtest: '"u+??????" is invalid'
