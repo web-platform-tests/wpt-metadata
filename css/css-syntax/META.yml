@@ -19,3 +19,18 @@ links:
       results:
         - test: decimal-points-in-numbers.html
           subtest: decimal point after digits is invalid in a dimension
+    - product: chrome
+      url: https://crbug.com/661854
+      results:
+        - test: declarations-trim-whitespace.html
+          subtest: '--foo-2: bar;'
+        - test: declarations-trim-whitespace.html
+          subtest: --foo-3:bar ;
+        - test: declarations-trim-whitespace.html
+          subtest: '--foo-4: bar ;'
+        - test: declarations-trim-whitespace.html
+          subtest: '--foo-5: bar !important;'
+        - test: declarations-trim-whitespace.html
+          subtest: '--foo-6: bar !important ;'
+        - test: declarations-trim-whitespace.html
+          subtest: --foo-9:bar (then ws until end of rule)
