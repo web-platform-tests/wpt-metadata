@@ -39,3 +39,17 @@ links:
       results:
         - test: unicode-range-selector.html
           subtest: Unicode range is not a token, and doesn't cause confusion in selectors
+        - test: urange-parsing.html
+          subtest: '"u/**/+/**/a/**/?" => "U+A0-AF"'
+        - test: urange-parsing.html
+          subtest: '"u/**/+0a/**/?" => "U+A0-AF"'
+        - test: urange-parsing.html
+          subtest: '"u/**/+0/**/?" => "U+0-F"'
+        - test: urange-parsing.html
+          subtest: '"u/**/+0/**/-0a" => "U+0-A"'
+        - test: urange-parsing.html
+          subtest: '"u/**/+0/**/-1" => "U+0-1"'
+        - test: urange-parsing.html
+          subtest: '"u/**/+/**/?" => "U+0-F"'
+        - test: urange-parsing.html
+          subtest: u+a is a valid selector
