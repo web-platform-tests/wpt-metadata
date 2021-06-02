@@ -19,6 +19,46 @@ links:
         - test: predefined-007.html
         - test: predefined-009.html
         - test: predefined-012.html
+        - test: color-function-parsing.html
+          subtest: Basic sRGB white
+        - test: color-function-parsing.html
+          subtest: White with lots of space
+        - test: color-function-parsing.html
+          subtest: sRGB color
+        - test: color-function-parsing.html
+          subtest: Different case for sRGB
+        - test: color-function-parsing.html
+          subtest: sRGB color with unnecessary decimals
+        - test: color-function-parsing.html
+          subtest: sRGB white with 0.5 alpha
+        - test: color-function-parsing.html
+          subtest: sRGB white with 0 alpha
+        - test: color-function-parsing.html
+          subtest: sRGB white with 50% alpha
+        - test: color-function-parsing.html
+          subtest: sRGB white with 0% alpha
+        - test: color-function-parsing.html
+          subtest: One missing component is 0
+        - test: color-function-parsing.html
+          subtest: Two missing components are 0
+        - test: color-function-parsing.html
+          subtest: All components missing
+        - test: color-function-parsing.html
+          subtest: Display P3 color
+        - test: color-function-parsing.html
+          subtest: Different case for Display P3
+        - test: color-function-parsing.html
+          subtest: sRGB color with negative component should clamp to 0
+        - test: color-function-parsing.html
+          subtest: sRGB color with component > 1 should clamp
+        - test: color-function-parsing.html
+          subtest: Display P3 color with negative component should clamp to 0
+        - test: color-function-parsing.html
+          subtest: Display P3 color with component > 1 should clamp
+        - test: color-function-parsing.html
+          subtest: Alpha > 1 should clamp
+        - test: color-function-parsing.html
+          subtest: Negative alpha should clamp
     - product: firefox
       url: https://bugzilla.mozilla.org/show_bug.cgi?id=1705184
       results:
