@@ -14,3 +14,13 @@ links:
           subtest: promises must fulfill/reject in the expected order on aborted closure
         - test: close.any.html
           subtest: promises must fulfill/reject in the expected order on aborted and errored closure
+        - test: aborting.any.html
+          subtest: Closing a WritableStream and aborting it while it closes causes the stream to ignore the abort attempt
+        - test: aborting.any.html
+          subtest: underlying abort() should not be called if underlying close() has started
+        - test: aborting.any.html
+          subtest: if underlying close() has started and then rejects, the abort() and close() promises should reject with the underlying close rejection reason
+        - test: aborting.any.html
+          subtest: writer close() promise should resolve before abort() promise
+        - test: aborting.any.html
+          subtest: writer.abort(), controller.error() while there is an in-flight close, and then finish the close
