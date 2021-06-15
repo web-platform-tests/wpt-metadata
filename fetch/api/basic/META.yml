@@ -17,3 +17,8 @@ links:
           subtest: Fetch with POST with ReadableStream containing ArrayBuffer
         - test: request-upload.any.html
           subtest: Fetch with POST with ReadableStream containing Blob
+    - product: deno
+      url: https://github.com/denoland/deno/issues/10989
+      results:
+        - test: request-upload.any.html
+          subtest: Fetch with POST with text body on 421 response should be retried once on new connection.
