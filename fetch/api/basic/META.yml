@@ -4,3 +4,16 @@ links:
       results:
         - test: accept-header.any.html
           subtest: Request through fetch should have a 'accept-language' header
+    - product: deno
+      url: https://github.com/denoland/deno/issues/10988
+      results:
+        - test: request-upload.any.html
+          subtest: Fetch with POST with ReadableStream containing String
+        - test: request-upload.any.html
+          subtest: Fetch with POST with ReadableStream containing number
+        - test: request-upload.any.html
+          subtest: Fetch with POST with ReadableStream containing null
+        - test: request-upload.any.html
+          subtest: Fetch with POST with ReadableStream containing ArrayBuffer
+        - test: request-upload.any.html
+          subtest: Fetch with POST with ReadableStream containing Blob
