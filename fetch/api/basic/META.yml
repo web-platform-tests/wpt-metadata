@@ -22,3 +22,8 @@ links:
       results:
         - test: request-upload.any.html
           subtest: Fetch with POST with text body on 421 response should be retried once on new connection.
+    - product: deno
+      url: https://github.com/denoland/deno/issues/10990
+      results:
+        - test: scheme-data.any.html
+          subtest: Fetching [HEAD] data:,response%27s%20body is OK
