@@ -100,3 +100,8 @@ links:
       url: https://bugzilla.mozilla.org/show_bug.cgi?id=1689540
       results:
         - test: document-level-wheel-event-listener-passive-by-default.tentative.html
+    - product: deno
+      url: https://github.com/denoland/deno/issues/10984
+      results:
+        - test: AddEventListenerOptions-signal.any.html
+          subtest: Passing null as the signal should throw
