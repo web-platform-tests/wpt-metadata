@@ -49,3 +49,24 @@ links:
       results:
         - test: encodeInto.any.html
           subtest: encodeInto() and a detached output buffer
+    - product: deno
+      url: https://github.com/denoland/deno/issues/10985
+      results:
+        - test: textdecoder-labels.any.html
+          subtest: unicode11utf8 => UTF-8
+        - test: textdecoder-labels.any.html
+          subtest: unicode20utf8 => UTF-8
+        - test: textdecoder-labels.any.html
+          subtest: x-unicode20utf8 => UTF-8
+        - test: textdecoder-labels.any.html
+          subtest: unicodefffe => UTF-16BE
+        - test: textdecoder-labels.any.html
+          subtest: iso-10646-ucs-2 => UTF-16LE
+        - test: textdecoder-labels.any.html
+          subtest: csunicode => UTF-16LE
+        - test: textdecoder-labels.any.html
+          subtest: ucs-2 => UTF-16LE
+        - test: textdecoder-labels.any.html
+          subtest: unicodefeff => UTF-16LE
+        - test: textdecoder-labels.any.html
+          subtest: unicode => UTF-16LE
