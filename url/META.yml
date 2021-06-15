@@ -59,3 +59,58 @@ links:
       url: https://crbug.com/694157
       results:
         - test: toascii.window.html
+    - product: deno
+      url: https://github.com/denoland/deno/issues/10996
+      results:
+        - test: idlharness.any.html
+          subtest: URL interface object length
+        - test: idlharness.any.html
+          subtest: 'URL interface: attribute href'
+        - test: idlharness.any.html
+          subtest: 'URL interface: stringifier'
+        - test: idlharness.any.html
+          subtest: 'URL interface: attribute protocol'
+        - test: idlharness.any.html
+          subtest: 'URL interface: attribute username'
+        - test: idlharness.any.html
+          subtest: 'URL interface: attribute origin'
+        - test: idlharness.any.html
+          subtest: 'URL interface: attribute password'
+        - test: idlharness.any.html
+          subtest: 'URL interface: attribute port'
+        - test: idlharness.any.html
+          subtest: 'URL interface: attribute pathname'
+        - test: idlharness.any.html
+          subtest: 'URL interface: attribute search'
+        - test: idlharness.any.html
+          subtest: 'URL interface: attribute searchParams'
+        - test: idlharness.any.html
+          subtest: 'URL interface: attribute hash'
+        - test: idlharness.any.html
+          subtest: 'URL interface: operation toJSON()'
+        - test: idlharness.any.html
+          subtest: 'URL interface: attribute host'
+        - test: idlharness.any.html
+          subtest: 'URL interface: attribute hostname'
+        - test: idlharness.any.html
+          subtest: Stringification of new URL("http://foo")
+        - test: idlharness.any.html
+          subtest: 'URLSearchParams interface: operation append(USVString, USVString)'
+        - test: idlharness.any.html
+          subtest: 'URLSearchParams interface: operation delete(USVString)'
+        - test: idlharness.any.html
+          subtest: 'URLSearchParams interface: operation get(USVString)'
+        - test: idlharness.any.html
+          subtest: 'URLSearchParams interface: operation getAll(USVString)'
+        - test: idlharness.any.html
+          subtest: 'URLSearchParams interface: operation has(USVString)'
+        - test: idlharness.any.html
+          subtest: 'URLSearchParams interface: operation set(USVString, USVString)'
+        - test: idlharness.any.html
+          subtest: 'URLSearchParams interface: iterable<USVString, USVString>'
+        - test: idlharness.any.html
+          subtest: 'URLSearchParams interface: operation sort()'
+        - test: idlharness.any.html
+          subtest: 'URLSearchParams interface: stringifier'
+        - test: idlharness.any.html
+          subtest: Stringification of new URLSearchParams("hi=there&thank=you")
