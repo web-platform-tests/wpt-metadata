@@ -32,3 +32,48 @@ links:
       results:
         - test: request-headers-nonascii.any.html
           subtest: Non-ascii bytes in request headers
+    - product: deno
+      url: https://github.com/denoland/deno/issues/10992
+      results:
+        - test: request-headers.any.html
+          subtest: Fetch with PUT without body
+        - test: request-headers.any.html
+          subtest: Fetch with PUT with body
+        - test: request-headers.any.html
+          subtest: Fetch with POST without body
+        - test: request-headers.any.html
+          subtest: Fetch with POST with text body
+        - test: request-headers.any.html
+          subtest: Fetch with POST with FormData body
+        - test: request-headers.any.html
+          subtest: Fetch with POST with URLSearchParams body
+        - test: request-headers.any.html
+          subtest: Fetch with POST with Blob body
+        - test: request-headers.any.html
+          subtest: Fetch with POST with ArrayBuffer body
+        - test: request-headers.any.html
+          subtest: Fetch with POST with Uint8Array body
+        - test: request-headers.any.html
+          subtest: Fetch with POST with Int8Array body
+        - test: request-headers.any.html
+          subtest: Fetch with POST with Float32Array body
+        - test: request-headers.any.html
+          subtest: Fetch with POST with Float64Array body
+        - test: request-headers.any.html
+          subtest: Fetch with POST with DataView body
+        - test: request-headers.any.html
+          subtest: Fetch with POST with Blob body with mime type
+        - test: request-headers.any.html
+          subtest: Fetch with Chicken
+        - test: request-headers.any.html
+          subtest: Fetch with Chicken with body
+        - test: request-headers.any.html
+          subtest: Fetch with POST and mode "same-origin" needs an Origin header
+        - test: request-headers.any.html
+          subtest: Fetch with POST and mode "no-cors" needs an Origin header
+        - test: request-headers.any.html
+          subtest: Fetch with PUT and mode "same-origin" needs an Origin header
+        - test: request-headers.any.html
+          subtest: Fetch with TacO and mode "same-origin" needs an Origin header
+        - test: request-headers.any.html
+          subtest: Fetch with TacO and mode "cors" needs an Origin header
