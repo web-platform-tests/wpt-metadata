@@ -27,3 +27,8 @@ links:
       results:
         - test: scheme-data.any.html
           subtest: Fetching [HEAD] data:,response%27s%20body is OK
+    - product: deno
+      url: https://github.com/denoland/deno/issues/10991
+      results:
+        - test: request-headers-nonascii.any.html
+          subtest: Non-ascii bytes in request headers
