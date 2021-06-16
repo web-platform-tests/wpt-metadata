@@ -4,3 +4,12 @@ links:
       results:
         - test: basic.any.html
           subtest: Performance interface extends EventTarget.
+    - product: deno
+      url: https://github.com/denoland/deno/issues/10838
+      results:
+        - test: idlharness.any.html
+          subtest: 'Performance interface: operation toJSON()'
+        - test: idlharness.any.html
+          subtest: 'Performance interface: default toJSON operation on performance'
+        - test: idlharness.any.html
+          subtest: 'Performance interface: performance must inherit property "toJSON()" with the proper type'
