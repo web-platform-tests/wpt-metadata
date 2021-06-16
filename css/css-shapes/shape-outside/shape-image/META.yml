@@ -1,51 +1,56 @@
 links:
-    - product: safari
-      url: https://bugs.webkit.org/show_bug.cgi?id=163706
-      results:
-        - test: shape-image-010.html
-          status: FAIL
-        - test: shape-image-024.html
-          status: FAIL
-    - product: safari
-      url: https://bugs.webkit.org/show_bug.cgi?id=203540
-      results:
-        - test: shape-image-000.html
-          status: FAIL
-        - test: shape-image-001.html
-          status: FAIL
-        - test: shape-image-004.html
-          status: FAIL
-        - test: shape-image-006.html
-          status: FAIL
-        - test: shape-image-009.html
-          status: FAIL
-        - test: shape-image-013.html
-          status: FAIL
-        - test: shape-image-015.html
-          status: FAIL
-        - test: shape-image-016.html
-          status: FAIL
-        - test: shape-image-018.html
-          status: FAIL
-        - test: shape-image-021.html
-          status: FAIL
-        - test: shape-image-022.html
-          status: FAIL
-        - test: shape-image-026.html
-          status: FAIL
-        - test: shape-image-027.html
-          status: FAIL
-    - product: webkitgtk
-      url: https://bugs.webkit.org/show_bug.cgi?id=203240
-      results:
-        - test: shape-image-025.html
-          status: FAIL
-    - product: webkitgtk
-      url: https://bugs.webkit.org/show_bug.cgi?id=163706
-      results:
-        - test: shape-image-024.html
-          status: FAIL
-    - product: chrome
-      url: https://crbug.com/424365
-      results:
-        - test: shape-image-024.html
+- product: safari
+  results:
+  - status: FAIL
+    test: shape-image-010.html
+  - status: FAIL
+    test: shape-image-024.html
+  url: https://bugs.webkit.org/show_bug.cgi?id=163706
+- product: safari
+  results:
+  - status: FAIL
+    test: shape-image-000.html
+  - status: FAIL
+    test: shape-image-001.html
+  - status: FAIL
+    test: shape-image-004.html
+  - status: FAIL
+    test: shape-image-006.html
+  - status: FAIL
+    test: shape-image-009.html
+  - status: FAIL
+    test: shape-image-013.html
+  - status: FAIL
+    test: shape-image-015.html
+  - status: FAIL
+    test: shape-image-016.html
+  - status: FAIL
+    test: shape-image-018.html
+  - status: FAIL
+    test: shape-image-021.html
+  - status: FAIL
+    test: shape-image-022.html
+  - status: FAIL
+    test: shape-image-026.html
+  - status: FAIL
+    test: shape-image-027.html
+  url: https://bugs.webkit.org/show_bug.cgi?id=203540
+- product: webkitgtk
+  results:
+  - status: FAIL
+    test: shape-image-025.html
+  url: https://bugs.webkit.org/show_bug.cgi?id=203240
+- product: webkitgtk
+  results:
+  - status: FAIL
+    test: shape-image-024.html
+  url: https://bugs.webkit.org/show_bug.cgi?id=163706
+- product: chrome
+  results:
+  - test: shape-image-024.html
+  url: https://crbug.com/424365
+- product: firefox
+  results:
+  - subtest: '''shape-outside'' layout is updated after the image has been loaded'
+    test: shape-image-028.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1716760
