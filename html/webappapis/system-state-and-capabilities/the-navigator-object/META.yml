@@ -527,3 +527,14 @@ links:
       work'
     test: protocol.https.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1706028
+- product: firefox
+  results:
+  - subtest: window.clientInformation exists and equals window.navigator
+    test: clientinformation.window.html
+  - subtest: Discarding the browsing context must not change window.navigator
+    test: per-global.window.html
+  - subtest: Discarding the browsing context must not change window.clientInformation
+    test: per-global.window.html
+  - subtest: document.open() must replace window.clientInformation
+    test: per-global.window.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1717082
