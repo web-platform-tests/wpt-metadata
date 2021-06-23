@@ -1,0 +1,10 @@
+links:
+- product: firefox
+  results:
+  - subtest: test_websocket_url_connect[capabilities0]
+    test: connect.py
+  - subtest: test_bidi_session_send
+    test: connect.py
+  - subtest: test_bidi_session_with_different_capability[capabilities0]
+    test: connect.py
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1717840
