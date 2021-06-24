@@ -1,0 +1,30 @@
+links:
+- product: firefox
+  results:
+  - subtest: Replace before load, triggered by formElement.requestSubmit()
+    test: form-requestsubmit.html
+  - subtest: Replace before load, triggered by submitButton.click()
+    test: form-submit-button-click.html
+  - subtest: Replace before load, triggered by formElement.submit()
+    test: form-submit.html
+  - subtest: NO replace before load, triggered by location.assign()
+    test: location-assign-user-click.html
+  - subtest: href
+    test: location-setter-user-click.html
+  - subtest: search
+    test: location-setter-user-click.html
+  - subtest: hash
+    test: location-setter-user-click.html
+  - subtest: href
+    test: location-setter-user-mouseup.html
+  - subtest: search
+    test: location-setter-user-mouseup.html
+  - subtest: hash
+    test: location-setter-user-mouseup.html
+  - subtest: No replace during load, triggered by window.open(_self) on an iframe
+    test: window-open-self-during-load.html
+  - subtest: No replace during pageshow, triggered by window.open(_self) on an iframe
+    test: window-open-self-during-pageshow.html
+  - subtest: No replace before load, triggered by window.open(_self) on an iframe
+    test: window-open-self.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1718123
