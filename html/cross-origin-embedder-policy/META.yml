@@ -136,3 +136,28 @@ links:
   - subtest: Two COEP headers, split inside report-to value
     test: reporting-to-endpoint.https.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1704791
+- product: firefox
+  results:
+  - subtest: 'frame: origin = https://web-platform.test:8443, value = (\)'
+    test: cross-origin-isolated-permission.https.html
+  - subtest: 'frame: origin = https://www1.web-platform.test:8443, value = undefined'
+    test: cross-origin-isolated-permission.https.html
+  - subtest: 'frame: origin = https://www1.web-platform.test:8443, value = *'
+    test: cross-origin-isolated-permission.https.html
+  - subtest: 'frame: origin = https://www1.web-platform.test:8443, value = self'
+    test: cross-origin-isolated-permission.https.html
+  - subtest: 'frame: origin = https://www1.web-platform.test:8443, value = (\)'
+    test: cross-origin-isolated-permission.https.html
+  - subtest: 'dedicated worker: scheme = https, value = (\)'
+    test: cross-origin-isolated-permission.https.html
+  - subtest: 'dedicated worker: scheme = data, value = undefined'
+    test: cross-origin-isolated-permission.https.html
+  - subtest: 'dedicated worker: scheme = data, value = *'
+    test: cross-origin-isolated-permission.https.html
+  - subtest: 'dedicated worker: scheme = data, value = self'
+    test: cross-origin-isolated-permission.https.html
+  - subtest: 'dedicated worker: scheme = data, value = (\)'
+    test: cross-origin-isolated-permission.https.html
+  - subtest: 'dedicated worker: scheme = blob, value = (\)'
+    test: cross-origin-isolated-permission.https.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1718222
