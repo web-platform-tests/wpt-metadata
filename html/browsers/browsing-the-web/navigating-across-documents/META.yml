@@ -31,3 +31,15 @@ links:
   - subtest: 0080 00FF set in href="" targeting a frame and clicked
     test: javascript-url-return-value-handling-dynamic.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1717686
+- product: firefox
+  results:
+  - subtest: cross-origin-domain but same-origin, setting src
+    test: javascript-url-security-check-failure.sub.html
+  - subtest: cross-origin-domain but same-origin, setting location.href
+    test: javascript-url-security-check-failure.sub.html
+  - subtest: Using iframeEl.src
+    test: javascript-url-security-check-multi-globals.sub.html
+  - test: javascript-url-security-check-same-origin-domain.sub.html
+  - subtest: 'javascript: URL security check for same-origin-domain but not same-origin'
+    test: javascript-url-security-check-same-origin-domain.sub.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1718318
