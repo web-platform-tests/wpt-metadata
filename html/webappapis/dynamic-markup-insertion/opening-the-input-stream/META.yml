@@ -28,3 +28,7 @@ links:
           subtest: Reloading a document.open()'d page should reload the URL of the entry realm's responsible document
         - test: url.window.html
           subtest: document.open() does not change document's URL (active but not fully active document)
+    - product: chrome
+      url: https://bugs.chromium.org/p/chromium/issues/detail?id=1223883
+      results:
+        - test: location-set-and-document-open.html
