@@ -56,6 +56,9 @@ func renameMetadata(before, after string) {
 }
 
 // getChangesBetweenSHAs returns all the renamed and deleted files between two WPT SHAs.
+// TODO(kyleju): In WPT tests,  if we have a foo.any.js file, that would have tests
+// foo.any.html, foo.any.worker.html and foo.any.sharedworker.html. To perfectly rename/map all tests,
+// we need MANIFEST informaiton.
 func getChangesBetweenSHAs(ctx context.Context, shaBefore, shaAfter string) (map[string]string, []string) {
 	fmt.Println("Getting WPT changes bewtween", shaBefore, "and", shaAfter)
 	if shaBefore == shaAfter {
