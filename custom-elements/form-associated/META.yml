@@ -1,133 +1,137 @@
 links:
-- product: firefox
-  results:
-  - subtest: Single value - empty name exists
-    test: ElementInternals-setFormValue.html
-  - subtest: Single value - Non-empty name exists
-    test: ElementInternals-setFormValue.html
-  - subtest: Null value should submit nothing
-    test: ElementInternals-setFormValue.html
-  - subtest: Multiple values - name content attribute is ignored
-    test: ElementInternals-setFormValue.html
-  - subtest: setFormValue with an empty FormData should submit nothing
-    test: ElementInternals-setFormValue.html
-  - subtest: Newline normalization - \n in name
-    test: ElementInternals-setFormValue.html
-  - subtest: Newline normalization - \r in name
-    test: ElementInternals-setFormValue.html
-  - subtest: Newline normalization - \r\n in name
-    test: ElementInternals-setFormValue.html
-  - subtest: Newline normalization - \n\r in name
-    test: ElementInternals-setFormValue.html
-  - subtest: Newline normalization - \n in value
-    test: ElementInternals-setFormValue.html
-  - subtest: Newline normalization - \r in value
-    test: ElementInternals-setFormValue.html
-  - subtest: Newline normalization - \r\n in value
-    test: ElementInternals-setFormValue.html
-  - subtest: Newline normalization - \n\r in value
-    test: ElementInternals-setFormValue.html
-  - subtest: Newline normalization - \n in filename
-    test: ElementInternals-setFormValue.html
-  - subtest: Newline normalization - \r in filename
-    test: ElementInternals-setFormValue.html
-  - subtest: Newline normalization - \r\n in filename
-    test: ElementInternals-setFormValue.html
-  - subtest: Newline normalization - \n\r in filename
-    test: ElementInternals-setFormValue.html
-  - subtest: Newline normalization - \r\n in FormData name
-    test: ElementInternals-setFormValue.html
-  - subtest: Newline normalization - \r\n in FormData value
-    test: ElementInternals-setFormValue.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1682205
-- product: chrome
-  results:
-  - test: ElementInternals-setFormValue.html
-  url: https://crbug.com/1167095
-- product: firefox
-  results:
-  - subtest: Newline normalization - \n in name (urlencoded)
-    test: ElementInternals-setFormValue.html
-  - subtest: Newline normalization - \n in name (formdata)
-    test: ElementInternals-setFormValue.html
-  - subtest: Newline normalization - \r in name (urlencoded)
-    test: ElementInternals-setFormValue.html
-  - subtest: Newline normalization - \r in name (formdata)
-    test: ElementInternals-setFormValue.html
-  - subtest: Newline normalization - \r\n in name (urlencoded)
-    test: ElementInternals-setFormValue.html
-  - subtest: Newline normalization - \r\n in name (formdata)
-    test: ElementInternals-setFormValue.html
-  - subtest: Newline normalization - \n\r in name (urlencoded)
-    test: ElementInternals-setFormValue.html
-  - subtest: Newline normalization - \n\r in name (formdata)
-    test: ElementInternals-setFormValue.html
-  - subtest: Newline normalization - \n in value (urlencoded)
-    test: ElementInternals-setFormValue.html
-  - subtest: Newline normalization - \n in value (formdata)
-    test: ElementInternals-setFormValue.html
-  - subtest: Newline normalization - \r in value (urlencoded)
-    test: ElementInternals-setFormValue.html
-  - subtest: Newline normalization - \r in value (formdata)
-    test: ElementInternals-setFormValue.html
-  - subtest: Newline normalization - \r\n in value (urlencoded)
-    test: ElementInternals-setFormValue.html
-  - subtest: Newline normalization - \r\n in value (formdata)
-    test: ElementInternals-setFormValue.html
-  - subtest: Newline normalization - \n\r in value (urlencoded)
-    test: ElementInternals-setFormValue.html
-  - subtest: Newline normalization - \n\r in value (formdata)
-    test: ElementInternals-setFormValue.html
-  - subtest: Newline normalization - \n in filename (urlencoded)
-    test: ElementInternals-setFormValue.html
-  - subtest: Newline normalization - \n in filename (formdata)
-    test: ElementInternals-setFormValue.html
-  - subtest: Newline normalization - \r in filename (urlencoded)
-    test: ElementInternals-setFormValue.html
-  - subtest: Newline normalization - \r in filename (formdata)
-    test: ElementInternals-setFormValue.html
-  - subtest: Newline normalization - \r\n in filename (urlencoded)
-    test: ElementInternals-setFormValue.html
-  - subtest: Newline normalization - \r\n in filename (formdata)
-    test: ElementInternals-setFormValue.html
-  - subtest: Newline normalization - \n\r in filename (urlencoded)
-    test: ElementInternals-setFormValue.html
-  - subtest: Newline normalization - \n\r in filename (formdata)
-    test: ElementInternals-setFormValue.html
-  - subtest: Newline normalization - \n in FormData name (urlencoded)
-    test: ElementInternals-setFormValue.html
-  - subtest: Newline normalization - \r in FormData name (urlencoded)
-    test: ElementInternals-setFormValue.html
-  - subtest: Newline normalization - \r\n in FormData name (urlencoded)
-    test: ElementInternals-setFormValue.html
-  - subtest: Newline normalization - \r\n in FormData name (formdata)
-    test: ElementInternals-setFormValue.html
-  - subtest: Newline normalization - \n\r in FormData name (urlencoded)
-    test: ElementInternals-setFormValue.html
-  - subtest: Newline normalization - \n in FormData value (urlencoded)
-    test: ElementInternals-setFormValue.html
-  - subtest: Newline normalization - \r in FormData value (urlencoded)
-    test: ElementInternals-setFormValue.html
-  - subtest: Newline normalization - \r\n in FormData value (urlencoded)
-    test: ElementInternals-setFormValue.html
-  - subtest: Newline normalization - \r\n in FormData value (formdata)
-    test: ElementInternals-setFormValue.html
-  - subtest: Newline normalization - \n\r in FormData value (urlencoded)
-    test: ElementInternals-setFormValue.html
-  - subtest: Newline normalization - \n in FormData filename (urlencoded)
-    test: ElementInternals-setFormValue.html
-  - subtest: Newline normalization - \n in FormData filename (formdata)
-    test: ElementInternals-setFormValue.html
-  - subtest: Newline normalization - \r in FormData filename (urlencoded)
-    test: ElementInternals-setFormValue.html
-  - subtest: Newline normalization - \r in FormData filename (formdata)
-    test: ElementInternals-setFormValue.html
-  - subtest: Newline normalization - \r\n in FormData filename (urlencoded)
-    test: ElementInternals-setFormValue.html
-  - subtest: Newline normalization - \r\n in FormData filename (formdata)
-    test: ElementInternals-setFormValue.html
-  - subtest: Newline normalization - \n\r in FormData filename (urlencoded)
-    test: ElementInternals-setFormValue.html
-  - subtest: Newline normalization - \n\r in FormData filename (formdata)
-    test: ElementInternals-setFormValue.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1704465
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1682205
+      results:
+        - test: ElementInternals-setFormValue.html
+          subtest: Single value - empty name exists
+        - test: ElementInternals-setFormValue.html
+          subtest: Single value - Non-empty name exists
+        - test: ElementInternals-setFormValue.html
+          subtest: Null value should submit nothing
+        - test: ElementInternals-setFormValue.html
+          subtest: Multiple values - name content attribute is ignored
+        - test: ElementInternals-setFormValue.html
+          subtest: setFormValue with an empty FormData should submit nothing
+        - test: ElementInternals-setFormValue.html
+          subtest: Newline normalization - \n in name
+        - test: ElementInternals-setFormValue.html
+          subtest: Newline normalization - \r in name
+        - test: ElementInternals-setFormValue.html
+          subtest: Newline normalization - \r\n in name
+        - test: ElementInternals-setFormValue.html
+          subtest: Newline normalization - \n\r in name
+        - test: ElementInternals-setFormValue.html
+          subtest: Newline normalization - \n in value
+        - test: ElementInternals-setFormValue.html
+          subtest: Newline normalization - \r in value
+        - test: ElementInternals-setFormValue.html
+          subtest: Newline normalization - \r\n in value
+        - test: ElementInternals-setFormValue.html
+          subtest: Newline normalization - \n\r in value
+        - test: ElementInternals-setFormValue.html
+          subtest: Newline normalization - \n in filename
+        - test: ElementInternals-setFormValue.html
+          subtest: Newline normalization - \r in filename
+        - test: ElementInternals-setFormValue.html
+          subtest: Newline normalization - \r\n in filename
+        - test: ElementInternals-setFormValue.html
+          subtest: Newline normalization - \n\r in filename
+        - test: ElementInternals-setFormValue.html
+          subtest: Newline normalization - \r\n in FormData name
+        - test: ElementInternals-setFormValue.html
+          subtest: Newline normalization - \r\n in FormData value
+    - product: chrome
+      url: https://crbug.com/1167095
+      results:
+        - test: ElementInternals-setFormValue.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1704465
+      results:
+        - test: ElementInternals-setFormValue.html
+          subtest: Newline normalization - \n in name (urlencoded)
+        - test: ElementInternals-setFormValue.html
+          subtest: Newline normalization - \n in name (formdata)
+        - test: ElementInternals-setFormValue.html
+          subtest: Newline normalization - \r in name (urlencoded)
+        - test: ElementInternals-setFormValue.html
+          subtest: Newline normalization - \r in name (formdata)
+        - test: ElementInternals-setFormValue.html
+          subtest: Newline normalization - \r\n in name (urlencoded)
+        - test: ElementInternals-setFormValue.html
+          subtest: Newline normalization - \r\n in name (formdata)
+        - test: ElementInternals-setFormValue.html
+          subtest: Newline normalization - \n\r in name (urlencoded)
+        - test: ElementInternals-setFormValue.html
+          subtest: Newline normalization - \n\r in name (formdata)
+        - test: ElementInternals-setFormValue.html
+          subtest: Newline normalization - \n in value (urlencoded)
+        - test: ElementInternals-setFormValue.html
+          subtest: Newline normalization - \n in value (formdata)
+        - test: ElementInternals-setFormValue.html
+          subtest: Newline normalization - \r in value (urlencoded)
+        - test: ElementInternals-setFormValue.html
+          subtest: Newline normalization - \r in value (formdata)
+        - test: ElementInternals-setFormValue.html
+          subtest: Newline normalization - \r\n in value (urlencoded)
+        - test: ElementInternals-setFormValue.html
+          subtest: Newline normalization - \r\n in value (formdata)
+        - test: ElementInternals-setFormValue.html
+          subtest: Newline normalization - \n\r in value (urlencoded)
+        - test: ElementInternals-setFormValue.html
+          subtest: Newline normalization - \n\r in value (formdata)
+        - test: ElementInternals-setFormValue.html
+          subtest: Newline normalization - \n in filename (urlencoded)
+        - test: ElementInternals-setFormValue.html
+          subtest: Newline normalization - \n in filename (formdata)
+        - test: ElementInternals-setFormValue.html
+          subtest: Newline normalization - \r in filename (urlencoded)
+        - test: ElementInternals-setFormValue.html
+          subtest: Newline normalization - \r in filename (formdata)
+        - test: ElementInternals-setFormValue.html
+          subtest: Newline normalization - \r\n in filename (urlencoded)
+        - test: ElementInternals-setFormValue.html
+          subtest: Newline normalization - \r\n in filename (formdata)
+        - test: ElementInternals-setFormValue.html
+          subtest: Newline normalization - \n\r in filename (urlencoded)
+        - test: ElementInternals-setFormValue.html
+          subtest: Newline normalization - \n\r in filename (formdata)
+        - test: ElementInternals-setFormValue.html
+          subtest: Newline normalization - \n in FormData name (urlencoded)
+        - test: ElementInternals-setFormValue.html
+          subtest: Newline normalization - \r in FormData name (urlencoded)
+        - test: ElementInternals-setFormValue.html
+          subtest: Newline normalization - \r\n in FormData name (urlencoded)
+        - test: ElementInternals-setFormValue.html
+          subtest: Newline normalization - \r\n in FormData name (formdata)
+        - test: ElementInternals-setFormValue.html
+          subtest: Newline normalization - \n\r in FormData name (urlencoded)
+        - test: ElementInternals-setFormValue.html
+          subtest: Newline normalization - \n in FormData value (urlencoded)
+        - test: ElementInternals-setFormValue.html
+          subtest: Newline normalization - \r in FormData value (urlencoded)
+        - test: ElementInternals-setFormValue.html
+          subtest: Newline normalization - \r\n in FormData value (urlencoded)
+        - test: ElementInternals-setFormValue.html
+          subtest: Newline normalization - \r\n in FormData value (formdata)
+        - test: ElementInternals-setFormValue.html
+          subtest: Newline normalization - \n\r in FormData value (urlencoded)
+        - test: ElementInternals-setFormValue.html
+          subtest: Newline normalization - \n in FormData filename (urlencoded)
+        - test: ElementInternals-setFormValue.html
+          subtest: Newline normalization - \n in FormData filename (formdata)
+        - test: ElementInternals-setFormValue.html
+          subtest: Newline normalization - \r in FormData filename (urlencoded)
+        - test: ElementInternals-setFormValue.html
+          subtest: Newline normalization - \r in FormData filename (formdata)
+        - test: ElementInternals-setFormValue.html
+          subtest: Newline normalization - \r\n in FormData filename (urlencoded)
+        - test: ElementInternals-setFormValue.html
+          subtest: Newline normalization - \r\n in FormData filename (formdata)
+        - test: ElementInternals-setFormValue.html
+          subtest: Newline normalization - \n\r in FormData filename (urlencoded)
+        - test: ElementInternals-setFormValue.html
+          subtest: Newline normalization - \n\r in FormData filename (formdata)
+    - product: chrome
+      url: https://bugs.chromium.org/p/chromium/issues/detail?id=1167095
+      results:
+        - test: ElementInternals-validation.html
