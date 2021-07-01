@@ -66,3 +66,24 @@ links:
   - subtest: 'CSS namespace: attribute highlights'
     test: idlharness.window.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1715034
+- product: firefox
+  results:
+  - subtest: Highlight constructor behaves like a set when using equal ranges (using
+      the following combination of ranges [[object Range], [object Range], [object
+      Range]])
+    test: Highlight-setlike.html
+  - subtest: Highlight constructor behaves like a set when using equal ranges (using
+      the following combination of ranges [[object StaticRange], [object StaticRange],
+      [object StaticRange]])
+    test: Highlight-setlike.html
+  - subtest: Highlight constructor behaves like a set when using equal ranges (using
+      the following combination of ranges [[object Range], [object StaticRange], [object
+      Range]])
+    test: Highlight-setlike.html
+  - subtest: Highlight constructor behaves like a set when using equal ranges (using
+      the following combination of ranges [[object StaticRange], [object Range], [object
+      StaticRange]])
+    test: Highlight-setlike.html
+  - subtest: HighlightRegistry initializes as it should.
+    test: HighlightRegistry-maplike.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1718818
