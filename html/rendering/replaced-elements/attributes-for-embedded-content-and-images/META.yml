@@ -1,53 +1,52 @@
 links:
-- product: firefox
-  results:
-  - subtest: Canvas width and height attributes are used as the surface size with
-      contain:size
-    test: canvas-aspect-ratio.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1689425
-- product: chrome
-  results:
-  - test: align.html
-  url: https://crbug.com/989839
-- product: firefox
-  results:
-  - subtest: Computed style
-    test: canvas-aspect-ratio.html
-  - subtest: Computed style
-    test: img-aspect-ratio.html
-  - subtest: Video width and height attributes are not used to infer aspect-ratio
-    test: video-aspect-ratio.html
-  - subtest: Computed style
-    test: video-aspect-ratio.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1692404
-- product: firefox
-  results:
-  - subtest: Computed style for width/height/aspect-ratio
-    test: picture-aspect-ratio.html
-  - subtest: Source width/height should take precedence over img attributes.
-    test: picture-aspect-ratio.html
-  - subtest: If the <source> has only one of width/height, we don't get an aspect
-      ratio, even if the <img> has both.
-    test: picture-aspect-ratio.html
-  - subtest: If we only have one width attribute, we should get width mapped but no
-      aspect ratio, even if <img> has attributes.
-    test: picture-aspect-ratio.html
-  - subtest: If we only have height attribute, we should get height mapped but no
-      aspect ratio, even if <img> has attributes.
-    test: picture-aspect-ratio.html
-  - subtest: Dynamically changing width/height should change computed style
-    test: picture-aspect-ratio.html
-  - subtest: Changing which <source> matches should change computed style
-    test: picture-aspect-ratio.html
-  - subtest: Percentages on source should be ignored for aspect-ratio but used for
-      width/height.
-    test: picture-aspect-ratio.html
-  - subtest: Trailing garbage should be ignored but not make the attribute invalid
-    test: picture-aspect-ratio.html
-  - subtest: 'Loaded picture test: <source> with width and height attributes, <img>
-      without width and height attributes'
-    test: picture-aspect-ratio.html
-  - subtest: 'Loaded picture test: Both <source> and <img> are with width and height
-      attributes'
-    test: picture-aspect-ratio.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1706847
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1689425
+      results:
+        - test: canvas-aspect-ratio.html
+          subtest: Canvas width and height attributes are used as the surface size with contain:size
+    - product: chrome
+      url: https://crbug.com/989839
+      results:
+        - test: align.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1692404
+      results:
+        - test: canvas-aspect-ratio.html
+          subtest: Computed style
+        - test: img-aspect-ratio.html
+          subtest: Computed style
+        - test: video-aspect-ratio.html
+          subtest: Video width and height attributes are not used to infer aspect-ratio
+        - test: video-aspect-ratio.html
+          subtest: Computed style
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1706847
+      results:
+        - test: picture-aspect-ratio.html
+          subtest: Computed style for width/height/aspect-ratio
+        - test: picture-aspect-ratio.html
+          subtest: Source width/height should take precedence over img attributes.
+        - test: picture-aspect-ratio.html
+          subtest: If the <source> has only one of width/height, we don't get an aspect ratio, even if the <img> has both.
+        - test: picture-aspect-ratio.html
+          subtest: If we only have one width attribute, we should get width mapped but no aspect ratio, even if <img> has attributes.
+        - test: picture-aspect-ratio.html
+          subtest: If we only have height attribute, we should get height mapped but no aspect ratio, even if <img> has attributes.
+        - test: picture-aspect-ratio.html
+          subtest: Dynamically changing width/height should change computed style
+        - test: picture-aspect-ratio.html
+          subtest: Changing which <source> matches should change computed style
+        - test: picture-aspect-ratio.html
+          subtest: Percentages on source should be ignored for aspect-ratio but used for width/height.
+        - test: picture-aspect-ratio.html
+          subtest: Trailing garbage should be ignored but not make the attribute invalid
+        - test: picture-aspect-ratio.html
+          subtest: 'Loaded picture test: <source> with width and height attributes, <img> without width and height attributes'
+        - test: picture-aspect-ratio.html
+          subtest: 'Loaded picture test: Both <source> and <img> are with width and height attributes'
+    - product: chrome
+      url: https://bugs.chromium.org/p/chromium/issues/detail?id=989839
+      results:
+        - test: canvas-aspect-ratio.html
+        - test: embedded-and-images-presentational-hints-ascii-case-insensitive.html
+        - test: img-aspect-ratio.html
