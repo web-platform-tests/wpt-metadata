@@ -12,3 +12,14 @@ links:
           subtest: 'execCommand("delete", false, ""): "a&nbsp;&nbsp;&nbsp;&nbsp;[]||&nbsp;&nbsp;&nbsp;&nbsp;c"'
         - test: white-spaces-after-execCommand-delete.tentative.html
           subtest: 'execCommand("delete", false, ""): "<span>abc&nbsp;</span><span>&nbsp; []def</span>"'
+    - product: chrome
+      url: https://bugs.chromium.org/p/chromium/issues/detail?id=1226216
+      results:
+        - test: typing-around-link-element-at-non-collapsed-selection.tentative.html?target=DesignMode&parent=b
+        - test: typing-around-link-element-at-non-collapsed-selection.tentative.html?target=DesignMode&parent=b&child=i
+        - test: typing-around-link-element-at-non-collapsed-selection.tentative.html?target=ContentEditable
+        - test: typing-around-link-element-at-non-collapsed-selection.tentative.html?target=ContentEditable&child=b
+        - test: typing-around-link-element-at-non-collapsed-selection.tentative.html?target=ContentEditable&parent=b
+        - test: typing-around-link-element-at-non-collapsed-selection.tentative.html?target=ContentEditable&parent=b&child=i
+        - test: typing-around-link-element-at-non-collapsed-selection.tentative.html?target=DesignMode
+        - test: typing-around-link-element-at-non-collapsed-selection.tentative.html?target=DesignMode&child=b
