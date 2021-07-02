@@ -12,3 +12,14 @@ links:
           subtest: 'execCommand("delete", false, ""): "a&nbsp;&nbsp;&nbsp;&nbsp;[]||&nbsp;&nbsp;&nbsp;&nbsp;c"'
         - test: white-spaces-after-execCommand-delete.tentative.html
           subtest: 'execCommand("delete", false, ""): "<span>abc&nbsp;</span><span>&nbsp; []def</span>"'
+    - product: chrome
+      url: https://bugs.chromium.org/p/chromium/issues/detail?id=1226219
+      results:
+        - test: editing-around-select-element.tentative.html?insertText
+        - test: exec-command-with-text-editor.tentative.html
+        - test: exec-command-without-editable-element.tentative.html
+        - test: extra-text-nodes.html
+        - test: restoration.html
+        - test: delete.html
+        - test: editing-around-select-element.tentative.html?delete
+        - test: editing-around-select-element.tentative.html?forwardDelete
