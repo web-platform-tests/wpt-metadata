@@ -3,3 +3,119 @@ links:
       url: https://github.com/denoland/deno/issues/11025
       results:
         - test: construct-byob-request.any.html
+        - test: general.any.html
+          subtest: 'getReader({mode: "byob"}) throws on non-bytes streams'
+        - test: general.any.html
+          subtest: ReadableStream with byte source can be constructed with no errors
+        - test: general.any.html
+          subtest: getReader({mode}) must perform ToString()
+        - test: general.any.html
+          subtest: 'ReadableStream with byte source: getReader() with mode set to byob, then releaseLock()'
+        - test: general.any.html
+          subtest: 'ReadableStream with byte source: Test that closing a stream does not release a BYOB reader automatically'
+        - test: general.any.html
+          subtest: 'ReadableStream with byte source: Test that erroring a stream does not release a BYOB reader automatically'
+        - test: general.any.html
+          subtest: 'ReadableStream with byte source: autoAllocateChunkSize'
+        - test: general.any.html
+          subtest: 'ReadableStream with byte source: Mix of auto allocate and BYOB'
+        - test: general.any.html
+          subtest: 'ReadableStream with byte source: enqueue(), read(view) partially, then read()'
+        - test: general.any.html
+          subtest: 'ReadableStream with byte source: cancel() with partially filled pending pull() request'
+        - test: general.any.html
+          subtest: 'ReadableStream with byte source: respondWithNewView() with a transferred zero-length view (in the closed state)'
+        - test: general.any.html
+          subtest: 'ReadableStream with byte source: respondWithNewView() with a transferred non-zero-length view (in the readable state)'
+        - test: general.any.html
+          subtest: 'ReadableStream with byte source: respondWithNewView() with a zero-length view (in the closed state)'
+        - test: general.any.html
+          subtest: 'ReadableStream with byte source: respondWithNewView() with a smaller view'
+        - test: general.any.html
+          subtest: ReadableStreamBYOBReader constructor requires a ReadableStream with type "bytes"
+        - test: general.any.html
+          subtest: ReadableStreamBYOBReader constructor requires an unlocked ReadableStream
+        - test: general.any.html
+          subtest: ReadableStreamBYOBReader constructor requires a ReadableStream argument
+        - test: general.any.html
+          subtest: ReadableStreamBYOBReader can be constructed directly
+        - test: general.any.html
+          subtest: pull() resolving should not make releaseLock() possible
+        - test: general.any.html
+          subtest: 'ReadableStream with byte source: default reader + autoAllocateChunkSize + byobRequest interaction'
+        - test: general.any.html
+          subtest: calling respond() should throw when canceled
+        - test: general.any.html
+          subtest: calling respond(0) twice on the same byobRequest should throw even when closed
+        - test: general.any.html
+          subtest: calling respondWithNewView() twice on the same byobRequest should throw
+        - test: general.any.html
+          subtest: calling respond() twice on the same byobRequest should throw
+        - test: general.any.html
+          subtest: 'ReadableStream with byte source: Throwing in pull in response to read(view) must be ignored if the stream is errored in it'
+        - test: general.any.html
+          subtest: 'ReadableStream with byte source: Throwing in pull in response to read() must be ignored if the stream is errored in it'
+        - test: general.any.html
+          subtest: 'ReadableStream with byte source: Throwing in pull in response to read(view) function must error the stream'
+        - test: general.any.html
+          subtest: 'ReadableStream with byte source: Throwing in pull function must error the stream'
+        - test: general.any.html
+          subtest: 'ReadableStream with byte source: read(view), then error()'
+        - test: general.any.html
+          subtest: 'ReadableStream with byte source: read(view) on an errored stream'
+        - test: general.any.html
+          subtest: 'ReadableStream with byte source: Even read(view) with passing ArrayBufferView like object as view must fail'
+        - test: general.any.html
+          subtest: 'ReadableStream with byte source: read(view) with passing an empty object as view must fail'
+        - test: general.any.html
+          subtest: 'ReadableStream with byte source: read(view) with passing undefined as view must fail'
+        - test: general.any.html
+          subtest: 'ReadableStream with byte source: Multiple read(view) and multiple enqueue()'
+        - test: general.any.html
+          subtest: 'ReadableStream with byte source: Multiple read(view), big enqueue()'
+        - test: general.any.html
+          subtest: 'ReadableStream with byte source: Multiple read(view), close() and respond()'
+        - test: general.any.html
+          subtest: 'ReadableStream with byte source: Respond to pull() by enqueue()'
+        - test: general.any.html
+          subtest: 'ReadableStream with byte source: Respond to pull() by enqueue() asynchronously'
+        - test: general.any.html
+          subtest: 'ReadableStream with byte source: Respond to multiple pull() by separate enqueue()'
+        - test: general.any.html
+          subtest: 'ReadableStream with byte source: read(view), then respondWithNewView() with a transferred ArrayBuffer'
+        - test: general.any.html
+          subtest: 'ReadableStream with byte source: read(view), then respond()'
+        - test: general.any.html
+          subtest: 'ReadableStream with byte source: read(view), then respond() with too big value'
+        - test: general.any.html
+          subtest: 'ReadableStream with byte source: respond(3) to read(view) with 2 element Uint16Array enqueues the 1 byte remainder'
+        - test: general.any.html
+          subtest: 'ReadableStream with byte source: enqueue(), getReader(), then read(view)'
+        - test: general.any.html
+          subtest: 'ReadableStream with byte source: enqueue(), getReader(), then cancel() (mode = BYOB)'
+        - test: general.any.html
+          subtest: 'ReadableStream with byte source: getReader(), read(view), then cancel()'
+        - test: general.any.html
+          subtest: 'ReadableStream with byte source: enqueue(), getReader(), then read(view) where view.buffer is not fully covered by view'
+        - test: general.any.html
+          subtest: 'ReadableStream with byte source: Multiple enqueue(), getReader(), then read(view)'
+        - test: general.any.html
+          subtest: 'ReadableStream with byte source: enqueue(), getReader(), then read(view) with a bigger view'
+        - test: general.any.html
+          subtest: 'ReadableStream with byte source: enqueue(), getReader(), then read(view) with smaller views'
+        - test: general.any.html
+          subtest: 'ReadableStream with byte source: enqueue() 1 byte, getReader(), then read(view) with Uint16Array'
+        - test: general.any.html
+          subtest: 'ReadableStream with byte source: enqueue() 3 byte, getReader(), then read(view) with 2-element Uint16Array'
+        - test: general.any.html
+          subtest: 'ReadableStream with byte source: read(view) with Uint16Array on close()-d stream with 1 byte enqueue()-d must fail'
+        - test: general.any.html
+          subtest: 'ReadableStream with byte source: A stream must be errored if close()-d before fulfilling read(view) with Uint16Array'
+        - test: general.any.html
+          subtest: 'ReadableStream with byte source: read(view), then respond() and close() in pull()'
+        - test: general.any.html
+          subtest: 'ReadableStream with byte source: read(view) with Uint32Array, then fill it by multiple respond() calls'
+        - test: general.any.html
+          subtest: 'ReadableStream with byte source: read(view) with Uint32Array, then fill it by multiple enqueue() calls'
+        - test: general.any.html
+          subtest: 'ReadableStream with byte source: read() twice, then enqueue() twice'
