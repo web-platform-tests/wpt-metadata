@@ -283,3 +283,22 @@ links:
   results:
   - test: active-selection-021.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1705864
+- product: firefox
+  results:
+  - subtest: 'getComputedStyle() for ::highlight(foo): should be element''s default'
+    test: highlight-pseudos-computed.html
+  - subtest: getComputedStyle() for ::highlight(foo)) should be element's default
+    test: highlight-pseudos-computed.html
+  - subtest: getComputedStyle() for ::highlight(foo)( should be element's default
+    test: highlight-pseudos-computed.html
+  - subtest: getComputedStyle() for ::highlight(foo)(foo) should be element's default
+    test: highlight-pseudos-computed.html
+  - subtest: getComputedStyle() for ::highlight(foo)() should be element's default
+    test: highlight-pseudos-computed.html
+  - subtest: getComputedStyle() for :::highlight(foo) should be element's default
+    test: highlight-pseudos-computed.html
+  - subtest: getComputedStyle() for ::highlight(foo). should be element's default
+    test: highlight-pseudos-computed.html
+  - subtest: Different getComputedStyle() for ::highlight(bar) and same element
+    test: highlight-pseudos-computed.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1719005
