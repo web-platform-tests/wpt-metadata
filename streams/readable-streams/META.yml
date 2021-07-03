@@ -6,3 +6,8 @@ links:
         - test: tee.any.serviceworker.html
         - test: tee.any.sharedworker.html
         - test: tee.any.worker.html
+    - product: deno
+      url: https://github.com/denoland/deno/issues/11252
+      results:
+        - test: tee.any.html
+          subtest: 'ReadableStream teeing: failing to cancel when canceling both branches in sequence with delay'
