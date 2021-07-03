@@ -3,3 +3,74 @@ links:
       url: https://crbug.com/1093862
       results:
         - test: idlharness.any.html
+    - product: deno
+      url: https://github.com/denoland/deno/issues/11025
+      results:
+        - test: idlharness.any.html
+          subtest: 'ReadableStreamBYOBReader interface: existence and properties of interface object'
+        - test: idlharness.any.html
+          subtest: ReadableStreamBYOBReader interface object length
+        - test: idlharness.any.html
+          subtest: ReadableStreamBYOBReader interface object name
+        - test: idlharness.any.html
+          subtest: 'ReadableStreamBYOBReader interface: existence and properties of interface prototype object'
+        - test: idlharness.any.html
+          subtest: 'ReadableStreamBYOBReader interface: existence and properties of interface prototype object''s "constructor" property'
+        - test: idlharness.any.html
+          subtest: 'ReadableStreamBYOBReader interface: existence and properties of interface prototype object''s @@unscopables property'
+        - test: idlharness.any.html
+          subtest: 'ReadableStreamBYOBReader interface: operation read(ArrayBufferView)'
+        - test: idlharness.any.html
+          subtest: 'ReadableStreamBYOBReader interface: operation releaseLock()'
+        - test: idlharness.any.html
+          subtest: 'ReadableStreamBYOBReader interface: attribute closed'
+        - test: idlharness.any.html
+          subtest: 'ReadableStreamBYOBReader interface: operation cancel(optional any)'
+        - test: idlharness.any.html
+          subtest: 'ReadableStreamBYOBReader must be primary interface of (new ReadableStream({ type: ''bytes'' })).getReader({ mode: ''byob'' })'
+        - test: idlharness.any.html
+          subtest: 'Stringification of (new ReadableStream({ type: ''bytes'' })).getReader({ mode: ''byob'' })'
+        - test: idlharness.any.html
+          subtest: 'ReadableStreamBYOBReader interface: (new ReadableStream({ type: ''bytes'' })).getReader({ mode: ''byob'' }) must inherit property "read(ArrayBufferView)" with the proper type'
+        - test: idlharness.any.html
+          subtest: 'ReadableStreamBYOBReader interface: calling read(ArrayBufferView) on (new ReadableStream({ type: ''bytes'' })).getReader({ mode: ''byob'' }) with too few arguments must throw TypeError'
+        - test: idlharness.any.html
+          subtest: 'ReadableStreamBYOBReader interface: (new ReadableStream({ type: ''bytes'' })).getReader({ mode: ''byob'' }) must inherit property "cancel(optional any)" with the proper type'
+        - test: idlharness.any.html
+          subtest: 'ReadableStreamBYOBReader interface: (new ReadableStream({ type: ''bytes'' })).getReader({ mode: ''byob'' }) must inherit property "releaseLock()" with the proper type'
+        - test: idlharness.any.html
+          subtest: 'ReadableStreamBYOBReader interface: (new ReadableStream({ type: ''bytes'' })).getReader({ mode: ''byob'' }) must inherit property "closed" with the proper type'
+        - test: idlharness.any.html
+          subtest: 'ReadableByteStreamController interface: self.readableByteStreamController must inherit property "byobRequest" with the proper type'
+        - test: idlharness.any.html
+          subtest: 'ReadableStreamBYOBRequest interface: existence and properties of interface object'
+        - test: idlharness.any.html
+          subtest: ReadableStreamBYOBRequest interface object length
+        - test: idlharness.any.html
+          subtest: ReadableStreamBYOBRequest interface object name
+        - test: idlharness.any.html
+          subtest: 'ReadableStreamBYOBRequest interface: existence and properties of interface prototype object'
+        - test: idlharness.any.html
+          subtest: 'ReadableStreamBYOBRequest interface: existence and properties of interface prototype object''s "constructor" property'
+        - test: idlharness.any.html
+          subtest: 'ReadableStreamBYOBRequest interface: existence and properties of interface prototype object''s @@unscopables property'
+        - test: idlharness.any.html
+          subtest: 'ReadableStreamBYOBRequest interface: attribute view'
+        - test: idlharness.any.html
+          subtest: 'ReadableStreamBYOBRequest interface: operation respond(unsigned long long)'
+        - test: idlharness.any.html
+          subtest: ReadableStreamBYOBRequest must be primary interface of self.readableStreamByobRequest
+        - test: idlharness.any.html
+          subtest: Stringification of self.readableStreamByobRequest
+        - test: idlharness.any.html
+          subtest: 'ReadableStreamBYOBRequest interface: self.readableStreamByobRequest must inherit property "view" with the proper type'
+        - test: idlharness.any.html
+          subtest: 'ReadableStreamBYOBRequest interface: self.readableStreamByobRequest must inherit property "respond(unsigned long long)" with the proper type'
+        - test: idlharness.any.html
+          subtest: 'ReadableStreamBYOBRequest interface: calling respond(unsigned long long) on self.readableStreamByobRequest with too few arguments must throw TypeError'
+        - test: idlharness.any.html
+          subtest: 'ReadableStreamBYOBRequest interface: self.readableStreamByobRequest must inherit property "respondWithNewView(ArrayBufferView)" with the proper type'
+        - test: idlharness.any.html
+          subtest: 'ReadableStreamBYOBRequest interface: calling respondWithNewView(ArrayBufferView) on self.readableStreamByobRequest with too few arguments must throw TypeError'
+        - test: idlharness.any.html
+          subtest: 'ReadableStreamBYOBRequest interface: operation respondWithNewView(ArrayBufferView)'
