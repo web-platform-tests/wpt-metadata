@@ -1,20 +1,69 @@
 links:
-- product: chrome
-  results:
-  - status: FAIL
-    test: Create-on-worker-shutdown.any.html
-  url: https://crbug.com/978151
-- product: firefox
-  results:
-  - status: CRASH
-    test: basic-auth.any.worker.html?wpt_flags=h2
-  - status: CRASH
-    test: basic-auth.any.sharedworker.html?wpt_flags=h2
-  - status: CRASH
-    test: basic-auth.any.serviceworker.html?wpt_flags=h2
-  - status: CRASH
-    test: basic-auth.any.html?wpt_flags=h2
-  - status: CRASH
-    test: extended-payload-length.html?wpt_flags=h2
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1702390
-
+    - product: chrome
+      url: https://crbug.com/978151
+      results:
+        - test: Create-on-worker-shutdown.any.html
+          status: FAIL
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1702390
+      results:
+        - test: basic-auth.any.worker.html?wpt_flags=h2
+          status: CRASH
+        - test: basic-auth.any.sharedworker.html?wpt_flags=h2
+          status: CRASH
+        - test: basic-auth.any.serviceworker.html?wpt_flags=h2
+          status: CRASH
+        - test: basic-auth.any.html?wpt_flags=h2
+          status: CRASH
+        - test: extended-payload-length.html?wpt_flags=h2
+          status: CRASH
+    - product: deno
+      url: https://github.com/denoland/deno/issues/11261
+      results:
+        - test: Close-reason-unpaired-surrogates.any.html?wpt_flags=h2
+        - test: Send-binary-65K-arraybuffer.any.html?wpt_flags=h2
+        - test: Send-binary-arraybufferview-uint32-offset.any.html?wpt_flags=h2
+        - test: Send-paired-surrogates.any.html?wpt_flags=h2
+        - test: Close-1005-verify-code.any.html?wpt_flags=h2
+        - test: Close-readyState-Closing.any.html?wpt_flags=h2
+        - test: Close-server-initiated-close.any.html?wpt_flags=h2
+        - test: Create-blocked-port.any.html?wpt_flags=h2
+        - test: Send-65K-data.any.html?wpt_flags=h2
+        - test: Send-binary-blob.any.html?wpt_flags=h2
+        - test: bufferedAmount-unchanged-by-sync-xhr.any.html?wpt_flags=h2
+        - test: Close-Reason-124Bytes.any.html?wpt_flags=h2
+        - test: Send-binary-arraybufferview-float32.any.html?wpt_flags=h2
+        - test: Send-binary-arraybufferview-int16-offset.any.html?wpt_flags=h2
+        - test: Create-valid-url-protocol-setCorrectly.any.html?wpt_flags=h2
+        - test: Create-valid-url-array-protocols.any.html?wpt_flags=h2
+        - test: Create-valid-url.any.html?wpt_flags=h2
+        - test: Send-binary-arraybufferview-uint8-offset-length.any.html?wpt_flags=h2
+        - test: Close-3000-verify-code.any.html?wpt_flags=h2
+        - test: Send-binary-arraybufferview-float64.any.html?wpt_flags=h2
+        - test: Send-binary-arraybufferview-uint8-offset.any.html?wpt_flags=h2
+        - test: basic-auth.any.html?wpt_flags=h2
+        - test: Close-1000.any.html?wpt_flags=h2
+        - test: Close-4999-reason.any.html?wpt_flags=h2
+        - test: Close-onlyReason.any.html?wpt_flags=h2
+        - test: Close-undefined.any.html?wpt_flags=h2
+        - test: Create-valid-url-protocol-string.any.html?wpt_flags=h2
+        - test: Send-0byte-data.any.html?wpt_flags=h2
+        - test: Send-unicode-data.any.html?wpt_flags=h2
+        - test: binaryType-wrong-value.any.html?wpt_flags=h2
+        - test: Close-1005.any.html?wpt_flags=h2
+        - test: Close-1000-verify-code.any.html?wpt_flags=h2
+        - test: Close-2999-reason.any.html?wpt_flags=h2
+        - test: Close-3000-reason.any.html?wpt_flags=h2
+        - test: Create-extensions-empty.any.html?wpt_flags=h2
+        - test: Create-valid-url-binaryType-blob.any.html?wpt_flags=h2
+        - test: Create-valid-url-protocol.any.html?wpt_flags=h2
+        - test: Send-binary-arraybufferview-int32.any.html?wpt_flags=h2
+        - test: Close-1000-reason.any.html?wpt_flags=h2
+        - test: Send-binary-arraybufferview-uint16-offset-length.any.html?wpt_flags=h2
+        - test: Send-data.any.html?wpt_flags=h2
+        - test: eventhandlers.any.html?wpt_flags=h2
+        - test: Send-binary-arraybufferview-int8.any.html?wpt_flags=h2
+        - test: Send-binary-arraybuffer.any.html?wpt_flags=h2
+        - test: Send-null.any.html?wpt_flags=h2
+        - test: Send-unpaired-surrogates.any.html?wpt_flags=h2
+        - test: Close-readyState-Closed.any.html?wpt_flags=h2
