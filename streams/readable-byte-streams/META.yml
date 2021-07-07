@@ -119,3 +119,40 @@ links:
           subtest: 'ReadableStream with byte source: read(view) with Uint32Array, then fill it by multiple enqueue() calls'
         - test: general.any.html
           subtest: 'ReadableStream with byte source: read() twice, then enqueue() twice'
+        - test: bad-buffers-and-views.any.html
+          subtest: 'ReadableStream with byte source: read()ing from a closed stream still transfers the buffer'
+        - test: bad-buffers-and-views.any.html
+          subtest: 'ReadableStream with byte source: read()ing from a stream with queued chunks still transfers the buffer'
+        - test: bad-buffers-and-views.any.html
+          subtest: 'ReadableStream with byte source: reading into an already-detached buffer rejects'
+        - test: bad-buffers-and-views.any.html
+          subtest: 'ReadableStream with byte source: reading into a zero-length buffer rejects'
+        - test: bad-buffers-and-views.any.html
+          subtest: 'ReadableStream with byte source: reading into a zero-length view on a non-zero-length buffer rejects'
+        - test: bad-buffers-and-views.any.html
+          subtest: 'ReadableStream with byte source: respond() throws if the BYOB request''s buffer has been detached (in the readable state)'
+        - test: bad-buffers-and-views.any.html
+          subtest: 'ReadableStream with byte source: respond() throws if the BYOB request''s buffer has been detached (in the closed state)'
+        - test: bad-buffers-and-views.any.html
+          subtest: 'ReadableStream with byte source: respondWithNewView() throws if the supplied view''s buffer has been detached (in the readable state)'
+        - test: bad-buffers-and-views.any.html
+          subtest: 'ReadableStream with byte source: respondWithNewView() throws if the supplied view''s buffer is zero-length (in the readable state)'
+        - test: bad-buffers-and-views.any.html
+          subtest: 'ReadableStream with byte source: respondWithNewView() throws if the supplied view is zero-length on a non-zero-length buffer (in the readable state)'
+        - test: bad-buffers-and-views.any.html
+          subtest: 'ReadableStream with byte source: respondWithNewView() throws if the supplied view''s buffer has a different length (in the readable state)'
+        - test: bad-buffers-and-views.any.html
+          subtest: 'ReadableStream with byte source: respondWithNewView() throws if the supplied view has a larger length (in the readable state)'
+        - test: bad-buffers-and-views.any.html
+          subtest: 'ReadableStream with byte source: respondWithNewView() throws if the supplied view''s buffer has been detached (in the closed state)'
+        - test: bad-buffers-and-views.any.html
+          subtest: 'ReadableStream with byte source: respondWithNewView() throws if the supplied view''s buffer is zero-length (in the closed state)'
+        - test: bad-buffers-and-views.any.html
+          subtest: 'ReadableStream with byte source: respondWithNewView() throws if the supplied view is non-zero-length (in the closed state)'
+        - test: bad-buffers-and-views.any.html
+          subtest: 'ReadableStream with byte source: respondWithNewView() throws if the supplied view''s buffer has a different length (in the closed state)'
+        - test: bad-buffers-and-views.any.html
+          subtest: 'ReadableStream with byte source: enqueue() throws if the BYOB request''s buffer has been detached (in the readable state)'
+        - test: bad-buffers-and-views.any.html
+          subtest: 'ReadableStream with byte source: enqueue() throws if the BYOB request''s buffer has been detached (in the closed state)'
+        - test: non-transferable-buffers.any.html
