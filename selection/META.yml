@@ -29,3 +29,7 @@ links:
           subtest: 'Selection interface: getSelection() must inherit property "removeRange(Range)" with the proper type'
         - test: idlharness.window.html
           subtest: 'Selection interface: calling removeRange(Range) on getSelection() with too few arguments must throw TypeError'
+    - product: chrome
+      url: https://bugs.chromium.org/p/chromium/issues/detail?id=391673
+      results:
+        - test: removeRange.html
