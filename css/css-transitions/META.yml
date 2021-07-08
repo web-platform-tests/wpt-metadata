@@ -1,611 +1,614 @@
 links:
-- product: safari
-  results:
-  - status: TIMEOUT
-    test: before-load-001.html
-  url: https://bugs.webkit.org/show_bug.cgi?id=203416
-- product: firefox
-  results:
-  - subtest: CSS Transitions targetting (pseudo-)elements should have correct order
-      after sorting (::marker)
-    test: Document-getAnimations.tentative.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1635407
-- product: chrome
-  results:
-  - status: TIMEOUT
-    test: transitioncancel-002.html
-  url: https://crbug.com/1074547
-- product: chrome
-  results:
-  - status: FAIL
-    test: idlharness.html
-  url: https://crbug.com/868224
-- product: chrome
-  results:
-  - status: FAIL
-    test: properties-value-inherit-001.html
-  url: https://crbug.com/825262
-- product: chrome
-  results:
-  - test: changing-while-transition-004.html
-  url: https://crbug.com/934700
-- product: chrome
-  results:
-  - test: no-transition-from-ua-to-blocking-stylesheet.html
-  - test: properties-value-001.html
-  - test: properties-value-002.html
-  - test: properties-value-003.html
-  - test: properties-value-implicit-001.html
-  - test: properties-value-inherit-002.html
-  url: https://crbug.com/332189
-- product: firefox
-  results:
-  - subtest: background-image image(url) / values
-    test: properties-value-003.html
-  - subtest: background-image image(url) / events
-    test: properties-value-003.html
-  - subtest: background-image image(data) / values
-    test: properties-value-003.html
-  - subtest: background-image image(data) / events
-    test: properties-value-003.html
-  - subtest: background-color color(rgba) / events
-    test: properties-value-inherit-001.html
-  - subtest: border-top-width length(pt) / events
-    test: properties-value-inherit-001.html
-  - subtest: border-top-width length(pc) / events
-    test: properties-value-inherit-001.html
-  - subtest: border-top-width length(px) / events
-    test: properties-value-inherit-001.html
-  - subtest: border-top-width length(em) / events
-    test: properties-value-inherit-001.html
-  - subtest: border-top-width length(ex) / events
-    test: properties-value-inherit-001.html
-  - subtest: border-top-width length(mm) / events
-    test: properties-value-inherit-001.html
-  - subtest: border-top-width length(cm) / events
-    test: properties-value-inherit-001.html
-  - subtest: border-top-width length(in) / events
-    test: properties-value-inherit-001.html
-  - subtest: border-right-width length(pt) / events
-    test: properties-value-inherit-001.html
-  - subtest: border-right-width length(pc) / events
-    test: properties-value-inherit-001.html
-  - subtest: border-right-width length(px) / events
-    test: properties-value-inherit-001.html
-  - subtest: border-right-width length(em) / events
-    test: properties-value-inherit-001.html
-  - subtest: border-right-width length(ex) / events
-    test: properties-value-inherit-001.html
-  - subtest: border-right-width length(mm) / events
-    test: properties-value-inherit-001.html
-  - subtest: border-right-width length(cm) / events
-    test: properties-value-inherit-001.html
-  - subtest: border-right-width length(in) / events
-    test: properties-value-inherit-001.html
-  - subtest: border-bottom-width length(pt) / events
-    test: properties-value-inherit-001.html
-  - subtest: border-bottom-width length(pc) / events
-    test: properties-value-inherit-001.html
-  - subtest: border-bottom-width length(px) / events
-    test: properties-value-inherit-001.html
-  - subtest: border-bottom-width length(em) / events
-    test: properties-value-inherit-001.html
-  - subtest: border-bottom-width length(ex) / events
-    test: properties-value-inherit-001.html
-  - subtest: border-bottom-width length(mm) / events
-    test: properties-value-inherit-001.html
-  - subtest: border-bottom-width length(cm) / events
-    test: properties-value-inherit-001.html
-  - subtest: border-bottom-width length(in) / events
-    test: properties-value-inherit-001.html
-  - subtest: border-left-width length(pt) / events
-    test: properties-value-inherit-001.html
-  - subtest: border-left-width length(pc) / events
-    test: properties-value-inherit-001.html
-  - subtest: border-left-width length(px) / events
-    test: properties-value-inherit-001.html
-  - subtest: border-left-width length(em) / events
-    test: properties-value-inherit-001.html
-  - subtest: border-left-width length(ex) / events
-    test: properties-value-inherit-001.html
-  - subtest: border-left-width length(mm) / events
-    test: properties-value-inherit-001.html
-  - subtest: border-left-width length(cm) / events
-    test: properties-value-inherit-001.html
-  - subtest: border-left-width length(in) / events
-    test: properties-value-inherit-001.html
-  - subtest: border-top-color color(rgba) / events
-    test: properties-value-inherit-001.html
-  - subtest: border-right-color color(rgba) / events
-    test: properties-value-inherit-001.html
-  - subtest: border-bottom-color color(rgba) / events
-    test: properties-value-inherit-001.html
-  - subtest: border-left-color color(rgba) / events
-    test: properties-value-inherit-001.html
-  - subtest: padding-bottom length(pt) / events
-    test: properties-value-inherit-001.html
-  - subtest: padding-bottom length(pc) / events
-    test: properties-value-inherit-001.html
-  - subtest: padding-bottom length(px) / events
-    test: properties-value-inherit-001.html
-  - subtest: padding-bottom length(em) / events
-    test: properties-value-inherit-001.html
-  - subtest: padding-bottom length(ex) / events
-    test: properties-value-inherit-001.html
-  - subtest: padding-bottom length(mm) / events
-    test: properties-value-inherit-001.html
-  - subtest: padding-bottom length(cm) / events
-    test: properties-value-inherit-001.html
-  - subtest: padding-bottom length(in) / events
-    test: properties-value-inherit-001.html
-  - subtest: padding-left length(pt) / events
-    test: properties-value-inherit-001.html
-  - subtest: padding-left length(pc) / events
-    test: properties-value-inherit-001.html
-  - subtest: padding-left length(px) / events
-    test: properties-value-inherit-001.html
-  - subtest: padding-left length(em) / events
-    test: properties-value-inherit-001.html
-  - subtest: padding-left length(ex) / events
-    test: properties-value-inherit-001.html
-  - subtest: padding-left length(mm) / events
-    test: properties-value-inherit-001.html
-  - subtest: padding-left length(cm) / events
-    test: properties-value-inherit-001.html
-  - subtest: padding-left length(in) / events
-    test: properties-value-inherit-001.html
-  - subtest: padding-right length(pt) / events
-    test: properties-value-inherit-001.html
-  - subtest: padding-right length(pc) / events
-    test: properties-value-inherit-001.html
-  - subtest: padding-right length(px) / events
-    test: properties-value-inherit-001.html
-  - subtest: padding-right length(em) / events
-    test: properties-value-inherit-001.html
-  - subtest: padding-right length(ex) / events
-    test: properties-value-inherit-001.html
-  - subtest: padding-right length(mm) / events
-    test: properties-value-inherit-001.html
-  - subtest: padding-right length(cm) / events
-    test: properties-value-inherit-001.html
-  - subtest: padding-right length(in) / events
-    test: properties-value-inherit-001.html
-  - subtest: padding-top length(pt) / events
-    test: properties-value-inherit-001.html
-  - subtest: padding-top length(pc) / events
-    test: properties-value-inherit-001.html
-  - subtest: padding-top length(px) / events
-    test: properties-value-inherit-001.html
-  - subtest: padding-top length(em) / events
-    test: properties-value-inherit-001.html
-  - subtest: padding-top length(ex) / events
-    test: properties-value-inherit-001.html
-  - subtest: padding-top length(mm) / events
-    test: properties-value-inherit-001.html
-  - subtest: padding-top length(cm) / events
-    test: properties-value-inherit-001.html
-  - subtest: padding-top length(in) / events
-    test: properties-value-inherit-001.html
-  - subtest: margin-bottom length(pt) / events
-    test: properties-value-inherit-001.html
-  - subtest: margin-bottom length(pc) / events
-    test: properties-value-inherit-001.html
-  - subtest: margin-bottom length(px) / events
-    test: properties-value-inherit-001.html
-  - subtest: margin-bottom length(em) / events
-    test: properties-value-inherit-001.html
-  - subtest: margin-bottom length(ex) / events
-    test: properties-value-inherit-001.html
-  - subtest: margin-bottom length(mm) / events
-    test: properties-value-inherit-001.html
-  - subtest: margin-bottom length(cm) / events
-    test: properties-value-inherit-001.html
-  - subtest: margin-bottom length(in) / events
-    test: properties-value-inherit-001.html
-  - subtest: margin-left length(pt) / events
-    test: properties-value-inherit-001.html
-  - subtest: margin-left length(pc) / events
-    test: properties-value-inherit-001.html
-  - subtest: margin-left length(px) / events
-    test: properties-value-inherit-001.html
-  - subtest: margin-left length(em) / events
-    test: properties-value-inherit-001.html
-  - subtest: margin-left length(ex) / events
-    test: properties-value-inherit-001.html
-  - subtest: margin-left length(mm) / events
-    test: properties-value-inherit-001.html
-  - subtest: margin-left length(cm) / events
-    test: properties-value-inherit-001.html
-  - subtest: margin-left length(in) / events
-    test: properties-value-inherit-001.html
-  - subtest: margin-right length(pt) / events
-    test: properties-value-inherit-001.html
-  - subtest: margin-right length(pc) / events
-    test: properties-value-inherit-001.html
-  - subtest: margin-right length(px) / events
-    test: properties-value-inherit-001.html
-  - subtest: margin-right length(em) / events
-    test: properties-value-inherit-001.html
-  - subtest: margin-right length(ex) / events
-    test: properties-value-inherit-001.html
-  - subtest: margin-right length(mm) / events
-    test: properties-value-inherit-001.html
-  - subtest: margin-right length(cm) / events
-    test: properties-value-inherit-001.html
-  - subtest: margin-right length(in) / events
-    test: properties-value-inherit-001.html
-  - subtest: margin-top length(pt) / events
-    test: properties-value-inherit-001.html
-  - subtest: margin-top length(pc) / events
-    test: properties-value-inherit-001.html
-  - subtest: margin-top length(px) / events
-    test: properties-value-inherit-001.html
-  - subtest: margin-top length(em) / events
-    test: properties-value-inherit-001.html
-  - subtest: margin-top length(ex) / events
-    test: properties-value-inherit-001.html
-  - subtest: margin-top length(mm) / events
-    test: properties-value-inherit-001.html
-  - subtest: margin-top length(cm) / events
-    test: properties-value-inherit-001.html
-  - subtest: margin-top length(in) / events
-    test: properties-value-inherit-001.html
-  - subtest: height length(pt) / events
-    test: properties-value-inherit-001.html
-  - subtest: height length(pc) / events
-    test: properties-value-inherit-001.html
-  - subtest: height length(px) / events
-    test: properties-value-inherit-001.html
-  - subtest: height length(em) / events
-    test: properties-value-inherit-001.html
-  - subtest: height length(ex) / events
-    test: properties-value-inherit-001.html
-  - subtest: height length(mm) / events
-    test: properties-value-inherit-001.html
-  - subtest: height length(cm) / events
-    test: properties-value-inherit-001.html
-  - subtest: height length(in) / events
-    test: properties-value-inherit-001.html
-  - subtest: height percentage(%) / events
-    test: properties-value-inherit-001.html
-  - subtest: width length(pt) / events
-    test: properties-value-inherit-001.html
-  - subtest: width length(pc) / events
-    test: properties-value-inherit-001.html
-  - subtest: width length(px) / events
-    test: properties-value-inherit-001.html
-  - subtest: width length(em) / events
-    test: properties-value-inherit-001.html
-  - subtest: width length(ex) / events
-    test: properties-value-inherit-001.html
-  - subtest: width length(mm) / events
-    test: properties-value-inherit-001.html
-  - subtest: width length(cm) / events
-    test: properties-value-inherit-001.html
-  - subtest: width length(in) / events
-    test: properties-value-inherit-001.html
-  - subtest: width percentage(%) / events
-    test: properties-value-inherit-001.html
-  - subtest: min-height length(pt) / events
-    test: properties-value-inherit-001.html
-  - subtest: min-height length(pc) / events
-    test: properties-value-inherit-001.html
-  - subtest: min-height length(px) / events
-    test: properties-value-inherit-001.html
-  - subtest: min-height length(em) / events
-    test: properties-value-inherit-001.html
-  - subtest: min-height length(ex) / events
-    test: properties-value-inherit-001.html
-  - subtest: min-height length(mm) / events
-    test: properties-value-inherit-001.html
-  - subtest: min-height length(cm) / events
-    test: properties-value-inherit-001.html
-  - subtest: min-height length(in) / events
-    test: properties-value-inherit-001.html
-  - subtest: min-height percentage(%) / events
-    test: properties-value-inherit-001.html
-  - subtest: min-width length(pt) / events
-    test: properties-value-inherit-001.html
-  - subtest: min-width length(pc) / events
-    test: properties-value-inherit-001.html
-  - subtest: min-width length(px) / events
-    test: properties-value-inherit-001.html
-  - subtest: min-width length(em) / events
-    test: properties-value-inherit-001.html
-  - subtest: min-width length(ex) / events
-    test: properties-value-inherit-001.html
-  - subtest: min-width length(mm) / events
-    test: properties-value-inherit-001.html
-  - subtest: min-width length(cm) / events
-    test: properties-value-inherit-001.html
-  - subtest: min-width length(in) / events
-    test: properties-value-inherit-001.html
-  - subtest: min-width percentage(%) / events
-    test: properties-value-inherit-001.html
-  - subtest: max-height length(pt) / events
-    test: properties-value-inherit-001.html
-  - subtest: max-height length(pc) / events
-    test: properties-value-inherit-001.html
-  - subtest: max-height length(px) / events
-    test: properties-value-inherit-001.html
-  - subtest: max-height length(em) / events
-    test: properties-value-inherit-001.html
-  - subtest: max-height length(ex) / events
-    test: properties-value-inherit-001.html
-  - subtest: max-height length(mm) / events
-    test: properties-value-inherit-001.html
-  - subtest: max-height length(cm) / events
-    test: properties-value-inherit-001.html
-  - subtest: max-height length(in) / events
-    test: properties-value-inherit-001.html
-  - subtest: max-height percentage(%) / events
-    test: properties-value-inherit-001.html
-  - subtest: max-width length(pt) / events
-    test: properties-value-inherit-001.html
-  - subtest: max-width length(pc) / events
-    test: properties-value-inherit-001.html
-  - subtest: max-width length(px) / events
-    test: properties-value-inherit-001.html
-  - subtest: max-width length(em) / events
-    test: properties-value-inherit-001.html
-  - subtest: max-width length(ex) / events
-    test: properties-value-inherit-001.html
-  - subtest: max-width length(mm) / events
-    test: properties-value-inherit-001.html
-  - subtest: max-width length(cm) / events
-    test: properties-value-inherit-001.html
-  - subtest: max-width length(in) / events
-    test: properties-value-inherit-001.html
-  - subtest: max-width percentage(%) / events
-    test: properties-value-inherit-001.html
-  - subtest: top length(pt) / events
-    test: properties-value-inherit-001.html
-  - subtest: top length(pc) / events
-    test: properties-value-inherit-001.html
-  - subtest: top length(px) / events
-    test: properties-value-inherit-001.html
-  - subtest: top length(em) / events
-    test: properties-value-inherit-001.html
-  - subtest: top length(ex) / events
-    test: properties-value-inherit-001.html
-  - subtest: top length(mm) / events
-    test: properties-value-inherit-001.html
-  - subtest: top length(cm) / events
-    test: properties-value-inherit-001.html
-  - subtest: top length(in) / events
-    test: properties-value-inherit-001.html
-  - subtest: top percentage(%) / events
-    test: properties-value-inherit-001.html
-  - subtest: right length(pt) / events
-    test: properties-value-inherit-001.html
-  - subtest: right length(pc) / events
-    test: properties-value-inherit-001.html
-  - subtest: right length(px) / events
-    test: properties-value-inherit-001.html
-  - subtest: right length(em) / events
-    test: properties-value-inherit-001.html
-  - subtest: right length(ex) / events
-    test: properties-value-inherit-001.html
-  - subtest: right length(mm) / events
-    test: properties-value-inherit-001.html
-  - subtest: right length(cm) / events
-    test: properties-value-inherit-001.html
-  - subtest: right length(in) / events
-    test: properties-value-inherit-001.html
-  - subtest: right percentage(%) / events
-    test: properties-value-inherit-001.html
-  - subtest: bottom length(pt) / events
-    test: properties-value-inherit-001.html
-  - subtest: bottom length(pc) / events
-    test: properties-value-inherit-001.html
-  - subtest: bottom length(px) / events
-    test: properties-value-inherit-001.html
-  - subtest: bottom length(em) / events
-    test: properties-value-inherit-001.html
-  - subtest: bottom length(ex) / events
-    test: properties-value-inherit-001.html
-  - subtest: bottom length(mm) / events
-    test: properties-value-inherit-001.html
-  - subtest: bottom length(cm) / events
-    test: properties-value-inherit-001.html
-  - subtest: bottom length(in) / events
-    test: properties-value-inherit-001.html
-  - subtest: bottom percentage(%) / events
-    test: properties-value-inherit-001.html
-  - subtest: left length(pt) / events
-    test: properties-value-inherit-001.html
-  - subtest: left length(pc) / events
-    test: properties-value-inherit-001.html
-  - subtest: left length(px) / events
-    test: properties-value-inherit-001.html
-  - subtest: left length(em) / events
-    test: properties-value-inherit-001.html
-  - subtest: left length(ex) / events
-    test: properties-value-inherit-001.html
-  - subtest: left length(mm) / events
-    test: properties-value-inherit-001.html
-  - subtest: left length(cm) / events
-    test: properties-value-inherit-001.html
-  - subtest: left length(in) / events
-    test: properties-value-inherit-001.html
-  - subtest: left percentage(%) / events
-    test: properties-value-inherit-001.html
-  - subtest: color color(rgba) / events
-    test: properties-value-inherit-001.html
-  - subtest: font-size length(pt) / events
-    test: properties-value-inherit-001.html
-  - subtest: font-size length(pc) / events
-    test: properties-value-inherit-001.html
-  - subtest: font-size length(px) / events
-    test: properties-value-inherit-001.html
-  - subtest: font-size length(em) / events
-    test: properties-value-inherit-001.html
-  - subtest: font-size length(ex) / events
-    test: properties-value-inherit-001.html
-  - subtest: font-size length(mm) / events
-    test: properties-value-inherit-001.html
-  - subtest: font-size length(cm) / events
-    test: properties-value-inherit-001.html
-  - subtest: font-size length(in) / events
-    test: properties-value-inherit-001.html
-  - subtest: font-size percentage(%) / events
-    test: properties-value-inherit-001.html
-  - subtest: font-weight font-weight(keyword) / events
-    test: properties-value-inherit-001.html
-  - subtest: font-weight font-weight(numeric) / events
-    test: properties-value-inherit-001.html
-  - subtest: letter-spacing length(pt) / events
-    test: properties-value-inherit-001.html
-  - subtest: letter-spacing length(pc) / events
-    test: properties-value-inherit-001.html
-  - subtest: letter-spacing length(px) / events
-    test: properties-value-inherit-001.html
-  - subtest: letter-spacing length(em) / events
-    test: properties-value-inherit-001.html
-  - subtest: letter-spacing length(ex) / events
-    test: properties-value-inherit-001.html
-  - subtest: letter-spacing length(mm) / events
-    test: properties-value-inherit-001.html
-  - subtest: letter-spacing length(cm) / events
-    test: properties-value-inherit-001.html
-  - subtest: letter-spacing length(in) / events
-    test: properties-value-inherit-001.html
-  - subtest: word-spacing length(pt) / events
-    test: properties-value-inherit-001.html
-  - subtest: word-spacing length(pc) / events
-    test: properties-value-inherit-001.html
-  - subtest: word-spacing length(px) / events
-    test: properties-value-inherit-001.html
-  - subtest: word-spacing length(em) / events
-    test: properties-value-inherit-001.html
-  - subtest: word-spacing length(ex) / events
-    test: properties-value-inherit-001.html
-  - subtest: word-spacing length(mm) / events
-    test: properties-value-inherit-001.html
-  - subtest: word-spacing length(cm) / events
-    test: properties-value-inherit-001.html
-  - subtest: word-spacing length(in) / events
-    test: properties-value-inherit-001.html
-  - subtest: text-indent length(pt) / events
-    test: properties-value-inherit-001.html
-  - subtest: text-indent length(pc) / events
-    test: properties-value-inherit-001.html
-  - subtest: text-indent length(px) / events
-    test: properties-value-inherit-001.html
-  - subtest: text-indent length(em) / events
-    test: properties-value-inherit-001.html
-  - subtest: text-indent length(ex) / events
-    test: properties-value-inherit-001.html
-  - subtest: text-indent length(mm) / events
-    test: properties-value-inherit-001.html
-  - subtest: text-indent length(cm) / events
-    test: properties-value-inherit-001.html
-  - subtest: text-indent length(in) / events
-    test: properties-value-inherit-001.html
-  - subtest: text-indent percentage(%) / events
-    test: properties-value-inherit-001.html
-  - subtest: text-shadow shadow(shadow) / events
-    test: properties-value-inherit-001.html
-  - subtest: outline-color color(rgba) / events
-    test: properties-value-inherit-001.html
-  - subtest: outline-offset length(pt) / events
-    test: properties-value-inherit-001.html
-  - subtest: outline-offset length(pc) / events
-    test: properties-value-inherit-001.html
-  - subtest: outline-offset length(px) / events
-    test: properties-value-inherit-001.html
-  - subtest: outline-offset length(em) / events
-    test: properties-value-inherit-001.html
-  - subtest: outline-offset length(ex) / events
-    test: properties-value-inherit-001.html
-  - subtest: outline-offset length(mm) / events
-    test: properties-value-inherit-001.html
-  - subtest: outline-offset length(cm) / events
-    test: properties-value-inherit-001.html
-  - subtest: outline-offset length(in) / events
-    test: properties-value-inherit-001.html
-  - subtest: outline-width length(pt) / events
-    test: properties-value-inherit-001.html
-  - subtest: outline-width length(pc) / events
-    test: properties-value-inherit-001.html
-  - subtest: outline-width length(px) / events
-    test: properties-value-inherit-001.html
-  - subtest: outline-width length(em) / events
-    test: properties-value-inherit-001.html
-  - subtest: outline-width length(ex) / events
-    test: properties-value-inherit-001.html
-  - subtest: outline-width length(mm) / events
-    test: properties-value-inherit-001.html
-  - subtest: outline-width length(cm) / events
-    test: properties-value-inherit-001.html
-  - subtest: outline-width length(in) / events
-    test: properties-value-inherit-001.html
-  - subtest: clip rectangle(rectangle) / events
-    test: properties-value-inherit-001.html
-  - subtest: opacity number[0,1](zero-to-one) / events
-    test: properties-value-inherit-001.html
-  - subtest: visibility visibility(keyword) / events
-    test: properties-value-inherit-001.html
-  - subtest: z-index integer(integer) / events
-    test: properties-value-inherit-001.html
-  - subtest: background-position length-em(em) / events
-    test: properties-value-inherit-003.html
-  - subtest: border-top-width length-em(em) / events
-    test: properties-value-inherit-003.html
-  - subtest: border-right-width length-em(em) / events
-    test: properties-value-inherit-003.html
-  - subtest: border-bottom-width length-em(em) / events
-    test: properties-value-inherit-003.html
-  - subtest: border-left-width length-em(em) / events
-    test: properties-value-inherit-003.html
-  - subtest: padding-bottom length-em(em) / events
-    test: properties-value-inherit-003.html
-  - subtest: padding-left length-em(em) / events
-    test: properties-value-inherit-003.html
-  - subtest: padding-right length-em(em) / events
-    test: properties-value-inherit-003.html
-  - subtest: padding-top length-em(em) / events
-    test: properties-value-inherit-003.html
-  - subtest: margin-bottom length-em(em) / events
-    test: properties-value-inherit-003.html
-  - subtest: margin-left length-em(em) / events
-    test: properties-value-inherit-003.html
-  - subtest: margin-right length-em(em) / events
-    test: properties-value-inherit-003.html
-  - subtest: margin-top length-em(em) / events
-    test: properties-value-inherit-003.html
-  - subtest: height length-em(em) / events
-    test: properties-value-inherit-003.html
-  - subtest: width length-em(em) / events
-    test: properties-value-inherit-003.html
-  - subtest: min-height length-em(em) / events
-    test: properties-value-inherit-003.html
-  - subtest: min-width length-em(em) / events
-    test: properties-value-inherit-003.html
-  - subtest: max-height length-em(em) / events
-    test: properties-value-inherit-003.html
-  - subtest: max-width length-em(em) / events
-    test: properties-value-inherit-003.html
-  - subtest: top length-em(em) / events
-    test: properties-value-inherit-003.html
-  - subtest: right length-em(em) / events
-    test: properties-value-inherit-003.html
-  - subtest: bottom length-em(em) / events
-    test: properties-value-inherit-003.html
-  - subtest: left length-em(em) / events
-    test: properties-value-inherit-003.html
-  - subtest: line-height length-em(em) / events
-    test: properties-value-inherit-003.html
-  - subtest: letter-spacing length-em(em) / events
-    test: properties-value-inherit-003.html
-  - subtest: word-spacing length-em(em) / events
-    test: properties-value-inherit-003.html
-  - subtest: text-indent length-em(em) / events
-    test: properties-value-inherit-003.html
-  - subtest: outline-offset length-em(em) / events
-    test: properties-value-inherit-003.html
-  - subtest: outline-width length-em(em) / events
-    test: properties-value-inherit-003.html
-  - subtest: vertical-align length-em(em) / events
-    test: properties-value-inherit-003.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1697510
+    - product: safari
+      url: https://bugs.webkit.org/show_bug.cgi?id=203416
+      results:
+        - test: before-load-001.html
+          status: TIMEOUT
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1635407
+      results:
+        - test: Document-getAnimations.tentative.html
+          subtest: CSS Transitions targetting (pseudo-)elements should have correct order after sorting (::marker)
+    - product: chrome
+      url: https://crbug.com/1074547
+      results:
+        - test: transitioncancel-002.html
+          status: TIMEOUT
+    - product: chrome
+      url: https://crbug.com/868224
+      results:
+        - test: idlharness.html
+          status: FAIL
+    - product: chrome
+      url: https://crbug.com/825262
+      results:
+        - test: properties-value-inherit-001.html
+          status: FAIL
+    - product: chrome
+      url: https://crbug.com/934700
+      results:
+        - test: changing-while-transition-004.html
+    - product: chrome
+      url: https://crbug.com/332189
+      results:
+        - test: no-transition-from-ua-to-blocking-stylesheet.html
+        - test: properties-value-001.html
+        - test: properties-value-002.html
+        - test: properties-value-003.html
+        - test: properties-value-implicit-001.html
+        - test: properties-value-inherit-002.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1697510
+      results:
+        - test: properties-value-003.html
+          subtest: background-image image(url) / values
+        - test: properties-value-003.html
+          subtest: background-image image(url) / events
+        - test: properties-value-003.html
+          subtest: background-image image(data) / values
+        - test: properties-value-003.html
+          subtest: background-image image(data) / events
+        - test: properties-value-inherit-001.html
+          subtest: background-color color(rgba) / events
+        - test: properties-value-inherit-001.html
+          subtest: border-top-width length(pt) / events
+        - test: properties-value-inherit-001.html
+          subtest: border-top-width length(pc) / events
+        - test: properties-value-inherit-001.html
+          subtest: border-top-width length(px) / events
+        - test: properties-value-inherit-001.html
+          subtest: border-top-width length(em) / events
+        - test: properties-value-inherit-001.html
+          subtest: border-top-width length(ex) / events
+        - test: properties-value-inherit-001.html
+          subtest: border-top-width length(mm) / events
+        - test: properties-value-inherit-001.html
+          subtest: border-top-width length(cm) / events
+        - test: properties-value-inherit-001.html
+          subtest: border-top-width length(in) / events
+        - test: properties-value-inherit-001.html
+          subtest: border-right-width length(pt) / events
+        - test: properties-value-inherit-001.html
+          subtest: border-right-width length(pc) / events
+        - test: properties-value-inherit-001.html
+          subtest: border-right-width length(px) / events
+        - test: properties-value-inherit-001.html
+          subtest: border-right-width length(em) / events
+        - test: properties-value-inherit-001.html
+          subtest: border-right-width length(ex) / events
+        - test: properties-value-inherit-001.html
+          subtest: border-right-width length(mm) / events
+        - test: properties-value-inherit-001.html
+          subtest: border-right-width length(cm) / events
+        - test: properties-value-inherit-001.html
+          subtest: border-right-width length(in) / events
+        - test: properties-value-inherit-001.html
+          subtest: border-bottom-width length(pt) / events
+        - test: properties-value-inherit-001.html
+          subtest: border-bottom-width length(pc) / events
+        - test: properties-value-inherit-001.html
+          subtest: border-bottom-width length(px) / events
+        - test: properties-value-inherit-001.html
+          subtest: border-bottom-width length(em) / events
+        - test: properties-value-inherit-001.html
+          subtest: border-bottom-width length(ex) / events
+        - test: properties-value-inherit-001.html
+          subtest: border-bottom-width length(mm) / events
+        - test: properties-value-inherit-001.html
+          subtest: border-bottom-width length(cm) / events
+        - test: properties-value-inherit-001.html
+          subtest: border-bottom-width length(in) / events
+        - test: properties-value-inherit-001.html
+          subtest: border-left-width length(pt) / events
+        - test: properties-value-inherit-001.html
+          subtest: border-left-width length(pc) / events
+        - test: properties-value-inherit-001.html
+          subtest: border-left-width length(px) / events
+        - test: properties-value-inherit-001.html
+          subtest: border-left-width length(em) / events
+        - test: properties-value-inherit-001.html
+          subtest: border-left-width length(ex) / events
+        - test: properties-value-inherit-001.html
+          subtest: border-left-width length(mm) / events
+        - test: properties-value-inherit-001.html
+          subtest: border-left-width length(cm) / events
+        - test: properties-value-inherit-001.html
+          subtest: border-left-width length(in) / events
+        - test: properties-value-inherit-001.html
+          subtest: border-top-color color(rgba) / events
+        - test: properties-value-inherit-001.html
+          subtest: border-right-color color(rgba) / events
+        - test: properties-value-inherit-001.html
+          subtest: border-bottom-color color(rgba) / events
+        - test: properties-value-inherit-001.html
+          subtest: border-left-color color(rgba) / events
+        - test: properties-value-inherit-001.html
+          subtest: padding-bottom length(pt) / events
+        - test: properties-value-inherit-001.html
+          subtest: padding-bottom length(pc) / events
+        - test: properties-value-inherit-001.html
+          subtest: padding-bottom length(px) / events
+        - test: properties-value-inherit-001.html
+          subtest: padding-bottom length(em) / events
+        - test: properties-value-inherit-001.html
+          subtest: padding-bottom length(ex) / events
+        - test: properties-value-inherit-001.html
+          subtest: padding-bottom length(mm) / events
+        - test: properties-value-inherit-001.html
+          subtest: padding-bottom length(cm) / events
+        - test: properties-value-inherit-001.html
+          subtest: padding-bottom length(in) / events
+        - test: properties-value-inherit-001.html
+          subtest: padding-left length(pt) / events
+        - test: properties-value-inherit-001.html
+          subtest: padding-left length(pc) / events
+        - test: properties-value-inherit-001.html
+          subtest: padding-left length(px) / events
+        - test: properties-value-inherit-001.html
+          subtest: padding-left length(em) / events
+        - test: properties-value-inherit-001.html
+          subtest: padding-left length(ex) / events
+        - test: properties-value-inherit-001.html
+          subtest: padding-left length(mm) / events
+        - test: properties-value-inherit-001.html
+          subtest: padding-left length(cm) / events
+        - test: properties-value-inherit-001.html
+          subtest: padding-left length(in) / events
+        - test: properties-value-inherit-001.html
+          subtest: padding-right length(pt) / events
+        - test: properties-value-inherit-001.html
+          subtest: padding-right length(pc) / events
+        - test: properties-value-inherit-001.html
+          subtest: padding-right length(px) / events
+        - test: properties-value-inherit-001.html
+          subtest: padding-right length(em) / events
+        - test: properties-value-inherit-001.html
+          subtest: padding-right length(ex) / events
+        - test: properties-value-inherit-001.html
+          subtest: padding-right length(mm) / events
+        - test: properties-value-inherit-001.html
+          subtest: padding-right length(cm) / events
+        - test: properties-value-inherit-001.html
+          subtest: padding-right length(in) / events
+        - test: properties-value-inherit-001.html
+          subtest: padding-top length(pt) / events
+        - test: properties-value-inherit-001.html
+          subtest: padding-top length(pc) / events
+        - test: properties-value-inherit-001.html
+          subtest: padding-top length(px) / events
+        - test: properties-value-inherit-001.html
+          subtest: padding-top length(em) / events
+        - test: properties-value-inherit-001.html
+          subtest: padding-top length(ex) / events
+        - test: properties-value-inherit-001.html
+          subtest: padding-top length(mm) / events
+        - test: properties-value-inherit-001.html
+          subtest: padding-top length(cm) / events
+        - test: properties-value-inherit-001.html
+          subtest: padding-top length(in) / events
+        - test: properties-value-inherit-001.html
+          subtest: margin-bottom length(pt) / events
+        - test: properties-value-inherit-001.html
+          subtest: margin-bottom length(pc) / events
+        - test: properties-value-inherit-001.html
+          subtest: margin-bottom length(px) / events
+        - test: properties-value-inherit-001.html
+          subtest: margin-bottom length(em) / events
+        - test: properties-value-inherit-001.html
+          subtest: margin-bottom length(ex) / events
+        - test: properties-value-inherit-001.html
+          subtest: margin-bottom length(mm) / events
+        - test: properties-value-inherit-001.html
+          subtest: margin-bottom length(cm) / events
+        - test: properties-value-inherit-001.html
+          subtest: margin-bottom length(in) / events
+        - test: properties-value-inherit-001.html
+          subtest: margin-left length(pt) / events
+        - test: properties-value-inherit-001.html
+          subtest: margin-left length(pc) / events
+        - test: properties-value-inherit-001.html
+          subtest: margin-left length(px) / events
+        - test: properties-value-inherit-001.html
+          subtest: margin-left length(em) / events
+        - test: properties-value-inherit-001.html
+          subtest: margin-left length(ex) / events
+        - test: properties-value-inherit-001.html
+          subtest: margin-left length(mm) / events
+        - test: properties-value-inherit-001.html
+          subtest: margin-left length(cm) / events
+        - test: properties-value-inherit-001.html
+          subtest: margin-left length(in) / events
+        - test: properties-value-inherit-001.html
+          subtest: margin-right length(pt) / events
+        - test: properties-value-inherit-001.html
+          subtest: margin-right length(pc) / events
+        - test: properties-value-inherit-001.html
+          subtest: margin-right length(px) / events
+        - test: properties-value-inherit-001.html
+          subtest: margin-right length(em) / events
+        - test: properties-value-inherit-001.html
+          subtest: margin-right length(ex) / events
+        - test: properties-value-inherit-001.html
+          subtest: margin-right length(mm) / events
+        - test: properties-value-inherit-001.html
+          subtest: margin-right length(cm) / events
+        - test: properties-value-inherit-001.html
+          subtest: margin-right length(in) / events
+        - test: properties-value-inherit-001.html
+          subtest: margin-top length(pt) / events
+        - test: properties-value-inherit-001.html
+          subtest: margin-top length(pc) / events
+        - test: properties-value-inherit-001.html
+          subtest: margin-top length(px) / events
+        - test: properties-value-inherit-001.html
+          subtest: margin-top length(em) / events
+        - test: properties-value-inherit-001.html
+          subtest: margin-top length(ex) / events
+        - test: properties-value-inherit-001.html
+          subtest: margin-top length(mm) / events
+        - test: properties-value-inherit-001.html
+          subtest: margin-top length(cm) / events
+        - test: properties-value-inherit-001.html
+          subtest: margin-top length(in) / events
+        - test: properties-value-inherit-001.html
+          subtest: height length(pt) / events
+        - test: properties-value-inherit-001.html
+          subtest: height length(pc) / events
+        - test: properties-value-inherit-001.html
+          subtest: height length(px) / events
+        - test: properties-value-inherit-001.html
+          subtest: height length(em) / events
+        - test: properties-value-inherit-001.html
+          subtest: height length(ex) / events
+        - test: properties-value-inherit-001.html
+          subtest: height length(mm) / events
+        - test: properties-value-inherit-001.html
+          subtest: height length(cm) / events
+        - test: properties-value-inherit-001.html
+          subtest: height length(in) / events
+        - test: properties-value-inherit-001.html
+          subtest: height percentage(%) / events
+        - test: properties-value-inherit-001.html
+          subtest: width length(pt) / events
+        - test: properties-value-inherit-001.html
+          subtest: width length(pc) / events
+        - test: properties-value-inherit-001.html
+          subtest: width length(px) / events
+        - test: properties-value-inherit-001.html
+          subtest: width length(em) / events
+        - test: properties-value-inherit-001.html
+          subtest: width length(ex) / events
+        - test: properties-value-inherit-001.html
+          subtest: width length(mm) / events
+        - test: properties-value-inherit-001.html
+          subtest: width length(cm) / events
+        - test: properties-value-inherit-001.html
+          subtest: width length(in) / events
+        - test: properties-value-inherit-001.html
+          subtest: width percentage(%) / events
+        - test: properties-value-inherit-001.html
+          subtest: min-height length(pt) / events
+        - test: properties-value-inherit-001.html
+          subtest: min-height length(pc) / events
+        - test: properties-value-inherit-001.html
+          subtest: min-height length(px) / events
+        - test: properties-value-inherit-001.html
+          subtest: min-height length(em) / events
+        - test: properties-value-inherit-001.html
+          subtest: min-height length(ex) / events
+        - test: properties-value-inherit-001.html
+          subtest: min-height length(mm) / events
+        - test: properties-value-inherit-001.html
+          subtest: min-height length(cm) / events
+        - test: properties-value-inherit-001.html
+          subtest: min-height length(in) / events
+        - test: properties-value-inherit-001.html
+          subtest: min-height percentage(%) / events
+        - test: properties-value-inherit-001.html
+          subtest: min-width length(pt) / events
+        - test: properties-value-inherit-001.html
+          subtest: min-width length(pc) / events
+        - test: properties-value-inherit-001.html
+          subtest: min-width length(px) / events
+        - test: properties-value-inherit-001.html
+          subtest: min-width length(em) / events
+        - test: properties-value-inherit-001.html
+          subtest: min-width length(ex) / events
+        - test: properties-value-inherit-001.html
+          subtest: min-width length(mm) / events
+        - test: properties-value-inherit-001.html
+          subtest: min-width length(cm) / events
+        - test: properties-value-inherit-001.html
+          subtest: min-width length(in) / events
+        - test: properties-value-inherit-001.html
+          subtest: min-width percentage(%) / events
+        - test: properties-value-inherit-001.html
+          subtest: max-height length(pt) / events
+        - test: properties-value-inherit-001.html
+          subtest: max-height length(pc) / events
+        - test: properties-value-inherit-001.html
+          subtest: max-height length(px) / events
+        - test: properties-value-inherit-001.html
+          subtest: max-height length(em) / events
+        - test: properties-value-inherit-001.html
+          subtest: max-height length(ex) / events
+        - test: properties-value-inherit-001.html
+          subtest: max-height length(mm) / events
+        - test: properties-value-inherit-001.html
+          subtest: max-height length(cm) / events
+        - test: properties-value-inherit-001.html
+          subtest: max-height length(in) / events
+        - test: properties-value-inherit-001.html
+          subtest: max-height percentage(%) / events
+        - test: properties-value-inherit-001.html
+          subtest: max-width length(pt) / events
+        - test: properties-value-inherit-001.html
+          subtest: max-width length(pc) / events
+        - test: properties-value-inherit-001.html
+          subtest: max-width length(px) / events
+        - test: properties-value-inherit-001.html
+          subtest: max-width length(em) / events
+        - test: properties-value-inherit-001.html
+          subtest: max-width length(ex) / events
+        - test: properties-value-inherit-001.html
+          subtest: max-width length(mm) / events
+        - test: properties-value-inherit-001.html
+          subtest: max-width length(cm) / events
+        - test: properties-value-inherit-001.html
+          subtest: max-width length(in) / events
+        - test: properties-value-inherit-001.html
+          subtest: max-width percentage(%) / events
+        - test: properties-value-inherit-001.html
+          subtest: top length(pt) / events
+        - test: properties-value-inherit-001.html
+          subtest: top length(pc) / events
+        - test: properties-value-inherit-001.html
+          subtest: top length(px) / events
+        - test: properties-value-inherit-001.html
+          subtest: top length(em) / events
+        - test: properties-value-inherit-001.html
+          subtest: top length(ex) / events
+        - test: properties-value-inherit-001.html
+          subtest: top length(mm) / events
+        - test: properties-value-inherit-001.html
+          subtest: top length(cm) / events
+        - test: properties-value-inherit-001.html
+          subtest: top length(in) / events
+        - test: properties-value-inherit-001.html
+          subtest: top percentage(%) / events
+        - test: properties-value-inherit-001.html
+          subtest: right length(pt) / events
+        - test: properties-value-inherit-001.html
+          subtest: right length(pc) / events
+        - test: properties-value-inherit-001.html
+          subtest: right length(px) / events
+        - test: properties-value-inherit-001.html
+          subtest: right length(em) / events
+        - test: properties-value-inherit-001.html
+          subtest: right length(ex) / events
+        - test: properties-value-inherit-001.html
+          subtest: right length(mm) / events
+        - test: properties-value-inherit-001.html
+          subtest: right length(cm) / events
+        - test: properties-value-inherit-001.html
+          subtest: right length(in) / events
+        - test: properties-value-inherit-001.html
+          subtest: right percentage(%) / events
+        - test: properties-value-inherit-001.html
+          subtest: bottom length(pt) / events
+        - test: properties-value-inherit-001.html
+          subtest: bottom length(pc) / events
+        - test: properties-value-inherit-001.html
+          subtest: bottom length(px) / events
+        - test: properties-value-inherit-001.html
+          subtest: bottom length(em) / events
+        - test: properties-value-inherit-001.html
+          subtest: bottom length(ex) / events
+        - test: properties-value-inherit-001.html
+          subtest: bottom length(mm) / events
+        - test: properties-value-inherit-001.html
+          subtest: bottom length(cm) / events
+        - test: properties-value-inherit-001.html
+          subtest: bottom length(in) / events
+        - test: properties-value-inherit-001.html
+          subtest: bottom percentage(%) / events
+        - test: properties-value-inherit-001.html
+          subtest: left length(pt) / events
+        - test: properties-value-inherit-001.html
+          subtest: left length(pc) / events
+        - test: properties-value-inherit-001.html
+          subtest: left length(px) / events
+        - test: properties-value-inherit-001.html
+          subtest: left length(em) / events
+        - test: properties-value-inherit-001.html
+          subtest: left length(ex) / events
+        - test: properties-value-inherit-001.html
+          subtest: left length(mm) / events
+        - test: properties-value-inherit-001.html
+          subtest: left length(cm) / events
+        - test: properties-value-inherit-001.html
+          subtest: left length(in) / events
+        - test: properties-value-inherit-001.html
+          subtest: left percentage(%) / events
+        - test: properties-value-inherit-001.html
+          subtest: color color(rgba) / events
+        - test: properties-value-inherit-001.html
+          subtest: font-size length(pt) / events
+        - test: properties-value-inherit-001.html
+          subtest: font-size length(pc) / events
+        - test: properties-value-inherit-001.html
+          subtest: font-size length(px) / events
+        - test: properties-value-inherit-001.html
+          subtest: font-size length(em) / events
+        - test: properties-value-inherit-001.html
+          subtest: font-size length(ex) / events
+        - test: properties-value-inherit-001.html
+          subtest: font-size length(mm) / events
+        - test: properties-value-inherit-001.html
+          subtest: font-size length(cm) / events
+        - test: properties-value-inherit-001.html
+          subtest: font-size length(in) / events
+        - test: properties-value-inherit-001.html
+          subtest: font-size percentage(%) / events
+        - test: properties-value-inherit-001.html
+          subtest: font-weight font-weight(keyword) / events
+        - test: properties-value-inherit-001.html
+          subtest: font-weight font-weight(numeric) / events
+        - test: properties-value-inherit-001.html
+          subtest: letter-spacing length(pt) / events
+        - test: properties-value-inherit-001.html
+          subtest: letter-spacing length(pc) / events
+        - test: properties-value-inherit-001.html
+          subtest: letter-spacing length(px) / events
+        - test: properties-value-inherit-001.html
+          subtest: letter-spacing length(em) / events
+        - test: properties-value-inherit-001.html
+          subtest: letter-spacing length(ex) / events
+        - test: properties-value-inherit-001.html
+          subtest: letter-spacing length(mm) / events
+        - test: properties-value-inherit-001.html
+          subtest: letter-spacing length(cm) / events
+        - test: properties-value-inherit-001.html
+          subtest: letter-spacing length(in) / events
+        - test: properties-value-inherit-001.html
+          subtest: word-spacing length(pt) / events
+        - test: properties-value-inherit-001.html
+          subtest: word-spacing length(pc) / events
+        - test: properties-value-inherit-001.html
+          subtest: word-spacing length(px) / events
+        - test: properties-value-inherit-001.html
+          subtest: word-spacing length(em) / events
+        - test: properties-value-inherit-001.html
+          subtest: word-spacing length(ex) / events
+        - test: properties-value-inherit-001.html
+          subtest: word-spacing length(mm) / events
+        - test: properties-value-inherit-001.html
+          subtest: word-spacing length(cm) / events
+        - test: properties-value-inherit-001.html
+          subtest: word-spacing length(in) / events
+        - test: properties-value-inherit-001.html
+          subtest: text-indent length(pt) / events
+        - test: properties-value-inherit-001.html
+          subtest: text-indent length(pc) / events
+        - test: properties-value-inherit-001.html
+          subtest: text-indent length(px) / events
+        - test: properties-value-inherit-001.html
+          subtest: text-indent length(em) / events
+        - test: properties-value-inherit-001.html
+          subtest: text-indent length(ex) / events
+        - test: properties-value-inherit-001.html
+          subtest: text-indent length(mm) / events
+        - test: properties-value-inherit-001.html
+          subtest: text-indent length(cm) / events
+        - test: properties-value-inherit-001.html
+          subtest: text-indent length(in) / events
+        - test: properties-value-inherit-001.html
+          subtest: text-indent percentage(%) / events
+        - test: properties-value-inherit-001.html
+          subtest: text-shadow shadow(shadow) / events
+        - test: properties-value-inherit-001.html
+          subtest: outline-color color(rgba) / events
+        - test: properties-value-inherit-001.html
+          subtest: outline-offset length(pt) / events
+        - test: properties-value-inherit-001.html
+          subtest: outline-offset length(pc) / events
+        - test: properties-value-inherit-001.html
+          subtest: outline-offset length(px) / events
+        - test: properties-value-inherit-001.html
+          subtest: outline-offset length(em) / events
+        - test: properties-value-inherit-001.html
+          subtest: outline-offset length(ex) / events
+        - test: properties-value-inherit-001.html
+          subtest: outline-offset length(mm) / events
+        - test: properties-value-inherit-001.html
+          subtest: outline-offset length(cm) / events
+        - test: properties-value-inherit-001.html
+          subtest: outline-offset length(in) / events
+        - test: properties-value-inherit-001.html
+          subtest: outline-width length(pt) / events
+        - test: properties-value-inherit-001.html
+          subtest: outline-width length(pc) / events
+        - test: properties-value-inherit-001.html
+          subtest: outline-width length(px) / events
+        - test: properties-value-inherit-001.html
+          subtest: outline-width length(em) / events
+        - test: properties-value-inherit-001.html
+          subtest: outline-width length(ex) / events
+        - test: properties-value-inherit-001.html
+          subtest: outline-width length(mm) / events
+        - test: properties-value-inherit-001.html
+          subtest: outline-width length(cm) / events
+        - test: properties-value-inherit-001.html
+          subtest: outline-width length(in) / events
+        - test: properties-value-inherit-001.html
+          subtest: clip rectangle(rectangle) / events
+        - test: properties-value-inherit-001.html
+          subtest: opacity number[0,1](zero-to-one) / events
+        - test: properties-value-inherit-001.html
+          subtest: visibility visibility(keyword) / events
+        - test: properties-value-inherit-001.html
+          subtest: z-index integer(integer) / events
+        - test: properties-value-inherit-003.html
+          subtest: background-position length-em(em) / events
+        - test: properties-value-inherit-003.html
+          subtest: border-top-width length-em(em) / events
+        - test: properties-value-inherit-003.html
+          subtest: border-right-width length-em(em) / events
+        - test: properties-value-inherit-003.html
+          subtest: border-bottom-width length-em(em) / events
+        - test: properties-value-inherit-003.html
+          subtest: border-left-width length-em(em) / events
+        - test: properties-value-inherit-003.html
+          subtest: padding-bottom length-em(em) / events
+        - test: properties-value-inherit-003.html
+          subtest: padding-left length-em(em) / events
+        - test: properties-value-inherit-003.html
+          subtest: padding-right length-em(em) / events
+        - test: properties-value-inherit-003.html
+          subtest: padding-top length-em(em) / events
+        - test: properties-value-inherit-003.html
+          subtest: margin-bottom length-em(em) / events
+        - test: properties-value-inherit-003.html
+          subtest: margin-left length-em(em) / events
+        - test: properties-value-inherit-003.html
+          subtest: margin-right length-em(em) / events
+        - test: properties-value-inherit-003.html
+          subtest: margin-top length-em(em) / events
+        - test: properties-value-inherit-003.html
+          subtest: height length-em(em) / events
+        - test: properties-value-inherit-003.html
+          subtest: width length-em(em) / events
+        - test: properties-value-inherit-003.html
+          subtest: min-height length-em(em) / events
+        - test: properties-value-inherit-003.html
+          subtest: min-width length-em(em) / events
+        - test: properties-value-inherit-003.html
+          subtest: max-height length-em(em) / events
+        - test: properties-value-inherit-003.html
+          subtest: max-width length-em(em) / events
+        - test: properties-value-inherit-003.html
+          subtest: top length-em(em) / events
+        - test: properties-value-inherit-003.html
+          subtest: right length-em(em) / events
+        - test: properties-value-inherit-003.html
+          subtest: bottom length-em(em) / events
+        - test: properties-value-inherit-003.html
+          subtest: left length-em(em) / events
+        - test: properties-value-inherit-003.html
+          subtest: line-height length-em(em) / events
+        - test: properties-value-inherit-003.html
+          subtest: letter-spacing length-em(em) / events
+        - test: properties-value-inherit-003.html
+          subtest: word-spacing length-em(em) / events
+        - test: properties-value-inherit-003.html
+          subtest: text-indent length-em(em) / events
+        - test: properties-value-inherit-003.html
+          subtest: outline-offset length-em(em) / events
+        - test: properties-value-inherit-003.html
+          subtest: outline-width length-em(em) / events
+        - test: properties-value-inherit-003.html
+          subtest: vertical-align length-em(em) / events
+    - product: chrome
+      url: https://bugs.chromium.org/p/chromium/issues/detail?id=816956
+      results:
+        - test: KeyframeEffect-getKeyframes.tentative.html
