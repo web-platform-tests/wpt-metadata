@@ -189,7 +189,7 @@ func readMetadataFile(testPath string) *shared.Metadata {
 
 func removeMetadataFile(testPath string) {
 	filepath := getYMLFilePath(testPath)
-	fmt.Println("Delete", filepath, "from the wpt-metadata repo")
+	fmt.Println("Removing", filepath, "from the wpt-metadata repo")
 	err := os.Remove(filepath)
 
 	if err != nil {
