@@ -181,5 +181,5 @@ links:
 }
 
 func TestGetYMLFilePath(t *testing.T) {
-	assert.Equal(t, "abc/META.yml", getYMLFilePath("abc/abc"))
+	assert.Equal(t, "abc/META.yml", getYMLFilePath("abc/test.html"))
 }
