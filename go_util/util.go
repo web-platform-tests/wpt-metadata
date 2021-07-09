@@ -87,7 +87,7 @@ func WriteMetadataLink(testName string, link shared.MetadataLink) {
 	writeToFile(metadata, f)
 }
 
-// deleteMetadata deletes testname from metadata and return the new metadata and deleted metadataLink entries.
+// deleteMetadata deletes testname from metadata and returns the new metadata and deleted metadataLink entries.
 func deleteMetadata(testname string, metadata shared.Metadata) (shared.Metadata, shared.MetadataLinks) {
 	deletedMetadataLinks := shared.MetadataLinks{}
 	newMetadataLinks := []shared.MetadataLink{}
