@@ -1,18 +1,22 @@
 links:
-- product: firefox
-  results:
-  - subtest: TouchEvent::initTouchEvent
-    test: historical.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1687918
-- product: firefox
-  results:
-  - test: multi-touch-interfaces.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1693303
-- product: chrome
-  results:
-  - test: touch-globaleventhandler-interface.html
-  url: https://crbug.com/1155621
-- product: firefox
-  results:
-  - test: multi-touch-interactions.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1697379
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1687918
+      results:
+        - test: historical.html
+          subtest: TouchEvent::initTouchEvent
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1693303
+      results:
+        - test: multi-touch-interfaces.html
+    - product: chrome
+      url: https://crbug.com/1155621
+      results:
+        - test: touch-globaleventhandler-interface.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1697379
+      results:
+        - test: multi-touch-interactions.html
+    - product: chrome
+      url: https://bugs.chromium.org/p/chromium/issues/detail?id=1138058
+      results:
+        - test: idlharness.window.html
