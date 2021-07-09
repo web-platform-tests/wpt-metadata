@@ -5,6 +5,7 @@ go 1.13
 require (
 	cloud.google.com/go v0.86.0 // indirect
 	github.com/deckarep/golang-set v1.7.1
+	github.com/google/go-github/v35 v35.2.0
 	github.com/stretchr/testify v1.7.0
 	github.com/web-platform-tests/wpt.fyi v0.0.0-20210705031106-e7882c52c5ee
 	google.golang.org/genproto v0.0.0-20210701191553-46259e63a0a9 // indirect
