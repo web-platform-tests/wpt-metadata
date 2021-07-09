@@ -88,6 +88,7 @@ func WriteMetadataLink(testName string, link shared.MetadataLink) {
 }
 
 // deleteMetadata deletes testname from metadata and returns the new metadata and deleted metadataLink entries.
+// testname is the name of a WPT test; e.g. FileReaderSync.worker.js.
 func deleteMetadata(testname string, metadata shared.Metadata) (shared.Metadata, shared.MetadataLinks) {
 	deletedMetadataLinks := shared.MetadataLinks{}
 	newMetadataLinks := []shared.MetadataLink{}
@@ -117,6 +118,8 @@ func deleteMetadata(testname string, metadata shared.Metadata) (shared.Metadata,
 }
 
 // DeleteTestFromMetadata deletes a WPT testPath and returns the deleted metadata entries, if exists.
+// testPath is the path to a WPT test in https://github.com/web-platform-tests/wpt;
+// e.g. FileAPI/FileReaderSync.worker.js
 func DeleteTestFromMetadata(testPath string) shared.MetadataLinks {
 	metadata := readMetadataFile(testPath)
 	if metadata == nil {

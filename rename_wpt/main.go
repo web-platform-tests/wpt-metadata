@@ -62,7 +62,7 @@ func renameMetadata(before, after string) {
 func getChangesBetweenSHAs(ctx context.Context, shaBefore, shaAfter string) (map[string]string, []string) {
 	fmt.Println("Getting WPT changes bewtween", shaBefore, "and", shaAfter)
 	if shaBefore == shaAfter {
-		fmt.Println("No new SHA after", shaBefore)
+		fmt.Println("Nothing to do since the before/after SHAs are the same:", shaBefore)
 		return nil, nil
 	}
 	githubClient := github.NewClient(nil)
