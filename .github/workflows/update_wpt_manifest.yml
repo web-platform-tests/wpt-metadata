@@ -9,8 +9,11 @@ jobs:
     steps:
     - uses: actions/checkout@v2
 
-    - name: Download latest WPT Manifest
-      run: curl -s -S https://wpt.fyi/api/manifest?sha=latest > go_test/MANIFEST.json
+   - name: build main
+      run: go build rename_wpt/main.go
+
+    - name: run main
+      run: ./main
 
     - name: Create pull request
       uses: peter-evans/create-pull-request@v3
