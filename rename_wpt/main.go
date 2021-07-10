@@ -3,6 +3,8 @@ package main
 import (
 	"context"
 	"fmt"
+	"io/ioutil"
+	"net/http"
 	"path"
 
 	"github.com/google/go-github/v35/github"
@@ -13,9 +15,24 @@ import (
 // appropriately in the wpt-metadata repository. This program will roll in the latest WPT SHA once a day
 // through a cron job.
 func main() {
-	// TODO(Kyleju): plumb the before, after SHA through shell. Update SHA through shell as well.
-	shaAfter := "e021a4c8f92596f3261e2d7540d017f5138deb68"
-	shaBefore := "012651bc39bb45a6dc9c93a968b47dd9310a1e8a"
+	shaAfter := updateManifest()
+	if shaAfter == "" {
+		fmt.Println("Unable to update manifest and get shaAfter")
+		return
+	}
+
+	data, err := ioutil.ReadFile("go_test/WPT_SHA.json")
+	if err != nil {
+		fmt.Println("Unable to read go_test/WPT_SHA.json")
+		return
+	}
+
+	err = ioutil.WriteFile("go_test/WPT_SHA.json", []byte(shaAfter), 0644)
+	if err != nil {
+		fmt.Println("Unable to update go_test/WPT_SHA.json with shaAfter")
+		return
+	}
+	shaBefore := string(data)
 
 	// Plumb the SHA information from a text file, WPT SHA rolls on a daily basis
 	renames, deletes := getChangesBetweenSHAs(context.Background(), shaBefore, shaAfter)
@@ -85,4 +102,23 @@ func getChangesBetweenSHAs(ctx context.Context, shaBefore, shaAfter string) (map
 		}
 	}
 	return renames, deletes
+}
+
+// updateManifest updates go_test/MANIFEST.json and returns the latest WPT SHA.
+func updateManifest() string {
+	resp, err := http.Get("https://wpt.fyi/api/manifest?sha=latest")
+	if err != nil {
+		return ""
+	}
+	defer resp.Body.Close()
+	data, err := ioutil.ReadAll(resp.Body)
+	if err != nil {
+		return ""
+	}
+	err = ioutil.WriteFile("go_test/MANIFEST.json", data, 0644)
+	if err != nil {
+		return ""
+	}
+	sha := resp.Header.Get("x-wpt-sha")
+	return sha
 }
