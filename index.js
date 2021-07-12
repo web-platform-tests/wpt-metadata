@@ -29,6 +29,12 @@ async function getBugInfo(page, url) {
         status: document.getElementById('static_bug_status')
             .textContent.split(/\s+/).filter(s=>s).join(' ')
       };
+    } else if (hostname === 'github.com') {
+      return {
+        url: document.URL,
+        title: document.title,
+        status: 'TODO'
+      };
     } else {
       throw new Error(`Don't know how to scrape ${hostname}`);
     }
@@ -42,7 +48,7 @@ async function getBugInfo(page, url) {
 }
 
 async function main() {
-  const metadataURL = 'https://wpt.fyi/api/metadata?product=chrome';
+  const metadataURL = 'https://wpt.fyi/api/metadata?product=safari';
   const metadata = await (await fetch(metadataURL)).json();
 
   const browser = await puppeteer.launch();
@@ -50,9 +56,6 @@ async function main() {
 
   const bugs = new Map();
   for (const [pattern, links] of Object.entries(metadata)) {
-    if (!pattern.startsWith('/service-workers/')) {
-      continue;
-    }
     for (const link of links) {
       const info = await getBugInfo(page, link.url);
       const url = info.url;
