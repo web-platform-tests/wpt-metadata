@@ -1,6 +1,10 @@
 links:
-- product: firefox
-  results:
-  - subtest: synthetic click event is a PointerEvent
-    test: click-event.htm
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1693193
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1693193
+      results:
+        - test: click-event.htm
+          subtest: synthetic click event is a PointerEvent
+    - product: chrome
+      url: https://bugs.chromium.org/p/chromium/issues/detail?id=1229773
+      results:
+        - test: keyboard-accesskey-click-event.html
