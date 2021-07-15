@@ -1,48 +1,54 @@
 links:
-- product: firefox
-  results:
-  - subtest: test_modifier_key_sends_correct_events[\ue03d-META]
-    test: key_events.py
-  - subtest: test_modifier_key_sends_correct_events[\ue053-R_META]
-    test: key_events.py
-  - subtest: test_special_key_sends_keydown[ADD-expected0]
-    test: key_events.py
-  - subtest: test_special_key_sends_keydown[META-expected30]
-    test: key_events.py
-  - subtest: test_special_key_sends_keydown[NUMPAD4-expected37]
-    test: key_events.py
-  - subtest: test_special_key_sends_keydown[NUMPAD5-expected38]
-    test: key_events.py
-  - subtest: test_special_key_sends_keydown[PAGE_DOWN-expected43]
-    test: key_events.py
-  - subtest: test_special_key_sends_keydown[PAGE_UP-expected44]
-    test: key_events.py
-  - subtest: test_special_key_sends_keydown[R_META-expected58]
-    test: key_events.py
-  - subtest: test_special_key_sends_keydown[SEPARATOR-expected63]
-    test: key_events.py
-  - subtest: test_special_key_sends_keydown[SUBTRACT-expected66]
-    test: key_events.py
-  - subtest: test_touch_pointer_properties
-    test: pointer.py
-  - subtest: test_tripleclick_at_coordinates
-    test: pointer_tripleclick.py
-  - subtest: test_pause_positive_integer[none]
-    test: validity.py
-  - subtest: test_pause_positive_integer[key]
-    test: validity.py
-  - subtest: test_pause_positive_integer[pointer]
-    test: validity.py
-  - subtest: test_null_response_value
-    test: wheel.py
-  - subtest: test_no_top_browsing_context
-    test: wheel.py
-  - subtest: test_no_browsing_context
-    test: wheel.py
-  - subtest: test_wheel_scroll
-    test: wheel.py
-  - subtest: test_wheel_scroll_overflow
-    test: wheel.py
-  - subtest: test_wheel_scroll_iframe
-    test: wheel.py
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1717840
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1717840
+      results:
+        - test: key_events.py
+          subtest: test_modifier_key_sends_correct_events[\ue03d-META]
+        - test: key_events.py
+          subtest: test_modifier_key_sends_correct_events[\ue053-R_META]
+        - test: key_events.py
+          subtest: test_special_key_sends_keydown[ADD-expected0]
+        - test: key_events.py
+          subtest: test_special_key_sends_keydown[META-expected30]
+        - test: key_events.py
+          subtest: test_special_key_sends_keydown[NUMPAD4-expected37]
+        - test: key_events.py
+          subtest: test_special_key_sends_keydown[NUMPAD5-expected38]
+        - test: key_events.py
+          subtest: test_special_key_sends_keydown[PAGE_DOWN-expected43]
+        - test: key_events.py
+          subtest: test_special_key_sends_keydown[PAGE_UP-expected44]
+        - test: key_events.py
+          subtest: test_special_key_sends_keydown[R_META-expected58]
+        - test: key_events.py
+          subtest: test_special_key_sends_keydown[SEPARATOR-expected63]
+        - test: key_events.py
+          subtest: test_special_key_sends_keydown[SUBTRACT-expected66]
+        - test: pointer.py
+          subtest: test_touch_pointer_properties
+        - test: pointer_tripleclick.py
+          subtest: test_tripleclick_at_coordinates
+        - test: validity.py
+          subtest: test_pause_positive_integer[none]
+        - test: validity.py
+          subtest: test_pause_positive_integer[key]
+        - test: validity.py
+          subtest: test_pause_positive_integer[pointer]
+        - test: wheel.py
+          subtest: test_null_response_value
+        - test: wheel.py
+          subtest: test_no_top_browsing_context
+        - test: wheel.py
+          subtest: test_no_browsing_context
+        - test: wheel.py
+          subtest: test_wheel_scroll
+        - test: wheel.py
+          subtest: test_wheel_scroll_overflow
+        - test: wheel.py
+          subtest: test_wheel_scroll_iframe
+    - product: chrome
+      url: https://bugs.chromium.org/p/chromium/issues/detail?id=1229794
+      results:
+        - test: key.py
+        - test: key_special_keys.py
+        - test: none.py
