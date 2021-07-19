@@ -4,6 +4,7 @@ import (
 	"context"
 	"fmt"
 	"io/ioutil"
+	"log"
 	"net/http"
 	"path"
 
@@ -17,20 +18,17 @@ import (
 func main() {
 	shaAfter := updateManifest()
 	if shaAfter == "" {
-		fmt.Println("Unable to update manifest and get shaAfter")
-		return
+		log.Fatal("Unable to update manifest and get shaAfter")
 	}
 
 	data, err := ioutil.ReadFile("go_test/WPT_SHA.json")
 	if err != nil {
-		fmt.Println("Unable to read go_test/WPT_SHA.json")
-		return
+		log.Fatalf("Unable to read go_test/WPT_SHA.json: %s", err)
 	}
 
 	err = ioutil.WriteFile("go_test/WPT_SHA.json", []byte(shaAfter), 0644)
 	if err != nil {
-		fmt.Println("Unable to update go_test/WPT_SHA.json with shaAfter")
-		return
+		log.Fatalf("Unable to update go_test/WPT_SHA.json with shaAfter: %s", err)
 	}
 	shaBefore := string(data)
 
