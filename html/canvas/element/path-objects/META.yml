@@ -1,40 +1,45 @@
 links:
-    - product: safari
-      url: https://bugs.webkit.org/show_bug.cgi?id=202516
-      results:
-        - test: 2d.path.rect.winding.html
-          status: FAIL
-    - product: safari
-      url: https://bugs.webkit.org/show_bug.cgi?id=202523
-      results:
-        - test: 2d.path.stroke.scale2.html
-          status: FAIL
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1719230
-      results:
-        - test: 2d.path.roundrect.radius.negative.html
-          subtest: roundRect() with negative radius throws an exception
-    - product: chrome
-      url: https://bugs.chromium.org/p/chromium/issues/detail?id=1230162
-      results:
-        - test: 2d.path.roundrect.1.radius.dompointinit.html
-        - test: 2d.path.roundrect.2.radii.1.dompointinit.html
-        - test: 2d.path.roundrect.2.radii.2.dompointinit.html
-        - test: 2d.path.roundrect.3.radii.1.dompointinit.html
-        - test: 2d.path.roundrect.3.radii.2.dompointinit.html
-        - test: 2d.path.roundrect.4.radii.3.dompointinit.html
-        - test: 2d.path.roundrect.4.radii.4.dompointinit.html
-        - test: 2d.path.roundrect.radius.negative.html
-        - test: 2d.path.roundrect.3.radii.3.dompointinit.html
-        - test: 2d.path.roundrect.4.radii.1.dompointinit.html
-        - test: 2d.path.roundrect.4.radii.2.dompointinit.html
-        - test: 2d.path.roundrect.radius.none.html
-        - test: 2d.path.roundrect.radius.toomany.html
-    - product: chrome
-      url: https://bugs.chromium.org/p/chromium/issues/detail?id=1230164
-      results:
-        - test: 2d.path.stroke.prune.rect.html
-        - test: 2d.path.stroke.prune.line.html
-        - test: 2d.path.stroke.prune.curve.html
-        - test: 2d.path.stroke.prune.arc.html
-        - test: 2d.path.stroke.prune.closed.html
+- product: safari
+  results:
+  - status: FAIL
+    test: 2d.path.rect.winding.html
+  url: https://bugs.webkit.org/show_bug.cgi?id=202516
+- product: safari
+  results:
+  - status: FAIL
+    test: 2d.path.stroke.scale2.html
+  url: https://bugs.webkit.org/show_bug.cgi?id=202523
+- product: firefox
+  results:
+  - subtest: roundRect() with negative radius throws an exception
+    test: 2d.path.roundrect.radius.negative.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1719230
+- product: chrome
+  results:
+  - test: 2d.path.roundrect.1.radius.dompointinit.html
+  - test: 2d.path.roundrect.2.radii.1.dompointinit.html
+  - test: 2d.path.roundrect.2.radii.2.dompointinit.html
+  - test: 2d.path.roundrect.3.radii.1.dompointinit.html
+  - test: 2d.path.roundrect.3.radii.2.dompointinit.html
+  - test: 2d.path.roundrect.4.radii.3.dompointinit.html
+  - test: 2d.path.roundrect.4.radii.4.dompointinit.html
+  - test: 2d.path.roundrect.radius.negative.html
+  - test: 2d.path.roundrect.3.radii.3.dompointinit.html
+  - test: 2d.path.roundrect.4.radii.1.dompointinit.html
+  - test: 2d.path.roundrect.4.radii.2.dompointinit.html
+  - test: 2d.path.roundrect.radius.none.html
+  - test: 2d.path.roundrect.radius.toomany.html
+  url: https://bugs.chromium.org/p/chromium/issues/detail?id=1230162
+- product: chrome
+  results:
+  - test: 2d.path.stroke.prune.rect.html
+  - test: 2d.path.stroke.prune.line.html
+  - test: 2d.path.stroke.prune.curve.html
+  - test: 2d.path.stroke.prune.arc.html
+  - test: 2d.path.stroke.prune.closed.html
+  url: https://bugs.chromium.org/p/chromium/issues/detail?id=1230164
+- product: firefox
+  results:
+  - subtest: roundRect() with Infinity/NaN is ignored
+    test: 2d.path.roundrect.nonfinite.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1721233

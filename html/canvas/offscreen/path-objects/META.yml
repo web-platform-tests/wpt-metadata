@@ -194,3 +194,10 @@ links:
   - subtest: roundRect() with negative radius throws an exception
     test: 2d.path.roundrect.radius.negative.worker.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1719230
+- product: firefox
+  results:
+  - subtest: roundRect() with Infinity/NaN is ignored
+    test: 2d.path.roundrect.nonfinite.html
+  - subtest: roundRect() with Infinity/NaN is ignored
+    test: 2d.path.roundrect.nonfinite.worker.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1721233
