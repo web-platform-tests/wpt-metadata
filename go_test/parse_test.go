@@ -6,6 +6,7 @@ package go_test
 
 import (
 	"io/ioutil"
+	"net/url"
 	"os"
 	"path/filepath"
 	"strings"
@@ -45,8 +46,9 @@ func TestParseMetadata(t *testing.T) {
 			assert.Greater(t, len(metadata.Links), 0)
 			linkMap := make(map[string]string)
 			for _, link := range metadata.Links {
+				_, err := url.ParseRequestURI(link.URL)
+				assert.Nil(t, err)
 				assert.Greater(t, len(link.Results), 0)
-				assert.Greater(t, len(link.URL), 0)
 				checkDuplicationAcrossLinks(t, link, linkMap)
 				resultSet := mapset.NewSet()
 				for _, result := range link.Results {
