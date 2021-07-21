@@ -43,7 +43,7 @@ func TestResultsTestPaths(t *testing.T) {
 		}
 
 		// Crawl + test all the metadata
-		filepath.Walk(".", func(filePath string, info os.FileInfo, err error) error {
+		filepath.Walk("../", func(filePath string, info os.FileInfo, err error) error {
 			if err != nil {
 				panic(err)
 			} else if info.IsDir() || strings.ToLower(info.Name()) != "meta.yml" {
@@ -74,11 +74,12 @@ func TestResultsTestPaths(t *testing.T) {
 						seen.Add(result.TestPath)
 
 						t.Run(result.TestPath, func(t *testing.T) {
-							fullPath := path.Join(fileDir, result.TestPath)
+							absFileDir := strings.TrimLeft(fileDir, "../")
+							fullPath := path.Join(absFileDir, result.TestPath)
 							var ok bool
 							var err error
 							if result.TestPath == "*" {
-								ok, err = manifest.ContainsFile(fileDir)
+								ok, err = manifest.ContainsFile(absFileDir)
 							} else {
 								ok, err = manifest.ContainsTest(fullPath)
 							}

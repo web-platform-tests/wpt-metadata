@@ -168,6 +168,7 @@ func readMetadataFile(testPath string) *shared.Metadata {
 	filepath := getYMLFilePath(testPath)
 	if _, err := os.Stat(filepath); os.IsNotExist(err) {
 		// The file does not exist.
+		log.Printf("The file %s does not exist.", filepath)
 		return nil
 	}
 
