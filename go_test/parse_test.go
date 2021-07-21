@@ -5,6 +5,7 @@
 package go_test
 
 import (
+	"fmt"
 	"io/ioutil"
 	"net/url"
 	"os"
@@ -20,7 +21,7 @@ import (
 )
 
 func TestParseMetadata(t *testing.T) {
-	filepath.Walk(".", func(path string, info os.FileInfo, err error) error {
+	filepath.Walk("../", func(path string, info os.FileInfo, err error) error {
 		if err != nil {
 			panic(err)
 		} else if info.IsDir() || strings.ToLower(info.Name()) != "meta.yml" {
@@ -54,7 +55,7 @@ func TestParseMetadata(t *testing.T) {
 				for _, result := range link.Results {
 					assert.Greater(t, len(result.TestPath), 0)
 					assert.False(t, strings.Contains(result.TestPath, "/"), "Test files must not be paths")
-					checkDuplicationWithinResults(t, result, resultSet)
+					checkDuplicationWithinResults(t, result, resultSet, path)
 				}
 			}
 		})
@@ -71,7 +72,7 @@ func checkDuplicationAcrossLinks(t *testing.T, link shared.MetadataLink, linkMap
 	linkMap[link.URL] = expected
 }
 
-func checkDuplicationWithinResults(t *testing.T, result shared.MetadataTestResult, resultSet mapset.Set) {
+func checkDuplicationWithinResults(t *testing.T, result shared.MetadataTestResult, resultSet mapset.Set, path string) {
 	subtestName := ""
 	if result.SubtestName != nil {
 		subtestName = *result.SubtestName
@@ -81,7 +82,7 @@ func checkDuplicationWithinResults(t *testing.T, result shared.MetadataTestResul
 		status = result.Status.String()
 	}
 	expected := serializeStrings(result.TestPath, subtestName, status)
-	assert.False(t, resultSet.Contains(expected), "duplicated entries within results")
+	assert.False(t, resultSet.Contains(expected), fmt.Sprintf("duplicated entries within results: %s in %s", result.TestPath, path))
 	resultSet.Add(expected)
 }
 
