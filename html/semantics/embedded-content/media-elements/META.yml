@@ -15,3 +15,10 @@ links:
           subtest: Speed-ups should change the pitch when preservesPitch=false
         - test: preserves-pitch.html
           subtest: Test that preservesPitch is present and unprefixed.
+    - product: chrome
+      url: https://bugs.chromium.org/p/chromium/issues/detail?id=1232504
+      results:
+        - test: autoplay-default-feature-policy.https.sub.html
+        - test: autoplay-disabled-by-feature-policy.https.sub.html
+        - test: networkState_during_progress.html
+        - test: src_object_blob.html
