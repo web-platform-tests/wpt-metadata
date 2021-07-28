@@ -66,3 +66,32 @@ links:
       url: https://bugs.chromium.org/p/chromium/issues/detail?id=918475
       results:
         - test: font-style-computed.html
+    - product: safari
+      url: https://bugs.webkit.org/show_bug.cgi?id=214230
+      results:
+        - test: font-weight-computed.html
+          subtest: Property font-weight value 'normal'
+        - test: font-weight-computed.html
+          subtest: Property font-weight value 'bold'
+        - test: font-weight-computed.html
+          subtest: Property font-weight value '400'
+        - test: font-weight-computed.html
+          subtest: Property font-weight value '700'
+        - test: font-weight-computed.html
+          subtest: 100 made bolder computes to 400
+        - test: font-weight-computed.html
+          subtest: 200 made bolder computes to 400
+        - test: font-weight-computed.html
+          subtest: 300 made bolder computes to 400
+        - test: font-weight-computed.html
+          subtest: 400 made bolder computes to 700
+        - test: font-weight-computed.html
+          subtest: 500 made bolder computes to 700
+        - test: font-weight-computed.html
+          subtest: 600 made lighter computes to 400
+        - test: font-weight-computed.html
+          subtest: 700 made lighter computes to 400
+        - test: font-weight-computed.html
+          subtest: 800 made lighter computes to 700
+        - test: font-weight-computed.html
+          subtest: 900 made lighter computes to 700
