@@ -37,3 +37,24 @@ links:
   - subtest: coop-same-origin-allow-popups-document-write
     test: coop-same-origin-allow-popups-document-write.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1715463
+- product: firefox
+  results:
+  - test: popup-coop-by-sw.https.html?5-last
+  - subtest: opener:coi, openee:basic, sw:basic
+    test: popup-coop-by-sw.https.html?5-last
+  - subtest: opener:coi, openee:basic, sw:coi
+    test: popup-coop-by-sw.https.html?5-last
+  - subtest: opener:coi, openee:coi, sw:basic
+    test: popup-coop-by-sw.https.html?5-last
+  - subtest: opener:coi, openee:coi, sw:coi
+    test: popup-coop-by-sw.https.html?5-last
+  - test: popup-coop-by-sw.https.html?1-4
+  - subtest: opener:basic, openee:basic, sw:basic
+    test: popup-coop-by-sw.https.html?1-4
+  - subtest: opener:basic, openee:basic, sw:coi
+    test: popup-coop-by-sw.https.html?1-4
+  - subtest: opener:basic, openee:coi, sw:basic
+    test: popup-coop-by-sw.https.html?1-4
+  - subtest: opener:basic, openee:coi, sw:coi
+    test: popup-coop-by-sw.https.html?1-4
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1722734
