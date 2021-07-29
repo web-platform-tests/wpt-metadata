@@ -1,10 +1,12 @@
 links:
-- product: firefox
-  results:
-  - subtest: interactive content <audio controls=""></audio> as second child under
-      <label>
-    test: clicking-interactive-content.html
-  - subtest: interactive content <video controls=""></video> as second child under
-      <label>
-    test: clicking-interactive-content.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1695753
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1695753
+      results:
+        - test: clicking-interactive-content.html
+          subtest: interactive content <audio controls=""></audio> as second child under <label>
+        - test: clicking-interactive-content.html
+          subtest: interactive content <video controls=""></video> as second child under <label>
+    - product: chrome
+      url: https://bugs.chromium.org/p/chromium/issues/detail?id=1234207
+      results:
+        - test: label-attributes.sub.html
