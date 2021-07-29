@@ -1,25 +1,26 @@
 links:
-- product: firefox
-  results:
-  - subtest: To receive option part controller code, an element labeled as an option
-      must be a descendant of the listbox part in a flat tree traversal
-    test: selectmenu-parts-structure.tentative.html
-  - subtest: To receive button part controller code, an element labeled as a button
-      must not be a descendant of the listbox part in a flat tree traversal
-    test: selectmenu-parts-structure.tentative.html
-  - subtest: Test that HTMLSelectMenu with no options has empty string for value
-    test: selectmenu-value.tentative.html
-  - subtest: Test value with HTMLOptionElement element option parts
-    test: selectmenu-value.tentative.html
-  - subtest: Test value with non-HTMLOptionElement element option parts
-    test: selectmenu-value.tentative.html
-  - subtest: Test that slotted-in selected-value part is updated to value of selectmenu
-    test: selectmenu-value.tentative.html
-  - subtest: Test that option parts in a slotted-in listbox are reflected in the value
-      property
-    test: selectmenu-value.tentative.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1700268
-- product: firefox
-  results:
-  - test: selectmenu-option-arbitrary-content-not-displayed.tentative.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1703439
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1700268
+      results:
+        - test: selectmenu-parts-structure.tentative.html
+          subtest: To receive option part controller code, an element labeled as an option must be a descendant of the listbox part in a flat tree traversal
+        - test: selectmenu-parts-structure.tentative.html
+          subtest: To receive button part controller code, an element labeled as a button must not be a descendant of the listbox part in a flat tree traversal
+        - test: selectmenu-value.tentative.html
+          subtest: Test that HTMLSelectMenu with no options has empty string for value
+        - test: selectmenu-value.tentative.html
+          subtest: Test value with HTMLOptionElement element option parts
+        - test: selectmenu-value.tentative.html
+          subtest: Test value with non-HTMLOptionElement element option parts
+        - test: selectmenu-value.tentative.html
+          subtest: Test that slotted-in selected-value part is updated to value of selectmenu
+        - test: selectmenu-value.tentative.html
+          subtest: Test that option parts in a slotted-in listbox are reflected in the value property
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1703439
+      results:
+        - test: selectmenu-option-arbitrary-content-not-displayed.tentative.html
+    - product: chrome
+      url: https://bugs.chromium.org/p/chromium/issues/detail?id=1121840
+      results:
+        - test: selectmenu-popup.tentative.html
