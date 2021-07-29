@@ -1,19 +1,34 @@
 links:
-    - product: chrome
-      url: https://bugs.chromium.org/p/chromium/issues/detail?id=1212299
-      results:
-        - test: css-text-line-break-in-loose.html
-        - test: css-text-line-break-iteration-loose.html
-        - test: css-text-line-break-pr-loose.html
-        - test: css-text-line-break-pr-normal.html
-        - test: css-text-line-break-pr-strict.html
-        - test: css-text-line-break-cj-strict.html
-    - product: chrome
-      url: https://bugs.chromium.org/p/chromium/issues/detail?id=1052717
-      results:
-        - test: css-text-line-break-iteration-loose.html
-        - test: css-text-line-break-pr-loose.html
-        - test: css-text-line-break-pr-normal.html
-        - test: css-text-line-break-pr-strict.html
-        - test: css-text-line-break-cj-strict.html
-        - test: css-text-line-break-in-loose.html
+- product: chrome
+  results:
+  - test: css-text-line-break-in-loose.html
+  - test: css-text-line-break-iteration-loose.html
+  - test: css-text-line-break-pr-loose.html
+  - test: css-text-line-break-pr-normal.html
+  - test: css-text-line-break-pr-strict.html
+  - test: css-text-line-break-cj-strict.html
+  url: https://bugs.chromium.org/p/chromium/issues/detail?id=1212299
+- product: chrome
+  results:
+  - test: css-text-line-break-iteration-loose.html
+  - test: css-text-line-break-pr-loose.html
+  - test: css-text-line-break-pr-normal.html
+  - test: css-text-line-break-pr-strict.html
+  - test: css-text-line-break-cj-strict.html
+  - test: css-text-line-break-in-loose.html
+  url: https://bugs.chromium.org/p/chromium/issues/detail?id=1052717
+- product: firefox
+  results:
+  - subtest: 00B1  PLUS-MINUS SIGN may appear at line start if loose
+    test: css-text-line-break-pr-loose.html
+  - subtest: FF04  FULLWIDTH DOLLAR SIGN may appear at line start if loose
+    test: css-text-line-break-pr-loose.html
+  - subtest: 00B1  PLUS-MINUS SIGN may appear at line start if normal
+    test: css-text-line-break-pr-normal.html
+  - subtest: FF04  FULLWIDTH DOLLAR SIGN may appear at line start if normal
+    test: css-text-line-break-pr-normal.html
+  - subtest: 00B1  PLUS-MINUS SIGN may appear at line start if strict
+    test: css-text-line-break-pr-strict.html
+  - subtest: FF04  FULLWIDTH DOLLAR SIGN may appear at line start if strict
+    test: css-text-line-break-pr-strict.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1722848

@@ -1,65 +1,80 @@
 links:
-- product: chrome
-  results:
-  - status: FAIL
-    test: form-double-submit.html
-  - status: FAIL
-    test: form-double-submit-3.html
-  url: https://crbug.com/1087077
-- product: firefox
-  results:
-  - subtest: 'Form newline normalization: \n in the value becomes \r\n'
-    test: newline-normalization.html
-  - subtest: 'Form newline normalization: \r in the value becomes \r\n'
-    test: newline-normalization.html
-  - subtest: 'Form newline normalization: \n\r in the value becomes \r\n\r\n'
-    test: newline-normalization.html
-  - subtest: 'Form newline normalization: \n in the name becomes \r\n'
-    test: newline-normalization.html
-  - subtest: 'Form newline normalization: \r in the name becomes \r\n'
-    test: newline-normalization.html
-  - subtest: 'Form newline normalization: \n\r in the name becomes \r\n\r\n'
-    test: newline-normalization.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1680725
-- product: firefox
-  results:
-  - subtest: Empty <input type=file> is still added to the form's entry list
-    test: form-data-set-empty-file.window.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1691655
-- product: firefox
-  results:
-  - subtest: 'multipart/form-data: \n in name (normal form)'
-    test: multipart-formdata.window.html
-  - subtest: 'multipart/form-data: \r in name (normal form)'
-    test: multipart-formdata.window.html
-  - subtest: 'multipart/form-data: \r\n in name (normal form)'
-    test: multipart-formdata.window.html
-  - subtest: 'multipart/form-data: \r\n in name (formdata event)'
-    test: multipart-formdata.window.html
-  - subtest: 'multipart/form-data: \n\r in name (normal form)'
-    test: multipart-formdata.window.html
-  - subtest: 'multipart/form-data: \n in filename (normal form)'
-    test: multipart-formdata.window.html
-  - subtest: 'multipart/form-data: \n in filename (formdata event)'
-    test: multipart-formdata.window.html
-  - subtest: 'multipart/form-data: \r in filename (normal form)'
-    test: multipart-formdata.window.html
-  - subtest: 'multipart/form-data: \r in filename (formdata event)'
-    test: multipart-formdata.window.html
-  - subtest: 'multipart/form-data: \r\n in filename (normal form)'
-    test: multipart-formdata.window.html
-  - subtest: 'multipart/form-data: \r\n in filename (formdata event)'
-    test: multipart-formdata.window.html
-  - subtest: 'multipart/form-data: \n\r in filename (normal form)'
-    test: multipart-formdata.window.html
-  - subtest: 'multipart/form-data: \n\r in filename (formdata event)'
-    test: multipart-formdata.window.html
-  - subtest: 'multipart/form-data: double quote in name (normal form)'
-    test: multipart-formdata.window.html
-  - subtest: 'multipart/form-data: double quote in name (formdata event)'
-    test: multipart-formdata.window.html
-  - subtest: 'multipart/form-data: double quote in filename (normal form)'
-    test: multipart-formdata.window.html
-  - subtest: 'multipart/form-data: double quote in filename (formdata event)'
-    test: multipart-formdata.window.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1704465
+    - product: chrome
+      url: https://crbug.com/1087077
+      results:
+        - test: form-double-submit.html
+          status: FAIL
+        - test: form-double-submit-3.html
+          status: FAIL
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1680725
+      results:
+        - test: newline-normalization.html
+          subtest: 'Form newline normalization: \n in the value becomes \r\n'
+        - test: newline-normalization.html
+          subtest: 'Form newline normalization: \r in the value becomes \r\n'
+        - test: newline-normalization.html
+          subtest: 'Form newline normalization: \n\r in the value becomes \r\n\r\n'
+        - test: newline-normalization.html
+          subtest: 'Form newline normalization: \n in the name becomes \r\n'
+        - test: newline-normalization.html
+          subtest: 'Form newline normalization: \r in the name becomes \r\n'
+        - test: newline-normalization.html
+          subtest: 'Form newline normalization: \n\r in the name becomes \r\n\r\n'
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1691655
+      results:
+        - test: form-data-set-empty-file.window.html
+          subtest: Empty <input type=file> is still added to the form's entry list
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1704465
+      results:
+        - test: multipart-formdata.window.html
+          subtest: 'multipart/form-data: \n in name (normal form)'
+        - test: multipart-formdata.window.html
+          subtest: 'multipart/form-data: \r in name (normal form)'
+        - test: multipart-formdata.window.html
+          subtest: 'multipart/form-data: \r\n in name (normal form)'
+        - test: multipart-formdata.window.html
+          subtest: 'multipart/form-data: \r\n in name (formdata event)'
+        - test: multipart-formdata.window.html
+          subtest: 'multipart/form-data: \n\r in name (normal form)'
+        - test: multipart-formdata.window.html
+          subtest: 'multipart/form-data: \n in filename (normal form)'
+        - test: multipart-formdata.window.html
+          subtest: 'multipart/form-data: \n in filename (formdata event)'
+        - test: multipart-formdata.window.html
+          subtest: 'multipart/form-data: \r in filename (normal form)'
+        - test: multipart-formdata.window.html
+          subtest: 'multipart/form-data: \r in filename (formdata event)'
+        - test: multipart-formdata.window.html
+          subtest: 'multipart/form-data: \r\n in filename (normal form)'
+        - test: multipart-formdata.window.html
+          subtest: 'multipart/form-data: \r\n in filename (formdata event)'
+        - test: multipart-formdata.window.html
+          subtest: 'multipart/form-data: \n\r in filename (normal form)'
+        - test: multipart-formdata.window.html
+          subtest: 'multipart/form-data: \n\r in filename (formdata event)'
+        - test: multipart-formdata.window.html
+          subtest: 'multipart/form-data: double quote in name (normal form)'
+        - test: multipart-formdata.window.html
+          subtest: 'multipart/form-data: double quote in name (formdata event)'
+        - test: multipart-formdata.window.html
+          subtest: 'multipart/form-data: double quote in filename (normal form)'
+        - test: multipart-formdata.window.html
+          subtest: 'multipart/form-data: double quote in filename (formdata event)'
+    - product: chrome
+      url: https://bugs.chromium.org/p/chromium/issues/detail?id=1087077
+      results:
+        - test: form-double-submit-to-different-origin-frame.html
+    - product: chrome
+      url: https://bugs.chromium.org/p/chromium/issues/detail?id=1167095
+      results:
+        - test: multipart-formdata.window.html
+        - test: text-plain.window.html
+        - test: newline-normalization.html
+    - product: chrome
+      url: https://bugs.chromium.org/p/chromium/issues/detail?id=1234409
+      results:
+        - test: form-submission-algorithm.html
+        - test: getactionurl.html

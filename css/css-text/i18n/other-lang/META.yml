@@ -1,15 +1,30 @@
 links:
-    - product: chrome
-      url: https://bugs.chromium.org/p/chromium/issues/detail?id=1212299
-      results:
-        - test: css-text-line-break-de-in-loose.html
-        - test: css-text-line-break-de-pr-loose.html
-        - test: css-text-line-break-de-pr-normal.html
-        - test: css-text-line-break-de-pr-strict.html
-    - product: chrome
-      url: https://bugs.chromium.org/p/chromium/issues/detail?id=1052717
-      results:
-        - test: css-text-line-break-de-pr-normal.html
-        - test: css-text-line-break-de-pr-strict.html
-        - test: css-text-line-break-de-pr-loose.html
-        - test: css-text-line-break-de-in-loose.html
+- product: chrome
+  results:
+  - test: css-text-line-break-de-in-loose.html
+  - test: css-text-line-break-de-pr-loose.html
+  - test: css-text-line-break-de-pr-normal.html
+  - test: css-text-line-break-de-pr-strict.html
+  url: https://bugs.chromium.org/p/chromium/issues/detail?id=1212299
+- product: chrome
+  results:
+  - test: css-text-line-break-de-pr-normal.html
+  - test: css-text-line-break-de-pr-strict.html
+  - test: css-text-line-break-de-pr-loose.html
+  - test: css-text-line-break-de-in-loose.html
+  url: https://bugs.chromium.org/p/chromium/issues/detail?id=1052717
+- product: firefox
+  results:
+  - subtest: 00B1  PLUS-MINUS SIGN may appear at line start if de and loose
+    test: css-text-line-break-de-pr-loose.html
+  - subtest: FF04  FULLWIDTH DOLLAR SIGN may appear at line start if de and loose
+    test: css-text-line-break-de-pr-loose.html
+  - subtest: 00B1  PLUS-MINUS SIGN may appear at line start if de and normal
+    test: css-text-line-break-de-pr-normal.html
+  - subtest: FF04  FULLWIDTH DOLLAR SIGN may appear at line start if de and normal
+    test: css-text-line-break-de-pr-normal.html
+  - subtest: 00B1  PLUS-MINUS SIGN may appear at line start if de and strict
+    test: css-text-line-break-de-pr-strict.html
+  - subtest: FF04  FULLWIDTH DOLLAR SIGN may appear at line start if de and strict
+    test: css-text-line-break-de-pr-strict.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1722848
