@@ -1,47 +1,46 @@
 links:
-- product: chrome
-  results:
-  - status: FAIL
-    test: json-module-service-worker-test.https.tentative.html
-  url: https://crbug.com/967018
-- product: chrome
-  results:
-  - test: parse-error.tentative.html
-  url: https://crbug.com/1142419
-- product: firefox
-  results:
-  - test: module.tentative.html
-  - test: valid-content-type.tentative.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1692131
-- product: firefox
-  results:
-  - subtest: Imported JSON module, cross-origin with CORS
-    test: cors-crossorigin-requests.html
-  - subtest: Imported JSON module, cross-origin, missing CORS ACAO header
-    test: cors-crossorigin-requests.html
-  - subtest: Imported JSON module with parse error, cross-origin, with CORS
-    test: cors-crossorigin-requests.html
-  - subtest: JSON Modules should be loaded with or without the credentials based on
-      the same-origin-ness and the crossOrigin attribute
-    test: credentials.sub.html
-  - test: referrer-policies.sub.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1706244
-- product: firefox
-  results:
-  - test: charset-2.html
-  - test: charset.html
-  - test: integrity.html
-  - subtest: text/json
-    test: valid-content-type.tentative.html
-  - subtest: application/json
-    test: valid-content-type.tentative.html
-  - subtest: text/json;boundary=something
-    test: valid-content-type.tentative.html
-  - subtest: text/json;foo=bar
-    test: valid-content-type.tentative.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1707081
-- product: firefox
-  results:
-  - test: module.html
-  - test: valid-content-type.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1722982
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1692131
+      results:
+        - test: module.html
+        - test: valid-content-type.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1706244
+      results:
+        - test: cors-crossorigin-requests.html
+          subtest: Imported JSON module, cross-origin with CORS
+        - test: cors-crossorigin-requests.html
+          subtest: Imported JSON module, cross-origin, missing CORS ACAO header
+        - test: cors-crossorigin-requests.html
+          subtest: Imported JSON module with parse error, cross-origin, with CORS
+        - test: credentials.sub.html
+          subtest: JSON Modules should be loaded with or without the credentials based on the same-origin-ness and the crossOrigin attribute
+        - test: referrer-policies.sub.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1707081
+      results:
+        - test: charset-2.html
+        - test: charset.html
+        - test: integrity.html
+        - test: valid-content-type.html
+          subtest: text/json
+        - test: valid-content-type.html
+          subtest: application/json
+        - test: valid-content-type.html
+          subtest: text/json;boundary=something
+        - test: valid-content-type.html
+          subtest: text/json;foo=bar
+    - product: chrome
+      url: https://crbug.com/1142419
+      results:
+        - test: parse-error.html
+    - product: chrome
+      url: https://crbug.com/967018
+      results:
+        - test: json-module-service-worker-test.https.html
+          status: FAIL
+    - product: firefox
+      results:
+        - test: module.html
+        - test: valid-content-type.html
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1722982
