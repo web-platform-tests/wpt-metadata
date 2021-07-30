@@ -1,6 +1,10 @@
 links:
-- product: firefox
-  results:
-  - subtest: 'Textarea wrapping transformation: Wrapping happens with LF newlines.'
-    test: wrapping-transformation.window.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1712217
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1712217
+      results:
+        - test: wrapping-transformation.window.html
+          subtest: 'Textarea wrapping transformation: Wrapping happens with LF newlines.'
+    - product: chrome
+      url: https://bugs.chromium.org/p/chromium/issues/detail?id=1234207
+      results:
+        - test: wrapping-transformation.window.html
