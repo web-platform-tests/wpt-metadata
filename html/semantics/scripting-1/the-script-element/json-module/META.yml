@@ -1,18 +1,9 @@
 links:
-    - product: chrome
-      url: https://crbug.com/967018
-      results:
-        - test: json-module-service-worker-test.https.tentative.html
-          status: FAIL
-    - product: chrome
-      url: https://crbug.com/1142419
-      results:
-        - test: parse-error.tentative.html
     - product: firefox
       url: https://bugzilla.mozilla.org/show_bug.cgi?id=1692131
       results:
-        - test: module.tentative.html
-        - test: valid-content-type.tentative.html
+        - test: module.html
+        - test: valid-content-type.html
     - product: firefox
       url: https://bugzilla.mozilla.org/show_bug.cgi?id=1706244
       results:
@@ -22,7 +13,7 @@ links:
           subtest: Imported JSON module, cross-origin, missing CORS ACAO header
         - test: cors-crossorigin-requests.html
           subtest: Imported JSON module with parse error, cross-origin, with CORS
-        - test: credentials.sub.html
+        - test: credentials.sub.ahtml
           subtest: JSON Modules should be loaded with or without the credentials based on the same-origin-ness and the crossOrigin attribute
         - test: referrer-policies.sub.html
     - product: firefox
@@ -31,14 +22,28 @@ links:
         - test: charset-2.html
         - test: charset.html
         - test: integrity.html
-        - test: valid-content-type.tentative.html
+        - test: valid-content-type.html
           subtest: text/json
-        - test: valid-content-type.tentative.html
+        - test: valid-content-type.html
           subtest: application/json
-        - test: valid-content-type.tentative.html
+        - test: valid-content-type.html
           subtest: text/json;boundary=something
-        - test: valid-content-type.tentative.html
+        - test: valid-content-type.html
           subtest: text/json;foo=bar
+    - product: chrome
+      url: https://crbug.com/1142419
+      results:
+        - test: parse-error.html
+    - product: chrome
+      url: https://crbug.com/967018
+      results:
+        - test: json-module-service-worker-test.https.html
+          status: FAIL
+    - product: firefox
+      results:
+        - test: module.html
+        - test: valid-content-type.html
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1722982
     - product: chrome
       url: https://bugs.chromium.org/p/chromium/issues/detail?id=1132413
       results:
