@@ -1,16 +1,21 @@
 links:
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1649264
-      results:
-        - test: security.reset.redirect.html
-          subtest: Resetting the canvas state resets the origin-clean flag
-        - test: security.reset.cross.html
-          subtest: Resetting the canvas state resets the origin-clean flag
-    - product: chrome
-      url: https://bugs.chromium.org/p/chromium/issues/detail?id=1233656
-      results:
-        - test: 2d-getcontext-options.html
-    - product: chrome
-      url: https://bugs.chromium.org/p/chromium/issues/detail?id=1056661
-      results:
-        - test: imagedata.html
+- product: firefox
+  results:
+  - subtest: Resetting the canvas state resets the origin-clean flag
+    test: security.reset.redirect.html
+  - subtest: Resetting the canvas state resets the origin-clean flag
+    test: security.reset.cross.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1649264
+- product: chrome
+  results:
+  - test: 2d-getcontext-options.html
+  url: https://bugs.chromium.org/p/chromium/issues/detail?id=1233656
+- product: chrome
+  results:
+  - test: imagedata.html
+  url: https://bugs.chromium.org/p/chromium/issues/detail?id=1056661
+- product: firefox
+  results:
+  - subtest: Options conversion for getContext("2d")
+    test: 2d-getcontext-options.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1724314
