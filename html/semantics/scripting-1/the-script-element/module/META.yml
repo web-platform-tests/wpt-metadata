@@ -1,19 +1,41 @@
 links:
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1659179
-      results:
-        - test: evaluation-order-1-nothrow-worker.html
-        - test: evaluation-order-1-worker.html
-        - test: evaluation-order-2-import-worker.html
-        - test: evaluation-order-3-dynamic-worker.html
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1664984
-      results:
-        - test: evaluation-order-1-nothrow-sharedworker.html
-        - test: evaluation-order-1-sharedworker.html
-        - test: evaluation-order-2-import-sharedworker.html
-        - test: evaluation-order-3-dynamic-sharedworker.html
-    - product: chrome
-      url: https://crbug.com/717643
-      results:
-        - test: module-in-xhtml.xhtml
+- product: firefox
+  results:
+  - test: evaluation-order-1-nothrow-worker.html
+  - test: evaluation-order-1-worker.html
+  - test: evaluation-order-2-import-worker.html
+  - test: evaluation-order-3-dynamic-worker.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1659179
+- product: firefox
+  results:
+  - test: evaluation-order-1-nothrow-sharedworker.html
+  - test: evaluation-order-1-sharedworker.html
+  - test: evaluation-order-2-import-sharedworker.html
+  - test: evaluation-order-3-dynamic-sharedworker.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1664984
+- product: chrome
+  results:
+  - test: module-in-xhtml.xhtml
+  url: https://crbug.com/717643
+- product: chrome
+  results:
+  - test: evaluation-order-3-dynamic.html
+  url: https://bugs.chromium.org/p/chromium/issues/detail?id=1128214
+- product: chrome
+  results:
+  - test: instantiation-error-3.html
+  - test: instantiation-error-4.html
+  - test: instantiation-error-5.html
+  url: https://bugs.chromium.org/p/chromium/issues/detail?id=1234821
+- product: firefox
+  results:
+  - subtest: Test that unresolvable cycles lead to SyntaxError events on window and
+      load events on script
+    test: instantiation-error-3.html
+  - subtest: Test that loading a graph in which a module is already errored results
+      in an error.
+    test: instantiation-error-4.html
+  - subtest: Test that loading a graph in which a module is already errored results
+      an error.
+    test: instantiation-error-5.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1723620
