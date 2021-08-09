@@ -33,6 +33,18 @@ links:
   url: https://bugs.chromium.org/p/chromium/issues/detail?id=1196022
 - product: firefox
   results:
+  - subtest: To receive listbox part controller code, an element labeled as a listbox
+      must not be a descendant of the button part in a flat tree traversal
+    test: selectmenu-parts-structure.tentative.html
+  - subtest: Listbox controller code should be applied in flat tree traversal order
+      regardless of dynamic insertion order
+    test: selectmenu-parts-structure.tentative.html
+  - subtest: selected-value controller code should be applied in flat tree traversal
+      order regardless of dynamic insertion order
+    test: selectmenu-parts-structure.tentative.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1724118
+- product: firefox
+  results:
   - subtest: A nested button part in a nested <selectmenu> shouldn't get controller
       code even if it comes first in document order
     test: selectmenu-nested.tentative.html
