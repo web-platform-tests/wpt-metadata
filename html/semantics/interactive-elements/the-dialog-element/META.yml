@@ -1,12 +1,17 @@
 links:
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1676457
-      results:
-        - test: centering.html
-          subtest: 'vertical-rl: tall viewport'
-        - test: centering.html
-          subtest: 'vertical-lr: tall viewport'
-        - test: centering.html
-          subtest: 'horizontal-tb (container vertical-rl): tall viewport'
-        - test: centering.html
-          subtest: 'vertical-rl (container horizontal-tb) (dialog vertical-rl): tall viewport'
+- product: firefox
+  results:
+  - subtest: 'vertical-rl: tall viewport'
+    test: centering.html
+  - subtest: 'vertical-lr: tall viewport'
+    test: centering.html
+  - subtest: 'horizontal-tb (container vertical-rl): tall viewport'
+    test: centering.html
+  - subtest: 'vertical-rl (container horizontal-tb) (dialog vertical-rl): tall viewport'
+    test: centering.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1676457
+- product: firefox
+  results:
+  - test: modal-dialog-in-replaced-renderer.html
+  - test: modal-dialog-in-table-column.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1726608
