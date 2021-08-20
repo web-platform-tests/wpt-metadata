@@ -1,6 +1,12 @@
 links:
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1675896
-      results:
-        - test: PositionOptions.https.html
-          subtest: PositionOptions tests
+- product: firefox
+  results:
+  - subtest: PositionOptions tests
+    test: PositionOptions.https.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1675896
+- product: firefox
+  results:
+  - subtest: User denies access, check that error callback is called with correct
+      code
+    test: getCurrentPosition_permission_deny.https.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1726805
