@@ -1,5 +1,24 @@
 links:
-    - product: chrome
-      url: https://bugs.chromium.org/p/chromium/issues/detail?id=1124771
-      results:
-        - test: contain-intrinsic-size-computed.html
+- product: chrome
+  results:
+  - test: contain-intrinsic-size-computed.html
+  url: https://bugs.chromium.org/p/chromium/issues/detail?id=1124771
+- product: firefox
+  results:
+  - subtest: Property contain-intrinsic-size value 'auto'
+    test: contain-intrinsic-size-computed.html
+  - subtest: Property contain-intrinsic-size value '1px'
+    test: contain-intrinsic-size-computed.html
+  - subtest: Property contain-intrinsic-size value '5px 5px'
+    test: contain-intrinsic-size-computed.html
+  - subtest: e.style['contain-intrinsic-size'] = "auto" should set the property value
+    test: contain-intrinsic-size-valid.html
+  - subtest: e.style['contain-intrinsic-size'] = "1px" should set the property value
+    test: contain-intrinsic-size-valid.html
+  - subtest: e.style['contain-intrinsic-size'] = "2em 3px" should set the property
+      value
+    test: contain-intrinsic-size-valid.html
+  - subtest: e.style['contain-intrinsic-size'] = "5px 5px" should set the property
+      value
+    test: contain-intrinsic-size-valid.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1726878
