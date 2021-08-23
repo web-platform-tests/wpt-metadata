@@ -10,3 +10,18 @@ links:
       results:
         - test: idlharness.worker.html
         - test: idlharness.html
+    - product: deno
+      url: https://github.com/denoland/deno/issues/11731
+      results:
+        - test: idlharness.any.html
+          subtest: 'FileReader interface: attribute onloadstart'
+        - test: idlharness.any.html
+          subtest: 'FileReader interface: attribute onprogress'
+        - test: idlharness.any.html
+          subtest: 'FileReader interface: attribute onload'
+        - test: idlharness.any.html
+          subtest: 'FileReader interface: attribute onabort'
+        - test: idlharness.any.html
+          subtest: 'FileReader interface: attribute onerror'
+        - test: idlharness.any.html
+          subtest: 'FileReader interface: attribute onloadend'
