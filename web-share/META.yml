@@ -1,104 +1,104 @@
 links:
-- product: firefox
-  results:
-  - subtest: share() rejects when URL is invalid
-    test: share-url-invalid.https.html
-  - subtest: share with a dictionary containing only surplus fields
-    test: share-empty.https.html
-  - subtest: share with an empty dictionary
-    test: share-empty.https.html
-  - subtest: share with a undefined argument (same as empty dictionary)
-    test: share-empty.https.html
-  - subtest: share with no arguments (same as empty dictionary)
-    test: share-empty.https.html
-  - subtest: share with a null argument (same as empty dictionary)
-    test: share-empty.https.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1653170
-- product: firefox
-  results:
-  - subtest: canShare with no arguments (same as empty dictionary)
-    test: canShare.tentative.https.html
-  - subtest: canShare with an empty dictionary
-    test: canShare.tentative.https.html
-  - subtest: canShare with a undefined argument (same as empty dictionary)
-    test: canShare.tentative.https.html
-  - subtest: canShare with a null argument (same as empty dictionary)
-    test: canShare.tentative.https.html
-  - subtest: canShare with a dictionary containing only surplus fields
-    test: canShare.tentative.https.html
-  - subtest: canShare with an invalid URL
-    test: canShare.tentative.https.html
-  - subtest: canShare with attribute undefined is equivalent to omitting the attribute
-    test: canShare.tentative.https.html
-  - subtest: canShare with title
-    test: canShare.tentative.https.html
-  - subtest: canShare with text
-    test: canShare.tentative.https.html
-  - subtest: canShare with URL
-    test: canShare.tentative.https.html
-  - subtest: canShare with null attribute
-    test: canShare.tentative.https.html
-  - subtest: canShare with number
-    test: canShare.tentative.https.html
-  - subtest: canShare with object
-    test: canShare.tentative.https.html
-  - subtest: canShare with unexpected field
-    test: canShare.tentative.https.html
-  - subtest: canShare with empty URL
-    test: canShare.tentative.https.html
-  - subtest: canShare with URL having no scheme
-    test: canShare.tentative.https.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1667162
-- product: chrome
-  results:
-  - test: disabled-by-feature-policy.https.sub.html
-  url: https://crbug.com/1079104
-- product: chrome
-  results:
-  - test: share-sharePromise-internal-slot.https.html
-  url: https://crbug.com/1002514
-- product: firefox
-  results:
-  - subtest: canShare with empty file list
-    test: canShare-files.https.html
-  - subtest: canShare with single file list
-    test: canShare-files.https.html
-  - subtest: canShare with file list
-    test: canShare-files.https.html
-  - subtest: canShare with repeated file
-    test: canShare-files.https.html
-  - subtest: canShare with file list and url
-    test: canShare-files.https.html
-  - subtest: canShare with no arguments (same as empty dictionary)
-    test: canShare.https.html
-  - subtest: canShare with an empty dictionary
-    test: canShare.https.html
-  - subtest: canShare with a undefined argument (same as empty dictionary)
-    test: canShare.https.html
-  - subtest: canShare with a null argument (same as empty dictionary)
-    test: canShare.https.html
-  - subtest: canShare with a dictionary containing only surplus fields
-    test: canShare.https.html
-  - subtest: canShare with an invalid URL
-    test: canShare.https.html
-  - subtest: canShare with attribute undefined is equivalent to omitting the attribute
-    test: canShare.https.html
-  - subtest: canShare with title
-    test: canShare.https.html
-  - subtest: canShare with text
-    test: canShare.https.html
-  - subtest: canShare with URL
-    test: canShare.https.html
-  - subtest: canShare with null attribute
-    test: canShare.https.html
-  - subtest: canShare with number
-    test: canShare.https.html
-  - subtest: canShare with object
-    test: canShare.https.html
-  - subtest: canShare with unexpected field
-    test: canShare.https.html
-  - subtest: canShare with empty URL
-    test: canShare.https.html
-  - subtest: canShare with URL having no scheme
-    test: canShare.https.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1726691
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1653170
+      results:
+        - test: share-url-invalid.https.html
+          subtest: share() rejects when URL is invalid
+        - test: share-empty.https.html
+          subtest: share with a dictionary containing only surplus fields
+        - test: share-empty.https.html
+          subtest: share with an empty dictionary
+        - test: share-empty.https.html
+          subtest: share with a undefined argument (same as empty dictionary)
+        - test: share-empty.https.html
+          subtest: share with no arguments (same as empty dictionary)
+        - test: share-empty.https.html
+          subtest: share with a null argument (same as empty dictionary)
+    - product: chrome
+      url: https://crbug.com/1079104
+      results:
+        - test: disabled-by-feature-policy.https.sub.html
+    - product: chrome
+      url: https://crbug.com/1002514
+      results:
+        - test: share-sharePromise-internal-slot.https.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1667162
+      results:
+        - test: canShare.https.html
+          subtest: canShare with no arguments (same as empty dictionary)
+        - test: canShare.https.html
+          subtest: canShare with an empty dictionary
+        - test: canShare.https.html
+          subtest: canShare with a undefined argument (same as empty dictionary)
+        - test: canShare.https.html
+          subtest: canShare with a null argument (same as empty dictionary)
+        - test: canShare.https.html
+          subtest: canShare with a dictionary containing only surplus fields
+        - test: canShare.https.html
+          subtest: canShare with an invalid URL
+        - test: canShare.https.html
+          subtest: canShare with attribute undefined is equivalent to omitting the attribute
+        - test: canShare.https.html
+          subtest: canShare with title
+        - test: canShare.https.html
+          subtest: canShare with text
+        - test: canShare.https.html
+          subtest: canShare with URL
+        - test: canShare.https.html
+          subtest: canShare with null attribute
+        - test: canShare.https.html
+          subtest: canShare with number
+        - test: canShare.https.html
+          subtest: canShare with object
+        - test: canShare.https.html
+          subtest: canShare with unexpected field
+        - test: canShare.https.html
+          subtest: canShare with empty URL
+        - test: canShare.https.html
+          subtest: canShare with URL having no scheme
+    - product: firefox
+      results:
+      - subtest: canShare with empty file list
+        test: canShare-files.https.html
+      - subtest: canShare with single file list
+        test: canShare-files.https.html
+      - subtest: canShare with file list
+        test: canShare-files.https.html
+      - subtest: canShare with repeated file
+        test: canShare-files.https.html
+      - subtest: canShare with file list and url
+        test: canShare-files.https.html
+      - subtest: canShare with no arguments (same as empty dictionary)
+        test: canShare.https.html
+      - subtest: canShare with an empty dictionary
+        test: canShare.https.html
+      - subtest: canShare with a undefined argument (same as empty dictionary)
+        test: canShare.https.html
+      - subtest: canShare with a null argument (same as empty dictionary)
+        test: canShare.https.html
+      - subtest: canShare with a dictionary containing only surplus fields
+        test: canShare.https.html
+      - subtest: canShare with an invalid URL
+        test: canShare.https.html
+      - subtest: canShare with attribute undefined is equivalent to omitting the attribute
+        test: canShare.https.html
+      - subtest: canShare with title
+        test: canShare.https.html
+      - subtest: canShare with text
+        test: canShare.https.html
+      - subtest: canShare with URL
+        test: canShare.https.html
+      - subtest: canShare with null attribute
+        test: canShare.https.html
+      - subtest: canShare with number
+        test: canShare.https.html
+      - subtest: canShare with object
+        test: canShare.https.html
+      - subtest: canShare with unexpected field
+        test: canShare.https.html
+      - subtest: canShare with empty URL
+        test: canShare.https.html
+      - subtest: canShare with URL having no scheme
+        test: canShare.https.html
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1726691

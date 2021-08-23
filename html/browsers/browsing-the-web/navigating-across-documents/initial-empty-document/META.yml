@@ -1,0 +1,42 @@
+links:
+- product: firefox
+  results:
+  - subtest: Content synchronously added to <iframe> with no src won't get replaced
+    test: initial-content-replacement.html
+  - subtest: Content synchronously added to <iframe> with src='' won't get replaced
+    test: initial-content-replacement.html
+  - subtest: Content synchronously added to <iframe> with src='about:blank' won't
+      get replaced
+    test: initial-content-replacement.html
+  - subtest: Content synchronously added to <iframe> with src='about:blank#foo' won't
+      get replaced
+    test: initial-content-replacement.html
+  - subtest: Content synchronously added to <iframe> with src='about:blank?foo' won't
+      get replaced
+    test: initial-content-replacement.html
+  - subtest: Content synchronously added to window.open('about:blank')-ed document
+      won't get replaced
+    test: initial-content-replacement.html
+  - subtest: Content synchronously added to window.open('about:blank?foo')-ed document
+      won't get replaced
+    test: initial-content-replacement.html
+  - subtest: load event fires synchronously on <iframe> element created with no src
+    test: load-event-iframe-element.html
+  - subtest: load event fires synchronously on <iframe> element created with src=''
+    test: load-event-iframe-element.html
+  - subtest: load event fires synchronously on <iframe> element created with src='about:blank'
+    test: load-event-iframe-element.html
+  - subtest: load event fires synchronously on <iframe> element created with src='about:blank?foo'
+    test: load-event-iframe-element.html
+  - subtest: load & pageshow event do not fire on contentWindow of <iframe> element
+      created with no src
+    test: load-pageshow-events-iframe-contentWindow.html
+  - subtest: load & pageshow events do not fire on contentWindow of <iframe> element
+      created with src=''
+    test: load-pageshow-events-iframe-contentWindow.html
+  - subtest: load & pageshow events do not fire on contentWindow of <iframe> element
+      created with src='about:blank'
+    test: load-pageshow-events-iframe-contentWindow.html
+  - subtest: load event does not fire on window.open('about:blank')
+    test: load-pageshow-events-window-open.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1725958
