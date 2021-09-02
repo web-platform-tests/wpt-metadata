@@ -19,3 +19,10 @@ links:
           subtest: can't overwrite with no value (Computed Style)
         - test: variable-definition.html
           subtest: can't overwrite with no value (Cascading)
+    - product: chrome
+      url: https://crbug.com/1245954
+      results:
+        - test: variable-definition.html
+          subtest: CSSOM.setProperty with space 1
+        - test: variable-definition.html
+          subtest: CSSOM.setProperty with space 2
