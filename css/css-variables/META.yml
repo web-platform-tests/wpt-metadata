@@ -10,3 +10,30 @@ links:
       results:
         - test: variable-definition.html
           subtest: no char variable
+    - product: chrome
+      url: https://crbug.com/1220144
+      results:
+        - test: variable-definition.html
+          subtest: can overwrite with space value
+        - test: variable-definition.html
+          subtest: can overwrite with space value (Computed Style)
+        - test: variable-definition.html
+          subtest: can overwrite with space value (Cascading)
+        - test: variable-definition.html
+          subtest: ' leading white space (single space)'
+        - test: variable-definition.html
+          subtest: ' leading white space (double space) 2'
+        - test: variable-definition.html
+          subtest: ' trailing white space (double space) 2'
+        - test: variable-definition.html
+          subtest: ' leading white space (single space) (Computed Style)'
+        - test: variable-definition.html
+          subtest: ' leading white space (double space) 2 (Computed Style)'
+        - test: variable-definition.html
+          subtest: ' trailing white space (double space) 2 (Computed Style)'
+        - test: variable-definition.html
+          subtest: ' leading white space (single space) (Cascading)'
+        - test: variable-definition.html
+          subtest: ' leading white space (double space) 2 (Cascading)'
+        - test: variable-definition.html
+          subtest: ' trailing white space (double space) 2 (Cascading)'
