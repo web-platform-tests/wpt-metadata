@@ -1,73 +1,80 @@
 links:
-    - product: safari
-      url: https://bugs.webkit.org/show_bug.cgi?id=196698
-      results:
-        - test: iframe-loading-lazy.html
-          status: FAIL
-    - product: webkitgtk
-      url: https://bugs.webkit.org/show_bug.cgi?id=196698
-      results:
-        - test: iframe-loading-lazy.html
-          status: FAIL
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1646031
-      results:
-        - test: iframe_sandbox_navigation_download_block_downloads.sub.tentative.html
-          subtest: Navigation resulted download in sandbox is blocked.
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1650947
-      results:
-        - test: iframe-loading-lazy.html
-          subtest: Below-viewport iframes load lazily
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1653078
-      results:
-        - test: iframe-loading-lazy-base-url.html
-          subtest: When a loading=lazy iframe is loaded, it loads relative to the document's base URL computed at parse-time.
-        - test: iframe-loading-lazy.html
-          subtest: Below-viewport iframes load lazily
-        - test: iframe-loading-lazy-base-url-2.html
-          subtest: When a loading=lazy iframe is loaded, it loads relative to the document's base URL computed at parse-time.
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1653034
-      results:
-        - test: iframe-network-error.sub.html
-        - test: iframe-network-error.sub.html
-          subtest: 'navigating an existing iframe: nonexistent host'
-        - test: iframe-network-error.sub.html
-          subtest: 'new iframe: nonexistent host'
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1665311
-      results:
-        - test: historical.html
-          subtest: iframe.allowPaymentRequest should not be supported
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1700225
-      results:
-        - test: sandbox-inherit-to-blank-document-unsandboxed.html
-          subtest: The initial empty document inherit sandbox via CSP.
-        - test: sandbox-inherit-to-blank-document-unsandboxed.html
-          subtest: The synchronous re-navigation to about:blank inherits sandbox via CSP
-    - product: chrome
-      url: https://bugs.chromium.org/p/chromium/issues/detail?id=1233674
-      results:
-        - test: cross-origin-to-whom-part-2.window.html
-        - test: cross-origin-to-whom.window.html
-        - test: historical.html
-    - product: chrome
-      url: https://bugs.chromium.org/p/chromium/issues/detail?id=1101175
-      results:
-        - test: iframe-loading-lazy-load-event.html
-    - product: chrome
-      url: https://bugs.chromium.org/p/chromium/issues/detail?id=1047909
-      results:
-        - test: iframe-loading-lazy.html
-    - product: chrome
-      url: https://bugs.chromium.org/p/chromium/issues/detail?id=853146
-      results:
-        - test: iframe_sandbox_allow_top_navigation-1.html
-        - test: iframe_sandbox_allow_top_navigation-3.html
-    - product: chrome
-      url: https://bugs.chromium.org/p/chromium/issues/detail?id=927183
-      results:
-        - test: iframe_sandbox_navigation_download_allow_downloads.sub.tentative.html
+- product: safari
+  results:
+  - status: FAIL
+    test: iframe-loading-lazy.html
+  url: https://bugs.webkit.org/show_bug.cgi?id=196698
+- product: webkitgtk
+  results:
+  - status: FAIL
+    test: iframe-loading-lazy.html
+  url: https://bugs.webkit.org/show_bug.cgi?id=196698
+- product: firefox
+  results:
+  - subtest: Navigation resulted download in sandbox is blocked.
+    test: iframe_sandbox_navigation_download_block_downloads.sub.tentative.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1646031
+- product: firefox
+  results:
+  - subtest: Below-viewport iframes load lazily
+    test: iframe-loading-lazy.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1650947
+- product: firefox
+  results:
+  - subtest: When a loading=lazy iframe is loaded, it loads relative to the document's
+      base URL computed at parse-time.
+    test: iframe-loading-lazy-base-url.html
+  - subtest: Below-viewport iframes load lazily
+    test: iframe-loading-lazy.html
+  - subtest: When a loading=lazy iframe is loaded, it loads relative to the document's
+      base URL computed at parse-time.
+    test: iframe-loading-lazy-base-url-2.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1653078
+- product: firefox
+  results:
+  - test: iframe-network-error.sub.html
+  - subtest: 'navigating an existing iframe: nonexistent host'
+    test: iframe-network-error.sub.html
+  - subtest: 'new iframe: nonexistent host'
+    test: iframe-network-error.sub.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1653034
+- product: firefox
+  results:
+  - subtest: iframe.allowPaymentRequest should not be supported
+    test: historical.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1665311
+- product: firefox
+  results:
+  - subtest: The initial empty document inherit sandbox via CSP.
+    test: sandbox-inherit-to-blank-document-unsandboxed.html
+  - subtest: The synchronous re-navigation to about:blank inherits sandbox via CSP
+    test: sandbox-inherit-to-blank-document-unsandboxed.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1700225
+- product: chrome
+  results:
+  - test: cross-origin-to-whom-part-2.window.html
+  - test: cross-origin-to-whom.window.html
+  - test: historical.html
+  url: https://bugs.chromium.org/p/chromium/issues/detail?id=1233674
+- product: chrome
+  results:
+  - test: iframe-loading-lazy-load-event.html
+  url: https://bugs.chromium.org/p/chromium/issues/detail?id=1101175
+- product: chrome
+  results:
+  - test: iframe-loading-lazy.html
+  url: https://bugs.chromium.org/p/chromium/issues/detail?id=1047909
+- product: chrome
+  results:
+  - test: iframe_sandbox_allow_top_navigation-1.html
+  - test: iframe_sandbox_allow_top_navigation-3.html
+  url: https://bugs.chromium.org/p/chromium/issues/detail?id=853146
+- product: chrome
+  results:
+  - test: iframe_sandbox_navigation_download_allow_downloads.sub.tentative.html
+  url: https://bugs.chromium.org/p/chromium/issues/detail?id=927183
+- product: firefox
+  results:
+  - subtest: Fallback content is always displayed for sandboxed PDFs
+    test: sandbox_004.htm
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1728960
