@@ -1,28 +1,58 @@
 links:
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1342012
-      results:
-        - test: dynamic-imports-credentials.sub.html
-          subtest: Dynamic imports should be loaded with or without the credentials based on the same-origin-ness and the parent script's crossOrigin attribute
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1674887
-      results:
-        - test: dynamic-imports-credentials.sub.html
-          subtest: Cross-origin dynamic import from classic script (crossOrigin=use-credentials)
-    - product: chrome
-      url: https://crbug.com/1133238
-      results:
-        - test: dynamic-imports-credentials-setTimeout.sub.html
-        - test: string-compilation-nonce-classic.html
-    - product: chrome
-      url: https://bugs.chromium.org/p/chromium/issues/detail?id=1133238
-      results:
-        - test: string-compilation-other-document.html
-        - test: string-compilation-nonce-module.html
-    - product: chrome
-      url: https://bugs.chromium.org/p/chromium/issues/detail?id=796034
-      results:
-        - test: string-compilation-base-url-inline-classic.html
-        - test: string-compilation-base-url-inline-module.html
-        - test: string-compilation-base-url-external-classic.html
-        - test: string-compilation-base-url-external-module.html
+- product: firefox
+  results:
+  - subtest: Dynamic imports should be loaded with or without the credentials based
+      on the same-origin-ness and the parent script's crossOrigin attribute
+    test: dynamic-imports-credentials.sub.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1342012
+- product: firefox
+  results:
+  - subtest: Cross-origin dynamic import from classic script (crossOrigin=use-credentials)
+    test: dynamic-imports-credentials.sub.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1674887
+- product: chrome
+  results:
+  - test: dynamic-imports-credentials-setTimeout.sub.html
+  - test: string-compilation-nonce-classic.html
+  url: https://crbug.com/1133238
+- product: chrome
+  results:
+  - test: string-compilation-other-document.html
+  - test: string-compilation-nonce-module.html
+  url: https://bugs.chromium.org/p/chromium/issues/detail?id=1133238
+- product: chrome
+  results:
+  - test: string-compilation-base-url-inline-classic.html
+  - test: string-compilation-base-url-inline-module.html
+  - test: string-compilation-base-url-external-classic.html
+  - test: string-compilation-base-url-external-module.html
+  url: https://bugs.chromium.org/p/chromium/issues/detail?id=796034
+- product: firefox
+  results:
+  - subtest: Blob URLs are supported in dynamic imports
+    test: blob-url.any.sharedworker.html
+  - subtest: Identical blob URLs resolve to the same module
+    test: blob-url.any.sharedworker.html
+  - subtest: Different blob URLs pointing to the same blob resolve to different modules
+    test: blob-url.any.sharedworker.html
+  - subtest: A revoked blob URL will not resolve
+    test: blob-url.any.sharedworker.html
+  - subtest: A revoked blob URL will resolve if it's already in the module graph
+    test: blob-url.any.sharedworker.html
+  - subtest: Revoking a blob URL immediately after calling import will not fail
+    test: blob-url.any.sharedworker.html
+  - test: blob-url.any.sharedworker-module.html
+  - subtest: Blob URLs are supported in dynamic imports
+    test: blob-url.any.worker.html
+  - subtest: Identical blob URLs resolve to the same module
+    test: blob-url.any.worker.html
+  - subtest: Different blob URLs pointing to the same blob resolve to different modules
+    test: blob-url.any.worker.html
+  - subtest: A revoked blob URL will not resolve
+    test: blob-url.any.worker.html
+  - subtest: A revoked blob URL will resolve if it's already in the module graph
+    test: blob-url.any.worker.html
+  - subtest: Revoking a blob URL immediately after calling import will not fail
+    test: blob-url.any.worker.html
+  - test: blob-url.any.worker-module.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1729725
