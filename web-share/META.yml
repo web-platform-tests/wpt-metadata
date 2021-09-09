@@ -109,3 +109,8 @@ links:
   - subtest: canShare() multiple members
     test: canShare.https.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1727343
+- product: firefox
+  results:
+  - subtest: calling canShare() on a non-fully active document returns false
+    test: test-fully-active.https.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1730008
