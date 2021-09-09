@@ -11,3 +11,57 @@ links:
   - subtest: Traversing the history during unload
     test: traverse-during-unload.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1710538
+- product: firefox
+  results:
+  - subtest: http://web-platform.test:8000/common/blank.html to blob:(a blob URL for
+      this origin) should not work
+    test: history_pushstate_url_rewriting.html
+  - subtest: http://web-platform.test:8000/common/blank.html to about:blank should
+      not work
+    test: history_pushstate_url_rewriting.html
+  - subtest: http://web-platform.test:8000/common/blank.html to about:srcdoc should
+      not work
+    test: history_pushstate_url_rewriting.html
+  - subtest: blob:(a blob URL for this origin) to blob:(a blob URL for this origin)
+      should  work
+    test: history_pushstate_url_rewriting.html
+  - subtest: blob:(a blob URL for this origin) to blob:(a blob URL for this origin)#newhash
+      should  work
+    test: history_pushstate_url_rewriting.html
+  - subtest: blob:(a blob URL for this origin) to blob:newpath should not work
+    test: history_pushstate_url_rewriting.html
+  - subtest: about:blank to about:blank should  work
+    test: history_pushstate_url_rewriting.html
+  - subtest: about:blank to about:srcdoc should not work
+    test: history_pushstate_url_rewriting.html
+  - subtest: about:blank to about:blank?newsearch should not work
+    test: history_pushstate_url_rewriting.html
+  - subtest: about:blank to about:blank#newhash should  work
+    test: history_pushstate_url_rewriting.html
+  - subtest: about:blank to http://web-platform.test:8000/blank should not work
+    test: history_pushstate_url_rewriting.html
+  - subtest: http://web-platform.test:8000/common/blank.html to javascript:'foo' should
+      not work
+    test: history_pushstate_url_rewriting.html
+  - subtest: javascript:'foo' to javascript:'foo' should not work
+    test: history_pushstate_url_rewriting.html
+  - subtest: javascript:'foo' to javascript:'foo'?newsearch should not work
+    test: history_pushstate_url_rewriting.html
+  - subtest: javascript:'foo' to javascript:'foo'#newhash should not work
+    test: history_pushstate_url_rewriting.html
+  - subtest: about:srcdoc to about:srcdoc should  work
+    test: history_pushstate_url_rewriting.html
+  - subtest: about:srcdoc to about:srcdoc?newsearch should not work
+    test: history_pushstate_url_rewriting.html
+  - subtest: about:srcdoc to about:srcdoc#newhash should  work
+    test: history_pushstate_url_rewriting.html
+  - subtest: about:srcdoc to http://web-platform.test:8000/srcdoc should not work
+    test: history_pushstate_url_rewriting.html
+  - subtest: data:(script to run this test) to data:(script to run this test) should  work
+    test: history_pushstate_url_rewriting.html
+  - subtest: data:(script to run this test) to data:(script to run this test)#newhash
+      should  work
+    test: history_pushstate_url_rewriting.html
+  - subtest: data:(script to run this test) to data:newpath should not work
+    test: history_pushstate_url_rewriting.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1729992
