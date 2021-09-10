@@ -1,34 +1,41 @@
 links:
-    - product: chrome
-      url: https://crbug.com/651762
-      results:
-        - test: 009.html
-          status: FAIL
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1661310
-      results:
-        - test: failure-check-sequence.https.html
-          subtest: COEP check precedes X-Frame-Options check
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1717686
-      results:
-        - test: javascript-url-return-value-handling-dynamic.html
-          subtest: 0041 set in src=""
-        - test: javascript-url-return-value-handling-dynamic.html
-          subtest: 0041 set in href="" targeting a frame and clicked
-        - test: javascript-url-return-value-handling-dynamic.html
-          subtest: 0080 00FF set in src=""
-        - test: javascript-url-return-value-handling-dynamic.html
-          subtest: 0080 00FF set in href="" targeting a frame and clicked
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1718318
-      results:
-        - test: javascript-url-security-check-failure.sub.html
-          subtest: cross-origin-domain but same-origin, setting src
-        - test: javascript-url-security-check-failure.sub.html
-          subtest: cross-origin-domain but same-origin, setting location.href
-        - test: javascript-url-security-check-multi-globals.sub.html
-          subtest: Using iframeEl.src
-        - test: javascript-url-security-check-same-origin-domain.sub.html
-        - test: javascript-url-security-check-same-origin-domain.sub.html
-          subtest: 'javascript: URL security check for same-origin-domain but not same-origin'
+- product: chrome
+  results:
+  - status: FAIL
+    test: 009.html
+  url: https://crbug.com/651762
+- product: firefox
+  results:
+  - subtest: COEP check precedes X-Frame-Options check
+    test: failure-check-sequence.https.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1661310
+- product: firefox
+  results:
+  - subtest: 0041 set in src=""
+    test: javascript-url-return-value-handling-dynamic.html
+  - subtest: 0041 set in href="" targeting a frame and clicked
+    test: javascript-url-return-value-handling-dynamic.html
+  - subtest: 0080 00FF set in src=""
+    test: javascript-url-return-value-handling-dynamic.html
+  - subtest: 0080 00FF set in href="" targeting a frame and clicked
+    test: javascript-url-return-value-handling-dynamic.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1717686
+- product: firefox
+  results:
+  - subtest: cross-origin-domain but same-origin, setting src
+    test: javascript-url-security-check-failure.sub.html
+  - subtest: cross-origin-domain but same-origin, setting location.href
+    test: javascript-url-security-check-failure.sub.html
+  - subtest: Using iframeEl.src
+    test: javascript-url-security-check-multi-globals.sub.html
+  - test: javascript-url-security-check-same-origin-domain.sub.html
+  - subtest: 'javascript: URL security check for same-origin-domain but not same-origin'
+    test: javascript-url-security-check-same-origin-domain.sub.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1718318
+- product: firefox
+  results:
+  - subtest: Loading an iframe with src=redirecting URL
+    test: redirect-to-data.html
+  - subtest: Navigating an iframe to a redirecting URL
+    test: redirect-to-data.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1730240
