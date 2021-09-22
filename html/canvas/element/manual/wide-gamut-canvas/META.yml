@@ -1,254 +1,548 @@
 links:
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1654143
-      results:
-        - test: canvas-createImageBitmap-e_srgb.html
-        - test: canvas-createImageBitmap-e_srgb.html
-          subtest: createImageBitmap in e-sRGB from a transparent sRGB HTMLCanvasElement with resize.
-        - test: canvas-createImageBitmap-e_srgb.html
-          subtest: createImageBitmap in e-sRGB from a transparent sRGB Blob (BMP, ICO, PNG, WEBP) with resize.
-        - test: canvas-createImageBitmap-e_srgb.html
-          subtest: 'createImageBitmap in e-sRGB from color managed Blob with resize. blobPixelFormat: uint8, transparency: false'
-        - test: canvas-createImageBitmap-e_srgb.html
-          subtest: createImageBitmap in e-sRGB from an opaque sRGB HTMLCanvasElement with resize.
-        - test: canvas-createImageBitmap-e_srgb.html
-          subtest: createImageBitmap in e-sRGB from a sRGB HTMLVideoElement with resize.
-        - test: canvas-createImageBitmap-e_srgb.html
-          subtest: createImageBitmap in e-sRGB from an opaque sRGB Blob (BMP, GIF, ICO, JPG, PNG, WEBP) with resize.
-        - test: canvas-createImageBitmap-e_srgb.html
-          subtest: createImageBitmap in e-sRGB from a transparent sRGB HTMLImageElement (BMP, ICO, PNG, WEBP) with resize.
-        - test: canvas-createImageBitmap-e_srgb.html
-          subtest: createImageBitmap in e-sRGB from an opaque e-sRGB HTMLCanvasElement with resize.
-        - test: canvas-createImageBitmap-e_srgb.html
-          subtest: createImageBitmap in e-sRGB from a transparent e-sRGB HTMLCanvasElement with resize.
-        - test: canvas-createImageBitmap-e_srgb.html
-          subtest: createImageBitmap in e-sRGB from a sRGB SVG image with resize.
-        - test: canvas-createImageBitmap-e_srgb.html
-          subtest: createImageBitmap in e-sRGB from an opaque sRGB HTMLImageElement (BMP, GIF, ICO, JPG, PNG, WEBP) with resize.
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1658092
-      results:
-        - test: canvas-createImageBitmap-e_srgb.html
-          subtest: createImageBitmap in e-sRGB from a transparent sRGB Blob (AVIF, BMP, ICO, PNG, WEBP) with resize.
-        - test: canvas-createImageBitmap-e_srgb.html
-          subtest: createImageBitmap in e-sRGB from a transparent sRGB HTMLImageElement (AVIF, BMP, ICO, PNG, WEBP) with resize.
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1666278
-      results:
-        - test: canvas-colorManaged-convertToBlob-roundtrip.html
-        - test: canvas-colorManaged-convertToBlob-roundtrip.html
-          subtest: Overall test
-        - test: canvas-colorManaged-convertToBlob-roundtrip.html
-          subtest: 'Test canvas convertToBlob(): mimeType: image/png, blobPixelFormat: uint8, source color space: srgb, pixel format: uint8, alpha: 0.5'
-        - test: canvas-createPutGetImageData-colorManaged.html
-          subtest: 'Test color managed cretateImageData: {srgb, uint8} -> {srgb, uint8}'
-        - test: canvas-createPutGetImageData-colorManaged.html
-          subtest: 'Test color managed getImageData: {srgb, uint8} -> {srgb, uint8}'
-        - test: canvas-draw-high-bit-depth-images.html
-          subtest: 'Canvas color params: srgb, uint8. Testing 2x2_8bit_ProPhoto_transparent.png vs 2x2_16bit_ProPhoto_transparent.png'
-        - test: canvas-draw-high-bit-depth-images.html
-          subtest: 'Canvas color params: srgb, uint8. Testing 2x2_8bit_ProPhoto_transparent.png vs 2x2_16bit_interlaced_ProPhoto_transparent.png'
-        - test: canvas-drawImage-offscreenCanvas.html
-          subtest: 'Test drawing color managed OffscreenCanvas: Canvas color params: srgb, uint8;  OffscreenCanvas color params: srgb, uint8'
-        - test: canvas-drawImage-offscreenCanvas.html
-          subtest: 'Test drawing color managed OffscreenCanvas: Canvas color params: srgb, uint8;  OffscreenCanvas color params: srgb, float16'
-        - test: transferFromImageBitmap.html
-          subtest: 'Testing ImageBitmapRenderingContext: Source color space: srgb, pixel format: uint8, alpha: 0.5, intermediate color space: none'
-        - test: transferFromImageBitmap.html
-          subtest: 'Testing ImageBitmapRenderingContext: Source color space: srgb, pixel format: uint8, alpha: 0.5, intermediate color space: default'
-        - test: transferFromImageBitmap.html
-          subtest: 'Testing ImageBitmapRenderingContext: Source color space: srgb, pixel format: uint8, alpha: 1, intermediate color space: none'
-        - test: transferFromImageBitmap.html
-          subtest: 'Testing ImageBitmapRenderingContext: Source color space: srgb, pixel format: uint8, alpha: 1, intermediate color space: default'
-        - test: transferFromImageBitmap.html
-          subtest: 'Testing ImageBitmapRenderingContext: Source color space: srgb, pixel format: float16, alpha: 0.5, intermediate color space: none'
-        - test: transferFromImageBitmap.html
-          subtest: 'Testing ImageBitmapRenderingContext: Source color space: srgb, pixel format: float16, alpha: 0.5, intermediate color space: default'
-        - test: transferFromImageBitmap.html
-          subtest: 'Testing ImageBitmapRenderingContext: Source color space: srgb, pixel format: float16, alpha: 1, intermediate color space: none'
-        - test: transferFromImageBitmap.html
-          subtest: 'Testing ImageBitmapRenderingContext: Source color space: srgb, pixel format: float16, alpha: 1, intermediate color space: default'
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1681820
-      results:
-        - test: canvas-createImageBitmap-e_srgb.html
-          subtest: createImageBitmap in e-sRGB from an opaque sRGB HTMLImageElement (avif) with resize.
-        - test: canvas-createImageBitmap-e_srgb.html
-          subtest: createImageBitmap in e-sRGB from an opaque sRGB HTMLImageElement (bmp) with resize.
-        - test: canvas-createImageBitmap-e_srgb.html
-          subtest: createImageBitmap in e-sRGB from an opaque sRGB HTMLImageElement (gif) with resize.
-        - test: canvas-createImageBitmap-e_srgb.html
-          subtest: createImageBitmap in e-sRGB from an opaque sRGB HTMLImageElement (ico) with resize.
-        - test: canvas-createImageBitmap-e_srgb.html
-          subtest: createImageBitmap in e-sRGB from an opaque sRGB HTMLImageElement (jpg) with resize.
-        - test: canvas-createImageBitmap-e_srgb.html
-          subtest: createImageBitmap in e-sRGB from an opaque sRGB HTMLImageElement (png) with resize.
-        - test: canvas-createImageBitmap-e_srgb.html
-          subtest: createImageBitmap in e-sRGB from an opaque sRGB HTMLImageElement (webp) with resize.
-        - test: canvas-createImageBitmap-e_srgb.html
-          subtest: createImageBitmap in e-sRGB from a transparent sRGB HTMLImageElement (avif) with resize.
-        - test: canvas-createImageBitmap-e_srgb.html
-          subtest: createImageBitmap in e-sRGB from a transparent sRGB HTMLImageElement (bmp) with resize.
-        - test: canvas-createImageBitmap-e_srgb.html
-          subtest: createImageBitmap in e-sRGB from a transparent sRGB HTMLImageElement (ico) with resize.
-        - test: canvas-createImageBitmap-e_srgb.html
-          subtest: createImageBitmap in e-sRGB from a transparent sRGB HTMLImageElement (png) with resize.
-        - test: canvas-createImageBitmap-e_srgb.html
-          subtest: createImageBitmap in e-sRGB from a transparent sRGB HTMLImageElement (webp) with resize.
-        - test: canvas-createImageBitmap-e_srgb.html
-          subtest: createImageBitmap in e-sRGB from an opaque sRGB Blob (avif) with resize.
-        - test: canvas-createImageBitmap-e_srgb.html
-          subtest: createImageBitmap in e-sRGB from an opaque sRGB Blob (bmp) with resize.
-        - test: canvas-createImageBitmap-e_srgb.html
-          subtest: createImageBitmap in e-sRGB from an opaque sRGB Blob (gif) with resize.
-        - test: canvas-createImageBitmap-e_srgb.html
-          subtest: createImageBitmap in e-sRGB from an opaque sRGB Blob (ico) with resize.
-        - test: canvas-createImageBitmap-e_srgb.html
-          subtest: createImageBitmap in e-sRGB from an opaque sRGB Blob (jpg) with resize.
-        - test: canvas-createImageBitmap-e_srgb.html
-          subtest: createImageBitmap in e-sRGB from an opaque sRGB Blob (png) with resize.
-        - test: canvas-createImageBitmap-e_srgb.html
-          subtest: createImageBitmap in e-sRGB from an opaque sRGB Blob (webp) with resize.
-        - test: canvas-createImageBitmap-e_srgb.html
-          subtest: createImageBitmap in e-sRGB from a transparent sRGB Blob (avif) with resize.
-        - test: canvas-createImageBitmap-e_srgb.html
-          subtest: createImageBitmap in e-sRGB from a transparent sRGB Blob (bmp) with resize.
-        - test: canvas-createImageBitmap-e_srgb.html
-          subtest: createImageBitmap in e-sRGB from a transparent sRGB Blob (ico) with resize.
-        - test: canvas-createImageBitmap-e_srgb.html
-          subtest: createImageBitmap in e-sRGB from a transparent sRGB Blob (png) with resize.
-        - test: canvas-createImageBitmap-e_srgb.html
-          subtest: createImageBitmap in e-sRGB from a transparent sRGB Blob (webp) with resize.
-        - test: canvas-createImageBitmap-e_srgb.html
-          subtest: 'createImageBitmap in e-sRGB from color managed Blob with resize. blobPixelFormat: uint8, transparency: true'
-        - test: canvas-createImageBitmap-e_srgb.html
-          subtest: 'createImageBitmap in e-sRGB from color managed Blob with resize. blobPixelFormat: uint16, transparency: false'
-        - test: canvas-createImageBitmap-e_srgb.html
-          subtest: 'createImageBitmap in e-sRGB from color managed Blob with resize. blobPixelFormat: uint16, transparency: true'
-        - test: canvas-createImageBitmap-e_srgb.html
-          subtest: createImageBitmap in e-sRGB from an opaque sRGB ImageData with resize.
-        - test: canvas-createImageBitmap-e_srgb.html
-          subtest: createImageBitmap in e-sRGB from an opaque e-sRGB ImageData with resize.
-        - test: canvas-createImageBitmap-e_srgb.html
-          subtest: createImageBitmap in e-sRGB from a transparent sRGB ImageData with resize.
-        - test: canvas-createImageBitmap-e_srgb.html
-          subtest: createImageBitmap in e-sRGB from a transparent e-sRGB ImageData with resize.
-        - test: canvas-createImageBitmap-e_srgb.html
-          subtest: createImageBitmap in e-sRGB from an opaque sRGB ImageBitmap with resize.
-        - test: canvas-createImageBitmap-e_srgb.html
-          subtest: createImageBitmap in e-sRGB from an opaque e-sRGB ImageBitmap with resize.
-        - test: canvas-createImageBitmap-e_srgb.html
-          subtest: createImageBitmap in e-sRGB from a transparent sRGB ImageBitmap with resize.
-        - test: canvas-createImageBitmap-e_srgb.html
-          subtest: createImageBitmap in e-sRGB from a transparent e-sRGB ImageBitmap with resize.
-        - test: canvas-createImageBitmap-e_srgb.html
-          subtest: createImageBitmap in e-sRGB from an opaque sRGB OffscreenCanvas with resize.
-        - test: canvas-createImageBitmap-e_srgb.html
-          subtest: createImageBitmap in e-sRGB from an opaque e-sRGB OffscreenCanvas with resize.
-        - test: canvas-createImageBitmap-e_srgb.html
-          subtest: createImageBitmap in e-sRGB from a transparent sRGB OffscreenCanvas with resize.
-        - test: canvas-createImageBitmap-e_srgb.html
-          subtest: createImageBitmap in e-sRGB from a transparent e-sRGB OffscreenCanvas with resize.
-        - test: canvas-createPutGetImageData-colorManaged.html
-          subtest: 'Test color managed cretateImageData: {srgb, float16} -> {srgb, float32}'
-        - test: canvas-createPutGetImageData-colorManaged.html
-          subtest: 'Test color managed getImageData: {srgb, float16} -> {srgb, float32}'
-        - test: canvas-draw-high-bit-depth-images.html
-          subtest: 'Canvas color params: srgb, float16. Testing 2x2_8bit_sRGB_opaque.png vs 2x2_16bit_sRGB_opaque.png'
-        - test: canvas-draw-high-bit-depth-images.html
-          subtest: 'Canvas color params: srgb, float16. Testing 2x2_8bit_sRGB_opaque.png vs 2x2_16bit_interlaced_sRGB_opaque.png'
-        - test: canvas-draw-high-bit-depth-images.html
-          subtest: 'Canvas color params: srgb, float16. Testing 2x2_8bit_AdobeRGB_opaque.png vs 2x2_16bit_AdobeRGB_opaque.png'
-        - test: canvas-draw-high-bit-depth-images.html
-          subtest: 'Canvas color params: srgb, float16. Testing 2x2_8bit_AdobeRGB_opaque.png vs 2x2_16bit_interlaced_AdobeRGB_opaque.png'
-        - test: canvas-draw-high-bit-depth-images.html
-          subtest: 'Canvas color params: srgb, float16. Testing 2x2_8bit_AdobeRGB_transparent.png vs 2x2_16bit_AdobeRGB_transparent.png'
-        - test: canvas-draw-high-bit-depth-images.html
-          subtest: 'Canvas color params: srgb, float16. Testing 2x2_8bit_AdobeRGB_transparent.png vs 2x2_16bit_interlaced_AdobeRGB_transparent.png'
-        - test: canvas-draw-high-bit-depth-images.html
-          subtest: 'Canvas color params: srgb, float16. Testing 2x2_8bit_DisplayP3_opaque.png vs 2x2_16bit_DisplayP3_opaque.png'
-        - test: canvas-draw-high-bit-depth-images.html
-          subtest: 'Canvas color params: srgb, float16. Testing 2x2_8bit_DisplayP3_opaque.png vs 2x2_16bit_interlaced_DisplayP3_opaque.png'
-        - test: canvas-draw-high-bit-depth-images.html
-          subtest: 'Canvas color params: srgb, float16. Testing 2x2_8bit_DisplayP3_transparent.png vs 2x2_16bit_DisplayP3_transparent.png'
-        - test: canvas-draw-high-bit-depth-images.html
-          subtest: 'Canvas color params: srgb, float16. Testing 2x2_8bit_DisplayP3_transparent.png vs 2x2_16bit_interlaced_DisplayP3_transparent.png'
-        - test: canvas-draw-high-bit-depth-images.html
-          subtest: 'Canvas color params: srgb, float16. Testing 2x2_8bit_ProPhoto_opaque.png vs 2x2_16bit_ProPhoto_opaque.png'
-        - test: canvas-draw-high-bit-depth-images.html
-          subtest: 'Canvas color params: srgb, float16. Testing 2x2_8bit_ProPhoto_opaque.png vs 2x2_16bit_interlaced_ProPhoto_opaque.png'
-        - test: canvas-draw-high-bit-depth-images.html
-          subtest: 'Canvas color params: srgb, float16. Testing 2x2_8bit_ProPhoto_transparent.png vs 2x2_16bit_ProPhoto_transparent.png'
-        - test: canvas-draw-high-bit-depth-images.html
-          subtest: 'Canvas color params: srgb, float16. Testing 2x2_8bit_ProPhoto_transparent.png vs 2x2_16bit_interlaced_ProPhoto_transparent.png'
-        - test: canvas-draw-high-bit-depth-images.html
-          subtest: 'Canvas color params: srgb, float16. Testing 2x2_8bit_Rec2020_opaque.png vs 2x2_16bit_Rec2020_opaque.png'
-        - test: canvas-draw-high-bit-depth-images.html
-          subtest: 'Canvas color params: srgb, float16. Testing 2x2_8bit_Rec2020_opaque.png vs 2x2_16bit_interlaced_Rec2020_opaque.png'
-        - test: canvas-draw-high-bit-depth-images.html
-          subtest: 'Canvas color params: srgb, float16. Testing 2x2_8bit_Rec2020_transparent.png vs 2x2_16bit_Rec2020_transparent.png'
-        - test: canvas-draw-high-bit-depth-images.html
-          subtest: 'Canvas color params: srgb, float16. Testing 2x2_8bit_Rec2020_transparent.png vs 2x2_16bit_interlaced_Rec2020_transparent.png'
-        - test: canvas-drawImage-e_srgb.html
-          subtest: Draw SRGB image on an e-sRGB canvas and read back the e-sRGB pixels.
-        - test: canvas-drawImage-offscreenCanvas.html
-          subtest: 'Test drawing color managed OffscreenCanvas: Canvas color params: srgb, float16;  OffscreenCanvas color params: srgb, uint8'
-        - test: canvas-drawImage-offscreenCanvas.html
-          subtest: 'Test drawing color managed OffscreenCanvas: Canvas color params: srgb, float16;  OffscreenCanvas color params: srgb, float16'
-        - test: canvas-getImageData-e_srgb.html
-          subtest: tests drawing SRGB color on e-sRGB canvas and getting e-sRGB image data.
-        - test: canvas-getImageData-e_srgb.html
-          subtest: tests putting and getting in-range e-sRGB image data on e-sRGB canvas.
-        - test: canvas-getImageData-e_srgb.html
-          subtest: tests putting and getting out-of-range e-sRGB image data on e-sRGB canvas.
-        - test: canvas-getImageData-e_srgb.html
-          subtest: tests putting SRGB image data on e-sRGB canvas and getting e-sRGB image data.
-        - test: imageData-colorManagedBehavior.html
-          subtest: 'Test createImageData(width, height) from SRGB canvas '
-        - test: imageData-colorManagedBehavior.html
-          subtest: 'Test createImageData(width, height) from e-SRGB canvas '
-        - test: imageData-colorManagedBehavior.html
-          subtest: 'Test getImageData(sx, sy, sw, sh) from SRGB canvas '
-        - test: imageData-colorManagedBehavior.html
-          subtest: 'Test getImageData(sx, sy, sw, sh) from e-SRGB canvas '
-        - test: imageData-colorManagedBehavior.html
-          subtest: 'Test putImageData(imagedata, dx, dy): SRGB canvas, SRGB U8 ImageData'
-        - test: imageData-colorManagedBehavior.html
-          subtest: 'Test putImageData(imagedata, dx, dy): SRGB canvas, e-SRGB U16 ImageData'
-        - test: imageData-colorManagedBehavior.html
-          subtest: 'Test putImageData(imagedata, dx, dy): SRGB canvas, e-SRGB F32 ImageData'
-        - test: imageData-colorManagedBehavior.html
-          subtest: 'Test putImageData(imagedata, dx, dy): e-SRGB canvas, SRGB U8 ImageData'
-        - test: imageData-colorManagedBehavior.html
-          subtest: 'Test putImageData(imagedata, dx, dy): e-SRGB canvas, e-SRGB U16 ImageData'
-        - test: imageData-colorManagedBehavior.html
-          subtest: 'Test putImageData(imagedata, dx, dy): e-SRGB canvas, e-SRGB F32 ImageData'
-        - test: imageData-colorManagedBehavior.html
-          subtest: 'Test createImageData(imagedata): SRGB canvas, SRGB U8 ImageData'
-        - test: imageData-colorManagedBehavior.html
-          subtest: 'Test createImageData(imagedata): SRGB canvas, e-SRGB U16 ImageData'
-        - test: imageData-colorManagedBehavior.html
-          subtest: 'Test createImageData(imagedata): SRGB canvas, e-SRGB F32 ImageData'
-        - test: imageData-colorManagedBehavior.html
-          subtest: 'Test createImageData(imagedata): e-SRGB canvas, SRGB U8 ImageData'
-        - test: imageData-colorManagedBehavior.html
-          subtest: 'Test createImageData(imagedata): e-SRGB canvas, e-SRGB U16 ImageData'
-        - test: imageData-colorManagedBehavior.html
-          subtest: 'Test createImageData(imagedata): e-SRGB canvas, e-SRGB F32 ImageData'
-        - test: imageData-colorManagedBehavior.html
-          subtest: 'Test createImageData(width, height, imageDataColorSettings): SRGB canvas, SRGB U8 ImageData'
-        - test: imageData-colorManagedBehavior.html
-          subtest: 'Test createImageData(width, height, imageDataColorSettings): SRGB canvas, e-SRGB U16 ImageData'
-        - test: imageData-colorManagedBehavior.html
-          subtest: 'Test createImageData(width, height, imageDataColorSettings): SRGB canvas, e-SRGB F32 ImageData'
-        - test: imageData-colorManagedBehavior.html
-          subtest: 'Test createImageData(width, height, imageDataColorSettings): e-SRGB canvas, SRGB U8 ImageData'
-        - test: imageData-colorManagedBehavior.html
-          subtest: 'Test createImageData(width, height, imageDataColorSettings): e-SRGB canvas, e-SRGB U16 ImageData'
-        - test: imageData-colorManagedBehavior.html
-          subtest: 'Test createImageData(width, height, imageDataColorSettings): e-SRGB canvas, e-SRGB F32 ImageData'
-    - product: chrome
-      url: https://bugs.chromium.org/p/chromium/issues/detail?id=1230169
-      results:
-        - test: canvas-createImageBitmap-e_srgb.html
-        - test: canvas-draw-high-bit-depth-images.html
+- product: firefox
+  results:
+  - test: canvas-createImageBitmap-e_srgb.html
+  - subtest: createImageBitmap in e-sRGB from a transparent sRGB HTMLCanvasElement
+      with resize.
+    test: canvas-createImageBitmap-e_srgb.html
+  - subtest: createImageBitmap in e-sRGB from a transparent sRGB Blob (BMP, ICO, PNG,
+      WEBP) with resize.
+    test: canvas-createImageBitmap-e_srgb.html
+  - subtest: 'createImageBitmap in e-sRGB from color managed Blob with resize. blobPixelFormat:
+      uint8, transparency: false'
+    test: canvas-createImageBitmap-e_srgb.html
+  - subtest: createImageBitmap in e-sRGB from an opaque sRGB HTMLCanvasElement with
+      resize.
+    test: canvas-createImageBitmap-e_srgb.html
+  - subtest: createImageBitmap in e-sRGB from a sRGB HTMLVideoElement with resize.
+    test: canvas-createImageBitmap-e_srgb.html
+  - subtest: createImageBitmap in e-sRGB from an opaque sRGB Blob (BMP, GIF, ICO,
+      JPG, PNG, WEBP) with resize.
+    test: canvas-createImageBitmap-e_srgb.html
+  - subtest: createImageBitmap in e-sRGB from a transparent sRGB HTMLImageElement
+      (BMP, ICO, PNG, WEBP) with resize.
+    test: canvas-createImageBitmap-e_srgb.html
+  - subtest: createImageBitmap in e-sRGB from an opaque e-sRGB HTMLCanvasElement with
+      resize.
+    test: canvas-createImageBitmap-e_srgb.html
+  - subtest: createImageBitmap in e-sRGB from a transparent e-sRGB HTMLCanvasElement
+      with resize.
+    test: canvas-createImageBitmap-e_srgb.html
+  - subtest: createImageBitmap in e-sRGB from a sRGB SVG image with resize.
+    test: canvas-createImageBitmap-e_srgb.html
+  - subtest: createImageBitmap in e-sRGB from an opaque sRGB HTMLImageElement (BMP,
+      GIF, ICO, JPG, PNG, WEBP) with resize.
+    test: canvas-createImageBitmap-e_srgb.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1654143
+- product: firefox
+  results:
+  - subtest: createImageBitmap in e-sRGB from a transparent sRGB Blob (AVIF, BMP,
+      ICO, PNG, WEBP) with resize.
+    test: canvas-createImageBitmap-e_srgb.html
+  - subtest: createImageBitmap in e-sRGB from a transparent sRGB HTMLImageElement
+      (AVIF, BMP, ICO, PNG, WEBP) with resize.
+    test: canvas-createImageBitmap-e_srgb.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1658092
+- product: firefox
+  results:
+  - test: canvas-colorManaged-convertToBlob-roundtrip.html
+  - subtest: Overall test
+    test: canvas-colorManaged-convertToBlob-roundtrip.html
+  - subtest: 'Test canvas convertToBlob(): mimeType: image/png, blobPixelFormat: uint8,
+      source color space: srgb, pixel format: uint8, alpha: 0.5'
+    test: canvas-colorManaged-convertToBlob-roundtrip.html
+  - subtest: 'Test color managed cretateImageData: {srgb, uint8} -> {srgb, uint8}'
+    test: canvas-createPutGetImageData-colorManaged.html
+  - subtest: 'Test color managed getImageData: {srgb, uint8} -> {srgb, uint8}'
+    test: canvas-createPutGetImageData-colorManaged.html
+  - subtest: 'Canvas color params: srgb, uint8. Testing 2x2_8bit_ProPhoto_transparent.png
+      vs 2x2_16bit_ProPhoto_transparent.png'
+    test: canvas-draw-high-bit-depth-images.html
+  - subtest: 'Canvas color params: srgb, uint8. Testing 2x2_8bit_ProPhoto_transparent.png
+      vs 2x2_16bit_interlaced_ProPhoto_transparent.png'
+    test: canvas-draw-high-bit-depth-images.html
+  - subtest: 'Test drawing color managed OffscreenCanvas: Canvas color params: srgb,
+      uint8;  OffscreenCanvas color params: srgb, uint8'
+    test: canvas-drawImage-offscreenCanvas.html
+  - subtest: 'Test drawing color managed OffscreenCanvas: Canvas color params: srgb,
+      uint8;  OffscreenCanvas color params: srgb, float16'
+    test: canvas-drawImage-offscreenCanvas.html
+  - subtest: 'Testing ImageBitmapRenderingContext: Source color space: srgb, pixel
+      format: uint8, alpha: 0.5, intermediate color space: none'
+    test: transferFromImageBitmap.html
+  - subtest: 'Testing ImageBitmapRenderingContext: Source color space: srgb, pixel
+      format: uint8, alpha: 0.5, intermediate color space: default'
+    test: transferFromImageBitmap.html
+  - subtest: 'Testing ImageBitmapRenderingContext: Source color space: srgb, pixel
+      format: uint8, alpha: 1, intermediate color space: none'
+    test: transferFromImageBitmap.html
+  - subtest: 'Testing ImageBitmapRenderingContext: Source color space: srgb, pixel
+      format: uint8, alpha: 1, intermediate color space: default'
+    test: transferFromImageBitmap.html
+  - subtest: 'Testing ImageBitmapRenderingContext: Source color space: srgb, pixel
+      format: float16, alpha: 0.5, intermediate color space: none'
+    test: transferFromImageBitmap.html
+  - subtest: 'Testing ImageBitmapRenderingContext: Source color space: srgb, pixel
+      format: float16, alpha: 0.5, intermediate color space: default'
+    test: transferFromImageBitmap.html
+  - subtest: 'Testing ImageBitmapRenderingContext: Source color space: srgb, pixel
+      format: float16, alpha: 1, intermediate color space: none'
+    test: transferFromImageBitmap.html
+  - subtest: 'Testing ImageBitmapRenderingContext: Source color space: srgb, pixel
+      format: float16, alpha: 1, intermediate color space: default'
+    test: transferFromImageBitmap.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1666278
+- product: firefox
+  results:
+  - subtest: createImageBitmap in e-sRGB from an opaque sRGB HTMLImageElement (avif)
+      with resize.
+    test: canvas-createImageBitmap-e_srgb.html
+  - subtest: createImageBitmap in e-sRGB from an opaque sRGB HTMLImageElement (bmp)
+      with resize.
+    test: canvas-createImageBitmap-e_srgb.html
+  - subtest: createImageBitmap in e-sRGB from an opaque sRGB HTMLImageElement (gif)
+      with resize.
+    test: canvas-createImageBitmap-e_srgb.html
+  - subtest: createImageBitmap in e-sRGB from an opaque sRGB HTMLImageElement (ico)
+      with resize.
+    test: canvas-createImageBitmap-e_srgb.html
+  - subtest: createImageBitmap in e-sRGB from an opaque sRGB HTMLImageElement (jpg)
+      with resize.
+    test: canvas-createImageBitmap-e_srgb.html
+  - subtest: createImageBitmap in e-sRGB from an opaque sRGB HTMLImageElement (png)
+      with resize.
+    test: canvas-createImageBitmap-e_srgb.html
+  - subtest: createImageBitmap in e-sRGB from an opaque sRGB HTMLImageElement (webp)
+      with resize.
+    test: canvas-createImageBitmap-e_srgb.html
+  - subtest: createImageBitmap in e-sRGB from a transparent sRGB HTMLImageElement
+      (avif) with resize.
+    test: canvas-createImageBitmap-e_srgb.html
+  - subtest: createImageBitmap in e-sRGB from a transparent sRGB HTMLImageElement
+      (bmp) with resize.
+    test: canvas-createImageBitmap-e_srgb.html
+  - subtest: createImageBitmap in e-sRGB from a transparent sRGB HTMLImageElement
+      (ico) with resize.
+    test: canvas-createImageBitmap-e_srgb.html
+  - subtest: createImageBitmap in e-sRGB from a transparent sRGB HTMLImageElement
+      (png) with resize.
+    test: canvas-createImageBitmap-e_srgb.html
+  - subtest: createImageBitmap in e-sRGB from a transparent sRGB HTMLImageElement
+      (webp) with resize.
+    test: canvas-createImageBitmap-e_srgb.html
+  - subtest: createImageBitmap in e-sRGB from an opaque sRGB Blob (avif) with resize.
+    test: canvas-createImageBitmap-e_srgb.html
+  - subtest: createImageBitmap in e-sRGB from an opaque sRGB Blob (bmp) with resize.
+    test: canvas-createImageBitmap-e_srgb.html
+  - subtest: createImageBitmap in e-sRGB from an opaque sRGB Blob (gif) with resize.
+    test: canvas-createImageBitmap-e_srgb.html
+  - subtest: createImageBitmap in e-sRGB from an opaque sRGB Blob (ico) with resize.
+    test: canvas-createImageBitmap-e_srgb.html
+  - subtest: createImageBitmap in e-sRGB from an opaque sRGB Blob (jpg) with resize.
+    test: canvas-createImageBitmap-e_srgb.html
+  - subtest: createImageBitmap in e-sRGB from an opaque sRGB Blob (png) with resize.
+    test: canvas-createImageBitmap-e_srgb.html
+  - subtest: createImageBitmap in e-sRGB from an opaque sRGB Blob (webp) with resize.
+    test: canvas-createImageBitmap-e_srgb.html
+  - subtest: createImageBitmap in e-sRGB from a transparent sRGB Blob (avif) with
+      resize.
+    test: canvas-createImageBitmap-e_srgb.html
+  - subtest: createImageBitmap in e-sRGB from a transparent sRGB Blob (bmp) with resize.
+    test: canvas-createImageBitmap-e_srgb.html
+  - subtest: createImageBitmap in e-sRGB from a transparent sRGB Blob (ico) with resize.
+    test: canvas-createImageBitmap-e_srgb.html
+  - subtest: createImageBitmap in e-sRGB from a transparent sRGB Blob (png) with resize.
+    test: canvas-createImageBitmap-e_srgb.html
+  - subtest: createImageBitmap in e-sRGB from a transparent sRGB Blob (webp) with
+      resize.
+    test: canvas-createImageBitmap-e_srgb.html
+  - subtest: 'createImageBitmap in e-sRGB from color managed Blob with resize. blobPixelFormat:
+      uint8, transparency: true'
+    test: canvas-createImageBitmap-e_srgb.html
+  - subtest: 'createImageBitmap in e-sRGB from color managed Blob with resize. blobPixelFormat:
+      uint16, transparency: false'
+    test: canvas-createImageBitmap-e_srgb.html
+  - subtest: 'createImageBitmap in e-sRGB from color managed Blob with resize. blobPixelFormat:
+      uint16, transparency: true'
+    test: canvas-createImageBitmap-e_srgb.html
+  - subtest: createImageBitmap in e-sRGB from an opaque sRGB ImageData with resize.
+    test: canvas-createImageBitmap-e_srgb.html
+  - subtest: createImageBitmap in e-sRGB from an opaque e-sRGB ImageData with resize.
+    test: canvas-createImageBitmap-e_srgb.html
+  - subtest: createImageBitmap in e-sRGB from a transparent sRGB ImageData with resize.
+    test: canvas-createImageBitmap-e_srgb.html
+  - subtest: createImageBitmap in e-sRGB from a transparent e-sRGB ImageData with
+      resize.
+    test: canvas-createImageBitmap-e_srgb.html
+  - subtest: createImageBitmap in e-sRGB from an opaque sRGB ImageBitmap with resize.
+    test: canvas-createImageBitmap-e_srgb.html
+  - subtest: createImageBitmap in e-sRGB from an opaque e-sRGB ImageBitmap with resize.
+    test: canvas-createImageBitmap-e_srgb.html
+  - subtest: createImageBitmap in e-sRGB from a transparent sRGB ImageBitmap with
+      resize.
+    test: canvas-createImageBitmap-e_srgb.html
+  - subtest: createImageBitmap in e-sRGB from a transparent e-sRGB ImageBitmap with
+      resize.
+    test: canvas-createImageBitmap-e_srgb.html
+  - subtest: createImageBitmap in e-sRGB from an opaque sRGB OffscreenCanvas with
+      resize.
+    test: canvas-createImageBitmap-e_srgb.html
+  - subtest: createImageBitmap in e-sRGB from an opaque e-sRGB OffscreenCanvas with
+      resize.
+    test: canvas-createImageBitmap-e_srgb.html
+  - subtest: createImageBitmap in e-sRGB from a transparent sRGB OffscreenCanvas with
+      resize.
+    test: canvas-createImageBitmap-e_srgb.html
+  - subtest: createImageBitmap in e-sRGB from a transparent e-sRGB OffscreenCanvas
+      with resize.
+    test: canvas-createImageBitmap-e_srgb.html
+  - subtest: 'Test color managed cretateImageData: {srgb, float16} -> {srgb, float32}'
+    test: canvas-createPutGetImageData-colorManaged.html
+  - subtest: 'Test color managed getImageData: {srgb, float16} -> {srgb, float32}'
+    test: canvas-createPutGetImageData-colorManaged.html
+  - subtest: 'Canvas color params: srgb, float16. Testing 2x2_8bit_sRGB_opaque.png
+      vs 2x2_16bit_sRGB_opaque.png'
+    test: canvas-draw-high-bit-depth-images.html
+  - subtest: 'Canvas color params: srgb, float16. Testing 2x2_8bit_sRGB_opaque.png
+      vs 2x2_16bit_interlaced_sRGB_opaque.png'
+    test: canvas-draw-high-bit-depth-images.html
+  - subtest: 'Canvas color params: srgb, float16. Testing 2x2_8bit_AdobeRGB_opaque.png
+      vs 2x2_16bit_AdobeRGB_opaque.png'
+    test: canvas-draw-high-bit-depth-images.html
+  - subtest: 'Canvas color params: srgb, float16. Testing 2x2_8bit_AdobeRGB_opaque.png
+      vs 2x2_16bit_interlaced_AdobeRGB_opaque.png'
+    test: canvas-draw-high-bit-depth-images.html
+  - subtest: 'Canvas color params: srgb, float16. Testing 2x2_8bit_AdobeRGB_transparent.png
+      vs 2x2_16bit_AdobeRGB_transparent.png'
+    test: canvas-draw-high-bit-depth-images.html
+  - subtest: 'Canvas color params: srgb, float16. Testing 2x2_8bit_AdobeRGB_transparent.png
+      vs 2x2_16bit_interlaced_AdobeRGB_transparent.png'
+    test: canvas-draw-high-bit-depth-images.html
+  - subtest: 'Canvas color params: srgb, float16. Testing 2x2_8bit_DisplayP3_opaque.png
+      vs 2x2_16bit_DisplayP3_opaque.png'
+    test: canvas-draw-high-bit-depth-images.html
+  - subtest: 'Canvas color params: srgb, float16. Testing 2x2_8bit_DisplayP3_opaque.png
+      vs 2x2_16bit_interlaced_DisplayP3_opaque.png'
+    test: canvas-draw-high-bit-depth-images.html
+  - subtest: 'Canvas color params: srgb, float16. Testing 2x2_8bit_DisplayP3_transparent.png
+      vs 2x2_16bit_DisplayP3_transparent.png'
+    test: canvas-draw-high-bit-depth-images.html
+  - subtest: 'Canvas color params: srgb, float16. Testing 2x2_8bit_DisplayP3_transparent.png
+      vs 2x2_16bit_interlaced_DisplayP3_transparent.png'
+    test: canvas-draw-high-bit-depth-images.html
+  - subtest: 'Canvas color params: srgb, float16. Testing 2x2_8bit_ProPhoto_opaque.png
+      vs 2x2_16bit_ProPhoto_opaque.png'
+    test: canvas-draw-high-bit-depth-images.html
+  - subtest: 'Canvas color params: srgb, float16. Testing 2x2_8bit_ProPhoto_opaque.png
+      vs 2x2_16bit_interlaced_ProPhoto_opaque.png'
+    test: canvas-draw-high-bit-depth-images.html
+  - subtest: 'Canvas color params: srgb, float16. Testing 2x2_8bit_ProPhoto_transparent.png
+      vs 2x2_16bit_ProPhoto_transparent.png'
+    test: canvas-draw-high-bit-depth-images.html
+  - subtest: 'Canvas color params: srgb, float16. Testing 2x2_8bit_ProPhoto_transparent.png
+      vs 2x2_16bit_interlaced_ProPhoto_transparent.png'
+    test: canvas-draw-high-bit-depth-images.html
+  - subtest: 'Canvas color params: srgb, float16. Testing 2x2_8bit_Rec2020_opaque.png
+      vs 2x2_16bit_Rec2020_opaque.png'
+    test: canvas-draw-high-bit-depth-images.html
+  - subtest: 'Canvas color params: srgb, float16. Testing 2x2_8bit_Rec2020_opaque.png
+      vs 2x2_16bit_interlaced_Rec2020_opaque.png'
+    test: canvas-draw-high-bit-depth-images.html
+  - subtest: 'Canvas color params: srgb, float16. Testing 2x2_8bit_Rec2020_transparent.png
+      vs 2x2_16bit_Rec2020_transparent.png'
+    test: canvas-draw-high-bit-depth-images.html
+  - subtest: 'Canvas color params: srgb, float16. Testing 2x2_8bit_Rec2020_transparent.png
+      vs 2x2_16bit_interlaced_Rec2020_transparent.png'
+    test: canvas-draw-high-bit-depth-images.html
+  - subtest: Draw SRGB image on an e-sRGB canvas and read back the e-sRGB pixels.
+    test: canvas-drawImage-e_srgb.html
+  - subtest: 'Test drawing color managed OffscreenCanvas: Canvas color params: srgb,
+      float16;  OffscreenCanvas color params: srgb, uint8'
+    test: canvas-drawImage-offscreenCanvas.html
+  - subtest: 'Test drawing color managed OffscreenCanvas: Canvas color params: srgb,
+      float16;  OffscreenCanvas color params: srgb, float16'
+    test: canvas-drawImage-offscreenCanvas.html
+  - subtest: tests drawing SRGB color on e-sRGB canvas and getting e-sRGB image data.
+    test: canvas-getImageData-e_srgb.html
+  - subtest: tests putting and getting in-range e-sRGB image data on e-sRGB canvas.
+    test: canvas-getImageData-e_srgb.html
+  - subtest: tests putting and getting out-of-range e-sRGB image data on e-sRGB canvas.
+    test: canvas-getImageData-e_srgb.html
+  - subtest: tests putting SRGB image data on e-sRGB canvas and getting e-sRGB image
+      data.
+    test: canvas-getImageData-e_srgb.html
+  - subtest: 'Test createImageData(width, height) from SRGB canvas '
+    test: imageData-colorManagedBehavior.html
+  - subtest: 'Test createImageData(width, height) from e-SRGB canvas '
+    test: imageData-colorManagedBehavior.html
+  - subtest: 'Test getImageData(sx, sy, sw, sh) from SRGB canvas '
+    test: imageData-colorManagedBehavior.html
+  - subtest: 'Test getImageData(sx, sy, sw, sh) from e-SRGB canvas '
+    test: imageData-colorManagedBehavior.html
+  - subtest: 'Test putImageData(imagedata, dx, dy): SRGB canvas, SRGB U8 ImageData'
+    test: imageData-colorManagedBehavior.html
+  - subtest: 'Test putImageData(imagedata, dx, dy): SRGB canvas, e-SRGB U16 ImageData'
+    test: imageData-colorManagedBehavior.html
+  - subtest: 'Test putImageData(imagedata, dx, dy): SRGB canvas, e-SRGB F32 ImageData'
+    test: imageData-colorManagedBehavior.html
+  - subtest: 'Test putImageData(imagedata, dx, dy): e-SRGB canvas, SRGB U8 ImageData'
+    test: imageData-colorManagedBehavior.html
+  - subtest: 'Test putImageData(imagedata, dx, dy): e-SRGB canvas, e-SRGB U16 ImageData'
+    test: imageData-colorManagedBehavior.html
+  - subtest: 'Test putImageData(imagedata, dx, dy): e-SRGB canvas, e-SRGB F32 ImageData'
+    test: imageData-colorManagedBehavior.html
+  - subtest: 'Test createImageData(imagedata): SRGB canvas, SRGB U8 ImageData'
+    test: imageData-colorManagedBehavior.html
+  - subtest: 'Test createImageData(imagedata): SRGB canvas, e-SRGB U16 ImageData'
+    test: imageData-colorManagedBehavior.html
+  - subtest: 'Test createImageData(imagedata): SRGB canvas, e-SRGB F32 ImageData'
+    test: imageData-colorManagedBehavior.html
+  - subtest: 'Test createImageData(imagedata): e-SRGB canvas, SRGB U8 ImageData'
+    test: imageData-colorManagedBehavior.html
+  - subtest: 'Test createImageData(imagedata): e-SRGB canvas, e-SRGB U16 ImageData'
+    test: imageData-colorManagedBehavior.html
+  - subtest: 'Test createImageData(imagedata): e-SRGB canvas, e-SRGB F32 ImageData'
+    test: imageData-colorManagedBehavior.html
+  - subtest: 'Test createImageData(width, height, imageDataColorSettings): SRGB canvas,
+      SRGB U8 ImageData'
+    test: imageData-colorManagedBehavior.html
+  - subtest: 'Test createImageData(width, height, imageDataColorSettings): SRGB canvas,
+      e-SRGB U16 ImageData'
+    test: imageData-colorManagedBehavior.html
+  - subtest: 'Test createImageData(width, height, imageDataColorSettings): SRGB canvas,
+      e-SRGB F32 ImageData'
+    test: imageData-colorManagedBehavior.html
+  - subtest: 'Test createImageData(width, height, imageDataColorSettings): e-SRGB
+      canvas, SRGB U8 ImageData'
+    test: imageData-colorManagedBehavior.html
+  - subtest: 'Test createImageData(width, height, imageDataColorSettings): e-SRGB
+      canvas, e-SRGB U16 ImageData'
+    test: imageData-colorManagedBehavior.html
+  - subtest: 'Test createImageData(width, height, imageDataColorSettings): e-SRGB
+      canvas, e-SRGB F32 ImageData'
+    test: imageData-colorManagedBehavior.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1681820
+- product: chrome
+  results:
+  - test: canvas-createImageBitmap-e_srgb.html
+  - test: canvas-draw-high-bit-depth-images.html
+  url: https://bugs.chromium.org/p/chromium/issues/detail?id=1230169
+- product: firefox
+  results:
+  - subtest: sRGB-FF0000FF.png, Context srgb, ImageData display-p3, scaleImage=false
+    test: canvas-display-p3-drawImage.html
+  - subtest: sRGB-FF0000FF.png, Context srgb, ImageData display-p3, scaleImage=true
+    test: canvas-display-p3-drawImage.html
+  - subtest: sRGB-FF0000FF.png, Context display-p3, ImageData display-p3, scaleImage=false
+    test: canvas-display-p3-drawImage.html
+  - subtest: sRGB-FF0000FF.png, Context display-p3, ImageData display-p3, scaleImage=true
+    test: canvas-display-p3-drawImage.html
+  - subtest: sRGB-FF0000CC.png, Context srgb, ImageData display-p3, scaleImage=false
+    test: canvas-display-p3-drawImage.html
+  - subtest: sRGB-FF0000CC.png, Context srgb, ImageData display-p3, scaleImage=true
+    test: canvas-display-p3-drawImage.html
+  - subtest: sRGB-FF0000CC.png, Context display-p3, ImageData display-p3, scaleImage=false
+    test: canvas-display-p3-drawImage.html
+  - subtest: sRGB-FF0000CC.png, Context display-p3, ImageData display-p3, scaleImage=true
+    test: canvas-display-p3-drawImage.html
+  - subtest: sRGB-BB0000FF.png, Context srgb, ImageData display-p3, scaleImage=false
+    test: canvas-display-p3-drawImage.html
+  - subtest: sRGB-BB0000FF.png, Context srgb, ImageData display-p3, scaleImage=true
+    test: canvas-display-p3-drawImage.html
+  - subtest: sRGB-BB0000FF.png, Context display-p3, ImageData display-p3, scaleImage=false
+    test: canvas-display-p3-drawImage.html
+  - subtest: sRGB-BB0000FF.png, Context display-p3, ImageData display-p3, scaleImage=true
+    test: canvas-display-p3-drawImage.html
+  - subtest: sRGB-BB0000CC.png, Context srgb, ImageData display-p3, scaleImage=false
+    test: canvas-display-p3-drawImage.html
+  - subtest: sRGB-BB0000CC.png, Context srgb, ImageData display-p3, scaleImage=true
+    test: canvas-display-p3-drawImage.html
+  - subtest: sRGB-BB0000CC.png, Context display-p3, ImageData display-p3, scaleImage=false
+    test: canvas-display-p3-drawImage.html
+  - subtest: sRGB-BB0000CC.png, Context display-p3, ImageData display-p3, scaleImage=true
+    test: canvas-display-p3-drawImage.html
+  - subtest: Display-P3-FF0000FF.png, Context srgb, ImageData display-p3, scaleImage=false
+    test: canvas-display-p3-drawImage.html
+  - subtest: Display-P3-FF0000FF.png, Context srgb, ImageData display-p3, scaleImage=true
+    test: canvas-display-p3-drawImage.html
+  - subtest: Display-P3-BB0000FF.png, Context srgb, ImageData display-p3, scaleImage=false
+    test: canvas-display-p3-drawImage.html
+  - subtest: Display-P3-BB0000FF.png, Context srgb, ImageData display-p3, scaleImage=true
+    test: canvas-display-p3-drawImage.html
+  - subtest: Display-P3-BB0000CC.png, Context srgb, ImageData display-p3, scaleImage=false
+    test: canvas-display-p3-drawImage.html
+  - subtest: Display-P3-BB0000CC.png, Context srgb, ImageData display-p3, scaleImage=true
+    test: canvas-display-p3-drawImage.html
+  - subtest: Adobe-RGB-FF0000FF.png, Context srgb, ImageData display-p3, scaleImage=false
+    test: canvas-display-p3-drawImage.html
+  - subtest: Adobe-RGB-FF0000FF.png, Context srgb, ImageData display-p3, scaleImage=true
+    test: canvas-display-p3-drawImage.html
+  - subtest: Adobe-RGB-FF0000FF.png, Context display-p3, ImageData srgb, scaleImage=false
+    test: canvas-display-p3-drawImage.html
+  - subtest: Adobe-RGB-FF0000FF.png, Context display-p3, ImageData srgb, scaleImage=true
+    test: canvas-display-p3-drawImage.html
+  - subtest: Adobe-RGB-FF0000FF.png, Context display-p3, ImageData display-p3, scaleImage=false
+    test: canvas-display-p3-drawImage.html
+  - subtest: Adobe-RGB-FF0000FF.png, Context display-p3, ImageData display-p3, scaleImage=true
+    test: canvas-display-p3-drawImage.html
+  - subtest: Adobe-RGB-FF0000CC.png, Context display-p3, ImageData display-p3, scaleImage=false
+    test: canvas-display-p3-drawImage.html
+  - subtest: Adobe-RGB-FF0000CC.png, Context display-p3, ImageData display-p3, scaleImage=true
+    test: canvas-display-p3-drawImage.html
+  - subtest: Adobe-RGB-BB0000FF.png, Context srgb, ImageData display-p3, scaleImage=false
+    test: canvas-display-p3-drawImage.html
+  - subtest: Adobe-RGB-BB0000FF.png, Context srgb, ImageData display-p3, scaleImage=true
+    test: canvas-display-p3-drawImage.html
+  - subtest: Adobe-RGB-BB0000FF.png, Context display-p3, ImageData display-p3, scaleImage=false
+    test: canvas-display-p3-drawImage.html
+  - subtest: Adobe-RGB-BB0000FF.png, Context display-p3, ImageData display-p3, scaleImage=true
+    test: canvas-display-p3-drawImage.html
+  - subtest: Adobe-RGB-BB0000CC.png, Context srgb, ImageData display-p3, scaleImage=false
+    test: canvas-display-p3-drawImage.html
+  - subtest: Adobe-RGB-BB0000CC.png, Context srgb, ImageData display-p3, scaleImage=true
+    test: canvas-display-p3-drawImage.html
+  - subtest: Adobe-RGB-BB0000CC.png, Context display-p3, ImageData display-p3, scaleImage=false
+    test: canvas-display-p3-drawImage.html
+  - subtest: Adobe-RGB-BB0000CC.png, Context display-p3, ImageData display-p3, scaleImage=true
+    test: canvas-display-p3-drawImage.html
+  - subtest: Generic-CMYK-FF000000.jpg, Context srgb, ImageData srgb, scaleImage=false
+    test: canvas-display-p3-drawImage.html
+  - subtest: Generic-CMYK-FF000000.jpg, Context srgb, ImageData srgb, scaleImage=true
+    test: canvas-display-p3-drawImage.html
+  - subtest: Generic-CMYK-FF000000.jpg, Context srgb, ImageData display-p3, scaleImage=false
+    test: canvas-display-p3-drawImage.html
+  - subtest: Generic-CMYK-FF000000.jpg, Context srgb, ImageData display-p3, scaleImage=true
+    test: canvas-display-p3-drawImage.html
+  - subtest: Generic-CMYK-FF000000.jpg, Context display-p3, ImageData srgb, scaleImage=false
+    test: canvas-display-p3-drawImage.html
+  - subtest: Generic-CMYK-FF000000.jpg, Context display-p3, ImageData srgb, scaleImage=true
+    test: canvas-display-p3-drawImage.html
+  - subtest: Generic-CMYK-BE000000.jpg, Context srgb, ImageData srgb, scaleImage=false
+    test: canvas-display-p3-drawImage.html
+  - subtest: Generic-CMYK-BE000000.jpg, Context srgb, ImageData srgb, scaleImage=true
+    test: canvas-display-p3-drawImage.html
+  - subtest: Generic-CMYK-BE000000.jpg, Context srgb, ImageData display-p3, scaleImage=false
+    test: canvas-display-p3-drawImage.html
+  - subtest: Generic-CMYK-BE000000.jpg, Context srgb, ImageData display-p3, scaleImage=true
+    test: canvas-display-p3-drawImage.html
+  - subtest: Generic-CMYK-BE000000.jpg, Context display-p3, ImageData srgb, scaleImage=false
+    test: canvas-display-p3-drawImage.html
+  - subtest: Generic-CMYK-BE000000.jpg, Context display-p3, ImageData srgb, scaleImage=true
+    test: canvas-display-p3-drawImage.html
+  - subtest: sRGB-FFFF00000000FFFF.png, Context srgb, ImageData display-p3, scaleImage=false
+    test: canvas-display-p3-drawImage.html
+  - subtest: sRGB-FFFF00000000FFFF.png, Context srgb, ImageData display-p3, scaleImage=true
+    test: canvas-display-p3-drawImage.html
+  - subtest: sRGB-FFFF00000000FFFF.png, Context display-p3, ImageData display-p3,
+      scaleImage=false
+    test: canvas-display-p3-drawImage.html
+  - subtest: sRGB-FFFF00000000FFFF.png, Context display-p3, ImageData display-p3,
+      scaleImage=true
+    test: canvas-display-p3-drawImage.html
+  - subtest: sRGB-FFFF00000000CCCC.png, Context srgb, ImageData display-p3, scaleImage=false
+    test: canvas-display-p3-drawImage.html
+  - subtest: sRGB-FFFF00000000CCCC.png, Context srgb, ImageData display-p3, scaleImage=true
+    test: canvas-display-p3-drawImage.html
+  - subtest: sRGB-FFFF00000000CCCC.png, Context display-p3, ImageData display-p3,
+      scaleImage=false
+    test: canvas-display-p3-drawImage.html
+  - subtest: sRGB-FFFF00000000CCCC.png, Context display-p3, ImageData display-p3,
+      scaleImage=true
+    test: canvas-display-p3-drawImage.html
+  - subtest: sRGB-BBBC00000000FFFF.png, Context srgb, ImageData display-p3, scaleImage=false
+    test: canvas-display-p3-drawImage.html
+  - subtest: sRGB-BBBC00000000FFFF.png, Context srgb, ImageData display-p3, scaleImage=true
+    test: canvas-display-p3-drawImage.html
+  - subtest: sRGB-BBBC00000000FFFF.png, Context display-p3, ImageData display-p3,
+      scaleImage=false
+    test: canvas-display-p3-drawImage.html
+  - subtest: sRGB-BBBC00000000FFFF.png, Context display-p3, ImageData display-p3,
+      scaleImage=true
+    test: canvas-display-p3-drawImage.html
+  - subtest: sRGB-BBBC00000000CCCC.png, Context srgb, ImageData display-p3, scaleImage=false
+    test: canvas-display-p3-drawImage.html
+  - subtest: sRGB-BBBC00000000CCCC.png, Context srgb, ImageData display-p3, scaleImage=true
+    test: canvas-display-p3-drawImage.html
+  - subtest: sRGB-BBBC00000000CCCC.png, Context display-p3, ImageData display-p3,
+      scaleImage=false
+    test: canvas-display-p3-drawImage.html
+  - subtest: sRGB-BBBC00000000CCCC.png, Context display-p3, ImageData display-p3,
+      scaleImage=true
+    test: canvas-display-p3-drawImage.html
+  - subtest: Display-P3-FFFF00000000FFFF.png, Context srgb, ImageData display-p3,
+      scaleImage=false
+    test: canvas-display-p3-drawImage.html
+  - subtest: Display-P3-FFFF00000000FFFF.png, Context srgb, ImageData display-p3,
+      scaleImage=true
+    test: canvas-display-p3-drawImage.html
+  - subtest: Display-P3-BBBC00000000FFFF.png, Context srgb, ImageData display-p3,
+      scaleImage=false
+    test: canvas-display-p3-drawImage.html
+  - subtest: Display-P3-BBBC00000000FFFF.png, Context srgb, ImageData display-p3,
+      scaleImage=true
+    test: canvas-display-p3-drawImage.html
+  - subtest: Display-P3-BBBC00000000CCCC.png, Context srgb, ImageData display-p3,
+      scaleImage=false
+    test: canvas-display-p3-drawImage.html
+  - subtest: Display-P3-BBBC00000000CCCC.png, Context srgb, ImageData display-p3,
+      scaleImage=true
+    test: canvas-display-p3-drawImage.html
+  - subtest: Adobe-RGB-FFFF00000000FFFF.png, Context srgb, ImageData display-p3, scaleImage=false
+    test: canvas-display-p3-drawImage.html
+  - subtest: Adobe-RGB-FFFF00000000FFFF.png, Context srgb, ImageData display-p3, scaleImage=true
+    test: canvas-display-p3-drawImage.html
+  - subtest: Adobe-RGB-FFFF00000000FFFF.png, Context display-p3, ImageData srgb, scaleImage=false
+    test: canvas-display-p3-drawImage.html
+  - subtest: Adobe-RGB-FFFF00000000FFFF.png, Context display-p3, ImageData srgb, scaleImage=true
+    test: canvas-display-p3-drawImage.html
+  - subtest: Adobe-RGB-FFFF00000000FFFF.png, Context display-p3, ImageData display-p3,
+      scaleImage=false
+    test: canvas-display-p3-drawImage.html
+  - subtest: Adobe-RGB-FFFF00000000FFFF.png, Context display-p3, ImageData display-p3,
+      scaleImage=true
+    test: canvas-display-p3-drawImage.html
+  - subtest: Adobe-RGB-FFFF00000000CCCC.png, Context display-p3, ImageData display-p3,
+      scaleImage=false
+    test: canvas-display-p3-drawImage.html
+  - subtest: Adobe-RGB-FFFF00000000CCCC.png, Context display-p3, ImageData display-p3,
+      scaleImage=true
+    test: canvas-display-p3-drawImage.html
+  - subtest: Adobe-RGB-BBBC00000000FFFF.png, Context srgb, ImageData display-p3, scaleImage=false
+    test: canvas-display-p3-drawImage.html
+  - subtest: Adobe-RGB-BBBC00000000FFFF.png, Context srgb, ImageData display-p3, scaleImage=true
+    test: canvas-display-p3-drawImage.html
+  - subtest: Adobe-RGB-BBBC00000000FFFF.png, Context display-p3, ImageData display-p3,
+      scaleImage=false
+    test: canvas-display-p3-drawImage.html
+  - subtest: Adobe-RGB-BBBC00000000FFFF.png, Context display-p3, ImageData display-p3,
+      scaleImage=true
+    test: canvas-display-p3-drawImage.html
+  - subtest: Adobe-RGB-BBBC00000000CCCC.png, Context srgb, ImageData display-p3, scaleImage=false
+    test: canvas-display-p3-drawImage.html
+  - subtest: Adobe-RGB-BBBC00000000CCCC.png, Context srgb, ImageData display-p3, scaleImage=true
+    test: canvas-display-p3-drawImage.html
+  - subtest: Adobe-RGB-BBBC00000000CCCC.png, Context display-p3, ImageData display-p3,
+      scaleImage=false
+    test: canvas-display-p3-drawImage.html
+  - subtest: Adobe-RGB-BBBC00000000CCCC.png, Context display-p3, ImageData display-p3,
+      scaleImage=true
+    test: canvas-display-p3-drawImage.html
+  - subtest: Context undefined, ImageData undefined
+    test: canvas-display-p3-settings.html
+  - subtest: Context undefined, ImageData srgb
+    test: canvas-display-p3-settings.html
+  - subtest: Context undefined, ImageData display-p3
+    test: canvas-display-p3-settings.html
+  - subtest: Context srgb, ImageData undefined
+    test: canvas-display-p3-settings.html
+  - subtest: Context srgb, ImageData srgb
+    test: canvas-display-p3-settings.html
+  - subtest: Context srgb, ImageData display-p3
+    test: canvas-display-p3-settings.html
+  - subtest: Context display-p3, ImageData undefined
+    test: canvas-display-p3-settings.html
+  - subtest: Context display-p3, ImageData srgb
+    test: canvas-display-p3-settings.html
+  - subtest: Context display-p3, ImageData display-p3
+    test: canvas-display-p3-settings.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1732005
