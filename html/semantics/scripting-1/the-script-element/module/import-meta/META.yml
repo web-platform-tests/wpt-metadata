@@ -1,6 +1,17 @@
 links:
-    - product: chrome
-      url: https://crbug.com/831313
-      results:
-        - test: import-meta-url.html
-          status: FAIL
+- product: chrome
+  results:
+  - status: FAIL
+    test: import-meta-url.html
+  url: https://crbug.com/831313
+- product: firefox
+  results:
+  - test: import-meta-url.any.worker-module.html
+  - test: import-meta-url.any.sharedworker-module.html
+  - test: import-meta-url.any.serviceworker-module.html
+  - test: import-meta-url.html
+  - subtest: import.meta.url at top-level module DedicatedWorker
+    test: import-meta-url.html
+  - subtest: import.meta.url at top-level module SharedWorker
+    test: import-meta-url.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1732112
