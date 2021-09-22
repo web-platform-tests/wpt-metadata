@@ -1,6 +1,19 @@
 links:
-    - product: chrome
-      url: https://crbug.com/816447
-      results:
-        - test: transfer-errors.window.html
-          status: FAIL
+- product: chrome
+  results:
+  - status: FAIL
+    test: transfer-errors.window.html
+  url: https://crbug.com/816447
+- product: firefox
+  results:
+  - subtest: A subclass instance will be received as its closest transferable superclass
+    test: messagechannel.any.worker.html
+  - subtest: A subclass instance will be received as its closest transferable superclass
+    test: messagechannel.any.html
+  - subtest: A subclass instance will be received as its closest transferable superclass
+    test: messagechannel.any.sharedworker.html
+  - subtest: A subclass instance will be received as its closest transferable superclass
+    test: messagechannel.any.serviceworker.html
+  - subtest: A subclass instance will be received as its closest transferable superclass
+    test: window-postmessage.window.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1732003
