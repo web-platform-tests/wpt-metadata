@@ -61,3 +61,19 @@ links:
       regardless of dynamic insertion order
     test: selectmenu-parts-structure.tentative.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1731992
+- product: firefox
+  results:
+  - subtest: Opening the popup and clicking an option should change the selectmenu's
+      value
+    test: selectmenu-popup.tentative.html
+  - subtest: 'With custom button and popup: opening the popup and clicking an option
+      should change the selectmenu''s value'
+    test: selectmenu-popup.tentative.html
+  - subtest: Clicking a popup with no listbox part does nothing
+    test: selectmenu-popup.tentative.html
+  - subtest: Clicking a popup with a listbox that was removed does nothing
+    test: selectmenu-popup.tentative.html
+  - subtest: Test that the UA provided shadow root can be replaced using declarative
+      shadow DOM
+    test: selectmenu-shadow-root-replacement.tentative.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1732326

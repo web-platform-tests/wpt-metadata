@@ -652,3 +652,23 @@ links:
   - subtest: Adobe-RGB-BBBC00000000CCCC.png, Context display-p3, ImageData display-p3
     test: canvas-display-p3-pattern-image.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1732006
+- product: firefox
+  - subtest: Context undefined, ImageData undefined
+    test: canvas-display-p3-settings.html
+  - subtest: Context undefined, ImageData srgb
+    test: canvas-display-p3-settings.html
+  - subtest: Context undefined, ImageData display-p3
+    test: canvas-display-p3-settings.html
+  - subtest: Context srgb, ImageData undefined
+    test: canvas-display-p3-settings.html
+  - subtest: Context srgb, ImageData srgb
+    test: canvas-display-p3-settings.html
+  - subtest: Context srgb, ImageData display-p3
+    test: canvas-display-p3-settings.html
+  - subtest: Context display-p3, ImageData undefined
+    test: canvas-display-p3-settings.html
+  - subtest: Context display-p3, ImageData srgb
+    test: canvas-display-p3-settings.html
+  - subtest: Context display-p3, ImageData display-p3
+    test: canvas-display-p3-settings.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1732005
