@@ -1,62 +1,71 @@
 links:
-    - product: chrome
-      url: https://crbug.com/1066953
-      results:
-        - test: 2d.text.measure.width.space.html
-        - test: 2d.text.measure.width.space.worker.html
-        - test: 2d.text.draw.space.collapse.end.html
-        - test: 2d.text.draw.space.collapse.other.html
-        - test: 2d.text.draw.space.collapse.space.html
-        - test: 2d.text.draw.space.collapse.start.html
-    - product: webkitgtk
-      url: https://bugs.webkit.org/show_bug.cgi?id=186759
-      results:
-        - test: '*'
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1676454
-      results:
-        - test: 2d.text.draw.align.end.ltr.html
-          subtest: textAlign end with ltr is the right edge
-        - test: 2d.text.draw.align.end.ltr.worker.html
-          subtest: textAlign end with ltr is the right edge
-        - test: 2d.text.draw.align.end.rtl.html
-          subtest: textAlign end with rtl is the left edge
-        - test: 2d.text.draw.align.end.rtl.worker.html
-          subtest: textAlign end with rtl is the left edge
-        - test: 2d.text.draw.align.start.ltr.html
-          subtest: textAlign start with ltr is the left edge
-        - test: 2d.text.draw.align.start.ltr.worker.html
-          subtest: textAlign start with ltr is the left edge
-        - test: 2d.text.draw.align.start.rtl.html
-          subtest: textAlign start with rtl is the right edge
-        - test: 2d.text.draw.align.start.rtl.worker.html
-          subtest: textAlign start with rtl is the right edge
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1688982
-      results:
-        - test: 2d.text.draw.fill.maxWidth.zero.html
-          subtest: fillText handles maxWidth correctly
-        - test: 2d.text.draw.fill.maxWidth.zero.worker.html
-          subtest: fillText handles maxWidth correctly
-    - product: chrome
-      url: https://bugs.chromium.org/p/chromium/issues/detail?id=1066953
-      results:
-        - test: 2d.text.draw.baseline.ideographic.html
-        - test: 2d.text.draw.baseline.ideographic.worker.html
-        - test: 2d.text.draw.space.collapse.end.worker.html
-        - test: 2d.text.draw.space.collapse.other.worker.html
-        - test: 2d.text.draw.space.collapse.space.worker.html
-        - test: 2d.text.draw.space.collapse.start.worker.html
-        - test: 2d.text.draw.baseline.hanging.html
-        - test: 2d.text.draw.baseline.hanging.worker.html
-    - product: webkitgtk
-      url: https://bugs.webkit.org/show_bug.cgi?id=230990
-      results:
-        - test: 2d.text.drawing.style.fontKerning.html
-          subtest: Testing basic functionalities of fontKerning for canvas
-        - test: 2d.text.drawing.style.textRendering.settings.html
-          subtest: Testing basic functionalities of textRendering in Canvas
-        - test: 2d.text.drawing.style.fontKerning.with.uppercase.html
-          subtest: Testing basic functionalities of fontKerning for canvas
-        - test: 2d.text.drawing.style.fontVariant.settings.html
-          subtest: Testing basic functionalities of fontKerning for canvas
+- product: chrome
+  results:
+  - test: 2d.text.measure.width.space.html
+  - test: 2d.text.measure.width.space.worker.html
+  - test: 2d.text.draw.space.collapse.end.html
+  - test: 2d.text.draw.space.collapse.other.html
+  - test: 2d.text.draw.space.collapse.space.html
+  - test: 2d.text.draw.space.collapse.start.html
+  url: https://crbug.com/1066953
+- product: webkitgtk
+  results:
+  - test: '*'
+  url: https://bugs.webkit.org/show_bug.cgi?id=186759
+- product: firefox
+  results:
+  - subtest: textAlign end with ltr is the right edge
+    test: 2d.text.draw.align.end.ltr.html
+  - subtest: textAlign end with ltr is the right edge
+    test: 2d.text.draw.align.end.ltr.worker.html
+  - subtest: textAlign end with rtl is the left edge
+    test: 2d.text.draw.align.end.rtl.html
+  - subtest: textAlign end with rtl is the left edge
+    test: 2d.text.draw.align.end.rtl.worker.html
+  - subtest: textAlign start with ltr is the left edge
+    test: 2d.text.draw.align.start.ltr.html
+  - subtest: textAlign start with ltr is the left edge
+    test: 2d.text.draw.align.start.ltr.worker.html
+  - subtest: textAlign start with rtl is the right edge
+    test: 2d.text.draw.align.start.rtl.html
+  - subtest: textAlign start with rtl is the right edge
+    test: 2d.text.draw.align.start.rtl.worker.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1676454
+- product: firefox
+  results:
+  - subtest: fillText handles maxWidth correctly
+    test: 2d.text.draw.fill.maxWidth.zero.html
+  - subtest: fillText handles maxWidth correctly
+    test: 2d.text.draw.fill.maxWidth.zero.worker.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1688982
+- product: chrome
+  results:
+  - test: 2d.text.draw.baseline.ideographic.html
+  - test: 2d.text.draw.baseline.ideographic.worker.html
+  - test: 2d.text.draw.space.collapse.end.worker.html
+  - test: 2d.text.draw.space.collapse.other.worker.html
+  - test: 2d.text.draw.space.collapse.space.worker.html
+  - test: 2d.text.draw.space.collapse.start.worker.html
+  - test: 2d.text.draw.baseline.hanging.html
+  - test: 2d.text.draw.baseline.hanging.worker.html
+  url: https://bugs.chromium.org/p/chromium/issues/detail?id=1066953
+- product: webkitgtk
+  results:
+  - subtest: Testing basic functionalities of fontKerning for canvas
+    test: 2d.text.drawing.style.fontKerning.html
+  - subtest: Testing basic functionalities of textRendering in Canvas
+    test: 2d.text.drawing.style.textRendering.settings.html
+  - subtest: Testing basic functionalities of fontKerning for canvas
+    test: 2d.text.drawing.style.fontKerning.with.uppercase.html
+  - subtest: Testing basic functionalities of fontKerning for canvas
+    test: 2d.text.drawing.style.fontVariant.settings.html
+  url: https://bugs.webkit.org/show_bug.cgi?id=230990
+- product: firefox
+  results:
+  - subtest: crbug.com/1212190, make sure offscreencanvas doesn't crashh with Math
+      Font
+    test: 2d.text.setFont.mathFont.html
+  - subtest: crbug.com/1212190, make sure offscreencanvas doesn't crashh with Math
+      Font
+    test: 2d.text.setFont.mathFont.worker.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1733614
