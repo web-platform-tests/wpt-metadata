@@ -58,3 +58,17 @@ links:
   - subtest: opener:basic, openee:coi, sw:coi
     test: popup-coop-by-sw.https.html?1-4
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1722734
+- product: firefox
+  results:
+  - status: CRASH
+    test: popup-coop-by-sw.https.html?1-4
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1733787
+- product: firefox
+  results:
+  - subtest: coop-navigate-same-origin-csp-sandbox
+    test: coop-navigate-same-origin-csp-sandbox.html
+  - subtest: 'Navigate to about:blank from iframe with opener.top COOP: |header(Cross-Origin-Opener-Policy,same-origin-allow-popups),
+      iframe origin: https://web-platform.test:8443, openee COOP: |header(Cross-Origin-Opener-Policy,unsafe-none),
+      openee origin: https://www1.web-platform.test:8443.'
+    test: navigate-to-aboutblank.https.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1733788
