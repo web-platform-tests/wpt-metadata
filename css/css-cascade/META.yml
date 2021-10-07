@@ -1,11 +1,32 @@
 links:
-    - product: webkitgtk
-      url: https://bugs.webkit.org/show_bug.cgi?id=209330
-      results:
-        - test: all-prop-initial-xml.html
-          status: FAIL
-    - product: chrome
-      url: https://bugs.chromium.org/p/chromium/issues/detail?id=1208861
-      results:
-        - test: all-prop-revert-visited.html
-        - test: all-prop-unset-visited.html
+- product: webkitgtk
+  results:
+  - status: FAIL
+    test: all-prop-initial-xml.html
+  url: https://bugs.webkit.org/show_bug.cgi?id=209330
+- product: chrome
+  results:
+  - test: all-prop-revert-visited.html
+  - test: all-prop-unset-visited.html
+  url: https://bugs.chromium.org/p/chromium/issues/detail?id=1208861
+- product: firefox
+  results:
+  - subtest: A2 Anonymous layers
+    test: layer-basic.html
+  - subtest: A3 Anonymous layers
+    test: layer-basic.html
+  - subtest: B2 Named layers
+    test: layer-basic.html
+  - subtest: A1 Layer rules with import
+    test: layer-import.html
+  - subtest: A2 Layer rules with import
+    test: layer-import.html
+  - subtest: A3 Layer rules with import
+    test: layer-import.html
+  - subtest: B1 Anonymous imports
+    test: layer-import.html
+  - subtest: C1 Named imports
+    test: layer-import.html
+  - subtest: '@keyframes unlayered overrides layered'
+    test: layer-keyframes-override.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1734570
