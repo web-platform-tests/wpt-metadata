@@ -252,3 +252,251 @@ links:
       results:
         - test: canvas-createImageBitmap-e_srgb.html
         - test: canvas-draw-high-bit-depth-images.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1732005
+      results:
+        - test: canvas-display-p3-settings.html
+          subtest: Context undefined, ImageData undefined
+        - test: canvas-display-p3-settings.html
+          subtest: Context undefined, ImageData srgb
+        - test: canvas-display-p3-settings.html
+          subtest: Context undefined, ImageData display-p3
+        - test: canvas-display-p3-settings.html
+          subtest: Context srgb, ImageData undefined
+        - test: canvas-display-p3-settings.html
+          subtest: Context srgb, ImageData srgb
+        - test: canvas-display-p3-settings.html
+          subtest: Context srgb, ImageData display-p3
+        - test: canvas-display-p3-settings.html
+          subtest: Context display-p3, ImageData undefined
+        - test: canvas-display-p3-settings.html
+          subtest: Context display-p3, ImageData srgb
+        - test: canvas-display-p3-settings.html
+          subtest: Context display-p3, ImageData display-p3
+        - test: canvas-display-p3-drawImage.https.html
+          subtest: sRGB-FF0000FF.png, Context srgb, ImageData display-p3, scaleImage=false
+        - test: canvas-display-p3-drawImage.https.html
+          subtest: sRGB-FF0000FF.png, Context srgb, ImageData display-p3, scaleImage=true
+        - test: canvas-display-p3-drawImage.https.html
+          subtest: sRGB-FF0000FF.png, Context display-p3, ImageData display-p3, scaleImage=false
+        - test: canvas-display-p3-drawImage.https.html
+          subtest: sRGB-FF0000FF.png, Context display-p3, ImageData display-p3, scaleImage=true
+        - test: canvas-display-p3-drawImage.https.html
+          subtest: sRGB-FF0000CC.png, Context srgb, ImageData display-p3, scaleImage=false
+        - test: canvas-display-p3-drawImage.https.html
+          subtest: sRGB-FF0000CC.png, Context srgb, ImageData display-p3, scaleImage=true
+        - test: canvas-display-p3-drawImage.https.html
+          subtest: sRGB-FF0000CC.png, Context display-p3, ImageData display-p3, scaleImage=false
+        - test: canvas-display-p3-drawImage.https.html
+          subtest: sRGB-FF0000CC.png, Context display-p3, ImageData display-p3, scaleImage=true
+        - test: canvas-display-p3-drawImage.https.html
+          subtest: sRGB-BB0000FF.png, Context srgb, ImageData display-p3, scaleImage=false
+        - test: canvas-display-p3-drawImage.https.html
+          subtest: sRGB-BB0000FF.png, Context srgb, ImageData display-p3, scaleImage=true
+        - test: canvas-display-p3-drawImage.https.html
+          subtest: sRGB-BB0000FF.png, Context display-p3, ImageData display-p3, scaleImage=false
+        - test: canvas-display-p3-drawImage.https.html
+          subtest: sRGB-BB0000FF.png, Context display-p3, ImageData display-p3, scaleImage=true
+        - test: canvas-display-p3-drawImage.https.html
+          subtest: sRGB-BB0000CC.png, Context srgb, ImageData display-p3, scaleImage=false
+        - test: canvas-display-p3-drawImage.https.html
+          subtest: sRGB-BB0000CC.png, Context srgb, ImageData display-p3, scaleImage=true
+        - test: canvas-display-p3-drawImage.https.html
+          subtest: sRGB-BB0000CC.png, Context display-p3, ImageData display-p3, scaleImage=false
+        - test: canvas-display-p3-drawImage.https.html
+          subtest: sRGB-BB0000CC.png, Context display-p3, ImageData display-p3, scaleImage=true
+        - test: canvas-display-p3-drawImage.https.html
+          subtest: Display-P3-FF0000FF.png, Context srgb, ImageData display-p3, scaleImage=false
+        - test: canvas-display-p3-drawImage.https.html
+          subtest: Display-P3-FF0000FF.png, Context srgb, ImageData display-p3, scaleImage=true
+        - test: canvas-display-p3-drawImage.https.html
+          subtest: Display-P3-BB0000FF.png, Context srgb, ImageData display-p3, scaleImage=false
+        - test: canvas-display-p3-drawImage.https.html
+          subtest: Display-P3-BB0000FF.png, Context srgb, ImageData display-p3, scaleImage=true
+        - test: canvas-display-p3-drawImage.https.html
+          subtest: Display-P3-BB0000CC.png, Context srgb, ImageData display-p3, scaleImage=false
+        - test: canvas-display-p3-drawImage.https.html
+          subtest: Display-P3-BB0000CC.png, Context srgb, ImageData display-p3, scaleImage=true
+        - test: canvas-display-p3-drawImage.https.html
+          subtest: Adobe-RGB-FF0000FF.png, Context srgb, ImageData display-p3, scaleImage=false
+        - test: canvas-display-p3-drawImage.https.html
+          subtest: Adobe-RGB-FF0000FF.png, Context srgb, ImageData display-p3, scaleImage=true
+        - test: canvas-display-p3-drawImage.https.html
+          subtest: Adobe-RGB-FF0000FF.png, Context display-p3, ImageData srgb, scaleImage=false
+        - test: canvas-display-p3-drawImage.https.html
+          subtest: Adobe-RGB-FF0000FF.png, Context display-p3, ImageData srgb, scaleImage=true
+        - test: canvas-display-p3-drawImage.https.html
+          subtest: Adobe-RGB-FF0000FF.png, Context display-p3, ImageData display-p3, scaleImage=false
+        - test: canvas-display-p3-drawImage.https.html
+          subtest: Adobe-RGB-FF0000FF.png, Context display-p3, ImageData display-p3, scaleImage=true
+        - test: canvas-display-p3-drawImage.https.html
+          subtest: Adobe-RGB-FF0000CC.png, Context display-p3, ImageData display-p3, scaleImage=false
+        - test: canvas-display-p3-drawImage.https.html
+          subtest: Adobe-RGB-FF0000CC.png, Context display-p3, ImageData display-p3, scaleImage=true
+        - test: canvas-display-p3-drawImage.https.html
+          subtest: Adobe-RGB-BB0000FF.png, Context srgb, ImageData display-p3, scaleImage=false
+        - test: canvas-display-p3-drawImage.https.html
+          subtest: Adobe-RGB-BB0000FF.png, Context srgb, ImageData display-p3, scaleImage=true
+        - test: canvas-display-p3-drawImage.https.html
+          subtest: Adobe-RGB-BB0000FF.png, Context display-p3, ImageData display-p3, scaleImage=false
+        - test: canvas-display-p3-drawImage.https.html
+          subtest: Adobe-RGB-BB0000FF.png, Context display-p3, ImageData display-p3, scaleImage=true
+        - test: canvas-display-p3-drawImage.https.html
+          subtest: Adobe-RGB-BB0000CC.png, Context srgb, ImageData display-p3, scaleImage=false
+        - test: canvas-display-p3-drawImage.https.html
+          subtest: Adobe-RGB-BB0000CC.png, Context srgb, ImageData display-p3, scaleImage=true
+        - test: canvas-display-p3-drawImage.https.html
+          subtest: Adobe-RGB-BB0000CC.png, Context display-p3, ImageData display-p3, scaleImage=false
+        - test: canvas-display-p3-drawImage.https.html
+          subtest: Adobe-RGB-BB0000CC.png, Context display-p3, ImageData display-p3, scaleImage=true
+        - test: canvas-display-p3-drawImage.https.html
+          subtest: Generic-CMYK-FF000000.jpg, Context srgb, ImageData srgb, scaleImage=false
+        - test: canvas-display-p3-drawImage.https.html
+          subtest: Generic-CMYK-FF000000.jpg, Context srgb, ImageData srgb, scaleImage=true
+        - test: canvas-display-p3-drawImage.https.html
+          subtest: Generic-CMYK-FF000000.jpg, Context srgb, ImageData display-p3, scaleImage=false
+        - test: canvas-display-p3-drawImage.https.html
+          subtest: Generic-CMYK-FF000000.jpg, Context srgb, ImageData display-p3, scaleImage=true
+        - test: canvas-display-p3-drawImage.https.html
+          subtest: Generic-CMYK-FF000000.jpg, Context display-p3, ImageData srgb, scaleImage=false
+        - test: canvas-display-p3-drawImage.https.html
+          subtest: Generic-CMYK-FF000000.jpg, Context display-p3, ImageData srgb, scaleImage=true
+        - test: canvas-display-p3-drawImage.https.html
+          subtest: Generic-CMYK-BE000000.jpg, Context srgb, ImageData srgb, scaleImage=false
+        - test: canvas-display-p3-drawImage.https.html
+          subtest: Generic-CMYK-BE000000.jpg, Context srgb, ImageData srgb, scaleImage=true
+        - test: canvas-display-p3-drawImage.https.html
+          subtest: Generic-CMYK-BE000000.jpg, Context srgb, ImageData display-p3, scaleImage=false
+        - test: canvas-display-p3-drawImage.https.html
+          subtest: Generic-CMYK-BE000000.jpg, Context srgb, ImageData display-p3, scaleImage=true
+        - test: canvas-display-p3-drawImage.https.html
+          subtest: Generic-CMYK-BE000000.jpg, Context display-p3, ImageData srgb, scaleImage=false
+        - test: canvas-display-p3-drawImage.https.html
+          subtest: Generic-CMYK-BE000000.jpg, Context display-p3, ImageData srgb, scaleImage=true
+        - test: canvas-display-p3-drawImage.https.html
+          subtest: sRGB-FFFF00000000FFFF.png, Context srgb, ImageData display-p3, scaleImage=false
+        - test: canvas-display-p3-drawImage.https.html
+          subtest: sRGB-FFFF00000000FFFF.png, Context srgb, ImageData display-p3, scaleImage=true
+        - test: canvas-display-p3-drawImage.https.html
+          subtest: sRGB-FFFF00000000FFFF.png, Context display-p3, ImageData display-p3, scaleImage=false
+        - test: canvas-display-p3-drawImage.https.html
+          subtest: sRGB-FFFF00000000FFFF.png, Context display-p3, ImageData display-p3, scaleImage=true
+        - test: canvas-display-p3-drawImage.https.html
+          subtest: sRGB-FFFF00000000CCCC.png, Context srgb, ImageData display-p3, scaleImage=false
+        - test: canvas-display-p3-drawImage.https.html
+          subtest: sRGB-FFFF00000000CCCC.png, Context srgb, ImageData display-p3, scaleImage=true
+        - test: canvas-display-p3-drawImage.https.html
+          subtest: sRGB-FFFF00000000CCCC.png, Context display-p3, ImageData display-p3, scaleImage=false
+        - test: canvas-display-p3-drawImage.https.html
+          subtest: sRGB-FFFF00000000CCCC.png, Context display-p3, ImageData display-p3, scaleImage=true
+        - test: canvas-display-p3-drawImage.https.html
+          subtest: sRGB-BBBC00000000FFFF.png, Context srgb, ImageData display-p3, scaleImage=false
+        - test: canvas-display-p3-drawImage.https.html
+          subtest: sRGB-BBBC00000000FFFF.png, Context srgb, ImageData display-p3, scaleImage=true
+        - test: canvas-display-p3-drawImage.https.html
+          subtest: sRGB-BBBC00000000FFFF.png, Context display-p3, ImageData display-p3, scaleImage=false
+        - test: canvas-display-p3-drawImage.https.html
+          subtest: sRGB-BBBC00000000FFFF.png, Context display-p3, ImageData display-p3, scaleImage=true
+        - test: canvas-display-p3-drawImage.https.html
+          subtest: sRGB-BBBC00000000CCCC.png, Context srgb, ImageData display-p3, scaleImage=false
+        - test: canvas-display-p3-drawImage.https.html
+          subtest: sRGB-BBBC00000000CCCC.png, Context srgb, ImageData display-p3, scaleImage=true
+        - test: canvas-display-p3-drawImage.https.html
+          subtest: sRGB-BBBC00000000CCCC.png, Context display-p3, ImageData display-p3, scaleImage=false
+        - test: canvas-display-p3-drawImage.https.html
+          subtest: sRGB-BBBC00000000CCCC.png, Context display-p3, ImageData display-p3, scaleImage=true
+        - test: canvas-display-p3-drawImage.https.html
+          subtest: Display-P3-FFFF00000000FFFF.png, Context srgb, ImageData display-p3, scaleImage=false
+        - test: canvas-display-p3-drawImage.https.html
+          subtest: Display-P3-FFFF00000000FFFF.png, Context srgb, ImageData display-p3, scaleImage=true
+        - test: canvas-display-p3-drawImage.https.html
+          subtest: Display-P3-BBBC00000000FFFF.png, Context srgb, ImageData display-p3, scaleImage=false
+        - test: canvas-display-p3-drawImage.https.html
+          subtest: Display-P3-BBBC00000000FFFF.png, Context srgb, ImageData display-p3, scaleImage=true
+        - test: canvas-display-p3-drawImage.https.html
+          subtest: Display-P3-BBBC00000000CCCC.png, Context srgb, ImageData display-p3, scaleImage=false
+        - test: canvas-display-p3-drawImage.https.html
+          subtest: Display-P3-BBBC00000000CCCC.png, Context srgb, ImageData display-p3, scaleImage=true
+        - test: canvas-display-p3-drawImage.https.html
+          subtest: Adobe-RGB-FFFF00000000FFFF.png, Context srgb, ImageData display-p3, scaleImage=false
+        - test: canvas-display-p3-drawImage.https.html
+          subtest: Adobe-RGB-FFFF00000000FFFF.png, Context srgb, ImageData display-p3, scaleImage=true
+        - test: canvas-display-p3-drawImage.https.html
+          subtest: Adobe-RGB-FFFF00000000FFFF.png, Context display-p3, ImageData srgb, scaleImage=false
+        - test: canvas-display-p3-drawImage.https.html
+          subtest: Adobe-RGB-FFFF00000000FFFF.png, Context display-p3, ImageData srgb, scaleImage=true
+        - test: canvas-display-p3-drawImage.https.html
+          subtest: Adobe-RGB-FFFF00000000FFFF.png, Context display-p3, ImageData display-p3, scaleImage=false
+        - test: canvas-display-p3-drawImage.https.html
+          subtest: Adobe-RGB-FFFF00000000FFFF.png, Context display-p3, ImageData display-p3, scaleImage=true
+        - test: canvas-display-p3-drawImage.https.html
+          subtest: Adobe-RGB-FFFF00000000CCCC.png, Context display-p3, ImageData display-p3, scaleImage=false
+        - test: canvas-display-p3-drawImage.https.html
+          subtest: Adobe-RGB-FFFF00000000CCCC.png, Context display-p3, ImageData display-p3, scaleImage=true
+        - test: canvas-display-p3-drawImage.https.html
+          subtest: Adobe-RGB-BBBC00000000FFFF.png, Context srgb, ImageData display-p3, scaleImage=false
+        - test: canvas-display-p3-drawImage.https.html
+          subtest: Adobe-RGB-BBBC00000000FFFF.png, Context srgb, ImageData display-p3, scaleImage=true
+        - test: canvas-display-p3-drawImage.https.html
+          subtest: Adobe-RGB-BBBC00000000FFFF.png, Context display-p3, ImageData display-p3, scaleImage=false
+        - test: canvas-display-p3-drawImage.https.html
+          subtest: Adobe-RGB-BBBC00000000FFFF.png, Context display-p3, ImageData display-p3, scaleImage=true
+        - test: canvas-display-p3-drawImage.https.html
+          subtest: Adobe-RGB-BBBC00000000CCCC.png, Context srgb, ImageData display-p3, scaleImage=false
+        - test: canvas-display-p3-drawImage.https.html
+          subtest: Adobe-RGB-BBBC00000000CCCC.png, Context srgb, ImageData display-p3, scaleImage=true
+        - test: canvas-display-p3-drawImage.https.html
+          subtest: Adobe-RGB-BBBC00000000CCCC.png, Context display-p3, ImageData display-p3, scaleImage=false
+        - test: canvas-display-p3-drawImage.https.html
+          subtest: Adobe-RGB-BBBC00000000CCCC.png, Context display-p3, ImageData display-p3, scaleImage=true
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1733743
+      results:
+        - test: canvas-display-p3-drawImage-ImageBitmap-Blob.html
+          subtest: Generic-CMYK-FF000000.jpg, Context srgb, ImageData srgb, cropSource=false
+        - test: canvas-display-p3-drawImage-ImageBitmap-Blob.html
+          subtest: Generic-CMYK-FF000000.jpg, Context srgb, ImageData srgb, cropSource=true
+        - test: canvas-display-p3-drawImage-ImageBitmap-Blob.html
+          subtest: Generic-CMYK-FF000000.jpg, Context display-p3, ImageData srgb, cropSource=false
+        - test: canvas-display-p3-drawImage-ImageBitmap-Blob.html
+          subtest: Generic-CMYK-FF000000.jpg, Context display-p3, ImageData srgb, cropSource=true
+        - test: canvas-display-p3-drawImage-ImageBitmap-Blob.html
+          subtest: Generic-CMYK-BE000000.jpg, Context srgb, ImageData srgb, cropSource=false
+        - test: canvas-display-p3-drawImage-ImageBitmap-Blob.html
+          subtest: Generic-CMYK-BE000000.jpg, Context srgb, ImageData srgb, cropSource=true
+        - test: canvas-display-p3-drawImage-ImageBitmap-Blob.html
+          subtest: Generic-CMYK-BE000000.jpg, Context display-p3, ImageData srgb, cropSource=false
+        - test: canvas-display-p3-drawImage-ImageBitmap-Blob.html
+          subtest: Generic-CMYK-BE000000.jpg, Context display-p3, ImageData srgb, cropSource=true
+        - test: canvas-display-p3-drawImage-ImageBitmap-cloned.html
+          subtest: Generic-CMYK-FF000000.jpg, Context srgb, ImageData srgb, cropSource=false
+        - test: canvas-display-p3-drawImage-ImageBitmap-cloned.html
+          subtest: Generic-CMYK-FF000000.jpg, Context srgb, ImageData srgb, cropSource=true
+        - test: canvas-display-p3-drawImage-ImageBitmap-cloned.html
+          subtest: Generic-CMYK-FF000000.jpg, Context display-p3, ImageData srgb, cropSource=false
+        - test: canvas-display-p3-drawImage-ImageBitmap-cloned.html
+          subtest: Generic-CMYK-FF000000.jpg, Context display-p3, ImageData srgb, cropSource=true
+        - test: canvas-display-p3-drawImage-ImageBitmap-cloned.html
+          subtest: Generic-CMYK-BE000000.jpg, Context srgb, ImageData srgb, cropSource=false
+        - test: canvas-display-p3-drawImage-ImageBitmap-cloned.html
+          subtest: Generic-CMYK-BE000000.jpg, Context srgb, ImageData srgb, cropSource=true
+        - test: canvas-display-p3-drawImage-ImageBitmap-cloned.html
+          subtest: Generic-CMYK-BE000000.jpg, Context display-p3, ImageData srgb, cropSource=false
+        - test: canvas-display-p3-drawImage-ImageBitmap-cloned.html
+          subtest: Generic-CMYK-BE000000.jpg, Context display-p3, ImageData srgb, cropSource=true
+        - test: canvas-display-p3-drawImage-ImageBitmap-image.html
+          subtest: Generic-CMYK-FF000000.jpg, Context srgb, ImageData srgb, cropSource=false
+        - test: canvas-display-p3-drawImage-ImageBitmap-image.html
+          subtest: Generic-CMYK-FF000000.jpg, Context srgb, ImageData srgb, cropSource=true
+        - test: canvas-display-p3-drawImage-ImageBitmap-image.html
+          subtest: Generic-CMYK-FF000000.jpg, Context display-p3, ImageData srgb, cropSource=false
+        - test: canvas-display-p3-drawImage-ImageBitmap-image.html
+          subtest: Generic-CMYK-FF000000.jpg, Context display-p3, ImageData srgb, cropSource=true
+        - test: canvas-display-p3-drawImage-ImageBitmap-image.html
+          subtest: Generic-CMYK-BE000000.jpg, Context srgb, ImageData srgb, cropSource=false
+        - test: canvas-display-p3-drawImage-ImageBitmap-image.html
+          subtest: Generic-CMYK-BE000000.jpg, Context srgb, ImageData srgb, cropSource=true
+        - test: canvas-display-p3-drawImage-ImageBitmap-image.html
+          subtest: Generic-CMYK-BE000000.jpg, Context display-p3, ImageData srgb, cropSource=false
+        - test: canvas-display-p3-drawImage-ImageBitmap-image.html
+          subtest: Generic-CMYK-BE000000.jpg, Context display-p3, ImageData srgb, cropSource=true

@@ -1,67 +1,74 @@
 links:
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1692131
-      results:
-        - test: import-css-module-basic.html
-          subtest: An @import CSS Module should not load, but should not throw an exception
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1713998
-      results:
-        - test: charset-2.html
-        - test: charset.html
-        - test: content-type-checking.html
-        - test: content-type-checking.html
-          subtest: text/css
-        - test: content-type-checking.html
-          subtest: application/css
-        - test: content-type-checking.html
-          subtest: text/html+css
-        - test: content-type-checking.html
-          subtest: text/css;boundary=something
-        - test: content-type-checking.html
-          subtest: text/css;foo=bar
-        - test: cors-crossorigin-requests.html
-          subtest: Imported CSS module, cross-origin with CORS
-        - test: cors-crossorigin-requests.html
-          subtest: Imported CSS module, cross-origin, missing CORS ACAO header
-        - test: cors-crossorigin-requests.html
-          subtest: Imported CSS module with parse error, cross-origin, with CORS
-        - test: credentials.sub.html
-          subtest: CSS Modules should be loaded with or without the credentials based on the same-origin-ness and the crossOrigin attribute
-        - test: css-module-worker-test.html
-        - test: css-module-worker-test.html
-          subtest: A dynamic import CSS Module within a web worker should not load.
-        - test: import-css-module-basic.html
-          subtest: A CSS Module should load
-        - test: import-css-module-basic.html
-          subtest: A large CSS Module should load
-        - test: import-css-module-basic.html
-          subtest: A parse error should not prevent subsequent rules from being included in a CSS module
-        - test: import-css-module-dynamic.html
-        - test: integrity.html
-        - test: load-error-events.html
-        - test: load-error-events.html
-          subtest: inline, 200, parser-inserted
-        - test: load-error-events.html
-          subtest: inline, 404, parser-inserted
-        - test: load-error-events.html
-          subtest: src, 200, parser-inserted
-        - test: load-error-events.html
-          subtest: src, 404, parser-inserted
-        - test: load-error-events.html
-          subtest: src, 200, not parser-inserted
-        - test: load-error-events.html
-          subtest: src, 404, not parser-inserted
-        - test: load-error-events.html
-          subtest: inline, 200, not parser-inserted
-        - test: load-error-events.html
-          subtest: inline, 404, not parser-inserted
-        - test: referrer-policies.sub.html
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1717567
-      results:
-        - test: relative-urls.html
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1719059
-      results:
-        - test: import-css-module-basic.html
+- product: firefox
+  results:
+  - subtest: An @import CSS Module should not load, but should not throw an exception
+    test: import-css-module-basic.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1692131
+- product: firefox
+  results:
+  - test: charset-2.html
+  - test: charset.html
+  - test: content-type-checking.html
+  - subtest: text/css
+    test: content-type-checking.html
+  - subtest: application/css
+    test: content-type-checking.html
+  - subtest: text/html+css
+    test: content-type-checking.html
+  - subtest: text/css;boundary=something
+    test: content-type-checking.html
+  - subtest: text/css;foo=bar
+    test: content-type-checking.html
+  - subtest: Imported CSS module, cross-origin with CORS
+    test: cors-crossorigin-requests.html
+  - subtest: Imported CSS module, cross-origin, missing CORS ACAO header
+    test: cors-crossorigin-requests.html
+  - subtest: Imported CSS module with parse error, cross-origin, with CORS
+    test: cors-crossorigin-requests.html
+  - subtest: CSS Modules should be loaded with or without the credentials based on
+      the same-origin-ness and the crossOrigin attribute
+    test: credentials.sub.html
+  - test: css-module-worker-test.html
+  - subtest: A dynamic import CSS Module within a web worker should not load.
+    test: css-module-worker-test.html
+  - subtest: A CSS Module should load
+    test: import-css-module-basic.html
+  - subtest: A large CSS Module should load
+    test: import-css-module-basic.html
+  - subtest: A parse error should not prevent subsequent rules from being included
+      in a CSS module
+    test: import-css-module-basic.html
+  - test: import-css-module-dynamic.html
+  - test: integrity.html
+  - test: load-error-events.html
+  - subtest: inline, 200, parser-inserted
+    test: load-error-events.html
+  - subtest: inline, 404, parser-inserted
+    test: load-error-events.html
+  - subtest: src, 200, parser-inserted
+    test: load-error-events.html
+  - subtest: src, 404, parser-inserted
+    test: load-error-events.html
+  - subtest: src, 200, not parser-inserted
+    test: load-error-events.html
+  - subtest: src, 404, not parser-inserted
+    test: load-error-events.html
+  - subtest: inline, 200, not parser-inserted
+    test: load-error-events.html
+  - subtest: inline, 404, not parser-inserted
+    test: load-error-events.html
+  - test: referrer-policies.sub.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1713998
+- product: firefox
+  results:
+  - test: relative-urls.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1717567
+- product: firefox
+  results:
+  - test: import-css-module-basic.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1719059
+- product: firefox
+  results:
+  - subtest: An attempt to load a CSS module as a worker should fail.
+    test: css-module-worker-test.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1732330

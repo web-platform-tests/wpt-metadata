@@ -1,309 +1,326 @@
 links:
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1634330
-      results:
-        - test: marker-content-020.html
-        - test: marker-hit-testing.html
-          subtest: outside image ::marker
-        - test: marker-hit-testing.html
-          subtest: outside nested image ::marker
-        - test: marker-hit-testing.html
-          subtest: outside nested string ::marker
-        - test: marker-hit-testing.html
-          subtest: outside string ::marker
-        - test: marker-content-019.html
-        - test: marker-computed-size.html
-          subtest: ::marker with no box due to 'list-style'
-        - test: marker-computed-size.html
-          subtest: ::marker with no box due to 'content'
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1634397
-      results:
-        - test: idlharness.html
-          subtest: CSSPseudoElement interface object name
-        - test: idlharness.html
-          subtest: Stringification of beforeElements.item(0)
-        - test: idlharness.html
-          subtest: 'CSSPseudoElement interface: existence and properties of interface prototype object''s @@unscopables property'
-        - test: idlharness.html
-          subtest: CSSPseudoElement must be primary interface of beforeElements.item(0)
-        - test: idlharness.html
-          subtest: 'CSSPseudoElement interface: existence and properties of interface prototype object''s "constructor" property'
-        - test: idlharness.html
-          subtest: 'CSSPseudoElement interface: existence and properties of interface object'
-        - test: idlharness.html
-          subtest: idl_test setup
-        - test: idlharness.html
-          subtest: CSSPseudoElement interface object length
-        - test: idlharness.html
-          subtest: 'CSSPseudoElement interface: beforeElements.item(0) must inherit property "type" with the proper type'
-        - test: idlharness.html
-          subtest: 'CSSPseudoElement interface: beforeElements.item(0) must inherit property "element" with the proper type'
-        - test: idlharness.html
-          subtest: 'CSSPseudoElement interface: attribute element'
-        - test: idlharness.html
-          subtest: 'CSSPseudoElement interface: attribute type'
-        - test: idlharness.html
-          subtest: 'CSSPseudoElement interface: existence and properties of interface prototype object'
-        - test: idlharness.html
-          subtest: 'Element interface: operation pseudo(CSSOMString)'
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1650174
-      results:
-        - test: active-selection-051.html
-        - test: active-selection-053.html
-        - test: active-selection-052.html
-        - test: active-selection-054.html
-    - product: chrome
-      url: https://crbug.com/1018465
-      results:
-        - test: active-selection-056.html
-          status: FAIL
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1655828
-      results:
-        - test: marker-text-transform-default.html
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1662218
-      results:
-        - test: marker-content-023.html
-        - test: marker-default-styles.html
-          subtest: Computed value of 'text-transform' for outside symbol
-        - test: marker-default-styles.html
-          subtest: Computed value of 'text-transform' for outside decimal
-        - test: marker-default-styles.html
-          subtest: Computed value of 'text-transform' for outside string
-        - test: marker-default-styles.html
-          subtest: Computed value of 'text-transform' for outside marker
-        - test: marker-default-styles.html
-          subtest: Computed value of 'text-transform' for inside symbol
-        - test: marker-default-styles.html
-          subtest: Computed value of 'text-transform' for inside decimal
-        - test: marker-default-styles.html
-          subtest: Computed value of 'text-transform' for inside string
-        - test: marker-default-styles.html
-          subtest: Computed value of 'text-transform' for inside marker
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1662826
-      results:
-        - test: marker-tab-size.html
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1663076
-      results:
-        - test: marker-text-align.html
-    - product: chrome
-      url: https://crbug.com/995106
-      results:
-        - test: first-letter-exclude-inline-marker.html
-        - test: first-letter-exclude-inline-child-marker.html
-    - product: chrome
-      url: https://crbug.com/1085772
-      results:
-        - test: first-line-opacity-001.html
-    - product: chrome
-      url: https://crbug.com/1069300
-      results:
-        - test: active-selection-063.html
-    - product: chrome
-      url: https://crbug.com/1108711
-      results:
-        - test: active-selection-057.html
-    - product: chrome
-      url: https://crbug.com/1110399
-      results:
-        - test: active-selection-031.html
-    - product: chrome
-      url: https://crbug.com/1110401
-      results:
-        - test: active-selection-045.html
-    - product: chrome
-      url: https://crbug.com/1024156
-      results:
-        - test: active-selection-025.html
-        - test: active-selection-027.html
-        - test: cascade-highlight-004.html
-    - product: chrome
-      url: https://crbug.com/1078474
-      results:
-        - test: selection-intercharacter-012.html
-        - test: cascade-highlight-001.html
-        - test: cascade-highlight-002.html
-        - test: active-selection-012.html
-        - test: active-selection-018.html
-        - test: selection-intercharacter-011.html
-    - product: chrome
-      url: https://crbug.com/1086855
-      results:
-        - test: file-selector-button-001.html
-    - product: chrome
-      url: https://crbug.com/1113004
-      results:
-        - test: active-selection-043.html
-    - product: chrome
-      url: https://crbug.com/1110495
-      results:
-        - test: selection-input-011.html
-        - test: selection-textarea-011.html
-    - product: chrome
-      url: https://crbug.com/1031667
-      results:
-        - test: marker-content-009.tentative.html
-        - test: marker-content-011.tentative.html
-        - test: marker-content-007.tentative.html
-        - test: marker-content-008.tentative.html
-    - product: chrome
-      url: https://crbug.com/1097992
-      results:
-        - test: marker-font-variant-numeric-normal.html
-    - product: chrome
-      url: https://crbug.com/1060007
-      results:
-        - test: marker-text-combine-upright.html
-    - product: chrome
-      url: https://crbug.com/979253
-      results:
-        - test: first-line-with-out-of-flow.html
-    - product: chrome
-      url: https://crbug.com/892983
-      results:
-        - test: first-line-with-before-after.html
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1675231
-      results:
-        - test: first-line-with-inline-block.html
-    - product: chrome
-      url: https://crbug.com/490511
-      results:
-        - test: first-letter-001.html
-        - test: idlharness.html
-    - product: chrome
-      url: https://crbug.com/1172333
-      results:
-        - test: first-letter-digraph.html
-    - product: chrome
-      url: https://crbug.com/1163175
-      results:
-        - test: first-letter-punctuation-and-space.html
-    - product: chrome
-      url: https://crbug.com/1147859
-      results:
-        - test: highlight-painting-001.html
-        - test: selection-overlay-and-grammar-001.html
-        - test: selection-overlay-and-spelling-001.html
-    - product: chrome
-      url: https://crbug.com/1035708
-      results:
-        - test: highlight-pseudos-computed.html
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1697373
-      results:
-        - test: first-letter-allowed-properties.html
-          subtest: backgroundPosition should be applied to first-letter pseudo elements.
-        - test: first-letter-allowed-properties.html
-          subtest: border should be applied to first-letter pseudo elements.
-        - test: first-letter-allowed-properties.html
-          subtest: borderImage should be applied to first-letter pseudo elements.
-        - test: first-letter-allowed-properties.html
-          subtest: borderRadius should be applied to first-letter pseudo elements.
-        - test: first-letter-allowed-properties.html
-          subtest: font should be applied to first-letter pseudo elements.
-        - test: first-letter-allowed-properties.html
-          subtest: margin should be applied to first-letter pseudo elements.
-        - test: first-letter-allowed-properties.html
-          subtest: padding should be applied to first-letter pseudo elements.
-        - test: first-letter-allowed-properties.html
-          subtest: textJustify should be applied to first-letter pseudo elements.
-        - test: first-line-allowed-properties.html
-          subtest: textJustify should be applied to first-line pseudo elements.
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1704239
-      results:
-        - test: highlight-pseudos-computed.html
-          subtest: 'getComputedStyle() for ::selection: should be element''s default'
-        - test: highlight-pseudos-computed.html
-          subtest: getComputedStyle() for ::selection) should be element's default
-        - test: highlight-pseudos-computed.html
-          subtest: getComputedStyle() for ::selection( should be element's default
-        - test: highlight-pseudos-computed.html
-          subtest: getComputedStyle() for ::selection(foo) should be element's default
-        - test: highlight-pseudos-computed.html
-          subtest: getComputedStyle() for ::selection() should be element's default
-        - test: highlight-pseudos-computed.html
-          subtest: getComputedStyle() for :::selection should be element's default
-        - test: highlight-pseudos-computed.html
-          subtest: getComputedStyle() for ::selection. should be element's default
-        - test: highlight-pseudos-computed.html
-          subtest: 'getComputedStyle() for ::target-text: should be element''s default'
-        - test: highlight-pseudos-computed.html
-          subtest: getComputedStyle() for ::target-text) should be element's default
-        - test: highlight-pseudos-computed.html
-          subtest: getComputedStyle() for ::target-text( should be element's default
-        - test: highlight-pseudos-computed.html
-          subtest: getComputedStyle() for ::target-text(foo) should be element's default
-        - test: highlight-pseudos-computed.html
-          subtest: getComputedStyle() for ::target-text() should be element's default
-        - test: highlight-pseudos-computed.html
-          subtest: getComputedStyle() for :::target-text should be element's default
-        - test: highlight-pseudos-computed.html
-          subtest: getComputedStyle() for ::target-text. should be element's default
-        - test: highlight-pseudos-computed.html
-          subtest: 'getComputedStyle() for ::spelling-error: should be element''s default'
-        - test: highlight-pseudos-computed.html
-          subtest: getComputedStyle() for ::spelling-error) should be element's default
-        - test: highlight-pseudos-computed.html
-          subtest: getComputedStyle() for ::spelling-error( should be element's default
-        - test: highlight-pseudos-computed.html
-          subtest: getComputedStyle() for ::spelling-error(foo) should be element's default
-        - test: highlight-pseudos-computed.html
-          subtest: getComputedStyle() for ::spelling-error() should be element's default
-        - test: highlight-pseudos-computed.html
-          subtest: getComputedStyle() for :::spelling-error should be element's default
-        - test: highlight-pseudos-computed.html
-          subtest: getComputedStyle() for ::spelling-error. should be element's default
-        - test: highlight-pseudos-computed.html
-          subtest: 'getComputedStyle() for ::grammar-error: should be element''s default'
-        - test: highlight-pseudos-computed.html
-          subtest: getComputedStyle() for ::grammar-error) should be element's default
-        - test: highlight-pseudos-computed.html
-          subtest: getComputedStyle() for ::grammar-error( should be element's default
-        - test: highlight-pseudos-computed.html
-          subtest: getComputedStyle() for ::grammar-error(foo) should be element's default
-        - test: highlight-pseudos-computed.html
-          subtest: getComputedStyle() for ::grammar-error() should be element's default
-        - test: highlight-pseudos-computed.html
-          subtest: getComputedStyle() for :::grammar-error should be element's default
-        - test: highlight-pseudos-computed.html
-          subtest: getComputedStyle() for ::grammar-error. should be element's default
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1705864
-      results:
-        - test: active-selection-021.html
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1719005
-      results:
-        - test: highlight-pseudos-computed.html
-          subtest: 'getComputedStyle() for ::highlight(foo): should be element''s default'
-        - test: highlight-pseudos-computed.html
-          subtest: getComputedStyle() for ::highlight(foo)) should be element's default
-        - test: highlight-pseudos-computed.html
-          subtest: getComputedStyle() for ::highlight(foo)( should be element's default
-        - test: highlight-pseudos-computed.html
-          subtest: getComputedStyle() for ::highlight(foo)(foo) should be element's default
-        - test: highlight-pseudos-computed.html
-          subtest: getComputedStyle() for ::highlight(foo)() should be element's default
-        - test: highlight-pseudos-computed.html
-          subtest: getComputedStyle() for :::highlight(foo) should be element's default
-        - test: highlight-pseudos-computed.html
-          subtest: getComputedStyle() for ::highlight(foo). should be element's default
-        - test: highlight-pseudos-computed.html
-          subtest: Different getComputedStyle() for ::highlight(bar) and same element
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1729490
-      results:
-        - test: backdrop-animate.html
-          subtest: '''backgroundColor'' animation'
-        - test: backdrop-animate-002.html
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1727771
-      results:
-        - test: selection-originating-decoration-color.html
+- product: firefox
+  results:
+  - test: marker-content-020.html
+  - subtest: outside image ::marker
+    test: marker-hit-testing.html
+  - subtest: outside nested image ::marker
+    test: marker-hit-testing.html
+  - subtest: outside nested string ::marker
+    test: marker-hit-testing.html
+  - subtest: outside string ::marker
+    test: marker-hit-testing.html
+  - test: marker-content-019.html
+  - subtest: ::marker with no box due to 'list-style'
+    test: marker-computed-size.html
+  - subtest: ::marker with no box due to 'content'
+    test: marker-computed-size.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1634330
+- product: firefox
+  results:
+  - subtest: CSSPseudoElement interface object name
+    test: idlharness.html
+  - subtest: Stringification of beforeElements.item(0)
+    test: idlharness.html
+  - subtest: 'CSSPseudoElement interface: existence and properties of interface prototype
+      object''s @@unscopables property'
+    test: idlharness.html
+  - subtest: CSSPseudoElement must be primary interface of beforeElements.item(0)
+    test: idlharness.html
+  - subtest: 'CSSPseudoElement interface: existence and properties of interface prototype
+      object''s "constructor" property'
+    test: idlharness.html
+  - subtest: 'CSSPseudoElement interface: existence and properties of interface object'
+    test: idlharness.html
+  - subtest: idl_test setup
+    test: idlharness.html
+  - subtest: CSSPseudoElement interface object length
+    test: idlharness.html
+  - subtest: 'CSSPseudoElement interface: beforeElements.item(0) must inherit property
+      "type" with the proper type'
+    test: idlharness.html
+  - subtest: 'CSSPseudoElement interface: beforeElements.item(0) must inherit property
+      "element" with the proper type'
+    test: idlharness.html
+  - subtest: 'CSSPseudoElement interface: attribute element'
+    test: idlharness.html
+  - subtest: 'CSSPseudoElement interface: attribute type'
+    test: idlharness.html
+  - subtest: 'CSSPseudoElement interface: existence and properties of interface prototype
+      object'
+    test: idlharness.html
+  - subtest: 'Element interface: operation pseudo(CSSOMString)'
+    test: idlharness.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1634397
+- product: firefox
+  results:
+  - test: active-selection-051.html
+  - test: active-selection-053.html
+  - test: active-selection-052.html
+  - test: active-selection-054.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1650174
+- product: chrome
+  results:
+  - status: FAIL
+    test: active-selection-056.html
+  url: https://crbug.com/1018465
+- product: firefox
+  results:
+  - test: marker-text-transform-default.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1655828
+- product: firefox
+  results:
+  - test: marker-content-023.html
+  - subtest: Computed value of 'text-transform' for outside symbol
+    test: marker-default-styles.html
+  - subtest: Computed value of 'text-transform' for outside decimal
+    test: marker-default-styles.html
+  - subtest: Computed value of 'text-transform' for outside string
+    test: marker-default-styles.html
+  - subtest: Computed value of 'text-transform' for outside marker
+    test: marker-default-styles.html
+  - subtest: Computed value of 'text-transform' for inside symbol
+    test: marker-default-styles.html
+  - subtest: Computed value of 'text-transform' for inside decimal
+    test: marker-default-styles.html
+  - subtest: Computed value of 'text-transform' for inside string
+    test: marker-default-styles.html
+  - subtest: Computed value of 'text-transform' for inside marker
+    test: marker-default-styles.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1662218
+- product: firefox
+  results:
+  - test: marker-tab-size.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1662826
+- product: firefox
+  results:
+  - test: marker-text-align.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1663076
+- product: chrome
+  results:
+  - test: first-letter-exclude-inline-marker.html
+  - test: first-letter-exclude-inline-child-marker.html
+  url: https://crbug.com/995106
+- product: chrome
+  results:
+  - test: first-line-opacity-001.html
+  url: https://crbug.com/1085772
+- product: chrome
+  results:
+  - test: active-selection-063.html
+  url: https://crbug.com/1069300
+- product: chrome
+  results:
+  - test: active-selection-057.html
+  url: https://crbug.com/1108711
+- product: chrome
+  results:
+  - test: active-selection-031.html
+  url: https://crbug.com/1110399
+- product: chrome
+  results:
+  - test: active-selection-045.html
+  url: https://crbug.com/1110401
+- product: chrome
+  results:
+  - test: active-selection-025.html
+  - test: active-selection-027.html
+  - test: cascade-highlight-004.html
+  url: https://crbug.com/1024156
+- product: chrome
+  results:
+  - test: selection-intercharacter-012.html
+  - test: cascade-highlight-001.html
+  - test: cascade-highlight-002.html
+  - test: active-selection-012.html
+  - test: active-selection-018.html
+  - test: selection-intercharacter-011.html
+  url: https://crbug.com/1078474
+- product: chrome
+  results:
+  - test: file-selector-button-001.html
+  url: https://crbug.com/1086855
+- product: chrome
+  results:
+  - test: active-selection-043.html
+  url: https://crbug.com/1113004
+- product: chrome
+  results:
+  - test: selection-input-011.html
+  - test: selection-textarea-011.html
+  url: https://crbug.com/1110495
+- product: chrome
+  results:
+  - test: marker-content-009.tentative.html
+  - test: marker-content-011.tentative.html
+  - test: marker-content-007.tentative.html
+  - test: marker-content-008.tentative.html
+  url: https://crbug.com/1031667
+- product: chrome
+  results:
+  - test: marker-font-variant-numeric-normal.html
+  url: https://crbug.com/1097992
+- product: chrome
+  results:
+  - test: marker-text-combine-upright.html
+  url: https://crbug.com/1060007
+- product: chrome
+  results:
+  - test: first-line-with-out-of-flow.html
+  url: https://crbug.com/979253
+- product: chrome
+  results:
+  - test: first-line-with-before-after.html
+  url: https://crbug.com/892983
+- product: firefox
+  results:
+  - test: first-line-with-inline-block.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1675231
+- product: chrome
+  results:
+  - test: first-letter-001.html
+  - test: idlharness.html
+  url: https://crbug.com/490511
+- product: chrome
+  results:
+  - test: first-letter-digraph.html
+  url: https://crbug.com/1172333
+- product: chrome
+  results:
+  - test: first-letter-punctuation-and-space.html
+  url: https://crbug.com/1163175
+- product: chrome
+  results:
+  - test: highlight-painting-001.html
+  - test: selection-overlay-and-grammar-001.html
+  - test: selection-overlay-and-spelling-001.html
+  url: https://crbug.com/1147859
+- product: chrome
+  results:
+  - test: highlight-pseudos-computed.html
+  url: https://crbug.com/1035708
+- product: firefox
+  results:
+  - subtest: backgroundPosition should be applied to first-letter pseudo elements.
+    test: first-letter-allowed-properties.html
+  - subtest: border should be applied to first-letter pseudo elements.
+    test: first-letter-allowed-properties.html
+  - subtest: borderImage should be applied to first-letter pseudo elements.
+    test: first-letter-allowed-properties.html
+  - subtest: borderRadius should be applied to first-letter pseudo elements.
+    test: first-letter-allowed-properties.html
+  - subtest: font should be applied to first-letter pseudo elements.
+    test: first-letter-allowed-properties.html
+  - subtest: margin should be applied to first-letter pseudo elements.
+    test: first-letter-allowed-properties.html
+  - subtest: padding should be applied to first-letter pseudo elements.
+    test: first-letter-allowed-properties.html
+  - subtest: textJustify should be applied to first-letter pseudo elements.
+    test: first-letter-allowed-properties.html
+  - subtest: textJustify should be applied to first-line pseudo elements.
+    test: first-line-allowed-properties.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1697373
+- product: firefox
+  results:
+  - subtest: 'getComputedStyle() for ::selection: should be element''s default'
+    test: highlight-pseudos-computed.html
+  - subtest: getComputedStyle() for ::selection) should be element's default
+    test: highlight-pseudos-computed.html
+  - subtest: getComputedStyle() for ::selection( should be element's default
+    test: highlight-pseudos-computed.html
+  - subtest: getComputedStyle() for ::selection(foo) should be element's default
+    test: highlight-pseudos-computed.html
+  - subtest: getComputedStyle() for ::selection() should be element's default
+    test: highlight-pseudos-computed.html
+  - subtest: getComputedStyle() for :::selection should be element's default
+    test: highlight-pseudos-computed.html
+  - subtest: getComputedStyle() for ::selection. should be element's default
+    test: highlight-pseudos-computed.html
+  - subtest: 'getComputedStyle() for ::target-text: should be element''s default'
+    test: highlight-pseudos-computed.html
+  - subtest: getComputedStyle() for ::target-text) should be element's default
+    test: highlight-pseudos-computed.html
+  - subtest: getComputedStyle() for ::target-text( should be element's default
+    test: highlight-pseudos-computed.html
+  - subtest: getComputedStyle() for ::target-text(foo) should be element's default
+    test: highlight-pseudos-computed.html
+  - subtest: getComputedStyle() for ::target-text() should be element's default
+    test: highlight-pseudos-computed.html
+  - subtest: getComputedStyle() for :::target-text should be element's default
+    test: highlight-pseudos-computed.html
+  - subtest: getComputedStyle() for ::target-text. should be element's default
+    test: highlight-pseudos-computed.html
+  - subtest: 'getComputedStyle() for ::spelling-error: should be element''s default'
+    test: highlight-pseudos-computed.html
+  - subtest: getComputedStyle() for ::spelling-error) should be element's default
+    test: highlight-pseudos-computed.html
+  - subtest: getComputedStyle() for ::spelling-error( should be element's default
+    test: highlight-pseudos-computed.html
+  - subtest: getComputedStyle() for ::spelling-error(foo) should be element's default
+    test: highlight-pseudos-computed.html
+  - subtest: getComputedStyle() for ::spelling-error() should be element's default
+    test: highlight-pseudos-computed.html
+  - subtest: getComputedStyle() for :::spelling-error should be element's default
+    test: highlight-pseudos-computed.html
+  - subtest: getComputedStyle() for ::spelling-error. should be element's default
+    test: highlight-pseudos-computed.html
+  - subtest: 'getComputedStyle() for ::grammar-error: should be element''s default'
+    test: highlight-pseudos-computed.html
+  - subtest: getComputedStyle() for ::grammar-error) should be element's default
+    test: highlight-pseudos-computed.html
+  - subtest: getComputedStyle() for ::grammar-error( should be element's default
+    test: highlight-pseudos-computed.html
+  - subtest: getComputedStyle() for ::grammar-error(foo) should be element's default
+    test: highlight-pseudos-computed.html
+  - subtest: getComputedStyle() for ::grammar-error() should be element's default
+    test: highlight-pseudos-computed.html
+  - subtest: getComputedStyle() for :::grammar-error should be element's default
+    test: highlight-pseudos-computed.html
+  - subtest: getComputedStyle() for ::grammar-error. should be element's default
+    test: highlight-pseudos-computed.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1704239
+- product: firefox
+  results:
+  - test: active-selection-021.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1705864
+- product: firefox
+  results:
+  - subtest: 'getComputedStyle() for ::highlight(foo): should be element''s default'
+    test: highlight-pseudos-computed.html
+  - subtest: getComputedStyle() for ::highlight(foo)) should be element's default
+    test: highlight-pseudos-computed.html
+  - subtest: getComputedStyle() for ::highlight(foo)( should be element's default
+    test: highlight-pseudos-computed.html
+  - subtest: getComputedStyle() for ::highlight(foo)(foo) should be element's default
+    test: highlight-pseudos-computed.html
+  - subtest: getComputedStyle() for ::highlight(foo)() should be element's default
+    test: highlight-pseudos-computed.html
+  - subtest: getComputedStyle() for :::highlight(foo) should be element's default
+    test: highlight-pseudos-computed.html
+  - subtest: getComputedStyle() for ::highlight(foo). should be element's default
+    test: highlight-pseudos-computed.html
+  - subtest: Different getComputedStyle() for ::highlight(bar) and same element
+    test: highlight-pseudos-computed.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1719005
+- product: firefox
+  results:
+  - subtest: '''backgroundColor'' animation'
+    test: backdrop-animate.html
+  - test: backdrop-animate-002.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1729490
+- product: firefox
+  results:
+  - test: selection-originating-decoration-color.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1727771
+- product: firefox
+  results:
+  - test: highlight-paired-cascade-004.tentative.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1732336
+- product: firefox
+  results:
+  - test: highlight-cascade-004.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1733723
+- product: firefox
+  results:
+  - test: textpath-selection-011.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1734335
