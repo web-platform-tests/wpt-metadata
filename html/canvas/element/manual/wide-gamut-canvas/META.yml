@@ -500,3 +500,30 @@ links:
           subtest: Generic-CMYK-BE000000.jpg, Context display-p3, ImageData srgb, cropSource=false
         - test: canvas-display-p3-drawImage-ImageBitmap-image.html
           subtest: Generic-CMYK-BE000000.jpg, Context display-p3, ImageData srgb, cropSource=true
+    - product: firefox
+      results:
+        - subtest: Generic-CMYK-FF000000.jpg, Context srgb, ImageData srgb, scaleImage=false
+          test: canvas-display-p3-drawImage.https.html
+        - subtest: Generic-CMYK-FF000000.jpg, Context srgb, ImageData srgb, scaleImage=true
+          test: canvas-display-p3-drawImage.https.html
+        - subtest: Generic-CMYK-FF000000.jpg, Context display-p3, ImageData srgb, scaleImage=false
+          test: canvas-display-p3-drawImage.https.html
+        - subtest: Generic-CMYK-FF000000.jpg, Context display-p3, ImageData srgb, scaleImage=true
+          test: canvas-display-p3-drawImage.https.html
+        - subtest: Generic-CMYK-BE000000.jpg, Context srgb, ImageData srgb, scaleImage=false
+          test: canvas-display-p3-drawImage.https.html
+        - subtest: Generic-CMYK-BE000000.jpg, Context srgb, ImageData srgb, scaleImage=true
+          test: canvas-display-p3-drawImage.https.html
+        - subtest: Generic-CMYK-BE000000.jpg, Context display-p3, ImageData srgb, scaleImage=false
+          test: canvas-display-p3-drawImage.https.html
+        - subtest: Generic-CMYK-BE000000.jpg, Context display-p3, ImageData srgb, scaleImage=true
+          test: canvas-display-p3-drawImage.https.html
+        - subtest: Display-P3-BB0000FF.png, Context display-p3, ImageData display-p3
+          test: canvas-display-p3-pattern-image.html
+        - subtest: Display-P3-BB0000CC.png, Context display-p3, ImageData display-p3
+          test: canvas-display-p3-pattern-image.html
+        - subtest: Display-P3-BBBC00000000FFFF.png, Context display-p3, ImageData display-p3
+          test: canvas-display-p3-pattern-image.html
+        - subtest: Display-P3-BBBC00000000CCCC.png, Context display-p3, ImageData display-p3
+          test: canvas-display-p3-pattern-image.html
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1734074
