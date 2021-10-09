@@ -1,0 +1,12 @@
+links:
+- product: firefox
+  results:
+  - subtest: Property forced-color-adjust value 'auto'
+    test: forced-color-adjust-computed.html
+  - subtest: Property forced-color-adjust value 'none'
+    test: forced-color-adjust-computed.html
+  - subtest: e.style['forced-color-adjust'] = "none" should set the property value
+    test: forced-color-adjust-valid.html
+  - subtest: e.style['forced-color-adjust'] = "auto" should set the property value
+    test: forced-color-adjust-valid.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1734957
