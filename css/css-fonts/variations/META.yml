@@ -1,48 +1,125 @@
 links:
-    - product: safari
-      url: https://bugs.webkit.org/show_bug.cgi?id=206882
-      results:
-        - test: at-font-face-font-matching.html
-          status: FAIL
-    - product: webkitgtk
-      url: https://bugs.webkit.org/show_bug.cgi?id=206882
-      results:
-        - test: at-font-face-font-matching.html
-          status: FAIL
-    - product: chrome
-      url: https://crbug.com/809935
-      results:
-        - test: font-style-interpolation.html
-          status: TIMEOUT
-        - test: font-shorthand.html
-          status: FAIL
-    - product: chrome
-      url: https://crbug.com/895257
-      results:
-        - test: at-font-face-font-matching.html
-    - product: chrome
-      url: https://bugs.chromium.org/p/chromium/issues/detail?id=1211460
-      results:
-        - test: font-weight-parsing.html
-        - test: variable-opsz-size-adjust.html
-        - test: at-font-face-descriptors.html
-        - test: font-parse-numeric-stretch-style-weight.html
-        - test: font-stretch.html
-        - test: font-style-parsing.html
-    - product: chrome
-      url: https://bugs.chromium.org/p/chromium/issues/detail?id=1064946
-      results:
-        - test: font-parse-numeric-stretch-style-weight.html
-        - test: font-stretch.html
-    - product: chrome
-      url: https://bugs.chromium.org/p/chromium/issues/detail?id=809935
-      results:
-        - test: font-style-parsing.html
-    - product: chrome
-      url: https://bugs.chromium.org/p/chromium/issues/detail?id=451346
-      results:
-        - test: variable-opsz-size-adjust.html
-    - product: chrome
-      url: https://bugs.chromium.org/p/chromium/issues/detail?id=493006
-      results:
-        - test: at-font-face-descriptors.html
+- product: safari
+  results:
+  - status: FAIL
+    test: at-font-face-font-matching.html
+  url: https://bugs.webkit.org/show_bug.cgi?id=206882
+- product: webkitgtk
+  results:
+  - status: FAIL
+    test: at-font-face-font-matching.html
+  url: https://bugs.webkit.org/show_bug.cgi?id=206882
+- product: chrome
+  results:
+  - status: TIMEOUT
+    test: font-style-interpolation.html
+  - status: FAIL
+    test: font-shorthand.html
+  url: https://crbug.com/809935
+- product: chrome
+  results:
+  - test: at-font-face-font-matching.html
+  url: https://crbug.com/895257
+- product: chrome
+  results:
+  - test: font-weight-parsing.html
+  - test: variable-opsz-size-adjust.html
+  - test: at-font-face-descriptors.html
+  - test: font-parse-numeric-stretch-style-weight.html
+  - test: font-stretch.html
+  - test: font-style-parsing.html
+  url: https://bugs.chromium.org/p/chromium/issues/detail?id=1211460
+- product: chrome
+  results:
+  - test: font-parse-numeric-stretch-style-weight.html
+  - test: font-stretch.html
+  url: https://bugs.chromium.org/p/chromium/issues/detail?id=1064946
+- product: chrome
+  results:
+  - test: font-style-parsing.html
+  url: https://bugs.chromium.org/p/chromium/issues/detail?id=809935
+- product: chrome
+  results:
+  - test: variable-opsz-size-adjust.html
+  url: https://bugs.chromium.org/p/chromium/issues/detail?id=451346
+- product: chrome
+  results:
+  - test: at-font-face-descriptors.html
+  url: https://bugs.chromium.org/p/chromium/issues/detail?id=493006
+- product: firefox
+  results:
+  - subtest: 'font-weight(valid): ''normal'' keyword: normal'
+    test: at-font-face-descriptors.html
+  - subtest: 'font-weight(valid): ''bold'' keyword: bold'
+    test: at-font-face-descriptors.html
+  - subtest: 'font-weight(valid): Values that are not multiple of 100 should be parsed
+      successfully: 401'
+    test: at-font-face-descriptors.html
+  - subtest: 'font-weight(valid): Non-integer values should be parsed successfully:
+      400.1'
+    test: at-font-face-descriptors.html
+  - subtest: 'font-weight(valid): Minimum allowed value should be parsed successfully:
+      1'
+    test: at-font-face-descriptors.html
+  - subtest: 'font-weight(valid): Maximum allowed value should be parsed successfully:
+      1000'
+    test: at-font-face-descriptors.html
+  - subtest: 'font-weight(valid): Simple calc value: calc(100.5)'
+    test: at-font-face-descriptors.html
+  - subtest: 'font-weight(valid): Valid calc expression: calc(100.5*3 + 50.5)'
+    test: at-font-face-descriptors.html
+  - subtest: 'font-weight(valid): Simple range: 100 900'
+    test: at-font-face-descriptors.html
+  - subtest: 'font-weight(valid): Lower bound calc(): calc(100 + 100) 400'
+    test: at-font-face-descriptors.html
+  - subtest: 'font-weight(valid): Upper bound calc(): 200 calc(200 + 200)'
+    test: at-font-face-descriptors.html
+  - subtest: 'font-weight(valid): Both bounds are calc(): calc(100 + 100) calc(200
+      + 200)'
+    test: at-font-face-descriptors.html
+  - subtest: 'font-stretch(valid): ''ultra-condensed'' keyword: ultra-condensed'
+    test: at-font-face-descriptors.html
+  - subtest: 'font-stretch(valid): ''extra-condensed'' keyword: extra-condensed'
+    test: at-font-face-descriptors.html
+  - subtest: 'font-stretch(valid): ''condensed'' keyword: condensed'
+    test: at-font-face-descriptors.html
+  - subtest: 'font-stretch(valid): ''semi-condensed'' keyword: semi-condensed'
+    test: at-font-face-descriptors.html
+  - subtest: 'font-stretch(valid): ''normal'' keyword: normal'
+    test: at-font-face-descriptors.html
+  - subtest: 'font-stretch(valid): ''semi-expanded'' keyword: semi-expanded'
+    test: at-font-face-descriptors.html
+  - subtest: 'font-stretch(valid): ''expanded'' keyword: expanded'
+    test: at-font-face-descriptors.html
+  - subtest: 'font-stretch(valid): ''extra-expanded'' keyword: extra-expanded'
+    test: at-font-face-descriptors.html
+  - subtest: 'font-stretch(valid): ''ultra-expanded'' keyword: ultra-expanded'
+    test: at-font-face-descriptors.html
+  - subtest: 'font-stretch(valid): Legal percentage: 1%'
+    test: at-font-face-descriptors.html
+  - subtest: 'font-stretch(valid): Legal percentage: 10.5%'
+    test: at-font-face-descriptors.html
+  - subtest: 'font-stretch(valid): Legal percentage: 100%'
+    test: at-font-face-descriptors.html
+  - subtest: 'font-stretch(valid): Legal percentage: 1000%'
+    test: at-font-face-descriptors.html
+  - subtest: 'font-stretch(valid): Zero is legal: 0%'
+    test: at-font-face-descriptors.html
+  - subtest: 'font-stretch(valid): Negative calc value (to be clamped): calc(-100%)'
+    test: at-font-face-descriptors.html
+  - subtest: 'font-stretch(valid): Negative calc expression (to be clamped): calc(50%
+      - 50%*2)'
+    test: at-font-face-descriptors.html
+  - subtest: 'font-stretch(valid): Simple range: 100% 200%'
+    test: at-font-face-descriptors.html
+  - subtest: 'font-style(valid): ''normal'' keyword: normal'
+    test: at-font-face-descriptors.html
+  - subtest: 'font-style(valid): ''italic'' keyword: italic'
+    test: at-font-face-descriptors.html
+  - subtest: 'font-style(valid): ''oblique'' keyword: oblique'
+    test: at-font-face-descriptors.html
+  - subtest: 'font-style(valid): ''oblique'' followed by zero degrees: oblique 0deg'
+    test: at-font-face-descriptors.html
+  - subtest: 'font-style(valid): Simple range: oblique 10deg 20deg'
+    test: at-font-face-descriptors.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1736640
