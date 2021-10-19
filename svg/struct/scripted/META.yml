@@ -1,6 +1,11 @@
 links:
-- product: firefox
-  results:
-  - subtest: SVGSVGElement.getIntersectionList()
-    test: svg-getIntersectionList.svg
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1736303
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1736303
+      results:
+        - test: svg-getIntersectionList.svg
+          subtest: SVGSVGElement.getIntersectionList()
+    - product: chrome
+      url: https://bugs.chromium.org/p/chromium/issues/detail?id=1261642
+      results:
+        - test: svg-getIntersectionList.svg
+          subtest: SVGSVGElement.getIntersectionList()
