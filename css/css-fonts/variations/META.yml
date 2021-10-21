@@ -123,3 +123,24 @@ links:
   - subtest: 'font-style(valid): Simple range: oblique 10deg 20deg'
     test: at-font-face-descriptors.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1736640
+- product: firefox
+  results:
+  - subtest: 'font-weight(valid): Bounds out of order are valid: 400 200'
+    test: at-font-face-descriptors.html
+  - subtest: 'font-stretch(valid): Bounds out of order: 200% 100%'
+    test: at-font-face-descriptors.html
+  - subtest: 'font-style(valid): ''oblique'' followed by maxumum 90 degree angle:
+      oblique 90deg'
+    test: at-font-face-descriptors.html
+  - subtest: 'font-style(valid): ''oblique'' followed by minimum -90 degree angle:
+      oblique -90deg'
+    test: at-font-face-descriptors.html
+  - subtest: 'font-style(valid): ''oblique'' followed by calc with out of range value
+      (should be clamped): oblique calc(91deg)'
+    test: at-font-face-descriptors.html
+  - subtest: 'font-style(valid): ''oblique'' followed by calc with out of range value
+      (should be clamped): oblique calc(-91deg)'
+    test: at-font-face-descriptors.html
+  - subtest: 'font-style(valid): Bounds out of order: oblique 20deg 10deg'
+    test: at-font-face-descriptors.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1737061
