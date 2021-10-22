@@ -1,112 +1,102 @@
 links:
-- product: firefox
-  results:
-  - subtest: .grid 19
-    test: grid-container-percentage-002.html
-  - subtest: .grid 18
-    test: grid-container-percentage-002.html
-  - subtest: .grid 15
-    test: grid-container-percentage-002.html
-  - subtest: .grid 17
-    test: grid-container-percentage-002.html
-  - subtest: .grid 16
-    test: grid-container-percentage-002.html
-  - subtest: .grid 11
-    test: grid-container-percentage-002.html
-  - subtest: .grid 10
-    test: grid-container-percentage-002.html
-  - subtest: .grid 13
-    test: grid-container-percentage-002.html
-  - subtest: .grid 12
-    test: grid-container-percentage-002.html
-  - subtest: .grid 1
-    test: grid-container-percentage-002.html
-  - subtest: .grid 5
-    test: grid-container-percentage-002.html
-  - subtest: .grid 4
-    test: grid-container-percentage-002.html
-  - subtest: .grid 7
-    test: grid-container-percentage-002.html
-  - subtest: .grid 6
-    test: grid-container-percentage-002.html
-  - subtest: .grid 9
-    test: grid-container-percentage-002.html
-  - subtest: .grid 24
-    test: grid-container-percentage-002.html
-  - subtest: .grid 21
-    test: grid-container-percentage-002.html
-  - subtest: .grid 22
-    test: grid-container-percentage-002.html
-  - subtest: .grid 23
-    test: grid-container-percentage-002.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1634319
-- product: firefox
-  results:
-  - test: flex-and-intrinsic-sizes-002.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1658676
-- product: firefox
-  results:
-  - subtest: '''grid'' with: grid-template-columns: max-content; and grid-template-rows:
-      max-content;'
-    test: grid-intrinsic-track-sizes-001.html
-  - subtest: '''grid'' with: grid-template-columns: minmax(0, max-content); and grid-template-rows:
-      minmax(0, max-content);'
-    test: grid-intrinsic-track-sizes-001.html
-  - subtest: '''grid'' with: grid-template-columns: minmax(max-content, 10px); and
-      grid-template-rows: minmax(max-content, 10px);'
-    test: grid-intrinsic-track-sizes-001.html
-  - subtest: '''grid'' with: grid-template-columns: auto auto; and grid-template-rows:
-      auto auto;'
-    test: grid-intrinsic-track-sizes-001.html
-  - subtest: '''grid'' with: grid-template-columns: max-content max-content; and grid-template-rows:
-      max-content max-content;'
-    test: grid-intrinsic-track-sizes-001.html
-  - subtest: '''grid'' with: grid-template-columns: minmax(0, auto) minmax(0, auto);
-      and grid-template-rows: minmax(0, auto) minmax(0, auto);'
-    test: grid-intrinsic-track-sizes-001.html
-  - subtest: '''grid'' with: grid-template-columns: minmax(0, max-content) minmax(0,
-      max-content); and grid-template-rows: minmax(0, max-content) minmax(0, max-content);'
-    test: grid-intrinsic-track-sizes-001.html
-  - subtest: '''grid'' with: grid-template-columns: minmax(max-content, 10px) minmax(max-content,
-      10px); and grid-template-rows: minmax(max-content, 10px) minmax(max-content,
-      10px);'
-    test: grid-intrinsic-track-sizes-001.html
-  - subtest: '''grid'' with: grid-template-columns: 20px max-content; and grid-template-rows:
-      20px max-content;'
-    test: grid-intrinsic-track-sizes-001.html
-  - subtest: '''grid'' with: grid-template-columns: 20px minmax(0, max-content); and
-      grid-template-rows: 20px minmax(0, max-content);'
-    test: grid-intrinsic-track-sizes-001.html
-  - subtest: '''grid'' with: grid-template-columns: 20px minmax(max-content, 6px);
-      and grid-template-rows: 20px minmax(max-content, 6px);'
-    test: grid-intrinsic-track-sizes-001.html
-  - subtest: '''grid'' with: grid-template-columns: 20px minmax(max-content, 30px);
-      and grid-template-rows: 20px minmax(max-content, 30px);'
-    test: grid-intrinsic-track-sizes-001.html
-  - subtest: '''grid'' with: grid-template-columns: max-content min-content; and grid-template-rows:
-      max-content min-content;'
-    test: grid-intrinsic-track-sizes-001.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1663035
-- product: chrome
-  results:
-  - test: grid-flex-track-intrinsic-sizes-002.html
-  - test: grid-flex-track-intrinsic-sizes-001.html
-  url: https://crbug.com/935102
-- product: chrome
-  results:
-  - test: flex-and-intrinsic-sizes-001.html
-  url: https://github.com/web-platform-tests/wpt/pull/24464#issuecomment-654455183
-- product: chrome
-  results:
-  - test: grid-flex-track-intrinsic-sizes-003.html
-  url: https://crbug.com/1024927
-- product: chrome
-  results:
-  - test: flex-sizing-rows-indefinite-height.html
-  - test: grid-content-distribution-must-account-for-track-sizing-002.html
-  url: https://bugs.chromium.org/p/chromium/issues/detail?id=1045599
-- product: firefox
-  results:
-  - subtest: .grid 5
-    test: grid-intrinsic-size-with-orthogonal-items.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1716493
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1634319
+      results:
+        - test: grid-container-percentage-002.html
+          subtest: .grid 19
+        - test: grid-container-percentage-002.html
+          subtest: .grid 18
+        - test: grid-container-percentage-002.html
+          subtest: .grid 15
+        - test: grid-container-percentage-002.html
+          subtest: .grid 17
+        - test: grid-container-percentage-002.html
+          subtest: .grid 16
+        - test: grid-container-percentage-002.html
+          subtest: .grid 11
+        - test: grid-container-percentage-002.html
+          subtest: .grid 10
+        - test: grid-container-percentage-002.html
+          subtest: .grid 13
+        - test: grid-container-percentage-002.html
+          subtest: .grid 12
+        - test: grid-container-percentage-002.html
+          subtest: .grid 1
+        - test: grid-container-percentage-002.html
+          subtest: .grid 5
+        - test: grid-container-percentage-002.html
+          subtest: .grid 4
+        - test: grid-container-percentage-002.html
+          subtest: .grid 7
+        - test: grid-container-percentage-002.html
+          subtest: .grid 6
+        - test: grid-container-percentage-002.html
+          subtest: .grid 9
+        - test: grid-container-percentage-002.html
+          subtest: .grid 24
+        - test: grid-container-percentage-002.html
+          subtest: .grid 21
+        - test: grid-container-percentage-002.html
+          subtest: .grid 22
+        - test: grid-container-percentage-002.html
+          subtest: .grid 23
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1658676
+      results:
+        - test: flex-and-intrinsic-sizes-002.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1663035
+      results:
+        - test: grid-intrinsic-track-sizes-001.html
+          subtest: '''grid'' with: grid-template-columns: max-content; and grid-template-rows: max-content;'
+        - test: grid-intrinsic-track-sizes-001.html
+          subtest: '''grid'' with: grid-template-columns: minmax(0, max-content); and grid-template-rows: minmax(0, max-content);'
+        - test: grid-intrinsic-track-sizes-001.html
+          subtest: '''grid'' with: grid-template-columns: minmax(max-content, 10px); and grid-template-rows: minmax(max-content, 10px);'
+        - test: grid-intrinsic-track-sizes-001.html
+          subtest: '''grid'' with: grid-template-columns: auto auto; and grid-template-rows: auto auto;'
+        - test: grid-intrinsic-track-sizes-001.html
+          subtest: '''grid'' with: grid-template-columns: max-content max-content; and grid-template-rows: max-content max-content;'
+        - test: grid-intrinsic-track-sizes-001.html
+          subtest: '''grid'' with: grid-template-columns: minmax(0, auto) minmax(0, auto); and grid-template-rows: minmax(0, auto) minmax(0, auto);'
+        - test: grid-intrinsic-track-sizes-001.html
+          subtest: '''grid'' with: grid-template-columns: minmax(0, max-content) minmax(0, max-content); and grid-template-rows: minmax(0, max-content) minmax(0, max-content);'
+        - test: grid-intrinsic-track-sizes-001.html
+          subtest: '''grid'' with: grid-template-columns: minmax(max-content, 10px) minmax(max-content, 10px); and grid-template-rows: minmax(max-content, 10px) minmax(max-content, 10px);'
+        - test: grid-intrinsic-track-sizes-001.html
+          subtest: '''grid'' with: grid-template-columns: 20px max-content; and grid-template-rows: 20px max-content;'
+        - test: grid-intrinsic-track-sizes-001.html
+          subtest: '''grid'' with: grid-template-columns: 20px minmax(0, max-content); and grid-template-rows: 20px minmax(0, max-content);'
+        - test: grid-intrinsic-track-sizes-001.html
+          subtest: '''grid'' with: grid-template-columns: 20px minmax(max-content, 6px); and grid-template-rows: 20px minmax(max-content, 6px);'
+        - test: grid-intrinsic-track-sizes-001.html
+          subtest: '''grid'' with: grid-template-columns: 20px minmax(max-content, 30px); and grid-template-rows: 20px minmax(max-content, 30px);'
+        - test: grid-intrinsic-track-sizes-001.html
+          subtest: '''grid'' with: grid-template-columns: max-content min-content; and grid-template-rows: max-content min-content;'
+    - product: chrome
+      url: https://crbug.com/935102
+      results:
+        - test: grid-flex-track-intrinsic-sizes-002.html
+        - test: grid-flex-track-intrinsic-sizes-001.html
+    - product: chrome
+      url: https://github.com/web-platform-tests/wpt/pull/24464#issuecomment-654455183
+      results:
+        - test: flex-and-intrinsic-sizes-001.html
+    - product: chrome
+      url: https://crbug.com/1024927
+      results:
+        - test: grid-flex-track-intrinsic-sizes-003.html
+    - product: chrome
+      url: https://bugs.chromium.org/p/chromium/issues/detail?id=1045599
+      results:
+        - test: flex-sizing-rows-indefinite-height.html
+        - test: grid-content-distribution-must-account-for-track-sizing-002.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1716493
+      results:
+        - test: grid-intrinsic-size-with-orthogonal-items.html
+          subtest: .grid 5
+    - product: chrome
+      url: https://bugs.chromium.org/p/chromium/issues/detail?id=1102918
+      results:
+        - test: flex-tracks-with-fractional-size.html
