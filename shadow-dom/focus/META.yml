@@ -1,43 +1,38 @@
 links:
-- product: firefox
-  results:
-  - subtest: :focus must match a shadow host with open mode shadow root that contains
-      the focused element
-    test: focus-pseudo-matches-on-shadow-host.html
-  - subtest: :focus must not match a shadow host with closed mode shadow root that
-      does not contain the focused element
-    test: focus-pseudo-matches-on-shadow-host.html
-  - subtest: :focus must match a shadow host with closed mode shadow root that contains
-      the focused element
-    test: focus-pseudo-matches-on-shadow-host.html
-  - test: focus-pseudo-on-shadow-host-1.html
-  - test: focus-pseudo-on-shadow-host-2.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1689068
-- product: chrome
-  results:
-  - test: focus-pseudo-on-shadow-host-1.html
-  - test: focus-pseudo-on-shadow-host-2.html
-  - test: focus-selector-delegatesFocus.html
-  - test: focus-pseudo-matches-on-shadow-host.html
-  url: https://bugs.chromium.org/p/chromium/issues/detail?id=1014091
-- product: firefox
-  results:
-  - subtest: :focus applies to host with delegatesFocus=true when the shadow root's
-      descendant has focus
-    test: focus-selector-delegatesFocus.html
-  - subtest: :focus applies to host with delegatesFocus=true when an element in a
-      nested shadow tree with delegatesFocus=true is focused
-    test: focus-selector-delegatesFocus.html
-  - subtest: :focus applies to host with delegatesFocus=true when an element in a
-      nested shadow tree with delegatesFocus=false is focused
-    test: focus-selector-delegatesFocus.html
-  - subtest: :focus applies to host with delegatesFocus=false when the shadow root's
-      descendant has focus
-    test: focus-selector-delegatesFocus.html
-  - subtest: :focus applies to host with delegatesFocus=false when an element in a
-      nested shadow tree with delegatesFocus=true is focused
-    test: focus-selector-delegatesFocus.html
-  - subtest: :focus applies to host with delegatesFocus=false when an element in a
-      nested shadow tree with delegatesFocus=false is focused
-    test: focus-selector-delegatesFocus.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1695663
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1689068
+      results:
+        - test: focus-pseudo-matches-on-shadow-host.html
+          subtest: :focus must match a shadow host with open mode shadow root that contains the focused element
+        - test: focus-pseudo-matches-on-shadow-host.html
+          subtest: :focus must not match a shadow host with closed mode shadow root that does not contain the focused element
+        - test: focus-pseudo-matches-on-shadow-host.html
+          subtest: :focus must match a shadow host with closed mode shadow root that contains the focused element
+        - test: focus-pseudo-on-shadow-host-1.html
+        - test: focus-pseudo-on-shadow-host-2.html
+    - product: chrome
+      url: https://bugs.chromium.org/p/chromium/issues/detail?id=1014091
+      results:
+        - test: focus-pseudo-on-shadow-host-1.html
+        - test: focus-pseudo-on-shadow-host-2.html
+        - test: focus-selector-delegatesFocus.html
+        - test: focus-pseudo-matches-on-shadow-host.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1695663
+      results:
+        - test: focus-selector-delegatesFocus.html
+          subtest: :focus applies to host with delegatesFocus=true when the shadow root's descendant has focus
+        - test: focus-selector-delegatesFocus.html
+          subtest: :focus applies to host with delegatesFocus=true when an element in a nested shadow tree with delegatesFocus=true is focused
+        - test: focus-selector-delegatesFocus.html
+          subtest: :focus applies to host with delegatesFocus=true when an element in a nested shadow tree with delegatesFocus=false is focused
+        - test: focus-selector-delegatesFocus.html
+          subtest: :focus applies to host with delegatesFocus=false when the shadow root's descendant has focus
+        - test: focus-selector-delegatesFocus.html
+          subtest: :focus applies to host with delegatesFocus=false when an element in a nested shadow tree with delegatesFocus=true is focused
+        - test: focus-selector-delegatesFocus.html
+          subtest: :focus applies to host with delegatesFocus=false when an element in a nested shadow tree with delegatesFocus=false is focused
+    - url: https://bugs.chromium.org/p/chromium/issues/detail?id=1265439
+      results:
+        - test: focus-method-delegatesFocus.html
+        - test: click-focus-delegatesFocus-click.html
