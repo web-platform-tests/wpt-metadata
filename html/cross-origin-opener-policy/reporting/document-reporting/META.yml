@@ -1,0 +1,14 @@
+links:
+- product: firefox
+  results:
+  - subtest: Access from openee
+    test: report-to-both_coop-ro.https.html
+  - subtest: Same origin openee redirected to same-origin with same-origin-allow-popups
+    test: reporting-redirect-with-same-origin-allow-popups.https.html
+  - subtest: Cross origin openee redirected to same-origin with same-origin-allow-popups
+    test: reporting-redirect-with-same-origin-allow-popups.https.html
+  - subtest: Same origin openee redirected to same-origin with unsafe-none
+    test: reporting-redirect-with-unsafe-none.https.html
+  - subtest: Cross origin openee redirected to same-origin with unsafe-none
+    test: reporting-redirect-with-unsafe-none.https.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1739237
