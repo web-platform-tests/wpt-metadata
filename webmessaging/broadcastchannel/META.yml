@@ -1,20 +1,19 @@
 links:
-- product: safari
-  results:
-  - status: FAIL
-    test: workers.html
-  - test: blobs.html
-  - test: origin.window.html
-  - test: sandbox.html
-  url: https://bugs.webkit.org/show_bug.cgi?id=161472
-- product: webkitgtk
-  results:
-  - status: FAIL
-    test: workers.html
-  url: https://bugs.webkit.org/show_bug.cgi?id=161472
-- product: firefox
-  results:
-  - subtest: BroadcastChannel messages within detached iframe should be ignored (BCs
-      created after detaching)
-    test: detached-iframe.tentative.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1738161
+    - product: safari
+      url: https://bugs.webkit.org/show_bug.cgi?id=161472
+      results:
+        - test: workers.html
+          status: FAIL
+        - test: blobs.html
+        - test: origin.window.html
+        - test: sandbox.html
+    - product: webkitgtk
+      url: https://bugs.webkit.org/show_bug.cgi?id=161472
+      results:
+        - test: workers.html
+          status: FAIL
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1738161
+      results:
+        - test: detached-iframe.html
+          subtest: BroadcastChannel messages within detached iframe should be ignored (BCs created after detaching)
