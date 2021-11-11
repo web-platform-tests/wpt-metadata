@@ -14,3 +14,18 @@ links:
       import rule with an invalid layer declaration'
     test: layer-import-parsing.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1740396
+- product: firefox
+  results:
+  - subtest: '@import url("nonexist.css") layer(); should still be a valid import
+      rule with an invalid layer declaration'
+    test: layer-import.html
+  - subtest: '@import url("nonexist.css") layer(A B); should still be a valid import
+      rule with an invalid layer declaration'
+    test: layer-import.html
+  - subtest: '@import url("nonexist.css") layer(A . B); should still be a valid import
+      rule with an invalid layer declaration'
+    test: layer-import.html
+  - subtest: '@import url("nonexist.css") layer(A, B, C); should still be a valid
+      import rule with an invalid layer declaration'
+    test: layer-import.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1740700
