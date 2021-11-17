@@ -7,8 +7,9 @@ YAML Link Format Specs:
 
 ```
 links:
-  - product: [product spec]
-    url: [URL]	
+  - product: [product spec] (optional)
+    url: [URL]
+    label: [Label]
     results:
     - test: [Test name] 
       subtest: [Subtest name] (optional)
@@ -20,6 +21,13 @@ Where
 - `product` is a browser name with an option of [product spec](https://github.com/web-platform-tests/wpt.fyi/blob/master/api/README.md)
   - `{browser-name}[-{browser-version}[-{os}[-{os-version}]]]`
   - e.g. `chrome`, `safari-12`, or `firefox-63.0-linux`
+  - when `product` is omitted, this `link` applies to tests across all browsers
+- `URL` is a bug URL; `URL` is non-optional unless a `label` is present.
+- `label` is a label to its tests; `label` is used at a test-level and do not
+  apply to subtests. When `label` is present in a link:
+  - `product`should be omitted
+  - `URL` is optional
+  - `Subtest name` is omitted
 - `Test name` is a filename, which is relative to the current directory. If it
   is `"*"` (note that asterisks must be quoted in YAML), the link will apply to
   all tests in the current directory and its subdirectories.
