@@ -22,7 +22,7 @@ Where
   - `{browser-name}[-{browser-version}[-{os}[-{os-version}]]]`
   - e.g. `chrome`, `safari-12`, or `firefox-63.0-linux`
   - when `product` is omitted, this `link` applies to tests across all browsers
-- `URL` is a bug URL; `URL` is non-optional unless a `label` is present.
+- `url` is a bug URL; `url` is non-optional unless a `label` is present.
 - `label` is a label to its tests; `label` is used at a test-level and do not
   apply to subtests. When `label` is present in a link:
   - `product`should be omitted
