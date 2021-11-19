@@ -25,7 +25,7 @@ Where
 - `url` is a bug URL; `url` is non-optional unless a `label` is present.
 - `label` is a label to its tests; `label` is used at a test-level and do not
   apply to subtests. When `label` is present in a link:
-  - `product`should be omitted
+  - `product` should be omitted
   - `url` is optional
   - `subtest` is omitted
 - `test` is a filename, which is relative to the current directory. If it
