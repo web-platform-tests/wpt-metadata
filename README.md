@@ -31,7 +31,7 @@ Where
 - `test` is a filename, which is relative to the current directory. If it
   is `"*"` (note that asterisks must be quoted in YAML), the link will apply to
   all tests in the current directory and its subdirectories.
-- `Test result status` is an optional field that records the WPT test result, as 
+- `status` is an optional field that records the WPT test result, as 
   [defined](https://github.com/web-platform-tests/wpt.fyi/blob/master/shared/statuses.go#L52) 
   in the wpt.fyi codebase. When the WPT version or the browser version 
   changes, this field could be used to indicate that a test is out-of-date. It is currently unused by tooling.
