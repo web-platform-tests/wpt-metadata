@@ -28,7 +28,7 @@ Where
   - `product`should be omitted
   - `url` is optional
   - `subtest` is omitted
-- `Test name` is a filename, which is relative to the current directory. If it
+- `test` is a filename, which is relative to the current directory. If it
   is `"*"` (note that asterisks must be quoted in YAML), the link will apply to
   all tests in the current directory and its subdirectories.
 - `Test result status` is an optional field that records the WPT test result, as 
