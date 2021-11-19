@@ -27,7 +27,7 @@ Where
   apply to subtests. When `label` is present in a link:
   - `product`should be omitted
   - `url` is optional
-  - `Subtest name` is omitted
+  - `subtest` is omitted
 - `Test name` is a filename, which is relative to the current directory. If it
   is `"*"` (note that asterisks must be quoted in YAML), the link will apply to
   all tests in the current directory and its subdirectories.
