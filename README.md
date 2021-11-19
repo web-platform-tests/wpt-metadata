@@ -7,8 +7,9 @@ YAML Link Format Specs:
 
 ```
 links:
-  - product: [product spec]
-    url: [URL]	
+  - product: [product spec] (optional)
+    url: [URL]
+    label: [Label]
     results:
     - test: [Test name] 
       subtest: [Subtest name] (optional)
@@ -20,10 +21,17 @@ Where
 - `product` is a browser name with an option of [product spec](https://github.com/web-platform-tests/wpt.fyi/blob/master/api/README.md)
   - `{browser-name}[-{browser-version}[-{os}[-{os-version}]]]`
   - e.g. `chrome`, `safari-12`, or `firefox-63.0-linux`
-- `Test name` is a filename, which is relative to the current directory. If it
+  - when `product` is omitted, this `link` applies to tests across all browsers
+- `url` is a bug URL; `url` is non-optional unless a `label` is present.
+- `label` is a label to its tests; `label` is used at a test-level and do not
+  apply to subtests. When `label` is present in a link:
+  - `product` should be omitted
+  - `url` is optional
+  - `subtest` is omitted
+- `test` is a filename, which is relative to the current directory. If it
   is `"*"` (note that asterisks must be quoted in YAML), the link will apply to
   all tests in the current directory and its subdirectories.
-- `Test result status` is an optional field that records the WPT test result, as 
+- `status` is an optional field that records the WPT test result, as 
   [defined](https://github.com/web-platform-tests/wpt.fyi/blob/master/shared/statuses.go#L52) 
   in the wpt.fyi codebase. When the WPT version or the browser version 
   changes, this field could be used to indicate that a test is out-of-date. It is currently unused by tooling.
