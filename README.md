@@ -26,7 +26,7 @@ Where
 - `label` is a label to its tests; `label` is used at a test-level and do not
   apply to subtests. When `label` is present in a link:
   - `product`should be omitted
-  - `URL` is optional
+  - `url` is optional
   - `Subtest name` is omitted
 - `Test name` is a filename, which is relative to the current directory. If it
   is `"*"` (note that asterisks must be quoted in YAML), the link will apply to
