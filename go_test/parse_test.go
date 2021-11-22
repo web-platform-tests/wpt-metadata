@@ -50,6 +50,9 @@ func TestParseMetadata(t *testing.T) {
 				_, err := url.ParseRequestURI(link.URL)
 				assert.Nil(t, err)
 				assert.Greater(t, len(link.Results), 0)
+				if link.Product.String() == "" {
+					checkTestLevelLinks(t, link)
+				}
 				checkDuplicationAcrossLinks(t, link, linkMap)
 				resultSet := mapset.NewSet()
 				for _, result := range link.Results {
@@ -93,4 +96,11 @@ func serializeStrings(val ...string) string {
 	}
 
 	return returnVal
+}
+
+func checkTestLevelLinks(t *testing.T, link shared.MetadataLink) {
+	// Subtest should be empty for a test-level link.
+	for _, result := range link.Results {
+		assert.Nil(t, result.SubtestName, fmt.Sprintf("subtest should be empty for a test-level link"))
+	}
 }
