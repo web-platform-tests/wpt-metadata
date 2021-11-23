@@ -46,14 +46,29 @@ func TestParseMetadata(t *testing.T) {
 			assert.Equal(t, 1, linkCount, "YML file should contain exactly one links: key")
 			assert.Greater(t, len(metadata.Links), 0)
 			linkMap := make(map[string]string)
+			labelSet := mapset.NewSet()
 			for _, link := range metadata.Links {
-				_, err := url.ParseRequestURI(link.URL)
-				assert.Nil(t, err)
-				assert.Greater(t, len(link.Results), 0)
+				// Check if it is a test-level link,
 				if link.Product.String() == "" {
 					checkTestLevelLinks(t, link)
 				}
+
+				if link.URL != "" {
+					_, err := url.ParseRequestURI(link.URL)
+					assert.Nil(t, err)
+				} else {
+					assert.True(t, link.Label != "", "url and label cannot both be empty.")
+				}
+
+				if link.Label != "" {
+					// Check duplicated labels.
+					assert.False(t, labelSet.Contains(link.Label), fmt.Sprintf("label %s already exists", link.Label))
+					labelSet.Add(link.Label)
+					assert.True(t, link.Product.String() == "", "label is present at the test-level only.")
+				}
 				checkDuplicationAcrossLinks(t, link, linkMap)
+
+				assert.Greater(t, len(link.Results), 0)
 				resultSet := mapset.NewSet()
 				for _, result := range link.Results {
 					assert.Greater(t, len(result.TestPath), 0)
