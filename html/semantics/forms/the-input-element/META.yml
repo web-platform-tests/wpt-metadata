@@ -1,49 +1,53 @@
 links:
-- product: safari
-  results:
-  - test: '*'
-  url: https://bugs.webkit.org/show_bug.cgi?id=119175
-- product: webkitgtk
-  results:
-  - test: '*'
-  url: https://bugs.webkit.org/show_bug.cgi?id=119175
-- product: webkitgtk
-  results:
-  - status: FAIL
-    test: type-change-state.html
-  url: https://bugs.webkit.org/show_bug.cgi?id=180645
-- product: firefox
-  results:
-  - subtest: keyword _charset_
-    test: hidden-charset-case-sensitive.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1670136
-- product: firefox
-  results:
-  - subtest: Radio buttons in an orphan tree should make a group
-    test: radio.html
-  - subtest: Radio buttons in different groups (because they have different form owners
-      or no form owner) do not affect each other's checkedness
-    test: radio.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1685968
-- product: chrome
-  results:
-  - test: datetime-local.html
-  url: https://crbug.com/521871
-- product: chrome
-  results:
-  - test: range.html
-  - test: type-change-state.html
-  url: https://bugs.chromium.org/p/chromium/issues/detail?id=1234420
-- product: firefox
-  results:
-  - subtest: Selecting texts across <input type=button> should not cancel selection
-    test: selection-pointer.html
-  - subtest: Selecting texts across <input type=color> should not cancel selection
-    test: selection-pointer.html
-  - subtest: Selecting texts across <input type=range> should not cancel selection
-    test: selection-pointer.html
-  - subtest: Selecting texts across <input type=reset> should not cancel selection
-    test: selection-pointer.html
-  - subtest: Selecting texts across <input type=submit> should not cancel selection
-    test: selection-pointer.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1738866
+    - product: safari
+      url: https://bugs.webkit.org/show_bug.cgi?id=119175
+      results:
+        - test: '*'
+    - product: webkitgtk
+      url: https://bugs.webkit.org/show_bug.cgi?id=119175
+      results:
+        - test: '*'
+    - product: webkitgtk
+      url: https://bugs.webkit.org/show_bug.cgi?id=180645
+      results:
+        - test: type-change-state.html
+          status: FAIL
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1670136
+      results:
+        - test: hidden-charset-case-sensitive.html
+          subtest: keyword _charset_
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1685968
+      results:
+        - test: radio.html
+          subtest: Radio buttons in an orphan tree should make a group
+        - test: radio.html
+          subtest: Radio buttons in different groups (because they have different form owners or no form owner) do not affect each other's checkedness
+    - product: chrome
+      url: https://crbug.com/521871
+      results:
+        - test: datetime-local.html
+    - product: chrome
+      url: https://bugs.chromium.org/p/chromium/issues/detail?id=1234420
+      results:
+        - test: range.html
+        - test: type-change-state.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1738866
+      results:
+        - test: selection-pointer.html
+          subtest: Selecting texts across <input type=button> should not cancel selection
+        - test: selection-pointer.html
+          subtest: Selecting texts across <input type=color> should not cancel selection
+        - test: selection-pointer.html
+          subtest: Selecting texts across <input type=range> should not cancel selection
+        - test: selection-pointer.html
+          subtest: Selecting texts across <input type=reset> should not cancel selection
+        - test: selection-pointer.html
+          subtest: Selecting texts across <input type=submit> should not cancel selection
+    - product: safari
+      url: https://bugs.webkit.org/show_bug.cgi?id=233721
+      results:
+        - test: input-stepdown.html
+        - test: input-stepup.html
