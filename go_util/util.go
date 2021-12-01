@@ -104,12 +104,12 @@ func deleteMetadata(testname string, metadata shared.Metadata) (shared.Metadata,
 			}
 		}
 		if len(deletedResults) > 0 {
-			deletedLink := shared.MetadataLink{Product: link.Product, URL: link.URL, Results: deletedResults}
+			deletedLink := shared.MetadataLink{Product: link.Product, URL: link.URL, Label: link.Label, Results: deletedResults}
 			deletedMetadataLinks = append(deletedMetadataLinks, deletedLink)
 		}
 
 		if len(newResults) > 0 {
-			newLink := shared.MetadataLink{Product: link.Product, URL: link.URL, Results: newResults}
+			newLink := shared.MetadataLink{Product: link.Product, URL: link.URL, Label: link.Label, Results: newResults}
 			newMetadataLinks = append(newMetadataLinks, newLink)
 		}
 	}
