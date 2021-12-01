@@ -66,3 +66,18 @@ links:
   - subtest: Check that dynamic-range is 'standard' or 'high', but not both
     test: dynamic-range.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1721468
+- product: firefox
+  results:
+  - subtest: 'Should be parseable in a CSS stylesheet: ''(video-dynamic-range: standard)'''
+    test: dynamic-range.html
+  - subtest: 'Should be parseable in a CSS stylesheet: ''(video-dynamic-range: high)'''
+    test: dynamic-range.html
+  - subtest: 'Should be parseable in JS: ''(video-dynamic-range: standard)'''
+    test: dynamic-range.html
+  - subtest: 'Should be parseable in JS: ''(video-dynamic-range: high)'''
+    test: dynamic-range.html
+  - subtest: Check that dynamic-range always matches 'standard'
+    test: dynamic-range.html
+  - subtest: Check that video-dynamic-range always matches 'standard'
+    test: dynamic-range.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1742778

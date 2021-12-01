@@ -3,10 +3,10 @@ links:
       results:
         - test: canvas-aspect-ratio.html
         - test: content-aspect-ratio.html
-        - test: img-aspect-ratio-lazy.tentative.html
         - test: img-aspect-ratio.html
         - test: picture-aspect-ratio.html
         - test: video-aspect-ratio.html
+        - test: img-aspect-ratio-lazy.html
     - product: firefox
       url: https://bugzilla.mozilla.org/show_bug.cgi?id=1689425
       results:
@@ -64,3 +64,8 @@ links:
         - test: img-aspect-ratio.html
           subtest: 'Loaded images test: Error image with width, height and alt attributes'
         - test: img-aspect-ratio.html
+    - product: safari
+      url: https://bugs.webkit.org/show_bug.cgi?id=206161
+      results:
+        - test: img-aspect-ratio.html
+          subtest: 'Loaded images test: <img> with width and height attributes, but not equal to the original aspect ratio'
