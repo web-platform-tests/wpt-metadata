@@ -1,5 +1,6 @@
 links:
-    - label: interop-2021
+    - url: ""
+      label: interop-2021
       results:
         - test: canvas-aspect-ratio.html
         - test: content-aspect-ratio.html
@@ -64,3 +65,8 @@ links:
         - test: img-aspect-ratio.html
           subtest: 'Loaded images test: Error image with width, height and alt attributes'
         - test: img-aspect-ratio.html
+    - product: safari
+      url: https://bugs.webkit.org/show_bug.cgi?id=206161
+      results:
+        - test: img-aspect-ratio.html
+          subtest: 'Loaded images test: <img> with width and height attributes, but not equal to the original aspect ratio'
