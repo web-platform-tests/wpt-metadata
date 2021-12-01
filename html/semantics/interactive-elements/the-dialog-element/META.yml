@@ -1,22 +1,37 @@
 links:
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1676457
-      results:
-        - test: centering.html
-          subtest: 'vertical-rl: tall viewport'
-        - test: centering.html
-          subtest: 'vertical-lr: tall viewport'
-        - test: centering.html
-          subtest: 'horizontal-tb (container vertical-rl): tall viewport'
-        - test: centering.html
-          subtest: 'vertical-rl (container horizontal-tb) (dialog vertical-rl): tall viewport'
-    - product: chrome
-      url: https://crbug.com/1240701
-      results:
-        - test: modal-dialog-display-contents.html
-          subtest: Harness status
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1726608
-      results:
-        - test: modal-dialog-in-replaced-renderer.html
-        - test: modal-dialog-in-table-column.html
+- product: firefox
+  results:
+  - subtest: 'vertical-rl: tall viewport'
+    test: centering.html
+  - subtest: 'vertical-lr: tall viewport'
+    test: centering.html
+  - subtest: 'horizontal-tb (container vertical-rl): tall viewport'
+    test: centering.html
+  - subtest: 'vertical-rl (container horizontal-tb) (dialog vertical-rl): tall viewport'
+    test: centering.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1676457
+- product: chrome
+  results:
+  - subtest: Harness status
+    test: modal-dialog-display-contents.html
+  url: https://crbug.com/1240701
+- product: firefox
+  results:
+  - test: modal-dialog-in-replaced-renderer.html
+  - test: modal-dialog-in-table-column.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1726608
+- product: firefox
+  results:
+  - subtest: Modal dialog in the main document marks outer nodes as inert. All contents
+      of the outer iframe are also marked as inert.
+    test: inertness-with-modal-dialogs-and-iframes.html
+  - subtest: Modal dialogs in the main document and inner iframe mark outer nodes
+      as inert. All contents of the outer iframe are also marked as inert.
+    test: inertness-with-modal-dialogs-and-iframes.html
+  - subtest: Modal dialogs in the main document and outer iframe mark outer nodes
+      as inert. All contents of the outer iframe are also marked as inert.
+    test: inertness-with-modal-dialogs-and-iframes.html
+  - subtest: Modal dialogs in the main document and both iframes mark outer nodes
+      as inert. All contents of the outer iframe are also marked as inert.
+    test: inertness-with-modal-dialogs-and-iframes.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1743792
