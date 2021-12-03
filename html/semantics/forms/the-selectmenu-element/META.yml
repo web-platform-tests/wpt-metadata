@@ -117,3 +117,12 @@ links:
   - subtest: Test that the UA provided shadow root can be replaced
     test: selectmenu-shadow-root-replacement.tentative.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1741331
+- product: firefox
+  results:
+  - subtest: HTMLOptionElements (and not other element types) should receive option
+      controller code
+    test: selectmenu-parts-structure.tentative.html
+  - subtest: To receive option part controller code, an option must be a descendant
+      of the listbox part in a flat tree traversal
+    test: selectmenu-parts-structure.tentative.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1744211
