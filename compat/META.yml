@@ -1,20 +1,23 @@
 links:
-- product: chrome
-  results:
-  - test: webkit-gradient-comma.html
-  url: https://crbug.com/1010278
-- product: firefox
-  results:
-  - subtest: webkitMaskBoxImage found on CSSStyleDeclaration
-    test: css-style-declaration-alias-enumeration.html
-  - subtest: webkitMaskBoxImageOutset found on CSSStyleDeclaration
-    test: css-style-declaration-alias-enumeration.html
-  - subtest: webkitMaskBoxImageRepeat found on CSSStyleDeclaration
-    test: css-style-declaration-alias-enumeration.html
-  - subtest: webkitMaskBoxImageSlice found on CSSStyleDeclaration
-    test: css-style-declaration-alias-enumeration.html
-  - subtest: webkitMaskBoxImageSource found on CSSStyleDeclaration
-    test: css-style-declaration-alias-enumeration.html
-  - subtest: webkitMaskBoxImageWidth found on CSSStyleDeclaration
-    test: css-style-declaration-alias-enumeration.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1733691
+    - product: chrome
+      url: https://crbug.com/1010278
+      results:
+        - test: webkit-gradient-comma.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1733691
+      results:
+        - test: css-style-declaration-alias-enumeration.html
+          subtest: webkitMaskBoxImage found on CSSStyleDeclaration
+        - test: css-style-declaration-alias-enumeration.html
+          subtest: webkitMaskBoxImageOutset found on CSSStyleDeclaration
+        - test: css-style-declaration-alias-enumeration.html
+          subtest: webkitMaskBoxImageRepeat found on CSSStyleDeclaration
+        - test: css-style-declaration-alias-enumeration.html
+          subtest: webkitMaskBoxImageSlice found on CSSStyleDeclaration
+        - test: css-style-declaration-alias-enumeration.html
+          subtest: webkitMaskBoxImageSource found on CSSStyleDeclaration
+        - test: css-style-declaration-alias-enumeration.html
+          subtest: webkitMaskBoxImageWidth found on CSSStyleDeclaration
+    - label: label-test
+      results:
+        - test: historical.html
