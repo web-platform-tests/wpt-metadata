@@ -543,3 +543,14 @@ links:
   - subtest: navigator.userAgentData is exposed.
     test: navigator_user_agent.https.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1741008
+- product: firefox
+  results:
+  - subtest: the windowControlsOverlay object should exist on the navigator object
+    test: navigator-window-controls-overlay.html
+  - subtest: visible should be a member of the windowControlsOverlay object
+    test: navigator-window-controls-overlay.html
+  - subtest: visible should be false
+    test: navigator-window-controls-overlay.html
+  - subtest: ongeometrychange should be a member of the windowControlsOverlay object
+    test: navigator-window-controls-overlay.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1745133
