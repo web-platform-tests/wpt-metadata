@@ -1,0 +1,32 @@
+links:
+- product: firefox
+  results:
+  - subtest: AbortController abort() should fire event synchronously
+    test: event.any.html
+  - subtest: AbortController abort(reason) should set signal.reason
+    test: event.any.html
+  - subtest: aborting AbortController without reason creates an "AbortError" DOMException
+    test: event.any.html
+  - subtest: AbortController abort(undefined) creates an "AbortError" DOMException
+    test: event.any.html
+  - subtest: AbortController abort(null) should set signal.reason
+    test: event.any.html
+  - subtest: static aborting signal should have right properties
+    test: event.any.html
+  - subtest: static aborting signal with reason should set signal.reason
+    test: event.any.html
+  - subtest: AbortController abort() should fire event synchronously
+    test: event.any.worker.html
+  - subtest: AbortController abort(reason) should set signal.reason
+    test: event.any.worker.html
+  - subtest: aborting AbortController without reason creates an "AbortError" DOMException
+    test: event.any.worker.html
+  - subtest: AbortController abort(undefined) creates an "AbortError" DOMException
+    test: event.any.worker.html
+  - subtest: AbortController abort(null) should set signal.reason
+    test: event.any.worker.html
+  - subtest: static aborting signal should have right properties
+    test: event.any.worker.html
+  - subtest: static aborting signal with reason should set signal.reason
+    test: event.any.worker.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1745122
