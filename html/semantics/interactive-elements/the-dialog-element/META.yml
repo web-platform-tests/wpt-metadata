@@ -1,122 +1,123 @@
 links:
-- label: interop-2022-rfc
-  results:
-  - test: abspos-dialog-layout.html
-  - test: backdrop-descendant-selector.html
-  - test: backdrop-does-not-inherit.html
-  - test: backdrop-dynamic-display-none.html
-  - test: backdrop-dynamic-style-change.html
-  - test: backdrop-in-flow.html
-  - test: backdrop-receives-element-events.html
-  - test: backdrop-stacking-order.html
-  - test: centering.html
-  - test: closed-dialog-does-not-block-mouse-events.html
-  - test: dialog-audio-video-crash.html
-  - test: dialog-autofocus-just-once.html
-  - test: dialog-autofocus-multiple-times.html
-  - test: dialog-autofocus.html
-  - test: dialog-cancel-events.html
-  - test: dialog-cancel-preventDefault.html
-  - test: dialog-cancel-with-input.html
-  - test: dialog-cancel-with-select.html
-  - test: dialog-canceling.html
-  - test: dialog-close-event-async.html
-  - test: dialog-close-event.html
-  - test: dialog-close.html
-  - test: dialog-enabled.html
-  - test: dialog-focus-shadow-delegatesfocus.html
-  - test: dialog-focus-shadow.html
-  - test: dialog-focusing-steps-disconnected.html
-  - test: dialog-focusing-steps-inert.html
-  - test: dialog-focusing-steps-prevent-autofocus.html
-  - test: dialog-form-submission.html
-  - test: dialog-inert.tentative.html
-  - test: dialog-keydown-preventDefault.html
-  - test: dialog-not-in-tree-crash.html
-  - test: dialog-open-2.html
-  - test: dialog-open.html
-  - test: dialog-return-value.html
-  - test: dialog-show-modal-inert-crash.html
-  - test: dialog-show-modal.html
-  - test: dialog-showModal-remove.html
-  - test: dialog-showModal.html
-  - test: dialogs-with-no-backdrop.html
-  - test: dont-share-style-to-top-layer.html
-  - test: element-removed-from-top-layer-has-original-position.html
-  - test: focus-after-close.html
-  - test: inert-does-not-match-disabled-selector.html
-  - test: inert-focus-in-frames.html
-  - test: inert-inlines.html
-  - test: inert-label-focus.html
-  - test: inert-node-is-not-highlighted.html
-  - test: inert-node-is-uneditable.html
-  - test: inert-node-is-unfocusable.html
-  - test: inert-node-is-unselectable.html
-  - test: inertness-with-modal-dialogs-and-iframes.html
-  - test: modal-dialog-ancestor-is-inert.html
-  - test: modal-dialog-backdrop.html
-  - test: modal-dialog-blocks-mouse-events.html
-  - test: modal-dialog-display-contents.html
-  - test: modal-dialog-generated-content.html
-  - test: modal-dialog-in-replaced-renderer.html
-  - test: modal-dialog-in-table-column.html
-  - test: modal-dialog-sibling.html
-  - test: remove-dialog-should-unblock-document.html
-  - test: removed-element-is-removed-from-top-layer.html
-  - test: show-modal-focusing-steps.html
-  - test: top-layer-containing-block.html
-  - test: top-layer-display-none.html
-  - test: top-layer-nesting.html
-  - test: top-layer-parent-clip.html
-  - test: top-layer-parent-filter.html
-  - test: top-layer-parent-mask.html
-  - test: top-layer-parent-opacity.html
-  - test: top-layer-parent-overflow-clip.html
-  - test: top-layer-parent-overflow-hidden.html
-  - test: top-layer-parent-overflow-scroll.html
-  - test: top-layer-parent-transform.html
-  - test: top-layer-stacking-correct-order-remove-readd.html
-  - test: top-layer-stacking-dynamic.html
-  - test: top-layer-stacking.html
-- product: firefox
-  results:
-  - subtest: 'vertical-rl: tall viewport'
-    test: centering.html
-  - subtest: 'vertical-lr: tall viewport'
-    test: centering.html
-  - subtest: 'horizontal-tb (container vertical-rl): tall viewport'
-    test: centering.html
-  - subtest: 'vertical-rl (container horizontal-tb) (dialog vertical-rl): tall viewport'
-    test: centering.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1676457
-- product: chrome
-  results:
-  - subtest: Harness status
-    test: modal-dialog-display-contents.html
-  url: https://crbug.com/1240701
-- product: firefox
-  results:
-  - test: modal-dialog-in-replaced-renderer.html
-  - test: modal-dialog-in-table-column.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1726608
-- product: firefox
-  results:
-  - subtest: Modal dialog in the main document marks outer nodes as inert. All contents
-      of the outer iframe are also marked as inert.
-    test: inertness-with-modal-dialogs-and-iframes.html
-  - subtest: Modal dialogs in the main document and inner iframe mark outer nodes
-      as inert. All contents of the outer iframe are also marked as inert.
-    test: inertness-with-modal-dialogs-and-iframes.html
-  - subtest: Modal dialogs in the main document and outer iframe mark outer nodes
-      as inert. All contents of the outer iframe are also marked as inert.
-    test: inertness-with-modal-dialogs-and-iframes.html
-  - subtest: Modal dialogs in the main document and both iframes mark outer nodes
-      as inert. All contents of the outer iframe are also marked as inert.
-    test: inertness-with-modal-dialogs-and-iframes.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1743792
-- product: firefox
-  results:
-  - test: inert-inlines.html
-  - test: inert-label-focus.html
-  - test: inert-node-is-uneditable.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1744879
+    - label: interop-2022-rfc
+      results:
+        - test: abspos-dialog-layout.html
+        - test: backdrop-descendant-selector.html
+        - test: backdrop-does-not-inherit.html
+        - test: backdrop-dynamic-display-none.html
+        - test: backdrop-dynamic-style-change.html
+        - test: backdrop-in-flow.html
+        - test: backdrop-receives-element-events.html
+        - test: backdrop-stacking-order.html
+        - test: centering.html
+        - test: closed-dialog-does-not-block-mouse-events.html
+        - test: dialog-audio-video-crash.html
+        - test: dialog-autofocus-just-once.html
+        - test: dialog-autofocus-multiple-times.html
+        - test: dialog-autofocus.html
+        - test: dialog-cancel-events.html
+        - test: dialog-cancel-preventDefault.html
+        - test: dialog-cancel-with-input.html
+        - test: dialog-cancel-with-select.html
+        - test: dialog-canceling.html
+        - test: dialog-close-event-async.html
+        - test: dialog-close-event.html
+        - test: dialog-close.html
+        - test: dialog-enabled.html
+        - test: dialog-focus-shadow-delegatesfocus.html
+        - test: dialog-focus-shadow.html
+        - test: dialog-focusing-steps-disconnected.html
+        - test: dialog-focusing-steps-inert.html
+        - test: dialog-focusing-steps-prevent-autofocus.html
+        - test: dialog-form-submission.html
+        - test: dialog-inert.tentative.html
+        - test: dialog-keydown-preventDefault.html
+        - test: dialog-not-in-tree-crash.html
+        - test: dialog-open-2.html
+        - test: dialog-open.html
+        - test: dialog-return-value.html
+        - test: dialog-show-modal-inert-crash.html
+        - test: dialog-show-modal.html
+        - test: dialog-showModal-remove.html
+        - test: dialog-showModal.html
+        - test: dialogs-with-no-backdrop.html
+        - test: dont-share-style-to-top-layer.html
+        - test: element-removed-from-top-layer-has-original-position.html
+        - test: focus-after-close.html
+        - test: inert-does-not-match-disabled-selector.html
+        - test: inert-focus-in-frames.html
+        - test: inert-inlines.html
+        - test: inert-label-focus.html
+        - test: inert-node-is-not-highlighted.html
+        - test: inert-node-is-uneditable.html
+        - test: inert-node-is-unfocusable.html
+        - test: inert-node-is-unselectable.html
+        - test: inertness-with-modal-dialogs-and-iframes.html
+        - test: modal-dialog-ancestor-is-inert.html
+        - test: modal-dialog-backdrop.html
+        - test: modal-dialog-blocks-mouse-events.html
+        - test: modal-dialog-display-contents.html
+        - test: modal-dialog-generated-content.html
+        - test: modal-dialog-in-replaced-renderer.html
+        - test: modal-dialog-in-table-column.html
+        - test: modal-dialog-sibling.html
+        - test: remove-dialog-should-unblock-document.html
+        - test: removed-element-is-removed-from-top-layer.html
+        - test: show-modal-focusing-steps.html
+        - test: top-layer-containing-block.html
+        - test: top-layer-display-none.html
+        - test: top-layer-nesting.html
+        - test: top-layer-parent-clip.html
+        - test: top-layer-parent-filter.html
+        - test: top-layer-parent-mask.html
+        - test: top-layer-parent-opacity.html
+        - test: top-layer-parent-overflow-clip.html
+        - test: top-layer-parent-overflow-hidden.html
+        - test: top-layer-parent-overflow-scroll.html
+        - test: top-layer-parent-transform.html
+        - test: top-layer-stacking-correct-order-remove-readd.html
+        - test: top-layer-stacking-dynamic.html
+        - test: top-layer-stacking.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1676457
+      results:
+        - test: centering.html
+          subtest: 'vertical-rl: tall viewport'
+        - test: centering.html
+          subtest: 'vertical-lr: tall viewport'
+        - test: centering.html
+          subtest: 'horizontal-tb (container vertical-rl): tall viewport'
+        - test: centering.html
+          subtest: 'vertical-rl (container horizontal-tb) (dialog vertical-rl): tall viewport'
+    - product: chrome
+      url: https://crbug.com/1240701
+      results:
+        - test: modal-dialog-display-contents.html
+          subtest: Harness status
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1726608
+      results:
+        - test: modal-dialog-in-replaced-renderer.html
+        - test: modal-dialog-in-table-column.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1743792
+      results:
+        - test: inertness-with-modal-dialogs-and-iframes.html
+          subtest: Modal dialog in the main document marks outer nodes as inert. All contents of the outer iframe are also marked as inert.
+        - test: inertness-with-modal-dialogs-and-iframes.html
+          subtest: Modal dialogs in the main document and inner iframe mark outer nodes as inert. All contents of the outer iframe are also marked as inert.
+        - test: inertness-with-modal-dialogs-and-iframes.html
+          subtest: Modal dialogs in the main document and outer iframe mark outer nodes as inert. All contents of the outer iframe are also marked as inert.
+        - test: inertness-with-modal-dialogs-and-iframes.html
+          subtest: Modal dialogs in the main document and both iframes mark outer nodes as inert. All contents of the outer iframe are also marked as inert.
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1744879
+      results:
+        - test: inert-inlines.html
+        - test: inert-label-focus.html
+        - test: inert-node-is-uneditable.html
+    - product: safari
+      url: https://bugs.webkit.org/show_bug.cgi?id=229315
+      results:
+        - test: modal-dialog-in-table-column.html
+        - test: modal-dialog-in-replaced-renderer.html
