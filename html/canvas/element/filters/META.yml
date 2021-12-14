@@ -11,3 +11,18 @@ links:
   - subtest: Test pixels on CanvasFilter() componentTransfer with identity type
     test: 2d.filter.canvasFilterObject.componentTransfer.identity.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1712970
+- product: firefox
+  results:
+  - subtest: Test the functionality of ColorMatrix filters in CanvasFilter objects
+    test: 2d.filter.canvasFilterObject.colorMatrix.html
+  - subtest: Test pixels on CanvasFilter() componentTransfer with discrete type
+    test: 2d.filter.canvasFilterObject.componentTransfer.discrete.html
+  - subtest: Test pixels on CanvasFilter() componentTransfer with gamma type
+    test: 2d.filter.canvasFilterObject.componentTransfer.gamma.html
+  - subtest: Test pixels on CanvasFilter() componentTransfer with linear type
+    test: 2d.filter.canvasFilterObject.componentTransfer.linear.html
+  - subtest: Test pixels on CanvasFilter() componentTransfer with table type
+    test: 2d.filter.canvasFilterObject.componentTransfer.table.html
+  - subtest: Test exceptions on CanvasFilter() convolveMatrix
+    test: 2d.filter.canvasFilterObject.convolveMatrix.exceptions.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1745919
