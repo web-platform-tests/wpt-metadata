@@ -1,61 +1,76 @@
 links:
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1646754
-      results:
-        - test: 2d.text.measure.advances.html
-          subtest: Testing width advances
-        - test: 2d.text.measure.fontBoundingBox.html
-          subtest: Testing fontBoundingBox
-        - test: 2d.text.measure.baselines.html
-          subtest: Testing baselines
-        - test: 2d.text.measure.emHeights.html
-          subtest: Testing emHeights
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1666598
-      results:
-        - test: 2d.text.measure.fontBoundingBox.ahem.html
-          subtest: Testing fontBoundingBox for font ahem
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1691665
-      results:
-        - test: 2d.text.drawing.style.fontKerning.html
-          subtest: Testing basic functionalities of fontKerning for canvas
-        - test: 2d.text.drawing.style.fontKerning.with.uppercase.html
-          subtest: Testing basic functionalities of fontKerning for canvas
-        - test: 2d.text.drawing.style.fontVariant.settings.html
-          subtest: Testing basic functionalities of fontKerning for canvas
-        - test: 2d.text.drawing.style.spacing.html
-          subtest: Testing letter spacing and word spacing
-        - test: 2d.text.drawing.style.textRendering.settings.html
-          subtest: Testing basic functionalities of textRendering in Canvas
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1700289
-      results:
-        - test: 2d.text.measure.boundingBox.direction.html
-          subtest: Measurement should follow text direction
-    - product: chrome
-      url: https://bugs.chromium.org/p/chromium/issues/detail?id=1230185
-      results:
-        - test: 2d.text.draw.fontface.notinpage.html
-    - product: webkitgtk
-      url: https://bugs.webkit.org/show_bug.cgi?id=230990
-      results:
-        - test: 2d.text.drawing.style.fontKerning.html
-          subtest: Testing basic functionalities of fontKerning for canvas
-        - test: 2d.text.drawing.style.fontVariant.settings.html
-          subtest: Testing basic functionalities of fontKerning for canvas
-        - test: 2d.text.drawing.style.textRendering.settings.html
-          subtest: Testing basic functionalities of textRendering in Canvas
-        - test: 2d.text.drawing.style.fontKerning.with.uppercase.html
-          subtest: Testing basic functionalities of fontKerning for canvas
-    - product: safari
-      url: https://bugs.webkit.org/show_bug.cgi?id=230990
-      results:
-        - test: 2d.text.drawing.style.fontKerning.html
-          subtest: Testing basic functionalities of fontKerning for canvas
-        - test: 2d.text.drawing.style.fontVariant.settings.html
-          subtest: Testing basic functionalities of fontKerning for canvas
-        - test: 2d.text.drawing.style.fontKerning.with.uppercase.html
-          subtest: Testing basic functionalities of fontKerning for canvas
-        - test: 2d.text.drawing.style.textRendering.settings.html
-          subtest: Testing basic functionalities of textRendering in Canvas
+- product: firefox
+  results:
+  - subtest: Testing width advances
+    test: 2d.text.measure.advances.html
+  - subtest: Testing fontBoundingBox
+    test: 2d.text.measure.fontBoundingBox.html
+  - subtest: Testing baselines
+    test: 2d.text.measure.baselines.html
+  - subtest: Testing emHeights
+    test: 2d.text.measure.emHeights.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1646754
+- product: firefox
+  results:
+  - subtest: Testing fontBoundingBox for font ahem
+    test: 2d.text.measure.fontBoundingBox.ahem.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1666598
+- product: firefox
+  results:
+  - subtest: Testing basic functionalities of fontKerning for canvas
+    test: 2d.text.drawing.style.fontKerning.html
+  - subtest: Testing basic functionalities of fontKerning for canvas
+    test: 2d.text.drawing.style.fontKerning.with.uppercase.html
+  - subtest: Testing basic functionalities of fontKerning for canvas
+    test: 2d.text.drawing.style.fontVariant.settings.html
+  - subtest: Testing letter spacing and word spacing
+    test: 2d.text.drawing.style.spacing.html
+  - subtest: Testing basic functionalities of textRendering in Canvas
+    test: 2d.text.drawing.style.textRendering.settings.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1691665
+- product: firefox
+  results:
+  - subtest: Measurement should follow text direction
+    test: 2d.text.measure.boundingBox.direction.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1700289
+- product: chrome
+  results:
+  - test: 2d.text.draw.fontface.notinpage.html
+  url: https://bugs.chromium.org/p/chromium/issues/detail?id=1230185
+- product: webkitgtk
+  results:
+  - subtest: Testing basic functionalities of fontKerning for canvas
+    test: 2d.text.drawing.style.fontKerning.html
+  - subtest: Testing basic functionalities of fontKerning for canvas
+    test: 2d.text.drawing.style.fontVariant.settings.html
+  - subtest: Testing basic functionalities of textRendering in Canvas
+    test: 2d.text.drawing.style.textRendering.settings.html
+  - subtest: Testing basic functionalities of fontKerning for canvas
+    test: 2d.text.drawing.style.fontKerning.with.uppercase.html
+  url: https://bugs.webkit.org/show_bug.cgi?id=230990
+- product: safari
+  results:
+  - subtest: Testing basic functionalities of fontKerning for canvas
+    test: 2d.text.drawing.style.fontKerning.html
+  - subtest: Testing basic functionalities of fontKerning for canvas
+    test: 2d.text.drawing.style.fontVariant.settings.html
+  - subtest: Testing basic functionalities of fontKerning for canvas
+    test: 2d.text.drawing.style.fontKerning.with.uppercase.html
+  - subtest: Testing basic functionalities of textRendering in Canvas
+    test: 2d.text.drawing.style.textRendering.settings.html
+  url: https://bugs.webkit.org/show_bug.cgi?id=230990
+- product: firefox
+  results:
+  - subtest: Set letter spacing and word spacing to font dependent value and verify
+      it works after font change.
+    test: 2d.text.drawing.style.letterSpacing.change.font.html
+  - subtest: Testing letter spacing and word spacing
+    test: 2d.text.drawing.style.letterSpacing.measure.html
+  - subtest: Testing letter spacing and word spacing with nonfinite inputs
+    test: 2d.text.drawing.style.nonfinite.spacing.html
+  - subtest: Set word spacing and word spacing to font dependent value and verify
+      it works after font change.
+    test: 2d.text.drawing.style.wordSpacing.change.font.html
+  - subtest: Testing if word spacing is working properly
+    test: 2d.text.drawing.style.wordSpacing.measure.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1745919
