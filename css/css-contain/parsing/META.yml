@@ -1,32 +1,38 @@
 links:
-- product: firefox
-  results:
-  - subtest: Property contain value 'style'
-    test: contain-computed.html
-  - subtest: Property contain value 'style paint'
-    test: contain-computed.html
-  - subtest: Property contain value 'layout style paint'
-    test: contain-computed.html
-  - subtest: Property contain value 'size layout style paint'
-    test: contain-computed.html
-  - subtest: Property contain value 'size layout paint'
-    test: contain-computed.html
-  - subtest: Property contain value 'layout paint'
-    test: contain-computed.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1672669
-- product: firefox
-  results:
-  - subtest: Property contain value 'style layout paint'
-    test: contain-computed.html
-  - subtest: Property contain value 'size style layout paint'
-    test: contain-computed.html
-  - subtest: e.style['contain'] = "style" should set the property value
-    test: contain-valid.html
-  - subtest: e.style['contain'] = "paint style" should set the property value
-    test: contain-valid.html
-  - subtest: e.style['contain'] = "layout style paint" should set the property value
-    test: contain-valid.html
-  - subtest: e.style['contain'] = "layout paint style size" should set the property
-      value
-    test: contain-valid.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1744309
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1672669
+      results:
+        - test: contain-computed.html
+          subtest: Property contain value 'style'
+        - test: contain-computed.html
+          subtest: Property contain value 'style paint'
+        - test: contain-computed.html
+          subtest: Property contain value 'layout style paint'
+        - test: contain-computed.html
+          subtest: Property contain value 'size layout style paint'
+        - test: contain-computed.html
+          subtest: Property contain value 'size layout paint'
+        - test: contain-computed.html
+          subtest: Property contain value 'layout paint'
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1744309
+      results:
+        - test: contain-computed.html
+          subtest: Property contain value 'style layout paint'
+        - test: contain-computed.html
+          subtest: Property contain value 'size style layout paint'
+        - test: contain-valid.html
+          subtest: e.style['contain'] = "style" should set the property value
+        - test: contain-valid.html
+          subtest: e.style['contain'] = "paint style" should set the property value
+        - test: contain-valid.html
+          subtest: e.style['contain'] = "layout style paint" should set the property value
+        - test: contain-valid.html
+          subtest: e.style['contain'] = "layout paint style size" should set the property value
+    - product: chrome
+      url: https://crbug.com/1146092
+      results:
+        - test: contain-valid.html
+          subtest: e.style['contain'] = "inline-size" should set the property value
+        - test: contain-valid.html
+          subtest: e.style['contain'] = "layout inline-size" should set the property value
