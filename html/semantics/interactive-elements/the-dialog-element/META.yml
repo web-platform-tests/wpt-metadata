@@ -78,6 +78,16 @@ links:
         - test: top-layer-stacking-correct-order-remove-readd.html
         - test: top-layer-stacking-dynamic.html
         - test: top-layer-stacking.html
+        - test: top-layer-position.html
+        - test: non-modal-dialog-does-not-block-mouse-events.html
+        - test: non-modal-dialog-layout.html
+        - test: simulated-click-inert.html
+        - test: submit-dialog-close-event.html
+        - test: synthetic-click-inert.html
+        - test: top-layer-position-static.html
+        - test: modal-dialog-scroll-height.html
+        - test: multiple-centered-dialogs.html
+        - test: top-layer-position-relative.html
     - product: firefox
       url: https://bugzilla.mozilla.org/show_bug.cgi?id=1676457
       results:
@@ -116,6 +126,18 @@ links:
         - test: inert-inlines.html
         - test: inert-label-focus.html
         - test: inert-node-is-uneditable.html
+    - product: safari
+      url: https://bugs.webkit.org/show_bug.cgi?id=231292
+      results:
+        - test: top-layer-parent-transform.html
+        - test: top-layer-stacking.html
+        - test: top-layer-parent-overflow-clip.html
+        - test: top-layer-containing-block.html
+        - test: top-layer-parent-overflow-scroll.html
+    - product: safari
+      url: https://bugs.webkit.org/show_bug.cgi?id=233072
+      results:
+        - test: backdrop-receives-element-events.html
     - product: safari
       url: https://bugs.webkit.org/show_bug.cgi?id=229315
       results:
