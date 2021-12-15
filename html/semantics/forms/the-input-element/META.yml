@@ -55,5 +55,201 @@ links:
 - product: firefox
   results:
   - subtest: Test showPicker() called from cross-origin iframe 1
-    test: show-picker-cross-origin-iframe.tentative.html
+    test: show-picker-cross-origin-iframe.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1744846
+- product: firefox
+  results:
+  - subtest: Test showPicker() called from cross-origin iframe 1
+    test: show-picker-cross-origin-iframe.html
+  - subtest: input[type=button] showPicker() requires a user gesture
+    test: show-picker.html
+  - subtest: input[type=checkbox] showPicker() requires a user gesture
+    test: show-picker.html
+  - subtest: input[type=color] showPicker() requires a user gesture
+    test: show-picker.html
+  - subtest: input[type=date] showPicker() requires a user gesture
+    test: show-picker.html
+  - subtest: input[type=datetime-local] showPicker() requires a user gesture
+    test: show-picker.html
+  - subtest: input[type=email] showPicker() requires a user gesture
+    test: show-picker.html
+  - subtest: input[type=file] showPicker() requires a user gesture
+    test: show-picker.html
+  - subtest: input[type=hidden] showPicker() requires a user gesture
+    test: show-picker.html
+  - subtest: input[type=image] showPicker() requires a user gesture
+    test: show-picker.html
+  - subtest: input[type=month] showPicker() requires a user gesture
+    test: show-picker.html
+  - subtest: input[type=number] showPicker() requires a user gesture
+    test: show-picker.html
+  - subtest: input[type=password] showPicker() requires a user gesture
+    test: show-picker.html
+  - subtest: input[type=radio] showPicker() requires a user gesture
+    test: show-picker.html
+  - subtest: input[type=range] showPicker() requires a user gesture
+    test: show-picker.html
+  - subtest: input[type=reset] showPicker() requires a user gesture
+    test: show-picker.html
+  - subtest: input[type=search] showPicker() requires a user gesture
+    test: show-picker.html
+  - subtest: input[type=submit] showPicker() requires a user gesture
+    test: show-picker.html
+  - subtest: input[type=tel] showPicker() requires a user gesture
+    test: show-picker.html
+  - subtest: input[type=text] showPicker() requires a user gesture
+    test: show-picker.html
+  - subtest: input[type=time] showPicker() requires a user gesture
+    test: show-picker.html
+  - subtest: input[type=url] showPicker() requires a user gesture
+    test: show-picker.html
+  - subtest: input[type=week] showPicker() requires a user gesture
+    test: show-picker.html
+  - subtest: input[type=button] showPicker() does not throw when user activation is
+      active
+    test: show-picker.html
+  - subtest: input[type=checkbox] showPicker() does not throw when user activation
+      is active
+    test: show-picker.html
+  - subtest: input[type=color] showPicker() does not throw when user activation is
+      active
+    test: show-picker.html
+  - subtest: input[type=date] showPicker() does not throw when user activation is
+      active
+    test: show-picker.html
+  - subtest: input[type=datetime-local] showPicker() does not throw when user activation
+      is active
+    test: show-picker.html
+  - subtest: input[type=email] showPicker() does not throw when user activation is
+      active
+    test: show-picker.html
+  - subtest: input[type=file] showPicker() does not throw when user activation is
+      active
+    test: show-picker.html
+  - subtest: input[type=hidden] showPicker() does not throw when user activation is
+      active
+    test: show-picker.html
+  - subtest: input[type=image] showPicker() does not throw when user activation is
+      active
+    test: show-picker.html
+  - subtest: input[type=month] showPicker() does not throw when user activation is
+      active
+    test: show-picker.html
+  - subtest: input[type=number] showPicker() does not throw when user activation is
+      active
+    test: show-picker.html
+  - subtest: input[type=password] showPicker() does not throw when user activation
+      is active
+    test: show-picker.html
+  - subtest: input[type=radio] showPicker() does not throw when user activation is
+      active
+    test: show-picker.html
+  - subtest: input[type=range] showPicker() does not throw when user activation is
+      active
+    test: show-picker.html
+  - subtest: input[type=reset] showPicker() does not throw when user activation is
+      active
+    test: show-picker.html
+  - subtest: input[type=search] showPicker() does not throw when user activation is
+      active
+    test: show-picker.html
+  - subtest: input[type=submit] showPicker() does not throw when user activation is
+      active
+    test: show-picker.html
+  - subtest: input[type=tel] showPicker() does not throw when user activation is active
+    test: show-picker.html
+  - subtest: input[type=text] showPicker() does not throw when user activation is
+      active
+    test: show-picker.html
+  - subtest: input[type=time] showPicker() does not throw when user activation is
+      active
+    test: show-picker.html
+  - subtest: input[type=url] showPicker() does not throw when user activation is active
+    test: show-picker.html
+  - subtest: input[type=week] showPicker() does not throw when user activation is
+      active
+    test: show-picker.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1746051
+
+- label: interop-2022-forms
+  results:
+    - test: radio-input-cancel.html
+    - test: range-restore-oninput-onchange-event.html
+    - test: search_input.html
+    - test: selection-pointer.html
+    - test: date.html
+    - test: input-height.html
+    - test: input-valueasdate-stepping.html
+    - test: password.html
+    - test: time-focus-dynamic-value-change.html
+    - test: checkable-active-onblur.html
+    - test: checked.xhtml
+    - test: range-setattribute-value.html
+    - test: color.html
+    - test: multiline-placeholder-cr.html
+    - test: number-disabled.html
+    - test: text.html
+    - test: checkbox.html
+    - test: input-submit-remove-jssubmit.html
+    - test: input-willvalidate.html
+    - test: telephone.html
+    - test: defaultValue-clobbering.html
+    - test: input-stepdown.html
+    - test: multiline-placeholder.html
+    - test: radio-double-activate-pseudo.html
+    - test: url.html
+    - test: email-set-value.html
+    - test: input-validity.html
+    - test: input-value-invalidstateerr.html
+    - test: range-intrinsic-size.html
+    - test: anchor-active-contenteditable.html
+    - test: cloning-steps.html
+    - test: image-click-form-data.html
+    - test: input-valueasnumber.html
+    - test: time-2.html
+    - test: time.html
+    - test: button.html
+    - test: input-stepup.html
+    - test: minlength.html
+    - test: range.html
+    - test: input-labels.html
+    - test: input-seconds-leading-zeroes.html
+    - test: maxlength.html
+    - test: type-change-state.html
+    - test: selection.html
+    - test: type-change-file-to-text-crash.html
+    - test: datetime.html
+    - test: input-list.html
+    - test: input-validationmessage.html
+    - test: maxlength-number.html
+    - test: input-type-checkbox.html
+    - test: input-valueasnumber-invalidstateerr.html
+    - test: input-valueasnumber-stepping.html
+    - test: multiline-placeholder-crlf.html
+    - test: anchor-contenteditable-navigate.html
+    - test: clone.html
+    - test: files.html
+    - test: input-setcustomvalidity.html
+    - test: show-picker.html
+    - test: valueMode.html
+    - test: hidden.html
+    - test: hidden-charset-case-sensitive.html
+    - test: input-valueasdate.html
+    - test: range-2.html
+    - test: image01.html
+    - test: input-type-button.html
+    - test: number.html
+    - test: radio-groupname-case.html
+    - test: radio.html
+    - test: required_attribute.html
+    - test: checkbox-click-events.html
+    - test: input-checkvalidity.html
+    - test: input-width.html
+    - test: pattern_attribute.html
+    - test: reset.html
+    - test: show-picker-cross-origin-iframe.html
+    - test: time-datalist-crash.html
+    - test: datetime-local.html
+    - test: email.html
+    - test: input-valueasdate-invalidstateerr.html
+    - test: radio-morphed.html

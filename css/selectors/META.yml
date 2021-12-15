@@ -14,23 +14,23 @@ links:
 - product: safari
   results:
   - status: FAIL
-    test: selectors-dir-selector-ltr-001.html
+    test: dir-selector-ltr-001.html
   - status: FAIL
-    test: selectors-dir-selector-rtl-001.html
-  - test: selectors-dir-selector-auto.html
-  - test: selectors-dir-selector-change-001.html
-  - test: selectors-dir-selector-change-002.html
-  - test: selectors-dir-selector-change-003.html
-  - test: selectors-dir-selector-change-004.html
-  - test: selectors-dir-selector-querySelector.html
-  - test: selectors-dir-selector-white-space-001.html
+    test: dir-selector-rtl-001.html
+  - test: dir-selector-auto.html
+  - test: dir-selector-change-001.html
+  - test: dir-selector-change-002.html
+  - test: dir-selector-change-003.html
+  - test: dir-selector-change-004.html
+  - test: dir-selector-querySelector.html
+  - test: dir-selector-white-space-001.html
   url: https://bugs.webkit.org/show_bug.cgi?id=64861
 - product: webkitgtk
   results:
   - status: FAIL
-    test: selectors-dir-selector-ltr-001.html
+    test: dir-selector-ltr-001.html
   - status: FAIL
-    test: selectors-dir-selector-rtl-001.html
+    test: dir-selector-rtl-001.html
   url: https://bugs.webkit.org/show_bug.cgi?id=64861
 - product: firefox
   results:
@@ -267,3 +267,19 @@ links:
   - subtest: Test ':focus-within' after 'display:none' on input's parent
     test: focus-within-display-none-001.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1745027
+- product: chrome
+  url: https://crbug.com/576815
+  results:
+  - test: dir-style-03a.html
+    status: FAIL
+  - test: dir-style-03b.html
+    status: FAIL
+- product: chrome
+  url: https://bugs.chromium.org/p/chromium/issues/detail?id=576815
+  results:
+  - test: dir-style-01a.html
+  - test: dir-style-01b.html
+- product: chrome
+  url: https://bugs.chromium.org/p/chromium/issues/detail?id=1223958
+  results:
+  - test: dir-style-04.html

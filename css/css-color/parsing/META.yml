@@ -498,3 +498,10 @@ links:
   - subtest: e.style['color'] = "lch(10% 20 -700)" should set the property value
     test: color-valid.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1745397
+- product: firefox
+  results:
+  - subtest: e.style['color'] = "rgb(from var(--color) calc(r * .3 + g * .59 + b *
+      .11) calc(r * .3 + g * .59 + b * .11) calc(r * .3 + g * .59 + b * .11))" should
+      set the property value
+    test: relative-color-valid.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1746070
