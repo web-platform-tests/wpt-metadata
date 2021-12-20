@@ -83,7 +83,7 @@ func TestParseMetadata(t *testing.T) {
 
 func checkDuplicationAcrossLinks(t *testing.T, link shared.MetadataLink, linkMap map[string]string) {
 	val, ok := linkMap[link.URL]
-	expected := serializeStrings(link.Product.String())
+	expected := serializeStrings(link.Product.String(), link.Label)
 	if ok {
 		assert.NotEqual(t, val, expected, "duplicated entries between two links")
 	}
