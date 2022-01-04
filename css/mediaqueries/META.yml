@@ -1,83 +1,84 @@
 links:
-- product: safari
-  results:
-  - status: FAIL
-    test: mq-calc-005.html
-  - status: FAIL
-    test: relative-units-001.html
-  url: https://bugs.webkit.org/show_bug.cgi?id=156684
-- product: webkitgtk
-  results:
-  - status: FAIL
-    test: mq-calc-005.html
-  - status: FAIL
-    test: relative-units-001.html
-  url: https://bugs.webkit.org/show_bug.cgi?id=156684
-- product: firefox
-  results:
-  - test: mq-gamut-001.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1650524
-- product: chrome
-  results:
-  - test: aspect-ratio-004.html
-  - test: device-aspect-ratio-002.html
-  url: https://crbug.com/1086591
-- product: chrome
-  results:
-  - test: aspect-ratio-005.html
-  - test: aspect-ratio-006.html
-  url: https://crbug.com/1002049
-- product: chrome
-  results:
-  - test: prefers-contrast.html
-  url: https://crbug.com/1107431
-- product: chrome
-  results:
-  - test: mq-gamut-002.html
-  - test: mq-gamut-004.html
-  url: https://bugs.chromium.org/p/chromium/issues/detail?id=946762
-- product: chrome
-  results:
-  - test: viewport-script-dynamic.html
-  url: https://bugs.chromium.org/p/chromium/issues/detail?id=626703
-- product: chrome
-  results:
-  - test: navigation-controls.tentative.html
-  - test: test_media_queries.html
-  url: https://bugs.chromium.org/p/chromium/issues/detail?id=1217252
-- product: chrome
-  results:
-  - test: mq-negative-range-001.html
-  url: https://bugs.chromium.org/p/chromium/issues/detail?id=962417
-- product: chrome
-  results:
-  - test: mq-range-001.html
-  url: https://bugs.chromium.org/p/chromium/issues/detail?id=442449
-- product: firefox
-  results:
-  - subtest: 'Should be parseable in a CSS stylesheet: ''(dynamic-range: standard)'''
-    test: dynamic-range.html
-  - subtest: 'Should be parseable in a CSS stylesheet: ''(dynamic-range: high)'''
-    test: dynamic-range.html
-  - subtest: 'Should be parseable in JS: ''(dynamic-range: standard)'''
-    test: dynamic-range.html
-  - subtest: 'Should be parseable in JS: ''(dynamic-range: high)'''
-    test: dynamic-range.html
-  - subtest: Check that dynamic-range is 'standard' or 'high', but not both
-    test: dynamic-range.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1721468
-- product: firefox
-  results:
-  - subtest: 'Should be parseable in a CSS stylesheet: ''(video-dynamic-range: standard)'''
-    test: dynamic-range.html
-  - subtest: 'Should be parseable in a CSS stylesheet: ''(video-dynamic-range: high)'''
-    test: dynamic-range.html
-  - subtest: 'Should be parseable in JS: ''(video-dynamic-range: standard)'''
-    test: dynamic-range.html
-  - subtest: 'Should be parseable in JS: ''(video-dynamic-range: high)'''
-    test: dynamic-range.html
-  - subtest: Check that dynamic-range always matches 'standard'
-    test: dynamic-range.html
-  - subtest: Check that video-dynamic-range always matches 'standard'
-    test: dynamic-range.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1742778
+    - product: safari
+      url: https://bugs.webkit.org/show_bug.cgi?id=156684
+      results:
+        - test: mq-calc-005.html
+          status: FAIL
+        - test: relative-units-001.html
+          status: FAIL
+    - product: webkitgtk
+      url: https://bugs.webkit.org/show_bug.cgi?id=156684
+      results:
+        - test: mq-calc-005.html
+          status: FAIL
+        - test: relative-units-001.html
+          status: FAIL
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1650524
+      results:
+        - test: mq-gamut-001.html
+    - product: chrome
+      url: https://crbug.com/1086591
+      results:
+        - test: aspect-ratio-004.html
+        - test: device-aspect-ratio-002.html
+    - product: chrome
+      url: https://crbug.com/1002049
+      results:
+        - test: aspect-ratio-005.html
+        - test: aspect-ratio-006.html
+    - product: chrome
+      url: https://crbug.com/1107431
+      results:
+        - test: prefers-contrast.html
+    - product: chrome
+      url: https://bugs.chromium.org/p/chromium/issues/detail?id=946762
+      results:
+        - test: mq-gamut-002.html
+        - test: mq-gamut-004.html
+    - product: chrome
+      url: https://bugs.chromium.org/p/chromium/issues/detail?id=626703
+      results:
+        - test: viewport-script-dynamic.html
+    - product: chrome
+      url: https://bugs.chromium.org/p/chromium/issues/detail?id=1217252
+      results:
+        - test: navigation-controls.tentative.html
+        - test: test_media_queries.html
+    - product: chrome
+      url: https://bugs.chromium.org/p/chromium/issues/detail?id=962417
+      results:
+        - test: mq-negative-range-001.html
+        - test: test_media_queries.html
+    - product: chrome
+      url: https://bugs.chromium.org/p/chromium/issues/detail?id=442449
+      results:
+        - test: mq-range-001.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1721468
+      results:
+        - test: dynamic-range.html
+          subtest: 'Should be parseable in a CSS stylesheet: ''(dynamic-range: standard)'''
+        - test: dynamic-range.html
+          subtest: 'Should be parseable in a CSS stylesheet: ''(dynamic-range: high)'''
+        - test: dynamic-range.html
+          subtest: 'Should be parseable in JS: ''(dynamic-range: standard)'''
+        - test: dynamic-range.html
+          subtest: 'Should be parseable in JS: ''(dynamic-range: high)'''
+        - test: dynamic-range.html
+          subtest: Check that dynamic-range is 'standard' or 'high', but not both
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1742778
+      results:
+        - test: dynamic-range.html
+          subtest: 'Should be parseable in a CSS stylesheet: ''(video-dynamic-range: standard)'''
+        - test: dynamic-range.html
+          subtest: 'Should be parseable in a CSS stylesheet: ''(video-dynamic-range: high)'''
+        - test: dynamic-range.html
+          subtest: 'Should be parseable in JS: ''(video-dynamic-range: standard)'''
+        - test: dynamic-range.html
+          subtest: 'Should be parseable in JS: ''(video-dynamic-range: high)'''
+        - test: dynamic-range.html
+          subtest: Check that dynamic-range always matches 'standard'
+        - test: dynamic-range.html
+          subtest: Check that video-dynamic-range always matches 'standard'

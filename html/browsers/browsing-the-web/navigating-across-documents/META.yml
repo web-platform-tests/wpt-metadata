@@ -39,3 +39,30 @@ links:
   - subtest: Navigating an iframe to a redirecting URL
     test: redirect-to-data.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1730240
+- product: firefox
+  results:
+  - test: child-navigates-parent-cross-origin.window.html
+  - subtest: Child document attempts to navigate cross-origin parent via location
+    test: child-navigates-parent-cross-origin.window.html
+  - subtest: Child document attempts to navigate cross-origin parent via location.hash
+    test: child-navigates-parent-cross-origin.window.html
+  - subtest: Child document attempts to navigate cross-origin parent via location.host
+    test: child-navigates-parent-cross-origin.window.html
+  - subtest: Child document attempts to navigate cross-origin parent via location.hostname
+    test: child-navigates-parent-cross-origin.window.html
+  - subtest: Child document attempts to navigate cross-origin parent via location.href
+    test: child-navigates-parent-cross-origin.window.html
+  - subtest: Child document attempts to navigate cross-origin parent via location.pathname
+    test: child-navigates-parent-cross-origin.window.html
+  - subtest: Child document attempts to navigate cross-origin parent via location.protocol
+    test: child-navigates-parent-cross-origin.window.html
+  - subtest: Child document attempts to navigate cross-origin parent via location.reload()
+    test: child-navigates-parent-cross-origin.window.html
+  - subtest: Child document attempts to navigate cross-origin parent via location.replace()
+    test: child-navigates-parent-cross-origin.window.html
+  - subtest: Child document attempts to navigate cross-origin parent via location.search
+    test: child-navigates-parent-cross-origin.window.html
+  - subtest: Child document attempts to navigate cross-origin parent via non-standard
+      location property
+    test: child-navigates-parent-cross-origin.window.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1747146
