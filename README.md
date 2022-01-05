@@ -32,7 +32,7 @@ Where
   is `"*"` (note that asterisks must be quoted in YAML), the link will apply to
   all tests in the current directory and its subdirectories.
 - `status` is an optional field that records the WPT test result, as 
-  [defined](https://github.com/web-platform-tests/wpt.fyi/blob/master/shared/statuses.go#L52) 
+  [defined](https://github.com/web-platform-tests/wpt.fyi/blob/main/shared/statuses.go#L52)
   in the wpt.fyi codebase. When the WPT version or the browser version 
   changes, this field could be used to indicate that a test is out-of-date. It is currently unused by tooling.
 
@@ -40,4 +40,4 @@ Where
 You can contribute to the wpt-metadata repo by sending out a PR directly or through the Triage Metadata API available for trusted third parties.
 
 ### Triage Metadata API for trusted third parties
-See [/api/metadat/triage](https://github.com/web-platform-tests/wpt.fyi/tree/master/api#apimetadatatriage) for more information.
+See [/api/metadat/triage](https://github.com/web-platform-tests/wpt.fyi/tree/main/api#apimetadatatriage) for more information.
