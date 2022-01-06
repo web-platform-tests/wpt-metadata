@@ -1,189 +1,373 @@
 links:
-- product: webkitgtk
-  results:
-  - status: FAIL
-    test: t425-hsla-clip-outside-device-gamut-b.xht
-  url: https://bugs.webkit.org/show_bug.cgi?id=148932
-- product: chrome
-  results:
-  - test: predefined-002.html
-  - test: predefined-005.html
-  - test: predefined-008.html
-  - test: predefined-016.html
-  - test: predefined-001.html
-  - test: predefined-011.html
-  - test: predefined-006.html
-  - test: predefined-010.html
-  - test: predefined-007.html
-  - test: predefined-009.html
-  - test: predefined-012.html
-  - subtest: Basic sRGB white
-    test: color-function-parsing.html
-  - subtest: White with lots of space
-    test: color-function-parsing.html
-  - subtest: sRGB color
-    test: color-function-parsing.html
-  - subtest: Different case for sRGB
-    test: color-function-parsing.html
-  - subtest: sRGB color with unnecessary decimals
-    test: color-function-parsing.html
-  - subtest: sRGB white with 0.5 alpha
-    test: color-function-parsing.html
-  - subtest: sRGB white with 0 alpha
-    test: color-function-parsing.html
-  - subtest: sRGB white with 50% alpha
-    test: color-function-parsing.html
-  - subtest: sRGB white with 0% alpha
-    test: color-function-parsing.html
-  - subtest: One missing component is 0
-    test: color-function-parsing.html
-  - subtest: Two missing components are 0
-    test: color-function-parsing.html
-  - subtest: All components missing
-    test: color-function-parsing.html
-  - subtest: Display P3 color
-    test: color-function-parsing.html
-  - subtest: Different case for Display P3
-    test: color-function-parsing.html
-  - subtest: sRGB color with negative component should clamp to 0
-    test: color-function-parsing.html
-  - subtest: sRGB color with component > 1 should clamp
-    test: color-function-parsing.html
-  - subtest: Display P3 color with negative component should clamp to 0
-    test: color-function-parsing.html
-  - subtest: Display P3 color with component > 1 should clamp
-    test: color-function-parsing.html
-  - subtest: Alpha > 1 should clamp
-    test: color-function-parsing.html
-  - subtest: Negative alpha should clamp
-    test: color-function-parsing.html
-  url: https://crbug.com/1068610
-- product: firefox
-  results:
-  - subtest: Basic sRGB white
-    test: color-function-parsing.html
-  - subtest: White with lots of space
-    test: color-function-parsing.html
-  - subtest: sRGB color
-    test: color-function-parsing.html
-  - subtest: Different case for sRGB
-    test: color-function-parsing.html
-  - subtest: sRGB color with unnecessary decimals
-    test: color-function-parsing.html
-  - subtest: sRGB white with 0.5 alpha
-    test: color-function-parsing.html
-  - subtest: sRGB white with 0 alpha
-    test: color-function-parsing.html
-  - subtest: sRGB white with 50% alpha
-    test: color-function-parsing.html
-  - subtest: sRGB white with 0% alpha
-    test: color-function-parsing.html
-  - subtest: One missing component is 0
-    test: color-function-parsing.html
-  - subtest: Two missing components are 0
-    test: color-function-parsing.html
-  - subtest: All components missing
-    test: color-function-parsing.html
-  - subtest: Display P3 color
-    test: color-function-parsing.html
-  - subtest: Different case for Display P3
-    test: color-function-parsing.html
-  - subtest: sRGB color with negative component should clamp to 0
-    test: color-function-parsing.html
-  - subtest: sRGB color with component > 1 should clamp
-    test: color-function-parsing.html
-  - subtest: Display P3 color with negative component should clamp to 0
-    test: color-function-parsing.html
-  - subtest: Display P3 color with component > 1 should clamp
-    test: color-function-parsing.html
-  - subtest: Alpha > 1 should clamp
-    test: color-function-parsing.html
-  - subtest: Negative alpha should clamp
-    test: color-function-parsing.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1705184
-- product: chrome
-  results:
-  - test: hwb-003.html
-  - test: hwb-004.html
-  - test: hwb-005.html
-  - test: xyz-001.html
-  - test: xyz-004.html
-  - test: xyz-005.html
-  - test: hwb-001.html
-  - test: hwb-002.html
-  - test: xyz-002.html
-  - test: xyz-003.html
-  - test: color-resolving-hwb.html
-  - test: a98rgb-001.html
-  - test: a98rgb-002.html
-  - test: a98rgb-003.html
-  - test: a98rgb-004.html
-  - test: lab-008.html
-  - test: lch-008.html
-  - test: rec2020-005.html
-  - test: rec2020-001.html
-  - test: rec2020-002.html
-  - test: rec2020-003.html
-  - test: rec2020-004.html
-  - test: prophoto-rgb-003.html
-  - test: prophoto-rgb-004.html
-  - test: prophoto-rgb-005.html
-  - test: prophoto-rgb-001.html
-  - test: prophoto-rgb-002.html
-  url: https://bugs.chromium.org/p/chromium/issues/detail?id=1068610
-- product: chrome
-  results:
-  - test: lab-005.html
-  - test: lab-007.html
-  - test: lch-002.html
-  - test: lch-004.html
-  - test: lch-005.html
-  - test: lch-007.html
-  - test: lab-001.html
-  - test: lab-006.html
-  - test: lch-003.html
-  - test: lab-004.html
-  - test: lab-003.html
-  - test: lch-001.html
-  - test: lch-006.html
-  - test: lab-002.html
-  url: https://bugs.chromium.org/p/chromium/issues/detail?id=1026287
-- product: chrome
-  results:
-  - test: t425-hsla-onscreen-multiple-boxes-c.xht
-  - test: color-function-parsing.html
-  - test: composited-filters-under-opacity.html
-  - test: t32-opacity-basic-0.6-a.xht
-  - test: t32-opacity-offscreen-multiple-boxes-1-c.xht
-  - test: t32-opacity-offscreen-multiple-boxes-2-c.xht
-  - test: t422-rgba-a0.6-a.xht
-  - test: t422-rgba-onscreen-multiple-boxes-c.xht
-  url: https://bugs.chromium.org/p/chromium/issues/detail?id=1209375
-- product: firefox
-  results:
-  - test: xyz-004.html
-  - test: xyz-005.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1745935
-- product: firefox
-  results:
-  - test: predefined-001.html
-  - test: predefined-002.html
-  - test: predefined-005.html
-  - test: predefined-006.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1746079
-- product: chrome
-  results:
-  - test: color-mix-basic-001.html
-  url: https://bugs.chromium.org/p/chromium/issues/detail?id=1092638
-- product: firefox
-  results:
-  - test: display-p3-001.html
-  - test: display-p3-002.html
-  - test: display-p3-004.html
-  - test: display-p3-005.html
-  - test: display-p3-006.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1746282
-- product: firefox
-  results:
-  - test: predefined-016.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1748184
+    - product: webkitgtk
+      url: https://bugs.webkit.org/show_bug.cgi?id=148932
+      results:
+        - test: t425-hsla-clip-outside-device-gamut-b.xht
+          status: FAIL
+    - product: chrome
+      url: https://crbug.com/1068610
+      results:
+        - test: predefined-002.html
+        - test: predefined-005.html
+        - test: predefined-008.html
+        - test: predefined-016.html
+        - test: predefined-001.html
+        - test: predefined-011.html
+        - test: predefined-006.html
+        - test: predefined-010.html
+        - test: predefined-007.html
+        - test: predefined-009.html
+        - test: predefined-012.html
+        - test: color-function-parsing.html
+          subtest: Basic sRGB white
+        - test: color-function-parsing.html
+          subtest: White with lots of space
+        - test: color-function-parsing.html
+          subtest: sRGB color
+        - test: color-function-parsing.html
+          subtest: Different case for sRGB
+        - test: color-function-parsing.html
+          subtest: sRGB color with unnecessary decimals
+        - test: color-function-parsing.html
+          subtest: sRGB white with 0.5 alpha
+        - test: color-function-parsing.html
+          subtest: sRGB white with 0 alpha
+        - test: color-function-parsing.html
+          subtest: sRGB white with 50% alpha
+        - test: color-function-parsing.html
+          subtest: sRGB white with 0% alpha
+        - test: color-function-parsing.html
+          subtest: One missing component is 0
+        - test: color-function-parsing.html
+          subtest: Two missing components are 0
+        - test: color-function-parsing.html
+          subtest: All components missing
+        - test: color-function-parsing.html
+          subtest: Display P3 color
+        - test: color-function-parsing.html
+          subtest: Different case for Display P3
+        - test: color-function-parsing.html
+          subtest: sRGB color with negative component should clamp to 0
+        - test: color-function-parsing.html
+          subtest: sRGB color with component > 1 should clamp
+        - test: color-function-parsing.html
+          subtest: Display P3 color with negative component should clamp to 0
+        - test: color-function-parsing.html
+          subtest: Display P3 color with component > 1 should clamp
+        - test: color-function-parsing.html
+          subtest: Alpha > 1 should clamp
+        - test: color-function-parsing.html
+          subtest: Negative alpha should clamp
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1705184
+      results:
+        - test: color-function-parsing.html
+          subtest: Basic sRGB white
+        - test: color-function-parsing.html
+          subtest: White with lots of space
+        - test: color-function-parsing.html
+          subtest: sRGB color
+        - test: color-function-parsing.html
+          subtest: Different case for sRGB
+        - test: color-function-parsing.html
+          subtest: sRGB color with unnecessary decimals
+        - test: color-function-parsing.html
+          subtest: sRGB white with 0.5 alpha
+        - test: color-function-parsing.html
+          subtest: sRGB white with 0 alpha
+        - test: color-function-parsing.html
+          subtest: sRGB white with 50% alpha
+        - test: color-function-parsing.html
+          subtest: sRGB white with 0% alpha
+        - test: color-function-parsing.html
+          subtest: One missing component is 0
+        - test: color-function-parsing.html
+          subtest: Two missing components are 0
+        - test: color-function-parsing.html
+          subtest: All components missing
+        - test: color-function-parsing.html
+          subtest: Display P3 color
+        - test: color-function-parsing.html
+          subtest: Different case for Display P3
+        - test: color-function-parsing.html
+          subtest: sRGB color with negative component should clamp to 0
+        - test: color-function-parsing.html
+          subtest: sRGB color with component > 1 should clamp
+        - test: color-function-parsing.html
+          subtest: Display P3 color with negative component should clamp to 0
+        - test: color-function-parsing.html
+          subtest: Display P3 color with component > 1 should clamp
+        - test: color-function-parsing.html
+          subtest: Alpha > 1 should clamp
+        - test: color-function-parsing.html
+          subtest: Negative alpha should clamp
+    - product: chrome
+      url: https://bugs.chromium.org/p/chromium/issues/detail?id=1068610
+      results:
+        - test: hwb-003.html
+        - test: hwb-004.html
+        - test: hwb-005.html
+        - test: xyz-001.html
+        - test: xyz-004.html
+        - test: xyz-005.html
+        - test: hwb-001.html
+        - test: hwb-002.html
+        - test: xyz-002.html
+        - test: xyz-003.html
+        - test: color-resolving-hwb.html
+        - test: a98rgb-001.html
+        - test: a98rgb-002.html
+        - test: a98rgb-003.html
+        - test: a98rgb-004.html
+        - test: lab-008.html
+        - test: lch-008.html
+        - test: rec2020-005.html
+        - test: rec2020-001.html
+        - test: rec2020-002.html
+        - test: rec2020-003.html
+        - test: rec2020-004.html
+        - test: prophoto-rgb-003.html
+        - test: prophoto-rgb-004.html
+        - test: prophoto-rgb-005.html
+        - test: prophoto-rgb-001.html
+        - test: prophoto-rgb-002.html
+    - product: chrome
+      url: https://bugs.chromium.org/p/chromium/issues/detail?id=1026287
+      results:
+        - test: lab-005.html
+        - test: lab-007.html
+        - test: lch-002.html
+        - test: lch-004.html
+        - test: lch-005.html
+        - test: lch-007.html
+        - test: lab-001.html
+        - test: lab-006.html
+        - test: lch-003.html
+        - test: lab-004.html
+        - test: lab-003.html
+        - test: lch-001.html
+        - test: lch-006.html
+        - test: lab-002.html
+    - product: chrome
+      url: https://bugs.chromium.org/p/chromium/issues/detail?id=1209375
+      results:
+        - test: t425-hsla-onscreen-multiple-boxes-c.xht
+        - test: color-function-parsing.html
+        - test: composited-filters-under-opacity.html
+        - test: t32-opacity-basic-0.6-a.xht
+        - test: t32-opacity-offscreen-multiple-boxes-1-c.xht
+        - test: t32-opacity-offscreen-multiple-boxes-2-c.xht
+        - test: t422-rgba-a0.6-a.xht
+        - test: t422-rgba-onscreen-multiple-boxes-c.xht
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1745935
+      results:
+        - test: xyz-004.html
+        - test: xyz-005.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1746079
+      results:
+        - test: predefined-001.html
+        - test: predefined-002.html
+        - test: predefined-005.html
+        - test: predefined-006.html
+    - product: chrome
+      url: https://bugs.chromium.org/p/chromium/issues/detail?id=1092638
+      results:
+        - test: color-mix-basic-001.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1746282
+      results:
+        - test: display-p3-001.html
+        - test: display-p3-002.html
+        - test: display-p3-004.html
+        - test: display-p3-005.html
+        - test: display-p3-006.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1748184
+      results:
+        - test: predefined-016.html
+    - label: interop-2022-color
+      results:
+        - test: t424-hsl-clip-outside-gamut-b.xht
+        - test: t424-hsl-values-b-6.html
+        - test: lab-006.html
+        - test: lch-007.html
+        - test: t421-rgb-hex-parsing-f.xht
+        - test: t421-rgb-values-meaning-b.xht
+        - test: xyz-d65-002.html
+        - test: xyz-003.html
+        - test: t424-hsl-values-b-7.html
+        - test: color-contrast-001.html
+        - test: color-resolving-hwb.html
+        - test: oklab-004.html
+        - test: oklch-005.html
+        - test: t424-hsl-values-b-10.html
+        - test: hsl-005.html
+        - test: a98rgb-001.html
+        - test: hsla-008.html
+        - test: t421-rgb-hex3-expand-b.xht
+        - test: t422-rgba-values-meaning-b.xht
+        - test: t425-hsla-parsing-f.xht
+        - test: lch-004.html
+        - test: oklch-004.html
+        - test: color-mix-basic-001.html
+        - test: lch-003.html
+        - test: rgba-008.html
+        - test: t422-rgba-onscreen-b.xht
+        - test: xyz-005.html
+        - test: t424-hsl-values-b-4.html
+        - test: hex-002.html
+        - test: hwb-005.html
+        - test: lab-005.html
+        - test: prophoto-rgb-002.html
+        - test: rgba-002.html
+        - test: predefined-006.html
+        - test: predefined-005.html
+        - test: t424-hsl-basic-a.xht
+        - test: hsla-001.html
+        - test: hwb-002.html
+        - test: xyz-d50-001.html
+        - test: xyz-d65-001.html
+        - test: rgba-003.html
+        - test: color-resolving-hsl.html
+        - test: display-p3-001.html
+        - test: hsla-006.html
+        - test: srgb-linear-002.html
+        - test: rgba-004.html
+        - test: t422-rgba-func-int-a.xht
+        - test: t425-hsla-clip-outside-device-gamut-b.xht
+        - test: xyz-002.html
+        - test: hsl-007.html
+        - test: lab-003.html
+        - test: lch-001.html
+        - test: predefined-011.html
+        - test: srgb-linear-003.html
+        - test: t421-rgb-hex6-a.xht
+        - test: color-mix-percents-01.html
+        - test: lch-008.html
+        - test: xyz-d50-003.html
+        - test: predefined-009.html
+        - test: t424-hsl-values-b-2.html
+        - test: t424-hsl-values-b-5.html
+        - test: rgb-006.html
+        - test: display-p3-003.html
+        - test: t422-rgba-a0.6-a.xht
+        - test: t424-hsl-h-rotating-b.xht
+        - test: t424-hsl-values-b-14.html
+        - test: hsl-002.html
+        - test: lch-006.html
+        - test: oklab-005.html
+        - test: rgba-005.html
+        - test: a98rgb-003.html
+        - test: rec2020-002.html
+        - test: rgb-002.html
+        - test: t424-hsl-values-b-1.html
+        - test: hsl-004.html
+        - test: lab-001.html
+        - test: predefined-012.html
+        - test: t425-hsla-values-b.xht
+        - test: t422-rgba-func-pct-a.xht
+        - test: xyz-001.html
+        - test: a98rgb-004.html
+        - test: display-p3-006.html
+        - test: hwb-003.html
+        - test: rgb-008.html
+        - test: rec2020-004.html
+        - test: color-mix-non-srgb-001.html
+        - test: hsl-003.html
+        - test: lab-007.html
+        - test: predefined-016.html
+        - test: oklch-003.html
+        - test: rgba-001.html
+        - test: display-p3-004.html
+        - test: hex-001.html
+        - test: lch-005.html
+        - test: oklch-002.html
+        - test: oklch-006.html
+        - test: t423-transparent-2-a.xht
+        - test: t424-hsl-values-b-11.html
+        - test: t424-hsl-values-b-12.html
+        - test: t424-hsl-values-b-15.html
+        - test: xyz-d65-004.html
+        - test: predefined-002.html
+        - test: rgb-001.html
+        - test: hsl-006.html
+        - test: rgb-005.html
+        - test: t421-rgb-func-int-a.xht
+        - test: t422-rgba-clamping-a1.0-b.xht
+        - test: rgb-004.html
+        - test: t421-rgb-hex3-a.xht
+        - test: xyz-d50-002.html
+        - test: t424-hsl-values-b-9.html
+        - test: rgb-003.html
+        - test: color-mix-percents-02.html
+        - test: predefined-010.html
+        - test: xyz-d50-004.html
+        - test: t424-hsl-values-b-13.html
+        - test: lch-002.html
+        - test: hsla-003.html
+        - test: oklab-006.html
+        - test: oklch-008.html
+        - test: t422-rgba-onscreen-multiple-boxes-c.xht
+        - test: t425-hsla-h-rotating-b.xht
+        - test: t425-hsla-basic-a.xht
+        - test: hex-004.html
+        - test: display-p3-005.html
+        - test: prophoto-rgb-005.html
+        - test: rec2020-005.html
+        - test: t421-rgb-clip-outside-gamut-b.xht
+        - test: xyz-d50-005.html
+        - test: xyz-d65-003.html
+        - test: t425-hsla-onscreen-multiple-boxes-c.xht
+        - test: hwb-004.html
+        - test: rec2020-001.html
+        - test: t421-rgb-func-no-mixed-f.xht
+        - test: t422-rgba-func-whitespace-b.xht
+        - test: rec2020-003.html
+        - test: hsl-008.html
+        - test: hwb-001.html
+        - test: lab-002.html
+        - test: prophoto-rgb-004.html
+        - test: srgb-linear-004.html
+        - test: t425-hsla-onscreen-b.xht
+        - test: oklab-007.html
+        - test: t422-rgba-clamping-a0.0-b.xht
+        - test: a98rgb-002.html
+        - test: hsla-002.html
+        - test: lab-008.html
+        - test: oklab-001.html
+        - test: t424-hsl-values-b-8.html
+        - test: hsla-007.html
+        - test: oklab-003.html
+        - test: rgba-007.html
+        - test: lab-004.html
+        - test: t422-rgba-a0.0-a.xht
+        - test: xyz-004.html
+        - test: t423-transparent-1-a.xht
+        - test: t424-hsl-values-b-3.html
+        - test: t422-rgba-clip-outside-device-gamut-b.xht
+        - test: color-resolving.html
+        - test: hsla-005.html
+        - test: oklch-007.html
+        - test: rgb-007.html
+        - test: t422-rgba-func-no-mixed-f.xht
+        - test: prophoto-rgb-001.html
+        - test: display-p3-002.html
+        - test: predefined-007.html
+        - test: predefined-008.html
+        - test: rgba-006.html
+        - test: hsl-001.html
+        - test: oklab-008.html
+        - test: prophoto-rgb-003.html
+        - test: rgb-rounding-001.html
+        - test: srgb-linear-001.html
+        - test: oklab-002.html
+        - test: t422-rgba-a1.0-a.xht
+        - test: xyz-d65-005.html
+        - test: hsla-004.html
+        - test: oklch-001.html
+        - test: hex-003.html
+        - test: predefined-001.html
+        - test: t421-rgb-func-pct-a.xht
+        - test: t424-hsl-parsing-f.xht
