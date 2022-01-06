@@ -347,3 +347,12 @@ links:
   results:
   - test: imageBitmapRendering-transferFromImageBitmap-webgl.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1734822
+- product: firefox
+  results:
+  - subtest: 'createImageBitmap from a bitmap HTMLImageElement, and drawImage on the
+      created ImageBitmap with colorSpaceConversion: none'
+    test: createImageBitmap-colorSpaceConversion.html
+  - subtest: 'createImageBitmap from a Blob, and drawImage on the created ImageBitmap
+      with colorSpaceConversion: none'
+    test: createImageBitmap-colorSpaceConversion.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1748868
