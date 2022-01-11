@@ -1,126 +1,153 @@
 links:
-  - product: firefox
-    url: https://bugzilla.mozilla.org/show_bug.cgi?id=1700268
-    results:
-      - test: selectmenu-parts-structure.tentative.html
-        subtest: To receive option part controller code, an element labeled as an option must be a descendant of the listbox part in a flat tree traversal
-      - test: selectmenu-parts-structure.tentative.html
-        subtest: To receive button part controller code, an element labeled as a button must not be a descendant of the listbox part in a flat tree traversal
-      - test: selectmenu-value-selectedOption.tentative.html
-        subtest: Test that HTMLSelectMenu with no options has empty string for value
-      - test: selectmenu-value-selectedOption.tentative.html
-        subtest: Test value with HTMLOptionElement element option parts
-      - test: selectmenu-value-selectedOption.tentative.html
-        subtest: Test value with non-HTMLOptionElement element option parts
-      - test: selectmenu-value-selectedOption.tentative.html
-        subtest: Test that slotted-in selected-value part is updated to value of selectmenu
-      - test: selectmenu-value-selectedOption.tentative.html
-        subtest: Test that option parts in a slotted-in listbox are reflected in the value property
-  - product: firefox
-    url: https://bugzilla.mozilla.org/show_bug.cgi?id=1703439
-    results:
-      - test: selectmenu-option-arbitrary-content-not-displayed.tentative.html
-  - product: chrome
-    url: https://bugs.chromium.org/p/chromium/issues/detail?id=1121840
-    results:
-      - test: selectmenu-popup.tentative.html
-  - product: chrome
-    url: https://bugs.chromium.org/p/chromium/issues/detail?id=1196022
-    results:
-      - test: selectmenu-option-arbitrary-content-displayed.tentative.html
-  - product: firefox
-    url: https://bugzilla.mozilla.org/show_bug.cgi?id=1724118
-    results:
-      - test: selectmenu-parts-structure.tentative.html
-        subtest: To receive listbox part controller code, an element labeled as a listbox must not be a descendant of the button part in a flat tree traversal
-      - test: selectmenu-parts-structure.tentative.html
-        subtest: Listbox controller code should be applied in flat tree traversal order regardless of dynamic insertion order
-      - test: selectmenu-parts-structure.tentative.html
-        subtest: selected-value controller code should be applied in flat tree traversal order regardless of dynamic insertion order
-  - product: firefox
-    url: https://bugzilla.mozilla.org/show_bug.cgi?id=1723835
-    results:
-      - test: selectmenu-nested.tentative.html
-        subtest: A nested button part in a nested <selectmenu> shouldn't get controller code even if it comes first in document order
-      - test: selectmenu-parts-structure.tentative.html
-        subtest: To receive listbox part controller code, an element labeled as a listbox must not be a descendant of the button part in a flat tree traversal
-      - test: selectmenu-parts-structure.tentative.html
-        subtest: Listbox controller code should be applied in flat tree traversal order regardless of dynamic insertion order
-  - product: firefox
-    url: https://bugzilla.mozilla.org/show_bug.cgi?id=1731992
-    results:
-      - test: selectmenu-parts-structure.tentative.html
-        subtest: Button controller code should be applied in flat tree traversal order regardless of dynamic insertion order
-  - product: firefox
-    url: https://bugzilla.mozilla.org/show_bug.cgi?id=1732326
-    results:
-      - test: selectmenu-popup.tentative.html
-        subtest: Opening the popup and clicking an option should change the selectmenu's value
-      - test: selectmenu-popup.tentative.html
-        subtest: 'With custom button and popup: opening the popup and clicking an option should change the selectmenu''s value'
-      - test: selectmenu-popup.tentative.html
-        subtest: Clicking a popup with no listbox part does nothing
-      - test: selectmenu-popup.tentative.html
-        subtest: Clicking a popup with a listbox that was removed does nothing
-      - test: selectmenu-shadow-root-replacement.tentative.html
-        subtest: Test that the UA provided shadow root can be replaced using declarative shadow DOM
-  - product: firefox
-    url: https://bugzilla.mozilla.org/show_bug.cgi?id=1733715
-    results:
-      - test: selectmenu-parts-structure.tentative.html
-        subtest: Ensure that controller code is applied after updating the slot attribute
-      - test: selectmenu-parts-structure.tentative.html
-        subtest: Ensure that controller code is applied when slot and part attributes are different
-  - product: firefox
-    url: https://bugzilla.mozilla.org/show_bug.cgi?id=1738865
-    results:
-      - test: selectmenu-parts-structure.tentative.html
-        subtest: Ensure that option controller code is updated when listbox changes
-      - test: selectmenu-value-selectedOption.tentative.html
-        subtest: Test that value is updated when options are removed
-  - product: firefox
-    url: https://bugzilla.mozilla.org/show_bug.cgi?id=1739458
-    results:
-      - test: selectmenu-shadow-root-replacement.tentative.html
-        subtest: Test that only the UA provided shadow root can be replaced
-      - test: selectmenu-value-selectedOption.tentative.html
-        subtest: Test value with non-HTMLOptionElement elements labeled as parts
-  - product: firefox
-    url: https://bugzilla.mozilla.org/show_bug.cgi?id=1740417
-    results:
-      - test: selectmenu-popup-position-with-zoom.tentative.html
-        subtest: The popup should be bottom left positioned
-  - product: firefox
-    url: https://bugzilla.mozilla.org/show_bug.cgi?id=1741331
-    results:
-      - test: selectmenu-popup-position.tentative.html
-        subtest: The popup should be bottom left positioned
-      - test: selectmenu-popup-position.tentative.html
-        subtest: The popup should be top left positioned
-      - test: selectmenu-popup-position.tentative.html
-        subtest: The popup should be bottom right positioned
-      - test: selectmenu-popup-position.tentative.html
-        subtest: The popup should be top right positioned
-      - test: selectmenu-shadow-root-replacement.tentative.html
-        subtest: Test that the UA provided shadow root can be replaced
-  - product: firefox
-    url: https://bugzilla.mozilla.org/show_bug.cgi?id=1744211
-    results:
-      - test: selectmenu-parts-structure.tentative.html
-        subtest: HTMLOptionElements (and not other element types) should receive option controller code
-      - test: selectmenu-parts-structure.tentative.html
-        subtest: To receive option part controller code, an option must be a descendant of the listbox part in a flat tree traversal
-  - product: firefox
-    url: https://bugzilla.mozilla.org/show_bug.cgi?id=1744881
-    results:
-      - test: selectmenu-validity.tentative.html
-        subtest: Check form not submitted for invalid selectmenu
-  - product: firefox
-    results:
-    - subtest: ask-for-reset when removing option
-      test: selectmenu-ask-for-reset.html
-    - subtest: ask-for-reset when inserting option
-      test: selectmenu-ask-for-reset.html
-    - subtest: ask-for-reset for form
-      test: selectmenu-ask-for-reset.html
-    url: https://bugzilla.mozilla.org/show_bug.cgi?id=1746555
+- product: firefox
+  results:
+  - subtest: To receive option part controller code, an element labeled as an option
+      must be a descendant of the listbox part in a flat tree traversal
+    test: selectmenu-parts-structure.tentative.html
+  - subtest: To receive button part controller code, an element labeled as a button
+      must not be a descendant of the listbox part in a flat tree traversal
+    test: selectmenu-parts-structure.tentative.html
+  - subtest: Test that HTMLSelectMenu with no options has empty string for value
+    test: selectmenu-value-selectedOption.tentative.html
+  - subtest: Test value with HTMLOptionElement element option parts
+    test: selectmenu-value-selectedOption.tentative.html
+  - subtest: Test value with non-HTMLOptionElement element option parts
+    test: selectmenu-value-selectedOption.tentative.html
+  - subtest: Test that slotted-in selected-value part is updated to value of selectmenu
+    test: selectmenu-value-selectedOption.tentative.html
+  - subtest: Test that option parts in a slotted-in listbox are reflected in the value
+      property
+    test: selectmenu-value-selectedOption.tentative.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1700268
+- product: firefox
+  results:
+  - test: selectmenu-option-arbitrary-content-not-displayed.tentative.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1703439
+- product: chrome
+  results:
+  - test: selectmenu-popup.tentative.html
+  url: https://bugs.chromium.org/p/chromium/issues/detail?id=1121840
+- product: chrome
+  results:
+  - test: selectmenu-option-arbitrary-content-displayed.tentative.html
+  url: https://bugs.chromium.org/p/chromium/issues/detail?id=1196022
+- product: firefox
+  results:
+  - subtest: To receive listbox part controller code, an element labeled as a listbox
+      must not be a descendant of the button part in a flat tree traversal
+    test: selectmenu-parts-structure.tentative.html
+  - subtest: Listbox controller code should be applied in flat tree traversal order
+      regardless of dynamic insertion order
+    test: selectmenu-parts-structure.tentative.html
+  - subtest: selected-value controller code should be applied in flat tree traversal
+      order regardless of dynamic insertion order
+    test: selectmenu-parts-structure.tentative.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1724118
+- product: firefox
+  results:
+  - subtest: A nested button part in a nested <selectmenu> shouldn't get controller
+      code even if it comes first in document order
+    test: selectmenu-nested.tentative.html
+  - subtest: To receive listbox part controller code, an element labeled as a listbox
+      must not be a descendant of the button part in a flat tree traversal
+    test: selectmenu-parts-structure.tentative.html
+  - subtest: Listbox controller code should be applied in flat tree traversal order
+      regardless of dynamic insertion order
+    test: selectmenu-parts-structure.tentative.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1723835
+- product: firefox
+  results:
+  - subtest: Button controller code should be applied in flat tree traversal order
+      regardless of dynamic insertion order
+    test: selectmenu-parts-structure.tentative.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1731992
+- product: firefox
+  results:
+  - subtest: Opening the popup and clicking an option should change the selectmenu's
+      value
+    test: selectmenu-popup.tentative.html
+  - subtest: 'With custom button and popup: opening the popup and clicking an option
+      should change the selectmenu''s value'
+    test: selectmenu-popup.tentative.html
+  - subtest: Clicking a popup with no listbox part does nothing
+    test: selectmenu-popup.tentative.html
+  - subtest: Clicking a popup with a listbox that was removed does nothing
+    test: selectmenu-popup.tentative.html
+  - subtest: Test that the UA provided shadow root can be replaced using declarative
+      shadow DOM
+    test: selectmenu-shadow-root-replacement.tentative.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1732326
+- product: firefox
+  results:
+  - subtest: Ensure that controller code is applied after updating the slot attribute
+    test: selectmenu-parts-structure.tentative.html
+  - subtest: Ensure that controller code is applied when slot and part attributes
+      are different
+    test: selectmenu-parts-structure.tentative.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1733715
+- product: firefox
+  results:
+  - subtest: Ensure that option controller code is updated when listbox changes
+    test: selectmenu-parts-structure.tentative.html
+  - subtest: Test that value is updated when options are removed
+    test: selectmenu-value-selectedOption.tentative.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1738865
+- product: firefox
+  results:
+  - subtest: Test that only the UA provided shadow root can be replaced
+    test: selectmenu-shadow-root-replacement.tentative.html
+  - subtest: Test value with non-HTMLOptionElement elements labeled as parts
+    test: selectmenu-value-selectedOption.tentative.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1739458
+- product: firefox
+  results:
+  - subtest: The popup should be bottom left positioned
+    test: selectmenu-popup-position-with-zoom.tentative.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1740417
+- product: firefox
+  results:
+  - subtest: The popup should be bottom left positioned
+    test: selectmenu-popup-position.tentative.html
+  - subtest: The popup should be top left positioned
+    test: selectmenu-popup-position.tentative.html
+  - subtest: The popup should be bottom right positioned
+    test: selectmenu-popup-position.tentative.html
+  - subtest: The popup should be top right positioned
+    test: selectmenu-popup-position.tentative.html
+  - subtest: Test that the UA provided shadow root can be replaced
+    test: selectmenu-shadow-root-replacement.tentative.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1741331
+- product: firefox
+  results:
+  - subtest: HTMLOptionElements (and not other element types) should receive option
+      controller code
+    test: selectmenu-parts-structure.tentative.html
+  - subtest: To receive option part controller code, an option must be a descendant
+      of the listbox part in a flat tree traversal
+    test: selectmenu-parts-structure.tentative.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1744211
+- product: firefox
+  results:
+  - subtest: Check form not submitted for invalid selectmenu
+    test: selectmenu-validity.tentative.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1744881
+- product: firefox
+  results:
+  - subtest: ask-for-reset when removing option
+    test: selectmenu-ask-for-reset.html
+  - subtest: ask-for-reset when inserting option
+    test: selectmenu-ask-for-reset.html
+  - subtest: ask-for-reset for form
+    test: selectmenu-ask-for-reset.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1746555
+- product: firefox
+  results:
+  - subtest: The popup should be bottom left positioned
+    test: selectmenu-many-options.tentative.html
+  - subtest: The popup should be top left positioned
+    test: selectmenu-popup-position-with-zoom.tentative.html
+  - subtest: The popup should be bottom right positioned
+    test: selectmenu-popup-position-with-zoom.tentative.html
+  - subtest: The popup should be top right positioned
+    test: selectmenu-popup-position-with-zoom.tentative.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1749545
