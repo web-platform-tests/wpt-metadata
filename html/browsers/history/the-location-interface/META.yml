@@ -1,40 +1,51 @@
 links:
-    - product: webkitgtk
-      url: https://bugs.webkit.org/show_bug.cgi?id=197709
-      results:
-        - test: location_hash.html
-          status: FAIL
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1649091
-      results:
-        - test: location_replace.html
-          subtest: URL that fails to parse
-    - product: chrome
-      url: https://crbug.com/691952
-      results:
-        - test: location-valueof.html
-        - test: location-stringifier.html
-    - product: chrome
-      url: https://crbug.com/664681
-      results:
-        - test: location-prototype-setting-goes-cross-origin-domain.sub.html
-          status: FAIL
-        - test: location-prototype-setting-cross-origin-domain.sub.html
-          status: FAIL
-        - test: location-prototype-setting-same-origin.html
-          status: FAIL
-        - test: location-prototype-setting-same-origin-domain.sub.html
-          status: FAIL
-        - test: location-prototype-setting-cross-origin.sub.html
-          status: FAIL
-    - product: chrome
-      url: https://crbug.com/678633
-      results:
-        - test: location-protocol-setter-non-broken.html
-          status: FAIL
-        - test: location-protocol-setter-non-broken-weird.html
-          status: FAIL
-    - product: chrome
-      url: https://crbug.com/718363
-      results:
-        - test: per-global.window.html
+- product: webkitgtk
+  results:
+  - status: FAIL
+    test: location_hash.html
+  url: https://bugs.webkit.org/show_bug.cgi?id=197709
+- product: firefox
+  results:
+  - subtest: URL that fails to parse
+    test: location_replace.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1649091
+- product: chrome
+  results:
+  - test: location-valueof.html
+  - test: location-stringifier.html
+  url: https://crbug.com/691952
+- product: chrome
+  results:
+  - status: FAIL
+    test: location-prototype-setting-goes-cross-origin-domain.sub.html
+  - status: FAIL
+    test: location-prototype-setting-cross-origin-domain.sub.html
+  - status: FAIL
+    test: location-prototype-setting-same-origin.html
+  - status: FAIL
+    test: location-prototype-setting-same-origin-domain.sub.html
+  - status: FAIL
+    test: location-prototype-setting-cross-origin.sub.html
+  url: https://crbug.com/664681
+- product: chrome
+  results:
+  - status: FAIL
+    test: location-protocol-setter-non-broken.html
+  - status: FAIL
+    test: location-protocol-setter-non-broken-weird.html
+  url: https://crbug.com/678633
+- product: chrome
+  results:
+  - test: per-global.window.html
+  url: https://crbug.com/718363
+- product: firefox
+  results:
+  - subtest: Using location.hash = "#te<st" must not reset scroll position
+    test: same-hash.html
+  - subtest: Using location.hash = "te<st" must not reset scroll position
+    test: same-hash.html
+  - subtest: Using location.hash = "#te%3Cst" must not reset scroll position
+    test: same-hash.html
+  - subtest: Using location.hash = "te%3Cst" must not reset scroll position
+    test: same-hash.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1749811
