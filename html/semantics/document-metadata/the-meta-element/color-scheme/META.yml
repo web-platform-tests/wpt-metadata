@@ -62,3 +62,17 @@ links:
           subtest: Meta color-scheme initially 'dark'.
         - test: meta-color-scheme-remove-head.html
           subtest: Meta color-scheme applies.
+        - test: meta-color-scheme-single-value-in-head.html
+          subtest: Meta color-scheme in head applies.
+        - test: meta-color-scheme-first-valid-applies.html
+          subtest: Tree order decides which meta color-scheme applies.
+        - test: meta-color-scheme-insert.html
+          subtest: Inserted meta color-scheme applies
+        - test: meta-color-scheme-insert.html
+          subtest: Inserted meta color-scheme before existing in head applies
+        - test: meta-color-scheme-remove.html
+          subtest: First meta applies.
+        - test: meta-color-scheme-remove.html
+          subtest: Second meta applies after first one is removed.
+        - test: meta-color-scheme-single-value-in-body.html
+          subtest: Meta color-scheme in body should apply.
