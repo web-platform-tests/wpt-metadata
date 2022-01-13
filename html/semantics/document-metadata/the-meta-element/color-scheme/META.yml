@@ -49,3 +49,10 @@ links:
           subtest: Set content attribute of meta color-scheme to 'dark'.
         - test: meta-color-scheme-single-value-in-body.html
           subtest: Meta color-scheme in body should apply.
+    - product: chrome
+      url: https://crbug.com/1260617
+      results:
+        - test: meta-color-scheme-insert.html
+          subtest: Inserted meta color-scheme applies
+        - test: meta-color-scheme-insert.html
+          subtest: Inserted meta color-scheme before existing in head applies
