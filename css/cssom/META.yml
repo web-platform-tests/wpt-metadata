@@ -235,3 +235,16 @@ links:
       results:
         - test: page-descriptors.html
           subtest: Page descriptors shouldn't be exposed to CSS Style declarations
+    - product: chrome
+      url: https://crbug.com/1188410
+      results:
+        - test: shorthand-values.html
+          subtest: 'The serialization of border-top: 1px; border-right: 2px; border-bottom: 3px; border-left: 4px; should be canonical.'
+        - test: shorthand-values.html
+          subtest: 'The serialization of border-top: 1px; border-right: 1px; border-bottom: 1px; border-left: 1px; should be canonical.'
+        - test: shorthand-values.html
+          subtest: 'The serialization of border: 1px; border-top: 2px; should be canonical.'
+        - test: shorthand-values.html
+          subtest: 'The serialization of border: 1px; border-top: 1px !important; should be canonical.'
+        - test: shorthand-values.html
+          subtest: 'The serialization of border: 1px; border-top-color: red; should be canonical.'
