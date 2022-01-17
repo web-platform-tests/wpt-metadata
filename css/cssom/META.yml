@@ -248,3 +248,8 @@ links:
           subtest: 'The serialization of border: 1px; border-top: 1px !important; should be canonical.'
         - test: shorthand-values.html
           subtest: 'The serialization of border: 1px; border-top-color: red; should be canonical.'
+    - product: chrome
+      url: https://crbug.com/1287987
+      results:
+        - test: flex-serialization.html
+          subtest: CSSOM - Flex serialization
