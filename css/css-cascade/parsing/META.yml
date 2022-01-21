@@ -1,20 +1,24 @@
 links:
-- label: interop-2022-cascade
-  results:
-  - test: layer-import-parsing.html
-  - test: layer.html
-- product: firefox
-  results:
-  - subtest: '@import url("nonexist.css") layer(); should still be a valid import
-      rule with an invalid layer declaration'
-    test: layer-import-parsing.html
-  - subtest: '@import url("nonexist.css") layer(A B); should still be a valid import
-      rule with an invalid layer declaration'
-    test: layer-import-parsing.html
-  - subtest: '@import url("nonexist.css") layer(A . B); should still be a valid import
-      rule with an invalid layer declaration'
-    test: layer-import-parsing.html
-  - subtest: '@import url("nonexist.css") layer(A, B, C); should still be a valid
-      import rule with an invalid layer declaration'
-    test: layer-import-parsing.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1740396
+    - label: interop-2022-cascade
+      results:
+        - test: layer-import-parsing.html
+        - test: layer.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1740396
+      results:
+        - test: layer-import-parsing.html
+          subtest: '@import url("nonexist.css") layer(); should still be a valid import rule with an invalid layer declaration'
+        - test: layer-import-parsing.html
+          subtest: '@import url("nonexist.css") layer(A B); should still be a valid import rule with an invalid layer declaration'
+        - test: layer-import-parsing.html
+          subtest: '@import url("nonexist.css") layer(A . B); should still be a valid import rule with an invalid layer declaration'
+        - test: layer-import-parsing.html
+          subtest: '@import url("nonexist.css") layer(A, B, C); should still be a valid import rule with an invalid layer declaration'
+    - product: safari
+      url: https://bugs.webkit.org/show_bug.cgi?id=235434
+      results:
+        - test: layer-import-parsing.html
+    - product: webkitgtk
+      url: https://bugs.webkit.org/show_bug.cgi?id=235434
+      results:
+        - test: layer-import-parsing.html
