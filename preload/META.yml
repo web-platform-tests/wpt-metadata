@@ -36,3 +36,36 @@ links:
   - subtest: link rel=modulepreload with integrity match2
     test: modulepreload.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1706585
+- product: firefox
+  results:
+  - subtest: Same-origin script with incorrect hash.
+    test: subresource-integrity.html
+  - subtest: Same-origin script with sha256 match, sha512 mismatch
+    test: subresource-integrity.html
+  - subtest: '<crossorigin=''anonymous''> script with incorrect hash, ACAO: *'
+    test: subresource-integrity.html
+  - subtest: <crossorigin='use-credentials'> script with incorrect hash CORS-eligible
+    test: subresource-integrity.html
+  - subtest: <crossorigin='anonymous'> script with CORS-ineligible resource
+    test: subresource-integrity.html
+  - subtest: Cross-origin script, not CORS request, with correct hash
+    test: subresource-integrity.html
+  - subtest: Cross-origin script, not CORS request, with hash mismatch
+    test: subresource-integrity.html
+  - subtest: Same-origin style with incorrect hash.
+    test: subresource-integrity.html
+  - subtest: Same-origin style with sha256 match, sha512 mismatch
+    test: subresource-integrity.html
+  - subtest: '<crossorigin=''anonymous''> style with incorrect hash, ACAO: *'
+    test: subresource-integrity.html
+  - subtest: <crossorigin='use-credentials'> style with incorrect hash CORS-eligible
+    test: subresource-integrity.html
+  - subtest: <crossorigin='anonymous'> style with CORS-ineligible resource
+    test: subresource-integrity.html
+  - subtest: Cross-origin style, not CORS request, with correct hash
+    test: subresource-integrity.html
+  - subtest: Cross-origin style, not CORS request, with hash mismatch
+    test: subresource-integrity.html
+  - subtest: <crossorigin='anonymous'> image with CORS-ineligible resource
+    test: subresource-integrity.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1751835

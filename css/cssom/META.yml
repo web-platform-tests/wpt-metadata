@@ -218,3 +218,38 @@ links:
         - test: flex-serialization.html
         - test: shorthand-values.html
         - test: page-descriptors.html
+    - product: safari
+      url: https://bugs.webkit.org/show_bug.cgi?id=107380
+      results:
+        - test: cssstyledeclaration-setter-form-controls.html
+    - product: chrome
+      url: https://crbug.com/1275639
+      results:
+        - test: CSSStyleSheet-constructable.html
+        - test: CSSStyleSheet-constructable-baseURL.tentative.html
+    - label: interop-2022-forms
+      results:
+        - test: cssstyledeclaration-setter-form-controls.html
+    - product: chrome
+      url: https://crbug.com/1287514
+      results:
+        - test: page-descriptors.html
+          subtest: Page descriptors shouldn't be exposed to CSS Style declarations
+    - product: chrome
+      url: https://crbug.com/1188410
+      results:
+        - test: shorthand-values.html
+          subtest: 'The serialization of border-top: 1px; border-right: 2px; border-bottom: 3px; border-left: 4px; should be canonical.'
+        - test: shorthand-values.html
+          subtest: 'The serialization of border-top: 1px; border-right: 1px; border-bottom: 1px; border-left: 1px; should be canonical.'
+        - test: shorthand-values.html
+          subtest: 'The serialization of border: 1px; border-top: 2px; should be canonical.'
+        - test: shorthand-values.html
+          subtest: 'The serialization of border: 1px; border-top: 1px !important; should be canonical.'
+        - test: shorthand-values.html
+          subtest: 'The serialization of border: 1px; border-top-color: red; should be canonical.'
+    - product: chrome
+      url: https://crbug.com/1287987
+      results:
+        - test: flex-serialization.html
+          subtest: CSSOM - Flex serialization

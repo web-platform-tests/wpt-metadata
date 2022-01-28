@@ -157,27 +157,37 @@ links:
       subtest: Something should happen
       status: FAIL
     - test: c.html
+  - label: label1
+    results:
+    - test: a.html
+    - test: b.html
 `)
 	var metadata shared.Metadata
 	yaml.Unmarshal(fileInBytes, &metadata)
 
 	resultMetadata, resultLinks := deleteMetadata("a.html", metadata)
 
-	assert.Equal(t, 2, len(resultLinks))
+	assert.Equal(t, 3, len(resultLinks))
 	assert.Equal(t, "chrome", resultLinks[0].Product.BrowserName)
 	assert.Equal(t, "https://external.com/item", resultLinks[0].URL)
 	assert.Equal(t, 1, len(resultLinks[0].Results))
 	assert.Equal(t, "a.html", resultLinks[0].Results[0].TestPath)
 	assert.Equal(t, "firefox", resultLinks[1].Product.BrowserName)
 	assert.Equal(t, "https://bug.com/item", resultLinks[1].URL)
-	assert.Equal(t, 1, len(resultLinks[0].Results))
-	assert.Equal(t, "a.html", resultLinks[0].Results[0].TestPath)
+	assert.Equal(t, 1, len(resultLinks[1].Results))
+	assert.Equal(t, "a.html", resultLinks[1].Results[0].TestPath)
+	assert.Equal(t, "label1", resultLinks[2].Label)
+	assert.Equal(t, 1, len(resultLinks[2].Results))
+	assert.Equal(t, "a.html", resultLinks[1].Results[0].TestPath)
 
-	assert.Equal(t, 1, len(resultMetadata.Links))
+	assert.Equal(t, 2, len(resultMetadata.Links))
 	assert.Equal(t, "firefox", resultMetadata.Links[0].Product.BrowserName)
 	assert.Equal(t, "https://bug.com/item", resultMetadata.Links[0].URL)
 	assert.Equal(t, 1, len(resultMetadata.Links[0].Results))
 	assert.Equal(t, "c.html", resultMetadata.Links[0].Results[0].TestPath)
+	assert.Equal(t, "label1", resultMetadata.Links[1].Label)
+	assert.Equal(t, 1, len(resultMetadata.Links[1].Results))
+	assert.Equal(t, "b.html", resultMetadata.Links[1].Results[0].TestPath)
 }
 
 func TestGetYMLFilePath(t *testing.T) {

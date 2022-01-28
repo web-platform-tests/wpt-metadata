@@ -1,5 +1,16 @@
 links:
-    - product: chrome
-      url: https://bugs.chromium.org/p/chromedriver/issues/detail?id=3715
-      results:
-        - test: user_prompts.py
+- product: chrome
+  results:
+  - test: user_prompts.py
+  url: https://bugs.chromium.org/p/chromedriver/issues/detail?id=3715
+- product: firefox
+  results:
+  - subtest: test_element_not_found
+    test: get.py
+  - subtest: test_element_stale
+    test: get.py
+  - subtest: test_get_shadow_root
+    test: get.py
+  - subtest: test_no_shadow_root
+    test: get.py
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1738920

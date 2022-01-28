@@ -319,3 +319,38 @@ links:
         - test: minmax-length-serialize.html
         - test: minmax-time-computed.html
         - test: minmax-time-serialize.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1730254
+      results:
+        - test: minmax-length-percent-computed.html
+          subtest: calc(min(1.5em, 10%) - max(1em, 15%)) should be used-value-equivalent to -30px
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1742159
+      results:
+        - test: ic-unit-001.html
+        - test: ic-unit-002.html
+        - test: ic-unit-003.html
+        - test: ic-unit-004.html
+        - test: ic-unit-008.html
+        - test: ic-unit-009.html
+        - test: ic-unit-010.html
+        - test: ic-unit-011.html
+        - test: ic-unit-012.html
+        - test: ic-unit-013.html
+        - test: ic-unit-014.html
+    - label: interop-2022-text
+      results:
+        - test: ic-unit-001.html
+        - test: ic-unit-002.html
+        - test: ic-unit-003.html
+        - test: ic-unit-004.html
+        - test: ic-unit-008.html
+        - test: ic-unit-009.html
+        - test: ic-unit-010.html
+        - test: ic-unit-011.html
+        - test: ic-unit-012.html
+        - test: ic-unit-013.html
+        - test: ic-unit-014.html
+    - label: interop-2022-viewport
+      results:
+        - test: viewport-units-parsing.html

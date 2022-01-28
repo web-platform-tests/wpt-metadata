@@ -43,3 +43,12 @@ links:
   - subtest: roundRect() with Infinity/NaN is ignored
     test: 2d.path.roundrect.nonfinite.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1721233
+- product: firefox
+  results:
+  - subtest: Verify that when one radius is given to roundRect(), specified as a DOMPoint,
+      it applies to all corners.
+    test: 2d.path.roundrect.1.radius.dompoint.html
+  - subtest: Verify that when one radius is given to roundRect(), specified as a DOMPointInit,
+      applies to all corners.
+    test: 2d.path.roundrect.1.radius.dompointinit.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1748765

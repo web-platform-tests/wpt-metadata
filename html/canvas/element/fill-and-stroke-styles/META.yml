@@ -1,45 +1,52 @@
 links:
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1646754
-      results:
-        - test: 2d.pattern.image.incomplete.reload.html
-          subtest: 'Canvas test: 2d.pattern.image.incomplete.reload'
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1711171
-      results:
-        - test: 2d.gradient.conic.negative.rotation.html
-          subtest: Conic gradient function exists
-        - test: 2d.gradient.conic.positive.rotation.html
-          subtest: Conic gradient function exists
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1711285
-      results:
-        - test: 2d.gradient.conic.negative.rotation.html
-          subtest: Conic gradient with negative rotation
-        - test: 2d.gradient.conic.positive.rotation.html
-          subtest: Conic gradient with positive rotation
-    - product: chrome
-      url: https://bugs.chromium.org/p/chromium/issues/detail?id=1187575
-      results:
-        - test: 2d.strokeStyle.colorObject.html
-        - test: 2d.strokeStyle.colorObject.transparency.html
-        - test: 2d.fillStyle.colorObject.html
-        - test: 2d.fillStyle.colorObject.transparency.html
-    - product: chrome
-      url: https://bugs.chromium.org/p/chromium/issues/detail?id=1208511
-      results:
-        - test: 2d.gradient.conic.negative.rotation.html
-        - test: 2d.gradient.conic.positive.rotation.html
-    - product: chrome
-      url: https://bugs.chromium.org/p/chromium/issues/detail?id=1170337
-      results:
-        - test: 2d.gradient.interpolate.zerosize.fillText.html
-        - test: 2d.gradient.interpolate.zerosize.strokeText.html
-    - product: chrome
-      url: https://bugs.chromium.org/p/chromium/issues/detail?id=1230183
-      results:
-        - test: 2d.pattern.image.zeroheight.html
-        - test: 2d.pattern.image.zerowidth.html
-        - test: 2d.pattern.svgimage.zeroheight.html
-        - test: 2d.pattern.svgimage.zerowidth.html
-        - test: 2d.pattern.image.broken.html
+- product: firefox
+  results:
+  - subtest: 'Canvas test: 2d.pattern.image.incomplete.reload'
+    test: 2d.pattern.image.incomplete.reload.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1646754
+- product: firefox
+  results:
+  - subtest: Conic gradient function exists
+    test: 2d.gradient.conic.negative.rotation.html
+  - subtest: Conic gradient function exists
+    test: 2d.gradient.conic.positive.rotation.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1711171
+- product: firefox
+  results:
+  - subtest: Conic gradient with negative rotation
+    test: 2d.gradient.conic.negative.rotation.html
+  - subtest: Conic gradient with positive rotation
+    test: 2d.gradient.conic.positive.rotation.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1711285
+- product: chrome
+  results:
+  - test: 2d.strokeStyle.colorObject.html
+  - test: 2d.strokeStyle.colorObject.transparency.html
+  - test: 2d.fillStyle.colorObject.html
+  - test: 2d.fillStyle.colorObject.transparency.html
+  url: https://bugs.chromium.org/p/chromium/issues/detail?id=1187575
+- product: chrome
+  results:
+  - test: 2d.gradient.conic.negative.rotation.html
+  - test: 2d.gradient.conic.positive.rotation.html
+  url: https://bugs.chromium.org/p/chromium/issues/detail?id=1208511
+- product: chrome
+  results:
+  - test: 2d.gradient.interpolate.zerosize.fillText.html
+  - test: 2d.gradient.interpolate.zerosize.strokeText.html
+  url: https://bugs.chromium.org/p/chromium/issues/detail?id=1170337
+- product: chrome
+  results:
+  - test: 2d.pattern.image.zeroheight.html
+  - test: 2d.pattern.image.zerowidth.html
+  - test: 2d.pattern.svgimage.zeroheight.html
+  - test: 2d.pattern.svgimage.zerowidth.html
+  - test: 2d.pattern.image.broken.html
+  url: https://bugs.chromium.org/p/chromium/issues/detail?id=1230183
+- product: firefox
+  results:
+  - subtest: CSSHSL works as color input
+    test: 2d.fillStyle.CSSHSL.html
+  - subtest: CSSRGB works as color input
+    test: 2d.fillStyle.CSSRGB.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1745919

@@ -1,23 +1,29 @@
 links:
-    - product: chrome
-      url: https://crbug.com/922618
-      results:
-        - test: link-multiple-load-events.html
-        - test: link-multiple-error-events.html
-    - product: chrome
-      url: https://crbug.com/803942
-      results:
-        - test: link-style-error-01.html
-          status: FAIL
-    - product: chrome
-      url: https://bugs.chromium.org/p/chromium/issues/detail?id=803942
-      results:
-        - test: link-style-error-limited-quirks.html
-        - test: link-style-error-quirks.html
-    - product: chrome
-      url: https://bugs.chromium.org/p/chromium/issues/detail?id=922618
-      results:
-        - test: link-error-fired-before-scripting-unblocked.html
-        - test: link-load-error-events.html
-        - test: link-load-error-events.https.html
-        - test: link-load-fired-before-scripting-unblocked.html
+- product: chrome
+  results:
+  - test: link-multiple-load-events.html
+  - test: link-multiple-error-events.html
+  url: https://crbug.com/922618
+- product: chrome
+  results:
+  - status: FAIL
+    test: link-style-error-01.html
+  url: https://crbug.com/803942
+- product: chrome
+  results:
+  - test: link-style-error-limited-quirks.html
+  - test: link-style-error-quirks.html
+  url: https://bugs.chromium.org/p/chromium/issues/detail?id=803942
+- product: chrome
+  results:
+  - test: link-error-fired-before-scripting-unblocked.html
+  - test: link-load-error-events.html
+  - test: link-load-error-events.https.html
+  - test: link-load-fired-before-scripting-unblocked.html
+  url: https://bugs.chromium.org/p/chromium/issues/detail?id=922618
+- product: firefox
+  results:
+  - subtest: Check that a style sheet loaded by a <link> is available until its successor
+      is loaded
+    test: stylesheet-not-removed-until-next-stylesheet-loads.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1729758

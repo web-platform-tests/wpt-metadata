@@ -1,5 +1,12 @@
 links:
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1597529
-      results:
-        - test: '*'
+- product: firefox
+  results:
+  - test: '*'
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1597529
+- product: firefox
+  results:
+  - subtest: 'contain-intrinsic-size: auto'
+    test: auto-004.html
+  - subtest: 'contain-intrinsic-size: auto'
+    test: auto-005.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1744844

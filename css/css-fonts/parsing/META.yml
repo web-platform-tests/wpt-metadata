@@ -95,3 +95,44 @@ links:
           subtest: 800 made lighter computes to 700
         - test: font-weight-computed.html
           subtest: 900 made lighter computes to 700
+    - product: webkitgtk
+      url: https://bugs.webkit.org/show_bug.cgi?id=232009
+      results:
+        - test: font-synthesis-style-valid.html
+        - test: font-synthesis-weight-valid.html
+        - test: font-synthesis-small-caps-valid.html
+    - product: safari
+      url: https://bugs.webkit.org/show_bug.cgi?id=232009
+      results:
+        - test: font-synthesis-style-valid.html
+        - test: font-synthesis-weight-valid.html
+        - test: font-synthesis-small-caps-valid.html
+    - product: webkitgtk
+      url: https://bugs.webkit.org/show_bug.cgi?id=186344
+      results:
+        - test: font-synthesis-computed.html
+        - test: font-synthesis-valid.html
+    - product: safari
+      url: https://bugs.webkit.org/show_bug.cgi?id=186344
+      results:
+        - test: font-synthesis-computed.html
+        - test: font-synthesis-valid.html
+    - label: interop-2022-text
+      results:
+        - test: font-variant-caps-computed.html
+        - test: font-variant-caps-invalid.html
+        - test: font-variant-caps-valid.html
+        - test: font-variant-east-asian-computed.html
+        - test: font-variant-east-asian-invalid.html
+        - test: font-variant-east-asian-valid.html
+        - test: font-variant-invalid.html
+        - test: font-variant-ligatures-computed.html
+        - test: font-variant-ligatures-invalid.html
+        - test: font-variant-ligatures-valid.html
+        - test: font-variant-numeric-computed.html
+        - test: font-variant-numeric-invalid.html
+        - test: font-variant-numeric-valid.html
+        - test: font-variant-position-computed.html
+        - test: font-variant-position-invalid.html
+        - test: font-variant-position-valid.html
+        - test: font-variant-valid.html

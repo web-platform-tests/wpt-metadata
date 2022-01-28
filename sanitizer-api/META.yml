@@ -1,0 +1,134 @@
+links:
+    - product: chrome
+      url: https://bugs.chromium.org/p/chromium/issues/detail?id=1254369
+      results:
+        - test: element-set-sanitized-html.https.tentative.html
+          subtest: 'Sanitizer: Element.setHTML with config: empty object'
+        - test: element-set-sanitized-html.https.tentative.html
+          subtest: 'Sanitizer: Element.setHTML with config: broken html'
+        - test: element-set-sanitized-html.https.tentative.html
+          subtest: 'Sanitizer: Element.setHTML with config: number'
+        - test: element-set-sanitized-html.https.tentative.html
+          subtest: 'Sanitizer: Element.setHTML with config: onclick scripts'
+        - test: element-set-sanitized-html.https.tentative.html
+          subtest: 'Sanitizer: Element.setHTML with config: string'
+        - test: element-set-sanitized-html.https.tentative.html
+          subtest: 'Sanitizer: Element.setHTML with config: html fragment'
+        - test: element-set-sanitized-html.https.tentative.html
+          subtest: 'Sanitizer: Element.setHTML with config: zeros'
+        - test: element-set-sanitized-html.https.tentative.html
+          subtest: 'Sanitizer: Element.setHTML with config: arithmetic'
+        - test: element-set-sanitized-html.https.tentative.html
+          subtest: 'Sanitizer: Element.setHTML with config: empty string'
+        - test: element-set-sanitized-html.https.tentative.html
+          subtest: 'Sanitizer: Element.setHTML with config: undefined'
+        - test: element-set-sanitized-html.https.tentative.html
+          subtest: 'Sanitizer: Element.setHTML with config: document'
+        - test: element-set-sanitized-html.https.tentative.html
+          subtest: 'Sanitizer: Element.setHTML with config: html without close tag'
+        - test: element-set-sanitized-html.https.tentative.html
+          subtest: 'Sanitizer: Element.setHTML with config: scripts for default configs'
+        - test: element-set-sanitized-html.https.tentative.html
+          subtest: 'Sanitizer: Element.setHTML with config: plaintext'
+        - test: element-set-sanitized-html.https.tentative.html
+          subtest: 'Sanitizer: Element.setHTML with config: xmp'
+        - test: element-set-sanitized-html.https.tentative.html
+          subtest: 'Sanitizer: Element.setHTML with config: invalid config_input'
+        - test: element-set-sanitized-html.https.tentative.html
+          subtest: 'Sanitizer: Element.setHTML with config: empty dropElements list'
+        - test: element-set-sanitized-html.https.tentative.html
+          subtest: 'Sanitizer: Element.setHTML with config: test html without close tag with dropElements list [''div'']'
+        - test: element-set-sanitized-html.https.tentative.html
+          subtest: 'Sanitizer: Element.setHTML with config: default behavior for custom elements'
+        - test: element-set-sanitized-html.https.tentative.html
+          subtest: 'Sanitizer: Element.setHTML with config: allow custom elements with allow elements'
+        - test: element-set-sanitized-html.https.tentative.html
+          subtest: 'Sanitizer: Element.setHTML with config: allow custom elements'
+        - test: element-set-sanitized-html.https.tentative.html
+          subtest: 'Sanitizer: Element.setHTML with config: disallow custom elements'
+        - test: element-set-sanitized-html.https.tentative.html
+          subtest: 'Sanitizer: Element.setHTML with config: allow custom elements with drop list contains ["custom-element"]'
+        - test: element-set-sanitized-html.https.tentative.html
+          subtest: 'Sanitizer: Element.setHTML with config: test script with ["script"] as dropElements list'
+        - test: element-set-sanitized-html.https.tentative.html
+          subtest: 'Sanitizer: Element.setHTML with config: dropElements list ["test-element", "i"]}'
+        - test: element-set-sanitized-html.https.tentative.html
+          subtest: 'Sanitizer: Element.setHTML with config: dropElements list ["I", "DL"]}'
+        - test: element-set-sanitized-html.https.tentative.html
+          subtest: 'Sanitizer: Element.setHTML with config: dropElements list ["dl", "p"]}'
+        - test: element-set-sanitized-html.https.tentative.html
+          subtest: 'Sanitizer: Element.setHTML with config: blockElements list with invalid values'
+        - test: element-set-sanitized-html.https.tentative.html
+          subtest: 'Sanitizer: Element.setHTML with config: dropElements list with invalid values'
+        - test: element-set-sanitized-html.https.tentative.html
+          subtest: 'Sanitizer: Element.setHTML with config: allowElements list ["p"]'
+        - test: element-set-sanitized-html.https.tentative.html
+          subtest: 'Sanitizer: Element.setHTML with config: allowElements list has no influence to dropElements'
+        - test: element-set-sanitized-html.https.tentative.html
+          subtest: 'Sanitizer: Element.setHTML with config: allowElements list ["p", "test"]'
+        - test: element-set-sanitized-html.https.tentative.html
+          subtest: 'Sanitizer: Element.setHTML with config: dropAttributes list {"style": ["p"]} with style attribute'
+        - test: element-set-sanitized-html.https.tentative.html
+          subtest: 'Sanitizer: Element.setHTML with config: dropAttributes list {"*": ["a"]} with style attribute'
+        - test: element-set-sanitized-html.https.tentative.html
+          subtest: 'Sanitizer: Element.setHTML with config: empty dropAttributes list with id attribute'
+        - test: element-set-sanitized-html.https.tentative.html
+          subtest: 'Sanitizer: Element.setHTML with config: dropAttributes list {"id": ["*"]} with id attribute'
+        - test: element-set-sanitized-html.https.tentative.html
+          subtest: 'Sanitizer: Element.setHTML with config: dropAttributes list {"ID": ["*"]} with id attribute'
+        - test: element-set-sanitized-html.https.tentative.html
+          subtest: 'Sanitizer: Element.setHTML with config: dropAttributes list {"data-attribute-with-dashes": ["*"]} with dom dataset js access'
+        - test: element-set-sanitized-html.https.tentative.html
+          subtest: 'Sanitizer: Element.setHTML with config: allowAttributes list {"id": ["div"]} with id attribute'
+        - test: element-set-sanitized-html.https.tentative.html
+          subtest: 'Sanitizer: Element.setHTML with config: allowAttributes list {"id": ["*"]} with id attribute and onclick scripts'
+        - test: element-set-sanitized-html.https.tentative.html
+          subtest: 'Sanitizer: Element.setHTML with config: allowAttributes list {"*": ["a"]} with style attribute'
+        - test: element-set-sanitized-html.https.tentative.html
+          subtest: 'Sanitizer: Element.setHTML with config: allowAttributes list has no influence to dropAttributes'
+        - test: element-set-sanitized-html.https.tentative.html
+          subtest: 'Sanitizer: Element.setHTML with config: Template element'
+        - test: element-set-sanitized-html.https.tentative.html
+          subtest: 'Sanitizer: Element.setHTML with config: HTMLAnchorElement with javascript protocal'
+        - test: element-set-sanitized-html.https.tentative.html
+          subtest: 'Sanitizer: Element.setHTML with config: HTMLAnchorElement with javascript protocal start with space'
+        - test: element-set-sanitized-html.https.tentative.html
+          subtest: 'Sanitizer: Element.setHTML with config: HTMLAnchorElement'
+        - test: element-set-sanitized-html.https.tentative.html
+          subtest: 'Sanitizer: Element.setHTML with config: HTMLAreaElement with javascript protocal'
+        - test: element-set-sanitized-html.https.tentative.html
+          subtest: 'Sanitizer: Element.setHTML with config: HTMLAreaElement with javascript protocal start with space'
+        - test: element-set-sanitized-html.https.tentative.html
+          subtest: 'Sanitizer: Element.setHTML with config: HTMLAreaElement'
+        - test: element-set-sanitized-html.https.tentative.html
+          subtest: 'Sanitizer: Element.setHTML with config: HTMLFormElement with javascript action'
+        - test: element-set-sanitized-html.https.tentative.html
+          subtest: 'Sanitizer: Element.setHTML with config: HTMLFormElement with javascript action start with space'
+        - test: element-set-sanitized-html.https.tentative.html
+          subtest: 'Sanitizer: Element.setHTML with config: HTMLFormElement'
+        - test: element-set-sanitized-html.https.tentative.html
+          subtest: 'Sanitizer: Element.setHTML with config: HTML with comments deeper in the tree, !allowComments'
+        - test: element-set-sanitized-html.https.tentative.html
+          subtest: 'Sanitizer: Element.setHTML with config: HTML with comments deeper in the tree, allowComments'
+        - test: element-set-sanitized-html.https.tentative.html
+          subtest: 'Sanitizer: Element.setHTML with config: HTML with comments deeper in the tree'
+        - test: element-set-sanitized-html.https.tentative.html
+          subtest: 'Sanitizer: Element.setHTML with config: HTML with comments; !allowComments'
+        - test: element-set-sanitized-html.https.tentative.html
+          subtest: 'Sanitizer: Element.setHTML with config: HTML with comments; allowComments'
+        - test: element-set-sanitized-html.https.tentative.html
+          subtest: 'Sanitizer: Element.setHTML with config: HTML with comments; comments not allowed'
+        - test: element-set-sanitized-html.https.tentative.html
+          subtest: 'Sanitizer: Element.setHTML with config: malformed HTML'
+        - test: element-set-sanitized-html.https.tentative.html
+          subtest: 'Sanitizer: Element.setHTML with config: HTMLButtonElement'
+        - test: element-set-sanitized-html.https.tentative.html
+          subtest: 'Sanitizer: Element.setHTML with config: HTMLButtonElement with javascript formaction start with space'
+        - test: element-set-sanitized-html.https.tentative.html
+          subtest: 'Sanitizer: Element.setHTML with config: HTMLButtonElement with javascript formaction'
+        - test: element-set-sanitized-html.https.tentative.html
+          subtest: 'Sanitizer: Element.setHTML with config: HTMLInputElement'
+        - test: element-set-sanitized-html.https.tentative.html
+          subtest: 'Sanitizer: Element.setHTML with config: HTMLInputElement with javascript formaction start with space'
+        - test: element-set-sanitized-html.https.tentative.html
+          subtest: 'Sanitizer: Element.setHTML with config: HTMLInputElement with javascript formaction'

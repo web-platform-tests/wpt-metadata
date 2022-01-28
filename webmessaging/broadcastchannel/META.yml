@@ -12,3 +12,8 @@ links:
       results:
         - test: workers.html
           status: FAIL
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1738161
+      results:
+        - test: detached-iframe.html
+          subtest: BroadcastChannel messages within detached iframe should be ignored (BCs created after detaching)

@@ -136,3 +136,20 @@ links:
         - test: html5-table-formatting-fixed-layout-1.html
         - test: table-model-fixup.html
         - test: collapsed-border-positioned-tr-td.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1727671
+      results:
+        - test: table-cell-overflow-auto.html
+    - product: safari
+      url: https://bugs.webkit.org/show_bug.cgi?id=232405
+      results:
+        - test: fixed-layout-2.html
+    - product: webkitgtk
+      url: https://bugs.webkit.org/show_bug.cgi?id=232405
+      results:
+        - test: fixed-layout-2.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1740816
+      results:
+        - test: fixed-layout-2.html
+          subtest: Table-layout:fixed is applied when width is min-content

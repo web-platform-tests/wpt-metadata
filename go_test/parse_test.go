@@ -46,11 +46,29 @@ func TestParseMetadata(t *testing.T) {
 			assert.Equal(t, 1, linkCount, "YML file should contain exactly one links: key")
 			assert.Greater(t, len(metadata.Links), 0)
 			linkMap := make(map[string]string)
+			labelSet := mapset.NewSet()
 			for _, link := range metadata.Links {
-				_, err := url.ParseRequestURI(link.URL)
-				assert.Nil(t, err)
-				assert.Greater(t, len(link.Results), 0)
+				// Check if it is a test-level link,
+				if link.Product.String() == "" {
+					checkTestLevelLinks(t, link)
+				}
+
+				if link.URL != "" {
+					_, err := url.ParseRequestURI(link.URL)
+					assert.Nil(t, err)
+				} else {
+					assert.True(t, link.Label != "", "url and label cannot both be empty.")
+				}
+
+				if link.Label != "" {
+					// Check duplicated labels.
+					assert.False(t, labelSet.Contains(link.Label), fmt.Sprintf("label %s already exists", link.Label))
+					labelSet.Add(link.Label)
+					assert.True(t, link.Product.String() == "", "label is present at the test-level only.")
+				}
 				checkDuplicationAcrossLinks(t, link, linkMap)
+
+				assert.Greater(t, len(link.Results), 0)
 				resultSet := mapset.NewSet()
 				for _, result := range link.Results {
 					assert.Greater(t, len(result.TestPath), 0)
@@ -65,7 +83,7 @@ func TestParseMetadata(t *testing.T) {
 
 func checkDuplicationAcrossLinks(t *testing.T, link shared.MetadataLink, linkMap map[string]string) {
 	val, ok := linkMap[link.URL]
-	expected := serializeStrings(link.Product.String())
+	expected := serializeStrings(link.Product.String(), link.Label)
 	if ok {
 		assert.NotEqual(t, val, expected, "duplicated entries between two links")
 	}
@@ -93,4 +111,11 @@ func serializeStrings(val ...string) string {
 	}
 
 	return returnVal
+}
+
+func checkTestLevelLinks(t *testing.T, link shared.MetadataLink) {
+	// Subtest should be empty for a test-level link.
+	for _, result := range link.Results {
+		assert.Nil(t, result.SubtestName, fmt.Sprintf("subtest should be empty for a test-level link"))
+	}
 }

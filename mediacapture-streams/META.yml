@@ -46,6 +46,10 @@ links:
       url: https://bugzilla.mozilla.org/show_bug.cgi?id=1179084
       results:
         - test: MediaStreamTrack-getCapabilities.https.html
+    - product: safari
+      url: https://bugs.webkit.org/show_bug.cgi?id=169871
+      results:
+        - test: MediaStreamTrack-getCapabilities.https.html
     - product: chrome
       url: https://crbug.com/1149397
       results:
@@ -54,3 +58,29 @@ links:
       url: https://crbug.com/1149999
       results:
         - test: MediaDevices-after-discard.https.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1433480
+      results:
+        - test: MediaDevices-getSupportedConstraints.https.html
+          subtest: resizeMode is supported
+        - test: MediaDevices-getUserMedia.https.html
+          subtest: getUserMedia() supports setting none as resizeMode.
+          status: FAIL
+        - test: MediaStreamTrack-applyConstraints.https.html
+          subtest: applyConstraints rejects invalid resizeMode
+        - test: MediaStreamTrack-getSettings.https.html
+          subtest: resizeMode is reported by getSettings() for getUserMedia() video tracks
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1388586
+      results:
+        - test: MediaDevices-getSupportedConstraints.https.html
+          subtest: sampleRate is supported
+        - test: MediaStreamTrack-getSettings.https.html
+          subtest: sampleRate is reported by getSettings() for getUserMedia() audio tracks
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1306034
+      results:
+        - test: MediaDevices-getSupportedConstraints.https.html
+          subtest: aspectRatio is supported
+        - test: MediaStreamTrack-getSettings.https.html
+          subtest: aspectRatio is reported by getSettings() for getUserMedia() video tracks

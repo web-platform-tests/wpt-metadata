@@ -1,5 +1,10 @@
 links:
-    - product: chrome
-      url: https://bugs.chromium.org/p/chromium/issues/detail?id=1219803
-      results:
-        - test: '*'
+- product: chrome
+  results:
+  - test: '*'
+  url: https://bugs.chromium.org/p/chromium/issues/detail?id=1219803
+- product: firefox
+  results:
+  - status: CRASH
+    test: resolve-relative-to-base.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1730356
