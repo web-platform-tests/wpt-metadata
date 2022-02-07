@@ -268,18 +268,23 @@ links:
     test: focus-within-display-none-001.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1745027
 - product: chrome
-  url: https://crbug.com/576815
   results:
-  - test: dir-style-03a.html
-    status: FAIL
-  - test: dir-style-03b.html
-    status: FAIL
+  - status: FAIL
+    test: dir-style-03a.html
+  - status: FAIL
+    test: dir-style-03b.html
+  url: https://crbug.com/576815
 - product: chrome
-  url: https://bugs.chromium.org/p/chromium/issues/detail?id=576815
   results:
   - test: dir-style-01a.html
   - test: dir-style-01b.html
+  url: https://bugs.chromium.org/p/chromium/issues/detail?id=576815
 - product: chrome
-  url: https://bugs.chromium.org/p/chromium/issues/detail?id=1223958
   results:
   - test: dir-style-04.html
+  url: https://bugs.chromium.org/p/chromium/issues/detail?id=1223958
+- product: firefox
+  results:
+  - subtest: ':has(.bar, #foo) has same specificity as :has(#foo, .bar)'
+    test: has-specificity.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1753934
