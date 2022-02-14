@@ -1,19 +1,24 @@
 links:
-    - product: chrome
-      url: https://crbug.com/921880
-      results:
-        - test: link.html
-          status: FAIL
-    - product: chrome
-      url: https://crbug.com/939143
-      results:
-        - test: readwrite-readonly.html
-          status: FAIL
-    - product: chrome
-      url: https://crbug.com/576815
-      results:
-        - test: dir.html
-    - product: chrome
-      url: https://bugs.chromium.org/p/chromium/issues/detail?id=1164311
-      results:
-        - test: autofill.html
+- product: chrome
+  results:
+  - status: FAIL
+    test: link.html
+  url: https://crbug.com/921880
+- product: chrome
+  results:
+  - status: FAIL
+    test: readwrite-readonly.html
+  url: https://crbug.com/939143
+- product: chrome
+  results:
+  - test: dir.html
+  url: https://crbug.com/576815
+- product: chrome
+  results:
+  - test: autofill.html
+  url: https://bugs.chromium.org/p/chromium/issues/detail?id=1164311
+- product: firefox
+  results:
+  - subtest: Clicking on a disabled textarea should make it match the :active selector.
+    test: active-disabled.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1755395
