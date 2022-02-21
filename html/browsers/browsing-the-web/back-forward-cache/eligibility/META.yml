@@ -1,15 +1,19 @@
 links:
-- product: firefox
-  results:
-  - subtest: 'Eligibility (in-flight fetch): CORS succeeded when in BFCache'
-    test: inflight-fetch-cors.html
-  - subtest: 'Eligibility (in-flight fetch): CORS failed when in BFCache'
-    test: inflight-fetch-cors.html
-  - subtest: 'Eligibility (in-flight fetch): Header and body received when in BFCache'
-    test: inflight-fetch.html
-  - subtest: 'Eligibility (in-flight fetch): Header received when in BFCache and body
-      received after BFCache'
-    test: inflight-fetch.html
-  - subtest: 'Eligibility (in-flight fetch): Header and body received after BFCache'
-    test: inflight-fetch.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1752500
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1752500
+      results:
+        - test: inflight-fetch-cors.html
+          subtest: 'Eligibility (in-flight fetch): CORS succeeded when in BFCache'
+        - test: inflight-fetch-cors.html
+          subtest: 'Eligibility (in-flight fetch): CORS failed when in BFCache'
+        - test: inflight-fetch-2.html
+          subtest: 'Eligibility (in-flight fetch): Header and body received when in BFCache'
+        - test: inflight-fetch-2.html
+          subtest: 'Eligibility (in-flight fetch): Header received when in BFCache and body received after BFCache'
+        - test: inflight-fetch-2.html
+          subtest: 'Eligibility (in-flight fetch): Header and body received after BFCache'
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1754624
+      results:
+        - test: inflight-fetch-redirects.html
+          subtest: 'Eligibility (in-flight fetch): Cross-origin redirect header received when in BFCache w/ CSP failing'
