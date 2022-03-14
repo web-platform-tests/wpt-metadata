@@ -10,3 +10,16 @@ links:
       code
     test: getCurrentPosition_permission_deny.https.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1726805
+- product: firefox
+  results:
+  - test: watchPosition_permission_deny.https.html
+  - subtest: Check that watchPosition returns synchronously before any callbacks are
+      invoked.
+    test: watchPosition_permission_deny.https.html
+  - subtest: User denies access, check that error callback is called.
+    test: watchPosition_permission_deny.https.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1759020
+- product: firefox
+  results:
+  - test: getCurrentPosition_permission_deny.https.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1759050
