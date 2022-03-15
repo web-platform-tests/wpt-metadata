@@ -1,6 +1,19 @@
 links:
-    - product: chrome
-      url: https://bugs.chromium.org/p/chromium/issues/detail?id=1222729
-      results:
-        - test: custom-attrs.html
-        - test: dir_auto-N-EN-ref.html
+- product: chrome
+  results:
+  - test: custom-attrs.html
+  - test: dir_auto-N-EN-ref.html
+  url: https://bugs.chromium.org/p/chromium/issues/detail?id=1222729
+- product: firefox
+  results:
+  - subtest: No parent node
+    test: translate-inherit-no-parent-element.html
+  - subtest: DocumentFragment parent node
+    test: translate-inherit-no-parent-element.html
+  - subtest: ShadowRoot parent node whose shadow host has translate=yes
+    test: translate-inherit-no-parent-element.html
+  - subtest: ShadowRoot parent node whose shadow host has translate=no
+    test: translate-inherit-no-parent-element.html
+  - subtest: Document parent node
+    test: translate-inherit-no-parent-element.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1758816
