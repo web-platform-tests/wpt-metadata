@@ -34,3 +34,10 @@ links:
           subtest: ElementInternals.shadowRoot allows access to open shadow root
         - test: element-internals-shadowroot.html
           subtest: ElementInternals.shadowRoot allows access to closed shadow root
+    - product: chrome
+      url: https://crbug.com/1116970
+      results:
+        - test: CustomElementRegistry.html
+          subtest: A promise returned by customElements.whenDefined must be resolved with the defined class once such class is defined
+        - test: CustomElementRegistry.html
+          subtest: A promise returned by customElements.whenDefined must be resolved with the defined class
