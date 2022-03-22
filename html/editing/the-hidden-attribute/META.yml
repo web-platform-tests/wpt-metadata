@@ -1,0 +1,18 @@
+links:
+- product: firefox
+  results:
+  - subtest: div.removeAttribute('hidden')
+    test: hidden-ua-stylesheet.html
+  - subtest: div.setAttribute('hidden', '')
+    test: hidden-ua-stylesheet.html
+  - subtest: div.setAttribute('hidden', 'asdf')
+    test: hidden-ua-stylesheet.html
+  - subtest: div.setAttribute('hidden', 'until-found')
+    test: hidden-ua-stylesheet.html
+  - subtest: div.setAttribute('hidden', 'UNTIL-FOUND')
+    test: hidden-ua-stylesheet.html
+  - subtest: div.setAttribute('hidden', 'UnTiL-FoUnD')
+    test: hidden-ua-stylesheet.html
+  - subtest: div.setAttribute('hidden', '0')
+    test: hidden-ua-stylesheet.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1760492
