@@ -74,3 +74,12 @@ links:
   - test: avoid-delaying-onload-link-modulepreload-exec.html
   - test: avoid-delaying-onload-link-modulepreload.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1759049
+- product: firefox
+  results:
+  - subtest: image documents should respect preload Link headers
+    test: link-header-preload-non-html.html
+  - subtest: media documents should respect preload Link headers
+    test: link-header-preload-non-html.html
+  - subtest: invalid image documents should respect preload Link headers
+    test: link-header-preload-non-html.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1760779
