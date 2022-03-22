@@ -132,3 +132,12 @@ links:
       results:
         - test: percentage-padding-orthogonal.html
           subtest: '#container width 399px after padding is applied. #second is removed from the rendering'
+    - product: chrome
+      url: https://crbug.com/1306012
+      results:
+        - test: container-name-computed.html
+          subtest: Property container-name value 'foo foo bar'
+        - test: container-name-computed.html
+          subtest: Property container-name value 'foo bar foo'
+        - test: container-name-computed.html
+          subtest: Property container-name value 'bar foo foo'
