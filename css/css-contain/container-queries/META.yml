@@ -123,3 +123,7 @@ links:
           subtest: 'style(not ((width: 1px) and (height: 2px)))'
         - test: query-evaluation.html
           subtest: 'style((height: 2px) or (not ((height: 2px) and (width: 1px))))'
+    - product: chrome
+      url: https://crbug.com/1273913
+      results:
+        - test: pseudo-elements-002.html
