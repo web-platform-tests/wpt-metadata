@@ -150,3 +150,8 @@ links:
           subtest: 'Container selector: none'
         - test: at-container-parsing.html
           subtest: 'Container selector: None'
+    - product: chrome
+      url: https://crbug.com/1294155
+      results:
+        - test: canvas-as-container-006.html
+          subtest: Focusable after container size change
