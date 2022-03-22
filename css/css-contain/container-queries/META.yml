@@ -143,3 +143,10 @@ links:
           subtest: Property container-name value 'foo bar foo'
         - test: container-name-computed.html
           subtest: Property container-name value 'bar foo foo'
+    - product: chrome
+      url: https://crbug.com/1306014
+      results:
+        - test: at-container-parsing.html
+          subtest: 'Container selector: none'
+        - test: at-container-parsing.html
+          subtest: 'Container selector: None'
