@@ -137,6 +137,8 @@ links:
           subtest: e.style['container-type'] = "style inline-size" should set the property value
         - test: container-type-parsing.html
           subtest: e.style['container-type'] = "style size" should set the property value
+        - test: container-parsing.html
+          subtest: e.style['container'] = "size style / none" should set the property value
     - product: chrome
       url: https://crbug.com/1273913
       results:
@@ -155,6 +157,12 @@ links:
           subtest: Property container-name value 'foo bar foo'
         - test: container-name-computed.html
           subtest: Property container-name value 'bar foo foo'
+        - test: container-name-computed.html
+          subtest: Property container-name value 'foo foo bar'
+        - test: container-name-computed.html
+          subtest: Property container-name value 'foo bar foo'
+        - test: container-name-computed.html
+          subtest: Property container-name value 'bar foo foo'
     - product: chrome
       url: https://crbug.com/1306014
       results:
@@ -167,6 +175,7 @@ links:
       results:
         - test: canvas-as-container-006.html
           subtest: Focusable after container size change
+        - test: canvas-as-container-004.html
     - product: chrome
       url: https://crbug.com/1306475
       results:
@@ -185,6 +194,6 @@ links:
         - test: fragmented-container-001.html
         - test: multicol-container-001.html
     - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1760453
       results:
         - test: layout-dependent-focus.html
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1760453
