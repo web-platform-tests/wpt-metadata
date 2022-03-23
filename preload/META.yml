@@ -83,3 +83,9 @@ links:
   - subtest: invalid image documents should respect preload Link headers
     test: link-header-preload-non-html.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1760779
+- product: firefox
+  results:
+  - subtest: Makes sure that preload requests respect CSP directives that are added
+      after the preload
+    test: preload-dynamic-csp.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1761021
