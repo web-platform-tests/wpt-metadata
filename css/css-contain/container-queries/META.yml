@@ -137,8 +137,6 @@ links:
           subtest: e.style['container-type'] = "style inline-size" should set the property value
         - test: container-type-parsing.html
           subtest: e.style['container-type'] = "style size" should set the property value
-        - test: container-parsing.html
-          subtest: e.style['container'] = "size style / none" should set the property value
     - product: chrome
       url: https://crbug.com/1273913
       results:
@@ -151,12 +149,6 @@ links:
     - product: chrome
       url: https://crbug.com/1306012
       results:
-        - test: container-name-computed.html
-          subtest: Property container-name value 'foo foo bar'
-        - test: container-name-computed.html
-          subtest: Property container-name value 'foo bar foo'
-        - test: container-name-computed.html
-          subtest: Property container-name value 'bar foo foo'
         - test: container-name-computed.html
           subtest: Property container-name value 'foo foo bar'
         - test: container-name-computed.html
