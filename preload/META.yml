@@ -89,3 +89,12 @@ links:
       after the preload
     test: preload-dynamic-csp.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1761021
+- product: firefox
+  results:
+  - subtest: '[Tentative] Same-origin script with matching digest does not reuse preload
+      with matching but stronger digest.'
+    test: subresource-integrity.html
+  - subtest: '[Tentative] Same-origin style with matching digest does not reuse preload
+      with matching but stronger digest.'
+    test: subresource-integrity.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1761990
