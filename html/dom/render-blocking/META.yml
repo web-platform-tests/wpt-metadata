@@ -11,3 +11,24 @@ links:
   - subtest: Script-inserted render-blocking module script is preloaded and evaluated
     test: script-inserted-modulepreload-link.tentative.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1760455
+- product: firefox
+  results:
+  - subtest: Rendering is blocked before render-blocking resources are loaded
+    test: parser-inserted-async-script.tentative.html
+  - subtest: Rendering is blocked before render-blocking resources are loaded
+    test: parser-inserted-defer-script.tentative.html
+  - subtest: Rendering is blocked before render-blocking resources are loaded
+    test: parser-inserted-module-script.tentative.html
+  - subtest: Rendering is blocked before render-blocking resources are loaded
+    test: parser-inserted-preload-link.tentative.html
+  - subtest: Render-blocking web font is applied
+    test: parser-inserted-preload-link.tentative.html
+  - subtest: Rendering is blocked before render-blocking resources are loaded
+    test: script-inserted-module-script.tentative.html
+  - subtest: Rendering is blocked before render-blocking resources are loaded
+    test: script-inserted-script.html
+  - subtest: Rendering is blocked before render-blocking resources are loaded
+    test: script-inserted-style-element.tentative.html
+  - subtest: Rendering is blocked before render-blocking resources are loaded
+    test: script-inserted-stylesheet-link.tentative.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1761889
