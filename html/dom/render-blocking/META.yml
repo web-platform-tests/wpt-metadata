@@ -32,3 +32,10 @@ links:
   - subtest: Rendering is blocked before render-blocking resources are loaded
     test: script-inserted-stylesheet-link.tentative.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1761889
+- product: firefox
+  results:
+  - subtest: Rendering is blocked before render-blocking resources are loaded
+    test: header-inserted-preload-link.tentative.html
+  - subtest: Render-blocking web font is applied
+    test: header-inserted-preload-link.tentative.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1762984
