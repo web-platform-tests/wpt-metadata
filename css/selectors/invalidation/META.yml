@@ -61,3 +61,22 @@ links:
   - subtest: Invalidation with :focus, :focus-within, :focus-visible in :has()
     test: user-action-pseudo-classes-in-has.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1759031
+- product: firefox
+  results:
+  - subtest: :checked & :indeterminate invalidation
+    test: input-pseudo-classes-in-has.html
+  - subtest: :disabled invalidation
+    test: input-pseudo-classes-in-has.html
+  - subtest: :read-only invalidation
+    test: input-pseudo-classes-in-has.html
+  - subtest: :valid invalidation
+    test: input-pseudo-classes-in-has.html
+  - subtest: :default invalidation with input[type=radio]
+    test: input-pseudo-classes-in-has.html
+  - subtest: :required invalidation
+    test: input-pseudo-classes-in-has.html
+  - subtest: :out-of-range invalidation
+    test: input-pseudo-classes-in-has.html
+  - subtest: :placeholder-shown invalidation
+    test: input-pseudo-classes-in-has.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1763454
