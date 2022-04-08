@@ -39,3 +39,21 @@ links:
   - subtest: Render-blocking web font is applied
     test: header-inserted-preload-link.tentative.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1762984
+- product: firefox
+  results:
+  - subtest: Rendering is blocked before render-blocking resources are loaded
+    test: parser-inserted-modulepreload-link.tentative.html
+  - subtest: Should not run the scroll steps when render-blocked
+    test: render-blocked-apis-by-preload-link.tentative.html
+  - subtest: Should not run the update animations and send events steps when render-blocked
+    test: render-blocked-apis-by-preload-link.tentative.html
+  - subtest: Should not run the evaluate media queries and report changes steps when
+      render-blocked
+    test: render-blocked-apis-by-preload-link.tentative.html
+  - subtest: Should not run the fullscreen steps when render-blocked
+    test: render-blocked-apis-by-preload-link.tentative.html
+  - subtest: Should not run animation frame callbacks when render-blocked
+    test: render-blocked-apis-by-preload-link.tentative.html
+  - subtest: Rendering is blocked before render-blocking resources are loaded
+    test: script-inserted-modulepreload-link.tentative.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1763737
