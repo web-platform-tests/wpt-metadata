@@ -98,3 +98,9 @@ links:
       with matching but stronger digest.'
     test: subresource-integrity.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1761990
+- product: firefox
+  results:
+  - subtest: Loading font (same-origin) with link (same-origin) should reuse the preloaded
+      response
+    test: preload-resource-match.https.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1765128
