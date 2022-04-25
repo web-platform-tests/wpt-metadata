@@ -104,3 +104,9 @@ links:
       response
     test: preload-resource-match.https.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1765128
+- product: firefox
+  results:
+  - subtest: Preload with {as=track; type=text/vtt} should load when retrieved resource
+      is a track
+    test: preload-type-match.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1766213
