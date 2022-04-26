@@ -1,0 +1,29 @@
+links:
+- product: firefox
+  results:
+  - test: popup-light-dismiss.tentative.html
+  - subtest: Clicking outside a popup will dismiss the popup
+    test: popup-light-dismiss.tentative.html
+  - subtest: Clicking inside a popup does not close that popup
+    test: popup-light-dismiss.tentative.html
+  - subtest: Clicking inside a child popup shouldn't close either popup
+    test: popup-light-dismiss.tentative.html
+  - subtest: Clicking inside a parent popup should close child popup
+    test: popup-light-dismiss.tentative.html
+  - subtest: Clicking on anchor element (that isn't an invoking element) shouldn't
+      close its popup
+    test: popup-light-dismiss.tentative.html
+  - subtest: Dragging from an open popup outside an open popup should leave the popup
+      open
+    test: popup-light-dismiss.tentative.html
+  - subtest: An invoking element should be part of the ancestor chain
+    test: popup-light-dismiss.tentative.html
+  - subtest: Moving focus back to the anchor element should not dismiss the popup
+    test: popup-light-dismiss.tentative.html
+  - subtest: Moving focus back to the active trigger element should not dismiss the
+      popup
+    test: popup-light-dismiss.tentative.html
+  - subtest: Moving focus back to an inactive trigger element should also *not* dismiss
+      the popup
+    test: popup-light-dismiss.tentative.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1766380
