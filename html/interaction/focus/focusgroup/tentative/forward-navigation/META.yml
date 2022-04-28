@@ -1,0 +1,41 @@
+links:
+- product: firefox
+  results:
+  - subtest: This test validates that we don't get stuck in an infinite loop searching
+      for a focusable element in the extending focusgroup that wraps that doesn't
+      contain one. Wrapping should only be allowed in the focusgroup that contains
+      the focusable element we started on or in one of its ancestors.
+    test: does-not-wrap-in-focusgroup-with-no-items.html
+  - subtest: When the focus is set on a focusgroup item which happens to also be an
+      extending focusgroup, an arrow key press should move the focus to the next item
+      within the extending focusgroup and skip non-focusable items.
+    test: moves-inside-extending-focusgroup.html
+  - subtest: When the focus is set on a focusgroup item, an arrow key press should
+      move the focus to the next item and skip non-focusable items.
+    test: moves-to-next-item-and-skips-non-focusable.html
+  - subtest: When the focus is set on a focusgroup item which happens to also be an
+      extending focusgroup, an arrow key press should move the focus to the next item
+      within the extending focusgroup and skip non-focusable items. If no valid candidate
+      is found within that extending focusgroup, the next element (in pre-order traversal)
+      should be considered. In this case, |item4| is the valid next candidate.
+    test: moves-to-next-item-outside-extending-focusgroup.html
+  - subtest: When the focus is set on a focusgroup item that is an ancestor to an
+      extending focusgroup, the focus should move to the next element inside that
+      extending focusgroup even if it's not a direct child.
+    test: moves-to-next-item-within-descendants.html
+  - subtest: When the focus is set on a focusgroup item, an arrow key press should
+      move the focus to the next item.
+    test: moves-to-next-item.html
+  - subtest: When the focus is set on the last item of a focusgroup that supports
+      wrapping in the axis of the arrow key pressed and the first item is in an inner
+      focusgroup that supports it too, the focus moves to that item in the inner focusgroup.
+    test: wraps-and-goes-into-inner-focusgroup.html
+  - subtest: When the focus is set on the last item of a focusgroup that supports
+      wrapping in the axis of the arrow key pressed, the focus should move back to
+      the first item.
+    test: wraps-successfully.html
+  - subtest: When the focus is set on the last item of an inner focusgroup that supports
+      wrapping while its parent focusgroup also does, the focus should move to the
+      first item of the parent focusgroup.
+    test: wraps-to-parent-focusgroup.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1766910

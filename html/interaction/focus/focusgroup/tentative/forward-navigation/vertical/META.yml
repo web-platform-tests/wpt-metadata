@@ -1,0 +1,25 @@
+links:
+- product: firefox
+  results:
+  - subtest: When the focus is set on an item of a focusgroup that only supports the
+      axis of the arrow key pressed the focus should move.
+    test: moves-when-only-current-axis-supported.html
+  - subtest: When the focus is set on an extending focusgroup element but that focusgroup
+      doesn't support the axis of the arrow key pressed, skip that subtree altogether.
+    test: skips-focusgroup-that-extends-in-orthogonal-axis.html
+  - subtest: When the focus is set on the last item of a focusgroup that supports
+      wrapping in the axis of the arrow key pressed and the first item is in an inner
+      focusgroup that doesn't support wrapping in the same axis, the focus moves to
+      the next item out of that inner focusgroup.
+    test: wraps-and-skips-orthogonal-inner-focusgroup.html
+  - subtest: When the focus is set on the last item of an inner focusgroup that supports
+      wrapping while its parent focusgroup doesn't (in the axis of the arrow key pressed),
+      the focus should move to the first item of the inner focusgroup even if there's
+      another focusgroup supporting wrapping in the same axis as the arrow key pressed
+      in the hierarchy.
+    test: wraps-in-appropriate-focusgroup.html
+  - subtest: When the focus is set on the last item of an inner focusgroup that supports
+      wrapping while its parent focusgroup doesn't (in the axis of the arrow key pressed),
+      the focus should move to the first item of the inner focusgroup.
+    test: wraps-in-inner-focusgroup.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1766910
