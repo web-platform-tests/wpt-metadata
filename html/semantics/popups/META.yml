@@ -229,3 +229,17 @@ links:
       with popup=async
     test: popup-invoking-attribute.tentative.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1767083
+- product: firefox
+  results:
+  - test: popup-backdrop-appearance.tentative.html
+  - subtest: Moving focus outside the popup will dismiss the popup
+    test: popup-light-dismiss.tentative.html
+  - subtest: An invoking element that was not used to invoke the popup can still be
+      part of the ancestor chain
+    test: popup-light-dismiss.tentative.html
+  - subtest: Ensure circular/convoluted ancestral relationships are functional
+    test: popup-light-dismiss.tentative.html
+  - subtest: Ensure circular/convoluted ancestral relationships are functional, with
+      a direct showPopup()
+    test: popup-light-dismiss.tentative.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1767555
