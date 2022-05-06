@@ -72,3 +72,19 @@ links:
       openee origin: https://www1.web-platform.test:8443.'
     test: navigate-to-aboutblank.https.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1733788
+- product: firefox
+  results:
+  - subtest: <iframe sandbox="allow-popups allow-scripts allow-same-origin"> Sandboxed
+      Cross-Origin-Opener-Policy popup should cut the opener if necessary
+    test: coop-sandbox-cuts-opener.https.html
+  - subtest: <iframe sandbox="allow-popups allow-scripts"> Sandboxed Cross-Origin-Opener-Policy
+      popup should cut the opener if necessary
+    test: coop-sandbox-cuts-opener.https.html
+  - subtest: <iframe sandbox="allow-popups allow-scripts allow-same-origin"> Sandboxed
+      Cross-Origin-Opener-Policy popup should cut the opener if necessary including
+      during redirects.
+    test: coop-sandbox-redirects-cuts-opener.https.html
+  - subtest: <iframe sandbox="allow-popups allow-scripts"> Sandboxed Cross-Origin-Opener-Policy
+      popup should cut the opener if necessary including during redirects.
+    test: coop-sandbox-redirects-cuts-opener.https.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1768249
