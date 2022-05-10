@@ -160,3 +160,46 @@ links:
       url: https://bugs.chromium.org/p/chromium/issues/detail?id=1322448
       results:
         - test: dialog-focusing-steps-disconnected.html
+    - product: chrome
+      url: https://crbug.com/383230
+      results:
+        - test: dialog-focus-shadow.html
+          subtest: 'show: No autofocus, no delegatesFocus, no siblings'
+        - test: dialog-focus-shadow.html
+          subtest: 'showModal: No autofocus, no delegatesFocus, no siblings'
+        - test: dialog-focus-shadow.html
+          subtest: 'show: No autofocus, no delegatesFocus, sibling after'
+        - test: dialog-focus-shadow.html
+          subtest: 'showModal: No autofocus, no delegatesFocus, sibling after'
+        - test: dialog-focus-shadow.html
+          subtest: 'show: Autofocus on shadow host, yes delegatesFocus, sibling before'
+        - test: dialog-focus-shadow.html
+          subtest: 'showModal: Autofocus on shadow host, yes delegatesFocus, sibling before'
+        - test: dialog-focus-shadow.html
+          subtest: 'show: Autofocus on shadow host, no delegatesFocus, no siblings'
+        - test: dialog-focus-shadow.html
+          subtest: 'showModal: Autofocus on shadow host, no delegatesFocus, no siblings'
+        - test: dialog-focus-shadow.html
+          subtest: 'show: Autofocus on shadow host, no delegatesFocus, sibling after'
+        - test: dialog-focus-shadow.html
+          subtest: 'showModal: Autofocus on shadow host, no delegatesFocus, sibling after'
+        - test: dialog-focus-shadow.html
+          subtest: 'show: Autofocus inside shadow tree, yes delegatesFocus, sibling before'
+        - test: dialog-focus-shadow.html
+          subtest: 'showModal: Autofocus inside shadow tree, yes delegatesFocus, sibling before'
+        - test: dialog-focus-shadow.html
+          subtest: 'show: Autofocus inside shadow tree, yes delegatesFocus, sibling after'
+        - test: dialog-focus-shadow.html
+          subtest: 'showModal: Autofocus inside shadow tree, yes delegatesFocus, sibling after'
+        - test: dialog-focus-shadow.html
+          subtest: 'show: Autofocus inside shadow tree, no delegatesFocus, no siblings'
+        - test: dialog-focus-shadow.html
+          subtest: 'showModal: Autofocus inside shadow tree, no delegatesFocus, no siblings'
+        - test: dialog-focus-shadow.html
+          subtest: 'show: Autofocus inside shadow tree, no delegatesFocus, sibling before'
+        - test: dialog-focus-shadow.html
+          subtest: 'showModal: Autofocus inside shadow tree, no delegatesFocus, sibling before'
+        - test: dialog-focus-shadow.html
+          subtest: 'show: Autofocus inside shadow tree, no delegatesFocus, sibling after'
+        - test: dialog-focus-shadow.html
+          subtest: 'showModal: Autofocus inside shadow tree, no delegatesFocus, sibling after'
