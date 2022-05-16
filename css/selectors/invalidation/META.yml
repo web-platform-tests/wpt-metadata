@@ -80,3 +80,94 @@ links:
   - subtest: :placeholder-shown invalidation
     test: input-pseudo-classes-in-has.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1763454
+- product: firefox
+  results:
+  - subtest: 'Prepend #div1.green: #only_child'
+    test: child-indexed-pseudo-classes-in-has.html
+  - subtest: 'Prepend #div1.green: #first_child'
+    test: child-indexed-pseudo-classes-in-has.html
+  - subtest: 'Prepend #div1.green: #last_child'
+    test: child-indexed-pseudo-classes-in-has.html
+  - subtest: 'Prepend #div1.green: #nth_child_3n_1'
+    test: child-indexed-pseudo-classes-in-has.html
+  - subtest: 'Prepend #div2.yellow: #first_child'
+    test: child-indexed-pseudo-classes-in-has.html
+  - subtest: 'Prepend #div2.yellow: #last_child'
+    test: child-indexed-pseudo-classes-in-has.html
+  - subtest: 'Prepend #div2.yellow: #nth_child_3n_1'
+    test: child-indexed-pseudo-classes-in-has.html
+  - subtest: 'Prepend #div3.orange: #first_child'
+    test: child-indexed-pseudo-classes-in-has.html
+  - subtest: 'Prepend #div3.orange: #last_child'
+    test: child-indexed-pseudo-classes-in-has.html
+  - subtest: 'Prepend #div3.orange: #nth_child_3n_1'
+    test: child-indexed-pseudo-classes-in-has.html
+  - subtest: 'Prepend #div4: #last_child'
+    test: child-indexed-pseudo-classes-in-has.html
+  - subtest: 'Prepend #div5: #last_child'
+    test: child-indexed-pseudo-classes-in-has.html
+  - subtest: 'Remove #div1: #last_child'
+    test: child-indexed-pseudo-classes-in-has.html
+  - subtest: 'Remove #div2: #last_child'
+    test: child-indexed-pseudo-classes-in-has.html
+  - subtest: 'Remove #div4: #only_child'
+    test: child-indexed-pseudo-classes-in-has.html
+  - subtest: 'Insert div#child to #subject'
+    test: empty-pseudo-in-has.html
+  - subtest: Insert div to div.#child
+    test: empty-pseudo-in-has.html
+  - subtest: 'Prepend #div1.green: #only_of_type'
+    test: typed-child-indexed-pseudo-classes-in-has.html
+  - subtest: 'Prepend #div1.green: #first_of_type'
+    test: typed-child-indexed-pseudo-classes-in-has.html
+  - subtest: 'Prepend #div1.green: #last_of_type'
+    test: typed-child-indexed-pseudo-classes-in-has.html
+  - subtest: 'Prepend #div1.green: #nth_of_type_3n_1'
+    test: typed-child-indexed-pseudo-classes-in-has.html
+  - subtest: 'Prepend span (2): #only_of_type'
+    test: typed-child-indexed-pseudo-classes-in-has.html
+  - subtest: 'Prepend span (2): #first_of_type'
+    test: typed-child-indexed-pseudo-classes-in-has.html
+  - subtest: 'Prepend span (2): #last_of_type'
+    test: typed-child-indexed-pseudo-classes-in-has.html
+  - subtest: 'Prepend span (2): #nth_of_type_3n_1'
+    test: typed-child-indexed-pseudo-classes-in-has.html
+  - subtest: 'Prepend #div2.yellow: #first_of_type'
+    test: typed-child-indexed-pseudo-classes-in-has.html
+  - subtest: 'Prepend #div2.yellow: #last_of_type'
+    test: typed-child-indexed-pseudo-classes-in-has.html
+  - subtest: 'Prepend #div2.yellow: #nth_of_type_3n_1'
+    test: typed-child-indexed-pseudo-classes-in-has.html
+  - subtest: 'Prepend span (3): #first_of_type'
+    test: typed-child-indexed-pseudo-classes-in-has.html
+  - subtest: 'Prepend span (3): #last_of_type'
+    test: typed-child-indexed-pseudo-classes-in-has.html
+  - subtest: 'Prepend span (3): #nth_of_type_3n_1'
+    test: typed-child-indexed-pseudo-classes-in-has.html
+  - subtest: 'Prepend #div3.orange: #first_of_type'
+    test: typed-child-indexed-pseudo-classes-in-has.html
+  - subtest: 'Prepend #div3.orange: #last_of_type'
+    test: typed-child-indexed-pseudo-classes-in-has.html
+  - subtest: 'Prepend #div3.orange: #nth_of_type_3n_1'
+    test: typed-child-indexed-pseudo-classes-in-has.html
+  - subtest: 'Prepend span (4): #first_of_type'
+    test: typed-child-indexed-pseudo-classes-in-has.html
+  - subtest: 'Prepend span (4): #last_of_type'
+    test: typed-child-indexed-pseudo-classes-in-has.html
+  - subtest: 'Prepend span (4): #nth_of_type_3n_1'
+    test: typed-child-indexed-pseudo-classes-in-has.html
+  - subtest: 'Prepend #div4: #last_of_type'
+    test: typed-child-indexed-pseudo-classes-in-has.html
+  - subtest: 'Prepend span (5): #last_of_type'
+    test: typed-child-indexed-pseudo-classes-in-has.html
+  - subtest: 'Prepend #div5: #last_of_type'
+    test: typed-child-indexed-pseudo-classes-in-has.html
+  - subtest: 'Prepend span (6): #last_of_type'
+    test: typed-child-indexed-pseudo-classes-in-has.html
+  - subtest: 'Remove #div1: #last_of_type'
+    test: typed-child-indexed-pseudo-classes-in-has.html
+  - subtest: 'Remove #div2: #last_of_type'
+    test: typed-child-indexed-pseudo-classes-in-has.html
+  - subtest: 'Remove #div4: #only_of_type'
+    test: typed-child-indexed-pseudo-classes-in-has.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1769566
