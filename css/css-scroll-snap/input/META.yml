@@ -1,38 +1,34 @@
 links:
-- product: firefox
-  results:
-  - subtest: If there is no valid snap offset on the arrow key's direction other than
-      the current offset, and the scroll-snap-type is proximity, go to the original
-      intended offset
-    test: keyboard.html
-  - subtest: If the original intended offset is valid as making a snap area cover
-      the snapport, but there's a defined snap offset in between, use the defined
-      snap offset.
-    test: keyboard.html
-  - subtest: Snaps to top-left after pressing ArrowUp
-    test: keyboard.html
-  - subtest: Snaps to top-left after pressing ArrowLeft
-    test: keyboard.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1642830
-- product: firefox
-  results:
-  - test: keyboard.html
-  - subtest: Snaps to top-right after pressing ArrowRight
-    test: keyboard.html
-  - subtest: If the original intended offset is valid as making a snap area cover
-      thesnapport, and there's no other snap offset in between, use the originalintended
-      offset
-    test: keyboard.html
-  - subtest: If there is no valid snap offset on the arrow key's direction other than
-      the current offset, and the scroll-snap-type is mandatory, stay at the current
-      offset.
-    test: keyboard.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1697384
-- product: firefox
-  results:
-  - test: snap-area-overflow-boundary.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1744876
-- label: interop-2022-scrolling
-  results:
-    - test: keyboard.html
-    - test: snap-area-overflow-boundary.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1642830
+      results:
+        - test: keyboard.html
+          subtest: If there is no valid snap offset on the arrow key's direction other than the current offset, and the scroll-snap-type is proximity, go to the original intended offset
+        - test: keyboard.html
+          subtest: If the original intended offset is valid as making a snap area cover the snapport, but there's a defined snap offset in between, use the defined snap offset.
+        - test: keyboard.html
+          subtest: Snaps to top-left after pressing ArrowUp
+        - test: keyboard.html
+          subtest: Snaps to top-left after pressing ArrowLeft
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1697384
+      results:
+        - test: keyboard.html
+        - test: keyboard.html
+          subtest: Snaps to top-right after pressing ArrowRight
+        - test: keyboard.html
+          subtest: If the original intended offset is valid as making a snap area cover thesnapport, and there's no other snap offset in between, use the originalintended offset
+        - test: keyboard.html
+          subtest: If there is no valid snap offset on the arrow key's direction other than the current offset, and the scroll-snap-type is mandatory, stay at the current offset.
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1744876
+      results:
+        - test: snap-area-overflow-boundary.html
+    - label: interop-2022-scrolling
+      results:
+        - test: keyboard.html
+        - test: snap-area-overflow-boundary.html
+    - product: chrome
+      url: https://bugs.chromium.org/p/chromium/issues/detail?id=1325838
+      results:
+        - test: snap-area-overflow-boundary.html
