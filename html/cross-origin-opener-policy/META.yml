@@ -1,74 +1,73 @@
 links:
-- product: firefox
-  results:
-  - subtest: 'same-origin with structured headers document opening popup to https://web-platform.test:8443
-      with COOP: "same-origin; report-to=endpoint"'
-    test: popup-with-structured-header.https.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1645233
-- product: firefox
-  results:
-  - subtest: 'unspecified document opening popup to https://web-platform.test:8443
-      with COOP: "same-origin;same-origin"'
-    test: header-parsing.https.html
-  - subtest: 'unspecified document opening popup to https://web-platform.test:8443
-      with COOP: "same-origin; foo=bar"'
-    test: header-parsing.https.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1661118
-- product: chrome
-  results:
-  - test: coop-csp-sandbox-navigate.https.html
-  url: https://crbug.com/1122582
-- product: firefox
-  results:
-  - subtest: Same origin popup redirects to same-origin with same-origin-allow-popups
-    test: popup-redirect-same-origin-allow-popups.https.html
-  - subtest: Cross origin popup redirects to same-origin with same-origin-allow-popups
-    test: popup-redirect-same-origin-allow-popups.https.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1697378
-- product: firefox
-  results:
-  - status: CRASH
-    test: navigate-to-aboutblank.https.html
-  - status: CRASH
-    test: navigate-top-to-aboutblank.https.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1697386
-- product: firefox
-  results:
-  - subtest: coop-same-origin-allow-popups-document-write
-    test: coop-same-origin-allow-popups-document-write.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1715463
-- product: firefox
-  results:
-  - test: popup-coop-by-sw.https.html?5-last
-  - subtest: opener:coi, openee:basic, sw:basic
-    test: popup-coop-by-sw.https.html?5-last
-  - subtest: opener:coi, openee:basic, sw:coi
-    test: popup-coop-by-sw.https.html?5-last
-  - subtest: opener:coi, openee:coi, sw:basic
-    test: popup-coop-by-sw.https.html?5-last
-  - subtest: opener:coi, openee:coi, sw:coi
-    test: popup-coop-by-sw.https.html?5-last
-  - test: popup-coop-by-sw.https.html?1-4
-  - subtest: opener:basic, openee:basic, sw:basic
-    test: popup-coop-by-sw.https.html?1-4
-  - subtest: opener:basic, openee:basic, sw:coi
-    test: popup-coop-by-sw.https.html?1-4
-  - subtest: opener:basic, openee:coi, sw:basic
-    test: popup-coop-by-sw.https.html?1-4
-  - subtest: opener:basic, openee:coi, sw:coi
-    test: popup-coop-by-sw.https.html?1-4
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1722734
-- product: firefox
-  results:
-  - status: CRASH
-    test: popup-coop-by-sw.https.html?1-4
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1733787
-- product: firefox
-  results:
-  - subtest: coop-navigate-same-origin-csp-sandbox
-    test: coop-navigate-same-origin-csp-sandbox.html
-  - subtest: 'Navigate to about:blank from iframe with opener.top COOP: |header(Cross-Origin-Opener-Policy,same-origin-allow-popups),
-      iframe origin: https://web-platform.test:8443, openee COOP: |header(Cross-Origin-Opener-Policy,unsafe-none),
-      openee origin: https://www1.web-platform.test:8443.'
-    test: navigate-to-aboutblank.https.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1733788
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1645233
+      results:
+        - test: popup-with-structured-header.https.html
+          subtest: 'same-origin with structured headers document opening popup to https://web-platform.test:8443 with COOP: "same-origin; report-to=endpoint"'
+    - product: chrome
+      url: https://crbug.com/1122582
+      results:
+        - test: coop-csp-sandbox-navigate.https.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1697378
+      results:
+        - test: popup-redirect-same-origin-allow-popups.https.html
+          subtest: Same origin popup redirects to same-origin with same-origin-allow-popups
+        - test: popup-redirect-same-origin-allow-popups.https.html
+          subtest: Cross origin popup redirects to same-origin with same-origin-allow-popups
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1697386
+      results:
+        - test: navigate-to-aboutblank.https.html
+          status: CRASH
+        - test: navigate-top-to-aboutblank.https.html
+          status: CRASH
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1715463
+      results:
+        - test: coop-same-origin-allow-popups-document-write.html
+          subtest: coop-same-origin-allow-popups-document-write
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1722734
+      results:
+        - test: popup-coop-by-sw.https.html?5-last
+        - test: popup-coop-by-sw.https.html?5-last
+          subtest: opener:coi, openee:basic, sw:basic
+        - test: popup-coop-by-sw.https.html?5-last
+          subtest: opener:coi, openee:basic, sw:coi
+        - test: popup-coop-by-sw.https.html?5-last
+          subtest: opener:coi, openee:coi, sw:basic
+        - test: popup-coop-by-sw.https.html?5-last
+          subtest: opener:coi, openee:coi, sw:coi
+        - test: popup-coop-by-sw.https.html?1-4
+        - test: popup-coop-by-sw.https.html?1-4
+          subtest: opener:basic, openee:basic, sw:basic
+        - test: popup-coop-by-sw.https.html?1-4
+          subtest: opener:basic, openee:basic, sw:coi
+        - test: popup-coop-by-sw.https.html?1-4
+          subtest: opener:basic, openee:coi, sw:basic
+        - test: popup-coop-by-sw.https.html?1-4
+          subtest: opener:basic, openee:coi, sw:coi
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1733787
+      results:
+        - test: popup-coop-by-sw.https.html?1-4
+          status: CRASH
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1733788
+      results:
+        - test: coop-navigate-same-origin-csp-sandbox.html
+          subtest: coop-navigate-same-origin-csp-sandbox
+        - test: navigate-to-aboutblank.https.html
+          subtest: 'Navigate to about:blank from iframe with opener.top COOP: |header(Cross-Origin-Opener-Policy,same-origin-allow-popups), iframe origin: https://web-platform.test:8443, openee COOP: |header(Cross-Origin-Opener-Policy,unsafe-none), openee origin: https://www1.web-platform.test:8443.'
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1768249
+      results:
+        - test: coop-sandbox-cuts-opener.https.html
+          subtest: <iframe sandbox="allow-popups allow-scripts allow-same-origin"> Sandboxed Cross-Origin-Opener-Policy popup should cut the opener if necessary
+        - test: coop-sandbox-cuts-opener.https.html
+          subtest: <iframe sandbox="allow-popups allow-scripts"> Sandboxed Cross-Origin-Opener-Policy popup should cut the opener if necessary
+        - test: coop-sandbox-redirects-cuts-opener.https.html
+          subtest: <iframe sandbox="allow-popups allow-scripts allow-same-origin"> Sandboxed Cross-Origin-Opener-Policy popup should cut the opener if necessary including during redirects.
+        - test: coop-sandbox-redirects-cuts-opener.https.html
+          subtest: <iframe sandbox="allow-popups allow-scripts"> Sandboxed Cross-Origin-Opener-Policy popup should cut the opener if necessary including during redirects.
