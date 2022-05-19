@@ -6,3 +6,12 @@ links:
   - subtest: e.style['scrollbar-gutter'] = "stable" should set the property value
     test: scrollbar-gutter-valid.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1718369
+- product: firefox
+  results:
+  - subtest: Property overflow-clip-margin value '0px'
+    test: overflow-clip-margin-computed.html
+  - subtest: Property overflow-clip-margin value '10px'
+    test: overflow-clip-margin-computed.html
+  - subtest: e.style['overflow-clip-margin'] = "10px" should set the property value
+    test: overflow-clip-margin.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1770231
