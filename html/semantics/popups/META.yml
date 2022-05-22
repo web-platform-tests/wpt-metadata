@@ -243,3 +243,42 @@ links:
       a direct showPopup()
     test: popup-light-dismiss.tentative.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1767555
+- product: firefox
+  results:
+  - subtest: 'Popup corner cases test: autofocus popup'
+    test: popup-focus.tentative.html
+  - subtest: 'Popup corner cases test: autofocus empty popup'
+    test: popup-focus.tentative.html
+  - subtest: 'Popup corner cases test: autofocus popup with button'
+    test: popup-focus.tentative.html
+  - subtest: 'Popup corner cases test: autofocus child'
+    test: popup-focus.tentative.html
+  - subtest: 'Popup corner cases test: autofocus on tabindex=0 element'
+    test: popup-focus.tentative.html
+  - subtest: 'Popup corner cases test: autofocus multiple children'
+    test: popup-focus.tentative.html
+  - subtest: 'Popup corner cases test: autofocus popup and multiple autofocus children'
+    test: popup-focus.tentative.html
+  - subtest: 'Popup corner cases test: delegatesfocus popup'
+    test: popup-focus.tentative.html
+  - subtest: 'Popup corner cases test: delegatesfocus takes precedence over autofocus'
+    test: popup-focus.tentative.html
+  - subtest: 'Popup corner cases test: delegatesfocus takes precedence over autofocus
+      2'
+    test: popup-focus.tentative.html
+  - subtest: 'Popup corner cases test: delegatesfocus skips contained popups'
+    test: popup-focus.tentative.html
+  - subtest: 'Popup corner cases test: delegatesfocus skips contained dialogs'
+    test: popup-focus.tentative.html
+  - subtest: Clicking on invoking element, after using it for activation, shouldn't
+      close its popup
+    test: popup-light-dismiss.tentative.html
+  - subtest: Clicking on invoking element, even if it wasn't used for activation,
+      shouldn't close its popup
+    test: popup-light-dismiss.tentative.html
+  - subtest: Clicking on togglepopup element, even if it wasn't used for activation,
+      should hide it exactly once
+    test: popup-light-dismiss.tentative.html
+  - subtest: Light dismiss of mixed popup types
+    test: popup-light-dismiss.tentative.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1770618
