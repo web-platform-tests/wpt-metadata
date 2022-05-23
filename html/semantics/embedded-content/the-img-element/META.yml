@@ -49,3 +49,10 @@ links:
       url: https://bugs.chromium.org/p/chromium/issues/detail?id=1047909
       results:
         - test: image-loading-lazy.html
+    - product: chrome
+      url: https://crbug.com/1328330
+      results:
+        - test: image-loading-lazy-move-into-script-disabled-iframe.html
+          subtest: |-
+            A loading='lazy' image starts loading when the element is moved into
+                   an iframe where script is disabled
