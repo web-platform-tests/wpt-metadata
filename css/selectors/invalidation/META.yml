@@ -805,3 +805,300 @@ links:
   - subtest: insert element div>div[test_attr] after next_sibling_descendant
     test: has-in-sibling-position.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1770370
+- product: firefox
+  results:
+  - subtest: '[ .red:has(#descendant:is(.a .b)) ] #has_scope.classList.add(''red'')
+      : check matches (false)'
+    test: is-pseudo-containing-complex-in-has.html
+  - subtest: '[ .red:has(#descendant:is(.a .b)) ] #parent.classList.remove(''a'')
+      : check matches (false)'
+    test: is-pseudo-containing-complex-in-has.html
+  - subtest: '[ .red:has(#descendant:is(.a .b)) ] #has_scope.classList.remove(''a'')
+      : check matches (false)'
+    test: is-pseudo-containing-complex-in-has.html
+  - subtest: '[ .red:has(#descendant:is(.a .b)) ] #child.classList.remove(''a'') :
+      check matches (false)'
+    test: is-pseudo-containing-complex-in-has.html
+  - subtest: '[ .red:has(#descendant:is(.a .b)) ] #has_scope.classList.remove(''red'')
+      : check matches (false)'
+    test: is-pseudo-containing-complex-in-has.html
+  - subtest: '[ .green:has(#descendant:is(.c ~ .d .e)) ] #has_scope.classList.add(''green'')
+      : check matches (false)'
+    test: is-pseudo-containing-complex-in-has.html
+  - subtest: '[ .green:has(#descendant:is(.c ~ .d .e)) ] #parent_previous.classList.remove(''c'')
+      : check matches (false)'
+    test: is-pseudo-containing-complex-in-has.html
+  - subtest: '[ .green:has(#descendant:is(.c ~ .d .e)) ] #previous.classList.remove(''c'')
+      : check matches (false)'
+    test: is-pseudo-containing-complex-in-has.html
+  - subtest: '[ .green:has(#descendant:is(.c ~ .d .e)) ] #child_previous.classList.remove(''c'')
+      : check matches (false)'
+    test: is-pseudo-containing-complex-in-has.html
+  - subtest: '[ .green:has(#descendant:is(.c ~ .d .e)) ] #has_scope.classList.remove(''green'')
+      : check matches (false)'
+    test: is-pseudo-containing-complex-in-has.html
+  - subtest: '[ .blue:has(~ #indirect_next:is(.f ~ .g)) ] #has_scope.classList.add(''blue'')
+      : check matches (false)'
+    test: is-pseudo-containing-complex-in-has.html
+  - subtest: '[ .blue:has(~ #indirect_next:is(.f ~ .g)) ] #previous.classList.remove(''f'')
+      : check matches (false)'
+    test: is-pseudo-containing-complex-in-has.html
+  - subtest: '[ .blue:has(~ #indirect_next:is(.f ~ .g)) ] #has_scope.classList.remove(''f'')
+      : check matches (false)'
+    test: is-pseudo-containing-complex-in-has.html
+  - subtest: '[ .blue:has(~ #indirect_next:is(.f ~ .g)) ] #direct_next.classList.remove(''f'')
+      : check matches (false)'
+    test: is-pseudo-containing-complex-in-has.html
+  - subtest: '[ .blue:has(~ #indirect_next:is(.f ~ .g)) ] #has_scope.classList.remove(''blue'')
+      : check matches (false)'
+    test: is-pseudo-containing-complex-in-has.html
+  - subtest: '[ .yellow:has(~ #indirect_next:is(.h .i)) ] #has_scope.classList.add(''yellow'')
+      : check matches (false)'
+    test: is-pseudo-containing-complex-in-has.html
+  - subtest: '[ .yellow:has(~ #indirect_next:is(.h .i)) ] #parent.classList.remove(''h'')
+      : check matches (false)'
+    test: is-pseudo-containing-complex-in-has.html
+  - subtest: '[ .yellow:has(~ #indirect_next:is(.h .i)) ] #has_scope.classList.remove(''yellow'')
+      : check matches (false)'
+    test: is-pseudo-containing-complex-in-has.html
+  - subtest: '[ .purple:has(~ #indirect_next:is(.j ~ .k .l)) ] #has_scope.classList.add(''purple'')
+      : check matches (false)'
+    test: is-pseudo-containing-complex-in-has.html
+  - subtest: '[ .purple:has(~ #indirect_next:is(.j ~ .k .l)) ] #parent_previous.classList.remove(''j'')
+      : check matches (false)'
+    test: is-pseudo-containing-complex-in-has.html
+  - subtest: '[ .purple:has(~ #indirect_next:is(.j ~ .k .l)) ] #has_scope.classList.remove(''purple'')
+      : check matches (false)'
+    test: is-pseudo-containing-complex-in-has.html
+  - subtest: '[ .orange:has(#descendant:is(:is(.m, .n) .o)) ] #has_scope.classList.add(''orange'')
+      : check matches (false)'
+    test: is-pseudo-containing-complex-in-has.html
+  - subtest: '[ .orange:has(#descendant:is(:is(.m, .n) .o)) ] #parent.classList.remove(''m'')
+      : check matches (false)'
+    test: is-pseudo-containing-complex-in-has.html
+  - subtest: '[ .orange:has(#descendant:is(:is(.m, .n) .o)) ] #parent.classList.remove(''n'')
+      : check matches (false)'
+    test: is-pseudo-containing-complex-in-has.html
+  - subtest: '[ .orange:has(#descendant:is(:is(.m, .n) .o)) ] #has_scope.classList.remove(''m'')
+      : check matches (false)'
+    test: is-pseudo-containing-complex-in-has.html
+  - subtest: '[ .orange:has(#descendant:is(:is(.m, .n) .o)) ] #has_scope.classList.remove(''n'')
+      : check matches (false)'
+    test: is-pseudo-containing-complex-in-has.html
+  - subtest: '[ .orange:has(#descendant:is(:is(.m, .n) .o)) ] #child.classList.remove(''m'')
+      : check matches (false)'
+    test: is-pseudo-containing-complex-in-has.html
+  - subtest: '[ .orange:has(#descendant:is(:is(.m, .n) .o)) ] #child.classList.remove(''n'')
+      : check matches (false)'
+    test: is-pseudo-containing-complex-in-has.html
+  - subtest: '[ .orange:has(#descendant:is(:is(.m, .n) .o)) ] #has_scope.classList.remove(''orange'')
+      : check matches (false)'
+    test: is-pseudo-containing-complex-in-has.html
+  - subtest: '[ .red:has(#descendant:not(.a .b)) ] #has_scope.classList.add(''red'')
+      : check matches (true)'
+    test: not-pseudo-containing-complex-in-has.html
+  - subtest: '[ .red:has(#descendant:not(.a .b)) ] #has_scope.classList.add(''red'')
+      : check #has_scope color'
+    test: not-pseudo-containing-complex-in-has.html
+  - subtest: '[ .red:has(#descendant:not(.a .b)) ] #parent.classList.add(''a'') :
+      check matches (false)'
+    test: not-pseudo-containing-complex-in-has.html
+  - subtest: '[ .red:has(#descendant:not(.a .b)) ] #parent.classList.remove(''a'')
+      : check matches (true)'
+    test: not-pseudo-containing-complex-in-has.html
+  - subtest: '[ .red:has(#descendant:not(.a .b)) ] #parent.classList.remove(''a'')
+      : check #has_scope color'
+    test: not-pseudo-containing-complex-in-has.html
+  - subtest: '[ .red:has(#descendant:not(.a .b)) ] #has_scope.classList.add(''a'')
+      : check matches (false)'
+    test: not-pseudo-containing-complex-in-has.html
+  - subtest: '[ .red:has(#descendant:not(.a .b)) ] #has_scope.classList.remove(''a'')
+      : check matches (true)'
+    test: not-pseudo-containing-complex-in-has.html
+  - subtest: '[ .red:has(#descendant:not(.a .b)) ] #has_scope.classList.remove(''a'')
+      : check #has_scope color'
+    test: not-pseudo-containing-complex-in-has.html
+  - subtest: '[ .red:has(#descendant:not(.a .b)) ] #child.classList.add(''a'') : check
+      matches (false)'
+    test: not-pseudo-containing-complex-in-has.html
+  - subtest: '[ .red:has(#descendant:not(.a .b)) ] #child.classList.remove(''a'')
+      : check matches (true)'
+    test: not-pseudo-containing-complex-in-has.html
+  - subtest: '[ .red:has(#descendant:not(.a .b)) ] #child.classList.remove(''a'')
+      : check #has_scope color'
+    test: not-pseudo-containing-complex-in-has.html
+  - subtest: '[ .red:has(#descendant:not(.a .b)) ] #has_scope.classList.remove(''red'')
+      : check matches (false)'
+    test: not-pseudo-containing-complex-in-has.html
+  - subtest: '[ .green:has(#descendant:not(.c ~ .d .e)) ] #has_scope.classList.add(''green'')
+      : check matches (true)'
+    test: not-pseudo-containing-complex-in-has.html
+  - subtest: '[ .green:has(#descendant:not(.c ~ .d .e)) ] #has_scope.classList.add(''green'')
+      : check #has_scope color'
+    test: not-pseudo-containing-complex-in-has.html
+  - subtest: '[ .green:has(#descendant:not(.c ~ .d .e)) ] #parent_previous.classList.add(''c'')
+      : check matches (false)'
+    test: not-pseudo-containing-complex-in-has.html
+  - subtest: '[ .green:has(#descendant:not(.c ~ .d .e)) ] #parent_previous.classList.remove(''c'')
+      : check matches (true)'
+    test: not-pseudo-containing-complex-in-has.html
+  - subtest: '[ .green:has(#descendant:not(.c ~ .d .e)) ] #parent_previous.classList.remove(''c'')
+      : check #has_scope color'
+    test: not-pseudo-containing-complex-in-has.html
+  - subtest: '[ .green:has(#descendant:not(.c ~ .d .e)) ] #previous.classList.add(''c'')
+      : check matches (false)'
+    test: not-pseudo-containing-complex-in-has.html
+  - subtest: '[ .green:has(#descendant:not(.c ~ .d .e)) ] #previous.classList.remove(''c'')
+      : check matches (true)'
+    test: not-pseudo-containing-complex-in-has.html
+  - subtest: '[ .green:has(#descendant:not(.c ~ .d .e)) ] #previous.classList.remove(''c'')
+      : check #has_scope color'
+    test: not-pseudo-containing-complex-in-has.html
+  - subtest: '[ .green:has(#descendant:not(.c ~ .d .e)) ] #child_previous.classList.add(''c'')
+      : check matches (false)'
+    test: not-pseudo-containing-complex-in-has.html
+  - subtest: '[ .green:has(#descendant:not(.c ~ .d .e)) ] #child_previous.classList.remove(''c'')
+      : check matches (true)'
+    test: not-pseudo-containing-complex-in-has.html
+  - subtest: '[ .green:has(#descendant:not(.c ~ .d .e)) ] #child_previous.classList.remove(''c'')
+      : check #has_scope color'
+    test: not-pseudo-containing-complex-in-has.html
+  - subtest: '[ .green:has(#descendant:not(.c ~ .d .e)) ] #has_scope.classList.remove(''green'')
+      : check matches (false)'
+    test: not-pseudo-containing-complex-in-has.html
+  - subtest: '[ .blue:has(~ #indirect_next:not(.f ~ .g)) ] #has_scope.classList.add(''blue'')
+      : check matches (true)'
+    test: not-pseudo-containing-complex-in-has.html
+  - subtest: '[ .blue:has(~ #indirect_next:not(.f ~ .g)) ] #has_scope.classList.add(''blue'')
+      : check #has_scope color'
+    test: not-pseudo-containing-complex-in-has.html
+  - subtest: '[ .blue:has(~ #indirect_next:not(.f ~ .g)) ] #previous.classList.add(''f'')
+      : check matches (false)'
+    test: not-pseudo-containing-complex-in-has.html
+  - subtest: '[ .blue:has(~ #indirect_next:not(.f ~ .g)) ] #previous.classList.remove(''f'')
+      : check matches (true)'
+    test: not-pseudo-containing-complex-in-has.html
+  - subtest: '[ .blue:has(~ #indirect_next:not(.f ~ .g)) ] #previous.classList.remove(''f'')
+      : check #has_scope color'
+    test: not-pseudo-containing-complex-in-has.html
+  - subtest: '[ .blue:has(~ #indirect_next:not(.f ~ .g)) ] #has_scope.classList.add(''f'')
+      : check matches (false)'
+    test: not-pseudo-containing-complex-in-has.html
+  - subtest: '[ .blue:has(~ #indirect_next:not(.f ~ .g)) ] #has_scope.classList.remove(''f'')
+      : check matches (true)'
+    test: not-pseudo-containing-complex-in-has.html
+  - subtest: '[ .blue:has(~ #indirect_next:not(.f ~ .g)) ] #has_scope.classList.remove(''f'')
+      : check #has_scope color'
+    test: not-pseudo-containing-complex-in-has.html
+  - subtest: '[ .blue:has(~ #indirect_next:not(.f ~ .g)) ] #direct_next.classList.add(''f'')
+      : check matches (false)'
+    test: not-pseudo-containing-complex-in-has.html
+  - subtest: '[ .blue:has(~ #indirect_next:not(.f ~ .g)) ] #direct_next.classList.remove(''f'')
+      : check matches (true)'
+    test: not-pseudo-containing-complex-in-has.html
+  - subtest: '[ .blue:has(~ #indirect_next:not(.f ~ .g)) ] #direct_next.classList.remove(''f'')
+      : check #has_scope color'
+    test: not-pseudo-containing-complex-in-has.html
+  - subtest: '[ .blue:has(~ #indirect_next:not(.f ~ .g)) ] #has_scope.classList.remove(''blue'')
+      : check matches (false)'
+    test: not-pseudo-containing-complex-in-has.html
+  - subtest: '[ .yellow:has(~ #indirect_next:not(.h .i)) ] #has_scope.classList.add(''yellow'')
+      : check matches (true)'
+    test: not-pseudo-containing-complex-in-has.html
+  - subtest: '[ .yellow:has(~ #indirect_next:not(.h .i)) ] #has_scope.classList.add(''yellow'')
+      : check #has_scope color'
+    test: not-pseudo-containing-complex-in-has.html
+  - subtest: '[ .yellow:has(~ #indirect_next:not(.h .i)) ] #parent.classList.add(''h'')
+      : check matches (false)'
+    test: not-pseudo-containing-complex-in-has.html
+  - subtest: '[ .yellow:has(~ #indirect_next:not(.h .i)) ] #parent.classList.remove(''h'')
+      : check matches (true)'
+    test: not-pseudo-containing-complex-in-has.html
+  - subtest: '[ .yellow:has(~ #indirect_next:not(.h .i)) ] #parent.classList.remove(''h'')
+      : check #has_scope color'
+    test: not-pseudo-containing-complex-in-has.html
+  - subtest: '[ .yellow:has(~ #indirect_next:not(.h .i)) ] #has_scope.classList.remove(''yellow'')
+      : check matches (false)'
+    test: not-pseudo-containing-complex-in-has.html
+  - subtest: '[ .purple:has(~ #indirect_next:not(.j ~ .k .l)) ] #has_scope.classList.add(''purple'')
+      : check matches (true)'
+    test: not-pseudo-containing-complex-in-has.html
+  - subtest: '[ .purple:has(~ #indirect_next:not(.j ~ .k .l)) ] #has_scope.classList.add(''purple'')
+      : check #has_scope color'
+    test: not-pseudo-containing-complex-in-has.html
+  - subtest: '[ .purple:has(~ #indirect_next:not(.j ~ .k .l)) ] #parent_previous.classList.add(''j'')
+      : check matches (false)'
+    test: not-pseudo-containing-complex-in-has.html
+  - subtest: '[ .purple:has(~ #indirect_next:not(.j ~ .k .l)) ] #parent_previous.classList.remove(''j'')
+      : check matches (true)'
+    test: not-pseudo-containing-complex-in-has.html
+  - subtest: '[ .purple:has(~ #indirect_next:not(.j ~ .k .l)) ] #parent_previous.classList.remove(''j'')
+      : check #has_scope color'
+    test: not-pseudo-containing-complex-in-has.html
+  - subtest: '[ .purple:has(~ #indirect_next:not(.j ~ .k .l)) ] #has_scope.classList.remove(''purple'')
+      : check matches (false)'
+    test: not-pseudo-containing-complex-in-has.html
+  - subtest: '[ .orange:has(#descendant:not(.m:not(.n) .o)) ] #has_scope.classList.add(''orange'')
+      : check matches (true)'
+    test: not-pseudo-containing-complex-in-has.html
+  - subtest: '[ .orange:has(#descendant:not(.m:not(.n) .o)) ] #has_scope.classList.add(''orange'')
+      : check #has_scope color'
+    test: not-pseudo-containing-complex-in-has.html
+  - subtest: '[ .orange:has(#descendant:not(.m:not(.n) .o)) ] #parent.classList.add(''m'')
+      : check matches (false)'
+    test: not-pseudo-containing-complex-in-has.html
+  - subtest: '[ .orange:has(#descendant:not(.m:not(.n) .o)) ] #parent.classList.add(''n'')
+      : check matches (true)'
+    test: not-pseudo-containing-complex-in-has.html
+  - subtest: '[ .orange:has(#descendant:not(.m:not(.n) .o)) ] #parent.classList.add(''n'')
+      : check #has_scope color'
+    test: not-pseudo-containing-complex-in-has.html
+  - subtest: '[ .orange:has(#descendant:not(.m:not(.n) .o)) ] #parent.classList.remove(''n'')
+      : check matches (false)'
+    test: not-pseudo-containing-complex-in-has.html
+  - subtest: '[ .orange:has(#descendant:not(.m:not(.n) .o)) ] #parent.classList.remove(''m'')
+      : check matches (true)'
+    test: not-pseudo-containing-complex-in-has.html
+  - subtest: '[ .orange:has(#descendant:not(.m:not(.n) .o)) ] #parent.classList.remove(''m'')
+      : check #has_scope color'
+    test: not-pseudo-containing-complex-in-has.html
+  - subtest: '[ .orange:has(#descendant:not(.m:not(.n) .o)) ] #has_scope.classList.add(''m'')
+      : check matches (false)'
+    test: not-pseudo-containing-complex-in-has.html
+  - subtest: '[ .orange:has(#descendant:not(.m:not(.n) .o)) ] #has_scope.classList.add(''n'')
+      : check matches (true)'
+    test: not-pseudo-containing-complex-in-has.html
+  - subtest: '[ .orange:has(#descendant:not(.m:not(.n) .o)) ] #has_scope.classList.add(''n'')
+      : check #has_scope color'
+    test: not-pseudo-containing-complex-in-has.html
+  - subtest: '[ .orange:has(#descendant:not(.m:not(.n) .o)) ] #has_scope.classList.remove(''n'')
+      : check matches (false)'
+    test: not-pseudo-containing-complex-in-has.html
+  - subtest: '[ .orange:has(#descendant:not(.m:not(.n) .o)) ] #has_scope.classList.remove(''m'')
+      : check matches (true)'
+    test: not-pseudo-containing-complex-in-has.html
+  - subtest: '[ .orange:has(#descendant:not(.m:not(.n) .o)) ] #has_scope.classList.remove(''m'')
+      : check #has_scope color'
+    test: not-pseudo-containing-complex-in-has.html
+  - subtest: '[ .orange:has(#descendant:not(.m:not(.n) .o)) ] #child.classList.add(''m'')
+      : check matches (false)'
+    test: not-pseudo-containing-complex-in-has.html
+  - subtest: '[ .orange:has(#descendant:not(.m:not(.n) .o)) ] #child.classList.add(''n'')
+      : check matches (true)'
+    test: not-pseudo-containing-complex-in-has.html
+  - subtest: '[ .orange:has(#descendant:not(.m:not(.n) .o)) ] #child.classList.add(''n'')
+      : check #has_scope color'
+    test: not-pseudo-containing-complex-in-has.html
+  - subtest: '[ .orange:has(#descendant:not(.m:not(.n) .o)) ] #child.classList.remove(''n'')
+      : check matches (false)'
+    test: not-pseudo-containing-complex-in-has.html
+  - subtest: '[ .orange:has(#descendant:not(.m:not(.n) .o)) ] #child.classList.remove(''m'')
+      : check matches (true)'
+    test: not-pseudo-containing-complex-in-has.html
+  - subtest: '[ .orange:has(#descendant:not(.m:not(.n) .o)) ] #child.classList.remove(''m'')
+      : check #has_scope color'
+    test: not-pseudo-containing-complex-in-has.html
+  - subtest: '[ .orange:has(#descendant:not(.m:not(.n) .o)) ] #has_scope.classList.remove(''orange'')
+      : check matches (false)'
+    test: not-pseudo-containing-complex-in-has.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1771020
