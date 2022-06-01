@@ -156,3 +156,19 @@ links:
   - subtest: Test restoring state after form submission
     test: selectmenu-form-state-restore.tentative.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1759048
+- product: firefox
+  results:
+  - subtest: Test that HTMLSelectMenu with no options has empty string for value and
+      null for selectedOption
+    test: selectmenu-value-selectedOption.tentative.html
+  - subtest: Test value and selectedOption with HTMLOptionElement element option parts
+    test: selectmenu-value-selectedOption.tentative.html
+  - subtest: Test that value and selectedOption are updated when options are removed
+    test: selectmenu-value-selectedOption.tentative.html
+  - subtest: Test that value and selectedOption are correctly updated
+    test: selectmenu-value-selectedOption.tentative.html
+  - subtest: Test that HTMLOption.selected updates selectmenu.value and selectmenu.selectedOption
+    test: selectmenu-value-selectedOption.tentative.html
+  - subtest: Test that HTMLOption.value updates selectmenu.value
+    test: selectmenu-value-selectedOption.tentative.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1772046
