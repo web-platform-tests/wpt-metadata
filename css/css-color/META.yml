@@ -111,6 +111,7 @@ links:
         - test: oklch-006.html
         - test: xyz-d50-003.html
         - test: xyz-d65-005.html
+        - test: color-mix-currentcolor-001.html
     - product: firefox
       url: https://bugzilla.mozilla.org/show_bug.cgi?id=1705184
       results:
@@ -240,7 +241,8 @@ links:
       url: https://bugzilla.mozilla.org/show_bug.cgi?id=1748184
       results:
         - test: predefined-016.html
-    - label: interop-2022-color
+    - url: ""
+      label: interop-2022-color
       results:
         - test: t424-hsl-clip-outside-gamut-b.xht
         - test: t424-hsl-values-b-6.html
@@ -439,3 +441,8 @@ links:
         - test: deprecated-sameas-016.html
         - test: deprecated-sameas-018.html
         - test: deprecated-sameas-019.html
+    - product: chrome
+      url: https://crbug.com/1330386
+      results:
+        - test: color-mix-currentcolor-001.html
+          subtest: Harness status
