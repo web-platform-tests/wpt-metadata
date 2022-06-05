@@ -287,3 +287,31 @@ links:
   - subtest: A Fullscreen Element should  close a Fullscreen Element
     test: popup-top-layer-interactions.tentative.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1772046
+- product: firefox
+  results:
+  - subtest: The .showPopup() and .hidePopup() work on a popup, for <div popup=""
+      id="boolean">Popup</div>.
+    test: popup-attribute-basic.tentative.html
+  - subtest: The .showPopup() and .hidePopup() work on a popup, for <div popup="">Popup</div>.
+    test: popup-attribute-basic.tentative.html
+  - subtest: The .showPopup() and .hidePopup() work on a popup, for <div popup="auto">Popup</div>.
+    test: popup-attribute-basic.tentative.html
+  - subtest: The .showPopup() and .hidePopup() work on a popup, for <div popup="hint">Popup</div>.
+    test: popup-attribute-basic.tentative.html
+  - subtest: The .showPopup() and .hidePopup() work on a popup, for <div popup="async">Popup</div>.
+    test: popup-attribute-basic.tentative.html
+  - subtest: The .showPopup() and .hidePopup() do NOT work on elements without a 'popup'
+      attribute, <div>Non-popup</div>.
+    test: popup-attribute-basic.tentative.html
+  - subtest: The .showPopup() and .hidePopup() do NOT work on elements without a 'popup'
+      attribute, <div popup="popup">Non-popup</div>.
+    test: popup-attribute-basic.tentative.html
+  - subtest: The .showPopup() and .hidePopup() do NOT work on elements without a 'popup'
+      attribute, <div popup="invalid">Non-popup</div>.
+    test: popup-attribute-basic.tentative.html
+  - subtest: Changing attribute values should close open popups
+    test: popup-attribute-basic.tentative.html
+  - subtest: Removing a visible popup=auto element from the document should close
+      the popup
+    test: popup-attribute-basic.tentative.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1772774
