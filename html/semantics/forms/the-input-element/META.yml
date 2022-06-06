@@ -1,140 +1,142 @@
 links:
-- product: safari
-  results:
-  - test: '*'
-  url: https://bugs.webkit.org/show_bug.cgi?id=119175
-- product: webkitgtk
-  results:
-  - test: '*'
-  url: https://bugs.webkit.org/show_bug.cgi?id=119175
-- product: webkitgtk
-  results:
-  - status: FAIL
-    test: type-change-state.html
-  url: https://bugs.webkit.org/show_bug.cgi?id=180645
-- product: firefox
-  results:
-  - subtest: keyword _charset_
-    test: hidden-charset-case-sensitive.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1670136
-- product: firefox
-  results:
-  - subtest: Radio buttons in an orphan tree should make a group
-    test: radio.html
-  - subtest: Radio buttons in different groups (because they have different form owners
-      or no form owner) do not affect each other's checkedness
-    test: radio.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1685968
-- product: chrome
-  results:
-  - test: datetime-local.html
-  url: https://crbug.com/521871
-- product: chrome
-  results:
-  - test: range.html
-  - test: type-change-state.html
-  url: https://bugs.chromium.org/p/chromium/issues/detail?id=1234420
-- product: firefox
-  results:
-  - subtest: Selecting texts across <input type=button> should not cancel selection
-    test: selection-pointer.html
-  - subtest: Selecting texts across <input type=color> should not cancel selection
-    test: selection-pointer.html
-  - subtest: Selecting texts across <input type=range> should not cancel selection
-    test: selection-pointer.html
-  - subtest: Selecting texts across <input type=reset> should not cancel selection
-    test: selection-pointer.html
-  - subtest: Selecting texts across <input type=submit> should not cancel selection
-    test: selection-pointer.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1738866
-- product: safari
-  results:
-  - test: input-stepdown.html
-  - test: input-stepup.html
-  url: https://bugs.webkit.org/show_bug.cgi?id=233721
-- product: firefox
-  results:
-  - subtest: Test showPicker() called from cross-origin iframe 1
-    test: show-picker-cross-origin-iframe.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1744846
-- product: firefox
-  results:
-  - subtest: Test showPicker() called from cross-origin iframe 1
-    test: show-picker-cross-origin-iframe.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1746051
-
-- label: interop-2022-forms
-  results:
-    - test: radio-input-cancel.html
-    - test: range-restore-oninput-onchange-event.html
-    - test: search_input.html
-    - test: selection-pointer.html
-    - test: date.html
-    - test: input-height.html
-    - test: password.html
-    - test: time-focus-dynamic-value-change.html
-    - test: checkable-active-onblur.html
-    - test: checked.xhtml
-    - test: range-setattribute-value.html
-    - test: color.html
-    - test: multiline-placeholder-cr.html
-    - test: number-disabled.html
-    - test: text.html
-    - test: checkbox.html
-    - test: input-submit-remove-jssubmit.html
-    - test: input-willvalidate.html
-    - test: telephone.html
-    - test: defaultValue-clobbering.html
-    - test: input-stepdown.html
-    - test: multiline-placeholder.html
-    - test: radio-double-activate-pseudo.html
-    - test: url.html
-    - test: email-set-value.html
-    - test: input-validity.html
-    - test: input-value-invalidstateerr.html
-    - test: range-intrinsic-size.html
-    - test: anchor-active-contenteditable.html
-    - test: cloning-steps.html
-    - test: image-click-form-data.html
-    - test: time-2.html
-    - test: time.html
-    - test: button.html
-    - test: input-stepup.html
-    - test: minlength.html
-    - test: range.html
-    - test: input-labels.html
-    - test: input-seconds-leading-zeroes.html
-    - test: maxlength.html
-    - test: type-change-state.html
-    - test: selection.html
-    - test: datetime.html
-    - test: input-list.html
-    - test: input-validationmessage.html
-    - test: maxlength-number.html
-    - test: input-type-checkbox.html
-    - test: input-valueasnumber-invalidstateerr.html
-    - test: multiline-placeholder-crlf.html
-    - test: anchor-contenteditable-navigate.html
-    - test: clone.html
-    - test: files.html
-    - test: input-setcustomvalidity.html
-    - test: valueMode.html
-    - test: hidden.html
-    - test: hidden-charset-case-sensitive.html
-    - test: range-2.html
-    - test: image01.html
-    - test: input-type-button.html
-    - test: number.html
-    - test: radio-groupname-case.html
-    - test: radio.html
-    - test: required_attribute.html
-    - test: checkbox-click-events.html
-    - test: input-checkvalidity.html
-    - test: input-width.html
-    - test: pattern_attribute.html
-    - test: reset.html
-    - test: show-picker-cross-origin-iframe.html
-    - test: datetime-local.html
-    - test: email.html
-    - test: input-valueasdate-invalidstateerr.html
-    - test: radio-morphed.html
+    - product: safari
+      url: https://bugs.webkit.org/show_bug.cgi?id=119175
+      results:
+        - test: '*'
+    - product: webkitgtk
+      url: https://bugs.webkit.org/show_bug.cgi?id=119175
+      results:
+        - test: '*'
+    - product: webkitgtk
+      url: https://bugs.webkit.org/show_bug.cgi?id=180645
+      results:
+        - test: type-change-state.html
+          status: FAIL
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1670136
+      results:
+        - test: hidden-charset-case-sensitive.html
+          subtest: keyword _charset_
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1685968
+      results:
+        - test: radio.html
+          subtest: Radio buttons in an orphan tree should make a group
+        - test: radio.html
+          subtest: Radio buttons in different groups (because they have different form owners or no form owner) do not affect each other's checkedness
+    - product: chrome
+      url: https://crbug.com/521871
+      results:
+        - test: datetime-local.html
+    - product: chrome
+      url: https://bugs.chromium.org/p/chromium/issues/detail?id=1234420
+      results:
+        - test: range.html
+        - test: type-change-state.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1738866
+      results:
+        - test: selection-pointer.html
+          subtest: Selecting texts across <input type=button> should not cancel selection
+        - test: selection-pointer.html
+          subtest: Selecting texts across <input type=color> should not cancel selection
+        - test: selection-pointer.html
+          subtest: Selecting texts across <input type=range> should not cancel selection
+        - test: selection-pointer.html
+          subtest: Selecting texts across <input type=reset> should not cancel selection
+        - test: selection-pointer.html
+          subtest: Selecting texts across <input type=submit> should not cancel selection
+    - product: safari
+      url: https://bugs.webkit.org/show_bug.cgi?id=233721
+      results:
+        - test: input-stepdown.html
+        - test: input-stepup.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1744846
+      results:
+        - test: show-picker-cross-origin-iframe.html
+          subtest: Test showPicker() called from cross-origin iframe 1
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1746051
+      results:
+        - test: show-picker-cross-origin-iframe.html
+          subtest: Test showPicker() called from cross-origin iframe 1
+    - label: interop-2022-forms
+      results:
+        - test: radio-input-cancel.html
+        - test: range-restore-oninput-onchange-event.html
+        - test: search_input.html
+        - test: selection-pointer.html
+        - test: date.html
+        - test: input-height.html
+        - test: password.html
+        - test: time-focus-dynamic-value-change.html
+        - test: checkable-active-onblur.html
+        - test: checked.xhtml
+        - test: range-setattribute-value.html
+        - test: color.html
+        - test: multiline-placeholder-cr.html
+        - test: number-disabled.html
+        - test: text.html
+        - test: checkbox.html
+        - test: input-submit-remove-jssubmit.html
+        - test: input-willvalidate.html
+        - test: telephone.html
+        - test: defaultValue-clobbering.html
+        - test: input-stepdown.html
+        - test: multiline-placeholder.html
+        - test: radio-double-activate-pseudo.html
+        - test: url.html
+        - test: email-set-value.html
+        - test: input-validity.html
+        - test: input-value-invalidstateerr.html
+        - test: range-intrinsic-size.html
+        - test: anchor-active-contenteditable.html
+        - test: cloning-steps.html
+        - test: image-click-form-data.html
+        - test: time-2.html
+        - test: time.html
+        - test: button.html
+        - test: input-stepup.html
+        - test: minlength.html
+        - test: range.html
+        - test: input-labels.html
+        - test: input-seconds-leading-zeroes.html
+        - test: maxlength.html
+        - test: type-change-state.html
+        - test: selection.html
+        - test: datetime.html
+        - test: input-list.html
+        - test: input-validationmessage.html
+        - test: maxlength-number.html
+        - test: input-type-checkbox.html
+        - test: input-valueasnumber-invalidstateerr.html
+        - test: multiline-placeholder-crlf.html
+        - test: anchor-contenteditable-navigate.html
+        - test: clone.html
+        - test: files.html
+        - test: input-setcustomvalidity.html
+        - test: valueMode.html
+        - test: hidden.html
+        - test: hidden-charset-case-sensitive.html
+        - test: range-2.html
+        - test: image01.html
+        - test: input-type-button.html
+        - test: number.html
+        - test: radio-groupname-case.html
+        - test: radio.html
+        - test: required_attribute.html
+        - test: checkbox-click-events.html
+        - test: input-checkvalidity.html
+        - test: input-width.html
+        - test: pattern_attribute.html
+        - test: reset.html
+        - test: show-picker-cross-origin-iframe.html
+        - test: datetime-local.html
+        - test: email.html
+        - test: input-valueasdate-invalidstateerr.html
+        - test: radio-morphed.html
+    - product: safari
+      url: https://bugs.webkit.org/show_bug.cgi?id=240343
+      results:
+        - test: show-picker-disabled-readonly.html
