@@ -1,0 +1,8 @@
+links:
+    - product: safari
+      url: https://bugs.webkit.org/show_bug.cgi?id=226638
+      results:
+        - test: idlharness.https.any.serviceworker.html
+          subtest: 'FetchEvent interface: attribute replacesClientId'
+        - test: idlharness.https.any.serviceworker.html
+          subtest: 'FetchEvent interface: new FetchEvent("type", { request: new Request("") }) must inherit property "replacesClientId" with the proper type'
