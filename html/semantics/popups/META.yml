@@ -315,3 +315,16 @@ links:
       the popup
     test: popup-attribute-basic.tentative.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1772774
+- product: firefox
+  results:
+  - test: popup-animated-hide-finishes.tentative.html
+  - subtest: Ensure no crashes if running animations are immediately cancelled (document
+      removal)
+    test: popup-animated-hide-cleanup.tentative.html
+  - subtest: Ensure no crashes if running animations are immediately cancelled (dialog
+      showModal)
+    test: popup-animated-hide-cleanup.tentative.html
+  - subtest: Ensure no crashes if running transitions are immediately cancelled (button
+      click)
+    test: popup-animated-hide-cleanup.tentative.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1774355
