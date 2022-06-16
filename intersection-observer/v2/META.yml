@@ -1,30 +1,67 @@
 links:
-    - product: safari
-      url: https://bugs.webkit.org/show_bug.cgi?id=208052
-      results:
-        - test: cross-origin-effects.sub.html
-          status: FAIL
-        - test: cross-origin-occlusion.sub.html
-          status: FAIL
-    - product: webkitgtk
-      url: https://bugs.webkit.org/show_bug.cgi?id=208052
-      results:
-        - test: cross-origin-effects.sub.html
-          status: FAIL
-        - test: cross-origin-occlusion.sub.html
-          status: FAIL
-    - product: chrome
-      url: https://bugs.chromium.org/p/chromium/issues/detail?id=1043787
-      results:
-        - test: blur-filter.html
-        - test: drop-shadow-filter-vertical-rl.html
-    - product: chrome
-      url: https://bugs.chromium.org/p/chromium/issues/detail?id=1226102
-      results:
-        - test: simple-occlusion-svg-foreign-object.html
-        - test: simple-effects.html
-        - test: simple-occlusion.html
-    - product: chrome
-      url: https://bugs.chromium.org/p/chromium/issues/detail?id=1101788
-      results:
-        - test: iframe-target.html
+- product: safari
+  results:
+  - status: FAIL
+    test: cross-origin-effects.sub.html
+  - status: FAIL
+    test: cross-origin-occlusion.sub.html
+  url: https://bugs.webkit.org/show_bug.cgi?id=208052
+- product: webkitgtk
+  results:
+  - status: FAIL
+    test: cross-origin-effects.sub.html
+  - status: FAIL
+    test: cross-origin-occlusion.sub.html
+  url: https://bugs.webkit.org/show_bug.cgi?id=208052
+- product: chrome
+  results:
+  - test: blur-filter.html
+  - test: drop-shadow-filter-vertical-rl.html
+  url: https://bugs.chromium.org/p/chromium/issues/detail?id=1043787
+- product: chrome
+  results:
+  - test: simple-occlusion-svg-foreign-object.html
+  - test: simple-effects.html
+  - test: simple-occlusion.html
+  url: https://bugs.chromium.org/p/chromium/issues/detail?id=1226102
+- product: chrome
+  results:
+  - test: iframe-target.html
+  url: https://bugs.chromium.org/p/chromium/issues/detail?id=1101788
+- product: firefox
+  results:
+  - subtest: First rAF.
+    test: box-shadow.html
+  - subtest: occluder.style.boxShadow = "none"
+    test: box-shadow.html
+  - subtest: occluder.style.boxShadow = ""
+    test: box-shadow.html
+  - subtest: Intersection observer V2 test with visual effects on iframe.
+    test: cross-origin-effects.sub.html
+  - subtest: Intersection observer V2 test with occlusion of target in iframe.
+    test: cross-origin-occlusion.sub.html
+  - subtest: '''delay'' parameter throttles frequency of notifications.'
+    test: delay-test.html
+  - subtest: First rAF.
+    test: inline-occlusion.html
+  - subtest: occluder.style.marginTop = '-10px'
+    test: inline-occlusion.html
+  - subtest: occluder.style.opacity = 0
+    test: inline-occlusion.html
+  - subtest: First rAF.
+    test: position-relative.html
+  - subtest: IntersectionObserver V2 test with scale applied to target.
+    test: scaled-target.html
+  - subtest: First rAF.
+    test: text-editor-occlusion.html
+  - subtest: occluder.style.marginTop = '-10px'
+    test: text-editor-occlusion.html
+  - subtest: occluder.style.opacity = 0
+    test: text-editor-occlusion.html
+  - subtest: First rAF.
+    test: text-shadow.html
+  - subtest: occluder.style.textShadow = "none"
+    test: text-shadow.html
+  - subtest: occluder.style.textShadow = ""
+    test: text-shadow.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1774685
