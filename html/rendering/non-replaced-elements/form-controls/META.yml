@@ -50,3 +50,8 @@ links:
           subtest: <input type="time"> - display
         - test: resets.html
           subtest: <input type="datetime-local"> - display
+    - product: safari
+      url: https://bugs.webkit.org/show_bug.cgi?id=95123
+      results:
+        - test: resets.html
+          subtest: <table><tbody><tr><td> - box-sizing
