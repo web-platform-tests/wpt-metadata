@@ -61,3 +61,10 @@ links:
   - subtest: '".a:has(.b:is(.c:has(.d) .e))" should be a valid selector'
     test: parse-has-disallow-nesting-has-inside-has.tentative.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1773973
+- product: firefox
+  results:
+  - subtest: '".a:has(.b:has(.c), .d)" should be a valid selector'
+    test: parse-has-disallow-nesting-has-inside-has.html
+  - subtest: '".a:has(.b:is(.c:has(.d) .e))" should be a valid selector'
+    test: parse-has-disallow-nesting-has-inside-has.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1775267
