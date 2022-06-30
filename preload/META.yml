@@ -145,3 +145,14 @@ links:
   - subtest: test that a header-preloaded module is loaded and consumed
     test: link-header-modulepreload.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1773292
+- product: firefox
+  results:
+  - subtest: link preload with nonce attribute
+    test: dynamic-adding-preload-nonce.html
+  - subtest: Makes sure that Link headers on subresources preload resources
+    test: link-header-on-subresource.html
+  - subtest: with nonce
+    test: link-header-preload-nonce.html
+  - subtest: Makes sure that preloaded resources are not downloaded again when used
+    test: single-download-preload.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1777433
