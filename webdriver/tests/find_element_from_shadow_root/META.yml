@@ -102,3 +102,10 @@ links:
   - subtest: test_default[prompt-None]
     test: user_prompts.py
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1738920
+- product: firefox
+  results:
+  - subtest: test_detached_shadow_root[top_context]
+    test: find.py
+  - subtest: test_detached_shadow_root[child_context]
+    test: find.py
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1777689
