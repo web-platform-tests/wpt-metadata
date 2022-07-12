@@ -1,16 +1,23 @@
 links:
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1510437
-      results:
-        - test: window-properties.https.html
-          subtest: 'Window unforgeable attribute: top'
-        - test: window-properties.https.html
-          subtest: 'Window unforgeable attribute: location'
-        - test: window-properties.https.html
-          subtest: 'Window unforgeable attribute: document'
-        - test: window-properties.https.html
-          subtest: 'Window unforgeable attribute: window'
-    - product: chrome
-      url: https://crbug.com/778318
-      results:
-        - test: window-reuse-in-nested-browsing-contexts.tentative.html
+- product: firefox
+  results:
+  - subtest: 'Window unforgeable attribute: top'
+    test: window-properties.https.html
+  - subtest: 'Window unforgeable attribute: location'
+    test: window-properties.https.html
+  - subtest: 'Window unforgeable attribute: document'
+    test: window-properties.https.html
+  - subtest: 'Window unforgeable attribute: window'
+    test: window-properties.https.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1510437
+- product: chrome
+  results:
+  - test: window-reuse-in-nested-browsing-contexts.tentative.html
+  url: https://crbug.com/778318
+- product: firefox
+  results:
+  - subtest: 'Window attribute: oncancel'
+    test: window-properties.https.html
+  - subtest: 'Window attribute: onmousewheel'
+    test: window-properties.https.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1779134
