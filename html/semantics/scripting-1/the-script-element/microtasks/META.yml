@@ -1,5 +1,20 @@
 links:
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1658508
-      results:
-        - test: checkpoint-after-workerglobalscope-onerror-module.html
+- product: firefox
+  results:
+  - test: checkpoint-after-workerglobalscope-onerror-module.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1658508
+- product: firefox
+  results:
+  - test: evaluation-order-1-nothrow-static-import.any.worker-module.html
+  - test: evaluation-order-1-nothrow-static-import.any.sharedworker-module.html
+  - subtest: importScripts() queueing a microtask then throwing an exception
+    test: evaluation-order-1-throw-importScripts.any.sharedworker.html
+  - subtest: importScripts() queueing a microtask then throwing an exception
+    test: evaluation-order-1-throw-importScripts.any.worker.html
+  - test: evaluation-order-1-throw-static-import.any.sharedworker-module.html
+  - test: evaluation-order-1-throw-static-import.any.worker-module.html
+  - test: evaluation-order-2.any.worker-module.html
+  - test: evaluation-order-2.any.sharedworker-module.html
+  - test: evaluation-order-3.any.sharedworker-module.html
+  - test: evaluation-order-3.any.worker-module.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1780521
