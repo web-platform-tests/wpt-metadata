@@ -1,9 +1,15 @@
 links:
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1695566
-      results:
-        - test: document-with-fragment-valid.html
-    - product: chrome
-      url: https://bugs.chromium.org/p/chromium/issues/detail?id=1227494
-      results:
-        - test: document-with-fragment-valid.html
+- product: firefox
+  results:
+  - test: document-with-fragment-valid.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1695566
+- product: chrome
+  results:
+  - test: document-with-fragment-valid.html
+  url: https://bugs.chromium.org/p/chromium/issues/detail?id=1227494
+- product: firefox
+  results:
+  - subtest: <dialog> can contain autofocus, without stopping page autofocus content
+      from working
+    test: autofocus-dialog.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1783164
