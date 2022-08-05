@@ -256,7 +256,6 @@ links:
         - test: xyz-d65-002.html
         - test: xyz-003.html
         - test: t424-hsl-values-b-7.html
-        - test: color-contrast-001.html
         - test: color-resolving-hwb.html
         - test: oklab-004.html
         - test: oklch-005.html
@@ -449,3 +448,7 @@ links:
       results:
         - test: color-mix-currentcolor-001.html
           subtest: Harness status
+    - product: chrome
+      url: https://crbug.com/1343361
+      results:
+        - test: currentcolor-003.html

@@ -239,3 +239,19 @@ links:
           subtest: register-with-updateViaCache-imports-then-all
         - test: registration-updateviacache.https.html
           subtest: register-with-updateViaCache-none-then-all
+    - product: safari
+      url: https://bugs.webkit.org/show_bug.cgi?id=243409
+      results:
+        - test: claim-worker-fetch.https.html
+          subtest: fetch() in blob URL Worker should be intercepted after the client is claimed.
+    - product: safari
+      url: https://bugs.webkit.org/show_bug.cgi?id=243410
+      results:
+        - test: registration-updateviacache.https.html
+          subtest: register-with-updateViaCache-all
+        - test: registration-updateviacache.https.html
+          subtest: register-with-updateViaCache-undefined-then-all
+        - test: registration-updateviacache.https.html
+          subtest: register-with-updateViaCache-imports-then-all
+        - test: registration-updateviacache.https.html
+          subtest: register-with-updateViaCache-none-then-all
