@@ -441,15 +441,12 @@ links:
           subtest: e.style['color'] = "rgb(from var(--color) calc(r * .3 + g * .59 + b * .11) calc(r * .3 + g * .59 + b * .11) calc(r * .3 + g * .59 + b * .11))" should set the property value
     - label: interop-2022-color
       results:
-        - test: relative-color-valid.html
         - test: color-computed.html
         - test: color-mix-computed.html
         - test: color-mix-valid.html
         - test: color-valid.html
-        - test: relative-color-invalid.html
         - test: color-mix-invalid.html
         - test: color-invalid.html
-        - test: relative-color-computed.html
     - product: chrome
       url: https://bugs.chromium.org/p/chromium/issues/detail?id=1068610
       results:
