@@ -1,5 +1,10 @@
 links:
-    - product: chrome
-      url: https://crbug.com/706350
-      results:
-        - test: clear-window-name.https.html
+- product: chrome
+  results:
+  - test: clear-window-name.https.html
+  url: https://crbug.com/706350
+- product: firefox
+  results:
+  - subtest: Check that browsing context has new, ready HTML document
+    test: browsing-context.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1780296
