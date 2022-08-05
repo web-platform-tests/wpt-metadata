@@ -18,3 +18,9 @@ links:
   - subtest: outerText on HTMLElement must enqueue a disconnected reaction
     test: HTMLElement.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1710159
+- product: firefox
+  results:
+  - subtest: execCommand on Document must enqueue a disconnected reaction when deleting
+      a custom element from a contenteditable element
+    test: Document.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1783398
