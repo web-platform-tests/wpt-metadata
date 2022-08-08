@@ -1,600 +1,471 @@
 links:
-- product: firefox
-  results:
-  - test: popup-light-dismiss.tentative.html
-  - subtest: Clicking outside a popup will dismiss the popup
-    test: popup-light-dismiss.tentative.html
-  - subtest: Clicking inside a popup does not close that popup
-    test: popup-light-dismiss.tentative.html
-  - subtest: Clicking inside a child popup shouldn't close either popup
-    test: popup-light-dismiss.tentative.html
-  - subtest: Clicking inside a parent popup should close child popup
-    test: popup-light-dismiss.tentative.html
-  - subtest: Clicking on anchor element (that isn't an invoking element) shouldn't
-      close its popup
-    test: popup-light-dismiss.tentative.html
-  - subtest: Dragging from an open popup outside an open popup should leave the popup
-      open
-    test: popup-light-dismiss.tentative.html
-  - subtest: An invoking element should be part of the ancestor chain
-    test: popup-light-dismiss.tentative.html
-  - subtest: Moving focus back to the anchor element should not dismiss the popup
-    test: popup-light-dismiss.tentative.html
-  - subtest: Moving focus back to the active trigger element should not dismiss the
-      popup
-    test: popup-light-dismiss.tentative.html
-  - subtest: Moving focus back to an inactive trigger element should also *not* dismiss
-      the popup
-    test: popup-light-dismiss.tentative.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1766380
-- product: firefox
-  results:
-  - subtest: 'The .showPopup() and .hidePopup() work on a popup, case #0.'
-    test: popup-attribute-basic.tentative.html
-  - subtest: 'The .showPopup() and .hidePopup() work on a popup, case #1.'
-    test: popup-attribute-basic.tentative.html
-  - subtest: 'The .showPopup() and .hidePopup() work on a popup, case #2.'
-    test: popup-attribute-basic.tentative.html
-  - subtest: 'The .showPopup() and .hidePopup() do NOT work on elements without a
-      ''popup'' attribute, case #0.'
-    test: popup-attribute-basic.tentative.html
-  - subtest: 'The .showPopup() and .hidePopup() do NOT work on elements without a
-      ''popup'' attribute, case #1.'
-    test: popup-attribute-basic.tentative.html
-  - subtest: 'The .showPopup() and .hidePopup() do NOT work on elements without a
-      ''popup'' attribute, case #2.'
-    test: popup-attribute-basic.tentative.html
-  - subtest: IDL attribute reflection
-    test: popup-attribute-basic.tentative.html
-  - subtest: Popup attribute value should be case insensitive
-    test: popup-attribute-basic.tentative.html
-  - subtest: Changing attribute values for popup should work
-    test: popup-attribute-basic.tentative.html
-  - subtest: Removing a visible popup=popup element from the document should close
-      the popup
-    test: popup-attribute-basic.tentative.html
-  - subtest: Removing a visible popup=hint element from the document should close
-      the popup
-    test: popup-attribute-basic.tentative.html
-  - subtest: Removing a visible popup=async element from the document should close
-      the popup
-    test: popup-attribute-basic.tentative.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1766760
-- product: firefox
-  results:
-  - subtest: Clicking a togglepopup button opens a closed popup
-    test: popup-invoking-attribute.tentative.html
-  - subtest: Clicking a togglepopup button closes an open popup
-    test: popup-invoking-attribute.tentative.html
-  - subtest: Test <button></button> with popup=popup
-    test: popup-invoking-attribute.tentative.html
-  - subtest: Test <button togglepopup="popup-1"></button> with popup=popup
-    test: popup-invoking-attribute.tentative.html
-  - subtest: Test <button togglepopup="popup-1" hidepopup="popup-1"></button> with
-      popup=popup
-    test: popup-invoking-attribute.tentative.html
-  - subtest: Test <button togglepopup="popup-1" hidepopup="popup-2"></button> with
-      popup=popup
-    test: popup-invoking-attribute.tentative.html
-  - subtest: Test <button togglepopup="popup-1" showpopup="popup-1"></button> with
-      popup=popup
-    test: popup-invoking-attribute.tentative.html
-  - subtest: Test <button togglepopup="popup-1" showpopup="popup-1" hidepopup="popup-1"></button>
-      with popup=popup
-    test: popup-invoking-attribute.tentative.html
-  - subtest: Test <button togglepopup="popup-1" showpopup="popup-1" hidepopup="popup-2"></button>
-      with popup=popup
-    test: popup-invoking-attribute.tentative.html
-  - subtest: Test <button togglepopup="popup-1" showpopup="popup-2"></button> with
-      popup=popup
-    test: popup-invoking-attribute.tentative.html
-  - subtest: Test <button togglepopup="popup-1" showpopup="popup-2" hidepopup="popup-1"></button>
-      with popup=popup
-    test: popup-invoking-attribute.tentative.html
-  - subtest: Test <button togglepopup="popup-1" showpopup="popup-2" hidepopup="popup-2"></button>
-      with popup=popup
-    test: popup-invoking-attribute.tentative.html
-  - subtest: Test <button togglepopup="popup-2"></button> with popup=popup
-    test: popup-invoking-attribute.tentative.html
-  - subtest: Test <button togglepopup="popup-2" hidepopup="popup-1"></button> with
-      popup=popup
-    test: popup-invoking-attribute.tentative.html
-  - subtest: Test <button togglepopup="popup-2" hidepopup="popup-2"></button> with
-      popup=popup
-    test: popup-invoking-attribute.tentative.html
-  - subtest: Test <button togglepopup="popup-2" showpopup="popup-1"></button> with
-      popup=popup
-    test: popup-invoking-attribute.tentative.html
-  - subtest: Test <button togglepopup="popup-2" showpopup="popup-1" hidepopup="popup-1"></button>
-      with popup=popup
-    test: popup-invoking-attribute.tentative.html
-  - subtest: Test <button togglepopup="popup-2" showpopup="popup-1" hidepopup="popup-2"></button>
-      with popup=popup
-    test: popup-invoking-attribute.tentative.html
-  - subtest: Test <button togglepopup="popup-2" showpopup="popup-2"></button> with
-      popup=popup
-    test: popup-invoking-attribute.tentative.html
-  - subtest: Test <button togglepopup="popup-2" showpopup="popup-2" hidepopup="popup-1"></button>
-      with popup=popup
-    test: popup-invoking-attribute.tentative.html
-  - subtest: Test <button togglepopup="popup-2" showpopup="popup-2" hidepopup="popup-2"></button>
-      with popup=popup
-    test: popup-invoking-attribute.tentative.html
-  - subtest: Test <button></button> with popup=hint
-    test: popup-invoking-attribute.tentative.html
-  - subtest: Test <button togglepopup="popup-1"></button> with popup=hint
-    test: popup-invoking-attribute.tentative.html
-  - subtest: Test <button togglepopup="popup-1" hidepopup="popup-1"></button> with
-      popup=hint
-    test: popup-invoking-attribute.tentative.html
-  - subtest: Test <button togglepopup="popup-1" hidepopup="popup-2"></button> with
-      popup=hint
-    test: popup-invoking-attribute.tentative.html
-  - subtest: Test <button togglepopup="popup-1" showpopup="popup-1"></button> with
-      popup=hint
-    test: popup-invoking-attribute.tentative.html
-  - subtest: Test <button togglepopup="popup-1" showpopup="popup-1" hidepopup="popup-1"></button>
-      with popup=hint
-    test: popup-invoking-attribute.tentative.html
-  - subtest: Test <button togglepopup="popup-1" showpopup="popup-1" hidepopup="popup-2"></button>
-      with popup=hint
-    test: popup-invoking-attribute.tentative.html
-  - subtest: Test <button togglepopup="popup-1" showpopup="popup-2"></button> with
-      popup=hint
-    test: popup-invoking-attribute.tentative.html
-  - subtest: Test <button togglepopup="popup-1" showpopup="popup-2" hidepopup="popup-1"></button>
-      with popup=hint
-    test: popup-invoking-attribute.tentative.html
-  - subtest: Test <button togglepopup="popup-1" showpopup="popup-2" hidepopup="popup-2"></button>
-      with popup=hint
-    test: popup-invoking-attribute.tentative.html
-  - subtest: Test <button togglepopup="popup-2"></button> with popup=hint
-    test: popup-invoking-attribute.tentative.html
-  - subtest: Test <button togglepopup="popup-2" hidepopup="popup-1"></button> with
-      popup=hint
-    test: popup-invoking-attribute.tentative.html
-  - subtest: Test <button togglepopup="popup-2" hidepopup="popup-2"></button> with
-      popup=hint
-    test: popup-invoking-attribute.tentative.html
-  - subtest: Test <button togglepopup="popup-2" showpopup="popup-1"></button> with
-      popup=hint
-    test: popup-invoking-attribute.tentative.html
-  - subtest: Test <button togglepopup="popup-2" showpopup="popup-1" hidepopup="popup-1"></button>
-      with popup=hint
-    test: popup-invoking-attribute.tentative.html
-  - subtest: Test <button togglepopup="popup-2" showpopup="popup-1" hidepopup="popup-2"></button>
-      with popup=hint
-    test: popup-invoking-attribute.tentative.html
-  - subtest: Test <button togglepopup="popup-2" showpopup="popup-2"></button> with
-      popup=hint
-    test: popup-invoking-attribute.tentative.html
-  - subtest: Test <button togglepopup="popup-2" showpopup="popup-2" hidepopup="popup-1"></button>
-      with popup=hint
-    test: popup-invoking-attribute.tentative.html
-  - subtest: Test <button togglepopup="popup-2" showpopup="popup-2" hidepopup="popup-2"></button>
-      with popup=hint
-    test: popup-invoking-attribute.tentative.html
-  - subtest: Test <button></button> with popup=async
-    test: popup-invoking-attribute.tentative.html
-  - subtest: Test <button togglepopup="popup-1"></button> with popup=async
-    test: popup-invoking-attribute.tentative.html
-  - subtest: Test <button togglepopup="popup-1" hidepopup="popup-1"></button> with
-      popup=async
-    test: popup-invoking-attribute.tentative.html
-  - subtest: Test <button togglepopup="popup-1" hidepopup="popup-2"></button> with
-      popup=async
-    test: popup-invoking-attribute.tentative.html
-  - subtest: Test <button togglepopup="popup-1" showpopup="popup-1"></button> with
-      popup=async
-    test: popup-invoking-attribute.tentative.html
-  - subtest: Test <button togglepopup="popup-1" showpopup="popup-1" hidepopup="popup-1"></button>
-      with popup=async
-    test: popup-invoking-attribute.tentative.html
-  - subtest: Test <button togglepopup="popup-1" showpopup="popup-1" hidepopup="popup-2"></button>
-      with popup=async
-    test: popup-invoking-attribute.tentative.html
-  - subtest: Test <button togglepopup="popup-1" showpopup="popup-2"></button> with
-      popup=async
-    test: popup-invoking-attribute.tentative.html
-  - subtest: Test <button togglepopup="popup-1" showpopup="popup-2" hidepopup="popup-1"></button>
-      with popup=async
-    test: popup-invoking-attribute.tentative.html
-  - subtest: Test <button togglepopup="popup-1" showpopup="popup-2" hidepopup="popup-2"></button>
-      with popup=async
-    test: popup-invoking-attribute.tentative.html
-  - subtest: Test <button togglepopup="popup-2"></button> with popup=async
-    test: popup-invoking-attribute.tentative.html
-  - subtest: Test <button togglepopup="popup-2" hidepopup="popup-1"></button> with
-      popup=async
-    test: popup-invoking-attribute.tentative.html
-  - subtest: Test <button togglepopup="popup-2" hidepopup="popup-2"></button> with
-      popup=async
-    test: popup-invoking-attribute.tentative.html
-  - subtest: Test <button togglepopup="popup-2" showpopup="popup-1"></button> with
-      popup=async
-    test: popup-invoking-attribute.tentative.html
-  - subtest: Test <button togglepopup="popup-2" showpopup="popup-1" hidepopup="popup-1"></button>
-      with popup=async
-    test: popup-invoking-attribute.tentative.html
-  - subtest: Test <button togglepopup="popup-2" showpopup="popup-1" hidepopup="popup-2"></button>
-      with popup=async
-    test: popup-invoking-attribute.tentative.html
-  - subtest: Test <button togglepopup="popup-2" showpopup="popup-2"></button> with
-      popup=async
-    test: popup-invoking-attribute.tentative.html
-  - subtest: Test <button togglepopup="popup-2" showpopup="popup-2" hidepopup="popup-1"></button>
-      with popup=async
-    test: popup-invoking-attribute.tentative.html
-  - subtest: Test <button togglepopup="popup-2" showpopup="popup-2" hidepopup="popup-2"></button>
-      with popup=async
-    test: popup-invoking-attribute.tentative.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1767083
-- product: firefox
-  results:
-  - test: popup-backdrop-appearance.tentative.html
-  - subtest: Moving focus outside the popup will dismiss the popup
-    test: popup-light-dismiss.tentative.html
-  - subtest: An invoking element that was not used to invoke the popup can still be
-      part of the ancestor chain
-    test: popup-light-dismiss.tentative.html
-  - subtest: Ensure circular/convoluted ancestral relationships are functional
-    test: popup-light-dismiss.tentative.html
-  - subtest: Ensure circular/convoluted ancestral relationships are functional, with
-      a direct showPopup()
-    test: popup-light-dismiss.tentative.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1767555
-- product: firefox
-  results:
-  - subtest: 'Popup corner cases test: autofocus popup'
-    test: popup-focus.tentative.html
-  - subtest: 'Popup corner cases test: autofocus empty popup'
-    test: popup-focus.tentative.html
-  - subtest: 'Popup corner cases test: autofocus popup with button'
-    test: popup-focus.tentative.html
-  - subtest: 'Popup corner cases test: autofocus child'
-    test: popup-focus.tentative.html
-  - subtest: 'Popup corner cases test: autofocus on tabindex=0 element'
-    test: popup-focus.tentative.html
-  - subtest: 'Popup corner cases test: autofocus multiple children'
-    test: popup-focus.tentative.html
-  - subtest: 'Popup corner cases test: autofocus popup and multiple autofocus children'
-    test: popup-focus.tentative.html
-  - subtest: 'Popup corner cases test: delegatesfocus popup'
-    test: popup-focus.tentative.html
-  - subtest: 'Popup corner cases test: delegatesfocus takes precedence over autofocus'
-    test: popup-focus.tentative.html
-  - subtest: 'Popup corner cases test: delegatesfocus takes precedence over autofocus
-      2'
-    test: popup-focus.tentative.html
-  - subtest: 'Popup corner cases test: delegatesfocus skips contained popups'
-    test: popup-focus.tentative.html
-  - subtest: 'Popup corner cases test: delegatesfocus skips contained dialogs'
-    test: popup-focus.tentative.html
-  - subtest: Clicking on invoking element, after using it for activation, shouldn't
-      close its popup
-    test: popup-light-dismiss.tentative.html
-  - subtest: Clicking on invoking element, even if it wasn't used for activation,
-      shouldn't close its popup
-    test: popup-light-dismiss.tentative.html
-  - subtest: Clicking on togglepopup element, even if it wasn't used for activation,
-      should hide it exactly once
-    test: popup-light-dismiss.tentative.html
-  - subtest: Light dismiss of mixed popup types
-    test: popup-light-dismiss.tentative.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1770618
-- product: firefox
-  results:
-  - subtest: A Fullscreen Element should  close a Fullscreen Element
-    test: popup-top-layer-interactions.tentative.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1772046
-- product: firefox
-  results:
-  - subtest: The .showPopup() and .hidePopup() work on a popup, for <div popup=""
-      id="boolean">Popup</div>.
-    test: popup-attribute-basic.tentative.html
-  - subtest: The .showPopup() and .hidePopup() work on a popup, for <div popup="">Popup</div>.
-    test: popup-attribute-basic.tentative.html
-  - subtest: The .showPopup() and .hidePopup() work on a popup, for <div popup="auto">Popup</div>.
-    test: popup-attribute-basic.tentative.html
-  - subtest: The .showPopup() and .hidePopup() work on a popup, for <div popup="hint">Popup</div>.
-    test: popup-attribute-basic.tentative.html
-  - subtest: The .showPopup() and .hidePopup() work on a popup, for <div popup="async">Popup</div>.
-    test: popup-attribute-basic.tentative.html
-  - subtest: The .showPopup() and .hidePopup() do NOT work on elements without a 'popup'
-      attribute, <div>Non-popup</div>.
-    test: popup-attribute-basic.tentative.html
-  - subtest: The .showPopup() and .hidePopup() do NOT work on elements without a 'popup'
-      attribute, <div popup="popup">Non-popup</div>.
-    test: popup-attribute-basic.tentative.html
-  - subtest: The .showPopup() and .hidePopup() do NOT work on elements without a 'popup'
-      attribute, <div popup="invalid">Non-popup</div>.
-    test: popup-attribute-basic.tentative.html
-  - subtest: Changing attribute values should close open popups
-    test: popup-attribute-basic.tentative.html
-  - subtest: Removing a visible popup=auto element from the document should close
-      the popup
-    test: popup-attribute-basic.tentative.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1772774
-- product: firefox
-  results:
-  - test: popup-animated-hide-finishes.tentative.html
-  - subtest: Ensure no crashes if running animations are immediately cancelled (document
-      removal)
-    test: popup-animated-hide-cleanup.tentative.html
-  - subtest: Ensure no crashes if running animations are immediately cancelled (dialog
-      showModal)
-    test: popup-animated-hide-cleanup.tentative.html
-  - subtest: Ensure no crashes if running transitions are immediately cancelled (button
-      click)
-    test: popup-animated-hide-cleanup.tentative.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1774355
-- product: firefox
-  results:
-  - subtest: The .showPopup() and .hidePopup() work on a pop-up, for <div popup=""
-      id="boolean">Pop up</div>.
-    test: popup-attribute-basic.tentative.html
-  - subtest: The .showPopup() and .hidePopup() work on a pop-up, for <div popup="">Pop
-      up</div>.
-    test: popup-attribute-basic.tentative.html
-  - subtest: The .showPopup() and .hidePopup() work on a pop-up, for <div popup="auto">Pop
-      up</div>.
-    test: popup-attribute-basic.tentative.html
-  - subtest: The .showPopup() and .hidePopup() work on a pop-up, for <div popup="hint">Pop
-      up</div>.
-    test: popup-attribute-basic.tentative.html
-  - subtest: The .showPopup() and .hidePopup() work on a pop-up, for <div popup="async">Pop
-      up</div>.
-    test: popup-attribute-basic.tentative.html
-  - subtest: The .showPopup() and .hidePopup() do NOT work on elements without a 'popup'
-      attribute, <div>Not a pop-up</div>.
-    test: popup-attribute-basic.tentative.html
-  - subtest: The .showPopup() and .hidePopup() do NOT work on elements without a 'popup'
-      attribute, <div popup="popup">Not a pop-up</div>.
-    test: popup-attribute-basic.tentative.html
-  - subtest: The .showPopup() and .hidePopup() do NOT work on elements without a 'popup'
-      attribute, <div popup="invalid">Not a pop-up</div>.
-    test: popup-attribute-basic.tentative.html
-  - subtest: Changing attribute values should close open pop-ups
-    test: popup-attribute-basic.tentative.html
-  - subtest: Removing a visible popup=auto element from the document should close
-      the pop-up
-    test: popup-attribute-basic.tentative.html
-  - subtest: Removing a visible popup=hint element from the document should close
-      the pop-up
-    test: popup-attribute-basic.tentative.html
-  - subtest: Removing a visible popup=async element from the document should close
-      the pop-up
-    test: popup-attribute-basic.tentative.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1776316
-- product: firefox
-  results:
-  - test: popup-open-overflow-display.tentative.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1776482
-- product: firefox
-  results:
-  - subtest: Descendent animations should keep the pop up visible until the animation
-      ends
-    test: popup-animation-corner-cases.tentative.html
-  - subtest: Pre-existing animations should *not* keep the pop up visible until the
-      animation ends
-    test: popup-animation-corner-cases.tentative.html
-  - subtest: hide event cannot be cancelled
-    test: popup-animation-corner-cases.tentative.html
-  - subtest: The .showPopUp() and .hidePopUp() work on a pop-up, for <div popup=""
-      id="boolean">Pop up</div>.
-    test: popup-attribute-basic.tentative.html
-  - subtest: The .showPopUp() and .hidePopUp() work on a pop-up, for <div popup="">Pop
-      up</div>.
-    test: popup-attribute-basic.tentative.html
-  - subtest: The .showPopUp() and .hidePopUp() work on a pop-up, for <div popup="auto">Pop
-      up</div>.
-    test: popup-attribute-basic.tentative.html
-  - subtest: The .showPopUp() and .hidePopUp() work on a pop-up, for <div popup="hint">Pop
-      up</div>.
-    test: popup-attribute-basic.tentative.html
-  - subtest: The .showPopUp() and .hidePopUp() work on a pop-up, for <div popup="manual">Pop
-      up</div>.
-    test: popup-attribute-basic.tentative.html
-  - subtest: The .showPopUp() and .hidePopUp() do NOT work on elements without a 'popup'
-      attribute, <div>Not a pop-up</div>.
-    test: popup-attribute-basic.tentative.html
-  - subtest: The .showPopUp() and .hidePopUp() do NOT work on elements without a 'popup'
-      attribute, <div popup="popup">Not a pop-up</div>.
-    test: popup-attribute-basic.tentative.html
-  - subtest: The .showPopUp() and .hidePopUp() do NOT work on elements without a 'popup'
-      attribute, <div popup="invalid">Not a pop-up</div>.
-    test: popup-attribute-basic.tentative.html
-  - subtest: Changing attribute values for pop-up should work
-    test: popup-attribute-basic.tentative.html
-  - subtest: Removing a visible popup=manual element from the document should close
-      the pop-up
-    test: popup-attribute-basic.tentative.html
-  - subtest: Exceptions are thrown even when show/hide are animated
-    test: popup-attribute-basic.tentative.html
-  - subtest: The defaultopen attribute should affect page load only
-    test: popup-defaultopen.tentative.html
-  - subtest: 'Popup focus test: default behavior - pop-up is not focused'
-    test: popup-focus.tentative.html
-  - subtest: 'Popup button click focus test: default behavior - pop-up is not focused'
-    test: popup-focus.tentative.html
-  - subtest: 'Popup focus test: autofocus pop-up'
-    test: popup-focus.tentative.html
-  - subtest: 'Popup button click focus test: autofocus pop-up'
-    test: popup-focus.tentative.html
-  - subtest: 'Popup focus test: autofocus empty pop-up'
-    test: popup-focus.tentative.html
-  - subtest: 'Popup button click focus test: autofocus empty pop-up'
-    test: popup-focus.tentative.html
-  - subtest: 'Popup focus test: autofocus pop-up with button'
-    test: popup-focus.tentative.html
-  - subtest: 'Popup button click focus test: autofocus pop-up with button'
-    test: popup-focus.tentative.html
-  - subtest: 'Popup focus test: autofocus child'
-    test: popup-focus.tentative.html
-  - subtest: 'Popup button click focus test: autofocus child'
-    test: popup-focus.tentative.html
-  - subtest: 'Popup focus test: autofocus on tabindex=0 element'
-    test: popup-focus.tentative.html
-  - subtest: 'Popup button click focus test: autofocus on tabindex=0 element'
-    test: popup-focus.tentative.html
-  - subtest: 'Popup focus test: autofocus multiple children'
-    test: popup-focus.tentative.html
-  - subtest: 'Popup button click focus test: autofocus multiple children'
-    test: popup-focus.tentative.html
-  - subtest: 'Popup focus test: autofocus pop-up and multiple autofocus children'
-    test: popup-focus.tentative.html
-  - subtest: 'Popup button click focus test: autofocus pop-up and multiple autofocus
-      children'
-    test: popup-focus.tentative.html
-  - subtest: 'Popup focus test: delegatesfocus pop-up'
-    test: popup-focus.tentative.html
-  - subtest: 'Popup button click focus test: delegatesfocus pop-up'
-    test: popup-focus.tentative.html
-  - subtest: 'Popup focus test: delegatesfocus takes precedence over autofocus'
-    test: popup-focus.tentative.html
-  - subtest: 'Popup button click focus test: delegatesfocus takes precedence over
-      autofocus'
-    test: popup-focus.tentative.html
-  - subtest: 'Popup focus test: delegatesfocus takes precedence over autofocus 2'
-    test: popup-focus.tentative.html
-  - subtest: 'Popup button click focus test: delegatesfocus takes precedence over
-      autofocus 2'
-    test: popup-focus.tentative.html
-  - subtest: 'Popup focus test: delegatesfocus on empty pop-up has no effect'
-    test: popup-focus.tentative.html
-  - subtest: 'Popup button click focus test: delegatesfocus on empty pop-up has no
-      effect'
-    test: popup-focus.tentative.html
-  - subtest: 'Popup focus test: delegatesfocus on child has no effect'
-    test: popup-focus.tentative.html
-  - subtest: 'Popup button click focus test: delegatesfocus on child has no effect'
-    test: popup-focus.tentative.html
-  - subtest: 'Popup focus test: delegatesfocus skips contained pop-ups'
-    test: popup-focus.tentative.html
-  - subtest: 'Popup button click focus test: delegatesfocus skips contained pop-ups'
-    test: popup-focus.tentative.html
-  - subtest: 'Popup focus test: delegatesfocus skips contained dialogs'
-    test: popup-focus.tentative.html
-  - subtest: 'Popup button click focus test: delegatesfocus skips contained dialogs'
-    test: popup-focus.tentative.html
-  - subtest: Ensure circular/convoluted ancestral relationships are functional, with
-      a direct showPopUp()
-    test: popup-light-dismiss.tentative.html
-  - subtest: Popups located inside shadow DOM can still be shown
-    test: popup-shadow-dom.tentative.html
-  - subtest: anchor references do not cross shadow boundaries
-    test: popup-shadow-dom.tentative.html
-  - subtest: anchor references use the flat tree not the DOM tree
-    test: popup-shadow-dom.tentative.html
-  - subtest: The popup stack is preserved across shadow-inclusive ancestors
-    test: popup-shadow-dom.tentative.html
-  - subtest: If a popup=hint is shown, it should hide any other open popup=hint pop-ups,
-      including ancestral pop-ups. (You can't nest popup=hint)
-    test: popup-types.tentative.html
-  - subtest: If a popup=auto is shown, it should hide any open popup=hint, including
-      if the popup=hint is an ancestral pop-up of the popup=auto. (You can't nest
-      a popup=auto inside a popup=hint)
-    test: popup-types.tentative.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1778734
-- product: firefox
-  results:
-  - subtest: popuphovertarget hover-pop-up-delay is respected (popup=auto, invokerType=plain)
-    test: popup-hoverpopup-attribute.tentative.html
-  - subtest: popuphovertarget attribute does nothing when pop-up is already showing
-      (popup=auto, invokerType=plain)
-    test: popup-hoverpopup-attribute.tentative.html
-  - subtest: popuphovertarget attribute does nothing when pop-up is moved out of the
-      document (popup=auto, invokerType=plain)
-    test: popup-hoverpopup-attribute.tentative.html
-  - subtest: popuphovertarget attribute does nothing when target changes (popup=auto,
-      invokerType=plain)
-    test: popup-hoverpopup-attribute.tentative.html
-  - subtest: popuphovertarget hover-pop-up-delay is respected (popup=auto, invokerType=nested)
-    test: popup-hoverpopup-attribute.tentative.html
-  - subtest: popuphovertarget attribute does nothing when pop-up is already showing
-      (popup=auto, invokerType=nested)
-    test: popup-hoverpopup-attribute.tentative.html
-  - subtest: popuphovertarget attribute does nothing when pop-up is moved out of the
-      document (popup=auto, invokerType=nested)
-    test: popup-hoverpopup-attribute.tentative.html
-  - subtest: popuphovertarget attribute does nothing when target changes (popup=auto,
-      invokerType=nested)
-    test: popup-hoverpopup-attribute.tentative.html
-  - subtest: popuphovertarget hover-pop-up-delay is respected (popup=auto, invokerType=nested-offset)
-    test: popup-hoverpopup-attribute.tentative.html
-  - subtest: popuphovertarget attribute does nothing when pop-up is already showing
-      (popup=auto, invokerType=nested-offset)
-    test: popup-hoverpopup-attribute.tentative.html
-  - subtest: popuphovertarget attribute does nothing when pop-up is moved out of the
-      document (popup=auto, invokerType=nested-offset)
-    test: popup-hoverpopup-attribute.tentative.html
-  - subtest: popuphovertarget attribute does nothing when target changes (popup=auto,
-      invokerType=nested-offset)
-    test: popup-hoverpopup-attribute.tentative.html
-  - subtest: popuphovertarget hover-pop-up-delay is respected (popup=hint, invokerType=plain)
-    test: popup-hoverpopup-attribute.tentative.html
-  - subtest: popuphovertarget attribute does nothing when pop-up is already showing
-      (popup=hint, invokerType=plain)
-    test: popup-hoverpopup-attribute.tentative.html
-  - subtest: popuphovertarget attribute does nothing when pop-up is moved out of the
-      document (popup=hint, invokerType=plain)
-    test: popup-hoverpopup-attribute.tentative.html
-  - subtest: popuphovertarget attribute does nothing when target changes (popup=hint,
-      invokerType=plain)
-    test: popup-hoverpopup-attribute.tentative.html
-  - subtest: popuphovertarget hover-pop-up-delay is respected (popup=hint, invokerType=nested)
-    test: popup-hoverpopup-attribute.tentative.html
-  - subtest: popuphovertarget attribute does nothing when pop-up is already showing
-      (popup=hint, invokerType=nested)
-    test: popup-hoverpopup-attribute.tentative.html
-  - subtest: popuphovertarget attribute does nothing when pop-up is moved out of the
-      document (popup=hint, invokerType=nested)
-    test: popup-hoverpopup-attribute.tentative.html
-  - subtest: popuphovertarget attribute does nothing when target changes (popup=hint,
-      invokerType=nested)
-    test: popup-hoverpopup-attribute.tentative.html
-  - subtest: popuphovertarget hover-pop-up-delay is respected (popup=hint, invokerType=nested-offset)
-    test: popup-hoverpopup-attribute.tentative.html
-  - subtest: popuphovertarget attribute does nothing when pop-up is already showing
-      (popup=hint, invokerType=nested-offset)
-    test: popup-hoverpopup-attribute.tentative.html
-  - subtest: popuphovertarget attribute does nothing when pop-up is moved out of the
-      document (popup=hint, invokerType=nested-offset)
-    test: popup-hoverpopup-attribute.tentative.html
-  - subtest: popuphovertarget attribute does nothing when target changes (popup=hint,
-      invokerType=nested-offset)
-    test: popup-hoverpopup-attribute.tentative.html
-  - subtest: popuphovertarget hover-pop-up-delay is respected (popup=manual, invokerType=plain)
-    test: popup-hoverpopup-attribute.tentative.html
-  - subtest: popuphovertarget attribute does nothing when pop-up is already showing
-      (popup=manual, invokerType=plain)
-    test: popup-hoverpopup-attribute.tentative.html
-  - subtest: popuphovertarget attribute does nothing when pop-up is moved out of the
-      document (popup=manual, invokerType=plain)
-    test: popup-hoverpopup-attribute.tentative.html
-  - subtest: popuphovertarget attribute does nothing when target changes (popup=manual,
-      invokerType=plain)
-    test: popup-hoverpopup-attribute.tentative.html
-  - subtest: popuphovertarget hover-pop-up-delay is respected (popup=manual, invokerType=nested)
-    test: popup-hoverpopup-attribute.tentative.html
-  - subtest: popuphovertarget attribute does nothing when pop-up is already showing
-      (popup=manual, invokerType=nested)
-    test: popup-hoverpopup-attribute.tentative.html
-  - subtest: popuphovertarget attribute does nothing when pop-up is moved out of the
-      document (popup=manual, invokerType=nested)
-    test: popup-hoverpopup-attribute.tentative.html
-  - subtest: popuphovertarget attribute does nothing when target changes (popup=manual,
-      invokerType=nested)
-    test: popup-hoverpopup-attribute.tentative.html
-  - subtest: popuphovertarget hover-pop-up-delay is respected (popup=manual, invokerType=nested-offset)
-    test: popup-hoverpopup-attribute.tentative.html
-  - subtest: popuphovertarget attribute does nothing when pop-up is already showing
-      (popup=manual, invokerType=nested-offset)
-    test: popup-hoverpopup-attribute.tentative.html
-  - subtest: popuphovertarget attribute does nothing when pop-up is moved out of the
-      document (popup=manual, invokerType=nested-offset)
-    test: popup-hoverpopup-attribute.tentative.html
-  - subtest: popuphovertarget attribute does nothing when target changes (popup=manual,
-      invokerType=nested-offset)
-    test: popup-hoverpopup-attribute.tentative.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1783361
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1766380
+      results:
+        - test: popup-light-dismiss.tentative.html
+        - test: popup-light-dismiss.tentative.html
+          subtest: Clicking outside a popup will dismiss the popup
+        - test: popup-light-dismiss.tentative.html
+          subtest: Clicking inside a popup does not close that popup
+        - test: popup-light-dismiss.tentative.html
+          subtest: Clicking inside a child popup shouldn't close either popup
+        - test: popup-light-dismiss.tentative.html
+          subtest: Clicking inside a parent popup should close child popup
+        - test: popup-light-dismiss.tentative.html
+          subtest: Clicking on anchor element (that isn't an invoking element) shouldn't close its popup
+        - test: popup-light-dismiss.tentative.html
+          subtest: Dragging from an open popup outside an open popup should leave the popup open
+        - test: popup-light-dismiss.tentative.html
+          subtest: An invoking element should be part of the ancestor chain
+        - test: popup-light-dismiss.tentative.html
+          subtest: Moving focus back to the anchor element should not dismiss the popup
+        - test: popup-light-dismiss.tentative.html
+          subtest: Moving focus back to the active trigger element should not dismiss the popup
+        - test: popup-light-dismiss.tentative.html
+          subtest: Moving focus back to an inactive trigger element should also *not* dismiss the popup
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1766760
+      results:
+        - test: popup-attribute-basic.tentative.html
+          subtest: 'The .showPopup() and .hidePopup() work on a popup, case #0.'
+        - test: popup-attribute-basic.tentative.html
+          subtest: 'The .showPopup() and .hidePopup() work on a popup, case #1.'
+        - test: popup-attribute-basic.tentative.html
+          subtest: 'The .showPopup() and .hidePopup() work on a popup, case #2.'
+        - test: popup-attribute-basic.tentative.html
+          subtest: 'The .showPopup() and .hidePopup() do NOT work on elements without a ''popup'' attribute, case #0.'
+        - test: popup-attribute-basic.tentative.html
+          subtest: 'The .showPopup() and .hidePopup() do NOT work on elements without a ''popup'' attribute, case #1.'
+        - test: popup-attribute-basic.tentative.html
+          subtest: 'The .showPopup() and .hidePopup() do NOT work on elements without a ''popup'' attribute, case #2.'
+        - test: popup-attribute-basic.tentative.html
+          subtest: IDL attribute reflection
+        - test: popup-attribute-basic.tentative.html
+          subtest: Popup attribute value should be case insensitive
+        - test: popup-attribute-basic.tentative.html
+          subtest: Changing attribute values for popup should work
+        - test: popup-attribute-basic.tentative.html
+          subtest: Removing a visible popup=popup element from the document should close the popup
+        - test: popup-attribute-basic.tentative.html
+          subtest: Removing a visible popup=hint element from the document should close the popup
+        - test: popup-attribute-basic.tentative.html
+          subtest: Removing a visible popup=async element from the document should close the popup
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1767083
+      results:
+        - test: popup-invoking-attribute.tentative.html
+          subtest: Clicking a togglepopup button opens a closed popup
+        - test: popup-invoking-attribute.tentative.html
+          subtest: Clicking a togglepopup button closes an open popup
+        - test: popup-invoking-attribute.tentative.html
+          subtest: Test <button></button> with popup=popup
+        - test: popup-invoking-attribute.tentative.html
+          subtest: Test <button togglepopup="popup-1"></button> with popup=popup
+        - test: popup-invoking-attribute.tentative.html
+          subtest: Test <button togglepopup="popup-1" hidepopup="popup-1"></button> with popup=popup
+        - test: popup-invoking-attribute.tentative.html
+          subtest: Test <button togglepopup="popup-1" hidepopup="popup-2"></button> with popup=popup
+        - test: popup-invoking-attribute.tentative.html
+          subtest: Test <button togglepopup="popup-1" showpopup="popup-1"></button> with popup=popup
+        - test: popup-invoking-attribute.tentative.html
+          subtest: Test <button togglepopup="popup-1" showpopup="popup-1" hidepopup="popup-1"></button> with popup=popup
+        - test: popup-invoking-attribute.tentative.html
+          subtest: Test <button togglepopup="popup-1" showpopup="popup-1" hidepopup="popup-2"></button> with popup=popup
+        - test: popup-invoking-attribute.tentative.html
+          subtest: Test <button togglepopup="popup-1" showpopup="popup-2"></button> with popup=popup
+        - test: popup-invoking-attribute.tentative.html
+          subtest: Test <button togglepopup="popup-1" showpopup="popup-2" hidepopup="popup-1"></button> with popup=popup
+        - test: popup-invoking-attribute.tentative.html
+          subtest: Test <button togglepopup="popup-1" showpopup="popup-2" hidepopup="popup-2"></button> with popup=popup
+        - test: popup-invoking-attribute.tentative.html
+          subtest: Test <button togglepopup="popup-2"></button> with popup=popup
+        - test: popup-invoking-attribute.tentative.html
+          subtest: Test <button togglepopup="popup-2" hidepopup="popup-1"></button> with popup=popup
+        - test: popup-invoking-attribute.tentative.html
+          subtest: Test <button togglepopup="popup-2" hidepopup="popup-2"></button> with popup=popup
+        - test: popup-invoking-attribute.tentative.html
+          subtest: Test <button togglepopup="popup-2" showpopup="popup-1"></button> with popup=popup
+        - test: popup-invoking-attribute.tentative.html
+          subtest: Test <button togglepopup="popup-2" showpopup="popup-1" hidepopup="popup-1"></button> with popup=popup
+        - test: popup-invoking-attribute.tentative.html
+          subtest: Test <button togglepopup="popup-2" showpopup="popup-1" hidepopup="popup-2"></button> with popup=popup
+        - test: popup-invoking-attribute.tentative.html
+          subtest: Test <button togglepopup="popup-2" showpopup="popup-2"></button> with popup=popup
+        - test: popup-invoking-attribute.tentative.html
+          subtest: Test <button togglepopup="popup-2" showpopup="popup-2" hidepopup="popup-1"></button> with popup=popup
+        - test: popup-invoking-attribute.tentative.html
+          subtest: Test <button togglepopup="popup-2" showpopup="popup-2" hidepopup="popup-2"></button> with popup=popup
+        - test: popup-invoking-attribute.tentative.html
+          subtest: Test <button></button> with popup=hint
+        - test: popup-invoking-attribute.tentative.html
+          subtest: Test <button togglepopup="popup-1"></button> with popup=hint
+        - test: popup-invoking-attribute.tentative.html
+          subtest: Test <button togglepopup="popup-1" hidepopup="popup-1"></button> with popup=hint
+        - test: popup-invoking-attribute.tentative.html
+          subtest: Test <button togglepopup="popup-1" hidepopup="popup-2"></button> with popup=hint
+        - test: popup-invoking-attribute.tentative.html
+          subtest: Test <button togglepopup="popup-1" showpopup="popup-1"></button> with popup=hint
+        - test: popup-invoking-attribute.tentative.html
+          subtest: Test <button togglepopup="popup-1" showpopup="popup-1" hidepopup="popup-1"></button> with popup=hint
+        - test: popup-invoking-attribute.tentative.html
+          subtest: Test <button togglepopup="popup-1" showpopup="popup-1" hidepopup="popup-2"></button> with popup=hint
+        - test: popup-invoking-attribute.tentative.html
+          subtest: Test <button togglepopup="popup-1" showpopup="popup-2"></button> with popup=hint
+        - test: popup-invoking-attribute.tentative.html
+          subtest: Test <button togglepopup="popup-1" showpopup="popup-2" hidepopup="popup-1"></button> with popup=hint
+        - test: popup-invoking-attribute.tentative.html
+          subtest: Test <button togglepopup="popup-1" showpopup="popup-2" hidepopup="popup-2"></button> with popup=hint
+        - test: popup-invoking-attribute.tentative.html
+          subtest: Test <button togglepopup="popup-2"></button> with popup=hint
+        - test: popup-invoking-attribute.tentative.html
+          subtest: Test <button togglepopup="popup-2" hidepopup="popup-1"></button> with popup=hint
+        - test: popup-invoking-attribute.tentative.html
+          subtest: Test <button togglepopup="popup-2" hidepopup="popup-2"></button> with popup=hint
+        - test: popup-invoking-attribute.tentative.html
+          subtest: Test <button togglepopup="popup-2" showpopup="popup-1"></button> with popup=hint
+        - test: popup-invoking-attribute.tentative.html
+          subtest: Test <button togglepopup="popup-2" showpopup="popup-1" hidepopup="popup-1"></button> with popup=hint
+        - test: popup-invoking-attribute.tentative.html
+          subtest: Test <button togglepopup="popup-2" showpopup="popup-1" hidepopup="popup-2"></button> with popup=hint
+        - test: popup-invoking-attribute.tentative.html
+          subtest: Test <button togglepopup="popup-2" showpopup="popup-2"></button> with popup=hint
+        - test: popup-invoking-attribute.tentative.html
+          subtest: Test <button togglepopup="popup-2" showpopup="popup-2" hidepopup="popup-1"></button> with popup=hint
+        - test: popup-invoking-attribute.tentative.html
+          subtest: Test <button togglepopup="popup-2" showpopup="popup-2" hidepopup="popup-2"></button> with popup=hint
+        - test: popup-invoking-attribute.tentative.html
+          subtest: Test <button></button> with popup=async
+        - test: popup-invoking-attribute.tentative.html
+          subtest: Test <button togglepopup="popup-1"></button> with popup=async
+        - test: popup-invoking-attribute.tentative.html
+          subtest: Test <button togglepopup="popup-1" hidepopup="popup-1"></button> with popup=async
+        - test: popup-invoking-attribute.tentative.html
+          subtest: Test <button togglepopup="popup-1" hidepopup="popup-2"></button> with popup=async
+        - test: popup-invoking-attribute.tentative.html
+          subtest: Test <button togglepopup="popup-1" showpopup="popup-1"></button> with popup=async
+        - test: popup-invoking-attribute.tentative.html
+          subtest: Test <button togglepopup="popup-1" showpopup="popup-1" hidepopup="popup-1"></button> with popup=async
+        - test: popup-invoking-attribute.tentative.html
+          subtest: Test <button togglepopup="popup-1" showpopup="popup-1" hidepopup="popup-2"></button> with popup=async
+        - test: popup-invoking-attribute.tentative.html
+          subtest: Test <button togglepopup="popup-1" showpopup="popup-2"></button> with popup=async
+        - test: popup-invoking-attribute.tentative.html
+          subtest: Test <button togglepopup="popup-1" showpopup="popup-2" hidepopup="popup-1"></button> with popup=async
+        - test: popup-invoking-attribute.tentative.html
+          subtest: Test <button togglepopup="popup-1" showpopup="popup-2" hidepopup="popup-2"></button> with popup=async
+        - test: popup-invoking-attribute.tentative.html
+          subtest: Test <button togglepopup="popup-2"></button> with popup=async
+        - test: popup-invoking-attribute.tentative.html
+          subtest: Test <button togglepopup="popup-2" hidepopup="popup-1"></button> with popup=async
+        - test: popup-invoking-attribute.tentative.html
+          subtest: Test <button togglepopup="popup-2" hidepopup="popup-2"></button> with popup=async
+        - test: popup-invoking-attribute.tentative.html
+          subtest: Test <button togglepopup="popup-2" showpopup="popup-1"></button> with popup=async
+        - test: popup-invoking-attribute.tentative.html
+          subtest: Test <button togglepopup="popup-2" showpopup="popup-1" hidepopup="popup-1"></button> with popup=async
+        - test: popup-invoking-attribute.tentative.html
+          subtest: Test <button togglepopup="popup-2" showpopup="popup-1" hidepopup="popup-2"></button> with popup=async
+        - test: popup-invoking-attribute.tentative.html
+          subtest: Test <button togglepopup="popup-2" showpopup="popup-2"></button> with popup=async
+        - test: popup-invoking-attribute.tentative.html
+          subtest: Test <button togglepopup="popup-2" showpopup="popup-2" hidepopup="popup-1"></button> with popup=async
+        - test: popup-invoking-attribute.tentative.html
+          subtest: Test <button togglepopup="popup-2" showpopup="popup-2" hidepopup="popup-2"></button> with popup=async
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1767555
+      results:
+        - test: popup-backdrop-appearance.tentative.html
+        - test: popup-light-dismiss.tentative.html
+          subtest: Moving focus outside the popup will dismiss the popup
+        - test: popup-light-dismiss.tentative.html
+          subtest: An invoking element that was not used to invoke the popup can still be part of the ancestor chain
+        - test: popup-light-dismiss.tentative.html
+          subtest: Ensure circular/convoluted ancestral relationships are functional
+        - test: popup-light-dismiss.tentative.html
+          subtest: Ensure circular/convoluted ancestral relationships are functional, with a direct showPopup()
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1770618
+      results:
+        - test: popup-focus.tentative.html
+          subtest: 'Popup corner cases test: autofocus popup'
+        - test: popup-focus.tentative.html
+          subtest: 'Popup corner cases test: autofocus empty popup'
+        - test: popup-focus.tentative.html
+          subtest: 'Popup corner cases test: autofocus popup with button'
+        - test: popup-focus.tentative.html
+          subtest: 'Popup corner cases test: autofocus child'
+        - test: popup-focus.tentative.html
+          subtest: 'Popup corner cases test: autofocus on tabindex=0 element'
+        - test: popup-focus.tentative.html
+          subtest: 'Popup corner cases test: autofocus multiple children'
+        - test: popup-focus.tentative.html
+          subtest: 'Popup corner cases test: autofocus popup and multiple autofocus children'
+        - test: popup-focus.tentative.html
+          subtest: 'Popup corner cases test: delegatesfocus popup'
+        - test: popup-focus.tentative.html
+          subtest: 'Popup corner cases test: delegatesfocus takes precedence over autofocus'
+        - test: popup-focus.tentative.html
+          subtest: 'Popup corner cases test: delegatesfocus takes precedence over autofocus 2'
+        - test: popup-focus.tentative.html
+          subtest: 'Popup corner cases test: delegatesfocus skips contained popups'
+        - test: popup-focus.tentative.html
+          subtest: 'Popup corner cases test: delegatesfocus skips contained dialogs'
+        - test: popup-light-dismiss.tentative.html
+          subtest: Clicking on invoking element, after using it for activation, shouldn't close its popup
+        - test: popup-light-dismiss.tentative.html
+          subtest: Clicking on invoking element, even if it wasn't used for activation, shouldn't close its popup
+        - test: popup-light-dismiss.tentative.html
+          subtest: Clicking on togglepopup element, even if it wasn't used for activation, should hide it exactly once
+        - test: popup-light-dismiss.tentative.html
+          subtest: Light dismiss of mixed popup types
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1772046
+      results:
+        - test: popup-top-layer-interactions.tentative.html
+          subtest: A Fullscreen Element should  close a Fullscreen Element
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1772774
+      results:
+        - test: popup-attribute-basic.tentative.html
+          subtest: The .showPopup() and .hidePopup() work on a popup, for <div popup="" id="boolean">Popup</div>.
+        - test: popup-attribute-basic.tentative.html
+          subtest: The .showPopup() and .hidePopup() work on a popup, for <div popup="">Popup</div>.
+        - test: popup-attribute-basic.tentative.html
+          subtest: The .showPopup() and .hidePopup() work on a popup, for <div popup="auto">Popup</div>.
+        - test: popup-attribute-basic.tentative.html
+          subtest: The .showPopup() and .hidePopup() work on a popup, for <div popup="hint">Popup</div>.
+        - test: popup-attribute-basic.tentative.html
+          subtest: The .showPopup() and .hidePopup() work on a popup, for <div popup="async">Popup</div>.
+        - test: popup-attribute-basic.tentative.html
+          subtest: The .showPopup() and .hidePopup() do NOT work on elements without a 'popup' attribute, <div>Non-popup</div>.
+        - test: popup-attribute-basic.tentative.html
+          subtest: The .showPopup() and .hidePopup() do NOT work on elements without a 'popup' attribute, <div popup="popup">Non-popup</div>.
+        - test: popup-attribute-basic.tentative.html
+          subtest: The .showPopup() and .hidePopup() do NOT work on elements without a 'popup' attribute, <div popup="invalid">Non-popup</div>.
+        - test: popup-attribute-basic.tentative.html
+          subtest: Changing attribute values should close open popups
+        - test: popup-attribute-basic.tentative.html
+          subtest: Removing a visible popup=auto element from the document should close the popup
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1774355
+      results:
+        - test: popup-animated-hide-finishes.tentative.html
+        - test: popup-animated-hide-cleanup.tentative.html
+          subtest: Ensure no crashes if running animations are immediately cancelled (document removal)
+        - test: popup-animated-hide-cleanup.tentative.html
+          subtest: Ensure no crashes if running animations are immediately cancelled (dialog showModal)
+        - test: popup-animated-hide-cleanup.tentative.html
+          subtest: Ensure no crashes if running transitions are immediately cancelled (button click)
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1776316
+      results:
+        - test: popup-attribute-basic.tentative.html
+          subtest: The .showPopup() and .hidePopup() work on a pop-up, for <div popup="" id="boolean">Pop up</div>.
+        - test: popup-attribute-basic.tentative.html
+          subtest: The .showPopup() and .hidePopup() work on a pop-up, for <div popup="">Pop up</div>.
+        - test: popup-attribute-basic.tentative.html
+          subtest: The .showPopup() and .hidePopup() work on a pop-up, for <div popup="auto">Pop up</div>.
+        - test: popup-attribute-basic.tentative.html
+          subtest: The .showPopup() and .hidePopup() work on a pop-up, for <div popup="hint">Pop up</div>.
+        - test: popup-attribute-basic.tentative.html
+          subtest: The .showPopup() and .hidePopup() work on a pop-up, for <div popup="async">Pop up</div>.
+        - test: popup-attribute-basic.tentative.html
+          subtest: The .showPopup() and .hidePopup() do NOT work on elements without a 'popup' attribute, <div>Not a pop-up</div>.
+        - test: popup-attribute-basic.tentative.html
+          subtest: The .showPopup() and .hidePopup() do NOT work on elements without a 'popup' attribute, <div popup="popup">Not a pop-up</div>.
+        - test: popup-attribute-basic.tentative.html
+          subtest: The .showPopup() and .hidePopup() do NOT work on elements without a 'popup' attribute, <div popup="invalid">Not a pop-up</div>.
+        - test: popup-attribute-basic.tentative.html
+          subtest: Changing attribute values should close open pop-ups
+        - test: popup-attribute-basic.tentative.html
+          subtest: Removing a visible popup=auto element from the document should close the pop-up
+        - test: popup-attribute-basic.tentative.html
+          subtest: Removing a visible popup=hint element from the document should close the pop-up
+        - test: popup-attribute-basic.tentative.html
+          subtest: Removing a visible popup=async element from the document should close the pop-up
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1776482
+      results:
+        - test: popup-open-overflow-display.tentative.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1778734
+      results:
+        - test: popup-animation-corner-cases.tentative.html
+          subtest: Descendent animations should keep the pop up visible until the animation ends
+        - test: popup-animation-corner-cases.tentative.html
+          subtest: Pre-existing animations should *not* keep the pop up visible until the animation ends
+        - test: popup-animation-corner-cases.tentative.html
+          subtest: hide event cannot be cancelled
+        - test: popup-attribute-basic.tentative.html
+          subtest: The .showPopUp() and .hidePopUp() work on a pop-up, for <div popup="" id="boolean">Pop up</div>.
+        - test: popup-attribute-basic.tentative.html
+          subtest: The .showPopUp() and .hidePopUp() work on a pop-up, for <div popup="">Pop up</div>.
+        - test: popup-attribute-basic.tentative.html
+          subtest: The .showPopUp() and .hidePopUp() work on a pop-up, for <div popup="auto">Pop up</div>.
+        - test: popup-attribute-basic.tentative.html
+          subtest: The .showPopUp() and .hidePopUp() work on a pop-up, for <div popup="hint">Pop up</div>.
+        - test: popup-attribute-basic.tentative.html
+          subtest: The .showPopUp() and .hidePopUp() work on a pop-up, for <div popup="manual">Pop up</div>.
+        - test: popup-attribute-basic.tentative.html
+          subtest: The .showPopUp() and .hidePopUp() do NOT work on elements without a 'popup' attribute, <div>Not a pop-up</div>.
+        - test: popup-attribute-basic.tentative.html
+          subtest: The .showPopUp() and .hidePopUp() do NOT work on elements without a 'popup' attribute, <div popup="popup">Not a pop-up</div>.
+        - test: popup-attribute-basic.tentative.html
+          subtest: The .showPopUp() and .hidePopUp() do NOT work on elements without a 'popup' attribute, <div popup="invalid">Not a pop-up</div>.
+        - test: popup-attribute-basic.tentative.html
+          subtest: Changing attribute values for pop-up should work
+        - test: popup-attribute-basic.tentative.html
+          subtest: Removing a visible popup=manual element from the document should close the pop-up
+        - test: popup-attribute-basic.tentative.html
+          subtest: Exceptions are thrown even when show/hide are animated
+        - test: popup-defaultopen.tentative.html
+          subtest: The defaultopen attribute should affect page load only
+        - test: popup-focus.tentative.html
+          subtest: 'Popup focus test: default behavior - pop-up is not focused'
+        - test: popup-focus.tentative.html
+          subtest: 'Popup button click focus test: default behavior - pop-up is not focused'
+        - test: popup-focus.tentative.html
+          subtest: 'Popup focus test: autofocus pop-up'
+        - test: popup-focus.tentative.html
+          subtest: 'Popup button click focus test: autofocus pop-up'
+        - test: popup-focus.tentative.html
+          subtest: 'Popup focus test: autofocus empty pop-up'
+        - test: popup-focus.tentative.html
+          subtest: 'Popup button click focus test: autofocus empty pop-up'
+        - test: popup-focus.tentative.html
+          subtest: 'Popup focus test: autofocus pop-up with button'
+        - test: popup-focus.tentative.html
+          subtest: 'Popup button click focus test: autofocus pop-up with button'
+        - test: popup-focus.tentative.html
+          subtest: 'Popup focus test: autofocus child'
+        - test: popup-focus.tentative.html
+          subtest: 'Popup button click focus test: autofocus child'
+        - test: popup-focus.tentative.html
+          subtest: 'Popup focus test: autofocus on tabindex=0 element'
+        - test: popup-focus.tentative.html
+          subtest: 'Popup button click focus test: autofocus on tabindex=0 element'
+        - test: popup-focus.tentative.html
+          subtest: 'Popup focus test: autofocus multiple children'
+        - test: popup-focus.tentative.html
+          subtest: 'Popup button click focus test: autofocus multiple children'
+        - test: popup-focus.tentative.html
+          subtest: 'Popup focus test: autofocus pop-up and multiple autofocus children'
+        - test: popup-focus.tentative.html
+          subtest: 'Popup button click focus test: autofocus pop-up and multiple autofocus children'
+        - test: popup-focus.tentative.html
+          subtest: 'Popup focus test: delegatesfocus pop-up'
+        - test: popup-focus.tentative.html
+          subtest: 'Popup button click focus test: delegatesfocus pop-up'
+        - test: popup-focus.tentative.html
+          subtest: 'Popup focus test: delegatesfocus takes precedence over autofocus'
+        - test: popup-focus.tentative.html
+          subtest: 'Popup button click focus test: delegatesfocus takes precedence over autofocus'
+        - test: popup-focus.tentative.html
+          subtest: 'Popup focus test: delegatesfocus takes precedence over autofocus 2'
+        - test: popup-focus.tentative.html
+          subtest: 'Popup button click focus test: delegatesfocus takes precedence over autofocus 2'
+        - test: popup-focus.tentative.html
+          subtest: 'Popup focus test: delegatesfocus on empty pop-up has no effect'
+        - test: popup-focus.tentative.html
+          subtest: 'Popup button click focus test: delegatesfocus on empty pop-up has no effect'
+        - test: popup-focus.tentative.html
+          subtest: 'Popup focus test: delegatesfocus on child has no effect'
+        - test: popup-focus.tentative.html
+          subtest: 'Popup button click focus test: delegatesfocus on child has no effect'
+        - test: popup-focus.tentative.html
+          subtest: 'Popup focus test: delegatesfocus skips contained pop-ups'
+        - test: popup-focus.tentative.html
+          subtest: 'Popup button click focus test: delegatesfocus skips contained pop-ups'
+        - test: popup-focus.tentative.html
+          subtest: 'Popup focus test: delegatesfocus skips contained dialogs'
+        - test: popup-focus.tentative.html
+          subtest: 'Popup button click focus test: delegatesfocus skips contained dialogs'
+        - test: popup-light-dismiss.tentative.html
+          subtest: Ensure circular/convoluted ancestral relationships are functional, with a direct showPopUp()
+        - test: popup-shadow-dom.tentative.html
+          subtest: Popups located inside shadow DOM can still be shown
+        - test: popup-shadow-dom.tentative.html
+          subtest: anchor references do not cross shadow boundaries
+        - test: popup-shadow-dom.tentative.html
+          subtest: anchor references use the flat tree not the DOM tree
+        - test: popup-shadow-dom.tentative.html
+          subtest: The popup stack is preserved across shadow-inclusive ancestors
+        - test: popup-types.tentative.html
+          subtest: If a popup=hint is shown, it should hide any other open popup=hint pop-ups, including ancestral pop-ups. (You can't nest popup=hint)
+        - test: popup-types.tentative.html
+          subtest: If a popup=auto is shown, it should hide any open popup=hint, including if the popup=hint is an ancestral pop-up of the popup=auto. (You can't nest a popup=auto inside a popup=hint)
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1783361
+      results:
+        - test: popup-popuphovertarget-attribute.tentative.html
+          subtest: popuphovertarget hover-pop-up-delay is respected (popup=auto, invokerType=plain)
+        - test: popup-popuphovertarget-attribute.tentative.html
+          subtest: popuphovertarget attribute does nothing when pop-up is already showing (popup=auto, invokerType=plain)
+        - test: popup-popuphovertarget-attribute.tentative.html
+          subtest: popuphovertarget attribute does nothing when pop-up is moved out of the document (popup=auto, invokerType=plain)
+        - test: popup-popuphovertarget-attribute.tentative.html
+          subtest: popuphovertarget attribute does nothing when target changes (popup=auto, invokerType=plain)
+        - test: popup-popuphovertarget-attribute.tentative.html
+          subtest: popuphovertarget hover-pop-up-delay is respected (popup=auto, invokerType=nested)
+        - test: popup-popuphovertarget-attribute.tentative.html
+          subtest: popuphovertarget attribute does nothing when pop-up is already showing (popup=auto, invokerType=nested)
+        - test: popup-popuphovertarget-attribute.tentative.html
+          subtest: popuphovertarget attribute does nothing when pop-up is moved out of the document (popup=auto, invokerType=nested)
+        - test: popup-popuphovertarget-attribute.tentative.html
+          subtest: popuphovertarget attribute does nothing when target changes (popup=auto, invokerType=nested)
+        - test: popup-popuphovertarget-attribute.tentative.html
+          subtest: popuphovertarget hover-pop-up-delay is respected (popup=auto, invokerType=nested-offset)
+        - test: popup-popuphovertarget-attribute.tentative.html
+          subtest: popuphovertarget attribute does nothing when pop-up is already showing (popup=auto, invokerType=nested-offset)
+        - test: popup-popuphovertarget-attribute.tentative.html
+          subtest: popuphovertarget attribute does nothing when pop-up is moved out of the document (popup=auto, invokerType=nested-offset)
+        - test: popup-popuphovertarget-attribute.tentative.html
+          subtest: popuphovertarget attribute does nothing when target changes (popup=auto, invokerType=nested-offset)
+        - test: popup-popuphovertarget-attribute.tentative.html
+          subtest: popuphovertarget hover-pop-up-delay is respected (popup=hint, invokerType=plain)
+        - test: popup-popuphovertarget-attribute.tentative.html
+          subtest: popuphovertarget attribute does nothing when pop-up is already showing (popup=hint, invokerType=plain)
+        - test: popup-popuphovertarget-attribute.tentative.html
+          subtest: popuphovertarget attribute does nothing when pop-up is moved out of the document (popup=hint, invokerType=plain)
+        - test: popup-popuphovertarget-attribute.tentative.html
+          subtest: popuphovertarget attribute does nothing when target changes (popup=hint, invokerType=plain)
+        - test: popup-popuphovertarget-attribute.tentative.html
+          subtest: popuphovertarget hover-pop-up-delay is respected (popup=hint, invokerType=nested)
+        - test: popup-popuphovertarget-attribute.tentative.html
+          subtest: popuphovertarget attribute does nothing when pop-up is already showing (popup=hint, invokerType=nested)
+        - test: popup-popuphovertarget-attribute.tentative.html
+          subtest: popuphovertarget attribute does nothing when pop-up is moved out of the document (popup=hint, invokerType=nested)
+        - test: popup-popuphovertarget-attribute.tentative.html
+          subtest: popuphovertarget attribute does nothing when target changes (popup=hint, invokerType=nested)
+        - test: popup-popuphovertarget-attribute.tentative.html
+          subtest: popuphovertarget hover-pop-up-delay is respected (popup=hint, invokerType=nested-offset)
+        - test: popup-popuphovertarget-attribute.tentative.html
+          subtest: popuphovertarget attribute does nothing when pop-up is already showing (popup=hint, invokerType=nested-offset)
+        - test: popup-popuphovertarget-attribute.tentative.html
+          subtest: popuphovertarget attribute does nothing when pop-up is moved out of the document (popup=hint, invokerType=nested-offset)
+        - test: popup-popuphovertarget-attribute.tentative.html
+          subtest: popuphovertarget attribute does nothing when target changes (popup=hint, invokerType=nested-offset)
+        - test: popup-popuphovertarget-attribute.tentative.html
+          subtest: popuphovertarget hover-pop-up-delay is respected (popup=manual, invokerType=plain)
+        - test: popup-popuphovertarget-attribute.tentative.html
+          subtest: popuphovertarget attribute does nothing when pop-up is already showing (popup=manual, invokerType=plain)
+        - test: popup-popuphovertarget-attribute.tentative.html
+          subtest: popuphovertarget attribute does nothing when pop-up is moved out of the document (popup=manual, invokerType=plain)
+        - test: popup-popuphovertarget-attribute.tentative.html
+          subtest: popuphovertarget attribute does nothing when target changes (popup=manual, invokerType=plain)
+        - test: popup-popuphovertarget-attribute.tentative.html
+          subtest: popuphovertarget hover-pop-up-delay is respected (popup=manual, invokerType=nested)
+        - test: popup-popuphovertarget-attribute.tentative.html
+          subtest: popuphovertarget attribute does nothing when pop-up is already showing (popup=manual, invokerType=nested)
+        - test: popup-popuphovertarget-attribute.tentative.html
+          subtest: popuphovertarget attribute does nothing when pop-up is moved out of the document (popup=manual, invokerType=nested)
+        - test: popup-popuphovertarget-attribute.tentative.html
+          subtest: popuphovertarget attribute does nothing when target changes (popup=manual, invokerType=nested)
+        - test: popup-popuphovertarget-attribute.tentative.html
+          subtest: popuphovertarget hover-pop-up-delay is respected (popup=manual, invokerType=nested-offset)
+        - test: popup-popuphovertarget-attribute.tentative.html
+          subtest: popuphovertarget attribute does nothing when pop-up is already showing (popup=manual, invokerType=nested-offset)
+        - test: popup-popuphovertarget-attribute.tentative.html
+          subtest: popuphovertarget attribute does nothing when pop-up is moved out of the document (popup=manual, invokerType=nested-offset)
+        - test: popup-popuphovertarget-attribute.tentative.html
+          subtest: popuphovertarget attribute does nothing when target changes (popup=manual, invokerType=nested-offset)
