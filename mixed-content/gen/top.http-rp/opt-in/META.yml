@@ -3,3 +3,10 @@ links:
       url: https://crbug.com/1050826
       results:
         - test: object-tag.https.html
+    - product: safari
+      url: https://bugs.webkit.org/show_bug.cgi?id=243943
+      results:
+        - test: xhr.https.html
+          subtest: 'Mixed-Content: Expects blocked for xhr to cross-https origin and swap-scheme redirection from https context.'
+        - test: xhr.https.html
+          subtest: Harness status
