@@ -393,4 +393,13 @@ links:
         - test: popup-types.tentative.html
           subtest: If a popup=hint is shown, it should hide any other open popup=hint pop-ups, including ancestral pop-ups. (You can't nest popup=hint)
         - test: popup-types.tentative.html
-          subtest: If a popup=auto is shown, it should hide any open popup=hint, including if the popup=hint is an ancestral pop-up of the popup=auto. (You can't nest a popup=auto inside a popup=hint)
+          subtest: If a popup=auto is shown, it should hide any open popup=hint, including if the popup=hint is an ancestral pop-up of the popup=auto. (You can't nest a popup=auto inside a popup=hint
+    - product: firefox
+      results:
+        - subtest: It should be possible to use the "hide" event handler to animate the
+            hide
+            test: popup-animation-corner-cases.tentative.html
+        - subtest: It should *not* be possible to use the "hide" event handler to animate
+            the hide, if the hide is due to dialog.showModal
+            test: popup-animation-corner-cases.tentative.html
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1787313
