@@ -65,3 +65,9 @@ links:
   - subtest: data:(script to run this test) to data:newpath should not work
     test: history_pushstate_url_rewriting.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1729992
+- product: firefox
+  results:
+  - subtest: history properties should throw SecurityError when not in a fully active
+      Document
+    test: history_properties_only_fully_active.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1788586
