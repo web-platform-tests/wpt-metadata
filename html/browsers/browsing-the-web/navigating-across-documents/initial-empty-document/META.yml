@@ -40,3 +40,42 @@ links:
   - subtest: load event does not fire on window.open('about:blank')
     test: load-pageshow-events-window-open.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1725958
+- product: firefox
+  results:
+  - subtest: link click
+    test: iframe-nosrc.html
+  - subtest: location.assign
+    test: iframe-src-204-fragment.html
+  - subtest: window.open
+    test: iframe-src-204-fragment.html
+  - subtest: link click
+    test: iframe-src-204-fragment.html
+  - subtest: history.pushState
+    test: iframe-src-204-pushState-replaceState.html
+  - subtest: history.replaceState
+    test: iframe-src-204-pushState-replaceState.html
+  - subtest: Navigating to a different document with link click
+    test: iframe-src-aboutblank-navigate-immediately.html
+  - subtest: Navigating to a different document with src
+    test: iframe-src-aboutblank-wait-for-load.html
+  - subtest: Navigating to a different document with location.href
+    test: iframe-src-aboutblank-wait-for-load.html
+  - subtest: Navigating to a different document with location.assign
+    test: iframe-src-aboutblank-wait-for-load.html
+  - subtest: Navigating to a different document with window.open
+    test: iframe-src-aboutblank-wait-for-load.html
+  - subtest: Navigating to a different document with link click
+    test: iframe-src-aboutblank-wait-for-load.html
+  - subtest: Navigating to a different document with form submission
+    test: iframe-src-aboutblank-wait-for-load.html
+  - subtest: load event fires synchronously on <iframe> element created with src='about:blank#foo'
+    test: load-event-iframe-element.html
+  - subtest: location.assign
+    test: window-open-204-fragment.html
+  - subtest: Starting history.length for window.open()
+    test: window-open-history-length.html
+  - subtest: Starting history.length for window.open(about:blank)
+    test: window-open-history-length.html
+  - subtest: Starting history.length for window.open(url-with-204-response)
+    test: window-open-history-length.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1788788
