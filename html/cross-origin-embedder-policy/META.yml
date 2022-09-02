@@ -181,3 +181,12 @@ links:
   - subtest: 'COEP: worker inherits COEP from blob URL creator, not owner.'
     test: dedicated-worker.https.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1753227
+- product: firefox
+  results:
+  - test: reflection-credentialless.tentative.https.any.serviceworker-module.html
+  - test: reflection-credentialless.tentative.https.any.sharedworker-module.html
+  - test: reflection-require-corp.tentative.https.any.sharedworker-module.html
+  - test: reflection-require-corp.tentative.https.any.serviceworker-module.html
+  - test: reflection-unsafe-none.tentative.https.any.sharedworker-module.html
+  - test: reflection-unsafe-none.tentative.https.any.serviceworker-module.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1788845
