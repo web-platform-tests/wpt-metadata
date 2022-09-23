@@ -1129,3 +1129,10 @@ links:
       none anchor element'
     test: subject-has-invalidation-with-display-none-anchor-element.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1782187
+- product: firefox
+  results:
+  - subtest: 'color after inserting text and div > .descendant: div#subject.color'
+    test: has-invalidation-for-wiping-an-element.html
+  - subtest: 'color after inserting text and #child > .descendant: div#subject.color'
+    test: has-invalidation-for-wiping-an-element.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1792148
