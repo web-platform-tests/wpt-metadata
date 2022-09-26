@@ -23,8 +23,6 @@ links:
         - test: key_events.py
           subtest: test_special_key_sends_keydown[SEPARATOR-expected63]
         - test: key_events.py
-          subtest: test_special_key_sends_keydown[SUBTRACT-expected66]
-        - test: pointer.py
           subtest: test_touch_pointer_properties
         - test: pointer_tripleclick.py
           subtest: test_tripleclick_at_coordinates
@@ -52,7 +50,3 @@ links:
         - test: key.py
         - test: key_special_keys.py
         - test: none.py
-    - product: chrome
-      url: https://bugs.chromium.org/p/chromium/issues/detail?id=850071
-      results:
-        - test: pointer.py
