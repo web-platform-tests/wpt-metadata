@@ -78,3 +78,25 @@ links:
       point at (5, 110)
     test: svg-small-big-path.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1793280
+- product: firefox
+  results:
+  - subtest: elementFromPoint(...) on <rect>s, element at (60, 40)
+    test: rect-hittest-001.html
+  - subtest: elementFromPoint(...) on <rect>s, element at (50, 50)
+    test: rect-hittest-001.html
+  - subtest: elementFromPoint(...) on <rect>s with simple strokes, element at (180,
+      20)
+    test: rect-hittest-002.html
+  - subtest: elementFromPoint(...) on <rect>s with simple strokes, element at (180,
+      120)
+    test: rect-hittest-002.html
+  - subtest: elementFromPoint(...) on <rect>s with simple strokes, element at (60,
+      120)
+    test: rect-hittest-002.html
+  - subtest: elementFromPoint(...) on <rect>s with simple strokes, element at (290,
+      70)
+    test: rect-hittest-002.html
+  - subtest: elementFromPoint(...) on <rect>s with simple strokes, element at (330,
+      150)
+    test: rect-hittest-002.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1793285
