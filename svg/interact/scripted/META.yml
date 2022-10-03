@@ -1,80 +1,72 @@
 links:
-- product: chrome
-  results:
-  - subtest: The document root element should be focusable.
-    test: tabindex-focus-flag.svg
-  url: https://crbug.com/912612
-- product: chrome
-  results:
-  - subtest: iframe should be focusable.
-    test: tabindex-focus-flag.svg
-  - subtest: rect[focusable=true] should be focusable.
-    test: tabindex-focus-flag.svg
-  - subtest: a[focusable=false] should not be focusable.
-    test: tabindex-focus-flag.svg
-  - subtest: mesh[tabindex] should be focusable.
-    test: tabindex-focus-flag.svg
-  - subtest: unknown[tabindex] should be focusable.
-    test: tabindex-focus-flag.svg
-  - subtest: audio[controls] should be focusable.
-    test: tabindex-focus-flag.svg
-  - subtest: video[controls] should be focusable.
-    test: tabindex-focus-flag.svg
-  - subtest: canvas[tabindex] should be focusable.
-    test: tabindex-focus-flag.svg
-  url: https://bugs.chromium.org/p/chromium/issues/detail?id=912612
-- product: firefox
-  results:
-  - subtest: elementFromPoint(...) on <ellipse>s with continuous strokes, element
-      at (245, 180)
-    test: ellipse-hittest.html
-  - subtest: elementFromPoint(...) on <ellipse>s with continuous strokes, element
-      at (130, 295)
-    test: ellipse-hittest.html
-  - subtest: elementFromPoint(...) on <rect>s with simple strokes, element at (180,
-      20)
-    test: rect-hittest.html
-  - subtest: elementFromPoint(...) on <rect>s with simple strokes, element at (180,
-      120)
-    test: rect-hittest.html
-  - subtest: elementFromPoint(...) on <rect>s with simple strokes, element at (60,
-      120)
-    test: rect-hittest.html
-  - subtest: elementFromPoint(...) on <rect>s with simple strokes, element at (290,
-      70)
-    test: rect-hittest.html
-  - subtest: elementFromPoint(...) on <rect>s with simple strokes, element at (330,
-      150)
-    test: rect-hittest.html
-  - subtest: group1 contains point at (100, 100)
-    test: svg-pointer-events-bbox.html
-  - subtest: group1 contains point at (137, 84)
-    test: svg-pointer-events-bbox.html
-  - subtest: group1 contains point at (51, 156)
-    test: svg-pointer-events-bbox.html
-  - subtest: group1 contains point at (70, 120)
-    test: svg-pointer-events-bbox.html
-  - subtest: circle2 contains point at (400, 150)
-    test: svg-pointer-events-bbox.html
-  - subtest: circle2 contains point at (432, 182)
-    test: svg-pointer-events-bbox.html
-  - subtest: circle2 contains point at (361, 122)
-    test: svg-pointer-events-bbox.html
-  - subtest: bbox of circle2 contains point at (438, 103)
-    test: svg-pointer-events-bbox.html
-  - subtest: bbox of circle2 contains point at (450, 200)
-    test: svg-pointer-events-bbox.html
-  - subtest: bbox of text1 contains point at (435, 32)
-    test: svg-pointer-events-bbox.html
-  - subtest: bbox of text1 contains point at (115, 46)
-    test: svg-pointer-events-bbox.html
-  - subtest: bbox of text2 contains point at (295, 214)
-    test: svg-pointer-events-bbox.html
-  - subtest: image1 contains point at (19, 215)
-    test: svg-pointer-events-bbox.html
-  - subtest: image1 contains point at (45, 225)
-    test: svg-pointer-events-bbox.html
-  - subtest: Hit-test on a path whose x/y ranges have different magnitude, path contains
-      point at (5, 110)
-    test: svg-small-big-path.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1793280
+    - product: chrome
+      url: https://crbug.com/912612
+      results:
+        - test: tabindex-focus-flag.svg
+          subtest: The document root element should be focusable.
+    - product: chrome
+      url: https://bugs.chromium.org/p/chromium/issues/detail?id=912612
+      results:
+        - test: tabindex-focus-flag.svg
+          subtest: iframe should be focusable.
+        - test: tabindex-focus-flag.svg
+          subtest: rect[focusable=true] should be focusable.
+        - test: tabindex-focus-flag.svg
+          subtest: a[focusable=false] should not be focusable.
+        - test: tabindex-focus-flag.svg
+          subtest: mesh[tabindex] should be focusable.
+        - test: tabindex-focus-flag.svg
+          subtest: unknown[tabindex] should be focusable.
+        - test: tabindex-focus-flag.svg
+          subtest: audio[controls] should be focusable.
+        - test: tabindex-focus-flag.svg
+          subtest: video[controls] should be focusable.
+        - test: tabindex-focus-flag.svg
+          subtest: canvas[tabindex] should be focusable.
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1793280
+      results:
+        - test: ellipse-hittest.html
+          subtest: elementFromPoint(...) on <ellipse>s with continuous strokes, element at (245, 180)
+        - test: ellipse-hittest.html
+          subtest: elementFromPoint(...) on <ellipse>s with continuous strokes, element at (130, 295)
+        - test: svg-pointer-events-bbox.html
+          subtest: group1 contains point at (100, 100)
+        - test: svg-pointer-events-bbox.html
+          subtest: group1 contains point at (137, 84)
+        - test: svg-pointer-events-bbox.html
+          subtest: group1 contains point at (51, 156)
+        - test: svg-pointer-events-bbox.html
+          subtest: group1 contains point at (70, 120)
+        - test: svg-pointer-events-bbox.html
+          subtest: circle2 contains point at (400, 150)
+        - test: svg-pointer-events-bbox.html
+          subtest: circle2 contains point at (432, 182)
+        - test: svg-pointer-events-bbox.html
+          subtest: circle2 contains point at (361, 122)
+        - test: svg-pointer-events-bbox.html
+          subtest: bbox of circle2 contains point at (438, 103)
+        - test: svg-pointer-events-bbox.html
+          subtest: bbox of circle2 contains point at (450, 200)
+        - test: svg-pointer-events-bbox.html
+          subtest: bbox of text1 contains point at (435, 32)
+        - test: svg-pointer-events-bbox.html
+          subtest: bbox of text1 contains point at (115, 46)
+        - test: svg-pointer-events-bbox.html
+          subtest: bbox of text2 contains point at (295, 214)
+        - test: svg-pointer-events-bbox.html
+          subtest: image1 contains point at (19, 215)
+        - test: svg-pointer-events-bbox.html
+          subtest: image1 contains point at (45, 225)
+        - test: svg-small-big-path.html
+          subtest: Hit-test on a path whose x/y ranges have different magnitude, path contains point at (5, 110)
+        - test: rect-hittest-002.html
+          subtest: elementFromPoint(...) on <rect>s with simple strokes, element at (180, 20)
+        - test: rect-hittest-002.html
+          subtest: elementFromPoint(...) on <rect>s with simple strokes, element at (180, 120)
+        - test: rect-hittest-002.html
+          subtest: elementFromPoint(...) on <rect>s with simple strokes, element at (60, 120)
+        - test: rect-hittest-002.html
+          subtest: elementFromPoint(...) on <rect>s with simple strokes, element at (290, 70)
+        - test: rect-hittest-002.html
+          subtest: elementFromPoint(...) on <rect>s with simple strokes, element at (330, 150)
