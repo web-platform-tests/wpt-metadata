@@ -1,5 +1,6 @@
 links:
 - product: firefox
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1700095
   results:
   - subtest: test_null_parameter_value
     test: find.py
@@ -23,7 +24,9 @@ links:
     test: find.py
   - subtest: test_invalid_selector_argument[value2]
     test: find.py
-  - subtest: test_detached_shadow_root
+  - subtest: test_detached_shadow_root[top_context]
+    test: find.py
+  - subtest: test_detached_shadow_root[child_context]
     test: find.py
   - subtest: test_find_elements_equivalence
     test: find.py
@@ -101,11 +104,3 @@ links:
     test: user_prompts.py
   - subtest: test_default[prompt-None]
     test: user_prompts.py
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1744508
-- product: firefox
-  results:
-  - subtest: test_detached_shadow_root[top_context]
-    test: find.py
-  - subtest: test_detached_shadow_root[child_context]
-    test: find.py
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1777689
