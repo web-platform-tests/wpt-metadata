@@ -31,3 +31,12 @@ links:
       results:
         - test: pointer_tripleclick.py
           subtest: test_tripleclick_at_coordinates
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1793838
+      results:
+        - test: validity.py
+          subtest: test_pause_positive_integer[none]
+        - test: validity.py
+          subtest: test_pause_positive_integer[key]
+        - test: validity.py
+          subtest: test_pause_positive_integer[pointer]
