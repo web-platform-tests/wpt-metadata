@@ -1,6 +1,5 @@
 links:
-    - url: ""
-      label: interop-2021-flexbox
+    - label: interop-2021-flexbox
       results:
         - test: abspos-autopos-htb-ltr.html
         - test: abspos-autopos-htb-rtl.html
@@ -207,3 +206,8 @@ links:
         - test: flex-abspos-staticpos-justify-content-007.html
         - test: flex-abspos-staticpos-align-self-001.html
         - test: flex-abspos-staticpos-align-self-007.html
+    - product: chrome
+      url: https://crbug.com/1121601
+      results:
+        - test: flex-abspos-staticpos-align-self-safe-001.html
+          subtest: Test status
