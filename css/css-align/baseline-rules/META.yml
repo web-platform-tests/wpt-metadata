@@ -1,10 +1,14 @@
 links:
-    - product: chrome
-      url: https://crbug.com/799016
-      results:
-        - test: synthesized-baseline-table-cell-001.html
-    - product: chrome
-      url: https://crbug.com/1013578
-      results:
-        - test: grid-item-input-type-number.html
-        - test: grid-item-input-type-text.html
+- product: chrome
+  results:
+  - test: synthesized-baseline-table-cell-001.html
+  url: https://crbug.com/799016
+- product: chrome
+  results:
+  - test: grid-item-input-type-number.html
+  - test: grid-item-input-type-text.html
+  url: https://crbug.com/1013578
+- product: firefox
+  results:
+  - test: inline-table-inline-block-baseline-vert-rl.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1794571
