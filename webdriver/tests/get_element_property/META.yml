@@ -1,5 +1,6 @@
 links:
 - product: firefox
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1793845
   results:
   - subtest: test_primitives["foobar"-foobar]
     test: get.py
@@ -17,9 +18,15 @@ links:
     test: get.py
   - subtest: test_primitives_set_by_execute_script[js_primitive3-py_primitive3]
     test: get.py
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1717840
 - product: firefox
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1764594
   results:
   - subtest: test_web_reference[shadowRoot-ShadowRoot]
     test: get.py
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1790021
+- product: firefox
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1274251
+  results:
+  - subtest: test_web_reference[frame-Frame]
+    test: get.py
+  - subtest: test_web_reference[window-Window]
+    test: get.py
