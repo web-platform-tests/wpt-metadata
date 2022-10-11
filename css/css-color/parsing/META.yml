@@ -1,4 +1,38 @@
 links:
+    - label: interop-2022-color
+      results:
+        - test: color-computed.html
+        - test: color-computed-color-function.html
+        - test: color-computed-color-mix-function.html
+        - test: color-computed-hsl.html
+        - test: color-computed-hwb.html
+        - test: color-computed-lab.html
+        - test: color-computed-rgb.html
+        - test: color-invalid.html
+        - test: color-invalid-color-function.html
+        - test: color-invalid-color-mix-function.html
+        - test: color-invalid-hsl.html
+        - test: color-invalid-hwb.html
+        - test: color-invalid-lab.html
+        - test: color-invalid-rgb.html
+        - test: color-valid.html
+        - test: color-valid-color-function.html
+        - test: color-valid-color-mix-function.html
+        - test: color-valid-hsl.html
+        - test: color-valid-hwb.html
+        - test: color-valid-lab.html
+        - test: color-valid-rgb.html
+    - product: chrome
+      url: https://bugs.chromium.org/p/chromium/issues/detail?id=1068610
+      results:
+        - test: color-computed.html
+        - test: color-computed-color-contrast-function.html
+        - test: color-computed-color-mix-function.html
+        - test: color-computed-relative-color.html
+        - test: color-valid.html
+        - test: color-valid-color-contrast-function.html
+        - test: color-valid-color-mix-function.html
+        - test: color-valid-relative-color.html
     - product: firefox
       url: https://bugzilla.mozilla.org/show_bug.cgi?id=1745397
       results:
@@ -434,26 +468,10 @@ links:
           subtest: e.style['color'] = "lch(10% 20 20 / 110%)" should set the property value
         - test: color-valid.html
           subtest: e.style['color'] = "lch(10% 20 -700)" should set the property value
-    - url: ""
-      label: interop-2022-color
-      results:
-        - test: color-computed.html
-        - test: color-valid.html
-        - test: color-invalid.html
-        - test: color-valid-color-mix-function.html
-        - test: color-computed-color-mix-function.html
-        - test: color-invalid-color-mix-function.html
-    - product: chrome
-      url: https://bugs.chromium.org/p/chromium/issues/detail?id=1068610
-      results:
-        - test: color-valid.html
-        - test: color-computed.html
-        - test: color-valid-color-mix-function.html
-        - test: color-valid-relative-color.html
-        - test: color-computed-color-contrast-function.html
-        - test: color-computed-relative-color.html
-        - test: color-computed-color-mix-function.html
-        - test: color-valid-color-contrast-function.html
+        - test: color-computed-color-function.html
+        - test: color-computed-lab.html
+        - test: color-valid-color-function.html
+        - test: color-valid-lab.html
     - product: firefox
       url: https://bugzilla.mozilla.org/show_bug.cgi?id=1746070
       results:
