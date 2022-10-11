@@ -434,28 +434,28 @@ links:
           subtest: e.style['color'] = "lch(10% 20 20 / 110%)" should set the property value
         - test: color-valid.html
           subtest: e.style['color'] = "lch(10% 20 -700)" should set the property value
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1746070
-      results:
-        - test: relative-color-valid.html
-          subtest: e.style['color'] = "rgb(from var(--color) calc(r * .3 + g * .59 + b * .11) calc(r * .3 + g * .59 + b * .11) calc(r * .3 + g * .59 + b * .11))" should set the property value
-    - label: interop-2022-color
+    - url: ""
+      label: interop-2022-color
       results:
         - test: color-computed.html
-        - test: color-mix-computed.html
-        - test: color-mix-valid.html
         - test: color-valid.html
-        - test: color-mix-invalid.html
         - test: color-invalid.html
-        - test: color-mixed-num-pct.html
+        - test: color-valid-color-mix-function.html
+        - test: color-computed-color-mix-function.html
+        - test: color-invalid-color-mix-function.html
     - product: chrome
       url: https://bugs.chromium.org/p/chromium/issues/detail?id=1068610
       results:
-        - test: color-mix-valid.html
         - test: color-valid.html
-        - test: relative-color-computed.html
-        - test: relative-color-valid.html
         - test: color-computed.html
-        - test: color-contrast-computed.html
-        - test: color-contrast-valid.html
-        - test: color-mix-computed.html
+        - test: color-valid-color-mix-function.html
+        - test: color-valid-relative-color.html
+        - test: color-computed-color-contrast-function.html
+        - test: color-computed-relative-color.html
+        - test: color-computed-color-mix-function.html
+        - test: color-valid-color-contrast-function.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1746070
+      results:
+        - test: color-valid-relative-color.html
+          subtest: e.style['color'] = "rgb(from var(--color) calc(r * .3 + g * .59 + b * .11) calc(r * .3 + g * .59 + b * .11) calc(r * .3 + g * .59 + b * .11))" should set the property value
