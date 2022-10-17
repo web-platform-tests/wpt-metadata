@@ -1,12 +1,37 @@
 links:
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1724519
-      results:
-        - test: cross-document-traversal-same-document-nav.html
-          subtest: same-document traversals are not canceled by pushState()
-        - test: same-document-traversal-same-document-nav.html
-          subtest: same-document traversals are not canceled by pushState()
-    - product: safari
-      url: https://bugs.webkit.org/show_bug.cgi?id=243518
-      results:
-        - test: forward-to-pruned-entry.html
+  - product: firefox
+    results:
+    - subtest: cross-document navigations are stopped by same-document back()
+      test: cross-document-nav-same-document-traversal.html
+    - subtest: 'cross-document traversals in opposite directions: the result is going
+        nowhere'
+      test: cross-document-traversal-cross-document-traversal.html
+    - subtest: 'cross-document traversals in opposite directions, second traversal invalid
+        at queuing time but valid at the time it is run: the result is going nowhere'
+      test: cross-document-traversal-cross-document-traversal.html
+    - subtest: same-document traversals + fragment navigations
+      test: cross-document-traversal-same-document-nav.html
+    - subtest: same-document traversals + pushState()
+      test: cross-document-traversal-same-document-nav.html
+    - subtest: parent cancels a pending navigation in a same-origin child
+      test: nav-cancelation-1.html
+    - subtest: grandparent cancels a pending navigation in a cross-origin grandchild
+      test: nav-cancelation-2.sub.html
+    - subtest: same-document traversals are not canceled by fragment navigations and
+        calculate their endpoint based on the original placement
+      test: same-document-traversal-same-document-nav.html
+    - subtest: same-document traversals are not canceled by pushState() and calculate
+        their endpoint based on the original placement
+      test: same-document-traversal-same-document-nav.html
+    url: https://bugzilla.mozilla.org/show_bug.cgi?id=1794748
+  - product: firefox
+    url: https://bugzilla.mozilla.org/show_bug.cgi?id=1724519
+    results:
+      - test: cross-document-traversal-same-document-nav.html
+        subtest: same-document traversals are not canceled by pushState()
+      - test: same-document-traversal-same-document-nav.html
+        subtest: same-document traversals are not canceled by pushState()
+  - product: safari
+    url: https://bugs.webkit.org/show_bug.cgi?id=243518
+    results:
+      - test: forward-to-pruned-entry.html
