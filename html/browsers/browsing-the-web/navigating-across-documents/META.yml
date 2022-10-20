@@ -81,3 +81,8 @@ links:
   - subtest: Cross-origin top navigation is blocked without user activation
     test: cross-origin-top-navigation-without-user-activation.window.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1793255
+- product: firefox
+  results:
+  - subtest: Same-origin navigation started from unload handler must be ignored
+    test: navigation-unload-same-origin.window.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1796536
