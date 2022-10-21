@@ -78,3 +78,36 @@ links:
   - status: CRASH
     test: report-only-four-reports.https.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1739236
+- product: firefox
+  results:
+  - test: reporting-popup-same-origin-allow-popups-report-to.https.html
+  - subtest: verify remaining reports
+    test: reporting-popup-same-origin-allow-popups-report-to.https.html
+  - test: reporting-popup-same-origin-coep-report-to.https.html
+  - subtest: 'coop reporting test reporting same origin with report-to to SAME_ORIGIN
+      with same-origin; report-to="coop-popup-report-endpoint", , , '
+    test: reporting-popup-same-origin-coep-report-to.https.html
+  - subtest: 'coop reporting test reporting same origin with report-to to CROSS_ORIGIN
+      with same-origin; report-to="coop-popup-report-endpoint", require-corp, , '
+    test: reporting-popup-same-origin-coep-report-to.https.html
+  - subtest: coop reporting test reporting same origin with report-to to SAME_ORIGIN
+      with , , same-origin; report-to="coop-popup-report-only-endpoint", require-corp
+    test: reporting-popup-same-origin-coep-report-to.https.html
+  - subtest: coop reporting test reporting same origin with report-to to CROSS_ORIGIN
+      with , , same-origin; report-to="coop-popup-report-only-endpoint", require-corp
+    test: reporting-popup-same-origin-coep-report-to.https.html
+  - subtest: verify remaining reports
+    test: reporting-popup-same-origin-coep-report-to.https.html
+  - test: reporting-popup-same-origin-report-to.https.html
+  - subtest: verify remaining reports
+    test: reporting-popup-same-origin-report-to.https.html
+  - test: reporting-popup-same-origin.https.html
+  - subtest: 'coop reporting test reporting same origin to SAME_ORIGIN with , , same-origin;
+      report-to="coop-popup-report-only-endpoint", '
+    test: reporting-popup-same-origin.https.html
+  - subtest: verify remaining reports
+    test: reporting-popup-same-origin.https.html
+  - test: reporting-popup-unsafe-none-report-to.https.html
+  - subtest: verify remaining reports
+    test: reporting-popup-unsafe-none-report-to.https.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1796848
