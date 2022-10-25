@@ -19,3 +19,13 @@ links:
       results:
         - test: commitStyles.html
           subtest: Commits transforms as a transform list
+    - product: safari
+      url: https://bugs.webkit.org/show_bug.cgi?id=246008
+      results:
+        - test: commitStyles.html
+          subtest: Does NOT trigger mutation observers when the change to style is redundant
+    - product: safari
+      url: https://bugs.webkit.org/show_bug.cgi?id=246913
+      results:
+        - test: commitStyles.html
+          subtest: Commits matrix-interpolated relative transforms
