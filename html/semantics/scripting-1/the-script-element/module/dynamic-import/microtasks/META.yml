@@ -1,0 +1,25 @@
+links:
+- product: firefox
+  results:
+  - subtest: import() should not drain the microtask queue if it fails during specifier
+      resolution
+    test: basic.any.worker.html
+  - subtest: import() should not drain the microtask queue when loading an already
+      loaded module
+    test: basic.any.worker.html
+  - subtest: import() should drain the microtask queue when fetching a new module
+    test: basic.any.worker.html
+  - subtest: import() should not drain the microtask queue when loading an already
+      loaded module
+    test: basic.any.html
+  - test: basic.any.sharedworker.html
+  - test: css-import-in-worker.any.sharedworker.html
+  - test: css-import-in-worker.any.worker.html
+  - subtest: import() should not drain the microtask queue if it fails because it's
+      used in a ServiceWorker
+    test: serviceworker.any.serviceworker.html
+  - test: with-import-assertions.any.html
+  - test: with-import-assertions.any.sharedworker.html
+  - test: with-import-assertions.any.worker.html
+  - test: worklet.https.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1797357
