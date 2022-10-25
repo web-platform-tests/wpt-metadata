@@ -9,3 +9,10 @@ links:
       results:
         - test: parser-uses-create-an-element-for-a-token-svg.svg
           status: FAIL
+    - product: safari
+      url: https://bugs.webkit.org/show_bug.cgi?id=182671
+      results:
+        - test: serializing-html-fragments.html
+          subtest: '"is" value should be serialized if the custom element has no "is" content attribute'
+        - test: serializing-html-fragments.html
+          subtest: '"is" value should be serialized even for an undefined element'
