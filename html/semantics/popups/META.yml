@@ -1267,3 +1267,15 @@ links:
   - subtest: Hide the target pop-up during "hide all popups until"
     test: popup-light-dismiss.tentative.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1796755
+- product: firefox
+  results:
+  - subtest: It should be possible to use the "popuphide" event handler to animate
+      the hide
+    test: popup-animation-corner-cases.tentative.html
+  - subtest: It should *not* be possible to use the "popuphide" event handler to animate
+      the hide, if the hide is due to dialog.showModal
+    test: popup-animation-corner-cases.tentative.html
+  - subtest: animation finish/cancel events must be trusted in order to finish closing
+      the popup.
+    test: popup-animation-corner-cases.tentative.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1797465
