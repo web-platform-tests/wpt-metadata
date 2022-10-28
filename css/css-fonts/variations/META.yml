@@ -144,3 +144,12 @@ links:
   - subtest: 'font-style(valid): Bounds out of order: oblique 20deg 10deg'
     test: at-font-face-descriptors.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1737061
+- product: firefox
+  results:
+  - subtest: 'font-style(valid): ''oblique'' followed by former default 20deg angle:
+      oblique 20deg'
+    test: at-font-face-descriptors.html
+  - subtest: 'font-style(valid): Simple range with former default angle for both bounds:
+      oblique 20deg 20deg'
+    test: at-font-face-descriptors.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1797984
