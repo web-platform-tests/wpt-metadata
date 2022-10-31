@@ -1,0 +1,25 @@
+links:
+- product: firefox
+  results:
+  - subtest: ".foo {\n  & { color: green; }\n}"
+    test: parsing.html
+  - subtest: ".foo {\n  &.bar { color: green; }\n}"
+    test: parsing.html
+  - subtest: ".foo {\n  & .bar { color: green; }\n}"
+    test: parsing.html
+  - subtest: ".foo {\n  & > .bar { color: green; }\n}"
+    test: parsing.html
+  - subtest: ".foo {\n  &:is(.bar, &.baz) { color: green; }\n}"
+    test: parsing.html
+  - subtest: ".foo, .bar {\n  & + .baz, &.qux { color: green; }\n}"
+    test: parsing.html
+  - subtest: ".foo {\n  & .bar & .baz & .qux { color: green; }\n}"
+    test: parsing.html
+  - subtest: ".foo {\n  @media (min-width: 50px) { color: green; }\n}"
+    test: parsing.html
+  - subtest: "main {\n  & > section, & > article {\n  & > header { color: green; }\n\
+      }\n}"
+    test: parsing.html
+  - test: conditional-properties.html
+  - test: conditional-rules.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1798383
