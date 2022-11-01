@@ -1,9 +1,14 @@
 links:
-    - product: chrome
-      url: https://crbug.com/1149998
-      results:
-        - test: getdisplaymedia-after-discard.https.html
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1788563
-      results:
-        - test: getdisplaymedia.https.html
+- product: chrome
+  results:
+  - test: getdisplaymedia-after-discard.https.html
+  url: https://crbug.com/1149998
+- product: firefox
+  results:
+  - test: getdisplaymedia.https.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1788563
+- product: firefox
+  results:
+  - status: CRASH
+    test: getdisplaymedia.https.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1798556
