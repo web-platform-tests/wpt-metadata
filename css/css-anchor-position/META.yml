@@ -59,3 +59,14 @@ links:
   - subtest: .target 4
     test: anchor-position-multicol-fixed-001.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1797705
+- product: firefox
+  results:
+  - test: anchor-scroll-update-005.tentative.html
+  - test: anchor-scroll-update-006.tentative.html
+  - subtest: Element.getBoundingClientRect() returns the actual rendered location
+    test: anchor-scroll-js-expose.tentative.html
+  - subtest: Range.getBoundingClientRect() returns the actual rendered location
+    test: anchor-scroll-js-expose.tentative.html
+  - subtest: Element.offset* return adjusted offsets
+    test: anchor-scroll-js-expose.tentative.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1798455
