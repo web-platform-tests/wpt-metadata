@@ -114,3 +114,9 @@ links:
   - subtest: calling canShare() on a non-fully active document returns false
     test: test-fully-active.https.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1730008
+- product: firefox
+  results:
+  - subtest: canShare() returns false when not allowed by permissions policy cross-origin
+      with empty data
+    test: disabled-by-permissions-policy-cross-origin.https.sub.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1798643
