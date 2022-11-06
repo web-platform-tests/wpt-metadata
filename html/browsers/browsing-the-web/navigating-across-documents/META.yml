@@ -92,3 +92,18 @@ links:
       the correct properties'
     test: javascript-url-load-as-html.xhtml
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1798248
+- product: firefox
+  results:
+  - subtest: 'Navigating an iframe via location.href to a javascript: URL must not
+      fire beforeunload: string completion'
+    test: javascript-url-no-beforeunload.window.html
+  - subtest: 'Navigating an iframe via src="" to a javascript: URL after insertion
+      must not fire beforeunload: string completion'
+    test: javascript-url-no-beforeunload.window.html
+  - subtest: 'Navigating an opened window via location.href to a javascript: URL must
+      not fire beforeunload: string completion'
+    test: javascript-url-no-beforeunload.window.html
+  - subtest: 'Navigating an opened window with an iframe via location.href to a javascript:
+      URL must not fire beforeunload on the iframe: string completion'
+    test: javascript-url-no-beforeunload.window.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1799328
