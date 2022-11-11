@@ -411,3 +411,146 @@ links:
   - subtest: Test <input type="number">, t=1, s=1, h=1, IDL, with popover=manual
     test: popover-invoking-attribute.tentative.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1799280
+- product: firefox
+  results:
+  - test: popover-anchor-nesting.tentative.html
+  - subtest: Descendent animations should keep the pop up visible until the animation
+      ends
+    test: popover-animation-corner-cases.tentative.html
+  - subtest: Pre-existing animations should *not* keep the pop up visible until the
+      animation ends
+    test: popover-animation-corner-cases.tentative.html
+  - subtest: It should be possible to use the "popoverhide" event handler to animate
+      the hide
+    test: popover-animation-corner-cases.tentative.html
+  - subtest: It should *not* be possible to use the "popoverhide" event handler to
+      animate the hide, if the hide is due to dialog.showModal
+    test: popover-animation-corner-cases.tentative.html
+  - subtest: hide event cannot be cancelled
+    test: popover-animation-corner-cases.tentative.html
+  - subtest: Closing animations are triggered by changing the popover type
+    test: popover-animation-corner-cases.tentative.html
+  - subtest: animation finish/cancel events must be trusted in order to finish closing
+      the popover.
+    test: popover-animation-corner-cases.tentative.html
+  - subtest: Capturing event listeners can't affect popover animations.
+    test: popover-animation-corner-cases.tentative.html
+  - subtest: The element <div popover="" id="boolean">Pop up</div> should behave as
+      a popover.
+    test: popover-attribute-basic.tentative.html
+  - subtest: Popovershow and popoverhide events (listener) get properly dispatched
+      for popovers
+    test: popover-events.tentative.html
+  - subtest: Popovershow and popoverhide events (attribute) get properly dispatched
+      for popovers
+    test: popover-events.tentative.html
+  - subtest: Popovershow event is cancelable
+    test: popover-events.tentative.html
+  - subtest: 'Popover button click focus test: default behavior - popover is not focused'
+    test: popover-focus.tentative.html
+  - subtest: 'Popover focus test: autofocus popover'
+    test: popover-focus.tentative.html
+  - subtest: 'Popover button click focus test: autofocus popover'
+    test: popover-focus.tentative.html
+  - subtest: 'Popover corner cases test: autofocus popover'
+    test: popover-focus.tentative.html
+  - subtest: 'Popover focus test: autofocus empty popover'
+    test: popover-focus.tentative.html
+  - subtest: 'Popover button click focus test: autofocus empty popover'
+    test: popover-focus.tentative.html
+  - subtest: 'Popover corner cases test: autofocus empty popover'
+    test: popover-focus.tentative.html
+  - subtest: 'Popover focus test: autofocus popover with button'
+    test: popover-focus.tentative.html
+  - subtest: 'Popover button click focus test: autofocus popover with button'
+    test: popover-focus.tentative.html
+  - subtest: 'Popover corner cases test: autofocus popover with button'
+    test: popover-focus.tentative.html
+  - subtest: 'Popover focus test: autofocus child'
+    test: popover-focus.tentative.html
+  - subtest: 'Popover button click focus test: autofocus child'
+    test: popover-focus.tentative.html
+  - subtest: 'Popover corner cases test: autofocus child'
+    test: popover-focus.tentative.html
+  - subtest: 'Popover focus test: autofocus on tabindex=0 element'
+    test: popover-focus.tentative.html
+  - subtest: 'Popover button click focus test: autofocus on tabindex=0 element'
+    test: popover-focus.tentative.html
+  - subtest: 'Popover corner cases test: autofocus on tabindex=0 element'
+    test: popover-focus.tentative.html
+  - subtest: 'Popover focus test: autofocus multiple children'
+    test: popover-focus.tentative.html
+  - subtest: 'Popover button click focus test: autofocus multiple children'
+    test: popover-focus.tentative.html
+  - subtest: 'Popover corner cases test: autofocus multiple children'
+    test: popover-focus.tentative.html
+  - subtest: 'Popover focus test: autofocus popover and multiple autofocus children'
+    test: popover-focus.tentative.html
+  - subtest: 'Popover button click focus test: autofocus popover and multiple autofocus
+      children'
+    test: popover-focus.tentative.html
+  - subtest: 'Popover corner cases test: autofocus popover and multiple autofocus
+      children'
+    test: popover-focus.tentative.html
+  - test: popover-light-dismiss.tentative.html
+  - subtest: Clicking outside a popover will dismiss the popover
+    test: popover-light-dismiss.tentative.html
+  - subtest: Canceling pointer events should not keep clicks from light dismissing
+      popovers
+    test: popover-light-dismiss.tentative.html
+  - subtest: Clicking inside a popover does not close that popover
+    test: popover-light-dismiss.tentative.html
+  - subtest: Clicking on invoking element, after using it for activation, shouldn't
+      close its popover
+    test: popover-light-dismiss.tentative.html
+  - subtest: Clicking on invoking element, after using it for activation, shouldn't
+      close its popover (nested case)
+    test: popover-light-dismiss.tentative.html
+  - subtest: Clicking on invoking element, after using it for activation, shouldn't
+      close its popover (nested case, not used for invocation)
+    test: popover-light-dismiss.tentative.html
+  - subtest: Clicking on invoking element, even if it wasn't used for activation,
+      shouldn't close its popover
+    test: popover-light-dismiss.tentative.html
+  - subtest: Clicking on popovertoggletarget element, even if it wasn't used for activation,
+      should hide it exactly once
+    test: popover-light-dismiss.tentative.html
+  - subtest: Clicking on anchor element (that isn't an invoking element) shouldn't
+      close its popover
+    test: popover-light-dismiss.tentative.html
+  - subtest: Dragging from an open popover outside an open popover should leave the
+      popover open
+    test: popover-light-dismiss.tentative.html
+  - subtest: An invoking element should be part of the ancestor chain
+    test: popover-light-dismiss.tentative.html
+  - subtest: An invoking element that was not used to invoke the popover can still
+      be part of the ancestor chain
+    test: popover-light-dismiss.tentative.html
+  - subtest: Moving focus back to the anchor element should not dismiss the popover
+    test: popover-light-dismiss.tentative.html
+  - subtest: Ensure circular/convoluted ancestral relationships are functional
+    test: popover-light-dismiss.tentative.html
+  - subtest: Ensure circular/convoluted ancestral relationships are functional, with
+      a direct showPopover()
+    test: popover-light-dismiss.tentative.html
+  - subtest: Hide the target popover during "hide all popovers until"
+    test: popover-light-dismiss.tentative.html
+  - subtest: Popovers located inside shadow DOM can still be shown
+    test: popover-shadow-dom.tentative.html
+  - subtest: anchor references do not cross shadow boundaries
+    test: popover-shadow-dom.tentative.html
+  - subtest: anchor references use the flat tree not the DOM tree
+    test: popover-shadow-dom.tentative.html
+  - subtest: The popover stack is preserved across shadow-inclusive ancestors
+    test: popover-shadow-dom.tentative.html
+  - subtest: A Popover API should  close a Popover API
+    test: popover-top-layer-interactions.tentative.html
+  - subtest: A Modal Dialog should  close a Popover API
+    test: popover-top-layer-interactions.tentative.html
+  - subtest: A Fullscreen Element should  close a Popover API
+    test: popover-top-layer-interactions.tentative.html
+  - subtest: A Popover API should *not* close a Modal Dialog
+    test: popover-top-layer-interactions.tentative.html
+  - subtest: A Popover API should *not* close a Fullscreen Element
+    test: popover-top-layer-interactions.tentative.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1800283
