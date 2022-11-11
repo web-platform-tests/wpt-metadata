@@ -107,3 +107,10 @@ links:
       URL must not fire beforeunload on the iframe: string completion'
     test: javascript-url-no-beforeunload.window.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1799328
+- product: firefox
+  results:
+  - subtest: unsafe-url referrer policy used to create the starting page
+    test: javascript-url-referrer.window.html
+  - subtest: origin referrer policy used to create the starting page
+    test: javascript-url-referrer.window.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1800200
