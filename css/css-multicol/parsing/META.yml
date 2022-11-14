@@ -1,10 +1,19 @@
 links:
-    - product: chrome
-      url: https://crbug.com/909596
-      results:
-        - test: column-fill-computed.html
-        - test: column-fill-valid.html
-    - product: chrome
-      url: https://crbug.com/501673
-      results:
-        - test: column-rule-shorthand.html
+- product: chrome
+  results:
+  - test: column-fill-computed.html
+  - test: column-fill-valid.html
+  url: https://crbug.com/909596
+- product: chrome
+  results:
+  - test: column-rule-shorthand.html
+  url: https://crbug.com/501673
+- product: firefox
+  results:
+  - subtest: e.style['columns'] = "auto" should set the property value
+    test: columns-valid.html
+  - subtest: e.style['columns'] = "7" should set the property value
+    test: columns-valid.html
+  - subtest: e.style['columns'] = "7em" should set the property value
+    test: columns-valid.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1800410
