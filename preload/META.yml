@@ -156,3 +156,13 @@ links:
   - subtest: Makes sure that preloaded resources are not downloaded again when used
     test: single-download-preload.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1777433
+- product: firefox
+  results:
+  - status: CRASH
+    test: link-header-preload.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1800560
+- product: firefox
+  results:
+  - subtest: Makes sure that Link headers preload resources
+    test: link-header-preload.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1800561
