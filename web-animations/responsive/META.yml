@@ -14,3 +14,25 @@ links:
         - test: boxShadow.html
         - test: shapeOutside.html
           subtest: shapeOutside responsive to style changes
+    - product: safari
+      url: https://bugs.webkit.org/show_bug.cgi?id=248152
+      results:
+        - test: baselineShift.html
+          subtest: baselineShift responsive to inherited changes
+        - test: columnGap.html
+          subtest: column-gap responsive to inherited changes
+        - test: opacity.html
+          subtest: stopOpacity responsive to inherited changes
+        - test: opacity.html
+          subtest: shapeImageThreshold responsive to inherited changes
+        - test: opacity.html
+          subtest: opacity responsive to inherited changes
+        - test: opacity.html
+          subtest: floodOpacity responsive to inherited changes
+        - test: to-color-change.html
+          subtest: Color animations respond to inherited changes
+    - product: safari
+      url: https://bugs.webkit.org/show_bug.cgi?id=248178
+      results:
+        - test: baselineShift.html
+          subtest: baselineShift responsive to style changes
