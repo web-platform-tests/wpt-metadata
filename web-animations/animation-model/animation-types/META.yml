@@ -136,3 +136,10 @@ links:
           subtest: text-decoration-color supports animating as color of rgb() with overflowed  from and to values
         - test: accumulation-per-property-002.html
           subtest: text-emphasis-color supports animating as color of rgb() with overflowed  from and to values
+    - product: safari
+      url: https://bugs.webkit.org/show_bug.cgi?id=248220
+      results:
+        - test: accumulation-per-property-002.html
+          subtest: 'word-spacing: units "calc" onto "px"'
+        - test: accumulation-per-property-002.html
+          subtest: 'word-spacing: calc'
