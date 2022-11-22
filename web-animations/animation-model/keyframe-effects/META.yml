@@ -56,3 +56,10 @@ links:
       results:
         - test: computed-keyframes-shorthands.html
           subtest: It should be possible to animate the all shorthand
+    - product: safari
+      url: https://bugs.webkit.org/show_bug.cgi?id=248235
+      results:
+        - test: effect-value-iteration-composite-operation.html
+          subtest: iteration composition of filter brightness for different unit animation
+        - test: effect-value-iteration-composite-operation.html
+          subtest: iteration composition of same filter list animation
