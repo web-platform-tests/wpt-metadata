@@ -154,3 +154,44 @@ links:
       results:
         - test: accumulation-per-property-001.html
           subtest: 'filter: same ordered filter functions'
+    - product: safari
+      url: https://wpt.fyi/results/web-animations/animation-model/animation-types/addition-per-property-002.html?label=experimental&label=master&aligned&view=subtest
+      results:
+        - test: addition-per-property-002.html
+          subtest: 'word-spacing: percentage'
+        - test: addition-per-property-002.html
+          subtest: 'word-spacing: units "%" onto "px"'
+        - test: addition-per-property-002.html
+          subtest: 'word-spacing: units "px" onto "%"'
+        - test: addition-per-property-002.html
+          subtest: 'word-spacing: units "rem" onto "%"'
+        - test: addition-per-property-002.html
+          subtest: 'word-spacing: units "%" onto "rem"'
+        - test: interpolation-per-property-002.html
+          subtest: word-spacing supports animating as a percentage
+        - test: interpolation-per-property-002.html
+          subtest: word-spacing supports animating as combination units "px" and "%"
+        - test: interpolation-per-property-002.html
+          subtest: word-spacing supports animating as combination units "%" and "em"
+    - product: safari
+      url: https://bugs.webkit.org/show_bug.cgi?id=248220
+      results:
+        - test: addition-per-property-002.html
+          subtest: 'word-spacing: units "calc" onto "px"'
+        - test: addition-per-property-002.html
+          subtest: 'word-spacing: calc'
+        - test: accumulation-per-property-002.html
+          subtest: 'word-spacing: units "calc" onto "px"'
+        - test: accumulation-per-property-002.html
+          subtest: 'word-spacing: calc'
+        - test: interpolation-per-property-002.html
+          subtest: word-spacing supports animating as combination units "px" and "calc"
+        - test: interpolation-per-property-002.html
+          subtest: word-spacing supports animating as a calc
+    - product: safari
+      url: "248225"
+      results:
+        - test: addition-per-property-001.html
+          subtest: 'filter: blur on blur'
+        - test: addition-per-property-001.html
+          subtest: 'filter: different filter functions'
