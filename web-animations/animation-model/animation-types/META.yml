@@ -195,3 +195,8 @@ links:
           subtest: word-spacing supports animating as combination units "px" and "%"
         - test: interpolation-per-property-002.html
           subtest: word-spacing supports animating as combination units "%" and "em"
+    - product: safari
+      url: https://bugs.webkit.org/show_bug.cgi?id=248263
+      results:
+        - test: interpolation-per-property-001.html
+          subtest: 'filter: url function (interpoalte as discrete)'
