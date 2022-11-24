@@ -63,3 +63,10 @@ links:
           subtest: iteration composition of filter brightness for different unit animation
         - test: effect-value-iteration-composite-operation.html
           subtest: iteration composition of same filter list animation
+    - product: safari
+      url: https://bugs.webkit.org/show_bug.cgi?id=248312
+      results:
+        - test: effect-value-iteration-composite-operation.html
+          subtest: iteration composition of transform list animation whose order is mismatched
+        - test: effect-value-iteration-composite-operation.html
+          subtest: iteration composition of transform list animation whose order is mismatched because of missing functions
