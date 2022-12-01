@@ -23,3 +23,13 @@ links:
   results:
   - test: getCurrentPosition_permission_deny.https.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1759050
+- product: firefox
+  results:
+  - test: disabled-by-permissions-policy.https.sub.html
+  - subtest: Permissions-Policy header geolocation=() disallows the top-level document.
+    test: disabled-by-permissions-policy.https.sub.html
+  - subtest: Permissions-Policy header geolocation=() disallows same-origin iframes.
+    test: disabled-by-permissions-policy.https.sub.html
+  - subtest: Permissions-Policy header geolocation=() disallows cross-origin iframes.
+    test: disabled-by-permissions-policy.https.sub.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1803316
