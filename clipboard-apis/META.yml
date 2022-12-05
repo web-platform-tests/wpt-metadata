@@ -77,3 +77,15 @@ links:
   - subtest: navigator.clipboard.write(Promise<DOMString>) fails
     test: async-navigator-clipboard-basics.https.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1797710
+- product: firefox
+  results:
+  - subtest: navigator.clipboard.write() for custom format and Blob type with web
+      prefix
+    test: async-custom-formats-write-read-web-prefix.tentative.https.html
+  - subtest: navigator.clipboard.write() for custom format with web prefix, but Blob
+      type without web prefix
+    test: async-custom-formats-write-read-without-web-prefix.tentative.https.html
+  - subtest: Verify write and read clipboard given 2 platform-neutral custom format
+      inputs
+    test: async-custom-formats-write-read.tentative.https.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1804026
