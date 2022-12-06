@@ -1,5 +1,32 @@
 links:
     - product: firefox
+      results:
+        - subtest: 'input[type=text] in vertical-lr: typing characters in input should not
+            cause the page to scroll'
+          test: text-input-vertical-overflow-no-scroll.html
+        - subtest: 'input[type=text] in vertical-rl: typing characters in input should not
+            cause the page to scroll'
+          test: text-input-vertical-overflow-no-scroll.html
+        - subtest: 'input[type=password] in vertical-lr: typing characters in input should
+            not cause the page to scroll'
+          test: text-input-vertical-overflow-no-scroll.html
+        - subtest: 'input[type=password] in vertical-rl: typing characters in input should
+            not cause the page to scroll'
+          test: text-input-vertical-overflow-no-scroll.html
+        - subtest: 'input[type=search] in vertical-lr: typing characters in input should
+            not cause the page to scroll'
+          test: text-input-vertical-overflow-no-scroll.html
+        - subtest: 'input[type=search] in vertical-rl: typing characters in input should
+            not cause the page to scroll'
+          test: text-input-vertical-overflow-no-scroll.html
+        - subtest: 'input[type=number] in vertical-lr: typing characters in input should
+            not cause the page to scroll'
+          test: text-input-vertical-overflow-no-scroll.html
+        - subtest: 'input[type=number] in vertical-rl: typing characters in input should
+            not cause the page to scroll'
+          test: text-input-vertical-overflow-no-scroll.html
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1802466
+    - product: firefox
       url: https://bugzilla.mozilla.org/show_bug.cgi?id=1802687
       results:
         - test: range-input-appearance-native-vertical-rtl.optional.html
