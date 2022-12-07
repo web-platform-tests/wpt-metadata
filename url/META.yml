@@ -185,3 +185,27 @@ links:
           subtest: 'Parsing: <foo://host/dir/? !"$%&''()*+,-./:;<=>?@[\]^_`{|}~> against <about:blank>'
         - test: a-element-xhtml.xhtml
           subtest: 'Parsing: <foo://host/dir/# !"#$%&''()*+,-./:;<=>?@[\]^_`{|}~> against <about:blank>'
+        - test: a-element.html
+          subtest: 'Parsing: <http://!"$&''()*+,-.;=_`{}~/> against <about:blank>'
+        - test: a-element.html
+          subtest: "Parsing: <sc://\x01\x02\x03\x04\x05\x06\a\b\v\f\x0E\x0F\x10\x11\x12\x13\x14\x15\x16\x17\x18\x19\x1A\e\x1C\x1D\x1E\x1F\x7F!\"$%&'()*+,-.;=_`{}~/> against <about:blank>"
+        - test: a-element.html
+          subtest: 'Parsing: <foo:// !"$%&''()*+,-.;<=>@[\]^_`{|}~@host/> against <about:blank>'
+        - test: a-element.html
+          subtest: 'Parsing: <wss:// !"$%&''()*+,-.;<=>@[]^_`{|}~@host/> against <about:blank>'
+        - test: a-element.html
+          subtest: 'Parsing: <foo://joe: !"$%&''()*+,-.:;<=>@[\]^_`{|}~@host/> against <about:blank>'
+        - test: a-element.html
+          subtest: 'Parsing: <wss://joe: !"$%&''()*+,-.:;<=>@[]^_`{|}~@host/> against <about:blank>'
+        - test: a-element.html
+          subtest: 'Parsing: <foo://!"$%&''()*+,-.;=_`{}~/> against <about:blank>'
+        - test: a-element.html
+          subtest: 'Parsing: <wss://!"$&''()*+,-.;=_`{}~/> against <about:blank>'
+        - test: a-element.html
+          subtest: 'Parsing: <foo://host/ !"$%&''()*+,-./:;<=>@[\]^_`{|}~> against <about:blank>'
+        - test: a-element.html
+          subtest: 'Parsing: <wss://host/ !"$%&''()*+,-./:;<=>@[\]^_`{|}~> against <about:blank>'
+        - test: a-element.html
+          subtest: 'Parsing: <foo://host/dir/? !"$%&''()*+,-./:;<=>?@[\]^_`{|}~> against <about:blank>'
+        - test: a-element.html
+          subtest: 'Parsing: <foo://host/dir/# !"#$%&''()*+,-./:;<=>?@[\]^_`{|}~> against <about:blank>'
