@@ -216,3 +216,25 @@ links:
           subtest: 'Parsing: <sc://a|b/> against <about:blank>'
         - test: a-element-xhtml.xhtml
           subtest: 'Parsing: <http://a|b/> against <about:blank>'
+        - test: failure.html
+          subtest: 'URL''s href: sc://a|b/ should throw'
+        - test: failure.html
+          subtest: 'XHR: sc://a|b/ should throw'
+        - test: failure.html
+          subtest: 'Location''s href: sc://a|b/ should throw'
+        - test: failure.html
+          subtest: 'window.open(): sc://a|b/ should throw'
+        - test: failure.html
+          subtest: 'URL''s constructor''s base argument: sc://a|b/ should throw'
+        - test: failure.html
+          subtest: 'URL''s constructor''s base argument: http://a|b/ should throw'
+        - test: failure.html
+          subtest: 'URL''s href: http://a|b/ should throw'
+        - test: failure.html
+          subtest: 'XHR: http://a|b/ should throw'
+        - test: failure.html
+          subtest: 'sendBeacon(): http://a|b/ should throw'
+        - test: failure.html
+          subtest: 'Location''s href: http://a|b/ should throw'
+        - test: failure.html
+          subtest: 'window.open(): http://a|b/ should throw'
