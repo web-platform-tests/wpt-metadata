@@ -220,6 +220,10 @@ links:
           subtest: 'Parsing: <sc://a|b/> against <about:blank>'
         - test: a-element-xhtml.xhtml
           subtest: 'Parsing: <http://a|b/> against <about:blank>'
+        - test: a-element.html
+          subtest: 'Parsing: <sc://a|b/> against <about:blank>'
+        - test: a-element.html
+          subtest: 'Parsing: <http://a|b/> against <about:blank>'
         - test: failure.html
           subtest: 'URL''s href: sc://a|b/ should throw'
         - test: failure.html
@@ -246,3 +250,7 @@ links:
       url: https://crbug.com/1281880
       results:
         - test: idlharness-shadowrealm.window.html
+        - test: url-constructor.any.worker.html
+          subtest: 'Parsing: <http://a|b/> against <about:blank>'
+        - test: url-constructor.any.worker.html
+          subtest: 'Parsing: <sc://a|b/> against <about:blank>'
