@@ -209,3 +209,10 @@ links:
           subtest: 'Parsing: <foo://host/dir/? !"$%&''()*+,-./:;<=>?@[\]^_`{|}~> against <about:blank>'
         - test: a-element.html
           subtest: 'Parsing: <foo://host/dir/# !"#$%&''()*+,-./:;<=>?@[\]^_`{|}~> against <about:blank>'
+    - product: chrome
+      url: https://bugs.chromium.org/p/chromium/issues/detail?id=1190810
+      results:
+        - test: a-element.html
+          subtest: 'Parsing: <sc://a|b/> against <about:blank>'
+        - test: a-element.html
+          subtest: 'Parsing: <http://a|b/> against <about:blank>'
