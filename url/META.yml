@@ -157,6 +157,10 @@ links:
     - product: chrome
       url: https://bugs.chromium.org/p/chromium/issues/detail?id=1398117
       results:
+        - test: a-element-origin.html
+          subtest: 'Parsing origin: <http://!"$&''()*+,-.;=_`{}~/> against <about:blank>'
+        - test: a-element-origin.html
+          subtest: 'Parsing origin: <wss://!"$&''()*+,-.;=_`{}~/> against <about:blank>'
         - test: a-element-origin-xhtml.xhtml
           subtest: 'Parsing origin: <http://!"$&''()*+,-.;=_`{}~/> against <about:blank>'
         - test: a-element-origin-xhtml.xhtml
