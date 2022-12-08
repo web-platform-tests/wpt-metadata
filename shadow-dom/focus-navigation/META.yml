@@ -1,7 +1,28 @@
 links:
-- product: firefox
-  results:
-  - subtest: 'This is a regression test: After focusing negative tabindex-ed elements,
-      focus moves in tree order.'
-    test: focus-with-negative-index.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1785036
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1785036
+      results:
+        - test: focus-with-negative-index.html
+          subtest: 'This is a regression test: After focusing negative tabindex-ed elements, focus moves in tree order.'
+    - label: interop-2023-webcomponents
+      results:
+        - test: delegatesFocus-highlight-sibling.html
+        - test: focus-navigation-slot-nested-delegatesFocus.html
+        - test: focus-navigation-slot-shadow-in-slot.html
+        - test: focus-navigation-slots-in-slot.html
+        - test: focus-navigation-slots.html
+        - test: focus-navigation-web-component-input-type-radio.html
+        - test: focus-navigation-slot-nested-2levels.html
+        - test: focus-navigation-slot-nested-fallback.html
+        - test: focus-with-negative-index.html
+        - test: focus-navigation-slot-fallback-default-tabindex.html
+        - test: focus-navigation-slot-shadow-in-fallback.html
+        - test: focus-navigation-slot-with-tabindex.html
+        - test: focus-navigation.html
+        - test: focus-navigation-with-delegatesFocus.html
+        - test: focus-reverse-unassignable-slot.html
+        - test: focus-navigation-slot-fallback.html
+        - test: focus-navigation-slot-nested.html
+        - test: focus-nested-slots.html
+        - test: focus-reverse-unassigned-slot.html
+        - test: focus-unassignable-slot.html
