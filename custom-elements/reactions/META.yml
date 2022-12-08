@@ -1,305 +1,217 @@
 links:
-- product: safari
-  results:
-  - test: '*'
-  url: https://bugs.webkit.org/show_bug.cgi?id=182671
-- product: webkitgtk
-  results:
-  - test: '*'
-  url: https://bugs.webkit.org/show_bug.cgi?id=182671
-- product: firefox
-  results:
-  - subtest: translate on HTMLElement must enqueue an attributeChanged reaction when
-      adding translate content attribute
-    test: HTMLElement.html
-  - subtest: translate on HTMLElement must enqueue an attributeChanged reaction when
-      replacing an existing attribute
-    test: HTMLElement.html
-  - subtest: outerText on HTMLElement must enqueue a disconnected reaction
-    test: HTMLElement.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1710159
-- product: firefox
-  results:
-  - subtest: execCommand on Document must enqueue a disconnected reaction when deleting
-      a custom element from a contenteditable element
-    test: Document.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1783398
-- product: firefox
-  results:
-  - subtest: ariaActiveDescendantElement in Element must enqueue an attributeChanged
-      reaction when adding aria-activedescendant content attribute
-    test: AriaMixin-element-attributes.html
-  - subtest: ariaActiveDescendantElement in Element must enqueue an attributeChanged
-      reaction when replacing an existing attribute
-    test: AriaMixin-element-attributes.html
-  - subtest: ariaControlsElements in Element must enqueue an attributeChanged reaction
-      when adding aria-controls content attribute
-    test: AriaMixin-element-attributes.html
-  - subtest: ariaControlsElements in Element must enqueue an attributeChanged reaction
-      when replacing an existing attribute
-    test: AriaMixin-element-attributes.html
-  - subtest: ariaDescribedByElements in Element must enqueue an attributeChanged reaction
-      when adding aria-describedby content attribute
-    test: AriaMixin-element-attributes.html
-  - subtest: ariaDescribedByElements in Element must enqueue an attributeChanged reaction
-      when replacing an existing attribute
-    test: AriaMixin-element-attributes.html
-  - subtest: ariaDetailsElements in Element must enqueue an attributeChanged reaction
-      when adding aria-details content attribute
-    test: AriaMixin-element-attributes.html
-  - subtest: ariaDetailsElements in Element must enqueue an attributeChanged reaction
-      when replacing an existing attribute
-    test: AriaMixin-element-attributes.html
-  - subtest: ariaErrorMessageElement in Element must enqueue an attributeChanged reaction
-      when adding aria-errormessage content attribute
-    test: AriaMixin-element-attributes.html
-  - subtest: ariaErrorMessageElement in Element must enqueue an attributeChanged reaction
-      when replacing an existing attribute
-    test: AriaMixin-element-attributes.html
-  - subtest: ariaFlowToElements in Element must enqueue an attributeChanged reaction
-      when adding aria-flowto content attribute
-    test: AriaMixin-element-attributes.html
-  - subtest: ariaFlowToElements in Element must enqueue an attributeChanged reaction
-      when replacing an existing attribute
-    test: AriaMixin-element-attributes.html
-  - subtest: ariaLabelledByElements in Element must enqueue an attributeChanged reaction
-      when adding aria-labelledby content attribute
-    test: AriaMixin-element-attributes.html
-  - subtest: ariaLabelledByElements in Element must enqueue an attributeChanged reaction
-      when replacing an existing attribute
-    test: AriaMixin-element-attributes.html
-  - subtest: ariaOwnsElements in Element must enqueue an attributeChanged reaction
-      when adding aria-owns content attribute
-    test: AriaMixin-element-attributes.html
-  - subtest: ariaOwnsElements in Element must enqueue an attributeChanged reaction
-      when replacing an existing attribute
-    test: AriaMixin-element-attributes.html
-  - subtest: ariaAtomic on Element must enqueue an attributeChanged reaction when
-      adding aria-atomic content attribute
-    test: AriaMixin-string-attributes.html
-  - subtest: ariaAtomic on Element must enqueue an attributeChanged reaction when
-      replacing an existing attribute
-    test: AriaMixin-string-attributes.html
-  - subtest: ariaAutoComplete on Element must enqueue an attributeChanged reaction
-      when adding aria-autocomplete content attribute
-    test: AriaMixin-string-attributes.html
-  - subtest: ariaAutoComplete on Element must enqueue an attributeChanged reaction
-      when replacing an existing attribute
-    test: AriaMixin-string-attributes.html
-  - subtest: ariaBusy on Element must enqueue an attributeChanged reaction when adding
-      aria-busy content attribute
-    test: AriaMixin-string-attributes.html
-  - subtest: ariaBusy on Element must enqueue an attributeChanged reaction when replacing
-      an existing attribute
-    test: AriaMixin-string-attributes.html
-  - subtest: ariaChecked on Element must enqueue an attributeChanged reaction when
-      adding aria-checked content attribute
-    test: AriaMixin-string-attributes.html
-  - subtest: ariaChecked on Element must enqueue an attributeChanged reaction when
-      replacing an existing attribute
-    test: AriaMixin-string-attributes.html
-  - subtest: ariaColCount on Element must enqueue an attributeChanged reaction when
-      adding aria-colcount content attribute
-    test: AriaMixin-string-attributes.html
-  - subtest: ariaColCount on Element must enqueue an attributeChanged reaction when
-      replacing an existing attribute
-    test: AriaMixin-string-attributes.html
-  - subtest: ariaColIndex on Element must enqueue an attributeChanged reaction when
-      adding aria-colindex content attribute
-    test: AriaMixin-string-attributes.html
-  - subtest: ariaColIndex on Element must enqueue an attributeChanged reaction when
-      replacing an existing attribute
-    test: AriaMixin-string-attributes.html
-  - subtest: ariaColSpan on Element must enqueue an attributeChanged reaction when
-      adding aria-colspan content attribute
-    test: AriaMixin-string-attributes.html
-  - subtest: ariaColSpan on Element must enqueue an attributeChanged reaction when
-      replacing an existing attribute
-    test: AriaMixin-string-attributes.html
-  - subtest: ariaCurrent on Element must enqueue an attributeChanged reaction when
-      adding aria-current content attribute
-    test: AriaMixin-string-attributes.html
-  - subtest: ariaCurrent on Element must enqueue an attributeChanged reaction when
-      replacing an existing attribute
-    test: AriaMixin-string-attributes.html
-  - subtest: ariaDisabled on Element must enqueue an attributeChanged reaction when
-      adding aria-disabled content attribute
-    test: AriaMixin-string-attributes.html
-  - subtest: ariaDisabled on Element must enqueue an attributeChanged reaction when
-      replacing an existing attribute
-    test: AriaMixin-string-attributes.html
-  - subtest: ariaExpanded on Element must enqueue an attributeChanged reaction when
-      adding aria-expanded content attribute
-    test: AriaMixin-string-attributes.html
-  - subtest: ariaExpanded on Element must enqueue an attributeChanged reaction when
-      replacing an existing attribute
-    test: AriaMixin-string-attributes.html
-  - subtest: ariaHasPopup on Element must enqueue an attributeChanged reaction when
-      adding aria-haspopup content attribute
-    test: AriaMixin-string-attributes.html
-  - subtest: ariaHasPopup on Element must enqueue an attributeChanged reaction when
-      replacing an existing attribute
-    test: AriaMixin-string-attributes.html
-  - subtest: ariaHidden on Element must enqueue an attributeChanged reaction when
-      adding aria-hidden content attribute
-    test: AriaMixin-string-attributes.html
-  - subtest: ariaHidden on Element must enqueue an attributeChanged reaction when
-      replacing an existing attribute
-    test: AriaMixin-string-attributes.html
-  - subtest: ariaInvalid on Element must enqueue an attributeChanged reaction when
-      adding aria-invalid content attribute
-    test: AriaMixin-string-attributes.html
-  - subtest: ariaInvalid on Element must enqueue an attributeChanged reaction when
-      replacing an existing attribute
-    test: AriaMixin-string-attributes.html
-  - subtest: ariaKeyShortcuts on Element must enqueue an attributeChanged reaction
-      when adding aria-keyshortcuts content attribute
-    test: AriaMixin-string-attributes.html
-  - subtest: ariaKeyShortcuts on Element must enqueue an attributeChanged reaction
-      when replacing an existing attribute
-    test: AriaMixin-string-attributes.html
-  - subtest: ariaLabel on Element must enqueue an attributeChanged reaction when adding
-      aria-label content attribute
-    test: AriaMixin-string-attributes.html
-  - subtest: ariaLabel on Element must enqueue an attributeChanged reaction when replacing
-      an existing attribute
-    test: AriaMixin-string-attributes.html
-  - subtest: ariaLevel on Element must enqueue an attributeChanged reaction when adding
-      aria-level content attribute
-    test: AriaMixin-string-attributes.html
-  - subtest: ariaLevel on Element must enqueue an attributeChanged reaction when replacing
-      an existing attribute
-    test: AriaMixin-string-attributes.html
-  - subtest: ariaLive on Element must enqueue an attributeChanged reaction when adding
-      aria-live content attribute
-    test: AriaMixin-string-attributes.html
-  - subtest: ariaLive on Element must enqueue an attributeChanged reaction when replacing
-      an existing attribute
-    test: AriaMixin-string-attributes.html
-  - subtest: ariaModal on Element must enqueue an attributeChanged reaction when adding
-      aria-modal content attribute
-    test: AriaMixin-string-attributes.html
-  - subtest: ariaModal on Element must enqueue an attributeChanged reaction when replacing
-      an existing attribute
-    test: AriaMixin-string-attributes.html
-  - subtest: ariaMultiLine on Element must enqueue an attributeChanged reaction when
-      adding aria-multiline content attribute
-    test: AriaMixin-string-attributes.html
-  - subtest: ariaMultiLine on Element must enqueue an attributeChanged reaction when
-      replacing an existing attribute
-    test: AriaMixin-string-attributes.html
-  - subtest: ariaMultiSelectable on Element must enqueue an attributeChanged reaction
-      when adding aria-multiselectable content attribute
-    test: AriaMixin-string-attributes.html
-  - subtest: ariaMultiSelectable on Element must enqueue an attributeChanged reaction
-      when replacing an existing attribute
-    test: AriaMixin-string-attributes.html
-  - subtest: ariaOrientation on Element must enqueue an attributeChanged reaction
-      when adding aria-orientation content attribute
-    test: AriaMixin-string-attributes.html
-  - subtest: ariaOrientation on Element must enqueue an attributeChanged reaction
-      when replacing an existing attribute
-    test: AriaMixin-string-attributes.html
-  - subtest: ariaPlaceholder on Element must enqueue an attributeChanged reaction
-      when adding aria-placeholder content attribute
-    test: AriaMixin-string-attributes.html
-  - subtest: ariaPlaceholder on Element must enqueue an attributeChanged reaction
-      when replacing an existing attribute
-    test: AriaMixin-string-attributes.html
-  - subtest: ariaPosInSet on Element must enqueue an attributeChanged reaction when
-      adding aria-posinset content attribute
-    test: AriaMixin-string-attributes.html
-  - subtest: ariaPosInSet on Element must enqueue an attributeChanged reaction when
-      replacing an existing attribute
-    test: AriaMixin-string-attributes.html
-  - subtest: ariaPressed on Element must enqueue an attributeChanged reaction when
-      adding aria-pressed content attribute
-    test: AriaMixin-string-attributes.html
-  - subtest: ariaPressed on Element must enqueue an attributeChanged reaction when
-      replacing an existing attribute
-    test: AriaMixin-string-attributes.html
-  - subtest: ariaReadOnly on Element must enqueue an attributeChanged reaction when
-      adding aria-readonly content attribute
-    test: AriaMixin-string-attributes.html
-  - subtest: ariaReadOnly on Element must enqueue an attributeChanged reaction when
-      replacing an existing attribute
-    test: AriaMixin-string-attributes.html
-  - subtest: ariaRelevant on Element must enqueue an attributeChanged reaction when
-      adding aria-relevant content attribute
-    test: AriaMixin-string-attributes.html
-  - subtest: ariaRelevant on Element must enqueue an attributeChanged reaction when
-      replacing an existing attribute
-    test: AriaMixin-string-attributes.html
-  - subtest: ariaRequired on Element must enqueue an attributeChanged reaction when
-      adding aria-required content attribute
-    test: AriaMixin-string-attributes.html
-  - subtest: ariaRequired on Element must enqueue an attributeChanged reaction when
-      replacing an existing attribute
-    test: AriaMixin-string-attributes.html
-  - subtest: ariaRoleDescription on Element must enqueue an attributeChanged reaction
-      when adding aria-roledescription content attribute
-    test: AriaMixin-string-attributes.html
-  - subtest: ariaRoleDescription on Element must enqueue an attributeChanged reaction
-      when replacing an existing attribute
-    test: AriaMixin-string-attributes.html
-  - subtest: ariaRowCount on Element must enqueue an attributeChanged reaction when
-      adding aria-rowcount content attribute
-    test: AriaMixin-string-attributes.html
-  - subtest: ariaRowCount on Element must enqueue an attributeChanged reaction when
-      replacing an existing attribute
-    test: AriaMixin-string-attributes.html
-  - subtest: ariaRowIndex on Element must enqueue an attributeChanged reaction when
-      adding aria-rowindex content attribute
-    test: AriaMixin-string-attributes.html
-  - subtest: ariaRowIndex on Element must enqueue an attributeChanged reaction when
-      replacing an existing attribute
-    test: AriaMixin-string-attributes.html
-  - subtest: ariaRowSpan on Element must enqueue an attributeChanged reaction when
-      adding aria-rowspan content attribute
-    test: AriaMixin-string-attributes.html
-  - subtest: ariaRowSpan on Element must enqueue an attributeChanged reaction when
-      replacing an existing attribute
-    test: AriaMixin-string-attributes.html
-  - subtest: ariaSelected on Element must enqueue an attributeChanged reaction when
-      adding aria-selected content attribute
-    test: AriaMixin-string-attributes.html
-  - subtest: ariaSelected on Element must enqueue an attributeChanged reaction when
-      replacing an existing attribute
-    test: AriaMixin-string-attributes.html
-  - subtest: ariaSetSize on Element must enqueue an attributeChanged reaction when
-      adding aria-setsize content attribute
-    test: AriaMixin-string-attributes.html
-  - subtest: ariaSetSize on Element must enqueue an attributeChanged reaction when
-      replacing an existing attribute
-    test: AriaMixin-string-attributes.html
-  - subtest: ariaSort on Element must enqueue an attributeChanged reaction when adding
-      aria-sort content attribute
-    test: AriaMixin-string-attributes.html
-  - subtest: ariaSort on Element must enqueue an attributeChanged reaction when replacing
-      an existing attribute
-    test: AriaMixin-string-attributes.html
-  - subtest: ariaValueMax on Element must enqueue an attributeChanged reaction when
-      adding aria-valuemax content attribute
-    test: AriaMixin-string-attributes.html
-  - subtest: ariaValueMax on Element must enqueue an attributeChanged reaction when
-      replacing an existing attribute
-    test: AriaMixin-string-attributes.html
-  - subtest: ariaValueMin on Element must enqueue an attributeChanged reaction when
-      adding aria-valuemin content attribute
-    test: AriaMixin-string-attributes.html
-  - subtest: ariaValueMin on Element must enqueue an attributeChanged reaction when
-      replacing an existing attribute
-    test: AriaMixin-string-attributes.html
-  - subtest: ariaValueNow on Element must enqueue an attributeChanged reaction when
-      adding aria-valuenow content attribute
-    test: AriaMixin-string-attributes.html
-  - subtest: ariaValueNow on Element must enqueue an attributeChanged reaction when
-      replacing an existing attribute
-    test: AriaMixin-string-attributes.html
-  - subtest: ariaValueText on Element must enqueue an attributeChanged reaction when
-      adding aria-valuetext content attribute
-    test: AriaMixin-string-attributes.html
-  - subtest: ariaValueText on Element must enqueue an attributeChanged reaction when
-      replacing an existing attribute
-    test: AriaMixin-string-attributes.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1790332
+    - product: safari
+      url: https://bugs.webkit.org/show_bug.cgi?id=182671
+      results:
+        - test: '*'
+    - product: webkitgtk
+      url: https://bugs.webkit.org/show_bug.cgi?id=182671
+      results:
+        - test: '*'
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1710159
+      results:
+        - test: HTMLElement.html
+          subtest: translate on HTMLElement must enqueue an attributeChanged reaction when adding translate content attribute
+        - test: HTMLElement.html
+          subtest: translate on HTMLElement must enqueue an attributeChanged reaction when replacing an existing attribute
+        - test: HTMLElement.html
+          subtest: outerText on HTMLElement must enqueue a disconnected reaction
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1783398
+      results:
+        - test: Document.html
+          subtest: execCommand on Document must enqueue a disconnected reaction when deleting a custom element from a contenteditable element
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1790332
+      results:
+        - test: AriaMixin-element-attributes.html
+          subtest: ariaActiveDescendantElement in Element must enqueue an attributeChanged reaction when adding aria-activedescendant content attribute
+        - test: AriaMixin-element-attributes.html
+          subtest: ariaActiveDescendantElement in Element must enqueue an attributeChanged reaction when replacing an existing attribute
+        - test: AriaMixin-element-attributes.html
+          subtest: ariaControlsElements in Element must enqueue an attributeChanged reaction when adding aria-controls content attribute
+        - test: AriaMixin-element-attributes.html
+          subtest: ariaControlsElements in Element must enqueue an attributeChanged reaction when replacing an existing attribute
+        - test: AriaMixin-element-attributes.html
+          subtest: ariaDescribedByElements in Element must enqueue an attributeChanged reaction when adding aria-describedby content attribute
+        - test: AriaMixin-element-attributes.html
+          subtest: ariaDescribedByElements in Element must enqueue an attributeChanged reaction when replacing an existing attribute
+        - test: AriaMixin-element-attributes.html
+          subtest: ariaDetailsElements in Element must enqueue an attributeChanged reaction when adding aria-details content attribute
+        - test: AriaMixin-element-attributes.html
+          subtest: ariaDetailsElements in Element must enqueue an attributeChanged reaction when replacing an existing attribute
+        - test: AriaMixin-element-attributes.html
+          subtest: ariaErrorMessageElement in Element must enqueue an attributeChanged reaction when adding aria-errormessage content attribute
+        - test: AriaMixin-element-attributes.html
+          subtest: ariaErrorMessageElement in Element must enqueue an attributeChanged reaction when replacing an existing attribute
+        - test: AriaMixin-element-attributes.html
+          subtest: ariaFlowToElements in Element must enqueue an attributeChanged reaction when adding aria-flowto content attribute
+        - test: AriaMixin-element-attributes.html
+          subtest: ariaFlowToElements in Element must enqueue an attributeChanged reaction when replacing an existing attribute
+        - test: AriaMixin-element-attributes.html
+          subtest: ariaLabelledByElements in Element must enqueue an attributeChanged reaction when adding aria-labelledby content attribute
+        - test: AriaMixin-element-attributes.html
+          subtest: ariaLabelledByElements in Element must enqueue an attributeChanged reaction when replacing an existing attribute
+        - test: AriaMixin-element-attributes.html
+          subtest: ariaOwnsElements in Element must enqueue an attributeChanged reaction when adding aria-owns content attribute
+        - test: AriaMixin-element-attributes.html
+          subtest: ariaOwnsElements in Element must enqueue an attributeChanged reaction when replacing an existing attribute
+        - test: AriaMixin-string-attributes.html
+          subtest: ariaAtomic on Element must enqueue an attributeChanged reaction when adding aria-atomic content attribute
+        - test: AriaMixin-string-attributes.html
+          subtest: ariaAtomic on Element must enqueue an attributeChanged reaction when replacing an existing attribute
+        - test: AriaMixin-string-attributes.html
+          subtest: ariaAutoComplete on Element must enqueue an attributeChanged reaction when adding aria-autocomplete content attribute
+        - test: AriaMixin-string-attributes.html
+          subtest: ariaAutoComplete on Element must enqueue an attributeChanged reaction when replacing an existing attribute
+        - test: AriaMixin-string-attributes.html
+          subtest: ariaBusy on Element must enqueue an attributeChanged reaction when adding aria-busy content attribute
+        - test: AriaMixin-string-attributes.html
+          subtest: ariaBusy on Element must enqueue an attributeChanged reaction when replacing an existing attribute
+        - test: AriaMixin-string-attributes.html
+          subtest: ariaChecked on Element must enqueue an attributeChanged reaction when adding aria-checked content attribute
+        - test: AriaMixin-string-attributes.html
+          subtest: ariaChecked on Element must enqueue an attributeChanged reaction when replacing an existing attribute
+        - test: AriaMixin-string-attributes.html
+          subtest: ariaColCount on Element must enqueue an attributeChanged reaction when adding aria-colcount content attribute
+        - test: AriaMixin-string-attributes.html
+          subtest: ariaColCount on Element must enqueue an attributeChanged reaction when replacing an existing attribute
+        - test: AriaMixin-string-attributes.html
+          subtest: ariaColIndex on Element must enqueue an attributeChanged reaction when adding aria-colindex content attribute
+        - test: AriaMixin-string-attributes.html
+          subtest: ariaColIndex on Element must enqueue an attributeChanged reaction when replacing an existing attribute
+        - test: AriaMixin-string-attributes.html
+          subtest: ariaColSpan on Element must enqueue an attributeChanged reaction when adding aria-colspan content attribute
+        - test: AriaMixin-string-attributes.html
+          subtest: ariaColSpan on Element must enqueue an attributeChanged reaction when replacing an existing attribute
+        - test: AriaMixin-string-attributes.html
+          subtest: ariaCurrent on Element must enqueue an attributeChanged reaction when adding aria-current content attribute
+        - test: AriaMixin-string-attributes.html
+          subtest: ariaCurrent on Element must enqueue an attributeChanged reaction when replacing an existing attribute
+        - test: AriaMixin-string-attributes.html
+          subtest: ariaDisabled on Element must enqueue an attributeChanged reaction when adding aria-disabled content attribute
+        - test: AriaMixin-string-attributes.html
+          subtest: ariaDisabled on Element must enqueue an attributeChanged reaction when replacing an existing attribute
+        - test: AriaMixin-string-attributes.html
+          subtest: ariaExpanded on Element must enqueue an attributeChanged reaction when adding aria-expanded content attribute
+        - test: AriaMixin-string-attributes.html
+          subtest: ariaExpanded on Element must enqueue an attributeChanged reaction when replacing an existing attribute
+        - test: AriaMixin-string-attributes.html
+          subtest: ariaHasPopup on Element must enqueue an attributeChanged reaction when adding aria-haspopup content attribute
+        - test: AriaMixin-string-attributes.html
+          subtest: ariaHasPopup on Element must enqueue an attributeChanged reaction when replacing an existing attribute
+        - test: AriaMixin-string-attributes.html
+          subtest: ariaHidden on Element must enqueue an attributeChanged reaction when adding aria-hidden content attribute
+        - test: AriaMixin-string-attributes.html
+          subtest: ariaHidden on Element must enqueue an attributeChanged reaction when replacing an existing attribute
+        - test: AriaMixin-string-attributes.html
+          subtest: ariaInvalid on Element must enqueue an attributeChanged reaction when adding aria-invalid content attribute
+        - test: AriaMixin-string-attributes.html
+          subtest: ariaInvalid on Element must enqueue an attributeChanged reaction when replacing an existing attribute
+        - test: AriaMixin-string-attributes.html
+          subtest: ariaKeyShortcuts on Element must enqueue an attributeChanged reaction when adding aria-keyshortcuts content attribute
+        - test: AriaMixin-string-attributes.html
+          subtest: ariaKeyShortcuts on Element must enqueue an attributeChanged reaction when replacing an existing attribute
+        - test: AriaMixin-string-attributes.html
+          subtest: ariaLabel on Element must enqueue an attributeChanged reaction when adding aria-label content attribute
+        - test: AriaMixin-string-attributes.html
+          subtest: ariaLabel on Element must enqueue an attributeChanged reaction when replacing an existing attribute
+        - test: AriaMixin-string-attributes.html
+          subtest: ariaLevel on Element must enqueue an attributeChanged reaction when adding aria-level content attribute
+        - test: AriaMixin-string-attributes.html
+          subtest: ariaLevel on Element must enqueue an attributeChanged reaction when replacing an existing attribute
+        - test: AriaMixin-string-attributes.html
+          subtest: ariaLive on Element must enqueue an attributeChanged reaction when adding aria-live content attribute
+        - test: AriaMixin-string-attributes.html
+          subtest: ariaLive on Element must enqueue an attributeChanged reaction when replacing an existing attribute
+        - test: AriaMixin-string-attributes.html
+          subtest: ariaModal on Element must enqueue an attributeChanged reaction when adding aria-modal content attribute
+        - test: AriaMixin-string-attributes.html
+          subtest: ariaModal on Element must enqueue an attributeChanged reaction when replacing an existing attribute
+        - test: AriaMixin-string-attributes.html
+          subtest: ariaMultiLine on Element must enqueue an attributeChanged reaction when adding aria-multiline content attribute
+        - test: AriaMixin-string-attributes.html
+          subtest: ariaMultiLine on Element must enqueue an attributeChanged reaction when replacing an existing attribute
+        - test: AriaMixin-string-attributes.html
+          subtest: ariaMultiSelectable on Element must enqueue an attributeChanged reaction when adding aria-multiselectable content attribute
+        - test: AriaMixin-string-attributes.html
+          subtest: ariaMultiSelectable on Element must enqueue an attributeChanged reaction when replacing an existing attribute
+        - test: AriaMixin-string-attributes.html
+          subtest: ariaOrientation on Element must enqueue an attributeChanged reaction when adding aria-orientation content attribute
+        - test: AriaMixin-string-attributes.html
+          subtest: ariaOrientation on Element must enqueue an attributeChanged reaction when replacing an existing attribute
+        - test: AriaMixin-string-attributes.html
+          subtest: ariaPlaceholder on Element must enqueue an attributeChanged reaction when adding aria-placeholder content attribute
+        - test: AriaMixin-string-attributes.html
+          subtest: ariaPlaceholder on Element must enqueue an attributeChanged reaction when replacing an existing attribute
+        - test: AriaMixin-string-attributes.html
+          subtest: ariaPosInSet on Element must enqueue an attributeChanged reaction when adding aria-posinset content attribute
+        - test: AriaMixin-string-attributes.html
+          subtest: ariaPosInSet on Element must enqueue an attributeChanged reaction when replacing an existing attribute
+        - test: AriaMixin-string-attributes.html
+          subtest: ariaPressed on Element must enqueue an attributeChanged reaction when adding aria-pressed content attribute
+        - test: AriaMixin-string-attributes.html
+          subtest: ariaPressed on Element must enqueue an attributeChanged reaction when replacing an existing attribute
+        - test: AriaMixin-string-attributes.html
+          subtest: ariaReadOnly on Element must enqueue an attributeChanged reaction when adding aria-readonly content attribute
+        - test: AriaMixin-string-attributes.html
+          subtest: ariaReadOnly on Element must enqueue an attributeChanged reaction when replacing an existing attribute
+        - test: AriaMixin-string-attributes.html
+          subtest: ariaRelevant on Element must enqueue an attributeChanged reaction when adding aria-relevant content attribute
+        - test: AriaMixin-string-attributes.html
+          subtest: ariaRelevant on Element must enqueue an attributeChanged reaction when replacing an existing attribute
+        - test: AriaMixin-string-attributes.html
+          subtest: ariaRequired on Element must enqueue an attributeChanged reaction when adding aria-required content attribute
+        - test: AriaMixin-string-attributes.html
+          subtest: ariaRequired on Element must enqueue an attributeChanged reaction when replacing an existing attribute
+        - test: AriaMixin-string-attributes.html
+          subtest: ariaRoleDescription on Element must enqueue an attributeChanged reaction when adding aria-roledescription content attribute
+        - test: AriaMixin-string-attributes.html
+          subtest: ariaRoleDescription on Element must enqueue an attributeChanged reaction when replacing an existing attribute
+        - test: AriaMixin-string-attributes.html
+          subtest: ariaRowCount on Element must enqueue an attributeChanged reaction when adding aria-rowcount content attribute
+        - test: AriaMixin-string-attributes.html
+          subtest: ariaRowCount on Element must enqueue an attributeChanged reaction when replacing an existing attribute
+        - test: AriaMixin-string-attributes.html
+          subtest: ariaRowIndex on Element must enqueue an attributeChanged reaction when adding aria-rowindex content attribute
+        - test: AriaMixin-string-attributes.html
+          subtest: ariaRowIndex on Element must enqueue an attributeChanged reaction when replacing an existing attribute
+        - test: AriaMixin-string-attributes.html
+          subtest: ariaRowSpan on Element must enqueue an attributeChanged reaction when adding aria-rowspan content attribute
+        - test: AriaMixin-string-attributes.html
+          subtest: ariaRowSpan on Element must enqueue an attributeChanged reaction when replacing an existing attribute
+        - test: AriaMixin-string-attributes.html
+          subtest: ariaSelected on Element must enqueue an attributeChanged reaction when adding aria-selected content attribute
+        - test: AriaMixin-string-attributes.html
+          subtest: ariaSelected on Element must enqueue an attributeChanged reaction when replacing an existing attribute
+        - test: AriaMixin-string-attributes.html
+          subtest: ariaSetSize on Element must enqueue an attributeChanged reaction when adding aria-setsize content attribute
+        - test: AriaMixin-string-attributes.html
+          subtest: ariaSetSize on Element must enqueue an attributeChanged reaction when replacing an existing attribute
+        - test: AriaMixin-string-attributes.html
+          subtest: ariaSort on Element must enqueue an attributeChanged reaction when adding aria-sort content attribute
+        - test: AriaMixin-string-attributes.html
+          subtest: ariaSort on Element must enqueue an attributeChanged reaction when replacing an existing attribute
+        - test: AriaMixin-string-attributes.html
+          subtest: ariaValueMax on Element must enqueue an attributeChanged reaction when adding aria-valuemax content attribute
+        - test: AriaMixin-string-attributes.html
+          subtest: ariaValueMax on Element must enqueue an attributeChanged reaction when replacing an existing attribute
+        - test: AriaMixin-string-attributes.html
+          subtest: ariaValueMin on Element must enqueue an attributeChanged reaction when adding aria-valuemin content attribute
+        - test: AriaMixin-string-attributes.html
+          subtest: ariaValueMin on Element must enqueue an attributeChanged reaction when replacing an existing attribute
+        - test: AriaMixin-string-attributes.html
+          subtest: ariaValueNow on Element must enqueue an attributeChanged reaction when adding aria-valuenow content attribute
+        - test: AriaMixin-string-attributes.html
+          subtest: ariaValueNow on Element must enqueue an attributeChanged reaction when replacing an existing attribute
+        - test: AriaMixin-string-attributes.html
+          subtest: ariaValueText on Element must enqueue an attributeChanged reaction when adding aria-valuetext content attribute
+        - test: AriaMixin-string-attributes.html
+          subtest: ariaValueText on Element must enqueue an attributeChanged reaction when replacing an existing attribute
+    - label: interop-2023-webcomponents
+      results:
+        - test: Animation.html
+        - test: AriaMixin-element-attributes.html
+        - test: AriaMixin-string-attributes.html
+        - test: Document.html
+        - test: HTMLElement.html
