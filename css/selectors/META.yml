@@ -369,11 +369,6 @@ links:
           subtest: .d .x:has(.e) matches expected elements
         - test: has-relative-argument.html
           subtest: .d ~ .x:has(~ .e) matches expected elements
-    - product: safari
-      url: https://bugs.webkit.org/show_bug.cgi?id=244708
-      results:
-        - test: has-error-recovery.html
-          subtest: 'CSS Selectors: :has() error recovery'
     - product: firefox
       url: https://bugzilla.mozilla.org/show_bug.cgi?id=1795517
       results:
@@ -418,16 +413,17 @@ links:
         - test: nth-last-child-of-tagname.html
         - test: nth-child-and-nth-last-child.html
         - test: nth-child-of-classname.html
-    - label: interop-2023-has
+    - url: ""
+      label: interop-2023-has
       results:
-        - test: has-error-recovery.html
         - test: has-matches-to-uninserted-elements.html
         - test: has-relative-argument.html
         - test: has-specificity.html
         - test: has-visited.html
         - test: has-argument-with-explicit-scope.html
         - test: has-basic.html
-    - label: interop-2023-nth
+    - url: ""
+      label: interop-2023-nth
       results:
         - test: nth-last-child-of-style-sharing-1.html
         - test: nth-child-of-tagname.html
