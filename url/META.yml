@@ -254,3 +254,8 @@ links:
           subtest: 'Parsing: <http://a|b/> against <about:blank>'
         - test: url-constructor.any.worker.html
           subtest: 'Parsing: <sc://a|b/> against <about:blank>'
+    - product: chrome
+      url: https://bugs.chromium.org/p/chromium/issues/detail?id=1400251
+      results:
+        - test: url-origin.any.worker.html
+          subtest: 'Origin parsing: <http://example.com/foo%00%51> against <about:blank>'
