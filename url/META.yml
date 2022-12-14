@@ -105,12 +105,10 @@ links:
       results:
         - test: failure.html
           status: CRASH
-    - url: ""
-      label: interop-2022-webcompat
+    - label: interop-2022-webcompat
       results:
         - test: toascii.window.html
-    - url: ""
-      label: interop-2023-url
+    - label: interop-2023-url
       results:
         - test: urlsearchparams-delete.any.worker.html
         - test: urlsearchparams-sort.any.worker.html
@@ -260,6 +258,4 @@ links:
       url: https://bugs.chromium.org/p/chromium/issues/detail?id=1400251
       results:
         - test: url-origin.any.html
-          subtest: 'Origin parsing: <http://example.com/foo%00%51> against <about:blank>'
-        - test: url-origin.any.worker.html
           subtest: 'Origin parsing: <http://example.com/foo%00%51> against <about:blank>'
