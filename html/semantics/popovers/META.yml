@@ -557,3 +557,36 @@ links:
   - subtest: Tests that a popover can be anchored to an unrendered element.
     test: popover-anchor-display-none.tentative.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1804130
+- product: firefox
+  results:
+  - subtest: 'Tests the interactions between popover light dismiss and pointer/mouse
+      events. eventName: pointerdown, capture: true'
+    test: light-dismiss-event-ordering.tentative.html
+  - subtest: 'Tests the interactions between popover light dismiss and pointer/mouse
+      events. eventName: pointerup, capture: true'
+    test: light-dismiss-event-ordering.tentative.html
+  - subtest: 'Tests the interactions between popover light dismiss and pointer/mouse
+      events. eventName: mousedown, capture: true'
+    test: light-dismiss-event-ordering.tentative.html
+  - subtest: 'Tests the interactions between popover light dismiss and pointer/mouse
+      events. eventName: mouseup, capture: true'
+    test: light-dismiss-event-ordering.tentative.html
+  - subtest: 'Tests the interactions between popover light dismiss and pointer/mouse
+      events. eventName: click, capture: true'
+    test: light-dismiss-event-ordering.tentative.html
+  - subtest: 'Tests the interactions between popover light dismiss and pointer/mouse
+      events. eventName: pointerdown, capture: false'
+    test: light-dismiss-event-ordering.tentative.html
+  - subtest: 'Tests the interactions between popover light dismiss and pointer/mouse
+      events. eventName: pointerup, capture: false'
+    test: light-dismiss-event-ordering.tentative.html
+  - subtest: 'Tests the interactions between popover light dismiss and pointer/mouse
+      events. eventName: mousedown, capture: false'
+    test: light-dismiss-event-ordering.tentative.html
+  - subtest: 'Tests the interactions between popover light dismiss and pointer/mouse
+      events. eventName: mouseup, capture: false'
+    test: light-dismiss-event-ordering.tentative.html
+  - subtest: 'Tests the interactions between popover light dismiss and pointer/mouse
+      events. eventName: click, capture: false'
+    test: light-dismiss-event-ordering.tentative.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1805604
