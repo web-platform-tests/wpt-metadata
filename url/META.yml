@@ -105,12 +105,10 @@ links:
       results:
         - test: failure.html
           status: CRASH
-    - url: ""
-      label: interop-2022-webcompat
+    - label: interop-2022-webcompat
       results:
         - test: toascii.window.html
-    - url: ""
-      label: interop-2023-url
+    - label: interop-2023-url
       results:
         - test: urlsearchparams-delete.any.worker.html
         - test: urlsearchparams-sort.any.worker.html
@@ -256,6 +254,7 @@ links:
           subtest: 'Parsing: <http://a|b/> against <about:blank>'
         - test: url-constructor.any.worker.html
           subtest: 'Parsing: <sc://a|b/> against <about:blank>'
+        - test: idlharness-shadowrealm.window.html
     - product: chrome
       url: https://bugs.chromium.org/p/chromium/issues/detail?id=1400251
       results:
