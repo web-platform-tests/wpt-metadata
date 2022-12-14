@@ -2051,7 +2051,10 @@ links:
           subtest: 'area.autofocus: IDL set to object "test-toString"'
         - test: reflection-embedded.html
           subtest: 'area.autofocus: IDL set to object "test-valueOf"'
-    - url: ""
-      label: interop-2022-forms
+    - label: interop-2022-forms
       results:
         - test: reflection-forms.html
+    - product: chrome
+      url: https://crbug.com/1281880
+      results:
+        - test: idlharness-shadowrealm.window.html
