@@ -1,7 +1,12 @@
 links:
-    - product: chrome
-      url: https://crbug.com/630597
-      results:
-        - test: image-set-rendering.html
-        - test: image-set-content-rendering.html
-        - test: image-set-parsing.html
+- product: chrome
+  results:
+  - test: image-set-rendering.html
+  - test: image-set-content-rendering.html
+  - test: image-set-parsing.html
+  url: https://crbug.com/630597
+- product: firefox
+  results:
+  - test: image-set-type-unsupported-rendering-2.html
+  - test: image-set-type-unsupported-rendering.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1806025
