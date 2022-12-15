@@ -1,64 +1,51 @@
 links:
-- product: firefox
-  results:
-  - subtest: Property background-image value 'linear-gradient(30deg, red, blue)'
-    test: gradient-interpolation-method-computed.html
-  - subtest: Property background-image value 'linear-gradient(to right bottom, red,
-      blue)'
-    test: gradient-interpolation-method-computed.html
-  - subtest: Property background-image value 'linear-gradient(30deg, color(srgb 1
-      0 0), blue)'
-    test: gradient-interpolation-method-computed.html
-  - subtest: Property background-image value 'linear-gradient(to right bottom, color(srgb
-      1 0 0), blue)'
-    test: gradient-interpolation-method-computed.html
-  - subtest: Property background-image value 'radial-gradient(50px, red, blue)'
-    test: gradient-interpolation-method-computed.html
-  - subtest: Property background-image value 'radial-gradient(ellipse 50% 40em, red,
-      blue)'
-    test: gradient-interpolation-method-computed.html
-  - subtest: Property background-image value 'radial-gradient(at right center, red,
-      blue)'
-    test: gradient-interpolation-method-computed.html
-  - subtest: Property background-image value 'radial-gradient(50px, color(srgb 1 0
-      0), blue)'
-    test: gradient-interpolation-method-computed.html
-  - subtest: Property background-image value 'radial-gradient(ellipse 50% 40em, color(srgb
-      1 0 0), blue)'
-    test: gradient-interpolation-method-computed.html
-  - subtest: Property background-image value 'radial-gradient(at right center, color(srgb
-      1 0 0), blue)'
-    test: gradient-interpolation-method-computed.html
-  - subtest: Property background-image value 'conic-gradient(from 30deg, red, blue)'
-    test: gradient-interpolation-method-computed.html
-  - subtest: Property background-image value 'conic-gradient(at left 10px top 50em,
-      red, blue)'
-    test: gradient-interpolation-method-computed.html
-  - subtest: Property background-image value 'conic-gradient(from 30deg, color(srgb
-      1 0 0), blue)'
-    test: gradient-interpolation-method-computed.html
-  - subtest: Property background-image value 'conic-gradient(at left 10px top 50em,
-      color(srgb 1 0 0), blue)'
-    test: gradient-interpolation-method-computed.html
-  - subtest: e.style['background-image'] = "linear-gradient(30deg, color(srgb 1 0
-      0), blue)" should set the property value
-    test: gradient-interpolation-method-valid.html
-  - subtest: e.style['background-image'] = "linear-gradient(to right bottom, color(srgb
-      1 0 0), blue)" should set the property value
-    test: gradient-interpolation-method-valid.html
-  - subtest: e.style['background-image'] = "radial-gradient(50px, color(srgb 1 0 0),
-      blue)" should set the property value
-    test: gradient-interpolation-method-valid.html
-  - subtest: e.style['background-image'] = "radial-gradient(ellipse 50% 40em, color(srgb
-      1 0 0), blue)" should set the property value
-    test: gradient-interpolation-method-valid.html
-  - subtest: e.style['background-image'] = "radial-gradient(at right center, color(srgb
-      1 0 0), blue)" should set the property value
-    test: gradient-interpolation-method-valid.html
-  - subtest: e.style['background-image'] = "conic-gradient(from 30deg, color(srgb
-      1 0 0), blue)" should set the property value
-    test: gradient-interpolation-method-valid.html
-  - subtest: e.style['background-image'] = "conic-gradient(at left 10px top 50em,
-      color(srgb 1 0 0), blue)" should set the property value
-    test: gradient-interpolation-method-valid.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1784848
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1784848
+      results:
+        - test: gradient-interpolation-method-computed.html
+          subtest: Property background-image value 'linear-gradient(30deg, red, blue)'
+        - test: gradient-interpolation-method-computed.html
+          subtest: Property background-image value 'linear-gradient(to right bottom, red, blue)'
+        - test: gradient-interpolation-method-computed.html
+          subtest: Property background-image value 'linear-gradient(30deg, color(srgb 1 0 0), blue)'
+        - test: gradient-interpolation-method-computed.html
+          subtest: Property background-image value 'linear-gradient(to right bottom, color(srgb 1 0 0), blue)'
+        - test: gradient-interpolation-method-computed.html
+          subtest: Property background-image value 'radial-gradient(50px, red, blue)'
+        - test: gradient-interpolation-method-computed.html
+          subtest: Property background-image value 'radial-gradient(ellipse 50% 40em, red, blue)'
+        - test: gradient-interpolation-method-computed.html
+          subtest: Property background-image value 'radial-gradient(at right center, red, blue)'
+        - test: gradient-interpolation-method-computed.html
+          subtest: Property background-image value 'radial-gradient(50px, color(srgb 1 0 0), blue)'
+        - test: gradient-interpolation-method-computed.html
+          subtest: Property background-image value 'radial-gradient(ellipse 50% 40em, color(srgb 1 0 0), blue)'
+        - test: gradient-interpolation-method-computed.html
+          subtest: Property background-image value 'radial-gradient(at right center, color(srgb 1 0 0), blue)'
+        - test: gradient-interpolation-method-computed.html
+          subtest: Property background-image value 'conic-gradient(from 30deg, red, blue)'
+        - test: gradient-interpolation-method-computed.html
+          subtest: Property background-image value 'conic-gradient(at left 10px top 50em, red, blue)'
+        - test: gradient-interpolation-method-computed.html
+          subtest: Property background-image value 'conic-gradient(from 30deg, color(srgb 1 0 0), blue)'
+        - test: gradient-interpolation-method-computed.html
+          subtest: Property background-image value 'conic-gradient(at left 10px top 50em, color(srgb 1 0 0), blue)'
+        - test: gradient-interpolation-method-valid.html
+          subtest: e.style['background-image'] = "linear-gradient(30deg, color(srgb 1 0 0), blue)" should set the property value
+        - test: gradient-interpolation-method-valid.html
+          subtest: e.style['background-image'] = "linear-gradient(to right bottom, color(srgb 1 0 0), blue)" should set the property value
+        - test: gradient-interpolation-method-valid.html
+          subtest: e.style['background-image'] = "radial-gradient(50px, color(srgb 1 0 0), blue)" should set the property value
+        - test: gradient-interpolation-method-valid.html
+          subtest: e.style['background-image'] = "radial-gradient(ellipse 50% 40em, color(srgb 1 0 0), blue)" should set the property value
+        - test: gradient-interpolation-method-valid.html
+          subtest: e.style['background-image'] = "radial-gradient(at right center, color(srgb 1 0 0), blue)" should set the property value
+        - test: gradient-interpolation-method-valid.html
+          subtest: e.style['background-image'] = "conic-gradient(from 30deg, color(srgb 1 0 0), blue)" should set the property value
+        - test: gradient-interpolation-method-valid.html
+          subtest: e.style['background-image'] = "conic-gradient(at left 10px top 50em, color(srgb 1 0 0), blue)" should set the property value
+    - label: interop-2023-color
+      results:
+        - test: gradient-interpolation-method-computed.html
+        - test: gradient-interpolation-method-invalid.html
+        - test: gradient-interpolation-method-valid.html
