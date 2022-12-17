@@ -10,3 +10,12 @@ links:
   - test: image-set-type-unsupported-rendering-2.html
   - test: image-set-type-unsupported-rendering.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1806025
+- product: firefox
+  results:
+  - subtest: e.style['content'] = "image-set(linear-gradient(black, white) 1x, 'example.png'
+      4x)" should set the property value
+    test: image-set-parsing.html
+  - subtest: e.style['content'] = "image-set(url(\"example.png\") 192dpi, linear-gradient(black,
+      white) 1x)" should set the property value
+    test: image-set-parsing.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1806233
