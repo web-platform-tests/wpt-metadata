@@ -978,7 +978,8 @@ links:
       results:
         - test: has-invalidation-after-removing-non-first-element.html
           subtest: 'initial_color: div#subject.color'
-    - label: interop-2023-has
+    - url: ""
+      label: interop-2023-has
       results:
         - test: has-with-not.html
         - test: child-indexed-pseudo-classes-in-has.html
@@ -1004,3 +1005,12 @@ links:
         - test: has-in-parent-position.html
         - test: has-invalidation-for-wiping-an-element.html
         - test: has-sibling.html
+    - product: chrome
+      url: https://crbug.com/1383480
+      results:
+        - test: media-pseudo-classes-in-has.html
+          subtest: Test :playing pseudo-classes
+        - test: media-pseudo-classes-in-has.html
+          subtest: Test :seeking pseudo-class
+        - test: media-pseudo-classes-in-has.html
+          subtest: Test :muted pseudo-class
