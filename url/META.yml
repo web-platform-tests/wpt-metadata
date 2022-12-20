@@ -6,39 +6,15 @@ links:
           status: FAIL
         - test: a-element-origin.html
           status: FAIL
-        - test: a-element-xhtml.xhtml
-          status: FAIL
-        - test: a-element.html
-          status: FAIL
-    - product: chrome
-      url: https://crbug.com/943026
-      results:
-        - test: url-constructor.any.html
-          subtest: 'Parsing: <wss://host/ !"$%&''()*+,-./:;<=>@[\]^_`{|}~> against <about:blank>'
     - product: safari
       url: https://bugs.webkit.org/show_bug.cgi?id=220778
       results:
         - test: url-origin.any.html
-        - test: url-constructor.any.worker.html
-          subtest: "Parsing: <http://\x1F!\"$&'()*+,-.;=_`{|}~/> against <about:blank>"
-        - test: url-constructor.any.worker.html
-          subtest: "Parsing: <sc://\x1F!\"$&'()*+,-.;=_`{|}~/> against <about:blank>"
-        - test: url-constructor.any.html
-          subtest: "Parsing: <http://\x1F!\"$&'()*+,-.;=_`{|}~/> against <about:blank>"
-        - test: url-constructor.any.html
-          subtest: "Parsing: <sc://\x1F!\"$&'()*+,-.;=_`{|}~/> against <about:blank>"
-        - test: a-element-xhtml.xhtml
-          subtest: "Parsing: <http://\x1F!\"$&'()*+,-.;=_`{|}~/> against <about:blank>"
-        - test: a-element-xhtml.xhtml
           subtest: "Parsing: <sc://\x1F!\"$&'()*+,-.;=_`{|}~/> against <about:blank>"
         - test: a-element-origin.html
           subtest: "Parsing origin: <http://\x1F!\"$&'()*+,-.;=_`{|}~/> against <about:blank>"
         - test: a-element-origin-xhtml.xhtml
           subtest: "Parsing origin: <http://\x1F!\"$&'()*+,-.;=_`{|}~/> against <about:blank>"
-        - test: a-element.html
-          subtest: "Parsing: <http://\x1F!\"$&'()*+,-.;=_`{|}~/> against <about:blank>"
-        - test: a-element.html
-          subtest: "Parsing: <sc://\x1F!\"$&'()*+,-.;=_`{|}~/> against <about:blank>"
         - test: url-origin.any.worker.html
           subtest: "Origin parsing: <http://\x1F!\"$&'()*+,-.;=_`{|}~/> against <about:blank>"
     - product: chrome
@@ -115,13 +91,11 @@ links:
         - test: urlsearchparams-delete.any.worker.html
         - test: urlsearchparams-sort.any.worker.html
         - test: url-origin.any.worker.html
-        - test: url-setters.any.html
         - test: urlsearchparams-sort.any.html
         - test: urlsearchparams-stringifier.any.worker.html
         - test: historical.any.worker.html
         - test: urlsearchparams-delete.any.html
         - test: a-element-origin-xhtml.xhtml
-        - test: a-element-xhtml.xhtml
         - test: idlharness.any.html
         - test: urlencoded-parser.any.worker.html
         - test: urlsearchparams-append.any.html
@@ -135,7 +109,6 @@ links:
         - test: urlsearchparams-getall.any.worker.html
         - test: urlsearchparams-has.any.html
         - test: urlsearchparams-has.any.worker.html
-        - test: url-setters.any.worker.html
         - test: urlsearchparams-append.any.worker.html
         - test: url-searchparams.any.worker.html
         - test: url-setters-stripping.any.worker.html
@@ -148,10 +121,8 @@ links:
         - test: urlsearchparams-stringifier.any.html
         - test: urlencoded-parser.any.html
         - test: urlsearchparams-set.any.worker.html
-        - test: url-constructor.any.worker.html
         - test: url-searchparams.any.html
         - test: percent-encoding.window.html
-        - test: url-constructor.any.html
         - test: url-setters-stripping.any.html
         - test: urlsearchparams-get.any.html
         - test: a-element-origin.html
@@ -167,65 +138,9 @@ links:
           subtest: 'Parsing origin: <http://!"$&''()*+,-.;=_`{}~/> against <about:blank>'
         - test: a-element-origin-xhtml.xhtml
           subtest: 'Parsing origin: <wss://!"$&''()*+,-.;=_`{}~/> against <about:blank>'
-        - test: a-element-xhtml.xhtml
-          subtest: 'Parsing: <http://!"$&''()*+,-.;=_`{}~/> against <about:blank>'
-        - test: a-element-xhtml.xhtml
-          subtest: "Parsing: <sc://\x01\x02\x03\x04\x05\x06\a\b\v\f\x0E\x0F\x10\x11\x12\x13\x14\x15\x16\x17\x18\x19\x1A\e\x1C\x1D\x1E\x1F\x7F!\"$%&'()*+,-.;=_`{}~/> against <about:blank>"
-        - test: a-element-xhtml.xhtml
-          subtest: 'Parsing: <foo:// !"$%&''()*+,-.;<=>@[\]^_`{|}~@host/> against <about:blank>'
-        - test: a-element-xhtml.xhtml
-          subtest: 'Parsing: <wss:// !"$%&''()*+,-.;<=>@[]^_`{|}~@host/> against <about:blank>'
-        - test: a-element-xhtml.xhtml
-          subtest: 'Parsing: <foo://joe: !"$%&''()*+,-.:;<=>@[\]^_`{|}~@host/> against <about:blank>'
-        - test: a-element-xhtml.xhtml
-          subtest: 'Parsing: <wss://joe: !"$%&''()*+,-.:;<=>@[]^_`{|}~@host/> against <about:blank>'
-        - test: a-element-xhtml.xhtml
-          subtest: 'Parsing: <foo://!"$%&''()*+,-.;=_`{}~/> against <about:blank>'
-        - test: a-element-xhtml.xhtml
-          subtest: 'Parsing: <wss://!"$&''()*+,-.;=_`{}~/> against <about:blank>'
-        - test: a-element-xhtml.xhtml
-          subtest: 'Parsing: <foo://host/ !"$%&''()*+,-./:;<=>@[\]^_`{|}~> against <about:blank>'
-        - test: a-element-xhtml.xhtml
-          subtest: 'Parsing: <wss://host/ !"$%&''()*+,-./:;<=>@[\]^_`{|}~> against <about:blank>'
-        - test: a-element-xhtml.xhtml
-          subtest: 'Parsing: <foo://host/dir/? !"$%&''()*+,-./:;<=>?@[\]^_`{|}~> against <about:blank>'
-        - test: a-element-xhtml.xhtml
-          subtest: 'Parsing: <foo://host/dir/# !"#$%&''()*+,-./:;<=>?@[\]^_`{|}~> against <about:blank>'
-        - test: a-element.html
-          subtest: 'Parsing: <http://!"$&''()*+,-.;=_`{}~/> against <about:blank>'
-        - test: a-element.html
-          subtest: "Parsing: <sc://\x01\x02\x03\x04\x05\x06\a\b\v\f\x0E\x0F\x10\x11\x12\x13\x14\x15\x16\x17\x18\x19\x1A\e\x1C\x1D\x1E\x1F\x7F!\"$%&'()*+,-.;=_`{}~/> against <about:blank>"
-        - test: a-element.html
-          subtest: 'Parsing: <foo:// !"$%&''()*+,-.;<=>@[\]^_`{|}~@host/> against <about:blank>'
-        - test: a-element.html
-          subtest: 'Parsing: <wss:// !"$%&''()*+,-.;<=>@[]^_`{|}~@host/> against <about:blank>'
-        - test: a-element.html
-          subtest: 'Parsing: <foo://joe: !"$%&''()*+,-.:;<=>@[\]^_`{|}~@host/> against <about:blank>'
-        - test: a-element.html
-          subtest: 'Parsing: <wss://joe: !"$%&''()*+,-.:;<=>@[]^_`{|}~@host/> against <about:blank>'
-        - test: a-element.html
-          subtest: 'Parsing: <foo://!"$%&''()*+,-.;=_`{}~/> against <about:blank>'
-        - test: a-element.html
-          subtest: 'Parsing: <wss://!"$&''()*+,-.;=_`{}~/> against <about:blank>'
-        - test: a-element.html
-          subtest: 'Parsing: <foo://host/ !"$%&''()*+,-./:;<=>@[\]^_`{|}~> against <about:blank>'
-        - test: a-element.html
-          subtest: 'Parsing: <wss://host/ !"$%&''()*+,-./:;<=>@[\]^_`{|}~> against <about:blank>'
-        - test: a-element.html
-          subtest: 'Parsing: <foo://host/dir/? !"$%&''()*+,-./:;<=>?@[\]^_`{|}~> against <about:blank>'
-        - test: a-element.html
-          subtest: 'Parsing: <foo://host/dir/# !"#$%&''()*+,-./:;<=>?@[\]^_`{|}~> against <about:blank>'
     - product: chrome
       url: https://bugs.chromium.org/p/chromium/issues/detail?id=1190810
       results:
-        - test: a-element-xhtml.xhtml
-          subtest: 'Parsing: <sc://a|b/> against <about:blank>'
-        - test: a-element-xhtml.xhtml
-          subtest: 'Parsing: <http://a|b/> against <about:blank>'
-        - test: a-element.html
-          subtest: 'Parsing: <sc://a|b/> against <about:blank>'
-        - test: a-element.html
-          subtest: 'Parsing: <http://a|b/> against <about:blank>'
         - test: failure.html
           subtest: 'URL''s href: sc://a|b/ should throw'
         - test: failure.html
@@ -248,14 +163,6 @@ links:
           subtest: 'Location''s href: http://a|b/ should throw'
         - test: failure.html
           subtest: 'window.open(): http://a|b/ should throw'
-    - product: chrome
-      url: https://crbug.com/1281880
-      results:
-        - test: idlharness-shadowrealm.window.html
-        - test: url-constructor.any.worker.html
-          subtest: 'Parsing: <http://a|b/> against <about:blank>'
-        - test: url-constructor.any.worker.html
-          subtest: 'Parsing: <sc://a|b/> against <about:blank>'
     - product: chrome
       url: https://bugs.chromium.org/p/chromium/issues/detail?id=1400251
       results:
