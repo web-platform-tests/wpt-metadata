@@ -1,30 +1,58 @@
 links:
-    - product: chrome
-      url: https://bugs.chromium.org/p/chromium/issues/detail?id=366618
-      results:
-        - test: stroke-linejoin-valid.svg
-          subtest: e.style['stroke-linejoin'] = "miter-clip" should set the property value
-        - test: stroke-linejoin-valid.svg
-          subtest: e.style['stroke-linejoin'] = "arcs" should set the property value
-    - product: chrome
-      url: https://bugs.chromium.org/p/chromium/issues/detail?id=910446
-      results:
-        - test: stroke-valid.svg
-          subtest: e.style['stroke'] = "context-fill" should set the property value
-        - test: stroke-valid.svg
-          subtest: e.style['stroke'] = "context-stroke" should set the property value
-        - test: fill-valid.svg
-          subtest: e.style['fill'] = "context-fill" should set the property value
-        - test: fill-valid.svg
-          subtest: e.style['fill'] = "context-stroke" should set the property value
-    - product: chrome
-      url: https://bugs.chromium.org/p/chromium/issues/detail?id=903021
-      results:
-        - test: image-rendering-valid.svg
-          subtest: e.style['image-rendering'] = "optimizequality" should set the property value
-        - test: image-rendering-valid.svg
-          subtest: e.style['image-rendering'] = "optimizespeed" should set the property value
-        - test: image-rendering-computed.svg
-          subtest: Property image-rendering value 'optimizequality'
-        - test: image-rendering-computed.svg
-          subtest: Property image-rendering value 'optimizespeed'
+- product: chrome
+  results:
+  - subtest: e.style['stroke-linejoin'] = "miter-clip" should set the property value
+    test: stroke-linejoin-valid.svg
+  - subtest: e.style['stroke-linejoin'] = "arcs" should set the property value
+    test: stroke-linejoin-valid.svg
+  url: https://bugs.chromium.org/p/chromium/issues/detail?id=366618
+- product: chrome
+  results:
+  - subtest: e.style['stroke'] = "context-fill" should set the property value
+    test: stroke-valid.svg
+  - subtest: e.style['stroke'] = "context-stroke" should set the property value
+    test: stroke-valid.svg
+  - subtest: e.style['fill'] = "context-fill" should set the property value
+    test: fill-valid.svg
+  - subtest: e.style['fill'] = "context-stroke" should set the property value
+    test: fill-valid.svg
+  url: https://bugs.chromium.org/p/chromium/issues/detail?id=910446
+- product: chrome
+  results:
+  - subtest: e.style['image-rendering'] = "optimizequality" should set the property
+      value
+    test: image-rendering-valid.svg
+  - subtest: e.style['image-rendering'] = "optimizespeed" should set the property
+      value
+    test: image-rendering-valid.svg
+  - subtest: Property image-rendering value 'optimizequality'
+    test: image-rendering-computed.svg
+  - subtest: Property image-rendering value 'optimizespeed'
+    test: image-rendering-computed.svg
+  url: https://bugs.chromium.org/p/chromium/issues/detail?id=903021
+- product: firefox
+  results:
+  - subtest: e.style['stroke-dashoffset'] = "0" should set the property value
+    test: stroke-dashoffset-valid.svg
+  - subtest: e.style['stroke-dashoffset'] = "30" should set the property value
+    test: stroke-dashoffset-valid.svg
+  - subtest: e.style['stroke-dashoffset'] = "calc(3)" should set the property value
+    test: stroke-dashoffset-valid.svg
+  - subtest: e.style['stroke-dashoffset'] = "calc(2 + 1)" should set the property
+      value
+    test: stroke-dashoffset-valid.svg
+  - subtest: e.style['stroke-dashoffset'] = "calc(2 + (7 - 5))" should set the property
+      value
+    test: stroke-dashoffset-valid.svg
+  - subtest: e.style['stroke-width'] = "0" should set the property value
+    test: stroke-width-valid.svg
+  - subtest: e.style['stroke-width'] = "10" should set the property value
+    test: stroke-width-valid.svg
+  - subtest: e.style['stroke-width'] = "calc(3)" should set the property value
+    test: stroke-width-valid.svg
+  - subtest: e.style['stroke-width'] = "calc(2 + 1)" should set the property value
+    test: stroke-width-valid.svg
+  - subtest: e.style['stroke-width'] = "calc(2 + (7 - 5))" should set the property
+      value
+    test: stroke-width-valid.svg
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1806571
