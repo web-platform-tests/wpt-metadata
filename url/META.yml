@@ -81,12 +81,10 @@ links:
       results:
         - test: failure.html
           status: CRASH
-    - url: ""
-      label: interop-2022-webcompat
+    - label: interop-2022-webcompat
       results:
         - test: toascii.window.html
-    - url: ""
-      label: interop-2023-url
+    - label: interop-2023-url
       results:
         - test: urlsearchparams-delete.any.worker.html
         - test: urlsearchparams-sort.any.worker.html
@@ -127,6 +125,13 @@ links:
         - test: urlsearchparams-get.any.html
         - test: a-element-origin.html
         - test: failure.html
+        - test: url-setters.any.html?exclude=(file|javascript|mailto)
+        - test: url-setters.any.worker.html?exclude=(file|javascript|mailto)
+        - test: a-element-xhtml.xhtml?exclude=(file|javascript|mailto)
+        - test: a-element.html?exclude=(file|javascript|mailto)
+        - test: url-constructor.any.html?exclude=(file|javascript|mailto)
+        - test: url-constructor.any.worker.html?exclude=(file|javascript|mailto)
+        - test: url-setters-a-area.window.html?exclude=(file|javascript|mailto)
     - product: chrome
       url: https://bugs.chromium.org/p/chromium/issues/detail?id=1398117
       results:
