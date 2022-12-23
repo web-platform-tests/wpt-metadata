@@ -1,9 +1,16 @@
 links:
-    - product: chrome
-      url: https://bugs.chromium.org/p/chromium/issues/detail?id=1212299
-      results:
-        - test: inheritance.html
-    - product: chrome
-      url: https://bugs.chromium.org/p/chromium/issues/detail?id=1219062
-      results:
-        - test: inheritance.html
+- product: chrome
+  results:
+  - test: inheritance.html
+  url: https://bugs.chromium.org/p/chromium/issues/detail?id=1212299
+- product: chrome
+  results:
+  - test: inheritance.html
+  url: https://bugs.chromium.org/p/chromium/issues/detail?id=1219062
+- product: firefox
+  results:
+  - subtest: Property hanging-punctuation has initial value none
+    test: inheritance.html
+  - subtest: Property hanging-punctuation inherits
+    test: inheritance.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1807246
