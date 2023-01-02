@@ -781,3 +781,16 @@ links:
       url: https://crbug.com/1400979
       results:
         - test: nested-query-containers.html
+    - product: chrome
+      url: https://crbug.com/1404088
+      results:
+        - test: container-units-ineligible-container.html
+          subtest: 'display: table'
+        - test: container-units-ineligible-container.html
+          subtest: 'display: table-cell'
+        - test: container-units-ineligible-container.html
+          subtest: 'display: inline'
+        - test: container-units-ineligible-container.html
+          subtest: 'display: contents'
+        - test: container-units-ineligible-container.html
+          subtest: 'display: none'
