@@ -868,3 +868,10 @@ links:
           subtest: '@property rules in shadow trees should have no effect'
         - test: at-property.html
           subtest: Non-universal registration are invalid without an initial value
+    - product: chrome
+      url: https://crbug.com/981537
+      results:
+        - test: register-property-syntax-parsing.html
+          subtest: syntax:'<image>', initialValue:'url(a)' is valid
+        - test: register-property-syntax-parsing.html
+          subtest: syntax:'<image>', initialValue:'linear-gradient(yellow, blue)' is valid
