@@ -861,3 +861,20 @@ links:
         - test: at-property.html
         - test: property-cascade.html
         - test: at-property-viewport-units.html
+    - product: chrome
+      url: https://crbug.com/1220144
+      results:
+        - test: at-property-cssom.html
+          subtest: Rule for --valid returns expected value for CSSPropertyRule.initialValue
+        - test: at-property-cssom.html
+          subtest: Rule for --valid-reverse returns expected value for CSSPropertyRule.initialValue
+        - test: at-property-cssom.html
+          subtest: Rule for --valid-whitespace returns expected value for CSSPropertyRule.initialValue
+        - test: at-property-cssom.html
+          subtest: Rule for --vALId returns expected value for CSSPropertyRule.initialValue
+        - test: at-property-cssom.html
+          subtest: Rule for --no-syntax returns expected value for CSSPropertyRule.initialValue
+        - test: at-property-cssom.html
+          subtest: Rule for --no-inherits returns expected value for CSSPropertyRule.initialValue
+        - test: at-property-cssom.html
+          subtest: Rule for --initial-value-only returns expected value for CSSPropertyRule.initialValue
