@@ -892,3 +892,13 @@ links:
           subtest: syntax:'<transform-list>', initialValue:'scale(2)' is valid
         - test: register-property-syntax-parsing.html
           subtest: syntax:'<transform-list>', initialValue:'translateX(2px) rotate(20deg)' is valid
+        - test: registered-property-initial.html
+          subtest: Initial value for <transform-function> correctly computed [rotate(42deg)]
+        - test: registered-property-initial.html
+          subtest: Initial value for <transform-list> correctly computed [scale(calc(2 + 2))]
+        - test: registered-property-initial.html
+          subtest: Initial value for <transform-list> correctly computed [scale(calc(2 + 1)) translateX(calc(3px + 1px))]
+        - test: registered-property-initial.html
+          subtest: Initial non-inherited value can be substituted [scale(calc(2 + 2)), --x]
+        - test: registered-property-initial.html
+          subtest: Initial non-inherited value can be substituted [scale(calc(2 + 2)) translateX(calc(3px + 1px)), --x]
