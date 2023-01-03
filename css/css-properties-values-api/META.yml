@@ -892,3 +892,11 @@ links:
           subtest: syntax:'<transform-list>', initialValue:'scale(2)' is valid
         - test: register-property-syntax-parsing.html
           subtest: syntax:'<transform-list>', initialValue:'translateX(2px) rotate(20deg)' is valid
+        - test: registered-property-computation.html
+          subtest: <transform-function> values are computed correctly [translateX(2px)]
+        - test: registered-property-computation.html
+          subtest: <transform-function> values are computed correctly [translateX(10em)]
+        - test: registered-property-computation.html
+          subtest: <transform-function> values are computed correctly [translateX(calc(11em + 10%))]
+        - test: registered-property-computation.html
+          subtest: <transform-function>+ values are computed correctly [translateX(10%) scale(2)]
