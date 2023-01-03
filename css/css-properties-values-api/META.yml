@@ -875,3 +875,20 @@ links:
           subtest: syntax:'<image>', initialValue:'url(a)' is valid
         - test: register-property-syntax-parsing.html
           subtest: syntax:'<image>', initialValue:'linear-gradient(yellow, blue)' is valid
+    - product: chrome
+      url: https://crbug.com/911156
+      results:
+        - test: register-property-syntax-parsing.html
+          subtest: syntax:'<time> | <resolution> | <transform-list> | <custom-ident>', initialValue:'red' is valid
+        - test: register-property-syntax-parsing.html
+          subtest: syntax:'<transform-function>', initialValue:'translateX(2px)' is valid
+        - test: register-property-syntax-parsing.html
+          subtest: syntax:'<transform-function>|<integer>', initialValue:'5' is valid
+        - test: register-property-syntax-parsing.html
+          subtest: syntax:'<transform-function>|<integer>', initialValue:'scale(2)' is valid
+        - test: register-property-syntax-parsing.html
+          subtest: syntax:'<transform-function>+', initialValue:'translateX(2px) rotate(42deg)' is valid
+        - test: register-property-syntax-parsing.html
+          subtest: syntax:'<transform-list>', initialValue:'scale(2)' is valid
+        - test: register-property-syntax-parsing.html
+          subtest: syntax:'<transform-list>', initialValue:'translateX(2px) rotate(20deg)' is valid
