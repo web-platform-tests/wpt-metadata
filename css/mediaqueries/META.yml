@@ -991,3 +991,13 @@ links:
           subtest: 'matchMedia(''(aspect-ratio: 1/1)'') should not receive a change event until update the rendering step of HTML5 event loop'
         - test: media-query-matches-in-iframe.html
           subtest: 'matchMedia(''(max-aspect-ratio: 4/3)'') should not receive a change event until update the rendering step of HTML5 event loop'
+        - test: media-query-matches-in-iframe.html
+          subtest: 'matchMedia(''(max-width: 150px)'') should receive a change event after resize event on the window but before a requestAnimationFrame callback is called'
+        - test: media-query-matches-in-iframe.html
+          subtest: 'matchMedia(''(width: 100px)'') should receive a change event after resize event on the window but before a requestAnimationFrame callback is called'
+        - test: media-query-matches-in-iframe.html
+          subtest: 'matchMedia(''(orientation: portrait)'') should receive a change event after resize event on the window but before a requestAnimationFrame callback is called'
+        - test: media-query-matches-in-iframe.html
+          subtest: 'matchMedia(''(aspect-ratio: 1/1)'') should receive a change event after resize event on the window but before a requestAnimationFrame callback is called'
+        - test: media-query-matches-in-iframe.html
+          subtest: 'matchMedia(''(max-aspect-ratio: 4/3)'') should receive a change event after resize event on the window but before a requestAnimationFrame callback is called'
