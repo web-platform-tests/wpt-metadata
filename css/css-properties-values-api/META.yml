@@ -900,3 +900,8 @@ links:
           subtest: <transform-function> values are computed correctly [translateX(calc(11em + 10%))]
         - test: registered-property-computation.html
           subtest: <transform-function>+ values are computed correctly [translateX(10%) scale(2)]
+    - product: chrome
+      url: https://crbug.com/983613
+      results:
+        - test: registered-property-computation.html
+          subtest: <resolution> values are computed correctly [calc(1dppx + 96dpi)]
