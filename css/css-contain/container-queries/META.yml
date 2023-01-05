@@ -805,3 +805,8 @@ links:
           subtest: 'display: contents'
         - test: container-units-ineligible-container.html
           subtest: 'display: none'
+    - product: chrome
+      url: https://crbug.com/1404424
+      results:
+        - test: pseudo-elements-008.html
+          subtest: Originating element container for ::backdrop
