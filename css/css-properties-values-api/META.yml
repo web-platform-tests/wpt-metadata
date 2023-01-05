@@ -893,6 +893,8 @@ links:
           subtest: syntax:'<image>', initialValue:'url(a)' is valid
         - test: register-property-syntax-parsing.html
           subtest: syntax:'<image>', initialValue:'linear-gradient(yellow, blue)' is valid
+        - test: register-property-syntax-parsing.html
+          subtest: syntax:'<color> | <image> | <url> | <integer> | <angle>', initialValue:'red' is valid
     - product: chrome
       url: https://crbug.com/911156
       results:
