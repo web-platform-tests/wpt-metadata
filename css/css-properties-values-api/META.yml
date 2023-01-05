@@ -920,6 +920,16 @@ links:
           subtest: <transform-function> values are computed correctly [translateX(calc(11em + 10%))]
         - test: registered-property-computation.html
           subtest: <transform-function>+ values are computed correctly [translateX(10%) scale(2)]
+        - test: registered-property-initial.html
+          subtest: Initial value for <transform-function> correctly computed [rotate(42deg)]
+        - test: registered-property-initial.html
+          subtest: Initial value for <transform-list> correctly computed [scale(calc(2 + 2))]
+        - test: registered-property-initial.html
+          subtest: Initial value for <transform-list> correctly computed [scale(calc(2 + 1)) translateX(calc(3px + 1px))]
+        - test: registered-property-initial.html
+          subtest: Initial non-inherited value can be substituted [scale(calc(2 + 2)), --x]
+        - test: registered-property-initial.html
+          subtest: Initial non-inherited value can be substituted [scale(calc(2 + 2)) translateX(calc(3px + 1px)), --x]
     - product: chrome
       url: https://crbug.com/983613
       results:
