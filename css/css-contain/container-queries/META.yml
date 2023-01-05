@@ -777,7 +777,18 @@ links:
         - test: viewport-units-dynamic.html
         - test: container-type-computed.html
         - test: display-in-container.html
+        - test: pseudo-elements-006.html
+        - test: pseudo-elements-007.html
+        - test: pseudo-elements-008.html
+        - test: style-not-sharing-float.html
+        - test: container-units-ineligible-container.html
+        - test: nested-query-containers.html
     - product: chrome
       url: https://crbug.com/1400979
       results:
         - test: nested-query-containers.html
+    - product: chrome
+      url: https://crbug.com/1381037
+      results:
+        - test: font-relative-units-dynamic.html
+          subtest: rex units respond to changes
