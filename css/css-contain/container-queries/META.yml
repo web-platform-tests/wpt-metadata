@@ -777,6 +777,12 @@ links:
         - test: viewport-units-dynamic.html
         - test: container-type-computed.html
         - test: display-in-container.html
+        - test: pseudo-elements-006.html
+        - test: pseudo-elements-007.html
+        - test: pseudo-elements-008.html
+        - test: style-not-sharing-float.html
+        - test: container-units-ineligible-container.html
+        - test: nested-query-containers.html
     - product: chrome
       url: https://crbug.com/1400979
       results:
@@ -784,5 +790,25 @@ links:
     - product: chrome
       url: https://crbug.com/1381037
       results:
+        - test: font-relative-units-dynamic.html
+          subtest: rex units respond to changes
         - test: font-relative-units.html
-          subtest: rex relative inline-size229.484px0px
+          subtest: rex relative inline-size229.484px0px          
+    - product: chrome
+      url: https://crbug.com/1404088
+      results:
+        - test: container-units-ineligible-container.html
+          subtest: 'display: table'
+        - test: container-units-ineligible-container.html
+          subtest: 'display: table-cell'
+        - test: container-units-ineligible-container.html
+          subtest: 'display: inline'
+        - test: container-units-ineligible-container.html
+          subtest: 'display: contents'
+        - test: container-units-ineligible-container.html
+          subtest: 'display: none'
+    - product: chrome
+      url: https://crbug.com/1404424
+      results:
+        - test: pseudo-elements-008.html
+          subtest: Originating element container for ::backdrop
