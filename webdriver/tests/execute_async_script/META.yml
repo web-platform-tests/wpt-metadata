@@ -11,3 +11,14 @@ links:
           subtest: test_element_reference[frame]
         - test: node.py
           subtest: test_element_reference[window]
+        - test: arguments.py
+          subtest: test_element_reference[frame]
+        - test: arguments.py
+          subtest: test_element_reference[window]
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1808709
+      results:
+        - test: objects.py
+          subtest: test_object_to_json
+        - test: objects.py
+          subtest: test_object_to_json_exception
