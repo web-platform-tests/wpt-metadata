@@ -17,3 +17,8 @@ links:
           subtest: test_element_reference[frame]
         - test: node.py
           subtest: test_element_reference[window]
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1744928
+      results:
+        - test: arguments.py
+          subtest: test_element_reference[shadow-root]
