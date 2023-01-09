@@ -1325,3 +1325,14 @@ links:
   - subtest: Exceptions are thrown even when show/hide are animated
     test: popover-attribute-basic.tentative.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1808641
+- product: firefox
+  results:
+  - subtest: Beforetoggle event (listener) get properly dispatched for popovers
+    test: popover-events.tentative.html
+  - subtest: Beforetoggle event (attribute) get properly dispatched for popovers
+    test: popover-events.tentative.html
+  - subtest: Beforetoggle event is cancelable for the "opening" transition
+    test: popover-events.tentative.html
+  - subtest: Beforetoggle event is not fired for element removal
+    test: popover-events.tentative.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1809348
