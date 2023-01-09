@@ -13,3 +13,8 @@ links:
           subtest: test_window_open
         - test: json_serialize_windowproxy.py
           subtest: test_frame
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1489490
+      results:
+        - test: node.py
+          subtest: test_element_reference[shadow-root]
