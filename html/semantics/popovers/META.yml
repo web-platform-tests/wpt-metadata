@@ -1327,6 +1327,272 @@ links:
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1808641
 - product: firefox
   results:
+  - subtest: 'BeforeToggleEvent interface: existence and properties of interface object'
+    test: idlharness.tentative.html
+  - subtest: BeforeToggleEvent interface object length
+    test: idlharness.tentative.html
+  - subtest: BeforeToggleEvent interface object name
+    test: idlharness.tentative.html
+  - subtest: 'BeforeToggleEvent interface: existence and properties of interface prototype
+      object'
+    test: idlharness.tentative.html
+  - subtest: 'BeforeToggleEvent interface: existence and properties of interface prototype
+      object''s "constructor" property'
+    test: idlharness.tentative.html
+  - subtest: 'BeforeToggleEvent interface: existence and properties of interface prototype
+      object''s @@unscopables property'
+    test: idlharness.tentative.html
+  - subtest: 'BeforeToggleEvent interface: attribute currentState'
+    test: idlharness.tentative.html
+  - subtest: 'BeforeToggleEvent interface: attribute newState'
+    test: idlharness.tentative.html
+  - subtest: BeforeToggleEvent must be primary interface of new BeforeToggleEvent("beforetoggle")
+    test: idlharness.tentative.html
+  - subtest: Stringification of new BeforeToggleEvent("beforetoggle")
+    test: idlharness.tentative.html
+  - subtest: 'BeforeToggleEvent interface: new BeforeToggleEvent("beforetoggle") must
+      inherit property "currentState" with the proper type'
+    test: idlharness.tentative.html
+  - subtest: 'BeforeToggleEvent interface: new BeforeToggleEvent("beforetoggle") must
+      inherit property "newState" with the proper type'
+    test: idlharness.tentative.html
+  - subtest: 'BeforeToggleEvent must be primary interface of new BeforeToggleEvent("beforetoggle",
+      {currentState: "open"})'
+    test: idlharness.tentative.html
+  - subtest: 'Stringification of new BeforeToggleEvent("beforetoggle", {currentState:
+      "open"})'
+    test: idlharness.tentative.html
+  - subtest: 'BeforeToggleEvent interface: new BeforeToggleEvent("beforetoggle", {currentState:
+      "open"}) must inherit property "currentState" with the proper type'
+    test: idlharness.tentative.html
+  - subtest: 'BeforeToggleEvent interface: new BeforeToggleEvent("beforetoggle", {currentState:
+      "open"}) must inherit property "newState" with the proper type'
+    test: idlharness.tentative.html
+  - subtest: 'BeforeToggleEvent must be primary interface of new BeforeToggleEvent("beforetoggle",
+      {currentState: "open",newState: "open"})'
+    test: idlharness.tentative.html
+  - subtest: 'Stringification of new BeforeToggleEvent("beforetoggle", {currentState:
+      "open",newState: "open"})'
+    test: idlharness.tentative.html
+  - subtest: 'BeforeToggleEvent interface: new BeforeToggleEvent("beforetoggle", {currentState:
+      "open",newState: "open"}) must inherit property "currentState" with the proper
+      type'
+    test: idlharness.tentative.html
+  - subtest: 'BeforeToggleEvent interface: new BeforeToggleEvent("beforetoggle", {currentState:
+      "open",newState: "open"}) must inherit property "newState" with the proper type'
+    test: idlharness.tentative.html
+  - subtest: 'HTMLElement interface: operation togglePopover(optional boolean)'
+    test: idlharness.tentative.html
+  - subtest: 'HTMLElement interface: operation showPopover()'
+    test: idlharness.tentative.html
+  - subtest: 'HTMLElement interface: operation hidePopover()'
+    test: idlharness.tentative.html
+  - subtest: 'HTMLElement interface: attribute popover'
+    test: idlharness.tentative.html
+  - subtest: 'HTMLElement interface: document.getElementById("p1") must inherit property
+      "togglePopover(optional boolean)" with the proper type'
+    test: idlharness.tentative.html
+  - subtest: 'HTMLElement interface: calling togglePopover(optional boolean) on document.getElementById("p1")
+      with too few arguments must throw TypeError'
+    test: idlharness.tentative.html
+  - subtest: 'HTMLElement interface: document.getElementById("p1") must inherit property
+      "showPopover()" with the proper type'
+    test: idlharness.tentative.html
+  - subtest: 'HTMLElement interface: document.getElementById("p1") must inherit property
+      "hidePopover()" with the proper type'
+    test: idlharness.tentative.html
+  - subtest: 'HTMLElement interface: document.getElementById("p1") must inherit property
+      "popover" with the proper type'
+    test: idlharness.tentative.html
+  - subtest: 'HTMLElement interface: document.getElementById("p2") must inherit property
+      "togglePopover(optional boolean)" with the proper type'
+    test: idlharness.tentative.html
+  - subtest: 'HTMLElement interface: calling togglePopover(optional boolean) on document.getElementById("p2")
+      with too few arguments must throw TypeError'
+    test: idlharness.tentative.html
+  - subtest: 'HTMLElement interface: document.getElementById("p2") must inherit property
+      "showPopover()" with the proper type'
+    test: idlharness.tentative.html
+  - subtest: 'HTMLElement interface: document.getElementById("p2") must inherit property
+      "hidePopover()" with the proper type'
+    test: idlharness.tentative.html
+  - subtest: 'HTMLElement interface: document.getElementById("p2") must inherit property
+      "popover" with the proper type'
+    test: idlharness.tentative.html
+  - subtest: 'HTMLElement interface: document.getElementById("p3") must inherit property
+      "togglePopover(optional boolean)" with the proper type'
+    test: idlharness.tentative.html
+  - subtest: 'HTMLElement interface: calling togglePopover(optional boolean) on document.getElementById("p3")
+      with too few arguments must throw TypeError'
+    test: idlharness.tentative.html
+  - subtest: 'HTMLElement interface: document.getElementById("p3") must inherit property
+      "showPopover()" with the proper type'
+    test: idlharness.tentative.html
+  - subtest: 'HTMLElement interface: document.getElementById("p3") must inherit property
+      "hidePopover()" with the proper type'
+    test: idlharness.tentative.html
+  - subtest: 'HTMLElement interface: document.getElementById("p3") must inherit property
+      "popover" with the proper type'
+    test: idlharness.tentative.html
+  - subtest: 'HTMLInputElement interface: attribute popoverToggleTarget'
+    test: idlharness.tentative.html
+  - subtest: 'HTMLInputElement interface: attribute popoverHideTarget'
+    test: idlharness.tentative.html
+  - subtest: 'HTMLInputElement interface: attribute popoverShowTarget'
+    test: idlharness.tentative.html
+  - subtest: 'HTMLInputElement interface: document.getElementById("i1") must inherit
+      property "popoverToggleTarget" with the proper type'
+    test: idlharness.tentative.html
+  - subtest: 'HTMLInputElement interface: document.getElementById("i1") must inherit
+      property "popoverHideTarget" with the proper type'
+    test: idlharness.tentative.html
+  - subtest: 'HTMLInputElement interface: document.getElementById("i1") must inherit
+      property "popoverShowTarget" with the proper type'
+    test: idlharness.tentative.html
+  - subtest: 'HTMLElement interface: document.getElementById("i1") must inherit property
+      "togglePopover(optional boolean)" with the proper type'
+    test: idlharness.tentative.html
+  - subtest: 'HTMLElement interface: calling togglePopover(optional boolean) on document.getElementById("i1")
+      with too few arguments must throw TypeError'
+    test: idlharness.tentative.html
+  - subtest: 'HTMLElement interface: document.getElementById("i1") must inherit property
+      "showPopover()" with the proper type'
+    test: idlharness.tentative.html
+  - subtest: 'HTMLElement interface: document.getElementById("i1") must inherit property
+      "hidePopover()" with the proper type'
+    test: idlharness.tentative.html
+  - subtest: 'HTMLElement interface: document.getElementById("i1") must inherit property
+      "popover" with the proper type'
+    test: idlharness.tentative.html
+  - subtest: 'HTMLInputElement interface: document.getElementById("i2") must inherit
+      property "popoverToggleTarget" with the proper type'
+    test: idlharness.tentative.html
+  - subtest: 'HTMLInputElement interface: document.getElementById("i2") must inherit
+      property "popoverHideTarget" with the proper type'
+    test: idlharness.tentative.html
+  - subtest: 'HTMLInputElement interface: document.getElementById("i2") must inherit
+      property "popoverShowTarget" with the proper type'
+    test: idlharness.tentative.html
+  - subtest: 'HTMLElement interface: document.getElementById("i2") must inherit property
+      "togglePopover(optional boolean)" with the proper type'
+    test: idlharness.tentative.html
+  - subtest: 'HTMLElement interface: calling togglePopover(optional boolean) on document.getElementById("i2")
+      with too few arguments must throw TypeError'
+    test: idlharness.tentative.html
+  - subtest: 'HTMLElement interface: document.getElementById("i2") must inherit property
+      "showPopover()" with the proper type'
+    test: idlharness.tentative.html
+  - subtest: 'HTMLElement interface: document.getElementById("i2") must inherit property
+      "hidePopover()" with the proper type'
+    test: idlharness.tentative.html
+  - subtest: 'HTMLElement interface: document.getElementById("i2") must inherit property
+      "popover" with the proper type'
+    test: idlharness.tentative.html
+  - subtest: 'HTMLInputElement interface: document.getElementById("i3") must inherit
+      property "popoverToggleTarget" with the proper type'
+    test: idlharness.tentative.html
+  - subtest: 'HTMLInputElement interface: document.getElementById("i3") must inherit
+      property "popoverHideTarget" with the proper type'
+    test: idlharness.tentative.html
+  - subtest: 'HTMLInputElement interface: document.getElementById("i3") must inherit
+      property "popoverShowTarget" with the proper type'
+    test: idlharness.tentative.html
+  - subtest: 'HTMLElement interface: document.getElementById("i3") must inherit property
+      "togglePopover(optional boolean)" with the proper type'
+    test: idlharness.tentative.html
+  - subtest: 'HTMLElement interface: calling togglePopover(optional boolean) on document.getElementById("i3")
+      with too few arguments must throw TypeError'
+    test: idlharness.tentative.html
+  - subtest: 'HTMLElement interface: document.getElementById("i3") must inherit property
+      "showPopover()" with the proper type'
+    test: idlharness.tentative.html
+  - subtest: 'HTMLElement interface: document.getElementById("i3") must inherit property
+      "hidePopover()" with the proper type'
+    test: idlharness.tentative.html
+  - subtest: 'HTMLElement interface: document.getElementById("i3") must inherit property
+      "popover" with the proper type'
+    test: idlharness.tentative.html
+  - subtest: 'HTMLButtonElement interface: attribute popoverToggleTarget'
+    test: idlharness.tentative.html
+  - subtest: 'HTMLButtonElement interface: attribute popoverHideTarget'
+    test: idlharness.tentative.html
+  - subtest: 'HTMLButtonElement interface: attribute popoverShowTarget'
+    test: idlharness.tentative.html
+  - subtest: 'HTMLButtonElement interface: document.getElementById("b1") must inherit
+      property "popoverToggleTarget" with the proper type'
+    test: idlharness.tentative.html
+  - subtest: 'HTMLButtonElement interface: document.getElementById("b1") must inherit
+      property "popoverHideTarget" with the proper type'
+    test: idlharness.tentative.html
+  - subtest: 'HTMLButtonElement interface: document.getElementById("b1") must inherit
+      property "popoverShowTarget" with the proper type'
+    test: idlharness.tentative.html
+  - subtest: 'HTMLElement interface: document.getElementById("b1") must inherit property
+      "togglePopover(optional boolean)" with the proper type'
+    test: idlharness.tentative.html
+  - subtest: 'HTMLElement interface: calling togglePopover(optional boolean) on document.getElementById("b1")
+      with too few arguments must throw TypeError'
+    test: idlharness.tentative.html
+  - subtest: 'HTMLElement interface: document.getElementById("b1") must inherit property
+      "showPopover()" with the proper type'
+    test: idlharness.tentative.html
+  - subtest: 'HTMLElement interface: document.getElementById("b1") must inherit property
+      "hidePopover()" with the proper type'
+    test: idlharness.tentative.html
+  - subtest: 'HTMLElement interface: document.getElementById("b1") must inherit property
+      "popover" with the proper type'
+    test: idlharness.tentative.html
+  - subtest: 'HTMLButtonElement interface: document.getElementById("b2") must inherit
+      property "popoverToggleTarget" with the proper type'
+    test: idlharness.tentative.html
+  - subtest: 'HTMLButtonElement interface: document.getElementById("b2") must inherit
+      property "popoverHideTarget" with the proper type'
+    test: idlharness.tentative.html
+  - subtest: 'HTMLButtonElement interface: document.getElementById("b2") must inherit
+      property "popoverShowTarget" with the proper type'
+    test: idlharness.tentative.html
+  - subtest: 'HTMLElement interface: document.getElementById("b2") must inherit property
+      "togglePopover(optional boolean)" with the proper type'
+    test: idlharness.tentative.html
+  - subtest: 'HTMLElement interface: calling togglePopover(optional boolean) on document.getElementById("b2")
+      with too few arguments must throw TypeError'
+    test: idlharness.tentative.html
+  - subtest: 'HTMLElement interface: document.getElementById("b2") must inherit property
+      "showPopover()" with the proper type'
+    test: idlharness.tentative.html
+  - subtest: 'HTMLElement interface: document.getElementById("b2") must inherit property
+      "hidePopover()" with the proper type'
+    test: idlharness.tentative.html
+  - subtest: 'HTMLElement interface: document.getElementById("b2") must inherit property
+      "popover" with the proper type'
+    test: idlharness.tentative.html
+  - subtest: 'HTMLButtonElement interface: document.getElementById("b3") must inherit
+      property "popoverToggleTarget" with the proper type'
+    test: idlharness.tentative.html
+  - subtest: 'HTMLButtonElement interface: document.getElementById("b3") must inherit
+      property "popoverHideTarget" with the proper type'
+    test: idlharness.tentative.html
+  - subtest: 'HTMLButtonElement interface: document.getElementById("b3") must inherit
+      property "popoverShowTarget" with the proper type'
+    test: idlharness.tentative.html
+  - subtest: 'HTMLElement interface: document.getElementById("b3") must inherit property
+      "togglePopover(optional boolean)" with the proper type'
+    test: idlharness.tentative.html
+  - subtest: 'HTMLElement interface: calling togglePopover(optional boolean) on document.getElementById("b3")
+      with too few arguments must throw TypeError'
+    test: idlharness.tentative.html
+  - subtest: 'HTMLElement interface: document.getElementById("b3") must inherit property
+      "showPopover()" with the proper type'
+    test: idlharness.tentative.html
+  - subtest: 'HTMLElement interface: document.getElementById("b3") must inherit property
+      "hidePopover()" with the proper type'
+    test: idlharness.tentative.html
+  - subtest: 'HTMLElement interface: document.getElementById("b3") must inherit property
+      "popover" with the proper type'
+    test: idlharness.tentative.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1809338
+- product: firefox
+  results:
   - subtest: Beforetoggle event (listener) get properly dispatched for popovers
     test: popover-events.tentative.html
   - subtest: Beforetoggle event (attribute) get properly dispatched for popovers
