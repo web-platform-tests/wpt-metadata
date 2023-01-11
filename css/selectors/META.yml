@@ -419,8 +419,8 @@ links:
         - test: nth-child-of-universal-selector.html
         - test: nth-child-of-has.html
         - test: nth-child-of-attribute.html
-    - url: ""
-      label: interop-2023-has
+        - test: nth-last-child-of-no-space-after-of.html
+    - label: interop-2023-has
       results:
         - test: has-matches-to-uninserted-elements.html
         - test: has-relative-argument.html
@@ -428,9 +428,30 @@ links:
         - test: has-visited.html
         - test: has-argument-with-explicit-scope.html
         - test: has-basic.html
-    - url: ""
-      label: interop-2023-pseudos
+        - test: dir-pseudo-on-bdi-element.html
+        - test: dir-pseudo-on-input-element.html
+    - label: interop-2023-pseudos
       results:
+        - test: dir-selector-auto-direction-change-001.html
+        - test: dir-selector-change-003.html
+        - test: dir-selector-change-002.html
+        - test: dir-style-03b.html
+        - test: dir-style-01a.html
+        - test: dir-selector-querySelector.html
+        - test: dir-selector-ltr-001.html
+        - test: dir-selector-change-004.html
+        - test: dir-style-02a.html
+        - test: dir-style-02b.html
+        - test: dir-style-01b.html
+        - test: dir-selector-white-space-001.html
+        - test: dir-selector-ltr-003.html
+        - test: dir-selector-ltr-002.html
+        - test: dir-style-04.html
+        - test: dir-style-03a.html
+        - test: dir-selector-rtl-001.html
+        - test: dir-selector-change-001.html
+        - test: dir-selector-auto.html
+        - test: modal-pseudo-class.html
         - test: nth-last-child-of-style-sharing-1.html
         - test: nth-child-of-tagname.html
         - test: nth-child-of-complex-selector.html
@@ -461,4 +482,16 @@ links:
         - test: nth-child-of-has.html
         - test: nth-child-of-universal-selector.html
         - test: nth-of-invalid.html
+        - test: nth-child-of-no-space-after-of.html
+        - test: nth-of-type-namespace.html
+        - test: nth-child-of-complex-selector-many-children.html
         - test: user-valid.html
+    - product: chrome
+      url: https://bugs.chromium.org/p/chromium/issues/detail?id=304163
+      results:
+        - test: nth-child-of-no-space-after-of.html
+        - test: nth-child-of-complex-selector-many-children.html
+        - test: nth-last-child-of-no-space-after-of.html
+    - label: interop2023-pseudos
+      results:
+        - test: nth-last-child-of-no-space-after-of.html

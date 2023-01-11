@@ -14,3 +14,14 @@ links:
   - subtest: '''load'' and ''error'' events for SVG <use>, external reference, existing'
     test: use-load-error-events.tentative.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1804956
+- product: firefox
+  results:
+  - subtest: '''load'' and ''error'' events for SVG <use>, external reference, non-existing'
+    test: use-load-error-events.tentative.html
+  - subtest: '''load'' and ''error'' events for SVG <use>, external reference, existing,
+      parse error'
+    test: use-load-error-events.tentative.html
+  - subtest: '''load'' and ''error'' events for SVG <use>, external reference, existing,
+      changed to local reference while loading'
+    test: use-load-error-events.tentative.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1809606
