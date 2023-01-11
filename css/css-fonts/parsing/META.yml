@@ -197,3 +197,16 @@ links:
           subtest: 'Check that src: local("revert") is valid'
         - test: font-face-src-local.html
           subtest: 'Check that src: local("unset") is valid'
+    - product: safari
+      url: https://bugs.webkit.org/show_bug.cgi?id=250332
+      results:
+        - test: font-face-src-list.html
+          subtest: 'Check that src: local(), url(foo.ttf) is valid'
+        - test: font-face-src-list.html
+          subtest: 'Check that src: local(12px monospace), url(foo.ttf) is valid'
+        - test: font-face-src-list.html
+          subtest: 'Check that src: url(foo.ttf) format(bad), url(foo.ttf) is valid'
+        - test: font-face-src-list.html
+          subtest: 'Check that src: url(foo.ttf), url(something.ttf) format(broken) is valid'
+        - test: font-face-src-list.html
+          subtest: 'Check that src: /* an empty component */, url(foo.ttf) is valid'
