@@ -170,3 +170,30 @@ links:
         - test: font-palette-valid.html
         - test: font-palette-values-invalid.html
         - test: font-palette-values-valid.html
+    - product: safari
+      url: https://bugs.webkit.org/show_bug.cgi?id=250321
+      results:
+        - test: font-face-src-local.html
+          subtest: 'Check that src: local(inherit) is invalid'
+        - test: font-face-src-local.html
+          subtest: 'Check that src: local(default) is invalid'
+        - test: font-face-src-local.html
+          subtest: 'Check that src: local(unset) is invalid'
+        - test: font-face-src-local.html
+          subtest: 'Check that src: local(revert) is invalid'
+        - test: font-face-src-local.html
+          subtest: 'Check that src: local(default A) is valid'
+        - test: font-face-src-local.html
+          subtest: 'Check that src: local(inherit A) is valid'
+        - test: font-face-src-local.html
+          subtest: 'Check that src: local(revert A) is valid'
+        - test: font-face-src-local.html
+          subtest: 'Check that src: local(unset A) is valid'
+        - test: font-face-src-local.html
+          subtest: 'Check that src: local("default") is valid'
+        - test: font-face-src-local.html
+          subtest: 'Check that src: local("inherit") is valid'
+        - test: font-face-src-local.html
+          subtest: 'Check that src: local("revert") is valid'
+        - test: font-face-src-local.html
+          subtest: 'Check that src: local("unset") is valid'
