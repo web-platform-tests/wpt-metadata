@@ -117,7 +117,8 @@ links:
       results:
         - test: font-synthesis-computed.html
         - test: font-synthesis-valid.html
-    - label: interop-2022-text
+    - url: ""
+      label: interop-2022-text
       results:
         - test: font-variant-caps-computed.html
         - test: font-variant-caps-invalid.html
@@ -159,7 +160,8 @@ links:
           subtest: e.style['font-variant'] = "common-ligatures discretionary-ligatures historical-ligatures contextual small-caps stylistic(flowing) lining-nums proportional-nums diagonal-fractions ordinal slashed-zero jis78 full-width ruby sub" should set the property value
         - test: font-variant-valid.html
           subtest: e.style['font-variant'] = "super proportional-width jis83 stacked-fractions tabular-nums oldstyle-nums historical-forms all-small-caps no-contextual no-historical-ligatures no-discretionary-ligatures no-common-ligatures" should set the property value
-    - label: interop-2023-fonts
+    - url: ""
+      label: interop-2023-fonts
       results:
         - test: font-face-src-format.html
         - test: font-face-src-list.html
@@ -210,6 +212,14 @@ links:
           subtest: 'Check that src: url(foo.ttf), url(something.ttf) format(broken) is valid'
         - test: font-face-src-list.html
           subtest: 'Check that src: /* an empty component */, url(foo.ttf) is valid'
+        - test: font-face-src-format.html
+          subtest: 'Check that src: url("foo.ttf") format(xyzz 200px), url("bar.html") is valid'
+        - test: font-face-src-format.html
+          subtest: 'Check that src: url("foo.ttf") format(xyzz), url("bar.html") is valid'
+        - test: font-face-src-format.html
+          subtest: 'Check that src: url("foo.ttf") format(), url("bar.html") is valid'
+        - test: font-face-src-format.html
+          subtest: 'Check that src: url("foo.ttf") format(none), url("bar.html") is valid'
     - product: safari
       url: https://bugs.webkit.org/show_bug.cgi?id=250471
       results:
