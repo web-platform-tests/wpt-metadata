@@ -1,14 +1,39 @@
 links:
-    - product: chrome
-      url: https://crbug.com/882285
-      results:
-        - test: animation-name-invalid.html
-          status: FAIL
-    - product: chrome
-      url: https://bugs.chromium.org/p/chromium/issues/detail?id=882286
-      results:
-        - test: animation-name-valid.html
-    - product: safari
-      url: https://bugs.webkit.org/show_bug.cgi?id=235149
-      results:
-        - test: animation-shorthand.html
+- product: chrome
+  results:
+  - status: FAIL
+    test: animation-name-invalid.html
+  url: https://crbug.com/882285
+- product: chrome
+  results:
+  - test: animation-name-valid.html
+  url: https://bugs.chromium.org/p/chromium/issues/detail?id=882286
+- product: safari
+  results:
+  - test: animation-shorthand.html
+  url: https://bugs.webkit.org/show_bug.cgi?id=235149
+- product: firefox
+  results:
+  - subtest: Property animation-delay-start value 'initial'
+    test: animation-delay-end-computed.html
+  - subtest: Property animation-delay-start value '-500ms'
+    test: animation-delay-end-computed.html
+  - subtest: Property animation-delay-start value 'calc(2 * 3s)'
+    test: animation-delay-end-computed.html
+  - subtest: Property animation-delay-start value '20s, 10s'
+    test: animation-delay-end-computed.html
+  - subtest: Property animation-delay value '1s 2s'
+    test: animation-delay-shorthand-computed.html
+  - subtest: Property animation-delay value '1s 2s, 3s'
+    test: animation-delay-shorthand-computed.html
+  - subtest: Property animation-delay value '1s, 2s 3s'
+    test: animation-delay-shorthand-computed.html
+  - subtest: Property animation-delay-start value 'initial'
+    test: animation-delay-start-computed.html
+  - subtest: Property animation-delay-start value '-500ms'
+    test: animation-delay-start-computed.html
+  - subtest: Property animation-delay-start value 'calc(2 * 3s)'
+    test: animation-delay-start-computed.html
+  - subtest: Property animation-delay-start value '20s, 10s'
+    test: animation-delay-start-computed.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1810030
