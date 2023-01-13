@@ -886,6 +886,12 @@ links:
           subtest: Rule for --no-inherits returns expected value for CSSPropertyRule.initialValue
         - test: at-property-cssom.html
           subtest: Rule for --initial-value-only returns expected value for CSSPropertyRule.initialValue
+        - test: at-property-animation.html
+          subtest: No transition when removing @property rule
+        - test: at-property-animation.html
+          subtest: Unregistered properties referencing animated properties update correctly.
+        - test: at-property-animation.html
+          subtest: Registered properties referencing animated properties update correctly.
     - product: chrome
       url: https://crbug.com/981537
       results:
