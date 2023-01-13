@@ -104,3 +104,20 @@ links:
   - subtest: When in the same layer, the last rule of each name wins
     test: position-fallback-cascade-layer-reorder.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1804119
+- product: firefox
+  results:
+  - subtest: .target 1
+    test: anchor-name-001.html
+  - subtest: .target 2
+    test: anchor-name-001.html
+  - subtest: .target 3
+    test: anchor-name-001.html
+  - subtest: .target 1
+    test: anchor-name-inline-001.html
+  - subtest: .target 2
+    test: anchor-name-inline-001.html
+  - subtest: .target 3
+    test: anchor-name-inline-001.html
+  - subtest: '#target 1'
+    test: anchor-position-dynamic-001.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1810068
