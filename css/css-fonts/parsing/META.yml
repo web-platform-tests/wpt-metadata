@@ -243,3 +243,13 @@ links:
           subtest: 'Check that src: url(foo.ttf), url(something.ttf) format(broken) is valid'
         - test: font-face-src-list.html
           subtest: 'Check that src: local(""), url(foo.ttf), unparseable-garbage, local("another font name") is valid'
+        - test: font-face-src-format.html
+          subtest: 'Check that src: url("foo.ttf") format(xyzz 200px), url("bar.html") is valid'
+        - test: font-face-src-format.html
+          subtest: 'Check that src: url("foo.ttf") format(xyzz), url("bar.html") is valid'
+        - test: font-face-src-format.html
+          subtest: 'Check that src: url("foo.ttf") dummy(xyzzy), url("bar.html") is valid'
+        - test: font-face-src-format.html
+          subtest: 'Check that src: url("foo.ttf") format(), url("bar.html") is valid'
+        - test: font-face-src-format.html
+          subtest: 'Check that src: url("foo.ttf") format(none), url("bar.html") is valid'
