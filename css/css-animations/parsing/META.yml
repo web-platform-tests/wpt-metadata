@@ -37,3 +37,63 @@ links:
   - subtest: Property animation-delay-start value '20s, 10s'
     test: animation-delay-start-computed.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1810030
+- product: firefox
+  results:
+  - subtest: Property animation-delay-end value 'initial'
+    test: animation-delay-end-computed.html
+  - subtest: Property animation-delay-end value '-500ms'
+    test: animation-delay-end-computed.html
+  - subtest: Property animation-delay-end value 'calc(2 * 3s)'
+    test: animation-delay-end-computed.html
+  - subtest: Property animation-delay-end value '20s, 10s'
+    test: animation-delay-end-computed.html
+  - subtest: e.style['animation-delay-end'] = "-5ms" should set the property value
+    test: animation-delay-end-valid.html
+  - subtest: e.style['animation-delay-end'] = "0s" should set the property value
+    test: animation-delay-end-valid.html
+  - subtest: e.style['animation-delay-end'] = "10s" should set the property value
+    test: animation-delay-end-valid.html
+  - subtest: e.style['animation-delay-end'] = "20s, 10s" should set the property value
+    test: animation-delay-end-valid.html
+  - subtest: e.style['animation-delay'] = "1s 2s" should set the property value
+    test: animation-delay-shorthand.html
+  - subtest: e.style['animation-delay'] = "1s 2s, 3s" should set the property value
+    test: animation-delay-shorthand.html
+  - subtest: e.style['animation-delay'] = "1s, 2s 3s" should set the property value
+    test: animation-delay-shorthand.html
+  - subtest: e.style['animation-delay'] = "1s 2s" should set animation-delay-end
+    test: animation-delay-shorthand.html
+  - subtest: e.style['animation-delay'] = "1s 2s" should set animation-delay-start
+    test: animation-delay-shorthand.html
+  - subtest: e.style['animation-delay'] = "1s 2s" should not set unrelated longhands
+    test: animation-delay-shorthand.html
+  - subtest: e.style['animation-delay'] = "1s" should set animation-delay-end
+    test: animation-delay-shorthand.html
+  - subtest: e.style['animation-delay'] = "1s" should set animation-delay-start
+    test: animation-delay-shorthand.html
+  - subtest: e.style['animation-delay'] = "1s" should not set unrelated longhands
+    test: animation-delay-shorthand.html
+  - subtest: e.style['animation-delay'] = "1s 2s, 3s 4s" should set animation-delay-end
+    test: animation-delay-shorthand.html
+  - subtest: e.style['animation-delay'] = "1s 2s, 3s 4s" should set animation-delay-start
+    test: animation-delay-shorthand.html
+  - subtest: e.style['animation-delay'] = "1s 2s, 3s 4s" should not set unrelated
+      longhands
+    test: animation-delay-shorthand.html
+  - subtest: e.style['animation-delay'] = "1s 2s, 3s, 4s 5s" should set animation-delay-end
+    test: animation-delay-shorthand.html
+  - subtest: e.style['animation-delay'] = "1s 2s, 3s, 4s 5s" should set animation-delay-start
+    test: animation-delay-shorthand.html
+  - subtest: e.style['animation-delay'] = "1s 2s, 3s, 4s 5s" should not set unrelated
+      longhands
+    test: animation-delay-shorthand.html
+  - subtest: e.style['animation-delay-start'] = "-5ms" should set the property value
+    test: animation-delay-start-valid.html
+  - subtest: e.style['animation-delay-start'] = "0s" should set the property value
+    test: animation-delay-start-valid.html
+  - subtest: e.style['animation-delay-start'] = "10s" should set the property value
+    test: animation-delay-start-valid.html
+  - subtest: e.style['animation-delay-start'] = "20s, 10s" should set the property
+      value
+    test: animation-delay-start-valid.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1811043
