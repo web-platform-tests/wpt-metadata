@@ -166,3 +166,18 @@ links:
   - subtest: Makes sure that Link headers preload resources
     test: link-header-preload.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1800561
+- product: firefox
+  results:
+  - subtest: Document prefetch should send the exact Accept header as navigation
+    test: prefetch-accept.html
+  - subtest: same origin document prefetch without 'as' should be consumed
+    test: prefetch-document.html
+  - subtest: same-site different-origin document prefetch without 'as' should be consumed
+    test: prefetch-document.html
+  - subtest: Document prefetch should send the exact Accept header as navigation
+    test: prefetch-document.html
+  - subtest: Prefetch should fire the load event
+    test: prefetch-events.html
+  - subtest: Prefetch should fire the error event for network errors
+    test: prefetch-events.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1810960
