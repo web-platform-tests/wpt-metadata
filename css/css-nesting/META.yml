@@ -23,3 +23,12 @@ links:
   - test: conditional-properties.html
   - test: conditional-rules.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1798383
+- product: firefox
+  results:
+  - subtest: ".foo {\n  .bar& { color: green; }\n}"
+    test: parsing.html
+  - subtest: ".foo {\n  .bar & { color: green; }\n}"
+    test: parsing.html
+  - subtest: ".foo {\n  .bar > & { color: green; }\n}"
+    test: parsing.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1812484
