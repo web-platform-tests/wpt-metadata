@@ -282,3 +282,16 @@ links:
       url: https://bugzilla.mozilla.org/show_bug.cgi?id=1728335
       results:
         - test: RTCPeerConnectionIceErrorEvent.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1803388
+      results:
+        - test: RTCRtpParameters-transactionId.html
+          subtest: sender.setParameters() with transaction ID different from last getParameters() should reject with InvalidModificationError
+        - test: RTCRtpParameters-transactionId.html
+          subtest: sender.setParameters() with transaction ID unset should reject with TypeError
+        - test: RTCRtpParameters-transactionId.html
+          subtest: setParameters() twice with the same parameters should reject with InvalidStateError
+        - test: RTCRtpParameters-transactionId.html
+          subtest: setParameters() with parameters older than last getParameters() should reject with InvalidModificationError
+        - test: RTCRtpParameters-transactionId.html
+          subtest: setParameters() when the event loop has been relinquished since the last getParameters() should reject with InvalidStateError
