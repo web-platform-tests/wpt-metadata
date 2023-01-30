@@ -282,3 +282,14 @@ links:
       url: https://bugzilla.mozilla.org/show_bug.cgi?id=1728335
       results:
         - test: RTCPeerConnectionIceErrorEvent.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1803388
+      results:
+        - test: RTCRtpParameters-encodings.html
+          subtest: sender.setParameters() with added encodings should reject with InvalidModificationError
+        - test: RTCRtpParameters-encodings.html
+          subtest: sender.setParameters() with removed encodings should reject with InvalidModificationError
+        - test: RTCRtpParameters-encodings.html
+          subtest: sender.setParameters() with reordered encodings should reject with InvalidModificationError
+        - test: RTCRtpParameters-encodings.html
+          subtest: setParameters() with modified encoding.rid field should reject with InvalidModificationError
