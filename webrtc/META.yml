@@ -125,3 +125,10 @@ links:
           subtest: RTCCertificate should have at least one fingerprint
         - test: RTCCertificate.html
           subtest: RTCPeerConnection({ certificates }) should generate offer SDP with fingerprint of provided certificate
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1247616
+      results:
+        - test: RTCConfiguration-iceServers.html
+          subtest: setConfiguration(config) - with turns server, and object credential should throw InvalidAccessError
+        - test: RTCConfiguration-iceServers.html
+          subtest: new RTCPeerConnection(config) - with turns server, and object credential should throw InvalidAccessError
