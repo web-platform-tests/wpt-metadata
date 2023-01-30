@@ -107,6 +107,8 @@ links:
         - test: RTCCertificate-postMessage.html
           subtest: Check cross-origin RTCCertificate serialization
         - test: RTCConfiguration-iceCandidatePoolSize.html
+        - test: RTCPeerConnection-constructor.html
+          subtest: 'new RTCPeerConnection({ iceCandidatePoolSize: toNumberThrows })'
     - product: firefox
       url: https://bugzilla.mozilla.org/show_bug.cgi?id=1531810
       results:
@@ -244,3 +246,24 @@ links:
       url: https://bugzilla.mozilla.org/show_bug.cgi?id=1527916
       results:
         - test: RTCError.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1265827
+      results:
+        - test: RTCPeerConnection-connectionState.https.html
+        - test: RTCPeerConnection-constructor.html
+          subtest: connectionState initial value
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1278299
+      results:
+        - test: RTCDataChannel-send.html
+          subtest: Datachannel send() up to max size should succeed, above max size should fail
+        - test: RTCDataChannel-send.html
+          subtest: Negotiated datachannel send() up to max size should succeed, above max size should fail
+        - test: RTCPeerConnection-iceConnectionState.https.html
+          subtest: connection with one data channel should eventually have connected connection state
+        - test: RTCPeerConnection-iceConnectionState.https.html
+          subtest: iceConnectionState changes at the right time, with bundle policy balanced
+        - test: RTCPeerConnection-iceConnectionState.https.html
+          subtest: iceConnectionState changes at the right time, with bundle policy max-bundle
+        - test: RTCPeerConnection-iceConnectionState.https.html
+          subtest: iceConnectionState changes at the right time, with bundle policy max-compat
