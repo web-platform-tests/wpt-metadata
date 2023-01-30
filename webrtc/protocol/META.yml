@@ -36,3 +36,8 @@ links:
       url: https://crbug.com/1127309
       results:
         - test: crypto-suite.https.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1307996
+      results:
+        - test: bundle.https.html
+          subtest: not negotiating BUNDLE creates two separate ice and dtls transports
