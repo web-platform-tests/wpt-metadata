@@ -282,3 +282,10 @@ links:
       url: https://bugzilla.mozilla.org/show_bug.cgi?id=1728335
       results:
         - test: RTCPeerConnectionIceErrorEvent.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1568296
+      results:
+        - test: RTCRtpTransceiver-stop.html
+          subtest: If a transceiver is stopped, transceivers, senders and receivers should disappear after offer/answer
+        - test: RTCRtpTransceiver-stop.html
+          subtest: If a transceiver is stopped, transceivers should end up in state stopped
