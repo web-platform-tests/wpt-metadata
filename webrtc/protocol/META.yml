@@ -81,3 +81,8 @@ links:
           subtest: SetStreams with two streams produces two MSID lines
         - test: msid-generate.html
           subtest: SetStreams with the stream twice produces single MSID with a stream ID
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1531460
+      results:
+        - test: rtp-demuxing.html
+          subtest: Can demux two video tracks with different payload types on a bundled connection
