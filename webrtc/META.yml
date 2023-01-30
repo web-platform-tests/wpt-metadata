@@ -113,3 +113,8 @@ links:
           subtest: RTCPeerConnection member getLocalStreams should not exist
         - test: historical.html
           subtest: RTCPeerConnection member getRemoteStreams should not exist
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1531087
+      results:
+        - test: getstats.html
+          subtest: Can get stats from a basic WebRTC call.
