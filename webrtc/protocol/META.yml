@@ -86,3 +86,8 @@ links:
       results:
         - test: rtp-demuxing.html
           subtest: Can demux two video tracks with different payload types on a bundled connection
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1643050
+      results:
+        - test: split.https.html
+          subtest: Connect audio and video to two independent PeerConnections
