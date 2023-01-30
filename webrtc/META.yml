@@ -255,6 +255,12 @@ links:
           subtest: iceConnectionState changes at the right time, with bundle policy max-bundle
         - test: RTCPeerConnection-iceConnectionState.https.html
           subtest: iceConnectionState changes at the right time, with bundle policy max-compat
+        - test: RTCRtpSender-transport.https.html
+          subtest: RTCRtpSender/receiver/SCTP transport at the right time, with bundle policy balanced
+        - test: RTCRtpSender-transport.https.html
+          subtest: RTCRtpSender/receiver/SCTP transport at the right time, with bundle policy max-bundle
+        - test: RTCRtpSender-transport.https.html
+          subtest: RTCRtpSender/receiver/SCTP transport at the right time, with bundle policy max-compat
     - product: firefox
       url: https://bugzilla.mozilla.org/show_bug.cgi?id=1561441
       results:
