@@ -208,3 +208,10 @@ links:
       results:
         - test: RTCPeerConnection-remote-track-mute.https.html
           subtest: transceiver.stop() on one side (without renegotiation) causes mute events on the other
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1055080
+      results:
+        - test: RTCPeerConnection-setLocalDescription-parameterless.https.html
+          subtest: Parameterless SLD() uses [[LastCreatedOffer]] if it is still valid
+        - test: RTCPeerConnection-setLocalDescription-parameterless.https.html
+          subtest: Parameterless SLD() uses [[LastCreatedAnswer]] if it is still valid
