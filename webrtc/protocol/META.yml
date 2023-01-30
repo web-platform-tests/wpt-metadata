@@ -81,3 +81,8 @@ links:
           subtest: SetStreams with two streams produces two MSID lines
         - test: msid-generate.html
           subtest: SetStreams with the stream twice produces single MSID with a stream ID
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1806181
+      results:
+        - test: rtp-payloadtypes.html
+          subtest: setRemoteDescription with a codec in the range 64-95 throws an InvalidAccessError
