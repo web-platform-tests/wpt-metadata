@@ -208,3 +208,10 @@ links:
       results:
         - test: RTCPeerConnection-remote-track-mute.https.html
           subtest: transceiver.stop() on one side (without renegotiation) causes mute events on the other
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1527916
+      results:
+        - test: RTCPeerConnection-setRemoteDescription-offer.html
+          subtest: setRemoteDescription(offer) with invalid SDP should reject with RTCError
+        - test: RTCPeerConnection-setRemoteDescription-offer.html
+          subtest: setRemoteDescription(invalidOffer) from have-local-offer does not undo rollback
