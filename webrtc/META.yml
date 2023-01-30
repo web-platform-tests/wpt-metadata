@@ -282,3 +282,26 @@ links:
       url: https://bugzilla.mozilla.org/show_bug.cgi?id=1728335
       results:
         - test: RTCPeerConnectionIceErrorEvent.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1568296
+      results:
+        - test: RTCRtpTransceiver.https.html
+          subtest: checkCurrentDirection
+        - test: RTCRtpTransceiver.https.html
+          subtest: checkStop
+        - test: RTCRtpTransceiver.https.html
+          subtest: checkStopAfterCreateOffer
+        - test: RTCRtpTransceiver.https.html
+          subtest: checkStopAfterSetLocalOffer
+        - test: RTCRtpTransceiver.https.html
+          subtest: checkStopAfterSetRemoteOffer
+        - test: RTCRtpTransceiver.https.html
+          subtest: checkStopAfterCreateAnswer
+        - test: RTCRtpTransceiver.https.html
+          subtest: checkStopAfterSetLocalAnswer
+        - test: RTCRtpTransceiver.https.html
+          subtest: checkLocalRollback
+        - test: RTCRtpTransceiver.https.html
+          subtest: checkRemoteRollback
+        - test: RTCRtpTransceiver.https.html
+          subtest: checkMsectionReuse
