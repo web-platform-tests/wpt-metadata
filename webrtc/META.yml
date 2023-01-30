@@ -107,6 +107,8 @@ links:
         - test: RTCCertificate-postMessage.html
           subtest: Check cross-origin RTCCertificate serialization
         - test: RTCConfiguration-iceCandidatePoolSize.html
+        - test: RTCPeerConnection-constructor.html
+          subtest: 'new RTCPeerConnection({ iceCandidatePoolSize: toNumberThrows })'
     - product: firefox
       url: https://bugzilla.mozilla.org/show_bug.cgi?id=1531810
       results:
