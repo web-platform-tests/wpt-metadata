@@ -126,3 +126,7 @@ links:
           subtest: RTCCertificate should have at least one fingerprint
         - test: RTCCertificate.html
           subtest: RTCPeerConnection({ certificates }) should generate offer SDP with fingerprint of provided certificate
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1339203
+      results:
+        - test: RTCConfiguration-rtcpMuxPolicy.html
