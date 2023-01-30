@@ -176,3 +176,7 @@ links:
           subtest: new RTCIceCandidate({ ... }) with nondefault values for all fields
         - test: RTCIceCandidate-constructor.html
           subtest: new RTCIceCandidate({ ... }) with nondefault values for all fields, tcp candidate
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1265827
+      results:
+        - test: RTCPeerConnection-connectionState.https.html
