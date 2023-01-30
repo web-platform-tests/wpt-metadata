@@ -81,3 +81,8 @@ links:
           subtest: SetStreams with two streams produces two MSID lines
         - test: msid-generate.html
           subtest: SetStreams with the stream twice produces single MSID with a stream ID
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1340372
+      results:
+        - test: rtp-extension-support.html
+          subtest: RTP header extension urn:3gpp:video-orientation is present in offer
