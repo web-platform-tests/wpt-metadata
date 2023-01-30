@@ -72,3 +72,12 @@ links:
       url: https://github.com/web-platform-tests/wpt/issues/37561
       results:
         - test: handover.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1510802
+      results:
+        - test: msid-generate.html
+          subtest: SetStreams with a stream produces MSID with a stream ID
+        - test: msid-generate.html
+          subtest: SetStreams with two streams produces two MSID lines
+        - test: msid-generate.html
+          subtest: SetStreams with the stream twice produces single MSID with a stream ID
