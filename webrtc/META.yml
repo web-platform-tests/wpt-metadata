@@ -169,3 +169,10 @@ links:
           subtest: Close peerconnection causes close event and error to be called on negotiated datachannel
         - test: RTCDataChannel-close.html
           subtest: Close peerconnection causes close event and error on many channels, negotiated datachannel
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1322186
+      results:
+        - test: RTCIceCandidate-constructor.html
+          subtest: new RTCIceCandidate({ ... }) with nondefault values for all fields
+        - test: RTCIceCandidate-constructor.html
+          subtest: new RTCIceCandidate({ ... }) with nondefault values for all fields, tcp candidate
