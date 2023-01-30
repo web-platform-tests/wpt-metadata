@@ -125,3 +125,18 @@ links:
           subtest: RTCCertificate should have at least one fingerprint
         - test: RTCCertificate.html
           subtest: RTCPeerConnection({ certificates }) should generate offer SDP with fingerprint of provided certificate
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1529588
+      results:
+        - test: RTCConfiguration-iceServers.html
+          subtest: new RTCPeerConnection(config) - with invalid turn url should throw SyntaxError
+        - test: RTCConfiguration-iceServers.html
+          subtest: setConfiguration(config) - with invalid turn url should throw SyntaxError
+        - test: RTCConfiguration-iceServers.html
+          subtest: new RTCPeerConnection(config) - with invalid stun url should throw SyntaxError
+        - test: RTCConfiguration-iceServers.html
+          subtest: setConfiguration(config) - with invalid stun url should throw SyntaxError
+        - test: RTCConfiguration-iceServers.html
+          subtest: new RTCPeerConnection(config) - with url field should throw TypeError
+        - test: RTCConfiguration-iceServers.html
+          subtest: setConfiguration(config) - with url field should throw TypeError
