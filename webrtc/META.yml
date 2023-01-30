@@ -106,3 +106,12 @@ links:
           subtest: Check same-origin RTCCertificate serialization
         - test: RTCCertificate-postMessage.html
           subtest: Check cross-origin RTCCertificate serialization
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1531812
+      results:
+        - test: historical.html
+          subtest: mozRTCIceCandidate interface should not exist
+        - test: historical.html
+          subtest: mozRTCPeerConnection interface should not exist
+        - test: historical.html
+          subtest: mozRTCSessionDescription interface should not exist
