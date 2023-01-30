@@ -106,3 +106,8 @@ links:
           subtest: Check same-origin RTCCertificate serialization
         - test: RTCCertificate-postMessage.html
           subtest: Check cross-origin RTCCertificate serialization
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1241291
+      results:
+        - test: historical.html
+          subtest: RTCPeerConnection member onaddstream should not exist
