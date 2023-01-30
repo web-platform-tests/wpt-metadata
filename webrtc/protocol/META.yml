@@ -22,6 +22,22 @@ links:
           subtest: Explicit offer/answer exchange gives a connection
         - test: candidate-exchange.https.html
           subtest: Adding callee -> caller candidates from end-of-candidates gives a connection
+        - test: crypto-suite.https.html
+          subtest: tlsVersion is acceptable on data-only
+        - test: crypto-suite.https.html
+          subtest: tlsVersion is acceptable on video-only
+        - test: crypto-suite.https.html
+          subtest: dtlsCipher is acceptable on data-only
+        - test: crypto-suite.https.html
+          subtest: dtlsCipher is acceptable on video-only
+        - test: crypto-suite.https.html
+          subtest: srtpCipher is acceptable on data-only
+        - test: crypto-suite.https.html
+          subtest: srtpCipher is acceptable on video-only
+        - test: crypto-suite.https.html
+          subtest: tlsGroup is acceptable on data-only
+        - test: crypto-suite.https.html
+          subtest: tlsGroup is acceptable on video-only
     - product: firefox
       url: https://bugzilla.mozilla.org/show_bug.cgi?id=1557053
       results:
