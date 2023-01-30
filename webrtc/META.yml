@@ -278,3 +278,7 @@ links:
           subtest: explicit rollback of local offer should remove transceivers and transport
         - test: RTCPeerConnection-setRemoteDescription-rollback.html
           subtest: rollback of a local offer to negotiated stable state should enable applying of a remote offer
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1728335
+      results:
+        - test: RTCPeerConnectionIceErrorEvent.html
