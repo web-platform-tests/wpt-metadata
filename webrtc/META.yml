@@ -282,3 +282,10 @@ links:
       url: https://bugzilla.mozilla.org/show_bug.cgi?id=1728335
       results:
         - test: RTCPeerConnectionIceErrorEvent.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1531911
+      results:
+        - test: RTCPeerConnectionIceEvent-constructor.html
+          subtest: RTCPeerConnectionIceEvent with no eventInitDict (default)
+        - test: RTCPeerConnectionIceEvent-constructor.html
+          subtest: RTCPeerConnectionIceEvent with empty object as eventInitDict (default)
