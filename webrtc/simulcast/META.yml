@@ -1,0 +1,14 @@
+links:
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1813866
+      results:
+        - test: setParameters-encodings.https.html
+          subtest: addTrack, then a unicast setParameters, then sRD(simulcast offer) results in simulcast without the settings from setParameters
+        - test: setParameters-encodings.https.html
+          subtest: addTrack, then sRD(simulcast offer) interrupted by a unicast setParameters results in simulcast without the settings from setParameters
+        - test: setParameters-encodings.https.html
+          subtest: Success task for setLocalDescription(answer) clears [[LastReturnedParameters]]
+        - test: setParameters-encodings.https.html
+          subtest: Success task for setRemoteDescription(offer) clears [[LastReturnedParameters]]
+        - test: setParameters-encodings.https.html
+          subtest: Success task for setRemoteDescription(answer) clears [[LastReturnedParameters]]
