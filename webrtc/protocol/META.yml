@@ -41,3 +41,8 @@ links:
       results:
         - test: bundle.https.html
           subtest: not negotiating BUNDLE creates two separate ice and dtls transports
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1635922
+      results:
+        - test: dtls-fingerprint-validation.html
+          subtest: Connection fails if one side provides a wrong DTLS fingerprint
