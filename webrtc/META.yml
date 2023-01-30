@@ -199,3 +199,8 @@ links:
           subtest: iceConnectionState changes at the right time, with bundle policy max-bundle
         - test: RTCPeerConnection-iceConnectionState.https.html
           subtest: iceConnectionState changes at the right time, with bundle policy max-compat
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1620689
+      results:
+        - test: RTCPeerConnection-operations.https.html
+          subtest: sender.getStats does NOT use the operations chain
