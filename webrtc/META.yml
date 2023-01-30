@@ -282,3 +282,16 @@ links:
       url: https://bugzilla.mozilla.org/show_bug.cgi?id=1728335
       results:
         - test: RTCPeerConnectionIceErrorEvent.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1510802
+      results:
+        - test: RTCRtpSender-setStreams.https.html
+          subtest: setStreams causes streams to be reported via ontrack on callee
+        - test: RTCRtpSender-setStreams.https.html
+          subtest: setStreams can be used to reconstruct a stream with a track on the remote side
+        - test: RTCRtpSender-setStreams.https.html
+          subtest: Adding streams and changing direction causes new streams to be reported via ontrack on callee
+        - test: RTCRtpSender-setStreams.https.html
+          subtest: Adding streams to an active transceiver causes new streams to be reported via ontrack on callee
+        - test: RTCRtpSender-setStreams.https.html
+          subtest: setStreams() fires InvalidStateError on a closed peer connection.
