@@ -57,3 +57,8 @@ links:
       results:
         - test: bundle.https.html
           subtest: not negotiating BUNDLE creates two separate ice and dtls transports
+    - product: firefox
+      url: https://github.com/web-platform-tests/wpt/issues/37561
+      results:
+        - test: handover-datachannel.html
+          subtest: Handover with datachannel reinitiated from new callee completes
