@@ -41,3 +41,14 @@ links:
       results:
         - test: bundle.https.html
           subtest: not negotiating BUNDLE creates two separate ice and dtls transports
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1225723
+      results:
+        - test: dtls-setup.https.html
+          subtest: PC with setup=actpass should have a dtlsRole of client
+        - test: dtls-setup.https.html
+          subtest: PC with setup=active should have a dtlsRole of server
+        - test: dtls-setup.https.html
+          subtest: PC with setup=passive should have a dtlsRole of client
+        - test: dtls-setup.https.html
+          subtest: dtlsRole is `unknown` before negotiation of the DTLS handshake
