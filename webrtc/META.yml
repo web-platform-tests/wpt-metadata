@@ -172,12 +172,68 @@ links:
         - test: RTCDataChannel-close.html
           subtest: Close peerconnection causes close event and error on many channels, negotiated datachannel
     - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1531880
+      results:
+        - test: RTCCertificate.html
+          subtest: RTCPeerConnection({ certificates }) should generate offer SDP with fingerprint of all provided certificates
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1247616
+      results:
+        - test: RTCConfiguration-iceServers.html
+          subtest: setConfiguration(config) - with turns server, and object credential should throw InvalidAccessError
+        - test: RTCConfiguration-iceServers.html
+          subtest: new RTCPeerConnection(config) - with turns server, and object credential should throw InvalidAccessError
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1641026
+      results:
+        - test: RTCDataChannel-close.html
+          subtest: Close datachannel causes closing and close event to be called
+        - test: RTCDataChannel-close.html
+          subtest: Close negotiated datachannel causes closing and close event to be called
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1339203
+      results:
+        - test: RTCConfiguration-rtcpMuxPolicy.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1285683
+      results:
+        - test: historical.html
+          subtest: RTCDataChannel member reliable should not exist
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1531808
+      results:
+        - test: historical.html
+          subtest: RTCPeerConnection member addStream should not exist
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1241291
+      results:
+        - test: historical.html
+          subtest: RTCPeerConnection member onaddstream should not exist
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1531812
+      results:
+        - test: historical.html
+          subtest: mozRTCIceCandidate interface should not exist
+        - test: historical.html
+          subtest: mozRTCPeerConnection interface should not exist
+        - test: historical.html
+          subtest: mozRTCSessionDescription interface should not exist
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1531875
+      results:
+        - test: RTCCertificate-postMessage.html
+          subtest: Check cross-origin created RTCCertificate
+    - product: firefox
       url: https://bugzilla.mozilla.org/show_bug.cgi?id=1322186
       results:
         - test: RTCIceCandidate-constructor.html
           subtest: new RTCIceCandidate({ ... }) with nondefault values for all fields
         - test: RTCIceCandidate-constructor.html
           subtest: new RTCIceCandidate({ ... }) with nondefault values for all fields, tcp candidate
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1527916
+      results:
+        - test: RTCError.html
     - product: firefox
       url: https://bugzilla.mozilla.org/show_bug.cgi?id=1265827
       results:
