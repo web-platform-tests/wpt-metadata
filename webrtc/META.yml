@@ -282,3 +282,8 @@ links:
       url: https://bugzilla.mozilla.org/show_bug.cgi?id=1728335
       results:
         - test: RTCPeerConnectionIceErrorEvent.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1803388
+      results:
+        - test: RTCRtpSender-setParameters.html
+          subtest: setParameters() with already used parameters should reject with InvalidStateError if the event loop has been relinquished
