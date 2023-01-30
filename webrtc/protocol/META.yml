@@ -86,3 +86,8 @@ links:
       results:
         - test: rtp-demuxing.html
           subtest: Can demux two video tracks with different payload types on a bundled connection
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1806185
+      results:
+        - test: unknown-mediatypes.html
+          subtest: Unknown media types are rejected with the port set to 0
