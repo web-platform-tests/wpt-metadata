@@ -68,3 +68,10 @@ links:
           subtest: PC with setup=passive should have a dtlsRole of client
         - test: dtls-setup.https.html
           subtest: dtlsRole is `unknown` before negotiation of the DTLS handshake
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1808989
+      results:
+        - test: msid-generate.html
+          subtest: AddTrack with the stream twice produces single MSID with a stream ID
+        - test: msid-generate.html
+          subtest: AddTransceiver with the stream twice produces single MSID with a stream ID
