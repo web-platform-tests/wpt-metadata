@@ -180,3 +180,10 @@ links:
       url: https://bugzilla.mozilla.org/show_bug.cgi?id=1265827
       results:
         - test: RTCPeerConnection-connectionState.https.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1278299
+      results:
+        - test: RTCDataChannel-send.html
+          subtest: Datachannel send() up to max size should succeed, above max size should fail
+        - test: RTCDataChannel-send.html
+          subtest: Negotiated datachannel send() up to max size should succeed, above max size should fail
