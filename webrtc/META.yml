@@ -141,3 +141,16 @@ links:
           subtest: new RTCPeerConnection(config) - with url field should throw TypeError
         - test: RTCConfiguration-iceServers.html
           subtest: setConfiguration(config) - with url field should throw TypeError
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1728325
+      results:
+        - test: RTCDataChannel-binaryType.window.html
+          subtest: Setting invalid binaryType 'jellyfish' should throw SyntaxError
+        - test: RTCDataChannel-binaryType.window.html
+          subtest: Setting invalid binaryType 'arraybuffer ' should throw SyntaxError
+        - test: RTCDataChannel-binaryType.window.html
+          subtest: Setting invalid binaryType '' should throw SyntaxError
+        - test: RTCDataChannel-binaryType.window.html
+          subtest: Setting invalid binaryType 'null' should throw SyntaxError
+        - test: RTCDataChannel-binaryType.window.html
+          subtest: Setting invalid binaryType 'undefined' should throw SyntaxError
