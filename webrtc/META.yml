@@ -282,3 +282,12 @@ links:
       url: https://bugzilla.mozilla.org/show_bug.cgi?id=1728335
       results:
         - test: RTCPeerConnectionIceErrorEvent.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1531464
+      results:
+        - test: RTCRtpReceiver-getParameters.html
+          subtest: getParameters() with audio receiver
+        - test: RTCRtpReceiver-getParameters.html
+          subtest: getParameters() with video receiver
+        - test: RTCRtpReceiver-getParameters.html
+          subtest: getParameters() with simulcast video receiver
