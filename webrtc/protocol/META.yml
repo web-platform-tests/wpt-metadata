@@ -68,3 +68,10 @@ links:
           subtest: PC with setup=passive should have a dtlsRole of client
         - test: dtls-setup.https.html
           subtest: dtlsRole is `unknown` before negotiation of the DTLS handshake
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1617686
+      results:
+        - test: ice-ufragpwd.html
+          subtest: setRemoteDescription with a ice-ufrag containing a non-ice-char fails
+        - test: ice-ufragpwd.html
+          subtest: setRemoteDescription with a ice-pwd containing a non-ice-char fails
