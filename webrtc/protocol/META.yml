@@ -72,6 +72,8 @@ links:
       url: https://github.com/web-platform-tests/wpt/issues/37561
       results:
         - test: handover.html
+        - test: handover-datachannel.html
+          subtest: Handover with datachannel reinitiated from new callee completes
     - product: firefox
       url: https://bugzilla.mozilla.org/show_bug.cgi?id=1510802
       results:
@@ -86,8 +88,95 @@ links:
       results:
         - test: rtp-demuxing.html
           subtest: Can demux two video tracks with different payload types on a bundled connection
+        - test: h264-profile-levels.https.html
+          subtest: Level 1 H264 video is appropriately constrained
+        - test: h264-profile-levels.https.html
+          subtest: Level 2 H264 video is appropriately constrained
+        - test: h264-profile-levels.https.html
+          subtest: Level 3 H264 video is appropriately constrained
+        - test: h264-profile-levels.https.html
+          subtest: Level 4 H264 video is appropriately constrained
+        - test: h264-profile-levels.https.html
+          subtest: Level 5 H264 video is appropriately constrained
+        - test: h264-profile-levels.https.html
+          subtest: Level 6 H264 video is appropriately constrained
+        - test: h264-profile-levels.https.html
+          subtest: Level 1.1 H264 video is appropriately constrained
+        - test: h264-profile-levels.https.html
+          subtest: Level 1.2 H264 video is appropriately constrained
+        - test: h264-profile-levels.https.html
+          subtest: Level 1.3 H264 video is appropriately constrained
+        - test: h264-profile-levels.https.html
+          subtest: Level 2.1 H264 video is appropriately constrained
+        - test: h264-profile-levels.https.html
+          subtest: Level 2.2 H264 video is appropriately constrained
+        - test: h264-profile-levels.https.html
+          subtest: Level 3.1 H264 video is appropriately constrained
+        - test: h264-profile-levels.https.html
+          subtest: Level 3.2 H264 video is appropriately constrained
+        - test: h264-profile-levels.https.html
+          subtest: Level 4.1 H264 video is appropriately constrained
+        - test: h264-profile-levels.https.html
+          subtest: Level 4.2 H264 video is appropriately constrained
+        - test: h264-profile-levels.https.html
+          subtest: Level 5.1 H264 video is appropriately constrained
+        - test: h264-profile-levels.https.html
+          subtest: Level 5.2 H264 video is appropriately constrained
+        - test: h264-profile-levels.https.html
+          subtest: Level 6.1 H264 video is appropriately constrained
+        - test: h264-profile-levels.https.html
+          subtest: Level 6.2 H264 video is appropriately constrained
     - product: firefox
       url: https://bugzilla.mozilla.org/show_bug.cgi?id=1643050
       results:
         - test: split.https.html
           subtest: Connect audio and video to two independent PeerConnections
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1340372
+      results:
+        - test: rtp-extension-support.html
+          subtest: RTP header extension urn:3gpp:video-orientation is present in offer
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1531464
+      results:
+        - test: vp8-fmtp.html
+          subtest: setRemoteDescription parses max-fr and max-fs fmtp parameters
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1805480
+      results:
+        - test: bundle.https.html
+          subtest: bundles on the first transport and closes the second
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1805484
+      results:
+        - test: bundle.https.html
+          subtest: max-bundle with an offer without bundle only negotiates the first m-line
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1808989
+      results:
+        - test: msid-generate.html
+          subtest: AddTrack with the stream twice produces single MSID with a stream ID
+        - test: msid-generate.html
+          subtest: AddTransceiver with the stream twice produces single MSID with a stream ID
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1617686
+      results:
+        - test: ice-ufragpwd.html
+          subtest: setRemoteDescription with a ice-ufrag containing a non-ice-char fails
+        - test: ice-ufragpwd.html
+          subtest: setRemoteDescription with a ice-pwd containing a non-ice-char fails
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1635922
+      results:
+        - test: dtls-fingerprint-validation.html
+          subtest: Connection fails if one side provides a wrong DTLS fingerprint
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1806181
+      results:
+        - test: rtp-payloadtypes.html
+          subtest: setRemoteDescription with a codec in the range 64-95 throws an InvalidAccessError
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1806185
+      results:
+        - test: unknown-mediatypes.html
+          subtest: Unknown media types are rejected with the port set to 0
