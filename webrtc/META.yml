@@ -234,6 +234,10 @@ links:
       url: https://bugzilla.mozilla.org/show_bug.cgi?id=1527916
       results:
         - test: RTCError.html
+        - test: RTCPeerConnection-setRemoteDescription-offer.html
+          subtest: setRemoteDescription(offer) with invalid SDP should reject with RTCError
+        - test: RTCPeerConnection-setRemoteDescription-offer.html
+          subtest: setRemoteDescription(invalidOffer) from have-local-offer does not undo rollback
     - product: firefox
       url: https://bugzilla.mozilla.org/show_bug.cgi?id=1265827
       results:
@@ -255,6 +259,18 @@ links:
           subtest: iceConnectionState changes at the right time, with bundle policy max-bundle
         - test: RTCPeerConnection-iceConnectionState.https.html
           subtest: iceConnectionState changes at the right time, with bundle policy max-compat
+        - test: RTCPeerConnection-iceGatheringState.html
+          subtest: connection with one data channel should eventually have connected connection state
+        - test: RTCSctpTransport-constructor.html
+        - test: RTCRtpSender-transport.https.html
+          subtest: RTCRtpSender/receiver/SCTP transport at the right time, with bundle policy balanced
+        - test: RTCRtpSender-transport.https.html
+          subtest: RTCRtpSender/receiver/SCTP transport at the right time, with bundle policy max-bundle
+        - test: RTCRtpSender-transport.https.html
+          subtest: RTCRtpSender/receiver/SCTP transport at the right time, with bundle policy max-compat
+        - test: RTCSctpTransport-maxChannels.html
+        - test: RTCSctpTransport-events.html
+        - test: RTCSctpTransport-maxMessageSize.html
     - product: firefox
       url: https://bugzilla.mozilla.org/show_bug.cgi?id=1561441
       results:
@@ -282,3 +298,163 @@ links:
       url: https://bugzilla.mozilla.org/show_bug.cgi?id=1728335
       results:
         - test: RTCPeerConnectionIceErrorEvent.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1396922
+      results:
+        - test: RTCRtpTransceiver-setCodecPreferences.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1541471
+      results:
+        - test: RTCPeerConnection-capture-video.https.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1728367
+      results:
+        - test: RTCPeerConnection-setDescription-transceiver.html
+          subtest: setRemoteDescription should set transceiver inactive if its corresponding m section is rejected
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1765852
+      results:
+        - test: RTCRtpParameters-rtcp.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1531464
+      results:
+        - test: RTCRtpReceiver-getParameters.html
+          subtest: getParameters() with audio receiver
+        - test: RTCRtpReceiver-getParameters.html
+          subtest: getParameters() with video receiver
+        - test: RTCRtpReceiver-getParameters.html
+          subtest: getParameters() with simulcast video receiver
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1510802
+      results:
+        - test: RTCRtpSender-setStreams.https.html
+          subtest: setStreams causes streams to be reported via ontrack on callee
+        - test: RTCRtpSender-setStreams.https.html
+          subtest: setStreams can be used to reconstruct a stream with a track on the remote side
+        - test: RTCRtpSender-setStreams.https.html
+          subtest: Adding streams and changing direction causes new streams to be reported via ontrack on callee
+        - test: RTCRtpSender-setStreams.https.html
+          subtest: Adding streams to an active transceiver causes new streams to be reported via ontrack on callee
+        - test: RTCRtpSender-setStreams.https.html
+          subtest: setStreams() fires InvalidStateError on a closed peer connection.
+        - test: RTCPeerConnection-onnegotiationneeded.html
+          subtest: Calling setStreams should cause negotiationneeded to fire
+        - test: RTCPeerConnection-setRemoteDescription-rollback.html
+          subtest: rollback of a remote offer with stream changes
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1307994
+      results:
+        - test: RTCIceTransport.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1728353
+      results:
+        - test: RTCPeerConnection-iceGatheringState.html
+          subtest: renegotiation that closes all transports should result in ICE gathering state "new"
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1531911
+      results:
+        - test: RTCPeerConnectionIceEvent-constructor.html
+          subtest: RTCPeerConnectionIceEvent with no eventInitDict (default)
+        - test: RTCPeerConnectionIceEvent-constructor.html
+          subtest: RTCPeerConnectionIceEvent with empty object as eventInitDict (default)
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1004510
+      results:
+        - test: RTCPeerConnection-setLocalDescription-pranswer.html
+        - test: RTCPeerConnection-setRemoteDescription-pranswer.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1803388
+      results:
+        - test: RTCRtpParameters-transactionId.html
+          subtest: sender.setParameters() with transaction ID different from last getParameters() should reject with InvalidModificationError
+        - test: RTCRtpParameters-transactionId.html
+          subtest: sender.setParameters() with transaction ID unset should reject with TypeError
+        - test: RTCRtpParameters-transactionId.html
+          subtest: setParameters() twice with the same parameters should reject with InvalidStateError
+        - test: RTCRtpParameters-transactionId.html
+          subtest: setParameters() with parameters older than last getParameters() should reject with InvalidModificationError
+        - test: RTCRtpParameters-transactionId.html
+          subtest: setParameters() when the event loop has been relinquished since the last getParameters() should reject with InvalidStateError
+        - test: RTCRtpSender-setParameters.html
+          subtest: setParameters() with already used parameters should reject with InvalidStateError if the event loop has been relinquished
+        - test: RTCRtpParameters-encodings.html
+          subtest: sender.setParameters() with added encodings should reject with InvalidModificationError
+        - test: RTCRtpParameters-encodings.html
+          subtest: sender.setParameters() with removed encodings should reject with InvalidModificationError
+        - test: RTCRtpParameters-encodings.html
+          subtest: sender.setParameters() with reordered encodings should reject with InvalidModificationError
+        - test: RTCRtpParameters-encodings.html
+          subtest: setParameters() with modified encoding.rid field should reject with InvalidModificationError
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1531460
+      results:
+        - test: RTCRtpSender-getCapabilities.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1620689
+      results:
+        - test: RTCPeerConnection-operations.https.html
+          subtest: sender.getStats does NOT use the operations chain
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1468993
+      results:
+        - test: RTCPeerConnection-restartIce.https.html
+          subtest: restartIce() survives remote offer containing partial restart
+        - test: RTCPeerConnection-restartIce.https.html
+          subtest: restartIce() survives remote offer containing partial restart (perfect negotiation)
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1531461
+      results:
+        - test: RTCRtpReceiver-getCapabilities.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1805446
+      results:
+        - test: RTCDtlsTransport-getRemoteCertificates.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1531458
+      results:
+        - test: RTCRtpParameters-codecs.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1534687
+      results:
+        - test: RTCRtpParameters-codecs.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1765851
+      results:
+        - test: RTCRtpParameters-headerExtensions.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1568296
+      results:
+        - test: RTCRtpTransceiver-stopping.https.html
+        - test: RTCRtpTransceiver-stop.html
+          subtest: If a transceiver is stopped, transceivers, senders and receivers should disappear after offer/answer
+        - test: RTCRtpTransceiver-stop.html
+          subtest: If a transceiver is stopped, transceivers should end up in state stopped
+        - test: RTCRtpTransceiver.https.html
+          subtest: checkCurrentDirection
+        - test: RTCRtpTransceiver.https.html
+          subtest: checkStop
+        - test: RTCRtpTransceiver.https.html
+          subtest: checkStopAfterCreateOffer
+        - test: RTCRtpTransceiver.https.html
+          subtest: checkStopAfterSetLocalOffer
+        - test: RTCRtpTransceiver.https.html
+          subtest: checkStopAfterSetRemoteOffer
+        - test: RTCRtpTransceiver.https.html
+          subtest: checkStopAfterCreateAnswer
+        - test: RTCRtpTransceiver.https.html
+          subtest: checkStopAfterSetLocalAnswer
+        - test: RTCRtpTransceiver.https.html
+          subtest: checkLocalRollback
+        - test: RTCRtpTransceiver.https.html
+          subtest: checkRemoteRollback
+        - test: RTCRtpTransceiver.https.html
+          subtest: checkMsectionReuse
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1577830
+      results:
+        - test: RTCDataChannel-send-blob-order.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1767820
+      results:
+        - test: RTCRtpTransceiver.https.html
+          subtest: checkAddTransceiverThenAddTrackPairs

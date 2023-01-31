@@ -1,0 +1,30 @@
+links:
+    - product: firefox
+      url: https://github.com/web-platform-tests/wpt/issues/37564
+      results:
+        - test: rid-manipulation.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1813866
+      results:
+        - test: setParameters-encodings.https.html
+          subtest: addTrack, then a unicast setParameters, then sRD(simulcast offer) results in simulcast without the settings from setParameters
+        - test: setParameters-encodings.https.html
+          subtest: addTrack, then sRD(simulcast offer) interrupted by a unicast setParameters results in simulcast without the settings from setParameters
+        - test: setParameters-encodings.https.html
+          subtest: Success task for setLocalDescription(answer) clears [[LastReturnedParameters]]
+        - test: setParameters-encodings.https.html
+          subtest: Success task for setRemoteDescription(offer) clears [[LastReturnedParameters]]
+        - test: setParameters-encodings.https.html
+          subtest: Success task for setRemoteDescription(answer) clears [[LastReturnedParameters]]
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1531460
+      results:
+        - test: h264.https.html
+          subtest: H264 simulcast setup with two spatial layers
+        - test: vp8.https.html
+          subtest: VP8 simulcast setup with two spatial layers
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1643001
+      results:
+        - test: getStats.https.html
+          subtest: Simulcast getStats results
