@@ -472,3 +472,16 @@ links:
           subtest: RTCCertificateStats's fingerprintAlgorithm
         - test: RTCPeerConnection-mandatory-getStats.https.html
           subtest: RTCCertificateStats's base64Certificate
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1728364
+      results:
+        - test: RTCPeerConnection-mandatory-getStats.https.html
+          subtest: RTCAudioSourceStats's totalAudioEnergy
+        - test: RTCPeerConnection-mandatory-getStats.https.html
+          subtest: RTCAudioSourceStats's totalSamplesDuration
+        - test: RTCPeerConnection-mandatory-getStats.https.html
+          subtest: RTCVideoSourceStats's width
+        - test: RTCPeerConnection-mandatory-getStats.https.html
+          subtest: RTCVideoSourceStats's height
+        - test: RTCPeerConnection-mandatory-getStats.https.html
+          subtest: RTCVideoSourceStats's framesPerSecond
