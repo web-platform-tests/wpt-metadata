@@ -472,3 +472,10 @@ links:
           subtest: RTCCertificateStats's fingerprintAlgorithm
         - test: RTCPeerConnection-mandatory-getStats.https.html
           subtest: RTCCertificateStats's base64Certificate
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1804678
+      results:
+        - test: RTCPeerConnection-mandatory-getStats.https.html
+          subtest: RTCMediaSourceStats's trackIdentifier
+        - test: RTCPeerConnection-mandatory-getStats.https.html
+          subtest: RTCMediaSourceStats's kind
