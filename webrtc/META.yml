@@ -458,3 +458,8 @@ links:
       results:
         - test: RTCRtpTransceiver.https.html
           subtest: checkAddTransceiverThenAddTrackPairs
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1814485
+      results:
+        - test: RTCPeerConnection-remote-track-mute.https.html
+          subtest: transceiver.stop() on one side (without renegotiation) causes mute events on the other
