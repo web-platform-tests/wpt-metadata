@@ -246,3 +246,8 @@ links:
       results:
         - test: font-variant-valid.html
           subtest: e.style['font-variant'] = "none" should set the property value
+    - product: chrome
+      url: https://crbug.com/1412102
+      results:
+        - test: font-variant-valid.html
+          subtest: e.style['font-variant'] = "super proportional-width jis83 stacked-fractions tabular-nums oldstyle-nums historical-forms all-small-caps no-contextual no-historical-ligatures no-discretionary-ligatures no-common-ligatures" should set the property value
