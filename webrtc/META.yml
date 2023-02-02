@@ -476,6 +476,16 @@ links:
           subtest: RTCCertificateStats's fingerprintAlgorithm
         - test: RTCPeerConnection-mandatory-getStats.https.html
           subtest: RTCCertificateStats's base64Certificate
+        - test: RTCPeerConnection-mandatory-getStats.https.html
+          subtest: RTCTransportStats's bytesSent
+        - test: RTCPeerConnection-mandatory-getStats.https.html
+          subtest: RTCTransportStats's bytesReceived
+        - test: RTCPeerConnection-mandatory-getStats.https.html
+          subtest: RTCTransportStats's selectedCandidatePairId
+        - test: RTCPeerConnection-mandatory-getStats.https.html
+          subtest: RTCTransportStats's localCertificateId
+        - test: RTCPeerConnection-mandatory-getStats.https.html
+          subtest: RTCTransportStats's remoteCertificateId
     - product: firefox
       url: https://bugzilla.mozilla.org/show_bug.cgi?id=1804678
       results:
@@ -488,3 +498,36 @@ links:
       results:
         - test: RTCPeerConnection-mandatory-getStats.https.html
           subtest: RTCIceCandidateStats's url
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1728364
+      results:
+        - test: RTCPeerConnection-mandatory-getStats.https.html
+          subtest: RTCAudioSourceStats's totalAudioEnergy
+        - test: RTCPeerConnection-mandatory-getStats.https.html
+          subtest: RTCAudioSourceStats's totalSamplesDuration
+        - test: RTCPeerConnection-mandatory-getStats.https.html
+          subtest: RTCVideoSourceStats's width
+        - test: RTCPeerConnection-mandatory-getStats.https.html
+          subtest: RTCVideoSourceStats's height
+        - test: RTCPeerConnection-mandatory-getStats.https.html
+          subtest: RTCVideoSourceStats's framesPerSecond
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1804676
+      results:
+        - test: RTCPeerConnection-mandatory-getStats.https.html
+          subtest: RTCInboundRtpStreamStats's trackIdentifier
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1728357
+      results:
+        - test: RTCPeerConnection-mandatory-getStats.https.html
+          subtest: RTCReceivedRtpStreamStats's framesDropped
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1813824
+      results:
+        - test: RTCPeerConnection-mandatory-getStats.https.html
+          subtest: RTCRtpStreamStats's transportId
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1761334
+      results:
+        - test: RTCPeerConnection-mandatory-getStats.https.html
+          subtest: RTCIceCandidatePairStats's currentRoundTripTime
