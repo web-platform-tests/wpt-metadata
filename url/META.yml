@@ -208,3 +208,8 @@ links:
           subtest: 'Origin parsing: <http://!"$&''()*+,-.;=_`{}~/> against <about:blank>'
         - test: url-origin.any.html
           subtest: 'Origin parsing: <wss://!"$&''()*+,-.;=_`{}~/> against <about:blank>'
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1815932
+      results:
+        - test: urlsearchparams-delete.any.html
+          subtest: Changing the query of a URL with an opaque path can impact the path
