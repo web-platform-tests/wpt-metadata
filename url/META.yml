@@ -181,3 +181,37 @@ links:
       results:
         - test: historical.any.worker.html
           subtest: 'URLSearchParams: no structured serialize/deserialize support'
+        - test: historical.any.html
+          subtest: 'URLSearchParams: no structured serialize/deserialize support'
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1674369
+      results:
+        - test: percent-encoding.window.html
+          subtest: Input − with encoding shift_jis
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1553105
+      results:
+        - test: url-origin.any.html
+          subtest: 'Origin parsing: <ssh://example.com/foo/bar.git> against <http://example.org/>'
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1815914
+      results:
+        - test: url-origin.any.html
+          subtest: 'Origin parsing: <https://0x.0x.0> against <about:blank>'
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1815925
+      results:
+        - test: url-origin.any.html
+          subtest: 'Origin parsing: <http::b@www.example.com> against <about:blank>'
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1815926
+      results:
+        - test: url-origin.any.html
+          subtest: 'Origin parsing: <http://!"$&''()*+,-.;=_`{}~/> against <about:blank>'
+        - test: url-origin.any.html
+          subtest: 'Origin parsing: <wss://!"$&''()*+,-.;=_`{}~/> against <about:blank>'
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1815932
+      results:
+        - test: urlsearchparams-delete.any.html
+          subtest: Changing the query of a URL with an opaque path can impact the path
