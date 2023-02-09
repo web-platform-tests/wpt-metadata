@@ -176,3 +176,8 @@ links:
           subtest: 'Origin parsing: <http://example.com/foo%00%51> against <about:blank>'
         - test: url-origin.any.worker.html
           subtest: 'Origin parsing: <http://example.com/foo%00%51> against <about:blank>'
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1636761
+      results:
+        - test: historical.any.html
+          subtest: 'URLSearchParams: no structured serialize/deserialize support'
