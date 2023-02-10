@@ -7,3 +7,21 @@ links:
   results:
   - test: transition-in-empty-iframe.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1815935
+  - test: named-element-with-fix-pos-child-new.html
+  - test: named-element-with-fix-pos-child-old.html
+  - subtest: :only-child should match because ::view-transition-group is generated
+      for root element only
+    test: only-child-group.html
+  - subtest: :only-child should match because ::view-transition-old is not generated
+      (none to root)
+    test: only-child-new.html
+  - subtest: :only-child should not match because ::view-transition-old is generated
+      (root to root)
+    test: only-child-new.html
+  - subtest: :only-child should match because ::view-transition-new is not generated
+      (root to none)
+    test: only-child-old.html
+  - subtest: :only-child should not match because ::view-transition-new is generated
+      (root to root)
+    test: only-child-old.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1815787
