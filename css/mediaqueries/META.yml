@@ -1031,3 +1031,18 @@ links:
           subtest: 'expression_should_be_known: update: fast'
         - test: test_media_queries.html
           subtest: Sanity check for update
+    - product: chrome
+      url: https://crbug.com/1415316
+      results:
+        - test: test_media_queries.html
+          subtest: 'three-valued logic: should_apply: not ((unknown) and (height))'
+        - test: test_media_queries.html
+          subtest: 'three-valued logic: should_not_apply: not ((unknown) or (height))'
+        - test: test_media_queries.html
+          subtest: 'three-valued logic: should_apply: (width) and (not ((unknown) and (height)))'
+        - test: test_media_queries.html
+          subtest: 'three-valued logic: should_not_apply: (width) and (not ((unknown) or (height)))'
+        - test: test_media_queries.html
+          subtest: 'three-valued logic: should_apply: not (unknown(width) and (height))'
+        - test: test_media_queries.html
+          subtest: 'three-valued logic: should_not_apply: not (unknown(width) or (height))'
