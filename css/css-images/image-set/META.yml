@@ -52,3 +52,11 @@ links:
       results:
         - test: image-set-linear-gradient-rendering.html
         - test: image-set-radial-gradient-rendering.html
+        - test: image-set-computed.sub.html
+          subtest: Property background-image value 'image-set(linear-gradient(black, white) 1x)'
+        - test: image-set-computed.sub.html
+          subtest: Property background-image value '-webkit-image-set(linear-gradient(black, white) 1x)'
+        - test: image-set-computed.sub.html
+          subtest: Property content value '-webkit-image-set(url('http://web-platform.test/example.png') 192dpi, linear-gradient(black, white) 1x)'
+        - test: image-set-computed.sub.html
+          subtest: Property content value 'image-set(url('http://web-platform.test/example.png') 192dpi, linear-gradient(black, white) 1x)'
