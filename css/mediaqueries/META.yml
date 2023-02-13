@@ -1018,3 +1018,16 @@ links:
           subtest: 'expression_should_be_known: overflow-inline: scroll'
         - test: test_media_queries.html
           subtest: Sanity check for overflow-inline
+    - product: chrome
+      url: https://crbug.com/791028
+      results:
+        - test: test_media_queries.html
+          subtest: 'expression_should_be_known: update'
+        - test: test_media_queries.html
+          subtest: 'expression_should_be_known: update: none'
+        - test: test_media_queries.html
+          subtest: 'expression_should_be_known: update: slow'
+        - test: test_media_queries.html
+          subtest: 'expression_should_be_known: update: fast'
+        - test: test_media_queries.html
+          subtest: Sanity check for update
