@@ -286,3 +286,8 @@ links:
           subtest: 'Check that src: /* an empty component */, url(foo.ttf) is valid'
         - test: font-face-src-list.html
           subtest: 'Check that src: local(""), url(foo.ttf), unparseable-garbage, local("another font name") is valid'
+    - product: chrome
+      url: https://crbug.com/1385383
+      results:
+        - test: font-palette-values-valid.html
+          subtest: 'CSS Fonts Module Level 4: parsing @font-palette-values 32'
