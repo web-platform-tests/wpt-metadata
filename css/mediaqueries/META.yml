@@ -995,3 +995,26 @@ links:
           subtest: 'matchMedia(''(aspect-ratio: 1/1)'') should receive a change event after resize event on the window but before a requestAnimationFrame callback is called'
         - test: media-query-matches-in-iframe.html
           subtest: 'matchMedia(''(max-aspect-ratio: 4/3)'') should receive a change event after resize event on the window but before a requestAnimationFrame callback is called'
+    - product: chrome
+      url: https://crbug.com/790911
+      results:
+        - test: test_media_queries.html
+          subtest: 'expression_should_be_known: overflow-block'
+        - test: test_media_queries.html
+          subtest: 'expression_should_be_known: overflow-block: none'
+        - test: test_media_queries.html
+          subtest: 'expression_should_be_known: overflow-block: paged'
+        - test: test_media_queries.html
+          subtest: 'expression_should_be_known: overflow-block: scroll'
+        - test: test_media_queries.html
+          subtest: 'expression_should_be_known: overflow-block: optional-paged'
+        - test: test_media_queries.html
+          subtest: Sanity check for overflow-block
+        - test: test_media_queries.html
+          subtest: 'expression_should_be_known: overflow-inline'
+        - test: test_media_queries.html
+          subtest: 'expression_should_be_known: overflow-inline: none'
+        - test: test_media_queries.html
+          subtest: 'expression_should_be_known: overflow-inline: scroll'
+        - test: test_media_queries.html
+          subtest: Sanity check for overflow-inline
