@@ -52,3 +52,18 @@ links:
       results:
         - test: image-set-linear-gradient-rendering.html
         - test: image-set-radial-gradient-rendering.html
+    - product: chrome
+      url: https://crbug.com/1399341
+      results:
+        - test: image-set-computed.sub.html
+          subtest: Property background-image value 'image-set(url(http://web-platform.test/example.png) 1x type('image/png'))'
+        - test: image-set-computed.sub.html
+          subtest: Property background-image value '-webkit-image-set(url(http://web-platform.test/example.png) type('image/png') 1x)'
+        - test: image-set-computed.sub.html
+          subtest: Property background-image value 'image-set(url(http://web-platform.test/example.png) type('image/png') 1x)'
+        - test: image-set-computed.sub.html
+          subtest: Property background-image value '-webkit-image-set(url(http://web-platform.test/example.png) type('image/png'))'
+        - test: image-set-computed.sub.html
+          subtest: Property background-image value 'image-set(url(http://web-platform.test/example.png) type('image/png'))'
+        - test: image-set-computed.sub.html
+          subtest: Property background-image value '-webkit-image-set(url(http://web-platform.test/example.png) 1x type('image/png'))'
