@@ -17,7 +17,8 @@ links:
           subtest: e.style['content'] = "image-set(linear-gradient(black, white) 1x, 'example.png' 4x)" should set the property value
         - test: image-set-parsing.html
           subtest: e.style['content'] = "image-set(url(\"example.png\") 192dpi, linear-gradient(black, white) 1x)" should set the property value
-    - label: interop-2023-webcompat
+    - url: ""
+      label: interop-2023-webcompat
       results:
         - test: image-set-no-res-rendering.html
         - test: image-set-resolution-001.html
@@ -65,3 +66,21 @@ links:
       results:
         - test: image-set-type-first-match-rendering.html
           subtest: Test status
+        - test: image-set-computed.sub.html
+          subtest: Property background-image value 'image-set(url(http://web-platform.test/example.png) 1x type('image/png'))'
+        - test: image-set-computed.sub.html
+          subtest: Property background-image value '-webkit-image-set(url(http://web-platform.test/example.png) type('image/png') 1x)'
+        - test: image-set-computed.sub.html
+          subtest: Property background-image value 'image-set(url(http://web-platform.test/example.png) type('image/png') 1x)'
+        - test: image-set-computed.sub.html
+          subtest: Property background-image value '-webkit-image-set(url(http://web-platform.test/example.png) type('image/png'))'
+        - test: image-set-computed.sub.html
+          subtest: Property background-image value 'image-set(url(http://web-platform.test/example.png) type('image/png'))'
+        - test: image-set-computed.sub.html
+          subtest: Property background-image value '-webkit-image-set(url(http://web-platform.test/example.png) 1x type('image/png'))'
+        - test: image-set-type-rendering-2.html
+        - test: image-set-type-rendering-3.html
+        - test: image-set-type-rendering.html
+        - test: image-set-type-skip-unsupported-rendering.html
+        - test: image-set-type-unsupported-rendering-2.html
+        - test: image-set-type-unsupported-rendering.html
