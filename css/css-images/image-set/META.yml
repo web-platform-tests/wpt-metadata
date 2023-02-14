@@ -65,3 +65,15 @@ links:
       results:
         - test: image-set-type-first-match-rendering.html
           subtest: Test status
+        - test: image-set-parsing.html
+          subtest: e.style['background-image'] = "image-set(url(\"example.png\") 1x type(\"image/png\"))" should set the property value
+        - test: image-set-parsing.html
+          subtest: e.style['background-image'] = "-webkit-image-set(url(\"example.png\") 1x type(\"image/png\"))" should set the property value
+        - test: image-set-parsing.html
+          subtest: e.style['background-image'] = "image-set(url(example.png) type('image/png'))" should set the property value
+        - test: image-set-parsing.html
+          subtest: e.style['background-image'] = "-webkit-image-set(url(example.png) type('image/png'))" should set the property value
+        - test: image-set-parsing.html
+          subtest: e.style['background-image'] = "image-set(url(example.png) type('image/png') 1x)" should set the property value
+        - test: image-set-parsing.html
+          subtest: e.style['background-image'] = "-webkit-image-set(url(example.png) type('image/png') 1x)" should set the property value
