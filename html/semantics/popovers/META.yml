@@ -1671,3 +1671,550 @@ links:
       property "popoverShowTargetElement" with the proper type'
     test: idlharness.tentative.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1810255
+- product: firefox
+  results:
+  - subtest: The element <div popover="" id="boolean">Pop up</div> should behave as
+      a popover.
+    test: popover-attribute-basic.html
+  - subtest: The element <div popover="">Pop up</div> should behave as a popover.
+    test: popover-attribute-basic.html
+  - subtest: The element <div popover="auto">Pop up</div> should behave as a popover.
+    test: popover-attribute-basic.html
+  - subtest: The element <div popover="manual">Pop up</div> should behave as a popover.
+    test: popover-attribute-basic.html
+  - subtest: The element <article popover="">Different element type</article> should
+      behave as a popover.
+    test: popover-attribute-basic.html
+  - subtest: The element <header popover="">Different element type</header> should
+      behave as a popover.
+    test: popover-attribute-basic.html
+  - subtest: The element <nav popover="">Different element type</nav> should behave
+      as a popover.
+    test: popover-attribute-basic.html
+  - subtest: The element <input type="text" popover="" value="Different element type">
+      should behave as a popover.
+    test: popover-attribute-basic.html
+  - subtest: The element <dialog popover="">Dialog with popover attribute</dialog>
+      should behave as a popover.
+    test: popover-attribute-basic.html
+  - subtest: The element <dialog popover="manual">Dialog with popover=manual</dialog>
+      should behave as a popover.
+    test: popover-attribute-basic.html
+  - subtest: The element <div popover="true">Invalid popover value - defaults to popover=manual</div>
+      should behave as a popover.
+    test: popover-attribute-basic.html
+  - subtest: The element <div popover="popover">Invalid popover value - defaults to
+      popover=manual</div> should behave as a popover.
+    test: popover-attribute-basic.html
+  - subtest: The element <div popover="invalid">Invalid popover value - defaults to
+      popover=manual</div> should behave as a popover.
+    test: popover-attribute-basic.html
+  - subtest: A <a popover> element should behave as a popover.
+    test: popover-attribute-basic.html
+  - subtest: A <abbr popover> element should behave as a popover.
+    test: popover-attribute-basic.html
+  - subtest: A <address popover> element should behave as a popover.
+    test: popover-attribute-basic.html
+  - subtest: A <area popover> element should behave as a popover.
+    test: popover-attribute-basic.html
+  - subtest: A <article popover> element should behave as a popover.
+    test: popover-attribute-basic.html
+  - subtest: A <aside popover> element should behave as a popover.
+    test: popover-attribute-basic.html
+  - subtest: A <b popover> element should behave as a popover.
+    test: popover-attribute-basic.html
+  - subtest: A <bdi popover> element should behave as a popover.
+    test: popover-attribute-basic.html
+  - subtest: A <bdo popover> element should behave as a popover.
+    test: popover-attribute-basic.html
+  - subtest: A <blockquote popover> element should behave as a popover.
+    test: popover-attribute-basic.html
+  - subtest: A <body popover> element should behave as a popover.
+    test: popover-attribute-basic.html
+  - subtest: A <button popover> element should behave as a popover.
+    test: popover-attribute-basic.html
+  - subtest: A <canvas popover> element should behave as a popover.
+    test: popover-attribute-basic.html
+  - subtest: A <caption popover> element should behave as a popover.
+    test: popover-attribute-basic.html
+  - subtest: A <cite popover> element should behave as a popover.
+    test: popover-attribute-basic.html
+  - subtest: A <code popover> element should behave as a popover.
+    test: popover-attribute-basic.html
+  - subtest: A <col popover> element should behave as a popover.
+    test: popover-attribute-basic.html
+  - subtest: A <colgroup popover> element should behave as a popover.
+    test: popover-attribute-basic.html
+  - subtest: A <data popover> element should behave as a popover.
+    test: popover-attribute-basic.html
+  - subtest: A <dd popover> element should behave as a popover.
+    test: popover-attribute-basic.html
+  - subtest: A <del popover> element should behave as a popover.
+    test: popover-attribute-basic.html
+  - subtest: A <details popover> element should behave as a popover.
+    test: popover-attribute-basic.html
+  - subtest: A <dfn popover> element should behave as a popover.
+    test: popover-attribute-basic.html
+  - subtest: A <div popover> element should behave as a popover.
+    test: popover-attribute-basic.html
+  - subtest: A <dl popover> element should behave as a popover.
+    test: popover-attribute-basic.html
+  - subtest: A <dt popover> element should behave as a popover.
+    test: popover-attribute-basic.html
+  - subtest: A <em popover> element should behave as a popover.
+    test: popover-attribute-basic.html
+  - subtest: A <fieldset popover> element should behave as a popover.
+    test: popover-attribute-basic.html
+  - subtest: A <figcaption popover> element should behave as a popover.
+    test: popover-attribute-basic.html
+  - subtest: A <figure popover> element should behave as a popover.
+    test: popover-attribute-basic.html
+  - subtest: A <footer popover> element should behave as a popover.
+    test: popover-attribute-basic.html
+  - subtest: A <form popover> element should behave as a popover.
+    test: popover-attribute-basic.html
+  - subtest: A <h1 popover> element should behave as a popover.
+    test: popover-attribute-basic.html
+  - subtest: A <h2 popover> element should behave as a popover.
+    test: popover-attribute-basic.html
+  - subtest: A <h3 popover> element should behave as a popover.
+    test: popover-attribute-basic.html
+  - subtest: A <h4 popover> element should behave as a popover.
+    test: popover-attribute-basic.html
+  - subtest: A <h5 popover> element should behave as a popover.
+    test: popover-attribute-basic.html
+  - subtest: A <h6 popover> element should behave as a popover.
+    test: popover-attribute-basic.html
+  - subtest: A <header popover> element should behave as a popover.
+    test: popover-attribute-basic.html
+  - subtest: A <hr popover> element should behave as a popover.
+    test: popover-attribute-basic.html
+  - subtest: A <html popover> element should behave as a popover.
+    test: popover-attribute-basic.html
+  - subtest: A <i popover> element should behave as a popover.
+    test: popover-attribute-basic.html
+  - subtest: A <iframe popover> element should behave as a popover.
+    test: popover-attribute-basic.html
+  - subtest: A <img popover> element should behave as a popover.
+    test: popover-attribute-basic.html
+  - subtest: A <input popover> element should behave as a popover.
+    test: popover-attribute-basic.html
+  - subtest: A <ins popover> element should behave as a popover.
+    test: popover-attribute-basic.html
+  - subtest: A <kbd popover> element should behave as a popover.
+    test: popover-attribute-basic.html
+  - subtest: A <label popover> element should behave as a popover.
+    test: popover-attribute-basic.html
+  - subtest: A <legend popover> element should behave as a popover.
+    test: popover-attribute-basic.html
+  - subtest: A <li popover> element should behave as a popover.
+    test: popover-attribute-basic.html
+  - subtest: A <main popover> element should behave as a popover.
+    test: popover-attribute-basic.html
+  - subtest: A <map popover> element should behave as a popover.
+    test: popover-attribute-basic.html
+  - subtest: A <mark popover> element should behave as a popover.
+    test: popover-attribute-basic.html
+  - subtest: A <menu popover> element should behave as a popover.
+    test: popover-attribute-basic.html
+  - subtest: A <meter popover> element should behave as a popover.
+    test: popover-attribute-basic.html
+  - subtest: A <nav popover> element should behave as a popover.
+    test: popover-attribute-basic.html
+  - subtest: A <object popover> element should behave as a popover.
+    test: popover-attribute-basic.html
+  - subtest: A <ol popover> element should behave as a popover.
+    test: popover-attribute-basic.html
+  - subtest: A <optgroup popover> element should behave as a popover.
+    test: popover-attribute-basic.html
+  - subtest: A <option popover> element should behave as a popover.
+    test: popover-attribute-basic.html
+  - subtest: A <output popover> element should behave as a popover.
+    test: popover-attribute-basic.html
+  - subtest: A <p popover> element should behave as a popover.
+    test: popover-attribute-basic.html
+  - subtest: A <pre popover> element should behave as a popover.
+    test: popover-attribute-basic.html
+  - subtest: A <progress popover> element should behave as a popover.
+    test: popover-attribute-basic.html
+  - subtest: A <q popover> element should behave as a popover.
+    test: popover-attribute-basic.html
+  - subtest: A <rt popover> element should behave as a popover.
+    test: popover-attribute-basic.html
+  - subtest: A <ruby popover> element should behave as a popover.
+    test: popover-attribute-basic.html
+  - subtest: A <s popover> element should behave as a popover.
+    test: popover-attribute-basic.html
+  - subtest: A <samp popover> element should behave as a popover.
+    test: popover-attribute-basic.html
+  - subtest: A <section popover> element should behave as a popover.
+    test: popover-attribute-basic.html
+  - subtest: A <select popover> element should behave as a popover.
+    test: popover-attribute-basic.html
+  - subtest: A <small popover> element should behave as a popover.
+    test: popover-attribute-basic.html
+  - subtest: A <source popover> element should behave as a popover.
+    test: popover-attribute-basic.html
+  - subtest: A <span popover> element should behave as a popover.
+    test: popover-attribute-basic.html
+  - subtest: A <strong popover> element should behave as a popover.
+    test: popover-attribute-basic.html
+  - subtest: A <sub popover> element should behave as a popover.
+    test: popover-attribute-basic.html
+  - subtest: A <sup popover> element should behave as a popover.
+    test: popover-attribute-basic.html
+  - subtest: A <summary popover> element should behave as a popover.
+    test: popover-attribute-basic.html
+  - subtest: A <table popover> element should behave as a popover.
+    test: popover-attribute-basic.html
+  - subtest: A <tbody popover> element should behave as a popover.
+    test: popover-attribute-basic.html
+  - subtest: A <td popover> element should behave as a popover.
+    test: popover-attribute-basic.html
+  - subtest: A <textarea popover> element should behave as a popover.
+    test: popover-attribute-basic.html
+  - subtest: A <tfoot popover> element should behave as a popover.
+    test: popover-attribute-basic.html
+  - subtest: A <th popover> element should behave as a popover.
+    test: popover-attribute-basic.html
+  - subtest: A <thead popover> element should behave as a popover.
+    test: popover-attribute-basic.html
+  - subtest: A <time popover> element should behave as a popover.
+    test: popover-attribute-basic.html
+  - subtest: A <tr popover> element should behave as a popover.
+    test: popover-attribute-basic.html
+  - subtest: A <track popover> element should behave as a popover.
+    test: popover-attribute-basic.html
+  - subtest: A <u popover> element should behave as a popover.
+    test: popover-attribute-basic.html
+  - subtest: A <ul popover> element should behave as a popover.
+    test: popover-attribute-basic.html
+  - subtest: A <var popover> element should behave as a popover.
+    test: popover-attribute-basic.html
+  - subtest: A <video popover> element should behave as a popover.
+    test: popover-attribute-basic.html
+  - subtest: IDL attribute reflection
+    test: popover-attribute-basic.html
+  - subtest: Changing attribute values for popover should work
+    test: popover-attribute-basic.html
+  - subtest: Changing attribute values should close open popovers
+    test: popover-attribute-basic.html
+  - subtest: Removing a visible popover=auto element from the document should close
+      the popover
+    test: popover-attribute-basic.html
+  - subtest: A showing popover=auto does not match :modal
+    test: popover-attribute-basic.html
+  - subtest: Removing a visible popover=manual element from the document should close
+      the popover
+    test: popover-attribute-basic.html
+  - subtest: A showing popover=manual does not match :modal
+    test: popover-attribute-basic.html
+  - subtest: Changing the popover type in a "beforetoggle" event handler should throw
+      an exception (during showPopover())
+    test: popover-attribute-basic.html
+  - subtest: Changing the popover type in a "beforetoggle" event handler should throw
+      an exception (during hidePopover())
+    test: popover-attribute-basic.html
+  - subtest: Changing a popover from auto to auto (via attr), and then auto during
+      'beforetoggle' works
+    test: popover-attribute-basic.html
+  - subtest: Changing a popover from auto to auto (via attr), and then manual during
+      'beforetoggle' works
+    test: popover-attribute-basic.html
+  - subtest: Changing a popover from auto to auto (via attr), and then invalid during
+      'beforetoggle' works
+    test: popover-attribute-basic.html
+  - subtest: Changing a popover from auto to auto (via attr), and then null during
+      'beforetoggle' works
+    test: popover-attribute-basic.html
+  - subtest: Changing a popover from auto to auto (via attr), and then undefined during
+      'beforetoggle' works
+    test: popover-attribute-basic.html
+  - subtest: Changing a popover from auto to manual (via attr), and then auto during
+      'beforetoggle' works
+    test: popover-attribute-basic.html
+  - subtest: Changing a popover from auto to manual (via attr), and then manual during
+      'beforetoggle' works
+    test: popover-attribute-basic.html
+  - subtest: Changing a popover from auto to manual (via attr), and then invalid during
+      'beforetoggle' works
+    test: popover-attribute-basic.html
+  - subtest: Changing a popover from auto to manual (via attr), and then null during
+      'beforetoggle' works
+    test: popover-attribute-basic.html
+  - subtest: Changing a popover from auto to manual (via attr), and then undefined
+      during 'beforetoggle' works
+    test: popover-attribute-basic.html
+  - subtest: Changing a popover from auto to invalid (via attr), and then auto during
+      'beforetoggle' works
+    test: popover-attribute-basic.html
+  - subtest: Changing a popover from auto to invalid (via attr), and then manual during
+      'beforetoggle' works
+    test: popover-attribute-basic.html
+  - subtest: Changing a popover from auto to invalid (via attr), and then invalid
+      during 'beforetoggle' works
+    test: popover-attribute-basic.html
+  - subtest: Changing a popover from auto to invalid (via attr), and then null during
+      'beforetoggle' works
+    test: popover-attribute-basic.html
+  - subtest: Changing a popover from auto to invalid (via attr), and then undefined
+      during 'beforetoggle' works
+    test: popover-attribute-basic.html
+  - subtest: Changing a popover from auto to null (via attr), and then auto during
+      'beforetoggle' works
+    test: popover-attribute-basic.html
+  - subtest: Changing a popover from auto to null (via attr), and then manual during
+      'beforetoggle' works
+    test: popover-attribute-basic.html
+  - subtest: Changing a popover from auto to null (via attr), and then invalid during
+      'beforetoggle' works
+    test: popover-attribute-basic.html
+  - subtest: Changing a popover from auto to null (via attr), and then null during
+      'beforetoggle' works
+    test: popover-attribute-basic.html
+  - subtest: Changing a popover from auto to null (via attr), and then undefined during
+      'beforetoggle' works
+    test: popover-attribute-basic.html
+  - subtest: Changing a popover from auto to undefined (via attr), and then auto during
+      'beforetoggle' works
+    test: popover-attribute-basic.html
+  - subtest: Changing a popover from auto to undefined (via attr), and then manual
+      during 'beforetoggle' works
+    test: popover-attribute-basic.html
+  - subtest: Changing a popover from auto to undefined (via attr), and then invalid
+      during 'beforetoggle' works
+    test: popover-attribute-basic.html
+  - subtest: Changing a popover from auto to undefined (via attr), and then null during
+      'beforetoggle' works
+    test: popover-attribute-basic.html
+  - subtest: Changing a popover from auto to undefined (via attr), and then undefined
+      during 'beforetoggle' works
+    test: popover-attribute-basic.html
+  - subtest: Changing a popover from manual to auto (via attr), and then auto during
+      'beforetoggle' works
+    test: popover-attribute-basic.html
+  - subtest: Changing a popover from manual to auto (via attr), and then manual during
+      'beforetoggle' works
+    test: popover-attribute-basic.html
+  - subtest: Changing a popover from manual to auto (via attr), and then invalid during
+      'beforetoggle' works
+    test: popover-attribute-basic.html
+  - subtest: Changing a popover from manual to auto (via attr), and then null during
+      'beforetoggle' works
+    test: popover-attribute-basic.html
+  - subtest: Changing a popover from manual to auto (via attr), and then undefined
+      during 'beforetoggle' works
+    test: popover-attribute-basic.html
+  - subtest: Changing a popover from manual to manual (via attr), and then auto during
+      'beforetoggle' works
+    test: popover-attribute-basic.html
+  - subtest: Changing a popover from manual to manual (via attr), and then manual
+      during 'beforetoggle' works
+    test: popover-attribute-basic.html
+  - subtest: Changing a popover from manual to manual (via attr), and then invalid
+      during 'beforetoggle' works
+    test: popover-attribute-basic.html
+  - subtest: Changing a popover from manual to manual (via attr), and then null during
+      'beforetoggle' works
+    test: popover-attribute-basic.html
+  - subtest: Changing a popover from manual to manual (via attr), and then undefined
+      during 'beforetoggle' works
+    test: popover-attribute-basic.html
+  - subtest: Changing a popover from manual to invalid (via attr), and then auto during
+      'beforetoggle' works
+    test: popover-attribute-basic.html
+  - subtest: Changing a popover from manual to invalid (via attr), and then manual
+      during 'beforetoggle' works
+    test: popover-attribute-basic.html
+  - subtest: Changing a popover from manual to invalid (via attr), and then invalid
+      during 'beforetoggle' works
+    test: popover-attribute-basic.html
+  - subtest: Changing a popover from manual to invalid (via attr), and then null during
+      'beforetoggle' works
+    test: popover-attribute-basic.html
+  - subtest: Changing a popover from manual to invalid (via attr), and then undefined
+      during 'beforetoggle' works
+    test: popover-attribute-basic.html
+  - subtest: Changing a popover from manual to null (via attr), and then auto during
+      'beforetoggle' works
+    test: popover-attribute-basic.html
+  - subtest: Changing a popover from manual to null (via attr), and then manual during
+      'beforetoggle' works
+    test: popover-attribute-basic.html
+  - subtest: Changing a popover from manual to null (via attr), and then invalid during
+      'beforetoggle' works
+    test: popover-attribute-basic.html
+  - subtest: Changing a popover from manual to null (via attr), and then null during
+      'beforetoggle' works
+    test: popover-attribute-basic.html
+  - subtest: Changing a popover from manual to null (via attr), and then undefined
+      during 'beforetoggle' works
+    test: popover-attribute-basic.html
+  - subtest: Changing a popover from manual to undefined (via attr), and then auto
+      during 'beforetoggle' works
+    test: popover-attribute-basic.html
+  - subtest: Changing a popover from manual to undefined (via attr), and then manual
+      during 'beforetoggle' works
+    test: popover-attribute-basic.html
+  - subtest: Changing a popover from manual to undefined (via attr), and then invalid
+      during 'beforetoggle' works
+    test: popover-attribute-basic.html
+  - subtest: Changing a popover from manual to undefined (via attr), and then null
+      during 'beforetoggle' works
+    test: popover-attribute-basic.html
+  - subtest: Changing a popover from manual to undefined (via attr), and then undefined
+      during 'beforetoggle' works
+    test: popover-attribute-basic.html
+  - subtest: Changing a popover from auto to auto (via idl), and then auto during
+      'beforetoggle' works
+    test: popover-attribute-basic.html
+  - subtest: Changing a popover from auto to auto (via idl), and then manual during
+      'beforetoggle' works
+    test: popover-attribute-basic.html
+  - subtest: Changing a popover from auto to auto (via idl), and then invalid during
+      'beforetoggle' works
+    test: popover-attribute-basic.html
+  - subtest: Changing a popover from auto to auto (via idl), and then null during
+      'beforetoggle' works
+    test: popover-attribute-basic.html
+  - subtest: Changing a popover from auto to auto (via idl), and then undefined during
+      'beforetoggle' works
+    test: popover-attribute-basic.html
+  - subtest: Changing a popover from auto to manual (via idl), and then auto during
+      'beforetoggle' works
+    test: popover-attribute-basic.html
+  - subtest: Changing a popover from auto to manual (via idl), and then manual during
+      'beforetoggle' works
+    test: popover-attribute-basic.html
+  - subtest: Changing a popover from auto to manual (via idl), and then invalid during
+      'beforetoggle' works
+    test: popover-attribute-basic.html
+  - subtest: Changing a popover from auto to manual (via idl), and then null during
+      'beforetoggle' works
+    test: popover-attribute-basic.html
+  - subtest: Changing a popover from auto to manual (via idl), and then undefined
+      during 'beforetoggle' works
+    test: popover-attribute-basic.html
+  - subtest: Changing a popover from auto to invalid (via idl), and then auto during
+      'beforetoggle' works
+    test: popover-attribute-basic.html
+  - subtest: Changing a popover from auto to invalid (via idl), and then manual during
+      'beforetoggle' works
+    test: popover-attribute-basic.html
+  - subtest: Changing a popover from auto to invalid (via idl), and then invalid during
+      'beforetoggle' works
+    test: popover-attribute-basic.html
+  - subtest: Changing a popover from auto to invalid (via idl), and then null during
+      'beforetoggle' works
+    test: popover-attribute-basic.html
+  - subtest: Changing a popover from auto to invalid (via idl), and then undefined
+      during 'beforetoggle' works
+    test: popover-attribute-basic.html
+  - subtest: Changing a popover from auto to null (via idl), and then auto during
+      'beforetoggle' works
+    test: popover-attribute-basic.html
+  - subtest: Changing a popover from auto to null (via idl), and then manual during
+      'beforetoggle' works
+    test: popover-attribute-basic.html
+  - subtest: Changing a popover from auto to null (via idl), and then invalid during
+      'beforetoggle' works
+    test: popover-attribute-basic.html
+  - subtest: Changing a popover from auto to null (via idl), and then null during
+      'beforetoggle' works
+    test: popover-attribute-basic.html
+  - subtest: Changing a popover from auto to null (via idl), and then undefined during
+      'beforetoggle' works
+    test: popover-attribute-basic.html
+  - subtest: Changing a popover from auto to undefined (via idl), and then auto during
+      'beforetoggle' works
+    test: popover-attribute-basic.html
+  - subtest: Changing a popover from auto to undefined (via idl), and then manual
+      during 'beforetoggle' works
+    test: popover-attribute-basic.html
+  - subtest: Changing a popover from auto to undefined (via idl), and then invalid
+      during 'beforetoggle' works
+    test: popover-attribute-basic.html
+  - subtest: Changing a popover from auto to undefined (via idl), and then null during
+      'beforetoggle' works
+    test: popover-attribute-basic.html
+  - subtest: Changing a popover from auto to undefined (via idl), and then undefined
+      during 'beforetoggle' works
+    test: popover-attribute-basic.html
+  - subtest: Changing a popover from manual to auto (via idl), and then auto during
+      'beforetoggle' works
+    test: popover-attribute-basic.html
+  - subtest: Changing a popover from manual to auto (via idl), and then manual during
+      'beforetoggle' works
+    test: popover-attribute-basic.html
+  - subtest: Changing a popover from manual to auto (via idl), and then invalid during
+      'beforetoggle' works
+    test: popover-attribute-basic.html
+  - subtest: Changing a popover from manual to auto (via idl), and then null during
+      'beforetoggle' works
+    test: popover-attribute-basic.html
+  - subtest: Changing a popover from manual to auto (via idl), and then undefined
+      during 'beforetoggle' works
+    test: popover-attribute-basic.html
+  - subtest: Changing a popover from manual to manual (via idl), and then auto during
+      'beforetoggle' works
+    test: popover-attribute-basic.html
+  - subtest: Changing a popover from manual to manual (via idl), and then manual during
+      'beforetoggle' works
+    test: popover-attribute-basic.html
+  - subtest: Changing a popover from manual to manual (via idl), and then invalid
+      during 'beforetoggle' works
+    test: popover-attribute-basic.html
+  - subtest: Changing a popover from manual to manual (via idl), and then null during
+      'beforetoggle' works
+    test: popover-attribute-basic.html
+  - subtest: Changing a popover from manual to manual (via idl), and then undefined
+      during 'beforetoggle' works
+    test: popover-attribute-basic.html
+  - subtest: Changing a popover from manual to invalid (via idl), and then auto during
+      'beforetoggle' works
+    test: popover-attribute-basic.html
+  - subtest: Changing a popover from manual to invalid (via idl), and then manual
+      during 'beforetoggle' works
+    test: popover-attribute-basic.html
+  - subtest: Changing a popover from manual to invalid (via idl), and then invalid
+      during 'beforetoggle' works
+    test: popover-attribute-basic.html
+  - subtest: Changing a popover from manual to invalid (via idl), and then null during
+      'beforetoggle' works
+    test: popover-attribute-basic.html
+  - subtest: Changing a popover from manual to invalid (via idl), and then undefined
+      during 'beforetoggle' works
+    test: popover-attribute-basic.html
+  - subtest: Changing a popover from manual to null (via idl), and then auto during
+      'beforetoggle' works
+    test: popover-attribute-basic.html
+  - subtest: Changing a popover from manual to null (via idl), and then manual during
+      'beforetoggle' works
+    test: popover-attribute-basic.html
+  - subtest: Changing a popover from manual to null (via idl), and then invalid during
+      'beforetoggle' works
+    test: popover-attribute-basic.html
+  - subtest: Changing a popover from manual to null (via idl), and then null during
+      'beforetoggle' works
+    test: popover-attribute-basic.html
+  - subtest: Changing a popover from manual to null (via idl), and then undefined
+      during 'beforetoggle' works
+    test: popover-attribute-basic.html
+  - subtest: Changing a popover from manual to undefined (via idl), and then auto
+      during 'beforetoggle' works
+    test: popover-attribute-basic.html
+  - subtest: Changing a popover from manual to undefined (via idl), and then manual
+      during 'beforetoggle' works
+    test: popover-attribute-basic.html
+  - subtest: Changing a popover from manual to undefined (via idl), and then invalid
+      during 'beforetoggle' works
+    test: popover-attribute-basic.html
+  - subtest: Changing a popover from manual to undefined (via idl), and then null
+      during 'beforetoggle' works
+    test: popover-attribute-basic.html
+  - subtest: Changing a popover from manual to undefined (via idl), and then undefined
+      during 'beforetoggle' works
+    test: popover-attribute-basic.html
+  - subtest: Exceptions are thrown even when show/hide are animated
+    test: popover-attribute-basic.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1816851
