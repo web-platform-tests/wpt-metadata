@@ -218,3 +218,12 @@ links:
           subtest: font-variation-settings uses discrete animation when animating between ""wdth" 1, "wght" 1.1" and ""wdth" 5" with effect easing
         - test: interpolation-per-property-001.html
           subtest: font-variation-settings uses discrete animation when animating between ""wdth" 1, "wght" 1.1" and ""wdth" 5" with keyframe easing
+    - product: safari
+      url: https://bugs.webkit.org/show_bug.cgi?id=252656
+      results:
+        - test: interpolation-per-property-002.html
+          subtest: mask-image uses discrete animation when animating between "url("http://localhost/test-1")" and "url("http://localhost/test-2")" with linear easing
+        - test: interpolation-per-property-002.html
+          subtest: mask-image uses discrete animation when animating between "url("http://localhost/test-1")" and "url("http://localhost/test-2")" with effect easing
+        - test: interpolation-per-property-002.html
+          subtest: mask-image uses discrete animation when animating between "url("http://localhost/test-1")" and "url("http://localhost/test-2")" with keyframe easing
