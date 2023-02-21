@@ -1,0 +1,12 @@
+links:
+- product: firefox
+  results:
+  - subtest: "aria role test: \n    <div></div>\n  "
+    test: toggle-aria-roles.tentative.html
+  - subtest: "aria role test: \n    <div class=\"root\">\n      <div></div>\n    </div>\n\
+      \  "
+    test: toggle-aria-roles.tentative.html
+  - subtest: "aria role test: \n    <div class=\"root trigger\" role=\"link\" data-expected-role=\"\
+      link\"></div>\n  "
+    test: toggle-aria-roles.tentative.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1818091
