@@ -1,15 +1,18 @@
 links:
-- product: firefox
-  results:
-  - subtest: test_get_computed_label[<button>ok</button>-button-ok]
-    test: get.py
-  - subtest: test_get_computed_label[<button aria-labelledby="one two"></button><div
-      id=one>ok</div><div id=two>go</div>-button-ok go]
-    test: get.py
-  - subtest: test_get_computed_label[<button aria-label=foo>bar</button>-button-foo]
-    test: get.py
-  - subtest: test_get_computed_label[<label><input> foo</label>-input-foo]
-    test: get.py
-  - subtest: test_get_computed_label[<label for=b>foo<label><input id=b>-input-foo]
-    test: get.py
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1788867
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1788867
+      results:
+        - test: get.py
+          subtest: test_get_computed_label[<button>ok</button>-button-ok]
+        - test: get.py
+          subtest: test_get_computed_label[<button aria-labelledby="one two"></button><div id=one>ok</div><div id=two>go</div>-button-ok go]
+        - test: get.py
+          subtest: test_get_computed_label[<button aria-label=foo>bar</button>-button-foo]
+        - test: get.py
+          subtest: test_get_computed_label[<label><input> foo</label>-input-foo]
+        - test: get.py
+          subtest: test_get_computed_label[<label for=b>foo<label><input id=b>-input-foo]
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1585622
+      results:
+        - test: '*'
