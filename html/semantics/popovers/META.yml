@@ -1338,3 +1338,18 @@ links:
   - subtest: Disabled popover*target buttons should not affect the popover heirarchy.
     test: popover-target-element-disabled.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1818849
+- product: firefox
+  results:
+  - subtest: Tests the order of pointer/mouse events during popover light dismiss.
+    test: light-dismiss-event-ordering.html
+  - subtest: The element <div popover="hint">Pop up</div> should behave as a popover.
+    test: popover-attribute-basic.html
+  - subtest: manuals do not close popovers
+    test: popover-types-with-hints.tentative.html
+  - subtest: 'If you: a) show a popover=auto (call it D), then b) show a non-descendent
+      popover=hint of D (call it T), then c) hide D, then T should be left showing.
+      (Non-nested popover=hint can stay open when unrelated popover=autos are hidden)'
+    test: popover-types-with-hints.tentative.html
+  - test: popover-anchor-change-display.html
+  - test: popover-anchor-display.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1819242
