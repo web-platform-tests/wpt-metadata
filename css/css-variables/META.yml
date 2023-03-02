@@ -1,89 +1,116 @@
 links:
-    - product: chrome
-      url: https://bugs.chromium.org/p/chromium/issues/detail?id=1213232
-      results:
-        - test: variable-definition.html
-        - test: variable-invalidation.html
-        - test: variable-presentation-attribute.html
-    - product: chrome
-      url: https://crbug.com/1220145
-      results:
-        - test: variable-definition.html
-          subtest: no char variable
-        - test: variable-definition.html
-          subtest: no char variable (Computed Style)
-        - test: variable-definition.html
-          subtest: no char variable (Cascading)
-    - product: chrome
-      url: https://crbug.com/1220149
-      results:
-        - test: variable-definition.html
-          subtest: can't overwrite with no value
-        - test: variable-definition.html
-          subtest: can't overwrite with no value (Computed Style)
-        - test: variable-definition.html
-          subtest: can't overwrite with no value (Cascading)
-    - product: chrome
-      url: https://crbug.com/661854
-      results:
-        - test: variable-definition.html
-          subtest: ' middle white space (double space) 2'
-        - test: variable-definition.html
-          subtest: ' middle white space (double space) 2 (Computed Style)'
-        - test: variable-definition.html
-          subtest: ' middle white space (double space) 2 (Cascading)'
-    - product: chrome
-      url: https://crbug.com/1220144
-      results:
-        - test: variable-definition.html
-          subtest: white space value (single space)
-        - test: variable-definition.html
-          subtest: white space value (double space)
-        - test: variable-definition.html
-          subtest: white space value (single space) (Computed Style)
-        - test: variable-definition.html
-          subtest: white space value (double space) (Computed Style)
-        - test: variable-definition.html
-          subtest: white space value (single space) (Cascading)
-        - test: variable-definition.html
-          subtest: white space value (double space) (Cascading)
-        - test: variable-definition.html
-          subtest: can overwrite with space value
-        - test: variable-definition.html
-          subtest: can overwrite with space value (Computed Style)
-        - test: variable-definition.html
-          subtest: can overwrite with space value (Cascading)
-        - test: variable-definition.html
-          subtest: ' leading white space (single space)'
-        - test: variable-definition.html
-          subtest: ' leading white space (double space) 2'
-        - test: variable-definition.html
-          subtest: ' trailing white space (double space) 2'
-        - test: variable-definition.html
-          subtest: ' leading white space (single space) (Computed Style)'
-        - test: variable-definition.html
-          subtest: ' leading white space (double space) 2 (Computed Style)'
-        - test: variable-definition.html
-          subtest: ' trailing white space (double space) 2 (Computed Style)'
-        - test: variable-definition.html
-          subtest: ' leading white space (single space) (Cascading)'
-        - test: variable-definition.html
-          subtest: ' leading white space (double space) 2 (Cascading)'
-        - test: variable-definition.html
-          subtest: ' trailing white space (double space) 2 (Cascading)'
-    - product: chrome
-      url: https://crbug.com/1245954
-      results:
-        - test: variable-definition.html
-          subtest: CSSOM.setProperty with space 1
-        - test: variable-definition.html
-          subtest: CSSOM.setProperty with space 2
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1797985
-      results:
-        - test: variable-presentation-attribute.html
-          subtest: Testing 'clip' on '#test4'.
-    - product: safari
-      url: https://bugs.webkit.org/show_bug.cgi?id=241433
-      results:
-        - test: variables-substitute-guaranteed-invalid.html
+- product: chrome
+  results:
+  - test: variable-definition.html
+  - test: variable-invalidation.html
+  - test: variable-presentation-attribute.html
+  url: https://bugs.chromium.org/p/chromium/issues/detail?id=1213232
+- product: chrome
+  results:
+  - subtest: no char variable
+    test: variable-definition.html
+  - subtest: no char variable (Computed Style)
+    test: variable-definition.html
+  - subtest: no char variable (Cascading)
+    test: variable-definition.html
+  url: https://crbug.com/1220145
+- product: chrome
+  results:
+  - subtest: can't overwrite with no value
+    test: variable-definition.html
+  - subtest: can't overwrite with no value (Computed Style)
+    test: variable-definition.html
+  - subtest: can't overwrite with no value (Cascading)
+    test: variable-definition.html
+  url: https://crbug.com/1220149
+- product: chrome
+  results:
+  - subtest: ' middle white space (double space) 2'
+    test: variable-definition.html
+  - subtest: ' middle white space (double space) 2 (Computed Style)'
+    test: variable-definition.html
+  - subtest: ' middle white space (double space) 2 (Cascading)'
+    test: variable-definition.html
+  url: https://crbug.com/661854
+- product: chrome
+  results:
+  - subtest: white space value (single space)
+    test: variable-definition.html
+  - subtest: white space value (double space)
+    test: variable-definition.html
+  - subtest: white space value (single space) (Computed Style)
+    test: variable-definition.html
+  - subtest: white space value (double space) (Computed Style)
+    test: variable-definition.html
+  - subtest: white space value (single space) (Cascading)
+    test: variable-definition.html
+  - subtest: white space value (double space) (Cascading)
+    test: variable-definition.html
+  - subtest: can overwrite with space value
+    test: variable-definition.html
+  - subtest: can overwrite with space value (Computed Style)
+    test: variable-definition.html
+  - subtest: can overwrite with space value (Cascading)
+    test: variable-definition.html
+  - subtest: ' leading white space (single space)'
+    test: variable-definition.html
+  - subtest: ' leading white space (double space) 2'
+    test: variable-definition.html
+  - subtest: ' trailing white space (double space) 2'
+    test: variable-definition.html
+  - subtest: ' leading white space (single space) (Computed Style)'
+    test: variable-definition.html
+  - subtest: ' leading white space (double space) 2 (Computed Style)'
+    test: variable-definition.html
+  - subtest: ' trailing white space (double space) 2 (Computed Style)'
+    test: variable-definition.html
+  - subtest: ' leading white space (single space) (Cascading)'
+    test: variable-definition.html
+  - subtest: ' leading white space (double space) 2 (Cascading)'
+    test: variable-definition.html
+  - subtest: ' trailing white space (double space) 2 (Cascading)'
+    test: variable-definition.html
+  url: https://crbug.com/1220144
+- product: chrome
+  results:
+  - subtest: CSSOM.setProperty with space 1
+    test: variable-definition.html
+  - subtest: CSSOM.setProperty with space 2
+    test: variable-definition.html
+  url: https://crbug.com/1245954
+- product: firefox
+  results:
+  - subtest: Testing 'clip' on '#test4'.
+    test: variable-presentation-attribute.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1797985
+- product: safari
+  results:
+  - test: variables-substitute-guaranteed-invalid.html
+  url: https://bugs.webkit.org/show_bug.cgi?id=241433
+- product: firefox
+  results:
+  - subtest: ' trailing white space (single space)'
+    test: variable-definition.html
+  - subtest: ' trailing white space (double space) 2'
+    test: variable-definition.html
+  - subtest: '!important'
+    test: variable-definition.html
+  - subtest: '!important (with space)'
+    test: variable-definition.html
+  - subtest: ' trailing white space (single space) (Computed Style)'
+    test: variable-definition.html
+  - subtest: ' trailing white space (double space) 2 (Computed Style)'
+    test: variable-definition.html
+  - subtest: '!important (Computed Style)'
+    test: variable-definition.html
+  - subtest: '!important (with space) (Computed Style)'
+    test: variable-definition.html
+  - subtest: ' trailing white space (single space) (Cascading)'
+    test: variable-definition.html
+  - subtest: ' trailing white space (double space) 2 (Cascading)'
+    test: variable-definition.html
+  - subtest: '!important (Cascading)'
+    test: variable-definition.html
+  - subtest: '!important (with space) (Cascading)'
+    test: variable-definition.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1819853
