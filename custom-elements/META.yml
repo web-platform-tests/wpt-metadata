@@ -194,3 +194,8 @@ links:
       results:
         - test: throw-on-dynamic-markup-insertion-counter-reactions-xml-parser.xhtml
           subtest: document.open(URL) must NOT throw an InvalidStateError when processing custom element reactions for a synchronous constructed custom element
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1819923
+      results:
+        - test: perform-microtask-checkpoint-before-construction-xml-parser.xhtml
+          subtest: XML parser must perform a microtask checkpoint before constructing a custom element
