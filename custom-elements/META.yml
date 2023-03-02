@@ -204,3 +204,8 @@ links:
       results:
         - test: throw-on-dynamic-markup-insertion-counter-construct-xml-parser.xhtml
           subtest: document.open(URL) must NOT throw an InvalidStateError when synchronously constructing a custom element
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1556358
+      results:
+        - test: CustomElementRegistry.html
+          subtest: customElements.define must get four additional callbacks on the prototype if formAssociated is converted to true
