@@ -17,7 +17,8 @@ links:
           subtest: e.style['content'] = "image-set(linear-gradient(black, white) 1x, 'example.png' 4x)" should set the property value
         - test: image-set-parsing.html
           subtest: e.style['content'] = "image-set(url(\"example.png\") 192dpi, linear-gradient(black, white) 1x)" should set the property value
-    - label: interop-2023-webcompat
+    - url: ""
+      label: interop-2023-webcompat
       results:
         - test: image-set-no-res-rendering.html
         - test: image-set-resolution-001.html
@@ -131,4 +132,8 @@ links:
       url: https://bugs.chromium.org/p/chromium/issues/detail?id=1420792
       results:
         - test: image-set-zero-resolution-rendering.html
+        - test: image-set-zero-resolution-rendering-2.html
+    - product: chrome
+      url: "1420792"
+      results:
         - test: image-set-zero-resolution-rendering-2.html
