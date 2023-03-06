@@ -713,3 +713,8 @@ links:
           subtest: abs(-1rad) should be used-value-equivalent to 1rad
         - test: signs-abs-computed.html
           subtest: abs(-1turn) should be used-value-equivalent to 1turn
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1820673
+      results:
+        - test: acos-asin-atan-atan2-computed.html
+          subtest: calc(sin(atan(tan(pi/2)))) should be used-value-equivalent to 1
