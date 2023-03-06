@@ -26,3 +26,12 @@ links:
     - label: interop-2022-forms
       results:
         - test: Event-dispatch-click.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1658996
+      results:
+        - test: Event-dispatch-click.html
+          subtest: look at parents only when event bubbles
+        - test: Event-dispatch-click.html
+          subtest: event state during post-click handling
+        - test: Event-dispatch-click.html
+          subtest: redispatch during post-click handling
