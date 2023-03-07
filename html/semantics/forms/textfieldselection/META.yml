@@ -12,7 +12,8 @@ links:
       url: https://bugs.webkit.org/show_bug.cgi?id=233426
       results:
         - test: '*'
-    - label: interop-2022-forms
+    - url: ""
+      label: interop-2022-forms
       results:
         - test: textfieldselection-setRangeText.html
         - test: textarea-selection-while-parsing.xhtml
@@ -34,5 +35,7 @@ links:
     - product: firefox
       url: https://bugzilla.mozilla.org/show_bug.cgi?id=1818686
       results:
+        - test: selection-start-end-extra.html
+          subtest: Removing child nodes in non-dirty textarea should make selection{Start,End} 0
         - test: selection-start-end-extra.html
           subtest: Removing child nodes in non-dirty textarea should make selection{Start,End} 0
