@@ -1353,3 +1353,18 @@ links:
   - test: popover-anchor-change-display.html
   - test: popover-anchor-display.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1819242
+- product: firefox
+  results:
+  - subtest: A Popover should close a Popover.
+    test: popover-top-layer-interactions.html
+  - subtest: A Modal Dialog should close a Popover.
+    test: popover-top-layer-interactions.html
+  - subtest: A Fullscreen Element should close a Popover.
+    test: popover-top-layer-interactions.html
+  - subtest: A Popover should *not* close a Modal Dialog.
+    test: popover-top-layer-interactions.html
+  - subtest: A Popover should *not* close a Fullscreen Element.
+    test: popover-top-layer-interactions.html
+  - subtest: A Fullscreen Element should *not* close a Fullscreen Element.
+    test: popover-top-layer-interactions.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1820739
