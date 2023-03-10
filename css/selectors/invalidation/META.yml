@@ -978,7 +978,8 @@ links:
       results:
         - test: has-invalidation-after-removing-non-first-element.html
           subtest: 'initial_color: div#subject.color'
-    - label: interop-2023-has
+    - url: ""
+      label: interop-2023-has
       results:
         - test: has-with-not.html
         - test: child-indexed-pseudo-classes-in-has.html
@@ -1019,7 +1020,8 @@ links:
           subtest: Test :seeking pseudo-class
         - test: media-pseudo-classes-in-has.html
           subtest: Test :muted pseudo-class
-    - label: interop-2023-pseudos
+    - url: ""
+      label: interop-2023-pseudos
       results:
         - test: nth-child-of-class.html
         - test: nth-child-of-has.html
@@ -1060,3 +1062,15 @@ links:
       results:
         - test: nth-child-of-has.html
           subtest: Test status
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1818153
+      results:
+        - test: nth-child-of-in-ancestor.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1818152
+      results:
+        - test: nth-child-of-sibling.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1818154
+      results:
+        - test: nth-child-in-shadow-root.html
