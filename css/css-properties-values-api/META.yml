@@ -843,7 +843,8 @@ links:
           subtest: Rule applied [<transform-list>, rotateX(0deg), false]
         - test: at-property.html
           subtest: Rule applied [<transform-list>, rotateX(0deg) translateX(10px), false]
-    - label: interop-2023-property
+    - url: ""
+      label: interop-2023-property
       results:
         - test: at-property-cssom.html
         - test: at-property-shadow.html
@@ -967,3 +968,11 @@ links:
       results:
         - test: property-cascade.html
           subtest: Registering a property does not affect parsing
+        - test: registered-property-crosstalk.html
+        - test: registered-property-cssom.html
+        - test: register-property.html
+        - test: registered-property-change-style-001.html
+        - test: register-property-syntax-parsing.html
+        - test: registered-property-revert.html
+        - test: registered-property-computation.html
+        - test: registered-property-initial.html
