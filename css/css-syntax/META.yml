@@ -79,3 +79,12 @@ links:
   - subtest: Allow @-rule with semi-colon inside font-face rule
     test: at-rule-in-declaration-list.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1794227
+- product: firefox
+  results:
+  - subtest: Comments are handled correctly when computing a/* comment */var(--t1)
+      using t1:b.
+    test: serialize-consecutive-tokens.html
+  - subtest: Comments are handled correctly when computing var(--t1)b using t1:a/*
+      comment */.
+    test: serialize-consecutive-tokens.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1822054
