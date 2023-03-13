@@ -50,3 +50,18 @@ links:
       results:
         - test: order-interpolation.html
           status: FAIL
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1822203
+      results:
+        - test: flex-basis-interpolation.html
+          subtest: 'CSS Transitions: property <flex-basis> from [initial] to [2%] at (-0.3) should be [initial]'
+        - test: flex-basis-interpolation.html
+          subtest: 'CSS Transitions: property <flex-basis> from [initial] to [2%] at (0) should be [initial]'
+        - test: flex-basis-interpolation.html
+          subtest: 'CSS Transitions: property <flex-basis> from [initial] to [2%] at (0.3) should be [initial]'
+        - test: flex-basis-interpolation.html
+          subtest: 'CSS Transitions: property <flex-basis> from [unset] to [2%] at (-0.3) should be [unset]'
+        - test: flex-basis-interpolation.html
+          subtest: 'CSS Transitions: property <flex-basis> from [unset] to [2%] at (0) should be [unset]'
+        - test: flex-basis-interpolation.html
+          subtest: 'CSS Transitions: property <flex-basis> from [unset] to [2%] at (0.3) should be [unset]'
