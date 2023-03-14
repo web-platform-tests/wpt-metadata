@@ -599,3 +599,10 @@ links:
         - test: offset-anchor-composition.html
         - test: offset-interpolation.html
         - test: offset-path-interpolation-002.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1822203
+      results:
+        - test: offset-path-interpolation-005.html
+          subtest: 'CSS Transitions: property <offset-path> from [unset] to [ray(20deg closest-side)] at (0.3) should be [unset]'
+        - test: offset-path-interpolation-005.html
+          subtest: 'CSS Transitions: property <offset-path> from [ray(200deg sides contain)] to [ray(300deg sides)] at (0) should be [ray(200deg sides contain)]'
