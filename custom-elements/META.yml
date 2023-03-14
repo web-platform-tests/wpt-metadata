@@ -209,3 +209,12 @@ links:
       results:
         - test: CustomElementRegistry.html
           subtest: customElements.define must get four additional callbacks on the prototype if formAssociated is converted to true
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1419329
+      results:
+        - test: Document-createElement.html
+          subtest: document.createElement must report a NotSupportedError when the element is adopted into a the document of an iframe during construction
+        - test: Document-createElement.html
+          subtest: document.createElement must report a NotSupportedError when the element is inserted into a the document of an iframe during construction
+        - test: Document-createElement.html
+          subtest: document.createElement must not report a NotSupportedError when the element is adopted back from a the document of an iframe during construction
