@@ -599,3 +599,30 @@ links:
         - test: offset-anchor-composition.html
         - test: offset-interpolation.html
         - test: offset-path-interpolation-002.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1822203
+      results:
+        - test: offset-path-interpolation-001.html
+          subtest: 'CSS Transitions: property <offset-path> from [path(''M 0 0 H 1 H 2'')] to [path(''M 0 0 H 3'')] at (-0.3) should be [path(''M 0 0 H 1 H 2'')]'
+        - test: offset-path-interpolation-001.html
+          subtest: 'CSS Transitions: property <offset-path> from [path(''M 0 0 H 1 H 2'')] to [path(''M 0 0 H 3'')] at (0) should be [path(''M 0 0 H 1 H 2'')]'
+        - test: offset-path-interpolation-001.html
+          subtest: 'CSS Transitions: property <offset-path> from [path(''M 0 0 H 1 H 2'')] to [path(''M 0 0 H 3'')] at (0.3) should be [path(''M 0 0 H 1 H 2'')]'
+        - test: offset-path-interpolation-001.html
+          subtest: 'CSS Transitions: property <offset-path> from [path(''M 1 2 L 3 4 Z'')] to [none] at (-0.3) should be [path(''M 1 2 L 3 4 Z'')]'
+        - test: offset-path-interpolation-001.html
+          subtest: 'CSS Transitions: property <offset-path> from [path(''M 1 2 L 3 4 Z'')] to [none] at (0) should be [path(''M 1 2 L 3 4 Z'')]'
+        - test: offset-path-interpolation-001.html
+          subtest: 'CSS Transitions: property <offset-path> from [path(''M 1 2 L 3 4 Z'')] to [none] at (0.3) should be [path(''M 1 2 L 3 4 Z'')]'
+        - test: offset-path-interpolation-001.html
+          subtest: 'CSS Transitions: property <offset-path> from [path(''M 10 0 H 11'')] to [path(''M 20 0 V 2'')] at (-0.3) should be [path(''M 10 0 H 11'')]'
+        - test: offset-path-interpolation-001.html
+          subtest: 'CSS Transitions: property <offset-path> from [path(''M 10 0 H 11'')] to [path(''M 20 0 V 2'')] at (0) should be [path(''M 10 0 H 11'')]'
+        - test: offset-path-interpolation-001.html
+          subtest: 'CSS Transitions: property <offset-path> from [path(''M 10 0 H 11'')] to [path(''M 20 0 V 2'')] at (0.3) should be [path(''M 10 0 H 11'')]'
+        - test: offset-path-interpolation-001.html
+          subtest: 'CSS Transitions: property <offset-path> from [path(''M 1 2 L 4 6 Z'')] to [path(''M 1 2 H 4 V 6'')] at (-0.3) should be [path(''M 1 2 L 4 6 Z'')]'
+        - test: offset-path-interpolation-001.html
+          subtest: 'CSS Transitions: property <offset-path> from [path(''M 1 2 L 4 6 Z'')] to [path(''M 1 2 H 4 V 6'')] at (0) should be [path(''M 1 2 L 4 6 Z'')]'
+        - test: offset-path-interpolation-001.html
+          subtest: 'CSS Transitions: property <offset-path> from [path(''M 1 2 L 4 6 Z'')] to [path(''M 1 2 H 4 V 6'')] at (0.3) should be [path(''M 1 2 L 4 6 Z'')]'
