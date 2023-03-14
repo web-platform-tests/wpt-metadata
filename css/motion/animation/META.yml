@@ -599,3 +599,30 @@ links:
         - test: offset-anchor-composition.html
         - test: offset-interpolation.html
         - test: offset-path-interpolation-002.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1822203
+      results:
+        - test: offset-anchor-interpolation.html
+          subtest: 'CSS Transitions: property <offset-anchor> from [right 10px top 20%] to [auto] at (-0.3) should be [right 10px top 20%]'
+        - test: offset-anchor-interpolation.html
+          subtest: 'CSS Transitions: property <offset-anchor> from [right 10px top 20%] to [auto] at (0) should be [right 10px top 20%]'
+        - test: offset-anchor-interpolation.html
+          subtest: 'CSS Transitions: property <offset-anchor> from [right 10px top 20%] to [auto] at (0.3) should be [right 10px top 20%]'
+        - test: offset-anchor-interpolation.html
+          subtest: 'CSS Transitions: property <offset-anchor> from [initial] to [60% 40%] at (-0.3) should be [initial]'
+        - test: offset-anchor-interpolation.html
+          subtest: 'CSS Transitions: property <offset-anchor> from [initial] to [60% 40%] at (0) should be [initial]'
+        - test: offset-anchor-interpolation.html
+          subtest: 'CSS Transitions: property <offset-anchor> from [initial] to [60% 40%] at (0.3) should be [initial]'
+        - test: offset-anchor-interpolation.html
+          subtest: 'CSS Transitions: property <offset-anchor> from [unset] to [50% 10px] at (-0.3) should be [unset]'
+        - test: offset-anchor-interpolation.html
+          subtest: 'CSS Transitions: property <offset-anchor> from [unset] to [50% 10px] at (0) should be [unset]'
+        - test: offset-anchor-interpolation.html
+          subtest: 'CSS Transitions: property <offset-anchor> from [unset] to [50% 10px] at (0.3) should be [unset]'
+        - test: offset-anchor-interpolation.html
+          subtest: 'CSS Transitions: property <offset-anchor> from [auto] to [20px 20px] at (-0.3) should be [auto]'
+        - test: offset-anchor-interpolation.html
+          subtest: 'CSS Transitions: property <offset-anchor> from [auto] to [20px 20px] at (0) should be [auto]'
+        - test: offset-anchor-interpolation.html
+          subtest: 'CSS Transitions: property <offset-anchor> from [auto] to [20px 20px] at (0.3) should be [auto]'
