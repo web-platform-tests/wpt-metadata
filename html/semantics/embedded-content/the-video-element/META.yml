@@ -1,21 +1,26 @@
 links:
-    - product: safari
-      url: https://bugs.webkit.org/show_bug.cgi?id=148856
-      results:
-        - test: video_initially_paused.html
-          status: FAIL
-    - product: webkitgtk
-      url: https://bugs.webkit.org/show_bug.cgi?id=148856
-      results:
-        - test: video_initially_paused.html
-          status: FAIL
-    - product: webkitgtk
-      url: https://bugs.webkit.org/show_bug.cgi?id=206657
-      results:
-        - test: resize-during-playback.html
-          status: TIMEOUT
-    - product: chrome
-      url: https://bugs.chromium.org/p/chromium/issues/detail?id=1234202
-      results:
-        - test: intrinsic_sizes.htm
-        - test: video_initially_paused.html
+- product: safari
+  results:
+  - status: FAIL
+    test: video_initially_paused.html
+  url: https://bugs.webkit.org/show_bug.cgi?id=148856
+- product: webkitgtk
+  results:
+  - status: FAIL
+    test: video_initially_paused.html
+  url: https://bugs.webkit.org/show_bug.cgi?id=148856
+- product: webkitgtk
+  results:
+  - status: TIMEOUT
+    test: resize-during-playback.html
+  url: https://bugs.webkit.org/show_bug.cgi?id=206657
+- product: chrome
+  results:
+  - test: intrinsic_sizes.htm
+  - test: video_initially_paused.html
+  url: https://bugs.chromium.org/p/chromium/issues/detail?id=1234202
+- product: firefox
+  results:
+  - subtest: default object size after poster is removed
+    test: intrinsic_sizes.htm
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1822404
