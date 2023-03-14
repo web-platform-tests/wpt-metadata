@@ -28,3 +28,12 @@ links:
       results:
         - test: getStats.https.html
           subtest: Simulcast getStats results
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1803388
+      results:
+        - test: setParameters-encodings.https.html
+          subtest: Success task for setLocalDescription(answer) clears [[LastReturnedParameters]]
+        - test: setParameters-encodings.https.html
+          subtest: Success task for setRemoteDescription(offer) clears [[LastReturnedParameters]]
+        - test: setParameters-encodings.https.html
+          subtest: Success task for setRemoteDescription(answer) clears [[LastReturnedParameters]]
