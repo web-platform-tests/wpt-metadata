@@ -1,5 +1,10 @@
 links:
-    - product: chrome
-      url: https://bugs.chromium.org/p/chromium/issues/detail?id=266305
-      results:
-        - test: transformToFragment.tentative.window.html
+- product: chrome
+  results:
+  - test: transformToFragment.tentative.window.html
+  url: https://bugs.chromium.org/p/chromium/issues/detail?id=266305
+- product: firefox
+  results:
+  - subtest: unparsed-entity-uri
+    test: functions.tentative.window.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1823081
