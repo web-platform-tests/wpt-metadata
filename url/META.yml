@@ -193,21 +193,29 @@ links:
       results:
         - test: url-origin.any.html
           subtest: 'Origin parsing: <ssh://example.com/foo/bar.git> against <http://example.org/>'
+        - test: a-element-origin-xhtml.xhtml
+          subtest: 'Parsing origin: <ssh://example.com/foo/bar.git> against <http://example.org/>'
     - product: firefox
       url: https://bugzilla.mozilla.org/show_bug.cgi?id=1723456
       results:
         - test: url-origin.any.html
           subtest: 'Origin parsing: <http://999999999.> against <http://other.com/>'
+        - test: a-element-origin-xhtml.xhtml
+          subtest: 'Parsing origin: <http://999999999.> against <http://other.com/>'
     - product: firefox
       url: https://bugzilla.mozilla.org/show_bug.cgi?id=1815914
       results:
         - test: url-origin.any.html
           subtest: 'Origin parsing: <https://0x.0x.0> against <about:blank>'
+        - test: a-element-origin-xhtml.xhtml
+          subtest: 'Parsing origin: <https://0x.0x.0> against <about:blank>'
     - product: firefox
       url: https://bugzilla.mozilla.org/show_bug.cgi?id=1815925
       results:
         - test: url-origin.any.html
           subtest: 'Origin parsing: <http::b@www.example.com> against <about:blank>'
+        - test: a-element-origin-xhtml.xhtml
+          subtest: 'Parsing origin: <http::b@www.example.com> against <about:blank>'
     - product: firefox
       url: https://bugzilla.mozilla.org/show_bug.cgi?id=1815926
       results:
@@ -215,6 +223,10 @@ links:
           subtest: 'Origin parsing: <http://!"$&''()*+,-.;=_`{}~/> against <about:blank>'
         - test: url-origin.any.html
           subtest: 'Origin parsing: <wss://!"$&''()*+,-.;=_`{}~/> against <about:blank>'
+        - test: a-element-origin-xhtml.xhtml
+          subtest: 'Parsing origin: <http://!"$&''()*+,-.;=_`{}~/> against <about:blank>'
+        - test: a-element-origin-xhtml.xhtml
+          subtest: 'Parsing origin: <wss://!"$&''()*+,-.;=_`{}~/> against <about:blank>'
     - product: firefox
       url: https://bugzilla.mozilla.org/show_bug.cgi?id=1815932
       results:
