@@ -1,6 +1,5 @@
 links:
-    - url: ""
-      label: interop-2021-transforms
+    - label: interop-2021-transforms
       results:
         - test: composited-transform.html
         - test: list-interpolation.html
@@ -172,3 +171,12 @@ links:
       url: https://b.webkit.org/show_bug.cgi?id=235785
       results:
         - test: translate-composition.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1734479
+      results:
+        - test: transform-interpolation-005.html
+          subtest: 'CSS Transitions with transition: all: property <transform> from [matrix3d(0.571428571428571, -0.625, -0.8333333333333346, -0.66666666666669, 0.5, -0.1875, -0.8125, 0.3125, 0.34375, -1, 0.8333333333333327, 1.34375, -1.34375, 1, -0.9375, 1)] to [none] at (1) should be [matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)]'
+        - test: transform-interpolation-005.html
+          subtest: 'CSS Animations: property <transform> from [matrix3d(0.571428571428571, -0.625, -0.8333333333333346, -0.66666666666669, 0.5, -0.1875, -0.8125, 0.3125, 0.34375, -1, 0.8333333333333327, 1.34375, -1.34375, 1, -0.9375, 1)] to [none] at (1) should be [matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)]'
+        - test: transform-interpolation-005.html
+          subtest: 'Web Animations: property <transform> from [matrix3d(0.571428571428571, -0.625, -0.8333333333333346, -0.66666666666669, 0.5, -0.1875, -0.8125, 0.3125, 0.34375, -1, 0.8333333333333327, 1.34375, -1.34375, 1, -0.9375, 1)] to [none] at (1) should be [matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)]'
