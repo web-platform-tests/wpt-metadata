@@ -1,6 +1,5 @@
 links:
-    - url: ""
-      label: interop-2021-transforms
+    - label: interop-2021-transforms
       results:
         - test: composited-transform.html
         - test: list-interpolation.html
@@ -172,3 +171,24 @@ links:
       url: https://b.webkit.org/show_bug.cgi?id=235785
       results:
         - test: translate-composition.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1822203
+      results:
+        - test: perspective-interpolation.html
+          subtest: 'CSS Transitions: property <perspective> from [initial] to [20px] at (-0.3) should be [initial]'
+        - test: perspective-interpolation.html
+          subtest: 'CSS Transitions: property <perspective> from [initial] to [20px] at (0) should be [initial]'
+        - test: perspective-interpolation.html
+          subtest: 'CSS Transitions: property <perspective> from [initial] to [20px] at (0.3) should be [initial]'
+        - test: perspective-interpolation.html
+          subtest: 'CSS Transitions: property <perspective> from [unset] to [20px] at (-0.3) should be [unset]'
+        - test: perspective-interpolation.html
+          subtest: 'CSS Transitions: property <perspective> from [unset] to [20px] at (0) should be [unset]'
+        - test: perspective-interpolation.html
+          subtest: 'CSS Transitions: property <perspective> from [unset] to [20px] at (0.3) should be [unset]'
+        - test: perspective-interpolation.html
+          subtest: 'CSS Transitions: property <perspective> from [50px] to [none] at (-0.3) should be [50px]'
+        - test: perspective-interpolation.html
+          subtest: 'CSS Transitions: property <perspective> from [50px] to [none] at (0) should be [50px]'
+        - test: perspective-interpolation.html
+          subtest: 'CSS Transitions: property <perspective> from [50px] to [none] at (0.3) should be [50px]'
