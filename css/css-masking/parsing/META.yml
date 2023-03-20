@@ -90,3 +90,24 @@ links:
           subtest: e.style['clip-path'] = "ellipse(1px closest-side)" should set the property value
         - test: clip-path-valid.html
           subtest: e.style['clip-path'] = "ellipse(farthest-side 4% at bottom left)" should set the property value
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1823479
+      results:
+        - test: mask-position-valid.html
+          subtest: e.style['mask-position'] = "10%" should set the property value
+        - test: mask-position-valid.html
+          subtest: e.style['mask-position'] = "30px center" should set the property value
+        - test: mask-position-valid.html
+          subtest: e.style['mask-position'] = "center bottom" should set the property value
+        - test: mask-position-valid.html
+          subtest: e.style['mask-position'] = "center left" should set the property value
+        - test: mask-position-valid.html
+          subtest: e.style['mask-position'] = "left" should set the property value
+        - test: mask-position-valid.html
+          subtest: e.style['mask-position'] = "top" should set the property value
+        - test: mask-position-valid.html
+          subtest: e.style['mask-position'] = "top center" should set the property value
+        - test: mask-position-valid.html
+          subtest: e.style['mask-position'] = "center" should set the property value
+        - test: mask-position-valid.html
+          subtest: e.style['mask-position'] = "top, center, left" should set the property value
