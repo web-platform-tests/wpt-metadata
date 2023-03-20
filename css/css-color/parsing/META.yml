@@ -487,3 +487,26 @@ links:
       results:
         - test: color-computed-color-function.html
           subtest: Property color value 'color(display-p3 184 1.00001 2347329746587)' [Display P3 color with component > 1 should not clamp]
+    - product: chrome
+      url: https://crbug.com/1425856
+      results:
+        - test: color-valid-color-mix-function.html
+          subtest: e.style['color'] = "color-mix(in hwb, hwb(20deg 30% 40%), hwb(320deg 30% 40%))" should set the property value
+        - test: color-valid-color-mix-function.html
+          subtest: e.style['color'] = "color-mix(in hwb, hwb(320deg 30% 40%), hwb(20deg 30% 40%))" should set the property value
+        - test: color-valid-color-mix-function.html
+          subtest: e.style['color'] = "color-mix(in hwb shorter hue, hwb(20deg 30% 40%), hwb(320deg 30% 40%))" should set the property value
+        - test: color-valid-color-mix-function.html
+          subtest: e.style['color'] = "color-mix(in hwb shorter hue, hwb(320deg 30% 40%), hwb(20deg 30% 40%))" should set the property value
+        - test: color-valid-color-mix-function.html
+          subtest: e.style['color'] = "color-mix(in hwb longer hue, hwb(20deg 30% 40%), hwb(320deg 30% 40%))" should set the property value
+        - test: color-valid-color-mix-function.html
+          subtest: e.style['color'] = "color-mix(in hwb longer hue, hwb(320deg 30% 40%), hwb(20deg 30% 40%))" should set the property value
+        - test: color-valid-color-mix-function.html
+          subtest: e.style['color'] = "color-mix(in hwb increasing hue, hwb(20deg 30% 40%), hwb(320deg 30% 40%))" should set the property value
+        - test: color-valid-color-mix-function.html
+          subtest: e.style['color'] = "color-mix(in hwb increasing hue, hwb(320deg 30% 40%), hwb(20deg 30% 40%))" should set the property value
+        - test: color-valid-color-mix-function.html
+          subtest: e.style['color'] = "color-mix(in hwb decreasing hue, hwb(20deg 30% 40%), hwb(320deg 30% 40%))" should set the property value
+        - test: color-valid-color-mix-function.html
+          subtest: e.style['color'] = "color-mix(in hwb decreasing hue, hwb(320deg 30% 40%), hwb(20deg 30% 40%))" should set the property value
