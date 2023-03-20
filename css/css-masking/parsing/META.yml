@@ -71,3 +71,22 @@ links:
           subtest: e.style['clip-path'] = "shape(from 10% 1rem, arc to 50px 1pt of 20% cw large rotate 25deg)" should set the property value
         - test: clip-path-shape-parsing.html
           subtest: e.style['clip-path'] = "shape(evenodd from 0px 0px, close)" should set the property value
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1823475
+      results:
+        - test: clip-path-valid.html
+          subtest: e.style['clip-path'] = "circle()" should set the property value
+        - test: clip-path-valid.html
+          subtest: e.style['clip-path'] = "circle(1px)" should set the property value
+        - test: clip-path-valid.html
+          subtest: e.style['clip-path'] = "circle(closest-side)" should set the property value
+        - test: clip-path-valid.html
+          subtest: e.style['clip-path'] = "circle(farthest-side at center top)" should set the property value
+        - test: clip-path-valid.html
+          subtest: e.style['clip-path'] = "circle(4% at top right)" should set the property value
+        - test: clip-path-valid.html
+          subtest: e.style['clip-path'] = "ellipse()" should set the property value
+        - test: clip-path-valid.html
+          subtest: e.style['clip-path'] = "ellipse(1px closest-side)" should set the property value
+        - test: clip-path-valid.html
+          subtest: e.style['clip-path'] = "ellipse(farthest-side 4% at bottom left)" should set the property value
