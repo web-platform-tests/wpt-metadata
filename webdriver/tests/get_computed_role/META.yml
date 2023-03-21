@@ -1,17 +1,8 @@
 links:
     - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1752115
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1822112
       results:
         - test: get.py
-          subtest: test_no_browsing_context
+          subtest: test_computed_roles[<img role=presentation>-img-presentation]
         - test: get.py
           subtest: test_computed_roles[<input role=searchbox>-input-searchbox]
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1788867
-      results:
-        - test: get.py
-          subtest: test_computed_roles[<li role=menuitem>foo-li-menuitem]
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1585622
-      results:
-        - test: '*'

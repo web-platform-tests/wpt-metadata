@@ -13,15 +13,6 @@ links:
         - test: exception_details.py
           subtest: test_exception_details[new ArrayBuffer()-expected29-False]
         - test: exception_details.py
-          subtest: test_exception_details[window-expected31-False]
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1770731
-      results:
-        - test: exception_details.py
-          subtest: test_exception_details[document.createElement('div')-expected30-True]
-        - test: exception_details.py
           subtest: test_exception_details[document.createElement('div')-expected30-False]
-        - test: result.py
-          subtest: test_remote_values[document.createElement('div')-expected16-True]
-        - test: result.py
-          subtest: test_remote_values[document.createElement('div')-expected16-False]
+        - test: exception_details.py
+          subtest: test_exception_details[window-expected31-False]
