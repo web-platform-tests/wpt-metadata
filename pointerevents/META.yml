@@ -213,3 +213,14 @@ links:
         - test: pointerevent_click_is_a_pointerevent_multiple_clicks.html?mouse
         - test: pointerevent_click_is_a_pointerevent.html?mouse
         - test: pointerevent_contextmenu_is_a_pointerevent.html?mouse
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1823658
+      results:
+        - test: pointerevent_after_target_removed.html?mouse
+          subtest: pointer events from mouse at parent after child is removed at pointerdown
+        - test: pointerevent_after_target_removed.html?mouse
+          subtest: mouse events from mouse at parent after child is removed at pointerdown
+        - test: pointerevent_after_target_removed.html?mouse
+          subtest: pointer events from mouse at parent after child is removed at pointerup
+        - test: pointerevent_after_target_removed.html?mouse
+          subtest: mouse events from mouse at parent after child is removed at pointerup
