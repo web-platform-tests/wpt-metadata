@@ -1744,3 +1744,21 @@ links:
   - subtest: A <wbr popover> element should not be rendered.
     test: popover-attribute-all-elements.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1821835
+- product: firefox
+  results:
+  - subtest: Disabling popover*target buttons when popovers are open should still
+      cause all popovers to be closed when the formerly outer popover is closed.
+    test: popover-target-element-disabled.html
+  - subtest: Disabling popover*target buttons when popovers are open should still
+      cause all popovers to be closed when the formerly inner popover is closed.
+    test: popover-target-element-disabled.html
+  - subtest: Setting the form attribute on popover*target buttons when popovers are
+      open should close all popovers.
+    test: popover-target-element-disabled.html
+  - subtest: Changing the input type on a popover*target button when popovers are
+      open should close all popovers.
+    test: popover-target-element-disabled.html
+  - subtest: Disconnecting popover*target buttons when popovers are open should close
+      all popovers.
+    test: popover-target-element-disabled.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1823867
