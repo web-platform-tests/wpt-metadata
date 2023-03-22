@@ -1,6 +1,31 @@
 links:
-    - product: chrome
-      url: https://bugs.chromium.org/p/chromium/issues/detail?id=1188610
-      results:
-        - test: cssUnitValue.html
-        - test: numeric-factory.tentative.html
+- product: chrome
+  results:
+  - test: cssUnitValue.html
+  - test: numeric-factory.tentative.html
+  url: https://bugs.chromium.org/p/chromium/issues/detail?id=1188610
+- product: firefox
+  results:
+  - subtest: Parsing an invalid string throws SyntaxError
+    test: parse.tentative.html
+  - subtest: Parsing a string with a non numeric token throws SyntaxError
+    test: parse.tentative.html
+  - subtest: Parsing a string with left over numeric tokens throws SyntaxError
+    test: parse.tentative.html
+  - subtest: Parsing a calc with incompatible units throws a SyntaxError
+    test: parse.tentative.html
+  - subtest: Parsing a <dimension-token> with invalid units throws a SyntaxError
+    test: parse.tentative.html
+  - subtest: Parsing ignores surrounding spaces
+    test: parse.tentative.html
+  - subtest: Parsing min() is successful
+    test: parse.tentative.html
+  - subtest: Parsing max() is successful
+    test: parse.tentative.html
+  - subtest: Parsing clamp() is successful
+    test: parse.tentative.html
+  - subtest: Parsing sum of multiple min() is successful
+    test: parse.tentative.html
+  - subtest: Parsing product of multiple min() is successful
+    test: parse.tentative.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1823846
