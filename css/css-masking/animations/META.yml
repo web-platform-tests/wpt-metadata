@@ -19,7 +19,8 @@ links:
       url: https://b.webkit.org/show_bug.cgi?id=235798
       results:
         - test: mask-image-interpolation.html
-    - label: interop-2023-cssmasking
+    - url: ""
+      label: interop-2023-cssmasking
       results:
         - test: clip-path-interpolation-shape.html
         - test: mask-image-interpolation.html
@@ -34,3 +35,58 @@ links:
         - test: clip-path-interpolation-shape.html
         - test: clip-path-interpolation-001.html
         - test: clip-path-interpolation-002.html
+        - test: clip-interpolation.html
+        - test: mask-image-interpolation.html
+          subtest: 'CSS Transitions: property <mask-image> from [initial] to [url(../resources/green-20.png)] at (-0.3) should be [initial]'
+        - test: mask-image-interpolation.html
+          subtest: 'CSS Transitions: property <mask-image> from [initial] to [url(../resources/green-20.png)] at (0) should be [initial]'
+        - test: mask-image-interpolation.html
+          subtest: 'CSS Transitions: property <mask-image> from [initial] to [url(../resources/green-20.png)] at (0.3) should be [initial]'
+        - test: mask-image-interpolation.html
+          subtest: 'CSS Transitions: property <mask-image> from [inherit] to [url(../resources/green-20.png)] at (-0.3) should be [inherit]'
+        - test: mask-image-interpolation.html
+          subtest: 'CSS Transitions: property <mask-image> from [inherit] to [url(../resources/green-20.png)] at (0) should be [inherit]'
+        - test: mask-image-interpolation.html
+          subtest: 'CSS Transitions: property <mask-image> from [inherit] to [url(../resources/green-20.png)] at (0.3) should be [inherit]'
+        - test: mask-image-interpolation.html
+          subtest: 'CSS Transitions: property <mask-image> from [unset] to [url(../resources/stripes-20.png)] at (-0.3) should be [unset]'
+        - test: mask-image-interpolation.html
+          subtest: 'CSS Transitions: property <mask-image> from [unset] to [url(../resources/stripes-20.png)] at (0) should be [unset]'
+        - test: mask-image-interpolation.html
+          subtest: 'CSS Transitions: property <mask-image> from [unset] to [url(../resources/stripes-20.png)] at (0.3) should be [unset]'
+        - test: mask-image-interpolation.html
+          subtest: 'CSS Transitions: property <mask-image> from [url(../resources/stripes-20.png)] to [url(../resources/blue-20.png)] at (-0.3) should be [url(../resources/stripes-20.png)]'
+        - test: mask-image-interpolation.html
+          subtest: 'CSS Transitions: property <mask-image> from [url(../resources/stripes-20.png)] to [url(../resources/blue-20.png)] at (0) should be [url(../resources/stripes-20.png)]'
+        - test: mask-image-interpolation.html
+          subtest: 'CSS Transitions: property <mask-image> from [url(../resources/stripes-20.png)] to [url(../resources/blue-20.png)] at (0.3) should be [url(../resources/stripes-20.png)]'
+        - test: mask-image-interpolation.html
+          subtest: 'CSS Transitions: property <mask-image> from [url(../resources/stripes-20.png)] to [linear-gradient(45deg, blue, transparent)] at (-0.3) should be [url(../resources/stripes-20.png)]'
+        - test: mask-image-interpolation.html
+          subtest: 'CSS Transitions: property <mask-image> from [url(../resources/stripes-20.png)] to [linear-gradient(45deg, blue, transparent)] at (0) should be [url(../resources/stripes-20.png)]'
+        - test: mask-image-interpolation.html
+          subtest: 'CSS Transitions: property <mask-image> from [url(../resources/stripes-20.png)] to [linear-gradient(45deg, blue, transparent)] at (0.3) should be [url(../resources/stripes-20.png)]'
+        - test: mask-image-interpolation.html
+          subtest: 'CSS Transitions: property <mask-image> from [none] to [url(../resources/green-20.png)] at (-0.3) should be [none]'
+        - test: mask-image-interpolation.html
+          subtest: 'CSS Transitions: property <mask-image> from [none] to [url(../resources/green-20.png)] at (0) should be [none]'
+        - test: mask-image-interpolation.html
+          subtest: 'CSS Transitions: property <mask-image> from [none] to [url(../resources/green-20.png)] at (0.3) should be [none]'
+        - test: mask-image-interpolation.html
+          subtest: 'CSS Transitions: property <mask-image> from [url(../resources/stripes-20.png), linear-gradient(-45deg, blue, transparent)] to [url(../resources/blue-20.png), url(../resources/stripes-20.png)] at (-0.3) should be [url(../resources/stripes-20.png), linear-gradient(-45deg, blue, transparent)]'
+        - test: mask-image-interpolation.html
+          subtest: 'CSS Transitions: property <mask-image> from [url(../resources/stripes-20.png), linear-gradient(-45deg, blue, transparent)] to [url(../resources/blue-20.png), url(../resources/stripes-20.png)] at (0) should be [url(../resources/stripes-20.png), linear-gradient(-45deg, blue, transparent)]'
+        - test: mask-image-interpolation.html
+          subtest: 'CSS Transitions: property <mask-image> from [url(../resources/stripes-20.png), linear-gradient(-45deg, blue, transparent)] to [url(../resources/blue-20.png), url(../resources/stripes-20.png)] at (0.3) should be [url(../resources/stripes-20.png), linear-gradient(-45deg, blue, transparent)]'
+        - test: mask-image-interpolation.html
+          subtest: 'CSS Transitions: property <mask-image> from [url(../resources/blue-20.png)] to [url(../resources/stripes-20.png), url(../resources/blue-20.png)] at (-0.3) should be [url(../resources/blue-20.png)]'
+        - test: mask-image-interpolation.html
+          subtest: 'CSS Transitions: property <mask-image> from [url(../resources/blue-20.png)] to [url(../resources/stripes-20.png), url(../resources/blue-20.png)] at (0) should be [url(../resources/blue-20.png)]'
+        - test: mask-image-interpolation.html
+          subtest: 'CSS Transitions: property <mask-image> from [url(../resources/blue-20.png)] to [url(../resources/stripes-20.png), url(../resources/blue-20.png)] at (0.3) should be [url(../resources/blue-20.png)]'
+        - test: mask-image-interpolation.html
+          subtest: 'CSS Transitions: property <mask-image> from [url(../resources/blue-20.png), none] to [url(../resources/stripes-20.png), url(../resources/blue-20.png)] at (-0.3) should be [url(../resources/blue-20.png), none]'
+        - test: mask-image-interpolation.html
+          subtest: 'CSS Transitions: property <mask-image> from [url(../resources/blue-20.png), none] to [url(../resources/stripes-20.png), url(../resources/blue-20.png)] at (0) should be [url(../resources/blue-20.png), none]'
+        - test: mask-image-interpolation.html
+          subtest: 'CSS Transitions: property <mask-image> from [url(../resources/blue-20.png), none] to [url(../resources/stripes-20.png), url(../resources/blue-20.png)] at (0.3) should be [url(../resources/blue-20.png), none]'
