@@ -577,3 +577,78 @@ links:
           subtest: e.style['color'] = "oklch(calc(NaN) 0 0)" should set the property value
         - test: color-valid-lab.html
           subtest: e.style['color'] = "oklch(calc(0 / 0) 0 0)" should set the property value
+    - product: chrome
+      url: https://crbug.com/1428845
+      results:
+        - test: color-valid-color-function.html
+          subtest: e.style['color'] = "color(srgb 0 calc(infinity) 0)" should set the property value
+        - test: color-valid-color-function.html
+          subtest: e.style['color'] = "color(srgb 0 calc(-infinity) 0)" should set the property value
+        - test: color-valid-color-function.html
+          subtest: e.style['color'] = "color(srgb calc(NaN) 0 0)" should set the property value
+        - test: color-valid-color-function.html
+          subtest: e.style['color'] = "color(srgb calc(0 / 0) 0 0)" should set the property value
+        - test: color-valid-color-function.html
+          subtest: e.style['color'] = "color(srgb-linear 0 calc(infinity) 0)" should set the property value
+        - test: color-valid-color-function.html
+          subtest: e.style['color'] = "color(srgb-linear 0 calc(-infinity) 0)" should set the property value
+        - test: color-valid-color-function.html
+          subtest: e.style['color'] = "color(srgb-linear calc(NaN) 0 0)" should set the property value
+        - test: color-valid-color-function.html
+          subtest: e.style['color'] = "color(srgb-linear calc(0 / 0) 0 0)" should set the property value
+        - test: color-valid-color-function.html
+          subtest: e.style['color'] = "color(a98-rgb 0 calc(infinity) 0)" should set the property value
+        - test: color-valid-color-function.html
+          subtest: e.style['color'] = "color(a98-rgb 0 calc(-infinity) 0)" should set the property value
+        - test: color-valid-color-function.html
+          subtest: e.style['color'] = "color(a98-rgb calc(NaN) 0 0)" should set the property value
+        - test: color-valid-color-function.html
+          subtest: e.style['color'] = "color(a98-rgb calc(0 / 0) 0 0)" should set the property value
+        - test: color-valid-color-function.html
+          subtest: e.style['color'] = "color(rec2020 0 calc(infinity) 0)" should set the property value
+        - test: color-valid-color-function.html
+          subtest: e.style['color'] = "color(rec2020 0 calc(-infinity) 0)" should set the property value
+        - test: color-valid-color-function.html
+          subtest: e.style['color'] = "color(rec2020 calc(NaN) 0 0)" should set the property value
+        - test: color-valid-color-function.html
+          subtest: e.style['color'] = "color(rec2020 calc(0 / 0) 0 0)" should set the property value
+        - test: color-valid-color-function.html
+          subtest: e.style['color'] = "color(prophoto-rgb 0 calc(infinity) 0)" should set the property value
+        - test: color-valid-color-function.html
+          subtest: e.style['color'] = "color(prophoto-rgb 0 calc(-infinity) 0)" should set the property value
+        - test: color-valid-color-function.html
+          subtest: e.style['color'] = "color(prophoto-rgb calc(NaN) 0 0)" should set the property value
+        - test: color-valid-color-function.html
+          subtest: e.style['color'] = "color(prophoto-rgb calc(0 / 0) 0 0)" should set the property value
+        - test: color-valid-color-function.html
+          subtest: e.style['color'] = "color(display-p3 0 calc(infinity) 0)" should set the property value
+        - test: color-valid-color-function.html
+          subtest: e.style['color'] = "color(display-p3 0 calc(-infinity) 0)" should set the property value
+        - test: color-valid-color-function.html
+          subtest: e.style['color'] = "color(display-p3 calc(NaN) 0 0)" should set the property value
+        - test: color-valid-color-function.html
+          subtest: e.style['color'] = "color(display-p3 calc(0 / 0) 0 0)" should set the property value
+        - test: color-valid-color-function.html
+          subtest: e.style['color'] = "color(xyz 0 calc(infinity) 0)" should set the property value
+        - test: color-valid-color-function.html
+          subtest: e.style['color'] = "color(xyz 0 calc(-infinity) 0)" should set the property value
+        - test: color-valid-color-function.html
+          subtest: e.style['color'] = "color(xyz calc(NaN) 0 0)" should set the property value
+        - test: color-valid-color-function.html
+          subtest: e.style['color'] = "color(xyz calc(0 / 0) 0 0)" should set the property value
+        - test: color-valid-color-function.html
+          subtest: e.style['color'] = "color(xyz-d50 0 calc(infinity) 0)" should set the property value
+        - test: color-valid-color-function.html
+          subtest: e.style['color'] = "color(xyz-d50 0 calc(-infinity) 0)" should set the property value
+        - test: color-valid-color-function.html
+          subtest: e.style['color'] = "color(xyz-d50 calc(NaN) 0 0)" should set the property value
+        - test: color-valid-color-function.html
+          subtest: e.style['color'] = "color(xyz-d50 calc(0 / 0) 0 0)" should set the property value
+        - test: color-valid-color-function.html
+          subtest: e.style['color'] = "color(xyz-d65 0 calc(infinity) 0)" should set the property value
+        - test: color-valid-color-function.html
+          subtest: e.style['color'] = "color(xyz-d65 0 calc(-infinity) 0)" should set the property value
+        - test: color-valid-color-function.html
+          subtest: e.style['color'] = "color(xyz-d65 calc(NaN) 0 0)" should set the property value
+        - test: color-valid-color-function.html
+          subtest: e.style['color'] = "color(xyz-d65 calc(0 / 0) 0 0)" should set the property value
