@@ -510,3 +510,34 @@ links:
           subtest: e.style['color'] = "color-mix(in hwb decreasing hue, hwb(20deg 30% 40%), hwb(320deg 30% 40%))" should set the property value
         - test: color-valid-color-mix-function.html
           subtest: e.style['color'] = "color-mix(in hwb decreasing hue, hwb(320deg 30% 40%), hwb(20deg 30% 40%))" should set the property value
+    - product: chrome
+      url: https://crbug.com/1428840
+      results:
+        - test: color-computed-lab.html
+          subtest: Property color value 'lab(400 0 10/50%)'
+        - test: color-computed-lab.html
+          subtest: Property color value 'lab(calc(50 * 3) calc(0.5 - 1) calc(1.5) / calc(-0.5 + 1))'
+        - test: color-computed-lab.html
+          subtest: Property color value 'lab(calc(NaN) 0 0)'
+        - test: color-computed-lab.html
+          subtest: Property color value 'lab(calc(0 / 0) 0 0)'
+        - test: color-computed-lab.html
+          subtest: Property color value 'oklab(4 0 0.1/50%)'
+        - test: color-computed-lab.html
+          subtest: Property color value 'oklab(calc(0.5 * 3) calc(0.5 - 1) calc(1.5) / calc(-0.5 + 1))'
+        - test: color-computed-lab.html
+          subtest: Property color value 'oklab(calc(NaN) 0 0)'
+        - test: color-computed-lab.html
+          subtest: Property color value 'oklab(calc(0 / 0) 0 0)'
+        - test: color-computed-lab.html
+          subtest: Property color value 'lch(calc(50 * 3) calc(0.5 - 1) calc(20deg * 2) / calc(-0.5 + 1))'
+        - test: color-computed-lab.html
+          subtest: Property color value 'lch(calc(NaN) 0 0)'
+        - test: color-computed-lab.html
+          subtest: Property color value 'lch(calc(0 / 0) 0 0)'
+        - test: color-computed-lab.html
+          subtest: Property color value 'oklch(calc(0.5 * 3) calc(0.5 - 1) calc(20deg * 2) / calc(-0.5 + 1))'
+        - test: color-computed-lab.html
+          subtest: Property color value 'oklch(calc(NaN) 0 0)'
+        - test: color-computed-lab.html
+          subtest: Property color value 'oklch(calc(0 / 0) 0 0)'
