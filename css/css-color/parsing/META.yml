@@ -577,3 +577,18 @@ links:
           subtest: e.style['color'] = "oklch(calc(NaN) 0 0)" should set the property value
         - test: color-valid-lab.html
           subtest: e.style['color'] = "oklch(calc(0 / 0) 0 0)" should set the property value
+    - product: chrome
+      url: https://crbug.com/1428845
+      results:
+        - test: color-valid-lab.html
+          subtest: e.style['color'] = "lab(50 calc(infinity) 0)" should set the property value
+        - test: color-valid-lab.html
+          subtest: e.style['color'] = "lab(50 calc(-infinity) 0)" should set the property value
+        - test: color-valid-lab.html
+          subtest: e.style['color'] = "oklab(0.5 calc(infinity) 0)" should set the property value
+        - test: color-valid-lab.html
+          subtest: e.style['color'] = "oklab(0.5 calc(-infinity) 0)" should set the property value
+        - test: color-valid-lab.html
+          subtest: e.style['color'] = "lch(50 calc(infinity) 0)" should set the property value
+        - test: color-valid-lab.html
+          subtest: e.style['color'] = "oklch(0.5 calc(infinity) 0)" should set the property value
