@@ -158,7 +158,8 @@ links:
       url: https://bugzilla.mozilla.org/show_bug.cgi?id=1748184
       results:
         - test: predefined-016.html
-    - label: interop-2022-color
+    - url: ""
+      label: interop-2022-color
       results:
         - test: t424-hsl-clip-outside-gamut-b.xht
         - test: t424-hsl-values-b-6.html
@@ -362,6 +363,11 @@ links:
         - test: currentcolor-003.html
     - product: firefox
       url: https://wpt.fyi/results/css/css-color/lch-005.html?label=experimental&label=master&aligned
+      results:
+        - test: lch-005.html
+          subtest: Test status
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1824628
       results:
         - test: lch-005.html
           subtest: Test status

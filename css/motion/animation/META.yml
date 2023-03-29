@@ -582,7 +582,8 @@ links:
       url: https://b.webkit.org/show_bug.cgi?id=235786
       results:
         - test: offset-rotate-composition.html
-    - label: interop-2023-motion
+    - url: ""
+      label: interop-2023-motion
       results:
         - test: offset-position-interpolation.html
         - test: offset-rotate-composition.html
@@ -764,3 +765,111 @@ links:
           subtest: 'CSS Transitions: property <offset-rotate> from [300deg] to [reverse 20deg] at (0) should be [300deg]'
         - test: offset-rotate-interpolation.html
           subtest: 'CSS Transitions: property <offset-rotate> from [300deg] to [reverse 20deg] at (0.3) should be [300deg]'
+        - test: offset-position-interpolation.html
+          subtest: 'CSS Transitions: property <offset-position> from [right 10px top 20%] to [auto] at (-0.3) should be [right 10px top 20%]'
+        - test: offset-position-interpolation.html
+          subtest: 'CSS Transitions: property <offset-position> from [right 10px top 20%] to [auto] at (0) should be [right 10px top 20%]'
+        - test: offset-position-interpolation.html
+          subtest: 'CSS Transitions: property <offset-position> from [right 10px top 20%] to [auto] at (0.3) should be [right 10px top 20%]'
+        - test: offset-position-interpolation.html
+          subtest: 'CSS Transitions: property <offset-position> from [initial] to [20px 20px] at (-0.3) should be [initial]'
+        - test: offset-position-interpolation.html
+          subtest: 'CSS Transitions: property <offset-position> from [initial] to [20px 20px] at (0) should be [initial]'
+        - test: offset-position-interpolation.html
+          subtest: 'CSS Transitions: property <offset-position> from [initial] to [20px 20px] at (0.3) should be [initial]'
+        - test: offset-position-interpolation.html
+          subtest: 'CSS Transitions: property <offset-position> from [unset] to [20px 20px] at (-0.3) should be [unset]'
+        - test: offset-position-interpolation.html
+          subtest: 'CSS Transitions: property <offset-position> from [unset] to [20px 20px] at (0) should be [unset]'
+        - test: offset-position-interpolation.html
+          subtest: 'CSS Transitions: property <offset-position> from [unset] to [20px 20px] at (0.3) should be [unset]'
+        - test: offset-position-interpolation.html
+          subtest: 'CSS Transitions: property <offset-position> from [auto] to [20px 20px] at (-0.3) should be [auto]'
+        - test: offset-position-interpolation.html
+          subtest: 'CSS Transitions: property <offset-position> from [auto] to [20px 20px] at (0.3) should be [auto]'
+        - test: offset-position-interpolation.html
+          subtest: 'CSS Transitions: property <offset-position> from [auto] to [20px 20px] at (0) should be [auto]'
+        - test: offset-interpolation.html
+          subtest: 'CSS Transitions: property <offset> from [path("M0 200H 700") 500px 800deg] to [path("M0 300H 700 Z") 600px 900deg] at (-0.3) should be [path("M0 200H 700") 470px 770deg]'
+        - test: offset-interpolation.html
+          subtest: 'CSS Transitions: property <offset> from [path("M0 200H 700") 500px 800deg] to [path("M0 300H 700 Z") 600px 900deg] at (0) should be [path("M0 200H 700") 500px 800deg]'
+        - test: offset-interpolation.html
+          subtest: 'CSS Transitions: property <offset> from [path("M0 200H 700") 500px 800deg] to [path("M0 300H 700 Z") 600px 900deg] at (0.3) should be [path("M0 200H 700") 530px 830deg]'
+        - test: offset-interpolation.html
+          subtest: 'CSS Transitions: property <offset> from [path("M0 0H 200") 500px auto] to [path("M0 0H 300") 600px 0deg] at (-0.3) should be [path("M0 0H 170") 470px auto 0deg]'
+        - test: offset-interpolation.html
+          subtest: 'CSS Transitions: property <offset> from [path("M0 0H 200") 500px auto] to [path("M0 0H 300") 600px 0deg] at (0) should be [path("M0 0H 200") 500px auto 0deg]'
+        - test: offset-interpolation.html
+          subtest: 'CSS Transitions: property <offset> from [path("M0 0H 200") 500px auto] to [path("M0 0H 300") 600px 0deg] at (0.3) should be [path("M0 0H 230") 530px auto 0deg]'
+        - test: offset-path-interpolation-001.html
+          subtest: 'CSS Transitions: property <offset-path> from [path(''M 0 0 H 1 H 2'')] to [path(''M 0 0 H 3'')] at (-0.3) should be [path(''M 0 0 H 1 H 2'')]'
+        - test: offset-path-interpolation-001.html
+          subtest: 'CSS Transitions: property <offset-path> from [path(''M 0 0 H 1 H 2'')] to [path(''M 0 0 H 3'')] at (0) should be [path(''M 0 0 H 1 H 2'')]'
+        - test: offset-path-interpolation-001.html
+          subtest: 'CSS Transitions: property <offset-path> from [path(''M 0 0 H 1 H 2'')] to [path(''M 0 0 H 3'')] at (0.3) should be [path(''M 0 0 H 1 H 2'')]'
+        - test: offset-path-interpolation-001.html
+          subtest: 'CSS Transitions: property <offset-path> from [path(''M 1 2 L 3 4 Z'')] to [none] at (-0.3) should be [path(''M 1 2 L 3 4 Z'')]'
+        - test: offset-path-interpolation-001.html
+          subtest: 'CSS Transitions: property <offset-path> from [path(''M 1 2 L 3 4 Z'')] to [none] at (0) should be [path(''M 1 2 L 3 4 Z'')]'
+        - test: offset-path-interpolation-001.html
+          subtest: 'CSS Transitions: property <offset-path> from [path(''M 1 2 L 3 4 Z'')] to [none] at (0.3) should be [path(''M 1 2 L 3 4 Z'')]'
+        - test: offset-path-interpolation-001.html
+          subtest: 'CSS Transitions: property <offset-path> from [path(''M 10 0 H 11'')] to [path(''M 20 0 V 2'')] at (-0.3) should be [path(''M 10 0 H 11'')]'
+        - test: offset-path-interpolation-001.html
+          subtest: 'CSS Transitions: property <offset-path> from [path(''M 10 0 H 11'')] to [path(''M 20 0 V 2'')] at (0) should be [path(''M 10 0 H 11'')]'
+        - test: offset-path-interpolation-001.html
+          subtest: 'CSS Transitions: property <offset-path> from [path(''M 10 0 H 11'')] to [path(''M 20 0 V 2'')] at (0.3) should be [path(''M 10 0 H 11'')]'
+        - test: offset-path-interpolation-001.html
+          subtest: 'CSS Transitions: property <offset-path> from [path(''M 1 2 L 4 6 Z'')] to [path(''M 1 2 H 4 V 6'')] at (-0.3) should be [path(''M 1 2 L 4 6 Z'')]'
+        - test: offset-path-interpolation-001.html
+          subtest: 'CSS Transitions: property <offset-path> from [path(''M 1 2 L 4 6 Z'')] to [path(''M 1 2 H 4 V 6'')] at (0) should be [path(''M 1 2 L 4 6 Z'')]'
+        - test: offset-path-interpolation-001.html
+          subtest: 'CSS Transitions: property <offset-path> from [path(''M 1 2 L 4 6 Z'')] to [path(''M 1 2 H 4 V 6'')] at (0.3) should be [path(''M 1 2 L 4 6 Z'')]'
+        - test: offset-path-interpolation-005.html
+          subtest: 'CSS Transitions: property <offset-path> from [ray(0deg closest-corner)] to [none] at (-0.3) should be [ray(0deg closest-corner)]'
+        - test: offset-path-interpolation-005.html
+          subtest: 'CSS Transitions: property <offset-path> from [path(''M 0 0 L 100 100 M 100 200 L 200 200 Z L 200 100 Z'')] to [ray(0deg closest-side)] at (0.3) should be [path(''M 0 0 L 100 100 M 100 200 L 200 200 Z L 200 100 Z'')]'
+        - test: offset-path-interpolation-005.html
+          subtest: 'CSS Transitions: property <offset-path> from [path(''M 0 0 L 100 100 M 100 200 L 200 200 Z L 200 100 Z'')] to [ray(0deg closest-side)] at (0) should be [path(''M 0 0 L 100 100 M 100 200 L 200 200 Z L 200 100 Z'')]'
+        - test: offset-path-interpolation-005.html
+          subtest: 'CSS Transitions: property <offset-path> from [path(''M 0 0 L 100 100 M 100 200 L 200 200 Z L 200 100 Z'')] to [ray(0deg closest-side)] at (-0.3) should be [path(''M 0 0 L 100 100 M 100 200 L 200 200 Z L 200 100 Z'')]'
+        - test: offset-path-interpolation-005.html
+          subtest: 'CSS Transitions: property <offset-path> from [ray(0deg closest-corner)] to [none] at (0) should be [ray(0deg closest-corner)]'
+        - test: offset-path-interpolation-005.html
+          subtest: 'CSS Transitions: property <offset-path> from [ray(0deg closest-corner)] to [none] at (0.3) should be [ray(0deg closest-corner)]'
+        - test: offset-path-interpolation-005.html
+          subtest: 'CSS Transitions: property <offset-path> from [initial] to [ray(20deg closest-side)] at (-0.3) should be [initial]'
+        - test: offset-path-interpolation-005.html
+          subtest: 'CSS Transitions: property <offset-path> from [initial] to [ray(20deg closest-side)] at (0) should be [initial]'
+        - test: offset-path-interpolation-005.html
+          subtest: 'CSS Transitions: property <offset-path> from [initial] to [ray(20deg closest-side)] at (0.3) should be [initial]'
+        - test: offset-path-interpolation-005.html
+          subtest: 'CSS Transitions: property <offset-path> from [unset] to [ray(20deg closest-side)] at (-0.3) should be [unset]'
+        - test: offset-path-interpolation-005.html
+          subtest: 'CSS Transitions: property <offset-path> from [unset] to [ray(20deg closest-side)] at (0) should be [unset]'
+        - test: offset-path-interpolation-005.html
+          subtest: 'CSS Transitions: property <offset-path> from [unset] to [ray(20deg closest-side)] at (0.3) should be [unset]'
+        - test: offset-path-interpolation-005.html
+          subtest: 'CSS Transitions: property <offset-path> from [none] to [ray(20deg closest-side)] at (-0.3) should be [none]'
+        - test: offset-path-interpolation-005.html
+          subtest: 'CSS Transitions: property <offset-path> from [none] to [ray(20deg closest-side)] at (0) should be [none]'
+        - test: offset-path-interpolation-005.html
+          subtest: 'CSS Transitions: property <offset-path> from [none] to [ray(20deg closest-side)] at (0.3) should be [none]'
+        - test: offset-path-interpolation-005.html
+          subtest: 'CSS Transitions: property <offset-path> from [ray(200deg farthest-side)] to [ray(300deg sides)] at (-0.3) should be [ray(200deg farthest-side)]'
+        - test: offset-path-interpolation-005.html
+          subtest: 'CSS Transitions: property <offset-path> from [ray(200deg farthest-side)] to [ray(300deg sides)] at (0) should be [ray(200deg farthest-side)]'
+        - test: offset-path-interpolation-005.html
+          subtest: 'CSS Transitions: property <offset-path> from [ray(200deg farthest-side)] to [ray(300deg sides)] at (0.3) should be [ray(200deg farthest-side)]'
+        - test: offset-path-interpolation-005.html
+          subtest: 'CSS Transitions: property <offset-path> from [ray(200deg sides contain)] to [ray(300deg sides)] at (-0.3) should be [ray(200deg sides contain)]'
+        - test: offset-path-interpolation-005.html
+          subtest: 'CSS Transitions: property <offset-path> from [ray(200deg sides contain)] to [ray(300deg sides)] at (0) should be [ray(200deg sides contain)]'
+        - test: offset-path-interpolation-005.html
+          subtest: 'CSS Transitions: property <offset-path> from [ray(200deg sides contain)] to [ray(300deg sides)] at (0.3) should be [ray(200deg sides contain)]'
+        - test: offset-path-interpolation-005.html
+          subtest: 'CSS Transitions: property <offset-path> from [ray(200deg farthest-side contain)] to [ray(300deg sides)] at (-0.3) should be [ray(200deg farthest-side contain)]'
+        - test: offset-path-interpolation-005.html
+          subtest: 'CSS Transitions: property <offset-path> from [ray(200deg farthest-side contain)] to [ray(300deg sides)] at (0) should be [ray(200deg farthest-side contain)]'
+        - test: offset-path-interpolation-005.html
+          subtest: 'CSS Transitions: property <offset-path> from [ray(200deg farthest-side contain)] to [ray(300deg sides)] at (0.3) should be [ray(200deg farthest-side contain)]'
