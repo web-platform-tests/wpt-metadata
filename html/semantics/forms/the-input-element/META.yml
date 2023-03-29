@@ -162,3 +162,10 @@ links:
       results:
         - test: email-set-value.html
           subtest: setValue(sanitizedValue) is reflected in visible text field content
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1825222
+      results:
+        - test: range-restore-oninput-onchange-event.https.html
+          subtest: Verifies that form restoration does not fire input or change events for <input type=range>.
+        - test: range-restore-oninput-onchange-event.https.html
+          subtest: Verifies that form restoration does not fire input or change events for <input type=text>.
