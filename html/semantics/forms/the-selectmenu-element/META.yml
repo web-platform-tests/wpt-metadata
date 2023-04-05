@@ -162,3 +162,32 @@ links:
           subtest: Clicking a popup with no listbox part does nothing
         - test: selectmenu-popover.tentative.html
           subtest: Clicking a popup with a listbox that was removed does nothing
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1825888
+      results:
+        - subtest: The popover should be bottom left positioned
+          test: selectmenu-popover-position-with-zoom.tentative.html
+        - subtest: The popover should be top left positioned
+          test: selectmenu-popover-position-with-zoom.tentative.html
+        - subtest: The popover should be bottom right positioned
+          test: selectmenu-popover-position-with-zoom.tentative.html
+        - subtest: The popover should be top right positioned
+          test: selectmenu-popover-position-with-zoom.tentative.html
+        - subtest: The popover should be bottom left positioned
+          test: selectmenu-popover-position.tentative.html
+        - subtest: The popover should be top left positioned
+          test: selectmenu-popover-position.tentative.html
+        - subtest: The popover should be bottom right positioned
+          test: selectmenu-popover-position.tentative.html
+        - subtest: The popover should be top right positioned
+          test: selectmenu-popover-position.tentative.html
+        - subtest: Opening the popover and clicking an option should change the selectmenu's
+            value
+          test: selectmenu-popover.tentative.html
+        - subtest: 'With custom button and popover: opening the popover and clicking an
+            option should change the selectmenu''s value'
+          test: selectmenu-popover.tentative.html
+        - subtest: Clicking a popover with no listbox part does nothing
+          test: selectmenu-popover.tentative.html
+        - subtest: Clicking a popover with a listbox that was removed does nothing
+          test: selectmenu-popover.tentative.html
