@@ -95,31 +95,10 @@ links:
       url: https://crbug.com/745905
       results:
         - test: text-overflow-021.html
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1695565
-      results:
-        - test: appearance-cssom-001.html
-          subtest: '-webkit-appearance: slider-horizontal'
-        - test: appearance-cssom-001.html
-          subtest: '-webkit-appearance: meterbar (invalid)'
-        - test: appearance-cssom-001.html
-          subtest: '-webkit-appearance: progressbar (invalid)'
-        - test: appearance-cssom-001.html
-          subtest: '-webkit-appearance: textfield-multiline (invalid)'
-        - test: appearance-cssom-001.html
-          subtest: 'appearance: slider-horizontal'
-        - test: appearance-cssom-001.html
-          subtest: 'appearance: meterbar (invalid)'
-        - test: appearance-cssom-001.html
-          subtest: 'appearance: progressbar (invalid)'
-        - test: appearance-cssom-001.html
-          subtest: 'appearance: textfield-multiline (invalid)'
-        - test: appearance-cssom-001.html
-          subtest: -moz-appearance (should not be supported)
     - product: chrome
       url: https://crbug.com/924486
       results:
-        - test: appearance-cssom-001.html
+        - test: appearance-cssom-001.html?include=Invalid
     - product: chrome
       url: https://crbug.com/1135676
       results:
