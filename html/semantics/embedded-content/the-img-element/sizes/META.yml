@@ -1,31 +1,38 @@
 links:
-- product: webkitgtk
-  results:
-  - status: FAIL
-    test: parse-a-sizes-attribute-width-1000px.html
-  url: https://bugs.webkit.org/show_bug.cgi?id=208633
-- product: chrome
-  results:
-  - test: parse-a-sizes-attribute-standards-mode.html
-  url: https://crbug.com/1093539
-- product: chrome
-  results:
-  - test: parse-a-sizes-attribute-display-none.html
-  - test: parse-a-sizes-attribute-quirks-mode.html
-  - test: parse-a-sizes-attribute-width-1000px.html
-  url: https://bugs.chromium.org/p/chromium/issues/detail?id=1093539
-- product: firefox
-  results:
-  - subtest: <img srcset="/images/green-1x1.png?e38 50w, /images/green-16x16.png?e38
-      51w" sizes="(min-width:calc(0)) 1px"> ref sizes="1px" (display:none)
-    test: parse-a-sizes-attribute-display-none.html
-  - subtest: <img srcset="/images/green-1x1.png?e38 50w, /images/green-16x16.png?e38
-      51w" sizes="(min-width:calc(0)) 1px"> ref sizes="1px" (quirks mode)
-    test: parse-a-sizes-attribute-quirks-mode.html
-  - subtest: <img srcset="/images/green-1x1.png?e38 50w, /images/green-16x16.png?e38
-      51w" sizes="(min-width:calc(0)) 1px"> ref sizes="1px" (standards mode)
-    test: parse-a-sizes-attribute-standards-mode.html
-  - subtest: <img srcset="/images/green-1x1.png?e38 50w, /images/green-16x16.png?e38
-      51w" sizes="(min-width:calc(0)) 1px"> ref sizes="1px" (width:1000px)
-    test: parse-a-sizes-attribute-width-1000px.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1769608
+    - product: webkitgtk
+      url: https://bugs.webkit.org/show_bug.cgi?id=208633
+      results:
+        - test: parse-a-sizes-attribute-width-1000px.html
+          status: FAIL
+    - product: chrome
+      url: https://crbug.com/1093539
+      results:
+        - test: parse-a-sizes-attribute-standards-mode.html
+    - product: chrome
+      url: https://bugs.chromium.org/p/chromium/issues/detail?id=1093539
+      results:
+        - test: parse-a-sizes-attribute-display-none.html
+        - test: parse-a-sizes-attribute-quirks-mode.html
+        - test: parse-a-sizes-attribute-width-1000px.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1769608
+      results:
+        - test: parse-a-sizes-attribute-display-none.html
+          subtest: <img srcset="/images/green-1x1.png?e38 50w, /images/green-16x16.png?e38 51w" sizes="(min-width:calc(0)) 1px"> ref sizes="1px" (display:none)
+        - test: parse-a-sizes-attribute-quirks-mode.html
+          subtest: <img srcset="/images/green-1x1.png?e38 50w, /images/green-16x16.png?e38 51w" sizes="(min-width:calc(0)) 1px"> ref sizes="1px" (quirks mode)
+        - test: parse-a-sizes-attribute-standards-mode.html
+          subtest: <img srcset="/images/green-1x1.png?e38 50w, /images/green-16x16.png?e38 51w" sizes="(min-width:calc(0)) 1px"> ref sizes="1px" (standards mode)
+        - test: parse-a-sizes-attribute-width-1000px.html
+          subtest: <img srcset="/images/green-1x1.png?e38 50w, /images/green-16x16.png?e38 51w" sizes="(min-width:calc(0)) 1px"> ref sizes="1px" (width:1000px)
+    - product: safari
+      url: https://bugs.webkit.org/show_bug.cgi?id=184027
+      results:
+        - test: parse-a-sizes-attribute-width-1000px.html
+          subtest: <img srcset="/images/green-1x1.png?e36a 50w, /images/green-16x16.png?e36a 51w" sizes="min(1px, 100px)"> ref sizes="1px" (width:1000px)
+        - test: parse-a-sizes-attribute-width-1000px.html
+          subtest: <img srcset="/images/green-1x1.png?e36b 50w, /images/green-16x16.png?e36b 51w" sizes="min(-100px, 1px)"> ref sizes="1px" (width:1000px)
+        - test: parse-a-sizes-attribute-width-1000px.html
+          subtest: <img srcset="/images/green-1x1.png?e37a 50w, /images/green-16x16.png?e37a 51w" sizes="(min-width:0) min(1px, 100px)"> ref sizes="1px" (width:1000px)
+        - test: parse-a-sizes-attribute-width-1000px.html
+          subtest: <img srcset="/images/green-1x1.png?e37b 50w, /images/green-16x16.png?e37b 51w" sizes="(min-width:0) max(-100px, 1px)"> ref sizes="1px" (width:1000px)
