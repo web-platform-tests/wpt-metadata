@@ -466,3 +466,100 @@ links:
       value
     test: animation-range-start-valid.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1824412
+- product: firefox
+  results:
+  - subtest: Property animation-range-end value 'normal'
+    test: animation-range-end-computed.html
+  - subtest: Property animation-range-end value 'COVER 100%'
+    test: animation-range-end-computed.html
+  - subtest: Property animation-range-end value 'cover'
+    test: animation-range-end-computed.html
+  - subtest: Property animation-range-end value 'contain'
+    test: animation-range-end-computed.html
+  - subtest: Property animation-range-end value 'entry'
+    test: animation-range-end-computed.html
+  - subtest: Property animation-range-end value 'exit'
+    test: animation-range-end-computed.html
+  - subtest: e.style['animation-range-end'] = "normal" should set the property value
+    test: animation-range-end-valid.html
+  - subtest: e.style['animation-range-end'] = "cover" should set the property value
+    test: animation-range-end-valid.html
+  - subtest: e.style['animation-range-end'] = "contain" should set the property value
+    test: animation-range-end-valid.html
+  - subtest: e.style['animation-range-end'] = "entry" should set the property value
+    test: animation-range-end-valid.html
+  - subtest: e.style['animation-range-end'] = "exit" should set the property value
+    test: animation-range-end-valid.html
+  - subtest: e.style['animation-range'] = "normal" should set the property value
+    test: animation-range-shorthand.html
+  - subtest: e.style['animation-range'] = "normal normal" should set the property
+      value
+    test: animation-range-shorthand.html
+  - subtest: Property animation-range value 'normal'
+    test: animation-range-shorthand.html
+  - subtest: Property animation-range value 'normal normal'
+    test: animation-range-shorthand.html
+  - subtest: e.style['animation-range'] = "normal" should set animation-range-end
+    test: animation-range-shorthand.html
+  - subtest: e.style['animation-range'] = "normal" should set animation-range-start
+    test: animation-range-shorthand.html
+  - subtest: e.style['animation-range'] = "normal" should not set unrelated longhands
+    test: animation-range-shorthand.html
+  - subtest: e.style['animation-range'] = "normal normal" should set animation-range-end
+    test: animation-range-shorthand.html
+  - subtest: e.style['animation-range'] = "normal normal" should set animation-range-start
+    test: animation-range-shorthand.html
+  - subtest: e.style['animation-range'] = "normal normal" should not set unrelated
+      longhands
+    test: animation-range-shorthand.html
+  - subtest: e.style['animation-range'] = "normal entry 100%" should set animation-range-end
+    test: animation-range-shorthand.html
+  - subtest: e.style['animation-range'] = "normal entry 100%" should set animation-range-start
+    test: animation-range-shorthand.html
+  - subtest: e.style['animation-range'] = "normal entry 100%" should not set unrelated
+      longhands
+    test: animation-range-shorthand.html
+  - subtest: e.style['animation-range'] = "normal entry 10%" should set animation-range-end
+    test: animation-range-shorthand.html
+  - subtest: e.style['animation-range'] = "normal entry 10%" should set animation-range-start
+    test: animation-range-shorthand.html
+  - subtest: e.style['animation-range'] = "normal entry 10%" should not set unrelated
+      longhands
+    test: animation-range-shorthand.html
+  - subtest: e.style['animation-range'] = "entry, exit" should set animation-range-end
+    test: animation-range-shorthand.html
+  - subtest: e.style['animation-range'] = "entry, exit" should set animation-range-start
+    test: animation-range-shorthand.html
+  - subtest: e.style['animation-range'] = "entry 0%, exit" should set animation-range-end
+    test: animation-range-shorthand.html
+  - subtest: e.style['animation-range'] = "entry 0%, exit" should set animation-range-start
+    test: animation-range-shorthand.html
+  - subtest: e.style['animation-range'] = "exit calc(10% + 50px)" should set animation-range-end
+    test: animation-range-shorthand.html
+  - subtest: Property animation-range-start value 'normal'
+    test: animation-range-start-computed.html
+  - subtest: Property animation-range-start value 'exit 1%, cover 2%, contain 0%'
+    test: animation-range-start-computed.html
+  - subtest: Property animation-range-start value 'cover'
+    test: animation-range-start-computed.html
+  - subtest: Property animation-range-start value 'contain'
+    test: animation-range-start-computed.html
+  - subtest: Property animation-range-start value 'entry'
+    test: animation-range-start-computed.html
+  - subtest: Property animation-range-start value 'exit'
+    test: animation-range-start-computed.html
+  - subtest: e.style['animation-range-start'] = "normal" should set the property value
+    test: animation-range-start-valid.html
+  - subtest: e.style['animation-range-start'] = "exit 1%, cover 2%, contain 0%" should
+      set the property value
+    test: animation-range-start-valid.html
+  - subtest: e.style['animation-range-start'] = "cover" should set the property value
+    test: animation-range-start-valid.html
+  - subtest: e.style['animation-range-start'] = "contain" should set the property
+      value
+    test: animation-range-start-valid.html
+  - subtest: e.style['animation-range-start'] = "entry" should set the property value
+    test: animation-range-start-valid.html
+  - subtest: e.style['animation-range-start'] = "exit" should set the property value
+    test: animation-range-start-valid.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1829320
