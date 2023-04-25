@@ -23,7 +23,6 @@ jobs:
       uses: peter-evans/create-pull-request@v5
       with:
         token: ${{ secrets.WPTMETADATA_BOT_USER_PAT }}
-        author: wpt-pr-bot <wpt-pr-bot@users.noreply.github.com>
         title: "Update latest WPT Manifest for go_test"
         commit-message: "Run curl -s -S https://wpt.fyi/api/manifest?sha=latest >> go_test/MANIFEST.json"
         body: |
