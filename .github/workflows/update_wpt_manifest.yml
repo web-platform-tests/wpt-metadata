@@ -5,6 +5,8 @@ on:
   workflow_dispatch:
 jobs:
   update-wpt-manifest:
+    outputs:
+      prURL: ${{ steps.cpr.outputs.pull-request-url }}
     runs-on: ubuntu-20.04
     steps:
     - uses: actions/checkout@v2
@@ -20,6 +22,7 @@ jobs:
       run: ./main
 
     - name: Create pull request
+      id: cpr
       uses: peter-evans/create-pull-request@v5
       with:
         token: ${{ secrets.WPTMETADATA_BOT_USER_PAT }}
@@ -30,3 +33,21 @@ jobs:
         branch: actions/wpt-manifest
         delete-branch: true
         push-to-fork: wptmetadata-bot/wpt-metadata
+  # Create a separate job for only the steps that need write permissions.
+  enable-auto-merge:
+    runs-on: ubuntu-latest
+    needs: update-wpt-manifest
+    # Need both permissions to enable auto merge.
+    permissions:
+      pull-requests: write
+      contents: write
+    steps:
+    # Could use https://github.com/peter-evans/enable-pull-request-automerge but it recommends using the CLI now
+    # More about the CLI options. We need --auto so that the PR will automatically merge after:
+    # - One review
+    # - The test action is successful.
+    # https://cli.github.com/manual/gh_pr_merge
+    - name: Enable Pull Request Automerge
+      run: gh pr merge --merge --auto "${{ needs.update-wpt-manifest.outputs.prURL }}"
+      env:
+        GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}

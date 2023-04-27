@@ -6,20 +6,50 @@ on:
       - completed
 
 jobs:
-  build:
+  approve:
+    name: "Approve PR"
     runs-on: ubuntu-20.04
     if: >
       github.event.workflow_run.event == 'pull_request' &&
       github.event.workflow_run.conclusion == 'success'
     permissions:
       pull-requests: write
-    strategy:
-      matrix:
-        # workflow_run contains list of pull requests
-        # https://docs.github.com/en/webhooks-and-events/webhooks/webhook-events-and-payloads?actionType=completed#workflow_run
-        # Extract the list of successful pull requests and run approvals on them.
-        pull_request: ${{ fromJson(toJson(github.event.workflow_run.pull_requests.*.number)) }}
     steps:
+    # Currently there is no way to get the pull request number from the event payload in a workflow_run event.
+    # We save it in the test workflow
+    # These first steps extract it.
+    # More information about it:
+    # https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#using-data-from-the-triggering-workflow
+    # https://securitylab.github.com/research/github-actions-preventing-pwn-requests/
+    - name: 'Download PR number'
+      uses: actions/github-script@v3.1.0
+      with:
+        script: |
+          console.log("Starting to list artifacts");
+          var artifacts = await github.actions.listWorkflowRunArtifacts({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              run_id: context.payload.workflow_run.id,
+          });
+          console.log("Filtering artifacts");
+          var matchArtifact = artifacts.data.artifacts.filter((artifact) => {
+            return artifact.name == "pr_number"
+          })[0];
+          console.log("Downloading artifacts");
+          var download = await github.actions.downloadArtifact({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              artifact_id: matchArtifact.id,
+              archive_format: 'zip',
+          });
+          console.log("Writing artifacts to disk");
+          var fs = require('fs');
+          fs.writeFileSync('${{github.workspace}}/pr.zip', Buffer.from(download.data));
+    - run: unzip pr.zip
+    - name: Get the PR value and set it in the environment
+      run: |
+        echo "PR_NUMBER=$(<pr_number.txt)" >> "$GITHUB_ENV"
+        echo "Set PR_NUMBER to $PR_NUMBER"
     - uses: hmarr/auto-approve-action@v3
       with:
-        pull-request-number: ${{ matrix.pull_request }}
+        pull-request-number: ${{ env.PR_NUMBER }}
