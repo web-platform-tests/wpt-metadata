@@ -15,3 +15,5 @@ jobs:
       pull-requests: write
     steps:
     - uses: hmarr/auto-approve-action@v3
+      with:
+        pull-request-number: ${{ github.event.workflow_run.event.pull_request.number }}
