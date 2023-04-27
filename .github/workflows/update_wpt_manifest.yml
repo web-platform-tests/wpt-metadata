@@ -48,6 +48,6 @@ jobs:
     # - The test action is successful.
     # https://cli.github.com/manual/gh_pr_merge
     - name: Enable Pull Request Automerge
-      run: gh pr merge --merge --auto "${{ needs.update-wpt-manifest.outputs.prURL }}"
+      run: gh pr merge --squash --auto "${{ needs.update-wpt-manifest.outputs.prURL }}"
       env:
         GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
