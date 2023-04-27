@@ -13,7 +13,13 @@ jobs:
       github.event.workflow_run.conclusion == 'success'
     permissions:
       pull-requests: write
+    strategy:
+      matrix:
+        # workflow_run contains list of pull requests
+        # https://docs.github.com/en/webhooks-and-events/webhooks/webhook-events-and-payloads?actionType=completed#workflow_run
+        # Extract the list of successful pull requests and run approvals on them.
+        pull_request: ${{ fromJson(toJson(github.event.workflow_run.pull_requests.*.number)) }}
     steps:
     - uses: hmarr/auto-approve-action@v3
       with:
-        pull-request-number: ${{ github.event.workflow_run.event.pull_request.number }}
+        pull-request-number: ${{ matrix.pull_request }}
