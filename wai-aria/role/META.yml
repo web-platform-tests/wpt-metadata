@@ -13,3 +13,10 @@ links:
           subtest: synonym img role == computedrole image
         - test: synonym-roles.html
           subtest: image role == computedrole image
+    - product: safari
+      url: https://bugs.webkit.org/show_bug.cgi?id=203257
+      results:
+        - test: roles.html
+          subtest: 'role: emphasis'
+        - test: roles.html
+          subtest: 'role: strong'
