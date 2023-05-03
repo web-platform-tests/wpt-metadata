@@ -1,41 +1,49 @@
 links:
-    - product: chrome
-      url: https://crbug.com/687225
-      results:
-        - test: range-syntax.html
-        - test: name-syntax.html
-        - test: speak-as-syntax.html
-        - test: negative-syntax.html
-        - test: symbols-syntax.html
-        - test: pad-syntax.html
-        - test: prefix-suffix-syntax.html
-        - test: fallback.html
-        - test: system-syntax.html
-        - test: additive-symbols-syntax.html
-    - product: chrome
-      url: https://bugs.chromium.org/p/chromium/issues/detail?id=1168277
-      results:
-        - test: disclosure-styles.html
-    - product: chrome
-      url: https://bugs.chromium.org/p/chromium/issues/detail?id=1218770
-      results:
-        - test: redefine-attr-mapping.html
-    - product: chrome
-      url: https://bugs.chromium.org/p/chromium/issues/detail?id=1176315
-      results:
-        - test: symbols-function.html
-    - product: chrome
-      url: https://bugs.chromium.org/p/chromium/issues/detail?id=1218280
-      results:
-        - test: descriptor-pad.html
-    - product: chrome
-      url: https://crbug.com/1171523
-      results:
-        - test: dependent-builtin.html
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1745924
-      results:
-        - test: fallbacks-in-shadow-dom.html
-        - test: override-in-shadow-dom.html
-        - test: speak-as-syntax.html
-          subtest: '@counter-style ''speak-as: spell-out'' is valid'
+- product: chrome
+  results:
+  - test: range-syntax.html
+  - test: name-syntax.html
+  - test: speak-as-syntax.html
+  - test: negative-syntax.html
+  - test: symbols-syntax.html
+  - test: pad-syntax.html
+  - test: prefix-suffix-syntax.html
+  - test: fallback.html
+  - test: system-syntax.html
+  - test: additive-symbols-syntax.html
+  url: https://crbug.com/687225
+- product: chrome
+  results:
+  - test: disclosure-styles.html
+  url: https://bugs.chromium.org/p/chromium/issues/detail?id=1168277
+- product: chrome
+  results:
+  - test: redefine-attr-mapping.html
+  url: https://bugs.chromium.org/p/chromium/issues/detail?id=1218770
+- product: chrome
+  results:
+  - test: symbols-function.html
+  url: https://bugs.chromium.org/p/chromium/issues/detail?id=1176315
+- product: chrome
+  results:
+  - test: descriptor-pad.html
+  url: https://bugs.chromium.org/p/chromium/issues/detail?id=1218280
+- product: chrome
+  results:
+  - test: dependent-builtin.html
+  url: https://crbug.com/1171523
+- product: firefox
+  results:
+  - test: fallbacks-in-shadow-dom.html
+  - test: override-in-shadow-dom.html
+  - subtest: '@counter-style ''speak-as: spell-out'' is valid'
+    test: speak-as-syntax.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1745924
+- product: firefox
+  results:
+  - test: descriptor-prefix.html
+  - test: system-additive.html
+  - test: system-alphabetic.html
+  - test: system-extends.html
+  - test: system-symbolic.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1831012
