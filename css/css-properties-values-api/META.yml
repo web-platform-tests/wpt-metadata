@@ -976,3 +976,8 @@ links:
         - test: registered-property-revert.html
         - test: registered-property-computation.html
         - test: registered-property-initial.html
+    - product: chrome
+      url: https://crbug.com/1344170
+      results:
+        - test: register-property-syntax-parsing.html
+          subtest: syntax:'*', initialValue:'default' is valid
