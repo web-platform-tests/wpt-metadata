@@ -939,6 +939,22 @@ links:
           subtest: Initial non-inherited value can be substituted [scale(calc(2 + 2)), --x]
         - test: registered-property-initial.html
           subtest: Initial non-inherited value can be substituted [scale(calc(2 + 2)) translateX(calc(3px + 1px)), --x]
+        - test: register-property-syntax-parsing.html
+          subtest: syntax:'<transform-list> | <transform-function> ', initialValue:'scale(2) rotate(90deg)' is valid
+        - test: register-property-syntax-parsing.html
+          subtest: syntax:'<transform-function> | <transform-list>', initialValue:'scale(2) rotate(90deg)' is valid
+        - test: register-property-syntax-parsing.html
+          subtest: syntax:'<transform-list> | <transform-function>+ ', initialValue:'scale(2) rotate(90deg)' is valid
+        - test: register-property-syntax-parsing.html
+          subtest: syntax:'<transform-function>+ | <transform-list>', initialValue:'scale(2) rotate(90deg)' is valid
+        - test: register-property-syntax-parsing.html
+          subtest: syntax:'<transform-list> | <transform-function># ', initialValue:'scale(2) rotate(90deg)' is valid
+        - test: register-property-syntax-parsing.html
+          subtest: syntax:'<transform-function># | <transform-list>', initialValue:'scale(2) rotate(90deg)' is valid
+        - test: register-property-syntax-parsing.html
+          subtest: syntax:'<transform-list> | <transform-function># ', initialValue:'scale(2), rotate(90deg)' is valid
+        - test: register-property-syntax-parsing.html
+          subtest: syntax:'<transform-function># | <transform-list>', initialValue:'scale(2), rotate(90deg)' is valid
     - product: chrome
       url: https://crbug.com/983613
       results:
