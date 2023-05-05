@@ -844,7 +844,9 @@ links:
         - test: at-property.html
           subtest: Rule applied [<transform-list>, rotateX(0deg) translateX(10px), false]
         - test: registered-property-initial.html
-    - label: interop-2023-property
+        - test: registered-property-computation.html
+    - url: ""
+      label: interop-2023-property
       results:
         - test: at-property-cssom.html
         - test: at-property-shadow.html
@@ -939,6 +941,22 @@ links:
           subtest: Initial non-inherited value can be substituted [scale(calc(2 + 2)), --x]
         - test: registered-property-initial.html
           subtest: Initial non-inherited value can be substituted [scale(calc(2 + 2)) translateX(calc(3px + 1px)), --x]
+        - test: register-property-syntax-parsing.html
+          subtest: syntax:'<transform-list> | <transform-function> ', initialValue:'scale(2) rotate(90deg)' is valid
+        - test: register-property-syntax-parsing.html
+          subtest: syntax:'<transform-function> | <transform-list>', initialValue:'scale(2) rotate(90deg)' is valid
+        - test: register-property-syntax-parsing.html
+          subtest: syntax:'<transform-list> | <transform-function>+ ', initialValue:'scale(2) rotate(90deg)' is valid
+        - test: register-property-syntax-parsing.html
+          subtest: syntax:'<transform-function>+ | <transform-list>', initialValue:'scale(2) rotate(90deg)' is valid
+        - test: register-property-syntax-parsing.html
+          subtest: syntax:'<transform-list> | <transform-function># ', initialValue:'scale(2) rotate(90deg)' is valid
+        - test: register-property-syntax-parsing.html
+          subtest: syntax:'<transform-function># | <transform-list>', initialValue:'scale(2) rotate(90deg)' is valid
+        - test: register-property-syntax-parsing.html
+          subtest: syntax:'<transform-list> | <transform-function># ', initialValue:'scale(2), rotate(90deg)' is valid
+        - test: register-property-syntax-parsing.html
+          subtest: syntax:'<transform-function># | <transform-list>', initialValue:'scale(2), rotate(90deg)' is valid
     - product: chrome
       url: https://crbug.com/983613
       results:
@@ -976,3 +994,8 @@ links:
         - test: registered-property-revert.html
         - test: registered-property-computation.html
         - test: registered-property-initial.html
+    - product: chrome
+      url: https://crbug.com/1344170
+      results:
+        - test: register-property-syntax-parsing.html
+          subtest: syntax:'*', initialValue:'default' is valid
