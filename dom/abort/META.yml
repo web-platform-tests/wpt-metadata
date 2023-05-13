@@ -30,3 +30,56 @@ links:
   - subtest: static aborting signal with reason should set signal.reason
     test: event.any.worker.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1745122
+- product: firefox
+  results:
+  - subtest: AbortSignal.any() works with an empty array of signals
+    test: abort-signal-any.any.worker.html
+  - subtest: AbortSignal.any() follows a single signal (using AbortController)
+    test: abort-signal-any.any.worker.html
+  - subtest: AbortSignal.any() follows multiple signals (using AbortController)
+    test: abort-signal-any.any.worker.html
+  - subtest: AbortSignal.any() returns an aborted signal if passed an aborted signal
+      (using AbortController)
+    test: abort-signal-any.any.worker.html
+  - subtest: AbortSignal.any() can be passed the same signal more than once (using
+      AbortController)
+    test: abort-signal-any.any.worker.html
+  - subtest: AbortSignal.any() uses the first instance of a duplicate signal (using
+      AbortController)
+    test: abort-signal-any.any.worker.html
+  - subtest: AbortSignal.any() signals are composable (using AbortController)
+    test: abort-signal-any.any.worker.html
+  - subtest: AbortSignal.any() works with signals returned by AbortSignal.timeout()
+      (using AbortController)
+    test: abort-signal-any.any.worker.html
+  - subtest: AbortSignal.any() works with intermediate signals (using AbortController)
+    test: abort-signal-any.any.worker.html
+  - subtest: Abort events for AbortSignal.any() signals fire in the right order (using
+      AbortController)
+    test: abort-signal-any.any.worker.html
+  - subtest: AbortSignal.any() works with an empty array of signals
+    test: abort-signal-any.any.html
+  - subtest: AbortSignal.any() follows a single signal (using AbortController)
+    test: abort-signal-any.any.html
+  - subtest: AbortSignal.any() follows multiple signals (using AbortController)
+    test: abort-signal-any.any.html
+  - subtest: AbortSignal.any() returns an aborted signal if passed an aborted signal
+      (using AbortController)
+    test: abort-signal-any.any.html
+  - subtest: AbortSignal.any() can be passed the same signal more than once (using
+      AbortController)
+    test: abort-signal-any.any.html
+  - subtest: AbortSignal.any() uses the first instance of a duplicate signal (using
+      AbortController)
+    test: abort-signal-any.any.html
+  - subtest: AbortSignal.any() signals are composable (using AbortController)
+    test: abort-signal-any.any.html
+  - subtest: AbortSignal.any() works with signals returned by AbortSignal.timeout()
+      (using AbortController)
+    test: abort-signal-any.any.html
+  - subtest: AbortSignal.any() works with intermediate signals (using AbortController)
+    test: abort-signal-any.any.html
+  - subtest: Abort events for AbortSignal.any() signals fire in the right order (using
+      AbortController)
+    test: abort-signal-any.any.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1832965
