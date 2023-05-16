@@ -125,3 +125,12 @@ links:
       results:
         - test: grid-shorthand-serialization.html
         - test: grid-template-shorthand-areas-valid.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1833499
+      results:
+        - test: grid-template-areas-computed.html
+          subtest: "Property grid-template-areas value '\"  a  \t  b  \"'"
+        - test: grid-template-areas-computed.html
+          subtest: "Property grid-template-areas value '\"c\td\"'"
+        - test: grid-template-areas-computed.html
+          subtest: Property grid-template-areas value '"first ..."'
