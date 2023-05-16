@@ -125,3 +125,12 @@ links:
       results:
         - test: grid-shorthand-serialization.html
         - test: grid-template-shorthand-areas-valid.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1833499
+      results:
+        - test: grid-template-areas-valid.html
+          subtest: e.style['grid-template-areas'] = "\"  a  \t  b  \"" should set the property value
+        - test: grid-template-areas-valid.html
+          subtest: e.style['grid-template-areas'] = "\"c\td\"" should set the property value
+        - test: grid-template-areas-valid.html
+          subtest: e.style['grid-template-areas'] = "\"first ...\"" should set the property value
