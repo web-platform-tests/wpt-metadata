@@ -69,3 +69,42 @@ links:
       results:
         - test: grid-gap-010.html
         - test: grid-gap-011.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1833489
+      results:
+        - test: grid-template-computed-nogrid.html
+          subtest: Property grid-template-columns value 'subgrid [a] repeat(2, [c] [d e])'
+        - test: grid-template-computed-nogrid.html
+          subtest: Property grid-template-columns value 'subgrid repeat(1, [])'
+        - test: grid-template-computed-nogrid.html
+          subtest: Property grid-template-columns value 'subgrid repeat(2, [])'
+        - test: grid-template-computed-nogrid.html
+          subtest: Property grid-template-columns value 'subgrid repeat(2, [a])'
+        - test: grid-template-computed-nogrid.html
+          subtest: Property grid-template-columns value 'subgrid repeat(2, [a] [])'
+        - test: grid-template-computed-nogrid.html
+          subtest: Property grid-template-columns value 'subgrid repeat(2, [] [a] [])'
+        - test: grid-template-computed-nogrid.html
+          subtest: Property grid-template-columns value 'subgrid repeat(2, [] [] []) repeat(auto-fill, [] [] [])'
+        - test: grid-template-computed-nogrid.html
+          subtest: Property grid-template-columns value 'subgrid repeat(1, [a b])'
+        - test: grid-template-computed-nogrid.html
+          subtest: Property grid-template-columns value 'subgrid repeat(2, [a b])'
+        - test: grid-template-computed-nogrid.html
+          subtest: Property grid-template-columns value 'subgrid repeat(1, [a] [b])'
+        - test: grid-template-computed-nogrid.html
+          subtest: Property grid-template-columns value 'subgrid repeat(2, [a] [b])'
+        - test: grid-template-computed-nogrid.html
+          subtest: Property grid-template-columns value 'subgrid [a] repeat(2, [b])'
+        - test: grid-template-computed-nogrid.html
+          subtest: Property grid-template-columns value 'subgrid repeat(2, [a]) [b]'
+        - test: grid-template-computed-nogrid.html
+          subtest: Property grid-template-columns value 'subgrid [a] repeat(2, [b] [c d]) [e]'
+        - test: grid-template-computed-nogrid.html
+          subtest: Property grid-template-columns value 'subgrid repeat(2, [a b]) repeat(auto-fill, [c] [d e])'
+        - test: grid-template-computed-nogrid.html
+          subtest: Property grid-template-columns value 'subgrid repeat(auto-fill, [a] [b c]) repeat(2, [d e])'
+        - test: grid-template-computed-nogrid.html
+          subtest: Property grid-template-columns value 'subgrid repeat(2, [a b]) repeat(auto-fill, [c] [d e]) repeat(2, [f g])'
+        - test: grid-template-computed-nogrid.html
+          subtest: Property grid-template-columns value 'subgrid [a] [b c] repeat(2, [d e]) [f] [g h] repeat(auto-fill, [i] [j k]) [l] repeat(2, [m n]) [o]'
