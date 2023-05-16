@@ -125,3 +125,10 @@ links:
       results:
         - test: grid-shorthand-serialization.html
         - test: grid-template-shorthand-areas-valid.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1833491
+      results:
+        - test: grid-template-shorthand-areas-valid.html
+          subtest: 'grid-template: none / 1px and "grid-template-areas: "a";" should be valid.'
+        - test: grid-template-shorthand-areas-valid.html
+          subtest: 'grid-template: none / none and "grid-template-areas: "a";" should be valid.'
