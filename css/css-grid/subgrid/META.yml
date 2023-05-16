@@ -69,3 +69,30 @@ links:
       results:
         - test: grid-gap-010.html
         - test: grid-gap-011.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1833489
+      results:
+        - test: grid-template-valid.html
+          subtest: e.style['grid-template-rows'] = "subgrid repeat(2, [a])" should set the property value
+        - test: grid-template-valid.html
+          subtest: e.style['grid-template-rows'] = "subgrid repeat(2, [a] [b])" should set the property value
+        - test: grid-template-valid.html
+          subtest: e.style['grid-template-rows'] = "subgrid [a] repeat(2, [b])" should set the property value
+        - test: grid-template-valid.html
+          subtest: e.style['grid-template-rows'] = "subgrid [a] repeat(2, [b]) [c]" should set the property value
+        - test: grid-template-valid.html
+          subtest: e.style['grid-template-rows'] = "subgrid [] repeat(2, []) []" should set the property value
+        - test: grid-template-valid.html
+          subtest: e.style['grid-template-rows'] = "subgrid [a] repeat(2, [b]) repeat(auto-fill, [c]) [d]" should set the property value
+        - test: grid-template-valid.html
+          subtest: e.style['grid-template-columns'] = "subgrid repeat(2, [a])" should set the property value
+        - test: grid-template-valid.html
+          subtest: e.style['grid-template-columns'] = "subgrid repeat(2, [a] [b])" should set the property value
+        - test: grid-template-valid.html
+          subtest: e.style['grid-template-columns'] = "subgrid [a] repeat(2, [b]) [c]" should set the property value
+        - test: grid-template-valid.html
+          subtest: e.style['grid-template-columns'] = "subgrid [a] repeat(2, [b])" should set the property value
+        - test: grid-template-valid.html
+          subtest: e.style['grid-template-columns'] = "subgrid [a] repeat(2, [b]) repeat(auto-fill, [c]) [d]" should set the property value
+        - test: grid-template-valid.html
+          subtest: e.style['grid-template-columns'] = "subgrid [] repeat(2, []) []" should set the property value
