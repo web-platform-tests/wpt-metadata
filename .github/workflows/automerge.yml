@@ -1,28 +1,23 @@
 name: automerge
 on:
-  pull_request:
-    types:
-      - labeled
-      - unlabeled
-      - synchronize
-      - opened
-      - edited
-      - ready_for_review
-      - reopened
-      - unlocked
-  pull_request_review:
-    types:
-      - submitted
-  check_suite:
-    types:
-      - completed
-  status: {}
+  workflow_dispatch:
+    inputs:
+      prNumber:
+        description: 'PR Number to auto merge'
+        type: number
+        required: true
 jobs:
   automerge:
     runs-on: ubuntu-20.04
+    permissions:
+      # Need to read check suites.
+      checks: read
+      # Need to merge the pull request
+      # Specifically "PUT /repos/{owner}/{repo}/pulls/{pull_number}/merge"
+      contents: write
     steps:
       - name: automerge
-        uses: "pascalgn/automerge-action@135f0bdb927d9807b5446f7ca9ecc2c51de03c4a"
+        uses: "pascalgn/automerge-action@v0.15.6"
         # https://github.com/pascalgn/automerge-action#configuration
         env:
           GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
@@ -31,3 +26,4 @@ jobs:
           MERGE_METHOD: "rebase"
           MERGE_RETRIES: "3"
           MERGE_RETRY_SLEEP: "90000"
+          PULL_REQUEST: ${{ inputs.prNumber }}
