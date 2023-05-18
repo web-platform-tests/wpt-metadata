@@ -62,4 +62,3 @@ jobs:
     - run: gh workflow run "automerge" -f prNumber=${{ env.PR_NUMBER }} --repo ${GITHUB_REPOSITORY}
       env:
         GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
-
