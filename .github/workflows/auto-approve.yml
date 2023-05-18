@@ -13,14 +13,20 @@ jobs:
       github.event.workflow_run.event == 'pull_request' &&
       github.event.workflow_run.conclusion == 'success'
     permissions:
+      # Needed by gh workflow run
+      actions: write
+      # Needed by hmarr/auto-approve-action@v3
       pull-requests: write
     steps:
     # Currently there is no way to get the pull request number from the event payload in a workflow_run event.
-    # We save it in the test workflow
-    # These first steps extract it.
+    # We save it in the 'test' workflow.
+    # This first step extracts it.
     # More information about it:
     # https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#using-data-from-the-triggering-workflow
     # https://securitylab.github.com/research/github-actions-preventing-pwn-requests/
+    # Current limitation:
+    # As of 2023-05-18, https://github.com/actions/download-artifact cannot download artifacts across workflows.
+    # As a result, have to use the script GitHub provides to download the artifact.
     - name: 'Download PR number'
       uses: actions/github-script@v3.1.0
       with:
@@ -53,3 +59,6 @@ jobs:
     - uses: hmarr/auto-approve-action@v3
       with:
         pull-request-number: ${{ env.PR_NUMBER }}
+    - run: gh workflow run "automerge" -f prNumber=${{ env.PR_NUMBER }} --repo ${GITHUB_REPOSITORY}
+      env:
+        GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"

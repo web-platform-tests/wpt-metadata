@@ -18,6 +18,9 @@ jobs:
     if: ${{ github.event_name == 'pull_request' }}
     needs: [test]
     runs-on: ubuntu-latest
+    # The PR number is uploaded instead of triggering another workflow directly
+    # because this workflow has no permissions and runs with the least
+    # privileges (This pipeline can be ran by PRs made from forks).
     name: "Save PR number for Auto Approve workflow_run"
     steps:
       - name: Save PR number
