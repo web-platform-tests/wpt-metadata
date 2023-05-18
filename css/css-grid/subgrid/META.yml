@@ -1,5 +1,6 @@
 links:
-    - label: interop-2022-subgrid
+    - url: ""
+      label: interop-2022-subgrid
       results:
         - test: abs-pos-001.html
         - test: abs-pos-002.html
@@ -73,4 +74,87 @@ links:
       url: https://bugzilla.mozilla.org/show_bug.cgi?id=1833481
       results:
         - test: abs-pos-002.html
+          subtest: Test status
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1800566
+      results:
+        - test: line-names-005.html
+        - test: line-names-002.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1833489
+      results:
+        - test: grid-template-computed-nogrid.html
+          subtest: Property grid-template-columns value 'subgrid [a] repeat(2, [c] [d e])'
+        - test: grid-template-computed-nogrid.html
+          subtest: Property grid-template-columns value 'subgrid repeat(1, [])'
+        - test: grid-template-computed-nogrid.html
+          subtest: Property grid-template-columns value 'subgrid repeat(2, [])'
+        - test: grid-template-computed-nogrid.html
+          subtest: Property grid-template-columns value 'subgrid repeat(2, [a])'
+        - test: grid-template-computed-nogrid.html
+          subtest: Property grid-template-columns value 'subgrid repeat(2, [a] [])'
+        - test: grid-template-computed-nogrid.html
+          subtest: Property grid-template-columns value 'subgrid repeat(2, [] [a] [])'
+        - test: grid-template-computed-nogrid.html
+          subtest: Property grid-template-columns value 'subgrid repeat(2, [] [] []) repeat(auto-fill, [] [] [])'
+        - test: grid-template-computed-nogrid.html
+          subtest: Property grid-template-columns value 'subgrid repeat(1, [a b])'
+        - test: grid-template-computed-nogrid.html
+          subtest: Property grid-template-columns value 'subgrid repeat(2, [a b])'
+        - test: grid-template-computed-nogrid.html
+          subtest: Property grid-template-columns value 'subgrid repeat(1, [a] [b])'
+        - test: grid-template-computed-nogrid.html
+          subtest: Property grid-template-columns value 'subgrid repeat(2, [a] [b])'
+        - test: grid-template-computed-nogrid.html
+          subtest: Property grid-template-columns value 'subgrid [a] repeat(2, [b])'
+        - test: grid-template-computed-nogrid.html
+          subtest: Property grid-template-columns value 'subgrid repeat(2, [a]) [b]'
+        - test: grid-template-computed-nogrid.html
+          subtest: Property grid-template-columns value 'subgrid [a] repeat(2, [b] [c d]) [e]'
+        - test: grid-template-computed-nogrid.html
+          subtest: Property grid-template-columns value 'subgrid repeat(2, [a b]) repeat(auto-fill, [c] [d e])'
+        - test: grid-template-computed-nogrid.html
+          subtest: Property grid-template-columns value 'subgrid repeat(auto-fill, [a] [b c]) repeat(2, [d e])'
+        - test: grid-template-computed-nogrid.html
+          subtest: Property grid-template-columns value 'subgrid repeat(2, [a b]) repeat(auto-fill, [c] [d e]) repeat(2, [f g])'
+        - test: grid-template-computed-nogrid.html
+          subtest: Property grid-template-columns value 'subgrid [a] [b c] repeat(2, [d e]) [f] [g h] repeat(auto-fill, [i] [j k]) [l] repeat(2, [m n]) [o]'
+        - test: grid-template-valid.html
+          subtest: e.style['grid-template-rows'] = "subgrid repeat(2, [a])" should set the property value
+        - test: grid-template-valid.html
+          subtest: e.style['grid-template-rows'] = "subgrid repeat(2, [a] [b])" should set the property value
+        - test: grid-template-valid.html
+          subtest: e.style['grid-template-rows'] = "subgrid [a] repeat(2, [b])" should set the property value
+        - test: grid-template-valid.html
+          subtest: e.style['grid-template-rows'] = "subgrid [a] repeat(2, [b]) [c]" should set the property value
+        - test: grid-template-valid.html
+          subtest: e.style['grid-template-rows'] = "subgrid [] repeat(2, []) []" should set the property value
+        - test: grid-template-valid.html
+          subtest: e.style['grid-template-rows'] = "subgrid [a] repeat(2, [b]) repeat(auto-fill, [c]) [d]" should set the property value
+        - test: grid-template-valid.html
+          subtest: e.style['grid-template-columns'] = "subgrid repeat(2, [a])" should set the property value
+        - test: grid-template-valid.html
+          subtest: e.style['grid-template-columns'] = "subgrid repeat(2, [a] [b])" should set the property value
+        - test: grid-template-valid.html
+          subtest: e.style['grid-template-columns'] = "subgrid [a] repeat(2, [b]) [c]" should set the property value
+        - test: grid-template-valid.html
+          subtest: e.style['grid-template-columns'] = "subgrid [a] repeat(2, [b])" should set the property value
+        - test: grid-template-valid.html
+          subtest: e.style['grid-template-columns'] = "subgrid [a] repeat(2, [b]) repeat(auto-fill, [c]) [d]" should set the property value
+        - test: grid-template-valid.html
+          subtest: e.style['grid-template-columns'] = "subgrid [] repeat(2, []) []" should set the property value
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1800563
+      results:
+        - test: independent-formatting-context.html
+          subtest: Test status
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1833482
+      results:
+        - test: subgrid-baseline-003.html
+        - test: subgrid-baseline-004.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1833486
+      results:
+        - test: subgrid-stretch.html
           subtest: Test status
