@@ -142,13 +142,30 @@ links:
           subtest: e.style['grid-template-areas'] = "\"c\td\"" should set the property value
         - test: grid-template-areas-valid.html
           subtest: e.style['grid-template-areas'] = "\"first ...\"" should set the property value
+        - test: grid-template-areas-computed.html
+          subtest: "Property grid-template-areas value '\"  a  \t  b  \"'"
+        - test: grid-template-areas-computed.html
+          subtest: "Property grid-template-areas value '\"c\td\"'"
+        - test: grid-template-areas-computed.html
+          subtest: Property grid-template-areas value '"first ..."'
+        - test: grid-template-areas-valid.html
+          subtest: e.style['grid-template-areas'] = "\"  a  \t  b  \"" should set the property value
+        - test: grid-template-areas-valid.html
+          subtest: e.style['grid-template-areas'] = "\"c\td\"" should set the property value
+        - test: grid-template-areas-valid.html
+          subtest: e.style['grid-template-areas'] = "\"first ...\"" should set the property value
     - product: firefox
       url: https://bugzilla.mozilla.org/show_bug.cgi?id=1481876
       results:
         - test: grid-columns-rows-get-set-multiple.html
+        - test: grid-columns-rows-get-set-multiple.html
     - product: firefox
       url: https://bugzilla.mozilla.org/show_bug.cgi?id=1833491
       results:
+        - test: grid-template-shorthand-areas-valid.html
+          subtest: 'grid-template: none / 1px and "grid-template-areas: "a";" should be valid.'
+        - test: grid-template-shorthand-areas-valid.html
+          subtest: 'grid-template: none / none and "grid-template-areas: "a";" should be valid.'
         - test: grid-template-shorthand-areas-valid.html
           subtest: 'grid-template: none / 1px and "grid-template-areas: "a";" should be valid.'
         - test: grid-template-shorthand-areas-valid.html
