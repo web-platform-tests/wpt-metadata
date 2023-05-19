@@ -15,7 +15,7 @@ links:
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1710022
 - product: chrome
   results:
-  - test: element-request-fullscreen-options.tentative.html
+  - test: element-request-fullscreen-options.tentative.https.html
   - test: historical.html
   url: https://bugs.chromium.org/p/chromium/issues/detail?id=1022988
 - product: firefox
@@ -56,3 +56,9 @@ links:
   - subtest: fullscreenOptions.screen getter is invoked on requestFullscreen
     test: element-request-fullscreen-options.tentative.https.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1833801
+- product: firefox
+  results:
+  - test: fullscreen-reordering.html
+  - subtest: Requesting fullscreen on A, then B, then A
+    test: fullscreen-reordering.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1833747
