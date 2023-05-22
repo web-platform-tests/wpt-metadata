@@ -47,3 +47,10 @@ links:
         - test: offset-rotate-parsing-valid.html
         - test: offset-shorthand.html
         - test: offset-distance-parsing-invalid.html
+    - product: chrome
+      url: https://crbug.com/1446635
+      results:
+        - test: offset-path-parsing-invalid.html
+          subtest: e.style['offset-path'] = "path(\"\")" should not set the property value
+        - test: offset-path-parsing-invalid.html
+          subtest: e.style['offset-path'] = "path(\" \")" should not set the property value
