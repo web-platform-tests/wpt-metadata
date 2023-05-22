@@ -1,6 +1,5 @@
 links:
-    - url: ""
-      label: interop-2021-grid
+    - label: interop-2021-grid
       results:
         - test: grid-area-computed.html
         - test: grid-area-invalid.html
@@ -122,8 +121,7 @@ links:
       results:
         - test: grid-auto-flow-computed.html
         - test: grid-auto-flow-valid.html
-    - url: ""
-      label: interop-2023-grid
+    - label: interop-2023-grid
       results:
         - test: grid-shorthand-serialization.html
         - test: grid-template-shorthand-areas-valid.html
@@ -153,3 +151,7 @@ links:
           subtest: 'grid-template: none / 1px and "grid-template-areas: "a";" should be valid.'
         - test: grid-template-shorthand-areas-valid.html
           subtest: 'grid-template: none / none and "grid-template-areas: "a";" should be valid.'
+    - product: chrome
+      url: https://bugs.chromium.org/p/chromium/issues/detail?id=1370841
+      results:
+        - test: grid-shorthand-serialization.html
