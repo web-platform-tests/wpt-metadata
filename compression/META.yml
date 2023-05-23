@@ -1,5 +1,16 @@
 links:
-    - product: chrome
-      url: https://crbug.com/1281880
-      results:
-        - test: idlharness-shadowrealm.window.html
+- product: chrome
+  results:
+  - test: idlharness-shadowrealm.window.html
+  url: https://crbug.com/1281880
+- product: firefox
+  results:
+  - status: CRASH
+    test: compression-large-flush-output.any.html
+  - status: CRASH
+    test: compression-large-flush-output.any.worker.html
+  - status: CRASH
+    test: compression-large-flush-output.any.sharedworker.html
+  - status: CRASH
+    test: compression-large-flush-output.any.serviceworker.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1834431
