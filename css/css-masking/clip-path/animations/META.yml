@@ -1,6 +1,5 @@
 links:
-    - url: ""
-      label: interop-2023-cssmasking
+    - label: interop-2023-cssmasking
       results:
         - test: clip-path-animation-fixed-position-rounding-error.html
         - test: clip-path-animation-fragmented.html
@@ -34,6 +33,11 @@ links:
           status: FAIL
     - product: chrome
       url: https://crbug.com/1308431
+      results:
+        - test: clip-path-shape-interpolation-001.html
+        - test: clip-path-shape-interpolation-002.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1823463
       results:
         - test: clip-path-shape-interpolation-001.html
         - test: clip-path-shape-interpolation-002.html
