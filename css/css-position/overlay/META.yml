@@ -26,3 +26,13 @@ links:
   - subtest: e.style['overlay'] = "unset" should set the property value
     test: overlay-valid.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1828135
+- product: firefox
+  results:
+  - test: overlay-transition-finished.html
+  - test: overlay-transition-in-rendering.html
+  - test: overlay-transition-out-rendering.html
+  - subtest: Open the popover to be closed and verify computed overlay for both popovers
+    test: overlay-transition.html
+  - subtest: Transition overlays
+    test: overlay-transition.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1835424
