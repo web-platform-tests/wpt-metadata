@@ -127,3 +127,8 @@ links:
           subtest: Incorrect image types in drawImage do not match any defined overloads, so WebIDL throws a TypeError
         - test: 2d.drawImage.zerocanvas.worker.html
           subtest: 2d
+    - product: chrome
+      url: https://bugs.chromium.org/p/chromium/issues/detail?id=606317
+      results:
+        - test: 2d.drawImage.svg.worker.html
+        - test: 2d.drawImage.zerosource.image.worker.html
