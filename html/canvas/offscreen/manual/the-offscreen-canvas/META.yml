@@ -80,14 +80,6 @@ links:
           subtest: Test that transferToImageBitmap won't change context's property in a worker
         - test: offscreencanvas.transfer.to.imagebitmap.w.html
           subtest: Test that call transferToImageBitmap twice on a alpha-disabled context returns an ImageBitmap with correct color in a worker
-        - test: offscreencanvas.commit.html
-          subtest: Test that calling OffscreenCanvas's commit pushes its contents to its placeholder.
-        - test: offscreencanvas.commit.html
-          subtest: Test that calling commit on an OffscreenCanvas that is not transferred from a HTMLCanvasElement is a noop.
-        - test: offscreencanvas.commit.w.html
-          subtest: Test that calling OffscreenCanvas's commit pushes its contents to its placeholder.
-        - test: offscreencanvas.commit.w.html
-          subtest: Test that calling commit on an OffscreenCanvas that is not transferred from a HTMLCanvasElement throws an exception in a worker.
         - test: offscreencanvas.transferrable.html
           subtest: Test that offscreenCanvas's size is correct after being transferred to a worker.
         - test: offscreencanvas.transferrable.html
@@ -130,21 +122,20 @@ links:
       url: https://bugs.chromium.org/p/chromium/issues/detail?id=1230878
       results:
         - test: offscreencanvas.transferrable.w.html
-        - test: offscreencanvas.commit.html
         - test: offscreencanvas.transferrable.html
     - product: firefox
       url: https://bugzilla.mozilla.org/show_bug.cgi?id=1734522
       results:
         - test: offscreencanvas.transfer.lowlatency.nocrash.html
           subtest: Tests that transferring a low latency canvas does not cause a crash. See crbug.com/1255153
-    - label: interop-2023-offscreencanvas
+    - url: ""
+      label: interop-2023-offscreencanvas
       results:
         - test: offscreencanvas.transfercontrol.to.offscreen.w.html
         - test: offscreencanvas.getcontext.worker.html
         - test: offscreencanvas.transfer.to.imagebitmap.html
         - test: offscreencanvas.transfer.to.imagebitmap.nocrash.html
         - test: offscreencanvas.transferrable.w.html
-        - test: offscreencanvas.commit.w.html
         - test: offscreencanvas.constructor.html
         - test: offscreencanvas.resize.html
         - test: offscreencanvas.transfer.to.imagebitmap.w.html
@@ -152,5 +143,4 @@ links:
         - test: offscreencanvas.constructor.worker.html
         - test: offscreencanvas.getcontext.html
         - test: offscreencanvas.transfercontrol.to.offscreen.html
-        - test: offscreencanvas.commit.html
         - test: offscreencanvas.transfer.lowlatency.nocrash.html
