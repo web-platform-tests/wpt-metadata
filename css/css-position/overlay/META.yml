@@ -36,3 +36,16 @@ links:
   - subtest: Transition overlays
     test: overlay-transition.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1835424
+- product: firefox
+  results:
+  - subtest: HTML elements should have overlay:none !important from the user-agent.
+    test: overlay-user-agent-rules.html
+  - subtest: SVG elements should have overlay:none !important from the user-agent.
+    test: overlay-user-agent-rules.html
+  - subtest: Null namespace elements should have overlay:none !important from the
+      user-agent.
+    test: overlay-user-agent-rules.html
+  - subtest: Arbitrary namespace elements should have overlay:none !important from
+      the user-agent.
+    test: overlay-user-agent-rules.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1836002
