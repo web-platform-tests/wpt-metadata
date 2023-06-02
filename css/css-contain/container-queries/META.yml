@@ -817,3 +817,10 @@ links:
       results:
         - test: dialog-backdrop-create.html
           subtest: Test status
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1836561
+      results:
+        - test: container-name-tree-scoped.html
+          subtest: Outer scope query should not match container-name set by :host rule in shadow tree
+        - test: container-name-tree-scoped.html
+          subtest: Outer scope query should not match container-name set by ::slotted rule in shadow tree
