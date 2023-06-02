@@ -176,3 +176,8 @@ links:
           subtest: e.style['content'] = "image-set(url(\"example.png\") 192dpi, linear-gradient(black, white) 1x)" should set the property value
         - test: image-set-parsing.html
           subtest: e.style['content'] = "-webkit-image-set(url(\"example.png\") 192dpi, linear-gradient(black, white) 1x)" should set the property value
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1836564
+      results:
+        - test: image-set-negative-resolution-rendering-2.html
+          subtest: Test status
