@@ -17,8 +17,6 @@ links:
         - test: 2d.drawImage.9arg.sourcesize.worker.html
         - test: 2d.drawImage.alpha.html
         - test: 2d.drawImage.alpha.worker.html
-        - test: 2d.drawImage.animated.poster.html
-        - test: 2d.drawImage.animated.poster.worker.html
         - test: 2d.drawImage.broken.html
         - test: 2d.drawImage.broken.worker.html
         - test: 2d.drawImage.canvas.html
@@ -48,7 +46,6 @@ links:
         - test: 2d.drawImage.self.2.html
         - test: 2d.drawImage.self.2.worker.html
         - test: 2d.drawImage.svg.html
-        - test: 2d.drawImage.svg.worker.html
         - test: 2d.drawImage.transform.html
         - test: 2d.drawImage.transform.worker.html
         - test: 2d.drawImage.wrongtype.html
@@ -57,7 +54,6 @@ links:
         - test: 2d.drawImage.zerocanvas.worker.html
         - test: 2d.drawImage.zerosource.html
         - test: 2d.drawImage.zerosource.image.html
-        - test: 2d.drawImage.zerosource.image.worker.html
         - test: 2d.drawImage.zerosource.worker.html
     - product: firefox
       url: https://bugzilla.mozilla.org/show_bug.cgi?id=1672955
@@ -65,8 +61,6 @@ links:
         - test: 2d.drawImage.zerosource.html
           subtest: drawImage with zero-sized source rectangle draws nothing without exception
         - test: 2d.drawImage.zerosource.image.html
-          subtest: drawImage with zero-sized source rectangle from image draws nothing without exception
-        - test: 2d.drawImage.zerosource.image.worker.html
           subtest: drawImage with zero-sized source rectangle from image draws nothing without exception
         - test: 2d.drawImage.zerosource.worker.html
           subtest: drawImage with zero-sized source rectangle draws nothing without exception
@@ -89,8 +83,6 @@ links:
           subtest: 2d
         - test: 2d.drawImage.alpha.worker.html
           subtest: 2d
-        - test: 2d.drawImage.animated.poster.worker.html
-          subtest: drawImage() of an APNG draws the poster frame
         - test: 2d.drawImage.broken.worker.html
           subtest: 2d
         - test: 2d.drawImage.canvas.worker.html
@@ -119,19 +111,12 @@ links:
           subtest: 2d
         - test: 2d.drawImage.self.2.worker.html
           subtest: 2d
-        - test: 2d.drawImage.svg.worker.html
-          subtest: drawImage() of an SVG image
         - test: 2d.drawImage.transform.worker.html
           subtest: 2d
         - test: 2d.drawImage.wrongtype.worker.html
           subtest: Incorrect image types in drawImage do not match any defined overloads, so WebIDL throws a TypeError
         - test: 2d.drawImage.zerocanvas.worker.html
           subtest: 2d
-    - product: chrome
-      url: https://bugs.chromium.org/p/chromium/issues/detail?id=606317
-      results:
-        - test: 2d.drawImage.svg.worker.html
-        - test: 2d.drawImage.zerosource.image.worker.html
     - product: chrome
       url: https://bugs.chromium.org/p/chromium/issues/detail?id=1449165
       results:
