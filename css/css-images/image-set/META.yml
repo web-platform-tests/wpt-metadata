@@ -17,7 +17,8 @@ links:
           subtest: e.style['content'] = "image-set(linear-gradient(black, white) 1x, 'example.png' 4x)" should set the property value
         - test: image-set-parsing.html
           subtest: e.style['content'] = "image-set(url(\"example.png\") 192dpi, linear-gradient(black, white) 1x)" should set the property value
-    - label: interop-2023-webcompat
+    - url: ""
+      label: interop-2023-webcompat
       results:
         - test: image-set-no-res-rendering.html
         - test: image-set-resolution-001.html
@@ -180,4 +181,6 @@ links:
       url: https://bugzilla.mozilla.org/show_bug.cgi?id=1836564
       results:
         - test: image-set-negative-resolution-rendering-2.html
+          subtest: Test status
+        - test: image-set-negative-resolution-rendering.html
           subtest: Test status
