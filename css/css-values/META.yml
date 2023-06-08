@@ -736,3 +736,30 @@ links:
       results:
         - test: hypot-pow-sqrt-computed.html
           subtest: calc(-2 * hypot(3px, 4px)) should be used-value-equivalent to -10px
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1816413
+      results:
+        - test: round-mod-rem-serialize.html
+          subtest: '''calc(round(1,0))'' as a specified value should serialize as ''calc(NaN)''.'
+        - test: round-mod-rem-serialize.html
+          subtest: '''scale(calc(round(1,0)))'' as a specified value should serialize as ''scale(calc(NaN))''.'
+        - test: round-mod-rem-serialize.html
+          subtest: '''scale(calc(round(1,0)))'' as a computed value should serialize as ''matrix(NaN, 0, 0, NaN, 0, 0)''.'
+        - test: round-mod-rem-serialize.html
+          subtest: '''calc(mod(1,0))'' as a specified value should serialize as ''calc(NaN)''.'
+        - test: round-mod-rem-serialize.html
+          subtest: '''calc(round(1,0))'' as a computed value should serialize as ''NaN''.'
+        - test: round-mod-rem-serialize.html
+          subtest: '''scale(calc(mod(1,0)))'' as a specified value should serialize as ''scale(calc(NaN))''.'
+        - test: round-mod-rem-serialize.html
+          subtest: '''calc(mod(1,0))'' as a computed value should serialize as ''NaN''.'
+        - test: round-mod-rem-serialize.html
+          subtest: '''scale(calc(mod(1,0)))'' as a computed value should serialize as ''matrix(NaN, 0, 0, NaN, 0, 0)''.'
+        - test: round-mod-rem-serialize.html
+          subtest: '''calc(rem(1,0))'' as a specified value should serialize as ''calc(NaN)''.'
+        - test: round-mod-rem-serialize.html
+          subtest: '''scale(calc(rem(1,0)))'' as a specified value should serialize as ''scale(calc(NaN))''.'
+        - test: round-mod-rem-serialize.html
+          subtest: '''calc(rem(1,0))'' as a computed value should serialize as ''NaN''.'
+        - test: round-mod-rem-serialize.html
+          subtest: '''scale(calc(rem(1,0)))'' as a computed value should serialize as ''matrix(NaN, 0, 0, NaN, 0, 0)''.'
