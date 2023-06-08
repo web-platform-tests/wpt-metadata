@@ -731,3 +731,8 @@ links:
         - test: exp-log-serialize.html
           subtest: '''scale(calc(log(0)))'' as a specified value should serialize as ''scale(calc(-infinity))''.'
         - test: sin-cos-tan-serialize.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1837342
+      results:
+        - test: hypot-pow-sqrt-computed.html
+          subtest: calc(-2 * hypot(3px, 4px)) should be used-value-equivalent to -10px
