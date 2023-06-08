@@ -723,3 +723,10 @@ links:
       results:
         - test: signs-abs-serialize.html
         - test: signs-abs-computed.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1834164
+      results:
+        - test: exp-log-serialize.html
+          subtest: '''calc(log(0))'' as a specified value should serialize as ''calc(-infinity)''.'
+        - test: exp-log-serialize.html
+          subtest: '''scale(calc(log(0)))'' as a specified value should serialize as ''scale(calc(-infinity))''.'
