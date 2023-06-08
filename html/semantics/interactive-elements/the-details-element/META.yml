@@ -1,5 +1,19 @@
 links:
-    - product: chrome
-      url: https://bugs.chromium.org/p/chromium/issues/detail?id=1234839
-      results:
-        - test: toggleEvent.html
+- product: chrome
+  results:
+  - test: toggleEvent.html
+  url: https://bugs.chromium.org/p/chromium/issues/detail?id=1234839
+- product: firefox
+  results:
+  - subtest: basic handling of mutually exclusive details
+    test: name-attribute.tentative.html
+  - subtest: more complex handling of mutually exclusive details
+    test: name-attribute.tentative.html
+  - subtest: mutually exclusive details across multiple names and multiple tree scopes
+    test: name-attribute.tentative.html
+  - subtest: mutation event and toggle event order matches order of insertion in set
+      of named elements
+    test: name-attribute.tentative.html
+  - subtest: interaction of open attribute changes with mutation events
+    test: name-attribute.tentative.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1837330
