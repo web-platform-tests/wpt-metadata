@@ -763,3 +763,38 @@ links:
           subtest: '''calc(rem(1,0))'' as a computed value should serialize as ''NaN''.'
         - test: round-mod-rem-serialize.html
           subtest: '''scale(calc(rem(1,0)))'' as a computed value should serialize as ''matrix(NaN, 0, 0, NaN, 0, 0)''.'
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1834361
+      results:
+        - test: sin-cos-tan-serialize.html
+          subtest: '''scale(calc(calc(tan(-infinity))))'' as a specified value should serialize as ''scale(calc(NaN))''.'
+        - test: sin-cos-tan-serialize.html
+          subtest: '''scale(calc(tan(-infinity)))'' as a specified value should serialize as ''scale(calc(NaN))''.'
+        - test: sin-cos-tan-serialize.html
+          subtest: '''scale(calc(calc(cos(-infinity))))'' as a specified value should serialize as ''scale(calc(NaN))''.'
+        - test: sin-cos-tan-serialize.html
+          subtest: '''scale(calc(cos(-infinity)))'' as a specified value should serialize as ''scale(calc(NaN))''.'
+        - test: sin-cos-tan-serialize.html
+          subtest: '''scale(calc(calc(sin(-infinity))))'' as a specified value should serialize as ''scale(calc(NaN))''.'
+        - test: sin-cos-tan-serialize.html
+          subtest: '''scale(calc(sin(-infinity)))'' as a specified value should serialize as ''scale(calc(NaN))''.'
+        - test: sin-cos-tan-serialize.html
+          subtest: '''scale(calc(calc(tan(infinity))))'' as a specified value should serialize as ''scale(calc(NaN))''.'
+        - test: sin-cos-tan-serialize.html
+          subtest: '''scale(calc(tan(infinity)))'' as a specified value should serialize as ''scale(calc(NaN))''.'
+        - test: sin-cos-tan-serialize.html
+          subtest: '''scale(calc(calc(cos(infinity))))'' as a specified value should serialize as ''scale(calc(NaN))''.'
+        - test: sin-cos-tan-serialize.html
+          subtest: '''scale(calc(cos(infinity)))'' as a specified value should serialize as ''scale(calc(NaN))''.'
+        - test: sin-cos-tan-serialize.html
+          subtest: '''scale(calc(calc(sin(infinity))))'' as a specified value should serialize as ''scale(calc(NaN))''.'
+        - test: sin-cos-tan-serialize.html
+          subtest: '''scale(calc(sin(infinity)))'' as a specified value should serialize as ''scale(calc(NaN))''.'
+        - test: sin-cos-tan-serialize.html
+          subtest: '''scale(calc(tan(-90deg)))'' as a specified value should serialize as ''scale(calc(-infinity))''.'
+        - test: sin-cos-tan-serialize.html
+          subtest: '''scale(tan(-90deg))'' as a specified value should serialize as ''scale(calc(-infinity))''.'
+        - test: sin-cos-tan-serialize.html
+          subtest: '''scale(calc(tan(90deg)))'' as a specified value should serialize as ''scale(calc(infinity))''.'
+        - test: sin-cos-tan-serialize.html
+          subtest: '''scale(tan(90deg))'' as a specified value should serialize as ''scale(calc(infinity))''.'
