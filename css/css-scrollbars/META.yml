@@ -1,6 +1,12 @@
 links:
-    - product: chrome
-      url: https://crbug.com/891944
-      results:
-        - test: textarea-scrollbar-width-none.html
-        - test: scrollbar-width-parsing.html
+- product: chrome
+  results:
+  - test: textarea-scrollbar-width-none.html
+  - test: scrollbar-width-parsing.html
+  url: https://crbug.com/891944
+- product: firefox
+  results:
+  - subtest: scrollbar-width thin on the body doesn't override ::-webkit-scrollbar
+      on root
+    test: scrollbar-width-014.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1838340
