@@ -1,0 +1,11 @@
+links:
+- product: firefox
+  results:
+  - subtest: Check the existence of HTMLElement.editContext
+    test: edit-context-property.tentative.html
+  - subtest: HTMLElement.editContext must throw a TypeError if set to something other
+      than an EditContext
+    test: edit-context-property.tentative.html
+  - subtest: HTMLElement.editContext can be set on the shadow root elements plus canvas.
+    test: edit-context-property.tentative.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1838964
