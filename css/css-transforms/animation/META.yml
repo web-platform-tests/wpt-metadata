@@ -201,3 +201,28 @@ links:
           subtest: 'CSS Transitions: property <perspective> from [50px] to [none] at (0) should be [50px]'
         - test: perspective-interpolation.html
           subtest: 'CSS Transitions: property <perspective> from [50px] to [none] at (0.3) should be [50px]'
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1838106
+      results:
+        - test: rotate-composition.html
+          subtest: 'Compositing: property <rotate> underlying [1 2 3 40deg] from add [2 4 6 10deg] to add [3 6 9 50deg] at (-1) should be [0.27 0.53 0.8 10deg]'
+        - test: rotate-composition.html
+          subtest: 'Compositing: property <rotate> underlying [1 2 3 40deg] from add [2 4 6 10deg] to add [3 6 9 50deg] at (0.25) should be [0.27 0.53 0.8 60deg]'
+        - test: rotate-composition.html
+          subtest: 'Compositing: property <rotate> underlying [1 2 3 40deg] from add [2 4 6 10deg] to add [3 6 9 50deg] at (0.75) should be [0.27 0.53 0.8 80deg]'
+        - test: rotate-composition.html
+          subtest: 'Compositing: property <rotate> underlying [1 2 3 40deg] from add [2 4 6 10deg] to add [3 6 9 50deg] at (1) should be [0.27 0.53 0.8 90deg]'
+        - test: rotate-composition.html
+          subtest: 'Compositing: property <rotate> underlying [1 2 3 40deg] from add [2 4 6 10deg] to add [3 6 9 50deg] at (2) should be [0.27 0.53 0.8 130deg]'
+        - test: rotate-composition.html
+          subtest: 'Compositing: property <rotate> underlying [1 2 3 270deg] from add [1 2 3 90deg] to replace [0 1 0 100deg] at (0.25) should be [y 25deg]'
+        - test: rotate-composition.html
+          subtest: 'Compositing: property <rotate> underlying [1 2 3 270deg] from add [1 2 3 90deg] to replace [0 1 0 100deg] at (0.75) should be [y 75deg]'
+        - test: rotate-composition.html
+          subtest: 'Compositing: property <rotate> underlying [1 2 3 270deg] from add [1 2 3 90deg] to replace [0 1 0 100deg] at (2) should be [y 200deg]'
+        - test: rotate-composition.html
+          subtest: 'Compositing: property <rotate> underlying [1 2 3 90deg] from add [2 4 6 270deg] to replace [0 1 0 100deg] at (0.25) should be [y 25deg]'
+        - test: rotate-composition.html
+          subtest: 'Compositing: property <rotate> underlying [1 2 3 90deg] from add [2 4 6 270deg] to replace [0 1 0 100deg] at (0.75) should be [y 75deg]'
+        - test: rotate-composition.html
+          subtest: 'Compositing: property <rotate> underlying [1 2 3 90deg] from add [2 4 6 270deg] to replace [0 1 0 100deg] at (2) should be [y 200deg]'
