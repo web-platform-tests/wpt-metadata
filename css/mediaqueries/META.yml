@@ -1050,3 +1050,12 @@ links:
       results:
         - test: test_media_queries.html
           subtest: 'expression_should_be_unknown: overflow-block: optional-paged'
+    - product: chrome
+      url: https://crbug.com/1455061
+      results:
+        - test: test_media_queries.html
+          subtest: 'expression_should_be_unknown: resolution: -3dpi'
+        - test: test_media_queries.html
+          subtest: 'expression_should_be_unknown: min-resolution: -3dpi'
+        - test: test_media_queries.html
+          subtest: 'expression_should_be_unknown: max-resolution: -3dpi'
