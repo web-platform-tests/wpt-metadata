@@ -1,17 +1,22 @@
 links:
-- product: firefox
-  results:
-  - subtest: e.style['scrollbar-gutter'] = "auto" should set the property value
-    test: scrollbar-gutter-valid.html
-  - subtest: e.style['scrollbar-gutter'] = "stable" should set the property value
-    test: scrollbar-gutter-valid.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1718369
-- product: firefox
-  results:
-  - subtest: Property overflow-clip-margin value '0px'
-    test: overflow-clip-margin-computed.html
-  - subtest: Property overflow-clip-margin value '10px'
-    test: overflow-clip-margin-computed.html
-  - subtest: e.style['overflow-clip-margin'] = "10px" should set the property value
-    test: overflow-clip-margin.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1770231
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1718369
+      results:
+        - test: scrollbar-gutter-valid.html
+          subtest: e.style['scrollbar-gutter'] = "auto" should set the property value
+        - test: scrollbar-gutter-valid.html
+          subtest: e.style['scrollbar-gutter'] = "stable" should set the property value
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1770231
+      results:
+        - test: overflow-clip-margin-computed.html
+          subtest: Property overflow-clip-margin value '0px'
+        - test: overflow-clip-margin-computed.html
+          subtest: Property overflow-clip-margin value '10px'
+        - test: overflow-clip-margin.html
+          subtest: e.style['overflow-clip-margin'] = "10px" should set the property value
+    - product: safari
+      url: https://bugs.webkit.org/show_bug.cgi?id=236153
+      results:
+        - test: overflow-clip-margin-computed.html
+        - test: overflow-clip-margin.html
