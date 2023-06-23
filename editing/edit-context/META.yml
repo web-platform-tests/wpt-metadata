@@ -9,3 +9,32 @@ links:
   - subtest: HTMLElement.editContext can be set on the shadow root elements plus canvas.
     test: edit-context-property.tentative.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1838964
+- product: firefox
+  results:
+  - subtest: Testing EditContext Dictionary Init
+    test: edit-context-basics.tentative.html
+  - subtest: A contenteditable element should remain editable after attaching and
+      detaching EditContext.
+    test: edit-context-basics.tentative.html
+  - subtest: EditContext can be associated with an element that is not in the tree.
+    test: edit-context-basics.tentative.html
+  - subtest: If an element is removed from the tree, the associated EditContext remains
+      connected to the element.
+    test: edit-context-basics.tentative.html
+  - subtest: If an element's ancestor is removed from tree, the associated EditContext
+      remains connected to the element.
+    test: edit-context-basics.tentative.html
+  - subtest: .attachedElements() should return associated element
+    test: edit-context-basics.tentative.html
+  - subtest: Testing EditContext update text, selection and layout
+    test: edit-context-basics.tentative.html
+  - subtest: updateCharacterBounds(), characterBounds(), and characterBoundsRangeStart
+      should work properly
+    test: edit-context-basics.tentative.html
+  - subtest: Testing EditContext update text and selection with invalid values
+    test: edit-context-basics.tentative.html
+  - subtest: Testing EditContext English typing
+    test: edit-context-input.tentative.html
+  - subtest: beforeInput(insertText) should be cancelable
+    test: edit-context-input.tentative.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1839997
