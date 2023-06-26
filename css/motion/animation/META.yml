@@ -582,8 +582,7 @@ links:
       url: https://bugs.webkit.org/show_bug.cgi?id=235786
       results:
         - test: offset-rotate-composition.html
-    - url: ""
-      label: interop-2023-motion
+    - label: interop-2023-motion
       results:
         - test: offset-position-interpolation.html
         - test: offset-rotate-composition.html
@@ -873,3 +872,42 @@ links:
           subtest: 'CSS Transitions: property <offset-path> from [ray(200deg farthest-side contain)] to [ray(300deg sides)] at (0) should be [ray(200deg farthest-side contain)]'
         - test: offset-path-interpolation-005.html
           subtest: 'CSS Transitions: property <offset-path> from [ray(200deg farthest-side contain)] to [ray(300deg sides)] at (0.3) should be [ray(200deg farthest-side contain)]'
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1840430
+      results:
+        - test: offset-path-interpolation-005.html
+          subtest: 'CSS Transitions: property <offset-path> from [ray(-10deg farthest-corner)] to [ray(-50deg farthest-corner at 100% 100%)] at (-1) should be [ray(30deg farthest-corner at 0% 0%)]'
+        - test: offset-path-interpolation-005.html
+          subtest: 'CSS Transitions: property <offset-path> from [ray(-10deg farthest-corner)] to [ray(-50deg farthest-corner at 100% 100%)] at (0) should be [ray(-10deg farthest-corner)]'
+        - test: offset-path-interpolation-005.html
+          subtest: 'CSS Transitions: property <offset-path> from [ray(-10deg farthest-corner)] to [ray(-50deg farthest-corner at 100% 100%)] at (0.125) should be [ray(-15deg farthest-corner at 56.25% 56.25%)]'
+        - test: offset-path-interpolation-005.html
+          subtest: 'CSS Transitions: property <offset-path> from [ray(-10deg farthest-corner)] to [ray(-50deg farthest-corner at 100% 100%)] at (0.875) should be [ray(-45deg farthest-corner at 93.75% 93.75%)]'
+        - test: offset-path-interpolation-005.html
+          subtest: 'CSS Transitions: property <offset-path> from [ray(-10deg farthest-corner)] to [ray(-50deg farthest-corner at 100% 100%)] at (2) should be [ray(-90deg farthest-corner at 150% 150%)]'
+        - test: offset-path-interpolation-005.html
+          subtest: 'CSS Transitions with transition: all: property <offset-path> from [ray(-10deg farthest-corner)] to [ray(-50deg farthest-corner at 100% 100%)] at (-1) should be [ray(30deg farthest-corner at 0% 0%)]'
+        - test: offset-path-interpolation-005.html
+          subtest: 'CSS Transitions with transition: all: property <offset-path> from [ray(-10deg farthest-corner)] to [ray(-50deg farthest-corner at 100% 100%)] at (0) should be [ray(-10deg farthest-corner)]'
+        - test: offset-path-interpolation-005.html
+          subtest: 'CSS Transitions with transition: all: property <offset-path> from [ray(-10deg farthest-corner)] to [ray(-50deg farthest-corner at 100% 100%)] at (0.125) should be [ray(-15deg farthest-corner at 56.25% 56.25%)]'
+        - test: offset-path-interpolation-005.html
+          subtest: 'CSS Transitions with transition: all: property <offset-path> from [ray(-10deg farthest-corner)] to [ray(-50deg farthest-corner at 100% 100%)] at (0.875) should be [ray(-45deg farthest-corner at 93.75% 93.75%)]'
+        - test: offset-path-interpolation-005.html
+          subtest: 'CSS Transitions with transition: all: property <offset-path> from [ray(-10deg farthest-corner)] to [ray(-50deg farthest-corner at 100% 100%)] at (2) should be [ray(-90deg farthest-corner at 150% 150%)]'
+        - test: offset-path-interpolation-005.html
+          subtest: 'CSS Animations: property <offset-path> from [ray(-10deg farthest-corner)] to [ray(-50deg farthest-corner at 100% 100%)] at (-1) should be [ray(30deg farthest-corner at 0% 0%)]'
+        - test: offset-path-interpolation-005.html
+          subtest: 'CSS Animations: property <offset-path> from [ray(-10deg farthest-corner)] to [ray(-50deg farthest-corner at 100% 100%)] at (0.125) should be [ray(-15deg farthest-corner at 56.25% 56.25%)]'
+        - test: offset-path-interpolation-005.html
+          subtest: 'CSS Animations: property <offset-path> from [ray(-10deg farthest-corner)] to [ray(-50deg farthest-corner at 100% 100%)] at (0.875) should be [ray(-45deg farthest-corner at 93.75% 93.75%)]'
+        - test: offset-path-interpolation-005.html
+          subtest: 'CSS Animations: property <offset-path> from [ray(-10deg farthest-corner)] to [ray(-50deg farthest-corner at 100% 100%)] at (2) should be [ray(-90deg farthest-corner at 150% 150%)]'
+        - test: offset-path-interpolation-005.html
+          subtest: 'Web Animations: property <offset-path> from [ray(-10deg farthest-corner)] to [ray(-50deg farthest-corner at 100% 100%)] at (2) should be [ray(-90deg farthest-corner at 150% 150%)]'
+        - test: offset-path-interpolation-005.html
+          subtest: 'Web Animations: property <offset-path> from [ray(-10deg farthest-corner)] to [ray(-50deg farthest-corner at 100% 100%)] at (0.875) should be [ray(-45deg farthest-corner at 93.75% 93.75%)]'
+        - test: offset-path-interpolation-005.html
+          subtest: 'Web Animations: property <offset-path> from [ray(-10deg farthest-corner)] to [ray(-50deg farthest-corner at 100% 100%)] at (0.125) should be [ray(-15deg farthest-corner at 56.25% 56.25%)]'
+        - test: offset-path-interpolation-005.html
+          subtest: 'Web Animations: property <offset-path> from [ray(-10deg farthest-corner)] to [ray(-50deg farthest-corner at 100% 100%)] at (-1) should be [ray(30deg farthest-corner at 0% 0%)]'
