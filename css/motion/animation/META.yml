@@ -911,3 +911,18 @@ links:
           subtest: 'Web Animations: property <offset-path> from [ray(-10deg farthest-corner)] to [ray(-50deg farthest-corner at 100% 100%)] at (0.125) should be [ray(-15deg farthest-corner at 56.25% 56.25%)]'
         - test: offset-path-interpolation-005.html
           subtest: 'Web Animations: property <offset-path> from [ray(-10deg farthest-corner)] to [ray(-50deg farthest-corner at 100% 100%)] at (-1) should be [ray(30deg farthest-corner at 0% 0%)]'
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1840438
+      results:
+        - test: offset-interpolation.html
+          subtest: 'CSS Transitions: property <offset> from [path("M0 200H 700") 500px 800deg] to [path("M0 300H 700 Z") 600px 900deg] at (-0.3) should be [path("M0 200H 700") 470px 770deg]'
+        - test: offset-interpolation.html
+          subtest: 'CSS Transitions: property <offset> from [path("M0 200H 700") 500px 800deg] to [path("M0 300H 700 Z") 600px 900deg] at (0) should be [path("M0 200H 700") 500px 800deg]'
+        - test: offset-interpolation.html
+          subtest: 'CSS Transitions: property <offset> from [path("M0 200H 700") 500px 800deg] to [path("M0 300H 700 Z") 600px 900deg] at (0.3) should be [path("M0 200H 700") 530px 830deg]'
+        - test: offset-interpolation.html
+          subtest: 'CSS Transitions: property <offset> from [path("M0 0H 200") 500px auto] to [path("M0 0H 300") 600px 0deg] at (-0.3) should be [path("M0 0H 170") 470px auto 0deg]'
+        - test: offset-interpolation.html
+          subtest: 'CSS Transitions: property <offset> from [path("M0 0H 200") 500px auto] to [path("M0 0H 300") 600px 0deg] at (0) should be [path("M0 0H 200") 500px auto 0deg]'
+        - test: offset-interpolation.html
+          subtest: 'CSS Transitions: property <offset> from [path("M0 0H 200") 500px auto] to [path("M0 0H 300") 600px 0deg] at (0.3) should be [path("M0 0H 230") 530px auto 0deg]'
