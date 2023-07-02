@@ -66,6 +66,8 @@ links:
           subtest: .target > * 3
         - test: flex-align-baseline-grid-003.html
           subtest: .target > * 5
+        - test: flex-align-baseline-006.html
+          subtest: '#target > div 3'
     - product: firefox
       url: https://bugzilla.mozilla.org/show_bug.cgi?id=1840778
       results:
@@ -77,3 +79,31 @@ links:
           subtest: .target > * 3
         - test: flex-align-baseline-grid-001.html
           subtest: .target > * 5
+        - test: flex-align-baseline-grid-002.html
+          subtest: .target > * 3
+        - test: flex-align-baseline-grid-002.html
+          subtest: .target > * 5
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1840796
+      results:
+        - test: flex-align-baseline-flex-003.html
+          subtest: .target > * 3
+        - test: flex-align-baseline-flex-003.html
+          subtest: .target > * 7
+        - test: flex-align-baseline-flex-003.html
+          subtest: .target > * 9
+        - test: flex-align-baseline-flex-003.html
+          subtest: .target > * 13
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1840944
+      results:
+        - test: flex-align-baseline-multicol-001.html
+        - test: flex-align-baseline-multicol-002.html
+        - test: flex-align-baseline-multicol-003.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=144517
+      results:
+        - test: flex-align-baseline-table-002.html
+          subtest: .target > * 1
+        - test: flex-align-baseline-table-002.html
+          subtest: .target > * 3
