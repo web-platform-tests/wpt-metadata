@@ -53,14 +53,12 @@ links:
         - test: subgrid-baseline-003.html
         - test: subgrid-baseline-004.html
         - test: subgrid-no-items-on-edges-001.html
-        - test: subgrid-reflow-root-crash.html
         - test: writing-directions-002.html
         - test: placement-implicit-001.html
         - test: subgrid-baseline-009.html
         - test: writing-directions-001.html
         - test: writing-directions-003.html
         - test: auto-track-sizing-003.html
-        - test: contain-strict-subgrid-crash.html
         - test: line-names-010.html
         - test: orthogonal-writing-mode-005.html
         - test: subgrid-baseline-005.html
@@ -72,7 +70,6 @@ links:
         - test: line-names-012.html
         - test: subgrid-baseline-007.html
         - test: subgrid-no-items-on-edges-002.html
-        - test: contain-strict-nested-subgrid-crash.html
         - test: contribution-size-flex-tracks-001.html
         - test: line-names-009.html
         - test: orthogonal-writing-mode-006.html
@@ -181,3 +178,35 @@ links:
       results:
         - test: subgrid-stretch.html
           subtest: Test status
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1841297
+      results:
+        - test: grid-gap-011.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1841304
+      results:
+        - test: subgrid-baseline-009.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1841303
+      results:
+        - test: subgrid-baseline-008.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1841301
+      results:
+        - test: subgrid-baseline-007.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1841300
+      results:
+        - test: subgrid-baseline-006.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1841299
+      results:
+        - test: subgrid-baseline-005.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1841298
+      results:
+        - test: subgrid-no-items-on-edges-002.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1841296
+      results:
+        - test: contribution-size-flex-tracks-001.html

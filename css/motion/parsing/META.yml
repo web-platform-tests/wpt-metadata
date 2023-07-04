@@ -54,3 +54,8 @@ links:
           subtest: e.style['offset-path'] = "path(\"\")" should not set the property value
         - test: offset-path-parsing-invalid.html
           subtest: e.style['offset-path'] = "path(\" \")" should not set the property value
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1598158
+      results:
+        - test: offset-path-parsing-valid.html
+          subtest: e.style['offset-path'] = "url(\"http://www.example.com/index.html#polyline1\")" should set the property value
