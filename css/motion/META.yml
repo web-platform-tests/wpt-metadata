@@ -34,8 +34,7 @@ links:
       url: https://crbug.com/654666
       results:
         - test: offset-path-url.html
-    - url: ""
-      label: interop-2023-motion
+    - label: interop-2023-motion
       results:
         - test: offset-path-ray-contain-001.html
         - test: offset-path-ray-contain-005.html
@@ -73,7 +72,6 @@ links:
         - test: offset-rotate-004.html
         - test: inheritance.html
         - test: offset-distance-005.html
-        - test: offset-path-geometry-box.html
         - test: offset-rotate-003.html
         - test: offset-path-coord-box-001.html
         - test: offset-path-coord-box-002.html
@@ -95,6 +93,7 @@ links:
         - test: offset-path-shape-rect-002.html
         - test: offset-path-shape-xywh-001.html
         - test: offset-path-shape-circle-001.html
+        - test: offset-path-coord-box-004.html
     - product: firefox
       url: https://bugzilla.mozilla.org/show_bug.cgi?id=1598158
       results:
@@ -103,8 +102,6 @@ links:
     - product: firefox
       url: https://bugzilla.mozilla.org/show_bug.cgi?id=1598156
       results:
-        - test: offset-path-geometry-box.html
-          subtest: Test status
         - test: offset-path-shape-rect-001.html
         - test: offset-path-shape-circle-002.html
         - test: offset-path-shape-circle-004.html
@@ -122,8 +119,23 @@ links:
         - test: offset-path-shape-xywh-002.html
         - test: offset-path-shape-ellipse-002.html
         - test: offset-path-shape-ellipse-003.html
+        - test: offset-path-coord-box-001.html
+        - test: offset-path-coord-box-002.html
+        - test: offset-path-coord-box-003.html
+        - test: offset-path-coord-box-004.html
+          subtest: Test status
     - product: chrome
       url: https://crbug.com/1428850
       results:
         - test: offset-supports-calc.html
           subtest: offset-path supports calc
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1786160
+      results:
+        - test: offset-path-shape-xywh-001.html
+        - test: offset-path-shape-xywh-002.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1598159
+      results:
+        - test: offset-path-shape-rect-001.html
+        - test: offset-path-shape-rect-002.html

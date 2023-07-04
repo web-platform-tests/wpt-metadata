@@ -226,3 +226,7 @@ links:
           subtest: 'Compositing: property <rotate> underlying [1 2 3 90deg] from add [2 4 6 270deg] to replace [0 1 0 100deg] at (0.75) should be [y 75deg]'
         - test: rotate-composition.html
           subtest: 'Compositing: property <rotate> underlying [1 2 3 90deg] from add [2 4 6 270deg] to replace [0 1 0 100deg] at (2) should be [y 200deg]'
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1737209
+      results:
+        - test: transform-interpolation-rotate-slerp.html
