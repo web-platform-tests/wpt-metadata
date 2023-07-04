@@ -1,5 +1,15 @@
 links:
     - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1515879
+      results:
+        - test: pointer_mouse.py
+          subtest: test_drag_and_drop_with_draggable_element[0]
+        - test: pointer_mouse.py
+          subtest: test_drag_and_drop_with_draggable_element[300]
+        - test: pointer_mouse.py
+          subtest: test_drag_and_drop_with_draggable_element[800]
+    - product: firefox
       url: https://bugzilla.mozilla.org/show_bug.cgi?id=1658880
       results:
         - test: pointer_pen.py
+
