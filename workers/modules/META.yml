@@ -3,8 +3,7 @@ links:
       url: https://crbug.com/841831
       results:
         - test: dedicated-worker-import-meta.html
-    - url: ""
-      label: interop-2023-modules
+    - label: interop-2023-modules
       results:
         - test: dedicated-worker-import-failure.html
         - test: dedicated-worker-import.any.worker.html
@@ -35,3 +34,8 @@ links:
       url: https://bugs.chromium.org/p/chromium/issues/detail?id=1446246
       results:
         - test: shared-worker-parse-error-failure.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1831583
+      results:
+        - test: shared-worker-import-data-url-cross-origin.html
+        - test: dedicated-worker-import-data-url-cross-origin.html
