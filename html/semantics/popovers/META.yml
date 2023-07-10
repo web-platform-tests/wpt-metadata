@@ -2429,3 +2429,11 @@ links:
   - subtest: Popover focus only returns to invoker when focus is within the popover
     test: popover-focus-2.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1840611
+- product: firefox
+  results:
+  - subtest: togglePopover should toggle the popover and return true or false as specified.
+    test: togglePopover.html
+  - subtest: togglePopover's return value should reflect what the end state is, not
+      just the force parameter.
+    test: togglePopover.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1841882
