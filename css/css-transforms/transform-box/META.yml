@@ -1,5 +1,6 @@
 links:
-    - label: interop-2021-transforms
+    - url: ""
+      label: interop-2021-transforms
       results:
         - test: cssbox-border-box.html
         - test: cssbox-content-box.html
@@ -15,7 +16,6 @@ links:
         - test: svgbox-content-box.html
         - test: svgbox-fill-box.html
         - test: svgbox-initial.html
-        - test: svgbox-stroke-box.html
         - test: svgbox-view-box.html
         - test: value-changed.html
         - test: view-box-mutation-001.html
@@ -25,6 +25,7 @@ links:
         - test: view-box-viewbox-nested.html
         - test: view-box-viewbox.html
         - test: view-box.html
+        - test: svgbox-stroke-box-001.html
     - product: chrome
       url: https://crbug.com/924472
       results:
@@ -35,7 +36,7 @@ links:
         - test: cssbox-fill-box.html
         - test: svgbox-border-box.html
         - test: svgbox-content-box.html
-        - test: svgbox-stroke-box.html
+        - test: svgbox-stroke-box-001.html
     - product: chrome
       url: https://bugs.chromium.org/p/chromium/issues/detail?id=924472
       results:
@@ -49,11 +50,11 @@ links:
     - product: firefox
       url: https://bugzilla.mozilla.org/show_bug.cgi?id=1819464
       results:
-        - test: svgbox-stroke-box.html
-          subtest: Test status
         - test: svgbox-content-box.html
           subtest: Test status
         - test: cssbox-content-box.html
+          subtest: Test status
+        - test: svgbox-stroke-box-001.html
           subtest: Test status
     - product: firefox
       url: https://bugzilla.mozilla.org/show_bug.cgi?id=1371943
