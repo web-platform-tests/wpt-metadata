@@ -212,3 +212,14 @@ links:
           subtest: Changing the query of a URL with an opaque path can impact the path
         - test: urlsearchparams-delete.any.html
           subtest: Changing the query of a URL with an opaque path can impact the path
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1845552
+      results:
+        - test: IdnaTestV2.window.html
+          subtest: ToASCII("ä.­.c") A4_2 (ignored)
+        - test: IdnaTestV2.window.html
+          subtest: ToASCII("ä.­.c") A4_2 (ignored)
+        - test: IdnaTestV2.window.html
+          subtest: ToASCII("Ä.­.C") A4_2 (ignored)
+        - test: IdnaTestV2.window.html
+          subtest: ToASCII("Ä.­.C") A4_2 (ignored)
