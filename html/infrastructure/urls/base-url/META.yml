@@ -8,3 +8,8 @@ links:
   - subtest: window.open() gets base url from initiator.
     test: document-base-url-window-open-about-blank.https.window.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1843249
+- product: firefox
+  results:
+  - subtest: about:blank and about:blank?foo#bar both 'match about:blank'
+    test: matches-about-blank-base-url.window.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1845618
