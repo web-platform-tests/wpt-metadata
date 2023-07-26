@@ -76,3 +76,8 @@ links:
   - subtest: '@layer can be nested'
     test: nesting-layer.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1839547
+- product: firefox
+  results:
+  - subtest: '.foo { > & .bar { color: green; }}'
+    test: parsing.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1845420
