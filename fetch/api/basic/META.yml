@@ -77,3 +77,8 @@ links:
           subtest: Fetch with TacO and mode "same-origin" needs an Origin header
         - test: request-headers.any.html
           subtest: Fetch with TacO and mode "cors" needs an Origin header
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1397646
+      results:
+        - test: status.h2.any.worker.html
+        - test: status.h2.any.html
