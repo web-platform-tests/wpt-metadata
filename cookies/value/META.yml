@@ -1,0 +1,14 @@
+links:
+    - product: chrome
+      url: https://bugs.chromium.org/p/chromium/issues/detail?id=1233602
+      results:
+        - test: value-ctl.html
+          subtest: Cookie with %x0 in value is rejected (DOM).
+        - test: value-ctl.html
+          subtest: Cookie with %xa in value is rejected (DOM).
+        - test: value-ctl.html
+          subtest: Cookie with %xd in value is rejected (DOM).
+        - test: value-ctl.html
+          subtest: Cookie with %xa in name is rejected or modified (HTTP).
+        - test: value-ctl.html
+          subtest: Cookie with %xd in name is rejected or modified (HTTP).
