@@ -1,6 +1,11 @@
 links:
-- product: firefox
-  results:
-  - status: CRASH
-    test: sw.https.window.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1743491
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1743491
+      results:
+        - test: sw.https.window.html
+          status: CRASH
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1784880
+      results:
+        - test: blob.any.html
+        - test: blob.any.worker.html
