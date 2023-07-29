@@ -8,3 +8,8 @@ links:
           subtest: Constructing a Request with a Request on which body.getReader() is called
         - test: request-init-stream.any.html
           subtest: Constructing a Request with a Request on which read() and releaseLock() are called
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1464739
+      results:
+        - test: request-structure.any.html
+          subtest: Check isHistoryNavigation attribute
