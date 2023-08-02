@@ -31,3 +31,8 @@ links:
           subtest: test_exception_details[new Proxy({}, {})-expected32]
         - test: exception_details_await_promise.py
           subtest: test_exception_details[(function*() { yield 'a'; })()-expected33]
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1846744
+      results:
+        - test: arguments.py
+          subtest: test_primitive_value[Number.NaN-argument4]
