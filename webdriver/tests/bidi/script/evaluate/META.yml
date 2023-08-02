@@ -1,0 +1,16 @@
+links:
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1841786
+      results:
+        - test: exception_details_await_promise.py
+          subtest: test_exception_details_await_promise[[1, 2][Symbol.iterator]()-expected28]
+        - test: exception_details_await_promise.py
+          subtest: test_exception_details_await_promise['mystring'[Symbol.iterator]()-expected29]
+        - test: exception_details_await_promise.py
+          subtest: test_exception_details_await_promise[(new Set([1,2]))[Symbol.iterator]()-expected30]
+        - test: exception_details_await_promise.py
+          subtest: test_exception_details_await_promise[(new Map([[1,2]]))[Symbol.iterator]()-expected31]
+        - test: exception_details_await_promise.py
+          subtest: test_exception_details_await_promise[new Proxy({}, {})-expected32]
+        - test: exception_details_await_promise.py
+          subtest: test_exception_details_await_promise[(function*() { yield 'a'; })()-expected33]
