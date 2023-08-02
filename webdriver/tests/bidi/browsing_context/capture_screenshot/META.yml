@@ -10,3 +10,10 @@ links:
           subtest: test_capture_with_viewport[height larger-width smaller]
         - test: capture_screenshot.py
           subtest: test_capture_with_viewport[height larger-width larger]
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1846740
+      results:
+        - test: clip.py
+          subtest: test_clip_element
+        - test: clip.py
+          subtest: test_clip_viewport
