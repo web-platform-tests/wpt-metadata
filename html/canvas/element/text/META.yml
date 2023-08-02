@@ -93,11 +93,6 @@ links:
         - test: 2d.text.draw.baseline.hanging.html
         - test: 2d.text.draw.baseline.ideographic.html
     - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1700289
-      results:
-        - test: 2d.text.measure.boundingBox.direction.html
-          subtest: Measurement should follow text direction
-    - product: firefox
       url: https://bugzilla.mozilla.org/show_bug.cgi?id=1795190
       results:
         - test: 2d.text.drawing.style.invalid.spacing.html
@@ -117,3 +112,8 @@ links:
       results:
         - test: 2d.text.measure.fontBoundingBox.ahem.html
           subtest: Testing fontBoundingBox for font ahem
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1700289
+      results:
+        - test: 2d.text.drawing.style.measure.direction.html
+          subtest: Measurement should follow text direction
