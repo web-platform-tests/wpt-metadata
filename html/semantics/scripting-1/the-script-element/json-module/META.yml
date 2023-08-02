@@ -61,3 +61,21 @@ links:
   - subtest: image/svg+json
     test: valid-content-type.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1803996
+- product: firefox
+  results:
+  - test: charset-bom.any.sharedworker.html
+  - test: charset-bom.any.worker.html
+  - test: charset-bom.any.html
+  - test: invalid-content-type.any.html
+  - test: invalid-content-type.any.sharedworker.html
+  - test: invalid-content-type.any.worker.html
+  - subtest: JSON Module dynamic import should not load within the context of a service
+      worker
+    test: json-module-service-worker-test.https.html
+  - test: non-object.any.worker.html
+  - test: non-object.any.html
+  - test: non-object.any.sharedworker.html
+  - test: repeated-imports.any.html
+  - test: repeated-imports.any.sharedworker.html
+  - test: repeated-imports.any.worker.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1846737
