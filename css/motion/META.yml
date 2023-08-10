@@ -30,8 +30,7 @@ links:
         - test: offset-path-ray-contain-003.html
         - test: offset-path-ray-contain-004.html
         - test: offset-path-ray-contain-005.html
-    - url: ""
-      label: interop-2023-motion
+    - label: interop-2023-motion
       results:
         - test: offset-path-ray-contain-001.html
         - test: offset-path-ray-contain-005.html
@@ -135,3 +134,8 @@ links:
       results:
         - test: offset-path-shape-ellipse-003.html
           subtest: Test status
+    - product: chrome
+      url: https://crbug.com/1471903
+      results:
+        - test: inheritance.html
+          subtest: Property offset-position has initial value normal
