@@ -836,3 +836,7 @@ links:
           subtest: e.style['letter-spacing'] = "clamp(1px, 2px, clamp(2px, 3px, 4px))" should set the property value
         - test: clamp-length-serialize.html
           subtest: e.style['letter-spacing'] = "calc(clamp(1px, 2px, clamp(2px, 3px, 4px)))" should set the property value
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1848385
+      results:
+        - test: signs-abs-computed.html
