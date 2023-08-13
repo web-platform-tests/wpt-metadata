@@ -23,3 +23,10 @@ links:
       results:
         - test: request-structure.any.html
           subtest: Check duplex attribute
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1839319
+      results:
+        - test: request-init-priority.any.html
+          subtest: new Request() throws a TypeError if any of RequestInit's members' values are invalid
+        - test: request-init-priority.any.html
+          subtest: fetch() with an invalid priority returns a rejected promise with a TypeError
