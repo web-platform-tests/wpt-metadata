@@ -1,5 +1,48 @@
 links:
-    - product: chrome
-      url: https://bugs.chromium.org/p/chromium/issues/detail?id=651661
-      results:
-        - test: htmlanchorelement_noopener.html
+- product: chrome
+  results:
+  - test: htmlanchorelement_noopener.html
+  url: https://bugs.chromium.org/p/chromium/issues/detail?id=651661
+- product: firefox
+  results:
+  - subtest: <a href="non-special://test:9001/">.username setter
+    test: non-special-url-getter-setter.window.html
+  - subtest: <area href="non-special://test:9001/">.username setter
+    test: non-special-url-getter-setter.window.html
+  - subtest: <a href="non-special://test:9001/">.password setter
+    test: non-special-url-getter-setter.window.html
+  - subtest: <area href="non-special://test:9001/">.password setter
+    test: non-special-url-getter-setter.window.html
+  - subtest: <a href="non-special://test:9001/">.host getter
+    test: non-special-url-getter-setter.window.html
+  - subtest: <a href="non-special://test:9001/">.host setter
+    test: non-special-url-getter-setter.window.html
+  - subtest: <area href="non-special://test:9001/">.host getter
+    test: non-special-url-getter-setter.window.html
+  - subtest: <area href="non-special://test:9001/">.host setter
+    test: non-special-url-getter-setter.window.html
+  - subtest: <a href="non-special://test:9001/">.hostname getter
+    test: non-special-url-getter-setter.window.html
+  - subtest: <a href="non-special://test:9001/">.hostname setter
+    test: non-special-url-getter-setter.window.html
+  - subtest: <area href="non-special://test:9001/">.hostname getter
+    test: non-special-url-getter-setter.window.html
+  - subtest: <area href="non-special://test:9001/">.hostname setter
+    test: non-special-url-getter-setter.window.html
+  - subtest: <a href="non-special://test:9001/">.port getter
+    test: non-special-url-getter-setter.window.html
+  - subtest: <a href="non-special://test:9001/">.port setter
+    test: non-special-url-getter-setter.window.html
+  - subtest: <area href="non-special://test:9001/">.port getter
+    test: non-special-url-getter-setter.window.html
+  - subtest: <area href="non-special://test:9001/">.port setter
+    test: non-special-url-getter-setter.window.html
+  - subtest: <a href="non-special://test:9001/">.pathname getter
+    test: non-special-url-getter-setter.window.html
+  - subtest: <a href="non-special://test:9001/">.pathname setter
+    test: non-special-url-getter-setter.window.html
+  - subtest: <area href="non-special://test:9001/">.pathname getter
+    test: non-special-url-getter-setter.window.html
+  - subtest: <area href="non-special://test:9001/">.pathname setter
+    test: non-special-url-getter-setter.window.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1850102
