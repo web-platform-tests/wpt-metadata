@@ -21,3 +21,16 @@ links:
   - subtest: Dangling Markup in target is reset when set by <base> tag
     test: dangling-markup-window-name.tentative.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1849634
+- product: firefox
+  results:
+  - subtest: Dangling Markup with "\n" in target is reset when set by <a> tag
+    test: dangling-markup-window-name.html
+  - subtest: Dangling Markup with "\r" in target is reset when set by <a> tag
+    test: dangling-markup-window-name.html
+  - subtest: Dangling Markup with "\t" in target is reset when set by <a> tag
+    test: dangling-markup-window-name.html
+  - subtest: Dangling Markup in target is reset when set by <form> tag
+    test: dangling-markup-window-name.html
+  - subtest: Dangling Markup in target is reset when set by <base> tag
+    test: dangling-markup-window-name.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1850842
