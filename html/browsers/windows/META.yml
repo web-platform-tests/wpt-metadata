@@ -1,23 +1,23 @@
 links:
-- product: chrome
-  results:
-  - test: clear-window-name.https.html
-  url: https://crbug.com/706350
-- product: firefox
-  results:
-  - subtest: Check that browsing context has new, ready HTML document
-    test: browsing-context.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1780296
-- product: firefox
-  results:
-  - subtest: Dangling Markup with "\n" in target is reset when set by <a> tag
-    test: dangling-markup-window-name.tentative.html
-  - subtest: Dangling Markup with "\r" in target is reset when set by <a> tag
-    test: dangling-markup-window-name.tentative.html
-  - subtest: Dangling Markup with "\t" in target is reset when set by <a> tag
-    test: dangling-markup-window-name.tentative.html
-  - subtest: Dangling Markup in target is reset when set by <form> tag
-    test: dangling-markup-window-name.tentative.html
-  - subtest: Dangling Markup in target is reset when set by <base> tag
-    test: dangling-markup-window-name.tentative.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1849634
+    - product: chrome
+      url: https://crbug.com/706350
+      results:
+        - test: clear-window-name.https.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1780296
+      results:
+        - test: browsing-context.html
+          subtest: Check that browsing context has new, ready HTML document
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1849634
+      results:
+        - test: dangling-markup-window-name.html
+          subtest: Dangling Markup with "\n" in target is reset when set by <a> tag
+        - test: dangling-markup-window-name.html
+          subtest: Dangling Markup with "\r" in target is reset when set by <a> tag
+        - test: dangling-markup-window-name.html
+          subtest: Dangling Markup with "\t" in target is reset when set by <a> tag
+        - test: dangling-markup-window-name.html
+          subtest: Dangling Markup in target is reset when set by <form> tag
+        - test: dangling-markup-window-name.html
+          subtest: Dangling Markup in target is reset when set by <base> tag
