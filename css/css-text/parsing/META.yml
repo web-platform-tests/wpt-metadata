@@ -141,3 +141,24 @@ links:
   - subtest: Property white-space value 'nowrap preserve-breaks'
     test: white-space-shorthand.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1851312
+- product: firefox
+  results:
+  - subtest: e.style['text-wrap'] = "wrap" should set the property value
+    test: text-wrap-valid.html
+  - subtest: e.style['text-wrap'] = "nowrap" should set the property value
+    test: text-wrap-valid.html
+  - subtest: e.style['text-wrap'] = "balance" should set the property value
+    test: text-wrap-valid.html
+  - subtest: e.style['text-wrap'] = "pretty" should set the property value
+    test: text-wrap-valid.html
+  - subtest: e.style['text-wrap'] = "initial" should set the property value
+    test: text-wrap-valid.html
+  - subtest: e.style['text-wrap'] = "inherit" should set the property value
+    test: text-wrap-valid.html
+  - subtest: e.style['text-wrap'] = "unset" should set the property value
+    test: text-wrap-valid.html
+  - subtest: e.style['text-wrap'] = "revert" should set the property value
+    test: text-wrap-valid.html
+  - subtest: e.style['text-wrap'] = "revert-layer" should set the property value
+    test: text-wrap-valid.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1851315
