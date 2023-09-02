@@ -1,69 +1,57 @@
 links:
-- product: chrome
-  results:
-  - test: word-boundary-expansion-computed.html
-  - test: word-boundary-expansion-valid.html
-  - test: word-boundary-detection-computed.html
-  - test: word-boundary-detection-valid.html
-  url: https://bugs.chromium.org/p/chromium/issues/detail?id=1216228
-- product: chrome
-  results:
-  - test: text-justify-computed.html
-  - test: text-justify-valid.html
-  url: https://bugs.chromium.org/p/chromium/issues/detail?id=316409
-- product: chrome
-  results:
-  - test: text-align-last-valid.html
-  - test: text-align-valid.html
-  - test: text-align-all-valid.html
-  - test: text-align-computed.html
-  - test: text-align-last-computed.html
-  url: https://bugs.chromium.org/p/chromium/issues/detail?id=1219012
-- product: chrome
-  results:
-  - test: text-transform-valid.html
-  - test: text-transform-computed.html
-  url: https://bugs.chromium.org/p/chromium/issues/detail?id=1219023
-- product: chrome
-  results:
-  - test: hanging-punctuation-valid.html
-  url: https://bugs.chromium.org/p/chromium/issues/detail?id=1219062
-- product: firefox
-  results:
-  - subtest: '`text-wrap: balance` should be set'
-    test: white-space-shorthand-text-wrap.html
-  - subtest: '`text-wrap` should not be affected by previous `white-space`'
-    test: white-space-shorthand-text-wrap.html
-  - subtest: '`white-space` should overwrite previous `text-wrap`'
-    test: white-space-shorthand-text-wrap.html
-  - subtest: '`text-wrap` should not be affected by `white-space` on the parent'
-    test: white-space-shorthand-text-wrap.html
-  - subtest: '`white-space` should overwrite `text-wrap` on the parent'
-    test: white-space-shorthand-text-wrap.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1825140
-- product: firefox
-  results:
-  - subtest: e.style['white-space-collapse'] = "collapse" should set the property
-      value
-    test: white-space-collapse-valid.html
-  - subtest: e.style['white-space-collapse'] = "preserve" should set the property
-      value
-    test: white-space-collapse-valid.html
-  - subtest: e.style['white-space-collapse'] = "preserve-breaks" should set the property
-      value
-    test: white-space-collapse-valid.html
-  - subtest: e.style['white-space-collapse'] = "break-spaces" should set the property
-      value
-    test: white-space-collapse-valid.html
-  - subtest: e.style['white-space-collapse'] = "initial" should set the property value
-    test: white-space-collapse-valid.html
-  - subtest: e.style['white-space-collapse'] = "inherit" should set the property value
-    test: white-space-collapse-valid.html
-  - subtest: e.style['white-space-collapse'] = "unset" should set the property value
-    test: white-space-collapse-valid.html
-  - subtest: e.style['white-space-collapse'] = "revert" should set the property value
-    test: white-space-collapse-valid.html
-  - subtest: e.style['white-space-collapse'] = "revert-layer" should set the property
-      value
-    test: white-space-collapse-valid.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1832931
+    - product: chrome
+      url: https://bugs.chromium.org/p/chromium/issues/detail?id=316409
+      results:
+        - test: text-justify-computed.html
+        - test: text-justify-valid.html
+    - product: chrome
+      url: https://bugs.chromium.org/p/chromium/issues/detail?id=1219012
+      results:
+        - test: text-align-last-valid.html
+        - test: text-align-valid.html
+        - test: text-align-all-valid.html
+        - test: text-align-computed.html
+        - test: text-align-last-computed.html
+    - product: chrome
+      url: https://bugs.chromium.org/p/chromium/issues/detail?id=1219023
+      results:
+        - test: text-transform-valid.html
+        - test: text-transform-computed.html
+    - product: chrome
+      url: https://bugs.chromium.org/p/chromium/issues/detail?id=1219062
+      results:
+        - test: hanging-punctuation-valid.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1825140
+      results:
+        - test: white-space-shorthand-text-wrap.html
+          subtest: '`text-wrap: balance` should be set'
+        - test: white-space-shorthand-text-wrap.html
+          subtest: '`text-wrap` should not be affected by previous `white-space`'
+        - test: white-space-shorthand-text-wrap.html
+          subtest: '`white-space` should overwrite previous `text-wrap`'
+        - test: white-space-shorthand-text-wrap.html
+          subtest: '`text-wrap` should not be affected by `white-space` on the parent'
+        - test: white-space-shorthand-text-wrap.html
+          subtest: '`white-space` should overwrite `text-wrap` on the parent'
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1832931
+      results:
+        - test: white-space-collapse-valid.html
+          subtest: e.style['white-space-collapse'] = "collapse" should set the property value
+        - test: white-space-collapse-valid.html
+          subtest: e.style['white-space-collapse'] = "preserve" should set the property value
+        - test: white-space-collapse-valid.html
+          subtest: e.style['white-space-collapse'] = "preserve-breaks" should set the property value
+        - test: white-space-collapse-valid.html
+          subtest: e.style['white-space-collapse'] = "break-spaces" should set the property value
+        - test: white-space-collapse-valid.html
+          subtest: e.style['white-space-collapse'] = "initial" should set the property value
+        - test: white-space-collapse-valid.html
+          subtest: e.style['white-space-collapse'] = "inherit" should set the property value
+        - test: white-space-collapse-valid.html
+          subtest: e.style['white-space-collapse'] = "unset" should set the property value
+        - test: white-space-collapse-valid.html
+          subtest: e.style['white-space-collapse'] = "revert" should set the property value
+        - test: white-space-collapse-valid.html
+          subtest: e.style['white-space-collapse'] = "revert-layer" should set the property value
