@@ -1,13 +1,6 @@
 links:
 - product: chrome
   results:
-  - test: word-boundary-expansion-computed.html
-  - test: word-boundary-expansion-valid.html
-  - test: word-boundary-detection-computed.html
-  - test: word-boundary-detection-valid.html
-  url: https://bugs.chromium.org/p/chromium/issues/detail?id=1216228
-- product: chrome
-  results:
   - test: text-justify-computed.html
   - test: text-justify-valid.html
   url: https://bugs.chromium.org/p/chromium/issues/detail?id=316409
@@ -67,3 +60,105 @@ links:
       value
     test: white-space-collapse-valid.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1832931
+- product: firefox
+  results:
+  - subtest: e.style['white-space'] = "collapse" should set the property value
+    test: white-space-shorthand.html
+  - subtest: Property white-space value 'collapse'
+    test: white-space-shorthand.html
+  - subtest: e.style['white-space'] = "wrap" should set the property value
+    test: white-space-shorthand.html
+  - subtest: Property white-space value 'wrap'
+    test: white-space-shorthand.html
+  - subtest: e.style['white-space'] = "collapse wrap" should set the property value
+    test: white-space-shorthand.html
+  - subtest: Property white-space value 'collapse wrap'
+    test: white-space-shorthand.html
+  - subtest: e.style['white-space'] = "wrap collapse" should set the property value
+    test: white-space-shorthand.html
+  - subtest: Property white-space value 'wrap collapse'
+    test: white-space-shorthand.html
+  - subtest: e.style['white-space'] = "preserve nowrap" should set the property value
+    test: white-space-shorthand.html
+  - subtest: Property white-space value 'preserve nowrap'
+    test: white-space-shorthand.html
+  - subtest: e.style['white-space'] = "nowrap preserve" should set the property value
+    test: white-space-shorthand.html
+  - subtest: Property white-space value 'nowrap preserve'
+    test: white-space-shorthand.html
+  - subtest: e.style['white-space'] = "collapse nowrap" should set the property value
+    test: white-space-shorthand.html
+  - subtest: Property white-space value 'collapse nowrap'
+    test: white-space-shorthand.html
+  - subtest: e.style['white-space'] = "nowrap collapse" should set the property value
+    test: white-space-shorthand.html
+  - subtest: Property white-space value 'nowrap collapse'
+    test: white-space-shorthand.html
+  - subtest: e.style['white-space'] = "preserve" should set the property value
+    test: white-space-shorthand.html
+  - subtest: Property white-space value 'preserve'
+    test: white-space-shorthand.html
+  - subtest: e.style['white-space'] = "preserve wrap" should set the property value
+    test: white-space-shorthand.html
+  - subtest: Property white-space value 'preserve wrap'
+    test: white-space-shorthand.html
+  - subtest: e.style['white-space'] = "wrap preserve" should set the property value
+    test: white-space-shorthand.html
+  - subtest: Property white-space value 'wrap preserve'
+    test: white-space-shorthand.html
+  - subtest: e.style['white-space'] = "break-spaces wrap" should set the property
+      value
+    test: white-space-shorthand.html
+  - subtest: Property white-space value 'break-spaces wrap'
+    test: white-space-shorthand.html
+  - subtest: e.style['white-space'] = "wrap break-spaces" should set the property
+      value
+    test: white-space-shorthand.html
+  - subtest: Property white-space value 'wrap break-spaces'
+    test: white-space-shorthand.html
+  - subtest: e.style['white-space'] = "preserve-breaks" should set the property value
+    test: white-space-shorthand.html
+  - subtest: Property white-space value 'preserve-breaks'
+    test: white-space-shorthand.html
+  - subtest: e.style['white-space'] = "preserve-breaks wrap" should set the property
+      value
+    test: white-space-shorthand.html
+  - subtest: Property white-space value 'preserve-breaks wrap'
+    test: white-space-shorthand.html
+  - subtest: e.style['white-space'] = "wrap preserve-breaks" should set the property
+      value
+    test: white-space-shorthand.html
+  - subtest: Property white-space value 'wrap preserve-breaks'
+    test: white-space-shorthand.html
+  - subtest: e.style['white-space'] = "preserve-breaks nowrap" should set the property
+      value
+    test: white-space-shorthand.html
+  - subtest: Property white-space value 'preserve-breaks nowrap'
+    test: white-space-shorthand.html
+  - subtest: e.style['white-space'] = "nowrap preserve-breaks" should set the property
+      value
+    test: white-space-shorthand.html
+  - subtest: Property white-space value 'nowrap preserve-breaks'
+    test: white-space-shorthand.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1851312
+- product: firefox
+  results:
+  - subtest: e.style['text-wrap'] = "wrap" should set the property value
+    test: text-wrap-valid.html
+  - subtest: e.style['text-wrap'] = "nowrap" should set the property value
+    test: text-wrap-valid.html
+  - subtest: e.style['text-wrap'] = "balance" should set the property value
+    test: text-wrap-valid.html
+  - subtest: e.style['text-wrap'] = "pretty" should set the property value
+    test: text-wrap-valid.html
+  - subtest: e.style['text-wrap'] = "initial" should set the property value
+    test: text-wrap-valid.html
+  - subtest: e.style['text-wrap'] = "inherit" should set the property value
+    test: text-wrap-valid.html
+  - subtest: e.style['text-wrap'] = "unset" should set the property value
+    test: text-wrap-valid.html
+  - subtest: e.style['text-wrap'] = "revert" should set the property value
+    test: text-wrap-valid.html
+  - subtest: e.style['text-wrap'] = "revert-layer" should set the property value
+    test: text-wrap-valid.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1851315
