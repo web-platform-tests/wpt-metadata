@@ -26,12 +26,6 @@ links:
           status: FAIL
         - test: tab-stop-threshold-006.html
           status: FAIL
-        - test: text-space-collapse-discard-001.xht
-          status: FAIL
-        - test: text-space-collapse-preserve-breaks-001.xht
-          status: FAIL
-        - test: text-space-trim-trim-inner-001.xht
-          status: FAIL
         - test: trailing-ideographic-space-001.html
           status: FAIL
         - test: trailing-ideographic-space-002.html
@@ -43,6 +37,12 @@ links:
         - test: white-space-intrinsic-size-001.html
           status: FAIL
         - test: white-space-pre-wrap-trailing-spaces-002.html
+          status: FAIL
+        - test: white-space-collapse-preserve-breaks-001.xht
+          status: FAIL
+        - test: white-space-collapse-discard-001.xht
+          status: FAIL
+        - test: white-space-trim-discard-inner-001.xht
           status: FAIL
     - product: safari
       url: https://bugs.webkit.org/show_bug.cgi?id=195345
@@ -82,12 +82,6 @@ links:
           status: FAIL
         - test: tab-stop-threshold-006.html
           status: FAIL
-        - test: text-space-collapse-discard-001.xht
-          status: FAIL
-        - test: text-space-collapse-preserve-breaks-001.xht
-          status: FAIL
-        - test: text-space-trim-trim-inner-001.xht
-          status: FAIL
         - test: trailing-ideographic-space-001.html
           status: FAIL
         - test: trailing-ideographic-space-002.html
@@ -99,6 +93,12 @@ links:
         - test: white-space-intrinsic-size-001.html
           status: FAIL
         - test: white-space-pre-wrap-trailing-spaces-002.html
+          status: FAIL
+        - test: white-space-collapse-preserve-breaks-001.xht
+          status: FAIL
+        - test: white-space-collapse-discard-001.xht
+          status: FAIL
+        - test: white-space-trim-discard-inner-001.xht
           status: FAIL
     - product: webkitgtk
       url: https://bugs.webkit.org/show_bug.cgi?id=195345
@@ -252,21 +252,22 @@ links:
         - test: tab-stop-threshold-005.html
         - test: seg-break-transformation-001.tentative.html
         - test: tab-stop-threshold-001.html
-        - test: text-space-collapse-discard-001.xht
         - test: seg-break-transformation-009.tentative.html
         - test: tab-stop-threshold-003.html
         - test: seg-break-transformation-004.tentative.html
         - test: seg-break-transformation-008.tentative.html
-        - test: text-space-collapse-preserve-breaks-001.xht
-        - test: text-space-trim-trim-inner-001.xht
         - test: trailing-ogham-001.html
         - test: seg-break-transformation-003.tentative.html
+        - test: white-space-collapse-preserve-breaks-001.xht
+        - test: white-space-collapse-discard-001.xht
+        - test: white-space-trim-discard-inner-001.xht
     - product: safari
       url: https://bugs.webkit.org/show_bug.cgi?id=243939
       results:
         - test: white-space-pre-wrap-trailing-spaces-021.html
           subtest: Test status
-    - label: interop-2023-webcompat
+    - url: ""
+      label: interop-2023-webcompat
       results:
         - test: break-spaces-011.html
     - product: chrome
