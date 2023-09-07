@@ -881,3 +881,11 @@ links:
   - subtest: 'inset: 1px !important is disallowed in @fallback-position'
     test: at-fallback-position-allowed-declarations.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1850829
+- product: firefox
+  results:
+  - subtest: Should be above the anchor when at initial scroll position
+    test: anchor-position-auto-004.html
+  - subtest: Scroll down to allow enough space below the anchor, should move target
+      below
+    test: anchor-position-auto-004.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1852053
