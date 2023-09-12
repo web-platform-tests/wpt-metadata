@@ -1104,3 +1104,8 @@ links:
         - test: nth-child-of-has.html
           subtest: Test status
         - test: nth-child-of-has.html
+    - product: chrome
+      url: https://crbug.com/1481040
+      results:
+        - test: input-pseudo-classes-in-has.html
+          subtest: :default invalidation with input[type=checkbox] and assignment to .checked
