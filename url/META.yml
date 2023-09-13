@@ -236,3 +236,17 @@ links:
           subtest: 'URL: Setting <javascript://x/>.password = ''bowser'''
         - test: url-setters.any.html?include=javascript
           subtest: 'URL: Setting <javascript://x/>.port = ''12'''
+        - test: url-constructor.any.html?include=javascript
+          subtest: 'Parsing: <javascript:/../> without base'
+        - test: url-constructor.any.html?include=javascript
+          subtest: 'Parsing: <javascript://example.com:8080/pathname?search#hash> without base'
+        - test: url-constructor.any.html?include=javascript
+          subtest: 'Parsing: <javascript:///test> without base'
+        - test: url-constructor.any.html?include=javascript
+          subtest: 'Parsing: <javascript://test/a/../b> without base'
+        - test: url-constructor.any.html?include=javascript
+          subtest: 'Parsing: <javascript://:443> without base'
+        - test: url-constructor.any.html?include=javascript
+          subtest: 'Parsing: <javascript://test:test> without base'
+        - test: url-constructor.any.html?include=javascript
+          subtest: 'Parsing: <javascript://[:1]> without base'
