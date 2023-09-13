@@ -227,3 +227,12 @@ links:
           subtest: ToASCII("Ä.­.C") A4_2 (ignored)
         - test: IdnaTestV2.window.html
           subtest: ToASCII("Ä.­.C") A4_2 (ignored)
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1848511
+      results:
+        - test: url-setters.any.html?include=javascript
+          subtest: 'URL: Setting <javascript://x/>.username = ''wario'''
+        - test: url-setters.any.html?include=javascript
+          subtest: 'URL: Setting <javascript://x/>.password = ''bowser'''
+        - test: url-setters.any.html?include=javascript
+          subtest: 'URL: Setting <javascript://x/>.port = ''12'''
