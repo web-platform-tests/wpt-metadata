@@ -250,3 +250,15 @@ links:
           subtest: 'Parsing: <javascript://test:test> against <about:blank>'
         - test: a-element-xhtml.xhtml?include=javascript
           subtest: 'Parsing: <javascript://[:1]> against <about:blank>'
+        - test: url-setters-a-area.window.html?include=javascript
+          subtest: '<a>: Setting <javascript://x/>.username = ''wario'''
+        - test: url-setters-a-area.window.html?include=javascript
+          subtest: '<area>: Setting <javascript://x/>.username = ''wario'''
+        - test: url-setters-a-area.window.html?include=javascript
+          subtest: '<a>: Setting <javascript://x/>.password = ''bowser'''
+        - test: url-setters-a-area.window.html?include=javascript
+          subtest: '<area>: Setting <javascript://x/>.password = ''bowser'''
+        - test: url-setters-a-area.window.html?include=javascript
+          subtest: '<a>: Setting <javascript://x/>.port = ''12'''
+        - test: url-setters-a-area.window.html?include=javascript
+          subtest: '<area>: Setting <javascript://x/>.port = ''12'''
