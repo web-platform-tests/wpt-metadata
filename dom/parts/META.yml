@@ -52,3 +52,31 @@ links:
   - subtest: Basic declarative DOM Parts (Clone)
     test: basic-dom-part-objects.tentative.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1845705
+- product: firefox
+  results:
+  - subtest: Basic declarative DOM Parts (Clone)
+    test: basic-dom-part-declarative-brace-syntax.tentative.html
+  - subtest: Parser only behavior - adding parseparts does nothing
+    test: basic-dom-part-declarative-brace-syntax.tentative.html
+  - subtest: Self closing elements can't use parseparts
+    test: basic-dom-part-declarative-brace-syntax.tentative.html
+  - subtest: Second head element can't use parseparts
+    test: basic-dom-part-declarative-brace-syntax.tentative.html
+  - subtest: Not quite parts syntax - none should become parts, and nothing should
+      crash
+    test: basic-dom-part-declarative-brace-syntax.tentative.html
+  - subtest: Basic declarative DOM Parts (Main Document)
+    test: basic-dom-part-declarative-pi-syntax.tentative.html
+  - subtest: Basic declarative DOM Parts (Template)
+    test: basic-dom-part-declarative-pi-syntax.tentative.html
+  - subtest: Basic declarative DOM Parts (Clone)
+    test: basic-dom-part-declarative-pi-syntax.tentative.html
+  - subtest: Basic declarative DOM Parts (PartClone)
+    test: basic-dom-part-declarative-pi-syntax.tentative.html
+  - subtest: Corner case ChildNodePart construction and cloning (DocumentFragment)
+    test: basic-dom-part-objects.tentative.html
+  - subtest: It is not possible to put parseparts on the head element
+    test: dom-parts-parseparts-on-head.tentative.html
+  - subtest: It is not possible to put parseparts on the root element
+    test: dom-parts-parseparts-on-root.tentative.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1852890
