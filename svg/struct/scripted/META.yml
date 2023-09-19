@@ -1,25 +1,36 @@
 links:
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1804956
-      results:
-        - test: use-load-error-events.tentative.html
-          subtest: '''load'' and ''error'' events for SVG <use>, external reference, existing'
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1809606
-      results:
-        - test: use-load-error-events.tentative.html
-          subtest: '''load'' and ''error'' events for SVG <use>, external reference, non-existing'
-        - test: use-load-error-events.tentative.html
-          subtest: '''load'' and ''error'' events for SVG <use>, external reference, existing, parse error'
-        - test: use-load-error-events.tentative.html
-          subtest: '''load'' and ''error'' events for SVG <use>, external reference, existing, changed to local reference while loading'
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1736303
-      results:
-        - test: svg-getIntersectionList-001.svg
-          subtest: SVGSVGElement.getIntersectionList()
-    - product: chrome
-      url: https://bugs.chromium.org/p/chromium/issues/detail?id=1261642
-      results:
-        - test: svg-getIntersectionList-001.svg
-          subtest: SVGSVGElement.getIntersectionList()
+- product: firefox
+  results:
+  - subtest: '''load'' and ''error'' events for SVG <use>, external reference, existing'
+    test: use-load-error-events.tentative.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1804956
+- product: firefox
+  results:
+  - subtest: '''load'' and ''error'' events for SVG <use>, external reference, non-existing'
+    test: use-load-error-events.tentative.html
+  - subtest: '''load'' and ''error'' events for SVG <use>, external reference, existing,
+      parse error'
+    test: use-load-error-events.tentative.html
+  - subtest: '''load'' and ''error'' events for SVG <use>, external reference, existing,
+      changed to local reference while loading'
+    test: use-load-error-events.tentative.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1809606
+- product: firefox
+  results:
+  - subtest: SVGSVGElement.getIntersectionList()
+    test: svg-getIntersectionList-001.svg
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1736303
+- product: chrome
+  results:
+  - subtest: SVGSVGElement.getIntersectionList()
+    test: svg-getIntersectionList-001.svg
+  url: https://bugs.chromium.org/p/chromium/issues/detail?id=1261642
+- product: firefox
+  results:
+  - subtest: getIntersectionList() on clipped element
+    test: svg-getIntersectionList-002.svg
+  - subtest: getIntersectionList() crash test
+    test: svg-getIntersectionList-003.svg
+  - subtest: getIntersectionList() with nested <svg>
+    test: svg-getIntersectionList-004.svg
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1853890
