@@ -67,3 +67,28 @@ links:
       url: https://crbug.com/1421601
       results:
         - test: offset-parsing-valid.html
+    - product: chrome
+      url: https://crbug.com/1422352
+      results:
+        - test: offset-path-computed.html
+          subtest: Property offset-path value 'xywh(0 1% 2px 3em)'
+        - test: offset-path-computed.html
+          subtest: Property offset-path value 'xywh(0px 1% 2px 3em round 0)'
+        - test: offset-path-computed.html
+          subtest: Property offset-path value 'xywh(0px 1% 2px 3% round 0px 1px 2em)'
+        - test: offset-path-computed.html
+          subtest: Property offset-path value 'xywh(0px 1% 2px 3em round 0 1px)'
+        - test: offset-path-computed.html
+          subtest: Property offset-path value 'xywh(0px 1% 2px 3% round 0px 1px 2% 3px)'
+        - test: offset-path-computed.html
+          subtest: Property offset-path value 'rect(auto auto auto auto)'
+        - test: offset-path-computed.html
+          subtest: Property offset-path value 'rect(0 1% 2px 3em)'
+        - test: offset-path-computed.html
+          subtest: Property offset-path value 'rect(0px 1% auto 3em round 0)'
+        - test: offset-path-computed.html
+          subtest: Property offset-path value 'rect(0px 1% auto 3% round 0 1px)'
+        - test: offset-path-computed.html
+          subtest: Property offset-path value 'rect(0px 1% auto 3% round 0px 1px 2em)'
+        - test: offset-path-computed.html
+          subtest: Property offset-path value 'rect(0px 1% auto 3% round 0px 1px 2% 3px)'
