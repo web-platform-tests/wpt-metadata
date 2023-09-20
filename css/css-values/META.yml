@@ -836,7 +836,98 @@ links:
           subtest: e.style['letter-spacing'] = "clamp(1px, 2px, clamp(2px, 3px, 4px))" should set the property value
         - test: clamp-length-serialize.html
           subtest: e.style['letter-spacing'] = "calc(clamp(1px, 2px, clamp(2px, 3px, 4px)))" should set the property value
+        - test: clamp-length-serialize.html
+          subtest: e.style['letter-spacing'] = "clamp(10px, 5px, 30px)" should set the property value
+        - test: clamp-length-serialize.html
+          subtest: e.style['letter-spacing'] = "calc(clamp(10px, 5px, 30px))" should set the property value
+        - test: clamp-length-serialize.html
+          subtest: e.style['letter-spacing'] = "clamp(10px, 35px, 30px)" should set the property value
+        - test: clamp-length-serialize.html
+          subtest: e.style['letter-spacing'] = "calc(clamp(10px, 35px, 30px))" should set the property value
+        - test: clamp-length-serialize.html
+          subtest: e.style['letter-spacing'] = "clamp(10px, 35px , 30px)" should set the property value
+        - test: clamp-length-serialize.html
+          subtest: e.style['letter-spacing'] = "calc(clamp(10px, 35px , 30px))" should set the property value
+        - test: clamp-length-serialize.html
+          subtest: e.style['letter-spacing'] = "clamp(10px, 35px /*foo*/, 30px)" should set the property value
+        - test: clamp-length-serialize.html
+          subtest: e.style['letter-spacing'] = "calc(clamp(10px, 35px /*foo*/, 30px))" should set the property value
+        - test: clamp-length-serialize.html
+          subtest: e.style['letter-spacing'] = "clamp(10px /* foo */ , 35px, 30px)" should set the property value
+        - test: clamp-length-serialize.html
+          subtest: e.style['letter-spacing'] = "calc(clamp(10px /* foo */ , 35px, 30px))" should set the property value
+        - test: clamp-length-serialize.html
+          subtest: e.style['letter-spacing'] = "clamp(10px , 35px, 30px)" should set the property value
+        - test: clamp-length-serialize.html
+          subtest: e.style['letter-spacing'] = "calc(clamp(10px , 35px, 30px))" should set the property value
+        - test: clamp-length-serialize.html
+          subtest: e.style['letter-spacing'] = "clamp(30px, 100px, 20px)" should set the property value
+        - test: clamp-length-serialize.html
+          subtest: e.style['letter-spacing'] = "calc(clamp(30px, 100px, 20px))" should set the property value
+        - test: clamp-length-serialize.html
+          subtest: e.style['letter-spacing'] = "clamp(-30px, -20px, -10px)" should set the property value
+        - test: clamp-length-serialize.html
+          subtest: e.style['letter-spacing'] = "calc(clamp(-30px, -20px, -10px))" should set the property value
+        - test: clamp-length-serialize.html
+          subtest: e.style['letter-spacing'] = "clamp(-30px, -100px, -10px)" should set the property value
+        - test: clamp-length-serialize.html
+          subtest: e.style['letter-spacing'] = "calc(clamp(-30px, -100px, -10px))" should set the property value
+        - test: clamp-length-serialize.html
+          subtest: e.style['letter-spacing'] = "clamp(-30px, 100px, -10px)" should set the property value
+        - test: clamp-length-serialize.html
+          subtest: e.style['letter-spacing'] = "calc(clamp(-30px, 100px, -10px))" should set the property value
+        - test: clamp-length-serialize.html
+          subtest: e.style['letter-spacing'] = "clamp(-10px, 100px, -30px)" should set the property value
+        - test: clamp-length-serialize.html
+          subtest: e.style['letter-spacing'] = "calc(clamp(-10px, 100px, -30px))" should set the property value
+        - test: clamp-length-serialize.html
+          subtest: e.style['letter-spacing'] = "clamp(-10px, -100px, -30px)" should set the property value
+        - test: clamp-length-serialize.html
+          subtest: e.style['letter-spacing'] = "calc(clamp(-10px, -100px, -30px))" should set the property value
+        - test: clamp-length-serialize.html
+          subtest: e.style['letter-spacing'] = "calc(0px + clamp(10px, 20px, 30px))" should set the property value
+        - test: clamp-length-serialize.html
+          subtest: e.style['letter-spacing'] = "calc(calc(0px + clamp(10px, 20px, 30px)))" should set the property value
+        - test: clamp-length-serialize.html
+          subtest: e.style['letter-spacing'] = "calc(0px - clamp(10px, 20px, 30px))" should set the property value
+        - test: clamp-length-serialize.html
+          subtest: e.style['letter-spacing'] = "calc(calc(0px - clamp(10px, 20px, 30px)))" should set the property value
+        - test: clamp-length-serialize.html
+          subtest: e.style['letter-spacing'] = "calc(0px + clamp(30px, 100px, 20px))" should set the property value
+        - test: clamp-length-serialize.html
+          subtest: e.style['letter-spacing'] = "calc(calc(0px + clamp(30px, 100px, 20px)))" should set the property value
+        - test: clamp-length-serialize.html
+          subtest: e.style['letter-spacing'] = "calc(0px - clamp(30px, 100px, 20px))" should set the property value
+        - test: clamp-length-serialize.html
+          subtest: e.style['letter-spacing'] = "calc(calc(0px - clamp(30px, 100px, 20px)))" should set the property value
     - product: firefox
       url: https://bugzilla.mozilla.org/show_bug.cgi?id=1848385
       results:
         - test: signs-abs-computed.html
+    - product: chrome
+      url: https://crbug.com/1482200
+      results:
+        - test: sin-cos-tan-serialize.html
+          subtest: '''scale(sin(180deg))'' as a specified value should serialize as ''scale(calc(0))''.'
+        - test: sin-cos-tan-serialize.html
+          subtest: '''scale(calc(sin(180deg)))'' as a specified value should serialize as ''scale(calc(0))''.'
+        - test: sin-cos-tan-serialize.html
+          subtest: '''scale(tan(180deg))'' as a specified value should serialize as ''scale(calc(0))''.'
+        - test: sin-cos-tan-serialize.html
+          subtest: '''scale(calc(tan(180deg)))'' as a specified value should serialize as ''scale(calc(0))''.'
+        - test: sin-cos-tan-serialize.html
+          subtest: '''scale(cos(270deg))'' as a specified value should serialize as ''scale(calc(0))''.'
+        - test: sin-cos-tan-serialize.html
+          subtest: '''scale(calc(cos(270deg)))'' as a specified value should serialize as ''scale(calc(0))''.'
+        - test: sin-cos-tan-serialize.html
+          subtest: '''scale(sin(-180deg))'' as a specified value should serialize as ''scale(calc(0))''.'
+        - test: sin-cos-tan-serialize.html
+          subtest: '''scale(calc(sin(-180deg)))'' as a specified value should serialize as ''scale(calc(0))''.'
+        - test: sin-cos-tan-serialize.html
+          subtest: '''scale(tan(-180deg))'' as a specified value should serialize as ''scale(calc(0))''.'
+        - test: sin-cos-tan-serialize.html
+          subtest: '''scale(calc(tan(-180deg)))'' as a specified value should serialize as ''scale(calc(0))''.'
+        - test: sin-cos-tan-serialize.html
+          subtest: '''scale(cos(-270deg))'' as a specified value should serialize as ''scale(calc(0))''.'
+        - test: sin-cos-tan-serialize.html
+          subtest: '''scale(calc(cos(-270deg)))'' as a specified value should serialize as ''scale(calc(0))''.'

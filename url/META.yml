@@ -205,6 +205,10 @@ links:
           subtest: 'Parsing origin: <http://!"$&''()*+,-.;=_`{}~/> against <about:blank>'
         - test: a-element-origin-xhtml.xhtml
           subtest: 'Parsing origin: <wss://!"$&''()*+,-.;=_`{}~/> against <about:blank>'
+        - test: url-origin.any.html
+          subtest: 'Origin parsing: <http://!"$&''()*+,-.;=_`{}~/> without base'
+        - test: url-origin.any.html
+          subtest: 'Origin parsing: <wss://!"$&''()*+,-.;=_`{}~/> without base'
     - product: firefox
       url: https://bugzilla.mozilla.org/show_bug.cgi?id=1815932
       results:
@@ -223,3 +227,38 @@ links:
           subtest: ToASCII("Ä.­.C") A4_2 (ignored)
         - test: IdnaTestV2.window.html
           subtest: ToASCII("Ä.­.C") A4_2 (ignored)
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1848511
+      results:
+        - test: url-setters.any.html?include=javascript
+          subtest: 'URL: Setting <javascript://x/>.username = ''wario'''
+        - test: url-setters.any.html?include=javascript
+          subtest: 'URL: Setting <javascript://x/>.password = ''bowser'''
+        - test: url-setters.any.html?include=javascript
+          subtest: 'URL: Setting <javascript://x/>.port = ''12'''
+        - test: a-element-xhtml.xhtml?include=javascript
+          subtest: 'Parsing: <javascript:/../> against <about:blank>'
+        - test: a-element-xhtml.xhtml?include=javascript
+          subtest: 'Parsing: <javascript://example.com:8080/pathname?search#hash> against <about:blank>'
+        - test: a-element-xhtml.xhtml?include=javascript
+          subtest: 'Parsing: <javascript:///test> against <about:blank>'
+        - test: a-element-xhtml.xhtml?include=javascript
+          subtest: 'Parsing: <javascript://test/a/../b> against <about:blank>'
+        - test: a-element-xhtml.xhtml?include=javascript
+          subtest: 'Parsing: <javascript://:443> against <about:blank>'
+        - test: a-element-xhtml.xhtml?include=javascript
+          subtest: 'Parsing: <javascript://test:test> against <about:blank>'
+        - test: a-element-xhtml.xhtml?include=javascript
+          subtest: 'Parsing: <javascript://[:1]> against <about:blank>'
+        - test: url-setters-a-area.window.html?include=javascript
+          subtest: '<a>: Setting <javascript://x/>.username = ''wario'''
+        - test: url-setters-a-area.window.html?include=javascript
+          subtest: '<area>: Setting <javascript://x/>.username = ''wario'''
+        - test: url-setters-a-area.window.html?include=javascript
+          subtest: '<a>: Setting <javascript://x/>.password = ''bowser'''
+        - test: url-setters-a-area.window.html?include=javascript
+          subtest: '<area>: Setting <javascript://x/>.password = ''bowser'''
+        - test: url-setters-a-area.window.html?include=javascript
+          subtest: '<a>: Setting <javascript://x/>.port = ''12'''
+        - test: url-setters-a-area.window.html?include=javascript
+          subtest: '<area>: Setting <javascript://x/>.port = ''12'''
