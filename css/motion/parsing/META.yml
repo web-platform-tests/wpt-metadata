@@ -27,7 +27,8 @@ links:
           subtest: Property offset-path value 'path("m 10 170 h 90 v 30 m 0 0 s 1 2 3 4 z c 9 8 7 6 5 4")'
         - test: offset-path-computed.html
           subtest: Property offset-path value 'path("m 10 20 a 10 20 30 1 0 40 50 a 110 120 30 1 1 140 50")'
-    - label: interop-2023-motion
+    - url: ""
+      label: interop-2023-motion
       results:
         - test: offset-path-computed.html
         - test: offset-path-parsing-invalid.html
@@ -67,3 +68,28 @@ links:
       url: https://crbug.com/1421601
       results:
         - test: offset-parsing-valid.html
+    - product: chrome
+      url: https://crbug.com/1422352
+      results:
+        - test: offset-path-computed.html
+          subtest: Property offset-path value 'xywh(0 1% 2px 3em)'
+        - test: offset-path-computed.html
+          subtest: Property offset-path value 'xywh(0px 1% 2px 3em round 0)'
+        - test: offset-path-computed.html
+          subtest: Property offset-path value 'xywh(0px 1% 2px 3% round 0px 1px 2em)'
+        - test: offset-path-computed.html
+          subtest: Property offset-path value 'xywh(0px 1% 2px 3em round 0 1px)'
+        - test: offset-path-computed.html
+          subtest: Property offset-path value 'xywh(0px 1% 2px 3% round 0px 1px 2% 3px)'
+        - test: offset-path-computed.html
+          subtest: Property offset-path value 'rect(auto auto auto auto)'
+        - test: offset-path-computed.html
+          subtest: Property offset-path value 'rect(0 1% 2px 3em)'
+        - test: offset-path-computed.html
+          subtest: Property offset-path value 'rect(0px 1% auto 3em round 0)'
+        - test: offset-path-computed.html
+          subtest: Property offset-path value 'rect(0px 1% auto 3% round 0 1px)'
+        - test: offset-path-computed.html
+          subtest: Property offset-path value 'rect(0px 1% auto 3% round 0px 1px 2em)'
+        - test: offset-path-computed.html
+          subtest: Property offset-path value 'rect(0px 1% auto 3% round 0px 1px 2% 3px)'

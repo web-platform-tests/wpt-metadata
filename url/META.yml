@@ -81,10 +81,12 @@ links:
       results:
         - test: failure.html
           status: CRASH
-    - label: interop-2022-webcompat
+    - url: ""
+      label: interop-2022-webcompat
       results:
         - test: toascii.window.html
-    - label: interop-2023-url
+    - url: ""
+      label: interop-2023-url
       results:
         - test: a-element-origin-xhtml.xhtml
         - test: a-element-origin.html
@@ -262,3 +264,51 @@ links:
           subtest: '<a>: Setting <javascript://x/>.port = ''12'''
         - test: url-setters-a-area.window.html?include=javascript
           subtest: '<area>: Setting <javascript://x/>.port = ''12'''
+        - test: a-element.html?include=javascript
+          subtest: 'Parsing: <javascript:/../> against <about:blank>'
+        - test: a-element.html?include=javascript
+          subtest: 'Parsing: <javascript://example.com:8080/pathname?search#hash> against <about:blank>'
+        - test: a-element.html?include=javascript
+          subtest: 'Parsing: <javascript:///test> against <about:blank>'
+        - test: a-element.html?include=javascript
+          subtest: 'Parsing: <javascript://test/a/../b> against <about:blank>'
+        - test: a-element.html?include=javascript
+          subtest: 'Parsing: <javascript://:443> against <about:blank>'
+        - test: a-element.html?include=javascript
+          subtest: 'Parsing: <javascript://test:test> against <about:blank>'
+        - test: a-element.html?include=javascript
+          subtest: 'Parsing: <javascript://[:1]> against <about:blank>'
+        - test: url-constructor.any.html?include=javascript
+          subtest: 'Parsing: <javascript:/../> without base'
+        - test: url-constructor.any.html?include=javascript
+          subtest: 'Parsing: <javascript://example.com:8080/pathname?search#hash> without base'
+        - test: url-constructor.any.html?include=javascript
+          subtest: 'Parsing: <javascript:///test> without base'
+        - test: url-constructor.any.html?include=javascript
+          subtest: 'Parsing: <javascript://test/a/../b> without base'
+        - test: url-constructor.any.html?include=javascript
+          subtest: 'Parsing: <javascript://:443> without base'
+        - test: url-constructor.any.html?include=javascript
+          subtest: 'Parsing: <javascript://test:test> without base'
+        - test: url-constructor.any.html?include=javascript
+          subtest: 'Parsing: <javascript://[:1]> without base'
+        - test: url-constructor.any.worker.html?include=javascript
+          subtest: 'Parsing: <javascript:/../> without base'
+        - test: url-constructor.any.worker.html?include=javascript
+          subtest: 'Parsing: <javascript://example.com:8080/pathname?search#hash> without base'
+        - test: url-constructor.any.worker.html?include=javascript
+          subtest: 'Parsing: <javascript:///test> without base'
+        - test: url-constructor.any.worker.html?include=javascript
+          subtest: 'Parsing: <javascript://test/a/../b> without base'
+        - test: url-constructor.any.worker.html?include=javascript
+          subtest: 'Parsing: <javascript://:443> without base'
+        - test: url-constructor.any.worker.html?include=javascript
+          subtest: 'Parsing: <javascript://test:test> without base'
+        - test: url-constructor.any.worker.html?include=javascript
+          subtest: 'Parsing: <javascript://[:1]> without base'
+        - test: url-setters.any.worker.html?include=javascript
+          subtest: 'URL: Setting <javascript://x/>.username = ''wario'''
+        - test: url-setters.any.worker.html?include=javascript
+          subtest: 'URL: Setting <javascript://x/>.password = ''bowser'''
+        - test: url-setters.any.worker.html?include=javascript
+          subtest: 'URL: Setting <javascript://x/>.port = ''12'''
