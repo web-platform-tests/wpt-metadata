@@ -61,8 +61,7 @@ links:
           subtest: '".a:has(.b:has(.c), .d)" should be a valid selector'
         - test: parse-has-disallow-nesting-has-inside-has.html
           subtest: '".a:has(.b:is(.c:has(.d) .e))" should be a valid selector'
-    - url: ""
-      label: interop-2023-has
+    - label: interop-2023-has
       results:
         - test: parse-has-disallow-nesting-has-inside-has.html
         - test: parse-has.html
@@ -73,7 +72,5 @@ links:
           subtest: '".a:has(:is(.b:has(.c)))" should be a valid selector'
         - test: parse-has-disallow-nesting-has-inside-has.html
           subtest: '".a:has(:is(.b:has(.c), .d))" should be a valid selector'
-        - test: parse-has.html
-          subtest: '":has(:is(.a, 123))" should be a valid selector'
         - test: parse-has.html
           subtest: '":has(:is(.a, 123))" should be a valid selector'
