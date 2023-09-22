@@ -717,3 +717,22 @@ links:
         - test: color-valid-hsl.html
         - test: color-valid-hwb.html
         - test: color-valid-rgb.html
+    - product: chrome
+      url: https://crbug.com/1466933
+      results:
+        - test: opacity-valid.html
+          subtest: e.style['opacity'] = "clamp(50%, 0%, 70%)" should set the property value
+        - test: opacity-valid.html
+          subtest: e.style['opacity'] = "clamp(50%, 80%, 70%)" should set the property value
+        - test: opacity-valid.html
+          subtest: e.style['opacity'] = "clamp(50%, 60%, 70%)" should set the property value
+        - test: opacity-valid.html
+          subtest: e.style['opacity'] = "min(50%, 0%)" should set the property value
+        - test: opacity-valid.html
+          subtest: e.style['opacity'] = "min(0%, 50%)" should set the property value
+        - test: opacity-valid.html
+          subtest: e.style['opacity'] = "max(50%, 0%)" should set the property value
+        - test: opacity-valid.html
+          subtest: e.style['opacity'] = "max(0%, 50%)" should set the property value
+        - test: opacity-valid.html
+          subtest: e.style['opacity'] = "min(-40%, 50%)" should set the property value
