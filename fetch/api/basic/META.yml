@@ -1,84 +1,252 @@
 links:
-    - product: deno
-      url: https://github.com/denoland/deno/issues/10987
-      results:
-        - test: accept-header.any.html
-          subtest: Request through fetch should have a 'accept-language' header
-    - product: deno
-      url: https://github.com/denoland/deno/issues/10988
-      results:
-        - test: request-upload.any.html
-          subtest: Fetch with POST with ReadableStream containing String
-        - test: request-upload.any.html
-          subtest: Fetch with POST with ReadableStream containing number
-        - test: request-upload.any.html
-          subtest: Fetch with POST with ReadableStream containing null
-        - test: request-upload.any.html
-          subtest: Fetch with POST with ReadableStream containing ArrayBuffer
-        - test: request-upload.any.html
-          subtest: Fetch with POST with ReadableStream containing Blob
-    - product: deno
-      url: https://github.com/denoland/deno/issues/10989
-      results:
-        - test: request-upload.any.html
-          subtest: Fetch with POST with text body on 421 response should be retried once on new connection.
-    - product: deno
-      url: https://github.com/denoland/deno/issues/10990
-      results:
-        - test: scheme-data.any.html
-          subtest: Fetching [HEAD] data:,response%27s%20body is OK
-    - product: deno
-      url: https://github.com/denoland/deno/issues/10991
-      results:
-        - test: request-headers-nonascii.any.html
-          subtest: Non-ascii bytes in request headers
-    - product: deno
-      url: https://github.com/denoland/deno/issues/10992
-      results:
-        - test: request-headers.any.html
-          subtest: Fetch with PUT without body
-        - test: request-headers.any.html
-          subtest: Fetch with PUT with body
-        - test: request-headers.any.html
-          subtest: Fetch with POST without body
-        - test: request-headers.any.html
-          subtest: Fetch with POST with text body
-        - test: request-headers.any.html
-          subtest: Fetch with POST with FormData body
-        - test: request-headers.any.html
-          subtest: Fetch with POST with URLSearchParams body
-        - test: request-headers.any.html
-          subtest: Fetch with POST with Blob body
-        - test: request-headers.any.html
-          subtest: Fetch with POST with ArrayBuffer body
-        - test: request-headers.any.html
-          subtest: Fetch with POST with Uint8Array body
-        - test: request-headers.any.html
-          subtest: Fetch with POST with Int8Array body
-        - test: request-headers.any.html
-          subtest: Fetch with POST with Float32Array body
-        - test: request-headers.any.html
-          subtest: Fetch with POST with Float64Array body
-        - test: request-headers.any.html
-          subtest: Fetch with POST with DataView body
-        - test: request-headers.any.html
-          subtest: Fetch with POST with Blob body with mime type
-        - test: request-headers.any.html
-          subtest: Fetch with Chicken
-        - test: request-headers.any.html
-          subtest: Fetch with Chicken with body
-        - test: request-headers.any.html
-          subtest: Fetch with POST and mode "same-origin" needs an Origin header
-        - test: request-headers.any.html
-          subtest: Fetch with POST and mode "no-cors" needs an Origin header
-        - test: request-headers.any.html
-          subtest: Fetch with PUT and mode "same-origin" needs an Origin header
-        - test: request-headers.any.html
-          subtest: Fetch with TacO and mode "same-origin" needs an Origin header
-        - test: request-headers.any.html
-          subtest: Fetch with TacO and mode "cors" needs an Origin header
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1397646
-      results:
-        - test: status.h2.any.worker.html
-        - test: status.h2.any.html
+- product: deno
+  results:
+  - subtest: Request through fetch should have a 'accept-language' header
+    test: accept-header.any.html
+  url: https://github.com/denoland/deno/issues/10987
+- product: deno
+  results:
+  - subtest: Fetch with POST with ReadableStream containing String
+    test: request-upload.any.html
+  - subtest: Fetch with POST with ReadableStream containing number
+    test: request-upload.any.html
+  - subtest: Fetch with POST with ReadableStream containing null
+    test: request-upload.any.html
+  - subtest: Fetch with POST with ReadableStream containing ArrayBuffer
+    test: request-upload.any.html
+  - subtest: Fetch with POST with ReadableStream containing Blob
+    test: request-upload.any.html
+  url: https://github.com/denoland/deno/issues/10988
+- product: deno
+  results:
+  - subtest: Fetch with POST with text body on 421 response should be retried once
+      on new connection.
+    test: request-upload.any.html
+  url: https://github.com/denoland/deno/issues/10989
+- product: deno
+  results:
+  - subtest: Fetching [HEAD] data:,response%27s%20body is OK
+    test: scheme-data.any.html
+  url: https://github.com/denoland/deno/issues/10990
+- product: deno
+  results:
+  - subtest: Non-ascii bytes in request headers
+    test: request-headers-nonascii.any.html
+  url: https://github.com/denoland/deno/issues/10991
+- product: deno
+  results:
+  - subtest: Fetch with PUT without body
+    test: request-headers.any.html
+  - subtest: Fetch with PUT with body
+    test: request-headers.any.html
+  - subtest: Fetch with POST without body
+    test: request-headers.any.html
+  - subtest: Fetch with POST with text body
+    test: request-headers.any.html
+  - subtest: Fetch with POST with FormData body
+    test: request-headers.any.html
+  - subtest: Fetch with POST with URLSearchParams body
+    test: request-headers.any.html
+  - subtest: Fetch with POST with Blob body
+    test: request-headers.any.html
+  - subtest: Fetch with POST with ArrayBuffer body
+    test: request-headers.any.html
+  - subtest: Fetch with POST with Uint8Array body
+    test: request-headers.any.html
+  - subtest: Fetch with POST with Int8Array body
+    test: request-headers.any.html
+  - subtest: Fetch with POST with Float32Array body
+    test: request-headers.any.html
+  - subtest: Fetch with POST with Float64Array body
+    test: request-headers.any.html
+  - subtest: Fetch with POST with DataView body
+    test: request-headers.any.html
+  - subtest: Fetch with POST with Blob body with mime type
+    test: request-headers.any.html
+  - subtest: Fetch with Chicken
+    test: request-headers.any.html
+  - subtest: Fetch with Chicken with body
+    test: request-headers.any.html
+  - subtest: Fetch with POST and mode "same-origin" needs an Origin header
+    test: request-headers.any.html
+  - subtest: Fetch with POST and mode "no-cors" needs an Origin header
+    test: request-headers.any.html
+  - subtest: Fetch with PUT and mode "same-origin" needs an Origin header
+    test: request-headers.any.html
+  - subtest: Fetch with TacO and mode "same-origin" needs an Origin header
+    test: request-headers.any.html
+  - subtest: Fetch with TacO and mode "cors" needs an Origin header
+    test: request-headers.any.html
+  url: https://github.com/denoland/deno/issues/10992
+- product: firefox
+  results:
+  - test: status.h2.any.worker.html
+  - test: status.h2.any.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1397646
+- product: firefox
+  results:
+  - subtest: Response reader read() promise should reject after a network error happening
+      after resolving fetch promise
+    test: error-after-response.any.sharedworker.html
+  - subtest: Response reader closed promise should reject after a network error happening
+      after resolving fetch promise
+    test: error-after-response.any.sharedworker.html
+  - subtest: Response reader read() promise should reject after a network error happening
+      after resolving fetch promise
+    test: error-after-response.any.html
+  - subtest: Response reader closed promise should reject after a network error happening
+      after resolving fetch promise
+    test: error-after-response.any.html
+  - subtest: Response reader read() promise should reject after a network error happening
+      after resolving fetch promise
+    test: error-after-response.any.serviceworker.html
+  - subtest: Response reader closed promise should reject after a network error happening
+      after resolving fetch promise
+    test: error-after-response.any.serviceworker.html
+  - subtest: Response reader read() promise should reject after a network error happening
+      after resolving fetch promise
+    test: error-after-response.any.worker.html
+  - subtest: Response reader closed promise should reject after a network error happening
+      after resolving fetch promise
+    test: error-after-response.any.worker.html
+  - subtest: Access-Control-Request-Private-Network is a forbidden request header
+    test: request-private-network-headers.tentative.any.sharedworker.html
+  - subtest: 'Adding invalid request header "Access-Control-Request-Private-Network:
+      KO"'
+    test: request-private-network-headers.tentative.any.sharedworker.html
+  - subtest: Access-Control-Request-Private-Network is a forbidden request header
+    test: request-private-network-headers.tentative.any.html
+  - subtest: 'Adding invalid request header "Access-Control-Request-Private-Network:
+      KO"'
+    test: request-private-network-headers.tentative.any.html
+  - subtest: Access-Control-Request-Private-Network is a forbidden request header
+    test: request-private-network-headers.tentative.any.serviceworker.html
+  - subtest: 'Adding invalid request header "Access-Control-Request-Private-Network:
+      KO"'
+    test: request-private-network-headers.tentative.any.serviceworker.html
+  - subtest: Access-Control-Request-Private-Network is a forbidden request header
+    test: request-private-network-headers.tentative.any.worker.html
+  - subtest: 'Adding invalid request header "Access-Control-Request-Private-Network:
+      KO"'
+    test: request-private-network-headers.tentative.any.worker.html
+  - subtest: Fetch with POST with ReadableStream containing String
+    test: request-upload.any.serviceworker.html
+  - subtest: Fetch with POST with ReadableStream containing null
+    test: request-upload.any.serviceworker.html
+  - subtest: Fetch with POST with ReadableStream containing number
+    test: request-upload.any.serviceworker.html
+  - subtest: Fetch with POST with ReadableStream containing ArrayBuffer
+    test: request-upload.any.serviceworker.html
+  - subtest: Fetch with POST with ReadableStream containing Blob
+    test: request-upload.any.serviceworker.html
+  - subtest: Streaming upload shouldn't work on Http/1.1.
+    test: request-upload.any.serviceworker.html
+  - subtest: Fetch with POST with ReadableStream containing String
+    test: request-upload.any.html
+  - subtest: Fetch with POST with ReadableStream containing null
+    test: request-upload.any.html
+  - subtest: Fetch with POST with ReadableStream containing number
+    test: request-upload.any.html
+  - subtest: Fetch with POST with ReadableStream containing ArrayBuffer
+    test: request-upload.any.html
+  - subtest: Fetch with POST with ReadableStream containing Blob
+    test: request-upload.any.html
+  - subtest: Streaming upload shouldn't work on Http/1.1.
+    test: request-upload.any.html
+  - subtest: Fetch with POST with ReadableStream containing String
+    test: request-upload.any.sharedworker.html
+  - subtest: Fetch with POST with ReadableStream containing null
+    test: request-upload.any.sharedworker.html
+  - subtest: Fetch with POST with ReadableStream containing number
+    test: request-upload.any.sharedworker.html
+  - subtest: Fetch with POST with ReadableStream containing ArrayBuffer
+    test: request-upload.any.sharedworker.html
+  - subtest: Fetch with POST with ReadableStream containing Blob
+    test: request-upload.any.sharedworker.html
+  - subtest: Streaming upload shouldn't work on Http/1.1.
+    test: request-upload.any.sharedworker.html
+  - subtest: Fetch with POST with ReadableStream containing String
+    test: request-upload.any.worker.html
+  - subtest: Fetch with POST with ReadableStream containing null
+    test: request-upload.any.worker.html
+  - subtest: Fetch with POST with ReadableStream containing number
+    test: request-upload.any.worker.html
+  - subtest: Fetch with POST with ReadableStream containing ArrayBuffer
+    test: request-upload.any.worker.html
+  - subtest: Fetch with POST with ReadableStream containing Blob
+    test: request-upload.any.worker.html
+  - subtest: Streaming upload shouldn't work on Http/1.1.
+    test: request-upload.any.worker.html
+  - subtest: Fetch with POST with empty ReadableStream
+    test: request-upload.h2.any.serviceworker.html
+  - subtest: Fetch with POST with ReadableStream
+    test: request-upload.h2.any.serviceworker.html
+  - subtest: Fetch with POST with ReadableStream on 421 response should return the
+      response and not retry.
+    test: request-upload.h2.any.serviceworker.html
+  - subtest: Feature detect for POST with ReadableStream
+    test: request-upload.h2.any.serviceworker.html
+  - subtest: Feature detect for POST with ReadableStream, using request object
+    test: request-upload.h2.any.serviceworker.html
+  - subtest: Synchronous feature detect
+    test: request-upload.h2.any.serviceworker.html
+  - subtest: Streaming upload with body containing a String
+    test: request-upload.h2.any.serviceworker.html
+  - subtest: Streaming upload with body containing null
+    test: request-upload.h2.any.serviceworker.html
+  - subtest: Streaming upload with body containing a number
+    test: request-upload.h2.any.serviceworker.html
+  - subtest: Streaming upload should fail on a 401 response
+    test: request-upload.h2.any.serviceworker.html
+  - subtest: Fetch with POST with empty ReadableStream
+    test: request-upload.h2.any.worker.html
+  - subtest: Fetch with POST with ReadableStream
+    test: request-upload.h2.any.worker.html
+  - subtest: Fetch with POST with ReadableStream on 421 response should return the
+      response and not retry.
+    test: request-upload.h2.any.worker.html
+  - subtest: Feature detect for POST with ReadableStream
+    test: request-upload.h2.any.worker.html
+  - subtest: Feature detect for POST with ReadableStream, using request object
+    test: request-upload.h2.any.worker.html
+  - subtest: Synchronous feature detect
+    test: request-upload.h2.any.worker.html
+  - subtest: Streaming upload with body containing a String
+    test: request-upload.h2.any.worker.html
+  - subtest: Streaming upload with body containing null
+    test: request-upload.h2.any.worker.html
+  - subtest: Streaming upload with body containing a number
+    test: request-upload.h2.any.worker.html
+  - subtest: Streaming upload should fail on a 401 response
+    test: request-upload.h2.any.worker.html
+  - test: request-upload.h2.any.html
+  - subtest: Fetch with POST with empty ReadableStream
+    test: request-upload.h2.any.sharedworker.html
+  - subtest: Fetch with POST with ReadableStream
+    test: request-upload.h2.any.sharedworker.html
+  - subtest: Fetch with POST with ReadableStream on 421 response should return the
+      response and not retry.
+    test: request-upload.h2.any.sharedworker.html
+  - subtest: Feature detect for POST with ReadableStream
+    test: request-upload.h2.any.sharedworker.html
+  - subtest: Feature detect for POST with ReadableStream, using request object
+    test: request-upload.h2.any.sharedworker.html
+  - subtest: Synchronous feature detect
+    test: request-upload.h2.any.sharedworker.html
+  - subtest: Streaming upload with body containing a String
+    test: request-upload.h2.any.sharedworker.html
+  - subtest: Streaming upload with body containing null
+    test: request-upload.h2.any.sharedworker.html
+  - subtest: Streaming upload with body containing a number
+    test: request-upload.h2.any.sharedworker.html
+  - subtest: Streaming upload should fail on a 401 response
+    test: request-upload.h2.any.sharedworker.html
+  - subtest: Stream response's body when content-type is not present
+    test: stream-response.any.serviceworker.html
+  - subtest: Stream response's body when content-type is not present
+    test: stream-response.any.sharedworker.html
+  - subtest: Stream response's body when content-type is not present
+    test: stream-response.any.html
+  - subtest: Stream response's body when content-type is not present
+    test: stream-response.any.worker.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1854702

@@ -1,32 +1,54 @@
 links:
-    - product: deno
-      url: https://github.com/denoland/deno/issues/10993
-      results:
-        - test: request-init-stream.any.html
-          subtest: Constructing a Request with a Request on which body.getReader().read() is called
-        - test: request-init-stream.any.html
-          subtest: Constructing a Request with a Request on which body.getReader() is called
-        - test: request-init-stream.any.html
-          subtest: Constructing a Request with a Request on which read() and releaseLock() are called
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1456479
-      results:
-        - test: request-structure.any.html
-          subtest: Check isReloadNavigation attribute
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1464739
-      results:
-        - test: request-structure.any.html
-          subtest: Check isHistoryNavigation attribute
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1792434
-      results:
-        - test: request-structure.any.html
-          subtest: Check duplex attribute
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1839319
-      results:
-        - test: request-init-priority.any.html
-          subtest: new Request() throws a TypeError if any of RequestInit's members' values are invalid
-        - test: request-init-priority.any.html
-          subtest: fetch() with an invalid priority returns a rejected promise with a TypeError
+- product: deno
+  results:
+  - subtest: Constructing a Request with a Request on which body.getReader().read()
+      is called
+    test: request-init-stream.any.html
+  - subtest: Constructing a Request with a Request on which body.getReader() is called
+    test: request-init-stream.any.html
+  - subtest: Constructing a Request with a Request on which read() and releaseLock()
+      are called
+    test: request-init-stream.any.html
+  url: https://github.com/denoland/deno/issues/10993
+- product: firefox
+  results:
+  - subtest: Check isReloadNavigation attribute
+    test: request-structure.any.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1456479
+- product: firefox
+  results:
+  - subtest: Check isHistoryNavigation attribute
+    test: request-structure.any.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1464739
+- product: firefox
+  results:
+  - subtest: Check duplex attribute
+    test: request-structure.any.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1792434
+- product: firefox
+  results:
+  - subtest: new Request() throws a TypeError if any of RequestInit's members' values
+      are invalid
+    test: request-init-priority.any.html
+  - subtest: fetch() with an invalid priority returns a rejected promise with a TypeError
+    test: request-init-priority.any.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1839319
+- product: firefox
+  results:
+  - subtest: 'Request''s body: initial state'
+    test: request-disturbed.any.html
+  - subtest: Check creating a new request with a new body from a disturbed request
+    test: request-disturbed.any.html
+  - subtest: 'Request''s body: initial state'
+    test: request-disturbed.any.serviceworker.html
+  - subtest: Check creating a new request with a new body from a disturbed request
+    test: request-disturbed.any.serviceworker.html
+  - subtest: 'Request''s body: initial state'
+    test: request-disturbed.any.worker.html
+  - subtest: Check creating a new request with a new body from a disturbed request
+    test: request-disturbed.any.worker.html
+  - subtest: 'Request''s body: initial state'
+    test: request-disturbed.any.sharedworker.html
+  - subtest: Check creating a new request with a new body from a disturbed request
+    test: request-disturbed.any.sharedworker.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1854702
