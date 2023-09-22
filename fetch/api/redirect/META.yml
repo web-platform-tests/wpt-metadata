@@ -1,6 +1,41 @@
 links:
-    - product: chrome
-      url: https://crbug.com/651761
-      results:
-        - test: redirect-location.any.html
-          status: FAIL
+- product: chrome
+  results:
+  - status: FAIL
+    test: redirect-location.any.html
+  url: https://crbug.com/651761
+- product: firefox
+  results:
+  - subtest: Fetch upload streaming should fail on 301
+    test: redirect-upload.h2.any.serviceworker.html
+  - subtest: Fetch upload streaming should fail on 302
+    test: redirect-upload.h2.any.serviceworker.html
+  - subtest: Fetch upload streaming should fail on 307
+    test: redirect-upload.h2.any.serviceworker.html
+  - subtest: Fetch upload streaming should fail on 308
+    test: redirect-upload.h2.any.serviceworker.html
+  - subtest: Fetch upload streaming should fail on 301
+    test: redirect-upload.h2.any.worker.html
+  - subtest: Fetch upload streaming should fail on 302
+    test: redirect-upload.h2.any.worker.html
+  - subtest: Fetch upload streaming should fail on 307
+    test: redirect-upload.h2.any.worker.html
+  - subtest: Fetch upload streaming should fail on 308
+    test: redirect-upload.h2.any.worker.html
+  - subtest: Fetch upload streaming should fail on 301
+    test: redirect-upload.h2.any.html
+  - subtest: Fetch upload streaming should fail on 302
+    test: redirect-upload.h2.any.html
+  - subtest: Fetch upload streaming should fail on 307
+    test: redirect-upload.h2.any.html
+  - subtest: Fetch upload streaming should fail on 308
+    test: redirect-upload.h2.any.html
+  - subtest: Fetch upload streaming should fail on 301
+    test: redirect-upload.h2.any.sharedworker.html
+  - subtest: Fetch upload streaming should fail on 302
+    test: redirect-upload.h2.any.sharedworker.html
+  - subtest: Fetch upload streaming should fail on 307
+    test: redirect-upload.h2.any.sharedworker.html
+  - subtest: Fetch upload streaming should fail on 308
+    test: redirect-upload.h2.any.sharedworker.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1854702
