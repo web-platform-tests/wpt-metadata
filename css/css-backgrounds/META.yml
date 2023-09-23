@@ -49,8 +49,7 @@ links:
       results:
         - test: border-image-repeat-space-10.html
           subtest: Harness status
-    - url: ""
-      label: interop-2023-cssborderimage
+    - label: interop-2023-cssborderimage
       results:
         - test: border-image-round-and-stretch.html
         - test: border-image-slice-005.htm
@@ -130,8 +129,12 @@ links:
         - test: border-image-slice-fill-002.html
         - test: border-image-slice-fill-003.html
         - test: border-image-slice-fill-001.html
-    - url: ""
-      label: interop-2023-color
+    - label: interop-2023-color
       results:
         - test: color-mix-currentcolor-border-repaint-parent.html
         - test: color-mix-currentcolor-border-repaint.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1854737
+      results:
+        - test: border-image-slice-fill-003.html
+          subtest: Test status
