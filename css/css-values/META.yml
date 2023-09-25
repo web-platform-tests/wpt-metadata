@@ -924,3 +924,7 @@ links:
           subtest: '''scale(cos(-270deg))'' as a specified value should serialize as ''scale(calc(0))''.'
         - test: sin-cos-tan-serialize.html
           subtest: '''scale(calc(cos(-270deg)))'' as a specified value should serialize as ''scale(calc(0))''.'
+    - product: chrome
+      url: https://crbug.com/1486443
+      results:
+        - test: attr-notype-fallback.html
