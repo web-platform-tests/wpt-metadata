@@ -37,3 +37,10 @@ links:
   - subtest: 'Slots: Directionality: dir=auto on slot with Arabic light tree content'
     test: dir-slots-directionality.tentative.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1849785
+- product: firefox
+  results:
+  - subtest: dir=auto changes for content insertion and removal, in and out of document
+    test: dir-auto-dynamic-changes.window.html
+  - subtest: dynamic changes to subtrees excluded as a result of the dir attribute
+    test: dir-auto-dynamic-changes.window.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1855002
