@@ -268,3 +268,20 @@ links:
         - test: adoptedstylesheets-observablearray.html
         - test: cssom-fontfacerule-constructors.html
         - test: CSSStyleSheet-template-adoption.html
+    - product: chrome
+      url: https://crbug.com/1486443
+      results:
+        - test: serialize-values.html
+          subtest: 'content: attr(|bar)'
+        - test: serialize-values.html
+          subtest: 'content: attr( |bar )'
+        - test: serialize-values.html
+          subtest: 'content: attr(foo-bar, "fallback")'
+        - test: serialize-values.html
+          subtest: 'content: attr(foo_bar, "fallback")'
+        - test: serialize-values.html
+          subtest: 'content: attr(|bar, "fallback")'
+        - test: serialize-values.html
+          subtest: 'content: attr(foo, "")'
+        - test: serialize-values.html
+          subtest: 'content: attr( |foo ,  "" )'
