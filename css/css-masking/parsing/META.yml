@@ -122,3 +122,26 @@ links:
       url: https://bugzilla.mozilla.org/show_bug.cgi?id=1834641
       results:
         - test: mask-valid.sub.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=877294
+      results:
+        - test: mask-valid.sub.html
+          subtest: e.style['mask'] = "none" should set mask-border-width
+        - test: mask-valid.sub.html
+          subtest: e.style['mask'] = "none" should set mask-border-source
+        - test: mask-valid.sub.html
+          subtest: e.style['mask'] = "none" should set mask-border-slice
+        - test: mask-valid.sub.html
+          subtest: e.style['mask'] = "none" should set mask-border-repeat
+        - test: mask-valid.sub.html
+          subtest: e.style['mask'] = "none" should set mask-border-outset
+        - test: mask-valid.sub.html
+          subtest: e.style['mask'] = "none, linear-gradient(to left bottom, red, blue) padding-box" should set mask-border-width
+        - test: mask-valid.sub.html
+          subtest: e.style['mask'] = "none, linear-gradient(to left bottom, red, blue) padding-box" should set mask-border-slice
+        - test: mask-valid.sub.html
+          subtest: e.style['mask'] = "none, linear-gradient(to left bottom, red, blue) padding-box" should set mask-border-source
+        - test: mask-valid.sub.html
+          subtest: e.style['mask'] = "none, linear-gradient(to left bottom, red, blue) padding-box" should set mask-border-repeat
+        - test: mask-valid.sub.html
+          subtest: e.style['mask'] = "none, linear-gradient(to left bottom, red, blue) padding-box" should set mask-border-outset
