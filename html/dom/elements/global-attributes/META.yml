@@ -44,3 +44,10 @@ links:
   - subtest: dynamic changes to subtrees excluded as a result of the dir attribute
     test: dir-auto-dynamic-changes.window.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1855002
+- product: firefox
+  results:
+  - subtest: text changes affecting both slot and ancestor with dir=auto
+    test: dir-auto-dynamic-changes.window.html
+  - subtest: slotted non-HTML elements
+    test: dir-auto-dynamic-changes.window.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1856776
