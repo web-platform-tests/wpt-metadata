@@ -1,52 +1,51 @@
 links:
-- product: chrome
-  results:
-  - test: toggleEvent.html
-  url: https://bugs.chromium.org/p/chromium/issues/detail?id=1234839
-- product: firefox
-  results:
-  - subtest: basic handling of mutually exclusive details
-    test: name-attribute.tentative.html
-  - subtest: more complex handling of mutually exclusive details
-    test: name-attribute.tentative.html
-  - subtest: mutually exclusive details across multiple names and multiple tree scopes
-    test: name-attribute.tentative.html
-  - subtest: mutation event and toggle event order matches order of insertion in set
-      of named elements
-    test: name-attribute.tentative.html
-  - subtest: interaction of open attribute changes with mutation events
-    test: name-attribute.tentative.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1837330
-- product: firefox
-  results:
-  - subtest: mutation event and toggle event order matches tree order
-    test: name-attribute.tentative.html
-  - subtest: exclusivity enforcement with attachment scenario connected
-    test: name-attribute.tentative.html
-  - subtest: exclusivity enforcement with attachment scenario shadow
-    test: name-attribute.tentative.html
-  - subtest: exclusivity enforcement with attachment scenario shadow-in-disconnected
-    test: name-attribute.tentative.html
-  - subtest: exclusivity enforcement with attachment scenario connected-in-xhr-response
-    test: name-attribute.tentative.html
-  - subtest: exclusivity enforcement with attachment scenario connected-in-implementation-create-document
-    test: name-attribute.tentative.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1846669
-- product: firefox
-  results:
-  - subtest: exclusivity enforcement with attachment scenario disconnected
-    test: name-attribute.tentative.html
-  - subtest: exclusivity enforcement with attachment scenario template-in-disconnected
-    test: name-attribute.tentative.html
-  - subtest: exclusivity enforcement with attachment scenario connected-in-template
-    test: name-attribute.tentative.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1853307
-- product: firefox
-  results:
-  - subtest: mutation event and toggle event order
-    test: name-attribute.tentative.html
-  - subtest: handling of name attribute changes
-    test: name-attribute.tentative.html
-  - subtest: closing as a result of parsing doesn't depend on attribute order
-    test: name-attribute.tentative.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1856074
+    - product: chrome
+      url: https://bugs.chromium.org/p/chromium/issues/detail?id=1234839
+      results:
+        - test: toggleEvent.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1837330
+      results:
+        - test: name-attribute.html
+          subtest: basic handling of mutually exclusive details
+        - test: name-attribute.html
+          subtest: more complex handling of mutually exclusive details
+        - test: name-attribute.html
+          subtest: mutually exclusive details across multiple names and multiple tree scopes
+        - test: name-attribute.html
+          subtest: mutation event and toggle event order matches order of insertion in set of named elements
+        - test: name-attribute.html
+          subtest: interaction of open attribute changes with mutation events
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1846669
+      results:
+        - test: name-attribute.html
+          subtest: mutation event and toggle event order matches tree order
+        - test: name-attribute.html
+          subtest: exclusivity enforcement with attachment scenario connected
+        - test: name-attribute.html
+          subtest: exclusivity enforcement with attachment scenario shadow
+        - test: name-attribute.html
+          subtest: exclusivity enforcement with attachment scenario shadow-in-disconnected
+        - test: name-attribute.html
+          subtest: exclusivity enforcement with attachment scenario connected-in-xhr-response
+        - test: name-attribute.html
+          subtest: exclusivity enforcement with attachment scenario connected-in-implementation-create-document
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1853307
+      results:
+        - test: name-attribute.html
+          subtest: exclusivity enforcement with attachment scenario disconnected
+        - test: name-attribute.html
+          subtest: exclusivity enforcement with attachment scenario template-in-disconnected
+        - test: name-attribute.html
+          subtest: exclusivity enforcement with attachment scenario connected-in-template
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1856074
+      results:
+        - test: name-attribute.html
+          subtest: mutation event and toggle event order
+        - test: name-attribute.html
+          subtest: handling of name attribute changes
+        - test: name-attribute.html
+          subtest: closing as a result of parsing doesn't depend on attribute order

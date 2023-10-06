@@ -531,3 +531,8 @@ links:
       results:
         - test: RTCPeerConnection-mandatory-getStats.https.html
           subtest: RTCIceCandidatePairStats's currentRoundTripTime
+    - product: chrome
+      url: https://crbug.com/1490510
+      results:
+        - test: RTCPeerConnection-setLocalDescription-pranswer.html
+          subtest: setLocalDescription(pranswer) from stable state should reject with InvalidStateError
