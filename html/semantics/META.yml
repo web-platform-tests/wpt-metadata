@@ -1,5 +1,12 @@
 links:
-    - product: chrome
-      url: https://crbug.com/1195514
-      results:
-        - test: rellist-feature-detection.html
+- product: chrome
+  results:
+  - test: rellist-feature-detection.html
+  url: https://crbug.com/1195514
+- product: firefox
+  results:
+  - subtest: 'Interfaces for image: useNS'
+    test: interfaces.html
+  - subtest: 'Interfaces for IMAGE: createElement'
+    test: interfaces.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1857530
