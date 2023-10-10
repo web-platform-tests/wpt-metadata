@@ -12,3 +12,11 @@ links:
       are reported
     test: observable-constructor.any.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1858035
+- product: firefox
+  results:
+  - subtest: No observer handlers can be invoked in detached document
+    test: observable-constructor.window.html
+  - subtest: Subscriber.error() does not "report the exception" even when an `error()`
+      handler is not present, when it is invoked in a detached document
+    test: observable-constructor.window.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1858052
