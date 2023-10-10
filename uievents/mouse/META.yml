@@ -24,3 +24,10 @@ links:
           subtest: Harness status
         - test: cancel-mousedown-in-subframe.html
           subtest: Child frame receives mousedown/mouseup when mousedown is canceled
+    - product: safari
+      url: https://bugs.webkit.org/show_bug.cgi?id=262878
+      results:
+        - test: mousemove_prevent_default_action.tentative.html
+          subtest: selectionchange event firing when mousemove event is prevented
+        - test: mousemove_prevent_default_action.tentative.html
+          subtest: dragstart event firing when mousemove event is prevented
