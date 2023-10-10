@@ -1,0 +1,14 @@
+links:
+- product: firefox
+  results:
+  - subtest: Observable constructor
+    test: observable-constructor.any.html
+  - subtest: subscribe() can be called with no arguments
+    test: observable-constructor.any.html
+  - subtest: Errors thrown in the initializer that are not handled by the subscription
+      are reported to the global
+    test: observable-constructor.any.html
+  - subtest: Errors thrown by initializer function after subscriber is closed by completion
+      are reported
+    test: observable-constructor.any.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1858035
