@@ -30,3 +30,12 @@ links:
       results:
         - test: grid-roles.html
           subtest: role is grid
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1849160
+      results:
+        - test: grid-roles.html
+          subtest: orphaned gridcell outside the context of row
+        - test: grid-roles.html
+          subtest: orphaned rowheader outside the context of row
+        - test: grid-roles.html
+          subtest: orphaned columnheader outside the context of row
