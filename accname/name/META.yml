@@ -4,3 +4,32 @@ links:
       results:
         - test: comp_embedded_control.html
           subtest: checkbox label with embedded textfield
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1858048
+      results:
+        - test: comp_embedded_control.html
+          subtest: checkbox label with embedded textfield
+        - test: comp_embedded_control.html
+          subtest: checkbox label with embedded select:not([size])
+        - test: comp_embedded_control.html
+          subtest: checkbox label with embedded select[size]
+        - test: comp_embedded_control.html
+          subtest: checkbox label with embedded combobox (input[type=text])
+        - test: comp_embedded_control.html
+          subtest: checkbox label with embedded combobox (span)
+        - test: comp_embedded_control.html
+          subtest: checkbox label with embedded combobox (div)
+        - test: comp_embedded_control.html
+          subtest: checkbox label with embedded listbox>option[aria-selected=true]
+        - test: comp_embedded_control.html
+          subtest: checkbox label with embedded input[type=range]
+        - test: comp_embedded_control.html
+          subtest: checkbox label with embedded input[type=number]
+        - test: comp_embedded_control.html
+          subtest: checkbox label with embedded ARIA slider (aria-valuenow)
+        - test: comp_embedded_control.html
+          subtest: checkbox label with embedded ARIA slider (aria-valuetext)
+        - test: comp_embedded_control.html
+          subtest: checkbox label with embedded ARIA spinbutton (aria-valuenow)
+        - test: comp_embedded_control.html
+          subtest: checkbox label with embedded ARIA spinbutton (aria-valuetext)
