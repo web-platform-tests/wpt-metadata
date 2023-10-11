@@ -1,13 +1,13 @@
 links:
     - label: a11y
       results:
-        - test: "*"
+        - test: '*'
     - label: accessibility
       results:
-        - test: "*"
+        - test: '*'
     - label: html-aam
       results:
-        - test: "*"
+        - test: '*'
     - product: chrome
       url: https://github.com/w3c/html-aam/issues/474
       results:
@@ -132,3 +132,8 @@ links:
           subtest: el-strong
         - test: roles.html
           subtest: el-u
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1858050
+      results:
+        - test: roles-contextual.html
+          subtest: el-aside-in-section-without-name
