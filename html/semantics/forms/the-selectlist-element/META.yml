@@ -105,3 +105,16 @@ links:
   - subtest: Selectlist :open and :closed should invalidate correctly.
     test: selectlist-pseudo-open-closed.tentative.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1858243
+- product: firefox
+  results:
+  - subtest: Button controller code should not run if the click event is preventDefaulted.
+    test: selectlist-events.tentative.html
+  - subtest: Listbox controller code should not run if the click event is preventDefaulted.
+    test: selectlist-events.tentative.html
+  - subtest: <selectlist> should fire input and change events when option in listbox
+      is clicked
+    test: selectlist-events.tentative.html
+  - subtest: 'defaultbutton: When the listbox is closed, spacebar should open the
+      listbox.'
+    test: selectlist-keyboard-behavior.tentative.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1858387
