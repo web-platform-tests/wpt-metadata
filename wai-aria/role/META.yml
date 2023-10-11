@@ -39,3 +39,12 @@ links:
           subtest: orphaned rowheader outside the context of row
         - test: grid-roles.html
           subtest: orphaned columnheader outside the context of row
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1732306
+      results:
+        - test: roles.html
+          subtest: 'role: emphasis'
+        - test: roles.html
+          subtest: 'role: strong'
+        - test: roles.html
+          subtest: 'role: time'
