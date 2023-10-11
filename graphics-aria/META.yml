@@ -1,10 +1,19 @@
 links:
     - label: a11y
       results:
-        - test: "*"
+        - test: '*'
     - label: accessibility
       results:
-        - test: "*"
+        - test: '*'
     - label: graphics-aam
       results:
-        - test: "*"
+        - test: '*'
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1858049
+      results:
+        - test: graphics-roles.html
+          subtest: graphics-document
+        - test: graphics-roles.html
+          subtest: graphics-object
+        - test: graphics-roles.html
+          subtest: graphics-symbol
