@@ -4,3 +4,33 @@ links:
   - subtest: Create non-global CustomElementRegistry and add definitions
     test: CustomElementRegistry-constructor.tentative.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1793284
+- product: firefox
+  results:
+  - subtest: Adding definition to global registry should not affect shadow roots using
+      scoped registry
+    test: scoped-registry-define-upgrade-criteria.tentative.html
+  - subtest: Adding definition to scoped registry should affect all associated shadow
+      roots
+    test: scoped-registry-define-upgrade-criteria.tentative.html
+  - subtest: Adding definition to scoped registry should not affect document tree
+      scope
+    test: scoped-registry-define-upgrade-criteria.tentative.html
+  - subtest: Adding definition to scoped registry should not affect shadow roots using
+      other registries
+    test: scoped-registry-define-upgrade-criteria.tentative.html
+  - subtest: Adding definition to scoped registry should not upgrade disconnected
+      elements
+    test: scoped-registry-define-upgrade-criteria.tentative.html
+  - subtest: Adding definition to scoped registry should not upgrade nodes in constructed
+      documents
+    test: scoped-registry-define-upgrade-criteria.tentative.html
+  - subtest: Adding definition to scoped registry should not upgrade nodes in detached
+      frames
+    test: scoped-registry-define-upgrade-criteria.tentative.html
+  - subtest: Upgrade in tree order in the same tree scope
+    test: scoped-registry-define-upgrade-order.tentative.html
+  - subtest: Upgrade in shadow-including tree order across tree scopes
+    test: scoped-registry-define-upgrade-order.tentative.html
+  - subtest: Upgrade order does not depend on shadow root attach order
+    test: scoped-registry-define-upgrade-order.tentative.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1858907
