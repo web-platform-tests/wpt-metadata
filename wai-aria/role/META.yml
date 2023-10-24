@@ -20,3 +20,29 @@ links:
           subtest: 'role: emphasis'
         - test: roles.html
           subtest: 'role: strong'
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1778795
+      results:
+        - test: form-roles.html
+          subtest: form without label
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1656330
+      results:
+        - test: grid-roles.html
+          subtest: role is grid
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1849160
+      results:
+        - test: grid-roles.html
+          subtest: orphaned gridcell outside the context of row
+        - test: grid-roles.html
+          subtest: orphaned rowheader outside the context of row
+        - test: grid-roles.html
+          subtest: orphaned columnheader outside the context of row
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1829028
+      results:
+        - test: roles.html
+          subtest: 'role: definition'
+        - test: roles.html
+          subtest: 'role: term'

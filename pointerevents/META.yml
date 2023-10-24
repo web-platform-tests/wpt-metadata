@@ -28,19 +28,19 @@ links:
     - product: firefox
       url: https://bugzilla.mozilla.org/show_bug.cgi?id=1647540
       results:
-        - test: idlharness.window.html
+        - test: idlharness.https.window.html
           subtest: 'PointerEvent interface: new PointerEvent("type") must inherit property "getPredictedEvents()" with the proper type'
-        - test: idlharness.window.html
+        - test: idlharness.https.window.html
           subtest: 'PointerEvent interface: operation getPredictedEvents()'
-        - test: idlharness.window.html
+        - test: idlharness.https.window.html
           subtest: 'Document interface: attribute onpointerrawupdate'
-        - test: idlharness.window.html
+        - test: idlharness.https.window.html
           subtest: 'Document interface: document must inherit property "onpointerrawupdate" with the proper type'
-        - test: idlharness.window.html
+        - test: idlharness.https.window.html
           subtest: 'Window interface: attribute onpointerrawupdate'
-        - test: idlharness.window.html
+        - test: idlharness.https.window.html
           subtest: 'HTMLElement interface: attribute onpointerrawupdate'
-        - test: idlharness.window.html
+        - test: idlharness.https.window.html
           subtest: 'Window interface: window must inherit property "onpointerrawupdate" with the proper type'
     - product: firefox
       url: https://bugzilla.mozilla.org/show_bug.cgi?id=1655753
@@ -110,13 +110,13 @@ links:
     - product: firefox
       url: https://bugzilla.mozilla.org/show_bug.cgi?id=1656377
       results:
-        - test: idlharness.window.html
+        - test: idlharness.https.window.html
           subtest: 'PointerEvent interface: new PointerEvent("type") must inherit property "azimuthAngle" with the proper type'
-        - test: idlharness.window.html
+        - test: idlharness.https.window.html
           subtest: 'PointerEvent interface: attribute azimuthAngle'
-        - test: idlharness.window.html
+        - test: idlharness.https.window.html
           subtest: 'PointerEvent interface: attribute altitudeAngle'
-        - test: idlharness.window.html
+        - test: idlharness.https.window.html
           subtest: 'PointerEvent interface: new PointerEvent("type") must inherit property "altitudeAngle" with the proper type'
     - product: firefox
       url: https://bugzilla.mozilla.org/show_bug.cgi?id=1663805
@@ -145,7 +145,7 @@ links:
     - product: chrome
       url: https://crbug.com/1072930
       results:
-        - test: idlharness.window.html
+        - test: idlharness.https.window.html
     - product: firefox
       url: https://bugzilla.mozilla.org/show_bug.cgi?id=1694881
       results:
@@ -203,7 +203,6 @@ links:
         - test: pointerevent_hit_test_scroll_visible_descendant.html
         - test: pointerevent_pointercapture_in_frame.html?mouse
         - test: pointerup_after_pointerdown_target_removed.html?mouse
-        - test: pointerevent_attributes_nohover_pointers.html
         - test: pointerevent_movementxy.html?mouse
     - product: safari
       url: https://bugs.webkit.org/show_bug.cgi?id=218665
