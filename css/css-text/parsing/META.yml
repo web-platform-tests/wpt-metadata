@@ -162,3 +162,12 @@ links:
   - subtest: e.style['text-wrap'] = "revert-layer" should set the property value
     test: text-wrap-valid.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1851315
+- product: firefox
+  results:
+  - subtest: Property text-wrap value 'wrap'
+    test: text-wrap-computed.html
+  - subtest: Property text-wrap value 'nowrap'
+    test: text-wrap-computed.html
+  - subtest: Property text-wrap value 'pretty'
+    test: text-wrap-computed.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1861614
