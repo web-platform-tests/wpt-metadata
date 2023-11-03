@@ -826,3 +826,12 @@ links:
           subtest: Outer scope query should not match container-name set by :host rule in shadow tree
         - test: container-name-tree-scoped.html
           subtest: Outer scope query should not match container-name set by ::slotted rule in shadow tree
+    - product: safari
+      url: https://bugs.webkit.org/show_bug.cgi?id=253935
+      results:
+        - test: container-units-in-at-container-fallback.html
+          subtest: Use small viewport size as fallback
+    - product: safari
+      url: https://bugs.webkit.org/show_bug.cgi?id=253937
+      results:
+        - test: container-units-svglength.html
