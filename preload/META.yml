@@ -1,194 +1,201 @@
 links:
-- product: firefox
-  results:
-  - test: modulepreload.html
-  - subtest: link rel=modulepreload as=script
-    test: modulepreload.html
-  - subtest: cross-origin link rel=modulepreload
-    test: modulepreload.html
-  - subtest: link rel=modulepreload with bad href attribute
-    test: modulepreload.html
-  - subtest: link rel=modulepreload with integrity mismatch
-    test: modulepreload.html
-  - subtest: link rel=modulepreload for a module with syntax error
-    test: modulepreload.html
-  - subtest: cross-origin link rel=modulepreload crossorigin=anonymous
-    test: modulepreload.html
-  - subtest: same-origin link rel=modulepreload crossorigin=anonymous
-    test: modulepreload.html
-  - subtest: link rel=modulepreload with integrity match
-    test: modulepreload.html
-  - subtest: link rel=modulepreload with invalid as= value
-    test: modulepreload.html
-  - subtest: same-origin link rel=modulepreload crossorigin=use-credentials
-    test: modulepreload.html
-  - subtest: cross-origin link rel=modulepreload crossorigin=use-credentials
-    test: modulepreload.html
-  - subtest: link rel=modulepreload for a module with network error
-    test: modulepreload.html
-  - subtest: link rel=modulepreload with submodules
-    test: modulepreload.html
-  - subtest: link rel=modulepreload
-    test: modulepreload.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1645098
-- product: firefox
-  results:
-  - subtest: link rel=modulepreload with integrity match2
-    test: modulepreload.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1706585
-- product: firefox
-  results:
-  - subtest: Same-origin script with incorrect hash.
-    test: subresource-integrity.html
-  - subtest: Same-origin script with sha256 match, sha512 mismatch
-    test: subresource-integrity.html
-  - subtest: '<crossorigin=''anonymous''> script with incorrect hash, ACAO: *'
-    test: subresource-integrity.html
-  - subtest: <crossorigin='use-credentials'> script with incorrect hash CORS-eligible
-    test: subresource-integrity.html
-  - subtest: <crossorigin='anonymous'> script with CORS-ineligible resource
-    test: subresource-integrity.html
-  - subtest: Cross-origin script, not CORS request, with correct hash
-    test: subresource-integrity.html
-  - subtest: Cross-origin script, not CORS request, with hash mismatch
-    test: subresource-integrity.html
-  - subtest: Same-origin style with incorrect hash.
-    test: subresource-integrity.html
-  - subtest: Same-origin style with sha256 match, sha512 mismatch
-    test: subresource-integrity.html
-  - subtest: '<crossorigin=''anonymous''> style with incorrect hash, ACAO: *'
-    test: subresource-integrity.html
-  - subtest: <crossorigin='use-credentials'> style with incorrect hash CORS-eligible
-    test: subresource-integrity.html
-  - subtest: <crossorigin='anonymous'> style with CORS-ineligible resource
-    test: subresource-integrity.html
-  - subtest: Cross-origin style, not CORS request, with correct hash
-    test: subresource-integrity.html
-  - subtest: Cross-origin style, not CORS request, with hash mismatch
-    test: subresource-integrity.html
-  - subtest: <crossorigin='anonymous'> image with CORS-ineligible resource
-    test: subresource-integrity.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1751835
-- product: firefox
-  results:
-  - test: avoid-delaying-onload-link-modulepreload-exec.html
-  - test: avoid-delaying-onload-link-modulepreload.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1759049
-- product: firefox
-  results:
-  - subtest: image documents should respect preload Link headers
-    test: link-header-preload-non-html.html
-  - subtest: media documents should respect preload Link headers
-    test: link-header-preload-non-html.html
-  - subtest: invalid image documents should respect preload Link headers
-    test: link-header-preload-non-html.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1760779
-- product: firefox
-  results:
-  - subtest: Makes sure that preload requests respect CSP directives that are added
-      after the preload
-    test: preload-dynamic-csp.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1761021
-- product: firefox
-  results:
-  - subtest: '[Tentative] Same-origin script with matching digest does not reuse preload
-      with matching but stronger digest.'
-    test: subresource-integrity.html
-  - subtest: '[Tentative] Same-origin style with matching digest does not reuse preload
-      with matching but stronger digest.'
-    test: subresource-integrity.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1761990
-- product: firefox
-  results:
-  - subtest: Loading font (same-origin) with link (same-origin) should reuse the preloaded
-      response
-    test: preload-resource-match.https.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1765128
-- product: firefox
-  results:
-  - subtest: Preload with {as=track; type=text/vtt} should load when retrieved resource
-      is a track
-    test: preload-type-match.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1766213
-- product: firefox
-  results:
-  - subtest: 'CORS-error (image): preload events'
-    test: preload-error.sub.html
-  - subtest: 'CSP-error (image): main'
-    test: preload-error.sub.html
-  - subtest: 'CORS-error (style): preload events'
-    test: preload-error.sub.html
-  - subtest: 'CSP-error (style): main'
-    test: preload-error.sub.html
-  - subtest: 'CORS-error (script): preload events'
-    test: preload-error.sub.html
-  - subtest: 'CSP-error (script): main'
-    test: preload-error.sub.html
-  - subtest: '404 (xhr): preload events'
-    test: preload-error.sub.html
-  - subtest: 'CORS-error (xhr): preload events'
-    test: preload-error.sub.html
-  - subtest: 'CSP-error (xhr): main'
-    test: preload-error.sub.html
-  - subtest: '404 (fetch): preload events'
-    test: preload-error.sub.html
-  - subtest: 'CORS-error (fetch): preload events'
-    test: preload-error.sub.html
-  - subtest: 'CSP-error (fetch): main'
-    test: preload-error.sub.html
-  - subtest: 'MIME-error (style): preload events'
-    test: preload-error.sub.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1766689
-- product: firefox
-  results:
-  - test: link-header-modulepreload.html
-  - subtest: test that a header-preloaded module is loaded and consumed
-    test: link-header-modulepreload.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1773292
-- product: firefox
-  results:
-  - subtest: link preload with nonce attribute
-    test: dynamic-adding-preload-nonce.html
-  - subtest: Makes sure that Link headers on subresources preload resources
-    test: link-header-on-subresource.html
-  - subtest: with nonce
-    test: link-header-preload-nonce.html
-  - subtest: Makes sure that preloaded resources are not downloaded again when used
-    test: single-download-preload.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1777433
-- product: firefox
-  results:
-  - status: CRASH
-    test: link-header-preload.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1800560
-- product: firefox
-  results:
-  - subtest: Makes sure that Link headers preload resources
-    test: link-header-preload.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1800561
-- product: firefox
-  results:
-  - subtest: Document prefetch should send the exact Accept header as navigation
-    test: prefetch-accept.html
-  - subtest: same origin document prefetch without 'as' should be consumed
-    test: prefetch-document.html
-  - subtest: same-site different-origin document prefetch without 'as' should be consumed
-    test: prefetch-document.html
-  - subtest: Document prefetch should send the exact Accept header as navigation
-    test: prefetch-document.html
-  - subtest: Prefetch should fire the load event
-    test: prefetch-events.html
-  - subtest: Prefetch should fire the error event for network errors
-    test: prefetch-events.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1810960
-- product: firefox
-  results:
-  - test: modulepreload.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=modulepreload
-- product: firefox
-  results:
-  - subtest: Changing a prefetch href should trigger a fetch
-    test: prefetch-time-to-fetch.https.html
-  - subtest: Changing a prefetch crossorigin attribute should trigger a fetch
-    test: prefetch-time-to-fetch.https.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1832930
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1645098
+      results:
+        - test: modulepreload.html
+        - test: modulepreload.html
+          subtest: link rel=modulepreload as=script
+        - test: modulepreload.html
+          subtest: cross-origin link rel=modulepreload
+        - test: modulepreload.html
+          subtest: link rel=modulepreload with bad href attribute
+        - test: modulepreload.html
+          subtest: link rel=modulepreload with integrity mismatch
+        - test: modulepreload.html
+          subtest: link rel=modulepreload for a module with syntax error
+        - test: modulepreload.html
+          subtest: cross-origin link rel=modulepreload crossorigin=anonymous
+        - test: modulepreload.html
+          subtest: same-origin link rel=modulepreload crossorigin=anonymous
+        - test: modulepreload.html
+          subtest: link rel=modulepreload with integrity match
+        - test: modulepreload.html
+          subtest: link rel=modulepreload with invalid as= value
+        - test: modulepreload.html
+          subtest: same-origin link rel=modulepreload crossorigin=use-credentials
+        - test: modulepreload.html
+          subtest: cross-origin link rel=modulepreload crossorigin=use-credentials
+        - test: modulepreload.html
+          subtest: link rel=modulepreload for a module with network error
+        - test: modulepreload.html
+          subtest: link rel=modulepreload with submodules
+        - test: modulepreload.html
+          subtest: link rel=modulepreload
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1706585
+      results:
+        - test: modulepreload.html
+          subtest: link rel=modulepreload with integrity match2
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1751835
+      results:
+        - test: subresource-integrity.html
+          subtest: Same-origin script with incorrect hash.
+        - test: subresource-integrity.html
+          subtest: Same-origin script with sha256 match, sha512 mismatch
+        - test: subresource-integrity.html
+          subtest: '<crossorigin=''anonymous''> script with incorrect hash, ACAO: *'
+        - test: subresource-integrity.html
+          subtest: <crossorigin='use-credentials'> script with incorrect hash CORS-eligible
+        - test: subresource-integrity.html
+          subtest: <crossorigin='anonymous'> script with CORS-ineligible resource
+        - test: subresource-integrity.html
+          subtest: Cross-origin script, not CORS request, with correct hash
+        - test: subresource-integrity.html
+          subtest: Cross-origin script, not CORS request, with hash mismatch
+        - test: subresource-integrity.html
+          subtest: Same-origin style with incorrect hash.
+        - test: subresource-integrity.html
+          subtest: Same-origin style with sha256 match, sha512 mismatch
+        - test: subresource-integrity.html
+          subtest: '<crossorigin=''anonymous''> style with incorrect hash, ACAO: *'
+        - test: subresource-integrity.html
+          subtest: <crossorigin='use-credentials'> style with incorrect hash CORS-eligible
+        - test: subresource-integrity.html
+          subtest: <crossorigin='anonymous'> style with CORS-ineligible resource
+        - test: subresource-integrity.html
+          subtest: Cross-origin style, not CORS request, with correct hash
+        - test: subresource-integrity.html
+          subtest: Cross-origin style, not CORS request, with hash mismatch
+        - test: subresource-integrity.html
+          subtest: <crossorigin='anonymous'> image with CORS-ineligible resource
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1759049
+      results:
+        - test: avoid-delaying-onload-link-modulepreload-exec.html
+        - test: avoid-delaying-onload-link-modulepreload.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1760779
+      results:
+        - test: link-header-preload-non-html.html
+          subtest: image documents should respect preload Link headers
+        - test: link-header-preload-non-html.html
+          subtest: media documents should respect preload Link headers
+        - test: link-header-preload-non-html.html
+          subtest: invalid image documents should respect preload Link headers
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1761021
+      results:
+        - test: preload-dynamic-csp.html
+          subtest: Makes sure that preload requests respect CSP directives that are added after the preload
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1761990
+      results:
+        - test: subresource-integrity.html
+          subtest: '[Tentative] Same-origin script with matching digest does not reuse preload with matching but stronger digest.'
+        - test: subresource-integrity.html
+          subtest: '[Tentative] Same-origin style with matching digest does not reuse preload with matching but stronger digest.'
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1765128
+      results:
+        - test: preload-resource-match.https.html
+          subtest: Loading font (same-origin) with link (same-origin) should reuse the preloaded response
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1766213
+      results:
+        - test: preload-type-match.html
+          subtest: Preload with {as=track; type=text/vtt} should load when retrieved resource is a track
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1766689
+      results:
+        - test: preload-error.sub.html
+          subtest: 'CORS-error (image): preload events'
+        - test: preload-error.sub.html
+          subtest: 'CSP-error (image): main'
+        - test: preload-error.sub.html
+          subtest: 'CORS-error (style): preload events'
+        - test: preload-error.sub.html
+          subtest: 'CSP-error (style): main'
+        - test: preload-error.sub.html
+          subtest: 'CORS-error (script): preload events'
+        - test: preload-error.sub.html
+          subtest: 'CSP-error (script): main'
+        - test: preload-error.sub.html
+          subtest: '404 (xhr): preload events'
+        - test: preload-error.sub.html
+          subtest: 'CORS-error (xhr): preload events'
+        - test: preload-error.sub.html
+          subtest: 'CSP-error (xhr): main'
+        - test: preload-error.sub.html
+          subtest: '404 (fetch): preload events'
+        - test: preload-error.sub.html
+          subtest: 'CORS-error (fetch): preload events'
+        - test: preload-error.sub.html
+          subtest: 'CSP-error (fetch): main'
+        - test: preload-error.sub.html
+          subtest: 'MIME-error (style): preload events'
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1773292
+      results:
+        - test: link-header-modulepreload.html
+        - test: link-header-modulepreload.html
+          subtest: test that a header-preloaded module is loaded and consumed
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1777433
+      results:
+        - test: dynamic-adding-preload-nonce.html
+          subtest: link preload with nonce attribute
+        - test: link-header-on-subresource.html
+          subtest: Makes sure that Link headers on subresources preload resources
+        - test: link-header-preload-nonce.html
+          subtest: with nonce
+        - test: single-download-preload.html
+          subtest: Makes sure that preloaded resources are not downloaded again when used
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1800560
+      results:
+        - test: link-header-preload.html
+          status: CRASH
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1800561
+      results:
+        - test: link-header-preload.html
+          subtest: Makes sure that Link headers preload resources
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1810960
+      results:
+        - test: prefetch-accept.html
+          subtest: Document prefetch should send the exact Accept header as navigation
+        - test: prefetch-document.html
+          subtest: same origin document prefetch without 'as' should be consumed
+        - test: prefetch-document.html
+          subtest: same-site different-origin document prefetch without 'as' should be consumed
+        - test: prefetch-document.html
+          subtest: Document prefetch should send the exact Accept header as navigation
+        - test: prefetch-events.html
+          subtest: Prefetch should fire the load event
+        - test: prefetch-events.html
+          subtest: Prefetch should fire the error event for network errors
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=modulepreload
+      results:
+        - test: modulepreload.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1832930
+      results:
+        - test: prefetch-time-to-fetch.https.html
+          subtest: Changing a prefetch href should trigger a fetch
+        - test: prefetch-time-to-fetch.https.html
+          subtest: Changing a prefetch crossorigin attribute should trigger a fetch
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1862162
+      results:
+        - test: modulepreload-as.html
+          subtest: Modulepreload with as="json"
+    - product: safari
+      url: https://bugs.webkit.org/show_bug.cgi?id=238547
+      results:
+        - test: preload-time-to-fetch.https.html
+          subtest: Changing a preload "as" from a previously non-matching destination should trigger a fetch
+        - test: preload-time-to-fetch.https.html
+          subtest: Removing a preload matching "type" should not trigger a fetch

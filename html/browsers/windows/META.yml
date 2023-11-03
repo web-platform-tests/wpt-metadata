@@ -21,3 +21,8 @@ links:
           subtest: Dangling Markup in target is reset when set by <form> tag
         - test: dangling-markup-window-name.html
           subtest: Dangling Markup in target is reset when set by <base> tag
+    - product: safari
+      url: https://bugs.webkit.org/show_bug.cgi?id=242965
+      results:
+        - test: browsing-context.html
+          subtest: Check the document properties corresponding to the creator browsing context

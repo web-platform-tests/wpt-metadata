@@ -1,13 +1,18 @@
 links:
-- product: chrome
-  results:
-  - test: margin-bottom-applies-to-012.xht
-  - test: margin-bottom-applies-to-013.xht
-  - test: margin-bottom-applies-to-014.xht
-  - test: margin-bottom-applies-to-015.xht
-  - test: margin-collapse-038.xht
-  url: https://bugs.chromium.org/p/chromium/issues/detail?id=1220236
-- product: firefox
-  results:
-  - test: margin-collapse-038.xht
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1750134
+    - product: chrome
+      url: https://bugs.chromium.org/p/chromium/issues/detail?id=1220236
+      results:
+        - test: margin-bottom-applies-to-012.xht
+        - test: margin-bottom-applies-to-013.xht
+        - test: margin-bottom-applies-to-014.xht
+        - test: margin-bottom-applies-to-015.xht
+        - test: margin-collapse-038.xht
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1750134
+      results:
+        - test: margin-collapse-038.xht
+    - product: safari
+      url: https://bugs.webkit.org/show_bug.cgi?id=110063
+      results:
+        - test: margin-right-applies-to-015.xht
+          subtest: Test status

@@ -153,3 +153,27 @@ links:
       results:
         - test: fixed-layout-2.html
           subtest: Table-layout:fixed is applied when width is min-content
+    - product: safari
+      url: https://bugs.webkit.org/show_bug.cgi?id=155919
+      results:
+        - test: table-has-box-sizing-border-box-002.html
+          subtest: Test status
+    - product: safari
+      url: https://bugs.webkit.org/show_bug.cgi?id=255844
+      results:
+        - test: html-to-css-mapping-1.html
+          subtest: HTML -> CSS Mapping is applied correctly on improper table markup (no table => no border-spacing, but padding)
+    - product: safari
+      url: https://bugs.webkit.org/show_bug.cgi?id=252141
+      results:
+        - test: fixed-layout-excess-width-distribution-001.html
+          subtest: '#theTable 1'
+    - product: safari
+      url: https://bugs.webkit.org/show_bug.cgi?id=251178
+      results:
+        - test: whitespace-001.html
+    - product: safari
+      url: https://bugs.webkit.org/show_bug.cgi?id=255853
+      results:
+        - test: zero-rowspan-001.html
+        - test: zero-rowspan-002.html

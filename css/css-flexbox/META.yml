@@ -740,7 +740,6 @@ links:
         - test: inline-flex-frameset-main-axis-crash.html
         - test: inline-flex-min-content-height.html
         - test: inline-flex.html
-        - test: inline-flexbox-wrap-vertically-width-calculation.html
         - test: intrinsic-width-orthogonal-writing-mode.html
         - test: item-with-max-height-and-scrollbar.html
         - test: item-with-table-with-infinite-max-intrinsic-width.html
@@ -759,7 +758,6 @@ links:
         - test: multiline-min-max.html
         - test: multiline-min-preferred-width.html
         - test: multiline-reverse-wrap-baseline.html
-        - test: multiline-shrink-to-fit.html
         - test: negative-flex-margins-crash.html
         - test: negative-flex-rounding-crash.html
         - test: negative-item-margins-002-crash.html
@@ -1696,3 +1694,8 @@ links:
         - test: align-items-baseline-row-vert.html
         - test: align-items-baseline-column-vert.html
         - test: align-items-baseline-column-horz.html
+    - product: safari
+      url: https://bugs.webkit.org/show_bug.cgi?id=259254
+      results:
+        - test: overflow-top-left.html
+          subtest: Test status
