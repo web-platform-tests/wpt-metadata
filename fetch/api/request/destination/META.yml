@@ -1,0 +1,13 @@
+links:
+- product: firefox
+  results:
+  - subtest: HTMLLinkElement with rel=preload and as=audio fetches with a "audio"
+      Request.destination
+    test: fetch-destination.https.html
+  - subtest: HTMLLinkElement with rel=preload and as=video fetches with a "video"
+      Request.destination
+    test: fetch-destination.https.html
+  - subtest: HTMLLinkElement with rel=preload and as=track fetches with a "track"
+      Request.destination
+    test: fetch-destination.https.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1862160
