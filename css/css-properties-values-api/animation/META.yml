@@ -1,85 +1,103 @@
 links:
-    - product: chrome
-      url: https://crbug.com/416736
-      results:
-        - test: custom-property-animation-angle.html
-          subtest: Animating a custom property of type <angle> with iterationComposite
-        - test: custom-property-animation-color.html
-          subtest: Animating a custom property of type <color> with iterationComposite
-        - test: custom-property-animation-length.html
-          subtest: Animating a custom property of type <length> with iterationComposite
-        - test: custom-property-animation-resolution.html
-          subtest: Animating a custom property of type <resolution> with iterationComposite
-        - test: custom-property-animation-time.html
-          subtest: Animating a custom property of type <time> with iterationComposite
-        - test: custom-property-animation-angle-comma-list.html
-          subtest: Animating a custom property of type <angle># with iterationComposite
-        - test: custom-property-animation-number.html
-          subtest: Animating a custom property of type <number> with iterationComposite
-        - test: custom-property-animation-time-space-list.html
-          subtest: Animating a custom property of type <time>+ with iterationComposite
-        - test: custom-property-animation-length-percentage-space-list.html
-          subtest: Animating a custom property of type <length-percentage>+ with iterationComposite
-        - test: custom-property-animation-length-percentage.html
-          subtest: Animating a custom property of type <length-percentage> with iterationComposite
-        - test: custom-property-animation-color-comma-list.html
-          subtest: Animating a custom property of type <color># with iterationComposite
-        - test: custom-property-animation-length-percentage-comma-list.html
-          subtest: Animating a custom property of type <length-percentage># with iterationComposite
-        - test: custom-property-animation-time-comma-list.html
-          subtest: Animating a custom property of type <time># with iterationComposite
-        - test: custom-property-animation-integer.html
-          subtest: Animating a custom property of type <integer> with iterationComposite
-        - test: custom-property-animation-percentage.html
-          subtest: Animating a custom property of type <percentage> with iterationComposite
-        - test: custom-property-animation-angle-space-list.html
-          subtest: Animating a custom property of type <angle>+ with iterationComposite
-        - test: custom-property-animation-length-comma-list.html
-          subtest: Animating a custom property of type <length># with iterationComposite
-        - test: custom-property-animation-length-space-list.html
-          subtest: Animating a custom property of type <length>+ with iterationComposite
-        - test: custom-property-animation-percentage-space-list.html
-          subtest: Animating a custom property of type <percentage>+ with iterationComposite
-        - test: custom-property-animation-resolution-space-list.html
-          subtest: Animating a custom property of type <resolution>+ with iterationComposite
-        - test: custom-property-animation-integer-comma-list.html
-          subtest: Animating a custom property of type <integer># with iterationComposite
-        - test: custom-property-animation-number-comma-list.html
-          subtest: Animating a custom property of type <number># with iterationComposite
-        - test: custom-property-animation-number-space-list.html
-          subtest: Animating a custom property of type <number>+ with iterationComposite
-        - test: custom-property-animation-color-space-list.html
-          subtest: Animating a custom property of type <color>+ with iterationComposite
-        - test: custom-property-animation-integer-space-list.html
-          subtest: Animating a custom property of type <integer>+ with iterationComposite
-        - test: custom-property-animation-percentage-comma-list.html
-          subtest: Animating a custom property of type <percentage># with iterationComposite
-        - test: custom-property-animation-resolution-comma-list.html
-          subtest: Animating a custom property of type <resolution># with iterationComposite
-    - product: chrome
-      url: https://crbug.com/911156
-      results:
-        - test: custom-property-animation-transform-function.html
-        - test: custom-property-animation-transform-list-multiple-values.html
-        - test: custom-property-animation-transform-list-single-values.html
-        - test: custom-property-transition-transform-list.html
-        - test: custom-property-transition-transform-function.html
-    - product: safari
-      url: https://bugs.webkit.org/show_bug.cgi?id=249397
-      results:
-        - test: custom-property-animation-non-inherited-used-by-standard-property.html
-    - product: safari
-      url: https://bugs.webkit.org/show_bug.cgi?id=249640
-      results:
-        - test: custom-property-transition-inherited-used-by-standard-property.html
-    - product: safari
-      url: https://bugs.webkit.org/show_bug.cgi?id=249641
-      results:
-        - test: custom-property-transition-non-inherited-used-by-standard-property.html
-    - product: safari
-      url: https://bugs.webkit.org/show_bug.cgi?id=251574
-      results:
-        - test: custom-property-animation-color-space-list.html
-          subtest: Animating a custom property of type <color>+ with iterationComposite
-        - test: custom-property-animation-color-comma-list.html
-          subtest: Animating a custom property of type <color># with iterationComposite
+- product: chrome
+  results:
+  - subtest: Animating a custom property of type <angle> with iterationComposite
+    test: custom-property-animation-angle.html
+  - subtest: Animating a custom property of type <color> with iterationComposite
+    test: custom-property-animation-color.html
+  - subtest: Animating a custom property of type <length> with iterationComposite
+    test: custom-property-animation-length.html
+  - subtest: Animating a custom property of type <resolution> with iterationComposite
+    test: custom-property-animation-resolution.html
+  - subtest: Animating a custom property of type <time> with iterationComposite
+    test: custom-property-animation-time.html
+  - subtest: Animating a custom property of type <angle># with iterationComposite
+    test: custom-property-animation-angle-comma-list.html
+  - subtest: Animating a custom property of type <number> with iterationComposite
+    test: custom-property-animation-number.html
+  - subtest: Animating a custom property of type <time>+ with iterationComposite
+    test: custom-property-animation-time-space-list.html
+  - subtest: Animating a custom property of type <length-percentage>+ with iterationComposite
+    test: custom-property-animation-length-percentage-space-list.html
+  - subtest: Animating a custom property of type <length-percentage> with iterationComposite
+    test: custom-property-animation-length-percentage.html
+  - subtest: Animating a custom property of type <color># with iterationComposite
+    test: custom-property-animation-color-comma-list.html
+  - subtest: Animating a custom property of type <length-percentage># with iterationComposite
+    test: custom-property-animation-length-percentage-comma-list.html
+  - subtest: Animating a custom property of type <time># with iterationComposite
+    test: custom-property-animation-time-comma-list.html
+  - subtest: Animating a custom property of type <integer> with iterationComposite
+    test: custom-property-animation-integer.html
+  - subtest: Animating a custom property of type <percentage> with iterationComposite
+    test: custom-property-animation-percentage.html
+  - subtest: Animating a custom property of type <angle>+ with iterationComposite
+    test: custom-property-animation-angle-space-list.html
+  - subtest: Animating a custom property of type <length># with iterationComposite
+    test: custom-property-animation-length-comma-list.html
+  - subtest: Animating a custom property of type <length>+ with iterationComposite
+    test: custom-property-animation-length-space-list.html
+  - subtest: Animating a custom property of type <percentage>+ with iterationComposite
+    test: custom-property-animation-percentage-space-list.html
+  - subtest: Animating a custom property of type <resolution>+ with iterationComposite
+    test: custom-property-animation-resolution-space-list.html
+  - subtest: Animating a custom property of type <integer># with iterationComposite
+    test: custom-property-animation-integer-comma-list.html
+  - subtest: Animating a custom property of type <number># with iterationComposite
+    test: custom-property-animation-number-comma-list.html
+  - subtest: Animating a custom property of type <number>+ with iterationComposite
+    test: custom-property-animation-number-space-list.html
+  - subtest: Animating a custom property of type <color>+ with iterationComposite
+    test: custom-property-animation-color-space-list.html
+  - subtest: Animating a custom property of type <integer>+ with iterationComposite
+    test: custom-property-animation-integer-space-list.html
+  - subtest: Animating a custom property of type <percentage># with iterationComposite
+    test: custom-property-animation-percentage-comma-list.html
+  - subtest: Animating a custom property of type <resolution># with iterationComposite
+    test: custom-property-animation-resolution-comma-list.html
+  url: https://crbug.com/416736
+- product: chrome
+  results:
+  - test: custom-property-animation-transform-function.html
+  - test: custom-property-animation-transform-list-multiple-values.html
+  - test: custom-property-animation-transform-list-single-values.html
+  - test: custom-property-transition-transform-list.html
+  - test: custom-property-transition-transform-function.html
+  url: https://crbug.com/911156
+- product: safari
+  results:
+  - test: custom-property-animation-non-inherited-used-by-standard-property.html
+  url: https://bugs.webkit.org/show_bug.cgi?id=249397
+- product: safari
+  results:
+  - test: custom-property-transition-inherited-used-by-standard-property.html
+  url: https://bugs.webkit.org/show_bug.cgi?id=249640
+- product: safari
+  results:
+  - test: custom-property-transition-non-inherited-used-by-standard-property.html
+  url: https://bugs.webkit.org/show_bug.cgi?id=249641
+- product: safari
+  results:
+  - subtest: Animating a custom property of type <color>+ with iterationComposite
+    test: custom-property-animation-color-space-list.html
+  - subtest: Animating a custom property of type <color># with iterationComposite
+    test: custom-property-animation-color-comma-list.html
+  url: https://bugs.webkit.org/show_bug.cgi?id=251574
+- product: firefox
+  results:
+  - subtest: Animating a custom property of type "<transform-list>|none" from "none"
+      to <transform-list> value
+    test: custom-property-animation-transform-none.tentative.html
+  - subtest: Animating a custom property of type "<transform-function>|none" from
+      "none" to <transform-function> value
+    test: custom-property-animation-transform-none.tentative.html
+  - subtest: A custom property keyword none is not a <transform-function> value and
+      is not interpolable with <transform-function> values
+    test: custom-property-transition-transform-function-none.tentative.html
+  - subtest: A custom property cannot yield a CSS Transition from <transform-function>
+      to <transform-list>
+    test: custom-property-transition-transform-function-to-list.html
+  - subtest: A custom property keyword none is not a <transform-list> value and is
+      not interpolable with <transform-list> values
+    test: custom-property-transition-transform-list-none.tentative.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1861408

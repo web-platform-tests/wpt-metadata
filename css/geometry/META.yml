@@ -22,3 +22,31 @@ links:
       url: https://bugs.chromium.org/p/chromium/issues/detail?id=1216469
       results:
         - test: idlharness.any.html
+    - product: safari
+      url: https://bugs.webkit.org/show_bug.cgi?id=263748
+      results:
+        - test: DOMMatrix-002.html
+          subtest: test scaleNonUniform() doesn't mutate
+        - test: idlharness.any.html
+          subtest: 'DOMMatrixReadOnly interface: operation scaleNonUniform(optional unrestricted double, optional unrestricted double)'
+        - test: idlharness.any.html
+          subtest: 'DOMMatrixReadOnly interface: new DOMMatrixReadOnly() must inherit property "scaleNonUniform(optional unrestricted double, optional unrestricted double)" with the proper type'
+        - test: idlharness.any.html
+          subtest: 'DOMMatrixReadOnly interface: calling scaleNonUniform(optional unrestricted double, optional unrestricted double) on new DOMMatrixReadOnly() with too few arguments must throw TypeError'
+        - test: DOMMatrix-003.html
+          subtest: test scaleNonUniform()
+        - test: DOMMatrix-003.html
+          subtest: test scaleNonUniform() with sx
+        - test: DOMMatrix-003.html
+          subtest: test scaleNonUniform() with sx, sy
+        - test: idlharness.any.worker.html
+          subtest: 'DOMMatrixReadOnly interface: operation scaleNonUniform(optional unrestricted double, optional unrestricted double)'
+        - test: idlharness.any.worker.html
+          subtest: 'DOMMatrixReadOnly interface: new DOMMatrixReadOnly() must inherit property "scaleNonUniform(optional unrestricted double, optional unrestricted double)" with the proper type'
+        - test: idlharness.any.worker.html
+          subtest: 'DOMMatrixReadOnly interface: calling scaleNonUniform(optional unrestricted double, optional unrestricted double) on new DOMMatrixReadOnly() with too few arguments must throw TypeError'
+    - product: safari
+      url: https://bugs.webkit.org/show_bug.cgi?id=82274
+      results:
+        - test: historical.html
+          subtest: WebKitPoint must be nuked

@@ -313,3 +313,8 @@ links:
       results:
         - test: font-palette-values-invalid.html
           subtest: 'CSS Fonts Module Level 4: parsing @font-palette-values 1'
+    - product: safari
+      url: https://bugs.webkit.org/show_bug.cgi?id=248128
+      results:
+        - test: font-variant-invalid.html
+          subtest: e.style['font-variant'] = "small-caps normal" should not set the property value
