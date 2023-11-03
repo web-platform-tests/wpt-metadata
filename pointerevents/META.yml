@@ -249,3 +249,16 @@ links:
       url: https://bugs.webkit.org/show_bug.cgi?id=258255
       results:
         - test: pointerevent_hit_test_scroll_visible_descendant.html
+    - product: safari
+      url: https://bugs.webkit.org/show_bug.cgi?id=210454
+      results:
+        - test: coalesced_events_attributes_under_load.https.html?mouse
+        - test: coalesced_events_attributes_under_load.https.html?pen
+        - test: coalesced_events_attributes_under_load.https.html?touch
+        - test: coalesced_events_attributes.https.html?mouse
+        - test: coalesced_events_attributes.https.html?pen
+        - test: coalesced_events_attributes.https.html?touch
+        - test: idlharness.https.window.html
+          subtest: 'PointerEvent interface: operation getCoalescedEvents()'
+        - test: idlharness.https.window.html
+          subtest: 'PointerEvent interface: new PointerEvent("type") must inherit property "getCoalescedEvents()" with the proper type'

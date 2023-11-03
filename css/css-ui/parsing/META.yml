@@ -1,10 +1,21 @@
 links:
-    - product: chrome
-      url: https://crbug.com/838779
-      results:
-        - test: resize-invalid.html
-    - product: chrome
-      url: https://crbug.com/658129
-      results:
-        - test: user-select-computed.html
-        - test: user-select-valid.html
+- product: chrome
+  results:
+  - test: resize-invalid.html
+  url: https://crbug.com/838779
+- product: chrome
+  results:
+  - test: user-select-computed.html
+  - test: user-select-valid.html
+  url: https://crbug.com/658129
+- product: firefox
+  results:
+  - subtest: Property field-sizing value 'fixed'
+    test: field-sizing-computed.html
+  - subtest: Property field-sizing value 'content'
+    test: field-sizing-computed.html
+  - subtest: e.style['field-sizing'] = "fixed" should set the property value
+    test: field-sizing-valid.html
+  - subtest: e.style['field-sizing'] = "content" should set the property value
+    test: field-sizing-valid.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1862112

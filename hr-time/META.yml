@@ -1,31 +1,38 @@
 links:
-    - product: deno
-      url: https://github.com/denoland/deno/issues/10837
-      results:
-        - test: idlharness.any.html
-          subtest: 'Performance interface: performance must inherit property "timeOrigin" with the proper type'
-        - test: idlharness.any.html
-          subtest: 'Performance interface: attribute timeOrigin'
-    - product: deno
-      url: https://github.com/denoland/deno/issues/10995
-      results:
-        - test: basic.any.html
-          subtest: Performance interface extends EventTarget.
-    - product: deno
-      url: https://github.com/denoland/deno/issues/10838
-      results:
-        - test: idlharness.any.html
-          subtest: 'Performance interface: operation toJSON()'
-        - test: idlharness.any.html
-          subtest: 'Performance interface: default toJSON operation on performance'
-        - test: idlharness.any.html
-          subtest: 'Performance interface: performance must inherit property "toJSON()" with the proper type'
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1767596
-      results:
-        - test: navigation-start-post-before-unload.html
-          subtest: timeOrigin should be set after beforeunload
-    - product: chrome
-      url: https://crbug.com/1281880
-      results:
-        - test: idlharness-shadowrealm.window.html
+- product: deno
+  results:
+  - subtest: 'Performance interface: performance must inherit property "timeOrigin"
+      with the proper type'
+    test: idlharness.any.html
+  - subtest: 'Performance interface: attribute timeOrigin'
+    test: idlharness.any.html
+  url: https://github.com/denoland/deno/issues/10837
+- product: deno
+  results:
+  - subtest: Performance interface extends EventTarget.
+    test: basic.any.html
+  url: https://github.com/denoland/deno/issues/10995
+- product: deno
+  results:
+  - subtest: 'Performance interface: operation toJSON()'
+    test: idlharness.any.html
+  - subtest: 'Performance interface: default toJSON operation on performance'
+    test: idlharness.any.html
+  - subtest: 'Performance interface: performance must inherit property "toJSON()"
+      with the proper type'
+    test: idlharness.any.html
+  url: https://github.com/denoland/deno/issues/10838
+- product: firefox
+  results:
+  - subtest: timeOrigin should be set after beforeunload
+    test: navigation-start-post-before-unload.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1767596
+- product: chrome
+  results:
+  - test: idlharness-shadowrealm.window.html
+  url: https://crbug.com/1281880
+- product: firefox
+  results:
+  - subtest: raf-coarsened-time
+    test: raf-coarsened-time.https.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1862386

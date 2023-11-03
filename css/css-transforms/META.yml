@@ -1,6 +1,5 @@
 links:
-    - url: ""
-      label: interop-2021-transforms
+    - label: interop-2021-transforms
       results:
         - test: 2d-rotate-001.html
         - test: 2d-rotate-js.html
@@ -615,3 +614,12 @@ links:
       results:
         - test: transform-translate-background-001.html
         - test: transform-translate-background-002.html
+    - product: safari
+      url: https://bugs.webkit.org/show_bug.cgi?id=258372
+      results:
+        - test: transform-transformed-tr-percent-height-child.html
+          subtest: Test status
+    - product: safari
+      url: https://bugs.webkit.org/show_bug.cgi?id=202504
+      results:
+        - test: perspective-split-by-zero-w.html
