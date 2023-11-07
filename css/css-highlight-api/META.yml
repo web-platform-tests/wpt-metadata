@@ -87,20 +87,6 @@ links:
   - subtest: HighlightRegistry initializes as it should.
     test: HighlightRegistry-maplike.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1718818
-- product: chrome
-  results:
-  - subtest: 'Highlight interface: setlike<AbstractRange>'
-    test: idlharness.window.html
-  - subtest: 'HighlightRegistry interface: maplike<DOMString, Highlight>'
-    test: idlharness.window.html
-  url: https://crbug.com/1344001
-- product: edge
-  results:
-  - subtest: 'Highlight interface: setlike<AbstractRange>'
-    test: idlharness.window.html
-  - subtest: 'HighlightRegistry interface: maplike<DOMString, Highlight>'
-    test: idlharness.window.html
-  url: https://crbug.com/1344001
 - product: firefox
   results:
   - subtest: Highlight is a setlike interface that works as expected even if Set.prototype
