@@ -86,3 +86,12 @@ links:
       results:
         - test: fieldset-content-before-legend.html
           subtest: fieldset content before legend
+    - product: safari
+      url: https://bugs.webkit.org/show_bug.cgi?id=172718
+      results:
+        - test: legend.html
+          subtest: 'in-body: width'
+        - test: legend.html
+          subtest: 'in-fieldset-descendant: width'
+        - test: legend.html
+          subtest: 'in-fieldset-second-child: width'
