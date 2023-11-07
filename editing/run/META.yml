@@ -145,3 +145,24 @@ links:
         - test: inserttext.html?1-1000
         - test: inserttext.html?1001-2000
         - test: inserttext.html?2001-last
+    - product: safari
+      url: https://bugs.webkit.org/show_bug.cgi?id=264310
+      results:
+        - test: caret-navigation-around-line-break.html
+          subtest: <wbr> separator - move down
+        - test: caret-navigation-around-line-break.html
+          subtest: <wbr> separator - move up
+        - test: caret-navigation-around-line-break.html
+          subtest: <wbr> separator - move left
+        - test: caret-navigation-around-line-break.html
+          subtest: <span> separator - move down
+        - test: caret-navigation-around-line-break.html
+          subtest: <span> separator - move up
+        - test: caret-navigation-around-line-break.html
+          subtest: <span> separator - move left
+        - test: caret-navigation-around-line-break.html
+          subtest: two <span> separators - move down
+        - test: caret-navigation-around-line-break.html
+          subtest: two <span> separators - move up
+        - test: caret-navigation-around-line-break.html
+          subtest: two <span> separators - move left
