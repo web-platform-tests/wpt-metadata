@@ -95,3 +95,192 @@ links:
   - subtest: Nested rule that looks like an invalid custom property declaration
     test: custom-property-rule-ambiguity.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1858167
+- product: firefox
+  results:
+  - subtest: '"u/**/+/**/a/**/?" => "U+A0-AF"'
+    test: urange-parsing.html
+  - subtest: '"u+abc" => "U+ABC"'
+    test: urange-parsing.html
+  - subtest: '"U+abc" => "U+ABC"'
+    test: urange-parsing.html
+  - subtest: '"u+ABC" => "U+ABC"'
+    test: urange-parsing.html
+  - subtest: '"U+ABC" => "U+ABC"'
+    test: urange-parsing.html
+  - subtest: '"u+AbC" => "U+ABC"'
+    test: urange-parsing.html
+  - subtest: '"u+efg" is invalid'
+    test: urange-parsing.html
+  - subtest: '"u+ abc" is invalid'
+    test: urange-parsing.html
+  - subtest: '"u +abc" is invalid'
+    test: urange-parsing.html
+  - subtest: '"u + abc" is invalid'
+    test: urange-parsing.html
+  - subtest: '"U + a b c" is invalid'
+    test: urange-parsing.html
+  - subtest: '"u+a" => "U+A"'
+    test: urange-parsing.html
+  - subtest: '"u+aa" => "U+AA"'
+    test: urange-parsing.html
+  - subtest: '"u+aaa" => "U+AAA"'
+    test: urange-parsing.html
+  - subtest: '"u+aaaa" => "U+AAAA"'
+    test: urange-parsing.html
+  - subtest: '"u+aaaaa" => "U+AAAAA"'
+    test: urange-parsing.html
+  - subtest: '"u+aaaaaaa" is invalid'
+    test: urange-parsing.html
+  - subtest: '"u+a?" => "U+A0-AF"'
+    test: urange-parsing.html
+  - subtest: '"u+a??" => "U+A00-AFF"'
+    test: urange-parsing.html
+  - subtest: '"u+a???" => "U+A000-AFFF"'
+    test: urange-parsing.html
+  - subtest: '"u+a????" => "U+A0000-AFFFF"'
+    test: urange-parsing.html
+  - subtest: '"u+aaaaaa?" is invalid'
+    test: urange-parsing.html
+  - subtest: '"u+aaaaa??" is invalid'
+    test: urange-parsing.html
+  - subtest: '"u+aaaa???" is invalid'
+    test: urange-parsing.html
+  - subtest: '"u+aaa????" is invalid'
+    test: urange-parsing.html
+  - subtest: '"u+aa?????" is invalid'
+    test: urange-parsing.html
+  - subtest: '"u+a??????" is invalid'
+    test: urange-parsing.html
+  - subtest: '"u+a?a" is invalid'
+    test: urange-parsing.html
+  - subtest: '"u+aaaaaa" is invalid'
+    test: urange-parsing.html
+  - subtest: '"u+a?????" is invalid'
+    test: urange-parsing.html
+  - subtest: '"u/**/+0a/**/?" => "U+A0-AF"'
+    test: urange-parsing.html
+  - subtest: '"u+0a" => "U+A"'
+    test: urange-parsing.html
+  - subtest: '"U+0a0" => "U+A0"'
+    test: urange-parsing.html
+  - subtest: '"u+0aaaaa" => "U+AAAAA"'
+    test: urange-parsing.html
+  - subtest: '"u+0aaaaaa" is invalid'
+    test: urange-parsing.html
+  - subtest: '"u+0a0000" => "U+A0000"'
+    test: urange-parsing.html
+  - subtest: '"u+0a00000" is invalid'
+    test: urange-parsing.html
+  - subtest: '"u+0aaaaa0" is invalid'
+    test: urange-parsing.html
+  - subtest: '"u+00000a" => "U+A"'
+    test: urange-parsing.html
+  - subtest: '"u+00000aa" is invalid'
+    test: urange-parsing.html
+  - subtest: '"u+00000a0" is invalid'
+    test: urange-parsing.html
+  - subtest: '"u+000000a" is invalid'
+    test: urange-parsing.html
+  - subtest: '"u+0a????" => "U+A0000-AFFFF"'
+    test: urange-parsing.html
+  - subtest: '"u+0a?????" is invalid'
+    test: urange-parsing.html
+  - subtest: '"u+00a????" is invalid'
+    test: urange-parsing.html
+  - subtest: '"u+22222a" is invalid'
+    test: urange-parsing.html
+  - subtest: '"u+1e9a" => "U+1E9A"'
+    test: urange-parsing.html
+  - subtest: '"u/**/+0/**/?" => "U+0-F"'
+    test: urange-parsing.html
+  - subtest: '"u/**/0" is invalid'
+    test: urange-parsing.html
+  - subtest: '"u+0" => "U+0"'
+    test: urange-parsing.html
+  - subtest: '"u+00" => "U+0"'
+    test: urange-parsing.html
+  - subtest: '"u+000" => "U+0"'
+    test: urange-parsing.html
+  - subtest: '"u+0000" => "U+0"'
+    test: urange-parsing.html
+  - subtest: '"u+00000" => "U+0"'
+    test: urange-parsing.html
+  - subtest: '"u+000000" => "U+0"'
+    test: urange-parsing.html
+  - subtest: '"u+0000000" is invalid'
+    test: urange-parsing.html
+  - subtest: '"u+00000?" => "U+0-F"'
+    test: urange-parsing.html
+  - subtest: '"u+0?????" => "U+0-FFFFF"'
+    test: urange-parsing.html
+  - subtest: '"u+0?a" is invalid'
+    test: urange-parsing.html
+  - subtest: '"u+000000?" is invalid'
+    test: urange-parsing.html
+  - subtest: '"u+00000??" is invalid'
+    test: urange-parsing.html
+  - subtest: '"u+0??????" is invalid'
+    test: urange-parsing.html
+  - subtest: '"u+1e3" => "U+1E3"'
+    test: urange-parsing.html
+  - subtest: '"u+1e-20" => "U+1E-20"'
+    test: urange-parsing.html
+  - subtest: '"u+222222" is invalid'
+    test: urange-parsing.html
+  - subtest: '"u+2?????" is invalid'
+    test: urange-parsing.html
+  - subtest: '"u/**/+0/**/-0a" => "U+0-A"'
+    test: urange-parsing.html
+  - subtest: '"u+0-0a" => "U+0-A"'
+    test: urange-parsing.html
+  - subtest: '"u+000000-0aaaaa" => "U+0-AAAAA"'
+    test: urange-parsing.html
+  - subtest: '"u+0000000-0a" is invalid'
+    test: urange-parsing.html
+  - subtest: '"u+0-0aaaaaa" is invalid'
+    test: urange-parsing.html
+  - subtest: '"u+0-000000a" is invalid'
+    test: urange-parsing.html
+  - subtest: '"u+0+0a" is invalid'
+    test: urange-parsing.html
+  - subtest: '"u+0?-0a" is invalid'
+    test: urange-parsing.html
+  - subtest: '"u+0-0a?" is invalid'
+    test: urange-parsing.html
+  - subtest: '"u+222222-22222a" is invalid'
+    test: urange-parsing.html
+  - subtest: '"u/**/+0/**/-1" => "U+0-1"'
+    test: urange-parsing.html
+  - subtest: '"u+0-1" => "U+0-1"'
+    test: urange-parsing.html
+  - subtest: '"u-0-1" is invalid'
+    test: urange-parsing.html
+  - subtest: '"u-0+1" is invalid'
+    test: urange-parsing.html
+  - subtest: '"u+0+1" is invalid'
+    test: urange-parsing.html
+  - subtest: '"u+000000-000001" => "U+0-1"'
+    test: urange-parsing.html
+  - subtest: '"u+0000000-1" is invalid'
+    test: urange-parsing.html
+  - subtest: '"u+0-0000001" is invalid'
+    test: urange-parsing.html
+  - subtest: '"u+0-10ffff" => "U+0-10FFFF"'
+    test: urange-parsing.html
+  - subtest: '"u+0-110000" is invalid'
+    test: urange-parsing.html
+  - subtest: '"u+0-222222" is invalid'
+    test: urange-parsing.html
+  - subtest: '"u/**/+/**/?" => "U+0-F"'
+    test: urange-parsing.html
+  - subtest: '"u+?" => "U+0-F"'
+    test: urange-parsing.html
+  - subtest: '"u+?????" => "u+0-FFFFF"'
+    test: urange-parsing.html
+  - subtest: '"u+???????" is invalid'
+    test: urange-parsing.html
+  - subtest: '"u+?a" is invalid'
+    test: urange-parsing.html
+  - subtest: '"u+??????" is invalid'
+    test: urange-parsing.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1863589
