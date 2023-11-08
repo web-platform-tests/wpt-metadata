@@ -193,6 +193,8 @@ links:
         - test: highlight-painting-001.html
         - test: selection-overlay-and-grammar-001.html
         - test: selection-overlay-and-spelling-001.html
+        - test: target-text-004.html
+          subtest: Test status
     - product: chrome
       url: https://crbug.com/1035708
       results:
@@ -381,3 +383,46 @@ links:
         - test: first-line-change-inline-color.html
         - test: first-line-on-ancestor-block.html
           subtest: Test status
+    - product: safari
+      url: https://bugs.webkit.org/show_bug.cgi?id=234705
+      results:
+        - test: marker-text-combine-upright.html
+          subtest: Test status
+    - product: safari
+      url: https://bugs.webkit.org/show_bug.cgi?id=251693
+      results:
+        - test: first-letter-punctuation-dynamic.html
+    - product: safari
+      url: https://bugs.webkit.org/show_bug.cgi?id=260243
+      results:
+        - test: first-line-opacity-001.html
+          subtest: Test status
+    - product: chrome
+      url: https://crbug.com/922869
+      results:
+        - test: file-selector-button-inherit.html
+    - url: https://crbug.com/1500288
+      label: Meta bug for spelling/grammar
+      results:
+        - test: grammar-error-001.html
+        - test: grammar-spelling-errors-001.html
+        - test: grammar-spelling-errors-002.html
+    - product: chrome
+      url: https://crbug.com/1350475
+      results:
+        - test: highlight-currentcolor-painting-text-shadow-001.html
+        - test: highlight-currentcolor-painting-text-shadow-002.html
+    - product: chrome
+      url: https://crbug.com/1500288
+      results:
+        - test: spelling-error-001.html
+          subtest: Test status
+    - product: chrome
+      url: https://crbug.com/1432038
+      results:
+        - test: svg-text-selection-002.html
+          subtest: Test status
+    - product: chrome
+      url: https://crbug.com/1217745
+      results:
+        - test: active-selection-018.html

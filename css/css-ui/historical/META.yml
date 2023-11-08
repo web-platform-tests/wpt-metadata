@@ -1,15 +1,20 @@
 links:
-- product: firefox
-  results:
-  - subtest: -moz-user-modify is not supported
-    test: moz-user-modify-01.html
-  - subtest: contenteditable="true" doesn't use unsupported -moz-user-modify property
-    test: moz-user-modify-02.html
-  - subtest: contenteditable="plaintext-only" doesn't use unsupported -moz-user-modify
-      property
-    test: moz-user-modify-02.html
-  - subtest: '@supports doesn''t use unsupported -moz-user-modify property'
-    test: moz-user-modify-03.html
-  - subtest: CSS.supports doesn't use unsupported -moz-user-modify property
-    test: moz-user-modify-03.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1788820
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1788820
+      results:
+        - test: moz-user-modify-01.html
+          subtest: -moz-user-modify is not supported
+        - test: moz-user-modify-02.html
+          subtest: contenteditable="true" doesn't use unsupported -moz-user-modify property
+        - test: moz-user-modify-02.html
+          subtest: contenteditable="plaintext-only" doesn't use unsupported -moz-user-modify property
+        - test: moz-user-modify-03.html
+          subtest: '@supports doesn''t use unsupported -moz-user-modify property'
+        - test: moz-user-modify-03.html
+          subtest: CSS.supports doesn't use unsupported -moz-user-modify property
+    - product: safari
+      url: https://bugs.webkit.org/show_bug.cgi?id=52025
+      results:
+        - test: webkit-user-modify-02.html
+        - test: webkit-user-modify-01.html
+        - test: webkit-user-modify-03.html

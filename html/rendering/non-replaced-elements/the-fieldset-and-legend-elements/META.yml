@@ -60,3 +60,43 @@ links:
         - test: fieldset-list-item.html
         - test: legend-list-item-numbering.html
         - test: legend-list-item.html
+    - product: safari
+      url: https://bugs.webkit.org/show_bug.cgi?id=189304
+      results:
+        - test: legend-align.html
+          subtest: div[align=center] legend
+        - test: legend-align.html
+          subtest: div[align=right] legend
+        - test: legend-align.html
+          subtest: 'div[style="text-align: center"] legend'
+        - test: legend-align.html
+          subtest: 'div[style="text-align: center"][align=center] legend'
+        - test: legend-align.html
+          subtest: 'fieldset[dir=rtl] legend[style="text-align: left"]'
+        - test: legend-align-text-align.html
+          subtest: legend[align=left]
+        - test: legend-align-text-align.html
+          subtest: legend[align=center]
+        - test: legend-align-text-align.html
+          subtest: legend[align=right]
+        - test: legend-align-text-align.html
+          subtest: legend[align=justify]
+    - product: safari
+      url: https://bugs.webkit.org/show_bug.cgi?id=189244
+      results:
+        - test: fieldset-content-before-legend.html
+          subtest: fieldset content before legend
+    - product: safari
+      url: https://bugs.webkit.org/show_bug.cgi?id=172718
+      results:
+        - test: legend.html
+          subtest: 'in-body: width'
+        - test: legend.html
+          subtest: 'in-fieldset-descendant: width'
+        - test: legend.html
+          subtest: 'in-fieldset-second-child: width'
+    - product: safari
+      url: https://bugs.webkit.org/show_bug.cgi?id=189617
+      results:
+        - test: fieldset-border-gap-negative-margin.html
+          subtest: Test status

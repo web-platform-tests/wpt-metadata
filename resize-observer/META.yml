@@ -16,3 +16,17 @@ links:
         - test: svg.html
         - test: svg.html
           subtest: guard
+    - product: safari
+      url: https://bugs.webkit.org/show_bug.cgi?id=244141
+      results:
+        - test: observe.html
+          subtest: Harness status
+        - test: observe.html
+          subtest: 'test18: an observation is fired when device-pixel-content-box is being observed'
+    - product: safari
+      url: https://bugs.webkit.org/show_bug.cgi?id=264158
+      results:
+        - test: idlharness.window.html
+          subtest: 'ResizeObserverEntry interface: attribute devicePixelContentBoxSize'
+        - test: idlharness.window.html
+          subtest: 'ResizeObserverEntry interface: entry must inherit property "devicePixelContentBoxSize" with the proper type'

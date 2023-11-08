@@ -121,3 +121,16 @@ links:
       url: https://bugzilla.mozilla.org/show_bug.cgi?id=1841337
       results:
         - test: dialog-backdrop-animation.html
+    - product: safari
+      url: https://bugs.webkit.org/show_bug.cgi?id=259192
+      results:
+        - test: display-none-dont-cancel.tentative.html
+          subtest: display:none animating to display:inline should be inline for the whole animation.
+        - test: display-none-dont-cancel.tentative.html
+          subtest: A CSS variable of display:none animating to display:inline should be inline for the whole animation.
+        - test: display-none-dont-cancel.tentative.html
+          subtest: Animating from display:none to display:none should not cancel the animation.
+        - test: display-none-dont-cancel.tentative.html
+          subtest: Animating from display:none to display:none with an intermediate variable should not cancel the animation.
+        - test: display-none-dont-cancel.tentative.html
+          subtest: Animating a variable of "none" which gets set to display elsewhere should not cancel the animation.

@@ -34,3 +34,13 @@ links:
   - subtest: First rAF
     test: cross-origin-iframe.sub.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1774755
+- product: safari
+  results:
+  - subtest: IntersectionObserver with target in a different window.
+    test: target-in-different-window.html
+  url: https://bugs.webkit.org/show_bug.cgi?id=191558
+- product: firefox
+  results:
+  - subtest: Test scroll margin intersection
+    test: scroll-margin-with-border-outline.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1862880

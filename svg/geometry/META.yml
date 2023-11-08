@@ -3,3 +3,14 @@ links:
       url: https://crbug.com/970944
       results:
         - test: svg-baseval-in-display-none.html
+    - product: safari
+      url: https://bugs.webkit.org/show_bug.cgi?id=194815
+      results:
+        - test: svg-image-intrinsic-size-with-cssstyle-auto.html
+          subtest: <svg:image> 'auto' sizing with default sized svg image viewBox='0 0 400 100', attributes width='60' height='60' and CSS 'width:auto; height:auto'
+        - test: svg-image-intrinsic-size-with-cssstyle-auto.html
+          subtest: <svg:image> 'auto' sizing with svg image width='200' viewBox='0 0 400 100', attributes width='60' height='60' and CSS 'width:auto; height:auto'
+        - test: svg-image-intrinsic-size-with-cssstyle-auto.html
+          subtest: <svg:image> 'auto' sizing with default sized svg image, attributes width='60' height='60' and CSS 'width:auto'
+        - test: svg-image-intrinsic-size-with-cssstyle-auto.html
+          subtest: <svg:image> 'auto' sizing with default sized svg image, attributes width='60' height='60' and CSS 'height:auto'
