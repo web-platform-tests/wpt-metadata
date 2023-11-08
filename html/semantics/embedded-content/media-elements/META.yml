@@ -24,6 +24,13 @@ links:
         - test: src_object_blob.html
         - test: autoplay-allowed-by-feature-policy-attribute-redirect-on-load.https.sub.html
     - product: safari
+      url: https://bugs.webkit.org/show_bug.cgi?id=250871
+      results:
+        - test: historical.html
+          subtest: video.webkitPreservesPitch should not be supported
+        - test: historical.html
+          subtest: audio.webkitPreservesPitch should not be supported
+    - product: safari
       url: https://bugs.webkit.org/show_bug.cgi?id=161861
       results:
         - test: historical.html
