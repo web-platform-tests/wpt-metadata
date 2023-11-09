@@ -12,3 +12,68 @@ links:
       are reported
     test: observable-constructor.any.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1858035
+- product: firefox
+  results:
+  - subtest: Subscriber interface is not constructible
+    test: observable-constructor.any.html
+  - subtest: Observable constructor calls initializer on subscribe
+    test: observable-constructor.any.html
+  - subtest: Observable error path called synchronously
+    test: observable-constructor.any.html
+  - subtest: Observable should error if initializer throws
+    test: observable-constructor.any.html
+  - subtest: Subscription does not emit values after completion
+    test: observable-constructor.any.html
+  - subtest: Subscription does not emit values after error
+    test: observable-constructor.any.html
+  - subtest: Completing or nexting a subscriber after an error does nothing
+    test: observable-constructor.any.html
+  - subtest: Errors pushed to the subscriber that are not handled by the subscription
+      are reported to the global
+    test: observable-constructor.any.html
+  - subtest: Subscription reports errors that are pushed after subscriber is closed
+      by completion
+    test: observable-constructor.any.html
+  - subtest: Errors thrown by initializer function after subscriber is closed by error
+      are reported
+    test: observable-constructor.any.html
+  - subtest: Errors pushed by initializer function after subscriber is closed by error
+      are reported
+    test: observable-constructor.any.html
+  - subtest: Observable constructor
+    test: observable-constructor.any.worker.html
+  - subtest: Subscriber interface is not constructible
+    test: observable-constructor.any.worker.html
+  - subtest: subscribe() can be called with no arguments
+    test: observable-constructor.any.worker.html
+  - subtest: Observable constructor calls initializer on subscribe
+    test: observable-constructor.any.worker.html
+  - subtest: Observable error path called synchronously
+    test: observable-constructor.any.worker.html
+  - subtest: Observable should error if initializer throws
+    test: observable-constructor.any.worker.html
+  - subtest: Subscription does not emit values after completion
+    test: observable-constructor.any.worker.html
+  - subtest: Subscription does not emit values after error
+    test: observable-constructor.any.worker.html
+  - subtest: Completing or nexting a subscriber after an error does nothing
+    test: observable-constructor.any.worker.html
+  - subtest: Errors pushed to the subscriber that are not handled by the subscription
+      are reported to the global
+    test: observable-constructor.any.worker.html
+  - subtest: Errors thrown in the initializer that are not handled by the subscription
+      are reported to the global
+    test: observable-constructor.any.worker.html
+  - subtest: Subscription reports errors that are pushed after subscriber is closed
+      by completion
+    test: observable-constructor.any.worker.html
+  - subtest: Errors thrown by initializer function after subscriber is closed by completion
+      are reported
+    test: observable-constructor.any.worker.html
+  - subtest: Errors thrown by initializer function after subscriber is closed by error
+      are reported
+    test: observable-constructor.any.worker.html
+  - subtest: Errors pushed by initializer function after subscriber is closed by error
+      are reported
+    test: observable-constructor.any.worker.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1863864
