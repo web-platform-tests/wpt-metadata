@@ -1,14 +1,101 @@
 links:
-    - product: deno
-      url: https://github.com/denoland/deno/issues/11731
-      results:
-        - test: general.any.html
-          subtest: response.arrayBuffer() rejects if already aborted
-        - test: general.any.html
-          subtest: response.blob() rejects if already aborted
-        - test: general.any.html
-          subtest: response.formData() rejects if already aborted
-        - test: general.any.html
-          subtest: response.json() rejects if already aborted
-        - test: general.any.html
-          subtest: response.text() rejects if already aborted
+- product: deno
+  results:
+  - subtest: response.arrayBuffer() rejects if already aborted
+    test: general.any.html
+  - subtest: response.blob() rejects if already aborted
+    test: general.any.html
+  - subtest: response.formData() rejects if already aborted
+    test: general.any.html
+  - subtest: response.json() rejects if already aborted
+    test: general.any.html
+  - subtest: response.text() rejects if already aborted
+    test: general.any.html
+  url: https://github.com/denoland/deno/issues/11731
+- product: firefox
+  results:
+  - test: general.any.sharedworker.html
+  - subtest: Underlying connection is closed when aborting after receiving response
+      - no-cors
+    test: general.any.sharedworker.html
+  - subtest: Fetch aborted & connection closed when aborted after calling response.arrayBuffer()
+    test: general.any.sharedworker.html
+  - subtest: Fetch aborted & connection closed when aborted after calling response.blob()
+    test: general.any.sharedworker.html
+  - subtest: Fetch aborted & connection closed when aborted after calling response.formData()
+    test: general.any.sharedworker.html
+  - subtest: Fetch aborted & connection closed when aborted after calling response.json()
+    test: general.any.sharedworker.html
+  - subtest: Fetch aborted & connection closed when aborted after calling response.text()
+    test: general.any.sharedworker.html
+  - subtest: Stream errors once aborted. Underlying connection closed.
+    test: general.any.sharedworker.html
+  - subtest: Stream errors once aborted, after reading. Underlying connection closed.
+    test: general.any.sharedworker.html
+  - subtest: Stream will not error if body is empty. It's closed with an empty queue
+      before it errors.
+    test: general.any.sharedworker.html
+  - test: general.any.html
+  - subtest: Underlying connection is closed when aborting after receiving response
+      - no-cors
+    test: general.any.html
+  - subtest: Fetch aborted & connection closed when aborted after calling response.arrayBuffer()
+    test: general.any.html
+  - subtest: Fetch aborted & connection closed when aborted after calling response.blob()
+    test: general.any.html
+  - subtest: Fetch aborted & connection closed when aborted after calling response.formData()
+    test: general.any.html
+  - subtest: Fetch aborted & connection closed when aborted after calling response.json()
+    test: general.any.html
+  - subtest: Fetch aborted & connection closed when aborted after calling response.text()
+    test: general.any.html
+  - subtest: Stream errors once aborted. Underlying connection closed.
+    test: general.any.html
+  - subtest: Stream errors once aborted, after reading. Underlying connection closed.
+    test: general.any.html
+  - subtest: Stream will not error if body is empty. It's closed with an empty queue
+      before it errors.
+    test: general.any.html
+  - test: general.any.serviceworker.html
+  - subtest: Underlying connection is closed when aborting after receiving response
+      - no-cors
+    test: general.any.serviceworker.html
+  - subtest: Fetch aborted & connection closed when aborted after calling response.arrayBuffer()
+    test: general.any.serviceworker.html
+  - subtest: Fetch aborted & connection closed when aborted after calling response.blob()
+    test: general.any.serviceworker.html
+  - subtest: Fetch aborted & connection closed when aborted after calling response.formData()
+    test: general.any.serviceworker.html
+  - subtest: Fetch aborted & connection closed when aborted after calling response.json()
+    test: general.any.serviceworker.html
+  - subtest: Fetch aborted & connection closed when aborted after calling response.text()
+    test: general.any.serviceworker.html
+  - subtest: Stream errors once aborted. Underlying connection closed.
+    test: general.any.serviceworker.html
+  - subtest: Stream errors once aborted, after reading. Underlying connection closed.
+    test: general.any.serviceworker.html
+  - subtest: Stream will not error if body is empty. It's closed with an empty queue
+      before it errors.
+    test: general.any.serviceworker.html
+  - test: general.any.worker.html
+  - subtest: Underlying connection is closed when aborting after receiving response
+      - no-cors
+    test: general.any.worker.html
+  - subtest: Fetch aborted & connection closed when aborted after calling response.arrayBuffer()
+    test: general.any.worker.html
+  - subtest: Fetch aborted & connection closed when aborted after calling response.blob()
+    test: general.any.worker.html
+  - subtest: Fetch aborted & connection closed when aborted after calling response.formData()
+    test: general.any.worker.html
+  - subtest: Fetch aborted & connection closed when aborted after calling response.json()
+    test: general.any.worker.html
+  - subtest: Fetch aborted & connection closed when aborted after calling response.text()
+    test: general.any.worker.html
+  - subtest: Stream errors once aborted. Underlying connection closed.
+    test: general.any.worker.html
+  - subtest: Stream errors once aborted, after reading. Underlying connection closed.
+    test: general.any.worker.html
+  - subtest: Stream will not error if body is empty. It's closed with an empty queue
+      before it errors.
+    test: general.any.worker.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1864152
