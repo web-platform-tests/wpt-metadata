@@ -1,5 +1,26 @@
 links:
-    - product: chrome
-      url: https://bugs.chromium.org/p/chromium/issues/detail?id=995106
-      results:
-        - test: display-valid.html
+- product: chrome
+  results:
+  - test: display-valid.html
+  url: https://bugs.chromium.org/p/chromium/issues/detail?id=995106
+- product: firefox
+  results:
+  - subtest: e.style['display'] = "flow" should set the property value
+    test: display-valid.html
+  - subtest: e.style['display'] = "flow-root inline" should set the property value
+    test: display-valid.html
+  - subtest: e.style['display'] = "inline flow-root" should set the property value
+    test: display-valid.html
+  - subtest: e.style['display'] = "flex inline" should set the property value
+    test: display-valid.html
+  - subtest: e.style['display'] = "inline flex" should set the property value
+    test: display-valid.html
+  - subtest: e.style['display'] = "grid inline" should set the property value
+    test: display-valid.html
+  - subtest: e.style['display'] = "inline grid" should set the property value
+    test: display-valid.html
+  - subtest: e.style['display'] = "table inline" should set the property value
+    test: display-valid.html
+  - subtest: e.style['display'] = "inline table" should set the property value
+    test: display-valid.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1864082
