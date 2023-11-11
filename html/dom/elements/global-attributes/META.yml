@@ -71,3 +71,8 @@ links:
           subtest: 'Slots: Directionality: dir=auto in shadow tree with Arabic light tree content'
         - test: dir-slots-directionality.html
           subtest: 'Slots: Directionality: dir=auto on slot with Arabic light tree content'
+    - product: safari
+      url: https://bugs.webkit.org/show_bug.cgi?id=263655
+      results:
+        - test: lang-attribute.window.html
+          subtest: unnamespaced lang attribute only works on elements in the HTML namespace
