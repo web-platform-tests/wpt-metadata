@@ -1,134 +1,108 @@
 links:
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1798383
-      results:
-        - test: parsing.html
-          subtest: |-
-            .foo {
-              & { color: green; }
-            }
-        - test: parsing.html
-          subtest: |-
-            .foo {
-              &.bar { color: green; }
-            }
-        - test: parsing.html
-          subtest: |-
-            .foo {
-              & .bar { color: green; }
-            }
-        - test: parsing.html
-          subtest: |-
-            .foo {
-              & > .bar { color: green; }
-            }
-        - test: parsing.html
-          subtest: |-
-            .foo {
-              &:is(.bar, &.baz) { color: green; }
-            }
-        - test: parsing.html
-          subtest: |-
-            .foo, .bar {
-              & + .baz, &.qux { color: green; }
-            }
-        - test: parsing.html
-          subtest: |-
-            .foo {
-              & .bar & .baz & .qux { color: green; }
-            }
-        - test: parsing.html
-          subtest: |-
-            .foo {
-              @media (min-width: 50px) { color: green; }
-            }
-        - test: parsing.html
-          subtest: |-
-            main {
-              & > section, & > article {
-              & > header { color: green; }
-            }
-            }
-        - test: conditional-properties.html
-        - test: conditional-rules.html
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1812484
-      results:
-        - test: parsing.html
-          subtest: |-
-            .foo {
-              .bar& { color: green; }
-            }
-        - test: parsing.html
-          subtest: |-
-            .foo {
-              .bar & { color: green; }
-            }
-        - test: parsing.html
-          subtest: |-
-            .foo {
-              .bar > & { color: green; }
-            }
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1813068
-      results:
-        - test: cssom.html
-          subtest: Simple CSSOM manipulation of subrules
-        - test: cssom.html
-          subtest: Simple CSSOM manipulation of subrules 1
-        - test: cssom.html
-          subtest: Simple CSSOM manipulation of subrules 2
-        - test: cssom.html
-          subtest: Simple CSSOM manipulation of subrules 3
-        - test: cssom.html
-          subtest: Simple CSSOM manipulation of subrules 4
-        - test: cssom.html
-          subtest: Simple CSSOM manipulation of subrules 5
-        - test: cssom.html
-          subtest: Simple CSSOM manipulation of subrules 6
-        - test: cssom.html
-          subtest: Simple CSSOM manipulation of subrules 7
-        - test: cssom.html
-          subtest: Simple CSSOM manipulation of subrules 8
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1814850
-      results:
-        - test: nesting-basic.html
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1823886
-      results:
-        - test: cssom.html
-          subtest: Simple CSSOM manipulation of subrules 9
-        - test: cssom.html
-          subtest: Simple CSSOM manipulation of subrules 10
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1832973
-      results:
-        - test: invalid-inner-rules.html
-          subtest: Simple CSSOM manipulation of subrules
-        - test: invalid-inner-rules.html
-          subtest: Simple CSSOM manipulation of subrules 1
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1839547
-      results:
-        - test: nesting-layer.html
-          subtest: '@layer can be nested'
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1845420
-      results:
-        - test: parsing.html
-          subtest: '.foo { > & .bar { color: green; }}'
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1855736
-      results:
-        - test: cssom.html
-          subtest: Simple CSSOM manipulation of subrules 10
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1855738
-      results:
-        - test: invalidation-003.html
-    - product: safari
-      url: https://bugs.webkit.org/show_bug.cgi?id=259856
-      results:
-        - test: cssom.html
-          subtest: CSSStyleRule is a CSSGroupingRule
+- product: firefox
+  results:
+  - subtest: ".foo {\n  & { color: green; }\n}"
+    test: parsing.html
+  - subtest: ".foo {\n  &.bar { color: green; }\n}"
+    test: parsing.html
+  - subtest: ".foo {\n  & .bar { color: green; }\n}"
+    test: parsing.html
+  - subtest: ".foo {\n  & > .bar { color: green; }\n}"
+    test: parsing.html
+  - subtest: ".foo {\n  &:is(.bar, &.baz) { color: green; }\n}"
+    test: parsing.html
+  - subtest: ".foo, .bar {\n  & + .baz, &.qux { color: green; }\n}"
+    test: parsing.html
+  - subtest: ".foo {\n  & .bar & .baz & .qux { color: green; }\n}"
+    test: parsing.html
+  - subtest: ".foo {\n  @media (min-width: 50px) { color: green; }\n}"
+    test: parsing.html
+  - subtest: "main {\n  & > section, & > article {\n  & > header { color: green; }\n\
+      }\n}"
+    test: parsing.html
+  - test: conditional-properties.html
+  - test: conditional-rules.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1798383
+- product: firefox
+  results:
+  - subtest: ".foo {\n  .bar& { color: green; }\n}"
+    test: parsing.html
+  - subtest: ".foo {\n  .bar & { color: green; }\n}"
+    test: parsing.html
+  - subtest: ".foo {\n  .bar > & { color: green; }\n}"
+    test: parsing.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1812484
+- product: firefox
+  results:
+  - subtest: Simple CSSOM manipulation of subrules
+    test: cssom.html
+  - subtest: Simple CSSOM manipulation of subrules 1
+    test: cssom.html
+  - subtest: Simple CSSOM manipulation of subrules 2
+    test: cssom.html
+  - subtest: Simple CSSOM manipulation of subrules 3
+    test: cssom.html
+  - subtest: Simple CSSOM manipulation of subrules 4
+    test: cssom.html
+  - subtest: Simple CSSOM manipulation of subrules 5
+    test: cssom.html
+  - subtest: Simple CSSOM manipulation of subrules 6
+    test: cssom.html
+  - subtest: Simple CSSOM manipulation of subrules 7
+    test: cssom.html
+  - subtest: Simple CSSOM manipulation of subrules 8
+    test: cssom.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1813068
+- product: firefox
+  results:
+  - test: nesting-basic.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1814850
+- product: firefox
+  results:
+  - subtest: Simple CSSOM manipulation of subrules 9
+    test: cssom.html
+  - subtest: Simple CSSOM manipulation of subrules 10
+    test: cssom.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1823886
+- product: firefox
+  results:
+  - subtest: Simple CSSOM manipulation of subrules
+    test: invalid-inner-rules.html
+  - subtest: Simple CSSOM manipulation of subrules 1
+    test: invalid-inner-rules.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1832973
+- product: firefox
+  results:
+  - subtest: '@layer can be nested'
+    test: nesting-layer.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1839547
+- product: firefox
+  results:
+  - subtest: '.foo { > & .bar { color: green; }}'
+    test: parsing.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1845420
+- product: firefox
+  results:
+  - subtest: Simple CSSOM manipulation of subrules 10
+    test: cssom.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1855736
+- product: firefox
+  results:
+  - test: invalidation-003.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1855738
+- product: safari
+  results:
+  - subtest: CSSStyleRule is a CSSGroupingRule
+    test: cssom.html
+  url: https://bugs.webkit.org/show_bug.cgi?id=259856
+- product: firefox
+  results:
+  - subtest: '.foo { + .bar, .foo, > .baz { color: green; }}'
+    test: parsing.html
+  - subtest: '.foo { .foo { color: green; }}'
+    test: parsing.html
+  - subtest: '.foo { .foo, .foo & { color: green; }}'
+    test: parsing.html
+  - subtest: '.foo { :is(.bar, .baz) { color: green; }}'
+    test: parsing.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1864418
