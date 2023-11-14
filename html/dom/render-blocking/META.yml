@@ -16,3 +16,30 @@ links:
           subtest: Rendering is blocked before render-blocking resources are loaded
         - test: script-inserted-module-script.html
           subtest: Rendering is blocked before render-blocking resources are loaded
+    - product: firefox
+      results:
+      - subtest: Supported tokens of the 'blocking' IDL attribute of the link element
+        test: blocking-idl-attr.html
+      - subtest: Setting the 'blocking' IDL attribute of the link element
+        test: blocking-idl-attr.html
+      - subtest: Supported tokens of the 'blocking' IDL attribute of the script element
+        test: blocking-idl-attr.html
+      - subtest: Setting the 'blocking' IDL attribute of the script element
+        test: blocking-idl-attr.html
+      - subtest: Supported tokens of the 'blocking' IDL attribute of the style element
+        test: blocking-idl-attr.html
+      - subtest: Setting the 'blocking' IDL attribute of the style element
+        test: blocking-idl-attr.html
+      - subtest: Rendering is blocked before render-blocking resources are loaded
+        test: parser-inserted-async-script.html
+      - subtest: Rendering is blocked before render-blocking resources are loaded
+        test: parser-inserted-defer-script.html
+      - subtest: Rendering is blocked before render-blocking resources are loaded
+        test: parser-inserted-module-script.html
+      - subtest: Rendering is blocked before render-blocking resources are loaded
+        test: script-inserted-module-script.html
+      - subtest: Rendering is blocked before render-blocking resources are loaded
+        test: script-inserted-style-element.html
+      - subtest: Rendering is blocked before render-blocking resources are loaded
+        test: script-inserted-stylesheet-link.html
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1864627
