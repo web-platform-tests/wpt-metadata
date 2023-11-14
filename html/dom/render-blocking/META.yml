@@ -1,18 +1,18 @@
 links:
-- product: firefox
-  results:
-  - subtest: Rendering is blocked before render-blocking resources are loaded
-    test: parser-inserted-async-script.tentative.html
-  - subtest: Rendering is blocked before render-blocking resources are loaded
-    test: parser-inserted-defer-script.tentative.html
-  - subtest: Rendering is blocked before render-blocking resources are loaded
-    test: parser-inserted-module-script.tentative.html
-  - subtest: Rendering is blocked before render-blocking resources are loaded
-    test: script-inserted-module-script.tentative.html
-  - subtest: Rendering is blocked before render-blocking resources are loaded
-    test: script-inserted-script.html
-  - subtest: Rendering is blocked before render-blocking resources are loaded
-    test: script-inserted-style-element.tentative.html
-  - subtest: Rendering is blocked before render-blocking resources are loaded
-    test: script-inserted-stylesheet-link.tentative.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1761889
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1761889
+      results:
+        - test: script-inserted-script.html
+          subtest: Rendering is blocked before render-blocking resources are loaded
+        - test: script-inserted-style-element.html
+          subtest: Rendering is blocked before render-blocking resources are loaded
+        - test: parser-inserted-defer-script.html
+          subtest: Rendering is blocked before render-blocking resources are loaded
+        - test: parser-inserted-module-script.html
+          subtest: Rendering is blocked before render-blocking resources are loaded
+        - test: script-inserted-stylesheet-link.html
+          subtest: Rendering is blocked before render-blocking resources are loaded
+        - test: parser-inserted-async-script.html
+          subtest: Rendering is blocked before render-blocking resources are loaded
+        - test: script-inserted-module-script.html
+          subtest: Rendering is blocked before render-blocking resources are loaded
