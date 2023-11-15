@@ -8,3 +8,12 @@ links:
       url: https://bugs.webkit.org/show_bug.cgi?id=203215
       results:
         - test: '*'
+    - product: safari
+      url: https://bugs.webkit.org/show_bug.cgi?id=264852
+      results:
+        - test: storage.https.html
+          subtest: 'Clear backend when ''storage'' is deleted: service workers'
+        - test: storage.https.html
+          subtest: Service worker no longer responds to requests
+        - test: storage.https.html
+          subtest: controllerchange event fires and client no longer has controller
