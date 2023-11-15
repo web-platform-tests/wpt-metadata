@@ -86,3 +86,8 @@ links:
           subtest: rect1
         - test: SVGGraphicsElement.getBBox-02.html
           subtest: SVGGraphicsElement.prototype.getBBox on <tspan>
+    - product: safari
+      url: https://bugs.webkit.org/show_bug.cgi?id=264876
+      results:
+        - test: SVGGeometryElement.getPointAtLength-03.svg
+          subtest: When SVGGeometryElement.getPointAtLength is called with an element that is not in the document, either succeed or throw exception with SVGPathElement
