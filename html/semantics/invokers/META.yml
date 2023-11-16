@@ -19,3 +19,17 @@ links:
   - subtest: invoking (as hidepopover) open popover with preventDefault does not close
     test: invoketarget-on-popover-behavior.tentative.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1861646
+- product: firefox
+  results:
+  - subtest: invoking div with toggleFullscreen action makes div fullscreen
+    test: invoketarget-fullscreen-behavior.tentative.html
+  - subtest: invoking fullscreen div with toggleFullscreen action exits fullscreen
+    test: invoketarget-fullscreen-behavior.tentative.html
+  - subtest: invoking fullscreen div with toggleFullscreen (case-insensitive) action
+      exits fullscreen
+    test: invoketarget-fullscreen-behavior.tentative.html
+  - subtest: invoking div with requestFullscreen action makes div fullscreen
+    test: invoketarget-fullscreen-behavior.tentative.html
+  - subtest: invoking fullscreen div with exitFullscreen action exits fullscreen
+    test: invoketarget-fullscreen-behavior.tentative.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1865054
