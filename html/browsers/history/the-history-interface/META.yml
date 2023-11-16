@@ -1,80 +1,77 @@
 links:
-- product: chrome
-  results:
-  - status: FAIL
-    test: 007.html
-  url: https://bugs.chromium.org/p/chromium/issues/detail?id=592874
-- product: firefox
-  results:
-  - subtest: Traversing the history during beforeunload
-    test: traverse-during-beforeunload.html
-  - subtest: Traversing the history during unload
-    test: traverse-during-unload.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1710538
-- product: firefox
-  results:
-  - subtest: http://web-platform.test:8000/common/blank.html to blob:(a blob URL for
-      this origin) should not work
-    test: history_pushstate_url_rewriting.html
-  - subtest: http://web-platform.test:8000/common/blank.html to about:blank should
-      not work
-    test: history_pushstate_url_rewriting.html
-  - subtest: http://web-platform.test:8000/common/blank.html to about:srcdoc should
-      not work
-    test: history_pushstate_url_rewriting.html
-  - subtest: blob:(a blob URL for this origin) to blob:(a blob URL for this origin)
-      should  work
-    test: history_pushstate_url_rewriting.html
-  - subtest: blob:(a blob URL for this origin) to blob:(a blob URL for this origin)#newhash
-      should  work
-    test: history_pushstate_url_rewriting.html
-  - subtest: blob:(a blob URL for this origin) to blob:newpath should not work
-    test: history_pushstate_url_rewriting.html
-  - subtest: about:blank to about:blank should  work
-    test: history_pushstate_url_rewriting.html
-  - subtest: about:blank to about:srcdoc should not work
-    test: history_pushstate_url_rewriting.html
-  - subtest: about:blank to about:blank?newsearch should not work
-    test: history_pushstate_url_rewriting.html
-  - subtest: about:blank to about:blank#newhash should  work
-    test: history_pushstate_url_rewriting.html
-  - subtest: about:blank to http://web-platform.test:8000/blank should not work
-    test: history_pushstate_url_rewriting.html
-  - subtest: http://web-platform.test:8000/common/blank.html to javascript:'foo' should
-      not work
-    test: history_pushstate_url_rewriting.html
-  - subtest: javascript:'foo' to javascript:'foo' should not work
-    test: history_pushstate_url_rewriting.html
-  - subtest: javascript:'foo' to javascript:'foo'?newsearch should not work
-    test: history_pushstate_url_rewriting.html
-  - subtest: javascript:'foo' to javascript:'foo'#newhash should not work
-    test: history_pushstate_url_rewriting.html
-  - subtest: about:srcdoc to about:srcdoc should  work
-    test: history_pushstate_url_rewriting.html
-  - subtest: about:srcdoc to about:srcdoc?newsearch should not work
-    test: history_pushstate_url_rewriting.html
-  - subtest: about:srcdoc to about:srcdoc#newhash should  work
-    test: history_pushstate_url_rewriting.html
-  - subtest: about:srcdoc to http://web-platform.test:8000/srcdoc should not work
-    test: history_pushstate_url_rewriting.html
-  - subtest: data:(script to run this test) to data:(script to run this test) should  work
-    test: history_pushstate_url_rewriting.html
-  - subtest: data:(script to run this test) to data:(script to run this test)#newhash
-      should  work
-    test: history_pushstate_url_rewriting.html
-  - subtest: data:(script to run this test) to data:newpath should not work
-    test: history_pushstate_url_rewriting.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1729992
-- product: firefox
-  results:
-  - subtest: history properties should throw SecurityError when not in a fully active
-      Document
-    test: history_properties_only_fully_active.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1788586
-- product: firefox
-  results:
-  - subtest: Navigating from the initial about:blank must replace window.history
-    test: history-associated-with-document.window.html
-  - subtest: Discarding the browsing context must not change window.history
-    test: history-associated-with-document.window.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1794786
+    - product: chrome
+      url: https://bugs.chromium.org/p/chromium/issues/detail?id=592874
+      results:
+        - test: 007.html
+          status: FAIL
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1710538
+      results:
+        - test: traverse-during-beforeunload.html
+          subtest: Traversing the history during beforeunload
+        - test: traverse-during-unload.html
+          subtest: Traversing the history during unload
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1729992
+      results:
+        - test: history_pushstate_url_rewriting.html
+          subtest: http://web-platform.test:8000/common/blank.html to blob:(a blob URL for this origin) should not work
+        - test: history_pushstate_url_rewriting.html
+          subtest: http://web-platform.test:8000/common/blank.html to about:blank should not work
+        - test: history_pushstate_url_rewriting.html
+          subtest: http://web-platform.test:8000/common/blank.html to about:srcdoc should not work
+        - test: history_pushstate_url_rewriting.html
+          subtest: blob:(a blob URL for this origin) to blob:(a blob URL for this origin) should  work
+        - test: history_pushstate_url_rewriting.html
+          subtest: blob:(a blob URL for this origin) to blob:(a blob URL for this origin)#newhash should  work
+        - test: history_pushstate_url_rewriting.html
+          subtest: blob:(a blob URL for this origin) to blob:newpath should not work
+        - test: history_pushstate_url_rewriting.html
+          subtest: about:blank to about:blank should  work
+        - test: history_pushstate_url_rewriting.html
+          subtest: about:blank to about:srcdoc should not work
+        - test: history_pushstate_url_rewriting.html
+          subtest: about:blank to about:blank?newsearch should not work
+        - test: history_pushstate_url_rewriting.html
+          subtest: about:blank to about:blank#newhash should  work
+        - test: history_pushstate_url_rewriting.html
+          subtest: about:blank to http://web-platform.test:8000/blank should not work
+        - test: history_pushstate_url_rewriting.html
+          subtest: http://web-platform.test:8000/common/blank.html to javascript:'foo' should not work
+        - test: history_pushstate_url_rewriting.html
+          subtest: javascript:'foo' to javascript:'foo' should not work
+        - test: history_pushstate_url_rewriting.html
+          subtest: javascript:'foo' to javascript:'foo'?newsearch should not work
+        - test: history_pushstate_url_rewriting.html
+          subtest: javascript:'foo' to javascript:'foo'#newhash should not work
+        - test: history_pushstate_url_rewriting.html
+          subtest: about:srcdoc to about:srcdoc should  work
+        - test: history_pushstate_url_rewriting.html
+          subtest: about:srcdoc to about:srcdoc?newsearch should not work
+        - test: history_pushstate_url_rewriting.html
+          subtest: about:srcdoc to about:srcdoc#newhash should  work
+        - test: history_pushstate_url_rewriting.html
+          subtest: about:srcdoc to http://web-platform.test:8000/srcdoc should not work
+        - test: history_pushstate_url_rewriting.html
+          subtest: data:(script to run this test) to data:(script to run this test) should  work
+        - test: history_pushstate_url_rewriting.html
+          subtest: data:(script to run this test) to data:(script to run this test)#newhash should  work
+        - test: history_pushstate_url_rewriting.html
+          subtest: data:(script to run this test) to data:newpath should not work
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1788586
+      results:
+        - test: history_properties_only_fully_active.html
+          subtest: history properties should throw SecurityError when not in a fully active Document
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1794786
+      results:
+        - test: history-associated-with-document.window.html
+          subtest: Navigating from the initial about:blank must replace window.history
+        - test: history-associated-with-document.window.html
+          subtest: Discarding the browsing context must not change window.history
+    - product: safari
+      url: https://bugs.webkit.org/show_bug.cgi?id=264962
+      results:
+        - test: history_properties_only_fully_active.html
+          subtest: history properties should throw SecurityError when not in a fully active Document
