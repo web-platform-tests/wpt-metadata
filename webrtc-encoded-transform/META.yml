@@ -45,3 +45,12 @@ links:
           subtest: 'RTCEncodedAudioFrame interface: attribute data'
         - test: idlharness.https.window.html
           subtest: 'RTCEncodedAudioFrame interface: operation getMetadata()'
+    - product: safari
+      url: https://bugs.webkit.org/show_bug.cgi?id=264905
+      results:
+        - test: idlharness.https.window.html
+          subtest: 'RTCRtpScriptTransform interface: existence and properties of interface object'
+        - test: idlharness.https.window.html
+          subtest: RTCRtpScriptTransform interface object length
+        - test: idlharness.https.window.html
+          subtest: 'RTCRtpScriptTransform interface: existence and properties of interface prototype object'
