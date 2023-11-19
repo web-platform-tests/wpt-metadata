@@ -1059,3 +1059,8 @@ links:
           subtest: 'expression_should_be_unknown: min-resolution: -3dpi'
         - test: test_media_queries.html
           subtest: 'expression_should_be_unknown: max-resolution: -3dpi'
+    - product: safari
+      url: https://bugs.webkit.org/show_bug.cgi?id=249445
+      results:
+        - test: prefers-contrast.html
+          subtest: 'Should be known: ''(prefers-contrast: custom)'''
