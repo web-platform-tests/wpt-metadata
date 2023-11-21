@@ -96,3 +96,28 @@ links:
       pushes error
     test: observable-constructor.any.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1864421
+- product: firefox
+  results:
+  - subtest: Subscription is inactive after complete()
+    test: observable-constructor.any.worker.html
+  - subtest: Subscription is inactive after error()
+    test: observable-constructor.any.worker.html
+  - subtest: Subscriber#signal is not the same AbortSignal as the one passed into
+      `subscribe()`
+    test: observable-constructor.any.worker.html
+  - subtest: Subscriber#complete() cannot re-entrantly invoke itself
+    test: observable-constructor.any.worker.html
+  - subtest: Subscriber#error() cannot re-entrantly invoke itself
+    test: observable-constructor.any.worker.html
+  - subtest: Subscription is inactive after complete()
+    test: observable-constructor.any.html
+  - subtest: Subscription is inactive after error()
+    test: observable-constructor.any.html
+  - subtest: Subscriber#signal is not the same AbortSignal as the one passed into
+      `subscribe()`
+    test: observable-constructor.any.html
+  - subtest: Subscriber#complete() cannot re-entrantly invoke itself
+    test: observable-constructor.any.html
+  - subtest: Subscriber#error() cannot re-entrantly invoke itself
+    test: observable-constructor.any.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1865858
