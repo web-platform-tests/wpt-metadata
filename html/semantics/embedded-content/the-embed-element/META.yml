@@ -12,3 +12,10 @@ links:
       results:
         - test: embed-in-object-fallback-2.html
         - test: embed-represent-nothing-04.html
+    - product: safari
+      url: https://bugs.webkit.org/show_bug.cgi?id=214357
+      results:
+        - test: embed-network-error.sub.html
+          subtest: 'new embed: nonexistent host'
+        - test: embed-network-error.sub.html
+          subtest: 'navigating an existing embed: nonexistent host'
