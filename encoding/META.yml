@@ -86,3 +86,18 @@ links:
       url: https://crbug.com/1281880
       results:
         - test: idlharness-shadowrealm.window.html
+    - product: safari
+      url: https://bugs.webkit.org/show_bug.cgi?id=265261
+      results:
+        - test: unsupported-labels.window.html
+          subtest: euc-tw is not supported by the Encoding Standard
+        - test: unsupported-labels.window.html
+          subtest: windows-936-2000 is not supported by the Encoding Standard
+        - test: unsupported-labels.window.html
+          subtest: x-mac-ce is not supported by the Encoding Standard
+        - test: unsupported-labels.window.html
+          subtest: x-mac-centraleurroman is not supported by the Encoding Standard
+        - test: unsupported-labels.window.html
+          subtest: x-mac-greek is not supported by the Encoding Standard
+        - test: unsupported-labels.window.html
+          subtest: x-mac-turkish is not supported by the Encoding Standard
