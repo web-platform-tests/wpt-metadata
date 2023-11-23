@@ -145,3 +145,47 @@ links:
   - test: block-with-overflowing-text.html
   - test: span-with-overflowing-text.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1863822
+- product: firefox
+  results:
+  - subtest: incorrect UA animations for root transition
+    test: group-animation-for-root-transition.html
+  - subtest: :only-child should not match because ::view-transition-group is generated
+      for multiple elements
+    test: only-child-group.html
+  - subtest: :only-child should match because ::view-transition-group is generated
+      for sub element only
+    test: only-child-group.html
+  - subtest: :only-child should not match because ::view-transition-group is generated
+      for multiple sub elements
+    test: only-child-group.html
+  - subtest: :only-child should always match for ::view-transition-image-pair
+    test: only-child-image-pair.html
+  - subtest: :only-child should not match because ::view-transition-old is generated
+      (element to root)
+    test: only-child-new.html
+  - subtest: :only-child should match because ::view-transition-old is not generated
+      (none to element)
+    test: only-child-new.html
+  - subtest: :only-child should not match because ::view-transition-old is generated
+      (root to element)
+    test: only-child-new.html
+  - subtest: :only-child should not match because ::view-transition-old is generated
+      (element to element)
+    test: only-child-new.html
+  - subtest: :only-child should not match because ::view-transition-new is generated
+      (root to element)
+    test: only-child-old.html
+  - subtest: :only-child should match because ::view-transition-new is not generated
+      (element to none)
+    test: only-child-old.html
+  - subtest: :only-child should not match because ::view-transition-new is generated
+      (element to root)
+    test: only-child-old.html
+  - subtest: :only-child should not match because ::view-transition-new is generated
+      (element to element)
+    test: only-child-old.html
+  - subtest: :only-child is not supported on view-transition
+    test: only-child-on-root-element-with-view-transition.html
+  - subtest: :only-child is not supported on view-transition
+    test: only-child-view-transition.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1866380
