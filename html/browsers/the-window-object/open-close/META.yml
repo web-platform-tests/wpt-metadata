@@ -1,75 +1,86 @@
 links:
-- product: firefox
-  results:
-  - test: no_window_open_when_term_nesting_level_nonzero.window.html
-  - subtest: no popups with frame navigation
-    test: no_window_open_when_term_nesting_level_nonzero.window.html
-  - subtest: no popups from synchronously reachable window
-    test: no_window_open_when_term_nesting_level_nonzero.window.html
-  - subtest: features "left=105^4" should set "left=105"
-    test: open-features-non-integer-left.html
-  - subtest: features "left=105*3" should set "left=105"
-    test: open-features-non-integer-left.html
-  - subtest: features "left=105/5" should set "left=105"
-    test: open-features-non-integer-left.html
-  - subtest: features "left=105  " should set "left=105"
-    test: open-features-non-integer-left.html
-  - subtest: features "left=105e1" should set "left=105"
-    test: open-features-non-integer-left.html
-  - subtest: features "left=105e-1" should set "left=105"
-    test: open-features-non-integer-left.html
-  - subtest: features "screenx=105^4" should set "left=105"
-    test: open-features-non-integer-screenx.html
-  - subtest: features "screenx=105*3" should set "left=105"
-    test: open-features-non-integer-screenx.html
-  - subtest: features "screenx=105/5" should set "left=105"
-    test: open-features-non-integer-screenx.html
-  - subtest: features "screenx=105  " should set "left=105"
-    test: open-features-non-integer-screenx.html
-  - subtest: features "screenx=105e-1" should set "left=105"
-    test: open-features-non-integer-screenx.html
-  - subtest: features "screeny=405LLl" should set "height=405"
-    test: open-features-non-integer-screeny.html
-  - subtest: features "screeny=405^4" should set "height=405"
-    test: open-features-non-integer-screeny.html
-  - subtest: features "screeny=405*3" should set "height=405"
-    test: open-features-non-integer-screeny.html
-  - subtest: features "screeny=405/5" should set "height=405"
-    test: open-features-non-integer-screeny.html
-  - subtest: features "screeny=405  " should set "height=405"
-    test: open-features-non-integer-screeny.html
-  - subtest: features "screeny=405e1" should set "height=405"
-    test: open-features-non-integer-screeny.html
-  - subtest: features "screeny=405e-1" should set "height=405"
-    test: open-features-non-integer-screeny.html
-  - subtest: features "top=105^4" should set "top=105"
-    test: open-features-non-integer-top.html
-  - subtest: features "top=105*3" should set "top=105"
-    test: open-features-non-integer-top.html
-  - subtest: features "top=105/5" should set "top=105"
-    test: open-features-non-integer-top.html
-  - subtest: features "top=105  " should set "top=105"
-    test: open-features-non-integer-top.html
-  - subtest: features "top=105e1" should set "top=105"
-    test: open-features-non-integer-top.html
-  - subtest: features "top=105e-1" should set "top=105"
-    test: open-features-non-integer-top.html
-  - subtest: '"screeny==142" should set top position of opened window'
-    test: open-features-tokenization-screenx-screeny.html
-  - subtest: '"\nscreeny= 142" should set top position of opened window'
-    test: open-features-tokenization-screenx-screeny.html
-  - subtest: '",screeny=142,," should set top position of opened window'
-    test: open-features-tokenization-screenx-screeny.html
-  - subtest: '"SCREENY=142" should set top position of opened window'
-    test: open-features-tokenization-screenx-screeny.html
-  - subtest: '",top=142,," should set top position of opened window'
-    test: open-features-tokenization-top-left.html
-  - subtest: '"TOP=142" should set top position of opened window'
-    test: open-features-tokenization-top-left.html
-  - subtest: '"top=152,,left=152," should set top and left position of opened window'
-    test: open-features-tokenization-top-left.html
-  - subtest: '"top=152==left=152" should set top and left position of opened window'
-    test: open-features-tokenization-top-left.html
-  - subtest: '",,top= 152, left=152" should set top and left position of opened window'
-    test: open-features-tokenization-top-left.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1764298
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1764298
+      results:
+        - test: no_window_open_when_term_nesting_level_nonzero.window.html
+        - test: no_window_open_when_term_nesting_level_nonzero.window.html
+          subtest: no popups with frame navigation
+        - test: no_window_open_when_term_nesting_level_nonzero.window.html
+          subtest: no popups from synchronously reachable window
+        - test: open-features-non-integer-left.html
+          subtest: features "left=105^4" should set "left=105"
+        - test: open-features-non-integer-left.html
+          subtest: features "left=105*3" should set "left=105"
+        - test: open-features-non-integer-left.html
+          subtest: features "left=105/5" should set "left=105"
+        - test: open-features-non-integer-left.html
+          subtest: features "left=105  " should set "left=105"
+        - test: open-features-non-integer-left.html
+          subtest: features "left=105e1" should set "left=105"
+        - test: open-features-non-integer-left.html
+          subtest: features "left=105e-1" should set "left=105"
+        - test: open-features-non-integer-screenx.html
+          subtest: features "screenx=105^4" should set "left=105"
+        - test: open-features-non-integer-screenx.html
+          subtest: features "screenx=105*3" should set "left=105"
+        - test: open-features-non-integer-screenx.html
+          subtest: features "screenx=105/5" should set "left=105"
+        - test: open-features-non-integer-screenx.html
+          subtest: features "screenx=105  " should set "left=105"
+        - test: open-features-non-integer-screenx.html
+          subtest: features "screenx=105e-1" should set "left=105"
+        - test: open-features-non-integer-screeny.html
+          subtest: features "screeny=405LLl" should set "height=405"
+        - test: open-features-non-integer-screeny.html
+          subtest: features "screeny=405^4" should set "height=405"
+        - test: open-features-non-integer-screeny.html
+          subtest: features "screeny=405*3" should set "height=405"
+        - test: open-features-non-integer-screeny.html
+          subtest: features "screeny=405/5" should set "height=405"
+        - test: open-features-non-integer-screeny.html
+          subtest: features "screeny=405  " should set "height=405"
+        - test: open-features-non-integer-screeny.html
+          subtest: features "screeny=405e1" should set "height=405"
+        - test: open-features-non-integer-screeny.html
+          subtest: features "screeny=405e-1" should set "height=405"
+        - test: open-features-non-integer-top.html
+          subtest: features "top=105^4" should set "top=105"
+        - test: open-features-non-integer-top.html
+          subtest: features "top=105*3" should set "top=105"
+        - test: open-features-non-integer-top.html
+          subtest: features "top=105/5" should set "top=105"
+        - test: open-features-non-integer-top.html
+          subtest: features "top=105  " should set "top=105"
+        - test: open-features-non-integer-top.html
+          subtest: features "top=105e1" should set "top=105"
+        - test: open-features-non-integer-top.html
+          subtest: features "top=105e-1" should set "top=105"
+        - test: open-features-tokenization-screenx-screeny.html
+          subtest: '"screeny==142" should set top position of opened window'
+        - test: open-features-tokenization-screenx-screeny.html
+          subtest: '"\nscreeny= 142" should set top position of opened window'
+        - test: open-features-tokenization-screenx-screeny.html
+          subtest: '",screeny=142,," should set top position of opened window'
+        - test: open-features-tokenization-screenx-screeny.html
+          subtest: '"SCREENY=142" should set top position of opened window'
+        - test: open-features-tokenization-top-left.html
+          subtest: '",top=142,," should set top position of opened window'
+        - test: open-features-tokenization-top-left.html
+          subtest: '"TOP=142" should set top position of opened window'
+        - test: open-features-tokenization-top-left.html
+          subtest: '"top=152,,left=152," should set top and left position of opened window'
+        - test: open-features-tokenization-top-left.html
+          subtest: '"top=152==left=152" should set top and left position of opened window'
+        - test: open-features-tokenization-top-left.html
+          subtest: '",,top= 152, left=152" should set top and left position of opened window'
+    - product: safari
+      url: https://bugs.webkit.org/show_bug.cgi?id=191127
+      results:
+        - test: no_window_open_when_term_nesting_level_nonzero.window.html
+          subtest: no popups from synchronously reachable window
+        - test: no_window_open_when_term_nesting_level_nonzero.window.html
+          subtest: no popups with frame navigation
+        - test: no_window_open_when_term_nesting_level_nonzero.window.html
+          subtest: no popups from another synchronously reachable window
+        - test: no_window_open_when_term_nesting_level_nonzero.window.html
+          subtest: Harness status
