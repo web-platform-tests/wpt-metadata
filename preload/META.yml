@@ -199,3 +199,8 @@ links:
           subtest: Changing a preload "as" from a previously non-matching destination should trigger a fetch
         - test: preload-time-to-fetch.https.html
           subtest: Removing a preload matching "type" should not trigger a fetch
+    - product: firefox
+      url: "1743764"
+      results:
+        - test: preload-resource-match.https.html
+          subtest: Loading font (same-origin) with link (same-origin) should reuse the preloaded response
