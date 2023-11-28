@@ -162,3 +162,10 @@ links:
           subtest: 'Window interface: calling resizeTo(long, long) on window with too few arguments must throw TypeError'
         - test: idlharness.html
           subtest: 'Window interface: calling resizeBy(long, long) on window with too few arguments must throw TypeError'
+    - product: safari
+      url: caretPositionFromPoint
+      results:
+        - test: idlharness.html
+          subtest: 'Document interface: operation caretPositionFromPoint(double, double)'
+        - test: idlharness.html
+          subtest: 'Document interface: calling caretPositionFromPoint(double, double) on document with too few arguments must throw TypeError'
