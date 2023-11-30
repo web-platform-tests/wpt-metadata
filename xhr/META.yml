@@ -1,111 +1,140 @@
 links:
-- product: chrome
-  results:
-  - subtest: 'XMLHttpRequest: setRequestHeader() - headers that are allowed (User-Agent)'
-    test: setrequestheader-header-allowed.htm
-  url: https://crbug.com/571722
-- product: webkitgtk
-  results:
-  - status: FAIL
-    test: header-user-agent-sync.htm
-  url: https://bugs.webkit.org/show_bug.cgi?id=209801
-- product: chrome
-  results:
-  - status: FAIL
-    test: responseXML-unavailable-in-worker.html
-  - status: FAIL
-    test: send-content-type-charset.htm
-  - status: FAIL
-    test: responsetype.any.worker.html
-  - status: FAIL
-    test: send-authentication-cors-setrequestheader-no-cred.htm
-  - status: FAIL
-    test: event-readystatechange-loaded.any.html
-  - status: FAIL
-    test: open-during-abort-processing.htm
-  - status: FAIL
-    test: event-readystatechange-loaded.any.worker.html
-  - status: FAIL
-    test: abort-after-send.any.html
-  - status: FAIL
-    test: response-data-progress.htm
-  - status: FAIL
-    test: responseType-document-in-worker.html
-  - status: FAIL
-    test: setrequestheader-combining.window.html
-  - status: FAIL
-    test: idlharness.any.worker.html
-  - status: FAIL
-    test: responsexml-media-type.htm
-  url: https://crbug.com/651750
-- product: chrome
-  results:
-  - status: FAIL
-    test: send-redirect-to-cors.htm
-  url: https://crbug.com/787704
-- product: chrome
-  results:
-  - status: FAIL
-    test: overridemimetype-blob.html
-  url: https://crbug.com/699085
-- product: chrome
-  results:
-  - status: FAIL
-    test: response-json.htm
-  url: https://crbug.com/588103
-- product: chrome
-  results:
-  - test: open-url-multi-window-4.htm
-  url: https://crbug.com/881180
-- product: firefox
-  results:
-  - test: abort-after-receive.any.worker.html
-  - test: abort-after-send.any.worker.html
-  - test: abort-during-upload.any.worker.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1842970
-- product: firefox
-  results:
-  - test: status.h2.window.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1397646
-- product: firefox
-  results:
-  - test: send-sync-blocks-async.htm
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=697151
-- product: firefox
-  results:
-  - test: open-url-multi-window-6.htm
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1362343
-- product: firefox
-  results:
-  - test: send-sync-blocks-async.htm
-  - test: open-url-multi-window-4.htm
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1366966
-- product: firefox
-  results:
-  - test: sync-xhr-supported-by-feature-policy.html
-  - test: xmlhttprequest-sync-default-feature-policy.sub.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1442689
-- product: firefox
-  results:
-  - test: access-control-preflight-credential-async.htm
-  - test: access-control-preflight-credential-sync.htm
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=580353
-- product: firefox
-  results:
-  - test: headers-normalize-response.htm
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1453318
-- product: firefox
-  results:
-  - test: getallresponseheaders.htm
-  - test: getresponseheader.any.html
-  - test: getresponseheader.any.worker.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1697421
-- product: firefox
-  results:
-  - test: xhr-timeout-longtask.any.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1846092
-- product: firefox
-  results:
-  - subtest: 'XMLHttpRequest: send() - Redirects (basics) (300 does not redirect)'
-    test: send-redirect.htm
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1854695
+    - product: chrome
+      url: https://crbug.com/571722
+      results:
+        - test: setrequestheader-header-allowed.htm
+          subtest: 'XMLHttpRequest: setRequestHeader() - headers that are allowed (User-Agent)'
+    - product: webkitgtk
+      url: https://bugs.webkit.org/show_bug.cgi?id=209801
+      results:
+        - test: header-user-agent-sync.htm
+          status: FAIL
+    - product: chrome
+      url: https://crbug.com/651750
+      results:
+        - test: responseXML-unavailable-in-worker.html
+          status: FAIL
+        - test: send-content-type-charset.htm
+          status: FAIL
+        - test: responsetype.any.worker.html
+          status: FAIL
+        - test: send-authentication-cors-setrequestheader-no-cred.htm
+          status: FAIL
+        - test: event-readystatechange-loaded.any.html
+          status: FAIL
+        - test: open-during-abort-processing.htm
+          status: FAIL
+        - test: event-readystatechange-loaded.any.worker.html
+          status: FAIL
+        - test: abort-after-send.any.html
+          status: FAIL
+        - test: response-data-progress.htm
+          status: FAIL
+        - test: responseType-document-in-worker.html
+          status: FAIL
+        - test: setrequestheader-combining.window.html
+          status: FAIL
+        - test: idlharness.any.worker.html
+          status: FAIL
+        - test: responsexml-media-type.htm
+          status: FAIL
+    - product: chrome
+      url: https://crbug.com/787704
+      results:
+        - test: send-redirect-to-cors.htm
+          status: FAIL
+    - product: chrome
+      url: https://crbug.com/699085
+      results:
+        - test: overridemimetype-blob.html
+          status: FAIL
+    - product: chrome
+      url: https://crbug.com/588103
+      results:
+        - test: response-json.htm
+          status: FAIL
+    - product: chrome
+      url: https://crbug.com/881180
+      results:
+        - test: open-url-multi-window-4.htm
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1842970
+      results:
+        - test: abort-after-receive.any.worker.html
+        - test: abort-after-send.any.worker.html
+        - test: abort-during-upload.any.worker.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1397646
+      results:
+        - test: status.h2.window.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=697151
+      results:
+        - test: send-sync-blocks-async.htm
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1362343
+      results:
+        - test: open-url-multi-window-6.htm
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1366966
+      results:
+        - test: send-sync-blocks-async.htm
+        - test: open-url-multi-window-4.htm
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1442689
+      results:
+        - test: sync-xhr-supported-by-feature-policy.html
+        - test: xmlhttprequest-sync-default-feature-policy.sub.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=580353
+      results:
+        - test: access-control-preflight-credential-async.htm
+        - test: access-control-preflight-credential-sync.htm
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1453318
+      results:
+        - test: headers-normalize-response.htm
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1697421
+      results:
+        - test: getallresponseheaders.htm
+        - test: getresponseheader.any.html
+        - test: getresponseheader.any.worker.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1846092
+      results:
+        - test: xhr-timeout-longtask.any.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1854695
+      results:
+        - test: send-redirect.htm
+          subtest: 'XMLHttpRequest: send() - Redirects (basics) (300 does not redirect)'
+    - product: safari
+      url: https://bugs.webkit.org/show_bug.cgi?id=254864
+      results:
+        - test: send-data-sharedarraybuffer.any.worker.html
+          subtest: sending a SharedArrayBuffer
+        - test: send-data-sharedarraybuffer.any.worker.html
+          subtest: sending a Int8Array backed by a SharedArrayBuffer
+        - test: send-data-sharedarraybuffer.any.worker.html
+          subtest: sending a Uint8Array backed by a SharedArrayBuffer
+        - test: send-data-sharedarraybuffer.any.worker.html
+          subtest: sending a Uint8ClampedArray backed by a SharedArrayBuffer
+        - test: send-data-sharedarraybuffer.any.worker.html
+          subtest: sending a Uint16Array backed by a SharedArrayBuffer
+        - test: send-data-sharedarraybuffer.any.worker.html
+          subtest: sending a Int16Array backed by a SharedArrayBuffer
+        - test: send-data-sharedarraybuffer.any.worker.html
+          subtest: sending a BigInt64Array backed by a SharedArrayBuffer
+        - test: send-data-sharedarraybuffer.any.worker.html
+          subtest: sending a Int32Array backed by a SharedArrayBuffer
+        - test: send-data-sharedarraybuffer.any.worker.html
+          subtest: sending a Uint32Array backed by a SharedArrayBuffer
+        - test: send-data-sharedarraybuffer.any.worker.html
+          subtest: sending a Float32Array backed by a SharedArrayBuffer
+        - test: send-data-sharedarraybuffer.any.worker.html
+          subtest: sending a BigUint64Array backed by a SharedArrayBuffer
+        - test: send-data-sharedarraybuffer.any.worker.html
+          subtest: sending a DataView backed by a SharedArrayBuffer
+        - test: send-data-sharedarraybuffer.any.worker.html
+          subtest: sending a Float64Array backed by a SharedArrayBuffer
