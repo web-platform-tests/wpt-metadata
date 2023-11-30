@@ -57,3 +57,10 @@ links:
       results:
         - test: input-events-get-target-ranges-non-collapsed-selection.tentative.html?Backspace
         - test: input-events-get-target-ranges-non-collapsed-selection.tentative.html?Delete
+    - product: safari
+      url: https://bugs.webkit.org/show_bug.cgi?id=258838
+      results:
+        - test: input-events-get-target-ranges-during-and-after-dispatch.tentative.html
+          subtest: Check consistency of getTargetRanges() result between before and after changing selection in an event listener
+        - test: input-events-get-target-ranges-during-and-after-dispatch.tentative.html
+          subtest: The result of getTargetRanges() of beforeinput event should be fixed at being dispatched
