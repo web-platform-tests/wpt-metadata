@@ -262,3 +262,9 @@ links:
           subtest: 'PointerEvent interface: operation getCoalescedEvents()'
         - test: idlharness.https.window.html
           subtest: 'PointerEvent interface: new PointerEvent("type") must inherit property "getCoalescedEvents()" with the proper type'
+    - product: safari
+      url: https://bugs.webkit.org/show_bug.cgi?id=264002
+      results:
+        - test: predicted_events_attributes.html?mouse
+        - test: predicted_events_attributes.html?pen
+        - test: predicted_events_attributes.html?touch
