@@ -20,19 +20,20 @@ links:
           subtest: If the original intended offset is valid as making a snap area cover thesnapport, and there's no other snap offset in between, use the originalintended offset
         - test: keyboard.html
           subtest: If there is no valid snap offset on the arrow key's direction other than the current offset, and the scroll-snap-type is mandatory, stay at the current offset.
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1744876
-      results:
-        - test: snap-area-overflow-boundary.html
-    - label: interop-2022-scrolling
+    - url: ""
+      label: interop-2022-scrolling
       results:
         - test: keyboard.html
-        - test: snap-area-overflow-boundary.html
-    - product: chrome
-      url: https://bugs.chromium.org/p/chromium/issues/detail?id=1325838
-      results:
-        - test: snap-area-overflow-boundary.html
+        - test: snap-area-overflow-boundary-viewport-covering.tentative.html
     - product: chrome
       url: https://bugs.chromium.org/p/chromium/issues/detail?id=1325843
       results:
         - test: mouse-wheel.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1744876
+      results:
+        - test: snap-area-overflow-boundary-viewport-covering.tentative.html
+    - product: chrome
+      url: https://bugs.chromium.org/p/chromium/issues/detail?id=1325838
+      results:
+        - test: snap-area-overflow-boundary-viewport-covering.tentative.html
