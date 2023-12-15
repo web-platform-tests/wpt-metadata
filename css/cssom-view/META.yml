@@ -152,6 +152,17 @@ links:
         - test: screen-detached-frame.html
           subtest: Window.screen on detached frame
     - product: safari
+      url: https://bugs.webkit.org/show_bug.cgi?id=265115
+      results:
+        - test: idlharness.html
+          subtest: 'Window interface: calling moveBy(long, long) on window with too few arguments must throw TypeError'
+        - test: idlharness.html
+          subtest: 'Window interface: calling moveTo(long, long) on window with too few arguments must throw TypeError'
+        - test: idlharness.html
+          subtest: 'Window interface: operation moveBy(long, long)'
+        - test: idlharness.html
+          subtest: 'Window interface: operation moveTo(long, long)'
+    - product: safari
       url: https://bugs.webkit.org/show_bug.cgi?id=265411
       results:
         - test: idlharness.html
