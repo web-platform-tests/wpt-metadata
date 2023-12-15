@@ -8,3 +8,12 @@ links:
       results:
         - test: shape-outside-valid.html
           subtest: e.style['shape-outside'] = "cross-fade(url(\"https://example.com/\"), green)" should set the property value
+    - product: safari
+      url: https://bugs.webkit.org/show_bug.cgi?id=265967
+      results:
+        - test: shape-image-threshold-computed.html
+          subtest: Property shape-image-threshold value '-100%'
+        - test: shape-image-threshold-computed.html
+          subtest: Property shape-image-threshold value '50%'
+        - test: shape-image-threshold-computed.html
+          subtest: Property shape-image-threshold value '300%'
