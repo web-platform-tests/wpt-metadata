@@ -55,3 +55,8 @@ links:
       results:
         - test: resets.html
           subtest: <table><tbody><tr><td> - box-sizing
+    - product: safari
+      url: https://bugs.webkit.org/show_bug.cgi?id=236108
+      results:
+        - test: input-line-height-computed.html
+          subtest: <input type=search>.computedStyleMap().get('line-height') should not be affected by the used value clamping
