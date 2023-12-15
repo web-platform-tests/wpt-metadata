@@ -1,0 +1,89 @@
+links:
+- product: firefox
+  results:
+  - subtest: Parse empty string
+    test: Document-parseHTMLUnsafe-encoding.html
+  - subtest: meta charset latin2
+    test: Document-parseHTMLUnsafe-encoding.html
+  - subtest: XML declaration
+    test: Document-parseHTMLUnsafe-encoding.html
+  - test: Document-parseHTMLUnsafe-style-attribute.html
+  - subtest: 'valid: created normally'
+    test: Document-parseHTMLUnsafe-url-base-pushstate.html
+  - subtest: 'valid: created using another iframe''s parseHTMLUnsafe from this frame'
+    test: Document-parseHTMLUnsafe-url-base-pushstate.html
+  - subtest: 'valid: created using another iframe''s parseHTMLUnsafe from that frame'
+    test: Document-parseHTMLUnsafe-url-base-pushstate.html
+  - subtest: 'invalid XML: created normally'
+    test: Document-parseHTMLUnsafe-url-base-pushstate.html
+  - subtest: 'invalid XML: created using another iframe''s parseHTMLUnsafe from this
+      frame'
+    test: Document-parseHTMLUnsafe-url-base-pushstate.html
+  - subtest: 'invalid XML: created using another iframe''s parseHTMLUnsafe from that
+      frame'
+    test: Document-parseHTMLUnsafe-url-base-pushstate.html
+  - subtest: 'valid: created normally'
+    test: Document-parseHTMLUnsafe-url-base.html
+  - subtest: 'valid: created using another iframe''s parseHTMLUnsafe from this frame'
+    test: Document-parseHTMLUnsafe-url-base.html
+  - subtest: 'valid: created using another iframe''s parseHTMLUnsafe from that frame'
+    test: Document-parseHTMLUnsafe-url-base.html
+  - subtest: 'invalid XML: created normally'
+    test: Document-parseHTMLUnsafe-url-base.html
+  - subtest: 'invalid XML: created using another iframe''s parseHTMLUnsafe from this
+      frame'
+    test: Document-parseHTMLUnsafe-url-base.html
+  - subtest: 'invalid XML: created using another iframe''s parseHTMLUnsafe from that
+      frame'
+    test: Document-parseHTMLUnsafe-url-base.html
+  - subtest: Parent window
+    test: Document-parseHTMLUnsafe-url-moretests.html
+  - subtest: Child window
+    test: Document-parseHTMLUnsafe-url-moretests.html
+  - subtest: Child window crossing navigation
+    test: Document-parseHTMLUnsafe-url-moretests.html
+  - subtest: Child window after navigation
+    test: Document-parseHTMLUnsafe-url-moretests.html
+  - subtest: 'valid: created normally'
+    test: Document-parseHTMLUnsafe-url-pushstate.html
+  - subtest: 'valid: created using another iframe''s parseHTMLUnsafe from this frame'
+    test: Document-parseHTMLUnsafe-url-pushstate.html
+  - subtest: 'valid: created using another iframe''s parseHTMLUnsafe from that frame'
+    test: Document-parseHTMLUnsafe-url-pushstate.html
+  - subtest: 'invalid XML: created normally'
+    test: Document-parseHTMLUnsafe-url-pushstate.html
+  - subtest: 'invalid XML: created using another iframe''s parseHTMLUnsafe from this
+      frame'
+    test: Document-parseHTMLUnsafe-url-pushstate.html
+  - subtest: 'invalid XML: created using another iframe''s parseHTMLUnsafe from that
+      frame'
+    test: Document-parseHTMLUnsafe-url-pushstate.html
+  - subtest: 'valid: created normally'
+    test: Document-parseHTMLUnsafe-url.html
+  - subtest: 'valid: created using another iframe''s parseHTMLUnsafe from this frame'
+    test: Document-parseHTMLUnsafe-url.html
+  - subtest: 'valid: created using another iframe''s parseHTMLUnsafe from that frame'
+    test: Document-parseHTMLUnsafe-url.html
+  - subtest: 'invalid XML: created normally'
+    test: Document-parseHTMLUnsafe-url.html
+  - subtest: 'invalid XML: created using another iframe''s parseHTMLUnsafe from this
+      frame'
+    test: Document-parseHTMLUnsafe-url.html
+  - subtest: 'invalid XML: created using another iframe''s parseHTMLUnsafe from that
+      frame'
+    test: Document-parseHTMLUnsafe-url.html
+  - test: Document-parseHTMLUnsafe.html
+  - subtest: setHTMLUnsafe should leave the removed children alone.
+    test: Element-setHTMLUnsafe-04.html
+  - subtest: 'Element: setHTMLUnsafe with no shadowdom.'
+    test: setHTMLUnsafe.html
+  - subtest: 'Element: setHTMLUnsafe with shadowdom.'
+    test: setHTMLUnsafe.html
+  - subtest: 'ShadowRoot: setHTMLUnsafe with no shadowdom.'
+    test: setHTMLUnsafe.html
+  - subtest: 'ShadowRoot: setHTMLUnsafe with shadowdom.'
+    test: setHTMLUnsafe.html
+  - subtest: template.setHTMLUnsafe() should modify template content fragment rather
+      than actual children.
+    test: setHTMLUnsafe.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1866947
