@@ -19,6 +19,25 @@ links:
         - test: idlharness.any.worker.html
           subtest: 'Request interface: new Request(''about:blank'') must inherit property "isReloadNavigation" with the proper type'
     - product: safari
+      url: https://bugs.webkit.org/show_bug.cgi?id=245671
+      results:
+        - test: idlharness.any.worker.html
+          subtest: 'Request interface: new Request(''about:blank'') must inherit property "duplex" with the proper type'
+        - test: idlharness.any.worker.html
+          subtest: 'Request interface: attribute duplex'
+        - test: idlharness.any.sharedworker.html
+          subtest: 'Request interface: new Request(''about:blank'') must inherit property "duplex" with the proper type'
+        - test: idlharness.any.sharedworker.html
+          subtest: 'Request interface: attribute duplex'
+        - test: idlharness.any.serviceworker.html
+          subtest: 'Request interface: attribute duplex'
+        - test: idlharness.any.serviceworker.html
+          subtest: 'Request interface: new Request(''about:blank'') must inherit property "duplex" with the proper type'
+        - test: idlharness.any.html
+          subtest: 'Request interface: attribute duplex'
+        - test: idlharness.any.html
+          subtest: 'Request interface: new Request(''about:blank'') must inherit property "duplex" with the proper type'
+    - product: safari
       url: https://bugs.webkit.org/show_bug.cgi?id=186028
       results:
         - test: idlharness.any.html
@@ -32,3 +51,23 @@ links:
           subtest: 'Request interface: attribute isReloadNavigation'
         - test: idlharness.any.sharedworker.html
           subtest: 'Request interface: new Request(''about:blank'') must inherit property "isReloadNavigation" with the proper type'
+        - test: idlharness.any.html
+          subtest: 'Request interface: attribute isReloadNavigation'
+        - test: idlharness.any.html
+          subtest: 'Request interface: new Request(''about:blank'') must inherit property "isReloadNavigation" with the proper type'
+        - test: idlharness.any.serviceworker.html
+          subtest: 'Request interface: attribute isReloadNavigation'
+        - test: idlharness.any.serviceworker.html
+          subtest: 'Request interface: new Request(''about:blank'') must inherit property "isReloadNavigation" with the proper type'
+        - test: idlharness.any.sharedworker.html
+          subtest: 'Request interface: new Request(''about:blank'') must inherit property "isHistoryNavigation" with the proper type'
+        - test: idlharness.any.sharedworker.html
+          subtest: 'Request interface: attribute isHistoryNavigation'
+        - test: idlharness.any.worker.html
+          subtest: 'Request interface: attribute isHistoryNavigation'
+        - test: idlharness.any.worker.html
+          subtest: 'Request interface: new Request(''about:blank'') must inherit property "isHistoryNavigation" with the proper type'
+        - test: idlharness.any.serviceworker.html
+          subtest: 'Request interface: attribute isHistoryNavigation'
+        - test: idlharness.any.serviceworker.html
+          subtest: 'Request interface: new Request(''about:blank'') must inherit property "isHistoryNavigation" with the proper type'

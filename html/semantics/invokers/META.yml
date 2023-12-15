@@ -33,3 +33,26 @@ links:
   - subtest: invoking fullscreen div with exitFullscreen action exits fullscreen
     test: invoketarget-fullscreen-behavior.tentative.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1865054
+- product: firefox
+  results:
+  - subtest: invoking (as auto) closed popover opens
+    test: invoketarget-on-popover-behavior.tentative.html
+  - subtest: invoking (as auto) from within open popover closes
+    test: invoketarget-on-popover-behavior.tentative.html
+  - subtest: invoking (as togglepopover) closed popover opens
+    test: invoketarget-on-popover-behavior.tentative.html
+  - subtest: invoking (as togglepopover - case insensitive) closed popover opens
+    test: invoketarget-on-popover-behavior.tentative.html
+  - subtest: invoking (as togglepopover) from within open popover closes
+    test: invoketarget-on-popover-behavior.tentative.html
+  - subtest: invoking (as showpopover) closed popover opens
+    test: invoketarget-on-popover-behavior.tentative.html
+  - subtest: invoking (as showpopover - case insensitive) closed popover opens
+    test: invoketarget-on-popover-behavior.tentative.html
+  - subtest: invoking (as showpopover) open popover is noop
+    test: invoketarget-on-popover-behavior.tentative.html
+  - subtest: invoking (as hidepopover) open popover closes
+    test: invoketarget-on-popover-behavior.tentative.html
+  - subtest: invoking (as hidepopover - case insensitive) open popover closes
+    test: invoketarget-on-popover-behavior.tentative.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1868053
