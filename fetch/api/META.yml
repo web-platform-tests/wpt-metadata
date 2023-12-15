@@ -47,6 +47,10 @@ links:
     - product: safari
       url: https://bugs.webkit.org/show_bug.cgi?id=184957
       results:
+        - test: idlharness.any.worker.html
+          subtest: 'Request interface: new Request(''about:blank'') must inherit property "isReloadNavigation" with the proper type'
+        - test: idlharness.any.worker.html
+          subtest: 'Request interface: attribute isReloadNavigation'
         - test: idlharness.any.sharedworker.html
           subtest: 'Request interface: attribute isReloadNavigation'
         - test: idlharness.any.sharedworker.html
