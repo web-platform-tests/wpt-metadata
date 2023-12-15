@@ -961,3 +961,60 @@ links:
       results:
         - test: register-property-syntax-parsing.html
           subtest: syntax:'*', initialValue:'default' is valid
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1846516
+      results:
+        - test: at-property-animation.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1866917
+      results:
+        - test: registered-property-computation.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1870348
+      results:
+        - test: registered-property-revert.html
+          subtest: Non-inherited registered custom property can be reverted in animation
+        - test: registered-property-revert.html
+          subtest: Inherited registered custom property can be reverted in animation
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1869185
+      results:
+        - test: at-property-animation.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1870370
+      results:
+        - test: at-property-animation.html
+          subtest: '@keyframes works with @property'
+        - test: at-property-animation.html
+          subtest: '@keyframes picks up the latest @property in the document'
+        - test: at-property-animation.html
+          subtest: Ongoing animation picks up redeclared custom property
+        - test: at-property-animation.html
+          subtest: Ongoing animation matches new keyframes against the current registration
+        - test: at-property-animation.html
+          subtest: Ongoing animation picks up redeclared intial value
+        - test: at-property-animation.html
+          subtest: Ongoing animation picks up redeclared inherits flag
+        - test: at-property-animation.html
+          subtest: Ongoing animation picks up redeclared meaning of 'unset'
+        - test: at-property-animation.html
+          subtest: Transitioning from initial value
+        - test: at-property-animation.html
+          subtest: Transitioning from specified value
+        - test: at-property-animation.html
+          subtest: Transition triggered by initial value change
+        - test: at-property-animation.html
+          subtest: No transition when removing @property rule
+        - test: at-property-animation.html
+          subtest: Unregistered properties referencing animated properties update correctly.
+        - test: at-property-animation.html
+          subtest: Registered properties referencing animated properties update correctly.
+        - test: at-property-animation.html
+          subtest: CSS animation setting "inherit" for a custom property on a keyframe is responsive to changing that custom property on the parent.
+        - test: at-property-animation.html
+          subtest: JS-originated animation setting "inherit" for a custom property on a keyframe is responsive to changing that custom property on the parent.
+        - test: at-property-animation.html
+          subtest: CSS animation setting "currentColor" for a custom property on a keyframe is responsive to changing "color" on the parent.
+        - test: at-property-animation.html
+          subtest: JS-originated animation setting "currentColor" for a custom property on a keyframe is responsive to changing "color" on the parent.
+        - test: at-property-animation.html
