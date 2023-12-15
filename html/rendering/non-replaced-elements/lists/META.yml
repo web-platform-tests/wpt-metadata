@@ -1,32 +1,45 @@
 links:
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1708370
-      results:
-        - test: lists-styles.html
-          subtest: <ol type="none"> - list-style-type
-        - test: lists-styles.html
-          subtest: <li type="none"> - list-style-type
-        - test: lists-styles.html
-          subtest: <ol type="NONE"> - list-style-type
-        - test: lists-styles.html
-          subtest: <li type="NONE"> - list-style-type
-        - test: lists-styles.html
-          subtest: <ol type="disc"> - list-style-type
-        - test: lists-styles.html
-          subtest: <ol type="DISC"> - list-style-type
-        - test: lists-styles.html
-          subtest: <ol type="circle"> - list-style-type
-        - test: lists-styles.html
-          subtest: <ol type="CIRCLE"> - list-style-type
-        - test: lists-styles.html
-          subtest: <ol type="square"> - list-style-type
-        - test: lists-styles.html
-          subtest: <ol type="SQUARE"> - list-style-type
-    - product: safari
-      url: https://bugs.webkit.org/show_bug.cgi?id=222670
-      results:
-        - test: lists-styles.html
-    - product: chrome
-      url: https://bugs.chromium.org/p/chromium/issues/detail?id=1222844
-      results:
-        - test: lists-styles.html
+- product: firefox
+  results:
+  - subtest: <ol type="none"> - list-style-type
+    test: lists-styles.html
+  - subtest: <li type="none"> - list-style-type
+    test: lists-styles.html
+  - subtest: <ol type="NONE"> - list-style-type
+    test: lists-styles.html
+  - subtest: <li type="NONE"> - list-style-type
+    test: lists-styles.html
+  - subtest: <ol type="disc"> - list-style-type
+    test: lists-styles.html
+  - subtest: <ol type="DISC"> - list-style-type
+    test: lists-styles.html
+  - subtest: <ol type="circle"> - list-style-type
+    test: lists-styles.html
+  - subtest: <ol type="CIRCLE"> - list-style-type
+    test: lists-styles.html
+  - subtest: <ol type="square"> - list-style-type
+    test: lists-styles.html
+  - subtest: <ol type="SQUARE"> - list-style-type
+    test: lists-styles.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1708370
+- product: safari
+  results:
+  - test: lists-styles.html
+  url: https://bugs.webkit.org/show_bug.cgi?id=222670
+- product: chrome
+  results:
+  - test: lists-styles.html
+  url: https://bugs.chromium.org/p/chromium/issues/detail?id=1222844
+- product: firefox
+  results:
+  - subtest: <ul type="1"> - list-style-type
+    test: lists-styles.html
+  - subtest: <ul type="a" class="type-a"> - list-style-type
+    test: lists-styles.html
+  - subtest: <ul type="A" class="type-A"> - list-style-type
+    test: lists-styles.html
+  - subtest: <ul type="i" class="type-i"> - list-style-type
+    test: lists-styles.html
+  - subtest: <ul type="I" class="type-I"> - list-style-type
+    test: lists-styles.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1867721
