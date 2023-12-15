@@ -169,3 +169,9 @@ links:
       results:
         - test: word-break-valid.html
           subtest: e.style['word-break'] = "auto-phrase" should set the property value
+        - test: word-break-computed.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1521723
+      results:
+        - test: hyphenate-limit-chars-computed.html
+        - test: hyphenate-limit-chars-valid.html
