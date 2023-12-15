@@ -285,3 +285,12 @@ links:
           subtest: 'content: attr(foo, "")'
         - test: serialize-values.html
           subtest: 'content: attr( |foo ,  "" )'
+    - product: safari
+      url: https://bugs.webkit.org/show_bug.cgi?id=229912
+      results:
+        - test: historical.html
+          subtest: 'Historical interface: CSSValue'
+        - test: historical.html
+          subtest: 'Historical interface: CSSPrimitiveValue'
+        - test: historical.html
+          subtest: 'Historical interface: CSSValueList'

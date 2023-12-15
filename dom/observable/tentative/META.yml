@@ -121,3 +121,50 @@ links:
   - subtest: Subscriber#error() cannot re-entrantly invoke itself
     test: observable-constructor.any.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1865858
+- product: firefox
+  results:
+  - subtest: Subscription is inactive when aborted signal is passed in
+    test: observable-constructor.any.html
+  - subtest: Unsubscription lifecycle
+    test: observable-constructor.any.html
+  - subtest: Teardown should be called when subscription is aborted
+    test: observable-constructor.any.html
+  - subtest: Teardowns should be called when subscription is closed by completion
+    test: observable-constructor.any.html
+  - subtest: Teardowns should be called when subscription is closed by subscriber
+      pushing an error
+    test: observable-constructor.any.html
+  - subtest: Teardowns should be called when subscription is closed by subscriber
+      throwing error
+    test: observable-constructor.any.html
+  - subtest: Teardowns should be called synchronously during addTeardown() if the
+      subscription is inactive
+    test: observable-constructor.any.html
+  - subtest: Subscription is inactive when aborted signal is passed in
+    test: observable-constructor.any.worker.html
+  - subtest: Unsubscription lifecycle
+    test: observable-constructor.any.worker.html
+  - subtest: Teardown should be called when subscription is aborted
+    test: observable-constructor.any.worker.html
+  - subtest: Teardowns should be called when subscription is closed by completion
+    test: observable-constructor.any.worker.html
+  - subtest: Teardowns should be called when subscription is closed by subscriber
+      pushing an error
+    test: observable-constructor.any.worker.html
+  - subtest: Teardowns should be called when subscription is closed by subscriber
+      throwing error
+    test: observable-constructor.any.worker.html
+  - subtest: Teardowns should be called synchronously during addTeardown() if the
+      subscription is inactive
+    test: observable-constructor.any.worker.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1868520
+- product: firefox
+  results:
+  - subtest: No observer handlers can be invoked in detached document
+    test: observable-constructor.window.html
+  - subtest: Subscriber.error() does not "report the exception" even when an `error()`
+      handler is not present, when it is invoked in a detached document
+    test: observable-constructor.window.html
+  - subtest: Cannot subscribe to an Observable in a detached document
+    test: observable-constructor.window.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1870088
