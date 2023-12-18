@@ -1,6 +1,92 @@
 links:
-    - product: safari
-      url: https://bugs.webkit.org/show_bug.cgi?id=257227
-      results:
-        - test: area-processing.html
-          subtest: 'even-odd rule: "100,100,200,100,100,200,150,50,200,200" (poly)'
+- product: safari
+  results:
+  - subtest: 'even-odd rule: "100,100,200,100,100,200,150,50,200,200" (poly)'
+    test: area-processing.html
+  url: https://bugs.webkit.org/show_bug.cgi?id=257227
+- product: firefox
+  results:
+  - subtest: 'COMMA: "2,2,10,10" (rect)'
+    test: area-coords.html
+  - subtest: 'SEMICOLON: "2;2;10;10" (rect)'
+    test: area-coords.html
+  - subtest: 'SPACE: "2 2 10 10" (rect)'
+    test: area-coords.html
+  - subtest: 'TAB: "2\t2\t10\t10" (rect)'
+    test: area-coords.html
+  - subtest: 'FORM FEED: "2\f2\f10\f10" (rect)'
+    test: area-coords.html
+  - subtest: 'LINE FEED: "2\n2\n10\n10" (rect)'
+    test: area-coords.html
+  - subtest: 'CARRIGAGE RETURN: "2\r2\r10\r10" (rect)'
+    test: area-coords.html
+  - subtest: 'abc between numbers: "2a2b20c20,2,10,10" (rect)'
+    test: area-coords.html
+  - subtest: 'COLON between numbers: "2:2:20:20,2,10,10" (rect)'
+    test: area-coords.html
+  - subtest: 'U+0000 between numbers: "2\02\020\020,2,10,10" (rect)'
+    test: area-coords.html
+  - subtest: 'leading COMMA: ",2,2,10,10" (rect)'
+    test: area-coords.html
+  - subtest: 'leading SPACE: " 2,2,10,10" (rect)'
+    test: area-coords.html
+  - subtest: 'leading SEMICOLON: ";2,2,10,10" (rect)'
+    test: area-coords.html
+  - subtest: 'PERCENT: "2%,2%,10%,10%" (rect)'
+    test: area-coords.html
+  - subtest: 'CSS units: "2in,2in,10cm,10cm" (rect)'
+    test: area-coords.html
+  - subtest: 'float: "1.4,1.4,10,10" (rect)'
+    test: area-coords.html
+  - subtest: 'number starting with PERIOD: ".4,.4,10,10" (rect)'
+    test: area-coords.html
+  - subtest: 'sci-not: "2,2,1e1,1e1" (rect)'
+    test: area-coords.html
+  - subtest: 'leading/trailing garbage: "=''2,2,10,10'' " (rect)'
+    test: area-coords.html
+  - subtest: "non-ascii garbage: \"\u201C2,2,10,10\\\"\" (rect)"
+    test: area-coords.html
+  - subtest: 'several consecutive separators: ",,2;,;2,;,10 \t\r\n10;;" (rect)'
+    test: area-coords.html
+  - subtest: 'one too many numbers, trailing COMMA: "100,100,120,100,100,120,300,"
+      (poly)'
+    test: area-coords.html
+  - subtest: 'negative: "-10,-10,10,10" (rect)'
+    test: area-processing.html
+  - subtest: 'first > third: "10,2,2,10" (rect)'
+    test: area-processing.html
+  - subtest: 'second > fourth: "2,10,10,2" (rect)'
+    test: area-processing.html
+  - subtest: 'first > third, second > fourth: "10,10,2,2" (rect)'
+    test: area-processing.html
+  - subtest: 'negative: "-10,-10,-10,-10" (default)'
+    test: area-processing.html
+  - subtest: 'one too many numbers: "100,100,120,100,100,120,300" (poly)'
+    test: area-processing.html
+  - subtest: 'missing value default: "2,2,10,10" (null)'
+    test: area-shape.html
+  - subtest: 'invalid value default: "2,2,10,10" (foobar invalid)'
+    test: area-shape.html
+  - subtest: 'invalid value default: "2,2,10,10" ()'
+    test: area-shape.html
+  - subtest: 'empty string: "" (default)'
+    test: area-shape.html
+  - subtest: 'omitted coords: null (DEFAULT)'
+    test: area-shape.html
+  - subtest: 'simple: "2,2,10,10" (rect)'
+    test: area-shape.html
+  - subtest: 'simple: "2,2,10,10" (rectangle)'
+    test: area-shape.html
+  - subtest: 'simple: "20,40,10" (circle)'
+    test: area-shape.html
+  - subtest: 'simple: "20,40,10" (circ)'
+    test: area-shape.html
+  - subtest: 'simple: "20,40,10" (CIRCLE)'
+    test: area-shape.html
+  - subtest: 'simple: "20,40,10" (CIRC)'
+    test: area-shape.html
+  - subtest: 'simple: "100,100,120,100,100,120" (poly)'
+    test: area-shape.html
+  - subtest: 'simple: "100,100,120,100,100,120" (polygon)'
+    test: area-shape.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1870625
