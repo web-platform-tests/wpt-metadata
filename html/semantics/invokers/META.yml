@@ -1,58 +1,62 @@
 links:
-- product: firefox
-  results:
-  - subtest: invoking (as auto) closed popover with preventDefault does not open
-    test: invoketarget-on-popover-behavior.tentative.html
-  - subtest: invoking (as auto) open popover with preventDefault does not close
-    test: invoketarget-on-popover-behavior.tentative.html
-  - subtest: invoking (as togglepopover) closed popover with preventDefault does not
-      open
-    test: invoketarget-on-popover-behavior.tentative.html
-  - subtest: invoking (as togglepopover) open popover with preventDefault does not
-      close
-    test: invoketarget-on-popover-behavior.tentative.html
-  - subtest: invoking (as showpopover) closed popover with preventDefault does not
-      open
-    test: invoketarget-on-popover-behavior.tentative.html
-  - subtest: invoking (as hidepopover) closed popover is noop
-    test: invoketarget-on-popover-behavior.tentative.html
-  - subtest: invoking (as hidepopover) open popover with preventDefault does not close
-    test: invoketarget-on-popover-behavior.tentative.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1861646
-- product: firefox
-  results:
-  - subtest: invoking div with toggleFullscreen action makes div fullscreen
-    test: invoketarget-fullscreen-behavior.tentative.html
-  - subtest: invoking fullscreen div with toggleFullscreen action exits fullscreen
-    test: invoketarget-fullscreen-behavior.tentative.html
-  - subtest: invoking fullscreen div with toggleFullscreen (case-insensitive) action
-      exits fullscreen
-    test: invoketarget-fullscreen-behavior.tentative.html
-  - subtest: invoking div with requestFullscreen action makes div fullscreen
-    test: invoketarget-fullscreen-behavior.tentative.html
-  - subtest: invoking fullscreen div with exitFullscreen action exits fullscreen
-    test: invoketarget-fullscreen-behavior.tentative.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1865054
-- product: firefox
-  results:
-  - subtest: invoking (as auto) closed popover opens
-    test: invoketarget-on-popover-behavior.tentative.html
-  - subtest: invoking (as auto) from within open popover closes
-    test: invoketarget-on-popover-behavior.tentative.html
-  - subtest: invoking (as togglepopover) closed popover opens
-    test: invoketarget-on-popover-behavior.tentative.html
-  - subtest: invoking (as togglepopover - case insensitive) closed popover opens
-    test: invoketarget-on-popover-behavior.tentative.html
-  - subtest: invoking (as togglepopover) from within open popover closes
-    test: invoketarget-on-popover-behavior.tentative.html
-  - subtest: invoking (as showpopover) closed popover opens
-    test: invoketarget-on-popover-behavior.tentative.html
-  - subtest: invoking (as showpopover - case insensitive) closed popover opens
-    test: invoketarget-on-popover-behavior.tentative.html
-  - subtest: invoking (as showpopover) open popover is noop
-    test: invoketarget-on-popover-behavior.tentative.html
-  - subtest: invoking (as hidepopover) open popover closes
-    test: invoketarget-on-popover-behavior.tentative.html
-  - subtest: invoking (as hidepopover - case insensitive) open popover closes
-    test: invoketarget-on-popover-behavior.tentative.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1868053
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1861646
+      results:
+        - test: invoketarget-on-popover-behavior.tentative.html
+          subtest: invoking (as auto) closed popover with preventDefault does not open
+        - test: invoketarget-on-popover-behavior.tentative.html
+          subtest: invoking (as auto) open popover with preventDefault does not close
+        - test: invoketarget-on-popover-behavior.tentative.html
+          subtest: invoking (as togglepopover) closed popover with preventDefault does not open
+        - test: invoketarget-on-popover-behavior.tentative.html
+          subtest: invoking (as togglepopover) open popover with preventDefault does not close
+        - test: invoketarget-on-popover-behavior.tentative.html
+          subtest: invoking (as showpopover) closed popover with preventDefault does not open
+        - test: invoketarget-on-popover-behavior.tentative.html
+          subtest: invoking (as hidepopover) closed popover is noop
+        - test: invoketarget-on-popover-behavior.tentative.html
+          subtest: invoking (as hidepopover) open popover with preventDefault does not close
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1865054
+      results:
+        - test: invoketarget-fullscreen-behavior.tentative.html
+          subtest: invoking div with toggleFullscreen action makes div fullscreen
+        - test: invoketarget-fullscreen-behavior.tentative.html
+          subtest: invoking fullscreen div with toggleFullscreen action exits fullscreen
+        - test: invoketarget-fullscreen-behavior.tentative.html
+          subtest: invoking fullscreen div with toggleFullscreen (case-insensitive) action exits fullscreen
+        - test: invoketarget-fullscreen-behavior.tentative.html
+          subtest: invoking div with requestFullscreen action makes div fullscreen
+        - test: invoketarget-fullscreen-behavior.tentative.html
+          subtest: invoking fullscreen div with exitFullscreen action exits fullscreen
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1868053
+      results:
+        - test: invoketarget-on-popover-behavior.tentative.html
+          subtest: invoking (as auto) closed popover opens
+        - test: invoketarget-on-popover-behavior.tentative.html
+          subtest: invoking (as auto) from within open popover closes
+        - test: invoketarget-on-popover-behavior.tentative.html
+          subtest: invoking (as togglepopover) closed popover opens
+        - test: invoketarget-on-popover-behavior.tentative.html
+          subtest: invoking (as togglepopover - case insensitive) closed popover opens
+        - test: invoketarget-on-popover-behavior.tentative.html
+          subtest: invoking (as togglepopover) from within open popover closes
+        - test: invoketarget-on-popover-behavior.tentative.html
+          subtest: invoking (as showpopover) closed popover opens
+        - test: invoketarget-on-popover-behavior.tentative.html
+          subtest: invoking (as showpopover - case insensitive) closed popover opens
+        - test: invoketarget-on-popover-behavior.tentative.html
+          subtest: invoking (as showpopover) open popover is noop
+        - test: invoketarget-on-popover-behavior.tentative.html
+          subtest: invoking (as hidepopover) open popover closes
+        - test: invoketarget-on-popover-behavior.tentative.html
+          subtest: invoking (as hidepopover - case insensitive) open popover closes
+    - product: safari
+      url: https://bugs.webkit.org/show_bug.cgi?id=262840
+      results:
+        - test: idlharness.tentative.html
+        - test: invokeelement-interface.tentative.html
+        - test: invokeevent-dispatch-shadow.tentative.html
+        - test: invokeevent-interface.tentative.html
+        - test: invoketarget-button-event-dispatch.tentative.html
