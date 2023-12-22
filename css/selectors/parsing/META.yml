@@ -70,3 +70,7 @@ links:
           subtest: '".a:has(:is(.b:has(.c), .d))" should be a valid selector'
         - test: parse-has.html
           subtest: '":has(:is(.a, 123))" should be a valid selector'
+    - product: safari
+      url: https://bugs.webkit.org/show_bug.cgi?id=215911
+      results:
+        - test: parse-state.html
