@@ -57,7 +57,8 @@ links:
           subtest: '".a:has(.b:has(.c), .d)" should be a valid selector'
         - test: parse-has-disallow-nesting-has-inside-has.html
           subtest: '".a:has(.b:is(.c:has(.d) .e))" should be a valid selector'
-    - label: interop-2023-has
+    - url: ""
+      label: interop-2023-has
       results:
         - test: parse-has-disallow-nesting-has-inside-has.html
         - test: parse-has.html
@@ -72,5 +73,9 @@ links:
           subtest: '":has(:is(.a, 123))" should be a valid selector'
     - product: firefox
       url: https://bugzilla.mozilla.org/show_bug.cgi?id=1588763
+      results:
+        - test: parse-state.html
+    - product: safari
+      url: https://bugs.webkit.org/show_bug.cgi?id=215911
       results:
         - test: parse-state.html
