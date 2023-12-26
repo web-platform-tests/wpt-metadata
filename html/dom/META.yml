@@ -2080,3 +2080,22 @@ links:
           subtest: 'input.dirName: typeof IDL attribute'
         - test: reflection-forms.html
           subtest: 'input.dirName: IDL set to undefined'
+    - product: safari
+      url: https://bugs.webkit.org/show_bug.cgi?id=266895
+      results:
+        - test: idlharness.worker.html
+          subtest: 'OffscreenCanvasRenderingContext2D interface: attribute filter'
+        - test: idlharness.worker.html
+          subtest: 'OffscreenCanvasRenderingContext2D interface: attribute letterSpacing'
+        - test: idlharness.worker.html
+          subtest: 'OffscreenCanvasRenderingContext2D interface: attribute fontKerning'
+        - test: idlharness.worker.html
+          subtest: 'OffscreenCanvasRenderingContext2D interface: attribute fontStretch'
+        - test: idlharness.worker.html
+          subtest: 'OffscreenCanvasRenderingContext2D interface: attribute fontVariantCaps'
+        - test: idlharness.worker.html
+          subtest: 'OffscreenCanvasRenderingContext2D interface: attribute textRendering'
+        - test: idlharness.worker.html
+          subtest: 'OffscreenCanvasRenderingContext2D interface: attribute wordSpacing'
+        - test: idlharness.worker.html
+          subtest: 'OffscreenCanvasRenderingContext2D interface: operation roundRect(unrestricted double, unrestricted double, unrestricted double, unrestricted double, optional (unrestricted double or DOMPointInit or sequence<(unrestricted double or DOMPointInit)>))'
