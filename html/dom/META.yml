@@ -2099,3 +2099,10 @@ links:
           subtest: 'OffscreenCanvasRenderingContext2D interface: attribute wordSpacing'
         - test: idlharness.worker.html
           subtest: 'OffscreenCanvasRenderingContext2D interface: operation roundRect(unrestricted double, unrestricted double, unrestricted double, unrestricted double, optional (unrestricted double or DOMPointInit or sequence<(unrestricted double or DOMPointInit)>))'
+    - product: safari
+      url: https://bugs.webkit.org/show_bug.cgi?id=266897
+      results:
+        - test: idlharness.worker.html
+          subtest: 'WorkerGlobalScope interface: attribute onlanguagechange'
+        - test: idlharness.worker.html
+          subtest: 'WorkerGlobalScope interface: self must inherit property "onlanguagechange" with the proper type'
