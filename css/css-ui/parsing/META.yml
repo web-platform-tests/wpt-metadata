@@ -1,21 +1,26 @@
 links:
-- product: chrome
-  results:
-  - test: resize-invalid.html
-  url: https://crbug.com/838779
-- product: chrome
-  results:
-  - test: user-select-computed.html
-  - test: user-select-valid.html
-  url: https://crbug.com/658129
-- product: firefox
-  results:
-  - subtest: Property field-sizing value 'fixed'
-    test: field-sizing-computed.html
-  - subtest: Property field-sizing value 'content'
-    test: field-sizing-computed.html
-  - subtest: e.style['field-sizing'] = "fixed" should set the property value
-    test: field-sizing-valid.html
-  - subtest: e.style['field-sizing'] = "content" should set the property value
-    test: field-sizing-valid.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1862112
+    - product: chrome
+      url: https://crbug.com/838779
+      results:
+        - test: resize-invalid.html
+    - product: chrome
+      url: https://crbug.com/658129
+      results:
+        - test: user-select-computed.html
+        - test: user-select-valid.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1862112
+      results:
+        - test: field-sizing-computed.html
+          subtest: Property field-sizing value 'fixed'
+        - test: field-sizing-computed.html
+          subtest: Property field-sizing value 'content'
+        - test: field-sizing-valid.html
+          subtest: e.style['field-sizing'] = "fixed" should set the property value
+        - test: field-sizing-valid.html
+          subtest: e.style['field-sizing'] = "content" should set the property value
+    - product: safari
+      url: https://bugs.webkit.org/show_bug.cgi?id=266614
+      results:
+        - test: resize-invalid.html
+          subtest: e.style['resize'] = "auto" should not set the property value
