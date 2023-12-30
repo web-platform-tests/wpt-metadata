@@ -73,3 +73,8 @@ links:
     - label: interop-2023-webcompat
       results:
         - test: ParentNode-querySelector-scope.html
+    - product: safari
+      url: https://bugs.webkit.org/show_bug.cgi?id=32393
+      results:
+        - test: ProcessingInstruction-in-doctype.xhtml
+          subtest: 'XML: Processing instruction in doctype internal subset'
