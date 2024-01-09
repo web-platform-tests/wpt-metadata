@@ -1,67 +1,71 @@
 links:
-    - product: safari
-      url: https://bugs.webkit.org/show_bug.cgi?id=200838
-      results:
-        - test: idlharness.html
-          status: FAIL
-    - product: webkitgtk
-      url: https://bugs.webkit.org/show_bug.cgi?id=200838
-      results:
-        - test: idlharness.html
-          status: FAIL
-    - product: chrome
-      url: https://crbug.com/1158554
-      results:
-        - test: css-supports-040.xht
-        - test: css-supports-041.xht
-        - test: css-supports-042.xht
-        - test: at-supports-046.html
-    - product: chrome
-      url: https://bugs.chromium.org/p/chromium/issues/detail?id=1210073
-      results:
-        - test: idlharness.html
-    - product: webkitgtk
-      url: https://bugs.webkit.org/show_bug.cgi?id=216003
-      results:
-        - test: at-supports-043.html
-    - product: safari
-      url: https://bugs.webkit.org/show_bug.cgi?id=216003
-      results:
-        - test: at-supports-043.html
-    - product: webkitgtk
-      url: https://bugs.webkit.org/show_bug.cgi?id=137568
-      results:
-        - test: at-supports-014.html
-    - product: safari
-      url: https://bugs.webkit.org/show_bug.cgi?id=137568
-      results:
-        - test: at-supports-014.html
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1760444
-      results:
-        - test: idlharness.html
-          subtest: 'CSSConditionRule interface: attribute conditionText'
-    - product: chrome
-      url: https://crbug.com/1360265
-      results:
-        - test: at-supports-font-format-001.html
-        - test: at-supports-font-tech-001.html
-    - product: chrome
-      url: https://crbug.com/1269580
-      results:
-        - test: at-supports-namespace-001.html
-        - test: at-supports-namespace-002.html
-    - product: chrome
-      url: https://crbug.com/1255685
-      results:
-        - test: at-supports-font-format-001.html
-        - test: at-supports-font-tech-001.html
-    - label: interop-2023-fonts
-      results:
-        - test: at-supports-font-format-001.html
-        - test: at-supports-font-tech-001.html
-    - product: chrome
-      url: https://crbug.com/246571
-      results:
-        - test: at-supports-namespace-001.html
-        - test: at-supports-namespace-002.html
+- product: safari
+  results:
+  - status: FAIL
+    test: idlharness.html
+  url: https://bugs.webkit.org/show_bug.cgi?id=200838
+- product: webkitgtk
+  results:
+  - status: FAIL
+    test: idlharness.html
+  url: https://bugs.webkit.org/show_bug.cgi?id=200838
+- product: chrome
+  results:
+  - test: css-supports-040.xht
+  - test: css-supports-041.xht
+  - test: css-supports-042.xht
+  - test: at-supports-046.html
+  url: https://crbug.com/1158554
+- product: chrome
+  results:
+  - test: idlharness.html
+  url: https://bugs.chromium.org/p/chromium/issues/detail?id=1210073
+- product: webkitgtk
+  results:
+  - test: at-supports-043.html
+  url: https://bugs.webkit.org/show_bug.cgi?id=216003
+- product: safari
+  results:
+  - test: at-supports-043.html
+  url: https://bugs.webkit.org/show_bug.cgi?id=216003
+- product: webkitgtk
+  results:
+  - test: at-supports-014.html
+  url: https://bugs.webkit.org/show_bug.cgi?id=137568
+- product: safari
+  results:
+  - test: at-supports-014.html
+  url: https://bugs.webkit.org/show_bug.cgi?id=137568
+- product: firefox
+  results:
+  - subtest: 'CSSConditionRule interface: attribute conditionText'
+    test: idlharness.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1760444
+- product: chrome
+  results:
+  - test: at-supports-font-format-001.html
+  - test: at-supports-font-tech-001.html
+  url: https://crbug.com/1360265
+- product: chrome
+  results:
+  - test: at-supports-namespace-001.html
+  - test: at-supports-namespace-002.html
+  url: https://crbug.com/1269580
+- product: chrome
+  results:
+  - test: at-supports-font-format-001.html
+  - test: at-supports-font-tech-001.html
+  url: https://crbug.com/1255685
+- label: interop-2023-fonts
+  results:
+  - test: at-supports-font-format-001.html
+  - test: at-supports-font-tech-001.html
+- product: chrome
+  results:
+  - test: at-supports-namespace-001.html
+  - test: at-supports-namespace-002.html
+  url: https://crbug.com/246571
+- product: firefox
+  results:
+  - test: at-supports-selector-webkit-slider-thumb.tentative.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1873608
