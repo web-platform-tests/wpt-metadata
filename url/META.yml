@@ -378,3 +378,7 @@ links:
           subtest: 'URL: Setting <non-special://example.net:8080/path>.port = ''65536'' Port numbers are 16 bit integers, overflowing is an error'
         - test: url-setters.any.html?exclude=(file|javascript|mailto)
           subtest: 'URL: Setting <non-special://example.net:8080/path>.port = ''65536'' Port numbers are 16 bit integers, overflowing is an error'
+        - test: url-setters-a-area.window.html?exclude=(file|javascript|mailto)
+          subtest: '<a>: Setting <non-special://example.net:8080/path>.port = ''65536'' Port numbers are 16 bit integers, overflowing is an error'
+        - test: url-setters-a-area.window.html?exclude=(file|javascript|mailto)
+          subtest: '<area>: Setting <non-special://example.net:8080/path>.port = ''65536'' Port numbers are 16 bit integers, overflowing is an error'
