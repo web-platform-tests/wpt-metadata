@@ -876,3 +876,8 @@ links:
           subtest: 'Parsing: <data://test/a/../b> without base'
         - test: url-constructor.any.html?exclude=(file|javascript|mailto)
           subtest: 'Parsing: <data://example.com:8080/pathname?search#hash> without base'
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1873955
+      results:
+        - test: url-setters.any.html?include=file
+          subtest: 'URL: Setting <file:///unicorn>.pathname = ''//\/'' File URLs and (back)slashes'
