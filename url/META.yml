@@ -393,3 +393,11 @@ links:
           subtest: 'Parsing origin: <blob:ws://example.org/> against <about:blank>'
         - test: a-element-origin-xhtml.xhtml
           subtest: 'Parsing origin: <blob:wss://example.org/> against <about:blank>'
+        - test: url-origin.any.worker.html
+          subtest: 'Origin parsing: <blob:blob:https://example.org/> without base'
+        - test: url-origin.any.worker.html
+          subtest: 'Origin parsing: <blob:ftp://host/path> without base'
+        - test: url-origin.any.worker.html
+          subtest: 'Origin parsing: <blob:ws://example.org/> without base'
+        - test: url-origin.any.worker.html
+          subtest: 'Origin parsing: <blob:wss://example.org/> without base'
