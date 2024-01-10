@@ -531,3 +531,16 @@ links:
           subtest: 'Parsing: <> against <non-spec:/..//p>'
         - test: a-element-xhtml.xhtml?exclude=(file|javascript|mailto)
           subtest: 'Parsing: <path> against <non-spec:/..//p>'
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1873944
+      results:
+        - test: a-element-xhtml.xhtml?exclude=(file|javascript|mailto)
+          subtest: 'Parsing: <about:/../> against <about:blank>'
+        - test: a-element-xhtml.xhtml?exclude=(file|javascript|mailto)
+          subtest: 'Parsing: <data:/../> against <about:blank>'
+        - test: a-element-xhtml.xhtml?exclude=(file|javascript|mailto)
+          subtest: 'Parsing: <data://example.com:8080/pathname?search#hash> against <about:blank>'
+        - test: a-element-xhtml.xhtml?exclude=(file|javascript|mailto)
+          subtest: 'Parsing: <data:///test> against <about:blank>'
+        - test: a-element-xhtml.xhtml?exclude=(file|javascript|mailto)
+          subtest: 'Parsing: <data://test/a/../b> against <about:blank>'
