@@ -731,6 +731,30 @@ links:
           subtest: 'Parsing: <non-spec:/..//> against <about:blank>'
         - test: a-element.html?exclude=(file|javascript|mailto)
           subtest: 'Parsing: <non-spec:/.//> against <about:blank>'
+        - test: url-constructor.any.html?exclude=(file|javascript|mailto)
+          subtest: 'Parsing: <path> against <non-spec:/..//p>'
+        - test: url-constructor.any.html?exclude=(file|javascript|mailto)
+          subtest: 'Parsing: <> against <non-spec:/..//p>'
+        - test: url-constructor.any.html?exclude=(file|javascript|mailto)
+          subtest: 'Parsing: <a/..//path> against <non-spec:/p>'
+        - test: url-constructor.any.html?exclude=(file|javascript|mailto)
+          subtest: 'Parsing: <..//path> against <non-spec:/p>'
+        - test: url-constructor.any.html?exclude=(file|javascript|mailto)
+          subtest: 'Parsing: </..//path> against <non-spec:/p>'
+        - test: url-constructor.any.html?exclude=(file|javascript|mailto)
+          subtest: 'Parsing: </.//path> against <non-spec:/p>'
+        - test: url-constructor.any.html?exclude=(file|javascript|mailto)
+          subtest: 'Parsing: <non-spec:/a/..//path> without base'
+        - test: url-constructor.any.html?exclude=(file|javascript|mailto)
+          subtest: 'Parsing: <non-spec:/..//path> without base'
+        - test: url-constructor.any.html?exclude=(file|javascript|mailto)
+          subtest: 'Parsing: <non-spec:/.//path> without base'
+        - test: url-constructor.any.html?exclude=(file|javascript|mailto)
+          subtest: 'Parsing: <non-spec:/a/..//> without base'
+        - test: url-constructor.any.html?exclude=(file|javascript|mailto)
+          subtest: 'Parsing: <non-spec:/..//> without base'
+        - test: url-constructor.any.html?exclude=(file|javascript|mailto)
+          subtest: 'Parsing: <non-spec:/.//> without base'
     - product: firefox
       url: https://bugzilla.mozilla.org/show_bug.cgi?id=1873944
       results:
