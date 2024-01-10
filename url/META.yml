@@ -310,3 +310,22 @@ links:
           subtest: 'URL: Setting <javascript://x/>.password = ''bowser'''
         - test: url-setters.any.worker.html?include=javascript
           subtest: 'URL: Setting <javascript://x/>.port = ''12'''
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1507354
+      results:
+        - test: url-setters.any.worker.html?include=file
+          subtest: 'URL: Setting <file://hi/path>.protocol = ''s'''
+        - test: url-setters.any.worker.html?include=file
+          subtest: 'URL: Setting <file://test/>.username = ''test'''
+        - test: url-setters.any.worker.html?include=file
+          subtest: 'URL: Setting <file://test/>.password = ''test'''
+        - test: url-setters.any.worker.html?include=file
+          subtest: 'URL: Setting <file://y/>.host = ''x:123'''
+        - test: url-setters.any.worker.html?include=file
+          subtest: 'URL: Setting <file://y/>.hostname = ''x:123'''
+        - test: url-setters.any.worker.html?include=file
+          subtest: 'URL: Setting <file://test/>.port = ''12'''
+        - test: url-setters.any.worker.html?include=file
+          subtest: 'URL: Setting <file://monkey/>.pathname = ''\\'' File URLs and (back)slashes'
+        - test: url-setters.any.worker.html?include=file
+          subtest: 'URL: Setting <file:///unicorn>.pathname = ''//\/'' File URLs and (back)slashes'
