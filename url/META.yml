@@ -329,3 +329,8 @@ links:
           subtest: 'URL: Setting <file://monkey/>.pathname = ''\\'' File URLs and (back)slashes'
         - test: url-setters.any.worker.html?include=file
           subtest: 'URL: Setting <file:///unicorn>.pathname = ''//\/'' File URLs and (back)slashes'
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1873906
+      results:
+        - test: url-setters.any.worker.html?exclude=(file|javascript|mailto)
+          subtest: 'URL: Setting <non-special://example.net:8080/path>.port = ''65536'' Port numbers are 16 bit integers, overflowing is an error'
