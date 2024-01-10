@@ -375,6 +375,90 @@ links:
           subtest: '<a>: Setting <file://monkey/>.pathname = ''\\'' File URLs and (back)slashes'
         - test: url-setters-a-area.window.html?include=file
           subtest: '<area>: Setting <file://monkey/>.pathname = ''\\'' File URLs and (back)slashes'
+        - test: url-constructor.any.html?include=file
+          subtest: 'Parsing: <file://example:1/> without base'
+        - test: url-constructor.any.html?include=file
+          subtest: 'Parsing: <file://example:test/> without base'
+        - test: url-constructor.any.html?include=file
+          subtest: 'Parsing: <file://example%/> without base'
+        - test: url-constructor.any.html?include=file
+          subtest: 'Parsing: <file://[example]/> without base'
+        - test: url-constructor.any.html?include=file
+          subtest: 'Parsing: <//server/file> against <file:///tmp/mock/path>'
+        - test: url-constructor.any.html?include=file
+          subtest: 'Parsing: <\\server\file> against <file:///tmp/mock/path>'
+        - test: url-constructor.any.html?include=file
+          subtest: 'Parsing: </\server/file> against <file:///tmp/mock/path>'
+        - test: url-constructor.any.html?include=file
+          subtest: 'Parsing: <file://test> against <file:///tmp/mock/path>'
+        - test: url-constructor.any.html?include=file
+          subtest: 'Parsing: <file:..> against <http://www.example.com/test>'
+        - test: url-constructor.any.html?include=file
+          subtest: 'Parsing: <file://%43%3A> without base'
+        - test: url-constructor.any.html?include=file
+          subtest: 'Parsing: <file://%43%7C> without base'
+        - test: url-constructor.any.html?include=file
+          subtest: 'Parsing: <file://%43|> without base'
+        - test: url-constructor.any.html?include=file
+          subtest: 'Parsing: <file://C%7C> without base'
+        - test: url-constructor.any.html?include=file
+          subtest: 'Parsing: <file://%43%7C/> without base'
+        - test: url-constructor.any.html?include=file
+          subtest: 'Parsing: <file://spider///> without base'
+        - test: url-constructor.any.html?include=file
+          subtest: 'Parsing: </> against <file://h/a/b>'
+        - test: url-constructor.any.html?include=file
+          subtest: 'Parsing: </..//localhost//pig> against <file://lion/>'
+        - test: url-constructor.any.html?include=file
+          subtest: 'Parsing: </rooibos> against <file://tea/>'
+        - test: url-constructor.any.html?include=file
+          subtest: 'Parsing: </?chai> against <file://tea/>'
+        - test: url-constructor.any.html?include=file
+          subtest: 'Parsing: <C|> against <file://host/dir/file>'
+        - test: url-constructor.any.html?include=file
+          subtest: 'Parsing: <C|> against <file://host/D:/dir1/dir2/file>'
+        - test: url-constructor.any.html?include=file
+          subtest: 'Parsing: <C|#> against <file://host/dir/file>'
+        - test: url-constructor.any.html?include=file
+          subtest: 'Parsing: <C|?> against <file://host/dir/file>'
+        - test: url-constructor.any.html?include=file
+          subtest: 'Parsing: <C|/> against <file://host/dir/file>'
+        - test: url-constructor.any.html?include=file
+          subtest: |-
+            Parsing: <C|
+            /> against <file://host/dir/file>
+        - test: url-constructor.any.html?include=file
+          subtest: 'Parsing: <C|\> against <file://host/dir/file>'
+        - test: url-constructor.any.html?include=file
+          subtest: 'Parsing: <C> against <file://host/dir/file>'
+        - test: url-constructor.any.html?include=file
+          subtest: 'Parsing: <C|a> against <file://host/dir/file>'
+        - test: url-constructor.any.html?include=file
+          subtest: 'Parsing: </c:/foo/bar> against <file://host/path>'
+        - test: url-constructor.any.html?include=file
+          subtest: 'Parsing: <file://example.net/C:/> without base'
+        - test: url-constructor.any.html?include=file
+          subtest: 'Parsing: <file://1.2.3.4/C:/> without base'
+        - test: url-constructor.any.html?include=file
+          subtest: 'Parsing: <file://[1::8]/C:/> without base'
+        - test: url-constructor.any.html?include=file
+          subtest: 'Parsing: <C|/> against <file://host/>'
+        - test: url-constructor.any.html?include=file
+          subtest: 'Parsing: </C:/> against <file://host/>'
+        - test: url-constructor.any.html?include=file
+          subtest: 'Parsing: <file:C:/> against <file://host/>'
+        - test: url-constructor.any.html?include=file
+          subtest: 'Parsing: <file:/C:/> against <file://host/>'
+        - test: url-constructor.any.html?include=file
+          subtest: 'Parsing: <//one/two> against <file:///>'
+        - test: url-constructor.any.html?include=file
+          subtest: 'Parsing: <file://a­b/p> without base'
+        - test: url-constructor.any.html?include=file
+          subtest: 'Parsing: <file://a%C2%ADb/p> without base'
+        - test: url-constructor.any.html?include=file
+          subtest: 'Parsing: <file://%C2%AD/p> without base'
+        - test: url-constructor.any.html?include=file
+          subtest: 'Parsing: <//a/../> against <file:///>'
     - product: firefox
       url: https://bugzilla.mozilla.org/show_bug.cgi?id=1873906
       results:
