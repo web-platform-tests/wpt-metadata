@@ -630,3 +630,5 @@ links:
           subtest: 'Parsing: <data:///test> against <about:blank>'
         - test: a-element-xhtml.xhtml?exclude=(file|javascript|mailto)
           subtest: 'Parsing: <data://test/a/../b> against <about:blank>'
+        - test: a-element.html?exclude=(file|javascript|mailto)
+          subtest: 'Parsing: <data://example.com:8080/pathname?search#hash> against <about:blank>'
