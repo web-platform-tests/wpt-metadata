@@ -754,3 +754,13 @@ links:
           subtest: 'Parsing: <data:///test> against <about:blank>'
         - test: a-element.html?exclude=(file|javascript|mailto)
           subtest: 'Parsing: <data://test/a/../b> against <about:blank>'
+        - test: url-constructor.any.html?exclude=(file|javascript|mailto)
+          subtest: 'Parsing: <about:/../> without base'
+        - test: url-constructor.any.html?exclude=(file|javascript|mailto)
+          subtest: 'Parsing: <data:/../> without base'
+        - test: url-constructor.any.html?exclude=(file|javascript|mailto)
+          subtest: 'Parsing: <data:///test> without base'
+        - test: url-constructor.any.html?exclude=(file|javascript|mailto)
+          subtest: 'Parsing: <data://test/a/../b> without base'
+        - test: url-constructor.any.html?exclude=(file|javascript|mailto)
+          subtest: 'Parsing: <data://example.com:8080/pathname?search#hash> without base'
