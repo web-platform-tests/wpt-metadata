@@ -886,3 +886,12 @@ links:
       results:
         - test: a-element-xhtml.xhtml?exclude=(file|javascript|mailto)
           subtest: 'Parsing: <wss://host/ !"$%&''()*+,-./:;<=>@[\]^_`{|}~> against <about:blank>'
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1873976
+      results:
+        - test: a-element-xhtml.xhtml?include=file
+          subtest: 'Parsing: <file:c:\foo\bar.html> against <file:///tmp/mock/path>'
+        - test: a-element-xhtml.xhtml?include=file
+          subtest: 'Parsing: <  File:c|////foo\bar.html> against <file:///tmp/mock/path>'
+        - test: a-element-xhtml.xhtml?include=file
+          subtest: 'Parsing: <C|/foo/bar> against <file:///tmp/mock/path>'
