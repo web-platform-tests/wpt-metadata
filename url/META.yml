@@ -881,3 +881,8 @@ links:
       results:
         - test: url-setters.any.html?exclude=(file|javascript|mailto)
           subtest: 'URL: Setting <http://example.net/home?lang=fr#nav>.pathname = ''\a\%2E\b\%2e.\c'' \ is a segment delimiter for ''special'' URLs'
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1873973
+      results:
+        - test: a-element-xhtml.xhtml?exclude=(file|javascript|mailto)
+          subtest: 'Parsing: <wss://host/ !"$%&''()*+,-./:;<=>@[\]^_`{|}~> against <about:blank>'
