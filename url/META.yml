@@ -459,6 +459,8 @@ links:
           subtest: 'Parsing: <file://%C2%AD/p> without base'
         - test: url-constructor.any.html?include=file
           subtest: 'Parsing: <//a/../> against <file:///>'
+        - test: url-constructor.any.html?include=file
+          subtest: 'Parsing: <file://­/p> without base'
     - product: firefox
       url: https://bugzilla.mozilla.org/show_bug.cgi?id=1873906
       results:
