@@ -209,6 +209,10 @@ links:
           subtest: 'Origin parsing: <http://!"$&''()*+,-.;=_`{}~/> without base'
         - test: url-origin.any.html
           subtest: 'Origin parsing: <wss://!"$&''()*+,-.;=_`{}~/> without base'
+        - test: url-origin.any.worker.html
+          subtest: 'Origin parsing: <http://!"$&''()*+,-.;=_`{}~/> without base'
+        - test: url-origin.any.worker.html
+          subtest: 'Origin parsing: <wss://!"$&''()*+,-.;=_`{}~/> without base'
     - product: firefox
       url: https://bugzilla.mozilla.org/show_bug.cgi?id=1815932
       results:
