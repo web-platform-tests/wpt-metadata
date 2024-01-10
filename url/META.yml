@@ -382,3 +382,14 @@ links:
           subtest: '<a>: Setting <non-special://example.net:8080/path>.port = ''65536'' Port numbers are 16 bit integers, overflowing is an error'
         - test: url-setters-a-area.window.html?exclude=(file|javascript|mailto)
           subtest: '<area>: Setting <non-special://example.net:8080/path>.port = ''65536'' Port numbers are 16 bit integers, overflowing is an error'
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1834703
+      results:
+        - test: a-element-origin.html
+          subtest: 'Parsing origin: <blob:blob:https://example.org/> against <about:blank>'
+        - test: a-element-origin.html
+          subtest: 'Parsing origin: <blob:ftp://host/path> against <about:blank>'
+        - test: a-element-origin.html
+          subtest: 'Parsing origin: <blob:ws://example.org/> against <about:blank>'
+        - test: a-element-origin.html
+          subtest: 'Parsing origin: <blob:wss://example.org/> against <about:blank>'
