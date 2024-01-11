@@ -221,6 +221,10 @@ links:
           subtest: 'Parsing: <http://!"$&''()*+,-.;=_`{}~/> against <about:blank>'
         - test: a-element.html?exclude=(file|javascript|mailto)
           subtest: 'Parsing: <wss://!"$&''()*+,-.;=_`{}~/> against <about:blank>'
+        - test: url-constructor.any.html?exclude=(file|javascript|mailto)
+          subtest: 'Parsing: <http://!"$&''()*+,-.;=_`{}~/> without base'
+        - test: url-constructor.any.html?exclude=(file|javascript|mailto)
+          subtest: 'Parsing: <wss://!"$&''()*+,-.;=_`{}~/> without base'
     - product: firefox
       url: https://bugzilla.mozilla.org/show_bug.cgi?id=1815932
       results:
