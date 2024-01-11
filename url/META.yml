@@ -896,6 +896,8 @@ links:
           subtest: 'Parsing: <wss://host/ !"$%&''()*+,-./:;<=>@[\]^_`{|}~> against <about:blank>'
         - test: a-element.html?exclude=(file|javascript|mailto)
           subtest: 'Parsing: <wss://host/ !"$%&''()*+,-./:;<=>@[\]^_`{|}~> against <about:blank>'
+        - test: url-constructor.any.html?exclude=(file|javascript|mailto)
+          subtest: 'Parsing: <wss://host/ !"$%&''()*+,-./:;<=>@[\]^_`{|}~> without base'
     - product: firefox
       url: https://bugzilla.mozilla.org/show_bug.cgi?id=1873976
       results:
