@@ -919,3 +919,13 @@ links:
           subtest: 'Parsing: <..> against <file:///C:/>'
         - test: a-element.html?include=file
           subtest: 'Parsing: </> against <file:///C:/a/b>'
+        - test: url-constructor.any.html?include=file
+          subtest: 'Parsing: <file:c:\foo\bar.html> against <file:///tmp/mock/path>'
+        - test: url-constructor.any.html?include=file
+          subtest: 'Parsing: <  File:c|////foo\bar.html> against <file:///tmp/mock/path>'
+        - test: url-constructor.any.html?include=file
+          subtest: 'Parsing: <C|/foo/bar> against <file:///tmp/mock/path>'
+        - test: url-constructor.any.html?include=file
+          subtest: 'Parsing: <..> against <file:///C:/>'
+        - test: url-constructor.any.html?include=file
+          subtest: 'Parsing: </> against <file:///C:/a/b>'
