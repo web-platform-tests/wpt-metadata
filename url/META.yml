@@ -906,6 +906,8 @@ links:
           subtest: '<a>: Setting <data:/nospace>.pathname = ''space '' Non-special URLs with non-opaque paths percent-encode U+0020'
         - test: url-setters-a-area.window.html?exclude=(file|javascript|mailto)
           subtest: '<area>: Setting <data:/nospace>.pathname = ''space '' Non-special URLs with non-opaque paths percent-encode U+0020'
+        - test: url-setters.any.html?exclude=(file|javascript|mailto)
+          subtest: 'URL: Setting <data:/nospace>.pathname = ''space '' Non-special URLs with non-opaque paths percent-encode U+0020'
     - product: firefox
       url: https://bugzilla.mozilla.org/show_bug.cgi?id=1873955
       results:
