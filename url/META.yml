@@ -1016,3 +1016,15 @@ links:
           subtest: 'URL: Setting <non-spec:/>.pathname = ''//p'''
         - test: url-setters.any.html?exclude=(file|javascript|mailto)
           subtest: 'URL: Setting <non-spec:/.//>.pathname = ''p'' Drop /. from path'
+        - test: url-setters.any.worker.html?exclude=(file|javascript|mailto)
+          subtest: 'URL: Setting <non-spec:/.//>.pathname = ''p'' Drop /. from path'
+        - test: url-setters.any.worker.html?exclude=(file|javascript|mailto)
+          subtest: 'URL: Setting <non-spec:/>.pathname = ''//p'''
+        - test: url-setters.any.worker.html?exclude=(file|javascript|mailto)
+          subtest: 'URL: Setting <non-spec:/>.pathname = ''/..//p'''
+        - test: url-setters.any.worker.html?exclude=(file|javascript|mailto)
+          subtest: 'URL: Setting <non-spec:/>.pathname = ''/.//p'' Serialize /. in path'
+        - test: url-setters.any.worker.html?exclude=(file|javascript|mailto)
+          subtest: 'URL: Setting <non-spec:/.//p>.hostname = '''''
+        - test: url-setters.any.worker.html?exclude=(file|javascript|mailto)
+          subtest: 'URL: Setting <non-spec:/.//p>.hostname = ''h'' Drop /. from path'
