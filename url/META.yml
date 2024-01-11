@@ -780,6 +780,8 @@ links:
           subtest: 'Parsing: <http://example.com/foo/%2e> against <about:blank>'
         - test: url-constructor.any.html?exclude=(file|javascript|mailto)
           subtest: 'Parsing: <http://example.com/foo/%2e> without base'
+        - test: url-constructor.any.worker.html?exclude=(file|javascript|mailto)
+          subtest: 'Parsing: <http://example.com/foo/%2e> without base'
     - product: firefox
       url: https://bugzilla.mozilla.org/show_bug.cgi?id=1873940
       results:
