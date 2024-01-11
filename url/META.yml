@@ -902,6 +902,10 @@ links:
           subtest: 'Parsing: <data:///test> without base'
         - test: url-constructor.any.worker.html?exclude=(file|javascript|mailto)
           subtest: 'Parsing: <data://example.com:8080/pathname?search#hash> without base'
+        - test: url-setters-a-area.window.html?exclude=(file|javascript|mailto)
+          subtest: '<a>: Setting <data:/nospace>.pathname = ''space '' Non-special URLs with non-opaque paths percent-encode U+0020'
+        - test: url-setters-a-area.window.html?exclude=(file|javascript|mailto)
+          subtest: '<area>: Setting <data:/nospace>.pathname = ''space '' Non-special URLs with non-opaque paths percent-encode U+0020'
     - product: firefox
       url: https://bugzilla.mozilla.org/show_bug.cgi?id=1873955
       results:
