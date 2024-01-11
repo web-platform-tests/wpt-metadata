@@ -975,6 +975,12 @@ links:
           subtest: 'Parsing: <..> against <file:///C:/>'
         - test: url-constructor.any.worker.html?include=file
           subtest: 'Parsing: </> against <file:///C:/a/b>'
+        - test: a-element-xhtml.xhtml?include=file
+          subtest: 'Parsing: <file:..> against <http://www.example.com/test>'
+        - test: a-element-xhtml.xhtml?include=file
+          subtest: 'Parsing: <..> against <file:///C:/>'
+        - test: a-element-xhtml.xhtml?include=file
+          subtest: 'Parsing: </> against <file:///C:/a/b>'
     - product: firefox
       url: https://bugzilla.mozilla.org/show_bug.cgi?id=1874117
       results:
