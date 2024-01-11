@@ -980,6 +980,10 @@ links:
           subtest: '<a>: Setting <foo:///some/path>.pathname = '''' Non-special URLs with an empty host can have their paths erased'
         - test: url-setters-a-area.window.html?exclude=(file|javascript|mailto)
           subtest: '<area>: Setting <foo:///some/path>.pathname = '''' Non-special URLs with an empty host can have their paths erased'
+        - test: url-setters.any.html?exclude=(file|javascript|mailto)
+          subtest: 'URL: Setting <foo://somehost/some/path>.pathname = '''' Non-special URLs can have their paths erased'
+        - test: url-setters.any.html?exclude=(file|javascript|mailto)
+          subtest: 'URL: Setting <foo:///some/path>.pathname = '''' Non-special URLs with an empty host can have their paths erased'
     - product: firefox
       url: https://bugzilla.mozilla.org/show_bug.cgi?id=1874118
       results:
