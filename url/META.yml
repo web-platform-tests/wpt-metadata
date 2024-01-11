@@ -219,6 +219,8 @@ links:
           subtest: 'Parsing origin: <wss://!"$&''()*+,-.;=_`{}~/> against <about:blank>'
         - test: a-element-xhtml.xhtml?exclude=(file|javascript|mailto)
           subtest: 'Parsing: <http://!"$&''()*+,-.;=_`{}~/> against <about:blank>'
+        - test: a-element.html?exclude=(file|javascript|mailto)
+          subtest: 'Parsing: <wss://!"$&''()*+,-.;=_`{}~/> against <about:blank>'
     - product: firefox
       url: https://bugzilla.mozilla.org/show_bug.cgi?id=1815932
       results:
