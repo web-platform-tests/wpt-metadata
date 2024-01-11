@@ -1002,3 +1002,7 @@ links:
           subtest: '<a>: Setting <non-spec:/>.pathname = ''//p'''
         - test: url-setters-a-area.window.html?exclude=(file|javascript|mailto)
           subtest: '<area>: Setting <non-spec:/>.pathname = ''//p'''
+        - test: url-setters.any.html?exclude=(file|javascript|mailto)
+          subtest: 'URL: Setting <non-spec:/.//p>.hostname = ''h'' Drop /. from path'
+        - test: url-setters.any.html?exclude=(file|javascript|mailto)
+          subtest: 'URL: Setting <non-spec:/.//p>.hostname = '''''
