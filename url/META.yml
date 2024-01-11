@@ -975,6 +975,18 @@ links:
           subtest: 'Parsing: <..> against <file:///C:/>'
         - test: url-constructor.any.worker.html?include=file
           subtest: 'Parsing: </> against <file:///C:/a/b>'
+        - test: url-constructor.any.worker.html?include=file
+          subtest: 'Parsing: <file:c:\foo\bar.html> against <file:///tmp/mock/path>'
+        - test: url-constructor.any.worker.html?include=file
+          subtest: 'Parsing: <  File:c|////foo\bar.html> against <file:///tmp/mock/path>'
+        - test: url-constructor.any.worker.html?include=file
+          subtest: 'Parsing: <C|/foo/bar> against <file:///tmp/mock/path>'
+        - test: url-constructor.any.worker.html?include=file
+          subtest: 'Parsing: <file:..> against <http://www.example.com/test>'
+        - test: url-constructor.any.worker.html?include=file
+          subtest: 'Parsing: <..> against <file:///C:/>'
+        - test: url-constructor.any.worker.html?include=file
+          subtest: 'Parsing: </> against <file:///C:/a/b>'
     - product: firefox
       url: https://bugzilla.mozilla.org/show_bug.cgi?id=1874117
       results:
