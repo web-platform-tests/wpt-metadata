@@ -729,6 +729,8 @@ links:
           subtest: 'Parsing: <file://xn--/p> without base'
         - test: url-constructor.any.worker.html?include=file
           subtest: 'Parsing: <//a/../> against <file:///>'
+        - test: a-element-xhtml.xhtml?include=file
+          subtest: 'Parsing: <file://­/p> against <about:blank>'
     - product: firefox
       url: https://bugzilla.mozilla.org/show_bug.cgi?id=1873906
       results:
