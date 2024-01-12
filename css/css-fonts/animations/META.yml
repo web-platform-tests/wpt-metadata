@@ -1,198 +1,148 @@
 links:
-- product: chrome
-  results:
-  - status: FAIL
-    test: font-variation-settings-interpolation.html
-  url: https://bugs.chromium.org/p/chromium/issues/detail?id=1005355
-- product: safari
-  results:
-  - status: FAIL
-    test: font-size-adjust-interpolation.html
-  url: https://bugs.webkit.org/show_bug.cgi?id=15257
-- product: webkitgtk
-  results:
-  - status: FAIL
-    test: font-size-adjust-interpolation.html
-  url: https://bugs.webkit.org/show_bug.cgi?id=15257
-- product: firefox
-  results:
-  - subtest: 'Compositing: property <font-variation-settings> underlying [''aaaa''
-      100, ''bbbb'' 200] from add [''aaaa'' 20, ''bbbb'' 50] to add [''aaaa'' 30,
-      ''bbbb'' 100] at (-0.3) should be [''aaaa'' 117, ''bbbb'' 235]'
-    test: font-variation-settings-composition.html
-  - subtest: 'Compositing: property <font-variation-settings> underlying [''aaaa''
-      100, ''bbbb'' 200] from add [''aaaa'' 20, ''bbbb'' 50] to add [''aaaa'' 30,
-      ''bbbb'' 100] at (0) should be [''aaaa'' 120, ''bbbb'' 250]'
-    test: font-variation-settings-composition.html
-  - subtest: 'Compositing: property <font-variation-settings> underlying [''aaaa''
-      100, ''bbbb'' 200] from add [''aaaa'' 20, ''bbbb'' 50] to add [''aaaa'' 30,
-      ''bbbb'' 100] at (0.5) should be [''aaaa'' 125, ''bbbb'' 275]'
-    test: font-variation-settings-composition.html
-  - subtest: 'Compositing: property <font-variation-settings> underlying [''aaaa''
-      100, ''bbbb'' 200] from add [''aaaa'' 20, ''bbbb'' 50] to add [''aaaa'' 30,
-      ''bbbb'' 100] at (1) should be [''aaaa'' 130, ''bbbb'' 300]'
-    test: font-variation-settings-composition.html
-  - subtest: 'Compositing: property <font-variation-settings> underlying [''aaaa''
-      100, ''bbbb'' 200] from add [''aaaa'' 20, ''bbbb'' 50] to add [''aaaa'' 30,
-      ''bbbb'' 100] at (1.5) should be [''aaaa'' 135, ''bbbb'' 325]'
-    test: font-variation-settings-composition.html
-  - subtest: 'Compositing: property <font-variation-settings> underlying [''test''
-      100] from add [''aaaa'' 20, ''bbbb'' 50] to add [''aaaa'' 30, ''bbbb'' 100]
-      at (-0.3) should be [''aaaa'' 17, ''bbbb'' 35]'
-    test: font-variation-settings-composition.html
-  - subtest: 'Compositing: property <font-variation-settings> underlying [''test''
-      100] from add [''aaaa'' 20, ''bbbb'' 50] to add [''aaaa'' 30, ''bbbb'' 100]
-      at (0) should be [''aaaa'' 20, ''bbbb'' 50]'
-    test: font-variation-settings-composition.html
-  - subtest: 'Compositing: property <font-variation-settings> underlying [''test''
-      100] from add [''aaaa'' 20, ''bbbb'' 50] to add [''aaaa'' 30, ''bbbb'' 100]
-      at (0.5) should be [''aaaa'' 25, ''bbbb'' 75]'
-    test: font-variation-settings-composition.html
-  - subtest: 'Compositing: property <font-variation-settings> underlying [''test''
-      100] from add [''aaaa'' 20, ''bbbb'' 50] to add [''aaaa'' 30, ''bbbb'' 100]
-      at (1) should be [''aaaa'' 30, ''bbbb'' 100]'
-    test: font-variation-settings-composition.html
-  - subtest: 'Compositing: property <font-variation-settings> underlying [''test''
-      100] from add [''aaaa'' 20, ''bbbb'' 50] to add [''aaaa'' 30, ''bbbb'' 100]
-      at (1.5) should be [''aaaa'' 35, ''bbbb'' 125]'
-    test: font-variation-settings-composition.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1674746
-- product: chrome
-  results:
-  - test: font-size-adjust-interpolation.html
-  url: https://bugs.chromium.org/p/chromium/issues/detail?id=900581
-- product: chrome
-  results:
-  - test: font-stretch-interpolation.html
-  url: https://bugs.chromium.org/p/chromium/issues/detail?id=1204775
-- product: safari
-  results:
-  - test: font-stretch-interpolation.html
-  url: https://bugs.webkit.org/show_bug.cgi?id=235791
-- product: safari
-  results:
-  - test: font-variation-settings-composition.html
-  url: https://bugs.webkit.org/show_bug.cgi?id=235774
-- product: safari
-  results:
-  - test: font-size-adjust-interpolation.html
-  url: https://bugs.webkit.org/show_bug.cgi?id=235790
-- product: safari
-  results:
-  - test: font-variation-settings-interpolation.html
-  url: https://bugs.webkit.org/show_bug.cgi?id=235792
-- product: safari
-  results:
-  - test: system-fonts.html
-  url: https://bugs.webkit.org/show_bug.cgi?id=235793
-- product: safari
-  results:
-  - test: font-style-interpolation.html
-  url: https://bugs.webkit.org/show_bug.cgi?id=258510
-- product: firefox
-  results:
-  - subtest: 'CSS Transitions: property <font-palette> from [light] to [dark] at (-2)
-      should be [light]'
-    test: font-palette-interpolation.html
-  - subtest: 'CSS Transitions: property <font-palette> from [light] to [dark] at (-0.25)
-      should be [light]'
-    test: font-palette-interpolation.html
-  - subtest: 'CSS Transitions: property <font-palette> from [light] to [dark] at (0)
-      should be [light]'
-    test: font-palette-interpolation.html
-  - subtest: 'CSS Transitions: property <font-palette> from [light] to [dark] at (0.3)
-      should be [palette-mix(in oklab, light, dark 30%)]'
-    test: font-palette-interpolation.html
-  - subtest: 'CSS Transitions: property <font-palette> from [light] to [dark] at (0.6)
-      should be [palette-mix(in oklab, light, dark 60%)]'
-    test: font-palette-interpolation.html
-  - subtest: 'CSS Transitions with transition: all: property <font-palette> from [light]
-      to [dark] at (-2) should be [light]'
-    test: font-palette-interpolation.html
-  - subtest: 'CSS Transitions with transition: all: property <font-palette> from [light]
-      to [dark] at (-0.25) should be [light]'
-    test: font-palette-interpolation.html
-  - subtest: 'CSS Transitions with transition: all: property <font-palette> from [light]
-      to [dark] at (0) should be [light]'
-    test: font-palette-interpolation.html
-  - subtest: 'CSS Transitions with transition: all: property <font-palette> from [light]
-      to [dark] at (0.3) should be [palette-mix(in oklab, light, dark 30%)]'
-    test: font-palette-interpolation.html
-  - subtest: 'CSS Transitions with transition: all: property <font-palette> from [light]
-      to [dark] at (0.6) should be [palette-mix(in oklab, light, dark 60%)]'
-    test: font-palette-interpolation.html
-  - subtest: 'CSS Animations: property <font-palette> from [light] to [dark] at (0.3)
-      should be [palette-mix(in oklab, light, dark 30%)]'
-    test: font-palette-interpolation.html
-  - subtest: 'CSS Animations: property <font-palette> from [light] to [dark] at (0.6)
-      should be [palette-mix(in oklab, light, dark 60%)]'
-    test: font-palette-interpolation.html
-  - subtest: 'Web Animations: property <font-palette> from [light] to [dark] at (0.3)
-      should be [palette-mix(in oklab, light, dark 30%)]'
-    test: font-palette-interpolation.html
-  - subtest: 'Web Animations: property <font-palette> from [light] to [dark] at (0.6)
-      should be [palette-mix(in oklab, light, dark 60%)]'
-    test: font-palette-interpolation.html
-  - subtest: 'CSS Transitions: property <font-palette> from [initial] to [inherit]
-      at (-2) should be [normal]'
-    test: font-palette-interpolation.html
-  - subtest: 'CSS Transitions: property <font-palette> from [initial] to [inherit]
-      at (-0.25) should be [normal]'
-    test: font-palette-interpolation.html
-  - subtest: 'CSS Transitions: property <font-palette> from [initial] to [inherit]
-      at (0) should be [normal]'
-    test: font-palette-interpolation.html
-  - subtest: 'CSS Transitions: property <font-palette> from [initial] to [inherit]
-      at (0.3) should be [palette-mix(in oklab, normal, light 30%)]'
-    test: font-palette-interpolation.html
-  - subtest: 'CSS Transitions: property <font-palette> from [initial] to [inherit]
-      at (0.6) should be [palette-mix(in oklab, normal, light 60%)]'
-    test: font-palette-interpolation.html
-  - subtest: 'CSS Transitions with transition: all: property <font-palette> from [initial]
-      to [inherit] at (-2) should be [normal]'
-    test: font-palette-interpolation.html
-  - subtest: 'CSS Transitions with transition: all: property <font-palette> from [initial]
-      to [inherit] at (-0.25) should be [normal]'
-    test: font-palette-interpolation.html
-  - subtest: 'CSS Transitions with transition: all: property <font-palette> from [initial]
-      to [inherit] at (0) should be [normal]'
-    test: font-palette-interpolation.html
-  - subtest: 'CSS Transitions with transition: all: property <font-palette> from [initial]
-      to [inherit] at (0.3) should be [palette-mix(in oklab, normal, light 30%)]'
-    test: font-palette-interpolation.html
-  - subtest: 'CSS Transitions with transition: all: property <font-palette> from [initial]
-      to [inherit] at (0.6) should be [palette-mix(in oklab, normal, light 60%)]'
-    test: font-palette-interpolation.html
-  - subtest: 'CSS Animations: property <font-palette> from [initial] to [inherit]
-      at (0.6) should be [palette-mix(in oklab, normal, light 60%)]'
-    test: font-palette-interpolation.html
-  - subtest: 'Web Animations: property <font-palette> from [initial] to [inherit]
-      at (0.6) should be [palette-mix(in oklab, normal, light 60%)]'
-    test: font-palette-interpolation.html
-  - subtest: 'CSS Transitions: property <font-palette> from [--custom-palette] to
-      [normal] at (-2) should be [--custom-palette]'
-    test: font-palette-interpolation.html
-  - subtest: 'CSS Transitions: property <font-palette> from [--custom-palette] to
-      [normal] at (-0.25) should be [--custom-palette]'
-    test: font-palette-interpolation.html
-  - subtest: 'CSS Transitions: property <font-palette> from [--custom-palette] to
-      [normal] at (0) should be [--custom-palette]'
-    test: font-palette-interpolation.html
-  - subtest: 'CSS Transitions with transition: all: property <font-palette> from [--custom-palette]
-      to [normal] at (-2) should be [--custom-palette]'
-    test: font-palette-interpolation.html
-  - subtest: 'CSS Transitions with transition: all: property <font-palette> from [--custom-palette]
-      to [normal] at (-0.25) should be [--custom-palette]'
-    test: font-palette-interpolation.html
-  - subtest: 'CSS Transitions with transition: all: property <font-palette> from [--custom-palette]
-      to [normal] at (0) should be [--custom-palette]'
-    test: font-palette-interpolation.html
-  - subtest: 'CSS Animations: property <font-palette> from [--custom-palette] to [normal]
-      at (0.3) should be [palette-mix(in oklab, --custom-palette, normal 30%)]'
-    test: font-palette-interpolation.html
-  - subtest: 'Web Animations: property <font-palette> from [--custom-palette] to [normal]
-      at (0.3) should be [palette-mix(in oklab, --custom-palette, normal 30%)]'
-    test: font-palette-interpolation.html
-  - subtest: An interpolation to inherit updates correctly on a parent style change.
-    test: font-palette-interpolation.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1860774
+    - product: chrome
+      url: https://bugs.chromium.org/p/chromium/issues/detail?id=1005355
+      results:
+        - test: font-variation-settings-interpolation.html
+          status: FAIL
+    - product: safari
+      url: https://bugs.webkit.org/show_bug.cgi?id=15257
+      results:
+        - test: font-size-adjust-interpolation.html
+          status: FAIL
+    - product: webkitgtk
+      url: https://bugs.webkit.org/show_bug.cgi?id=15257
+      results:
+        - test: font-size-adjust-interpolation.html
+          status: FAIL
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1674746
+      results:
+        - test: font-variation-settings-composition.html
+          subtest: 'Compositing: property <font-variation-settings> underlying [''aaaa'' 100, ''bbbb'' 200] from add [''aaaa'' 20, ''bbbb'' 50] to add [''aaaa'' 30, ''bbbb'' 100] at (-0.3) should be [''aaaa'' 117, ''bbbb'' 235]'
+        - test: font-variation-settings-composition.html
+          subtest: 'Compositing: property <font-variation-settings> underlying [''aaaa'' 100, ''bbbb'' 200] from add [''aaaa'' 20, ''bbbb'' 50] to add [''aaaa'' 30, ''bbbb'' 100] at (0) should be [''aaaa'' 120, ''bbbb'' 250]'
+        - test: font-variation-settings-composition.html
+          subtest: 'Compositing: property <font-variation-settings> underlying [''aaaa'' 100, ''bbbb'' 200] from add [''aaaa'' 20, ''bbbb'' 50] to add [''aaaa'' 30, ''bbbb'' 100] at (0.5) should be [''aaaa'' 125, ''bbbb'' 275]'
+        - test: font-variation-settings-composition.html
+          subtest: 'Compositing: property <font-variation-settings> underlying [''aaaa'' 100, ''bbbb'' 200] from add [''aaaa'' 20, ''bbbb'' 50] to add [''aaaa'' 30, ''bbbb'' 100] at (1) should be [''aaaa'' 130, ''bbbb'' 300]'
+        - test: font-variation-settings-composition.html
+          subtest: 'Compositing: property <font-variation-settings> underlying [''aaaa'' 100, ''bbbb'' 200] from add [''aaaa'' 20, ''bbbb'' 50] to add [''aaaa'' 30, ''bbbb'' 100] at (1.5) should be [''aaaa'' 135, ''bbbb'' 325]'
+        - test: font-variation-settings-composition.html
+          subtest: 'Compositing: property <font-variation-settings> underlying [''test'' 100] from add [''aaaa'' 20, ''bbbb'' 50] to add [''aaaa'' 30, ''bbbb'' 100] at (-0.3) should be [''aaaa'' 17, ''bbbb'' 35]'
+        - test: font-variation-settings-composition.html
+          subtest: 'Compositing: property <font-variation-settings> underlying [''test'' 100] from add [''aaaa'' 20, ''bbbb'' 50] to add [''aaaa'' 30, ''bbbb'' 100] at (0) should be [''aaaa'' 20, ''bbbb'' 50]'
+        - test: font-variation-settings-composition.html
+          subtest: 'Compositing: property <font-variation-settings> underlying [''test'' 100] from add [''aaaa'' 20, ''bbbb'' 50] to add [''aaaa'' 30, ''bbbb'' 100] at (0.5) should be [''aaaa'' 25, ''bbbb'' 75]'
+        - test: font-variation-settings-composition.html
+          subtest: 'Compositing: property <font-variation-settings> underlying [''test'' 100] from add [''aaaa'' 20, ''bbbb'' 50] to add [''aaaa'' 30, ''bbbb'' 100] at (1) should be [''aaaa'' 30, ''bbbb'' 100]'
+        - test: font-variation-settings-composition.html
+          subtest: 'Compositing: property <font-variation-settings> underlying [''test'' 100] from add [''aaaa'' 20, ''bbbb'' 50] to add [''aaaa'' 30, ''bbbb'' 100] at (1.5) should be [''aaaa'' 35, ''bbbb'' 125]'
+    - product: chrome
+      url: https://bugs.chromium.org/p/chromium/issues/detail?id=900581
+      results:
+        - test: font-size-adjust-interpolation.html
+    - product: chrome
+      url: https://bugs.chromium.org/p/chromium/issues/detail?id=1204775
+      results:
+        - test: font-stretch-interpolation.html
+    - product: safari
+      url: https://bugs.webkit.org/show_bug.cgi?id=235791
+      results:
+        - test: font-stretch-interpolation.html
+    - product: safari
+      url: https://bugs.webkit.org/show_bug.cgi?id=235774
+      results:
+        - test: font-variation-settings-composition.html
+    - product: safari
+      url: https://bugs.webkit.org/show_bug.cgi?id=235790
+      results:
+        - test: font-size-adjust-interpolation.html
+    - product: safari
+      url: https://bugs.webkit.org/show_bug.cgi?id=235792
+      results:
+        - test: font-variation-settings-interpolation.html
+    - product: safari
+      url: https://bugs.webkit.org/show_bug.cgi?id=235793
+      results:
+        - test: system-fonts.html
+    - product: safari
+      url: https://bugs.webkit.org/show_bug.cgi?id=258510
+      results:
+        - test: font-style-interpolation.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1860774
+      results:
+        - test: font-palette-interpolation.html
+          subtest: 'CSS Transitions: property <font-palette> from [light] to [dark] at (-2) should be [light]'
+        - test: font-palette-interpolation.html
+          subtest: 'CSS Transitions: property <font-palette> from [light] to [dark] at (-0.25) should be [light]'
+        - test: font-palette-interpolation.html
+          subtest: 'CSS Transitions: property <font-palette> from [light] to [dark] at (0) should be [light]'
+        - test: font-palette-interpolation.html
+          subtest: 'CSS Transitions: property <font-palette> from [light] to [dark] at (0.3) should be [palette-mix(in oklab, light, dark 30%)]'
+        - test: font-palette-interpolation.html
+          subtest: 'CSS Transitions: property <font-palette> from [light] to [dark] at (0.6) should be [palette-mix(in oklab, light, dark 60%)]'
+        - test: font-palette-interpolation.html
+          subtest: 'CSS Transitions with transition: all: property <font-palette> from [light] to [dark] at (-2) should be [light]'
+        - test: font-palette-interpolation.html
+          subtest: 'CSS Transitions with transition: all: property <font-palette> from [light] to [dark] at (-0.25) should be [light]'
+        - test: font-palette-interpolation.html
+          subtest: 'CSS Transitions with transition: all: property <font-palette> from [light] to [dark] at (0) should be [light]'
+        - test: font-palette-interpolation.html
+          subtest: 'CSS Transitions with transition: all: property <font-palette> from [light] to [dark] at (0.3) should be [palette-mix(in oklab, light, dark 30%)]'
+        - test: font-palette-interpolation.html
+          subtest: 'CSS Transitions with transition: all: property <font-palette> from [light] to [dark] at (0.6) should be [palette-mix(in oklab, light, dark 60%)]'
+        - test: font-palette-interpolation.html
+          subtest: 'CSS Animations: property <font-palette> from [light] to [dark] at (0.3) should be [palette-mix(in oklab, light, dark 30%)]'
+        - test: font-palette-interpolation.html
+          subtest: 'CSS Animations: property <font-palette> from [light] to [dark] at (0.6) should be [palette-mix(in oklab, light, dark 60%)]'
+        - test: font-palette-interpolation.html
+          subtest: 'Web Animations: property <font-palette> from [light] to [dark] at (0.3) should be [palette-mix(in oklab, light, dark 30%)]'
+        - test: font-palette-interpolation.html
+          subtest: 'Web Animations: property <font-palette> from [light] to [dark] at (0.6) should be [palette-mix(in oklab, light, dark 60%)]'
+        - test: font-palette-interpolation.html
+          subtest: 'CSS Transitions: property <font-palette> from [initial] to [inherit] at (-2) should be [normal]'
+        - test: font-palette-interpolation.html
+          subtest: 'CSS Transitions: property <font-palette> from [initial] to [inherit] at (-0.25) should be [normal]'
+        - test: font-palette-interpolation.html
+          subtest: 'CSS Transitions: property <font-palette> from [initial] to [inherit] at (0) should be [normal]'
+        - test: font-palette-interpolation.html
+          subtest: 'CSS Transitions: property <font-palette> from [initial] to [inherit] at (0.3) should be [palette-mix(in oklab, normal, light 30%)]'
+        - test: font-palette-interpolation.html
+          subtest: 'CSS Transitions: property <font-palette> from [initial] to [inherit] at (0.6) should be [palette-mix(in oklab, normal, light 60%)]'
+        - test: font-palette-interpolation.html
+          subtest: 'CSS Transitions with transition: all: property <font-palette> from [initial] to [inherit] at (-2) should be [normal]'
+        - test: font-palette-interpolation.html
+          subtest: 'CSS Transitions with transition: all: property <font-palette> from [initial] to [inherit] at (-0.25) should be [normal]'
+        - test: font-palette-interpolation.html
+          subtest: 'CSS Transitions with transition: all: property <font-palette> from [initial] to [inherit] at (0) should be [normal]'
+        - test: font-palette-interpolation.html
+          subtest: 'CSS Transitions with transition: all: property <font-palette> from [initial] to [inherit] at (0.3) should be [palette-mix(in oklab, normal, light 30%)]'
+        - test: font-palette-interpolation.html
+          subtest: 'CSS Transitions with transition: all: property <font-palette> from [initial] to [inherit] at (0.6) should be [palette-mix(in oklab, normal, light 60%)]'
+        - test: font-palette-interpolation.html
+          subtest: 'CSS Animations: property <font-palette> from [initial] to [inherit] at (0.6) should be [palette-mix(in oklab, normal, light 60%)]'
+        - test: font-palette-interpolation.html
+          subtest: 'Web Animations: property <font-palette> from [initial] to [inherit] at (0.6) should be [palette-mix(in oklab, normal, light 60%)]'
+        - test: font-palette-interpolation.html
+          subtest: 'CSS Transitions: property <font-palette> from [--custom-palette] to [normal] at (-2) should be [--custom-palette]'
+        - test: font-palette-interpolation.html
+          subtest: 'CSS Transitions: property <font-palette> from [--custom-palette] to [normal] at (-0.25) should be [--custom-palette]'
+        - test: font-palette-interpolation.html
+          subtest: 'CSS Transitions: property <font-palette> from [--custom-palette] to [normal] at (0) should be [--custom-palette]'
+        - test: font-palette-interpolation.html
+          subtest: 'CSS Transitions with transition: all: property <font-palette> from [--custom-palette] to [normal] at (-2) should be [--custom-palette]'
+        - test: font-palette-interpolation.html
+          subtest: 'CSS Transitions with transition: all: property <font-palette> from [--custom-palette] to [normal] at (-0.25) should be [--custom-palette]'
+        - test: font-palette-interpolation.html
+          subtest: 'CSS Transitions with transition: all: property <font-palette> from [--custom-palette] to [normal] at (0) should be [--custom-palette]'
+        - test: font-palette-interpolation.html
+          subtest: 'CSS Animations: property <font-palette> from [--custom-palette] to [normal] at (0.3) should be [palette-mix(in oklab, --custom-palette, normal 30%)]'
+        - test: font-palette-interpolation.html
+          subtest: 'Web Animations: property <font-palette> from [--custom-palette] to [normal] at (0.3) should be [palette-mix(in oklab, --custom-palette, normal 30%)]'
+        - test: font-palette-interpolation.html
+          subtest: An interpolation to inherit updates correctly on a parent style change.
+    - label: interop-2024-font-size-adjust
+      results:
+        - test: font-size-adjust-interpolation.html
+        - test: font-size-adjust-composition.html
