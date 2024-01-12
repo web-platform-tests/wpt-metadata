@@ -20,16 +20,16 @@ jobs:
       run: ./main
 
     - name: Create pull request
-      uses: peter-evans/create-pull-request@v3
+      uses: peter-evans/create-pull-request@v5
       with:
-        token: ${{ secrets.GITHUB_TOKEN }}
-        author: wpt-pr-bot <wpt-pr-bot@users.noreply.github.com>
+        token: ${{ secrets.WPTMETADATA_BOT_USER_PAT }}
         title: "Resolve pending metadata"
         commit-message: "Reapply pending metadata from /api/metadata/pending in wpt.fyi"
         body: |
           This automated pull request reapplies pending metadata to the head of the wpt-metadata repository.
         branch: actions/merge-conflicts
         delete-branch: true
+        push-to-fork: wptmetadata-bot/wpt-metadata
   # Create a separate job for only the steps that need write permissions.
   enable-auto-merge:
     runs-on: ubuntu-latest
