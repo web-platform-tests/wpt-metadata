@@ -1,17 +1,43 @@
 links:
-- product: chrome
-  results:
-  - test: textarea-scrollbar-width-none.html
-  - test: scrollbar-width-parsing.html
-  url: https://crbug.com/891944
-- product: firefox
-  results:
-  - subtest: scrollbar-width thin on the body doesn't override ::-webkit-scrollbar
-      on root
-    test: scrollbar-width-014.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1838340
-- product: firefox
-  results:
-  - test: scrollbar-color-007.html
-  - test: scrollbar-color-008.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1843077
+    - product: chrome
+      url: https://crbug.com/891944
+      results:
+        - test: textarea-scrollbar-width-none.html
+        - test: scrollbar-width-parsing.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1838340
+      results:
+        - test: scrollbar-width-014.html
+          subtest: scrollbar-width thin on the body doesn't override ::-webkit-scrollbar on root
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1843077
+      results:
+        - test: scrollbar-color-007.html
+        - test: scrollbar-color-008.html
+    - label: interop-2024-scrollbars
+      results:
+        - test: scrollbar-width-003.html
+        - test: scrollbar-width-012.html
+        - test: scrollbar-width-013.html
+        - test: scrollbar-width-paint-001.html
+        - test: scrollbar-width-paint-002.html
+        - test: scrollbar-width-001.html
+        - test: scrollbar-width-002.html
+        - test: scrollbar-width-011.html
+        - test: scrollbar-width-014.html
+        - test: scrollbar-width-015.html
+        - test: scrollbar-width-016.html
+        - test: scrollbar-width-paint-005.html
+        - test: scrollbar-width-006.html
+        - test: scrollbar-width-009.html
+        - test: scrollbar-width-010.html
+        - test: scrollbar-width-paint-003.html
+        - test: scrollbar-width-paint-006.html
+        - test: scrollbar-width-005.html
+        - test: scrollbar-width-008.html
+        - test: scrollbar-width-keywords.html
+        - test: scrollbar-width-paint-004.html
+        - test: scrollbar-width-parsing.html
+        - test: textarea-scrollbar-width-none.html
+        - test: scrollbar-width-004.html
+        - test: scrollbar-width-007.html
