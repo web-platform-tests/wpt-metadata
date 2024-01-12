@@ -67,3 +67,13 @@ links:
         - test: videoFrame-texImage.any.worker.html
         - test: full-cycle-test.https.any.worker.html?vp8
         - test: videoDecoder-codec-specific.https.any.html?vp8
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1800882
+      results:
+        - test: videoFrame-canvasImageSource.html
+          subtest: <video> and VideoFrame constructed VideoFrame
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1872311
+      results:
+        - test: videoFrame-createImageBitmap.https.any.worker.html
+        - test: videoFrame-createImageBitmap.https.any.html

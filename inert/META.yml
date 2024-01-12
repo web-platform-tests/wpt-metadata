@@ -1,13 +1,13 @@
 links:
     - label: a11y
       results:
-        - test: "*"
+        - test: '*'
     - label: accessibility
       results:
-        - test: "*"
+        - test: '*'
     - label: inert
       results:
-        - test: "*"
+        - test: '*'
     - product: safari
       url: https://bugs.webkit.org/show_bug.cgi?id=239017
       results:
@@ -37,3 +37,10 @@ links:
         - test: inert-and-contenteditable.html
         - test: inert-does-not-match-disabled-selector.html
         - test: inert-in-shadow-dom.html
+    - product: chrome
+      url: https://bugs.chromium.org/p/chromium/issues/detail?id=1517832
+      results:
+        - test: inert-inlines-around-selection-range-in-contenteditable.html
+          subtest: <span inert style="display:none">a[bc</span><span>de]f</span>
+        - test: inert-inlines-around-selection-range-in-contenteditable.html
+          subtest: <span inert style="display:none">{abc</span><span>de]f</span>
