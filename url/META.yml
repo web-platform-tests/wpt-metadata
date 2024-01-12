@@ -877,6 +877,30 @@ links:
           subtest: 'Parsing: <non-spec:/..//> without base'
         - test: url-constructor.any.html?exclude=(file|javascript|mailto)
           subtest: 'Parsing: <non-spec:/.//> without base'
+        - test: url-constructor.any.worker.html?exclude=(file|javascript|mailto)
+          subtest: 'Parsing: <non-spec:/.//> without base'
+        - test: url-constructor.any.worker.html?exclude=(file|javascript|mailto)
+          subtest: 'Parsing: <non-spec:/..//> without base'
+        - test: url-constructor.any.worker.html?exclude=(file|javascript|mailto)
+          subtest: 'Parsing: <non-spec:/a/..//> without base'
+        - test: url-constructor.any.worker.html?exclude=(file|javascript|mailto)
+          subtest: 'Parsing: <non-spec:/.//path> without base'
+        - test: url-constructor.any.worker.html?exclude=(file|javascript|mailto)
+          subtest: 'Parsing: <non-spec:/..//path> without base'
+        - test: url-constructor.any.worker.html?exclude=(file|javascript|mailto)
+          subtest: 'Parsing: <non-spec:/a/..//path> without base'
+        - test: url-constructor.any.worker.html?exclude=(file|javascript|mailto)
+          subtest: 'Parsing: </.//path> against <non-spec:/p>'
+        - test: url-constructor.any.worker.html?exclude=(file|javascript|mailto)
+          subtest: 'Parsing: </..//path> against <non-spec:/p>'
+        - test: url-constructor.any.worker.html?exclude=(file|javascript|mailto)
+          subtest: 'Parsing: <..//path> against <non-spec:/p>'
+        - test: url-constructor.any.worker.html?exclude=(file|javascript|mailto)
+          subtest: 'Parsing: <a/..//path> against <non-spec:/p>'
+        - test: url-constructor.any.worker.html?exclude=(file|javascript|mailto)
+          subtest: 'Parsing: <> against <non-spec:/..//p>'
+        - test: url-constructor.any.worker.html?exclude=(file|javascript|mailto)
+          subtest: 'Parsing: <path> against <non-spec:/..//p>'
     - product: firefox
       url: https://bugzilla.mozilla.org/show_bug.cgi?id=1873944
       results:
@@ -926,6 +950,8 @@ links:
           subtest: '<area>: Setting <data:/nospace>.pathname = ''space '' Non-special URLs with non-opaque paths percent-encode U+0020'
         - test: url-setters.any.html?exclude=(file|javascript|mailto)
           subtest: 'URL: Setting <data:/nospace>.pathname = ''space '' Non-special URLs with non-opaque paths percent-encode U+0020'
+        - test: url-setters.any.worker.html?exclude=(file|javascript|mailto)
+          subtest: 'URL: Setting <data:/nospace>.pathname = ''space '' Non-special URLs with non-opaque paths percent-encode U+0020'
     - product: firefox
       url: https://bugzilla.mozilla.org/show_bug.cgi?id=1873955
       results:
@@ -939,6 +965,10 @@ links:
           subtest: '<a>: Setting <file:///unicorn>.pathname = ''//\/'' File URLs and (back)slashes'
         - test: url-setters-a-area.window.html?include=file
           subtest: '<area>: Setting <file:///unicorn>.pathname = ''//\/'' File URLs and (back)slashes'
+        - test: url-setters.any.html?include=file
+          subtest: 'URL: Setting <file:///unicorn>.pathname = ''//\/'' File URLs and (back)slashes'
+        - test: url-setters.any.worker.html?exclude=(file|javascript|mailto)
+          subtest: 'URL: Setting <http://example.net/home?lang=fr#nav>.pathname = ''\a\%2E\b\%2e.\c'' \ is a segment delimiter for ''special'' URLs'
     - product: firefox
       url: https://bugzilla.mozilla.org/show_bug.cgi?id=1873973
       results:
@@ -1060,3 +1090,7 @@ links:
           subtest: 'URL: Setting <non-spec:/.//p>.hostname = '''''
         - test: url-setters.any.worker.html?exclude=(file|javascript|mailto)
           subtest: 'URL: Setting <non-spec:/.//p>.hostname = ''h'' Drop /. from path'
+        - test: url-setters.any.html?exclude=(file|javascript|mailto)
+          subtest: 'URL: Setting <non-spec:/.//p>.hostname = ''h'' Drop /. from path'
+        - test: url-setters.any.html?exclude=(file|javascript|mailto)
+          subtest: 'URL: Setting <non-spec:/.//p>.hostname = '''''
