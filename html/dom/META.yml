@@ -2106,3 +2106,15 @@ links:
           subtest: 'WorkerGlobalScope interface: attribute onlanguagechange'
         - test: idlharness.worker.html
           subtest: 'WorkerGlobalScope interface: self must inherit property "onlanguagechange" with the proper type'
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1874329
+      results:
+        - test: aria-attribute-reflection.html
+          subtest: aria-braillelabel attribute reflects.
+        - test: aria-attribute-reflection.html
+          subtest: aria-brailleroledescription attribute reflects.
+    - label: interop-2024-accessibility
+      results:
+        - test: aria-element-reflection.html
+        - test: aria-attribute-reflection.html
+        - test: aria-element-reflection-disconnected.html
