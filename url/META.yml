@@ -81,10 +81,12 @@ links:
       results:
         - test: failure.html
           status: CRASH
-    - label: interop-2022-webcompat
+    - url: ""
+      label: interop-2022-webcompat
       results:
         - test: toascii.window.html
-    - label: interop-2023-url
+    - url: ""
+      label: interop-2023-url
       results:
         - test: a-element-origin-xhtml.xhtml
         - test: a-element-origin.html
@@ -775,6 +777,30 @@ links:
           subtest: 'Origin parsing: <blob:wss://example.org/> without base'
         - test: a-element-xhtml.xhtml?exclude=(file|javascript|mailto)
           subtest: 'Parsing: <wss://!"$&''()*+,-.;=_`{}~/> against <about:blank>'
+        - test: a-element-origin-xhtml.xhtml
+          subtest: 'Parsing origin: <blob:blob:https://example.org/> against <about:blank>'
+        - test: a-element-origin-xhtml.xhtml
+          subtest: 'Parsing origin: <blob:ftp://host/path> against <about:blank>'
+        - test: a-element-origin-xhtml.xhtml
+          subtest: 'Parsing origin: <blob:ws://example.org/> against <about:blank>'
+        - test: a-element-origin-xhtml.xhtml
+          subtest: 'Parsing origin: <blob:wss://example.org/> against <about:blank>'
+        - test: url-origin.any.worker.html
+          subtest: 'Origin parsing: <blob:blob:https://example.org/> without base'
+        - test: url-origin.any.worker.html
+          subtest: 'Origin parsing: <blob:ftp://host/path> without base'
+        - test: url-origin.any.worker.html
+          subtest: 'Origin parsing: <blob:ws://example.org/> without base'
+        - test: url-origin.any.worker.html
+          subtest: 'Origin parsing: <blob:wss://example.org/> without base'
+        - test: a-element-origin.html
+          subtest: 'Parsing origin: <blob:blob:https://example.org/> against <about:blank>'
+        - test: a-element-origin.html
+          subtest: 'Parsing origin: <blob:ftp://host/path> against <about:blank>'
+        - test: a-element-origin.html
+          subtest: 'Parsing origin: <blob:ws://example.org/> against <about:blank>'
+        - test: a-element-origin.html
+          subtest: 'Parsing origin: <blob:wss://example.org/> against <about:blank>'
     - product: firefox
       url: https://bugzilla.mozilla.org/show_bug.cgi?id=1873915
       results:
@@ -861,6 +887,30 @@ links:
           subtest: 'Parsing: <non-spec:/..//> without base'
         - test: url-constructor.any.html?exclude=(file|javascript|mailto)
           subtest: 'Parsing: <non-spec:/.//> without base'
+        - test: url-constructor.any.worker.html?exclude=(file|javascript|mailto)
+          subtest: 'Parsing: <non-spec:/.//> without base'
+        - test: url-constructor.any.worker.html?exclude=(file|javascript|mailto)
+          subtest: 'Parsing: <non-spec:/..//> without base'
+        - test: url-constructor.any.worker.html?exclude=(file|javascript|mailto)
+          subtest: 'Parsing: <non-spec:/a/..//> without base'
+        - test: url-constructor.any.worker.html?exclude=(file|javascript|mailto)
+          subtest: 'Parsing: <non-spec:/.//path> without base'
+        - test: url-constructor.any.worker.html?exclude=(file|javascript|mailto)
+          subtest: 'Parsing: <non-spec:/..//path> without base'
+        - test: url-constructor.any.worker.html?exclude=(file|javascript|mailto)
+          subtest: 'Parsing: <non-spec:/a/..//path> without base'
+        - test: url-constructor.any.worker.html?exclude=(file|javascript|mailto)
+          subtest: 'Parsing: </.//path> against <non-spec:/p>'
+        - test: url-constructor.any.worker.html?exclude=(file|javascript|mailto)
+          subtest: 'Parsing: </..//path> against <non-spec:/p>'
+        - test: url-constructor.any.worker.html?exclude=(file|javascript|mailto)
+          subtest: 'Parsing: <..//path> against <non-spec:/p>'
+        - test: url-constructor.any.worker.html?exclude=(file|javascript|mailto)
+          subtest: 'Parsing: <a/..//path> against <non-spec:/p>'
+        - test: url-constructor.any.worker.html?exclude=(file|javascript|mailto)
+          subtest: 'Parsing: <> against <non-spec:/..//p>'
+        - test: url-constructor.any.worker.html?exclude=(file|javascript|mailto)
+          subtest: 'Parsing: <path> against <non-spec:/..//p>'
     - product: firefox
       url: https://bugzilla.mozilla.org/show_bug.cgi?id=1873944
       results:
@@ -908,6 +958,10 @@ links:
           subtest: '<area>: Setting <data:/nospace>.pathname = ''space '' Non-special URLs with non-opaque paths percent-encode U+0020'
         - test: url-setters.any.html?exclude=(file|javascript|mailto)
           subtest: 'URL: Setting <data:/nospace>.pathname = ''space '' Non-special URLs with non-opaque paths percent-encode U+0020'
+        - test: a-element.html?exclude=(file|javascript|mailto)
+          subtest: 'Parsing: <data://example.com:8080/pathname?search#hash> against <about:blank>'
+        - test: url-setters.any.worker.html?exclude=(file|javascript|mailto)
+          subtest: 'URL: Setting <data:/nospace>.pathname = ''space '' Non-special URLs with non-opaque paths percent-encode U+0020'
     - product: firefox
       url: https://bugzilla.mozilla.org/show_bug.cgi?id=1873955
       results:
@@ -921,6 +975,14 @@ links:
           subtest: '<a>: Setting <file:///unicorn>.pathname = ''//\/'' File URLs and (back)slashes'
         - test: url-setters-a-area.window.html?include=file
           subtest: '<area>: Setting <file:///unicorn>.pathname = ''//\/'' File URLs and (back)slashes'
+        - test: url-setters.any.html?include=file
+          subtest: 'URL: Setting <file:///unicorn>.pathname = ''//\/'' File URLs and (back)slashes'
+        - test: url-setters-a-area.window.html?exclude=(file|javascript|mailto)
+          subtest: '<a>: Setting <http://example.net/home?lang=fr#nav>.pathname = ''\a\%2E\b\%2e.\c'' \ is a segment delimiter for ''special'' URLs'
+        - test: url-setters-a-area.window.html?exclude=(file|javascript|mailto)
+          subtest: '<area>: Setting <http://example.net/home?lang=fr#nav>.pathname = ''\a\%2E\b\%2e.\c'' \ is a segment delimiter for ''special'' URLs'
+        - test: url-setters.any.worker.html?exclude=(file|javascript|mailto)
+          subtest: 'URL: Setting <http://example.net/home?lang=fr#nav>.pathname = ''\a\%2E\b\%2e.\c'' \ is a segment delimiter for ''special'' URLs'
     - product: firefox
       url: https://bugzilla.mozilla.org/show_bug.cgi?id=1873973
       results:
@@ -981,6 +1043,18 @@ links:
           subtest: 'Parsing: <..> against <file:///C:/>'
         - test: a-element-xhtml.xhtml?include=file
           subtest: 'Parsing: </> against <file:///C:/a/b>'
+        - test: url-constructor.any.worker.html?include=file
+          subtest: 'Parsing: <file:c:\foo\bar.html> against <file:///tmp/mock/path>'
+        - test: url-constructor.any.worker.html?include=file
+          subtest: 'Parsing: <  File:c|////foo\bar.html> against <file:///tmp/mock/path>'
+        - test: url-constructor.any.worker.html?include=file
+          subtest: 'Parsing: <C|/foo/bar> against <file:///tmp/mock/path>'
+        - test: url-constructor.any.worker.html?include=file
+          subtest: 'Parsing: <file:..> against <http://www.example.com/test>'
+        - test: url-constructor.any.worker.html?include=file
+          subtest: 'Parsing: <..> against <file:///C:/>'
+        - test: url-constructor.any.worker.html?include=file
+          subtest: 'Parsing: </> against <file:///C:/a/b>'
     - product: firefox
       url: https://bugzilla.mozilla.org/show_bug.cgi?id=1874117
       results:
@@ -1000,9 +1074,21 @@ links:
           subtest: 'URL: Setting <foo://somehost/some/path>.pathname = '''' Non-special URLs can have their paths erased'
         - test: url-setters.any.worker.html?exclude=(file|javascript|mailto)
           subtest: 'URL: Setting <foo:///some/path>.pathname = '''' Non-special URLs with an empty host can have their paths erased'
+        - test: url-setters-a-area.window.html?exclude=(file|javascript|mailto)
+          subtest: '<a>: Setting <foo://somehost/some/path>.pathname = '''' Non-special URLs can have their paths erased'
+        - test: url-setters-a-area.window.html?exclude=(file|javascript|mailto)
+          subtest: '<area>: Setting <foo://somehost/some/path>.pathname = '''' Non-special URLs can have their paths erased'
+        - test: url-setters-a-area.window.html?exclude=(file|javascript|mailto)
+          subtest: '<a>: Setting <foo:///some/path>.pathname = '''' Non-special URLs with an empty host can have their paths erased'
+        - test: url-setters-a-area.window.html?exclude=(file|javascript|mailto)
+          subtest: '<area>: Setting <foo:///some/path>.pathname = '''' Non-special URLs with an empty host can have their paths erased'
     - product: firefox
       url: https://bugzilla.mozilla.org/show_bug.cgi?id=1874118
       results:
+        - test: url-setters-a-area.window.html?exclude=(file|javascript|mailto)
+          subtest: '<a>: Setting <data:space  ?query#fragment>.search = '''' Do not drop trailing spaces from non-trailing opaque paths'
+        - test: url-setters-a-area.window.html?exclude=(file|javascript|mailto)
+          subtest: '<area>: Setting <data:space  ?query#fragment>.search = '''' Do not drop trailing spaces from non-trailing opaque paths'
         - test: url-setters-a-area.window.html?exclude=(file|javascript|mailto)
           subtest: '<a>: Setting <data:space  ?query#fragment>.search = '''' Do not drop trailing spaces from non-trailing opaque paths'
         - test: url-setters-a-area.window.html?exclude=(file|javascript|mailto)
@@ -1042,3 +1128,7 @@ links:
           subtest: 'URL: Setting <non-spec:/.//p>.hostname = '''''
         - test: url-setters.any.worker.html?exclude=(file|javascript|mailto)
           subtest: 'URL: Setting <non-spec:/.//p>.hostname = ''h'' Drop /. from path'
+        - test: url-setters.any.html?exclude=(file|javascript|mailto)
+          subtest: 'URL: Setting <non-spec:/.//p>.hostname = ''h'' Drop /. from path'
+        - test: url-setters.any.html?exclude=(file|javascript|mailto)
+          subtest: 'URL: Setting <non-spec:/.//p>.hostname = '''''
