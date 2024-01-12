@@ -775,22 +775,6 @@ links:
           subtest: 'Origin parsing: <blob:wss://example.org/> without base'
         - test: a-element-xhtml.xhtml?exclude=(file|javascript|mailto)
           subtest: 'Parsing: <wss://!"$&''()*+,-.;=_`{}~/> against <about:blank>'
-        - test: url-origin.any.worker.html
-          subtest: 'Origin parsing: <blob:blob:https://example.org/> without base'
-        - test: url-origin.any.worker.html
-          subtest: 'Origin parsing: <blob:ftp://host/path> without base'
-        - test: url-origin.any.worker.html
-          subtest: 'Origin parsing: <blob:ws://example.org/> without base'
-        - test: url-origin.any.worker.html
-          subtest: 'Origin parsing: <blob:wss://example.org/> without base'
-        - test: a-element-origin.html
-          subtest: 'Parsing origin: <blob:blob:https://example.org/> against <about:blank>'
-        - test: a-element-origin.html
-          subtest: 'Parsing origin: <blob:ftp://host/path> against <about:blank>'
-        - test: a-element-origin.html
-          subtest: 'Parsing origin: <blob:ws://example.org/> against <about:blank>'
-        - test: a-element-origin.html
-          subtest: 'Parsing origin: <blob:wss://example.org/> against <about:blank>'
     - product: firefox
       url: https://bugzilla.mozilla.org/show_bug.cgi?id=1873915
       results:
