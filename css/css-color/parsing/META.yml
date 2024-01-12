@@ -738,3 +738,9 @@ links:
           subtest: e.style['opacity'] = "max(0%, 50%)" should set the property value
         - test: opacity-valid.html
           subtest: e.style['opacity'] = "min(-40%, 50%)" should set the property value
+    - label: interop-2024-relative-color
+      results:
+        - test: relative-color-out-of-gamut.html
+        - test: color-computed-relative-color.html
+        - test: color-invalid-relative-color.html
+        - test: color-valid-relative-color.html
