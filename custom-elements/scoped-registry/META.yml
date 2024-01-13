@@ -1,6 +1,18 @@
 links:
-- product: firefox
-  results:
-  - subtest: Create non-global CustomElementRegistry and add definitions
-    test: CustomElementRegistry-constructor.tentative.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1793284
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1793284
+      results:
+        - test: CustomElementRegistry-constructor.tentative.html
+          subtest: Create non-global CustomElementRegistry and add definitions
+    - product: safari
+      url: https://bugs.webkit.org/show_bug.cgi?id=267454
+      results:
+        - test: constructor-reentry-with-different-definition.tentative.html
+        - test: scoped-registry-define-upgrade-criteria.tentative.html
+        - test: ShadowRoot-createElement.tentative.html
+        - test: ShadowRoot-init-registry.tentative.html
+        - test: ShadowRoot-innerHTML-upgrade.tentative.html
+        - test: constructor-call.tentative.html
+        - test: CustomElementRegistry-multi-register.tentative.html
+        - test: scoped-registry-define-upgrade-order.tentative.html
+        - test: CustomElementRegistry-constructor.tentative.html
