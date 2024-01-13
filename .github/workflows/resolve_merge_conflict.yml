@@ -20,14 +20,31 @@ jobs:
       run: ./main
 
     - name: Create pull request
-      uses: peter-evans/create-pull-request@v3
+      uses: peter-evans/create-pull-request@v5
       with:
-        token: ${{ secrets.GITHUB_TOKEN }}
-        author: wpt-pr-bot <wpt-pr-bot@users.noreply.github.com>
+        token: ${{ secrets.WPTMETADATA_BOT_USER_PAT }}
         title: "Resolve pending metadata"
         commit-message: "Reapply pending metadata from /api/metadata/pending in wpt.fyi"
         body: |
           This automated pull request reapplies pending metadata to the head of the wpt-metadata repository.
         branch: actions/merge-conflicts
         delete-branch: true
-        labels: do not merge yet
+        push-to-fork: wptmetadata-bot/wpt-metadata
+  # Create a separate job for only the steps that need write permissions.
+  enable-auto-merge:
+    runs-on: ubuntu-latest
+    needs: resolve-merge-conflicts
+    # Need both permissions to enable auto merge.
+    permissions:
+      pull-requests: write
+      contents: write
+    steps:
+    # Could use https://github.com/peter-evans/enable-pull-request-automerge but it recommends using the CLI now
+    # More about the CLI options. We need --auto so that the PR will automatically merge after:
+    # - One review
+    # - The test action is successful.
+    # https://cli.github.com/manual/gh_pr_merge
+    - name: Enable Pull Request Automerge
+      run: gh pr merge --squash --auto "${{ needs.resolve-merge-conflicts.outputs.prURL }}"
+      env:
+        GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
