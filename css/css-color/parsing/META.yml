@@ -744,3 +744,24 @@ links:
         - test: color-computed-relative-color.html
         - test: color-invalid-relative-color.html
         - test: color-valid-relative-color.html
+    - product: chrome
+      url: https://crbug.com/1517181
+      results:
+        - test: color-invalid-relative-color.html
+          subtest: e.style['color'] = "color(from color(srgb 0.7 0.5 0.3) srgb x y z)" should not set the property value
+        - test: color-invalid-relative-color.html
+          subtest: e.style['color'] = "color(from color(srgb-linear 0.7 0.5 0.3) srgb-linear x y z)" should not set the property value
+        - test: color-invalid-relative-color.html
+          subtest: e.style['color'] = "color(from color(a98-rgb 0.7 0.5 0.3) a98-rgb x y z)" should not set the property value
+        - test: color-invalid-relative-color.html
+          subtest: e.style['color'] = "color(from color(rec2020 0.7 0.5 0.3) rec2020 x y z)" should not set the property value
+        - test: color-invalid-relative-color.html
+          subtest: e.style['color'] = "color(from color(prophoto-rgb 0.7 0.5 0.3) prophoto-rgb x y z)" should not set the property value
+        - test: color-invalid-relative-color.html
+          subtest: e.style['color'] = "color(from color(display-p3 0.7 0.5 0.3) display-p3 x y z)" should not set the property value
+        - test: color-invalid-relative-color.html
+          subtest: e.style['color'] = "color(from color(xyz 7 -20.5 100) xyz r g b)" should not set the property value
+        - test: color-invalid-relative-color.html
+          subtest: e.style['color'] = "color(from color(xyz-d50 7 -20.5 100) xyz-d50 r g b)" should not set the property value
+        - test: color-invalid-relative-color.html
+          subtest: e.style['color'] = "color(from color(xyz-d65 7 -20.5 100) xyz-d65 r g b)" should not set the property value
