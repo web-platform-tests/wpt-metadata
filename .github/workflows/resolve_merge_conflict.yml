@@ -5,6 +5,8 @@ on:
   workflow_dispatch:
 jobs:
   resolve-merge-conflicts:
+    outputs:
+      prURL: ${{ steps.cpr.outputs.pull-request-url }}
     runs-on: ubuntu-20.04
     steps:
     - uses: actions/checkout@v2
@@ -21,6 +23,7 @@ jobs:
 
     - name: Create pull request
       uses: peter-evans/create-pull-request@v5
+      id: cpr
       with:
         token: ${{ secrets.WPTMETADATA_BOT_USER_PAT }}
         title: "Resolve pending metadata"
