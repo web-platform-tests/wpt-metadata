@@ -101,3 +101,24 @@ links:
       not interpolable with <transform-list> values
     test: custom-property-transition-transform-list-none.tentative.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1861408
+- product: firefox
+  results:
+  - subtest: Animating a custom property of type <transform-list> containing multiple
+      values
+    test: custom-property-animation-transform-list-multiple-values.html
+  - subtest: Animating a custom property of type <transform-list> containing multiple
+      values with a single keyframe
+    test: custom-property-animation-transform-list-multiple-values.html
+  - subtest: Animating a custom property of type <transform-list> containing multiple
+      values with additivity
+    test: custom-property-animation-transform-list-multiple-values.html
+  - subtest: Animating a custom property of type <transform-list> containing multiple
+      values with a single keyframe and additivity
+    test: custom-property-animation-transform-list-multiple-values.html
+  - subtest: Animating a custom property of type <transform-list> containing multiple
+      values with iterationComposite
+    test: custom-property-animation-transform-list-multiple-values.html
+  - subtest: Animating a custom property of type <transform-list> containing multiple
+      values and with mismatching list lengths
+    test: custom-property-animation-transform-list-multiple-values.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1874775
