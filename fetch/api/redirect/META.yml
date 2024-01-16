@@ -39,3 +39,14 @@ links:
   - subtest: Fetch upload streaming should fail on 308
     test: redirect-upload.h2.any.sharedworker.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1854702
+- product: firefox
+  results:
+  - subtest: '[keepalive][new window][unload] same-origin redirect'
+    test: redirect-keepalive.any.html
+  - subtest: '[keepalive][new window][unload] same-origin redirect + preflight'
+    test: redirect-keepalive.any.html
+  - subtest: '[keepalive][new window][unload] cross-origin redirect'
+    test: redirect-keepalive.any.html
+  - subtest: '[keepalive][new window][unload] cross-origin redirect + preflight'
+    test: redirect-keepalive.any.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1874988

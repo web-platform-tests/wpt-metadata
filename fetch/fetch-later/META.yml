@@ -1,0 +1,22 @@
+links:
+- product: firefox
+  results:
+  - test: activate-after.tentative.https.window.html
+  - subtest: fetchLater() cannot be called without request.
+    test: basic.tentative.https.window.html
+  - subtest: fetchLater() throws TypeError on non-HTTPS URL.
+    test: basic.tentative.https.window.html
+  - subtest: fetchLater() throws RangeError on negative activateAfter.
+    test: basic.tentative.https.window.html
+  - subtest: fetchLater()'s return tells the deferred request is not yet sent.
+    test: basic.tentative.https.window.html
+  - subtest: fetchLater() throws TypeError when mutating its returned state.
+    test: basic.tentative.https.window.html
+  - subtest: fetchLater() throws AbortError when its initial abort signal is aborted.
+    test: basic.tentative.https.window.html
+  - subtest: fetchLater() does not throw error when it is aborted before sending.
+    test: basic.tentative.https.window.html
+  - test: iframe.tentative.https.window.html
+  - test: new-window.tentative.https.window.html
+  - test: quota.tentative.https.window.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1874988
