@@ -1069,3 +1069,24 @@ links:
       * 20em from 2rem to 12em) * 2) should be used-value-equivalent to 4
     test: progress-computed.tentative.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1874830
+- product: firefox
+  results:
+  - subtest: calc(progress(sign(1001em - 10lh * progress(100px from 2rex to 10ex))
+      * 10em from 2rem to 12em) / 2) should be used-value-equivalent to 0.4
+    test: progress-computed.tentative.html
+  - subtest: calc(progress(sign(1001em - 10lh * progress(100px from 2rex to 10ex))
+      * 20em from 2rem to 12em) * 10) should be used-value-equivalent to 18
+    test: progress-computed.tentative.html
+  - subtest: calc(progress(sign(1001em - 10lh * progress(100px from 2rex to 10ex))
+      * 20em from 2rem to 12em) * 30) should be used-value-equivalent to 54
+    test: progress-computed.tentative.html
+  - subtest: calc(progress(sign(1001em - 10lh * progress(100px from 2rex to 10ex))
+      * 20em from 2rem to 12em) / 4) should be used-value-equivalent to 0.45
+    test: progress-computed.tentative.html
+  - subtest: calc(progress(sign(1001em - 10lh * progress(100px from 2rex to 10ex))
+      * 20em from 2rem to 12em) * 4) should be used-value-equivalent to 7
+    test: progress-computed.tentative.html
+  - subtest: calc(progress(sign(1001em - 10lh * progress(100px from 2rex to 10ex))
+      * 20em from 2rem to 12em) * 2) should be used-value-equivalent to 3.6
+    test: progress-computed.tentative.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1876032
