@@ -75,3 +75,16 @@ links:
       results:
         - test: history_properties_only_fully_active.html
           subtest: history properties should throw SecurityError when not in a fully active Document
+    - product: safari
+      url: https://bugs.webkit.org/show_bug.cgi?id=230111
+      results:
+        - test: history_pushstate_url_rewriting.html
+          subtest: blob:(a blob URL for this origin) to blob:(a blob URL for this origin)?newsearch should not work
+        - test: history_pushstate_url_rewriting.html
+          subtest: blob:(a blob URL for this origin) to blob:http://web-platform.test:8000/syntheticblob should not work
+        - test: history_pushstate_url_rewriting.html
+          subtest: blob:(a blob URL for this origin) to blob:(another blob URL for this origin) should not work
+        - test: history_pushstate_url_rewriting.html
+          subtest: sandboxed http://web-platform.test:8000/html/browsers/history/the-history-interface/resources/url-rewriting-helper.html to http://web-platform.test:8000/newpath should  work
+        - test: history_pushstate_url_rewriting.html
+          subtest: data:(script to run this test) to data:(script to run this test)?newsearch should not work
