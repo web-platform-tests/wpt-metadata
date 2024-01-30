@@ -1,0 +1,10 @@
+links:
+    - product: safari
+      url: https://bugs.webkit.org/show_bug.cgi?id=256241
+      results:
+        - test: setAppBadge_cross_origin.sub.https.html
+          subtest: Test that navigator.setAppBadge is available
+        - test: setAppBadge_cross_origin.sub.https.html
+          subtest: Test that calling setAppBadge in a cross-origin iframe throws a SecurityError
+        - test: setAppBadge_cross_origin.sub.https.html
+          subtest: Test that calling setAppBadge in a same-origin iframe succeeds
