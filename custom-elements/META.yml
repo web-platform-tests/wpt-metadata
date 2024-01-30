@@ -1,225 +1,258 @@
 links:
-    - product: chrome
-      url: https://bugs.chromium.org/p/chromium/issues/detail?id=977577
-      results:
-        - test: perform-microtask-checkpoint-before-construction.html
-          status: FAIL
-        - test: HTMLElement-constructor.html
-          status: FAIL
-        - test: CustomElementRegistry.html
-          status: FAIL
-        - test: historical.html
-          status: FAIL
-        - test: Document-createElement.html
-        - test: Document-createElementNS.html
-        - test: range-and-constructors.html
-    - product: safari
-      url: https://bugs.webkit.org/show_bug.cgi?id=182671
-      results:
-        - test: builtin-coverage.html
-        - test: Document-createElementNS-customized-builtins.html
-        - test: Document-createElement-customized-builtins.html
-        - test: customized-built-in-constructor-exceptions.html
-        - test: pseudo-class-defined-customized-builtins.html
-        - test: HTMLElement-constructor-customized-bulitins.html
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1663878
-      results:
-        - test: CustomElementRegistry.html
-          subtest: customElements.define must get callbacks of the constructor prototype
-        - test: CustomElementRegistry.html
-          subtest: customElements.define must rethrow an exception thrown while getting callbacks on the constructor prototype
-        - test: CustomElementRegistry.html
-          subtest: customElements.define must rethrow an exception thrown while converting a callback value to Function callback type
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1664966
-      results:
-        - test: element-internals-shadowroot.html
-        - test: element-internals-shadowroot.html
-          subtest: ElementInternals.shadowRoot allows access to open shadow root
-        - test: element-internals-shadowroot.html
-          subtest: ElementInternals.shadowRoot allows access to closed shadow root
-    - product: chrome
-      url: https://crbug.com/1116970
-      results:
-        - test: CustomElementRegistry.html
-          subtest: A promise returned by customElements.whenDefined must be resolved with the defined class once such class is defined
-        - test: CustomElementRegistry.html
-          subtest: A promise returned by customElements.whenDefined must be resolved with the defined class
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1783398
-      results:
-        - test: Document-createElement.html
-          subtest: document.createElement must report a NotSupportedError when the element is adopted into a the document of an iframe during construction
-        - test: Document-createElement.html
-          subtest: document.createElement must report a NotSupportedError when the element is inserted into a the document of an iframe during construction
-        - test: Document-createElement.html
-          subtest: document.createElement must not report a NotSupportedError when the element is adopted back from a the document of an iframe during construction
-        - test: adopted-callback.html
-          subtest: Moving the shadow host's shadow of a custom element from the owner document into the document of the template elements must enqueue and invoke adoptedCallback
-        - test: adopted-callback.html
-          subtest: Moving the shadow host's shadow of a custom element from the owner document into a new document must enqueue and invoke adoptedCallback
-        - test: adopted-callback.html
-          subtest: Moving the <template>'s content of a custom element from the owner document into a new document must enqueue and invoke adoptedCallback
-        - test: adopted-callback.html
-          subtest: Moving the shadow host's shadow of a custom element from the owner document into a cloned document must enqueue and invoke adoptedCallback
-        - test: adopted-callback.html
-          subtest: Moving the <template>'s content of a custom element from the owner document into a cloned document must enqueue and invoke adoptedCallback
-        - test: adopted-callback.html
-          subtest: Moving the shadow host's shadow of a custom element from the owner document into a document created by createHTMLDocument must enqueue and invoke adoptedCallback
-        - test: adopted-callback.html
-          subtest: Moving the <template>'s content of a custom element from the owner document into a document created by createHTMLDocument must enqueue and invoke adoptedCallback
-        - test: adopted-callback.html
-          subtest: Moving the shadow host's shadow of a custom element from the owner document into an HTML document created by createDocument must enqueue and invoke adoptedCallback
-        - test: adopted-callback.html
-          subtest: Moving the <template>'s content of a custom element from the owner document into an HTML document created by createDocument must enqueue and invoke adoptedCallback
-        - test: adopted-callback.html
-          subtest: Moving the shadow host's shadow of a custom element from the owner document into the document of an iframe must enqueue and invoke adoptedCallback
-        - test: adopted-callback.html
-          subtest: Moving the <template>'s content of a custom element from the owner document into the document of an iframe must enqueue and invoke adoptedCallback
-        - test: adopted-callback.html
-          subtest: Moving the shadow host's shadow of a custom element from the owner document into an HTML document fetched by XHR must enqueue and invoke adoptedCallback
-        - test: adopted-callback.html
-          subtest: Moving the <template>'s content of a custom element from the owner document into an HTML document fetched by XHR must enqueue and invoke adoptedCallback
-    - product: chrome
-      url: https://crbug.com/1365368
-      results:
-        - test: throw-on-dynamic-markup-insertion-counter-construct-xml-parser.xhtml
-        - test: throw-on-dynamic-markup-insertion-counter-reactions-xml-parser.xhtml
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1760856
-      results:
-        - test: ElementInternals-accessibility.html
-          subtest: role is defined in ElementInternals
-        - test: ElementInternals-accessibility.html
-          subtest: ariaActiveDescendantElement is defined in ElementInternals
-        - test: ElementInternals-accessibility.html
-          subtest: ariaAtomic is defined in ElementInternals
-        - test: ElementInternals-accessibility.html
-          subtest: ariaAutoComplete is defined in ElementInternals
-        - test: ElementInternals-accessibility.html
-          subtest: ariaBusy is defined in ElementInternals
-        - test: ElementInternals-accessibility.html
-          subtest: ariaChecked is defined in ElementInternals
-        - test: ElementInternals-accessibility.html
-          subtest: ariaColCount is defined in ElementInternals
-        - test: ElementInternals-accessibility.html
-          subtest: ariaColIndex is defined in ElementInternals
-        - test: ElementInternals-accessibility.html
-          subtest: ariaColSpan is defined in ElementInternals
-        - test: ElementInternals-accessibility.html
-          subtest: ariaControlsElements is defined in ElementInternals
-        - test: ElementInternals-accessibility.html
-          subtest: ariaCurrent is defined in ElementInternals
-        - test: ElementInternals-accessibility.html
-          subtest: ariaDescribedByElements is defined in ElementInternals
-        - test: ElementInternals-accessibility.html
-          subtest: ariaDetailsElements is defined in ElementInternals
-        - test: ElementInternals-accessibility.html
-          subtest: ariaDisabled is defined in ElementInternals
-        - test: ElementInternals-accessibility.html
-          subtest: ariaErrorMessageElement is defined in ElementInternals
-        - test: ElementInternals-accessibility.html
-          subtest: ariaExpanded is defined in ElementInternals
-        - test: ElementInternals-accessibility.html
-          subtest: ariaFlowToElements is defined in ElementInternals
-        - test: ElementInternals-accessibility.html
-          subtest: ariaHasPopup is defined in ElementInternals
-        - test: ElementInternals-accessibility.html
-          subtest: ariaHidden is defined in ElementInternals
-        - test: ElementInternals-accessibility.html
-          subtest: ariaKeyShortcuts is defined in ElementInternals
-        - test: ElementInternals-accessibility.html
-          subtest: ariaLabel is defined in ElementInternals
-        - test: ElementInternals-accessibility.html
-          subtest: ariaLabelledByElements is defined in ElementInternals
-        - test: ElementInternals-accessibility.html
-          subtest: ariaLevel is defined in ElementInternals
-        - test: ElementInternals-accessibility.html
-          subtest: ariaLive is defined in ElementInternals
-        - test: ElementInternals-accessibility.html
-          subtest: ariaModal is defined in ElementInternals
-        - test: ElementInternals-accessibility.html
-          subtest: ariaMultiLine is defined in ElementInternals
-        - test: ElementInternals-accessibility.html
-          subtest: ariaMultiSelectable is defined in ElementInternals
-        - test: ElementInternals-accessibility.html
-          subtest: ariaOrientation is defined in ElementInternals
-        - test: ElementInternals-accessibility.html
-          subtest: ariaOwnsElements is defined in ElementInternals
-        - test: ElementInternals-accessibility.html
-          subtest: ariaPlaceholder is defined in ElementInternals
-        - test: ElementInternals-accessibility.html
-          subtest: ariaPosInSet is defined in ElementInternals
-        - test: ElementInternals-accessibility.html
-          subtest: ariaPressed is defined in ElementInternals
-        - test: ElementInternals-accessibility.html
-          subtest: ariaReadOnly is defined in ElementInternals
-        - test: ElementInternals-accessibility.html
-          subtest: ariaRelevant is defined in ElementInternals
-        - test: ElementInternals-accessibility.html
-          subtest: ariaRequired is defined in ElementInternals
-        - test: ElementInternals-accessibility.html
-          subtest: ariaRoleDescription is defined in ElementInternals
-        - test: ElementInternals-accessibility.html
-          subtest: ariaRowCount is defined in ElementInternals
-        - test: ElementInternals-accessibility.html
-          subtest: ariaRowIndex is defined in ElementInternals
-        - test: ElementInternals-accessibility.html
-          subtest: ariaRowSpan is defined in ElementInternals
-        - test: ElementInternals-accessibility.html
-          subtest: ariaSelected is defined in ElementInternals
-        - test: ElementInternals-accessibility.html
-          subtest: ariaSort is defined in ElementInternals
-        - test: ElementInternals-accessibility.html
-          subtest: ariaValueMax is defined in ElementInternals
-        - test: ElementInternals-accessibility.html
-          subtest: ariaValueMin is defined in ElementInternals
-        - test: ElementInternals-accessibility.html
-          subtest: ariaValueNow is defined in ElementInternals
-        - test: ElementInternals-accessibility.html
-          subtest: ariaValueText is defined in ElementInternals
-    - label: interop-2023-webcomponents
-      results:
-        - test: throw-on-dynamic-markup-insertion-counter-construct-xml-parser.xhtml
-        - test: throw-on-dynamic-markup-insertion-counter-reactions-xml-parser.xhtml
-        - test: adopted-callback.html
-        - test: CustomElementRegistry.html
-        - test: Document-createElement.html
-        - test: perform-microtask-checkpoint-before-construction-xml-parser.xhtml
-        - test: perform-microtask-checkpoint-before-construction.html
-        - test: range-and-constructors.html
-    - product: chrome
-      url: https://bugs.chromium.org/p/chromium/issues/detail?id=1420810
-      results:
-        - test: perform-microtask-checkpoint-before-construction.html
-        - test: perform-microtask-checkpoint-before-construction-xml-parser.xhtml
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1819922
-      results:
-        - test: throw-on-dynamic-markup-insertion-counter-reactions-xml-parser.xhtml
-          subtest: document.open(URL) must NOT throw an InvalidStateError when processing custom element reactions for a synchronous constructed custom element
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1819923
-      results:
-        - test: perform-microtask-checkpoint-before-construction-xml-parser.xhtml
-          subtest: XML parser must perform a microtask checkpoint before constructing a custom element
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1819925
-      results:
-        - test: throw-on-dynamic-markup-insertion-counter-construct-xml-parser.xhtml
-          subtest: document.open(URL) must NOT throw an InvalidStateError when synchronously constructing a custom element
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1556358
-      results:
-        - test: CustomElementRegistry.html
-          subtest: customElements.define must get four additional callbacks on the prototype if formAssociated is converted to true
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1419329
-      results:
-        - test: Document-createElement.html
-          subtest: document.createElement must report a NotSupportedError when the element is adopted into a the document of an iframe during construction
-        - test: Document-createElement.html
-          subtest: document.createElement must report a NotSupportedError when the element is inserted into a the document of an iframe during construction
-        - test: Document-createElement.html
-          subtest: document.createElement must not report a NotSupportedError when the element is adopted back from a the document of an iframe during construction
+- product: chrome
+  results:
+  - status: FAIL
+    test: perform-microtask-checkpoint-before-construction.html
+  - status: FAIL
+    test: HTMLElement-constructor.html
+  - status: FAIL
+    test: CustomElementRegistry.html
+  - status: FAIL
+    test: historical.html
+  - test: Document-createElement.html
+  - test: Document-createElementNS.html
+  - test: range-and-constructors.html
+  url: https://bugs.chromium.org/p/chromium/issues/detail?id=977577
+- product: safari
+  results:
+  - test: builtin-coverage.html
+  - test: Document-createElementNS-customized-builtins.html
+  - test: Document-createElement-customized-builtins.html
+  - test: customized-built-in-constructor-exceptions.html
+  - test: pseudo-class-defined-customized-builtins.html
+  - test: HTMLElement-constructor-customized-bulitins.html
+  url: https://bugs.webkit.org/show_bug.cgi?id=182671
+- product: firefox
+  results:
+  - subtest: customElements.define must get callbacks of the constructor prototype
+    test: CustomElementRegistry.html
+  - subtest: customElements.define must rethrow an exception thrown while getting
+      callbacks on the constructor prototype
+    test: CustomElementRegistry.html
+  - subtest: customElements.define must rethrow an exception thrown while converting
+      a callback value to Function callback type
+    test: CustomElementRegistry.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1663878
+- product: firefox
+  results:
+  - test: element-internals-shadowroot.html
+  - subtest: ElementInternals.shadowRoot allows access to open shadow root
+    test: element-internals-shadowroot.html
+  - subtest: ElementInternals.shadowRoot allows access to closed shadow root
+    test: element-internals-shadowroot.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1664966
+- product: chrome
+  results:
+  - subtest: A promise returned by customElements.whenDefined must be resolved with
+      the defined class once such class is defined
+    test: CustomElementRegistry.html
+  - subtest: A promise returned by customElements.whenDefined must be resolved with
+      the defined class
+    test: CustomElementRegistry.html
+  url: https://crbug.com/1116970
+- product: firefox
+  results:
+  - subtest: document.createElement must report a NotSupportedError when the element
+      is adopted into a the document of an iframe during construction
+    test: Document-createElement.html
+  - subtest: document.createElement must report a NotSupportedError when the element
+      is inserted into a the document of an iframe during construction
+    test: Document-createElement.html
+  - subtest: document.createElement must not report a NotSupportedError when the element
+      is adopted back from a the document of an iframe during construction
+    test: Document-createElement.html
+  - subtest: Moving the shadow host's shadow of a custom element from the owner document
+      into the document of the template elements must enqueue and invoke adoptedCallback
+    test: adopted-callback.html
+  - subtest: Moving the shadow host's shadow of a custom element from the owner document
+      into a new document must enqueue and invoke adoptedCallback
+    test: adopted-callback.html
+  - subtest: Moving the <template>'s content of a custom element from the owner document
+      into a new document must enqueue and invoke adoptedCallback
+    test: adopted-callback.html
+  - subtest: Moving the shadow host's shadow of a custom element from the owner document
+      into a cloned document must enqueue and invoke adoptedCallback
+    test: adopted-callback.html
+  - subtest: Moving the <template>'s content of a custom element from the owner document
+      into a cloned document must enqueue and invoke adoptedCallback
+    test: adopted-callback.html
+  - subtest: Moving the shadow host's shadow of a custom element from the owner document
+      into a document created by createHTMLDocument must enqueue and invoke adoptedCallback
+    test: adopted-callback.html
+  - subtest: Moving the <template>'s content of a custom element from the owner document
+      into a document created by createHTMLDocument must enqueue and invoke adoptedCallback
+    test: adopted-callback.html
+  - subtest: Moving the shadow host's shadow of a custom element from the owner document
+      into an HTML document created by createDocument must enqueue and invoke adoptedCallback
+    test: adopted-callback.html
+  - subtest: Moving the <template>'s content of a custom element from the owner document
+      into an HTML document created by createDocument must enqueue and invoke adoptedCallback
+    test: adopted-callback.html
+  - subtest: Moving the shadow host's shadow of a custom element from the owner document
+      into the document of an iframe must enqueue and invoke adoptedCallback
+    test: adopted-callback.html
+  - subtest: Moving the <template>'s content of a custom element from the owner document
+      into the document of an iframe must enqueue and invoke adoptedCallback
+    test: adopted-callback.html
+  - subtest: Moving the shadow host's shadow of a custom element from the owner document
+      into an HTML document fetched by XHR must enqueue and invoke adoptedCallback
+    test: adopted-callback.html
+  - subtest: Moving the <template>'s content of a custom element from the owner document
+      into an HTML document fetched by XHR must enqueue and invoke adoptedCallback
+    test: adopted-callback.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1783398
+- product: chrome
+  results:
+  - test: throw-on-dynamic-markup-insertion-counter-construct-xml-parser.xhtml
+  - test: throw-on-dynamic-markup-insertion-counter-reactions-xml-parser.xhtml
+  url: https://crbug.com/1365368
+- product: firefox
+  results:
+  - subtest: role is defined in ElementInternals
+    test: ElementInternals-accessibility.html
+  - subtest: ariaActiveDescendantElement is defined in ElementInternals
+    test: ElementInternals-accessibility.html
+  - subtest: ariaAtomic is defined in ElementInternals
+    test: ElementInternals-accessibility.html
+  - subtest: ariaAutoComplete is defined in ElementInternals
+    test: ElementInternals-accessibility.html
+  - subtest: ariaBusy is defined in ElementInternals
+    test: ElementInternals-accessibility.html
+  - subtest: ariaChecked is defined in ElementInternals
+    test: ElementInternals-accessibility.html
+  - subtest: ariaColCount is defined in ElementInternals
+    test: ElementInternals-accessibility.html
+  - subtest: ariaColIndex is defined in ElementInternals
+    test: ElementInternals-accessibility.html
+  - subtest: ariaColSpan is defined in ElementInternals
+    test: ElementInternals-accessibility.html
+  - subtest: ariaControlsElements is defined in ElementInternals
+    test: ElementInternals-accessibility.html
+  - subtest: ariaCurrent is defined in ElementInternals
+    test: ElementInternals-accessibility.html
+  - subtest: ariaDescribedByElements is defined in ElementInternals
+    test: ElementInternals-accessibility.html
+  - subtest: ariaDetailsElements is defined in ElementInternals
+    test: ElementInternals-accessibility.html
+  - subtest: ariaDisabled is defined in ElementInternals
+    test: ElementInternals-accessibility.html
+  - subtest: ariaErrorMessageElement is defined in ElementInternals
+    test: ElementInternals-accessibility.html
+  - subtest: ariaExpanded is defined in ElementInternals
+    test: ElementInternals-accessibility.html
+  - subtest: ariaFlowToElements is defined in ElementInternals
+    test: ElementInternals-accessibility.html
+  - subtest: ariaHasPopup is defined in ElementInternals
+    test: ElementInternals-accessibility.html
+  - subtest: ariaHidden is defined in ElementInternals
+    test: ElementInternals-accessibility.html
+  - subtest: ariaKeyShortcuts is defined in ElementInternals
+    test: ElementInternals-accessibility.html
+  - subtest: ariaLabel is defined in ElementInternals
+    test: ElementInternals-accessibility.html
+  - subtest: ariaLabelledByElements is defined in ElementInternals
+    test: ElementInternals-accessibility.html
+  - subtest: ariaLevel is defined in ElementInternals
+    test: ElementInternals-accessibility.html
+  - subtest: ariaLive is defined in ElementInternals
+    test: ElementInternals-accessibility.html
+  - subtest: ariaModal is defined in ElementInternals
+    test: ElementInternals-accessibility.html
+  - subtest: ariaMultiLine is defined in ElementInternals
+    test: ElementInternals-accessibility.html
+  - subtest: ariaMultiSelectable is defined in ElementInternals
+    test: ElementInternals-accessibility.html
+  - subtest: ariaOrientation is defined in ElementInternals
+    test: ElementInternals-accessibility.html
+  - subtest: ariaOwnsElements is defined in ElementInternals
+    test: ElementInternals-accessibility.html
+  - subtest: ariaPlaceholder is defined in ElementInternals
+    test: ElementInternals-accessibility.html
+  - subtest: ariaPosInSet is defined in ElementInternals
+    test: ElementInternals-accessibility.html
+  - subtest: ariaPressed is defined in ElementInternals
+    test: ElementInternals-accessibility.html
+  - subtest: ariaReadOnly is defined in ElementInternals
+    test: ElementInternals-accessibility.html
+  - subtest: ariaRelevant is defined in ElementInternals
+    test: ElementInternals-accessibility.html
+  - subtest: ariaRequired is defined in ElementInternals
+    test: ElementInternals-accessibility.html
+  - subtest: ariaRoleDescription is defined in ElementInternals
+    test: ElementInternals-accessibility.html
+  - subtest: ariaRowCount is defined in ElementInternals
+    test: ElementInternals-accessibility.html
+  - subtest: ariaRowIndex is defined in ElementInternals
+    test: ElementInternals-accessibility.html
+  - subtest: ariaRowSpan is defined in ElementInternals
+    test: ElementInternals-accessibility.html
+  - subtest: ariaSelected is defined in ElementInternals
+    test: ElementInternals-accessibility.html
+  - subtest: ariaSort is defined in ElementInternals
+    test: ElementInternals-accessibility.html
+  - subtest: ariaValueMax is defined in ElementInternals
+    test: ElementInternals-accessibility.html
+  - subtest: ariaValueMin is defined in ElementInternals
+    test: ElementInternals-accessibility.html
+  - subtest: ariaValueNow is defined in ElementInternals
+    test: ElementInternals-accessibility.html
+  - subtest: ariaValueText is defined in ElementInternals
+    test: ElementInternals-accessibility.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1760856
+- label: interop-2023-webcomponents
+  results:
+  - test: throw-on-dynamic-markup-insertion-counter-construct-xml-parser.xhtml
+  - test: throw-on-dynamic-markup-insertion-counter-reactions-xml-parser.xhtml
+  - test: adopted-callback.html
+  - test: CustomElementRegistry.html
+  - test: Document-createElement.html
+  - test: perform-microtask-checkpoint-before-construction-xml-parser.xhtml
+  - test: perform-microtask-checkpoint-before-construction.html
+  - test: range-and-constructors.html
+- product: chrome
+  results:
+  - test: perform-microtask-checkpoint-before-construction.html
+  - test: perform-microtask-checkpoint-before-construction-xml-parser.xhtml
+  url: https://bugs.chromium.org/p/chromium/issues/detail?id=1420810
+- product: firefox
+  results:
+  - subtest: document.open(URL) must NOT throw an InvalidStateError when processing
+      custom element reactions for a synchronous constructed custom element
+    test: throw-on-dynamic-markup-insertion-counter-reactions-xml-parser.xhtml
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1819922
+- product: firefox
+  results:
+  - subtest: XML parser must perform a microtask checkpoint before constructing a
+      custom element
+    test: perform-microtask-checkpoint-before-construction-xml-parser.xhtml
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1819923
+- product: firefox
+  results:
+  - subtest: document.open(URL) must NOT throw an InvalidStateError when synchronously
+      constructing a custom element
+    test: throw-on-dynamic-markup-insertion-counter-construct-xml-parser.xhtml
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1819925
+- product: firefox
+  results:
+  - subtest: customElements.define must get four additional callbacks on the prototype
+      if formAssociated is converted to true
+    test: CustomElementRegistry.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1556358
+- product: firefox
+  results:
+  - subtest: document.createElement must report a NotSupportedError when the element
+      is adopted into a the document of an iframe during construction
+    test: Document-createElement.html
+  - subtest: document.createElement must report a NotSupportedError when the element
+      is inserted into a the document of an iframe during construction
+    test: Document-createElement.html
+  - subtest: document.createElement must not report a NotSupportedError when the element
+      is adopted back from a the document of an iframe during construction
+    test: Document-createElement.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1419329
+- product: firefox
+  results:
+  - subtest: Getting previously-unset ARIA element reflection properties on ElementInternals
+      should return null.
+    test: element-internals-aria-element-reflection.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1877397
