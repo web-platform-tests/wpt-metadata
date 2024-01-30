@@ -1,42 +1,47 @@
 links:
-- product: firefox
-  results:
-  - subtest: 'oncancel: must be on the appropriate locations for GlobalEventHandlers'
-    test: event-handler-all-global-events.html
-  - subtest: 'oncancel: the default value must be null'
-    test: event-handler-all-global-events.html
-  - subtest: 'oncancel: the content attribute must be compiled into a function as
-      the corresponding property'
-    test: event-handler-all-global-events.html
-  - subtest: 'oncancel: the content attribute must execute when an event is dispatched'
-    test: event-handler-all-global-events.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1662664
-- product: firefox
-  results:
-  - subtest: 'onslotchange: must be on the appropriate locations for GlobalEventHandlers'
-    test: event-handler-all-global-events.html
-  - subtest: 'onslotchange: the default value must be null'
-    test: event-handler-all-global-events.html
-  - subtest: 'onslotchange: the content attribute must be compiled into a function
-      as the corresponding property'
-    test: event-handler-all-global-events.html
-  - subtest: 'onslotchange: the content attribute must execute when an event is dispatched'
-    test: event-handler-all-global-events.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1680298
-- product: chrome
-  results:
-  - test: event-handler-all-global-events.html
-  url: https://crbug.com/1006096
-- product: chrome
-  results:
-  - test: event-handler-attributes-body-window.html
-  - test: event-handler-attributes-frameset-window.html
-  - test: event-handler-attributes-windowless-body.html
-  url: https://bugs.chromium.org/p/chromium/issues/detail?id=1215632
-- product: firefox
-  results:
-  - subtest: <img> has a form owner
-    test: compile-event-handler-lexical-scopes-form-owner.html
-  - subtest: form-associated <x-foo> has a form owner
-    test: compile-event-handler-lexical-scopes-form-owner.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1808426
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1662664
+      results:
+        - test: event-handler-all-global-events.html
+          subtest: 'oncancel: must be on the appropriate locations for GlobalEventHandlers'
+        - test: event-handler-all-global-events.html
+          subtest: 'oncancel: the default value must be null'
+        - test: event-handler-all-global-events.html
+          subtest: 'oncancel: the content attribute must be compiled into a function as the corresponding property'
+        - test: event-handler-all-global-events.html
+          subtest: 'oncancel: the content attribute must execute when an event is dispatched'
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1680298
+      results:
+        - test: event-handler-all-global-events.html
+          subtest: 'onslotchange: must be on the appropriate locations for GlobalEventHandlers'
+        - test: event-handler-all-global-events.html
+          subtest: 'onslotchange: the default value must be null'
+        - test: event-handler-all-global-events.html
+          subtest: 'onslotchange: the content attribute must be compiled into a function as the corresponding property'
+        - test: event-handler-all-global-events.html
+          subtest: 'onslotchange: the content attribute must execute when an event is dispatched'
+    - product: chrome
+      url: https://crbug.com/1006096
+      results:
+        - test: event-handler-all-global-events.html
+    - product: chrome
+      url: https://bugs.chromium.org/p/chromium/issues/detail?id=1215632
+      results:
+        - test: event-handler-attributes-body-window.html
+        - test: event-handler-attributes-frameset-window.html
+        - test: event-handler-attributes-windowless-body.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1808426
+      results:
+        - test: compile-event-handler-lexical-scopes-form-owner.html
+          subtest: <img> has a form owner
+        - test: compile-event-handler-lexical-scopes-form-owner.html
+          subtest: form-associated <x-foo> has a form owner
+    - product: safari
+      url: https://bugs.webkit.org/show_bug.cgi?id=211597
+      results:
+        - test: onerroreventhandler.html
+          subtest: onerror + ErrorEvent + Window
+        - test: onerroreventhandler.html
+          subtest: onerror + !ErrorEvent + Window
