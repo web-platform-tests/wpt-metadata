@@ -1,6 +1,5 @@
 links:
-    - url: ""
-      label: interop-2022-dialog
+    - label: interop-2022-dialog
       results:
         - test: abspos-dialog-layout.html
         - test: backdrop-descendant-selector.html
@@ -213,3 +212,10 @@ links:
       results:
         - test: modal-dialog-blocks-mouse-events.html
         - test: simulated-click-inert.html
+    - product: safari
+      url: https://bugs.webkit.org/show_bug.cgi?id=256717
+      results:
+        - test: dialog-focus-previous-outside.html
+          subtest: Focus should not be restored if the currently focused element is not inside the dialog.
+        - test: dialog-focus-previous-outside.html
+          subtest: Focus restore should not occur when the focused element is in a shadowroot outside of the dialog.
