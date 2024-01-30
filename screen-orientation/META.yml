@@ -1,27 +1,34 @@
 links:
-- product: chrome
-  results:
-  - test: lock-unlock-check.html
-  url: https://crbug.com/980588
-- product: safari
-  results:
-  - test: '*'
-  url: https://bugs.webkit.org/show_bug.cgi?id=102869
-- product: firefox
-  results:
-  - subtest: Attempting to lock non-fully active documents results in a InvalidStateError
-    test: non-fully-active.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1797411
-- product: firefox
-  results:
-  - test: hidden_document.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1800696
-- product: firefox
-  results:
-  - subtest: hidden documents must reject went trying to call unlock
-    test: hidden_document.html
-  - subtest: Attempting to unlock non-fully active documents results in a InvalidStateError
-    test: non-fully-active.html
-  - subtest: Making a document non-fully active while locking results in an AbortError
-    test: non-fully-active.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1811665
+    - product: chrome
+      url: https://crbug.com/980588
+      results:
+        - test: lock-unlock-check.html
+    - product: safari
+      url: https://bugs.webkit.org/show_bug.cgi?id=102869
+      results:
+        - test: '*'
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1797411
+      results:
+        - test: non-fully-active.html
+          subtest: Attempting to lock non-fully active documents results in a InvalidStateError
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1800696
+      results:
+        - test: hidden_document.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1811665
+      results:
+        - test: hidden_document.html
+          subtest: hidden documents must reject went trying to call unlock
+        - test: non-fully-active.html
+          subtest: Attempting to unlock non-fully active documents results in a InvalidStateError
+        - test: non-fully-active.html
+          subtest: Making a document non-fully active while locking results in an AbortError
+    - product: safari
+      url: https://bugs.webkit.org/show_bug.cgi?id=257638
+      results:
+        - test: fullscreen-interactions.html
+          subtest: Harness status
+        - test: fullscreen-interactions.html
+          subtest: fullscreen and orientation support
