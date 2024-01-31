@@ -1,13 +1,30 @@
 links:
-    - label: a11y
-      results:
-        - test: "*"
-    - label: accessibility
-      results:
-        - test: "*"
-    - label: css-accessibility
-      results:
-        - test: "*"
-    - label: interop-2024-accessibility
-      results:
-        - test: display-contents-role-and-label.html
+- label: a11y
+  results:
+  - test: '*'
+- label: accessibility
+  results:
+  - test: '*'
+- label: css-accessibility
+  results:
+  - test: '*'
+- label: interop-2024-accessibility
+  results:
+  - test: display-contents-role-and-label.html
+- product: firefox
+  results:
+  - subtest: 'div with role grid with display: contents has grid role'
+    test: display-contents-role-and-label.html
+  - subtest: 'Label: g element with display: contents, as child of svg, is labelled
+      via title element'
+    test: display-contents-role-and-label.html
+  - subtest: 'Label: td as child of tr with display: contents, within table with display:
+      flex, has cell role'
+    test: display-contents-role-and-label.html
+  - subtest: 'Label: td as child of tr with display: contents, within table with role=table
+      with display: flex, has cell role'
+    test: display-contents-role-and-label.html
+  - subtest: 'Label: td within tr in table with role table, all with display: contents,
+      has cell role'
+    test: display-contents-role-and-label.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1877811
