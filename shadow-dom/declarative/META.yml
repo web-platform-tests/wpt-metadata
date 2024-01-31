@@ -1303,3 +1303,12 @@ links:
   - subtest: ShadowRoot.getInnerHTML() on <span>, with mode=closed, delegatesFocus=true.
     test: getinnerhtml.tentative.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1876482
+- product: firefox
+  results:
+  - subtest: Repeated declarative shadow roots keep only the first
+    test: declarative-shadow-dom-repeats.html
+  - subtest: Calling attachShadow() on declarative shadow root must match type
+    test: declarative-shadow-dom-repeats.html
+  - subtest: Calling attachShadow() on declarative shadow root must match all parameters
+    test: declarative-shadow-dom-repeats.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1877644
