@@ -765,3 +765,7 @@ links:
           subtest: e.style['color'] = "color(from color(xyz-d50 7 -20.5 100) xyz-d50 r g b)" should not set the property value
         - test: color-invalid-relative-color.html
           subtest: e.style['color'] = "color(from color(xyz-d65 7 -20.5 100) xyz-d65 r g b)" should not set the property value
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1701488
+      results:
+        - test: '*'
