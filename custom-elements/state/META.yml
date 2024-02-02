@@ -1,0 +1,26 @@
+links:
+- product: firefox
+  results:
+  - subtest: 'CustomStateSet behavior of ElementInternals.states: Initial state'
+    test: ElementInternals-states.html
+  - subtest: 'CustomStateSet behavior of ElementInternals.states: Modifications'
+    test: ElementInternals-states.html
+  - subtest: Updating a CustomStateSet while iterating it should work
+    test: ElementInternals-states.html
+  - subtest: state selector has no influence when state is not applied
+    test: state-css-selector-shadow-dom.html
+  - subtest: state selector has no influence when state is not applied
+    test: state-css-selector.html
+  - subtest: state selector has no influence on sibling selectors when not applied
+    test: state-css-selector.html
+  - subtest: state selector has influence when state is applied
+    test: state-css-selector.html
+  - subtest: state selector influences siblings when state is applied
+    test: state-css-selector.html
+  - subtest: state selector only applies on given ident
+    test: state-css-selector.html
+  - subtest: state selector only applies to siblings on given ident
+    test: state-css-selector.html
+  - subtest: state selector only applies to has() on given ident
+    test: state-css-selector.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1878208
