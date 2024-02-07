@@ -1,0 +1,96 @@
+links:
+- product: firefox
+  results:
+  - subtest: Consuming the body of a resource with bad zstd content with arrayBuffer()
+      should reject
+    test: bad-zstd-body.https.any.sharedworker.html
+  - subtest: Consuming the body of a resource with bad zstd content with blob() should
+      reject
+    test: bad-zstd-body.https.any.sharedworker.html
+  - subtest: Consuming the body of a resource with bad zstd content with json() should
+      reject
+    test: bad-zstd-body.https.any.sharedworker.html
+  - subtest: Consuming the body of a resource with bad zstd content with text() should
+      reject
+    test: bad-zstd-body.https.any.sharedworker.html
+  - subtest: Consuming the body of a resource with bad zstd content with arrayBuffer()
+      should reject
+    test: bad-zstd-body.https.any.html
+  - subtest: Consuming the body of a resource with bad zstd content with blob() should
+      reject
+    test: bad-zstd-body.https.any.html
+  - subtest: Consuming the body of a resource with bad zstd content with json() should
+      reject
+    test: bad-zstd-body.https.any.html
+  - subtest: Consuming the body of a resource with bad zstd content with text() should
+      reject
+    test: bad-zstd-body.https.any.html
+  - subtest: Consuming the body of a resource with bad zstd content with arrayBuffer()
+      should reject
+    test: bad-zstd-body.https.any.worker.html
+  - subtest: Consuming the body of a resource with bad zstd content with blob() should
+      reject
+    test: bad-zstd-body.https.any.worker.html
+  - subtest: Consuming the body of a resource with bad zstd content with json() should
+      reject
+    test: bad-zstd-body.https.any.worker.html
+  - subtest: Consuming the body of a resource with bad zstd content with text() should
+      reject
+    test: bad-zstd-body.https.any.worker.html
+  - subtest: Consuming the body of a resource with bad zstd content with arrayBuffer()
+      should reject
+    test: bad-zstd-body.https.any.serviceworker.html
+  - subtest: Consuming the body of a resource with bad zstd content with blob() should
+      reject
+    test: bad-zstd-body.https.any.serviceworker.html
+  - subtest: Consuming the body of a resource with bad zstd content with json() should
+      reject
+    test: bad-zstd-body.https.any.serviceworker.html
+  - subtest: Consuming the body of a resource with bad zstd content with text() should
+      reject
+    test: bad-zstd-body.https.any.serviceworker.html
+  - subtest: Consuming the body of a resource with too large of a zstd window size
+      should reject
+    test: big-window-zstd-body.tentative.https.any.worker.html
+  - subtest: Consuming the body of a resource with too large of a zstd window size
+      should reject
+    test: big-window-zstd-body.tentative.https.any.html
+  - subtest: Consuming the body of a resource with too large of a zstd window size
+      should reject
+    test: big-window-zstd-body.tentative.https.any.sharedworker.html
+  - subtest: Consuming the body of a resource with too large of a zstd window size
+      should reject
+    test: big-window-zstd-body.tentative.https.any.serviceworker.html
+  - subtest: large zstd data should be decompressed successfully
+    test: big-zstd-body.https.any.html
+  - subtest: large zstd data should be decompressed successfully with byte stream
+    test: big-zstd-body.https.any.html
+  - subtest: large zstd data should be decompressed successfully
+    test: big-zstd-body.https.any.sharedworker.html
+  - subtest: large zstd data should be decompressed successfully with byte stream
+    test: big-zstd-body.https.any.sharedworker.html
+  - subtest: large zstd data should be decompressed successfully
+    test: big-zstd-body.https.any.serviceworker.html
+  - subtest: large zstd data should be decompressed successfully with byte stream
+    test: big-zstd-body.https.any.serviceworker.html
+  - subtest: large zstd data should be decompressed successfully
+    test: big-zstd-body.https.any.worker.html
+  - subtest: large zstd data should be decompressed successfully with byte stream
+    test: big-zstd-body.https.any.worker.html
+  - subtest: fetched zstd data with content type text should be decompressed.
+    test: zstd-body.https.any.sharedworker.html
+  - subtest: fetched zstd data with content type octetstream should be decompressed.
+    test: zstd-body.https.any.sharedworker.html
+  - subtest: fetched zstd data with content type text should be decompressed.
+    test: zstd-body.https.any.worker.html
+  - subtest: fetched zstd data with content type octetstream should be decompressed.
+    test: zstd-body.https.any.worker.html
+  - subtest: fetched zstd data with content type text should be decompressed.
+    test: zstd-body.https.any.html
+  - subtest: fetched zstd data with content type octetstream should be decompressed.
+    test: zstd-body.https.any.html
+  - subtest: fetched zstd data with content type text should be decompressed.
+    test: zstd-body.https.any.serviceworker.html
+  - subtest: fetched zstd data with content type octetstream should be decompressed.
+    test: zstd-body.https.any.serviceworker.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1879030
