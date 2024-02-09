@@ -1,11 +1,14 @@
 links:
-    - label: a11y
+    - url: ""
+      label: a11y
       results:
         - test: '*'
-    - label: accessibility
+    - url: ""
+      label: accessibility
       results:
         - test: '*'
-    - label: aria
+    - url: ""
+      label: aria
       results:
         - test: '*'
     - product: safari
@@ -26,7 +29,8 @@ links:
           subtest: 'Element interface: element must inherit property "ariaColIndexText" with the proper type'
         - test: idlharness.window.html
           subtest: 'Element interface: element must inherit property "ariaRowIndexText" with the proper type'
-    - label: interop-2024-accessibility
+    - url: ""
+      label: interop-2024-accessibility
       results:
         - test: idlharness.window.html
     - product: firefox
@@ -44,3 +48,38 @@ links:
           subtest: 'Element interface: element must inherit property "ariaBrailleLabel" with the proper type'
         - test: idlharness.window.html
           subtest: 'Element interface: element must inherit property "ariaBrailleRoleDescription" with the proper type'
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1769586
+      results:
+        - test: idlharness.window.html
+          subtest: 'Element interface: attribute ariaActiveDescendantElement'
+        - test: idlharness.window.html
+          subtest: 'Element interface: attribute ariaControlsElements'
+        - test: idlharness.window.html
+          subtest: 'Element interface: attribute ariaDescribedByElements'
+        - test: idlharness.window.html
+          subtest: 'Element interface: attribute ariaDetailsElements'
+        - test: idlharness.window.html
+          subtest: 'Element interface: attribute ariaErrorMessageElements'
+        - test: idlharness.window.html
+          subtest: 'Element interface: attribute ariaFlowToElements'
+        - test: idlharness.window.html
+          subtest: 'Element interface: attribute ariaLabelledByElements'
+        - test: idlharness.window.html
+          subtest: 'Element interface: attribute ariaOwnsElements'
+        - test: idlharness.window.html
+          subtest: 'Element interface: element must inherit property "ariaActiveDescendantElement" with the proper type'
+        - test: idlharness.window.html
+          subtest: 'Element interface: element must inherit property "ariaControlsElements" with the proper type'
+        - test: idlharness.window.html
+          subtest: 'Element interface: element must inherit property "ariaDescribedByElements" with the proper type'
+        - test: idlharness.window.html
+          subtest: 'Element interface: element must inherit property "ariaDetailsElements" with the proper type'
+        - test: idlharness.window.html
+          subtest: 'Element interface: element must inherit property "ariaErrorMessageElements" with the proper type'
+        - test: idlharness.window.html
+          subtest: 'Element interface: element must inherit property "ariaFlowToElements" with the proper type'
+        - test: idlharness.window.html
+          subtest: 'Element interface: element must inherit property "ariaLabelledByElements" with the proper type'
+        - test: idlharness.window.html
+          subtest: 'Element interface: element must inherit property "ariaOwnsElements" with the proper type'
