@@ -195,3 +195,15 @@ links:
           subtest: '.foo { .foo, .foo & { color: green; }}'
         - test: parsing.html
           subtest: '.foo { :is(.bar, .baz) { color: green; }}'
+        - test: serialize-group-rules-with-decls.html
+          subtest: Mixed declarations/rules are on two lines.
+        - test: serialize-group-rules-with-decls.html
+          subtest: Implicit rule is serialized
+        - test: serialize-group-rules-with-decls.html
+          subtest: Implicit rule not removed
+        - test: serialize-group-rules-with-decls.html
+          subtest: Two implicit-like rules
+        - test: serialize-group-rules-with-decls.html
+          subtest: Implicit like rule after decls
+        - test: serialize-group-rules-with-decls.html
+          subtest: Implicit like rule after decls, missing closing braces
