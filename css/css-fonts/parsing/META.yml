@@ -323,3 +323,10 @@ links:
         - test: font-size-adjust-computed.html
         - test: font-size-adjust-invalid.html
         - test: font-size-adjust-valid.html
+    - product: chrome
+      url: https://issues.chromium.org/324803202
+      results:
+        - test: font-size-adjust-valid.html
+          subtest: e.style['font-size-adjust'] = "ic-height 0.9" should set the property value
+        - test: font-size-adjust-valid.html
+          subtest: e.style['font-size-adjust'] = "ic-height from-font" should set the property value
