@@ -24,7 +24,8 @@ links:
     - url: https://github.com/web-platform-tests/wpt/issues/10706
       results:
         - test: keypath-special-identifiers.htm
-    - label: interop-2024-indexeddb
+    - url: ""
+      label: interop-2024-indexeddb
       results:
         - test: abort-in-initial-upgradeneeded.html
         - test: back-forward-cache-open-connection.window.html
@@ -493,10 +494,27 @@ links:
           subtest: 'IDBFactory interface: [object IDBFactory] must inherit property "databases()" with the proper type'
         - test: idlharness.any.serviceworker.html
           subtest: 'IDBFactory interface: operation databases()'
+        - test: idlharness.any.sharedworker.html
+          subtest: 'IDBFactory interface: [object IDBFactory] must inherit property "databases()" with the proper type'
+        - test: idlharness.any.sharedworker.html
+          subtest: 'IDBFactory interface: operation databases()'
+        - test: idlharness.any.worker.html
+          subtest: 'IDBFactory interface: operation databases()'
+        - test: idlharness.any.worker.html
+          subtest: 'IDBFactory interface: [object IDBFactory] must inherit property "databases()" with the proper type'
+        - test: idlharness.any.html
+          subtest: 'IDBFactory interface: [object IDBFactory] must inherit property "databases()" with the proper type'
+        - test: idlharness.any.html
+          subtest: 'IDBFactory interface: operation databases()'
+        - test: idbfactory-origin-isolation.html
     - product: firefox
       url: https://bugzilla.mozilla.org/show_bug.cgi?id=1878134
       results:
         - test: idb-binary-key-detached.htm
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1275496
+      results:
+        - test: idbfactory_open9.htm
     - product: firefox
       url: https://bugzilla.mozilla.org/show_bug.cgi?id=1799374
       results:
@@ -505,9 +523,47 @@ links:
       url: https://bugzilla.mozilla.org/show_bug.cgi?id=1878137
       results:
         - test: idbfactory-deleteDatabase-opaque-origin.html
-        - test: idbfactory-open-opaque-origin.html
     - product: firefox
       url: https://bugzilla.mozilla.org/show_bug.cgi?id=1878143
       results:
         - test: idlharness.any.html
           subtest: 'IDBTransaction interface: attribute durability'
+        - test: idlharness.any.worker.html
+          subtest: 'IDBTransaction interface: attribute durability'
+        - test: idlharness.any.sharedworker.html
+          subtest: 'IDBTransaction interface: attribute durability'
+        - test: idlharness.any.serviceworker.html
+          subtest: 'IDBTransaction interface: attribute durability'
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1404276
+      results:
+        - test: reading-autoincrement-indexes.any.sharedworker.html
+        - test: idbfactory-open-opaque-origin.html
+        - test: reading-autoincrement-indexes.any.worker.html
+        - test: reading-autoincrement-indexes.any.serviceworker.html
+        - test: reading-autoincrement-indexes.any.html
+        - test: reading-autoincrement-indexes-cursors.any.html
+        - test: reading-autoincrement-indexes-cursors.any.serviceworker.html
+        - test: reading-autoincrement-indexes-cursors.any.sharedworker.html
+        - test: reading-autoincrement-indexes-cursors.any.worker.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1878146
+      results:
+        - test: ready-state-destroyed-execution-context.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1878148
+      results:
+        - test: serialize-sharedarraybuffer-throws.https.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1878149
+      results:
+        - test: structured-clone.any.html?101-last
+        - test: structured-clone.any.worker.html?101-last
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1878720
+      results:
+        - test: back-forward-cache-open-connection.window.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1878722
+      results:
+        - test: abort-in-initial-upgradeneeded.html

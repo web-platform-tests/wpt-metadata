@@ -876,3 +876,37 @@ links:
   - subtest: 'style((--baz: qux) or (not ((--baz: qux) and (--foo: bar))))'
     test: query-evaluation-style.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1874725
+- product: firefox
+  results:
+  - subtest: Match container for ::before in ::slotted selector's originating element
+      tree
+    test: container-for-shadow-dom.html
+  - subtest: A :host::part rule should match containers in the originating element
+      tree
+    test: container-for-shadow-dom.html
+  - subtest: Match container in outer tree
+    test: style-container-for-shadow-dom.html
+  - subtest: Match container in same tree, not walking flat tree ancestors
+    test: style-container-for-shadow-dom.html
+  - subtest: Match container in ::slotted selector's originating element tree
+    test: style-container-for-shadow-dom.html
+  - subtest: Match container in outer tree for :host
+    test: style-container-for-shadow-dom.html
+  - subtest: Match container in ::part selector's originating element tree
+    test: style-container-for-shadow-dom.html
+  - subtest: Match container for ::before in ::slotted selector's originating element
+      tree
+    test: style-container-for-shadow-dom.html
+  - subtest: Match container in outer tree for :host::before
+    test: style-container-for-shadow-dom.html
+  - subtest: Match container for ::before in ::part selector's originating element
+      tree
+    test: style-container-for-shadow-dom.html
+  - subtest: Match container for ::part selector's originating element tree for exportparts
+    test: style-container-for-shadow-dom.html
+  - subtest: Match container for slot light tree child fallback
+    test: style-container-for-shadow-dom.html
+  - subtest: A :host::part rule should match containers in the originating element
+      tree
+    test: style-container-for-shadow-dom.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1878995
