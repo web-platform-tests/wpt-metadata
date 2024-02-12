@@ -330,3 +330,10 @@ links:
           subtest: e.style['font-size-adjust'] = "ic-height 0.9" should set the property value
         - test: font-size-adjust-valid.html
           subtest: e.style['font-size-adjust'] = "ic-height from-font" should set the property value
+    - product: chrome
+      url: https://issues.chromium.org/40081245
+      results:
+        - test: font-size-adjust-computed.html
+          subtest: Property font-size-adjust value 'ch-width from-font'
+        - test: font-size-adjust-computed.html
+          subtest: Property font-size-adjust value 'ic-width from-font'
