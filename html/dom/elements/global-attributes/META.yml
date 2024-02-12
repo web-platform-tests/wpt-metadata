@@ -1,197 +1,210 @@
 links:
-    - product: chrome
-      url: https://bugs.chromium.org/p/chromium/issues/detail?id=1222729
-      results:
-        - test: custom-attrs.html
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1758816
-      results:
-        - test: translate-inherit-no-parent-element.html
-          subtest: No parent node
-        - test: translate-inherit-no-parent-element.html
-          subtest: DocumentFragment parent node
-        - test: translate-inherit-no-parent-element.html
-          subtest: ShadowRoot parent node whose shadow host has translate=yes
-        - test: translate-inherit-no-parent-element.html
-          subtest: ShadowRoot parent node whose shadow host has translate=no
-        - test: translate-inherit-no-parent-element.html
-          subtest: Document parent node
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1828535
-      results:
-        - test: the-anchor-attribute-001.tentative.html
-          subtest: The anchor attribute should position the target element next to its implicit anchor
-        - test: the-anchor-attribute-001.tentative.html
-          subtest: The element.anchorElement IDL should reflect the element pointed to by the anchor attribute
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1855002
-      results:
-        - test: dir-auto-dynamic-changes.window.html
-          subtest: dir=auto changes for content insertion and removal, in and out of document
-        - test: dir-auto-dynamic-changes.window.html
-          subtest: dynamic changes to subtrees excluded as a result of the dir attribute
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1856776
-      results:
-        - test: dir-auto-dynamic-changes.window.html
-          subtest: text changes affecting both slot and ancestor with dir=auto
-        - test: dir-auto-dynamic-changes.window.html
-          subtest: slotted non-HTML elements
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1857589
-      results:
-        - test: lang-attribute-shadow.window.html
-          subtest: lang only on host
-        - test: lang-attribute-shadow.window.html
-          subtest: lang on host and slotted element
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1857719
-      results:
-        - test: dir-shadow-03.html
-        - test: dir-shadow-04.html
-        - test: dir-shadow-06.html
-        - test: dir-shadow-18.html
-        - test: dir-shadow-24.html
-        - test: dir-shadow-30.html
-        - test: dir-shadow-31.html
-        - test: dir-shadow-33.html
-        - test: dir-shadow-34.html
-        - test: dir-shadow-35.html
-        - test: dir-shadow-36.html
-        - test: dir-shadow-38.html
-        - test: dir-shadow-39.html
-        - test: dir-shadow-41.html
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1849785
-      results:
-        - test: dir-slots-directionality.html
-          subtest: 'Slots: Directionality: dir=rtl on slot'
-        - test: dir-slots-directionality.html
-          subtest: 'Slots: Directionality: dir=auto on host with Arabic shadow tree content'
-        - test: dir-slots-directionality.html
-          subtest: 'Slots: Directionality: dir=auto in shadow tree with Arabic light tree content'
-        - test: dir-slots-directionality.html
-          subtest: 'Slots: Directionality: dir=auto on slot with Arabic light tree content'
-    - product: safari
-      url: https://bugs.webkit.org/show_bug.cgi?id=263655
-      results:
-        - test: lang-attribute.window.html
-          subtest: unnamespaced lang attribute only works on elements in the HTML namespace
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1873738
-      results:
-        - test: dir-assorted.window.html
-          subtest: Non-HTML element outside the document tree has a direction
-        - test: dir-assorted.window.html
-          subtest: Non-HTML element without direction has parent element direction
-        - test: dir-assorted.window.html
-          subtest: Non-HTML element text contents influence dir=auto
-        - test: dir-assorted.window.html
-          subtest: text changes apply to dir=auto on further ancestor after removing dir=auto from closer ancestor
-        - test: dir-assorted.window.html
-          subtest: 'directionality of bdi elements: dir=auto empty in rtl parent'
-    - label: interop-2024-dir
-      results:
-        - test: dir_auto-input-script-R.html
-        - test: dir-shadow-01.html
-        - test: dir-shadow-05.html
-        - test: dir-shadow-40.html
-        - test: dir-shadow-38.html
-        - test: dir_auto-input-script-N-EN.html
-        - test: dir_auto-pre-N-between-Rs.html
-        - test: dir_auto-textarea-script-N-between-Rs.html
-        - test: dir-auto-form-associated.window.html
-        - test: dir-shadow-20.html
-        - test: dir-shadow-30.html
-        - test: dir_auto-input-N-L.html
-        - test: dir_auto-N-EN-L.html
-        - test: dir_auto-textarea-N-EN.html
-        - test: dir-shadow-16.html
-        - test: dir-shadow-17.html
-        - test: dir-shadow-18.html
-        - test: dir-shadow-21.html
-        - test: dir-shadow-09.html
-        - test: dir-shadow-15.html
-        - test: dir-shadow-24.html
-        - test: dir-shadow-39.html
-        - test: dir_auto-contained-script-R.html
-        - test: dir_auto-input-EN-L.html
-        - test: dir_auto-input-N-EN-R.html
-        - test: dir_auto-textarea-mixed.html
-        - test: dir-slots-directionality.html
-        - test: dir_auto-contained-bdi-L.html
-        - test: dir_auto-EN-R.html
-        - test: dir_auto-input-EN-R.html
-        - test: dir_auto-isolate.html
-        - test: dir_auto-L.html
-        - test: dir_auto-N-EN.html
-        - test: dir_auto-N-L.html
-        - test: dir_auto-textarea-script-mixed.html
-        - test: dir-shadow-14.html
-        - test: dir-shadow-34.html
-        - test: dir_auto-contained-dir-R.html
-        - test: dir-shadow-04.html
-        - test: dir-shadow-19.html
-        - test: dir-shadow-31.html
-        - test: dir-shadow-13.html
-        - test: dir-shadow-22.html
-        - test: dir-shadow-27.html
-        - test: dir_auto-contained-script-L.html
-        - test: dir_auto-contained-textarea-L.html
-        - test: dir_auto-input-N-R.html
-        - test: dir_auto-input-script-N-EN-R.html
-        - test: dir_auto-input-script-N-L.html
-        - test: dir_auto-input-script-N-R.html
-        - test: dir_auto-contained-dir_auto-L.html
-        - test: dir_auto-input-N-EN-L.html
-        - test: dir-auto-div-append-child.html
-        - test: dir-shadow-32.html
-        - test: dir-shadow-29.html
-        - test: dir_auto-contained-bdi-R.html
-        - test: dir_auto-input-L.html
-        - test: dir_auto-input-N-EN.html
-        - test: dir_auto-textarea-N-between-Rs.html
-        - test: dir-bdi-script.html
-        - test: dir-shadow-07.html
-        - test: dir-shadow-26.html
-        - test: dir-shadow-41.html
-        - test: dir-shadow-37.html
-        - test: dir-shadow-35.html
-        - test: dir_auto-contained-L.html
-        - test: dir_auto-input-R.html
-        - test: dir_auto-input-script-EN-R.html
-        - test: dir_auto-input-script-L.html
-        - test: dir_auto-N-EN-R.html
-        - test: dir_auto-textarea-script-N-EN.html
-        - test: dir-shadow-03.html
-        - test: dir-shadow-10.html
-        - test: dir-shadow-36.html
-        - test: dir_auto-contained-style-R.html
-        - test: dir-shadow-02.html
-        - test: dir-shadow-08.html
-        - test: dir-shadow-11.html
-        - test: dir-shadow-25.html
-        - test: dir-shadow-28.html
-        - test: dir-shadow-33.html
-        - test: dir_auto-contained-dir_auto-R.html
-        - test: dir_auto-contained-dir-L.html
-        - test: dir_auto-contained-style-L.html
-        - test: dir_auto-contained-textarea-R.html
-        - test: dir_auto-EN-L.html
-        - test: dir_auto-input-script-N-EN-L.html
-        - test: dir-auto-dynamic-changes.window.html
-        - test: dir-shadow-23.html
-        - test: dir_auto-contained-R.html
-        - test: dir_auto-input-script-EN-L.html
-        - test: dir_auto-pre-mixed.html
-        - test: dir_auto-N-R.html
-        - test: dir_auto-pre-N-EN.html
-        - test: dir_auto-R.html
-        - test: dir-assorted.window.html
-        - test: dir-shadow-06.html
-        - test: dir-shadow-12.html
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1876252
-      results:
-        - test: dir_auto-N-EN.html
-          subtest: Test status
+- product: chrome
+  results:
+  - test: custom-attrs.html
+  url: https://bugs.chromium.org/p/chromium/issues/detail?id=1222729
+- product: firefox
+  results:
+  - subtest: No parent node
+    test: translate-inherit-no-parent-element.html
+  - subtest: DocumentFragment parent node
+    test: translate-inherit-no-parent-element.html
+  - subtest: ShadowRoot parent node whose shadow host has translate=yes
+    test: translate-inherit-no-parent-element.html
+  - subtest: ShadowRoot parent node whose shadow host has translate=no
+    test: translate-inherit-no-parent-element.html
+  - subtest: Document parent node
+    test: translate-inherit-no-parent-element.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1758816
+- product: firefox
+  results:
+  - subtest: The anchor attribute should position the target element next to its implicit
+      anchor
+    test: the-anchor-attribute-001.tentative.html
+  - subtest: The element.anchorElement IDL should reflect the element pointed to by
+      the anchor attribute
+    test: the-anchor-attribute-001.tentative.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1828535
+- product: firefox
+  results:
+  - subtest: dir=auto changes for content insertion and removal, in and out of document
+    test: dir-auto-dynamic-changes.window.html
+  - subtest: dynamic changes to subtrees excluded as a result of the dir attribute
+    test: dir-auto-dynamic-changes.window.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1855002
+- product: firefox
+  results:
+  - subtest: text changes affecting both slot and ancestor with dir=auto
+    test: dir-auto-dynamic-changes.window.html
+  - subtest: slotted non-HTML elements
+    test: dir-auto-dynamic-changes.window.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1856776
+- product: firefox
+  results:
+  - subtest: lang only on host
+    test: lang-attribute-shadow.window.html
+  - subtest: lang on host and slotted element
+    test: lang-attribute-shadow.window.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1857589
+- product: firefox
+  results:
+  - test: dir-shadow-03.html
+  - test: dir-shadow-04.html
+  - test: dir-shadow-06.html
+  - test: dir-shadow-18.html
+  - test: dir-shadow-24.html
+  - test: dir-shadow-30.html
+  - test: dir-shadow-31.html
+  - test: dir-shadow-33.html
+  - test: dir-shadow-34.html
+  - test: dir-shadow-35.html
+  - test: dir-shadow-36.html
+  - test: dir-shadow-38.html
+  - test: dir-shadow-39.html
+  - test: dir-shadow-41.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1857719
+- product: firefox
+  results:
+  - subtest: 'Slots: Directionality: dir=rtl on slot'
+    test: dir-slots-directionality.html
+  - subtest: 'Slots: Directionality: dir=auto on host with Arabic shadow tree content'
+    test: dir-slots-directionality.html
+  - subtest: 'Slots: Directionality: dir=auto in shadow tree with Arabic light tree
+      content'
+    test: dir-slots-directionality.html
+  - subtest: 'Slots: Directionality: dir=auto on slot with Arabic light tree content'
+    test: dir-slots-directionality.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1849785
+- product: safari
+  results:
+  - subtest: unnamespaced lang attribute only works on elements in the HTML namespace
+    test: lang-attribute.window.html
+  url: https://bugs.webkit.org/show_bug.cgi?id=263655
+- product: firefox
+  results:
+  - subtest: Non-HTML element outside the document tree has a direction
+    test: dir-assorted.window.html
+  - subtest: Non-HTML element without direction has parent element direction
+    test: dir-assorted.window.html
+  - subtest: Non-HTML element text contents influence dir=auto
+    test: dir-assorted.window.html
+  - subtest: text changes apply to dir=auto on further ancestor after removing dir=auto
+      from closer ancestor
+    test: dir-assorted.window.html
+  - subtest: 'directionality of bdi elements: dir=auto empty in rtl parent'
+    test: dir-assorted.window.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1873738
+- label: interop-2024-dir
+  results:
+  - test: dir_auto-input-script-R.html
+  - test: dir-shadow-01.html
+  - test: dir-shadow-05.html
+  - test: dir-shadow-40.html
+  - test: dir-shadow-38.html
+  - test: dir_auto-input-script-N-EN.html
+  - test: dir_auto-pre-N-between-Rs.html
+  - test: dir_auto-textarea-script-N-between-Rs.html
+  - test: dir-auto-form-associated.window.html
+  - test: dir-shadow-20.html
+  - test: dir-shadow-30.html
+  - test: dir_auto-input-N-L.html
+  - test: dir_auto-N-EN-L.html
+  - test: dir_auto-textarea-N-EN.html
+  - test: dir-shadow-16.html
+  - test: dir-shadow-17.html
+  - test: dir-shadow-18.html
+  - test: dir-shadow-21.html
+  - test: dir-shadow-09.html
+  - test: dir-shadow-15.html
+  - test: dir-shadow-24.html
+  - test: dir-shadow-39.html
+  - test: dir_auto-contained-script-R.html
+  - test: dir_auto-input-EN-L.html
+  - test: dir_auto-input-N-EN-R.html
+  - test: dir_auto-textarea-mixed.html
+  - test: dir-slots-directionality.html
+  - test: dir_auto-contained-bdi-L.html
+  - test: dir_auto-EN-R.html
+  - test: dir_auto-input-EN-R.html
+  - test: dir_auto-isolate.html
+  - test: dir_auto-L.html
+  - test: dir_auto-N-EN.html
+  - test: dir_auto-N-L.html
+  - test: dir_auto-textarea-script-mixed.html
+  - test: dir-shadow-14.html
+  - test: dir-shadow-34.html
+  - test: dir_auto-contained-dir-R.html
+  - test: dir-shadow-04.html
+  - test: dir-shadow-19.html
+  - test: dir-shadow-31.html
+  - test: dir-shadow-13.html
+  - test: dir-shadow-22.html
+  - test: dir-shadow-27.html
+  - test: dir_auto-contained-script-L.html
+  - test: dir_auto-contained-textarea-L.html
+  - test: dir_auto-input-N-R.html
+  - test: dir_auto-input-script-N-EN-R.html
+  - test: dir_auto-input-script-N-L.html
+  - test: dir_auto-input-script-N-R.html
+  - test: dir_auto-contained-dir_auto-L.html
+  - test: dir_auto-input-N-EN-L.html
+  - test: dir-auto-div-append-child.html
+  - test: dir-shadow-32.html
+  - test: dir-shadow-29.html
+  - test: dir_auto-contained-bdi-R.html
+  - test: dir_auto-input-L.html
+  - test: dir_auto-input-N-EN.html
+  - test: dir_auto-textarea-N-between-Rs.html
+  - test: dir-bdi-script.html
+  - test: dir-shadow-07.html
+  - test: dir-shadow-26.html
+  - test: dir-shadow-41.html
+  - test: dir-shadow-37.html
+  - test: dir-shadow-35.html
+  - test: dir_auto-contained-L.html
+  - test: dir_auto-input-R.html
+  - test: dir_auto-input-script-EN-R.html
+  - test: dir_auto-input-script-L.html
+  - test: dir_auto-N-EN-R.html
+  - test: dir_auto-textarea-script-N-EN.html
+  - test: dir-shadow-03.html
+  - test: dir-shadow-10.html
+  - test: dir-shadow-36.html
+  - test: dir_auto-contained-style-R.html
+  - test: dir-shadow-02.html
+  - test: dir-shadow-08.html
+  - test: dir-shadow-11.html
+  - test: dir-shadow-25.html
+  - test: dir-shadow-28.html
+  - test: dir-shadow-33.html
+  - test: dir_auto-contained-dir_auto-R.html
+  - test: dir_auto-contained-dir-L.html
+  - test: dir_auto-contained-style-L.html
+  - test: dir_auto-contained-textarea-R.html
+  - test: dir_auto-EN-L.html
+  - test: dir_auto-input-script-N-EN-L.html
+  - test: dir-auto-dynamic-changes.window.html
+  - test: dir-shadow-23.html
+  - test: dir_auto-contained-R.html
+  - test: dir_auto-input-script-EN-L.html
+  - test: dir_auto-pre-mixed.html
+  - test: dir_auto-N-R.html
+  - test: dir_auto-pre-N-EN.html
+  - test: dir_auto-R.html
+  - test: dir-assorted.window.html
+  - test: dir-shadow-06.html
+  - test: dir-shadow-12.html
+- product: firefox
+  results:
+  - subtest: Test status
+    test: dir_auto-N-EN.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1876252
+- product: firefox
+  results:
+  - subtest: ::before uses originating element's implicit anchor
+    test: the-anchor-attribute-003.tentative.html
+  - subtest: ::after uses originating element's implicit anchor
+    test: the-anchor-attribute-003.tentative.html
+  - subtest: ::backdrop uses originating element's implicit anchor
+    test: the-anchor-attribute-003.tentative.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1879854
