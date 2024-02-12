@@ -39,6 +39,8 @@ links:
           subtest: orphaned rowheader outside the context of row
         - test: grid-roles.html
           subtest: orphaned columnheader outside the context of row
+        - test: list-roles.html
+          subtest: orphan p with listitem role
         - test: grid-roles.html
           subtest: orphaned rowgroup outside the context of row
         - test: grid-roles.html
@@ -47,6 +49,22 @@ links:
           subtest: orphaned div with gridcell role outside the context of row
         - test: grid-roles.html
           subtest: orphaned button with gridcell role outside the context of row
+        - test: menu-roles.html
+          subtest: orphaned menuitem outside the context of menu/menubar
+        - test: menu-roles.html
+          subtest: orphaned menuitemradio outside the context of menu/menubar
+        - test: menu-roles.html
+          subtest: orphaned menuitemcheckbox outside the context of menu/menubar
+        - test: menu-roles.html
+          subtest: orphan button with menuitem role
+        - test: menu-roles.html
+          subtest: orphan button with menuitemcheckbox role
+        - test: menu-roles.html
+          subtest: orphan button with menuitemradio role
+        - test: listbox-roles.html
+          subtest: orphaned option outside the context of listbox
+        - test: tab-roles.html
+          subtest: orphan button with tab role
         - test: tree-roles.html
           subtest: orphaned treeitem outside the context of tree
         - test: tree-roles.html
@@ -67,7 +85,8 @@ links:
           subtest: 'role: definition'
         - test: roles.html
           subtest: 'role: term'
-    - label: interop-2024-accessibility
+    - url: ""
+      label: interop-2024-accessibility
       results:
         - test: abstract-roles.html
         - test: form-roles.html
@@ -91,3 +110,7 @@ links:
       url: https://bugzilla.mozilla.org/show_bug.cgi?id=1878363
       results:
         - test: contextual-roles.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1878366
+      results:
+        - test: fallback-roles.html
