@@ -1094,3 +1094,8 @@ links:
           subtest: 'URL: Setting <non-spec:/.//p>.hostname = ''h'' Drop /. from path'
         - test: url-setters.any.html?exclude=(file|javascript|mailto)
           subtest: 'URL: Setting <non-spec:/.//p>.hostname = '''''
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1878724
+      results:
+        - test: url-setters-stripping.any.html
+        - test: url-setters-stripping.any.worker.html
