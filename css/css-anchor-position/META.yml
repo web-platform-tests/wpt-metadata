@@ -1140,3 +1140,29 @@ links:
       self: vertical-rl / rtl'
     test: inset-area-wm-dir.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1875258
+- product: firefox
+  results:
+  - subtest: .target 6
+    test: anchor-name-style-contained-dynamic.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1877168
+- product: firefox
+  results:
+  - subtest: Document position-fallback matches @position-fallback in document scope
+    test: position-fallback-tree-scoped.html
+  - subtest: Outer position-fallback matches @position-fallback in document scope
+    test: position-fallback-tree-scoped.html
+  - subtest: 'Outer position-fallback matches @position-fallback in #outer_host scope'
+    test: position-fallback-tree-scoped.html
+  - subtest: Inner position-fallback matches @position-fallback in document scope
+    test: position-fallback-tree-scoped.html
+  - subtest: 'Inner position-fallback matches @position-fallback in #outer_host scope'
+    test: position-fallback-tree-scoped.html
+  - subtest: 'Inner position-fallback matches @position-fallback in #inner_host scope'
+    test: position-fallback-tree-scoped.html
+  - subtest: '@position-fallback from same scope as :host rule'
+    test: position-fallback-tree-scoped.html
+  - subtest: '@position-fallback from same scope as ::slotted() rule'
+    test: position-fallback-tree-scoped.html
+  - subtest: '@position-fallback from same scope as ::part() rule'
+    test: position-fallback-tree-scoped.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1878994

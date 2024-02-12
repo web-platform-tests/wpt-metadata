@@ -1146,7 +1146,7 @@ links:
   - test: declarative-shadow-dom-attachment.html
   - test: declarative-shadow-dom-opt-in.html
   - test: innerhtml-before-closing-tag.html
-  - test: move-template-before-closing-tag.html
+  - test: move-template-before-closing-tag.
   - test: clonable.window.html
   - test: declarative-parser-interaction.html
 - product: firefox
@@ -1304,3 +1304,12 @@ links:
   - subtest: ShadowRoot.getInnerHTML() on <span>, with mode=closed, delegatesFocus=true.
     test: getinnerhtml.tentative.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1876484
+- product: firefox
+  results:
+  - subtest: Repeated declarative shadow roots keep only the first
+    test: declarative-shadow-dom-repeats.html
+  - subtest: Calling attachShadow() on declarative shadow root must match type
+    test: declarative-shadow-dom-repeats.html
+  - subtest: Calling attachShadow() on declarative shadow root must match all parameters
+    test: declarative-shadow-dom-repeats.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1877644
