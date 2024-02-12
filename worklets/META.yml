@@ -493,3 +493,12 @@ links:
       url: https://crbug.com/726125
       results:
         - test: layout-worklet-credentials.https.html
+    - product: safari
+      url: https://bugs.webkit.org/show_bug.cgi?id=244951
+      results:
+        - test: audio-worklet-csp.https.html
+          subtest: A remote-origin-redirected worklet should be blocked by the script-src 'self' directive.
+        - test: audio-worklet-csp.https.html
+          subtest: A same-origin worklet importing a remote-origin-redirected script should be blocked by the script-src 'self' directive.
+        - test: audio-worklet-csp.https.html
+          subtest: A same-origin worklet importing a remote-origin script should be blocked by the script-src 'self' directive.

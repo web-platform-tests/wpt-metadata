@@ -35,7 +35,18 @@ links:
         - test: non-external-no-import.html
           subtest: Module scripts with no imports always execute asynchronously
     - product: firefox
-      results:
-      - subtest: Module scripts with no imports always execute asynchronously
-        test: non-external-no-import.html
       url: https://bugzilla.mozilla.org/show_bug.cgi?id=1844208
+      results:
+        - test: non-external-no-import.html
+          subtest: Module scripts with no imports always execute asynchronously
+    - product: safari
+      url: https://bugs.webkit.org/show_bug.cgi?id=209261
+      results:
+        - test: 106-noimport-xhtml.xhtml
+        - test: 106-defer-import.html
+        - test: 106-defer-noimport.html
+        - test: 106-external-module-import.html
+        - test: 106-external-module-noimport.html
+        - test: 106-import-xhtml.xhtml
+        - test: 106-module-import.html
+        - test: 106-module-noimport.html
