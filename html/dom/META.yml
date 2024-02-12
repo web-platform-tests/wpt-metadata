@@ -2422,3 +2422,68 @@ links:
   - subtest: Passing values of the wrong type should throw a TypeError
     test: aria-element-reflection.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1875206
+- product: firefox
+  results:
+  - test: aria-element-reflection-disconnected.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1878351
+- product: firefox
+  results:
+  - subtest: 'progress.max: setAttribute() to "\v7"'
+    test: reflection-forms.html
+  - subtest: "progress.max: setAttribute() to \"\_7\""
+    test: reflection-forms.html
+  - subtest: "progress.max: setAttribute() to \"\uFEFF7\""
+    test: reflection-forms.html
+  - subtest: "progress.max: setAttribute() to \"\L7\""
+    test: reflection-forms.html
+  - subtest: "progress.max: setAttribute() to \"\P7\""
+    test: reflection-forms.html
+  - subtest: "progress.max: setAttribute() to \"\u16807\""
+    test: reflection-forms.html
+  - subtest: "progress.max: setAttribute() to \"\u180E7\""
+    test: reflection-forms.html
+  - subtest: "progress.max: setAttribute() to \"\u20007\""
+    test: reflection-forms.html
+  - subtest: "progress.max: setAttribute() to \"\u20017\""
+    test: reflection-forms.html
+  - subtest: "progress.max: setAttribute() to \"\u20027\""
+    test: reflection-forms.html
+  - subtest: "progress.max: setAttribute() to \"\u20037\""
+    test: reflection-forms.html
+  - subtest: "progress.max: setAttribute() to \"\u20047\""
+    test: reflection-forms.html
+  - subtest: "progress.max: setAttribute() to \"\u20057\""
+    test: reflection-forms.html
+  - subtest: "progress.max: setAttribute() to \"\u20067\""
+    test: reflection-forms.html
+  - subtest: "progress.max: setAttribute() to \"\u20077\""
+    test: reflection-forms.html
+  - subtest: "progress.max: setAttribute() to \"\u20087\""
+    test: reflection-forms.html
+  - subtest: "progress.max: setAttribute() to \"\u20097\""
+    test: reflection-forms.html
+  - subtest: "progress.max: setAttribute() to \"\u200A7\""
+    test: reflection-forms.html
+  - subtest: "progress.max: setAttribute() to \"\u202F7\""
+    test: reflection-forms.html
+  - subtest: "progress.max: setAttribute() to \"\u30007\""
+    test: reflection-forms.html
+  - subtest: 'progress.max: setAttribute() to "\t\v7"'
+    test: reflection-forms.html
+  - subtest: 'progress.max: setAttribute() to "\n\v7"'
+    test: reflection-forms.html
+  - subtest: 'progress.max: setAttribute() to "\f\v7"'
+    test: reflection-forms.html
+  - subtest: 'progress.max: setAttribute() to "\r\v7"'
+    test: reflection-forms.html
+  - subtest: 'progress.max: setAttribute() to " \v7"'
+    test: reflection-forms.html
+  - subtest: 'progress.max: IDL set to -10000000000'
+    test: reflection-forms.html
+  - subtest: 'progress.max: IDL set to -1'
+    test: reflection-forms.html
+  - subtest: 'progress.max: IDL set to -0'
+    test: reflection-forms.html
+  - subtest: 'progress.max: IDL set to 0'
+    test: reflection-forms.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1878982

@@ -187,3 +187,20 @@ links:
         - test: table-roles.html
         - test: names.html
         - test: roles-contextual.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1749505
+      results:
+        - test: roles-contextual.html
+    - product: firefox
+      url: https://github.com/w3c/html-aam/issues/474
+      results:
+        - test: table-roles.html
+          subtest: el-thead
+        - test: table-roles.html
+          subtest: el-tbody
+        - test: table-roles.html
+          subtest: el-tfoot
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1878350
+      results:
+        - test: names.html
