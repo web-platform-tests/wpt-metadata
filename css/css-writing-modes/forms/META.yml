@@ -1,148 +1,162 @@
 links:
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1802466
-      results:
-        - test: text-input-vertical-overflow-no-scroll.html
-          subtest: 'input[type=text] in vertical-lr: typing characters in input should not cause the page to scroll'
-        - test: text-input-vertical-overflow-no-scroll.html
-          subtest: 'input[type=text] in vertical-rl: typing characters in input should not cause the page to scroll'
-        - test: text-input-vertical-overflow-no-scroll.html
-          subtest: 'input[type=password] in vertical-lr: typing characters in input should not cause the page to scroll'
-        - test: text-input-vertical-overflow-no-scroll.html
-          subtest: 'input[type=password] in vertical-rl: typing characters in input should not cause the page to scroll'
-        - test: text-input-vertical-overflow-no-scroll.html
-          subtest: 'input[type=search] in vertical-lr: typing characters in input should not cause the page to scroll'
-        - test: text-input-vertical-overflow-no-scroll.html
-          subtest: 'input[type=search] in vertical-rl: typing characters in input should not cause the page to scroll'
-        - test: text-input-vertical-overflow-no-scroll.html
-          subtest: 'input[type=number] in vertical-lr: typing characters in input should not cause the page to scroll'
-        - test: text-input-vertical-overflow-no-scroll.html
-          subtest: 'input[type=number] in vertical-rl: typing characters in input should not cause the page to scroll'
-        - test: text-input-vertical-overflow-no-scroll.html
-          subtest: 'input[type=password] in sideways-rl: typing characters in input should not cause the page to scroll'
-        - test: text-input-vertical-overflow-no-scroll.html
-          subtest: 'input[type=number] in sideways-rl: typing characters in input should not cause the page to scroll'
-        - test: text-input-vertical-overflow-no-scroll.html
-          subtest: 'input[type=text] in sideways-rl: typing characters in input should not cause the page to scroll'
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1802687
-      results:
-        - test: range-input-appearance-native-vertical-rtl.optional.html
-        - test: range-input-appearance-none-vertical-rtl.optional.html
-    - product: chrome
-      url: https://crbug.com/1394042
-      results:
-        - test: color-input-appearance-none-vertical.optional.html
-        - test: range-input-appearance-native-horizontal.optional.html
-        - test: select-multiple-appearance-native-vlr.optional.html
-        - test: textarea-appearance-native-horizontal.optional.html
-        - test: textarea-appearance-native-vlr.optional.html
-        - test: text-input-block-size.optional.html
-        - test: range-input-appearance-none-vertical.optional.html
-        - test: select-multiple-appearance-none-vrl.optional.html
-        - test: color-input-appearance-native-horizontal.optional.html
-        - test: select-multiple-appearance-native-horizontal.optional.html
-        - test: select-multiple-appearance-none-horizontal.optional.html
-        - test: select-multiple-appearance-none-vlr.optional.html
-        - test: textarea-appearance-none-vlr.optional.html
-        - test: textarea-appearance-none-vrl.optional.html
-        - test: textarea-appearance-none-horizontal.optional.html
-        - test: color-input-appearance-native-vertical.optional.html
-        - test: color-input-appearance-none-horizontal.optional.html
-        - test: range-input-appearance-native-vertical.optional.html
-        - test: range-input-appearance-none-horizontal.optional.html
-        - test: select-multiple-appearance-native-vrl.optional.html
-        - test: textarea-appearance-native-vrl.optional.html
-    - label: interop-2023-forms
-      results:
-        - test: progress-appearance-native-computed-style.optional.html
-        - test: select-multiple-appearance-native-vlr.optional.html
-        - test: select-size-scrolling-and-sizing.optional.html
-        - test: textarea-rows-cols-sizing.html
-        - test: color-input-appearance-none-vertical.optional.html
-        - test: range-input-appearance-native-horizontal.optional.html
-        - test: range-input-appearance-native-vertical-rtl.optional.html
-        - test: textarea-appearance-none-vlr.optional.html
-        - test: range-input-vertical-rtl-painting.html
-        - test: select-multiple-appearance-none-horizontal.optional.html
-        - test: color-input-appearance-native-horizontal.optional.html
-        - test: progress-appearance-native-horizontal.optional.html
-        - test: range-input-appearance-none-horizontal.optional.html
-        - test: range-input-appearance-none-vertical.optional.html
-        - test: range-input-appearance-none-vertical-rtl.optional.html
-        - test: select-multiple-appearance-none-vrl.optional.html
-        - test: color-input-appearance-native-vertical.optional.html
-        - test: meter-appearance-native-horizontal.optional.html
-        - test: meter-appearance-native-vertical.optional.html
-        - test: range-input-appearance-native-horizontal-rtl.optional.html
-        - test: select-multiple-scrolling.optional.html
-        - test: textarea-appearance-native-vlr.optional.html
-        - test: textarea-appearance-none-horizontal.optional.html
-        - test: meter-appearance-native-computed-style.optional.html
-        - test: progress-appearance-none-horizontal.optional.html
-        - test: range-input-appearance-native-vertical.optional.html
-        - test: range-input-vertical-ltr-painting.html
-        - test: select-multiple-appearance-native-horizontal.optional.html
-        - test: text-input-vertical-overflow-no-scroll.html
-        - test: color-input-appearance-none-horizontal.optional.html
-        - test: number-input-vertical-overflow.html
-        - test: progress-appearance-native-vertical.optional.html
-        - test: range-input-appearance-none-horizontal-rtl.optional.html
-        - test: select-multiple-appearance-none-vlr.optional.html
-        - test: text-input-block-size.optional.html
-        - test: textarea-appearance-none-vrl.optional.html
-        - test: progress-appearance-none-vertical.optional.html
-        - test: select-multiple-appearance-native-vrl.optional.html
-        - test: textarea-appearance-native-horizontal.optional.html
-        - test: textarea-appearance-native-vrl.optional.html
-    - product: chrome
-      url: https://bugs.chromium.org/p/chromium/issues/detail?id=1394042
-      results:
-        - test: select-multiple-scrolling.optional.html
-        - test: select-size-scrolling-and-sizing.optional.html
-        - test: textarea-rows-cols-sizing.html
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1823516
-      results:
-        - test: text-input-block-size.optional.html
-          subtest: 'Test input[type=text] block-size in writing-mode: vertical-lr'
-        - test: text-input-block-size.optional.html
-          subtest: 'Test input[type=text] block-size in writing-mode: vertical-rl'
-        - test: text-input-block-size.optional.html
-          subtest: 'Test input[type=email] block-size in writing-mode: vertical-lr'
-        - test: text-input-block-size.optional.html
-          subtest: 'Test input[type=email] block-size in writing-mode: vertical-rl'
-        - test: text-input-block-size.optional.html
-          subtest: 'Test input[type=password] block-size in writing-mode: vertical-lr'
-        - test: text-input-block-size.optional.html
-          subtest: 'Test input[type=password] block-size in writing-mode: vertical-rl'
-        - test: text-input-block-size.optional.html
-          subtest: 'Test input[type=search] block-size in writing-mode: vertical-lr'
-        - test: text-input-block-size.optional.html
-          subtest: 'Test input[type=search] block-size in writing-mode: vertical-rl'
-        - test: text-input-block-size.optional.html
-          subtest: 'Test input[type=tel] block-size in writing-mode: vertical-lr'
-        - test: text-input-block-size.optional.html
-          subtest: 'Test input[type=tel] block-size in writing-mode: vertical-rl'
-        - test: text-input-block-size.optional.html
-          subtest: 'Test input[type=url] block-size in writing-mode: vertical-lr'
-        - test: text-input-block-size.optional.html
-          subtest: 'Test input[type=url] block-size in writing-mode: vertical-rl'
-        - test: text-input-block-size.optional.html
-          subtest: 'Test input[type=number] block-size in writing-mode: vertical-lr'
-        - test: text-input-block-size.optional.html
-          subtest: 'Test input[type=number] block-size in writing-mode: vertical-rl'
-    - product: chrome
-      url: https://bugs.chromium.org/p/chromium/issues/detail?id=1432009
-      results:
-        - test: range-input-appearance-native-vertical-rtl.optional.html
-        - test: range-input-appearance-none-vertical-rtl.optional.html
-    - url: https://bugzilla.mozilla.org/show_bug.cgi?id=1842839
-      results:
-        - test: textarea-rows-cols-sizing.html
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1877318
-      results:
-        - test: meter-appearance-native-vertical.optional.html
-        - test: progress-appearance-native-vertical.optional.html
-        - test: progress-appearance-none-vertical.optional.html
+- product: firefox
+  results:
+  - subtest: 'input[type=text] in vertical-lr: typing characters in input should not
+      cause the page to scroll'
+    test: text-input-vertical-overflow-no-scroll.html
+  - subtest: 'input[type=text] in vertical-rl: typing characters in input should not
+      cause the page to scroll'
+    test: text-input-vertical-overflow-no-scroll.html
+  - subtest: 'input[type=password] in vertical-lr: typing characters in input should
+      not cause the page to scroll'
+    test: text-input-vertical-overflow-no-scroll.html
+  - subtest: 'input[type=password] in vertical-rl: typing characters in input should
+      not cause the page to scroll'
+    test: text-input-vertical-overflow-no-scroll.html
+  - subtest: 'input[type=search] in vertical-lr: typing characters in input should
+      not cause the page to scroll'
+    test: text-input-vertical-overflow-no-scroll.html
+  - subtest: 'input[type=search] in vertical-rl: typing characters in input should
+      not cause the page to scroll'
+    test: text-input-vertical-overflow-no-scroll.html
+  - subtest: 'input[type=number] in vertical-lr: typing characters in input should
+      not cause the page to scroll'
+    test: text-input-vertical-overflow-no-scroll.html
+  - subtest: 'input[type=number] in vertical-rl: typing characters in input should
+      not cause the page to scroll'
+    test: text-input-vertical-overflow-no-scroll.html
+  - subtest: 'input[type=password] in sideways-rl: typing characters in input should
+      not cause the page to scroll'
+    test: text-input-vertical-overflow-no-scroll.html
+  - subtest: 'input[type=number] in sideways-rl: typing characters in input should
+      not cause the page to scroll'
+    test: text-input-vertical-overflow-no-scroll.html
+  - subtest: 'input[type=text] in sideways-rl: typing characters in input should not
+      cause the page to scroll'
+    test: text-input-vertical-overflow-no-scroll.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1802466
+- product: firefox
+  results:
+  - test: range-input-appearance-native-vertical-rtl.optional.html
+  - test: range-input-appearance-none-vertical-rtl.optional.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1802687
+- product: chrome
+  results:
+  - test: color-input-appearance-none-vertical.optional.html
+  - test: range-input-appearance-native-horizontal.optional.html
+  - test: select-multiple-appearance-native-vlr.optional.html
+  - test: textarea-appearance-native-horizontal.optional.html
+  - test: textarea-appearance-native-vlr.optional.html
+  - test: text-input-block-size.optional.html
+  - test: range-input-appearance-none-vertical.optional.html
+  - test: select-multiple-appearance-none-vrl.optional.html
+  - test: color-input-appearance-native-horizontal.optional.html
+  - test: select-multiple-appearance-native-horizontal.optional.html
+  - test: select-multiple-appearance-none-horizontal.optional.html
+  - test: select-multiple-appearance-none-vlr.optional.html
+  - test: textarea-appearance-none-vlr.optional.html
+  - test: textarea-appearance-none-vrl.optional.html
+  - test: textarea-appearance-none-horizontal.optional.html
+  - test: color-input-appearance-native-vertical.optional.html
+  - test: color-input-appearance-none-horizontal.optional.html
+  - test: range-input-appearance-native-vertical.optional.html
+  - test: range-input-appearance-none-horizontal.optional.html
+  - test: select-multiple-appearance-native-vrl.optional.html
+  - test: textarea-appearance-native-vrl.optional.html
+  url: https://crbug.com/1394042
+- label: interop-2023-forms
+  results:
+  - test: progress-appearance-native-computed-style.optional.html
+  - test: select-multiple-appearance-native-vlr.optional.html
+  - test: select-size-scrolling-and-sizing.optional.html
+  - test: textarea-rows-cols-sizing.html
+  - test: color-input-appearance-none-vertical.optional.html
+  - test: range-input-appearance-native-horizontal.optional.html
+  - test: range-input-appearance-native-vertical-rtl.optional.html
+  - test: textarea-appearance-none-vlr.optional.html
+  - test: range-input-vertical-rtl-painting.html
+  - test: select-multiple-appearance-none-horizontal.optional.html
+  - test: color-input-appearance-native-horizontal.optional.html
+  - test: progress-appearance-native-horizontal.optional.html
+  - test: range-input-appearance-none-horizontal.optional.html
+  - test: range-input-appearance-none-vertical.optional.html
+  - test: range-input-appearance-none-vertical-rtl.optional.html
+  - test: select-multiple-appearance-none-vrl.optional.html
+  - test: color-input-appearance-native-vertical.optional.html
+  - test: meter-appearance-native-horizontal.optional.html
+  - test: meter-appearance-native-vertical.optional.html
+  - test: range-input-appearance-native-horizontal-rtl.optional.html
+  - test: select-multiple-scrolling.optional.html
+  - test: textarea-appearance-native-vlr.optional.html
+  - test: textarea-appearance-none-horizontal.optional.html
+  - test: meter-appearance-native-computed-style.optional.html
+  - test: progress-appearance-none-horizontal.optional.html
+  - test: range-input-appearance-native-vertical.optional.html
+  - test: range-input-vertical-ltr-painting.html
+  - test: select-multiple-appearance-native-horizontal.optional.html
+  - test: text-input-vertical-overflow-no-scroll.html
+  - test: color-input-appearance-none-horizontal.optional.html
+  - test: number-input-vertical-overflow.html
+  - test: progress-appearance-native-vertical.optional.html
+  - test: range-input-appearance-none-horizontal-rtl.optional.html
+  - test: select-multiple-appearance-none-vlr.optional.html
+  - test: text-input-block-size.optional.html
+  - test: textarea-appearance-none-vrl.optional.html
+  - test: progress-appearance-none-vertical.optional.html
+  - test: select-multiple-appearance-native-vrl.optional.html
+  - test: textarea-appearance-native-horizontal.optional.html
+  - test: textarea-appearance-native-vrl.optional.html
+- product: chrome
+  results:
+  - test: select-multiple-scrolling.optional.html
+  - test: select-size-scrolling-and-sizing.optional.html
+  - test: textarea-rows-cols-sizing.html
+  url: https://bugs.chromium.org/p/chromium/issues/detail?id=1394042
+- product: firefox
+  results:
+  - subtest: 'Test input[type=text] block-size in writing-mode: vertical-lr'
+    test: text-input-block-size.optional.html
+  - subtest: 'Test input[type=text] block-size in writing-mode: vertical-rl'
+    test: text-input-block-size.optional.html
+  - subtest: 'Test input[type=email] block-size in writing-mode: vertical-lr'
+    test: text-input-block-size.optional.html
+  - subtest: 'Test input[type=email] block-size in writing-mode: vertical-rl'
+    test: text-input-block-size.optional.html
+  - subtest: 'Test input[type=password] block-size in writing-mode: vertical-lr'
+    test: text-input-block-size.optional.html
+  - subtest: 'Test input[type=password] block-size in writing-mode: vertical-rl'
+    test: text-input-block-size.optional.html
+  - subtest: 'Test input[type=search] block-size in writing-mode: vertical-lr'
+    test: text-input-block-size.optional.html
+  - subtest: 'Test input[type=search] block-size in writing-mode: vertical-rl'
+    test: text-input-block-size.optional.html
+  - subtest: 'Test input[type=tel] block-size in writing-mode: vertical-lr'
+    test: text-input-block-size.optional.html
+  - subtest: 'Test input[type=tel] block-size in writing-mode: vertical-rl'
+    test: text-input-block-size.optional.html
+  - subtest: 'Test input[type=url] block-size in writing-mode: vertical-lr'
+    test: text-input-block-size.optional.html
+  - subtest: 'Test input[type=url] block-size in writing-mode: vertical-rl'
+    test: text-input-block-size.optional.html
+  - subtest: 'Test input[type=number] block-size in writing-mode: vertical-lr'
+    test: text-input-block-size.optional.html
+  - subtest: 'Test input[type=number] block-size in writing-mode: vertical-rl'
+    test: text-input-block-size.optional.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1823516
+- product: chrome
+  results:
+  - test: range-input-appearance-native-vertical-rtl.optional.html
+  - test: range-input-appearance-none-vertical-rtl.optional.html
+  url: https://bugs.chromium.org/p/chromium/issues/detail?id=1432009
+- results:
+  - test: textarea-rows-cols-sizing.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1842839
+- product: firefox
+  results:
+  - test: meter-appearance-native-vertical-rtl.optional.html
+  - test: meter-appearance-native-vertical.optional.html
+  - test: progress-appearance-native-vertical-rtl.optional.html
+  - test: progress-appearance-native-vertical.optional.html
+  - test: progress-appearance-none-vertical-rtl.optional.html
+  - test: progress-appearance-none-vertical.optional.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1877318
