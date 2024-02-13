@@ -117,7 +117,8 @@ links:
       results:
         - test: font-synthesis-computed.html
         - test: font-synthesis-valid.html
-    - label: interop-2022-text
+    - url: ""
+      label: interop-2022-text
       results:
         - test: font-variant-caps-computed.html
         - test: font-variant-caps-invalid.html
@@ -159,7 +160,8 @@ links:
           subtest: e.style['font-variant'] = "common-ligatures discretionary-ligatures historical-ligatures contextual small-caps stylistic(flowing) lining-nums proportional-nums diagonal-fractions ordinal slashed-zero jis78 full-width ruby sub" should set the property value
         - test: font-variant-valid.html
           subtest: e.style['font-variant'] = "super proportional-width jis83 stacked-fractions tabular-nums oldstyle-nums historical-forms all-small-caps no-contextual no-historical-ligatures no-discretionary-ligatures no-common-ligatures" should set the property value
-    - label: interop-2023-fonts
+    - url: ""
+      label: interop-2023-fonts
       results:
         - test: font-face-src-format.html
         - test: font-face-src-list.html
@@ -318,7 +320,8 @@ links:
       results:
         - test: font-variant-invalid.html
           subtest: e.style['font-variant'] = "small-caps normal" should not set the property value
-    - label: interop-2024-font-size-adjust
+    - url: ""
+      label: interop-2024-font-size-adjust
       results:
         - test: font-size-adjust-computed.html
         - test: font-size-adjust-invalid.html
@@ -330,6 +333,10 @@ links:
           subtest: e.style['font-size-adjust'] = "ic-height 0.9" should set the property value
         - test: font-size-adjust-valid.html
           subtest: e.style['font-size-adjust'] = "ic-height from-font" should set the property value
+        - test: font-size-adjust-computed.html
+          subtest: Property font-size-adjust value 'ic-height 1.1'
+        - test: font-size-adjust-computed.html
+          subtest: Property font-size-adjust value 'ic-height from-font'
     - product: chrome
       url: https://issues.chromium.org/40081245
       results:
