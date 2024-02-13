@@ -1,0 +1,9 @@
+links:
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1861275
+      results:
+        - test: order-in-new-document-navigation.html
+          subtest: pagereveal event fires and in correct order on new-document navigation
+        - test: order-in-prerender-activation.html
+        - test: order-in-bfcache-restore.html
+          subtest: pagereveal event fires and in correct order on restoration from BFCache
