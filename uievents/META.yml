@@ -1,5 +1,12 @@
 links:
-    - product: chrome
-      url: https://bugs.chromium.org/p/chromium/issues/detail?id=1062667
-      results:
-        - test: idlharness.window.html
+- product: chrome
+  results:
+  - test: idlharness.window.html
+  url: https://bugs.chromium.org/p/chromium/issues/detail?id=1062667
+- product: firefox
+  results:
+  - subtest: 'MouseEvent interface: attribute layerX'
+    test: idlharness.window.html
+  - subtest: 'MouseEvent interface: attribute layerY'
+    test: idlharness.window.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1881757
