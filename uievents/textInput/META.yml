@@ -1,0 +1,24 @@
+links:
+- product: firefox
+  results:
+  - subtest: No constructor
+    test: api.html
+  - subtest: document.CreateEvent('TextEvent') prototype chain
+    test: api.html
+  - subtest: initTextEvent('foo')
+    test: api.html
+  - subtest: initTextEvent('foo', true, true, window, 'bar')
+    test: api.html
+  - subtest: 'case sensitivity: textInput vs textinput'
+    test: api.html
+  - subtest: 'textInput: basic, <input>'
+    test: basic.html
+  - subtest: 'textInput: basic, <textarea>'
+    test: basic.html
+  - subtest: 'textInput: basic, <div contenteditable="true">'
+    test: basic.html
+  - subtest: 'textInput: Enter key for textarea and contenteditable, <textarea>'
+    test: enter-textarea-contenteditable.html
+  - subtest: 'textInput: Enter key for textarea and contenteditable, <div contenteditable="true">'
+    test: enter-textarea-contenteditable.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1881757
