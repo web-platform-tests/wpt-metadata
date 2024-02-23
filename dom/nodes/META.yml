@@ -1,82 +1,105 @@
 links:
-    - product: chrome
-      url: https://bugs.chromium.org/p/chromium/issues/detail?id=569690
-      results:
-        - test: Document-createEvent.https.html
-          subtest: Should throw NOT_SUPPORTED_ERR for non-legacy event interface "AnimationEvent"
-        - test: Document-createEvent.https.html
-          subtest: Should throw NOT_SUPPORTED_ERR for non-legacy event interface "CloseEvent"
-        - test: Document-createEvent.https.html
-          subtest: Should throw NOT_SUPPORTED_ERR for non-legacy event interface "ErrorEvent"
-        - test: Document-createEvent.https.html
-          subtest: Should throw NOT_SUPPORTED_ERR for non-legacy event interface "IDBVersionChangeEvent"
-        - test: Document-createEvent.https.html
-          subtest: Should throw NOT_SUPPORTED_ERR for non-legacy event interface "PageTransitionEvent"
-        - test: Document-createEvent.https.html
-          subtest: Should throw NOT_SUPPORTED_ERR for non-legacy event interface "TrackEvent"
-        - test: Document-createEvent.https.html
-          subtest: Should throw NOT_SUPPORTED_ERR for non-legacy event interface "TransitionEvent"
-        - test: Document-createEvent.https.html
-          subtest: Should throw NOT_SUPPORTED_ERR for non-legacy event interface "WebGLContextEvent"
-        - test: Document-createElementNS.html
-    - product: chrome
-      url: https://bugs.chromium.org/p/chromium/issues/detail?id=921880
-      results:
-        - test: Element-matches.html
-          subtest: 'In-document Element.matches: :link and :visited pseudo-class selectors, matching link elements with href attributes (with no refNodes): #head :link, #head :visited'
-        - test: Element-matches.html
-          subtest: 'In-document Element.matches: :link and :visited pseudo-class selectors, matching link elements with href attributes (with refNode Element): :link, #head :visited'
-        - test: Element-webkitMatchesSelector.html
-          subtest: 'In-document Element.webkitMatchesSelector: :link and :visited pseudo-class selectors, matching link elements with href attributes (with no refNodes): #head :link, #head :visited'
-        - test: Element-webkitMatchesSelector.html
-          subtest: 'In-document Element.webkitMatchesSelector: :link and :visited pseudo-class selectors, matching link elements with href attributes (with refNode Element): :link, #head :visited'
-        - test: ParentNode-querySelector-All-xht.xht
-          subtest: 'Document.querySelectorAll: :link and :visited pseudo-class selectors, matching link elements with href attributes: #head :link, #head :visited'
-        - test: ParentNode-querySelector-All-xht.xht
-          subtest: 'Document.querySelector: :link and :visited pseudo-class selectors, matching link elements with href attributes: #head :link, #head :visited'
-        - test: ParentNode-querySelector-All.html
-          subtest: 'Document.querySelectorAll: :link and :visited pseudo-class selectors, matching link elements with href attributes: #head :link, #head :visited'
-        - test: ParentNode-querySelector-All.html
-          subtest: 'Document.querySelector: :link and :visited pseudo-class selectors, matching link elements with href attributes: #head :link, #head :visited'
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=520969
-      results:
-        - test: DOMImplementation-createDocument.html
-          subtest: 'createDocument test 195: metadata for null,null,DocumentType node <!DOCTYPE html>'
-        - test: DOMImplementation-createDocument.html
-          subtest: 'createDocument test: null,"",DocumentType node <!DOCTYPE html -//W3C//DTD XHTML 1.0 Transitional//EN http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd>'
-        - test: DOMImplementation-createDocument.html
-          subtest: 'createDocument test: null,null,DocumentType node <!DOCTYPE html>,null'
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1303629
-      results:
-        - test: attributes.html
-          subtest: First set attribute is returned with mapped attribute set first
-    - product: chrome
-      url: https://crbug.com/1068619
-      results:
-        - test: ParentNode-querySelector-escapes.html
-          status: FAIL
-    - product: chrome
-      url: https://crbug.com/1067384
-      results:
-        - test: ParentNode-replaceChildren.html
-    - product: chrome
-      url: https://bugs.chromium.org/p/chromium/issues/detail?id=372424
-      results:
-        - test: DOMImplementation-createDocument.html
-    - product: chrome
-      url: https://bugs.chromium.org/p/chromium/issues/detail?id=1225100
-      results:
-        - test: Element-closest.html
-        - test: adoption.window.html
-    - label: interop-2023-webcompat
-      results:
-        - test: ParentNode-querySelector-scope.html
-    - product: safari
-      url: https://bugs.webkit.org/show_bug.cgi?id=32393
-      results:
-        - test: Comment-in-doctype.xhtml
-          subtest: 'XML: Comment in doctype internal subset'
-        - test: ProcessingInstruction-in-doctype.xhtml
-          subtest: 'XML: Processing instruction in doctype internal subset'
+- product: chrome
+  results:
+  - subtest: Should throw NOT_SUPPORTED_ERR for non-legacy event interface "AnimationEvent"
+    test: Document-createEvent.https.html
+  - subtest: Should throw NOT_SUPPORTED_ERR for non-legacy event interface "CloseEvent"
+    test: Document-createEvent.https.html
+  - subtest: Should throw NOT_SUPPORTED_ERR for non-legacy event interface "ErrorEvent"
+    test: Document-createEvent.https.html
+  - subtest: Should throw NOT_SUPPORTED_ERR for non-legacy event interface "IDBVersionChangeEvent"
+    test: Document-createEvent.https.html
+  - subtest: Should throw NOT_SUPPORTED_ERR for non-legacy event interface "PageTransitionEvent"
+    test: Document-createEvent.https.html
+  - subtest: Should throw NOT_SUPPORTED_ERR for non-legacy event interface "TrackEvent"
+    test: Document-createEvent.https.html
+  - subtest: Should throw NOT_SUPPORTED_ERR for non-legacy event interface "TransitionEvent"
+    test: Document-createEvent.https.html
+  - subtest: Should throw NOT_SUPPORTED_ERR for non-legacy event interface "WebGLContextEvent"
+    test: Document-createEvent.https.html
+  - test: Document-createElementNS.html
+  url: https://bugs.chromium.org/p/chromium/issues/detail?id=569690
+- product: chrome
+  results:
+  - subtest: 'In-document Element.matches: :link and :visited pseudo-class selectors,
+      matching link elements with href attributes (with no refNodes): #head :link,
+      #head :visited'
+    test: Element-matches.html
+  - subtest: 'In-document Element.matches: :link and :visited pseudo-class selectors,
+      matching link elements with href attributes (with refNode Element): :link, #head
+      :visited'
+    test: Element-matches.html
+  - subtest: 'In-document Element.webkitMatchesSelector: :link and :visited pseudo-class
+      selectors, matching link elements with href attributes (with no refNodes): #head
+      :link, #head :visited'
+    test: Element-webkitMatchesSelector.html
+  - subtest: 'In-document Element.webkitMatchesSelector: :link and :visited pseudo-class
+      selectors, matching link elements with href attributes (with refNode Element):
+      :link, #head :visited'
+    test: Element-webkitMatchesSelector.html
+  - subtest: 'Document.querySelectorAll: :link and :visited pseudo-class selectors,
+      matching link elements with href attributes: #head :link, #head :visited'
+    test: ParentNode-querySelector-All-xht.xht
+  - subtest: 'Document.querySelector: :link and :visited pseudo-class selectors, matching
+      link elements with href attributes: #head :link, #head :visited'
+    test: ParentNode-querySelector-All-xht.xht
+  - subtest: 'Document.querySelectorAll: :link and :visited pseudo-class selectors,
+      matching link elements with href attributes: #head :link, #head :visited'
+    test: ParentNode-querySelector-All.html
+  - subtest: 'Document.querySelector: :link and :visited pseudo-class selectors, matching
+      link elements with href attributes: #head :link, #head :visited'
+    test: ParentNode-querySelector-All.html
+  url: https://bugs.chromium.org/p/chromium/issues/detail?id=921880
+- product: firefox
+  results:
+  - subtest: 'createDocument test 195: metadata for null,null,DocumentType node <!DOCTYPE
+      html>'
+    test: DOMImplementation-createDocument.html
+  - subtest: 'createDocument test: null,"",DocumentType node <!DOCTYPE html -//W3C//DTD
+      XHTML 1.0 Transitional//EN http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd>'
+    test: DOMImplementation-createDocument.html
+  - subtest: 'createDocument test: null,null,DocumentType node <!DOCTYPE html>,null'
+    test: DOMImplementation-createDocument.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=520969
+- product: firefox
+  results:
+  - subtest: First set attribute is returned with mapped attribute set first
+    test: attributes.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1303629
+- product: chrome
+  results:
+  - status: FAIL
+    test: ParentNode-querySelector-escapes.html
+  url: https://crbug.com/1068619
+- product: chrome
+  results:
+  - test: ParentNode-replaceChildren.html
+  url: https://crbug.com/1067384
+- product: chrome
+  results:
+  - test: DOMImplementation-createDocument.html
+  url: https://bugs.chromium.org/p/chromium/issues/detail?id=372424
+- product: chrome
+  results:
+  - test: Element-closest.html
+  - test: adoption.window.html
+  url: https://bugs.chromium.org/p/chromium/issues/detail?id=1225100
+- label: interop-2023-webcompat
+  results:
+  - test: ParentNode-querySelector-scope.html
+- product: safari
+  results:
+  - subtest: 'XML: Comment in doctype internal subset'
+    test: Comment-in-doctype.xhtml
+  - subtest: 'XML: Processing instruction in doctype internal subset'
+    test: ProcessingInstruction-in-doctype.xhtml
+  url: https://bugs.webkit.org/show_bug.cgi?id=32393
+- product: firefox
+  results:
+  - subtest: TextEvent should be an alias for TextEvent.
+    test: Document-createEvent.https.html
+  - subtest: textevent should be an alias for TextEvent.
+    test: Document-createEvent.https.html
+  - subtest: TEXTEVENT should be an alias for TextEvent.
+    test: Document-createEvent.https.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1881766
