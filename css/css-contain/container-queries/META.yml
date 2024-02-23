@@ -910,3 +910,21 @@ links:
       tree
     test: style-container-for-shadow-dom.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1878995
+- product: firefox
+  results:
+  - subtest: Style query matching negated value-less query against initial value
+    test: custom-property-style-queries.html
+  - subtest: Style query matching value-less query against non-initial value
+    test: custom-property-style-queries.html
+  - subtest: Match registered <length> custom property with px via initial keyword.
+    test: custom-property-style-queries.html
+  - subtest: Match registered <length> custom property with initial value.
+    test: custom-property-style-queries.html
+  - subtest: Match registered <length> custom property with initial value via initial
+      keyword.
+    test: custom-property-style-queries.html
+  - subtest: Should only match exact string for numbers in non-registered custom properties
+    test: custom-property-style-queries.html
+  - subtest: Spaces should not collapse in non-registered custom properties
+    test: custom-property-style-queries.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1881854
