@@ -1,0 +1,17 @@
+links:
+- product: firefox
+  results:
+  - subtest: 'Insertion steps: load event fires synchronously *after* iframe DOM insertion,
+      as part of the iframe element''s insertion steps'
+    test: insertion-removing-steps-iframe.window.html
+  - subtest: 'Removing steps (innerHTML): script does not run synchronously during
+      iframe destruction'
+    test: insertion-removing-steps-iframe.window.html
+  - subtest: 'Removing steps (replaceChildren): script does not run synchronously
+      during iframe destruction'
+    test: insertion-removing-steps-iframe.window.html
+  - subtest: 'Removing steps (remove): script does not run synchronously during iframe
+      destruction'
+    test: insertion-removing-steps-iframe.window.html
+  - test: insertion-removing-steps-script.window.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1881704
