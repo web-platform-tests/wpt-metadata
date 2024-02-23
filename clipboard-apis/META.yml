@@ -34,17 +34,10 @@ links:
           subtest: Verify write error on malformed data [image/png ClipboardItem]
         - test: async-write-image-read-image.https.html
           subtest: Verify write and read clipboard [image/png Blob]
-    - product: chrome
-      url: https://crbug.com/1110511
-      results:
-        - test: async-svg-script-removal.https.html
-        - test: async-write-svg-read-svg.https.html
     - product: firefox
       url: https://bugzilla.mozilla.org/show_bug.cgi?id=1772896
       results:
         - test: async-promise-write-blobs-read-blobs.https.html
-          status: CRASH
-        - test: async-svg-script-removal.https.html
           status: CRASH
         - test: async-unsanitized-html-formats-write-read.tentative.https.html
           status: CRASH
@@ -56,19 +49,11 @@ links:
           status: CRASH
         - test: async-write-image-read-image.https.html
           status: CRASH
-        - test: async-write-svg-read-svg.https.html
-          status: CRASH
     - product: firefox
       url: https://bugzilla.mozilla.org/show_bug.cgi?id=1772897
       results:
         - test: async-promise-write-blobs-read-blobs.https.html
           subtest: Verify write and read clipboard (multiple types) with promise to Blobs
-        - test: async-svg-script-removal.https.html
-          subtest: |-
-            Verify write and read clipboard with scripts removed given image/svg+xml: <svg> <script>const a = 5;</scr' + 'ipt>
-               <a href="javascript:alert(2)"> test </a> </svg>
-        - test: async-write-svg-read-svg.https.html
-          subtest: Verify read and write of some image/svg+xml content
     - product: firefox
       url: https://bugzilla.mozilla.org/show_bug.cgi?id=1797710
       results:
