@@ -1,0 +1,50 @@
+links:
+- product: firefox
+  results:
+  - subtest: Property position-try-options value 'none'
+    test: position-try-options-computed.html
+  - subtest: Property position-try-options value 'flip-block'
+    test: position-try-options-computed.html
+  - subtest: Property position-try-options value 'flip-inline'
+    test: position-try-options-computed.html
+  - subtest: Property position-try-options value 'flip-start'
+    test: position-try-options-computed.html
+  - subtest: Property position-try-options value 'flip-block, flip-inline'
+    test: position-try-options-computed.html
+  - subtest: Property position-try-options value '--foo, --bar'
+    test: position-try-options-computed.html
+  - subtest: Property position-try-options value 'flip-start flip-inline flip-block'
+    test: position-try-options-computed.html
+  - subtest: Property position-try-options has initial value none
+    test: position-try-options-computed.html
+  - subtest: Property position-try-options does not inherit
+    test: position-try-options-computed.html
+  - subtest: e.style['position-try-options'] = "initial" should set the property value
+    test: position-try-options-parsing.html
+  - subtest: e.style['position-try-options'] = "inherit" should set the property value
+    test: position-try-options-parsing.html
+  - subtest: e.style['position-try-options'] = "unset" should set the property value
+    test: position-try-options-parsing.html
+  - subtest: e.style['position-try-options'] = "revert" should set the property value
+    test: position-try-options-parsing.html
+  - subtest: e.style['position-try-options'] = "none" should set the property value
+    test: position-try-options-parsing.html
+  - subtest: e.style['position-try-options'] = "flip-block" should set the property
+      value
+    test: position-try-options-parsing.html
+  - subtest: e.style['position-try-options'] = "flip-start, flip-block" should set
+      the property value
+    test: position-try-options-parsing.html
+  - subtest: e.style['position-try-options'] = "flip-start, flip-start" should set
+      the property value
+    test: position-try-options-parsing.html
+  - subtest: e.style['position-try-options'] = "flip-block, --foo" should set the
+      property value
+    test: position-try-options-parsing.html
+  - subtest: e.style['position-try-options'] = "--bar, flip-block flip-start" should
+      set the property value
+    test: position-try-options-parsing.html
+  - subtest: e.style['position-try-options'] = "--foo, --bar, --baz" should set the
+      property value
+    test: position-try-options-parsing.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1882437
