@@ -1,0 +1,16 @@
+links:
+    - product: safari
+      url: https://bugs.webkit.org/show_bug.cgi?id=270434
+      results:
+        - test: visibility-interpolation.html
+          subtest: 'CSS Transitions: property <visibility> from [collapse] to [hidden] at (0.3) should be [hidden]'
+        - test: visibility-interpolation.html
+          subtest: 'CSS Transitions: property <visibility> from [collapse] to [hidden] at (0) should be [hidden]'
+        - test: visibility-interpolation.html
+          subtest: 'CSS Transitions: property <visibility> from [collapse] to [hidden] at (-0.3) should be [hidden]'
+        - test: visibility-interpolation.html
+          subtest: 'CSS Transitions with transition: all: property <visibility> from [collapse] to [hidden] at (-0.3) should be [hidden]'
+        - test: visibility-interpolation.html
+          subtest: 'CSS Transitions with transition: all: property <visibility> from [collapse] to [hidden] at (0) should be [hidden]'
+        - test: visibility-interpolation.html
+          subtest: 'CSS Transitions with transition: all: property <visibility> from [collapse] to [hidden] at (0.3) should be [hidden]'
