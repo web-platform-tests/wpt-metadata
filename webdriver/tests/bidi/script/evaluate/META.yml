@@ -38,3 +38,19 @@ links:
           subtest: test_exception_details_await_promise[new Proxy({}, {})-expected32]
         - test: exception_details_await_promise.py
           subtest: test_exception_details_await_promise[(function*() { yield 'a'; })()-expected33]
+    - label: chromium-bidi-2023
+      results:
+        - test: await_promise.py
+        - test: evaluate.py
+        - test: exception_details.py
+        - test: exception_details_await_promise.py
+        - test: internal_id.py
+        - test: invalid.py
+        - test: invalid_tentative.py
+        - test: primitive_values.py
+        - test: remote_values.py
+        - test: result_node.py
+        - test: result_ownership.py
+        - test: sandbox.py
+        - test: strict_mode.py
+        - test: user_activation.py
