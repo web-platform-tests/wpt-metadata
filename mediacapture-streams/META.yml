@@ -84,3 +84,8 @@ links:
           subtest: aspectRatio is supported
         - test: MediaStreamTrack-getSettings.https.html
           subtest: aspectRatio is reported by getSettings() for getUserMedia() video tracks
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1609254
+      results:
+        - test: historical.https.html
+          subtest: navigator.mozGetUserMedia should not exist
