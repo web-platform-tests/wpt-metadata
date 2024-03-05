@@ -62,3 +62,22 @@ links:
   - subtest: unknown href causes the whole document to be blocked (with href changes!)
     test: element-render-blocking-027.tentative.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1870230
+- product: firefox
+  results:
+  - subtest: blocking defers frames until full parsing
+    test: element-render-blocking-001.html
+  - subtest: adding link in the head defers frames
+    test: element-render-blocking-003.html
+  - subtest: adding 'blocking=render' in the head makes it blocking
+    test: element-render-blocking-006.html
+  - subtest: changing media to matching causes link to have an effect
+    test: element-render-blocking-008.html
+  - subtest: changing rel to expect in the head causes it to be blocking
+    test: element-render-blocking-011.html
+  - subtest: adding href in the head makes it blocking
+    test: element-render-blocking-012.html
+  - subtest: unknown href causes the whole document to be blocked
+    test: element-render-blocking-024.html
+  - subtest: unknown href causes the whole document to be blocked (with href changes!)
+    test: element-render-blocking-027.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1883569
