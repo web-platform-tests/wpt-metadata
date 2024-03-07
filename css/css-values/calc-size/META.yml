@@ -120,3 +120,36 @@ links:
   - subtest: 'resolved width for width: calc-size(calc-size(min-content, size), size)'
     test: calc-size-width.tentative.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1882421
+- product: firefox
+  results:
+  - subtest: 'resolved height for height in auto height container: calc-size(any,
+      357px)'
+    test: calc-size-height.tentative.html
+  - subtest: 'resolved height for height in auto height container: calc-size(fit-content,
+      72px)'
+    test: calc-size-height.tentative.html
+  - subtest: 'resolved height for height in auto height container: calc-size(83px,
+      size * 3)'
+    test: calc-size-height.tentative.html
+  - subtest: 'resolved height for height in auto height container: calc-size(min-content,
+      size / 2)'
+    test: calc-size-height.tentative.html
+  - subtest: 'resolved height for height in auto height container: calc-size(max-content,
+      size * 1.2)'
+    test: calc-size-height.tentative.html
+  - subtest: 'resolved height for height in auto height container: calc-size(fit-content,
+      size / 2 + 30px)'
+    test: calc-size-height.tentative.html
+  - subtest: 'resolved height for height in auto height container: calc-size(calc-size(any,
+      30px), 15em)'
+    test: calc-size-height.tentative.html
+  - subtest: 'resolved height for height in auto height container: calc-size(calc-size(min-content,
+      30px), 15em)'
+    test: calc-size-height.tentative.html
+  - subtest: 'resolved height for height in definite height container: calc(12% +
+      calc-size(any, 31%))'
+    test: calc-size-height.tentative.html
+  - subtest: 'resolved height for height in definite height container: calc-size(any,
+      31% + 12px)'
+    test: calc-size-height.tentative.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1884229
