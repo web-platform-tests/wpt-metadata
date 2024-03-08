@@ -1,0 +1,10 @@
+links:
+    - product: safari
+      url: https://bugs.webkit.org/show_bug.cgi?id=268155
+      results:
+        - test: RTCRtpParameters-scalability.html
+          subtest: Setting and updating scalabilityMode to a legal value should be accepted
+        - test: RTCRtpParameters-scalability.html
+          subtest: Setting a scalability mode to nonsense throws an exception
+        - test: RTCRtpParameters-scalability.html
+          subtest: L3T3 on VP8 should return something other than L3T3
