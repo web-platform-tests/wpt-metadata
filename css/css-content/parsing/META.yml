@@ -1,78 +1,59 @@
 links:
-- product: firefox
-  results:
-  - status: CRASH
-    test: content-computed.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1871766
-- product: firefox
-  results:
-  - subtest: e.style['content'] = "open-quote / \"alt text\"" should set the property
-      value
-    test: content-valid.html
-  - subtest: e.style['content'] = "close-quote / \"alt text\"" should set the property
-      value
-    test: content-valid.html
-  - subtest: e.style['content'] = "no-open-quote / \"alt text\"" should set the property
-      value
-    test: content-valid.html
-  - subtest: e.style['content'] = "no-close-quote / \"alt text\"" should set the property
-      value
-    test: content-valid.html
-  - subtest: e.style['content'] = "attr(alt) / \"alt text\"" should set the property
-      value
-    test: content-valid.html
-  - subtest: e.style['content'] = "attr(data-foo) / \"alt text\"" should set the property
-      value
-    test: content-valid.html
-  - subtest: e.style['content'] = "counter(counter-name) / \"alt text\"" should set
-      the property value
-    test: content-valid.html
-  - subtest: e.style['content'] = "counter(counter-name, counter-style) / \"alt text\""
-      should set the property value
-    test: content-valid.html
-  - subtest: e.style['content'] = "counter(counter-name, dECiMaL) / \"alt text\""
-      should set the property value
-    test: content-valid.html
-  - subtest: e.style['content'] = "counter(counter-name, DECIMAL) / \"alt text\""
-      should set the property value
-    test: content-valid.html
-  - subtest: e.style['content'] = "counters(counter-name, \".\") / \"alt text\"" should
-      set the property value
-    test: content-valid.html
-  - subtest: e.style['content'] = "counters(counter-name, \".\", counter-style) /
-      \"alt text\"" should set the property value
-    test: content-valid.html
-  - subtest: e.style['content'] = "counters(counter-name, \".\", dECiMaL) / \"alt
-      text\"" should set the property value
-    test: content-valid.html
-  - subtest: e.style['content'] = "counters(counter-name, \".\", DECIMAL) / \"alt
-      text\"" should set the property value
-    test: content-valid.html
-  - subtest: e.style['content'] = "url(\"https://www.example.com/picture.svg\") /
-      \"alt text\"" should set the property value
-    test: content-valid.html
-  - subtest: e.style['content'] = "\"hello\" / \"alt text\"" should set the property
-      value
-    test: content-valid.html
-  - subtest: e.style['content'] = "\"hello\" \"world\" / \"alt text\"" should set
-      the property value
-    test: content-valid.html
-  - subtest: e.style['content'] = "\"hello\" attr(alt) \"world\" / \"alt text\"" should
-      set the property value
-    test: content-valid.html
-  - subtest: e.style['content'] = "counter(counter-name) \"potato\" / \"alt text\""
-      should set the property value
-    test: content-valid.html
-  - subtest: e.style['content'] = "counters(counter-name, \".\") \"potato\" / \"alt
-      text\"" should set the property value
-    test: content-valid.html
-  - subtest: e.style['content'] = "\"(\" counters(counter-name, \".\", counter-style)
-      \")\" / \"alt text\"" should set the property value
-    test: content-valid.html
-  - subtest: e.style['content'] = "open-quote \"hello\" \"world\" close-quote / \"alt
-      text\"" should set the property value
-    test: content-valid.html
-  - subtest: e.style['content'] = "url(\"https://www.example.com/picture.svg\") \"hello\"
-      / \"alt text\"" should set the property value
-    test: content-valid.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1871767
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1871766
+      results:
+        - test: content-computed.html
+          status: CRASH
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1871767
+      results:
+        - test: content-valid.html
+          subtest: e.style['content'] = "open-quote / \"alt text\"" should set the property value
+        - test: content-valid.html
+          subtest: e.style['content'] = "close-quote / \"alt text\"" should set the property value
+        - test: content-valid.html
+          subtest: e.style['content'] = "no-open-quote / \"alt text\"" should set the property value
+        - test: content-valid.html
+          subtest: e.style['content'] = "no-close-quote / \"alt text\"" should set the property value
+        - test: content-valid.html
+          subtest: e.style['content'] = "attr(alt) / \"alt text\"" should set the property value
+        - test: content-valid.html
+          subtest: e.style['content'] = "attr(data-foo) / \"alt text\"" should set the property value
+        - test: content-valid.html
+          subtest: e.style['content'] = "counter(counter-name) / \"alt text\"" should set the property value
+        - test: content-valid.html
+          subtest: e.style['content'] = "counter(counter-name, counter-style) / \"alt text\"" should set the property value
+        - test: content-valid.html
+          subtest: e.style['content'] = "counter(counter-name, dECiMaL) / \"alt text\"" should set the property value
+        - test: content-valid.html
+          subtest: e.style['content'] = "counter(counter-name, DECIMAL) / \"alt text\"" should set the property value
+        - test: content-valid.html
+          subtest: e.style['content'] = "counters(counter-name, \".\") / \"alt text\"" should set the property value
+        - test: content-valid.html
+          subtest: e.style['content'] = "counters(counter-name, \".\", counter-style) / \"alt text\"" should set the property value
+        - test: content-valid.html
+          subtest: e.style['content'] = "counters(counter-name, \".\", dECiMaL) / \"alt text\"" should set the property value
+        - test: content-valid.html
+          subtest: e.style['content'] = "counters(counter-name, \".\", DECIMAL) / \"alt text\"" should set the property value
+        - test: content-valid.html
+          subtest: e.style['content'] = "url(\"https://www.example.com/picture.svg\") / \"alt text\"" should set the property value
+        - test: content-valid.html
+          subtest: e.style['content'] = "\"hello\" / \"alt text\"" should set the property value
+        - test: content-valid.html
+          subtest: e.style['content'] = "\"hello\" \"world\" / \"alt text\"" should set the property value
+        - test: content-valid.html
+          subtest: e.style['content'] = "\"hello\" attr(alt) \"world\" / \"alt text\"" should set the property value
+        - test: content-valid.html
+          subtest: e.style['content'] = "counter(counter-name) \"potato\" / \"alt text\"" should set the property value
+        - test: content-valid.html
+          subtest: e.style['content'] = "counters(counter-name, \".\") \"potato\" / \"alt text\"" should set the property value
+        - test: content-valid.html
+          subtest: e.style['content'] = "\"(\" counters(counter-name, \".\", counter-style) \")\" / \"alt text\"" should set the property value
+        - test: content-valid.html
+          subtest: e.style['content'] = "open-quote \"hello\" \"world\" close-quote / \"alt text\"" should set the property value
+        - test: content-valid.html
+          subtest: e.style['content'] = "url(\"https://www.example.com/picture.svg\") \"hello\" / \"alt text\"" should set the property value
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1884747
+      results:
+        - test: content-computed.html
