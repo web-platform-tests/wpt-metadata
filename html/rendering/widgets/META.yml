@@ -3,3 +3,22 @@ links:
   results:
   - test: baseline-alignment-and-overflow.tentative.html
   url: https://crbug.com/1040826
+- product: firefox
+  results:
+  - subtest: Empty value
+    test: field-sizing-textarea.html
+  - subtest: Empty value with cols/rows
+    test: field-sizing-textarea.html
+  - subtest: Auto width and auto height with a long text
+    test: field-sizing-textarea.html
+  - subtest: Explicit width and auto height
+    test: field-sizing-textarea.html
+  - subtest: Explicit height and auto width
+    test: field-sizing-textarea.html
+  - subtest: Text caret is taller than the placeholder
+    test: field-sizing-textarea.html
+  - subtest: Text caret is shorter than the placeholder
+    test: field-sizing-textarea.html
+  - subtest: Update field-sizing property dynamically
+    test: field-sizing-textarea.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1884741
