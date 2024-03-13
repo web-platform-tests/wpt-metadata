@@ -381,3 +381,18 @@ links:
   - subtest: 'This pseudo-element should not parse: ::highlight(name)a'
     test: getComputedStyle-pseudo-with-argument.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1880672
+- product: firefox
+  results:
+  - subtest: 'This pseudo-element should not parse: ::highlight'
+    test: getComputedStyle-pseudo-with-argument.html
+  - subtest: 'This pseudo-element should parse: ::highlight(
+
+      name'
+    test: getComputedStyle-pseudo-with-argument.html
+  - subtest: "This pseudo-element should parse: ::highlight(name\t"
+    test: getComputedStyle-pseudo-with-argument.html
+  - subtest: 'This pseudo-element should parse: ::highlight( name '
+    test: getComputedStyle-pseudo-with-argument.html
+  - subtest: 'This pseudo-element should parse: ::highlight( n\61me )'
+    test: getComputedStyle-pseudo-with-argument.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1885212
