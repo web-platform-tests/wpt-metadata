@@ -23,3 +23,9 @@ links:
       <style> (via a div) being applied
     test: Node-appendChild-script-and-style.tentative.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1882938
+- product: firefox
+  results:
+  - subtest: An outer script whose preparation/execution gets triggered by the insertion
+      of a 'nested'/'inner' script, executes *before* the inner script executes
+    test: Node-appendChild-script-in-script.tentative.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1885387
