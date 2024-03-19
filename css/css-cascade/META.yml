@@ -256,3 +256,20 @@ links:
   - subtest: Any scope limit makes the element out of scope
     test: scope-evaluation.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1886314
+- product: firefox
+  results:
+  - subtest: '@scope without prelude implicitly scopes to parent of owner node'
+    test: scope-implicit.html
+  - subtest: :scope can style implicit root
+    test: scope-implicit.html
+  - subtest: '@scope works with two identical stylesheets'
+    test: scope-implicit.html
+  - subtest: Implicit @scope with inner relative selector
+    test: scope-implicit.html
+  - subtest: Implicit @scope with inner nesting selector
+    test: scope-implicit.html
+  - subtest: Implicit @scope with limit
+    test: scope-implicit.html
+  - subtest: Proximity calculation of multiple implicit @scope
+    test: scope-implicit.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1886317
