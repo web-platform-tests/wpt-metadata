@@ -221,3 +221,38 @@ links:
   - subtest: Implicit @scope in construted stylesheet
     test: scope-shadow.tentative.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1878994
+- product: firefox
+  results:
+  - subtest: Single scope
+    test: scope-evaluation.html
+  - subtest: Selecting self with :scope
+    test: scope-evaluation.html
+  - subtest: Single scope with limit
+    test: scope-evaluation.html
+  - subtest: Single scope, :scope pseudo in main selector
+    test: scope-evaluation.html
+  - subtest: Single scope, :scope pseudo in to-selector
+    test: scope-evaluation.html
+  - subtest: Multiple scopes, :scope pseudo in to-selector
+    test: scope-evaluation.html
+  - subtest: Inner @scope with :scope in from-selector
+    test: scope-evaluation.html
+  - subtest: Multiple scopes from same @scope-rule, only one limited
+    test: scope-evaluation.html
+  - subtest: Nested scopes
+    test: scope-evaluation.html
+  - subtest: Nested scopes, with to-selector
+    test: scope-evaluation.html
+  - subtest: :scope selecting itself
+    test: scope-evaluation.html
+  - subtest: The scoping limit is not in scope
+    test: scope-evaluation.html
+  - subtest: Simulated inclusive scoping limit
+    test: scope-evaluation.html
+  - subtest: Relative selector inside @scope
+    test: scope-evaluation.html
+  - subtest: Scope root with :has()
+    test: scope-evaluation.html
+  - subtest: Any scope limit makes the element out of scope
+    test: scope-evaluation.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1886314
