@@ -21,3 +21,8 @@ links:
           subtest: test_format_type
         - test: format.py
           subtest: test_format_quality
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1761445
+      results:
+        - test: invalid.py
+          subtest: test_closed_frame
