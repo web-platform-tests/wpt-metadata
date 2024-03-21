@@ -3127,3 +3127,14 @@ links:
   - subtest: 'inset: revert-layer is disallowed in @position-try'
     test: at-position-try-allowed-declarations.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1886004
+- product: firefox
+  results:
+  - subtest: getComputedStyle() with fragmented containing block in multicolumn layout
+    test: anchor-getComputedStyle-002.html
+  - subtest: getComputedStyle() with fragmented containing block in inline layout
+    test: anchor-getComputedStyle-002.html
+  - subtest: .target 4
+    test: anchor-name-inline-001.html
+  - subtest: .target 5
+    test: anchor-name-inline-001.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1886762
