@@ -3138,3 +3138,54 @@ links:
   - subtest: .target 5
     test: anchor-name-inline-001.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1886762
+- product: firefox
+  results:
+  - subtest: flip-start, inset-area:left top, ltr horizontal-tb
+    test: try-tactic-inset-area.html
+  - subtest: flip-start, inset-area:right bottom, ltr horizontal-tb
+    test: try-tactic-inset-area.html
+  - subtest: flip-block flip-inline flip-start, inset-area:left bottom, ltr horizontal-tb
+    test: try-tactic-inset-area.html
+  - subtest: flip-block flip-inline flip-start, inset-area:right top, ltr horizontal-tb
+    test: try-tactic-inset-area.html
+  - subtest: flip-start, inset-area:x-start y-start, ltr horizontal-tb
+    test: try-tactic-inset-area.html
+  - subtest: flip-start, inset-area:x-end y-end, ltr horizontal-tb
+    test: try-tactic-inset-area.html
+  - subtest: flip-block flip-inline flip-start, inset-area:x-start y-end, ltr horizontal-tb
+    test: try-tactic-inset-area.html
+  - subtest: flip-block flip-inline flip-start, inset-area:x-end y-start, ltr horizontal-tb
+    test: try-tactic-inset-area.html
+  - subtest: flip-start, inset-area:block-start inline-start, ltr horizontal-tb
+    test: try-tactic-inset-area.html
+  - subtest: flip-start, inset-area:block-end inline-end, ltr horizontal-tb
+    test: try-tactic-inset-area.html
+  - subtest: flip-block flip-inline flip-start, inset-area:block-end inline-start,
+      ltr horizontal-tb
+    test: try-tactic-inset-area.html
+  - subtest: flip-block flip-inline flip-start, inset-area:block-start inline-end,
+      ltr horizontal-tb
+    test: try-tactic-inset-area.html
+  - subtest: ', inset-area:start end, ltr horizontal-tb'
+    test: try-tactic-inset-area.html
+  - subtest: flip-start, inset-area:start, ltr horizontal-tb
+    test: try-tactic-inset-area.html
+  - subtest: flip-start, inset-area:end, ltr horizontal-tb
+    test: try-tactic-inset-area.html
+  - subtest: flip-block flip-inline flip-start, inset-area:start end, ltr horizontal-tb
+    test: try-tactic-inset-area.html
+  - subtest: flip-block, inset-area:left center, ltr horizontal-tb
+    test: try-tactic-inset-area.html
+  - subtest: flip-block, inset-area:center, ltr horizontal-tb
+    test: try-tactic-inset-area.html
+  - subtest: flip-block, inset-area:center start, ltr horizontal-tb
+    test: try-tactic-inset-area.html
+  - subtest: flip-block, inset-area:left span-all, ltr horizontal-tb
+    test: try-tactic-inset-area.html
+  - subtest: flip-block, inset-area:span-all, ltr horizontal-tb
+    test: try-tactic-inset-area.html
+  - subtest: flip-block, inset-area:span-all start, ltr horizontal-tb
+    test: try-tactic-inset-area.html
+  - subtest: ', inset-area:x-start y-start, rtl horizontal-tb'
+    test: try-tactic-inset-area.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1886888
