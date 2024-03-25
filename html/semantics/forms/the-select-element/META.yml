@@ -1,27 +1,32 @@
 links:
-    - product: chrome
-      url: https://bugs.chromium.org/p/chromium/issues/detail?id=1234207
-      results:
-        - test: reset-algorithm-rendering.html
-    - product: safari
-      url: https://bugs.webkit.org/show_bug.cgi?id=266935
-      results:
-        - test: select-add-optgroup.html
-          subtest: select.add() with an index should work when the target is inside an optgroup.
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1878447
-      results:
-        - test: select-parsing.tentative.html
-          subtest: <button>s and <datalist>s should be allowed in <select>.
-        - test: select-parsing.tentative.html
-          subtest: </select> should close <button>.
-        - test: select-parsing.tentative.html
-          subtest: </select> should close <datalist>.
-        - test: select-parsing.tentative.html
-          subtest: <select> in <button> in <select> should remove inner <select>.
-        - test: select-parsing.tentative.html
-          subtest: <select> in <select><button><div> should remove inner <select>.
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1886921
-      results:
-        - test: select-named-getter.html
+- product: chrome
+  url: https://bugs.chromium.org/p/chromium/issues/detail?id=1234207
+  results:
+    - test: reset-algorithm-rendering.html
+- product: safari
+  url: https://bugs.webkit.org/show_bug.cgi?id=266935
+  results:
+    - test: select-add-optgroup.html
+      subtest: select.add() with an index should work when the target is inside an optgroup.
+- product: firefox
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1878447
+  results:
+    - test: select-parsing.tentative.html
+      subtest: <button>s and <datalist>s should be allowed in <select>.
+    - test: select-parsing.tentative.html
+      subtest: </select> should close <button>.
+    - test: select-parsing.tentative.html
+      subtest: </select> should close <datalist>.
+    - test: select-parsing.tentative.html
+      subtest: <select> in <button> in <select> should remove inner <select>.
+    - test: select-parsing.tentative.html
+      subtest: <select> in <select><button><div> should remove inner <select>.
+- product: firefox
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1886921
+  results:
+    - test: select-named-getter.html
+- product: firefox
+  results:
+  - test: select-child-button-and-datalist-invalidation.tentative.html
+  - test: select-child-button-and-datalist.tentative.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1884048
