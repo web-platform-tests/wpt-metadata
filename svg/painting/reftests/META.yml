@@ -1,24 +1,33 @@
 links:
-    - product: chrome
-      url: https://crbug.com/1056492
-      results:
-        - test: marker-path-001.svg
-          status: FAIL
-    - product: chrome
-      url: https://crbug.com/367737
-      results:
-        - test: paint-context-002.svg
-          subtest: Harness status
-    - product: chrome
-      url: https://bugs.chromium.org/p/chromium/issues/detail?id=1056492
-      results:
-        - test: marker-path-022.svg
-        - test: marker-path-023.svg
-    - product: chrome
-      url: https://bugs.chromium.org/p/chromium/issues/detail?id=367737
-      results:
-        - test: paint-context-001.svg
-    - product: chrome
-      url: https://bugs.chromium.org/p/chromium/issues/detail?id=432153
-      results:
-        - test: display-none-mask.html
+- product: chrome
+  results:
+  - status: FAIL
+    test: marker-path-001.svg
+  url: https://crbug.com/1056492
+- product: chrome
+  results:
+  - subtest: Harness status
+    test: paint-context-002.svg
+  url: https://crbug.com/367737
+- product: chrome
+  results:
+  - test: marker-path-022.svg
+  - test: marker-path-023.svg
+  url: https://bugs.chromium.org/p/chromium/issues/detail?id=1056492
+- product: chrome
+  results:
+  - test: paint-context-001.svg
+  url: https://bugs.chromium.org/p/chromium/issues/detail?id=367737
+- product: chrome
+  results:
+  - test: display-none-mask.html
+  url: https://bugs.chromium.org/p/chromium/issues/detail?id=432153
+- product: firefox
+  results:
+  - test: paint-order-002.svg
+  - test: paint-order-003.svg
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1881145
+- product: firefox
+  results:
+  - test: paint-context-003.svg
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1883864

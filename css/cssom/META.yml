@@ -318,3 +318,43 @@ links:
           subtest: getComputedStyle returns no style for descendant outside the flat tree
         - test: getComputedStyle-detached-subtree.html
           subtest: getComputedStyle returns no style for element outside the flat tree
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1880672
+      results:
+        - test: getComputedStyle-pseudo-with-argument.html
+          subtest: 'This pseudo-element should not parse: ::highlight('
+        - test: getComputedStyle-pseudo-with-argument.html
+          subtest: 'This pseudo-element should not parse: ::highlight()'
+        - test: getComputedStyle-pseudo-with-argument.html
+          subtest: 'This pseudo-element should not parse: ::highlight(1)'
+        - test: getComputedStyle-pseudo-with-argument.html
+          subtest: 'This pseudo-element should not parse: ::highlight($)'
+        - test: getComputedStyle-pseudo-with-argument.html
+          subtest: 'This pseudo-element should not parse: ::highlight(name)a'
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1885212
+      results:
+        - test: getComputedStyle-pseudo-with-argument.html
+          subtest: 'This pseudo-element should not parse: ::highlight'
+        - test: getComputedStyle-pseudo-with-argument.html
+          subtest: |-
+            This pseudo-element should parse: ::highlight(
+            name
+        - test: getComputedStyle-pseudo-with-argument.html
+          subtest: "This pseudo-element should parse: ::highlight(name\t"
+        - test: getComputedStyle-pseudo-with-argument.html
+          subtest: 'This pseudo-element should parse: ::highlight( name '
+        - test: getComputedStyle-pseudo-with-argument.html
+          subtest: 'This pseudo-element should parse: ::highlight( n\61me )'
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1887442
+      results:
+        - test: cssom-fontfacerule.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1887443
+      results:
+        - test: getComputedStyle-insets-relpos-inline.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1887445
+      results:
+        - test: property-accessors.html

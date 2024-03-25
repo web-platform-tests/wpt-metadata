@@ -5,3 +5,27 @@ links:
       as part of the iframe element''s insertion steps'
     test: insertion-removing-steps-iframe.window.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1882702
+- product: firefox
+  results:
+  - subtest: A script inserted atomically before an iframe (using a div) does not
+      observe the iframe's contentWindow, since the 'script running' and 'iframe setup'
+      both happen in order, after DOM insertion completes
+    test: Node-appendChild-script-and-iframe.tentative.html
+  - subtest: A script inserted atomically before an iframe (using a DocumentFragment)
+      does not observe the iframe's contentWindow, since the 'script running' and
+      'iframe setup' both happen in order, after DOM insertion completes
+    test: Node-appendChild-script-and-iframe.tentative.html
+  - subtest: A script inserted atomically before an iframe (using a append() with
+      multiple arguments) does not observe the iframe's contentWindow, since the 'script
+      running' and 'iframe setup' both happen in order, after DOM insertion completes
+    test: Node-appendChild-script-and-iframe.tentative.html
+  - subtest: An earlier-inserted <script> synchronously observes a later-inserted
+      <style> (via a div) being applied
+    test: Node-appendChild-script-and-style.tentative.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1882938
+- product: firefox
+  results:
+  - subtest: An outer script whose preparation/execution gets triggered by the insertion
+      of a 'nested'/'inner' script, executes *before* the inner script executes
+    test: Node-appendChild-script-in-script.tentative.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1885387
