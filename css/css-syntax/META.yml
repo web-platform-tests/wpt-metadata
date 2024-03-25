@@ -282,7 +282,8 @@ links:
           subtest: '"u+?a" is invalid'
         - test: urange-parsing.html
           subtest: '"u+??????" is invalid'
-    - label: interop-2024-nesting
+    - url: ""
+      label: interop-2024-nesting
       results:
         - test: custom-property-rule-ambiguity.html
         - test: trailing-braces.html
@@ -302,3 +303,7 @@ links:
       url: https://bugzilla.mozilla.org/show_bug.cgi?id=1887380
       results:
         - test: declarations-trim-whitespace.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1887382
+      results:
+        - test: escaped-eof.html

@@ -654,7 +654,8 @@ links:
           subtest: '(min-width: 0) does not match a container without a principal box (display:contents)'
         - test: top-layer-nested-dialog.html
           subtest: '@container queries start matching'
-    - label: interop-2023-container
+    - url: ""
+      label: interop-2023-container
       results:
         - test: pseudo-elements-001.html
         - test: pseudo-elements-002.html
@@ -933,3 +934,11 @@ links:
       url: https://bugzilla.mozilla.org/show_bug.cgi?id=1887136
       results:
         - test: style-container-invalidation-inheritance.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1887135
+      results:
+        - test: style-query-with-unknown-width.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1887133
+      results:
+        - test: pseudo-elements-009.html
