@@ -124,7 +124,8 @@ links:
           subtest: Element.getBoundingClientRect() and Range.getBoudingClientRect() should match for an SVG <text>
         - test: getBoundingClientRect-svg.html
           subtest: Element.getBoundingClientRect() and Range.getBoudingClientRect() should match for an SVG <text> with a rotate
-    - label: interop-2022-scrolling
+    - url: ""
+      label: interop-2022-scrolling
       results:
         - test: position-sticky-root-scroller-with-scroll-behavior.html
         - test: scroll-behavior-default-css.html
@@ -222,3 +223,13 @@ links:
         - test: scrollIntoView-horizontal-tb-writing-mode-and-rtl-direction.html
         - test: scrollIntoView-vertical-lr-writing-mode-and-rtl-direction.html
         - test: scrollIntoView-vertical-lr-writing-mode.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1887461
+      results:
+        - test: getClientRects-br-htb-rtl.html
+        - test: getClientRects-br-vlr-rtl.html
+        - test: getClientRects-br-vrl-rtl.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1887459
+      results:
+        - test: long_scroll_composited.html
