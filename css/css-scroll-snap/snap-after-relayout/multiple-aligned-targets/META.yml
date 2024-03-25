@@ -6,3 +6,98 @@ links:
       pre-existing snap target should not be overriden because of the innermost area)
     test: prefer-inner-target.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1880436
+- product: firefox
+  results:
+  - subtest: scroller prefers nested area over area aligned in both axes.
+    test: nested-supercedes-common-to-both-axes.html
+  - test: prefer-targeted-element-positioned.html
+  - subtest: prefer-targeted-element-positioned
+    test: prefer-targeted-element-positioned.html
+  - subtest: prefer-targeted-element-positioned 1
+    test: prefer-targeted-element-positioned.html
+  - subtest: prefer-targeted-element-positioned 2
+    test: prefer-targeted-element-positioned.html
+  - subtest: prefer-targeted-element-positioned 3
+    test: prefer-targeted-element-positioned.html
+  - subtest: prefer-targeted-element-positioned 4
+    test: prefer-targeted-element-positioned.html
+  - test: prefer-targeted-element.html
+  - subtest: scroller selects targeted area box1 among multiple aligned areas.
+    test: prefer-targeted-element.html
+  - subtest: scroller selects targeted area box2 among multiple aligned areas.
+    test: prefer-targeted-element.html
+  - subtest: scroller selects targeted area box3 among multiple aligned areas.
+    test: prefer-targeted-element.html
+  - subtest: scroller selects targeted area box4 among multiple aligned areas.
+    test: prefer-targeted-element.html
+  - subtest: scroller selects targeted area box5 among multiple aligned areas.
+    test: prefer-targeted-element.html
+  - subtest: scroller selects targeted area box6 among multiple aligned areas.
+    test: prefer-targeted-element.html
+  - subtest: scroller selects targeted area box7 among multiple aligned areas.
+    test: prefer-targeted-element.html
+  - subtest: scroller selects targeted area box8 among multiple aligned areas.
+    test: prefer-targeted-element.html
+  - subtest: scroller selects targeted area box9 among multiple aligned areas.
+    test: prefer-targeted-element.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1883993
+- product: firefox
+  results:
+  - subtest: targeted box1 is selected snap target.
+    test: prefer-targeted-element-main-frame.html
+  - subtest: targeted box4 is selected snap target.
+    test: prefer-targeted-element-main-frame.html
+  - subtest: targeted box5 is selected snap target.
+    test: prefer-targeted-element-main-frame.html
+  - subtest: targeted box9 is selected snap target.
+    test: prefer-targeted-element-main-frame.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1884964
+- product: firefox
+  results:
+  - test: common-to-both-axes-supercedes-first-in-tree-order.html
+  - subtest: box0 is common to both axes and is the snap target despite being last
+      in tree order.
+    test: common-to-both-axes-supercedes-first-in-tree-order.html
+  - subtest: box1 is common to both axes and is the snap target despite being last
+      in tree order.
+    test: common-to-both-axes-supercedes-first-in-tree-order.html
+  - subtest: box2 is common to both axes and is the snap target despite being last
+      in tree order.
+    test: common-to-both-axes-supercedes-first-in-tree-order.html
+  - subtest: box3 is common to both axes and is the snap target despite being last
+      in tree order.
+    test: common-to-both-axes-supercedes-first-in-tree-order.html
+  - subtest: box4 is common to both axes and is the snap target despite being last
+      in tree order.
+    test: common-to-both-axes-supercedes-first-in-tree-order.html
+  - subtest: box5 is common to both axes and is the snap target despite being last
+      in tree order.
+    test: common-to-both-axes-supercedes-first-in-tree-order.html
+  - subtest: box6 is common to both axes and is the snap target despite being last
+      in tree order.
+    test: common-to-both-axes-supercedes-first-in-tree-order.html
+  - subtest: box7 is common to both axes and is the snap target despite being last
+      in tree order.
+    test: common-to-both-axes-supercedes-first-in-tree-order.html
+  - subtest: box8 is common to both axes and is the snap target despite being last
+      in tree order.
+    test: common-to-both-axes-supercedes-first-in-tree-order.html
+  - subtest: box9 is common to both axes and is the snap target despite being last
+      in tree order.
+    test: common-to-both-axes-supercedes-first-in-tree-order.html
+  - subtest: scroller prefers target aligned in both axes.
+    test: prefer-common-to-both-axes.html
+  - test: prefer-first-in-tree-order.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1884967
+- product: firefox
+  results:
+  - test: prefer-common-to-both-axes.html
+  - subtest: scroller follows selected snap target after layout shift, regardless
+      of common snap area.
+    test: prefer-common-to-both-axes.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1885458
+- product: firefox
+  results:
+  - subtest: targeted box is selected snap target.
+    test: prefer-targeted-element-main-frame.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1887192

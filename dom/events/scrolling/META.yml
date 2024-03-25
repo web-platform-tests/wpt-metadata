@@ -104,3 +104,14 @@ links:
       by touch.
     test: overscroll-event-fired-to-scrolled-element.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1880674
+- product: firefox
+  results:
+  - subtest: testing, vertical
+    test: scrollend-event-fired-to-window.html
+  - subtest: testing, vertical
+    test: scrollend-event-fired-to-document.html
+  - subtest: testing, horizontal
+    test: scrollend-event-fired-to-document.html
+  - subtest: scrollend fires when visual viewport is panned.
+    test: scrollend-event-fires-on-visual-viewport.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1884233
