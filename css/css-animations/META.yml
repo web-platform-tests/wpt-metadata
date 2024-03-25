@@ -134,3 +134,26 @@ links:
           subtest: Animating from display:none to display:none with an intermediate variable should not cancel the animation.
         - test: display-none-dont-cancel.tentative.html
           subtest: Animating a variable of "none" which gets set to display elsewhere should not cancel the animation.
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1884234
+      results:
+        - test: animate-with-color-mix.html
+          subtest: Animate from neutral keyframe with color-mix to legacy rgb
+        - test: animate-with-color-mix.html
+          subtest: Animate from legacy rgb to neutral keyframe with color-mix
+        - test: animate-with-color-mix.html
+          subtest: Animate from neutral keyframe with color-mix to srgb
+        - test: animate-with-color-mix.html
+          subtest: Animate from srgb to neutral keyframe with color-mix
+        - test: animate-with-color-mix.html
+          subtest: Animate from color-mix with transparency to legacy rgba
+        - test: animate-with-color-mix.html
+          subtest: Animate from legacy rgba to color-mix with transparency
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1887062
+      results:
+        - test: animation-important-002.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1887072
+      results:
+        - test: KeyframeEffect-getKeyframes.tentative.html

@@ -94,3 +94,21 @@ links:
   - status: CRASH
     test: sandbox-top-navigation-grandchild.tentative.sub.window.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1874987
+- product: firefox
+  results:
+  - status: CRASH
+    test: sandbox-top-navigation-child-cross-origin.tentative.sub.window.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1884853
+- product: firefox
+  results:
+  - subtest: A cross origin unsandboxed frame can't escalate privileges in a child     frame
+    test: sandbox-top-navigation-escalate-privileges.tentative.sub.window.html
+  - subtest: A sandboxed same-origin grandchild without allow-same-origin can't     escalate
+      its own top-nav privileges
+    test: sandbox-top-navigation-escalate-privileges.tentative.sub.window.html
+  - subtest: A sandboxed same-origin grandchild with allow-same-origin can     give
+      itself top-nav privileges
+    test: sandbox-top-navigation-escalate-privileges.tentative.sub.window.html
+  - subtest: A cross-origin frame with delivered sandbox flags can not navigate top
+    test: sandbox-top-navigation-child-cross-origin.tentative.sub.window.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1885097

@@ -10,3 +10,20 @@ links:
         - test: page_ranges.py
         - test: scale.py
         - test: shrink_to_fit.py
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1886382
+      results:
+        - test: margin.py
+          subtest: test_margin_same_as_page_dimension[top]
+        - test: margin.py
+          subtest: test_margin_same_as_page_dimension[left]
+        - test: margin.py
+          subtest: test_margin_same_as_page_dimension[right]
+        - test: margin.py
+          subtest: test_margin_same_as_page_dimension[bottom]
+        - test: margin.py
+          subtest: test_margin_same_as_page_dimension[all]
+        - test: invalid.py
+          subtest: test_params_page_invalid_value[page2]
+        - test: invalid.py
+          subtest: test_params_page_invalid_value[page3]

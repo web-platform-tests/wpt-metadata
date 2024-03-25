@@ -291,3 +291,14 @@ links:
       url: https://bugzilla.mozilla.org/show_bug.cgi?id=1878156
       results:
         - test: var-with-blocks.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1884879
+      results:
+        - test: custom-property-rule-ambiguity.html
+          subtest: Rule that looks like a custom property declaration is ignored
+        - test: custom-property-rule-ambiguity.html
+          subtest: Rule that looks like an invalid custom property declaration is ignored
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1887380
+      results:
+        - test: declarations-trim-whitespace.html
