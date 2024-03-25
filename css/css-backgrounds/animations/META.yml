@@ -713,3 +713,138 @@ links:
           subtest: 'CSS Transitions: property <border-image-slice> from [0% 10 20 30 fill] to [40 50 60% 70] at (0) should be [0% 10 20 30 fill]'
         - test: border-image-slice-interpolation.html
           subtest: 'CSS Transitions: property <border-image-slice> from [0% 10 20 30 fill] to [40 50 60% 70] at (0.3) should be [0% 10 20 30 fill]'
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1886233
+      results:
+        - test: box-shadow-interpolation.html
+          subtest: 'CSS Transitions: property <box-shadow> from [10px 10px 10px 10px rgb(0 0 0)] to [10px 10px 10px 10px color(srgb 1 1 1)] at (-0.3) should be [10px 10px 10px 10px oklab(0 0 0)]'
+        - test: box-shadow-interpolation.html
+          subtest: 'CSS Transitions: property <box-shadow> from [10px 10px 10px 10px rgb(0 0 0)] to [10px 10px 10px 10px color(srgb 1 1 1)] at (0) should be [10px 10px 10px 10px oklab(0 0 0)]'
+        - test: box-shadow-interpolation.html
+          subtest: 'CSS Transitions: property <box-shadow> from [10px 10px 10px 10px rgb(0 0 0)] to [10px 10px 10px 10px color(srgb 1 1 1)] at (0.3) should be [10px 10px 10px 10px oklab(0.3 0 0)]'
+        - test: box-shadow-interpolation.html
+          subtest: 'CSS Transitions: property <box-shadow> from [10px 10px 10px 10px rgb(0 0 0)] to [10px 10px 10px 10px color(srgb 1 1 1)] at (0.6) should be [10px 10px 10px 10px oklab(0.6 0 0)]'
+        - test: box-shadow-interpolation.html
+          subtest: 'CSS Transitions: property <box-shadow> from [10px 10px 10px 10px rgb(0 0 0)] to [10px 10px 10px 10px color(srgb 1 1 1)] at (1) should be [10px 10px 10px 10px oklab(1 0 0)]'
+        - test: box-shadow-interpolation.html
+          subtest: 'CSS Transitions with transition: all: property <box-shadow> from [10px 10px 10px 10px rgb(0 0 0)] to [10px 10px 10px 10px color(srgb 1 1 1)] at (-0.3) should be [10px 10px 10px 10px oklab(0 0 0)]'
+        - test: box-shadow-interpolation.html
+          subtest: 'CSS Transitions with transition: all: property <box-shadow> from [10px 10px 10px 10px rgb(0 0 0)] to [10px 10px 10px 10px color(srgb 1 1 1)] at (0) should be [10px 10px 10px 10px oklab(0 0 0)]'
+        - test: box-shadow-interpolation.html
+          subtest: 'CSS Transitions with transition: all: property <box-shadow> from [10px 10px 10px 10px rgb(0 0 0)] to [10px 10px 10px 10px color(srgb 1 1 1)] at (0.3) should be [10px 10px 10px 10px oklab(0.3 0 0)]'
+        - test: box-shadow-interpolation.html
+          subtest: 'CSS Transitions with transition: all: property <box-shadow> from [10px 10px 10px 10px rgb(0 0 0)] to [10px 10px 10px 10px color(srgb 1 1 1)] at (0.6) should be [10px 10px 10px 10px oklab(0.6 0 0)]'
+        - test: box-shadow-interpolation.html
+          subtest: 'CSS Transitions with transition: all: property <box-shadow> from [10px 10px 10px 10px rgb(0 0 0)] to [10px 10px 10px 10px color(srgb 1 1 1)] at (1) should be [10px 10px 10px 10px oklab(1 0 0)]'
+        - test: box-shadow-interpolation.html
+          subtest: 'CSS Animations: property <box-shadow> from [10px 10px 10px 10px rgb(0 0 0)] to [10px 10px 10px 10px color(srgb 1 1 1)] at (-0.3) should be [10px 10px 10px 10px oklab(0 0 0)]'
+        - test: box-shadow-interpolation.html
+          subtest: 'CSS Animations: property <box-shadow> from [10px 10px 10px 10px rgb(0 0 0)] to [10px 10px 10px 10px color(srgb 1 1 1)] at (0) should be [10px 10px 10px 10px oklab(0 0 0)]'
+        - test: box-shadow-interpolation.html
+          subtest: 'CSS Animations: property <box-shadow> from [10px 10px 10px 10px rgb(0 0 0)] to [10px 10px 10px 10px color(srgb 1 1 1)] at (0.3) should be [10px 10px 10px 10px oklab(0.3 0 0)]'
+        - test: box-shadow-interpolation.html
+          subtest: 'CSS Animations: property <box-shadow> from [10px 10px 10px 10px rgb(0 0 0)] to [10px 10px 10px 10px color(srgb 1 1 1)] at (0.6) should be [10px 10px 10px 10px oklab(0.6 0 0)]'
+        - test: box-shadow-interpolation.html
+          subtest: 'CSS Animations: property <box-shadow> from [10px 10px 10px 10px rgb(0 0 0)] to [10px 10px 10px 10px color(srgb 1 1 1)] at (1) should be [10px 10px 10px 10px oklab(1 0 0)]'
+        - test: box-shadow-interpolation.html
+          subtest: 'Web Animations: property <box-shadow> from [10px 10px 10px 10px rgb(0 0 0)] to [10px 10px 10px 10px color(srgb 1 1 1)] at (-0.3) should be [10px 10px 10px 10px oklab(0 0 0)]'
+        - test: box-shadow-interpolation.html
+          subtest: 'Web Animations: property <box-shadow> from [10px 10px 10px 10px rgb(0 0 0)] to [10px 10px 10px 10px color(srgb 1 1 1)] at (0) should be [10px 10px 10px 10px oklab(0 0 0)]'
+        - test: box-shadow-interpolation.html
+          subtest: 'Web Animations: property <box-shadow> from [10px 10px 10px 10px rgb(0 0 0)] to [10px 10px 10px 10px color(srgb 1 1 1)] at (0.3) should be [10px 10px 10px 10px oklab(0.3 0 0)]'
+        - test: box-shadow-interpolation.html
+          subtest: 'Web Animations: property <box-shadow> from [10px 10px 10px 10px rgb(0 0 0)] to [10px 10px 10px 10px color(srgb 1 1 1)] at (0.6) should be [10px 10px 10px 10px oklab(0.6 0 0)]'
+        - test: box-shadow-interpolation.html
+          subtest: 'Web Animations: property <box-shadow> from [10px 10px 10px 10px rgb(0 0 0)] to [10px 10px 10px 10px color(srgb 1 1 1)] at (1) should be [10px 10px 10px 10px oklab(1 0 0)]'
+        - test: box-shadow-interpolation.html
+          subtest: 'CSS Transitions: property <box-shadow> from [10px 10px 10px 10px color(srgb 0 0 0)] to [10px 10px 10px 10px rgb(255 255 255)] at (-0.3) should be [10px 10px 10px 10px oklab(0 0 0)]'
+        - test: box-shadow-interpolation.html
+          subtest: 'CSS Transitions: property <box-shadow> from [10px 10px 10px 10px color(srgb 0 0 0)] to [10px 10px 10px 10px rgb(255 255 255)] at (0) should be [10px 10px 10px 10px oklab(0 0 0)]'
+        - test: box-shadow-interpolation.html
+          subtest: 'CSS Transitions: property <box-shadow> from [10px 10px 10px 10px color(srgb 0 0 0)] to [10px 10px 10px 10px rgb(255 255 255)] at (0.3) should be [10px 10px 10px 10px oklab(0.3 0 0)]'
+        - test: box-shadow-interpolation.html
+          subtest: 'CSS Transitions: property <box-shadow> from [10px 10px 10px 10px color(srgb 0 0 0)] to [10px 10px 10px 10px rgb(255 255 255)] at (0.6) should be [10px 10px 10px 10px oklab(0.6 0 0)]'
+        - test: box-shadow-interpolation.html
+          subtest: 'CSS Transitions: property <box-shadow> from [10px 10px 10px 10px color(srgb 0 0 0)] to [10px 10px 10px 10px rgb(255 255 255)] at (1) should be [10px 10px 10px 10px oklab(1 0 0)]'
+        - test: box-shadow-interpolation.html
+          subtest: 'CSS Transitions with transition: all: property <box-shadow> from [10px 10px 10px 10px color(srgb 0 0 0)] to [10px 10px 10px 10px rgb(255 255 255)] at (-0.3) should be [10px 10px 10px 10px oklab(0 0 0)]'
+        - test: box-shadow-interpolation.html
+          subtest: 'CSS Transitions with transition: all: property <box-shadow> from [10px 10px 10px 10px color(srgb 0 0 0)] to [10px 10px 10px 10px rgb(255 255 255)] at (0) should be [10px 10px 10px 10px oklab(0 0 0)]'
+        - test: box-shadow-interpolation.html
+          subtest: 'CSS Transitions with transition: all: property <box-shadow> from [10px 10px 10px 10px color(srgb 0 0 0)] to [10px 10px 10px 10px rgb(255 255 255)] at (0.3) should be [10px 10px 10px 10px oklab(0.3 0 0)]'
+        - test: box-shadow-interpolation.html
+          subtest: 'CSS Transitions with transition: all: property <box-shadow> from [10px 10px 10px 10px color(srgb 0 0 0)] to [10px 10px 10px 10px rgb(255 255 255)] at (0.6) should be [10px 10px 10px 10px oklab(0.6 0 0)]'
+        - test: box-shadow-interpolation.html
+          subtest: 'CSS Transitions with transition: all: property <box-shadow> from [10px 10px 10px 10px color(srgb 0 0 0)] to [10px 10px 10px 10px rgb(255 255 255)] at (1) should be [10px 10px 10px 10px oklab(1 0 0)]'
+        - test: box-shadow-interpolation.html
+          subtest: 'CSS Animations: property <box-shadow> from [10px 10px 10px 10px color(srgb 0 0 0)] to [10px 10px 10px 10px rgb(255 255 255)] at (-0.3) should be [10px 10px 10px 10px oklab(0 0 0)]'
+        - test: box-shadow-interpolation.html
+          subtest: 'CSS Animations: property <box-shadow> from [10px 10px 10px 10px color(srgb 0 0 0)] to [10px 10px 10px 10px rgb(255 255 255)] at (0) should be [10px 10px 10px 10px oklab(0 0 0)]'
+        - test: box-shadow-interpolation.html
+          subtest: 'CSS Animations: property <box-shadow> from [10px 10px 10px 10px color(srgb 0 0 0)] to [10px 10px 10px 10px rgb(255 255 255)] at (0.3) should be [10px 10px 10px 10px oklab(0.3 0 0)]'
+        - test: box-shadow-interpolation.html
+          subtest: 'CSS Animations: property <box-shadow> from [10px 10px 10px 10px color(srgb 0 0 0)] to [10px 10px 10px 10px rgb(255 255 255)] at (0.6) should be [10px 10px 10px 10px oklab(0.6 0 0)]'
+        - test: box-shadow-interpolation.html
+          subtest: 'CSS Animations: property <box-shadow> from [10px 10px 10px 10px color(srgb 0 0 0)] to [10px 10px 10px 10px rgb(255 255 255)] at (1) should be [10px 10px 10px 10px oklab(1 0 0)]'
+        - test: box-shadow-interpolation.html
+          subtest: 'Web Animations: property <box-shadow> from [10px 10px 10px 10px color(srgb 0 0 0)] to [10px 10px 10px 10px rgb(255 255 255)] at (-0.3) should be [10px 10px 10px 10px oklab(0 0 0)]'
+        - test: box-shadow-interpolation.html
+          subtest: 'Web Animations: property <box-shadow> from [10px 10px 10px 10px color(srgb 0 0 0)] to [10px 10px 10px 10px rgb(255 255 255)] at (0) should be [10px 10px 10px 10px oklab(0 0 0)]'
+        - test: box-shadow-interpolation.html
+          subtest: 'Web Animations: property <box-shadow> from [10px 10px 10px 10px color(srgb 0 0 0)] to [10px 10px 10px 10px rgb(255 255 255)] at (0.3) should be [10px 10px 10px 10px oklab(0.3 0 0)]'
+        - test: box-shadow-interpolation.html
+          subtest: 'Web Animations: property <box-shadow> from [10px 10px 10px 10px color(srgb 0 0 0)] to [10px 10px 10px 10px rgb(255 255 255)] at (0.6) should be [10px 10px 10px 10px oklab(0.6 0 0)]'
+        - test: box-shadow-interpolation.html
+          subtest: 'Web Animations: property <box-shadow> from [10px 10px 10px 10px color(srgb 0 0 0)] to [10px 10px 10px 10px rgb(255 255 255)] at (1) should be [10px 10px 10px 10px oklab(1 0 0)]'
+        - test: box-shadow-interpolation.html
+          subtest: 'CSS Transitions: property <box-shadow> from [10px 10px 10px 10px color(srgb 0 0 0)] to [10px 10px 10px 10px color(srgb 1 1 1)] at (-0.3) should be [10px 10px 10px 10px oklab(0 0 0)]'
+        - test: box-shadow-interpolation.html
+          subtest: 'CSS Transitions: property <box-shadow> from [10px 10px 10px 10px color(srgb 0 0 0)] to [10px 10px 10px 10px color(srgb 1 1 1)] at (0) should be [10px 10px 10px 10px oklab(0 0 0)]'
+        - test: box-shadow-interpolation.html
+          subtest: 'CSS Transitions: property <box-shadow> from [10px 10px 10px 10px color(srgb 0 0 0)] to [10px 10px 10px 10px color(srgb 1 1 1)] at (0.3) should be [10px 10px 10px 10px oklab(0.3 0 0)]'
+        - test: box-shadow-interpolation.html
+          subtest: 'CSS Transitions: property <box-shadow> from [10px 10px 10px 10px color(srgb 0 0 0)] to [10px 10px 10px 10px color(srgb 1 1 1)] at (0.6) should be [10px 10px 10px 10px oklab(0.6 0 0)]'
+        - test: box-shadow-interpolation.html
+          subtest: 'CSS Transitions: property <box-shadow> from [10px 10px 10px 10px color(srgb 0 0 0)] to [10px 10px 10px 10px color(srgb 1 1 1)] at (1) should be [10px 10px 10px 10px oklab(1 0 0)]'
+        - test: box-shadow-interpolation.html
+          subtest: 'CSS Transitions with transition: all: property <box-shadow> from [10px 10px 10px 10px color(srgb 0 0 0)] to [10px 10px 10px 10px color(srgb 1 1 1)] at (-0.3) should be [10px 10px 10px 10px oklab(0 0 0)]'
+        - test: box-shadow-interpolation.html
+          subtest: 'CSS Transitions with transition: all: property <box-shadow> from [10px 10px 10px 10px color(srgb 0 0 0)] to [10px 10px 10px 10px color(srgb 1 1 1)] at (0) should be [10px 10px 10px 10px oklab(0 0 0)]'
+        - test: box-shadow-interpolation.html
+          subtest: 'CSS Transitions with transition: all: property <box-shadow> from [10px 10px 10px 10px color(srgb 0 0 0)] to [10px 10px 10px 10px color(srgb 1 1 1)] at (0.3) should be [10px 10px 10px 10px oklab(0.3 0 0)]'
+        - test: box-shadow-interpolation.html
+          subtest: 'CSS Transitions with transition: all: property <box-shadow> from [10px 10px 10px 10px color(srgb 0 0 0)] to [10px 10px 10px 10px color(srgb 1 1 1)] at (0.6) should be [10px 10px 10px 10px oklab(0.6 0 0)]'
+        - test: box-shadow-interpolation.html
+          subtest: 'CSS Transitions with transition: all: property <box-shadow> from [10px 10px 10px 10px color(srgb 0 0 0)] to [10px 10px 10px 10px color(srgb 1 1 1)] at (1) should be [10px 10px 10px 10px oklab(1 0 0)]'
+        - test: box-shadow-interpolation.html
+          subtest: 'CSS Animations: property <box-shadow> from [10px 10px 10px 10px color(srgb 0 0 0)] to [10px 10px 10px 10px color(srgb 1 1 1)] at (-0.3) should be [10px 10px 10px 10px oklab(0 0 0)]'
+        - test: box-shadow-interpolation.html
+          subtest: 'CSS Animations: property <box-shadow> from [10px 10px 10px 10px color(srgb 0 0 0)] to [10px 10px 10px 10px color(srgb 1 1 1)] at (0) should be [10px 10px 10px 10px oklab(0 0 0)]'
+        - test: box-shadow-interpolation.html
+          subtest: 'CSS Animations: property <box-shadow> from [10px 10px 10px 10px color(srgb 0 0 0)] to [10px 10px 10px 10px color(srgb 1 1 1)] at (0.3) should be [10px 10px 10px 10px oklab(0.3 0 0)]'
+        - test: box-shadow-interpolation.html
+          subtest: 'CSS Animations: property <box-shadow> from [10px 10px 10px 10px color(srgb 0 0 0)] to [10px 10px 10px 10px color(srgb 1 1 1)] at (0.6) should be [10px 10px 10px 10px oklab(0.6 0 0)]'
+        - test: box-shadow-interpolation.html
+          subtest: 'CSS Animations: property <box-shadow> from [10px 10px 10px 10px color(srgb 0 0 0)] to [10px 10px 10px 10px color(srgb 1 1 1)] at (1) should be [10px 10px 10px 10px oklab(1 0 0)]'
+        - test: box-shadow-interpolation.html
+          subtest: 'Web Animations: property <box-shadow> from [10px 10px 10px 10px color(srgb 0 0 0)] to [10px 10px 10px 10px color(srgb 1 1 1)] at (-0.3) should be [10px 10px 10px 10px oklab(0 0 0)]'
+        - test: box-shadow-interpolation.html
+          subtest: 'Web Animations: property <box-shadow> from [10px 10px 10px 10px color(srgb 0 0 0)] to [10px 10px 10px 10px color(srgb 1 1 1)] at (0) should be [10px 10px 10px 10px oklab(0 0 0)]'
+        - test: box-shadow-interpolation.html
+          subtest: 'Web Animations: property <box-shadow> from [10px 10px 10px 10px color(srgb 0 0 0)] to [10px 10px 10px 10px color(srgb 1 1 1)] at (0.3) should be [10px 10px 10px 10px oklab(0.3 0 0)]'
+        - test: box-shadow-interpolation.html
+          subtest: 'Web Animations: property <box-shadow> from [10px 10px 10px 10px color(srgb 0 0 0)] to [10px 10px 10px 10px color(srgb 1 1 1)] at (0.6) should be [10px 10px 10px 10px oklab(0.6 0 0)]'
+        - test: box-shadow-interpolation.html
+          subtest: 'Web Animations: property <box-shadow> from [10px 10px 10px 10px color(srgb 0 0 0)] to [10px 10px 10px 10px color(srgb 1 1 1)] at (1) should be [10px 10px 10px 10px oklab(1 0 0)]'
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1887200
+      results:
+        - test: box-shadow-interpolation.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1887202
+      results:
+        - test: background-size-interpolation.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1887205
+      results:
+        - test: background-color-interpolation.html

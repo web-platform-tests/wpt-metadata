@@ -1015,3 +1015,53 @@ links:
           subtest: mod(3px + 0%, 2px) should be used-value-equivalent to 1px
         - test: round-mod-rem-computed.html
           subtest: rem(3px + 0%, 2px) should be used-value-equivalent to 1px
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1887306
+      results:
+        - test: progress-serialize.tentative.html
+          subtest: '''progress(100px from 0px to 100px)'' as a specified value should serialize as ''calc(1)''.'
+        - test: progress-serialize.tentative.html
+          subtest: '''scale(progress(100px from 0px to 100px))'' as a specified value should serialize as ''scale(calc(1))''.'
+        - test: progress-serialize.tentative.html
+          subtest: '''scale(progress(100px from 0px to 100px))'' as a computed value should serialize as ''matrix(1, 0, 0, 1, 0, 0)''.'
+        - test: progress-serialize.tentative.html
+          subtest: '''scale(progress(10em from 0px to 10em))'' as a computed value should serialize as ''matrix(1, 0, 0, 1, 0, 0)''.'
+        - test: progress-serialize.tentative.html
+          subtest: '''scale(progress(10em from 0px to 10rem))'' as a computed value should serialize as ''matrix(1, 0, 0, 1, 0, 0)''.'
+        - test: progress-serialize.tentative.html
+          subtest: '''progress(100px from (10px - 10px) to 100px)'' as a specified value should serialize as ''calc(1)''.'
+        - test: progress-serialize.tentative.html
+          subtest: '''scale(progress(100px from (10px - 10px) to 100px))'' as a specified value should serialize as ''scale(calc(1))''.'
+        - test: progress-serialize.tentative.html
+          subtest: '''scale(progress(100px from (10px - 10px) to 100px))'' as a computed value should serialize as ''matrix(1, 0, 0, 1, 0, 0)''.'
+        - test: progress-serialize.tentative.html
+          subtest: '''progress(1% from (10% - 10%) to 100%)'' as a specified value should serialize as ''calc(0.01)''.'
+        - test: progress-serialize.tentative.html
+          subtest: '''scale(progress(1% from (10% - 10%) to 100%))'' as a specified value should serialize as ''scale(calc(0.01))''.'
+        - test: progress-serialize.tentative.html
+          subtest: '''progress(1% from (10% - 10%) to 100%)'' as a computed value should serialize as ''0.01''.'
+        - test: progress-serialize.tentative.html
+          subtest: '''scale(progress(1% from (10% - 10%) to 100%))'' as a computed value should serialize as ''matrix(0.01, 0, 0, 0.01, 0, 0)''.'
+        - test: progress-serialize.tentative.html
+          subtest: '''calc(0.5 * progress(100px from 0px to 100px))'' as a specified value should serialize as ''calc(0.5)''.'
+        - test: progress-serialize.tentative.html
+          subtest: '''scale(calc(0.5 * progress(100px from 0px to 100px)))'' as a specified value should serialize as ''scale(calc(0.5))''.'
+        - test: progress-serialize.tentative.html
+          subtest: '''calc(0.5 * progress(100px from 0px to 100px))'' as a computed value should serialize as ''0.5''.'
+        - test: progress-serialize.tentative.html
+          subtest: '''scale(calc(0.5 * progress(100px from 0px to 100px)))'' as a computed value should serialize as ''matrix(0.5, 0, 0, 0.5, 0, 0)''.'
+        - test: progress-serialize.tentative.html
+          subtest: '''calc(50px * progress(100px from 0px to 100px))'' as a specified value should serialize as ''calc(50px)''.'
+        - test: progress-serialize.tentative.html
+          subtest: '''calc(1px * progress(abs(10%) from (10% - 10%) to 100% / 10))'' as a computed value should serialize as ''1px''.'
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1740584
+      results:
+        - test: ric-invalidation.html
+        - test: rcap-invalidation.html
+        - test: rch-invalidation.html
+        - test: rex-invalidation.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1887454
+      results:
+        - test: calc-infinity-nan-serialize-length.html
