@@ -1,22 +1,14 @@
 links:
-    - label: interop-2023-events
+    - url: ""
+      label: interop-2023-events
       results:
         - test: cancel-mousedown-in-subframe.html
-        - test: mousemove_prevent_default_action.tentative.html
         - test: attributes.html
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1823663
-      results:
-        - test: mousemove_prevent_default_action.tentative.html
-          subtest: dragstart event firing when mousemove event is prevented
+        - test: mousemove_prevent_default_action.html
     - product: chrome
       url: https://crbug.com/269917
       results:
         - test: cancel-mousedown-in-subframe.html
-    - product: chrome
-      url: https://crbug.com/346473
-      results:
-        - test: mousemove_prevent_default_action.tentative.html
     - product: safari
       url: https://bugs.webkit.org/show_bug.cgi?id=262691
       results:
@@ -24,15 +16,24 @@ links:
           subtest: Harness status
         - test: cancel-mousedown-in-subframe.html
           subtest: Child frame receives mousedown/mouseup when mousedown is canceled
-    - product: safari
-      url: https://bugs.webkit.org/show_bug.cgi?id=262878
-      results:
-        - test: mousemove_prevent_default_action.tentative.html
-          subtest: selectionchange event firing when mousemove event is prevented
-        - test: mousemove_prevent_default_action.tentative.html
-          subtest: dragstart event firing when mousemove event is prevented
     - product: firefox
       url: https://bugzilla.mozilla.org/show_bug.cgi?id=1887560
       results:
         - test: synthetic-mouse-enter-leave-over-out-button-state-after-target-removed.tentative.html?buttonType=LEFT&button=0&buttons=1
         - test: synthetic-mouse-enter-leave-over-out-button-state-after-target-removed.tentative.html?buttonType=MIDDLE&button=1&buttons=4
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1823663
+      results:
+        - test: mousemove_prevent_default_action.html
+          subtest: dragstart event firing when mousemove event is prevented
+    - product: chrome
+      url: https://crbug.com/346473
+      results:
+        - test: mousemove_prevent_default_action.html
+    - product: safari
+      url: https://bugs.webkit.org/show_bug.cgi?id=262878
+      results:
+        - test: mousemove_prevent_default_action.html
+          subtest: selectionchange event firing when mousemove event is prevented
+        - test: mousemove_prevent_default_action.html
+          subtest: dragstart event firing when mousemove event is prevented
