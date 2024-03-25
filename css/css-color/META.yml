@@ -388,3 +388,22 @@ links:
         - test: relative-currentcolor-xyzd50-01.html
         - test: relative-currentcolor-xyzd65-01.html
         - test: relative-currentcolor-hsl-02.html
+    - product: chrome
+      url: https://issues.chromium.org/issues/329106317
+      results:
+        - test: oklab-l-almost-0.html
+        - test: oklab-l-almost-1.html
+        - test: oklch-l-almost-0.html
+        - test: oklch-l-almost-1.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1855856
+      results:
+        - test: color-mix-currentcolor-visited.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1887137
+      results:
+        - test: opacity-overlapping-letters.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1857849
+      results:
+        - test: system-color-compute.html
