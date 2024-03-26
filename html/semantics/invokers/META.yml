@@ -92,3 +92,51 @@ links:
   - subtest: interestTargetElement throws error on assignment of non Element
     test: interestelement-interface.tentative.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1884065
+- product: firefox
+  results:
+  - subtest: invoking audio with playpause action makes audio play
+    test: invoketarget-on-audio-behavior.tentative.html
+  - subtest: invoking audio with playpause action (without user activation) is a no-op
+    test: invoketarget-on-audio-behavior.tentative.html
+  - subtest: invoking playing audio with playpause action pauses it
+    test: invoketarget-on-audio-behavior.tentative.html
+  - subtest: invoking audio with play action makes audio play
+    test: invoketarget-on-audio-behavior.tentative.html
+  - subtest: invoking audio with play action (without user activation) is a no-op
+    test: invoketarget-on-audio-behavior.tentative.html
+  - subtest: invoking playing audio with pause action makes it pause
+    test: invoketarget-on-audio-behavior.tentative.html
+  - subtest: invoking audio with toggleMuted action mutes it
+    test: invoketarget-on-audio-behavior.tentative.html
+  - subtest: invoking muted audio with toggleMuted action unmutes it
+    test: invoketarget-on-audio-behavior.tentative.html
+  - subtest: invoking (as foo) on open popover does nothing
+    test: invoketarget-on-popover-behavior.tentative.html
+  - subtest: invoking (as togglemodal) on open popover does nothing
+    test: invoketarget-on-popover-behavior.tentative.html
+  - subtest: invoking (as showpicker) on open popover does nothing
+    test: invoketarget-on-popover-behavior.tentative.html
+  - subtest: invoking (as toggle) on open popover does nothing
+    test: invoketarget-on-popover-behavior.tentative.html
+  - subtest: invoking (as open) on open popover does nothing
+    test: invoketarget-on-popover-behavior.tentative.html
+  - subtest: invoking (as close) on open popover does nothing
+    test: invoketarget-on-popover-behavior.tentative.html
+  - subtest: invoking video with playpause action makes video play
+    test: invoketarget-on-video-behavior.tentative.html
+  - subtest: invoking playing video with playpause action pauses it
+    test: invoketarget-on-video-behavior.tentative.html
+  - subtest: invoking video with play action makes video play
+    test: invoketarget-on-video-behavior.tentative.html
+  - subtest: invoking playing video with pause action makes it pause
+    test: invoketarget-on-video-behavior.tentative.html
+  - subtest: invoking video with toggleMuted action mutes it
+    test: invoketarget-on-video-behavior.tentative.html
+  - subtest: invoking muted video with toggleMuted action unmutes it
+    test: invoketarget-on-video-behavior.tentative.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1885284
+- product: firefox
+  results:
+  - subtest: event dispatches on click
+    test: invoketarget-button-event-dispatch.tentative.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1886077

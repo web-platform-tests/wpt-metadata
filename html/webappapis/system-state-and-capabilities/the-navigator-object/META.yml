@@ -1,8 +1,4 @@
 links:
-    - product: chrome
-      url: https://crbug.com/937121
-      results:
-        - test: navigator-window-controls-overlay.html
     - product: firefox
       url: https://bugzilla.mozilla.org/show_bug.cgi?id=1706028
       results:
@@ -390,22 +386,6 @@ links:
         - test: per-global.window.html
           subtest: document.open() must replace window.clientInformation
     - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1741008
-      results:
-        - test: navigator_user_agent.https.html
-          subtest: navigator.userAgentData is exposed.
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1745133
-      results:
-        - test: navigator-window-controls-overlay.html
-          subtest: the windowControlsOverlay object should exist on the navigator object
-        - test: navigator-window-controls-overlay.html
-          subtest: visible should be a member of the windowControlsOverlay object
-        - test: navigator-window-controls-overlay.html
-          subtest: visible should be false
-        - test: navigator-window-controls-overlay.html
-          subtest: ongeometrychange should be a member of the windowControlsOverlay object
-    - product: firefox
       url: https://bugzilla.mozilla.org/show_bug.cgi?id=1841488
       results:
         - test: protocol.https.html
@@ -423,3 +403,23 @@ links:
         - test: protocol-handler-query-nosw.https.html
         - test: protocol-handler-query.https.html
         - test: protocol-handler-fragment-nosw.https.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1741008
+      results:
+        - test: navigator_user_agent.https.tentative.html
+          subtest: navigator.userAgentData is exposed.
+    - product: chrome
+      url: https://crbug.com/937121
+      results:
+        - test: navigator-window-controls-overlay.tentative.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1745133
+      results:
+        - test: navigator-window-controls-overlay.tentative.html
+          subtest: the windowControlsOverlay object should exist on the navigator object
+        - test: navigator-window-controls-overlay.tentative.html
+          subtest: visible should be a member of the windowControlsOverlay object
+        - test: navigator-window-controls-overlay.tentative.html
+          subtest: visible should be false
+        - test: navigator-window-controls-overlay.tentative.html
+          subtest: ongeometrychange should be a member of the windowControlsOverlay object

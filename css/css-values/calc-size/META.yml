@@ -153,3 +153,31 @@ links:
       31% + 12px)'
     test: calc-size-height.tentative.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1884229
+- product: firefox
+  results:
+  - subtest: 'resolved height for height in auto height container: calc-size(any,
+      31%)'
+    test: calc-size-height.tentative.html
+  - subtest: 'resolved height for height in auto height container: calc-size(max-content,
+      31%)'
+    test: calc-size-height.tentative.html
+  - subtest: 'resolved height for height in auto height container: calc-size(any,
+      31% + 12px)'
+    test: calc-size-height.tentative.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1885291
+- product: firefox
+  results:
+  - subtest: e.style['width'] = "calc-size(auto, size)" should set the property value
+    test: calc-size-parsing.tentative.html
+  - subtest: e.style['min-width'] = "calc-size(auto, size)" should set the property
+      value
+    test: calc-size-parsing.tentative.html
+  - subtest: e.style['height'] = "calc-size(auto, size)" should set the property value
+    test: calc-size-parsing.tentative.html
+  - subtest: e.style['min-height'] = "calc-size(auto, size)" should set the property
+      value
+    test: calc-size-parsing.tentative.html
+  - subtest: e.style['width'] = "calc-size(10px, sign(size) * size)" should set the
+      property value
+    test: calc-size-parsing.tentative.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1886879
