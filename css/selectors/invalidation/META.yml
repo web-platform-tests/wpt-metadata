@@ -1,1296 +1,1137 @@
 links:
-- product: firefox
-  results:
-  - subtest: Before set checked on checkbox, testing subject
-    test: has-with-pseudo-class.html
-  - subtest: Unset checked on checkbox, testing subject
-    test: has-with-pseudo-class.html
-  - subtest: Reset select
-    test: has-with-pseudo-class.html
-  - subtest: Before set disabled on checkbox, testing subject
-    test: has-with-pseudo-class.html
-  - subtest: Unset disabled on checkbox, testing subject
-    test: has-with-pseudo-class.html
-  - subtest: Before set disabled on checkbox, testing subject3
-    test: has-with-pseudo-class.html
-  - subtest: Unset disabled on checkbox, testing subject3
-    test: has-with-pseudo-class.html
-  - subtest: Before set disabled on option, testing subject
-    test: has-with-pseudo-class.html
-  - subtest: Unset disabled on option, testing subject
-    test: has-with-pseudo-class.html
-  - subtest: Before set disabled on option, testing subject3
-    test: has-with-pseudo-class.html
-  - subtest: Unset disabled on option, testing subject3
-    test: has-with-pseudo-class.html
-  - subtest: Before set disabled on optgroup, testing subject
-    test: has-with-pseudo-class.html
-  - subtest: Unset disabled on optgroup, testing subject
-    test: has-with-pseudo-class.html
-  - subtest: Before set disabled on optgroup, testing subject2
-    test: has-with-pseudo-class.html
-  - subtest: Unset disabled on optgroup, testing subject2
-    test: has-with-pseudo-class.html
-  - subtest: Before set disabled on optgroup, testing subject3
-    test: has-with-pseudo-class.html
-  - subtest: Unset disabled on optgroup, testing subject3
-    test: has-with-pseudo-class.html
-  - subtest: Before set disabled on optgroup, testing subject4
-    test: has-with-pseudo-class.html
-  - subtest: Unset disabled on optgroup, testing subject4
-    test: has-with-pseudo-class.html
-  - subtest: Before setting value of text_input, testing subject
-    test: has-with-pseudo-class.html
-  - subtest: Clear value of text_input, testing subject
-    test: has-with-pseudo-class.html
-  - subtest: Before setting value of text_input, testing subject2
-    test: has-with-pseudo-class.html
-  - subtest: Clear value of text_input, testing subject2
-    test: has-with-pseudo-class.html
-  - subtest: Before setting value of text_input, testing subject3
-    test: has-with-pseudo-class.html
-  - subtest: Clear value of text_input, testing subject3
-    test: has-with-pseudo-class.html
-  - subtest: Before setting value of text_input, testing subject4
-    test: has-with-pseudo-class.html
-  - subtest: Clear value of text_input, testing subject4
-    test: has-with-pseudo-class.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1748399
-- product: firefox
-  results:
-  - subtest: Invalidation with :focus, :focus-within, :focus-visible in :has()
-    test: user-action-pseudo-classes-in-has.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1759031
-- product: firefox
-  results:
-  - subtest: :checked & :indeterminate invalidation
-    test: input-pseudo-classes-in-has.html
-  - subtest: :disabled invalidation
-    test: input-pseudo-classes-in-has.html
-  - subtest: :read-only invalidation
-    test: input-pseudo-classes-in-has.html
-  - subtest: :valid invalidation
-    test: input-pseudo-classes-in-has.html
-  - subtest: :default invalidation with input[type=radio]
-    test: input-pseudo-classes-in-has.html
-  - subtest: :required invalidation
-    test: input-pseudo-classes-in-has.html
-  - subtest: :out-of-range invalidation
-    test: input-pseudo-classes-in-has.html
-  - subtest: :placeholder-shown invalidation
-    test: input-pseudo-classes-in-has.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1763454
-- product: firefox
-  results:
-  - subtest: 'CSS Selectors Invalidation: :link, :visited :any-link, pseudo-class
-      in :has() argument'
-    test: link-pseudo-in-has.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1769228
-- product: chrome
-  results:
-  - test: modal-pseudo-class-in-has.html
-  url: https://crbug.com/1327113
-- product: firefox
-  results:
-  - subtest: add .test to previous_sibling_child
-    test: has-in-adjacent-position.html
-  - subtest: add .test to previous_sibling_descendant
-    test: has-in-adjacent-position.html
-  - subtest: add .test to subject
-    test: has-in-adjacent-position.html
-  - subtest: add .test to next_sibling
-    test: has-in-adjacent-position.html
-  - subtest: add .test to next_sibling_child
-    test: has-in-adjacent-position.html
-  - subtest: add .test to next_sibling_descendant
-    test: has-in-adjacent-position.html
-  - subtest: insert element div.test before previous_sibling_child
-    test: has-in-adjacent-position.html
-  - subtest: add the class 'test' again to the element inserted before previous_sibling_child
-    test: has-in-adjacent-position.html
-  - subtest: insert element div[test_attr] before previous_sibling_child
-    test: has-in-adjacent-position.html
-  - subtest: insert element div.test before previous_sibling_descendant
-    test: has-in-adjacent-position.html
-  - subtest: add the class 'test' again to the element inserted before previous_sibling_descendant
-    test: has-in-adjacent-position.html
-  - subtest: insert element div[test_attr] before previous_sibling_descendant
-    test: has-in-adjacent-position.html
-  - subtest: insert element div.test before next_sibling
-    test: has-in-adjacent-position.html
-  - subtest: add the class 'test' again to the element inserted before next_sibling
-    test: has-in-adjacent-position.html
-  - subtest: add the class 'test' to the element inserted again before next_sibling
-    test: has-in-adjacent-position.html
-  - subtest: insert element div[test_attr] before next_sibling
-    test: has-in-adjacent-position.html
-  - subtest: insert element div.test before next_sibling_child
-    test: has-in-adjacent-position.html
-  - subtest: add the class 'test' again to the element inserted before next_sibling_child
-    test: has-in-adjacent-position.html
-  - subtest: insert element div[test_attr] before next_sibling_child
-    test: has-in-adjacent-position.html
-  - subtest: insert element div.test before next_sibling_descendant
-    test: has-in-adjacent-position.html
-  - subtest: add the class 'test' again to the element inserted before next_sibling_descendant
-    test: has-in-adjacent-position.html
-  - subtest: insert element div[test_attr] before next_sibling_descendant
-    test: has-in-adjacent-position.html
-  - subtest: insert element div.test after previous_sibling_child
-    test: has-in-adjacent-position.html
-  - subtest: add the class 'test' again to the element inserted after previous_sibling_child
-    test: has-in-adjacent-position.html
-  - subtest: insert element div[test_attr] after previous_sibling_child
-    test: has-in-adjacent-position.html
-  - subtest: insert element div.test after previous_sibling_descendant
-    test: has-in-adjacent-position.html
-  - subtest: add the class 'test' again to the element inserted after previous_sibling_descendant
-    test: has-in-adjacent-position.html
-  - subtest: insert element div[test_attr] after previous_sibling_descendant
-    test: has-in-adjacent-position.html
-  - subtest: insert element div.test after subject
-    test: has-in-adjacent-position.html
-  - subtest: add the class 'test' again to the element inserted after subject
-    test: has-in-adjacent-position.html
-  - subtest: add the class 'test' to the element inserted again after subject
-    test: has-in-adjacent-position.html
-  - subtest: insert element div[test_attr] after subject
-    test: has-in-adjacent-position.html
-  - subtest: insert element div.test after next_sibling
-    test: has-in-adjacent-position.html
-  - subtest: add the class 'test' again to the element inserted after next_sibling
-    test: has-in-adjacent-position.html
-  - subtest: add the class 'test' to the element inserted again after next_sibling
-    test: has-in-adjacent-position.html
-  - subtest: insert element div[test_attr] after next_sibling
-    test: has-in-adjacent-position.html
-  - subtest: insert element div.test after next_sibling_child
-    test: has-in-adjacent-position.html
-  - subtest: add the class 'test' again to the element inserted after next_sibling_child
-    test: has-in-adjacent-position.html
-  - subtest: insert element div[test_attr] after next_sibling_child
-    test: has-in-adjacent-position.html
-  - subtest: insert element div.test after next_sibling_descendant
-    test: has-in-adjacent-position.html
-  - subtest: add the class 'test' again to the element inserted after next_sibling_descendant
-    test: has-in-adjacent-position.html
-  - subtest: insert element div[test_attr] after next_sibling_descendant
-    test: has-in-adjacent-position.html
-  - subtest: insert tree div>div.test before previous_sibling_child
-    test: has-in-adjacent-position.html
-  - subtest: add the class 'test' again to the element in the tree inserted before
-      previous_sibling_child
-    test: has-in-adjacent-position.html
-  - subtest: insert element div>div[test_attr] before previous_sibling_child
-    test: has-in-adjacent-position.html
-  - subtest: insert tree div>div.test before previous_sibling_descendant
-    test: has-in-adjacent-position.html
-  - subtest: add the class 'test' again to the element in the tree inserted before
-      previous_sibling_descendant
-    test: has-in-adjacent-position.html
-  - subtest: insert element div>div[test_attr] before previous_sibling_descendant
-    test: has-in-adjacent-position.html
-  - subtest: insert tree div>div.test before subject
-    test: has-in-adjacent-position.html
-  - subtest: add the class 'test' again to the element in the tree inserted before
-      subject
-    test: has-in-adjacent-position.html
-  - subtest: add the class 'test' to the element in the tree inserted again before
-      subject
-    test: has-in-adjacent-position.html
-  - subtest: insert element div>div[test_attr] before subject
-    test: has-in-adjacent-position.html
-  - subtest: insert tree div>div.test before next_sibling
-    test: has-in-adjacent-position.html
-  - subtest: add the class 'test' again to the element in the tree inserted before
-      next_sibling
-    test: has-in-adjacent-position.html
-  - subtest: add the class 'test' to the element in the tree inserted again before
-      next_sibling
-    test: has-in-adjacent-position.html
-  - subtest: insert element div>div[test_attr] before next_sibling
-    test: has-in-adjacent-position.html
-  - subtest: insert tree div>div.test before next_sibling_child
-    test: has-in-adjacent-position.html
-  - subtest: add the class 'test' again to the element in the tree inserted before
-      next_sibling_child
-    test: has-in-adjacent-position.html
-  - subtest: insert element div>div[test_attr] before next_sibling_child
-    test: has-in-adjacent-position.html
-  - subtest: insert tree div>div.test before next_sibling_descendant
-    test: has-in-adjacent-position.html
-  - subtest: add the class 'test' again to the element in the tree inserted before
-      next_sibling_descendant
-    test: has-in-adjacent-position.html
-  - subtest: insert element div>div[test_attr] before next_sibling_descendant
-    test: has-in-adjacent-position.html
-  - subtest: insert tree div>div.test after previous_sibling
-    test: has-in-adjacent-position.html
-  - subtest: add the class 'test' again to the element in the tree inserted after
-      previous_sibling
-    test: has-in-adjacent-position.html
-  - subtest: add the class 'test' to the element in the tree inserted again after
-      previous_sibling
-    test: has-in-adjacent-position.html
-  - subtest: insert element div>div[test_attr] after previous_sibling
-    test: has-in-adjacent-position.html
-  - subtest: insert tree div>div.test after previous_sibling_child
-    test: has-in-adjacent-position.html
-  - subtest: add the class 'test' again to the element in the tree inserted after
-      previous_sibling_child
-    test: has-in-adjacent-position.html
-  - subtest: insert element div>div[test_attr] after previous_sibling_child
-    test: has-in-adjacent-position.html
-  - subtest: insert tree div>div.test after previous_sibling_descendant
-    test: has-in-adjacent-position.html
-  - subtest: add the class 'test' again to the element in the tree inserted after
-      previous_sibling_descendant
-    test: has-in-adjacent-position.html
-  - subtest: insert element div>div[test_attr] after previous_sibling_descendant
-    test: has-in-adjacent-position.html
-  - subtest: insert tree div>div.test after subject
-    test: has-in-adjacent-position.html
-  - subtest: add the class 'test' again to the element in the tree inserted after
-      subject
-    test: has-in-adjacent-position.html
-  - subtest: add the class 'test' to the element in the tree inserted again after
-      subject
-    test: has-in-adjacent-position.html
-  - subtest: insert element div>div[test_attr] after subject
-    test: has-in-adjacent-position.html
-  - subtest: insert tree div>div.test after next_sibling
-    test: has-in-adjacent-position.html
-  - subtest: add the class 'test' again to the element in the tree inserted after
-      next_sibling
-    test: has-in-adjacent-position.html
-  - subtest: add the class 'test' to the element in the tree inserted again after
-      next_sibling
-    test: has-in-adjacent-position.html
-  - subtest: insert element div>div[test_attr] after next_sibling
-    test: has-in-adjacent-position.html
-  - subtest: insert tree div>div.test after next_sibling_child
-    test: has-in-adjacent-position.html
-  - subtest: add the class 'test' again to the element in the tree inserted after
-      next_sibling_child
-    test: has-in-adjacent-position.html
-  - subtest: insert element div>div[test_attr] after next_sibling_child
-    test: has-in-adjacent-position.html
-  - subtest: insert tree div>div.test after next_sibling_descendant
-    test: has-in-adjacent-position.html
-  - subtest: add the class 'test' again to the element in the tree inserted after
-      next_sibling_descendant
-    test: has-in-adjacent-position.html
-  - subtest: insert element div>div[test_attr] after next_sibling_descendant
-    test: has-in-adjacent-position.html
-  - subtest: add .test to subject_parent
-    test: has-in-ancestor-position.html
-  - subtest: add .test to subject
-    test: has-in-ancestor-position.html
-  - subtest: add .test to subject_child
-    test: has-in-ancestor-position.html
-  - subtest: add .test to subject_descendant
-    test: has-in-ancestor-position.html
-  - subtest: add .test to next_sibling
-    test: has-in-ancestor-position.html
-  - subtest: add .test to next_sibling_child
-    test: has-in-ancestor-position.html
-  - subtest: add .test to next_sibling_descendant
-    test: has-in-ancestor-position.html
-  - subtest: insert element div.test before subject_parent
-    test: has-in-ancestor-position.html
-  - subtest: add the class 'test' again to the element inserted before subject_parent
-    test: has-in-ancestor-position.html
-  - subtest: insert element div[test_attr] before subject_parent
-    test: has-in-ancestor-position.html
-  - subtest: insert element div.test before subject
-    test: has-in-ancestor-position.html
-  - subtest: add the class 'test' again to the element inserted before subject
-    test: has-in-ancestor-position.html
-  - subtest: insert element div[test_attr] before subject
-    test: has-in-ancestor-position.html
-  - subtest: insert element div.test before subject_child
-    test: has-in-ancestor-position.html
-  - subtest: add the class 'test' again to the element inserted before subject_child
-    test: has-in-ancestor-position.html
-  - subtest: insert element div[test_attr] before subject_child
-    test: has-in-ancestor-position.html
-  - subtest: insert element div.test before subject_descendant
-    test: has-in-ancestor-position.html
-  - subtest: add the class 'test' again to the element inserted before subject_descendant
-    test: has-in-ancestor-position.html
-  - subtest: insert element div[test_attr] before subject_descendant
-    test: has-in-ancestor-position.html
-  - subtest: insert element div.test before next_sibling
-    test: has-in-ancestor-position.html
-  - subtest: add the class 'test' again to the element inserted before next_sibling
-    test: has-in-ancestor-position.html
-  - subtest: insert element div[test_attr] before next_sibling
-    test: has-in-ancestor-position.html
-  - subtest: insert element div.test before next_sibling_child
-    test: has-in-ancestor-position.html
-  - subtest: add the class 'test' again to the element inserted before next_sibling_child
-    test: has-in-ancestor-position.html
-  - subtest: insert element div[test_attr] before next_sibling_child
-    test: has-in-ancestor-position.html
-  - subtest: insert element div.test before next_sibling_descendant
-    test: has-in-ancestor-position.html
-  - subtest: add the class 'test' again to the element inserted before next_sibling_descendant
-    test: has-in-ancestor-position.html
-  - subtest: insert element div[test_attr] before next_sibling_descendant
-    test: has-in-ancestor-position.html
-  - subtest: insert element div.test after subject_ancestor
-    test: has-in-ancestor-position.html
-  - subtest: add the class 'test' again to the element inserted after subject_ancestor
-    test: has-in-ancestor-position.html
-  - subtest: insert element div[test_attr] after subject_ancestor
-    test: has-in-ancestor-position.html
-  - subtest: insert element div.test after subject_parent
-    test: has-in-ancestor-position.html
-  - subtest: add the class 'test' again to the element inserted after subject_parent
-    test: has-in-ancestor-position.html
-  - subtest: insert element div[test_attr] after subject_parent
-    test: has-in-ancestor-position.html
-  - subtest: insert element div.test after subject
-    test: has-in-ancestor-position.html
-  - subtest: add the class 'test' again to the element inserted after subject
-    test: has-in-ancestor-position.html
-  - subtest: insert element div[test_attr] after subject
-    test: has-in-ancestor-position.html
-  - subtest: insert element div.test after subject_child
-    test: has-in-ancestor-position.html
-  - subtest: add the class 'test' again to the element inserted after subject_child
-    test: has-in-ancestor-position.html
-  - subtest: insert element div[test_attr] after subject_child
-    test: has-in-ancestor-position.html
-  - subtest: insert element div.test after subject_descendant
-    test: has-in-ancestor-position.html
-  - subtest: add the class 'test' again to the element inserted after subject_descendant
-    test: has-in-ancestor-position.html
-  - subtest: insert element div[test_attr] after subject_descendant
-    test: has-in-ancestor-position.html
-  - subtest: insert element div.test after next_sibling
-    test: has-in-ancestor-position.html
-  - subtest: add the class 'test' again to the element inserted after next_sibling
-    test: has-in-ancestor-position.html
-  - subtest: insert element div[test_attr] after next_sibling
-    test: has-in-ancestor-position.html
-  - subtest: insert element div.test after next_sibling_child
-    test: has-in-ancestor-position.html
-  - subtest: add the class 'test' again to the element inserted after next_sibling_child
-    test: has-in-ancestor-position.html
-  - subtest: insert element div[test_attr] after next_sibling_child
-    test: has-in-ancestor-position.html
-  - subtest: insert element div.test after next_sibling_descendant
-    test: has-in-ancestor-position.html
-  - subtest: add the class 'test' again to the element inserted after next_sibling_descendant
-    test: has-in-ancestor-position.html
-  - subtest: insert element div[test_attr] after next_sibling_descendant
-    test: has-in-ancestor-position.html
-  - subtest: insert tree div>div.test before subject_parent
-    test: has-in-ancestor-position.html
-  - subtest: add the class 'test' again to the element in the tree inserted before
-      subject_parent
-    test: has-in-ancestor-position.html
-  - subtest: insert element div>div[test_attr] before subject_parent
-    test: has-in-ancestor-position.html
-  - subtest: insert tree div>div.test before subject
-    test: has-in-ancestor-position.html
-  - subtest: add the class 'test' again to the element in the tree inserted before
-      subject
-    test: has-in-ancestor-position.html
-  - subtest: insert element div>div[test_attr] before subject
-    test: has-in-ancestor-position.html
-  - subtest: insert tree div>div.test before subject_child
-    test: has-in-ancestor-position.html
-  - subtest: add the class 'test' again to the element in the tree inserted before
-      subject_child
-    test: has-in-ancestor-position.html
-  - subtest: insert element div>div[test_attr] before subject_child
-    test: has-in-ancestor-position.html
-  - subtest: insert tree div>div.test before subject_descendant
-    test: has-in-ancestor-position.html
-  - subtest: add the class 'test' again to the element in the tree inserted before
-      subject_descendant
-    test: has-in-ancestor-position.html
-  - subtest: insert element div>div[test_attr] before subject_descendant
-    test: has-in-ancestor-position.html
-  - subtest: insert tree div>div.test before next_sibling
-    test: has-in-ancestor-position.html
-  - subtest: add the class 'test' again to the element in the tree inserted before
-      next_sibling
-    test: has-in-ancestor-position.html
-  - subtest: insert element div>div[test_attr] before next_sibling
-    test: has-in-ancestor-position.html
-  - subtest: insert tree div>div.test before next_sibling_child
-    test: has-in-ancestor-position.html
-  - subtest: add the class 'test' again to the element in the tree inserted before
-      next_sibling_child
-    test: has-in-ancestor-position.html
-  - subtest: insert element div>div[test_attr] before next_sibling_child
-    test: has-in-ancestor-position.html
-  - subtest: insert tree div>div.test before next_sibling_descendant
-    test: has-in-ancestor-position.html
-  - subtest: add the class 'test' again to the element in the tree inserted before
-      next_sibling_descendant
-    test: has-in-ancestor-position.html
-  - subtest: insert element div>div[test_attr] before next_sibling_descendant
-    test: has-in-ancestor-position.html
-  - subtest: insert tree div>div.test after subject_ancestor
-    test: has-in-ancestor-position.html
-  - subtest: add the class 'test' again to the element in the tree inserted after
-      subject_ancestor
-    test: has-in-ancestor-position.html
-  - subtest: insert element div>div[test_attr] after subject_ancestor
-    test: has-in-ancestor-position.html
-  - subtest: insert tree div>div.test after subject_parent
-    test: has-in-ancestor-position.html
-  - subtest: add the class 'test' again to the element in the tree inserted after
-      subject_parent
-    test: has-in-ancestor-position.html
-  - subtest: insert element div>div[test_attr] after subject_parent
-    test: has-in-ancestor-position.html
-  - subtest: insert tree div>div.test after subject
-    test: has-in-ancestor-position.html
-  - subtest: add the class 'test' again to the element in the tree inserted after
-      subject
-    test: has-in-ancestor-position.html
-  - subtest: insert element div>div[test_attr] after subject
-    test: has-in-ancestor-position.html
-  - subtest: insert tree div>div.test after subject_child
-    test: has-in-ancestor-position.html
-  - subtest: add the class 'test' again to the element in the tree inserted after
-      subject_child
-    test: has-in-ancestor-position.html
-  - subtest: insert element div>div[test_attr] after subject_child
-    test: has-in-ancestor-position.html
-  - subtest: insert tree div>div.test after subject_descendant
-    test: has-in-ancestor-position.html
-  - subtest: add the class 'test' again to the element in the tree inserted after
-      subject_descendant
-    test: has-in-ancestor-position.html
-  - subtest: insert element div>div[test_attr] after subject_descendant
-    test: has-in-ancestor-position.html
-  - subtest: insert tree div>div.test after next_sibling
-    test: has-in-ancestor-position.html
-  - subtest: add the class 'test' again to the element in the tree inserted after
-      next_sibling
-    test: has-in-ancestor-position.html
-  - subtest: insert element div>div[test_attr] after next_sibling
-    test: has-in-ancestor-position.html
-  - subtest: insert tree div>div.test after next_sibling_child
-    test: has-in-ancestor-position.html
-  - subtest: add the class 'test' again to the element in the tree inserted after
-      next_sibling_child
-    test: has-in-ancestor-position.html
-  - subtest: insert element div>div[test_attr] after next_sibling_child
-    test: has-in-ancestor-position.html
-  - subtest: insert tree div>div.test after next_sibling_descendant
-    test: has-in-ancestor-position.html
-  - subtest: add the class 'test' again to the element in the tree inserted after
-      next_sibling_descendant
-    test: has-in-ancestor-position.html
-  - subtest: insert element div>div[test_attr] after next_sibling_descendant
-    test: has-in-ancestor-position.html
-  - subtest: add .test to subject
-    test: has-in-parent-position.html
-  - subtest: add .test to subject_child
-    test: has-in-parent-position.html
-  - subtest: add .test to subject_descendant
-    test: has-in-parent-position.html
-  - subtest: insert element div.test before subject
-    test: has-in-parent-position.html
-  - subtest: add the class 'test' again to the element inserted before subject
-    test: has-in-parent-position.html
-  - subtest: insert element div[test_attr] before subject
-    test: has-in-parent-position.html
-  - subtest: insert element div.test before subject_child
-    test: has-in-parent-position.html
-  - subtest: add the class 'test' again to the element inserted before subject_child
-    test: has-in-parent-position.html
-  - subtest: insert element div[test_attr] before subject_child
-    test: has-in-parent-position.html
-  - subtest: insert element div.test before subject_descendant
-    test: has-in-parent-position.html
-  - subtest: add the class 'test' again to the element inserted before subject_descendant
-    test: has-in-parent-position.html
-  - subtest: insert element div[test_attr] before subject_descendant
-    test: has-in-parent-position.html
-  - subtest: insert element div.test after subject_parent
-    test: has-in-parent-position.html
-  - subtest: add the class 'test' again to the element inserted after subject_parent
-    test: has-in-parent-position.html
-  - subtest: insert element div[test_attr] after subject_parent
-    test: has-in-parent-position.html
-  - subtest: insert element div.test after subject
-    test: has-in-parent-position.html
-  - subtest: add the class 'test' again to the element inserted after subject
-    test: has-in-parent-position.html
-  - subtest: insert element div[test_attr] after subject
-    test: has-in-parent-position.html
-  - subtest: insert element div.test after subject_child
-    test: has-in-parent-position.html
-  - subtest: add the class 'test' again to the element inserted after subject_child
-    test: has-in-parent-position.html
-  - subtest: insert element div[test_attr] after subject_child
-    test: has-in-parent-position.html
-  - subtest: insert element div.test after subject_descendant
-    test: has-in-parent-position.html
-  - subtest: add the class 'test' again to the element inserted after subject_descendant
-    test: has-in-parent-position.html
-  - subtest: insert element div[test_attr] after subject_descendant
-    test: has-in-parent-position.html
-  - subtest: insert tree div>div.test before subject
-    test: has-in-parent-position.html
-  - subtest: add the class 'test' again to the element in the tree inserted before
-      subject
-    test: has-in-parent-position.html
-  - subtest: insert element div>div[test_attr] before subject
-    test: has-in-parent-position.html
-  - subtest: insert tree div>div.test before subject_child
-    test: has-in-parent-position.html
-  - subtest: add the class 'test' again to the element in the tree inserted before
-      subject_child
-    test: has-in-parent-position.html
-  - subtest: insert element div>div[test_attr] before subject_child
-    test: has-in-parent-position.html
-  - subtest: insert tree div>div.test before subject_descendant
-    test: has-in-parent-position.html
-  - subtest: add the class 'test' again to the element in the tree inserted before
-      subject_descendant
-    test: has-in-parent-position.html
-  - subtest: insert element div>div[test_attr] before subject_descendant
-    test: has-in-parent-position.html
-  - subtest: insert tree div>div.test after subject_parent
-    test: has-in-parent-position.html
-  - subtest: add the class 'test' again to the element in the tree inserted after
-      subject_parent
-    test: has-in-parent-position.html
-  - subtest: insert element div>div[test_attr] after subject_parent
-    test: has-in-parent-position.html
-  - subtest: insert tree div>div.test after subject
-    test: has-in-parent-position.html
-  - subtest: add the class 'test' again to the element in the tree inserted after
-      subject
-    test: has-in-parent-position.html
-  - subtest: insert element div>div[test_attr] after subject
-    test: has-in-parent-position.html
-  - subtest: insert tree div>div.test after subject_child
-    test: has-in-parent-position.html
-  - subtest: add the class 'test' again to the element in the tree inserted after
-      subject_child
-    test: has-in-parent-position.html
-  - subtest: insert element div>div[test_attr] after subject_child
-    test: has-in-parent-position.html
-  - subtest: insert tree div>div.test after subject_descendant
-    test: has-in-parent-position.html
-  - subtest: add the class 'test' again to the element in the tree inserted after
-      subject_descendant
-    test: has-in-parent-position.html
-  - subtest: insert element div>div[test_attr] after subject_descendant
-    test: has-in-parent-position.html
-  - subtest: add .test to previous_sibling_child
-    test: has-in-sibling-position.html
-  - subtest: add .test to previous_sibling_descendant
-    test: has-in-sibling-position.html
-  - subtest: add .test to subject
-    test: has-in-sibling-position.html
-  - subtest: add .test to next_sibling
-    test: has-in-sibling-position.html
-  - subtest: add .test to next_sibling_child
-    test: has-in-sibling-position.html
-  - subtest: add .test to next_sibling_descendant
-    test: has-in-sibling-position.html
-  - subtest: insert element div.test before previous_sibling_child
-    test: has-in-sibling-position.html
-  - subtest: add the class 'test' again to the element inserted before previous_sibling_child
-    test: has-in-sibling-position.html
-  - subtest: insert element div[test_attr] before previous_sibling_child
-    test: has-in-sibling-position.html
-  - subtest: insert element div.test before previous_sibling_descendant
-    test: has-in-sibling-position.html
-  - subtest: add the class 'test' again to the element inserted before previous_sibling_descendant
-    test: has-in-sibling-position.html
-  - subtest: insert element div[test_attr] before previous_sibling_descendant
-    test: has-in-sibling-position.html
-  - subtest: insert element div.test before subject
-    test: has-in-sibling-position.html
-  - subtest: add the class 'test' again to the element inserted before subject
-    test: has-in-sibling-position.html
-  - subtest: add the class 'test' to the element inserted again before subject
-    test: has-in-sibling-position.html
-  - subtest: insert element div[test_attr] before subject
-    test: has-in-sibling-position.html
-  - subtest: insert element div.test before next_sibling
-    test: has-in-sibling-position.html
-  - subtest: add the class 'test' again to the element inserted before next_sibling
-    test: has-in-sibling-position.html
-  - subtest: add the class 'test' to the element inserted again before next_sibling
-    test: has-in-sibling-position.html
-  - subtest: insert element div[test_attr] before next_sibling
-    test: has-in-sibling-position.html
-  - subtest: insert element div.test before next_sibling_child
-    test: has-in-sibling-position.html
-  - subtest: add the class 'test' again to the element inserted before next_sibling_child
-    test: has-in-sibling-position.html
-  - subtest: insert element div[test_attr] before next_sibling_child
-    test: has-in-sibling-position.html
-  - subtest: insert element div.test before next_sibling_descendant
-    test: has-in-sibling-position.html
-  - subtest: add the class 'test' again to the element inserted before next_sibling_descendant
-    test: has-in-sibling-position.html
-  - subtest: insert element div[test_attr] before next_sibling_descendant
-    test: has-in-sibling-position.html
-  - subtest: insert element div.test after previous_sibling
-    test: has-in-sibling-position.html
-  - subtest: add the class 'test' again to the element inserted after previous_sibling
-    test: has-in-sibling-position.html
-  - subtest: add the class 'test' to the element inserted again after previous_sibling
-    test: has-in-sibling-position.html
-  - subtest: insert element div[test_attr] after previous_sibling
-    test: has-in-sibling-position.html
-  - subtest: insert element div.test after previous_sibling_child
-    test: has-in-sibling-position.html
-  - subtest: add the class 'test' again to the element inserted after previous_sibling_child
-    test: has-in-sibling-position.html
-  - subtest: insert element div[test_attr] after previous_sibling_child
-    test: has-in-sibling-position.html
-  - subtest: insert element div.test after previous_sibling_descendant
-    test: has-in-sibling-position.html
-  - subtest: add the class 'test' again to the element inserted after previous_sibling_descendant
-    test: has-in-sibling-position.html
-  - subtest: insert element div[test_attr] after previous_sibling_descendant
-    test: has-in-sibling-position.html
-  - subtest: insert element div.test after subject
-    test: has-in-sibling-position.html
-  - subtest: add the class 'test' again to the element inserted after subject
-    test: has-in-sibling-position.html
-  - subtest: add the class 'test' to the element inserted again after subject
-    test: has-in-sibling-position.html
-  - subtest: insert element div[test_attr] after subject
-    test: has-in-sibling-position.html
-  - subtest: insert element div.test after next_sibling
-    test: has-in-sibling-position.html
-  - subtest: add the class 'test' again to the element inserted after next_sibling
-    test: has-in-sibling-position.html
-  - subtest: add the class 'test' to the element inserted again after next_sibling
-    test: has-in-sibling-position.html
-  - subtest: insert element div[test_attr] after next_sibling
-    test: has-in-sibling-position.html
-  - subtest: insert element div.test after next_sibling_child
-    test: has-in-sibling-position.html
-  - subtest: add the class 'test' again to the element inserted after next_sibling_child
-    test: has-in-sibling-position.html
-  - subtest: insert element div[test_attr] after next_sibling_child
-    test: has-in-sibling-position.html
-  - subtest: insert element div.test after next_sibling_descendant
-    test: has-in-sibling-position.html
-  - subtest: add the class 'test' again to the element inserted after next_sibling_descendant
-    test: has-in-sibling-position.html
-  - subtest: insert element div[test_attr] after next_sibling_descendant
-    test: has-in-sibling-position.html
-  - subtest: insert tree div>div.test before previous_sibling
-    test: has-in-sibling-position.html
-  - subtest: add the class 'test' again to the element in the tree inserted before
-      previous_sibling
-    test: has-in-sibling-position.html
-  - subtest: add the class 'test' to the element in the tree inserted again before
-      previous_sibling
-    test: has-in-sibling-position.html
-  - subtest: insert element div>div[test_attr] before previous_sibling
-    test: has-in-sibling-position.html
-  - subtest: insert tree div>div.test before previous_sibling_child
-    test: has-in-sibling-position.html
-  - subtest: add the class 'test' again to the element in the tree inserted before
-      previous_sibling_child
-    test: has-in-sibling-position.html
-  - subtest: insert element div>div[test_attr] before previous_sibling_child
-    test: has-in-sibling-position.html
-  - subtest: insert tree div>div.test before previous_sibling_descendant
-    test: has-in-sibling-position.html
-  - subtest: add the class 'test' again to the element in the tree inserted before
-      previous_sibling_descendant
-    test: has-in-sibling-position.html
-  - subtest: insert element div>div[test_attr] before previous_sibling_descendant
-    test: has-in-sibling-position.html
-  - subtest: insert tree div>div.test before subject
-    test: has-in-sibling-position.html
-  - subtest: add the class 'test' again to the element in the tree inserted before
-      subject
-    test: has-in-sibling-position.html
-  - subtest: add the class 'test' to the element in the tree inserted again before
-      subject
-    test: has-in-sibling-position.html
-  - subtest: insert element div>div[test_attr] before subject
-    test: has-in-sibling-position.html
-  - subtest: insert tree div>div.test before next_sibling
-    test: has-in-sibling-position.html
-  - subtest: add the class 'test' again to the element in the tree inserted before
-      next_sibling
-    test: has-in-sibling-position.html
-  - subtest: add the class 'test' to the element in the tree inserted again before
-      next_sibling
-    test: has-in-sibling-position.html
-  - subtest: insert element div>div[test_attr] before next_sibling
-    test: has-in-sibling-position.html
-  - subtest: insert tree div>div.test before next_sibling_child
-    test: has-in-sibling-position.html
-  - subtest: add the class 'test' again to the element in the tree inserted before
-      next_sibling_child
-    test: has-in-sibling-position.html
-  - subtest: insert element div>div[test_attr] before next_sibling_child
-    test: has-in-sibling-position.html
-  - subtest: insert tree div>div.test before next_sibling_descendant
-    test: has-in-sibling-position.html
-  - subtest: add the class 'test' again to the element in the tree inserted before
-      next_sibling_descendant
-    test: has-in-sibling-position.html
-  - subtest: insert element div>div[test_attr] before next_sibling_descendant
-    test: has-in-sibling-position.html
-  - subtest: insert tree div>div.test after previous_sibling
-    test: has-in-sibling-position.html
-  - subtest: add the class 'test' again to the element in the tree inserted after
-      previous_sibling
-    test: has-in-sibling-position.html
-  - subtest: add the class 'test' to the element in the tree inserted again after
-      previous_sibling
-    test: has-in-sibling-position.html
-  - subtest: insert element div>div[test_attr] after previous_sibling
-    test: has-in-sibling-position.html
-  - subtest: insert tree div>div.test after previous_sibling_child
-    test: has-in-sibling-position.html
-  - subtest: add the class 'test' again to the element in the tree inserted after
-      previous_sibling_child
-    test: has-in-sibling-position.html
-  - subtest: insert element div>div[test_attr] after previous_sibling_child
-    test: has-in-sibling-position.html
-  - subtest: insert tree div>div.test after previous_sibling_descendant
-    test: has-in-sibling-position.html
-  - subtest: add the class 'test' again to the element in the tree inserted after
-      previous_sibling_descendant
-    test: has-in-sibling-position.html
-  - subtest: insert element div>div[test_attr] after previous_sibling_descendant
-    test: has-in-sibling-position.html
-  - subtest: insert tree div>div.test after subject
-    test: has-in-sibling-position.html
-  - subtest: add the class 'test' again to the element in the tree inserted after
-      subject
-    test: has-in-sibling-position.html
-  - subtest: add the class 'test' to the element in the tree inserted again after
-      subject
-    test: has-in-sibling-position.html
-  - subtest: insert element div>div[test_attr] after subject
-    test: has-in-sibling-position.html
-  - subtest: insert tree div>div.test after next_sibling
-    test: has-in-sibling-position.html
-  - subtest: add the class 'test' again to the element in the tree inserted after
-      next_sibling
-    test: has-in-sibling-position.html
-  - subtest: add the class 'test' to the element in the tree inserted again after
-      next_sibling
-    test: has-in-sibling-position.html
-  - subtest: insert element div>div[test_attr] after next_sibling
-    test: has-in-sibling-position.html
-  - subtest: insert tree div>div.test after next_sibling_child
-    test: has-in-sibling-position.html
-  - subtest: add the class 'test' again to the element in the tree inserted after
-      next_sibling_child
-    test: has-in-sibling-position.html
-  - subtest: insert element div>div[test_attr] after next_sibling_child
-    test: has-in-sibling-position.html
-  - subtest: insert tree div>div.test after next_sibling_descendant
-    test: has-in-sibling-position.html
-  - subtest: add the class 'test' again to the element in the tree inserted after
-      next_sibling_descendant
-    test: has-in-sibling-position.html
-  - subtest: insert element div>div[test_attr] after next_sibling_descendant
-    test: has-in-sibling-position.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1770370
-- product: firefox
-  results:
-  - subtest: '[ .red:has(#descendant:is(.a .b)) ] #has_scope.classList.add(''red'')
-      : check matches (false)'
-    test: is-pseudo-containing-complex-in-has.html
-  - subtest: '[ .red:has(#descendant:is(.a .b)) ] #parent.classList.remove(''a'')
-      : check matches (false)'
-    test: is-pseudo-containing-complex-in-has.html
-  - subtest: '[ .red:has(#descendant:is(.a .b)) ] #has_scope.classList.remove(''a'')
-      : check matches (false)'
-    test: is-pseudo-containing-complex-in-has.html
-  - subtest: '[ .red:has(#descendant:is(.a .b)) ] #child.classList.remove(''a'') :
-      check matches (false)'
-    test: is-pseudo-containing-complex-in-has.html
-  - subtest: '[ .red:has(#descendant:is(.a .b)) ] #has_scope.classList.remove(''red'')
-      : check matches (false)'
-    test: is-pseudo-containing-complex-in-has.html
-  - subtest: '[ .green:has(#descendant:is(.c ~ .d .e)) ] #has_scope.classList.add(''green'')
-      : check matches (false)'
-    test: is-pseudo-containing-complex-in-has.html
-  - subtest: '[ .green:has(#descendant:is(.c ~ .d .e)) ] #parent_previous.classList.remove(''c'')
-      : check matches (false)'
-    test: is-pseudo-containing-complex-in-has.html
-  - subtest: '[ .green:has(#descendant:is(.c ~ .d .e)) ] #previous.classList.remove(''c'')
-      : check matches (false)'
-    test: is-pseudo-containing-complex-in-has.html
-  - subtest: '[ .green:has(#descendant:is(.c ~ .d .e)) ] #child_previous.classList.remove(''c'')
-      : check matches (false)'
-    test: is-pseudo-containing-complex-in-has.html
-  - subtest: '[ .green:has(#descendant:is(.c ~ .d .e)) ] #has_scope.classList.remove(''green'')
-      : check matches (false)'
-    test: is-pseudo-containing-complex-in-has.html
-  - subtest: '[ .blue:has(~ #indirect_next:is(.f ~ .g)) ] #has_scope.classList.add(''blue'')
-      : check matches (false)'
-    test: is-pseudo-containing-complex-in-has.html
-  - subtest: '[ .blue:has(~ #indirect_next:is(.f ~ .g)) ] #previous.classList.remove(''f'')
-      : check matches (false)'
-    test: is-pseudo-containing-complex-in-has.html
-  - subtest: '[ .blue:has(~ #indirect_next:is(.f ~ .g)) ] #has_scope.classList.remove(''f'')
-      : check matches (false)'
-    test: is-pseudo-containing-complex-in-has.html
-  - subtest: '[ .blue:has(~ #indirect_next:is(.f ~ .g)) ] #direct_next.classList.remove(''f'')
-      : check matches (false)'
-    test: is-pseudo-containing-complex-in-has.html
-  - subtest: '[ .blue:has(~ #indirect_next:is(.f ~ .g)) ] #has_scope.classList.remove(''blue'')
-      : check matches (false)'
-    test: is-pseudo-containing-complex-in-has.html
-  - subtest: '[ .yellow:has(~ #indirect_next:is(.h .i)) ] #has_scope.classList.add(''yellow'')
-      : check matches (false)'
-    test: is-pseudo-containing-complex-in-has.html
-  - subtest: '[ .yellow:has(~ #indirect_next:is(.h .i)) ] #parent.classList.remove(''h'')
-      : check matches (false)'
-    test: is-pseudo-containing-complex-in-has.html
-  - subtest: '[ .yellow:has(~ #indirect_next:is(.h .i)) ] #has_scope.classList.remove(''yellow'')
-      : check matches (false)'
-    test: is-pseudo-containing-complex-in-has.html
-  - subtest: '[ .purple:has(~ #indirect_next:is(.j ~ .k .l)) ] #has_scope.classList.add(''purple'')
-      : check matches (false)'
-    test: is-pseudo-containing-complex-in-has.html
-  - subtest: '[ .purple:has(~ #indirect_next:is(.j ~ .k .l)) ] #parent_previous.classList.remove(''j'')
-      : check matches (false)'
-    test: is-pseudo-containing-complex-in-has.html
-  - subtest: '[ .purple:has(~ #indirect_next:is(.j ~ .k .l)) ] #has_scope.classList.remove(''purple'')
-      : check matches (false)'
-    test: is-pseudo-containing-complex-in-has.html
-  - subtest: '[ .orange:has(#descendant:is(:is(.m, .n) .o)) ] #has_scope.classList.add(''orange'')
-      : check matches (false)'
-    test: is-pseudo-containing-complex-in-has.html
-  - subtest: '[ .orange:has(#descendant:is(:is(.m, .n) .o)) ] #parent.classList.remove(''m'')
-      : check matches (false)'
-    test: is-pseudo-containing-complex-in-has.html
-  - subtest: '[ .orange:has(#descendant:is(:is(.m, .n) .o)) ] #parent.classList.remove(''n'')
-      : check matches (false)'
-    test: is-pseudo-containing-complex-in-has.html
-  - subtest: '[ .orange:has(#descendant:is(:is(.m, .n) .o)) ] #has_scope.classList.remove(''m'')
-      : check matches (false)'
-    test: is-pseudo-containing-complex-in-has.html
-  - subtest: '[ .orange:has(#descendant:is(:is(.m, .n) .o)) ] #has_scope.classList.remove(''n'')
-      : check matches (false)'
-    test: is-pseudo-containing-complex-in-has.html
-  - subtest: '[ .orange:has(#descendant:is(:is(.m, .n) .o)) ] #child.classList.remove(''m'')
-      : check matches (false)'
-    test: is-pseudo-containing-complex-in-has.html
-  - subtest: '[ .orange:has(#descendant:is(:is(.m, .n) .o)) ] #child.classList.remove(''n'')
-      : check matches (false)'
-    test: is-pseudo-containing-complex-in-has.html
-  - subtest: '[ .orange:has(#descendant:is(:is(.m, .n) .o)) ] #has_scope.classList.remove(''orange'')
-      : check matches (false)'
-    test: is-pseudo-containing-complex-in-has.html
-  - subtest: '[ .red:has(#descendant:not(.a .b)) ] #has_scope.classList.add(''red'')
-      : check matches (true)'
-    test: not-pseudo-containing-complex-in-has.html
-  - subtest: '[ .red:has(#descendant:not(.a .b)) ] #has_scope.classList.add(''red'')
-      : check #has_scope color'
-    test: not-pseudo-containing-complex-in-has.html
-  - subtest: '[ .red:has(#descendant:not(.a .b)) ] #parent.classList.add(''a'') :
-      check matches (false)'
-    test: not-pseudo-containing-complex-in-has.html
-  - subtest: '[ .red:has(#descendant:not(.a .b)) ] #parent.classList.remove(''a'')
-      : check matches (true)'
-    test: not-pseudo-containing-complex-in-has.html
-  - subtest: '[ .red:has(#descendant:not(.a .b)) ] #parent.classList.remove(''a'')
-      : check #has_scope color'
-    test: not-pseudo-containing-complex-in-has.html
-  - subtest: '[ .red:has(#descendant:not(.a .b)) ] #has_scope.classList.add(''a'')
-      : check matches (false)'
-    test: not-pseudo-containing-complex-in-has.html
-  - subtest: '[ .red:has(#descendant:not(.a .b)) ] #has_scope.classList.remove(''a'')
-      : check matches (true)'
-    test: not-pseudo-containing-complex-in-has.html
-  - subtest: '[ .red:has(#descendant:not(.a .b)) ] #has_scope.classList.remove(''a'')
-      : check #has_scope color'
-    test: not-pseudo-containing-complex-in-has.html
-  - subtest: '[ .red:has(#descendant:not(.a .b)) ] #child.classList.add(''a'') : check
-      matches (false)'
-    test: not-pseudo-containing-complex-in-has.html
-  - subtest: '[ .red:has(#descendant:not(.a .b)) ] #child.classList.remove(''a'')
-      : check matches (true)'
-    test: not-pseudo-containing-complex-in-has.html
-  - subtest: '[ .red:has(#descendant:not(.a .b)) ] #child.classList.remove(''a'')
-      : check #has_scope color'
-    test: not-pseudo-containing-complex-in-has.html
-  - subtest: '[ .red:has(#descendant:not(.a .b)) ] #has_scope.classList.remove(''red'')
-      : check matches (false)'
-    test: not-pseudo-containing-complex-in-has.html
-  - subtest: '[ .green:has(#descendant:not(.c ~ .d .e)) ] #has_scope.classList.add(''green'')
-      : check matches (true)'
-    test: not-pseudo-containing-complex-in-has.html
-  - subtest: '[ .green:has(#descendant:not(.c ~ .d .e)) ] #has_scope.classList.add(''green'')
-      : check #has_scope color'
-    test: not-pseudo-containing-complex-in-has.html
-  - subtest: '[ .green:has(#descendant:not(.c ~ .d .e)) ] #parent_previous.classList.add(''c'')
-      : check matches (false)'
-    test: not-pseudo-containing-complex-in-has.html
-  - subtest: '[ .green:has(#descendant:not(.c ~ .d .e)) ] #parent_previous.classList.remove(''c'')
-      : check matches (true)'
-    test: not-pseudo-containing-complex-in-has.html
-  - subtest: '[ .green:has(#descendant:not(.c ~ .d .e)) ] #parent_previous.classList.remove(''c'')
-      : check #has_scope color'
-    test: not-pseudo-containing-complex-in-has.html
-  - subtest: '[ .green:has(#descendant:not(.c ~ .d .e)) ] #previous.classList.add(''c'')
-      : check matches (false)'
-    test: not-pseudo-containing-complex-in-has.html
-  - subtest: '[ .green:has(#descendant:not(.c ~ .d .e)) ] #previous.classList.remove(''c'')
-      : check matches (true)'
-    test: not-pseudo-containing-complex-in-has.html
-  - subtest: '[ .green:has(#descendant:not(.c ~ .d .e)) ] #previous.classList.remove(''c'')
-      : check #has_scope color'
-    test: not-pseudo-containing-complex-in-has.html
-  - subtest: '[ .green:has(#descendant:not(.c ~ .d .e)) ] #child_previous.classList.add(''c'')
-      : check matches (false)'
-    test: not-pseudo-containing-complex-in-has.html
-  - subtest: '[ .green:has(#descendant:not(.c ~ .d .e)) ] #child_previous.classList.remove(''c'')
-      : check matches (true)'
-    test: not-pseudo-containing-complex-in-has.html
-  - subtest: '[ .green:has(#descendant:not(.c ~ .d .e)) ] #child_previous.classList.remove(''c'')
-      : check #has_scope color'
-    test: not-pseudo-containing-complex-in-has.html
-  - subtest: '[ .green:has(#descendant:not(.c ~ .d .e)) ] #has_scope.classList.remove(''green'')
-      : check matches (false)'
-    test: not-pseudo-containing-complex-in-has.html
-  - subtest: '[ .blue:has(~ #indirect_next:not(.f ~ .g)) ] #has_scope.classList.add(''blue'')
-      : check matches (true)'
-    test: not-pseudo-containing-complex-in-has.html
-  - subtest: '[ .blue:has(~ #indirect_next:not(.f ~ .g)) ] #has_scope.classList.add(''blue'')
-      : check #has_scope color'
-    test: not-pseudo-containing-complex-in-has.html
-  - subtest: '[ .blue:has(~ #indirect_next:not(.f ~ .g)) ] #previous.classList.add(''f'')
-      : check matches (false)'
-    test: not-pseudo-containing-complex-in-has.html
-  - subtest: '[ .blue:has(~ #indirect_next:not(.f ~ .g)) ] #previous.classList.remove(''f'')
-      : check matches (true)'
-    test: not-pseudo-containing-complex-in-has.html
-  - subtest: '[ .blue:has(~ #indirect_next:not(.f ~ .g)) ] #previous.classList.remove(''f'')
-      : check #has_scope color'
-    test: not-pseudo-containing-complex-in-has.html
-  - subtest: '[ .blue:has(~ #indirect_next:not(.f ~ .g)) ] #has_scope.classList.add(''f'')
-      : check matches (false)'
-    test: not-pseudo-containing-complex-in-has.html
-  - subtest: '[ .blue:has(~ #indirect_next:not(.f ~ .g)) ] #has_scope.classList.remove(''f'')
-      : check matches (true)'
-    test: not-pseudo-containing-complex-in-has.html
-  - subtest: '[ .blue:has(~ #indirect_next:not(.f ~ .g)) ] #has_scope.classList.remove(''f'')
-      : check #has_scope color'
-    test: not-pseudo-containing-complex-in-has.html
-  - subtest: '[ .blue:has(~ #indirect_next:not(.f ~ .g)) ] #direct_next.classList.add(''f'')
-      : check matches (false)'
-    test: not-pseudo-containing-complex-in-has.html
-  - subtest: '[ .blue:has(~ #indirect_next:not(.f ~ .g)) ] #direct_next.classList.remove(''f'')
-      : check matches (true)'
-    test: not-pseudo-containing-complex-in-has.html
-  - subtest: '[ .blue:has(~ #indirect_next:not(.f ~ .g)) ] #direct_next.classList.remove(''f'')
-      : check #has_scope color'
-    test: not-pseudo-containing-complex-in-has.html
-  - subtest: '[ .blue:has(~ #indirect_next:not(.f ~ .g)) ] #has_scope.classList.remove(''blue'')
-      : check matches (false)'
-    test: not-pseudo-containing-complex-in-has.html
-  - subtest: '[ .yellow:has(~ #indirect_next:not(.h .i)) ] #has_scope.classList.add(''yellow'')
-      : check matches (true)'
-    test: not-pseudo-containing-complex-in-has.html
-  - subtest: '[ .yellow:has(~ #indirect_next:not(.h .i)) ] #has_scope.classList.add(''yellow'')
-      : check #has_scope color'
-    test: not-pseudo-containing-complex-in-has.html
-  - subtest: '[ .yellow:has(~ #indirect_next:not(.h .i)) ] #parent.classList.add(''h'')
-      : check matches (false)'
-    test: not-pseudo-containing-complex-in-has.html
-  - subtest: '[ .yellow:has(~ #indirect_next:not(.h .i)) ] #parent.classList.remove(''h'')
-      : check matches (true)'
-    test: not-pseudo-containing-complex-in-has.html
-  - subtest: '[ .yellow:has(~ #indirect_next:not(.h .i)) ] #parent.classList.remove(''h'')
-      : check #has_scope color'
-    test: not-pseudo-containing-complex-in-has.html
-  - subtest: '[ .yellow:has(~ #indirect_next:not(.h .i)) ] #has_scope.classList.remove(''yellow'')
-      : check matches (false)'
-    test: not-pseudo-containing-complex-in-has.html
-  - subtest: '[ .purple:has(~ #indirect_next:not(.j ~ .k .l)) ] #has_scope.classList.add(''purple'')
-      : check matches (true)'
-    test: not-pseudo-containing-complex-in-has.html
-  - subtest: '[ .purple:has(~ #indirect_next:not(.j ~ .k .l)) ] #has_scope.classList.add(''purple'')
-      : check #has_scope color'
-    test: not-pseudo-containing-complex-in-has.html
-  - subtest: '[ .purple:has(~ #indirect_next:not(.j ~ .k .l)) ] #parent_previous.classList.add(''j'')
-      : check matches (false)'
-    test: not-pseudo-containing-complex-in-has.html
-  - subtest: '[ .purple:has(~ #indirect_next:not(.j ~ .k .l)) ] #parent_previous.classList.remove(''j'')
-      : check matches (true)'
-    test: not-pseudo-containing-complex-in-has.html
-  - subtest: '[ .purple:has(~ #indirect_next:not(.j ~ .k .l)) ] #parent_previous.classList.remove(''j'')
-      : check #has_scope color'
-    test: not-pseudo-containing-complex-in-has.html
-  - subtest: '[ .purple:has(~ #indirect_next:not(.j ~ .k .l)) ] #has_scope.classList.remove(''purple'')
-      : check matches (false)'
-    test: not-pseudo-containing-complex-in-has.html
-  - subtest: '[ .orange:has(#descendant:not(.m:not(.n) .o)) ] #has_scope.classList.add(''orange'')
-      : check matches (true)'
-    test: not-pseudo-containing-complex-in-has.html
-  - subtest: '[ .orange:has(#descendant:not(.m:not(.n) .o)) ] #has_scope.classList.add(''orange'')
-      : check #has_scope color'
-    test: not-pseudo-containing-complex-in-has.html
-  - subtest: '[ .orange:has(#descendant:not(.m:not(.n) .o)) ] #parent.classList.add(''m'')
-      : check matches (false)'
-    test: not-pseudo-containing-complex-in-has.html
-  - subtest: '[ .orange:has(#descendant:not(.m:not(.n) .o)) ] #parent.classList.add(''n'')
-      : check matches (true)'
-    test: not-pseudo-containing-complex-in-has.html
-  - subtest: '[ .orange:has(#descendant:not(.m:not(.n) .o)) ] #parent.classList.add(''n'')
-      : check #has_scope color'
-    test: not-pseudo-containing-complex-in-has.html
-  - subtest: '[ .orange:has(#descendant:not(.m:not(.n) .o)) ] #parent.classList.remove(''n'')
-      : check matches (false)'
-    test: not-pseudo-containing-complex-in-has.html
-  - subtest: '[ .orange:has(#descendant:not(.m:not(.n) .o)) ] #parent.classList.remove(''m'')
-      : check matches (true)'
-    test: not-pseudo-containing-complex-in-has.html
-  - subtest: '[ .orange:has(#descendant:not(.m:not(.n) .o)) ] #parent.classList.remove(''m'')
-      : check #has_scope color'
-    test: not-pseudo-containing-complex-in-has.html
-  - subtest: '[ .orange:has(#descendant:not(.m:not(.n) .o)) ] #has_scope.classList.add(''m'')
-      : check matches (false)'
-    test: not-pseudo-containing-complex-in-has.html
-  - subtest: '[ .orange:has(#descendant:not(.m:not(.n) .o)) ] #has_scope.classList.add(''n'')
-      : check matches (true)'
-    test: not-pseudo-containing-complex-in-has.html
-  - subtest: '[ .orange:has(#descendant:not(.m:not(.n) .o)) ] #has_scope.classList.add(''n'')
-      : check #has_scope color'
-    test: not-pseudo-containing-complex-in-has.html
-  - subtest: '[ .orange:has(#descendant:not(.m:not(.n) .o)) ] #has_scope.classList.remove(''n'')
-      : check matches (false)'
-    test: not-pseudo-containing-complex-in-has.html
-  - subtest: '[ .orange:has(#descendant:not(.m:not(.n) .o)) ] #has_scope.classList.remove(''m'')
-      : check matches (true)'
-    test: not-pseudo-containing-complex-in-has.html
-  - subtest: '[ .orange:has(#descendant:not(.m:not(.n) .o)) ] #has_scope.classList.remove(''m'')
-      : check #has_scope color'
-    test: not-pseudo-containing-complex-in-has.html
-  - subtest: '[ .orange:has(#descendant:not(.m:not(.n) .o)) ] #child.classList.add(''m'')
-      : check matches (false)'
-    test: not-pseudo-containing-complex-in-has.html
-  - subtest: '[ .orange:has(#descendant:not(.m:not(.n) .o)) ] #child.classList.add(''n'')
-      : check matches (true)'
-    test: not-pseudo-containing-complex-in-has.html
-  - subtest: '[ .orange:has(#descendant:not(.m:not(.n) .o)) ] #child.classList.add(''n'')
-      : check #has_scope color'
-    test: not-pseudo-containing-complex-in-has.html
-  - subtest: '[ .orange:has(#descendant:not(.m:not(.n) .o)) ] #child.classList.remove(''n'')
-      : check matches (false)'
-    test: not-pseudo-containing-complex-in-has.html
-  - subtest: '[ .orange:has(#descendant:not(.m:not(.n) .o)) ] #child.classList.remove(''m'')
-      : check matches (true)'
-    test: not-pseudo-containing-complex-in-has.html
-  - subtest: '[ .orange:has(#descendant:not(.m:not(.n) .o)) ] #child.classList.remove(''m'')
-      : check #has_scope color'
-    test: not-pseudo-containing-complex-in-has.html
-  - subtest: '[ .orange:has(#descendant:not(.m:not(.n) .o)) ] #has_scope.classList.remove(''orange'')
-      : check matches (false)'
-    test: not-pseudo-containing-complex-in-has.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1771020
-- product: chrome
-  results:
-  - test: modal-pseudo-class-in-has.html
-  url: https://crbug.com/1325861
-- product: firefox
-  results:
-  - subtest: 'CSS Selectors Invalidation: :target pseudo-class in :has() argument'
-    test: target-pseudo-in-has.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1775494
-- product: safari
-  results:
-  - subtest: '[ .green:has(#descendant:is(.p + .c_has_scope ~ .d .e)) ] insert/remove
-      .invalid before #parent_previous) : (insertion) check #has_scope color'
-    test: is-pseudo-containing-complex-in-has.html
-  - subtest: '[ .green:has(#descendant:is(.p + .c_has_scope ~ .d .e)) ] insert/remove
-      .invalid before #previous) : (insertion) check #has_scope color'
-    test: is-pseudo-containing-complex-in-has.html
-  - subtest: '[ .purple:has(~ #indirect_next:is(.p + .j_has_scope ~ .k .l)) ] insert/remove
-      .invalid before #parent_previous) : (insertion) check #has_scope color'
-    test: is-pseudo-containing-complex-in-has.html
-  url: https://bugs.webkit.org/show_bug.cgi?id=242190
-- product: firefox
-  results:
-  - subtest: 'CSS Selectors Invalidation: subject :has() invalidation with display:
-      none anchor element'
-    test: subject-has-invalidation-with-display-none-anchor-element.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1782187
-- product: firefox
-  results:
-  - subtest: 'color after inserting text and div > .descendant: div#subject.color'
-    test: has-invalidation-for-wiping-an-element.html
-  - subtest: 'color after inserting text and #child > .descendant: div#subject.color'
-    test: has-invalidation-for-wiping-an-element.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1792148
-- product: firefox
-  results:
-  - subtest: 'initial_color: div#subject.color'
-    test: has-invalidation-after-removing-non-first-element.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1796791
-- label: interop-2023-has
-  results:
-  - test: has-with-not.html
-  - test: child-indexed-pseudo-classes-in-has.html
-  - test: input-pseudo-classes-in-has.html
-  - test: subject-has-invalidation-with-display-none-anchor-element.html
-  - test: typed-child-indexed-pseudo-classes-in-has.html
-  - test: has-complexity.html
-  - test: has-in-sibling-position.html
-  - test: has-invalidation-after-removing-non-first-element.html
-  - test: empty-pseudo-in-has.html
-  - test: link-pseudo-in-has.html
-  - test: modal-pseudo-class-in-has.html
-  - test: has-in-adjacent-position.html
-  - test: has-with-pseudo-class.html
-  - test: attribute-or-elemental-selectors-in-has.html
-  - test: target-pseudo-in-has.html
-  - test: has-in-ancestor-position.html
-  - test: host-pseudo-class-in-has.html
-  - test: location-pseudo-classes-in-has.html
-  - test: is-pseudo-containing-complex-in-has.html
-  - test: not-pseudo-containing-complex-in-has.html
-  - test: has-in-parent-position.html
-  - test: has-invalidation-for-wiping-an-element.html
-  - test: has-sibling.html
-  - test: fullscreen-pseudo-class-in-has.html
-  - test: dir-pseudo-class-in-has.html
-  - test: lang-pseudo-class-in-has-document-element.html
-  - test: lang-pseudo-class-in-has-multiple-document-elements.html
-  - test: lang-pseudo-class-in-has-xhtml.xhtml
-  - test: lang-pseudo-class-in-has.html
-  - test: defined-in-has.html
-- product: chrome
-  results:
-  - subtest: Test :playing pseudo-classes
-    test: media-pseudo-classes-in-has.html
-  - subtest: Test :seeking pseudo-class
-    test: media-pseudo-classes-in-has.html
-  - subtest: Test :muted pseudo-class
-    test: media-pseudo-classes-in-has.html
-  url: https://crbug.com/1383480
-- label: interop-2023-pseudos
-  results:
-  - test: nth-child-of-class.html
-  - test: nth-child-of-has.html
-  - test: nth-child-of-in-ancestor.html
-  - test: nth-child-of-sibling.html
-  - test: nth-child-of-attr.html
-  - test: nth-child-when-ancestor-changes.html
-  - test: nth-child-when-sibling-changes.html
-  - test: nth-child-containing-ancestor.html
-  - test: nth-child-in-shadow-root.html
-  - test: nth-child-of-attr-largedom.html
-  - test: nth-child-of-class-prefix.html
-  - test: nth-last-child-of-in-is.html
-  - test: nth-last-child-of-in-shadow-root.html
-  - test: nth-last-child-when-sibling-changes.html
-  - test: nth-child-of-id-prefix.html
-  - test: nth-child-of-pseudo-class.html
-  - test: nth-last-child-containing-ancestor.html
-  - test: nth-last-child-of-id-prefix.html
-  - test: nth-last-child-of-ids.html
-  - test: nth-last-child-of-attr.html
-  - test: nth-last-child-of-class-prefix.html
-  - test: nth-last-child-of-in-ancestor.html
-  - test: nth-last-child-when-ancestor-changes.html
-  - test: nth-last-child-of-pseudo-class.html
-  - test: nth-child-of-in-is.html
-  - test: nth-child-of-ids.html
-  - test: nth-child-of-in-shadow-root.html
-  - test: nth-child-of-is.html
-  - test: nth-last-child-of-class.html
-  - test: nth-last-child-of-has.html
-  - test: nth-last-child-of-is.html
-  - test: nth-last-child-of-sibling.html
-- product: chrome
-  results:
-  - test: nth-child-when-sibling-changes.html
-  - test: nth-child-of-attr.html
-  - test: nth-child-of-in-ancestor.html
-  - test: nth-child-when-ancestor-changes.html
-  - test: nth-child-of-has.html
-  - test: nth-child-of-sibling.html
-  - test: nth-child-containing-ancestor.html
-  - test: nth-child-of-class.html
-  url: https://bugs.chromium.org/p/chromium/issues/detail?id=304163
-- product: chrome
-  results:
-  - test: lang-pseudo-class-in-has-xhtml.xhtml
-  - test: lang-pseudo-class-in-has.html
-  url: https://crbug.com/1408679
-- product: firefox
-  results:
-  - test: nth-child-of-has.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1818155
-- product: firefox
-  results:
-  - test: nth-child-of-attr.html
-  - test: nth-child-of-class.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1818151
-- product: firefox
-  results:
-  - subtest: Test status
-    test: nth-child-of-has.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=418039
-- product: firefox
-  results:
-  - test: nth-child-of-in-ancestor.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1818153
-- product: firefox
-  results:
-  - test: nth-child-of-sibling.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1818152
-- product: firefox
-  results:
-  - test: nth-child-in-shadow-root.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1818154
-- product: firefox
-  results:
-  - subtest: Test status
-    test: nth-last-child-of-has.html
-  - subtest: Test status
-    test: nth-child-of-has.html
-  - test: nth-child-of-has.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1836563
-- product: chrome
-  results:
-  - subtest: :default invalidation with input[type=checkbox] and assignment to .checked
-    test: input-pseudo-classes-in-has.html
-  url: https://crbug.com/1481040
-- product: firefox
-  results:
-  - test: host-pseudo-class-in-has.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1855753
-- product: firefox
-  results:
-  - test: has-complexity.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1853258
-- product: firefox
-  results:
-  - test: target-pseudo-in-has.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1846755
-- product: firefox
-  results:
-  - subtest: ::part():dir() invalidation
-    test: part-dir.html
-  - subtest: ::part():dir() invalidation from setAttribute
-    test: part-dir.html
-  - subtest: ::part():lang() invalidation
-    test: part-lang.html
-  - subtest: ::part():lang() invalidation from setAttribute
-    test: part-lang.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1873605
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1748399
+      results:
+        - test: has-with-pseudo-class.html
+          subtest: Before set checked on checkbox, testing subject
+        - test: has-with-pseudo-class.html
+          subtest: Unset checked on checkbox, testing subject
+        - test: has-with-pseudo-class.html
+          subtest: Reset select
+        - test: has-with-pseudo-class.html
+          subtest: Before set disabled on checkbox, testing subject
+        - test: has-with-pseudo-class.html
+          subtest: Unset disabled on checkbox, testing subject
+        - test: has-with-pseudo-class.html
+          subtest: Before set disabled on checkbox, testing subject3
+        - test: has-with-pseudo-class.html
+          subtest: Unset disabled on checkbox, testing subject3
+        - test: has-with-pseudo-class.html
+          subtest: Before set disabled on option, testing subject
+        - test: has-with-pseudo-class.html
+          subtest: Unset disabled on option, testing subject
+        - test: has-with-pseudo-class.html
+          subtest: Before set disabled on option, testing subject3
+        - test: has-with-pseudo-class.html
+          subtest: Unset disabled on option, testing subject3
+        - test: has-with-pseudo-class.html
+          subtest: Before set disabled on optgroup, testing subject
+        - test: has-with-pseudo-class.html
+          subtest: Unset disabled on optgroup, testing subject
+        - test: has-with-pseudo-class.html
+          subtest: Before set disabled on optgroup, testing subject2
+        - test: has-with-pseudo-class.html
+          subtest: Unset disabled on optgroup, testing subject2
+        - test: has-with-pseudo-class.html
+          subtest: Before set disabled on optgroup, testing subject3
+        - test: has-with-pseudo-class.html
+          subtest: Unset disabled on optgroup, testing subject3
+        - test: has-with-pseudo-class.html
+          subtest: Before set disabled on optgroup, testing subject4
+        - test: has-with-pseudo-class.html
+          subtest: Unset disabled on optgroup, testing subject4
+        - test: has-with-pseudo-class.html
+          subtest: Before setting value of text_input, testing subject
+        - test: has-with-pseudo-class.html
+          subtest: Clear value of text_input, testing subject
+        - test: has-with-pseudo-class.html
+          subtest: Before setting value of text_input, testing subject2
+        - test: has-with-pseudo-class.html
+          subtest: Clear value of text_input, testing subject2
+        - test: has-with-pseudo-class.html
+          subtest: Before setting value of text_input, testing subject3
+        - test: has-with-pseudo-class.html
+          subtest: Clear value of text_input, testing subject3
+        - test: has-with-pseudo-class.html
+          subtest: Before setting value of text_input, testing subject4
+        - test: has-with-pseudo-class.html
+          subtest: Clear value of text_input, testing subject4
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1759031
+      results:
+        - test: user-action-pseudo-classes-in-has.html
+          subtest: Invalidation with :focus, :focus-within, :focus-visible in :has()
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1763454
+      results:
+        - test: input-pseudo-classes-in-has.html
+          subtest: :checked & :indeterminate invalidation
+        - test: input-pseudo-classes-in-has.html
+          subtest: :disabled invalidation
+        - test: input-pseudo-classes-in-has.html
+          subtest: :read-only invalidation
+        - test: input-pseudo-classes-in-has.html
+          subtest: :valid invalidation
+        - test: input-pseudo-classes-in-has.html
+          subtest: :default invalidation with input[type=radio]
+        - test: input-pseudo-classes-in-has.html
+          subtest: :required invalidation
+        - test: input-pseudo-classes-in-has.html
+          subtest: :out-of-range invalidation
+        - test: input-pseudo-classes-in-has.html
+          subtest: :placeholder-shown invalidation
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1769228
+      results:
+        - test: link-pseudo-in-has.html
+          subtest: 'CSS Selectors Invalidation: :link, :visited :any-link, pseudo-class in :has() argument'
+    - product: chrome
+      url: https://crbug.com/1327113
+      results:
+        - test: modal-pseudo-class-in-has.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1770370
+      results:
+        - test: has-in-adjacent-position.html
+          subtest: add .test to previous_sibling_child
+        - test: has-in-adjacent-position.html
+          subtest: add .test to previous_sibling_descendant
+        - test: has-in-adjacent-position.html
+          subtest: add .test to subject
+        - test: has-in-adjacent-position.html
+          subtest: add .test to next_sibling
+        - test: has-in-adjacent-position.html
+          subtest: add .test to next_sibling_child
+        - test: has-in-adjacent-position.html
+          subtest: add .test to next_sibling_descendant
+        - test: has-in-adjacent-position.html
+          subtest: insert element div.test before previous_sibling_child
+        - test: has-in-adjacent-position.html
+          subtest: add the class 'test' again to the element inserted before previous_sibling_child
+        - test: has-in-adjacent-position.html
+          subtest: insert element div[test_attr] before previous_sibling_child
+        - test: has-in-adjacent-position.html
+          subtest: insert element div.test before previous_sibling_descendant
+        - test: has-in-adjacent-position.html
+          subtest: add the class 'test' again to the element inserted before previous_sibling_descendant
+        - test: has-in-adjacent-position.html
+          subtest: insert element div[test_attr] before previous_sibling_descendant
+        - test: has-in-adjacent-position.html
+          subtest: insert element div.test before next_sibling
+        - test: has-in-adjacent-position.html
+          subtest: add the class 'test' again to the element inserted before next_sibling
+        - test: has-in-adjacent-position.html
+          subtest: add the class 'test' to the element inserted again before next_sibling
+        - test: has-in-adjacent-position.html
+          subtest: insert element div[test_attr] before next_sibling
+        - test: has-in-adjacent-position.html
+          subtest: insert element div.test before next_sibling_child
+        - test: has-in-adjacent-position.html
+          subtest: add the class 'test' again to the element inserted before next_sibling_child
+        - test: has-in-adjacent-position.html
+          subtest: insert element div[test_attr] before next_sibling_child
+        - test: has-in-adjacent-position.html
+          subtest: insert element div.test before next_sibling_descendant
+        - test: has-in-adjacent-position.html
+          subtest: add the class 'test' again to the element inserted before next_sibling_descendant
+        - test: has-in-adjacent-position.html
+          subtest: insert element div[test_attr] before next_sibling_descendant
+        - test: has-in-adjacent-position.html
+          subtest: insert element div.test after previous_sibling_child
+        - test: has-in-adjacent-position.html
+          subtest: add the class 'test' again to the element inserted after previous_sibling_child
+        - test: has-in-adjacent-position.html
+          subtest: insert element div[test_attr] after previous_sibling_child
+        - test: has-in-adjacent-position.html
+          subtest: insert element div.test after previous_sibling_descendant
+        - test: has-in-adjacent-position.html
+          subtest: add the class 'test' again to the element inserted after previous_sibling_descendant
+        - test: has-in-adjacent-position.html
+          subtest: insert element div[test_attr] after previous_sibling_descendant
+        - test: has-in-adjacent-position.html
+          subtest: insert element div.test after subject
+        - test: has-in-adjacent-position.html
+          subtest: add the class 'test' again to the element inserted after subject
+        - test: has-in-adjacent-position.html
+          subtest: add the class 'test' to the element inserted again after subject
+        - test: has-in-adjacent-position.html
+          subtest: insert element div[test_attr] after subject
+        - test: has-in-adjacent-position.html
+          subtest: insert element div.test after next_sibling
+        - test: has-in-adjacent-position.html
+          subtest: add the class 'test' again to the element inserted after next_sibling
+        - test: has-in-adjacent-position.html
+          subtest: add the class 'test' to the element inserted again after next_sibling
+        - test: has-in-adjacent-position.html
+          subtest: insert element div[test_attr] after next_sibling
+        - test: has-in-adjacent-position.html
+          subtest: insert element div.test after next_sibling_child
+        - test: has-in-adjacent-position.html
+          subtest: add the class 'test' again to the element inserted after next_sibling_child
+        - test: has-in-adjacent-position.html
+          subtest: insert element div[test_attr] after next_sibling_child
+        - test: has-in-adjacent-position.html
+          subtest: insert element div.test after next_sibling_descendant
+        - test: has-in-adjacent-position.html
+          subtest: add the class 'test' again to the element inserted after next_sibling_descendant
+        - test: has-in-adjacent-position.html
+          subtest: insert element div[test_attr] after next_sibling_descendant
+        - test: has-in-adjacent-position.html
+          subtest: insert tree div>div.test before previous_sibling_child
+        - test: has-in-adjacent-position.html
+          subtest: add the class 'test' again to the element in the tree inserted before previous_sibling_child
+        - test: has-in-adjacent-position.html
+          subtest: insert element div>div[test_attr] before previous_sibling_child
+        - test: has-in-adjacent-position.html
+          subtest: insert tree div>div.test before previous_sibling_descendant
+        - test: has-in-adjacent-position.html
+          subtest: add the class 'test' again to the element in the tree inserted before previous_sibling_descendant
+        - test: has-in-adjacent-position.html
+          subtest: insert element div>div[test_attr] before previous_sibling_descendant
+        - test: has-in-adjacent-position.html
+          subtest: insert tree div>div.test before subject
+        - test: has-in-adjacent-position.html
+          subtest: add the class 'test' again to the element in the tree inserted before subject
+        - test: has-in-adjacent-position.html
+          subtest: add the class 'test' to the element in the tree inserted again before subject
+        - test: has-in-adjacent-position.html
+          subtest: insert element div>div[test_attr] before subject
+        - test: has-in-adjacent-position.html
+          subtest: insert tree div>div.test before next_sibling
+        - test: has-in-adjacent-position.html
+          subtest: add the class 'test' again to the element in the tree inserted before next_sibling
+        - test: has-in-adjacent-position.html
+          subtest: add the class 'test' to the element in the tree inserted again before next_sibling
+        - test: has-in-adjacent-position.html
+          subtest: insert element div>div[test_attr] before next_sibling
+        - test: has-in-adjacent-position.html
+          subtest: insert tree div>div.test before next_sibling_child
+        - test: has-in-adjacent-position.html
+          subtest: add the class 'test' again to the element in the tree inserted before next_sibling_child
+        - test: has-in-adjacent-position.html
+          subtest: insert element div>div[test_attr] before next_sibling_child
+        - test: has-in-adjacent-position.html
+          subtest: insert tree div>div.test before next_sibling_descendant
+        - test: has-in-adjacent-position.html
+          subtest: add the class 'test' again to the element in the tree inserted before next_sibling_descendant
+        - test: has-in-adjacent-position.html
+          subtest: insert element div>div[test_attr] before next_sibling_descendant
+        - test: has-in-adjacent-position.html
+          subtest: insert tree div>div.test after previous_sibling
+        - test: has-in-adjacent-position.html
+          subtest: add the class 'test' again to the element in the tree inserted after previous_sibling
+        - test: has-in-adjacent-position.html
+          subtest: add the class 'test' to the element in the tree inserted again after previous_sibling
+        - test: has-in-adjacent-position.html
+          subtest: insert element div>div[test_attr] after previous_sibling
+        - test: has-in-adjacent-position.html
+          subtest: insert tree div>div.test after previous_sibling_child
+        - test: has-in-adjacent-position.html
+          subtest: add the class 'test' again to the element in the tree inserted after previous_sibling_child
+        - test: has-in-adjacent-position.html
+          subtest: insert element div>div[test_attr] after previous_sibling_child
+        - test: has-in-adjacent-position.html
+          subtest: insert tree div>div.test after previous_sibling_descendant
+        - test: has-in-adjacent-position.html
+          subtest: add the class 'test' again to the element in the tree inserted after previous_sibling_descendant
+        - test: has-in-adjacent-position.html
+          subtest: insert element div>div[test_attr] after previous_sibling_descendant
+        - test: has-in-adjacent-position.html
+          subtest: insert tree div>div.test after subject
+        - test: has-in-adjacent-position.html
+          subtest: add the class 'test' again to the element in the tree inserted after subject
+        - test: has-in-adjacent-position.html
+          subtest: add the class 'test' to the element in the tree inserted again after subject
+        - test: has-in-adjacent-position.html
+          subtest: insert element div>div[test_attr] after subject
+        - test: has-in-adjacent-position.html
+          subtest: insert tree div>div.test after next_sibling
+        - test: has-in-adjacent-position.html
+          subtest: add the class 'test' again to the element in the tree inserted after next_sibling
+        - test: has-in-adjacent-position.html
+          subtest: add the class 'test' to the element in the tree inserted again after next_sibling
+        - test: has-in-adjacent-position.html
+          subtest: insert element div>div[test_attr] after next_sibling
+        - test: has-in-adjacent-position.html
+          subtest: insert tree div>div.test after next_sibling_child
+        - test: has-in-adjacent-position.html
+          subtest: add the class 'test' again to the element in the tree inserted after next_sibling_child
+        - test: has-in-adjacent-position.html
+          subtest: insert element div>div[test_attr] after next_sibling_child
+        - test: has-in-adjacent-position.html
+          subtest: insert tree div>div.test after next_sibling_descendant
+        - test: has-in-adjacent-position.html
+          subtest: add the class 'test' again to the element in the tree inserted after next_sibling_descendant
+        - test: has-in-adjacent-position.html
+          subtest: insert element div>div[test_attr] after next_sibling_descendant
+        - test: has-in-ancestor-position.html
+          subtest: add .test to subject_parent
+        - test: has-in-ancestor-position.html
+          subtest: add .test to subject
+        - test: has-in-ancestor-position.html
+          subtest: add .test to subject_child
+        - test: has-in-ancestor-position.html
+          subtest: add .test to subject_descendant
+        - test: has-in-ancestor-position.html
+          subtest: add .test to next_sibling
+        - test: has-in-ancestor-position.html
+          subtest: add .test to next_sibling_child
+        - test: has-in-ancestor-position.html
+          subtest: add .test to next_sibling_descendant
+        - test: has-in-ancestor-position.html
+          subtest: insert element div.test before subject_parent
+        - test: has-in-ancestor-position.html
+          subtest: add the class 'test' again to the element inserted before subject_parent
+        - test: has-in-ancestor-position.html
+          subtest: insert element div[test_attr] before subject_parent
+        - test: has-in-ancestor-position.html
+          subtest: insert element div.test before subject
+        - test: has-in-ancestor-position.html
+          subtest: add the class 'test' again to the element inserted before subject
+        - test: has-in-ancestor-position.html
+          subtest: insert element div[test_attr] before subject
+        - test: has-in-ancestor-position.html
+          subtest: insert element div.test before subject_child
+        - test: has-in-ancestor-position.html
+          subtest: add the class 'test' again to the element inserted before subject_child
+        - test: has-in-ancestor-position.html
+          subtest: insert element div[test_attr] before subject_child
+        - test: has-in-ancestor-position.html
+          subtest: insert element div.test before subject_descendant
+        - test: has-in-ancestor-position.html
+          subtest: add the class 'test' again to the element inserted before subject_descendant
+        - test: has-in-ancestor-position.html
+          subtest: insert element div[test_attr] before subject_descendant
+        - test: has-in-ancestor-position.html
+          subtest: insert element div.test before next_sibling
+        - test: has-in-ancestor-position.html
+          subtest: add the class 'test' again to the element inserted before next_sibling
+        - test: has-in-ancestor-position.html
+          subtest: insert element div[test_attr] before next_sibling
+        - test: has-in-ancestor-position.html
+          subtest: insert element div.test before next_sibling_child
+        - test: has-in-ancestor-position.html
+          subtest: add the class 'test' again to the element inserted before next_sibling_child
+        - test: has-in-ancestor-position.html
+          subtest: insert element div[test_attr] before next_sibling_child
+        - test: has-in-ancestor-position.html
+          subtest: insert element div.test before next_sibling_descendant
+        - test: has-in-ancestor-position.html
+          subtest: add the class 'test' again to the element inserted before next_sibling_descendant
+        - test: has-in-ancestor-position.html
+          subtest: insert element div[test_attr] before next_sibling_descendant
+        - test: has-in-ancestor-position.html
+          subtest: insert element div.test after subject_ancestor
+        - test: has-in-ancestor-position.html
+          subtest: add the class 'test' again to the element inserted after subject_ancestor
+        - test: has-in-ancestor-position.html
+          subtest: insert element div[test_attr] after subject_ancestor
+        - test: has-in-ancestor-position.html
+          subtest: insert element div.test after subject_parent
+        - test: has-in-ancestor-position.html
+          subtest: add the class 'test' again to the element inserted after subject_parent
+        - test: has-in-ancestor-position.html
+          subtest: insert element div[test_attr] after subject_parent
+        - test: has-in-ancestor-position.html
+          subtest: insert element div.test after subject
+        - test: has-in-ancestor-position.html
+          subtest: add the class 'test' again to the element inserted after subject
+        - test: has-in-ancestor-position.html
+          subtest: insert element div[test_attr] after subject
+        - test: has-in-ancestor-position.html
+          subtest: insert element div.test after subject_child
+        - test: has-in-ancestor-position.html
+          subtest: add the class 'test' again to the element inserted after subject_child
+        - test: has-in-ancestor-position.html
+          subtest: insert element div[test_attr] after subject_child
+        - test: has-in-ancestor-position.html
+          subtest: insert element div.test after subject_descendant
+        - test: has-in-ancestor-position.html
+          subtest: add the class 'test' again to the element inserted after subject_descendant
+        - test: has-in-ancestor-position.html
+          subtest: insert element div[test_attr] after subject_descendant
+        - test: has-in-ancestor-position.html
+          subtest: insert element div.test after next_sibling
+        - test: has-in-ancestor-position.html
+          subtest: add the class 'test' again to the element inserted after next_sibling
+        - test: has-in-ancestor-position.html
+          subtest: insert element div[test_attr] after next_sibling
+        - test: has-in-ancestor-position.html
+          subtest: insert element div.test after next_sibling_child
+        - test: has-in-ancestor-position.html
+          subtest: add the class 'test' again to the element inserted after next_sibling_child
+        - test: has-in-ancestor-position.html
+          subtest: insert element div[test_attr] after next_sibling_child
+        - test: has-in-ancestor-position.html
+          subtest: insert element div.test after next_sibling_descendant
+        - test: has-in-ancestor-position.html
+          subtest: add the class 'test' again to the element inserted after next_sibling_descendant
+        - test: has-in-ancestor-position.html
+          subtest: insert element div[test_attr] after next_sibling_descendant
+        - test: has-in-ancestor-position.html
+          subtest: insert tree div>div.test before subject_parent
+        - test: has-in-ancestor-position.html
+          subtest: add the class 'test' again to the element in the tree inserted before subject_parent
+        - test: has-in-ancestor-position.html
+          subtest: insert element div>div[test_attr] before subject_parent
+        - test: has-in-ancestor-position.html
+          subtest: insert tree div>div.test before subject
+        - test: has-in-ancestor-position.html
+          subtest: add the class 'test' again to the element in the tree inserted before subject
+        - test: has-in-ancestor-position.html
+          subtest: insert element div>div[test_attr] before subject
+        - test: has-in-ancestor-position.html
+          subtest: insert tree div>div.test before subject_child
+        - test: has-in-ancestor-position.html
+          subtest: add the class 'test' again to the element in the tree inserted before subject_child
+        - test: has-in-ancestor-position.html
+          subtest: insert element div>div[test_attr] before subject_child
+        - test: has-in-ancestor-position.html
+          subtest: insert tree div>div.test before subject_descendant
+        - test: has-in-ancestor-position.html
+          subtest: add the class 'test' again to the element in the tree inserted before subject_descendant
+        - test: has-in-ancestor-position.html
+          subtest: insert element div>div[test_attr] before subject_descendant
+        - test: has-in-ancestor-position.html
+          subtest: insert tree div>div.test before next_sibling
+        - test: has-in-ancestor-position.html
+          subtest: add the class 'test' again to the element in the tree inserted before next_sibling
+        - test: has-in-ancestor-position.html
+          subtest: insert element div>div[test_attr] before next_sibling
+        - test: has-in-ancestor-position.html
+          subtest: insert tree div>div.test before next_sibling_child
+        - test: has-in-ancestor-position.html
+          subtest: add the class 'test' again to the element in the tree inserted before next_sibling_child
+        - test: has-in-ancestor-position.html
+          subtest: insert element div>div[test_attr] before next_sibling_child
+        - test: has-in-ancestor-position.html
+          subtest: insert tree div>div.test before next_sibling_descendant
+        - test: has-in-ancestor-position.html
+          subtest: add the class 'test' again to the element in the tree inserted before next_sibling_descendant
+        - test: has-in-ancestor-position.html
+          subtest: insert element div>div[test_attr] before next_sibling_descendant
+        - test: has-in-ancestor-position.html
+          subtest: insert tree div>div.test after subject_ancestor
+        - test: has-in-ancestor-position.html
+          subtest: add the class 'test' again to the element in the tree inserted after subject_ancestor
+        - test: has-in-ancestor-position.html
+          subtest: insert element div>div[test_attr] after subject_ancestor
+        - test: has-in-ancestor-position.html
+          subtest: insert tree div>div.test after subject_parent
+        - test: has-in-ancestor-position.html
+          subtest: add the class 'test' again to the element in the tree inserted after subject_parent
+        - test: has-in-ancestor-position.html
+          subtest: insert element div>div[test_attr] after subject_parent
+        - test: has-in-ancestor-position.html
+          subtest: insert tree div>div.test after subject
+        - test: has-in-ancestor-position.html
+          subtest: add the class 'test' again to the element in the tree inserted after subject
+        - test: has-in-ancestor-position.html
+          subtest: insert element div>div[test_attr] after subject
+        - test: has-in-ancestor-position.html
+          subtest: insert tree div>div.test after subject_child
+        - test: has-in-ancestor-position.html
+          subtest: add the class 'test' again to the element in the tree inserted after subject_child
+        - test: has-in-ancestor-position.html
+          subtest: insert element div>div[test_attr] after subject_child
+        - test: has-in-ancestor-position.html
+          subtest: insert tree div>div.test after subject_descendant
+        - test: has-in-ancestor-position.html
+          subtest: add the class 'test' again to the element in the tree inserted after subject_descendant
+        - test: has-in-ancestor-position.html
+          subtest: insert element div>div[test_attr] after subject_descendant
+        - test: has-in-ancestor-position.html
+          subtest: insert tree div>div.test after next_sibling
+        - test: has-in-ancestor-position.html
+          subtest: add the class 'test' again to the element in the tree inserted after next_sibling
+        - test: has-in-ancestor-position.html
+          subtest: insert element div>div[test_attr] after next_sibling
+        - test: has-in-ancestor-position.html
+          subtest: insert tree div>div.test after next_sibling_child
+        - test: has-in-ancestor-position.html
+          subtest: add the class 'test' again to the element in the tree inserted after next_sibling_child
+        - test: has-in-ancestor-position.html
+          subtest: insert element div>div[test_attr] after next_sibling_child
+        - test: has-in-ancestor-position.html
+          subtest: insert tree div>div.test after next_sibling_descendant
+        - test: has-in-ancestor-position.html
+          subtest: add the class 'test' again to the element in the tree inserted after next_sibling_descendant
+        - test: has-in-ancestor-position.html
+          subtest: insert element div>div[test_attr] after next_sibling_descendant
+        - test: has-in-parent-position.html
+          subtest: add .test to subject
+        - test: has-in-parent-position.html
+          subtest: add .test to subject_child
+        - test: has-in-parent-position.html
+          subtest: add .test to subject_descendant
+        - test: has-in-parent-position.html
+          subtest: insert element div.test before subject
+        - test: has-in-parent-position.html
+          subtest: add the class 'test' again to the element inserted before subject
+        - test: has-in-parent-position.html
+          subtest: insert element div[test_attr] before subject
+        - test: has-in-parent-position.html
+          subtest: insert element div.test before subject_child
+        - test: has-in-parent-position.html
+          subtest: add the class 'test' again to the element inserted before subject_child
+        - test: has-in-parent-position.html
+          subtest: insert element div[test_attr] before subject_child
+        - test: has-in-parent-position.html
+          subtest: insert element div.test before subject_descendant
+        - test: has-in-parent-position.html
+          subtest: add the class 'test' again to the element inserted before subject_descendant
+        - test: has-in-parent-position.html
+          subtest: insert element div[test_attr] before subject_descendant
+        - test: has-in-parent-position.html
+          subtest: insert element div.test after subject_parent
+        - test: has-in-parent-position.html
+          subtest: add the class 'test' again to the element inserted after subject_parent
+        - test: has-in-parent-position.html
+          subtest: insert element div[test_attr] after subject_parent
+        - test: has-in-parent-position.html
+          subtest: insert element div.test after subject
+        - test: has-in-parent-position.html
+          subtest: add the class 'test' again to the element inserted after subject
+        - test: has-in-parent-position.html
+          subtest: insert element div[test_attr] after subject
+        - test: has-in-parent-position.html
+          subtest: insert element div.test after subject_child
+        - test: has-in-parent-position.html
+          subtest: add the class 'test' again to the element inserted after subject_child
+        - test: has-in-parent-position.html
+          subtest: insert element div[test_attr] after subject_child
+        - test: has-in-parent-position.html
+          subtest: insert element div.test after subject_descendant
+        - test: has-in-parent-position.html
+          subtest: add the class 'test' again to the element inserted after subject_descendant
+        - test: has-in-parent-position.html
+          subtest: insert element div[test_attr] after subject_descendant
+        - test: has-in-parent-position.html
+          subtest: insert tree div>div.test before subject
+        - test: has-in-parent-position.html
+          subtest: add the class 'test' again to the element in the tree inserted before subject
+        - test: has-in-parent-position.html
+          subtest: insert element div>div[test_attr] before subject
+        - test: has-in-parent-position.html
+          subtest: insert tree div>div.test before subject_child
+        - test: has-in-parent-position.html
+          subtest: add the class 'test' again to the element in the tree inserted before subject_child
+        - test: has-in-parent-position.html
+          subtest: insert element div>div[test_attr] before subject_child
+        - test: has-in-parent-position.html
+          subtest: insert tree div>div.test before subject_descendant
+        - test: has-in-parent-position.html
+          subtest: add the class 'test' again to the element in the tree inserted before subject_descendant
+        - test: has-in-parent-position.html
+          subtest: insert element div>div[test_attr] before subject_descendant
+        - test: has-in-parent-position.html
+          subtest: insert tree div>div.test after subject_parent
+        - test: has-in-parent-position.html
+          subtest: add the class 'test' again to the element in the tree inserted after subject_parent
+        - test: has-in-parent-position.html
+          subtest: insert element div>div[test_attr] after subject_parent
+        - test: has-in-parent-position.html
+          subtest: insert tree div>div.test after subject
+        - test: has-in-parent-position.html
+          subtest: add the class 'test' again to the element in the tree inserted after subject
+        - test: has-in-parent-position.html
+          subtest: insert element div>div[test_attr] after subject
+        - test: has-in-parent-position.html
+          subtest: insert tree div>div.test after subject_child
+        - test: has-in-parent-position.html
+          subtest: add the class 'test' again to the element in the tree inserted after subject_child
+        - test: has-in-parent-position.html
+          subtest: insert element div>div[test_attr] after subject_child
+        - test: has-in-parent-position.html
+          subtest: insert tree div>div.test after subject_descendant
+        - test: has-in-parent-position.html
+          subtest: add the class 'test' again to the element in the tree inserted after subject_descendant
+        - test: has-in-parent-position.html
+          subtest: insert element div>div[test_attr] after subject_descendant
+        - test: has-in-sibling-position.html
+          subtest: add .test to previous_sibling_child
+        - test: has-in-sibling-position.html
+          subtest: add .test to previous_sibling_descendant
+        - test: has-in-sibling-position.html
+          subtest: add .test to subject
+        - test: has-in-sibling-position.html
+          subtest: add .test to next_sibling
+        - test: has-in-sibling-position.html
+          subtest: add .test to next_sibling_child
+        - test: has-in-sibling-position.html
+          subtest: add .test to next_sibling_descendant
+        - test: has-in-sibling-position.html
+          subtest: insert element div.test before previous_sibling_child
+        - test: has-in-sibling-position.html
+          subtest: add the class 'test' again to the element inserted before previous_sibling_child
+        - test: has-in-sibling-position.html
+          subtest: insert element div[test_attr] before previous_sibling_child
+        - test: has-in-sibling-position.html
+          subtest: insert element div.test before previous_sibling_descendant
+        - test: has-in-sibling-position.html
+          subtest: add the class 'test' again to the element inserted before previous_sibling_descendant
+        - test: has-in-sibling-position.html
+          subtest: insert element div[test_attr] before previous_sibling_descendant
+        - test: has-in-sibling-position.html
+          subtest: insert element div.test before subject
+        - test: has-in-sibling-position.html
+          subtest: add the class 'test' again to the element inserted before subject
+        - test: has-in-sibling-position.html
+          subtest: add the class 'test' to the element inserted again before subject
+        - test: has-in-sibling-position.html
+          subtest: insert element div[test_attr] before subject
+        - test: has-in-sibling-position.html
+          subtest: insert element div.test before next_sibling
+        - test: has-in-sibling-position.html
+          subtest: add the class 'test' again to the element inserted before next_sibling
+        - test: has-in-sibling-position.html
+          subtest: add the class 'test' to the element inserted again before next_sibling
+        - test: has-in-sibling-position.html
+          subtest: insert element div[test_attr] before next_sibling
+        - test: has-in-sibling-position.html
+          subtest: insert element div.test before next_sibling_child
+        - test: has-in-sibling-position.html
+          subtest: add the class 'test' again to the element inserted before next_sibling_child
+        - test: has-in-sibling-position.html
+          subtest: insert element div[test_attr] before next_sibling_child
+        - test: has-in-sibling-position.html
+          subtest: insert element div.test before next_sibling_descendant
+        - test: has-in-sibling-position.html
+          subtest: add the class 'test' again to the element inserted before next_sibling_descendant
+        - test: has-in-sibling-position.html
+          subtest: insert element div[test_attr] before next_sibling_descendant
+        - test: has-in-sibling-position.html
+          subtest: insert element div.test after previous_sibling
+        - test: has-in-sibling-position.html
+          subtest: add the class 'test' again to the element inserted after previous_sibling
+        - test: has-in-sibling-position.html
+          subtest: add the class 'test' to the element inserted again after previous_sibling
+        - test: has-in-sibling-position.html
+          subtest: insert element div[test_attr] after previous_sibling
+        - test: has-in-sibling-position.html
+          subtest: insert element div.test after previous_sibling_child
+        - test: has-in-sibling-position.html
+          subtest: add the class 'test' again to the element inserted after previous_sibling_child
+        - test: has-in-sibling-position.html
+          subtest: insert element div[test_attr] after previous_sibling_child
+        - test: has-in-sibling-position.html
+          subtest: insert element div.test after previous_sibling_descendant
+        - test: has-in-sibling-position.html
+          subtest: add the class 'test' again to the element inserted after previous_sibling_descendant
+        - test: has-in-sibling-position.html
+          subtest: insert element div[test_attr] after previous_sibling_descendant
+        - test: has-in-sibling-position.html
+          subtest: insert element div.test after subject
+        - test: has-in-sibling-position.html
+          subtest: add the class 'test' again to the element inserted after subject
+        - test: has-in-sibling-position.html
+          subtest: add the class 'test' to the element inserted again after subject
+        - test: has-in-sibling-position.html
+          subtest: insert element div[test_attr] after subject
+        - test: has-in-sibling-position.html
+          subtest: insert element div.test after next_sibling
+        - test: has-in-sibling-position.html
+          subtest: add the class 'test' again to the element inserted after next_sibling
+        - test: has-in-sibling-position.html
+          subtest: add the class 'test' to the element inserted again after next_sibling
+        - test: has-in-sibling-position.html
+          subtest: insert element div[test_attr] after next_sibling
+        - test: has-in-sibling-position.html
+          subtest: insert element div.test after next_sibling_child
+        - test: has-in-sibling-position.html
+          subtest: add the class 'test' again to the element inserted after next_sibling_child
+        - test: has-in-sibling-position.html
+          subtest: insert element div[test_attr] after next_sibling_child
+        - test: has-in-sibling-position.html
+          subtest: insert element div.test after next_sibling_descendant
+        - test: has-in-sibling-position.html
+          subtest: add the class 'test' again to the element inserted after next_sibling_descendant
+        - test: has-in-sibling-position.html
+          subtest: insert element div[test_attr] after next_sibling_descendant
+        - test: has-in-sibling-position.html
+          subtest: insert tree div>div.test before previous_sibling
+        - test: has-in-sibling-position.html
+          subtest: add the class 'test' again to the element in the tree inserted before previous_sibling
+        - test: has-in-sibling-position.html
+          subtest: add the class 'test' to the element in the tree inserted again before previous_sibling
+        - test: has-in-sibling-position.html
+          subtest: insert element div>div[test_attr] before previous_sibling
+        - test: has-in-sibling-position.html
+          subtest: insert tree div>div.test before previous_sibling_child
+        - test: has-in-sibling-position.html
+          subtest: add the class 'test' again to the element in the tree inserted before previous_sibling_child
+        - test: has-in-sibling-position.html
+          subtest: insert element div>div[test_attr] before previous_sibling_child
+        - test: has-in-sibling-position.html
+          subtest: insert tree div>div.test before previous_sibling_descendant
+        - test: has-in-sibling-position.html
+          subtest: add the class 'test' again to the element in the tree inserted before previous_sibling_descendant
+        - test: has-in-sibling-position.html
+          subtest: insert element div>div[test_attr] before previous_sibling_descendant
+        - test: has-in-sibling-position.html
+          subtest: insert tree div>div.test before subject
+        - test: has-in-sibling-position.html
+          subtest: add the class 'test' again to the element in the tree inserted before subject
+        - test: has-in-sibling-position.html
+          subtest: add the class 'test' to the element in the tree inserted again before subject
+        - test: has-in-sibling-position.html
+          subtest: insert element div>div[test_attr] before subject
+        - test: has-in-sibling-position.html
+          subtest: insert tree div>div.test before next_sibling
+        - test: has-in-sibling-position.html
+          subtest: add the class 'test' again to the element in the tree inserted before next_sibling
+        - test: has-in-sibling-position.html
+          subtest: add the class 'test' to the element in the tree inserted again before next_sibling
+        - test: has-in-sibling-position.html
+          subtest: insert element div>div[test_attr] before next_sibling
+        - test: has-in-sibling-position.html
+          subtest: insert tree div>div.test before next_sibling_child
+        - test: has-in-sibling-position.html
+          subtest: add the class 'test' again to the element in the tree inserted before next_sibling_child
+        - test: has-in-sibling-position.html
+          subtest: insert element div>div[test_attr] before next_sibling_child
+        - test: has-in-sibling-position.html
+          subtest: insert tree div>div.test before next_sibling_descendant
+        - test: has-in-sibling-position.html
+          subtest: add the class 'test' again to the element in the tree inserted before next_sibling_descendant
+        - test: has-in-sibling-position.html
+          subtest: insert element div>div[test_attr] before next_sibling_descendant
+        - test: has-in-sibling-position.html
+          subtest: insert tree div>div.test after previous_sibling
+        - test: has-in-sibling-position.html
+          subtest: add the class 'test' again to the element in the tree inserted after previous_sibling
+        - test: has-in-sibling-position.html
+          subtest: add the class 'test' to the element in the tree inserted again after previous_sibling
+        - test: has-in-sibling-position.html
+          subtest: insert element div>div[test_attr] after previous_sibling
+        - test: has-in-sibling-position.html
+          subtest: insert tree div>div.test after previous_sibling_child
+        - test: has-in-sibling-position.html
+          subtest: add the class 'test' again to the element in the tree inserted after previous_sibling_child
+        - test: has-in-sibling-position.html
+          subtest: insert element div>div[test_attr] after previous_sibling_child
+        - test: has-in-sibling-position.html
+          subtest: insert tree div>div.test after previous_sibling_descendant
+        - test: has-in-sibling-position.html
+          subtest: add the class 'test' again to the element in the tree inserted after previous_sibling_descendant
+        - test: has-in-sibling-position.html
+          subtest: insert element div>div[test_attr] after previous_sibling_descendant
+        - test: has-in-sibling-position.html
+          subtest: insert tree div>div.test after subject
+        - test: has-in-sibling-position.html
+          subtest: add the class 'test' again to the element in the tree inserted after subject
+        - test: has-in-sibling-position.html
+          subtest: add the class 'test' to the element in the tree inserted again after subject
+        - test: has-in-sibling-position.html
+          subtest: insert element div>div[test_attr] after subject
+        - test: has-in-sibling-position.html
+          subtest: insert tree div>div.test after next_sibling
+        - test: has-in-sibling-position.html
+          subtest: add the class 'test' again to the element in the tree inserted after next_sibling
+        - test: has-in-sibling-position.html
+          subtest: add the class 'test' to the element in the tree inserted again after next_sibling
+        - test: has-in-sibling-position.html
+          subtest: insert element div>div[test_attr] after next_sibling
+        - test: has-in-sibling-position.html
+          subtest: insert tree div>div.test after next_sibling_child
+        - test: has-in-sibling-position.html
+          subtest: add the class 'test' again to the element in the tree inserted after next_sibling_child
+        - test: has-in-sibling-position.html
+          subtest: insert element div>div[test_attr] after next_sibling_child
+        - test: has-in-sibling-position.html
+          subtest: insert tree div>div.test after next_sibling_descendant
+        - test: has-in-sibling-position.html
+          subtest: add the class 'test' again to the element in the tree inserted after next_sibling_descendant
+        - test: has-in-sibling-position.html
+          subtest: insert element div>div[test_attr] after next_sibling_descendant
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1771020
+      results:
+        - test: is-pseudo-containing-complex-in-has.html
+          subtest: '[ .red:has(#descendant:is(.a .b)) ] #has_scope.classList.add(''red'') : check matches (false)'
+        - test: is-pseudo-containing-complex-in-has.html
+          subtest: '[ .red:has(#descendant:is(.a .b)) ] #parent.classList.remove(''a'') : check matches (false)'
+        - test: is-pseudo-containing-complex-in-has.html
+          subtest: '[ .red:has(#descendant:is(.a .b)) ] #has_scope.classList.remove(''a'') : check matches (false)'
+        - test: is-pseudo-containing-complex-in-has.html
+          subtest: '[ .red:has(#descendant:is(.a .b)) ] #child.classList.remove(''a'') : check matches (false)'
+        - test: is-pseudo-containing-complex-in-has.html
+          subtest: '[ .red:has(#descendant:is(.a .b)) ] #has_scope.classList.remove(''red'') : check matches (false)'
+        - test: is-pseudo-containing-complex-in-has.html
+          subtest: '[ .green:has(#descendant:is(.c ~ .d .e)) ] #has_scope.classList.add(''green'') : check matches (false)'
+        - test: is-pseudo-containing-complex-in-has.html
+          subtest: '[ .green:has(#descendant:is(.c ~ .d .e)) ] #parent_previous.classList.remove(''c'') : check matches (false)'
+        - test: is-pseudo-containing-complex-in-has.html
+          subtest: '[ .green:has(#descendant:is(.c ~ .d .e)) ] #previous.classList.remove(''c'') : check matches (false)'
+        - test: is-pseudo-containing-complex-in-has.html
+          subtest: '[ .green:has(#descendant:is(.c ~ .d .e)) ] #child_previous.classList.remove(''c'') : check matches (false)'
+        - test: is-pseudo-containing-complex-in-has.html
+          subtest: '[ .green:has(#descendant:is(.c ~ .d .e)) ] #has_scope.classList.remove(''green'') : check matches (false)'
+        - test: is-pseudo-containing-complex-in-has.html
+          subtest: '[ .blue:has(~ #indirect_next:is(.f ~ .g)) ] #has_scope.classList.add(''blue'') : check matches (false)'
+        - test: is-pseudo-containing-complex-in-has.html
+          subtest: '[ .blue:has(~ #indirect_next:is(.f ~ .g)) ] #previous.classList.remove(''f'') : check matches (false)'
+        - test: is-pseudo-containing-complex-in-has.html
+          subtest: '[ .blue:has(~ #indirect_next:is(.f ~ .g)) ] #has_scope.classList.remove(''f'') : check matches (false)'
+        - test: is-pseudo-containing-complex-in-has.html
+          subtest: '[ .blue:has(~ #indirect_next:is(.f ~ .g)) ] #direct_next.classList.remove(''f'') : check matches (false)'
+        - test: is-pseudo-containing-complex-in-has.html
+          subtest: '[ .blue:has(~ #indirect_next:is(.f ~ .g)) ] #has_scope.classList.remove(''blue'') : check matches (false)'
+        - test: is-pseudo-containing-complex-in-has.html
+          subtest: '[ .yellow:has(~ #indirect_next:is(.h .i)) ] #has_scope.classList.add(''yellow'') : check matches (false)'
+        - test: is-pseudo-containing-complex-in-has.html
+          subtest: '[ .yellow:has(~ #indirect_next:is(.h .i)) ] #parent.classList.remove(''h'') : check matches (false)'
+        - test: is-pseudo-containing-complex-in-has.html
+          subtest: '[ .yellow:has(~ #indirect_next:is(.h .i)) ] #has_scope.classList.remove(''yellow'') : check matches (false)'
+        - test: is-pseudo-containing-complex-in-has.html
+          subtest: '[ .purple:has(~ #indirect_next:is(.j ~ .k .l)) ] #has_scope.classList.add(''purple'') : check matches (false)'
+        - test: is-pseudo-containing-complex-in-has.html
+          subtest: '[ .purple:has(~ #indirect_next:is(.j ~ .k .l)) ] #parent_previous.classList.remove(''j'') : check matches (false)'
+        - test: is-pseudo-containing-complex-in-has.html
+          subtest: '[ .purple:has(~ #indirect_next:is(.j ~ .k .l)) ] #has_scope.classList.remove(''purple'') : check matches (false)'
+        - test: is-pseudo-containing-complex-in-has.html
+          subtest: '[ .orange:has(#descendant:is(:is(.m, .n) .o)) ] #has_scope.classList.add(''orange'') : check matches (false)'
+        - test: is-pseudo-containing-complex-in-has.html
+          subtest: '[ .orange:has(#descendant:is(:is(.m, .n) .o)) ] #parent.classList.remove(''m'') : check matches (false)'
+        - test: is-pseudo-containing-complex-in-has.html
+          subtest: '[ .orange:has(#descendant:is(:is(.m, .n) .o)) ] #parent.classList.remove(''n'') : check matches (false)'
+        - test: is-pseudo-containing-complex-in-has.html
+          subtest: '[ .orange:has(#descendant:is(:is(.m, .n) .o)) ] #has_scope.classList.remove(''m'') : check matches (false)'
+        - test: is-pseudo-containing-complex-in-has.html
+          subtest: '[ .orange:has(#descendant:is(:is(.m, .n) .o)) ] #has_scope.classList.remove(''n'') : check matches (false)'
+        - test: is-pseudo-containing-complex-in-has.html
+          subtest: '[ .orange:has(#descendant:is(:is(.m, .n) .o)) ] #child.classList.remove(''m'') : check matches (false)'
+        - test: is-pseudo-containing-complex-in-has.html
+          subtest: '[ .orange:has(#descendant:is(:is(.m, .n) .o)) ] #child.classList.remove(''n'') : check matches (false)'
+        - test: is-pseudo-containing-complex-in-has.html
+          subtest: '[ .orange:has(#descendant:is(:is(.m, .n) .o)) ] #has_scope.classList.remove(''orange'') : check matches (false)'
+        - test: not-pseudo-containing-complex-in-has.html
+          subtest: '[ .red:has(#descendant:not(.a .b)) ] #has_scope.classList.add(''red'') : check matches (true)'
+        - test: not-pseudo-containing-complex-in-has.html
+          subtest: '[ .red:has(#descendant:not(.a .b)) ] #has_scope.classList.add(''red'') : check #has_scope color'
+        - test: not-pseudo-containing-complex-in-has.html
+          subtest: '[ .red:has(#descendant:not(.a .b)) ] #parent.classList.add(''a'') : check matches (false)'
+        - test: not-pseudo-containing-complex-in-has.html
+          subtest: '[ .red:has(#descendant:not(.a .b)) ] #parent.classList.remove(''a'') : check matches (true)'
+        - test: not-pseudo-containing-complex-in-has.html
+          subtest: '[ .red:has(#descendant:not(.a .b)) ] #parent.classList.remove(''a'') : check #has_scope color'
+        - test: not-pseudo-containing-complex-in-has.html
+          subtest: '[ .red:has(#descendant:not(.a .b)) ] #has_scope.classList.add(''a'') : check matches (false)'
+        - test: not-pseudo-containing-complex-in-has.html
+          subtest: '[ .red:has(#descendant:not(.a .b)) ] #has_scope.classList.remove(''a'') : check matches (true)'
+        - test: not-pseudo-containing-complex-in-has.html
+          subtest: '[ .red:has(#descendant:not(.a .b)) ] #has_scope.classList.remove(''a'') : check #has_scope color'
+        - test: not-pseudo-containing-complex-in-has.html
+          subtest: '[ .red:has(#descendant:not(.a .b)) ] #child.classList.add(''a'') : check matches (false)'
+        - test: not-pseudo-containing-complex-in-has.html
+          subtest: '[ .red:has(#descendant:not(.a .b)) ] #child.classList.remove(''a'') : check matches (true)'
+        - test: not-pseudo-containing-complex-in-has.html
+          subtest: '[ .red:has(#descendant:not(.a .b)) ] #child.classList.remove(''a'') : check #has_scope color'
+        - test: not-pseudo-containing-complex-in-has.html
+          subtest: '[ .red:has(#descendant:not(.a .b)) ] #has_scope.classList.remove(''red'') : check matches (false)'
+        - test: not-pseudo-containing-complex-in-has.html
+          subtest: '[ .green:has(#descendant:not(.c ~ .d .e)) ] #has_scope.classList.add(''green'') : check matches (true)'
+        - test: not-pseudo-containing-complex-in-has.html
+          subtest: '[ .green:has(#descendant:not(.c ~ .d .e)) ] #has_scope.classList.add(''green'') : check #has_scope color'
+        - test: not-pseudo-containing-complex-in-has.html
+          subtest: '[ .green:has(#descendant:not(.c ~ .d .e)) ] #parent_previous.classList.add(''c'') : check matches (false)'
+        - test: not-pseudo-containing-complex-in-has.html
+          subtest: '[ .green:has(#descendant:not(.c ~ .d .e)) ] #parent_previous.classList.remove(''c'') : check matches (true)'
+        - test: not-pseudo-containing-complex-in-has.html
+          subtest: '[ .green:has(#descendant:not(.c ~ .d .e)) ] #parent_previous.classList.remove(''c'') : check #has_scope color'
+        - test: not-pseudo-containing-complex-in-has.html
+          subtest: '[ .green:has(#descendant:not(.c ~ .d .e)) ] #previous.classList.add(''c'') : check matches (false)'
+        - test: not-pseudo-containing-complex-in-has.html
+          subtest: '[ .green:has(#descendant:not(.c ~ .d .e)) ] #previous.classList.remove(''c'') : check matches (true)'
+        - test: not-pseudo-containing-complex-in-has.html
+          subtest: '[ .green:has(#descendant:not(.c ~ .d .e)) ] #previous.classList.remove(''c'') : check #has_scope color'
+        - test: not-pseudo-containing-complex-in-has.html
+          subtest: '[ .green:has(#descendant:not(.c ~ .d .e)) ] #child_previous.classList.add(''c'') : check matches (false)'
+        - test: not-pseudo-containing-complex-in-has.html
+          subtest: '[ .green:has(#descendant:not(.c ~ .d .e)) ] #child_previous.classList.remove(''c'') : check matches (true)'
+        - test: not-pseudo-containing-complex-in-has.html
+          subtest: '[ .green:has(#descendant:not(.c ~ .d .e)) ] #child_previous.classList.remove(''c'') : check #has_scope color'
+        - test: not-pseudo-containing-complex-in-has.html
+          subtest: '[ .green:has(#descendant:not(.c ~ .d .e)) ] #has_scope.classList.remove(''green'') : check matches (false)'
+        - test: not-pseudo-containing-complex-in-has.html
+          subtest: '[ .blue:has(~ #indirect_next:not(.f ~ .g)) ] #has_scope.classList.add(''blue'') : check matches (true)'
+        - test: not-pseudo-containing-complex-in-has.html
+          subtest: '[ .blue:has(~ #indirect_next:not(.f ~ .g)) ] #has_scope.classList.add(''blue'') : check #has_scope color'
+        - test: not-pseudo-containing-complex-in-has.html
+          subtest: '[ .blue:has(~ #indirect_next:not(.f ~ .g)) ] #previous.classList.add(''f'') : check matches (false)'
+        - test: not-pseudo-containing-complex-in-has.html
+          subtest: '[ .blue:has(~ #indirect_next:not(.f ~ .g)) ] #previous.classList.remove(''f'') : check matches (true)'
+        - test: not-pseudo-containing-complex-in-has.html
+          subtest: '[ .blue:has(~ #indirect_next:not(.f ~ .g)) ] #previous.classList.remove(''f'') : check #has_scope color'
+        - test: not-pseudo-containing-complex-in-has.html
+          subtest: '[ .blue:has(~ #indirect_next:not(.f ~ .g)) ] #has_scope.classList.add(''f'') : check matches (false)'
+        - test: not-pseudo-containing-complex-in-has.html
+          subtest: '[ .blue:has(~ #indirect_next:not(.f ~ .g)) ] #has_scope.classList.remove(''f'') : check matches (true)'
+        - test: not-pseudo-containing-complex-in-has.html
+          subtest: '[ .blue:has(~ #indirect_next:not(.f ~ .g)) ] #has_scope.classList.remove(''f'') : check #has_scope color'
+        - test: not-pseudo-containing-complex-in-has.html
+          subtest: '[ .blue:has(~ #indirect_next:not(.f ~ .g)) ] #direct_next.classList.add(''f'') : check matches (false)'
+        - test: not-pseudo-containing-complex-in-has.html
+          subtest: '[ .blue:has(~ #indirect_next:not(.f ~ .g)) ] #direct_next.classList.remove(''f'') : check matches (true)'
+        - test: not-pseudo-containing-complex-in-has.html
+          subtest: '[ .blue:has(~ #indirect_next:not(.f ~ .g)) ] #direct_next.classList.remove(''f'') : check #has_scope color'
+        - test: not-pseudo-containing-complex-in-has.html
+          subtest: '[ .blue:has(~ #indirect_next:not(.f ~ .g)) ] #has_scope.classList.remove(''blue'') : check matches (false)'
+        - test: not-pseudo-containing-complex-in-has.html
+          subtest: '[ .yellow:has(~ #indirect_next:not(.h .i)) ] #has_scope.classList.add(''yellow'') : check matches (true)'
+        - test: not-pseudo-containing-complex-in-has.html
+          subtest: '[ .yellow:has(~ #indirect_next:not(.h .i)) ] #has_scope.classList.add(''yellow'') : check #has_scope color'
+        - test: not-pseudo-containing-complex-in-has.html
+          subtest: '[ .yellow:has(~ #indirect_next:not(.h .i)) ] #parent.classList.add(''h'') : check matches (false)'
+        - test: not-pseudo-containing-complex-in-has.html
+          subtest: '[ .yellow:has(~ #indirect_next:not(.h .i)) ] #parent.classList.remove(''h'') : check matches (true)'
+        - test: not-pseudo-containing-complex-in-has.html
+          subtest: '[ .yellow:has(~ #indirect_next:not(.h .i)) ] #parent.classList.remove(''h'') : check #has_scope color'
+        - test: not-pseudo-containing-complex-in-has.html
+          subtest: '[ .yellow:has(~ #indirect_next:not(.h .i)) ] #has_scope.classList.remove(''yellow'') : check matches (false)'
+        - test: not-pseudo-containing-complex-in-has.html
+          subtest: '[ .purple:has(~ #indirect_next:not(.j ~ .k .l)) ] #has_scope.classList.add(''purple'') : check matches (true)'
+        - test: not-pseudo-containing-complex-in-has.html
+          subtest: '[ .purple:has(~ #indirect_next:not(.j ~ .k .l)) ] #has_scope.classList.add(''purple'') : check #has_scope color'
+        - test: not-pseudo-containing-complex-in-has.html
+          subtest: '[ .purple:has(~ #indirect_next:not(.j ~ .k .l)) ] #parent_previous.classList.add(''j'') : check matches (false)'
+        - test: not-pseudo-containing-complex-in-has.html
+          subtest: '[ .purple:has(~ #indirect_next:not(.j ~ .k .l)) ] #parent_previous.classList.remove(''j'') : check matches (true)'
+        - test: not-pseudo-containing-complex-in-has.html
+          subtest: '[ .purple:has(~ #indirect_next:not(.j ~ .k .l)) ] #parent_previous.classList.remove(''j'') : check #has_scope color'
+        - test: not-pseudo-containing-complex-in-has.html
+          subtest: '[ .purple:has(~ #indirect_next:not(.j ~ .k .l)) ] #has_scope.classList.remove(''purple'') : check matches (false)'
+        - test: not-pseudo-containing-complex-in-has.html
+          subtest: '[ .orange:has(#descendant:not(.m:not(.n) .o)) ] #has_scope.classList.add(''orange'') : check matches (true)'
+        - test: not-pseudo-containing-complex-in-has.html
+          subtest: '[ .orange:has(#descendant:not(.m:not(.n) .o)) ] #has_scope.classList.add(''orange'') : check #has_scope color'
+        - test: not-pseudo-containing-complex-in-has.html
+          subtest: '[ .orange:has(#descendant:not(.m:not(.n) .o)) ] #parent.classList.add(''m'') : check matches (false)'
+        - test: not-pseudo-containing-complex-in-has.html
+          subtest: '[ .orange:has(#descendant:not(.m:not(.n) .o)) ] #parent.classList.add(''n'') : check matches (true)'
+        - test: not-pseudo-containing-complex-in-has.html
+          subtest: '[ .orange:has(#descendant:not(.m:not(.n) .o)) ] #parent.classList.add(''n'') : check #has_scope color'
+        - test: not-pseudo-containing-complex-in-has.html
+          subtest: '[ .orange:has(#descendant:not(.m:not(.n) .o)) ] #parent.classList.remove(''n'') : check matches (false)'
+        - test: not-pseudo-containing-complex-in-has.html
+          subtest: '[ .orange:has(#descendant:not(.m:not(.n) .o)) ] #parent.classList.remove(''m'') : check matches (true)'
+        - test: not-pseudo-containing-complex-in-has.html
+          subtest: '[ .orange:has(#descendant:not(.m:not(.n) .o)) ] #parent.classList.remove(''m'') : check #has_scope color'
+        - test: not-pseudo-containing-complex-in-has.html
+          subtest: '[ .orange:has(#descendant:not(.m:not(.n) .o)) ] #has_scope.classList.add(''m'') : check matches (false)'
+        - test: not-pseudo-containing-complex-in-has.html
+          subtest: '[ .orange:has(#descendant:not(.m:not(.n) .o)) ] #has_scope.classList.add(''n'') : check matches (true)'
+        - test: not-pseudo-containing-complex-in-has.html
+          subtest: '[ .orange:has(#descendant:not(.m:not(.n) .o)) ] #has_scope.classList.add(''n'') : check #has_scope color'
+        - test: not-pseudo-containing-complex-in-has.html
+          subtest: '[ .orange:has(#descendant:not(.m:not(.n) .o)) ] #has_scope.classList.remove(''n'') : check matches (false)'
+        - test: not-pseudo-containing-complex-in-has.html
+          subtest: '[ .orange:has(#descendant:not(.m:not(.n) .o)) ] #has_scope.classList.remove(''m'') : check matches (true)'
+        - test: not-pseudo-containing-complex-in-has.html
+          subtest: '[ .orange:has(#descendant:not(.m:not(.n) .o)) ] #has_scope.classList.remove(''m'') : check #has_scope color'
+        - test: not-pseudo-containing-complex-in-has.html
+          subtest: '[ .orange:has(#descendant:not(.m:not(.n) .o)) ] #child.classList.add(''m'') : check matches (false)'
+        - test: not-pseudo-containing-complex-in-has.html
+          subtest: '[ .orange:has(#descendant:not(.m:not(.n) .o)) ] #child.classList.add(''n'') : check matches (true)'
+        - test: not-pseudo-containing-complex-in-has.html
+          subtest: '[ .orange:has(#descendant:not(.m:not(.n) .o)) ] #child.classList.add(''n'') : check #has_scope color'
+        - test: not-pseudo-containing-complex-in-has.html
+          subtest: '[ .orange:has(#descendant:not(.m:not(.n) .o)) ] #child.classList.remove(''n'') : check matches (false)'
+        - test: not-pseudo-containing-complex-in-has.html
+          subtest: '[ .orange:has(#descendant:not(.m:not(.n) .o)) ] #child.classList.remove(''m'') : check matches (true)'
+        - test: not-pseudo-containing-complex-in-has.html
+          subtest: '[ .orange:has(#descendant:not(.m:not(.n) .o)) ] #child.classList.remove(''m'') : check #has_scope color'
+        - test: not-pseudo-containing-complex-in-has.html
+          subtest: '[ .orange:has(#descendant:not(.m:not(.n) .o)) ] #has_scope.classList.remove(''orange'') : check matches (false)'
+    - product: chrome
+      url: https://crbug.com/1325861
+      results:
+        - test: modal-pseudo-class-in-has.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1775494
+      results:
+        - test: target-pseudo-in-has.html
+          subtest: 'CSS Selectors Invalidation: :target pseudo-class in :has() argument'
+    - product: safari
+      url: https://bugs.webkit.org/show_bug.cgi?id=242190
+      results:
+        - test: is-pseudo-containing-complex-in-has.html
+          subtest: '[ .green:has(#descendant:is(.p + .c_has_scope ~ .d .e)) ] insert/remove .invalid before #parent_previous) : (insertion) check #has_scope color'
+        - test: is-pseudo-containing-complex-in-has.html
+          subtest: '[ .green:has(#descendant:is(.p + .c_has_scope ~ .d .e)) ] insert/remove .invalid before #previous) : (insertion) check #has_scope color'
+        - test: is-pseudo-containing-complex-in-has.html
+          subtest: '[ .purple:has(~ #indirect_next:is(.p + .j_has_scope ~ .k .l)) ] insert/remove .invalid before #parent_previous) : (insertion) check #has_scope color'
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1782187
+      results:
+        - test: subject-has-invalidation-with-display-none-anchor-element.html
+          subtest: 'CSS Selectors Invalidation: subject :has() invalidation with display: none anchor element'
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1792148
+      results:
+        - test: has-invalidation-for-wiping-an-element.html
+          subtest: 'color after inserting text and div > .descendant: div#subject.color'
+        - test: has-invalidation-for-wiping-an-element.html
+          subtest: 'color after inserting text and #child > .descendant: div#subject.color'
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1796791
+      results:
+        - test: has-invalidation-after-removing-non-first-element.html
+          subtest: 'initial_color: div#subject.color'
+    - label: interop-2023-has
+      results:
+        - test: has-with-not.html
+        - test: child-indexed-pseudo-classes-in-has.html
+        - test: input-pseudo-classes-in-has.html
+        - test: subject-has-invalidation-with-display-none-anchor-element.html
+        - test: typed-child-indexed-pseudo-classes-in-has.html
+        - test: has-complexity.html
+        - test: has-in-sibling-position.html
+        - test: has-invalidation-after-removing-non-first-element.html
+        - test: empty-pseudo-in-has.html
+        - test: link-pseudo-in-has.html
+        - test: modal-pseudo-class-in-has.html
+        - test: has-in-adjacent-position.html
+        - test: has-with-pseudo-class.html
+        - test: attribute-or-elemental-selectors-in-has.html
+        - test: target-pseudo-in-has.html
+        - test: has-in-ancestor-position.html
+        - test: host-pseudo-class-in-has.html
+        - test: location-pseudo-classes-in-has.html
+        - test: is-pseudo-containing-complex-in-has.html
+        - test: not-pseudo-containing-complex-in-has.html
+        - test: has-in-parent-position.html
+        - test: has-invalidation-for-wiping-an-element.html
+        - test: has-sibling.html
+        - test: fullscreen-pseudo-class-in-has.html
+        - test: dir-pseudo-class-in-has.html
+        - test: lang-pseudo-class-in-has-document-element.html
+        - test: lang-pseudo-class-in-has-multiple-document-elements.html
+        - test: lang-pseudo-class-in-has-xhtml.xhtml
+        - test: lang-pseudo-class-in-has.html
+        - test: defined-in-has.html
+    - product: chrome
+      url: https://crbug.com/1383480
+      results:
+        - test: media-pseudo-classes-in-has.html
+          subtest: Test :playing pseudo-classes
+        - test: media-pseudo-classes-in-has.html
+          subtest: Test :seeking pseudo-class
+        - test: media-pseudo-classes-in-has.html
+          subtest: Test :muted pseudo-class
+    - label: interop-2023-pseudos
+      results:
+        - test: nth-child-of-class.html
+        - test: nth-child-of-has.html
+        - test: nth-child-of-in-ancestor.html
+        - test: nth-child-of-sibling.html
+        - test: nth-child-of-attr.html
+        - test: nth-child-when-ancestor-changes.html
+        - test: nth-child-when-sibling-changes.html
+        - test: nth-child-containing-ancestor.html
+        - test: nth-child-in-shadow-root.html
+        - test: nth-child-of-attr-largedom.html
+        - test: nth-child-of-class-prefix.html
+        - test: nth-last-child-of-in-is.html
+        - test: nth-last-child-of-in-shadow-root.html
+        - test: nth-last-child-when-sibling-changes.html
+        - test: nth-child-of-id-prefix.html
+        - test: nth-child-of-pseudo-class.html
+        - test: nth-last-child-containing-ancestor.html
+        - test: nth-last-child-of-id-prefix.html
+        - test: nth-last-child-of-ids.html
+        - test: nth-last-child-of-attr.html
+        - test: nth-last-child-of-class-prefix.html
+        - test: nth-last-child-of-in-ancestor.html
+        - test: nth-last-child-when-ancestor-changes.html
+        - test: nth-last-child-of-pseudo-class.html
+        - test: nth-child-of-in-is.html
+        - test: nth-child-of-ids.html
+        - test: nth-child-of-in-shadow-root.html
+        - test: nth-child-of-is.html
+        - test: nth-last-child-of-class.html
+        - test: nth-last-child-of-has.html
+        - test: nth-last-child-of-is.html
+        - test: nth-last-child-of-sibling.html
+    - product: chrome
+      url: https://bugs.chromium.org/p/chromium/issues/detail?id=304163
+      results:
+        - test: nth-child-when-sibling-changes.html
+        - test: nth-child-of-attr.html
+        - test: nth-child-of-in-ancestor.html
+        - test: nth-child-when-ancestor-changes.html
+        - test: nth-child-of-has.html
+        - test: nth-child-of-sibling.html
+        - test: nth-child-containing-ancestor.html
+        - test: nth-child-of-class.html
+    - product: chrome
+      url: https://crbug.com/1408679
+      results:
+        - test: lang-pseudo-class-in-has-xhtml.xhtml
+        - test: lang-pseudo-class-in-has.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1818155
+      results:
+        - test: nth-child-of-has.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1818151
+      results:
+        - test: nth-child-of-attr.html
+        - test: nth-child-of-class.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=418039
+      results:
+        - test: nth-child-of-has.html
+          subtest: Test status
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1818153
+      results:
+        - test: nth-child-of-in-ancestor.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1818152
+      results:
+        - test: nth-child-of-sibling.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1818154
+      results:
+        - test: nth-child-in-shadow-root.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1836563
+      results:
+        - test: nth-last-child-of-has.html
+          subtest: Test status
+        - test: nth-child-of-has.html
+          subtest: Test status
+        - test: nth-child-of-has.html
+    - product: chrome
+      url: https://crbug.com/1481040
+      results:
+        - test: input-pseudo-classes-in-has.html
+          subtest: :default invalidation with input[type=checkbox] and assignment to .checked
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1855753
+      results:
+        - test: host-pseudo-class-in-has.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1853258
+      results:
+        - test: has-complexity.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1846755
+      results:
+        - test: target-pseudo-in-has.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1873605
+      results:
+        - test: part-dir.html
+          subtest: ::part():dir() invalidation
+        - test: part-dir.html
+          subtest: ::part():dir() invalidation from setAttribute
+        - test: part-lang.html
+          subtest: ::part():lang() invalidation
+        - test: part-lang.html
+          subtest: ::part():lang() invalidation from setAttribute
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1588763
+      results:
+        - test: state-in-has.html

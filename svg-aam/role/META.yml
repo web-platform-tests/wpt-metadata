@@ -1,10 +1,17 @@
 links:
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1865582
-      results:
-        - test: roles-generic.html
-          subtest: el-image
-    - label: interop-2024-accessibility
-      results:
-        - test: roles-generic.html
-        - test: roles.html
+- product: firefox
+  results:
+  - subtest: el-image
+    test: roles-generic.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1865582
+- label: interop-2024-accessibility
+  results:
+  - test: roles-generic.html
+  - test: roles.html
+- product: firefox
+  results:
+  - subtest: 'Label: el-image (empty label due to missing image>title element)'
+    test: role-img.tentative.html
+  - subtest: el-image (generic, explicitly empty image>title element)
+    test: role-img.tentative.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1884240
