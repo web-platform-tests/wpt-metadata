@@ -1,383 +1,366 @@
 links:
-- product: firefox
-  results:
-  - test: getComputedStyle-pseudo.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1396844
-- product: firefox
-  results:
-  - subtest: Stringification of getComputedStyle(svg_element)
-    test: idlharness.html
-  - subtest: Stringification of svg_element.style
-    test: idlharness.html
-  - subtest: 'CSSRule interface: sheet.cssRules[2].cssRules[0] must inherit property
-      "parentRule" with the proper type'
-    test: idlharness.html
-  - subtest: 'CSSStyleDeclaration interface: calling getPropertyPriority(CSSOMString)
-      on sheet.cssRules[2].cssRules[0].style with too few arguments must throw TypeError'
-    test: idlharness.html
-  - subtest: 'CSSRule interface: sheet.cssRules[2].cssRules[0] must inherit property
-      "STYLE_RULE" with the proper type'
-    test: idlharness.html
-  - subtest: 'CSSRule interface: sheet.cssRules[2].cssRules[0] must inherit property
-      "FONT_FACE_RULE" with the proper type'
-    test: idlharness.html
-  - subtest: 'CSSRule interface: sheet.cssRules[1] must inherit property "MARGIN_RULE"
-      with the proper type'
-    test: idlharness.html
-  - subtest: CSSStyleDeclaration must be primary interface of sheet.cssRules[4].style
-    test: idlharness.html
-  - subtest: 'CSSMarginRule interface: sheet.cssRules[2].cssRules[0] must inherit
-      property "style" with the proper type'
-    test: idlharness.html
-  - subtest: 'CSSStyleDeclaration interface: sheet.cssRules[2].cssRules[0].style must
-      inherit property "setProperty(CSSOMString, CSSOMString, optional CSSOMString)"
-      with the proper type'
-    test: idlharness.html
-  - subtest: 'CSSRule interface: sheet.cssRules[0] must inherit property "MARGIN_RULE"
-      with the proper type'
-    test: idlharness.html
-  - subtest: Stringification of sheet.cssRules[2].cssRules[0]
-    test: idlharness.html
-  - subtest: 'CSSPageRule interface: existence and properties of interface prototype
-      object'
-    test: idlharness.html
-  - subtest: 'CSSStyleDeclaration interface: calling getPropertyValue(CSSOMString)
-      on sheet.cssRules[2].cssRules[0].style with too few arguments must throw TypeError'
-    test: idlharness.html
-  - subtest: 'CSSMarginRule interface: existence and properties of interface prototype
-      object'
-    test: idlharness.html
-  - subtest: 'CSSMarginRule interface: existence and properties of interface object'
-    test: idlharness.html
-  - subtest: 'CSSGroupingRule interface: calling deleteRule(unsigned long) on sheet.cssRules[2]
-      with too few arguments must throw TypeError'
-    test: idlharness.html
-  - subtest: CSSStyleDeclaration must be primary interface of sheet.cssRules[2].cssRules[0].style
-    test: idlharness.html
-  - subtest: 'CSSMarginRule interface: sheet.cssRules[2].cssRules[0] must inherit
-      property "name" with the proper type'
-    test: idlharness.html
-  - subtest: Stringification of sheet.cssRules[4].style
-    test: idlharness.html
-  - subtest: 'CSSMarginRule interface: attribute name'
-    test: idlharness.html
-  - subtest: Stringification of sheet.cssRules[2].style
-    test: idlharness.html
-  - subtest: 'CSSGroupingRule interface: sheet.cssRules[2] must inherit property "cssRules"
-      with the proper type'
-    test: idlharness.html
-  - subtest: 'CSSRule interface: sheet.cssRules[4] must inherit property "MARGIN_RULE"
-      with the proper type'
-    test: idlharness.html
-  - subtest: CSSStyleDeclaration must be primary interface of svg_element.style
-    test: idlharness.html
-  - subtest: CSSStyleDeclaration must be primary interface of style_element.style
-    test: idlharness.html
-  - subtest: 'CSSStyleDeclaration interface: attribute cssFloat'
-    test: idlharness.html
-  - subtest: 'CSSPageRule interface: existence and properties of interface object'
-    test: idlharness.html
-  - subtest: 'CSSStyleDeclaration interface: calling item(unsigned long) on sheet.cssRules[2].cssRules[0].style
-      with too few arguments must throw TypeError'
-    test: idlharness.html
-  - subtest: CSSStyleDeclaration must be primary interface of sheet.cssRules[2].style
-    test: idlharness.html
-  - subtest: 'CSSRule interface: constant MARGIN_RULE on interface object'
-    test: idlharness.html
-  - subtest: CSSMarginRule must be primary interface of sheet.cssRules[2].cssRules[0]
-    test: idlharness.html
-  - subtest: 'CSSStyleDeclaration interface: sheet.cssRules[2].cssRules[0].style must
-      inherit property "getPropertyValue(CSSOMString)" with the proper type'
-    test: idlharness.html
-  - subtest: 'CSSRule interface: sheet.cssRules[2].cssRules[0] must inherit property
-      "MARGIN_RULE" with the proper type'
-    test: idlharness.html
-  - subtest: 'CSSPageRule interface: attribute selectorText'
-    test: idlharness.html
-  - subtest: 'CSSPageRule interface: sheet.cssRules[2] must inherit property "selectorText"
-      with the proper type'
-    test: idlharness.html
-  - subtest: 'CSSMarginRule interface: existence and properties of interface prototype
-      object''s @@unscopables property'
-    test: idlharness.html
-  - subtest: 'CSSRule interface: sheet.cssRules[2].cssRules[0] must inherit property
-      "NAMESPACE_RULE" with the proper type'
-    test: idlharness.html
-  - subtest: 'CSSStyleDeclaration interface: sheet.cssRules[2].cssRules[0].style must
-      inherit property "removeProperty(CSSOMString)" with the proper type'
-    test: idlharness.html
-  - subtest: 'CSSGroupingRule interface: calling insertRule(CSSOMString, optional
-      unsigned long) on sheet.cssRules[2] with too few arguments must throw TypeError'
-    test: idlharness.html
-  - subtest: Stringification of style_element.style
-    test: idlharness.html
-  - subtest: 'CSSStyleDeclaration interface: sheet.cssRules[2].cssRules[0].style must
-      inherit property "length" with the proper type'
-    test: idlharness.html
-  - subtest: 'CSSStyleDeclaration interface: sheet.cssRules[2].cssRules[0].style must
-      inherit property "parentRule" with the proper type'
-    test: idlharness.html
-  - subtest: 'CSSStyleDeclaration interface: sheet.cssRules[2].cssRules[0].style must
-      inherit property "cssText" with the proper type'
-    test: idlharness.html
-  - subtest: 'CSSRule interface: constant MARGIN_RULE on interface prototype object'
-    test: idlharness.html
-  - subtest: 'CSSRule interface: sheet.cssRules[2].cssRules[0] must inherit property
-      "PAGE_RULE" with the proper type'
-    test: idlharness.html
-  - subtest: CSSMarginRule interface object length
-    test: idlharness.html
-  - subtest: 'CSSRule interface: sheet.cssRules[2].cssRules[0] must inherit property
-      "IMPORT_RULE" with the proper type'
-    test: idlharness.html
-  - subtest: 'CSSStyleDeclaration interface: calling removeProperty(CSSOMString) on
-      sheet.cssRules[2].cssRules[0].style with too few arguments must throw TypeError'
-    test: idlharness.html
-  - subtest: 'CSSMarginRule interface: existence and properties of interface prototype
-      object''s "constructor" property'
-    test: idlharness.html
-  - subtest: 'CSSRule interface: sheet.cssRules[2].cssRules[0] must inherit property
-      "MEDIA_RULE" with the proper type'
-    test: idlharness.html
-  - subtest: 'CSSStyleDeclaration interface: calling setProperty(CSSOMString, CSSOMString,
-      optional CSSOMString) on sheet.cssRules[2].cssRules[0].style with too few arguments
-      must throw TypeError'
-    test: idlharness.html
-  - subtest: 'CSSRule interface: sheet.cssRules[2].cssRules[0] must inherit property
-      "type" with the proper type'
-    test: idlharness.html
-  - subtest: 'CSSGroupingRule interface: sheet.cssRules[2] must inherit property "insertRule(CSSOMString,
-      optional unsigned long)" with the proper type'
-    test: idlharness.html
-  - subtest: 'CSSStyleDeclaration interface: sheet.cssRules[2].cssRules[0].style must
-      inherit property "cssFloat" with the proper type'
-    test: idlharness.html
-  - subtest: 'CSSStyleDeclaration interface: sheet.cssRules[2].cssRules[0].style must
-      inherit property "getPropertyPriority(CSSOMString)" with the proper type'
-    test: idlharness.html
-  - subtest: 'CSSGroupingRule interface: sheet.cssRules[2] must inherit property "deleteRule(unsigned
-      long)" with the proper type'
-    test: idlharness.html
-  - subtest: Stringification of sheet.cssRules[2].cssRules[0].style
-    test: idlharness.html
-  - subtest: 'CSSRule interface: sheet.cssRules[2].cssRules[0] must inherit property
-      "CHARSET_RULE" with the proper type'
-    test: idlharness.html
-  - subtest: 'CSSMarginRule interface: attribute style'
-    test: idlharness.html
-  - subtest: 'CSSRule interface: sheet.cssRules[2].cssRules[0] must inherit property
-      "parentStyleSheet" with the proper type'
-    test: idlharness.html
-  - subtest: 'CSSRule interface: sheet.cssRules[2] must inherit property "MARGIN_RULE"
-      with the proper type'
-    test: idlharness.html
-  - subtest: 'CSSRule interface: sheet.cssRules[2].cssRules[0] must inherit property
-      "cssText" with the proper type'
-    test: idlharness.html
-  - subtest: CSSMarginRule interface object name
-    test: idlharness.html
-  - subtest: CSSStyleDeclaration must be primary interface of getComputedStyle(svg_element)
-    test: idlharness.html
-  - subtest: 'CSSStyleDeclaration interface: sheet.cssRules[2].cssRules[0].style must
-      inherit property "item(unsigned long)" with the proper type'
-    test: idlharness.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1634398
-- product: firefox
-  results:
-  - subtest: Origin-clean check in cross-origin CSSOM Stylesheets (redirect from cross-origin
-      to same-origin)
-    test: stylesheet-same-origin.sub.html
-  - subtest: Origin-clean check in loading error CSSOM Stylesheets
-    test: stylesheet-same-origin.sub.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1644462
-- product: firefox
-  results:
-  - subtest: Modify constructed sheet from removed iframe
-    test: CSSStyleSheet-modify-after-removal.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1651990
-- product: chrome
-  results:
-  - status: FAIL
-    test: cssstyledeclaration-custom-properties.html
-  url: https://crbug.com/949807
-- product: firefox
-  results:
-  - subtest: 'orphans: 101'
-    test: serialize-values.html
-  - subtest: 'orphans: inherit'
-    test: serialize-values.html
-  - subtest: 'widows: 101'
-    test: serialize-values.html
-  - subtest: 'widows: inherit'
-    test: serialize-values.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1680660
-- product: safari
-  results:
-  - subtest: 'CSS namespace: typeof is "object"'
-    test: idlharness.html
-  url: https://bugs.webkit.org/show_bug.cgi?id=220855
-- product: chrome
-  results:
-  - test: font-family-serialization-001.html
-  url: https://crbug.com/1065468
-- product: chrome
-  results:
-  - test: idlharness.html
-  url: https://crbug.com/1111588
-- product: chrome
-  results:
-  - test: rule-restrictions.html
-  url: https://crbug.com/1133512
-- product: chrome
-  results:
-  - test: serialize-values.html
-  url: https://crbug.com/661174
-- product: chrome
-  results:
-  - test: CSSKeyframesRule.html
-  - test: CSSGroupingRule-insertRule.html
-  url: https://bugs.chromium.org/p/chromium/issues/detail?id=689684
-- product: chrome
-  results:
-  - test: CSSStyleSheet-constructable-baseURL.tentative.html
-  - test: CSSStyleSheet-constructable.html
-  url: https://bugs.chromium.org/p/chromium/issues/detail?id=1174094
-- product: chrome
-  results:
-  - test: getComputedStyle-insets-absolute.html
-  - test: getComputedStyle-insets-fixed.html
-  - test: getComputedStyle-pseudo.html
-  - test: getComputedStyle-width-scroll.tentative.html
-  - test: cssstyledeclaration-csstext.html
-  - test: cssstyledeclaration-properties.html
-  - test: cssstyledeclaration-registered-custom-properties.html
-  - test: getComputedStyle-detached-subtree.html
-  url: https://bugs.chromium.org/p/chromium/issues/detail?id=949807
-- product: chrome
-  results:
-  - test: serialize-custom-props.html
-  url: https://bugs.chromium.org/p/chromium/issues/detail?id=661174
-- product: chrome
-  results:
-  - test: flex-serialization.html
-  - test: shorthand-values.html
-  - test: page-descriptors.html
-  url: https://bugs.chromium.org/p/chromium/issues/detail?id=1220240
-- product: safari
-  results:
-  - test: cssstyledeclaration-setter-form-controls.html
-  url: https://bugs.webkit.org/show_bug.cgi?id=107380
-- product: chrome
-  results:
-  - test: CSSStyleSheet-constructable.html
-  - test: CSSStyleSheet-constructable-baseURL.tentative.html
-  url: https://crbug.com/1275639
-- label: interop-2022-forms
-  results:
-  - test: cssstyledeclaration-setter-form-controls.html
-- product: chrome
-  results:
-  - subtest: Page descriptors shouldn't be exposed to CSS Style declarations
-    test: page-descriptors.html
-  url: https://crbug.com/1287514
-- product: chrome
-  results:
-  - subtest: 'The serialization of border-top: 1px; border-right: 2px; border-bottom:
-      3px; border-left: 4px; should be canonical.'
-    test: shorthand-values.html
-  - subtest: 'The serialization of border-top: 1px; border-right: 1px; border-bottom:
-      1px; border-left: 1px; should be canonical.'
-    test: shorthand-values.html
-  - subtest: 'The serialization of border: 1px; border-top: 2px; should be canonical.'
-    test: shorthand-values.html
-  - subtest: 'The serialization of border: 1px; border-top: 1px !important; should
-      be canonical.'
-    test: shorthand-values.html
-  - subtest: 'The serialization of border: 1px; border-top-color: red; should be canonical.'
-    test: shorthand-values.html
-  url: https://crbug.com/1188410
-- product: chrome
-  results:
-  - subtest: CSSOM - Flex serialization
-    test: flex-serialization.html
-  url: https://crbug.com/1287987
-- product: chrome
-  results:
-  - test: caretPositionFromPoint-with-transformation.html
-  url: https://crbug.com/388976
-- label: interop-2023-webcomponents
-  results:
-  - test: CSSStyleSheet-constructable-concat.html
-  - test: CSSStyleSheet-constructable-cssRules.html
-  - test: CSSStyleSheet-constructable-disabled-regular-sheet-insertion.html
-  - test: CSSStyleSheet-constructable-duplicate.html
-  - test: CSSStyleSheet-constructable-replace-on-regular-sheet.html
-  - test: CSSStyleSheet-constructable.html
-  - test: adoptedstylesheets-observablearray.html
-  - test: cssom-fontfacerule-constructors.html
-  - test: CSSStyleSheet-template-adoption.html
-- product: chrome
-  results:
-  - subtest: 'content: attr(|bar)'
-    test: serialize-values.html
-  - subtest: 'content: attr( |bar )'
-    test: serialize-values.html
-  - subtest: 'content: attr(foo-bar, "fallback")'
-    test: serialize-values.html
-  - subtest: 'content: attr(foo_bar, "fallback")'
-    test: serialize-values.html
-  - subtest: 'content: attr(|bar, "fallback")'
-    test: serialize-values.html
-  - subtest: 'content: attr(foo, "")'
-    test: serialize-values.html
-  - subtest: 'content: attr( |foo ,  "" )'
-    test: serialize-values.html
-  url: https://crbug.com/1486443
-- product: safari
-  results:
-  - subtest: 'Historical interface: CSSValue'
-    test: historical.html
-  - subtest: 'Historical interface: CSSPrimitiveValue'
-    test: historical.html
-  - subtest: 'Historical interface: CSSValueList'
-    test: historical.html
-  url: https://bugs.webkit.org/show_bug.cgi?id=229912
-- product: safari
-  results:
-  - test: xml-stylesheet-pi-in-doctype.xhtml
-  url: https://bugs.webkit.org/show_bug.cgi?id=32393
-- product: firefox
-  results:
-  - subtest: Item-based blockification of nonexistent pseudo-elements
-    test: getComputedStyle-pseudo.html
-  - subtest: 'display: contents on pseudo-elements'
-    test: getComputedStyle-pseudo.html
-  - subtest: 'Dynamically change to display: contents on pseudo-elements'
-    test: getComputedStyle-pseudo.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1873609
-- product: safari
-  results:
-  - subtest: 'getComputedStyle returns no style for element in non-rendered iframe
-      (display: none)'
-    test: getComputedStyle-detached-subtree.html
-  - subtest: 'getComputedStyle returns no style for element in non-rendered iframe
-      (display: none) from iframe''s window'
-    test: getComputedStyle-detached-subtree.html
-  - subtest: getComputedStyle returns no style for descendant outside the flat tree
-    test: getComputedStyle-detached-subtree.html
-  - subtest: getComputedStyle returns no style for element outside the flat tree
-    test: getComputedStyle-detached-subtree.html
-  url: https://bugs.webkit.org/show_bug.cgi?id=232969
-- product: firefox
-  results:
-  - subtest: 'This pseudo-element should not parse: ::highlight('
-    test: getComputedStyle-pseudo-with-argument.html
-  - subtest: 'This pseudo-element should not parse: ::highlight()'
-    test: getComputedStyle-pseudo-with-argument.html
-  - subtest: 'This pseudo-element should not parse: ::highlight(1)'
-    test: getComputedStyle-pseudo-with-argument.html
-  - subtest: 'This pseudo-element should not parse: ::highlight($)'
-    test: getComputedStyle-pseudo-with-argument.html
-  - subtest: 'This pseudo-element should not parse: ::highlight(name)a'
-    test: getComputedStyle-pseudo-with-argument.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1880672
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1396844
+      results:
+        - test: getComputedStyle-pseudo.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1634398
+      results:
+        - test: idlharness.html
+          subtest: Stringification of getComputedStyle(svg_element)
+        - test: idlharness.html
+          subtest: Stringification of svg_element.style
+        - test: idlharness.html
+          subtest: 'CSSRule interface: sheet.cssRules[2].cssRules[0] must inherit property "parentRule" with the proper type'
+        - test: idlharness.html
+          subtest: 'CSSStyleDeclaration interface: calling getPropertyPriority(CSSOMString) on sheet.cssRules[2].cssRules[0].style with too few arguments must throw TypeError'
+        - test: idlharness.html
+          subtest: 'CSSRule interface: sheet.cssRules[2].cssRules[0] must inherit property "STYLE_RULE" with the proper type'
+        - test: idlharness.html
+          subtest: 'CSSRule interface: sheet.cssRules[2].cssRules[0] must inherit property "FONT_FACE_RULE" with the proper type'
+        - test: idlharness.html
+          subtest: 'CSSRule interface: sheet.cssRules[1] must inherit property "MARGIN_RULE" with the proper type'
+        - test: idlharness.html
+          subtest: CSSStyleDeclaration must be primary interface of sheet.cssRules[4].style
+        - test: idlharness.html
+          subtest: 'CSSMarginRule interface: sheet.cssRules[2].cssRules[0] must inherit property "style" with the proper type'
+        - test: idlharness.html
+          subtest: 'CSSStyleDeclaration interface: sheet.cssRules[2].cssRules[0].style must inherit property "setProperty(CSSOMString, CSSOMString, optional CSSOMString)" with the proper type'
+        - test: idlharness.html
+          subtest: 'CSSRule interface: sheet.cssRules[0] must inherit property "MARGIN_RULE" with the proper type'
+        - test: idlharness.html
+          subtest: Stringification of sheet.cssRules[2].cssRules[0]
+        - test: idlharness.html
+          subtest: 'CSSPageRule interface: existence and properties of interface prototype object'
+        - test: idlharness.html
+          subtest: 'CSSStyleDeclaration interface: calling getPropertyValue(CSSOMString) on sheet.cssRules[2].cssRules[0].style with too few arguments must throw TypeError'
+        - test: idlharness.html
+          subtest: 'CSSMarginRule interface: existence and properties of interface prototype object'
+        - test: idlharness.html
+          subtest: 'CSSMarginRule interface: existence and properties of interface object'
+        - test: idlharness.html
+          subtest: 'CSSGroupingRule interface: calling deleteRule(unsigned long) on sheet.cssRules[2] with too few arguments must throw TypeError'
+        - test: idlharness.html
+          subtest: CSSStyleDeclaration must be primary interface of sheet.cssRules[2].cssRules[0].style
+        - test: idlharness.html
+          subtest: 'CSSMarginRule interface: sheet.cssRules[2].cssRules[0] must inherit property "name" with the proper type'
+        - test: idlharness.html
+          subtest: Stringification of sheet.cssRules[4].style
+        - test: idlharness.html
+          subtest: 'CSSMarginRule interface: attribute name'
+        - test: idlharness.html
+          subtest: Stringification of sheet.cssRules[2].style
+        - test: idlharness.html
+          subtest: 'CSSGroupingRule interface: sheet.cssRules[2] must inherit property "cssRules" with the proper type'
+        - test: idlharness.html
+          subtest: 'CSSRule interface: sheet.cssRules[4] must inherit property "MARGIN_RULE" with the proper type'
+        - test: idlharness.html
+          subtest: CSSStyleDeclaration must be primary interface of svg_element.style
+        - test: idlharness.html
+          subtest: CSSStyleDeclaration must be primary interface of style_element.style
+        - test: idlharness.html
+          subtest: 'CSSStyleDeclaration interface: attribute cssFloat'
+        - test: idlharness.html
+          subtest: 'CSSPageRule interface: existence and properties of interface object'
+        - test: idlharness.html
+          subtest: 'CSSStyleDeclaration interface: calling item(unsigned long) on sheet.cssRules[2].cssRules[0].style with too few arguments must throw TypeError'
+        - test: idlharness.html
+          subtest: CSSStyleDeclaration must be primary interface of sheet.cssRules[2].style
+        - test: idlharness.html
+          subtest: 'CSSRule interface: constant MARGIN_RULE on interface object'
+        - test: idlharness.html
+          subtest: CSSMarginRule must be primary interface of sheet.cssRules[2].cssRules[0]
+        - test: idlharness.html
+          subtest: 'CSSStyleDeclaration interface: sheet.cssRules[2].cssRules[0].style must inherit property "getPropertyValue(CSSOMString)" with the proper type'
+        - test: idlharness.html
+          subtest: 'CSSRule interface: sheet.cssRules[2].cssRules[0] must inherit property "MARGIN_RULE" with the proper type'
+        - test: idlharness.html
+          subtest: 'CSSPageRule interface: attribute selectorText'
+        - test: idlharness.html
+          subtest: 'CSSPageRule interface: sheet.cssRules[2] must inherit property "selectorText" with the proper type'
+        - test: idlharness.html
+          subtest: 'CSSMarginRule interface: existence and properties of interface prototype object''s @@unscopables property'
+        - test: idlharness.html
+          subtest: 'CSSRule interface: sheet.cssRules[2].cssRules[0] must inherit property "NAMESPACE_RULE" with the proper type'
+        - test: idlharness.html
+          subtest: 'CSSStyleDeclaration interface: sheet.cssRules[2].cssRules[0].style must inherit property "removeProperty(CSSOMString)" with the proper type'
+        - test: idlharness.html
+          subtest: 'CSSGroupingRule interface: calling insertRule(CSSOMString, optional unsigned long) on sheet.cssRules[2] with too few arguments must throw TypeError'
+        - test: idlharness.html
+          subtest: Stringification of style_element.style
+        - test: idlharness.html
+          subtest: 'CSSStyleDeclaration interface: sheet.cssRules[2].cssRules[0].style must inherit property "length" with the proper type'
+        - test: idlharness.html
+          subtest: 'CSSStyleDeclaration interface: sheet.cssRules[2].cssRules[0].style must inherit property "parentRule" with the proper type'
+        - test: idlharness.html
+          subtest: 'CSSStyleDeclaration interface: sheet.cssRules[2].cssRules[0].style must inherit property "cssText" with the proper type'
+        - test: idlharness.html
+          subtest: 'CSSRule interface: constant MARGIN_RULE on interface prototype object'
+        - test: idlharness.html
+          subtest: 'CSSRule interface: sheet.cssRules[2].cssRules[0] must inherit property "PAGE_RULE" with the proper type'
+        - test: idlharness.html
+          subtest: CSSMarginRule interface object length
+        - test: idlharness.html
+          subtest: 'CSSRule interface: sheet.cssRules[2].cssRules[0] must inherit property "IMPORT_RULE" with the proper type'
+        - test: idlharness.html
+          subtest: 'CSSStyleDeclaration interface: calling removeProperty(CSSOMString) on sheet.cssRules[2].cssRules[0].style with too few arguments must throw TypeError'
+        - test: idlharness.html
+          subtest: 'CSSMarginRule interface: existence and properties of interface prototype object''s "constructor" property'
+        - test: idlharness.html
+          subtest: 'CSSRule interface: sheet.cssRules[2].cssRules[0] must inherit property "MEDIA_RULE" with the proper type'
+        - test: idlharness.html
+          subtest: 'CSSStyleDeclaration interface: calling setProperty(CSSOMString, CSSOMString, optional CSSOMString) on sheet.cssRules[2].cssRules[0].style with too few arguments must throw TypeError'
+        - test: idlharness.html
+          subtest: 'CSSRule interface: sheet.cssRules[2].cssRules[0] must inherit property "type" with the proper type'
+        - test: idlharness.html
+          subtest: 'CSSGroupingRule interface: sheet.cssRules[2] must inherit property "insertRule(CSSOMString, optional unsigned long)" with the proper type'
+        - test: idlharness.html
+          subtest: 'CSSStyleDeclaration interface: sheet.cssRules[2].cssRules[0].style must inherit property "cssFloat" with the proper type'
+        - test: idlharness.html
+          subtest: 'CSSStyleDeclaration interface: sheet.cssRules[2].cssRules[0].style must inherit property "getPropertyPriority(CSSOMString)" with the proper type'
+        - test: idlharness.html
+          subtest: 'CSSGroupingRule interface: sheet.cssRules[2] must inherit property "deleteRule(unsigned long)" with the proper type'
+        - test: idlharness.html
+          subtest: Stringification of sheet.cssRules[2].cssRules[0].style
+        - test: idlharness.html
+          subtest: 'CSSRule interface: sheet.cssRules[2].cssRules[0] must inherit property "CHARSET_RULE" with the proper type'
+        - test: idlharness.html
+          subtest: 'CSSMarginRule interface: attribute style'
+        - test: idlharness.html
+          subtest: 'CSSRule interface: sheet.cssRules[2].cssRules[0] must inherit property "parentStyleSheet" with the proper type'
+        - test: idlharness.html
+          subtest: 'CSSRule interface: sheet.cssRules[2] must inherit property "MARGIN_RULE" with the proper type'
+        - test: idlharness.html
+          subtest: 'CSSRule interface: sheet.cssRules[2].cssRules[0] must inherit property "cssText" with the proper type'
+        - test: idlharness.html
+          subtest: CSSMarginRule interface object name
+        - test: idlharness.html
+          subtest: CSSStyleDeclaration must be primary interface of getComputedStyle(svg_element)
+        - test: idlharness.html
+          subtest: 'CSSStyleDeclaration interface: sheet.cssRules[2].cssRules[0].style must inherit property "item(unsigned long)" with the proper type'
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1644462
+      results:
+        - test: stylesheet-same-origin.sub.html
+          subtest: Origin-clean check in cross-origin CSSOM Stylesheets (redirect from cross-origin to same-origin)
+        - test: stylesheet-same-origin.sub.html
+          subtest: Origin-clean check in loading error CSSOM Stylesheets
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1651990
+      results:
+        - test: CSSStyleSheet-modify-after-removal.html
+          subtest: Modify constructed sheet from removed iframe
+    - product: chrome
+      url: https://crbug.com/949807
+      results:
+        - test: cssstyledeclaration-custom-properties.html
+          status: FAIL
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1680660
+      results:
+        - test: serialize-values.html
+          subtest: 'orphans: 101'
+        - test: serialize-values.html
+          subtest: 'orphans: inherit'
+        - test: serialize-values.html
+          subtest: 'widows: 101'
+        - test: serialize-values.html
+          subtest: 'widows: inherit'
+    - product: safari
+      url: https://bugs.webkit.org/show_bug.cgi?id=220855
+      results:
+        - test: idlharness.html
+          subtest: 'CSS namespace: typeof is "object"'
+    - product: chrome
+      url: https://crbug.com/1065468
+      results:
+        - test: font-family-serialization-001.html
+    - product: chrome
+      url: https://crbug.com/1111588
+      results:
+        - test: idlharness.html
+    - product: chrome
+      url: https://crbug.com/1133512
+      results:
+        - test: rule-restrictions.html
+    - product: chrome
+      url: https://crbug.com/661174
+      results:
+        - test: serialize-values.html
+    - product: chrome
+      url: https://bugs.chromium.org/p/chromium/issues/detail?id=689684
+      results:
+        - test: CSSKeyframesRule.html
+        - test: CSSGroupingRule-insertRule.html
+    - product: chrome
+      url: https://bugs.chromium.org/p/chromium/issues/detail?id=1174094
+      results:
+        - test: CSSStyleSheet-constructable-baseURL.tentative.html
+        - test: CSSStyleSheet-constructable.html
+    - product: chrome
+      url: https://bugs.chromium.org/p/chromium/issues/detail?id=949807
+      results:
+        - test: getComputedStyle-insets-absolute.html
+        - test: getComputedStyle-insets-fixed.html
+        - test: getComputedStyle-pseudo.html
+        - test: getComputedStyle-width-scroll.tentative.html
+        - test: cssstyledeclaration-csstext.html
+        - test: cssstyledeclaration-properties.html
+        - test: cssstyledeclaration-registered-custom-properties.html
+        - test: getComputedStyle-detached-subtree.html
+    - product: chrome
+      url: https://bugs.chromium.org/p/chromium/issues/detail?id=661174
+      results:
+        - test: serialize-custom-props.html
+    - product: chrome
+      url: https://bugs.chromium.org/p/chromium/issues/detail?id=1220240
+      results:
+        - test: flex-serialization.html
+        - test: shorthand-values.html
+        - test: page-descriptors.html
+    - product: safari
+      url: https://bugs.webkit.org/show_bug.cgi?id=107380
+      results:
+        - test: cssstyledeclaration-setter-form-controls.html
+    - product: chrome
+      url: https://crbug.com/1275639
+      results:
+        - test: CSSStyleSheet-constructable.html
+        - test: CSSStyleSheet-constructable-baseURL.tentative.html
+    - url: ""
+      label: interop-2022-forms
+      results:
+        - test: cssstyledeclaration-setter-form-controls.html
+    - product: chrome
+      url: https://crbug.com/1287514
+      results:
+        - test: page-descriptors.html
+          subtest: Page descriptors shouldn't be exposed to CSS Style declarations
+    - product: chrome
+      url: https://crbug.com/1188410
+      results:
+        - test: shorthand-values.html
+          subtest: 'The serialization of border-top: 1px; border-right: 2px; border-bottom: 3px; border-left: 4px; should be canonical.'
+        - test: shorthand-values.html
+          subtest: 'The serialization of border-top: 1px; border-right: 1px; border-bottom: 1px; border-left: 1px; should be canonical.'
+        - test: shorthand-values.html
+          subtest: 'The serialization of border: 1px; border-top: 2px; should be canonical.'
+        - test: shorthand-values.html
+          subtest: 'The serialization of border: 1px; border-top: 1px !important; should be canonical.'
+        - test: shorthand-values.html
+          subtest: 'The serialization of border: 1px; border-top-color: red; should be canonical.'
+    - product: chrome
+      url: https://crbug.com/1287987
+      results:
+        - test: flex-serialization.html
+          subtest: CSSOM - Flex serialization
+    - product: chrome
+      url: https://crbug.com/388976
+      results:
+        - test: caretPositionFromPoint-with-transformation.html
+    - url: ""
+      label: interop-2023-webcomponents
+      results:
+        - test: CSSStyleSheet-constructable-concat.html
+        - test: CSSStyleSheet-constructable-cssRules.html
+        - test: CSSStyleSheet-constructable-disabled-regular-sheet-insertion.html
+        - test: CSSStyleSheet-constructable-duplicate.html
+        - test: CSSStyleSheet-constructable-replace-on-regular-sheet.html
+        - test: CSSStyleSheet-constructable.html
+        - test: adoptedstylesheets-observablearray.html
+        - test: cssom-fontfacerule-constructors.html
+        - test: CSSStyleSheet-template-adoption.html
+    - product: chrome
+      url: https://crbug.com/1486443
+      results:
+        - test: serialize-values.html
+          subtest: 'content: attr(|bar)'
+        - test: serialize-values.html
+          subtest: 'content: attr( |bar )'
+        - test: serialize-values.html
+          subtest: 'content: attr(foo-bar, "fallback")'
+        - test: serialize-values.html
+          subtest: 'content: attr(foo_bar, "fallback")'
+        - test: serialize-values.html
+          subtest: 'content: attr(|bar, "fallback")'
+        - test: serialize-values.html
+          subtest: 'content: attr(foo, "")'
+        - test: serialize-values.html
+          subtest: 'content: attr( |foo ,  "" )'
+    - product: safari
+      url: https://bugs.webkit.org/show_bug.cgi?id=229912
+      results:
+        - test: historical.html
+          subtest: 'Historical interface: CSSValue'
+        - test: historical.html
+          subtest: 'Historical interface: CSSPrimitiveValue'
+        - test: historical.html
+          subtest: 'Historical interface: CSSValueList'
+    - product: safari
+      url: https://bugs.webkit.org/show_bug.cgi?id=32393
+      results:
+        - test: xml-stylesheet-pi-in-doctype.xhtml
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1873609
+      results:
+        - test: getComputedStyle-pseudo.html
+          subtest: Item-based blockification of nonexistent pseudo-elements
+        - test: getComputedStyle-pseudo.html
+          subtest: 'display: contents on pseudo-elements'
+        - test: getComputedStyle-pseudo.html
+          subtest: 'Dynamically change to display: contents on pseudo-elements'
+    - product: safari
+      url: https://bugs.webkit.org/show_bug.cgi?id=232969
+      results:
+        - test: getComputedStyle-detached-subtree.html
+          subtest: 'getComputedStyle returns no style for element in non-rendered iframe (display: none)'
+        - test: getComputedStyle-detached-subtree.html
+          subtest: 'getComputedStyle returns no style for element in non-rendered iframe (display: none) from iframe''s window'
+        - test: getComputedStyle-detached-subtree.html
+          subtest: getComputedStyle returns no style for descendant outside the flat tree
+        - test: getComputedStyle-detached-subtree.html
+          subtest: getComputedStyle returns no style for element outside the flat tree
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1880672
+      results:
+        - test: getComputedStyle-pseudo-with-argument.html
+          subtest: 'This pseudo-element should not parse: ::highlight('
+        - test: getComputedStyle-pseudo-with-argument.html
+          subtest: 'This pseudo-element should not parse: ::highlight()'
+        - test: getComputedStyle-pseudo-with-argument.html
+          subtest: 'This pseudo-element should not parse: ::highlight(1)'
+        - test: getComputedStyle-pseudo-with-argument.html
+          subtest: 'This pseudo-element should not parse: ::highlight($)'
+        - test: getComputedStyle-pseudo-with-argument.html
+          subtest: 'This pseudo-element should not parse: ::highlight(name)a'
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1885212
+      results:
+        - test: getComputedStyle-pseudo-with-argument.html
+          subtest: 'This pseudo-element should not parse: ::highlight'
+        - test: getComputedStyle-pseudo-with-argument.html
+          subtest: |-
+            This pseudo-element should parse: ::highlight(
+            name
+        - test: getComputedStyle-pseudo-with-argument.html
+          subtest: "This pseudo-element should parse: ::highlight(name\t"
+        - test: getComputedStyle-pseudo-with-argument.html
+          subtest: 'This pseudo-element should parse: ::highlight( name '
+        - test: getComputedStyle-pseudo-with-argument.html
+          subtest: 'This pseudo-element should parse: ::highlight( n\61me )'
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1887442
+      results:
+        - test: cssom-fontfacerule.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1887443
+      results:
+        - test: getComputedStyle-insets-relpos-inline.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1887445
+      results:
+        - test: property-accessors.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1887444
+      results:
+        - test: historical.html

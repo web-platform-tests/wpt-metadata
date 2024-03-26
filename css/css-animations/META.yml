@@ -1,166 +1,159 @@
 links:
-- product: firefox
-  results:
-  - test: animation-important-001.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1634352
-- product: firefox
-  results:
-  - subtest: CSS Animations targetting (pseudo-)elements should have correct order
-      after sorting (::marker)
-    test: Document-getAnimations.tentative.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1635063
-- product: chrome
-  results:
-  - status: FAIL
-    test: idlharness.html
-  url: https://crbug.com/868224
-- product: safari
-  results:
-  - test: animation-important-001.html
-  url: https://bugs.webkit.org/show_bug.cgi?id=189692
-- product: safari
-  results:
-  - subtest: Same events on pseudo-elements follow the prescribed order (::marker)
-    test: event-order.tentative.html
-  url: https://bugs.webkit.org/show_bug.cgi?id=221961
-- product: chrome
-  results:
-  - test: CSSAnimation-compositeOrder.tentative.html
-  url: https://bugs.chromium.org/p/chromium/issues/detail?id=1060322
-- product: chrome
-  results:
-  - subtest: Order of CSS Animations - free animations
-    test: Document-getAnimations.tentative.html
-  url: https://bugs.chromium.org/p/chromium/issues/detail?id=1221622
-- product: chrome
-  results:
-  - test: KeyframeEffect-getKeyframes.tentative.html
-  url: https://bugs.chromium.org/p/chromium/issues/detail?id=816956
-- product: chrome
-  results:
-  - test: Element-getAnimations-dynamic-changes.tentative.html
-  - test: event-dispatch.tentative.html
-  - test: event-order.tentative.html
-  url: https://bugs.chromium.org/p/chromium/issues/detail?id=1227201
-- product: safari
-  results:
-  - test: KeyframeEffect-getKeyframes.tentative.html
-  url: https://bugs.webkit.org/show_bug.cgi?id=235139
-- product: safari
-  results:
-  - test: flip-running-animation-via-variable.html
-  url: https://bugs.webkit.org/show_bug.cgi?id=235146
-- product: safari
-  results:
-  - test: '*'
-  url: https://bugs.webkit.org/show_bug.cgi?id=235138
-- product: safari
-  results:
-  - test: animation-base-response-001.html
-  url: https://bugs.webkit.org/show_bug.cgi?id=235140
-- product: safari
-  results:
-  - test: animation-base-response-003.html
-  url: https://bugs.webkit.org/show_bug.cgi?id=235141
-- product: safari
-  results:
-  - test: animation-base-response-004.html
-  url: https://bugs.webkit.org/show_bug.cgi?id=235142
-- product: safari
-  results:
-  - test: animation-important-002.html
-  url: https://bugs.webkit.org/show_bug.cgi?id=235144
-- product: safari
-  results:
-  - test: animation-important-001.html
-  url: https://bugs.webkit.org/show_bug.cgi?id=235143
-- product: safari
-  results:
-  - test: event-order.tentative.html
-  url: https://bugs.webkit.org/show_bug.cgi?id=235145
-- label: interop-2022-dialog
-  results:
-  - test: dialog-backdrop-animation.html
-  - test: dialog-animation.html
-- product: safari
-  results:
-  - subtest: KeyframeEffect.getKeyframes() returns expected frames for an animation
-      with a 0% keyframe and no 100% keyframe
-    test: KeyframeEffect-getKeyframes.tentative.html
-  - subtest: KeyframeEffect.getKeyframes() returns expected frames for an animation
-      with a 100% keyframe and no 0% keyframe
-    test: KeyframeEffect-getKeyframes.tentative.html
-  - subtest: KeyframeEffect.getKeyframes() returns expected frames for an animation
-      with no 0% or 100% keyframe but with a 50% keyframe
-    test: KeyframeEffect-getKeyframes.tentative.html
-  - subtest: KeyframeEffect.getKeyframes() returns expected values for animations
-      with filter properties and missing keyframes
-    test: KeyframeEffect-getKeyframes.tentative.html
-  - subtest: KeyframeEffect.getKeyframes() returns expected values for animations
-      with text-shadow properties and missing keyframes
-    test: KeyframeEffect-getKeyframes.tentative.html
-  - subtest: KeyframeEffect.getKeyframes() returns expected values for animations
-      with background-size properties and missing keyframes
-    test: KeyframeEffect-getKeyframes.tentative.html
-  - subtest: KeyframeEffect.getKeyframes() returns expected values for animations
-      with CSS variables as keyframe values
-    test: KeyframeEffect-getKeyframes.tentative.html
-  - subtest: KeyframeEffect.getKeyframes() returns expected values for animations
-      with CSS variables as keyframe values in a shorthand property
-    test: KeyframeEffect-getKeyframes.tentative.html
-  - subtest: KeyframeEffect.getKeyframes() returns expected values for animations
-      with a CSS variable which is overriden by the value in keyframe
-    test: KeyframeEffect-getKeyframes.tentative.html
-  url: https://bugs.webkit.org/show_bug.cgi?id=251499
-- product: safari
-  results:
-  - subtest: 'CSSKeyframesRule interface: attribute length'
-    test: idlharness.html
-  - subtest: 'CSSKeyframesRule interface: keyframes must inherit property "length"
-      with the proper type'
-    test: idlharness.html
-  url: https://bugs.webkit.org/show_bug.cgi?id=252402
-- product: safari
-  results:
-  - test: animation-opacity-pause-and-set-time.html
-  url: https://bugs.webkit.org/show_bug.cgi?id=252418
-- product: safari
-  results:
-  - test: translation-animation-on-important-property.html
-  url: https://bugs.webkit.org/show_bug.cgi?id=252481
-- product: firefox
-  results:
-  - test: dialog-backdrop-animation.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1841337
-- product: safari
-  results:
-  - subtest: display:none animating to display:inline should be inline for the whole
-      animation.
-    test: display-none-dont-cancel.tentative.html
-  - subtest: A CSS variable of display:none animating to display:inline should be
-      inline for the whole animation.
-    test: display-none-dont-cancel.tentative.html
-  - subtest: Animating from display:none to display:none should not cancel the animation.
-    test: display-none-dont-cancel.tentative.html
-  - subtest: Animating from display:none to display:none with an intermediate variable
-      should not cancel the animation.
-    test: display-none-dont-cancel.tentative.html
-  - subtest: Animating a variable of "none" which gets set to display elsewhere should
-      not cancel the animation.
-    test: display-none-dont-cancel.tentative.html
-  url: https://bugs.webkit.org/show_bug.cgi?id=259192
-- product: firefox
-  results:
-  - subtest: Animate from neutral keyframe with color-mix to legacy rgb
-    test: animate-with-color-mix.html
-  - subtest: Animate from legacy rgb to neutral keyframe with color-mix
-    test: animate-with-color-mix.html
-  - subtest: Animate from neutral keyframe with color-mix to srgb
-    test: animate-with-color-mix.html
-  - subtest: Animate from srgb to neutral keyframe with color-mix
-    test: animate-with-color-mix.html
-  - subtest: Animate from color-mix with transparency to legacy rgba
-    test: animate-with-color-mix.html
-  - subtest: Animate from legacy rgba to color-mix with transparency
-    test: animate-with-color-mix.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1884234
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1634352
+      results:
+        - test: animation-important-001.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1635063
+      results:
+        - test: Document-getAnimations.tentative.html
+          subtest: CSS Animations targetting (pseudo-)elements should have correct order after sorting (::marker)
+    - product: chrome
+      url: https://crbug.com/868224
+      results:
+        - test: idlharness.html
+          status: FAIL
+    - product: safari
+      url: https://bugs.webkit.org/show_bug.cgi?id=189692
+      results:
+        - test: animation-important-001.html
+    - product: safari
+      url: https://bugs.webkit.org/show_bug.cgi?id=221961
+      results:
+        - test: event-order.tentative.html
+          subtest: Same events on pseudo-elements follow the prescribed order (::marker)
+    - product: chrome
+      url: https://bugs.chromium.org/p/chromium/issues/detail?id=1060322
+      results:
+        - test: CSSAnimation-compositeOrder.tentative.html
+    - product: chrome
+      url: https://bugs.chromium.org/p/chromium/issues/detail?id=1221622
+      results:
+        - test: Document-getAnimations.tentative.html
+          subtest: Order of CSS Animations - free animations
+    - product: chrome
+      url: https://bugs.chromium.org/p/chromium/issues/detail?id=816956
+      results:
+        - test: KeyframeEffect-getKeyframes.tentative.html
+    - product: chrome
+      url: https://bugs.chromium.org/p/chromium/issues/detail?id=1227201
+      results:
+        - test: Element-getAnimations-dynamic-changes.tentative.html
+        - test: event-dispatch.tentative.html
+        - test: event-order.tentative.html
+    - product: safari
+      url: https://bugs.webkit.org/show_bug.cgi?id=235139
+      results:
+        - test: KeyframeEffect-getKeyframes.tentative.html
+    - product: safari
+      url: https://bugs.webkit.org/show_bug.cgi?id=235146
+      results:
+        - test: flip-running-animation-via-variable.html
+    - product: safari
+      url: https://bugs.webkit.org/show_bug.cgi?id=235138
+      results:
+        - test: '*'
+    - product: safari
+      url: https://bugs.webkit.org/show_bug.cgi?id=235140
+      results:
+        - test: animation-base-response-001.html
+    - product: safari
+      url: https://bugs.webkit.org/show_bug.cgi?id=235141
+      results:
+        - test: animation-base-response-003.html
+    - product: safari
+      url: https://bugs.webkit.org/show_bug.cgi?id=235142
+      results:
+        - test: animation-base-response-004.html
+    - product: safari
+      url: https://bugs.webkit.org/show_bug.cgi?id=235144
+      results:
+        - test: animation-important-002.html
+    - product: safari
+      url: https://bugs.webkit.org/show_bug.cgi?id=235143
+      results:
+        - test: animation-important-001.html
+    - product: safari
+      url: https://bugs.webkit.org/show_bug.cgi?id=235145
+      results:
+        - test: event-order.tentative.html
+    - label: interop-2022-dialog
+      results:
+        - test: dialog-backdrop-animation.html
+        - test: dialog-animation.html
+    - product: safari
+      url: https://bugs.webkit.org/show_bug.cgi?id=251499
+      results:
+        - test: KeyframeEffect-getKeyframes.tentative.html
+          subtest: KeyframeEffect.getKeyframes() returns expected frames for an animation with a 0% keyframe and no 100% keyframe
+        - test: KeyframeEffect-getKeyframes.tentative.html
+          subtest: KeyframeEffect.getKeyframes() returns expected frames for an animation with a 100% keyframe and no 0% keyframe
+        - test: KeyframeEffect-getKeyframes.tentative.html
+          subtest: KeyframeEffect.getKeyframes() returns expected frames for an animation with no 0% or 100% keyframe but with a 50% keyframe
+        - test: KeyframeEffect-getKeyframes.tentative.html
+          subtest: KeyframeEffect.getKeyframes() returns expected values for animations with filter properties and missing keyframes
+        - test: KeyframeEffect-getKeyframes.tentative.html
+          subtest: KeyframeEffect.getKeyframes() returns expected values for animations with text-shadow properties and missing keyframes
+        - test: KeyframeEffect-getKeyframes.tentative.html
+          subtest: KeyframeEffect.getKeyframes() returns expected values for animations with background-size properties and missing keyframes
+        - test: KeyframeEffect-getKeyframes.tentative.html
+          subtest: KeyframeEffect.getKeyframes() returns expected values for animations with CSS variables as keyframe values
+        - test: KeyframeEffect-getKeyframes.tentative.html
+          subtest: KeyframeEffect.getKeyframes() returns expected values for animations with CSS variables as keyframe values in a shorthand property
+        - test: KeyframeEffect-getKeyframes.tentative.html
+          subtest: KeyframeEffect.getKeyframes() returns expected values for animations with a CSS variable which is overriden by the value in keyframe
+    - product: safari
+      url: https://bugs.webkit.org/show_bug.cgi?id=252402
+      results:
+        - test: idlharness.html
+          subtest: 'CSSKeyframesRule interface: attribute length'
+        - test: idlharness.html
+          subtest: 'CSSKeyframesRule interface: keyframes must inherit property "length" with the proper type'
+    - product: safari
+      url: https://bugs.webkit.org/show_bug.cgi?id=252418
+      results:
+        - test: animation-opacity-pause-and-set-time.html
+    - product: safari
+      url: https://bugs.webkit.org/show_bug.cgi?id=252481
+      results:
+        - test: translation-animation-on-important-property.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1841337
+      results:
+        - test: dialog-backdrop-animation.html
+    - product: safari
+      url: https://bugs.webkit.org/show_bug.cgi?id=259192
+      results:
+        - test: display-none-dont-cancel.tentative.html
+          subtest: display:none animating to display:inline should be inline for the whole animation.
+        - test: display-none-dont-cancel.tentative.html
+          subtest: A CSS variable of display:none animating to display:inline should be inline for the whole animation.
+        - test: display-none-dont-cancel.tentative.html
+          subtest: Animating from display:none to display:none should not cancel the animation.
+        - test: display-none-dont-cancel.tentative.html
+          subtest: Animating from display:none to display:none with an intermediate variable should not cancel the animation.
+        - test: display-none-dont-cancel.tentative.html
+          subtest: Animating a variable of "none" which gets set to display elsewhere should not cancel the animation.
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1884234
+      results:
+        - test: animate-with-color-mix.html
+          subtest: Animate from neutral keyframe with color-mix to legacy rgb
+        - test: animate-with-color-mix.html
+          subtest: Animate from legacy rgb to neutral keyframe with color-mix
+        - test: animate-with-color-mix.html
+          subtest: Animate from neutral keyframe with color-mix to srgb
+        - test: animate-with-color-mix.html
+          subtest: Animate from srgb to neutral keyframe with color-mix
+        - test: animate-with-color-mix.html
+          subtest: Animate from color-mix with transparency to legacy rgba
+        - test: animate-with-color-mix.html
+          subtest: Animate from legacy rgba to color-mix with transparency
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1887062
+      results:
+        - test: animation-important-002.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1887072
+      results:
+        - test: KeyframeEffect-getKeyframes.tentative.html

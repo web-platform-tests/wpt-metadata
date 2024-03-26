@@ -1242,8 +1242,14 @@ links:
           subtest: Calling attachShadow() on declarative shadow root must match type
         - test: declarative-shadow-dom-repeats.html
           subtest: Calling attachShadow() on declarative shadow root must match all parameters
+        - test: declarative-shadow-dom-repeats-2.html
     - product: firefox
       url: https://bugzilla.mozilla.org/show_bug.cgi?id=1880714
       results:
         - test: declarative-shadow-dom-repeats.html
           subtest: Calling attachShadow() on declarative shadow root must match mode
+    - product: chrome
+      url: https://g-issues.chromium.org/issues/329330085
+      results:
+        - test: declarative-shadow-dom-opt-in.html
+          subtest: DOMParser (includeShadowRoots is historical)

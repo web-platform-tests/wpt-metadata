@@ -499,3 +499,15 @@ links:
           subtest: e.style['animation-range-start'] = "entry" should set the property value
         - test: animation-range-start-valid.html
           subtest: e.style['animation-range-start'] = "exit" should set the property value
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1885013
+      results:
+        - test: animation-computed.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1887073
+      results:
+        - test: animation-valid.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1887074
+      results:
+        - test: keyframes-allowed-properties.html
