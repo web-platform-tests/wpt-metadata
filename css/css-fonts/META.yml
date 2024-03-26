@@ -469,3 +469,20 @@ links:
           subtest: 'CSS Animations: property <font-stretch> from [100%] to [calc(sign(20rem - 20px) * 180%)] at (0) should be [100%]'
         - test: font-stretch-interpolation-math-functions.html
           subtest: 'Web Animations: property <font-stretch> from [100%] to [calc(sign(20rem - 20px) * 180%)] at (0) should be [100%]'
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1740584
+      results:
+        - test: rex-in-monospace.html
+        - test: rcap-in-monospace.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1887100
+      results:
+        - test: system-ui-mixed.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1880121
+      results:
+        - test: font-size-adjust-interpolation-math-functions.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1887101
+      results:
+        - test: system-fonts-serialization.tentative.html

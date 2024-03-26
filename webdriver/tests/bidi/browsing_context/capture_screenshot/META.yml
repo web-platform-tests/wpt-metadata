@@ -6,7 +6,8 @@ links:
           subtest: test_clip_element
         - test: clip.py
           subtest: test_clip_viewport
-    - label: chromium-bidi-2023
+    - url: ""
+      label: chromium-bidi-2023
       results:
         - test: capture_screenshot.py
         - test: clip.py
@@ -21,6 +22,8 @@ links:
           subtest: test_format_type
         - test: format.py
           subtest: test_format_quality
+        - test: invalid.py
+          subtest: test_params_format_invalid_value
     - product: firefox
       url: https://bugzilla.mozilla.org/show_bug.cgi?id=1761445
       results:
