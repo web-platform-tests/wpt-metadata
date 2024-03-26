@@ -1,6 +1,28 @@
 links:
 - product: firefox
   results:
+  - subtest: Option elements should work if they are a descendant of a selects datalist.
+    test: select-datalist-options-idl.tentative.html
+  - subtest: Options in datalist should still work when the multiple attribute is
+      added.
+    test: select-datalist-options-idl.tentative.html
+  - subtest: Options in datalist in multiple should work after re-parsing and re-attaching.
+    test: select-datalist-options-idl.tentative.html
+  - subtest: <button>s and <datalist>s should be allowed in <select>.
+    test: select-parsing.tentative.html
+  - subtest: </select> should close <button>.
+    test: select-parsing.tentative.html
+  - subtest: </select> should close <datalist>.
+    test: select-parsing.tentative.html
+  - subtest: <select> in <button> in <select> should remove inner <select>.
+    test: select-parsing.tentative.html
+  - subtest: <select> in <select><button><div> should remove inner <select>.
+    test: select-parsing.tentative.html
+  - subtest: Nested <button>s or <datalist>s in <select> should be dropped.
+    test: select-parsing.tentative.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1886597
+- product: firefox
+  results:
   - test: select-keyboard-behavior.tentative.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1886582
 - product: firefox
