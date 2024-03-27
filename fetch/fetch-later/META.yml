@@ -24,3 +24,161 @@ links:
   results:
   - test: send-on-deactivate.tentative.https.window.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1876246
+- product: firefox
+  results:
+  - subtest: fetchLater() sends out based on activateAfter.
+    test: activate-after.tentative.https.window.html
+  - subtest: fetchLater() sends out based on activateAfter, even if document is in
+      BFCache.
+    test: activate-after.tentative.https.window.html
+  - subtest: A blank iframe can trigger fetchLater.
+    test: iframe.tentative.https.window.html
+  - subtest: A same-origin iframe can trigger fetchLater.
+    test: iframe.tentative.https.window.html
+  - subtest: A cross-origin iframe can trigger fetchLater.
+    test: iframe.tentative.https.window.html
+  - subtest: A blank window[target=''][features='0'] can trigger fetchLater.
+    test: new-window.tentative.https.window.html
+  - subtest: A same-origin window[target=''][features='0'] can trigger fetchLater.
+    test: new-window.tentative.https.window.html
+  - subtest: A cross-origin window[target=''][features='0'] can trigger fetchLater.
+    test: new-window.tentative.https.window.html
+  - subtest: A blank window[target=''][features='1'] can trigger fetchLater.
+    test: new-window.tentative.https.window.html
+  - subtest: A same-origin window[target=''][features='1'] can trigger fetchLater.
+    test: new-window.tentative.https.window.html
+  - subtest: A cross-origin window[target=''][features='1'] can trigger fetchLater.
+    test: new-window.tentative.https.window.html
+  - subtest: A blank window[target=''][features='2'] can trigger fetchLater.
+    test: new-window.tentative.https.window.html
+  - subtest: A same-origin window[target=''][features='2'] can trigger fetchLater.
+    test: new-window.tentative.https.window.html
+  - subtest: A cross-origin window[target=''][features='2'] can trigger fetchLater.
+    test: new-window.tentative.https.window.html
+  - subtest: A blank window[target='_blank'][features='0'] can trigger fetchLater.
+    test: new-window.tentative.https.window.html
+  - subtest: A same-origin window[target='_blank'][features='0'] can trigger fetchLater.
+    test: new-window.tentative.https.window.html
+  - subtest: A cross-origin window[target='_blank'][features='0'] can trigger fetchLater.
+    test: new-window.tentative.https.window.html
+  - subtest: A blank window[target='_blank'][features='1'] can trigger fetchLater.
+    test: new-window.tentative.https.window.html
+  - subtest: A same-origin window[target='_blank'][features='1'] can trigger fetchLater.
+    test: new-window.tentative.https.window.html
+  - subtest: A cross-origin window[target='_blank'][features='1'] can trigger fetchLater.
+    test: new-window.tentative.https.window.html
+  - subtest: A blank window[target='_blank'][features='2'] can trigger fetchLater.
+    test: new-window.tentative.https.window.html
+  - subtest: A same-origin window[target='_blank'][features='2'] can trigger fetchLater.
+    test: new-window.tentative.https.window.html
+  - subtest: A cross-origin window[target='_blank'][features='2'] can trigger fetchLater.
+    test: new-window.tentative.https.window.html
+  - subtest: A fetchLater() call accept small data in POST request of String.
+    test: quota.tentative.https.window.html
+  - subtest: A fetchLater() call accept small data in POST request of ArrayBuffer.
+    test: quota.tentative.https.window.html
+  - subtest: A fetchLater() call accept small data in POST request of FormData.
+    test: quota.tentative.https.window.html
+  - subtest: A fetchLater() call accept small data in POST request of URLSearchParams.
+    test: quota.tentative.https.window.html
+  - subtest: A fetchLater() call accept small data in POST request of Blob.
+    test: quota.tentative.https.window.html
+  - subtest: A fetchLater() call accept small data in POST request of File.
+    test: quota.tentative.https.window.html
+  - subtest: A single fetchLater() call takes up the per-origin quota for its body
+      of String.
+    test: quota.tentative.https.window.html
+  - subtest: A single fetchLater() call takes up the per-origin quota for its body
+      of ArrayBuffer.
+    test: quota.tentative.https.window.html
+  - subtest: A single fetchLater() call takes up the per-origin quota for its body
+      of Blob.
+    test: quota.tentative.https.window.html
+  - subtest: A single fetchLater() call takes up the per-origin quota for its body
+      of File.
+    test: quota.tentative.https.window.html
+  - subtest: A single fetchLater() call does not accept empty data in POST request
+      of String.
+    test: quota.tentative.https.window.html
+  - subtest: A single fetchLater() call does not accept empty data in POST request
+      of ArrayBuffer.
+    test: quota.tentative.https.window.html
+  - subtest: A single fetchLater() call does not accept empty data in POST request
+      of FormData.
+    test: quota.tentative.https.window.html
+  - subtest: A single fetchLater() call does not accept empty data in POST request
+      of URLSearchParams.
+    test: quota.tentative.https.window.html
+  - subtest: A single fetchLater() call does not accept empty data in POST request
+      of Blob.
+    test: quota.tentative.https.window.html
+  - subtest: A single fetchLater() call does not accept empty data in POST request
+      of File.
+    test: quota.tentative.https.window.html
+  - subtest: A single fetchLater() call is not allowed to exceed per-origin quota
+      for its body of String.
+    test: quota.tentative.https.window.html
+  - subtest: A single fetchLater() call is not allowed to exceed per-origin quota
+      for its body of ArrayBuffer.
+    test: quota.tentative.https.window.html
+  - subtest: A single fetchLater() call is not allowed to exceed per-origin quota
+      for its body of FormData.
+    test: quota.tentative.https.window.html
+  - subtest: A single fetchLater() call is not allowed to exceed per-origin quota
+      for its body of URLSearchParams.
+    test: quota.tentative.https.window.html
+  - subtest: A single fetchLater() call is not allowed to exceed per-origin quota
+      for its body of Blob.
+    test: quota.tentative.https.window.html
+  - subtest: A single fetchLater() call is not allowed to exceed per-origin quota
+      for its body of File.
+    test: quota.tentative.https.window.html
+  - subtest: The 2nd fetchLater() call is not allowed to exceed per-origin quota for
+      its body of String.
+    test: quota.tentative.https.window.html
+  - subtest: The 2nd fetchLater() call is not allowed to exceed per-origin quota for
+      its body of ArrayBuffer.
+    test: quota.tentative.https.window.html
+  - subtest: The 2nd fetchLater() call is not allowed to exceed per-origin quota for
+      its body of FormData.
+    test: quota.tentative.https.window.html
+  - subtest: The 2nd fetchLater() call is not allowed to exceed per-origin quota for
+      its body of URLSearchParams.
+    test: quota.tentative.https.window.html
+  - subtest: The 2nd fetchLater() call is not allowed to exceed per-origin quota for
+      its body of Blob.
+    test: quota.tentative.https.window.html
+  - subtest: The 2nd fetchLater() call is not allowed to exceed per-origin quota for
+      its body of File.
+    test: quota.tentative.https.window.html
+  - subtest: The 2nd fetchLater() call to another origin does not exceed per-origin
+      quota for its body of String.
+    test: quota.tentative.https.window.html
+  - subtest: The 2nd fetchLater() call to another origin does not exceed per-origin
+      quota for its body of ArrayBuffer.
+    test: quota.tentative.https.window.html
+  - subtest: The 2nd fetchLater() call to another origin does not exceed per-origin
+      quota for its body of FormData.
+    test: quota.tentative.https.window.html
+  - subtest: The 2nd fetchLater() call to another origin does not exceed per-origin
+      quota for its body of URLSearchParams.
+    test: quota.tentative.https.window.html
+  - subtest: The 2nd fetchLater() call to another origin does not exceed per-origin
+      quota for its body of Blob.
+    test: quota.tentative.https.window.html
+  - subtest: The 2nd fetchLater() call to another origin does not exceed per-origin
+      quota for its body of File.
+    test: quota.tentative.https.window.html
+  - subtest: fetchLater() sends on page entering BFCache if BackgroundSync is off.
+    test: send-on-deactivate.tentative.https.window.html
+  - subtest: Call fetchLater() when BFCached with activateAfter=0 sends immediately.
+    test: send-on-deactivate.tentative.https.window.html
+  - subtest: fetchLater() sends on navigating away a page w/o BFCache.
+    test: send-on-deactivate.tentative.https.window.html
+  - subtest: fetchLater() does not send aborted request on navigating away a page
+      w/o BFCache.
+    test: send-on-deactivate.tentative.https.window.html
+  - subtest: fetchLater() with activateAfter=1m sends on page entering BFCache if
+      BackgroundSync is off.
+    test: send-on-deactivate.tentative.https.window.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1888022
