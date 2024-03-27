@@ -5,3 +5,13 @@ links:
   - test: send-multiple-with-activate-after.tentative.https.window.html
   - test: send-multiple.tentative.https.window.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1874988
+- product: firefox
+  results:
+  - subtest: A discarded document does not send an already aborted fetchLater request.
+    test: not-send-after-abort.tentative.https.window.html
+  - subtest: A discarded document sends all its fetchLater requests, no matter how
+      much their activateAfter timeout remain.
+    test: send-multiple-with-activate-after.tentative.https.window.html
+  - subtest: A discarded document sends all its fetchLater requests.
+    test: send-multiple.tentative.https.window.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1888022
