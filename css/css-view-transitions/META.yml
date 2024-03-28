@@ -210,3 +210,45 @@ links:
   - subtest: properties of pseudo elements outside of transition
     test: pseudo-get-computed-style.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1880786
+- product: firefox
+  results:
+  - test: no-white-flash-before-activation.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1886501
+- product: firefox
+  results:
+  - test: inline-element-size.html
+  - test: massive-element-below-and-on-top-of-viewport-partially-onscreen-new.html
+  - test: massive-element-below-and-on-top-of-viewport-partially-onscreen-old.html
+  - test: massive-element-below-viewport-partially-onscreen-new.html
+  - test: massive-element-below-viewport-partially-onscreen-old.html
+  - test: massive-element-left-of-viewport-partially-onscreen-old.html
+  - test: massive-element-on-top-of-viewport-partially-onscreen-new.html
+  - test: massive-element-on-top-of-viewport-partially-onscreen-old.html
+  - test: massive-element-right-and-left-of-viewport-partially-onscreen-new.html
+  - test: massive-element-right-and-left-of-viewport-partially-onscreen-old.html
+  - test: massive-element-right-of-viewport-partially-onscreen-new.html
+  - test: massive-element-right-of-viewport-partially-onscreen-old.html
+  - test: new-content-captures-spans.html
+  - test: new-content-from-root-display-none.html
+  - test: new-content-has-scrollbars.html
+  - test: no-root-capture.html
+  - test: nothing-captured.html
+  - test: snapshot-containing-block-absolute.html
+  - subtest: hit test should not hit unpainted element, but does hit pseudo and unrelated
+      elements
+    test: hit-test-unpainted-element-from-point.html
+  - subtest: startViewTransition in massive iframe shouldn't crash.
+    test: no-crash-view-transition-in-massive-iframe.html
+  - subtest: CSS animation is blocked until prepare callback
+    test: no-css-animation-while-render-blocked.html
+  - subtest: rAF is blocked until prepare callback
+    test: no-raf-while-render-blocked.html
+  - subtest: '
+
+      View transitions: Resizing viewport before animating rejects the ready promise.
+
+      '
+    test: window-resize-aborts-transition-before-ready.html
+  - subtest: 'View transitions: Resizing viewport skips the transition'
+    test: window-resize-aborts-transition.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1888110

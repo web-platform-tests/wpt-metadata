@@ -1001,11 +1001,6 @@ links:
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1875258
 - product: firefox
   results:
-  - subtest: .target 6
-    test: anchor-name-style-contained-dynamic.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1877168
-- product: firefox
-  results:
   - subtest: 'CSS Transitions: property <anchor-name> from [none] to [--foo] at (-0.3)
       should be [--foo]'
     test: property-interpolations.html
@@ -2120,18 +2115,6 @@ links:
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1884939
 - product: firefox
   results:
-  - subtest: .target 2
-    test: anchor-name-style-contained-dynamic.html
-  - subtest: .target 3
-    test: anchor-name-style-contained-dynamic.html
-  - subtest: .target 8
-    test: anchor-name-style-contained-dynamic.html
-  - subtest: .target 9
-    test: anchor-name-style-contained-dynamic.html
-  - subtest: .target 2
-    test: anchor-name-style-contained.html
-  - subtest: .target 4
-    test: anchor-name-style-contained.html
   - subtest: Target should not scroll with viewport when anchor is in fixed-positioned
       scroller
     test: anchor-scroll-005.html
@@ -3127,3 +3110,27 @@ links:
   - subtest: 'inset: revert-layer is disallowed in @position-try'
     test: at-position-try-allowed-declarations.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1886004
+- product: firefox
+  results:
+  - subtest: getComputedStyle() with fragmented containing block in multicolumn layout
+    test: anchor-getComputedStyle-002.html
+  - subtest: getComputedStyle() with fragmented containing block in inline layout
+    test: anchor-getComputedStyle-002.html
+  - subtest: .target 4
+    test: anchor-name-inline-001.html
+  - subtest: .target 5
+    test: anchor-name-inline-001.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1886762
+- product: firefox
+  results:
+  - subtest: '@position-try rule applies'
+    test: position-try-cascade.html
+  - subtest: '@position-try rule wins over inline style'
+    test: position-try-cascade.html
+  - subtest: '@position-try rule does not win over !important'
+    test: position-try-cascade.html
+  - subtest: '@position-try rule does not win over animations'
+    test: position-try-cascade.html
+  - subtest: '@position-try rule does not win over transitions'
+    test: position-try-cascade.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1888130
