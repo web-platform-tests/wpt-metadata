@@ -191,7 +191,8 @@ links:
         - test: pointerevent_capture_suppressing_mouse.html
           subtest: Test pointer capture.
         - test: pointerevent_capture_suppressing_mouse.html
-    - label: interop-2023-events
+    - url: ""
+      label: interop-2023-events
       results:
         - test: capturing_boundary_event_handler_at_ua_shadowdom.html?mouse
         - test: pointerevent_after_target_removed.html?mouse
@@ -297,6 +298,10 @@ links:
       results:
         - test: coalesced_events_attributes_under_load.https.html?mouse
         - test: coalesced_events_attributes.https.html?mouse
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1888014
+      results:
+        - test: pointerevent_after_target_removed.html?pen
     - product: firefox
       url: https://bugzilla.mozilla.org/show_bug.cgi?id=1888013
       results:
