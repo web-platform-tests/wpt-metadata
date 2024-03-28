@@ -35,3 +35,23 @@ links:
           subtest: event state during post-click handling
         - test: Event-dispatch-click.html
           subtest: redispatch during post-click handling
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1689540
+      results:
+        - test: passive-by-default.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1888507
+      results:
+        - test: Event-dispatch-detached-input-and-change.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1888512
+      results:
+        - test: event-global-extra.window.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1888520
+      results:
+        - test: event-global-is-still-set-when-reporting-exception-onerror.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1888534
+      results:
+        - test: EventListener-handleEvent-cross-realm.html

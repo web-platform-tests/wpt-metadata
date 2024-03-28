@@ -1,13 +1,12 @@
 links:
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1885573
-      results:
-        - test: invalid-css-properties.html
-          subtest: None of the listed properties should be applied
-        - test: no-end-tag-no-contents.html
-          subtest: The permission element should have no end tag or contents
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1885044
-      results:
-        - test: negative-offset-and-margin.html
-          subtest: Negative margins/offset should be changed to 0px
+- product: firefox
+  results:
+  - subtest: None of the listed properties should be applied
+    test: invalid-css-properties.tentative.html
+  - subtest: Negative margins/offset should be changed to 0px
+    test: negative-offset-and-margin.tentative.html
+  - subtest: Expressions margins/offset should always return at least 0px
+    test: negative-offset-and-margin.tentative.html
+  - subtest: The permission element should have no end tag or contents
+    test: no-end-tag-no-contents.tentative.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1886422

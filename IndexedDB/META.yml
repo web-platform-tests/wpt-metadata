@@ -24,8 +24,7 @@ links:
     - url: https://github.com/web-platform-tests/wpt/issues/10706
       results:
         - test: keypath-special-identifiers.htm
-    - url: ""
-      label: interop-2024-indexeddb
+    - label: interop-2024-indexeddb
       results:
         - test: abort-in-initial-upgradeneeded.html
         - test: back-forward-cache-open-connection.window.html
@@ -171,9 +170,6 @@ links:
         - test: idbdatabase_createObjectStore7.htm
         - test: idbdatabase_createObjectStore8-parameters.htm
         - test: idbdatabase_createObjectStore9-invalidparameters.htm
-        - test: idbdatabase_deleteObjectStore.htm
-        - test: idbdatabase_deleteObjectStore3.htm
-        - test: idbdatabase_deleteObjectStore4-not_reused.htm
         - test: idbdatabase_transaction.htm
         - test: idbdatabase_transaction2.htm
         - test: idbdatabase_transaction3.htm
@@ -262,15 +258,6 @@ links:
         - test: idbobjectstore_createIndex7-event_order.htm
         - test: idbobjectstore_createIndex8-valid_keys.htm
         - test: idbobjectstore_createIndex9-emptyname.htm
-        - test: idbobjectstore_delete.htm
-        - test: idbobjectstore_delete2.htm
-        - test: idbobjectstore_delete3.htm
-        - test: idbobjectstore_delete4.htm
-        - test: idbobjectstore_delete5.htm
-        - test: idbobjectstore_delete6.htm
-        - test: idbobjectstore_delete7.htm
-        - test: idbobjectstore_deleted.htm
-        - test: idbobjectstore_deleteIndex.htm
         - test: idbobjectstore_get.any.html
         - test: idbobjectstore_get.any.worker.html
         - test: idbobjectstore_get2.any.html
@@ -469,6 +456,8 @@ links:
       url: https://bugzilla.mozilla.org/show_bug.cgi?id=1878137
       results:
         - test: idbfactory-deleteDatabase-opaque-origin.html
+        - test: idbfactory-databases-opaque-origin.html
+        - test: idbfactory-open-opaque-origin.html
     - product: firefox
       url: https://bugzilla.mozilla.org/show_bug.cgi?id=1878143
       results:
@@ -480,6 +469,10 @@ links:
           subtest: 'IDBTransaction interface: attribute durability'
         - test: idlharness.any.serviceworker.html
           subtest: 'IDBTransaction interface: attribute durability'
+        - test: idlharness.any.worker.html
+        - test: idlharness.any.sharedworker.html
+        - test: idlharness.any.serviceworker.html
+        - test: idlharness.any.html
     - product: firefox
       url: https://bugzilla.mozilla.org/show_bug.cgi?id=1404276
       results:
