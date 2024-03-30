@@ -129,8 +129,7 @@ links:
       url: https://bugs.chromium.org/p/chromium/issues/detail?id=1218915
       results:
         - test: text-overflow-ruby.html
-    - url: ""
-      label: interop-2022-forms
+    - label: interop-2022-forms
       results:
         - test: compute-kind-widget-fallback-props-revert-001.html
         - test: compute-kind-widget-no-fallback-props-001.html
@@ -217,3 +216,26 @@ links:
       url: https://bugzilla.mozilla.org/show_bug.cgi?id=1887432
       results:
         - test: appearance-menulist-button-002.tentative.html
+    - product: safari
+      url: https://bugs.webkit.org/show_bug.cgi?id=271923
+      results:
+        - test: appearance-cssom-001.html?include=Invalid
+          subtest: 'appearance: -apple-pay-button (invalid)'
+        - test: appearance-cssom-001.html?include=Invalid
+          subtest: 'appearance: square-button (invalid)'
+        - test: appearance-cssom-001.html?include=Invalid
+          subtest: 'appearance: slider-vertical (invalid)'
+        - test: appearance-cssom-001.html?include=Invalid
+          subtest: 'appearance: slider-horizontal (invalid)'
+        - test: appearance-cssom-001.html?include=Invalid
+          subtest: 'appearance: push-button (invalid)'
+        - test: appearance-cssom-001.html?include=Invalid
+          subtest: '-webkit-appearance: -apple-pay-button (invalid)'
+        - test: appearance-cssom-001.html?include=Invalid
+          subtest: '-webkit-appearance: slider-vertical (invalid)'
+        - test: appearance-cssom-001.html?include=Invalid
+          subtest: '-webkit-appearance: square-button (invalid)'
+        - test: appearance-cssom-001.html?include=Invalid
+          subtest: '-webkit-appearance: slider-horizontal (invalid)'
+        - test: appearance-cssom-001.html?include=Invalid
+          subtest: '-webkit-appearance: push-button (invalid)'
