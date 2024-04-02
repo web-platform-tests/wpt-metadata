@@ -117,3 +117,15 @@ links:
       --bar" should not set unrelated longhands
     test: position-try-parsing.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1884990
+- product: firefox
+  results:
+  - subtest: e.style['position-try-options'] = "flip-start flip-inline, flip-block"
+      should set the property value
+    test: position-try-options-parsing.html
+  - subtest: e.style['position-try-options'] = "flip-start flip-inline flip-block"
+      should set the property value
+    test: position-try-options-parsing.html
+  - subtest: e.style['position-try-options'] = "--bar flip-inline flip-block" should
+      set the property value
+    test: position-try-options-parsing.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1889176
