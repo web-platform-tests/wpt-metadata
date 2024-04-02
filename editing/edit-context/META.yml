@@ -57,3 +57,14 @@ links:
   - subtest: EditContext should allow a backwards selection
     test: edit-context-basics.tentative.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1880683
+- product: firefox
+  results:
+  - subtest: document.execCommand("inserttext") should not change the DOM or fire
+      textupdate
+    test: edit-context-execCommand.tentative.https.html
+  - subtest: document.execCommand("bold") should not change the DOM or fire textupdate
+    test: edit-context-execCommand.tentative.https.html
+  - subtest: queryCommandState, queryCommandvalue, and queryCommandInterm should always
+      return false
+    test: edit-context-execCommand.tentative.https.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1889204

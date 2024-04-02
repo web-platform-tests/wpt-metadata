@@ -1,70 +1,93 @@
 links:
-    - product: webkitgtk
-      url: https://bugs.webkit.org/show_bug.cgi?id=206653
-      results:
-        - test: async-navigator-clipboard-basics.https.html
-          status: FAIL
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1647538
-      results:
-        - test: idlharness.https.window.html
-          subtest: 'ClipboardItem interface: existence and properties of interface prototype object'
-        - test: idlharness.https.window.html
-          subtest: 'ClipboardItem interface: operation getType(DOMString)'
-        - test: idlharness.https.window.html
-          subtest: 'ClipboardItem interface: existence and properties of interface prototype object''s "constructor" property'
-        - test: idlharness.https.window.html
-          subtest: 'ClipboardItem interface: existence and properties of interface object'
-        - test: idlharness.https.window.html
-          subtest: 'ClipboardItem interface: existence and properties of interface prototype object''s @@unscopables property'
-        - test: idlharness.https.window.html
-          subtest: ClipboardItem interface object length
-        - test: idlharness.https.window.html
-          subtest: 'ClipboardItem interface: attribute types'
-        - test: idlharness.https.window.html
-          subtest: 'ClipboardItem interface: attribute presentationStyle'
-        - test: idlharness.https.window.html
-          subtest: ClipboardItem interface object name
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1655754
-      results:
-        - test: async-write-blobs-read-blobs.https.html
-          subtest: Verify write and read clipboard (multiple types)
-        - test: async-write-image-read-image.https.html
-          subtest: Verify write error on malformed data [image/png ClipboardItem]
-        - test: async-write-image-read-image.https.html
-          subtest: Verify write and read clipboard [image/png Blob]
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1772896
-      results:
-        - test: async-promise-write-blobs-read-blobs.https.html
-          status: CRASH
-        - test: async-unsanitized-html-formats-write-read.tentative.https.html
-          status: CRASH
-        - test: async-unsanitized-plaintext-formats-write-read.tentative.https.html
-          status: CRASH
-        - test: async-write-blobs-read-blobs.https.html
-          status: CRASH
-        - test: async-write-html-read-html.https.html
-          status: CRASH
-        - test: async-write-image-read-image.https.html
-          status: CRASH
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1772897
-      results:
-        - test: async-promise-write-blobs-read-blobs.https.html
-          subtest: Verify write and read clipboard (multiple types) with promise to Blobs
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1797710
-      results:
-        - test: async-navigator-clipboard-basics.https.html
-          subtest: navigator.clipboard.write(Promise<DOMString>) fails
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1804026
-      results:
-        - test: async-custom-formats-write-read-web-prefix.tentative.https.html
-          subtest: navigator.clipboard.write() for custom format and Blob type with web prefix
-        - test: async-custom-formats-write-read-without-web-prefix.tentative.https.html
-          subtest: navigator.clipboard.write() for custom format with web prefix, but Blob type without web prefix
-        - test: async-custom-formats-write-read.tentative.https.html
-          subtest: Verify write and read clipboard given 2 platform-neutral custom format inputs
+- product: webkitgtk
+  results:
+  - status: FAIL
+    test: async-navigator-clipboard-basics.https.html
+  url: https://bugs.webkit.org/show_bug.cgi?id=206653
+- product: firefox
+  results:
+  - subtest: 'ClipboardItem interface: existence and properties of interface prototype
+      object'
+    test: idlharness.https.window.html
+  - subtest: 'ClipboardItem interface: operation getType(DOMString)'
+    test: idlharness.https.window.html
+  - subtest: 'ClipboardItem interface: existence and properties of interface prototype
+      object''s "constructor" property'
+    test: idlharness.https.window.html
+  - subtest: 'ClipboardItem interface: existence and properties of interface object'
+    test: idlharness.https.window.html
+  - subtest: 'ClipboardItem interface: existence and properties of interface prototype
+      object''s @@unscopables property'
+    test: idlharness.https.window.html
+  - subtest: ClipboardItem interface object length
+    test: idlharness.https.window.html
+  - subtest: 'ClipboardItem interface: attribute types'
+    test: idlharness.https.window.html
+  - subtest: 'ClipboardItem interface: attribute presentationStyle'
+    test: idlharness.https.window.html
+  - subtest: ClipboardItem interface object name
+    test: idlharness.https.window.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1647538
+- product: firefox
+  results:
+  - subtest: Verify write and read clipboard (multiple types)
+    test: async-write-blobs-read-blobs.https.html
+  - subtest: Verify write error on malformed data [image/png ClipboardItem]
+    test: async-write-image-read-image.https.html
+  - subtest: Verify write and read clipboard [image/png Blob]
+    test: async-write-image-read-image.https.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1655754
+- product: firefox
+  results:
+  - status: CRASH
+    test: async-promise-write-blobs-read-blobs.https.html
+  - status: CRASH
+    test: async-unsanitized-html-formats-write-read.tentative.https.html
+  - status: CRASH
+    test: async-unsanitized-plaintext-formats-write-read.tentative.https.html
+  - status: CRASH
+    test: async-write-blobs-read-blobs.https.html
+  - status: CRASH
+    test: async-write-html-read-html.https.html
+  - status: CRASH
+    test: async-write-image-read-image.https.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1772896
+- product: firefox
+  results:
+  - subtest: Verify write and read clipboard (multiple types) with promise to Blobs
+    test: async-promise-write-blobs-read-blobs.https.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1772897
+- product: firefox
+  results:
+  - subtest: navigator.clipboard.write(Promise<DOMString>) fails
+    test: async-navigator-clipboard-basics.https.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1797710
+- product: firefox
+  results:
+  - subtest: navigator.clipboard.write() for custom format and Blob type with web
+      prefix
+    test: async-custom-formats-write-read-web-prefix.tentative.https.html
+  - subtest: navigator.clipboard.write() for custom format with web prefix, but Blob
+      type without web prefix
+    test: async-custom-formats-write-read-without-web-prefix.tentative.https.html
+  - subtest: Verify write and read clipboard given 2 platform-neutral custom format
+      inputs
+    test: async-custom-formats-write-read.tentative.https.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1804026
+- product: firefox
+  results:
+  - subtest: Verify write and read unsanitized content to the clipboard given text/html
+      format as input
+    test: async-unsanitized-html-formats-write-read.tentative.https.html
+  - subtest: Verify write and read unsanitized content to the clipboard given standard
+      and custom formats as input
+    test: async-unsanitized-plaintext-formats-write-read.tentative.https.html
+  - subtest: navigator.clipboard.read() fails for multiple unsanitized formats requested.
+    test: async-unsanitized-standard-html-read-fail.tentative.https.html
+  - subtest: navigator.clipboard.read() fails for unsanitized text/plain requested.
+    test: async-unsanitized-standard-html-read-fail.tentative.https.html
+  - subtest: navigator.clipboard.read() fails for unsanitized image/png requested.
+    test: async-unsanitized-standard-html-read-fail.tentative.https.html
+  - subtest: navigator.clipboard.read() fails for unsanitized image/svg+xml requested.
+    test: async-unsanitized-standard-html-read-fail.tentative.https.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1889203
