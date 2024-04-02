@@ -52,3 +52,12 @@ links:
   - subtest: Check creating a new request with a new body from a disturbed request
     test: request-disturbed.any.sharedworker.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1854702
+- product: firefox
+  results:
+  - status: CRASH
+    test: request-bad-port.any.worker.html
+  - status: CRASH
+    test: request-bad-port.any.html
+  - status: CRASH
+    test: request-bad-port.any.sharedworker.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1889075
