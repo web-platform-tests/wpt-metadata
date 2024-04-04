@@ -3185,3 +3185,16 @@ links:
   - subtest: '@position-try rule does not win over transitions'
     test: position-try-cascade.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1888130
+- product: firefox
+  results:
+  - subtest: ' horizontal-tb ltr'
+    test: try-tactic-wm.html
+  - subtest: flip-inline horizontal-tb ltr
+    test: try-tactic-wm.html
+  - subtest: flip-inline vertical-lr ltr
+    test: try-tactic-wm.html
+  - subtest: flip-start horizontal-tb ltr
+    test: try-tactic-wm.html
+  - subtest: flip-start horizontal-tb rtl
+    test: try-tactic-wm.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1889674
