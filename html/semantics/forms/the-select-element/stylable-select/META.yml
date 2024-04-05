@@ -26,15 +26,24 @@ links:
   - test: select-keyboard-behavior.tentative.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1886582
 - product: firefox
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1878447
   results:
-  - test: select-parsing.tentative.html
-    subtest: <button>s and <datalist>s should be allowed in <select>.
-  - test: select-parsing.tentative.html
-    subtest: </select> should close <button>.
-  - test: select-parsing.tentative.html
-    subtest: </select> should close <datalist>.
-  - test: select-parsing.tentative.html
-    subtest: <select> in <button> in <select> should remove inner <select>.
-  - test: select-parsing.tentative.html
-    subtest: <select> in <select><button><div> should remove inner <select>.
+  - subtest: <button>s and <datalist>s should be allowed in <select>.
+    test: select-parsing.tentative.html
+  - subtest: </select> should close <button>.
+    test: select-parsing.tentative.html
+  - subtest: </select> should close <datalist>.
+    test: select-parsing.tentative.html
+  - subtest: <select> in <button> in <select> should remove inner <select>.
+    test: select-parsing.tentative.html
+  - subtest: <select> in <select><button><div> should remove inner <select>.
+    test: select-parsing.tentative.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1878447
+- product: firefox
+  results:
+  - subtest: 'defaultbutton-defaultdatalist: When the listbox is closed, spacebar
+      should open the listbox.'
+    test: select-keyboard-behavior.tentative.html
+  - subtest: 'defaultbutton-customdatalist: When the listbox is closed, spacebar should
+      open the listbox.'
+    test: select-keyboard-behavior.tentative.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1889917
