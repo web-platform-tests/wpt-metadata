@@ -29,3 +29,9 @@ links:
       of a 'nested'/'inner' script, executes *before* the inner script executes
     test: Node-appendChild-script-in-script.tentative.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1885387
+- product: firefox
+  results:
+  - subtest: <meta name=referrer> gets processed and applied in the post-insertion
+      steps
+    test: Node-append-meta-referrer-and-script-from-fragment.tentative.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1890575
