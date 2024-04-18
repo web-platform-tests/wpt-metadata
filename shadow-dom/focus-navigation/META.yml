@@ -1,27 +1,106 @@
 links:
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1785036
-      results:
-        - test: focus-with-negative-index.html
-          subtest: 'This is a regression test: After focusing negative tabindex-ed elements, focus moves in tree order.'
-    - label: interop-2023-webcomponents
-      results:
-        - test: delegatesFocus-highlight-sibling.html
-        - test: focus-navigation-slot-nested-delegatesFocus.html
-        - test: focus-navigation-slot-shadow-in-slot.html
-        - test: focus-navigation-slots-in-slot.html
-        - test: focus-navigation-slots.html
-        - test: focus-navigation-slot-nested-2levels.html
-        - test: focus-navigation-slot-nested-fallback.html
-        - test: focus-navigation-slot-fallback-default-tabindex.html
-        - test: focus-navigation-slot-shadow-in-fallback.html
-        - test: focus-navigation-slot-with-tabindex.html
-        - test: focus-navigation.html
-        - test: focus-navigation-with-delegatesFocus.html
-        - test: focus-reverse-unassignable-slot.html
-        - test: focus-navigation-slot-fallback.html
-        - test: focus-navigation-slot-nested.html
-        - test: focus-nested-slots.html
-        - test: focus-reverse-unassigned-slot.html
-        - test: focus-unassignable-slot.html
-        - test: focus-navigation-web-component-radio.html
+- product: firefox
+  results:
+  - subtest: 'This is a regression test: After focusing negative tabindex-ed elements,
+      focus moves in tree order.'
+    test: focus-with-negative-index.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1785036
+- label: interop-2023-webcomponents
+  results:
+  - test: delegatesFocus-highlight-sibling.html
+  - test: focus-navigation-slot-nested-delegatesFocus.html
+  - test: focus-navigation-slot-shadow-in-slot.html
+  - test: focus-navigation-slots-in-slot.html
+  - test: focus-navigation-slots.html
+  - test: focus-navigation-slot-nested-2levels.html
+  - test: focus-navigation-slot-nested-fallback.html
+  - test: focus-navigation-slot-fallback-default-tabindex.html
+  - test: focus-navigation-slot-shadow-in-fallback.html
+  - test: focus-navigation-slot-with-tabindex.html
+  - test: focus-navigation.html
+  - test: focus-navigation-with-delegatesFocus.html
+  - test: focus-reverse-unassignable-slot.html
+  - test: focus-navigation-slot-fallback.html
+  - test: focus-navigation-slot-nested.html
+  - test: focus-nested-slots.html
+  - test: focus-reverse-unassigned-slot.html
+  - test: focus-unassignable-slot.html
+  - test: focus-navigation-web-component-radio.html
+- product: firefox
+  results:
+  - subtest: crbug/474687 :focus style should properly be applied to shadow hosts.
+    test: delegatesFocus-highlight-sibling.html
+  - subtest: Default tabindex for a slot node should be 0.
+    test: focus-navigation-slot-fallback-default-tabindex.html
+  - subtest: Focus should jump to fallback elements when a slot does not have any
+      assigned nodes.
+    test: focus-navigation-slot-fallback.html
+  - subtest: Focus controller should treat each slot as a focus scope.
+    test: focus-navigation-slot-nested-2levels.html
+  - subtest: Focus controller should treat each slot as a focus scope.
+    test: focus-navigation-slot-nested-delegatesFocus.html
+  - subtest: Focus should cover assigned elements of an assigned slot espacially there
+      are fallback contents.
+    test: focus-navigation-slot-nested-fallback.html
+  - subtest: Focus controller should treat each slot as a focus scope.
+    test: focus-navigation-slot-nested.html
+  - subtest: Focus should cover assigned elements of an assigned slot, as well as
+      elements that are directly assigned to a slot.
+    test: focus-navigation-slot-shadow-in-fallback.html
+  - subtest: Focus should cover assigned elements of an assigned slot, as well as
+      elements that are directly assigned to a slot.
+    test: focus-navigation-slot-shadow-in-slot.html
+  - subtest: Slots tabindex should be considred in focus navigation.
+    test: focus-navigation-slot-with-tabindex.html
+  - subtest: Focus should cover assigned nodes of slot, especially for nested slots
+      in slot scope.
+    test: focus-navigation-slots-in-slot.html
+  - subtest: Focus should cover assigned elements of an assigned slot, as well as
+      elements that are directly assigned to a slot.
+    test: focus-navigation-slots.html
+  - subtest: Focus for web component input type elements should be bound by <form>
+      inside shadow DOM
+    test: focus-navigation-web-component-radio.html
+  - subtest: Testing tab navigation order with mode open, no tabindex and delegatesFocus=false.
+    test: focus-navigation-with-delegatesFocus.html
+  - subtest: Testing tab navigation order with mode open, no tabindex and delegatesFocus=true.
+    test: focus-navigation-with-delegatesFocus.html
+  - subtest: Testing tab navigation order with mode open, tabindex=0 and delegatesFocus=false.
+    test: focus-navigation-with-delegatesFocus.html
+  - subtest: Testing tab navigation order with mode open, tabindex=0 and delegatesFocus=true.
+    test: focus-navigation-with-delegatesFocus.html
+  - subtest: Testing tab navigation order with mode open, tabindex=-1 and delegatesFocus=false.
+    test: focus-navigation-with-delegatesFocus.html
+  - subtest: Testing tab navigation order with mode open, tabindex=-1 and delegatesFocus=true.
+    test: focus-navigation-with-delegatesFocus.html
+  - subtest: Testing tab navigation order with mode open, tabindex=1 and delegatesFocus=false.
+    test: focus-navigation-with-delegatesFocus.html
+  - subtest: Testing tab navigation order with mode open, tabindex=1 and delegatesFocus=true.
+    test: focus-navigation-with-delegatesFocus.html
+  - subtest: Testing tab navigation order with mode closed, no tabindex and delegatesFocus=false.
+    test: focus-navigation-with-delegatesFocus.html
+  - subtest: Testing tab navigation order with mode closed, no tabindex and delegatesFocus=true.
+    test: focus-navigation-with-delegatesFocus.html
+  - subtest: Testing tab navigation order with mode closed, tabindex=0 and delegatesFocus=false.
+    test: focus-navigation-with-delegatesFocus.html
+  - subtest: Testing tab navigation order with mode closed, tabindex=0 and delegatesFocus=true.
+    test: focus-navigation-with-delegatesFocus.html
+  - subtest: Testing tab navigation order with mode closed, tabindex=-1 and delegatesFocus=false.
+    test: focus-navigation-with-delegatesFocus.html
+  - subtest: Testing tab navigation order with mode closed, tabindex=-1 and delegatesFocus=true.
+    test: focus-navigation-with-delegatesFocus.html
+  - subtest: Testing tab navigation order with mode closed, tabindex=1 and delegatesFocus=false.
+    test: focus-navigation-with-delegatesFocus.html
+  - subtest: Testing tab navigation order with mode closed, tabindex=1 and delegatesFocus=true.
+    test: focus-navigation-with-delegatesFocus.html
+  - subtest: Focus controller should treat slots as a focus scope.
+    test: focus-navigation.html
+  - subtest: Verifies that focus order goes in flat tree order with buttons inside
+      nested slots which have a mixture of assigned and unassigned states.
+    test: focus-nested-slots.html
+  - subtest: Verifies that focusing forwards from an input inside a slot which has
+      no shadow root goes to the next focusable element in light DOM.
+    test: focus-unassignable-slot.html
+  - subtest: Focus controller should treat slots as a focus scope.
+    test: focus-with-negative-index.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1892334
