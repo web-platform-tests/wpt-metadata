@@ -969,3 +969,15 @@ links:
   results:
   - test: pseudo-elements-010.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1891055
+- product: firefox
+  results:
+  - subtest: Style query 'initial' matching (with explicit 'initial' value)
+    test: custom-property-style-queries.html
+  - subtest: Style query matching negated value-less query against initial value (with
+      explicit 'initial' value)
+    test: custom-property-style-queries.html
+  - subtest: Style query 'space' matching
+    test: custom-property-style-queries.html
+  - subtest: Style query 'space' not matching
+    test: custom-property-style-queries.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1892409
