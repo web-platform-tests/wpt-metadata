@@ -9,3 +9,8 @@ links:
       results:
         - test: credblob-not-supported.https.html
         - test: credblob-supported.https.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1863819
+      results:
+        - test: getcredential-extensions.https.html
+          subtest: navigator.credentials.get() with prf requested but no support in authenticator
