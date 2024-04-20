@@ -1,6 +1,11 @@
 links:
-- product: firefox
-  results:
-  - status: CRASH
-    test: createcredential-pubkeycredparams.https.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1827542
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1827542
+      results:
+        - test: createcredential-pubkeycredparams.https.html
+          status: CRASH
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1844448
+      results:
+        - test: credblob-not-supported.https.html
+        - test: credblob-supported.https.html
