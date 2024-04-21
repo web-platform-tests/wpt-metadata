@@ -14,6 +14,9 @@ links:
       results:
         - test: getcredential-extensions.https.html
           subtest: navigator.credentials.get() with prf requested but no support in authenticator
+        - test: getcredential-prf.https.html
+        - test: createcredential-extensions.https.html
+        - test: createcredential-prf.https.html
     - product: firefox
       url: https://bugzilla.mozilla.org/show_bug.cgi?id=1854089
       results:
@@ -26,3 +29,10 @@ links:
       url: https://bugzilla.mozilla.org/show_bug.cgi?id=1892554
       results:
         - test: public-key-credential-creation-options-from-json.https.window.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1795020
+      results:
+        - test: createcredential-large-blob-not-supported.https.html
+        - test: createcredential-large-blob-supported.https.html
+        - test: getcredential-large-blob-not-supported.https.html
+        - test: getcredential-large-blob-supported.https.html
