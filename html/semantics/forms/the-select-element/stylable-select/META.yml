@@ -92,3 +92,12 @@ links:
       should commit the selected option.'
     test: select-keyboard-behavior.tentative.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1892353
+- product: firefox
+  results:
+  - subtest: showPopover and hidePopover should work on the select datalist.
+    test: select-datalist-popover-behavior.tentative.html
+  - subtest: preventDefault on beforetoggle should prevent the datalist from showing.
+    test: select-datalist-popover-behavior.tentative.html
+  - subtest: showPopover on a disconnected datalist should throw an exception.
+    test: select-datalist-popover-behavior.tentative.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1890832
