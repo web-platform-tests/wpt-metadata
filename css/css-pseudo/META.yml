@@ -117,19 +117,11 @@ links:
       results:
         - test: active-selection-025.html
         - test: active-selection-027.html
-        - test: cascade-highlight-004.html
-        - test: highlight-cascade-001.html
-        - test: highlight-cascade-002.html
-        - test: highlight-paired-cascade-003.html
-        - test: highlight-paired-cascade-006.html
         - test: highlight-styling-002.html
-        - test: cascade-highlight-005.html
     - product: chrome
       url: https://crbug.com/1078474
       results:
         - test: selection-intercharacter-012.html
-        - test: cascade-highlight-001.html
-        - test: cascade-highlight-002.html
         - test: active-selection-012.html
         - test: active-selection-018.html
         - test: selection-intercharacter-011.html
@@ -198,7 +190,6 @@ links:
     - product: chrome
       url: https://crbug.com/1035708
       results:
-        - test: highlight-pseudos-computed.html
         - test: target-text-dynamic-002.html
     - product: firefox
       url: https://bugzilla.mozilla.org/show_bug.cgi?id=1697373
@@ -222,87 +213,9 @@ links:
         - test: first-line-allowed-properties.html
           subtest: textJustify should be applied to first-line pseudo elements.
     - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1704239
-      results:
-        - test: highlight-pseudos-computed.html
-          subtest: 'getComputedStyle() for ::selection: should be element''s default'
-        - test: highlight-pseudos-computed.html
-          subtest: getComputedStyle() for ::selection) should be element's default
-        - test: highlight-pseudos-computed.html
-          subtest: getComputedStyle() for ::selection( should be element's default
-        - test: highlight-pseudos-computed.html
-          subtest: getComputedStyle() for ::selection(foo) should be element's default
-        - test: highlight-pseudos-computed.html
-          subtest: getComputedStyle() for ::selection() should be element's default
-        - test: highlight-pseudos-computed.html
-          subtest: getComputedStyle() for :::selection should be element's default
-        - test: highlight-pseudos-computed.html
-          subtest: getComputedStyle() for ::selection. should be element's default
-        - test: highlight-pseudos-computed.html
-          subtest: 'getComputedStyle() for ::target-text: should be element''s default'
-        - test: highlight-pseudos-computed.html
-          subtest: getComputedStyle() for ::target-text) should be element's default
-        - test: highlight-pseudos-computed.html
-          subtest: getComputedStyle() for ::target-text( should be element's default
-        - test: highlight-pseudos-computed.html
-          subtest: getComputedStyle() for ::target-text(foo) should be element's default
-        - test: highlight-pseudos-computed.html
-          subtest: getComputedStyle() for ::target-text() should be element's default
-        - test: highlight-pseudos-computed.html
-          subtest: getComputedStyle() for :::target-text should be element's default
-        - test: highlight-pseudos-computed.html
-          subtest: getComputedStyle() for ::target-text. should be element's default
-        - test: highlight-pseudos-computed.html
-          subtest: 'getComputedStyle() for ::spelling-error: should be element''s default'
-        - test: highlight-pseudos-computed.html
-          subtest: getComputedStyle() for ::spelling-error) should be element's default
-        - test: highlight-pseudos-computed.html
-          subtest: getComputedStyle() for ::spelling-error( should be element's default
-        - test: highlight-pseudos-computed.html
-          subtest: getComputedStyle() for ::spelling-error(foo) should be element's default
-        - test: highlight-pseudos-computed.html
-          subtest: getComputedStyle() for ::spelling-error() should be element's default
-        - test: highlight-pseudos-computed.html
-          subtest: getComputedStyle() for :::spelling-error should be element's default
-        - test: highlight-pseudos-computed.html
-          subtest: getComputedStyle() for ::spelling-error. should be element's default
-        - test: highlight-pseudos-computed.html
-          subtest: 'getComputedStyle() for ::grammar-error: should be element''s default'
-        - test: highlight-pseudos-computed.html
-          subtest: getComputedStyle() for ::grammar-error) should be element's default
-        - test: highlight-pseudos-computed.html
-          subtest: getComputedStyle() for ::grammar-error( should be element's default
-        - test: highlight-pseudos-computed.html
-          subtest: getComputedStyle() for ::grammar-error(foo) should be element's default
-        - test: highlight-pseudos-computed.html
-          subtest: getComputedStyle() for ::grammar-error() should be element's default
-        - test: highlight-pseudos-computed.html
-          subtest: getComputedStyle() for :::grammar-error should be element's default
-        - test: highlight-pseudos-computed.html
-          subtest: getComputedStyle() for ::grammar-error. should be element's default
-    - product: firefox
       url: https://bugzilla.mozilla.org/show_bug.cgi?id=1705864
       results:
         - test: active-selection-021.html
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1719005
-      results:
-        - test: highlight-pseudos-computed.html
-          subtest: 'getComputedStyle() for ::highlight(foo): should be element''s default'
-        - test: highlight-pseudos-computed.html
-          subtest: getComputedStyle() for ::highlight(foo)) should be element's default
-        - test: highlight-pseudos-computed.html
-          subtest: getComputedStyle() for ::highlight(foo)( should be element's default
-        - test: highlight-pseudos-computed.html
-          subtest: getComputedStyle() for ::highlight(foo)(foo) should be element's default
-        - test: highlight-pseudos-computed.html
-          subtest: getComputedStyle() for ::highlight(foo)() should be element's default
-        - test: highlight-pseudos-computed.html
-          subtest: getComputedStyle() for :::highlight(foo) should be element's default
-        - test: highlight-pseudos-computed.html
-          subtest: getComputedStyle() for ::highlight(foo). should be element's default
-        - test: highlight-pseudos-computed.html
-          subtest: Different getComputedStyle() for ::highlight(bar) and same element
     - product: firefox
       url: https://bugzilla.mozilla.org/show_bug.cgi?id=1729490
       results:
@@ -313,10 +226,6 @@ links:
       url: https://bugzilla.mozilla.org/show_bug.cgi?id=1727771
       results:
         - test: selection-originating-decoration-color.html
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1733723
-      results:
-        - test: highlight-cascade-004.html
     - product: firefox
       url: https://bugzilla.mozilla.org/show_bug.cgi?id=1734335
       results:
@@ -336,14 +245,6 @@ links:
         - test: target-text-dynamic-001.html
         - test: target-text-dynamic-003.html
         - test: target-text-dynamic-004.html
-    - product: safari
-      url: https://bugs.webkit.org/show_bug.cgi?id=232284
-      results:
-        - test: highlight-cascade-004.html
-    - product: webkitgtk
-      url: https://bugs.webkit.org/show_bug.cgi?id=232284
-      results:
-        - test: highlight-cascade-004.html
     - product: chrome
       url: https://bugs.chromium.org/p/chromium/issues/detail?id=798257
       results:
@@ -360,15 +261,6 @@ links:
         - test: highlight-painting-003.html
         - test: highlight-painting-004.html
         - test: highlight-painting-002.html
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1732336
-      results:
-        - test: highlight-paired-cascade-004.html
-    - product: chrome
-      url: https://crbug.com/1350469
-      results:
-        - test: highlight-currentcolor-painting-properties-001.html
-        - test: highlight-currentcolor-painting-properties-002.html
     - product: firefox
       url: https://bugzilla.mozilla.org/show_bug.cgi?id=1663076
       results:
@@ -414,11 +306,6 @@ links:
         - test: grammar-spelling-errors-001.html
         - test: grammar-spelling-errors-002.html
     - product: chrome
-      url: https://crbug.com/1350475
-      results:
-        - test: highlight-currentcolor-painting-text-shadow-001.html
-        - test: highlight-currentcolor-painting-text-shadow-002.html
-    - product: chrome
       url: https://crbug.com/1500288
       results:
         - test: spelling-error-001.html
@@ -436,15 +323,6 @@ links:
       url: https://bugzilla.mozilla.org/show_bug.cgi?id=1875200
       results:
         - test: active-selection-031.html
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1875934
-      results:
-        - test: highlight-pseudos-computed.html
-          subtest: getComputedStyle() for ::target-text
-        - test: highlight-pseudos-computed.html
-          subtest: getComputedStyle() for ::spelling-error
-        - test: highlight-pseudos-computed.html
-          subtest: getComputedStyle() for ::grammar-error
     - product: safari
       url: https://bugs.webkit.org/show_bug.cgi?id=245523
       results:
@@ -473,10 +351,6 @@ links:
       results:
         - test: first-line-nested-gcs.html
     - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1887364
-      results:
-        - test: highlight-currentcolor-computed-visited.html
-    - product: firefox
       url: https://bugzilla.mozilla.org/show_bug.cgi?id=1887366
       results:
         - test: highlight-painting-003.html
@@ -485,14 +359,6 @@ links:
       url: https://bugzilla.mozilla.org/show_bug.cgi?id=1887367
       results:
         - test: highlight-styling-003.tentative.html
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1887368
-      results:
-        - test: highlight-pseudos-visited-computed-001.html
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1887365
-      results:
-        - test: highlight-currentcolor-computed.html
     - product: firefox
       url: https://bugzilla.mozilla.org/show_bug.cgi?id=1887360
       results:
