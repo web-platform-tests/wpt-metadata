@@ -324,3 +324,30 @@ links:
   - subtest: 'from(): Failed conversions'
     test: observable-from.any.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1885721
+- product: firefox
+  results:
+  - subtest: 'filter(): Returned Observable filters out results based on predicate'
+    test: observable-filter.any.html
+  - subtest: 'filter(): Errors thrown in filter predicate are emitted to Observer
+      error() handler'
+    test: observable-filter.any.html
+  - subtest: 'filter(): Passes complete() through from source Observable'
+    test: observable-filter.any.html
+  - subtest: 'filter(): Passes error() through from source Observable'
+    test: observable-filter.any.html
+  - subtest: 'filter(): Upon source completion, source Observable teardown sequence
+      happens after downstream filter complete() is called'
+    test: observable-filter.any.html
+  - subtest: 'filter(): Returned Observable filters out results based on predicate'
+    test: observable-filter.any.worker.html
+  - subtest: 'filter(): Errors thrown in filter predicate are emitted to Observer
+      error() handler'
+    test: observable-filter.any.worker.html
+  - subtest: 'filter(): Passes complete() through from source Observable'
+    test: observable-filter.any.worker.html
+  - subtest: 'filter(): Passes error() through from source Observable'
+    test: observable-filter.any.worker.html
+  - subtest: 'filter(): Upon source completion, source Observable teardown sequence
+      happens after downstream filter complete() is called'
+    test: observable-filter.any.worker.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1893093
