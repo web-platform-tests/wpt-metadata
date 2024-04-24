@@ -1,6 +1,6 @@
 module github.com/web-platform-tests/wpt-metadata
 
-go 1.17
+go 1.20
 
 require (
 	github.com/deckarep/golang-set v1.7.1
