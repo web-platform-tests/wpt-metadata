@@ -841,3 +841,42 @@ links:
           subtest: Property color value 'color(from color(from color(xyz-d65 0.99 0.88 0.77) prophoto-rgb r g b) xyz-d65 x y z)'
         - test: color-computed-relative-color.html
           subtest: Property color value 'color(from color(from color(xyz-d65 0.99 0.88 0.77) rec2020 r g b) xyz-d65 x y z)'
+    - product: chrome
+      url: https://issues.chromium.org/issues/325309578
+      results:
+        - test: color-valid-relative-color.html
+          subtest: e.style['color'] = "rgb(from currentColor r g b)" should set the property value
+        - test: color-valid-relative-color.html
+          subtest: e.style['color'] = "rgba(from currentColor r g b)" should set the property value
+        - test: color-valid-relative-color.html
+          subtest: e.style['color'] = "hsl(from currentColor h s l)" should set the property value
+        - test: color-valid-relative-color.html
+          subtest: e.style['color'] = "hsla(from currentColor h s l)" should set the property value
+        - test: color-valid-relative-color.html
+          subtest: e.style['color'] = "hwb(from currentColor h w b)" should set the property value
+        - test: color-valid-relative-color.html
+          subtest: e.style['color'] = "lab(from currentColor l a b)" should set the property value
+        - test: color-valid-relative-color.html
+          subtest: e.style['color'] = "oklab(from currentColor l a b)" should set the property value
+        - test: color-valid-relative-color.html
+          subtest: e.style['color'] = "lch(from currentColor) l c h)" should set the property value
+        - test: color-valid-relative-color.html
+          subtest: e.style['color'] = "oklch(from currentColor l c h)" should set the property value
+        - test: color-valid-relative-color.html
+          subtest: e.style['color'] = "color(from currentColor srgb r g b)" should set the property value
+        - test: color-valid-relative-color.html
+          subtest: e.style['color'] = "color(from currentColor srgb-linear r g b)" should set the property value
+        - test: color-valid-relative-color.html
+          subtest: e.style['color'] = "color(from currentColor a98-rgb r g b)" should set the property value
+        - test: color-valid-relative-color.html
+          subtest: e.style['color'] = "color(from currentColor rec2020 r g b)" should set the property value
+        - test: color-valid-relative-color.html
+          subtest: e.style['color'] = "color(from currentColor prophoto-rgb r g b)" should set the property value
+        - test: color-valid-relative-color.html
+          subtest: e.style['color'] = "color(from currentColor display-p3 r g b)" should set the property value
+        - test: color-valid-relative-color.html
+          subtest: e.style['color'] = "color(from currentColor xyz x y z)" should set the property value
+        - test: color-valid-relative-color.html
+          subtest: e.style['color'] = "color(from currentColor xyz-d50 x y z)" should set the property value
+        - test: color-valid-relative-color.html
+          subtest: e.style['color'] = "color(from currentColor xyz-d65 x y z)" should set the property value
