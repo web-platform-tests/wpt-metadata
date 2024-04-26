@@ -773,3 +773,30 @@ links:
       url: https://bugzilla.mozilla.org/show_bug.cgi?id=1887462
       results:
         - test: color-computed-relative-color.html
+    - product: chrome
+      url: https://issues.chromium.org/issues/41491798
+      results:
+        - test: color-valid-relative-color.html
+          subtest: e.style['color'] = "rgb(from rebeccapurple none none none)" should set the property value
+        - test: color-valid-relative-color.html
+          subtest: e.style['color'] = "rgb(from rebeccapurple none none none / none)" should set the property value
+        - test: color-valid-relative-color.html
+          subtest: e.style['color'] = "rgb(from rebeccapurple r g none)" should set the property value
+        - test: color-valid-relative-color.html
+          subtest: e.style['color'] = "rgb(from rebeccapurple r g none / alpha)" should set the property value
+        - test: color-valid-relative-color.html
+          subtest: e.style['color'] = "rgb(from rgb(20% 40% 60% / 80%) r g none / alpha)" should set the property value
+        - test: color-valid-relative-color.html
+          subtest: e.style['color'] = "rgba(from rebeccapurple none none none)" should set the property value
+        - test: color-valid-relative-color.html
+          subtest: e.style['color'] = "rgba(from rebeccapurple none none none / none)" should set the property value
+        - test: color-valid-relative-color.html
+          subtest: e.style['color'] = "rgba(from rebeccapurple r g none)" should set the property value
+        - test: color-valid-relative-color.html
+          subtest: e.style['color'] = "rgba(from rebeccapurple r g none / alpha)" should set the property value
+        - test: color-valid-relative-color.html
+          subtest: e.style['color'] = "rgba(from rgb(20% 40% 60% / 80%) r g none / alpha)" should set the property value
+        - test: color-valid-relative-color.html
+          subtest: e.style['color'] = "hsl(from rebeccapurple none none none / none)" should set the property value
+        - test: color-valid-relative-color.html
+          subtest: e.style['color'] = "hsla(from rebeccapurple none none none / none)" should set the property value
