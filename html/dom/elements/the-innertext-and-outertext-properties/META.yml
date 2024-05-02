@@ -611,3 +611,18 @@ links:
           subtest: \n preserved ("<div style='white-space:pre-line'>abc\ndef")
         - test: getter.html
           subtest: \r converted to newline ("<div style='white-space:pre-line'>abc\rdef")
+    - product: safari
+      url: https://bugs.webkit.org/show_bug.cgi?id=176776
+      results:
+        - test: getter.html
+          subtest: No blank lines around <h1> ("<div>123<h1>abc</h1>def")
+        - test: getter.html
+          subtest: No blank lines around <h2> ("<div>123<h2>abc</h2>def")
+        - test: getter.html
+          subtest: No blank lines around <h3> ("<div>123<h3>abc</h3>def")
+        - test: getter.html
+          subtest: No blank lines around <h4> ("<div>123<h4>abc</h4>def")
+        - test: getter.html
+          subtest: No blank lines around <h5> ("<div>123<h5>abc</h5>def")
+        - test: getter.html
+          subtest: No blank lines around <h6> ("<div>123<h6>abc</h6>def")
