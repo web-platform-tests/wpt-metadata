@@ -3,3 +3,16 @@ links:
       url: https://bugs.chromium.org/p/chromium/issues/detail?id=1225773
       results:
         - test: promise-job-incumbent.html
+    - product: safari
+      url: https://bugs.webkit.org/show_bug.cgi?id=207641
+      results:
+        - test: promise-job-entry-different-function-realm.html
+          subtest: Fulfillment handler on fulfilled promise
+        - test: promise-job-entry-different-function-realm.html
+          subtest: Rejection handler on rejected promise
+        - test: promise-job-entry-different-function-realm.html
+          subtest: Fulfillment handler on pending-then-fulfilled promise
+        - test: promise-job-entry-different-function-realm.html
+          subtest: Rejection handler on pending-then-rejected promise
+        - test: promise-job-entry-different-function-realm.html
+          subtest: Thenable resolution
