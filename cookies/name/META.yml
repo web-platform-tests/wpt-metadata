@@ -1,14 +1,161 @@
 links:
-    - product: chrome
-      url: https://bugs.chromium.org/p/chromium/issues/detail?id=1233602
-      results:
-        - test: name-ctl.html
-          subtest: Cookie with %x0 in name is rejected (DOM).
-        - test: name-ctl.html
-          subtest: Cookie with %xa in name is rejected (DOM).
-        - test: name-ctl.html
-          subtest: Cookie with %xd in name is rejected (DOM).
-        - test: name-ctl.html
-          subtest: Cookie with %xa in name is rejected or modified (HTTP).
-        - test: name-ctl.html
-          subtest: Cookie with %xd in name is rejected or modified (HTTP).
+- product: chrome
+  results:
+  - subtest: Cookie with %x0 in name is rejected (DOM).
+    test: name-ctl.html
+  - subtest: Cookie with %xa in name is rejected (DOM).
+    test: name-ctl.html
+  - subtest: Cookie with %xd in name is rejected (DOM).
+    test: name-ctl.html
+  - subtest: Cookie with %xa in name is rejected or modified (HTTP).
+    test: name-ctl.html
+  - subtest: Cookie with %xd in name is rejected or modified (HTTP).
+    test: name-ctl.html
+  url: https://bugs.chromium.org/p/chromium/issues/detail?id=1233602
+- product: firefox
+  results:
+  - subtest: Cookie with %x0 in name is rejected (DOM).
+    test: name-ctl.html
+  - subtest: Cookie with %x9 in name is accepted (DOM).
+    test: name-ctl.html
+  - subtest: Cookie with %xa in name is rejected (DOM).
+    test: name-ctl.html
+  - subtest: Cookie with %xd in name is rejected (DOM).
+    test: name-ctl.html
+  - subtest: Cookie with %x9 in name is accepted (HTTP).
+    test: name-ctl.html
+  - subtest: Cookie with %xb in name is rejected (HTTP).
+    test: name-ctl.html
+  - subtest: Cookie with %xc in name is rejected (HTTP).
+    test: name-ctl.html
+  - subtest: Cookie with %xe in name is rejected (HTTP).
+    test: name-ctl.html
+  - subtest: Cookie with %xf in name is rejected (HTTP).
+    test: name-ctl.html
+  - subtest: Cookie with %x10 in name is rejected (HTTP).
+    test: name-ctl.html
+  - subtest: Cookie with %x11 in name is rejected (HTTP).
+    test: name-ctl.html
+  - subtest: Cookie with %x12 in name is rejected (HTTP).
+    test: name-ctl.html
+  - subtest: Cookie with %x13 in name is rejected (HTTP).
+    test: name-ctl.html
+  - subtest: Cookie with %x14 in name is rejected (HTTP).
+    test: name-ctl.html
+  - subtest: Cookie with %x15 in name is rejected (HTTP).
+    test: name-ctl.html
+  - subtest: Cookie with %x16 in name is rejected (HTTP).
+    test: name-ctl.html
+  - subtest: Cookie with %x17 in name is rejected (HTTP).
+    test: name-ctl.html
+  - subtest: Cookie with %x18 in name is rejected (HTTP).
+    test: name-ctl.html
+  - subtest: Cookie with %x19 in name is rejected (HTTP).
+    test: name-ctl.html
+  - subtest: Cookie with %x1a in name is rejected (HTTP).
+    test: name-ctl.html
+  - subtest: Cookie with %x1b in name is rejected (HTTP).
+    test: name-ctl.html
+  - subtest: Cookie with %x1c in name is rejected (HTTP).
+    test: name-ctl.html
+  - subtest: Cookie with %x1d in name is rejected (HTTP).
+    test: name-ctl.html
+  - subtest: Cookie with %x1e in name is rejected (HTTP).
+    test: name-ctl.html
+  - subtest: Cookie with %x1f in name is rejected (HTTP).
+    test: name-ctl.html
+  - subtest: Cookie with %x7f in name is rejected (HTTP).
+    test: name-ctl.html
+  - subtest: Set valueless cookie to its name with empty value
+    test: name.html
+  - subtest: Set a nameless cookie (that has an = in its value)
+    test: name.html
+  - subtest: Set a nameless cookie (that has multiple ='s in its value)
+    test: name.html
+  - subtest: Set a nameless cookie
+    test: name.html
+  - subtest: Remove trailing WSP characters from the name string
+    test: name.html
+  - subtest: Remove leading WSP characters from the name string
+    test: name.html
+  - subtest: Only return the new cookie (with the same name)
+    test: name.html
+  - subtest: Ignore invalid attributes after nameless cookie
+    test: name.html
+  - subtest: Ignore invalid attributes after valid name (that looks like Cookie2 Version
+      attribute)
+    test: name.html
+  - subtest: Set a cookie that has whitespace in its name
+    test: name.html
+  - subtest: Set a nameless cookie ignoring characters after first ;
+    test: name.html
+  - subtest: Set a nameless cookie ignoring characters after first ; (2)
+    test: name.html
+  - subtest: Return the most recent nameless cookie
+    test: name.html
+  - subtest: Return the most recent nameless cookie, without leading =
+    test: name.html
+  - subtest: Return the most recent nameless cookie, even if preceded by =
+    test: name.html
+  - subtest: Return the most recent nameless cookie, even if preceded by =, in addition
+      to other valid cookie
+    test: name.html
+  - subtest: Use last value for cookies with identical names
+    test: name.html
+  - subtest: Keep first-in, first-out name order
+    test: name.html
+  - subtest: Keep first-in, first-out single-char name order
+    test: name.html
+  - subtest: Keep non-alphabetic first-in, first-out name order
+    test: name.html
+  - subtest: Keep first-in, first-out order if comma-separated
+    test: name.html
+  - subtest: 'Set nameless cookie, given `Set-Cookie: =test16`'
+    test: name.html
+  - subtest: Overwrite nameless cookie
+    test: name.html
+  - subtest: Ignore nameless cookies that impersonate cookie prefixes
+    test: name.html
+  - subtest: Ignore cookie with empty name and empty value
+    test: name.html
+  - subtest: Ignore cookie with no name or value
+    test: name.html
+  - subtest: URL-encoded cookie name is not decoded
+    test: name.html
+  - subtest: Name is set as expected for a=test
+    test: name.html
+  - subtest: Name is set as expected for 1=test
+    test: name.html
+  - subtest: Name is set as expected for $=test
+    test: name.html
+  - subtest: Name is set as expected for !a=test
+    test: name.html
+  - subtest: Name is set as expected for @a=test
+    test: name.html
+  - subtest: 'Name is set as expected for #a=test'
+    test: name.html
+  - subtest: Name is set as expected for $a=test
+    test: name.html
+  - subtest: Name is set as expected for %a=test
+    test: name.html
+  - subtest: Name is set as expected for ^a=test
+    test: name.html
+  - subtest: Name is set as expected for &a=test
+    test: name.html
+  - subtest: Name is set as expected for *a=test
+    test: name.html
+  - subtest: Name is set as expected for (a=test
+    test: name.html
+  - subtest: Name is set as expected for )a=test
+    test: name.html
+  - subtest: Name is set as expected for -a=test
+    test: name.html
+  - subtest: Name is set as expected for _a=test
+    test: name.html
+  - subtest: Name is set as expected for +=test
+    test: name.html
+  - subtest: Name is set as expected for "a=test
+    test: name.html
+  - subtest: Name is set as expected for "a=b"=test
+    test: name.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1895439

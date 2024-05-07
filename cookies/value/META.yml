@@ -1,14 +1,122 @@
 links:
-    - product: chrome
-      url: https://bugs.chromium.org/p/chromium/issues/detail?id=1233602
-      results:
-        - test: value-ctl.html
-          subtest: Cookie with %x0 in value is rejected (DOM).
-        - test: value-ctl.html
-          subtest: Cookie with %xa in value is rejected (DOM).
-        - test: value-ctl.html
-          subtest: Cookie with %xd in value is rejected (DOM).
-        - test: value-ctl.html
-          subtest: Cookie with %xa in name is rejected or modified (HTTP).
-        - test: value-ctl.html
-          subtest: Cookie with %xd in name is rejected or modified (HTTP).
+- product: chrome
+  results:
+  - subtest: Cookie with %x0 in value is rejected (DOM).
+    test: value-ctl.html
+  - subtest: Cookie with %xa in value is rejected (DOM).
+    test: value-ctl.html
+  - subtest: Cookie with %xd in value is rejected (DOM).
+    test: value-ctl.html
+  - subtest: Cookie with %xa in name is rejected or modified (HTTP).
+    test: value-ctl.html
+  - subtest: Cookie with %xd in name is rejected or modified (HTTP).
+    test: value-ctl.html
+  url: https://bugs.chromium.org/p/chromium/issues/detail?id=1233602
+- product: firefox
+  results:
+  - subtest: Cookie with %x0 in value is rejected (DOM).
+    test: value-ctl.html
+  - subtest: Cookie with %xa in value is rejected (DOM).
+    test: value-ctl.html
+  - subtest: Cookie with %xd in value is rejected (DOM).
+    test: value-ctl.html
+  - subtest: Cookie with %xb in value is rejected (HTTP).
+    test: value-ctl.html
+  - subtest: Cookie with %xc in value is rejected (HTTP).
+    test: value-ctl.html
+  - subtest: Cookie with %xe in value is rejected (HTTP).
+    test: value-ctl.html
+  - subtest: Cookie with %xf in value is rejected (HTTP).
+    test: value-ctl.html
+  - subtest: Cookie with %x10 in value is rejected (HTTP).
+    test: value-ctl.html
+  - subtest: Cookie with %x11 in value is rejected (HTTP).
+    test: value-ctl.html
+  - subtest: Cookie with %x12 in value is rejected (HTTP).
+    test: value-ctl.html
+  - subtest: Cookie with %x13 in value is rejected (HTTP).
+    test: value-ctl.html
+  - subtest: Cookie with %x14 in value is rejected (HTTP).
+    test: value-ctl.html
+  - subtest: Cookie with %x15 in value is rejected (HTTP).
+    test: value-ctl.html
+  - subtest: Cookie with %x16 in value is rejected (HTTP).
+    test: value-ctl.html
+  - subtest: Cookie with %x17 in value is rejected (HTTP).
+    test: value-ctl.html
+  - subtest: Cookie with %x18 in value is rejected (HTTP).
+    test: value-ctl.html
+  - subtest: Cookie with %x19 in value is rejected (HTTP).
+    test: value-ctl.html
+  - subtest: Cookie with %x1a in value is rejected (HTTP).
+    test: value-ctl.html
+  - subtest: Cookie with %x1b in value is rejected (HTTP).
+    test: value-ctl.html
+  - subtest: Cookie with %x1c in value is rejected (HTTP).
+    test: value-ctl.html
+  - subtest: Cookie with %x1d in value is rejected (HTTP).
+    test: value-ctl.html
+  - subtest: Cookie with %x1e in value is rejected (HTTP).
+    test: value-ctl.html
+  - subtest: Cookie with %x1f in value is rejected (HTTP).
+    test: value-ctl.html
+  - subtest: Cookie with %x7f in value is rejected (HTTP).
+    test: value-ctl.html
+  - subtest: Set value containing a comma
+    test: value.html
+  - subtest: Set quoted value containing a comma
+    test: value.html
+  - subtest: Ignore values after semicolon
+    test: value.html
+  - subtest: Ignore whitespace at the end of value
+    test: value.html
+  - subtest: Set value including quotes and whitespace up until semicolon
+    test: value.html
+  - subtest: Set value with a single quote excluding whitespace
+    test: value.html
+  - subtest: Set nameless cookie to its value
+    test: value.html
+  - subtest: Set nameless cookie to its value with an escaped quote
+    test: value.html
+  - subtest: Set value with unbalanced leading quote
+    test: value.html
+  - subtest: Set nameless cookie followed by '=' to its value
+    test: value.html
+  - subtest: Set cookie with large name + value ( = 4kb)
+    test: value.html
+  - subtest: Ignore cookie with large name + value ( > 4kb)
+    test: value.html
+  - subtest: Set cookie but ignore value after LF
+    test: value.html
+  - subtest: Set cookie ignoring whitespace after value endquote
+    test: value.html
+  - subtest: Ignore whitespace and ; after value
+    test: value.html
+  - subtest: Ignore whitespace preceding value
+    test: value.html
+  - subtest: Set cookie with quotes in value
+    test: value.html
+  - subtest: Set cookie keeping whitespace inside quoted value
+    test: value.html
+  - subtest: Set cookie value ignoring characters after semicolon
+    test: value.html
+  - subtest: Set cookie with another = inside quoted value
+    test: value.html
+  - subtest: Set cookie ignoring whitespace surrounding value and characters after
+      first semicolon
+    test: value.html
+  - subtest: 'Set valueless cookie, given `Set-Cookie: test22=`'
+    test: value.html
+  - subtest: URL-encoded cookie value is not decoded
+    test: value.html
+  - subtest: Set cookie with value set to =
+    test: value.html
+  - subtest: Set cookie with one = inside an unquoted value
+    test: value.html
+  - subtest: Set cookie with two = inside an unquoted value
+    test: value.html
+  - subtest: Set cookie with a space character in the value
+    test: value.html
+  - subtest: Set a nameless cookie with a space character in the value
+    test: value.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1895439
