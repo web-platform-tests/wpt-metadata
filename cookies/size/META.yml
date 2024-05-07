@@ -1,0 +1,56 @@
+links:
+- product: firefox
+  results:
+  - subtest: Too long path attribute (>1024 bytes) is ignored; previous valid path
+      wins.
+    test: attributes.www.sub.html
+  - subtest: Too long path attribute (>1024 bytes) is ignored
+    test: attributes.www.sub.html
+  - subtest: Too long domain attribute (>1024 bytes) is ignored; previous valid domain
+      wins.
+    test: attributes.www.sub.html
+  - subtest: Max size domain attribute (1024 bytes) is not ignored
+    test: attributes.www.sub.html
+  - subtest: Too long domain attribute (>1024 bytes) is ignored
+    test: attributes.www.sub.html
+  - subtest: Set cookie with max size name/value pair and max size attribute value
+    test: attributes.www.sub.html
+  - subtest: Set cookie with max size name/value pair and multiple max size attributes
+      (>8k bytes total)
+    test: attributes.www.sub.html
+  - subtest: Max length Max-Age attribute value (1024 bytes) doesn't cause cookie
+      rejection
+    test: attributes.www.sub.html
+  - subtest: Too long Max-Age attribute value (>1024 bytes) doesn't cause cookie rejection
+    test: attributes.www.sub.html
+  - subtest: Max length negative Max-Age attribute value (1024 bytes) doesn't get
+      ignored
+    test: attributes.www.sub.html
+  - subtest: Too long negative Max-Age attribute value (>1024 bytes) gets ignored
+    test: attributes.www.sub.html
+  - subtest: Set max-size cookie with largest possible name and value (4096 bytes)
+    test: name-and-value.html
+  - subtest: Ignore cookie with name larger than 4096 and 1 byte value
+    test: name-and-value.html
+  - subtest: Set max-size value-less cookie
+    test: name-and-value.html
+  - subtest: Ignore value-less cookie with name larger than 4096 bytes
+    test: name-and-value.html
+  - subtest: Set max-size cookie with largest possible value (4095 bytes)
+    test: name-and-value.html
+  - subtest: Ignore named cookie (with non-zero length) and value larger than 4095
+      bytes
+    test: name-and-value.html
+  - subtest: Ignore named cookie with length larger than 4095 bytes, and a non-zero
+      value
+    test: name-and-value.html
+  - subtest: Set max-size name-less cookie
+    test: name-and-value.html
+  - subtest: Ignore name-less cookie with value larger than 4096 bytes
+    test: name-and-value.html
+  - subtest: Ignore name-less cookie (without leading =) with value larger than 4096
+      bytes
+    test: name-and-value.html
+  - subtest: Set max-size cookie that also has an attribute
+    test: name-and-value.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1895439
