@@ -271,3 +271,9 @@ links:
   - test: iframe-transition-destroyed-document-crash.html
   - test: root-element-display-none-during-transition-crash.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1893703
+- product: firefox
+  results:
+  - subtest: Two different elements with the same name in the new DOM should skip
+      the transition
+    test: duplicate-tag-rejects-start.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1896075
