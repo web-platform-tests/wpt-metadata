@@ -3452,3 +3452,22 @@ links:
       (1.5) should be [--bar]'
     test: property-interpolations.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1897106
+- product: firefox
+  results:
+  - subtest: Starts rendering with flip-block
+    test: last-successful-basic.html
+  - subtest: Base position without option now successful
+    test: last-successful-basic.html
+  - subtest: Starts rendering with flip-block
+    test: last-successful-change-options.html
+  - subtest: No successful position, last successful invalidated by position-try-options
+      change
+    test: last-successful-change-options.html
+  - subtest: Starts rendering with --try
+    test: last-successful-change-try-rule.html
+  - subtest: No successful position, last successful invalidated by @position-try
+      change
+    test: last-successful-change-try-rule.html
+  - subtest: Starts rendering with flip-block
+    test: last-successful-intermediate-ignored.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1897279
