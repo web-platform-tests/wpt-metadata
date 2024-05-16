@@ -3221,3 +3221,234 @@ links:
   - subtest: ::backdrop can use position-try-options
     test: position-try-backdrop.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1892117
+- product: firefox
+  results:
+  - subtest: 'Offsets for: span-all'
+    test: inset-area-basic.html
+  - subtest: 'Offsets for: span-all span-all'
+    test: inset-area-basic.html
+  - subtest: 'Offsets for: top left'
+    test: inset-area-basic.html
+  - subtest: 'Offsets for: top center'
+    test: inset-area-basic.html
+  - subtest: 'Offsets for: top right'
+    test: inset-area-basic.html
+  - subtest: 'Offsets for: center left'
+    test: inset-area-basic.html
+  - subtest: 'Offsets for: center center'
+    test: inset-area-basic.html
+  - subtest: 'Offsets for: center right'
+    test: inset-area-basic.html
+  - subtest: 'Offsets for: bottom left'
+    test: inset-area-basic.html
+  - subtest: 'Offsets for: bottom center'
+    test: inset-area-basic.html
+  - subtest: 'Offsets for: bottom right'
+    test: inset-area-basic.html
+  - subtest: 'Offsets for: start start'
+    test: inset-area-basic.html
+  - subtest: 'Offsets for: start center'
+    test: inset-area-basic.html
+  - subtest: 'Offsets for: start end'
+    test: inset-area-basic.html
+  - subtest: 'Offsets for: center start'
+    test: inset-area-basic.html
+  - subtest: 'Offsets for: center end'
+    test: inset-area-basic.html
+  - subtest: 'Offsets for: end start'
+    test: inset-area-basic.html
+  - subtest: 'Offsets for: end center'
+    test: inset-area-basic.html
+  - subtest: 'Offsets for: end end'
+    test: inset-area-basic.html
+  - subtest: 'Offsets for: self-start self-start'
+    test: inset-area-basic.html
+  - subtest: 'Offsets for: self-start center'
+    test: inset-area-basic.html
+  - subtest: 'Offsets for: self-start self-end'
+    test: inset-area-basic.html
+  - subtest: 'Offsets for: center self-start'
+    test: inset-area-basic.html
+  - subtest: 'Offsets for: center self-end'
+    test: inset-area-basic.html
+  - subtest: 'Offsets for: self-end self-start'
+    test: inset-area-basic.html
+  - subtest: 'Offsets for: self-end center'
+    test: inset-area-basic.html
+  - subtest: 'Offsets for: self-end self-end'
+    test: inset-area-basic.html
+  - subtest: 'Offsets for: y-start x-start'
+    test: inset-area-basic.html
+  - subtest: 'Offsets for: y-start center'
+    test: inset-area-basic.html
+  - subtest: 'Offsets for: y-start x-end'
+    test: inset-area-basic.html
+  - subtest: 'Offsets for: center x-start'
+    test: inset-area-basic.html
+  - subtest: 'Offsets for: center x-end'
+    test: inset-area-basic.html
+  - subtest: 'Offsets for: y-end x-start'
+    test: inset-area-basic.html
+  - subtest: 'Offsets for: y-end center'
+    test: inset-area-basic.html
+  - subtest: 'Offsets for: y-end x-end'
+    test: inset-area-basic.html
+  - subtest: 'Offsets for: y-self-start x-self-start'
+    test: inset-area-basic.html
+  - subtest: 'Offsets for: y-self-start center'
+    test: inset-area-basic.html
+  - subtest: 'Offsets for: y-self-start x-self-end'
+    test: inset-area-basic.html
+  - subtest: 'Offsets for: center x-self-start'
+    test: inset-area-basic.html
+  - subtest: 'Offsets for: center x-self-end'
+    test: inset-area-basic.html
+  - subtest: 'Offsets for: y-self-end x-self-start'
+    test: inset-area-basic.html
+  - subtest: 'Offsets for: y-self-end center'
+    test: inset-area-basic.html
+  - subtest: 'Offsets for: y-self-end x-self-end'
+    test: inset-area-basic.html
+  - subtest: 'Offsets for: span-y-self-start span-x-self-end'
+    test: inset-area-basic.html
+  - subtest: 'Offsets for: span-bottom span-all'
+    test: inset-area-basic.html
+  - subtest: 'Offsets for inset-area: center center and insets: {"top":"10px","bottom":"40px","left":"5px","right":"15px"}'
+    test: inset-area-with-insets.html
+  - subtest: 'Offsets for inset-area: left bottom and insets: {"top":"10px","bottom":"40px","left":"5px","right":"15px"}'
+    test: inset-area-with-insets.html
+  - subtest: 'Offsets for inset-area: span-right center and insets: {"top":"20%","bottom":"auto","left":"auto","right":"25%"}'
+    test: inset-area-with-insets.html
+  - subtest: e.style['position-anchor'] = "--foo" should set the property value
+    test: position-anchor-basics.html
+  - subtest: Property position-anchor value '--foo'
+    test: position-anchor-basics.html
+  - subtest: Property position-anchor does not inherit
+    test: position-anchor-basics.html
+  - subtest: 'CSS Transitions with transition-behavior:allow-discrete: property <position-anchor>
+      from [--foo] to [--bar] at (-0.3) should be [--foo]'
+    test: property-interpolations.html
+  - subtest: 'CSS Transitions with transition-behavior:allow-discrete: property <position-anchor>
+      from [--foo] to [--bar] at (0) should be [--foo]'
+    test: property-interpolations.html
+  - subtest: 'CSS Transitions with transition-behavior:allow-discrete: property <position-anchor>
+      from [--foo] to [--bar] at (0.3) should be [--foo]'
+    test: property-interpolations.html
+  - subtest: 'CSS Transitions with transition-behavior:allow-discrete: property <position-anchor>
+      from [--foo] to [--bar] at (0.5) should be [--bar]'
+    test: property-interpolations.html
+  - subtest: 'CSS Transitions with transition-behavior:allow-discrete: property <position-anchor>
+      from [--foo] to [--bar] at (0.6) should be [--bar]'
+    test: property-interpolations.html
+  - subtest: 'CSS Transitions with transition-behavior:allow-discrete: property <position-anchor>
+      from [--foo] to [--bar] at (1) should be [--bar]'
+    test: property-interpolations.html
+  - subtest: 'CSS Transitions with transition-behavior:allow-discrete: property <position-anchor>
+      from [--foo] to [--bar] at (1.5) should be [--bar]'
+    test: property-interpolations.html
+  - subtest: 'CSS Transitions with transition-property:all and transition-behavor:allow-discrete:
+      property <position-anchor> from [--foo] to [--bar] at (-0.3) should be [--foo]'
+    test: property-interpolations.html
+  - subtest: 'CSS Transitions with transition-property:all and transition-behavor:allow-discrete:
+      property <position-anchor> from [--foo] to [--bar] at (0) should be [--foo]'
+    test: property-interpolations.html
+  - subtest: 'CSS Transitions with transition-property:all and transition-behavor:allow-discrete:
+      property <position-anchor> from [--foo] to [--bar] at (0.3) should be [--foo]'
+    test: property-interpolations.html
+  - subtest: 'CSS Transitions with transition-property:all and transition-behavor:allow-discrete:
+      property <position-anchor> from [--foo] to [--bar] at (0.5) should be [--bar]'
+    test: property-interpolations.html
+  - subtest: 'CSS Transitions with transition-property:all and transition-behavor:allow-discrete:
+      property <position-anchor> from [--foo] to [--bar] at (0.6) should be [--bar]'
+    test: property-interpolations.html
+  - subtest: 'CSS Transitions with transition-property:all and transition-behavor:allow-discrete:
+      property <position-anchor> from [--foo] to [--bar] at (1) should be [--bar]'
+    test: property-interpolations.html
+  - subtest: 'CSS Transitions with transition-property:all and transition-behavor:allow-discrete:
+      property <position-anchor> from [--foo] to [--bar] at (1.5) should be [--bar]'
+    test: property-interpolations.html
+  - subtest: 'CSS Transitions: property <position-anchor> from [--foo] to [--bar]
+      at (-0.3) should be [--bar]'
+    test: property-interpolations.html
+  - subtest: 'CSS Transitions: property <position-anchor> from [--foo] to [--bar]
+      at (0) should be [--bar]'
+    test: property-interpolations.html
+  - subtest: 'CSS Transitions: property <position-anchor> from [--foo] to [--bar]
+      at (0.3) should be [--bar]'
+    test: property-interpolations.html
+  - subtest: 'CSS Transitions: property <position-anchor> from [--foo] to [--bar]
+      at (0.5) should be [--bar]'
+    test: property-interpolations.html
+  - subtest: 'CSS Transitions: property <position-anchor> from [--foo] to [--bar]
+      at (0.6) should be [--bar]'
+    test: property-interpolations.html
+  - subtest: 'CSS Transitions: property <position-anchor> from [--foo] to [--bar]
+      at (1) should be [--bar]'
+    test: property-interpolations.html
+  - subtest: 'CSS Transitions: property <position-anchor> from [--foo] to [--bar]
+      at (1.5) should be [--bar]'
+    test: property-interpolations.html
+  - subtest: 'CSS Transitions with transition: all: property <position-anchor> from
+      [--foo] to [--bar] at (-0.3) should be [--bar]'
+    test: property-interpolations.html
+  - subtest: 'CSS Transitions with transition: all: property <position-anchor> from
+      [--foo] to [--bar] at (0) should be [--bar]'
+    test: property-interpolations.html
+  - subtest: 'CSS Transitions with transition: all: property <position-anchor> from
+      [--foo] to [--bar] at (0.3) should be [--bar]'
+    test: property-interpolations.html
+  - subtest: 'CSS Transitions with transition: all: property <position-anchor> from
+      [--foo] to [--bar] at (0.5) should be [--bar]'
+    test: property-interpolations.html
+  - subtest: 'CSS Transitions with transition: all: property <position-anchor> from
+      [--foo] to [--bar] at (0.6) should be [--bar]'
+    test: property-interpolations.html
+  - subtest: 'CSS Transitions with transition: all: property <position-anchor> from
+      [--foo] to [--bar] at (1) should be [--bar]'
+    test: property-interpolations.html
+  - subtest: 'CSS Transitions with transition: all: property <position-anchor> from
+      [--foo] to [--bar] at (1.5) should be [--bar]'
+    test: property-interpolations.html
+  - subtest: 'CSS Animations: property <position-anchor> from [--foo] to [--bar] at
+      (-0.3) should be [--foo]'
+    test: property-interpolations.html
+  - subtest: 'CSS Animations: property <position-anchor> from [--foo] to [--bar] at
+      (0) should be [--foo]'
+    test: property-interpolations.html
+  - subtest: 'CSS Animations: property <position-anchor> from [--foo] to [--bar] at
+      (0.3) should be [--foo]'
+    test: property-interpolations.html
+  - subtest: 'CSS Animations: property <position-anchor> from [--foo] to [--bar] at
+      (0.5) should be [--bar]'
+    test: property-interpolations.html
+  - subtest: 'CSS Animations: property <position-anchor> from [--foo] to [--bar] at
+      (0.6) should be [--bar]'
+    test: property-interpolations.html
+  - subtest: 'CSS Animations: property <position-anchor> from [--foo] to [--bar] at
+      (1) should be [--bar]'
+    test: property-interpolations.html
+  - subtest: 'CSS Animations: property <position-anchor> from [--foo] to [--bar] at
+      (1.5) should be [--bar]'
+    test: property-interpolations.html
+  - subtest: 'Web Animations: property <position-anchor> from [--foo] to [--bar] at
+      (-0.3) should be [--foo]'
+    test: property-interpolations.html
+  - subtest: 'Web Animations: property <position-anchor> from [--foo] to [--bar] at
+      (0) should be [--foo]'
+    test: property-interpolations.html
+  - subtest: 'Web Animations: property <position-anchor> from [--foo] to [--bar] at
+      (0.3) should be [--foo]'
+    test: property-interpolations.html
+  - subtest: 'Web Animations: property <position-anchor> from [--foo] to [--bar] at
+      (0.5) should be [--bar]'
+    test: property-interpolations.html
+  - subtest: 'Web Animations: property <position-anchor> from [--foo] to [--bar] at
+      (0.6) should be [--bar]'
+    test: property-interpolations.html
+  - subtest: 'Web Animations: property <position-anchor> from [--foo] to [--bar] at
+      (1) should be [--bar]'
+    test: property-interpolations.html
+  - subtest: 'Web Animations: property <position-anchor> from [--foo] to [--bar] at
+      (1.5) should be [--bar]'
+    test: property-interpolations.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1897106
