@@ -1968,3 +1968,12 @@ links:
   - subtest: Property color value 'LCH(from var(--accent) l c calc(h + 180))'
     test: color-computed-relative-color.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1895330
+- product: firefox
+  results:
+  - subtest: e.style['color'] = "hsl(from rebeccapurple none none none / none)" should
+      set the property value
+    test: color-valid-relative-color.html
+  - subtest: e.style['color'] = "hsla(from rebeccapurple none none none / none)" should
+      set the property value
+    test: color-valid-relative-color.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1897837
