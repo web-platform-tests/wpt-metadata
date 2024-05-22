@@ -22,3 +22,12 @@ links:
   - subtest: snapchanging should not fire since the snap target doesn't change.
     test: snapchanging-on-programmatic-scroll.tentative.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1895378
+- product: firefox
+  results:
+  - subtest: snapchanging fires on programmatic scrolls that changes a scroller's
+      snap targets.
+    test: snapchanging-on-programmatic-root-scroll.tentative.html
+  - subtest: Document.snapchanging fires on programmatic scrolls that changes ascroller's
+      snap targets.
+    test: snapchanging-on-programmatic-root-scroll.tentative.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1898213
