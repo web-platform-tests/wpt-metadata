@@ -191,8 +191,7 @@ links:
         - test: pointerevent_capture_suppressing_mouse.html
           subtest: Test pointer capture.
         - test: pointerevent_capture_suppressing_mouse.html
-    - url: ""
-      label: interop-2023-events
+    - label: interop-2023-events
       results:
         - test: capturing_boundary_event_handler_at_ua_shadowdom.html?mouse
         - test: pointerevent_after_target_removed.html?mouse
@@ -343,3 +342,7 @@ links:
       url: https://crbug.com/40919443
       results:
         - test: pointerevent_pointerout_no_pointer_movement.html
+    - product: safari
+      url: https://bugs.webkit.org/show_bug.cgi?id=274639
+      results:
+        - test: mouse-pointer-boundary-events-for-shadowdom.html
