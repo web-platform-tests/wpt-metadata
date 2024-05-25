@@ -555,3 +555,8 @@ links:
           subtest: max-message-size with a (non-zero) value provided by the remote peer
         - test: RTCSctpTransport-maxMessageSize.html
           subtest: Renegotiate max-message-size with various values provided by the remote peer
+    - product: safari
+      url: https://bugs.webkit.org/show_bug.cgi?id=274025
+      results:
+        - test: RTCSctpTransport-maxMessageSize.html
+          subtest: max-message-size with a (non-zero) value larger than canSendSize provided by the remote peer
