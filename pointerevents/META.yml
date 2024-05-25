@@ -191,7 +191,8 @@ links:
         - test: pointerevent_capture_suppressing_mouse.html
           subtest: Test pointer capture.
         - test: pointerevent_capture_suppressing_mouse.html
-    - label: interop-2023-events
+    - url: ""
+      label: interop-2023-events
       results:
         - test: capturing_boundary_event_handler_at_ua_shadowdom.html?mouse
         - test: pointerevent_after_target_removed.html?mouse
@@ -362,3 +363,7 @@ links:
       url: https://bugs.webkit.org/show_bug.cgi?id=274643
       results:
         - test: pointerevent_pointermove_on_chorded_mouse_button.html
+    - product: safari
+      url: https://bugs.webkit.org/show_bug.cgi?id=274642
+      results:
+        - test: pointerevent_sequence_at_implicit_release_on_click.html?mouse
