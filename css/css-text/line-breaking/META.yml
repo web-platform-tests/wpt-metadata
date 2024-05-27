@@ -1,85 +1,91 @@
 links:
-    - product: safari
-      url: https://bugs.webkit.org/show_bug.cgi?id=183258
-      results:
-        - test: line-breaking-002.html
-          status: FAIL
-        - test: line-breaking-004.html
-          status: FAIL
-        - test: line-breaking-006.html
-          status: FAIL
-        - test: line-breaking-007.html
-          status: FAIL
-        - test: line-breaking-009.html
-          status: FAIL
-        - test: line-breaking-011.html
-          status: FAIL
-        - test: line-breaking-ic-002.html
-          status: FAIL
-        - test: line-breaking-ic-003.html
-          status: FAIL
-    - product: webkitgtk
-      url: https://bugs.webkit.org/show_bug.cgi?id=183258
-      results:
-        - test: line-breaking-002.html
-          status: FAIL
-        - test: line-breaking-004.html
-          status: FAIL
-        - test: line-breaking-006.html
-          status: FAIL
-        - test: line-breaking-007.html
-          status: FAIL
-        - test: line-breaking-009.html
-          status: FAIL
-        - test: line-breaking-011.html
-          status: FAIL
-        - test: line-breaking-ic-002.html
-          status: FAIL
-        - test: line-breaking-ic-003.html
-          status: FAIL
-    - product: chrome
-      url: https://crbug.com/1024331
-      results:
-        - test: line-breaking-018.html
-          status: FAIL
-        - test: line-breaking-019.html
-          status: FAIL
-    - product: chrome
-      url: https://bugs.chromium.org/p/chromium/issues/detail?id=1052717
-      results:
-        - test: line-breaking-016.html
-        - test: line-breaking-017.html
-        - test: line-breaking-ic-002.html
-        - test: line-breaking-ic-001.html
-        - test: line-breaking-ic-003.html
-    - product: chrome
-      url: https://bugs.chromium.org/p/chromium/issues/detail?id=1223979
-      results:
-        - test: segment-break-transformation-rules-001.html
-        - test: segment-break-transformation-removable-1.html
-        - test: segment-break-transformation-removable-4.html
-        - test: segment-break-transformation-rules-010.html
-        - test: segment-break-transformation-rules-017.html
-        - test: segment-break-transformation-rules-015.html
-        - test: segment-break-transformation-rules-008.html
-        - test: segment-break-transformation-rules-002.html
-        - test: segment-break-transformation-rules-003.html
-        - test: segment-break-transformation-rules-009.html
-        - test: segment-break-transformation-rules-016.html
-        - test: segment-break-transformation-removable-2.html
-        - test: segment-break-transformation-removable-3.html
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1808001
-      results:
-        - test: line-breaking-024.html
-        - test: line-breaking-025.html
-        - test: line-breaking-027.html
-    - product: chrome
-      url: https://crbug.com/1404466
-      results:
-        - test: line-breaking-022.html
-        - test: line-breaking-023.html
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1887392
-      results:
-        - test: line-breaking-021.html
+- product: safari
+  results:
+  - status: FAIL
+    test: line-breaking-002.html
+  - status: FAIL
+    test: line-breaking-004.html
+  - status: FAIL
+    test: line-breaking-006.html
+  - status: FAIL
+    test: line-breaking-007.html
+  - status: FAIL
+    test: line-breaking-009.html
+  - status: FAIL
+    test: line-breaking-011.html
+  - status: FAIL
+    test: line-breaking-ic-002.html
+  - status: FAIL
+    test: line-breaking-ic-003.html
+  url: https://bugs.webkit.org/show_bug.cgi?id=183258
+- product: webkitgtk
+  results:
+  - status: FAIL
+    test: line-breaking-002.html
+  - status: FAIL
+    test: line-breaking-004.html
+  - status: FAIL
+    test: line-breaking-006.html
+  - status: FAIL
+    test: line-breaking-007.html
+  - status: FAIL
+    test: line-breaking-009.html
+  - status: FAIL
+    test: line-breaking-011.html
+  - status: FAIL
+    test: line-breaking-ic-002.html
+  - status: FAIL
+    test: line-breaking-ic-003.html
+  url: https://bugs.webkit.org/show_bug.cgi?id=183258
+- product: chrome
+  results:
+  - status: FAIL
+    test: line-breaking-018.html
+  - status: FAIL
+    test: line-breaking-019.html
+  url: https://crbug.com/1024331
+- product: chrome
+  results:
+  - test: line-breaking-016.html
+  - test: line-breaking-017.html
+  - test: line-breaking-ic-002.html
+  - test: line-breaking-ic-001.html
+  - test: line-breaking-ic-003.html
+  url: https://bugs.chromium.org/p/chromium/issues/detail?id=1052717
+- product: chrome
+  results:
+  - test: segment-break-transformation-rules-001.html
+  - test: segment-break-transformation-removable-1.html
+  - test: segment-break-transformation-removable-4.html
+  - test: segment-break-transformation-rules-010.html
+  - test: segment-break-transformation-rules-017.html
+  - test: segment-break-transformation-rules-015.html
+  - test: segment-break-transformation-rules-008.html
+  - test: segment-break-transformation-rules-002.html
+  - test: segment-break-transformation-rules-003.html
+  - test: segment-break-transformation-rules-009.html
+  - test: segment-break-transformation-rules-016.html
+  - test: segment-break-transformation-removable-2.html
+  - test: segment-break-transformation-removable-3.html
+  url: https://bugs.chromium.org/p/chromium/issues/detail?id=1223979
+- product: firefox
+  results:
+  - test: line-breaking-024.html
+  - test: line-breaking-025.html
+  - test: line-breaking-027.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1808001
+- product: chrome
+  results:
+  - test: line-breaking-022.html
+  - test: line-breaking-023.html
+  url: https://crbug.com/1404466
+- product: firefox
+  results:
+  - test: line-breaking-021.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1887392
+- product: firefox
+  results:
+  - test: line-breaking-030.html
+  - test: line-breaking-031.html
+  - test: line-breaking-032.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1899099
