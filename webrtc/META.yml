@@ -560,3 +560,8 @@ links:
       results:
         - test: RTCSctpTransport-maxMessageSize.html
           subtest: max-message-size with a (non-zero) value larger than canSendSize provided by the remote peer
+    - product: chrome
+      url: https://issues.chromium.org/344943229
+      results:
+        - test: RTCRtpParameters-encodings.html
+          subtest: setParameters() with missing encoding.scaleResolutionDownBy field should succeed, and set the value back to 1
