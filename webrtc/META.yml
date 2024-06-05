@@ -565,3 +565,8 @@ links:
       results:
         - test: RTCRtpParameters-encodings.html
           subtest: setParameters() with missing encoding.scaleResolutionDownBy field should succeed, and set the value back to 1
+    - product: chrome
+      url: https://issues.chromium.org/344950156
+      results:
+        - test: RTCRtpParameters-encodings.html
+          subtest: setParameters() with encoding.scaleResolutionDownBy field set to less than 1.0 should reject with RangeError
