@@ -1,66 +1,73 @@
 links:
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1655753
-      results:
-        - test: input-events-typing.html
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1680426
-      results:
-        - test: input-events-get-target-ranges.html
-        - test: input-events-get-target-ranges.html
-          subtest: getTargetRanges() returns correct range and cleared after dispatch.
-        - test: input-events-get-target-ranges.html
-          subtest: Actions other than deletion should have current selection as target ranges.
-        - test: input-events-get-target-ranges.html
-          subtest: Textarea should have empty target range.
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1681432
-      results:
-        - test: input-events-cut-paste.html
-          subtest: Event order and dataTransfer on contenteditable.
-        - test: input-events-cut-paste.html
-          subtest: preventDefault() should prevent DOM modification but allow clipboard updates.
-    - product: chrome
-      url: https://crbug.com/1149212
-      results:
-        - test: input-events-get-target-ranges-deleting-in-list-items.tentative.html?Backspace,ol
-        - test: input-events-get-target-ranges-deleting-in-list-items.tentative.html?Backspace,ul
-        - test: input-events-get-target-ranges-deleting-in-list-items.tentative.html?Delete,ol
-        - test: input-events-get-target-ranges-deleting-in-list-items.tentative.html?Delete,ul
-    - product: chrome
-      url: https://crbug.com/1132898
-      results:
-        - test: input-events-get-target-ranges-non-collapsed-selection.tentative.html?TypingA
-    - product: chrome
-      url: https://bugs.chromium.org/p/chromium/issues/detail?id=1127055
-      results:
-        - test: input-events-exec-command.html
-        - test: input-events-get-target-ranges-backspace.tentative.html
-        - test: input-events-get-target-ranges-forwarddelete.tentative.html
-    - product: chrome
-      url: https://bugs.chromium.org/p/chromium/issues/detail?id=1149212
-      results:
-        - test: input-events-get-target-ranges-joining-dl-element-and-another-list.tentative.html?Backspace
-        - test: input-events-get-target-ranges-joining-dl-element-and-another-list.tentative.html?Delete
-        - test: input-events-get-target-ranges-joining-dl-elements.tentative.html?Backspace
-        - test: input-events-get-target-ranges-joining-dl-elements.tentative.html?Delete
-    - product: chrome
-      url: https://bugs.chromium.org/p/chromium/issues/detail?id=1135526
-      results:
-        - test: input-events-get-target-ranges-during-and-after-dispatch.tentative.html
-    - product: chrome
-      url: https://bugs.chromium.org/p/chromium/issues/detail?id=1227757
-      results:
-        - test: input-events-get-target-ranges-deleting-range-across-editing-host-boundaries.tentative.html
-    - product: chrome
-      url: https://bugs.chromium.org/p/chromium/issues/detail?id=1132898
-      results:
-        - test: input-events-get-target-ranges-non-collapsed-selection.tentative.html?Backspace
-        - test: input-events-get-target-ranges-non-collapsed-selection.tentative.html?Delete
-    - product: safari
-      url: https://bugs.webkit.org/show_bug.cgi?id=258838
-      results:
-        - test: input-events-get-target-ranges-during-and-after-dispatch.tentative.html
-          subtest: Check consistency of getTargetRanges() result between before and after changing selection in an event listener
-        - test: input-events-get-target-ranges-during-and-after-dispatch.tentative.html
-          subtest: The result of getTargetRanges() of beforeinput event should be fixed at being dispatched
+- product: firefox
+  results:
+  - test: input-events-typing.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1655753
+- product: firefox
+  results:
+  - test: input-events-get-target-ranges.html
+  - subtest: getTargetRanges() returns correct range and cleared after dispatch.
+    test: input-events-get-target-ranges.html
+  - subtest: Actions other than deletion should have current selection as target ranges.
+    test: input-events-get-target-ranges.html
+  - subtest: Textarea should have empty target range.
+    test: input-events-get-target-ranges.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1680426
+- product: firefox
+  results:
+  - subtest: Event order and dataTransfer on contenteditable.
+    test: input-events-cut-paste.html
+  - subtest: preventDefault() should prevent DOM modification but allow clipboard
+      updates.
+    test: input-events-cut-paste.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1681432
+- product: chrome
+  results:
+  - test: input-events-get-target-ranges-deleting-in-list-items.tentative.html?Backspace,ol
+  - test: input-events-get-target-ranges-deleting-in-list-items.tentative.html?Backspace,ul
+  - test: input-events-get-target-ranges-deleting-in-list-items.tentative.html?Delete,ol
+  - test: input-events-get-target-ranges-deleting-in-list-items.tentative.html?Delete,ul
+  url: https://crbug.com/1149212
+- product: chrome
+  results:
+  - test: input-events-get-target-ranges-non-collapsed-selection.tentative.html?TypingA
+  url: https://crbug.com/1132898
+- product: chrome
+  results:
+  - test: input-events-exec-command.html
+  - test: input-events-get-target-ranges-backspace.tentative.html
+  - test: input-events-get-target-ranges-forwarddelete.tentative.html
+  url: https://bugs.chromium.org/p/chromium/issues/detail?id=1127055
+- product: chrome
+  results:
+  - test: input-events-get-target-ranges-joining-dl-element-and-another-list.tentative.html?Backspace
+  - test: input-events-get-target-ranges-joining-dl-element-and-another-list.tentative.html?Delete
+  - test: input-events-get-target-ranges-joining-dl-elements.tentative.html?Backspace
+  - test: input-events-get-target-ranges-joining-dl-elements.tentative.html?Delete
+  url: https://bugs.chromium.org/p/chromium/issues/detail?id=1149212
+- product: chrome
+  results:
+  - test: input-events-get-target-ranges-during-and-after-dispatch.tentative.html
+  url: https://bugs.chromium.org/p/chromium/issues/detail?id=1135526
+- product: chrome
+  results:
+  - test: input-events-get-target-ranges-deleting-range-across-editing-host-boundaries.tentative.html
+  url: https://bugs.chromium.org/p/chromium/issues/detail?id=1227757
+- product: chrome
+  results:
+  - test: input-events-get-target-ranges-non-collapsed-selection.tentative.html?Backspace
+  - test: input-events-get-target-ranges-non-collapsed-selection.tentative.html?Delete
+  url: https://bugs.chromium.org/p/chromium/issues/detail?id=1132898
+- product: safari
+  results:
+  - subtest: Check consistency of getTargetRanges() result between before and after
+      changing selection in an event listener
+    test: input-events-get-target-ranges-during-and-after-dispatch.tentative.html
+  - subtest: The result of getTargetRanges() of beforeinput event should be fixed
+      at being dispatched
+    test: input-events-get-target-ranges-during-and-after-dispatch.tentative.html
+  url: https://bugs.webkit.org/show_bug.cgi?id=258838
+- product: firefox
+  results:
+  - test: input-events-spin-button-click-on-number-input-delete-document.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1900000
