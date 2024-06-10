@@ -176,3 +176,8 @@ links:
       results:
         - test: unknown-mediatypes.html
           subtest: Unknown media types are rejected with the port set to 0
+    - product: chrome
+      url: https://issues.chromium.org/343086063
+      results:
+        - test: simulcast-answer.html
+          subtest: Using the ~rid SDP syntax in a remote offer does not control the local encodings active flag

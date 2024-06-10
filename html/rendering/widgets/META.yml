@@ -1,24 +1,31 @@
 links:
-- product: chrome
-  results:
-  - test: baseline-alignment-and-overflow.tentative.html
-  url: https://crbug.com/1040826
-- product: firefox
-  results:
-  - subtest: Empty value
-    test: field-sizing-textarea.html
-  - subtest: Empty value with cols/rows
-    test: field-sizing-textarea.html
-  - subtest: Auto width and auto height with a long text
-    test: field-sizing-textarea.html
-  - subtest: Explicit width and auto height
-    test: field-sizing-textarea.html
-  - subtest: Explicit height and auto width
-    test: field-sizing-textarea.html
-  - subtest: Text caret is taller than the placeholder
-    test: field-sizing-textarea.html
-  - subtest: Text caret is shorter than the placeholder
-    test: field-sizing-textarea.html
-  - subtest: Update field-sizing property dynamically
-    test: field-sizing-textarea.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1884741
+    - product: chrome
+      url: https://crbug.com/1040826
+      results:
+        - test: baseline-alignment-and-overflow.tentative.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1884741
+      results:
+        - test: field-sizing-textarea.html
+          subtest: Empty value
+        - test: field-sizing-textarea.html
+          subtest: Empty value with cols/rows
+        - test: field-sizing-textarea.html
+          subtest: Auto width and auto height with a long text
+        - test: field-sizing-textarea.html
+          subtest: Explicit width and auto height
+        - test: field-sizing-textarea.html
+          subtest: Explicit height and auto width
+        - test: field-sizing-textarea.html
+          subtest: Text caret is taller than the placeholder
+        - test: field-sizing-textarea.html
+          subtest: Text caret is shorter than the placeholder
+        - test: field-sizing-textarea.html
+          subtest: Update field-sizing property dynamically
+    - product: safari
+      url: https://bugs.webkit.org/show_bug.cgi?id=264720
+      results:
+        - test: field-sizing-input-number.html
+        - test: field-sizing-input-text.html
+        - test: field-sizing-select.html
+        - test: field-sizing-textarea.html
