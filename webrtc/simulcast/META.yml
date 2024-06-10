@@ -37,3 +37,12 @@ links:
           subtest: Success task for setRemoteDescription(offer) clears [[LastReturnedParameters]]
         - test: setParameters-encodings.https.html
           subtest: Success task for setRemoteDescription(answer) clears [[LastReturnedParameters]]
+    - product: chrome
+      url: https://issues.chromium.org/344943234
+      results:
+        - test: negotiation-encodings.https.html
+          subtest: addTrack, then rollback of sRD(simulcast offer), brings us back to having a single encoding without a rid
+        - test: negotiation-encodings.https.html
+          subtest: sRD(simulcast offer), addTrack, then rollback brings us back to having a single encoding
+        - test: negotiation-encodings.https.html
+          subtest: Rollback of sRD(reoffer) with a single rid results in all previous encodings

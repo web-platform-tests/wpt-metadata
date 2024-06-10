@@ -1,0 +1,28 @@
+links:
+- product: firefox
+  results:
+  - subtest: Permissions policy allow="deferred-fetch" allows same-origin navigation
+      in an iframe.
+    test: deferred-fetch-allowed-by-permissions-policy-attribute-redirect.tentative.https.window.html
+  - subtest: Permissions policy "deferred-fetch" can be enabled in the same-origin
+      iframe using allow="deferred-fetch" attribute.
+    test: deferred-fetch-allowed-by-permissions-policy-attribute.tentative.https.window.html
+  - subtest: Permissions policy "deferred-fetch" can be enabled in the cross-origin
+      iframe using allow="deferred-fetch" attribute.
+    test: deferred-fetch-allowed-by-permissions-policy-attribute.tentative.https.window.html
+  - subtest: 'Permissions policy header: "deferred-fetch=*" allows fetchLater() in
+      the top-level document.'
+    test: deferred-fetch-allowed-by-permissions-policy.tentative.https.window.html
+  - subtest: 'Permissions policy header: "deferred-fetch=*" allows fetchLater() in
+      the same-origin iframe.'
+    test: deferred-fetch-allowed-by-permissions-policy.tentative.https.window.html
+  - subtest: 'Permissions policy header: "deferred-fetch=*" allow="deferred-fetch"
+      allows fetchLater() in the cross-origin iframe.'
+    test: deferred-fetch-allowed-by-permissions-policy.tentative.https.window.html
+  - subtest: Default "deferred-fetch" permissions policy ["self"] allows fetchLater()
+      in the top-level document.
+    test: deferred-fetch-default-permissions-policy.tentative.https.window.html
+  - subtest: Default "deferred-fetch" permissions policy ["self"] allows fetchLater()
+      in the same-origin iframe.
+    test: deferred-fetch-default-permissions-policy.tentative.https.window.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1900759
