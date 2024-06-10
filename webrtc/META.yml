@@ -560,3 +560,24 @@ links:
       results:
         - test: RTCSctpTransport-maxMessageSize.html
           subtest: max-message-size with a (non-zero) value larger than canSendSize provided by the remote peer
+    - product: chrome
+      url: https://issues.chromium.org/344943229
+      results:
+        - test: RTCRtpParameters-encodings.html
+          subtest: setParameters() with missing encoding.scaleResolutionDownBy field should succeed, and set the value back to 1
+    - product: chrome
+      url: https://issues.chromium.org/344950156
+      results:
+        - test: RTCRtpParameters-encodings.html
+          subtest: setParameters() with encoding.scaleResolutionDownBy field set to less than 1.0 should reject with RangeError
+    - product: chrome
+      url: https://issues.chromium.org/344943230
+      results:
+        - test: RTCRtpParameters-encodings.html
+          subtest: addTransceiver with invalid rid characters throws TypeError
+        - test: RTCRtpParameters-encodings.html
+          subtest: addTransceiver with empty rid throws TypeError
+        - test: RTCRtpParameters-encodings.html
+          subtest: addTransceiver with missing rid and multiple encodings throws TypeError
+        - test: RTCRtpParameters-encodings.html
+          subtest: addTransceiver with duplicate rid and multiple encodings throws TypeError
