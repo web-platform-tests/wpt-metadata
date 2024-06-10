@@ -1,0 +1,28 @@
+links:
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1895378
+      results:
+        - test: scrollsnapchanging-on-programmatic-scroll.tentative.html
+          subtest: snapchanging fires on programmatic scrolls that changes a scroller's snap targets.
+        - test: scrollsnapchanging-on-programmatic-scroll.tentative.html
+          subtest: Element.onsnapchanging fires on programmatic scrolls that changes a scroller's snap targets.
+        - test: scrollsnapchanging-on-programmatic-scroll.tentative.html
+          subtest: snapchanging should not fire since the snap target doesn't change.
+        - test: scrollsnapchanging-on-programmatic-root-scroll.tentative.html
+          subtest: snapchanging does not fire on programmatic scrolls that don't trigger a change in snap targets.
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1898213
+      results:
+        - test: scrollsnapchanging-on-programmatic-root-scroll.tentative.html
+          subtest: snapchanging fires on programmatic scrolls that changes a scroller's snap targets.
+        - test: scrollsnapchanging-on-programmatic-root-scroll.tentative.html
+          subtest: Document.snapchanging fires on programmatic scrolls that changes ascroller's snap targets.
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1868736
+      results:
+        - test: scrollsnapchanging-on-user-root-scroll.tentative.html
+          subtest: snapchanging doesn't fire if scroll doesn't reach different snap targets.
+        - test: scrollsnapchanging-on-user-scroll.tentative.html
+          subtest: snapchanging doesn't fire if scroll doesn't reach different snap targets.
+        - test: scrollsnapchanging-after-layout-change.tentative.html
+          subtest: snapchanging doesn't fire if scroll doesn't reach different snap targets.
