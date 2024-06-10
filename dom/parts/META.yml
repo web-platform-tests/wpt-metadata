@@ -1,130 +1,115 @@
 links:
-- product: firefox
-  results:
-  - subtest: DOM mutation support
-    test: basic-dom-part-objects.tentative.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1841916
-- product: firefox
-  results:
-  - subtest: DOM mutation support (Document)
-    test: basic-dom-part-objects.tentative.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1843688
-- product: firefox
-  results:
-  - subtest: Basic imperative DOM Parts object construction (Document)
-    test: basic-dom-part-objects.tentative.html
-  - subtest: Cloning (Document)
-    test: basic-dom-part-objects.tentative.html
-  - subtest: Cloning Element (Document)
-    test: basic-dom-part-objects.tentative.html
-  - subtest: Cloning Text (Document)
-    test: basic-dom-part-objects.tentative.html
-  - subtest: Cloning Comment (Document)
-    test: basic-dom-part-objects.tentative.html
-  - subtest: Cloning CDATASection (Document)
-    test: basic-dom-part-objects.tentative.html
-  - subtest: Cloning ProcessingInstruction (Document)
-    test: basic-dom-part-objects.tentative.html
-  - subtest: ChildNodePart children manipulation (Document)
-    test: basic-dom-part-objects.tentative.html
-  - subtest: Corner case ChildNodePart construction and cloning (Document)
-    test: basic-dom-part-objects.tentative.html
-  - subtest: Basic imperative DOM Parts object construction (DocumentFragment)
-    test: basic-dom-part-objects.tentative.html
-  - subtest: Cloning (DocumentFragment)
-    test: basic-dom-part-objects.tentative.html
-  - subtest: Cloning Element (DocumentFragment)
-    test: basic-dom-part-objects.tentative.html
-  - subtest: Cloning Text (DocumentFragment)
-    test: basic-dom-part-objects.tentative.html
-  - subtest: Cloning Comment (DocumentFragment)
-    test: basic-dom-part-objects.tentative.html
-  - subtest: Cloning CDATASection (DocumentFragment)
-    test: basic-dom-part-objects.tentative.html
-  - subtest: Cloning ProcessingInstruction (DocumentFragment)
-    test: basic-dom-part-objects.tentative.html
-  - subtest: DOM mutation support (DocumentFragment)
-    test: basic-dom-part-objects.tentative.html
-  - subtest: ChildNodePart children manipulation (DocumentFragment)
-    test: basic-dom-part-objects.tentative.html
-  - subtest: Basic declarative DOM Parts (Main Document)
-    test: basic-dom-part-objects.tentative.html
-  - subtest: Basic declarative DOM Parts (Clone)
-    test: basic-dom-part-objects.tentative.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1845705
-- product: firefox
-  results:
-  - subtest: Basic declarative DOM Parts (Clone)
-    test: basic-dom-part-declarative-brace-syntax.tentative.html
-  - subtest: Parser only behavior - adding parseparts does nothing
-    test: basic-dom-part-declarative-brace-syntax.tentative.html
-  - subtest: Self closing elements can't use parseparts
-    test: basic-dom-part-declarative-brace-syntax.tentative.html
-  - subtest: Second head element can't use parseparts
-    test: basic-dom-part-declarative-brace-syntax.tentative.html
-  - subtest: Not quite parts syntax - none should become parts, and nothing should
-      crash
-    test: basic-dom-part-declarative-brace-syntax.tentative.html
-  - subtest: Basic declarative DOM Parts (Main Document)
-    test: basic-dom-part-declarative-pi-syntax.tentative.html
-  - subtest: Basic declarative DOM Parts (Template)
-    test: basic-dom-part-declarative-pi-syntax.tentative.html
-  - subtest: Basic declarative DOM Parts (Clone)
-    test: basic-dom-part-declarative-pi-syntax.tentative.html
-  - subtest: Basic declarative DOM Parts (PartClone)
-    test: basic-dom-part-declarative-pi-syntax.tentative.html
-  - subtest: Corner case ChildNodePart construction and cloning (DocumentFragment)
-    test: basic-dom-part-objects.tentative.html
-  - subtest: It is not possible to put parseparts on the head element
-    test: dom-parts-parseparts-on-head.tentative.html
-  - subtest: It is not possible to put parseparts on the root element
-    test: dom-parts-parseparts-on-root.tentative.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1852890
-- product: firefox
-  results:
-  - subtest: Basic declarative DOM Parts (Main Document)
-    test: basic-dom-part-declarative-brace-syntax.tentative.html
-  - subtest: Basic declarative DOM Parts (Template)
-    test: basic-dom-part-declarative-brace-syntax.tentative.html
-  - subtest: Basic declarative DOM Parts (PartClone)
-    test: basic-dom-part-declarative-brace-syntax.tentative.html
-  - subtest: Post-parsing structure of child parts, and stickiness
-    test: basic-dom-part-declarative-brace-syntax.tentative.html
-  - subtest: It is possible to put parseparts on the body element
-    test: dom-parts-parseparts-on-body.tentative.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1856908
-- product: firefox
-  results:
-  - subtest: Declarative DOM Parts innerHTML <div><h1>content... (expect no parts)
-    test: basic-dom-part-declarative-brace-syntax-innerhtml.tentative.html
-  - subtest: Declarative DOM Parts innerHTML <div><h1 parseparts>content... (expect
-      no parts)
-    test: basic-dom-part-declarative-brace-syntax-innerhtml.tentative.html
-  - subtest: Declarative DOM Parts innerHTML <div parseparts=""><h1>content... (expect
-      no parts)
-    test: basic-dom-part-declarative-brace-syntax-innerhtml.tentative.html
-  - subtest: Declarative DOM Parts innerHTML <div parseparts=""><h1 parseparts>content...
-      (expect no parts)
-    test: basic-dom-part-declarative-brace-syntax-innerhtml.tentative.html
-  - subtest: Declarative DOM Parts innerHTML <template><h1>content... (expect no parts)
-    test: basic-dom-part-declarative-brace-syntax-innerhtml.tentative.html
-  - subtest: Declarative DOM Parts innerHTML <template><h1 parseparts>content... (expect
-      no parts)
-    test: basic-dom-part-declarative-brace-syntax-innerhtml.tentative.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1857317
-- product: firefox
-  results:
-  - subtest: DOM mutations are not tracked (Document)
-    test: basic-dom-part-objects.tentative.html
-  - subtest: DOM mutations are not tracked (DocumentFragment)
-    test: basic-dom-part-objects.tentative.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1858831
-- product: firefox
-  results:
-  - subtest: Declarative DOM Parts innerHTML <template parseparts="" class="expect_success"><h1>content...
-      (expect parts)
-    test: basic-dom-part-declarative-brace-syntax-innerhtml.tentative.html
-  - subtest: Declarative DOM Parts innerHTML <template parseparts="" class="expect_success"><h1
-      parseparts>content... (expect parts)
-    test: basic-dom-part-declarative-brace-syntax-innerhtml.tentative.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1858845
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1841916
+      results:
+        - test: basic-dom-part-objects.tentative.html
+          subtest: DOM mutation support
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1843688
+      results:
+        - test: basic-dom-part-objects.tentative.html
+          subtest: DOM mutation support (Document)
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1845705
+      results:
+        - test: basic-dom-part-objects.tentative.html
+          subtest: Basic imperative DOM Parts object construction (Document)
+        - test: basic-dom-part-objects.tentative.html
+          subtest: Cloning (Document)
+        - test: basic-dom-part-objects.tentative.html
+          subtest: Cloning Element (Document)
+        - test: basic-dom-part-objects.tentative.html
+          subtest: Cloning Text (Document)
+        - test: basic-dom-part-objects.tentative.html
+          subtest: Cloning Comment (Document)
+        - test: basic-dom-part-objects.tentative.html
+          subtest: Cloning CDATASection (Document)
+        - test: basic-dom-part-objects.tentative.html
+          subtest: Cloning ProcessingInstruction (Document)
+        - test: basic-dom-part-objects.tentative.html
+          subtest: ChildNodePart children manipulation (Document)
+        - test: basic-dom-part-objects.tentative.html
+          subtest: Corner case ChildNodePart construction and cloning (Document)
+        - test: basic-dom-part-objects.tentative.html
+          subtest: Basic imperative DOM Parts object construction (DocumentFragment)
+        - test: basic-dom-part-objects.tentative.html
+          subtest: Cloning (DocumentFragment)
+        - test: basic-dom-part-objects.tentative.html
+          subtest: Cloning Element (DocumentFragment)
+        - test: basic-dom-part-objects.tentative.html
+          subtest: Cloning Text (DocumentFragment)
+        - test: basic-dom-part-objects.tentative.html
+          subtest: Cloning Comment (DocumentFragment)
+        - test: basic-dom-part-objects.tentative.html
+          subtest: Cloning CDATASection (DocumentFragment)
+        - test: basic-dom-part-objects.tentative.html
+          subtest: Cloning ProcessingInstruction (DocumentFragment)
+        - test: basic-dom-part-objects.tentative.html
+          subtest: DOM mutation support (DocumentFragment)
+        - test: basic-dom-part-objects.tentative.html
+          subtest: ChildNodePart children manipulation (DocumentFragment)
+        - test: basic-dom-part-objects.tentative.html
+          subtest: Basic declarative DOM Parts (Main Document)
+        - test: basic-dom-part-objects.tentative.html
+          subtest: Basic declarative DOM Parts (Clone)
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1852890
+      results:
+        - test: basic-dom-part-declarative-brace-syntax.tentative.html
+          subtest: Basic declarative DOM Parts (Clone)
+        - test: basic-dom-part-declarative-brace-syntax.tentative.html
+          subtest: Parser only behavior - adding parseparts does nothing
+        - test: basic-dom-part-declarative-brace-syntax.tentative.html
+          subtest: Self closing elements can't use parseparts
+        - test: basic-dom-part-declarative-brace-syntax.tentative.html
+          subtest: Second head element can't use parseparts
+        - test: basic-dom-part-declarative-brace-syntax.tentative.html
+          subtest: Not quite parts syntax - none should become parts, and nothing should crash
+        - test: basic-dom-part-objects.tentative.html
+          subtest: Corner case ChildNodePart construction and cloning (DocumentFragment)
+        - test: dom-parts-parseparts-on-head.tentative.html
+          subtest: It is not possible to put parseparts on the head element
+        - test: dom-parts-parseparts-on-root.tentative.html
+          subtest: It is not possible to put parseparts on the root element
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1856908
+      results:
+        - test: basic-dom-part-declarative-brace-syntax.tentative.html
+          subtest: Basic declarative DOM Parts (Main Document)
+        - test: basic-dom-part-declarative-brace-syntax.tentative.html
+          subtest: Basic declarative DOM Parts (Template)
+        - test: basic-dom-part-declarative-brace-syntax.tentative.html
+          subtest: Basic declarative DOM Parts (PartClone)
+        - test: basic-dom-part-declarative-brace-syntax.tentative.html
+          subtest: Post-parsing structure of child parts, and stickiness
+        - test: dom-parts-parseparts-on-body.tentative.html
+          subtest: It is possible to put parseparts on the body element
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1857317
+      results:
+        - test: basic-dom-part-declarative-brace-syntax-innerhtml.tentative.html
+          subtest: Declarative DOM Parts innerHTML <div><h1>content... (expect no parts)
+        - test: basic-dom-part-declarative-brace-syntax-innerhtml.tentative.html
+          subtest: Declarative DOM Parts innerHTML <div><h1 parseparts>content... (expect no parts)
+        - test: basic-dom-part-declarative-brace-syntax-innerhtml.tentative.html
+          subtest: Declarative DOM Parts innerHTML <div parseparts=""><h1>content... (expect no parts)
+        - test: basic-dom-part-declarative-brace-syntax-innerhtml.tentative.html
+          subtest: Declarative DOM Parts innerHTML <div parseparts=""><h1 parseparts>content... (expect no parts)
+        - test: basic-dom-part-declarative-brace-syntax-innerhtml.tentative.html
+          subtest: Declarative DOM Parts innerHTML <template><h1>content... (expect no parts)
+        - test: basic-dom-part-declarative-brace-syntax-innerhtml.tentative.html
+          subtest: Declarative DOM Parts innerHTML <template><h1 parseparts>content... (expect no parts)
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1858831
+      results:
+        - test: basic-dom-part-objects.tentative.html
+          subtest: DOM mutations are not tracked (Document)
+        - test: basic-dom-part-objects.tentative.html
+          subtest: DOM mutations are not tracked (DocumentFragment)
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1858845
+      results:
+        - test: basic-dom-part-declarative-brace-syntax-innerhtml.tentative.html
+          subtest: Declarative DOM Parts innerHTML <template parseparts="" class="expect_success"><h1>content... (expect parts)
+        - test: basic-dom-part-declarative-brace-syntax-innerhtml.tentative.html
+          subtest: Declarative DOM Parts innerHTML <template parseparts="" class="expect_success"><h1 parseparts>content... (expect parts)
