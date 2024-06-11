@@ -988,3 +988,12 @@ links:
   - subtest: Registered color with dark color-scheme and light-dark()
     test: registered-color-style-queries.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1892491
+- product: firefox
+  results:
+  - subtest: Container name set inside a shadow tree should not match query for host
+      child on the outside
+    test: container-for-shadow-dom.html
+  - subtest: Container name set on :host from inside a shadow tree not matching query
+      for slotted from the outside of the shadow tree
+    test: container-for-shadow-dom.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1901735
