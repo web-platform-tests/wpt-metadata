@@ -133,3 +133,10 @@ links:
           subtest: Cookie with %x9 in value is accepted (DOM).
         - test: value-ctl.html
           subtest: Cookie with %x9 in value is accepted (HTTP).
+    - product: chrome
+      url: https://crbug.com/346430311
+      results:
+        - test: value-ctl.html
+          subtest: Cookie with %xa in name is rejected or modified (HTTP).
+        - test: value-ctl.html
+          subtest: Cookie with %xd in name is rejected or modified (HTTP).
