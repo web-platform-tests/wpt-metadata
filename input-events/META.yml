@@ -71,3 +71,12 @@ links:
   results:
   - test: input-events-spin-button-click-on-number-input-delete-document.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1900000
+- product: firefox
+  results:
+  - subtest: It triggers beforeinput and input events on typing DELETE with pre-existing
+      content
+    test: input-events-typing.html
+  - subtest: It triggers beforeinput and input events on typing Undo and Redo key
+      combinations without an existing history
+    test: input-events-typing.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1902232
