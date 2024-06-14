@@ -1,0 +1,33 @@
+links:
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1726805
+      results:
+        - test: getCurrentPosition_permission_deny.https.html
+          subtest: User denies access, check that error callback is called with correct code
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1759050
+      results:
+        - test: getCurrentPosition_permission_deny.https.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1759020
+      results:
+        - test: watchPosition_permission_deny.https.html
+        - test: watchPosition_permission_deny.https.html
+          subtest: Check that watchPosition returns synchronously before any callbacks are invoked.
+        - test: watchPosition_permission_deny.https.html
+          subtest: User denies access, check that error callback is called.
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1675896
+      results:
+        - test: PositionOptions.https.html
+          subtest: PositionOptions tests
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1803316
+      results:
+        - test: disabled-by-permissions-policy.https.sub.html
+        - test: disabled-by-permissions-policy.https.sub.html
+          subtest: Permissions-Policy header geolocation=() disallows the top-level document.
+        - test: disabled-by-permissions-policy.https.sub.html
+          subtest: Permissions-Policy header geolocation=() disallows same-origin iframes.
+        - test: disabled-by-permissions-policy.https.sub.html
+          subtest: Permissions-Policy header geolocation=() disallows cross-origin iframes.
