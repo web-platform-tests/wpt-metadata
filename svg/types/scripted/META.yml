@@ -91,3 +91,18 @@ links:
       results:
         - test: SVGGeometryElement.getPointAtLength-03.svg
           subtest: When SVGGeometryElement.getPointAtLength is called with an element that is not in the document, either succeed or throw exception with SVGPathElement
+    - product: safari
+      url: https://bugs.webkit.org/show_bug.cgi?id=268594
+      results:
+        - test: SVGGeometryElement.getPointAtLength-04.svg
+          subtest: 'SVGGeometryElement.getPointAtLength: ''display'' and a valid path, path with display: none and inline style'
+        - test: SVGGeometryElement.getPointAtLength-04.svg
+          subtest: 'SVGGeometryElement.getPointAtLength: ''display'' and a valid path, rect with display: none'
+        - test: SVGGeometryElement.getPointAtLength-04.svg
+          subtest: 'SVGGeometryElement.getPointAtLength: ''display'' and a valid path, circle with display: none'
+        - test: SVGGeometryElement.getPointAtLength-04.svg
+          subtest: 'SVGGeometryElement.getPointAtLength: ''display'' and a valid path, polygon with display: none'
+        - test: SVGGeometryElement.getPointAtLength-04.svg
+          subtest: 'SVGGeometryElement.getPointAtLength: ''display'' and a valid path, polyline with display: none'
+        - test: SVGGeometryElement.getPointAtLength-04.svg
+          subtest: 'SVGGeometryElement.getPointAtLength: ''display'' and a valid path, ellipse with display: none'
