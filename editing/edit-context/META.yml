@@ -68,3 +68,24 @@ links:
       return false
     test: edit-context-execCommand.tentative.https.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1889204
+- product: firefox
+  results:
+  - subtest: Basic text input with div
+    test: edit-context-input.tentative.html
+  - subtest: Basic text input with canvas
+    test: edit-context-input.tentative.html
+  - subtest: Text insertion with non-collapsed selection with div
+    test: edit-context-input.tentative.html
+  - subtest: Text insertion with non-collapsed selection with canvas
+    test: edit-context-input.tentative.html
+  - subtest: Backspace and delete in EditContext with div
+    test: edit-context-input.tentative.html
+  - subtest: Backspace and delete in EditContext with canvas
+    test: edit-context-input.tentative.html
+  - subtest: Backspace and delete with existing selection with div
+    test: edit-context-input.tentative.html
+  - subtest: Backspace and delete with existing selection with canvas
+    test: edit-context-input.tentative.html
+  - subtest: EditContext constructed outside iframe can be used in iframe
+    test: edit-context-input.tentative.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1903634
