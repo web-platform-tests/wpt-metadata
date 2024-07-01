@@ -3,7 +3,6 @@ links:
       url: https://bugzilla.mozilla.org/show_bug.cgi?id=1550493
       results:
         - test: RTCPeerConnection-setRemoteDescription-tracks.https.html
-        - test: RTCDTMFSender-ontonechange.https.html
         - test: RTCRtpTransceiver.https.html
     - product: firefox
       url: https://bugzilla.mozilla.org/show_bug.cgi?id=1525394
@@ -15,7 +14,7 @@ links:
         - test: getstats.html
           status: TIMEOUT
     - product: chrome
-      url: https://crbug.com/1045403
+      url: https://crbug.com/674593
       results:
         - test: RTCConfiguration-iceServers.html
           status: FAIL
@@ -23,28 +22,6 @@ links:
       url: https://crbug.com/964184
       results:
         - test: RTCPeerConnection-addIceCandidate.html
-          status: FAIL
-    - product: chrome
-      url: https://crbug.com/1094930
-      results:
-        - test: receiver-track-live.https.html
-          status: FAIL
-    - product: chrome
-      url: https://crbug.com/924255
-      results:
-        - test: RTCTrackEvent-constructor.html
-          status: FAIL
-    - product: chrome
-      url: https://crbug.com/1050317
-      results:
-        - test: RTCPeerConnection-setLocalDescription-answer.html
-          status: FAIL
-    - product: chrome
-      url: https://crbug.com/1057527
-      results:
-        - test: RTCPeerConnection-setLocalDescription-parameterless.https.html
-          status: FAIL
-        - test: RTCDTMFSender-insertDTMF.https.html
           status: FAIL
     - product: chrome
       url: https://crbug.com/1035578
@@ -59,11 +36,7 @@ links:
     - product: chrome
       url: https://crbug.com/1043503
       results:
-        - test: RTCRtpReceiver-getSynchronizationSources.https.html
-          status: FAIL
         - test: RTCPeerConnection-remote-track-mute.https.html
-          status: FAIL
-        - test: RTCPeerConnection-onnegotiationneeded.html
           status: FAIL
         - test: idlharness.https.window.html
           status: FAIL
@@ -119,8 +92,6 @@ links:
     - product: firefox
       url: https://bugzilla.mozilla.org/show_bug.cgi?id=1531087
       results:
-        - test: getstats.html
-          subtest: Can get stats from a basic WebRTC call.
         - test: RTCPeerConnection-mandatory-getStats.https.html
           subtest: RTCPeerConnectionStats's dataChannelsOpened
         - test: RTCPeerConnection-mandatory-getStats.https.html
@@ -263,8 +234,6 @@ links:
           subtest: iceConnectionState changes at the right time, with bundle policy max-bundle
         - test: RTCPeerConnection-iceConnectionState.https.html
           subtest: iceConnectionState changes at the right time, with bundle policy max-compat
-        - test: RTCPeerConnection-iceGatheringState.html
-          subtest: connection with one data channel should eventually have connected connection state
         - test: RTCSctpTransport-constructor.html
         - test: RTCRtpSender-transport.https.html
           subtest: RTCRtpSender/receiver/SCTP transport at the right time, with bundle policy balanced
@@ -274,7 +243,6 @@ links:
           subtest: RTCRtpSender/receiver/SCTP transport at the right time, with bundle policy max-compat
         - test: RTCSctpTransport-maxChannels.html
         - test: RTCSctpTransport-events.html
-        - test: RTCSctpTransport-maxMessageSize.html
     - product: firefox
       url: https://bugzilla.mozilla.org/show_bug.cgi?id=1561441
       results:
@@ -311,11 +279,6 @@ links:
       results:
         - test: RTCPeerConnection-capture-video.https.html
     - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1728367
-      results:
-        - test: RTCPeerConnection-setDescription-transceiver.html
-          subtest: setRemoteDescription should set transceiver inactive if its corresponding m section is rejected
-    - product: firefox
       url: https://bugzilla.mozilla.org/show_bug.cgi?id=1765852
       results:
         - test: RTCRtpParameters-rtcp.html
@@ -341,10 +304,6 @@ links:
           subtest: Adding streams to an active transceiver causes new streams to be reported via ontrack on callee
         - test: RTCRtpSender-setStreams.https.html
           subtest: setStreams() fires InvalidStateError on a closed peer connection.
-        - test: RTCPeerConnection-onnegotiationneeded.html
-          subtest: Calling setStreams should cause negotiationneeded to fire
-        - test: RTCPeerConnection-setRemoteDescription-rollback.html
-          subtest: rollback of a remote offer with stream changes
     - product: firefox
       url: https://bugzilla.mozilla.org/show_bug.cgi?id=1307994
       results:
@@ -425,34 +384,6 @@ links:
       url: https://bugzilla.mozilla.org/show_bug.cgi?id=1765851
       results:
         - test: RTCRtpParameters-headerExtensions.html
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1568296
-      results:
-        - test: RTCRtpTransceiver-stopping.https.html
-        - test: RTCRtpTransceiver-stop.html
-          subtest: If a transceiver is stopped, transceivers, senders and receivers should disappear after offer/answer
-        - test: RTCRtpTransceiver-stop.html
-          subtest: If a transceiver is stopped, transceivers should end up in state stopped
-        - test: RTCRtpTransceiver.https.html
-          subtest: checkCurrentDirection
-        - test: RTCRtpTransceiver.https.html
-          subtest: checkStop
-        - test: RTCRtpTransceiver.https.html
-          subtest: checkStopAfterCreateOffer
-        - test: RTCRtpTransceiver.https.html
-          subtest: checkStopAfterSetLocalOffer
-        - test: RTCRtpTransceiver.https.html
-          subtest: checkStopAfterSetRemoteOffer
-        - test: RTCRtpTransceiver.https.html
-          subtest: checkStopAfterCreateAnswer
-        - test: RTCRtpTransceiver.https.html
-          subtest: checkStopAfterSetLocalAnswer
-        - test: RTCRtpTransceiver.https.html
-          subtest: checkLocalRollback
-        - test: RTCRtpTransceiver.https.html
-          subtest: checkRemoteRollback
-        - test: RTCRtpTransceiver.https.html
-          subtest: checkMsectionReuse
     - product: firefox
       url: https://bugzilla.mozilla.org/show_bug.cgi?id=1577830
       results:
