@@ -24,8 +24,7 @@ links:
     - url: https://github.com/web-platform-tests/wpt/issues/10706
       results:
         - test: keypath-special-identifiers.htm
-    - url: ""
-      label: interop-2024-indexeddb
+    - label: interop-2024-indexeddb
       results:
         - test: abort-in-initial-upgradeneeded.html
         - test: back-forward-cache-open-connection.window.html
@@ -479,3 +478,10 @@ links:
         - test: structured-clone.any.html?21-40
         - test: structured-clone.any.worker.html?1-20
         - test: structured-clone.any.worker.html?21-40
+    - product: safari
+      url: https://bugs.webkit.org/show_bug.cgi?id=156347
+      results:
+        - test: structured-clone.any.html?101-last
+          subtest: 'Blob: [object Blob]'
+        - test: structured-clone.any.html?101-last
+          subtest: 'File: [object File]'
