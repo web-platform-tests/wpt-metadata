@@ -1,278 +1,283 @@
 links:
-    - label: interop-2022-cascade
-      results:
-        - test: all-prop-revert-layer-noop.html?include=0
-        - test: all-prop-revert-layer-noop.html?include=1
-        - test: all-prop-revert-layer-noop.html?include=2
-        - test: all-prop-revert-layer-noop.html?include=3
-        - test: all-prop-revert-layer-noop.html?include=4
-        - test: all-prop-revert-layer-noop.html?include=5
-        - test: all-prop-revert-layer-noop.html?include=6
-        - test: all-prop-revert-layer-noop.html?include=7
-        - test: layer-basic.html
-        - test: layer-cssom-order-reverse.html
-        - test: layer-font-face-override.html
-        - test: layer-import.html
-        - test: layer-keyframes-override.html
-        - test: layer-media-query.html
-        - test: layer-rules-cssom.html
-        - test: layer-slotted-rule.html
-        - test: layer-statement-before-import.html
-        - test: layer-stylesheet-sharing-important.html
-        - test: layer-stylesheet-sharing.html
-        - test: layer-vs-inline-style.html
-        - test: presentational-hints-rollback.html
-        - test: revert-layer-001.html
-        - test: revert-layer-002.html
-        - test: revert-layer-003.html
-        - test: revert-layer-004.html
-        - test: revert-layer-005.html
-        - test: revert-layer-006.html
-        - test: revert-layer-007.html
-        - test: revert-layer-008.html
-        - test: revert-layer-009.html
-        - test: revert-layer-010.html
-        - test: revert-layer-012.html
-        - test: revert-layer-014.html
-        - test: revert-layer-015.html
-        - test: all-prop-revert-layer.html
-        - test: revert-layer-013.html
-    - product: webkitgtk
-      url: https://bugs.webkit.org/show_bug.cgi?id=209330
-      results:
-        - test: all-prop-initial-xml.html
-          status: FAIL
-    - product: chrome
-      url: https://bugs.chromium.org/p/chromium/issues/detail?id=1208861
-      results:
-        - test: all-prop-revert-visited.html
-        - test: all-prop-unset-visited.html
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1734570
-      results:
-        - test: layer-basic.html
-          subtest: A2 Anonymous layers
-        - test: layer-basic.html
-          subtest: A3 Anonymous layers
-        - test: layer-basic.html
-          subtest: B2 Named layers
-        - test: layer-import.html
-          subtest: A1 Layer rules with import
-        - test: layer-import.html
-          subtest: A2 Layer rules with import
-        - test: layer-import.html
-          subtest: A3 Layer rules with import
-        - test: layer-import.html
-          subtest: B1 Anonymous imports
-        - test: layer-import.html
-          subtest: C1 Named imports
-        - test: layer-keyframes-override.html
-          subtest: '@keyframes unlayered overrides layered'
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1735425
-      results:
-        - test: layer-counter-style-override.html
-          subtest: '@counter-style unlayered overrides layered'
-        - test: layer-font-face-override.html
-          subtest: '@font-face unlayered overrides layered'
-        - test: layer-property-override.html
-          subtest: '@property unlayered overrides layered'
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1738347
-      results:
-        - test: layer-statement-before-import.html
-    - product: chrome
-      url: https://bugs.chromium.org/p/chromium/issues/detail?id=1277637
-      results:
-        - test: layer-stylesheet-sharing.html
-    - product: chrome
-      url: https://crbug.com/1380321
-      results:
-        - test: import-conditional-002.html
-        - test: import-conditions.html
-          subtest: supports(display:block) is a valid import condition
-        - test: import-conditions.html
-          subtest: supports((display:flex)) is a valid import condition
-        - test: import-conditions.html
-          subtest: supports((display:block) and (display:flex)) is a valid import condition
-        - test: import-conditions.html
-          subtest: supports((display:block) or (display:flex)) is a valid import condition
-        - test: import-conditions.html
-          subtest: supports((display:block) or (foo:bar)) is a valid import condition
-        - test: import-conditions.html
-          subtest: 'supports(display: block !important) is a valid import condition'
-        - test: import-conditions.html
-          subtest: supports(display:block) (width >= 0px) is a valid import condition
-        - test: import-conditions.html
-          subtest: supports(selector(a)) is a valid import condition
-        - test: import-conditions.html
-          subtest: supports(selector(p a)) is a valid import condition
-        - test: import-conditions.html
-          subtest: supports(selector(p > a)) is a valid import condition
-        - test: import-conditions.html
-          subtest: supports(selector(p + a)) is a valid import condition
-        - test: import-conditions.html
-          subtest: supports(font-tech(color-COLRv1)) is a valid import condition
-        - test: import-conditions.html
-          subtest: supports(font-format(opentype)) is a valid import condition
-        - test: import-conditions.html
-          subtest: supports(font-format(woff)) is a valid import condition
-        - test: import-conditions.html
-          subtest: layer(A.B) supports(font-format(opentype)) is a valid import condition
-        - test: import-conditions.html
-          subtest: layer supports(selector(a)) is a valid import condition
-    - product: firefox
-      url: https://wpt.fyi/results/css/css-cascade/presentational-hints-rollback.html
-      results:
-        - test: presentational-hints-rollback.html
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1533327
-      results:
-        - test: revert-layer-010.html
-        - test: presentational-hints-rollback.html
-        - test: revert-val-010.html
-        - test: revert-val-008.html
-        - test: revert-val-007.html
-        - test: revert-val-006.html
-        - test: revert-layer-011.html
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1830512
-      results:
-        - test: idlharness.html
-        - test: at-scope-parsing.html
-        - test: scope-layer.html
-        - test: scope-deep.html
-        - test: scope-evaluation.html
-        - test: scope-implicit-external.html
-        - test: scope-hover.html
-        - test: scope-invalidation.html
-        - test: scope-shadow.tentative.html
-        - test: scope-cssom.html
-        - test: scope-visited.html
-        - test: scope-name-defining-rules.html
-        - test: scope-focus.html
-        - test: scope-implicit.html
-        - test: scope-media.html
-        - test: scope-visited-cssom.html
-        - test: scope-supports.html
-        - test: scope-specificity.html
-        - test: scope-nesting.html
-        - test: scope-starting-style.html
-        - test: scope-proximity.html
-        - test: scope-container.html
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1866192
-      results:
-        - test: all-prop-initial-visited.html
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1866193
-      results:
-        - test: all-prop-initial-xml.html
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1873611
-      results:
-        - test: scope-nesting.html
-          subtest: Implicit :scope in <scope-end>
-        - test: scope-nesting.html
-          subtest: Relative selectors in <scope-end>
-        - test: scope-nesting.html
-          subtest: Nesting-selector in the scope's <stylesheet>
-        - test: scope-nesting.html
-          subtest: Nesting-selector within :scope rule
-        - test: scope-nesting.html
-          subtest: Nesting-selector within :scope rule (double nested)
-        - test: scope-nesting.html
-          subtest: '@scope nested within style rule'
-        - test: scope-nesting.html
-          subtest: Parent pseudo class within scope-start
-        - test: scope-nesting.html
-          subtest: Parent pseudo class within scope-end
-        - test: scope-nesting.html
-          subtest: Parent pseudo class within body of nested @scope
-        - test: scope-nesting.html
-          subtest: 'Implicit rule within nested @scope '
-        - test: scope-nesting.html
-          subtest: Implicit rule within nested @scope (proximity)
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1873614
-      results:
-        - test: scope-nesting.html
-          subtest: Nested :scope inside an :is
-        - test: scope-nesting.html
-          subtest: :scope within nested and scoped rule
-        - test: scope-nesting.html
-          subtest: :scope within nested and scoped rule (implied &)
-        - test: scope-nesting.html
-          subtest: :scope within nested and scoped rule (relative)
-        - test: scope-nesting.html
-          subtest: Scoped nested group rule
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1878994
-      results:
-        - test: scope-shadow.tentative.html
-          subtest: '@scope can match :host'
-        - test: scope-shadow.tentative.html
-          subtest: '@scope can match :host(...)'
-        - test: scope-shadow.tentative.html
-          subtest: :scope matches host via the scoping root
-        - test: scope-shadow.tentative.html
-          subtest: :scope within :is() matches host via the scoping root
-        - test: scope-shadow.tentative.html
-          subtest: Implicit @scope as direct child of shadow root
-        - test: scope-shadow.tentative.html
-          subtest: Implicit @scope in construted stylesheet
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1886314
-      results:
-        - test: scope-evaluation.html
-          subtest: Single scope
-        - test: scope-evaluation.html
-          subtest: Selecting self with :scope
-        - test: scope-evaluation.html
-          subtest: Single scope with limit
-        - test: scope-evaluation.html
-          subtest: Single scope, :scope pseudo in main selector
-        - test: scope-evaluation.html
-          subtest: Single scope, :scope pseudo in to-selector
-        - test: scope-evaluation.html
-          subtest: Multiple scopes, :scope pseudo in to-selector
-        - test: scope-evaluation.html
-          subtest: Inner @scope with :scope in from-selector
-        - test: scope-evaluation.html
-          subtest: Multiple scopes from same @scope-rule, only one limited
-        - test: scope-evaluation.html
-          subtest: Nested scopes
-        - test: scope-evaluation.html
-          subtest: Nested scopes, with to-selector
-        - test: scope-evaluation.html
-          subtest: :scope selecting itself
-        - test: scope-evaluation.html
-          subtest: The scoping limit is not in scope
-        - test: scope-evaluation.html
-          subtest: Simulated inclusive scoping limit
-        - test: scope-evaluation.html
-          subtest: Relative selector inside @scope
-        - test: scope-evaluation.html
-          subtest: Scope root with :has()
-        - test: scope-evaluation.html
-          subtest: Any scope limit makes the element out of scope
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1886317
-      results:
-        - test: scope-implicit.html
-          subtest: '@scope without prelude implicitly scopes to parent of owner node'
-        - test: scope-implicit.html
-          subtest: :scope can style implicit root
-        - test: scope-implicit.html
-          subtest: '@scope works with two identical stylesheets'
-        - test: scope-implicit.html
-          subtest: Implicit @scope with inner relative selector
-        - test: scope-implicit.html
-          subtest: Implicit @scope with inner nesting selector
-        - test: scope-implicit.html
-          subtest: Implicit @scope with limit
-        - test: scope-implicit.html
-          subtest: Proximity calculation of multiple implicit @scope
-    - url: https://bugzilla.mozilla.org/show_bug.cgi?id=1887117
-      results:
-        - test: all-prop-revert-layer.html
+- label: interop-2022-cascade
+  results:
+  - test: all-prop-revert-layer-noop.html?include=0
+  - test: all-prop-revert-layer-noop.html?include=1
+  - test: all-prop-revert-layer-noop.html?include=2
+  - test: all-prop-revert-layer-noop.html?include=3
+  - test: all-prop-revert-layer-noop.html?include=4
+  - test: all-prop-revert-layer-noop.html?include=5
+  - test: all-prop-revert-layer-noop.html?include=6
+  - test: all-prop-revert-layer-noop.html?include=7
+  - test: layer-basic.html
+  - test: layer-cssom-order-reverse.html
+  - test: layer-font-face-override.html
+  - test: layer-import.html
+  - test: layer-keyframes-override.html
+  - test: layer-media-query.html
+  - test: layer-rules-cssom.html
+  - test: layer-slotted-rule.html
+  - test: layer-statement-before-import.html
+  - test: layer-stylesheet-sharing-important.html
+  - test: layer-stylesheet-sharing.html
+  - test: layer-vs-inline-style.html
+  - test: presentational-hints-rollback.html
+  - test: revert-layer-001.html
+  - test: revert-layer-002.html
+  - test: revert-layer-003.html
+  - test: revert-layer-004.html
+  - test: revert-layer-005.html
+  - test: revert-layer-006.html
+  - test: revert-layer-007.html
+  - test: revert-layer-008.html
+  - test: revert-layer-009.html
+  - test: revert-layer-010.html
+  - test: revert-layer-012.html
+  - test: revert-layer-014.html
+  - test: revert-layer-015.html
+  - test: all-prop-revert-layer.html
+  - test: revert-layer-013.html
+- product: webkitgtk
+  results:
+  - status: FAIL
+    test: all-prop-initial-xml.html
+  url: https://bugs.webkit.org/show_bug.cgi?id=209330
+- product: chrome
+  results:
+  - test: all-prop-revert-visited.html
+  - test: all-prop-unset-visited.html
+  url: https://bugs.chromium.org/p/chromium/issues/detail?id=1208861
+- product: firefox
+  results:
+  - subtest: A2 Anonymous layers
+    test: layer-basic.html
+  - subtest: A3 Anonymous layers
+    test: layer-basic.html
+  - subtest: B2 Named layers
+    test: layer-basic.html
+  - subtest: A1 Layer rules with import
+    test: layer-import.html
+  - subtest: A2 Layer rules with import
+    test: layer-import.html
+  - subtest: A3 Layer rules with import
+    test: layer-import.html
+  - subtest: B1 Anonymous imports
+    test: layer-import.html
+  - subtest: C1 Named imports
+    test: layer-import.html
+  - subtest: '@keyframes unlayered overrides layered'
+    test: layer-keyframes-override.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1734570
+- product: firefox
+  results:
+  - subtest: '@counter-style unlayered overrides layered'
+    test: layer-counter-style-override.html
+  - subtest: '@font-face unlayered overrides layered'
+    test: layer-font-face-override.html
+  - subtest: '@property unlayered overrides layered'
+    test: layer-property-override.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1735425
+- product: firefox
+  results:
+  - test: layer-statement-before-import.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1738347
+- product: chrome
+  results:
+  - test: layer-stylesheet-sharing.html
+  url: https://bugs.chromium.org/p/chromium/issues/detail?id=1277637
+- product: chrome
+  results:
+  - test: import-conditional-002.html
+  - subtest: supports(display:block) is a valid import condition
+    test: import-conditions.html
+  - subtest: supports((display:flex)) is a valid import condition
+    test: import-conditions.html
+  - subtest: supports((display:block) and (display:flex)) is a valid import condition
+    test: import-conditions.html
+  - subtest: supports((display:block) or (display:flex)) is a valid import condition
+    test: import-conditions.html
+  - subtest: supports((display:block) or (foo:bar)) is a valid import condition
+    test: import-conditions.html
+  - subtest: 'supports(display: block !important) is a valid import condition'
+    test: import-conditions.html
+  - subtest: supports(display:block) (width >= 0px) is a valid import condition
+    test: import-conditions.html
+  - subtest: supports(selector(a)) is a valid import condition
+    test: import-conditions.html
+  - subtest: supports(selector(p a)) is a valid import condition
+    test: import-conditions.html
+  - subtest: supports(selector(p > a)) is a valid import condition
+    test: import-conditions.html
+  - subtest: supports(selector(p + a)) is a valid import condition
+    test: import-conditions.html
+  - subtest: supports(font-tech(color-COLRv1)) is a valid import condition
+    test: import-conditions.html
+  - subtest: supports(font-format(opentype)) is a valid import condition
+    test: import-conditions.html
+  - subtest: supports(font-format(woff)) is a valid import condition
+    test: import-conditions.html
+  - subtest: layer(A.B) supports(font-format(opentype)) is a valid import condition
+    test: import-conditions.html
+  - subtest: layer supports(selector(a)) is a valid import condition
+    test: import-conditions.html
+  url: https://crbug.com/1380321
+- product: firefox
+  results:
+  - test: presentational-hints-rollback.html
+  url: https://wpt.fyi/results/css/css-cascade/presentational-hints-rollback.html
+- product: firefox
+  results:
+  - test: revert-layer-010.html
+  - test: presentational-hints-rollback.html
+  - test: revert-val-010.html
+  - test: revert-val-008.html
+  - test: revert-val-007.html
+  - test: revert-val-006.html
+  - test: revert-layer-011.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1533327
+- product: firefox
+  results:
+  - test: idlharness.html
+  - test: at-scope-parsing.html
+  - test: scope-layer.html
+  - test: scope-deep.html
+  - test: scope-evaluation.html
+  - test: scope-implicit-external.html
+  - test: scope-hover.html
+  - test: scope-invalidation.html
+  - test: scope-shadow.tentative.html
+  - test: scope-cssom.html
+  - test: scope-visited.html
+  - test: scope-name-defining-rules.html
+  - test: scope-focus.html
+  - test: scope-implicit.html
+  - test: scope-media.html
+  - test: scope-visited-cssom.html
+  - test: scope-supports.html
+  - test: scope-specificity.html
+  - test: scope-nesting.html
+  - test: scope-starting-style.html
+  - test: scope-proximity.html
+  - test: scope-container.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1830512
+- product: firefox
+  results:
+  - test: all-prop-initial-visited.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1866192
+- product: firefox
+  results:
+  - test: all-prop-initial-xml.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1866193
+- product: firefox
+  results:
+  - subtest: Implicit :scope in <scope-end>
+    test: scope-nesting.html
+  - subtest: Relative selectors in <scope-end>
+    test: scope-nesting.html
+  - subtest: Nesting-selector in the scope's <stylesheet>
+    test: scope-nesting.html
+  - subtest: Nesting-selector within :scope rule
+    test: scope-nesting.html
+  - subtest: Nesting-selector within :scope rule (double nested)
+    test: scope-nesting.html
+  - subtest: '@scope nested within style rule'
+    test: scope-nesting.html
+  - subtest: Parent pseudo class within scope-start
+    test: scope-nesting.html
+  - subtest: Parent pseudo class within scope-end
+    test: scope-nesting.html
+  - subtest: Parent pseudo class within body of nested @scope
+    test: scope-nesting.html
+  - subtest: 'Implicit rule within nested @scope '
+    test: scope-nesting.html
+  - subtest: Implicit rule within nested @scope (proximity)
+    test: scope-nesting.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1873611
+- product: firefox
+  results:
+  - subtest: Nested :scope inside an :is
+    test: scope-nesting.html
+  - subtest: :scope within nested and scoped rule
+    test: scope-nesting.html
+  - subtest: :scope within nested and scoped rule (implied &)
+    test: scope-nesting.html
+  - subtest: :scope within nested and scoped rule (relative)
+    test: scope-nesting.html
+  - subtest: Scoped nested group rule
+    test: scope-nesting.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1873614
+- product: firefox
+  results:
+  - subtest: '@scope can match :host'
+    test: scope-shadow.tentative.html
+  - subtest: '@scope can match :host(...)'
+    test: scope-shadow.tentative.html
+  - subtest: :scope matches host via the scoping root
+    test: scope-shadow.tentative.html
+  - subtest: :scope within :is() matches host via the scoping root
+    test: scope-shadow.tentative.html
+  - subtest: Implicit @scope as direct child of shadow root
+    test: scope-shadow.tentative.html
+  - subtest: Implicit @scope in construted stylesheet
+    test: scope-shadow.tentative.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1878994
+- product: firefox
+  results:
+  - subtest: Single scope
+    test: scope-evaluation.html
+  - subtest: Selecting self with :scope
+    test: scope-evaluation.html
+  - subtest: Single scope with limit
+    test: scope-evaluation.html
+  - subtest: Single scope, :scope pseudo in main selector
+    test: scope-evaluation.html
+  - subtest: Single scope, :scope pseudo in to-selector
+    test: scope-evaluation.html
+  - subtest: Multiple scopes, :scope pseudo in to-selector
+    test: scope-evaluation.html
+  - subtest: Inner @scope with :scope in from-selector
+    test: scope-evaluation.html
+  - subtest: Multiple scopes from same @scope-rule, only one limited
+    test: scope-evaluation.html
+  - subtest: Nested scopes
+    test: scope-evaluation.html
+  - subtest: Nested scopes, with to-selector
+    test: scope-evaluation.html
+  - subtest: :scope selecting itself
+    test: scope-evaluation.html
+  - subtest: The scoping limit is not in scope
+    test: scope-evaluation.html
+  - subtest: Simulated inclusive scoping limit
+    test: scope-evaluation.html
+  - subtest: Relative selector inside @scope
+    test: scope-evaluation.html
+  - subtest: Scope root with :has()
+    test: scope-evaluation.html
+  - subtest: Any scope limit makes the element out of scope
+    test: scope-evaluation.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1886314
+- product: firefox
+  results:
+  - subtest: '@scope without prelude implicitly scopes to parent of owner node'
+    test: scope-implicit.html
+  - subtest: :scope can style implicit root
+    test: scope-implicit.html
+  - subtest: '@scope works with two identical stylesheets'
+    test: scope-implicit.html
+  - subtest: Implicit @scope with inner relative selector
+    test: scope-implicit.html
+  - subtest: Implicit @scope with inner nesting selector
+    test: scope-implicit.html
+  - subtest: Implicit @scope with limit
+    test: scope-implicit.html
+  - subtest: Proximity calculation of multiple implicit @scope
+    test: scope-implicit.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1886317
+- results:
+  - test: all-prop-revert-layer.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1887117
+- product: firefox
+  results:
+  - subtest: Style rules within @container are scoped
+    test: scope-container.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1906098
