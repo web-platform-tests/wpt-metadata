@@ -588,3 +588,8 @@ links:
           subtest: setCodecPreferences should accept audio codecs regardless of mimeType case
         - test: RTCRtpTransceiver-setCodecPreferences.html
           subtest: setCodecPreferences should accept video codecs regardless of mimeType case
+    - product: safari
+      url: https://bugs.webkit.org/show_bug.cgi?id=276445
+      results:
+        - test: RTCPeerConnection-transceivers.https.html
+          subtest: Closing the PC stops the transceivers
