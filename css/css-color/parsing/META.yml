@@ -1,5 +1,6 @@
 links:
-    - label: interop-2022-color
+    - url: ""
+      label: interop-2022-color
       results:
         - test: color-computed.html
         - test: color-computed-color-function.html
@@ -22,7 +23,8 @@ links:
         - test: color-valid-hwb.html
         - test: color-valid-lab.html
         - test: color-valid-rgb.html
-    - label: interop-2023-color
+    - url: ""
+      label: interop-2023-color
       results:
         - test: color-mix-out-of-gamut.html
     - product: firefox
@@ -738,7 +740,8 @@ links:
           subtest: e.style['opacity'] = "max(0%, 50%)" should set the property value
         - test: opacity-valid.html
           subtest: e.style['opacity'] = "min(-40%, 50%)" should set the property value
-    - label: interop-2024-relative-color
+    - url: ""
+      label: interop-2024-relative-color
       results:
         - test: relative-color-out-of-gamut.html
         - test: color-computed-relative-color.html
@@ -1601,4 +1604,38 @@ links:
       url: https://bugzilla.mozilla.org/show_bug.cgi?id=1893966
       results:
         - test: color-valid-relative-color.html
+          subtest: e.style['color'] = "rgb(from currentColor r g b)" should set the property value
+        - test: color-valid-relative-color.html
+          subtest: e.style['color'] = "lab(from currentColor l a b)" should set the property value
+        - test: color-valid-relative-color.html
+          subtest: e.style['color'] = "oklab(from currentColor l a b)" should set the property value
+        - test: color-valid-relative-color.html
+          subtest: e.style['color'] = "hwb(from currentColor h w b)" should set the property value
+        - test: color-valid-relative-color.html
+          subtest: e.style['color'] = "lch(from currentColor l c h)" should set the property value
+        - test: color-valid-relative-color.html
+          subtest: e.style['color'] = "oklch(from currentColor l c h)" should set the property value
+        - test: color-valid-relative-color.html
+          subtest: e.style['color'] = "color(from currentColor srgb r g b)" should set the property value
+        - test: color-valid-relative-color.html
+          subtest: e.style['color'] = "color(from currentColor srgb-linear r g b)" should set the property value
+        - test: color-valid-relative-color.html
+          subtest: e.style['color'] = "color(from currentColor a98-rgb r g b)" should set the property value
+        - test: color-valid-relative-color.html
+          subtest: e.style['color'] = "color(from currentColor rec2020 r g b)" should set the property value
+        - test: color-valid-relative-color.html
+          subtest: e.style['color'] = "color(from currentColor prophoto-rgb r g b)" should set the property value
+        - test: color-valid-relative-color.html
+          subtest: e.style['color'] = "color(from currentColor display-p3 r g b)" should set the property value
+        - test: color-valid-relative-color.html
+          subtest: e.style['color'] = "color(from currentColor xyz x y z)" should set the property value
+        - test: color-valid-relative-color.html
+          subtest: e.style['color'] = "color(from currentColor xyz-d50 x y z)" should set the property value
+        - test: color-valid-relative-color.html
+          subtest: e.style['color'] = "color(from currentColor xyz-d65 x y z)" should set the property value
+        - test: color-valid-relative-color.html
+          subtest: e.style['color'] = "rgba(from currentColor r g b)" should set the property value
+        - test: color-valid-relative-color.html
           subtest: e.style['color'] = "hsl(from currentColor h s l)" should set the property value
+        - test: color-valid-relative-color.html
+          subtest: e.style['color'] = "hsla(from currentColor h s l)" should set the property value
