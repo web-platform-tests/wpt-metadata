@@ -1,0 +1,19 @@
+links:
+    - product: firefox
+      url: https://crbug.com/351867688
+      results:
+        - test: cross-partition.tentative.https.html
+          subtest: Blob URL shouldn't be revocable from a cross-partition iframe
+        - test: cross-partition.tentative.https.html
+          subtest: Blob URL shouldn't be revocable from a cross-partition dedicated worker
+        - test: cross-partition.tentative.https.html
+          subtest: Blob URL shouldn't be revocable from a cross-partition shared worker
+    - product: safari
+      url: https://crbug.com/351867688
+      results:
+        - test: cross-partition.tentative.https.html
+          subtest: Blob URL shouldn't be revocable from a cross-partition iframe
+        - test: cross-partition.tentative.https.html
+          subtest: Blob URL shouldn't be revocable from a cross-partition dedicated worker
+        - test: cross-partition.tentative.https.html
+          subtest: Blob URL shouldn't be revocable from a cross-partition shared worker
