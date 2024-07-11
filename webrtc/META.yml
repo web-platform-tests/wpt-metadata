@@ -597,3 +597,7 @@ links:
           subtest: '[video] Locally stopped transceiver goes from stopping to stopped'
         - test: RTCRtpTransceiver.https.html
           subtest: checkCurrentDirection
+        - test: RTCRtpTransceiver-stop.html
+          subtest: If a transceiver is stopped, transceivers should end up in state stopped
+        - test: RTCPeerConnection-transceivers.https.html
+          subtest: Closing the PC stops the transceivers
