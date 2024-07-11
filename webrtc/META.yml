@@ -591,5 +591,13 @@ links:
     - product: safari
       url: https://bugs.webkit.org/show_bug.cgi?id=276445
       results:
+        - test: RTCRtpTransceiver-stopping.https.html
+          subtest: '[audio] Locally stopped transceiver goes from stopping to stopped'
+        - test: RTCRtpTransceiver-stopping.https.html
+          subtest: '[video] Locally stopped transceiver goes from stopping to stopped'
+        - test: RTCRtpTransceiver.https.html
+          subtest: checkCurrentDirection
+        - test: RTCRtpTransceiver-stop.html
+          subtest: If a transceiver is stopped, transceivers should end up in state stopped
         - test: RTCPeerConnection-transceivers.https.html
           subtest: Closing the PC stops the transceivers
