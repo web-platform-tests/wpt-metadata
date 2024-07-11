@@ -3,3 +3,14 @@ links:
       url: https://bugs.chromium.org/p/chromium/issues/detail?id=813061
       results:
         - test: currentSrc.html
+    - product: safari
+      url: https://bugs.webkit.org/show_bug.cgi?id=276509
+      results:
+        - test: currentSrc.html
+          subtest: audio.currentSrc after setting src attribute " "
+        - test: currentSrc.html
+          subtest: audio.currentSrc after adding source element with src attribute " "
+        - test: currentSrc.html
+          subtest: video.currentSrc after setting src attribute " "
+        - test: currentSrc.html
+          subtest: video.currentSrc after adding source element with src attribute " "
