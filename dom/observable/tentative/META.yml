@@ -1,353 +1,324 @@
 links:
-- product: firefox
-  results:
-  - subtest: Observable constructor
-    test: observable-constructor.any.html
-  - subtest: subscribe() can be called with no arguments
-    test: observable-constructor.any.html
-  - subtest: Errors thrown in the initializer that are not handled by the subscription
-      are reported to the global
-    test: observable-constructor.any.html
-  - subtest: Errors thrown by initializer function after subscriber is closed by completion
-      are reported
-    test: observable-constructor.any.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1858035
-- product: firefox
-  results:
-  - subtest: Subscriber interface is not constructible
-    test: observable-constructor.any.html
-  - subtest: Observable constructor calls initializer on subscribe
-    test: observable-constructor.any.html
-  - subtest: Observable error path called synchronously
-    test: observable-constructor.any.html
-  - subtest: Observable should error if initializer throws
-    test: observable-constructor.any.html
-  - subtest: Subscription does not emit values after completion
-    test: observable-constructor.any.html
-  - subtest: Subscription does not emit values after error
-    test: observable-constructor.any.html
-  - subtest: Completing or nexting a subscriber after an error does nothing
-    test: observable-constructor.any.html
-  - subtest: Errors pushed to the subscriber that are not handled by the subscription
-      are reported to the global
-    test: observable-constructor.any.html
-  - subtest: Subscription reports errors that are pushed after subscriber is closed
-      by completion
-    test: observable-constructor.any.html
-  - subtest: Errors thrown by initializer function after subscriber is closed by error
-      are reported
-    test: observable-constructor.any.html
-  - subtest: Errors pushed by initializer function after subscriber is closed by error
-      are reported
-    test: observable-constructor.any.html
-  - subtest: Observable constructor
-    test: observable-constructor.any.worker.html
-  - subtest: Subscriber interface is not constructible
-    test: observable-constructor.any.worker.html
-  - subtest: subscribe() can be called with no arguments
-    test: observable-constructor.any.worker.html
-  - subtest: Observable constructor calls initializer on subscribe
-    test: observable-constructor.any.worker.html
-  - subtest: Observable error path called synchronously
-    test: observable-constructor.any.worker.html
-  - subtest: Observable should error if initializer throws
-    test: observable-constructor.any.worker.html
-  - subtest: Subscription does not emit values after completion
-    test: observable-constructor.any.worker.html
-  - subtest: Subscription does not emit values after error
-    test: observable-constructor.any.worker.html
-  - subtest: Completing or nexting a subscriber after an error does nothing
-    test: observable-constructor.any.worker.html
-  - subtest: Errors pushed to the subscriber that are not handled by the subscription
-      are reported to the global
-    test: observable-constructor.any.worker.html
-  - subtest: Errors thrown in the initializer that are not handled by the subscription
-      are reported to the global
-    test: observable-constructor.any.worker.html
-  - subtest: Subscription reports errors that are pushed after subscriber is closed
-      by completion
-    test: observable-constructor.any.worker.html
-  - subtest: Errors thrown by initializer function after subscriber is closed by completion
-      are reported
-    test: observable-constructor.any.worker.html
-  - subtest: Errors thrown by initializer function after subscriber is closed by error
-      are reported
-    test: observable-constructor.any.worker.html
-  - subtest: Errors pushed by initializer function after subscriber is closed by error
-      are reported
-    test: observable-constructor.any.worker.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1863864
-- product: firefox
-  results:
-  - subtest: Aborting a subscription should stop emitting values
-    test: observable-constructor.any.worker.html
-  - subtest: Calling subscribe should never throw an error synchronously, initializer
-      throws error
-    test: observable-constructor.any.worker.html
-  - subtest: Calling subscribe should never throw an error synchronously, subscriber
-      pushes error
-    test: observable-constructor.any.worker.html
-  - subtest: Aborting a subscription should stop emitting values
-    test: observable-constructor.any.html
-  - subtest: Calling subscribe should never throw an error synchronously, initializer
-      throws error
-    test: observable-constructor.any.html
-  - subtest: Calling subscribe should never throw an error synchronously, subscriber
-      pushes error
-    test: observable-constructor.any.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1864421
-- product: firefox
-  results:
-  - subtest: Subscription is inactive after complete()
-    test: observable-constructor.any.worker.html
-  - subtest: Subscription is inactive after error()
-    test: observable-constructor.any.worker.html
-  - subtest: Subscriber#signal is not the same AbortSignal as the one passed into
-      `subscribe()`
-    test: observable-constructor.any.worker.html
-  - subtest: Subscriber#complete() cannot re-entrantly invoke itself
-    test: observable-constructor.any.worker.html
-  - subtest: Subscriber#error() cannot re-entrantly invoke itself
-    test: observable-constructor.any.worker.html
-  - subtest: Subscription is inactive after complete()
-    test: observable-constructor.any.html
-  - subtest: Subscription is inactive after error()
-    test: observable-constructor.any.html
-  - subtest: Subscriber#signal is not the same AbortSignal as the one passed into
-      `subscribe()`
-    test: observable-constructor.any.html
-  - subtest: Subscriber#complete() cannot re-entrantly invoke itself
-    test: observable-constructor.any.html
-  - subtest: Subscriber#error() cannot re-entrantly invoke itself
-    test: observable-constructor.any.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1865858
-- product: firefox
-  results:
-  - subtest: Subscription is inactive when aborted signal is passed in
-    test: observable-constructor.any.html
-  - subtest: Unsubscription lifecycle
-    test: observable-constructor.any.html
-  - subtest: Teardown should be called when subscription is aborted
-    test: observable-constructor.any.html
-  - subtest: Teardowns should be called when subscription is closed by completion
-    test: observable-constructor.any.html
-  - subtest: Teardowns should be called when subscription is closed by subscriber
-      pushing an error
-    test: observable-constructor.any.html
-  - subtest: Teardowns should be called when subscription is closed by subscriber
-      throwing error
-    test: observable-constructor.any.html
-  - subtest: Teardowns should be called synchronously during addTeardown() if the
-      subscription is inactive
-    test: observable-constructor.any.html
-  - subtest: Subscription is inactive when aborted signal is passed in
-    test: observable-constructor.any.worker.html
-  - subtest: Unsubscription lifecycle
-    test: observable-constructor.any.worker.html
-  - subtest: Teardown should be called when subscription is aborted
-    test: observable-constructor.any.worker.html
-  - subtest: Teardowns should be called when subscription is closed by completion
-    test: observable-constructor.any.worker.html
-  - subtest: Teardowns should be called when subscription is closed by subscriber
-      pushing an error
-    test: observable-constructor.any.worker.html
-  - subtest: Teardowns should be called when subscription is closed by subscriber
-      throwing error
-    test: observable-constructor.any.worker.html
-  - subtest: Teardowns should be called synchronously during addTeardown() if the
-      subscription is inactive
-    test: observable-constructor.any.worker.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1868520
-- product: firefox
-  results:
-  - subtest: No observer handlers can be invoked in detached document
-    test: observable-constructor.window.html
-  - subtest: Subscriber.error() does not "report the exception" even when an `error()`
-      handler is not present, when it is invoked in a detached document
-    test: observable-constructor.window.html
-  - subtest: Cannot subscribe to an Observable in a detached document
-    test: observable-constructor.window.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1870088
-- product: firefox
-  results:
-  - subtest: EventTarget Observables can be 'passive'
-    test: observable-event-target.window.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1873568
-- product: firefox
-  results:
-  - test: observable-constructor.window.html
-  - test: observable-event-target.any.html
-  - test: observable-event-target.any.worker.html
-  - test: observable-event-target.window.html
-  - test: observable-constructor.any.html
-  - test: observable-constructor.any.worker.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1871732
-- product: safari
-  results:
-  - test: observable-constructor.any.html
-  - test: observable-constructor.any.worker.html
-  - test: observable-constructor.window.html
-  - test: observable-event-target.any.html
-  - test: observable-event-target.any.worker.html
-  - test: observable-event-target.window.html
-  url: https://bugs.webkit.org/show_bug.cgi?id=266843
-- product: firefox
-  results:
-  - subtest: 'Subscriber interface: existence and properties of interface object'
-    test: idlharness.html
-  - subtest: Subscriber interface object length
-    test: idlharness.html
-  - subtest: Subscriber interface object name
-    test: idlharness.html
-  - subtest: 'Subscriber interface: existence and properties of interface prototype
-      object'
-    test: idlharness.html
-  - subtest: 'Subscriber interface: existence and properties of interface prototype
-      object''s "constructor" property'
-    test: idlharness.html
-  - subtest: 'Subscriber interface: existence and properties of interface prototype
-      object''s @@unscopables property'
-    test: idlharness.html
-  - subtest: 'Subscriber interface: operation next(any)'
-    test: idlharness.html
-  - subtest: 'Subscriber interface: operation error(any)'
-    test: idlharness.html
-  - subtest: 'Subscriber interface: operation complete()'
-    test: idlharness.html
-  - subtest: 'Subscriber interface: operation addTeardown(VoidFunction)'
-    test: idlharness.html
-  - subtest: 'Subscriber interface: attribute active'
-    test: idlharness.html
-  - subtest: 'Subscriber interface: attribute signal'
-    test: idlharness.html
-  - subtest: Subscriber must be primary interface of (() => { let s = null; new Observable(_s
-      => s = _s).subscribe({}); return s })()
-    test: idlharness.html
-  - subtest: Stringification of (() => { let s = null; new Observable(_s => s = _s).subscribe({});
-      return s })()
-    test: idlharness.html
-  - subtest: 'Subscriber interface: (() => { let s = null; new Observable(_s => s
-      = _s).subscribe({}); return s })() must inherit property "next(any)" with the
-      proper type'
-    test: idlharness.html
-  - subtest: 'Subscriber interface: calling next(any) on (() => { let s = null; new
-      Observable(_s => s = _s).subscribe({}); return s })() with too few arguments
-      must throw TypeError'
-    test: idlharness.html
-  - subtest: 'Subscriber interface: (() => { let s = null; new Observable(_s => s
-      = _s).subscribe({}); return s })() must inherit property "error(any)" with the
-      proper type'
-    test: idlharness.html
-  - subtest: 'Subscriber interface: calling error(any) on (() => { let s = null; new
-      Observable(_s => s = _s).subscribe({}); return s })() with too few arguments
-      must throw TypeError'
-    test: idlharness.html
-  - subtest: 'Subscriber interface: (() => { let s = null; new Observable(_s => s
-      = _s).subscribe({}); return s })() must inherit property "complete()" with the
-      proper type'
-    test: idlharness.html
-  - subtest: 'Subscriber interface: (() => { let s = null; new Observable(_s => s
-      = _s).subscribe({}); return s })() must inherit property "addTeardown(VoidFunction)"
-      with the proper type'
-    test: idlharness.html
-  - subtest: 'Subscriber interface: calling addTeardown(VoidFunction) on (() => {
-      let s = null; new Observable(_s => s = _s).subscribe({}); return s })() with
-      too few arguments must throw TypeError'
-    test: idlharness.html
-  - subtest: 'Subscriber interface: (() => { let s = null; new Observable(_s => s
-      = _s).subscribe({}); return s })() must inherit property "active" with the proper
-      type'
-    test: idlharness.html
-  - subtest: 'Subscriber interface: (() => { let s = null; new Observable(_s => s
-      = _s).subscribe({}); return s })() must inherit property "signal" with the proper
-      type'
-    test: idlharness.html
-  - subtest: 'Observable interface: existence and properties of interface object'
-    test: idlharness.html
-  - subtest: Observable interface object length
-    test: idlharness.html
-  - subtest: Observable interface object name
-    test: idlharness.html
-  - subtest: 'Observable interface: existence and properties of interface prototype
-      object'
-    test: idlharness.html
-  - subtest: 'Observable interface: existence and properties of interface prototype
-      object''s "constructor" property'
-    test: idlharness.html
-  - subtest: 'Observable interface: existence and properties of interface prototype
-      object''s @@unscopables property'
-    test: idlharness.html
-  - subtest: 'Observable interface: operation subscribe(optional ObserverUnion, optional
-      SubscribeOptions)'
-    test: idlharness.html
-  - subtest: Observable must be primary interface of new Observable(() => {})
-    test: idlharness.html
-  - subtest: Stringification of new Observable(() => {})
-    test: idlharness.html
-  - subtest: 'Observable interface: new Observable(() => {}) must inherit property
-      "subscribe(optional ObserverUnion, optional SubscribeOptions)" with the proper
-      type'
-    test: idlharness.html
-  - subtest: 'Observable interface: calling subscribe(optional ObserverUnion, optional
-      SubscribeOptions) on new Observable(() => {}) with too few arguments must throw
-      TypeError'
-    test: idlharness.html
-  - subtest: Subscribe with just a function as the next handler
-    test: observable-constructor.any.html
-  - subtest: Subscriber must have receiver
-    test: observable-constructor.any.html
-  - subtest: Subscriber next & error must recieve argument
-    test: observable-constructor.any.html
-  - subtest: Subscriber complete() will set active to false, and abort signal
-    test: observable-constructor.any.html
-  - subtest: Subscriber active is readonly
-    test: observable-constructor.any.html
-  - subtest: Subscriber signal is readonly
-    test: observable-constructor.any.html
-  - subtest: Subscribe with just a function as the next handler
-    test: observable-constructor.any.worker.html
-  - subtest: Subscriber must have receiver
-    test: observable-constructor.any.worker.html
-  - subtest: Subscriber next & error must recieve argument
-    test: observable-constructor.any.worker.html
-  - subtest: Subscriber complete() will set active to false, and abort signal
-    test: observable-constructor.any.worker.html
-  - subtest: Subscriber active is readonly
-    test: observable-constructor.any.worker.html
-  - subtest: Subscriber signal is readonly
-    test: observable-constructor.any.worker.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1877283
-- product: firefox
-  results:
-  - subtest: 'from(): Failed conversions'
-    test: observable-from.any.worker.html
-  - subtest: 'from(): Failed conversions'
-    test: observable-from.any.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1885721
-- product: firefox
-  results:
-  - subtest: 'filter(): Returned Observable filters out results based on predicate'
-    test: observable-filter.any.html
-  - subtest: 'filter(): Errors thrown in filter predicate are emitted to Observer
-      error() handler'
-    test: observable-filter.any.html
-  - subtest: 'filter(): Passes complete() through from source Observable'
-    test: observable-filter.any.html
-  - subtest: 'filter(): Passes error() through from source Observable'
-    test: observable-filter.any.html
-  - subtest: 'filter(): Upon source completion, source Observable teardown sequence
-      happens after downstream filter complete() is called'
-    test: observable-filter.any.html
-  - subtest: 'filter(): Returned Observable filters out results based on predicate'
-    test: observable-filter.any.worker.html
-  - subtest: 'filter(): Errors thrown in filter predicate are emitted to Observer
-      error() handler'
-    test: observable-filter.any.worker.html
-  - subtest: 'filter(): Passes complete() through from source Observable'
-    test: observable-filter.any.worker.html
-  - subtest: 'filter(): Passes error() through from source Observable'
-    test: observable-filter.any.worker.html
-  - subtest: 'filter(): Upon source completion, source Observable teardown sequence
-      happens after downstream filter complete() is called'
-    test: observable-filter.any.worker.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1893093
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1858035
+      results:
+        - test: observable-constructor.any.html
+          subtest: Observable constructor
+        - test: observable-constructor.any.html
+          subtest: subscribe() can be called with no arguments
+        - test: observable-constructor.any.html
+          subtest: Errors thrown in the initializer that are not handled by the subscription are reported to the global
+        - test: observable-constructor.any.html
+          subtest: Errors thrown by initializer function after subscriber is closed by completion are reported
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1863864
+      results:
+        - test: observable-constructor.any.html
+          subtest: Subscriber interface is not constructible
+        - test: observable-constructor.any.html
+          subtest: Observable constructor calls initializer on subscribe
+        - test: observable-constructor.any.html
+          subtest: Observable error path called synchronously
+        - test: observable-constructor.any.html
+          subtest: Observable should error if initializer throws
+        - test: observable-constructor.any.html
+          subtest: Subscription does not emit values after completion
+        - test: observable-constructor.any.html
+          subtest: Subscription does not emit values after error
+        - test: observable-constructor.any.html
+          subtest: Completing or nexting a subscriber after an error does nothing
+        - test: observable-constructor.any.html
+          subtest: Errors pushed to the subscriber that are not handled by the subscription are reported to the global
+        - test: observable-constructor.any.html
+          subtest: Subscription reports errors that are pushed after subscriber is closed by completion
+        - test: observable-constructor.any.html
+          subtest: Errors thrown by initializer function after subscriber is closed by error are reported
+        - test: observable-constructor.any.html
+          subtest: Errors pushed by initializer function after subscriber is closed by error are reported
+        - test: observable-constructor.any.worker.html
+          subtest: Observable constructor
+        - test: observable-constructor.any.worker.html
+          subtest: Subscriber interface is not constructible
+        - test: observable-constructor.any.worker.html
+          subtest: subscribe() can be called with no arguments
+        - test: observable-constructor.any.worker.html
+          subtest: Observable constructor calls initializer on subscribe
+        - test: observable-constructor.any.worker.html
+          subtest: Observable error path called synchronously
+        - test: observable-constructor.any.worker.html
+          subtest: Observable should error if initializer throws
+        - test: observable-constructor.any.worker.html
+          subtest: Subscription does not emit values after completion
+        - test: observable-constructor.any.worker.html
+          subtest: Subscription does not emit values after error
+        - test: observable-constructor.any.worker.html
+          subtest: Completing or nexting a subscriber after an error does nothing
+        - test: observable-constructor.any.worker.html
+          subtest: Errors pushed to the subscriber that are not handled by the subscription are reported to the global
+        - test: observable-constructor.any.worker.html
+          subtest: Errors thrown in the initializer that are not handled by the subscription are reported to the global
+        - test: observable-constructor.any.worker.html
+          subtest: Subscription reports errors that are pushed after subscriber is closed by completion
+        - test: observable-constructor.any.worker.html
+          subtest: Errors thrown by initializer function after subscriber is closed by completion are reported
+        - test: observable-constructor.any.worker.html
+          subtest: Errors thrown by initializer function after subscriber is closed by error are reported
+        - test: observable-constructor.any.worker.html
+          subtest: Errors pushed by initializer function after subscriber is closed by error are reported
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1864421
+      results:
+        - test: observable-constructor.any.worker.html
+          subtest: Aborting a subscription should stop emitting values
+        - test: observable-constructor.any.worker.html
+          subtest: Calling subscribe should never throw an error synchronously, initializer throws error
+        - test: observable-constructor.any.worker.html
+          subtest: Calling subscribe should never throw an error synchronously, subscriber pushes error
+        - test: observable-constructor.any.html
+          subtest: Aborting a subscription should stop emitting values
+        - test: observable-constructor.any.html
+          subtest: Calling subscribe should never throw an error synchronously, initializer throws error
+        - test: observable-constructor.any.html
+          subtest: Calling subscribe should never throw an error synchronously, subscriber pushes error
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1865858
+      results:
+        - test: observable-constructor.any.worker.html
+          subtest: Subscription is inactive after complete()
+        - test: observable-constructor.any.worker.html
+          subtest: Subscription is inactive after error()
+        - test: observable-constructor.any.worker.html
+          subtest: Subscriber#signal is not the same AbortSignal as the one passed into `subscribe()`
+        - test: observable-constructor.any.worker.html
+          subtest: Subscriber#complete() cannot re-entrantly invoke itself
+        - test: observable-constructor.any.worker.html
+          subtest: Subscriber#error() cannot re-entrantly invoke itself
+        - test: observable-constructor.any.html
+          subtest: Subscription is inactive after complete()
+        - test: observable-constructor.any.html
+          subtest: Subscription is inactive after error()
+        - test: observable-constructor.any.html
+          subtest: Subscriber#signal is not the same AbortSignal as the one passed into `subscribe()`
+        - test: observable-constructor.any.html
+          subtest: Subscriber#complete() cannot re-entrantly invoke itself
+        - test: observable-constructor.any.html
+          subtest: Subscriber#error() cannot re-entrantly invoke itself
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1868520
+      results:
+        - test: observable-constructor.any.html
+          subtest: Subscription is inactive when aborted signal is passed in
+        - test: observable-constructor.any.html
+          subtest: Unsubscription lifecycle
+        - test: observable-constructor.any.html
+          subtest: Teardown should be called when subscription is aborted
+        - test: observable-constructor.any.html
+          subtest: Teardowns should be called when subscription is closed by completion
+        - test: observable-constructor.any.html
+          subtest: Teardowns should be called when subscription is closed by subscriber pushing an error
+        - test: observable-constructor.any.html
+          subtest: Teardowns should be called when subscription is closed by subscriber throwing error
+        - test: observable-constructor.any.html
+          subtest: Teardowns should be called synchronously during addTeardown() if the subscription is inactive
+        - test: observable-constructor.any.worker.html
+          subtest: Subscription is inactive when aborted signal is passed in
+        - test: observable-constructor.any.worker.html
+          subtest: Unsubscription lifecycle
+        - test: observable-constructor.any.worker.html
+          subtest: Teardown should be called when subscription is aborted
+        - test: observable-constructor.any.worker.html
+          subtest: Teardowns should be called when subscription is closed by completion
+        - test: observable-constructor.any.worker.html
+          subtest: Teardowns should be called when subscription is closed by subscriber pushing an error
+        - test: observable-constructor.any.worker.html
+          subtest: Teardowns should be called when subscription is closed by subscriber throwing error
+        - test: observable-constructor.any.worker.html
+          subtest: Teardowns should be called synchronously during addTeardown() if the subscription is inactive
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1870088
+      results:
+        - test: observable-constructor.window.html
+          subtest: No observer handlers can be invoked in detached document
+        - test: observable-constructor.window.html
+          subtest: Subscriber.error() does not "report the exception" even when an `error()` handler is not present, when it is invoked in a detached document
+        - test: observable-constructor.window.html
+          subtest: Cannot subscribe to an Observable in a detached document
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1873568
+      results:
+        - test: observable-event-target.window.html
+          subtest: EventTarget Observables can be 'passive'
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1871732
+      results:
+        - test: observable-constructor.window.html
+        - test: observable-event-target.any.html
+        - test: observable-event-target.any.worker.html
+        - test: observable-event-target.window.html
+        - test: observable-constructor.any.html
+        - test: observable-constructor.any.worker.html
+        - test: observable-map.window.html
+        - test: observable-some.any.worker.html
+        - test: observable-switchMap.any.html
+        - test: observable-drop.any.worker.html
+        - test: observable-every.any.html
+        - test: observable-forEach.any.html
+        - test: observable-last.any.worker.html
+        - test: observable-take.any.html
+        - test: observable-every.any.worker.html
+        - test: observable-flatMap.any.worker.html
+        - test: observable-flatMap.any.html
+        - test: observable-first.any.worker.html
+        - test: observable-inspect.any.html
+        - test: observable-map.any.html
+        - test: observable-takeUntil.any.html
+        - test: observable-takeUntil.any.worker.html
+        - test: observable-takeUntil.window.html
+        - test: observable-toArray.any.worker.html
+        - test: observable-drop.any.html
+        - test: observable-find.any.worker.html
+        - test: observable-forEach.window.html
+        - test: observable-map.any.worker.html
+        - test: observable-some.any.html
+        - test: observable-first.any.html
+        - test: observable-take.any.worker.html
+        - test: observable-toArray.any.html
+        - test: observable-find.any.html
+        - test: observable-forEach.any.worker.html
+        - test: observable-inspect.any.worker.html
+        - test: observable-last.any.html
+        - test: observable-switchMap.any.worker.html
+    - product: safari
+      url: https://bugs.webkit.org/show_bug.cgi?id=266843
+      results:
+        - test: observable-constructor.any.html
+        - test: observable-constructor.any.worker.html
+        - test: observable-constructor.window.html
+        - test: observable-event-target.any.html
+        - test: observable-event-target.any.worker.html
+        - test: observable-event-target.window.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1877283
+      results:
+        - test: idlharness.html
+          subtest: 'Subscriber interface: existence and properties of interface object'
+        - test: idlharness.html
+          subtest: Subscriber interface object length
+        - test: idlharness.html
+          subtest: Subscriber interface object name
+        - test: idlharness.html
+          subtest: 'Subscriber interface: existence and properties of interface prototype object'
+        - test: idlharness.html
+          subtest: 'Subscriber interface: existence and properties of interface prototype object''s "constructor" property'
+        - test: idlharness.html
+          subtest: 'Subscriber interface: existence and properties of interface prototype object''s @@unscopables property'
+        - test: idlharness.html
+          subtest: 'Subscriber interface: operation next(any)'
+        - test: idlharness.html
+          subtest: 'Subscriber interface: operation error(any)'
+        - test: idlharness.html
+          subtest: 'Subscriber interface: operation complete()'
+        - test: idlharness.html
+          subtest: 'Subscriber interface: operation addTeardown(VoidFunction)'
+        - test: idlharness.html
+          subtest: 'Subscriber interface: attribute active'
+        - test: idlharness.html
+          subtest: 'Subscriber interface: attribute signal'
+        - test: idlharness.html
+          subtest: Subscriber must be primary interface of (() => { let s = null; new Observable(_s => s = _s).subscribe({}); return s })()
+        - test: idlharness.html
+          subtest: Stringification of (() => { let s = null; new Observable(_s => s = _s).subscribe({}); return s })()
+        - test: idlharness.html
+          subtest: 'Subscriber interface: (() => { let s = null; new Observable(_s => s = _s).subscribe({}); return s })() must inherit property "next(any)" with the proper type'
+        - test: idlharness.html
+          subtest: 'Subscriber interface: calling next(any) on (() => { let s = null; new Observable(_s => s = _s).subscribe({}); return s })() with too few arguments must throw TypeError'
+        - test: idlharness.html
+          subtest: 'Subscriber interface: (() => { let s = null; new Observable(_s => s = _s).subscribe({}); return s })() must inherit property "error(any)" with the proper type'
+        - test: idlharness.html
+          subtest: 'Subscriber interface: calling error(any) on (() => { let s = null; new Observable(_s => s = _s).subscribe({}); return s })() with too few arguments must throw TypeError'
+        - test: idlharness.html
+          subtest: 'Subscriber interface: (() => { let s = null; new Observable(_s => s = _s).subscribe({}); return s })() must inherit property "complete()" with the proper type'
+        - test: idlharness.html
+          subtest: 'Subscriber interface: (() => { let s = null; new Observable(_s => s = _s).subscribe({}); return s })() must inherit property "addTeardown(VoidFunction)" with the proper type'
+        - test: idlharness.html
+          subtest: 'Subscriber interface: calling addTeardown(VoidFunction) on (() => { let s = null; new Observable(_s => s = _s).subscribe({}); return s })() with too few arguments must throw TypeError'
+        - test: idlharness.html
+          subtest: 'Subscriber interface: (() => { let s = null; new Observable(_s => s = _s).subscribe({}); return s })() must inherit property "active" with the proper type'
+        - test: idlharness.html
+          subtest: 'Subscriber interface: (() => { let s = null; new Observable(_s => s = _s).subscribe({}); return s })() must inherit property "signal" with the proper type'
+        - test: idlharness.html
+          subtest: 'Observable interface: existence and properties of interface object'
+        - test: idlharness.html
+          subtest: Observable interface object length
+        - test: idlharness.html
+          subtest: Observable interface object name
+        - test: idlharness.html
+          subtest: 'Observable interface: existence and properties of interface prototype object'
+        - test: idlharness.html
+          subtest: 'Observable interface: existence and properties of interface prototype object''s "constructor" property'
+        - test: idlharness.html
+          subtest: 'Observable interface: existence and properties of interface prototype object''s @@unscopables property'
+        - test: idlharness.html
+          subtest: 'Observable interface: operation subscribe(optional ObserverUnion, optional SubscribeOptions)'
+        - test: idlharness.html
+          subtest: Observable must be primary interface of new Observable(() => {})
+        - test: idlharness.html
+          subtest: Stringification of new Observable(() => {})
+        - test: idlharness.html
+          subtest: 'Observable interface: new Observable(() => {}) must inherit property "subscribe(optional ObserverUnion, optional SubscribeOptions)" with the proper type'
+        - test: idlharness.html
+          subtest: 'Observable interface: calling subscribe(optional ObserverUnion, optional SubscribeOptions) on new Observable(() => {}) with too few arguments must throw TypeError'
+        - test: observable-constructor.any.html
+          subtest: Subscribe with just a function as the next handler
+        - test: observable-constructor.any.html
+          subtest: Subscriber must have receiver
+        - test: observable-constructor.any.html
+          subtest: Subscriber next & error must recieve argument
+        - test: observable-constructor.any.html
+          subtest: Subscriber complete() will set active to false, and abort signal
+        - test: observable-constructor.any.html
+          subtest: Subscriber active is readonly
+        - test: observable-constructor.any.html
+          subtest: Subscriber signal is readonly
+        - test: observable-constructor.any.worker.html
+          subtest: Subscribe with just a function as the next handler
+        - test: observable-constructor.any.worker.html
+          subtest: Subscriber must have receiver
+        - test: observable-constructor.any.worker.html
+          subtest: Subscriber next & error must recieve argument
+        - test: observable-constructor.any.worker.html
+          subtest: Subscriber complete() will set active to false, and abort signal
+        - test: observable-constructor.any.worker.html
+          subtest: Subscriber active is readonly
+        - test: observable-constructor.any.worker.html
+          subtest: Subscriber signal is readonly
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1885721
+      results:
+        - test: observable-from.any.worker.html
+          subtest: 'from(): Failed conversions'
+        - test: observable-from.any.html
+          subtest: 'from(): Failed conversions'
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1893093
+      results:
+        - test: observable-filter.any.html
+          subtest: 'filter(): Returned Observable filters out results based on predicate'
+        - test: observable-filter.any.html
+          subtest: 'filter(): Errors thrown in filter predicate are emitted to Observer error() handler'
+        - test: observable-filter.any.html
+          subtest: 'filter(): Passes complete() through from source Observable'
+        - test: observable-filter.any.html
+          subtest: 'filter(): Passes error() through from source Observable'
+        - test: observable-filter.any.html
+          subtest: 'filter(): Upon source completion, source Observable teardown sequence happens after downstream filter complete() is called'
+        - test: observable-filter.any.worker.html
+          subtest: 'filter(): Returned Observable filters out results based on predicate'
+        - test: observable-filter.any.worker.html
+          subtest: 'filter(): Errors thrown in filter predicate are emitted to Observer error() handler'
+        - test: observable-filter.any.worker.html
+          subtest: 'filter(): Passes complete() through from source Observable'
+        - test: observable-filter.any.worker.html
+          subtest: 'filter(): Passes error() through from source Observable'
+        - test: observable-filter.any.worker.html
+          subtest: 'filter(): Upon source completion, source Observable teardown sequence happens after downstream filter complete() is called'
