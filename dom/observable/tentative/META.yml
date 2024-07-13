@@ -322,3 +322,10 @@ links:
           subtest: 'filter(): Passes error() through from source Observable'
         - test: observable-filter.any.worker.html
           subtest: 'filter(): Upon source completion, source Observable teardown sequence happens after downstream filter complete() is called'
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1907744
+      results:
+        - test: idlharness.html
+        - test: observable-constructor.any.html
+        - test: observable-constructor.any.worker.html
+        - test: observable-constructor.window.html
