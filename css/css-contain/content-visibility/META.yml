@@ -340,3 +340,11 @@ links:
   - subtest: ContentVisibilityAutoStateChange content attribute test
     test: content-visibility-auto-state-changed.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1899707
+- product: firefox
+  results:
+  - subtest: 'CSS Content Visibility: hidden never anchors'
+    test: content-visibility-anchor-positioning-002.html
+  - subtest: 'CSS Content Visibility: auto still anchors even if the anchor and positioned
+      element are both skipped by the same element'
+    test: content-visibility-anchor-positioning-003.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1908582
