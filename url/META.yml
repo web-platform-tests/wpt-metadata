@@ -81,10 +81,12 @@ links:
       results:
         - test: failure.html
           status: CRASH
-    - label: interop-2022-webcompat
+    - url: ""
+      label: interop-2022-webcompat
       results:
         - test: toascii.window.html
-    - label: interop-2023-url
+    - url: ""
+      label: interop-2023-url
       results:
         - test: a-element-origin-xhtml.xhtml
         - test: a-element-origin.html
@@ -1218,4 +1220,16 @@ links:
         - test: a-element-xhtml.xhtml?exclude=(file|javascript|mailto)
           subtest: 'Parsing: <http://example example.com> against <http://other.com/>'
         - test: a-element-xhtml.xhtml?exclude=(file|javascript|mailto)
+          subtest: 'Parsing: <http://GOO 　goo.com> against <http://other.com/>'
+        - test: url-constructor.any.html?exclude=(file|javascript|mailto)
+          subtest: 'Parsing: <http://example example.com> against <http://other.com/>'
+        - test: url-constructor.any.html?exclude=(file|javascript|mailto)
+          subtest: 'Parsing: <http://GOO 　goo.com> against <http://other.com/>'
+        - test: url-constructor.any.worker.html?exclude=(file|javascript|mailto)
+          subtest: 'Parsing: <http://example example.com> against <http://other.com/>'
+        - test: url-constructor.any.worker.html?exclude=(file|javascript|mailto)
+          subtest: 'Parsing: <http://GOO 　goo.com> against <http://other.com/>'
+        - test: a-element.html?exclude=(file|javascript|mailto)
+          subtest: 'Parsing: <http://example example.com> against <http://other.com/>'
+        - test: a-element.html?exclude=(file|javascript|mailto)
           subtest: 'Parsing: <http://GOO 　goo.com> against <http://other.com/>'
