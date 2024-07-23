@@ -1,1241 +1,1221 @@
 links:
-- product: webkitgtk
-  results:
-  - status: FAIL
-    test: a-element-origin-xhtml.xhtml
-  - status: FAIL
-    test: a-element-origin.html
-  url: https://bugs.webkit.org/show_bug.cgi?id=207678
-- product: safari
-  results:
-  - subtest: "Parsing: <sc://\x1F!\"$&'()*+,-.;=_`{|}~/> against <about:blank>"
-    test: url-origin.any.html
-  - subtest: "Parsing origin: <http://\x1F!\"$&'()*+,-.;=_`{|}~/> against <about:blank>"
-    test: a-element-origin.html
-  - subtest: "Parsing origin: <http://\x1F!\"$&'()*+,-.;=_`{|}~/> against <about:blank>"
-    test: a-element-origin-xhtml.xhtml
-  - subtest: "Origin parsing: <http://\x1F!\"$&'()*+,-.;=_`{|}~/> against <about:blank>"
-    test: url-origin.any.worker.html
-  url: https://bugs.webkit.org/show_bug.cgi?id=220778
-- product: chrome
-  results:
-  - test: toascii.window.html
-  url: https://crbug.com/694157
-- product: deno
-  results:
-  - subtest: URL interface object length
-    test: idlharness.any.html
-  - subtest: 'URL interface: attribute href'
-    test: idlharness.any.html
-  - subtest: 'URL interface: stringifier'
-    test: idlharness.any.html
-  - subtest: 'URL interface: attribute protocol'
-    test: idlharness.any.html
-  - subtest: 'URL interface: attribute username'
-    test: idlharness.any.html
-  - subtest: 'URL interface: attribute origin'
-    test: idlharness.any.html
-  - subtest: 'URL interface: attribute password'
-    test: idlharness.any.html
-  - subtest: 'URL interface: attribute port'
-    test: idlharness.any.html
-  - subtest: 'URL interface: attribute pathname'
-    test: idlharness.any.html
-  - subtest: 'URL interface: attribute search'
-    test: idlharness.any.html
-  - subtest: 'URL interface: attribute searchParams'
-    test: idlharness.any.html
-  - subtest: 'URL interface: attribute hash'
-    test: idlharness.any.html
-  - subtest: 'URL interface: operation toJSON()'
-    test: idlharness.any.html
-  - subtest: 'URL interface: attribute host'
-    test: idlharness.any.html
-  - subtest: 'URL interface: attribute hostname'
-    test: idlharness.any.html
-  - subtest: Stringification of new URL("http://foo")
-    test: idlharness.any.html
-  - subtest: 'URLSearchParams interface: operation append(USVString, USVString)'
-    test: idlharness.any.html
-  - subtest: 'URLSearchParams interface: operation delete(USVString)'
-    test: idlharness.any.html
-  - subtest: 'URLSearchParams interface: operation get(USVString)'
-    test: idlharness.any.html
-  - subtest: 'URLSearchParams interface: operation getAll(USVString)'
-    test: idlharness.any.html
-  - subtest: 'URLSearchParams interface: operation has(USVString)'
-    test: idlharness.any.html
-  - subtest: 'URLSearchParams interface: operation set(USVString, USVString)'
-    test: idlharness.any.html
-  - subtest: 'URLSearchParams interface: iterable<USVString, USVString>'
-    test: idlharness.any.html
-  - subtest: 'URLSearchParams interface: operation sort()'
-    test: idlharness.any.html
-  - subtest: 'URLSearchParams interface: stringifier'
-    test: idlharness.any.html
-  - subtest: Stringification of new URLSearchParams("hi=there&thank=you")
-    test: idlharness.any.html
-  url: https://github.com/denoland/deno/issues/10996
-- product: firefox
-  results:
-  - status: CRASH
-    test: failure.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1722328
-- label: interop-2022-webcompat
-  results:
-  - test: toascii.window.html
-- label: interop-2023-url
-  results:
-  - test: a-element-origin-xhtml.xhtml
-  - test: a-element-origin.html
-  - test: a-element-xhtml.xhtml?exclude=(file|javascript|mailto)
-  - test: a-element.html?exclude=(file|javascript|mailto)
-  - test: data-uri-fragment.html
-  - test: failure.html
-  - test: historical.any.html
-  - test: historical.any.worker.html
-  - test: IdnaTestV2.window.html
-  - test: percent-encoding.window.html
-  - test: url-constructor.any.html?exclude=(file|javascript|mailto)
-  - test: url-constructor.any.worker.html?exclude=(file|javascript|mailto)
-  - test: url-origin.any.html
-  - test: url-origin.any.worker.html
-  - test: url-searchparams.any.html
-  - test: url-searchparams.any.worker.html
-  - test: url-setters-a-area.window.html?exclude=(file|javascript|mailto)
-  - test: url-setters-stripping.any.html
-  - test: url-setters-stripping.any.worker.html
-  - test: url-setters.any.html?exclude=(file|javascript|mailto)
-  - test: url-setters.any.worker.html?exclude=(file|javascript|mailto)
-  - test: url-tojson.any.html
-  - test: url-tojson.any.worker.html
-  - test: urlencoded-parser.any.html
-  - test: urlencoded-parser.any.worker.html
-- product: chrome
-  results:
-  - subtest: 'Parsing origin: <http://!"$&''()*+,-.;=_`{}~/> against <about:blank>'
-    test: a-element-origin.html
-  - subtest: 'Parsing origin: <wss://!"$&''()*+,-.;=_`{}~/> against <about:blank>'
-    test: a-element-origin.html
-  - subtest: 'Parsing origin: <http://!"$&''()*+,-.;=_`{}~/> against <about:blank>'
-    test: a-element-origin-xhtml.xhtml
-  - subtest: 'Parsing origin: <wss://!"$&''()*+,-.;=_`{}~/> against <about:blank>'
-    test: a-element-origin-xhtml.xhtml
-  url: https://bugs.chromium.org/p/chromium/issues/detail?id=1398117
-- product: chrome
-  results:
-  - subtest: 'URL''s href: sc://a|b/ should throw'
-    test: failure.html
-  - subtest: 'XHR: sc://a|b/ should throw'
-    test: failure.html
-  - subtest: 'Location''s href: sc://a|b/ should throw'
-    test: failure.html
-  - subtest: 'window.open(): sc://a|b/ should throw'
-    test: failure.html
-  - subtest: 'URL''s constructor''s base argument: sc://a|b/ should throw'
-    test: failure.html
-  - subtest: 'URL''s constructor''s base argument: http://a|b/ should throw'
-    test: failure.html
-  - subtest: 'URL''s href: http://a|b/ should throw'
-    test: failure.html
-  - subtest: 'XHR: http://a|b/ should throw'
-    test: failure.html
-  - subtest: 'sendBeacon(): http://a|b/ should throw'
-    test: failure.html
-  - subtest: 'Location''s href: http://a|b/ should throw'
-    test: failure.html
-  - subtest: 'window.open(): http://a|b/ should throw'
-    test: failure.html
-  url: https://bugs.chromium.org/p/chromium/issues/detail?id=1190810
-- product: chrome
-  results:
-  - subtest: 'Origin parsing: <http://example.com/foo%00%51> against <about:blank>'
-    test: url-origin.any.html
-  - subtest: 'Origin parsing: <http://example.com/foo%00%51> against <about:blank>'
-    test: url-origin.any.worker.html
-  url: https://bugs.chromium.org/p/chromium/issues/detail?id=1400251
-- product: firefox
-  results:
-  - subtest: 'URLSearchParams: no structured serialize/deserialize support'
-    test: historical.any.worker.html
-  - subtest: 'URLSearchParams: no structured serialize/deserialize support'
-    test: historical.any.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1636761
-- product: firefox
-  results:
-  - subtest: "Input \u2212 with encoding shift_jis"
-    test: percent-encoding.window.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1674369
-- product: firefox
-  results:
-  - subtest: 'Origin parsing: <ssh://example.com/foo/bar.git> against <http://example.org/>'
-    test: url-origin.any.html
-  - subtest: 'Parsing origin: <ssh://example.com/foo/bar.git> against <http://example.org/>'
-    test: a-element-origin-xhtml.xhtml
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1553105
-- product: firefox
-  results:
-  - subtest: 'Origin parsing: <http://999999999.> against <http://other.com/>'
-    test: url-origin.any.html
-  - subtest: 'Parsing origin: <http://999999999.> against <http://other.com/>'
-    test: a-element-origin-xhtml.xhtml
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1723456
-- product: firefox
-  results:
-  - subtest: 'Origin parsing: <https://0x.0x.0> against <about:blank>'
-    test: url-origin.any.html
-  - subtest: 'Parsing origin: <https://0x.0x.0> against <about:blank>'
-    test: a-element-origin-xhtml.xhtml
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1815914
-- product: firefox
-  results:
-  - subtest: 'Origin parsing: <http::b@www.example.com> against <about:blank>'
-    test: url-origin.any.html
-  - subtest: 'Parsing origin: <http::b@www.example.com> against <about:blank>'
-    test: a-element-origin-xhtml.xhtml
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1815925
-- product: firefox
-  results:
-  - subtest: 'Origin parsing: <http://!"$&''()*+,-.;=_`{}~/> against <about:blank>'
-    test: url-origin.any.html
-  - subtest: 'Origin parsing: <wss://!"$&''()*+,-.;=_`{}~/> against <about:blank>'
-    test: url-origin.any.html
-  - subtest: 'Parsing origin: <http://!"$&''()*+,-.;=_`{}~/> against <about:blank>'
-    test: a-element-origin-xhtml.xhtml
-  - subtest: 'Parsing origin: <wss://!"$&''()*+,-.;=_`{}~/> against <about:blank>'
-    test: a-element-origin-xhtml.xhtml
-  - subtest: 'Origin parsing: <http://!"$&''()*+,-.;=_`{}~/> without base'
-    test: url-origin.any.html
-  - subtest: 'Origin parsing: <wss://!"$&''()*+,-.;=_`{}~/> without base'
-    test: url-origin.any.html
-  - subtest: 'Origin parsing: <http://!"$&''()*+,-.;=_`{}~/> without base'
-    test: url-origin.any.worker.html
-  - subtest: 'Origin parsing: <wss://!"$&''()*+,-.;=_`{}~/> without base'
-    test: url-origin.any.worker.html
-  - subtest: 'Parsing origin: <http://!"$&''()*+,-.;=_`{}~/> against <about:blank>'
-    test: a-element-origin.html
-  - subtest: 'Parsing origin: <wss://!"$&''()*+,-.;=_`{}~/> against <about:blank>'
-    test: a-element-origin.html
-  - subtest: 'Parsing: <http://!"$&''()*+,-.;=_`{}~/> against <about:blank>'
-    test: a-element-xhtml.xhtml?exclude=(file|javascript|mailto)
-  - subtest: 'Parsing: <wss://!"$&''()*+,-.;=_`{}~/> against <about:blank>'
-    test: a-element.html?exclude=(file|javascript|mailto)
-  - subtest: 'Parsing: <http://!"$&''()*+,-.;=_`{}~/> without base'
-    test: url-constructor.any.html?exclude=(file|javascript|mailto)
-  - subtest: 'Parsing: <wss://!"$&''()*+,-.;=_`{}~/> without base'
-    test: url-constructor.any.html?exclude=(file|javascript|mailto)
-  - subtest: 'Parsing: <wss://!"$&''()*+,-.;=_`{}~/> without base'
-    test: url-constructor.any.worker.html?exclude=(file|javascript|mailto)
-  - subtest: 'Parsing: <http://!"$&''()*+,-.;=_`{}~/> without base'
-    test: url-constructor.any.worker.html?exclude=(file|javascript|mailto)
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1815926
-- product: firefox
-  results:
-  - subtest: Changing the query of a URL with an opaque path can impact the path
-    test: urlsearchparams-delete.any.worker.html
-  - subtest: Changing the query of a URL with an opaque path can impact the path
-    test: urlsearchparams-delete.any.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1815932
-- product: firefox
-  results:
-  - subtest: "ToASCII(\"\xE4.\xAD.c\") A4_2 (ignored)"
-    test: IdnaTestV2.window.html
-  - subtest: "ToASCII(\"a\u0308.\xAD.c\") A4_2 (ignored)"
-    test: IdnaTestV2.window.html
-  - subtest: "ToASCII(\"A\u0308.\xAD.C\") A4_2 (ignored)"
-    test: IdnaTestV2.window.html
-  - subtest: "ToASCII(\"\xC4.\xAD.C\") A4_2 (ignored)"
-    test: IdnaTestV2.window.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1845552
-- product: firefox
-  results:
-  - subtest: 'URL: Setting <javascript://x/>.username = ''wario'''
-    test: url-setters.any.html?include=javascript
-  - subtest: 'URL: Setting <javascript://x/>.password = ''bowser'''
-    test: url-setters.any.html?include=javascript
-  - subtest: 'URL: Setting <javascript://x/>.port = ''12'''
-    test: url-setters.any.html?include=javascript
-  - subtest: 'Parsing: <javascript:/../> against <about:blank>'
-    test: a-element-xhtml.xhtml?include=javascript
-  - subtest: 'Parsing: <javascript://example.com:8080/pathname?search#hash> against
-      <about:blank>'
-    test: a-element-xhtml.xhtml?include=javascript
-  - subtest: 'Parsing: <javascript:///test> against <about:blank>'
-    test: a-element-xhtml.xhtml?include=javascript
-  - subtest: 'Parsing: <javascript://test/a/../b> against <about:blank>'
-    test: a-element-xhtml.xhtml?include=javascript
-  - subtest: 'Parsing: <javascript://:443> against <about:blank>'
-    test: a-element-xhtml.xhtml?include=javascript
-  - subtest: 'Parsing: <javascript://test:test> against <about:blank>'
-    test: a-element-xhtml.xhtml?include=javascript
-  - subtest: 'Parsing: <javascript://[:1]> against <about:blank>'
-    test: a-element-xhtml.xhtml?include=javascript
-  - subtest: '<a>: Setting <javascript://x/>.username = ''wario'''
-    test: url-setters-a-area.window.html?include=javascript
-  - subtest: '<area>: Setting <javascript://x/>.username = ''wario'''
-    test: url-setters-a-area.window.html?include=javascript
-  - subtest: '<a>: Setting <javascript://x/>.password = ''bowser'''
-    test: url-setters-a-area.window.html?include=javascript
-  - subtest: '<area>: Setting <javascript://x/>.password = ''bowser'''
-    test: url-setters-a-area.window.html?include=javascript
-  - subtest: '<a>: Setting <javascript://x/>.port = ''12'''
-    test: url-setters-a-area.window.html?include=javascript
-  - subtest: '<area>: Setting <javascript://x/>.port = ''12'''
-    test: url-setters-a-area.window.html?include=javascript
-  - subtest: 'Parsing: <javascript:/../> against <about:blank>'
-    test: a-element.html?include=javascript
-  - subtest: 'Parsing: <javascript://example.com:8080/pathname?search#hash> against
-      <about:blank>'
-    test: a-element.html?include=javascript
-  - subtest: 'Parsing: <javascript:///test> against <about:blank>'
-    test: a-element.html?include=javascript
-  - subtest: 'Parsing: <javascript://test/a/../b> against <about:blank>'
-    test: a-element.html?include=javascript
-  - subtest: 'Parsing: <javascript://:443> against <about:blank>'
-    test: a-element.html?include=javascript
-  - subtest: 'Parsing: <javascript://test:test> against <about:blank>'
-    test: a-element.html?include=javascript
-  - subtest: 'Parsing: <javascript://[:1]> against <about:blank>'
-    test: a-element.html?include=javascript
-  - subtest: 'Parsing: <javascript:/../> without base'
-    test: url-constructor.any.html?include=javascript
-  - subtest: 'Parsing: <javascript://example.com:8080/pathname?search#hash> without
-      base'
-    test: url-constructor.any.html?include=javascript
-  - subtest: 'Parsing: <javascript:///test> without base'
-    test: url-constructor.any.html?include=javascript
-  - subtest: 'Parsing: <javascript://test/a/../b> without base'
-    test: url-constructor.any.html?include=javascript
-  - subtest: 'Parsing: <javascript://:443> without base'
-    test: url-constructor.any.html?include=javascript
-  - subtest: 'Parsing: <javascript://test:test> without base'
-    test: url-constructor.any.html?include=javascript
-  - subtest: 'Parsing: <javascript://[:1]> without base'
-    test: url-constructor.any.html?include=javascript
-  - subtest: 'Parsing: <javascript:/../> without base'
-    test: url-constructor.any.worker.html?include=javascript
-  - subtest: 'Parsing: <javascript://example.com:8080/pathname?search#hash> without
-      base'
-    test: url-constructor.any.worker.html?include=javascript
-  - subtest: 'Parsing: <javascript:///test> without base'
-    test: url-constructor.any.worker.html?include=javascript
-  - subtest: 'Parsing: <javascript://test/a/../b> without base'
-    test: url-constructor.any.worker.html?include=javascript
-  - subtest: 'Parsing: <javascript://:443> without base'
-    test: url-constructor.any.worker.html?include=javascript
-  - subtest: 'Parsing: <javascript://test:test> without base'
-    test: url-constructor.any.worker.html?include=javascript
-  - subtest: 'Parsing: <javascript://[:1]> without base'
-    test: url-constructor.any.worker.html?include=javascript
-  - subtest: 'URL: Setting <javascript://x/>.username = ''wario'''
-    test: url-setters.any.worker.html?include=javascript
-  - subtest: 'URL: Setting <javascript://x/>.password = ''bowser'''
-    test: url-setters.any.worker.html?include=javascript
-  - subtest: 'URL: Setting <javascript://x/>.port = ''12'''
-    test: url-setters.any.worker.html?include=javascript
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1848511
-- product: firefox
-  results:
-  - subtest: 'URL: Setting <file://hi/path>.protocol = ''s'''
-    test: url-setters.any.worker.html?include=file
-  - subtest: 'URL: Setting <file://test/>.username = ''test'''
-    test: url-setters.any.worker.html?include=file
-  - subtest: 'URL: Setting <file://test/>.password = ''test'''
-    test: url-setters.any.worker.html?include=file
-  - subtest: 'URL: Setting <file://y/>.host = ''x:123'''
-    test: url-setters.any.worker.html?include=file
-  - subtest: 'URL: Setting <file://y/>.hostname = ''x:123'''
-    test: url-setters.any.worker.html?include=file
-  - subtest: 'URL: Setting <file://test/>.port = ''12'''
-    test: url-setters.any.worker.html?include=file
-  - subtest: 'URL: Setting <file://monkey/>.pathname = ''\\'' File URLs and (back)slashes'
-    test: url-setters.any.worker.html?include=file
-  - subtest: 'URL: Setting <file:///unicorn>.pathname = ''//\/'' File URLs and (back)slashes'
-    test: url-setters.any.worker.html?include=file
-  - subtest: 'URL: Setting <file://hi/path>.protocol = ''s'''
-    test: url-setters.any.html?include=file
-  - subtest: 'URL: Setting <file://test/>.username = ''test'''
-    test: url-setters.any.html?include=file
-  - subtest: 'URL: Setting <file://test/>.password = ''test'''
-    test: url-setters.any.html?include=file
-  - subtest: 'URL: Setting <file://y/>.host = ''x:123'''
-    test: url-setters.any.html?include=file
-  - subtest: 'URL: Setting <file://y/>.hostname = ''x:123'''
-    test: url-setters.any.html?include=file
-  - subtest: 'URL: Setting <file://test/>.port = ''12'''
-    test: url-setters.any.html?include=file
-  - subtest: 'URL: Setting <file://monkey/>.pathname = ''\\'' File URLs and (back)slashes'
-    test: url-setters.any.html?include=file
-  - subtest: '<a>: Setting <file://hi/path>.protocol = ''s'''
-    test: url-setters-a-area.window.html?include=file
-  - subtest: '<area>: Setting <file://hi/path>.protocol = ''s'''
-    test: url-setters-a-area.window.html?include=file
-  - subtest: '<a>: Setting <file://test/>.username = ''test'''
-    test: url-setters-a-area.window.html?include=file
-  - subtest: '<area>: Setting <file://test/>.username = ''test'''
-    test: url-setters-a-area.window.html?include=file
-  - subtest: '<a>: Setting <file://test/>.password = ''test'''
-    test: url-setters-a-area.window.html?include=file
-  - subtest: '<area>: Setting <file://test/>.password = ''test'''
-    test: url-setters-a-area.window.html?include=file
-  - subtest: '<a>: Setting <file://y/>.host = ''x:123'''
-    test: url-setters-a-area.window.html?include=file
-  - subtest: '<area>: Setting <file://y/>.host = ''x:123'''
-    test: url-setters-a-area.window.html?include=file
-  - subtest: '<a>: Setting <file://y/>.hostname = ''x:123'''
-    test: url-setters-a-area.window.html?include=file
-  - subtest: '<area>: Setting <file://y/>.hostname = ''x:123'''
-    test: url-setters-a-area.window.html?include=file
-  - subtest: '<a>: Setting <file://test/>.port = ''12'''
-    test: url-setters-a-area.window.html?include=file
-  - subtest: '<area>: Setting <file://test/>.port = ''12'''
-    test: url-setters-a-area.window.html?include=file
-  - subtest: '<a>: Setting <file://monkey/>.pathname = ''\\'' File URLs and (back)slashes'
-    test: url-setters-a-area.window.html?include=file
-  - subtest: '<area>: Setting <file://monkey/>.pathname = ''\\'' File URLs and (back)slashes'
-    test: url-setters-a-area.window.html?include=file
-  - subtest: 'Parsing: <file://example:1/> without base'
-    test: url-constructor.any.html?include=file
-  - subtest: 'Parsing: <file://example:test/> without base'
-    test: url-constructor.any.html?include=file
-  - subtest: 'Parsing: <file://example%/> without base'
-    test: url-constructor.any.html?include=file
-  - subtest: 'Parsing: <file://[example]/> without base'
-    test: url-constructor.any.html?include=file
-  - subtest: 'Parsing: <//server/file> against <file:///tmp/mock/path>'
-    test: url-constructor.any.html?include=file
-  - subtest: 'Parsing: <\\server\file> against <file:///tmp/mock/path>'
-    test: url-constructor.any.html?include=file
-  - subtest: 'Parsing: </\server/file> against <file:///tmp/mock/path>'
-    test: url-constructor.any.html?include=file
-  - subtest: 'Parsing: <file://test> against <file:///tmp/mock/path>'
-    test: url-constructor.any.html?include=file
-  - subtest: 'Parsing: <file:..> against <http://www.example.com/test>'
-    test: url-constructor.any.html?include=file
-  - subtest: 'Parsing: <file://%43%3A> without base'
-    test: url-constructor.any.html?include=file
-  - subtest: 'Parsing: <file://%43%7C> without base'
-    test: url-constructor.any.html?include=file
-  - subtest: 'Parsing: <file://%43|> without base'
-    test: url-constructor.any.html?include=file
-  - subtest: 'Parsing: <file://C%7C> without base'
-    test: url-constructor.any.html?include=file
-  - subtest: 'Parsing: <file://%43%7C/> without base'
-    test: url-constructor.any.html?include=file
-  - subtest: 'Parsing: <file://spider///> without base'
-    test: url-constructor.any.html?include=file
-  - subtest: 'Parsing: </> against <file://h/a/b>'
-    test: url-constructor.any.html?include=file
-  - subtest: 'Parsing: </..//localhost//pig> against <file://lion/>'
-    test: url-constructor.any.html?include=file
-  - subtest: 'Parsing: </rooibos> against <file://tea/>'
-    test: url-constructor.any.html?include=file
-  - subtest: 'Parsing: </?chai> against <file://tea/>'
-    test: url-constructor.any.html?include=file
-  - subtest: 'Parsing: <C|> against <file://host/dir/file>'
-    test: url-constructor.any.html?include=file
-  - subtest: 'Parsing: <C|> against <file://host/D:/dir1/dir2/file>'
-    test: url-constructor.any.html?include=file
-  - subtest: 'Parsing: <C|#> against <file://host/dir/file>'
-    test: url-constructor.any.html?include=file
-  - subtest: 'Parsing: <C|?> against <file://host/dir/file>'
-    test: url-constructor.any.html?include=file
-  - subtest: 'Parsing: <C|/> against <file://host/dir/file>'
-    test: url-constructor.any.html?include=file
-  - subtest: 'Parsing: <C|
-
-      /> against <file://host/dir/file>'
-    test: url-constructor.any.html?include=file
-  - subtest: 'Parsing: <C|\> against <file://host/dir/file>'
-    test: url-constructor.any.html?include=file
-  - subtest: 'Parsing: <C> against <file://host/dir/file>'
-    test: url-constructor.any.html?include=file
-  - subtest: 'Parsing: <C|a> against <file://host/dir/file>'
-    test: url-constructor.any.html?include=file
-  - subtest: 'Parsing: </c:/foo/bar> against <file://host/path>'
-    test: url-constructor.any.html?include=file
-  - subtest: 'Parsing: <file://example.net/C:/> without base'
-    test: url-constructor.any.html?include=file
-  - subtest: 'Parsing: <file://1.2.3.4/C:/> without base'
-    test: url-constructor.any.html?include=file
-  - subtest: 'Parsing: <file://[1::8]/C:/> without base'
-    test: url-constructor.any.html?include=file
-  - subtest: 'Parsing: <C|/> against <file://host/>'
-    test: url-constructor.any.html?include=file
-  - subtest: 'Parsing: </C:/> against <file://host/>'
-    test: url-constructor.any.html?include=file
-  - subtest: 'Parsing: <file:C:/> against <file://host/>'
-    test: url-constructor.any.html?include=file
-  - subtest: 'Parsing: <file:/C:/> against <file://host/>'
-    test: url-constructor.any.html?include=file
-  - subtest: 'Parsing: <//one/two> against <file:///>'
-    test: url-constructor.any.html?include=file
-  - subtest: "Parsing: <file://a\xADb/p> without base"
-    test: url-constructor.any.html?include=file
-  - subtest: 'Parsing: <file://a%C2%ADb/p> without base'
-    test: url-constructor.any.html?include=file
-  - subtest: 'Parsing: <file://%C2%AD/p> without base'
-    test: url-constructor.any.html?include=file
-  - subtest: 'Parsing: <//a/../> against <file:///>'
-    test: url-constructor.any.html?include=file
-  - subtest: "Parsing: <file://\xAD/p> without base"
-    test: url-constructor.any.html?include=file
-  - subtest: 'Parsing: <file://example:1/> against <about:blank>'
-    test: a-element-xhtml.xhtml?include=file
-  - subtest: 'Parsing: <file://example:test/> against <about:blank>'
-    test: a-element-xhtml.xhtml?include=file
-  - subtest: 'Parsing: <file://example%/> against <about:blank>'
-    test: a-element-xhtml.xhtml?include=file
-  - subtest: 'Parsing: <file://[example]/> against <about:blank>'
-    test: a-element-xhtml.xhtml?include=file
-  - subtest: 'Parsing: <//server/file> against <file:///tmp/mock/path>'
-    test: a-element-xhtml.xhtml?include=file
-  - subtest: 'Parsing: <\\server\file> against <file:///tmp/mock/path>'
-    test: a-element-xhtml.xhtml?include=file
-  - subtest: 'Parsing: </\server/file> against <file:///tmp/mock/path>'
-    test: a-element-xhtml.xhtml?include=file
-  - subtest: 'Parsing: <file://test> against <file:///tmp/mock/path>'
-    test: a-element-xhtml.xhtml?include=file
-  - subtest: 'Parsing: <file://%43%3A> against <about:blank>'
-    test: a-element-xhtml.xhtml?include=file
-  - subtest: 'Parsing: <file://%43%7C> against <about:blank>'
-    test: a-element-xhtml.xhtml?include=file
-  - subtest: 'Parsing: <file://%43|> against <about:blank>'
-    test: a-element-xhtml.xhtml?include=file
-  - subtest: 'Parsing: <file://C%7C> against <about:blank>'
-    test: a-element-xhtml.xhtml?include=file
-  - subtest: 'Parsing: <file://%43%7C/> against <about:blank>'
-    test: a-element-xhtml.xhtml?include=file
-  - subtest: 'Parsing: </> against <file://h/C:/a/b>'
-    test: a-element-xhtml.xhtml?include=file
-  - subtest: 'Parsing: </> against <file://h/a/b>'
-    test: a-element-xhtml.xhtml?include=file
-  - subtest: 'Parsing: <file://spider///> against <about:blank>'
-    test: a-element-xhtml.xhtml?include=file
-  - subtest: 'Parsing: </..//localhost//pig> against <file://lion/>'
-    test: a-element-xhtml.xhtml?include=file
-  - subtest: 'Parsing: </rooibos> against <file://tea/>'
-    test: a-element-xhtml.xhtml?include=file
-  - subtest: 'Parsing: </?chai> against <file://tea/>'
-    test: a-element-xhtml.xhtml?include=file
-  - subtest: 'Parsing: <C|> against <file://host/dir/file>'
-    test: a-element-xhtml.xhtml?include=file
-  - subtest: 'Parsing: <C|> against <file://host/D:/dir1/dir2/file>'
-    test: a-element-xhtml.xhtml?include=file
-  - subtest: 'Parsing: <C|#> against <file://host/dir/file>'
-    test: a-element-xhtml.xhtml?include=file
-  - subtest: 'Parsing: <C|?> against <file://host/dir/file>'
-    test: a-element-xhtml.xhtml?include=file
-  - subtest: 'Parsing: <C|/> against <file://host/dir/file>'
-    test: a-element-xhtml.xhtml?include=file
-  - subtest: 'Parsing: <C|
-
-      /> against <file://host/dir/file>'
-    test: a-element-xhtml.xhtml?include=file
-  - subtest: 'Parsing: <C|\> against <file://host/dir/file>'
-    test: a-element-xhtml.xhtml?include=file
-  - subtest: 'Parsing: <C> against <file://host/dir/file>'
-    test: a-element-xhtml.xhtml?include=file
-  - subtest: 'Parsing: <C|a> against <file://host/dir/file>'
-    test: a-element-xhtml.xhtml?include=file
-  - subtest: 'Parsing: </c:/foo/bar> against <file://host/path>'
-    test: a-element-xhtml.xhtml?include=file
-  - subtest: 'Parsing: <file://1.2.3.4/C:/> against <about:blank>'
-    test: a-element-xhtml.xhtml?include=file
-  - subtest: 'Parsing: <file://example.net/C:/> against <about:blank>'
-    test: a-element-xhtml.xhtml?include=file
-  - subtest: 'Parsing: <file://[1::8]/C:/> against <about:blank>'
-    test: a-element-xhtml.xhtml?include=file
-  - subtest: 'Parsing: <C|/> against <file://host/>'
-    test: a-element-xhtml.xhtml?include=file
-  - subtest: 'Parsing: </C:/> against <file://host/>'
-    test: a-element-xhtml.xhtml?include=file
-  - subtest: 'Parsing: <file:C:/> against <file://host/>'
-    test: a-element-xhtml.xhtml?include=file
-  - subtest: 'Parsing: <file:/C:/> against <file://host/>'
-    test: a-element-xhtml.xhtml?include=file
-  - subtest: 'Parsing: <//one/two> against <file:///>'
-    test: a-element-xhtml.xhtml?include=file
-  - subtest: "Parsing: <file://a\xADb/p> against <about:blank>"
-    test: a-element-xhtml.xhtml?include=file
-  - subtest: 'Parsing: <file://a%C2%ADb/p> against <about:blank>'
-    test: a-element-xhtml.xhtml?include=file
-  - subtest: 'Parsing: <file://xn--/p> against <about:blank>'
-    test: a-element-xhtml.xhtml?include=file
-  - subtest: 'Parsing: <file://%C2%AD/p> against <about:blank>'
-    test: a-element-xhtml.xhtml?include=file
-  - subtest: 'Parsing: <//a/../> against <file:///>'
-    test: a-element-xhtml.xhtml?include=file
-  - subtest: 'Parsing: <file://example:1/> against <about:blank>'
-    test: a-element.html?include=file
-  - subtest: 'Parsing: <file://example:test/> against <about:blank>'
-    test: a-element.html?include=file
-  - subtest: 'Parsing: <file://example%/> against <about:blank>'
-    test: a-element.html?include=file
-  - subtest: 'Parsing: <file://[example]/> against <about:blank>'
-    test: a-element.html?include=file
-  - subtest: 'Parsing: <//server/file> against <file:///tmp/mock/path>'
-    test: a-element.html?include=file
-  - subtest: 'Parsing: <\\server\file> against <file:///tmp/mock/path>'
-    test: a-element.html?include=file
-  - subtest: 'Parsing: </\server/file> against <file:///tmp/mock/path>'
-    test: a-element.html?include=file
-  - subtest: 'Parsing: <file://test> against <file:///tmp/mock/path>'
-    test: a-element.html?include=file
-  - subtest: 'Parsing: <file://%43%3A> against <about:blank>'
-    test: a-element.html?include=file
-  - subtest: 'Parsing: <file://%43%7C> against <about:blank>'
-    test: a-element.html?include=file
-  - subtest: 'Parsing: <file://%43|> against <about:blank>'
-    test: a-element.html?include=file
-  - subtest: 'Parsing: <file://C%7C> against <about:blank>'
-    test: a-element.html?include=file
-  - subtest: 'Parsing: <file://%43%7C/> against <about:blank>'
-    test: a-element.html?include=file
-  - subtest: 'Parsing: </> against <file://h/C:/a/b>'
-    test: a-element.html?include=file
-  - subtest: 'Parsing: </> against <file://h/a/b>'
-    test: a-element.html?include=file
-  - subtest: 'Parsing: <file://spider///> against <about:blank>'
-    test: a-element.html?include=file
-  - subtest: 'Parsing: </..//localhost//pig> against <file://lion/>'
-    test: a-element.html?include=file
-  - subtest: 'Parsing: </?chai> against <file://tea/>'
-    test: a-element.html?include=file
-  - subtest: 'Parsing: </rooibos> against <file://tea/>'
-    test: a-element.html?include=file
-  - subtest: 'Parsing: <C|> against <file://host/dir/file>'
-    test: a-element.html?include=file
-  - subtest: 'Parsing: <C|> against <file://host/D:/dir1/dir2/file>'
-    test: a-element.html?include=file
-  - subtest: 'Parsing: <C|#> against <file://host/dir/file>'
-    test: a-element.html?include=file
-  - subtest: 'Parsing: <C|?> against <file://host/dir/file>'
-    test: a-element.html?include=file
-  - subtest: 'Parsing: <C|/> against <file://host/dir/file>'
-    test: a-element.html?include=file
-  - subtest: 'Parsing: <C|
-
-      /> against <file://host/dir/file>'
-    test: a-element.html?include=file
-  - subtest: 'Parsing: <C|\> against <file://host/dir/file>'
-    test: a-element.html?include=file
-  - subtest: 'Parsing: <C> against <file://host/dir/file>'
-    test: a-element.html?include=file
-  - subtest: 'Parsing: <C|a> against <file://host/dir/file>'
-    test: a-element.html?include=file
-  - subtest: 'Parsing: </c:/foo/bar> against <file://host/path>'
-    test: a-element.html?include=file
-  - subtest: 'Parsing: <file://example.net/C:/> against <about:blank>'
-    test: a-element.html?include=file
-  - subtest: 'Parsing: <file://1.2.3.4/C:/> against <about:blank>'
-    test: a-element.html?include=file
-  - subtest: 'Parsing: <file://[1::8]/C:/> against <about:blank>'
-    test: a-element.html?include=file
-  - subtest: 'Parsing: <C|/> against <file://host/>'
-    test: a-element.html?include=file
-  - subtest: 'Parsing: </C:/> against <file://host/>'
-    test: a-element.html?include=file
-  - subtest: 'Parsing: <file:C:/> against <file://host/>'
-    test: a-element.html?include=file
-  - subtest: 'Parsing: <file:/C:/> against <file://host/>'
-    test: a-element.html?include=file
-  - subtest: 'Parsing: <//one/two> against <file:///>'
-    test: a-element.html?include=file
-  - subtest: "Parsing: <file://a\xADb/p> against <about:blank>"
-    test: a-element.html?include=file
-  - subtest: 'Parsing: <file://a%C2%ADb/p> against <about:blank>'
-    test: a-element.html?include=file
-  - subtest: "Parsing: <file://\xAD/p> against <about:blank>"
-    test: a-element.html?include=file
-  - subtest: 'Parsing: <file://%C2%AD/p> against <about:blank>'
-    test: a-element.html?include=file
-  - subtest: 'Parsing: <file://xn--/p> against <about:blank>'
-    test: a-element.html?include=file
-  - subtest: 'Parsing: <//a/../> against <file:///>'
-    test: a-element.html?include=file
-  - subtest: 'Parsing: <file://example:1/> without base'
-    test: url-constructor.any.worker.html?include=file
-  - subtest: 'Parsing: <file://example:test/> without base'
-    test: url-constructor.any.worker.html?include=file
-  - subtest: 'Parsing: <file://example%/> without base'
-    test: url-constructor.any.worker.html?include=file
-  - subtest: 'Parsing: <file://[example]/> without base'
-    test: url-constructor.any.worker.html?include=file
-  - subtest: 'Parsing: <//server/file> against <file:///tmp/mock/path>'
-    test: url-constructor.any.worker.html?include=file
-  - subtest: 'Parsing: <\\server\file> against <file:///tmp/mock/path>'
-    test: url-constructor.any.worker.html?include=file
-  - subtest: 'Parsing: </\server/file> against <file:///tmp/mock/path>'
-    test: url-constructor.any.worker.html?include=file
-  - subtest: 'Parsing: <file://test> against <file:///tmp/mock/path>'
-    test: url-constructor.any.worker.html?include=file
-  - subtest: 'Parsing: <file://%43%7C> without base'
-    test: url-constructor.any.worker.html?include=file
-  - subtest: 'Parsing: <file://%43%3A> without base'
-    test: url-constructor.any.worker.html?include=file
-  - subtest: 'Parsing: <file://%43|> without base'
-    test: url-constructor.any.worker.html?include=file
-  - subtest: 'Parsing: <file://C%7C> without base'
-    test: url-constructor.any.worker.html?include=file
-  - subtest: 'Parsing: <file://%43%7C/> without base'
-    test: url-constructor.any.worker.html?include=file
-  - subtest: 'Parsing: </> against <file://h/a/b>'
-    test: url-constructor.any.worker.html?include=file
-  - subtest: 'Parsing: </> against <file://h/C:/a/b>'
-    test: url-constructor.any.worker.html?include=file
-  - subtest: 'Parsing: <file://spider///> without base'
-    test: url-constructor.any.worker.html?include=file
-  - subtest: 'Parsing: </..//localhost//pig> against <file://lion/>'
-    test: url-constructor.any.worker.html?include=file
-  - subtest: 'Parsing: </rooibos> against <file://tea/>'
-    test: url-constructor.any.worker.html?include=file
-  - subtest: 'Parsing: </?chai> against <file://tea/>'
-    test: url-constructor.any.worker.html?include=file
-  - subtest: 'Parsing: <C|> against <file://host/dir/file>'
-    test: url-constructor.any.worker.html?include=file
-  - subtest: 'Parsing: <C|> against <file://host/D:/dir1/dir2/file>'
-    test: url-constructor.any.worker.html?include=file
-  - subtest: 'Parsing: <C|#> against <file://host/dir/file>'
-    test: url-constructor.any.worker.html?include=file
-  - subtest: 'Parsing: <C|?> against <file://host/dir/file>'
-    test: url-constructor.any.worker.html?include=file
-  - subtest: 'Parsing: <C|/> against <file://host/dir/file>'
-    test: url-constructor.any.worker.html?include=file
-  - subtest: 'Parsing: <C|
-
-      /> against <file://host/dir/file>'
-    test: url-constructor.any.worker.html?include=file
-  - subtest: 'Parsing: <C|\> against <file://host/dir/file>'
-    test: url-constructor.any.worker.html?include=file
-  - subtest: 'Parsing: <C> against <file://host/dir/file>'
-    test: url-constructor.any.worker.html?include=file
-  - subtest: 'Parsing: <C|a> against <file://host/dir/file>'
-    test: url-constructor.any.worker.html?include=file
-  - subtest: 'Parsing: </c:/foo/bar> against <file://host/path>'
-    test: url-constructor.any.worker.html?include=file
-  - subtest: 'Parsing: <file://example.net/C:/> without base'
-    test: url-constructor.any.worker.html?include=file
-  - subtest: 'Parsing: <file://1.2.3.4/C:/> without base'
-    test: url-constructor.any.worker.html?include=file
-  - subtest: 'Parsing: <file://[1::8]/C:/> without base'
-    test: url-constructor.any.worker.html?include=file
-  - subtest: 'Parsing: <C|/> against <file://host/>'
-    test: url-constructor.any.worker.html?include=file
-  - subtest: 'Parsing: </C:/> against <file://host/>'
-    test: url-constructor.any.worker.html?include=file
-  - subtest: 'Parsing: <file:C:/> against <file://host/>'
-    test: url-constructor.any.worker.html?include=file
-  - subtest: 'Parsing: <file:/C:/> against <file://host/>'
-    test: url-constructor.any.worker.html?include=file
-  - subtest: 'Parsing: <//one/two> against <file:///>'
-    test: url-constructor.any.worker.html?include=file
-  - subtest: "Parsing: <file://a\xADb/p> without base"
-    test: url-constructor.any.worker.html?include=file
-  - subtest: 'Parsing: <file://a%C2%ADb/p> without base'
-    test: url-constructor.any.worker.html?include=file
-  - subtest: "Parsing: <file://\xAD/p> without base"
-    test: url-constructor.any.worker.html?include=file
-  - subtest: 'Parsing: <file://%C2%AD/p> without base'
-    test: url-constructor.any.worker.html?include=file
-  - subtest: 'Parsing: <file://xn--/p> without base'
-    test: url-constructor.any.worker.html?include=file
-  - subtest: 'Parsing: <//a/../> against <file:///>'
-    test: url-constructor.any.worker.html?include=file
-  - subtest: "Parsing: <file://\xAD/p> against <about:blank>"
-    test: a-element-xhtml.xhtml?include=file
-  - subtest: 'Parsing: </> against <file://h/C:/a/b>'
-    test: url-constructor.any.html?include=file
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1507354
-- product: firefox
-  results:
-  - subtest: 'URL: Setting <non-special://example.net:8080/path>.port = ''65536''
-      Port numbers are 16 bit integers, overflowing is an error'
-    test: url-setters.any.worker.html?exclude=(file|javascript|mailto)
-  - subtest: 'URL: Setting <non-special://example.net:8080/path>.port = ''65536''
-      Port numbers are 16 bit integers, overflowing is an error'
-    test: url-setters.any.html?exclude=(file|javascript|mailto)
-  - subtest: '<a>: Setting <non-special://example.net:8080/path>.port = ''65536''
-      Port numbers are 16 bit integers, overflowing is an error'
-    test: url-setters-a-area.window.html?exclude=(file|javascript|mailto)
-  - subtest: '<area>: Setting <non-special://example.net:8080/path>.port = ''65536''
-      Port numbers are 16 bit integers, overflowing is an error'
-    test: url-setters-a-area.window.html?exclude=(file|javascript|mailto)
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1873906
-- product: firefox
-  results:
-  - subtest: 'Parsing origin: <blob:blob:https://example.org/> against <about:blank>'
-    test: a-element-origin.html
-  - subtest: 'Parsing origin: <blob:ftp://host/path> against <about:blank>'
-    test: a-element-origin.html
-  - subtest: 'Parsing origin: <blob:ws://example.org/> against <about:blank>'
-    test: a-element-origin.html
-  - subtest: 'Parsing origin: <blob:wss://example.org/> against <about:blank>'
-    test: a-element-origin.html
-  - subtest: 'Parsing origin: <blob:blob:https://example.org/> against <about:blank>'
-    test: a-element-origin-xhtml.xhtml
-  - subtest: 'Parsing origin: <blob:ftp://host/path> against <about:blank>'
-    test: a-element-origin-xhtml.xhtml
-  - subtest: 'Parsing origin: <blob:ws://example.org/> against <about:blank>'
-    test: a-element-origin-xhtml.xhtml
-  - subtest: 'Parsing origin: <blob:wss://example.org/> against <about:blank>'
-    test: a-element-origin-xhtml.xhtml
-  - subtest: 'Origin parsing: <blob:blob:https://example.org/> without base'
-    test: url-origin.any.worker.html
-  - subtest: 'Origin parsing: <blob:ftp://host/path> without base'
-    test: url-origin.any.worker.html
-  - subtest: 'Origin parsing: <blob:ws://example.org/> without base'
-    test: url-origin.any.worker.html
-  - subtest: 'Origin parsing: <blob:wss://example.org/> without base'
-    test: url-origin.any.worker.html
-  - subtest: 'Origin parsing: <blob:blob:https://example.org/> without base'
-    test: url-origin.any.html
-  - subtest: 'Origin parsing: <blob:ftp://host/path> without base'
-    test: url-origin.any.html
-  - subtest: 'Origin parsing: <blob:ws://example.org/> without base'
-    test: url-origin.any.html
-  - subtest: 'Origin parsing: <blob:wss://example.org/> without base'
-    test: url-origin.any.html
-  - subtest: 'Parsing: <wss://!"$&''()*+,-.;=_`{}~/> against <about:blank>'
-    test: a-element-xhtml.xhtml?exclude=(file|javascript|mailto)
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1834703
-- product: firefox
-  results:
-  - subtest: 'Parsing: <http://example.com/foo/%2e> against <about:blank>'
-    test: a-element-xhtml.xhtml?exclude=(file|javascript|mailto)
-  - subtest: 'Parsing: <http://example.com/foo/%2e> against <about:blank>'
-    test: a-element.html?exclude=(file|javascript|mailto)
-  - subtest: 'Parsing: <http://example.com/foo/%2e> without base'
-    test: url-constructor.any.html?exclude=(file|javascript|mailto)
-  - subtest: 'Parsing: <http://example.com/foo/%2e> without base'
-    test: url-constructor.any.worker.html?exclude=(file|javascript|mailto)
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1873915
-- product: firefox
-  results:
-  - subtest: 'Parsing: <non-spec:/.//> against <about:blank>'
-    test: a-element-xhtml.xhtml?exclude=(file|javascript|mailto)
-  - subtest: 'Parsing: <non-spec:/..//> against <about:blank>'
-    test: a-element-xhtml.xhtml?exclude=(file|javascript|mailto)
-  - subtest: 'Parsing: <non-spec:/a/..//> against <about:blank>'
-    test: a-element-xhtml.xhtml?exclude=(file|javascript|mailto)
-  - subtest: 'Parsing: <non-spec:/.//path> against <about:blank>'
-    test: a-element-xhtml.xhtml?exclude=(file|javascript|mailto)
-  - subtest: 'Parsing: <non-spec:/..//path> against <about:blank>'
-    test: a-element-xhtml.xhtml?exclude=(file|javascript|mailto)
-  - subtest: 'Parsing: <non-spec:/a/..//path> against <about:blank>'
-    test: a-element-xhtml.xhtml?exclude=(file|javascript|mailto)
-  - subtest: 'Parsing: </.//path> against <non-spec:/p>'
-    test: a-element-xhtml.xhtml?exclude=(file|javascript|mailto)
-  - subtest: 'Parsing: </..//path> against <non-spec:/p>'
-    test: a-element-xhtml.xhtml?exclude=(file|javascript|mailto)
-  - subtest: 'Parsing: <..//path> against <non-spec:/p>'
-    test: a-element-xhtml.xhtml?exclude=(file|javascript|mailto)
-  - subtest: 'Parsing: <a/..//path> against <non-spec:/p>'
-    test: a-element-xhtml.xhtml?exclude=(file|javascript|mailto)
-  - subtest: 'Parsing: <> against <non-spec:/..//p>'
-    test: a-element-xhtml.xhtml?exclude=(file|javascript|mailto)
-  - subtest: 'Parsing: <path> against <non-spec:/..//p>'
-    test: a-element-xhtml.xhtml?exclude=(file|javascript|mailto)
-  - subtest: 'Parsing: <path> against <non-spec:/..//p>'
-    test: a-element.html?exclude=(file|javascript|mailto)
-  - subtest: 'Parsing: <> against <non-spec:/..//p>'
-    test: a-element.html?exclude=(file|javascript|mailto)
-  - subtest: 'Parsing: <a/..//path> against <non-spec:/p>'
-    test: a-element.html?exclude=(file|javascript|mailto)
-  - subtest: 'Parsing: <..//path> against <non-spec:/p>'
-    test: a-element.html?exclude=(file|javascript|mailto)
-  - subtest: 'Parsing: </..//path> against <non-spec:/p>'
-    test: a-element.html?exclude=(file|javascript|mailto)
-  - subtest: 'Parsing: </.//path> against <non-spec:/p>'
-    test: a-element.html?exclude=(file|javascript|mailto)
-  - subtest: 'Parsing: <non-spec:/a/..//path> against <about:blank>'
-    test: a-element.html?exclude=(file|javascript|mailto)
-  - subtest: 'Parsing: <non-spec:/..//path> against <about:blank>'
-    test: a-element.html?exclude=(file|javascript|mailto)
-  - subtest: 'Parsing: <non-spec:/.//path> against <about:blank>'
-    test: a-element.html?exclude=(file|javascript|mailto)
-  - subtest: 'Parsing: <non-spec:/a/..//> against <about:blank>'
-    test: a-element.html?exclude=(file|javascript|mailto)
-  - subtest: 'Parsing: <non-spec:/..//> against <about:blank>'
-    test: a-element.html?exclude=(file|javascript|mailto)
-  - subtest: 'Parsing: <non-spec:/.//> against <about:blank>'
-    test: a-element.html?exclude=(file|javascript|mailto)
-  - subtest: 'Parsing: <path> against <non-spec:/..//p>'
-    test: url-constructor.any.html?exclude=(file|javascript|mailto)
-  - subtest: 'Parsing: <> against <non-spec:/..//p>'
-    test: url-constructor.any.html?exclude=(file|javascript|mailto)
-  - subtest: 'Parsing: <a/..//path> against <non-spec:/p>'
-    test: url-constructor.any.html?exclude=(file|javascript|mailto)
-  - subtest: 'Parsing: <..//path> against <non-spec:/p>'
-    test: url-constructor.any.html?exclude=(file|javascript|mailto)
-  - subtest: 'Parsing: </..//path> against <non-spec:/p>'
-    test: url-constructor.any.html?exclude=(file|javascript|mailto)
-  - subtest: 'Parsing: </.//path> against <non-spec:/p>'
-    test: url-constructor.any.html?exclude=(file|javascript|mailto)
-  - subtest: 'Parsing: <non-spec:/a/..//path> without base'
-    test: url-constructor.any.html?exclude=(file|javascript|mailto)
-  - subtest: 'Parsing: <non-spec:/..//path> without base'
-    test: url-constructor.any.html?exclude=(file|javascript|mailto)
-  - subtest: 'Parsing: <non-spec:/.//path> without base'
-    test: url-constructor.any.html?exclude=(file|javascript|mailto)
-  - subtest: 'Parsing: <non-spec:/a/..//> without base'
-    test: url-constructor.any.html?exclude=(file|javascript|mailto)
-  - subtest: 'Parsing: <non-spec:/..//> without base'
-    test: url-constructor.any.html?exclude=(file|javascript|mailto)
-  - subtest: 'Parsing: <non-spec:/.//> without base'
-    test: url-constructor.any.html?exclude=(file|javascript|mailto)
-  - subtest: 'Parsing: <non-spec:/.//> without base'
-    test: url-constructor.any.worker.html?exclude=(file|javascript|mailto)
-  - subtest: 'Parsing: <non-spec:/..//> without base'
-    test: url-constructor.any.worker.html?exclude=(file|javascript|mailto)
-  - subtest: 'Parsing: <non-spec:/a/..//> without base'
-    test: url-constructor.any.worker.html?exclude=(file|javascript|mailto)
-  - subtest: 'Parsing: <non-spec:/.//path> without base'
-    test: url-constructor.any.worker.html?exclude=(file|javascript|mailto)
-  - subtest: 'Parsing: <non-spec:/..//path> without base'
-    test: url-constructor.any.worker.html?exclude=(file|javascript|mailto)
-  - subtest: 'Parsing: <non-spec:/a/..//path> without base'
-    test: url-constructor.any.worker.html?exclude=(file|javascript|mailto)
-  - subtest: 'Parsing: </.//path> against <non-spec:/p>'
-    test: url-constructor.any.worker.html?exclude=(file|javascript|mailto)
-  - subtest: 'Parsing: </..//path> against <non-spec:/p>'
-    test: url-constructor.any.worker.html?exclude=(file|javascript|mailto)
-  - subtest: 'Parsing: <..//path> against <non-spec:/p>'
-    test: url-constructor.any.worker.html?exclude=(file|javascript|mailto)
-  - subtest: 'Parsing: <a/..//path> against <non-spec:/p>'
-    test: url-constructor.any.worker.html?exclude=(file|javascript|mailto)
-  - subtest: 'Parsing: <> against <non-spec:/..//p>'
-    test: url-constructor.any.worker.html?exclude=(file|javascript|mailto)
-  - subtest: 'Parsing: <path> against <non-spec:/..//p>'
-    test: url-constructor.any.worker.html?exclude=(file|javascript|mailto)
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1873940
-- product: firefox
-  results:
-  - subtest: 'Parsing: <about:/../> against <about:blank>'
-    test: a-element-xhtml.xhtml?exclude=(file|javascript|mailto)
-  - subtest: 'Parsing: <data:/../> against <about:blank>'
-    test: a-element-xhtml.xhtml?exclude=(file|javascript|mailto)
-  - subtest: 'Parsing: <data://example.com:8080/pathname?search#hash> against <about:blank>'
-    test: a-element-xhtml.xhtml?exclude=(file|javascript|mailto)
-  - subtest: 'Parsing: <data:///test> against <about:blank>'
-    test: a-element-xhtml.xhtml?exclude=(file|javascript|mailto)
-  - subtest: 'Parsing: <data://test/a/../b> against <about:blank>'
-    test: a-element-xhtml.xhtml?exclude=(file|javascript|mailto)
-  - subtest: 'Parsing: <data://example.com:8080/pathname?search#hash> against <about:blank>'
-    test: a-element.html?exclude=(file|javascript|mailto)
-  - subtest: 'Parsing: <about:/../> against <about:blank>'
-    test: a-element.html?exclude=(file|javascript|mailto)
-  - subtest: 'Parsing: <data:/../> against <about:blank>'
-    test: a-element.html?exclude=(file|javascript|mailto)
-  - subtest: 'Parsing: <data:///test> against <about:blank>'
-    test: a-element.html?exclude=(file|javascript|mailto)
-  - subtest: 'Parsing: <data://test/a/../b> against <about:blank>'
-    test: a-element.html?exclude=(file|javascript|mailto)
-  - subtest: 'Parsing: <about:/../> without base'
-    test: url-constructor.any.html?exclude=(file|javascript|mailto)
-  - subtest: 'Parsing: <data:/../> without base'
-    test: url-constructor.any.html?exclude=(file|javascript|mailto)
-  - subtest: 'Parsing: <data:///test> without base'
-    test: url-constructor.any.html?exclude=(file|javascript|mailto)
-  - subtest: 'Parsing: <data://test/a/../b> without base'
-    test: url-constructor.any.html?exclude=(file|javascript|mailto)
-  - subtest: 'Parsing: <data://example.com:8080/pathname?search#hash> without base'
-    test: url-constructor.any.html?exclude=(file|javascript|mailto)
-  - subtest: 'Parsing: <about:/../> without base'
-    test: url-constructor.any.worker.html?exclude=(file|javascript|mailto)
-  - subtest: 'Parsing: <data:/../> without base'
-    test: url-constructor.any.worker.html?exclude=(file|javascript|mailto)
-  - subtest: 'Parsing: <data://test/a/../b> without base'
-    test: url-constructor.any.worker.html?exclude=(file|javascript|mailto)
-  - subtest: 'Parsing: <data:///test> without base'
-    test: url-constructor.any.worker.html?exclude=(file|javascript|mailto)
-  - subtest: 'Parsing: <data://example.com:8080/pathname?search#hash> without base'
-    test: url-constructor.any.worker.html?exclude=(file|javascript|mailto)
-  - subtest: '<a>: Setting <data:/nospace>.pathname = ''space '' Non-special URLs
-      with non-opaque paths percent-encode U+0020'
-    test: url-setters-a-area.window.html?exclude=(file|javascript|mailto)
-  - subtest: '<area>: Setting <data:/nospace>.pathname = ''space '' Non-special URLs
-      with non-opaque paths percent-encode U+0020'
-    test: url-setters-a-area.window.html?exclude=(file|javascript|mailto)
-  - subtest: 'URL: Setting <data:/nospace>.pathname = ''space '' Non-special URLs
-      with non-opaque paths percent-encode U+0020'
-    test: url-setters.any.html?exclude=(file|javascript|mailto)
-  - subtest: 'URL: Setting <data:/nospace>.pathname = ''space '' Non-special URLs
-      with non-opaque paths percent-encode U+0020'
-    test: url-setters.any.worker.html?exclude=(file|javascript|mailto)
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1873944
-- product: firefox
-  results:
-  - subtest: 'URL: Setting <http://example.net/home?lang=fr#nav>.pathname = ''\a\%2E\b\%2e.\c''
-      \ is a segment delimiter for ''special'' URLs'
-    test: url-setters.any.html?exclude=(file|javascript|mailto)
-  - subtest: '<a>: Setting <http://example.net/home?lang=fr#nav>.pathname = ''\a\%2E\b\%2e.\c''
-      \ is a segment delimiter for ''special'' URLs'
-    test: url-setters-a-area.window.html?exclude=(file|javascript|mailto)
-  - subtest: '<area>: Setting <http://example.net/home?lang=fr#nav>.pathname = ''\a\%2E\b\%2e.\c''
-      \ is a segment delimiter for ''special'' URLs'
-    test: url-setters-a-area.window.html?exclude=(file|javascript|mailto)
-  - subtest: '<a>: Setting <file:///unicorn>.pathname = ''//\/'' File URLs and (back)slashes'
-    test: url-setters-a-area.window.html?include=file
-  - subtest: '<area>: Setting <file:///unicorn>.pathname = ''//\/'' File URLs and
-      (back)slashes'
-    test: url-setters-a-area.window.html?include=file
-  - subtest: 'URL: Setting <file:///unicorn>.pathname = ''//\/'' File URLs and (back)slashes'
-    test: url-setters.any.html?include=file
-  - subtest: 'URL: Setting <http://example.net/home?lang=fr#nav>.pathname = ''\a\%2E\b\%2e.\c''
-      \ is a segment delimiter for ''special'' URLs'
-    test: url-setters.any.worker.html?exclude=(file|javascript|mailto)
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1873955
-- product: firefox
-  results:
-  - subtest: 'Parsing: <wss://host/ !"$%&''()*+,-./:;<=>@[\]^_`{|}~> against <about:blank>'
-    test: a-element-xhtml.xhtml?exclude=(file|javascript|mailto)
-  - subtest: 'Parsing: <wss://host/ !"$%&''()*+,-./:;<=>@[\]^_`{|}~> against <about:blank>'
-    test: a-element.html?exclude=(file|javascript|mailto)
-  - subtest: 'Parsing: <wss://host/ !"$%&''()*+,-./:;<=>@[\]^_`{|}~> without base'
-    test: url-constructor.any.html?exclude=(file|javascript|mailto)
-  - subtest: 'Parsing: <wss://host/ !"$%&''()*+,-./:;<=>@[\]^_`{|}~> without base'
-    test: url-constructor.any.worker.html?exclude=(file|javascript|mailto)
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1873973
-- product: firefox
-  results:
-  - subtest: 'Parsing: <file:c:\foo\bar.html> against <file:///tmp/mock/path>'
-    test: a-element-xhtml.xhtml?include=file
-  - subtest: 'Parsing: <  File:c|////foo\bar.html> against <file:///tmp/mock/path>'
-    test: a-element-xhtml.xhtml?include=file
-  - subtest: 'Parsing: <C|/foo/bar> against <file:///tmp/mock/path>'
-    test: a-element-xhtml.xhtml?include=file
-  - subtest: 'Parsing: <file:c:\foo\bar.html> against <file:///tmp/mock/path>'
-    test: a-element.html?include=file
-  - subtest: 'Parsing: <  File:c|////foo\bar.html> against <file:///tmp/mock/path>'
-    test: a-element.html?include=file
-  - subtest: 'Parsing: <C|/foo/bar> against <file:///tmp/mock/path>'
-    test: a-element.html?include=file
-  - subtest: 'Parsing: <file:..> against <http://www.example.com/test>'
-    test: a-element.html?include=file
-  - subtest: 'Parsing: <..> against <file:///C:/>'
-    test: a-element.html?include=file
-  - subtest: 'Parsing: </> against <file:///C:/a/b>'
-    test: a-element.html?include=file
-  - subtest: 'Parsing: <file:c:\foo\bar.html> against <file:///tmp/mock/path>'
-    test: url-constructor.any.html?include=file
-  - subtest: 'Parsing: <  File:c|////foo\bar.html> against <file:///tmp/mock/path>'
-    test: url-constructor.any.html?include=file
-  - subtest: 'Parsing: <C|/foo/bar> against <file:///tmp/mock/path>'
-    test: url-constructor.any.html?include=file
-  - subtest: 'Parsing: <..> against <file:///C:/>'
-    test: url-constructor.any.html?include=file
-  - subtest: 'Parsing: </> against <file:///C:/a/b>'
-    test: url-constructor.any.html?include=file
-  - subtest: 'Parsing: <file:c:\foo\bar.html> against <file:///tmp/mock/path>'
-    test: url-constructor.any.worker.html?include=file
-  - subtest: 'Parsing: <  File:c|////foo\bar.html> against <file:///tmp/mock/path>'
-    test: url-constructor.any.worker.html?include=file
-  - subtest: 'Parsing: <C|/foo/bar> against <file:///tmp/mock/path>'
-    test: url-constructor.any.worker.html?include=file
-  - subtest: 'Parsing: <file:..> against <http://www.example.com/test>'
-    test: url-constructor.any.worker.html?include=file
-  - subtest: 'Parsing: <..> against <file:///C:/>'
-    test: url-constructor.any.worker.html?include=file
-  - subtest: 'Parsing: </> against <file:///C:/a/b>'
-    test: url-constructor.any.worker.html?include=file
-  - subtest: 'Parsing: <file:..> against <http://www.example.com/test>'
-    test: a-element-xhtml.xhtml?include=file
-  - subtest: 'Parsing: <..> against <file:///C:/>'
-    test: a-element-xhtml.xhtml?include=file
-  - subtest: 'Parsing: </> against <file:///C:/a/b>'
-    test: a-element-xhtml.xhtml?include=file
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1873976
-- product: firefox
-  results:
-  - subtest: '<a>: Setting <foo://somehost/some/path>.pathname = '''' Non-special
-      URLs can have their paths erased'
-    test: url-setters-a-area.window.html?exclude=(file|javascript|mailto)
-  - subtest: '<area>: Setting <foo://somehost/some/path>.pathname = '''' Non-special
-      URLs can have their paths erased'
-    test: url-setters-a-area.window.html?exclude=(file|javascript|mailto)
-  - subtest: '<a>: Setting <foo:///some/path>.pathname = '''' Non-special URLs with
-      an empty host can have their paths erased'
-    test: url-setters-a-area.window.html?exclude=(file|javascript|mailto)
-  - subtest: '<area>: Setting <foo:///some/path>.pathname = '''' Non-special URLs
-      with an empty host can have their paths erased'
-    test: url-setters-a-area.window.html?exclude=(file|javascript|mailto)
-  - subtest: 'URL: Setting <foo://somehost/some/path>.pathname = '''' Non-special
-      URLs can have their paths erased'
-    test: url-setters.any.html?exclude=(file|javascript|mailto)
-  - subtest: 'URL: Setting <foo:///some/path>.pathname = '''' Non-special URLs with
-      an empty host can have their paths erased'
-    test: url-setters.any.html?exclude=(file|javascript|mailto)
-  - subtest: 'URL: Setting <foo://somehost/some/path>.pathname = '''' Non-special
-      URLs can have their paths erased'
-    test: url-setters.any.worker.html?exclude=(file|javascript|mailto)
-  - subtest: 'URL: Setting <foo:///some/path>.pathname = '''' Non-special URLs with
-      an empty host can have their paths erased'
-    test: url-setters.any.worker.html?exclude=(file|javascript|mailto)
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1874117
-- product: firefox
-  results:
-  - subtest: '<a>: Setting <data:space  ?query#fragment>.search = '''' Do not drop
-      trailing spaces from non-trailing opaque paths'
-    test: url-setters-a-area.window.html?exclude=(file|javascript|mailto)
-  - subtest: '<area>: Setting <data:space  ?query#fragment>.search = '''' Do not drop
-      trailing spaces from non-trailing opaque paths'
-    test: url-setters-a-area.window.html?exclude=(file|javascript|mailto)
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1874118
-- product: firefox
-  results:
-  - subtest: '<a>: Setting <non-spec:/>.pathname = ''/.//p'' Serialize /. in path'
-    test: url-setters-a-area.window.html?exclude=(file|javascript|mailto)
-  - subtest: '<area>: Setting <non-spec:/>.pathname = ''/.//p'' Serialize /. in path'
-    test: url-setters-a-area.window.html?exclude=(file|javascript|mailto)
-  - subtest: '<a>: Setting <non-spec:/>.pathname = ''/..//p'''
-    test: url-setters-a-area.window.html?exclude=(file|javascript|mailto)
-  - subtest: '<area>: Setting <non-spec:/>.pathname = ''/..//p'''
-    test: url-setters-a-area.window.html?exclude=(file|javascript|mailto)
-  - subtest: '<a>: Setting <non-spec:/>.pathname = ''//p'''
-    test: url-setters-a-area.window.html?exclude=(file|javascript|mailto)
-  - subtest: '<area>: Setting <non-spec:/>.pathname = ''//p'''
-    test: url-setters-a-area.window.html?exclude=(file|javascript|mailto)
-  - subtest: 'URL: Setting <non-spec:/>.pathname = ''/.//p'' Serialize /. in path'
-    test: url-setters.any.html?exclude=(file|javascript|mailto)
-  - subtest: 'URL: Setting <non-spec:/>.pathname = ''/..//p'''
-    test: url-setters.any.html?exclude=(file|javascript|mailto)
-  - subtest: 'URL: Setting <non-spec:/>.pathname = ''//p'''
-    test: url-setters.any.html?exclude=(file|javascript|mailto)
-  - subtest: 'URL: Setting <non-spec:/.//>.pathname = ''p'' Drop /. from path'
-    test: url-setters.any.html?exclude=(file|javascript|mailto)
-  - subtest: 'URL: Setting <non-spec:/.//>.pathname = ''p'' Drop /. from path'
-    test: url-setters.any.worker.html?exclude=(file|javascript|mailto)
-  - subtest: 'URL: Setting <non-spec:/>.pathname = ''//p'''
-    test: url-setters.any.worker.html?exclude=(file|javascript|mailto)
-  - subtest: 'URL: Setting <non-spec:/>.pathname = ''/..//p'''
-    test: url-setters.any.worker.html?exclude=(file|javascript|mailto)
-  - subtest: 'URL: Setting <non-spec:/>.pathname = ''/.//p'' Serialize /. in path'
-    test: url-setters.any.worker.html?exclude=(file|javascript|mailto)
-  - subtest: 'URL: Setting <non-spec:/.//p>.hostname = '''''
-    test: url-setters.any.worker.html?exclude=(file|javascript|mailto)
-  - subtest: 'URL: Setting <non-spec:/.//p>.hostname = ''h'' Drop /. from path'
-    test: url-setters.any.worker.html?exclude=(file|javascript|mailto)
-  - subtest: 'URL: Setting <non-spec:/.//p>.hostname = ''h'' Drop /. from path'
-    test: url-setters.any.html?exclude=(file|javascript|mailto)
-  - subtest: 'URL: Setting <non-spec:/.//p>.hostname = '''''
-    test: url-setters.any.html?exclude=(file|javascript|mailto)
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1874119
-- product: firefox
-  results:
-  - test: url-setters-stripping.any.html
-  - test: url-setters-stripping.any.worker.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1878724
-- product: firefox
-  results:
-  - subtest: 'URL''s constructor''s base argument: file://example:1/ should throw'
-    test: failure.html
-  - subtest: 'URL''s href: file://example:1/ should throw'
-    test: failure.html
-  - subtest: 'XHR: file://example:1/ should throw'
-    test: failure.html
-  - subtest: 'Location''s href: file://example:1/ should throw'
-    test: failure.html
-  - subtest: 'window.open(): file://example:1/ should throw'
-    test: failure.html
-  - subtest: 'URL''s constructor''s base argument: file://example:test/ should throw'
-    test: failure.html
-  - subtest: 'URL''s href: file://example:test/ should throw'
-    test: failure.html
-  - subtest: 'XHR: file://example:test/ should throw'
-    test: failure.html
-  - subtest: 'Location''s href: file://example:test/ should throw'
-    test: failure.html
-  - subtest: 'window.open(): file://example:test/ should throw'
-    test: failure.html
-  - subtest: 'URL''s constructor''s base argument: file://example%/ should throw'
-    test: failure.html
-  - subtest: 'URL''s href: file://example%/ should throw'
-    test: failure.html
-  - subtest: 'XHR: file://example%/ should throw'
-    test: failure.html
-  - subtest: 'Location''s href: file://example%/ should throw'
-    test: failure.html
-  - subtest: 'window.open(): file://example%/ should throw'
-    test: failure.html
-  - subtest: 'URL''s constructor''s base argument: file://[example]/ should throw'
-    test: failure.html
-  - subtest: 'URL''s href: file://[example]/ should throw'
-    test: failure.html
-  - subtest: 'XHR: file://[example]/ should throw'
-    test: failure.html
-  - subtest: 'Location''s href: file://[example]/ should throw'
-    test: failure.html
-  - subtest: 'window.open(): file://[example]/ should throw'
-    test: failure.html
-  - subtest: 'URL''s constructor''s base argument: file://%43%3A should throw'
-    test: failure.html
-  - subtest: 'URL''s href: file://%43%3A should throw'
-    test: failure.html
-  - subtest: 'XHR: file://%43%3A should throw'
-    test: failure.html
-  - subtest: 'Location''s href: file://%43%3A should throw'
-    test: failure.html
-  - subtest: 'window.open(): file://%43%3A should throw'
-    test: failure.html
-  - subtest: 'URL''s constructor''s base argument: file://%43%7C should throw'
-    test: failure.html
-  - subtest: 'URL''s href: file://%43%7C should throw'
-    test: failure.html
-  - subtest: 'XHR: file://%43%7C should throw'
-    test: failure.html
-  - subtest: 'Location''s href: file://%43%7C should throw'
-    test: failure.html
-  - subtest: 'window.open(): file://%43%7C should throw'
-    test: failure.html
-  - subtest: 'URL''s constructor''s base argument: file://%43| should throw'
-    test: failure.html
-  - subtest: 'URL''s href: file://%43| should throw'
-    test: failure.html
-  - subtest: 'XHR: file://%43| should throw'
-    test: failure.html
-  - subtest: 'Location''s href: file://%43| should throw'
-    test: failure.html
-  - subtest: 'window.open(): file://%43| should throw'
-    test: failure.html
-  - subtest: 'URL''s constructor''s base argument: file://C%7C should throw'
-    test: failure.html
-  - subtest: 'URL''s href: file://C%7C should throw'
-    test: failure.html
-  - subtest: 'XHR: file://C%7C should throw'
-    test: failure.html
-  - subtest: 'Location''s href: file://C%7C should throw'
-    test: failure.html
-  - subtest: 'window.open(): file://C%7C should throw'
-    test: failure.html
-  - subtest: 'URL''s constructor''s base argument: file://%43%7C/ should throw'
-    test: failure.html
-  - subtest: 'URL''s href: file://%43%7C/ should throw'
-    test: failure.html
-  - subtest: 'XHR: file://%43%7C/ should throw'
-    test: failure.html
-  - subtest: 'Location''s href: file://%43%7C/ should throw'
-    test: failure.html
-  - subtest: 'window.open(): file://%43%7C/ should throw'
-    test: failure.html
-  - subtest: "URL's constructor's base argument: file://\xAD/p should throw"
-    test: failure.html
-  - subtest: "URL's href: file://\xAD/p should throw"
-    test: failure.html
-  - subtest: "XHR: file://\xAD/p should throw"
-    test: failure.html
-  - subtest: "Location's href: file://\xAD/p should throw"
-    test: failure.html
-  - subtest: "window.open(): file://\xAD/p should throw"
-    test: failure.html
-  - subtest: 'URL''s constructor''s base argument: file://%C2%AD/p should throw'
-    test: failure.html
-  - subtest: 'URL''s href: file://%C2%AD/p should throw'
-    test: failure.html
-  - subtest: 'XHR: file://%C2%AD/p should throw'
-    test: failure.html
-  - subtest: 'Location''s href: file://%C2%AD/p should throw'
-    test: failure.html
-  - subtest: 'window.open(): file://%C2%AD/p should throw'
-    test: failure.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1880700
+    - product: webkitgtk
+      url: https://bugs.webkit.org/show_bug.cgi?id=207678
+      results:
+        - test: a-element-origin-xhtml.xhtml
+          status: FAIL
+        - test: a-element-origin.html
+          status: FAIL
+    - product: safari
+      url: https://bugs.webkit.org/show_bug.cgi?id=220778
+      results:
+        - test: url-origin.any.html
+          subtest: "Parsing: <sc://\x1F!\"$&'()*+,-.;=_`{|}~/> against <about:blank>"
+        - test: a-element-origin.html
+          subtest: "Parsing origin: <http://\x1F!\"$&'()*+,-.;=_`{|}~/> against <about:blank>"
+        - test: a-element-origin-xhtml.xhtml
+          subtest: "Parsing origin: <http://\x1F!\"$&'()*+,-.;=_`{|}~/> against <about:blank>"
+        - test: url-origin.any.worker.html
+          subtest: "Origin parsing: <http://\x1F!\"$&'()*+,-.;=_`{|}~/> against <about:blank>"
+    - product: chrome
+      url: https://crbug.com/694157
+      results:
+        - test: toascii.window.html
+    - product: deno
+      url: https://github.com/denoland/deno/issues/10996
+      results:
+        - test: idlharness.any.html
+          subtest: URL interface object length
+        - test: idlharness.any.html
+          subtest: 'URL interface: attribute href'
+        - test: idlharness.any.html
+          subtest: 'URL interface: stringifier'
+        - test: idlharness.any.html
+          subtest: 'URL interface: attribute protocol'
+        - test: idlharness.any.html
+          subtest: 'URL interface: attribute username'
+        - test: idlharness.any.html
+          subtest: 'URL interface: attribute origin'
+        - test: idlharness.any.html
+          subtest: 'URL interface: attribute password'
+        - test: idlharness.any.html
+          subtest: 'URL interface: attribute port'
+        - test: idlharness.any.html
+          subtest: 'URL interface: attribute pathname'
+        - test: idlharness.any.html
+          subtest: 'URL interface: attribute search'
+        - test: idlharness.any.html
+          subtest: 'URL interface: attribute searchParams'
+        - test: idlharness.any.html
+          subtest: 'URL interface: attribute hash'
+        - test: idlharness.any.html
+          subtest: 'URL interface: operation toJSON()'
+        - test: idlharness.any.html
+          subtest: 'URL interface: attribute host'
+        - test: idlharness.any.html
+          subtest: 'URL interface: attribute hostname'
+        - test: idlharness.any.html
+          subtest: Stringification of new URL("http://foo")
+        - test: idlharness.any.html
+          subtest: 'URLSearchParams interface: operation append(USVString, USVString)'
+        - test: idlharness.any.html
+          subtest: 'URLSearchParams interface: operation delete(USVString)'
+        - test: idlharness.any.html
+          subtest: 'URLSearchParams interface: operation get(USVString)'
+        - test: idlharness.any.html
+          subtest: 'URLSearchParams interface: operation getAll(USVString)'
+        - test: idlharness.any.html
+          subtest: 'URLSearchParams interface: operation has(USVString)'
+        - test: idlharness.any.html
+          subtest: 'URLSearchParams interface: operation set(USVString, USVString)'
+        - test: idlharness.any.html
+          subtest: 'URLSearchParams interface: iterable<USVString, USVString>'
+        - test: idlharness.any.html
+          subtest: 'URLSearchParams interface: operation sort()'
+        - test: idlharness.any.html
+          subtest: 'URLSearchParams interface: stringifier'
+        - test: idlharness.any.html
+          subtest: Stringification of new URLSearchParams("hi=there&thank=you")
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1722328
+      results:
+        - test: failure.html
+          status: CRASH
+    - label: interop-2022-webcompat
+      results:
+        - test: toascii.window.html
+    - label: interop-2023-url
+      results:
+        - test: a-element-origin-xhtml.xhtml
+        - test: a-element-origin.html
+        - test: a-element-xhtml.xhtml?exclude=(file|javascript|mailto)
+        - test: a-element.html?exclude=(file|javascript|mailto)
+        - test: data-uri-fragment.html
+        - test: failure.html
+        - test: historical.any.html
+        - test: historical.any.worker.html
+        - test: IdnaTestV2.window.html
+        - test: percent-encoding.window.html
+        - test: url-constructor.any.html?exclude=(file|javascript|mailto)
+        - test: url-constructor.any.worker.html?exclude=(file|javascript|mailto)
+        - test: url-origin.any.html
+        - test: url-origin.any.worker.html
+        - test: url-searchparams.any.html
+        - test: url-searchparams.any.worker.html
+        - test: url-setters-a-area.window.html?exclude=(file|javascript|mailto)
+        - test: url-setters-stripping.any.html
+        - test: url-setters-stripping.any.worker.html
+        - test: url-setters.any.html?exclude=(file|javascript|mailto)
+        - test: url-setters.any.worker.html?exclude=(file|javascript|mailto)
+        - test: url-tojson.any.html
+        - test: url-tojson.any.worker.html
+        - test: urlencoded-parser.any.html
+        - test: urlencoded-parser.any.worker.html
+    - product: chrome
+      url: https://bugs.chromium.org/p/chromium/issues/detail?id=1398117
+      results:
+        - test: a-element-origin.html
+          subtest: 'Parsing origin: <http://!"$&''()*+,-.;=_`{}~/> against <about:blank>'
+        - test: a-element-origin.html
+          subtest: 'Parsing origin: <wss://!"$&''()*+,-.;=_`{}~/> against <about:blank>'
+        - test: a-element-origin-xhtml.xhtml
+          subtest: 'Parsing origin: <http://!"$&''()*+,-.;=_`{}~/> against <about:blank>'
+        - test: a-element-origin-xhtml.xhtml
+          subtest: 'Parsing origin: <wss://!"$&''()*+,-.;=_`{}~/> against <about:blank>'
+    - product: chrome
+      url: https://bugs.chromium.org/p/chromium/issues/detail?id=1190810
+      results:
+        - test: failure.html
+          subtest: 'URL''s href: sc://a|b/ should throw'
+        - test: failure.html
+          subtest: 'XHR: sc://a|b/ should throw'
+        - test: failure.html
+          subtest: 'Location''s href: sc://a|b/ should throw'
+        - test: failure.html
+          subtest: 'window.open(): sc://a|b/ should throw'
+        - test: failure.html
+          subtest: 'URL''s constructor''s base argument: sc://a|b/ should throw'
+        - test: failure.html
+          subtest: 'URL''s constructor''s base argument: http://a|b/ should throw'
+        - test: failure.html
+          subtest: 'URL''s href: http://a|b/ should throw'
+        - test: failure.html
+          subtest: 'XHR: http://a|b/ should throw'
+        - test: failure.html
+          subtest: 'sendBeacon(): http://a|b/ should throw'
+        - test: failure.html
+          subtest: 'Location''s href: http://a|b/ should throw'
+        - test: failure.html
+          subtest: 'window.open(): http://a|b/ should throw'
+    - product: chrome
+      url: https://bugs.chromium.org/p/chromium/issues/detail?id=1400251
+      results:
+        - test: url-origin.any.html
+          subtest: 'Origin parsing: <http://example.com/foo%00%51> against <about:blank>'
+        - test: url-origin.any.worker.html
+          subtest: 'Origin parsing: <http://example.com/foo%00%51> against <about:blank>'
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1636761
+      results:
+        - test: historical.any.worker.html
+          subtest: 'URLSearchParams: no structured serialize/deserialize support'
+        - test: historical.any.html
+          subtest: 'URLSearchParams: no structured serialize/deserialize support'
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1674369
+      results:
+        - test: percent-encoding.window.html
+          subtest: Input − with encoding shift_jis
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1553105
+      results:
+        - test: url-origin.any.html
+          subtest: 'Origin parsing: <ssh://example.com/foo/bar.git> against <http://example.org/>'
+        - test: a-element-origin-xhtml.xhtml
+          subtest: 'Parsing origin: <ssh://example.com/foo/bar.git> against <http://example.org/>'
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1723456
+      results:
+        - test: url-origin.any.html
+          subtest: 'Origin parsing: <http://999999999.> against <http://other.com/>'
+        - test: a-element-origin-xhtml.xhtml
+          subtest: 'Parsing origin: <http://999999999.> against <http://other.com/>'
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1815914
+      results:
+        - test: url-origin.any.html
+          subtest: 'Origin parsing: <https://0x.0x.0> against <about:blank>'
+        - test: a-element-origin-xhtml.xhtml
+          subtest: 'Parsing origin: <https://0x.0x.0> against <about:blank>'
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1815925
+      results:
+        - test: url-origin.any.html
+          subtest: 'Origin parsing: <http::b@www.example.com> against <about:blank>'
+        - test: a-element-origin-xhtml.xhtml
+          subtest: 'Parsing origin: <http::b@www.example.com> against <about:blank>'
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1815926
+      results:
+        - test: url-origin.any.html
+          subtest: 'Origin parsing: <http://!"$&''()*+,-.;=_`{}~/> against <about:blank>'
+        - test: url-origin.any.html
+          subtest: 'Origin parsing: <wss://!"$&''()*+,-.;=_`{}~/> against <about:blank>'
+        - test: a-element-origin-xhtml.xhtml
+          subtest: 'Parsing origin: <http://!"$&''()*+,-.;=_`{}~/> against <about:blank>'
+        - test: a-element-origin-xhtml.xhtml
+          subtest: 'Parsing origin: <wss://!"$&''()*+,-.;=_`{}~/> against <about:blank>'
+        - test: url-origin.any.html
+          subtest: 'Origin parsing: <http://!"$&''()*+,-.;=_`{}~/> without base'
+        - test: url-origin.any.html
+          subtest: 'Origin parsing: <wss://!"$&''()*+,-.;=_`{}~/> without base'
+        - test: url-origin.any.worker.html
+          subtest: 'Origin parsing: <http://!"$&''()*+,-.;=_`{}~/> without base'
+        - test: url-origin.any.worker.html
+          subtest: 'Origin parsing: <wss://!"$&''()*+,-.;=_`{}~/> without base'
+        - test: a-element-origin.html
+          subtest: 'Parsing origin: <http://!"$&''()*+,-.;=_`{}~/> against <about:blank>'
+        - test: a-element-origin.html
+          subtest: 'Parsing origin: <wss://!"$&''()*+,-.;=_`{}~/> against <about:blank>'
+        - test: a-element-xhtml.xhtml?exclude=(file|javascript|mailto)
+          subtest: 'Parsing: <http://!"$&''()*+,-.;=_`{}~/> against <about:blank>'
+        - test: a-element.html?exclude=(file|javascript|mailto)
+          subtest: 'Parsing: <wss://!"$&''()*+,-.;=_`{}~/> against <about:blank>'
+        - test: url-constructor.any.html?exclude=(file|javascript|mailto)
+          subtest: 'Parsing: <http://!"$&''()*+,-.;=_`{}~/> without base'
+        - test: url-constructor.any.html?exclude=(file|javascript|mailto)
+          subtest: 'Parsing: <wss://!"$&''()*+,-.;=_`{}~/> without base'
+        - test: url-constructor.any.worker.html?exclude=(file|javascript|mailto)
+          subtest: 'Parsing: <wss://!"$&''()*+,-.;=_`{}~/> without base'
+        - test: url-constructor.any.worker.html?exclude=(file|javascript|mailto)
+          subtest: 'Parsing: <http://!"$&''()*+,-.;=_`{}~/> without base'
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1815932
+      results:
+        - test: urlsearchparams-delete.any.worker.html
+          subtest: Changing the query of a URL with an opaque path can impact the path
+        - test: urlsearchparams-delete.any.html
+          subtest: Changing the query of a URL with an opaque path can impact the path
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1845552
+      results:
+        - test: IdnaTestV2.window.html
+          subtest: ToASCII("ä.­.c") A4_2 (ignored)
+        - test: IdnaTestV2.window.html
+          subtest: ToASCII("ä.­.c") A4_2 (ignored)
+        - test: IdnaTestV2.window.html
+          subtest: ToASCII("Ä.­.C") A4_2 (ignored)
+        - test: IdnaTestV2.window.html
+          subtest: ToASCII("Ä.­.C") A4_2 (ignored)
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1848511
+      results:
+        - test: url-setters.any.html?include=javascript
+          subtest: 'URL: Setting <javascript://x/>.username = ''wario'''
+        - test: url-setters.any.html?include=javascript
+          subtest: 'URL: Setting <javascript://x/>.password = ''bowser'''
+        - test: url-setters.any.html?include=javascript
+          subtest: 'URL: Setting <javascript://x/>.port = ''12'''
+        - test: a-element-xhtml.xhtml?include=javascript
+          subtest: 'Parsing: <javascript:/../> against <about:blank>'
+        - test: a-element-xhtml.xhtml?include=javascript
+          subtest: 'Parsing: <javascript://example.com:8080/pathname?search#hash> against <about:blank>'
+        - test: a-element-xhtml.xhtml?include=javascript
+          subtest: 'Parsing: <javascript:///test> against <about:blank>'
+        - test: a-element-xhtml.xhtml?include=javascript
+          subtest: 'Parsing: <javascript://test/a/../b> against <about:blank>'
+        - test: a-element-xhtml.xhtml?include=javascript
+          subtest: 'Parsing: <javascript://:443> against <about:blank>'
+        - test: a-element-xhtml.xhtml?include=javascript
+          subtest: 'Parsing: <javascript://test:test> against <about:blank>'
+        - test: a-element-xhtml.xhtml?include=javascript
+          subtest: 'Parsing: <javascript://[:1]> against <about:blank>'
+        - test: url-setters-a-area.window.html?include=javascript
+          subtest: '<a>: Setting <javascript://x/>.username = ''wario'''
+        - test: url-setters-a-area.window.html?include=javascript
+          subtest: '<area>: Setting <javascript://x/>.username = ''wario'''
+        - test: url-setters-a-area.window.html?include=javascript
+          subtest: '<a>: Setting <javascript://x/>.password = ''bowser'''
+        - test: url-setters-a-area.window.html?include=javascript
+          subtest: '<area>: Setting <javascript://x/>.password = ''bowser'''
+        - test: url-setters-a-area.window.html?include=javascript
+          subtest: '<a>: Setting <javascript://x/>.port = ''12'''
+        - test: url-setters-a-area.window.html?include=javascript
+          subtest: '<area>: Setting <javascript://x/>.port = ''12'''
+        - test: a-element.html?include=javascript
+          subtest: 'Parsing: <javascript:/../> against <about:blank>'
+        - test: a-element.html?include=javascript
+          subtest: 'Parsing: <javascript://example.com:8080/pathname?search#hash> against <about:blank>'
+        - test: a-element.html?include=javascript
+          subtest: 'Parsing: <javascript:///test> against <about:blank>'
+        - test: a-element.html?include=javascript
+          subtest: 'Parsing: <javascript://test/a/../b> against <about:blank>'
+        - test: a-element.html?include=javascript
+          subtest: 'Parsing: <javascript://:443> against <about:blank>'
+        - test: a-element.html?include=javascript
+          subtest: 'Parsing: <javascript://test:test> against <about:blank>'
+        - test: a-element.html?include=javascript
+          subtest: 'Parsing: <javascript://[:1]> against <about:blank>'
+        - test: url-constructor.any.html?include=javascript
+          subtest: 'Parsing: <javascript:/../> without base'
+        - test: url-constructor.any.html?include=javascript
+          subtest: 'Parsing: <javascript://example.com:8080/pathname?search#hash> without base'
+        - test: url-constructor.any.html?include=javascript
+          subtest: 'Parsing: <javascript:///test> without base'
+        - test: url-constructor.any.html?include=javascript
+          subtest: 'Parsing: <javascript://test/a/../b> without base'
+        - test: url-constructor.any.html?include=javascript
+          subtest: 'Parsing: <javascript://:443> without base'
+        - test: url-constructor.any.html?include=javascript
+          subtest: 'Parsing: <javascript://test:test> without base'
+        - test: url-constructor.any.html?include=javascript
+          subtest: 'Parsing: <javascript://[:1]> without base'
+        - test: url-constructor.any.worker.html?include=javascript
+          subtest: 'Parsing: <javascript:/../> without base'
+        - test: url-constructor.any.worker.html?include=javascript
+          subtest: 'Parsing: <javascript://example.com:8080/pathname?search#hash> without base'
+        - test: url-constructor.any.worker.html?include=javascript
+          subtest: 'Parsing: <javascript:///test> without base'
+        - test: url-constructor.any.worker.html?include=javascript
+          subtest: 'Parsing: <javascript://test/a/../b> without base'
+        - test: url-constructor.any.worker.html?include=javascript
+          subtest: 'Parsing: <javascript://:443> without base'
+        - test: url-constructor.any.worker.html?include=javascript
+          subtest: 'Parsing: <javascript://test:test> without base'
+        - test: url-constructor.any.worker.html?include=javascript
+          subtest: 'Parsing: <javascript://[:1]> without base'
+        - test: url-setters.any.worker.html?include=javascript
+          subtest: 'URL: Setting <javascript://x/>.username = ''wario'''
+        - test: url-setters.any.worker.html?include=javascript
+          subtest: 'URL: Setting <javascript://x/>.password = ''bowser'''
+        - test: url-setters.any.worker.html?include=javascript
+          subtest: 'URL: Setting <javascript://x/>.port = ''12'''
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1507354
+      results:
+        - test: url-setters.any.worker.html?include=file
+          subtest: 'URL: Setting <file://hi/path>.protocol = ''s'''
+        - test: url-setters.any.worker.html?include=file
+          subtest: 'URL: Setting <file://test/>.username = ''test'''
+        - test: url-setters.any.worker.html?include=file
+          subtest: 'URL: Setting <file://test/>.password = ''test'''
+        - test: url-setters.any.worker.html?include=file
+          subtest: 'URL: Setting <file://y/>.host = ''x:123'''
+        - test: url-setters.any.worker.html?include=file
+          subtest: 'URL: Setting <file://y/>.hostname = ''x:123'''
+        - test: url-setters.any.worker.html?include=file
+          subtest: 'URL: Setting <file://test/>.port = ''12'''
+        - test: url-setters.any.worker.html?include=file
+          subtest: 'URL: Setting <file://monkey/>.pathname = ''\\'' File URLs and (back)slashes'
+        - test: url-setters.any.worker.html?include=file
+          subtest: 'URL: Setting <file:///unicorn>.pathname = ''//\/'' File URLs and (back)slashes'
+        - test: url-setters.any.html?include=file
+          subtest: 'URL: Setting <file://hi/path>.protocol = ''s'''
+        - test: url-setters.any.html?include=file
+          subtest: 'URL: Setting <file://test/>.username = ''test'''
+        - test: url-setters.any.html?include=file
+          subtest: 'URL: Setting <file://test/>.password = ''test'''
+        - test: url-setters.any.html?include=file
+          subtest: 'URL: Setting <file://y/>.host = ''x:123'''
+        - test: url-setters.any.html?include=file
+          subtest: 'URL: Setting <file://y/>.hostname = ''x:123'''
+        - test: url-setters.any.html?include=file
+          subtest: 'URL: Setting <file://test/>.port = ''12'''
+        - test: url-setters.any.html?include=file
+          subtest: 'URL: Setting <file://monkey/>.pathname = ''\\'' File URLs and (back)slashes'
+        - test: url-setters-a-area.window.html?include=file
+          subtest: '<a>: Setting <file://hi/path>.protocol = ''s'''
+        - test: url-setters-a-area.window.html?include=file
+          subtest: '<area>: Setting <file://hi/path>.protocol = ''s'''
+        - test: url-setters-a-area.window.html?include=file
+          subtest: '<a>: Setting <file://test/>.username = ''test'''
+        - test: url-setters-a-area.window.html?include=file
+          subtest: '<area>: Setting <file://test/>.username = ''test'''
+        - test: url-setters-a-area.window.html?include=file
+          subtest: '<a>: Setting <file://test/>.password = ''test'''
+        - test: url-setters-a-area.window.html?include=file
+          subtest: '<area>: Setting <file://test/>.password = ''test'''
+        - test: url-setters-a-area.window.html?include=file
+          subtest: '<a>: Setting <file://y/>.host = ''x:123'''
+        - test: url-setters-a-area.window.html?include=file
+          subtest: '<area>: Setting <file://y/>.host = ''x:123'''
+        - test: url-setters-a-area.window.html?include=file
+          subtest: '<a>: Setting <file://y/>.hostname = ''x:123'''
+        - test: url-setters-a-area.window.html?include=file
+          subtest: '<area>: Setting <file://y/>.hostname = ''x:123'''
+        - test: url-setters-a-area.window.html?include=file
+          subtest: '<a>: Setting <file://test/>.port = ''12'''
+        - test: url-setters-a-area.window.html?include=file
+          subtest: '<area>: Setting <file://test/>.port = ''12'''
+        - test: url-setters-a-area.window.html?include=file
+          subtest: '<a>: Setting <file://monkey/>.pathname = ''\\'' File URLs and (back)slashes'
+        - test: url-setters-a-area.window.html?include=file
+          subtest: '<area>: Setting <file://monkey/>.pathname = ''\\'' File URLs and (back)slashes'
+        - test: url-constructor.any.html?include=file
+          subtest: 'Parsing: <file://example:1/> without base'
+        - test: url-constructor.any.html?include=file
+          subtest: 'Parsing: <file://example:test/> without base'
+        - test: url-constructor.any.html?include=file
+          subtest: 'Parsing: <file://example%/> without base'
+        - test: url-constructor.any.html?include=file
+          subtest: 'Parsing: <file://[example]/> without base'
+        - test: url-constructor.any.html?include=file
+          subtest: 'Parsing: <//server/file> against <file:///tmp/mock/path>'
+        - test: url-constructor.any.html?include=file
+          subtest: 'Parsing: <\\server\file> against <file:///tmp/mock/path>'
+        - test: url-constructor.any.html?include=file
+          subtest: 'Parsing: </\server/file> against <file:///tmp/mock/path>'
+        - test: url-constructor.any.html?include=file
+          subtest: 'Parsing: <file://test> against <file:///tmp/mock/path>'
+        - test: url-constructor.any.html?include=file
+          subtest: 'Parsing: <file:..> against <http://www.example.com/test>'
+        - test: url-constructor.any.html?include=file
+          subtest: 'Parsing: <file://%43%3A> without base'
+        - test: url-constructor.any.html?include=file
+          subtest: 'Parsing: <file://%43%7C> without base'
+        - test: url-constructor.any.html?include=file
+          subtest: 'Parsing: <file://%43|> without base'
+        - test: url-constructor.any.html?include=file
+          subtest: 'Parsing: <file://C%7C> without base'
+        - test: url-constructor.any.html?include=file
+          subtest: 'Parsing: <file://%43%7C/> without base'
+        - test: url-constructor.any.html?include=file
+          subtest: 'Parsing: <file://spider///> without base'
+        - test: url-constructor.any.html?include=file
+          subtest: 'Parsing: </> against <file://h/a/b>'
+        - test: url-constructor.any.html?include=file
+          subtest: 'Parsing: </..//localhost//pig> against <file://lion/>'
+        - test: url-constructor.any.html?include=file
+          subtest: 'Parsing: </rooibos> against <file://tea/>'
+        - test: url-constructor.any.html?include=file
+          subtest: 'Parsing: </?chai> against <file://tea/>'
+        - test: url-constructor.any.html?include=file
+          subtest: 'Parsing: <C|> against <file://host/dir/file>'
+        - test: url-constructor.any.html?include=file
+          subtest: 'Parsing: <C|> against <file://host/D:/dir1/dir2/file>'
+        - test: url-constructor.any.html?include=file
+          subtest: 'Parsing: <C|#> against <file://host/dir/file>'
+        - test: url-constructor.any.html?include=file
+          subtest: 'Parsing: <C|?> against <file://host/dir/file>'
+        - test: url-constructor.any.html?include=file
+          subtest: 'Parsing: <C|/> against <file://host/dir/file>'
+        - test: url-constructor.any.html?include=file
+          subtest: |-
+            Parsing: <C|
+            /> against <file://host/dir/file>
+        - test: url-constructor.any.html?include=file
+          subtest: 'Parsing: <C|\> against <file://host/dir/file>'
+        - test: url-constructor.any.html?include=file
+          subtest: 'Parsing: <C> against <file://host/dir/file>'
+        - test: url-constructor.any.html?include=file
+          subtest: 'Parsing: <C|a> against <file://host/dir/file>'
+        - test: url-constructor.any.html?include=file
+          subtest: 'Parsing: </c:/foo/bar> against <file://host/path>'
+        - test: url-constructor.any.html?include=file
+          subtest: 'Parsing: <file://example.net/C:/> without base'
+        - test: url-constructor.any.html?include=file
+          subtest: 'Parsing: <file://1.2.3.4/C:/> without base'
+        - test: url-constructor.any.html?include=file
+          subtest: 'Parsing: <file://[1::8]/C:/> without base'
+        - test: url-constructor.any.html?include=file
+          subtest: 'Parsing: <C|/> against <file://host/>'
+        - test: url-constructor.any.html?include=file
+          subtest: 'Parsing: </C:/> against <file://host/>'
+        - test: url-constructor.any.html?include=file
+          subtest: 'Parsing: <file:C:/> against <file://host/>'
+        - test: url-constructor.any.html?include=file
+          subtest: 'Parsing: <file:/C:/> against <file://host/>'
+        - test: url-constructor.any.html?include=file
+          subtest: 'Parsing: <//one/two> against <file:///>'
+        - test: url-constructor.any.html?include=file
+          subtest: 'Parsing: <file://a­b/p> without base'
+        - test: url-constructor.any.html?include=file
+          subtest: 'Parsing: <file://a%C2%ADb/p> without base'
+        - test: url-constructor.any.html?include=file
+          subtest: 'Parsing: <file://%C2%AD/p> without base'
+        - test: url-constructor.any.html?include=file
+          subtest: 'Parsing: <//a/../> against <file:///>'
+        - test: url-constructor.any.html?include=file
+          subtest: 'Parsing: <file://­/p> without base'
+        - test: a-element-xhtml.xhtml?include=file
+          subtest: 'Parsing: <file://example:1/> against <about:blank>'
+        - test: a-element-xhtml.xhtml?include=file
+          subtest: 'Parsing: <file://example:test/> against <about:blank>'
+        - test: a-element-xhtml.xhtml?include=file
+          subtest: 'Parsing: <file://example%/> against <about:blank>'
+        - test: a-element-xhtml.xhtml?include=file
+          subtest: 'Parsing: <file://[example]/> against <about:blank>'
+        - test: a-element-xhtml.xhtml?include=file
+          subtest: 'Parsing: <//server/file> against <file:///tmp/mock/path>'
+        - test: a-element-xhtml.xhtml?include=file
+          subtest: 'Parsing: <\\server\file> against <file:///tmp/mock/path>'
+        - test: a-element-xhtml.xhtml?include=file
+          subtest: 'Parsing: </\server/file> against <file:///tmp/mock/path>'
+        - test: a-element-xhtml.xhtml?include=file
+          subtest: 'Parsing: <file://test> against <file:///tmp/mock/path>'
+        - test: a-element-xhtml.xhtml?include=file
+          subtest: 'Parsing: <file://%43%3A> against <about:blank>'
+        - test: a-element-xhtml.xhtml?include=file
+          subtest: 'Parsing: <file://%43%7C> against <about:blank>'
+        - test: a-element-xhtml.xhtml?include=file
+          subtest: 'Parsing: <file://%43|> against <about:blank>'
+        - test: a-element-xhtml.xhtml?include=file
+          subtest: 'Parsing: <file://C%7C> against <about:blank>'
+        - test: a-element-xhtml.xhtml?include=file
+          subtest: 'Parsing: <file://%43%7C/> against <about:blank>'
+        - test: a-element-xhtml.xhtml?include=file
+          subtest: 'Parsing: </> against <file://h/C:/a/b>'
+        - test: a-element-xhtml.xhtml?include=file
+          subtest: 'Parsing: </> against <file://h/a/b>'
+        - test: a-element-xhtml.xhtml?include=file
+          subtest: 'Parsing: <file://spider///> against <about:blank>'
+        - test: a-element-xhtml.xhtml?include=file
+          subtest: 'Parsing: </..//localhost//pig> against <file://lion/>'
+        - test: a-element-xhtml.xhtml?include=file
+          subtest: 'Parsing: </rooibos> against <file://tea/>'
+        - test: a-element-xhtml.xhtml?include=file
+          subtest: 'Parsing: </?chai> against <file://tea/>'
+        - test: a-element-xhtml.xhtml?include=file
+          subtest: 'Parsing: <C|> against <file://host/dir/file>'
+        - test: a-element-xhtml.xhtml?include=file
+          subtest: 'Parsing: <C|> against <file://host/D:/dir1/dir2/file>'
+        - test: a-element-xhtml.xhtml?include=file
+          subtest: 'Parsing: <C|#> against <file://host/dir/file>'
+        - test: a-element-xhtml.xhtml?include=file
+          subtest: 'Parsing: <C|?> against <file://host/dir/file>'
+        - test: a-element-xhtml.xhtml?include=file
+          subtest: 'Parsing: <C|/> against <file://host/dir/file>'
+        - test: a-element-xhtml.xhtml?include=file
+          subtest: |-
+            Parsing: <C|
+            /> against <file://host/dir/file>
+        - test: a-element-xhtml.xhtml?include=file
+          subtest: 'Parsing: <C|\> against <file://host/dir/file>'
+        - test: a-element-xhtml.xhtml?include=file
+          subtest: 'Parsing: <C> against <file://host/dir/file>'
+        - test: a-element-xhtml.xhtml?include=file
+          subtest: 'Parsing: <C|a> against <file://host/dir/file>'
+        - test: a-element-xhtml.xhtml?include=file
+          subtest: 'Parsing: </c:/foo/bar> against <file://host/path>'
+        - test: a-element-xhtml.xhtml?include=file
+          subtest: 'Parsing: <file://1.2.3.4/C:/> against <about:blank>'
+        - test: a-element-xhtml.xhtml?include=file
+          subtest: 'Parsing: <file://example.net/C:/> against <about:blank>'
+        - test: a-element-xhtml.xhtml?include=file
+          subtest: 'Parsing: <file://[1::8]/C:/> against <about:blank>'
+        - test: a-element-xhtml.xhtml?include=file
+          subtest: 'Parsing: <C|/> against <file://host/>'
+        - test: a-element-xhtml.xhtml?include=file
+          subtest: 'Parsing: </C:/> against <file://host/>'
+        - test: a-element-xhtml.xhtml?include=file
+          subtest: 'Parsing: <file:C:/> against <file://host/>'
+        - test: a-element-xhtml.xhtml?include=file
+          subtest: 'Parsing: <file:/C:/> against <file://host/>'
+        - test: a-element-xhtml.xhtml?include=file
+          subtest: 'Parsing: <//one/two> against <file:///>'
+        - test: a-element-xhtml.xhtml?include=file
+          subtest: 'Parsing: <file://a­b/p> against <about:blank>'
+        - test: a-element-xhtml.xhtml?include=file
+          subtest: 'Parsing: <file://a%C2%ADb/p> against <about:blank>'
+        - test: a-element-xhtml.xhtml?include=file
+          subtest: 'Parsing: <file://xn--/p> against <about:blank>'
+        - test: a-element-xhtml.xhtml?include=file
+          subtest: 'Parsing: <file://%C2%AD/p> against <about:blank>'
+        - test: a-element-xhtml.xhtml?include=file
+          subtest: 'Parsing: <//a/../> against <file:///>'
+        - test: a-element.html?include=file
+          subtest: 'Parsing: <file://example:1/> against <about:blank>'
+        - test: a-element.html?include=file
+          subtest: 'Parsing: <file://example:test/> against <about:blank>'
+        - test: a-element.html?include=file
+          subtest: 'Parsing: <file://example%/> against <about:blank>'
+        - test: a-element.html?include=file
+          subtest: 'Parsing: <file://[example]/> against <about:blank>'
+        - test: a-element.html?include=file
+          subtest: 'Parsing: <//server/file> against <file:///tmp/mock/path>'
+        - test: a-element.html?include=file
+          subtest: 'Parsing: <\\server\file> against <file:///tmp/mock/path>'
+        - test: a-element.html?include=file
+          subtest: 'Parsing: </\server/file> against <file:///tmp/mock/path>'
+        - test: a-element.html?include=file
+          subtest: 'Parsing: <file://test> against <file:///tmp/mock/path>'
+        - test: a-element.html?include=file
+          subtest: 'Parsing: <file://%43%3A> against <about:blank>'
+        - test: a-element.html?include=file
+          subtest: 'Parsing: <file://%43%7C> against <about:blank>'
+        - test: a-element.html?include=file
+          subtest: 'Parsing: <file://%43|> against <about:blank>'
+        - test: a-element.html?include=file
+          subtest: 'Parsing: <file://C%7C> against <about:blank>'
+        - test: a-element.html?include=file
+          subtest: 'Parsing: <file://%43%7C/> against <about:blank>'
+        - test: a-element.html?include=file
+          subtest: 'Parsing: </> against <file://h/C:/a/b>'
+        - test: a-element.html?include=file
+          subtest: 'Parsing: </> against <file://h/a/b>'
+        - test: a-element.html?include=file
+          subtest: 'Parsing: <file://spider///> against <about:blank>'
+        - test: a-element.html?include=file
+          subtest: 'Parsing: </..//localhost//pig> against <file://lion/>'
+        - test: a-element.html?include=file
+          subtest: 'Parsing: </?chai> against <file://tea/>'
+        - test: a-element.html?include=file
+          subtest: 'Parsing: </rooibos> against <file://tea/>'
+        - test: a-element.html?include=file
+          subtest: 'Parsing: <C|> against <file://host/dir/file>'
+        - test: a-element.html?include=file
+          subtest: 'Parsing: <C|> against <file://host/D:/dir1/dir2/file>'
+        - test: a-element.html?include=file
+          subtest: 'Parsing: <C|#> against <file://host/dir/file>'
+        - test: a-element.html?include=file
+          subtest: 'Parsing: <C|?> against <file://host/dir/file>'
+        - test: a-element.html?include=file
+          subtest: 'Parsing: <C|/> against <file://host/dir/file>'
+        - test: a-element.html?include=file
+          subtest: |-
+            Parsing: <C|
+            /> against <file://host/dir/file>
+        - test: a-element.html?include=file
+          subtest: 'Parsing: <C|\> against <file://host/dir/file>'
+        - test: a-element.html?include=file
+          subtest: 'Parsing: <C> against <file://host/dir/file>'
+        - test: a-element.html?include=file
+          subtest: 'Parsing: <C|a> against <file://host/dir/file>'
+        - test: a-element.html?include=file
+          subtest: 'Parsing: </c:/foo/bar> against <file://host/path>'
+        - test: a-element.html?include=file
+          subtest: 'Parsing: <file://example.net/C:/> against <about:blank>'
+        - test: a-element.html?include=file
+          subtest: 'Parsing: <file://1.2.3.4/C:/> against <about:blank>'
+        - test: a-element.html?include=file
+          subtest: 'Parsing: <file://[1::8]/C:/> against <about:blank>'
+        - test: a-element.html?include=file
+          subtest: 'Parsing: <C|/> against <file://host/>'
+        - test: a-element.html?include=file
+          subtest: 'Parsing: </C:/> against <file://host/>'
+        - test: a-element.html?include=file
+          subtest: 'Parsing: <file:C:/> against <file://host/>'
+        - test: a-element.html?include=file
+          subtest: 'Parsing: <file:/C:/> against <file://host/>'
+        - test: a-element.html?include=file
+          subtest: 'Parsing: <//one/two> against <file:///>'
+        - test: a-element.html?include=file
+          subtest: 'Parsing: <file://a­b/p> against <about:blank>'
+        - test: a-element.html?include=file
+          subtest: 'Parsing: <file://a%C2%ADb/p> against <about:blank>'
+        - test: a-element.html?include=file
+          subtest: 'Parsing: <file://­/p> against <about:blank>'
+        - test: a-element.html?include=file
+          subtest: 'Parsing: <file://%C2%AD/p> against <about:blank>'
+        - test: a-element.html?include=file
+          subtest: 'Parsing: <file://xn--/p> against <about:blank>'
+        - test: a-element.html?include=file
+          subtest: 'Parsing: <//a/../> against <file:///>'
+        - test: url-constructor.any.worker.html?include=file
+          subtest: 'Parsing: <file://example:1/> without base'
+        - test: url-constructor.any.worker.html?include=file
+          subtest: 'Parsing: <file://example:test/> without base'
+        - test: url-constructor.any.worker.html?include=file
+          subtest: 'Parsing: <file://example%/> without base'
+        - test: url-constructor.any.worker.html?include=file
+          subtest: 'Parsing: <file://[example]/> without base'
+        - test: url-constructor.any.worker.html?include=file
+          subtest: 'Parsing: <//server/file> against <file:///tmp/mock/path>'
+        - test: url-constructor.any.worker.html?include=file
+          subtest: 'Parsing: <\\server\file> against <file:///tmp/mock/path>'
+        - test: url-constructor.any.worker.html?include=file
+          subtest: 'Parsing: </\server/file> against <file:///tmp/mock/path>'
+        - test: url-constructor.any.worker.html?include=file
+          subtest: 'Parsing: <file://test> against <file:///tmp/mock/path>'
+        - test: url-constructor.any.worker.html?include=file
+          subtest: 'Parsing: <file://%43%7C> without base'
+        - test: url-constructor.any.worker.html?include=file
+          subtest: 'Parsing: <file://%43%3A> without base'
+        - test: url-constructor.any.worker.html?include=file
+          subtest: 'Parsing: <file://%43|> without base'
+        - test: url-constructor.any.worker.html?include=file
+          subtest: 'Parsing: <file://C%7C> without base'
+        - test: url-constructor.any.worker.html?include=file
+          subtest: 'Parsing: <file://%43%7C/> without base'
+        - test: url-constructor.any.worker.html?include=file
+          subtest: 'Parsing: </> against <file://h/a/b>'
+        - test: url-constructor.any.worker.html?include=file
+          subtest: 'Parsing: </> against <file://h/C:/a/b>'
+        - test: url-constructor.any.worker.html?include=file
+          subtest: 'Parsing: <file://spider///> without base'
+        - test: url-constructor.any.worker.html?include=file
+          subtest: 'Parsing: </..//localhost//pig> against <file://lion/>'
+        - test: url-constructor.any.worker.html?include=file
+          subtest: 'Parsing: </rooibos> against <file://tea/>'
+        - test: url-constructor.any.worker.html?include=file
+          subtest: 'Parsing: </?chai> against <file://tea/>'
+        - test: url-constructor.any.worker.html?include=file
+          subtest: 'Parsing: <C|> against <file://host/dir/file>'
+        - test: url-constructor.any.worker.html?include=file
+          subtest: 'Parsing: <C|> against <file://host/D:/dir1/dir2/file>'
+        - test: url-constructor.any.worker.html?include=file
+          subtest: 'Parsing: <C|#> against <file://host/dir/file>'
+        - test: url-constructor.any.worker.html?include=file
+          subtest: 'Parsing: <C|?> against <file://host/dir/file>'
+        - test: url-constructor.any.worker.html?include=file
+          subtest: 'Parsing: <C|/> against <file://host/dir/file>'
+        - test: url-constructor.any.worker.html?include=file
+          subtest: |-
+            Parsing: <C|
+            /> against <file://host/dir/file>
+        - test: url-constructor.any.worker.html?include=file
+          subtest: 'Parsing: <C|\> against <file://host/dir/file>'
+        - test: url-constructor.any.worker.html?include=file
+          subtest: 'Parsing: <C> against <file://host/dir/file>'
+        - test: url-constructor.any.worker.html?include=file
+          subtest: 'Parsing: <C|a> against <file://host/dir/file>'
+        - test: url-constructor.any.worker.html?include=file
+          subtest: 'Parsing: </c:/foo/bar> against <file://host/path>'
+        - test: url-constructor.any.worker.html?include=file
+          subtest: 'Parsing: <file://example.net/C:/> without base'
+        - test: url-constructor.any.worker.html?include=file
+          subtest: 'Parsing: <file://1.2.3.4/C:/> without base'
+        - test: url-constructor.any.worker.html?include=file
+          subtest: 'Parsing: <file://[1::8]/C:/> without base'
+        - test: url-constructor.any.worker.html?include=file
+          subtest: 'Parsing: <C|/> against <file://host/>'
+        - test: url-constructor.any.worker.html?include=file
+          subtest: 'Parsing: </C:/> against <file://host/>'
+        - test: url-constructor.any.worker.html?include=file
+          subtest: 'Parsing: <file:C:/> against <file://host/>'
+        - test: url-constructor.any.worker.html?include=file
+          subtest: 'Parsing: <file:/C:/> against <file://host/>'
+        - test: url-constructor.any.worker.html?include=file
+          subtest: 'Parsing: <//one/two> against <file:///>'
+        - test: url-constructor.any.worker.html?include=file
+          subtest: 'Parsing: <file://a­b/p> without base'
+        - test: url-constructor.any.worker.html?include=file
+          subtest: 'Parsing: <file://a%C2%ADb/p> without base'
+        - test: url-constructor.any.worker.html?include=file
+          subtest: 'Parsing: <file://­/p> without base'
+        - test: url-constructor.any.worker.html?include=file
+          subtest: 'Parsing: <file://%C2%AD/p> without base'
+        - test: url-constructor.any.worker.html?include=file
+          subtest: 'Parsing: <file://xn--/p> without base'
+        - test: url-constructor.any.worker.html?include=file
+          subtest: 'Parsing: <//a/../> against <file:///>'
+        - test: a-element-xhtml.xhtml?include=file
+          subtest: 'Parsing: <file://­/p> against <about:blank>'
+        - test: url-constructor.any.html?include=file
+          subtest: 'Parsing: </> against <file://h/C:/a/b>'
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1873906
+      results:
+        - test: url-setters.any.worker.html?exclude=(file|javascript|mailto)
+          subtest: 'URL: Setting <non-special://example.net:8080/path>.port = ''65536'' Port numbers are 16 bit integers, overflowing is an error'
+        - test: url-setters.any.html?exclude=(file|javascript|mailto)
+          subtest: 'URL: Setting <non-special://example.net:8080/path>.port = ''65536'' Port numbers are 16 bit integers, overflowing is an error'
+        - test: url-setters-a-area.window.html?exclude=(file|javascript|mailto)
+          subtest: '<a>: Setting <non-special://example.net:8080/path>.port = ''65536'' Port numbers are 16 bit integers, overflowing is an error'
+        - test: url-setters-a-area.window.html?exclude=(file|javascript|mailto)
+          subtest: '<area>: Setting <non-special://example.net:8080/path>.port = ''65536'' Port numbers are 16 bit integers, overflowing is an error'
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1834703
+      results:
+        - test: a-element-origin.html
+          subtest: 'Parsing origin: <blob:blob:https://example.org/> against <about:blank>'
+        - test: a-element-origin.html
+          subtest: 'Parsing origin: <blob:ftp://host/path> against <about:blank>'
+        - test: a-element-origin.html
+          subtest: 'Parsing origin: <blob:ws://example.org/> against <about:blank>'
+        - test: a-element-origin.html
+          subtest: 'Parsing origin: <blob:wss://example.org/> against <about:blank>'
+        - test: a-element-origin-xhtml.xhtml
+          subtest: 'Parsing origin: <blob:blob:https://example.org/> against <about:blank>'
+        - test: a-element-origin-xhtml.xhtml
+          subtest: 'Parsing origin: <blob:ftp://host/path> against <about:blank>'
+        - test: a-element-origin-xhtml.xhtml
+          subtest: 'Parsing origin: <blob:ws://example.org/> against <about:blank>'
+        - test: a-element-origin-xhtml.xhtml
+          subtest: 'Parsing origin: <blob:wss://example.org/> against <about:blank>'
+        - test: url-origin.any.worker.html
+          subtest: 'Origin parsing: <blob:blob:https://example.org/> without base'
+        - test: url-origin.any.worker.html
+          subtest: 'Origin parsing: <blob:ftp://host/path> without base'
+        - test: url-origin.any.worker.html
+          subtest: 'Origin parsing: <blob:ws://example.org/> without base'
+        - test: url-origin.any.worker.html
+          subtest: 'Origin parsing: <blob:wss://example.org/> without base'
+        - test: url-origin.any.html
+          subtest: 'Origin parsing: <blob:blob:https://example.org/> without base'
+        - test: url-origin.any.html
+          subtest: 'Origin parsing: <blob:ftp://host/path> without base'
+        - test: url-origin.any.html
+          subtest: 'Origin parsing: <blob:ws://example.org/> without base'
+        - test: url-origin.any.html
+          subtest: 'Origin parsing: <blob:wss://example.org/> without base'
+        - test: a-element-xhtml.xhtml?exclude=(file|javascript|mailto)
+          subtest: 'Parsing: <wss://!"$&''()*+,-.;=_`{}~/> against <about:blank>'
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1873915
+      results:
+        - test: a-element-xhtml.xhtml?exclude=(file|javascript|mailto)
+          subtest: 'Parsing: <http://example.com/foo/%2e> against <about:blank>'
+        - test: a-element.html?exclude=(file|javascript|mailto)
+          subtest: 'Parsing: <http://example.com/foo/%2e> against <about:blank>'
+        - test: url-constructor.any.html?exclude=(file|javascript|mailto)
+          subtest: 'Parsing: <http://example.com/foo/%2e> without base'
+        - test: url-constructor.any.worker.html?exclude=(file|javascript|mailto)
+          subtest: 'Parsing: <http://example.com/foo/%2e> without base'
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1873940
+      results:
+        - test: a-element-xhtml.xhtml?exclude=(file|javascript|mailto)
+          subtest: 'Parsing: <non-spec:/.//> against <about:blank>'
+        - test: a-element-xhtml.xhtml?exclude=(file|javascript|mailto)
+          subtest: 'Parsing: <non-spec:/..//> against <about:blank>'
+        - test: a-element-xhtml.xhtml?exclude=(file|javascript|mailto)
+          subtest: 'Parsing: <non-spec:/a/..//> against <about:blank>'
+        - test: a-element-xhtml.xhtml?exclude=(file|javascript|mailto)
+          subtest: 'Parsing: <non-spec:/.//path> against <about:blank>'
+        - test: a-element-xhtml.xhtml?exclude=(file|javascript|mailto)
+          subtest: 'Parsing: <non-spec:/..//path> against <about:blank>'
+        - test: a-element-xhtml.xhtml?exclude=(file|javascript|mailto)
+          subtest: 'Parsing: <non-spec:/a/..//path> against <about:blank>'
+        - test: a-element-xhtml.xhtml?exclude=(file|javascript|mailto)
+          subtest: 'Parsing: </.//path> against <non-spec:/p>'
+        - test: a-element-xhtml.xhtml?exclude=(file|javascript|mailto)
+          subtest: 'Parsing: </..//path> against <non-spec:/p>'
+        - test: a-element-xhtml.xhtml?exclude=(file|javascript|mailto)
+          subtest: 'Parsing: <..//path> against <non-spec:/p>'
+        - test: a-element-xhtml.xhtml?exclude=(file|javascript|mailto)
+          subtest: 'Parsing: <a/..//path> against <non-spec:/p>'
+        - test: a-element-xhtml.xhtml?exclude=(file|javascript|mailto)
+          subtest: 'Parsing: <> against <non-spec:/..//p>'
+        - test: a-element-xhtml.xhtml?exclude=(file|javascript|mailto)
+          subtest: 'Parsing: <path> against <non-spec:/..//p>'
+        - test: a-element.html?exclude=(file|javascript|mailto)
+          subtest: 'Parsing: <path> against <non-spec:/..//p>'
+        - test: a-element.html?exclude=(file|javascript|mailto)
+          subtest: 'Parsing: <> against <non-spec:/..//p>'
+        - test: a-element.html?exclude=(file|javascript|mailto)
+          subtest: 'Parsing: <a/..//path> against <non-spec:/p>'
+        - test: a-element.html?exclude=(file|javascript|mailto)
+          subtest: 'Parsing: <..//path> against <non-spec:/p>'
+        - test: a-element.html?exclude=(file|javascript|mailto)
+          subtest: 'Parsing: </..//path> against <non-spec:/p>'
+        - test: a-element.html?exclude=(file|javascript|mailto)
+          subtest: 'Parsing: </.//path> against <non-spec:/p>'
+        - test: a-element.html?exclude=(file|javascript|mailto)
+          subtest: 'Parsing: <non-spec:/a/..//path> against <about:blank>'
+        - test: a-element.html?exclude=(file|javascript|mailto)
+          subtest: 'Parsing: <non-spec:/..//path> against <about:blank>'
+        - test: a-element.html?exclude=(file|javascript|mailto)
+          subtest: 'Parsing: <non-spec:/.//path> against <about:blank>'
+        - test: a-element.html?exclude=(file|javascript|mailto)
+          subtest: 'Parsing: <non-spec:/a/..//> against <about:blank>'
+        - test: a-element.html?exclude=(file|javascript|mailto)
+          subtest: 'Parsing: <non-spec:/..//> against <about:blank>'
+        - test: a-element.html?exclude=(file|javascript|mailto)
+          subtest: 'Parsing: <non-spec:/.//> against <about:blank>'
+        - test: url-constructor.any.html?exclude=(file|javascript|mailto)
+          subtest: 'Parsing: <path> against <non-spec:/..//p>'
+        - test: url-constructor.any.html?exclude=(file|javascript|mailto)
+          subtest: 'Parsing: <> against <non-spec:/..//p>'
+        - test: url-constructor.any.html?exclude=(file|javascript|mailto)
+          subtest: 'Parsing: <a/..//path> against <non-spec:/p>'
+        - test: url-constructor.any.html?exclude=(file|javascript|mailto)
+          subtest: 'Parsing: <..//path> against <non-spec:/p>'
+        - test: url-constructor.any.html?exclude=(file|javascript|mailto)
+          subtest: 'Parsing: </..//path> against <non-spec:/p>'
+        - test: url-constructor.any.html?exclude=(file|javascript|mailto)
+          subtest: 'Parsing: </.//path> against <non-spec:/p>'
+        - test: url-constructor.any.html?exclude=(file|javascript|mailto)
+          subtest: 'Parsing: <non-spec:/a/..//path> without base'
+        - test: url-constructor.any.html?exclude=(file|javascript|mailto)
+          subtest: 'Parsing: <non-spec:/..//path> without base'
+        - test: url-constructor.any.html?exclude=(file|javascript|mailto)
+          subtest: 'Parsing: <non-spec:/.//path> without base'
+        - test: url-constructor.any.html?exclude=(file|javascript|mailto)
+          subtest: 'Parsing: <non-spec:/a/..//> without base'
+        - test: url-constructor.any.html?exclude=(file|javascript|mailto)
+          subtest: 'Parsing: <non-spec:/..//> without base'
+        - test: url-constructor.any.html?exclude=(file|javascript|mailto)
+          subtest: 'Parsing: <non-spec:/.//> without base'
+        - test: url-constructor.any.worker.html?exclude=(file|javascript|mailto)
+          subtest: 'Parsing: <non-spec:/.//> without base'
+        - test: url-constructor.any.worker.html?exclude=(file|javascript|mailto)
+          subtest: 'Parsing: <non-spec:/..//> without base'
+        - test: url-constructor.any.worker.html?exclude=(file|javascript|mailto)
+          subtest: 'Parsing: <non-spec:/a/..//> without base'
+        - test: url-constructor.any.worker.html?exclude=(file|javascript|mailto)
+          subtest: 'Parsing: <non-spec:/.//path> without base'
+        - test: url-constructor.any.worker.html?exclude=(file|javascript|mailto)
+          subtest: 'Parsing: <non-spec:/..//path> without base'
+        - test: url-constructor.any.worker.html?exclude=(file|javascript|mailto)
+          subtest: 'Parsing: <non-spec:/a/..//path> without base'
+        - test: url-constructor.any.worker.html?exclude=(file|javascript|mailto)
+          subtest: 'Parsing: </.//path> against <non-spec:/p>'
+        - test: url-constructor.any.worker.html?exclude=(file|javascript|mailto)
+          subtest: 'Parsing: </..//path> against <non-spec:/p>'
+        - test: url-constructor.any.worker.html?exclude=(file|javascript|mailto)
+          subtest: 'Parsing: <..//path> against <non-spec:/p>'
+        - test: url-constructor.any.worker.html?exclude=(file|javascript|mailto)
+          subtest: 'Parsing: <a/..//path> against <non-spec:/p>'
+        - test: url-constructor.any.worker.html?exclude=(file|javascript|mailto)
+          subtest: 'Parsing: <> against <non-spec:/..//p>'
+        - test: url-constructor.any.worker.html?exclude=(file|javascript|mailto)
+          subtest: 'Parsing: <path> against <non-spec:/..//p>'
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1873944
+      results:
+        - test: a-element-xhtml.xhtml?exclude=(file|javascript|mailto)
+          subtest: 'Parsing: <about:/../> against <about:blank>'
+        - test: a-element-xhtml.xhtml?exclude=(file|javascript|mailto)
+          subtest: 'Parsing: <data:/../> against <about:blank>'
+        - test: a-element-xhtml.xhtml?exclude=(file|javascript|mailto)
+          subtest: 'Parsing: <data://example.com:8080/pathname?search#hash> against <about:blank>'
+        - test: a-element-xhtml.xhtml?exclude=(file|javascript|mailto)
+          subtest: 'Parsing: <data:///test> against <about:blank>'
+        - test: a-element-xhtml.xhtml?exclude=(file|javascript|mailto)
+          subtest: 'Parsing: <data://test/a/../b> against <about:blank>'
+        - test: a-element.html?exclude=(file|javascript|mailto)
+          subtest: 'Parsing: <data://example.com:8080/pathname?search#hash> against <about:blank>'
+        - test: a-element.html?exclude=(file|javascript|mailto)
+          subtest: 'Parsing: <about:/../> against <about:blank>'
+        - test: a-element.html?exclude=(file|javascript|mailto)
+          subtest: 'Parsing: <data:/../> against <about:blank>'
+        - test: a-element.html?exclude=(file|javascript|mailto)
+          subtest: 'Parsing: <data:///test> against <about:blank>'
+        - test: a-element.html?exclude=(file|javascript|mailto)
+          subtest: 'Parsing: <data://test/a/../b> against <about:blank>'
+        - test: url-constructor.any.html?exclude=(file|javascript|mailto)
+          subtest: 'Parsing: <about:/../> without base'
+        - test: url-constructor.any.html?exclude=(file|javascript|mailto)
+          subtest: 'Parsing: <data:/../> without base'
+        - test: url-constructor.any.html?exclude=(file|javascript|mailto)
+          subtest: 'Parsing: <data:///test> without base'
+        - test: url-constructor.any.html?exclude=(file|javascript|mailto)
+          subtest: 'Parsing: <data://test/a/../b> without base'
+        - test: url-constructor.any.html?exclude=(file|javascript|mailto)
+          subtest: 'Parsing: <data://example.com:8080/pathname?search#hash> without base'
+        - test: url-constructor.any.worker.html?exclude=(file|javascript|mailto)
+          subtest: 'Parsing: <about:/../> without base'
+        - test: url-constructor.any.worker.html?exclude=(file|javascript|mailto)
+          subtest: 'Parsing: <data:/../> without base'
+        - test: url-constructor.any.worker.html?exclude=(file|javascript|mailto)
+          subtest: 'Parsing: <data://test/a/../b> without base'
+        - test: url-constructor.any.worker.html?exclude=(file|javascript|mailto)
+          subtest: 'Parsing: <data:///test> without base'
+        - test: url-constructor.any.worker.html?exclude=(file|javascript|mailto)
+          subtest: 'Parsing: <data://example.com:8080/pathname?search#hash> without base'
+        - test: url-setters-a-area.window.html?exclude=(file|javascript|mailto)
+          subtest: '<a>: Setting <data:/nospace>.pathname = ''space '' Non-special URLs with non-opaque paths percent-encode U+0020'
+        - test: url-setters-a-area.window.html?exclude=(file|javascript|mailto)
+          subtest: '<area>: Setting <data:/nospace>.pathname = ''space '' Non-special URLs with non-opaque paths percent-encode U+0020'
+        - test: url-setters.any.html?exclude=(file|javascript|mailto)
+          subtest: 'URL: Setting <data:/nospace>.pathname = ''space '' Non-special URLs with non-opaque paths percent-encode U+0020'
+        - test: url-setters.any.worker.html?exclude=(file|javascript|mailto)
+          subtest: 'URL: Setting <data:/nospace>.pathname = ''space '' Non-special URLs with non-opaque paths percent-encode U+0020'
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1873955
+      results:
+        - test: url-setters.any.html?exclude=(file|javascript|mailto)
+          subtest: 'URL: Setting <http://example.net/home?lang=fr#nav>.pathname = ''\a\%2E\b\%2e.\c'' \ is a segment delimiter for ''special'' URLs'
+        - test: url-setters-a-area.window.html?exclude=(file|javascript|mailto)
+          subtest: '<a>: Setting <http://example.net/home?lang=fr#nav>.pathname = ''\a\%2E\b\%2e.\c'' \ is a segment delimiter for ''special'' URLs'
+        - test: url-setters-a-area.window.html?exclude=(file|javascript|mailto)
+          subtest: '<area>: Setting <http://example.net/home?lang=fr#nav>.pathname = ''\a\%2E\b\%2e.\c'' \ is a segment delimiter for ''special'' URLs'
+        - test: url-setters-a-area.window.html?include=file
+          subtest: '<a>: Setting <file:///unicorn>.pathname = ''//\/'' File URLs and (back)slashes'
+        - test: url-setters-a-area.window.html?include=file
+          subtest: '<area>: Setting <file:///unicorn>.pathname = ''//\/'' File URLs and (back)slashes'
+        - test: url-setters.any.html?include=file
+          subtest: 'URL: Setting <file:///unicorn>.pathname = ''//\/'' File URLs and (back)slashes'
+        - test: url-setters.any.worker.html?exclude=(file|javascript|mailto)
+          subtest: 'URL: Setting <http://example.net/home?lang=fr#nav>.pathname = ''\a\%2E\b\%2e.\c'' \ is a segment delimiter for ''special'' URLs'
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1873973
+      results:
+        - test: a-element-xhtml.xhtml?exclude=(file|javascript|mailto)
+          subtest: 'Parsing: <wss://host/ !"$%&''()*+,-./:;<=>@[\]^_`{|}~> against <about:blank>'
+        - test: a-element.html?exclude=(file|javascript|mailto)
+          subtest: 'Parsing: <wss://host/ !"$%&''()*+,-./:;<=>@[\]^_`{|}~> against <about:blank>'
+        - test: url-constructor.any.html?exclude=(file|javascript|mailto)
+          subtest: 'Parsing: <wss://host/ !"$%&''()*+,-./:;<=>@[\]^_`{|}~> without base'
+        - test: url-constructor.any.worker.html?exclude=(file|javascript|mailto)
+          subtest: 'Parsing: <wss://host/ !"$%&''()*+,-./:;<=>@[\]^_`{|}~> without base'
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1873976
+      results:
+        - test: a-element-xhtml.xhtml?include=file
+          subtest: 'Parsing: <file:c:\foo\bar.html> against <file:///tmp/mock/path>'
+        - test: a-element-xhtml.xhtml?include=file
+          subtest: 'Parsing: <  File:c|////foo\bar.html> against <file:///tmp/mock/path>'
+        - test: a-element-xhtml.xhtml?include=file
+          subtest: 'Parsing: <C|/foo/bar> against <file:///tmp/mock/path>'
+        - test: a-element.html?include=file
+          subtest: 'Parsing: <file:c:\foo\bar.html> against <file:///tmp/mock/path>'
+        - test: a-element.html?include=file
+          subtest: 'Parsing: <  File:c|////foo\bar.html> against <file:///tmp/mock/path>'
+        - test: a-element.html?include=file
+          subtest: 'Parsing: <C|/foo/bar> against <file:///tmp/mock/path>'
+        - test: a-element.html?include=file
+          subtest: 'Parsing: <file:..> against <http://www.example.com/test>'
+        - test: a-element.html?include=file
+          subtest: 'Parsing: <..> against <file:///C:/>'
+        - test: a-element.html?include=file
+          subtest: 'Parsing: </> against <file:///C:/a/b>'
+        - test: url-constructor.any.html?include=file
+          subtest: 'Parsing: <file:c:\foo\bar.html> against <file:///tmp/mock/path>'
+        - test: url-constructor.any.html?include=file
+          subtest: 'Parsing: <  File:c|////foo\bar.html> against <file:///tmp/mock/path>'
+        - test: url-constructor.any.html?include=file
+          subtest: 'Parsing: <C|/foo/bar> against <file:///tmp/mock/path>'
+        - test: url-constructor.any.html?include=file
+          subtest: 'Parsing: <..> against <file:///C:/>'
+        - test: url-constructor.any.html?include=file
+          subtest: 'Parsing: </> against <file:///C:/a/b>'
+        - test: url-constructor.any.worker.html?include=file
+          subtest: 'Parsing: <file:c:\foo\bar.html> against <file:///tmp/mock/path>'
+        - test: url-constructor.any.worker.html?include=file
+          subtest: 'Parsing: <  File:c|////foo\bar.html> against <file:///tmp/mock/path>'
+        - test: url-constructor.any.worker.html?include=file
+          subtest: 'Parsing: <C|/foo/bar> against <file:///tmp/mock/path>'
+        - test: url-constructor.any.worker.html?include=file
+          subtest: 'Parsing: <file:..> against <http://www.example.com/test>'
+        - test: url-constructor.any.worker.html?include=file
+          subtest: 'Parsing: <..> against <file:///C:/>'
+        - test: url-constructor.any.worker.html?include=file
+          subtest: 'Parsing: </> against <file:///C:/a/b>'
+        - test: a-element-xhtml.xhtml?include=file
+          subtest: 'Parsing: <file:..> against <http://www.example.com/test>'
+        - test: a-element-xhtml.xhtml?include=file
+          subtest: 'Parsing: <..> against <file:///C:/>'
+        - test: a-element-xhtml.xhtml?include=file
+          subtest: 'Parsing: </> against <file:///C:/a/b>'
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1874117
+      results:
+        - test: url-setters-a-area.window.html?exclude=(file|javascript|mailto)
+          subtest: '<a>: Setting <foo://somehost/some/path>.pathname = '''' Non-special URLs can have their paths erased'
+        - test: url-setters-a-area.window.html?exclude=(file|javascript|mailto)
+          subtest: '<area>: Setting <foo://somehost/some/path>.pathname = '''' Non-special URLs can have their paths erased'
+        - test: url-setters-a-area.window.html?exclude=(file|javascript|mailto)
+          subtest: '<a>: Setting <foo:///some/path>.pathname = '''' Non-special URLs with an empty host can have their paths erased'
+        - test: url-setters-a-area.window.html?exclude=(file|javascript|mailto)
+          subtest: '<area>: Setting <foo:///some/path>.pathname = '''' Non-special URLs with an empty host can have their paths erased'
+        - test: url-setters.any.html?exclude=(file|javascript|mailto)
+          subtest: 'URL: Setting <foo://somehost/some/path>.pathname = '''' Non-special URLs can have their paths erased'
+        - test: url-setters.any.html?exclude=(file|javascript|mailto)
+          subtest: 'URL: Setting <foo:///some/path>.pathname = '''' Non-special URLs with an empty host can have their paths erased'
+        - test: url-setters.any.worker.html?exclude=(file|javascript|mailto)
+          subtest: 'URL: Setting <foo://somehost/some/path>.pathname = '''' Non-special URLs can have their paths erased'
+        - test: url-setters.any.worker.html?exclude=(file|javascript|mailto)
+          subtest: 'URL: Setting <foo:///some/path>.pathname = '''' Non-special URLs with an empty host can have their paths erased'
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1874118
+      results:
+        - test: url-setters-a-area.window.html?exclude=(file|javascript|mailto)
+          subtest: '<a>: Setting <data:space  ?query#fragment>.search = '''' Do not drop trailing spaces from non-trailing opaque paths'
+        - test: url-setters-a-area.window.html?exclude=(file|javascript|mailto)
+          subtest: '<area>: Setting <data:space  ?query#fragment>.search = '''' Do not drop trailing spaces from non-trailing opaque paths'
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1874119
+      results:
+        - test: url-setters-a-area.window.html?exclude=(file|javascript|mailto)
+          subtest: '<a>: Setting <non-spec:/>.pathname = ''/.//p'' Serialize /. in path'
+        - test: url-setters-a-area.window.html?exclude=(file|javascript|mailto)
+          subtest: '<area>: Setting <non-spec:/>.pathname = ''/.//p'' Serialize /. in path'
+        - test: url-setters-a-area.window.html?exclude=(file|javascript|mailto)
+          subtest: '<a>: Setting <non-spec:/>.pathname = ''/..//p'''
+        - test: url-setters-a-area.window.html?exclude=(file|javascript|mailto)
+          subtest: '<area>: Setting <non-spec:/>.pathname = ''/..//p'''
+        - test: url-setters-a-area.window.html?exclude=(file|javascript|mailto)
+          subtest: '<a>: Setting <non-spec:/>.pathname = ''//p'''
+        - test: url-setters-a-area.window.html?exclude=(file|javascript|mailto)
+          subtest: '<area>: Setting <non-spec:/>.pathname = ''//p'''
+        - test: url-setters.any.html?exclude=(file|javascript|mailto)
+          subtest: 'URL: Setting <non-spec:/>.pathname = ''/.//p'' Serialize /. in path'
+        - test: url-setters.any.html?exclude=(file|javascript|mailto)
+          subtest: 'URL: Setting <non-spec:/>.pathname = ''/..//p'''
+        - test: url-setters.any.html?exclude=(file|javascript|mailto)
+          subtest: 'URL: Setting <non-spec:/>.pathname = ''//p'''
+        - test: url-setters.any.html?exclude=(file|javascript|mailto)
+          subtest: 'URL: Setting <non-spec:/.//>.pathname = ''p'' Drop /. from path'
+        - test: url-setters.any.worker.html?exclude=(file|javascript|mailto)
+          subtest: 'URL: Setting <non-spec:/.//>.pathname = ''p'' Drop /. from path'
+        - test: url-setters.any.worker.html?exclude=(file|javascript|mailto)
+          subtest: 'URL: Setting <non-spec:/>.pathname = ''//p'''
+        - test: url-setters.any.worker.html?exclude=(file|javascript|mailto)
+          subtest: 'URL: Setting <non-spec:/>.pathname = ''/..//p'''
+        - test: url-setters.any.worker.html?exclude=(file|javascript|mailto)
+          subtest: 'URL: Setting <non-spec:/>.pathname = ''/.//p'' Serialize /. in path'
+        - test: url-setters.any.worker.html?exclude=(file|javascript|mailto)
+          subtest: 'URL: Setting <non-spec:/.//p>.hostname = '''''
+        - test: url-setters.any.worker.html?exclude=(file|javascript|mailto)
+          subtest: 'URL: Setting <non-spec:/.//p>.hostname = ''h'' Drop /. from path'
+        - test: url-setters.any.html?exclude=(file|javascript|mailto)
+          subtest: 'URL: Setting <non-spec:/.//p>.hostname = ''h'' Drop /. from path'
+        - test: url-setters.any.html?exclude=(file|javascript|mailto)
+          subtest: 'URL: Setting <non-spec:/.//p>.hostname = '''''
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1878724
+      results:
+        - test: url-setters-stripping.any.html
+        - test: url-setters-stripping.any.worker.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1880700
+      results:
+        - test: failure.html
+          subtest: 'URL''s constructor''s base argument: file://example:1/ should throw'
+        - test: failure.html
+          subtest: 'URL''s href: file://example:1/ should throw'
+        - test: failure.html
+          subtest: 'XHR: file://example:1/ should throw'
+        - test: failure.html
+          subtest: 'Location''s href: file://example:1/ should throw'
+        - test: failure.html
+          subtest: 'window.open(): file://example:1/ should throw'
+        - test: failure.html
+          subtest: 'URL''s constructor''s base argument: file://example:test/ should throw'
+        - test: failure.html
+          subtest: 'URL''s href: file://example:test/ should throw'
+        - test: failure.html
+          subtest: 'XHR: file://example:test/ should throw'
+        - test: failure.html
+          subtest: 'Location''s href: file://example:test/ should throw'
+        - test: failure.html
+          subtest: 'window.open(): file://example:test/ should throw'
+        - test: failure.html
+          subtest: 'URL''s constructor''s base argument: file://example%/ should throw'
+        - test: failure.html
+          subtest: 'URL''s href: file://example%/ should throw'
+        - test: failure.html
+          subtest: 'XHR: file://example%/ should throw'
+        - test: failure.html
+          subtest: 'Location''s href: file://example%/ should throw'
+        - test: failure.html
+          subtest: 'window.open(): file://example%/ should throw'
+        - test: failure.html
+          subtest: 'URL''s constructor''s base argument: file://[example]/ should throw'
+        - test: failure.html
+          subtest: 'URL''s href: file://[example]/ should throw'
+        - test: failure.html
+          subtest: 'XHR: file://[example]/ should throw'
+        - test: failure.html
+          subtest: 'Location''s href: file://[example]/ should throw'
+        - test: failure.html
+          subtest: 'window.open(): file://[example]/ should throw'
+        - test: failure.html
+          subtest: 'URL''s constructor''s base argument: file://%43%3A should throw'
+        - test: failure.html
+          subtest: 'URL''s href: file://%43%3A should throw'
+        - test: failure.html
+          subtest: 'XHR: file://%43%3A should throw'
+        - test: failure.html
+          subtest: 'Location''s href: file://%43%3A should throw'
+        - test: failure.html
+          subtest: 'window.open(): file://%43%3A should throw'
+        - test: failure.html
+          subtest: 'URL''s constructor''s base argument: file://%43%7C should throw'
+        - test: failure.html
+          subtest: 'URL''s href: file://%43%7C should throw'
+        - test: failure.html
+          subtest: 'XHR: file://%43%7C should throw'
+        - test: failure.html
+          subtest: 'Location''s href: file://%43%7C should throw'
+        - test: failure.html
+          subtest: 'window.open(): file://%43%7C should throw'
+        - test: failure.html
+          subtest: 'URL''s constructor''s base argument: file://%43| should throw'
+        - test: failure.html
+          subtest: 'URL''s href: file://%43| should throw'
+        - test: failure.html
+          subtest: 'XHR: file://%43| should throw'
+        - test: failure.html
+          subtest: 'Location''s href: file://%43| should throw'
+        - test: failure.html
+          subtest: 'window.open(): file://%43| should throw'
+        - test: failure.html
+          subtest: 'URL''s constructor''s base argument: file://C%7C should throw'
+        - test: failure.html
+          subtest: 'URL''s href: file://C%7C should throw'
+        - test: failure.html
+          subtest: 'XHR: file://C%7C should throw'
+        - test: failure.html
+          subtest: 'Location''s href: file://C%7C should throw'
+        - test: failure.html
+          subtest: 'window.open(): file://C%7C should throw'
+        - test: failure.html
+          subtest: 'URL''s constructor''s base argument: file://%43%7C/ should throw'
+        - test: failure.html
+          subtest: 'URL''s href: file://%43%7C/ should throw'
+        - test: failure.html
+          subtest: 'XHR: file://%43%7C/ should throw'
+        - test: failure.html
+          subtest: 'Location''s href: file://%43%7C/ should throw'
+        - test: failure.html
+          subtest: 'window.open(): file://%43%7C/ should throw'
+        - test: failure.html
+          subtest: 'URL''s constructor''s base argument: file://­/p should throw'
+        - test: failure.html
+          subtest: 'URL''s href: file://­/p should throw'
+        - test: failure.html
+          subtest: 'XHR: file://­/p should throw'
+        - test: failure.html
+          subtest: 'Location''s href: file://­/p should throw'
+        - test: failure.html
+          subtest: 'window.open(): file://­/p should throw'
+        - test: failure.html
+          subtest: 'URL''s constructor''s base argument: file://%C2%AD/p should throw'
+        - test: failure.html
+          subtest: 'URL''s href: file://%C2%AD/p should throw'
+        - test: failure.html
+          subtest: 'XHR: file://%C2%AD/p should throw'
+        - test: failure.html
+          subtest: 'Location''s href: file://%C2%AD/p should throw'
+        - test: failure.html
+          subtest: 'window.open(): file://%C2%AD/p should throw'
+    - product: chrome
+      url: https://crbug.com/40256677
+      results:
+        - test: a-element.html?exclude=(file|javascript|mailto)
+          subtest: 'Parsing: <http://example example.com> against <http://other.com/>'
+        - test: a-element.html?exclude=(file|javascript|mailto)
+          subtest: 'Parsing: <http://GOO 　goo.com> against <http://other.com/>'
