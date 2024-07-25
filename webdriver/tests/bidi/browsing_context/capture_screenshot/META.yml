@@ -6,8 +6,7 @@ links:
           subtest: test_clip_element
         - test: clip.py
           subtest: test_clip_viewport
-    - url: ""
-      label: chromium-bidi-2023
+    - label: chromium-bidi-2023
       results:
         - test: capture_screenshot.py
         - test: clip.py
@@ -29,3 +28,8 @@ links:
       results:
         - test: invalid.py
           subtest: test_closed_frame
+    - product: chrome
+      url: "355379067"
+      results:
+        - test: frame.py
+          subtest: test_iframe
