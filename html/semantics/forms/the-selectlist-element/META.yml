@@ -1,107 +1,88 @@
 links:
-- product: firefox
-  results:
-  - test: selectlist-marker-slot.tentative.html
-  - test: selectlist-selected-value-slot.tentative.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1845237
-- product: firefox
-  results:
-  - subtest: Test restoring state after form submission
-    test: selectlist-form-state-restore.tentative.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1759048
-- product: firefox
-  results:
-  - subtest: A nested button part in a nested <selectmenu> shouldn't get controller
-      code even if it comes first in document order
-    test: selectlist-nested.tentative.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1723835
-- product: firefox
-  results:
-  - test: selectlist-option-arbitrary-content-not-displayed.tentative.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1703439
-- product: firefox
-  results:
-  - subtest: The popup should be bottom left positioned
-    test: selectlist-many-options.tentative.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1749545
-- product: firefox
-  results:
-  - subtest: Check that tabindex applies to <selectmenu>
-    test: selectlist-tabindex-order.tentative.html
-  - subtest: Check that <selectmenu> occupies just one slot in tab navigation.
-    test: selectlist-tab-navigation.tentative.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1832996
-- product: firefox
-  results:
-  - subtest: Opening the popover and clicking an option should change the selectlist's
-      value
-    test: selectlist-popover.tentative.html
-  - subtest: 'With custom button and popover: opening the popover and clicking an
-      option should change the selectlist''s value'
-    test: selectlist-popover.tentative.html
-  - subtest: Clicking a popover with no listbox part does nothing
-    test: selectlist-popover.tentative.html
-  - subtest: Clicking a popover with a listbox that was removed does nothing
-    test: selectlist-popover.tentative.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1850596
-- product: firefox
-  results:
-  - test: selectlist-explicit-size.tentative.html
-  - test: selectlist-rtl.tentative.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1851477
-- product: firefox
-  results:
-  - subtest: A <selectlist> shouldn't apply controller code to parts nested in a <selectlist>
-      child
-    test: selectlist-nested.tentative.html
-  - subtest: A <selectlist> shouldn't apply controller code to parts nested in a <select>
-      child
-    test: selectlist-nested.tentative.html
-  - subtest: A nested button part in a nested <selectlist> shouldn't get controller
-      code even if it comes first in document order
-    test: selectlist-nested.tentative.html
-  - subtest: HTMLOptionElements (and not other element types) should receive option
-      controller code
-    test: selectlist-parts-structure.tentative.html
-  - subtest: To receive option part controller code, an option must be a descendant
-      of the listbox part in a flat tree traversal
-    test: selectlist-parts-structure.tentative.html
-  - subtest: To receive listbox part controller code, an element labeled as a listbox
-      must not be a descendant of the button part in a flat tree traversal
-    test: selectlist-parts-structure.tentative.html
-  - subtest: Listbox controller code should be applied in flat tree traversal order
-      regardless of dynamic insertion order
-    test: selectlist-parts-structure.tentative.html
-  - subtest: selected-value controller code should be applied in flat tree traversal
-      order regardless of dynamic insertion order
-    test: selectlist-parts-structure.tentative.html
-  - subtest: Ensure that option controller code is updated when listbox changes
-    test: selectlist-parts-structure.tentative.html
-  - subtest: Ensure that controller code is applied when slot and part attributes
-      are different
-    test: selectlist-parts-structure.tentative.html
-  - subtest: Moving a selectlist between documents should keep controller code active
-    test: selectlist-parts-structure.tentative.html
-  - subtest: New parts should be detected even when in the subtree of an inserted
-      node
-    test: selectlist-parts-structure.tentative.html
-  - subtest: Part removals should be detected even when in the subtree of a removed
-      node
-    test: selectlist-parts-structure.tentative.html
-  - subtest: The popover should be bottom left positioned
-    test: selectlist-popover-position-with-zoom.tentative.html
-  - subtest: The popover should be top left positioned
-    test: selectlist-popover-position-with-zoom.tentative.html
-  - subtest: The popover should be bottom right positioned
-    test: selectlist-popover-position-with-zoom.tentative.html
-  - subtest: The popover should be top right positioned
-    test: selectlist-popover-position-with-zoom.tentative.html
-  - subtest: Selectlist should support :open and :closed pseudo selectors.
-    test: selectlist-pseudo-open-closed.tentative.html
-  - subtest: Selectlist :open and :closed should invalidate correctly.
-    test: selectlist-pseudo-open-closed.tentative.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1858243
-- product: firefox
-  results:
-  - test: selectlist-option-label-rendering.tentative.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1865546
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1845237
+      results:
+        - test: selectlist-marker-slot.tentative.html
+        - test: selectlist-selected-value-slot.tentative.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1723835
+      results:
+        - test: selectlist-nested.tentative.html
+          subtest: A nested button part in a nested <selectmenu> shouldn't get controller code even if it comes first in document order
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1703439
+      results:
+        - test: selectlist-option-arbitrary-content-not-displayed.tentative.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1749545
+      results:
+        - test: selectlist-many-options.tentative.html
+          subtest: The popup should be bottom left positioned
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1832996
+      results:
+        - test: selectlist-tabindex-order.tentative.html
+          subtest: Check that tabindex applies to <selectmenu>
+        - test: selectlist-tab-navigation.tentative.html
+          subtest: Check that <selectmenu> occupies just one slot in tab navigation.
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1850596
+      results:
+        - test: selectlist-popover.tentative.html
+          subtest: Opening the popover and clicking an option should change the selectlist's value
+        - test: selectlist-popover.tentative.html
+          subtest: 'With custom button and popover: opening the popover and clicking an option should change the selectlist''s value'
+        - test: selectlist-popover.tentative.html
+          subtest: Clicking a popover with no listbox part does nothing
+        - test: selectlist-popover.tentative.html
+          subtest: Clicking a popover with a listbox that was removed does nothing
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1851477
+      results:
+        - test: selectlist-explicit-size.tentative.html
+        - test: selectlist-rtl.tentative.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1858243
+      results:
+        - test: selectlist-nested.tentative.html
+          subtest: A <selectlist> shouldn't apply controller code to parts nested in a <selectlist> child
+        - test: selectlist-nested.tentative.html
+          subtest: A <selectlist> shouldn't apply controller code to parts nested in a <select> child
+        - test: selectlist-nested.tentative.html
+          subtest: A nested button part in a nested <selectlist> shouldn't get controller code even if it comes first in document order
+        - test: selectlist-parts-structure.tentative.html
+          subtest: HTMLOptionElements (and not other element types) should receive option controller code
+        - test: selectlist-parts-structure.tentative.html
+          subtest: To receive option part controller code, an option must be a descendant of the listbox part in a flat tree traversal
+        - test: selectlist-parts-structure.tentative.html
+          subtest: To receive listbox part controller code, an element labeled as a listbox must not be a descendant of the button part in a flat tree traversal
+        - test: selectlist-parts-structure.tentative.html
+          subtest: Listbox controller code should be applied in flat tree traversal order regardless of dynamic insertion order
+        - test: selectlist-parts-structure.tentative.html
+          subtest: selected-value controller code should be applied in flat tree traversal order regardless of dynamic insertion order
+        - test: selectlist-parts-structure.tentative.html
+          subtest: Ensure that option controller code is updated when listbox changes
+        - test: selectlist-parts-structure.tentative.html
+          subtest: Ensure that controller code is applied when slot and part attributes are different
+        - test: selectlist-parts-structure.tentative.html
+          subtest: Moving a selectlist between documents should keep controller code active
+        - test: selectlist-parts-structure.tentative.html
+          subtest: New parts should be detected even when in the subtree of an inserted node
+        - test: selectlist-parts-structure.tentative.html
+          subtest: Part removals should be detected even when in the subtree of a removed node
+        - test: selectlist-popover-position-with-zoom.tentative.html
+          subtest: The popover should be bottom left positioned
+        - test: selectlist-popover-position-with-zoom.tentative.html
+          subtest: The popover should be top left positioned
+        - test: selectlist-popover-position-with-zoom.tentative.html
+          subtest: The popover should be bottom right positioned
+        - test: selectlist-popover-position-with-zoom.tentative.html
+          subtest: The popover should be top right positioned
+        - test: selectlist-pseudo-open-closed.tentative.html
+          subtest: Selectlist should support :open and :closed pseudo selectors.
+        - test: selectlist-pseudo-open-closed.tentative.html
+          subtest: Selectlist :open and :closed should invalidate correctly.
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1865546
+      results:
+        - test: selectlist-option-label-rendering.tentative.html
