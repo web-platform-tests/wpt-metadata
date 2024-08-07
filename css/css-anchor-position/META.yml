@@ -4245,3 +4245,706 @@ links:
       (1.5) should be [--foo]'
     test: property-interpolations.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1906329
+- product: firefox
+  results:
+  - subtest: 'place-self: normal is allowed in @position-try'
+    test: at-position-try-allowed-declarations.html
+  - subtest: 'position-anchor: --anchor is allowed in @position-try'
+    test: at-position-try-allowed-declarations.html
+  - subtest: 'justify-content: normal is disallowed in @position-try'
+    test: at-position-try-allowed-declarations.html
+  - subtest: 'align-content: normal is disallowed in @position-try'
+    test: at-position-try-allowed-declarations.html
+  - subtest: 'justify-items: normal is disallowed in @position-try'
+    test: at-position-try-allowed-declarations.html
+  - subtest: 'align-items: normal is disallowed in @position-try'
+    test: at-position-try-allowed-declarations.html
+  - subtest: 'top: revert is allowed in @position-try'
+    test: at-position-try-allowed-declarations.html
+  - subtest: 'top: revert-layer is allowed in @position-try'
+    test: at-position-try-allowed-declarations.html
+  - subtest: 'inset: revert is allowed in @position-try'
+    test: at-position-try-allowed-declarations.html
+  - subtest: 'inset: revert-layer is allowed in @position-try'
+    test: at-position-try-allowed-declarations.html
+  - subtest: CSSPositionTryRule.style.setProperty setting allowed and disallowed properties
+    test: at-position-try-cssom.html
+  - subtest: --right | --right
+    test: position-try-order-position-area.html
+  - subtest: --left | --left
+    test: position-try-order-position-area.html
+  - subtest: --top | --top
+    test: position-try-order-position-area.html
+  - subtest: --bottom | --bottom
+    test: position-try-order-position-area.html
+  - subtest: --right, --left, --bottom, --top | --right
+    test: position-try-order-position-area.html
+  - subtest: normal --right, --left, --bottom, --top | --right
+    test: position-try-order-position-area.html
+  - subtest: normal --top, --left, --bottom, --right | --top
+    test: position-try-order-position-area.html
+  - subtest: most-block-size --right, --left | --right
+    test: position-try-order-position-area.html
+  - subtest: most-height --right, --left | --right
+    test: position-try-order-position-area.html
+  - subtest: most-inline-size --right, --left | --left
+    test: position-try-order-position-area.html
+  - subtest: most-width --right, --left | --left
+    test: position-try-order-position-area.html
+  - subtest: most-inline-size --bottom, --top | --bottom
+    test: position-try-order-position-area.html
+  - subtest: most-width --bottom, --top | --bottom
+    test: position-try-order-position-area.html
+  - subtest: most-block-size --bottom, --top | --top
+    test: position-try-order-position-area.html
+  - subtest: most-height --bottom, --top | --top
+    test: position-try-order-position-area.html
+  - subtest: most-inline-size --right, --left, --bottom, --top | --bottom
+    test: position-try-order-position-area.html
+  - subtest: most-inline-size --right, --left, --top, --bottom | --top
+    test: position-try-order-position-area.html
+  - subtest: most-block-size --bottom, --top, --right, --left | --right
+    test: position-try-order-position-area.html
+  - subtest: most-block-size --bottom, --top, --left, --right | --left
+    test: position-try-order-position-area.html
+  - subtest: most-inline-size --left-sweep, --bottom-sweep | --left-sweep
+    test: position-try-order-position-area.html
+  - subtest: most-inline-size --bottom-sweep, --left-sweep | --bottom-sweep
+    test: position-try-order-position-area.html
+  - subtest: most-block-size --left-sweep, --bottom-sweep | --left-sweep
+    test: position-try-order-position-area.html
+  - subtest: most-block-size --bottom-sweep, --left-sweep | --left-sweep
+    test: position-try-order-position-area.html
+  - subtest: most-inline-size --right-sweep, --left-sweep, --bottom-sweep, --top-sweep
+      | --left-sweep
+    test: position-try-order-position-area.html
+  - subtest: most-block-size --right-sweep, --left-sweep, --bottom-sweep, --top-sweep
+      | --top-sweep
+    test: position-try-order-position-area.html
+  - subtest: "most-inline-size\n  --right-sweep, --left-sweep, --bottom-sweep, --top-sweep,\n\
+      \  --right, --left, --bottom, --top\n   | --left-sweep"
+    test: position-try-order-position-area.html
+  - subtest: "most-block-size\n  --right-sweep, --left-sweep, --bottom-sweep, --top-sweep,\n\
+      \  --right, --left, --bottom, --top\n   | --right"
+    test: position-try-order-position-area.html
+  - subtest: 'CSS Transitions with transition-behavior:allow-discrete: property <position-try-fallbacks>
+      from [none] to [--foo] at (0.5) should be [--foo]'
+    test: property-interpolations.html
+  - subtest: 'CSS Transitions with transition-behavior:allow-discrete: property <position-try-fallbacks>
+      from [none] to [--foo] at (0.6) should be [--foo]'
+    test: property-interpolations.html
+  - subtest: 'CSS Transitions with transition-behavior:allow-discrete: property <position-try-fallbacks>
+      from [none] to [--foo] at (1) should be [--foo]'
+    test: property-interpolations.html
+  - subtest: 'CSS Transitions with transition-behavior:allow-discrete: property <position-try-fallbacks>
+      from [none] to [--foo] at (1.5) should be [--foo]'
+    test: property-interpolations.html
+  - subtest: 'CSS Transitions with transition-property:all and transition-behavor:allow-discrete:
+      property <position-try-fallbacks> from [none] to [--foo] at (0.5) should be
+      [--foo]'
+    test: property-interpolations.html
+  - subtest: 'CSS Transitions with transition-property:all and transition-behavor:allow-discrete:
+      property <position-try-fallbacks> from [none] to [--foo] at (0.6) should be
+      [--foo]'
+    test: property-interpolations.html
+  - subtest: 'CSS Transitions with transition-property:all and transition-behavor:allow-discrete:
+      property <position-try-fallbacks> from [none] to [--foo] at (1) should be [--foo]'
+    test: property-interpolations.html
+  - subtest: 'CSS Transitions with transition-property:all and transition-behavor:allow-discrete:
+      property <position-try-fallbacks> from [none] to [--foo] at (1.5) should be
+      [--foo]'
+    test: property-interpolations.html
+  - subtest: 'CSS Transitions: property <position-try-fallbacks> from [none] to [--foo]
+      at (-0.3) should be [--foo]'
+    test: property-interpolations.html
+  - subtest: 'CSS Transitions: property <position-try-fallbacks> from [none] to [--foo]
+      at (0) should be [--foo]'
+    test: property-interpolations.html
+  - subtest: 'CSS Transitions: property <position-try-fallbacks> from [none] to [--foo]
+      at (0.3) should be [--foo]'
+    test: property-interpolations.html
+  - subtest: 'CSS Transitions: property <position-try-fallbacks> from [none] to [--foo]
+      at (0.5) should be [--foo]'
+    test: property-interpolations.html
+  - subtest: 'CSS Transitions: property <position-try-fallbacks> from [none] to [--foo]
+      at (0.6) should be [--foo]'
+    test: property-interpolations.html
+  - subtest: 'CSS Transitions: property <position-try-fallbacks> from [none] to [--foo]
+      at (1) should be [--foo]'
+    test: property-interpolations.html
+  - subtest: 'CSS Transitions: property <position-try-fallbacks> from [none] to [--foo]
+      at (1.5) should be [--foo]'
+    test: property-interpolations.html
+  - subtest: 'CSS Transitions with transition: all: property <position-try-fallbacks>
+      from [none] to [--foo] at (-0.3) should be [--foo]'
+    test: property-interpolations.html
+  - subtest: 'CSS Transitions with transition: all: property <position-try-fallbacks>
+      from [none] to [--foo] at (0) should be [--foo]'
+    test: property-interpolations.html
+  - subtest: 'CSS Transitions with transition: all: property <position-try-fallbacks>
+      from [none] to [--foo] at (0.3) should be [--foo]'
+    test: property-interpolations.html
+  - subtest: 'CSS Transitions with transition: all: property <position-try-fallbacks>
+      from [none] to [--foo] at (0.5) should be [--foo]'
+    test: property-interpolations.html
+  - subtest: 'CSS Transitions with transition: all: property <position-try-fallbacks>
+      from [none] to [--foo] at (0.6) should be [--foo]'
+    test: property-interpolations.html
+  - subtest: 'CSS Transitions with transition: all: property <position-try-fallbacks>
+      from [none] to [--foo] at (1) should be [--foo]'
+    test: property-interpolations.html
+  - subtest: 'CSS Transitions with transition: all: property <position-try-fallbacks>
+      from [none] to [--foo] at (1.5) should be [--foo]'
+    test: property-interpolations.html
+  - subtest: 'CSS Animations: property <position-try-fallbacks> from [none] to [--foo]
+      at (-0.3) should be [none]'
+    test: property-interpolations.html
+  - subtest: 'CSS Animations: property <position-try-fallbacks> from [none] to [--foo]
+      at (0) should be [none]'
+    test: property-interpolations.html
+  - subtest: 'CSS Animations: property <position-try-fallbacks> from [none] to [--foo]
+      at (0.3) should be [none]'
+    test: property-interpolations.html
+  - subtest: 'CSS Animations: property <position-try-fallbacks> from [none] to [--foo]
+      at (0.5) should be [--foo]'
+    test: property-interpolations.html
+  - subtest: 'CSS Animations: property <position-try-fallbacks> from [none] to [--foo]
+      at (0.6) should be [--foo]'
+    test: property-interpolations.html
+  - subtest: 'CSS Animations: property <position-try-fallbacks> from [none] to [--foo]
+      at (1) should be [--foo]'
+    test: property-interpolations.html
+  - subtest: 'CSS Animations: property <position-try-fallbacks> from [none] to [--foo]
+      at (1.5) should be [--foo]'
+    test: property-interpolations.html
+  - subtest: 'Web Animations: property <position-try-fallbacks> from [none] to [--foo]
+      at (-0.3) should be [none]'
+    test: property-interpolations.html
+  - subtest: 'Web Animations: property <position-try-fallbacks> from [none] to [--foo]
+      at (0) should be [none]'
+    test: property-interpolations.html
+  - subtest: 'Web Animations: property <position-try-fallbacks> from [none] to [--foo]
+      at (0.3) should be [none]'
+    test: property-interpolations.html
+  - subtest: 'Web Animations: property <position-try-fallbacks> from [none] to [--foo]
+      at (0.5) should be [--foo]'
+    test: property-interpolations.html
+  - subtest: 'Web Animations: property <position-try-fallbacks> from [none] to [--foo]
+      at (0.6) should be [--foo]'
+    test: property-interpolations.html
+  - subtest: 'Web Animations: property <position-try-fallbacks> from [none] to [--foo]
+      at (1) should be [--foo]'
+    test: property-interpolations.html
+  - subtest: 'Web Animations: property <position-try-fallbacks> from [none] to [--foo]
+      at (1.5) should be [--foo]'
+    test: property-interpolations.html
+  - subtest: 'CSS Transitions with transition-behavior:allow-discrete: property <position-try-fallbacks>
+      from [none] to [flip-block] at (0.5) should be [flip-block]'
+    test: property-interpolations.html
+  - subtest: 'CSS Transitions with transition-behavior:allow-discrete: property <position-try-fallbacks>
+      from [none] to [flip-block] at (0.6) should be [flip-block]'
+    test: property-interpolations.html
+  - subtest: 'CSS Transitions with transition-behavior:allow-discrete: property <position-try-fallbacks>
+      from [none] to [flip-block] at (1) should be [flip-block]'
+    test: property-interpolations.html
+  - subtest: 'CSS Transitions with transition-behavior:allow-discrete: property <position-try-fallbacks>
+      from [none] to [flip-block] at (1.5) should be [flip-block]'
+    test: property-interpolations.html
+  - subtest: 'CSS Transitions with transition-property:all and transition-behavor:allow-discrete:
+      property <position-try-fallbacks> from [none] to [flip-block] at (0.5) should
+      be [flip-block]'
+    test: property-interpolations.html
+  - subtest: 'CSS Transitions with transition-property:all and transition-behavor:allow-discrete:
+      property <position-try-fallbacks> from [none] to [flip-block] at (0.6) should
+      be [flip-block]'
+    test: property-interpolations.html
+  - subtest: 'CSS Transitions with transition-property:all and transition-behavor:allow-discrete:
+      property <position-try-fallbacks> from [none] to [flip-block] at (1) should
+      be [flip-block]'
+    test: property-interpolations.html
+  - subtest: 'CSS Transitions with transition-property:all and transition-behavor:allow-discrete:
+      property <position-try-fallbacks> from [none] to [flip-block] at (1.5) should
+      be [flip-block]'
+    test: property-interpolations.html
+  - subtest: 'CSS Transitions: property <position-try-fallbacks> from [none] to [flip-block]
+      at (-0.3) should be [flip-block]'
+    test: property-interpolations.html
+  - subtest: 'CSS Transitions: property <position-try-fallbacks> from [none] to [flip-block]
+      at (0) should be [flip-block]'
+    test: property-interpolations.html
+  - subtest: 'CSS Transitions: property <position-try-fallbacks> from [none] to [flip-block]
+      at (0.3) should be [flip-block]'
+    test: property-interpolations.html
+  - subtest: 'CSS Transitions: property <position-try-fallbacks> from [none] to [flip-block]
+      at (0.5) should be [flip-block]'
+    test: property-interpolations.html
+  - subtest: 'CSS Transitions: property <position-try-fallbacks> from [none] to [flip-block]
+      at (0.6) should be [flip-block]'
+    test: property-interpolations.html
+  - subtest: 'CSS Transitions: property <position-try-fallbacks> from [none] to [flip-block]
+      at (1) should be [flip-block]'
+    test: property-interpolations.html
+  - subtest: 'CSS Transitions: property <position-try-fallbacks> from [none] to [flip-block]
+      at (1.5) should be [flip-block]'
+    test: property-interpolations.html
+  - subtest: 'CSS Transitions with transition: all: property <position-try-fallbacks>
+      from [none] to [flip-block] at (-0.3) should be [flip-block]'
+    test: property-interpolations.html
+  - subtest: 'CSS Transitions with transition: all: property <position-try-fallbacks>
+      from [none] to [flip-block] at (0) should be [flip-block]'
+    test: property-interpolations.html
+  - subtest: 'CSS Transitions with transition: all: property <position-try-fallbacks>
+      from [none] to [flip-block] at (0.3) should be [flip-block]'
+    test: property-interpolations.html
+  - subtest: 'CSS Transitions with transition: all: property <position-try-fallbacks>
+      from [none] to [flip-block] at (0.5) should be [flip-block]'
+    test: property-interpolations.html
+  - subtest: 'CSS Transitions with transition: all: property <position-try-fallbacks>
+      from [none] to [flip-block] at (0.6) should be [flip-block]'
+    test: property-interpolations.html
+  - subtest: 'CSS Transitions with transition: all: property <position-try-fallbacks>
+      from [none] to [flip-block] at (1) should be [flip-block]'
+    test: property-interpolations.html
+  - subtest: 'CSS Transitions with transition: all: property <position-try-fallbacks>
+      from [none] to [flip-block] at (1.5) should be [flip-block]'
+    test: property-interpolations.html
+  - subtest: 'CSS Animations: property <position-try-fallbacks> from [none] to [flip-block]
+      at (-0.3) should be [none]'
+    test: property-interpolations.html
+  - subtest: 'CSS Animations: property <position-try-fallbacks> from [none] to [flip-block]
+      at (0) should be [none]'
+    test: property-interpolations.html
+  - subtest: 'CSS Animations: property <position-try-fallbacks> from [none] to [flip-block]
+      at (0.3) should be [none]'
+    test: property-interpolations.html
+  - subtest: 'CSS Animations: property <position-try-fallbacks> from [none] to [flip-block]
+      at (0.5) should be [flip-block]'
+    test: property-interpolations.html
+  - subtest: 'CSS Animations: property <position-try-fallbacks> from [none] to [flip-block]
+      at (0.6) should be [flip-block]'
+    test: property-interpolations.html
+  - subtest: 'CSS Animations: property <position-try-fallbacks> from [none] to [flip-block]
+      at (1) should be [flip-block]'
+    test: property-interpolations.html
+  - subtest: 'CSS Animations: property <position-try-fallbacks> from [none] to [flip-block]
+      at (1.5) should be [flip-block]'
+    test: property-interpolations.html
+  - subtest: 'Web Animations: property <position-try-fallbacks> from [none] to [flip-block]
+      at (-0.3) should be [none]'
+    test: property-interpolations.html
+  - subtest: 'Web Animations: property <position-try-fallbacks> from [none] to [flip-block]
+      at (0) should be [none]'
+    test: property-interpolations.html
+  - subtest: 'Web Animations: property <position-try-fallbacks> from [none] to [flip-block]
+      at (0.3) should be [none]'
+    test: property-interpolations.html
+  - subtest: 'Web Animations: property <position-try-fallbacks> from [none] to [flip-block]
+      at (0.5) should be [flip-block]'
+    test: property-interpolations.html
+  - subtest: 'Web Animations: property <position-try-fallbacks> from [none] to [flip-block]
+      at (0.6) should be [flip-block]'
+    test: property-interpolations.html
+  - subtest: 'Web Animations: property <position-try-fallbacks> from [none] to [flip-block]
+      at (1) should be [flip-block]'
+    test: property-interpolations.html
+  - subtest: 'Web Animations: property <position-try-fallbacks> from [none] to [flip-block]
+      at (1.5) should be [flip-block]'
+    test: property-interpolations.html
+  - subtest: 'CSS Transitions with transition-behavior:allow-discrete: property <position-try-fallbacks>
+      from [flip-inline] to [flip-block] at (-0.3) should be [flip-inline]'
+    test: property-interpolations.html
+  - subtest: 'CSS Transitions with transition-behavior:allow-discrete: property <position-try-fallbacks>
+      from [flip-inline] to [flip-block] at (0) should be [flip-inline]'
+    test: property-interpolations.html
+  - subtest: 'CSS Transitions with transition-behavior:allow-discrete: property <position-try-fallbacks>
+      from [flip-inline] to [flip-block] at (0.3) should be [flip-inline]'
+    test: property-interpolations.html
+  - subtest: 'CSS Transitions with transition-behavior:allow-discrete: property <position-try-fallbacks>
+      from [flip-inline] to [flip-block] at (0.5) should be [flip-block]'
+    test: property-interpolations.html
+  - subtest: 'CSS Transitions with transition-behavior:allow-discrete: property <position-try-fallbacks>
+      from [flip-inline] to [flip-block] at (0.6) should be [flip-block]'
+    test: property-interpolations.html
+  - subtest: 'CSS Transitions with transition-behavior:allow-discrete: property <position-try-fallbacks>
+      from [flip-inline] to [flip-block] at (1) should be [flip-block]'
+    test: property-interpolations.html
+  - subtest: 'CSS Transitions with transition-behavior:allow-discrete: property <position-try-fallbacks>
+      from [flip-inline] to [flip-block] at (1.5) should be [flip-block]'
+    test: property-interpolations.html
+  - subtest: 'CSS Transitions with transition-property:all and transition-behavor:allow-discrete:
+      property <position-try-fallbacks> from [flip-inline] to [flip-block] at (-0.3)
+      should be [flip-inline]'
+    test: property-interpolations.html
+  - subtest: 'CSS Transitions with transition-property:all and transition-behavor:allow-discrete:
+      property <position-try-fallbacks> from [flip-inline] to [flip-block] at (0)
+      should be [flip-inline]'
+    test: property-interpolations.html
+  - subtest: 'CSS Transitions with transition-property:all and transition-behavor:allow-discrete:
+      property <position-try-fallbacks> from [flip-inline] to [flip-block] at (0.3)
+      should be [flip-inline]'
+    test: property-interpolations.html
+  - subtest: 'CSS Transitions with transition-property:all and transition-behavor:allow-discrete:
+      property <position-try-fallbacks> from [flip-inline] to [flip-block] at (0.5)
+      should be [flip-block]'
+    test: property-interpolations.html
+  - subtest: 'CSS Transitions with transition-property:all and transition-behavor:allow-discrete:
+      property <position-try-fallbacks> from [flip-inline] to [flip-block] at (0.6)
+      should be [flip-block]'
+    test: property-interpolations.html
+  - subtest: 'CSS Transitions with transition-property:all and transition-behavor:allow-discrete:
+      property <position-try-fallbacks> from [flip-inline] to [flip-block] at (1)
+      should be [flip-block]'
+    test: property-interpolations.html
+  - subtest: 'CSS Transitions with transition-property:all and transition-behavor:allow-discrete:
+      property <position-try-fallbacks> from [flip-inline] to [flip-block] at (1.5)
+      should be [flip-block]'
+    test: property-interpolations.html
+  - subtest: 'CSS Transitions: property <position-try-fallbacks> from [flip-inline]
+      to [flip-block] at (-0.3) should be [flip-block]'
+    test: property-interpolations.html
+  - subtest: 'CSS Transitions: property <position-try-fallbacks> from [flip-inline]
+      to [flip-block] at (0) should be [flip-block]'
+    test: property-interpolations.html
+  - subtest: 'CSS Transitions: property <position-try-fallbacks> from [flip-inline]
+      to [flip-block] at (0.3) should be [flip-block]'
+    test: property-interpolations.html
+  - subtest: 'CSS Transitions: property <position-try-fallbacks> from [flip-inline]
+      to [flip-block] at (0.5) should be [flip-block]'
+    test: property-interpolations.html
+  - subtest: 'CSS Transitions: property <position-try-fallbacks> from [flip-inline]
+      to [flip-block] at (0.6) should be [flip-block]'
+    test: property-interpolations.html
+  - subtest: 'CSS Transitions: property <position-try-fallbacks> from [flip-inline]
+      to [flip-block] at (1) should be [flip-block]'
+    test: property-interpolations.html
+  - subtest: 'CSS Transitions: property <position-try-fallbacks> from [flip-inline]
+      to [flip-block] at (1.5) should be [flip-block]'
+    test: property-interpolations.html
+  - subtest: 'CSS Transitions with transition: all: property <position-try-fallbacks>
+      from [flip-inline] to [flip-block] at (-0.3) should be [flip-block]'
+    test: property-interpolations.html
+  - subtest: 'CSS Transitions with transition: all: property <position-try-fallbacks>
+      from [flip-inline] to [flip-block] at (0) should be [flip-block]'
+    test: property-interpolations.html
+  - subtest: 'CSS Transitions with transition: all: property <position-try-fallbacks>
+      from [flip-inline] to [flip-block] at (0.3) should be [flip-block]'
+    test: property-interpolations.html
+  - subtest: 'CSS Transitions with transition: all: property <position-try-fallbacks>
+      from [flip-inline] to [flip-block] at (0.5) should be [flip-block]'
+    test: property-interpolations.html
+  - subtest: 'CSS Transitions with transition: all: property <position-try-fallbacks>
+      from [flip-inline] to [flip-block] at (0.6) should be [flip-block]'
+    test: property-interpolations.html
+  - subtest: 'CSS Transitions with transition: all: property <position-try-fallbacks>
+      from [flip-inline] to [flip-block] at (1) should be [flip-block]'
+    test: property-interpolations.html
+  - subtest: 'CSS Transitions with transition: all: property <position-try-fallbacks>
+      from [flip-inline] to [flip-block] at (1.5) should be [flip-block]'
+    test: property-interpolations.html
+  - subtest: 'CSS Animations: property <position-try-fallbacks> from [flip-inline]
+      to [flip-block] at (-0.3) should be [flip-inline]'
+    test: property-interpolations.html
+  - subtest: 'CSS Animations: property <position-try-fallbacks> from [flip-inline]
+      to [flip-block] at (0) should be [flip-inline]'
+    test: property-interpolations.html
+  - subtest: 'CSS Animations: property <position-try-fallbacks> from [flip-inline]
+      to [flip-block] at (0.3) should be [flip-inline]'
+    test: property-interpolations.html
+  - subtest: 'CSS Animations: property <position-try-fallbacks> from [flip-inline]
+      to [flip-block] at (0.5) should be [flip-block]'
+    test: property-interpolations.html
+  - subtest: 'CSS Animations: property <position-try-fallbacks> from [flip-inline]
+      to [flip-block] at (0.6) should be [flip-block]'
+    test: property-interpolations.html
+  - subtest: 'CSS Animations: property <position-try-fallbacks> from [flip-inline]
+      to [flip-block] at (1) should be [flip-block]'
+    test: property-interpolations.html
+  - subtest: 'CSS Animations: property <position-try-fallbacks> from [flip-inline]
+      to [flip-block] at (1.5) should be [flip-block]'
+    test: property-interpolations.html
+  - subtest: 'Web Animations: property <position-try-fallbacks> from [flip-inline]
+      to [flip-block] at (-0.3) should be [flip-inline]'
+    test: property-interpolations.html
+  - subtest: 'Web Animations: property <position-try-fallbacks> from [flip-inline]
+      to [flip-block] at (0) should be [flip-inline]'
+    test: property-interpolations.html
+  - subtest: 'Web Animations: property <position-try-fallbacks> from [flip-inline]
+      to [flip-block] at (0.3) should be [flip-inline]'
+    test: property-interpolations.html
+  - subtest: 'Web Animations: property <position-try-fallbacks> from [flip-inline]
+      to [flip-block] at (0.5) should be [flip-block]'
+    test: property-interpolations.html
+  - subtest: 'Web Animations: property <position-try-fallbacks> from [flip-inline]
+      to [flip-block] at (0.6) should be [flip-block]'
+    test: property-interpolations.html
+  - subtest: 'Web Animations: property <position-try-fallbacks> from [flip-inline]
+      to [flip-block] at (1) should be [flip-block]'
+    test: property-interpolations.html
+  - subtest: 'Web Animations: property <position-try-fallbacks> from [flip-inline]
+      to [flip-block] at (1.5) should be [flip-block]'
+    test: property-interpolations.html
+  - subtest: 'CSS Transitions with transition-behavior:allow-discrete: property <position-try-fallbacks>
+      from [--foo] to [--bar] at (-0.3) should be [--foo]'
+    test: property-interpolations.html
+  - subtest: 'CSS Transitions with transition-behavior:allow-discrete: property <position-try-fallbacks>
+      from [--foo] to [--bar] at (0) should be [--foo]'
+    test: property-interpolations.html
+  - subtest: 'CSS Transitions with transition-behavior:allow-discrete: property <position-try-fallbacks>
+      from [--foo] to [--bar] at (0.3) should be [--foo]'
+    test: property-interpolations.html
+  - subtest: 'CSS Transitions with transition-behavior:allow-discrete: property <position-try-fallbacks>
+      from [--foo] to [--bar] at (0.5) should be [--bar]'
+    test: property-interpolations.html
+  - subtest: 'CSS Transitions with transition-behavior:allow-discrete: property <position-try-fallbacks>
+      from [--foo] to [--bar] at (0.6) should be [--bar]'
+    test: property-interpolations.html
+  - subtest: 'CSS Transitions with transition-behavior:allow-discrete: property <position-try-fallbacks>
+      from [--foo] to [--bar] at (1) should be [--bar]'
+    test: property-interpolations.html
+  - subtest: 'CSS Transitions with transition-behavior:allow-discrete: property <position-try-fallbacks>
+      from [--foo] to [--bar] at (1.5) should be [--bar]'
+    test: property-interpolations.html
+  - subtest: 'CSS Transitions with transition-property:all and transition-behavor:allow-discrete:
+      property <position-try-fallbacks> from [--foo] to [--bar] at (-0.3) should be
+      [--foo]'
+    test: property-interpolations.html
+  - subtest: 'CSS Transitions with transition-property:all and transition-behavor:allow-discrete:
+      property <position-try-fallbacks> from [--foo] to [--bar] at (0) should be [--foo]'
+    test: property-interpolations.html
+  - subtest: 'CSS Transitions with transition-property:all and transition-behavor:allow-discrete:
+      property <position-try-fallbacks> from [--foo] to [--bar] at (0.3) should be
+      [--foo]'
+    test: property-interpolations.html
+  - subtest: 'CSS Transitions with transition-property:all and transition-behavor:allow-discrete:
+      property <position-try-fallbacks> from [--foo] to [--bar] at (0.5) should be
+      [--bar]'
+    test: property-interpolations.html
+  - subtest: 'CSS Transitions with transition-property:all and transition-behavor:allow-discrete:
+      property <position-try-fallbacks> from [--foo] to [--bar] at (0.6) should be
+      [--bar]'
+    test: property-interpolations.html
+  - subtest: 'CSS Transitions with transition-property:all and transition-behavor:allow-discrete:
+      property <position-try-fallbacks> from [--foo] to [--bar] at (1) should be [--bar]'
+    test: property-interpolations.html
+  - subtest: 'CSS Transitions with transition-property:all and transition-behavor:allow-discrete:
+      property <position-try-fallbacks> from [--foo] to [--bar] at (1.5) should be
+      [--bar]'
+    test: property-interpolations.html
+  - subtest: 'CSS Transitions: property <position-try-fallbacks> from [--foo] to [--bar]
+      at (-0.3) should be [--bar]'
+    test: property-interpolations.html
+  - subtest: 'CSS Transitions: property <position-try-fallbacks> from [--foo] to [--bar]
+      at (0) should be [--bar]'
+    test: property-interpolations.html
+  - subtest: 'CSS Transitions: property <position-try-fallbacks> from [--foo] to [--bar]
+      at (0.3) should be [--bar]'
+    test: property-interpolations.html
+  - subtest: 'CSS Transitions: property <position-try-fallbacks> from [--foo] to [--bar]
+      at (0.5) should be [--bar]'
+    test: property-interpolations.html
+  - subtest: 'CSS Transitions: property <position-try-fallbacks> from [--foo] to [--bar]
+      at (0.6) should be [--bar]'
+    test: property-interpolations.html
+  - subtest: 'CSS Transitions: property <position-try-fallbacks> from [--foo] to [--bar]
+      at (1) should be [--bar]'
+    test: property-interpolations.html
+  - subtest: 'CSS Transitions: property <position-try-fallbacks> from [--foo] to [--bar]
+      at (1.5) should be [--bar]'
+    test: property-interpolations.html
+  - subtest: 'CSS Transitions with transition: all: property <position-try-fallbacks>
+      from [--foo] to [--bar] at (-0.3) should be [--bar]'
+    test: property-interpolations.html
+  - subtest: 'CSS Transitions with transition: all: property <position-try-fallbacks>
+      from [--foo] to [--bar] at (0) should be [--bar]'
+    test: property-interpolations.html
+  - subtest: 'CSS Transitions with transition: all: property <position-try-fallbacks>
+      from [--foo] to [--bar] at (0.3) should be [--bar]'
+    test: property-interpolations.html
+  - subtest: 'CSS Transitions with transition: all: property <position-try-fallbacks>
+      from [--foo] to [--bar] at (0.5) should be [--bar]'
+    test: property-interpolations.html
+  - subtest: 'CSS Transitions with transition: all: property <position-try-fallbacks>
+      from [--foo] to [--bar] at (0.6) should be [--bar]'
+    test: property-interpolations.html
+  - subtest: 'CSS Transitions with transition: all: property <position-try-fallbacks>
+      from [--foo] to [--bar] at (1) should be [--bar]'
+    test: property-interpolations.html
+  - subtest: 'CSS Transitions with transition: all: property <position-try-fallbacks>
+      from [--foo] to [--bar] at (1.5) should be [--bar]'
+    test: property-interpolations.html
+  - subtest: 'CSS Animations: property <position-try-fallbacks> from [--foo] to [--bar]
+      at (-0.3) should be [--foo]'
+    test: property-interpolations.html
+  - subtest: 'CSS Animations: property <position-try-fallbacks> from [--foo] to [--bar]
+      at (0) should be [--foo]'
+    test: property-interpolations.html
+  - subtest: 'CSS Animations: property <position-try-fallbacks> from [--foo] to [--bar]
+      at (0.3) should be [--foo]'
+    test: property-interpolations.html
+  - subtest: 'CSS Animations: property <position-try-fallbacks> from [--foo] to [--bar]
+      at (0.5) should be [--bar]'
+    test: property-interpolations.html
+  - subtest: 'CSS Animations: property <position-try-fallbacks> from [--foo] to [--bar]
+      at (0.6) should be [--bar]'
+    test: property-interpolations.html
+  - subtest: 'CSS Animations: property <position-try-fallbacks> from [--foo] to [--bar]
+      at (1) should be [--bar]'
+    test: property-interpolations.html
+  - subtest: 'CSS Animations: property <position-try-fallbacks> from [--foo] to [--bar]
+      at (1.5) should be [--bar]'
+    test: property-interpolations.html
+  - subtest: 'Web Animations: property <position-try-fallbacks> from [--foo] to [--bar]
+      at (-0.3) should be [--foo]'
+    test: property-interpolations.html
+  - subtest: 'Web Animations: property <position-try-fallbacks> from [--foo] to [--bar]
+      at (0) should be [--foo]'
+    test: property-interpolations.html
+  - subtest: 'Web Animations: property <position-try-fallbacks> from [--foo] to [--bar]
+      at (0.3) should be [--foo]'
+    test: property-interpolations.html
+  - subtest: 'Web Animations: property <position-try-fallbacks> from [--foo] to [--bar]
+      at (0.5) should be [--bar]'
+    test: property-interpolations.html
+  - subtest: 'Web Animations: property <position-try-fallbacks> from [--foo] to [--bar]
+      at (0.6) should be [--bar]'
+    test: property-interpolations.html
+  - subtest: 'Web Animations: property <position-try-fallbacks> from [--foo] to [--bar]
+      at (1) should be [--bar]'
+    test: property-interpolations.html
+  - subtest: 'Web Animations: property <position-try-fallbacks> from [--foo] to [--bar]
+      at (1.5) should be [--bar]'
+    test: property-interpolations.html
+  - subtest: 'CSS Transitions with transition-behavior:allow-discrete: property <position-try-fallbacks>
+      from [--foo] to [flip-block] at (-0.3) should be [--foo]'
+    test: property-interpolations.html
+  - subtest: 'CSS Transitions with transition-behavior:allow-discrete: property <position-try-fallbacks>
+      from [--foo] to [flip-block] at (0) should be [--foo]'
+    test: property-interpolations.html
+  - subtest: 'CSS Transitions with transition-behavior:allow-discrete: property <position-try-fallbacks>
+      from [--foo] to [flip-block] at (0.3) should be [--foo]'
+    test: property-interpolations.html
+  - subtest: 'CSS Transitions with transition-behavior:allow-discrete: property <position-try-fallbacks>
+      from [--foo] to [flip-block] at (0.5) should be [flip-block]'
+    test: property-interpolations.html
+  - subtest: 'CSS Transitions with transition-behavior:allow-discrete: property <position-try-fallbacks>
+      from [--foo] to [flip-block] at (0.6) should be [flip-block]'
+    test: property-interpolations.html
+  - subtest: 'CSS Transitions with transition-behavior:allow-discrete: property <position-try-fallbacks>
+      from [--foo] to [flip-block] at (1) should be [flip-block]'
+    test: property-interpolations.html
+  - subtest: 'CSS Transitions with transition-behavior:allow-discrete: property <position-try-fallbacks>
+      from [--foo] to [flip-block] at (1.5) should be [flip-block]'
+    test: property-interpolations.html
+  - subtest: 'CSS Transitions with transition-property:all and transition-behavor:allow-discrete:
+      property <position-try-fallbacks> from [--foo] to [flip-block] at (-0.3) should
+      be [--foo]'
+    test: property-interpolations.html
+  - subtest: 'CSS Transitions with transition-property:all and transition-behavor:allow-discrete:
+      property <position-try-fallbacks> from [--foo] to [flip-block] at (0) should
+      be [--foo]'
+    test: property-interpolations.html
+  - subtest: 'CSS Transitions with transition-property:all and transition-behavor:allow-discrete:
+      property <position-try-fallbacks> from [--foo] to [flip-block] at (0.3) should
+      be [--foo]'
+    test: property-interpolations.html
+  - subtest: 'CSS Transitions with transition-property:all and transition-behavor:allow-discrete:
+      property <position-try-fallbacks> from [--foo] to [flip-block] at (0.5) should
+      be [flip-block]'
+    test: property-interpolations.html
+  - subtest: 'CSS Transitions with transition-property:all and transition-behavor:allow-discrete:
+      property <position-try-fallbacks> from [--foo] to [flip-block] at (0.6) should
+      be [flip-block]'
+    test: property-interpolations.html
+  - subtest: 'CSS Transitions with transition-property:all and transition-behavor:allow-discrete:
+      property <position-try-fallbacks> from [--foo] to [flip-block] at (1) should
+      be [flip-block]'
+    test: property-interpolations.html
+  - subtest: 'CSS Transitions with transition-property:all and transition-behavor:allow-discrete:
+      property <position-try-fallbacks> from [--foo] to [flip-block] at (1.5) should
+      be [flip-block]'
+    test: property-interpolations.html
+  - subtest: 'CSS Transitions: property <position-try-fallbacks> from [--foo] to [flip-block]
+      at (-0.3) should be [flip-block]'
+    test: property-interpolations.html
+  - subtest: 'CSS Transitions: property <position-try-fallbacks> from [--foo] to [flip-block]
+      at (0) should be [flip-block]'
+    test: property-interpolations.html
+  - subtest: 'CSS Transitions: property <position-try-fallbacks> from [--foo] to [flip-block]
+      at (0.3) should be [flip-block]'
+    test: property-interpolations.html
+  - subtest: 'CSS Transitions: property <position-try-fallbacks> from [--foo] to [flip-block]
+      at (0.5) should be [flip-block]'
+    test: property-interpolations.html
+  - subtest: 'CSS Transitions: property <position-try-fallbacks> from [--foo] to [flip-block]
+      at (0.6) should be [flip-block]'
+    test: property-interpolations.html
+  - subtest: 'CSS Transitions: property <position-try-fallbacks> from [--foo] to [flip-block]
+      at (1) should be [flip-block]'
+    test: property-interpolations.html
+  - subtest: 'CSS Transitions: property <position-try-fallbacks> from [--foo] to [flip-block]
+      at (1.5) should be [flip-block]'
+    test: property-interpolations.html
+  - subtest: 'CSS Transitions with transition: all: property <position-try-fallbacks>
+      from [--foo] to [flip-block] at (-0.3) should be [flip-block]'
+    test: property-interpolations.html
+  - subtest: 'CSS Transitions with transition: all: property <position-try-fallbacks>
+      from [--foo] to [flip-block] at (0) should be [flip-block]'
+    test: property-interpolations.html
+  - subtest: 'CSS Transitions with transition: all: property <position-try-fallbacks>
+      from [--foo] to [flip-block] at (0.3) should be [flip-block]'
+    test: property-interpolations.html
+  - subtest: 'CSS Transitions with transition: all: property <position-try-fallbacks>
+      from [--foo] to [flip-block] at (0.5) should be [flip-block]'
+    test: property-interpolations.html
+  - subtest: 'CSS Transitions with transition: all: property <position-try-fallbacks>
+      from [--foo] to [flip-block] at (0.6) should be [flip-block]'
+    test: property-interpolations.html
+  - subtest: 'CSS Transitions with transition: all: property <position-try-fallbacks>
+      from [--foo] to [flip-block] at (1) should be [flip-block]'
+    test: property-interpolations.html
+  - subtest: 'CSS Transitions with transition: all: property <position-try-fallbacks>
+      from [--foo] to [flip-block] at (1.5) should be [flip-block]'
+    test: property-interpolations.html
+  - subtest: 'CSS Animations: property <position-try-fallbacks> from [--foo] to [flip-block]
+      at (-0.3) should be [--foo]'
+    test: property-interpolations.html
+  - subtest: 'CSS Animations: property <position-try-fallbacks> from [--foo] to [flip-block]
+      at (0) should be [--foo]'
+    test: property-interpolations.html
+  - subtest: 'CSS Animations: property <position-try-fallbacks> from [--foo] to [flip-block]
+      at (0.3) should be [--foo]'
+    test: property-interpolations.html
+  - subtest: 'CSS Animations: property <position-try-fallbacks> from [--foo] to [flip-block]
+      at (0.5) should be [flip-block]'
+    test: property-interpolations.html
+  - subtest: 'CSS Animations: property <position-try-fallbacks> from [--foo] to [flip-block]
+      at (0.6) should be [flip-block]'
+    test: property-interpolations.html
+  - subtest: 'CSS Animations: property <position-try-fallbacks> from [--foo] to [flip-block]
+      at (1) should be [flip-block]'
+    test: property-interpolations.html
+  - subtest: 'CSS Animations: property <position-try-fallbacks> from [--foo] to [flip-block]
+      at (1.5) should be [flip-block]'
+    test: property-interpolations.html
+  - subtest: 'Web Animations: property <position-try-fallbacks> from [--foo] to [flip-block]
+      at (-0.3) should be [--foo]'
+    test: property-interpolations.html
+  - subtest: 'Web Animations: property <position-try-fallbacks> from [--foo] to [flip-block]
+      at (0) should be [--foo]'
+    test: property-interpolations.html
+  - subtest: 'Web Animations: property <position-try-fallbacks> from [--foo] to [flip-block]
+      at (0.3) should be [--foo]'
+    test: property-interpolations.html
+  - subtest: 'Web Animations: property <position-try-fallbacks> from [--foo] to [flip-block]
+      at (0.5) should be [flip-block]'
+    test: property-interpolations.html
+  - subtest: 'Web Animations: property <position-try-fallbacks> from [--foo] to [flip-block]
+      at (0.6) should be [flip-block]'
+    test: property-interpolations.html
+  - subtest: 'Web Animations: property <position-try-fallbacks> from [--foo] to [flip-block]
+      at (1) should be [flip-block]'
+    test: property-interpolations.html
+  - subtest: 'Web Animations: property <position-try-fallbacks> from [--foo] to [flip-block]
+      at (1.5) should be [flip-block]'
+    test: property-interpolations.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1911925
