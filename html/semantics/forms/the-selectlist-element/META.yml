@@ -10,10 +10,6 @@ links:
         - test: selectlist-nested.tentative.html
           subtest: A nested button part in a nested <selectmenu> shouldn't get controller code even if it comes first in document order
     - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1703439
-      results:
-        - test: selectlist-option-arbitrary-content-not-displayed.tentative.html
-    - product: firefox
       url: https://bugzilla.mozilla.org/show_bug.cgi?id=1749545
       results:
         - test: selectlist-many-options.tentative.html
@@ -39,26 +35,6 @@ links:
           subtest: A <selectlist> shouldn't apply controller code to parts nested in a <select> child
         - test: selectlist-nested.tentative.html
           subtest: A nested button part in a nested <selectlist> shouldn't get controller code even if it comes first in document order
-        - test: selectlist-parts-structure.tentative.html
-          subtest: HTMLOptionElements (and not other element types) should receive option controller code
-        - test: selectlist-parts-structure.tentative.html
-          subtest: To receive option part controller code, an option must be a descendant of the listbox part in a flat tree traversal
-        - test: selectlist-parts-structure.tentative.html
-          subtest: To receive listbox part controller code, an element labeled as a listbox must not be a descendant of the button part in a flat tree traversal
-        - test: selectlist-parts-structure.tentative.html
-          subtest: Listbox controller code should be applied in flat tree traversal order regardless of dynamic insertion order
-        - test: selectlist-parts-structure.tentative.html
-          subtest: selected-value controller code should be applied in flat tree traversal order regardless of dynamic insertion order
-        - test: selectlist-parts-structure.tentative.html
-          subtest: Ensure that option controller code is updated when listbox changes
-        - test: selectlist-parts-structure.tentative.html
-          subtest: Ensure that controller code is applied when slot and part attributes are different
-        - test: selectlist-parts-structure.tentative.html
-          subtest: Moving a selectlist between documents should keep controller code active
-        - test: selectlist-parts-structure.tentative.html
-          subtest: New parts should be detected even when in the subtree of an inserted node
-        - test: selectlist-parts-structure.tentative.html
-          subtest: Part removals should be detected even when in the subtree of a removed node
         - test: selectlist-popover-position-with-zoom.tentative.html
           subtest: The popover should be bottom left positioned
         - test: selectlist-popover-position-with-zoom.tentative.html
