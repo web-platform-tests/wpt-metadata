@@ -1,13 +1,58 @@
 links:
-    - product: chrome
-      url: https://crbug.com/1405835
-      results:
-        - test: block-container-block-002.html
-        - test: block-container-replaced-block.html
-        - test: block-container-block-001.html
-        - test: block-container-block-start-001.html
-        - test: block-container-block-end-001.html
-        - test: block-container-block-end-002.html
-        - test: block-container-block-start-002.html
-        - test: block-container-replaced-block-end.html
-        - test: block-container-replaced-block-start.html
+- product: chrome
+  results:
+  - test: block-container-block-002.html
+  - test: block-container-replaced-block.html
+  - test: block-container-block-001.html
+  - test: block-container-block-start-001.html
+  - test: block-container-block-end-001.html
+  - test: block-container-block-end-002.html
+  - test: block-container-block-start-002.html
+  - test: block-container-replaced-block-end.html
+  - test: block-container-replaced-block-start.html
+  url: https://crbug.com/1405835
+- product: firefox
+  results:
+  - subtest: .collapsed 2
+    test: block-container-block-end-last-child-with-border.html
+  - subtest: .collapsed 2
+    test: block-container-block-end-nested-last-child-with-border.html
+  - subtest: .collapsed 3
+    test: block-container-block-end-nested-last-child-with-border.html
+  - subtest: .collapsed 1
+    test: block-container-block-end-self-collapsing-children-nested-at-bottom.html
+  - subtest: .collapsed 2
+    test: block-container-block-end-self-collapsing-children-nested-at-bottom.html
+  - subtest: .collapsed 3
+    test: block-container-block-end-self-collapsing-children-nested-at-bottom.html
+  - subtest: .collapsed 4
+    test: block-container-block-end-self-collapsing-children-nested-at-bottom.html
+  - subtest: .collapsed 5
+    test: block-container-block-end-self-collapsing-children-nested-at-bottom.html
+  - subtest: .collapsed 6
+    test: block-container-block-end-self-collapsing-children-nested-at-bottom.html
+  - subtest: .collapsed 7
+    test: block-container-block-end-self-collapsing-children-nested-at-bottom.html
+  - subtest: .collapsed 1
+    test: block-container-block-end-self-collapsing-children-nested-margin-trim.html
+  - subtest: .collapsed 1
+    test: block-container-block-end-self-collapsing-children-offsets-nested-multiple-times.html
+  - subtest: container > item 2
+    test: block-container-block-end-self-collapsing-children-offsets-nested-once.html
+  - subtest: container > item 3
+    test: block-container-block-end-self-collapsing-children-offsets-nested-once.html
+  - subtest: container > item 2
+    test: block-container-block-end-self-collapsing-children-offsets-vert-lr.html
+  - subtest: container > item 3
+    test: block-container-block-end-self-collapsing-children-offsets-vert-lr.html
+  - subtest: container > item 2
+    test: block-container-block-end-self-collapsing-children-offsets.html
+  - subtest: container > item 3
+    test: block-container-block-end-self-collapsing-children-offsets.html
+  - test: block-container-block-end-collapsed-margins.html
+  - test: block-container-block-end-self-collapsing-item-has-larger-block-end.html
+  - test: block-container-block-end-self-collapsing-item-has-larger-block-start.html
+  - test: block-container-block-start-collapsed-margins.html
+  - test: block-container-block-start-self-collapsing-item-has-larger-block-end.html
+  - test: block-container-block-start-self-collapsing-item-larger-block-start.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1910504
