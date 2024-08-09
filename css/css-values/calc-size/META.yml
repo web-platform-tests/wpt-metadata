@@ -31,3 +31,31 @@ links:
       calc-size(fit-content, size + 12px)'
     test: calc-size-flex-basis-on-row.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1909818
+- product: firefox
+  results:
+  - subtest: resolved height with styles {"height":"calc-size(auto, size * 2)","box-sizing":"border-box"}
+    test: calc-size-height-box-sizing.html
+  - subtest: resolved height with styles {"height":"calc-size(fit-content, size *
+      2)","box-sizing":"border-box"}
+    test: calc-size-height-box-sizing.html
+  - subtest: resolved height with styles {"min-height":"calc-size(fit-content, size
+      * 2)","box-sizing":"border-box"}
+    test: calc-size-height-box-sizing.html
+  - subtest: resolved height with styles {"height":"200px","max-height":"calc-size(fit-content,
+      size * 2)","box-sizing":"border-box"}
+    test: calc-size-height-box-sizing.html
+  - subtest: resolved height with styles {"height":"calc-size(11px, size * 2)"}
+    test: calc-size-height-box-sizing.html
+  - subtest: resolved height with styles {"height":"calc-size(11px, size * 2)","box-sizing":"border-box"}
+    test: calc-size-height-box-sizing.html
+  - subtest: resolved width with styles {"min-width":"calc-size(max-content, size
+      * 2)","box-sizing":"border-box"}
+    test: calc-size-width-box-sizing.html
+  - subtest: resolved width with styles {"width":"200px","max-width":"calc-size(min-content,
+      size * 2)","box-sizing":"border-box"}
+    test: calc-size-width-box-sizing.html
+  - subtest: resolved width with styles {"width":"calc-size(11px, size * 2)"}
+    test: calc-size-width-box-sizing.html
+  - subtest: resolved width with styles {"width":"calc-size(11px, size * 2)","box-sizing":"border-box"}
+    test: calc-size-width-box-sizing.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1912524
