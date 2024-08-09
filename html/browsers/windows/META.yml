@@ -26,3 +26,10 @@ links:
       results:
         - test: browsing-context.html
           subtest: Check the document properties corresponding to the creator browsing context
+    - product: safari
+      url: https://bugs.webkit.org/show_bug.cgi?id=225397
+      results:
+        - test: embedded-opener-remove-frame.html
+          subtest: opener of discarded nested browsing context
+        - test: embedded-opener-remove-frame.html
+          subtest: opener of discarded auxiliary browsing context
