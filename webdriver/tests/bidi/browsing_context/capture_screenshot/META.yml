@@ -29,7 +29,12 @@ links:
         - test: invalid.py
           subtest: test_closed_frame
     - product: chrome
-      url: "https://crbug.com/355379067"
+      url: https://crbug.com/355379067
+      results:
+        - test: frame.py
+          subtest: test_iframe
+    - product: chrome
+      url: https://crbug.com/355271558
       results:
         - test: frame.py
           subtest: test_iframe
