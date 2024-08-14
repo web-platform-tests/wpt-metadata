@@ -1,8 +1,46 @@
 links:
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1896329
-      results:
-        - test: inheritance.html
-          subtest: Property text-box-trim has initial value none
-        - test: inheritance.html
-          subtest: Property text-box-trim does not inherit
+- product: firefox
+  results:
+  - subtest: Property text-box-trim has initial value none
+    test: inheritance.html
+  - subtest: Property text-box-trim does not inherit
+    test: inheritance.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1896329
+- product: firefox
+  results:
+  - subtest: Property text-box-edge value 'text'
+    test: text-box-edge-computed.html
+  - subtest: Property text-box-edge value 'ex'
+    test: text-box-edge-computed.html
+  - subtest: Property text-box-edge value 'cap'
+    test: text-box-edge-computed.html
+  - subtest: Property text-box-edge value 'text alphabetic'
+    test: text-box-edge-computed.html
+  - subtest: Property text-box-edge value 'text text'
+    test: text-box-edge-computed.html
+  - subtest: Property text-box-edge value 'cap alphabetic'
+    test: text-box-edge-computed.html
+  - subtest: Property text-box-edge value 'cap text'
+    test: text-box-edge-computed.html
+  - subtest: Property text-box-edge value 'ex alphabetic'
+    test: text-box-edge-computed.html
+  - subtest: Property text-box-edge value 'ex text'
+    test: text-box-edge-computed.html
+  - subtest: e.style['text-box-edge'] = "text" should set the property value
+    test: text-box-edge-valid.html
+  - subtest: e.style['text-box-edge'] = "ex" should set the property value
+    test: text-box-edge-valid.html
+  - subtest: e.style['text-box-edge'] = "cap" should set the property value
+    test: text-box-edge-valid.html
+  - subtest: e.style['text-box-edge'] = "text alphabetic" should set the property
+      value
+    test: text-box-edge-valid.html
+  - subtest: e.style['text-box-edge'] = "cap alphabetic" should set the property value
+    test: text-box-edge-valid.html
+  - subtest: e.style['text-box-edge'] = "ex alphabetic" should set the property value
+    test: text-box-edge-valid.html
+  - subtest: Property text-box-trim value 'none'
+    test: text-box-trim-computed.html
+  - subtest: e.style['text-box-trim'] = "none" should set the property value
+    test: text-box-trim-valid.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1913230
