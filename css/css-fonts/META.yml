@@ -1,488 +1,511 @@
 links:
-    - product: chrome
-      url: https://bugs.chromium.org/p/chromium/issues/detail?id=443467
-      results:
-        - test: font-feature-settings-descriptor-01.html
-          status: FAIL
-    - product: chrome
-      url: https://bugs.chromium.org/p/chromium/issues/detail?id=509989
-      results:
-        - test: inheritance.html
-          status: FAIL
-        - test: font-synthesis-01.html
-          status: FAIL
-        - test: font-synthesis-02.html
-          status: FAIL
-        - test: font-synthesis-03.html
-          status: FAIL
-        - test: font-synthesis-04.html
-          status: FAIL
-        - test: font-synthesis-05.html
-    - product: chrome
-      url: https://bugs.chromium.org/p/chromium/issues/detail?id=716567
-      results:
-        - test: font-variant-alternates-parsing.html
-          status: FAIL
-        - test: font-variant-alternates-02.html
-          status: FAIL
-        - test: font-variant-alternates-04.html
-        - test: font-variant-alternates-10.html
-        - test: font-variant-alternates-13.html
-        - test: font-variant-alternates-06.html
-        - test: font-variant-alternates-12.html
-        - test: font-variant-alternates-14.html
-        - test: font-variant-alternates-15.html
-        - test: font-variant-alternates-08.html
-        - test: font-variant-alternates-09.html
-        - test: font-variant-alternates-16.html
-        - test: font-variant-alternates-17.html
-        - test: font-variant-alternates-18.html
-        - test: font-variant-alternates-03.html
-        - test: font-variant-alternates-05.html
-        - test: font-variant-alternates-07.html
-        - test: font-variant-alternates-11.html
-        - test: font-variant-position.html
-    - product: safari
-      url: https://bugs.webkit.org/show_bug.cgi?id=15257
-      results:
-        - test: font-size-adjust-002.html
-          status: FAIL
-        - test: font-size-adjust-005.xht
-          status: FAIL
-    - product: webkitgtk
-      url: https://bugs.webkit.org/show_bug.cgi?id=15257
-      results:
-        - test: font-size-adjust-002.html
-          status: FAIL
-        - test: font-size-adjust-005.xht
-          status: FAIL
-    - product: safari
-      url: https://bugs.webkit.org/show_bug.cgi?id=206883
-      results:
-        - test: font-default-01.html
-          status: FAIL
-        - test: font-default-02.html
-          status: FAIL
-    - product: webkitgtk
-      url: https://bugs.webkit.org/show_bug.cgi?id=206885
-      results:
-        - test: quoted-generic-ignored.html
-          status: FAIL
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1634400
-      results:
-        - test: idlharness.html
-          subtest: 'CSSFontFeatureValuesRule interface: attribute styleset'
-        - test: idlharness.html
-          subtest: 'CSSRule interface: constant FONT_PALETTE_VALUES_RULE on interface object'
-        - test: idlharness.html
-          subtest: 'CSSFontFeatureValuesRule interface: attribute swash'
-        - test: idlharness.html
-          subtest: 'CSSFontPaletteValuesRule interface: existence and properties of interface prototype object''s @@unscopables property'
-        - test: idlharness.html
-          subtest: CSSFontFeatureValuesMap interface object length
-        - test: idlharness.html
-          subtest: 'CSSRule interface: cssRule must inherit property "FONT_PALETTE_VALUES_RULE" with the proper type'
-        - test: idlharness.html
-          subtest: CSSFontPaletteValuesRule interface object length
-        - test: idlharness.html
-          subtest: CSSFontPaletteValuesRule interface object name
-        - test: idlharness.html
-          subtest: 'CSSFontFeatureValuesMap interface: existence and properties of interface prototype object''s @@unscopables property'
-        - test: idlharness.html
-          subtest: 'CSSFontFeatureValuesMap interface: existence and properties of interface prototype object'
-        - test: idlharness.html
-          subtest: 'CSSFontPaletteValuesRule interface: existence and properties of interface prototype object'
-        - test: idlharness.html
-          subtest: 'CSSFontFeatureValuesMap interface: operation set(CSSOMString, (unsigned long or sequence<unsigned long>))'
-        - test: idlharness.html
-          subtest: 'CSSFontFeatureValuesRule interface: attribute characterVariant'
-        - test: idlharness.html
-          subtest: 'CSSFontPaletteValuesRule interface: attribute fontFamily'
-        - test: idlharness.html
-          subtest: 'CSSFontFeatureValuesRule interface: attribute ornaments'
-        - test: idlharness.html
-          subtest: 'CSSRule interface: cssFontFaceRule must inherit property "FONT_PALETTE_VALUES_RULE" with the proper type'
-        - test: idlharness.html
-          subtest: 'CSSRule interface: constant FONT_PALETTE_VALUES_RULE on interface prototype object'
-        - test: idlharness.html
-          subtest: 'CSSFontFeatureValuesMap interface: existence and properties of interface prototype object''s "constructor" property'
-        - test: idlharness.html
-          subtest: 'CSSFontFeatureValuesRule interface: attribute stylistic'
-        - test: idlharness.html
-          subtest: 'CSSFontFeatureValuesRule interface: attribute annotation'
-        - test: idlharness.html
-          subtest: 'CSSFontPaletteValuesRule interface: existence and properties of interface object'
-        - test: idlharness.html
-          subtest: 'CSSFontFeatureValuesMap interface: existence and properties of interface object'
-        - test: idlharness.html
-          subtest: 'CSSFontPaletteValuesRule interface: attribute basePalette'
-        - test: idlharness.html
-          subtest: CSSFontFeatureValuesMap interface object name
-        - test: idlharness.html
-          subtest: 'CSSFontPaletteValuesRule interface: existence and properties of interface prototype object''s "constructor" property'
-    - product: chrome
-      url: https://crbug.com/481430
-      results:
-        - test: font-language-override-02.html
-          status: FAIL
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1652663
-      results:
-        - test: fallback-url-to-local.html
-          subtest: We should use the local font to render the page when the primary remote font is loading
-    - product: chrome
-      url: https://crbug.com/1065468
-      results:
-        - test: generic-family-keywords-002.html
-          status: FAIL
-    - product: chrome
-      url: https://crbug.com/1029069
-      results:
-        - test: standard-font-family-14.html
-        - test: standard-font-family-15.html
-        - test: standard-font-family-16.html
-        - test: standard-font-family-19.html
-        - test: standard-font-family-20.html
-        - test: standard-font-family-11.html
-        - test: standard-font-family-12.html
-        - test: standard-font-family-13.html
-    - product: chrome
-      url: https://crbug.com/450619
-      results:
-        - test: font-feature-resolution-001.html
-        - test: font-feature-resolution-002.html
-    - product: chrome
-      url: https://crbug.com/819816
-      results:
-        - test: font-kerning-03.html
-    - product: chrome
-      url: https://bugs.chromium.org/p/chromium/issues/detail?id=481430
-      results:
-        - test: font-language-override-01.html
-    - product: chrome
-      url: https://bugs.chromium.org/p/chromium/issues/detail?id=1112923
-      results:
-        - test: test-synthetic-italic-2.html
-        - test: test-synthetic-italic-3.html
-    - product: chrome
-      url: https://bugs.chromium.org/p/chromium/issues/detail?id=1211460
-      results:
-        - test: font-size-adjust-zero-1.html
-        - test: font-size-adjust-zero-2.html
-        - test: alternates-order.html
-        - test: font-size-adjust-002.html
-        - test: font-size-adjust-005.xht
-        - test: font-variant-position.html
-        - test: test_font_feature_values_parsing.html
-        - test: generic-family-keywords-001.html
-        - test: idlharness.html
-        - test: size-adjust-01.html
-        - test: size-adjust-text-decoration.tentative.html
-        - test: size-adjust.tentative.html
-    - product: chrome
-      url: https://bugs.chromium.org/p/chromium/issues/detail?id=1212668
-      results:
-        - test: font-variant-position.html
-    - product: chrome
-      url: https://bugs.chromium.org/p/chromium/issues/detail?id=1065468
-      results:
-        - test: generic-family-keywords-001.html
-    - product: chrome
-      url: https://bugs.chromium.org/p/chromium/issues/detail?id=451346
-      results:
-        - test: font-size-adjust-zero-2.html
-        - test: size-adjust-01.html
-        - test: size-adjust-text-decoration.tentative.html
-        - test: size-adjust.tentative.html
-        - test: font-size-adjust-002.html
-        - test: font-size-adjust-005.xht
-        - test: font-size-adjust-zero-1.html
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1723621
-      results:
-        - test: fallback-remote-to-data-url.html
-    - product: chrome
-      url: https://crbug.com/1240236
-      results:
-        - test: system-ui-zh.html
-        - test: system-ui-ja-vs-zh.html
-        - test: system-ui-ja.html
-        - test: system-ui-ur-vs-ar.html
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1734148
-      results:
-        - test: font-palette-empty-font-family.html
-    - product: chrome
-      url: https://crbug.com/1259286
-      results:
-        - test: font-face-unicode-range-nbsp.html
-    - product: chrome
-      url: https://crbug.com/1170794
-      results:
-        - test: palette-values-rule-delete-2.html
-        - test: palette-values-rule-delete.html
-        - test: font-palette-7.html
-        - test: font-size-adjust-001.html
-        - test: font-palette-19.html
-        - test: font-palette-9.html
-        - test: font-palette-add.html
-        - test: palette-values-rule-add-2.html
-        - test: font-palette-17.html
-        - test: font-palette-18.html
-        - test: font-palette-modify.html
-        - test: palette-values-rule-add.html
-        - test: font-palette-4.html
-        - test: font-palette-6.html
-        - test: font-palette-22.html
-        - test: font-palette-3.html
-        - test: font-palette-5.html
-        - test: font-palette-8.html
-        - test: font-palette-remove.html
-        - test: font-palette-13.html
-        - test: font-palette-16.html
-    - url: ""
-      label: interop-2022-text
-      results:
-        - test: font-variant-01.html
-        - test: font-variant-02.html
-        - test: font-variant-03.html
-        - test: font-variant-04.html
-        - test: font-variant-alternates-01.html
-        - test: font-variant-alternates-02.html
-        - test: font-variant-alternates-03.html
-        - test: font-variant-alternates-04.html
-        - test: font-variant-alternates-05.html
-        - test: font-variant-alternates-06.html
-        - test: font-variant-alternates-07.html
-        - test: font-variant-alternates-08.html
-        - test: font-variant-alternates-09.html
-        - test: font-variant-alternates-10.html
-        - test: font-variant-alternates-11.html
-        - test: font-variant-alternates-12.html
-        - test: font-variant-alternates-13.html
-        - test: font-variant-alternates-14.html
-        - test: font-variant-alternates-15.html
-        - test: font-variant-alternates-16.html
-        - test: font-variant-alternates-17.html
-        - test: font-variant-alternates-18.html
-        - test: font-variant-alternates-parsing.html
-        - test: font-variant-caps-01.html
-        - test: font-variant-caps-02.html
-        - test: font-variant-caps-03.html
-        - test: font-variant-caps-04.html
-        - test: font-variant-caps-05.html
-        - test: font-variant-caps-06.html
-        - test: font-variant-caps-07.html
-        - test: font-variant-caps.html
-        - test: font-variant-east-asian-01.html
-        - test: font-variant-east-asian-02.html
-        - test: font-variant-east-asian-03.html
-        - test: font-variant-east-asian-04.html
-        - test: font-variant-east-asian-05.html
-        - test: font-variant-east-asian-06.html
-        - test: font-variant-east-asian-07.html
-        - test: font-variant-east-asian-08.html
-        - test: font-variant-east-asian-09.html
-        - test: font-variant-east-asian-10.html
-        - test: font-variant-east-asian.html
-        - test: font-variant-ligatures-01.html
-        - test: font-variant-ligatures-02.html
-        - test: font-variant-ligatures-03.html
-        - test: font-variant-ligatures-04.html
-        - test: font-variant-ligatures-05.html
-        - test: font-variant-ligatures-06.html
-        - test: font-variant-ligatures-07.html
-        - test: font-variant-ligatures-08.html
-        - test: font-variant-ligatures-09.html
-        - test: font-variant-ligatures-10.html
-        - test: font-variant-ligatures.html
-        - test: font-variant-numeric-01.html
-        - test: font-variant-numeric-02.html
-        - test: font-variant-numeric-03.html
-        - test: font-variant-numeric-04.html
-        - test: font-variant-numeric-05.html
-        - test: font-variant-numeric-06.html
-        - test: font-variant-numeric-07.html
-        - test: font-variant-numeric-08.html
-        - test: font-variant-numeric-09.html
-        - test: font-variant-numeric.html
-        - test: font-variant-position-01.html
-        - test: font-variant-position.html
-    - product: chrome
-      url: https://crbug.com/1375884
-      results:
-        - test: rlh-in-monospace.html
-    - product: chrome
-      url: https://crbug.com/1255685
-      results:
-        - test: font-size-adjust-009.html
-        - test: font-size-adjust-010.html
-        - test: font-size-adjust-011.html
-        - test: font-size-adjust-012.html
-    - product: chrome
-      url: https://crbug.com/1219875
-      results:
-        - test: font-size-adjust-009.html
-        - test: font-size-adjust-010.html
-        - test: font-size-adjust-011.html
-        - test: font-size-adjust-012.html
-    - product: chrome
-      url: https://crbug.com/1379236
-      results:
-        - test: font-shorthand-serialization-prevention.html
-    - url: ""
-      label: interop-2023-fonts
-      results:
-        - test: font-palette-16.html
-        - test: font-palette-5.html
-        - test: font-palette-6.html
-        - test: font-palette-12.html
-        - test: font-palette-8.html
-        - test: font-palette-modify.html
-        - test: font-palette-31.html
-        - test: font-palette-9.html
-        - test: font-palette-remove-2.html
-        - test: font-palette-15.html
-        - test: font-palette-18.html
-        - test: font-palette-19.html
-        - test: font-palette-25.html
-        - test: font-palette-3.html
-        - test: font-palette.html
-        - test: font-palette-11.html
-        - test: font-palette-21.html
-        - test: font-palette-29.html
-        - test: font-palette-modify-2.html
-        - test: font-palette-14.html
-        - test: font-palette-2.html
-        - test: font-palette-24.html
-        - test: font-palette-33.html
-        - test: font-palette-add-2.html
-        - test: font-palette-remove.html
-        - test: font-palette-10.html
-        - test: font-palette-13.html
-        - test: font-palette-34.html
-        - test: font-palette-35.html
-        - test: font-palette-empty-font-family.html
-        - test: font-palette-7.html
-        - test: font-palette-vs-shorthand.html
-        - test: font-palette-17.html
-        - test: font-palette-22.html
-        - test: font-palette-23.html
-        - test: font-palette-27.html
-        - test: font-palette-32.html
-        - test: font-palette-add.html
-        - test: font-palette-20.html
-        - test: font-palette-26.html
-        - test: font-palette-28.html
-        - test: font-palette-30.html
-        - test: font-palette-4.html
-    - product: chrome
-      url: https://crbug.com/451346
-      results:
-        - test: size-adjust-02.html
-          subtest: Test status
-    - product: safari
-      url: https://bugs.webkit.org/show_bug.cgi?id=246912
-      results:
-        - test: font-palette-vs-shorthand.html
-          subtest: 'CSS Fonts Module Level 4: interaction of font-palette and font shorthand'
-        - test: font-palette-vs-shorthand.html
-          subtest: 'CSS Fonts Module Level 4: interaction of font-palette and font shorthand 1'
-        - test: font-palette-vs-shorthand.html
-          subtest: 'CSS Fonts Module Level 4: interaction of font-palette and font shorthand 2'
-    - product: chrome
-      url: https://bugs.chromium.org/p/chromium/issues/detail?id=1408640
-      results:
-        - test: font-palette-empty-font-family.html
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1841332
-      results:
-        - test: font-variant-position.html
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1860124
-      results:
-        - test: size-adjust-unicode-range-system-fallback.html
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1837533
-      results:
-        - test: size-adjust.tentative.html
-          subtest: Test status
-    - product: safari
-      url: https://bugs.webkit.org/show_bug.cgi?id=246564
-      results:
-        - test: font-synthesis-small-caps-not-applied.html
-          subtest: Test status
-    - product: safari
-      url: https://bugs.webkit.org/show_bug.cgi?id=260319
-      results:
-        - test: inheritance.html
-          subtest: Property font-feature-settings inherits
-        - test: inheritance.html
-          subtest: Property font-family inherits
-    - product: safari
-      url: https://bugs.webkit.org/show_bug.cgi?id=264115
-      results:
-        - test: size-adjust-unicode-range-system-fallback.html
-          subtest: Test status
-    - product: safari
-      url: https://bugs.webkit.org/show_bug.cgi?id=182042
-      results:
-        - test: font-kerning-03.html
-          subtest: Test status
-    - url: ""
-      label: interop-2024-font-size-adjust
-      results:
-        - test: font-size-adjust-001.html
-        - test: font-size-adjust-007.xht
-        - test: font-size-adjust-text-orientation.html
-        - test: font-size-adjust-order-001.html
-        - test: font-size-adjust-005.xht
-        - test: font-size-adjust-008.xht
-        - test: font-size-adjust-011.html
-        - test: font-size-adjust-014.html
-        - test: font-size-adjust-units-001.html
-        - test: font-size-adjust-zero-1.html
-        - test: font-size-adjust-006.xht
-        - test: font-size-adjust-012.html
-        - test: font-size-adjust-013.html
-        - test: font-size-adjust-nan-crash.html
-        - test: font-size-adjust-reload.html
-        - test: font-size-adjust-zero-2.html
-        - test: font-size-adjust-002.html
-        - test: font-size-adjust-009.html
-        - test: font-size-adjust-010.html
-        - test: font-size-adjust-generic-font-fallback-crash.html
-    - product: chrome
-      url: https://issues.chromium.org/40081245
-      results:
-        - test: font-size-adjust-012.html
-        - test: font-size-adjust-013.html
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1880094
-      results:
-        - test: font-stretch-interpolation-math-functions.html
-          subtest: 'CSS Transitions: property <font-stretch> from [100%] to [calc(sign(20rem - 20px) * 180%)] at (0) should be [100%]'
-        - test: font-stretch-interpolation-math-functions.html
-          subtest: 'CSS Transitions with transition: all: property <font-stretch> from [100%] to [calc(sign(20rem - 20px) * 180%)] at (0) should be [100%]'
-        - test: font-stretch-interpolation-math-functions.html
-          subtest: 'CSS Animations: property <font-stretch> from [100%] to [calc(sign(20rem - 20px) * 180%)] at (0) should be [100%]'
-        - test: font-stretch-interpolation-math-functions.html
-          subtest: 'Web Animations: property <font-stretch> from [100%] to [calc(sign(20rem - 20px) * 180%)] at (0) should be [100%]'
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1740584
-      results:
-        - test: rex-in-monospace.html
-        - test: rcap-in-monospace.html
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1887100
-      results:
-        - test: system-ui-mixed.html
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1880121
-      results:
-        - test: font-size-adjust-interpolation-math-functions.html
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1887101
-      results:
-        - test: system-fonts-serialization.tentative.html
+- product: chrome
+  results:
+  - status: FAIL
+    test: font-feature-settings-descriptor-01.html
+  url: https://bugs.chromium.org/p/chromium/issues/detail?id=443467
+- product: chrome
+  results:
+  - status: FAIL
+    test: inheritance.html
+  - status: FAIL
+    test: font-synthesis-01.html
+  - status: FAIL
+    test: font-synthesis-02.html
+  - status: FAIL
+    test: font-synthesis-03.html
+  - status: FAIL
+    test: font-synthesis-04.html
+  - test: font-synthesis-05.html
+  url: https://bugs.chromium.org/p/chromium/issues/detail?id=509989
+- product: chrome
+  results:
+  - status: FAIL
+    test: font-variant-alternates-parsing.html
+  - status: FAIL
+    test: font-variant-alternates-02.html
+  - test: font-variant-alternates-04.html
+  - test: font-variant-alternates-10.html
+  - test: font-variant-alternates-13.html
+  - test: font-variant-alternates-06.html
+  - test: font-variant-alternates-12.html
+  - test: font-variant-alternates-14.html
+  - test: font-variant-alternates-15.html
+  - test: font-variant-alternates-08.html
+  - test: font-variant-alternates-09.html
+  - test: font-variant-alternates-16.html
+  - test: font-variant-alternates-17.html
+  - test: font-variant-alternates-18.html
+  - test: font-variant-alternates-03.html
+  - test: font-variant-alternates-05.html
+  - test: font-variant-alternates-07.html
+  - test: font-variant-alternates-11.html
+  - test: font-variant-position.html
+  url: https://bugs.chromium.org/p/chromium/issues/detail?id=716567
+- product: safari
+  results:
+  - status: FAIL
+    test: font-size-adjust-002.html
+  - status: FAIL
+    test: font-size-adjust-005.xht
+  url: https://bugs.webkit.org/show_bug.cgi?id=15257
+- product: webkitgtk
+  results:
+  - status: FAIL
+    test: font-size-adjust-002.html
+  - status: FAIL
+    test: font-size-adjust-005.xht
+  url: https://bugs.webkit.org/show_bug.cgi?id=15257
+- product: safari
+  results:
+  - status: FAIL
+    test: font-default-01.html
+  - status: FAIL
+    test: font-default-02.html
+  url: https://bugs.webkit.org/show_bug.cgi?id=206883
+- product: webkitgtk
+  results:
+  - status: FAIL
+    test: quoted-generic-ignored.html
+  url: https://bugs.webkit.org/show_bug.cgi?id=206885
+- product: firefox
+  results:
+  - subtest: 'CSSFontFeatureValuesRule interface: attribute styleset'
+    test: idlharness.html
+  - subtest: 'CSSRule interface: constant FONT_PALETTE_VALUES_RULE on interface object'
+    test: idlharness.html
+  - subtest: 'CSSFontFeatureValuesRule interface: attribute swash'
+    test: idlharness.html
+  - subtest: 'CSSFontPaletteValuesRule interface: existence and properties of interface
+      prototype object''s @@unscopables property'
+    test: idlharness.html
+  - subtest: CSSFontFeatureValuesMap interface object length
+    test: idlharness.html
+  - subtest: 'CSSRule interface: cssRule must inherit property "FONT_PALETTE_VALUES_RULE"
+      with the proper type'
+    test: idlharness.html
+  - subtest: CSSFontPaletteValuesRule interface object length
+    test: idlharness.html
+  - subtest: CSSFontPaletteValuesRule interface object name
+    test: idlharness.html
+  - subtest: 'CSSFontFeatureValuesMap interface: existence and properties of interface
+      prototype object''s @@unscopables property'
+    test: idlharness.html
+  - subtest: 'CSSFontFeatureValuesMap interface: existence and properties of interface
+      prototype object'
+    test: idlharness.html
+  - subtest: 'CSSFontPaletteValuesRule interface: existence and properties of interface
+      prototype object'
+    test: idlharness.html
+  - subtest: 'CSSFontFeatureValuesMap interface: operation set(CSSOMString, (unsigned
+      long or sequence<unsigned long>))'
+    test: idlharness.html
+  - subtest: 'CSSFontFeatureValuesRule interface: attribute characterVariant'
+    test: idlharness.html
+  - subtest: 'CSSFontPaletteValuesRule interface: attribute fontFamily'
+    test: idlharness.html
+  - subtest: 'CSSFontFeatureValuesRule interface: attribute ornaments'
+    test: idlharness.html
+  - subtest: 'CSSRule interface: cssFontFaceRule must inherit property "FONT_PALETTE_VALUES_RULE"
+      with the proper type'
+    test: idlharness.html
+  - subtest: 'CSSRule interface: constant FONT_PALETTE_VALUES_RULE on interface prototype
+      object'
+    test: idlharness.html
+  - subtest: 'CSSFontFeatureValuesMap interface: existence and properties of interface
+      prototype object''s "constructor" property'
+    test: idlharness.html
+  - subtest: 'CSSFontFeatureValuesRule interface: attribute stylistic'
+    test: idlharness.html
+  - subtest: 'CSSFontFeatureValuesRule interface: attribute annotation'
+    test: idlharness.html
+  - subtest: 'CSSFontPaletteValuesRule interface: existence and properties of interface
+      object'
+    test: idlharness.html
+  - subtest: 'CSSFontFeatureValuesMap interface: existence and properties of interface
+      object'
+    test: idlharness.html
+  - subtest: 'CSSFontPaletteValuesRule interface: attribute basePalette'
+    test: idlharness.html
+  - subtest: CSSFontFeatureValuesMap interface object name
+    test: idlharness.html
+  - subtest: 'CSSFontPaletteValuesRule interface: existence and properties of interface
+      prototype object''s "constructor" property'
+    test: idlharness.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1634400
+- product: chrome
+  results:
+  - status: FAIL
+    test: font-language-override-02.html
+  url: https://crbug.com/481430
+- product: firefox
+  results:
+  - subtest: We should use the local font to render the page when the primary remote
+      font is loading
+    test: fallback-url-to-local.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1652663
+- product: chrome
+  results:
+  - status: FAIL
+    test: generic-family-keywords-002.html
+  url: https://crbug.com/1065468
+- product: chrome
+  results:
+  - test: standard-font-family-14.html
+  - test: standard-font-family-15.html
+  - test: standard-font-family-16.html
+  - test: standard-font-family-19.html
+  - test: standard-font-family-20.html
+  - test: standard-font-family-11.html
+  - test: standard-font-family-12.html
+  - test: standard-font-family-13.html
+  url: https://crbug.com/1029069
+- product: chrome
+  results:
+  - test: font-feature-resolution-001.html
+  - test: font-feature-resolution-002.html
+  url: https://crbug.com/450619
+- product: chrome
+  results:
+  - test: font-kerning-03.html
+  url: https://crbug.com/819816
+- product: chrome
+  results:
+  - test: font-language-override-01.html
+  url: https://bugs.chromium.org/p/chromium/issues/detail?id=481430
+- product: chrome
+  results:
+  - test: test-synthetic-italic-2.html
+  - test: test-synthetic-italic-3.html
+  url: https://bugs.chromium.org/p/chromium/issues/detail?id=1112923
+- product: chrome
+  results:
+  - test: font-size-adjust-zero-1.html
+  - test: font-size-adjust-zero-2.html
+  - test: alternates-order.html
+  - test: font-size-adjust-002.html
+  - test: font-size-adjust-005.xht
+  - test: font-variant-position.html
+  - test: test_font_feature_values_parsing.html
+  - test: generic-family-keywords-001.html
+  - test: idlharness.html
+  - test: size-adjust-01.html
+  - test: size-adjust-text-decoration.tentative.html
+  - test: size-adjust.tentative.html
+  url: https://bugs.chromium.org/p/chromium/issues/detail?id=1211460
+- product: chrome
+  results:
+  - test: font-variant-position.html
+  url: https://bugs.chromium.org/p/chromium/issues/detail?id=1212668
+- product: chrome
+  results:
+  - test: generic-family-keywords-001.html
+  url: https://bugs.chromium.org/p/chromium/issues/detail?id=1065468
+- product: chrome
+  results:
+  - test: font-size-adjust-zero-2.html
+  - test: size-adjust-01.html
+  - test: size-adjust-text-decoration.tentative.html
+  - test: size-adjust.tentative.html
+  - test: font-size-adjust-002.html
+  - test: font-size-adjust-005.xht
+  - test: font-size-adjust-zero-1.html
+  url: https://bugs.chromium.org/p/chromium/issues/detail?id=451346
+- product: firefox
+  results:
+  - test: fallback-remote-to-data-url.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1723621
+- product: chrome
+  results:
+  - test: system-ui-zh.html
+  - test: system-ui-ja-vs-zh.html
+  - test: system-ui-ja.html
+  - test: system-ui-ur-vs-ar.html
+  url: https://crbug.com/1240236
+- product: firefox
+  results:
+  - test: font-palette-empty-font-family.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1734148
+- product: chrome
+  results:
+  - test: font-face-unicode-range-nbsp.html
+  url: https://crbug.com/1259286
+- product: chrome
+  results:
+  - test: palette-values-rule-delete-2.html
+  - test: palette-values-rule-delete.html
+  - test: font-palette-7.html
+  - test: font-size-adjust-001.html
+  - test: font-palette-19.html
+  - test: font-palette-9.html
+  - test: font-palette-add.html
+  - test: palette-values-rule-add-2.html
+  - test: font-palette-17.html
+  - test: font-palette-18.html
+  - test: font-palette-modify.html
+  - test: palette-values-rule-add.html
+  - test: font-palette-4.html
+  - test: font-palette-6.html
+  - test: font-palette-22.html
+  - test: font-palette-3.html
+  - test: font-palette-5.html
+  - test: font-palette-8.html
+  - test: font-palette-remove.html
+  - test: font-palette-13.html
+  - test: font-palette-16.html
+  url: https://crbug.com/1170794
+- label: interop-2022-text
+  results:
+  - test: font-variant-01.html
+  - test: font-variant-02.html
+  - test: font-variant-03.html
+  - test: font-variant-04.html
+  - test: font-variant-alternates-01.html
+  - test: font-variant-alternates-02.html
+  - test: font-variant-alternates-03.html
+  - test: font-variant-alternates-04.html
+  - test: font-variant-alternates-05.html
+  - test: font-variant-alternates-06.html
+  - test: font-variant-alternates-07.html
+  - test: font-variant-alternates-08.html
+  - test: font-variant-alternates-09.html
+  - test: font-variant-alternates-10.html
+  - test: font-variant-alternates-11.html
+  - test: font-variant-alternates-12.html
+  - test: font-variant-alternates-13.html
+  - test: font-variant-alternates-14.html
+  - test: font-variant-alternates-15.html
+  - test: font-variant-alternates-16.html
+  - test: font-variant-alternates-17.html
+  - test: font-variant-alternates-18.html
+  - test: font-variant-alternates-parsing.html
+  - test: font-variant-caps-01.html
+  - test: font-variant-caps-02.html
+  - test: font-variant-caps-03.html
+  - test: font-variant-caps-04.html
+  - test: font-variant-caps-05.html
+  - test: font-variant-caps-06.html
+  - test: font-variant-caps-07.html
+  - test: font-variant-caps.html
+  - test: font-variant-east-asian-01.html
+  - test: font-variant-east-asian-02.html
+  - test: font-variant-east-asian-03.html
+  - test: font-variant-east-asian-04.html
+  - test: font-variant-east-asian-05.html
+  - test: font-variant-east-asian-06.html
+  - test: font-variant-east-asian-07.html
+  - test: font-variant-east-asian-08.html
+  - test: font-variant-east-asian-09.html
+  - test: font-variant-east-asian-10.html
+  - test: font-variant-east-asian.html
+  - test: font-variant-ligatures-01.html
+  - test: font-variant-ligatures-02.html
+  - test: font-variant-ligatures-03.html
+  - test: font-variant-ligatures-04.html
+  - test: font-variant-ligatures-05.html
+  - test: font-variant-ligatures-06.html
+  - test: font-variant-ligatures-07.html
+  - test: font-variant-ligatures-08.html
+  - test: font-variant-ligatures-09.html
+  - test: font-variant-ligatures-10.html
+  - test: font-variant-ligatures.html
+  - test: font-variant-numeric-01.html
+  - test: font-variant-numeric-02.html
+  - test: font-variant-numeric-03.html
+  - test: font-variant-numeric-04.html
+  - test: font-variant-numeric-05.html
+  - test: font-variant-numeric-06.html
+  - test: font-variant-numeric-07.html
+  - test: font-variant-numeric-08.html
+  - test: font-variant-numeric-09.html
+  - test: font-variant-numeric.html
+  - test: font-variant-position-01.html
+  - test: font-variant-position.html
+  url: ''
+- product: chrome
+  results:
+  - test: rlh-in-monospace.html
+  url: https://crbug.com/1375884
+- product: chrome
+  results:
+  - test: font-size-adjust-009.html
+  - test: font-size-adjust-010.html
+  - test: font-size-adjust-011.html
+  - test: font-size-adjust-012.html
+  url: https://crbug.com/1255685
+- product: chrome
+  results:
+  - test: font-size-adjust-009.html
+  - test: font-size-adjust-010.html
+  - test: font-size-adjust-011.html
+  - test: font-size-adjust-012.html
+  url: https://crbug.com/1219875
+- product: chrome
+  results:
+  - test: font-shorthand-serialization-prevention.html
+  url: https://crbug.com/1379236
+- label: interop-2023-fonts
+  results:
+  - test: font-palette-16.html
+  - test: font-palette-5.html
+  - test: font-palette-6.html
+  - test: font-palette-12.html
+  - test: font-palette-8.html
+  - test: font-palette-modify.html
+  - test: font-palette-31.html
+  - test: font-palette-9.html
+  - test: font-palette-remove-2.html
+  - test: font-palette-15.html
+  - test: font-palette-18.html
+  - test: font-palette-19.html
+  - test: font-palette-25.html
+  - test: font-palette-3.html
+  - test: font-palette.html
+  - test: font-palette-11.html
+  - test: font-palette-21.html
+  - test: font-palette-29.html
+  - test: font-palette-modify-2.html
+  - test: font-palette-14.html
+  - test: font-palette-2.html
+  - test: font-palette-24.html
+  - test: font-palette-33.html
+  - test: font-palette-add-2.html
+  - test: font-palette-remove.html
+  - test: font-palette-10.html
+  - test: font-palette-13.html
+  - test: font-palette-34.html
+  - test: font-palette-35.html
+  - test: font-palette-empty-font-family.html
+  - test: font-palette-7.html
+  - test: font-palette-vs-shorthand.html
+  - test: font-palette-17.html
+  - test: font-palette-22.html
+  - test: font-palette-23.html
+  - test: font-palette-27.html
+  - test: font-palette-32.html
+  - test: font-palette-add.html
+  - test: font-palette-20.html
+  - test: font-palette-26.html
+  - test: font-palette-28.html
+  - test: font-palette-30.html
+  - test: font-palette-4.html
+  url: ''
+- product: chrome
+  results:
+  - subtest: Test status
+    test: size-adjust-02.html
+  url: https://crbug.com/451346
+- product: safari
+  results:
+  - subtest: 'CSS Fonts Module Level 4: interaction of font-palette and font shorthand'
+    test: font-palette-vs-shorthand.html
+  - subtest: 'CSS Fonts Module Level 4: interaction of font-palette and font shorthand
+      1'
+    test: font-palette-vs-shorthand.html
+  - subtest: 'CSS Fonts Module Level 4: interaction of font-palette and font shorthand
+      2'
+    test: font-palette-vs-shorthand.html
+  url: https://bugs.webkit.org/show_bug.cgi?id=246912
+- product: chrome
+  results:
+  - test: font-palette-empty-font-family.html
+  url: https://bugs.chromium.org/p/chromium/issues/detail?id=1408640
+- product: firefox
+  results:
+  - test: font-variant-position.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1841332
+- product: firefox
+  results:
+  - test: size-adjust-unicode-range-system-fallback.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1860124
+- product: firefox
+  results:
+  - subtest: Test status
+    test: size-adjust.tentative.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1837533
+- product: safari
+  results:
+  - subtest: Test status
+    test: font-synthesis-small-caps-not-applied.html
+  url: https://bugs.webkit.org/show_bug.cgi?id=246564
+- product: safari
+  results:
+  - subtest: Property font-feature-settings inherits
+    test: inheritance.html
+  - subtest: Property font-family inherits
+    test: inheritance.html
+  url: https://bugs.webkit.org/show_bug.cgi?id=260319
+- product: safari
+  results:
+  - subtest: Test status
+    test: size-adjust-unicode-range-system-fallback.html
+  url: https://bugs.webkit.org/show_bug.cgi?id=264115
+- product: safari
+  results:
+  - subtest: Test status
+    test: font-kerning-03.html
+  url: https://bugs.webkit.org/show_bug.cgi?id=182042
+- label: interop-2024-font-size-adjust
+  results:
+  - test: font-size-adjust-001.html
+  - test: font-size-adjust-007.xht
+  - test: font-size-adjust-text-orientation.html
+  - test: font-size-adjust-order-001.html
+  - test: font-size-adjust-005.xht
+  - test: font-size-adjust-008.xht
+  - test: font-size-adjust-011.html
+  - test: font-size-adjust-014.html
+  - test: font-size-adjust-units-001.html
+  - test: font-size-adjust-zero-1.html
+  - test: font-size-adjust-006.xht
+  - test: font-size-adjust-012.html
+  - test: font-size-adjust-013.html
+  - test: font-size-adjust-nan-crash.html
+  - test: font-size-adjust-reload.html
+  - test: font-size-adjust-zero-2.html
+  - test: font-size-adjust-002.html
+  - test: font-size-adjust-009.html
+  - test: font-size-adjust-010.html
+  - test: font-size-adjust-generic-font-fallback-crash.html
+  url: ''
+- product: chrome
+  results:
+  - test: font-size-adjust-012.html
+  - test: font-size-adjust-013.html
+  url: https://issues.chromium.org/40081245
+- product: firefox
+  results:
+  - subtest: 'CSS Transitions: property <font-stretch> from [100%] to [calc(sign(20rem
+      - 20px) * 180%)] at (0) should be [100%]'
+    test: font-stretch-interpolation-math-functions.html
+  - subtest: 'CSS Transitions with transition: all: property <font-stretch> from [100%]
+      to [calc(sign(20rem - 20px) * 180%)] at (0) should be [100%]'
+    test: font-stretch-interpolation-math-functions.html
+  - subtest: 'CSS Animations: property <font-stretch> from [100%] to [calc(sign(20rem
+      - 20px) * 180%)] at (0) should be [100%]'
+    test: font-stretch-interpolation-math-functions.html
+  - subtest: 'Web Animations: property <font-stretch> from [100%] to [calc(sign(20rem
+      - 20px) * 180%)] at (0) should be [100%]'
+    test: font-stretch-interpolation-math-functions.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1880094
+- product: firefox
+  results:
+  - test: rex-in-monospace.html
+  - test: rcap-in-monospace.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1740584
+- product: firefox
+  results:
+  - test: system-ui-mixed.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1887100
+- product: firefox
+  results:
+  - test: font-size-adjust-interpolation-math-functions.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1880121
+- product: firefox
+  results:
+  - test: system-fonts-serialization.tentative.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1887101
+- product: firefox
+  results:
+  - test: variation-sequences.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1913190
