@@ -1,0 +1,45 @@
+links:
+- product: firefox
+  results:
+  - subtest: Property text-box-edge inherits
+    test: inheritance.html
+  - subtest: Property text-box-trim has initial value none
+    test: inheritance.html
+  - subtest: Property text-box-edge value 'text'
+    test: text-box-edge-computed.html
+  - subtest: Property text-box-edge value 'ex'
+    test: text-box-edge-computed.html
+  - subtest: Property text-box-edge value 'cap'
+    test: text-box-edge-computed.html
+  - subtest: Property text-box-edge value 'text alphabetic'
+    test: text-box-edge-computed.html
+  - subtest: Property text-box-edge value 'text text'
+    test: text-box-edge-computed.html
+  - subtest: Property text-box-edge value 'cap alphabetic'
+    test: text-box-edge-computed.html
+  - subtest: Property text-box-edge value 'cap text'
+    test: text-box-edge-computed.html
+  - subtest: Property text-box-edge value 'ex alphabetic'
+    test: text-box-edge-computed.html
+  - subtest: Property text-box-edge value 'ex text'
+    test: text-box-edge-computed.html
+  - subtest: e.style['text-box-edge'] = "text" should set the property value
+    test: text-box-edge-valid.html
+  - subtest: e.style['text-box-edge'] = "ex" should set the property value
+    test: text-box-edge-valid.html
+  - subtest: e.style['text-box-edge'] = "cap" should set the property value
+    test: text-box-edge-valid.html
+  - subtest: e.style['text-box-edge'] = "text alphabetic" should set the property
+      value
+    test: text-box-edge-valid.html
+  - subtest: e.style['text-box-edge'] = "text text" should set the property value
+    test: text-box-edge-valid.html
+  - subtest: e.style['text-box-edge'] = "cap alphabetic" should set the property value
+    test: text-box-edge-valid.html
+  - subtest: e.style['text-box-edge'] = "cap text" should set the property value
+    test: text-box-edge-valid.html
+  - subtest: e.style['text-box-edge'] = "ex alphabetic" should set the property value
+    test: text-box-edge-valid.html
+  - subtest: e.style['text-box-edge'] = "ex text" should set the property value
+    test: text-box-edge-valid.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1913057
