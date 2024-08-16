@@ -44,3 +44,76 @@ links:
   - subtest: e.style['text-box-trim'] = "none" should set the property value
     test: text-box-trim-valid.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1913230
+- product: firefox
+  results:
+  - subtest: Property text-box-edge value 'ideographic'
+    test: text-box-edge-computed.html
+  - subtest: Property text-box-edge value 'ideographic-ink'
+    test: text-box-edge-computed.html
+  - subtest: Property text-box-edge value 'text ideographic'
+    test: text-box-edge-computed.html
+  - subtest: Property text-box-edge value 'text ideographic-ink'
+    test: text-box-edge-computed.html
+  - subtest: Property text-box-edge value 'cap ideographic'
+    test: text-box-edge-computed.html
+  - subtest: Property text-box-edge value 'cap ideographic-ink'
+    test: text-box-edge-computed.html
+  - subtest: Property text-box-edge value 'ex ideographic'
+    test: text-box-edge-computed.html
+  - subtest: Property text-box-edge value 'ex ideographic-ink'
+    test: text-box-edge-computed.html
+  - subtest: Property text-box-edge value 'ideographic alphabetic'
+    test: text-box-edge-computed.html
+  - subtest: Property text-box-edge value 'ideographic ideographic-ink'
+    test: text-box-edge-computed.html
+  - subtest: Property text-box-edge value 'ideographic-ink alphabetic'
+    test: text-box-edge-computed.html
+  - subtest: Property text-box-edge value 'ideographic-ink ideographic'
+    test: text-box-edge-computed.html
+  - subtest: e.style['text-box-edge'] = "ideographic" should set the property value
+    test: text-box-edge-valid.html
+  - subtest: e.style['text-box-edge'] = "ideographic-ink" should set the property
+      value
+    test: text-box-edge-valid.html
+  - subtest: e.style['text-box-edge'] = "text text" should set the property value
+    test: text-box-edge-valid.html
+  - subtest: e.style['text-box-edge'] = "text ideographic" should set the property
+      value
+    test: text-box-edge-valid.html
+  - subtest: e.style['text-box-edge'] = "text ideographic-ink" should set the property
+      value
+    test: text-box-edge-valid.html
+  - subtest: e.style['text-box-edge'] = "cap text" should set the property value
+    test: text-box-edge-valid.html
+  - subtest: e.style['text-box-edge'] = "cap ideographic" should set the property
+      value
+    test: text-box-edge-valid.html
+  - subtest: e.style['text-box-edge'] = "cap ideographic-ink" should set the property
+      value
+    test: text-box-edge-valid.html
+  - subtest: e.style['text-box-edge'] = "ex text" should set the property value
+    test: text-box-edge-valid.html
+  - subtest: e.style['text-box-edge'] = "ex ideographic" should set the property value
+    test: text-box-edge-valid.html
+  - subtest: e.style['text-box-edge'] = "ex ideographic-ink" should set the property
+      value
+    test: text-box-edge-valid.html
+  - subtest: e.style['text-box-edge'] = "ideographic text" should set the property
+      value
+    test: text-box-edge-valid.html
+  - subtest: e.style['text-box-edge'] = "ideographic alphabetic" should set the property
+      value
+    test: text-box-edge-valid.html
+  - subtest: e.style['text-box-edge'] = "ideographic ideographic-ink" should set the
+      property value
+    test: text-box-edge-valid.html
+  - subtest: e.style['text-box-edge'] = "ideographic-ink text" should set the property
+      value
+    test: text-box-edge-valid.html
+  - subtest: e.style['text-box-edge'] = "ideographic-ink alphabetic" should set the
+      property value
+    test: text-box-edge-valid.html
+  - subtest: e.style['text-box-edge'] = "ideographic-ink ideographic" should set the
+      property value
+    test: text-box-edge-valid.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1913521
