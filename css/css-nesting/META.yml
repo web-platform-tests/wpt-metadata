@@ -1,181 +1,223 @@
 links:
-- product: firefox
-  results:
-  - subtest: ".foo {\n  & { color: green; }\n}"
-    test: parsing.html
-  - subtest: ".foo {\n  &.bar { color: green; }\n}"
-    test: parsing.html
-  - subtest: ".foo {\n  & .bar { color: green; }\n}"
-    test: parsing.html
-  - subtest: ".foo {\n  & > .bar { color: green; }\n}"
-    test: parsing.html
-  - subtest: ".foo {\n  &:is(.bar, &.baz) { color: green; }\n}"
-    test: parsing.html
-  - subtest: ".foo, .bar {\n  & + .baz, &.qux { color: green; }\n}"
-    test: parsing.html
-  - subtest: ".foo {\n  & .bar & .baz & .qux { color: green; }\n}"
-    test: parsing.html
-  - subtest: ".foo {\n  @media (min-width: 50px) { color: green; }\n}"
-    test: parsing.html
-  - subtest: "main {\n  & > section, & > article {\n  & > header { color: green; }\n\
-      }\n}"
-    test: parsing.html
-  - test: conditional-properties.html
-  - test: conditional-rules.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1798383
-- product: firefox
-  results:
-  - subtest: ".foo {\n  .bar& { color: green; }\n}"
-    test: parsing.html
-  - subtest: ".foo {\n  .bar & { color: green; }\n}"
-    test: parsing.html
-  - subtest: ".foo {\n  .bar > & { color: green; }\n}"
-    test: parsing.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1812484
-- product: firefox
-  results:
-  - subtest: Simple CSSOM manipulation of subrules
-    test: cssom.html
-  - subtest: Simple CSSOM manipulation of subrules 1
-    test: cssom.html
-  - subtest: Simple CSSOM manipulation of subrules 2
-    test: cssom.html
-  - subtest: Simple CSSOM manipulation of subrules 3
-    test: cssom.html
-  - subtest: Simple CSSOM manipulation of subrules 4
-    test: cssom.html
-  - subtest: Simple CSSOM manipulation of subrules 5
-    test: cssom.html
-  - subtest: Simple CSSOM manipulation of subrules 6
-    test: cssom.html
-  - subtest: Simple CSSOM manipulation of subrules 7
-    test: cssom.html
-  - subtest: Simple CSSOM manipulation of subrules 8
-    test: cssom.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1813068
-- product: firefox
-  results:
-  - test: nesting-basic.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1814850
-- product: firefox
-  results:
-  - subtest: Simple CSSOM manipulation of subrules 9
-    test: cssom.html
-  - subtest: Simple CSSOM manipulation of subrules 10
-    test: cssom.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1823886
-- product: firefox
-  results:
-  - subtest: Simple CSSOM manipulation of subrules
-    test: invalid-inner-rules.html
-  - subtest: Simple CSSOM manipulation of subrules 1
-    test: invalid-inner-rules.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1832973
-- product: firefox
-  results:
-  - subtest: '@layer can be nested'
-    test: nesting-layer.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1839547
-- product: firefox
-  results:
-  - subtest: '.foo { > & .bar { color: green; }}'
-    test: parsing.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1845420
-- product: firefox
-  results:
-  - subtest: Simple CSSOM manipulation of subrules 10
-    test: cssom.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1855736
-- product: firefox
-  results:
-  - test: invalidation-003.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1855738
-- product: safari
-  results:
-  - subtest: CSSStyleRule is a CSSGroupingRule
-    test: cssom.html
-  url: https://bugs.webkit.org/show_bug.cgi?id=259856
-- product: firefox
-  results:
-  - subtest: '.foo { + .bar, .foo, > .baz { color: green; }}'
-    test: parsing.html
-  - subtest: '.foo { .foo { color: green; }}'
-    test: parsing.html
-  - subtest: '.foo { .foo, .foo & { color: green; }}'
-    test: parsing.html
-  - subtest: '.foo { :is(.bar, .baz) { color: green; }}'
-    test: parsing.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1864418
-- label: interop-2024-nesting
-  results:
-  - test: conditional-properties.html
-  - test: conditional-rules.html
-  - test: delete-other-rule-crash.html
-  - test: has-nesting.html
-  - test: host-nesting-001.html
-  - test: host-nesting-002.html
-  - test: host-nesting-003.html
-  - test: host-nesting-004.html
-  - test: host-nesting-005.html
-  - test: implicit-nesting-ident-recovery.html
-  - test: implicit-nesting-ident.html
-  - test: implicit-nesting.html
-  - test: implicit-parent-insertion-crash.html
-  - test: invalid-inner-rules.html
-  - test: invalidation-001.html
-  - test: invalidation-002.html
-  - test: invalidation-003.html
-  - test: invalidation-004.html
-  - test: nest-containing-forgiving.html
-  - test: nesting-basic.html
-  - test: nesting-type-selector.html
-  - test: pseudo-part-crash.html
-  - test: supports-is-consistent.html
-  - test: top-level-is-scope.html
-  - test: nesting-layer.html
-  - test: parsing.html
-  - test: serialize-group-rules-with-decls.html
-- product: chrome
-  results:
-  - test: host-nesting-001.html
-  - test: host-nesting-002.html
-  - test: host-nesting-005.html
-  url: https://issues.chromium.org/40266948
-- product: chrome
-  results:
-  - subtest: '.foo { > .bar { color: green; }}'
-    test: parsing.html
-  - subtest: '.foo { > & .bar { color: green; }}'
-    test: parsing.html
-  - subtest: '.foo { + .bar & { color: green; }}'
-    test: parsing.html
-  - subtest: '.foo { + .bar, .foo, > .baz { color: green; }}'
-    test: parsing.html
-  - subtest: '.foo { .foo { color: green; }}'
-    test: parsing.html
-  - subtest: '.foo { .foo, .foo & { color: green; }}'
-    test: parsing.html
-  - subtest: '.foo { :is(.bar, .baz) { color: green; }}'
-    test: parsing.html
-  - subtest: Mixed declarations/rules are on two lines.
-    test: serialize-group-rules-with-decls.html
-  - subtest: Implicit rule is serialized
-    test: serialize-group-rules-with-decls.html
-  - subtest: Implicit rule not removed
-    test: serialize-group-rules-with-decls.html
-  - subtest: Two implicit-like rules
-    test: serialize-group-rules-with-decls.html
-  - subtest: Implicit like rule after decls
-    test: serialize-group-rules-with-decls.html
-  - subtest: Implicit like rule after decls, missing closing braces
-    test: serialize-group-rules-with-decls.html
-  url: https://issues.chromium.org/40275670
-- product: chrome
-  results:
-  - test: has-nesting.html
-  url: https://issues.chromium.org/324916796
-- product: firefox
-  results:
-  - subtest: '.foo { .foo, .bar { color: green; }}'
-    test: parsing.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1884879
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1798383
+      results:
+        - test: parsing.html
+          subtest: |-
+            .foo {
+              & { color: green; }
+            }
+        - test: parsing.html
+          subtest: |-
+            .foo {
+              &.bar { color: green; }
+            }
+        - test: parsing.html
+          subtest: |-
+            .foo {
+              & .bar { color: green; }
+            }
+        - test: parsing.html
+          subtest: |-
+            .foo {
+              & > .bar { color: green; }
+            }
+        - test: parsing.html
+          subtest: |-
+            .foo {
+              &:is(.bar, &.baz) { color: green; }
+            }
+        - test: parsing.html
+          subtest: |-
+            .foo, .bar {
+              & + .baz, &.qux { color: green; }
+            }
+        - test: parsing.html
+          subtest: |-
+            .foo {
+              & .bar & .baz & .qux { color: green; }
+            }
+        - test: parsing.html
+          subtest: |-
+            .foo {
+              @media (min-width: 50px) { color: green; }
+            }
+        - test: parsing.html
+          subtest: |-
+            main {
+              & > section, & > article {
+              & > header { color: green; }
+            }
+            }
+        - test: conditional-properties.html
+        - test: conditional-rules.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1812484
+      results:
+        - test: parsing.html
+          subtest: |-
+            .foo {
+              .bar& { color: green; }
+            }
+        - test: parsing.html
+          subtest: |-
+            .foo {
+              .bar & { color: green; }
+            }
+        - test: parsing.html
+          subtest: |-
+            .foo {
+              .bar > & { color: green; }
+            }
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1813068
+      results:
+        - test: cssom.html
+          subtest: Simple CSSOM manipulation of subrules
+        - test: cssom.html
+          subtest: Simple CSSOM manipulation of subrules 1
+        - test: cssom.html
+          subtest: Simple CSSOM manipulation of subrules 2
+        - test: cssom.html
+          subtest: Simple CSSOM manipulation of subrules 3
+        - test: cssom.html
+          subtest: Simple CSSOM manipulation of subrules 4
+        - test: cssom.html
+          subtest: Simple CSSOM manipulation of subrules 5
+        - test: cssom.html
+          subtest: Simple CSSOM manipulation of subrules 6
+        - test: cssom.html
+          subtest: Simple CSSOM manipulation of subrules 7
+        - test: cssom.html
+          subtest: Simple CSSOM manipulation of subrules 8
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1814850
+      results:
+        - test: nesting-basic.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1823886
+      results:
+        - test: cssom.html
+          subtest: Simple CSSOM manipulation of subrules 9
+        - test: cssom.html
+          subtest: Simple CSSOM manipulation of subrules 10
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1832973
+      results:
+        - test: invalid-inner-rules.html
+          subtest: Simple CSSOM manipulation of subrules
+        - test: invalid-inner-rules.html
+          subtest: Simple CSSOM manipulation of subrules 1
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1839547
+      results:
+        - test: nesting-layer.html
+          subtest: '@layer can be nested'
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1845420
+      results:
+        - test: parsing.html
+          subtest: '.foo { > & .bar { color: green; }}'
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1855736
+      results:
+        - test: cssom.html
+          subtest: Simple CSSOM manipulation of subrules 10
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1855738
+      results:
+        - test: invalidation-003.html
+    - product: safari
+      url: https://bugs.webkit.org/show_bug.cgi?id=259856
+      results:
+        - test: cssom.html
+          subtest: CSSStyleRule is a CSSGroupingRule
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1864418
+      results:
+        - test: parsing.html
+          subtest: '.foo { + .bar, .foo, > .baz { color: green; }}'
+        - test: parsing.html
+          subtest: '.foo { .foo { color: green; }}'
+        - test: parsing.html
+          subtest: '.foo { .foo, .foo & { color: green; }}'
+        - test: parsing.html
+          subtest: '.foo { :is(.bar, .baz) { color: green; }}'
+    - label: interop-2024-nesting
+      results:
+        - test: conditional-properties.html
+        - test: conditional-rules.html
+        - test: delete-other-rule-crash.html
+        - test: has-nesting.html
+        - test: host-nesting-001.html
+        - test: host-nesting-002.html
+        - test: host-nesting-003.html
+        - test: host-nesting-004.html
+        - test: host-nesting-005.html
+        - test: implicit-nesting-ident-recovery.html
+        - test: implicit-nesting-ident.html
+        - test: implicit-nesting.html
+        - test: implicit-parent-insertion-crash.html
+        - test: invalid-inner-rules.html
+        - test: invalidation-001.html
+        - test: invalidation-002.html
+        - test: invalidation-003.html
+        - test: invalidation-004.html
+        - test: nest-containing-forgiving.html
+        - test: nesting-basic.html
+        - test: nesting-type-selector.html
+        - test: pseudo-part-crash.html
+        - test: supports-is-consistent.html
+        - test: top-level-is-scope.html
+        - test: nesting-layer.html
+        - test: parsing.html
+        - test: serialize-group-rules-with-decls.html
+    - product: chrome
+      url: https://issues.chromium.org/40266948
+      results:
+        - test: host-nesting-001.html
+        - test: host-nesting-002.html
+        - test: host-nesting-005.html
+    - product: chrome
+      url: https://issues.chromium.org/40275670
+      results:
+        - test: parsing.html
+          subtest: '.foo { > .bar { color: green; }}'
+        - test: parsing.html
+          subtest: '.foo { > & .bar { color: green; }}'
+        - test: parsing.html
+          subtest: '.foo { + .bar & { color: green; }}'
+        - test: parsing.html
+          subtest: '.foo { + .bar, .foo, > .baz { color: green; }}'
+        - test: parsing.html
+          subtest: '.foo { .foo { color: green; }}'
+        - test: parsing.html
+          subtest: '.foo { .foo, .foo & { color: green; }}'
+        - test: parsing.html
+          subtest: '.foo { :is(.bar, .baz) { color: green; }}'
+        - test: serialize-group-rules-with-decls.html
+          subtest: Mixed declarations/rules are on two lines.
+        - test: serialize-group-rules-with-decls.html
+          subtest: Implicit rule is serialized
+        - test: serialize-group-rules-with-decls.html
+          subtest: Implicit rule not removed
+        - test: serialize-group-rules-with-decls.html
+          subtest: Two implicit-like rules
+        - test: serialize-group-rules-with-decls.html
+          subtest: Implicit like rule after decls
+        - test: serialize-group-rules-with-decls.html
+          subtest: Implicit like rule after decls, missing closing braces
+    - product: chrome
+      url: https://issues.chromium.org/324916796
+      results:
+        - test: has-nesting.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1884879
+      results:
+        - test: parsing.html
+          subtest: '.foo { .foo, .bar { color: green; }}'
+    - product: safari
+      url: https://bugs.webkit.org/show_bug.cgi?id=275341
+      results:
+        - test: has-nesting.html
+          subtest: Test status
