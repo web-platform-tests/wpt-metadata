@@ -1,24 +1,28 @@
 links:
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1900501
-      results:
-        - test: text-box-trim-om-001.html
-          subtest: getBoundingClientRect.height
-        - test: text-box-trim-om-001.html
-          subtest: 'elementFromPoint: 10px above the client rect'
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1900005
-      results:
-        - test: text-box-trim-block-in-inline-start-002.html
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1898714
-      results:
-        - test: text-box-trim-multicol-002.html
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1898137
-      results:
-        - test: text-box-trim-half-leading-block-box-003.html
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1898352
-      results:
-        - test: text-box-trim-dynamic-001.html
+- product: firefox
+  results:
+  - subtest: getBoundingClientRect.height
+    test: text-box-trim-om-001.html
+  - subtest: 'elementFromPoint: 10px above the client rect'
+    test: text-box-trim-om-001.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1900501
+- product: firefox
+  results:
+  - test: text-box-trim-block-in-inline-start-002.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1900005
+- product: firefox
+  results:
+  - test: text-box-trim-multicol-002.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1898714
+- product: firefox
+  results:
+  - test: text-box-trim-half-leading-block-box-003.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1898137
+- product: firefox
+  results:
+  - test: text-box-trim-dynamic-001.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1898352
+- product: firefox
+  results:
+  - test: text-box-trim-height-002.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1914226
