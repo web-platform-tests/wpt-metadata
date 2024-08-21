@@ -132,3 +132,62 @@ links:
   - subtest: Property background-image value 'conic-gradient(red 0deg, gold 1turn)'
     test: background-image-computed.sub.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1911808
+- product: firefox
+  results:
+  - subtest: Property background-attachment value 'local'
+    test: background-computed.html
+  - subtest: Property background-attachment value 'scroll, fixed'
+    test: background-computed.html
+  - subtest: Property background-attachment value 'local, fixed, scroll, fixed'
+    test: background-computed.html
+  - subtest: Property background-clip value 'border-box'
+    test: background-computed.html
+  - subtest: Property background-clip value 'content-box, border-box'
+    test: background-computed.html
+  - subtest: Property background-clip value 'content-box, border-box, padding-box,
+      content-box'
+    test: background-computed.html
+  - subtest: Property background-origin value 'border-box'
+    test: background-computed.html
+  - subtest: Property background-origin value 'content-box, border-box'
+    test: background-computed.html
+  - subtest: Property background-origin value 'content-box, border-box, padding-box,
+      content-box'
+    test: background-computed.html
+  - subtest: Property background-position value '50% 6px'
+    test: background-computed.html
+  - subtest: Property background-position value '12px 13px, 50% 6px'
+    test: background-computed.html
+  - subtest: Property background-position value '12px 13px, 50% 6px, 30px -10px, -7px
+      8px'
+    test: background-computed.html
+  - subtest: Property background-position-x value '0.5em'
+    test: background-computed.html
+  - subtest: Property background-position-x value '-20%, 10px'
+    test: background-computed.html
+  - subtest: Property background-position-x value 'calc(10px - 0.5em), -20%, right,
+      15%'
+    test: background-computed.html
+  - subtest: Property background-position-y value '0.5em'
+    test: background-computed.html
+  - subtest: Property background-position-y value '-20%, 10px'
+    test: background-computed.html
+  - subtest: Property background-position-y value 'calc(10px - 0.5em), -20%, bottom,
+      15%'
+    test: background-computed.html
+  - subtest: Property background-repeat value 'round'
+    test: background-computed.html
+  - subtest: Property background-repeat value 'repeat-x, repeat'
+    test: background-computed.html
+  - subtest: Property background-repeat value 'repeat-y, round no-repeat, repeat-x,
+      repeat'
+    test: background-computed.html
+  - subtest: Property background-size value 'contain'
+    test: background-computed.html
+  - subtest: Property background-size value 'auto 1px, 2% 3%'
+    test: background-computed.html
+  - subtest: Property background-size value 'auto 1px, 2% 3%, contain'
+    test: background-computed.html
+  - subtest: Property background-size value 'auto 1px, 2% 3%, contain, 7px 8px'
+    test: background-computed.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1914298
