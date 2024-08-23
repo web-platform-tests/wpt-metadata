@@ -1,61 +1,16 @@
 links:
-- product: firefox
-  results:
-  - test: charset-2.html
-  - test: charset-bom.any.html
-  - test: charset-bom.any.worker.html
-  - test: charset-bom.any.sharedworker.html
-  - test: charset.html
-  - subtest: Imported JSON module, cross-origin with CORS
-    test: cors-crossorigin-requests.html
-  - subtest: Imported JSON module, cross-origin, missing CORS ACAO header
-    test: cors-crossorigin-requests.html
-  - subtest: Imported JSON module with parse error, cross-origin, with CORS
-    test: cors-crossorigin-requests.html
-  - subtest: JSON Modules should be loaded with or without the credentials based on
-      the same-origin-ness and the crossOrigin attribute
-    test: credentials.sub.html
-  - test: integrity.html
-  - test: invalid-content-type.any.worker.html
-  - test: invalid-content-type.any.html
-  - test: invalid-content-type.any.sharedworker.html
-  - subtest: JSON Module dynamic import should not load within the context of a service
-      worker
-    test: json-module-service-worker-test.https.html
-  - test: load-error-events.html
-  - subtest: inline, 200, parser-inserted
-    test: load-error-events.html
-  - subtest: inline, 404, parser-inserted
-    test: load-error-events.html
-  - subtest: src, 200, parser-inserted
-    test: load-error-events.html
-  - subtest: src, 404, parser-inserted
-    test: load-error-events.html
-  - subtest: src, 200, not parser-inserted
-    test: load-error-events.html
-  - subtest: src, 404, not parser-inserted
-    test: load-error-events.html
-  - subtest: inline, 200, not parser-inserted
-    test: load-error-events.html
-  - subtest: inline, 404, not parser-inserted
-    test: load-error-events.html
-  - test: module.html
-  - subtest: JSON modules
-    test: module.html
-  - test: non-object.any.html
-  - test: non-object.any.sharedworker.html
-  - test: non-object.any.worker.html
-  - test: referrer-policies.sub.html
-  - test: repeated-imports.any.sharedworker.html
-  - test: repeated-imports.any.html
-  - test: repeated-imports.any.worker.html
-  - test: valid-content-type.html
-  - subtest: text/json
-    test: valid-content-type.html
-  - subtest: application/json
-    test: valid-content-type.html
-  - subtest: text/json;boundary=something
-    test: valid-content-type.html
-  - subtest: text/json;foo=bar
-    test: valid-content-type.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1846737
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1846737
+      results:
+        - test: charset-bom.any.html
+        - test: charset-bom.any.worker.html
+        - test: charset-bom.any.sharedworker.html
+        - test: invalid-content-type.any.worker.html
+        - test: invalid-content-type.any.html
+        - test: invalid-content-type.any.sharedworker.html
+        - test: non-object.any.html
+        - test: non-object.any.sharedworker.html
+        - test: non-object.any.worker.html
+        - test: repeated-imports.any.sharedworker.html
+        - test: repeated-imports.any.html
+        - test: repeated-imports.any.worker.html
