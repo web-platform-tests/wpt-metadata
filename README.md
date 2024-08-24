@@ -5,7 +5,7 @@ wpt-metadata is a repo for storing [wpt.fyi](https://github.com/web-platform-tes
 
 YAML Link Format Specs:
 
-```
+```yaml
 links:
   - product: [product spec] (optional)
     url: [URL]
