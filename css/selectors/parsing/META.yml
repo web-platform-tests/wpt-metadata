@@ -111,6 +111,28 @@ links:
         - test: parse-part.html
           subtest: '"::part(foo):dir(ltr)" should be a valid selector'
     - product: chrome
+      url: https://issues.chromium.org/40623497
+      results:
+        - test: parse-part.html
+          subtest: '"::part(foo):lang(en)" should be a valid selector'
+        - test: parse-part.html
+          subtest: '"::part(foo):dir(ltr)" should be a valid selector'
+        - test: parse-part.html
+          subtest: '"::part(foo):disabled" should be a valid selector'
+        - test: parse-part.html
+          subtest: '"::part(foo):checked" should be a valid selector'
+    - product: edge
+      url: https://issues.chromium.org/40623497
+      results:
+        - test: parse-part.html
+          subtest: '"::part(foo):lang(en)" should be a valid selector'
+        - test: parse-part.html
+          subtest: '"::part(foo):dir(ltr)" should be a valid selector'
+        - test: parse-part.html
+          subtest: '"::part(foo):disabled" should be a valid selector'
+        - test: parse-part.html
+          subtest: '"::part(foo):checked" should be a valid selector'
+    - product: chrome
       url: https://issues.chromium.org/40277472
       results:
         - test: parse-part.html
