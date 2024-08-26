@@ -1,113 +1,134 @@
 links:
-- product: firefox
-  results:
-  - subtest: '":has(a)" should be a valid selector'
-    test: parse-has.html
-  - subtest: '":has(#a)" should be a valid selector'
-    test: parse-has.html
-  - subtest: '":has(.a)" should be a valid selector'
-    test: parse-has.html
-  - subtest: '":has([a])" should be a valid selector'
-    test: parse-has.html
-  - subtest: '":has([a=\"b\"])" should be a valid selector'
-    test: parse-has.html
-  - subtest: '":has([a|=\"b\"])" should be a valid selector'
-    test: parse-has.html
-  - subtest: '":has(:hover)" should be a valid selector'
-    test: parse-has.html
-  - subtest: '"*:has(.a)" should be a valid selector'
-    test: parse-has.html
-  - subtest: '".a:has(.b)" should be a valid selector'
-    test: parse-has.html
-  - subtest: '".a:has(> .b)" should be a valid selector'
-    test: parse-has.html
-  - subtest: '".a:has(~ .b)" should be a valid selector'
-    test: parse-has.html
-  - subtest: '".a:has(+ .b)" should be a valid selector'
-    test: parse-has.html
-  - subtest: '".a:has(.b) .c" should be a valid selector'
-    test: parse-has.html
-  - subtest: '".a .b:has(.c)" should be a valid selector'
-    test: parse-has.html
-  - subtest: '".a .b:has(.c .d)" should be a valid selector'
-    test: parse-has.html
-  - subtest: '".a .b:has(.c .d) .e" should be a valid selector'
-    test: parse-has.html
-  - subtest: '".a:has(.b:is(.c .d))" should be a valid selector'
-    test: parse-has.html
-  - subtest: '".a:is(.b:has(.c) .d)" should be a valid selector'
-    test: parse-has.html
-  - subtest: '".a:not(:has(.b))" should be a valid selector'
-    test: parse-has.html
-  - subtest: '".a:has(:not(.b))" should be a valid selector'
-    test: parse-has.html
-  - subtest: '".a:has(.b):has(.c)" should be a valid selector'
-    test: parse-has.html
-  - subtest: '"*|*:has(*)" should be a valid selector'
-    test: parse-has.html
-  - subtest: '":has(*|*)" should be a valid selector'
-    test: parse-has.html
-  - subtest: '".a:has()" should be a valid selector'
-    test: parse-has.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1771692
-- product: firefox
-  results:
-  - subtest: '".a:has(.b:has(.c), .d)" should be a valid selector'
-    test: parse-has-disallow-nesting-has-inside-has.html
-  - subtest: '".a:has(.b:is(.c:has(.d) .e))" should be a valid selector'
-    test: parse-has-disallow-nesting-has-inside-has.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1773973
-- label: interop-2023-has
-  results:
-  - test: parse-has-disallow-nesting-has-inside-has.html
-  - test: parse-has.html
-- product: chrome
-  results:
-  - subtest: '".a:has(:is(.b:has(.c)))" should be a valid selector'
-    test: parse-has-disallow-nesting-has-inside-has.html
-  - subtest: '".a:has(:is(.b:has(.c), .d))" should be a valid selector'
-    test: parse-has-disallow-nesting-has-inside-has.html
-  - subtest: '":has(:is(.a, 123))" should be a valid selector'
-    test: parse-has.html
-  url: https://crbug.com/1469380
-- product: firefox
-  results:
-  - test: parse-state.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1588763
-- product: safari
-  results:
-  - test: parse-state.html
-  url: https://bugs.webkit.org/show_bug.cgi?id=215911
-- product: chrome
-  results:
-  - subtest: '"::part(inner):state(bar)::after" should be a valid selector'
-    test: parse-state.html
-  - subtest: '"::part(inner):state(bar)::before" should be a valid selector'
-    test: parse-state.html
-  - subtest: '"my-input[type=\"foo\"]:state(--0)::part(inner):state(bar)" should be
-      a valid selector'
-    test: parse-state.html
-  - subtest: '"my-input[type=\"foo\"]:state(--0)::part(inner)" should be a valid selector'
-    test: parse-state.html
-  - subtest: '"my-input[type=\"foo\"]:state(--0)::before" should be a valid selector'
-    test: parse-state.html
-  - subtest: '"my-input[type=\"foo\"]:state(checked)" should be a valid selector'
-    test: parse-state.html
-  - subtest: '":host(:state(--foo))" should be a valid selector'
-    test: parse-state.html
-  - subtest: '":state(--0)" should be a valid selector'
-    test: parse-state.html
-  - subtest: '":state(--)" should be a valid selector'
-    test: parse-state.html
-  - subtest: '":state(bar)" should be a valid selector'
-    test: parse-state.html
-  - subtest: '":state(--foo)" should be a valid selector'
-    test: parse-state.html
-  url: https://crbug.com/1514397
-- product: firefox
-  results:
-  - subtest: '"::part(foo):lang(en)" should be a valid selector'
-    test: parse-part.html
-  - subtest: '"::part(foo):dir(ltr)" should be a valid selector'
-    test: parse-part.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1875242
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1771692
+      results:
+        - test: parse-has.html
+          subtest: '":has(a)" should be a valid selector'
+        - test: parse-has.html
+          subtest: '":has(#a)" should be a valid selector'
+        - test: parse-has.html
+          subtest: '":has(.a)" should be a valid selector'
+        - test: parse-has.html
+          subtest: '":has([a])" should be a valid selector'
+        - test: parse-has.html
+          subtest: '":has([a=\"b\"])" should be a valid selector'
+        - test: parse-has.html
+          subtest: '":has([a|=\"b\"])" should be a valid selector'
+        - test: parse-has.html
+          subtest: '":has(:hover)" should be a valid selector'
+        - test: parse-has.html
+          subtest: '"*:has(.a)" should be a valid selector'
+        - test: parse-has.html
+          subtest: '".a:has(.b)" should be a valid selector'
+        - test: parse-has.html
+          subtest: '".a:has(> .b)" should be a valid selector'
+        - test: parse-has.html
+          subtest: '".a:has(~ .b)" should be a valid selector'
+        - test: parse-has.html
+          subtest: '".a:has(+ .b)" should be a valid selector'
+        - test: parse-has.html
+          subtest: '".a:has(.b) .c" should be a valid selector'
+        - test: parse-has.html
+          subtest: '".a .b:has(.c)" should be a valid selector'
+        - test: parse-has.html
+          subtest: '".a .b:has(.c .d)" should be a valid selector'
+        - test: parse-has.html
+          subtest: '".a .b:has(.c .d) .e" should be a valid selector'
+        - test: parse-has.html
+          subtest: '".a:has(.b:is(.c .d))" should be a valid selector'
+        - test: parse-has.html
+          subtest: '".a:is(.b:has(.c) .d)" should be a valid selector'
+        - test: parse-has.html
+          subtest: '".a:not(:has(.b))" should be a valid selector'
+        - test: parse-has.html
+          subtest: '".a:has(:not(.b))" should be a valid selector'
+        - test: parse-has.html
+          subtest: '".a:has(.b):has(.c)" should be a valid selector'
+        - test: parse-has.html
+          subtest: '"*|*:has(*)" should be a valid selector'
+        - test: parse-has.html
+          subtest: '":has(*|*)" should be a valid selector'
+        - test: parse-has.html
+          subtest: '".a:has()" should be a valid selector'
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1773973
+      results:
+        - test: parse-has-disallow-nesting-has-inside-has.html
+          subtest: '".a:has(.b:has(.c), .d)" should be a valid selector'
+        - test: parse-has-disallow-nesting-has-inside-has.html
+          subtest: '".a:has(.b:is(.c:has(.d) .e))" should be a valid selector'
+    - label: interop-2023-has
+      results:
+        - test: parse-has-disallow-nesting-has-inside-has.html
+        - test: parse-has.html
+    - product: chrome
+      url: https://crbug.com/1469380
+      results:
+        - test: parse-has-disallow-nesting-has-inside-has.html
+          subtest: '".a:has(:is(.b:has(.c)))" should be a valid selector'
+        - test: parse-has-disallow-nesting-has-inside-has.html
+          subtest: '".a:has(:is(.b:has(.c), .d))" should be a valid selector'
+        - test: parse-has.html
+          subtest: '":has(:is(.a, 123))" should be a valid selector'
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1588763
+      results:
+        - test: parse-state.html
+    - product: safari
+      url: https://bugs.webkit.org/show_bug.cgi?id=215911
+      results:
+        - test: parse-state.html
+    - product: chrome
+      url: https://crbug.com/1514397
+      results:
+        - test: parse-state.html
+          subtest: '"::part(inner):state(bar)::after" should be a valid selector'
+        - test: parse-state.html
+          subtest: '"::part(inner):state(bar)::before" should be a valid selector'
+        - test: parse-state.html
+          subtest: '"my-input[type=\"foo\"]:state(--0)::part(inner):state(bar)" should be a valid selector'
+        - test: parse-state.html
+          subtest: '"my-input[type=\"foo\"]:state(--0)::part(inner)" should be a valid selector'
+        - test: parse-state.html
+          subtest: '"my-input[type=\"foo\"]:state(--0)::before" should be a valid selector'
+        - test: parse-state.html
+          subtest: '"my-input[type=\"foo\"]:state(checked)" should be a valid selector'
+        - test: parse-state.html
+          subtest: '":host(:state(--foo))" should be a valid selector'
+        - test: parse-state.html
+          subtest: '":state(--0)" should be a valid selector'
+        - test: parse-state.html
+          subtest: '":state(--)" should be a valid selector'
+        - test: parse-state.html
+          subtest: '":state(bar)" should be a valid selector'
+        - test: parse-state.html
+          subtest: '":state(--foo)" should be a valid selector'
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1875242
+      results:
+        - test: parse-part.html
+          subtest: '"::part(foo):lang(en)" should be a valid selector'
+        - test: parse-part.html
+          subtest: '"::part(foo):dir(ltr)" should be a valid selector'
+    - product: chrome
+      url: https://issues.chromium.org/40277472
+      results:
+        - test: parse-part.html
+          subtest: '"::part(foo):is(ul)" should be a valid selector'
+        - test: parse-part.html
+          subtest: '"::part(foo):is(nav ul)" should be a valid selector'
+        - test: parse-part.html
+          subtest: '"::part(foo):where(ul)" should be a valid selector'
+        - test: parse-part.html
+          subtest: '"::part(foo):where(nav ul)" should be a valid selector'
+    - product: edge
+      url: https://issues.chromium.org/40277472
+      results:
+        - test: parse-part.html
+          subtest: '"::part(foo):is(ul)" should be a valid selector'
+        - test: parse-part.html
+          subtest: '"::part(foo):is(nav ul)" should be a valid selector'
+        - test: parse-part.html
+          subtest: '"::part(foo):where(ul)" should be a valid selector'
+        - test: parse-part.html
+          subtest: '"::part(foo):where(nav ul)" should be a valid selector'
