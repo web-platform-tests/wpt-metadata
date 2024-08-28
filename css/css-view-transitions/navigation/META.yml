@@ -11,3 +11,18 @@ links:
   - test: navigation-auto-excludes-reload.html
   - test: root-element-transition-opt-in-removed-on-new.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1895644
+- product: firefox
+  results:
+  - subtest: Constructing pageswap event
+    test: pageswap-ctor.html
+  - subtest: Constructing pageswap event with a custom name
+    test: pageswap-ctor.html
+  - subtest: Constructing pageswap event with empty dictionary
+    test: pageswap-ctor.html
+  - subtest: Constructing pageswap event with a null viewTransition
+    test: pageswap-ctor.html
+  - subtest: Constructing pageswap event with a viewTransition
+    test: pageswap-ctor.html
+  - subtest: Constructing pageswap event with a viewTransition and activation
+    test: pageswap-ctor.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1915506
