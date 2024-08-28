@@ -50,3 +50,10 @@ links:
       results:
         - test: event-handler-onmove-01.tentative.html
         - test: event-handler-onmove-02.tentative.html
+    - product: safari
+      url: https://bugs.webkit.org/show_bug.cgi?id=172985
+      results:
+        - test: event-handler-all-global-events.html
+          subtest: 'oncuechange: the content attribute must be compiled into a function as the corresponding property'
+        - test: event-handler-all-global-events.html
+          subtest: 'oncuechange: the content attribute must execute when an event is dispatched'
