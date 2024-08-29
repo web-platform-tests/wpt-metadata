@@ -1,6 +1,5 @@
 links:
-    - url: ""
-      label: interop-2022-color
+    - label: interop-2022-color
       results:
         - test: color-computed.html
         - test: color-computed-color-function.html
@@ -23,8 +22,7 @@ links:
         - test: color-valid-hwb.html
         - test: color-valid-lab.html
         - test: color-valid-rgb.html
-    - url: ""
-      label: interop-2023-color
+    - label: interop-2023-color
       results:
         - test: color-mix-out-of-gamut.html
     - product: firefox
@@ -740,8 +738,7 @@ links:
           subtest: e.style['opacity'] = "max(0%, 50%)" should set the property value
         - test: opacity-valid.html
           subtest: e.style['opacity'] = "min(-40%, 50%)" should set the property value
-    - url: ""
-      label: interop-2024-relative-color
+    - label: interop-2024-relative-color
       results:
         - test: relative-color-out-of-gamut.html
         - test: color-computed-relative-color.html
@@ -918,6 +915,8 @@ links:
           subtest: Property color value 'color(from color(from color(xyz-d65 0.99 0.88 0.77) prophoto-rgb r g b) xyz-d65 x y z)'
         - test: color-computed-relative-color.html
           subtest: Property color value 'color(from color(from color(xyz-d65 0.99 0.88 0.77) rec2020 r g b) xyz-d65 x y z)'
+        - test: color-computed-relative-color.html
+          subtest: Property color value 'lch(from color(srgb 0.25 0.5 0.75) l c h)'
     - product: firefox
       url: https://bugzilla.mozilla.org/show_bug.cgi?id=1895330
       results:
