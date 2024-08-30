@@ -1041,3 +1041,21 @@ links:
       url: https://bugzilla.mozilla.org/show_bug.cgi?id=1918413
       results:
         - test: register-property-syntax-parsing.html
+    - product: firefox
+      results:
+      - subtest: syntax:'<number>', initialValue:'calc(15 + (sign(100vh - 10px) * 5))'
+          is valid
+        test: register-property-syntax-parsing.html
+      - subtest: syntax:'<integer>', initialValue:'calc(15 + (sign(100vh - 10px) * 5))'
+          is valid
+        test: register-property-syntax-parsing.html
+      - subtest: syntax:'<angle>', initialValue:'calc(15deg + (sign(100vh - 10px) * 5deg))'
+          is valid
+        test: register-property-syntax-parsing.html
+      - subtest: syntax:'<time>', initialValue:'calc(15s + (sign(100vh - 10px) * 5s))'
+          is valid
+        test: register-property-syntax-parsing.html
+      - subtest: syntax:'<resolution>', initialValue:'calc(15dppx + (sign(100vh - 10px)
+          * 5dpi))' is valid
+        test: register-property-syntax-parsing.html
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1915981

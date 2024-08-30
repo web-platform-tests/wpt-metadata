@@ -196,3 +196,16 @@ links:
   - subtest: e.style['background'] = "none" should set background-color
     test: background-valid.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1917052
+- product: firefox
+  results:
+  - subtest: Property border-image-outset value 'calc(10 + (sign(2cqw - 10px) * 5))'
+    test: border-image-outset-computed.html
+  - subtest: Property border-image-outset value 'calc(10 + (sign(2cqw - 10px) * 5))
+      calc(20px + (sign(2cqw - 10px) * 5px)'
+    test: border-image-outset-computed.html
+  - subtest: Property border-image-slice value 'calc(10 + (sign(2cqw - 10px) * 5))'
+    test: border-image-slice-computed.html
+  - subtest: Property border-image-slice value 'calc(10 + (sign(2cqw - 10px) * 5))
+      calc(20% + (sign(2cqw - 10px) * 5%))'
+    test: border-image-slice-computed.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1915977
