@@ -558,3 +558,11 @@ links:
       both reverse" should set animation-timeline
     test: animation-shorthand.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1917051
+- product: firefox
+  results:
+  - subtest: Property animation-delay value 'calc(10s + (sign(2cqw - 10px) * 5s))'
+    test: animation-delay-computed.html
+  - subtest: Property animation-iteration-count value 'calc(10 + (sign(2cqw - 10px)
+      * 5))'
+    test: animation-iteration-count-computed.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1915976
