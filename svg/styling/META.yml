@@ -227,3 +227,14 @@ links:
           subtest: fill presentation attribute not supported on animateTransform
         - test: presentation-attributes-special-cases.html
           subtest: fill presentation attribute not supported on set
+    - product: safari
+      url: https://bugs.webkit.org/show_bug.cgi?id=279144
+      results:
+        - test: presentation-attributes-special-cases.html
+          subtest: transform presentation attribute supported on g
+        - test: presentation-attributes-special-cases.html
+          subtest: patternTransform presentation attribute supported on pattern
+        - test: presentation-attributes-special-cases.html
+          subtest: gradientTransform presentation attribute supported on linearGradient
+        - test: presentation-attributes-special-cases.html
+          subtest: gradientTransform presentation attribute supported on radialGradient
