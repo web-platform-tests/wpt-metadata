@@ -1,0 +1,30 @@
+links:
+- product: firefox
+  results:
+  - subtest: e.style['scroll-start-target'] = "none" should set scroll-start-target-block
+    test: scroll-start-target-shorthand.html
+  - subtest: e.style['scroll-start-target'] = "none" should set scroll-start-target-inline
+    test: scroll-start-target-shorthand.html
+  - subtest: e.style['scroll-start-target'] = "none" should not set unrelated longhands
+    test: scroll-start-target-shorthand.html
+  - subtest: e.style['scroll-start-target'] = "auto" should set scroll-start-target-block
+    test: scroll-start-target-shorthand.html
+  - subtest: e.style['scroll-start-target'] = "auto" should set scroll-start-target-inline
+    test: scroll-start-target-shorthand.html
+  - subtest: e.style['scroll-start-target'] = "auto" should not set unrelated longhands
+    test: scroll-start-target-shorthand.html
+  - subtest: e.style['scroll-start-target'] = "none auto" should set scroll-start-target-block
+    test: scroll-start-target-shorthand.html
+  - subtest: e.style['scroll-start-target'] = "none auto" should set scroll-start-target-inline
+    test: scroll-start-target-shorthand.html
+  - subtest: e.style['scroll-start-target'] = "none auto" should not set unrelated
+      longhands
+    test: scroll-start-target-shorthand.html
+  - subtest: e.style['scroll-start-target'] = "auto none" should set scroll-start-target-block
+    test: scroll-start-target-shorthand.html
+  - subtest: e.style['scroll-start-target'] = "auto none" should set scroll-start-target-inline
+    test: scroll-start-target-shorthand.html
+  - subtest: e.style['scroll-start-target'] = "auto none" should not set unrelated
+      longhands
+    test: scroll-start-target-shorthand.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1917050

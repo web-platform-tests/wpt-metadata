@@ -117,3 +117,30 @@ links:
       property value
     test: text-box-edge-valid.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1913521
+- product: firefox
+  results:
+  - subtest: e.style['text-box'] = "normal" should set text-box-edge
+    test: text-box-shorthand.html
+  - subtest: e.style['text-box'] = "normal" should set text-box-trim
+    test: text-box-shorthand.html
+  - subtest: e.style['text-box'] = "normal" should not set unrelated longhands
+    test: text-box-shorthand.html
+  - subtest: e.style['text-box'] = "none" should set text-box-edge
+    test: text-box-shorthand.html
+  - subtest: e.style['text-box'] = "none" should set text-box-trim
+    test: text-box-shorthand.html
+  - subtest: e.style['text-box'] = "none" should not set unrelated longhands
+    test: text-box-shorthand.html
+  - subtest: e.style['text-box'] = "trim-start" should set text-box-edge
+    test: text-box-shorthand.html
+  - subtest: e.style['text-box'] = "trim-start" should set text-box-trim
+    test: text-box-shorthand.html
+  - subtest: e.style['text-box'] = "trim-start" should not set unrelated longhands
+    test: text-box-shorthand.html
+  - subtest: e.style['text-box'] = "ex" should set text-box-edge
+    test: text-box-shorthand.html
+  - subtest: e.style['text-box'] = "ex" should set text-box-trim
+    test: text-box-shorthand.html
+  - subtest: e.style['text-box'] = "ex" should not set unrelated longhands
+    test: text-box-shorthand.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1917053
