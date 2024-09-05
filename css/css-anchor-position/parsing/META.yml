@@ -58,3 +58,18 @@ links:
       --baz" should set the property value
     test: position-try-parsing.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1906329
+- product: firefox
+  results:
+  - subtest: e.style['position-try'] = "flip-inline" should set position-try-fallbacks
+    test: position-try-parsing.html
+  - subtest: e.style['position-try'] = "most-width none" should set position-try-fallbacks
+    test: position-try-parsing.html
+  - subtest: e.style['position-try'] = "--foo, --bar" should set position-try-fallbacks
+    test: position-try-parsing.html
+  - subtest: e.style['position-try'] = "most-inline-size --foo, flip-inline" should
+      set position-try-fallbacks
+    test: position-try-parsing.html
+  - subtest: e.style['position-try'] = "most-inline-size flip-inline flip-block, --foo,
+      --bar" should set position-try-fallbacks
+    test: position-try-parsing.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1917050
