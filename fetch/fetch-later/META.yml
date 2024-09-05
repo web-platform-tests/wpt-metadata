@@ -182,3 +182,15 @@ links:
       BackgroundSync is off.
     test: send-on-deactivate.tentative.https.window.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1888022
+- product: firefox
+  results:
+  - subtest: fetchLater() does send on page entering BFCache even if BackgroundSync
+      is on.
+    test: send-on-deactivate-with-background-sync.tentative.https.window.html
+  - subtest: fetchLater() with activateAfter=0 sends on page entering BFCache if BackgroundSync
+      is on.
+    test: send-on-deactivate-with-background-sync.tentative.https.window.html
+  - subtest: fetchLater() with activateAfter=1m does send on page entering BFCache
+      even if BackgroundSync is on.
+    test: send-on-deactivate-with-background-sync.tentative.https.window.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1916944
