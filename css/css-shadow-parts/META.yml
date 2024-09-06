@@ -1,9 +1,39 @@
 links:
-    - product: chrome
-      url: https://crbug.com/1068419
-      results:
-        - test: host-part-001.html
-    - product: chrome
-      url: https://crbug.com/838526
-      results:
-        - test: animation-part.html
+- product: chrome
+  results:
+  - test: host-part-001.html
+  url: https://crbug.com/1068419
+- product: chrome
+  results:
+  - test: animation-part.html
+  url: https://crbug.com/838526
+- product: firefox
+  results:
+  - subtest: '"::part(mypart):active-view-transition" should be a valid selector'
+    test: pseudo-classes-after-part.html
+  - subtest: '"::part(mypart):active-view-transition-type(mytype)" should be a valid
+      selector'
+    test: pseudo-classes-after-part.html
+  - subtest: '"::part(mypart):closed" should be a valid selector'
+    test: pseudo-classes-after-part.html
+  - subtest: '"::part(mypart):dir(ltr)" should be a valid selector'
+    test: pseudo-classes-after-part.html
+  - subtest: '"::part(mypart):future" should be a valid selector'
+    test: pseudo-classes-after-part.html
+  - subtest: '"::part(mypart):lang(en)" should be a valid selector'
+    test: pseudo-classes-after-part.html
+  - subtest: '"::part(mypart):open" should be a valid selector'
+    test: pseudo-classes-after-part.html
+  - subtest: '"::part(mypart):past" should be a valid selector'
+    test: pseudo-classes-after-part.html
+  - subtest: '"::part(mypart):paused" should be a valid selector'
+    test: pseudo-classes-after-part.html
+  - subtest: '"::part(mypart):picture-in-picture" should be a valid selector'
+    test: pseudo-classes-after-part.html
+  - subtest: '"::part(mypart):playing" should be a valid selector'
+    test: pseudo-classes-after-part.html
+  - subtest: '"::part(mypart):xr-overlay" should be a valid selector'
+    test: pseudo-classes-after-part.html
+  - subtest: '"::part(mypart):has(:hover)" should be an invalid selector'
+    test: pseudo-classes-after-part.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1917289
