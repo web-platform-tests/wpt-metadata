@@ -2102,3 +2102,48 @@ links:
       blue)" should set the property value
     test: color-valid-color-mix-function.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1915985
+- product: firefox
+  results:
+  - subtest: Property background-color value 'rgb(from currentColor r g b)'
+    test: color-computed-relative-color.html
+  - subtest: Property background-color value 'hsl(from currentColor h s l)'
+    test: color-computed-relative-color.html
+  - subtest: Property background-color value 'hsl(from currentColor calc((h / 360)
+      * 360deg) s l)'
+    test: color-computed-relative-color.html
+  - subtest: Property background-color value 'hwb(from currentColor h w b)'
+    test: color-computed-relative-color.html
+  - subtest: Property background-color value 'lab(from currentColor l a b)'
+    test: color-computed-relative-color.html
+  - subtest: Property background-color value 'oklab(from currentColor l a b)'
+    test: color-computed-relative-color.html
+  - subtest: Property background-color value 'lch(from currentColor l c h)'
+    test: color-computed-relative-color.html
+  - subtest: Property background-color value 'oklch(from currentColor l c h)'
+    test: color-computed-relative-color.html
+  - subtest: Property background-color value 'color(from currentColor srgb r g b)'
+    test: color-computed-relative-color.html
+  - subtest: Property background-color value 'color(from currentColor srgb-linear
+      r g b)'
+    test: color-computed-relative-color.html
+  - subtest: Property background-color value 'color(from currentColor a98-rgb r g
+      b)'
+    test: color-computed-relative-color.html
+  - subtest: Property background-color value 'color(from currentColor rec2020 r g
+      b)'
+    test: color-computed-relative-color.html
+  - subtest: Property background-color value 'color(from currentColor prophoto-rgb
+      r g b)'
+    test: color-computed-relative-color.html
+  - subtest: Property background-color value 'color(from currentColor display-p3 r
+      g b)'
+    test: color-computed-relative-color.html
+  - subtest: Property background-color value 'color(from currentColor xyz x y z)'
+    test: color-computed-relative-color.html
+  - subtest: Property background-color value 'color(from currentColor xyz-d50 x y
+      z)'
+    test: color-computed-relative-color.html
+  - subtest: Property background-color value 'color(from currentColor xyz-d65 x y
+      z)'
+    test: color-computed-relative-color.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1917714
