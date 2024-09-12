@@ -37,3 +37,14 @@ links:
   - subtest: '"::part(mypart):has(:hover)" should be an invalid selector'
     test: pseudo-classes-after-part.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1917289
+- product: firefox
+  results:
+  - subtest: '"::part(mypart)::grammar-error" should be a valid selector'
+    test: pseudo-elements-after-part.html
+  - subtest: '"::part(mypart)::spelling-error" should be a valid selector'
+    test: pseudo-elements-after-part.html
+  - subtest: computed style for ::part()::grammar-error
+    test: pseudo-elements-after-part.html
+  - subtest: computed style for ::part()::spelling-error
+    test: pseudo-elements-after-part.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1916273
