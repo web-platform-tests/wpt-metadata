@@ -90,7 +90,8 @@ links:
           subtest: text changes apply to dir=auto on further ancestor after removing dir=auto from closer ancestor
         - test: dir-assorted.window.html
           subtest: 'directionality of bdi elements: dir=auto empty in rtl parent'
-    - label: interop-2024-dir
+    - url: ""
+      label: interop-2024-dir
       results:
         - test: dir_auto-input-script-R.html
         - test: dir-shadow-01.html
@@ -217,3 +218,7 @@ links:
       url: https://bugzilla.mozilla.org/show_bug.cgi?id=1918424
       results:
         - test: dir-slots-directionality.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1918426
+      results:
+        - test: dir-auto-dynamic-changes.window.html
