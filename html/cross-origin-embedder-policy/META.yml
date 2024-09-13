@@ -125,3 +125,16 @@ links:
       results:
         - test: dedicated-worker.https.html
           subtest: 'COEP: worker inherits COEP from blob URL creator, not owner.'
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1658677
+      results:
+        - test: cross-origin-isolated-permission-iframe.https.window.html
+          subtest: 'iframe (origin: https://www1.web-platform.test:8443) cross origin isolated (*) permission test'
+        - test: cross-origin-isolated-permission-iframe.https.window.html
+          subtest: 'iframe (origin: https://web-platform.test:8443) cross origin isolated (()) permission test'
+        - test: cross-origin-isolated-permission-iframe.https.window.html
+          subtest: 'iframe (origin: https://www1.web-platform.test:8443) cross origin isolated (undefined) permission test'
+        - test: cross-origin-isolated-permission-iframe.https.window.html
+          subtest: 'iframe (origin: https://www1.web-platform.test:8443) cross origin isolated (self) permission test'
+        - test: cross-origin-isolated-permission-iframe.https.window.html
+          subtest: 'iframe (origin: https://www1.web-platform.test:8443) cross origin isolated (()) permission test'
