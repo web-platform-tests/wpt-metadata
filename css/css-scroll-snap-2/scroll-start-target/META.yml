@@ -4,3 +4,23 @@ links:
   - subtest: scroll-start doesn't override text fragment navigation
     test: scroll-start-target-with-text-fragment-navigation.tentative.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1846980
+- product: firefox
+  results:
+  - subtest: scroll-start-target aligns with scroll-snap-align
+    test: scroll-start-target-aligns-with-snap-align.tentative.html
+  - test: scroll-start-target-nested-container.tentative.html
+  - subtest: display:none scroll-start-target becomes display:block
+    test: scroll-start-target-nested-container.tentative.html
+  - subtest: intermediate overflow:visible container becomes overflow:scroll
+    test: scroll-start-target-nested-container.tentative.html
+  - subtest: inner scroll-start-target takes precedence over outer
+    test: scroll-start-target-nested-container.tentative.html
+  - subtest: scroll containers can also be scroll-start-targets
+    test: scroll-start-target-nested-container.tentative.html
+  - subtest: scroll-start-target does not override anchor navigation.
+    test: scroll-start-target-with-anchor-navigation.tentative.html
+  - subtest: scroll-start-target does not override user scroll
+    test: scroll-start-target-with-user-programmatic-scroll.tentative.html
+  - subtest: scroll-start-target does not override programmatic scroll
+    test: scroll-start-target-with-user-programmatic-scroll.tentative.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1918805
