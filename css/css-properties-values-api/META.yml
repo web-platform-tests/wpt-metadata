@@ -1042,20 +1042,20 @@ links:
       results:
         - test: register-property-syntax-parsing.html
     - product: firefox
-      results:
-      - subtest: syntax:'<number>', initialValue:'calc(15 + (sign(100vh - 10px) * 5))'
-          is valid
-        test: register-property-syntax-parsing.html
-      - subtest: syntax:'<integer>', initialValue:'calc(15 + (sign(100vh - 10px) * 5))'
-          is valid
-        test: register-property-syntax-parsing.html
-      - subtest: syntax:'<angle>', initialValue:'calc(15deg + (sign(100vh - 10px) * 5deg))'
-          is valid
-        test: register-property-syntax-parsing.html
-      - subtest: syntax:'<time>', initialValue:'calc(15s + (sign(100vh - 10px) * 5s))'
-          is valid
-        test: register-property-syntax-parsing.html
-      - subtest: syntax:'<resolution>', initialValue:'calc(15dppx + (sign(100vh - 10px)
-          * 5dpi))' is valid
-        test: register-property-syntax-parsing.html
       url: https://bugzilla.mozilla.org/show_bug.cgi?id=1915981
+      results:
+        - test: register-property-syntax-parsing.html
+          subtest: syntax:'<number>', initialValue:'calc(15 + (sign(100vh - 10px) * 5))' is valid
+        - test: register-property-syntax-parsing.html
+          subtest: syntax:'<integer>', initialValue:'calc(15 + (sign(100vh - 10px) * 5))' is valid
+        - test: register-property-syntax-parsing.html
+          subtest: syntax:'<angle>', initialValue:'calc(15deg + (sign(100vh - 10px) * 5deg))' is valid
+        - test: register-property-syntax-parsing.html
+          subtest: syntax:'<time>', initialValue:'calc(15s + (sign(100vh - 10px) * 5s))' is valid
+        - test: register-property-syntax-parsing.html
+          subtest: syntax:'<resolution>', initialValue:'calc(15dppx + (sign(100vh - 10px) * 5dpi))' is valid
+    - product: safari
+      url: https://bugs.webkit.org/show_bug.cgi?id=279751
+      results:
+        - test: at-property.html
+          subtest: Attribute 'initial-value' makes the @property rule invalid for [var(--x)]
