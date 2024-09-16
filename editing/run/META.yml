@@ -271,3 +271,19 @@ links:
       compare innerHTML'
     test: inserthtml.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1916042
+- product: firefox
+  results:
+  - subtest: '[["indent",""]] "<p>foo<br>{}</p><p>extra" compare innerHTML'
+    test: indent.html
+  - subtest: '[["indent",""]] "foo[bar]<br>baz<p>extra" compare innerHTML'
+    test: indent.html
+  - subtest: '[["indent",""]] "foo[bar]<br><br><br><br>baz<p>extra" compare innerHTML'
+    test: indent.html
+  - subtest: '[["indent",""]] "<ol><li>[foo</li><ol><li>bar]</ol><li>baz</ol>" compare
+      innerHTML'
+    test: indent.html
+  - subtest: '[["indent",""]] "foo<!--bar-->[baz]<p>extra" compare innerHTML'
+    test: indent.html
+  - subtest: '[["indent",""]] "[foo]<!--bar-->baz<p>extra" compare innerHTML'
+    test: indent.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1918997
