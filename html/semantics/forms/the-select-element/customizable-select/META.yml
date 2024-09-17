@@ -25,19 +25,6 @@ links:
       results:
         - test: select-keyboard-behavior.tentative.html
     - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1878447
-      results:
-        - test: select-parsing.tentative.html
-          subtest: <button>s and <datalist>s should be allowed in <select>.
-        - test: select-parsing.tentative.html
-          subtest: </select> should close <button>.
-        - test: select-parsing.tentative.html
-          subtest: </select> should close <datalist>.
-        - test: select-parsing.tentative.html
-          subtest: <select> in <button> in <select> should remove inner <select>.
-        - test: select-parsing.tentative.html
-          subtest: <select> in <select><button><div> should remove inner <select>.
-    - product: firefox
       url: https://bugzilla.mozilla.org/show_bug.cgi?id=1889917
       results:
         - test: select-keyboard-behavior.tentative.html
@@ -75,3 +62,16 @@ links:
           subtest: 'custombutton-customdatalist: When the listbox is closed, the enter key should submit the form or do nothing.'
         - test: select-keyboard-behavior.tentative.html
           subtest: 'custombutton-customdatalist: When the listbox is open, the enter key should commit the selected option.'
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1878447
+      results:
+        - test: select-parsing.tentative.html
+          subtest: <button>s and <datalist>s should be allowed in <select>.
+        - test: select-parsing.tentative.html
+          subtest: </select> should close <button>.
+        - test: select-parsing.tentative.html
+          subtest: </select> should close <datalist>.
+        - test: select-parsing.tentative.html
+          subtest: <select> in <button> in <select> should remove inner <select>.
+        - test: select-parsing.tentative.html
+          subtest: <select> in <select><button><div> should remove inner <select>.
