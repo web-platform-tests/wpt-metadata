@@ -143,7 +143,8 @@ links:
           subtest: '.foo { .foo, .foo & { color: green; }}'
         - test: parsing.html
           subtest: '.foo { :is(.bar, .baz) { color: green; }}'
-    - label: interop-2024-nesting
+    - url: ""
+      label: interop-2024-nesting
       results:
         - test: conditional-properties.html
         - test: conditional-rules.html
@@ -247,3 +248,7 @@ links:
         - test: nesting-basic.html
         - test: nested-declarations-cssom.html
         - test: nested-declarations-matching.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1919279
+      results:
+        - test: contextually-invalid-selectors.html
