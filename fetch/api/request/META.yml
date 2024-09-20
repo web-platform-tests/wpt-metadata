@@ -61,3 +61,12 @@ links:
   - status: CRASH
     test: request-bad-port.any.sharedworker.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1889075
+- product: firefox
+  results:
+  - subtest: Check that the body of a new request can be duplicated from an existing
+      Request object
+    test: request-constructor-init-body-override.any.html
+  - subtest: Check that the body of a new request can be duplicated from an existing
+      Request object
+    test: request-constructor-init-body-override.any.worker.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1920135
