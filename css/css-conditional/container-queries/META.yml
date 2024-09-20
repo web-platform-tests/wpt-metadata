@@ -1512,3 +1512,29 @@ links:
   - subtest: Check scroll-state(snapped) matching for vertical writing-mode
     test: scroll-state-snapped-wm.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1918353
+- product: firefox
+  results:
+  - subtest: Size queries with content-box sizing and scrollbar-gutter:stable
+    test: query-content-box.html
+  - subtest: Size queries with border-box sizing and scrollbar-gutter:stable
+    test: query-content-box.html
+  - subtest: 'scroll-state(snapped) matching #snapped2 while scrolling'
+    test: scroll-state-snapped-snap-changing.html
+  - subtest: Match container in the shadow tree for a host child in the host child's
+      tree scope
+    test: style-container-for-shadow-dom.html
+  - subtest: Match ::part's parent in the shadow tree as the container for ::part
+    test: style-container-for-shadow-dom.html
+  - subtest: Match ::slotted as a container for its ::before
+    test: style-container-for-shadow-dom.html
+  - subtest: Match the ::part as a container for ::before on ::part elements
+    test: style-container-for-shadow-dom.html
+  - subtest: Match container for ::part selector in inner shadow tree for exportparts
+    test: style-container-for-shadow-dom.html
+  - subtest: Should match parent container inside shadow tree for ::part()
+    test: style-container-for-shadow-dom.html
+  - subtest: A :host::part rule matching a container in the shadow tree
+    test: style-container-for-shadow-dom.html
+  - subtest: 'style(--foo: var(--foo)) should match'
+    test: style-query-no-cycle.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1920200
