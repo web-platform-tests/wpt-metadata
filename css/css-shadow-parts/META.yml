@@ -48,3 +48,9 @@ links:
   - subtest: computed style for ::part()::spelling-error
     test: pseudo-elements-after-part.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1916273
+- product: firefox
+  results:
+  - subtest: selector with ::part(original name) does not match from inner scope that
+      exports the part
+    test: multiple-scopes.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1920246
