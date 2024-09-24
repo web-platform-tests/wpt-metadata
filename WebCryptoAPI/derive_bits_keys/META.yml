@@ -38,3 +38,8 @@ links:
           status: FAIL
         - test: pbkdf2.https.any.worker.html?5001-6000
           status: FAIL
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1917200
+      results:
+        - test: cfrg_curves_bits_curve25519.https.any.html
+          subtest: X25519 non-multiple of 8 bits
