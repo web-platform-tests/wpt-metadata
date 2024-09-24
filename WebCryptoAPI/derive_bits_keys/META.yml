@@ -43,3 +43,18 @@ links:
       results:
         - test: cfrg_curves_bits_curve25519.https.any.html
           subtest: X25519 non-multiple of 8 bits
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1920672
+      results:
+        - test: cfrg_curves_bits_curve25519.https.any.html
+          subtest: X25519 key derivation checks for all-zero value result with a key of order 0
+        - test: cfrg_curves_bits_curve25519.https.any.html
+          subtest: X25519 key derivation checks for all-zero value result with a key of order 1
+        - test: cfrg_curves_bits_curve25519.https.any.html
+          subtest: X25519 key derivation checks for all-zero value result with a key of order 8
+        - test: cfrg_curves_bits_curve25519.https.any.html
+          subtest: X25519 key derivation checks for all-zero value result with a key of order p-1 (order 2)
+        - test: cfrg_curves_bits_curve25519.https.any.html
+          subtest: X25519 key derivation checks for all-zero value result with a key of order p (=0, order 4)
+        - test: cfrg_curves_bits_curve25519.https.any.html
+          subtest: X25519 key derivation checks for all-zero value result with a key of order p+1 (=1, order 1)
