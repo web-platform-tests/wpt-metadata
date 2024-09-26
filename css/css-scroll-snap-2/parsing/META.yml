@@ -28,3 +28,14 @@ links:
       longhands
     test: scroll-start-target-shorthand.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1917050
+- product: firefox
+  results:
+  - subtest: Property scroll-start-target value 'auto'
+    test: scroll-start-target-computed.html
+  - subtest: Property scroll-start-target value 'none'
+    test: scroll-start-target-computed.html
+  - subtest: e.style['scroll-start-target'] = "none" should set the property value
+    test: scroll-start-target-valid.html
+  - subtest: e.style['scroll-start-target'] = "auto" should set the property value
+    test: scroll-start-target-valid.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1921315
