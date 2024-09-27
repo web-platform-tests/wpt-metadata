@@ -25,3 +25,10 @@ links:
       results:
         - test: Worker-formdata.any.worker.html
           subtest: Test FormData interface object
+    - product: chrome
+      url: https://crbug.com/370000835
+      results:
+        - test: Worker_cross_origin_security_err.htm
+          subtest: Cross-origin classic workers should fail to fetch
+        - test: Worker_cross_origin_security_err.htm
+          subtest: Cross-origin module workers should fail to fetch
