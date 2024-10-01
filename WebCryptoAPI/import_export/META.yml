@@ -87,3 +87,8 @@ links:
           subtest: 'Good parameters: X25519 bits (jwk, object(crv, d, x, kty), {name: X25519}, true, [deriveKey, deriveBits, deriveKey, deriveBits])'
         - test: okp_importKey_X25519.https.any.html
           subtest: 'Good parameters with ignored JWK alg: X25519 (jwk, object(crv, d, x, kty), {name: X25519}, true, [deriveKey, deriveBits, deriveKey, deriveBits])'
+    - product: safari
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1743582
+      results:
+        - test: ec_importKey.https.any.html
+          subtest: 'Good parameters: P-256 bits (spki, buffer(59, compressed), {name: ECDSA, namedCurve: P-256}, true, [verify])'
