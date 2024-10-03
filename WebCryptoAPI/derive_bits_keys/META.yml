@@ -65,3 +65,8 @@ links:
           subtest: ECDH derivation with 0 as 'length' parameter
         - test: derived_bits_length.https.any.html
           subtest: X25519 derivation with 0 as 'length' parameter
+    - product: chrome
+      url: https://issues.chromium.org/issues/352364580
+      results:
+        - test: derived_bits_length.https.any.html
+          subtest: HKDF derivation with 0 as 'length' parameter
