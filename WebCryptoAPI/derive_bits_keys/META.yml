@@ -70,3 +70,10 @@ links:
       results:
         - test: derived_bits_length.https.any.html
           subtest: HKDF derivation with 0 as 'length' parameter
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1922522
+      results:
+        - test: derived_bits_length.https.any.html
+          subtest: ECDH derivation with 0 as 'length' parameter
+        - test: derived_bits_length.https.any.html
+          subtest: X25519 derivation with 0 as 'length' parameter
