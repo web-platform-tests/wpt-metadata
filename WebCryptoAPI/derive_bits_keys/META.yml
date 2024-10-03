@@ -58,3 +58,10 @@ links:
           subtest: X25519 key derivation checks for all-zero value result with a key of order p (=0, order 4)
         - test: cfrg_curves_bits_curve25519.https.any.html
           subtest: X25519 key derivation checks for all-zero value result with a key of order p+1 (=1, order 1)
+    - product: safari
+      url: https://bugs.webkit.org/show_bug.cgi?id=276916
+      results:
+        - test: derived_bits_length.https.any.html
+          subtest: ECDH derivation with 0 as 'length' parameter
+        - test: derived_bits_length.https.any.html
+          subtest: X25519 derivation with 0 as 'length' parameter
