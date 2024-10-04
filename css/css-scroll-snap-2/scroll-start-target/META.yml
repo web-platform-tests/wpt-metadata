@@ -24,3 +24,10 @@ links:
   - subtest: scroll-start-target does not override programmatic scroll
     test: scroll-start-target-with-user-programmatic-scroll.tentative.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1918805
+- product: firefox
+  results:
+  - subtest: 'display:block scroll-start-target becomes display: none'
+    test: scroll-start-target-display-toggled.tentative.html
+  - subtest: 'display:none scroll-start-target becomes display: block'
+    test: scroll-start-target-display-toggled.tentative.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1922719
