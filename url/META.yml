@@ -81,12 +81,10 @@ links:
       results:
         - test: failure.html
           status: CRASH
-    - url: ""
-      label: interop-2022-webcompat
+    - label: interop-2022-webcompat
       results:
         - test: toascii.window.html
-    - url: ""
-      label: interop-2023-url
+    - label: interop-2023-url
       results:
         - test: a-element-origin-xhtml.xhtml
         - test: a-element-origin.html
@@ -1233,3 +1231,12 @@ links:
           subtest: 'Parsing: <http://example example.com> against <http://other.com/>'
         - test: a-element.html?exclude=(file|javascript|mailto)
           subtest: 'Parsing: <http://GOO 　goo.com> against <http://other.com/>'
+    - product: chrome
+      url: https://issues.chromium.org/issues/40063064
+      results:
+        - test: url-setters.any.html?exclude=(file|javascript|mailto)
+          subtest: 'URL: Setting <ssh://me@example.net>.protocol = ''http'' Can’t switch from non-special scheme to special'
+        - test: url-setters.any.html?exclude=(file|javascript|mailto)
+          subtest: 'URL: Setting <ssh://me@example.net>.protocol = ''https'''
+        - test: url-setters.any.html?exclude=(file|javascript|mailto)
+          subtest: 'URL: Setting <ssh://example.net>.protocol = ''file'''
