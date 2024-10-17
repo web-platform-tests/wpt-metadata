@@ -1775,3 +1775,7 @@ links:
           subtest: e.style['color'] = "rgb(from rebeccapurple r calc(b * .5 - g * .5) 10)" should set the property value
         - test: color-valid-relative-color.html
           subtest: e.style['color'] = "lab(from lab(50 -30 40) l calc(a / 3) calc(b / 2))" should set the property value
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1921766
+      results:
+        - test: relative-color-out-of-gamut.html
