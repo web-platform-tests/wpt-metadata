@@ -369,3 +369,63 @@ links:
       size)" to "calc-size(calc-size(10px, (size * 2)), size + 20px)"
     test: calc-size-interpolation-expansion.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1913522
+- product: firefox
+  results:
+  - subtest: 'Compositing: property <height> underlying [fit-content] from add [100px]
+      to add [200px] at (-0.3) should be [120px]'
+    test: interpolate-size-height-composition.html
+  - subtest: 'Compositing: property <height> underlying [fit-content] from add [100px]
+      to add [200px] at (0) should be [150px]'
+    test: interpolate-size-height-composition.html
+  - subtest: 'Compositing: property <height> underlying [fit-content] from add [100px]
+      to add [200px] at (0.5) should be [200px]'
+    test: interpolate-size-height-composition.html
+  - subtest: 'Compositing: property <height> underlying [fit-content] from add [100px]
+      to add [200px] at (1) should be [250px]'
+    test: interpolate-size-height-composition.html
+  - subtest: 'Compositing: property <height> underlying [fit-content] from add [100px]
+      to add [200px] at (1.5) should be [300px]'
+    test: interpolate-size-height-composition.html
+  - subtest: 'Compositing: property <max-width> underlying [100px] from add [fit-content]
+      to add [max-content] at (-0.3) should be [calc-size(fit-content, 100px + size)]'
+    test: interpolate-size-max-width-composition.html
+  - subtest: 'Compositing: property <max-width> underlying [100px] from add [fit-content]
+      to add [max-content] at (0) should be [calc-size(fit-content, 100px + size)]'
+    test: interpolate-size-max-width-composition.html
+  - subtest: 'Compositing: property <max-width> underlying [100px] from add [fit-content]
+      to add [max-content] at (0.5) should be [calc-size(max-content, 100px + size)]'
+    test: interpolate-size-max-width-composition.html
+  - subtest: 'Compositing: property <max-width> underlying [100px] from add [fit-content]
+      to add [max-content] at (1) should be [calc-size(max-content, 100px + size)]'
+    test: interpolate-size-max-width-composition.html
+  - subtest: 'Compositing: property <max-width> underlying [100px] from add [fit-content]
+      to add [max-content] at (1.5) should be [calc-size(max-content, 100px + size)]'
+    test: interpolate-size-max-width-composition.html
+  - subtest: 'Compositing: property <width> underlying [100px] from add [100px] to
+      add [auto] at (-0.3) should be [170px]'
+    test: interpolate-size-width-composition.html
+  - subtest: 'Compositing: property <width> underlying [100px] from add [100px] to
+      add [auto] at (0.5) should be [250px]'
+    test: interpolate-size-width-composition.html
+  - subtest: 'Compositing: property <width> underlying [100px] from add [100px] to
+      add [auto] at (1) should be [300px]'
+    test: interpolate-size-width-composition.html
+  - subtest: 'Compositing: property <width> underlying [100px] from add [100px] to
+      add [auto] at (1.5) should be [350px]'
+    test: interpolate-size-width-composition.html
+  - subtest: 'Compositing: property <width> underlying [100px] from add [fit-content]
+      to add [auto] at (-0.3) should be [200px]'
+    test: interpolate-size-width-composition.html
+  - subtest: 'Compositing: property <width> underlying [100px] from add [fit-content]
+      to add [auto] at (0) should be [200px]'
+    test: interpolate-size-width-composition.html
+  - subtest: 'Compositing: property <width> underlying [100px] from add [fit-content]
+      to add [auto] at (0.5) should be [300px]'
+    test: interpolate-size-width-composition.html
+  - subtest: 'Compositing: property <width> underlying [100px] from add [fit-content]
+      to add [auto] at (1) should be [300px]'
+    test: interpolate-size-width-composition.html
+  - subtest: 'Compositing: property <width> underlying [100px] from add [fit-content]
+      to add [auto] at (1.5) should be [300px]'
+    test: interpolate-size-width-composition.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1925361
