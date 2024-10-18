@@ -4557,3 +4557,23 @@ links:
   - test: position-anchor-004.html
   - test: position-anchor-target-with-children.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1923151
+- product: firefox
+  results:
+  - subtest: anchor-scope:all on sibling
+    test: anchor-scope-basic.html
+  - subtest: anchor-scope:all scopes multiple names
+    test: anchor-scope-basic.html
+  - subtest: anchor-scope:--a,--b scopes --a and --b
+    test: anchor-scope-basic.html
+  - subtest: anchor-scope:--a scopes only --a
+    test: anchor-scope-basic.html
+  - subtest: anchor-scope:--b scopes only --b
+    test: anchor-scope-basic.html
+  - subtest: anchor-scope:--a scopes only --a (out-of-flow anchors)
+    test: anchor-scope-basic.html
+  - subtest: anchor-scope:--a scopes only --a (both out-of-flow and in-flow anchors)
+    test: anchor-scope-basic.html
+  - subtest: anchor-scope:--a scopes only --a (both out-of-flow and in-flow anchors,
+      reverse)
+    test: anchor-scope-basic.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1925591
