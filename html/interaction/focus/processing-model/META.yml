@@ -1,16 +1,27 @@
 links:
-- product: firefox
-  results:
-  - subtest: Disabling the active element (making it expressly inert)
-    test: focus-fixup-rule-one-no-dialogs.html
-  - subtest: Hiding the active element
-    test: focus-fixup-rule-one-no-dialogs.html
-  - subtest: Disabling <fieldset> affects its descendants
-    test: focus-fixup-rule-one-no-dialogs.html
-  - subtest: Changing the first legend element in disabled <fieldset>
-    test: focus-fixup-rule-one-no-dialogs.html
-  - subtest: Removing the tabindex attribute from a div
-    test: focus-fixup-rule-one-no-dialogs.html
-  - subtest: Disabling contenteditable
-    test: focus-fixup-rule-one-no-dialogs.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1745028
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1745028
+      results:
+        - test: focus-fixup-rule-one-no-dialogs.html
+          subtest: Disabling the active element (making it expressly inert)
+        - test: focus-fixup-rule-one-no-dialogs.html
+          subtest: Hiding the active element
+        - test: focus-fixup-rule-one-no-dialogs.html
+          subtest: Disabling <fieldset> affects its descendants
+        - test: focus-fixup-rule-one-no-dialogs.html
+          subtest: Changing the first legend element in disabled <fieldset>
+        - test: focus-fixup-rule-one-no-dialogs.html
+          subtest: Removing the tabindex attribute from a div
+        - test: focus-fixup-rule-one-no-dialogs.html
+          subtest: Disabling contenteditable
+    - product: safari
+      url: https://bugs.webkit.org/show_bug.cgi?id=242456
+      results:
+        - test: focusVisible.html
+          subtest: 'FocusOptions.focusVisible: button'
+        - test: focusVisible.html
+          subtest: 'FocusOptions.focusVisible: input'
+        - test: focusVisible.html
+          subtest: 'FocusOptions.focusVisible: #contenteditable'
+        - test: focusVisible.html
+          subtest: 'FocusOptions.focusVisible: #tabindex'
