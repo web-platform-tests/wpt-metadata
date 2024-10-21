@@ -4577,3 +4577,14 @@ links:
       reverse)
     test: anchor-scope-basic.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1925591
+- product: firefox
+  results:
+  - subtest: Changing to a non-matching anchor-name should restore the box to its
+      normal position.
+    test: anchor-scroll-cleanup.html
+  - subtest: Changing to a non-matching position-anchor should restore the box to
+      its normal position.
+    test: anchor-scroll-cleanup.html
+  - subtest: Removing the scroller should restore the box to its normal position.
+    test: anchor-scroll-cleanup.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1925943
