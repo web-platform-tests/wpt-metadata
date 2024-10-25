@@ -626,3 +626,8 @@ links:
           subtest: No blank lines around <h5> ("<div>123<h5>abc</h5>def")
         - test: getter.html
           subtest: No blank lines around <h6> ("<div>123<h6>abc</h6>def")
+    - product: chrome
+      url: https://issues.chromium.org/issues/373924120
+      results:
+        - test: innertext-whitespace-pre-line.html
+          subtest: innerText has collapsed whitespace but preserved newlines with pre-line
