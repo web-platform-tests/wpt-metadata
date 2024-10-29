@@ -239,3 +239,8 @@ links:
           subtest: '-webkit-appearance: slider-horizontal (invalid)'
         - test: appearance-cssom-001.html?include=Invalid
           subtest: '-webkit-appearance: push-button (invalid)'
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1036853
+      results:
+        - test: user-select-inheritance.html
+          subtest: user-select:contain should not be inherited.
