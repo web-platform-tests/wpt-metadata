@@ -77,3 +77,10 @@ links:
           subtest: ECDH derivation with 0 as 'length' parameter
         - test: derived_bits_length.https.any.html
           subtest: X25519 derivation with 0 as 'length' parameter
+    - product: safari
+      url: https://bugs.webkit.org/show_bug.cgi?id=282247
+      results:
+        - test: derived_bits_length.https.any.html
+          subtest: ECDH derivation with 230 as 'length' parameter
+        - test: derived_bits_length.https.any.html
+          subtest: X25519 derivation with 230 as 'length' parameter
