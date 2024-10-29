@@ -1240,3 +1240,9 @@ links:
           subtest: 'URL: Setting <ssh://me@example.net>.protocol = ''https'''
         - test: url-setters.any.html?exclude=(file|javascript|mailto)
           subtest: 'URL: Setting <ssh://example.net>.protocol = ''file'''
+    - product: safari
+      url: https://bugs.webkit.org/show_bug.cgi?id=229427
+      results:
+        - test: url-setters-a-area.window.html?exclude=(file|javascript|mailto)
+        - test: url-setters.any.html?exclude=(file|javascript|mailto)
+        - test: url-setters.any.worker.html?exclude=(file|javascript|mailto)
