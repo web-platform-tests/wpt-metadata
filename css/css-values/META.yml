@@ -1177,3 +1177,49 @@ links:
   - subtest: 'CSS Values and Units Test: attr'
     test: attr-all-types.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1918642
+- product: firefox
+  results:
+  - subtest: sign(10px - 1em) should be used-value-equivalent to 0; fontSize=10px
+    test: signs-abs-computed.html
+  - subtest: sign(10px - 2em) should be used-value-equivalent to -1; fontSize=10px
+    test: signs-abs-computed.html
+  - subtest: calc(2.5 - sign(41px - 2em) / 2) should be used-value-equivalent to 2
+    test: signs-abs-computed.html
+  - subtest: calc(2.5 - sign(40px - 2em) / 2) should be used-value-equivalent to 2.5
+    test: signs-abs-computed.html
+  - subtest: calc(2.5 - sign(39px - 2em) / 2) should be used-value-equivalent to 3
+    test: signs-abs-computed.html
+  - subtest: calc(3 + sign(42px - 2em)) should be used-value-equivalent to 4
+    test: signs-abs-computed.html
+  - subtest: calc(3 + sign(40px - 2em)) should be used-value-equivalent to 3
+    test: signs-abs-computed.html
+  - subtest: calc(3 + sign(38px - 2em)) should be used-value-equivalent to 2
+    test: signs-abs-computed.html
+  - subtest: calc(90deg + 30deg * sign(42px - 2em)) should be used-value-equivalent
+      to 120deg
+    test: signs-abs-computed.html
+  - subtest: calc(90deg + 30deg * sign(40px - 2em)) should be used-value-equivalent
+      to 90deg
+    test: signs-abs-computed.html
+  - subtest: calc(90deg + 30deg * sign(38px - 2em)) should be used-value-equivalent
+      to 60deg
+    test: signs-abs-computed.html
+  - subtest: calc(5s + 15s * sign(42px - 2em)) should be used-value-equivalent to
+      20s
+    test: signs-abs-computed.html
+  - subtest: calc(5s + 15s * sign(40px - 2em)) should be used-value-equivalent to
+      5s
+    test: signs-abs-computed.html
+  - subtest: calc(5s + 15s * sign(38px - 2em)) should be used-value-equivalent to
+      -10s
+    test: signs-abs-computed.html
+  - subtest: calc(2.5 - sign(33px - 2rem) / 2) should be used-value-equivalent to
+      2
+    test: signs-abs-computed.html
+  - subtest: calc(2.5 - sign(32px - 2rem) / 2) should be used-value-equivalent to
+      2.5
+    test: signs-abs-computed.html
+  - subtest: calc(2.5 - sign(31px - 2rem) / 2) should be used-value-equivalent to
+      3
+    test: signs-abs-computed.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1928480
