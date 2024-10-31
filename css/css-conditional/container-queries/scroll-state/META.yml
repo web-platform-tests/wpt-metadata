@@ -109,3 +109,10 @@ links:
   - subtest: '@container: scroll-state(stuck) layout change 1'
     test: scroll-state-stuck-layout-change.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1926947
+- product: firefox
+  results:
+  - subtest: ::before/::after depending on snapped query
+    test: scroll-state-snapped-pseudo.html
+  - subtest: ::before/::after depending on stuck query
+    test: scroll-state-stuck-pseudo.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1928337
