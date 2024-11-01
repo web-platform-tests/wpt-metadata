@@ -745,3 +745,26 @@ links:
       100s, all allow-discrete 100s" does not cancel running transitions'
     test: CSSTransition-not-canceling.tentative.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1905553
+- product: firefox
+  results:
+  - subtest: background-position-x length(pt) / events
+    test: properties-value-inherit-001.html
+  - subtest: background-position-x length(pc) / events
+    test: properties-value-inherit-001.html
+  - subtest: background-position-x length(px) / events
+    test: properties-value-inherit-001.html
+  - subtest: background-position-x length(em) / events
+    test: properties-value-inherit-001.html
+  - subtest: background-position-x length(ex) / events
+    test: properties-value-inherit-001.html
+  - subtest: background-position-x length(mm) / events
+    test: properties-value-inherit-001.html
+  - subtest: background-position-x length(cm) / events
+    test: properties-value-inherit-001.html
+  - subtest: background-position-x length(in) / events
+    test: properties-value-inherit-001.html
+  - subtest: background-position-x percentage(%) / events
+    test: properties-value-inherit-001.html
+  - subtest: background-position-x length-em(em) / events
+    test: properties-value-inherit-003.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1928757
