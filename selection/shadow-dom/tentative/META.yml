@@ -1,0 +1,10 @@
+links:
+    - product: safari
+      url: https://bugs.webkit.org/show_bug.cgi?id=281587
+      results:
+        - test: Selection-isCollapsed.html
+          subtest: Selection in shadow tree is not collapsed
+        - test: Selection-isCollapsed.html
+          subtest: Selection between light and shadow tree is not valid and is collapsed. Composed range is not collapsed
+        - test: Selection-isCollapsed.html
+          subtest: Selection between two shadow trees is not valid and is collapsed. Composed range is not collapsed
