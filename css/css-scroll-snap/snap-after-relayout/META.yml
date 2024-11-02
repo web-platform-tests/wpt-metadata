@@ -1,30 +1,35 @@
 links:
-- label: interop-2022-scrolling
-  results:
-  - test: adding-only-snap-area.html
-  - test: adding-snap-area-while-snapped.html
-  - test: changing-scroll-snap-align.html
-  - test: changing-scroll-snap-type.html
-  - test: move-current-target.html
-  - test: remove-current-target.html
-  - test: resnap-to-focused.html
-  - test: snap-to-different-targets.html
-- product: firefox
-  results:
-  - test: move-current-target.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1841306
-- product: firefox
-  results:
-  - test: changing-scroll-snap-align.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1856207
-- product: firefox
-  results:
-  - subtest: focused area prefered over targeted area.
-    test: layout-follows-focused-targeted-block.html
-  - subtest: targeted area prefered over non-focused area.
-    test: layout-follows-focused-targeted-block.html
-  - subtest: block axis area is preferred.
-    test: layout-follows-focused-targeted-block.html
-  - subtest: block axis area is preferred (vertical writing-mode).
-    test: layout-follows-focused-targeted-block.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1899897
+    - label: interop-2022-scrolling
+      results:
+        - test: adding-only-snap-area.html
+        - test: adding-snap-area-while-snapped.html
+        - test: changing-scroll-snap-align.html
+        - test: changing-scroll-snap-type.html
+        - test: move-current-target.html
+        - test: remove-current-target.html
+        - test: resnap-to-focused.html
+        - test: snap-to-different-targets.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1841306
+      results:
+        - test: move-current-target.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1856207
+      results:
+        - test: changing-scroll-snap-align.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1899897
+      results:
+        - test: layout-follows-focused-targeted-block.html
+          subtest: focused area prefered over targeted area.
+        - test: layout-follows-focused-targeted-block.html
+          subtest: targeted area prefered over non-focused area.
+        - test: layout-follows-focused-targeted-block.html
+          subtest: block axis area is preferred.
+        - test: layout-follows-focused-targeted-block.html
+          subtest: block axis area is preferred (vertical writing-mode).
+    - product: safari
+      url: https://bugs.webkit.org/show_bug.cgi?id=261282
+      results:
+        - test: snap-to-different-targets.html
+          subtest: Scroller should snap to at least one of the targets if unable to snap to both after a layout change.
