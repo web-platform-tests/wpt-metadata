@@ -32,7 +32,7 @@ jobs:
       with:
         script: |
           console.log("Starting to list artifacts");
-          var artifacts = await github.actions.listWorkflowRunArtifacts({
+          var artifacts = await github.rest.actions.listWorkflowRunArtifacts({
               owner: context.repo.owner,
               repo: context.repo.repo,
               run_id: context.payload.workflow_run.id,
@@ -42,7 +42,7 @@ jobs:
             return artifact.name == "pr_number"
           })[0];
           console.log("Downloading artifacts");
-          var download = await github.actions.downloadArtifact({
+          var download = await github.rest.actions.downloadArtifact({
               owner: context.repo.owner,
               repo: context.repo.repo,
               artifact_id: matchArtifact.id,
