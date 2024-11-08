@@ -28,7 +28,7 @@ jobs:
     # As of 2023-05-18, https://github.com/actions/download-artifact cannot download artifacts across workflows.
     # As a result, have to use the script GitHub provides to download the artifact.
     - name: 'Download PR number'
-      uses: actions/github-script@v3.1.0
+      uses: actions/github-script@v7
       with:
         script: |
           console.log("Starting to list artifacts");
