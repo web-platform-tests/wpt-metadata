@@ -1,1466 +1,1428 @@
 links:
-- product: firefox
-  results:
-  - subtest: Registered color with light color-scheme and light-dark()
-    test: registered-color-style-queries.html
-  - subtest: Registered color with dark color-scheme and light-dark()
-    test: registered-color-style-queries.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1892491
-- label: interop-2023-container
-  results:
-  - test: style-not-sharing-float.html
-  - test: container-computed.html
-  - test: container-size-shadow-invalidation.html
-  - test: display-in-container.html
-  - test: container-type-parsing.html
-  - test: transition-scrollbars.html
-  - test: dialog-backdrop-remove.html
-  - test: pseudo-elements-006.html
-  - test: canvas-as-container-003.html
-  - test: canvas-as-container-004.html
-  - test: inline-size-containment-vertical-rl.html
-  - test: container-parsing.html
-  - test: idlharness.html
-  - test: font-relative-calc-dynamic.html
-  - test: pseudo-elements-004.html
-  - test: container-nested.html
-  - test: container-units-invalidation.html
-  - test: container-units-media-queries.html
-  - test: svg-foreignobject-child-container.html
-  - test: container-units-in-at-container-fallback.html
-  - test: canvas-as-container-005.html
-  - test: multicol-inside-container.html
-  - test: fragmented-container-001.html
-  - test: ineligible-containment.html
-  - test: container-size-invalidation.html
-  - test: container-size-nested-invalidation.html
-  - test: container-longhand-animation-type.html
-  - test: container-name-tree-scoped.html
-  - test: transition-style-change-event-002.html
-  - test: container-units-content-box.html
-  - test: grid-container.html
-  - test: orthogonal-wm-container-query.html
-  - test: svg-g-no-size-container.html
-  - test: backdrop-invalidation.html
-  - test: container-for-shadow-dom.html
-  - test: get-animations.html
-  - test: container-units-animation.html
-  - test: svg-foreignobject-no-size-container.html
-  - test: conditional-container-status.html
-  - test: size-container-no-principal-box.html
-  - test: transition-style-change-event.html
-  - test: fieldset-legend-change.html
-  - test: container-units-gradient-invalidation.html
-  - test: container-units-gradient.html
-  - test: aspect-ratio-feature-evaluation.html
-  - test: font-relative-units.html
-  - test: svg-root-size-container.html
-  - test: pseudo-elements-002.html
-  - test: viewport-units-dynamic.html
-  - test: container-size-invalidation-after-load.html
-  - test: top-layer-dialog-container.html
-  - test: canvas-as-container-002.html
-  - test: grid-item-container.html
-  - test: chrome-legacy-skip-recalc.html
-  - test: container-units-selection.html
-  - test: counters-flex-circular.html
-  - test: counters-in-container-dynamic.html
-  - test: container-name-parsing.html
-  - test: layout-dependent-focus.html
-  - test: at-container-serialization.html
-  - test: container-inheritance.html
-  - test: container-units-basic.html
-  - test: auto-scrollbars.html
-  - test: pseudo-elements-003.html
-  - test: font-relative-units-dynamic.html
-  - test: inline-size-bfc-floats.html
-  - test: viewport-units.html
-  - test: table-inside-container-changing-display.html
-  - test: unsupported-axis.html
-  - test: column-spanner-in-container.html
-  - test: container-name-computed.html
-  - test: container-units-ineligible-container.html
-  - test: container-type-computed.html
-  - test: style-change-in-container.html
-  - test: animation-container-size.html
-  - test: nested-query-containers.html
-  - test: change-display-in-container.html
-  - test: query-content-box.html
-  - test: top-layer-dialog-backdrop.html
-  - test: container-type-invalidation.html
-  - test: container-units-in-at-container.html
-  - test: multicol-container-001.html
-  - test: counters-in-container.html
-  - test: percentage-padding-orthogonal.html
-  - test: pseudo-elements-008.html
-  - test: top-layer-dialog.html
-  - test: container-type-layout-invalidation.html
-  - test: iframe-invalidation.html
-  - test: resize-while-content-visibility-hidden.html
-  - test: pseudo-elements-007.html
-  - test: container-units-shadow.html
-  - test: calc-evaluation.html
-  - test: container-name-invalidation.html
-  - test: container-selection.html
-  - test: container-units-in-at-container-dynamic.html
-  - test: iframe-in-container-invalidation.html
-  - test: reattach-container-with-dirty-child.html
-  - test: container-type-containment.html
-  - test: display-none.html
-  - test: inline-size-containment.html
-  - test: top-layer-nested-dialog.html
-  - test: container-inside-multicol-with-table.html
-  - test: dialog-backdrop-create.html
-  - test: display-contents.html
-  - test: never-match-container.html
-  - test: container-inner-at-rules.html
-  - test: whitespace-update-after-removal.html
-  - test: container-units-small-viewport-fallback.html
-  - test: at-container-parsing.html
-  - test: inline-size-and-min-width.html
-  - test: animation-container-type-dynamic.html
-  - test: animation-nested-animation.html
-  - test: pseudo-elements-001.html
-  - test: sibling-layout-dependency.html
-  - test: size-feature-evaluation.html
-  - test: canvas-as-container-001.html
-  - test: canvas-as-container-006.html
-  - test: container-for-cue.html
-  - test: deep-nested-inline-size-containers.html
-  - test: animation-nested-transition.html
-  - test: query-evaluation.html
-  url: ''
-- product: chrome
-  results:
-  - subtest: Property container value 'size style / name'
-    test: container-computed.html
-  - subtest: Property container value 'inline-size style/ name'
-    test: container-computed.html
-  - subtest: e.style['container-type'] = "style" should set the property value
-    test: container-type-parsing.html
-  - subtest: e.style['container-type'] = "inline-size style" should set the property
-      value
-    test: container-type-parsing.html
-  - subtest: e.style['container-type'] = "style inline-size" should set the property
-      value
-    test: container-type-parsing.html
-  - subtest: e.style['container-type'] = "style size" should set the property value
-    test: container-type-parsing.html
-  - subtest: e.style['container'] = "size style / none" should set the property value
-    test: container-parsing.html
-  - test: custom-property-style-queries.html
-  - subtest: 'style((width: 1px))'
-    test: query-evaluation.html
-  - subtest: 'style(not (height: 2px))'
-    test: query-evaluation.html
-  - subtest: 'style((width: 1px) and (width: 1px))'
-    test: query-evaluation.html
-  - subtest: 'style((width: 1px) and (width: 1px) and (width: 1px))'
-    test: query-evaluation.html
-  - subtest: 'style((width: 1px) or (width: 1px))'
-    test: query-evaluation.html
-  - subtest: 'style((width: 1px) or (width: 1px) or (width: 1px))'
-    test: query-evaluation.html
-  - subtest: 'style((height: 2px) or (width: 1px) or (width: 1px))'
-    test: query-evaluation.html
-  - subtest: 'style((width: 1px) or (height: 2px) or (width: 1px))'
-    test: query-evaluation.html
-  - subtest: 'style((width: 1px) or (width: 1px) or (height: 2px))'
-    test: query-evaluation.html
-  - subtest: 'style((unknown) or (width: 1px) or (width: 1px))'
-    test: query-evaluation.html
-  - subtest: 'style((width: 1px) or (unknown) or (width: 1px))'
-    test: query-evaluation.html
-  - subtest: 'style((width: 1px) or (width: 1px) or (unknown))'
-    test: query-evaluation.html
-  - subtest: 'style((unknown) or (height: 2px) or (width: 1px))'
-    test: query-evaluation.html
-  - subtest: 'style(not ((width: 1px) and (height: 2px)))'
-    test: query-evaluation.html
-  - subtest: 'style((height: 2px) or (not ((height: 2px) and (width: 1px))))'
-    test: query-evaluation.html
-  url: https://crbug.com/1302630
-- product: firefox
-  results:
-  - test: container-computed.html
-  - test: container-parsing.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1763828
-- product: firefox
-  results:
-  - test: container-type-parsing.html
-  - test: container-units-typed-om.html
-  - test: container-units-invalidation.html
-  - test: canvas-as-container-005.html
-  - test: fragmented-container-001.html
-  - test: container-units-animation.html
-  - test: svg-root-size-container.html
-  - test: container-units-selection.html
-  - test: container-inheritance.html
-  - test: container-units-basic.html
-  - test: container-type-computed.html
-  - test: multicol-container-001.html
-  - test: container-type-layout-invalidation.html
-  - test: container-units-shadow.html
-  - test: container-type-containment.html
-  - test: container-units-small-viewport-fallback.html
-  - test: canvas-as-container-006.html
-  - test: container-units-computational-independence.html
-  - test: deep-nested-inline-size-containers.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1769236
-- product: firefox
-  results:
-  - subtest: CSS.cqw function
-    test: container-units-typed-om.html
-  - subtest: Reify value with cqw unit
-    test: container-units-typed-om.html
-  - subtest: Set value with cqw unit (string)
-    test: container-units-typed-om.html
-  - subtest: Set value with cqw unit (CSS.cqw)
-    test: container-units-typed-om.html
-  - subtest: CSS.cqh function
-    test: container-units-typed-om.html
-  - subtest: Reify value with cqh unit
-    test: container-units-typed-om.html
-  - subtest: Set value with cqh unit (string)
-    test: container-units-typed-om.html
-  - subtest: Set value with cqh unit (CSS.cqh)
-    test: container-units-typed-om.html
-  - subtest: CSS.cqi function
-    test: container-units-typed-om.html
-  - subtest: Reify value with cqi unit
-    test: container-units-typed-om.html
-  - subtest: Set value with cqi unit (string)
-    test: container-units-typed-om.html
-  - subtest: Set value with cqi unit (CSS.cqi)
-    test: container-units-typed-om.html
-  - subtest: CSS.cqb function
-    test: container-units-typed-om.html
-  - subtest: Reify value with cqb unit
-    test: container-units-typed-om.html
-  - subtest: Set value with cqb unit (string)
-    test: container-units-typed-om.html
-  - subtest: Set value with cqb unit (CSS.cqb)
-    test: container-units-typed-om.html
-  - subtest: CSS.cqmin function
-    test: container-units-typed-om.html
-  - subtest: Reify value with cqmin unit
-    test: container-units-typed-om.html
-  - subtest: Set value with cqmin unit (string)
-    test: container-units-typed-om.html
-  - subtest: Set value with cqmin unit (CSS.cqmin)
-    test: container-units-typed-om.html
-  - subtest: CSS.cqmax function
-    test: container-units-typed-om.html
-  - subtest: Reify value with cqmax unit
-    test: container-units-typed-om.html
-  - subtest: Set value with cqmax unit (string)
-    test: container-units-typed-om.html
-  - subtest: Set value with cqmax unit (CSS.cqmax)
-    test: container-units-typed-om.html
-  - subtest: Color for ::before depending on container
-    test: pseudo-elements-004.html
-  - subtest: Color for ::after depending on container
-    test: pseudo-elements-004.html
-  - subtest: Color for ::marker depending on container
-    test: pseudo-elements-004.html
-  - subtest: Color for ::first-line depending on container
-    test: pseudo-elements-004.html
-  - subtest: Color for ::first-letter depending on container
-    test: pseudo-elements-004.html
-  - subtest: Color for ::backdrop depending on container
-    test: pseudo-elements-004.html
-  - subtest: unitType with container-relative units
-    test: container-units-svglength.html
-  - subtest: cqw,cqh can be resolved
-    test: container-units-svglength.html
-  - subtest: cqi,cqb can be resolved
-    test: container-units-svglength.html
-  - subtest: cqmin,cqmax can be resolved
-    test: container-units-svglength.html
-  - subtest: calc() with container-relative units can be resolved
-    test: container-units-svglength.html
-  - subtest: Can modify value with container-relative units
-    test: container-units-svglength.html
-  - subtest: 'CSS Container Queries Test: container-relative units in SVGLength'
-    test: container-units-svglength.html
-  - subtest: Container ineligible for containment
-    test: ineligible-containment.html
-  - subtest: Changing containment eligibility invalidates style
-    test: ineligible-containment.html
-  - subtest: Reference variable is applied
-    test: container-longhand-animation-type.html
-  - subtest: 'style(--inner: true)'
-    test: custom-property-style-queries.html
-  - subtest: style(--inner:true)
-    test: custom-property-style-queries.html
-  - subtest: style(--inner:true )
-    test: custom-property-style-queries.html
-  - subtest: 'style(--inner: true )'
-    test: custom-property-style-queries.html
-  - subtest: 'style(--inner-no-space: true)'
-    test: custom-property-style-queries.html
-  - subtest: style(--inner-no-space:true)
-    test: custom-property-style-queries.html
-  - subtest: style(--inner-no-space:true )
-    test: custom-property-style-queries.html
-  - subtest: 'style(--inner-no-space: true )'
-    test: custom-property-style-queries.html
-  - subtest: 'style(--inner-space-after: true)'
-    test: custom-property-style-queries.html
-  - subtest: style(--inner-space-after:true)
-    test: custom-property-style-queries.html
-  - subtest: style(--inner-space-after:true )
-    test: custom-property-style-queries.html
-  - subtest: 'style(--inner-space-after: true )'
-    test: custom-property-style-queries.html
-  - subtest: 'outer style(--outer: true)'
-    test: custom-property-style-queries.html
-  - subtest: outer style(--outer:true)
-    test: custom-property-style-queries.html
-  - subtest: outer style(--outer:true )
-    test: custom-property-style-queries.html
-  - subtest: 'outer style(--outer: true )'
-    test: custom-property-style-queries.html
-  - subtest: 'outer style(--outer-no-space: true)'
-    test: custom-property-style-queries.html
-  - subtest: outer style(--outer-no-space:true)
-    test: custom-property-style-queries.html
-  - subtest: outer style(--outer-no-space:true )
-    test: custom-property-style-queries.html
-  - subtest: 'outer style(--outer-no-space: true )'
-    test: custom-property-style-queries.html
-  - subtest: 'outer style(--outer-space-after: true)'
-    test: custom-property-style-queries.html
-  - subtest: outer style(--outer-space-after:true)
-    test: custom-property-style-queries.html
-  - subtest: outer style(--outer-space-after:true )
-    test: custom-property-style-queries.html
-  - subtest: 'outer style(--outer-space-after: true )'
-    test: custom-property-style-queries.html
-  - subtest: Query custom property with !important declaration
-    test: custom-property-style-queries.html
-  - subtest: Query custom property using var()
-    test: custom-property-style-queries.html
-  - subtest: Query custom property including unknown var() reference
-    test: custom-property-style-queries.html
-  - subtest: Query custom property including unknown var() reference with non-matching
-      fallback
-    test: custom-property-style-queries.html
-  - subtest: Query custom property including unknown var() reference with matching
-      fallback
-    test: custom-property-style-queries.html
-  - subtest: Query custom property matching guaranteed-invalid values
-    test: custom-property-style-queries.html
-  - subtest: Style query 'initial' matching
-    test: custom-property-style-queries.html
-  - subtest: Style query 'initial' not matching
-    test: custom-property-style-queries.html
-  - subtest: Style query 'inherit' matching
-    test: custom-property-style-queries.html
-  - subtest: Style query 'inherit' not matching
-    test: custom-property-style-queries.html
-  - subtest: Style query 'unset' matching
-    test: custom-property-style-queries.html
-  - subtest: Style query 'unset' not matching
-    test: custom-property-style-queries.html
-  - subtest: Match registered <length> custom property with px.
-    test: custom-property-style-queries.html
-  - subtest: Match registered <length> custom property with em in query.
-    test: custom-property-style-queries.html
-  - subtest: Match registered <length> custom property with em in computed value.
-    test: custom-property-style-queries.html
-  - subtest: Match registered <length> custom property with cqi unit.
-    test: custom-property-style-queries.html
-  - subtest: Match container in same tree, not walking flat tree ancestors
-    test: container-for-shadow-dom.html
-  - subtest: Match container in ::part selector's originating element tree
-    test: container-for-shadow-dom.html
-  - subtest: Match container in outer tree for :host::before
-    test: container-for-shadow-dom.html
-  - subtest: Match container for ::before in ::part selector's originating element
-      tree
-    test: container-for-shadow-dom.html
-  - subtest: Match container for ::part selector's originating element tree for exportparts
-    test: container-for-shadow-dom.html
-  - subtest: Should not match container inside shadow tree for ::part()
-    test: container-for-shadow-dom.html
-  - subtest: '(min-width: 0) does not match a container without a principal box (display:none)'
-    test: size-container-no-principal-box.html
-  - subtest: '(min-width: 0) does not match a container without a principal box (display:contents)'
-    test: size-container-no-principal-box.html
-  - subtest: ::before pseudo element querying style() of originating element
-    test: pseudo-elements-005.html
-  - subtest: ::before pseudo element matching style() query after class change
-    test: pseudo-elements-005.html
-  - subtest: lh relative inline-size
-    test: font-relative-units.html
-  - subtest: Check that children can query grid item containers
-    test: grid-item-container.html
-  - subtest: The container query should match the layed out width
-    test: counters-flex-circular.html
-  - subtest: Target child
-    test: custom-property-style-query-change.html
-  - subtest: Target grandchild
-    test: custom-property-style-query-change.html
-  - subtest: Registered property query child
-    test: custom-property-style-query-change.html
-  - subtest: Registered property query grandchild
-    test: custom-property-style-query-change.html
-  - subtest: Initial layout - expecting a scrollbar without overflowing content instead
-      of overflowing content without a scrollbar
-    test: auto-scrollbars.html
-  - subtest: Same result after a reflow
-    test: auto-scrollbars.html
-  - subtest: Originating element container for ::before
-    test: pseudo-elements-003.html
-  - subtest: Originating element container for ::after
-    test: pseudo-elements-003.html
-  - subtest: Originating element container for ::marker
-    test: pseudo-elements-003.html
-  - subtest: Originating element container for ::first-line
-    test: pseudo-elements-003.html
-  - subtest: Originating element container for ::first-letter
-    test: pseudo-elements-003.html
-  - subtest: Originating element container for outer ::first-line
-    test: pseudo-elements-003.html
-  - subtest: Originating element container for outer ::first-letter
-    test: pseudo-elements-003.html
-  - subtest: Originating element container for ::backdrop
-    test: pseudo-elements-003.html
-  - subtest: lh units respond to changes
-    test: font-relative-units-dynamic.html
-  - subtest: Size queries with content-box sizing
-    test: query-content-box.html
-  - subtest: Size queries with border-box sizing
-    test: query-content-box.html
-  - subtest: Size queries with content-box sizing and overflow:scroll
-    test: query-content-box.html
-  - subtest: Size queries with border-box sizing and overflow:scroll
-    test: query-content-box.html
-  - subtest: '#container height measured with 500px width. Both container children
-      visible'
-    test: percentage-padding-orthogonal.html
-  - subtest: '#container width 400px after padding is applied.'
-    test: percentage-padding-orthogonal.html
-  - subtest: '#container width 400px after padding is applied. #second is removed
-      from the rendering'
-    test: percentage-padding-orthogonal.html
-  - subtest: Direct slotted child queries shadow-including ancestors
-    test: container-units-shadow.html
-  - subtest: Nondirect slotted child queries shadow-including ancestors
-    test: container-units-shadow.html
-  - subtest: container-type:inline/size turns on style containment
-    test: container-type-containment.html
-  - subtest: getComputedStyle when intermediate ancestor is display:none
-    test: display-none.html
-  - subtest: '@container queries start matching'
-    test: top-layer-nested-dialog.html
-  - subtest: getComputedStyle when container becomes display:contents
-    test: display-contents.html
-  - subtest: getComputedStyle when intermediate container becomes display:contents
-    test: display-contents.html
-  - subtest: Size @container query against inline box never matches
-    test: never-match-container.html
-  - subtest: Size @container query against svg element never matches
-    test: never-match-container.html
-  - subtest: '@keyframes is defined regardless of evaluation'
-    test: container-inner-at-rules.html
-  - subtest: '@property is defined regardless of evaluation'
-    test: container-inner-at-rules.html
-  - subtest: foo(width)
-    test: at-container-parsing.html
-  - subtest: size(width)
-    test: at-container-parsing.html
-  - subtest: (asdf)
-    test: at-container-parsing.html
-  - subtest: (resolution > 100dpi)
-    test: at-container-parsing.html
-  - subtest: '(resolution: 150dpi)'
-    test: at-container-parsing.html
-  - subtest: (color)
-    test: at-container-parsing.html
-  - subtest: '(min-color: 1)'
-    test: at-container-parsing.html
-  - subtest: (color-index >= 1)
-    test: at-container-parsing.html
-  - subtest: size(grid)
-    test: at-container-parsing.html
-  - subtest: (grid)
-    test: at-container-parsing.html
-  - subtest: (width == 100px)
-    test: at-container-parsing.html
-  - subtest: (100px == width)
-    test: at-container-parsing.html
-  - subtest: (100px = width = 200px)
-    test: at-container-parsing.html
-  - subtest: (100px < width > 200px)
-    test: at-container-parsing.html
-  - subtest: (100px <= width >= 200px)
-    test: at-container-parsing.html
-  - subtest: (100px <= width > 200px)
-    test: at-container-parsing.html
-  - subtest: (100px < width >= 200px)
-    test: at-container-parsing.html
-  - subtest: '(100px : width : 200px)'
-    test: at-container-parsing.html
-  - subtest: 'style(--my-prop: foo)'
-    test: at-container-parsing.html
-  - subtest: 'style(--my-prop: foo - bar ())'
-    test: at-container-parsing.html
-  - subtest: 'style(not ((--foo: calc(10px + 2em)) and ((--foo: url(x)))))'
-    test: at-container-parsing.html
-  - subtest: 'style((--foo: bar) or (--bar: 10px))'
-    test: at-container-parsing.html
-  - subtest: style(--my-prop:)
-    test: at-container-parsing.html
-  - subtest: 'style(--my-prop: )'
-    test: at-container-parsing.html
-  - subtest: 'style(--foo: bar !important)'
-    test: at-container-parsing.html
-  - subtest: 'style(--foo: bar;)'
-    test: at-container-parsing.html
-  - subtest: style(--foo)
-    test: at-container-parsing.html
-  - subtest: 'style(style(--foo: bar))'
-    test: at-container-parsing.html
-  - subtest: Sibling style mutation
-    test: sibling-layout-dependency.html
-  - subtest: Sibling style mutation, parent is affected
-    test: sibling-layout-dependency.html
-  - subtest: Sibling style mutation, ancestor is affected
-    test: sibling-layout-dependency.html
-  - subtest: Sibling text mutation
-    test: sibling-layout-dependency.html
-  - subtest: Container relative unit cqw is not computationally independent
-    test: container-units-computational-independence.html
-  - subtest: Container relative unit cqh is not computationally independent
-    test: container-units-computational-independence.html
-  - subtest: Container relative unit cqi is not computationally independent
-    test: container-units-computational-independence.html
-  - subtest: Container relative unit cqb is not computationally independent
-    test: container-units-computational-independence.html
-  - subtest: Container relative unit cqmin is not computationally independent
-    test: container-units-computational-independence.html
-  - subtest: Container relative unit cqmax is not computationally independent
-    test: container-units-computational-independence.html
-  - subtest: ((unknown) or (width) or (width))
-    test: query-evaluation.html
-  - subtest: ((width) or (unknown) or (width))
-    test: query-evaluation.html
-  - subtest: ((width) or (width) or (unknown))
-    test: query-evaluation.html
-  - subtest: ((unknown) or (height) or (width))
-    test: query-evaluation.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1802763
-- product: firefox
-  results:
-  - test: transition-scrollbars.html
-  - test: inline-size-containment-vertical-rl.html
-  - test: container-nested.html
-  - test: ineligible-containment.html
-  - test: container-size-invalidation.html
-  - test: orthogonal-wm-container-query.html
-  - test: backdrop-invalidation.html
-  - test: container-for-shadow-dom.html
-  - test: get-animations.html
-  - test: conditional-container-status.html
-  - test: size-container-no-principal-box.html
-  - test: transition-style-change-event.html
-  - test: aspect-ratio-feature-evaluation.html
-  - test: font-relative-units.html
-  - test: viewport-units-dynamic.html
-  - test: top-layer-dialog-container.html
-  - test: counters-flex-circular.html
-  - test: auto-scrollbars.html
-  - test: pseudo-elements-003.html
-  - test: font-relative-units-dynamic.html
-  - test: inline-size-bfc-floats.html
-  - test: viewport-units.html
-  - test: unsupported-axis.html
-  - test: style-change-in-container.html
-  - test: animation-container-size.html
-  - test: query-content-box.html
-  - test: container-type-invalidation.html
-  - test: percentage-padding-orthogonal.html
-  - test: top-layer-dialog.html
-  - test: iframe-invalidation.html
-  - test: container-name-invalidation.html
-  - test: container-selection.html
-  - test: reattach-container-with-dirty-child.html
-  - test: display-none.html
-  - test: inline-size-containment.html
-  - test: top-layer-nested-dialog.html
-  - test: display-contents.html
-  - test: never-match-container.html
-  - test: container-inner-at-rules.html
-  - test: at-container-parsing.html
-  - test: inline-size-and-min-width.html
-  - test: animation-container-type-dynamic.html
-  - test: animation-nested-animation.html
-  - test: pseudo-elements-001.html
-  - test: size-feature-evaluation.html
-  - test: animation-nested-transition.html
-  - test: query-evaluation.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1759227
-- product: firefox
-  results:
-  - subtest: Test status
-    test: dialog-backdrop-remove.html
-  - subtest: Test status
-    test: dialog-backdrop-create.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1836560
-- product: firefox
-  results:
-  - test: pseudo-elements-002b.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1887134
-- product: firefox
-  results:
-  - test: style-query-with-unknown-width.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1887135
-- product: firefox
-  results:
-  - test: canvas-as-container-003.html
-  - test: canvas-as-container-004.html
-  - subtest: Focusable after container size change
-    test: canvas-as-container-005.html
-  - subtest: Focusable after container size change
-    test: canvas-as-container-006.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1753444
-- product: chrome
-  results:
-  - test: canvas-as-container-004.html
-  - subtest: Focusable after container size change
-    test: canvas-as-container-006.html
-  url: https://crbug.com/1294155
-- product: chrome
-  results:
-  - subtest: 'CSSContainerRule interface: attribute containerName'
-    test: idlharness.html
-  - subtest: 'CSSContainerRule interface: attribute containerQuery'
-    test: idlharness.html
-  - subtest: 'CSSContainerRule interface: sheet.cssRules[0] must inherit property
-      "containerName" with the proper type'
-    test: idlharness.html
-  - subtest: 'CSSContainerRule interface: sheet.cssRules[0] must inherit property
-      "containerQuery" with the proper type'
-    test: idlharness.html
-  - subtest: 'CSSContainerRule interface: sheet.cssRules[0].cssRules[0] must inherit
-      property "containerName" with the proper type'
-    test: idlharness.html
-  - subtest: 'CSSContainerRule interface: sheet.cssRules[0].cssRules[0] must inherit
-      property "containerQuery" with the proper type'
-    test: idlharness.html
-  - subtest: Serialization of conditionText
-    test: at-container-serialization.html
-  url: https://crbug.com/1393577
-- product: firefox
-  results:
-  - test: pseudo-elements-004.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1767964
-- product: firefox
-  results:
-  - test: container-units-media-queries.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1769946
-- product: firefox
-  results:
-  - test: svg-foreignobject-child-container.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1770908
-- product: chrome
-  results:
-  - test: svg-foreignobject-child-container.html
-  url: https://crbug.com/989916
-- product: firefox
-  results:
-  - test: container-units-in-at-container-fallback.html
-  - test: container-units-in-at-container.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1776679
-- product: safari
-  results:
-  - subtest: Use small viewport size as fallback
-    test: container-units-in-at-container-fallback.html
-  url: https://bugs.webkit.org/show_bug.cgi?id=253935
-- product: safari
-  results:
-  - test: container-units-svglength.html
-  url: https://bugs.webkit.org/show_bug.cgi?id=253937
-- product: chrome
-  results:
-  - test: fragmented-container-001.html
-  - test: multicol-container-001.html
-  url: https://crbug.com/829028
-- product: firefox
-  results:
-  - subtest: 'style((--foo: bar))'
-    test: query-evaluation-style.html
-  - subtest: 'style(not (--baz: qux))'
-    test: query-evaluation-style.html
-  - subtest: 'style((--foo: bar) and (--foo: bar))'
-    test: query-evaluation-style.html
-  - subtest: 'style((--foo: bar) and (--foo: bar) and (--foo: bar))'
-    test: query-evaluation-style.html
-  - subtest: 'style((--foo: bar) or (--foo: bar))'
-    test: query-evaluation-style.html
-  - subtest: 'style((--foo: bar) or (--foo: bar) or (--foo: bar))'
-    test: query-evaluation-style.html
-  - subtest: 'style((--baz: qux) or (--foo: bar) or (--foo: bar))'
-    test: query-evaluation-style.html
-  - subtest: 'style((--foo: bar) or (--baz: qux) or (--foo: bar))'
-    test: query-evaluation-style.html
-  - subtest: 'style((--foo: bar) or (--foo: bar) or (--baz: qux))'
-    test: query-evaluation-style.html
-  - subtest: 'style(not ((--foo: bar) and (--baz: qux)))'
-    test: query-evaluation-style.html
-  - subtest: 'style((--baz: qux) or (not ((--baz: qux) and (--foo: bar))))'
-    test: query-evaluation-style.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1874725
-- product: firefox
-  results:
-  - test: at-container-style-parsing.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1887120
-- product: firefox
-  results:
-  - test: container-size-nested-invalidation.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1777239
-- product: firefox
-  results:
-  - test: display-contents-dynamic-style-queries.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1887124
-- product: firefox
-  results:
-  - test: container-longhand-animation-type.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1760446
-- product: chrome
-  results:
-  - subtest: container-name is not animatable
-    test: container-longhand-animation-type.html
-  - subtest: container-type is not animatable
-    test: container-longhand-animation-type.html
-  url: https://crbug.com/1306475
-- product: chrome
-  results:
-  - subtest: Outer scope query should not match container-name set by :host rule in
-      shadow tree
-    test: container-name-tree-scoped.html
-  - subtest: Outer scope query should not match container-name set by ::slotted rule
-      in shadow tree
-    test: container-name-tree-scoped.html
-  url: https://crbug.com/1382790
-- product: firefox
-  results:
-  - subtest: Outer scope query should not match container-name set by :host rule in
-      shadow tree
-    test: container-name-tree-scoped.html
-  - subtest: Outer scope query should not match container-name set by ::slotted rule
-      in shadow tree
-    test: container-name-tree-scoped.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1836561
-- product: chrome
-  results:
-  - test: transition-style-change-event-002.html
-  url: https://crbug.com/1385891
-- product: firefox
-  results:
-  - test: custom-property-style-queries.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1784237
-- product: firefox
-  results:
-  - subtest: Style query matching negated value-less query against initial value
-    test: custom-property-style-queries.html
-  - subtest: Style query matching value-less query against non-initial value
-    test: custom-property-style-queries.html
-  - subtest: Match registered <length> custom property with px via initial keyword.
-    test: custom-property-style-queries.html
-  - subtest: Match registered <length> custom property with initial value.
-    test: custom-property-style-queries.html
-  - subtest: Match registered <length> custom property with initial value via initial
-      keyword.
-    test: custom-property-style-queries.html
-  - subtest: Should only match exact string for numbers in non-registered custom properties
-    test: custom-property-style-queries.html
-  - subtest: Spaces should not collapse in non-registered custom properties
-    test: custom-property-style-queries.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1881854
-- product: firefox
-  results:
-  - subtest: Style query 'initial' matching (with explicit 'initial' value)
-    test: custom-property-style-queries.html
-  - subtest: Style query matching negated value-less query against initial value (with
-      explicit 'initial' value)
-    test: custom-property-style-queries.html
-  - subtest: Style query 'space' matching
-    test: custom-property-style-queries.html
-  - subtest: Style query 'space' not matching
-    test: custom-property-style-queries.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1892409
-- product: firefox
-  results:
-  - subtest: Match container for ::before in ::slotted selector's originating element
-      tree
-    test: container-for-shadow-dom.html
-  - subtest: A :host::part rule should match containers in the originating element
-      tree
-    test: container-for-shadow-dom.html
-  - subtest: Match container in outer tree
-    test: style-container-for-shadow-dom.html
-  - subtest: Match container in same tree, not walking flat tree ancestors
-    test: style-container-for-shadow-dom.html
-  - subtest: Match container in ::slotted selector's originating element tree
-    test: style-container-for-shadow-dom.html
-  - subtest: Match container in outer tree for :host
-    test: style-container-for-shadow-dom.html
-  - subtest: Match container in ::part selector's originating element tree
-    test: style-container-for-shadow-dom.html
-  - subtest: Match container for ::before in ::slotted selector's originating element
-      tree
-    test: style-container-for-shadow-dom.html
-  - subtest: Match container in outer tree for :host::before
-    test: style-container-for-shadow-dom.html
-  - subtest: Match container for ::before in ::part selector's originating element
-      tree
-    test: style-container-for-shadow-dom.html
-  - subtest: Match container for ::part selector's originating element tree for exportparts
-    test: style-container-for-shadow-dom.html
-  - subtest: Match container for slot light tree child fallback
-    test: style-container-for-shadow-dom.html
-  - subtest: A :host::part rule should match containers in the originating element
-      tree
-    test: style-container-for-shadow-dom.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1878995
-- product: firefox
-  results:
-  - subtest: Container name set inside a shadow tree should not match query for host
-      child on the outside
-    test: container-for-shadow-dom.html
-  - subtest: Container name set on :host from inside a shadow tree not matching query
-      for slotted from the outside of the shadow tree
-    test: container-for-shadow-dom.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1901735
-- product: firefox
-  results:
-  - test: at-container-style-serialization.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1776487
-- product: firefox
-  results:
-  - test: pseudo-elements-010.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1891055
-- product: firefox
-  results:
-  - test: container-selection-unknown-features.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1887121
-- product: firefox
-  results:
-  - test: pseudo-elements-005.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1796166
-- product: firefox
-  results:
-  - test: pseudo-elements-009.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1887133
-- product: chrome
-  results:
-  - subtest: rex relative inline-size229.484px0px
-    test: font-relative-units.html
-  - subtest: rex units respond to changes
-    test: font-relative-units-dynamic.html
-  url: https://crbug.com/1381037
-- product: chrome
-  results:
-  - test: pseudo-elements-002.html
-  url: https://crbug.com/1273913
-- product: firefox
-  results:
-  - test: container-size-invalidation-after-load.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1766989
-- product: chrome
-  results:
-  - test: container-size-invalidation-after-load.html
-  url: https://crbug.com/1312940
-- product: chrome
-  results:
-  - test: container-size-invalidation-after-load.html
-  - test: iframe-in-container-invalidation.html
-  url: https://crbug.com/1321010
-- product: firefox
-  results:
-  - test: nested-size-style-container-invalidation.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1887131
-- product: firefox
-  results:
-  - test: container-name-parsing.html
-  - test: container-name-computed.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1760445
-- product: firefox
-  results:
-  - test: custom-property-style-query-change.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1786771
-- product: chrome
-  results:
-  - subtest: Verify that onblur is called on hidden input
-    test: layout-dependent-focus.html
-  url: https://crbug.com/1298921
-- product: firefox
-  results:
-  - test: layout-dependent-focus.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1760453
-- product: firefox
-  results:
-  - test: at-container-serialization.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1761224
-- product: chrome
-  results:
-  - subtest: Property container-name value 'foo foo bar'
-    test: container-name-computed.html
-  - subtest: Property container-name value 'foo bar foo'
-    test: container-name-computed.html
-  - subtest: Property container-name value 'bar foo foo'
-    test: container-name-computed.html
-  url: https://crbug.com/1306012
-- product: chrome
-  results:
-  - subtest: 'display: table'
-    test: container-units-ineligible-container.html
-  - subtest: 'display: table-cell'
-    test: container-units-ineligible-container.html
-  - subtest: 'display: inline'
-    test: container-units-ineligible-container.html
-  - subtest: 'display: contents'
-    test: container-units-ineligible-container.html
-  - subtest: 'display: none'
-    test: container-units-ineligible-container.html
-  url: https://crbug.com/1404088
-- product: chrome
-  results:
-  - test: nested-query-containers.html
-  url: https://crbug.com/1400979
-- product: firefox
-  results:
-  - subtest: test5 - inline - 0b100
-    test: nested-query-containers.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1836558
-- product: chrome
-  results:
-  - subtest: '#container width 399px after padding is applied. #second is removed
-      from the rendering'
-    test: percentage-padding-orthogonal.html
-  url: https://crbug.com/1281318
-- product: chrome
-  results:
-  - subtest: Originating element container for ::backdrop
-    test: pseudo-elements-008.html
-  url: https://crbug.com/1404424
-- product: firefox
-  results:
-  - test: calc-evaluation.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1772547
-- product: firefox
-  results:
-  - test: iframe-in-container-invalidation.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1767258
-- product: firefox
-  results:
-  - subtest: Match <slot> as a container for ::slotted element
-    test: style-container-for-shadow-dom.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1902660
-- product: chrome
-  results:
-  - subtest: 'Container selector: none'
-    test: at-container-parsing.html
-  - subtest: 'Container selector: None'
-    test: at-container-parsing.html
-  url: https://crbug.com/1306014
-- product: firefox
-  results:
-  - test: inner-first-line-non-matching.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1887127
-- product: firefox
-  results:
-  - test: sibling-layout-dependency.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1760411
-- product: firefox
-  results:
-  - test: style-container-invalidation-inheritance.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1887136
-- product: firefox
-  results:
-  - subtest: Container relative unit qw is not computationally independent
-    test: container-units-computational-independence.html
-  - subtest: Container relative unit qh is not computationally independent
-    test: container-units-computational-independence.html
-  - subtest: Container relative unit qi is not computationally independent
-    test: container-units-computational-independence.html
-  - subtest: Container relative unit qb is not computationally independent
-    test: container-units-computational-independence.html
-  - subtest: Container relative unit qmin is not computationally independent
-    test: container-units-computational-independence.html
-  - subtest: Container relative unit qmax is not computationally independent
-    test: container-units-computational-independence.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1744181
-- product: chrome
-  results:
-  - test: deep-nested-inline-size-containers.html
-  url: https://crbug.com/1309410
-- product: firefox
-  results:
-  - subtest: 'style(--my-prop: foo)'
-    test: at-container-style-parsing.html
-  - subtest: 'style(--my-prop: foo - bar ())'
-    test: at-container-style-parsing.html
-  - subtest: 'style(not ((--foo: calc(10px + 2em)) and ((--foo: url(x)))))'
-    test: at-container-style-parsing.html
-  - subtest: 'style((--foo: bar) or (--bar: 10px))'
-    test: at-container-style-parsing.html
-  - subtest: style(--my-prop:)
-    test: at-container-style-parsing.html
-  - subtest: 'style(--my-prop: )'
-    test: at-container-style-parsing.html
-  - subtest: 'style(--foo: bar !important)'
-    test: at-container-style-parsing.html
-  - subtest: style(--foo)
-    test: at-container-style-parsing.html
-  - subtest: Normalize spaces
-    test: at-container-style-serialization.html
-  - subtest: Empty declaration value - spaces
-    test: at-container-style-serialization.html
-  - subtest: Empty declaration value
-    test: at-container-style-serialization.html
-  - subtest: No declaration value
-    test: at-container-style-serialization.html
-  - subtest: Unknown CSS property after 'or'
-    test: at-container-style-serialization.html
-  - subtest: Original string number in custom property value
-    test: at-container-style-serialization.html
-  - subtest: Container name set inside a shadow tree should not match query for host
-      child on the outside
-    test: container-for-shadow-dom.html
-  - subtest: Container name set on :host from inside a shadow tree not matching query
-      for slotted from the outside of the shadow tree
-    test: container-for-shadow-dom.html
-  - subtest: Outer scope query should not match container-name set by :host rule in
-      shadow tree
-    test: container-name-tree-scoped.html
-  - subtest: Outer scope query should not match container-name set by ::slotted rule
-      in shadow tree
-    test: container-name-tree-scoped.html
-  - subtest: 'width query with (foo: bar)'
-    test: container-selection-unknown-features.html
-  - subtest: width query with foo(bar)
-    test: container-selection-unknown-features.html
-  - subtest: Container relative unit cqw is not computationally independent
-    test: container-units-computational-independence.html
-  - subtest: Container relative unit cqh is not computationally independent
-    test: container-units-computational-independence.html
-  - subtest: Container relative unit cqi is not computationally independent
-    test: container-units-computational-independence.html
-  - subtest: Container relative unit cqb is not computationally independent
-    test: container-units-computational-independence.html
-  - subtest: Container relative unit cqmin is not computationally independent
-    test: container-units-computational-independence.html
-  - subtest: Container relative unit cqmax is not computationally independent
-    test: container-units-computational-independence.html
-  - subtest: unitType with container-relative units
-    test: container-units-svglength.html
-  - subtest: cqw,cqh can be resolved
-    test: container-units-svglength.html
-  - subtest: cqi,cqb can be resolved
-    test: container-units-svglength.html
-  - subtest: cqmin,cqmax can be resolved
-    test: container-units-svglength.html
-  - subtest: calc() with container-relative units can be resolved
-    test: container-units-svglength.html
-  - subtest: Can modify value with container-relative units
-    test: container-units-svglength.html
-  - subtest: 'CSS Container Queries Test: container-relative units in SVGLength'
-    test: container-units-svglength.html
-  - subtest: CSS.cqw function
-    test: container-units-typed-om.html
-  - subtest: Reify value with cqw unit
-    test: container-units-typed-om.html
-  - subtest: Set value with cqw unit (string)
-    test: container-units-typed-om.html
-  - subtest: Set value with cqw unit (CSS.cqw)
-    test: container-units-typed-om.html
-  - subtest: CSS.cqh function
-    test: container-units-typed-om.html
-  - subtest: Reify value with cqh unit
-    test: container-units-typed-om.html
-  - subtest: Set value with cqh unit (string)
-    test: container-units-typed-om.html
-  - subtest: Set value with cqh unit (CSS.cqh)
-    test: container-units-typed-om.html
-  - subtest: CSS.cqi function
-    test: container-units-typed-om.html
-  - subtest: Reify value with cqi unit
-    test: container-units-typed-om.html
-  - subtest: Set value with cqi unit (string)
-    test: container-units-typed-om.html
-  - subtest: Set value with cqi unit (CSS.cqi)
-    test: container-units-typed-om.html
-  - subtest: CSS.cqb function
-    test: container-units-typed-om.html
-  - subtest: Reify value with cqb unit
-    test: container-units-typed-om.html
-  - subtest: Set value with cqb unit (string)
-    test: container-units-typed-om.html
-  - subtest: Set value with cqb unit (CSS.cqb)
-    test: container-units-typed-om.html
-  - subtest: CSS.cqmin function
-    test: container-units-typed-om.html
-  - subtest: Reify value with cqmin unit
-    test: container-units-typed-om.html
-  - subtest: Set value with cqmin unit (string)
-    test: container-units-typed-om.html
-  - subtest: Set value with cqmin unit (CSS.cqmin)
-    test: container-units-typed-om.html
-  - subtest: CSS.cqmax function
-    test: container-units-typed-om.html
-  - subtest: Reify value with cqmax unit
-    test: container-units-typed-om.html
-  - subtest: Set value with cqmax unit (string)
-    test: container-units-typed-om.html
-  - subtest: Set value with cqmax unit (CSS.cqmax)
-    test: container-units-typed-om.html
-  - subtest: 'style(--inner: true)'
-    test: custom-property-style-queries.html
-  - subtest: style(--inner:true)
-    test: custom-property-style-queries.html
-  - subtest: style(--inner:true )
-    test: custom-property-style-queries.html
-  - subtest: 'style(--inner: true )'
-    test: custom-property-style-queries.html
-  - subtest: 'style(--inner-no-space: true)'
-    test: custom-property-style-queries.html
-  - subtest: style(--inner-no-space:true)
-    test: custom-property-style-queries.html
-  - subtest: style(--inner-no-space:true )
-    test: custom-property-style-queries.html
-  - subtest: 'style(--inner-no-space: true )'
-    test: custom-property-style-queries.html
-  - subtest: 'style(--inner-space-after: true)'
-    test: custom-property-style-queries.html
-  - subtest: style(--inner-space-after:true)
-    test: custom-property-style-queries.html
-  - subtest: style(--inner-space-after:true )
-    test: custom-property-style-queries.html
-  - subtest: 'style(--inner-space-after: true )'
-    test: custom-property-style-queries.html
-  - subtest: 'outer style(--outer: true)'
-    test: custom-property-style-queries.html
-  - subtest: outer style(--outer:true)
-    test: custom-property-style-queries.html
-  - subtest: outer style(--outer:true )
-    test: custom-property-style-queries.html
-  - subtest: 'outer style(--outer: true )'
-    test: custom-property-style-queries.html
-  - subtest: 'outer style(--outer-no-space: true)'
-    test: custom-property-style-queries.html
-  - subtest: outer style(--outer-no-space:true)
-    test: custom-property-style-queries.html
-  - subtest: outer style(--outer-no-space:true )
-    test: custom-property-style-queries.html
-  - subtest: 'outer style(--outer-no-space: true )'
-    test: custom-property-style-queries.html
-  - subtest: 'outer style(--outer-space-after: true)'
-    test: custom-property-style-queries.html
-  - subtest: outer style(--outer-space-after:true)
-    test: custom-property-style-queries.html
-  - subtest: outer style(--outer-space-after:true )
-    test: custom-property-style-queries.html
-  - subtest: 'outer style(--outer-space-after: true )'
-    test: custom-property-style-queries.html
-  - subtest: Query custom property with !important declaration
-    test: custom-property-style-queries.html
-  - subtest: Query custom property using var()
-    test: custom-property-style-queries.html
-  - subtest: Query custom property including unknown var() reference
-    test: custom-property-style-queries.html
-  - subtest: Query custom property including unknown var() reference with non-matching
-      fallback
-    test: custom-property-style-queries.html
-  - subtest: Query custom property including unknown var() reference with matching
-      fallback
-    test: custom-property-style-queries.html
-  - subtest: Query custom property matching guaranteed-invalid values
-    test: custom-property-style-queries.html
-  - subtest: Style query 'initial' matching
-    test: custom-property-style-queries.html
-  - subtest: Style query matching negated value-less query against initial value
-    test: custom-property-style-queries.html
-  - subtest: Style query 'initial' not matching
-    test: custom-property-style-queries.html
-  - subtest: Style query matching value-less query against non-initial value
-    test: custom-property-style-queries.html
-  - subtest: Style query 'initial' matching (with explicit 'initial' value)
-    test: custom-property-style-queries.html
-  - subtest: Style query matching negated value-less query against initial value (with
-      explicit 'initial' value)
-    test: custom-property-style-queries.html
-  - subtest: Style query 'space' matching
-    test: custom-property-style-queries.html
-  - subtest: Style query 'space' not matching
-    test: custom-property-style-queries.html
-  - subtest: Style query 'inherit' matching
-    test: custom-property-style-queries.html
-  - subtest: Style query 'inherit' not matching
-    test: custom-property-style-queries.html
-  - subtest: Style query 'unset' matching
-    test: custom-property-style-queries.html
-  - subtest: Style query 'unset' not matching
-    test: custom-property-style-queries.html
-  - subtest: Match registered <length> custom property with px.
-    test: custom-property-style-queries.html
-  - subtest: Match registered <length> custom property with px via initial keyword.
-    test: custom-property-style-queries.html
-  - subtest: Match registered <length> custom property with em in query.
-    test: custom-property-style-queries.html
-  - subtest: Match registered <length> custom property with em in computed value.
-    test: custom-property-style-queries.html
-  - subtest: Match registered <length> custom property with cqi unit.
-    test: custom-property-style-queries.html
-  - subtest: Match registered <length> custom property with initial value.
-    test: custom-property-style-queries.html
-  - subtest: Match registered <length> custom property with initial value via initial
-      keyword.
-    test: custom-property-style-queries.html
-  - subtest: Should only match exact string for numbers in non-registered custom properties
-    test: custom-property-style-queries.html
-  - subtest: Spaces should not collapse in non-registered custom properties
-    test: custom-property-style-queries.html
-  - subtest: Target child
-    test: custom-property-style-query-change.html
-  - subtest: Target grandchild
-    test: custom-property-style-query-change.html
-  - subtest: Registered property query child
-    test: custom-property-style-query-change.html
-  - subtest: Registered property query grandchild
-    test: custom-property-style-query-change.html
-  - subtest: After display and --foo changes, style() query causes the color to be
-      green
-    test: display-contents-dynamic-style-queries.html
-  - subtest: getComputedStyle when intermediate ancestor is display:none
-    test: display-none.html
-  - subtest: getComputedStyle when display:none inner container has forced style
-    test: display-none.html
-  - subtest: rex units respond to changes
-    test: font-relative-units-dynamic.html
-  - subtest: rch units respond to changes
-    test: font-relative-units-dynamic.html
-  - subtest: ric units respond to changes
-    test: font-relative-units-dynamic.html
-  - subtest: rcap units respond to changes
-    test: font-relative-units-dynamic.html
-  - subtest: rex relative inline-size
-    test: font-relative-units.html
-  - subtest: rch relative inline-size
-    test: font-relative-units.html
-  - subtest: ric relative inline-size
-    test: font-relative-units.html
-  - subtest: rcap relative inline-size
-    test: font-relative-units.html
-  - subtest: test5 - inline - 0b100
-    test: nested-query-containers.html
-  - subtest: Green after reducing width
-    test: nested-size-style-container-invalidation.html
-  - subtest: '#container height measured with 500px width. Both container children
-      visible'
-    test: percentage-padding-orthogonal.html
-  - subtest: '#container width 400px after padding is applied.'
-    test: percentage-padding-orthogonal.html
-  - subtest: '#container width 400px after padding is applied. #second is removed
-      from the rendering'
-    test: percentage-padding-orthogonal.html
-  - subtest: '#container height measured with 499px width. Both container children
-      visible'
-    test: percentage-padding-orthogonal.html
-  - subtest: '#container width 399px after padding is applied. #second is removed
-      from the rendering'
-    test: percentage-padding-orthogonal.html
-  - subtest: '#container width 399x after padding is applied. #second is removed from
-      the rendering'
-    test: percentage-padding-orthogonal.html
-  - subtest: ::before pseudo element querying style() of originating element
-    test: pseudo-elements-005.html
-  - subtest: ::before pseudo element matching style() query after class change
-    test: pseudo-elements-005.html
-  - subtest: 'style((--foo: bar))'
-    test: query-evaluation-style.html
-  - subtest: 'style(not (--baz: qux))'
-    test: query-evaluation-style.html
-  - subtest: 'style((--foo: bar) and (--foo: bar))'
-    test: query-evaluation-style.html
-  - subtest: 'style((--foo: bar) and (--foo: bar) and (--foo: bar))'
-    test: query-evaluation-style.html
-  - subtest: 'style((--foo: bar) or (--foo: bar))'
-    test: query-evaluation-style.html
-  - subtest: 'style((--foo: bar) or (--foo: bar) or (--foo: bar))'
-    test: query-evaluation-style.html
-  - subtest: 'style((--baz: qux) or (--foo: bar) or (--foo: bar))'
-    test: query-evaluation-style.html
-  - subtest: 'style((--foo: bar) or (--baz: qux) or (--foo: bar))'
-    test: query-evaluation-style.html
-  - subtest: 'style((--foo: bar) or (--foo: bar) or (--baz: qux))'
-    test: query-evaluation-style.html
-  - subtest: 'style(not ((--foo: bar) and (--baz: qux)))'
-    test: query-evaluation-style.html
-  - subtest: 'style((--baz: qux) or (not ((--baz: qux) and (--foo: bar))))'
-    test: query-evaluation-style.html
-  - subtest: ((unknown) or (width) or (width))
-    test: query-evaluation.html
-  - subtest: ((width) or (unknown) or (width))
-    test: query-evaluation.html
-  - subtest: ((width) or (width) or (unknown))
-    test: query-evaluation.html
-  - subtest: ((unknown) or (height) or (width))
-    test: query-evaluation.html
-  - subtest: Registered color with light color-scheme and light-dark()
-    test: registered-color-style-queries.html
-  - subtest: Registered color with dark color-scheme and light-dark()
-    test: registered-color-style-queries.html
-  - subtest: Sibling style mutation
-    test: sibling-layout-dependency.html
-  - subtest: Sibling style mutation, parent is affected
-    test: sibling-layout-dependency.html
-  - subtest: Sibling style mutation, ancestor is affected
-    test: sibling-layout-dependency.html
-  - subtest: Sibling text mutation
-    test: sibling-layout-dependency.html
-  - subtest: Match container in outer tree
-    test: style-container-for-shadow-dom.html
-  - subtest: Match <slot> as a container for ::slotted element
-    test: style-container-for-shadow-dom.html
-  - subtest: Match container in outer tree for :host
-    test: style-container-for-shadow-dom.html
-  - subtest: Match container in outer tree for :host::before
-    test: style-container-for-shadow-dom.html
-  - subtest: Match container for slot light tree child fallback
-    test: style-container-for-shadow-dom.html
-  - subtest: Changed --match inherits down descendants and affects container query
-    test: style-container-invalidation-inheritance.html
-  - subtest: width query should evaluate to unknown and style query to true
-    test: style-query-with-unknown-width.html
-  - test: custom-layout-container-001.https.html
-  - test: inline-size-bfc-floats.html
-  - test: inner-first-line-non-matching.html
-  - test: pseudo-elements-002b.html
-  - test: pseudo-elements-009.html
-  - test: pseudo-elements-010.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1905350
-- product: firefox
-  results:
-  - subtest: ' style(--inner: true)'
-    test: custom-property-style-queries.html
-  - subtest: ' style(--inner:true)'
-    test: custom-property-style-queries.html
-  - subtest: ' style(--inner:true )'
-    test: custom-property-style-queries.html
-  - subtest: ' style(--inner: true )'
-    test: custom-property-style-queries.html
-  - subtest: ' style(--inner-no-space: true)'
-    test: custom-property-style-queries.html
-  - subtest: ' style(--inner-no-space:true)'
-    test: custom-property-style-queries.html
-  - subtest: ' style(--inner-no-space:true )'
-    test: custom-property-style-queries.html
-  - subtest: ' style(--inner-no-space: true )'
-    test: custom-property-style-queries.html
-  - subtest: ' style(--inner-space-after: true)'
-    test: custom-property-style-queries.html
-  - subtest: ' style(--inner-space-after:true)'
-    test: custom-property-style-queries.html
-  - subtest: ' style(--inner-space-after:true )'
-    test: custom-property-style-queries.html
-  - subtest: ' style(--inner-space-after: true )'
-    test: custom-property-style-queries.html
-  - subtest: ' style(--outer: true)'
-    test: custom-property-style-queries.html
-  - subtest: ' style(--outer:true)'
-    test: custom-property-style-queries.html
-  - subtest: ' style(--outer:true )'
-    test: custom-property-style-queries.html
-  - subtest: ' style(--outer: true )'
-    test: custom-property-style-queries.html
-  - subtest: ' style(--outer-no-space: true)'
-    test: custom-property-style-queries.html
-  - subtest: ' style(--outer-no-space:true)'
-    test: custom-property-style-queries.html
-  - subtest: ' style(--outer-no-space:true )'
-    test: custom-property-style-queries.html
-  - subtest: ' style(--outer-no-space: true )'
-    test: custom-property-style-queries.html
-  - subtest: ' style(--outer-space-after: true)'
-    test: custom-property-style-queries.html
-  - subtest: ' style(--outer-space-after:true)'
-    test: custom-property-style-queries.html
-  - subtest: ' style(--outer-space-after:true )'
-    test: custom-property-style-queries.html
-  - subtest: ' style(--outer-space-after: true )'
-    test: custom-property-style-queries.html
-  - subtest: 'outer style(--inner: true)'
-    test: custom-property-style-queries.html
-  - subtest: outer style(--inner:true)
-    test: custom-property-style-queries.html
-  - subtest: outer style(--inner:true )
-    test: custom-property-style-queries.html
-  - subtest: 'outer style(--inner: true )'
-    test: custom-property-style-queries.html
-  - subtest: 'outer style(--inner-no-space: true)'
-    test: custom-property-style-queries.html
-  - subtest: outer style(--inner-no-space:true)
-    test: custom-property-style-queries.html
-  - subtest: outer style(--inner-no-space:true )
-    test: custom-property-style-queries.html
-  - subtest: 'outer style(--inner-no-space: true )'
-    test: custom-property-style-queries.html
-  - subtest: 'outer style(--inner-space-after: true)'
-    test: custom-property-style-queries.html
-  - subtest: outer style(--inner-space-after:true)
-    test: custom-property-style-queries.html
-  - subtest: outer style(--inner-space-after:true )
-    test: custom-property-style-queries.html
-  - subtest: 'outer style(--inner-space-after: true )'
-    test: custom-property-style-queries.html
-  - subtest: Style query with revert keyword is false
-    test: custom-property-style-queries.html
-  - subtest: Style query with revert-layer keyword is false
-    test: custom-property-style-queries.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1914355
-- product: firefox
-  results:
-  - subtest: style query should evaluate to true
-    test: style-query-document-element.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1918243
-- product: firefox
-  results:
-  - subtest: Size queries with content-box sizing and scrollbar-gutter:stable
-    test: query-content-box.html
-  - subtest: Size queries with border-box sizing and scrollbar-gutter:stable
-    test: query-content-box.html
-  - subtest: Match container in the shadow tree for a host child in the host child's
-      tree scope
-    test: style-container-for-shadow-dom.html
-  - subtest: Match ::part's parent in the shadow tree as the container for ::part
-    test: style-container-for-shadow-dom.html
-  - subtest: Match ::slotted as a container for its ::before
-    test: style-container-for-shadow-dom.html
-  - subtest: Match the ::part as a container for ::before on ::part elements
-    test: style-container-for-shadow-dom.html
-  - subtest: Match container for ::part selector in inner shadow tree for exportparts
-    test: style-container-for-shadow-dom.html
-  - subtest: Should match parent container inside shadow tree for ::part()
-    test: style-container-for-shadow-dom.html
-  - subtest: A :host::part rule matching a container in the shadow tree
-    test: style-container-for-shadow-dom.html
-  - subtest: 'style(--foo: var(--foo)) should match'
-    test: style-query-no-cycle.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1920200
-- product: firefox
-  results:
-  - subtest: cap units respond to changes
-    test: font-relative-units-dynamic.html
-  - test: registered-color-style-queries.html
-  - test: style-container-for-shadow-dom.html
-  - test: style-query-no-cycle.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1928675
-- product: firefox
-  results:
-  - test: style-query-guaranteed-invalid.tentative.html
-  - test: style-query-registered-custom-invalid.tentative.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1929897
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1892491
+      results:
+        - test: registered-color-style-queries.html
+          subtest: Registered color with light color-scheme and light-dark()
+        - test: registered-color-style-queries.html
+          subtest: Registered color with dark color-scheme and light-dark()
+    - label: interop-2023-container
+      results:
+        - test: style-not-sharing-float.html
+        - test: container-computed.html
+        - test: container-size-shadow-invalidation.html
+        - test: display-in-container.html
+        - test: container-type-parsing.html
+        - test: transition-scrollbars.html
+        - test: dialog-backdrop-remove.html
+        - test: pseudo-elements-006.html
+        - test: canvas-as-container-003.html
+        - test: canvas-as-container-004.html
+        - test: inline-size-containment-vertical-rl.html
+        - test: container-parsing.html
+        - test: idlharness.html
+        - test: font-relative-calc-dynamic.html
+        - test: pseudo-elements-004.html
+        - test: container-nested.html
+        - test: container-units-invalidation.html
+        - test: container-units-media-queries.html
+        - test: svg-foreignobject-child-container.html
+        - test: container-units-in-at-container-fallback.html
+        - test: canvas-as-container-005.html
+        - test: multicol-inside-container.html
+        - test: fragmented-container-001.html
+        - test: ineligible-containment.html
+        - test: container-size-invalidation.html
+        - test: container-size-nested-invalidation.html
+        - test: container-longhand-animation-type.html
+        - test: container-name-tree-scoped.html
+        - test: transition-style-change-event-002.html
+        - test: container-units-content-box.html
+        - test: grid-container.html
+        - test: orthogonal-wm-container-query.html
+        - test: svg-g-no-size-container.html
+        - test: backdrop-invalidation.html
+        - test: container-for-shadow-dom.html
+        - test: get-animations.html
+        - test: container-units-animation.html
+        - test: svg-foreignobject-no-size-container.html
+        - test: conditional-container-status.html
+        - test: size-container-no-principal-box.html
+        - test: transition-style-change-event.html
+        - test: fieldset-legend-change.html
+        - test: container-units-gradient-invalidation.html
+        - test: container-units-gradient.html
+        - test: aspect-ratio-feature-evaluation.html
+        - test: font-relative-units.html
+        - test: svg-root-size-container.html
+        - test: pseudo-elements-002.html
+        - test: viewport-units-dynamic.html
+        - test: container-size-invalidation-after-load.html
+        - test: top-layer-dialog-container.html
+        - test: canvas-as-container-002.html
+        - test: grid-item-container.html
+        - test: chrome-legacy-skip-recalc.html
+        - test: container-units-selection.html
+        - test: counters-flex-circular.html
+        - test: counters-in-container-dynamic.html
+        - test: container-name-parsing.html
+        - test: layout-dependent-focus.html
+        - test: at-container-serialization.html
+        - test: container-inheritance.html
+        - test: container-units-basic.html
+        - test: auto-scrollbars.html
+        - test: pseudo-elements-003.html
+        - test: font-relative-units-dynamic.html
+        - test: inline-size-bfc-floats.html
+        - test: viewport-units.html
+        - test: table-inside-container-changing-display.html
+        - test: unsupported-axis.html
+        - test: column-spanner-in-container.html
+        - test: container-name-computed.html
+        - test: container-units-ineligible-container.html
+        - test: container-type-computed.html
+        - test: style-change-in-container.html
+        - test: animation-container-size.html
+        - test: nested-query-containers.html
+        - test: change-display-in-container.html
+        - test: query-content-box.html
+        - test: top-layer-dialog-backdrop.html
+        - test: container-type-invalidation.html
+        - test: container-units-in-at-container.html
+        - test: multicol-container-001.html
+        - test: counters-in-container.html
+        - test: percentage-padding-orthogonal.html
+        - test: pseudo-elements-008.html
+        - test: top-layer-dialog.html
+        - test: container-type-layout-invalidation.html
+        - test: iframe-invalidation.html
+        - test: resize-while-content-visibility-hidden.html
+        - test: pseudo-elements-007.html
+        - test: container-units-shadow.html
+        - test: calc-evaluation.html
+        - test: container-name-invalidation.html
+        - test: container-selection.html
+        - test: container-units-in-at-container-dynamic.html
+        - test: iframe-in-container-invalidation.html
+        - test: reattach-container-with-dirty-child.html
+        - test: container-type-containment.html
+        - test: display-none.html
+        - test: inline-size-containment.html
+        - test: top-layer-nested-dialog.html
+        - test: container-inside-multicol-with-table.html
+        - test: dialog-backdrop-create.html
+        - test: display-contents.html
+        - test: never-match-container.html
+        - test: container-inner-at-rules.html
+        - test: whitespace-update-after-removal.html
+        - test: container-units-small-viewport-fallback.html
+        - test: at-container-parsing.html
+        - test: inline-size-and-min-width.html
+        - test: animation-container-type-dynamic.html
+        - test: animation-nested-animation.html
+        - test: pseudo-elements-001.html
+        - test: sibling-layout-dependency.html
+        - test: size-feature-evaluation.html
+        - test: canvas-as-container-001.html
+        - test: canvas-as-container-006.html
+        - test: container-for-cue.html
+        - test: deep-nested-inline-size-containers.html
+        - test: animation-nested-transition.html
+        - test: query-evaluation.html
+    - product: chrome
+      url: https://crbug.com/1302630
+      results:
+        - test: container-computed.html
+          subtest: Property container value 'size style / name'
+        - test: container-computed.html
+          subtest: Property container value 'inline-size style/ name'
+        - test: container-type-parsing.html
+          subtest: e.style['container-type'] = "style" should set the property value
+        - test: container-type-parsing.html
+          subtest: e.style['container-type'] = "inline-size style" should set the property value
+        - test: container-type-parsing.html
+          subtest: e.style['container-type'] = "style inline-size" should set the property value
+        - test: container-type-parsing.html
+          subtest: e.style['container-type'] = "style size" should set the property value
+        - test: container-parsing.html
+          subtest: e.style['container'] = "size style / none" should set the property value
+        - test: custom-property-style-queries.html
+        - test: query-evaluation.html
+          subtest: 'style((width: 1px))'
+        - test: query-evaluation.html
+          subtest: 'style(not (height: 2px))'
+        - test: query-evaluation.html
+          subtest: 'style((width: 1px) and (width: 1px))'
+        - test: query-evaluation.html
+          subtest: 'style((width: 1px) and (width: 1px) and (width: 1px))'
+        - test: query-evaluation.html
+          subtest: 'style((width: 1px) or (width: 1px))'
+        - test: query-evaluation.html
+          subtest: 'style((width: 1px) or (width: 1px) or (width: 1px))'
+        - test: query-evaluation.html
+          subtest: 'style((height: 2px) or (width: 1px) or (width: 1px))'
+        - test: query-evaluation.html
+          subtest: 'style((width: 1px) or (height: 2px) or (width: 1px))'
+        - test: query-evaluation.html
+          subtest: 'style((width: 1px) or (width: 1px) or (height: 2px))'
+        - test: query-evaluation.html
+          subtest: 'style((unknown) or (width: 1px) or (width: 1px))'
+        - test: query-evaluation.html
+          subtest: 'style((width: 1px) or (unknown) or (width: 1px))'
+        - test: query-evaluation.html
+          subtest: 'style((width: 1px) or (width: 1px) or (unknown))'
+        - test: query-evaluation.html
+          subtest: 'style((unknown) or (height: 2px) or (width: 1px))'
+        - test: query-evaluation.html
+          subtest: 'style(not ((width: 1px) and (height: 2px)))'
+        - test: query-evaluation.html
+          subtest: 'style((height: 2px) or (not ((height: 2px) and (width: 1px))))'
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1763828
+      results:
+        - test: container-computed.html
+        - test: container-parsing.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1769236
+      results:
+        - test: container-type-parsing.html
+        - test: container-units-typed-om.html
+        - test: container-units-invalidation.html
+        - test: canvas-as-container-005.html
+        - test: fragmented-container-001.html
+        - test: container-units-animation.html
+        - test: svg-root-size-container.html
+        - test: container-units-selection.html
+        - test: container-inheritance.html
+        - test: container-units-basic.html
+        - test: container-type-computed.html
+        - test: multicol-container-001.html
+        - test: container-type-layout-invalidation.html
+        - test: container-units-shadow.html
+        - test: container-type-containment.html
+        - test: container-units-small-viewport-fallback.html
+        - test: canvas-as-container-006.html
+        - test: container-units-computational-independence.html
+        - test: deep-nested-inline-size-containers.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1802763
+      results:
+        - test: container-units-typed-om.html
+          subtest: CSS.cqw function
+        - test: container-units-typed-om.html
+          subtest: Reify value with cqw unit
+        - test: container-units-typed-om.html
+          subtest: Set value with cqw unit (string)
+        - test: container-units-typed-om.html
+          subtest: Set value with cqw unit (CSS.cqw)
+        - test: container-units-typed-om.html
+          subtest: CSS.cqh function
+        - test: container-units-typed-om.html
+          subtest: Reify value with cqh unit
+        - test: container-units-typed-om.html
+          subtest: Set value with cqh unit (string)
+        - test: container-units-typed-om.html
+          subtest: Set value with cqh unit (CSS.cqh)
+        - test: container-units-typed-om.html
+          subtest: CSS.cqi function
+        - test: container-units-typed-om.html
+          subtest: Reify value with cqi unit
+        - test: container-units-typed-om.html
+          subtest: Set value with cqi unit (string)
+        - test: container-units-typed-om.html
+          subtest: Set value with cqi unit (CSS.cqi)
+        - test: container-units-typed-om.html
+          subtest: CSS.cqb function
+        - test: container-units-typed-om.html
+          subtest: Reify value with cqb unit
+        - test: container-units-typed-om.html
+          subtest: Set value with cqb unit (string)
+        - test: container-units-typed-om.html
+          subtest: Set value with cqb unit (CSS.cqb)
+        - test: container-units-typed-om.html
+          subtest: CSS.cqmin function
+        - test: container-units-typed-om.html
+          subtest: Reify value with cqmin unit
+        - test: container-units-typed-om.html
+          subtest: Set value with cqmin unit (string)
+        - test: container-units-typed-om.html
+          subtest: Set value with cqmin unit (CSS.cqmin)
+        - test: container-units-typed-om.html
+          subtest: CSS.cqmax function
+        - test: container-units-typed-om.html
+          subtest: Reify value with cqmax unit
+        - test: container-units-typed-om.html
+          subtest: Set value with cqmax unit (string)
+        - test: container-units-typed-om.html
+          subtest: Set value with cqmax unit (CSS.cqmax)
+        - test: pseudo-elements-004.html
+          subtest: Color for ::before depending on container
+        - test: pseudo-elements-004.html
+          subtest: Color for ::after depending on container
+        - test: pseudo-elements-004.html
+          subtest: Color for ::marker depending on container
+        - test: pseudo-elements-004.html
+          subtest: Color for ::first-line depending on container
+        - test: pseudo-elements-004.html
+          subtest: Color for ::first-letter depending on container
+        - test: pseudo-elements-004.html
+          subtest: Color for ::backdrop depending on container
+        - test: container-units-svglength.html
+          subtest: unitType with container-relative units
+        - test: container-units-svglength.html
+          subtest: cqw,cqh can be resolved
+        - test: container-units-svglength.html
+          subtest: cqi,cqb can be resolved
+        - test: container-units-svglength.html
+          subtest: cqmin,cqmax can be resolved
+        - test: container-units-svglength.html
+          subtest: calc() with container-relative units can be resolved
+        - test: container-units-svglength.html
+          subtest: Can modify value with container-relative units
+        - test: container-units-svglength.html
+          subtest: 'CSS Container Queries Test: container-relative units in SVGLength'
+        - test: ineligible-containment.html
+          subtest: Container ineligible for containment
+        - test: ineligible-containment.html
+          subtest: Changing containment eligibility invalidates style
+        - test: container-longhand-animation-type.html
+          subtest: Reference variable is applied
+        - test: custom-property-style-queries.html
+          subtest: 'style(--inner: true)'
+        - test: custom-property-style-queries.html
+          subtest: style(--inner:true)
+        - test: custom-property-style-queries.html
+          subtest: style(--inner:true )
+        - test: custom-property-style-queries.html
+          subtest: 'style(--inner: true )'
+        - test: custom-property-style-queries.html
+          subtest: 'style(--inner-no-space: true)'
+        - test: custom-property-style-queries.html
+          subtest: style(--inner-no-space:true)
+        - test: custom-property-style-queries.html
+          subtest: style(--inner-no-space:true )
+        - test: custom-property-style-queries.html
+          subtest: 'style(--inner-no-space: true )'
+        - test: custom-property-style-queries.html
+          subtest: 'style(--inner-space-after: true)'
+        - test: custom-property-style-queries.html
+          subtest: style(--inner-space-after:true)
+        - test: custom-property-style-queries.html
+          subtest: style(--inner-space-after:true )
+        - test: custom-property-style-queries.html
+          subtest: 'style(--inner-space-after: true )'
+        - test: custom-property-style-queries.html
+          subtest: 'outer style(--outer: true)'
+        - test: custom-property-style-queries.html
+          subtest: outer style(--outer:true)
+        - test: custom-property-style-queries.html
+          subtest: outer style(--outer:true )
+        - test: custom-property-style-queries.html
+          subtest: 'outer style(--outer: true )'
+        - test: custom-property-style-queries.html
+          subtest: 'outer style(--outer-no-space: true)'
+        - test: custom-property-style-queries.html
+          subtest: outer style(--outer-no-space:true)
+        - test: custom-property-style-queries.html
+          subtest: outer style(--outer-no-space:true )
+        - test: custom-property-style-queries.html
+          subtest: 'outer style(--outer-no-space: true )'
+        - test: custom-property-style-queries.html
+          subtest: 'outer style(--outer-space-after: true)'
+        - test: custom-property-style-queries.html
+          subtest: outer style(--outer-space-after:true)
+        - test: custom-property-style-queries.html
+          subtest: outer style(--outer-space-after:true )
+        - test: custom-property-style-queries.html
+          subtest: 'outer style(--outer-space-after: true )'
+        - test: custom-property-style-queries.html
+          subtest: Query custom property with !important declaration
+        - test: custom-property-style-queries.html
+          subtest: Query custom property using var()
+        - test: custom-property-style-queries.html
+          subtest: Query custom property including unknown var() reference
+        - test: custom-property-style-queries.html
+          subtest: Query custom property including unknown var() reference with non-matching fallback
+        - test: custom-property-style-queries.html
+          subtest: Query custom property including unknown var() reference with matching fallback
+        - test: custom-property-style-queries.html
+          subtest: Query custom property matching guaranteed-invalid values
+        - test: custom-property-style-queries.html
+          subtest: Style query 'initial' matching
+        - test: custom-property-style-queries.html
+          subtest: Style query 'initial' not matching
+        - test: custom-property-style-queries.html
+          subtest: Style query 'inherit' matching
+        - test: custom-property-style-queries.html
+          subtest: Style query 'inherit' not matching
+        - test: custom-property-style-queries.html
+          subtest: Style query 'unset' matching
+        - test: custom-property-style-queries.html
+          subtest: Style query 'unset' not matching
+        - test: custom-property-style-queries.html
+          subtest: Match registered <length> custom property with px.
+        - test: custom-property-style-queries.html
+          subtest: Match registered <length> custom property with em in query.
+        - test: custom-property-style-queries.html
+          subtest: Match registered <length> custom property with em in computed value.
+        - test: custom-property-style-queries.html
+          subtest: Match registered <length> custom property with cqi unit.
+        - test: container-for-shadow-dom.html
+          subtest: Match container in same tree, not walking flat tree ancestors
+        - test: container-for-shadow-dom.html
+          subtest: Match container in ::part selector's originating element tree
+        - test: container-for-shadow-dom.html
+          subtest: Match container in outer tree for :host::before
+        - test: container-for-shadow-dom.html
+          subtest: Match container for ::before in ::part selector's originating element tree
+        - test: container-for-shadow-dom.html
+          subtest: Match container for ::part selector's originating element tree for exportparts
+        - test: container-for-shadow-dom.html
+          subtest: Should not match container inside shadow tree for ::part()
+        - test: size-container-no-principal-box.html
+          subtest: '(min-width: 0) does not match a container without a principal box (display:none)'
+        - test: size-container-no-principal-box.html
+          subtest: '(min-width: 0) does not match a container without a principal box (display:contents)'
+        - test: pseudo-elements-005.html
+          subtest: ::before pseudo element querying style() of originating element
+        - test: pseudo-elements-005.html
+          subtest: ::before pseudo element matching style() query after class change
+        - test: font-relative-units.html
+          subtest: lh relative inline-size
+        - test: grid-item-container.html
+          subtest: Check that children can query grid item containers
+        - test: counters-flex-circular.html
+          subtest: The container query should match the layed out width
+        - test: custom-property-style-query-change.html
+          subtest: Target child
+        - test: custom-property-style-query-change.html
+          subtest: Target grandchild
+        - test: custom-property-style-query-change.html
+          subtest: Registered property query child
+        - test: custom-property-style-query-change.html
+          subtest: Registered property query grandchild
+        - test: auto-scrollbars.html
+          subtest: Initial layout - expecting a scrollbar without overflowing content instead of overflowing content without a scrollbar
+        - test: auto-scrollbars.html
+          subtest: Same result after a reflow
+        - test: pseudo-elements-003.html
+          subtest: Originating element container for ::before
+        - test: pseudo-elements-003.html
+          subtest: Originating element container for ::after
+        - test: pseudo-elements-003.html
+          subtest: Originating element container for ::marker
+        - test: pseudo-elements-003.html
+          subtest: Originating element container for ::first-line
+        - test: pseudo-elements-003.html
+          subtest: Originating element container for ::first-letter
+        - test: pseudo-elements-003.html
+          subtest: Originating element container for outer ::first-line
+        - test: pseudo-elements-003.html
+          subtest: Originating element container for outer ::first-letter
+        - test: pseudo-elements-003.html
+          subtest: Originating element container for ::backdrop
+        - test: font-relative-units-dynamic.html
+          subtest: lh units respond to changes
+        - test: query-content-box.html
+          subtest: Size queries with content-box sizing
+        - test: query-content-box.html
+          subtest: Size queries with border-box sizing
+        - test: query-content-box.html
+          subtest: Size queries with content-box sizing and overflow:scroll
+        - test: query-content-box.html
+          subtest: Size queries with border-box sizing and overflow:scroll
+        - test: percentage-padding-orthogonal.html
+          subtest: '#container height measured with 500px width. Both container children visible'
+        - test: percentage-padding-orthogonal.html
+          subtest: '#container width 400px after padding is applied.'
+        - test: percentage-padding-orthogonal.html
+          subtest: '#container width 400px after padding is applied. #second is removed from the rendering'
+        - test: container-units-shadow.html
+          subtest: Direct slotted child queries shadow-including ancestors
+        - test: container-units-shadow.html
+          subtest: Nondirect slotted child queries shadow-including ancestors
+        - test: container-type-containment.html
+          subtest: container-type:inline/size turns on style containment
+        - test: display-none.html
+          subtest: getComputedStyle when intermediate ancestor is display:none
+        - test: top-layer-nested-dialog.html
+          subtest: '@container queries start matching'
+        - test: display-contents.html
+          subtest: getComputedStyle when container becomes display:contents
+        - test: display-contents.html
+          subtest: getComputedStyle when intermediate container becomes display:contents
+        - test: never-match-container.html
+          subtest: Size @container query against inline box never matches
+        - test: never-match-container.html
+          subtest: Size @container query against svg element never matches
+        - test: container-inner-at-rules.html
+          subtest: '@keyframes is defined regardless of evaluation'
+        - test: container-inner-at-rules.html
+          subtest: '@property is defined regardless of evaluation'
+        - test: at-container-parsing.html
+          subtest: foo(width)
+        - test: at-container-parsing.html
+          subtest: size(width)
+        - test: at-container-parsing.html
+          subtest: (asdf)
+        - test: at-container-parsing.html
+          subtest: (resolution > 100dpi)
+        - test: at-container-parsing.html
+          subtest: '(resolution: 150dpi)'
+        - test: at-container-parsing.html
+          subtest: (color)
+        - test: at-container-parsing.html
+          subtest: '(min-color: 1)'
+        - test: at-container-parsing.html
+          subtest: (color-index >= 1)
+        - test: at-container-parsing.html
+          subtest: size(grid)
+        - test: at-container-parsing.html
+          subtest: (grid)
+        - test: at-container-parsing.html
+          subtest: (width == 100px)
+        - test: at-container-parsing.html
+          subtest: (100px == width)
+        - test: at-container-parsing.html
+          subtest: (100px = width = 200px)
+        - test: at-container-parsing.html
+          subtest: (100px < width > 200px)
+        - test: at-container-parsing.html
+          subtest: (100px <= width >= 200px)
+        - test: at-container-parsing.html
+          subtest: (100px <= width > 200px)
+        - test: at-container-parsing.html
+          subtest: (100px < width >= 200px)
+        - test: at-container-parsing.html
+          subtest: '(100px : width : 200px)'
+        - test: at-container-parsing.html
+          subtest: 'style(--my-prop: foo)'
+        - test: at-container-parsing.html
+          subtest: 'style(--my-prop: foo - bar ())'
+        - test: at-container-parsing.html
+          subtest: 'style(not ((--foo: calc(10px + 2em)) and ((--foo: url(x)))))'
+        - test: at-container-parsing.html
+          subtest: 'style((--foo: bar) or (--bar: 10px))'
+        - test: at-container-parsing.html
+          subtest: style(--my-prop:)
+        - test: at-container-parsing.html
+          subtest: 'style(--my-prop: )'
+        - test: at-container-parsing.html
+          subtest: 'style(--foo: bar !important)'
+        - test: at-container-parsing.html
+          subtest: 'style(--foo: bar;)'
+        - test: at-container-parsing.html
+          subtest: style(--foo)
+        - test: at-container-parsing.html
+          subtest: 'style(style(--foo: bar))'
+        - test: sibling-layout-dependency.html
+          subtest: Sibling style mutation
+        - test: sibling-layout-dependency.html
+          subtest: Sibling style mutation, parent is affected
+        - test: sibling-layout-dependency.html
+          subtest: Sibling style mutation, ancestor is affected
+        - test: sibling-layout-dependency.html
+          subtest: Sibling text mutation
+        - test: container-units-computational-independence.html
+          subtest: Container relative unit cqw is not computationally independent
+        - test: container-units-computational-independence.html
+          subtest: Container relative unit cqh is not computationally independent
+        - test: container-units-computational-independence.html
+          subtest: Container relative unit cqi is not computationally independent
+        - test: container-units-computational-independence.html
+          subtest: Container relative unit cqb is not computationally independent
+        - test: container-units-computational-independence.html
+          subtest: Container relative unit cqmin is not computationally independent
+        - test: container-units-computational-independence.html
+          subtest: Container relative unit cqmax is not computationally independent
+        - test: query-evaluation.html
+          subtest: ((unknown) or (width) or (width))
+        - test: query-evaluation.html
+          subtest: ((width) or (unknown) or (width))
+        - test: query-evaluation.html
+          subtest: ((width) or (width) or (unknown))
+        - test: query-evaluation.html
+          subtest: ((unknown) or (height) or (width))
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1759227
+      results:
+        - test: transition-scrollbars.html
+        - test: inline-size-containment-vertical-rl.html
+        - test: container-nested.html
+        - test: ineligible-containment.html
+        - test: container-size-invalidation.html
+        - test: orthogonal-wm-container-query.html
+        - test: backdrop-invalidation.html
+        - test: container-for-shadow-dom.html
+        - test: get-animations.html
+        - test: conditional-container-status.html
+        - test: size-container-no-principal-box.html
+        - test: transition-style-change-event.html
+        - test: aspect-ratio-feature-evaluation.html
+        - test: font-relative-units.html
+        - test: viewport-units-dynamic.html
+        - test: top-layer-dialog-container.html
+        - test: counters-flex-circular.html
+        - test: auto-scrollbars.html
+        - test: pseudo-elements-003.html
+        - test: font-relative-units-dynamic.html
+        - test: inline-size-bfc-floats.html
+        - test: viewport-units.html
+        - test: unsupported-axis.html
+        - test: style-change-in-container.html
+        - test: animation-container-size.html
+        - test: query-content-box.html
+        - test: container-type-invalidation.html
+        - test: percentage-padding-orthogonal.html
+        - test: top-layer-dialog.html
+        - test: iframe-invalidation.html
+        - test: container-name-invalidation.html
+        - test: container-selection.html
+        - test: reattach-container-with-dirty-child.html
+        - test: display-none.html
+        - test: inline-size-containment.html
+        - test: top-layer-nested-dialog.html
+        - test: display-contents.html
+        - test: never-match-container.html
+        - test: container-inner-at-rules.html
+        - test: at-container-parsing.html
+        - test: inline-size-and-min-width.html
+        - test: animation-container-type-dynamic.html
+        - test: animation-nested-animation.html
+        - test: pseudo-elements-001.html
+        - test: size-feature-evaluation.html
+        - test: animation-nested-transition.html
+        - test: query-evaluation.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1836560
+      results:
+        - test: dialog-backdrop-remove.html
+          subtest: Test status
+        - test: dialog-backdrop-create.html
+          subtest: Test status
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1887134
+      results:
+        - test: pseudo-elements-002b.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1887135
+      results:
+        - test: style-query-with-unknown-width.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1753444
+      results:
+        - test: canvas-as-container-003.html
+        - test: canvas-as-container-004.html
+        - test: canvas-as-container-005.html
+          subtest: Focusable after container size change
+        - test: canvas-as-container-006.html
+          subtest: Focusable after container size change
+    - product: chrome
+      url: https://crbug.com/1294155
+      results:
+        - test: canvas-as-container-004.html
+        - test: canvas-as-container-006.html
+          subtest: Focusable after container size change
+    - product: chrome
+      url: https://crbug.com/1393577
+      results:
+        - test: idlharness.html
+          subtest: 'CSSContainerRule interface: attribute containerName'
+        - test: idlharness.html
+          subtest: 'CSSContainerRule interface: attribute containerQuery'
+        - test: idlharness.html
+          subtest: 'CSSContainerRule interface: sheet.cssRules[0] must inherit property "containerName" with the proper type'
+        - test: idlharness.html
+          subtest: 'CSSContainerRule interface: sheet.cssRules[0] must inherit property "containerQuery" with the proper type'
+        - test: idlharness.html
+          subtest: 'CSSContainerRule interface: sheet.cssRules[0].cssRules[0] must inherit property "containerName" with the proper type'
+        - test: idlharness.html
+          subtest: 'CSSContainerRule interface: sheet.cssRules[0].cssRules[0] must inherit property "containerQuery" with the proper type'
+        - test: at-container-serialization.html
+          subtest: Serialization of conditionText
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1767964
+      results:
+        - test: pseudo-elements-004.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1769946
+      results:
+        - test: container-units-media-queries.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1770908
+      results:
+        - test: svg-foreignobject-child-container.html
+    - product: chrome
+      url: https://crbug.com/989916
+      results:
+        - test: svg-foreignobject-child-container.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1776679
+      results:
+        - test: container-units-in-at-container-fallback.html
+        - test: container-units-in-at-container.html
+    - product: safari
+      url: https://bugs.webkit.org/show_bug.cgi?id=253935
+      results:
+        - test: container-units-in-at-container-fallback.html
+          subtest: Use small viewport size as fallback
+    - product: safari
+      url: https://bugs.webkit.org/show_bug.cgi?id=253937
+      results:
+        - test: container-units-svglength.html
+    - product: chrome
+      url: https://crbug.com/829028
+      results:
+        - test: fragmented-container-001.html
+        - test: multicol-container-001.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1874725
+      results:
+        - test: query-evaluation-style.html
+          subtest: 'style((--foo: bar))'
+        - test: query-evaluation-style.html
+          subtest: 'style(not (--baz: qux))'
+        - test: query-evaluation-style.html
+          subtest: 'style((--foo: bar) and (--foo: bar))'
+        - test: query-evaluation-style.html
+          subtest: 'style((--foo: bar) and (--foo: bar) and (--foo: bar))'
+        - test: query-evaluation-style.html
+          subtest: 'style((--foo: bar) or (--foo: bar))'
+        - test: query-evaluation-style.html
+          subtest: 'style((--foo: bar) or (--foo: bar) or (--foo: bar))'
+        - test: query-evaluation-style.html
+          subtest: 'style((--baz: qux) or (--foo: bar) or (--foo: bar))'
+        - test: query-evaluation-style.html
+          subtest: 'style((--foo: bar) or (--baz: qux) or (--foo: bar))'
+        - test: query-evaluation-style.html
+          subtest: 'style((--foo: bar) or (--foo: bar) or (--baz: qux))'
+        - test: query-evaluation-style.html
+          subtest: 'style(not ((--foo: bar) and (--baz: qux)))'
+        - test: query-evaluation-style.html
+          subtest: 'style((--baz: qux) or (not ((--baz: qux) and (--foo: bar))))'
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1887120
+      results:
+        - test: at-container-style-parsing.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1777239
+      results:
+        - test: container-size-nested-invalidation.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1887124
+      results:
+        - test: display-contents-dynamic-style-queries.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1760446
+      results:
+        - test: container-longhand-animation-type.html
+    - product: chrome
+      url: https://crbug.com/1306475
+      results:
+        - test: container-longhand-animation-type.html
+          subtest: container-name is not animatable
+        - test: container-longhand-animation-type.html
+          subtest: container-type is not animatable
+    - product: chrome
+      url: https://crbug.com/1382790
+      results:
+        - test: container-name-tree-scoped.html
+          subtest: Outer scope query should not match container-name set by :host rule in shadow tree
+        - test: container-name-tree-scoped.html
+          subtest: Outer scope query should not match container-name set by ::slotted rule in shadow tree
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1836561
+      results:
+        - test: container-name-tree-scoped.html
+          subtest: Outer scope query should not match container-name set by :host rule in shadow tree
+        - test: container-name-tree-scoped.html
+          subtest: Outer scope query should not match container-name set by ::slotted rule in shadow tree
+    - product: chrome
+      url: https://crbug.com/1385891
+      results:
+        - test: transition-style-change-event-002.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1784237
+      results:
+        - test: custom-property-style-queries.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1881854
+      results:
+        - test: custom-property-style-queries.html
+          subtest: Style query matching negated value-less query against initial value
+        - test: custom-property-style-queries.html
+          subtest: Style query matching value-less query against non-initial value
+        - test: custom-property-style-queries.html
+          subtest: Match registered <length> custom property with px via initial keyword.
+        - test: custom-property-style-queries.html
+          subtest: Match registered <length> custom property with initial value.
+        - test: custom-property-style-queries.html
+          subtest: Match registered <length> custom property with initial value via initial keyword.
+        - test: custom-property-style-queries.html
+          subtest: Should only match exact string for numbers in non-registered custom properties
+        - test: custom-property-style-queries.html
+          subtest: Spaces should not collapse in non-registered custom properties
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1892409
+      results:
+        - test: custom-property-style-queries.html
+          subtest: Style query 'initial' matching (with explicit 'initial' value)
+        - test: custom-property-style-queries.html
+          subtest: Style query matching negated value-less query against initial value (with explicit 'initial' value)
+        - test: custom-property-style-queries.html
+          subtest: Style query 'space' matching
+        - test: custom-property-style-queries.html
+          subtest: Style query 'space' not matching
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1878995
+      results:
+        - test: container-for-shadow-dom.html
+          subtest: Match container for ::before in ::slotted selector's originating element tree
+        - test: container-for-shadow-dom.html
+          subtest: A :host::part rule should match containers in the originating element tree
+        - test: style-container-for-shadow-dom.html
+          subtest: Match container in outer tree
+        - test: style-container-for-shadow-dom.html
+          subtest: Match container in same tree, not walking flat tree ancestors
+        - test: style-container-for-shadow-dom.html
+          subtest: Match container in ::slotted selector's originating element tree
+        - test: style-container-for-shadow-dom.html
+          subtest: Match container in outer tree for :host
+        - test: style-container-for-shadow-dom.html
+          subtest: Match container in ::part selector's originating element tree
+        - test: style-container-for-shadow-dom.html
+          subtest: Match container for ::before in ::slotted selector's originating element tree
+        - test: style-container-for-shadow-dom.html
+          subtest: Match container in outer tree for :host::before
+        - test: style-container-for-shadow-dom.html
+          subtest: Match container for ::before in ::part selector's originating element tree
+        - test: style-container-for-shadow-dom.html
+          subtest: Match container for ::part selector's originating element tree for exportparts
+        - test: style-container-for-shadow-dom.html
+          subtest: Match container for slot light tree child fallback
+        - test: style-container-for-shadow-dom.html
+          subtest: A :host::part rule should match containers in the originating element tree
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1901735
+      results:
+        - test: container-for-shadow-dom.html
+          subtest: Container name set inside a shadow tree should not match query for host child on the outside
+        - test: container-for-shadow-dom.html
+          subtest: Container name set on :host from inside a shadow tree not matching query for slotted from the outside of the shadow tree
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1776487
+      results:
+        - test: at-container-style-serialization.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1891055
+      results:
+        - test: pseudo-elements-010.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1887121
+      results:
+        - test: container-selection-unknown-features.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1796166
+      results:
+        - test: pseudo-elements-005.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1887133
+      results:
+        - test: pseudo-elements-009.html
+    - product: chrome
+      url: https://crbug.com/1381037
+      results:
+        - test: font-relative-units.html
+          subtest: rex relative inline-size229.484px0px
+        - test: font-relative-units-dynamic.html
+          subtest: rex units respond to changes
+    - product: chrome
+      url: https://crbug.com/1273913
+      results:
+        - test: pseudo-elements-002.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1766989
+      results:
+        - test: container-size-invalidation-after-load.html
+    - product: chrome
+      url: https://crbug.com/1312940
+      results:
+        - test: container-size-invalidation-after-load.html
+    - product: chrome
+      url: https://crbug.com/1321010
+      results:
+        - test: container-size-invalidation-after-load.html
+        - test: iframe-in-container-invalidation.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1887131
+      results:
+        - test: nested-size-style-container-invalidation.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1760445
+      results:
+        - test: container-name-parsing.html
+        - test: container-name-computed.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1786771
+      results:
+        - test: custom-property-style-query-change.html
+    - product: chrome
+      url: https://crbug.com/1298921
+      results:
+        - test: layout-dependent-focus.html
+          subtest: Verify that onblur is called on hidden input
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1760453
+      results:
+        - test: layout-dependent-focus.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1761224
+      results:
+        - test: at-container-serialization.html
+    - product: chrome
+      url: https://crbug.com/1306012
+      results:
+        - test: container-name-computed.html
+          subtest: Property container-name value 'foo foo bar'
+        - test: container-name-computed.html
+          subtest: Property container-name value 'foo bar foo'
+        - test: container-name-computed.html
+          subtest: Property container-name value 'bar foo foo'
+    - product: chrome
+      url: https://crbug.com/1404088
+      results:
+        - test: container-units-ineligible-container.html
+          subtest: 'display: table'
+        - test: container-units-ineligible-container.html
+          subtest: 'display: table-cell'
+        - test: container-units-ineligible-container.html
+          subtest: 'display: inline'
+        - test: container-units-ineligible-container.html
+          subtest: 'display: contents'
+        - test: container-units-ineligible-container.html
+          subtest: 'display: none'
+    - product: chrome
+      url: https://crbug.com/1400979
+      results:
+        - test: nested-query-containers.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1836558
+      results:
+        - test: nested-query-containers.html
+          subtest: test5 - inline - 0b100
+    - product: chrome
+      url: https://crbug.com/1281318
+      results:
+        - test: percentage-padding-orthogonal.html
+          subtest: '#container width 399px after padding is applied. #second is removed from the rendering'
+    - product: chrome
+      url: https://crbug.com/1404424
+      results:
+        - test: pseudo-elements-008.html
+          subtest: Originating element container for ::backdrop
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1772547
+      results:
+        - test: calc-evaluation.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1767258
+      results:
+        - test: iframe-in-container-invalidation.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1902660
+      results:
+        - test: style-container-for-shadow-dom.html
+          subtest: Match <slot> as a container for ::slotted element
+    - product: chrome
+      url: https://crbug.com/1306014
+      results:
+        - test: at-container-parsing.html
+          subtest: 'Container selector: none'
+        - test: at-container-parsing.html
+          subtest: 'Container selector: None'
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1887127
+      results:
+        - test: inner-first-line-non-matching.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1760411
+      results:
+        - test: sibling-layout-dependency.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1887136
+      results:
+        - test: style-container-invalidation-inheritance.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1744181
+      results:
+        - test: container-units-computational-independence.html
+          subtest: Container relative unit qw is not computationally independent
+        - test: container-units-computational-independence.html
+          subtest: Container relative unit qh is not computationally independent
+        - test: container-units-computational-independence.html
+          subtest: Container relative unit qi is not computationally independent
+        - test: container-units-computational-independence.html
+          subtest: Container relative unit qb is not computationally independent
+        - test: container-units-computational-independence.html
+          subtest: Container relative unit qmin is not computationally independent
+        - test: container-units-computational-independence.html
+          subtest: Container relative unit qmax is not computationally independent
+    - product: chrome
+      url: https://crbug.com/1309410
+      results:
+        - test: deep-nested-inline-size-containers.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1905350
+      results:
+        - test: at-container-style-parsing.html
+          subtest: 'style(--my-prop: foo)'
+        - test: at-container-style-parsing.html
+          subtest: 'style(--my-prop: foo - bar ())'
+        - test: at-container-style-parsing.html
+          subtest: 'style(not ((--foo: calc(10px + 2em)) and ((--foo: url(x)))))'
+        - test: at-container-style-parsing.html
+          subtest: 'style((--foo: bar) or (--bar: 10px))'
+        - test: at-container-style-parsing.html
+          subtest: style(--my-prop:)
+        - test: at-container-style-parsing.html
+          subtest: 'style(--my-prop: )'
+        - test: at-container-style-parsing.html
+          subtest: 'style(--foo: bar !important)'
+        - test: at-container-style-parsing.html
+          subtest: style(--foo)
+        - test: at-container-style-serialization.html
+          subtest: Normalize spaces
+        - test: at-container-style-serialization.html
+          subtest: Empty declaration value - spaces
+        - test: at-container-style-serialization.html
+          subtest: Empty declaration value
+        - test: at-container-style-serialization.html
+          subtest: No declaration value
+        - test: at-container-style-serialization.html
+          subtest: Unknown CSS property after 'or'
+        - test: at-container-style-serialization.html
+          subtest: Original string number in custom property value
+        - test: container-for-shadow-dom.html
+          subtest: Container name set inside a shadow tree should not match query for host child on the outside
+        - test: container-for-shadow-dom.html
+          subtest: Container name set on :host from inside a shadow tree not matching query for slotted from the outside of the shadow tree
+        - test: container-name-tree-scoped.html
+          subtest: Outer scope query should not match container-name set by :host rule in shadow tree
+        - test: container-name-tree-scoped.html
+          subtest: Outer scope query should not match container-name set by ::slotted rule in shadow tree
+        - test: container-selection-unknown-features.html
+          subtest: 'width query with (foo: bar)'
+        - test: container-selection-unknown-features.html
+          subtest: width query with foo(bar)
+        - test: container-units-computational-independence.html
+          subtest: Container relative unit cqw is not computationally independent
+        - test: container-units-computational-independence.html
+          subtest: Container relative unit cqh is not computationally independent
+        - test: container-units-computational-independence.html
+          subtest: Container relative unit cqi is not computationally independent
+        - test: container-units-computational-independence.html
+          subtest: Container relative unit cqb is not computationally independent
+        - test: container-units-computational-independence.html
+          subtest: Container relative unit cqmin is not computationally independent
+        - test: container-units-computational-independence.html
+          subtest: Container relative unit cqmax is not computationally independent
+        - test: container-units-svglength.html
+          subtest: unitType with container-relative units
+        - test: container-units-svglength.html
+          subtest: cqw,cqh can be resolved
+        - test: container-units-svglength.html
+          subtest: cqi,cqb can be resolved
+        - test: container-units-svglength.html
+          subtest: cqmin,cqmax can be resolved
+        - test: container-units-svglength.html
+          subtest: calc() with container-relative units can be resolved
+        - test: container-units-svglength.html
+          subtest: Can modify value with container-relative units
+        - test: container-units-svglength.html
+          subtest: 'CSS Container Queries Test: container-relative units in SVGLength'
+        - test: container-units-typed-om.html
+          subtest: CSS.cqw function
+        - test: container-units-typed-om.html
+          subtest: Reify value with cqw unit
+        - test: container-units-typed-om.html
+          subtest: Set value with cqw unit (string)
+        - test: container-units-typed-om.html
+          subtest: Set value with cqw unit (CSS.cqw)
+        - test: container-units-typed-om.html
+          subtest: CSS.cqh function
+        - test: container-units-typed-om.html
+          subtest: Reify value with cqh unit
+        - test: container-units-typed-om.html
+          subtest: Set value with cqh unit (string)
+        - test: container-units-typed-om.html
+          subtest: Set value with cqh unit (CSS.cqh)
+        - test: container-units-typed-om.html
+          subtest: CSS.cqi function
+        - test: container-units-typed-om.html
+          subtest: Reify value with cqi unit
+        - test: container-units-typed-om.html
+          subtest: Set value with cqi unit (string)
+        - test: container-units-typed-om.html
+          subtest: Set value with cqi unit (CSS.cqi)
+        - test: container-units-typed-om.html
+          subtest: CSS.cqb function
+        - test: container-units-typed-om.html
+          subtest: Reify value with cqb unit
+        - test: container-units-typed-om.html
+          subtest: Set value with cqb unit (string)
+        - test: container-units-typed-om.html
+          subtest: Set value with cqb unit (CSS.cqb)
+        - test: container-units-typed-om.html
+          subtest: CSS.cqmin function
+        - test: container-units-typed-om.html
+          subtest: Reify value with cqmin unit
+        - test: container-units-typed-om.html
+          subtest: Set value with cqmin unit (string)
+        - test: container-units-typed-om.html
+          subtest: Set value with cqmin unit (CSS.cqmin)
+        - test: container-units-typed-om.html
+          subtest: CSS.cqmax function
+        - test: container-units-typed-om.html
+          subtest: Reify value with cqmax unit
+        - test: container-units-typed-om.html
+          subtest: Set value with cqmax unit (string)
+        - test: container-units-typed-om.html
+          subtest: Set value with cqmax unit (CSS.cqmax)
+        - test: custom-property-style-queries.html
+          subtest: 'style(--inner: true)'
+        - test: custom-property-style-queries.html
+          subtest: style(--inner:true)
+        - test: custom-property-style-queries.html
+          subtest: style(--inner:true )
+        - test: custom-property-style-queries.html
+          subtest: 'style(--inner: true )'
+        - test: custom-property-style-queries.html
+          subtest: 'style(--inner-no-space: true)'
+        - test: custom-property-style-queries.html
+          subtest: style(--inner-no-space:true)
+        - test: custom-property-style-queries.html
+          subtest: style(--inner-no-space:true )
+        - test: custom-property-style-queries.html
+          subtest: 'style(--inner-no-space: true )'
+        - test: custom-property-style-queries.html
+          subtest: 'style(--inner-space-after: true)'
+        - test: custom-property-style-queries.html
+          subtest: style(--inner-space-after:true)
+        - test: custom-property-style-queries.html
+          subtest: style(--inner-space-after:true )
+        - test: custom-property-style-queries.html
+          subtest: 'style(--inner-space-after: true )'
+        - test: custom-property-style-queries.html
+          subtest: 'outer style(--outer: true)'
+        - test: custom-property-style-queries.html
+          subtest: outer style(--outer:true)
+        - test: custom-property-style-queries.html
+          subtest: outer style(--outer:true )
+        - test: custom-property-style-queries.html
+          subtest: 'outer style(--outer: true )'
+        - test: custom-property-style-queries.html
+          subtest: 'outer style(--outer-no-space: true)'
+        - test: custom-property-style-queries.html
+          subtest: outer style(--outer-no-space:true)
+        - test: custom-property-style-queries.html
+          subtest: outer style(--outer-no-space:true )
+        - test: custom-property-style-queries.html
+          subtest: 'outer style(--outer-no-space: true )'
+        - test: custom-property-style-queries.html
+          subtest: 'outer style(--outer-space-after: true)'
+        - test: custom-property-style-queries.html
+          subtest: outer style(--outer-space-after:true)
+        - test: custom-property-style-queries.html
+          subtest: outer style(--outer-space-after:true )
+        - test: custom-property-style-queries.html
+          subtest: 'outer style(--outer-space-after: true )'
+        - test: custom-property-style-queries.html
+          subtest: Query custom property with !important declaration
+        - test: custom-property-style-queries.html
+          subtest: Query custom property using var()
+        - test: custom-property-style-queries.html
+          subtest: Query custom property including unknown var() reference
+        - test: custom-property-style-queries.html
+          subtest: Query custom property including unknown var() reference with non-matching fallback
+        - test: custom-property-style-queries.html
+          subtest: Query custom property including unknown var() reference with matching fallback
+        - test: custom-property-style-queries.html
+          subtest: Query custom property matching guaranteed-invalid values
+        - test: custom-property-style-queries.html
+          subtest: Style query 'initial' matching
+        - test: custom-property-style-queries.html
+          subtest: Style query matching negated value-less query against initial value
+        - test: custom-property-style-queries.html
+          subtest: Style query 'initial' not matching
+        - test: custom-property-style-queries.html
+          subtest: Style query matching value-less query against non-initial value
+        - test: custom-property-style-queries.html
+          subtest: Style query 'initial' matching (with explicit 'initial' value)
+        - test: custom-property-style-queries.html
+          subtest: Style query matching negated value-less query against initial value (with explicit 'initial' value)
+        - test: custom-property-style-queries.html
+          subtest: Style query 'space' matching
+        - test: custom-property-style-queries.html
+          subtest: Style query 'space' not matching
+        - test: custom-property-style-queries.html
+          subtest: Style query 'inherit' matching
+        - test: custom-property-style-queries.html
+          subtest: Style query 'inherit' not matching
+        - test: custom-property-style-queries.html
+          subtest: Style query 'unset' matching
+        - test: custom-property-style-queries.html
+          subtest: Style query 'unset' not matching
+        - test: custom-property-style-queries.html
+          subtest: Match registered <length> custom property with px.
+        - test: custom-property-style-queries.html
+          subtest: Match registered <length> custom property with px via initial keyword.
+        - test: custom-property-style-queries.html
+          subtest: Match registered <length> custom property with em in query.
+        - test: custom-property-style-queries.html
+          subtest: Match registered <length> custom property with em in computed value.
+        - test: custom-property-style-queries.html
+          subtest: Match registered <length> custom property with cqi unit.
+        - test: custom-property-style-queries.html
+          subtest: Match registered <length> custom property with initial value.
+        - test: custom-property-style-queries.html
+          subtest: Match registered <length> custom property with initial value via initial keyword.
+        - test: custom-property-style-queries.html
+          subtest: Should only match exact string for numbers in non-registered custom properties
+        - test: custom-property-style-queries.html
+          subtest: Spaces should not collapse in non-registered custom properties
+        - test: custom-property-style-query-change.html
+          subtest: Target child
+        - test: custom-property-style-query-change.html
+          subtest: Target grandchild
+        - test: custom-property-style-query-change.html
+          subtest: Registered property query child
+        - test: custom-property-style-query-change.html
+          subtest: Registered property query grandchild
+        - test: display-contents-dynamic-style-queries.html
+          subtest: After display and --foo changes, style() query causes the color to be green
+        - test: display-none.html
+          subtest: getComputedStyle when intermediate ancestor is display:none
+        - test: display-none.html
+          subtest: getComputedStyle when display:none inner container has forced style
+        - test: font-relative-units-dynamic.html
+          subtest: rex units respond to changes
+        - test: font-relative-units-dynamic.html
+          subtest: rch units respond to changes
+        - test: font-relative-units-dynamic.html
+          subtest: ric units respond to changes
+        - test: font-relative-units-dynamic.html
+          subtest: rcap units respond to changes
+        - test: font-relative-units.html
+          subtest: rex relative inline-size
+        - test: font-relative-units.html
+          subtest: rch relative inline-size
+        - test: font-relative-units.html
+          subtest: ric relative inline-size
+        - test: font-relative-units.html
+          subtest: rcap relative inline-size
+        - test: nested-query-containers.html
+          subtest: test5 - inline - 0b100
+        - test: nested-size-style-container-invalidation.html
+          subtest: Green after reducing width
+        - test: percentage-padding-orthogonal.html
+          subtest: '#container height measured with 500px width. Both container children visible'
+        - test: percentage-padding-orthogonal.html
+          subtest: '#container width 400px after padding is applied.'
+        - test: percentage-padding-orthogonal.html
+          subtest: '#container width 400px after padding is applied. #second is removed from the rendering'
+        - test: percentage-padding-orthogonal.html
+          subtest: '#container height measured with 499px width. Both container children visible'
+        - test: percentage-padding-orthogonal.html
+          subtest: '#container width 399px after padding is applied. #second is removed from the rendering'
+        - test: percentage-padding-orthogonal.html
+          subtest: '#container width 399x after padding is applied. #second is removed from the rendering'
+        - test: pseudo-elements-005.html
+          subtest: ::before pseudo element querying style() of originating element
+        - test: pseudo-elements-005.html
+          subtest: ::before pseudo element matching style() query after class change
+        - test: query-evaluation-style.html
+          subtest: 'style((--foo: bar))'
+        - test: query-evaluation-style.html
+          subtest: 'style(not (--baz: qux))'
+        - test: query-evaluation-style.html
+          subtest: 'style((--foo: bar) and (--foo: bar))'
+        - test: query-evaluation-style.html
+          subtest: 'style((--foo: bar) and (--foo: bar) and (--foo: bar))'
+        - test: query-evaluation-style.html
+          subtest: 'style((--foo: bar) or (--foo: bar))'
+        - test: query-evaluation-style.html
+          subtest: 'style((--foo: bar) or (--foo: bar) or (--foo: bar))'
+        - test: query-evaluation-style.html
+          subtest: 'style((--baz: qux) or (--foo: bar) or (--foo: bar))'
+        - test: query-evaluation-style.html
+          subtest: 'style((--foo: bar) or (--baz: qux) or (--foo: bar))'
+        - test: query-evaluation-style.html
+          subtest: 'style((--foo: bar) or (--foo: bar) or (--baz: qux))'
+        - test: query-evaluation-style.html
+          subtest: 'style(not ((--foo: bar) and (--baz: qux)))'
+        - test: query-evaluation-style.html
+          subtest: 'style((--baz: qux) or (not ((--baz: qux) and (--foo: bar))))'
+        - test: query-evaluation.html
+          subtest: ((unknown) or (width) or (width))
+        - test: query-evaluation.html
+          subtest: ((width) or (unknown) or (width))
+        - test: query-evaluation.html
+          subtest: ((width) or (width) or (unknown))
+        - test: query-evaluation.html
+          subtest: ((unknown) or (height) or (width))
+        - test: registered-color-style-queries.html
+          subtest: Registered color with light color-scheme and light-dark()
+        - test: registered-color-style-queries.html
+          subtest: Registered color with dark color-scheme and light-dark()
+        - test: sibling-layout-dependency.html
+          subtest: Sibling style mutation
+        - test: sibling-layout-dependency.html
+          subtest: Sibling style mutation, parent is affected
+        - test: sibling-layout-dependency.html
+          subtest: Sibling style mutation, ancestor is affected
+        - test: sibling-layout-dependency.html
+          subtest: Sibling text mutation
+        - test: style-container-for-shadow-dom.html
+          subtest: Match container in outer tree
+        - test: style-container-for-shadow-dom.html
+          subtest: Match <slot> as a container for ::slotted element
+        - test: style-container-for-shadow-dom.html
+          subtest: Match container in outer tree for :host
+        - test: style-container-for-shadow-dom.html
+          subtest: Match container in outer tree for :host::before
+        - test: style-container-for-shadow-dom.html
+          subtest: Match container for slot light tree child fallback
+        - test: style-container-invalidation-inheritance.html
+          subtest: Changed --match inherits down descendants and affects container query
+        - test: style-query-with-unknown-width.html
+          subtest: width query should evaluate to unknown and style query to true
+        - test: custom-layout-container-001.https.html
+        - test: inline-size-bfc-floats.html
+        - test: inner-first-line-non-matching.html
+        - test: pseudo-elements-002b.html
+        - test: pseudo-elements-009.html
+        - test: pseudo-elements-010.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1914355
+      results:
+        - test: custom-property-style-queries.html
+          subtest: ' style(--inner: true)'
+        - test: custom-property-style-queries.html
+          subtest: ' style(--inner:true)'
+        - test: custom-property-style-queries.html
+          subtest: ' style(--inner:true )'
+        - test: custom-property-style-queries.html
+          subtest: ' style(--inner: true )'
+        - test: custom-property-style-queries.html
+          subtest: ' style(--inner-no-space: true)'
+        - test: custom-property-style-queries.html
+          subtest: ' style(--inner-no-space:true)'
+        - test: custom-property-style-queries.html
+          subtest: ' style(--inner-no-space:true )'
+        - test: custom-property-style-queries.html
+          subtest: ' style(--inner-no-space: true )'
+        - test: custom-property-style-queries.html
+          subtest: ' style(--inner-space-after: true)'
+        - test: custom-property-style-queries.html
+          subtest: ' style(--inner-space-after:true)'
+        - test: custom-property-style-queries.html
+          subtest: ' style(--inner-space-after:true )'
+        - test: custom-property-style-queries.html
+          subtest: ' style(--inner-space-after: true )'
+        - test: custom-property-style-queries.html
+          subtest: ' style(--outer: true)'
+        - test: custom-property-style-queries.html
+          subtest: ' style(--outer:true)'
+        - test: custom-property-style-queries.html
+          subtest: ' style(--outer:true )'
+        - test: custom-property-style-queries.html
+          subtest: ' style(--outer: true )'
+        - test: custom-property-style-queries.html
+          subtest: ' style(--outer-no-space: true)'
+        - test: custom-property-style-queries.html
+          subtest: ' style(--outer-no-space:true)'
+        - test: custom-property-style-queries.html
+          subtest: ' style(--outer-no-space:true )'
+        - test: custom-property-style-queries.html
+          subtest: ' style(--outer-no-space: true )'
+        - test: custom-property-style-queries.html
+          subtest: ' style(--outer-space-after: true)'
+        - test: custom-property-style-queries.html
+          subtest: ' style(--outer-space-after:true)'
+        - test: custom-property-style-queries.html
+          subtest: ' style(--outer-space-after:true )'
+        - test: custom-property-style-queries.html
+          subtest: ' style(--outer-space-after: true )'
+        - test: custom-property-style-queries.html
+          subtest: 'outer style(--inner: true)'
+        - test: custom-property-style-queries.html
+          subtest: outer style(--inner:true)
+        - test: custom-property-style-queries.html
+          subtest: outer style(--inner:true )
+        - test: custom-property-style-queries.html
+          subtest: 'outer style(--inner: true )'
+        - test: custom-property-style-queries.html
+          subtest: 'outer style(--inner-no-space: true)'
+        - test: custom-property-style-queries.html
+          subtest: outer style(--inner-no-space:true)
+        - test: custom-property-style-queries.html
+          subtest: outer style(--inner-no-space:true )
+        - test: custom-property-style-queries.html
+          subtest: 'outer style(--inner-no-space: true )'
+        - test: custom-property-style-queries.html
+          subtest: 'outer style(--inner-space-after: true)'
+        - test: custom-property-style-queries.html
+          subtest: outer style(--inner-space-after:true)
+        - test: custom-property-style-queries.html
+          subtest: outer style(--inner-space-after:true )
+        - test: custom-property-style-queries.html
+          subtest: 'outer style(--inner-space-after: true )'
+        - test: custom-property-style-queries.html
+          subtest: Style query with revert keyword is false
+        - test: custom-property-style-queries.html
+          subtest: Style query with revert-layer keyword is false
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1918243
+      results:
+        - test: style-query-document-element.html
+          subtest: style query should evaluate to true
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1920200
+      results:
+        - test: query-content-box.html
+          subtest: Size queries with content-box sizing and scrollbar-gutter:stable
+        - test: query-content-box.html
+          subtest: Size queries with border-box sizing and scrollbar-gutter:stable
+        - test: style-container-for-shadow-dom.html
+          subtest: Match container in the shadow tree for a host child in the host child's tree scope
+        - test: style-container-for-shadow-dom.html
+          subtest: Match ::part's parent in the shadow tree as the container for ::part
+        - test: style-container-for-shadow-dom.html
+          subtest: Match ::slotted as a container for its ::before
+        - test: style-container-for-shadow-dom.html
+          subtest: Match the ::part as a container for ::before on ::part elements
+        - test: style-container-for-shadow-dom.html
+          subtest: Match container for ::part selector in inner shadow tree for exportparts
+        - test: style-container-for-shadow-dom.html
+          subtest: Should match parent container inside shadow tree for ::part()
+        - test: style-container-for-shadow-dom.html
+          subtest: A :host::part rule matching a container in the shadow tree
+        - test: style-query-no-cycle.html
+          subtest: 'style(--foo: var(--foo)) should match'
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1928675
+      results:
+        - test: font-relative-units-dynamic.html
+          subtest: cap units respond to changes
+        - test: registered-color-style-queries.html
+        - test: style-container-for-shadow-dom.html
+        - test: style-query-no-cycle.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1929897
+      results:
+        - test: style-query-guaranteed-invalid.tentative.html
+        - test: style-query-registered-custom-invalid.tentative.html
+    - product: chrome
+      url: crbug.com/362431895
+      results:
+        - test: style-query-no-cycle.html
