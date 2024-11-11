@@ -146,3 +146,13 @@ links:
   - test: scroll-state-stuck-writing-direction.html
   - test: scroll-state-target-query-change.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1928675
+- product: firefox
+  results:
+  - test: scroll-state-query-with-var.html
+  - subtest: Matching --match-unknown
+    test: scroll-state-query-with-var.html
+  - subtest: Matching --match-unregistered-number
+    test: scroll-state-query-with-var.html
+  - subtest: Matching --match-registered-number
+    test: scroll-state-query-with-var.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1930536
