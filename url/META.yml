@@ -81,6 +81,8 @@ links:
       results:
         - test: failure.html
           status: CRASH
+        - test: url-constructor-base-failure.any.html
+          status: CRASH
     - label: interop-2022-webcompat
       results:
         - test: toascii.window.html
@@ -94,8 +96,9 @@ links:
         - test: failure.html
         - test: historical.any.html
         - test: historical.any.worker.html
-        - test: IdnaTestV2.window.html
+        - test: IdnaTestV2.any.html
         - test: percent-encoding.window.html
+        - test: url-constructor-base-failure.any.html
         - test: url-constructor.any.html?exclude=(file|javascript|mailto)
         - test: url-constructor.any.worker.html?exclude=(file|javascript|mailto)
         - test: url-origin.any.html
@@ -109,6 +112,7 @@ links:
         - test: url-setters.any.worker.html?exclude=(file|javascript|mailto)
         - test: url-tojson.any.html
         - test: url-tojson.any.worker.html
+        - test: urlencoded-parser-request-response.any.html
         - test: urlencoded-parser.any.html
         - test: urlencoded-parser.any.worker.html
     - product: chrome
@@ -125,7 +129,7 @@ links:
     - product: chrome
       url: https://bugs.chromium.org/p/chromium/issues/detail?id=1190810
       results:
-        - test: failure.html
+        - test: url-constructor-base-failure.any.html
           subtest: 'URL''s href: sc://a|b/ should throw'
         - test: failure.html
           subtest: 'XHR: sc://a|b/ should throw'
@@ -133,11 +137,11 @@ links:
           subtest: 'Location''s href: sc://a|b/ should throw'
         - test: failure.html
           subtest: 'window.open(): sc://a|b/ should throw'
-        - test: failure.html
+        - test: url-constructor-base-failure.any.html
           subtest: 'URL''s constructor''s base argument: sc://a|b/ should throw'
-        - test: failure.html
+        - test: url-constructor-base-failure.any.html
           subtest: 'URL''s constructor''s base argument: http://a|b/ should throw'
-        - test: failure.html
+        - test: url-constructor-base-failure.any.html
           subtest: 'URL''s href: http://a|b/ should throw'
         - test: failure.html
           subtest: 'XHR: http://a|b/ should throw'
@@ -239,13 +243,13 @@ links:
     - product: firefox
       url: https://bugzilla.mozilla.org/show_bug.cgi?id=1845552
       results:
-        - test: IdnaTestV2.window.html
+        - test: IdnaTestV2.any.html
           subtest: ToASCII("ä.­.c") A4_2 (ignored)
-        - test: IdnaTestV2.window.html
+        - test: IdnaTestV2.any.html
           subtest: ToASCII("ä.­.c") A4_2 (ignored)
-        - test: IdnaTestV2.window.html
+        - test: IdnaTestV2.any.html
           subtest: ToASCII("Ä.­.C") A4_2 (ignored)
-        - test: IdnaTestV2.window.html
+        - test: IdnaTestV2.any.html
           subtest: ToASCII("Ä.­.C") A4_2 (ignored)
     - product: firefox
       url: https://bugzilla.mozilla.org/show_bug.cgi?id=1848511
@@ -1102,9 +1106,9 @@ links:
     - product: firefox
       url: https://bugzilla.mozilla.org/show_bug.cgi?id=1880700
       results:
-        - test: failure.html
+        - test: url-constructor-base-failure.any.html
           subtest: 'URL''s constructor''s base argument: file://example:1/ should throw'
-        - test: failure.html
+        - test: url-constructor-base-failure.any.html
           subtest: 'URL''s href: file://example:1/ should throw'
         - test: failure.html
           subtest: 'XHR: file://example:1/ should throw'
@@ -1112,9 +1116,9 @@ links:
           subtest: 'Location''s href: file://example:1/ should throw'
         - test: failure.html
           subtest: 'window.open(): file://example:1/ should throw'
-        - test: failure.html
+        - test: url-constructor-base-failure.any.html
           subtest: 'URL''s constructor''s base argument: file://example:test/ should throw'
-        - test: failure.html
+        - test: url-constructor-base-failure.any.html
           subtest: 'URL''s href: file://example:test/ should throw'
         - test: failure.html
           subtest: 'XHR: file://example:test/ should throw'
@@ -1122,9 +1126,9 @@ links:
           subtest: 'Location''s href: file://example:test/ should throw'
         - test: failure.html
           subtest: 'window.open(): file://example:test/ should throw'
-        - test: failure.html
+        - test: url-constructor-base-failure.any.html
           subtest: 'URL''s constructor''s base argument: file://example%/ should throw'
-        - test: failure.html
+        - test: url-constructor-base-failure.any.html
           subtest: 'URL''s href: file://example%/ should throw'
         - test: failure.html
           subtest: 'XHR: file://example%/ should throw'
@@ -1132,9 +1136,9 @@ links:
           subtest: 'Location''s href: file://example%/ should throw'
         - test: failure.html
           subtest: 'window.open(): file://example%/ should throw'
-        - test: failure.html
+        - test: url-constructor-base-failure.any.html
           subtest: 'URL''s constructor''s base argument: file://[example]/ should throw'
-        - test: failure.html
+        - test: url-constructor-base-failure.any.html
           subtest: 'URL''s href: file://[example]/ should throw'
         - test: failure.html
           subtest: 'XHR: file://[example]/ should throw'
@@ -1142,9 +1146,9 @@ links:
           subtest: 'Location''s href: file://[example]/ should throw'
         - test: failure.html
           subtest: 'window.open(): file://[example]/ should throw'
-        - test: failure.html
+        - test: url-constructor-base-failure.any.html
           subtest: 'URL''s constructor''s base argument: file://%43%3A should throw'
-        - test: failure.html
+        - test: url-constructor-base-failure.any.html
           subtest: 'URL''s href: file://%43%3A should throw'
         - test: failure.html
           subtest: 'XHR: file://%43%3A should throw'
@@ -1152,9 +1156,9 @@ links:
           subtest: 'Location''s href: file://%43%3A should throw'
         - test: failure.html
           subtest: 'window.open(): file://%43%3A should throw'
-        - test: failure.html
+        - test: url-constructor-base-failure.any.html
           subtest: 'URL''s constructor''s base argument: file://%43%7C should throw'
-        - test: failure.html
+        - test: url-constructor-base-failure.any.html
           subtest: 'URL''s href: file://%43%7C should throw'
         - test: failure.html
           subtest: 'XHR: file://%43%7C should throw'
@@ -1162,9 +1166,9 @@ links:
           subtest: 'Location''s href: file://%43%7C should throw'
         - test: failure.html
           subtest: 'window.open(): file://%43%7C should throw'
-        - test: failure.html
+        - test: url-constructor-base-failure.any.html
           subtest: 'URL''s constructor''s base argument: file://%43| should throw'
-        - test: failure.html
+        - test: url-constructor-base-failure.any.html
           subtest: 'URL''s href: file://%43| should throw'
         - test: failure.html
           subtest: 'XHR: file://%43| should throw'
@@ -1172,9 +1176,9 @@ links:
           subtest: 'Location''s href: file://%43| should throw'
         - test: failure.html
           subtest: 'window.open(): file://%43| should throw'
-        - test: failure.html
+        - test: url-constructor-base-failure.any.html
           subtest: 'URL''s constructor''s base argument: file://C%7C should throw'
-        - test: failure.html
+        - test: url-constructor-base-failure.any.html
           subtest: 'URL''s href: file://C%7C should throw'
         - test: failure.html
           subtest: 'XHR: file://C%7C should throw'
@@ -1182,9 +1186,9 @@ links:
           subtest: 'Location''s href: file://C%7C should throw'
         - test: failure.html
           subtest: 'window.open(): file://C%7C should throw'
-        - test: failure.html
+        - test: url-constructor-base-failure.any.html
           subtest: 'URL''s constructor''s base argument: file://%43%7C/ should throw'
-        - test: failure.html
+        - test: url-constructor-base-failure.any.html
           subtest: 'URL''s href: file://%43%7C/ should throw'
         - test: failure.html
           subtest: 'XHR: file://%43%7C/ should throw'
@@ -1192,9 +1196,9 @@ links:
           subtest: 'Location''s href: file://%43%7C/ should throw'
         - test: failure.html
           subtest: 'window.open(): file://%43%7C/ should throw'
-        - test: failure.html
+        - test: url-constructor-base-failure.any.html
           subtest: 'URL''s constructor''s base argument: file://­/p should throw'
-        - test: failure.html
+        - test: url-constructor-base-failure.any.html
           subtest: 'URL''s href: file://­/p should throw'
         - test: failure.html
           subtest: 'XHR: file://­/p should throw'
@@ -1202,9 +1206,9 @@ links:
           subtest: 'Location''s href: file://­/p should throw'
         - test: failure.html
           subtest: 'window.open(): file://­/p should throw'
-        - test: failure.html
+        - test: url-constructor-base-failure.any.html
           subtest: 'URL''s constructor''s base argument: file://%C2%AD/p should throw'
-        - test: failure.html
+        - test: url-constructor-base-failure.any.html
           subtest: 'URL''s href: file://%C2%AD/p should throw'
         - test: failure.html
           subtest: 'XHR: file://%C2%AD/p should throw'
