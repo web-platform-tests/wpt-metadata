@@ -1,576 +1,534 @@
 links:
-- product: firefox
-  results:
-  - test: selector-read-write-type-change-002.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=312971
-- product: firefox
-  results:
-  - test: floating-first-letter-05d0.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1495674
-- product: firefox
-  results:
-  - test: selector-placeholder-shown-type-change-001.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1401657
-- product: safari
-  results:
-  - status: FAIL
-    test: dir-selector-ltr-001.html
-  - status: FAIL
-    test: dir-selector-rtl-001.html
-  - test: dir-selector-auto.html
-  - test: dir-selector-change-001.html
-  - test: dir-selector-change-002.html
-  - test: dir-selector-change-003.html
-  - test: dir-selector-change-004.html
-  - test: dir-selector-querySelector.html
-  - test: dir-selector-white-space-001.html
-  url: https://bugs.webkit.org/show_bug.cgi?id=64861
-- product: webkitgtk
-  results:
-  - status: FAIL
-    test: dir-selector-ltr-001.html
-  - status: FAIL
-    test: dir-selector-rtl-001.html
-  url: https://bugs.webkit.org/show_bug.cgi?id=64861
-- product: firefox
-  results:
-  - subtest: Programmatic focus after click should not match :focus-visible
-    test: focus-visible-005.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1642831
-- product: firefox
-  results:
-  - subtest: :is() inside :host-context()
-    test: is-where-shadow.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1669120
-- product: firefox
-  results:
-  - subtest: :not(:is(div > :not(#e))) matches expected elements
-    test: is-where-not.html
-  - subtest: ':not(:is(div > :not(:where(#e, #f)))) matches expected elements'
-    test: is-where-not.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1671573
-- product: chrome
-  results:
-  - test: is-specificity-shadow.html
-  url: https://bugs.chromium.org/p/chromium/issues/detail?id=1143404
-- product: chrome
-  results:
-  - subtest: :user-invalid selector should be supported
-    test: user-invalid.html
-  - test: user-valid.html
-  url: https://crbug.com/1156069
-- product: chrome
-  results:
-  - subtest: Using keyboard while element is focused should trigger :focus-visible;
-      using mouse without moving focus should not cancel it; moving focus using mouse
-      should cancel it.
-    test: focus-visible-007.html
-  url: https://crbug.com/976438
-- product: chrome
-  results:
-  - test: remove-hovered-element.html
-  url: https://github.com/web-platform-tests/wpt/issues/13183
-- product: firefox
-  results:
-  - test: focus-visible-002.html
-  - subtest: Mouse focus on elements which would show a virtual keyboard should match
-      :focus-visible
-    test: focus-visible-002.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1684358
-- product: firefox
-  results:
-  - subtest: Focus element SELECT#input15 via mouse should match :focus-visible as
-      it supports keyboard input
-    test: focus-visible-002.html
-  url: https://github.com/w3c/csswg-drafts/issues/5822
-- product: safari
-  results:
-  - test: focus-visible-001.html
-  - test: focus-visible-012.html
-  - test: focus-visible-008.html
-  - test: focus-visible-005.html
-  - test: focus-visible-002.html
-  - test: focus-visible-009.html
-  - test: focus-visible-007.html
-  - test: focus-visible-006.html
-  - test: focus-visible-003.html
-  - test: focus-visible-016.html
-  - test: focus-visible-015.html
-  - test: focus-visible-011.html
-  - test: focus-visible-010.html
-  - test: focus-visible-014.html
-  - test: focus-visible-004.html
-  url: https://bugs.webkit.org/show_bug.cgi?id=185859
-- product: firefox
-  results:
-  - subtest: 'By default initial programatic focus matches '':focus-visible'', so
-      the element shows a focus ring with ''outline-style: auto'''
-    test: focus-visible-017.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1688533
-- product: firefox
-  results:
-  - subtest: Using keyboard while element is focused should trigger :focus-visible;
-      using mouse without moving focus should not cancel it; moving focus using mouse
-      should cancel it.
-    test: focus-visible-007.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1688539
-- product: chrome
-  results:
-  - test: focus-visible-018.html
-  url: https://bugs.chromium.org/p/chromium/issues/detail?id=1162070
-- product: firefox
-  results:
-  - subtest: :focus-visible matches even if preventDefault() is called
-    test: focus-visible-011.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1693826
-- product: chrome
-  results:
-  - test: focus-visible-020.html
-  url: https://bugs.chromium.org/p/chromium/issues/detail?id=1204781
-- product: safari
-  results:
-  - test: has-matches-to-uninserted-elements.html
-  url: https://bugs.webkit.org/show_bug.cgi?id=232286
-- product: webkitgtk
-  results:
-  - test: has-matches-to-uninserted-elements.html
-  url: https://bugs.webkit.org/show_bug.cgi?id=232286
-- product: firefox
-  results:
-  - test: has-matches-to-uninserted-elements.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1737719
-- product: firefox
-  results:
-  - subtest: 'By default initial programatic focus matches '':focus-visible'', so
-      the element ABBR shows a focus ring with ''outline-style: auto'''
-    test: focus-visible-017-2.html
-  - subtest: 'By default initial programatic focus matches '':focus-visible'', so
-      the element ADDRESS shows a focus ring with ''outline-style: auto'''
-    test: focus-visible-017-2.html
-  - subtest: 'By default initial programatic focus matches '':focus-visible'', so
-      the element BDI shows a focus ring with ''outline-style: auto'''
-    test: focus-visible-017-2.html
-  - subtest: 'By default initial programatic focus matches '':focus-visible'', so
-      the element BLOCKQUOTE shows a focus ring with ''outline-style: auto'''
-    test: focus-visible-017-2.html
-  - subtest: 'By default initial programatic focus matches '':focus-visible'', so
-      the element CODE shows a focus ring with ''outline-style: auto'''
-    test: focus-visible-017-2.html
-  - subtest: 'By default initial programatic focus matches '':focus-visible'', so
-      the element DD shows a focus ring with ''outline-style: auto'''
-    test: focus-visible-017-2.html
-  - subtest: 'By default initial programatic focus matches '':focus-visible'', so
-      the element SUMMARY shows a focus ring with ''outline-style: auto'''
-    test: focus-visible-017-2.html
-  - subtest: 'By default initial programatic focus matches '':focus-visible'', so
-      the element DETAILS shows a focus ring with ''outline-style: auto'''
-    test: focus-visible-017-2.html
-  - subtest: 'By default initial programatic focus matches '':focus-visible'', so
-      the element DIV shows a focus ring with ''outline-style: auto'''
-    test: focus-visible-017-2.html
-  - subtest: 'By default initial programatic focus matches '':focus-visible'', so
-      the element DL shows a focus ring with ''outline-style: auto'''
-    test: focus-visible-017-2.html
-  - subtest: 'By default initial programatic focus matches '':focus-visible'', so
-      the element DT shows a focus ring with ''outline-style: auto'''
-    test: focus-visible-017-2.html
-  - subtest: 'By default initial programatic focus matches '':focus-visible'', so
-      the element EM shows a focus ring with ''outline-style: auto'''
-    test: focus-visible-017-2.html
-  - subtest: 'By default initial programatic focus matches '':focus-visible'', so
-      the element LEGEND shows a focus ring with ''outline-style: auto'''
-    test: focus-visible-017-2.html
-  - subtest: 'By default initial programatic focus matches '':focus-visible'', so
-      the element FIGCAPTION shows a focus ring with ''outline-style: auto'''
-    test: focus-visible-017-2.html
-  - subtest: 'By default initial programatic focus matches '':focus-visible'', so
-      the element FIGURE shows a focus ring with ''outline-style: auto'''
-    test: focus-visible-017-2.html
-  - subtest: 'By default initial programatic focus matches '':focus-visible'', so
-      the element FORM shows a focus ring with ''outline-style: auto'''
-    test: focus-visible-017-2.html
-  - subtest: 'By default initial programatic focus matches '':focus-visible'', so
-      the element HR shows a focus ring with ''outline-style: auto'''
-    test: focus-visible-017-2.html
-  - subtest: 'By default initial programatic focus matches '':focus-visible'', so
-      the element IMG shows a focus ring with ''outline-style: auto'''
-    test: focus-visible-017-2.html
-  - subtest: 'By default initial programatic focus matches '':focus-visible'', so
-      the element LABEL shows a focus ring with ''outline-style: auto'''
-    test: focus-visible-017-2.html
-  - subtest: 'By default initial programatic focus matches '':focus-visible'', so
-      the element LI shows a focus ring with ''outline-style: auto'''
-    test: focus-visible-017-2.html
-  - subtest: 'By default initial programatic focus matches '':focus-visible'', so
-      the element MARK shows a focus ring with ''outline-style: auto'''
-    test: focus-visible-017-2.html
-  - subtest: 'By default initial programatic focus matches '':focus-visible'', so
-      the element METER shows a focus ring with ''outline-style: auto'''
-    test: focus-visible-017-2.html
-  - subtest: 'By default initial programatic focus matches '':focus-visible'', so
-      the element OL shows a focus ring with ''outline-style: auto'''
-    test: focus-visible-017-2.html
-  - subtest: 'By default initial programatic focus matches '':focus-visible'', so
-      the element PRE shows a focus ring with ''outline-style: auto'''
-    test: focus-visible-017-2.html
-  - subtest: 'By default initial programatic focus matches '':focus-visible'', so
-      the element PROGRESS shows a focus ring with ''outline-style: auto'''
-    test: focus-visible-017-2.html
-  - subtest: 'By default initial programatic focus matches '':focus-visible'', so
-      the element P shows a focus ring with ''outline-style: auto'''
-    test: focus-visible-017-2.html
-  - subtest: 'By default initial programatic focus matches '':focus-visible'', so
-      the element SMALL shows a focus ring with ''outline-style: auto'''
-    test: focus-visible-017-2.html
-  - subtest: 'By default initial programatic focus matches '':focus-visible'', so
-      the element S shows a focus ring with ''outline-style: auto'''
-    test: focus-visible-017-2.html
-  - subtest: 'By default initial programatic focus matches '':focus-visible'', so
-      the element STRONG shows a focus ring with ''outline-style: auto'''
-    test: focus-visible-017-2.html
-  - subtest: 'By default initial programatic focus matches '':focus-visible'', so
-      the element SUB shows a focus ring with ''outline-style: auto'''
-    test: focus-visible-017-2.html
-  - subtest: 'By default initial programatic focus matches '':focus-visible'', so
-      the element SUP shows a focus ring with ''outline-style: auto'''
-    test: focus-visible-017-2.html
-  - subtest: 'By default initial programatic focus matches '':focus-visible'', so
-      the element CAPTION shows a focus ring with ''outline-style: auto'''
-    test: focus-visible-017-2.html
-  - subtest: 'By default initial programatic focus matches '':focus-visible'', so
-      the element TABLE shows a focus ring with ''outline-style: auto'''
-    test: focus-visible-017-2.html
-  - subtest: 'By default initial programatic focus matches '':focus-visible'', so
-      the element TD shows a focus ring with ''outline-style: auto'''
-    test: focus-visible-017-2.html
-  - subtest: 'By default initial programatic focus matches '':focus-visible'', so
-      the element TIME shows a focus ring with ''outline-style: auto'''
-    test: focus-visible-017-2.html
-  - subtest: 'By default initial programatic focus matches '':focus-visible'', so
-      the element UL shows a focus ring with ''outline-style: auto'''
-    test: focus-visible-017-2.html
-  - subtest: 'By default initial programatic focus matches '':focus-visible'', so
-      the element U shows a focus ring with ''outline-style: auto'''
-    test: focus-visible-017-2.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1742571
-- product: firefox
-  results:
-  - subtest: Test ':focus' after 'display:none' on input
-    test: focus-display-none-001.html
-  - subtest: Test ':focus' after 'display:none' on input's parent
-    test: focus-display-none-001.html
-  - subtest: Test ':focus-within' after 'display:none' on input
-    test: focus-within-display-none-001.html
-  - subtest: Test ':focus-within' after 'display:none' on input's parent
-    test: focus-within-display-none-001.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1745027
-- product: chrome
-  results:
-  - status: FAIL
-    test: dir-style-03a.html
-  - status: FAIL
-    test: dir-style-03b.html
-  url: https://crbug.com/576815
-- product: chrome
-  results:
-  - test: dir-style-01a.html
-  - test: dir-style-01b.html
-  - test: dir-style-04.html
-  url: https://bugs.chromium.org/p/chromium/issues/detail?id=576815
-- product: firefox
-  results:
-  - subtest: ':has(.bar, #foo) has same specificity as :has(#foo, .bar)'
-    test: has-specificity.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1753934
-- product: chrome
-  results:
-  - subtest: scope-selector
-    test: scope-selector.html
-  - subtest: scope-selector 1
-    test: scope-selector.html
-  url: https://crbug.com/1272434
-- product: chrome
-  results:
-  - test: xml-class-selector.xml
-  url: https://crbug.com/649444
-- product: chrome
-  results:
-  - test: modal-pseudo-class.html
-  url: https://crbug.com/1327113
-- product: firefox
-  results:
-  - subtest: :has(#a) matches expected elements
-    test: has-basic.html
-  - subtest: :has(.ancestor) matches expected elements
-    test: has-basic.html
-  - subtest: :has(.target) matches expected elements
-    test: has-basic.html
-  - subtest: :has(.descendant) matches expected elements
-    test: has-basic.html
-  - subtest: .parent:has(.target) matches expected elements
-    test: has-basic.html
-  - subtest: :has(.sibling ~ .target) matches expected elements
-    test: has-basic.html
-  - subtest: .parent:has(.sibling ~ .target) matches expected elements
-    test: has-basic.html
-  - subtest: :has(:is(.target ~ .sibling .descendant)) matches expected elements
-    test: has-basic.html
-  - subtest: .parent:has(:is(.target ~ .sibling .descendant)) matches expected elements
-    test: has-basic.html
-  - subtest: .sibling:has(.descendant) ~ .target matches expected elements
-    test: has-basic.html
-  - subtest: :has(> .parent) matches expected elements
-    test: has-basic.html
-  - subtest: :has(> .target) matches expected elements
-    test: has-basic.html
-  - subtest: :has(> .parent, > .target) matches expected elements
-    test: has-basic.html
-  - subtest: ':has(+ #h) matches expected elements'
-    test: has-basic.html
-  - subtest: '.parent:has(~ #h) matches expected elements'
-    test: has-basic.html
-  - subtest: .sibling:has(.descendant) matches expected element
-    test: has-basic.html
-  - subtest: closest(.ancestor:has(.descendant)) returns expected element
-    test: has-basic.html
-  - subtest: :has(.target ~ .sibling .descendant) matches expectedly
-    test: has-basic.html
-  - subtest: .x:has(.a) matches expected elements
-    test: has-relative-argument.html
-  - subtest: .x:has(.a > .b) matches expected elements
-    test: has-relative-argument.html
-  - subtest: .x:has(.a .b) matches expected elements
-    test: has-relative-argument.html
-  - subtest: .x:has(.a + .b) matches expected elements
-    test: has-relative-argument.html
-  - subtest: .x:has(.a ~ .b) matches expected elements
-    test: has-relative-argument.html
-  - subtest: .x:has(> .a) matches expected elements
-    test: has-relative-argument.html
-  - subtest: .x:has(> .a > .b) matches expected elements
-    test: has-relative-argument.html
-  - subtest: .x:has(> .a .b) matches expected elements
-    test: has-relative-argument.html
-  - subtest: .x:has(> .a + .b) matches expected elements
-    test: has-relative-argument.html
-  - subtest: .x:has(> .a ~ .b) matches expected elements
-    test: has-relative-argument.html
-  - subtest: .x:has(+ .a) matches expected elements
-    test: has-relative-argument.html
-  - subtest: .x:has(+ .a > .b) matches expected elements
-    test: has-relative-argument.html
-  - subtest: .x:has(+ .a .b) matches expected elements
-    test: has-relative-argument.html
-  - subtest: .x:has(+ .a + .b) matches expected elements
-    test: has-relative-argument.html
-  - subtest: .x:has(+ .a ~ .b) matches expected elements
-    test: has-relative-argument.html
-  - subtest: .x:has(~ .a) matches expected elements
-    test: has-relative-argument.html
-  - subtest: .x:has(~ .a > .b) matches expected elements
-    test: has-relative-argument.html
-  - subtest: .x:has(~ .a .b) matches expected elements
-    test: has-relative-argument.html
-  - subtest: .x:has(~ .a + .b) matches expected elements
-    test: has-relative-argument.html
-  - subtest: .x:has(~ .a + .b > .c) matches expected elements
-    test: has-relative-argument.html
-  - subtest: .x:has(~ .a + .b .c) matches expected elements
-    test: has-relative-argument.html
-  - subtest: .x:has(.d .e) matches expected elements
-    test: has-relative-argument.html
-  - subtest: .x:has(.d .e) .f matches expected elements
-    test: has-relative-argument.html
-  - subtest: .x:has(> .d) matches expected elements
-    test: has-relative-argument.html
-  - subtest: .x:has(> .d) .f matches expected elements
-    test: has-relative-argument.html
-  - subtest: .x:has(~ .d ~ .e) matches expected elements
-    test: has-relative-argument.html
-  - subtest: .x:has(~ .d ~ .e) ~ .f matches expected elements
-    test: has-relative-argument.html
-  - subtest: .x:has(+ .d ~ .e) matches expected elements
-    test: has-relative-argument.html
-  - subtest: .x:has(+ .d ~ .e) ~ .f matches expected elements
-    test: has-relative-argument.html
-  - subtest: .y:has(> .g .h) matches expected elements
-    test: has-relative-argument.html
-  - subtest: .y:has(.g .h) matches expected elements
-    test: has-relative-argument.html
-  - subtest: .y:has(> .g .h) .i matches expected elements
-    test: has-relative-argument.html
-  - subtest: .y:has(.g .h) .i matches expected elements
-    test: has-relative-argument.html
-  - subtest: .d .x:has(.e) matches expected elements
-    test: has-relative-argument.html
-  - subtest: .d ~ .x:has(~ .e) matches expected elements
-    test: has-relative-argument.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1773973
-- product: firefox
-  results:
-  - test: nth-child-and-nth-last-child.html
-  - test: nth-child-of-classname.html
-  - test: nth-child-of-complex-selector.html
-  - test: nth-child-of-compound-selector.html
-  - test: nth-child-of-tagname.html
-  - test: nth-child-specificity-1.html
-  - test: nth-child-specificity-2.html
-  - test: nth-child-specificity-3.html
-  - test: nth-child-specificity-4.html
-  - test: nth-last-child-of-classname.html
-  - test: nth-last-child-of-complex-selector.html
-  - test: nth-last-child-of-compound-selector.html
-  - test: nth-last-child-of-style-sharing-1.html
-  - test: nth-last-child-of-style-sharing-2.html
-  - test: nth-last-child-of-tagname.html
-  - test: nth-last-child-specificity-1.html
-  - test: nth-last-child-specificity-2.html
-  - test: nth-last-child-specificity-3.html
-  - test: nth-last-child-specificity-4.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1795517
-- product: chrome
-  results:
-  - test: nth-last-child-of-style-sharing-2.html
-  - test: nth-last-child-of-style-sharing-1.html
-  - test: nth-last-child-specificity-2.html
-  - test: nth-last-child-specificity-3.html
-  - test: nth-last-child-specificity-4.html
-  - test: nth-child-of-complex-selector.html
-  - test: nth-last-child-of-compound-selector.html
-  - test: nth-child-specificity-1.html
-  - test: nth-child-specificity-3.html
-  - test: nth-last-child-of-classname.html
-  - test: nth-last-child-of-complex-selector.html
-  - test: nth-last-child-specificity-1.html
-  - test: nth-child-of-compound-selector.html
-  - test: nth-child-of-tagname.html
-  - test: nth-child-specificity-2.html
-  - test: nth-child-specificity-4.html
-  - test: nth-last-child-of-tagname.html
-  - test: nth-child-and-nth-last-child.html
-  - test: nth-child-of-classname.html
-  - test: nth-child-of-not.html
-  - test: nth-child-of-nth-child.html
-  - test: nth-child-of-classname-002.html
-  - test: nth-child-of-universal-selector.html
-  - test: nth-child-of-has.html
-  - test: nth-child-of-attribute.html
-  - test: nth-last-child-of-no-space-after-of.html
-  url: https://crbug.com/304163
-- label: interop-2023-has
-  results:
-  - test: has-matches-to-uninserted-elements.html
-  - test: has-relative-argument.html
-  - test: has-specificity.html
-  - test: has-visited.html
-  - test: has-argument-with-explicit-scope.html
-  - test: has-basic.html
-- label: interop-2023-pseudos
-  results:
-  - test: dir-selector-auto-direction-change-001.html
-  - test: dir-selector-change-003.html
-  - test: dir-selector-change-002.html
-  - test: dir-style-03b.html
-  - test: dir-style-01a.html
-  - test: dir-selector-querySelector.html
-  - test: dir-selector-ltr-001.html
-  - test: dir-selector-change-004.html
-  - test: dir-style-02a.html
-  - test: dir-style-02b.html
-  - test: dir-style-01b.html
-  - test: dir-selector-white-space-001.html
-  - test: dir-selector-ltr-003.html
-  - test: dir-selector-ltr-002.html
-  - test: dir-style-04.html
-  - test: dir-style-03a.html
-  - test: dir-selector-rtl-001.html
-  - test: dir-selector-change-001.html
-  - test: dir-selector-auto.html
-  - test: dir-pseudo-on-bdi-element.html
-  - test: dir-pseudo-on-input-element.html
-  - test: modal-pseudo-class.html
-  - test: nth-last-child-of-style-sharing-1.html
-  - test: nth-child-of-tagname.html
-  - test: nth-child-of-complex-selector.html
-  - test: nth-child-specificity-4.html
-  - test: nth-last-child-of-complex-selector.html
-  - test: nth-last-child-of-style-sharing-2.html
-  - test: nth-last-child-specificity-1.html
-  - test: nth-last-child-specificity-4.html
-  - test: child-indexed-no-parent.html
-  - test: nth-last-child-of-tagname.html
-  - test: nth-last-child-specificity-2.html
-  - test: nth-child-of-compound-selector.html
-  - test: selector-structural-pseudo-root.html
-  - test: nth-child-and-nth-last-child.html
-  - test: nth-child-of-classname.html
-  - test: nth-child-specificity-1.html
-  - test: nth-child-specificity-2.html
-  - test: nth-child-specificity-3.html
-  - test: nth-last-child-of-classname.html
-  - test: child-indexed-pseudo-class.html
-  - test: nth-last-child-specificity-3.html
-  - test: nth-last-child-of-compound-selector.html
-  - test: nth-child-of-classname-002.html
-  - test: nth-child-of-not.html
-  - test: nth-child-of-nth-child.html
-  - test: user-invalid.html
-  - test: nth-child-of-attribute.html
-  - test: nth-child-of-has.html
-  - test: nth-child-of-universal-selector.html
-  - test: nth-of-invalid.html
-  - test: nth-child-of-no-space-after-of.html
-  - test: nth-last-child-of-no-space-after-of.html
-  - test: nth-of-type-namespace.html
-  - test: nth-child-of-complex-selector-many-children.html
-  - test: user-valid.html
-  - test: dir-pseudo-in-has.html
-  - test: nth-last-child-of-nesting.html
-  - test: nth-child-of-nesting.html
-- product: chrome
-  results:
-  - test: nth-child-of-no-space-after-of.html
-  - test: nth-child-of-complex-selector-many-children.html
-  - test: nth-last-child-of-no-space-after-of.html
-  url: https://bugs.chromium.org/p/chromium/issues/detail?id=304163
-- product: chrome
-  results:
-  - test: dir-pseudo-on-input-element.html
-  url: https://bugs.chromium.org/p/chromium/issues/detail?id=1420655
-- product: firefox
-  results:
-  - subtest: Test status
-    test: nth-child-of-has.html
-  - subtest: Test status
-    test: dir-pseudo-in-has.html
-  - test: has-argument-with-explicit-scope.html
-  - test: has-visited.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=418039
-- product: firefox
-  results:
-  - test: user-valid.html
-  - test: user-invalid.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1850295
-- product: firefox
-  results:
-  - test: dir-pseudo-on-input-element.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1856156
-- product: safari
-  results:
-  - subtest: Test status
-    test: is-where-visited.html
-  url: https://bugs.webkit.org/show_bug.cgi?id=217904
-- product: firefox
-  results:
-  - test: is-default-ns-003.html
-  - test: not-default-ns-003.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1887438
-- product: firefox
-  results:
-  - subtest: A required date should match :user-invalid if the user unchecks it and
-      blurs.
-    test: user-invalid.html
-  - subtest: Date inputs should match :user-valid after the user types a value into
-      it.
-    test: user-valid.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1894195
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=312971
+      results:
+        - test: selector-read-write-type-change-002.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1495674
+      results:
+        - test: floating-first-letter-05d0.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1401657
+      results:
+        - test: selector-placeholder-shown-type-change-001.html
+    - product: safari
+      url: https://bugs.webkit.org/show_bug.cgi?id=64861
+      results:
+        - test: dir-selector-ltr-001.html
+          status: FAIL
+        - test: dir-selector-rtl-001.html
+          status: FAIL
+        - test: dir-selector-auto.html
+        - test: dir-selector-change-001.html
+        - test: dir-selector-change-002.html
+        - test: dir-selector-change-003.html
+        - test: dir-selector-change-004.html
+        - test: dir-selector-querySelector.html
+        - test: dir-selector-white-space-001.html
+    - product: webkitgtk
+      url: https://bugs.webkit.org/show_bug.cgi?id=64861
+      results:
+        - test: dir-selector-ltr-001.html
+          status: FAIL
+        - test: dir-selector-rtl-001.html
+          status: FAIL
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1642831
+      results:
+        - test: focus-visible-005.html
+          subtest: Programmatic focus after click should not match :focus-visible
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1669120
+      results:
+        - test: is-where-shadow.html
+          subtest: :is() inside :host-context()
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1671573
+      results:
+        - test: is-where-not.html
+          subtest: :not(:is(div > :not(#e))) matches expected elements
+        - test: is-where-not.html
+          subtest: ':not(:is(div > :not(:where(#e, #f)))) matches expected elements'
+    - product: chrome
+      url: https://bugs.chromium.org/p/chromium/issues/detail?id=1143404
+      results:
+        - test: is-specificity-shadow.html
+    - product: chrome
+      url: https://crbug.com/1156069
+      results:
+        - test: user-invalid.html
+          subtest: :user-invalid selector should be supported
+        - test: user-valid.html
+    - product: chrome
+      url: https://crbug.com/976438
+      results:
+        - test: focus-visible-007.html
+          subtest: Using keyboard while element is focused should trigger :focus-visible; using mouse without moving focus should not cancel it; moving focus using mouse should cancel it.
+    - product: chrome
+      url: https://github.com/web-platform-tests/wpt/issues/13183
+      results:
+        - test: remove-hovered-element.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1684358
+      results:
+        - test: focus-visible-002.html
+        - test: focus-visible-002.html
+          subtest: Mouse focus on elements which would show a virtual keyboard should match :focus-visible
+    - product: firefox
+      url: https://github.com/w3c/csswg-drafts/issues/5822
+      results:
+        - test: focus-visible-002.html
+          subtest: Focus element SELECT#input15 via mouse should match :focus-visible as it supports keyboard input
+    - product: safari
+      url: https://bugs.webkit.org/show_bug.cgi?id=185859
+      results:
+        - test: focus-visible-001.html
+        - test: focus-visible-012.html
+        - test: focus-visible-008.html
+        - test: focus-visible-005.html
+        - test: focus-visible-002.html
+        - test: focus-visible-009.html
+        - test: focus-visible-007.html
+        - test: focus-visible-006.html
+        - test: focus-visible-003.html
+        - test: focus-visible-016.html
+        - test: focus-visible-015.html
+        - test: focus-visible-011.html
+        - test: focus-visible-010.html
+        - test: focus-visible-014.html
+        - test: focus-visible-004.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1688533
+      results:
+        - test: focus-visible-017.html
+          subtest: 'By default initial programatic focus matches '':focus-visible'', so the element shows a focus ring with ''outline-style: auto'''
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1688539
+      results:
+        - test: focus-visible-007.html
+          subtest: Using keyboard while element is focused should trigger :focus-visible; using mouse without moving focus should not cancel it; moving focus using mouse should cancel it.
+    - product: chrome
+      url: https://bugs.chromium.org/p/chromium/issues/detail?id=1162070
+      results:
+        - test: focus-visible-018.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1693826
+      results:
+        - test: focus-visible-011.html
+          subtest: :focus-visible matches even if preventDefault() is called
+    - product: chrome
+      url: https://bugs.chromium.org/p/chromium/issues/detail?id=1204781
+      results:
+        - test: focus-visible-020.html
+    - product: safari
+      url: https://bugs.webkit.org/show_bug.cgi?id=232286
+      results:
+        - test: has-matches-to-uninserted-elements.html
+    - product: webkitgtk
+      url: https://bugs.webkit.org/show_bug.cgi?id=232286
+      results:
+        - test: has-matches-to-uninserted-elements.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1737719
+      results:
+        - test: has-matches-to-uninserted-elements.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1742571
+      results:
+        - test: focus-visible-017-2.html
+          subtest: 'By default initial programatic focus matches '':focus-visible'', so the element ABBR shows a focus ring with ''outline-style: auto'''
+        - test: focus-visible-017-2.html
+          subtest: 'By default initial programatic focus matches '':focus-visible'', so the element ADDRESS shows a focus ring with ''outline-style: auto'''
+        - test: focus-visible-017-2.html
+          subtest: 'By default initial programatic focus matches '':focus-visible'', so the element BDI shows a focus ring with ''outline-style: auto'''
+        - test: focus-visible-017-2.html
+          subtest: 'By default initial programatic focus matches '':focus-visible'', so the element BLOCKQUOTE shows a focus ring with ''outline-style: auto'''
+        - test: focus-visible-017-2.html
+          subtest: 'By default initial programatic focus matches '':focus-visible'', so the element CODE shows a focus ring with ''outline-style: auto'''
+        - test: focus-visible-017-2.html
+          subtest: 'By default initial programatic focus matches '':focus-visible'', so the element DD shows a focus ring with ''outline-style: auto'''
+        - test: focus-visible-017-2.html
+          subtest: 'By default initial programatic focus matches '':focus-visible'', so the element SUMMARY shows a focus ring with ''outline-style: auto'''
+        - test: focus-visible-017-2.html
+          subtest: 'By default initial programatic focus matches '':focus-visible'', so the element DETAILS shows a focus ring with ''outline-style: auto'''
+        - test: focus-visible-017-2.html
+          subtest: 'By default initial programatic focus matches '':focus-visible'', so the element DIV shows a focus ring with ''outline-style: auto'''
+        - test: focus-visible-017-2.html
+          subtest: 'By default initial programatic focus matches '':focus-visible'', so the element DL shows a focus ring with ''outline-style: auto'''
+        - test: focus-visible-017-2.html
+          subtest: 'By default initial programatic focus matches '':focus-visible'', so the element DT shows a focus ring with ''outline-style: auto'''
+        - test: focus-visible-017-2.html
+          subtest: 'By default initial programatic focus matches '':focus-visible'', so the element EM shows a focus ring with ''outline-style: auto'''
+        - test: focus-visible-017-2.html
+          subtest: 'By default initial programatic focus matches '':focus-visible'', so the element LEGEND shows a focus ring with ''outline-style: auto'''
+        - test: focus-visible-017-2.html
+          subtest: 'By default initial programatic focus matches '':focus-visible'', so the element FIGCAPTION shows a focus ring with ''outline-style: auto'''
+        - test: focus-visible-017-2.html
+          subtest: 'By default initial programatic focus matches '':focus-visible'', so the element FIGURE shows a focus ring with ''outline-style: auto'''
+        - test: focus-visible-017-2.html
+          subtest: 'By default initial programatic focus matches '':focus-visible'', so the element FORM shows a focus ring with ''outline-style: auto'''
+        - test: focus-visible-017-2.html
+          subtest: 'By default initial programatic focus matches '':focus-visible'', so the element HR shows a focus ring with ''outline-style: auto'''
+        - test: focus-visible-017-2.html
+          subtest: 'By default initial programatic focus matches '':focus-visible'', so the element IMG shows a focus ring with ''outline-style: auto'''
+        - test: focus-visible-017-2.html
+          subtest: 'By default initial programatic focus matches '':focus-visible'', so the element LABEL shows a focus ring with ''outline-style: auto'''
+        - test: focus-visible-017-2.html
+          subtest: 'By default initial programatic focus matches '':focus-visible'', so the element LI shows a focus ring with ''outline-style: auto'''
+        - test: focus-visible-017-2.html
+          subtest: 'By default initial programatic focus matches '':focus-visible'', so the element MARK shows a focus ring with ''outline-style: auto'''
+        - test: focus-visible-017-2.html
+          subtest: 'By default initial programatic focus matches '':focus-visible'', so the element METER shows a focus ring with ''outline-style: auto'''
+        - test: focus-visible-017-2.html
+          subtest: 'By default initial programatic focus matches '':focus-visible'', so the element OL shows a focus ring with ''outline-style: auto'''
+        - test: focus-visible-017-2.html
+          subtest: 'By default initial programatic focus matches '':focus-visible'', so the element PRE shows a focus ring with ''outline-style: auto'''
+        - test: focus-visible-017-2.html
+          subtest: 'By default initial programatic focus matches '':focus-visible'', so the element PROGRESS shows a focus ring with ''outline-style: auto'''
+        - test: focus-visible-017-2.html
+          subtest: 'By default initial programatic focus matches '':focus-visible'', so the element P shows a focus ring with ''outline-style: auto'''
+        - test: focus-visible-017-2.html
+          subtest: 'By default initial programatic focus matches '':focus-visible'', so the element SMALL shows a focus ring with ''outline-style: auto'''
+        - test: focus-visible-017-2.html
+          subtest: 'By default initial programatic focus matches '':focus-visible'', so the element S shows a focus ring with ''outline-style: auto'''
+        - test: focus-visible-017-2.html
+          subtest: 'By default initial programatic focus matches '':focus-visible'', so the element STRONG shows a focus ring with ''outline-style: auto'''
+        - test: focus-visible-017-2.html
+          subtest: 'By default initial programatic focus matches '':focus-visible'', so the element SUB shows a focus ring with ''outline-style: auto'''
+        - test: focus-visible-017-2.html
+          subtest: 'By default initial programatic focus matches '':focus-visible'', so the element SUP shows a focus ring with ''outline-style: auto'''
+        - test: focus-visible-017-2.html
+          subtest: 'By default initial programatic focus matches '':focus-visible'', so the element CAPTION shows a focus ring with ''outline-style: auto'''
+        - test: focus-visible-017-2.html
+          subtest: 'By default initial programatic focus matches '':focus-visible'', so the element TABLE shows a focus ring with ''outline-style: auto'''
+        - test: focus-visible-017-2.html
+          subtest: 'By default initial programatic focus matches '':focus-visible'', so the element TD shows a focus ring with ''outline-style: auto'''
+        - test: focus-visible-017-2.html
+          subtest: 'By default initial programatic focus matches '':focus-visible'', so the element TIME shows a focus ring with ''outline-style: auto'''
+        - test: focus-visible-017-2.html
+          subtest: 'By default initial programatic focus matches '':focus-visible'', so the element UL shows a focus ring with ''outline-style: auto'''
+        - test: focus-visible-017-2.html
+          subtest: 'By default initial programatic focus matches '':focus-visible'', so the element U shows a focus ring with ''outline-style: auto'''
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1745027
+      results:
+        - test: focus-display-none-001.html
+          subtest: Test ':focus' after 'display:none' on input
+        - test: focus-display-none-001.html
+          subtest: Test ':focus' after 'display:none' on input's parent
+        - test: focus-within-display-none-001.html
+          subtest: Test ':focus-within' after 'display:none' on input
+        - test: focus-within-display-none-001.html
+          subtest: Test ':focus-within' after 'display:none' on input's parent
+    - product: chrome
+      url: https://crbug.com/576815
+      results:
+        - test: dir-style-03a.html
+          status: FAIL
+        - test: dir-style-03b.html
+          status: FAIL
+    - product: chrome
+      url: https://bugs.chromium.org/p/chromium/issues/detail?id=576815
+      results:
+        - test: dir-style-01a.html
+        - test: dir-style-01b.html
+        - test: dir-style-04.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1753934
+      results:
+        - test: has-specificity.html
+          subtest: ':has(.bar, #foo) has same specificity as :has(#foo, .bar)'
+    - product: chrome
+      url: https://crbug.com/1272434
+      results:
+        - test: scope-selector.html
+          subtest: scope-selector
+        - test: scope-selector.html
+          subtest: scope-selector 1
+    - product: chrome
+      url: https://crbug.com/649444
+      results:
+        - test: xml-class-selector.xml
+    - product: chrome
+      url: https://crbug.com/1327113
+      results:
+        - test: modal-pseudo-class.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1773973
+      results:
+        - test: has-basic.html
+          subtest: :has(#a) matches expected elements
+        - test: has-basic.html
+          subtest: :has(.ancestor) matches expected elements
+        - test: has-basic.html
+          subtest: :has(.target) matches expected elements
+        - test: has-basic.html
+          subtest: :has(.descendant) matches expected elements
+        - test: has-basic.html
+          subtest: .parent:has(.target) matches expected elements
+        - test: has-basic.html
+          subtest: :has(.sibling ~ .target) matches expected elements
+        - test: has-basic.html
+          subtest: .parent:has(.sibling ~ .target) matches expected elements
+        - test: has-basic.html
+          subtest: :has(:is(.target ~ .sibling .descendant)) matches expected elements
+        - test: has-basic.html
+          subtest: .parent:has(:is(.target ~ .sibling .descendant)) matches expected elements
+        - test: has-basic.html
+          subtest: .sibling:has(.descendant) ~ .target matches expected elements
+        - test: has-basic.html
+          subtest: :has(> .parent) matches expected elements
+        - test: has-basic.html
+          subtest: :has(> .target) matches expected elements
+        - test: has-basic.html
+          subtest: :has(> .parent, > .target) matches expected elements
+        - test: has-basic.html
+          subtest: ':has(+ #h) matches expected elements'
+        - test: has-basic.html
+          subtest: '.parent:has(~ #h) matches expected elements'
+        - test: has-basic.html
+          subtest: .sibling:has(.descendant) matches expected element
+        - test: has-basic.html
+          subtest: closest(.ancestor:has(.descendant)) returns expected element
+        - test: has-basic.html
+          subtest: :has(.target ~ .sibling .descendant) matches expectedly
+        - test: has-relative-argument.html
+          subtest: .x:has(.a) matches expected elements
+        - test: has-relative-argument.html
+          subtest: .x:has(.a > .b) matches expected elements
+        - test: has-relative-argument.html
+          subtest: .x:has(.a .b) matches expected elements
+        - test: has-relative-argument.html
+          subtest: .x:has(.a + .b) matches expected elements
+        - test: has-relative-argument.html
+          subtest: .x:has(.a ~ .b) matches expected elements
+        - test: has-relative-argument.html
+          subtest: .x:has(> .a) matches expected elements
+        - test: has-relative-argument.html
+          subtest: .x:has(> .a > .b) matches expected elements
+        - test: has-relative-argument.html
+          subtest: .x:has(> .a .b) matches expected elements
+        - test: has-relative-argument.html
+          subtest: .x:has(> .a + .b) matches expected elements
+        - test: has-relative-argument.html
+          subtest: .x:has(> .a ~ .b) matches expected elements
+        - test: has-relative-argument.html
+          subtest: .x:has(+ .a) matches expected elements
+        - test: has-relative-argument.html
+          subtest: .x:has(+ .a > .b) matches expected elements
+        - test: has-relative-argument.html
+          subtest: .x:has(+ .a .b) matches expected elements
+        - test: has-relative-argument.html
+          subtest: .x:has(+ .a + .b) matches expected elements
+        - test: has-relative-argument.html
+          subtest: .x:has(+ .a ~ .b) matches expected elements
+        - test: has-relative-argument.html
+          subtest: .x:has(~ .a) matches expected elements
+        - test: has-relative-argument.html
+          subtest: .x:has(~ .a > .b) matches expected elements
+        - test: has-relative-argument.html
+          subtest: .x:has(~ .a .b) matches expected elements
+        - test: has-relative-argument.html
+          subtest: .x:has(~ .a + .b) matches expected elements
+        - test: has-relative-argument.html
+          subtest: .x:has(~ .a + .b > .c) matches expected elements
+        - test: has-relative-argument.html
+          subtest: .x:has(~ .a + .b .c) matches expected elements
+        - test: has-relative-argument.html
+          subtest: .x:has(.d .e) matches expected elements
+        - test: has-relative-argument.html
+          subtest: .x:has(.d .e) .f matches expected elements
+        - test: has-relative-argument.html
+          subtest: .x:has(> .d) matches expected elements
+        - test: has-relative-argument.html
+          subtest: .x:has(> .d) .f matches expected elements
+        - test: has-relative-argument.html
+          subtest: .x:has(~ .d ~ .e) matches expected elements
+        - test: has-relative-argument.html
+          subtest: .x:has(~ .d ~ .e) ~ .f matches expected elements
+        - test: has-relative-argument.html
+          subtest: .x:has(+ .d ~ .e) matches expected elements
+        - test: has-relative-argument.html
+          subtest: .x:has(+ .d ~ .e) ~ .f matches expected elements
+        - test: has-relative-argument.html
+          subtest: .y:has(> .g .h) matches expected elements
+        - test: has-relative-argument.html
+          subtest: .y:has(.g .h) matches expected elements
+        - test: has-relative-argument.html
+          subtest: .y:has(> .g .h) .i matches expected elements
+        - test: has-relative-argument.html
+          subtest: .y:has(.g .h) .i matches expected elements
+        - test: has-relative-argument.html
+          subtest: .d .x:has(.e) matches expected elements
+        - test: has-relative-argument.html
+          subtest: .d ~ .x:has(~ .e) matches expected elements
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1795517
+      results:
+        - test: nth-child-and-nth-last-child.html
+        - test: nth-child-of-classname.html
+        - test: nth-child-of-complex-selector.html
+        - test: nth-child-of-compound-selector.html
+        - test: nth-child-of-tagname.html
+        - test: nth-child-specificity-1.html
+        - test: nth-child-specificity-2.html
+        - test: nth-child-specificity-3.html
+        - test: nth-child-specificity-4.html
+        - test: nth-last-child-of-classname.html
+        - test: nth-last-child-of-complex-selector.html
+        - test: nth-last-child-of-compound-selector.html
+        - test: nth-last-child-of-style-sharing-1.html
+        - test: nth-last-child-of-style-sharing-2.html
+        - test: nth-last-child-of-tagname.html
+        - test: nth-last-child-specificity-1.html
+        - test: nth-last-child-specificity-2.html
+        - test: nth-last-child-specificity-3.html
+        - test: nth-last-child-specificity-4.html
+    - product: chrome
+      url: https://crbug.com/304163
+      results:
+        - test: nth-last-child-of-style-sharing-2.html
+        - test: nth-last-child-of-style-sharing-1.html
+        - test: nth-last-child-specificity-2.html
+        - test: nth-last-child-specificity-3.html
+        - test: nth-last-child-specificity-4.html
+        - test: nth-child-of-complex-selector.html
+        - test: nth-last-child-of-compound-selector.html
+        - test: nth-child-specificity-1.html
+        - test: nth-child-specificity-3.html
+        - test: nth-last-child-of-classname.html
+        - test: nth-last-child-of-complex-selector.html
+        - test: nth-last-child-specificity-1.html
+        - test: nth-child-of-compound-selector.html
+        - test: nth-child-of-tagname.html
+        - test: nth-child-specificity-2.html
+        - test: nth-child-specificity-4.html
+        - test: nth-last-child-of-tagname.html
+        - test: nth-child-and-nth-last-child.html
+        - test: nth-child-of-classname.html
+        - test: nth-child-of-not.html
+        - test: nth-child-of-nth-child.html
+        - test: nth-child-of-classname-002.html
+        - test: nth-child-of-universal-selector.html
+        - test: nth-child-of-has.html
+        - test: nth-child-of-attribute.html
+        - test: nth-last-child-of-no-space-after-of.html
+    - label: interop-2023-has
+      results:
+        - test: has-matches-to-uninserted-elements.html
+        - test: has-relative-argument.html
+        - test: has-specificity.html
+        - test: has-visited.html
+        - test: has-argument-with-explicit-scope.html
+        - test: has-basic.html
+    - label: interop-2023-pseudos
+      results:
+        - test: dir-selector-auto-direction-change-001.html
+        - test: dir-selector-change-003.html
+        - test: dir-selector-change-002.html
+        - test: dir-style-03b.html
+        - test: dir-style-01a.html
+        - test: dir-selector-querySelector.html
+        - test: dir-selector-ltr-001.html
+        - test: dir-selector-change-004.html
+        - test: dir-style-02a.html
+        - test: dir-style-02b.html
+        - test: dir-style-01b.html
+        - test: dir-selector-white-space-001.html
+        - test: dir-selector-ltr-003.html
+        - test: dir-selector-ltr-002.html
+        - test: dir-style-04.html
+        - test: dir-style-03a.html
+        - test: dir-selector-rtl-001.html
+        - test: dir-selector-change-001.html
+        - test: dir-selector-auto.html
+        - test: dir-pseudo-on-bdi-element.html
+        - test: dir-pseudo-on-input-element.html
+        - test: modal-pseudo-class.html
+        - test: nth-last-child-of-style-sharing-1.html
+        - test: nth-child-of-tagname.html
+        - test: nth-child-of-complex-selector.html
+        - test: nth-child-specificity-4.html
+        - test: nth-last-child-of-complex-selector.html
+        - test: nth-last-child-of-style-sharing-2.html
+        - test: nth-last-child-specificity-1.html
+        - test: nth-last-child-specificity-4.html
+        - test: child-indexed-no-parent.html
+        - test: nth-last-child-of-tagname.html
+        - test: nth-last-child-specificity-2.html
+        - test: nth-child-of-compound-selector.html
+        - test: selector-structural-pseudo-root.html
+        - test: nth-child-and-nth-last-child.html
+        - test: nth-child-of-classname.html
+        - test: nth-child-specificity-1.html
+        - test: nth-child-specificity-2.html
+        - test: nth-child-specificity-3.html
+        - test: nth-last-child-of-classname.html
+        - test: child-indexed-pseudo-class.html
+        - test: nth-last-child-specificity-3.html
+        - test: nth-last-child-of-compound-selector.html
+        - test: nth-child-of-classname-002.html
+        - test: nth-child-of-not.html
+        - test: nth-child-of-nth-child.html
+        - test: user-invalid.html
+        - test: nth-child-of-attribute.html
+        - test: nth-child-of-has.html
+        - test: nth-child-of-universal-selector.html
+        - test: nth-of-invalid.html
+        - test: nth-child-of-no-space-after-of.html
+        - test: nth-last-child-of-no-space-after-of.html
+        - test: nth-of-type-namespace.html
+        - test: nth-child-of-complex-selector-many-children.html
+        - test: user-valid.html
+        - test: dir-pseudo-in-has.html
+        - test: nth-last-child-of-nesting.html
+        - test: nth-child-of-nesting.html
+    - product: chrome
+      url: https://bugs.chromium.org/p/chromium/issues/detail?id=304163
+      results:
+        - test: nth-child-of-no-space-after-of.html
+        - test: nth-child-of-complex-selector-many-children.html
+        - test: nth-last-child-of-no-space-after-of.html
+    - product: chrome
+      url: https://bugs.chromium.org/p/chromium/issues/detail?id=1420655
+      results:
+        - test: dir-pseudo-on-input-element.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=418039
+      results:
+        - test: nth-child-of-has.html
+          subtest: Test status
+        - test: dir-pseudo-in-has.html
+          subtest: Test status
+        - test: has-argument-with-explicit-scope.html
+        - test: has-visited.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1850295
+      results:
+        - test: user-valid.html
+        - test: user-invalid.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1856156
+      results:
+        - test: dir-pseudo-on-input-element.html
+    - product: safari
+      url: https://bugs.webkit.org/show_bug.cgi?id=217904
+      results:
+        - test: is-where-visited.html
+          subtest: Test status
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1887438
+      results:
+        - test: is-default-ns-003.html
+        - test: not-default-ns-003.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1894195
+      results:
+        - test: user-invalid.html
+          subtest: A required date should match :user-invalid if the user unchecks it and blurs.
+        - test: user-valid.html
+          subtest: Date inputs should match :user-valid after the user types a value into it.
+    - product: chrome
+      url: crbug.com/378966977
+      results:
+        - test: featureless-004.html
