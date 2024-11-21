@@ -3,3 +3,25 @@ links:
   results:
   - test: append.tentative.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1819165
+- product: firefox
+  results:
+  - subtest: Clearing an empty inline style is a no-op
+    test: clear.html
+  - subtest: Inline StylePropertyMap.clear updates the element inline style
+    test: clear.html
+  - subtest: Getting an shorthand property set explicitly in inline style returns
+      a base CSSStyleValue
+    test: get-shorthand.html
+  - subtest: Getting a valid property from inline style returns the correct entry
+    test: get.html
+  - subtest: Getting a valid custom property from inline style returns the correct
+      entry
+    test: get.html
+  - subtest: Getting a list-valued property from inline style returns only the first
+      value
+    test: get.html
+  - subtest: Declared StylePropertyMap.get is not case-sensitive
+    test: get.html
+  - subtest: Declared StylePropertyMap.get reflects changes in the inline style
+    test: get.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1932747
