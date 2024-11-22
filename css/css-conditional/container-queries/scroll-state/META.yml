@@ -1,148 +1,142 @@
 links:
-- product: firefox
-  results:
-  - subtest: Normalize spaces
-    test: at-container-stuck-serialization.html
-  - subtest: Boolean context
-    test: at-container-stuck-serialization.html
-  - subtest: Check scroll-state(snapped) initially matching
-    test: scroll-state-snapped-container-type-change.html
-  - subtest: Check scroll-state(snapped) not matching when scroll-snap-align is removed
-    test: scroll-state-snapped-container-type-change.html
-  - subtest: Check scroll-state(snapped) not matching when scroll-snap-type is removed
-    test: scroll-state-snapped-container-type-change.html
-  - subtest: scroll-state(stuck)
-    test: at-container-stuck-parsing.html
-  - subtest: 'scroll-state(stuck: none)'
-    test: at-container-stuck-parsing.html
-  - subtest: 'scroll-state(stuck: top)'
-    test: at-container-stuck-parsing.html
-  - subtest: 'scroll-state(stuck: left)'
-    test: at-container-stuck-parsing.html
-  - subtest: 'scroll-state(stuck: bottom)'
-    test: at-container-stuck-parsing.html
-  - subtest: 'scroll-state(stuck: right)'
-    test: at-container-stuck-parsing.html
-  - subtest: '(scroll-state(stuck: top))'
-    test: at-container-stuck-parsing.html
-  - subtest: 'scroll-state((stuck: top))'
-    test: at-container-stuck-parsing.html
-  - subtest: 'scroll-state(not ((stuck: top) and (stuck: bottom)))'
-    test: at-container-stuck-parsing.html
-  - subtest: 'scroll-state((stuck: right) or (stuck: left))'
-    test: at-container-stuck-parsing.html
-  - subtest: 'Check that scroll-state(snapped: block) matches'
-    test: scroll-state-initially-snapped.html
-  - subtest: Check scroll-state(snapped) matching for vertical writing-mode
-    test: scroll-state-snapped-wm.html
-  - subtest: Normalize spaces
-    test: at-container-snapped-serialization.html
-  - subtest: Boolean context
-    test: at-container-snapped-serialization.html
-  - subtest: Logical with 'or'
-    test: at-container-snapped-serialization.html
-  - subtest: 'Initially snapped to #snapped1, scroll-state() styling #target1'
-    test: scroll-state-snapped-snap-changing.html
-  - subtest: scroll-state(snapped)
-    test: at-container-snapped-parsing.html
-  - subtest: 'scroll-state(snapped: x)'
-    test: at-container-snapped-parsing.html
-  - subtest: 'scroll-state(snapped: y)'
-    test: at-container-snapped-parsing.html
-  - subtest: 'scroll-state(snapped: none)'
-    test: at-container-snapped-parsing.html
-  - subtest: 'scroll-state(snapped: block)'
-    test: at-container-snapped-parsing.html
-  - subtest: 'scroll-state(snapped: inline)'
-    test: at-container-snapped-parsing.html
-  - subtest: '(scroll-state(snapped: block))'
-    test: at-container-snapped-parsing.html
-  - subtest: 'scroll-state((snapped: inline))'
-    test: at-container-snapped-parsing.html
-  - subtest: 'scroll-state(not ((snapped: inline) and (snapped: block)))'
-    test: at-container-snapped-parsing.html
-  - subtest: 'scroll-state((snapped: x) or (snapped: y))'
-    test: at-container-snapped-parsing.html
-  - subtest: Property container-type value 'scroll-state'
-    test: container-type-scroll-state-computed.html
-  - subtest: Property container-type value 'scroll-state size'
-    test: container-type-scroll-state-computed.html
-  - subtest: Property container-type value 'inline-size scroll-state'
-    test: container-type-scroll-state-computed.html
-  - subtest: e.style['container-type'] = "scroll-state" should set the property value
-    test: container-type-scroll-state-parsing.html
-  - subtest: e.style['container-type'] = "size scroll-state" should set the property
-      value
-    test: container-type-scroll-state-parsing.html
-  - subtest: e.style['container-type'] = "scroll-state inline-size" should set the
-      property value
-    test: container-type-scroll-state-parsing.html
-  - subtest: 'Check that scroll-state(snapped: block) matches on #target1 before scroll'
-    test: scroll-state-snapped-change.html
-  - subtest: 'Check that scroll-state(snapped: block) matches on #target2 after scroll'
-    test: scroll-state-snapped-change.html
-  - subtest: 'Check that scroll-state(stuck: bottom) matches'
-    test: scroll-state-initially-stuck.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1918353
-- product: firefox
-  results:
-  - subtest: 'scroll-state(snapped) matching #snapped2 while scrolling'
-    test: scroll-state-snapped-snap-changing.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1920200
-- product: firefox
-  results:
-  - subtest: 'Check that scroll-state(stuck: bottom) evaluation changes with container-type
-      changes'
-    test: scroll-state-stuck-container-type-change.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1924665
-- product: firefox
-  results:
-  - subtest: bottom edge matching block-end for horizontal-tb/ltr
-    test: scroll-state-stuck-writing-direction.html
-  - subtest: bottom edge matching block-end for horizontal-tb/rtl
-    test: scroll-state-stuck-writing-direction.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1925061
-- product: firefox
-  results:
-  - subtest: scroll-state(snapped) matching after relative position changed
-    test: scroll-state-snapped-layout-change.html
-  - subtest: '@container: scroll-state(stuck) layout change 1'
-    test: scroll-state-stuck-layout-change.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1926947
-- product: firefox
-  results:
-  - subtest: ::before/::after depending on snapped query
-    test: scroll-state-snapped-pseudo.html
-  - subtest: ::before/::after depending on stuck query
-    test: scroll-state-stuck-pseudo.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1928337
-- product: firefox
-  results:
-  - test: at-container-overflowing-parsing.html
-  - test: at-container-overflowing-serialization.html
-  - test: at-container-snapped-parsing.html
-  - test: at-container-snapped-serialization.html
-  - test: at-container-stuck-parsing.html
-  - test: at-container-stuck-serialization.html
-  - test: container-type-scroll-state-parsing.html
-  - test: scroll-state-initially-overflowing.html
-  - test: scroll-state-initially-snapped.html
-  - test: scroll-state-initially-stuck.html
-  - test: scroll-state-overflowing-change.html
-  - test: scroll-state-overflowing-container-type-change.html
-  - test: scroll-state-overflowing-layout-change.html
-  - test: scroll-state-overflowing-pseudo.html
-  - test: scroll-state-overflowing-wm.html
-  - test: scroll-state-snapped-change.html
-  - test: scroll-state-snapped-container-type-change.html
-  - test: scroll-state-snapped-layout-change.html
-  - test: scroll-state-snapped-none.html
-  - test: scroll-state-snapped-pseudo.html
-  - test: scroll-state-snapped-snap-changing.html
-  - test: scroll-state-snapped-wm.html
-  - test: scroll-state-stuck-container-type-change.html
-  - test: scroll-state-stuck-layout-change.html
-  - test: scroll-state-stuck-pseudo.html
-  - test: scroll-state-stuck-writing-direction.html
-  - test: scroll-state-target-query-change.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1928675
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1918353
+      results:
+        - test: at-container-stuck-serialization.html
+          subtest: Normalize spaces
+        - test: at-container-stuck-serialization.html
+          subtest: Boolean context
+        - test: scroll-state-snapped-container-type-change.html
+          subtest: Check scroll-state(snapped) initially matching
+        - test: scroll-state-snapped-container-type-change.html
+          subtest: Check scroll-state(snapped) not matching when scroll-snap-align is removed
+        - test: scroll-state-snapped-container-type-change.html
+          subtest: Check scroll-state(snapped) not matching when scroll-snap-type is removed
+        - test: at-container-stuck-parsing.html
+          subtest: scroll-state(stuck)
+        - test: at-container-stuck-parsing.html
+          subtest: 'scroll-state(stuck: none)'
+        - test: at-container-stuck-parsing.html
+          subtest: 'scroll-state(stuck: top)'
+        - test: at-container-stuck-parsing.html
+          subtest: 'scroll-state(stuck: left)'
+        - test: at-container-stuck-parsing.html
+          subtest: 'scroll-state(stuck: bottom)'
+        - test: at-container-stuck-parsing.html
+          subtest: 'scroll-state(stuck: right)'
+        - test: at-container-stuck-parsing.html
+          subtest: '(scroll-state(stuck: top))'
+        - test: at-container-stuck-parsing.html
+          subtest: 'scroll-state((stuck: top))'
+        - test: at-container-stuck-parsing.html
+          subtest: 'scroll-state(not ((stuck: top) and (stuck: bottom)))'
+        - test: at-container-stuck-parsing.html
+          subtest: 'scroll-state((stuck: right) or (stuck: left))'
+        - test: scroll-state-initially-snapped.html
+          subtest: 'Check that scroll-state(snapped: block) matches'
+        - test: scroll-state-snapped-wm.html
+          subtest: Check scroll-state(snapped) matching for vertical writing-mode
+        - test: at-container-snapped-serialization.html
+          subtest: Normalize spaces
+        - test: at-container-snapped-serialization.html
+          subtest: Boolean context
+        - test: at-container-snapped-serialization.html
+          subtest: Logical with 'or'
+        - test: scroll-state-snapped-snap-changing.html
+          subtest: 'Initially snapped to #snapped1, scroll-state() styling #target1'
+        - test: at-container-snapped-parsing.html
+          subtest: scroll-state(snapped)
+        - test: at-container-snapped-parsing.html
+          subtest: 'scroll-state(snapped: x)'
+        - test: at-container-snapped-parsing.html
+          subtest: 'scroll-state(snapped: y)'
+        - test: at-container-snapped-parsing.html
+          subtest: 'scroll-state(snapped: none)'
+        - test: at-container-snapped-parsing.html
+          subtest: 'scroll-state(snapped: block)'
+        - test: at-container-snapped-parsing.html
+          subtest: 'scroll-state(snapped: inline)'
+        - test: at-container-snapped-parsing.html
+          subtest: '(scroll-state(snapped: block))'
+        - test: at-container-snapped-parsing.html
+          subtest: 'scroll-state((snapped: inline))'
+        - test: at-container-snapped-parsing.html
+          subtest: 'scroll-state(not ((snapped: inline) and (snapped: block)))'
+        - test: at-container-snapped-parsing.html
+          subtest: 'scroll-state((snapped: x) or (snapped: y))'
+        - test: container-type-scroll-state-computed.html
+          subtest: Property container-type value 'scroll-state'
+        - test: container-type-scroll-state-computed.html
+          subtest: Property container-type value 'scroll-state size'
+        - test: container-type-scroll-state-computed.html
+          subtest: Property container-type value 'inline-size scroll-state'
+        - test: container-type-scroll-state-parsing.html
+          subtest: e.style['container-type'] = "scroll-state" should set the property value
+        - test: container-type-scroll-state-parsing.html
+          subtest: e.style['container-type'] = "size scroll-state" should set the property value
+        - test: container-type-scroll-state-parsing.html
+          subtest: e.style['container-type'] = "scroll-state inline-size" should set the property value
+        - test: scroll-state-snapped-change.html
+          subtest: 'Check that scroll-state(snapped: block) matches on #target1 before scroll'
+        - test: scroll-state-snapped-change.html
+          subtest: 'Check that scroll-state(snapped: block) matches on #target2 after scroll'
+        - test: scroll-state-initially-stuck.html
+          subtest: 'Check that scroll-state(stuck: bottom) matches'
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1920200
+      results:
+        - test: scroll-state-snapped-snap-changing.html
+          subtest: 'scroll-state(snapped) matching #snapped2 while scrolling'
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1924665
+      results:
+        - test: scroll-state-stuck-container-type-change.html
+          subtest: 'Check that scroll-state(stuck: bottom) evaluation changes with container-type changes'
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1925061
+      results:
+        - test: scroll-state-stuck-writing-direction.html
+          subtest: bottom edge matching block-end for horizontal-tb/ltr
+        - test: scroll-state-stuck-writing-direction.html
+          subtest: bottom edge matching block-end for horizontal-tb/rtl
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1926947
+      results:
+        - test: scroll-state-snapped-layout-change.html
+          subtest: scroll-state(snapped) matching after relative position changed
+        - test: scroll-state-stuck-layout-change.html
+          subtest: '@container: scroll-state(stuck) layout change 1'
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1928337
+      results:
+        - test: scroll-state-snapped-pseudo.html
+          subtest: ::before/::after depending on snapped query
+        - test: scroll-state-stuck-pseudo.html
+          subtest: ::before/::after depending on stuck query
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1928675
+      results:
+        - test: at-container-snapped-parsing.html
+        - test: at-container-snapped-serialization.html
+        - test: at-container-stuck-parsing.html
+        - test: at-container-stuck-serialization.html
+        - test: container-type-scroll-state-parsing.html
+        - test: scroll-state-initially-snapped.html
+        - test: scroll-state-initially-stuck.html
+        - test: scroll-state-snapped-change.html
+        - test: scroll-state-snapped-container-type-change.html
+        - test: scroll-state-snapped-layout-change.html
+        - test: scroll-state-snapped-none.html
+        - test: scroll-state-snapped-pseudo.html
+        - test: scroll-state-snapped-snap-changing.html
+        - test: scroll-state-snapped-wm.html
+        - test: scroll-state-stuck-container-type-change.html
+        - test: scroll-state-stuck-layout-change.html
+        - test: scroll-state-stuck-pseudo.html
+        - test: scroll-state-stuck-writing-direction.html
+        - test: scroll-state-target-query-change.html
+        - test: scroll-state-initially-scrollable.html
+        - test: scroll-state-scrollable-change.html
+        - test: scroll-state-scrollable-layout-change.html
+        - test: scroll-state-scrollable-container-type-change.html
+        - test: scroll-state-scrollable-pseudo.html
