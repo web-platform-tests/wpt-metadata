@@ -139,3 +139,13 @@ links:
   url: https://crbug.com/41491726
   results:
     - test: multiple-scroll-state-containers-comma-separated-queries.html
+- product: chrome
+  results:
+  - test: scroll-state-query-with-var.html
+  - subtest: Matching --match-unknown
+    test: scroll-state-query-with-var.html
+  - subtest: Matching --match-unregistered-number
+    test: scroll-state-query-with-var.html
+  - subtest: Matching --match-registered-number
+    test: scroll-state-query-with-var.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1930536
