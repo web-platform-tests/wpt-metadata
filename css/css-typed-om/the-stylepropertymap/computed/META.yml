@@ -1,9 +1,24 @@
 links:
-    - product: chrome
-      url: https://crbug.com/989123
-      results:
-        - test: get-auto-min-size.html
-    - product: chrome
-      url: https://bugs.chromium.org/p/chromium/issues/detail?id=949807
-      results:
-        - test: computed.tentative.html
+- product: chrome
+  results:
+  - test: get-auto-min-size.html
+  url: https://crbug.com/989123
+- product: chrome
+  results:
+  - test: computed.tentative.html
+  url: https://bugs.chromium.org/p/chromium/issues/detail?id=949807
+- product: firefox
+  results:
+  - subtest: Getting a valid property from computed style returns the correct entry
+    test: get.html
+  - subtest: Getting a valid custom property from computed style returns the correct
+      entry
+    test: get.html
+  - subtest: Getting a list-valued property from computed style returns only the first
+      value
+    test: get.html
+  - subtest: Computed StylePropertyMap.get is not case-sensitive
+    test: get.html
+  - subtest: Computed StylePropertyMap.get reflects updates in inline style
+    test: get.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1932747
