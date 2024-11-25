@@ -118,21 +118,13 @@ links:
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1928337
 - product: firefox
   results:
-  - test: at-container-overflowing-parsing.html
-  - test: at-container-overflowing-serialization.html
   - test: at-container-snapped-parsing.html
   - test: at-container-snapped-serialization.html
   - test: at-container-stuck-parsing.html
   - test: at-container-stuck-serialization.html
   - test: container-type-scroll-state-parsing.html
-  - test: scroll-state-initially-overflowing.html
   - test: scroll-state-initially-snapped.html
   - test: scroll-state-initially-stuck.html
-  - test: scroll-state-overflowing-change.html
-  - test: scroll-state-overflowing-container-type-change.html
-  - test: scroll-state-overflowing-layout-change.html
-  - test: scroll-state-overflowing-pseudo.html
-  - test: scroll-state-overflowing-wm.html
   - test: scroll-state-snapped-change.html
   - test: scroll-state-snapped-container-type-change.html
   - test: scroll-state-snapped-layout-change.html
@@ -145,7 +137,17 @@ links:
   - test: scroll-state-stuck-pseudo.html
   - test: scroll-state-stuck-writing-direction.html
   - test: scroll-state-target-query-change.html
+  - test: scroll-state-initially-scrollable.html
+  - test: scroll-state-scrollable-change.html
+  - test: scroll-state-scrollable-layout-change.html
+  - test: scroll-state-scrollable-container-type-change.html
+  - test: scroll-state-scrollable-pseudo.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1928675
+- product: firefox
+  results:
+  - test: container-type-scroll-state-containment.html
+  - test: multiple-scroll-state-containers-comma-separated-queries.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1930198
 - product: firefox
   results:
   - test: scroll-state-query-with-var.html

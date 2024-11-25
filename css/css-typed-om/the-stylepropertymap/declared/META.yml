@@ -1,0 +1,32 @@
+links:
+- product: firefox
+  results:
+  - subtest: Clearing an empty CSS rule is a no-op
+    test: clear.html
+  - subtest: Declared StylePropertyMap.clear updates the CSS rule
+    test: clear.html
+  - subtest: Declared StylePropertyMap only contains properties in the style rule
+    test: declared.tentative.html
+  - subtest: Declared StylePropertyMap contains CSS property declarations in style
+      rules
+    test: declared.tentative.html
+  - subtest: Declared StylePropertyMap contains custom property declarations
+    test: declared.tentative.html
+  - subtest: Declared StylePropertyMap contains properties with their last valid value
+    test: declared.tentative.html
+  - subtest: Declared StylePropertyMap is live
+    test: declared.tentative.html
+  - subtest: Getting a shorthand property set explicitly in css rule returns a base
+      CSSStyleValue
+    test: get-shorthand.html
+  - subtest: Getting a valid property from CSS rule returns the correct entry
+    test: get.html
+  - subtest: Getting a valid custom property from CSS rule returns the correct entry
+    test: get.html
+  - subtest: Getting a list-valued property from CSS rule returns only the first value
+    test: get.html
+  - subtest: Declared StylePropertyMap.get is not case-sensitive
+    test: get.html
+  - subtest: Declared StylePropertyMap.get reflects changes in the CSS rule
+    test: get.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1932747
