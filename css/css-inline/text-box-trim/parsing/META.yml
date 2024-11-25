@@ -144,3 +144,24 @@ links:
   - subtest: e.style['text-box'] = "ex" should not set unrelated longhands
     test: text-box-shorthand.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1917053
+- product: firefox
+  results:
+  - subtest: Property text-box-edge value 'auto'
+    test: text-box-edge-computed.html
+  - subtest: Property text-box-edge value 'ideographic text'
+    test: text-box-edge-computed.html
+  - subtest: Property text-box-edge value 'ideographic ideographic'
+    test: text-box-edge-computed.html
+  - subtest: Property text-box-edge value 'ideographic-ink text'
+    test: text-box-edge-computed.html
+  - subtest: Property text-box-edge value 'ideographic-ink ideographic-ink'
+    test: text-box-edge-computed.html
+  - subtest: e.style['text-box-edge'] = "auto" should set the property value
+    test: text-box-edge-valid.html
+  - subtest: e.style['text-box-edge'] = "ideographic ideographic" should set the property
+      value
+    test: text-box-edge-valid.html
+  - subtest: e.style['text-box-edge'] = "ideographic-ink ideographic-ink" should set
+      the property value
+    test: text-box-edge-valid.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1931625
