@@ -1,59 +1,64 @@
 links:
-    - product: chrome
-      url: https://crbug.com/1010278
-      results:
-        - test: webkit-gradient-comma.html
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1733691
-      results:
-        - test: css-style-declaration-alias-enumeration.html
-          subtest: webkitMaskBoxImage found on CSSStyleDeclaration
-        - test: css-style-declaration-alias-enumeration.html
-          subtest: webkitMaskBoxImageOutset found on CSSStyleDeclaration
-        - test: css-style-declaration-alias-enumeration.html
-          subtest: webkitMaskBoxImageRepeat found on CSSStyleDeclaration
-        - test: css-style-declaration-alias-enumeration.html
-          subtest: webkitMaskBoxImageSlice found on CSSStyleDeclaration
-        - test: css-style-declaration-alias-enumeration.html
-          subtest: webkitMaskBoxImageSource found on CSSStyleDeclaration
-        - test: css-style-declaration-alias-enumeration.html
-          subtest: webkitMaskBoxImageWidth found on CSSStyleDeclaration
-    - product: chrome
-      url: https://crbug.com/1339290
-      results:
-        - test: css-style-declaration-alias-enumeration.html
-          subtest: WebKitBackgroundClip found on CSSStyleDeclaration
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1791317
-      results:
-        - test: webkit-mask-box-enumeration.html
-          subtest: webkitMaskBoxImage found on CSSStyleDeclaration
-        - test: webkit-mask-box-enumeration.html
-          subtest: webkitMaskBoxImageOutset found on CSSStyleDeclaration
-        - test: webkit-mask-box-enumeration.html
-          subtest: webkitMaskBoxImageRepeat found on CSSStyleDeclaration
-        - test: webkit-mask-box-enumeration.html
-          subtest: webkitMaskBoxImageSlice found on CSSStyleDeclaration
-        - test: webkit-mask-box-enumeration.html
-          subtest: webkitMaskBoxImageSource found on CSSStyleDeclaration
-        - test: webkit-mask-box-enumeration.html
-          subtest: webkitMaskBoxImageWidth found on CSSStyleDeclaration
-    - product: safari
-      url: https://bugs.webkit.org/show_bug.cgi?id=260074
-      results:
-        - test: webkit-box-fieldset.html
-        - test: webkit-box-rtl-flex.html
-    - product: safari
-      url: https://bugs.webkit.org/show_bug.cgi?id=193028
-      results:
-        - test: webkit-text-fill-color-property-005.html
-          subtest: Test status
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1885753
-      results:
-        - test: webkit-box-horizontal-rtl-variants.html
-        - test: webkit-box-horizontal-reverse-variants.html
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1885752
-      results:
-        - test: webkit-box-ignore-box-pack.html
+- product: chrome
+  results:
+  - test: webkit-gradient-comma.html
+  url: https://crbug.com/1010278
+- product: firefox
+  results:
+  - subtest: webkitMaskBoxImage found on CSSStyleDeclaration
+    test: css-style-declaration-alias-enumeration.html
+  - subtest: webkitMaskBoxImageOutset found on CSSStyleDeclaration
+    test: css-style-declaration-alias-enumeration.html
+  - subtest: webkitMaskBoxImageRepeat found on CSSStyleDeclaration
+    test: css-style-declaration-alias-enumeration.html
+  - subtest: webkitMaskBoxImageSlice found on CSSStyleDeclaration
+    test: css-style-declaration-alias-enumeration.html
+  - subtest: webkitMaskBoxImageSource found on CSSStyleDeclaration
+    test: css-style-declaration-alias-enumeration.html
+  - subtest: webkitMaskBoxImageWidth found on CSSStyleDeclaration
+    test: css-style-declaration-alias-enumeration.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1733691
+- product: chrome
+  results:
+  - subtest: WebKitBackgroundClip found on CSSStyleDeclaration
+    test: css-style-declaration-alias-enumeration.html
+  url: https://crbug.com/1339290
+- product: firefox
+  results:
+  - subtest: webkitMaskBoxImage found on CSSStyleDeclaration
+    test: webkit-mask-box-enumeration.html
+  - subtest: webkitMaskBoxImageOutset found on CSSStyleDeclaration
+    test: webkit-mask-box-enumeration.html
+  - subtest: webkitMaskBoxImageRepeat found on CSSStyleDeclaration
+    test: webkit-mask-box-enumeration.html
+  - subtest: webkitMaskBoxImageSlice found on CSSStyleDeclaration
+    test: webkit-mask-box-enumeration.html
+  - subtest: webkitMaskBoxImageSource found on CSSStyleDeclaration
+    test: webkit-mask-box-enumeration.html
+  - subtest: webkitMaskBoxImageWidth found on CSSStyleDeclaration
+    test: webkit-mask-box-enumeration.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1791317
+- product: safari
+  results:
+  - test: webkit-box-fieldset.html
+  - test: webkit-box-rtl-flex.html
+  url: https://bugs.webkit.org/show_bug.cgi?id=260074
+- product: safari
+  results:
+  - subtest: Test status
+    test: webkit-text-fill-color-property-005.html
+  url: https://bugs.webkit.org/show_bug.cgi?id=193028
+- product: firefox
+  results:
+  - test: webkit-box-horizontal-rtl-variants.html
+  - test: webkit-box-horizontal-reverse-variants.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1885753
+- product: firefox
+  results:
+  - test: webkit-box-ignore-box-pack.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1885752
+- product: firefox
+  results:
+  - subtest: webkit-gradient-sign
+    test: webkit-gradient-sign.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1932356
