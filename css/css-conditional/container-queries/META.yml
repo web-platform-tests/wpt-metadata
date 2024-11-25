@@ -1418,11 +1418,16 @@ links:
     - test: style-container-for-shadow-dom.html
     - test: style-query-no-cycle.html
 - product: firefox
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1929897
   results:
-  - test: multiple-style-containers-comma-separated-queries.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1930198
+    - test: style-query-guaranteed-invalid.tentative.html
+    - test: style-query-registered-custom-invalid.tentative.html
 - product: chrome
   url: https://crbug.com/41491726
   results:
-    - test: multiple-size-containers-comma-separated-queries.html
-    - test: multiple-style-containers-comma-separated-queries.html
+    - test: at-container-parsing.html
+      subtest: '@container rule should be valid: @container (width: 100px), (height: 100px) {} {}'
+    - test: at-container-parsing.html
+      subtest: '@container rule should be valid: @container (width),(height)  , (inline-size > 20px) {} {}'
+    - test: at-container-parsing.html
+      subtest: '@container rule should be valid: @container (width), name (height) {} {}'
