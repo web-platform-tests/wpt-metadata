@@ -1,0 +1,10 @@
+links:
+- product: firefox
+  results:
+  - subtest: test_partition_context_iframe[cross_origin]
+    test: partition.py
+  - subtest: test_partition_source_origin[http]
+    test: partition.py
+  - subtest: test_partition_source_origin[https]
+    test: partition.py
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1934045
