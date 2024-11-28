@@ -287,3 +287,42 @@ links:
   - subtest: '@scope { & .b {  } } and :where(:scope) .b'
     test: scope-specificity.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1928695
+- product: firefox
+  results:
+  - subtest: Element becoming scope root
+    test: scope-invalidation.html
+  - subtest: Element becoming scope root (selector list)
+    test: scope-invalidation.html
+  - subtest: Parent element becoming scope limit
+    test: scope-invalidation.html
+  - subtest: Parent element becoming scope limit (selector list)
+    test: scope-invalidation.html
+  - subtest: Subject element becoming scope limit
+    test: scope-invalidation.html
+  - subtest: Parent element affecting scope limit
+    test: scope-invalidation.html
+  - subtest: Sibling element affecting scope limit
+    test: scope-invalidation.html
+  - subtest: Toggling inner/outer scope roots
+    test: scope-invalidation.html
+  - subtest: Scope root with :has()
+    test: scope-invalidation.html
+  - subtest: Scope limit with :has()
+    test: scope-invalidation.html
+  - subtest: Element becoming root via ~ combinator
+    test: scope-invalidation.html
+  - subtest: Element becoming root via + combinator
+    test: scope-invalidation.html
+  - subtest: :not(scope) in subject
+    test: scope-invalidation.html
+  - subtest: :not(scope) in ancestor
+    test: scope-invalidation.html
+  - subtest: :not(scope) in limit subject
+    test: scope-invalidation.html
+  - subtest: :not(scope) in limit ancestor
+    test: scope-invalidation.html
+  - subtest: :nth-child() in scope limit
+    test: scope-invalidation.html
+  - subtest: Modifying selectorText invalidates affected elements
+    test: scope-invalidation.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1933903
