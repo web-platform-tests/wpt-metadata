@@ -1,5 +1,15 @@
 links:
-    - product: safari
-      url: https://bugs.webkit.org/show_bug.cgi?id=226727
-      results:
-        - test: pointerlock_remove_target_on_mouseup.html
+- product: safari
+  results:
+  - test: pointerlock_remove_target_on_mouseup.html
+  url: https://bugs.webkit.org/show_bug.cgi?id=226727
+- product: firefox
+  results:
+  - test: pointerlock_promise.html
+  - subtest: pointerlock_promise
+    test: pointerlock_promise.html
+  - subtest: pointerlock_unadjustedMovement
+    test: pointerlock_unadjustedMovement.html
+  - subtest: pointerlock_without_gesture
+    test: pointerlock_without_gesture.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1935524
