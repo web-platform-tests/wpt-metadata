@@ -12,3 +12,32 @@ links:
   - subtest: p + div > div 2
     test: aspect-ratio-1.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1929392
+- product: firefox
+  results:
+  - subtest: '[data-expected-height] 1'
+    test: block-height-001.html
+  - subtest: '[data-expected-height] 2'
+    test: block-height-001.html
+  - subtest: '[data-expected-height] 3'
+    test: block-height-001.html
+  - subtest: '[data-expected-height] 7'
+    test: block-height-001.html
+  - subtest: '[data-expected-height] 8'
+    test: block-height-001.html
+  - subtest: '[data-expected-height] 9'
+    test: block-height-001.html
+  - subtest: '[data-expected-height] 13'
+    test: block-height-001.html
+  - subtest: '[data-expected-height] 14'
+    test: block-height-001.html
+  - subtest: '[data-expected-height] 15'
+    test: block-height-001.html
+  - subtest: main > div > div 1
+    test: block-height-002.tentative.html
+  - subtest: .inner 2
+    test: block-height-004.tentative.html
+  - subtest: .inner 3
+    test: block-height-004.tentative.html
+  - subtest: .inner 6
+    test: block-height-004.tentative.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1936444
