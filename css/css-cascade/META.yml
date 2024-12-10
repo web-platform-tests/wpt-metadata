@@ -326,3 +326,14 @@ links:
   - subtest: Modifying selectorText invalidates affected elements
     test: scope-invalidation.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1933903
+- product: firefox
+  results:
+  - subtest: Scoped nested within another scope
+    test: scope-nesting.html
+  - subtest: Implicit (prelude-less) @scope as a nested group rule
+    test: scope-nesting.html
+  - subtest: Insert a nested style rule within @scope, &
+    test: scope-nesting.html
+  - subtest: Mutating selectorText on outer style rule causes correct inner specificity
+    test: scope-nesting.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1936293
