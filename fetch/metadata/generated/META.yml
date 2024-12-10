@@ -1,0 +1,54 @@
+links:
+- product: firefox
+  results:
+  - subtest: sec-fetch-storage-access - Cross-site no attributes
+    test: element-link-icon.https.sub.html
+  - subtest: 'sec-fetch-dest - attributes: download'
+    test: element-a.https.sub.html
+  - subtest: 'sec-fetch-dest - attributes: download'
+    test: element-area.https.sub.html
+  - subtest: sec-fetch-storage-access - Cross-site, no attributes
+    test: element-audio.https.sub.html
+  - subtest: sec-fetch-storage-access - Cross-site
+    test: element-embed.https.sub.html
+  - subtest: sec-fetch-user with user activation
+    test: element-frame.https.sub.html
+  - subtest: sec-fetch-storage-access - Cross-site
+    test: element-frame.https.sub.html
+  - subtest: sec-fetch-user with user activation
+    test: element-iframe.https.sub.html
+  - subtest: sec-fetch-storage-access - Cross-site
+    test: element-iframe.https.sub.html
+  - subtest: sec-fetch-storage-access - Cross-site, no attributes
+    test: element-img-environment-change.https.sub.html
+  - subtest: sec-fetch-storage-access - src - Cross-site, no attributes
+    test: element-img.https.sub.html
+  - subtest: sec-fetch-storage-access - srcset - Cross-site, no attributes
+    test: element-img.https.sub.html
+  - subtest: sec-fetch-storage-access - Cross-site, no attributes
+    test: element-input-image.https.sub.html
+  - subtest: sec-fetch-storage-access - Cross-site no attributes
+    test: element-link-prefetch.https.optional.sub.html
+  - subtest: sec-fetch-storage-access - img[src] - Cross-site, no attributes
+    test: element-picture.https.sub.html
+  - subtest: sec-fetch-storage-access - img[srcset] - Cross-site, no attributes
+    test: element-picture.https.sub.html
+  - subtest: sec-fetch-storage-access - source[srcset] - Cross-site, no attributes
+    test: element-picture.https.sub.html
+  - subtest: sec-fetch-storage-access - Cross-site, no attributes
+    test: element-script.https.sub.html
+  - subtest: sec-fetch-storage-access - Cross-site, no attributes
+    test: element-video.https.sub.html
+  - subtest: 'sec-fetch-storage-access - Cross-site, init: mode=no-cors, credentials=include
+      - respondWith'
+    test: fetch-via-serviceworker.https.sub.html
+  - subtest: 'sec-fetch-storage-access - Cross-site, init: mode=no-cors, credentials=include
+      - fallback'
+    test: fetch-via-serviceworker.https.sub.html
+  - subtest: 'sec-fetch-storage-access - Cross-site, init: mode=no-cors, credentials=include'
+    test: fetch.https.sub.html
+  - subtest: sec-fetch-storage-access - Cross-site no attributes
+    test: svg-image.https.sub.html
+  - subtest: sec-fetch-storage-access - Cross-site
+    test: worker-dedicated-importscripts.https.sub.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1936389
