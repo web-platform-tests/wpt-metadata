@@ -181,3 +181,14 @@ links:
       results:
         - test: simulcast-answer.html
           subtest: Using the ~rid SDP syntax in a remote offer does not control the local encodings active flag
+    - product: chrome
+      url: https://issues.webrtc.org/issues/42224482
+      results:
+        - test: h264-profile-levels.https.html
+          subtest: Level 2 H264 video is appropriately constrained
+        - test: h264-profile-levels.https.html
+          subtest: Level 3 H264 video is appropriately constrained
+        - test: h264-profile-levels.https.html
+          subtest: Level 2.1 H264 video is appropriately constrained
+        - test: h264-profile-levels.https.html
+          subtest: Level 2.2 H264 video is appropriately constrained
