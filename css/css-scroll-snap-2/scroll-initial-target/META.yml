@@ -1,0 +1,33 @@
+links:
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1922719
+      results:
+        - test: scroll-initial-target-display-toggled.tentative.html
+          subtest: 'display:block scroll-start-target becomes display: none'
+        - test: scroll-initial-target-display-toggled.tentative.html
+          subtest: 'display:none scroll-start-target becomes display: block'
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1918805
+      results:
+        - test: scroll-initial-target-nested-container.tentative.html
+        - test: scroll-initial-target-nested-container.tentative.html
+          subtest: display:none scroll-start-target becomes display:block
+        - test: scroll-initial-target-nested-container.tentative.html
+          subtest: intermediate overflow:visible container becomes overflow:scroll
+        - test: scroll-initial-target-nested-container.tentative.html
+          subtest: inner scroll-start-target takes precedence over outer
+        - test: scroll-initial-target-nested-container.tentative.html
+          subtest: scroll containers can also be scroll-start-targets
+        - test: scroll-initial-target-with-user-programmatic-scroll.tentative.html
+          subtest: scroll-start-target does not override user scroll
+        - test: scroll-initial-target-with-user-programmatic-scroll.tentative.html
+          subtest: scroll-start-target does not override programmatic scroll
+        - test: scroll-initial-target-aligns-with-snap-align.tentative.html
+          subtest: scroll-start-target aligns with scroll-snap-align
+        - test: scroll-initial-target-with-anchor-navigation.tentative.html
+          subtest: scroll-start-target does not override anchor navigation.
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1846980
+      results:
+        - test: scroll-initial-target-with-text-fragment-navigation.tentative.html
+          subtest: scroll-start doesn't override text fragment navigation
