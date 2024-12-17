@@ -32,3 +32,60 @@ links:
   - subtest: 'View Transitions: @view-transition opt-in programmatically.'
     test: at-rule-opt-in-change-with-script.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1936886
+- product: firefox
+  results:
+  - test: at-rule-in-layer-cascade-external-stylesheet.html
+  - subtest: 'View Transitions: @view-transition cascaldes correclty with layers in
+      separate external stylesheets.'
+    test: at-rule-in-layer-cascade-external-stylesheet.html
+  - test: at-rule-in-layer-cascade.html
+  - subtest: 'View Transitions: @view-transition cascaldes correclty with layers.'
+    test: at-rule-in-layer-cascade.html
+  - test: at-rule-in-layer.html
+  - subtest: 'View Transitions: @view-transition nested in a @layer rule.'
+    test: at-rule-in-layer.html
+  - test: at-rule-in-matching-media.html
+  - subtest: 'View Transitions: @view-transition nested in a matching @media rule.'
+    test: at-rule-in-matching-media.html
+  - test: at-rule-in-non-matching-media.html
+  - subtest: 'View Transitions: @view-transition nested in a non-matching @media rule.'
+    test: at-rule-in-non-matching-media.html
+  - test: at-rule-in-shadow-dom.html
+  - subtest: 'View Transitions: @view-transition not applied from shadow tree.'
+    test: at-rule-in-shadow-dom.html
+  - test: at-rule-multiple-rules.html
+  - subtest: 'View Transitions: Multiple @view-transition, last one wins.'
+    test: at-rule-multiple-rules.html
+  - subtest: 'View transitions: pagereveal event provides viewTransition'
+    test: hide-before-reveal.html
+  - subtest: '
+
+      View transitions: mismatched snapshot containing block size skips transition.
+
+      '
+    test: mismatched-snapshot-containing-block-size-skips.html
+  - test: pagereveal-microtask-sequence.html
+  - subtest: "\n  View transition promise reactions in incoming page should resolve\
+      \ before\n  the rendering continues (rAF, style/layout etc)\n"
+    test: pagereveal-microtask-sequence.html
+  - test: pagereveal-no-view-transition-new-opt-out.html
+  - subtest: "\n  View transitions: null event.viewTransition when new page removes\
+      \ opt-in\n  before pagereveal\n"
+    test: pagereveal-no-view-transition-new-opt-out.html
+  - test: pagereveal-updatecallbackdone-promise.html
+  - subtest: "\n  View transitions: Test pagereveal.updateCallbackDone promise is\
+      \ immediately resolved.\n"
+    test: pagereveal-updatecallbackdone-promise.html
+  - test: pagereveal-with-view-transition.html
+  - subtest: 'View transitions: pagereveal event provides viewTransition'
+    test: pagereveal-with-view-transition.html
+  - test: pageswap-long-delay.html
+  - subtest: 'View transitions: long delay in pageswap aborts the transition'
+    test: pageswap-long-delay.html
+  - test: pageswap-skip-transition.html
+  - subtest: 'View transitions: skipTransition() in pageswap aborts the transition'
+    test: pageswap-skip-transition.html
+  - test: zero-named-elements.html
+  - subtest: transition finishes with no named elements
+    test: zero-named-elements.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1937918
