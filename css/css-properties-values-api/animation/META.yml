@@ -122,3 +122,18 @@ links:
       values and with mismatching list lengths
     test: custom-property-animation-transform-list-multiple-values.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1874775
+- product: firefox
+  results:
+  - subtest: Animating a custom property of type <length-percentage># with iterationComposite
+    test: custom-property-animation-length-percentage-comma-list.html
+  - subtest: Animating a custom property of type <length-percentage>+ with iterationComposite
+    test: custom-property-animation-length-percentage-space-list.html
+  - subtest: Animating a custom property of type <transform-function> with additivity
+    test: custom-property-animation-transform-function.html
+  - subtest: Animating a custom property of type <transform-function> with a single
+      keyframe and additivity
+    test: custom-property-animation-transform-function.html
+  - subtest: 'A custom property can yield a CSS Transition with transition-property:
+      all'
+    test: custom-property-transition-property-all.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1937844
