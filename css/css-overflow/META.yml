@@ -249,6 +249,80 @@ links:
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1887348
 - product: firefox
   results:
+  - test: column-scroll-marker-008.html
+  - test: column-scroll-marker-reattach-target-current.html
+  - test: scroll-marker-001.html
+  - test: scroll-marker-002.html
+  - test: scroll-marker-003.html
+  - test: scroll-marker-004.html
+  - test: scroll-marker-005.html
+  - test: scroll-marker-006.html
+  - test: scroll-marker-007.html
+  - test: scroll-marker-008.html
+  - test: scroll-marker-009.html
+  - test: scroll-marker-010.html
+  - test: scroll-marker-011.html
+  - test: scroll-marker-012.html
+  - test: scroll-marker-counters.html
+  - test: scroll-marker-dynamic.html
+  - test: scroll-marker-group-001.html
+  - test: scroll-marker-group-002.html
+  - test: scroll-marker-group-005.html
+  - test: scroll-marker-group-007.html
+  - test: scroll-marker-group-008.html
+  - test: scroll-marker-group-009.html
+  - test: scroll-marker-group-011.html
+  - test: scroll-marker-group-013.html
+  - test: scroll-marker-group-015.html
+  - test: scroll-marker-group-add-dynamic-001.html
+  - test: scroll-marker-group-add-dynamic-002.html
+  - test: scroll-marker-group-add-dynamic-003.html
+  - test: scroll-marker-group-add-dynamic-004.html
+  - subtest: 'CSS Test: ::scroll-marker click with active selection'
+    test: scroll-buttons-selection.html
+  - subtest: Scroll last item into view
+    test: scroll-marker-013.html
+  - subtest: Scroll seventh item into view
+    test: scroll-marker-013.html
+  - subtest: 'CSS Test: ::scroll-marker retains focus on ::scroll-marker'
+    test: scroll-marker-activation-retains-focus.html
+  - subtest: ::scroll-marker is not activated when its originating element is not
+      scrolled into the view
+    test: scroll-marker-controls-scroll-tracking-001.html
+  - subtest: ::scroll-marker is activated when its originating element is scrolled
+      into the view
+    test: scroll-marker-controls-scroll-tracking-001.html
+  - subtest: ::scroll-marker is not active when its originating element is not scrolled
+      into the view
+    test: scroll-marker-controls-scroll-tracking-002.html
+  - subtest: ::scroll-marker is active when its originating element is scrolled into
+      the view
+    test: scroll-marker-controls-scroll-tracking-002.html
+  - subtest: ::scroll-marker is not activated when its originating element is not
+      scrolled into the view
+    test: scroll-marker-controls-scroll-tracking-003.html
+  - subtest: ::scroll-marker is activated when its originating element is scrolled
+      into the view
+    test: scroll-marker-controls-scroll-tracking-003.html
+  - subtest: ::scroll-marker-group empty
+    test: scroll-marker-group-003.html
+  - subtest: ::scroll-marker-group with red background
+    test: scroll-marker-group-003.html
+  - subtest: ::scroll-marker-group empty again
+    test: scroll-marker-group-003.html
+  - subtest: ::scroll-marker-group with red background again
+    test: scroll-marker-group-003.html
+  - subtest: ::scroll-marker-group with green background
+    test: scroll-marker-group-003.html
+  - subtest: Click on third scroll marker
+    test: scroll-marker-group-012.html
+  - subtest: Click on third scroll marker
+    test: scroll-marker-group-014.html
+  - subtest: 'CSS Test: document.activeElement for ::scroll-marker is scroller'
+    test: scroll-markers-focus-active-element.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1938118
+- product: firefox
+  results:
   - subtest: active ::scroll-marker doesn't have focus on scroll if previous ::scroll-marker
       didn't have it
     test: scroll-markers-focus-on-scrolling.html
