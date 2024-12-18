@@ -249,6 +249,12 @@ links:
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1887348
 - product: firefox
   results:
+  - subtest: active ::scroll-marker doesn't have focus on scroll if previous ::scroll-marker
+      didn't have it
+    test: scroll-markers-focus-on-scrolling.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1938116
+- product: firefox
+  results:
   - subtest: 'CSS Overflow Test: ::scroll-button() activation with column scroll markers'
     test: scroll-buttons-activation-with-columns.html
   - subtest: 'CSS Test: ::scroll-button() activation'
