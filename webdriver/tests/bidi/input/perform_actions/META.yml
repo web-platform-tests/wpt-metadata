@@ -1,30 +1,45 @@
 links:
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1515879
-      results:
-        - test: pointer_mouse.py
-          subtest: test_drag_and_drop_with_draggable_element[0]
-        - test: pointer_mouse.py
-          subtest: test_drag_and_drop_with_draggable_element[300]
-        - test: pointer_mouse.py
-          subtest: test_drag_and_drop_with_draggable_element[800]
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1658880
-      results:
-        - test: pointer_pen.py
-    - label: chromium-bidi-2023
-      results:
-        - test: invalid.py
-        - test: key.py
-        - test: key_events.py
-        - test: key_modifier.py
-        - test: pointer.py
-        - test: pointer_mouse.py
-        - test: pointer_mouse_drag.py
-        - test: pointer_mouse_modifier.py
-        - test: pointer_mouse_multiclick.py
-        - test: pointer_origin.py
-        - test: pointer_pen.py
-        - test: pointer_touch.py
-        - test: wheel.py
-        - test: wheel_origin.py
+- product: firefox
+  results:
+  - subtest: test_drag_and_drop_with_draggable_element[0]
+    test: pointer_mouse.py
+  - subtest: test_drag_and_drop_with_draggable_element[300]
+    test: pointer_mouse.py
+  - subtest: test_drag_and_drop_with_draggable_element[800]
+    test: pointer_mouse.py
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1515879
+- product: firefox
+  results:
+  - test: pointer_pen.py
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1658880
+- label: chromium-bidi-2023
+  results:
+  - test: invalid.py
+  - test: key.py
+  - test: key_events.py
+  - test: key_modifier.py
+  - test: pointer.py
+  - test: pointer_mouse.py
+  - test: pointer_mouse_drag.py
+  - test: pointer_mouse_modifier.py
+  - test: pointer_mouse_multiclick.py
+  - test: pointer_origin.py
+  - test: pointer_pen.py
+  - test: pointer_touch.py
+  - test: wheel.py
+  - test: wheel_origin.py
+- product: firefox
+  results:
+  - subtest: test_pen_pointer_in_shadow_tree[outer-open]
+    test: pointer_pen.py
+  - subtest: test_pen_pointer_in_shadow_tree[outer-closed]
+    test: pointer_pen.py
+  - subtest: test_pen_pointer_in_shadow_tree[inner-open]
+    test: pointer_pen.py
+  - subtest: test_pen_pointer_in_shadow_tree[inner-closed]
+    test: pointer_pen.py
+  - subtest: test_pen_pointer_properties
+    test: pointer_pen.py
+  - subtest: test_touch_pointer_properties_angle_twist
+    test: pointer_touch.py
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1938127
