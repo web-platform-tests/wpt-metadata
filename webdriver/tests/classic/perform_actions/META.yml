@@ -21,6 +21,16 @@ links:
           subtest: test_null_response_value
         - test: pointer_pen.py
           subtest: test_pen_pointer_properties
+        - test: pointer_pen.py
+          subtest: test_pointer_down_closes_browsing_context
+        - test: pointer_pen.py
+          subtest: test_pen_pointer_in_shadow_tree[outer-open]
+        - test: pointer_pen.py
+          subtest: test_pen_pointer_in_shadow_tree[outer-closed]
+        - test: pointer_pen.py
+          subtest: test_pen_pointer_in_shadow_tree[inner-open]
+        - test: pointer_pen.py
+          subtest: test_pen_pointer_in_shadow_tree[inner-closed]
     - product: firefox
       url: https://bugzilla.mozilla.org/show_bug.cgi?id=1793832
       results:
