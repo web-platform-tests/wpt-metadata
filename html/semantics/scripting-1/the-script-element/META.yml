@@ -1,398 +1,397 @@
 links:
-- product: firefox
-  results:
-  - subtest: Non-synthetic errors for same-origin scripts redirected to a cross-origin
-      URL and redirected back to same-origin should be muted
-    test: muted-errors.sub.html
-  - subtest: Errors for cross-origin script should be muted even if the script is
-      once loaded as same-origin
-    test: muted-errors.sub.html
-  - subtest: Errors for cross-origin scripts redirected to a same-origin url should
-      be muted
-    test: muted-errors.sub.html
-  - subtest: Syntax error for same-origin script redirected to a cross-origin URL
-      and redirected back to same-origin should be muted
-    test: muted-errors.sub.html
-  - subtest: Errors for cross-origin script should be muted
-    test: muted-errors.sub.html
-  - subtest: Errors for same-origin scripts redirected to a cross-origin url and redirected
-      back to same-origin should be muted
-    test: muted-errors.sub.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1648828
-- product: firefox
-  results:
-  - subtest: Modify inline script element's text after prepare-a-script before evaluation
-    test: script-text-modifications.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1651092
-- product: chrome
-  results:
-  - status: FAIL
-    test: script-charset-01.html
-  url: https://crbug.com/651762
-- product: chrome
-  results:
-  - test: script-type-and-language-empty.html
-  url: https://bugs.chromium.org/p/chromium/issues/detail?id=1234521
-- product: chrome
-  results:
-  - test: script-onerror-insertion-point-2.html
-  url: https://bugs.chromium.org/p/chromium/issues/detail?id=642224
-- product: firefox
-  results:
-  - subtest: Script should run with type="application/ecmascript "
-    test: script-type-and-language-js-svg.svg
-  - subtest: Script should run with type="application/javascript "
-    test: script-type-and-language-js-svg.svg
-  - subtest: Script should run with type="application/x-ecmascript "
-    test: script-type-and-language-js-svg.svg
-  - subtest: Script should run with type="application/x-javascript "
-    test: script-type-and-language-js-svg.svg
-  - subtest: Script should run with type=" application/ecmascript"
-    test: script-type-and-language-js-svg.svg
-  - subtest: Script should run with type=" application/javascript"
-    test: script-type-and-language-js-svg.svg
-  - subtest: Script should run with type=" application/x-ecmascript"
-    test: script-type-and-language-js-svg.svg
-  - subtest: Script should run with type=" application/x-javascript"
-    test: script-type-and-language-js-svg.svg
-  - subtest: Script should run with type="application/ecmascript\t"
-    test: script-type-and-language-js-svg.svg
-  - subtest: Script should run with type="application/javascript\t"
-    test: script-type-and-language-js-svg.svg
-  - subtest: Script should run with type="application/x-ecmascript\t"
-    test: script-type-and-language-js-svg.svg
-  - subtest: Script should run with type="application/x-javascript\t"
-    test: script-type-and-language-js-svg.svg
-  - subtest: Script should run with type="\tapplication/ecmascript"
-    test: script-type-and-language-js-svg.svg
-  - subtest: Script should run with type="\tapplication/javascript"
-    test: script-type-and-language-js-svg.svg
-  - subtest: Script should run with type="\tapplication/x-ecmascript"
-    test: script-type-and-language-js-svg.svg
-  - subtest: Script should run with type="\tapplication/x-javascript"
-    test: script-type-and-language-js-svg.svg
-  - subtest: Script should run with type="application/ecmascript\n"
-    test: script-type-and-language-js-svg.svg
-  - subtest: Script should run with type="application/javascript\n"
-    test: script-type-and-language-js-svg.svg
-  - subtest: Script should run with type="application/x-ecmascript\n"
-    test: script-type-and-language-js-svg.svg
-  - subtest: Script should run with type="application/x-javascript\n"
-    test: script-type-and-language-js-svg.svg
-  - subtest: Script should run with type="\napplication/ecmascript"
-    test: script-type-and-language-js-svg.svg
-  - subtest: Script should run with type="\napplication/javascript"
-    test: script-type-and-language-js-svg.svg
-  - subtest: Script should run with type="\napplication/x-ecmascript"
-    test: script-type-and-language-js-svg.svg
-  - subtest: Script should run with type="\napplication/x-javascript"
-    test: script-type-and-language-js-svg.svg
-  - subtest: Script should run with type="application/ecmascript\r"
-    test: script-type-and-language-js-svg.svg
-  - subtest: Script should run with type="application/javascript\r"
-    test: script-type-and-language-js-svg.svg
-  - subtest: Script should run with type="application/x-ecmascript\r"
-    test: script-type-and-language-js-svg.svg
-  - subtest: Script should run with type="application/x-javascript\r"
-    test: script-type-and-language-js-svg.svg
-  - subtest: Script should run with type="\rapplication/ecmascript"
-    test: script-type-and-language-js-svg.svg
-  - subtest: Script should run with type="\rapplication/javascript"
-    test: script-type-and-language-js-svg.svg
-  - subtest: Script should run with type="\rapplication/x-ecmascript"
-    test: script-type-and-language-js-svg.svg
-  - subtest: Script should run with type="\rapplication/x-javascript"
-    test: script-type-and-language-js-svg.svg
-  - subtest: Script should run with type="application/ecmascript\f"
-    test: script-type-and-language-js-svg.svg
-  - subtest: Script should run with type="application/javascript\f"
-    test: script-type-and-language-js-svg.svg
-  - subtest: Script should run with type="application/x-ecmascript\f"
-    test: script-type-and-language-js-svg.svg
-  - subtest: Script should run with type="application/x-javascript\f"
-    test: script-type-and-language-js-svg.svg
-  - subtest: Script should run with type="\fapplication/ecmascript"
-    test: script-type-and-language-js-svg.svg
-  - subtest: Script should run with type="\fapplication/javascript"
-    test: script-type-and-language-js-svg.svg
-  - subtest: Script should run with type="\fapplication/x-ecmascript"
-    test: script-type-and-language-js-svg.svg
-  - subtest: Script should run with type="\fapplication/x-javascript"
-    test: script-type-and-language-js-svg.svg
-  - subtest: Script should run with type="text/ecmascript "
-    test: script-type-and-language-js-svg.svg
-  - subtest: Script should run with type="text/javascript "
-    test: script-type-and-language-js-svg.svg
-  - subtest: Script should run with type="text/javascript1.0 "
-    test: script-type-and-language-js-svg.svg
-  - subtest: Script should run with type="text/javascript1.1 "
-    test: script-type-and-language-js-svg.svg
-  - subtest: Script should run with type="text/javascript1.2 "
-    test: script-type-and-language-js-svg.svg
-  - subtest: Script should run with type="text/javascript1.3 "
-    test: script-type-and-language-js-svg.svg
-  - subtest: Script should run with type="text/javascript1.4 "
-    test: script-type-and-language-js-svg.svg
-  - subtest: Script should run with type="text/javascript1.5 "
-    test: script-type-and-language-js-svg.svg
-  - subtest: Script should run with type="text/jscript "
-    test: script-type-and-language-js-svg.svg
-  - subtest: Script should run with type="text/livescript "
-    test: script-type-and-language-js-svg.svg
-  - subtest: Script should run with type="text/x-ecmascript "
-    test: script-type-and-language-js-svg.svg
-  - subtest: Script should run with type="text/x-javascript "
-    test: script-type-and-language-js-svg.svg
-  - subtest: Script should run with type=" text/ecmascript"
-    test: script-type-and-language-js-svg.svg
-  - subtest: Script should run with type=" text/javascript"
-    test: script-type-and-language-js-svg.svg
-  - subtest: Script should run with type=" text/javascript1.0"
-    test: script-type-and-language-js-svg.svg
-  - subtest: Script should run with type=" text/javascript1.1"
-    test: script-type-and-language-js-svg.svg
-  - subtest: Script should run with type=" text/javascript1.2"
-    test: script-type-and-language-js-svg.svg
-  - subtest: Script should run with type=" text/javascript1.3"
-    test: script-type-and-language-js-svg.svg
-  - subtest: Script should run with type=" text/javascript1.4"
-    test: script-type-and-language-js-svg.svg
-  - subtest: Script should run with type=" text/javascript1.5"
-    test: script-type-and-language-js-svg.svg
-  - subtest: Script should run with type=" text/jscript"
-    test: script-type-and-language-js-svg.svg
-  - subtest: Script should run with type=" text/livescript"
-    test: script-type-and-language-js-svg.svg
-  - subtest: Script should run with type=" text/x-ecmascript"
-    test: script-type-and-language-js-svg.svg
-  - subtest: Script should run with type=" text/x-javascript"
-    test: script-type-and-language-js-svg.svg
-  - subtest: Script should run with type="text/ecmascript\t"
-    test: script-type-and-language-js-svg.svg
-  - subtest: Script should run with type="text/javascript\t"
-    test: script-type-and-language-js-svg.svg
-  - subtest: Script should run with type="text/javascript1.0\t"
-    test: script-type-and-language-js-svg.svg
-  - subtest: Script should run with type="text/javascript1.1\t"
-    test: script-type-and-language-js-svg.svg
-  - subtest: Script should run with type="text/javascript1.2\t"
-    test: script-type-and-language-js-svg.svg
-  - subtest: Script should run with type="text/javascript1.3\t"
-    test: script-type-and-language-js-svg.svg
-  - subtest: Script should run with type="text/javascript1.4\t"
-    test: script-type-and-language-js-svg.svg
-  - subtest: Script should run with type="text/javascript1.5\t"
-    test: script-type-and-language-js-svg.svg
-  - subtest: Script should run with type="text/jscript\t"
-    test: script-type-and-language-js-svg.svg
-  - subtest: Script should run with type="text/livescript\t"
-    test: script-type-and-language-js-svg.svg
-  - subtest: Script should run with type="text/x-ecmascript\t"
-    test: script-type-and-language-js-svg.svg
-  - subtest: Script should run with type="text/x-javascript\t"
-    test: script-type-and-language-js-svg.svg
-  - subtest: Script should run with type="\ttext/ecmascript"
-    test: script-type-and-language-js-svg.svg
-  - subtest: Script should run with type="\ttext/javascript"
-    test: script-type-and-language-js-svg.svg
-  - subtest: Script should run with type="\ttext/javascript1.0"
-    test: script-type-and-language-js-svg.svg
-  - subtest: Script should run with type="\ttext/javascript1.1"
-    test: script-type-and-language-js-svg.svg
-  - subtest: Script should run with type="\ttext/javascript1.2"
-    test: script-type-and-language-js-svg.svg
-  - subtest: Script should run with type="\ttext/javascript1.3"
-    test: script-type-and-language-js-svg.svg
-  - subtest: Script should run with type="\ttext/javascript1.4"
-    test: script-type-and-language-js-svg.svg
-  - subtest: Script should run with type="\ttext/javascript1.5"
-    test: script-type-and-language-js-svg.svg
-  - subtest: Script should run with type="\ttext/jscript"
-    test: script-type-and-language-js-svg.svg
-  - subtest: Script should run with type="\ttext/livescript"
-    test: script-type-and-language-js-svg.svg
-  - subtest: Script should run with type="\ttext/x-ecmascript"
-    test: script-type-and-language-js-svg.svg
-  - subtest: Script should run with type="\ttext/x-javascript"
-    test: script-type-and-language-js-svg.svg
-  - subtest: Script should run with type="text/ecmascript\n"
-    test: script-type-and-language-js-svg.svg
-  - subtest: Script should run with type="text/javascript\n"
-    test: script-type-and-language-js-svg.svg
-  - subtest: Script should run with type="text/javascript1.0\n"
-    test: script-type-and-language-js-svg.svg
-  - subtest: Script should run with type="text/javascript1.1\n"
-    test: script-type-and-language-js-svg.svg
-  - subtest: Script should run with type="text/javascript1.2\n"
-    test: script-type-and-language-js-svg.svg
-  - subtest: Script should run with type="text/javascript1.3\n"
-    test: script-type-and-language-js-svg.svg
-  - subtest: Script should run with type="text/javascript1.4\n"
-    test: script-type-and-language-js-svg.svg
-  - subtest: Script should run with type="text/javascript1.5\n"
-    test: script-type-and-language-js-svg.svg
-  - subtest: Script should run with type="text/jscript\n"
-    test: script-type-and-language-js-svg.svg
-  - subtest: Script should run with type="text/livescript\n"
-    test: script-type-and-language-js-svg.svg
-  - subtest: Script should run with type="text/x-ecmascript\n"
-    test: script-type-and-language-js-svg.svg
-  - subtest: Script should run with type="text/x-javascript\n"
-    test: script-type-and-language-js-svg.svg
-  - subtest: Script should run with type="\ntext/ecmascript"
-    test: script-type-and-language-js-svg.svg
-  - subtest: Script should run with type="\ntext/javascript"
-    test: script-type-and-language-js-svg.svg
-  - subtest: Script should run with type="\ntext/javascript1.0"
-    test: script-type-and-language-js-svg.svg
-  - subtest: Script should run with type="\ntext/javascript1.1"
-    test: script-type-and-language-js-svg.svg
-  - subtest: Script should run with type="\ntext/javascript1.2"
-    test: script-type-and-language-js-svg.svg
-  - subtest: Script should run with type="\ntext/javascript1.3"
-    test: script-type-and-language-js-svg.svg
-  - subtest: Script should run with type="\ntext/javascript1.4"
-    test: script-type-and-language-js-svg.svg
-  - subtest: Script should run with type="\ntext/javascript1.5"
-    test: script-type-and-language-js-svg.svg
-  - subtest: Script should run with type="\ntext/jscript"
-    test: script-type-and-language-js-svg.svg
-  - subtest: Script should run with type="\ntext/livescript"
-    test: script-type-and-language-js-svg.svg
-  - subtest: Script should run with type="\ntext/x-ecmascript"
-    test: script-type-and-language-js-svg.svg
-  - subtest: Script should run with type="\ntext/x-javascript"
-    test: script-type-and-language-js-svg.svg
-  - subtest: Script should run with type="text/ecmascript\r"
-    test: script-type-and-language-js-svg.svg
-  - subtest: Script should run with type="text/javascript\r"
-    test: script-type-and-language-js-svg.svg
-  - subtest: Script should run with type="text/javascript1.0\r"
-    test: script-type-and-language-js-svg.svg
-  - subtest: Script should run with type="text/javascript1.1\r"
-    test: script-type-and-language-js-svg.svg
-  - subtest: Script should run with type="text/javascript1.2\r"
-    test: script-type-and-language-js-svg.svg
-  - subtest: Script should run with type="text/javascript1.3\r"
-    test: script-type-and-language-js-svg.svg
-  - subtest: Script should run with type="text/javascript1.4\r"
-    test: script-type-and-language-js-svg.svg
-  - subtest: Script should run with type="text/javascript1.5\r"
-    test: script-type-and-language-js-svg.svg
-  - subtest: Script should run with type="text/jscript\r"
-    test: script-type-and-language-js-svg.svg
-  - subtest: Script should run with type="text/livescript\r"
-    test: script-type-and-language-js-svg.svg
-  - subtest: Script should run with type="text/x-ecmascript\r"
-    test: script-type-and-language-js-svg.svg
-  - subtest: Script should run with type="text/x-javascript\r"
-    test: script-type-and-language-js-svg.svg
-  - subtest: Script should run with type="\rtext/ecmascript"
-    test: script-type-and-language-js-svg.svg
-  - subtest: Script should run with type="\rtext/javascript"
-    test: script-type-and-language-js-svg.svg
-  - subtest: Script should run with type="\rtext/javascript1.0"
-    test: script-type-and-language-js-svg.svg
-  - subtest: Script should run with type="\rtext/javascript1.1"
-    test: script-type-and-language-js-svg.svg
-  - subtest: Script should run with type="\rtext/javascript1.2"
-    test: script-type-and-language-js-svg.svg
-  - subtest: Script should run with type="\rtext/javascript1.3"
-    test: script-type-and-language-js-svg.svg
-  - subtest: Script should run with type="\rtext/javascript1.4"
-    test: script-type-and-language-js-svg.svg
-  - subtest: Script should run with type="\rtext/javascript1.5"
-    test: script-type-and-language-js-svg.svg
-  - subtest: Script should run with type="\rtext/jscript"
-    test: script-type-and-language-js-svg.svg
-  - subtest: Script should run with type="\rtext/livescript"
-    test: script-type-and-language-js-svg.svg
-  - subtest: Script should run with type="\rtext/x-ecmascript"
-    test: script-type-and-language-js-svg.svg
-  - subtest: Script should run with type="\rtext/x-javascript"
-    test: script-type-and-language-js-svg.svg
-  - subtest: Script should run with type="text/ecmascript\f"
-    test: script-type-and-language-js-svg.svg
-  - subtest: Script should run with type="text/javascript\f"
-    test: script-type-and-language-js-svg.svg
-  - subtest: Script should run with type="text/javascript1.0\f"
-    test: script-type-and-language-js-svg.svg
-  - subtest: Script should run with type="text/javascript1.1\f"
-    test: script-type-and-language-js-svg.svg
-  - subtest: Script should run with type="text/javascript1.2\f"
-    test: script-type-and-language-js-svg.svg
-  - subtest: Script should run with type="text/javascript1.3\f"
-    test: script-type-and-language-js-svg.svg
-  - subtest: Script should run with type="text/javascript1.4\f"
-    test: script-type-and-language-js-svg.svg
-  - subtest: Script should run with type="text/javascript1.5\f"
-    test: script-type-and-language-js-svg.svg
-  - subtest: Script should run with type="text/jscript\f"
-    test: script-type-and-language-js-svg.svg
-  - subtest: Script should run with type="text/livescript\f"
-    test: script-type-and-language-js-svg.svg
-  - subtest: Script should run with type="text/x-ecmascript\f"
-    test: script-type-and-language-js-svg.svg
-  - subtest: Script should run with type="text/x-javascript\f"
-    test: script-type-and-language-js-svg.svg
-  - subtest: Script should run with type="\ftext/ecmascript"
-    test: script-type-and-language-js-svg.svg
-  - subtest: Script should run with type="\ftext/javascript"
-    test: script-type-and-language-js-svg.svg
-  - subtest: Script should run with type="\ftext/javascript1.0"
-    test: script-type-and-language-js-svg.svg
-  - subtest: Script should run with type="\ftext/javascript1.1"
-    test: script-type-and-language-js-svg.svg
-  - subtest: Script should run with type="\ftext/javascript1.2"
-    test: script-type-and-language-js-svg.svg
-  - subtest: Script should run with type="\ftext/javascript1.3"
-    test: script-type-and-language-js-svg.svg
-  - subtest: Script should run with type="\ftext/javascript1.4"
-    test: script-type-and-language-js-svg.svg
-  - subtest: Script should run with type="\ftext/javascript1.5"
-    test: script-type-and-language-js-svg.svg
-  - subtest: Script should run with type="\ftext/jscript"
-    test: script-type-and-language-js-svg.svg
-  - subtest: Script should run with type="\ftext/livescript"
-    test: script-type-and-language-js-svg.svg
-  - subtest: Script should run with type="\ftext/x-ecmascript"
-    test: script-type-and-language-js-svg.svg
-  - subtest: Script should run with type="\ftext/x-javascript"
-    test: script-type-and-language-js-svg.svg
-  - subtest: Script shouldn't run with type=" "
-    test: script-type-and-language-js-xhtml.xhtml
-  - subtest: Script should run with language="ecmascript"
-    test: script-type-and-language-js-xhtml.xhtml
-  - subtest: Script should run with language="jscript"
-    test: script-type-and-language-js-xhtml.xhtml
-  - subtest: Script should run with language="x-ecmascript"
-    test: script-type-and-language-js-xhtml.xhtml
-  - subtest: Script should run with language="x-javascript"
-    test: script-type-and-language-js-xhtml.xhtml
-  - subtest: Script should run with language="ECMASCRIPT"
-    test: script-type-and-language-js-xhtml.xhtml
-  - subtest: Script should run with language="JSCRIPT"
-    test: script-type-and-language-js-xhtml.xhtml
-  - subtest: Script should run with language="X-ECMASCRIPT"
-    test: script-type-and-language-js-xhtml.xhtml
-  - subtest: Script should run with language="X-JAVASCRIPT"
-    test: script-type-and-language-js-xhtml.xhtml
-  - subtest: Script shouldn't run with type=" "
-    test: script-type-and-language-js.html
-  - subtest: Script should run with language="ecmascript"
-    test: script-type-and-language-js.html
-  - subtest: Script should run with language="jscript"
-    test: script-type-and-language-js.html
-  - subtest: Script should run with language="x-ecmascript"
-    test: script-type-and-language-js.html
-  - subtest: Script should run with language="x-javascript"
-    test: script-type-and-language-js.html
-  - subtest: Script should run with language="ECMASCRIPT"
-    test: script-type-and-language-js.html
-  - subtest: Script should run with language="JSCRIPT"
-    test: script-type-and-language-js.html
-  - subtest: Script should run with language="X-ECMASCRIPT"
-    test: script-type-and-language-js.html
-  - subtest: Script should run with language="X-JAVASCRIPT"
-    test: script-type-and-language-js.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1769709
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1648828
+      results:
+        - test: muted-errors.sub.html
+          subtest: Non-synthetic errors for same-origin scripts redirected to a cross-origin URL and redirected back to same-origin should be muted
+        - test: muted-errors.sub.html
+          subtest: Errors for cross-origin script should be muted even if the script is once loaded as same-origin
+        - test: muted-errors.sub.html
+          subtest: Errors for cross-origin scripts redirected to a same-origin url should be muted
+        - test: muted-errors.sub.html
+          subtest: Syntax error for same-origin script redirected to a cross-origin URL and redirected back to same-origin should be muted
+        - test: muted-errors.sub.html
+          subtest: Errors for cross-origin script should be muted
+        - test: muted-errors.sub.html
+          subtest: Errors for same-origin scripts redirected to a cross-origin url and redirected back to same-origin should be muted
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1651092
+      results:
+        - test: script-text-modifications.html
+          subtest: Modify inline script element's text after prepare-a-script before evaluation
+    - product: chrome
+      url: https://crbug.com/651762
+      results:
+        - test: script-charset-01.html
+          status: FAIL
+    - product: chrome
+      url: https://bugs.chromium.org/p/chromium/issues/detail?id=1234521
+      results:
+        - test: script-type-and-language-empty.html
+    - product: chrome
+      url: https://bugs.chromium.org/p/chromium/issues/detail?id=642224
+      results:
+        - test: script-onerror-insertion-point-2.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1769709
+      results:
+        - test: script-type-and-language-js-svg.svg
+          subtest: Script should run with type="application/ecmascript "
+        - test: script-type-and-language-js-svg.svg
+          subtest: Script should run with type="application/javascript "
+        - test: script-type-and-language-js-svg.svg
+          subtest: Script should run with type="application/x-ecmascript "
+        - test: script-type-and-language-js-svg.svg
+          subtest: Script should run with type="application/x-javascript "
+        - test: script-type-and-language-js-svg.svg
+          subtest: Script should run with type=" application/ecmascript"
+        - test: script-type-and-language-js-svg.svg
+          subtest: Script should run with type=" application/javascript"
+        - test: script-type-and-language-js-svg.svg
+          subtest: Script should run with type=" application/x-ecmascript"
+        - test: script-type-and-language-js-svg.svg
+          subtest: Script should run with type=" application/x-javascript"
+        - test: script-type-and-language-js-svg.svg
+          subtest: Script should run with type="application/ecmascript\t"
+        - test: script-type-and-language-js-svg.svg
+          subtest: Script should run with type="application/javascript\t"
+        - test: script-type-and-language-js-svg.svg
+          subtest: Script should run with type="application/x-ecmascript\t"
+        - test: script-type-and-language-js-svg.svg
+          subtest: Script should run with type="application/x-javascript\t"
+        - test: script-type-and-language-js-svg.svg
+          subtest: Script should run with type="\tapplication/ecmascript"
+        - test: script-type-and-language-js-svg.svg
+          subtest: Script should run with type="\tapplication/javascript"
+        - test: script-type-and-language-js-svg.svg
+          subtest: Script should run with type="\tapplication/x-ecmascript"
+        - test: script-type-and-language-js-svg.svg
+          subtest: Script should run with type="\tapplication/x-javascript"
+        - test: script-type-and-language-js-svg.svg
+          subtest: Script should run with type="application/ecmascript\n"
+        - test: script-type-and-language-js-svg.svg
+          subtest: Script should run with type="application/javascript\n"
+        - test: script-type-and-language-js-svg.svg
+          subtest: Script should run with type="application/x-ecmascript\n"
+        - test: script-type-and-language-js-svg.svg
+          subtest: Script should run with type="application/x-javascript\n"
+        - test: script-type-and-language-js-svg.svg
+          subtest: Script should run with type="\napplication/ecmascript"
+        - test: script-type-and-language-js-svg.svg
+          subtest: Script should run with type="\napplication/javascript"
+        - test: script-type-and-language-js-svg.svg
+          subtest: Script should run with type="\napplication/x-ecmascript"
+        - test: script-type-and-language-js-svg.svg
+          subtest: Script should run with type="\napplication/x-javascript"
+        - test: script-type-and-language-js-svg.svg
+          subtest: Script should run with type="application/ecmascript\r"
+        - test: script-type-and-language-js-svg.svg
+          subtest: Script should run with type="application/javascript\r"
+        - test: script-type-and-language-js-svg.svg
+          subtest: Script should run with type="application/x-ecmascript\r"
+        - test: script-type-and-language-js-svg.svg
+          subtest: Script should run with type="application/x-javascript\r"
+        - test: script-type-and-language-js-svg.svg
+          subtest: Script should run with type="\rapplication/ecmascript"
+        - test: script-type-and-language-js-svg.svg
+          subtest: Script should run with type="\rapplication/javascript"
+        - test: script-type-and-language-js-svg.svg
+          subtest: Script should run with type="\rapplication/x-ecmascript"
+        - test: script-type-and-language-js-svg.svg
+          subtest: Script should run with type="\rapplication/x-javascript"
+        - test: script-type-and-language-js-svg.svg
+          subtest: Script should run with type="application/ecmascript\f"
+        - test: script-type-and-language-js-svg.svg
+          subtest: Script should run with type="application/javascript\f"
+        - test: script-type-and-language-js-svg.svg
+          subtest: Script should run with type="application/x-ecmascript\f"
+        - test: script-type-and-language-js-svg.svg
+          subtest: Script should run with type="application/x-javascript\f"
+        - test: script-type-and-language-js-svg.svg
+          subtest: Script should run with type="\fapplication/ecmascript"
+        - test: script-type-and-language-js-svg.svg
+          subtest: Script should run with type="\fapplication/javascript"
+        - test: script-type-and-language-js-svg.svg
+          subtest: Script should run with type="\fapplication/x-ecmascript"
+        - test: script-type-and-language-js-svg.svg
+          subtest: Script should run with type="\fapplication/x-javascript"
+        - test: script-type-and-language-js-svg.svg
+          subtest: Script should run with type="text/ecmascript "
+        - test: script-type-and-language-js-svg.svg
+          subtest: Script should run with type="text/javascript "
+        - test: script-type-and-language-js-svg.svg
+          subtest: Script should run with type="text/javascript1.0 "
+        - test: script-type-and-language-js-svg.svg
+          subtest: Script should run with type="text/javascript1.1 "
+        - test: script-type-and-language-js-svg.svg
+          subtest: Script should run with type="text/javascript1.2 "
+        - test: script-type-and-language-js-svg.svg
+          subtest: Script should run with type="text/javascript1.3 "
+        - test: script-type-and-language-js-svg.svg
+          subtest: Script should run with type="text/javascript1.4 "
+        - test: script-type-and-language-js-svg.svg
+          subtest: Script should run with type="text/javascript1.5 "
+        - test: script-type-and-language-js-svg.svg
+          subtest: Script should run with type="text/jscript "
+        - test: script-type-and-language-js-svg.svg
+          subtest: Script should run with type="text/livescript "
+        - test: script-type-and-language-js-svg.svg
+          subtest: Script should run with type="text/x-ecmascript "
+        - test: script-type-and-language-js-svg.svg
+          subtest: Script should run with type="text/x-javascript "
+        - test: script-type-and-language-js-svg.svg
+          subtest: Script should run with type=" text/ecmascript"
+        - test: script-type-and-language-js-svg.svg
+          subtest: Script should run with type=" text/javascript"
+        - test: script-type-and-language-js-svg.svg
+          subtest: Script should run with type=" text/javascript1.0"
+        - test: script-type-and-language-js-svg.svg
+          subtest: Script should run with type=" text/javascript1.1"
+        - test: script-type-and-language-js-svg.svg
+          subtest: Script should run with type=" text/javascript1.2"
+        - test: script-type-and-language-js-svg.svg
+          subtest: Script should run with type=" text/javascript1.3"
+        - test: script-type-and-language-js-svg.svg
+          subtest: Script should run with type=" text/javascript1.4"
+        - test: script-type-and-language-js-svg.svg
+          subtest: Script should run with type=" text/javascript1.5"
+        - test: script-type-and-language-js-svg.svg
+          subtest: Script should run with type=" text/jscript"
+        - test: script-type-and-language-js-svg.svg
+          subtest: Script should run with type=" text/livescript"
+        - test: script-type-and-language-js-svg.svg
+          subtest: Script should run with type=" text/x-ecmascript"
+        - test: script-type-and-language-js-svg.svg
+          subtest: Script should run with type=" text/x-javascript"
+        - test: script-type-and-language-js-svg.svg
+          subtest: Script should run with type="text/ecmascript\t"
+        - test: script-type-and-language-js-svg.svg
+          subtest: Script should run with type="text/javascript\t"
+        - test: script-type-and-language-js-svg.svg
+          subtest: Script should run with type="text/javascript1.0\t"
+        - test: script-type-and-language-js-svg.svg
+          subtest: Script should run with type="text/javascript1.1\t"
+        - test: script-type-and-language-js-svg.svg
+          subtest: Script should run with type="text/javascript1.2\t"
+        - test: script-type-and-language-js-svg.svg
+          subtest: Script should run with type="text/javascript1.3\t"
+        - test: script-type-and-language-js-svg.svg
+          subtest: Script should run with type="text/javascript1.4\t"
+        - test: script-type-and-language-js-svg.svg
+          subtest: Script should run with type="text/javascript1.5\t"
+        - test: script-type-and-language-js-svg.svg
+          subtest: Script should run with type="text/jscript\t"
+        - test: script-type-and-language-js-svg.svg
+          subtest: Script should run with type="text/livescript\t"
+        - test: script-type-and-language-js-svg.svg
+          subtest: Script should run with type="text/x-ecmascript\t"
+        - test: script-type-and-language-js-svg.svg
+          subtest: Script should run with type="text/x-javascript\t"
+        - test: script-type-and-language-js-svg.svg
+          subtest: Script should run with type="\ttext/ecmascript"
+        - test: script-type-and-language-js-svg.svg
+          subtest: Script should run with type="\ttext/javascript"
+        - test: script-type-and-language-js-svg.svg
+          subtest: Script should run with type="\ttext/javascript1.0"
+        - test: script-type-and-language-js-svg.svg
+          subtest: Script should run with type="\ttext/javascript1.1"
+        - test: script-type-and-language-js-svg.svg
+          subtest: Script should run with type="\ttext/javascript1.2"
+        - test: script-type-and-language-js-svg.svg
+          subtest: Script should run with type="\ttext/javascript1.3"
+        - test: script-type-and-language-js-svg.svg
+          subtest: Script should run with type="\ttext/javascript1.4"
+        - test: script-type-and-language-js-svg.svg
+          subtest: Script should run with type="\ttext/javascript1.5"
+        - test: script-type-and-language-js-svg.svg
+          subtest: Script should run with type="\ttext/jscript"
+        - test: script-type-and-language-js-svg.svg
+          subtest: Script should run with type="\ttext/livescript"
+        - test: script-type-and-language-js-svg.svg
+          subtest: Script should run with type="\ttext/x-ecmascript"
+        - test: script-type-and-language-js-svg.svg
+          subtest: Script should run with type="\ttext/x-javascript"
+        - test: script-type-and-language-js-svg.svg
+          subtest: Script should run with type="text/ecmascript\n"
+        - test: script-type-and-language-js-svg.svg
+          subtest: Script should run with type="text/javascript\n"
+        - test: script-type-and-language-js-svg.svg
+          subtest: Script should run with type="text/javascript1.0\n"
+        - test: script-type-and-language-js-svg.svg
+          subtest: Script should run with type="text/javascript1.1\n"
+        - test: script-type-and-language-js-svg.svg
+          subtest: Script should run with type="text/javascript1.2\n"
+        - test: script-type-and-language-js-svg.svg
+          subtest: Script should run with type="text/javascript1.3\n"
+        - test: script-type-and-language-js-svg.svg
+          subtest: Script should run with type="text/javascript1.4\n"
+        - test: script-type-and-language-js-svg.svg
+          subtest: Script should run with type="text/javascript1.5\n"
+        - test: script-type-and-language-js-svg.svg
+          subtest: Script should run with type="text/jscript\n"
+        - test: script-type-and-language-js-svg.svg
+          subtest: Script should run with type="text/livescript\n"
+        - test: script-type-and-language-js-svg.svg
+          subtest: Script should run with type="text/x-ecmascript\n"
+        - test: script-type-and-language-js-svg.svg
+          subtest: Script should run with type="text/x-javascript\n"
+        - test: script-type-and-language-js-svg.svg
+          subtest: Script should run with type="\ntext/ecmascript"
+        - test: script-type-and-language-js-svg.svg
+          subtest: Script should run with type="\ntext/javascript"
+        - test: script-type-and-language-js-svg.svg
+          subtest: Script should run with type="\ntext/javascript1.0"
+        - test: script-type-and-language-js-svg.svg
+          subtest: Script should run with type="\ntext/javascript1.1"
+        - test: script-type-and-language-js-svg.svg
+          subtest: Script should run with type="\ntext/javascript1.2"
+        - test: script-type-and-language-js-svg.svg
+          subtest: Script should run with type="\ntext/javascript1.3"
+        - test: script-type-and-language-js-svg.svg
+          subtest: Script should run with type="\ntext/javascript1.4"
+        - test: script-type-and-language-js-svg.svg
+          subtest: Script should run with type="\ntext/javascript1.5"
+        - test: script-type-and-language-js-svg.svg
+          subtest: Script should run with type="\ntext/jscript"
+        - test: script-type-and-language-js-svg.svg
+          subtest: Script should run with type="\ntext/livescript"
+        - test: script-type-and-language-js-svg.svg
+          subtest: Script should run with type="\ntext/x-ecmascript"
+        - test: script-type-and-language-js-svg.svg
+          subtest: Script should run with type="\ntext/x-javascript"
+        - test: script-type-and-language-js-svg.svg
+          subtest: Script should run with type="text/ecmascript\r"
+        - test: script-type-and-language-js-svg.svg
+          subtest: Script should run with type="text/javascript\r"
+        - test: script-type-and-language-js-svg.svg
+          subtest: Script should run with type="text/javascript1.0\r"
+        - test: script-type-and-language-js-svg.svg
+          subtest: Script should run with type="text/javascript1.1\r"
+        - test: script-type-and-language-js-svg.svg
+          subtest: Script should run with type="text/javascript1.2\r"
+        - test: script-type-and-language-js-svg.svg
+          subtest: Script should run with type="text/javascript1.3\r"
+        - test: script-type-and-language-js-svg.svg
+          subtest: Script should run with type="text/javascript1.4\r"
+        - test: script-type-and-language-js-svg.svg
+          subtest: Script should run with type="text/javascript1.5\r"
+        - test: script-type-and-language-js-svg.svg
+          subtest: Script should run with type="text/jscript\r"
+        - test: script-type-and-language-js-svg.svg
+          subtest: Script should run with type="text/livescript\r"
+        - test: script-type-and-language-js-svg.svg
+          subtest: Script should run with type="text/x-ecmascript\r"
+        - test: script-type-and-language-js-svg.svg
+          subtest: Script should run with type="text/x-javascript\r"
+        - test: script-type-and-language-js-svg.svg
+          subtest: Script should run with type="\rtext/ecmascript"
+        - test: script-type-and-language-js-svg.svg
+          subtest: Script should run with type="\rtext/javascript"
+        - test: script-type-and-language-js-svg.svg
+          subtest: Script should run with type="\rtext/javascript1.0"
+        - test: script-type-and-language-js-svg.svg
+          subtest: Script should run with type="\rtext/javascript1.1"
+        - test: script-type-and-language-js-svg.svg
+          subtest: Script should run with type="\rtext/javascript1.2"
+        - test: script-type-and-language-js-svg.svg
+          subtest: Script should run with type="\rtext/javascript1.3"
+        - test: script-type-and-language-js-svg.svg
+          subtest: Script should run with type="\rtext/javascript1.4"
+        - test: script-type-and-language-js-svg.svg
+          subtest: Script should run with type="\rtext/javascript1.5"
+        - test: script-type-and-language-js-svg.svg
+          subtest: Script should run with type="\rtext/jscript"
+        - test: script-type-and-language-js-svg.svg
+          subtest: Script should run with type="\rtext/livescript"
+        - test: script-type-and-language-js-svg.svg
+          subtest: Script should run with type="\rtext/x-ecmascript"
+        - test: script-type-and-language-js-svg.svg
+          subtest: Script should run with type="\rtext/x-javascript"
+        - test: script-type-and-language-js-svg.svg
+          subtest: Script should run with type="text/ecmascript\f"
+        - test: script-type-and-language-js-svg.svg
+          subtest: Script should run with type="text/javascript\f"
+        - test: script-type-and-language-js-svg.svg
+          subtest: Script should run with type="text/javascript1.0\f"
+        - test: script-type-and-language-js-svg.svg
+          subtest: Script should run with type="text/javascript1.1\f"
+        - test: script-type-and-language-js-svg.svg
+          subtest: Script should run with type="text/javascript1.2\f"
+        - test: script-type-and-language-js-svg.svg
+          subtest: Script should run with type="text/javascript1.3\f"
+        - test: script-type-and-language-js-svg.svg
+          subtest: Script should run with type="text/javascript1.4\f"
+        - test: script-type-and-language-js-svg.svg
+          subtest: Script should run with type="text/javascript1.5\f"
+        - test: script-type-and-language-js-svg.svg
+          subtest: Script should run with type="text/jscript\f"
+        - test: script-type-and-language-js-svg.svg
+          subtest: Script should run with type="text/livescript\f"
+        - test: script-type-and-language-js-svg.svg
+          subtest: Script should run with type="text/x-ecmascript\f"
+        - test: script-type-and-language-js-svg.svg
+          subtest: Script should run with type="text/x-javascript\f"
+        - test: script-type-and-language-js-svg.svg
+          subtest: Script should run with type="\ftext/ecmascript"
+        - test: script-type-and-language-js-svg.svg
+          subtest: Script should run with type="\ftext/javascript"
+        - test: script-type-and-language-js-svg.svg
+          subtest: Script should run with type="\ftext/javascript1.0"
+        - test: script-type-and-language-js-svg.svg
+          subtest: Script should run with type="\ftext/javascript1.1"
+        - test: script-type-and-language-js-svg.svg
+          subtest: Script should run with type="\ftext/javascript1.2"
+        - test: script-type-and-language-js-svg.svg
+          subtest: Script should run with type="\ftext/javascript1.3"
+        - test: script-type-and-language-js-svg.svg
+          subtest: Script should run with type="\ftext/javascript1.4"
+        - test: script-type-and-language-js-svg.svg
+          subtest: Script should run with type="\ftext/javascript1.5"
+        - test: script-type-and-language-js-svg.svg
+          subtest: Script should run with type="\ftext/jscript"
+        - test: script-type-and-language-js-svg.svg
+          subtest: Script should run with type="\ftext/livescript"
+        - test: script-type-and-language-js-svg.svg
+          subtest: Script should run with type="\ftext/x-ecmascript"
+        - test: script-type-and-language-js-svg.svg
+          subtest: Script should run with type="\ftext/x-javascript"
+        - test: script-type-and-language-js-xhtml.xhtml
+          subtest: Script shouldn't run with type=" "
+        - test: script-type-and-language-js-xhtml.xhtml
+          subtest: Script should run with language="ecmascript"
+        - test: script-type-and-language-js-xhtml.xhtml
+          subtest: Script should run with language="jscript"
+        - test: script-type-and-language-js-xhtml.xhtml
+          subtest: Script should run with language="x-ecmascript"
+        - test: script-type-and-language-js-xhtml.xhtml
+          subtest: Script should run with language="x-javascript"
+        - test: script-type-and-language-js-xhtml.xhtml
+          subtest: Script should run with language="ECMASCRIPT"
+        - test: script-type-and-language-js-xhtml.xhtml
+          subtest: Script should run with language="JSCRIPT"
+        - test: script-type-and-language-js-xhtml.xhtml
+          subtest: Script should run with language="X-ECMASCRIPT"
+        - test: script-type-and-language-js-xhtml.xhtml
+          subtest: Script should run with language="X-JAVASCRIPT"
+        - test: script-type-and-language-js.html
+          subtest: Script shouldn't run with type=" "
+        - test: script-type-and-language-js.html
+          subtest: Script should run with language="ecmascript"
+        - test: script-type-and-language-js.html
+          subtest: Script should run with language="jscript"
+        - test: script-type-and-language-js.html
+          subtest: Script should run with language="x-ecmascript"
+        - test: script-type-and-language-js.html
+          subtest: Script should run with language="x-javascript"
+        - test: script-type-and-language-js.html
+          subtest: Script should run with language="ECMASCRIPT"
+        - test: script-type-and-language-js.html
+          subtest: Script should run with language="JSCRIPT"
+        - test: script-type-and-language-js.html
+          subtest: Script should run with language="X-ECMASCRIPT"
+        - test: script-type-and-language-js.html
+          subtest: Script should run with language="X-JAVASCRIPT"
+    - product: chrome
+      url: https://bugs.chromium.org/p/chromium/issues/detail?id=611136
+      results:
+        - test: script-defer-xhtml.xhtml
