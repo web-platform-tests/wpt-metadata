@@ -20,3 +20,24 @@ links:
       5)) otherCounter calc(15 + (sign(2cqw - 10px) * 5))'
     test: counter-set-computed.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1915980
+- product: firefox
+  results:
+  - subtest: e.style['counter-increment'] = "section calc(-2.5)" should set the property
+      value
+    test: counter-increment-valid.html
+  - subtest: e.style['counter-increment'] = "section calc(10 + (5 * sign(2cqw - 10px)))"
+      should set the property value
+    test: counter-increment-valid.html
+  - subtest: e.style['counter-reset'] = "section calc(-2.5)" should set the property
+      value
+    test: counter-reset-valid.html
+  - subtest: e.style['counter-reset'] = "section calc(10 + (5 * sign(2cqw - 10px)))"
+      should set the property value
+    test: counter-reset-valid.html
+  - subtest: e.style['counter-set'] = "section calc(-2.5)" should set the property
+      value
+    test: counter-set-valid.html
+  - subtest: e.style['counter-set'] = "section calc(10 + (5 * sign(2cqw - 10px)))"
+      should set the property value
+    test: counter-set-valid.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1939776
