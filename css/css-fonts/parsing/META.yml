@@ -379,3 +379,28 @@ links:
       * 5))'
     test: font-feature-settings-computed.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1915978
+- product: firefox
+  results:
+  - subtest: Property font-size-adjust value 'cap-height calc(10 + (sign(20cqw - 10px)
+      * 5))'
+    test: font-size-adjust-computed.html
+  - subtest: e.style['font-size-adjust'] = "cap-height calc(10 + (sign(20cqw - 10px)
+      * 5))" should set the property value
+    test: font-size-adjust-valid.html
+  - subtest: Property font-stretch value 'calc(100% + (sign(20cqw - 10px) * 5%))'
+    test: font-stretch-computed.html
+  - subtest: e.style['font-stretch'] = "calc(100% + (sign(20cqw - 10px) * 5%))" should
+      set the property value
+    test: font-stretch-valid.html
+  - subtest: Property font-style value 'oblique calc(30deg + (sign(20cqw - 10px) *
+      5deg))'
+    test: font-style-computed.html
+  - subtest: e.style['font-style'] = "oblique calc(30deg + (sign(2cqw - 10px) * 5deg))"
+      should set the property value
+    test: font-style-valid.html
+  - subtest: Property font-weight value 'calc(100 + (sign(20cqw - 10px) * 5))'
+    test: font-weight-computed.html
+  - subtest: e.style['font-weight'] = "calc(100 + (sign(20cqw - 10px) * 5))" should
+      set the property value
+    test: font-weight-valid.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1939796
