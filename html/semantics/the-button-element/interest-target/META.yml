@@ -1,0 +1,33 @@
+links:
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1884065
+      results:
+        - test: interestelement-interface.tentative.html
+          subtest: interestTargetElement reflects interestee HTML element
+        - test: interestelement-interface.tentative.html
+          subtest: interestTargetElement reflects set value
+        - test: interestelement-interface.tentative.html
+          subtest: interestTargetElement reflects set value across shadow root into light dom
+        - test: interestelement-interface.tentative.html
+          subtest: interestTargetElement does not reflect set value inside shadowroot
+        - test: interestelement-interface.tentative.html
+          subtest: interestTargetElement does not reflect invalid value
+        - test: interestelement-interface.tentative.html
+          subtest: interestTargetElement throws error on assignment of non Element
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1890103
+      results:
+        - test: interestelement-interface.tentative.html
+          subtest: interestAction reflects '' when attribute not present
+        - test: interestelement-interface.tentative.html
+          subtest: interestAction reflects '' when attribute empty, setAttribute version
+        - test: interestelement-interface.tentative.html
+          subtest: interestAction reflects '' when attribute empty, IDL setter version
+        - test: interestelement-interface.tentative.html
+          subtest: interestAction reflects same casing
+        - test: interestelement-interface.tentative.html
+          subtest: interestAction reflects '' when attribute set to []
+        - test: interestelement-interface.tentative.html
+          subtest: interestAction reflects tostring value
+        - test: interestelement-interface.tentative.html
+          subtest: interestAction reflects tostring value 2

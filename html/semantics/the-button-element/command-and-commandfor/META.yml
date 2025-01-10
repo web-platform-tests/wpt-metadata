@@ -1,0 +1,158 @@
+links:
+    - product: safari
+      url: https://bugs.webkit.org/show_bug.cgi?id=262840
+      results:
+        - test: event-interface.tentative.html
+        - test: button-event-dispatch.tentative.html
+        - test: interface.tentative.html
+        - test: event-dispatch-shadow.tentative.html
+        - test: idlharness.tentative.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1856430
+      results:
+        - test: event-interface.tentative.html
+        - test: button-event-dispatch.tentative.html
+        - test: interface.tentative.html
+        - test: event-dispatch-shadow.tentative.html
+        - test: idlharness.tentative.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1890103
+      results:
+        - test: event-interface.tentative.html
+          subtest: action is a readonly defaulting to ''
+        - test: event-interface.tentative.html
+          subtest: action set to undefined
+        - test: on-popover-invalid-behavior.tentative.html
+          subtest: invoking (as foo-bar) on open popover does nothing
+        - test: on-popover-invalid-behavior.tentative.html
+          subtest: invoking (as showmodal) on open popover does nothing
+        - test: on-popover-invalid-behavior.tentative.html
+          subtest: invoking (as showpicker) on open popover does nothing
+        - test: on-popover-invalid-behavior.tentative.html
+          subtest: invoking (as open) on open popover does nothing
+        - test: on-popover-invalid-behavior.tentative.html
+          subtest: invoking (as close) on open popover does nothing
+        - test: on-popover-behavior.tentative.html
+          subtest: invoking (as explicit empty) closed popover opens
+        - test: on-popover-behavior.tentative.html
+          subtest: invoking (as tOgGlEpOpOvEr) closed popover opens
+        - test: on-popover-behavior.tentative.html
+          subtest: invoking (as sHoWpOpOvEr) closed popover opens
+        - test: on-popover-behavior.tentative.html
+          subtest: invoking (as explicit empty) from within open popover closes
+        - test: on-popover-behavior.tentative.html
+          subtest: invoking (as hidepopover) from within open popover closes
+        - test: on-popover-behavior.tentative.html
+          subtest: invoking (as tOgGlEpOpOvEr) from within open popover closes
+        - test: on-popover-behavior.tentative.html
+          subtest: invoking (as hIdEpOpOvEr) from within open popover closes
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1865054
+      results:
+        - test: fullscreen-behavior.tentative.html
+          subtest: invoking div with toggleFullscreen action makes div fullscreen
+        - test: fullscreen-behavior.tentative.html
+          subtest: invoking fullscreen div with toggleFullscreen action exits fullscreen
+        - test: fullscreen-behavior.tentative.html
+          subtest: invoking fullscreen div with toggleFullscreen (case-insensitive) action exits fullscreen
+        - test: fullscreen-behavior.tentative.html
+          subtest: invoking div with requestFullscreen action makes div fullscreen
+        - test: fullscreen-behavior.tentative.html
+          subtest: invoking fullscreen div with exitFullscreen action exits fullscreen
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1886077
+      results:
+        - test: button-event-dispatch.tentative.html
+          subtest: event dispatches on click
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1885284
+      results:
+        - test: on-video-behavior.tentative.html
+          subtest: invoking video with playpause action makes video play
+        - test: on-video-behavior.tentative.html
+          subtest: invoking playing video with playpause action pauses it
+        - test: on-video-behavior.tentative.html
+          subtest: invoking video with play action makes video play
+        - test: on-video-behavior.tentative.html
+          subtest: invoking playing video with pause action makes it pause
+        - test: on-video-behavior.tentative.html
+          subtest: invoking video with toggleMuted action mutes it
+        - test: on-video-behavior.tentative.html
+          subtest: invoking muted video with toggleMuted action unmutes it
+        - test: on-audio-behavior.tentative.html
+          subtest: invoking audio with playpause action makes audio play
+        - test: on-audio-behavior.tentative.html
+          subtest: invoking audio with playpause action (without user activation) is a no-op
+        - test: on-audio-behavior.tentative.html
+          subtest: invoking playing audio with playpause action pauses it
+        - test: on-audio-behavior.tentative.html
+          subtest: invoking audio with play action makes audio play
+        - test: on-audio-behavior.tentative.html
+          subtest: invoking audio with play action (without user activation) is a no-op
+        - test: on-audio-behavior.tentative.html
+          subtest: invoking playing audio with pause action makes it pause
+        - test: on-audio-behavior.tentative.html
+          subtest: invoking audio with toggleMuted action mutes it
+        - test: on-audio-behavior.tentative.html
+          subtest: invoking muted audio with toggleMuted action unmutes it
+        - test: on-popover-behavior.tentative.html
+          subtest: invoking (as foo) on open popover does nothing
+        - test: on-popover-behavior.tentative.html
+          subtest: invoking (as togglemodal) on open popover does nothing
+        - test: on-popover-behavior.tentative.html
+          subtest: invoking (as showpicker) on open popover does nothing
+        - test: on-popover-behavior.tentative.html
+          subtest: invoking (as toggle) on open popover does nothing
+        - test: on-popover-behavior.tentative.html
+          subtest: invoking (as open) on open popover does nothing
+        - test: on-popover-behavior.tentative.html
+          subtest: invoking (as close) on open popover does nothing
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1861646
+      results:
+        - test: on-popover-behavior.tentative.html
+          subtest: invoking (as auto) closed popover with preventDefault does not open
+        - test: on-popover-behavior.tentative.html
+          subtest: invoking (as auto) open popover with preventDefault does not close
+        - test: on-popover-behavior.tentative.html
+          subtest: invoking (as togglepopover) closed popover with preventDefault does not open
+        - test: on-popover-behavior.tentative.html
+          subtest: invoking (as togglepopover) open popover with preventDefault does not close
+        - test: on-popover-behavior.tentative.html
+          subtest: invoking (as showpopover) closed popover with preventDefault does not open
+        - test: on-popover-behavior.tentative.html
+          subtest: invoking (as hidepopover) closed popover is noop
+        - test: on-popover-behavior.tentative.html
+          subtest: invoking (as hidepopover) open popover with preventDefault does not close
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1868053
+      results:
+        - test: on-popover-behavior.tentative.html
+          subtest: invoking (as auto) closed popover opens
+        - test: on-popover-behavior.tentative.html
+          subtest: invoking (as auto) from within open popover closes
+        - test: on-popover-behavior.tentative.html
+          subtest: invoking (as togglepopover) closed popover opens
+        - test: on-popover-behavior.tentative.html
+          subtest: invoking (as togglepopover - case insensitive) closed popover opens
+        - test: on-popover-behavior.tentative.html
+          subtest: invoking (as togglepopover) from within open popover closes
+        - test: on-popover-behavior.tentative.html
+          subtest: invoking (as showpopover) closed popover opens
+        - test: on-popover-behavior.tentative.html
+          subtest: invoking (as showpopover - case insensitive) closed popover opens
+        - test: on-popover-behavior.tentative.html
+          subtest: invoking (as showpopover) open popover is noop
+        - test: on-popover-behavior.tentative.html
+          subtest: invoking (as hidepopover) open popover closes
+        - test: on-popover-behavior.tentative.html
+          subtest: invoking (as hidepopover - case insensitive) open popover closes
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1860457
+      results:
+        - test: on-popover-behavior.tentative.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1888103
+      results:
+        - test: on-popover-behavior.tentative.html
+          subtest: changing invokeaction attribute inside invokeevent doesn't impact the invocation
