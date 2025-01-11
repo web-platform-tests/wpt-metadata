@@ -75,3 +75,10 @@ links:
           subtest: <select> in <button> in <select> should remove inner <select>.
         - test: select-parsing.tentative.html
           subtest: <select> in <select><button><div> should remove inner <select>.
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1858243
+      results:
+        - test: select-pseudo-open.tentative.html
+          subtest: Selectlist should support :open and :closed pseudo selectors.
+        - test: select-pseudo-open.tentative.html
+          subtest: Selectlist :open and :closed should invalidate correctly.
