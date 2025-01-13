@@ -1,10 +1,39 @@
 links:
-    - url: ""
-      label: chromium-bidi-2023
-      results:
-        - test: context.py
-        - test: invalid.py
-        - test: locator.py
-        - test: max_node_count.py
-        - test: serialization_options.py
-        - test: start_nodes.py
+- label: chromium-bidi-2023
+  results:
+  - test: context.py
+  - test: invalid.py
+  - test: locator.py
+  - test: max_node_count.py
+  - test: serialization_options.py
+  - test: start_nodes.py
+  url: ''
+- product: firefox
+  results:
+  - subtest: test_find_by_locator[innerText-foobarBARbaz]
+    test: locator.py
+  - subtest: test_find_by_inner_text[ignore_case_true_full_match_no_max_depth]
+    test: locator.py
+  - subtest: test_find_by_inner_text[ignore_case_false_full_match_no_max_depth]
+    test: locator.py
+  - subtest: test_find_by_inner_text[ignore_case_true_partial_match_no_max_depth]
+    test: locator.py
+  - subtest: test_find_by_inner_text[ignore_case_false_partial_match_no_max_depth]
+    test: locator.py
+  - subtest: test_find_by_inner_text[ignore_case_true_full_match_max_depth_zero]
+    test: locator.py
+  - subtest: test_find_by_inner_text[ignore_case_false_full_match_max_depth_zero]
+    test: locator.py
+  - subtest: test_find_by_inner_text[ignore_case_true_partial_match_max_depth_zero]
+    test: locator.py
+  - subtest: test_find_by_inner_text[ignore_case_false_partial_match_max_depth_zero]
+    test: locator.py
+  - subtest: test_find_by_inner_text[ignore_case_true_full_match_max_depth_two]
+    test: locator.py
+  - subtest: test_find_by_inner_text[ignore_case_false_full_match_max_depth_two]
+    test: locator.py
+  - subtest: test_find_by_inner_text[ignore_case_true_partial_match_max_depth_two]
+    test: locator.py
+  - subtest: test_find_by_inner_text[ignore_case_false_partial_match_max_depth_two]
+    test: locator.py
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1941275
