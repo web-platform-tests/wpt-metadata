@@ -89,3 +89,10 @@ links:
   - subtest: transition finishes with no named elements
     test: zero-named-elements.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1937918
+- product: firefox
+  results:
+  - test: pageswap-in-hidden-doc-should-skip-transition.html
+  - subtest: Outbound cross-document view transition is not allowed when document
+      is hidden
+    test: pageswap-in-hidden-doc-should-skip-transition.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1941400
