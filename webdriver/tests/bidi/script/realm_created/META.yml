@@ -2,3 +2,10 @@ links:
     - label: chromium-bidi-2023
       results:
         - test: realm_created.py
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1788757
+      results:
+        - test: realm_created.py
+          subtest: test_existing_realm[tab]
+        - test: realm_created.py
+          subtest: test_existing_realm[window]
