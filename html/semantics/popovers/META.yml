@@ -1142,12 +1142,12 @@ links:
           subtest: Tests the order of pointer/mouse events during popover light dismiss.
         - test: popover-attribute-basic.html
           subtest: The element <div popover="hint">Pop up</div> should behave as a popover.
-        - test: popover-types-with-hints.tentative.html
-          subtest: manuals do not close popovers
-        - test: popover-types-with-hints.tentative.html
-          subtest: 'If you: a) show a popover=auto (call it D), then b) show a non-descendent popover=hint of D (call it T), then c) hide D, then T should be left showing. (Non-nested popover=hint can stay open when unrelated popover=autos are hidden)'
         - test: popover-anchor-change-display.tentative.html
         - test: popover-anchor-display.tentative.html
+        - test: popover-types-with-hints.html
+          subtest: manuals do not close popovers
+        - test: popover-types-with-hints.html
+          subtest: 'If you: a) show a popover=auto (call it D), then b) show a non-descendent popover=hint of D (call it T), then c) hide D, then T should be left showing. (Non-nested popover=hint can stay open when unrelated popover=autos are hidden)'
     - product: firefox
       url: https://bugzilla.mozilla.org/show_bug.cgi?id=1820739
       results:
@@ -2145,7 +2145,8 @@ links:
           subtest: Transitioning display property of an anchored popover should not cause a position shift
         - test: popover-anchor-nested-display.tentative.html
         - test: popover-anchor-scroll-display.tentative.html
-    - label: interop-2024-popover
+    - url: ""
+      label: interop-2024-popover
       results:
         - test: popover-and-svg.html
         - test: popover-attribute-basic.html
@@ -2238,17 +2239,17 @@ links:
       results:
         - test: popover-hover-hide-show.tentative.html
         - test: popover-hover-hide-toggle.tentative.html
-        - test: popover-invoking-attribute-hint.tentative.html
-        - test: popover-light-dismiss-hint.tentative.html
-        - test: popover-types-with-hints.tentative.html
         - test: popover-hover-hide-hide.tentative.html
         - test: popover-hover-hide-hover.tentative.html
+        - test: popover-light-dismiss-hint.html
+        - test: popover-types-with-hints.html
+        - test: popover-invoking-attribute-hint.html
     - product: safari
       url: https://bugs.webkit.org/show_bug.cgi?id=275048
       results:
-        - test: popover-light-dismiss-hint.tentative.html
         - test: popover-hover-hide-hide.tentative.html
         - test: popover-hover-hide-hover.tentative.html
         - test: popover-hover-hide-show.tentative.html
         - test: popover-hover-hide-toggle.tentative.html
-        - test: popover-invoking-attribute-hint.tentative.html
+        - test: popover-light-dismiss-hint.html
+        - test: popover-invoking-attribute-hint.html
