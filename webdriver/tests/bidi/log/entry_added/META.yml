@@ -4,6 +4,16 @@ links:
       results:
         - test: stacktrace.py
           subtest: test_console_entry_sync_callstack[warn-True]
+        - test: stacktrace.py
+          subtest: test_console_entry_sync_callstack[debug]
+        - test: stacktrace.py
+          subtest: test_console_entry_sync_callstack[info]
+        - test: stacktrace.py
+          subtest: test_console_entry_sync_callstack[log]
+        - test: stacktrace.py
+          subtest: test_console_entry_sync_callstack[table]
+        - test: stacktrace.py
+          subtest: test_console_entry_sync_callstack[warn]
     - product: firefox
       url: https://bugzilla.mozilla.org/show_bug.cgi?id=1799098
       results:
