@@ -1,26 +1,125 @@
 links:
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1718369
-      results:
-        - test: scrollbar-gutter-valid.html
-          subtest: e.style['scrollbar-gutter'] = "auto" should set the property value
-        - test: scrollbar-gutter-valid.html
-          subtest: e.style['scrollbar-gutter'] = "stable" should set the property value
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1770231
-      results:
-        - test: overflow-clip-margin-computed.html
-          subtest: Property overflow-clip-margin value '0px'
-        - test: overflow-clip-margin-computed.html
-          subtest: Property overflow-clip-margin value '10px'
-        - test: overflow-clip-margin.html
-          subtest: e.style['overflow-clip-margin'] = "10px" should set the property value
-    - product: safari
-      url: https://bugs.webkit.org/show_bug.cgi?id=236153
-      results:
-        - test: overflow-clip-margin-computed.html
-        - test: overflow-clip-margin.html
-    - label: interop-2024-scrollbar
-      results:
-        - test: scrollbar-gutter-invalid.html
-        - test: scrollbar-gutter-valid.html
+- product: firefox
+  results:
+  - subtest: e.style['scrollbar-gutter'] = "auto" should set the property value
+    test: scrollbar-gutter-valid.html
+  - subtest: e.style['scrollbar-gutter'] = "stable" should set the property value
+    test: scrollbar-gutter-valid.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1718369
+- product: firefox
+  results:
+  - subtest: Property overflow-clip-margin value '0px'
+    test: overflow-clip-margin-computed.html
+  - subtest: Property overflow-clip-margin value '10px'
+    test: overflow-clip-margin-computed.html
+  - subtest: e.style['overflow-clip-margin'] = "10px" should set the property value
+    test: overflow-clip-margin.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1770231
+- product: safari
+  results:
+  - test: overflow-clip-margin-computed.html
+  - test: overflow-clip-margin.html
+  url: https://bugs.webkit.org/show_bug.cgi?id=236153
+- label: interop-2024-scrollbar
+  results:
+  - test: scrollbar-gutter-invalid.html
+  - test: scrollbar-gutter-valid.html
+- product: firefox
+  results:
+  - subtest: '"::scroll-button(up)" should be a valid selector'
+    test: scroll-buttons-valid.html
+  - subtest: '"::scroll-button(down)" should be a valid selector'
+    test: scroll-buttons-valid.html
+  - subtest: '"::scroll-button(left)" should be a valid selector'
+    test: scroll-buttons-valid.html
+  - subtest: '"::scroll-button(right)" should be a valid selector'
+    test: scroll-buttons-valid.html
+  - subtest: '"::scroll-button(block-start)" should be a valid selector'
+    test: scroll-buttons-valid.html
+  - subtest: '"::scroll-button(inline-start)" should be a valid selector'
+    test: scroll-buttons-valid.html
+  - subtest: '"::scroll-button(inline-end)" should be a valid selector'
+    test: scroll-buttons-valid.html
+  - subtest: '"::scroll-button(block-end)" should be a valid selector'
+    test: scroll-buttons-valid.html
+  - subtest: '"::scroll-button(up):focus" should be a valid selector'
+    test: scroll-buttons-valid.html
+  - subtest: '"::scroll-button(down):focus" should be a valid selector'
+    test: scroll-buttons-valid.html
+  - subtest: '"::scroll-button(left):focus" should be a valid selector'
+    test: scroll-buttons-valid.html
+  - subtest: '"::scroll-button(right):focus" should be a valid selector'
+    test: scroll-buttons-valid.html
+  - subtest: '"::scroll-button(block-start):focus" should be a valid selector'
+    test: scroll-buttons-valid.html
+  - subtest: '"::scroll-button(inline-start):focus" should be a valid selector'
+    test: scroll-buttons-valid.html
+  - subtest: '"::scroll-button(inline-end):focus" should be a valid selector'
+    test: scroll-buttons-valid.html
+  - subtest: '"::scroll-button(block-end):focus" should be a valid selector'
+    test: scroll-buttons-valid.html
+  - subtest: '"::scroll-button(up):disabled" should be a valid selector'
+    test: scroll-buttons-valid.html
+  - subtest: '"::scroll-button(down):disabled" should be a valid selector'
+    test: scroll-buttons-valid.html
+  - subtest: '"::scroll-button(left):disabled" should be a valid selector'
+    test: scroll-buttons-valid.html
+  - subtest: '"::scroll-button(right):disabled" should be a valid selector'
+    test: scroll-buttons-valid.html
+  - subtest: '"::scroll-button(block-start):disabled" should be a valid selector'
+    test: scroll-buttons-valid.html
+  - subtest: '"::scroll-button(inline-start):disabled" should be a valid selector'
+    test: scroll-buttons-valid.html
+  - subtest: '"::scroll-button(inline-end):disabled" should be a valid selector'
+    test: scroll-buttons-valid.html
+  - subtest: '"::scroll-button(block-end):disabled" should be a valid selector'
+    test: scroll-buttons-valid.html
+  - subtest: '"::scroll-button(up):enabled" should be a valid selector'
+    test: scroll-buttons-valid.html
+  - subtest: '"::scroll-button(down):enabled" should be a valid selector'
+    test: scroll-buttons-valid.html
+  - subtest: '"::scroll-button(left):enabled" should be a valid selector'
+    test: scroll-buttons-valid.html
+  - subtest: '"::scroll-button(right):enabled" should be a valid selector'
+    test: scroll-buttons-valid.html
+  - subtest: '"::scroll-button(block-start):enabled" should be a valid selector'
+    test: scroll-buttons-valid.html
+  - subtest: '"::scroll-button(inline-start):enabled" should be a valid selector'
+    test: scroll-buttons-valid.html
+  - subtest: '"::scroll-button(inline-end):enabled" should be a valid selector'
+    test: scroll-buttons-valid.html
+  - subtest: '"::scroll-button(block-end):enabled" should be a valid selector'
+    test: scroll-buttons-valid.html
+  - subtest: Property scroll-marker-group value 'initial'
+    test: scroll-markers-computed.html
+  - subtest: Property scroll-marker-group value 'inherit'
+    test: scroll-markers-computed.html
+  - subtest: Property scroll-marker-group value 'unset'
+    test: scroll-markers-computed.html
+  - subtest: Property scroll-marker-group value 'revert'
+    test: scroll-markers-computed.html
+  - subtest: Property scroll-marker-group value 'none'
+    test: scroll-markers-computed.html
+  - subtest: Property scroll-marker-group value 'before'
+    test: scroll-markers-computed.html
+  - subtest: Property scroll-marker-group value 'after'
+    test: scroll-markers-computed.html
+  - subtest: The scroll-marker-group property shows up in CSSStyleDeclaration enumeration
+    test: scroll-markers-computed.html
+  - subtest: The scroll-marker-group property shows up in CSSStyleDeclaration.cssText
+    test: scroll-markers-computed.html
+  - subtest: e.style['scroll-marker-group'] = "initial" should set the property value
+    test: scroll-markers-valid.html
+  - subtest: e.style['scroll-marker-group'] = "inherit" should set the property value
+    test: scroll-markers-valid.html
+  - subtest: e.style['scroll-marker-group'] = "unset" should set the property value
+    test: scroll-markers-valid.html
+  - subtest: e.style['scroll-marker-group'] = "revert" should set the property value
+    test: scroll-markers-valid.html
+  - subtest: e.style['scroll-marker-group'] = "none" should set the property value
+    test: scroll-markers-valid.html
+  - subtest: e.style['scroll-marker-group'] = "before" should set the property value
+    test: scroll-markers-valid.html
+  - subtest: e.style['scroll-marker-group'] = "after" should set the property value
+    test: scroll-markers-valid.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1943105
