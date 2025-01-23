@@ -26,3 +26,17 @@ links:
       in the same-origin iframe.
     test: deferred-fetch-default-permissions-policy.tentative.https.window.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1900759
+- product: firefox
+  results:
+  - subtest: Permissions policy allow="deferred-fetch" allows fetchLater() from a
+      redirected same-origin iframe.
+    test: deferred-fetch-allowed-by-permissions-policy-attribute-redirect.tentative.https.window.html
+  - subtest: 'Permissions policy header: "deferred-fetch=*" allows fetchLater() in
+      the cross-origin iframe.'
+    test: deferred-fetch-allowed-by-permissions-policy.tentative.https.window.html
+  - subtest: Default "deferred-fetch-minimal" permissions policy ["*"] allows fetchLater()
+      in the cross-origin iframe.
+    test: deferred-fetch-default-permissions-policy.tentative.https.window.html
+  - subtest: document.featurePolicy.features should advertise deferred-fetch.
+    test: deferred-fetch-supported-by-permissions-policy.tentative.window.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1943451
