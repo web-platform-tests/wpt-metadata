@@ -1,38 +1,187 @@
 links:
-    - product: chrome
-      url: https://crbug.com/838779
-      results:
-        - test: resize-invalid.html
-    - product: chrome
-      url: https://crbug.com/658129
-      results:
-        - test: user-select-computed.html
-        - test: user-select-valid.html
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1862112
-      results:
-        - test: field-sizing-computed.html
-          subtest: Property field-sizing value 'fixed'
-        - test: field-sizing-computed.html
-          subtest: Property field-sizing value 'content'
-        - test: field-sizing-valid.html
-          subtest: e.style['field-sizing'] = "fixed" should set the property value
-        - test: field-sizing-valid.html
-          subtest: e.style['field-sizing'] = "content" should set the property value
-    - product: safari
-      url: https://bugs.webkit.org/show_bug.cgi?id=266614
-      results:
-        - test: resize-invalid.html
-          subtest: e.style['resize'] = "auto" should not set the property value
-    - product: safari
-      url: https://bugs.webkit.org/show_bug.cgi?id=264720
-      results:
-        - test: field-sizing-valid.html
-        - test: field-sizing-computed.html
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1036853
-      results:
-        - test: user-select-computed.html
-          subtest: Property user-select value 'contain'
-        - test: user-select-valid.html
-          subtest: e.style['user-select'] = "contain" should set the property value
+- product: chrome
+  results:
+  - test: resize-invalid.html
+  url: https://crbug.com/838779
+- product: chrome
+  results:
+  - test: user-select-computed.html
+  - test: user-select-valid.html
+  url: https://crbug.com/658129
+- product: firefox
+  results:
+  - subtest: Property field-sizing value 'fixed'
+    test: field-sizing-computed.html
+  - subtest: Property field-sizing value 'content'
+    test: field-sizing-computed.html
+  - subtest: e.style['field-sizing'] = "fixed" should set the property value
+    test: field-sizing-valid.html
+  - subtest: e.style['field-sizing'] = "content" should set the property value
+    test: field-sizing-valid.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1862112
+- product: safari
+  results:
+  - subtest: e.style['resize'] = "auto" should not set the property value
+    test: resize-invalid.html
+  url: https://bugs.webkit.org/show_bug.cgi?id=266614
+- product: safari
+  results:
+  - test: field-sizing-valid.html
+  - test: field-sizing-computed.html
+  url: https://bugs.webkit.org/show_bug.cgi?id=264720
+- product: firefox
+  results:
+  - subtest: Property user-select value 'contain'
+    test: user-select-computed.html
+  - subtest: e.style['user-select'] = "contain" should set the property value
+    test: user-select-valid.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1036853
+- product: firefox
+  results:
+  - subtest: Property interactivity value 'auto'
+    test: interactivity-computed.html
+  - subtest: Property interactivity value 'inert'
+    test: interactivity-computed.html
+  - subtest: Property interactivity has initial value auto
+    test: interactivity-computed.html
+  - subtest: Property interactivity inherits
+    test: interactivity-computed.html
+  - subtest: 'CSS Transitions with transition-behavior:allow-discrete: property <interactivity>
+      from [auto] to [inert] at (-0.3) should be [auto]'
+    test: interactivity-computed.html
+  - subtest: 'CSS Transitions with transition-behavior:allow-discrete: property <interactivity>
+      from [auto] to [inert] at (0) should be [auto]'
+    test: interactivity-computed.html
+  - subtest: 'CSS Transitions with transition-behavior:allow-discrete: property <interactivity>
+      from [auto] to [inert] at (0.3) should be [auto]'
+    test: interactivity-computed.html
+  - subtest: 'CSS Transitions with transition-behavior:allow-discrete: property <interactivity>
+      from [auto] to [inert] at (0.5) should be [inert]'
+    test: interactivity-computed.html
+  - subtest: 'CSS Transitions with transition-behavior:allow-discrete: property <interactivity>
+      from [auto] to [inert] at (0.6) should be [inert]'
+    test: interactivity-computed.html
+  - subtest: 'CSS Transitions with transition-behavior:allow-discrete: property <interactivity>
+      from [auto] to [inert] at (1) should be [inert]'
+    test: interactivity-computed.html
+  - subtest: 'CSS Transitions with transition-behavior:allow-discrete: property <interactivity>
+      from [auto] to [inert] at (1.5) should be [inert]'
+    test: interactivity-computed.html
+  - subtest: 'CSS Transitions with transition-property:all and transition-behavor:allow-discrete:
+      property <interactivity> from [auto] to [inert] at (-0.3) should be [auto]'
+    test: interactivity-computed.html
+  - subtest: 'CSS Transitions with transition-property:all and transition-behavor:allow-discrete:
+      property <interactivity> from [auto] to [inert] at (0) should be [auto]'
+    test: interactivity-computed.html
+  - subtest: 'CSS Transitions with transition-property:all and transition-behavor:allow-discrete:
+      property <interactivity> from [auto] to [inert] at (0.3) should be [auto]'
+    test: interactivity-computed.html
+  - subtest: 'CSS Transitions with transition-property:all and transition-behavor:allow-discrete:
+      property <interactivity> from [auto] to [inert] at (0.5) should be [inert]'
+    test: interactivity-computed.html
+  - subtest: 'CSS Transitions with transition-property:all and transition-behavor:allow-discrete:
+      property <interactivity> from [auto] to [inert] at (0.6) should be [inert]'
+    test: interactivity-computed.html
+  - subtest: 'CSS Transitions with transition-property:all and transition-behavor:allow-discrete:
+      property <interactivity> from [auto] to [inert] at (1) should be [inert]'
+    test: interactivity-computed.html
+  - subtest: 'CSS Transitions with transition-property:all and transition-behavor:allow-discrete:
+      property <interactivity> from [auto] to [inert] at (1.5) should be [inert]'
+    test: interactivity-computed.html
+  - subtest: 'CSS Transitions: property <interactivity> from [auto] to [inert] at
+      (-0.3) should be [inert]'
+    test: interactivity-computed.html
+  - subtest: 'CSS Transitions: property <interactivity> from [auto] to [inert] at
+      (0) should be [inert]'
+    test: interactivity-computed.html
+  - subtest: 'CSS Transitions: property <interactivity> from [auto] to [inert] at
+      (0.3) should be [inert]'
+    test: interactivity-computed.html
+  - subtest: 'CSS Transitions: property <interactivity> from [auto] to [inert] at
+      (0.5) should be [inert]'
+    test: interactivity-computed.html
+  - subtest: 'CSS Transitions: property <interactivity> from [auto] to [inert] at
+      (0.6) should be [inert]'
+    test: interactivity-computed.html
+  - subtest: 'CSS Transitions: property <interactivity> from [auto] to [inert] at
+      (1) should be [inert]'
+    test: interactivity-computed.html
+  - subtest: 'CSS Transitions: property <interactivity> from [auto] to [inert] at
+      (1.5) should be [inert]'
+    test: interactivity-computed.html
+  - subtest: 'CSS Transitions with transition: all: property <interactivity> from
+      [auto] to [inert] at (-0.3) should be [inert]'
+    test: interactivity-computed.html
+  - subtest: 'CSS Transitions with transition: all: property <interactivity> from
+      [auto] to [inert] at (0) should be [inert]'
+    test: interactivity-computed.html
+  - subtest: 'CSS Transitions with transition: all: property <interactivity> from
+      [auto] to [inert] at (0.3) should be [inert]'
+    test: interactivity-computed.html
+  - subtest: 'CSS Transitions with transition: all: property <interactivity> from
+      [auto] to [inert] at (0.5) should be [inert]'
+    test: interactivity-computed.html
+  - subtest: 'CSS Transitions with transition: all: property <interactivity> from
+      [auto] to [inert] at (0.6) should be [inert]'
+    test: interactivity-computed.html
+  - subtest: 'CSS Transitions with transition: all: property <interactivity> from
+      [auto] to [inert] at (1) should be [inert]'
+    test: interactivity-computed.html
+  - subtest: 'CSS Transitions with transition: all: property <interactivity> from
+      [auto] to [inert] at (1.5) should be [inert]'
+    test: interactivity-computed.html
+  - subtest: 'CSS Animations: property <interactivity> from [auto] to [inert] at (-0.3)
+      should be [auto]'
+    test: interactivity-computed.html
+  - subtest: 'CSS Animations: property <interactivity> from [auto] to [inert] at (0)
+      should be [auto]'
+    test: interactivity-computed.html
+  - subtest: 'CSS Animations: property <interactivity> from [auto] to [inert] at (0.3)
+      should be [auto]'
+    test: interactivity-computed.html
+  - subtest: 'CSS Animations: property <interactivity> from [auto] to [inert] at (0.5)
+      should be [inert]'
+    test: interactivity-computed.html
+  - subtest: 'CSS Animations: property <interactivity> from [auto] to [inert] at (0.6)
+      should be [inert]'
+    test: interactivity-computed.html
+  - subtest: 'CSS Animations: property <interactivity> from [auto] to [inert] at (1)
+      should be [inert]'
+    test: interactivity-computed.html
+  - subtest: 'CSS Animations: property <interactivity> from [auto] to [inert] at (1.5)
+      should be [inert]'
+    test: interactivity-computed.html
+  - subtest: 'Web Animations: property <interactivity> from [auto] to [inert] at (-0.3)
+      should be [auto]'
+    test: interactivity-computed.html
+  - subtest: 'Web Animations: property <interactivity> from [auto] to [inert] at (0)
+      should be [auto]'
+    test: interactivity-computed.html
+  - subtest: 'Web Animations: property <interactivity> from [auto] to [inert] at (0.3)
+      should be [auto]'
+    test: interactivity-computed.html
+  - subtest: 'Web Animations: property <interactivity> from [auto] to [inert] at (0.5)
+      should be [inert]'
+    test: interactivity-computed.html
+  - subtest: 'Web Animations: property <interactivity> from [auto] to [inert] at (0.6)
+      should be [inert]'
+    test: interactivity-computed.html
+  - subtest: 'Web Animations: property <interactivity> from [auto] to [inert] at (1)
+      should be [inert]'
+    test: interactivity-computed.html
+  - subtest: 'Web Animations: property <interactivity> from [auto] to [inert] at (1.5)
+      should be [inert]'
+    test: interactivity-computed.html
+  - subtest: e.style['interactivity'] = "auto" should set the property value
+    test: interactivity.html
+  - subtest: e.style['interactivity'] = "inert" should set the property value
+    test: interactivity.html
+  - subtest: e.style['interactivity'] = "initial" should set the property value
+    test: interactivity.html
+  - subtest: e.style['interactivity'] = "inherit" should set the property value
+    test: interactivity.html
+  - subtest: e.style['interactivity'] = "unset" should set the property value
+    test: interactivity.html
+  - subtest: e.style['interactivity'] = "revert" should set the property value
+    test: interactivity.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1943621
