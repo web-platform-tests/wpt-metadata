@@ -1,13 +1,74 @@
 links:
-- label: webperf
-  results:
-  - test: '*'
-- product: chrome
-  results:
-  - test: first-paint-equals-lcp-text.html
-  url: https://crbug.com/1015130
-- product: firefox
-  results:
-  - status: CRASH
-    test: video-poster.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1794978
+    - label: webperf
+      results:
+        - test: '*'
+    - product: chrome
+      url: https://crbug.com/1015130
+      results:
+        - test: first-paint-equals-lcp-text.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1794978
+      results:
+        - test: video-poster.html
+          status: CRASH
+    - label: interop-2025-core-web-vitals
+      results:
+        - test: broken-image-icon.html
+        - test: image-inside-svg.html
+        - test: observe-css-generated-image.html
+        - test: toJSON.html
+        - test: video-play-after-poster.html
+        - test: redirects-tao-star.html
+        - test: repeated-image.html
+        - test: transparent-text-with-shadow.html
+        - test: web-font-styled-text-resize-swap-smaller.html
+        - test: observe-after-untrusted-scroll.html
+        - test: observe-image.html
+        - test: background-image-set-image.html
+        - test: invisible-images-composited-1.html
+        - test: observe-css-generated-text.html
+        - test: progressively-loaded-image.html
+        - test: text-with-display-style.html
+        - test: expanded-image.html
+        - test: observe-svg-background-image.html
+        - test: same-origin-redirects.html
+        - test: image-not-fully-visible.html
+        - test: multiple-image-same-src.html
+        - test: transparent-text-with-text-stroke.html
+        - test: observe-mathml.html
+        - test: contracted-image.html
+        - test: first-paint-equals-lcp-text.html
+        - test: image-full-viewport.html
+        - test: initially-invisible-images.html
+        - test: loadTime-after-appendChild.html
+        - test: supported-lcp-type.html
+        - test: transparent-text.html
+        - test: web-font-styled-text-resize-block.html
+        - test: cross-origin-image.sub.html
+        - test: idlharness.html
+        - test: image-removed-before-load.html
+        - test: image-upscaling.html
+        - test: multiple-redirects-TAO.html
+        - test: update-on-style-change.html
+        - test: web-font-styled-text-resize-swap-subnode.html
+        - test: first-letter-background.html
+        - test: image-src-change.html
+        - test: invisible-images.html
+        - test: observe-svg-image.html
+        - test: iframe-content-not-observed.html
+        - test: image-sw-same-origin.https.html
+        - test: image-TAO.sub.html
+        - test: larger-text.html
+        - test: observe-svg-data-uri-image.html
+        - test: invisible-images-composited-2.html
+        - test: observe-svg-data-uri-background-image.html
+        - test: observe-text.html
+        - test: observe-random-namespace.html
+        - test: web-font-styled-text-resize-swap-after-interaction.html
+        - test: larger-image.html
+        - test: placeholder-image.html
+        - test: resized-image-not-reconsidered.html
+        - test: video-poster.html
+        - test: web-font-styled-text-resize-swap.html
+        - test: element-only-when-fully-active.html
+        - test: video-data-uri.html
