@@ -70,7 +70,8 @@ links:
       results:
         - test: Element-closest.html
         - test: adoption.window.html
-    - label: interop-2023-webcompat
+    - url: ""
+      label: interop-2023-webcompat
       results:
         - test: ParentNode-querySelector-scope.html
     - product: safari
@@ -94,3 +95,11 @@ links:
       results:
         - test: MutationObserver-document.html
           subtest: parser script insertion mutation
+    - product: chrome
+      url: https://issues.chromium.org/391520705
+      results:
+        - test: MutationObserver-textContent.html
+    - product: edge
+      url: https://issues.chromium.org/391520705
+      results:
+        - test: MutationObserver-textContent.html
