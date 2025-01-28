@@ -1,17 +1,29 @@
 links:
-- product: firefox
-  results:
-  - subtest: '"::view-transition" should be a valid selector'
-    test: pseudo-elements-valid-with-classes.html
-  - subtest: '":root::view-transition" should be a valid selector'
-    test: pseudo-elements-valid-with-classes.html
-  - subtest: '".a::view-transition" should be a valid selector'
-    test: pseudo-elements-valid-with-classes.html
-  - subtest: '"div ::view-transition" should be a valid selector'
-    test: pseudo-elements-valid-with-classes.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1877287
-- product: firefox
-  results:
-  - subtest: e.style['view-transition-name'] = "auto" should set the property value
-    test: view-transition-name-valid.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1938465
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1877287
+      results:
+        - test: pseudo-elements-valid-with-classes.html
+          subtest: '"::view-transition" should be a valid selector'
+        - test: pseudo-elements-valid-with-classes.html
+          subtest: '":root::view-transition" should be a valid selector'
+        - test: pseudo-elements-valid-with-classes.html
+          subtest: '".a::view-transition" should be a valid selector'
+        - test: pseudo-elements-valid-with-classes.html
+          subtest: '"div ::view-transition" should be a valid selector'
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1938465
+      results:
+        - test: view-transition-name-valid.html
+          subtest: e.style['view-transition-name'] = "auto" should set the property value
+    - label: interop-2025-view-transitions
+      results:
+        - test: pseudo-elements-invalid.html
+        - test: pseudo-elements-valid-with-classes.html
+        - test: view-transition-class-invalid.html
+        - test: view-transition-class-valid.html
+        - test: view-transition-name-invalid.html
+        - test: pseudo-elements-invalid-with-classes.html
+        - test: pseudo-elements-valid.html
+        - test: view-transition-class-computed.html
+        - test: view-transition-name-computed.html
+        - test: view-transition-name-valid.html
