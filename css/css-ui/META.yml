@@ -246,6 +246,20 @@ links:
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1036853
 - product: firefox
   results:
+  - subtest: 'Author interactivity:auto overrides inherited UA [inert] { interactivity:
+      inert }'
+    test: interactivity-inert-html-attribute-ua.html
+  - subtest: 'Author interactivity:auto overrides UA [inert] { interactivity: inert
+      }'
+    test: interactivity-inert-html-attribute-ua.html
+  - subtest: UA dialog:modal interactivity rule
+    test: interactivity-inert-modal-dialog-ua.html
+  - subtest: Author 'interactivity:inert' overrides UA dialog:modal 'interactivity:auto'
+      rule
+    test: interactivity-inert-modal-dialog-ua.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1943690
+- product: firefox
+  results:
   - subtest: No click event for interactivity:inert element
     test: interactivity-inert-click.html
   - subtest: Try focus inert input
