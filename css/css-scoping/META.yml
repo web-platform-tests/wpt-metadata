@@ -1,82 +1,89 @@
 links:
-- product: chrome
-  results:
-  - test: keyframes-004.html
-  - test: keyframes-005.html
-  url: https://crbug.com/838526
-- product: firefox
-  results:
-  - subtest: '":host-context(.a)" should be a valid selector'
-    test: host-context-parsing.html
-  - subtest: '":host-context(div.a)" should be a valid selector'
-    test: host-context-parsing.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1698804
-- label: interop-2024-nesting
-  results:
-  - test: host-is-001.html
-  - test: host-is-002.html
-  - test: host-is-003.html
-  - test: host-is-004.html
-  - test: host-is-005.html
-  url: ''
-- product: chrome
-  results:
-  - test: host-is-001.html
-  - test: host-is-002.html
-  - test: host-is-005.html
-  url: https://issues.chromium.org/40266948
-- product: firefox
-  results:
-  - subtest: '@font-face from the document applies in the shadow tree'
-    test: font-face-002.html
-  - subtest: '@font-face from shadow applies to :host'
-    test: font-face-007.html
-  - subtest: '@font-face from shadow applies to a slotted element'
-    test: font-face-008.html
-  - subtest: '@font-face from shadow applies to to :host::before/::after.'
-    test: font-face-009.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1884865
-- product: firefox
-  results:
-  - test: host-has-002.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1913095
-- product: firefox
-  results:
-  - test: host-has-internal-003.tentative.html
-  - test: host-has-002.html
-  - test: host-has-internal-001.tentative.html
-  - test: host-has-internal-002.tentative.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1911437
-- product: chrome
-  results:
-  - test: host-has-internal-003.tentative.html
-  - test: host-has-001.html
-  - test: host-has-002.html
-  - test: host-has-003.html
-  - test: host-has-internal-001.tentative.html
-  - test: host-has-internal-002.tentative.html
-  url: https://issues.chromium.org/issues/359758910
-- product: edge
-  results:
-  - test: host-has-internal-003.tentative.html
-  - test: host-has-001.html
-  - test: host-has-002.html
-  - test: host-has-003.html
-  - test: host-has-internal-001.tentative.html
-  - test: host-has-internal-002.tentative.html
-  url: https://issues.chromium.org/issues/359758910
-- product: firefox
-  results:
-  - subtest: '"::slotted(*)::details-content" should be a valid selector'
-    test: slotted-parsing.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1933816
-- product: firefox
-  results:
-  - subtest: 'CSS Scoping: :host(:host)'
-    test: host-in-host-selector.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1933771
-- product: firefox
-  results:
-  - test: host-multiple-003.html
-  - test: host-multiple-004.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1939896
+    - product: chrome
+      url: https://crbug.com/838526
+      results:
+        - test: keyframes-004.html
+        - test: keyframes-005.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1698804
+      results:
+        - test: host-context-parsing.html
+          subtest: '":host-context(.a)" should be a valid selector'
+        - test: host-context-parsing.html
+          subtest: '":host-context(div.a)" should be a valid selector'
+    - label: interop-2024-nesting
+      results:
+        - test: host-is-001.html
+        - test: host-is-002.html
+        - test: host-is-003.html
+        - test: host-is-004.html
+        - test: host-is-005.html
+    - product: chrome
+      url: https://issues.chromium.org/40266948
+      results:
+        - test: host-is-001.html
+        - test: host-is-002.html
+        - test: host-is-005.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1884865
+      results:
+        - test: font-face-002.html
+          subtest: '@font-face from the document applies in the shadow tree'
+        - test: font-face-007.html
+          subtest: '@font-face from shadow applies to :host'
+        - test: font-face-008.html
+          subtest: '@font-face from shadow applies to a slotted element'
+        - test: font-face-009.html
+          subtest: '@font-face from shadow applies to to :host::before/::after.'
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1913095
+      results:
+        - test: host-has-002.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1911437
+      results:
+        - test: host-has-internal-003.tentative.html
+        - test: host-has-002.html
+        - test: host-has-internal-001.tentative.html
+        - test: host-has-internal-002.tentative.html
+    - product: chrome
+      url: https://issues.chromium.org/issues/359758910
+      results:
+        - test: host-has-internal-003.tentative.html
+        - test: host-has-001.html
+        - test: host-has-002.html
+        - test: host-has-003.html
+        - test: host-has-internal-001.tentative.html
+        - test: host-has-internal-002.tentative.html
+    - product: edge
+      url: https://issues.chromium.org/issues/359758910
+      results:
+        - test: host-has-internal-003.tentative.html
+        - test: host-has-001.html
+        - test: host-has-002.html
+        - test: host-has-003.html
+        - test: host-has-internal-001.tentative.html
+        - test: host-has-internal-002.tentative.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1933816
+      results:
+        - test: slotted-parsing.html
+          subtest: '"::slotted(*)::details-content" should be a valid selector'
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1933771
+      results:
+        - test: host-in-host-selector.html
+          subtest: 'CSS Scoping: :host(:host)'
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1939896
+      results:
+        - test: host-multiple-003.html
+        - test: host-multiple-004.html
+    - product: chrome
+      url: https://issues.chromium.org/390864970
+      results:
+        - test: has-slotted-query-selector.html
+    - product: edge
+      url: https://issues.chromium.org/390864970
+      results:
+        - test: has-slotted-query-selector.html

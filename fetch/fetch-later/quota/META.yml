@@ -1,0 +1,70 @@
+links:
+- product: firefox
+  results:
+  - subtest: The 2nd fetchLater(same-origin) call in the top-level document is not
+      allowed to exceed per-origin quota for its POST body of String.
+    test: accumulated-oversized-payload.tentative.https.window.html
+  - test: empty-payload.tentative.https.window.html
+  - subtest: fetchLater() does not accept an empty POST request body of String.
+    test: empty-payload.tentative.https.window.html
+  - subtest: fetchLater() does not accept an empty POST request body of ArrayBuffer.
+    test: empty-payload.tentative.https.window.html
+  - subtest: fetchLater() does not accept an empty POST request body of URLSearchParams.
+    test: empty-payload.tentative.https.window.html
+  - subtest: fetchLater() does not accept an empty POST request body of Blob.
+    test: empty-payload.tentative.https.window.html
+  - subtest: fetchLater() does not accept an empty POST request body of File.
+    test: empty-payload.tentative.https.window.html
+  - subtest: fetchLater() accept a GET request.
+    test: empty-payload.tentative.https.window.html
+  - subtest: fetchLater() accept a DELETE request.
+    test: empty-payload.tentative.https.window.html
+  - subtest: fetchLater() accept a PUT request.
+    test: empty-payload.tentative.https.window.html
+  - subtest: fetchLater() accepts max payload in a POST request body of String.
+    test: max-payload.tentative.https.window.html
+  - subtest: fetchLater() rejects max+1 payload in a POST request body of String.
+    test: max-payload.tentative.https.window.html
+  - subtest: fetchLater() has per-request-origin quota for its POST body of String.
+    test: multiple-origins.tentative.https.window.html
+  - subtest: fetchLater() has per-request-origin quota for its POST body of ArrayBuffer.
+    test: multiple-origins.tentative.https.window.html
+  - subtest: fetchLater() has per-request-origin quota for its POST body of FormData.
+    test: multiple-origins.tentative.https.window.html
+  - subtest: fetchLater() has per-request-origin quota for its POST body of URLSearchParams.
+    test: multiple-origins.tentative.https.window.html
+  - subtest: fetchLater() has per-request-origin quota for its POST body of Blob.
+    test: multiple-origins.tentative.https.window.html
+  - subtest: fetchLater() has per-request-origin quota for its POST body of File.
+    test: multiple-origins.tentative.https.window.html
+  - subtest: fetchLater() does not accept payload[size=65537] exceeding per-origin
+      quota in a POST request body of String.
+    test: oversized-payload.tentative.https.window.html
+  - subtest: fetchLater() does not accept payload[size=65537] exceeding per-origin
+      quota in a POST request body of ArrayBuffer.
+    test: oversized-payload.tentative.https.window.html
+  - subtest: fetchLater() does not accept payload[size=65537] exceeding per-origin
+      quota in a POST request body of FormData.
+    test: oversized-payload.tentative.https.window.html
+  - subtest: fetchLater() does not accept payload[size=65537] exceeding per-origin
+      quota in a POST request body of URLSearchParams.
+    test: oversized-payload.tentative.https.window.html
+  - subtest: fetchLater() does not accept payload[size=65537] exceeding per-origin
+      quota in a POST request body of Blob.
+    test: oversized-payload.tentative.https.window.html
+  - subtest: fetchLater() does not accept payload[size=65537] exceeding per-origin
+      quota in a POST request body of File.
+    test: oversized-payload.tentative.https.window.html
+  - subtest: fetchLater() accepts small payload in a POST request body of String.
+    test: small-payload.tentative.https.window.html
+  - subtest: fetchLater() accepts small payload in a POST request body of ArrayBuffer.
+    test: small-payload.tentative.https.window.html
+  - subtest: fetchLater() accepts small payload in a POST request body of FormData.
+    test: small-payload.tentative.https.window.html
+  - subtest: fetchLater() accepts small payload in a POST request body of URLSearchParams.
+    test: small-payload.tentative.https.window.html
+  - subtest: fetchLater() accepts small payload in a POST request body of Blob.
+    test: small-payload.tentative.https.window.html
+  - subtest: fetchLater() accepts small payload in a POST request body of File.
+    test: small-payload.tentative.https.window.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1943451
