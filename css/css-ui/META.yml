@@ -260,6 +260,14 @@ links:
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1943690
 - product: firefox
   results:
+  - subtest: UA :fullscreen interactivity rule
+    test: interactivity-inert-fullscreen-ua.html
+  - subtest: Author 'interactivity:inert' overrides UA :fullscreen 'interactivity:auto'
+      rule
+    test: interactivity-inert-fullscreen-ua.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1944182
+- product: firefox
+  results:
   - subtest: No click event for interactivity:inert element
     test: interactivity-inert-click.html
   - subtest: Try focus inert input
