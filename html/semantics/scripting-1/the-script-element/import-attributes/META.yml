@@ -1,7 +1,16 @@
 links:
-- product: firefox
-  results:
-  - test: dynamic-import-with-attributes-argument.any.worker.html
-  - test: dynamic-import-with-attributes-argument.any.html
-  - test: dynamic-import-with-attributes-argument.any.sharedworker.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1846737
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1846737
+      results:
+        - test: dynamic-import-with-attributes-argument.any.worker.html
+        - test: dynamic-import-with-attributes-argument.any.html
+        - test: dynamic-import-with-attributes-argument.any.sharedworker.html
+    - label: interop-2025-modules
+      results:
+        - test: dynamic-import-with-attributes-argument.any.worker.html
+        - test: empty-attributes-clause.html
+        - test: invalid-import-errors-order.html
+        - test: invalid-type-attribute-error.html
+        - test: unsupported-attribute.html
+        - test: dynamic-import-with-attributes-argument.any.html
+        - test: dynamic-import-with-attributes-argument.any.sharedworker.html
