@@ -1,75 +1,74 @@
 links:
-- product: firefox
-  results:
-  - subtest: e.style['position-try'] = "flip-inline" should set the property value
-    test: position-try-parsing.html
-  - subtest: e.style['position-try'] = "most-height none" should set the property
-      value
-    test: position-try-parsing.html
-  - subtest: e.style['position-try'] = "--bar, --baz" should set the property value
-    test: position-try-parsing.html
-  - subtest: e.style['position-try'] = "most-inline-size --baz, flip-inline" should
-      set the property value
-    test: position-try-parsing.html
-  - subtest: e.style['position-try'] = "normal none" should set the property value
-    test: position-try-parsing.html
-  - subtest: e.style['position-try'] = "most-width none" should set the property value
-    test: position-try-parsing.html
-  - subtest: e.style['position-try'] = "normal --foo" should set the property value
-    test: position-try-parsing.html
-  - subtest: e.style['position-try'] = "flip-inline" should set position-try-options
-    test: position-try-parsing.html
-  - subtest: e.style['position-try'] = "flip-inline" should set position-try-order
-    test: position-try-parsing.html
-  - subtest: e.style['position-try'] = "flip-inline" should not set unrelated longhands
-    test: position-try-parsing.html
-  - subtest: e.style['position-try'] = "most-width none" should set position-try-options
-    test: position-try-parsing.html
-  - subtest: e.style['position-try'] = "most-width none" should set position-try-order
-    test: position-try-parsing.html
-  - subtest: e.style['position-try'] = "most-width none" should not set unrelated
-      longhands
-    test: position-try-parsing.html
-  - subtest: e.style['position-try'] = "--foo, --bar" should set position-try-options
-    test: position-try-parsing.html
-  - subtest: e.style['position-try'] = "--foo, --bar" should set position-try-order
-    test: position-try-parsing.html
-  - subtest: e.style['position-try'] = "--foo, --bar" should not set unrelated longhands
-    test: position-try-parsing.html
-  - subtest: e.style['position-try'] = "most-inline-size --foo, flip-inline" should
-      set position-try-options
-    test: position-try-parsing.html
-  - subtest: e.style['position-try'] = "most-inline-size --foo, flip-inline" should
-      set position-try-order
-    test: position-try-parsing.html
-  - subtest: e.style['position-try'] = "most-inline-size --foo, flip-inline" should
-      not set unrelated longhands
-    test: position-try-parsing.html
-  - subtest: e.style['position-try'] = "most-inline-size flip-inline flip-block, --foo,
-      --bar" should set position-try-order
-    test: position-try-parsing.html
-  - subtest: e.style['position-try'] = "most-inline-size flip-inline flip-block, --foo,
-      --bar" should not set unrelated longhands
-    test: position-try-parsing.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1884990
-- product: firefox
-  results:
-  - subtest: e.style['position-try'] = "most-block-size flip-inline flip-block, --bar,
-      --baz" should set the property value
-    test: position-try-parsing.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1906329
-- product: firefox
-  results:
-  - subtest: e.style['position-try'] = "flip-inline" should set position-try-fallbacks
-    test: position-try-parsing.html
-  - subtest: e.style['position-try'] = "most-width none" should set position-try-fallbacks
-    test: position-try-parsing.html
-  - subtest: e.style['position-try'] = "--foo, --bar" should set position-try-fallbacks
-    test: position-try-parsing.html
-  - subtest: e.style['position-try'] = "most-inline-size --foo, flip-inline" should
-      set position-try-fallbacks
-    test: position-try-parsing.html
-  - subtest: e.style['position-try'] = "most-inline-size flip-inline flip-block, --foo,
-      --bar" should set position-try-fallbacks
-    test: position-try-parsing.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1917050
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1884990
+      results:
+        - test: position-try-parsing.html
+          subtest: e.style['position-try'] = "flip-inline" should set the property value
+        - test: position-try-parsing.html
+          subtest: e.style['position-try'] = "most-height none" should set the property value
+        - test: position-try-parsing.html
+          subtest: e.style['position-try'] = "--bar, --baz" should set the property value
+        - test: position-try-parsing.html
+          subtest: e.style['position-try'] = "most-inline-size --baz, flip-inline" should set the property value
+        - test: position-try-parsing.html
+          subtest: e.style['position-try'] = "normal none" should set the property value
+        - test: position-try-parsing.html
+          subtest: e.style['position-try'] = "most-width none" should set the property value
+        - test: position-try-parsing.html
+          subtest: e.style['position-try'] = "normal --foo" should set the property value
+        - test: position-try-parsing.html
+          subtest: e.style['position-try'] = "flip-inline" should set position-try-options
+        - test: position-try-parsing.html
+          subtest: e.style['position-try'] = "flip-inline" should set position-try-order
+        - test: position-try-parsing.html
+          subtest: e.style['position-try'] = "flip-inline" should not set unrelated longhands
+        - test: position-try-parsing.html
+          subtest: e.style['position-try'] = "most-width none" should set position-try-options
+        - test: position-try-parsing.html
+          subtest: e.style['position-try'] = "most-width none" should set position-try-order
+        - test: position-try-parsing.html
+          subtest: e.style['position-try'] = "most-width none" should not set unrelated longhands
+        - test: position-try-parsing.html
+          subtest: e.style['position-try'] = "--foo, --bar" should set position-try-options
+        - test: position-try-parsing.html
+          subtest: e.style['position-try'] = "--foo, --bar" should set position-try-order
+        - test: position-try-parsing.html
+          subtest: e.style['position-try'] = "--foo, --bar" should not set unrelated longhands
+        - test: position-try-parsing.html
+          subtest: e.style['position-try'] = "most-inline-size --foo, flip-inline" should set position-try-options
+        - test: position-try-parsing.html
+          subtest: e.style['position-try'] = "most-inline-size --foo, flip-inline" should set position-try-order
+        - test: position-try-parsing.html
+          subtest: e.style['position-try'] = "most-inline-size --foo, flip-inline" should not set unrelated longhands
+        - test: position-try-parsing.html
+          subtest: e.style['position-try'] = "most-inline-size flip-inline flip-block, --foo, --bar" should set position-try-order
+        - test: position-try-parsing.html
+          subtest: e.style['position-try'] = "most-inline-size flip-inline flip-block, --foo, --bar" should not set unrelated longhands
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1906329
+      results:
+        - test: position-try-parsing.html
+          subtest: e.style['position-try'] = "most-block-size flip-inline flip-block, --bar, --baz" should set the property value
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1917050
+      results:
+        - test: position-try-parsing.html
+          subtest: e.style['position-try'] = "flip-inline" should set position-try-fallbacks
+        - test: position-try-parsing.html
+          subtest: e.style['position-try'] = "most-width none" should set position-try-fallbacks
+        - test: position-try-parsing.html
+          subtest: e.style['position-try'] = "--foo, --bar" should set position-try-fallbacks
+        - test: position-try-parsing.html
+          subtest: e.style['position-try'] = "most-inline-size --foo, flip-inline" should set position-try-fallbacks
+        - test: position-try-parsing.html
+          subtest: e.style['position-try'] = "most-inline-size flip-inline flip-block, --foo, --bar" should set position-try-fallbacks
+    - label: interop-2025-anchor-positioning
+      results:
+        - test: position-try-order-computed.html
+        - test: position-try-order-parsing.html
+        - test: position-try-parsing.html
+        - test: anchor-scope-computed.html
+        - test: anchor-scope-parsing.html
+        - test: position-try-computed.html
+        - test: position-try-fallbacks-computed.html
+        - test: position-try-fallbacks-parsing.html
