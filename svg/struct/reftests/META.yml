@@ -1,23 +1,28 @@
 links:
-- product: chrome
-  results:
-  - test: use-inheritance-001.svg
-  url: https://bugs.chromium.org/p/chromium/issues/detail?id=785246
-- product: chrome
-  results:
-  - subtest: Test status
-    test: currentScale-change-repaint.html
-  url: https://crbug.com/1368167
-- product: firefox
-  results:
-  - test: nested-svg-through-display-contents.svg
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1803507
-- product: firefox
-  results:
-  - test: use-data-url.tentative.svg
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1809606
-- product: firefox
-  results:
-  - test: use-external-html-resource-with-doctype.html
-  - test: use-external-html-resource.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1909353
+    - product: chrome
+      url: https://bugs.chromium.org/p/chromium/issues/detail?id=785246
+      results:
+        - test: use-inheritance-001.svg
+    - product: chrome
+      url: https://crbug.com/1368167
+      results:
+        - test: currentScale-change-repaint.html
+          subtest: Test status
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1803507
+      results:
+        - test: nested-svg-through-display-contents.svg
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1809606
+      results:
+        - test: use-data-url.tentative.svg
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1909353
+      results:
+        - test: use-external-html-resource-with-doctype.html
+        - test: use-external-html-resource.html
+    - label: interop-2025-webcompat
+      results:
+        - test: use-inheritance-001.svg
+        - test: use-inheritance-nth-child-of.svg
+        - test: use-inheritance-nth-last-child-of.svg
