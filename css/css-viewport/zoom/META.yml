@@ -1,17 +1,53 @@
 links:
-- product: firefox
-  results:
-  - subtest: scrollTop after increasing zoom level
-    test: scroll-top-test-with-zoom.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1891910
-- product: firefox
-  results:
-  - test: border-spacing.html
-  - test: letter-spacing.html
-  - test: line-height.html
-  - test: text-indent.html
-  - test: text-shadow.html
-  - test: text-stroke-width.html
-  - test: text-underline-offset.html
-  - test: word-spacing.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1911195
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1891910
+      results:
+        - test: scroll-top-test-with-zoom.html
+          subtest: scrollTop after increasing zoom level
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1911195
+      results:
+        - test: border-spacing.html
+        - test: letter-spacing.html
+        - test: line-height.html
+        - test: text-indent.html
+        - test: text-shadow.html
+        - test: text-stroke-width.html
+        - test: text-underline-offset.html
+        - test: word-spacing.html
+    - label: interop-2025-webcompat
+      results:
+        - test: background-image.html
+        - test: basic.html
+        - test: iframe-zoom.sub.html
+        - test: inherited-length.html
+        - test: relative-units.html
+        - test: text-stroke-width.html
+        - test: canvas.html
+        - test: letter-spacing.html
+        - test: relative-units-from-parent.html
+        - test: inherited.html
+        - test: perspective-small-effective-zoom-crash.html
+        - test: widget.html
+        - test: scroll-top-test-with-zoom.html
+        - test: svg.html
+        - test: textarea-very-small-zoom-crash.html
+        - test: word-spacing.html
+        - test: zoom-with-sign-function.html
+        - test: stroke.html
+        - test: svg-path.html
+        - test: svg-viewBox.html
+        - test: text-underline-offset.html
+        - test: container-queries.html
+        - test: svg-path-simple.html
+        - test: svg-transform.html
+        - test: text-shadow.html
+        - test: font-size.html
+        - test: line-height.html
+        - test: scroll-corner-crash.html
+        - test: scrollbar-crash.html
+        - test: border-spacing.html
+        - test: iframe-zoom-nested.html
+        - test: image-intrinsic-size.html
+        - test: list-style-image.html
+        - test: text-indent.html
