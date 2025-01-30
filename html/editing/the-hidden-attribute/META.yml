@@ -1,18 +1,30 @@
 links:
-- product: firefox
-  results:
-  - subtest: div.removeAttribute('hidden')
-    test: hidden-ua-stylesheet.html
-  - subtest: div.setAttribute('hidden', '')
-    test: hidden-ua-stylesheet.html
-  - subtest: div.setAttribute('hidden', 'asdf')
-    test: hidden-ua-stylesheet.html
-  - subtest: div.setAttribute('hidden', 'until-found')
-    test: hidden-ua-stylesheet.html
-  - subtest: div.setAttribute('hidden', 'UNTIL-FOUND')
-    test: hidden-ua-stylesheet.html
-  - subtest: div.setAttribute('hidden', 'UnTiL-FoUnD')
-    test: hidden-ua-stylesheet.html
-  - subtest: div.setAttribute('hidden', '0')
-    test: hidden-ua-stylesheet.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1760492
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1760492
+      results:
+        - test: hidden-ua-stylesheet.html
+          subtest: div.removeAttribute('hidden')
+        - test: hidden-ua-stylesheet.html
+          subtest: div.setAttribute('hidden', '')
+        - test: hidden-ua-stylesheet.html
+          subtest: div.setAttribute('hidden', 'asdf')
+        - test: hidden-ua-stylesheet.html
+          subtest: div.setAttribute('hidden', 'until-found')
+        - test: hidden-ua-stylesheet.html
+          subtest: div.setAttribute('hidden', 'UNTIL-FOUND')
+        - test: hidden-ua-stylesheet.html
+          subtest: div.setAttribute('hidden', 'UnTiL-FoUnD')
+        - test: hidden-ua-stylesheet.html
+          subtest: div.setAttribute('hidden', '0')
+    - label: interop-2025-details
+      results:
+        - test: hidden-until-found-002.html
+        - test: hidden-idl.html
+        - test: beforematch-element-fragment-navigation.html
+        - test: beforematch-scroll-to-text-fragment.html
+        - test: hidden-until-found-001.html
+        - test: hidden-until-found-004.html
+        - test: hidden-until-found-005.html
+        - test: hidden-until-found-007.html
+        - test: hidden-until-found-text-fragment.html
+        - test: hidden-ua-stylesheet.html
