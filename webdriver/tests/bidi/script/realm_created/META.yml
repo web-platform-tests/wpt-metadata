@@ -1,21 +1,26 @@
 links:
-    - url: ""
-      label: chromium-bidi-2023
-      results:
-        - test: realm_created.py
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1936770
-      results:
-        - test: realm_created.py
-          subtest: test_dedicated_worker
-        - test: realm_created.py
-          subtest: test_shared_worker
-        - test: realm_created.py
-          subtest: test_service_worker
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1788757
-      results:
-        - test: realm_created.py
-          subtest: test_existing_realm[tab]
-        - test: realm_created.py
-          subtest: test_existing_realm[window]
+- label: chromium-bidi-2023
+  results:
+  - test: realm_created.py
+  url: ''
+- product: firefox
+  results:
+  - subtest: test_dedicated_worker
+    test: realm_created.py
+  - subtest: test_shared_worker
+    test: realm_created.py
+  - subtest: test_service_worker
+    test: realm_created.py
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1936770
+- product: firefox
+  results:
+  - subtest: test_existing_realm[tab]
+    test: realm_created.py
+  - subtest: test_existing_realm[window]
+    test: realm_created.py
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1788757
+- product: firefox
+  results:
+  - subtest: test_subscribe_to_one_context
+    test: realm_created.py
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1945627

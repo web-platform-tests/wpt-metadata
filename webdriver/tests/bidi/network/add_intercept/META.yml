@@ -1,8 +1,149 @@
 links:
-    - label: chromium-bidi-2023
-      results:
-        - test: add_intercept.py
-        - test: invalid.py
-        - test: phase_auth_required.py
-        - test: phases.py
-        - test: url_patterns.py
+- label: chromium-bidi-2023
+  results:
+  - test: add_intercept.py
+  - test: invalid.py
+  - test: phase_auth_required.py
+  - test: phases.py
+  - test: url_patterns.py
+- product: firefox
+  results:
+  - subtest: test_pattern_patterns_matching[patterns0-https://{wpt_host}]
+    test: url_patterns.py
+  - subtest: test_pattern_patterns_matching[patterns1-https://{wpt_host}/]
+    test: url_patterns.py
+  - subtest: test_pattern_patterns_matching[patterns2-https://{wpt_host}:1234/]
+    test: url_patterns.py
+  - subtest: test_pattern_patterns_matching[patterns3-https://{wpt_host}/path]
+    test: url_patterns.py
+  - subtest: test_pattern_patterns_matching[patterns4-https://{wpt_host}/?search]
+    test: url_patterns.py
+  - subtest: test_pattern_patterns_matching[patterns5-https://{wpt_host}]
+    test: url_patterns.py
+  - subtest: test_pattern_patterns_matching[patterns6-https://{wpt_host}/]
+    test: url_patterns.py
+  - subtest: test_pattern_patterns_matching[patterns7-https://{wpt_host}:1234/]
+    test: url_patterns.py
+  - subtest: test_pattern_patterns_matching[patterns8-https://{wpt_host}/path]
+    test: url_patterns.py
+  - subtest: test_pattern_patterns_matching[patterns9-https://{wpt_host}/?search]
+    test: url_patterns.py
+  - subtest: test_pattern_patterns_matching[patterns10-https://{wpt_host}/]
+    test: url_patterns.py
+  - subtest: test_pattern_patterns_matching[patterns11-https://{wpt_host}:1234/]
+    test: url_patterns.py
+  - subtest: test_pattern_patterns_matching[patterns12-https://{wpt_host}/path]
+    test: url_patterns.py
+  - subtest: test_pattern_patterns_matching[patterns13-https://{wpt_host}/?search]
+    test: url_patterns.py
+  - subtest: test_pattern_patterns_matching[patterns14-https://{wpt_host}/]
+    test: url_patterns.py
+  - subtest: test_pattern_patterns_matching[patterns15-https://{wpt_host}/]
+    test: url_patterns.py
+  - subtest: test_pattern_patterns_matching[patterns16-https://{wpt_host}:1234/]
+    test: url_patterns.py
+  - subtest: test_pattern_patterns_matching[patterns17-https://{wpt_host}/path]
+    test: url_patterns.py
+  - subtest: test_pattern_patterns_matching[patterns18-https://{wpt_host}/?search]
+    test: url_patterns.py
+  - subtest: test_pattern_patterns_matching[patterns19-https://{wpt_host_upper}/]
+    test: url_patterns.py
+  - subtest: test_pattern_patterns_matching[patterns20-https://{wpt_host}/]
+    test: url_patterns.py
+  - subtest: test_pattern_patterns_matching[patterns21-https://{wpt_host}:1234/]
+    test: url_patterns.py
+  - subtest: test_pattern_patterns_matching[patterns22-https://{wpt_host}]
+    test: url_patterns.py
+  - subtest: test_pattern_patterns_matching[patterns23-https://{wpt_host}/]
+    test: url_patterns.py
+  - subtest: test_pattern_patterns_matching[patterns24-https://{wpt_host}/path]
+    test: url_patterns.py
+  - subtest: test_pattern_patterns_matching[patterns25-https://{wpt_host}/]
+    test: url_patterns.py
+  - subtest: test_pattern_patterns_matching[patterns26-https://{wpt_host}/?]
+    test: url_patterns.py
+  - subtest: test_pattern_patterns_matching[patterns27-https://{wpt_host}/?search]
+    test: url_patterns.py
+  - subtest: test_pattern_patterns_not_matching[pattern0-https://{wpt_host}/]
+    test: url_patterns.py
+  - subtest: test_pattern_patterns_not_matching[pattern1-https://{wpt_host}/]
+    test: url_patterns.py
+  - subtest: test_pattern_patterns_not_matching[pattern2-https://{wpt_host}/]
+    test: url_patterns.py
+  - subtest: test_pattern_patterns_not_matching[pattern3-https://{wpt_host}/]
+    test: url_patterns.py
+  - subtest: test_pattern_patterns_not_matching[pattern4-https://{wpt_host}:1234/]
+    test: url_patterns.py
+  - subtest: test_pattern_patterns_not_matching[pattern5-https://{wpt_host}/]
+    test: url_patterns.py
+  - subtest: test_pattern_patterns_not_matching[pattern6-https://{wpt_host}/path]
+    test: url_patterns.py
+  - subtest: test_pattern_patterns_not_matching[pattern7-https://{wpt_host}/]
+    test: url_patterns.py
+  - subtest: test_pattern_patterns_not_matching[pattern8-https://{wpt_host}/path/]
+    test: url_patterns.py
+  - subtest: test_pattern_patterns_not_matching[pattern9-https://{wpt_host}/other/path]
+    test: url_patterns.py
+  - subtest: test_pattern_patterns_not_matching[pattern10-https://{wpt_host}/path/continued]
+    test: url_patterns.py
+  - subtest: test_pattern_patterns_not_matching[pattern11-https://{wpt_host}/?search]
+    test: url_patterns.py
+  - subtest: test_pattern_patterns_not_matching[pattern12-https://{wpt_host}/?other]
+    test: url_patterns.py
+  - subtest: test_string_patterns_matching[https://{wpt_host}/-https://{wpt_host}/]
+    test: url_patterns.py
+  - subtest: test_string_patterns_matching[https://{wpt_host}-https://{wpt_host}/]
+    test: url_patterns.py
+  - subtest: test_string_patterns_matching[https://{wpt_host}/-https://{wpt_host}]
+    test: url_patterns.py
+  - subtest: test_string_patterns_matching[HTTPS://{wpt_host}/-https://{wpt_host}/]
+    test: url_patterns.py
+  - subtest: test_string_patterns_matching[https://{wpt_host}/-HTTPS://{wpt_host}/]
+    test: url_patterns.py
+  - subtest: test_string_patterns_matching[https://{wpt_host_upper}/-https://{wpt_host}/]
+    test: url_patterns.py
+  - subtest: test_string_patterns_matching[https://{wpt_host}/-https://{wpt_host_upper}/]
+    test: url_patterns.py
+  - subtest: test_string_patterns_matching[https://user:password@{wpt_host}/-https://{wpt_host}/]
+    test: url_patterns.py
+  - subtest: test_string_patterns_matching[https://{wpt_host}/-https://{wpt_host}:443/]
+    test: url_patterns.py
+  - subtest: test_string_patterns_matching[https://{wpt_host}:443/-https://{wpt_host}/]
+    test: url_patterns.py
+  - subtest: test_string_patterns_matching[https://{wpt_host}:443/-https://{wpt_host}:443/]
+    test: url_patterns.py
+  - subtest: test_string_patterns_matching[https://{wpt_host}:1234/-https://{wpt_host}:1234/]
+    test: url_patterns.py
+  - subtest: test_string_patterns_matching[https://{wpt_host}/path-https://{wpt_host}/path]
+    test: url_patterns.py
+  - subtest: test_string_patterns_matching[https://{wpt_host}/?search-https://{wpt_host}/?search]
+    test: url_patterns.py
+  - subtest: test_string_patterns_matching[https://{wpt_host}/#ref-https://{wpt_host}/]
+    test: url_patterns.py
+  - subtest: test_string_patterns_matching[https://{wpt_host}/-https://{wpt_host}/#ref]
+    test: url_patterns.py
+  - subtest: test_string_patterns_matching[https://{wpt_host}/#ref1-https://{wpt_host}/#ref2]
+    test: url_patterns.py
+  - subtest: test_string_patterns_not_matching[https://{wpt_host}/-https://some.other.host/]
+    test: url_patterns.py
+  - subtest: test_string_patterns_not_matching[https://{wpt_host}:1234/-https://{wpt_host}:5678/]
+    test: url_patterns.py
+  - subtest: test_string_patterns_not_matching[https://{wpt_host}/-https://{wpt_host}:5678/]
+    test: url_patterns.py
+  - subtest: test_string_patterns_not_matching[https://{wpt_host}/path-https://{wpt_host}/other/path]
+    test: url_patterns.py
+  - subtest: test_string_patterns_not_matching[https://{wpt_host}/path-https://{wpt_host}/path/continued]
+    test: url_patterns.py
+  - subtest: test_string_patterns_not_matching[https://{wpt_host}/pathcase-https://{wpt_host}/PATHCASE]
+    test: url_patterns.py
+  - subtest: test_string_patterns_not_matching[https://{wpt_host}/?searchcase-https://{wpt_host}/?SEARCHCASE]
+    test: url_patterns.py
+  - subtest: test_string_patterns_not_matching[https://{wpt_host}/?key-https://{wpt_host}/?otherkey]
+    test: url_patterns.py
+  - subtest: test_string_patterns_not_matching[https://{wpt_host}/?key-https://{wpt_host}/?key=value]
+    test: url_patterns.py
+  - subtest: test_string_patterns_not_matching[https://{wpt_host}/?a=b&c=d-https://{wpt_host}/?c=d&a=b]
+    test: url_patterns.py
+  - subtest: test_string_patterns_not_matching[https://{wpt_host}/??-https://{wpt_host}/?]
+    test: url_patterns.py
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1945627

@@ -1,4 +1,9 @@
 links:
-    - label: chromium-bidi-2023
-      results:
-        - test: network_events.py
+- label: chromium-bidi-2023
+  results:
+  - test: network_events.py
+- product: firefox
+  results:
+  - subtest: test_cors_preflight_request
+    test: network_events.py
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1945627
