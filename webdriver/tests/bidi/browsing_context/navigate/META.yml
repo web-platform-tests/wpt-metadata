@@ -1,12 +1,17 @@
 links:
-    - label: chromium-bidi-2023
-      results:
-        - test: about_blank.py
-        - test: data_url.py
-        - test: error.py
-        - test: frame.py
-        - test: hash.py
-        - test: image.py
-        - test: invalid.py
-        - test: navigate.py
-        - test: wait.py
+- label: chromium-bidi-2023
+  results:
+  - test: about_blank.py
+  - test: data_url.py
+  - test: error.py
+  - test: frame.py
+  - test: hash.py
+  - test: image.py
+  - test: invalid.py
+  - test: navigate.py
+  - test: wait.py
+- product: firefox
+  results:
+  - subtest: test_same_document_navigation_in_before_unload
+    test: navigate.py
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1945627

@@ -1,11 +1,20 @@
 links:
-    - label: chromium-bidi-2023
-      results:
-        - test: navigation_started.py
-    - product: chrome
-      url: "https://crbug.com/355271558"
-      results:
-        - test: navigation_started.py
-          subtest: test_nested_iframes
-        - test: navigation_started.py
-          subtest: test_iframe
+- label: chromium-bidi-2023
+  results:
+  - test: navigation_started.py
+- product: chrome
+  results:
+  - subtest: test_nested_iframes
+    test: navigation_started.py
+  - subtest: test_iframe
+    test: navigation_started.py
+  url: https://crbug.com/355271558
+- product: firefox
+  results:
+  - subtest: test_redirect_http_equiv
+    test: navigation_started.py
+  - subtest: test_with_beforeunload_prompt[capabilities0]
+    test: navigation_started.py
+  - subtest: test_with_accepted_beforeunload_prompt[capabilities0]
+    test: navigation_started.py
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1945627
