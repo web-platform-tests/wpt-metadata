@@ -1,7 +1,12 @@
 links:
-    - label: chromium-bidi-2023
-      results:
-        - test: add_preload_script.py
-        - test: arguments.py
-        - test: invalid.py
-        - test: sandbox.py
+- label: chromium-bidi-2023
+  results:
+  - test: add_preload_script.py
+  - test: arguments.py
+  - test: invalid.py
+  - test: sandbox.py
+- product: firefox
+  results:
+  - subtest: test_script_order
+    test: add_preload_script.py
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1945627

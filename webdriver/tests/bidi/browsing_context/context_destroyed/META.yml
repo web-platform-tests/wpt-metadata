@@ -1,4 +1,11 @@
 links:
-    - label: chromium-bidi-2023
-      results:
-        - test: context_destroyed.py
+- label: chromium-bidi-2023
+  results:
+  - test: context_destroyed.py
+- product: firefox
+  results:
+  - subtest: test_nested_iframes_delete_top_iframe
+    test: context_destroyed.py
+  - subtest: test_subscribe_to_one_context
+    test: context_destroyed.py
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1945627

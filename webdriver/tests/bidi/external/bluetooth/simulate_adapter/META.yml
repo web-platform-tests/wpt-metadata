@@ -6,3 +6,52 @@ links:
   - subtest: test_state[absent-False]
     test: state.py
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1930283
+- product: firefox
+  results:
+  - subtest: test_state_invalid_type[None]
+    test: invalid.py
+  - subtest: test_state_invalid_type[False]
+    test: invalid.py
+  - subtest: test_state_invalid_type[42]
+    test: invalid.py
+  - subtest: test_state_invalid_type[state3]
+    test: invalid.py
+  - subtest: test_state_invalid_type[state4]
+    test: invalid.py
+  - subtest: test_state_invalid_value[]
+    test: invalid.py
+  - subtest: test_state_invalid_value[invalid]
+    test: invalid.py
+  - subtest: test_context_invalid_type[None]
+    test: invalid.py
+  - subtest: test_context_invalid_type[False]
+    test: invalid.py
+  - subtest: test_context_invalid_type[42]
+    test: invalid.py
+  - subtest: test_context_invalid_type[context3]
+    test: invalid.py
+  - subtest: test_context_invalid_type[context4]
+    test: invalid.py
+  - subtest: test_state[powered-off-True]
+    test: state.py
+  - subtest: test_state[powered-on-True]
+    test: state.py
+  - subtest: test_set_twice[absent-False-absent-False]
+    test: state.py
+  - subtest: test_set_twice[absent-False-powered-off-True]
+    test: state.py
+  - subtest: test_set_twice[absent-False-powered-on-True]
+    test: state.py
+  - subtest: test_set_twice[powered-off-True-absent-False]
+    test: state.py
+  - subtest: test_set_twice[powered-off-True-powered-off-True]
+    test: state.py
+  - subtest: test_set_twice[powered-off-True-powered-on-True]
+    test: state.py
+  - subtest: test_set_twice[powered-on-True-absent-False]
+    test: state.py
+  - subtest: test_set_twice[powered-on-True-powered-off-True]
+    test: state.py
+  - subtest: test_set_twice[powered-on-True-powered-on-True]
+    test: state.py
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1945627
