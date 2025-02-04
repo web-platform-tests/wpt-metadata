@@ -128,3 +128,14 @@ links:
         - test: overflow-computed.html
         - test: overflow-invalid.html
         - test: overflow-valid.html
+    - product: chrome
+      url: crbug.com/41489999
+      results:
+        - test: overflow-valid.html
+          subtest: e.style['overflow-inline'] = "visible" should set the property value
+        - test: overflow-valid.html
+          subtest: e.style['overflow-inline'] = "scroll" should set the property value
+        - test: overflow-valid.html
+          subtest: e.style['overflow-block'] = "clip" should set the property value
+        - test: overflow-valid.html
+          subtest: e.style['overflow-block'] = "hidden" should set the property value
