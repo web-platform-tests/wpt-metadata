@@ -20,7 +20,8 @@ links:
       results:
         - test: overflow-clip-margin-computed.html
         - test: overflow-clip-margin.html
-    - label: interop-2024-scrollbar
+    - url: ""
+      label: interop-2024-scrollbar
       results:
         - test: scrollbar-gutter-invalid.html
         - test: scrollbar-gutter-valid.html
@@ -123,8 +124,30 @@ links:
           subtest: e.style['scroll-marker-group'] = "before" should set the property value
         - test: scroll-markers-valid.html
           subtest: e.style['scroll-marker-group'] = "after" should set the property value
-    - label: interop-2025-writingmodes
+    - url: ""
+      label: interop-2025-writingmodes
       results:
         - test: overflow-computed.html
         - test: overflow-invalid.html
         - test: overflow-valid.html
+    - product: chrome
+      url: crbug.com/41489999
+      results:
+        - test: overflow-valid.html
+          subtest: e.style['overflow-inline'] = "visible" should set the property value
+        - test: overflow-valid.html
+          subtest: e.style['overflow-inline'] = "scroll" should set the property value
+        - test: overflow-valid.html
+          subtest: e.style['overflow-block'] = "clip" should set the property value
+        - test: overflow-valid.html
+          subtest: e.style['overflow-block'] = "hidden" should set the property value
+        - test: overflow-computed.html
+          subtest: Property overflow-block value 'hidden'
+        - test: overflow-computed.html
+          subtest: Property overflow-block value 'clip'
+        - test: overflow-computed.html
+          subtest: Property overflow-block value 'visible'
+        - test: overflow-computed.html
+          subtest: Property overflow-inline value 'scroll'
+        - test: overflow-computed.html
+          subtest: Property overflow-inline value 'visible'
