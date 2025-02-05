@@ -128,3 +128,16 @@ links:
         - test: overflow-computed.html
         - test: overflow-invalid.html
         - test: overflow-valid.html
+    - product: chrome
+      url: https://crbug.com/41489999
+      results:
+        - test: overflow-computed.html
+          subtest: Property overflow-block value 'hidden'
+        - test: overflow-computed.html
+          subtest: Property overflow-block value 'clip'
+        - test: overflow-computed.html
+          subtest: Property overflow-block value 'visible'
+        - test: overflow-computed.html
+          subtest: Property overflow-inline value 'scroll'
+        - test: overflow-computed.html
+          subtest: Property overflow-inline value 'visible'
