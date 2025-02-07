@@ -1,0 +1,38 @@
+links:
+- product: firefox
+  results:
+  - subtest: scroll-initial-target aligns with scroll-snap-align
+    test: scroll-initial-target-aligns-with-snap-align.tentative.html
+  - subtest: 'display:block scroll-initial-target becomes display: none'
+    test: scroll-initial-target-display-toggled.tentative.html
+  - subtest: 'display:none scroll-initial-target becomes display: block'
+    test: scroll-initial-target-display-toggled.tentative.html
+  - subtest: display:none scroll-initial-target becomes display:block
+    test: scroll-initial-target-nested-container.tentative.html
+  - subtest: intermediate overflow:visible container becomes overflow:scroll
+    test: scroll-initial-target-nested-container.tentative.html
+  - subtest: outer scroll-initial-target takes precedence over inner
+    test: scroll-initial-target-nested-container.tentative.html
+  - subtest: scroll containers can also be scroll-initial-targets
+    test: scroll-initial-target-nested-container.tentative.html
+  - subtest: ' CSS Scroll Snap 2 Test: scroll-initial-target*'
+    test: scroll-initial-target-root.tentative.html
+  - subtest: scroll-initial-target reflects vertical rtl writing mode.
+    test: scroll-initial-target-rtl.tentative.html
+  - subtest: <span> scroll-initial-target is honored
+    test: scroll-initial-target-span.tentative.html
+  - subtest: scroll-initial-target does not override anchor navigation.
+    test: scroll-initial-target-with-anchor-navigation.tentative.html
+  - subtest: ' CSS Scroll Snap 2 Test: scroll-initial-target*'
+    test: scroll-initial-target-with-scroll-snap.tentative.html
+  - subtest: ' CSS Scroll Snap 2 Test: scroll-initial-target*'
+    test: scroll-initial-target-with-scroll-start-root.tentative.html
+  - subtest: ' CSS Scroll Snap 2 Test: scroll-initial-target*'
+    test: scroll-initial-target-with-scroll-start.tentative.html
+  - subtest: scroll-initial-target does not override user scroll
+    test: scroll-initial-target-with-user-programmatic-scroll.tentative.html
+  - subtest: scroll-initial-target does not override programmatic scroll
+    test: scroll-initial-target-with-user-programmatic-scroll.tentative.html
+  - subtest: ' CSS Scroll Snap 2 Test: scroll-initial-target*'
+    test: scroll-initial-target.tentative.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1946889

@@ -1,0 +1,13 @@
+links:
+- product: firefox
+  results:
+  - subtest: Property scroll-initial-target value 'nearest'
+    test: scroll-initial-target-computed.html
+  - subtest: Property scroll-initial-target value 'none'
+    test: scroll-initial-target-computed.html
+  - subtest: e.style['scroll-initial-target'] = "none" should set the property value
+    test: scroll-initial-target-valid.html
+  - subtest: e.style['scroll-initial-target'] = "nearest" should set the property
+      value
+    test: scroll-initial-target-valid.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1946889

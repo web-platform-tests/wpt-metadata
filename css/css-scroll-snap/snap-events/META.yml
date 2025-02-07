@@ -1,0 +1,14 @@
+links:
+- product: firefox
+  results:
+  - subtest: scrollsnapchange bubbles when fired at the document (addEventListener).
+    test: snapevents-at-document-bubble-to-window.html
+  - subtest: scrollsnapchange bubbles when fired at the document (onscrollsnapchange).
+    test: snapevents-at-document-bubble-to-window.html
+  - subtest: snapTarget for scrollsnapchange is the owning element when a snap area
+      belongs to a pseudo-element
+    test: snap-events-with-pseudo-target.tentative.html
+  - subtest: snapTarget for scrollsnapchanging is the owning element when a snap area
+      belongs to a pseudo-element
+    test: snap-events-with-pseudo-target.tentative.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1946889
