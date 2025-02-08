@@ -1,0 +1,93 @@
+links:
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1895378
+      results:
+        - test: scrollsnapchange-on-user-root-scroll.tentative.html
+          subtest: snapchanged is not fired if snap target doesn't change on user scroll
+        - test: scrollsnapchange-on-user-scroll.tentative.html
+          subtest: snapchanged event fires after snap target changes on touch scroll
+        - test: scrollsnapchange-on-user-scroll.tentative.html
+          subtest: snapchanged event fires after snap target changes on wheel scroll
+        - test: scrollsnapchange-on-user-scroll.tentative.html
+          subtest: snapchanged event fires after snap target changes on keydown press
+        - test: scrollsnapchange-on-user-scroll.tentative.html
+          subtest: Element.onsnapchanged event fires after snap target changes on touch scroll
+        - test: scrollsnapchange-on-user-scroll.tentative.html
+          subtest: snapchanged is not fired if snap target doesn't change on user scroll
+        - test: scrollsnapchange-same-targets-after-layout-changed.html
+          subtest: snapchanged doesn't fire after layout change if snapped to the same elements
+        - test: scrollsnapchange-same-targets-after-layout-changed.html
+          subtest: snapchanged doesn't fire after snap to the same targets after scroll. elements
+        - test: scrollsnapchange-with-proximity-strictness.tentative.html
+          subtest: Snapchanged fires when scrolling outside proximity range.
+        - test: scrollsnapchange-after-layout-change.tentative.html
+          subtest: snapchanged fires after snap area is snapped to upon layout change.
+        - test: scrollsnapchange-after-layout-change.tentative.html
+          subtest: snapchanged fires after snap area is snapped to upon layout change without scroll.
+        - test: scrollsnapchange-after-layout-change.tentative.html
+          subtest: snapchanged fires when container stops snapping
+        - test: scrollsnapchange-after-layout-change.tentative.html
+          subtest: snapchanged fires when snap container no longer has snap areas
+        - test: scrollsnapchange-on-programmatic-scroll.tentative.html
+          subtest: snapchanged event fires after snap target changes via scrollTo
+        - test: scrollsnapchange-on-programmatic-scroll.tentative.html
+          subtest: Element.onsnapchanged event fires after snap target changes viascrollTo
+        - test: scrollsnapchange-on-programmatic-scroll.tentative.html
+          subtest: snapchanged is not fired if snap target doesn't change on programmatic scroll
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1918805
+      results:
+        - test: scrollsnapchange-on-user-root-scroll.tentative.html
+          subtest: scrollsnapchange event fires after snap target changes on touch scroll
+        - test: scrollsnapchange-on-user-root-scroll.tentative.html
+          subtest: scrollsnapchange event fires after snap target changes on wheel scroll
+        - test: scrollsnapchange-on-user-root-scroll.tentative.html
+          subtest: scrollsnapchange event fires after snap target changes on keydown press
+        - test: scrollsnapchange-on-user-root-scroll.tentative.html
+          subtest: Document.scrollsnapchange event fires after snap target changes on touch scroll
+        - test: scrollsnapchange-on-user-root-scroll.tentative.html
+          subtest: scrollsnapchange is not fired if snap target doesn't change on user scroll
+        - test: scrollsnapchange-scroll-snap-type-change.html
+          subtest: Trigger scrollsnapchange event on scroll-snap-type change
+        - test: scrollsnapchange-on-user-scroll.tentative.html
+          subtest: scrollsnapchange event fires after snap target changes on touch scroll
+        - test: scrollsnapchange-on-user-scroll.tentative.html
+          subtest: scrollsnapchange event fires after snap target changes on wheel scroll
+        - test: scrollsnapchange-on-user-scroll.tentative.html
+          subtest: scrollsnapchange event fires after snap target changes on keydown press
+        - test: scrollsnapchange-on-user-scroll.tentative.html
+          subtest: Element.onscrollsnapchange event fires after snap target changes on touch scroll
+        - test: scrollsnapchange-on-user-scroll.tentative.html
+          subtest: scrollsnapchange is not fired if snap target doesn't change on user scroll
+        - test: scrollsnapchange-on-programmatic-root-scroll.tentative.html
+          subtest: scrollsnapchange event fires after snap target changes via scrollTo
+        - test: scrollsnapchange-on-programmatic-root-scroll.tentative.html
+          subtest: Document.onscrollsnapchange event fires after snap target changes viascrollTo
+        - test: scrollsnapchange-on-programmatic-root-scroll.tentative.html
+          subtest: scrollsnapchange is not fired if snap target doesn't change on programmatic scroll
+        - test: scrollsnapchange-same-targets-after-layout-changed.html
+          subtest: scrollsnapchange doesn't fire after layout change if snapped to the same elements
+        - test: scrollsnapchange-same-targets-after-layout-changed.html
+          subtest: scrollsnapchange doesn't fire after snap to the same targets after scroll. elements
+        - test: scrollsnapchange-with-proximity-strictness.tentative.html
+          subtest: Scrollsnapchange fires when scrolling outside proximity range.
+        - test: scrollsnapchange-after-layout-change.tentative.html
+          subtest: scrollsnapchange fires after snap area is snapped to upon layout change.
+        - test: scrollsnapchange-after-layout-change.tentative.html
+          subtest: scrollsnapchange fires after snap area is snapped to upon layout change without scroll.
+        - test: scrollsnapchange-after-layout-change.tentative.html
+          subtest: scrollsnapchange fires when container stops snapping
+        - test: scrollsnapchange-after-layout-change.tentative.html
+          subtest: scrollsnapchange fires when snap container no longer has snap areas
+        - test: scrollsnapchange-on-programmatic-scroll.tentative.html
+          subtest: scrollsnapchange event fires after snap target changes via scrollTo
+        - test: scrollsnapchange-on-programmatic-scroll.tentative.html
+          subtest: Element.onscrollsnapchange event fires after snap target changes viascrollTo
+        - test: scrollsnapchange-on-programmatic-scroll.tentative.html
+          subtest: scrollsnapchange is not fired if snap target doesn't change on programmatic scroll
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1892306
+      results:
+        - test: scrollsnapchange-scrolling-non-snapping-axis.tentative.html
+        - test: scrollsnapchange-scrolling-non-snapping-axis.tentative.html
+          subtest: wheel scroll on non-snapping axis doesn't trigger snapchanged
