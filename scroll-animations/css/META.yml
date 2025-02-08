@@ -1,24 +1,29 @@
 links:
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1795181
-      results:
-        - test: scroll-timeline-dynamic.tentative.html
-          status: CRASH
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1885015
-      results:
-        - test: animation-shorthand.html
-    - product: safari
-      url: https://bugs.webkit.org/show_bug.cgi?id=285518
-      results:
-        - test: animation-range-normal-matches-cover.html
-        - test: animation-range-visual-test.html
-        - test: view-timeline-animation-range-update.tentative.html
-    - product: safari
-      url: https://bugs.webkit.org/show_bug.cgi?id=285754
-      results:
-        - test: view-timeline-inset-animation.html
-    - product: safari
-      url: https://bugs.webkit.org/show_bug.cgi?id=285990
-      results:
-        - test: view-timeline-with-transform-on-subject.html
+- product: firefox
+  results:
+  - status: CRASH
+    test: scroll-timeline-dynamic.tentative.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1795181
+- product: firefox
+  results:
+  - test: animation-shorthand.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1885015
+- product: safari
+  results:
+  - test: animation-range-normal-matches-cover.html
+  - test: animation-range-visual-test.html
+  - test: view-timeline-animation-range-update.tentative.html
+  url: https://bugs.webkit.org/show_bug.cgi?id=285518
+- product: safari
+  results:
+  - test: view-timeline-inset-animation.html
+  url: https://bugs.webkit.org/show_bug.cgi?id=285754
+- product: safari
+  results:
+  - test: view-timeline-with-transform-on-subject.html
+  url: https://bugs.webkit.org/show_bug.cgi?id=285990
+- product: firefox
+  results:
+  - subtest: Animation.timeline returns attached timeline
+    test: animation-timeline-deferred.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1946965
