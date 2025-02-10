@@ -22,3 +22,21 @@ links:
       url: https://bugs.webkit.org/show_bug.cgi?id=285990
       results:
         - test: view-timeline-with-transform-on-subject.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1946965
+      results:
+        - test: animation-timeline-deferred.html
+          subtest: Animation.timeline returns attached timeline
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1947036
+      results:
+        - test: view-timeline-lookup.html
+          subtest: timeline-scope on ancestor sibling, conflict remains unresolved
+    - product: safari
+      url: https://bugs.webkit.org/show_bug.cgi?id=287393
+      results:
+        - test: animation-timeline-ignored.tentative.html
+    - product: safari
+      url: https://bugs.webkit.org/show_bug.cgi?id=287398
+      results:
+        - test: animation-shorthand.html
