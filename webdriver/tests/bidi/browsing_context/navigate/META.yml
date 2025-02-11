@@ -15,3 +15,10 @@ links:
   - subtest: test_same_document_navigation_in_before_unload
     test: navigate.py
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1945627
+- product: firefox
+  results:
+  - subtest: test_navigate_with_beforeunload_prompt_in_iframe[capabilities0-False-interactive]
+    test: navigate.py
+  - subtest: test_navigate_with_beforeunload_prompt_in_iframe[capabilities0-False-complete]
+    test: navigate.py
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1947474
