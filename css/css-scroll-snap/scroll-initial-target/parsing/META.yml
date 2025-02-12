@@ -11,3 +11,14 @@ links:
       value
     test: scroll-initial-target-valid.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1946889
+  - product: firefox
+    url: https://bugzilla.mozilla.org/show_bug.cgi?id=1921315
+    results:
+    - test: scroll-initial-target-computed.html
+      subtest: Property scroll-start-target value 'auto'
+    - test: scroll-initial-target-computed.html
+      subtest: Property scroll-start-target value 'none'
+    - test: scroll-initial-target-valid.html
+      subtest: e.style['scroll-start-target'] = "none" should set the property value
+    - test: scroll-initial-target-valid.html
+      subtest: e.style['scroll-start-target'] = "auto" should set the property value
