@@ -134,3 +134,27 @@ links:
       during paste.
     test: paste-in-list-with-inline-style.tentative.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1944214
+- product: firefox
+  results:
+  - subtest: The extra line break is missing after the paragraph that ends with a
+      comment.
+    test: plain-text-copy-paste-of-paragraph-ending-with-non-layed-out-content.html
+  - subtest: The extra line break is missing after the paragraph that ends with a
+      display:none span.
+    test: plain-text-copy-paste-of-paragraph-ending-with-non-layed-out-content.html
+  - subtest: The extra line break is missing after the paragraph that ends with a
+      hidden span.
+    test: plain-text-copy-paste-of-paragraph-ending-with-non-layed-out-content.html
+  - subtest: The extra line break is missing after the paragraph that ends with a
+      meta tag.
+    test: plain-text-copy-paste-of-paragraph-ending-with-non-layed-out-content.html
+  - subtest: The extra line break is missing after the paragraph that ends with a
+      style tag.
+    test: plain-text-copy-paste-of-paragraph-ending-with-non-layed-out-content.html
+  - subtest: The extra line break is missing after the paragraph that ends with a
+      base tag.
+    test: plain-text-copy-paste-of-paragraph-ending-with-non-layed-out-content.html
+  - subtest: Line break should not be present before semicolon after block elements
+      styled as inline-block.
+    test: plain-text-copy-paste-of-paragraph-ending-with-non-layed-out-content.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1948281
