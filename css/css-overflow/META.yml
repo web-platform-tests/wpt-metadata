@@ -375,6 +375,11 @@ links:
         - test: inheritance.html
           subtest: Property overflow-block has initial value visible
     - product: firefox
-      results:
-      - test: scroll-buttons-scroll-distance.html
       url: https://bugzilla.mozilla.org/show_bug.cgi?id=1946531
+      results:
+        - test: scroll-buttons-scroll-distance.html
+    - product: safari
+      url: https://bugs.webkit.org/show_bug.cgi?id=287765
+      results:
+        - test: orthogonal-flow-with-inline-end-margin.html
+          subtest: Scrollable container with orthogonal writing-mode child with inline-end margin
