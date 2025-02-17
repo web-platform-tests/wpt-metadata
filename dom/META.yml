@@ -50,7 +50,6 @@ links:
       results:
         - test: idlharness.window.html?exclude=Node
     - label: interop-2022-webcompat
-      url: ""
       results:
         - test: eventPathRemoved.html
     - product: chrome
@@ -70,3 +69,18 @@ links:
     - label: interop-2025-remove-mutation-events
       results:
         - test: historical-mutation-events.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=769207
+      results:
+        - test: historical-mutation-events.html
+          subtest: 'Historical DOM features must be removed: MutationEvent'
+        - test: historical-mutation-events.html
+          subtest: The DOMSubtreeModified mutation event must not be fired.
+        - test: historical-mutation-events.html
+          subtest: The DOMNodeInserted mutation event must not be fired.
+        - test: historical-mutation-events.html
+          subtest: The DOMNodeRemoved mutation event must not be fired.
+        - test: historical-mutation-events.html
+          subtest: The DOMCharacterDataModified mutation event must not be fired.
+        - test: historical-mutation-events.html
+          subtest: The DOMAttrModified mutation event must not be fired.
