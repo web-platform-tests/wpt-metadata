@@ -1,83 +1,95 @@
 links:
-- product: firefox
-  results:
-  - status: CRASH
-    test: scroll-timeline-dynamic.tentative.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1795181
-- product: firefox
-  results:
-  - test: animation-shorthand.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1885015
-- product: safari
-  results:
-  - test: animation-range-normal-matches-cover.html
-  - test: animation-range-visual-test.html
-  - test: view-timeline-animation-range-update.tentative.html
-  url: https://bugs.webkit.org/show_bug.cgi?id=285518
-- product: safari
-  results:
-  - test: view-timeline-inset-animation.html
-  url: https://bugs.webkit.org/show_bug.cgi?id=285754
-- product: safari
-  results:
-  - test: view-timeline-with-transform-on-subject.html
-  url: https://bugs.webkit.org/show_bug.cgi?id=285990
-- product: firefox
-  results:
-  - subtest: Animation.timeline returns attached timeline
-    test: animation-timeline-deferred.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1946965
-- product: firefox
-  results:
-  - subtest: timeline-scope on ancestor sibling, conflict remains unresolved
-    test: view-timeline-lookup.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1947036
-- product: safari
-  results:
-  - test: animation-timeline-ignored.tentative.html
-  url: https://bugs.webkit.org/show_bug.cgi?id=287393
-- product: safari
-  results:
-  - test: animation-shorthand.html
-  url: https://bugs.webkit.org/show_bug.cgi?id=287398
-- product: firefox
-  results:
-  - subtest: Property timeline-scope value 'initial'
-    test: timeline-scope-computed.tentative.html
-  - subtest: Property timeline-scope value 'inherit'
-    test: timeline-scope-computed.tentative.html
-  - subtest: Property timeline-scope value 'unset'
-    test: timeline-scope-computed.tentative.html
-  - subtest: Property timeline-scope value 'revert'
-    test: timeline-scope-computed.tentative.html
-  - subtest: Property timeline-scope value 'none'
-    test: timeline-scope-computed.tentative.html
-  - subtest: Property timeline-scope value '--test'
-    test: timeline-scope-computed.tentative.html
-  - subtest: The timeline-scope property shows up in CSSStyleDeclaration enumeration
-    test: timeline-scope-computed.tentative.html
-  - subtest: The timeline-scope property shows up in CSSStyleDeclaration.cssText
-    test: timeline-scope-computed.tentative.html
-  - subtest: e.style['timeline-scope'] = "initial" should set the property value
-    test: timeline-scope-parsing.tentative.html
-  - subtest: e.style['timeline-scope'] = "inherit" should set the property value
-    test: timeline-scope-parsing.tentative.html
-  - subtest: e.style['timeline-scope'] = "unset" should set the property value
-    test: timeline-scope-parsing.tentative.html
-  - subtest: e.style['timeline-scope'] = "revert" should set the property value
-    test: timeline-scope-parsing.tentative.html
-  - subtest: e.style['timeline-scope'] = "none" should set the property value
-    test: timeline-scope-parsing.tentative.html
-  - subtest: e.style['timeline-scope'] = "--abc" should set the property value
-    test: timeline-scope-parsing.tentative.html
-  - subtest: e.style['timeline-scope'] = "  --abc" should set the property value
-    test: timeline-scope-parsing.tentative.html
-  - subtest: e.style['timeline-scope'] = "--aBc" should set the property value
-    test: timeline-scope-parsing.tentative.html
-  - subtest: e.style['timeline-scope'] = "--foo, --bar" should set the property value
-    test: timeline-scope-parsing.tentative.html
-  - subtest: e.style['timeline-scope'] = "--bar, --foo" should set the property value
-    test: timeline-scope-parsing.tentative.html
-  - subtest: e.style['timeline-scope'] = "--auto" should set the property value
-    test: timeline-scope-parsing.tentative.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1947347
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1795181
+      results:
+        - test: scroll-timeline-dynamic.tentative.html
+          status: CRASH
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1885015
+      results:
+        - test: animation-shorthand.html
+    - product: safari
+      url: https://bugs.webkit.org/show_bug.cgi?id=285518
+      results:
+        - test: animation-range-normal-matches-cover.html
+        - test: animation-range-visual-test.html
+        - test: view-timeline-animation-range-update.tentative.html
+    - product: safari
+      url: https://bugs.webkit.org/show_bug.cgi?id=285754
+      results:
+        - test: view-timeline-inset-animation.html
+    - product: safari
+      url: https://bugs.webkit.org/show_bug.cgi?id=285990
+      results:
+        - test: view-timeline-with-transform-on-subject.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1946965
+      results:
+        - test: animation-timeline-deferred.html
+          subtest: Animation.timeline returns attached timeline
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1947036
+      results:
+        - test: view-timeline-lookup.html
+          subtest: timeline-scope on ancestor sibling, conflict remains unresolved
+    - product: safari
+      url: https://bugs.webkit.org/show_bug.cgi?id=287393
+      results:
+        - test: animation-timeline-ignored.tentative.html
+    - product: safari
+      url: https://bugs.webkit.org/show_bug.cgi?id=287398
+      results:
+        - test: animation-shorthand.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1947347
+      results:
+        - test: timeline-scope-computed.tentative.html
+          subtest: Property timeline-scope value 'initial'
+        - test: timeline-scope-computed.tentative.html
+          subtest: Property timeline-scope value 'inherit'
+        - test: timeline-scope-computed.tentative.html
+          subtest: Property timeline-scope value 'unset'
+        - test: timeline-scope-computed.tentative.html
+          subtest: Property timeline-scope value 'revert'
+        - test: timeline-scope-computed.tentative.html
+          subtest: Property timeline-scope value 'none'
+        - test: timeline-scope-computed.tentative.html
+          subtest: Property timeline-scope value '--test'
+        - test: timeline-scope-computed.tentative.html
+          subtest: The timeline-scope property shows up in CSSStyleDeclaration enumeration
+        - test: timeline-scope-computed.tentative.html
+          subtest: The timeline-scope property shows up in CSSStyleDeclaration.cssText
+        - test: timeline-scope-parsing.tentative.html
+          subtest: e.style['timeline-scope'] = "initial" should set the property value
+        - test: timeline-scope-parsing.tentative.html
+          subtest: e.style['timeline-scope'] = "inherit" should set the property value
+        - test: timeline-scope-parsing.tentative.html
+          subtest: e.style['timeline-scope'] = "unset" should set the property value
+        - test: timeline-scope-parsing.tentative.html
+          subtest: e.style['timeline-scope'] = "revert" should set the property value
+        - test: timeline-scope-parsing.tentative.html
+          subtest: e.style['timeline-scope'] = "none" should set the property value
+        - test: timeline-scope-parsing.tentative.html
+          subtest: e.style['timeline-scope'] = "--abc" should set the property value
+        - test: timeline-scope-parsing.tentative.html
+          subtest: e.style['timeline-scope'] = "  --abc" should set the property value
+        - test: timeline-scope-parsing.tentative.html
+          subtest: e.style['timeline-scope'] = "--aBc" should set the property value
+        - test: timeline-scope-parsing.tentative.html
+          subtest: e.style['timeline-scope'] = "--foo, --bar" should set the property value
+        - test: timeline-scope-parsing.tentative.html
+          subtest: e.style['timeline-scope'] = "--bar, --foo" should set the property value
+        - test: timeline-scope-parsing.tentative.html
+          subtest: e.style['timeline-scope'] = "--auto" should set the property value
+    - product: safari
+      url: https://bugs.webkit.org/show_bug.cgi?id=287694
+      results:
+        - test: view-timeline-animation.html
+    - product: safari
+      url: https://bugs.webkit.org/show_bug.cgi?id=287704
+      results:
+        - test: progress-based-animation-animation-longhand-properties.tentative.html
+    - product: safari
+      url: https://bugs.webkit.org/show_bug.cgi?id=287705
+      results:
+        - test: animation-timeline-view-functional-notation.tentative.html
