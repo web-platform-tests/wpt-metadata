@@ -1,11 +1,16 @@
 links:
-    - product: safari
-      url: https://bugs.webkit.org/show_bug.cgi?id=285518
-      results:
-        - test: change-animation-range-updates-play-state.html
-        - test: view-timeline-snapport.html
-        - test: view-timeline-subject-size-changes.html
-    - product: safari
-      url: https://bugs.webkit.org/show_bug.cgi?id=285750
-      results:
-        - test: view-timeline-inset.html
+- product: safari
+  results:
+  - test: change-animation-range-updates-play-state.html
+  - test: view-timeline-snapport.html
+  - test: view-timeline-subject-size-changes.html
+  url: https://bugs.webkit.org/show_bug.cgi?id=285518
+- product: safari
+  results:
+  - test: view-timeline-inset.html
+  url: https://bugs.webkit.org/show_bug.cgi?id=285750
+- product: firefox
+  results:
+  - subtest: View timeline delay
+    test: intermediate-transform.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1948673
