@@ -1,6 +1,15 @@
 links:
 - product: firefox
   results:
+  - subtest: if() cycle through local
+    test: local-if-substitution.html
+  - subtest: if() cycle in condition specified value through local
+    test: local-if-substitution.html
+  - subtest: if() cycle through function
+    test: local-if-substitution.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1948709
+- product: firefox
+  results:
   - subtest: Local with self-cycle
     test: dashed-function-cycles.tentative.html
   - subtest: Cycle reference without fallback makes result invalid
