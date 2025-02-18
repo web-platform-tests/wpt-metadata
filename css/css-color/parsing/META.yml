@@ -2242,3 +2242,58 @@ links:
   - subtest: Property color value 'rgb(from oklch(0 0.399 336.3) r g b)'
     test: relative-color-out-of-gamut.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1938119
+- product: firefox
+  results:
+  - subtest: Property background-color value 'contrast-color(white)'
+    test: color-computed-contrast-color-function.html
+  - subtest: Property background-color value 'contrast-color(black)'
+    test: color-computed-contrast-color-function.html
+  - subtest: Property background-color value 'contrast-color(pink)'
+    test: color-computed-contrast-color-function.html
+  - subtest: Property background-color value 'contrast-color(color(srgb 1 0 1 / 0.5))'
+    test: color-computed-contrast-color-function.html
+  - subtest: Property background-color value 'contrast-color(lab(0.2 0.5 0.2))'
+    test: color-computed-contrast-color-function.html
+  - subtest: Property background-color value 'contrast-color(color(srgb 10 10 10))'
+    test: color-computed-contrast-color-function.html
+  - subtest: Property background-color value 'contrast-color(color(srgb -10 -10 -10))'
+    test: color-computed-contrast-color-function.html
+  - subtest: Property background-color value 'contrast-color(contrast-color(pink))'
+    test: color-computed-contrast-color-function.html
+  - subtest: Property background-color value 'contrast-color(currentcolor)'
+    test: color-computed-contrast-color-function.html
+  - subtest: Property background-color value 'contrast-color(color(srgb calc(1 + (sign(20cqw
+      - 10px) * 1)) calc(1 + (sign(20cqw - 10px) * 1)) calc(1 + (sign(20cqw - 10px)
+      * 1))))'
+    test: color-computed-contrast-color-function.html
+  - subtest: e.style['background-color'] = "contrast-color(white)" should set the
+      property value
+    test: color-valid-contrast-color-function.html
+  - subtest: e.style['background-color'] = "contrast-color(black)" should set the
+      property value
+    test: color-valid-contrast-color-function.html
+  - subtest: e.style['background-color'] = "contrast-color(pink)" should set the property
+      value
+    test: color-valid-contrast-color-function.html
+  - subtest: e.style['background-color'] = "contrast-color(color(srgb 1 0 1 / 0.5))"
+      should set the property value
+    test: color-valid-contrast-color-function.html
+  - subtest: e.style['background-color'] = "contrast-color(lab(0.2 0.5 0.2))" should
+      set the property value
+    test: color-valid-contrast-color-function.html
+  - subtest: e.style['background-color'] = "contrast-color(color(srgb 10 10 10))"
+      should set the property value
+    test: color-valid-contrast-color-function.html
+  - subtest: e.style['background-color'] = "contrast-color(color(srgb -10 -10 -10))"
+      should set the property value
+    test: color-valid-contrast-color-function.html
+  - subtest: e.style['background-color'] = "contrast-color(contrast-color(pink))"
+      should set the property value
+    test: color-valid-contrast-color-function.html
+  - subtest: e.style['background-color'] = "contrast-color(currentcolor)" should set
+      the property value
+    test: color-valid-contrast-color-function.html
+  - subtest: e.style['background-color'] = "contrast-color(color(srgb calc(0.5) calc(1
+      + (sign(20cqw - 10px) * 0.5)) 1 / .5))" should set the property value
+    test: color-valid-contrast-color-function.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1948676

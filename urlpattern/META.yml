@@ -1,5 +1,6 @@
 links:
-    - label: interop-2025-urlpattern
+    - url: ""
+      label: interop-2025-urlpattern
       results:
         - test: urlpattern-hasregexpgroups.any.serviceworker.html
         - test: urlpattern-hasregexpgroups.any.worker.html
@@ -13,3 +14,714 @@ links:
         - test: urlpattern.any.worker.html
         - test: urlpattern.https.any.html
         - test: urlpattern.https.any.worker.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1731418
+      results:
+        - test: urlpattern.any.serviceworker.html
+        - test: urlpattern.any.html
+        - test: urlpattern.any.sharedworker.html
+        - test: urlpattern.https.any.serviceworker.html
+        - test: urlpattern.https.any.sharedworker.html
+        - test: urlpattern.https.any.worker.html
+        - test: urlpattern-hasregexpgroups.any.serviceworker.html
+        - test: urlpattern-hasregexpgroups.any.sharedworker.html
+        - test: urlpattern.any.worker.html
+        - test: urlpattern.https.any.html
+        - test: urlpattern-hasregexpgroups.any.html
+        - test: urlpattern-hasregexpgroups.any.worker.html
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"pathname":"/foo/bar"}] Inputs: [{"pathname":"/foo/bar"}]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"pathname":"/([\\d&&[0-1]])"}] Inputs: [{"pathname":"/3"}]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"pathname":"/([\\d&&[0-1]])"}] Inputs: [{"pathname":"/0"}]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"pathname":"/([[a-z]--a])"}] Inputs: [{"pathname":"/z"}]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"pathname":"/([[a-z]--a])"}] Inputs: [{"pathname":"/a"}]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: ["#foo","https://example.com/?q=*&v=?&hmm={}&umm=()"] Inputs: ["https://example.com/?q=*&v=?&hmm={}&umm=()#foo"]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"hash":"foo","baseURL":"https://example.com/?q=*&v=?&hmm={}&umm=()"}] Inputs: [{"hash":"foo","baseURL":"https://example.com/?q=*&v=?&hmm={}&umm=()"}]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"search":"foo","baseURL":"https://example.com/a/+/b"}] Inputs: [{"search":"foo","baseURL":"https://example.com/a/+/b"}]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: ["/foo?bar#baz","https://example.com:8080",{"ignoreCase":true}] Inputs: [{"pathname":"/FOO","search":"BAR","hash":"BAZ","baseURL":"https://example.com:8080"}]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: ["/foo?bar#baz",{"ignoreCase":true},"https://example.com:8080"] Inputs: [{"pathname":"/FOO","search":"BAR","hash":"BAZ","baseURL":"https://example.com:8080"}]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: ["https://example.com:8080/foo?bar#baz",{"ignoreCase":true}] Inputs: [{"pathname":"/FOO","search":"BAR","hash":"BAZ","baseURL":"https://example.com:8080"}]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"ignoreCase":true}] Inputs: [{"pathname":"/FOO/BAR"}]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"pathname":"/foo/bar"},{"ignoreCase":true}] Inputs: [{"pathname":"/FOO/BAR"}]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"pathname":":foo../"}] Inputs: [{"pathname":"bar../"}]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"pathname":"/:foo\\bar"}] Inputs: [{"pathname":"/bazbar"}]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"pathname":":foo./"}] Inputs: [{"pathname":"bar./"}]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"pathname":"../foo"}] Inputs: [{"pathname":"../foo"}]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"pathname":"./foo"}] Inputs: [{"pathname":"./foo"}]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"pathname":"/:foo."}] Inputs: [{"pathname":"/bar."}]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"pathname":"/:foo.."}] Inputs: [{"pathname":"/bar.."}]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"pathname":"*//*"}] Inputs: [{"pathname":"foo/bar"}]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"pathname":"*/{*}"}] Inputs: [{"pathname":"foo/bar"}]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"pathname":"*\\/*"}] Inputs: [{"pathname":"foo/bar"}]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"pathname":"*/*"}] Inputs: [{"pathname":"foo/bar"}]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"pathname":":foo(baz)bar"}] Inputs: [{"pathname":"bazbar"}]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"pathname":":foo(baz)(.*)"}] Inputs: [{"pathname":"bazbar"}]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"pathname":"*{}**?"}] Inputs: [{"pathname":"foobar"}]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"pathname":":foo{}bar"}] Inputs: [{"pathname":"foobar"}]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"pathname":":foo{}?bar"}] Inputs: [{"pathname":"foobar"}]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"pathname":":foo\\bar"}] Inputs: [{"pathname":"foobar"}]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"pathname":":foo{}(.*)"}] Inputs: [{"pathname":"foobar"}]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"pathname":"{:foo}bar"}] Inputs: [{"pathname":"foobar"}]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"pathname":"{:foo(foo)bar}"}] Inputs: [{"pathname":"foobar"}]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"pathname":"{:foo\\.bar}"}] Inputs: [{"pathname":"foo.bar"}]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"pathname":"{:foo\\bar}"}] Inputs: [{"pathname":"foobar"}]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"pathname":"{:foo}?(.*)"}] Inputs: [{"pathname":"foobarbaz"}]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"pathname":"{:foo}:bar(.*)"}] Inputs: [{"pathname":"foobarbaz"}]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"pathname":"{:foo}{bar(.*)}"}] Inputs: [{"pathname":"foobarbaz"}]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"pathname":"{:foo}{(.*)bar}"}] Inputs: [{"pathname":"foobarbaz"}]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"pathname":"{:foo}{(.*)}"}] Inputs: [{"pathname":"foobarbaz"}]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"pathname":"{:foo}(.*)"}] Inputs: [{"pathname":"foobarbaz"}]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"pathname":"{:foo}(barbaz)"}] Inputs: [{"pathname":"foobarbaz"}]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"pathname":"(foo)?(.*)"}] Inputs: [{"pathname":"foobarbaz"}]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"pathname":"{(foo)bar}(.*)"}] Inputs: [{"pathname":"foobarbaz"}]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"pathname":"(foo)(.*)"}] Inputs: [{"pathname":"foobarbaz"}]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [] Inputs: []'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [] Inputs: [{}]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [] Inputs: ["https://example.com/"]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{}] Inputs: ["https://example.com/"]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"hostname":"bad\thostname"}] Inputs: undefined'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"hostname":"bad\rhostname"}] Inputs: undefined'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"hostname":"bad\nhostname"}] Inputs: undefined'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"hostname":"bad|hostname"}] Inputs: undefined'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"hostname":"bad^hostname"}] Inputs: undefined'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"hostname":"bad\\\\hostname"}] Inputs: undefined'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"hostname":"bad]hostname"}] Inputs: undefined'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"hostname":"bad[hostname"}] Inputs: undefined'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"hostname":"bad@hostname"}] Inputs: undefined'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"hostname":"bad?hostname"}] Inputs: undefined'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"hostname":"bad>hostname"}] Inputs: undefined'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"hostname":"bad\\:hostname"}] Inputs: undefined'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"hostname":"bad<hostname"}] Inputs: undefined'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"hostname":"bad/hostname"}] Inputs: undefined'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"hostname":"bad%hostname"}] Inputs: undefined'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"hostname":"bad#hostname"}] Inputs: undefined'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"hostname":"bad hostname"}] Inputs: undefined'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"protocol":":name"}] Inputs: [{"protocol":"foobar"}]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"protocol":":name+"}] Inputs: [{"protocol":"foobar"}]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"protocol":":name*"}] Inputs: [{"protocol":"foobar"}]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"pathname":":name"}] Inputs: [{"pathname":"foobar"}]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"pathname":":name+"}] Inputs: [{"pathname":"foobar"}]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"pathname":":name*"}] Inputs: [{"pathname":"foobar"}]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"pathname":"/foo"},"https://example.com"] Inputs: undefined'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: ["/foo",""] Inputs: undefined'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"pathname":"/foo","baseURL":""}] Inputs: undefined'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: ["data\\:text/javascript,let x = 100/:tens?5;"] Inputs: ["data:text/javascript,let x = 100/5;"]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"pathname":"/:id/:id"}] Inputs: undefined'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: ["https://foo{@example.com"] Inputs: ["https://foo@example.com"]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: ["https://foo{{@}}example.com"] Inputs: ["https://foo@example.com"]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"hostname":"*\\:1]"}] Inputs: undefined'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"hostname":"[*\\:1]"}] Inputs: [{"hostname":"[::ab:1]"}]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"hostname":"{[\\:\\::num\\:1]}"}] Inputs: [{"hostname":"[::ab:1]"}]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"hostname":"{[\\:\\::num\\:fé]}"}] Inputs: undefined'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"hostname":"{[\\:\\:fé\\::num]}"}] Inputs: undefined'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"hostname":"{[\\:\\:ab\\::num]}"}] Inputs: [{"hostname":"[::ab:1]"}]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"hostname":"[\\:\\:AB\\::num]"}] Inputs: [{"hostname":"[::ab:1]"}]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"hostname":"[\\:\\:xY\\::num]"}] Inputs: undefined'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: ["http://[\\:\\:AB\\::num]/"] Inputs: ["http://[::ab:1]/"]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: ["http://[:address]/"] Inputs: ["http://[::1]/"]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: ["http://[\\:\\:a]/"] Inputs: ["http://[::a]/"]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: ["http://[\\:\\:1]:8080/"] Inputs: ["http://[::1]:8080/"]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: ["http://[\\:\\:1]/"] Inputs: ["http://[::1]/"]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: ["data{\\:}channel.html","https://example.com"] Inputs: ["https://example.com/data:channel.html"]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: ["https://foo{\\:}bar@example.com"] Inputs: ["https://foo:bar@example.com"]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: ["data\\:foo\\:bar@example.com"] Inputs: ["data:foo:bar@example.com"]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: ["https://:user::pass@example.com"] Inputs: ["https://foo:bar@example.com"]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: ["https\\:foo\\:bar@example.com"] Inputs: ["https:foo:bar@example.com"]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: ["https://\\:bar@example.com"] Inputs: ["https://:bar@example.com"]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: ["https://foo@example.com"] Inputs: ["https://foo@example.com"]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: ["https://foo\\:bar@example.com"] Inputs: ["https://foo:bar@example.com"]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"pathname":"*"}] Inputs: ["foo","not|a|valid|url"]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"pathname":"*"}] Inputs: ["foo","data:data-urls-cannot-be-base-urls"]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: ["#baz","https://example.com/foo?bar"] Inputs: ["#baz","https://example.com/foo?bar"]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: ["#baz","https://example.com/foo"] Inputs: ["#baz","https://example.com/foo"]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: ["?bar","https://example.com/foo#baz"] Inputs: ["?bar","https://example.com/foo#snafu"]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: ["?bar#baz","https://example.com/foo"] Inputs: ["?bar#baz","https://example.com/foo"]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"protocol":"http{s}?:","search":"?bar","hash":"#baz"}] Inputs: ["http://example.com/foo?bar#baz"]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: ["https://example.com/foo?bar#baz"] Inputs: [{"protocol":"https:","search":"?bar","hash":"#baz","baseURL":"http://example.com/foo"}]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: ["(café)://foo"] Inputs: undefined'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: ["foo://bar"] Inputs: ["foo://bad_url_browser_interop"]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: ["data:"] Inputs: ["data:"]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: ["file:///foo/bar"] Inputs: ["file:///foo/bar"]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: ["https://(sub(?:.))?example.com/foo"] Inputs: ["https://example.com/foo"]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: ["(https://)example.com/foo"] Inputs: ["https://example.com/foo"]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: ["https://{sub{.}}example.com/foo"] Inputs: ["https://example.com/foo"]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: ["https://(sub.)?example(.com/)foo"] Inputs: ["https://example.com/foo"]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: ["https://(sub.)?example.com/foo"] Inputs: ["https://example.com/foo"]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: ["{https://}example.com/foo"] Inputs: ["https://example.com/foo"]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: ["https://{sub.}?example{.com/}foo"] Inputs: ["https://example.com/foo"]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: ["https://{sub.}?example.com/foo"] Inputs: ["https://example.com/foo"]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: ["data\\:foobar"] Inputs: ["data:foobar"]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: ["https://example.com/"] Inputs: ["https://example.com:8080/"]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: ["data:foobar"] Inputs: ["data:foobar"]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: ["https://example.com/{bar}\\?foo"] Inputs: ["https://example.com/bar?foo"]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: ["https://example.com/{bar}?foo"] Inputs: ["https://example.com/bar?foo"]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: ["https://example.com/(bar)\\?foo"] Inputs: ["https://example.com/bar?foo"]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: ["https://example.com/(bar)?foo"] Inputs: ["https://example.com/bar?foo"]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: ["https://example.com/:name\\?foo"] Inputs: ["https://example.com/bar?foo"]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: ["https://example.com/:name?foo"] Inputs: ["https://example.com/bar?foo"]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: ["https://example.com/*\\?foo"] Inputs: ["https://example.com/?foo"]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: ["https://example.com/*?foo"] Inputs: ["https://example.com/?foo"]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: ["https://example.com/#foo"] Inputs: ["https://example.com/#foo"]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: ["https://example.com/?foo"] Inputs: ["https://example.com/?foo"]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: ["https://example.com:8080#foo"] Inputs: ["https://example.com:8080/#foo"]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: ["https://example.com:8080?foo"] Inputs: ["https://example.com:8080/?foo"]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: ["https://example.com#foo"] Inputs: ["https://example.com/#foo"]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: ["https://example.com?foo"] Inputs: ["https://example.com/?foo"]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: ["http{s}?://{*.}?example.com/:product/:endpoint"] Inputs: ["https://sub.example.com/foo/bar"]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: ["example.com/foo"] Inputs: undefined'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: ["/foo"] Inputs: undefined'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: ["/foo?bar#baz","https://example.com:8080"] Inputs: [{"pathname":"/foo","search":"bar","hash":"baz","baseURL":"https://example.com:8080"}]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: ["https://example.com:8080/foo?bar#baz"] Inputs: [{"pathname":"/foo","search":"bar","hash":"baz","baseURL":"https://example.com:8080"}]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"pathname":"/foo/bar"}] Inputs: [{"pathname":"/foo/bar"},"https://example.com"]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"pathname":"/foo/bar"}] Inputs: ["./foo/bar","https://example.com"]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"pathname":"var x = 1;"}] Inputs: [{"pathname":"var x = 1;"}]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"protocol":"(data|javascript)","pathname":"var x = 1;"}] Inputs: [{"protocol":"javascript","pathname":"var x = 1;"}]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"protocol":"(https|javascript)","pathname":"var x = 1;"}] Inputs: [{"protocol":"javascript","pathname":"var x = 1;"}]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"protocol":"javascript","pathname":"var x = 1;"}] Inputs: [{"baseURL":"javascript:var x = 1;"}]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"pathname":"var x = 1;"}] Inputs: [{"protocol":"javascript","pathname":"var x = 1;"}]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"protocol":"javascript","pathname":"var x = 1;"}] Inputs: [{"protocol":"javascript","pathname":"var x = 1;"}]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"pathname":"/foo\\("}] Inputs: [{"pathname":"/foo("}]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"pathname":"/foo\\{"}] Inputs: [{"pathname":"/foo{"}]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"pathname":"/foo\\:"}] Inputs: [{"pathname":"/foo:"}]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"pathname":"/foo!"}] Inputs: [{"pathname":"/foo!"}]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"pathname":"/(\\m)"}] Inputs: undefined'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"protocol":"data","pathname":":number([0-9]+)"}] Inputs: ["data:8675309"]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"protocol":"about","pathname":"(blank|sourcedoc)"}] Inputs: ["about:blank"]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"hash":"caf%c3%a9"}] Inputs: [{"hash":"café"}]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"hash":"café"}] Inputs: [{"hash":"café"}]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"hash":"caf%C3%A9"}] Inputs: [{"hash":"café"}]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"search":"q=café"}] Inputs: [{"search":"q=café"}]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"search":"q=caf%c3%a9"}] Inputs: [{"search":"q=café"}]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"search":"q=caf%C3%A9"}] Inputs: [{"search":"q=café"}]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"pathname":":name.html","baseURL":"https://example.com"}] Inputs: ["https://example.com/foo.html"]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"pathname":"foo/bar","baseURL":"https://example.com"}] Inputs: ["https://example.com/foo/bar"]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"pathname":"foo/bar"}] Inputs: ["https://example.com/foo/bar"]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"pathname":"b","baseURL":"https://example.com/foo/"}] Inputs: [{"pathname":"./b","baseURL":"https://example.com/foo/"}]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"pathname":"\\/bar","baseURL":"https://example.com/foo/"}] Inputs: [{"pathname":"./bar","baseURL":"https://example.com/foo/"}]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"pathname":"","baseURL":"https://example.com"}] Inputs: [{"pathname":"/","baseURL":"https://example.com"}]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"pathname":"{/bar}","baseURL":"https://example.com/foo/"}] Inputs: [{"pathname":"./bar","baseURL":"https://example.com/foo/"}]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"pathname":"./foo/bar","baseURL":"https://example.com"}] Inputs: [{"pathname":"foo/bar","baseURL":"https://example.com"}]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"pathname":"/foo/../bar"}] Inputs: [{"pathname":"/bar"}]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"pathname":"/foo/bar"}] Inputs: [{"pathname":"foo/bar","baseURL":"https://example.com"}]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"pathname":"/foo/bar"}] Inputs: [{"pathname":"foo/bar"}]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"pathname":"/caf%c3%a9"}] Inputs: [{"pathname":"/café"}]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"pathname":"/café"}] Inputs: [{"pathname":"/café"}]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"pathname":"/caf%C3%A9"}] Inputs: [{"pathname":"/café"}]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"pathname":"/foo/bar"}] Inputs: [{"pathname":"/foo/./bar"}]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"pathname":"/foo/baz"}] Inputs: [{"pathname":"/foo/bar/../baz"}]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"port":"(.*)"}] Inputs: [{"port":"invalid80"}]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"port":"80"}] Inputs: [{"port":"80"}]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"protocol":"http{s}?","port":"80"}] Inputs: [{"protocol":"http","port":"80"}]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"port":"80"}] Inputs: [{"protocol":"http","port":"80"}]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"protocol":"http","port":"80 "}] Inputs: [{"protocol":"http","port":"80"}]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"protocol":"http","port":"80{20}?"}] Inputs: [{"protocol":"http","port":"80"}]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"protocol":"http","port":"80"}] Inputs: [{"protocol":"http","port":"80"}]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"port":""}] Inputs: [{"protocol":"http","port":"80"}]'
+        - test: urlpattern.any.html
+          subtest: "Pattern: [{\"pathname\":\":\U0001F6B2\"}] Inputs: undefined"
+        - test: urlpattern.any.html
+          subtest: "Pattern: [{\"pathname\":\"test/:a\U00010450b\"}] Inputs: [{\"pathname\":\"test/foo\"}]"
+        - test: urlpattern.any.html
+          subtest: "Pattern: [{\"pathname\":\":a\U000E0100b\"}] Inputs: []"
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"pathname":":\ud83d \udeb2"}] Inputs: undefined'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"pathname":"\ud83d \udeb2"}] Inputs: []'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: ["http://\ud83d \udeb2"] Inputs: undefined'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"hostname":"\ud83d \udeb2"}] Inputs: undefined'
+        - test: urlpattern.any.html
+          subtest: "Pattern: [\"http://\U0001F6B2.com/\"] Inputs: [\"http://\U0001F6B2.com/\"]"
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"hostname":"café.com"}] Inputs: [{"hostname":"café.com"}]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"hostname":"xn--caf-dma.com"}] Inputs: [{"hostname":"café.com"}]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"password":"caf%c3%a9"}] Inputs: [{"password":"café"}]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"password":"café"}] Inputs: [{"password":"café"}]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"password":"caf%C3%A9"}] Inputs: [{"password":"café"}]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"username":"caf%c3%a9"}] Inputs: [{"username":"café"}]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"username":"café"}] Inputs: [{"username":"café"}]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"username":"caf%C3%A9"}] Inputs: [{"username":"café"}]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"protocol":"foo-bar"}] Inputs: [{"protocol":"foo-bar"}]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"protocol":"(.*)"}] Inputs: [{"protocol":"cafe"}]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"protocol":"(.*)"}] Inputs: [{"protocol":"café"}]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"hash":":㐀"}] Inputs: [{"hash":"foo"}]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"search":":㐀"}] Inputs: [{"search":"foo"}]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"pathname":"/:㐀"}] Inputs: [{"pathname":"/foo"}]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"hostname":":㐀"}] Inputs: [{"hostname":"foo"}]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"password":":㐀"}] Inputs: [{"password":"foo"}]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"username":":㐀"}] Inputs: [{"username":"foo"}]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"protocol":":㐀"}] Inputs: [{"protocol":"foo"}]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"hash":":℘"}] Inputs: [{"hash":"foo"}]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"search":":℘"}] Inputs: [{"search":"foo"}]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"pathname":"/:℘"}] Inputs: [{"pathname":"/foo"}]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"hostname":":℘"}] Inputs: [{"hostname":"foo"}]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"password":":℘"}] Inputs: [{"password":"foo"}]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"username":":℘"}] Inputs: [{"username":"foo"}]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"protocol":":℘"}] Inputs: [{"protocol":"foo"}]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"hash":":café"}] Inputs: [{"hash":"foo"}]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"search":":café"}] Inputs: [{"search":"foo"}]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"pathname":"/:café"}] Inputs: [{"pathname":"/foo"}]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"hostname":":café"}] Inputs: [{"hostname":"foo"}]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"password":":café"}] Inputs: [{"password":"foo"}]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"username":":café"}] Inputs: [{"username":"foo"}]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"protocol":":café"}] Inputs: [{"protocol":"foo"}]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"hash":"(café)"}] Inputs: undefined'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"pathname":"(café)"}] Inputs: undefined'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"search":"(café)"}] Inputs: undefined'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"hostname":"(café)"}] Inputs: undefined'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"password":"(café)"}] Inputs: undefined'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"username":"(café)"}] Inputs: undefined'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"protocol":"(café)"}] Inputs: undefined'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"pathname":"/foo{/bar}*"}] Inputs: [{"pathname":"/foo/"}]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"pathname":"/foo{/bar}*"}] Inputs: [{"pathname":"/foo"}]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"pathname":"/foo{/bar}*"}] Inputs: [{"pathname":"/foo/bar/baz"}]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"pathname":"/foo{/bar}*"}] Inputs: [{"pathname":"/foo/bar/bar"}]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"pathname":"/foo{/bar}*"}] Inputs: [{"pathname":"/foo/bar"}]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"pathname":"/foo{/bar}+"}] Inputs: [{"pathname":"/foo/"}]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"pathname":"/foo{/bar}+"}] Inputs: [{"pathname":"/foo/bar/baz"}]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"pathname":"/foo{/bar}+"}] Inputs: [{"pathname":"/foo"}]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"pathname":"/foo{/bar}+"}] Inputs: [{"pathname":"/foo/bar/bar"}]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"pathname":"/foo{/bar}?"}] Inputs: [{"pathname":"/foo/"}]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"pathname":"/foo{/bar}+"}] Inputs: [{"pathname":"/foo/bar"}]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"pathname":"/foo{/bar}?"}] Inputs: [{"pathname":"/foo"}]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"pathname":"/foo{/bar}?"}] Inputs: [{"pathname":"/foo/bar/baz"}]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"pathname":"/foo{/bar}?"}] Inputs: [{"pathname":"/foo/bar"}]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"pathname":"/foo{/bar}"}] Inputs: [{"pathname":"/foo/"}]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"pathname":"/foo{/bar}"}] Inputs: [{"pathname":"/foo"}]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"pathname":"/foo{/bar}"}] Inputs: [{"pathname":"/foo/bar/baz"}]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"pathname":"/foo{/bar}"}] Inputs: [{"pathname":"/foo/bar"}]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"pathname":"/foo/(.*)*"}] Inputs: [{"pathname":"/fo"}]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"pathname":"/foo/**"}] Inputs: [{"pathname":"/fo"}]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"pathname":"/foo/**"}] Inputs: [{"pathname":"/foobar"}]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"pathname":"/foo/**"}] Inputs: [{"pathname":"/foo/"}]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"pathname":"/foo/(.*)*"}] Inputs: [{"pathname":"/foobar"}]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"pathname":"/foo/(.*)*"}] Inputs: [{"pathname":"/foo/"}]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"pathname":"/foo/**"}] Inputs: [{"pathname":"/foo"}]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"pathname":"/foo/(.*)*"}] Inputs: [{"pathname":"/foo"}]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"pathname":"/foo/**"}] Inputs: [{"pathname":"/foo/bar/baz"}]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"pathname":"/foo/(.*)*"}] Inputs: [{"pathname":"/foo/bar/baz"}]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"pathname":"/foo/**"}] Inputs: [{"pathname":"/foo/bar"}]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"pathname":"/foo/(.*)*"}] Inputs: [{"pathname":"/foo/bar"}]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"pathname":"/foo/*+"}] Inputs: [{"pathname":"/fo"}]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"pathname":"/foo/(.*)+"}] Inputs: [{"pathname":"/fo"}]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"pathname":"/foo/*+"}] Inputs: [{"pathname":"/foobar"}]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"pathname":"/foo/(.*)+"}] Inputs: [{"pathname":"/foobar"}]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"pathname":"/foo/*+"}] Inputs: [{"pathname":"/foo/"}]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"pathname":"/foo/*+"}] Inputs: [{"pathname":"/foo"}]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"pathname":"/foo/(.*)+"}] Inputs: [{"pathname":"/foo/"}]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"pathname":"/foo/(.*)+"}] Inputs: [{"pathname":"/foo"}]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"pathname":"/foo/*+"}] Inputs: [{"pathname":"/foo/bar/baz"}]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"pathname":"/foo/(.*)+"}] Inputs: [{"pathname":"/foo/bar/baz"}]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"pathname":"/foo/*+"}] Inputs: [{"pathname":"/foo/bar"}]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"pathname":"/foo/(.*)+"}] Inputs: [{"pathname":"/foo/bar"}]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"pathname":"/foo/*?"}] Inputs: [{"pathname":"/fo"}]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"pathname":"/foo/(.*)?"}] Inputs: [{"pathname":"/fo"}]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"pathname":"/foo/*?"}] Inputs: [{"pathname":"/foobar"}]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"pathname":"/foo/(.*)?"}] Inputs: [{"pathname":"/foobar"}]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"pathname":"/foo/*?"}] Inputs: [{"pathname":"/foo/"}]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"pathname":"/foo/(.*)?"}] Inputs: [{"pathname":"/foo/"}]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"pathname":"/foo/*?"}] Inputs: [{"pathname":"/foo"}]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"pathname":"/foo/(.*)?"}] Inputs: [{"pathname":"/foo"}]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"pathname":"/foo/*?"}] Inputs: [{"pathname":"/foo/bar/baz"}]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"pathname":"/foo/(.*)?"}] Inputs: [{"pathname":"/foo/bar/baz"}]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"pathname":"/foo/(.*)?"}] Inputs: [{"pathname":"/foo/bar"}]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"pathname":"/foo/*?"}] Inputs: [{"pathname":"/foo/bar"}]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"pathname":"/foo/:bar*"}] Inputs: [{"pathname":"/foo/"}]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"pathname":"/foo/:bar*"}] Inputs: [{"pathname":"/foobar"}]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"pathname":"/foo/:bar*"}] Inputs: [{"pathname":"/foo"}]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"pathname":"/foo/:bar*"}] Inputs: [{"pathname":"/foo/bar/baz"}]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"pathname":"/foo/:bar*"}] Inputs: [{"pathname":"/foo/bar"}]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"pathname":"/foo/:bar+"}] Inputs: [{"pathname":"/foobar"}]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"pathname":"/foo/:bar+"}] Inputs: [{"pathname":"/foo/"}]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"pathname":"/foo/:bar+"}] Inputs: [{"pathname":"/foo"}]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"pathname":"/foo/:bar+"}] Inputs: [{"pathname":"/foo/bar/baz"}]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"pathname":"/foo/:bar+"}] Inputs: [{"pathname":"/foo/bar"}]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"pathname":"/foo/:bar?"}] Inputs: [{"pathname":"/foo/bar/baz"}]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"pathname":"/foo/:bar?"}] Inputs: [{"pathname":"/foobar"}]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"pathname":"/foo/:bar?"}] Inputs: [{"pathname":"/foo/"}]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"pathname":"/foo/:bar?"}] Inputs: [{"pathname":"/foo"}]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"pathname":"/foo/:bar?"}] Inputs: [{"pathname":"/foo/bar"}]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"pathname":"/foo/:bar(.*)"}] Inputs: [{"pathname":"/foo"}]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"pathname":"/foo/:bar(.*)"}] Inputs: [{"pathname":"/foo/bar/baz"}]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"pathname":"/foo/:bar(.*)"}] Inputs: [{"pathname":"/foo/"}]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"pathname":"/foo/:bar(.*)"}] Inputs: [{"pathname":"/foo/bar"}]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"pathname":"/foo/*"}] Inputs: [{"pathname":"/foo"}]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"pathname":"/foo/(.*)"}] Inputs: [{"pathname":"/foo"}]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"pathname":"/foo/*"}] Inputs: [{"pathname":"/foo/"}]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"pathname":"/foo/(.*)"}] Inputs: [{"pathname":"/foo/"}]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"pathname":"/foo/*"}] Inputs: [{"pathname":"/foo/bar/baz"}]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"pathname":"/foo/(.*)"}] Inputs: [{"pathname":"/foo/bar/baz"}]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"pathname":"/foo/*"}] Inputs: [{"pathname":"/foo/bar"}]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"pathname":"/foo/(.*)"}] Inputs: [{"pathname":"/foo/bar"}]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"pathname":"/foo/:bar"}] Inputs: [{"pathname":"/foo/"}]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"pathname":"/foo/:bar"}] Inputs: [{"pathname":"/foo/bar/"}]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"pathname":"/foo/:bar"}] Inputs: [{"pathname":"/foo/index.html"}]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"pathname":"/foo/([^\\/]+?)"}] Inputs: [{"pathname":"/foo/bar"}]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"pathname":"/foo/:bar"}] Inputs: [{"pathname":"/foo/bar"}]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"pathname":"/foo/bar","baseURL":"https://example.com?query#hash"}] Inputs: [{"pathname":"/foo/bar","baseURL":"http://example.com"}]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"pathname":"/foo/bar","baseURL":"https://example.com?query#hash"}] Inputs: [{"pathname":"/foo/bar","baseURL":"https://other.com"}]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"pathname":"/foo/bar","baseURL":"https://example.com?query#hash"}] Inputs: [{"pathname":"/foo/bar/baz","baseURL":"https://example.com"}]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"pathname":"/foo/bar","baseURL":"https://example.com?query#hash"}] Inputs: [{"pathname":"/foo/bar","baseURL":"https://example.com?query#hash"}]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"pathname":"/foo/bar","baseURL":"https://example.com?query#hash"}] Inputs: [{"pathname":"/foo/bar","baseURL":"https://example.com"}]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"pathname":"/foo/bar","baseURL":"https://example.com?query#hash"}] Inputs: ["http://other.com/foo/bar"]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"pathname":"/foo/bar","baseURL":"https://example.com?query#hash"}] Inputs: ["https://other.com/foo/bar"]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"pathname":"/foo/bar","baseURL":"https://example.com?query#hash"}] Inputs: ["https://example.com/foo/bar/baz"]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"pathname":"/foo/bar","baseURL":"https://example.com?query#hash"}] Inputs: ["https://example.com/foo/bar?query#hash"]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"pathname":"/foo/bar","baseURL":"https://example.com?query#hash"}] Inputs: ["https://example.com/foo/bar?otherquery#otherhash"]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"pathname":"/foo/bar","baseURL":"https://example.com?query#hash"}] Inputs: ["https://example.com/foo/bar"]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"pathname":"/foo/bar","baseURL":"https://example.com?otherquery#otherhash"}] Inputs: [{"protocol":"https","hostname":"example.com","pathname":"/foo/bar","search":"otherquery","hash":"otherhash"}]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"pathname":"/foo/bar","baseURL":"https://example.com"}] Inputs: [{"protocol":"https","hostname":"example.com","pathname":"/foo/bar","search":"otherquery","hash":"otherhash"}]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"pathname":"/foo/bar","baseURL":"https://example.com?query#hash"}] Inputs: [{"protocol":"https","hostname":"example.com","pathname":"/foo/bar","search":"otherquery","hash":"otherhash"}]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"pathname":"/foo/bar","baseURL":"https://example.com"}] Inputs: [{"protocol":"https","hostname":"example.com","pathname":"/foo/bar/baz"}]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"pathname":"/foo/bar","baseURL":"https://example.com?query#hash"}] Inputs: [{"protocol":"https","hostname":"example.com","pathname":"/foo/bar"}]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"pathname":"/foo/bar","baseURL":"https://example.com"}] Inputs: [{"protocol":"https","hostname":"example.com","pathname":"/foo/bar"}]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"pathname":"/foo/bar","baseURL":"https://example.com?query#hash"}] Inputs: [{"hostname":"example.com","pathname":"/foo/bar"}]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"pathname":"/foo/bar","baseURL":"https://example.com?query#hash"}] Inputs: [{"pathname":"/foo/bar"}]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"pathname":"/foo/bar"}] Inputs: [{"pathname":"/foo/bar/baz","baseURL":"https://example.com"}]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"pathname":"/foo/bar"}] Inputs: [{"pathname":"/foo/bar","baseURL":"https://example.com"}]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"pathname":"/foo/bar"}] Inputs: [{"hostname":"example.com","pathname":"/foo/bar/baz"}]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"pathname":"/foo/bar"}] Inputs: [{"hostname":"example.com","pathname":"/foo/bar"}]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"pathname":"/foo/bar"}] Inputs: ["https://example.com/foo/bar/baz"]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"pathname":"/foo/bar"}] Inputs: [{"pathname":"/foo/bar/baz"}]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"pathname":"/foo/bar"}] Inputs: ["https://example.com/foo/bar"]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"pathname":"/foo/bar"}] Inputs: [{"pathname":"/foo/bar/"}]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"pathname":"/foo/bar"}] Inputs: [{"pathname":"/foo/ba"}]'

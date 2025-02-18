@@ -1,0 +1,191 @@
+links:
+- product: firefox
+  results:
+  - subtest: if() cycle through local
+    test: local-if-substitution.html
+  - subtest: if() cycle in condition specified value through local
+    test: local-if-substitution.html
+  - subtest: if() cycle through function
+    test: local-if-substitution.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1948709
+- product: firefox
+  results:
+  - subtest: Local with self-cycle
+    test: dashed-function-cycles.tentative.html
+  - subtest: Cycle reference without fallback makes result invalid
+    test: dashed-function-cycles.tentative.html
+  - subtest: Local with self-cycle in fallback
+    test: dashed-function-cycles.tentative.html
+  - subtest: Local shadowing cyclic property --x
+    test: dashed-function-cycles.tentative.html
+  - subtest: 'Local shadowing cyclic outer local --x '
+    test: dashed-function-cycles.tentative.html
+  - subtest: Arguments shadowing cyclic properties
+    test: dashed-function-cycles.tentative.html
+  - subtest: Observing property cycle locally
+    test: dashed-function-cycles.tentative.html
+  - subtest: Using cyclic values with no fallback
+    test: dashed-function-cycles.tentative.html
+  - subtest: Self-cycle in non-used local variable
+    test: dashed-function-cycles.tentative.html
+  - subtest: Using cyclic value in unused fallback
+    test: dashed-function-cycles.tentative.html
+  - subtest: Using cyclic value in unused fallback (local)
+    test: dashed-function-cycles.tentative.html
+  - subtest: Dashed-function, self-cycle
+    test: dashed-function-cycles.tentative.html
+  - subtest: Cycle through other function (--g)
+    test: dashed-function-cycles.tentative.html
+  - subtest: Cycle through other function (--f)
+    test: dashed-function-cycles.tentative.html
+  - subtest: Cycle through local, self
+    test: dashed-function-cycles.tentative.html
+  - subtest: Cycle through unused local
+    test: dashed-function-cycles.tentative.html
+  - subtest: Cycle through global, self
+    test: dashed-function-cycles.tentative.html
+  - subtest: Cycle through local, other function
+    test: dashed-function-cycles.tentative.html
+  - subtest: Cycle through various variables and other functions
+    test: dashed-function-cycles.tentative.html
+  - subtest: Literal result
+    test: dashed-function-eval.html
+  - subtest: Literal result, typed return
+    test: dashed-function-eval.html
+  - subtest: Literal result, typed return, calc
+    test: dashed-function-eval.html
+  - subtest: Literal result, typed return, mismatch
+    test: dashed-function-eval.html
+  - subtest: Missing result descriptor
+    test: dashed-function-eval.html
+  - subtest: Literal result, empty
+    test: dashed-function-eval.html
+  - subtest: result cascading behavior
+    test: dashed-function-eval.html
+  - subtest: Another dashed-function in result
+    test: dashed-function-eval.html
+  - subtest: Unused argument
+    test: dashed-function-eval.html
+  - subtest: Single parameter
+    test: dashed-function-eval.html
+  - subtest: Multiple parameters
+    test: dashed-function-eval.html
+  - subtest: Single parameter, typed
+    test: dashed-function-eval.html
+  - subtest: Typed parameter with calc()
+    test: dashed-function-eval.html
+  - subtest: Untyped parameter with calc()
+    test: dashed-function-eval.html
+  - subtest: Various typed parameters
+    test: dashed-function-eval.html
+  - subtest: Parameter with complex type (auto)
+    test: dashed-function-eval.html
+  - subtest: Parameter with complex type (px)
+    test: dashed-function-eval.html
+  - subtest: Passing argument to inner function
+    test: dashed-function-eval.html
+  - subtest: var() in argument resolved before call
+    test: dashed-function-eval.html
+  - subtest: var() in argument resolved before call, typed
+    test: dashed-function-eval.html
+  - subtest: Single parameter with default value
+    test: dashed-function-eval.html
+  - subtest: Multiple parameters with defaults
+    test: dashed-function-eval.html
+  - subtest: Multiple parameters with defaults, typed
+    test: dashed-function-eval.html
+  - subtest: Unused local
+    test: dashed-function-eval.html
+  - subtest: Local does not affect outer scope
+    test: dashed-function-eval.html
+  - subtest: Substituting local in result
+    test: dashed-function-eval.html
+  - subtest: Substituting multiple locals in result
+    test: dashed-function-eval.html
+  - subtest: Local referring to another local
+    test: dashed-function-eval.html
+  - subtest: Locals appearing after result
+    test: dashed-function-eval.html
+  - subtest: Locals cascading behavior
+    test: dashed-function-eval.html
+  - subtest: Custom properties are visible inside function
+    test: dashed-function-eval.html
+  - subtest: Substitute local from outer scope
+    test: dashed-function-eval.html
+  - subtest: Substitute argument from outer scope
+    test: dashed-function-eval.html
+  - subtest: Inner argument shadowing outer argument
+    test: dashed-function-eval.html
+  - subtest: Inner argument shadowing outer local
+    test: dashed-function-eval.html
+  - subtest: Inner local shadowing outer argument
+    test: dashed-function-eval.html
+  - subtest: Inner local shadowing outer local
+    test: dashed-function-eval.html
+  - subtest: Referencing outer local containing var()
+    test: dashed-function-eval.html
+  - subtest: Referencing outer typed argument
+    test: dashed-function-eval.html
+  - subtest: Same function with different scopes
+    test: dashed-function-eval.html
+  - subtest: Referencing local two frames up
+    test: dashed-function-eval.html
+  - subtest: IACVT outer local shadows property
+    test: dashed-function-eval.html
+  - subtest: Parameter shadows custom property
+    test: dashed-function-eval.html
+  - subtest: Local shadows parameter
+    test: dashed-function-eval.html
+  - subtest: Missing only argument
+    test: dashed-function-eval.html
+  - subtest: Missing one argument of several
+    test: dashed-function-eval.html
+  - subtest: Basic @supports
+    test: function-conditionals.html
+  - subtest: Basic @supports (false)
+    test: function-conditionals.html
+  - subtest: Nested @supports
+    test: function-conditionals.html
+  - subtest: Nested @supports (false)
+    test: function-conditionals.html
+  - subtest: Inconsequential conditional
+    test: function-conditionals.html
+  - subtest: '@supports with locals'
+    test: function-conditionals.html
+  - subtest: Basic @media
+    test: function-conditionals.html
+  - subtest: Basic @media (false)
+    test: function-conditionals.html
+  - subtest: Nested @media
+    test: function-conditionals.html
+  - subtest: Nested @media (false)
+    test: function-conditionals.html
+  - subtest: Locals within @media
+    test: function-conditionals.html
+  - subtest: '@supports within @media'
+    test: function-conditionals.html
+  - subtest: '@media within @supports'
+    test: function-conditionals.html
+  - subtest: var() in attribute value substitutes locally
+    test: local-attr-substitution.html
+  - subtest: var() in attribute value substitutes locally, argument
+    test: local-attr-substitution.html
+  - subtest: var() in attribute value substitutes locally, typed
+    test: local-attr-substitution.html
+  - subtest: attr() fallback substitutes locally
+    test: local-attr-substitution.html
+  - subtest: attr() cycle through local
+    test: local-attr-substitution.html
+  - subtest: attr() cycle through fallback in local
+    test: local-attr-substitution.html
+  - subtest: attr() cycle through function
+    test: local-attr-substitution.html
+  - subtest: Fallback directly in result
+    test: local-var-substitution.html
+  - subtest: Fallback via present, but invalid local
+    test: local-var-substitution.html
+  - subtest: Fallback is locally resolved (result)
+    test: local-var-substitution.html
+  - subtest: Fallback is locally resolved (local var)
+    test: local-var-substitution.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1948787

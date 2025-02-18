@@ -338,8 +338,8 @@ links:
         - test: scrollbar-gutter-root-both-edges.html
     - label: interop-2025-writingmodes
       results:
-        - test: inheritance.html
         - test: logical-overflow-001.html
+        - test: overflow-shorthand-002.html
     - product: firefox
       url: https://bugzilla.mozilla.org/show_bug.cgi?id=1945196
       results:
@@ -374,3 +374,20 @@ links:
           subtest: Property overflow-block does not inherit
         - test: inheritance.html
           subtest: Property overflow-block has initial value visible
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1946531
+      results:
+        - test: scroll-buttons-scroll-distance.html
+    - product: safari
+      url: https://bugs.webkit.org/show_bug.cgi?id=287765
+      results:
+        - test: orthogonal-flow-with-inline-end-margin.html
+          subtest: Scrollable container with orthogonal writing-mode child with inline-end margin
+    - product: firefox
+      results:
+      - test: overflow-clip-margin-border-radius.html
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1947762
+    - product: firefox
+      results:
+      - test: scroll-marker-activation-scroll.html
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1948411

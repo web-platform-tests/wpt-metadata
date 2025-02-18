@@ -7,13 +7,13 @@ jobs:
   resolve-merge-conflicts:
     outputs:
       prURL: ${{ steps.cpr.outputs.pull-request-url }}
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-24.04
     steps:
     - uses: actions/checkout@v2
 
-    - uses: actions/setup-go@v2
+    - uses: actions/setup-go@v5
       with:
-        go-version: 1.20.x
+        go-version: 1.23.x
 
     - name: build main
       run: go build main.go
