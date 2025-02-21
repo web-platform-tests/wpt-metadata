@@ -348,3 +348,23 @@ links:
       element are both skipped by the same element'
     test: content-visibility-anchor-positioning-003.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1908582
+- product: firefox
+  results:
+  - subtest: 'CSS Content Visibility: auto prevents existing anchors to unskipped
+      content
+
+      from becoming skipped'
+    test: content-visibility-anchor-positioning-001.html
+  - subtest: 'CSS Content Visibility: auto not skipped, but skipped after removing
+      all anchors'
+    test: content-visibility-anchor-positioning-004.html
+  - subtest: 'CSS Content Visibility: auto not skipped, but skipped after change of
+      positioned-element style'
+    test: content-visibility-anchor-positioning-005.html
+  - subtest: 'CSS Content Visibility: auto not skipped, but skipped after positioned-element
+      becomes display:none'
+    test: content-visibility-anchor-positioning-006.html
+  - subtest: 'CSS Content Visibility: auto not skipped due to being an indirect influence
+      on anchoring'
+    test: content-visibility-anchor-positioning-007.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1949826
