@@ -1,37 +1,750 @@
 links:
-    - product: safari
-      url: https://bugs.webkit.org/show_bug.cgi?id=283702
-      results:
-        - test: constructor-no-document.html
-    - product: safari
-      url: https://bugs.webkit.org/show_bug.cgi?id=284542
-      results:
-        - test: effect-updateTiming.html
-    - product: safari
-      url: https://bugs.webkit.org/show_bug.cgi?id=284544
-      results:
-        - test: reverse-animation.html
-    - product: safari
-      url: https://bugs.webkit.org/show_bug.cgi?id=284546
-      results:
-        - test: scroll-timeline-invalidation.html
-    - product: safari
-      url: https://bugs.webkit.org/show_bug.cgi?id=284547
-      results:
-        - test: scroll-timeline-range.html
-    - product: safari
-      url: https://bugs.webkit.org/show_bug.cgi?id=284548
-      results:
-        - test: setting-timeline.tentative.html
-    - product: safari
-      url: https://bugs.webkit.org/show_bug.cgi?id=284543
-      results:
-        - test: play-animation.html
-    - product: safari
-      url: https://bugs.webkit.org/show_bug.cgi?id=284545
-      results:
-        - test: scroll-animation-effect-phases.tentative.html
-    - product: safari
-      url: https://bugs.webkit.org/show_bug.cgi?id=284549
-      results:
-        - test: source-quirks-mode.html
+- product: safari
+  results:
+  - test: constructor-no-document.html
+  url: https://bugs.webkit.org/show_bug.cgi?id=283702
+- product: safari
+  results:
+  - test: effect-updateTiming.html
+  url: https://bugs.webkit.org/show_bug.cgi?id=284542
+- product: safari
+  results:
+  - test: reverse-animation.html
+  url: https://bugs.webkit.org/show_bug.cgi?id=284544
+- product: safari
+  results:
+  - test: scroll-timeline-invalidation.html
+  url: https://bugs.webkit.org/show_bug.cgi?id=284546
+- product: safari
+  results:
+  - test: scroll-timeline-range.html
+  url: https://bugs.webkit.org/show_bug.cgi?id=284547
+- product: safari
+  results:
+  - test: setting-timeline.tentative.html
+  url: https://bugs.webkit.org/show_bug.cgi?id=284548
+- product: safari
+  results:
+  - test: play-animation.html
+  url: https://bugs.webkit.org/show_bug.cgi?id=284543
+- product: safari
+  results:
+  - test: scroll-animation-effect-phases.tentative.html
+  url: https://bugs.webkit.org/show_bug.cgi?id=284545
+- product: safari
+  results:
+  - test: source-quirks-mode.html
+  url: https://bugs.webkit.org/show_bug.cgi?id=284549
+- product: firefox
+  results:
+  - subtest: Canceling an animation should cause its start time and hold time to be
+      unresolved
+    test: cancel-animation.html
+  - subtest: A play-pending ready promise should be rejected when the animation is
+      canceled
+    test: cancel-animation.html
+  - subtest: A pause-pending ready promise should be rejected when the animation is
+      canceled
+    test: cancel-animation.html
+  - subtest: When an animation is canceled, it should create a resolved Promise
+    test: cancel-animation.html
+  - subtest: The ready promise should be replaced when the animation is canceled
+    test: cancel-animation.html
+  - subtest: The finished promise should NOT be rejected if the animation is already
+      idle
+    test: cancel-animation.html
+  - subtest: The cancel event should NOT be fired if the animation is already idle
+    test: cancel-animation.html
+  - subtest: Canceling an animation should fire cancel event on orphaned element
+    test: cancel-animation.html
+  - subtest: Canceling an animation with inactive timeline should cause its start
+      time and hold time to be unresolved
+    test: cancel-animation.html
+  - subtest: oncancel event is fired when the timeline is inactive.
+    test: cancel-animation.html
+  - subtest: currentTime calculates the correct time for a document.scrollingElement
+      source
+    test: current-time-root-scroller.html
+  - subtest: 'currentTime handles direction: rtl correctly'
+    test: current-time-writing-modes.html
+  - subtest: 'currentTime handles writing-mode: vertical-rl correctly'
+    test: current-time-writing-modes.html
+  - subtest: 'currentTime handles writing-mode: sideways-rl correctly'
+    test: current-time-writing-modes.html
+  - subtest: 'currentTime handles writing-mode: vertical-lr correctly'
+    test: current-time-writing-modes.html
+  - subtest: 'currentTime handles writing-mode: sideways-lr correctly'
+    test: current-time-writing-modes.html
+  - subtest: Allows setting the delay to a positive number
+    test: effect-updateTiming.html
+  - subtest: Allows setting the delay to a negative number
+    test: effect-updateTiming.html
+  - subtest: 'Allows setting the delay of an animation in progress: positive delay
+      that causes the animation to be no longer in-effect'
+    test: effect-updateTiming.html
+  - subtest: 'Allows setting the delay of an animation in progress: negative delay
+      that seeks into the active interval'
+    test: effect-updateTiming.html
+  - subtest: 'Allows setting the delay of an animation in progress: large negative
+      delay that causes the animation to be finished'
+    test: effect-updateTiming.html
+  - subtest: 'Throws when setting invalid delay value: NaN'
+    test: effect-updateTiming.html
+  - subtest: 'Throws when setting invalid delay value: Infinity'
+    test: effect-updateTiming.html
+  - subtest: 'Throws when setting invalid delay value: -Infinity'
+    test: effect-updateTiming.html
+  - subtest: Allows setting the endDelay to a positive number
+    test: effect-updateTiming.html
+  - subtest: Allows setting the endDelay to a negative number
+    test: effect-updateTiming.html
+  - subtest: Throws when setting the endDelay to infinity
+    test: effect-updateTiming.html
+  - subtest: Throws when setting the endDelay to negative infinity
+    test: effect-updateTiming.html
+  - subtest: Allows setting the fill to 'none'
+    test: effect-updateTiming.html
+  - subtest: Allows setting the fill to 'forwards'
+    test: effect-updateTiming.html
+  - subtest: Allows setting the fill to 'backwards'
+    test: effect-updateTiming.html
+  - subtest: Allows setting the fill to 'both'
+    test: effect-updateTiming.html
+  - subtest: 'Allows setting the iterationStart of an animation in progress: backwards-filling'
+    test: effect-updateTiming.html
+  - subtest: 'Allows setting the iterationStart of an animation in progress: active
+      phase'
+    test: effect-updateTiming.html
+  - subtest: 'Allows setting the iterationStart of an animation in progress: forwards-filling'
+    test: effect-updateTiming.html
+  - subtest: 'Throws when setting invalid iterationStart value: -1'
+    test: effect-updateTiming.html
+  - subtest: 'Throws when setting invalid iterationStart value: NaN'
+    test: effect-updateTiming.html
+  - subtest: 'Throws when setting invalid iterationStart value: Infinity'
+    test: effect-updateTiming.html
+  - subtest: 'Throws when setting invalid iterationStart value: -Infinity'
+    test: effect-updateTiming.html
+  - subtest: Allows setting iterations to a double value
+    test: effect-updateTiming.html
+  - subtest: Throws when setting iterations to Infinity
+    test: effect-updateTiming.html
+  - subtest: Allows setting the iterations of an animation in progress
+    test: effect-updateTiming.html
+  - subtest: Allows setting the iterations of an animation in progress with duration
+      "auto"
+    test: effect-updateTiming.html
+  - subtest: Allows setting the duration to 123.45
+    test: effect-updateTiming.html
+  - subtest: Allows setting the duration to auto
+    test: effect-updateTiming.html
+  - subtest: 'Throws when setting invalid duration: -1'
+    test: effect-updateTiming.html
+  - subtest: 'Throws when setting invalid duration: NaN'
+    test: effect-updateTiming.html
+  - subtest: 'Throws when setting invalid duration: -Infinity'
+    test: effect-updateTiming.html
+  - subtest: 'Throws when setting invalid duration: "abc"'
+    test: effect-updateTiming.html
+  - subtest: 'Throws when setting invalid duration: "100"'
+    test: effect-updateTiming.html
+  - subtest: Allows setting the duration of an animation in progress
+    test: effect-updateTiming.html
+  - subtest: Allows setting the duration of an animation in progress such that the
+      the start and current time do not change
+    test: effect-updateTiming.html
+  - subtest: Allows setting the direction to each of the possible keywords
+    test: effect-updateTiming.html
+  - subtest: Allows setting the direction of an animation in progress from 'normal'
+      to 'reverse'
+    test: effect-updateTiming.html
+  - subtest: Allows setting the direction of an animation in progress from 'normal'
+      to 'reverse' while at start of active interval
+    test: effect-updateTiming.html
+  - subtest: Allows setting the direction of an animation in progress from 'normal'
+      to 'reverse' while filling backwards
+    test: effect-updateTiming.html
+  - subtest: Allows setting the direction of an animation in progress from 'normal'
+      to 'alternate'
+    test: effect-updateTiming.html
+  - subtest: Allows setting the direction of an animation in progress from 'alternate'
+      to 'alternate-reverse'
+    test: effect-updateTiming.html
+  - subtest: Allows setting the easing to a step-start function
+    test: effect-updateTiming.html
+  - subtest: Allows setting the easing to a steps(1, start) function
+    test: effect-updateTiming.html
+  - subtest: Allows setting the easing to a steps(2, start) function
+    test: effect-updateTiming.html
+  - subtest: Allows setting the easing to a step-end function
+    test: effect-updateTiming.html
+  - subtest: Allows setting the easing to a steps(1) function
+    test: effect-updateTiming.html
+  - subtest: Allows setting the easing to a steps(1, end) function
+    test: effect-updateTiming.html
+  - subtest: Allows setting the easing to a steps(2, end) function
+    test: effect-updateTiming.html
+  - subtest: Allows setting the easing to a linear function
+    test: effect-updateTiming.html
+  - subtest: Allows setting the easing to a ease function
+    test: effect-updateTiming.html
+  - subtest: Allows setting the easing to a ease-in function
+    test: effect-updateTiming.html
+  - subtest: Allows setting the easing to a ease-in-out function
+    test: effect-updateTiming.html
+  - subtest: Allows setting the easing to a ease-out function
+    test: effect-updateTiming.html
+  - subtest: Allows setting the easing to a easing function which produces values
+      greater than 1
+    test: effect-updateTiming.html
+  - subtest: Allows setting the easing to a easing function which produces values
+      less than 1
+    test: effect-updateTiming.html
+  - subtest: Updates the specified value when setting the easing to 'ease'
+    test: effect-updateTiming.html
+  - subtest: Updates the specified value when setting the easing to 'linear'
+    test: effect-updateTiming.html
+  - subtest: Updates the specified value when setting the easing to 'ease-in'
+    test: effect-updateTiming.html
+  - subtest: Updates the specified value when setting the easing to 'ease-out'
+    test: effect-updateTiming.html
+  - subtest: Updates the specified value when setting the easing to 'ease-in-out'
+    test: effect-updateTiming.html
+  - subtest: Updates the specified value when setting the easing to 'cubic-bezier(0.1,
+      5, 0.23, 0)'
+    test: effect-updateTiming.html
+  - subtest: Updates the specified value when setting the easing to 'steps(3, start)'
+    test: effect-updateTiming.html
+  - subtest: Updates the specified value when setting the easing to 'steps(3)'
+    test: effect-updateTiming.html
+  - subtest: Allows setting the easing of an animation in progress
+    test: effect-updateTiming.html
+  - subtest: Finishing an animation with a zero playback rate throws
+    test: finish-animation.html
+  - subtest: Finishing an animation seeks to the end time
+    test: finish-animation.html
+  - subtest: Finishing an animation with a current time past the effect end jumps
+      back to the end
+    test: finish-animation.html
+  - subtest: Finishing a reversed animation jumps to zero time
+    test: finish-animation.html
+  - subtest: Finishing a reversed animation with a current time less than zero makes
+      it jump back to zero
+    test: finish-animation.html
+  - subtest: Finishing an animation while play-pending resolves the pending task immediately
+    test: finish-animation.html
+  - subtest: Finishing an animation attached to inactive timeline while play-pending
+      doesn't resolves the pending task
+    test: finish-animation.html
+  - subtest: Finishing an animation resolves the finished promise synchronously
+    test: finish-animation.html
+  - subtest: A pending ready promise is resolved and not replaced when the animation
+      is finished
+    test: finish-animation.html
+  - subtest: Finishing an animation fires finish event on orphaned element
+    test: finish-animation.html
+  - subtest: Finishing a canceled animation sets the current and start times
+    test: finish-animation.html
+  - subtest: Finishing idle animation produces correct state and fires finish event.
+    test: finish-animation.html
+  - subtest: Finishing idle animation attached to inactive timeline pauses the animation.
+    test: finish-animation.html
+  - subtest: Finishing running animation produces correct state and fires finish event.
+    test: finish-animation.html
+  - subtest: Finishing running animation attached to inactive timeline pauses the
+      animation.
+    test: finish-animation.html
+  - subtest: Finishing a paused animation resolves the start time
+    test: finish-animation.html
+  - subtest: Finishing a pause-pending animation resolves the pending task immediately
+      and update the start time
+    test: finish-animation.html
+  - subtest: Finishing a pause-pending animation with negative playback rate resolves
+      the pending task immediately
+    test: finish-animation.html
+  - subtest: Finishing an animation during an aborted pause makes it finished immediately
+    test: finish-animation.html
+  - subtest: A pending playback rate should be applied immediately when an animation
+      is finished
+    test: finish-animation.html
+  - subtest: An exception should be thrown if the effective playback rate is zero
+    test: finish-animation.html
+  - subtest: Computed duration in percent even when specified in ms
+    test: intrinsic-iteration-duration.tentative.html
+  - subtest: Time-based duration normalized to fill animation range.
+    test: intrinsic-iteration-duration.tentative.html
+  - subtest: Time-based duration normalized to preserve proportional delays.
+    test: intrinsic-iteration-duration.tentative.html
+  - subtest: Intrinsic iteration duration fills timeline.
+    test: intrinsic-iteration-duration.tentative.html
+  - subtest: Intrinsic iteration duration accounts for animation range.
+    test: intrinsic-iteration-duration.tentative.html
+  - subtest: Intrinsic iteration duration accounts for number of iterations
+    test: intrinsic-iteration-duration.tentative.html
+  - subtest: Pausing clears the start time
+    test: pause-animation.html
+  - subtest: A pending ready promise should be resolved and not replaced when the
+      animation is paused
+    test: pause-animation.html
+  - subtest: A pause-pending animation maintains the current time when applying a
+      pending playback rate
+    test: pause-animation.html
+  - subtest: The animation's current time remains fixed after pausing
+    test: pause-animation.html
+  - subtest: Pausing a canceled animation sets the current time
+    test: pause-animation.html
+  - subtest: Pause pending task doesn't run when the timeline is inactive.
+    test: pause-animation.html
+  - subtest: Animation start and current times are correct if scroll timeline is activated
+      after animation.pause call.
+    test: pause-animation.html
+  - subtest: Playing an animations aligns the start time with the start of the active
+      range
+    test: play-animation.html
+  - subtest: Playing an animations with a negative playback rate aligns the start
+      time with the end of the active range
+    test: play-animation.html
+  - subtest: Start time set while play pending is preserved.
+    test: play-animation.html
+  - subtest: Current time set while play pending is preserved.
+    test: play-animation.html
+  - subtest: The ready promise should be replaced if the animation is not already
+      pending
+    test: play-animation.html
+  - subtest: A pending ready promise should be resolved and not replaced when the
+      animation enters the running state
+    test: play-animation.html
+  - subtest: If a pause operation is interrupted, the ready promise is reused
+    test: play-animation.html
+  - subtest: Playing a canceled animation sets the start time
+    test: play-animation.html
+  - subtest: Playing a canceled animation backwards sets the start time
+    test: play-animation.html
+  - subtest: Setting current time while reverse-pending preserves currentTime
+    test: reverse-animation.html
+  - subtest: Reversing an animation inverts the playback rate
+    test: reverse-animation.html
+  - subtest: Reversing an animation does not cause it to leave the pending state
+    test: reverse-animation.html
+  - subtest: Reversing an animation does not cause it to resolve the ready promise
+    test: reverse-animation.html
+  - subtest: Reversing an animation with a negative playback rate should cause the
+      animation to play in a forward direction
+    test: reverse-animation.html
+  - subtest: Reversing an animation without an active timeline throws an InvalidStateError
+    test: reverse-animation.html
+  - subtest: Reversing an animation plays a pausing animation
+    test: reverse-animation.html
+  - subtest: Reversing should use the negative pending playback rate
+    test: reverse-animation.html
+  - subtest: Scroll based animation effect fill mode should return 'auto' for getTiming()
+      and should return 'none' for getComputedTiming().
+    test: scroll-animation-effect-fill-modes.tentative.html
+  - subtest: 'Applied effect value before start delay with fill: none'
+    test: scroll-animation-effect-fill-modes.tentative.html
+  - subtest: 'Applied effect value at start delay with fill: none'
+    test: scroll-animation-effect-fill-modes.tentative.html
+  - subtest: 'Applied effect value at midpoint with fill: none'
+    test: scroll-animation-effect-fill-modes.tentative.html
+  - subtest: 'Applied effect value at effect end with fill: none'
+    test: scroll-animation-effect-fill-modes.tentative.html
+  - subtest: 'Applied effect value after effect end with fill: none'
+    test: scroll-animation-effect-fill-modes.tentative.html
+  - subtest: 'Applied effect value before start delay with fill: backwards'
+    test: scroll-animation-effect-fill-modes.tentative.html
+  - subtest: 'Applied effect value at start delay with fill: backwards'
+    test: scroll-animation-effect-fill-modes.tentative.html
+  - subtest: 'Applied effect value at midpoint with fill: backwards'
+    test: scroll-animation-effect-fill-modes.tentative.html
+  - subtest: 'Applied effect value at effect end with fill: backwards'
+    test: scroll-animation-effect-fill-modes.tentative.html
+  - subtest: 'Applied effect value after effect end with fill: backwards'
+    test: scroll-animation-effect-fill-modes.tentative.html
+  - subtest: 'Applied effect value before timeline start with fill: forwards'
+    test: scroll-animation-effect-fill-modes.tentative.html
+  - subtest: 'Applied effect value at timeline start with fill: forwards'
+    test: scroll-animation-effect-fill-modes.tentative.html
+  - subtest: 'Applied effect value in timeline range with fill: forwards'
+    test: scroll-animation-effect-fill-modes.tentative.html
+  - subtest: 'Applied effect value at timeline end with fill: forwards'
+    test: scroll-animation-effect-fill-modes.tentative.html
+  - subtest: 'Applied effect value after timeline end with fill: forwards'
+    test: scroll-animation-effect-fill-modes.tentative.html
+  - subtest: 'Applied effect value before timeline start with fill: both'
+    test: scroll-animation-effect-fill-modes.tentative.html
+  - subtest: 'Applied effect value at timeline start with fill: both'
+    test: scroll-animation-effect-fill-modes.tentative.html
+  - subtest: 'Applied effect value in timeline range with fill: both'
+    test: scroll-animation-effect-fill-modes.tentative.html
+  - subtest: 'Applied effect value at timeline end with fill: both'
+    test: scroll-animation-effect-fill-modes.tentative.html
+  - subtest: 'Applied effect value after timeline end with fill: both'
+    test: scroll-animation-effect-fill-modes.tentative.html
+  - subtest: 'Applied effect value before timeline start with fill: auto'
+    test: scroll-animation-effect-fill-modes.tentative.html
+  - subtest: 'Applied effect value at timeline start with fill: auto'
+    test: scroll-animation-effect-fill-modes.tentative.html
+  - subtest: 'Applied effect value in timeline range with fill: auto'
+    test: scroll-animation-effect-fill-modes.tentative.html
+  - subtest: 'Applied effect value at timeline end with fill: auto'
+    test: scroll-animation-effect-fill-modes.tentative.html
+  - subtest: 'Applied effect value after timeline end with fill: auto'
+    test: scroll-animation-effect-fill-modes.tentative.html
+  - subtest: Current times and effect phase at start when delay = 0 and endDelay =
+      0 |
+    test: scroll-animation-effect-phases.tentative.html
+  - subtest: Current times and effect phase in active range when delay = 0 and endDelay
+      = 0 |
+    test: scroll-animation-effect-phases.tentative.html
+  - subtest: Current times and effect phase at effect end time when delay = 0 and
+      endDelay = 0 |
+    test: scroll-animation-effect-phases.tentative.html
+  - subtest: Current times and effect phase at timeline start when delay = 500 and
+      endDelay = 0 |
+    test: scroll-animation-effect-phases.tentative.html
+  - subtest: Current times and effect phase before start delay when delay = 500 and
+      endDelay = 0 |
+    test: scroll-animation-effect-phases.tentative.html
+  - subtest: Current times and effect phase at start delay when delay = 500 and endDelay
+      = 0 |
+    test: scroll-animation-effect-phases.tentative.html
+  - subtest: Current times and effect phase in active range when delay = 500 and endDelay
+      = 0 |
+    test: scroll-animation-effect-phases.tentative.html
+  - subtest: Current times and effect phase at effect end time when delay = 500 and
+      endDelay = 0 |
+    test: scroll-animation-effect-phases.tentative.html
+  - subtest: Current times and effect phase at timeline start when delay = 0 and endDelay
+      = 500 |
+    test: scroll-animation-effect-phases.tentative.html
+  - subtest: Current times and effect phase in active range when delay = 0 and endDelay
+      = 500 |
+    test: scroll-animation-effect-phases.tentative.html
+  - subtest: Current times and effect phase at effect end time when delay = 0 and
+      endDelay = 500 |
+    test: scroll-animation-effect-phases.tentative.html
+  - subtest: Current times and effect phase after effect end time when delay = 0 and
+      endDelay = 500 |
+    test: scroll-animation-effect-phases.tentative.html
+  - subtest: Current times and effect phase at timeline boundary when delay = 0 and
+      endDelay = 500 |
+    test: scroll-animation-effect-phases.tentative.html
+  - subtest: Current times and effect phase at timeline start when delay = 250 and
+      endDelay = 250 |
+    test: scroll-animation-effect-phases.tentative.html
+  - subtest: Current times and effect phase before start delay when delay = 250 and
+      endDelay = 250 |
+    test: scroll-animation-effect-phases.tentative.html
+  - subtest: Current times and effect phase at start delay when delay = 250 and endDelay
+      = 250 |
+    test: scroll-animation-effect-phases.tentative.html
+  - subtest: Current times and effect phase in active range when delay = 250 and endDelay
+      = 250 |
+    test: scroll-animation-effect-phases.tentative.html
+  - subtest: Current times and effect phase at effect end time when delay = 250 and
+      endDelay = 250 |
+    test: scroll-animation-effect-phases.tentative.html
+  - subtest: Current times and effect phase after effect end time when delay = 250
+      and endDelay = 250 |
+    test: scroll-animation-effect-phases.tentative.html
+  - subtest: Current times and effect phase at timeline boundary when delay = 250
+      and endDelay = 250 |
+    test: scroll-animation-effect-phases.tentative.html
+  - subtest: Current times and effect phase at timeline start when delay = -125 and
+      endDelay = -125 |
+    test: scroll-animation-effect-phases.tentative.html
+  - subtest: Current times and effect phase in active range when delay = -125 and
+      endDelay = -125 |
+    test: scroll-animation-effect-phases.tentative.html
+  - subtest: Current times and effect phase at timeline end when delay = -125 and
+      endDelay = -125 |
+    test: scroll-animation-effect-phases.tentative.html
+  - subtest: Playback rate affects whether active phase boundary is inclusive.
+    test: scroll-animation-effect-phases.tentative.html
+  - subtest: Verify that (play -> pause -> play) doesn't change phase/progress.
+    test: scroll-animation-effect-phases.tentative.html
+  - subtest: Pause in before phase, scroll timeline into active phase, animation should
+      remain in the before phase
+    test: scroll-animation-effect-phases.tentative.html
+  - subtest: Pause in before phase, set animation current time to be in active range,
+      animation should become active. Scrolling should have no effect.
+    test: scroll-animation-effect-phases.tentative.html
+  - subtest: Make scroller inactive, then set current time to an in range time
+    test: scroll-animation-effect-phases.tentative.html
+  - subtest: Animation effect is still applied after pausing and making timeline inactive.
+    test: scroll-animation-effect-phases.tentative.html
+  - subtest: Make timeline inactive, force style update then pause the animation.
+      No crashing indicates test success.
+    test: scroll-animation-effect-phases.tentative.html
+  - subtest: Play pending task doesn't run when the timeline is inactive.
+    test: scroll-animation-inactive-timeline.html
+  - subtest: Animation start and current times are correct if scroll timeline is activated
+      after animation.play call.
+    test: scroll-animation-inactive-timeline.html
+  - subtest: Animation start and current times are correct if scroll timeline is activated
+      after setting start time.
+    test: scroll-animation-inactive-timeline.html
+  - subtest: Animation current time is correct when the timeline becomes newly inactive
+      and then active again.
+    test: scroll-animation-inactive-timeline.html
+  - subtest: Animation start and current times are correct for each animation state.
+    test: scroll-animation.html
+  - subtest: Animation start and current times are correct for each animation state
+      when the animation starts playing with advanced scroller.
+    test: scroll-animation.html
+  - subtest: Finished animation plays on reverse scrolling.
+    test: scroll-animation.html
+  - subtest: Sending animation finished events by finished animation on reverse scrolling.
+    test: scroll-animation.html
+  - subtest: Animation current time and effect local time are updated after scroller
+      content size changes.
+    test: scroll-timeline-invalidation.html
+  - subtest: Animation current time and effect local time are updated after scroller
+      size changes.
+    test: scroll-timeline-invalidation.html
+  - subtest: Scroll timeline with percentage range [JavaScript API]
+    test: scroll-timeline-range.html
+  - subtest: Scroll timeline with px range [JavaScript API]
+    test: scroll-timeline-range.html
+  - subtest: Scroll timeline with calculated range [JavaScript API]
+    test: scroll-timeline-range.html
+  - subtest: Scroll timeline with EM range [JavaScript API]
+    test: scroll-timeline-range.html
+  - subtest: Scroll timeline with percentage range [CSS]
+    test: scroll-timeline-range.html
+  - subtest: Scroll timeline with px range [CSS]
+    test: scroll-timeline-range.html
+  - subtest: Scroll timeline with calculated range [CSS]
+    test: scroll-timeline-range.html
+  - subtest: Scroll timeline with EM range [CSS]
+    test: scroll-timeline-range.html
+  - subtest: Setting animation current time to null throws TypeError.
+    test: setting-current-time.html
+  - subtest: Set animation current time to a valid value without playing.
+    test: setting-current-time.html
+  - subtest: Set animation current time to a valid value while playing.
+    test: setting-current-time.html
+  - subtest: Set animation current time to a value beyond effect end.
+    test: setting-current-time.html
+  - subtest: Set animation current time to a negative value.
+    test: setting-current-time.html
+  - subtest: Setting current time while play pending overrides the current time
+    test: setting-current-time.html
+  - subtest: Setting animation.currentTime then restarting the animation should reset
+      the current time.
+    test: setting-current-time.html
+  - subtest: Set Animation current time then scroll.
+    test: setting-current-time.html
+  - subtest: Animation current time and play state are correct when current time is
+      set while the timeline is inactive.
+    test: setting-current-time.html
+  - subtest: Animation current time set while the timeline is inactive holds when
+      the timeline becomes active again.
+    test: setting-current-time.html
+  - subtest: Setting the effect of scroll-driven animation computes percentage timing
+      values.
+    test: setting-effect.html
+  - subtest: Zero current time is not affected by playbackRate set while the animation
+      is in idle state.
+    test: setting-playback-rate.html
+  - subtest: Zero current time is not affected by playbackRate set while the animation
+      is in play-pending state.
+    test: setting-playback-rate.html
+  - subtest: Initial current time is scaled by playbackRate set while scroll-linked
+      animation is in running state.
+    test: setting-playback-rate.html
+  - subtest: The current time is scaled by playbackRate set while the scroll-linked
+      animation is in play state.
+    test: setting-playback-rate.html
+  - subtest: The playback rate set before scroll-linked animation started playing
+      affects the rate of progress of the current time
+    test: setting-playback-rate.html
+  - subtest: The playback rate affects the rate of progress of the current time when
+      scrolling
+    test: setting-playback-rate.html
+  - subtest: Setting the playback rate while play-pending does not scale current time.
+    test: setting-playback-rate.html
+  - subtest: Setting the playback rate while playing scales current time.
+    test: setting-playback-rate.html
+  - subtest: Setting the playback rate while playing scales the set current time.
+    test: setting-playback-rate.html
+  - subtest: Negative initial playback rate should correctly modify initial current
+      time.
+    test: setting-playback-rate.html
+  - subtest: Reversing the playback rate while playing correctly impacts current time
+      during future scrolls
+    test: setting-playback-rate.html
+  - subtest: Zero initial playback rate should correctly modify initial current time.
+    test: setting-playback-rate.html
+  - subtest: Setting a zero playback rate while running preserves the start time
+    test: setting-playback-rate.html
+  - subtest: Reversing an animation with non-boundary aligned start time symmetrically
+      adjusts the start time
+    test: setting-playback-rate.html
+  - subtest: Setting the start time clears the hold time
+    test: setting-start-time.html
+  - subtest: Setting the start time clears the hold time when the timeline is inactive
+    test: setting-start-time.html
+  - subtest: Setting an unresolved start time sets the hold time
+    test: setting-start-time.html
+  - subtest: Setting an unresolved start time sets the hold time to unresolved when
+      the timeline is inactive
+    test: setting-start-time.html
+  - subtest: Setting the start time resolves a pending ready promise
+    test: setting-start-time.html
+  - subtest: Setting the start time resolves a pending ready promise when the timelineis
+      inactive
+    test: setting-start-time.html
+  - subtest: Setting an unresolved start time on a play-pending animation makes it
+      idle
+    test: setting-start-time.html
+  - subtest: Setting the start time updates the finished state
+    test: setting-start-time.html
+  - subtest: Setting the start time on a running animation updates the play state
+    test: setting-start-time.html
+  - subtest: Setting the start time on a reverse running animation updates the play
+      state
+    test: setting-start-time.html
+  - subtest: Setting the start time resolves a pending pause task
+    test: setting-start-time.html
+  - subtest: Setting the start time of a play-pending animation applies a pending
+      playback rate
+    test: setting-start-time.html
+  - subtest: Setting the start time of a playing animation applies a pending playback
+      rate
+    test: setting-start-time.html
+  - subtest: Setting a scroll timeline on a play-pending animation synchronizes currentTime
+      of the animation with the scroll position.
+    test: setting-timeline.tentative.html
+  - subtest: Setting a scroll timeline on a pause-pending animation fixes the currentTime
+      of the animation based on the scroll position once resumed
+    test: setting-timeline.tentative.html
+  - subtest: Setting a scroll timeline on a reversed play-pending animation synchronizes
+      the currentTime of the animation with the scroll position.
+    test: setting-timeline.tentative.html
+  - subtest: Setting a scroll timeline on a running animation synchronizes the currentTime
+      of the animation with the scroll position.
+    test: setting-timeline.tentative.html
+  - subtest: Setting a scroll timeline on a paused animation fixes the currentTime
+      of the animation based on the scroll position when resumed
+    test: setting-timeline.tentative.html
+  - subtest: Setting a scroll timeline on a reversed paused animation fixes the currentTime
+      of the animation based on the scroll position when resumed
+    test: setting-timeline.tentative.html
+  - subtest: Transitioning from a scroll timeline to a document timeline on a running
+      animation preserves currentTime
+    test: setting-timeline.tentative.html
+  - subtest: Transitioning from a scroll timeline to a document timeline on a pause-pending
+      animation preserves currentTime
+    test: setting-timeline.tentative.html
+  - subtest: Transition from a scroll timeline to a document timeline on a reversed
+      paused animation maintains correct currentTime
+    test: setting-timeline.tentative.html
+  - subtest: Transitioning from a scroll timeline to a null timeline on a running
+      animation preserves current progress.
+    test: setting-timeline.tentative.html
+  - subtest: Switching from a null timeline to a scroll timeline on an animation with
+      a resolved start time preserved the play state
+    test: setting-timeline.tentative.html
+  - subtest: Switching from one scroll timeline to another updates currentTime
+    test: setting-timeline.tentative.html
+  - subtest: Switching from a document timeline to a scroll timeline updates currentTime
+      when unpaused via CSS.
+    test: setting-timeline.tentative.html
+  - subtest: Switching from a document timeline to a scroll timeline and updating
+      currentTime preserves the progress while paused.
+    test: setting-timeline.tentative.html
+  - subtest: Changing from a scroll-timeline to a view-timeline updates start time.
+    test: setting-timeline.tentative.html
+  - subtest: Updating the playback rate maintains the current time
+    test: update-playback-rate.html
+  - subtest: Updating the playback rate while running makes the animation pending
+    test: update-playback-rate.html
+  - subtest: Updating the playback rate on a play-pending animation maintains the
+      current time
+    test: update-playback-rate.html
+  - subtest: Updating the playback rate on a pause-pending animation maintains the
+      current time
+    test: update-playback-rate.html
+  - subtest: If a pending playback rate is set multiple times, the latest wins
+    test: update-playback-rate.html
+  - subtest: In the idle state, the playback rate is applied immediately
+    test: update-playback-rate.html
+  - subtest: In the paused state, the playback rate is applied immediately
+    test: update-playback-rate.html
+  - subtest: Updating the playback rate on a finished animation maintains the current
+      time
+    test: update-playback-rate.html
+  - subtest: Updating the playback rate to zero on a finished animation maintains
+      the current time
+    test: update-playback-rate.html
+  - subtest: Updating the finished state when seeking past end
+    test: updating-the-finished-state.html
+  - subtest: Updating the finished state when playing exactly to end
+    test: updating-the-finished-state.html
+  - subtest: Updating the finished state when seeking exactly to end
+    test: updating-the-finished-state.html
+  - subtest: Updating the finished state when playing in reverse past zero
+    test: updating-the-finished-state.html
+  - subtest: Updating the finished state when seeking a reversed animation past zero
+    test: updating-the-finished-state.html
+  - subtest: Updating the finished state when playing  a reversed animation exactly
+      to zero
+    test: updating-the-finished-state.html
+  - subtest: Updating the finished state when seeking a reversed animation exactly
+      to zero
+    test: updating-the-finished-state.html
+  - subtest: Updating the finished state when seeking before end
+    test: updating-the-finished-state.html
+  - subtest: Updating the finished state when seeking a reversed animation before
+      end
+    test: updating-the-finished-state.html
+  - subtest: Updating the finished state when playback rate is zero and the current
+      time is less than zero
+    test: updating-the-finished-state.html
+  - subtest: Updating the finished state when playback rate is zero and the current
+      time is less than end
+    test: updating-the-finished-state.html
+  - subtest: Updating the finished state when playback rate is zero and the currenttime
+      is greater than end
+    test: updating-the-finished-state.html
+  - subtest: Updating the finished state when current time is unresolved
+    test: updating-the-finished-state.html
+  - subtest: Updating the finished state when start time is unresolved and did seek
+      = true
+    test: updating-the-finished-state.html
+  - subtest: Finish notification steps don't run when the animation seeks to finish
+      and then seeks back again
+    test: updating-the-finished-state.html
+  - subtest: Finish notification steps run when the animation completes normally
+    test: updating-the-finished-state.html
+  - subtest: Finish notification steps run when an animation without a target effect
+      completes normally
+    test: updating-the-finished-state.html
+  - subtest: Finish notification steps run when the animation seeks past finish
+    test: updating-the-finished-state.html
+  - subtest: Finish notification steps run when the animation completes with .finish(),
+      even if we then seek away
+    test: updating-the-finished-state.html
+  - subtest: Animation finished promise is replaced after seeking back to start
+    test: updating-the-finished-state.html
+  - subtest: Animation finished promise is replaced after replaying from start
+    test: updating-the-finished-state.html
+  - subtest: Animation finish event is fired again after seeking back to start
+    test: updating-the-finished-state.html
+  - subtest: finish event is not fired at the end of the active interval when the
+      endDelay has not expired
+    test: updating-the-finished-state.html
+  - subtest: finish event is fired after the endDelay has expired
+    test: updating-the-finished-state.html
+  - test: animation-with-animatable-interface.html
+  - test: animation-with-display-none.html
+  - test: animation-with-overflow-hidden.html
+  - test: animation-with-root-scroller.html
+  - test: animation-with-transform.html
+  - test: layout-changes-on-percentage-based-timeline.html
+  - test: progress-based-effect-delay.tentative.html
+  - test: set-current-time-before-play.html
+  - test: two-animations-attach-to-same-scroll-timeline-cancel-one.html
+  - test: two-animations-attach-to-same-scroll-timeline.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1949826
