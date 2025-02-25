@@ -1,648 +1,626 @@
 links:
-- product: firefox
-  results:
-  - test: content-with-clip.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1811571
-- product: firefox
-  results:
-  - test: named-element-with-fix-pos-child-new.html
-  - test: named-element-with-fix-pos-child-old.html
-  - subtest: :only-child should match because ::view-transition-group is generated
-      for root element only
-    test: only-child-group.html
-  - subtest: :only-child should match because ::view-transition-old is not generated
-      (none to root)
-    test: only-child-new.html
-  - subtest: :only-child should not match because ::view-transition-old is generated
-      (root to root)
-    test: only-child-new.html
-  - subtest: :only-child should match because ::view-transition-new is not generated
-      (root to none)
-    test: only-child-old.html
-  - subtest: :only-child should not match because ::view-transition-new is generated
-      (root to root)
-    test: only-child-old.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1815787
-- product: firefox
-  results:
-  - test: break-inside-avoid-child.html
-  - test: fractional-translation-from-position.html
-  - test: iframe-transition.sub.html
-  - test: inline-child-with-filter.html
-  - test: new-content-root-scrollbar-with-fixed-background.html
-  - test: rtl-with-scrollbar.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1817261
-- product: firefox
-  results:
-  - test: 3d-transform-incoming.html
-  - test: content-visibility-auto-shared-element.html
-  - test: css-tags-paint-order-with-entry.html
-  - test: css-tags-paint-order.html
-  - test: css-tags-shared-element.html
-  - test: far-away-capture.html
-  - test: japanese-tag.html
-  - test: new-and-old-sizes-match.html
-  - test: new-content-captures-clip-path.html
-  - test: new-content-captures-different-size.html
-  - test: new-content-captures-opacity.html
-  - test: new-content-captures-positioned-spans.html
-  - test: new-content-container-writing-modes.html
-  - test: new-content-element-writing-modes.html
-  - test: new-content-intrinsic-aspect-ratio.html
-  - test: new-content-is-empty-div.html
-  - test: new-content-object-fit-fill.html
-  - test: new-content-object-fit-none.html
-  - test: new-content-object-view-box-clip-path-reference.html
-  - test: new-content-object-view-box-clip-path.html
-  - test: new-content-object-view-box-overflow-clipped.html
-  - test: new-content-object-view-box-overflow.html
-  - test: new-content-scaling.html
-  - test: new-content-with-overflow-zoomed.html
-  - test: new-content-with-overflow.html
-  - test: new-element-on-start.html
-  - test: old-content-captures-clip-path.html
-  - test: old-content-captures-different-size.html
-  - test: old-content-captures-opacity.html
-  - test: old-content-container-writing-modes.html
-  - test: old-content-element-writing-modes.html
-  - test: old-content-intrinsic-aspect-ratio.html
-  - test: old-content-is-empty-div.html
-  - test: old-content-object-fit-fill.html
-  - test: old-content-object-fit-none.html
-  - test: old-content-object-view-box-clip-path-reference.html
-  - test: old-content-object-view-box-clip-path.html
-  - test: old-content-object-view-box-overflow.html
-  - test: old-content-with-overflow-zoomed.html
-  - test: old-content-with-overflow.html
-  - test: root-style-change-during-animation.html
-  - test: set-universal-specificity.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1819697
-- product: firefox
-  results:
-  - subtest: animation created with incorrect name
-    test: web-animation-pseudo-incorrect-name.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1820121
-- product: firefox
-  results:
-  - test: element-stops-grouping-after-animation.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1825647
-- product: firefox
-  results:
-  - test: offscreen-element-modified-before-coming-onscreen.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1825674
-- product: firefox
-  results:
-  - test: massive-element-on-top-of-viewport-offscreen-new.html
-  - test: massive-element-on-top-of-viewport-offscreen-old.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1825883
-- product: firefox
-  results:
-  - test: new-content-changes-overflow.html
-  - test: new-content-with-object-view-box.html
-  - test: old-content-with-object-view-box.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1825954
-- product: firefox
-  results:
-  - test: animating-new-content-subset.html
-  - test: animating-new-content.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1829466
-- product: firefox
-  results:
-  - test: exit-transition-with-anonymous-layout-object.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1832916
-- product: firefox
-  results:
-  - test: fractional-box-with-overflow-children-new.html
-  - test: fractional-box-with-overflow-children-old.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1832964
-- product: firefox
-  results:
-  - test: pseudo-rendering-invalidation.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1839538
-- product: firefox
-  results:
-  - test: writing-mode-container-resize.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1842045
-- product: firefox
-  results:
-  - test: group-animation-for-root-transition.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1842695
-- product: firefox
-  results:
-  - test: group-animation-for-root-transition.html
-  - test: web-animations-api.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1842710
-- product: firefox
-  results:
-  - test: capture-with-opacity-zero-child.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1846664
-- product: firefox
-  results:
-  - test: span-with-overflowing-text-hidden.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1852272
-- product: firefox
-  results:
-  - test: block-with-overflowing-text.html
-  - test: span-with-overflowing-text.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1863822
-- product: firefox
-  results:
-  - subtest: incorrect UA animations for root transition
-    test: group-animation-for-root-transition.html
-  - subtest: :only-child should not match because ::view-transition-group is generated
-      for multiple elements
-    test: only-child-group.html
-  - subtest: :only-child should match because ::view-transition-group is generated
-      for sub element only
-    test: only-child-group.html
-  - subtest: :only-child should not match because ::view-transition-group is generated
-      for multiple sub elements
-    test: only-child-group.html
-  - subtest: :only-child should always match for ::view-transition-image-pair
-    test: only-child-image-pair.html
-  - subtest: :only-child should not match because ::view-transition-old is generated
-      (element to root)
-    test: only-child-new.html
-  - subtest: :only-child should match because ::view-transition-old is not generated
-      (none to element)
-    test: only-child-new.html
-  - subtest: :only-child should not match because ::view-transition-old is generated
-      (root to element)
-    test: only-child-new.html
-  - subtest: :only-child should not match because ::view-transition-old is generated
-      (element to element)
-    test: only-child-new.html
-  - subtest: :only-child should not match because ::view-transition-new is generated
-      (root to element)
-    test: only-child-old.html
-  - subtest: :only-child should match because ::view-transition-new is not generated
-      (element to none)
-    test: only-child-old.html
-  - subtest: :only-child should not match because ::view-transition-new is generated
-      (element to root)
-    test: only-child-old.html
-  - subtest: :only-child should not match because ::view-transition-new is generated
-      (element to element)
-    test: only-child-old.html
-  - subtest: :only-child is not supported on view-transition
-    test: only-child-on-root-element-with-view-transition.html
-  - subtest: :only-child is not supported on view-transition
-    test: only-child-view-transition.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1866380
-- product: firefox
-  results:
-  - subtest: An exception thrown during a transition shouldn't crash.
-    test: no-crash-set-exception.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1867829
-- product: firefox
-  results:
-  - test: document-element-detached-crash.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1870589
-- product: firefox
-  results:
-  - subtest: style inheritance of pseudo elements
-    test: style-inheritance.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1871858
-- product: firefox
-  results:
-  - subtest: position property of pseudo elements
-    test: pseudo-get-computed-style.html
-  - subtest: properties of pseudo elements outside of transition
-    test: pseudo-get-computed-style.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1880786
-- product: firefox
-  results:
-  - test: no-white-flash-before-activation.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1886501
-- product: firefox
-  results:
-  - test: inline-element-size.html
-  - test: massive-element-below-and-on-top-of-viewport-partially-onscreen-new.html
-  - test: massive-element-below-and-on-top-of-viewport-partially-onscreen-old.html
-  - test: massive-element-below-viewport-partially-onscreen-new.html
-  - test: massive-element-below-viewport-partially-onscreen-old.html
-  - test: massive-element-left-of-viewport-partially-onscreen-old.html
-  - test: massive-element-on-top-of-viewport-partially-onscreen-new.html
-  - test: massive-element-on-top-of-viewport-partially-onscreen-old.html
-  - test: massive-element-right-and-left-of-viewport-partially-onscreen-new.html
-  - test: massive-element-right-and-left-of-viewport-partially-onscreen-old.html
-  - test: massive-element-right-of-viewport-partially-onscreen-new.html
-  - test: massive-element-right-of-viewport-partially-onscreen-old.html
-  - test: new-content-captures-spans.html
-  - test: new-content-from-root-display-none.html
-  - test: new-content-has-scrollbars.html
-  - test: no-root-capture.html
-  - test: nothing-captured.html
-  - test: snapshot-containing-block-absolute.html
-  - subtest: hit test should not hit unpainted element, but does hit pseudo and unrelated
-      elements
-    test: hit-test-unpainted-element-from-point.html
-  - subtest: startViewTransition in massive iframe shouldn't crash.
-    test: no-crash-view-transition-in-massive-iframe.html
-  - subtest: CSS animation is blocked until prepare callback
-    test: no-css-animation-while-render-blocked.html
-  - subtest: rAF is blocked until prepare callback
-    test: no-raf-while-render-blocked.html
-  - subtest: '
-
-      View transitions: Resizing viewport before animating rejects the ready promise.
-
-      '
-    test: window-resize-aborts-transition-before-ready.html
-  - subtest: 'View transitions: Resizing viewport skips the transition'
-    test: window-resize-aborts-transition.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1888110
-- product: firefox
-  results:
-  - subtest: View transition should have an implementation-defined timeout on the
-      update callback
-    test: update-callback-timeout.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1889542
-- product: firefox
-  results:
-  - test: rotated-cat-off-top-edge.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1892178
-- product: firefox
-  results:
-  - test: pseudo-element-preserve-3d.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1892179
-- product: firefox
-  results:
-  - test: iframe-transition-destroyed-document-crash.html
-  - test: root-element-display-none-during-transition-crash.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1893703
-- product: firefox
-  results:
-  - subtest: Two different elements with the same name in the new DOM should skip
-      the transition
-    test: duplicate-tag-rejects-start.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1896075
-- product: firefox
-  results:
-  - test: new-content-flat-transform-ancestor.html
-  - test: new-content-preserve-3d-ancestor.html
-  - test: new-content-transform-position-fixed.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1901417
-- product: firefox
-  results:
-  - test: new-content-ancestor-clipped-2.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1901416
-- product: firefox
-  results:
-  - test: new-content-root-scrollbar-with-fixed-background.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1901657
-- product: firefox
-  results:
-  - test: active-view-transition-pseudo-class-match.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1902802
-- product: firefox
-  results:
-  - test: reset-state-after-scrolled-view-transition.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1902734
-- product: firefox
-  results:
-  - subtest: Hit-testing view transition pseudo-elements should always return the
-      document element
-    test: hit-test-pseudo-element-element-from-point.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1903617
-- product: firefox
-  results:
-  - test: new-content-escapes-clip-with-abspos-child.html
-  - test: old-content-escapes-clip-with-abspos-child.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1906477
-- product: firefox
-  results:
-  - test: shadow-part-with-name-overridden-by-important.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1906474
-- product: firefox
-  results:
-  - test: no-named-elements.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1910224
-- product: firefox
-  results:
-  - test: pseudo-with-classes-entry.html
-  - test: pseudo-with-classes-exit.html
-  - test: pseudo-with-classes-match-ident.html
-  - test: pseudo-with-classes-match-multiple-wildcard.html
-  - test: pseudo-with-classes-match-multiple.html
-  - test: pseudo-with-classes-match-wildcard-no-star.html
-  - test: pseudo-with-classes-match-wildcard.html
-  - test: pseudo-with-classes-mismatch-ident.html
-  - test: pseudo-with-classes-mismatch-partial.html
-  - test: pseudo-with-classes-mismatch-wildcard.html
-  - test: pseudo-with-classes-multiple-vt-classes.html
-  - test: pseudo-with-classes-new-with-class-old-without.html
-  - test: pseudo-with-classes-old-with-class-new-without.html
-  - test: pseudo-with-classes-view-transition-group.html
-  - test: pseudo-with-classes-view-transition-image-pair.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1910662
-- product: firefox
-  results:
-  - test: massive-element-left-of-viewport-partially-onscreen-new.html
-  - test: multiline-span-with-overflowing-text-and-box-decorations.html
-  - test: span-with-overflowing-text-and-box-decorations.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1911215
-- product: firefox
-  results:
-  - test: view-transition-types-reserved-mutation.html
-  - test: view-transition-types-reserved.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1913388
-- product: firefox
-  results:
-  - subtest: A view transition should be immediately skipped if started when document
-      is hidden
-    test: transition-in-hidden-page.html
-  - subtest: A view transition should be skipped when a document becomes hidden while
-      processing update callback
-    test: transition-in-hidden-page.html
-  - subtest: A view transition should be skipped when a document becomes hidden while
-      animating
-    test: transition-in-hidden-page.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1916502
-- product: firefox
-  results:
-  - test: update-callback-called-once.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1916817
-- product: firefox
-  results:
-  - test: element-is-grouping-during-animation.html
-  - test: transform-origin-view-transition-group.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1920345
-- product: firefox
-  results:
-  - test: inline-child-with-overflow-shadow.html
-  - test: nested-elements-in-overflow.html
-  - test: outer-padding-inner-background.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1924965
-- label: interop-2025-view-transitions
-  results:
-  - test: new-content-captures-clip-path.html
-  - test: hit-test-unrelated-element.html
-  - test: input-targets-root-while-render-blocked.html
-  - test: iframe-new-has-scrollbar.html
-  - test: root-captured-as-different-tag.html
-  - test: new-content-object-view-box-overflow-clipped.html
-  - test: view-transition-name-removed-mid-transition.html
-  - test: multiline-span-with-overflowing-text-and-box-decorations.html
-  - test: new-content-captures-different-size.html
-  - test: new-content-ancestor-clipped.html
-  - test: new-content-changes-overflow.html
-  - test: old-content-captures-clip-path.html
-  - test: only-child-old.html
-  - test: view-transition-name-on-removed-element.html
-  - test: content-with-transparent-background.html
-  - test: fractional-translation-from-transform.html
-  - test: no-root-capture.html
-  - test: massive-element-below-viewport-partially-onscreen-old.html
-  - test: new-content-changes-overflow-left.html
-  - test: capture-with-offscreen-child-translated.html
-  - test: old-content-object-view-box-clip-path.html
-  - test: new-content-element-writing-modes.html
-  - test: only-child-group.html
-  - test: pseudo-element-overflow-hidden.html
-  - test: shadow-part-with-class-inside-shadow.html
-  - test: view-transition-name-on-document-root.html
-  - test: fractional-translation-from-position.html
-  - test: massive-element-right-and-left-of-viewport-partially-onscreen-old.html
-  - test: massive-element-right-of-viewport-partially-onscreen-new.html
-  - test: new-content-ancestor-clipped-2.html
-  - test: old-content-intrinsic-aspect-ratio.html
-  - test: inline-child-with-filter.html
-  - test: inline-child-with-overflow-shadow.html
-  - test: pseudo-with-classes-view-transition-image-pair.html
-  - test: set-current-time-transform.html
-  - test: view-transition-name-is-grouping.html
-  - test: backdrop-filter-captured.html
-  - test: document-element-detached-crash.html
-  - test: pseudo-rendering-invalidation.html
-  - test: transformed-element-scroll-transform.html
-  - test: old-content-element-writing-modes.html
-  - test: old-root-vertical-writing-mode.html
-  - test: fragmented-during-transition-skips.html
-  - test: old-content-captures-root.html
-  - test: transition-in-hidden-page.html
-  - test: auto-name-from-id.html
-  - test: fractional-box-old.html
-  - test: massive-element-on-top-of-viewport-offscreen-old.html
-  - test: new-content-inline-with-offset-from-containing-block-clipped.html
-  - test: no-white-flash-before-activation.html
-  - test: old-content-object-view-box-overflow.html
-  - test: pseudo-with-classes-exit.html
-  - test: span-with-overflowing-text-hidden.html
-  - test: empty-render-target-crash.html
-  - test: iframe-and-main-frame-transition-old-main.html
-  - test: old-content-captures-opacity.html
-  - test: span-with-overflowing-text-and-box-decorations.html
-  - test: capture-with-visibility-hidden-child.html
-  - test: iframe-and-main-frame-transition-old-main-old-iframe.html
-  - test: new-and-old-sizes-match.html
-  - test: new-content-object-view-box-overflow.html
-  - test: new-root-vertical-writing-mode.html
-  - test: update-callback-called-once.html
-  - test: group-animation-for-root-transition.html
-  - test: inline-with-offset-from-containing-block.html
-  - test: only-child-new.html
-  - test: outer-padding-inner-background.html
-  - test: new-content-intrinsic-aspect-ratio.html
-  - test: new-content-transform-position-fixed.html
-  - test: iframe-and-main-frame-transition-with-name-on-iframe.html
-  - test: massive-element-left-of-viewport-partially-onscreen-new.html
-  - test: new-content-object-view-box-clip-path.html
-  - test: pseudo-with-classes-match-multiple.html
-  - test: root-element-cv-hidden-crash.html
-  - test: set-current-time.html
-  - test: active-view-transition-pseudo-class-match.html
-  - test: css-tags-shared-element.html
-  - test: old-content-with-object-view-box.html
-  - test: pseudo-with-classes-match-wildcard-no-star.html
-  - test: massive-element-below-viewport-offscreen-new.html
-  - test: offscreen-element-modified-before-coming-onscreen.html
-  - test: snapshot-containing-block-static.html
-  - test: active-view-transition-on-non-root.html
-  - test: clip-path-larger-than-border-box-on-child-of-named-element.html
-  - test: unset-and-initial-view-transition-name.html
-  - test: auto-name.html
-  - test: root-to-shared-animation-incoming.html
-  - test: only-child-no-transition.html
-  - test: set-universal-specificity.html
-  - test: css-tags-paint-order-with-entry.html
-  - test: hit-test-unpainted-element-from-point.html
-  - test: object-view-box-new-image.html
-  - test: massive-element-below-viewport-offscreen-old.html
-  - test: massive-element-left-of-viewport-partially-onscreen-old.html
-  - test: massive-element-left-of-viewport-offscreen-new.html
-  - test: pseudo-get-computed-style.html
-  - test: auto-name-get-animations.html
-  - test: exit-transition-with-anonymous-layout-object.html
-  - test: new-content-root-scrollbar-with-fixed-background.html
-  - test: pseudo-computed-style-stays-in-sync-with-new-element.html
-  - test: pseudo-with-classes-mismatch-ident.html
-  - test: capture-with-offscreen-child.html
-  - test: new-content-object-fit-fill.html
-  - test: old-content-captures-different-size.html
-  - test: rotated-cat-off-top-edge.html
-  - test: new-content-captures-positioned-spans.html
-  - test: new-content-with-object-view-box.html
-  - test: old-content-escapes-clip-with-abspos-child.html
-  - test: old-content-object-fit-fill.html
-  - test: scroller-child.html
-  - test: massive-element-right-of-viewport-offscreen-old.html
-  - test: nested-elements-in-overflow.html
-  - test: massive-element-right-of-viewport-partially-onscreen-old.html
-  - test: new-content-is-inline.html
-  - test: capture-with-opacity-zero-child.html
-  - test: event-pseudo-name.html
-  - test: old-content-is-empty-div.html
-  - test: only-child-view-transition.html
-  - test: 3d-transform-outgoing.html
-  - test: fractional-box-with-overflow-children-new.html
-  - test: capture-with-visibility-mixed-descendants.html
-  - test: iframe-and-main-frame-transition-old-main-new-iframe.html
-  - test: new-content-has-scrollbars.html
-  - test: shadow-part-with-name-overridden-by-important.html
-  - test: 3d-transform-incoming.html
-  - test: block-with-overflowing-text.html
-  - test: pseudo-element-animations-rerun.html
-  - test: pseudo-with-classes-match-wildcard.html
-  - test: animating-new-content-subset.html
-  - test: old-content-with-overflow.html
-  - test: named-element-with-fix-pos-child-old.html
-  - test: old-content-container-writing-modes.html
-  - test: old-content-object-fit-none.html
-  - test: root-element-display-none-crash.html
-  - test: hit-test-unpainted-element.html
-  - test: no-painting-while-render-blocked.html
-  - test: paint-holding-in-iframe.html
-  - test: element-with-overflow.html
-  - test: fractional-box-with-shadow-new.html
-  - test: new-content-object-fit-none.html
-  - test: synchronous-callback-skipped-before-run.html
-  - test: fractional-box-new.html
-  - test: mix-blend-mode-only-on-transition.html
-  - test: only-child-image-pair.html
-  - test: paused-animation-at-end.html
-  - test: style-inheritance.html
-  - test: update-callback-timeout.html
-  - test: auto-name-from-id-shadow.html
-  - test: dialog-in-rtl-iframe.html
-  - test: span-with-overflowing-text.html
-  - test: list-style-position-style-change-crash.html
-  - test: ready_resolves_after_dom_before_raf.html
-  - test: duplicate-tag-rejects-capture.html
-  - test: new-element-on-start.html
-  - test: content-with-transform-new-image.html
-  - test: css-tags-paint-order.html
-  - test: new-content-from-root-display-none.html
-  - test: massive-element-left-of-viewport-offscreen-old.html
-  - test: no-crash-view-transition-in-massive-iframe.html
-  - test: old-content-root-scrollbar-with-fixed-background.html
-  - test: active-view-transition-type-on-non-root.html
-  - test: massive-element-below-and-on-top-of-viewport-partially-onscreen-new.html
-  - test: reset-state-after-scrolled-view-transition.html
-  - test: fractional-box-with-shadow-old.html
-  - test: new-content-captures-opacity.html
-  - test: massive-element-on-top-of-viewport-offscreen-new.html
-  - test: old-content-has-scrollbars.html
-  - test: pseudo-with-classes-view-transition-group.html
-  - test: duplicate-tag-rejects-start.html
-  - test: fragmented-at-start-ignored.html
-  - test: named-element-with-fix-pos-child-new.html
-  - test: old-content-inline-with-offset-from-containing-block-clipped.html
-  - test: pseudo-with-classes-new-with-class-old-without.html
-  - test: scroller.html
-  - test: inline-element-size.html
-  - test: massive-element-below-and-on-top-of-viewport-partially-onscreen-old.html
-  - test: sibling-frames-transition.html
-  - test: transition-in-empty-iframe.html
-  - test: transition-skipped-from-invalid-callback.html
-  - test: fractional-box-with-overflow-children-old.html
-  - test: match-element-name.html
-  - test: no-css-animation-while-render-blocked.html
-  - test: element-stops-grouping-after-animation.html
-  - test: new-content-captures-root.html
-  - test: pseudo-with-classes-match-multiple-wildcard.html
-  - test: content-with-inline-child.html
-  - test: iframe-and-main-frame-transition-new-main-new-iframe.html
-  - test: old-content-is-inline.html
-  - test: root-element-display-none-during-transition-crash.html
-  - test: dialog-in-top-layer-during-transition-new.html
-  - test: shadow-part-with-name.html
-  - test: view-transition-name-is-backdrop-filter-root.html
-  - test: class-specificity.html
-  - test: content-visibility-auto-shared-element.html
-  - test: old-content-object-view-box-clip-path-reference.html
-  - test: shadow-part-with-name-nested.html
-  - test: web-animation-pseudo-incorrect-name.html
-  - test: iframe-transition.sub.html
-  - test: new-content-preserve-3d-ancestor.html
-  - test: no-crash-set-exception.html
-  - test: old-content-with-overflow-zoomed.html
-  - test: root-style-change-during-animation.html
-  - test: massive-element-on-top-of-viewport-partially-onscreen-old.html
-  - test: massive-element-right-and-left-of-viewport-partially-onscreen-new.html
-  - test: pseudo-element-preserve-3d.html
-  - test: pseudo-with-classes-match-ident.html
-  - test: pseudo-with-classes-old-with-class-new-without.html
-  - test: scroller-child-abspos.html
-  - test: iframe-old-has-scrollbar.html
-  - test: modify-style-via-cssom.html
-  - test: hit-test-pseudo-element-element-from-point.html
-  - test: backdrop-filter-animated.html
-  - test: capture-old-state-error-flag-cleanup.html
-  - test: pseudo-with-classes-mismatch-partial.html
-  - test: snapshot-containing-block-absolute.html
-  - test: content-with-child-with-transparent-background.html
-  - test: object-view-box-old-image.html
-  - test: root-to-shared-animation-end.html
-  - test: transition-skipped-after-animation-started.html
-  - test: snapshot-containing-block-includes-scrollbar-gutter.html
-  - test: content-with-clip.html
-  - test: pseudo-element-animations.html
-  - test: massive-element-right-of-viewport-offscreen-new.html
-  - test: new-content-is-empty-div.html
-  - test: dynamic-stylesheet-animations.html
-  - test: get-computed-style-crash.html
-  - test: new-content-captures-spans.html
-  - test: new-content-scaling.html
-  - test: new-content-with-overflow-zoomed.html
-  - test: nothing-captured.html
-  - test: content-with-clip-root.html
-  - test: far-away-capture.html
-  - test: shadow-part-with-class-inside-shadow-important.html
-  - test: massive-element-on-top-of-viewport-partially-onscreen-new.html
-  - test: new-content-flat-transform-ancestor.html
-  - test: content-with-transform-old-image.html
-  - test: element-is-grouping-during-animation.html
-  - test: japanese-tag.html
-  - test: massive-element-below-viewport-partially-onscreen-new.html
-  - test: pseudo-with-classes-entry.html
-  - test: pseudo-with-classes-multiple-vt-classes.html
-  - test: animating-new-content.html
-  - test: content-smaller-than-box-size.html
-  - test: transform-origin-view-transition-group.html
-  - test: new-content-escapes-clip-with-abspos-child.html
-  - test: root-to-shared-animation-start.html
-  - test: shadow-part-with-class.html
-  - test: dialog-in-top-layer-during-transition-old.html
-  - test: new-content-container-writing-modes.html
-  - test: new-content-object-view-box-clip-path-reference.html
-  - test: no-named-elements.html
-  - test: pseudo-with-classes-mismatch-wildcard.html
-  - test: iframe-and-main-frame-transition-new-main-old-iframe.html
-  - test: names-are-tree-scoped.html
-  - test: new-content-with-overflow.html
-  - test: only-child-on-root-element-with-view-transition.html
-  - test: break-inside-avoid-child.html
-  - test: iframe-transition-destroyed-document-crash.html
-  - test: no-raf-while-render-blocked.html
-  - test: rtl-with-scrollbar.html
-  - test: window-resize-aborts-transition.html
-  - test: writing-mode-container-resize.html
-  - test: web-animations-api-parse-pseudo-argument.html?first-pseudo=::view-transition-group(      first )
-  - test: web-animations-api-parse-pseudo-argument.html?first-pseudo=::view-transition-group( first)
-  - test: web-animations-api-parse-pseudo-argument.html?first-pseudo=::view-transition-group(first )
-  - test: web-animations-api-parse-pseudo-argument.html?first-pseudo=::view-transition-group(first)
-  - test: web-animations-api.html
-  - test: window-resize-aborts-transition-before-ready.html
-  - test: web-animations-api-parse-pseudo-argument.html?first-pseudo=::view-transition-group( first
-  - test: web-animations-api-parse-pseudo-argument.html?first-pseudo=::view-transition-group(first
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1811571
+      results:
+        - test: content-with-clip.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1815787
+      results:
+        - test: named-element-with-fix-pos-child-new.html
+        - test: named-element-with-fix-pos-child-old.html
+        - test: only-child-group.html
+          subtest: :only-child should match because ::view-transition-group is generated for root element only
+        - test: only-child-new.html
+          subtest: :only-child should match because ::view-transition-old is not generated (none to root)
+        - test: only-child-new.html
+          subtest: :only-child should not match because ::view-transition-old is generated (root to root)
+        - test: only-child-old.html
+          subtest: :only-child should match because ::view-transition-new is not generated (root to none)
+        - test: only-child-old.html
+          subtest: :only-child should not match because ::view-transition-new is generated (root to root)
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1817261
+      results:
+        - test: break-inside-avoid-child.html
+        - test: fractional-translation-from-position.html
+        - test: iframe-transition.sub.html
+        - test: inline-child-with-filter.html
+        - test: new-content-root-scrollbar-with-fixed-background.html
+        - test: rtl-with-scrollbar.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1819697
+      results:
+        - test: 3d-transform-incoming.html
+        - test: content-visibility-auto-shared-element.html
+        - test: css-tags-paint-order-with-entry.html
+        - test: css-tags-paint-order.html
+        - test: css-tags-shared-element.html
+        - test: far-away-capture.html
+        - test: japanese-tag.html
+        - test: new-and-old-sizes-match.html
+        - test: new-content-captures-clip-path.html
+        - test: new-content-captures-different-size.html
+        - test: new-content-captures-opacity.html
+        - test: new-content-captures-positioned-spans.html
+        - test: new-content-container-writing-modes.html
+        - test: new-content-element-writing-modes.html
+        - test: new-content-intrinsic-aspect-ratio.html
+        - test: new-content-is-empty-div.html
+        - test: new-content-object-fit-fill.html
+        - test: new-content-object-fit-none.html
+        - test: new-content-object-view-box-clip-path-reference.html
+        - test: new-content-object-view-box-clip-path.html
+        - test: new-content-object-view-box-overflow-clipped.html
+        - test: new-content-object-view-box-overflow.html
+        - test: new-content-scaling.html
+        - test: new-content-with-overflow-zoomed.html
+        - test: new-content-with-overflow.html
+        - test: new-element-on-start.html
+        - test: old-content-captures-clip-path.html
+        - test: old-content-captures-different-size.html
+        - test: old-content-captures-opacity.html
+        - test: old-content-container-writing-modes.html
+        - test: old-content-element-writing-modes.html
+        - test: old-content-intrinsic-aspect-ratio.html
+        - test: old-content-is-empty-div.html
+        - test: old-content-object-fit-fill.html
+        - test: old-content-object-fit-none.html
+        - test: old-content-object-view-box-clip-path-reference.html
+        - test: old-content-object-view-box-clip-path.html
+        - test: old-content-object-view-box-overflow.html
+        - test: old-content-with-overflow-zoomed.html
+        - test: old-content-with-overflow.html
+        - test: root-style-change-during-animation.html
+        - test: set-universal-specificity.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1820121
+      results:
+        - test: web-animation-pseudo-incorrect-name.html
+          subtest: animation created with incorrect name
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1825647
+      results:
+        - test: element-stops-grouping-after-animation.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1825674
+      results:
+        - test: offscreen-element-modified-before-coming-onscreen.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1825883
+      results:
+        - test: massive-element-on-top-of-viewport-offscreen-new.html
+        - test: massive-element-on-top-of-viewport-offscreen-old.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1825954
+      results:
+        - test: new-content-changes-overflow.html
+        - test: new-content-with-object-view-box.html
+        - test: old-content-with-object-view-box.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1829466
+      results:
+        - test: animating-new-content-subset.html
+        - test: animating-new-content.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1832916
+      results:
+        - test: exit-transition-with-anonymous-layout-object.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1832964
+      results:
+        - test: fractional-box-with-overflow-children-new.html
+        - test: fractional-box-with-overflow-children-old.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1839538
+      results:
+        - test: pseudo-rendering-invalidation.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1842045
+      results:
+        - test: writing-mode-container-resize.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1842695
+      results:
+        - test: group-animation-for-root-transition.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1842710
+      results:
+        - test: group-animation-for-root-transition.html
+        - test: web-animations-api.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1846664
+      results:
+        - test: capture-with-opacity-zero-child.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1852272
+      results:
+        - test: span-with-overflowing-text-hidden.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1863822
+      results:
+        - test: block-with-overflowing-text.html
+        - test: span-with-overflowing-text.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1866380
+      results:
+        - test: group-animation-for-root-transition.html
+          subtest: incorrect UA animations for root transition
+        - test: only-child-group.html
+          subtest: :only-child should not match because ::view-transition-group is generated for multiple elements
+        - test: only-child-group.html
+          subtest: :only-child should match because ::view-transition-group is generated for sub element only
+        - test: only-child-group.html
+          subtest: :only-child should not match because ::view-transition-group is generated for multiple sub elements
+        - test: only-child-image-pair.html
+          subtest: :only-child should always match for ::view-transition-image-pair
+        - test: only-child-new.html
+          subtest: :only-child should not match because ::view-transition-old is generated (element to root)
+        - test: only-child-new.html
+          subtest: :only-child should match because ::view-transition-old is not generated (none to element)
+        - test: only-child-new.html
+          subtest: :only-child should not match because ::view-transition-old is generated (root to element)
+        - test: only-child-new.html
+          subtest: :only-child should not match because ::view-transition-old is generated (element to element)
+        - test: only-child-old.html
+          subtest: :only-child should not match because ::view-transition-new is generated (root to element)
+        - test: only-child-old.html
+          subtest: :only-child should match because ::view-transition-new is not generated (element to none)
+        - test: only-child-old.html
+          subtest: :only-child should not match because ::view-transition-new is generated (element to root)
+        - test: only-child-old.html
+          subtest: :only-child should not match because ::view-transition-new is generated (element to element)
+        - test: only-child-on-root-element-with-view-transition.html
+          subtest: :only-child is not supported on view-transition
+        - test: only-child-view-transition.html
+          subtest: :only-child is not supported on view-transition
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1867829
+      results:
+        - test: no-crash-set-exception.html
+          subtest: An exception thrown during a transition shouldn't crash.
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1870589
+      results:
+        - test: document-element-detached-crash.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1871858
+      results:
+        - test: style-inheritance.html
+          subtest: style inheritance of pseudo elements
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1880786
+      results:
+        - test: pseudo-get-computed-style.html
+          subtest: position property of pseudo elements
+        - test: pseudo-get-computed-style.html
+          subtest: properties of pseudo elements outside of transition
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1886501
+      results:
+        - test: no-white-flash-before-activation.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1888110
+      results:
+        - test: inline-element-size.html
+        - test: massive-element-below-and-on-top-of-viewport-partially-onscreen-new.html
+        - test: massive-element-below-and-on-top-of-viewport-partially-onscreen-old.html
+        - test: massive-element-below-viewport-partially-onscreen-new.html
+        - test: massive-element-below-viewport-partially-onscreen-old.html
+        - test: massive-element-left-of-viewport-partially-onscreen-old.html
+        - test: massive-element-on-top-of-viewport-partially-onscreen-new.html
+        - test: massive-element-on-top-of-viewport-partially-onscreen-old.html
+        - test: massive-element-right-and-left-of-viewport-partially-onscreen-new.html
+        - test: massive-element-right-and-left-of-viewport-partially-onscreen-old.html
+        - test: massive-element-right-of-viewport-partially-onscreen-new.html
+        - test: massive-element-right-of-viewport-partially-onscreen-old.html
+        - test: new-content-captures-spans.html
+        - test: new-content-from-root-display-none.html
+        - test: new-content-has-scrollbars.html
+        - test: no-root-capture.html
+        - test: nothing-captured.html
+        - test: snapshot-containing-block-absolute.html
+        - test: hit-test-unpainted-element-from-point.html
+          subtest: hit test should not hit unpainted element, but does hit pseudo and unrelated elements
+        - test: no-crash-view-transition-in-massive-iframe.html
+          subtest: startViewTransition in massive iframe shouldn't crash.
+        - test: no-css-animation-while-render-blocked.html
+          subtest: CSS animation is blocked until prepare callback
+        - test: no-raf-while-render-blocked.html
+          subtest: rAF is blocked until prepare callback
+        - test: window-resize-aborts-transition-before-ready.html
+          subtest: |4
+            View transitions: Resizing viewport before animating rejects the ready promise.
+        - test: window-resize-aborts-transition.html
+          subtest: 'View transitions: Resizing viewport skips the transition'
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1889542
+      results:
+        - test: update-callback-timeout.html
+          subtest: View transition should have an implementation-defined timeout on the update callback
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1892178
+      results:
+        - test: rotated-cat-off-top-edge.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1892179
+      results:
+        - test: pseudo-element-preserve-3d.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1893703
+      results:
+        - test: iframe-transition-destroyed-document-crash.html
+        - test: root-element-display-none-during-transition-crash.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1896075
+      results:
+        - test: duplicate-tag-rejects-start.html
+          subtest: Two different elements with the same name in the new DOM should skip the transition
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1901417
+      results:
+        - test: new-content-flat-transform-ancestor.html
+        - test: new-content-preserve-3d-ancestor.html
+        - test: new-content-transform-position-fixed.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1901416
+      results:
+        - test: new-content-ancestor-clipped-2.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1901657
+      results:
+        - test: new-content-root-scrollbar-with-fixed-background.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1902802
+      results:
+        - test: active-view-transition-pseudo-class-match.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1902734
+      results:
+        - test: reset-state-after-scrolled-view-transition.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1903617
+      results:
+        - test: hit-test-pseudo-element-element-from-point.html
+          subtest: Hit-testing view transition pseudo-elements should always return the document element
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1906477
+      results:
+        - test: new-content-escapes-clip-with-abspos-child.html
+        - test: old-content-escapes-clip-with-abspos-child.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1906474
+      results:
+        - test: shadow-part-with-name-overridden-by-important.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1910224
+      results:
+        - test: no-named-elements.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1910662
+      results:
+        - test: pseudo-with-classes-entry.html
+        - test: pseudo-with-classes-exit.html
+        - test: pseudo-with-classes-match-ident.html
+        - test: pseudo-with-classes-match-multiple-wildcard.html
+        - test: pseudo-with-classes-match-multiple.html
+        - test: pseudo-with-classes-match-wildcard-no-star.html
+        - test: pseudo-with-classes-match-wildcard.html
+        - test: pseudo-with-classes-mismatch-ident.html
+        - test: pseudo-with-classes-mismatch-partial.html
+        - test: pseudo-with-classes-mismatch-wildcard.html
+        - test: pseudo-with-classes-multiple-vt-classes.html
+        - test: pseudo-with-classes-new-with-class-old-without.html
+        - test: pseudo-with-classes-old-with-class-new-without.html
+        - test: pseudo-with-classes-view-transition-group.html
+        - test: pseudo-with-classes-view-transition-image-pair.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1911215
+      results:
+        - test: massive-element-left-of-viewport-partially-onscreen-new.html
+        - test: multiline-span-with-overflowing-text-and-box-decorations.html
+        - test: span-with-overflowing-text-and-box-decorations.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1913388
+      results:
+        - test: view-transition-types-reserved-mutation.html
+        - test: view-transition-types-reserved.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1916502
+      results:
+        - test: transition-in-hidden-page.html
+          subtest: A view transition should be immediately skipped if started when document is hidden
+        - test: transition-in-hidden-page.html
+          subtest: A view transition should be skipped when a document becomes hidden while processing update callback
+        - test: transition-in-hidden-page.html
+          subtest: A view transition should be skipped when a document becomes hidden while animating
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1916817
+      results:
+        - test: update-callback-called-once.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1920345
+      results:
+        - test: element-is-grouping-during-animation.html
+        - test: transform-origin-view-transition-group.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1924965
+      results:
+        - test: inline-child-with-overflow-shadow.html
+        - test: nested-elements-in-overflow.html
+        - test: outer-padding-inner-background.html
+    - label: interop-2025-view-transitions
+      results:
+        - test: new-content-captures-clip-path.html
+        - test: hit-test-unrelated-element.html
+        - test: input-targets-root-while-render-blocked.html
+        - test: iframe-new-has-scrollbar.html
+        - test: root-captured-as-different-tag.html
+        - test: new-content-object-view-box-overflow-clipped.html
+        - test: view-transition-name-removed-mid-transition.html
+        - test: multiline-span-with-overflowing-text-and-box-decorations.html
+        - test: new-content-captures-different-size.html
+        - test: new-content-ancestor-clipped.html
+        - test: new-content-changes-overflow.html
+        - test: old-content-captures-clip-path.html
+        - test: only-child-old.html
+        - test: view-transition-name-on-removed-element.html
+        - test: content-with-transparent-background.html
+        - test: fractional-translation-from-transform.html
+        - test: no-root-capture.html
+        - test: massive-element-below-viewport-partially-onscreen-old.html
+        - test: new-content-changes-overflow-left.html
+        - test: capture-with-offscreen-child-translated.html
+        - test: old-content-object-view-box-clip-path.html
+        - test: new-content-element-writing-modes.html
+        - test: only-child-group.html
+        - test: pseudo-element-overflow-hidden.html
+        - test: shadow-part-with-class-inside-shadow.html
+        - test: view-transition-name-on-document-root.html
+        - test: fractional-translation-from-position.html
+        - test: massive-element-right-and-left-of-viewport-partially-onscreen-old.html
+        - test: massive-element-right-of-viewport-partially-onscreen-new.html
+        - test: new-content-ancestor-clipped-2.html
+        - test: old-content-intrinsic-aspect-ratio.html
+        - test: inline-child-with-filter.html
+        - test: inline-child-with-overflow-shadow.html
+        - test: pseudo-with-classes-view-transition-image-pair.html
+        - test: set-current-time-transform.html
+        - test: view-transition-name-is-grouping.html
+        - test: backdrop-filter-captured.html
+        - test: document-element-detached-crash.html
+        - test: pseudo-rendering-invalidation.html
+        - test: transformed-element-scroll-transform.html
+        - test: old-content-element-writing-modes.html
+        - test: old-root-vertical-writing-mode.html
+        - test: fragmented-during-transition-skips.html
+        - test: old-content-captures-root.html
+        - test: transition-in-hidden-page.html
+        - test: auto-name-from-id.html
+        - test: fractional-box-old.html
+        - test: massive-element-on-top-of-viewport-offscreen-old.html
+        - test: new-content-inline-with-offset-from-containing-block-clipped.html
+        - test: no-white-flash-before-activation.html
+        - test: old-content-object-view-box-overflow.html
+        - test: pseudo-with-classes-exit.html
+        - test: span-with-overflowing-text-hidden.html
+        - test: empty-render-target-crash.html
+        - test: iframe-and-main-frame-transition-old-main.html
+        - test: old-content-captures-opacity.html
+        - test: span-with-overflowing-text-and-box-decorations.html
+        - test: capture-with-visibility-hidden-child.html
+        - test: iframe-and-main-frame-transition-old-main-old-iframe.html
+        - test: new-and-old-sizes-match.html
+        - test: new-content-object-view-box-overflow.html
+        - test: new-root-vertical-writing-mode.html
+        - test: update-callback-called-once.html
+        - test: group-animation-for-root-transition.html
+        - test: inline-with-offset-from-containing-block.html
+        - test: only-child-new.html
+        - test: outer-padding-inner-background.html
+        - test: new-content-intrinsic-aspect-ratio.html
+        - test: new-content-transform-position-fixed.html
+        - test: iframe-and-main-frame-transition-with-name-on-iframe.html
+        - test: massive-element-left-of-viewport-partially-onscreen-new.html
+        - test: new-content-object-view-box-clip-path.html
+        - test: pseudo-with-classes-match-multiple.html
+        - test: root-element-cv-hidden-crash.html
+        - test: set-current-time.html
+        - test: active-view-transition-pseudo-class-match.html
+        - test: css-tags-shared-element.html
+        - test: old-content-with-object-view-box.html
+        - test: pseudo-with-classes-match-wildcard-no-star.html
+        - test: massive-element-below-viewport-offscreen-new.html
+        - test: offscreen-element-modified-before-coming-onscreen.html
+        - test: snapshot-containing-block-static.html
+        - test: active-view-transition-on-non-root.html
+        - test: clip-path-larger-than-border-box-on-child-of-named-element.html
+        - test: unset-and-initial-view-transition-name.html
+        - test: auto-name.html
+        - test: root-to-shared-animation-incoming.html
+        - test: only-child-no-transition.html
+        - test: set-universal-specificity.html
+        - test: css-tags-paint-order-with-entry.html
+        - test: hit-test-unpainted-element-from-point.html
+        - test: object-view-box-new-image.html
+        - test: massive-element-below-viewport-offscreen-old.html
+        - test: massive-element-left-of-viewport-partially-onscreen-old.html
+        - test: massive-element-left-of-viewport-offscreen-new.html
+        - test: pseudo-get-computed-style.html
+        - test: auto-name-get-animations.html
+        - test: exit-transition-with-anonymous-layout-object.html
+        - test: new-content-root-scrollbar-with-fixed-background.html
+        - test: pseudo-computed-style-stays-in-sync-with-new-element.html
+        - test: pseudo-with-classes-mismatch-ident.html
+        - test: capture-with-offscreen-child.html
+        - test: new-content-object-fit-fill.html
+        - test: old-content-captures-different-size.html
+        - test: rotated-cat-off-top-edge.html
+        - test: new-content-captures-positioned-spans.html
+        - test: new-content-with-object-view-box.html
+        - test: old-content-escapes-clip-with-abspos-child.html
+        - test: old-content-object-fit-fill.html
+        - test: scroller-child.html
+        - test: massive-element-right-of-viewport-offscreen-old.html
+        - test: nested-elements-in-overflow.html
+        - test: massive-element-right-of-viewport-partially-onscreen-old.html
+        - test: new-content-is-inline.html
+        - test: capture-with-opacity-zero-child.html
+        - test: event-pseudo-name.html
+        - test: old-content-is-empty-div.html
+        - test: only-child-view-transition.html
+        - test: 3d-transform-outgoing.html
+        - test: fractional-box-with-overflow-children-new.html
+        - test: capture-with-visibility-mixed-descendants.html
+        - test: iframe-and-main-frame-transition-old-main-new-iframe.html
+        - test: new-content-has-scrollbars.html
+        - test: shadow-part-with-name-overridden-by-important.html
+        - test: 3d-transform-incoming.html
+        - test: block-with-overflowing-text.html
+        - test: pseudo-element-animations-rerun.html
+        - test: pseudo-with-classes-match-wildcard.html
+        - test: animating-new-content-subset.html
+        - test: old-content-with-overflow.html
+        - test: named-element-with-fix-pos-child-old.html
+        - test: old-content-container-writing-modes.html
+        - test: old-content-object-fit-none.html
+        - test: root-element-display-none-crash.html
+        - test: hit-test-unpainted-element.html
+        - test: no-painting-while-render-blocked.html
+        - test: paint-holding-in-iframe.html
+        - test: element-with-overflow.html
+        - test: fractional-box-with-shadow-new.html
+        - test: new-content-object-fit-none.html
+        - test: synchronous-callback-skipped-before-run.html
+        - test: fractional-box-new.html
+        - test: mix-blend-mode-only-on-transition.html
+        - test: only-child-image-pair.html
+        - test: paused-animation-at-end.html
+        - test: style-inheritance.html
+        - test: update-callback-timeout.html
+        - test: auto-name-from-id-shadow.html
+        - test: dialog-in-rtl-iframe.html
+        - test: span-with-overflowing-text.html
+        - test: list-style-position-style-change-crash.html
+        - test: ready_resolves_after_dom_before_raf.html
+        - test: duplicate-tag-rejects-capture.html
+        - test: new-element-on-start.html
+        - test: content-with-transform-new-image.html
+        - test: css-tags-paint-order.html
+        - test: new-content-from-root-display-none.html
+        - test: massive-element-left-of-viewport-offscreen-old.html
+        - test: no-crash-view-transition-in-massive-iframe.html
+        - test: old-content-root-scrollbar-with-fixed-background.html
+        - test: active-view-transition-type-on-non-root.html
+        - test: massive-element-below-and-on-top-of-viewport-partially-onscreen-new.html
+        - test: reset-state-after-scrolled-view-transition.html
+        - test: fractional-box-with-shadow-old.html
+        - test: new-content-captures-opacity.html
+        - test: massive-element-on-top-of-viewport-offscreen-new.html
+        - test: old-content-has-scrollbars.html
+        - test: pseudo-with-classes-view-transition-group.html
+        - test: duplicate-tag-rejects-start.html
+        - test: fragmented-at-start-ignored.html
+        - test: named-element-with-fix-pos-child-new.html
+        - test: old-content-inline-with-offset-from-containing-block-clipped.html
+        - test: pseudo-with-classes-new-with-class-old-without.html
+        - test: scroller.html
+        - test: inline-element-size.html
+        - test: massive-element-below-and-on-top-of-viewport-partially-onscreen-old.html
+        - test: sibling-frames-transition.html
+        - test: transition-in-empty-iframe.html
+        - test: transition-skipped-from-invalid-callback.html
+        - test: fractional-box-with-overflow-children-old.html
+        - test: match-element-name.html
+        - test: no-css-animation-while-render-blocked.html
+        - test: element-stops-grouping-after-animation.html
+        - test: new-content-captures-root.html
+        - test: pseudo-with-classes-match-multiple-wildcard.html
+        - test: content-with-inline-child.html
+        - test: iframe-and-main-frame-transition-new-main-new-iframe.html
+        - test: old-content-is-inline.html
+        - test: root-element-display-none-during-transition-crash.html
+        - test: dialog-in-top-layer-during-transition-new.html
+        - test: shadow-part-with-name.html
+        - test: view-transition-name-is-backdrop-filter-root.html
+        - test: class-specificity.html
+        - test: content-visibility-auto-shared-element.html
+        - test: old-content-object-view-box-clip-path-reference.html
+        - test: shadow-part-with-name-nested.html
+        - test: web-animation-pseudo-incorrect-name.html
+        - test: iframe-transition.sub.html
+        - test: new-content-preserve-3d-ancestor.html
+        - test: no-crash-set-exception.html
+        - test: old-content-with-overflow-zoomed.html
+        - test: root-style-change-during-animation.html
+        - test: massive-element-on-top-of-viewport-partially-onscreen-old.html
+        - test: massive-element-right-and-left-of-viewport-partially-onscreen-new.html
+        - test: pseudo-element-preserve-3d.html
+        - test: pseudo-with-classes-match-ident.html
+        - test: pseudo-with-classes-old-with-class-new-without.html
+        - test: scroller-child-abspos.html
+        - test: iframe-old-has-scrollbar.html
+        - test: modify-style-via-cssom.html
+        - test: hit-test-pseudo-element-element-from-point.html
+        - test: backdrop-filter-animated.html
+        - test: capture-old-state-error-flag-cleanup.html
+        - test: pseudo-with-classes-mismatch-partial.html
+        - test: snapshot-containing-block-absolute.html
+        - test: content-with-child-with-transparent-background.html
+        - test: object-view-box-old-image.html
+        - test: root-to-shared-animation-end.html
+        - test: transition-skipped-after-animation-started.html
+        - test: snapshot-containing-block-includes-scrollbar-gutter.html
+        - test: content-with-clip.html
+        - test: pseudo-element-animations.html
+        - test: massive-element-right-of-viewport-offscreen-new.html
+        - test: new-content-is-empty-div.html
+        - test: dynamic-stylesheet-animations.html
+        - test: get-computed-style-crash.html
+        - test: new-content-captures-spans.html
+        - test: new-content-scaling.html
+        - test: new-content-with-overflow-zoomed.html
+        - test: nothing-captured.html
+        - test: content-with-clip-root.html
+        - test: far-away-capture.html
+        - test: shadow-part-with-class-inside-shadow-important.html
+        - test: massive-element-on-top-of-viewport-partially-onscreen-new.html
+        - test: new-content-flat-transform-ancestor.html
+        - test: content-with-transform-old-image.html
+        - test: element-is-grouping-during-animation.html
+        - test: japanese-tag.html
+        - test: massive-element-below-viewport-partially-onscreen-new.html
+        - test: pseudo-with-classes-entry.html
+        - test: pseudo-with-classes-multiple-vt-classes.html
+        - test: animating-new-content.html
+        - test: content-smaller-than-box-size.html
+        - test: transform-origin-view-transition-group.html
+        - test: new-content-escapes-clip-with-abspos-child.html
+        - test: root-to-shared-animation-start.html
+        - test: shadow-part-with-class.html
+        - test: dialog-in-top-layer-during-transition-old.html
+        - test: new-content-container-writing-modes.html
+        - test: new-content-object-view-box-clip-path-reference.html
+        - test: no-named-elements.html
+        - test: pseudo-with-classes-mismatch-wildcard.html
+        - test: iframe-and-main-frame-transition-new-main-old-iframe.html
+        - test: names-are-tree-scoped.html
+        - test: new-content-with-overflow.html
+        - test: only-child-on-root-element-with-view-transition.html
+        - test: break-inside-avoid-child.html
+        - test: iframe-transition-destroyed-document-crash.html
+        - test: no-raf-while-render-blocked.html
+        - test: rtl-with-scrollbar.html
+        - test: window-resize-aborts-transition.html
+        - test: writing-mode-container-resize.html
+        - test: web-animations-api-parse-pseudo-argument.html?first-pseudo=::view-transition-group(      first )
+        - test: web-animations-api-parse-pseudo-argument.html?first-pseudo=::view-transition-group( first)
+        - test: web-animations-api-parse-pseudo-argument.html?first-pseudo=::view-transition-group(first )
+        - test: web-animations-api-parse-pseudo-argument.html?first-pseudo=::view-transition-group(first)
+        - test: web-animations-api.html
+        - test: window-resize-aborts-transition-before-ready.html
+        - test: web-animations-api-parse-pseudo-argument.html?first-pseudo=::view-transition-group( first
+        - test: web-animations-api-parse-pseudo-argument.html?first-pseudo=::view-transition-group(first
+    - product: chrome
+      url: https://issuetracker.google.com/399098233
+      results:
+        - test: no-painting-while-render-blocked.html
