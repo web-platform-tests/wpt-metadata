@@ -1,169 +1,147 @@
 links:
-- product: firefox
-  results:
-  - subtest: 'execCommand("delete", false, ""): "a&nbsp;&nbsp;&nbsp;&nbsp;||&nbsp;[]&nbsp;&nbsp;&nbsp;c"'
-    test: white-spaces-after-execCommand-delete.tentative.html
-  - subtest: 'execCommand("delete", false, ""): "a&nbsp;&nbsp;&nbsp;&nbsp;||[]&nbsp;&nbsp;&nbsp;&nbsp;c"'
-    test: white-spaces-after-execCommand-delete.tentative.html
-  - subtest: 'execCommand("delete", false, ""): "a&nbsp;&nbsp;&nbsp;&nbsp;|[]|&nbsp;&nbsp;&nbsp;&nbsp;c"'
-    test: white-spaces-after-execCommand-delete.tentative.html
-  - subtest: 'execCommand("delete", false, ""): "a&nbsp;&nbsp;&nbsp;&nbsp;[]||&nbsp;&nbsp;&nbsp;&nbsp;c"'
-    test: white-spaces-after-execCommand-delete.tentative.html
-  - subtest: 'execCommand("delete", false, ""): "<span>abc&nbsp;</span><span>&nbsp;
-      []def</span>"'
-    test: white-spaces-after-execCommand-delete.tentative.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1678168
-- product: chrome
-  results:
-  - test: editing-around-select-element.tentative.html?insertText
-  - test: exec-command-with-text-editor.tentative.html?type=text
-  - test: exec-command-without-editable-element.tentative.html
-  - test: extra-text-nodes.html
-  - test: restoration.html
-  - test: delete.html
-  - test: editing-around-select-element.tentative.html?delete
-  - test: editing-around-select-element.tentative.html?forwardDelete
-  url: https://bugs.chromium.org/p/chromium/issues/detail?id=1226219
-- product: chrome
-  results:
-  - test: typing-around-link-element-at-collapsed-selection.tentative.html?target=ContentEditable
-  - test: typing-around-link-element-at-collapsed-selection.tentative.html?target=ContentEditable&child=b
-  - test: typing-around-link-element-at-collapsed-selection.tentative.html?target=ContentEditable&parent=b
-  - test: typing-around-link-element-at-collapsed-selection.tentative.html?target=ContentEditable&parent=b&child=i
-  - test: typing-around-link-element-at-collapsed-selection.tentative.html?target=DesignMode
-  - test: typing-around-link-element-at-collapsed-selection.tentative.html?target=DesignMode&child=b
-  - test: typing-around-link-element-at-collapsed-selection.tentative.html?target=DesignMode&parent=b
-  - test: typing-around-link-element-at-collapsed-selection.tentative.html?target=DesignMode&parent=b&child=i
-  url: https://bugs.chromium.org/p/chromium/issues/detail?id=1226218
-- product: chrome
-  results:
-  - test: typing-around-link-element-at-non-collapsed-selection.tentative.html?target=ContentEditable
-  - test: typing-around-link-element-at-non-collapsed-selection.tentative.html?target=ContentEditable&child=b
-  - test: typing-around-link-element-at-non-collapsed-selection.tentative.html?target=ContentEditable&parent=b
-  - test: typing-around-link-element-at-non-collapsed-selection.tentative.html?target=ContentEditable&parent=b&child=i
-  - test: typing-around-link-element-at-non-collapsed-selection.tentative.html?target=DesignMode&parent=b
-  - test: typing-around-link-element-at-non-collapsed-selection.tentative.html?target=DesignMode
-  - test: typing-around-link-element-at-non-collapsed-selection.tentative.html?target=DesignMode&child=b
-  - test: typing-around-link-element-at-non-collapsed-selection.tentative.html?target=DesignMode&parent=b&child=i
-  url: https://bugs.chromium.org/p/chromium/issues/detail?id=1226216
-- label: interop-2023-webcompat
-  results:
-  - test: insertparagraph-in-inline-editing-host.tentative.html?white-space=pre-line&display=inline-block&method=shift-enter
-  - test: insertparagraph-in-inline-editing-host.tentative.html?white-space=pre&display=list-item&method=shift-enter
-  - test: insertparagraph-in-inline-editing-host.tentative.html?white-space=pre-line&display=block&method=enter
-  - test: insertparagraph-in-inline-editing-host.tentative.html?white-space=pre-line&display=inline&method=shift-enter
-  - test: insertparagraph-in-inline-editing-host.tentative.html?white-space=pre-wrap&display=block&method=shift-enter
-  - test: insertparagraph-in-inline-editing-host.tentative.html?white-space=pre-wrap&display=inline&method=enter
-  - test: insertparagraph-in-inline-editing-host.tentative.html?white-space=pre-wrap&display=inline&method=shift-enter
-  - test: insertparagraph-in-inline-editing-host.tentative.html?white-space=pre&display=block&method=shift-enter
-  - test: insertparagraph-in-inline-editing-host.tentative.html?white-space=pre-wrap&display=inline-block&method=shift-enter
-  - test: insertparagraph-in-inline-editing-host.tentative.html?white-space=pre-wrap&display=table-cell&method=shift-enter
-  - test: insertparagraph-in-inline-editing-host.tentative.html?white-space=normal&display=block&method=shift-enter
-  - test: insertparagraph-in-inline-editing-host.tentative.html?white-space=normal&display=inline-block&method=shift-enter
-  - test: insertparagraph-in-inline-editing-host.tentative.html?white-space=normal&display=list-item&method=enter
-  - test: insertparagraph-in-inline-editing-host.tentative.html?white-space=pre-wrap&display=block&method=enter
-  - test: insertparagraph-in-inline-editing-host.tentative.html?white-space=pre&display=inline&method=shift-enter
-  - test: insertparagraph-in-inline-editing-host.tentative.html?white-space=pre&display=list-item&method=enter
-  - test: insertparagraph-in-inline-editing-host.tentative.html?white-space=normal&display=inline&method=shift-enter
-  - test: insertparagraph-in-inline-editing-host.tentative.html?white-space=normal&display=list-item&method=shift-enter
-  - test: insertparagraph-in-inline-editing-host.tentative.html?white-space=pre-wrap&display=table-cell&method=enter
-  - test: insertparagraph-in-inline-editing-host.tentative.html?white-space=pre&display=inline-block&method=enter
-  - test: insertparagraph-in-inline-editing-host.tentative.html?white-space=normal&display=block&method=enter
-  - test: insertparagraph-in-inline-editing-host.tentative.html?white-space=normal&display=table-cell&method=enter
-  - test: insertparagraph-in-inline-editing-host.tentative.html?white-space=pre-line&display=block&method=shift-enter
-  - test: insertparagraph-in-inline-editing-host.tentative.html?white-space=pre&display=inline-block&method=shift-enter
-  - test: insertparagraph-in-inline-editing-host.tentative.html?white-space=pre&display=inline&method=enter
-  - test: insertparagraph-in-inline-editing-host.tentative.html?white-space=pre&display=table-cell&method=shift-enter
-  - test: insertparagraph-in-inline-editing-host.tentative.html?white-space=normal&display=inline-block&method=enter
-  - test: insertparagraph-in-inline-editing-host.tentative.html?white-space=normal&display=inline&method=enter
-  - test: insertparagraph-in-inline-editing-host.tentative.html?white-space=normal&display=table-cell&method=shift-enter
-  - test: insertparagraph-in-inline-editing-host.tentative.html?white-space=pre-line&display=inline&method=enter
-  - test: insertparagraph-in-inline-editing-host.tentative.html?white-space=pre-line&display=table-cell&method=shift-enter
-  - test: insertparagraph-in-inline-editing-host.tentative.html?white-space=pre-wrap&display=list-item&method=shift-enter
-  - test: insertparagraph-in-inline-editing-host.tentative.html?white-space=pre&display=table-cell&method=enter
-  - test: insertparagraph-in-inline-editing-host.tentative.html?white-space=pre-line&display=inline-block&method=enter
-  - test: insertparagraph-in-inline-editing-host.tentative.html?white-space=pre-line&display=list-item&method=enter
-  - test: insertparagraph-in-inline-editing-host.tentative.html?white-space=pre-line&display=list-item&method=shift-enter
-  - test: insertparagraph-in-inline-editing-host.tentative.html?white-space=pre-line&display=table-cell&method=enter
-  - test: insertparagraph-in-inline-editing-host.tentative.html?white-space=pre-wrap&display=inline-block&method=enter
-  - test: insertparagraph-in-inline-editing-host.tentative.html?white-space=pre-wrap&display=list-item&method=enter
-  - test: insertparagraph-in-inline-editing-host.tentative.html?white-space=pre&display=block&method=enter
-- product: chrome
-  results:
-  - test: insertparagraph-in-inline-editing-host.tentative.html?white-space=normal&display=block&method=enter
-  - test: insertparagraph-in-inline-editing-host.tentative.html?white-space=normal&display=list-item&method=enter
-  - test: insertparagraph-in-inline-editing-host.tentative.html?white-space=pre-line&display=list-item&method=shift-enter
-  - test: insertparagraph-in-inline-editing-host.tentative.html?white-space=pre-line&display=block&method=enter
-  - test: insertparagraph-in-inline-editing-host.tentative.html?white-space=pre-line&display=list-item&method=enter
-  - test: insertparagraph-in-inline-editing-host.tentative.html?white-space=pre-line&display=table-cell&method=enter
-  - test: insertparagraph-in-inline-editing-host.tentative.html?white-space=pre-wrap&display=block&method=enter
-  - test: insertparagraph-in-inline-editing-host.tentative.html?white-space=pre&display=list-item&method=enter
-  - test: insertparagraph-in-inline-editing-host.tentative.html?white-space=pre-line&display=block&method=shift-enter
-  - test: insertparagraph-in-inline-editing-host.tentative.html?white-space=pre-line&display=inline-block&method=shift-enter
-  - test: insertparagraph-in-inline-editing-host.tentative.html?white-space=pre-line&display=inline&method=shift-enter
-  - test: insertparagraph-in-inline-editing-host.tentative.html?white-space=pre-line&display=table-cell&method=shift-enter
-  - test: insertparagraph-in-inline-editing-host.tentative.html?white-space=pre-wrap&display=list-item&method=enter
-  - test: insertparagraph-in-inline-editing-host.tentative.html?white-space=pre-line&display=inline-block&method=enter
-  - test: insertparagraph-in-inline-editing-host.tentative.html?white-space=pre-line&display=inline&method=enter
-  - test: insertparagraph-in-inline-editing-host.tentative.html?white-space=pre&display=block&method=enter
-  url: https://bugs.chromium.org/p/chromium/issues/detail?id=1420675
-- product: firefox
-  results:
-  - test: insertparagraph-in-inline-editing-host.tentative.html?white-space=pre-line&display=list-item&method=enter
-  - test: insertparagraph-in-inline-editing-host.tentative.html?white-space=pre-line&display=table-cell&method=enter
-  - test: insertparagraph-in-inline-editing-host.tentative.html?white-space=pre&display=block&method=enter
-  - test: insertparagraph-in-inline-editing-host.tentative.html?white-space=pre&display=table-cell&method=enter
-  - test: insertparagraph-in-inline-editing-host.tentative.html?white-space=pre-wrap&display=list-item&method=shift-enter
-  - test: insertparagraph-in-inline-editing-host.tentative.html?white-space=pre&display=list-item&method=shift-enter
-  - test: insertparagraph-in-inline-editing-host.tentative.html?white-space=pre-line&display=block&method=enter
-  - test: insertparagraph-in-inline-editing-host.tentative.html?white-space=pre-wrap&display=block&method=enter
-  - test: insertparagraph-in-inline-editing-host.tentative.html?white-space=pre-wrap&display=block&method=shift-enter
-  - test: insertparagraph-in-inline-editing-host.tentative.html?white-space=pre-wrap&display=list-item&method=enter
-  - test: insertparagraph-in-inline-editing-host.tentative.html?white-space=pre-line&display=block&method=shift-enter
-  - test: insertparagraph-in-inline-editing-host.tentative.html?white-space=pre-line&display=list-item&method=shift-enter
-  - test: insertparagraph-in-inline-editing-host.tentative.html?white-space=pre&display=table-cell&method=shift-enter
-  - test: insertparagraph-in-inline-editing-host.tentative.html?white-space=pre&display=list-item&method=enter
-  - test: insertparagraph-in-inline-editing-host.tentative.html?white-space=pre-line&display=table-cell&method=shift-enter
-  - test: insertparagraph-in-inline-editing-host.tentative.html?white-space=pre-wrap&display=table-cell&method=enter
-  - test: insertparagraph-in-inline-editing-host.tentative.html?white-space=pre-wrap&display=table-cell&method=shift-enter
-  - test: insertparagraph-in-inline-editing-host.tentative.html?white-space=pre&display=block&method=shift-enter
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1819551
-- product: firefox
-  results:
-  - subtest: This tests for a bug in ReplaceSelectionCommand where styles are lost
-      during paste.
-    test: paste-in-list-with-inline-style.tentative.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1944214
-- product: firefox
-  results:
-  - subtest: The extra line break is missing after the paragraph that ends with a
-      comment.
-    test: plain-text-copy-paste-of-paragraph-ending-with-non-layed-out-content.html
-  - subtest: The extra line break is missing after the paragraph that ends with a
-      display:none span.
-    test: plain-text-copy-paste-of-paragraph-ending-with-non-layed-out-content.html
-  - subtest: The extra line break is missing after the paragraph that ends with a
-      hidden span.
-    test: plain-text-copy-paste-of-paragraph-ending-with-non-layed-out-content.html
-  - subtest: The extra line break is missing after the paragraph that ends with a
-      meta tag.
-    test: plain-text-copy-paste-of-paragraph-ending-with-non-layed-out-content.html
-  - subtest: The extra line break is missing after the paragraph that ends with a
-      style tag.
-    test: plain-text-copy-paste-of-paragraph-ending-with-non-layed-out-content.html
-  - subtest: The extra line break is missing after the paragraph that ends with a
-      base tag.
-    test: plain-text-copy-paste-of-paragraph-ending-with-non-layed-out-content.html
-  - subtest: Line break should not be present before semicolon after block elements
-      styled as inline-block.
-    test: plain-text-copy-paste-of-paragraph-ending-with-non-layed-out-content.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1948281
-- product: firefox
-  results:
-  - subtest: waiting for command to execute
-    test: merge-span-with-style-after-backspace-having-contenteditable.html
-  - subtest: waiting for command to execute
-    test: merge-span-with-style-after-forwarddelete-having-contenteditable.html
-  - subtest: waiting for command to execute
-    test: merge-span-with-style-after-pressing-enter-followed-by-backspace-in-contenteditable-div.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1950829
+    - product: chrome
+      url: https://bugs.chromium.org/p/chromium/issues/detail?id=1226219
+      results:
+        - test: editing-around-select-element.tentative.html?insertText
+        - test: exec-command-with-text-editor.tentative.html?type=text
+        - test: exec-command-without-editable-element.tentative.html
+        - test: extra-text-nodes.html
+        - test: restoration.html
+        - test: delete.html
+        - test: editing-around-select-element.tentative.html?delete
+        - test: editing-around-select-element.tentative.html?forwardDelete
+    - product: chrome
+      url: https://bugs.chromium.org/p/chromium/issues/detail?id=1226218
+      results:
+        - test: typing-around-link-element-at-collapsed-selection.tentative.html?target=ContentEditable
+        - test: typing-around-link-element-at-collapsed-selection.tentative.html?target=ContentEditable&child=b
+        - test: typing-around-link-element-at-collapsed-selection.tentative.html?target=ContentEditable&parent=b
+        - test: typing-around-link-element-at-collapsed-selection.tentative.html?target=ContentEditable&parent=b&child=i
+        - test: typing-around-link-element-at-collapsed-selection.tentative.html?target=DesignMode
+        - test: typing-around-link-element-at-collapsed-selection.tentative.html?target=DesignMode&child=b
+        - test: typing-around-link-element-at-collapsed-selection.tentative.html?target=DesignMode&parent=b
+        - test: typing-around-link-element-at-collapsed-selection.tentative.html?target=DesignMode&parent=b&child=i
+    - product: chrome
+      url: https://bugs.chromium.org/p/chromium/issues/detail?id=1226216
+      results:
+        - test: typing-around-link-element-at-non-collapsed-selection.tentative.html?target=ContentEditable
+        - test: typing-around-link-element-at-non-collapsed-selection.tentative.html?target=ContentEditable&child=b
+        - test: typing-around-link-element-at-non-collapsed-selection.tentative.html?target=ContentEditable&parent=b
+        - test: typing-around-link-element-at-non-collapsed-selection.tentative.html?target=ContentEditable&parent=b&child=i
+        - test: typing-around-link-element-at-non-collapsed-selection.tentative.html?target=DesignMode&parent=b
+        - test: typing-around-link-element-at-non-collapsed-selection.tentative.html?target=DesignMode
+        - test: typing-around-link-element-at-non-collapsed-selection.tentative.html?target=DesignMode&child=b
+        - test: typing-around-link-element-at-non-collapsed-selection.tentative.html?target=DesignMode&parent=b&child=i
+    - label: interop-2023-webcompat
+      results:
+        - test: insertparagraph-in-inline-editing-host.tentative.html?white-space=pre-line&display=inline-block&method=shift-enter
+        - test: insertparagraph-in-inline-editing-host.tentative.html?white-space=pre&display=list-item&method=shift-enter
+        - test: insertparagraph-in-inline-editing-host.tentative.html?white-space=pre-line&display=block&method=enter
+        - test: insertparagraph-in-inline-editing-host.tentative.html?white-space=pre-line&display=inline&method=shift-enter
+        - test: insertparagraph-in-inline-editing-host.tentative.html?white-space=pre-wrap&display=block&method=shift-enter
+        - test: insertparagraph-in-inline-editing-host.tentative.html?white-space=pre-wrap&display=inline&method=enter
+        - test: insertparagraph-in-inline-editing-host.tentative.html?white-space=pre-wrap&display=inline&method=shift-enter
+        - test: insertparagraph-in-inline-editing-host.tentative.html?white-space=pre&display=block&method=shift-enter
+        - test: insertparagraph-in-inline-editing-host.tentative.html?white-space=pre-wrap&display=inline-block&method=shift-enter
+        - test: insertparagraph-in-inline-editing-host.tentative.html?white-space=pre-wrap&display=table-cell&method=shift-enter
+        - test: insertparagraph-in-inline-editing-host.tentative.html?white-space=normal&display=block&method=shift-enter
+        - test: insertparagraph-in-inline-editing-host.tentative.html?white-space=normal&display=inline-block&method=shift-enter
+        - test: insertparagraph-in-inline-editing-host.tentative.html?white-space=normal&display=list-item&method=enter
+        - test: insertparagraph-in-inline-editing-host.tentative.html?white-space=pre-wrap&display=block&method=enter
+        - test: insertparagraph-in-inline-editing-host.tentative.html?white-space=pre&display=inline&method=shift-enter
+        - test: insertparagraph-in-inline-editing-host.tentative.html?white-space=pre&display=list-item&method=enter
+        - test: insertparagraph-in-inline-editing-host.tentative.html?white-space=normal&display=inline&method=shift-enter
+        - test: insertparagraph-in-inline-editing-host.tentative.html?white-space=normal&display=list-item&method=shift-enter
+        - test: insertparagraph-in-inline-editing-host.tentative.html?white-space=pre-wrap&display=table-cell&method=enter
+        - test: insertparagraph-in-inline-editing-host.tentative.html?white-space=pre&display=inline-block&method=enter
+        - test: insertparagraph-in-inline-editing-host.tentative.html?white-space=normal&display=block&method=enter
+        - test: insertparagraph-in-inline-editing-host.tentative.html?white-space=normal&display=table-cell&method=enter
+        - test: insertparagraph-in-inline-editing-host.tentative.html?white-space=pre-line&display=block&method=shift-enter
+        - test: insertparagraph-in-inline-editing-host.tentative.html?white-space=pre&display=inline-block&method=shift-enter
+        - test: insertparagraph-in-inline-editing-host.tentative.html?white-space=pre&display=inline&method=enter
+        - test: insertparagraph-in-inline-editing-host.tentative.html?white-space=pre&display=table-cell&method=shift-enter
+        - test: insertparagraph-in-inline-editing-host.tentative.html?white-space=normal&display=inline-block&method=enter
+        - test: insertparagraph-in-inline-editing-host.tentative.html?white-space=normal&display=inline&method=enter
+        - test: insertparagraph-in-inline-editing-host.tentative.html?white-space=normal&display=table-cell&method=shift-enter
+        - test: insertparagraph-in-inline-editing-host.tentative.html?white-space=pre-line&display=inline&method=enter
+        - test: insertparagraph-in-inline-editing-host.tentative.html?white-space=pre-line&display=table-cell&method=shift-enter
+        - test: insertparagraph-in-inline-editing-host.tentative.html?white-space=pre-wrap&display=list-item&method=shift-enter
+        - test: insertparagraph-in-inline-editing-host.tentative.html?white-space=pre&display=table-cell&method=enter
+        - test: insertparagraph-in-inline-editing-host.tentative.html?white-space=pre-line&display=inline-block&method=enter
+        - test: insertparagraph-in-inline-editing-host.tentative.html?white-space=pre-line&display=list-item&method=enter
+        - test: insertparagraph-in-inline-editing-host.tentative.html?white-space=pre-line&display=list-item&method=shift-enter
+        - test: insertparagraph-in-inline-editing-host.tentative.html?white-space=pre-line&display=table-cell&method=enter
+        - test: insertparagraph-in-inline-editing-host.tentative.html?white-space=pre-wrap&display=inline-block&method=enter
+        - test: insertparagraph-in-inline-editing-host.tentative.html?white-space=pre-wrap&display=list-item&method=enter
+        - test: insertparagraph-in-inline-editing-host.tentative.html?white-space=pre&display=block&method=enter
+    - product: chrome
+      url: https://bugs.chromium.org/p/chromium/issues/detail?id=1420675
+      results:
+        - test: insertparagraph-in-inline-editing-host.tentative.html?white-space=normal&display=block&method=enter
+        - test: insertparagraph-in-inline-editing-host.tentative.html?white-space=normal&display=list-item&method=enter
+        - test: insertparagraph-in-inline-editing-host.tentative.html?white-space=pre-line&display=list-item&method=shift-enter
+        - test: insertparagraph-in-inline-editing-host.tentative.html?white-space=pre-line&display=block&method=enter
+        - test: insertparagraph-in-inline-editing-host.tentative.html?white-space=pre-line&display=list-item&method=enter
+        - test: insertparagraph-in-inline-editing-host.tentative.html?white-space=pre-line&display=table-cell&method=enter
+        - test: insertparagraph-in-inline-editing-host.tentative.html?white-space=pre-wrap&display=block&method=enter
+        - test: insertparagraph-in-inline-editing-host.tentative.html?white-space=pre&display=list-item&method=enter
+        - test: insertparagraph-in-inline-editing-host.tentative.html?white-space=pre-line&display=block&method=shift-enter
+        - test: insertparagraph-in-inline-editing-host.tentative.html?white-space=pre-line&display=inline-block&method=shift-enter
+        - test: insertparagraph-in-inline-editing-host.tentative.html?white-space=pre-line&display=inline&method=shift-enter
+        - test: insertparagraph-in-inline-editing-host.tentative.html?white-space=pre-line&display=table-cell&method=shift-enter
+        - test: insertparagraph-in-inline-editing-host.tentative.html?white-space=pre-wrap&display=list-item&method=enter
+        - test: insertparagraph-in-inline-editing-host.tentative.html?white-space=pre-line&display=inline-block&method=enter
+        - test: insertparagraph-in-inline-editing-host.tentative.html?white-space=pre-line&display=inline&method=enter
+        - test: insertparagraph-in-inline-editing-host.tentative.html?white-space=pre&display=block&method=enter
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1819551
+      results:
+        - test: insertparagraph-in-inline-editing-host.tentative.html?white-space=pre-line&display=list-item&method=enter
+        - test: insertparagraph-in-inline-editing-host.tentative.html?white-space=pre-line&display=table-cell&method=enter
+        - test: insertparagraph-in-inline-editing-host.tentative.html?white-space=pre&display=block&method=enter
+        - test: insertparagraph-in-inline-editing-host.tentative.html?white-space=pre&display=table-cell&method=enter
+        - test: insertparagraph-in-inline-editing-host.tentative.html?white-space=pre-wrap&display=list-item&method=shift-enter
+        - test: insertparagraph-in-inline-editing-host.tentative.html?white-space=pre&display=list-item&method=shift-enter
+        - test: insertparagraph-in-inline-editing-host.tentative.html?white-space=pre-line&display=block&method=enter
+        - test: insertparagraph-in-inline-editing-host.tentative.html?white-space=pre-wrap&display=block&method=enter
+        - test: insertparagraph-in-inline-editing-host.tentative.html?white-space=pre-wrap&display=block&method=shift-enter
+        - test: insertparagraph-in-inline-editing-host.tentative.html?white-space=pre-wrap&display=list-item&method=enter
+        - test: insertparagraph-in-inline-editing-host.tentative.html?white-space=pre-line&display=block&method=shift-enter
+        - test: insertparagraph-in-inline-editing-host.tentative.html?white-space=pre-line&display=list-item&method=shift-enter
+        - test: insertparagraph-in-inline-editing-host.tentative.html?white-space=pre&display=table-cell&method=shift-enter
+        - test: insertparagraph-in-inline-editing-host.tentative.html?white-space=pre&display=list-item&method=enter
+        - test: insertparagraph-in-inline-editing-host.tentative.html?white-space=pre-line&display=table-cell&method=shift-enter
+        - test: insertparagraph-in-inline-editing-host.tentative.html?white-space=pre-wrap&display=table-cell&method=enter
+        - test: insertparagraph-in-inline-editing-host.tentative.html?white-space=pre-wrap&display=table-cell&method=shift-enter
+        - test: insertparagraph-in-inline-editing-host.tentative.html?white-space=pre&display=block&method=shift-enter
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1944214
+      results:
+        - test: paste-in-list-with-inline-style.tentative.html
+          subtest: This tests for a bug in ReplaceSelectionCommand where styles are lost during paste.
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1948281
+      results:
+        - test: plain-text-copy-paste-of-paragraph-ending-with-non-layed-out-content.html
+          subtest: The extra line break is missing after the paragraph that ends with a comment.
+        - test: plain-text-copy-paste-of-paragraph-ending-with-non-layed-out-content.html
+          subtest: The extra line break is missing after the paragraph that ends with a display:none span.
+        - test: plain-text-copy-paste-of-paragraph-ending-with-non-layed-out-content.html
+          subtest: The extra line break is missing after the paragraph that ends with a hidden span.
+        - test: plain-text-copy-paste-of-paragraph-ending-with-non-layed-out-content.html
+          subtest: The extra line break is missing after the paragraph that ends with a meta tag.
+        - test: plain-text-copy-paste-of-paragraph-ending-with-non-layed-out-content.html
+          subtest: The extra line break is missing after the paragraph that ends with a style tag.
+        - test: plain-text-copy-paste-of-paragraph-ending-with-non-layed-out-content.html
+          subtest: The extra line break is missing after the paragraph that ends with a base tag.
+        - test: plain-text-copy-paste-of-paragraph-ending-with-non-layed-out-content.html
+          subtest: Line break should not be present before semicolon after block elements styled as inline-block.
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1950829
+      results:
+        - test: merge-span-with-style-after-backspace-having-contenteditable.html
+          subtest: waiting for command to execute
+        - test: merge-span-with-style-after-forwarddelete-having-contenteditable.html
+          subtest: waiting for command to execute
+        - test: merge-span-with-style-after-pressing-enter-followed-by-backspace-in-contenteditable-div.html
+          subtest: waiting for command to execute
