@@ -1,65 +1,69 @@
 links:
-- product: safari
-  results:
-  - test: change-animation-range-updates-play-state.html
-  - test: view-timeline-snapport.html
-  - test: view-timeline-subject-size-changes.html
-  url: https://bugs.webkit.org/show_bug.cgi?id=285518
-- product: safari
-  results:
-  - test: view-timeline-inset.html
-  url: https://bugs.webkit.org/show_bug.cgi?id=285750
-- product: firefox
-  results:
-  - subtest: View timeline delay
-    test: intermediate-transform.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1948673
-- product: firefox
-  results:
-  - subtest: View timeline  does not clamp end scroll offset at max scroll
-    test: block-view-timeline-current-time.tentative.html
-  - subtest: View timeline does not clamp end scroll offset at max scroll
-    test: inline-view-timeline-current-time.tentative.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1948851
-- product: firefox
-  results:
-  - test: animation-events.html
-  - subtest: Changing the animation range updates the play state
-    test: change-animation-range-updates-play-state.html
-  - subtest: Fieldset is a valid source for a view timeline
-    test: fieldset-source.html
-  - subtest: View timeline attached to SVG graphics element
-    test: svg-graphics-element-001.html
-  - subtest: View timeline attached to SVG graphics element
-    test: svg-graphics-element-002.html
-  - subtest: Invalid timeline offset in programmatic keyframe throws
-    test: timeline-offset-in-keyframe.html
-  - subtest: Getting and setting the animation range
-    test: view-timeline-get-set-range.html
-  - subtest: View timeline with px based inset.
-    test: view-timeline-inset.html
-  - subtest: View timeline with percent based inset.
-    test: view-timeline-inset.html
-  - subtest: view timeline with inset auto.
-    test: view-timeline-inset.html
-  - subtest: view timeline with font relative inset.
-    test: view-timeline-inset.html
-  - subtest: 'element with display: none should have inactive viewtimeline'
-    test: view-timeline-on-display-none-element.html
-  - subtest: View timeline with range as <name> <percent> pair.
-    test: view-timeline-range.html
-  - subtest: View timeline with range and inferred name or offset.
-    test: view-timeline-range.html
-  - subtest: View timeline with range as <name> <px> pair.
-    test: view-timeline-range.html
-  - subtest: View timeline with range as <name> <percent+px> pair.
-    test: view-timeline-range.html
-  - subtest: View timeline with range as strings.
-    test: view-timeline-range.html
-  - subtest: Test view-timeline with document scrolling element.
-    test: view-timeline-root-source.html
-  - subtest: Default ViewTimeline is not affected by scroll-padding
-    test: view-timeline-snapport.html
-  - subtest: View timeline with subject size change after the creation of the animation
-    test: view-timeline-subject-size-changes.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1949826
+    - product: safari
+      url: https://bugs.webkit.org/show_bug.cgi?id=285518
+      results:
+        - test: change-animation-range-updates-play-state.html
+        - test: view-timeline-snapport.html
+        - test: view-timeline-subject-size-changes.html
+    - product: safari
+      url: https://bugs.webkit.org/show_bug.cgi?id=285750
+      results:
+        - test: view-timeline-inset.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1948673
+      results:
+        - test: intermediate-transform.html
+          subtest: View timeline delay
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1948851
+      results:
+        - test: block-view-timeline-current-time.tentative.html
+          subtest: View timeline  does not clamp end scroll offset at max scroll
+        - test: inline-view-timeline-current-time.tentative.html
+          subtest: View timeline does not clamp end scroll offset at max scroll
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1949826
+      results:
+        - test: animation-events.html
+        - test: change-animation-range-updates-play-state.html
+          subtest: Changing the animation range updates the play state
+        - test: fieldset-source.html
+          subtest: Fieldset is a valid source for a view timeline
+        - test: svg-graphics-element-001.html
+          subtest: View timeline attached to SVG graphics element
+        - test: svg-graphics-element-002.html
+          subtest: View timeline attached to SVG graphics element
+        - test: timeline-offset-in-keyframe.html
+          subtest: Invalid timeline offset in programmatic keyframe throws
+        - test: view-timeline-get-set-range.html
+          subtest: Getting and setting the animation range
+        - test: view-timeline-inset.html
+          subtest: View timeline with px based inset.
+        - test: view-timeline-inset.html
+          subtest: View timeline with percent based inset.
+        - test: view-timeline-inset.html
+          subtest: view timeline with inset auto.
+        - test: view-timeline-inset.html
+          subtest: view timeline with font relative inset.
+        - test: view-timeline-on-display-none-element.html
+          subtest: 'element with display: none should have inactive viewtimeline'
+        - test: view-timeline-range.html
+          subtest: View timeline with range as <name> <percent> pair.
+        - test: view-timeline-range.html
+          subtest: View timeline with range and inferred name or offset.
+        - test: view-timeline-range.html
+          subtest: View timeline with range as <name> <px> pair.
+        - test: view-timeline-range.html
+          subtest: View timeline with range as <name> <percent+px> pair.
+        - test: view-timeline-range.html
+          subtest: View timeline with range as strings.
+        - test: view-timeline-root-source.html
+          subtest: Test view-timeline with document scrolling element.
+        - test: view-timeline-snapport.html
+          subtest: Default ViewTimeline is not affected by scroll-padding
+        - test: view-timeline-subject-size-changes.html
+          subtest: View timeline with subject size change after the creation of the animation
+    - product: safari
+      url: https://bugs.webkit.org/show_bug.cgi?id=288781
+      results:
+        - test: view-timeline-source.tentative.html
