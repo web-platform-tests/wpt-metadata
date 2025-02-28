@@ -67,3 +67,8 @@ links:
           subtest: calc(sign(1em - 1px) * 2%) should be used-value-equivalent to 2%
         - test: zoom-with-sign-function.html
           subtest: calc(sign(1em - 1px) * 2) should be used-value-equivalent to 2
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1951011
+      results:
+        - test: iframe-zoom.sub.html
+        - test: iframe-zoom-nested.html
