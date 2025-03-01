@@ -1,8 +1,12 @@
 links:
-- product: firefox
-  results:
-  - subtest: View timeline top-sticky before entry.
-    test: view-timeline-sticky-offscreen-4.html
-  - subtest: View timeline bottom-sticky before entry and top-sticky after exit.
-    test: view-timeline-sticky-offscreen-5.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1949826
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1949826
+      results:
+        - test: view-timeline-sticky-offscreen-4.html
+          subtest: View timeline top-sticky before entry.
+        - test: view-timeline-sticky-offscreen-5.html
+          subtest: View timeline bottom-sticky before entry and top-sticky after exit.
+    - product: safari
+      url: https://bugs.webkit.org/show_bug.cgi?id=288912
+      results:
+        - test: view-timeline-sticky-offscreen-6.html
