@@ -1,45 +1,49 @@
 links:
-    - product: safari
-      url: https://bugs.webkit.org/show_bug.cgi?id=201110
-      results:
-        - test: position-svg-root-in-foreign-object.html
-          status: FAIL
-        - test: stacking-context.html
-          status: FAIL
-        - test: will-change-in-transformed-foreign-object.html
-          status: FAIL
-    - product: safari
-      url: https://bugs.webkit.org/show_bug.cgi?id=201946
-      results:
-        - test: composited-inside-object.html
-          status: FAIL
-        - test: compositing-backface-visibility.html
-          status: FAIL
-    - product: webkitgtk
-      url: https://bugs.webkit.org/show_bug.cgi?id=201110
-      results:
-        - test: position-svg-root-in-foreign-object.html
-          status: FAIL
-        - test: stacking-context.html
-          status: FAIL
-        - test: will-change-in-transformed-foreign-object.html
-          status: FAIL
-    - product: webkitgtk
-      url: https://bugs.webkit.org/show_bug.cgi?id=201946
-      results:
-        - test: composited-inside-object.html
-          status: FAIL
-        - test: compositing-backface-visibility.html
-          status: FAIL
-    - product: webkitgtk
-      url: https://bugs.webkit.org/show_bug.cgi?id=205998
-      results:
-        - test: masked.html
-          status: FAIL
-    - product: chrome
-      url: https://crbug.com/148499
-      results:
-        - test: will-change-in-foreign-object-paint-order.html
-    - url: https://github.com/web-platform-tests/wpt/issues/11007
-      results:
-        - test: stacking-context.html
+- product: safari
+  results:
+  - status: FAIL
+    test: position-svg-root-in-foreign-object.html
+  - status: FAIL
+    test: stacking-context.html
+  - status: FAIL
+    test: will-change-in-transformed-foreign-object.html
+  url: https://bugs.webkit.org/show_bug.cgi?id=201110
+- product: safari
+  results:
+  - status: FAIL
+    test: composited-inside-object.html
+  - status: FAIL
+    test: compositing-backface-visibility.html
+  url: https://bugs.webkit.org/show_bug.cgi?id=201946
+- product: webkitgtk
+  results:
+  - status: FAIL
+    test: position-svg-root-in-foreign-object.html
+  - status: FAIL
+    test: stacking-context.html
+  - status: FAIL
+    test: will-change-in-transformed-foreign-object.html
+  url: https://bugs.webkit.org/show_bug.cgi?id=201110
+- product: webkitgtk
+  results:
+  - status: FAIL
+    test: composited-inside-object.html
+  - status: FAIL
+    test: compositing-backface-visibility.html
+  url: https://bugs.webkit.org/show_bug.cgi?id=201946
+- product: webkitgtk
+  results:
+  - status: FAIL
+    test: masked.html
+  url: https://bugs.webkit.org/show_bug.cgi?id=205998
+- product: chrome
+  results:
+  - test: will-change-in-foreign-object-paint-order.html
+  url: https://crbug.com/148499
+- results:
+  - test: stacking-context.html
+  url: https://github.com/web-platform-tests/wpt/issues/11007
+- product: firefox
+  results:
+  - test: foreign-object-scale-scroll.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1951531
