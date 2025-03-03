@@ -1,199 +1,201 @@
 links:
-- product: firefox
-  results:
-  - status: CRASH
-    test: scroll-timeline-dynamic.tentative.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1795181
-- product: firefox
-  results:
-  - test: animation-shorthand.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1885015
-- product: safari
-  results:
-  - test: animation-range-normal-matches-cover.html
-  - test: animation-range-visual-test.html
-  - test: view-timeline-animation-range-update.tentative.html
-  url: https://bugs.webkit.org/show_bug.cgi?id=285518
-- product: safari
-  results:
-  - test: view-timeline-inset-animation.html
-  url: https://bugs.webkit.org/show_bug.cgi?id=285754
-- product: safari
-  results:
-  - test: view-timeline-with-transform-on-subject.html
-  url: https://bugs.webkit.org/show_bug.cgi?id=285990
-- product: firefox
-  results:
-  - subtest: Animation.timeline returns attached timeline
-    test: animation-timeline-deferred.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1946965
-- product: firefox
-  results:
-  - subtest: timeline-scope on ancestor sibling, conflict remains unresolved
-    test: view-timeline-lookup.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1947036
-- product: safari
-  results:
-  - test: animation-timeline-ignored.tentative.html
-  url: https://bugs.webkit.org/show_bug.cgi?id=287393
-- product: safari
-  results:
-  - test: animation-shorthand.html
-  url: https://bugs.webkit.org/show_bug.cgi?id=287398
-- product: firefox
-  results:
-  - subtest: Property timeline-scope value 'initial'
-    test: timeline-scope-computed.tentative.html
-  - subtest: Property timeline-scope value 'inherit'
-    test: timeline-scope-computed.tentative.html
-  - subtest: Property timeline-scope value 'unset'
-    test: timeline-scope-computed.tentative.html
-  - subtest: Property timeline-scope value 'revert'
-    test: timeline-scope-computed.tentative.html
-  - subtest: Property timeline-scope value 'none'
-    test: timeline-scope-computed.tentative.html
-  - subtest: Property timeline-scope value '--test'
-    test: timeline-scope-computed.tentative.html
-  - subtest: The timeline-scope property shows up in CSSStyleDeclaration enumeration
-    test: timeline-scope-computed.tentative.html
-  - subtest: The timeline-scope property shows up in CSSStyleDeclaration.cssText
-    test: timeline-scope-computed.tentative.html
-  - subtest: e.style['timeline-scope'] = "initial" should set the property value
-    test: timeline-scope-parsing.tentative.html
-  - subtest: e.style['timeline-scope'] = "inherit" should set the property value
-    test: timeline-scope-parsing.tentative.html
-  - subtest: e.style['timeline-scope'] = "unset" should set the property value
-    test: timeline-scope-parsing.tentative.html
-  - subtest: e.style['timeline-scope'] = "revert" should set the property value
-    test: timeline-scope-parsing.tentative.html
-  - subtest: e.style['timeline-scope'] = "none" should set the property value
-    test: timeline-scope-parsing.tentative.html
-  - subtest: e.style['timeline-scope'] = "--abc" should set the property value
-    test: timeline-scope-parsing.tentative.html
-  - subtest: e.style['timeline-scope'] = "  --abc" should set the property value
-    test: timeline-scope-parsing.tentative.html
-  - subtest: e.style['timeline-scope'] = "--aBc" should set the property value
-    test: timeline-scope-parsing.tentative.html
-  - subtest: e.style['timeline-scope'] = "--foo, --bar" should set the property value
-    test: timeline-scope-parsing.tentative.html
-  - subtest: e.style['timeline-scope'] = "--bar, --foo" should set the property value
-    test: timeline-scope-parsing.tentative.html
-  - subtest: e.style['timeline-scope'] = "--auto" should set the property value
-    test: timeline-scope-parsing.tentative.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1947347
-- product: safari
-  results:
-  - test: view-timeline-animation.html
-  url: https://bugs.webkit.org/show_bug.cgi?id=287694
-- product: safari
-  results:
-  - test: progress-based-animation-animation-longhand-properties.tentative.html
-  url: https://bugs.webkit.org/show_bug.cgi?id=287704
-- product: safari
-  results:
-  - test: animation-timeline-view-functional-notation.tentative.html
-  url: https://bugs.webkit.org/show_bug.cgi?id=287705
-- product: firefox
-  results:
-  - subtest: View timelime generates animationstart and animationend events
-    test: animation-events.html
-  - subtest: Changing the animation range updates the play state
-    test: animation-range-normal-matches-cover.html
-  - subtest: animation-timeline ignored after setting timeline with JS (ScrollTimeline
-      from JS)
-    test: animation-timeline-ignored.tentative.html
-  - subtest: animation-timeline ignored after setting timeline with JS (ScrollTimeline
-      from CSS)
-    test: animation-timeline-ignored.tentative.html
-  - subtest: animation-timeline ignored after setting timeline with JS (document timeline)
-    test: animation-timeline-ignored.tentative.html
-  - subtest: Timeline lookup updates candidate when closer match available.
-    test: animation-timeline-named-scroll-progress-timeline.tentative.html
-  - subtest: Timeline lookup updates candidate when match becomes available.
-    test: animation-timeline-named-scroll-progress-timeline.tentative.html
-  - subtest: Outer animation can see scroll timeline defined by :host
-    test: scroll-timeline-name-shadow.html
-  - subtest: Outer animation can see scroll timeline defined by ::slotted
-    test: scroll-timeline-name-shadow.html
-  - subtest: Inner animation can see scroll timeline defined by ::part
-    test: scroll-timeline-name-shadow.html
-  - subtest: Resolving scroll(nearest) for an absolutely positioned element
-    test: scroll-timeline-nearest-with-absolute-positioned-element.html
-  - test: scroll-timeline-range-animation.html
-  - subtest: Animation with ranges [0%, 100%]
-    test: scroll-timeline-range-animation.html
-  - subtest: Animation with ranges [10%, 100%]
-    test: scroll-timeline-range-animation.html
-  - subtest: Animation with ranges [0%, 50%]
-    test: scroll-timeline-range-animation.html
-  - subtest: Animation with ranges [10%, 50%]
-    test: scroll-timeline-range-animation.html
-  - subtest: Animation with ranges [150px, 75em]
-    test: scroll-timeline-range-animation.html
-  - subtest: Animation with ranges [calc(1% + 135px), calc(70em + 50px)]
-    test: scroll-timeline-range-animation.html
-  - subtest: Animation with ranges [calc(1% + 135px), calc(70em + 50px)] (scoped)
-    test: scroll-timeline-range-animation.html
-  - subtest: Scroll position is sampled once per frame
-    test: scroll-timeline-sampling.html
-  - subtest: Descendant can attach to deferred timeline
-    test: timeline-scope.html
-  - subtest: Dynamically re-attaching
-    test: timeline-scope.html
-  - subtest: Ancestor attached element becoming display:none/block
-    test: timeline-scope.html
-  - subtest: Ensure that animation is updated on a style change
-    test: view-timeline-animation-range-update.tentative.html
-  - subtest: Outer animation can see view timeline defined by :host
-    test: view-timeline-name-shadow.html
-  - subtest: Outer animation can see view timeline defined by ::slotted
-    test: view-timeline-name-shadow.html
-  - subtest: Inner animation can see view timeline defined by ::part
-    test: view-timeline-name-shadow.html
-  - test: view-timeline-range-animation.html
-  - subtest: Animation with ranges [contain 0%, contain 100%]
-    test: view-timeline-range-animation.html
-  - subtest: Animation with ranges [entry 0%, entry 100%]
-    test: view-timeline-range-animation.html
-  - subtest: Animation with ranges [exit 0%, exit 100%]
-    test: view-timeline-range-animation.html
-  - subtest: Animation with ranges [contain -50%, entry 200%]
-    test: view-timeline-range-animation.html
-  - subtest: Animation with ranges [cover 20px, cover 100px]
-    test: view-timeline-range-animation.html
-  - subtest: Animation with ranges [contain 20px, contain 100px]
-    test: view-timeline-range-animation.html
-  - subtest: Animation with ranges [entry 20px, entry 100px]
-    test: view-timeline-range-animation.html
-  - subtest: Animation with ranges [entry-crossing 20px, entry-crossing 100px]
-    test: view-timeline-range-animation.html
-  - subtest: Animation with ranges [exit 20px, exit 80px]
-    test: view-timeline-range-animation.html
-  - subtest: Animation with ranges [exit-crossing 20px, exit-crossing 80px]
-    test: view-timeline-range-animation.html
-  - subtest: Animation with ranges [contain 20px, contain calc(100px - 10%)]
-    test: view-timeline-range-animation.html
-  - subtest: Animation with ranges [exit 2em, exit 8em]
-    test: view-timeline-range-animation.html
-  - subtest: Animation with ranges [exit 2em, exit 8em] (scoped)
-    test: view-timeline-range-animation.html
-  - subtest: Use the last value from view-timeline-axis if omitted
-    test: view-timeline-used-values.html
-  - subtest: Use the last value from view-timeline-inset if omitted
-    test: view-timeline-used-values.html
-  - subtest: ViewTimeline use untransformed box for range calculations
-    test: view-timeline-with-transform-on-subject.html
-  - test: animation-inactive-outside-range-test.html
-  - test: animation-range-visual-test.html
-  - test: scroll-timeline-update-reversed-animation.html
-  - test: view-timeline-range-update-reversed-animation.html
-  - test: view-timeline-range-update.html
-  - test: view-timeline-subject-bounds-update.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1949826
-- product: firefox
-  results:
-  - subtest: Animation API call rangeStart overrides animation-range-start
-    test: animation-range-ignored.html
-  - subtest: Animation API call rangeEnd overrides animation-range-end
-    test: animation-range-ignored.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1949863
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1795181
+      results:
+        - test: scroll-timeline-dynamic.tentative.html
+          status: CRASH
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1885015
+      results:
+        - test: animation-shorthand.html
+    - product: safari
+      url: https://bugs.webkit.org/show_bug.cgi?id=285518
+      results:
+        - test: animation-range-normal-matches-cover.html
+        - test: animation-range-visual-test.html
+        - test: view-timeline-animation-range-update.tentative.html
+    - product: safari
+      url: https://bugs.webkit.org/show_bug.cgi?id=285754
+      results:
+        - test: view-timeline-inset-animation.html
+    - product: safari
+      url: https://bugs.webkit.org/show_bug.cgi?id=285990
+      results:
+        - test: view-timeline-with-transform-on-subject.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1946965
+      results:
+        - test: animation-timeline-deferred.html
+          subtest: Animation.timeline returns attached timeline
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1947036
+      results:
+        - test: view-timeline-lookup.html
+          subtest: timeline-scope on ancestor sibling, conflict remains unresolved
+    - product: safari
+      url: https://bugs.webkit.org/show_bug.cgi?id=287393
+      results:
+        - test: animation-timeline-ignored.tentative.html
+    - product: safari
+      url: https://bugs.webkit.org/show_bug.cgi?id=287398
+      results:
+        - test: animation-shorthand.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1947347
+      results:
+        - test: timeline-scope-computed.tentative.html
+          subtest: Property timeline-scope value 'initial'
+        - test: timeline-scope-computed.tentative.html
+          subtest: Property timeline-scope value 'inherit'
+        - test: timeline-scope-computed.tentative.html
+          subtest: Property timeline-scope value 'unset'
+        - test: timeline-scope-computed.tentative.html
+          subtest: Property timeline-scope value 'revert'
+        - test: timeline-scope-computed.tentative.html
+          subtest: Property timeline-scope value 'none'
+        - test: timeline-scope-computed.tentative.html
+          subtest: Property timeline-scope value '--test'
+        - test: timeline-scope-computed.tentative.html
+          subtest: The timeline-scope property shows up in CSSStyleDeclaration enumeration
+        - test: timeline-scope-computed.tentative.html
+          subtest: The timeline-scope property shows up in CSSStyleDeclaration.cssText
+        - test: timeline-scope-parsing.tentative.html
+          subtest: e.style['timeline-scope'] = "initial" should set the property value
+        - test: timeline-scope-parsing.tentative.html
+          subtest: e.style['timeline-scope'] = "inherit" should set the property value
+        - test: timeline-scope-parsing.tentative.html
+          subtest: e.style['timeline-scope'] = "unset" should set the property value
+        - test: timeline-scope-parsing.tentative.html
+          subtest: e.style['timeline-scope'] = "revert" should set the property value
+        - test: timeline-scope-parsing.tentative.html
+          subtest: e.style['timeline-scope'] = "none" should set the property value
+        - test: timeline-scope-parsing.tentative.html
+          subtest: e.style['timeline-scope'] = "--abc" should set the property value
+        - test: timeline-scope-parsing.tentative.html
+          subtest: e.style['timeline-scope'] = "  --abc" should set the property value
+        - test: timeline-scope-parsing.tentative.html
+          subtest: e.style['timeline-scope'] = "--aBc" should set the property value
+        - test: timeline-scope-parsing.tentative.html
+          subtest: e.style['timeline-scope'] = "--foo, --bar" should set the property value
+        - test: timeline-scope-parsing.tentative.html
+          subtest: e.style['timeline-scope'] = "--bar, --foo" should set the property value
+        - test: timeline-scope-parsing.tentative.html
+          subtest: e.style['timeline-scope'] = "--auto" should set the property value
+    - product: safari
+      url: https://bugs.webkit.org/show_bug.cgi?id=287694
+      results:
+        - test: view-timeline-animation.html
+    - product: safari
+      url: https://bugs.webkit.org/show_bug.cgi?id=287704
+      results:
+        - test: progress-based-animation-animation-longhand-properties.tentative.html
+    - product: safari
+      url: https://bugs.webkit.org/show_bug.cgi?id=287705
+      results:
+        - test: animation-timeline-view-functional-notation.tentative.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1949826
+      results:
+        - test: animation-events.html
+          subtest: View timelime generates animationstart and animationend events
+        - test: animation-range-normal-matches-cover.html
+          subtest: Changing the animation range updates the play state
+        - test: animation-timeline-ignored.tentative.html
+          subtest: animation-timeline ignored after setting timeline with JS (ScrollTimeline from JS)
+        - test: animation-timeline-ignored.tentative.html
+          subtest: animation-timeline ignored after setting timeline with JS (ScrollTimeline from CSS)
+        - test: animation-timeline-ignored.tentative.html
+          subtest: animation-timeline ignored after setting timeline with JS (document timeline)
+        - test: animation-timeline-named-scroll-progress-timeline.tentative.html
+          subtest: Timeline lookup updates candidate when closer match available.
+        - test: animation-timeline-named-scroll-progress-timeline.tentative.html
+          subtest: Timeline lookup updates candidate when match becomes available.
+        - test: scroll-timeline-name-shadow.html
+          subtest: Outer animation can see scroll timeline defined by :host
+        - test: scroll-timeline-name-shadow.html
+          subtest: Outer animation can see scroll timeline defined by ::slotted
+        - test: scroll-timeline-name-shadow.html
+          subtest: Inner animation can see scroll timeline defined by ::part
+        - test: scroll-timeline-nearest-with-absolute-positioned-element.html
+          subtest: Resolving scroll(nearest) for an absolutely positioned element
+        - test: scroll-timeline-range-animation.html
+        - test: scroll-timeline-range-animation.html
+          subtest: Animation with ranges [0%, 100%]
+        - test: scroll-timeline-range-animation.html
+          subtest: Animation with ranges [10%, 100%]
+        - test: scroll-timeline-range-animation.html
+          subtest: Animation with ranges [0%, 50%]
+        - test: scroll-timeline-range-animation.html
+          subtest: Animation with ranges [10%, 50%]
+        - test: scroll-timeline-range-animation.html
+          subtest: Animation with ranges [150px, 75em]
+        - test: scroll-timeline-range-animation.html
+          subtest: Animation with ranges [calc(1% + 135px), calc(70em + 50px)]
+        - test: scroll-timeline-range-animation.html
+          subtest: Animation with ranges [calc(1% + 135px), calc(70em + 50px)] (scoped)
+        - test: scroll-timeline-sampling.html
+          subtest: Scroll position is sampled once per frame
+        - test: timeline-scope.html
+          subtest: Descendant can attach to deferred timeline
+        - test: timeline-scope.html
+          subtest: Dynamically re-attaching
+        - test: timeline-scope.html
+          subtest: Ancestor attached element becoming display:none/block
+        - test: view-timeline-animation-range-update.tentative.html
+          subtest: Ensure that animation is updated on a style change
+        - test: view-timeline-name-shadow.html
+          subtest: Outer animation can see view timeline defined by :host
+        - test: view-timeline-name-shadow.html
+          subtest: Outer animation can see view timeline defined by ::slotted
+        - test: view-timeline-name-shadow.html
+          subtest: Inner animation can see view timeline defined by ::part
+        - test: view-timeline-range-animation.html
+        - test: view-timeline-range-animation.html
+          subtest: Animation with ranges [contain 0%, contain 100%]
+        - test: view-timeline-range-animation.html
+          subtest: Animation with ranges [entry 0%, entry 100%]
+        - test: view-timeline-range-animation.html
+          subtest: Animation with ranges [exit 0%, exit 100%]
+        - test: view-timeline-range-animation.html
+          subtest: Animation with ranges [contain -50%, entry 200%]
+        - test: view-timeline-range-animation.html
+          subtest: Animation with ranges [cover 20px, cover 100px]
+        - test: view-timeline-range-animation.html
+          subtest: Animation with ranges [contain 20px, contain 100px]
+        - test: view-timeline-range-animation.html
+          subtest: Animation with ranges [entry 20px, entry 100px]
+        - test: view-timeline-range-animation.html
+          subtest: Animation with ranges [entry-crossing 20px, entry-crossing 100px]
+        - test: view-timeline-range-animation.html
+          subtest: Animation with ranges [exit 20px, exit 80px]
+        - test: view-timeline-range-animation.html
+          subtest: Animation with ranges [exit-crossing 20px, exit-crossing 80px]
+        - test: view-timeline-range-animation.html
+          subtest: Animation with ranges [contain 20px, contain calc(100px - 10%)]
+        - test: view-timeline-range-animation.html
+          subtest: Animation with ranges [exit 2em, exit 8em]
+        - test: view-timeline-range-animation.html
+          subtest: Animation with ranges [exit 2em, exit 8em] (scoped)
+        - test: view-timeline-used-values.html
+          subtest: Use the last value from view-timeline-axis if omitted
+        - test: view-timeline-used-values.html
+          subtest: Use the last value from view-timeline-inset if omitted
+        - test: view-timeline-with-transform-on-subject.html
+          subtest: ViewTimeline use untransformed box for range calculations
+        - test: animation-inactive-outside-range-test.html
+        - test: animation-range-visual-test.html
+        - test: scroll-timeline-update-reversed-animation.html
+        - test: view-timeline-range-update-reversed-animation.html
+        - test: view-timeline-range-update.html
+        - test: view-timeline-subject-bounds-update.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1949863
+      results:
+        - test: animation-range-ignored.html
+          subtest: Animation API call rangeStart overrides animation-range-start
+        - test: animation-range-ignored.html
+          subtest: Animation API call rangeEnd overrides animation-range-end
+    - product: safari
+      url: https://bugs.webkit.org/show_bug.cgi?id=288755
+      results:
+        - test: timeline-scope.html
