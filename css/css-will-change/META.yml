@@ -1,10 +1,14 @@
 links:
-    - product: chrome
-      url: https://crbug.com/1128440
-      results:
-        - test: will-change-transform-zero-size-child-overflow-visible.html
-    - product: safari
-      url: https://bugs.webkit.org/show_bug.cgi?id=225035
-      results:
-        - test: will-change-fixedpos-cb-002.html
-          subtest: Test status
+- product: chrome
+  results:
+  - test: will-change-transform-zero-size-child-overflow-visible.html
+  url: https://crbug.com/1128440
+- product: safari
+  results:
+  - subtest: Test status
+    test: will-change-fixedpos-cb-002.html
+  url: https://bugs.webkit.org/show_bug.cgi?id=225035
+- product: firefox
+  results:
+  - test: will-change-stacking-context-view-transition-name-1.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1952074
