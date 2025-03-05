@@ -279,3 +279,16 @@ links:
   - subtest: Outer functions can't see inner functions (local vars)
     test: function-shadow.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1951908
+- product: firefox
+  results:
+  - subtest: Single function within anonymous layer
+    test: function-layer.html
+  - subtest: Last anonymous layer wins
+    test: function-layer.html
+  - subtest: Unlayered styles win
+    test: function-layer.html
+  - subtest: Single named layer
+    test: function-layer.html
+  - subtest: Named layers
+    test: function-layer.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1951483
