@@ -1,47 +1,47 @@
 links:
-- product: firefox
-  results:
-  - subtest: '[data-expected-width] 2'
-    test: auto-margins-1.html
-  - subtest: '[data-expected-client-height] 1'
-    test: indefinite-4.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1928752
-- product: firefox
-  results:
-  - test: fixed-table-1.html
-  - subtest: p + div > div 2
-    test: aspect-ratio-1.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1929392
-- product: firefox
-  results:
-  - subtest: '[data-expected-height] 1'
-    test: block-height-001.html
-  - subtest: '[data-expected-height] 2'
-    test: block-height-001.html
-  - subtest: '[data-expected-height] 3'
-    test: block-height-001.html
-  - subtest: '[data-expected-height] 7'
-    test: block-height-001.html
-  - subtest: '[data-expected-height] 8'
-    test: block-height-001.html
-  - subtest: '[data-expected-height] 9'
-    test: block-height-001.html
-  - subtest: '[data-expected-height] 13'
-    test: block-height-001.html
-  - subtest: '[data-expected-height] 14'
-    test: block-height-001.html
-  - subtest: '[data-expected-height] 15'
-    test: block-height-001.html
-  - subtest: main > div > div 1
-    test: block-height-002.tentative.html
-  - subtest: .inner 2
-    test: block-height-004.tentative.html
-  - subtest: .inner 3
-    test: block-height-004.tentative.html
-  - subtest: .inner 6
-    test: block-height-004.tentative.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1936444
-- product: firefox
-  results:
-  - test: bfc-next-to-float-2.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1937676
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1928752
+      results:
+        - test: auto-margins-1.html
+          subtest: '[data-expected-width] 2'
+        - test: indefinite-4.html
+          subtest: '[data-expected-client-height] 1'
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1929392
+      results:
+        - test: fixed-table-1.html
+        - test: aspect-ratio-1.html
+          subtest: p + div > div 2
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1936444
+      results:
+        - test: block-height-001.html
+          subtest: '[data-expected-height] 1'
+        - test: block-height-001.html
+          subtest: '[data-expected-height] 2'
+        - test: block-height-001.html
+          subtest: '[data-expected-height] 3'
+        - test: block-height-001.html
+          subtest: '[data-expected-height] 7'
+        - test: block-height-001.html
+          subtest: '[data-expected-height] 8'
+        - test: block-height-001.html
+          subtest: '[data-expected-height] 9'
+        - test: block-height-001.html
+          subtest: '[data-expected-height] 13'
+        - test: block-height-001.html
+          subtest: '[data-expected-height] 14'
+        - test: block-height-001.html
+          subtest: '[data-expected-height] 15'
+        - test: block-height-002.html
+          subtest: main > div > div 1
+        - test: block-height-004.html
+          subtest: .inner 2
+        - test: block-height-004.html
+          subtest: .inner 3
+        - test: block-height-004.html
+          subtest: .inner 6
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1937676
+      results:
+        - test: bfc-next-to-float-2.html
