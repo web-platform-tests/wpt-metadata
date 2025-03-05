@@ -250,3 +250,32 @@ links:
   - subtest: if() no cycle in overridden argument
     test: local-if-substitution.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1950450
+- product: firefox
+  results:
+  - subtest: Local shadowing cyclic outer local --x
+    test: dashed-function-cycles.tentative.html
+  - subtest: Argument shadowing cyclic outer local --x
+    test: dashed-function-cycles.tentative.html
+  - subtest: Cycle through local, other function, fallback in function
+    test: dashed-function-cycles.tentative.html
+  - subtest: Cyclic defaults
+    test: dashed-function-cycles.tentative.html
+  - subtest: '@function works inside shadow'
+    test: function-shadow.html
+  - subtest: '@function works inside nested shadow'
+    test: function-shadow.html
+  - subtest: '@function defined in outer shadow is visible'
+    test: function-shadow.html
+  - subtest: Combining functions from various scopes
+    test: function-shadow.html
+  - subtest: ::part() can not see inner functions
+    test: function-shadow.html
+  - subtest: ::slotted() can see inner functions
+    test: function-shadow.html
+  - subtest: :host can see inner functions
+    test: function-shadow.html
+  - subtest: Outer functions can't see inner functions
+    test: function-shadow.html
+  - subtest: Outer functions can't see inner functions (local vars)
+    test: function-shadow.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1951908
