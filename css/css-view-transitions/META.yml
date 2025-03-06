@@ -638,35 +638,49 @@ links:
   - test: rtl-with-scrollbar.html
   - test: window-resize-aborts-transition.html
   - test: writing-mode-container-resize.html
-  - test: web-animations-api-parse-pseudo-argument.html?first-pseudo=::view-transition-group(      first )
-  - test: web-animations-api-parse-pseudo-argument.html?first-pseudo=::view-transition-group( first)
-  - test: web-animations-api-parse-pseudo-argument.html?first-pseudo=::view-transition-group(first )
+  - test: web-animations-api-parse-pseudo-argument.html?first-pseudo=::view-transition-group(      first
+      )
+  - test: web-animations-api-parse-pseudo-argument.html?first-pseudo=::view-transition-group(
+      first)
+  - test: web-animations-api-parse-pseudo-argument.html?first-pseudo=::view-transition-group(first
+      )
   - test: web-animations-api-parse-pseudo-argument.html?first-pseudo=::view-transition-group(first)
   - test: web-animations-api.html
   - test: window-resize-aborts-transition-before-ready.html
-  - test: web-animations-api-parse-pseudo-argument.html?first-pseudo=::view-transition-group( first
+  - test: web-animations-api-parse-pseudo-argument.html?first-pseudo=::view-transition-group(
+      first
   - test: web-animations-api-parse-pseudo-argument.html?first-pseudo=::view-transition-group(first
 - product: chrome
-  url: https://issuetracker.google.com/399098315
   results:
   - test: window-resize-aborts-transition-before-ready.html
+  url: https://issuetracker.google.com/399098315
 - product: chrome
-  url: https://issuetracker.google.com/399098139
   results:
   - test: transition-skipped-after-animation-started.html
+  url: https://issuetracker.google.com/399098139
 - product: chrome
-  url: https://issuetracker.google.com/399098430
   results:
   - test: pseudo-element-animations.html
+  url: https://issuetracker.google.com/399098430
 - product: chrome
-  url: https://issuetracker.google.com/399097364
   results:
   - test: only-child-group.html
+  url: https://issuetracker.google.com/399097364
 - product: chrome
-  url: https://issuetracker.google.com/399098233
   results:
   - test: no-painting-while-render-blocked.html
+  url: https://issuetracker.google.com/399098233
 - product: chrome
-  url: https://issuetracker.google.com/399098194
   results:
   - test: hit-test-pseudo-element-element-from-point.html
+  url: https://issuetracker.google.com/399098194
+- product: firefox
+  results:
+  - status: CRASH
+    test: start-view-transtion-skips-active.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1952366
+- product: firefox
+  results:
+  - subtest: Synchronously starting a view transition skips the previously active  transition.
+    test: start-view-transtion-skips-active.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1952367
