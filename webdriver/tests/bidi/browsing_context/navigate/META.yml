@@ -22,3 +22,18 @@ links:
   - subtest: test_navigate_with_beforeunload_prompt_in_iframe[capabilities0-False-complete]
     test: navigate.py
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1947474
+- product: firefox
+  results:
+  - subtest: test_relative_url
+    test: navigate.py
+  - subtest: test_navigate_with_beforeunload_prompt_in_iframe[capabilities0-False-none]
+    test: navigate_beforeunload.py
+  - subtest: test_navigate_with_beforeunload_prompt_in_iframe[capabilities0-False-interactive]
+    test: navigate_beforeunload.py
+  - subtest: test_navigate_with_beforeunload_prompt_in_iframe[capabilities0-False-complete]
+    test: navigate_beforeunload.py
+  - subtest: test_expected_url[none]
+    test: wait.py
+  - subtest: test_slow_image_blocks_load[none-False]
+    test: wait.py
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1952946
