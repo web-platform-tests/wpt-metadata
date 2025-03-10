@@ -18,3 +18,12 @@ links:
   - subtest: test_with_accepted_beforeunload_prompt[capabilities0]
     test: navigation_started.py
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1945627
+- product: firefox
+  results:
+  - subtest: test_with_beforeunload_prompt[capabilities0-none]
+    test: navigation_started.py
+  - subtest: test_with_beforeunload_prompt[capabilities0-interactive]
+    test: navigation_started.py
+  - subtest: test_with_beforeunload_prompt[capabilities0-complete]
+    test: navigation_started.py
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1952946
