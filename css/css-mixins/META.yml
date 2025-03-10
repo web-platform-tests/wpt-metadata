@@ -292,3 +292,25 @@ links:
   - subtest: Named layers
     test: function-layer.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1951483
+- product: firefox
+  results:
+  - subtest: e.style['top'] = "--func(myident)" should set the property value
+    test: dashed-function-named-arg.tentative.html
+  - subtest: e.style['top'] = "--func(--myident)" should set the property value
+    test: dashed-function-named-arg.tentative.html
+  - subtest: e.style['top'] = "--func(--)" should set the property value
+    test: dashed-function-named-arg.tentative.html
+  - subtest: e.style['top'] = "--func(50px --myident:)" should set the property value
+    test: dashed-function-named-arg.tentative.html
+  - subtest: e.style['top'] = "--func({--myident:})" should set the property value
+    test: dashed-function-named-arg.tentative.html
+  - subtest: e.style['top'] = "--func({ --myident:})" should set the property value
+    test: dashed-function-named-arg.tentative.html
+  - subtest: e.style['top'] = "--func({--myident :})" should set the property value
+    test: dashed-function-named-arg.tentative.html
+  - subtest: 'e.style[''top''] = "--func({--myident: })" should set the property value'
+    test: dashed-function-named-arg.tentative.html
+  - subtest: 'e.style[''top''] = "--func(10px, { --myident : })" should set the property
+      value'
+    test: dashed-function-named-arg.tentative.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1952948
