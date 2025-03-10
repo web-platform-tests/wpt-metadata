@@ -36,34 +36,30 @@ links:
         - test: font-face-009.html
           subtest: '@font-face from shadow applies to to :host::before/::after.'
     - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1913095
-      results:
-        - test: host-has-002.html
-    - product: firefox
       url: https://bugzilla.mozilla.org/show_bug.cgi?id=1911437
       results:
-        - test: host-has-002.html
         - test: host-has-internal-001.html
         - test: host-has-internal-002.html
         - test: host-has-internal-003.html
+        - test: host-has-002.tentative.html
     - product: chrome
       url: https://issues.chromium.org/issues/359758910
       results:
-        - test: host-has-001.html
-        - test: host-has-002.html
-        - test: host-has-003.html
         - test: host-has-internal-001.html
         - test: host-has-internal-002.html
         - test: host-has-internal-003.html
+        - test: host-has-001.tentative.html
+        - test: host-has-002.tentative.html
+        - test: host-has-003.tentative.html
     - product: edge
       url: https://issues.chromium.org/issues/359758910
       results:
-        - test: host-has-001.html
-        - test: host-has-002.html
-        - test: host-has-003.html
         - test: host-has-internal-001.html
         - test: host-has-internal-002.html
         - test: host-has-internal-003.html
+        - test: host-has-001.tentative.html
+        - test: host-has-002.tentative.html
+        - test: host-has-003.tentative.html
     - product: firefox
       url: https://bugzilla.mozilla.org/show_bug.cgi?id=1933816
       results:
@@ -90,6 +86,10 @@ links:
     - product: firefox
       url: https://bugzilla.mozilla.org/show_bug.cgi?id=1952380
       results:
-      - test: host-has-internal-001.html
-      - test: host-has-internal-002.html
-      - test: host-has-internal-003.html
+        - test: host-has-internal-001.html
+        - test: host-has-internal-002.html
+        - test: host-has-internal-003.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1913095
+      results:
+        - test: host-has-002.tentative.html
