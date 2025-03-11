@@ -1,12 +1,23 @@
 links:
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1915981
-      results:
-        - test: zoom-computed.html
-          subtest: Property zoom value 'calc(1 + (sign(2cqw - 10px) * 0.5))'
-        - test: zoom-computed.html
-          subtest: Property zoom value 'calc(100% + (sign(2cqw - 10px) * 50%))'
-    - label: interop-2025-webcompat
-      results:
-        - test: zoom-computed.html
-        - test: zoom-valid.html
+- product: firefox
+  results:
+  - subtest: Property zoom value 'calc(1 + (sign(2cqw - 10px) * 0.5))'
+    test: zoom-computed.html
+  - subtest: Property zoom value 'calc(100% + (sign(2cqw - 10px) * 50%))'
+    test: zoom-computed.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1915981
+- label: interop-2025-webcompat
+  results:
+  - test: zoom-computed.html
+  - test: zoom-valid.html
+- product: firefox
+  results:
+  - subtest: Property zoom value 'calc(1 + (sign(2cqw - 10px) * 0.5))'
+    test: zoom-computed-with-sign-expression.html
+  - subtest: Property zoom value 'calc(100% + (sign(2cqw - 10px) * 50%))'
+    test: zoom-computed-with-sign-expression.html
+  - subtest: Property zoom value 'calc(100% + (sign(1em - 30px) * 50%))'
+    test: zoom-computed-with-sign-expression.html
+  - subtest: Property zoom value 'calc(100% + (sign(2cqw - 1em) * 50%))'
+    test: zoom-computed-with-sign-expression.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1953054
