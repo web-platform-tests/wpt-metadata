@@ -1,0 +1,17 @@
+links:
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1934598
+      results:
+        - test: calc-sibling-function.html
+          subtest: basic sibling-index() test
+        - test: calc-sibling-function.html
+          subtest: basic sibling-count() test
+        - test: calc-sibling-function.html
+          subtest: sibling-index() in calc() with percentage
+        - test: calc-sibling-function.html
+          subtest: sibling-count on pseudo-element
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1952899
+      results:
+        - test: tree-scoped-sibling-function.html
+          subtest: sibling-index() and sibling-count() evaluate as normal from inner tree
