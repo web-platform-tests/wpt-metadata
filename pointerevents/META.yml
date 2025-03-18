@@ -145,10 +145,6 @@ links:
   results:
   - test: pointerevent_touch-action-mouse.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1689534
-- product: chrome
-  results:
-  - test: idlharness.https.window.html
-  url: https://crbug.com/1072930
 - product: firefox
   results:
   - test: pointerevent_iframe-touch-action-none_touch.html
@@ -254,17 +250,6 @@ links:
   - subtest: mouse events from mouse at parent after child is removed at pointerup
     test: pointerevent_after_target_removed.html?mouse
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1823658
-- product: chrome
-  results:
-  - subtest: pointer events from mouse at parent after child is removed at pointerdown
-    test: pointerevent_after_target_removed.html?mouse
-  - subtest: mouse events from mouse at parent after child is removed at pointerdown
-    test: pointerevent_after_target_removed.html?mouse
-  - subtest: pointer events from mouse at parent after child is removed at pointerup
-    test: pointerevent_after_target_removed.html?mouse
-  - subtest: mouse events from mouse at parent after child is removed at pointerup
-    test: pointerevent_after_target_removed.html?mouse
-  url: https://crbug.com/1147998
 - product: safari
   results:
   - test: pointerevent_movementxy.html?mouse
@@ -343,11 +328,6 @@ links:
   - test: pointerevent_after_target_removed.html?mouse
   - test: pointerevent_after_target_removed.html?touch
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1888013
-- product: chrome
-  results:
-  - test: pointerevent_click_during_capture.html?mouse-auxclick
-  - test: pointerevent_click_during_capture.html?mouse-click
-  url: https://crbug.com/40851596
 - product: chrome
   results:
   - test: coalesced_events_attributes_under_load.https.optional.html?mouse
