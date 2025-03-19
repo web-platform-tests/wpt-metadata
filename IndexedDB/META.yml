@@ -308,3 +308,8 @@ links:
           subtest: 'Blob: [object Blob]'
         - test: structured-clone.any.html?101-last
           subtest: 'File: [object File]'
+    - product: ladybird
+      url: https://github.com/w3c/IndexedDB/issues/442
+      results:
+        - test: get-databases.any.html
+          subtest: Ensure that databases() doesn't pick up changes that haven't commited.
