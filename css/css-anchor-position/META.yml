@@ -3919,3 +3919,30 @@ links:
           subtest: e.style['max-width'] = "calc((anchor-size(--foo width) + anchor-size(--bar height)) / 2)" should set the property value
         - test: anchor-size-parse-valid.html
           subtest: e.style['width'] = "calc((anchor-size(--foo width) + anchor-size(--bar height)) / 2)" should set the property value
+    - product: chrome
+      url: https://crbug.com/404731182
+      results:
+        - test: property-interpolations.html
+          subtest: 'CSS Transitions with transition-property:all and transition-behavor:allow-discrete: property <position-try-fallbacks> from [none] to [flip-block] at (0.3) should be [none]'
+        - test: property-interpolations.html
+          subtest: 'CSS Transitions with transition-property:all and transition-behavor:allow-discrete: property <position-try-fallbacks> from [none] to [flip-block] at (0) should be [none]'
+        - test: property-interpolations.html
+          subtest: 'CSS Transitions with transition-property:all and transition-behavor:allow-discrete: property <position-try-fallbacks> from [none] to [flip-block] at (-0.3) should be [none]'
+        - test: property-interpolations.html
+          subtest: 'CSS Transitions with transition-behavior:allow-discrete: property <position-try-fallbacks> from [none] to [flip-block] at (0.3) should be [none]'
+        - test: property-interpolations.html
+          subtest: 'CSS Transitions with transition-behavior:allow-discrete: property <position-try-fallbacks> from [none] to [flip-block] at (0) should be [none]'
+        - test: property-interpolations.html
+          subtest: 'CSS Transitions with transition-behavior:allow-discrete: property <position-try-fallbacks> from [none] to [flip-block] at (-0.3) should be [none]'
+        - test: property-interpolations.html
+          subtest: 'CSS Transitions with transition-behavior:allow-discrete: property <position-try-fallbacks> from [none] to [--foo] at (-0.3) should be [none]'
+        - test: property-interpolations.html
+          subtest: 'CSS Transitions with transition-behavior:allow-discrete: property <position-try-fallbacks> from [none] to [--foo] at (0) should be [none]'
+        - test: property-interpolations.html
+          subtest: 'CSS Transitions with transition-behavior:allow-discrete: property <position-try-fallbacks> from [none] to [--foo] at (0.3) should be [none]'
+        - test: property-interpolations.html
+          subtest: 'CSS Transitions with transition-property:all and transition-behavor:allow-discrete: property <position-try-fallbacks> from [none] to [--foo] at (-0.3) should be [none]'
+        - test: property-interpolations.html
+          subtest: 'CSS Transitions with transition-property:all and transition-behavor:allow-discrete: property <position-try-fallbacks> from [none] to [--foo] at (0) should be [none]'
+        - test: property-interpolations.html
+          subtest: 'CSS Transitions with transition-property:all and transition-behavor:allow-discrete: property <position-try-fallbacks> from [none] to [--foo] at (0.3) should be [none]'
