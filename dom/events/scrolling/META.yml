@@ -2,10 +2,11 @@ links:
     - product: firefox
       url: https://bugzilla.mozilla.org/show_bug.cgi?id=1655754
       results:
-        - test: scrollend-event-fired-for-scrollIntoView.html
-          subtest: Tests scrollend event for scrollIntoView.
-        - test: scrollend-event-fired-for-scrollIntoView.html
-          subtest: Tests scrollend event for nested scrollIntoView.
+        - test: scrollend-event-fired-for-scrollIntoView.html?include=subframe-inline-end-block-end-behavior-auto
+        - test: scrollend-event-fired-for-scrollIntoView.html?include=subframe-inline-start-block-start-behavior-smooth
+        - test: scrollend-event-fired-for-scrollIntoView.html?include=root-inline-end-block-end-behavior-auto
+        - test: scrollend-event-fired-for-scrollIntoView.html?include=root-inline-start-block-start-behavior-smooth
+        - test: scrollend-event-fired-for-scrollIntoView.html?include=nested-scrollIntoView
         - test: overscroll-event-fired-to-window.html
         - test: overscroll-deltas.html
         - test: scrollend-event-fired-to-element-with-overscroll-behavior.html
@@ -129,4 +130,8 @@ links:
         - test: scrollend-event-fired-for-scroll-attr-change.html?include=root-scrollLeft-smooth
         - test: scrollend-event-fired-for-scroll-attr-change.html?include=subframe-scrollLeft-auto
         - test: scrollend-event-fired-for-scroll-attr-change.html?include=subframe-scrollLeft-smooth
-        - test: scrollend-event-fired-for-scrollIntoView.html
+        - test: scrollend-event-fired-for-scrollIntoView.html?include=subframe-inline-end-block-end-behavior-auto
+        - test: scrollend-event-fired-for-scrollIntoView.html?include=subframe-inline-start-block-start-behavior-smooth
+        - test: scrollend-event-fired-for-scrollIntoView.html?include=root-inline-end-block-end-behavior-auto
+        - test: scrollend-event-fired-for-scrollIntoView.html?include=root-inline-start-block-start-behavior-smooth
+        - test: scrollend-event-fired-for-scrollIntoView.html?include=nested-scrollIntoView
