@@ -3913,3 +3913,9 @@ links:
       results:
         - test: anchor-parse-valid.html
           subtest: e.style['top'] = "calc((anchor(--foo top) + anchor(--bar bottom)) / 2)" should set the property value
+        - test: anchor-size-parse-valid.html
+          subtest: e.style['margin-left'] = "calc((anchor-size(--foo width) + anchor-size(--bar height)) / 2)" should set the property value
+        - test: anchor-size-parse-valid.html
+          subtest: e.style['max-width'] = "calc((anchor-size(--foo width) + anchor-size(--bar height)) / 2)" should set the property value
+        - test: anchor-size-parse-valid.html
+          subtest: e.style['width'] = "calc((anchor-size(--foo width) + anchor-size(--bar height)) / 2)" should set the property value
