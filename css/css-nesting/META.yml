@@ -143,8 +143,7 @@ links:
           subtest: '.foo { .foo, .foo & { color: green; }}'
         - test: parsing.html
           subtest: '.foo { :is(.bar, .baz) { color: green; }}'
-    - url: ""
-      label: interop-2024-nesting
+    - label: interop-2024-nesting
       results:
         - test: conditional-properties.html
         - test: conditional-rules.html
@@ -252,3 +251,8 @@ links:
       url: https://bugzilla.mozilla.org/show_bug.cgi?id=1919279
       results:
         - test: contextually-invalid-selectors.html
+    - product: chrome
+      url: https://issues.chromium.org/issues/40275671
+      results:
+        - test: cssom.html
+          subtest: CSSStyleRule is a CSSGroupingRule
