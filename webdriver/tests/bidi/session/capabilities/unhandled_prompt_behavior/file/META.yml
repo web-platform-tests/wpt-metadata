@@ -1,6 +1,10 @@
 links:
-- product: firefox
-  results:
-  - subtest: test_file_ignore[capabilities0]
-    test: ignore.py
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1952946
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1952946
+      results:
+        - test: ignore.py
+          subtest: test_file_ignore[capabilities0]
+    - url: https://bugzilla.mozilla.org/show_bug.cgi?id=1855045
+      results:
+        - test: dismiss.py
+        - test: accept.py
