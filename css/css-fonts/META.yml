@@ -513,3 +513,11 @@ links:
   results:
   - test: font-palette-23b.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1934212
+- product: firefox
+  results:
+  - subtest: e.style['font-variation-settings'] = "\"wght\" sign(1em - 1px)" should
+      set the property value
+    test: font-variation-settings-calc.html
+  - subtest: Property font-variation-settings value '"wght" sign(1em - 1px)'
+    test: font-variation-settings-calc.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1955677
