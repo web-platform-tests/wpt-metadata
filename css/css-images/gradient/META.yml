@@ -1,41 +1,46 @@
 links:
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1791175
-      results:
-        - test: gradient-eval-002.html
-        - test: gradient-eval-003.html
-        - test: gradient-eval-005.html
-        - test: gradient-eval-006.html
-        - test: gradient-eval-007.html
-        - test: gradient-eval-008.html
-        - test: gradient-eval-009.html
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1793506
-      results:
-        - test: srgb-gradient.html
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1805801
-      results:
-        - test: css-color-4-colors-default-to-oklab-gradient.html
-    - label: interop-2023-color
-      results:
-        - test: gradient-eval-003.html
-        - test: gradient-eval-005.html
-        - test: gradient-eval-006.html
-        - test: gradient-eval-007.html
-        - test: gradient-eval-008.html
-        - test: gradient-eval-009.html
-        - test: gradient-eval-002.html
-    - product: chrome
-      url: https://crbug.com/1347068
-      results:
-        - test: gradient-eval-004.html
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1953265
-      results:
-        - test: gradient-analogous-missing-components-003.html
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1953968
-      results:
-        - test: gradient-eval-004.html
-          subtest: Test status
+- product: firefox
+  results:
+  - test: gradient-eval-002.html
+  - test: gradient-eval-003.html
+  - test: gradient-eval-005.html
+  - test: gradient-eval-006.html
+  - test: gradient-eval-007.html
+  - test: gradient-eval-008.html
+  - test: gradient-eval-009.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1791175
+- product: firefox
+  results:
+  - test: srgb-gradient.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1793506
+- product: firefox
+  results:
+  - test: css-color-4-colors-default-to-oklab-gradient.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1805801
+- label: interop-2023-color
+  results:
+  - test: gradient-eval-003.html
+  - test: gradient-eval-005.html
+  - test: gradient-eval-006.html
+  - test: gradient-eval-007.html
+  - test: gradient-eval-008.html
+  - test: gradient-eval-009.html
+  - test: gradient-eval-002.html
+- product: chrome
+  results:
+  - test: gradient-eval-004.html
+  url: https://crbug.com/1347068
+- product: firefox
+  results:
+  - test: gradient-analogous-missing-components-003.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1953265
+- product: firefox
+  results:
+  - subtest: Test status
+    test: gradient-eval-004.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1953968
+- product: firefox
+  results:
+  - test: gradient-analogous-missing-components-004.html
+  - test: gradient-eval-004.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1955564
