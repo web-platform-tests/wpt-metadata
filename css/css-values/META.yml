@@ -2004,3 +2004,127 @@ links:
   - subtest: 'CSS Values and Units Test: CSS if() function cycles 45'
     test: if-cycle.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1956558
+- product: firefox
+  results:
+  - subtest: progress(1, 0, 1) should be used-value-equivalent to 1
+    test: progress-computed.html
+  - subtest: progress(progress(1, 0, 1), progress(0px, 0px, 1px), progress(1deg, 0deg,
+      1deg)) should be used-value-equivalent to 1
+    test: progress-computed.html
+  - subtest: progress(sign(-10px) * 10px, (10px - 10px), 10px * progress(1deg, 0deg,
+      1deg)) should be used-value-equivalent to -1
+    test: progress-computed.html
+  - subtest: calc(progress(100px, 0px, 50px) * 10px + 100px) should be used-value-equivalent
+      to 120px
+    test: progress-computed.html
+  - subtest: calc(progress(100, 0, sign(50px))) should be used-value-equivalent to
+      100
+    test: progress-computed.html
+  - subtest: calc(progress(abs(5%), hypot(3%, 4%), 10%)) should be used-value-equivalent
+      to 0
+    test: progress-computed.html
+  - subtest: progress(1000em, 10em, 110em) should be used-value-equivalent to 9.9
+    test: progress-computed.html
+  - subtest: scale(progress(1000em, 10rem, 110em)) should be used-value-equivalent
+      to scale(9.9)
+    test: progress-computed.html
+  - subtest: scale(progress(0em, 0rem, 0em)) should be used-value-equivalent to scale(0)
+    test: progress-computed.html
+  - subtest: scale(progress(sign(1em - 1rem) * 1ex, 0rem, 0em)) should be used-value-equivalent
+      to scale(0)
+    test: progress-computed.html
+  - subtest: calc(progress(1, 0, 1) * 10px) should be used-value-equivalent to 10px
+    test: progress-computed.html
+  - subtest: calc(progress(1, 0, 1) * 1s) should be used-value-equivalent to 1s
+    test: progress-computed.html
+  - subtest: calc(progress(1, 0, 1) * 1deg) should be used-value-equivalent to 1deg
+    test: progress-computed.html
+  - subtest: calc(progress(sign(1001em - 10lh * progress(100px, 2rex, 10ex)) * 10em,
+      2rem, 12em) / 2) should be used-value-equivalent to 0.4
+    test: progress-computed.html
+  - subtest: calc(progress(sign(1001em - 10lh * progress(100px, 2rex, 10ex)) * 20em,
+      2rem, 12em) * 10) should be used-value-equivalent to 18
+    test: progress-computed.html
+  - subtest: calc(progress(sign(1001em - 10lh * progress(100px, 2rex, 10ex)) * 20em,
+      2rem, 12em) * 30) should be used-value-equivalent to 54
+    test: progress-computed.html
+  - subtest: calc(progress(sign(1001em - 10lh * progress(100px, 2rex, 10ex)) * 20em,
+      2rem, 12em) / 4) should be used-value-equivalent to 0.45
+    test: progress-computed.html
+  - subtest: calc(progress(sign(1001em - 10lh * progress(100px, 2rex, 10ex)) * 20em,
+      2rem, 12em) * 4) should be used-value-equivalent to 7
+    test: progress-computed.html
+  - subtest: calc(progress(sign(1001em - 10lh * progress(100px, 2rex, 10ex)) * 20em,
+      2rem, 12em) * 2) should be used-value-equivalent to 3.6
+    test: progress-computed.html
+  - subtest: rotate3d(progress(21em, 1rem, 11em), progress(21em, 1rem, 11em), progress(21em,
+      1rem, 11em), calc(progress(11em, 1rem, 11em) * 2deg)) should be used-value-equivalent
+      to rotate3d(2, 2, 2, 2deg)
+    test: progress-computed.html
+  - subtest: '''progress(100px, 0px, 100px)'' as a specified value should serialize
+      as ''calc(1)''.'
+    test: progress-serialize.html
+  - subtest: '''scale(progress(100px, 0px, 100px))'' as a specified value should serialize
+      as ''scale(calc(1))''.'
+    test: progress-serialize.html
+  - subtest: '''scale(progress(100px, 0px, 100px))'' as a computed value should serialize
+      as ''matrix(1, 0, 0, 1, 0, 0)''.'
+    test: progress-serialize.html
+  - subtest: '''progress(10em, 0px, 10em)'' as a specified value should serialize
+      as ''progress(10em, 0px, 10em)''.'
+    test: progress-serialize.html
+  - subtest: '''scale(progress(10em, 0px, 10em))'' as a specified value should serialize
+      as ''scale(progress(10em, 0px, 10em))''.'
+    test: progress-serialize.html
+  - subtest: '''scale(progress(10em, 0px, 10em))'' as a computed value should serialize
+      as ''matrix(1, 0, 0, 1, 0, 0)''.'
+    test: progress-serialize.html
+  - subtest: '''progress(10em, 0px, 10rem)'' as a specified value should serialize
+      as ''progress(10em, 0px, 10rem)''.'
+    test: progress-serialize.html
+  - subtest: '''scale(progress(10em, 0px, 10rem))'' as a specified value should serialize
+      as ''scale(progress(10em, 0px, 10rem))''.'
+    test: progress-serialize.html
+  - subtest: '''scale(progress(10em, 0px, 10rem))'' as a computed value should serialize
+      as ''matrix(1, 0, 0, 1, 0, 0)''.'
+    test: progress-serialize.html
+  - subtest: '''progress(100px, (10px - 10px), 100px)'' as a specified value should
+      serialize as ''calc(1)''.'
+    test: progress-serialize.html
+  - subtest: '''scale(progress(100px, (10px - 10px), 100px))'' as a specified value
+      should serialize as ''scale(calc(1))''.'
+    test: progress-serialize.html
+  - subtest: '''scale(progress(100px, (10px - 10px), 100px))'' as a computed value
+      should serialize as ''matrix(1, 0, 0, 1, 0, 0)''.'
+    test: progress-serialize.html
+  - subtest: '''progress(1%, (10% - 10%), 100%)'' as a specified value should serialize
+      as ''calc(0.01)''.'
+    test: progress-serialize.html
+  - subtest: '''scale(progress(1%, (10% - 10%), 100%))'' as a specified value should
+      serialize as ''scale(calc(0.01))''.'
+    test: progress-serialize.html
+  - subtest: '''progress(1%, (10% - 10%), 100%)'' as a computed value should serialize
+      as ''0.01''.'
+    test: progress-serialize.html
+  - subtest: '''scale(progress(1%, (10% - 10%), 100%))'' as a computed value should
+      serialize as ''matrix(0.01, 0, 0, 0.01, 0, 0)''.'
+    test: progress-serialize.html
+  - subtest: '''calc(0.5 * progress(100px, 0px, 100px))'' as a specified value should
+      serialize as ''calc(0.5)''.'
+    test: progress-serialize.html
+  - subtest: '''scale(calc(0.5 * progress(100px, 0px, 100px)))'' as a specified value
+      should serialize as ''scale(calc(0.5))''.'
+    test: progress-serialize.html
+  - subtest: '''calc(0.5 * progress(100px, 0px, 100px))'' as a computed value should
+      serialize as ''0.5''.'
+    test: progress-serialize.html
+  - subtest: '''scale(calc(0.5 * progress(100px, 0px, 100px)))'' as a computed value
+      should serialize as ''matrix(0.5, 0, 0, 0.5, 0, 0)''.'
+    test: progress-serialize.html
+  - subtest: '''calc(50px * progress(100px, 0px, 100px))'' as a specified value should
+      serialize as ''calc(50px)''.'
+    test: progress-serialize.html
+  - subtest: '''calc(1px * progress(abs(10%), (10% - 10%), 100% / 10))'' as a computed
+      value should serialize as ''1px''.'
+    test: progress-serialize.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1956640
