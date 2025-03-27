@@ -1,19 +1,28 @@
 links:
-    - product: chrome
-      url: https://bugs.chromium.org/p/chromium/issues/detail?id=1149182
-      results:
-        - test: transition-timing-function-valid.html
-    - label: interop-2024-transition-behavior
-      results:
-        - test: transition-behavior.html
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1834876
-      results:
-        - test: '*'
-    - product: chrome
-      url: https://issues.chromium.org/325230075
-      results:
-        - test: transition-behavior.html
-    - label: interop-2024-starting-style
-      results:
-        - test: starting-style-parsing.html
+- product: chrome
+  results:
+  - test: transition-timing-function-valid.html
+  url: https://bugs.chromium.org/p/chromium/issues/detail?id=1149182
+- label: interop-2024-transition-behavior
+  results:
+  - test: transition-behavior.html
+- product: firefox
+  results:
+  - test: '*'
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1834876
+- product: chrome
+  results:
+  - test: transition-behavior.html
+  url: https://issues.chromium.org/325230075
+- label: interop-2024-starting-style
+  results:
+  - test: starting-style-parsing.html
+- product: firefox
+  results:
+  - subtest: Property transition-timing-function value 'steps(calc(2 * sign(1em -
+      1000px)), jump-none)'
+    test: transition-timing-function-computed.html
+  - subtest: Property transition-timing-function value 'steps(calc(2 * sign(1em -
+      1000px)), start)'
+    test: transition-timing-function-computed.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1956922
