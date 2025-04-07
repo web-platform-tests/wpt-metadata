@@ -1,45 +1,183 @@
 links:
-- product: firefox
-  results:
-  - subtest: <ol type="none"> - list-style-type
-    test: lists-styles.html
-  - subtest: <li type="none"> - list-style-type
-    test: lists-styles.html
-  - subtest: <ol type="NONE"> - list-style-type
-    test: lists-styles.html
-  - subtest: <li type="NONE"> - list-style-type
-    test: lists-styles.html
-  - subtest: <ol type="disc"> - list-style-type
-    test: lists-styles.html
-  - subtest: <ol type="DISC"> - list-style-type
-    test: lists-styles.html
-  - subtest: <ol type="circle"> - list-style-type
-    test: lists-styles.html
-  - subtest: <ol type="CIRCLE"> - list-style-type
-    test: lists-styles.html
-  - subtest: <ol type="square"> - list-style-type
-    test: lists-styles.html
-  - subtest: <ol type="SQUARE"> - list-style-type
-    test: lists-styles.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1708370
-- product: safari
-  results:
-  - test: lists-styles.html
-  url: https://bugs.webkit.org/show_bug.cgi?id=222670
-- product: chrome
-  results:
-  - test: lists-styles.html
-  url: https://bugs.chromium.org/p/chromium/issues/detail?id=1222844
-- product: firefox
-  results:
-  - subtest: <ul type="1"> - list-style-type
-    test: lists-styles.html
-  - subtest: <ul type="a" class="type-a"> - list-style-type
-    test: lists-styles.html
-  - subtest: <ul type="A" class="type-A"> - list-style-type
-    test: lists-styles.html
-  - subtest: <ul type="i" class="type-i"> - list-style-type
-    test: lists-styles.html
-  - subtest: <ul type="I" class="type-I"> - list-style-type
-    test: lists-styles.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1867721
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1708370
+      results:
+        - test: lists-styles.html
+          subtest: <ol type="none"> - list-style-type
+        - test: lists-styles.html
+          subtest: <li type="none"> - list-style-type
+        - test: lists-styles.html
+          subtest: <ol type="NONE"> - list-style-type
+        - test: lists-styles.html
+          subtest: <li type="NONE"> - list-style-type
+        - test: lists-styles.html
+          subtest: <ol type="disc"> - list-style-type
+        - test: lists-styles.html
+          subtest: <ol type="DISC"> - list-style-type
+        - test: lists-styles.html
+          subtest: <ol type="circle"> - list-style-type
+        - test: lists-styles.html
+          subtest: <ol type="CIRCLE"> - list-style-type
+        - test: lists-styles.html
+          subtest: <ol type="square"> - list-style-type
+        - test: lists-styles.html
+          subtest: <ol type="SQUARE"> - list-style-type
+    - product: safari
+      url: https://bugs.webkit.org/show_bug.cgi?id=222670
+      results:
+        - test: lists-styles.html
+    - product: chrome
+      url: https://bugs.chromium.org/p/chromium/issues/detail?id=1222844
+      results:
+        - test: lists-styles.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1867721
+      results:
+        - test: lists-styles.html
+          subtest: <ul type="1"> - list-style-type
+        - test: lists-styles.html
+          subtest: <ul type="a" class="type-a"> - list-style-type
+        - test: lists-styles.html
+          subtest: <ul type="A" class="type-A"> - list-style-type
+        - test: lists-styles.html
+          subtest: <ul type="i" class="type-i"> - list-style-type
+        - test: lists-styles.html
+          subtest: <ul type="I" class="type-I"> - list-style-type
+    - product: chrome
+      url: https://issues.chromium.org/issues/40787216
+      results:
+        - test: lists-styles-quirks.html
+          subtest: <li> - text-align
+        - test: lists-styles-quirks.html
+          subtest: <li> (in <dir>) - text-align
+        - test: lists-styles-quirks.html
+          subtest: <li> (in <menu>) - text-align
+        - test: lists-styles-quirks.html
+          subtest: <li> (in <ol>) - text-align
+        - test: lists-styles-quirks.html
+          subtest: <li> (in <ul>) - text-align
+        - test: lists-styles-quirks.html
+          subtest: <li type="1"> - text-align
+        - test: lists-styles-quirks.html
+          subtest: <li type="a" class="type-a"> - text-align
+        - test: lists-styles-quirks.html
+          subtest: <li type="A" class="type-A"> - text-align
+        - test: lists-styles-quirks.html
+          subtest: <li type="i" class="type-i"> - text-align
+        - test: lists-styles-quirks.html
+          subtest: <li type="I" class="type-I"> - text-align
+        - test: lists-styles-quirks.html
+          subtest: <li type="none"> - text-align
+        - test: lists-styles-quirks.html
+          subtest: <li type="NONE"> - text-align
+        - test: lists-styles-quirks.html
+          subtest: <li type="disc"> - text-align
+        - test: lists-styles-quirks.html
+          subtest: <li type="DISC"> - text-align
+        - test: lists-styles-quirks.html
+          subtest: <li type="circle"> - text-align
+        - test: lists-styles-quirks.html
+          subtest: <li type="square"> - text-align
+        - test: lists-styles-quirks.html
+          subtest: <li type="SQUARE"> - text-align
+        - test: lists-styles-quirks.html
+          subtest: <li value="10"> (in <ol>) - text-align
+        - test: lists-styles-quirks.html
+          subtest: <li value="10xyz"> (in <ol>) - text-align
+        - test: lists-styles-quirks.html
+          subtest: <li value="10e10"> (in <ol>) - text-align
+        - test: lists-styles-quirks.html
+          subtest: <li value="xyz"> (in <ol>) - text-align
+        - test: lists-styles-quirks.html
+          subtest: <li> (in <ol start="10">) - text-align
+        - test: lists-styles-quirks.html
+          subtest: <li> (in <ol start="10xyz">) - text-align
+        - test: lists-styles-quirks.html
+          subtest: <li> (in <ol start="10e10">) - text-align
+        - test: lists-styles-quirks.html
+          subtest: <li> (in <ol start="xyz">) - text-align
+        - test: lists-styles-quirks.html
+          subtest: <li> (in <ol reversed="">) - text-align
+        - test: lists-styles-quirks.html
+          subtest: <li> (in <ol reversed="" start="20">) - text-align
+        - test: lists-styles-quirks.html
+          subtest: <li> (in <ol reversed="" start="20xyz">) - text-align
+        - test: lists-styles-quirks.html
+          subtest: <li> (in <ol reversed="" start="20e10">) - text-align
+        - test: lists-styles-quirks.html
+          subtest: <li> (in <ol reversed="" start="xyz">) - text-align
+        - test: lists-styles-quirks.html
+          subtest: <li dir="rtl"> (in <ul dir="ltr">) - text-align
+        - test: lists-styles-quirks.html
+          subtest: <li dir="ltr"> (in <ul dir="rtl">) - text-align
+        - test: lists-styles-quirks.html
+          subtest: <li type="CIRCLE"> - text-align
+    - product: edge
+      url: https://issues.chromium.org/issues/40787216
+      results:
+        - test: lists-styles-quirks.html
+          subtest: <li> - text-align
+        - test: lists-styles-quirks.html
+          subtest: <li> (in <dir>) - text-align
+        - test: lists-styles-quirks.html
+          subtest: <li> (in <menu>) - text-align
+        - test: lists-styles-quirks.html
+          subtest: <li> (in <ol>) - text-align
+        - test: lists-styles-quirks.html
+          subtest: <li> (in <ul>) - text-align
+        - test: lists-styles-quirks.html
+          subtest: <li type="1"> - text-align
+        - test: lists-styles-quirks.html
+          subtest: <li type="a" class="type-a"> - text-align
+        - test: lists-styles-quirks.html
+          subtest: <li type="A" class="type-A"> - text-align
+        - test: lists-styles-quirks.html
+          subtest: <li type="i" class="type-i"> - text-align
+        - test: lists-styles-quirks.html
+          subtest: <li type="I" class="type-I"> - text-align
+        - test: lists-styles-quirks.html
+          subtest: <li type="none"> - text-align
+        - test: lists-styles-quirks.html
+          subtest: <li type="NONE"> - text-align
+        - test: lists-styles-quirks.html
+          subtest: <li type="disc"> - text-align
+        - test: lists-styles-quirks.html
+          subtest: <li type="DISC"> - text-align
+        - test: lists-styles-quirks.html
+          subtest: <li type="circle"> - text-align
+        - test: lists-styles-quirks.html
+          subtest: <li type="square"> - text-align
+        - test: lists-styles-quirks.html
+          subtest: <li type="SQUARE"> - text-align
+        - test: lists-styles-quirks.html
+          subtest: <li value="10"> (in <ol>) - text-align
+        - test: lists-styles-quirks.html
+          subtest: <li value="10xyz"> (in <ol>) - text-align
+        - test: lists-styles-quirks.html
+          subtest: <li value="10e10"> (in <ol>) - text-align
+        - test: lists-styles-quirks.html
+          subtest: <li value="xyz"> (in <ol>) - text-align
+        - test: lists-styles-quirks.html
+          subtest: <li> (in <ol start="10">) - text-align
+        - test: lists-styles-quirks.html
+          subtest: <li> (in <ol start="10xyz">) - text-align
+        - test: lists-styles-quirks.html
+          subtest: <li> (in <ol start="10e10">) - text-align
+        - test: lists-styles-quirks.html
+          subtest: <li> (in <ol start="xyz">) - text-align
+        - test: lists-styles-quirks.html
+          subtest: <li> (in <ol reversed="">) - text-align
+        - test: lists-styles-quirks.html
+          subtest: <li> (in <ol reversed="" start="20">) - text-align
+        - test: lists-styles-quirks.html
+          subtest: <li> (in <ol reversed="" start="20xyz">) - text-align
+        - test: lists-styles-quirks.html
+          subtest: <li> (in <ol reversed="" start="20e10">) - text-align
+        - test: lists-styles-quirks.html
+          subtest: <li> (in <ol reversed="" start="xyz">) - text-align
+        - test: lists-styles-quirks.html
+          subtest: <li dir="rtl"> (in <ul dir="ltr">) - text-align
+        - test: lists-styles-quirks.html
+          subtest: <li dir="ltr"> (in <ul dir="rtl">) - text-align
+        - test: lists-styles-quirks.html
+          subtest: <li type="CIRCLE"> - text-align
