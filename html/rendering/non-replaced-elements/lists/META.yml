@@ -243,3 +243,353 @@ links:
           subtest: <li type="square"> - list-style-position
         - test: lists-styles-quirks.html
           subtest: <li type="SQUARE"> - list-style-position
+    - product: chrome
+      url: https://issues.chromium.org/issues/354025385
+      results:
+        - test: lists-styles-quirks.html
+          subtest: |-
+            <menu>
+               <li> - counter-reset
+        - test: lists-styles-quirks.html
+          subtest: |-
+            <ol>
+               <li> - counter-reset
+        - test: lists-styles-quirks.html
+          subtest: |-
+            <ul>
+               <li> - counter-reset
+        - test: lists-styles-quirks.html
+          subtest: <menu> (in <dir>) - counter-reset
+        - test: lists-styles-quirks.html
+          subtest: <ul> (in <dir>) - counter-reset
+        - test: lists-styles-quirks.html
+          subtest: <menu> (in <menu>) - counter-reset
+        - test: lists-styles-quirks.html
+          subtest: <ul> (in <menu>) - counter-reset
+        - test: lists-styles-quirks.html
+          subtest: <menu> (in <ul>) - counter-reset
+        - test: lists-styles-quirks.html
+          subtest: <ul> (in <ul>) - counter-reset
+        - test: lists-styles-quirks.html
+          subtest: <menu> (in <dir><dir>) - counter-reset
+        - test: lists-styles-quirks.html
+          subtest: <ul> (in <dir><dir>) - counter-reset
+        - test: lists-styles-quirks.html
+          subtest: <menu> (in <dir><menu>) - counter-reset
+        - test: lists-styles-quirks.html
+          subtest: <ul> (in <dir><menu>) - counter-reset
+        - test: lists-styles-quirks.html
+          subtest: <menu> (in <dir><ol>) - counter-reset
+        - test: lists-styles-quirks.html
+          subtest: <ul> (in <dir><ol>) - counter-reset
+        - test: lists-styles-quirks.html
+          subtest: <menu> (in <ol>) - counter-reset
+        - test: lists-styles-quirks.html
+          subtest: <ul> (in <ol>) - counter-reset
+        - test: lists-styles-quirks.html
+          subtest: <menu> (in <dir><ul>) - counter-reset
+        - test: lists-styles-quirks.html
+          subtest: <ul> (in <dir><ul>) - counter-reset
+        - test: lists-styles-quirks.html
+          subtest: <menu> (in <menu><dir>) - counter-reset
+        - test: lists-styles-quirks.html
+          subtest: <ul> (in <menu><dir>) - counter-reset
+        - test: lists-styles-quirks.html
+          subtest: <menu> (in <menu><menu>) - counter-reset
+        - test: lists-styles-quirks.html
+          subtest: <ul> (in <menu><menu>) - counter-reset
+        - test: lists-styles-quirks.html
+          subtest: <menu> (in <menu><ol>) - counter-reset
+        - test: lists-styles-quirks.html
+          subtest: <ul> (in <menu><ol>) - counter-reset
+        - test: lists-styles-quirks.html
+          subtest: <menu> (in <menu><ul>) - counter-reset
+        - test: lists-styles-quirks.html
+          subtest: <ul> (in <menu><ul>) - counter-reset
+        - test: lists-styles-quirks.html
+          subtest: <menu> (in <ol><dir>) - counter-reset
+        - test: lists-styles-quirks.html
+          subtest: <ul> (in <ol><dir>) - counter-reset
+        - test: lists-styles-quirks.html
+          subtest: <menu> (in <ol><menu>) - counter-reset
+        - test: lists-styles-quirks.html
+          subtest: <ul> (in <ol><menu>) - counter-reset
+        - test: lists-styles-quirks.html
+          subtest: <menu> (in <ol><ol>) - counter-reset
+        - test: lists-styles-quirks.html
+          subtest: <ul> (in <ol><ol>) - counter-reset
+        - test: lists-styles-quirks.html
+          subtest: <menu> (in <ol><ul>) - counter-reset
+        - test: lists-styles-quirks.html
+          subtest: <ul> (in <ol><ul>) - counter-reset
+        - test: lists-styles-quirks.html
+          subtest: <menu> (in <ul><dir>) - counter-reset
+        - test: lists-styles-quirks.html
+          subtest: <ul> (in <ul><dir>) - counter-reset
+        - test: lists-styles-quirks.html
+          subtest: <menu> (in <ul><menu>) - counter-reset
+        - test: lists-styles-quirks.html
+          subtest: <ul> (in <ul><menu>) - counter-reset
+        - test: lists-styles-quirks.html
+          subtest: <menu> (in <ul><ol>) - counter-reset
+        - test: lists-styles-quirks.html
+          subtest: <ul> (in <ul><ol>) - counter-reset
+        - test: lists-styles-quirks.html
+          subtest: <menu> (in <ul><ul>) - counter-reset
+        - test: lists-styles-quirks.html
+          subtest: <ul> (in <ul><ul>) - counter-reset
+        - test: lists-styles-quirks.html
+          subtest: <ol type="1"> - counter-reset
+        - test: lists-styles-quirks.html
+          subtest: <ul type="1"> - counter-reset
+        - test: lists-styles-quirks.html
+          subtest: <ol type="a" class="type-a"> - counter-reset
+        - test: lists-styles-quirks.html
+          subtest: <ul type="a" class="type-a"> - counter-reset
+        - test: lists-styles-quirks.html
+          subtest: <ol type="A" class="type-A"> - counter-reset
+        - test: lists-styles-quirks.html
+          subtest: <ul type="A" class="type-A"> - counter-reset
+        - test: lists-styles-quirks.html
+          subtest: <ol type="i" class="type-i"> - counter-reset
+        - test: lists-styles-quirks.html
+          subtest: <ul type="i" class="type-i"> - counter-reset
+        - test: lists-styles-quirks.html
+          subtest: <ol type="I" class="type-I"> - counter-reset
+        - test: lists-styles-quirks.html
+          subtest: <ul type="I" class="type-I"> - counter-reset
+        - test: lists-styles-quirks.html
+          subtest: <ol type="none"> - counter-reset
+        - test: lists-styles-quirks.html
+          subtest: <ul type="none"> - counter-reset
+        - test: lists-styles-quirks.html
+          subtest: <ol type="NONE"> - counter-reset
+        - test: lists-styles-quirks.html
+          subtest: <ul type="NONE"> - counter-reset
+        - test: lists-styles-quirks.html
+          subtest: <ol type="disc"> - counter-reset
+        - test: lists-styles-quirks.html
+          subtest: <ul type="disc"> - counter-reset
+        - test: lists-styles-quirks.html
+          subtest: <ol type="DISC"> - counter-reset
+        - test: lists-styles-quirks.html
+          subtest: <ul type="DISC"> - counter-reset
+        - test: lists-styles-quirks.html
+          subtest: <ol type="circle"> - counter-reset
+        - test: lists-styles-quirks.html
+          subtest: <ul type="circle"> - counter-reset
+        - test: lists-styles-quirks.html
+          subtest: <ol type="CIRCLE"> - counter-reset
+        - test: lists-styles-quirks.html
+          subtest: <ul type="CIRCLE"> - counter-reset
+        - test: lists-styles-quirks.html
+          subtest: <ol type="square"> - counter-reset
+        - test: lists-styles-quirks.html
+          subtest: <ul type="square"> - counter-reset
+        - test: lists-styles-quirks.html
+          subtest: <ol type="SQUARE"> - counter-reset
+        - test: lists-styles-quirks.html
+          subtest: <ul type="SQUARE"> - counter-reset
+        - test: lists-styles-quirks.html
+          subtest: |-
+            <ol>
+                <li value="10"> - counter-reset
+        - test: lists-styles-quirks.html
+          subtest: <li value="10"> (in <ol>) - counter-set
+        - test: lists-styles-quirks.html
+          subtest: <li value="10xyz"> (in <ol>) - counter-set
+        - test: lists-styles-quirks.html
+          subtest: <li value="10e10"> (in <ol>) - counter-set
+        - test: lists-styles-quirks.html
+          subtest: <ol start="10"><li> - counter-reset
+        - test: lists-styles-quirks.html
+          subtest: <ol start="10xyz"><li> - counter-reset
+        - test: lists-styles-quirks.html
+          subtest: <ol start="10e10"><li> - counter-reset
+        - test: lists-styles-quirks.html
+          subtest: <ol start="xyz"><li> - counter-reset
+        - test: lists-styles-quirks.html
+          subtest: <ol reversed=""><li> - counter-reset
+        - test: lists-styles-quirks.html
+          subtest: <ol reversed="" start="20"><li> - counter-reset
+        - test: lists-styles-quirks.html
+          subtest: <ol reversed="" start="20xyz"><li> - counter-reset
+        - test: lists-styles-quirks.html
+          subtest: <ol reversed="" start="20e10"><li> - counter-reset
+        - test: lists-styles-quirks.html
+          subtest: <ol reversed="" start="xyz"><li> - counter-reset
+    - product: edge
+      url: https://issues.chromium.org/issues/354025385
+      results:
+        - test: lists-styles-quirks.html
+          subtest: |-
+            <menu>
+               <li> - counter-reset
+        - test: lists-styles-quirks.html
+          subtest: |-
+            <ol>
+               <li> - counter-reset
+        - test: lists-styles-quirks.html
+          subtest: |-
+            <ul>
+               <li> - counter-reset
+        - test: lists-styles-quirks.html
+          subtest: <menu> (in <dir>) - counter-reset
+        - test: lists-styles-quirks.html
+          subtest: <ul> (in <dir>) - counter-reset
+        - test: lists-styles-quirks.html
+          subtest: <menu> (in <menu>) - counter-reset
+        - test: lists-styles-quirks.html
+          subtest: <ul> (in <menu>) - counter-reset
+        - test: lists-styles-quirks.html
+          subtest: <menu> (in <ul>) - counter-reset
+        - test: lists-styles-quirks.html
+          subtest: <ul> (in <ul>) - counter-reset
+        - test: lists-styles-quirks.html
+          subtest: <menu> (in <dir><dir>) - counter-reset
+        - test: lists-styles-quirks.html
+          subtest: <ul> (in <dir><dir>) - counter-reset
+        - test: lists-styles-quirks.html
+          subtest: <menu> (in <dir><menu>) - counter-reset
+        - test: lists-styles-quirks.html
+          subtest: <ul> (in <dir><menu>) - counter-reset
+        - test: lists-styles-quirks.html
+          subtest: <menu> (in <dir><ol>) - counter-reset
+        - test: lists-styles-quirks.html
+          subtest: <ul> (in <dir><ol>) - counter-reset
+        - test: lists-styles-quirks.html
+          subtest: <menu> (in <ol>) - counter-reset
+        - test: lists-styles-quirks.html
+          subtest: <ul> (in <ol>) - counter-reset
+        - test: lists-styles-quirks.html
+          subtest: <menu> (in <dir><ul>) - counter-reset
+        - test: lists-styles-quirks.html
+          subtest: <ul> (in <dir><ul>) - counter-reset
+        - test: lists-styles-quirks.html
+          subtest: <menu> (in <menu><dir>) - counter-reset
+        - test: lists-styles-quirks.html
+          subtest: <ul> (in <menu><dir>) - counter-reset
+        - test: lists-styles-quirks.html
+          subtest: <menu> (in <menu><menu>) - counter-reset
+        - test: lists-styles-quirks.html
+          subtest: <ul> (in <menu><menu>) - counter-reset
+        - test: lists-styles-quirks.html
+          subtest: <menu> (in <menu><ol>) - counter-reset
+        - test: lists-styles-quirks.html
+          subtest: <ul> (in <menu><ol>) - counter-reset
+        - test: lists-styles-quirks.html
+          subtest: <menu> (in <menu><ul>) - counter-reset
+        - test: lists-styles-quirks.html
+          subtest: <ul> (in <menu><ul>) - counter-reset
+        - test: lists-styles-quirks.html
+          subtest: <menu> (in <ol><dir>) - counter-reset
+        - test: lists-styles-quirks.html
+          subtest: <ul> (in <ol><dir>) - counter-reset
+        - test: lists-styles-quirks.html
+          subtest: <menu> (in <ol><menu>) - counter-reset
+        - test: lists-styles-quirks.html
+          subtest: <ul> (in <ol><menu>) - counter-reset
+        - test: lists-styles-quirks.html
+          subtest: <menu> (in <ol><ol>) - counter-reset
+        - test: lists-styles-quirks.html
+          subtest: <ul> (in <ol><ol>) - counter-reset
+        - test: lists-styles-quirks.html
+          subtest: <menu> (in <ol><ul>) - counter-reset
+        - test: lists-styles-quirks.html
+          subtest: <ul> (in <ol><ul>) - counter-reset
+        - test: lists-styles-quirks.html
+          subtest: <menu> (in <ul><dir>) - counter-reset
+        - test: lists-styles-quirks.html
+          subtest: <ul> (in <ul><dir>) - counter-reset
+        - test: lists-styles-quirks.html
+          subtest: <menu> (in <ul><menu>) - counter-reset
+        - test: lists-styles-quirks.html
+          subtest: <ul> (in <ul><menu>) - counter-reset
+        - test: lists-styles-quirks.html
+          subtest: <menu> (in <ul><ol>) - counter-reset
+        - test: lists-styles-quirks.html
+          subtest: <ul> (in <ul><ol>) - counter-reset
+        - test: lists-styles-quirks.html
+          subtest: <menu> (in <ul><ul>) - counter-reset
+        - test: lists-styles-quirks.html
+          subtest: <ul> (in <ul><ul>) - counter-reset
+        - test: lists-styles-quirks.html
+          subtest: <ol type="1"> - counter-reset
+        - test: lists-styles-quirks.html
+          subtest: <ul type="1"> - counter-reset
+        - test: lists-styles-quirks.html
+          subtest: <ol type="a" class="type-a"> - counter-reset
+        - test: lists-styles-quirks.html
+          subtest: <ul type="a" class="type-a"> - counter-reset
+        - test: lists-styles-quirks.html
+          subtest: <ol type="A" class="type-A"> - counter-reset
+        - test: lists-styles-quirks.html
+          subtest: <ul type="A" class="type-A"> - counter-reset
+        - test: lists-styles-quirks.html
+          subtest: <ol type="i" class="type-i"> - counter-reset
+        - test: lists-styles-quirks.html
+          subtest: <ul type="i" class="type-i"> - counter-reset
+        - test: lists-styles-quirks.html
+          subtest: <ol type="I" class="type-I"> - counter-reset
+        - test: lists-styles-quirks.html
+          subtest: <ul type="I" class="type-I"> - counter-reset
+        - test: lists-styles-quirks.html
+          subtest: <ol type="none"> - counter-reset
+        - test: lists-styles-quirks.html
+          subtest: <ul type="none"> - counter-reset
+        - test: lists-styles-quirks.html
+          subtest: <ol type="NONE"> - counter-reset
+        - test: lists-styles-quirks.html
+          subtest: <ul type="NONE"> - counter-reset
+        - test: lists-styles-quirks.html
+          subtest: <ol type="disc"> - counter-reset
+        - test: lists-styles-quirks.html
+          subtest: <ul type="disc"> - counter-reset
+        - test: lists-styles-quirks.html
+          subtest: <ol type="DISC"> - counter-reset
+        - test: lists-styles-quirks.html
+          subtest: <ul type="DISC"> - counter-reset
+        - test: lists-styles-quirks.html
+          subtest: <ol type="circle"> - counter-reset
+        - test: lists-styles-quirks.html
+          subtest: <ul type="circle"> - counter-reset
+        - test: lists-styles-quirks.html
+          subtest: <ol type="CIRCLE"> - counter-reset
+        - test: lists-styles-quirks.html
+          subtest: <ul type="CIRCLE"> - counter-reset
+        - test: lists-styles-quirks.html
+          subtest: <ol type="square"> - counter-reset
+        - test: lists-styles-quirks.html
+          subtest: <ul type="square"> - counter-reset
+        - test: lists-styles-quirks.html
+          subtest: <ol type="SQUARE"> - counter-reset
+        - test: lists-styles-quirks.html
+          subtest: <ul type="SQUARE"> - counter-reset
+        - test: lists-styles-quirks.html
+          subtest: |-
+            <ol>
+                <li value="10"> - counter-reset
+        - test: lists-styles-quirks.html
+          subtest: <li value="10"> (in <ol>) - counter-set
+        - test: lists-styles-quirks.html
+          subtest: <li value="10xyz"> (in <ol>) - counter-set
+        - test: lists-styles-quirks.html
+          subtest: <li value="10e10"> (in <ol>) - counter-set
+        - test: lists-styles-quirks.html
+          subtest: <ol start="10"><li> - counter-reset
+        - test: lists-styles-quirks.html
+          subtest: <ol start="10xyz"><li> - counter-reset
+        - test: lists-styles-quirks.html
+          subtest: <ol start="10e10"><li> - counter-reset
+        - test: lists-styles-quirks.html
+          subtest: <ol start="xyz"><li> - counter-reset
+        - test: lists-styles-quirks.html
+          subtest: <ol reversed=""><li> - counter-reset
+        - test: lists-styles-quirks.html
+          subtest: <ol reversed="" start="20"><li> - counter-reset
+        - test: lists-styles-quirks.html
+          subtest: <ol reversed="" start="20xyz"><li> - counter-reset
+        - test: lists-styles-quirks.html
+          subtest: <ol reversed="" start="20e10"><li> - counter-reset
+        - test: lists-styles-quirks.html
+          subtest: <ol reversed="" start="xyz"><li> - counter-reset
