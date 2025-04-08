@@ -1,64 +1,69 @@
 links:
-    - product: chrome
-      url: https://crbug.com/366559
-      results:
-        - test: animateMotion-base.html
-        - test: animateMotion-circle.html
-        - test: animateMotion-ellipse.html
-        - test: animateMotion-line.html
-        - test: animateMotion-rect.html
-    - product: chrome
-      url: https://bugs.chromium.org/p/chromium/issues/detail?id=1148684
-      results:
-        - test: svglength-animation-invalid-value-1.html
-        - test: svglength-animation-invalid-value-2.html
-        - test: svglength-animation-invalid-value-3.html
-    - product: safari
-      url: https://bugs.webkit.org/show_bug.cgi?id=226336
-      results:
-        - test: keysplines-y-limits.html
-    - product: safari
-      url: https://bugs.webkit.org/show_bug.cgi?id=256956
-      results:
-        - test: animate-stop-currentcolor.html
-          subtest: Animating 'stop-color' from 'currentcolor'
-    - product: safari
-      url: https://bugs.webkit.org/show_bug.cgi?id=257907
-      results:
-        - test: animateMotion-from-to-rotate-auto.html
-    - product: safari
-      url: https://bugs.webkit.org/show_bug.cgi?id=264537
-      results:
-        - test: svglength-animation-invalid-value-2.html
-        - test: svglength-animation-invalid-value-3.html
-        - test: svglength-animation-invalid-value-1.html
-    - product: safari
-      url: https://bugs.webkit.org/show_bug.cgi?id=264540
-      results:
-        - test: syncbase-remove-add-while-running.html
-          subtest: Remove/Add syncbase while animation is running
-    - product: safari
-      url: https://bugs.webkit.org/show_bug.cgi?id=264541
-      results:
-        - test: seeking-events-8.html
-        - test: seeking-events-1.html
-        - test: seeking-events-2.html
-        - test: seeking-events-3.html
-        - test: seeking-events-4.html
-        - test: seeking-events-5.html
-        - test: seeking-events-6.html
-        - test: seeking-events-7.html
-    - product: safari
-      url: https://bugs.webkit.org/show_bug.cgi?id=266954
-      results:
-        - test: eventbase-non-svg-element.html
-          subtest: Non-SVGElements are allowed as event-bases
-    - product: safari
-      url: https://bugs.webkit.org/show_bug.cgi?id=98718
-      results:
-        - test: reinserting-svg-into-document.html
-          subtest: Reinserting SVG animation into document should continue the animation
-    - product: safari
-      url: https://bugs.webkit.org/show_bug.cgi?id=272602
-      results:
-        - test: animateMotion-keyPoints-001.html
+- product: chrome
+  results:
+  - test: animateMotion-base.html
+  - test: animateMotion-circle.html
+  - test: animateMotion-ellipse.html
+  - test: animateMotion-line.html
+  - test: animateMotion-rect.html
+  url: https://crbug.com/366559
+- product: chrome
+  results:
+  - test: svglength-animation-invalid-value-1.html
+  - test: svglength-animation-invalid-value-2.html
+  - test: svglength-animation-invalid-value-3.html
+  url: https://bugs.chromium.org/p/chromium/issues/detail?id=1148684
+- product: safari
+  results:
+  - test: keysplines-y-limits.html
+  url: https://bugs.webkit.org/show_bug.cgi?id=226336
+- product: safari
+  results:
+  - subtest: Animating 'stop-color' from 'currentcolor'
+    test: animate-stop-currentcolor.html
+  url: https://bugs.webkit.org/show_bug.cgi?id=256956
+- product: safari
+  results:
+  - test: animateMotion-from-to-rotate-auto.html
+  url: https://bugs.webkit.org/show_bug.cgi?id=257907
+- product: safari
+  results:
+  - test: svglength-animation-invalid-value-2.html
+  - test: svglength-animation-invalid-value-3.html
+  - test: svglength-animation-invalid-value-1.html
+  url: https://bugs.webkit.org/show_bug.cgi?id=264537
+- product: safari
+  results:
+  - subtest: Remove/Add syncbase while animation is running
+    test: syncbase-remove-add-while-running.html
+  url: https://bugs.webkit.org/show_bug.cgi?id=264540
+- product: safari
+  results:
+  - test: seeking-events-8.html
+  - test: seeking-events-1.html
+  - test: seeking-events-2.html
+  - test: seeking-events-3.html
+  - test: seeking-events-4.html
+  - test: seeking-events-5.html
+  - test: seeking-events-6.html
+  - test: seeking-events-7.html
+  url: https://bugs.webkit.org/show_bug.cgi?id=264541
+- product: safari
+  results:
+  - subtest: Non-SVGElements are allowed as event-bases
+    test: eventbase-non-svg-element.html
+  url: https://bugs.webkit.org/show_bug.cgi?id=266954
+- product: safari
+  results:
+  - subtest: Reinserting SVG animation into document should continue the animation
+    test: reinserting-svg-into-document.html
+  url: https://bugs.webkit.org/show_bug.cgi?id=98718
+- product: safari
+  results:
+  - test: animateMotion-keyPoints-001.html
+  url: https://bugs.webkit.org/show_bug.cgi?id=272602
+- product: firefox
+  results:
+  - subtest: SVGDiscardElement
+    test: historical.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1959097
