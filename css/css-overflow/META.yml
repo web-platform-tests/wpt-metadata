@@ -448,3 +448,21 @@ links:
   results:
   - test: scroll-marker-contain-005.tentative.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1958844
+- product: firefox
+  results:
+  - subtest: ::scroll-marker is activated when its originating element is scrolled
+      into the view
+    test: scroll-marker-15.html
+  - subtest: active ::scroll-marker saves focus on scroll if previous ::scroll-marker
+      had it
+    test: scroll-markers-focus-on-scrolling.html
+  - subtest: scroll-marker of target (idx 1) of scrollIntoView is selected
+    test: targeted-scroll-marker-selection.tentative.html
+  - subtest: scroll-marker of target (idx 14) of scrollIntoView is selected
+    test: targeted-scroll-marker-selection.tentative.html
+  - subtest: scroll-marker of parent of target of scrollIntoView is selected
+    test: targeted-scroll-marker-selection.tentative.html
+  - subtest: scroll-marker of earlier sibling of target of scrollIntoView is selected
+    test: targeted-scroll-marker-selection.tentative.html
+  - test: scroll-marker-group-snap-aligns-to-active.tentative.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1959247
