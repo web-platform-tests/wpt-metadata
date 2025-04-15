@@ -314,3 +314,9 @@ links:
   - subtest: '"()U+123" is invalid'
     test: urange-parsing.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1918822
+- product: firefox
+  results:
+  - subtest: Comments are handled correctly when computing var(--t1)b using t1:'a
+      " '/* comment */.
+    test: serialize-consecutive-tokens.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1960046
