@@ -9,3 +9,10 @@ links:
   - subtest: test_subscribe_to_one_context
     test: context_destroyed.py
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1945627
+- product: firefox
+  results:
+  - subtest: test_client_window[tab]
+    test: context_destroyed.py
+  - subtest: test_client_window[window]
+    test: context_destroyed.py
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1960832
