@@ -429,3 +429,12 @@ links:
       to add [auto] at (1.5) should be [300px]'
     test: interpolate-size-width-composition.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1925361
+- product: firefox
+  results:
+  - subtest: value at progress 0.75 in animation of "width" from "calc-size(80px,
+      size)" to "calc-size(calc-size(10px, (2 * size)), size + 20px)"
+    test: calc-size-interpolation-expansion.html
+  - subtest: value at progress 0.75 in animation of "width" from "calc-size(80px,
+      size)" to "calc-size(calc-size(any, 20px), size + 20px)"
+    test: calc-size-interpolation-expansion.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1962072

@@ -244,3 +244,40 @@ links:
   - subtest: e.style['width'] = "calc-size(0px, 0px)" should set the property value
     test: calc-size-parsing.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1913522
+- product: firefox
+  results:
+  - subtest: 'computedStyleMap serialization of width: calc-size(auto, size)'
+    test: calc-size-typed-om.html
+  - subtest: 'computedStyleMap serialization of width: calc-size(fit-content, size)'
+    test: calc-size-typed-om.html
+  - subtest: 'computedStyleMap serialization of width: calc-size(any, 30px)'
+    test: calc-size-typed-om.html
+  - subtest: 'computedStyleMap serialization of width: calc-size(any, 25em)'
+    test: calc-size-typed-om.html
+  - subtest: 'computedStyleMap serialization of width: calc-size(any, 40%)'
+    test: calc-size-typed-om.html
+  - subtest: 'computedStyleMap serialization of width: calc-size(any, 50px + 30%)'
+    test: calc-size-typed-om.html
+  - subtest: 'computedStyleMap serialization of width: calc-size(any, min(30px, 2em))'
+    test: calc-size-typed-om.html
+  - subtest: 'computedStyleMap serialization of width: calc-size(10px, sign(size)
+      * size)'
+    test: calc-size-typed-om.html
+  - subtest: 'computedStyleMap serialization of width: calc-size(30px, 25em)'
+    test: calc-size-typed-om.html
+  - subtest: 'computedStyleMap serialization of width: calc-size(calc-size(any, 30px),
+      size)'
+    test: calc-size-typed-om.html
+  - subtest: 'computedStyleMap serialization of width: calc-size(calc-size(any, 30px),
+      25em)'
+    test: calc-size-typed-om.html
+  - subtest: 'computedStyleMap serialization of width: calc-size(calc-size(2in, 30px),
+      25em)'
+    test: calc-size-typed-om.html
+  - subtest: 'computedStyleMap serialization of width: calc-size(calc-size(min-content,
+      30px), 25em)'
+    test: calc-size-typed-om.html
+  - subtest: 'computedStyleMap serialization of width: calc-size(calc-size(min-content,
+      size), size)'
+    test: calc-size-typed-om.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1962072
