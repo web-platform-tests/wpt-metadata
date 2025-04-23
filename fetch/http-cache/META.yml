@@ -229,3 +229,18 @@ links:
   - subtest: HTTP cache avoids going to the network if it has a fresh 599 response
     test: status.any.sharedworker.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1962012
+- product: firefox
+  results:
+  - subtest: 'When key-order is set , URLs should be compared in an order-insensitive
+      way. Matched cases:'
+    test: no-vary-search.tentative.any.serviceworker.html
+  - subtest: 'When key-order is set , URLs should be compared in an order-insensitive
+      way. Matched cases:'
+    test: no-vary-search.tentative.any.html
+  - subtest: 'When key-order is set , URLs should be compared in an order-insensitive
+      way. Matched cases:'
+    test: no-vary-search.tentative.any.worker.html
+  - subtest: 'When key-order is set , URLs should be compared in an order-insensitive
+      way. Matched cases:'
+    test: no-vary-search.tentative.any.sharedworker.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1962016
