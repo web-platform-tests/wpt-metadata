@@ -1,16 +1,231 @@
 links:
-    - product: webkitgtk
-      url: https://bugs.webkit.org/show_bug.cgi?id=193322
-      results:
-        - test: cc-request.any.html
-          status: FAIL
-    - product: chrome
-      url: https://crbug.com/74981
-      results:
-        - test: cc-request.any.html
-          status: FAIL
-    - product: chrome
-      url: https://crbug.com/1021668
-      results:
-        - test: invalidate.any.html
-          status: FAIL
+- product: webkitgtk
+  results:
+  - status: FAIL
+    test: cc-request.any.html
+  url: https://bugs.webkit.org/show_bug.cgi?id=193322
+- product: chrome
+  results:
+  - status: FAIL
+    test: cc-request.any.html
+  url: https://crbug.com/74981
+- product: chrome
+  results:
+  - status: FAIL
+    test: invalidate.any.html
+  url: https://crbug.com/1021668
+- product: firefox
+  results:
+  - subtest: HTTP cache reuses a 404 Not Found response with Last-Modified based upon
+      heuristic freshness
+    test: heuristic.any.worker.html
+  - subtest: HTTP cache reuses a 405 Method Not Allowed response with Last-Modified
+      based upon heuristic freshness
+    test: heuristic.any.worker.html
+  - subtest: HTTP cache reuses a 414 URI Too Long response with Last-Modified based
+      upon heuristic freshness
+    test: heuristic.any.worker.html
+  - subtest: HTTP cache reuses a 501 Not Implemented response with Last-Modified based
+      upon heuristic freshness
+    test: heuristic.any.worker.html
+  - subtest: HTTP cache reuses a 404 Not Found response with Last-Modified based upon
+      heuristic freshness
+    test: heuristic.any.sharedworker.html
+  - subtest: HTTP cache reuses a 405 Method Not Allowed response with Last-Modified
+      based upon heuristic freshness
+    test: heuristic.any.sharedworker.html
+  - subtest: HTTP cache reuses a 414 URI Too Long response with Last-Modified based
+      upon heuristic freshness
+    test: heuristic.any.sharedworker.html
+  - subtest: HTTP cache reuses a 501 Not Implemented response with Last-Modified based
+      upon heuristic freshness
+    test: heuristic.any.sharedworker.html
+  - subtest: HTTP cache reuses a 404 Not Found response with Last-Modified based upon
+      heuristic freshness
+    test: heuristic.any.html
+  - subtest: HTTP cache reuses a 405 Method Not Allowed response with Last-Modified
+      based upon heuristic freshness
+    test: heuristic.any.html
+  - subtest: HTTP cache reuses a 414 URI Too Long response with Last-Modified based
+      upon heuristic freshness
+    test: heuristic.any.html
+  - subtest: HTTP cache reuses a 501 Not Implemented response with Last-Modified based
+      upon heuristic freshness
+    test: heuristic.any.html
+  - subtest: HTTP cache reuses a 404 Not Found response with Last-Modified based upon
+      heuristic freshness
+    test: heuristic.any.serviceworker.html
+  - subtest: HTTP cache reuses a 405 Method Not Allowed response with Last-Modified
+      based upon heuristic freshness
+    test: heuristic.any.serviceworker.html
+  - subtest: HTTP cache reuses a 414 URI Too Long response with Last-Modified based
+      upon heuristic freshness
+    test: heuristic.any.serviceworker.html
+  - subtest: HTTP cache reuses a 501 Not Implemented response with Last-Modified based
+      upon heuristic freshness
+    test: heuristic.any.serviceworker.html
+  - subtest: HTTP cache does not invalidate after a failed response from an unsafe
+      request
+    test: invalidate.any.html
+  - subtest: HTTP cache does not invalidate Location URL after a failed response from
+      an unsafe request
+    test: invalidate.any.html
+  - subtest: HTTP cache does not invalidate Content-Location URL after a failed response
+      from an unsafe request
+    test: invalidate.any.html
+  - subtest: HTTP cache does not invalidate after a failed response from an unsafe
+      request
+    test: invalidate.any.worker.html
+  - subtest: HTTP cache does not invalidate Location URL after a failed response from
+      an unsafe request
+    test: invalidate.any.worker.html
+  - subtest: HTTP cache does not invalidate Content-Location URL after a failed response
+      from an unsafe request
+    test: invalidate.any.worker.html
+  - subtest: HTTP cache does not invalidate after a failed response from an unsafe
+      request
+    test: invalidate.any.sharedworker.html
+  - subtest: HTTP cache does not invalidate Location URL after a failed response from
+      an unsafe request
+    test: invalidate.any.sharedworker.html
+  - subtest: HTTP cache does not invalidate Content-Location URL after a failed response
+      from an unsafe request
+    test: invalidate.any.sharedworker.html
+  - subtest: HTTP cache does not invalidate after a failed response from an unsafe
+      request
+    test: invalidate.any.serviceworker.html
+  - subtest: HTTP cache does not invalidate Location URL after a failed response from
+      an unsafe request
+    test: invalidate.any.serviceworker.html
+  - subtest: HTTP cache does not invalidate Content-Location URL after a failed response
+      from an unsafe request
+    test: invalidate.any.serviceworker.html
+  - subtest: When params is set to true, URL differs only by their parameters (other
+      than `dispatch` and `uuid`) should not be cached as different entries.
+    test: no-vary-search.tentative.any.sharedworker.html
+  - subtest: When params is set to true, URL differs only by their parameters (other
+      than `dispatch` and `uuid`) should not be cached as different entries.
+    test: no-vary-search.tentative.any.html
+  - subtest: When params is set to true, URL differs only by their parameters (other
+      than `dispatch` and `uuid`) should not be cached as different entries.
+    test: no-vary-search.tentative.any.serviceworker.html
+  - subtest: When params is set to true, URL differs only by their parameters (other
+      than `dispatch` and `uuid`) should not be cached as different entries.
+    test: no-vary-search.tentative.any.worker.html
+  - subtest: HTTP cache stores partial content and reuses it
+    test: partial.any.serviceworker.html
+  - subtest: HTTP cache stores complete response and serves smaller ranges from it
+      (byte-range-spec)
+    test: partial.any.serviceworker.html
+  - subtest: HTTP cache stores complete response and serves smaller ranges from it
+      (absent last-byte-pos)
+    test: partial.any.serviceworker.html
+  - subtest: HTTP cache stores complete response and serves smaller ranges from it
+      (suffix-byte-range-spec)
+    test: partial.any.serviceworker.html
+  - subtest: HTTP cache stores partial content and reuses it
+    test: partial.any.sharedworker.html
+  - subtest: HTTP cache stores complete response and serves smaller ranges from it
+      (byte-range-spec)
+    test: partial.any.sharedworker.html
+  - subtest: HTTP cache stores complete response and serves smaller ranges from it
+      (absent last-byte-pos)
+    test: partial.any.sharedworker.html
+  - subtest: HTTP cache stores complete response and serves smaller ranges from it
+      (suffix-byte-range-spec)
+    test: partial.any.sharedworker.html
+  - subtest: HTTP cache stores partial content and reuses it
+    test: partial.any.html
+  - subtest: HTTP cache stores complete response and serves smaller ranges from it
+      (byte-range-spec)
+    test: partial.any.html
+  - subtest: HTTP cache stores complete response and serves smaller ranges from it
+      (absent last-byte-pos)
+    test: partial.any.html
+  - subtest: HTTP cache stores complete response and serves smaller ranges from it
+      (suffix-byte-range-spec)
+    test: partial.any.html
+  - subtest: HTTP cache stores partial content and reuses it
+    test: partial.any.worker.html
+  - subtest: HTTP cache stores complete response and serves smaller ranges from it
+      (byte-range-spec)
+    test: partial.any.worker.html
+  - subtest: HTTP cache stores complete response and serves smaller ranges from it
+      (absent last-byte-pos)
+    test: partial.any.worker.html
+  - subtest: HTTP cache stores complete response and serves smaller ranges from it
+      (suffix-byte-range-spec)
+    test: partial.any.worker.html
+  - subtest: HTTP cache avoids going to the network if it has a fresh 299 response
+    test: status.any.html
+  - subtest: HTTP cache avoids going to the network if it has a fresh 400 response
+    test: status.any.html
+  - subtest: HTTP cache avoids going to the network if it has a fresh 404 response
+    test: status.any.html
+  - subtest: HTTP cache avoids going to the network if it has a fresh 499 response
+    test: status.any.html
+  - subtest: HTTP cache avoids going to the network if it has a fresh 500 response
+    test: status.any.html
+  - subtest: HTTP cache avoids going to the network if it has a fresh 502 response
+    test: status.any.html
+  - subtest: HTTP cache avoids going to the network if it has a fresh 503 response
+    test: status.any.html
+  - subtest: HTTP cache avoids going to the network if it has a fresh 504 response
+    test: status.any.html
+  - subtest: HTTP cache avoids going to the network if it has a fresh 599 response
+    test: status.any.html
+  - subtest: HTTP cache avoids going to the network if it has a fresh 299 response
+    test: status.any.serviceworker.html
+  - subtest: HTTP cache avoids going to the network if it has a fresh 400 response
+    test: status.any.serviceworker.html
+  - subtest: HTTP cache avoids going to the network if it has a fresh 404 response
+    test: status.any.serviceworker.html
+  - subtest: HTTP cache avoids going to the network if it has a fresh 499 response
+    test: status.any.serviceworker.html
+  - subtest: HTTP cache avoids going to the network if it has a fresh 500 response
+    test: status.any.serviceworker.html
+  - subtest: HTTP cache avoids going to the network if it has a fresh 502 response
+    test: status.any.serviceworker.html
+  - subtest: HTTP cache avoids going to the network if it has a fresh 503 response
+    test: status.any.serviceworker.html
+  - subtest: HTTP cache avoids going to the network if it has a fresh 504 response
+    test: status.any.serviceworker.html
+  - subtest: HTTP cache avoids going to the network if it has a fresh 599 response
+    test: status.any.serviceworker.html
+  - subtest: HTTP cache avoids going to the network if it has a fresh 299 response
+    test: status.any.worker.html
+  - subtest: HTTP cache avoids going to the network if it has a fresh 400 response
+    test: status.any.worker.html
+  - subtest: HTTP cache avoids going to the network if it has a fresh 404 response
+    test: status.any.worker.html
+  - subtest: HTTP cache avoids going to the network if it has a fresh 499 response
+    test: status.any.worker.html
+  - subtest: HTTP cache avoids going to the network if it has a fresh 500 response
+    test: status.any.worker.html
+  - subtest: HTTP cache avoids going to the network if it has a fresh 502 response
+    test: status.any.worker.html
+  - subtest: HTTP cache avoids going to the network if it has a fresh 503 response
+    test: status.any.worker.html
+  - subtest: HTTP cache avoids going to the network if it has a fresh 504 response
+    test: status.any.worker.html
+  - subtest: HTTP cache avoids going to the network if it has a fresh 599 response
+    test: status.any.worker.html
+  - subtest: HTTP cache avoids going to the network if it has a fresh 299 response
+    test: status.any.sharedworker.html
+  - subtest: HTTP cache avoids going to the network if it has a fresh 400 response
+    test: status.any.sharedworker.html
+  - subtest: HTTP cache avoids going to the network if it has a fresh 404 response
+    test: status.any.sharedworker.html
+  - subtest: HTTP cache avoids going to the network if it has a fresh 499 response
+    test: status.any.sharedworker.html
+  - subtest: HTTP cache avoids going to the network if it has a fresh 500 response
+    test: status.any.sharedworker.html
+  - subtest: HTTP cache avoids going to the network if it has a fresh 502 response
+    test: status.any.sharedworker.html
+  - subtest: HTTP cache avoids going to the network if it has a fresh 503 response
+    test: status.any.sharedworker.html
+  - subtest: HTTP cache avoids going to the network if it has a fresh 504 response
+    test: status.any.sharedworker.html
+  - subtest: HTTP cache avoids going to the network if it has a fresh 599 response
+    test: status.any.sharedworker.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1962012
