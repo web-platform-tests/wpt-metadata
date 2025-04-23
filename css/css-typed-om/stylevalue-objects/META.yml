@@ -1,0 +1,19 @@
+links:
+- product: firefox
+  results:
+  - subtest: CSSStyleValue.parseAll() with empty property name throws TypeError
+    test: parseAll-invalid.html
+  - subtest: CSSStyleValue.parseAll() with unsupported property name throws TypeError
+    test: parseAll-invalid.html
+  - subtest: CSSStyleValue.parseAll() with invalid value for valid property throws
+      TypeError
+    test: parseAll-invalid.html
+  - subtest: CSSStyleValue.parseAll() with invalid value for shorthand property throws
+      TypeError
+    test: parseAll-invalid.html
+  - subtest: CSSStyleValue.parseAll() with invalid value for custom property throws
+      TypeError
+    test: parseAll-invalid.html
+  - subtest: CSSStyleValue.parseAll() with invalid value for property throws TypeError
+    test: parseAll-invalid.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1962067
