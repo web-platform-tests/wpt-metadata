@@ -1825,8 +1825,8 @@ links:
       results:
         - test: popover-change-type.html
           subtest: Changing the popover attribute should always update the auto/manual behavior.
-        - test: popover-focus-2.html
-          subtest: Popover focus returns when popover is hidden by invoker
+        - test: popover-focus-3.html
+          subtest: Popover focus returns when popover is hidden by invoker with commandfor invocation
         - test: popover-focus.html
           subtest: 'Popover corner cases test: Opening dialogs as popovers which have autofocus should focus the dialog.'
         - test: popover-invoker-reset.html
@@ -1841,12 +1841,16 @@ links:
     - product: firefox
       url: https://bugzilla.mozilla.org/show_bug.cgi?id=1840611
       results:
-        - test: popover-focus-2.html
-          subtest: Popover focus navigation
-        - test: popover-focus-2.html
-          subtest: Circular reference tab navigation
-        - test: popover-focus-2.html
-          subtest: Popover focus only returns to invoker when focus is within the popover
+        - test: popover-focus-2.html?test1
+          subtest: Popover focus navigation with popovertarget invocation
+        - test: popover-focus-2.html?test2
+          subtest: Popover focus navigation with command/commandfor invocation
+        - test: popover-focus-2.html?test3
+          subtest: Popover focus navigation with imperative invocation
+        - test: popover-focus-3.html
+          subtest: Circular reference tab navigation with command/commandfor invocation
+        - test: popover-focus-3.html
+          subtest: Popover focus only returns to invoker when focus is within the popover with command/commandfor invocation3
     - product: firefox
       url: https://bugzilla.mozilla.org/show_bug.cgi?id=1841882
       results:
@@ -1926,7 +1930,9 @@ links:
         - test: popover-attribute-all-elements.html
         - test: popover-dialog-appearance.html
         - test: popover-events.html
-        - test: popover-focus-2.html
+        - test: popover-focus-2.html?test1
+        - test: popover-focus-2.html?test2
+        - test: popover-focus-2.html?test3
         - test: popover-open-display.html
         - test: popover-top-layer-interactions.html
         - test: popover-removal-2.html
@@ -1963,11 +1969,6 @@ links:
         - test: popover-top-layer-nesting.html
           subtest: Top layer inside of nested element with fullscreen
     - product: chrome
-      url: https://crbug.com/325981758
-      results:
-        - test: popover-focus-2.html
-          subtest: Popover focus navigation
-    - product: chrome
       url: https://crbug.com/40935781
       results:
         - test: popover-light-dismiss.html
@@ -1978,10 +1979,6 @@ links:
         - test: popover-light-dismiss.html
           subtest: Pointer down inside invoker and up outside that invoker shouldn't dismiss popover
         - test: popover-light-dismiss.html
-    - product: chrome
-      url: https://crbug.com/40287045
-      results:
-        - test: popover-focus-2.html
     - product: firefox
       url: https://bugzilla.mozilla.org/show_bug.cgi?id=1867743
       results:
