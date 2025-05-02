@@ -22,3 +22,14 @@ links:
   - subtest: sibling-count() should not be allowed in @font-face descriptors
     test: sibling-function-descriptors.tentative.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1954166
+- product: firefox
+  results:
+  - subtest: Initially 6th sibling
+    test: sibling-function-invalidation.html
+  - subtest: 5th sibling after removal
+    test: sibling-function-invalidation.html
+  - subtest: Initially 6 siblings
+    test: sibling-function-invalidation.html
+  - subtest: 5 siblings after removal
+    test: sibling-function-invalidation.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1964190
