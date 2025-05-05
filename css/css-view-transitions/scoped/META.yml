@@ -11,3 +11,12 @@ links:
   - subtest: Scoped view transition with name auto on the scoped element
     test: auto-name.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1964195
+- product: firefox
+  results:
+  - subtest: Synchronously starting a view transition on document.documentElement
+      skips the previously active document view transition.
+    test: document-element-start-view-transition.html
+  - subtest: Synchronously starting a view transition on document skips the previously
+      active view transition on document.documentElement.
+    test: document-element-start-view-transition.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1964194
