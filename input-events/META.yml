@@ -89,3 +89,9 @@ links:
   - subtest: Input event data for inputType insertFromPaste should be set
     test: textarea-insertfrompaste-type-inputevent-data.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1946392
+- product: firefox
+  results:
+  - subtest: Number input should not crash and not fire subsequent events when event
+      handler removes document
+    test: input-events-spin-button-click-on-number-input-delete-document.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1964595

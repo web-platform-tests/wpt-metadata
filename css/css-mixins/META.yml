@@ -10,44 +10,6 @@ links:
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1948709
 - product: firefox
   results:
-  - subtest: Local with self-cycle
-    test: dashed-function-cycles.tentative.html
-  - subtest: Cycle reference without fallback makes result invalid
-    test: dashed-function-cycles.tentative.html
-  - subtest: Local with self-cycle in fallback
-    test: dashed-function-cycles.tentative.html
-  - subtest: Local shadowing cyclic property --x
-    test: dashed-function-cycles.tentative.html
-  - subtest: 'Local shadowing cyclic outer local --x '
-    test: dashed-function-cycles.tentative.html
-  - subtest: Arguments shadowing cyclic properties
-    test: dashed-function-cycles.tentative.html
-  - subtest: Observing property cycle locally
-    test: dashed-function-cycles.tentative.html
-  - subtest: Using cyclic values with no fallback
-    test: dashed-function-cycles.tentative.html
-  - subtest: Self-cycle in non-used local variable
-    test: dashed-function-cycles.tentative.html
-  - subtest: Using cyclic value in unused fallback
-    test: dashed-function-cycles.tentative.html
-  - subtest: Using cyclic value in unused fallback (local)
-    test: dashed-function-cycles.tentative.html
-  - subtest: Dashed-function, self-cycle
-    test: dashed-function-cycles.tentative.html
-  - subtest: Cycle through other function (--g)
-    test: dashed-function-cycles.tentative.html
-  - subtest: Cycle through other function (--f)
-    test: dashed-function-cycles.tentative.html
-  - subtest: Cycle through local, self
-    test: dashed-function-cycles.tentative.html
-  - subtest: Cycle through unused local
-    test: dashed-function-cycles.tentative.html
-  - subtest: Cycle through global, self
-    test: dashed-function-cycles.tentative.html
-  - subtest: Cycle through local, other function
-    test: dashed-function-cycles.tentative.html
-  - subtest: Cycle through various variables and other functions
-    test: dashed-function-cycles.tentative.html
   - subtest: Literal result
     test: dashed-function-eval.html
   - subtest: Literal result, typed return
@@ -188,17 +150,50 @@ links:
     test: local-var-substitution.html
   - subtest: Fallback is locally resolved (local var)
     test: local-var-substitution.html
+  - subtest: Local with self-cycle
+    test: dashed-function-cycles.html
+  - subtest: Cycle reference without fallback makes result invalid
+    test: dashed-function-cycles.html
+  - subtest: Local with self-cycle in fallback
+    test: dashed-function-cycles.html
+  - subtest: Local shadowing cyclic property --x
+    test: dashed-function-cycles.html
+  - subtest: 'Local shadowing cyclic outer local --x '
+    test: dashed-function-cycles.html
+  - subtest: Arguments shadowing cyclic properties
+    test: dashed-function-cycles.html
+  - subtest: Observing property cycle locally
+    test: dashed-function-cycles.html
+  - subtest: Using cyclic values with no fallback
+    test: dashed-function-cycles.html
+  - subtest: Self-cycle in non-used local variable
+    test: dashed-function-cycles.html
+  - subtest: Using cyclic value in unused fallback
+    test: dashed-function-cycles.html
+  - subtest: Using cyclic value in unused fallback (local)
+    test: dashed-function-cycles.html
+  - subtest: Dashed-function, self-cycle
+    test: dashed-function-cycles.html
+  - subtest: Cycle through other function (--g)
+    test: dashed-function-cycles.html
+  - subtest: Cycle through other function (--f)
+    test: dashed-function-cycles.html
+  - subtest: Cycle through local, self
+    test: dashed-function-cycles.html
+  - subtest: Cycle through unused local
+    test: dashed-function-cycles.html
+  - subtest: Cycle through global, self
+    test: dashed-function-cycles.html
+  - subtest: Cycle through local, other function
+    test: dashed-function-cycles.html
+  - subtest: Cycle through various variables and other functions
+    test: dashed-function-cycles.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1948787
 - product: firefox
   results:
   - subtest: Inner function call should see resolved outer locals (reverse)
     test: dashed-function-eval.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1950109
-- product: firefox
-  results:
-  - subtest: Function in a cycle with its own default
-    test: dashed-function-cycles.tentative.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1950126
 - product: firefox
   results:
   - subtest: Can query named container in shadow
@@ -252,14 +247,6 @@ links:
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1950450
 - product: firefox
   results:
-  - subtest: Local shadowing cyclic outer local --x
-    test: dashed-function-cycles.tentative.html
-  - subtest: Argument shadowing cyclic outer local --x
-    test: dashed-function-cycles.tentative.html
-  - subtest: Cycle through local, other function, fallback in function
-    test: dashed-function-cycles.tentative.html
-  - subtest: Cyclic defaults
-    test: dashed-function-cycles.tentative.html
   - subtest: '@function works inside shadow'
     test: function-shadow.html
   - subtest: '@function works inside nested shadow'
@@ -278,6 +265,14 @@ links:
     test: function-shadow.html
   - subtest: Outer functions can't see inner functions (local vars)
     test: function-shadow.html
+  - subtest: Local shadowing cyclic outer local --x
+    test: dashed-function-cycles.html
+  - subtest: Argument shadowing cyclic outer local --x
+    test: dashed-function-cycles.html
+  - subtest: Cycle through local, other function, fallback in function
+    test: dashed-function-cycles.html
+  - subtest: Cyclic defaults
+    test: dashed-function-cycles.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1951908
 - product: firefox
   results:
@@ -314,3 +309,15 @@ links:
       value'
     test: dashed-function-named-arg.tentative.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1952948
+- product: firefox
+  results:
+  - subtest: Function in a cycle with its own default
+    test: dashed-function-cycles.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1950126
+- product: firefox
+  results:
+  - subtest: Cyclic outer --b shadows custom property
+    test: dashed-function-cycles.html
+  - subtest: Locals are function specific
+    test: dashed-function-cycles.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1964707
