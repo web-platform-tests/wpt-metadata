@@ -1,0 +1,10 @@
+links:
+- product: firefox
+  results:
+  - subtest: In top-level contexts, partitioned cookies default to the same SameSite
+      attribute as unpartitioned cookies.
+    test: partitioned-cookies-samesite-attribute.https.html
+  - subtest: In top-level contexts, partitioned cookies can be set with all SameSite
+      attributes.
+    test: partitioned-cookies-samesite-attribute.https.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1964208
