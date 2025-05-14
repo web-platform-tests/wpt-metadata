@@ -43,3 +43,37 @@ links:
   - subtest: 'Initially, the sibling-index() is 3 for #target'
     test: sibling-index-keyframe-font-weight-dynamic.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1966124
+- product: firefox
+  results:
+  - subtest: Initially, the sibling-index() is 3 for --time
+    test: sibling-index-keyframe-registered-properties-dynamic.html
+  - subtest: Initially, the sibling-index() is 3 for --angle
+    test: sibling-index-keyframe-registered-properties-dynamic.html
+  - subtest: Initially, the sibling-index() is 3 for --resolution
+    test: sibling-index-keyframe-registered-properties-dynamic.html
+  - subtest: Initially, the sibling-index() is 3 for --percentage
+    test: sibling-index-keyframe-registered-properties-dynamic.html
+  - subtest: Initially, the sibling-index() is 3 for --number
+    test: sibling-index-keyframe-registered-properties-dynamic.html
+  - subtest: Initially, the sibling-index() is 3 for --integer
+    test: sibling-index-keyframe-registered-properties-dynamic.html
+  - subtest: Initially, the sibling-index() is 3 for --length
+    test: sibling-index-keyframe-registered-properties-dynamic.html
+  - subtest: Initially, the sibling-index() is 3 for --length-percentage
+    test: sibling-index-keyframe-registered-properties-dynamic.html
+  - subtest: 'Removing a preceding sibling of #target reduces the sibling-index()
+      for --angle'
+    test: sibling-index-keyframe-registered-properties-dynamic.html
+  - subtest: 'Removing a preceding sibling of #target reduces the sibling-index()
+      for --number'
+    test: sibling-index-keyframe-registered-properties-dynamic.html
+  - subtest: 'Removing a preceding sibling of #target reduces the sibling-index()
+      for --integer'
+    test: sibling-index-keyframe-registered-properties-dynamic.html
+  - subtest: 'Removing a preceding sibling of #target reduces the sibling-index()
+      for --length'
+    test: sibling-index-keyframe-registered-properties-dynamic.html
+  - subtest: 'Removing a preceding sibling of #target reduces the sibling-index()
+      for --length-percentage'
+    test: sibling-index-keyframe-registered-properties-dynamic.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1966274
