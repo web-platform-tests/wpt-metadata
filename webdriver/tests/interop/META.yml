@@ -1,6 +1,19 @@
 links:
-    - url: ""
-      label: chromium-bidi-2023
-      results:
-        - test: shared_id_window.py
-        - test: shared_id_node.py
+- label: chromium-bidi-2023
+  results:
+  - test: shared_id_window.py
+  - test: shared_id_node.py
+  url: ''
+- product: firefox
+  results:
+  - subtest: test_accept
+    test: beforeunload_prompt.py
+  - subtest: test_accept_and_notify
+    test: beforeunload_prompt.py
+  - subtest: test_dismiss
+    test: beforeunload_prompt.py
+  - subtest: test_dismiss_and_notify
+    test: beforeunload_prompt.py
+  - subtest: test_ignore
+    test: beforeunload_prompt.py
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1966638
