@@ -5231,3 +5231,18 @@ links:
   results:
   - test: position-area-visibility-change.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1966524
+- product: firefox
+  results:
+  - subtest: Property left value 'anchor(--a1 left)'
+    test: anchor-ident-function.html
+  - subtest: Property left value 'anchor(--a2 left)'
+    test: anchor-ident-function.html
+  - subtest: Property left value 'anchor(--a3 left)'
+    test: anchor-ident-function.html
+  - subtest: Property left value 'calc(anchor(--a1 left)*4)'
+    test: anchor-ident-function.html
+  - subtest: Property width value 'calc(anchor-size(--a1)*2)'
+    test: anchor-ident-function.html
+  - subtest: Property width value 'anchor-size(--a1)'
+    test: anchor-ident-function.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1967755
