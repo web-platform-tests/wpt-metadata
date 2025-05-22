@@ -2101,3 +2101,9 @@ links:
   - subtest: 'Initially, the font-size is 8px for #target, so the result is 0.75'
     test: sign-in-keyframes-with-relative-units.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1967970
+- product: firefox
+  results:
+  - subtest: 'Changing the font-size of #target changes the start point, so the result
+      should be 1.75'
+    test: sign-in-keyframes-with-relative-units.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1967999
