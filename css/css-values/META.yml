@@ -2107,3 +2107,45 @@ links:
       should be 1.75'
     test: sign-in-keyframes-with-relative-units.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1967999
+- product: firefox
+  results:
+  - subtest: '''--x: image-set(attr(data-foo))'' with data-foo="https://does-not-exist.test/404.png"'
+    test: attr-security.html
+  - subtest: '''--x: src(attr(data-foo))'' with data-foo="https://does-not-exist.test/404.png"'
+    test: attr-security.html
+  - subtest: '''--x: src(string("https://does-not-exist.test" attr(data-foo)))'' with
+      data-foo="/404.png"'
+    test: attr-security.html
+  - subtest: '''--x: image(attr(data-foo))'' with data-foo="https://does-not-exist.test/404.png"'
+    test: attr-security.html
+  - subtest: '''background-image: url(https://does-not-exist.test/404.png), attr(data-foo
+      type(<image>))'' with data-foo="linear-gradient(#000000, #ffffff)"'
+    test: attr-security.html
+  - subtest: '''--x: image-set(var(--y, attr(data-foo)))'' with data-foo="https://does-not-exist.test/404.png"'
+    test: attr-security.html
+  - subtest: '''--x: image-set(var(--some-string))'' with data-foo="https://does-not-exist.test/404.png"'
+    test: attr-security.html
+  - subtest: '''background-image: image-set(var(--some-string))'' with data-foo="https://does-not-exist.test/404.png"'
+    test: attr-security.html
+  - subtest: '''--x: image-set(var(--some-string-list))'' with data-foo="https://does-not-exist.test/404.png"'
+    test: attr-security.html
+  - subtest: '''background-image: image-set(var(--some-string-list))'' with data-foo="https://does-not-exist.test/404.png"'
+    test: attr-security.html
+  - subtest: '''--registered-color: attr(data-foo type(<color>))'' with data-foo="blue"'
+    test: attr-security.html
+  - subtest: '''--x: image-set(var(--some-other-url))'' with data-foo="https://does-not-exist.test/404.png"'
+    test: attr-security.html
+  - subtest: '''--x: image-set(if(style(--true): attr(data-foo);))'' with data-foo="https://does-not-exist.test/404.png"'
+    test: attr-security.html
+  - subtest: "'background-image: image-set(\n                if(style(--true): url(https://does-not-exist-2.test/404.png);\n\
+      \                   else: attr(data-foo);))' with data-foo=\"https://does-not-exist-2.test/404.png\""
+    test: attr-security.html
+  - subtest: "'background-image: image-set(if(style(--true): url(https://does-not-exist.test/404.png);\n\
+      \                            style(--condition-val): url(https://does-not-exist.test/404.png);\n\
+      \                            else: url(https://does-not-exist.test/404.png);))'\
+      \ with data-foo=\"attr(data-foo type(*))\""
+    test: attr-security.html
+  - subtest: '''--x: image-set(if(style(--condition-val: if(style(--true): attr(data-foo
+      type(*));)): url(https://does-not-exist.test/404.png);))'' with data-foo="3"'
+    test: attr-security.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1968363
