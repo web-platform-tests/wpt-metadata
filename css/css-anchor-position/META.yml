@@ -5246,3 +5246,10 @@ links:
   - subtest: Property width value 'anchor-size(--a1)'
     test: anchor-ident-function.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1967755
+- product: firefox
+  results:
+  - subtest: Can anchor to a name both defined and scoped by the same element
+    test: anchor-scope-basic.html
+  - subtest: Sibling can not anchor into anchor-scope, even when anchor-name present
+    test: anchor-scope-basic.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1969350
