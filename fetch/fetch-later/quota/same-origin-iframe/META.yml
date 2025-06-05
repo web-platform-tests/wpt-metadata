@@ -64,3 +64,11 @@ links:
       in same-origin iframe.
     test: small-payload.tentative.https.window.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1943451
+- product: firefox
+  results:
+  - subtest: The 2nd fetchLater(same-origin) call in a same-origin child iframe is
+      not allowed to exceed per-origin quota for its POST body of String.
+    test: accumulated-oversized-payload.tentative.https.window.html
+  - test: max-payload.tentative.https.window.html
+  - test: oversized-payload.tentative.https.window.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1970587

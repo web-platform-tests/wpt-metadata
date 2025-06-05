@@ -173,9 +173,9 @@ links:
         - test: parsing.html
         - test: serialize-group-rules-with-decls.html
         - test: supports-rule.html
-        - test: contextually-invalid-selectors.html
         - test: nested-declarations-matching.html
         - test: nested-declarations-cssom.html
+        - test: contextually-invalid-selectors-002.html
     - product: chrome
       url: https://issues.chromium.org/40266948
       results:
@@ -247,10 +247,6 @@ links:
         - test: nesting-basic.html
         - test: nested-declarations-cssom.html
         - test: nested-declarations-matching.html
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1919279
-      results:
-        - test: contextually-invalid-selectors.html
     - product: chrome
       url: https://issues.chromium.org/issues/363189653
       results:
@@ -263,3 +259,7 @@ links:
       results:
         - test: cssom.html
           subtest: CSSStyleRule is a CSSGroupingRule
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1919279
+      results:
+        - test: contextually-invalid-selectors-002.html
