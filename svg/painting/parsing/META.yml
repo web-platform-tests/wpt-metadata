@@ -58,3 +58,12 @@ links:
           subtest: Property stroke-dasharray value 'calc(10px + 0.5em)'
         - test: stroke-dasharray-computed.svg
           subtest: Property stroke-dasharray value 'calc(10px - 0.5em)'
+    - product: safari
+      url: https://bugs.webkit.org/show_bug.cgi?id=294206
+      results:
+        - test: marker-computed.svg
+          subtest: Property marker value 'none'
+        - test: marker-computed.svg
+          subtest: Property marker value 'url("https://example.com/")'
+        - test: marker-computed.svg
+          subtest: url values are made absolute
