@@ -3,3 +3,12 @@ links:
       url: https://bugzilla.mozilla.org/show_bug.cgi?id=1887089
       results:
         - test: paint-order-001.html
+    - product: safari
+      url: https://bugs.webkit.org/show_bug.cgi?id=294199
+      results:
+        - test: webkit-text-stroke-computed.html
+          subtest: Property -webkit-text-stroke value 'green'
+        - test: webkit-text-stroke-computed.html
+          subtest: Property -webkit-text-stroke value '3px'
+        - test: webkit-text-stroke-computed.html
+          subtest: Property -webkit-text-stroke value '1px red'
