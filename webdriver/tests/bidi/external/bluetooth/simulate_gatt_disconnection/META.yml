@@ -1,28 +1,33 @@
 links:
-- product: firefox
-  results:
-  - subtest: test_context_invalid_type[None]
-    test: invalid.py
-  - subtest: test_context_invalid_type[False]
-    test: invalid.py
-  - subtest: test_context_invalid_type[42]
-    test: invalid.py
-  - subtest: test_context_invalid_type[context3]
-    test: invalid.py
-  - subtest: test_context_invalid_type[context4]
-    test: invalid.py
-  - subtest: test_context_unknown_value
-    test: invalid.py
-  - subtest: test_address_invalid_type[None]
-    test: invalid.py
-  - subtest: test_address_invalid_type[False]
-    test: invalid.py
-  - subtest: test_address_invalid_type[42]
-    test: invalid.py
-  - subtest: test_address_invalid_type[address3]
-    test: invalid.py
-  - subtest: test_address_invalid_type[address4]
-    test: invalid.py
-  - subtest: test_simulate_gatt_disconnection
-    test: simulate_gatt_disconnection.py
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1971983
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1971983
+      results:
+        - test: invalid.py
+          subtest: test_context_invalid_type[None]
+        - test: invalid.py
+          subtest: test_context_invalid_type[False]
+        - test: invalid.py
+          subtest: test_context_invalid_type[42]
+        - test: invalid.py
+          subtest: test_context_invalid_type[context3]
+        - test: invalid.py
+          subtest: test_context_invalid_type[context4]
+        - test: invalid.py
+          subtest: test_context_unknown_value
+        - test: invalid.py
+          subtest: test_address_invalid_type[None]
+        - test: invalid.py
+          subtest: test_address_invalid_type[False]
+        - test: invalid.py
+          subtest: test_address_invalid_type[42]
+        - test: invalid.py
+          subtest: test_address_invalid_type[address3]
+        - test: invalid.py
+          subtest: test_address_invalid_type[address4]
+        - test: simulate_gatt_disconnection.py
+          subtest: test_simulate_gatt_disconnection
+        - test: '*'
+    - product: firefox_android
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1971983
+      results:
+        - test: '*'
