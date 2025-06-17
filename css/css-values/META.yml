@@ -2267,3 +2267,16 @@ links:
   - subtest: 'CSS Values and Units Test: CSS inline if() function 191'
     test: if-conditionals.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1972542
+- product: firefox
+  results:
+  - subtest: 'testing width: calc(5px * 10lh / 1px)'
+    test: getComputedStyle-calc-mixed-units-003.html
+  - subtest: 'testing width: calc(20% * 0.5em / 1px)'
+    test: getComputedStyle-calc-mixed-units-003.html
+  - subtest: 'testing width: calc(4px * 4em / 1px)'
+    test: getComputedStyle-calc-mixed-units-003.html
+  - subtest: 'testing width: calc(400px / 4lh * 1px)'
+    test: getComputedStyle-calc-mixed-units-003.html
+  - subtest: 'testing width: calc(20% / 0.5em * 1px)'
+    test: getComputedStyle-calc-mixed-units-003.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1972645
