@@ -35,3 +35,9 @@ links:
   - subtest: View transition duration affected by playback rate
     test: negative-playback-rate.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1972654
+- product: firefox
+  results:
+  - subtest: View transition animations do not persist once the transition is finished
+      even if animation-fill-mode is forwards
+    test: fill-forwards.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1972656
