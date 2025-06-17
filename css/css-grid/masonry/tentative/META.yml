@@ -4,3 +4,11 @@ links:
   - subtest: Property grid-template-columns value 'repeat(auto-fit, [one] 20%)'
     test: masonry-grid-template-columns-computed-withcontent.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1891875
+- product: firefox
+  results:
+  - subtest: Property grid-template-columns value 'repeat(2, minmax(10px, auto))'
+    test: masonry-grid-template-columns-computed-withcontent.html
+  - subtest: Property grid-template-columns value 'repeat(2, fit-content(20%) [three
+      four] 30px 40px [five six])'
+    test: masonry-grid-template-columns-computed-withcontent.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1972618
