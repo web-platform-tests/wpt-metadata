@@ -1,0 +1,43 @@
+links:
+- product: firefox
+  results:
+  - subtest: Clear-Site-Data with "cache" directive must unregister dictionary
+    test: dictionary-clear-site-data-cache.tentative.https.html
+  - subtest: Clear-Site-Data with "cookies" directive must unregister dictionary
+    test: dictionary-clear-site-data-cookies.tentative.https.html
+  - subtest: Clear-Site-Data with "storage" directive must not unregister dictionary
+    test: dictionary-clear-site-data-storage.tentative.https.html
+  - subtest: A dcb dictionary-compressed dictionary can be used as a dictionary for
+      future requests.
+    test: dictionary-compressed.tentative.https.html
+  - subtest: A dcz dictionary-compressed dictionary can be used as a dictionary for
+      future requests.
+    test: dictionary-compressed.tentative.https.html
+  - subtest: Decompresion using Brotli with the dictionary works as expected
+    test: dictionary-decompression.tentative.https.html
+  - subtest: Decompresion using Zstandard with the dictionary works as expected
+    test: dictionary-decompression.tentative.https.html
+  - subtest: Decompresion of a cross origin resource works as expected
+    test: dictionary-decompression.tentative.https.html
+  - subtest: Fetch cross-origin no-cors request does not include Available-Dictionary
+      header
+    test: dictionary-fetch-no-cors.tentative.https.html
+  - subtest: Browser supports link element with compression-dictionary rel.
+    test: dictionary-fetch-with-link-element.tentative.https.html
+  - subtest: Fetch same origin dictionary using link element
+    test: dictionary-fetch-with-link-element.tentative.https.html
+  - subtest: Fetch cross origin dictionary using link element
+    test: dictionary-fetch-with-link-element.tentative.https.html
+  - subtest: Fetch same origin dictionary using link header
+    test: dictionary-fetch-with-link-header.tentative.https.html
+  - subtest: Simple dictionary registration and unregistration
+    test: dictionary-registration.tentative.https.html
+  - subtest: Dictionary registration with dictionary ID
+    test: dictionary-registration.tentative.https.html
+  - subtest: New dictionary registration overrides the existing one
+    test: dictionary-registration.tentative.https.html
+  - subtest: Dictionary registration does not invalidate cache entry
+    test: dictionary-registration.tentative.https.html
+  - subtest: Expired dictionary is not used
+    test: dictionary-registration.tentative.https.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1972692
