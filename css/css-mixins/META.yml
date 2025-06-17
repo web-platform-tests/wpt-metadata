@@ -321,3 +321,102 @@ links:
   - subtest: Locals are function specific
     test: dashed-function-cycles.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1964707
+- product: firefox
+  results:
+  - subtest: '@function --foo() is valid'
+    test: at-function-parsing.html
+  - subtest: '@function --foo( ) is valid'
+    test: at-function-parsing.html
+  - subtest: '@function --foo(--x) is valid'
+    test: at-function-parsing.html
+  - subtest: '@function --foo( --x ) is valid'
+    test: at-function-parsing.html
+  - subtest: '@function --foo(--x auto) is valid'
+    test: at-function-parsing.html
+  - subtest: '@function --foo(--x <angle>) is valid'
+    test: at-function-parsing.html
+  - subtest: '@function --foo(--x <color>) is valid'
+    test: at-function-parsing.html
+  - subtest: '@function --foo(--x <custom-ident>) is valid'
+    test: at-function-parsing.html
+  - subtest: '@function --foo(--x <image>) is valid'
+    test: at-function-parsing.html
+  - subtest: '@function --foo(--x <integer>) is valid'
+    test: at-function-parsing.html
+  - subtest: '@function --foo(--x <length>) is valid'
+    test: at-function-parsing.html
+  - subtest: '@function --foo(--x <length-percentage>) is valid'
+    test: at-function-parsing.html
+  - subtest: '@function --foo(--x <number>) is valid'
+    test: at-function-parsing.html
+  - subtest: '@function --foo(--x <percentage>) is valid'
+    test: at-function-parsing.html
+  - subtest: '@function --foo(--x <resolution>) is valid'
+    test: at-function-parsing.html
+  - subtest: '@function --foo(--x <string>) is valid'
+    test: at-function-parsing.html
+  - subtest: '@function --foo(--x <time>) is valid'
+    test: at-function-parsing.html
+  - subtest: '@function --foo(--x <url>) is valid'
+    test: at-function-parsing.html
+  - subtest: '@function --foo(--x <transform-function>) is valid'
+    test: at-function-parsing.html
+  - subtest: '@function --foo(--x <transform-list>) is valid'
+    test: at-function-parsing.html
+  - subtest: '@function --foo(--x type(auto)) is valid'
+    test: at-function-parsing.html
+  - subtest: '@function --foo(--x type(<length>)) is valid'
+    test: at-function-parsing.html
+  - subtest: '@function --foo(--x type(<length> | auto)) is valid'
+    test: at-function-parsing.html
+  - subtest: '@function --foo(--x type(none | auto)) is valid'
+    test: at-function-parsing.html
+  - subtest: '@function --foo(--x type(*)) is valid'
+    test: at-function-parsing.html
+  - subtest: '@function --foo(--x, --y) is valid'
+    test: at-function-parsing.html
+  - subtest: '@function --foo(--x, --y, --z) is valid'
+    test: at-function-parsing.html
+  - subtest: '@function --foo(--x <length>, --y, --z) is valid'
+    test: at-function-parsing.html
+  - subtest: '@function --foo(--x, --y <number>, --z <angle>) is valid'
+    test: at-function-parsing.html
+  - subtest: '@function --foo(--x : 10px) is valid'
+    test: at-function-parsing.html
+  - subtest: '@function --foo(--x type(*): 10px) is valid'
+    test: at-function-parsing.html
+  - subtest: '@function --foo(--x <length>: 10px) is valid'
+    test: at-function-parsing.html
+  - subtest: '@function --foo(--x <length>: 10px, --y) is valid'
+    test: at-function-parsing.html
+  - subtest: '@function --foo(--x, --y <length>: 10px) is valid'
+    test: at-function-parsing.html
+  - subtest: '@function --foo(--x type(<length> | auto): auto) is valid'
+    test: at-function-parsing.html
+  - subtest: '@function --foo(--x type(<length> | auto) : auto) is valid'
+    test: at-function-parsing.html
+  - subtest: '@function --foo(--x:1px, --y, --z:2px) is valid'
+    test: at-function-parsing.html
+  - subtest: '@function --foo(--x <length>#) is valid'
+    test: at-function-parsing.html
+  - subtest: '@function --foo(--x <length>+) is valid'
+    test: at-function-parsing.html
+  - subtest: '@function --foo(--x type(<length>+)) is valid'
+    test: at-function-parsing.html
+  - subtest: '@function --foo(--x <transform-function>#) is valid'
+    test: at-function-parsing.html
+  - subtest: '@function --foo(--x <transform-function>+) is valid'
+    test: at-function-parsing.html
+  - subtest: '@function --foo(--x) returns type(*) is valid'
+    test: at-function-parsing.html
+  - subtest: '@function --foo(--x) returns <length> is valid'
+    test: at-function-parsing.html
+  - subtest: '@function --foo(--x) returns <length>+ is valid'
+    test: at-function-parsing.html
+  - subtest: '@function --foo(--x) returns type(<length>) is valid'
+    test: at-function-parsing.html
+  - subtest: '@function --foo(--x) returns type(<length> | auto) is valid'
+    test: at-function-parsing.html
+  - subtest: '@function --foo(--x) returns type(foo | bar) is valid'
+    test: at-function-parsing.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1972615
