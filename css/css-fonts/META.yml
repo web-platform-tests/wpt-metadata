@@ -521,3 +521,11 @@ links:
   - subtest: Property font-variation-settings value '"wght" sign(1em - 1px)'
     test: font-variation-settings-calc.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1955677
+- product: firefox
+  results:
+  - subtest: '@font-face matching for quoted and unquoted math'
+    test: generic-family-keywords-001.html
+  - subtest: '@font-face matching for quoted and unquoted math (drawing text in a
+      canvas)'
+    test: generic-family-keywords-003.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1972519
