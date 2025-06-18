@@ -1897,8 +1897,7 @@ links:
           subtest: Transitioning display property of an anchored popover should not cause a position shift
         - test: popover-anchor-nested-display.tentative.html
         - test: popover-anchor-scroll-display.tentative.html
-    - url: ""
-      label: interop-2024-popover
+    - label: interop-2024-popover
       results:
         - test: popover-and-svg.html
         - test: popover-attribute-basic.html
@@ -1990,3 +1989,7 @@ links:
       results:
         - test: popover-light-dismiss-hint.html
         - test: popover-invoking-attribute-hint.html
+    - product: safari
+      url: https://bugs.webkit.org/show_bug.cgi?id=294672
+      results:
+        - test: popover-focus-4.html
