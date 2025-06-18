@@ -162,3 +162,28 @@ links:
   - subtest: 'Font-style (computed): ''oblique'' followed by zero degrees is valid'
     test: font-style-parsing.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1945412
+- product: firefox
+  results:
+  - subtest: 'font-weight(valid): ''auto'' keyword inside @font-face: auto'
+    test: at-font-face-descriptors.html
+  - subtest: 'font-weight(valid): Out-of-range simple calc value: calc(1001)'
+    test: at-font-face-descriptors.html
+  - subtest: 'font-weight(valid): Valid calc expression with out-of-range value: calc(100.5*3
+      + 800)'
+    test: at-font-face-descriptors.html
+  - subtest: 'font-stretch(valid): ''auto'' keyword inside @font-face: auto'
+    test: at-font-face-descriptors.html
+  - subtest: 'font-stretch(valid): Simple calc value: calc(200.5%)'
+    test: at-font-face-descriptors.html
+  - subtest: 'font-stretch(valid): Valid calc expression: calc(50%*2 - 20%)'
+    test: at-font-face-descriptors.html
+  - subtest: 'font-stretch(valid): Lower bound calc(): calc(10% + 10%) 30%'
+    test: at-font-face-descriptors.html
+  - subtest: 'font-stretch(valid): Upper bound calc(): 10% calc(10% + 10%)'
+    test: at-font-face-descriptors.html
+  - subtest: 'font-stretch(valid): Both bounds are calc(): calc(10% + 10%) calc(20%
+      + 20%)'
+    test: at-font-face-descriptors.html
+  - subtest: 'font-style(valid): ''auto'' keyword inside @font-face: auto'
+    test: at-font-face-descriptors.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1972908
