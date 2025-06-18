@@ -5272,3 +5272,19 @@ links:
   - subtest: Transition to an unflipped state
     test: position-try-transition-flip.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1972549
+- product: firefox
+  results:
+  - subtest: Tests when a new anchor candidate is added (which loses out previous
+      anchor) positioned-using-anchor-function-explicit-name
+    test: anchor-name-mutation.html
+  - subtest: Tests when an anchor-name is removed later positioned-using-anchor-function-implicit-name
+    test: anchor-name-mutation.html
+  - subtest: Tests when a new anchor candidate is added (which loses out previous
+      anchor) positioned-using-anchor-function-implicit-name
+    test: anchor-name-mutation.html
+  - subtest: Tests when an anchor-name is removed later positioned-using-position-area
+    test: anchor-name-mutation.html
+  - subtest: Tests when a new anchor candidate is added (which loses out previous
+      anchor) positioned-using-position-area
+    test: anchor-name-mutation.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1972877
