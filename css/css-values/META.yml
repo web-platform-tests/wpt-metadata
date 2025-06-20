@@ -2392,3 +2392,65 @@ links:
       value should serialize as ''1px''.'
     test: progress-serialize.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1973498
+- product: firefox
+  results:
+  - subtest: min(1em, 110px / 10px * 1px) should be used-value-equivalent to 10px
+    test: typed_arithmetic.html
+  - subtest: max(10px, 110px / 10px * 1px) should be used-value-equivalent to 11px
+    test: typed_arithmetic.html
+  - subtest: max(1em + 2px, 110px / 10px * 1px) should be used-value-equivalent to
+      12px
+    test: typed_arithmetic.html
+  - subtest: max(1em + 2%, 110px / 10px * 1px) should be used-value-equivalent to
+      12px
+    test: typed_arithmetic.html
+  - subtest: clamp(110px / 10px * 1px, 1em + 200%, 200% * 1% / 1em) should be used-value-equivalent
+      to 20px
+    test: typed_arithmetic.html
+  - subtest: calc(3 + sign(10px / 1rem - sign(1em + 1px))) should be used-value-equivalent
+      to 3
+    test: typed_arithmetic.html
+  - subtest: calc(10em / 1em) should be used-value-equivalent to 10
+    test: typed_arithmetic.html
+  - subtest: calc(10em / 1rem) should be used-value-equivalent to 10
+    test: typed_arithmetic.html
+  - subtest: calc(10em / 1px) should be used-value-equivalent to 100
+    test: typed_arithmetic.html
+  - subtest: calc(1px / 10em * NaN) should be used-value-equivalent to 0
+    test: typed_arithmetic.html
+  - subtest: Property width value 'calc(1px * 10em / 0em)'
+    test: typed_arithmetic.html
+  - subtest: Property width value 'calc(1px / 1px * 10em * infinity)'
+    test: typed_arithmetic.html
+  - subtest: Property margin-left value 'calc(1px * 10em / -0em)'
+    test: typed_arithmetic.html
+  - subtest: Property z-index value 'calc(10em / 0em)'
+    test: typed_arithmetic.html
+  - subtest: sign(-0em / 1px) should be used-value-equivalent to 0
+    test: typed_arithmetic.html
+  - subtest: clamp(-1, 1 / sign(-0em / 1px), 1) should be used-value-equivalent to
+      -1
+    test: typed_arithmetic.html
+  - subtest: sign( 0cqi / 1px) should be used-value-equivalent to 0
+    test: typed_arithmetic.html
+  - subtest: clamp(-1, 1 / sign( 0cqi / 1px), 1) should be used-value-equivalent to
+      1
+    test: typed_arithmetic.html
+  - subtest: sign(atan2(-0cap / 1px, 0em / 1px)) should be used-value-equivalent to
+      0
+    test: typed_arithmetic.html
+  - subtest: clamp(-1, 1 / sign(atan2(-0cap / 1px, 0em / 1px)), 1) should be used-value-equivalent
+      to -1
+    test: typed_arithmetic.html
+  - subtest: sign(exp(-1vh / 0px)) should be used-value-equivalent to 0
+    test: typed_arithmetic.html
+  - subtest: clamp(-1, 1 / sign(exp(-1vh / 0px)), 1) should be used-value-equivalent
+      to 1
+    test: typed_arithmetic.html
+  - subtest: calc(20cqw / 1rem) should be used-value-equivalent to 2
+    test: typed_arithmetic.html
+  - subtest: Property animation-duration value 'calc(2s / (10s - 10s) * 1s)'
+    test: typed_arithmetic.html
+  - subtest: 'subtraction of angle unit: deg minus turn'
+    test: typed_arithmetic.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1973257
