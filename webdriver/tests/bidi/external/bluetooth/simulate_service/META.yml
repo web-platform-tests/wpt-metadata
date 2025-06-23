@@ -1,0 +1,56 @@
+links:
+- product: firefox
+  results:
+  - subtest: test_context_invalid_type[None]
+    test: invalid.py
+  - subtest: test_context_invalid_type[False]
+    test: invalid.py
+  - subtest: test_context_invalid_type[42]
+    test: invalid.py
+  - subtest: test_context_invalid_type[context3]
+    test: invalid.py
+  - subtest: test_context_invalid_type[context4]
+    test: invalid.py
+  - subtest: test_context_unknown_value
+    test: invalid.py
+  - subtest: test_address_invalid_type[None]
+    test: invalid.py
+  - subtest: test_address_invalid_type[False]
+    test: invalid.py
+  - subtest: test_address_invalid_type[42]
+    test: invalid.py
+  - subtest: test_address_invalid_type[address3]
+    test: invalid.py
+  - subtest: test_address_invalid_type[address4]
+    test: invalid.py
+  - subtest: test_address_unknown_value
+    test: invalid.py
+  - subtest: test_uuid_invalid_type[None]
+    test: invalid.py
+  - subtest: test_uuid_invalid_type[False]
+    test: invalid.py
+  - subtest: test_uuid_invalid_type[42]
+    test: invalid.py
+  - subtest: test_uuid_invalid_type[uuid3]
+    test: invalid.py
+  - subtest: test_uuid_invalid_type[uuid4]
+    test: invalid.py
+  - subtest: test_uuid_add_already_exist
+    test: invalid.py
+  - subtest: test_uuid_remove_nonexist
+    test: invalid.py
+  - subtest: test_type_invalid_type[None]
+    test: invalid.py
+  - subtest: test_type_invalid_type[False]
+    test: invalid.py
+  - subtest: test_type_invalid_type[42]
+    test: invalid.py
+  - subtest: test_type_invalid_type[type3]
+    test: invalid.py
+  - subtest: test_type_invalid_type[type4]
+    test: invalid.py
+  - subtest: test_type_unknown_value
+    test: invalid.py
+  - subtest: test_simulate_service
+    test: simulate_service.py
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1973585
