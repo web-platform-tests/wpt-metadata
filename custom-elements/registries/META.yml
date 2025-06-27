@@ -31,6 +31,7 @@ links:
         - test: Document-importNode.html
         - test: ShadowRoot-innerHTML.html
         - test: template.window.html
+        - test: valid-custom-element-names.html
     - product: safari
       url: https://bugs.webkit.org/show_bug.cgi?id=182671
       results:
@@ -43,3 +44,57 @@ links:
       url: https://crbug.com/717715
       results:
         - test: per-global.html
+    - product: chrome
+      url: https://issues.chromium.org/issues/399124619
+      results:
+        - test: pseudo-class-defined.window.html
+        - test: ShadowRoot-innerHTML.html
+        - test: Construct.html
+        - test: constructor-reentry-with-different-definition.html
+        - test: CustomElementRegistry-define.html
+        - test: CustomElementRegistry-multi-register.html
+        - test: Document-createElementNS.html
+        - test: Element-customElementRegistry-exceptions.html
+        - test: scoped-registry-define-upgrade-order.html
+        - test: Document-importNode.html
+        - test: Element-customElementRegistry.html
+        - test: Element-innerHTML.html
+        - test: initial-about-blank.window.html
+        - test: scoped-registry-registry-define-get-etc.html
+        - test: CustomElementRegistry-initialize.html
+        - test: CustomElementRegistry-upgrade.html
+        - test: Document-createElement.html
+        - test: Document-customElementRegistry.html
+        - test: per-global.html
+        - test: scoped-registry-define-upgrade-criteria.html
+        - test: ShadowRoot-init-customElementRegistry.html
+        - test: template.window.html
+    - product: edge
+      url: https://issues.chromium.org/issues/399124619
+      results:
+        - test: pseudo-class-defined.window.html
+        - test: ShadowRoot-innerHTML.html
+        - test: Construct.html
+        - test: constructor-reentry-with-different-definition.html
+        - test: CustomElementRegistry-define.html
+        - test: CustomElementRegistry-multi-register.html
+        - test: Document-createElementNS.html
+        - test: Element-customElementRegistry-exceptions.html
+        - test: scoped-registry-define-upgrade-order.html
+        - test: Document-importNode.html
+        - test: Element-customElementRegistry.html
+        - test: Element-innerHTML.html
+        - test: initial-about-blank.window.html
+        - test: scoped-registry-registry-define-get-etc.html
+        - test: CustomElementRegistry-initialize.html
+        - test: CustomElementRegistry-upgrade.html
+        - test: Document-createElement.html
+        - test: Document-customElementRegistry.html
+        - test: per-global.html
+        - test: scoped-registry-define-upgrade-criteria.html
+        - test: ShadowRoot-init-customElementRegistry.html
+        - test: template.window.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1974274
+      results:
+        - test: valid-custom-element-names.html
