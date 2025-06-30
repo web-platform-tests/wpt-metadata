@@ -2,23 +2,11 @@ links:
     - product: firefox
       url: https://bugzilla.mozilla.org/show_bug.cgi?id=1655754
       results:
-        - test: scrollend-event-fired-for-scrollIntoView.html?include=subframe-inline-end-block-end-behavior-auto
-        - test: scrollend-event-fired-for-scrollIntoView.html?include=subframe-inline-start-block-start-behavior-smooth
-        - test: scrollend-event-fired-for-scrollIntoView.html?include=root-inline-end-block-end-behavior-auto
-        - test: scrollend-event-fired-for-scrollIntoView.html?include=root-inline-start-block-start-behavior-smooth
-        - test: scrollend-event-fired-for-scrollIntoView.html?include=nested-scrollIntoView
-        - test: scrollend-event-fired-to-element-with-overscroll-behavior.html
         - test: scrollend-event-fired-after-snap.html
-        - test: scrollend-event-fired-to-window.html
-        - test: scrollend-event-fired-to-document.html
         - test: overscroll-event-fired-to-window.tentative.html
         - test: overscroll-deltas.tentative.html
         - test: overscroll-event-fired-to-document.tentative.html
         - test: overscroll-event-fired-to-element-with-overscroll-behavior.tentative.html
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1718272
-      results:
-        - test: iframe-chains.html
     - product: chrome
       url: https://bugs.chromium.org/p/chromium/issues/detail?id=907601
       results:
@@ -36,10 +24,6 @@ links:
           subtest: Tests that scrollend is fired after scroll snap animation completion.
         - test: scrollend-event-fired-after-snap.html
           subtest: Tests that scrollend is fired after fling snap animation completion.
-        - test: scrollend-event-fired-to-document.html
-          subtest: Tests that the document gets scrollend event when no element scrolls by touch.
-        - test: scrollend-event-fired-to-window.html
-          subtest: Tests that the window gets scrollend event when no element scrolls after touch scrolling.
         - test: overscroll-event-fired-to-window.tentative.html
           subtest: Tests that the window gets overscroll event when no element scrollsafter touch scrolling.
         - test: overscroll-deltas.tentative.html
@@ -81,12 +65,6 @@ links:
     - product: firefox
       url: https://bugzilla.mozilla.org/show_bug.cgi?id=1884233
       results:
-        - test: scrollend-event-fired-to-window.html
-          subtest: testing, vertical
-        - test: scrollend-event-fired-to-document.html
-          subtest: testing, vertical
-        - test: scrollend-event-fired-to-document.html
-          subtest: testing, horizontal
         - test: scrollend-event-fires-on-visual-viewport.html
           subtest: scrollend fires when visual viewport is panned.
     - label: interop-2025-scrollend
