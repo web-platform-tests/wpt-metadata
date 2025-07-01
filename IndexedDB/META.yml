@@ -31,7 +31,6 @@ links:
         - test: historical.any.html
         - test: idb_binary_key_conversion.any.html
         - test: idb_webworkers.htm
-        - test: idb-binary-key-detached.htm
         - test: idb-binary-key-roundtrip.any.html
         - test: idb-explicit-commit-throw.any.html
         - test: idb-explicit-commit-throw.any.worker.html
@@ -194,6 +193,10 @@ links:
         - test: upgrade-transaction-lifecycle-user-aborted.any.html
         - test: value_recursive.any.html
         - test: writer-starvation.any.html
+        - test: idb-binary-key-detached.any.html
+        - test: idb-binary-key-detached.any.serviceworker.html
+        - test: idb-binary-key-detached.any.sharedworker.html
+        - test: idb-binary-key-detached.any.worker.html
     - product: firefox
       url: https://bugzilla.mozilla.org/show_bug.cgi?id=1814534
       results:
@@ -225,10 +228,6 @@ links:
         - test: idlharness.any.html
           subtest: 'IDBFactory interface: operation databases()'
         - test: idbfactory-origin-isolation.html
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1878134
-      results:
-        - test: idb-binary-key-detached.htm
     - product: firefox
       url: https://bugzilla.mozilla.org/show_bug.cgi?id=1799374
       results:
@@ -311,3 +310,10 @@ links:
           subtest: Ensure that databases() doesn't pick up changes that haven't commited.
         - test: get-databases.any.worker.html
           subtest: Ensure that databases() doesn't pick up changes that haven't commited.
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1878134
+      results:
+        - test: idb-binary-key-detached.any.html
+        - test: idb-binary-key-detached.any.serviceworker.html
+        - test: idb-binary-key-detached.any.sharedworker.html
+        - test: idb-binary-key-detached.any.worker.html

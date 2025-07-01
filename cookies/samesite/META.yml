@@ -1,0 +1,34 @@
+links:
+- product: firefox
+  results:
+  - subtest: Cross-site redirecting to same-host fetches are cross-site
+    test: fetch.https.html
+  - subtest: Cross-site redirecting to subdomain fetches are cross-site
+    test: fetch.https.html
+  - subtest: Reloaded cross-site top-level form GETs are strictly same-site
+    test: form-get-blank-reload.https.html
+  - subtest: Cross-site redirecting to same-host fetches are cross-site
+    test: iframe.https.html
+  - subtest: Cross-site redirecting to subdomain fetches are cross-site
+    test: iframe.https.html
+  - subtest: Cross-site navigating to same-host fetches are cross-site
+    test: iframe.https.html
+  - subtest: Cross-site navigating to subdomain fetches are cross-site-site
+    test: iframe.https.html
+  - subtest: Cross-site redirecting to same-host images are cross-site
+    test: img.https.html
+  - subtest: Cross-site redirecting to subdomain images are cross-site
+    test: img.https.html
+  - subtest: Cross-site redirecting to same-host images are cross-site
+    test: multiple-samesite-attributes.https.html
+  - subtest: Cross-site redirecting to subdomain images are cross-site
+    test: multiple-samesite-attributes.https.html
+  - subtest: SameSite=None cookies should be allowed in the iframe by the `allow-same-site-none-cookies`
+      value
+    test: sandbox-allow-same-site-none-cookies-value.tentative.https.html
+  - subtest: Cross-site to same-site iframe navigation should only be able to set
+      SameSite=None cookies.
+    test: setcookie-navigation.https.html
+  - subtest: Reloaded cross-site auxiliary navigations are strictly same-site
+    test: window-open-reload.https.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1974877
