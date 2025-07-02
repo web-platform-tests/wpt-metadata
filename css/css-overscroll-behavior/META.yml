@@ -1,33 +1,20 @@
 links:
-    - product: safari
-      url: https://bugs.webkit.org/show_bug.cgi?id=176454
+    - label: interop-2025-webcompat
       results:
-        - test: inheritance.html
-        - test: overscroll-behavior-logical.html
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1689546
-      results:
-        - test: overscroll-behavior.html
+        - test: overscroll-behavior-root.html
     - label: interop-2022-scrolling
       results:
         - test: inheritance.html
         - test: overscroll-behavior-logical.html
         - test: overscroll-behavior.html
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1918806
-      results:
-        - test: overscroll-behavior.html
-          subtest: overscroll-behavior prevents scroll-propagation in the area and direction as specified
-    - label: interop-2025-webcompat
-      results:
-        - test: overscroll-behavior-root.html
     - product: chrome
       url: https://issuetracker.google.com/399102343
       results:
         - test: overscroll-behavior-root.html
           subtest: overscroll-behavior in root works
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1951775
+    - product: safari
+      url: https://bugs.webkit.org/show_bug.cgi?id=176454
       results:
-        - test: overscroll-behavior-root.html
-          subtest: overscroll-behavior in root works
+        - test: inheritance.html
+        - test: overscroll-behavior-logical.html
+    
