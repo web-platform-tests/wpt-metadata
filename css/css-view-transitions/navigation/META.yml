@@ -96,3 +96,9 @@ links:
       is hidden
     test: pageswap-in-hidden-doc-should-skip-transition.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1941400
+- product: firefox
+  results:
+  - subtest: VT object created on the old Document is skipped before persisting in
+      BFCache
+    test: old_vt_promises_bfcache.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1976125
