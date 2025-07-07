@@ -179,8 +179,7 @@ links:
           subtest: ariaValueNow is defined in ElementInternals
         - test: ElementInternals-accessibility.html
           subtest: ariaValueText is defined in ElementInternals
-    - url: ""
-      label: interop-2023-webcomponents
+    - label: interop-2023-webcomponents
       results:
         - test: throw-on-dynamic-markup-insertion-counter-construct-xml-parser.xhtml
         - test: throw-on-dynamic-markup-insertion-counter-reactions-xml-parser.xhtml
@@ -224,3 +223,7 @@ links:
           subtest: document.createElement must report a NotSupportedError when the element is inserted into a the document of an iframe during construction
         - test: Document-createElement.html
           subtest: document.createElement must not report a NotSupportedError when the element is adopted back from a the document of an iframe during construction
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1874414
+      results:
+        - test: scoped-registry-initialize.html
