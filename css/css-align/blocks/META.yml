@@ -29,3 +29,15 @@ links:
   results:
   - test: align-content-block-012.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1939895
+- product: firefox
+  results:
+  - subtest: vertical-align:top and align-content:start are equivalent
+    test: align-content-table-cell.html
+  - subtest: vertical-align:bottom and `align-content:unsafe end` are equivalent
+    test: align-content-table-cell.html
+  - subtest: vertical-align:baseline and align-content:baseline are equivalent
+    test: align-content-table-cell.html
+  - subtest: vertical-align:bottom and `align-content:safe end` are equivalent if
+      the container is tall
+    test: align-content-table-cell.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1976355
