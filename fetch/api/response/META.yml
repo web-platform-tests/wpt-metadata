@@ -133,3 +133,14 @@ links:
   - subtest: 'Consume response''s body: from FormData to blob'
     test: response-consume.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1854702
+- product: firefox
+  results:
+  - subtest: Check response clone use structureClone for teed ReadableStreams (Float16Arraychunk)
+    test: response-clone.any.html
+  - subtest: Check response clone use structureClone for teed ReadableStreams (Float16Arraychunk)
+    test: response-clone.any.sharedworker.html
+  - subtest: Check response clone use structureClone for teed ReadableStreams (Float16Arraychunk)
+    test: response-clone.any.worker.html
+  - subtest: Check response clone use structureClone for teed ReadableStreams (Float16Arraychunk)
+    test: response-clone.any.serviceworker.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1978135
