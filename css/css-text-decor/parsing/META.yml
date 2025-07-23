@@ -1,50 +1,57 @@
 links:
-    - product: chrome
-      url: https://crbug.com/1067242
-      results:
-        - test: text-underline-position-computed.html
-          status: FAIL
-        - test: text-underline-position-valid.html
-          status: FAIL
-    - product: chrome
-      url: https://crbug.com/1002775
-      results:
-        - test: text-decoration-computed.html
-    - product: chrome
-      url: https://crbug.com/1093826
-      results:
-        - test: text-decoration-valid.html
-    - product: chrome
-      url: https://bugs.chromium.org/p/chromium/issues/detail?id=1211564
-      results:
-        - test: text-decoration-line-computed.html
-        - test: text-decoration-line-valid.html
-    - label: interop-2025-textdecoration
-      results:
-        - test: text-decoration-style-invalid.html
-        - test: text-decoration-style-valid.html
-        - test: text-decoration-line-valid.html
-        - test: text-decoration-skip-ink-invalid.html
-        - test: text-decoration-style-computed.html
-        - test: text-decoration-color-computed.html
-        - test: text-decoration-valid.html
-        - test: text-decoration-color-invalid.html
-        - test: text-decoration-computed.html
-        - test: text-decoration-skip-ink-computed.html
-        - test: text-decoration-line-invalid.html
-        - test: text-decoration-shorthand.html
-        - test: text-decoration-skip-ink-valid.html
-        - test: text-decoration-color-valid.html
-        - test: text-decoration-invalid.html
-        - test: text-decoration-line-computed.html
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1694053
-      results:
-        - test: text-decoration-line-valid.html
-          subtest: e.style['text-decoration-line'] = "spelling-error" should set the property value
-        - test: text-decoration-line-valid.html
-          subtest: e.style['text-decoration-line'] = "grammar-error" should set the property value
-        - test: text-decoration-line-computed.html
-          subtest: Property text-decoration-line value 'spelling-error'
-        - test: text-decoration-line-computed.html
-          subtest: Property text-decoration-line value 'grammar-error'
+- product: chrome
+  results:
+  - status: FAIL
+    test: text-underline-position-computed.html
+  - status: FAIL
+    test: text-underline-position-valid.html
+  url: https://crbug.com/1067242
+- product: chrome
+  results:
+  - test: text-decoration-computed.html
+  url: https://crbug.com/1002775
+- product: chrome
+  results:
+  - test: text-decoration-valid.html
+  url: https://crbug.com/1093826
+- product: chrome
+  results:
+  - test: text-decoration-line-computed.html
+  - test: text-decoration-line-valid.html
+  url: https://bugs.chromium.org/p/chromium/issues/detail?id=1211564
+- label: interop-2025-textdecoration
+  results:
+  - test: text-decoration-style-invalid.html
+  - test: text-decoration-style-valid.html
+  - test: text-decoration-line-valid.html
+  - test: text-decoration-skip-ink-invalid.html
+  - test: text-decoration-style-computed.html
+  - test: text-decoration-color-computed.html
+  - test: text-decoration-valid.html
+  - test: text-decoration-color-invalid.html
+  - test: text-decoration-computed.html
+  - test: text-decoration-skip-ink-computed.html
+  - test: text-decoration-line-invalid.html
+  - test: text-decoration-shorthand.html
+  - test: text-decoration-skip-ink-valid.html
+  - test: text-decoration-color-valid.html
+  - test: text-decoration-invalid.html
+  - test: text-decoration-line-computed.html
+- product: firefox
+  results:
+  - subtest: e.style['text-decoration-line'] = "spelling-error" should set the property
+      value
+    test: text-decoration-line-valid.html
+  - subtest: e.style['text-decoration-line'] = "grammar-error" should set the property
+      value
+    test: text-decoration-line-valid.html
+  - subtest: Property text-decoration-line value 'spelling-error'
+    test: text-decoration-line-computed.html
+  - subtest: Property text-decoration-line value 'grammar-error'
+    test: text-decoration-line-computed.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1694053
+- product: firefox
+  results:
+  - subtest: Property text-decoration value 'underline overline line-through blink'
+    test: text-decoration-computed.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1978721
