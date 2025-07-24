@@ -1023,3 +1023,20 @@ links:
   - subtest: Parsing calc(1px + 2% + 3em)
     test: parse-calc-expressions.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1911807
+- product: firefox
+  results:
+  - subtest: toGray should not exist on CSSColorValue
+    test: historical.html
+  - subtest: toLCH should not exist on CSSColorValue
+    test: historical.html
+  - subtest: toLab should not exist on CSSColorValue
+    test: historical.html
+  - subtest: toColor should not exist on CSSColorValue
+    test: historical.html
+  - subtest: toDeviceCMYK should not exist on CSSColorValue
+    test: historical.html
+  - subtest: to should not exist on CSSColorValue
+    test: historical.html
+  - subtest: colorSpace should not exist on CSSColorValue
+    test: historical.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1979152
