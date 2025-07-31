@@ -354,3 +354,9 @@ links:
   - subtest: Range.getClientRects should correct indexing into trailing surrogates
     test: range-client-rects-surrogate-indexing.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1977736
+- product: firefox
+  results:
+  - subtest: If the containing block for a fixed positioned element is viewport, the
+      offsetParent should be null.
+    test: offsetParent-fixed.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1980497
