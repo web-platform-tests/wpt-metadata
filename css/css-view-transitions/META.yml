@@ -721,3 +721,9 @@ links:
   results:
   - test: column-span-during-transition-doesnt-skip.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1978360
+- product: firefox
+  results:
+  - subtest: View transition cleanup is deferred until after the frame where `finished`
+      promise resolves
+    test: finished-promise-defers-cleanup.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1980513
