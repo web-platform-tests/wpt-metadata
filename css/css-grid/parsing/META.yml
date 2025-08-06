@@ -180,3 +180,30 @@ links:
   - subtest: Property grid-row-start value 'calc(10 + (sign(2cqw - 10px) * 5)) -a-'
     test: grid-area-computed.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1955093
+- product: firefox
+  results:
+  - subtest: e.style['grid-template-columns'] = "repeat(auto-fill, auto)" should set
+      the property value
+    test: grid-template-columns-repeat-intrinsic-valid.tentative.html
+  - subtest: e.style['grid-template-columns'] = "repeat(auto-fit, auto 100px auto)"
+      should set the property value
+    test: grid-template-columns-repeat-intrinsic-valid.tentative.html
+  - subtest: e.style['grid-template-columns'] = "repeat(auto-fill, minmax(30px, 5fr)
+      [two] auto)" should set the property value
+    test: grid-template-columns-repeat-intrinsic-valid.tentative.html
+  - subtest: e.style['grid-template-columns'] = "repeat(auto-fit, [three] auto [four])"
+      should set the property value
+    test: grid-template-columns-repeat-intrinsic-valid.tentative.html
+  - subtest: e.style['grid-template-rows'] = "repeat(auto-fill, auto)" should set
+      the property value
+    test: grid-template-rows-repeat-intrinsic-valid.tentative.html
+  - subtest: e.style['grid-template-rows'] = "repeat(auto-fit, auto 100px auto)" should
+      set the property value
+    test: grid-template-rows-repeat-intrinsic-valid.tentative.html
+  - subtest: e.style['grid-template-rows'] = "repeat(auto-fill, minmax(30px, 5fr)
+      [two] auto)" should set the property value
+    test: grid-template-rows-repeat-intrinsic-valid.tentative.html
+  - subtest: e.style['grid-template-rows'] = "repeat(auto-fit, [three] auto [four])"
+      should set the property value
+    test: grid-template-rows-repeat-intrinsic-valid.tentative.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1981296
