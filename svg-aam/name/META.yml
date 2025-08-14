@@ -21,3 +21,8 @@ links:
     - label: interop-2024-accessibility
       results:
         - test: comp_host_language_label.html
+    - product: safari
+      url: https://bugs.webkit.org/show_bug.cgi?id=297239
+      results:
+        - test: comp_labelledby.html
+          subtest: '[aria-labelledby="{[aria-label]} {[xlink:title]} {* > [title]}"] > g'
