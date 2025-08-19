@@ -6518,3 +6518,22 @@ links:
       right'''
     test: position-area-ambiguous-self.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1983927
+- product: firefox
+  results:
+  - subtest: Starts rendering with flip-block
+    test: last-successful-change-fallbacks.html
+  - subtest: Starts rendering with flip-block
+    test: last-successful-iframe.html
+  - subtest: Base position without fallback now successful
+    test: last-successful-iframe.html
+  - subtest: Starts rendering with flip-block
+    test: last-successful-pseudo-element-basic.html
+  - subtest: No successful position, keep flip-block
+    test: last-successful-pseudo-element-basic.html
+  - subtest: Base position without fallback now successful
+    test: last-successful-pseudo-element-basic.html
+  - subtest: Starts rendering with flip-block
+    test: last-successful-pseudo-element-fallbacks.html
+  - subtest: No successful position, keep flip-block
+    test: last-successful-pseudo-element-fallbacks.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1983943
