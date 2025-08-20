@@ -37,3 +37,12 @@ links:
   - subtest: test_slow_image_blocks_load[none-False]
     test: wait.py
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1952946
+- product: firefox
+  results:
+  - subtest: test_navigate_with_beforeunload_prompt_in_iframe[False-none]
+    test: navigate_beforeunload.py
+  - subtest: test_navigate_with_beforeunload_prompt_in_iframe[False-interactive]
+    test: navigate_beforeunload.py
+  - subtest: test_navigate_with_beforeunload_prompt_in_iframe[False-complete]
+    test: navigate_beforeunload.py
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1984042
