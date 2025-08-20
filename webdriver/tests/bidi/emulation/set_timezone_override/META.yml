@@ -1,0 +1,94 @@
+links:
+- product: firefox
+  results:
+  - subtest: test_contexts
+    test: contexts.py
+  - subtest: test_multiple_contexts
+    test: contexts.py
+  - subtest: test_params_contexts_invalid_type[False]
+    test: invalid.py
+  - subtest: test_params_contexts_invalid_type[42]
+    test: invalid.py
+  - subtest: test_params_contexts_invalid_type[foo]
+    test: invalid.py
+  - subtest: test_params_contexts_invalid_type[value3]
+    test: invalid.py
+  - subtest: test_params_contexts_empty_list
+    test: invalid.py
+  - subtest: test_params_contexts_context_invalid_type[None]
+    test: invalid.py
+  - subtest: test_params_contexts_context_invalid_type[False]
+    test: invalid.py
+  - subtest: test_params_contexts_context_invalid_type[42]
+    test: invalid.py
+  - subtest: test_params_contexts_context_invalid_type[value3]
+    test: invalid.py
+  - subtest: test_params_contexts_context_invalid_type[value4]
+    test: invalid.py
+  - subtest: test_params_contexts_entry_invalid_value
+    test: invalid.py
+  - subtest: test_params_contexts_iframe
+    test: invalid.py
+  - subtest: test_params_user_contexts_invalid_type[True]
+    test: invalid.py
+  - subtest: test_params_user_contexts_invalid_type[foo]
+    test: invalid.py
+  - subtest: test_params_user_contexts_invalid_type[42]
+    test: invalid.py
+  - subtest: test_params_user_contexts_invalid_type[value3]
+    test: invalid.py
+  - subtest: test_params_user_contexts_empty_list
+    test: invalid.py
+  - subtest: test_params_user_contexts_entry_invalid_type[None]
+    test: invalid.py
+  - subtest: test_params_user_contexts_entry_invalid_type[False]
+    test: invalid.py
+  - subtest: test_params_user_contexts_entry_invalid_type[42]
+    test: invalid.py
+  - subtest: test_params_user_contexts_entry_invalid_type[value3]
+    test: invalid.py
+  - subtest: test_params_user_contexts_entry_invalid_type[value4]
+    test: invalid.py
+  - subtest: test_params_user_contexts_entry_invalid_value[]
+    test: invalid.py
+  - subtest: test_params_user_contexts_entry_invalid_value[somestring]
+    test: invalid.py
+  - subtest: test_params_timezone_invalid_type[False]
+    test: invalid.py
+  - subtest: test_params_timezone_invalid_type[42]
+    test: invalid.py
+  - subtest: test_params_timezone_invalid_type[value2]
+    test: invalid.py
+  - subtest: test_params_timezone_invalid_type[value3]
+    test: invalid.py
+  - subtest: test_params_timezone_invalid_value[]
+    test: invalid.py
+  - subtest: test_params_timezone_invalid_value[America/New_York!]
+    test: invalid.py
+  - subtest: test_params_timezone_invalid_value[Europe/Bielefeld]
+    test: invalid.py
+  - subtest: test_params_timezone_invalid_value[+1:00]
+    test: invalid.py
+  - subtest: test_params_timezone_invalid_value[+05:0]
+    test: invalid.py
+  - subtest: test_params_timezone_invalid_value[05:00]
+    test: invalid.py
+  - subtest: test_params_timezone_invalid_value[GMT+05:00]
+    test: invalid.py
+  - subtest: test_params_timezone_invalid_value[UTC+05:00]
+    test: invalid.py
+  - subtest: test_params_timezone_invalid_value[Z]
+    test: invalid.py
+  - subtest: test_timezone_set_override_and_reset
+    test: timezone.py
+  - subtest: test_timezone_offset[+10:00]
+    test: timezone.py
+  - subtest: test_user_contexts
+    test: user_contexts.py
+  - subtest: test_set_to_default_user_context
+    test: user_contexts.py
+  - subtest: test_set_to_multiple_user_contexts
+    test: user_contexts.py
+  - subtest: test_set_to_user_context_and_then_to_context
+    test: user_contexts.py
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1984042
