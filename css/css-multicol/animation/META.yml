@@ -1,16 +1,149 @@
 links:
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1674747
-      results:
-        - test: column-count-interpolation.html
-          subtest: 'CSS Transitions: property <column-count> from [10] to [1] at (-0.5) should be [15]'
-        - test: column-count-interpolation.html
-          subtest: 'CSS Transitions with transition: all: property <column-count> from [10] to [1] at (-0.5) should be [15]'
-        - test: column-count-interpolation.html
-          subtest: 'CSS Animations: property <column-count> from [10] to [1] at (-0.5) should be [15]'
-        - test: column-count-interpolation.html
-          subtest: 'Web Animations: property <column-count> from [10] to [1] at (-0.5) should be [15]'
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1887274
-      results:
-        - test: column-count-interpolation.html
+- product: firefox
+  results:
+  - subtest: 'CSS Transitions: property <column-count> from [10] to [1] at (-0.5)
+      should be [15]'
+    test: column-count-interpolation.html
+  - subtest: 'CSS Transitions with transition: all: property <column-count> from [10]
+      to [1] at (-0.5) should be [15]'
+    test: column-count-interpolation.html
+  - subtest: 'CSS Animations: property <column-count> from [10] to [1] at (-0.5) should
+      be [15]'
+    test: column-count-interpolation.html
+  - subtest: 'Web Animations: property <column-count> from [10] to [1] at (-0.5) should
+      be [15]'
+    test: column-count-interpolation.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1674747
+- product: firefox
+  results:
+  - test: column-count-interpolation.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1887274
+- product: firefox
+  results:
+  - subtest: 'CSS Transitions with transition-behavior:allow-discrete: property <column-wrap>
+      from [wrap] to [nowrap] at (-0.3) should be [wrap]'
+    test: discrete-no-interpolation.html
+  - subtest: 'CSS Transitions with transition-behavior:allow-discrete: property <column-wrap>
+      from [wrap] to [nowrap] at (0) should be [wrap]'
+    test: discrete-no-interpolation.html
+  - subtest: 'CSS Transitions with transition-behavior:allow-discrete: property <column-wrap>
+      from [wrap] to [nowrap] at (0.3) should be [wrap]'
+    test: discrete-no-interpolation.html
+  - subtest: 'CSS Transitions with transition-behavior:allow-discrete: property <column-wrap>
+      from [wrap] to [nowrap] at (0.5) should be [nowrap]'
+    test: discrete-no-interpolation.html
+  - subtest: 'CSS Transitions with transition-behavior:allow-discrete: property <column-wrap>
+      from [wrap] to [nowrap] at (0.6) should be [nowrap]'
+    test: discrete-no-interpolation.html
+  - subtest: 'CSS Transitions with transition-behavior:allow-discrete: property <column-wrap>
+      from [wrap] to [nowrap] at (1) should be [nowrap]'
+    test: discrete-no-interpolation.html
+  - subtest: 'CSS Transitions with transition-behavior:allow-discrete: property <column-wrap>
+      from [wrap] to [nowrap] at (1.5) should be [nowrap]'
+    test: discrete-no-interpolation.html
+  - subtest: 'CSS Transitions with transition-property:all and transition-behavor:allow-discrete:
+      property <column-wrap> from [wrap] to [nowrap] at (-0.3) should be [wrap]'
+    test: discrete-no-interpolation.html
+  - subtest: 'CSS Transitions with transition-property:all and transition-behavor:allow-discrete:
+      property <column-wrap> from [wrap] to [nowrap] at (0) should be [wrap]'
+    test: discrete-no-interpolation.html
+  - subtest: 'CSS Transitions with transition-property:all and transition-behavor:allow-discrete:
+      property <column-wrap> from [wrap] to [nowrap] at (0.3) should be [wrap]'
+    test: discrete-no-interpolation.html
+  - subtest: 'CSS Transitions with transition-property:all and transition-behavor:allow-discrete:
+      property <column-wrap> from [wrap] to [nowrap] at (0.5) should be [nowrap]'
+    test: discrete-no-interpolation.html
+  - subtest: 'CSS Transitions with transition-property:all and transition-behavor:allow-discrete:
+      property <column-wrap> from [wrap] to [nowrap] at (0.6) should be [nowrap]'
+    test: discrete-no-interpolation.html
+  - subtest: 'CSS Transitions with transition-property:all and transition-behavor:allow-discrete:
+      property <column-wrap> from [wrap] to [nowrap] at (1) should be [nowrap]'
+    test: discrete-no-interpolation.html
+  - subtest: 'CSS Transitions with transition-property:all and transition-behavor:allow-discrete:
+      property <column-wrap> from [wrap] to [nowrap] at (1.5) should be [nowrap]'
+    test: discrete-no-interpolation.html
+  - subtest: 'CSS Transitions: property <column-wrap> from [wrap] to [nowrap] at (-0.3)
+      should be [nowrap]'
+    test: discrete-no-interpolation.html
+  - subtest: 'CSS Transitions: property <column-wrap> from [wrap] to [nowrap] at (0)
+      should be [nowrap]'
+    test: discrete-no-interpolation.html
+  - subtest: 'CSS Transitions: property <column-wrap> from [wrap] to [nowrap] at (0.3)
+      should be [nowrap]'
+    test: discrete-no-interpolation.html
+  - subtest: 'CSS Transitions: property <column-wrap> from [wrap] to [nowrap] at (0.5)
+      should be [nowrap]'
+    test: discrete-no-interpolation.html
+  - subtest: 'CSS Transitions: property <column-wrap> from [wrap] to [nowrap] at (0.6)
+      should be [nowrap]'
+    test: discrete-no-interpolation.html
+  - subtest: 'CSS Transitions: property <column-wrap> from [wrap] to [nowrap] at (1)
+      should be [nowrap]'
+    test: discrete-no-interpolation.html
+  - subtest: 'CSS Transitions: property <column-wrap> from [wrap] to [nowrap] at (1.5)
+      should be [nowrap]'
+    test: discrete-no-interpolation.html
+  - subtest: 'CSS Transitions with transition: all: property <column-wrap> from [wrap]
+      to [nowrap] at (-0.3) should be [nowrap]'
+    test: discrete-no-interpolation.html
+  - subtest: 'CSS Transitions with transition: all: property <column-wrap> from [wrap]
+      to [nowrap] at (0) should be [nowrap]'
+    test: discrete-no-interpolation.html
+  - subtest: 'CSS Transitions with transition: all: property <column-wrap> from [wrap]
+      to [nowrap] at (0.3) should be [nowrap]'
+    test: discrete-no-interpolation.html
+  - subtest: 'CSS Transitions with transition: all: property <column-wrap> from [wrap]
+      to [nowrap] at (0.5) should be [nowrap]'
+    test: discrete-no-interpolation.html
+  - subtest: 'CSS Transitions with transition: all: property <column-wrap> from [wrap]
+      to [nowrap] at (0.6) should be [nowrap]'
+    test: discrete-no-interpolation.html
+  - subtest: 'CSS Transitions with transition: all: property <column-wrap> from [wrap]
+      to [nowrap] at (1) should be [nowrap]'
+    test: discrete-no-interpolation.html
+  - subtest: 'CSS Transitions with transition: all: property <column-wrap> from [wrap]
+      to [nowrap] at (1.5) should be [nowrap]'
+    test: discrete-no-interpolation.html
+  - subtest: 'CSS Animations: property <column-wrap> from [wrap] to [nowrap] at (-0.3)
+      should be [wrap]'
+    test: discrete-no-interpolation.html
+  - subtest: 'CSS Animations: property <column-wrap> from [wrap] to [nowrap] at (0)
+      should be [wrap]'
+    test: discrete-no-interpolation.html
+  - subtest: 'CSS Animations: property <column-wrap> from [wrap] to [nowrap] at (0.3)
+      should be [wrap]'
+    test: discrete-no-interpolation.html
+  - subtest: 'CSS Animations: property <column-wrap> from [wrap] to [nowrap] at (0.5)
+      should be [nowrap]'
+    test: discrete-no-interpolation.html
+  - subtest: 'CSS Animations: property <column-wrap> from [wrap] to [nowrap] at (0.6)
+      should be [nowrap]'
+    test: discrete-no-interpolation.html
+  - subtest: 'CSS Animations: property <column-wrap> from [wrap] to [nowrap] at (1)
+      should be [nowrap]'
+    test: discrete-no-interpolation.html
+  - subtest: 'CSS Animations: property <column-wrap> from [wrap] to [nowrap] at (1.5)
+      should be [nowrap]'
+    test: discrete-no-interpolation.html
+  - subtest: 'Web Animations: property <column-wrap> from [wrap] to [nowrap] at (-0.3)
+      should be [wrap]'
+    test: discrete-no-interpolation.html
+  - subtest: 'Web Animations: property <column-wrap> from [wrap] to [nowrap] at (0)
+      should be [wrap]'
+    test: discrete-no-interpolation.html
+  - subtest: 'Web Animations: property <column-wrap> from [wrap] to [nowrap] at (0.3)
+      should be [wrap]'
+    test: discrete-no-interpolation.html
+  - subtest: 'Web Animations: property <column-wrap> from [wrap] to [nowrap] at (0.5)
+      should be [nowrap]'
+    test: discrete-no-interpolation.html
+  - subtest: 'Web Animations: property <column-wrap> from [wrap] to [nowrap] at (0.6)
+      should be [nowrap]'
+    test: discrete-no-interpolation.html
+  - subtest: 'Web Animations: property <column-wrap> from [wrap] to [nowrap] at (1)
+      should be [nowrap]'
+    test: discrete-no-interpolation.html
+  - subtest: 'Web Animations: property <column-wrap> from [wrap] to [nowrap] at (1.5)
+      should be [nowrap]'
+    test: discrete-no-interpolation.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1984099
