@@ -207,3 +207,42 @@ links:
       should set the property value
     test: grid-template-rows-repeat-intrinsic-valid.tentative.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1981296
+- product: firefox
+  results:
+  - subtest: e.style['grid-template-rows'] = "repeat(auto-fill, min-content)" should
+      set the property value
+    test: grid-template-rows-repeat-intrinsic-valid.tentative.html
+  - subtest: e.style['grid-template-rows'] = "repeat(auto-fit, min-content 100px min-content)"
+      should set the property value
+    test: grid-template-rows-repeat-intrinsic-valid.tentative.html
+  - subtest: e.style['grid-template-rows'] = "repeat(auto-fill, minmax(30px, 5fr)
+      [two] min-content)" should set the property value
+    test: grid-template-rows-repeat-intrinsic-valid.tentative.html
+  - subtest: e.style['grid-template-rows'] = "repeat(auto-fit, [three] min-content
+      [four])" should set the property value
+    test: grid-template-rows-repeat-intrinsic-valid.tentative.html
+  - subtest: e.style['grid-template-rows'] = "repeat(auto-fill, max-content)" should
+      set the property value
+    test: grid-template-rows-repeat-intrinsic-valid.tentative.html
+  - subtest: e.style['grid-template-rows'] = "repeat(auto-fit, max-content 100px max-content)"
+      should set the property value
+    test: grid-template-rows-repeat-intrinsic-valid.tentative.html
+  - subtest: e.style['grid-template-rows'] = "repeat(auto-fill, minmax(30px, 5fr)
+      [two] max-content)" should set the property value
+    test: grid-template-rows-repeat-intrinsic-valid.tentative.html
+  - subtest: e.style['grid-template-rows'] = "repeat(auto-fit, [three] max-content
+      [four])" should set the property value
+    test: grid-template-rows-repeat-intrinsic-valid.tentative.html
+  - subtest: e.style['grid-template-rows'] = "repeat(auto-fill, fit-content(200px))"
+      should set the property value
+    test: grid-template-rows-repeat-intrinsic-valid.tentative.html
+  - subtest: e.style['grid-template-rows'] = "repeat(auto-fit, fit-content(200px)
+      100px fit-content(200px))" should set the property value
+    test: grid-template-rows-repeat-intrinsic-valid.tentative.html
+  - subtest: e.style['grid-template-rows'] = "repeat(auto-fill, minmax(30px, 5fr)
+      [two] fit-content(200px))" should set the property value
+    test: grid-template-rows-repeat-intrinsic-valid.tentative.html
+  - subtest: e.style['grid-template-rows'] = "repeat(auto-fit, [three] fit-content(200px)
+      [four])" should set the property value
+    test: grid-template-rows-repeat-intrinsic-valid.tentative.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1984455
