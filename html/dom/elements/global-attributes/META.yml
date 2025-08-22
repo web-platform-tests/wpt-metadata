@@ -90,8 +90,7 @@ links:
           subtest: text changes apply to dir=auto on further ancestor after removing dir=auto from closer ancestor
         - test: dir-assorted.window.html
           subtest: 'directionality of bdi elements: dir=auto empty in rtl parent'
-    - url: ""
-      label: interop-2024-dir
+    - label: interop-2024-dir
       results:
         - test: dir_auto-input-script-R.html
         - test: dir-shadow-01.html
@@ -197,15 +196,6 @@ links:
       results:
         - test: dir_auto-N-EN.html
           subtest: Test status
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1879854
-      results:
-        - test: the-anchor-attribute-003.tentative.html
-          subtest: ::before uses originating element's implicit anchor
-        - test: the-anchor-attribute-003.tentative.html
-          subtest: ::after uses originating element's implicit anchor
-        - test: the-anchor-attribute-003.tentative.html
-          subtest: ::backdrop uses originating element's implicit anchor
     - product: chrome
       url: https://issues.chromium.org/40571175
       results:
