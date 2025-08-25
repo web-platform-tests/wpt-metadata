@@ -64,3 +64,15 @@ links:
           subtest: Property rotate value '0 0 -0.5 400grad'
         - test: rotate-parsing-computed.html
           subtest: Property rotate value '0 0 -1 400grad'
+        - test: rotate-parsing-valid.html
+          subtest: e.style['rotate'] = "-0.5 0 0 400grad" should set the property value
+        - test: rotate-parsing-valid.html
+          subtest: e.style['rotate'] = "-1 0 0 400grad" should set the property value
+        - test: rotate-parsing-valid.html
+          subtest: e.style['rotate'] = "0 -0.5 0 400grad" should set the property value
+        - test: rotate-parsing-valid.html
+          subtest: e.style['rotate'] = "0 -1 0 400grad" should set the property value
+        - test: rotate-parsing-valid.html
+          subtest: e.style['rotate'] = "0 0 -0.5 400grad" should set the property value
+        - test: rotate-parsing-valid.html
+          subtest: e.style['rotate'] = "0 0 -1 400grad" should set the property value
