@@ -49,3 +49,18 @@ links:
         - test: transform-box-computed.html
           subtest: Property transform-box value 'stroke-box'
         - test: transform-box-valid.html
+    - product: chrome
+      url: https://crbug.com/440474981
+      results:
+        - test: rotate-parsing-computed.html
+          subtest: Property rotate value '-0.5 0 0 400grad'
+        - test: rotate-parsing-computed.html
+          subtest: Property rotate value '-1 0 0 400grad'
+        - test: rotate-parsing-computed.html
+          subtest: Property rotate value '0 -0.5 0 400grad'
+        - test: rotate-parsing-computed.html
+          subtest: Property rotate value '0 -1 0 400grad'
+        - test: rotate-parsing-computed.html
+          subtest: Property rotate value '0 0 -0.5 400grad'
+        - test: rotate-parsing-computed.html
+          subtest: Property rotate value '0 0 -1 400grad'
