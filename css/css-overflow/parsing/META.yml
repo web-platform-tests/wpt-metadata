@@ -185,3 +185,16 @@ links:
   - status: CRASH
     test: scroll-markers-invalid.tentative.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1982442
+- product: firefox
+  results:
+  - subtest: e.style['line-clamp'] = "none" should set the property value
+    test: line-clamp-valid.html
+  - subtest: e.style['line-clamp'] = "1" should set the property value
+    test: line-clamp-valid.html
+  - subtest: e.style['line-clamp'] = "6" should set the property value
+    test: line-clamp-valid.html
+  - subtest: e.style['line-clamp'] = "8 auto" should set the property value
+    test: line-clamp-valid.html
+  - subtest: e.style['line-clamp'] = "auto 11" should set the property value
+    test: line-clamp-valid.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1985010
