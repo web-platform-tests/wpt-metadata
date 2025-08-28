@@ -1,53 +1,58 @@
 links:
-- label: chromium-bidi-2023
-  results:
-  - test: about_blank.py
-  - test: data_url.py
-  - test: error.py
-  - test: frame.py
-  - test: hash.py
-  - test: image.py
-  - test: invalid.py
-  - test: navigate.py
-  - test: wait.py
-- product: firefox
-  results:
-  - subtest: test_same_document_navigation_in_before_unload
-    test: navigate.py
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1945627
-- product: firefox
-  results:
-  - subtest: test_navigate_with_beforeunload_prompt_in_iframe[capabilities0-False-interactive]
-    test: navigate.py
-  - subtest: test_navigate_with_beforeunload_prompt_in_iframe[capabilities0-False-complete]
-    test: navigate.py
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1947474
-- product: firefox
-  results:
-  - subtest: test_relative_url
-    test: navigate.py
-  - subtest: test_navigate_with_beforeunload_prompt_in_iframe[capabilities0-False-none]
-    test: navigate_beforeunload.py
-  - subtest: test_navigate_with_beforeunload_prompt_in_iframe[capabilities0-False-interactive]
-    test: navigate_beforeunload.py
-  - subtest: test_navigate_with_beforeunload_prompt_in_iframe[capabilities0-False-complete]
-    test: navigate_beforeunload.py
-  - subtest: test_expected_url[none]
-    test: wait.py
-  - subtest: test_slow_image_blocks_load[none-False]
-    test: wait.py
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1952946
-- product: firefox
-  results:
-  - subtest: test_navigate_with_beforeunload_prompt_in_iframe[False-none]
-    test: navigate_beforeunload.py
-  - subtest: test_navigate_with_beforeunload_prompt_in_iframe[False-interactive]
-    test: navigate_beforeunload.py
-  - subtest: test_navigate_with_beforeunload_prompt_in_iframe[False-complete]
-    test: navigate_beforeunload.py
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1984042
-- product: firefox
-  results:
-  - subtest: test_interrupted_navigation[interactive-Interrupted on DOMContentLoaded]
-    test: navigate.py
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1985628
+    - label: chromium-bidi-2023
+      results:
+        - test: about_blank.py
+        - test: data_url.py
+        - test: error.py
+        - test: frame.py
+        - test: hash.py
+        - test: image.py
+        - test: invalid.py
+        - test: navigate.py
+        - test: wait.py
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1945627
+      results:
+        - test: navigate.py
+          subtest: test_same_document_navigation_in_before_unload
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1947474
+      results:
+        - test: navigate.py
+          subtest: test_navigate_with_beforeunload_prompt_in_iframe[capabilities0-False-interactive]
+        - test: navigate.py
+          subtest: test_navigate_with_beforeunload_prompt_in_iframe[capabilities0-False-complete]
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1952946
+      results:
+        - test: navigate.py
+          subtest: test_relative_url
+        - test: navigate_beforeunload.py
+          subtest: test_navigate_with_beforeunload_prompt_in_iframe[capabilities0-False-none]
+        - test: navigate_beforeunload.py
+          subtest: test_navigate_with_beforeunload_prompt_in_iframe[capabilities0-False-interactive]
+        - test: navigate_beforeunload.py
+          subtest: test_navigate_with_beforeunload_prompt_in_iframe[capabilities0-False-complete]
+        - test: wait.py
+          subtest: test_expected_url[none]
+        - test: wait.py
+          subtest: test_slow_image_blocks_load[none-False]
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1984042
+      results:
+        - test: navigate_beforeunload.py
+          subtest: test_navigate_with_beforeunload_prompt_in_iframe[False-none]
+        - test: navigate_beforeunload.py
+          subtest: test_navigate_with_beforeunload_prompt_in_iframe[False-interactive]
+        - test: navigate_beforeunload.py
+          subtest: test_navigate_with_beforeunload_prompt_in_iframe[False-complete]
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1985628
+      results:
+        - test: navigate.py
+          subtest: test_interrupted_navigation[interactive-Interrupted on DOMContentLoaded]
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1975796
+      results:
+        - test: navigate.py
+          subtest: test_relative_url
