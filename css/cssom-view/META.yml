@@ -360,3 +360,25 @@ links:
       offsetParent should be null.
     test: offsetParent-fixed.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1980497
+- product: firefox
+  results:
+  - subtest: scrollParent returns the nearest scroll container.
+    test: scrollParent.html
+  - subtest: hidden element is a scroll container.
+    test: scrollParent.html
+  - subtest: Element with no box has null scrollParent.
+    test: scrollParent.html
+  - subtest: scrollParent follows absolute positioned containing block chain.
+    test: scrollParent.html
+  - subtest: scrollParent follows fixed positioned containing block chain.
+    test: scrollParent.html
+  - subtest: scrollParent of element fixed to root is null.
+    test: scrollParent.html
+  - subtest: scrollParent of child in root viewport returns document scrolling element.
+    test: scrollParent.html
+  - subtest: scrollParent of fixed element contained within root is document scrolling
+      element.
+    test: scrollParent.html
+  - subtest: scrollParent of body is null.
+    test: scrollParent.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1986800
