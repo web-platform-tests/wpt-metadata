@@ -1092,3 +1092,166 @@ links:
   - test: mq-calc-sign-function-004.html
   - test: mq-calc-sign-function-005.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1906458
+- product: firefox
+  results:
+  - test: preferences-colorScheme.tentative.https.html
+  - subtest: navigator.preferences.colorScheme supported
+    test: preferences-colorScheme.tentative.https.html
+  - subtest: navigator.preferences.colorScheme.override supported
+    test: preferences-colorScheme.tentative.https.html
+  - subtest: navigator.preferences.colorScheme.value supported
+    test: preferences-colorScheme.tentative.https.html
+  - subtest: navigator.preferences.colorScheme.validValues supported
+    test: preferences-colorScheme.tentative.https.html
+  - subtest: navigator.preferences.colorScheme.requestOverride() with invalid value
+      throws
+    test: preferences-colorScheme.tentative.https.html
+  - subtest: navigator.preferences.colorScheme.override returns override value
+    test: preferences-colorScheme.tentative.https.html
+  - subtest: navigator.preferences.colorScheme.requestOverride(null) works like clearOverride()
+    test: preferences-colorScheme.tentative.https.html
+  - subtest: navigator.preferences.colorScheme.requestOverride('') works like clearOverride()
+    test: preferences-colorScheme.tentative.https.html
+  - subtest: navigator.preferences.colorScheme.requestOverride() updates (prefers-color-scheme)
+    test: preferences-colorScheme.tentative.https.html
+  - subtest: navigator.preferences.colorScheme fires change event when requesting
+      override
+    test: preferences-colorScheme.tentative.https.html
+  - subtest: navigator.preferences.colorScheme fires change event when requesting
+      override (without value change)
+    test: preferences-colorScheme.tentative.https.html
+  - subtest: navigator.preferences.colorScheme fires change event when clearing override
+    test: preferences-colorScheme.tentative.https.html
+  - subtest: navigator.preferences.colorScheme fires change event when clearing override
+      (without value change)
+    test: preferences-colorScheme.tentative.https.html
+  - test: preferences-contrast.tentative.https.html
+  - subtest: navigator.preferences.contrast supported
+    test: preferences-contrast.tentative.https.html
+  - subtest: navigator.preferences.contrast.override supported
+    test: preferences-contrast.tentative.https.html
+  - subtest: navigator.preferences.contrast.value supported
+    test: preferences-contrast.tentative.https.html
+  - subtest: navigator.preferences.contrast.validValues supported
+    test: preferences-contrast.tentative.https.html
+  - subtest: navigator.preferences.contrast.requestOverride() with invalid value throws
+    test: preferences-contrast.tentative.https.html
+  - subtest: navigator.preferences.contrast.requestOverride('custom') throws
+    test: preferences-contrast.tentative.https.html
+  - subtest: navigator.preferences.contrast.clearOverride() works
+    test: preferences-contrast.tentative.https.html
+  - subtest: navigator.preferences.contrast.requestOverride(null) works like clearOverride()
+    test: preferences-contrast.tentative.https.html
+  - subtest: navigator.preferences.contrast.requestOverride('') works like clearOverride()
+    test: preferences-contrast.tentative.https.html
+  - subtest: navigator.preferences.contrast.requestOverride() updates (prefers-contrast)
+    test: preferences-contrast.tentative.https.html
+  - subtest: navigator.preferences.contrast fires change event when requesting override
+    test: preferences-contrast.tentative.https.html
+  - subtest: navigator.preferences.contrast fires change event when requesting override
+      (without value change)
+    test: preferences-contrast.tentative.https.html
+  - subtest: navigator.preferences.contrast fires change event when clearing override
+    test: preferences-contrast.tentative.https.html
+  - subtest: navigator.preferences.contrast fires change event when clearing override
+      (without value change)
+    test: preferences-contrast.tentative.https.html
+  - test: preferences-reducedData.tentative.https.html
+  - subtest: navigator.preferences.reducedData supported
+    test: preferences-reducedData.tentative.https.html
+  - subtest: navigator.preferences.reducedData.override supported
+    test: preferences-reducedData.tentative.https.html
+  - subtest: navigator.preferences.reducedData.value supported
+    test: preferences-reducedData.tentative.https.html
+  - subtest: navigator.preferences.reducedData.validValues supported
+    test: preferences-reducedData.tentative.https.html
+  - subtest: navigator.preferences.reducedData.requestOverride() with invalid value
+      throws
+    test: preferences-reducedData.tentative.https.html
+  - subtest: navigator.preferences.reducedData.clearOverride() supported
+    test: preferences-reducedData.tentative.https.html
+  - subtest: navigator.preferences.reducedData.requestOverride(null) works like clearOverride()
+    test: preferences-reducedData.tentative.https.html
+  - subtest: navigator.preferences.reducedData.requestOverride('') works like clearOverride()
+    test: preferences-reducedData.tentative.https.html
+  - subtest: navigator.preferences.reducedData.requestOverride() updates (prefers-reduced-data)
+    test: preferences-reducedData.tentative.https.html
+  - subtest: navigator.preferences.reducedData fires change event when requesting
+      override
+    test: preferences-reducedData.tentative.https.html
+  - subtest: navigator.preferences.reducedData fires change event when requesting
+      override (without value change)
+    test: preferences-reducedData.tentative.https.html
+  - subtest: navigator.preferences.reducedData fires change event when clearing override
+    test: preferences-reducedData.tentative.https.html
+  - subtest: navigator.preferences.reducedData fires change event when clearing override
+      (without value change)
+    test: preferences-reducedData.tentative.https.html
+  - test: preferences-reducedMotion.tentative.https.html
+  - subtest: navigator.preferences.reducedMotion supported
+    test: preferences-reducedMotion.tentative.https.html
+  - subtest: navigator.preferences.reducedMotion.override supported
+    test: preferences-reducedMotion.tentative.https.html
+  - subtest: navigator.preferences.reducedMotion.value supported
+    test: preferences-reducedMotion.tentative.https.html
+  - subtest: navigator.preferences.reducedMotion.validValues supported
+    test: preferences-reducedMotion.tentative.https.html
+  - subtest: navigator.preferences.reducedMotion.requestOverride() with invalid value
+      throws
+    test: preferences-reducedMotion.tentative.https.html
+  - subtest: navigator.preferences.reducedMotion.clearOverride() supported
+    test: preferences-reducedMotion.tentative.https.html
+  - subtest: navigator.preferences.reducedMotion.requestOverride(null) works like
+      clearOverride()
+    test: preferences-reducedMotion.tentative.https.html
+  - subtest: navigator.preferences.reducedMotion.requestOverride('') works like clearOverride()
+    test: preferences-reducedMotion.tentative.https.html
+  - subtest: navigator.preferences.reducedMotion.requestOverride() updates (prefers-reduced-motion)
+    test: preferences-reducedMotion.tentative.https.html
+  - subtest: navigator.preferences.reducedMotion fires change event when requesting
+      override
+    test: preferences-reducedMotion.tentative.https.html
+  - subtest: navigator.preferences.reducedMotion fires change event when requesting
+      override (without value change)
+    test: preferences-reducedMotion.tentative.https.html
+  - subtest: navigator.preferences.reducedMotion fires change event when clearing
+      override
+    test: preferences-reducedMotion.tentative.https.html
+  - subtest: navigator.preferences.reducedMotion fires change event when clearing
+      override (without value change)
+    test: preferences-reducedMotion.tentative.https.html
+  - test: preferences-reducedTransparency.tentative.https.html
+  - subtest: navigator.preferences.reducedTransparency supported
+    test: preferences-reducedTransparency.tentative.https.html
+  - subtest: navigator.preferences.reducedTransparency.override supported
+    test: preferences-reducedTransparency.tentative.https.html
+  - subtest: navigator.preferences.reducedTransparency.value supported
+    test: preferences-reducedTransparency.tentative.https.html
+  - subtest: navigator.preferences.reducedTransparency.validValues supported
+    test: preferences-reducedTransparency.tentative.https.html
+  - subtest: navigator.preferences.reducedTransparency.requestOverride() with invalid
+      value throws
+    test: preferences-reducedTransparency.tentative.https.html
+  - subtest: navigator.preferences.reducedTransparency.clearOverride() supported
+    test: preferences-reducedTransparency.tentative.https.html
+  - subtest: navigator.preferences.reducedTransparency.requestOverride(null) works
+      like clearOverride()
+    test: preferences-reducedTransparency.tentative.https.html
+  - subtest: navigator.preferences.reducedTransparency.requestOverride('') works like
+      clearOverride()
+    test: preferences-reducedTransparency.tentative.https.html
+  - subtest: navigator.preferences.reducedTransparency.requestOverride() updates (prefers-reduced-transparency)
+    test: preferences-reducedTransparency.tentative.https.html
+  - subtest: navigator.preferences.reducedTransparency fires change event when requesting
+      override
+    test: preferences-reducedTransparency.tentative.https.html
+  - subtest: navigator.preferences.reducedTransparency fires change event when requesting
+      override (without value change)
+    test: preferences-reducedTransparency.tentative.https.html
+  - subtest: navigator.preferences.reducedTransparency fires change event when clearing
+      override
+    test: preferences-reducedTransparency.tentative.https.html
+  - subtest: navigator.preferences.reducedTransparency fires change event when clearing
+      override (without value change)
+    test: preferences-reducedTransparency.tentative.https.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1986808
