@@ -1,0 +1,64 @@
+links:
+- product: firefox
+  results:
+  - subtest: Start transition of scale property on anchored child
+    test: anchored-child-transition.html
+  - subtest: '@container anchored() without applied fallback'
+    test: anchored-fallback-basic.html
+  - subtest: '@container anchored() with fallback applied'
+    test: anchored-fallback-basic.html
+  - subtest: '@container anchored() without applied fallback'
+    test: anchored-fallback-display-change.html
+  - subtest: '@container anchored() with fallback applied'
+    test: anchored-fallback-display-change.html
+  - subtest: '@container anchored(fallback) matching name'
+    test: anchored-fallback-name.html
+  - subtest: '@container anchored(fallback) matching name with tactics, but not name'
+    test: anchored-fallback-name.html
+  - subtest: '@container anchored(fallback) with ''self-block-end self-inline-start''
+      fallback applied'
+    test: anchored-fallback-position-area-wm.html
+  - subtest: '@container anchored(fallback) with ''block-end inline-end'' fallback
+      applied'
+    test: anchored-fallback-position-area-wm.html
+  - subtest: '@container anchored(fallback) with <position-area> fallback applied'
+    test: anchored-fallback-position-area.html
+  - subtest: '@container anchored() without applied fallback at initial scroll position'
+    test: anchored-fallback-scroll.html
+  - subtest: '@container anchored() applies fallback after scrolling down'
+    test: anchored-fallback-scroll.html
+  - subtest: '@container anchored(fallback) matching flip-block'
+    test: anchored-fallback-try-tactic.html
+  - subtest: '@container anchored(fallback) matching flip-inline flip-block'
+    test: anchored-fallback-try-tactic.html
+  - subtest: 'Query condition should be valid: anchored(fallback)'
+    test: at-container-anchored-parsing.html
+  - subtest: 'Query condition should be valid: anchored(fallback: none)'
+    test: at-container-anchored-parsing.html
+  - subtest: 'Query condition should be valid: (anchored(fallback: inline-start block-end))'
+    test: at-container-anchored-parsing.html
+  - subtest: 'Query condition should be valid: anchored(not ((fallback: --foo) or
+      (fallback: --bar flip-inline)))'
+    test: at-container-anchored-parsing.html
+  - subtest: Normalize spaces
+    test: at-container-anchored-serialization.html
+  - subtest: Boolean context
+    test: at-container-anchored-serialization.html
+  - subtest: Logical with 'or'
+    test: at-container-anchored-serialization.html
+  - subtest: Property container-type value 'anchored'
+    test: container-type-anchored-computed.html
+  - subtest: Property container-type value 'anchored size'
+    test: container-type-anchored-computed.html
+  - subtest: Property container-type value 'inline-size anchored'
+    test: container-type-anchored-computed.html
+  - subtest: e.style['container-type'] = "anchored" should set the property value
+    test: container-type-anchored-parsing.html
+  - subtest: e.style['container-type'] = "size anchored" should set the property value
+    test: container-type-anchored-parsing.html
+  - subtest: e.style['container-type'] = "anchored inline-size" should set the property
+      value
+    test: container-type-anchored-parsing.html
+  - test: anchored-fallback-color-change.html
+  - test: anchored-fallback-style-containment.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1986919
