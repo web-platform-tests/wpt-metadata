@@ -382,3 +382,10 @@ links:
   - subtest: scrollParent of body is null.
     test: scrollParent.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1986800
+- product: firefox
+  results:
+  - subtest: scrollParent of root is null.
+    test: scrollParent.html
+  - subtest: 'scrollParent skips ancestors with `display: contents`.'
+    test: scrollParent.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1987408
