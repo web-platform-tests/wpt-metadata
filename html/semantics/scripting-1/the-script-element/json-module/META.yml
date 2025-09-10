@@ -107,3 +107,9 @@ links:
       results:
         - test: invalid-content-type.any.html
           subtest: Try importing JSON module with MIME type text/json/json+json
+    - product: chrome
+      url: https://crbug.com/440528040
+      results:
+        - test: invalid-content-type.any.sharedworker.html
+        - test: invalid-content-type.any.worker.html
+        - test: invalid-content-type.any.html
