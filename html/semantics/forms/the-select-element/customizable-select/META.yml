@@ -82,3 +82,8 @@ links:
           subtest: <select> in <button> in <select> should remove inner <select>.
         - test: select-parsing.html
           subtest: <select> in <select><button><div> should remove inner <select>.
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1832996
+      results:
+        - test: select-tabindex-order.html
+          subtest: Check that tabindex applies to <selectmenu>
