@@ -455,3 +455,29 @@ links:
       video elements
     test: caretPositionFromPoint-audioVideo.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1983637
+- product: firefox
+  results:
+  - subtest: document.caretRangeFromPoint(10, 10)
+    test: caretRangeFromPoint-textarea-transform.tentative.html
+  - subtest: document.caretRangeFromPoint() (no supplied coordinates) returns Range
+      with 0 0 values
+    test: caretRangeFromPoint.tentative.html
+  - subtest: document.caretRangeFromPoint() should return null for a document with
+      no viewport
+    test: caretRangeFromPoint.tentative.html
+  - subtest: document.caretRangeFromPoint() should return null if given coordinates
+      outside of the viewport
+    test: caretRangeFromPoint.tentative.html
+  - subtest: document.caretRangeFromPoint() should return a Range at the specified
+      location
+    test: caretRangeFromPoint.tentative.html
+  - subtest: document.caretRangeFromPoint() should return a client rect close to the
+      given coords
+    test: caretRangeFromPoint.tentative.html
+  - subtest: document.caretRangeFromPoint() on a shadow should return a Range pointing
+      at the same node as caretPositionFromPoint
+    test: caretRangeFromPoint.tentative.html
+  - subtest: document.caretRangeFromPoint() on a textarea should return a Range pointing
+      at canvas
+    test: caretRangeFromPoint.tentative.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1988830
