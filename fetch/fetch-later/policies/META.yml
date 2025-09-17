@@ -1,18 +1,18 @@
 links:
 - product: firefox
   results:
-  - test: csp-allowed.tentative.https.window.html
-  - test: csp-blocked.tentative.https.window.html
-  - test: csp-redirect-to-blocked.tentative.https.window.html
+  - test: csp-allowed.https.window.html
+  - test: csp-blocked.https.window.html
+  - test: csp-redirect-to-blocked.https.window.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1874988
 - product: firefox
   results:
   - subtest: FetchLater allowed by CSP should succeed
-    test: csp-allowed.tentative.https.window.html
+    test: csp-allowed.https.window.html
   - subtest: FetchLater blocked by CSP should reject
-    test: csp-blocked.tentative.https.window.html
+    test: csp-blocked.https.window.html
   - subtest: FetchLater redirect blocked by CSP should reject
-    test: csp-redirect-to-blocked.tentative.https.window.html
+    test: csp-redirect-to-blocked.https.window.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1888022
 - product: firefox
   results:
