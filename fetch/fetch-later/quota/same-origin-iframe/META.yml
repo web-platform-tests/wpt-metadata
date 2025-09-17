@@ -3,74 +3,74 @@ links:
   results:
   - subtest: fetchLater() does not accept empty POST request body of String in same-origin
       iframe.
-    test: empty-payload.tentative.https.window.html
+    test: empty-payload.https.window.html
   - subtest: fetchLater() does not accept empty POST request body of ArrayBuffer in
       same-origin iframe.
-    test: empty-payload.tentative.https.window.html
+    test: empty-payload.https.window.html
   - subtest: fetchLater() accepts a non-empty POST request body of FormData in same-origin
       iframe.
-    test: empty-payload.tentative.https.window.html
+    test: empty-payload.https.window.html
   - subtest: fetchLater() does not accept empty POST request body of URLSearchParams
       in same-origin iframe.
-    test: empty-payload.tentative.https.window.html
+    test: empty-payload.https.window.html
   - subtest: fetchLater() does not accept empty POST request body of Blob in same-origin
       iframe.
-    test: empty-payload.tentative.https.window.html
+    test: empty-payload.https.window.html
   - subtest: fetchLater() does not accept empty POST request body of File in same-origin
       iframe.
-    test: empty-payload.tentative.https.window.html
+    test: empty-payload.https.window.html
   - subtest: fetchLater() accepts max payload in a POST request body of String in
       same-origin iframe.
-    test: max-payload.tentative.https.window.html
+    test: max-payload.https.window.html
   - subtest: fetchLater() rejects max+1 payload in a POST request body of String in
       same-origin iframe.
-    test: max-payload.tentative.https.window.html
+    test: max-payload.https.window.html
   - subtest: fetchLater() request quota are shared by same-origin iframes and root.
-    test: multiple-iframes.tentative.https.window.html
+    test: multiple-iframes.https.window.html
   - subtest: fetchLater() does not accept payload[size=65537] exceeding per-origin
       quota in a POST request body of String in same-origin iframe.
-    test: oversized-payload.tentative.https.window.html
+    test: oversized-payload.https.window.html
   - subtest: fetchLater() does not accept payload[size=65537] exceeding per-origin
       quota in a POST request body of ArrayBuffer in same-origin iframe.
-    test: oversized-payload.tentative.https.window.html
+    test: oversized-payload.https.window.html
   - subtest: fetchLater() does not accept payload[size=65537] exceeding per-origin
       quota in a POST request body of FormData in same-origin iframe.
-    test: oversized-payload.tentative.https.window.html
+    test: oversized-payload.https.window.html
   - subtest: fetchLater() does not accept payload[size=65537] exceeding per-origin
       quota in a POST request body of URLSearchParams in same-origin iframe.
-    test: oversized-payload.tentative.https.window.html
+    test: oversized-payload.https.window.html
   - subtest: fetchLater() does not accept payload[size=65537] exceeding per-origin
       quota in a POST request body of Blob in same-origin iframe.
-    test: oversized-payload.tentative.https.window.html
+    test: oversized-payload.https.window.html
   - subtest: fetchLater() does not accept payload[size=65537] exceeding per-origin
       quota in a POST request body of File in same-origin iframe.
-    test: oversized-payload.tentative.https.window.html
+    test: oversized-payload.https.window.html
   - subtest: fetchLater() accepts payload[size=20] in a POST request body of String
       in same-origin iframe.
-    test: small-payload.tentative.https.window.html
+    test: small-payload.https.window.html
   - subtest: fetchLater() accepts payload[size=20] in a POST request body of ArrayBuffer
       in same-origin iframe.
-    test: small-payload.tentative.https.window.html
+    test: small-payload.https.window.html
   - subtest: fetchLater() accepts payload[size=20] in a POST request body of FormData
       in same-origin iframe.
-    test: small-payload.tentative.https.window.html
+    test: small-payload.https.window.html
   - subtest: fetchLater() accepts payload[size=20] in a POST request body of URLSearchParams
       in same-origin iframe.
-    test: small-payload.tentative.https.window.html
+    test: small-payload.https.window.html
   - subtest: fetchLater() accepts payload[size=20] in a POST request body of Blob
       in same-origin iframe.
-    test: small-payload.tentative.https.window.html
+    test: small-payload.https.window.html
   - subtest: fetchLater() accepts payload[size=20] in a POST request body of File
       in same-origin iframe.
-    test: small-payload.tentative.https.window.html
+    test: small-payload.https.window.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1943451
 - product: firefox
   results:
   - subtest: The 2nd fetchLater(same-origin) call in a same-origin child iframe is
       not allowed to exceed per-origin quota for its POST body of String.
-    test: accumulated-oversized-payload.tentative.https.window.html
-  - test: max-payload.tentative.https.window.html
-  - test: oversized-payload.tentative.https.window.html
+    test: accumulated-oversized-payload.https.window.html
+  - test: max-payload.https.window.html
+  - test: oversized-payload.https.window.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1970587
 - product: firefox
   results:
