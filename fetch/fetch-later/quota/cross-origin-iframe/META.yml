@@ -3,85 +3,145 @@ links:
   results:
   - subtest: The 2nd fetchLater(same-origin) call in a default cross-origin child
       iframe has its owned per-origin quota for a request POST body of String.
-    test: accumulated-oversized-payload.tentative.https.window.html
+    test: accumulated-oversized-payload.https.window.html
   - subtest: fetchLater() does not accept empty POST request body of String in a default
       cross-origin iframe.
-    test: empty-payload.tentative.https.window.html
+    test: empty-payload.https.window.html
   - subtest: fetchLater() does not accept empty POST request body of ArrayBuffer in
       a default cross-origin iframe.
-    test: empty-payload.tentative.https.window.html
+    test: empty-payload.https.window.html
   - subtest: fetchLater() accepts a non-empty POST request body of FormData in a default
       cross-origin iframe.
-    test: empty-payload.tentative.https.window.html
+    test: empty-payload.https.window.html
   - subtest: fetchLater() does not accept empty POST request body of URLSearchParams
       in a default cross-origin iframe.
-    test: empty-payload.tentative.https.window.html
+    test: empty-payload.https.window.html
   - subtest: fetchLater() does not accept empty POST request body of Blob in a default
       cross-origin iframe.
-    test: empty-payload.tentative.https.window.html
+    test: empty-payload.https.window.html
   - subtest: fetchLater() does not accept empty POST request body of File in a default
       cross-origin iframe.
-    test: empty-payload.tentative.https.window.html
+    test: empty-payload.https.window.html
   - subtest: fetchLater() accepts max payload in a parent-frame-origin POST request
       body of String in a default cross-origin iframe.
-    test: max-payload.tentative.https.window.html
+    test: max-payload.https.window.html
   - subtest: fetchLater() accepts max payload in a self-frame-origin POST request
       body of String in a default cross-origin iframe.
-    test: max-payload.tentative.https.window.html
+    test: max-payload.https.window.html
   - subtest: fetchLater() request quota are delegated to cross-origin iframes and
       not shared, even if they are same origin.
-    test: multiple-iframes.tentative.https.window.html
+    test: multiple-iframes.https.window.html
   - subtest: fetchLater() accepts payload[size=20] in a POST request body of String
       in a default cross-origin iframe.
-    test: small-payload.tentative.https.window.html
+    test: small-payload.https.window.html
   - subtest: fetchLater() accepts payload[size=20] in a POST request body of ArrayBuffer
       in a default cross-origin iframe.
-    test: small-payload.tentative.https.window.html
+    test: small-payload.https.window.html
   - subtest: fetchLater() accepts payload[size=20] in a POST request body of FormData
       in a default cross-origin iframe.
-    test: small-payload.tentative.https.window.html
+    test: small-payload.https.window.html
   - subtest: fetchLater() accepts payload[size=20] in a POST request body of URLSearchParams
       in a default cross-origin iframe.
-    test: small-payload.tentative.https.window.html
+    test: small-payload.https.window.html
   - subtest: fetchLater() accepts payload[size=20] in a POST request body of Blob
       in a default cross-origin iframe.
-    test: small-payload.tentative.https.window.html
+    test: small-payload.https.window.html
   - subtest: fetchLater() accepts payload[size=20] in a POST request body of File
       in a default cross-origin iframe.
-    test: small-payload.tentative.https.window.html
+    test: small-payload.https.window.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1943451
 - product: firefox
   results:
-  - test: empty-payload.tentative.https.window.html
-  - test: max-payload.tentative.https.window.html
+  - test: empty-payload.https.window.html
+  - test: max-payload.https.window.html
   - subtest: fetchLater() rejects max+1 payload in a parent-frame-origin POST request
       body of String in a default cross-origin iframe.
-    test: max-payload.tentative.https.window.html
+    test: max-payload.https.window.html
   - subtest: fetchLater() rejects max+1 payload in a self-frame-origin POST request
       body of String in a default cross-origin iframe.
-    test: max-payload.tentative.https.window.html
-  - test: oversized-payload.tentative.https.window.html
+    test: max-payload.https.window.html
+  - test: oversized-payload.https.window.html
   - subtest: fetchLater() does not accept payload[size=8193] exceeding per-origin
       quota in a POST request body of String in a default cross-origin iframe.
-    test: oversized-payload.tentative.https.window.html
+    test: oversized-payload.https.window.html
   - subtest: fetchLater() does not accept payload[size=8193] exceeding per-origin
       quota in a POST request body of ArrayBuffer in a default cross-origin iframe.
-    test: oversized-payload.tentative.https.window.html
+    test: oversized-payload.https.window.html
   - subtest: fetchLater() does not accept payload[size=8193] exceeding per-origin
       quota in a POST request body of FormData in a default cross-origin iframe.
-    test: oversized-payload.tentative.https.window.html
+    test: oversized-payload.https.window.html
   - subtest: fetchLater() does not accept payload[size=8193] exceeding per-origin
       quota in a POST request body of URLSearchParams in a default cross-origin iframe.
-    test: oversized-payload.tentative.https.window.html
+    test: oversized-payload.https.window.html
   - subtest: fetchLater() does not accept payload[size=8193] exceeding per-origin
       quota in a POST request body of Blob in a default cross-origin iframe.
-    test: oversized-payload.tentative.https.window.html
+    test: oversized-payload.https.window.html
   - subtest: fetchLater() does not accept payload[size=8193] exceeding per-origin
       quota in a POST request body of File in a default cross-origin iframe.
-    test: oversized-payload.tentative.https.window.html
-  - test: small-payload.tentative.https.window.html
+    test: oversized-payload.https.window.html
+  - test: small-payload.https.window.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1970587
 - product: firefox
   results:
-  - test: multiple-iframes.tentative.https.window.html
+  - test: multiple-iframes.https.window.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1988907
+- product: firefox
+  results:
+  - subtest: The 2nd fetchLater(same-origin) call in a default cross-origin child
+      iframe has its owned per-origin quota for a request POST body of String.
+    test: accumulated-oversized-payload.https.window.html
+  - test: empty-payload.https.window.html
+  - subtest: fetchLater() does not accept empty POST request body of String in a default
+      cross-origin iframe.
+    test: empty-payload.https.window.html
+  - subtest: fetchLater() does not accept empty POST request body of ArrayBuffer in
+      a default cross-origin iframe.
+    test: empty-payload.https.window.html
+  - subtest: fetchLater() accepts a non-empty POST request body of FormData in a default
+      cross-origin iframe.
+    test: empty-payload.https.window.html
+  - subtest: fetchLater() does not accept empty POST request body of URLSearchParams
+      in a default cross-origin iframe.
+    test: empty-payload.https.window.html
+  - subtest: fetchLater() does not accept empty POST request body of Blob in a default
+      cross-origin iframe.
+    test: empty-payload.https.window.html
+  - subtest: fetchLater() does not accept empty POST request body of File in a default
+      cross-origin iframe.
+    test: empty-payload.https.window.html
+  - test: max-payload.https.window.html
+  - subtest: fetchLater() accepts max payload in a parent-frame-origin POST request
+      body of String in a default cross-origin iframe.
+    test: max-payload.https.window.html
+  - subtest: fetchLater() rejects max+1 payload in a parent-frame-origin POST request
+      body of String in a default cross-origin iframe.
+    test: max-payload.https.window.html
+  - subtest: fetchLater() accepts max payload in a self-frame-origin POST request
+      body of String in a default cross-origin iframe.
+    test: max-payload.https.window.html
+  - subtest: fetchLater() rejects max+1 payload in a self-frame-origin POST request
+      body of String in a default cross-origin iframe.
+    test: max-payload.https.window.html
+  - subtest: fetchLater() request quota are delegated to cross-origin iframes and
+      not shared, even if they are same origin.
+    test: multiple-iframes.https.window.html
+  - test: small-payload.https.window.html
+  - subtest: fetchLater() accepts payload[size=20] in a POST request body of String
+      in a default cross-origin iframe.
+    test: small-payload.https.window.html
+  - subtest: fetchLater() accepts payload[size=20] in a POST request body of ArrayBuffer
+      in a default cross-origin iframe.
+    test: small-payload.https.window.html
+  - subtest: fetchLater() accepts payload[size=20] in a POST request body of FormData
+      in a default cross-origin iframe.
+    test: small-payload.https.window.html
+  - subtest: fetchLater() accepts payload[size=20] in a POST request body of URLSearchParams
+      in a default cross-origin iframe.
+    test: small-payload.https.window.html
+  - subtest: fetchLater() accepts payload[size=20] in a POST request body of Blob
+      in a default cross-origin iframe.
+    test: small-payload.https.window.html
+  - subtest: fetchLater() accepts payload[size=20] in a POST request body of File
+      in a default cross-origin iframe.
+    test: small-payload.https.window.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1988924
