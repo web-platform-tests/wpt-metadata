@@ -1,0 +1,24 @@
+links:
+- product: firefox
+  results:
+  - subtest: Test referer header https://web-platform.test:8443
+    test: header-referrer-no-referrer-when-downgrade.https.html
+  - subtest: 'Test referer header '
+    test: header-referrer-no-referrer.https.html
+  - subtest: Test referer header https://web-platform.test:8443
+    test: header-referrer-origin-when-cross-origin.https.html
+  - subtest: Test referer header https://www1.web-platform.test:8443
+    test: header-referrer-origin-when-cross-origin.https.html
+  - subtest: Test referer header https://www1.web-platform.test:8443
+    test: header-referrer-origin.https.html
+  - subtest: 'Test referer header '
+    test: header-referrer-same-origin.https.html
+  - subtest: Test referer header https://www1.web-platform.test:8443
+    test: header-referrer-same-origin.https.html
+  - subtest: Test referer header https://www1.web-platform.test:8443
+    test: header-referrer-strict-origin-when-cross-origin.https.html
+  - subtest: Test referer header https://web-platform.test:8443
+    test: header-referrer-strict-origin.https.html
+  - subtest: Test referer header https://web-platform.test:8443
+    test: header-referrer-unsafe-url.https.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1988924

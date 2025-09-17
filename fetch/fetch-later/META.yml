@@ -126,3 +126,75 @@ links:
   - subtest: 'fetchLater() throws TypeError on blob: scheme.'
     test: basic.tentative.https.window.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1986231
+- product: firefox
+  results:
+  - test: send-on-deactivate.https.window.html
+  - subtest: fetchLater() sends on page entering BFCache if BackgroundSync is off.
+    test: send-on-deactivate.https.window.html
+  - subtest: Call fetchLater() when BFCached with activateAfter=0 sends immediately.
+    test: send-on-deactivate.https.window.html
+  - subtest: fetchLater() sends on navigating away a page w/o BFCache.
+    test: send-on-deactivate.https.window.html
+  - subtest: fetchLater() does not send aborted request on navigating away a page
+      w/o BFCache.
+    test: send-on-deactivate.https.window.html
+  - subtest: fetchLater() with activateAfter=1m sends on page entering BFCache if
+      BackgroundSync is off.
+    test: send-on-deactivate.https.window.html
+  - test: activate-after.https.window.html
+  - subtest: fetchLater() sends out based on activateAfter.
+    test: activate-after.https.window.html
+  - subtest: fetchLater() sends out based on activateAfter, even if document is in
+      BFCache.
+    test: activate-after.https.window.html
+  - subtest: fetchLater() cannot be called without request.
+    test: basic.https.window.html
+  - subtest: fetchLater() with same-origin (https) URL does not throw.
+    test: basic.https.window.html
+  - subtest: fetchLater() with https://localhost URL does not throw.
+    test: basic.https.window.html
+  - subtest: fetchLater() with https://127.0.0.1 URL does not throw.
+    test: basic.https.window.html
+  - subtest: fetchLater() with https://[::1] URL does not throw.
+    test: basic.https.window.html
+  - subtest: fetchLater() with https://example.com URL does not throw.
+    test: basic.https.window.html
+  - subtest: fetchLater() throws TypeError on file:// scheme.
+    test: basic.https.window.html
+  - subtest: fetchLater() throws TypeError on ftp:// scheme.
+    test: basic.https.window.html
+  - subtest: fetchLater() throws TypeError on ssh:// scheme.
+    test: basic.https.window.html
+  - subtest: fetchLater() throws TypeError on wss:// scheme.
+    test: basic.https.window.html
+  - subtest: 'fetchLater() throws TypeError on about: scheme.'
+    test: basic.https.window.html
+  - subtest: 'fetchLater() throws TypeError on javascript: scheme.'
+    test: basic.https.window.html
+  - subtest: 'fetchLater() throws TypeError on data: scheme.'
+    test: basic.https.window.html
+  - subtest: 'fetchLater() throws TypeError on blob: scheme.'
+    test: basic.https.window.html
+  - subtest: fetchLater() throws RangeError on negative activateAfter.
+    test: basic.https.window.html
+  - subtest: fetchLater()'s return tells the deferred request is not yet sent.
+    test: basic.https.window.html
+  - subtest: fetchLater() throws TypeError when mutating its returned state.
+    test: basic.https.window.html
+  - subtest: fetchLater() throws AbortError when its initial abort signal is aborted.
+    test: basic.https.window.html
+  - subtest: fetchLater() does not throw error when it is aborted before sending.
+    test: basic.https.window.html
+  - test: iframe.https.window.html
+  - subtest: A blank iframe can trigger fetchLater.
+    test: iframe.https.window.html
+  - subtest: fetchLater() does send on page entering BFCache even if BackgroundSync
+      is on.
+    test: send-on-deactivate-with-background-sync.https.window.html
+  - subtest: fetchLater() with activateAfter=0 sends on page entering BFCache if BackgroundSync
+      is on.
+    test: send-on-deactivate-with-background-sync.https.window.html
+  - subtest: fetchLater() with activateAfter=1m does send on page entering BFCache
+      even if BackgroundSync is on.
+    test: send-on-deactivate-with-background-sync.https.window.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1988924
