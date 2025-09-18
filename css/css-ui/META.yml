@@ -280,3 +280,13 @@ links:
   - subtest: resizing of RTL textarea in RTL context
     test: resize-textarea-rtl-001.tentative.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1960510
+- product: firefox
+  results:
+  - subtest: '[inert] { interactivity: inert }'
+    test: interactivity-inert-html-attribute-ua.html
+  - subtest: '[inert] { interactivity: inert } inherited'
+    test: interactivity-inert-html-attribute-ua.html
+  - subtest: 'Author interactivity:auto on a descendant can override inherited UA
+      [inert] { interactivity: inert }'
+    test: interactivity-inert-html-attribute-ua.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1989359
