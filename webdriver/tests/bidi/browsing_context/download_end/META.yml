@@ -6,3 +6,14 @@ links:
   - subtest: test_unsubscribe[http]
     test: download_end.py
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1984042
+- product: firefox
+  results:
+  - subtest: test_subscribe[data]
+    test: download_end.py
+  - subtest: test_subscribe[http]
+    test: download_end.py
+  - subtest: test_status_complete
+    test: status.py
+  - subtest: test_status_canceled
+    test: status.py
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1989455

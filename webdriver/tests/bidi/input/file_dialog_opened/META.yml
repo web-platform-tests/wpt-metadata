@@ -4,3 +4,14 @@ links:
   - subtest: test_unsubscribe
     test: file_dialog_opened.py
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1984042
+- product: firefox
+  results:
+  - subtest: test_subscribe
+    test: file_dialog_opened.py
+  - subtest: test_multiple[True]
+    test: file_dialog_opened.py
+  - subtest: test_multiple[False]
+    test: file_dialog_opened.py
+  - subtest: test_element
+    test: file_dialog_opened.py
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1989455
