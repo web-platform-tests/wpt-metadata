@@ -1,5 +1,10 @@
 links:
-    - product: safari
-      url: https://bugs.webkit.org/show_bug.cgi?id=258209
-      results:
-        - test: audioworkletnode-onerror.https.html
+- product: safari
+  results:
+  - test: audioworkletnode-onerror.https.html
+  url: https://bugs.webkit.org/show_bug.cgi?id=258209
+- product: firefox
+  results:
+  - status: CRASH
+    test: audioworklet-audioparam-size.https.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1990157
