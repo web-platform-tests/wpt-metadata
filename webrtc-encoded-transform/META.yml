@@ -68,3 +68,8 @@ links:
         - test: script-write-twice-transform.https.html
         - test: idlharness.https.window.html?exclude=SFrameTransform.*
         - test: RTCRtpScriptTransform-bad-chunk.https.html
+    - product: chrome
+      url: https://crbug.com/399327934
+      results:
+        - test: script-transform-generateKeyFrame-simulcast.https.html
+        - test: script-transform-generateKeyFrame.https.html
