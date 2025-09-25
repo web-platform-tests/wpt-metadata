@@ -531,3 +531,36 @@ links:
   results:
   - test: overflow-body-propagation-015.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1988979
+- product: firefox
+  results:
+  - test: column-scroll-marker-002.html
+  - subtest: Scroll fifth column into view
+    test: column-scroll-marker-003.html
+  - subtest: Scroll fourth column into view again
+    test: column-scroll-marker-003.html
+  - subtest: Scroll third column into view again
+    test: column-scroll-marker-003.html
+  - subtest: Scroll second column into view again
+    test: column-scroll-marker-003.html
+  - subtest: Scroll fifth column into view
+    test: column-scroll-marker-005.html
+  - subtest: Scroll fourth column into view again
+    test: column-scroll-marker-005.html
+  - subtest: Scroll third column into view again
+    test: column-scroll-marker-005.html
+  - subtest: Scroll second column into view again
+    test: column-scroll-marker-005.html
+  - subtest: Scroll fifth column into view
+    test: column-scroll-marker-010.html
+  - subtest: Scroll fourth column into view again
+    test: column-scroll-marker-010.html
+  - subtest: Scroll third column into view again
+    test: column-scroll-marker-010.html
+  - subtest: Scroll second column into view again
+    test: column-scroll-marker-010.html
+  - subtest: Scroll first column into view
+    test: column-scroll-marker-010.html
+  - subtest: 'CSS Overflow Test: ::scroll-marker activation scrolls into view with
+      doesn''t override specified direction position with `start`'
+    test: scroll-marker-activation-specified-direction-position.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1990304
