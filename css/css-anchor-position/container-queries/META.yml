@@ -62,3 +62,20 @@ links:
   - test: anchored-fallback-color-change.html
   - test: anchored-fallback-style-containment.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1986919
+- product: firefox
+  results:
+  - subtest: '@container anchored(fallback: <position-area>) querying ''any'''
+    test: anchored-fallback-position-area-any.html
+  - subtest: 'Query condition should be valid: anchored(fallback: any)'
+    test: at-container-anchored-parsing-any.html
+  - subtest: 'Query condition should be valid: anchored(fallback: any any)'
+    test: at-container-anchored-parsing-any.html
+  - subtest: 'Query condition should be valid: anchored(fallback: any top)'
+    test: at-container-anchored-parsing-any.html
+  - subtest: 'Query condition should be valid: anchored(fallback: center any)'
+    test: at-container-anchored-parsing-any.html
+  - subtest: 'Query condition should be valid: anchored(fallback: any self-start)'
+    test: at-container-anchored-parsing-any.html
+  - subtest: 'Query condition should be valid: anchored(fallback: inline-end any)'
+    test: at-container-anchored-parsing-any.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1991142
