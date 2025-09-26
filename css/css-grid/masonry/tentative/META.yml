@@ -12,3 +12,55 @@ links:
       four] 30px 40px [five six])'
     test: masonry-grid-template-columns-computed-withcontent.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1972618
+- product: firefox
+  results:
+  - test: masonry-not-inhibited-001.html
+  - subtest: Property grid-template-columns value '20%'
+    test: masonry-grid-template-columns-computed-withcontent.html
+  - subtest: Property grid-template-columns value 'calc(30% + 40px)'
+    test: masonry-grid-template-columns-computed-withcontent.html
+  - subtest: Property grid-template-columns value '5fr'
+    test: masonry-grid-template-columns-computed-withcontent.html
+  - subtest: Property grid-template-columns value 'min-content'
+    test: masonry-grid-template-columns-computed-withcontent.html
+  - subtest: Property grid-template-columns value 'max-content'
+    test: masonry-grid-template-columns-computed-withcontent.html
+  - subtest: Property grid-template-columns value 'auto'
+    test: masonry-grid-template-columns-computed-withcontent.html
+  - subtest: Property grid-template-columns value 'minmax(10px, auto)'
+    test: masonry-grid-template-columns-computed-withcontent.html
+  - subtest: Property grid-template-columns value 'minmax(20%, max-content)'
+    test: masonry-grid-template-columns-computed-withcontent.html
+  - subtest: Property grid-template-columns value 'minmax(min-content, calc(-0.5em
+      + 10px))'
+    test: masonry-grid-template-columns-computed-withcontent.html
+  - subtest: Property grid-template-columns value 'minmax(auto, 0)'
+    test: masonry-grid-template-columns-computed-withcontent.html
+  - subtest: Property grid-template-columns value 'fit-content(70px)'
+    test: masonry-grid-template-columns-computed-withcontent.html
+  - subtest: Property grid-template-columns value 'fit-content(20%)'
+    test: masonry-grid-template-columns-computed-withcontent.html
+  - subtest: Property grid-template-columns value 'fit-content(calc(-0.5em + 10px))'
+    test: masonry-grid-template-columns-computed-withcontent.html
+  - subtest: Property grid-template-columns value 'repeat(1, 10px)'
+    test: masonry-grid-template-columns-computed-withcontent.html
+  - subtest: Property grid-template-columns value 'repeat(1, [one two] 20%)'
+    test: masonry-grid-template-columns-computed-withcontent.html
+  - subtest: Property grid-template-columns value 'min-content repeat(5, minmax(10px,
+      auto))'
+    test: masonry-grid-template-columns-computed-withcontent.html
+  - subtest: Property grid-template-columns value '[] 150px [] 1fr []'
+    test: masonry-grid-template-columns-computed-withcontent.html
+  - subtest: Property grid-template-columns value 'repeat(auto-fill, 200px)'
+    test: masonry-grid-template-columns-computed-withcontent.html
+  - subtest: Property grid-template-columns value 'repeat(auto-fill, minmax(100px,
+      5fr) [two])'
+    test: masonry-grid-template-columns-computed-withcontent.html
+  - subtest: Property grid-template-columns value 'repeat(auto-fit, [three] minmax(max-content,
+      6em) [four])'
+    test: masonry-grid-template-columns-computed-withcontent.html
+  - subtest: Property grid-template-columns value '[one] repeat(2, minmax(50px, auto))
+      [two] 30px [three] repeat(auto-fill, 10px) 40px [four five] repeat(2, minmax(200px,
+      auto)) [six]'
+    test: masonry-grid-template-columns-computed-withcontent.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1991204
