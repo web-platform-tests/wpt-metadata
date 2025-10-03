@@ -198,3 +198,12 @@ links:
       even if BackgroundSync is on.
     test: send-on-deactivate-with-background-sync.https.window.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1988924
+- product: firefox
+  results:
+  - subtest: fetchLater() with http://localhost URL does not throw.
+    test: basic.https.window.html
+  - subtest: fetchLater() with http://127.0.0.1 URL does not throw.
+    test: basic.https.window.html
+  - subtest: fetchLater() with http://[::1] URL does not throw.
+    test: basic.https.window.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1992453
