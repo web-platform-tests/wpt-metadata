@@ -33,6 +33,8 @@ jobs:
         branch: actions/wpt-manifest
         delete-branch: true
         push-to-fork: wptmetadata-bot/wpt-metadata
+        author: wptmetadata-bot <wptmetadata-github-bot@google.com>
+        committer: wptmetadata-bot <wptmetadata-github-bot@google.com>
   # Create a separate job for only the steps that need write permissions.
   enable-auto-merge:
     runs-on: ubuntu-latest
