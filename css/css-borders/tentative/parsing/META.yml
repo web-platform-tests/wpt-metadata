@@ -1,0 +1,34 @@
+links:
+- product: firefox
+  results:
+  - subtest: Property border-shape value 'none'
+    test: border-shape-computed.html
+  - subtest: Property border-shape value 'circle()'
+    test: border-shape-computed.html
+  - subtest: Property border-shape value 'polygon(10px 10px, 100px 10px, 10px 100px)'
+    test: border-shape-computed.html
+  - subtest: Property border-shape value 'shape(from 0px 0px, hline to 100px, vline
+      to 100px, close)'
+    test: border-shape-computed.html
+  - subtest: Property border-shape value 'circle() circle()'
+    test: border-shape-computed.html
+  - subtest: Property border-shape value 'circle() polygon(10px 10px, 100px 10px,
+      10px 100px)'
+    test: border-shape-computed.html
+  - subtest: e.style['border-shape'] = "none" should set the property value
+    test: border-shape-valid.html
+  - subtest: e.style['border-shape'] = "circle()" should set the property value
+    test: border-shape-valid.html
+  - subtest: e.style['border-shape'] = "polygon(10px 10px, 100px 10px, 10px 100px)"
+      should set the property value
+    test: border-shape-valid.html
+  - subtest: e.style['border-shape'] = "shape(from 0px 0px, hline to 100px, vline
+      to 100px, close)" should set the property value
+    test: border-shape-valid.html
+  - subtest: e.style['border-shape'] = "circle() circle()" should set the property
+      value
+    test: border-shape-valid.html
+  - subtest: e.style['border-shape'] = "circle() polygon(10px 10px, 100px 10px, 10px
+      100px)" should set the property value
+    test: border-shape-valid.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1993623
