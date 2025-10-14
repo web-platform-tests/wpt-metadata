@@ -209,3 +209,30 @@ links:
       calc(20% + (sign(2cqw - 10px) * 5%))'
     test: border-image-slice-computed.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1915977
+- product: firefox
+  results:
+  - subtest: border-area border-box
+    test: background-shorthand-serialization.html
+  - subtest: border-area padding-box
+    test: background-shorthand-serialization.html
+  - subtest: e.style['background'] = "border-box content-box" should set background-color
+    test: background-valid.html
+  - subtest: e.style['background'] = "border-area" should set background-attachment
+    test: background-valid.html
+  - subtest: e.style['background'] = "border-area" should set background-clip
+    test: background-valid.html
+  - subtest: e.style['background'] = "border-area" should set background-color
+    test: background-valid.html
+  - subtest: e.style['background'] = "border-area" should set background-image
+    test: background-valid.html
+  - subtest: e.style['background'] = "border-area" should set background-origin
+    test: background-valid.html
+  - subtest: e.style['background'] = "border-area" should set background-position
+    test: background-valid.html
+  - subtest: e.style['background'] = "border-area" should set background-repeat
+    test: background-valid.html
+  - subtest: e.style['background'] = "border-area" should set background-size
+    test: background-valid.html
+  - subtest: e.style['background'] = "border-area" should not set unrelated longhands
+    test: background-valid.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1994124
