@@ -236,3 +236,10 @@ links:
   - subtest: e.style['background'] = "border-area" should not set unrelated longhands
     test: background-valid.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1994124
+- product: firefox
+  results:
+  - subtest: background-size with non-initial background-position
+    test: background-shorthand-serialization.html
+  - subtest: multiple backgrounds with varying values
+    test: background-shorthand-serialization.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1994210
