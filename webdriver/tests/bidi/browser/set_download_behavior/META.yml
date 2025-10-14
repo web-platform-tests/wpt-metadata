@@ -1,0 +1,84 @@
+links:
+- product: firefox
+  results:
+  - subtest: test_allow_and_reset
+    test: download_behavior_allowed.py
+  - subtest: test_destination_folder
+    test: download_behavior_allowed.py
+  - subtest: test_deny_and_reset
+    test: download_behavior_denied.py
+  - subtest: test_set_and_reset_globally[True]
+    test: global.py
+  - subtest: test_set_and_reset_globally[False]
+    test: global.py
+  - subtest: test_set_and_reset_globally_and_per_user_context[True-new]
+    test: global.py
+  - subtest: test_set_and_reset_globally_and_per_user_context[True-default]
+    test: global.py
+  - subtest: test_set_and_reset_globally_and_per_user_context[False-new]
+    test: global.py
+  - subtest: test_set_and_reset_globally_and_per_user_context[False-default]
+    test: global.py
+  - subtest: test_params_download_behavior_invalid_type[42]
+    test: invalid.py
+  - subtest: test_params_download_behavior_invalid_type[False]
+    test: invalid.py
+  - subtest: test_params_download_behavior_invalid_type[value2]
+    test: invalid.py
+  - subtest: test_params_download_behavior_invalid_type[foo]
+    test: invalid.py
+  - subtest: test_params_download_behavior_type_invalid_type[42]
+    test: invalid.py
+  - subtest: test_params_download_behavior_type_invalid_type[False]
+    test: invalid.py
+  - subtest: test_params_download_behavior_type_invalid_type[None]
+    test: invalid.py
+  - subtest: test_params_download_behavior_type_invalid_type[value3]
+    test: invalid.py
+  - subtest: test_params_download_behavior_type_invalid_type[value4]
+    test: invalid.py
+  - subtest: test_params_download_behavior_type_invalid_value
+    test: invalid.py
+  - subtest: test_params_download_behavior_allowed_destination_folder_invalid_value[42]
+    test: invalid.py
+  - subtest: test_params_download_behavior_allowed_destination_folder_invalid_value[False]
+    test: invalid.py
+  - subtest: test_params_download_behavior_allowed_destination_folder_invalid_value[None]
+    test: invalid.py
+  - subtest: test_params_download_behavior_allowed_destination_folder_invalid_value[value3]
+    test: invalid.py
+  - subtest: test_params_download_behavior_allowed_destination_folder_invalid_value[value4]
+    test: invalid.py
+  - subtest: test_params_user_contexts_invalid_type[42]
+    test: invalid.py
+  - subtest: test_params_user_contexts_invalid_type[False]
+    test: invalid.py
+  - subtest: test_params_user_contexts_invalid_type[None]
+    test: invalid.py
+  - subtest: test_params_user_contexts_invalid_type[foo]
+    test: invalid.py
+  - subtest: test_params_user_contexts_invalid_type[value4]
+    test: invalid.py
+  - subtest: test_params_user_contexts_empty_list
+    test: invalid.py
+  - subtest: test_params_user_contexts_value_invalid_type[42]
+    test: invalid.py
+  - subtest: test_params_user_contexts_value_invalid_type[False]
+    test: invalid.py
+  - subtest: test_params_user_contexts_value_invalid_type[None]
+    test: invalid.py
+  - subtest: test_params_user_contexts_value_invalid_type[value3]
+    test: invalid.py
+  - subtest: test_params_user_contexts_value_invalid_type[value4]
+    test: invalid.py
+  - subtest: test_params_user_contexts_value_unknown_user_context
+    test: invalid.py
+  - subtest: test_user_contexts[True-new]
+    test: user_context.py
+  - subtest: test_user_contexts[True-default]
+    test: user_context.py
+  - subtest: test_user_contexts[False-new]
+    test: user_context.py
+  - subtest: test_user_contexts[False-default]
+    test: user_context.py
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1994296
