@@ -12,3 +12,40 @@ links:
       value
     test: gap-decorations-rule-shorthand-valid.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1967363
+- product: firefox
+  results:
+  - subtest: rule-color shorthand computed from longhand values
+    test: gap-decorations-bidirectional-shorthands.html
+  - subtest: rule-width shorthand computed from longhand values
+    test: gap-decorations-bidirectional-shorthands.html
+  - subtest: rule-style shorthand computed from longhand values
+    test: gap-decorations-bidirectional-shorthands.html
+  - subtest: rule shorthand computed from longhand values
+    test: gap-decorations-bidirectional-shorthands.html
+  - subtest: Property column-rule-break value 'none'
+    test: rule-break-computed.html
+  - subtest: Property column-rule-break value 'spanning-item'
+    test: rule-break-computed.html
+  - subtest: Property column-rule-break value 'intersection'
+    test: rule-break-computed.html
+  - subtest: Property row-rule-break value 'none'
+    test: rule-break-computed.html
+  - subtest: Property row-rule-break value 'spanning-item'
+    test: rule-break-computed.html
+  - subtest: Property row-rule-break value 'intersection'
+    test: rule-break-computed.html
+  - subtest: e.style['column-rule-break'] = "none" should set the property value
+    test: rule-break-valid.html
+  - subtest: e.style['column-rule-break'] = "spanning-item" should set the property
+      value
+    test: rule-break-valid.html
+  - subtest: e.style['column-rule-break'] = "intersection" should set the property
+      value
+    test: rule-break-valid.html
+  - subtest: e.style['row-rule-break'] = "none" should set the property value
+    test: rule-break-valid.html
+  - subtest: e.style['row-rule-break'] = "spanning-item" should set the property value
+    test: rule-break-valid.html
+  - subtest: e.style['row-rule-break'] = "intersection" should set the property value
+    test: rule-break-valid.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1994333
