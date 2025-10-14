@@ -1,13 +1,32 @@
 links:
-    - product: safari
-      url: https://bugs.webkit.org/show_bug.cgi?id=223141
-      results:
-        - test: CSS-supports-CSSStyleDeclaration.html
-    - product: safari
-      url: https://bugs.webkit.org/show_bug.cgi?id=215635
-      results:
-        - test: CSS-supports-L3.html
-          subtest: selector() with unknown combinators
-    - label: interop-2023-fonts
-      results:
-        - test: CSS-supports-L5.html
+- product: safari
+  results:
+  - test: CSS-supports-CSSStyleDeclaration.html
+  url: https://bugs.webkit.org/show_bug.cgi?id=223141
+- product: safari
+  results:
+  - subtest: selector() with unknown combinators
+    test: CSS-supports-L3.html
+  url: https://bugs.webkit.org/show_bug.cgi?id=215635
+- label: interop-2023-fonts
+  results:
+  - test: CSS-supports-L5.html
+- product: firefox
+  results:
+  - subtest: '@supports at-rule'
+    test: supports-at-rule.html
+  - subtest: '@supports at-rule 1'
+    test: supports-at-rule.html
+  - subtest: '@supports at-rule 2'
+    test: supports-at-rule.html
+  - subtest: '@supports at-rule 3'
+    test: supports-at-rule.html
+  - subtest: '@supports at-rule 4'
+    test: supports-at-rule.html
+  - subtest: '@supports at-rule 6'
+    test: supports-at-rule.html
+  - subtest: '@supports at-rule 7'
+    test: supports-at-rule.html
+  - subtest: '@supports at-rule 8'
+    test: supports-at-rule.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1994307
