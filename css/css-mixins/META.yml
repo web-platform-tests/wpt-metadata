@@ -1,439 +1,432 @@
 links:
-- product: firefox
-  results:
-  - subtest: if() cycle through local
-    test: local-if-substitution.html
-  - subtest: if() cycle in condition specified value through local
-    test: local-if-substitution.html
-  - subtest: if() cycle through function
-    test: local-if-substitution.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1948709
-- product: firefox
-  results:
-  - subtest: Literal result
-    test: dashed-function-eval.html
-  - subtest: Literal result, typed return
-    test: dashed-function-eval.html
-  - subtest: Literal result, typed return, calc
-    test: dashed-function-eval.html
-  - subtest: Literal result, typed return, mismatch
-    test: dashed-function-eval.html
-  - subtest: Missing result descriptor
-    test: dashed-function-eval.html
-  - subtest: Literal result, empty
-    test: dashed-function-eval.html
-  - subtest: result cascading behavior
-    test: dashed-function-eval.html
-  - subtest: Another dashed-function in result
-    test: dashed-function-eval.html
-  - subtest: Unused argument
-    test: dashed-function-eval.html
-  - subtest: Single parameter
-    test: dashed-function-eval.html
-  - subtest: Multiple parameters
-    test: dashed-function-eval.html
-  - subtest: Single parameter, typed
-    test: dashed-function-eval.html
-  - subtest: Typed parameter with calc()
-    test: dashed-function-eval.html
-  - subtest: Untyped parameter with calc()
-    test: dashed-function-eval.html
-  - subtest: Various typed parameters
-    test: dashed-function-eval.html
-  - subtest: Parameter with complex type (auto)
-    test: dashed-function-eval.html
-  - subtest: Parameter with complex type (px)
-    test: dashed-function-eval.html
-  - subtest: Passing argument to inner function
-    test: dashed-function-eval.html
-  - subtest: var() in argument resolved before call
-    test: dashed-function-eval.html
-  - subtest: var() in argument resolved before call, typed
-    test: dashed-function-eval.html
-  - subtest: Single parameter with default value
-    test: dashed-function-eval.html
-  - subtest: Multiple parameters with defaults
-    test: dashed-function-eval.html
-  - subtest: Multiple parameters with defaults, typed
-    test: dashed-function-eval.html
-  - subtest: Unused local
-    test: dashed-function-eval.html
-  - subtest: Local does not affect outer scope
-    test: dashed-function-eval.html
-  - subtest: Substituting local in result
-    test: dashed-function-eval.html
-  - subtest: Substituting multiple locals in result
-    test: dashed-function-eval.html
-  - subtest: Local referring to another local
-    test: dashed-function-eval.html
-  - subtest: Locals appearing after result
-    test: dashed-function-eval.html
-  - subtest: Locals cascading behavior
-    test: dashed-function-eval.html
-  - subtest: Custom properties are visible inside function
-    test: dashed-function-eval.html
-  - subtest: Substitute local from outer scope
-    test: dashed-function-eval.html
-  - subtest: Substitute argument from outer scope
-    test: dashed-function-eval.html
-  - subtest: Inner argument shadowing outer argument
-    test: dashed-function-eval.html
-  - subtest: Inner argument shadowing outer local
-    test: dashed-function-eval.html
-  - subtest: Inner local shadowing outer argument
-    test: dashed-function-eval.html
-  - subtest: Inner local shadowing outer local
-    test: dashed-function-eval.html
-  - subtest: Referencing outer local containing var()
-    test: dashed-function-eval.html
-  - subtest: Referencing outer typed argument
-    test: dashed-function-eval.html
-  - subtest: Same function with different scopes
-    test: dashed-function-eval.html
-  - subtest: Referencing local two frames up
-    test: dashed-function-eval.html
-  - subtest: IACVT outer local shadows property
-    test: dashed-function-eval.html
-  - subtest: Parameter shadows custom property
-    test: dashed-function-eval.html
-  - subtest: Local shadows parameter
-    test: dashed-function-eval.html
-  - subtest: Missing only argument
-    test: dashed-function-eval.html
-  - subtest: Missing one argument of several
-    test: dashed-function-eval.html
-  - subtest: Basic @supports
-    test: function-conditionals.html
-  - subtest: Basic @supports (false)
-    test: function-conditionals.html
-  - subtest: Nested @supports
-    test: function-conditionals.html
-  - subtest: Nested @supports (false)
-    test: function-conditionals.html
-  - subtest: Inconsequential conditional
-    test: function-conditionals.html
-  - subtest: '@supports with locals'
-    test: function-conditionals.html
-  - subtest: Basic @media
-    test: function-conditionals.html
-  - subtest: Basic @media (false)
-    test: function-conditionals.html
-  - subtest: Nested @media
-    test: function-conditionals.html
-  - subtest: Nested @media (false)
-    test: function-conditionals.html
-  - subtest: Locals within @media
-    test: function-conditionals.html
-  - subtest: '@supports within @media'
-    test: function-conditionals.html
-  - subtest: '@media within @supports'
-    test: function-conditionals.html
-  - subtest: var() in attribute value substitutes locally
-    test: local-attr-substitution.html
-  - subtest: var() in attribute value substitutes locally, argument
-    test: local-attr-substitution.html
-  - subtest: var() in attribute value substitutes locally, typed
-    test: local-attr-substitution.html
-  - subtest: attr() fallback substitutes locally
-    test: local-attr-substitution.html
-  - subtest: attr() cycle through local
-    test: local-attr-substitution.html
-  - subtest: attr() cycle through fallback in local
-    test: local-attr-substitution.html
-  - subtest: attr() cycle through function
-    test: local-attr-substitution.html
-  - subtest: Fallback directly in result
-    test: local-var-substitution.html
-  - subtest: Fallback via present, but invalid local
-    test: local-var-substitution.html
-  - subtest: Fallback is locally resolved (result)
-    test: local-var-substitution.html
-  - subtest: Fallback is locally resolved (local var)
-    test: local-var-substitution.html
-  - subtest: Local with self-cycle
-    test: dashed-function-cycles.html
-  - subtest: Cycle reference without fallback makes result invalid
-    test: dashed-function-cycles.html
-  - subtest: Local with self-cycle in fallback
-    test: dashed-function-cycles.html
-  - subtest: Local shadowing cyclic property --x
-    test: dashed-function-cycles.html
-  - subtest: 'Local shadowing cyclic outer local --x '
-    test: dashed-function-cycles.html
-  - subtest: Arguments shadowing cyclic properties
-    test: dashed-function-cycles.html
-  - subtest: Observing property cycle locally
-    test: dashed-function-cycles.html
-  - subtest: Using cyclic values with no fallback
-    test: dashed-function-cycles.html
-  - subtest: Self-cycle in non-used local variable
-    test: dashed-function-cycles.html
-  - subtest: Using cyclic value in unused fallback
-    test: dashed-function-cycles.html
-  - subtest: Using cyclic value in unused fallback (local)
-    test: dashed-function-cycles.html
-  - subtest: Dashed-function, self-cycle
-    test: dashed-function-cycles.html
-  - subtest: Cycle through other function (--g)
-    test: dashed-function-cycles.html
-  - subtest: Cycle through other function (--f)
-    test: dashed-function-cycles.html
-  - subtest: Cycle through local, self
-    test: dashed-function-cycles.html
-  - subtest: Cycle through unused local
-    test: dashed-function-cycles.html
-  - subtest: Cycle through global, self
-    test: dashed-function-cycles.html
-  - subtest: Cycle through local, other function
-    test: dashed-function-cycles.html
-  - subtest: Cycle through various variables and other functions
-    test: dashed-function-cycles.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1948787
-- product: firefox
-  results:
-  - subtest: Inner function call should see resolved outer locals (reverse)
-    test: dashed-function-eval.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1950109
-- product: firefox
-  results:
-  - subtest: Can query named container in shadow
-    test: function-shadow-container.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1950667
-- product: firefox
-  results:
-  - subtest: Basic @container
-    test: function-conditionals.html
-  - subtest: Basic @container (false)
-    test: function-conditionals.html
-  - subtest: Nested @container
-    test: function-conditionals.html
-  - subtest: Nested @container (false)
-    test: function-conditionals.html
-  - subtest: Locals within @container
-    test: function-conditionals.html
-  - subtest: '@supports within @container'
-    test: function-conditionals.html
-  - subtest: '@container within @supports'
-    test: function-conditionals.html
-  - subtest: '@container, @media, @supports'
-    test: function-conditionals.html
-  - subtest: '@supports, @media, @container'
-    test: function-conditionals.html
-  - subtest: Looking up document-global function
-    test: function-shadow.html
-  - subtest: var() in if() condition's custom property value substitutes locally
-    test: local-if-substitution.html
-  - subtest: var() in if() condition's specified value substitutes locally
-    test: local-if-substitution.html
-  - subtest: var() in if() declaration value substitutes locally
-    test: local-if-substitution.html
-  - subtest: var() in if() condition's custom property value substitutes locally,
-      argument
-    test: local-if-substitution.html
-  - subtest: var() in if() condition's specified value substitutes locally, argument
-    test: local-if-substitution.html
-  - subtest: var() in if() declaration value substitutes locally, argument
-    test: local-if-substitution.html
-  - subtest: dashed function in if() declaration value
-    test: local-if-substitution.html
-  - subtest: dashed function with argument in if() declaration value
-    test: local-if-substitution.html
-  - subtest: if() cycle in condition custom property through local
-    test: local-if-substitution.html
-  - subtest: if() no cycle in overridden local
-    test: local-if-substitution.html
-  - subtest: if() no cycle in overridden argument
-    test: local-if-substitution.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1950450
-- product: firefox
-  results:
-  - subtest: '@function works inside shadow'
-    test: function-shadow.html
-  - subtest: '@function works inside nested shadow'
-    test: function-shadow.html
-  - subtest: '@function defined in outer shadow is visible'
-    test: function-shadow.html
-  - subtest: Combining functions from various scopes
-    test: function-shadow.html
-  - subtest: ::part() can not see inner functions
-    test: function-shadow.html
-  - subtest: ::slotted() can see inner functions
-    test: function-shadow.html
-  - subtest: :host can see inner functions
-    test: function-shadow.html
-  - subtest: Outer functions can't see inner functions
-    test: function-shadow.html
-  - subtest: Outer functions can't see inner functions (local vars)
-    test: function-shadow.html
-  - subtest: Local shadowing cyclic outer local --x
-    test: dashed-function-cycles.html
-  - subtest: Argument shadowing cyclic outer local --x
-    test: dashed-function-cycles.html
-  - subtest: Cycle through local, other function, fallback in function
-    test: dashed-function-cycles.html
-  - subtest: Cyclic defaults
-    test: dashed-function-cycles.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1951908
-- product: firefox
-  results:
-  - subtest: Single function within anonymous layer
-    test: function-layer.html
-  - subtest: Last anonymous layer wins
-    test: function-layer.html
-  - subtest: Unlayered styles win
-    test: function-layer.html
-  - subtest: Single named layer
-    test: function-layer.html
-  - subtest: Named layers
-    test: function-layer.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1951483
-- product: firefox
-  results:
-  - subtest: e.style['top'] = "--func(myident)" should set the property value
-    test: dashed-function-named-arg.tentative.html
-  - subtest: e.style['top'] = "--func(--myident)" should set the property value
-    test: dashed-function-named-arg.tentative.html
-  - subtest: e.style['top'] = "--func(--)" should set the property value
-    test: dashed-function-named-arg.tentative.html
-  - subtest: e.style['top'] = "--func(50px --myident:)" should set the property value
-    test: dashed-function-named-arg.tentative.html
-  - subtest: e.style['top'] = "--func({--myident:})" should set the property value
-    test: dashed-function-named-arg.tentative.html
-  - subtest: e.style['top'] = "--func({ --myident:})" should set the property value
-    test: dashed-function-named-arg.tentative.html
-  - subtest: e.style['top'] = "--func({--myident :})" should set the property value
-    test: dashed-function-named-arg.tentative.html
-  - subtest: 'e.style[''top''] = "--func({--myident: })" should set the property value'
-    test: dashed-function-named-arg.tentative.html
-  - subtest: 'e.style[''top''] = "--func(10px, { --myident : })" should set the property
-      value'
-    test: dashed-function-named-arg.tentative.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1952948
-- product: firefox
-  results:
-  - subtest: Function in a cycle with its own default
-    test: dashed-function-cycles.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1950126
-- product: firefox
-  results:
-  - subtest: Cyclic outer --b shadows custom property
-    test: dashed-function-cycles.html
-  - subtest: Locals are function specific
-    test: dashed-function-cycles.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1964707
-- product: firefox
-  results:
-  - subtest: '@function --foo() is valid'
-    test: at-function-parsing.html
-  - subtest: '@function --foo( ) is valid'
-    test: at-function-parsing.html
-  - subtest: '@function --foo(--x) is valid'
-    test: at-function-parsing.html
-  - subtest: '@function --foo( --x ) is valid'
-    test: at-function-parsing.html
-  - subtest: '@function --foo(--x auto) is valid'
-    test: at-function-parsing.html
-  - subtest: '@function --foo(--x <angle>) is valid'
-    test: at-function-parsing.html
-  - subtest: '@function --foo(--x <color>) is valid'
-    test: at-function-parsing.html
-  - subtest: '@function --foo(--x <custom-ident>) is valid'
-    test: at-function-parsing.html
-  - subtest: '@function --foo(--x <image>) is valid'
-    test: at-function-parsing.html
-  - subtest: '@function --foo(--x <integer>) is valid'
-    test: at-function-parsing.html
-  - subtest: '@function --foo(--x <length>) is valid'
-    test: at-function-parsing.html
-  - subtest: '@function --foo(--x <length-percentage>) is valid'
-    test: at-function-parsing.html
-  - subtest: '@function --foo(--x <number>) is valid'
-    test: at-function-parsing.html
-  - subtest: '@function --foo(--x <percentage>) is valid'
-    test: at-function-parsing.html
-  - subtest: '@function --foo(--x <resolution>) is valid'
-    test: at-function-parsing.html
-  - subtest: '@function --foo(--x <string>) is valid'
-    test: at-function-parsing.html
-  - subtest: '@function --foo(--x <time>) is valid'
-    test: at-function-parsing.html
-  - subtest: '@function --foo(--x <url>) is valid'
-    test: at-function-parsing.html
-  - subtest: '@function --foo(--x <transform-function>) is valid'
-    test: at-function-parsing.html
-  - subtest: '@function --foo(--x <transform-list>) is valid'
-    test: at-function-parsing.html
-  - subtest: '@function --foo(--x type(auto)) is valid'
-    test: at-function-parsing.html
-  - subtest: '@function --foo(--x type(<length>)) is valid'
-    test: at-function-parsing.html
-  - subtest: '@function --foo(--x type(<length> | auto)) is valid'
-    test: at-function-parsing.html
-  - subtest: '@function --foo(--x type(none | auto)) is valid'
-    test: at-function-parsing.html
-  - subtest: '@function --foo(--x type(*)) is valid'
-    test: at-function-parsing.html
-  - subtest: '@function --foo(--x, --y) is valid'
-    test: at-function-parsing.html
-  - subtest: '@function --foo(--x, --y, --z) is valid'
-    test: at-function-parsing.html
-  - subtest: '@function --foo(--x <length>, --y, --z) is valid'
-    test: at-function-parsing.html
-  - subtest: '@function --foo(--x, --y <number>, --z <angle>) is valid'
-    test: at-function-parsing.html
-  - subtest: '@function --foo(--x : 10px) is valid'
-    test: at-function-parsing.html
-  - subtest: '@function --foo(--x type(*): 10px) is valid'
-    test: at-function-parsing.html
-  - subtest: '@function --foo(--x <length>: 10px) is valid'
-    test: at-function-parsing.html
-  - subtest: '@function --foo(--x <length>: 10px, --y) is valid'
-    test: at-function-parsing.html
-  - subtest: '@function --foo(--x, --y <length>: 10px) is valid'
-    test: at-function-parsing.html
-  - subtest: '@function --foo(--x type(<length> | auto): auto) is valid'
-    test: at-function-parsing.html
-  - subtest: '@function --foo(--x type(<length> | auto) : auto) is valid'
-    test: at-function-parsing.html
-  - subtest: '@function --foo(--x:1px, --y, --z:2px) is valid'
-    test: at-function-parsing.html
-  - subtest: '@function --foo(--x <length>#) is valid'
-    test: at-function-parsing.html
-  - subtest: '@function --foo(--x <length>+) is valid'
-    test: at-function-parsing.html
-  - subtest: '@function --foo(--x type(<length>+)) is valid'
-    test: at-function-parsing.html
-  - subtest: '@function --foo(--x <transform-function>#) is valid'
-    test: at-function-parsing.html
-  - subtest: '@function --foo(--x <transform-function>+) is valid'
-    test: at-function-parsing.html
-  - subtest: '@function --foo(--x) returns type(*) is valid'
-    test: at-function-parsing.html
-  - subtest: '@function --foo(--x) returns <length> is valid'
-    test: at-function-parsing.html
-  - subtest: '@function --foo(--x) returns <length>+ is valid'
-    test: at-function-parsing.html
-  - subtest: '@function --foo(--x) returns type(<length>) is valid'
-    test: at-function-parsing.html
-  - subtest: '@function --foo(--x) returns type(<length> | auto) is valid'
-    test: at-function-parsing.html
-  - subtest: '@function --foo(--x) returns type(foo | bar) is valid'
-    test: at-function-parsing.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1972615
-- product: firefox
-  results:
-  - subtest: 'CSS Mixins: Basic test'
-    test: basic.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1983645
-- product: firefox
-  results:
-  - subtest: 'CSS Mixins: @import with media queries'
-    test: import-with-media-queries.html
-  - subtest: 'CSS Mixins: Mixin from an imported stylesheet'
-    test: import.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1983647
-- product: firefox
-  results:
-  - subtest: Fallback is used with no parameter and no default
-    test: parameters.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1989374
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1948709
+      results:
+        - test: local-if-substitution.html
+          subtest: if() cycle through local
+        - test: local-if-substitution.html
+          subtest: if() cycle in condition specified value through local
+        - test: local-if-substitution.html
+          subtest: if() cycle through function
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1948787
+      results:
+        - test: dashed-function-eval.html
+          subtest: Literal result
+        - test: dashed-function-eval.html
+          subtest: Literal result, typed return
+        - test: dashed-function-eval.html
+          subtest: Literal result, typed return, calc
+        - test: dashed-function-eval.html
+          subtest: Literal result, typed return, mismatch
+        - test: dashed-function-eval.html
+          subtest: Missing result descriptor
+        - test: dashed-function-eval.html
+          subtest: Literal result, empty
+        - test: dashed-function-eval.html
+          subtest: result cascading behavior
+        - test: dashed-function-eval.html
+          subtest: Another dashed-function in result
+        - test: dashed-function-eval.html
+          subtest: Unused argument
+        - test: dashed-function-eval.html
+          subtest: Single parameter
+        - test: dashed-function-eval.html
+          subtest: Multiple parameters
+        - test: dashed-function-eval.html
+          subtest: Single parameter, typed
+        - test: dashed-function-eval.html
+          subtest: Typed parameter with calc()
+        - test: dashed-function-eval.html
+          subtest: Untyped parameter with calc()
+        - test: dashed-function-eval.html
+          subtest: Various typed parameters
+        - test: dashed-function-eval.html
+          subtest: Parameter with complex type (auto)
+        - test: dashed-function-eval.html
+          subtest: Parameter with complex type (px)
+        - test: dashed-function-eval.html
+          subtest: Passing argument to inner function
+        - test: dashed-function-eval.html
+          subtest: var() in argument resolved before call
+        - test: dashed-function-eval.html
+          subtest: var() in argument resolved before call, typed
+        - test: dashed-function-eval.html
+          subtest: Single parameter with default value
+        - test: dashed-function-eval.html
+          subtest: Multiple parameters with defaults
+        - test: dashed-function-eval.html
+          subtest: Multiple parameters with defaults, typed
+        - test: dashed-function-eval.html
+          subtest: Unused local
+        - test: dashed-function-eval.html
+          subtest: Local does not affect outer scope
+        - test: dashed-function-eval.html
+          subtest: Substituting local in result
+        - test: dashed-function-eval.html
+          subtest: Substituting multiple locals in result
+        - test: dashed-function-eval.html
+          subtest: Local referring to another local
+        - test: dashed-function-eval.html
+          subtest: Locals appearing after result
+        - test: dashed-function-eval.html
+          subtest: Locals cascading behavior
+        - test: dashed-function-eval.html
+          subtest: Custom properties are visible inside function
+        - test: dashed-function-eval.html
+          subtest: Substitute local from outer scope
+        - test: dashed-function-eval.html
+          subtest: Substitute argument from outer scope
+        - test: dashed-function-eval.html
+          subtest: Inner argument shadowing outer argument
+        - test: dashed-function-eval.html
+          subtest: Inner argument shadowing outer local
+        - test: dashed-function-eval.html
+          subtest: Inner local shadowing outer argument
+        - test: dashed-function-eval.html
+          subtest: Inner local shadowing outer local
+        - test: dashed-function-eval.html
+          subtest: Referencing outer local containing var()
+        - test: dashed-function-eval.html
+          subtest: Referencing outer typed argument
+        - test: dashed-function-eval.html
+          subtest: Same function with different scopes
+        - test: dashed-function-eval.html
+          subtest: Referencing local two frames up
+        - test: dashed-function-eval.html
+          subtest: IACVT outer local shadows property
+        - test: dashed-function-eval.html
+          subtest: Parameter shadows custom property
+        - test: dashed-function-eval.html
+          subtest: Local shadows parameter
+        - test: dashed-function-eval.html
+          subtest: Missing only argument
+        - test: dashed-function-eval.html
+          subtest: Missing one argument of several
+        - test: function-conditionals.html
+          subtest: Basic @supports
+        - test: function-conditionals.html
+          subtest: Basic @supports (false)
+        - test: function-conditionals.html
+          subtest: Nested @supports
+        - test: function-conditionals.html
+          subtest: Nested @supports (false)
+        - test: function-conditionals.html
+          subtest: Inconsequential conditional
+        - test: function-conditionals.html
+          subtest: '@supports with locals'
+        - test: function-conditionals.html
+          subtest: Basic @media
+        - test: function-conditionals.html
+          subtest: Basic @media (false)
+        - test: function-conditionals.html
+          subtest: Nested @media
+        - test: function-conditionals.html
+          subtest: Nested @media (false)
+        - test: function-conditionals.html
+          subtest: Locals within @media
+        - test: function-conditionals.html
+          subtest: '@supports within @media'
+        - test: function-conditionals.html
+          subtest: '@media within @supports'
+        - test: local-attr-substitution.html
+          subtest: var() in attribute value substitutes locally
+        - test: local-attr-substitution.html
+          subtest: var() in attribute value substitutes locally, argument
+        - test: local-attr-substitution.html
+          subtest: var() in attribute value substitutes locally, typed
+        - test: local-attr-substitution.html
+          subtest: attr() fallback substitutes locally
+        - test: local-attr-substitution.html
+          subtest: attr() cycle through local
+        - test: local-attr-substitution.html
+          subtest: attr() cycle through fallback in local
+        - test: local-attr-substitution.html
+          subtest: attr() cycle through function
+        - test: local-var-substitution.html
+          subtest: Fallback directly in result
+        - test: local-var-substitution.html
+          subtest: Fallback via present, but invalid local
+        - test: local-var-substitution.html
+          subtest: Fallback is locally resolved (result)
+        - test: local-var-substitution.html
+          subtest: Fallback is locally resolved (local var)
+        - test: dashed-function-cycles.html
+          subtest: Local with self-cycle
+        - test: dashed-function-cycles.html
+          subtest: Cycle reference without fallback makes result invalid
+        - test: dashed-function-cycles.html
+          subtest: Local with self-cycle in fallback
+        - test: dashed-function-cycles.html
+          subtest: Local shadowing cyclic property --x
+        - test: dashed-function-cycles.html
+          subtest: 'Local shadowing cyclic outer local --x '
+        - test: dashed-function-cycles.html
+          subtest: Arguments shadowing cyclic properties
+        - test: dashed-function-cycles.html
+          subtest: Observing property cycle locally
+        - test: dashed-function-cycles.html
+          subtest: Using cyclic values with no fallback
+        - test: dashed-function-cycles.html
+          subtest: Self-cycle in non-used local variable
+        - test: dashed-function-cycles.html
+          subtest: Using cyclic value in unused fallback
+        - test: dashed-function-cycles.html
+          subtest: Using cyclic value in unused fallback (local)
+        - test: dashed-function-cycles.html
+          subtest: Dashed-function, self-cycle
+        - test: dashed-function-cycles.html
+          subtest: Cycle through other function (--g)
+        - test: dashed-function-cycles.html
+          subtest: Cycle through other function (--f)
+        - test: dashed-function-cycles.html
+          subtest: Cycle through local, self
+        - test: dashed-function-cycles.html
+          subtest: Cycle through unused local
+        - test: dashed-function-cycles.html
+          subtest: Cycle through global, self
+        - test: dashed-function-cycles.html
+          subtest: Cycle through local, other function
+        - test: dashed-function-cycles.html
+          subtest: Cycle through various variables and other functions
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1950109
+      results:
+        - test: dashed-function-eval.html
+          subtest: Inner function call should see resolved outer locals (reverse)
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1950667
+      results:
+        - test: function-shadow-container.html
+          subtest: Can query named container in shadow
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1950450
+      results:
+        - test: function-conditionals.html
+          subtest: Basic @container
+        - test: function-conditionals.html
+          subtest: Basic @container (false)
+        - test: function-conditionals.html
+          subtest: Nested @container
+        - test: function-conditionals.html
+          subtest: Nested @container (false)
+        - test: function-conditionals.html
+          subtest: Locals within @container
+        - test: function-conditionals.html
+          subtest: '@supports within @container'
+        - test: function-conditionals.html
+          subtest: '@container within @supports'
+        - test: function-conditionals.html
+          subtest: '@container, @media, @supports'
+        - test: function-conditionals.html
+          subtest: '@supports, @media, @container'
+        - test: function-shadow.html
+          subtest: Looking up document-global function
+        - test: local-if-substitution.html
+          subtest: var() in if() condition's custom property value substitutes locally
+        - test: local-if-substitution.html
+          subtest: var() in if() condition's specified value substitutes locally
+        - test: local-if-substitution.html
+          subtest: var() in if() declaration value substitutes locally
+        - test: local-if-substitution.html
+          subtest: var() in if() condition's custom property value substitutes locally, argument
+        - test: local-if-substitution.html
+          subtest: var() in if() condition's specified value substitutes locally, argument
+        - test: local-if-substitution.html
+          subtest: var() in if() declaration value substitutes locally, argument
+        - test: local-if-substitution.html
+          subtest: dashed function in if() declaration value
+        - test: local-if-substitution.html
+          subtest: dashed function with argument in if() declaration value
+        - test: local-if-substitution.html
+          subtest: if() cycle in condition custom property through local
+        - test: local-if-substitution.html
+          subtest: if() no cycle in overridden local
+        - test: local-if-substitution.html
+          subtest: if() no cycle in overridden argument
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1951908
+      results:
+        - test: function-shadow.html
+          subtest: '@function works inside shadow'
+        - test: function-shadow.html
+          subtest: '@function works inside nested shadow'
+        - test: function-shadow.html
+          subtest: '@function defined in outer shadow is visible'
+        - test: function-shadow.html
+          subtest: Combining functions from various scopes
+        - test: function-shadow.html
+          subtest: ::part() can not see inner functions
+        - test: function-shadow.html
+          subtest: ::slotted() can see inner functions
+        - test: function-shadow.html
+          subtest: :host can see inner functions
+        - test: function-shadow.html
+          subtest: Outer functions can't see inner functions
+        - test: function-shadow.html
+          subtest: Outer functions can't see inner functions (local vars)
+        - test: dashed-function-cycles.html
+          subtest: Local shadowing cyclic outer local --x
+        - test: dashed-function-cycles.html
+          subtest: Argument shadowing cyclic outer local --x
+        - test: dashed-function-cycles.html
+          subtest: Cycle through local, other function, fallback in function
+        - test: dashed-function-cycles.html
+          subtest: Cyclic defaults
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1951483
+      results:
+        - test: function-layer.html
+          subtest: Single function within anonymous layer
+        - test: function-layer.html
+          subtest: Last anonymous layer wins
+        - test: function-layer.html
+          subtest: Unlayered styles win
+        - test: function-layer.html
+          subtest: Single named layer
+        - test: function-layer.html
+          subtest: Named layers
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1952948
+      results:
+        - test: dashed-function-named-arg.tentative.html
+          subtest: e.style['top'] = "--func(myident)" should set the property value
+        - test: dashed-function-named-arg.tentative.html
+          subtest: e.style['top'] = "--func(--myident)" should set the property value
+        - test: dashed-function-named-arg.tentative.html
+          subtest: e.style['top'] = "--func(--)" should set the property value
+        - test: dashed-function-named-arg.tentative.html
+          subtest: e.style['top'] = "--func(50px --myident:)" should set the property value
+        - test: dashed-function-named-arg.tentative.html
+          subtest: e.style['top'] = "--func({--myident:})" should set the property value
+        - test: dashed-function-named-arg.tentative.html
+          subtest: e.style['top'] = "--func({ --myident:})" should set the property value
+        - test: dashed-function-named-arg.tentative.html
+          subtest: e.style['top'] = "--func({--myident :})" should set the property value
+        - test: dashed-function-named-arg.tentative.html
+          subtest: 'e.style[''top''] = "--func({--myident: })" should set the property value'
+        - test: dashed-function-named-arg.tentative.html
+          subtest: 'e.style[''top''] = "--func(10px, { --myident : })" should set the property value'
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1950126
+      results:
+        - test: dashed-function-cycles.html
+          subtest: Function in a cycle with its own default
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1964707
+      results:
+        - test: dashed-function-cycles.html
+          subtest: Cyclic outer --b shadows custom property
+        - test: dashed-function-cycles.html
+          subtest: Locals are function specific
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1972615
+      results:
+        - test: at-function-parsing.html
+          subtest: '@function --foo() is valid'
+        - test: at-function-parsing.html
+          subtest: '@function --foo( ) is valid'
+        - test: at-function-parsing.html
+          subtest: '@function --foo(--x) is valid'
+        - test: at-function-parsing.html
+          subtest: '@function --foo( --x ) is valid'
+        - test: at-function-parsing.html
+          subtest: '@function --foo(--x auto) is valid'
+        - test: at-function-parsing.html
+          subtest: '@function --foo(--x <angle>) is valid'
+        - test: at-function-parsing.html
+          subtest: '@function --foo(--x <color>) is valid'
+        - test: at-function-parsing.html
+          subtest: '@function --foo(--x <custom-ident>) is valid'
+        - test: at-function-parsing.html
+          subtest: '@function --foo(--x <image>) is valid'
+        - test: at-function-parsing.html
+          subtest: '@function --foo(--x <integer>) is valid'
+        - test: at-function-parsing.html
+          subtest: '@function --foo(--x <length>) is valid'
+        - test: at-function-parsing.html
+          subtest: '@function --foo(--x <length-percentage>) is valid'
+        - test: at-function-parsing.html
+          subtest: '@function --foo(--x <number>) is valid'
+        - test: at-function-parsing.html
+          subtest: '@function --foo(--x <percentage>) is valid'
+        - test: at-function-parsing.html
+          subtest: '@function --foo(--x <resolution>) is valid'
+        - test: at-function-parsing.html
+          subtest: '@function --foo(--x <string>) is valid'
+        - test: at-function-parsing.html
+          subtest: '@function --foo(--x <time>) is valid'
+        - test: at-function-parsing.html
+          subtest: '@function --foo(--x <url>) is valid'
+        - test: at-function-parsing.html
+          subtest: '@function --foo(--x <transform-function>) is valid'
+        - test: at-function-parsing.html
+          subtest: '@function --foo(--x <transform-list>) is valid'
+        - test: at-function-parsing.html
+          subtest: '@function --foo(--x type(auto)) is valid'
+        - test: at-function-parsing.html
+          subtest: '@function --foo(--x type(<length>)) is valid'
+        - test: at-function-parsing.html
+          subtest: '@function --foo(--x type(<length> | auto)) is valid'
+        - test: at-function-parsing.html
+          subtest: '@function --foo(--x type(none | auto)) is valid'
+        - test: at-function-parsing.html
+          subtest: '@function --foo(--x type(*)) is valid'
+        - test: at-function-parsing.html
+          subtest: '@function --foo(--x, --y) is valid'
+        - test: at-function-parsing.html
+          subtest: '@function --foo(--x, --y, --z) is valid'
+        - test: at-function-parsing.html
+          subtest: '@function --foo(--x <length>, --y, --z) is valid'
+        - test: at-function-parsing.html
+          subtest: '@function --foo(--x, --y <number>, --z <angle>) is valid'
+        - test: at-function-parsing.html
+          subtest: '@function --foo(--x : 10px) is valid'
+        - test: at-function-parsing.html
+          subtest: '@function --foo(--x type(*): 10px) is valid'
+        - test: at-function-parsing.html
+          subtest: '@function --foo(--x <length>: 10px) is valid'
+        - test: at-function-parsing.html
+          subtest: '@function --foo(--x <length>: 10px, --y) is valid'
+        - test: at-function-parsing.html
+          subtest: '@function --foo(--x, --y <length>: 10px) is valid'
+        - test: at-function-parsing.html
+          subtest: '@function --foo(--x type(<length> | auto): auto) is valid'
+        - test: at-function-parsing.html
+          subtest: '@function --foo(--x type(<length> | auto) : auto) is valid'
+        - test: at-function-parsing.html
+          subtest: '@function --foo(--x:1px, --y, --z:2px) is valid'
+        - test: at-function-parsing.html
+          subtest: '@function --foo(--x <length>#) is valid'
+        - test: at-function-parsing.html
+          subtest: '@function --foo(--x <length>+) is valid'
+        - test: at-function-parsing.html
+          subtest: '@function --foo(--x type(<length>+)) is valid'
+        - test: at-function-parsing.html
+          subtest: '@function --foo(--x <transform-function>#) is valid'
+        - test: at-function-parsing.html
+          subtest: '@function --foo(--x <transform-function>+) is valid'
+        - test: at-function-parsing.html
+          subtest: '@function --foo(--x) returns type(*) is valid'
+        - test: at-function-parsing.html
+          subtest: '@function --foo(--x) returns <length> is valid'
+        - test: at-function-parsing.html
+          subtest: '@function --foo(--x) returns <length>+ is valid'
+        - test: at-function-parsing.html
+          subtest: '@function --foo(--x) returns type(<length>) is valid'
+        - test: at-function-parsing.html
+          subtest: '@function --foo(--x) returns type(<length> | auto) is valid'
+        - test: at-function-parsing.html
+          subtest: '@function --foo(--x) returns type(foo | bar) is valid'
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1983647
+      results:
+        - test: mixin-from-import-with-media-queries.html
+          subtest: 'CSS Mixins: @import with media queries'
+        - test: mixin-from-import.html
+          subtest: 'CSS Mixins: Mixin from an imported stylesheet'
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1983645
+      results:
+        - test: mixin-basic.html
+          subtest: 'CSS Mixins: Basic test'
