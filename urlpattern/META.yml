@@ -812,6 +812,18 @@ links:
       results:
         - test: urlpattern.https.any.worker.html
           subtest: 'Pattern: [{"pathname":"*{}**?"}] Inputs: [{"pathname":"foobar"}]'
+        - test: urlpattern.any.worker.html
+          subtest: 'Pattern: [{"pathname":"*{}**?"}] Inputs: [{"pathname":"foobar"}]'
+        - test: urlpattern.any.sharedworker.html
+          subtest: 'Pattern: [{"pathname":"*{}**?"}] Inputs: [{"pathname":"foobar"}]'
+        - test: urlpattern.https.any.sharedworker.html
+          subtest: 'Pattern: [{"pathname":"*{}**?"}] Inputs: [{"pathname":"foobar"}]'
+        - test: urlpattern.any.html
+          subtest: 'Pattern: [{"pathname":"*{}**?"}] Inputs: [{"pathname":"foobar"}]'
+        - test: urlpattern.https.any.serviceworker.html
+          subtest: 'Pattern: [{"pathname":"*{}**?"}] Inputs: [{"pathname":"foobar"}]'
+        - test: urlpattern.any.serviceworker.html
+          subtest: 'Pattern: [{"pathname":"*{}**?"}] Inputs: [{"pathname":"foobar"}]'
         - test: urlpattern.https.any.html
           subtest: 'Pattern: [{"pathname":"*{}**?"}] Inputs: [{"pathname":"foobar"}]'
     - product: firefox
