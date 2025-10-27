@@ -1,8 +1,13 @@
 links:
-- product: firefox
-  results:
-  - subtest: test_set_permission_origin_unknown[UNKNOWN]
-    test: set_permission.py
-  - subtest: test_set_permission_origin_unknown[]
-    test: set_permission.py
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1930283
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1930283
+      results:
+        - test: set_permission.py
+          subtest: test_set_permission_origin_unknown[UNKNOWN]
+        - test: set_permission.py
+          subtest: test_set_permission_origin_unknown[]
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1895457
+      results:
+        - test: set_permission.py
+          subtest: test_set_permission_iframe
