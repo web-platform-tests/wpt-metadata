@@ -1,55 +1,51 @@
 links:
-- product: firefox
-  results:
-  - subtest: View-transition pseudo elements created for correct element
-    test: capture.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1962506
-- product: firefox
-  results:
-  - subtest: Display none during a view transition skips the transition.
-    test: display-none-during-transition.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1964201
-- product: firefox
-  results:
-  - subtest: Scoped view transition with name auto on the scoped element
-    test: auto-name-on-descendant.html
-  - subtest: Scoped view transition with name auto on the scoped element
-    test: auto-name.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1964195
-- product: firefox
-  results:
-  - subtest: Synchronously starting a view transition on document.documentElement
-      skips the previously active document view transition.
-    test: document-element-start-view-transition.html
-  - subtest: Synchronously starting a view transition on document skips the previously
-      active view transition on document.documentElement.
-    test: document-element-start-view-transition.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1964194
-- product: firefox
-  results:
-  - test: from-scale-zero.html
-  - test: to-scale-zero.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1972543
-- product: firefox
-  results:
-  - subtest: View transition duration affected by playback rate
-    test: negative-playback-rate.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1972654
-- product: firefox
-  results:
-  - subtest: View transition animations do not persist once the transition is finished
-      even if animation-fill-mode is forwards
-    test: fill-forwards.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1972656
-- product: firefox
-  results:
-  - subtest: Scoped view transition on an inline-block element
-    test: display-inline-block.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1981561
-- product: firefox
-  results:
-  - test: display-change.html
-  - test: nested-scope.html
-  - test: new-content.html
-  - test: old-content.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1988020
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1962506
+      results:
+        - test: capture.html
+          subtest: View-transition pseudo elements created for correct element
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1964201
+      results:
+        - test: display-none-during-transition.html
+          subtest: Display none during a view transition skips the transition.
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1964195
+      results:
+        - test: auto-name-on-descendant.html
+          subtest: Scoped view transition with name auto on the scoped element
+        - test: auto-name.html
+          subtest: Scoped view transition with name auto on the scoped element
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1964194
+      results:
+        - test: document-element-start-view-transition.html
+          subtest: Synchronously starting a view transition on document.documentElement skips the previously active document view transition.
+        - test: document-element-start-view-transition.html
+          subtest: Synchronously starting a view transition on document skips the previously active view transition on document.documentElement.
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1972543
+      results:
+        - test: from-scale-zero.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1972654
+      results:
+        - test: negative-playback-rate.html
+          subtest: View transition duration affected by playback rate
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1972656
+      results:
+        - test: fill-forwards.html
+          subtest: View transition animations do not persist once the transition is finished even if animation-fill-mode is forwards
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1981561
+      results:
+        - test: display-inline-block.html
+          subtest: Scoped view transition on an inline-block element
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1988020
+      results:
+        - test: display-change.html
+        - test: nested-scope.html
+        - test: new-content.html
+        - test: old-content.html
