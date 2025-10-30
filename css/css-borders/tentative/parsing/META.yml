@@ -32,3 +32,23 @@ links:
       100px)" should set the property value
     test: border-shape-valid.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1993623
+- product: firefox
+  results:
+  - subtest: Property border-shape value 'circle() content-box'
+    test: border-shape-computed.html
+  - subtest: Property border-shape value 'circle() border-box polygon(10px 10px, 100px
+      10px, 10px 100px) border-box'
+    test: border-shape-computed.html
+  - subtest: Property border-shape value 'circle() padding-box polygon(10px 10px,
+      100px 10px, 10px 100px) border-box'
+    test: border-shape-computed.html
+  - subtest: Property border-shape value 'circle() padding-box polygon(10px 10px,
+      100px 10px, 10px 100px) padding-box'
+    test: border-shape-computed.html
+  - subtest: Property border-shape value 'circle() polygon(10px 10px, 100px 10px,
+      10px 100px) border-box'
+    test: border-shape-computed.html
+  - subtest: Property border-shape value 'circle() polygon(10px 10px, 100px 10px,
+      10px 100px) content-box'
+    test: border-shape-computed.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1997284
