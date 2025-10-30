@@ -22,3 +22,20 @@ links:
           subtest: test_object_to_json
         - test: objects.py
           subtest: test_object_to_json_exception
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1823444
+      results:
+        - test: node.py
+          subtest: test_node_type[attribute]
+        - test: node.py
+          subtest: test_node_type[text]
+        - test: node.py
+          subtest: test_node_type[processing_instruction]
+        - test: node.py
+          subtest: test_node_type[cdata]
+        - test: node.py
+          subtest: test_node_type[comment]
+        - test: node.py
+          subtest: test_node_type[document]
+        - test: node.py
+          subtest: test_node_type[doctype]
