@@ -564,3 +564,15 @@ links:
       doesn''t override specified direction position with `start`'
     test: scroll-marker-activation-specified-direction-position.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1990304
+- product: firefox
+  results:
+  - subtest: ::scroll-marker-group should not skip originating element for scroll-state
+      queries
+    test: scroll-marker-group-style-and-scroll-container-query.html
+  - subtest: ::scroll-marker-group should not skip originating element for style queries
+    test: scroll-marker-group-style-and-scroll-container-query.html
+  - subtest: ::scroll-marker-group queries root originating element for size queries
+    test: scroll-pseudo-elements-gcs-cq.html
+  - subtest: ::scroll-button skips queries root originating element for size queries
+    test: scroll-pseudo-elements-gcs-cq.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1997281
