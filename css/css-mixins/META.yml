@@ -437,3 +437,24 @@ links:
   - subtest: Can mix declarations into pseudo-elements
     test: apply-nested-declarations.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1997273
+- product: firefox
+  results:
+  - subtest: '@layer (statement) is invalid in @mixin'
+    test: mixin-parsing.html
+  - subtest: style rule is valid in @mixin
+    test: mixin-parsing.html
+  - subtest: style rule (relative) is valid in @mixin
+    test: mixin-parsing.html
+  - subtest: '@media is valid in @mixin'
+    test: mixin-parsing.html
+  - subtest: '@supports is valid in @mixin'
+    test: mixin-parsing.html
+  - subtest: '@container is valid in @mixin'
+    test: mixin-parsing.html
+  - subtest: '@starting-style is valid in @mixin'
+    test: mixin-parsing.html
+  - subtest: '@scope is valid in @mixin'
+    test: mixin-parsing.html
+  - subtest: '@scope (implicit) is valid in @mixin'
+    test: mixin-parsing.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1997289
