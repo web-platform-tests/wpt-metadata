@@ -103,3 +103,22 @@ links:
           subtest: test_find_by_inner_text[ignore_case_true_partial_match_max_depth_two]
         - test: locator.py
           subtest: test_find_by_inner_text[ignore_case_false_partial_match_max_depth_two]
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1941270
+      results:
+        - test: locator.py
+          subtest: test_locate_by_context[same_origin]
+        - test: locator.py
+          subtest: test_locate_by_context[cross_origin]
+        - test: locator.py
+          subtest: test_locate_by_context_in_iframe[same_origin]
+        - test: locator.py
+          subtest: test_locate_by_context_in_iframe[cross_origin]
+        - test: locator.py
+          subtest: test_locate_by_context_in_shadow_dom[open-same_origin]
+        - test: locator.py
+          subtest: test_locate_by_context_in_shadow_dom[open-cross_origin]
+        - test: locator.py
+          subtest: test_locate_by_context_in_shadow_dom[closed-same_origin]
+        - test: locator.py
+          subtest: test_locate_by_context_in_shadow_dom[closed-cross_origin]
