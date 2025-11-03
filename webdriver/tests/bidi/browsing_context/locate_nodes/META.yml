@@ -8,73 +8,6 @@ links:
         - test: serialization_options.py
         - test: start_nodes.py
     - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1941275
-      results:
-        - test: locator.py
-          subtest: test_find_by_locator[innerText-foobarBARbaz]
-        - test: locator.py
-          subtest: test_find_by_inner_text[ignore_case_true_full_match_no_max_depth]
-        - test: locator.py
-          subtest: test_find_by_inner_text[ignore_case_false_full_match_no_max_depth]
-        - test: locator.py
-          subtest: test_find_by_inner_text[ignore_case_true_partial_match_no_max_depth]
-        - test: locator.py
-          subtest: test_find_by_inner_text[ignore_case_false_partial_match_no_max_depth]
-        - test: locator.py
-          subtest: test_find_by_inner_text[ignore_case_true_full_match_max_depth_zero]
-        - test: locator.py
-          subtest: test_find_by_inner_text[ignore_case_false_full_match_max_depth_zero]
-        - test: locator.py
-          subtest: test_find_by_inner_text[ignore_case_true_partial_match_max_depth_zero]
-        - test: locator.py
-          subtest: test_find_by_inner_text[ignore_case_false_partial_match_max_depth_zero]
-        - test: locator.py
-          subtest: test_find_by_inner_text[ignore_case_true_full_match_max_depth_two]
-        - test: locator.py
-          subtest: test_find_by_inner_text[ignore_case_false_full_match_max_depth_two]
-        - test: locator.py
-          subtest: test_find_by_inner_text[ignore_case_true_partial_match_max_depth_two]
-        - test: locator.py
-          subtest: test_find_by_inner_text[ignore_case_false_partial_match_max_depth_two]
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1942340
-      results:
-        - test: invalid.py
-          subtest: test_params_locator_value_invalid_value[innerText-]
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1945627
-      results:
-        - test: invalid.py
-          subtest: test_params_locator_context_value_invalid_context[non_exiting_context]
-        - test: invalid.py
-          subtest: test_params_locator_value_invalid_value[context-value4]
-        - test: locator.py
-          subtest: test_locate_by_context[same_origin]
-        - test: locator.py
-          subtest: test_locate_by_context[cross_origin]
-        - test: locator.py
-          subtest: test_locate_by_context_in_iframe[same_origin]
-        - test: locator.py
-          subtest: test_locate_by_context_in_iframe[cross_origin]
-        - test: locator.py
-          subtest: test_locate_by_context_in_shadow_dom[open-same_origin]
-        - test: locator.py
-          subtest: test_locate_by_context_in_shadow_dom[open-cross_origin]
-        - test: locator.py
-          subtest: test_locate_by_context_in_shadow_dom[closed-same_origin]
-        - test: locator.py
-          subtest: test_locate_by_context_in_shadow_dom[closed-cross_origin]
-        - test: max_node_count.py
-          subtest: test_find_by_locator_limit_return_count[inner_text_single]
-        - test: max_node_count.py
-          subtest: test_find_by_locator_limit_return_count[inner_text_multiple]
-        - test: start_nodes.py
-          subtest: test_locate_with_context_nodes[innerText-foo-expected4]
-        - test: start_nodes.py
-          subtest: test_locate_with_multiple_context_nodes[innerText-foo]
-        - test: start_nodes.py
-          subtest: test_locate_with_document_context_node[innerText-foo]
-    - product: firefox
       url: https://bugzilla.mozilla.org/show_bug.cgi?id=1869538
       results:
         - test: locator.py
@@ -86,17 +19,17 @@ links:
         - test: locator.py
           subtest: test_find_by_inner_text[ignore_case_true_partial_match_no_max_depth]
         - test: locator.py
-          subtest: test_find_by_inner_text[ignore_case_true_full_match_max_depth_zero]
-        - test: locator.py
           subtest: test_find_by_inner_text[ignore_case_false_partial_match_no_max_depth]
+        - test: locator.py
+          subtest: test_find_by_inner_text[ignore_case_true_full_match_max_depth_zero]
         - test: locator.py
           subtest: test_find_by_inner_text[ignore_case_false_full_match_max_depth_zero]
         - test: locator.py
           subtest: test_find_by_inner_text[ignore_case_true_partial_match_max_depth_zero]
         - test: locator.py
-          subtest: test_find_by_inner_text[ignore_case_true_full_match_max_depth_two]
-        - test: locator.py
           subtest: test_find_by_inner_text[ignore_case_false_partial_match_max_depth_zero]
+        - test: locator.py
+          subtest: test_find_by_inner_text[ignore_case_true_full_match_max_depth_two]
         - test: locator.py
           subtest: test_find_by_inner_text[ignore_case_false_full_match_max_depth_two]
         - test: locator.py
@@ -104,21 +37,7 @@ links:
         - test: locator.py
           subtest: test_find_by_inner_text[ignore_case_false_partial_match_max_depth_two]
     - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1941270
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1869538
       results:
-        - test: locator.py
-          subtest: test_locate_by_context[same_origin]
-        - test: locator.py
-          subtest: test_locate_by_context[cross_origin]
-        - test: locator.py
-          subtest: test_locate_by_context_in_iframe[same_origin]
-        - test: locator.py
-          subtest: test_locate_by_context_in_iframe[cross_origin]
-        - test: locator.py
-          subtest: test_locate_by_context_in_shadow_dom[open-same_origin]
-        - test: locator.py
-          subtest: test_locate_by_context_in_shadow_dom[open-cross_origin]
-        - test: locator.py
-          subtest: test_locate_by_context_in_shadow_dom[closed-same_origin]
-        - test: locator.py
-          subtest: test_locate_by_context_in_shadow_dom[closed-cross_origin]
+        - test: invalid.py
+          subtest: test_params_locator_value_invalid_value[innerText-]
