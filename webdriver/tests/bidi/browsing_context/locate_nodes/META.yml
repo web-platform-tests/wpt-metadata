@@ -10,6 +10,8 @@ links:
     - product: firefox
       url: https://bugzilla.mozilla.org/show_bug.cgi?id=1869538
       results:
+        - test: invalid.py
+          subtest: test_params_locator_value_invalid_value[innerText-]
         - test: locator.py
           subtest: test_find_by_locator[innerText-foobarBARbaz]
         - test: locator.py
@@ -36,8 +38,3 @@ links:
           subtest: test_find_by_inner_text[ignore_case_true_partial_match_max_depth_two]
         - test: locator.py
           subtest: test_find_by_inner_text[ignore_case_false_partial_match_max_depth_two]
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1869538
-      results:
-        - test: invalid.py
-          subtest: test_params_locator_value_invalid_value[innerText-]
