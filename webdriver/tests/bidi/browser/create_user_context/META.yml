@@ -135,3 +135,13 @@ links:
     - url: https://bugzilla.mozilla.org/show_bug.cgi?id=1975279
       results:
         - test: unhandled_prompt_behavior.py
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1968887
+      results:
+        - test: proxy.py
+          subtest: test_system
+    - product: firefox_android
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1877953
+      results:
+        - test: create_user_context.py
+          subtest: test_storage_isolation
