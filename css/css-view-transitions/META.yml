@@ -787,3 +787,27 @@ links:
   results:
   - test: view-transition-types-mutable-no-document-element-crashtest.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1985764
+- product: firefox
+  results:
+  - subtest: 'ViewTransition interface: attribute transitionRoot'
+    test: idlharness.html
+  - subtest: 'ViewTransition interface: operation waitUntil(Promise<any>)'
+    test: idlharness.html
+  - subtest: 'ViewTransition interface: document.startViewTransition() must inherit
+      property "transitionRoot" with the proper type'
+    test: idlharness.html
+  - subtest: 'ViewTransition interface: document.startViewTransition() must inherit
+      property "waitUntil(Promise<any>)" with the proper type'
+    test: idlharness.html
+  - subtest: 'ViewTransition interface: calling waitUntil(Promise<any>) on document.startViewTransition()
+      with too few arguments must throw TypeError'
+    test: idlharness.html
+  - subtest: 'Document interface: attribute activeViewTransition'
+    test: idlharness.html
+  - subtest: 'Document interface: document must inherit property "activeViewTransition"
+      with the proper type'
+    test: idlharness.html
+  - subtest: 'Element interface: operation startViewTransition(optional (ViewTransitionUpdateCallback
+      or StartViewTransitionOptions))'
+    test: idlharness.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1998081

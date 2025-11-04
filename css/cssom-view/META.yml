@@ -394,3 +394,51 @@ links:
   - subtest: scrollIntoView in cross-origin iframe can't scroll in parent window
     test: scrollIntoView-iframes.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1992298
+- product: firefox
+  results:
+  - subtest: 'VisualViewport interface: attribute onscrollend'
+    test: idlharness.html
+  - subtest: 'VisualViewport interface: self.visualViewport must inherit property
+      "onscrollend" with the proper type'
+    test: idlharness.html
+  - subtest: 'HTMLElement interface: attribute scrollParent'
+    test: idlharness.html
+  - subtest: 'HTMLElement interface: document.createElement("div") must inherit property
+      "scrollParent" with the proper type'
+    test: idlharness.html
+  - subtest: 'HTMLElement interface: document.createElement("img") must inherit property
+      "scrollParent" with the proper type'
+    test: idlharness.html
+  - subtest: 'Window interface: operation scroll(optional ScrollToOptions)'
+    test: idlharness.html
+  - subtest: 'Window interface: operation scroll(unrestricted double, unrestricted
+      double)'
+    test: idlharness.html
+  - subtest: 'Window interface: operation scrollTo(optional ScrollToOptions)'
+    test: idlharness.html
+  - subtest: 'Window interface: operation scrollTo(unrestricted double, unrestricted
+      double)'
+    test: idlharness.html
+  - subtest: 'Window interface: operation scrollBy(optional ScrollToOptions)'
+    test: idlharness.html
+  - subtest: 'Window interface: operation scrollBy(unrestricted double, unrestricted
+      double)'
+    test: idlharness.html
+  - subtest: 'Element interface: operation scrollIntoView(optional (boolean or ScrollIntoViewOptions))'
+    test: idlharness.html
+  - subtest: 'Element interface: operation scroll(optional ScrollToOptions)'
+    test: idlharness.html
+  - subtest: 'Element interface: operation scroll(unrestricted double, unrestricted
+      double)'
+    test: idlharness.html
+  - subtest: 'Element interface: operation scrollTo(optional ScrollToOptions)'
+    test: idlharness.html
+  - subtest: 'Element interface: operation scrollTo(unrestricted double, unrestricted
+      double)'
+    test: idlharness.html
+  - subtest: 'Element interface: operation scrollBy(optional ScrollToOptions)'
+    test: idlharness.html
+  - subtest: 'Element interface: operation scrollBy(unrestricted double, unrestricted
+      double)'
+    test: idlharness.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1998079
