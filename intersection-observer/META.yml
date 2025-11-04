@@ -75,3 +75,18 @@ links:
   - subtest: document.scrollingElement.scrollTop = 300
     test: svg-clipped-rect-target.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1867157
+- product: firefox
+  results:
+  - subtest: 'IntersectionObserver interface: attribute delay'
+    test: idlharness.window.html
+  - subtest: 'IntersectionObserver interface: attribute trackVisibility'
+    test: idlharness.window.html
+  - subtest: 'IntersectionObserver interface: observer must inherit property "delay"
+      with the proper type'
+    test: idlharness.window.html
+  - subtest: 'IntersectionObserver interface: observer must inherit property "trackVisibility"
+      with the proper type'
+    test: idlharness.window.html
+  - subtest: 'IntersectionObserverEntry interface: attribute isVisible'
+    test: idlharness.window.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1998080
