@@ -1,6 +1,6 @@
 links:
     - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1975279
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1984042
       results:
         - test: invalid.py
           subtest: test_unhandled_prompt_behavior_invalid_type[False]
@@ -130,6 +130,11 @@ links:
           subtest: test_unhandled_prompt_behavior_handler_invalid_value[None-file]
         - test: invalid.py
           subtest: test_unhandled_prompt_behavior_handler_invalid_value[None-prompt]
+        - test: proxy.py
+          subtest: test_system
+    - url: https://bugzilla.mozilla.org/show_bug.cgi?id=1975279
+      results:
+        - test: unhandled_prompt_behavior.py
     - product: firefox
       url: https://bugzilla.mozilla.org/show_bug.cgi?id=1968887
       results:
