@@ -192,3 +192,14 @@ links:
           subtest: Level 2.1 H264 video is appropriately constrained
         - test: h264-profile-levels.https.html
           subtest: Level 2.2 H264 video is appropriately constrained
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1307994
+      results:
+        - test: candidate-exchange.https.html
+          subtest: Adding only caller -> callee candidates gives a connection
+        - test: candidate-exchange.https.html
+          subtest: Adding only callee -> caller candidates gives a connection
+        - test: candidate-exchange.https.html
+          subtest: Adding callee -> caller candidates from end-of-candidates gives a connection
+        - test: candidate-exchange.https.html
+          subtest: Explicit offer/answer exchange gives a connection
