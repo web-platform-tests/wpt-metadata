@@ -399,3 +399,14 @@ links:
   - subtest: setPointerCapture target removed by lostpointercapture
     test: pointerevent_lostpointercapture_remove_setcapture_node.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1975223
+- product: firefox
+  results:
+  - subtest: mouse events with remove-slot at pointerdown
+    test: pointerevent_after_target_removed_from_slot.html?mouse
+  - subtest: mouse events with change-slotname at pointerdown
+    test: pointerevent_after_target_removed_from_slot.html?mouse
+  - subtest: mouse events with remove-slot at pointerup
+    test: pointerevent_after_target_removed_from_slot.html?mouse
+  - subtest: mouse events with change-slotname at pointerup
+    test: pointerevent_after_target_removed_from_slot.html?mouse
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1998753
