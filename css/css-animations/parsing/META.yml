@@ -577,3 +577,8 @@ links:
   - subtest: '''exit 60%'' should be a valid keyframe selector'
     test: keyframe-selectors.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1962108
+- product: firefox
+  results:
+  - subtest: e.style['animation-name'] = "\"\"" should not set the property value
+    test: animation-name-invalid.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1998933
