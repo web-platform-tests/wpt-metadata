@@ -1,29 +1,9 @@
 links:
     - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1999391
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1993079
       results:
-        - test: contexts.py
-          subtest: test_isolation
-        - test: contexts.py
-          subtest: test_frame[same_origin]
-        - test: contexts.py
-          subtest: test_frame[cross_origin]
-        - test: contexts.py
-          subtest: test_overrides_user_contexts[Default user context]
-        - test: contexts.py
-          subtest: test_overrides_user_contexts[Custom user context]
-        - test: contexts.py
-          subtest: test_restores_to_user_contexts_when_removed[Default user context]
-        - test: contexts.py
-          subtest: test_restores_to_user_contexts_when_removed[Custom user context]
-        - test: contexts.py
-          subtest: test_overrides_global[Default user context]
-        - test: contexts.py
-          subtest: test_overrides_global[Custom user context]
-        - test: contexts.py
-          subtest: test_restores_to_global_when_removed[Default user context]
-        - test: contexts.py
-          subtest: test_restores_to_global_when_removed[Custom user context]
-    - url: https://bugzilla.mozilla.org/show_bug.cgi?id=1993079
-      results:
+        - test: contexts.py      
+        - test: global.py
+        - test: invalid.py
         - test: network_conditions_offline.py
+        - test: user_contexts.py
