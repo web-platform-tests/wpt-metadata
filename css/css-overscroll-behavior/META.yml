@@ -1,20 +1,34 @@
 links:
-    - label: interop-2025-webcompat
-      results:
-        - test: overscroll-behavior-root.html
-    - label: interop-2022-scrolling
-      results:
-        - test: inheritance.html
-        - test: overscroll-behavior-logical.html
-        - test: overscroll-behavior.html
-    - product: chrome
-      url: https://issuetracker.google.com/399102343
-      results:
-        - test: overscroll-behavior-root.html
-          subtest: overscroll-behavior in root works
-    - product: safari
-      url: https://bugs.webkit.org/show_bug.cgi?id=176454
-      results:
-        - test: inheritance.html
-        - test: overscroll-behavior-logical.html
-    
+- label: interop-2025-webcompat
+  results:
+  - test: overscroll-behavior-root.html
+- label: interop-2022-scrolling
+  results:
+  - test: inheritance.html
+  - test: overscroll-behavior-logical.html
+  - test: overscroll-behavior.html
+- product: chrome
+  results:
+  - subtest: overscroll-behavior in root works
+    test: overscroll-behavior-root.html
+  url: https://issuetracker.google.com/399102343
+- product: safari
+  results:
+  - test: inheritance.html
+  - test: overscroll-behavior-logical.html
+  url: https://bugs.webkit.org/show_bug.cgi?id=176454
+- product: firefox
+  results:
+  - subtest: 'overflow: hidden and overscroll-behavior-x: none should only prevent
+      scroll propagation on x axis.'
+    test: overscroll-behavior-without-overflow.html
+  - subtest: 'overflow: hidden and overscroll-behavior-y: none should only prevent
+      scroll propagation on y axis.'
+    test: overscroll-behavior-without-overflow.html
+  - subtest: 'overflow: auto and overscroll-behavior-x: none should only prevent scroll
+      propagation on x axis.'
+    test: overscroll-behavior-without-overflow.html
+  - subtest: 'overflow: auto and overscroll-behavior-y: none should only prevent scroll
+      propagation on y axis.'
+    test: overscroll-behavior-without-overflow.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1999565

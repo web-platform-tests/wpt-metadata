@@ -582,3 +582,21 @@ links:
   - subtest: 'CSS Overflow: ::scroll-button on root element activation'
     test: root-scroll-button-activation.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1997366
+- product: firefox
+  results:
+  - subtest: target whose target position is not yet reached only get selected when
+      its less than half a scroll port away.
+    test: scroll-marker-active-unreached-target.html
+  - test: scroll-marker-selection-in-padded-scroller.html
+  - subtest: scroll-marker selection at left edge with padding
+    test: scroll-marker-selection-in-padded-scroller.html
+  - subtest: scroll-marker selection at right edge with padding
+    test: scroll-marker-selection-in-padded-scroller.html
+  - subtest: scroll-marker of target (idx 1) of scrollIntoView is selected
+    test: targeted-scroll-marker-selection-with-transition.tentative.html
+  - subtest: scroll-marker of target (idx 14) of scrollIntoView is selected
+    test: targeted-scroll-marker-selection-with-transition.tentative.html
+  - test: scroll-marker-activation-crash.html
+  - test: targeted-column-scroll-marker-selection-002.html
+  - test: targeted-column-scroll-marker-selection-003.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1999564
