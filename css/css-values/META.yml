@@ -2571,3 +2571,158 @@ links:
   - subtest: 'CSS Values and Units Test: attr 110'
     test: attr-all-types.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1991205
+- product: firefox
+  results:
+  - subtest: Property scale value 'random(--foo element-shared, 3, 13)'
+    test: random-computed.tentative.html
+  - subtest: Property scale value 'random(element-shared --foo, 4, 14)'
+    test: random-computed.tentative.html
+  - subtest: Property scale value 'random(0, 10, 5)'
+    test: random-computed.tentative.html
+  - subtest: Property scale value 'random(--foo, 10, 20, 5)'
+    test: random-computed.tentative.html
+  - subtest: Property scale value 'random(--foo element-shared, 20, 30, 5)'
+    test: random-computed.tentative.html
+  - subtest: Property scale value 'random(element-shared --foo, 30, 40, 5)'
+    test: random-computed.tentative.html
+  - subtest: Property scale value 'random(40, 50, -5)'
+    test: random-computed.tentative.html
+  - subtest: Property scale value 'random(NaN, 100, 10)'
+    test: random-computed.tentative.html
+  - subtest: Property scale value 'random(10, NaN, 10)'
+    test: random-computed.tentative.html
+  - subtest: Property scale value 'random(NaN, NaN, 10)'
+    test: random-computed.tentative.html
+  - subtest: Property scale value 'random(NaN, 100, NaN)'
+    test: random-computed.tentative.html
+  - subtest: Property scale value 'random(10, NaN, NaN)'
+    test: random-computed.tentative.html
+  - subtest: Property scale value 'random(NaN, NaN, NaN)'
+    test: random-computed.tentative.html
+  - subtest: Property scale value 'random(10, 100, NaN)'
+    test: random-computed.tentative.html
+  - subtest: Property scale value 'calc(10 + random(NaN, 100, 10))'
+    test: random-computed.tentative.html
+  - subtest: Property scale value 'calc(10 + random(10, NaN, 10))'
+    test: random-computed.tentative.html
+  - subtest: Property scale value 'calc(10 + random(NaN, NaN, 10))'
+    test: random-computed.tentative.html
+  - subtest: Property scale value 'calc(10 + random(NaN, 100, NaN))'
+    test: random-computed.tentative.html
+  - subtest: Property scale value 'calc(10 + random(10, NaN, NaN))'
+    test: random-computed.tentative.html
+  - subtest: Property scale value 'calc(10 + random(NaN, NaN, NaN))'
+    test: random-computed.tentative.html
+  - subtest: Property scale value 'calc(10 + random(10, 100, NaN))'
+    test: random-computed.tentative.html
+  - subtest: Property scale value 'random(infinity, 100)'
+    test: random-computed.tentative.html
+  - subtest: Property scale value 'random(infinity, infinity)'
+    test: random-computed.tentative.html
+  - subtest: Property scale value 'random(infinity, 100, 10)'
+    test: random-computed.tentative.html
+  - subtest: Property scale value 'random(infinity, infinity, 10)'
+    test: random-computed.tentative.html
+  - subtest: Property scale value 'random(infinity, 100, infinity)'
+    test: random-computed.tentative.html
+  - subtest: Property scale value 'random(infinity, infinity, infinity)'
+    test: random-computed.tentative.html
+  - subtest: Property scale value 'calc(10 + random(infinity, 100))'
+    test: random-computed.tentative.html
+  - subtest: Property scale value 'calc(10 + random(infinity, infinity))'
+    test: random-computed.tentative.html
+  - subtest: Property scale value 'calc(10 + random(infinity, infinity, 10))'
+    test: random-computed.tentative.html
+  - subtest: Property scale value 'calc(10 + random(infinity, 100, infinity))'
+    test: random-computed.tentative.html
+  - subtest: Property scale value 'calc(10 + random(infinity, infinity, infinity))'
+    test: random-computed.tentative.html
+  - subtest: Property scale value 'calc(10 + random(infinity, 100, 10))'
+    test: random-computed.tentative.html
+  - subtest: Property scale value 'random(10, infinity, 10)'
+    test: random-computed.tentative.html
+  - subtest: Property scale value 'random(10, infinity, infinity)'
+    test: random-computed.tentative.html
+  - subtest: Property scale value 'calc(10 + random(10, infinity, 10))'
+    test: random-computed.tentative.html
+  - subtest: Property scale value 'calc(10 + random(10, infinity, infinity))'
+    test: random-computed.tentative.html
+  - subtest: Property scale value 'random(10, 100, -infinity)'
+    test: random-computed.tentative.html
+  - subtest: Property scale value 'calc(10 + random(10, 100, -infinity))'
+    test: random-computed.tentative.html
+  - subtest: Property scale value on pseudo element '::before' 'random(element-shared,
+      9, 19)'
+    test: random-computed.tentative.html
+  - subtest: Property scale value on pseudo element '::before' 'random(element-shared
+      --foo, 10, 20)'
+    test: random-computed.tentative.html
+  - subtest: Property translate value 'random(10%, 100%)'
+    test: random-computed.tentative.html
+  - subtest: 'Maximum random: ''random(a, b)'''
+    test: random-computed.tentative.html
+  - subtest: 'Maximum random - shorthand: random(a, b))'
+    test: random-computed.tentative.html
+  - subtest: 'Shared globally: random(--identifier element-shared, a, b)'
+    test: random-computed.tentative.html
+  - subtest: 'Fixed: random(fixed <number>, a, b)'
+    test: random-computed.tentative.html
+  - subtest: e.style['width'] = "random(0px, 100px, 50px)" should set the property
+      value
+    test: random-serialize.tentative.html
+  - subtest: e.style['width'] = "random(auto, 0px, 100px)" should set the property
+      value
+    test: random-serialize.tentative.html
+  - subtest: e.style['width'] = "random(--foo element-shared, 0px, 100px)" should
+      set the property value
+    test: random-serialize.tentative.html
+  - subtest: e.style['width'] = "random(auto element-shared, 0px, 100px)" should set
+      the property value
+    test: random-serialize.tentative.html
+  - subtest: e.style['width'] = "random(element-shared --foo, 0px, 100px)" should
+      set the property value
+    test: random-serialize.tentative.html
+  - subtest: e.style['width'] = "random(element-shared auto, 0px, 100px)" should set
+      the property value
+    test: random-serialize.tentative.html
+  - subtest: e.style['width'] = "random(fixed 0.5, 0px, 100px)" should set the property
+      value
+    test: random-serialize.tentative.html
+  - subtest: e.style['width'] = "random(--foo, 0px, 100px, 50px)" should set the property
+      value
+    test: random-serialize.tentative.html
+  - subtest: e.style['width'] = "random(auto, 0px, 100px, 50px)" should set the property
+      value
+    test: random-serialize.tentative.html
+  - subtest: e.style['width'] = "random(--foo element-shared, 0px, 100px, 50px)" should
+      set the property value
+    test: random-serialize.tentative.html
+  - subtest: e.style['width'] = "random(auto element-shared, 0px, 100px, 50px)" should
+      set the property value
+    test: random-serialize.tentative.html
+  - subtest: e.style['width'] = "random(element-shared --foo, 0px, 100px, 50px)" should
+      set the property value
+    test: random-serialize.tentative.html
+  - subtest: e.style['width'] = "random(element-shared auto, 0px, 100px, 50px)" should
+      set the property value
+    test: random-serialize.tentative.html
+  - subtest: e.style['width'] = "random(fixed 0.5, 0px, 100px, 50px)" should set the
+      property value
+    test: random-serialize.tentative.html
+  - subtest: e.style['width'] = "random(-100px, -10px, -5px)" should set the property
+      value
+    test: random-serialize.tentative.html
+  - subtest: e.style['width'] = "random(fixed calc(2 / 4), 0px, 100px)" should set
+      the property value
+    test: random-serialize.tentative.html
+  - subtest: e.style['max-lines'] = "random(25, 50, 5)" should set the property value
+    test: random-serialize.tentative.html
+  - subtest: e.style['scale'] = "random(0.5, 2.5, 0.1)" should set the property value
+    test: random-serialize.tentative.html
+  - subtest: e.style['rotate'] = "random(25deg, 1turn, 5deg)" should set the property
+      value
+    test: random-serialize.tentative.html
+  - subtest: e.style['transition-delay'] = "random(25ms, 50s, 5s)" should set the
+      property value
+    test: random-serialize.tentative.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2000129
