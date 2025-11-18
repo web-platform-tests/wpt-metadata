@@ -514,3 +514,14 @@ links:
       results:
         - test: animation-range-shorthand.html
           subtest: e.style['animation-range'] = "entry calc(10% - 10%) entry calc(50% + 50%)" should set the property value
+    - product: safari
+      url: https://bugs.webkit.org/show_bug.cgi?id=302739
+      results:
+        - test: keyframe-selectors.html
+          subtest: '''calc(10%)'' should not be a valid keyframe selector'
+        - test: keyframe-selectors.html
+          subtest: '''entry calc(10%)'' should not be a valid keyframe selector'
+        - test: keyframe-selectors.html
+          subtest: '''calc(10% * sign(1em - 1px))'' should not be a valid keyframe selector'
+        - test: keyframe-selectors.html
+          subtest: '''exit calc(60%)'' should not be a valid keyframe selector'
