@@ -1,16 +1,37 @@
-    links:
-    - label: chromium-bidi-2023
-      results:
-        - test: await_promise.py
-        - test: evaluate.py
-        - test: exception_details.py
-        - test: exception_details_await_promise.py
-        - test: internal_id.py
-        - test: invalid.py
-        - test: primitive_values.py
-        - test: remote_values.py
-        - test: result_node.py
-        - test: result_ownership.py
-        - test: sandbox.py
-        - test: strict_mode.py
-        - test: user_activation.py
+links:
+- label: chromium-bidi-2023
+  results:
+  - test: await_promise.py
+  - test: evaluate.py
+  - test: exception_details.py
+  - test: exception_details_await_promise.py
+  - test: internal_id.py
+  - test: invalid.py
+  - test: primitive_values.py
+  - test: remote_values.py
+  - test: result_node.py
+  - test: result_ownership.py
+  - test: sandbox.py
+  - test: strict_mode.py
+  - test: user_activation.py
+- product: firefox
+  results:
+  - subtest: test_default_src_unsafe_inline[eval]
+    test: csp_tentative.py
+  - subtest: test_default_src_unsafe_inline[new Function]
+    test: csp_tentative.py
+  - subtest: test_default_src_unsafe_inline[eval from inline script]
+    test: csp_tentative.py
+  - subtest: test_default_src_unsafe_inline[eval from preload script]
+    test: csp_tentative.py
+  - subtest: test_default_src_unsafe_inline[eval from event handler]
+    test: csp_tentative.py
+  - subtest: test_default_src_unsafe_inline[nested eval]
+    test: csp_tentative.py
+  - subtest: test_default_src_unsafe_inline[nested new Function]
+    test: csp_tentative.py
+  - subtest: test_default_src_unsafe_inline[new Function nested in eval]
+    test: csp_tentative.py
+  - subtest: test_default_src_unsafe_inline[eval nested in new Function]
+    test: csp_tentative.py
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2001377
