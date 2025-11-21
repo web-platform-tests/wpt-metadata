@@ -1,5 +1,98 @@
 links:
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1887257
-      results:
-        - test: alignment-baseline-no-interpolation.html
+- product: firefox
+  results:
+  - test: alignment-baseline-no-interpolation.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1887257
+- product: firefox
+  results:
+  - subtest: 'Compositing CSS Animations: property <baseline-shift> underlying [50px]
+      from add [100px] to add [200px] at (-0.3) should be [120px]'
+    test: baseline-shift-composition.html
+  - subtest: 'Compositing CSS Animations: property <baseline-shift> underlying [50px]
+      from add [100px] to add [200px] at (0) should be [150px]'
+    test: baseline-shift-composition.html
+  - subtest: 'Compositing CSS Animations: property <baseline-shift> underlying [50px]
+      from add [100px] to add [200px] at (0.5) should be [200px]'
+    test: baseline-shift-composition.html
+  - subtest: 'Compositing CSS Animations: property <baseline-shift> underlying [50px]
+      from add [100px] to add [200px] at (1) should be [250px]'
+    test: baseline-shift-composition.html
+  - subtest: 'Compositing CSS Animations: property <baseline-shift> underlying [50px]
+      from add [100px] to add [200px] at (1.5) should be [300px]'
+    test: baseline-shift-composition.html
+  - subtest: 'Compositing Web Animations: property <baseline-shift> underlying [50px]
+      from add [100px] to add [200px] at (-0.3) should be [120px]'
+    test: baseline-shift-composition.html
+  - subtest: 'Compositing Web Animations: property <baseline-shift> underlying [50px]
+      from add [100px] to add [200px] at (0) should be [150px]'
+    test: baseline-shift-composition.html
+  - subtest: 'Compositing Web Animations: property <baseline-shift> underlying [50px]
+      from add [100px] to add [200px] at (0.5) should be [200px]'
+    test: baseline-shift-composition.html
+  - subtest: 'Compositing Web Animations: property <baseline-shift> underlying [50px]
+      from add [100px] to add [200px] at (1) should be [250px]'
+    test: baseline-shift-composition.html
+  - subtest: 'Compositing Web Animations: property <baseline-shift> underlying [50px]
+      from add [100px] to add [200px] at (1.5) should be [300px]'
+    test: baseline-shift-composition.html
+  - subtest: 'Compositing CSS Animations: property <baseline-shift> underlying [100px]
+      from add [10px] to add [2px] at (-0.5) should be [114px]'
+    test: baseline-shift-composition.html
+  - subtest: 'Compositing CSS Animations: property <baseline-shift> underlying [100px]
+      from add [10px] to add [2px] at (0) should be [110px]'
+    test: baseline-shift-composition.html
+  - subtest: 'Compositing CSS Animations: property <baseline-shift> underlying [100px]
+      from add [10px] to add [2px] at (0.5) should be [106px]'
+    test: baseline-shift-composition.html
+  - subtest: 'Compositing CSS Animations: property <baseline-shift> underlying [100px]
+      from add [10px] to add [2px] at (1) should be [102px]'
+    test: baseline-shift-composition.html
+  - subtest: 'Compositing CSS Animations: property <baseline-shift> underlying [100px]
+      from add [10px] to add [2px] at (1.5) should be [98px]'
+    test: baseline-shift-composition.html
+  - subtest: 'Compositing Web Animations: property <baseline-shift> underlying [100px]
+      from add [10px] to add [2px] at (-0.5) should be [114px]'
+    test: baseline-shift-composition.html
+  - subtest: 'Compositing Web Animations: property <baseline-shift> underlying [100px]
+      from add [10px] to add [2px] at (0) should be [110px]'
+    test: baseline-shift-composition.html
+  - subtest: 'Compositing Web Animations: property <baseline-shift> underlying [100px]
+      from add [10px] to add [2px] at (0.5) should be [106px]'
+    test: baseline-shift-composition.html
+  - subtest: 'Compositing Web Animations: property <baseline-shift> underlying [100px]
+      from add [10px] to add [2px] at (1) should be [102px]'
+    test: baseline-shift-composition.html
+  - subtest: 'Compositing Web Animations: property <baseline-shift> underlying [100px]
+      from add [10px] to add [2px] at (1.5) should be [98px]'
+    test: baseline-shift-composition.html
+  - subtest: 'Compositing CSS Animations: property <baseline-shift> underlying [50px]
+      from add [100px] to replace [200px] at (-0.3) should be [135px]'
+    test: baseline-shift-composition.html
+  - subtest: 'Compositing CSS Animations: property <baseline-shift> underlying [50px]
+      from add [100px] to replace [200px] at (0) should be [150px]'
+    test: baseline-shift-composition.html
+  - subtest: 'Compositing CSS Animations: property <baseline-shift> underlying [50px]
+      from add [100px] to replace [200px] at (0.5) should be [175px]'
+    test: baseline-shift-composition.html
+  - subtest: 'Compositing CSS Animations: property <baseline-shift> underlying [50px]
+      from add [100px] to replace [200px] at (1) should be [200px]'
+    test: baseline-shift-composition.html
+  - subtest: 'Compositing CSS Animations: property <baseline-shift> underlying [50px]
+      from add [100px] to replace [200px] at (1.5) should be [225px]'
+    test: baseline-shift-composition.html
+  - subtest: 'Compositing Web Animations: property <baseline-shift> underlying [50px]
+      from add [100px] to replace [200px] at (-0.3) should be [135px]'
+    test: baseline-shift-composition.html
+  - subtest: 'Compositing Web Animations: property <baseline-shift> underlying [50px]
+      from add [100px] to replace [200px] at (0) should be [150px]'
+    test: baseline-shift-composition.html
+  - subtest: 'Compositing Web Animations: property <baseline-shift> underlying [50px]
+      from add [100px] to replace [200px] at (0.5) should be [175px]'
+    test: baseline-shift-composition.html
+  - subtest: 'Compositing Web Animations: property <baseline-shift> underlying [50px]
+      from add [100px] to replace [200px] at (1) should be [200px]'
+    test: baseline-shift-composition.html
+  - subtest: 'Compositing Web Animations: property <baseline-shift> underlying [50px]
+      from add [100px] to replace [200px] at (1.5) should be [225px]'
+    test: baseline-shift-composition.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2001714
