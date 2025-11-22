@@ -1,37 +1,6 @@
 links:
 - product: firefox
   results:
-  - subtest: Property item-tolerance value 'normal'
-    test: item-tolerance-computed.html
-  - subtest: Property item-tolerance value 'infinite'
-    test: item-tolerance-computed.html
-  - subtest: Property item-tolerance value '10px'
-    test: item-tolerance-computed.html
-  - subtest: Property item-tolerance value '20%'
-    test: item-tolerance-computed.html
-  - subtest: Property item-tolerance value 'calc(20% + 10px)'
-    test: item-tolerance-computed.html
-  - subtest: Property item-tolerance value 'calc(-0.5em + 10px)'
-    test: item-tolerance-computed.html
-  - subtest: Property item-tolerance value 'calc(0.5em + 10px)'
-    test: item-tolerance-computed.html
-  - subtest: e.style['item-tolerance'] = "normal" should set the property value
-    test: item-tolerance-valid.html
-  - subtest: e.style['item-tolerance'] = "infinite" should set the property value
-    test: item-tolerance-valid.html
-  - subtest: e.style['item-tolerance'] = "initial" should set the property value
-    test: item-tolerance-valid.html
-  - subtest: e.style['item-tolerance'] = "0" should set the property value
-    test: item-tolerance-valid.html
-  - subtest: e.style['item-tolerance'] = "1px" should set the property value
-    test: item-tolerance-valid.html
-  - subtest: e.style['item-tolerance'] = "calc(2em + 3ex)" should set the property
-      value
-    test: item-tolerance-valid.html
-  - subtest: e.style['item-tolerance'] = "4%" should set the property value
-    test: item-tolerance-valid.html
-  - subtest: e.style['item-tolerance'] = "5vmin" should set the property value
-    test: item-tolerance-valid.html
   - subtest: Property masonry-direction value 'row'
     test: grid-lanes-direction-computed.html
   - subtest: Property masonry-direction value 'column'
@@ -259,4 +228,35 @@ links:
   - subtest: e.style['masonry'] = "repeat(2, auto) row-reverse" should not set unrelated
       longhands
     test: grid-lanes-shorthand-valid.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2000763
+  - subtest: Property item-tolerance value 'normal'
+    test: item-tolerance-computed.html
+  - subtest: Property item-tolerance value 'infinite'
+    test: item-tolerance-computed.html
+  - subtest: Property item-tolerance value '10px'
+    test: item-tolerance-computed.html
+  - subtest: Property item-tolerance value '20%'
+    test: item-tolerance-computed.html
+  - subtest: Property item-tolerance value 'calc(20% + 10px)'
+    test: item-tolerance-computed.html
+  - subtest: Property item-tolerance value 'calc(-0.5em + 10px)'
+    test: item-tolerance-computed.html
+  - subtest: Property item-tolerance value 'calc(0.5em + 10px)'
+    test: item-tolerance-computed.html
+  - subtest: e.style['item-tolerance'] = "normal" should set the property value
+    test: item-tolerance-valid.html
+  - subtest: e.style['item-tolerance'] = "infinite" should set the property value
+    test: item-tolerance-valid.html
+  - subtest: e.style['item-tolerance'] = "initial" should set the property value
+    test: item-tolerance-valid.html
+  - subtest: e.style['item-tolerance'] = "0" should set the property value
+    test: item-tolerance-valid.html
+  - subtest: e.style['item-tolerance'] = "1px" should set the property value
+    test: item-tolerance-valid.html
+  - subtest: e.style['item-tolerance'] = "calc(2em + 3ex)" should set the property
+      value
+    test: item-tolerance-valid.html
+  - subtest: e.style['item-tolerance'] = "4%" should set the property value
+    test: item-tolerance-valid.html
+  - subtest: e.style['item-tolerance'] = "5vmin" should set the property value
+    test: item-tolerance-valid.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2001786
