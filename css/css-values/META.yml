@@ -2313,6 +2313,7 @@ links:
       results:
         - test: random-computed.tentative.html
         - test: random-serialize.tentative.html
+        - test: random-in-keyframe.html
     - product: firefox
       url: https://bugzilla.mozilla.org/show_bug.cgi?id=1980719
       results:
@@ -2544,7 +2545,3 @@ links:
           subtest: e.style['rotate'] = "random(25deg, 1turn, 5deg)" should set the property value
         - test: random-serialize.tentative.html
           subtest: e.style['transition-delay'] = "random(25ms, 50s, 5s)" should set the property value
-    - product: chrome
-      url: crbug.com/413385732
-      results:
-        - test: random-in-keyframe.html
