@@ -1,0 +1,64 @@
+links:
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1991204
+      results:
+        - test: grid-lanes-not-inhibited-001.html
+        - test: grid-lanes-grid-template-columns-computed-withcontent.html
+          subtest: Property grid-template-columns value '20%'
+        - test: grid-lanes-grid-template-columns-computed-withcontent.html
+          subtest: Property grid-template-columns value 'calc(30% + 40px)'
+        - test: grid-lanes-grid-template-columns-computed-withcontent.html
+          subtest: Property grid-template-columns value '5fr'
+        - test: grid-lanes-grid-template-columns-computed-withcontent.html
+          subtest: Property grid-template-columns value 'min-content'
+        - test: grid-lanes-grid-template-columns-computed-withcontent.html
+          subtest: Property grid-template-columns value 'max-content'
+        - test: grid-lanes-grid-template-columns-computed-withcontent.html
+          subtest: Property grid-template-columns value 'auto'
+        - test: grid-lanes-grid-template-columns-computed-withcontent.html
+          subtest: Property grid-template-columns value 'minmax(10px, auto)'
+        - test: grid-lanes-grid-template-columns-computed-withcontent.html
+          subtest: Property grid-template-columns value 'minmax(20%, max-content)'
+        - test: grid-lanes-grid-template-columns-computed-withcontent.html
+          subtest: Property grid-template-columns value 'minmax(min-content, calc(-0.5em + 10px))'
+        - test: grid-lanes-grid-template-columns-computed-withcontent.html
+          subtest: Property grid-template-columns value 'minmax(auto, 0)'
+        - test: grid-lanes-grid-template-columns-computed-withcontent.html
+          subtest: Property grid-template-columns value 'fit-content(70px)'
+        - test: grid-lanes-grid-template-columns-computed-withcontent.html
+          subtest: Property grid-template-columns value 'fit-content(20%)'
+        - test: grid-lanes-grid-template-columns-computed-withcontent.html
+          subtest: Property grid-template-columns value 'fit-content(calc(-0.5em + 10px))'
+        - test: grid-lanes-grid-template-columns-computed-withcontent.html
+          subtest: Property grid-template-columns value 'repeat(1, 10px)'
+        - test: grid-lanes-grid-template-columns-computed-withcontent.html
+          subtest: Property grid-template-columns value 'repeat(1, [one two] 20%)'
+        - test: grid-lanes-grid-template-columns-computed-withcontent.html
+          subtest: Property grid-template-columns value 'min-content repeat(5, minmax(10px, auto))'
+        - test: grid-lanes-grid-template-columns-computed-withcontent.html
+          subtest: Property grid-template-columns value '[] 150px [] 1fr []'
+        - test: grid-lanes-grid-template-columns-computed-withcontent.html
+          subtest: Property grid-template-columns value 'repeat(auto-fill, 200px)'
+        - test: grid-lanes-grid-template-columns-computed-withcontent.html
+          subtest: Property grid-template-columns value 'repeat(auto-fill, minmax(100px, 5fr) [two])'
+        - test: grid-lanes-grid-template-columns-computed-withcontent.html
+          subtest: Property grid-template-columns value 'repeat(auto-fit, [three] minmax(max-content, 6em) [four])'
+        - test: grid-lanes-grid-template-columns-computed-withcontent.html
+          subtest: Property grid-template-columns value '[one] repeat(2, minmax(50px, auto)) [two] 30px [three] repeat(auto-fill, 10px) 40px [four five] repeat(2, minmax(200px, auto)) [six]'
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1891875
+      results:
+        - test: grid-lanes-grid-template-columns-computed-withcontent.html
+          subtest: Property grid-template-columns value 'repeat(auto-fit, [one] 20%)'
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1972618
+      results:
+        - test: grid-lanes-grid-template-columns-computed-withcontent.html
+          subtest: Property grid-template-columns value 'repeat(2, minmax(10px, auto))'
+        - test: grid-lanes-grid-template-columns-computed-withcontent.html
+          subtest: Property grid-template-columns value 'repeat(2, fit-content(20%) [three four] 30px 40px [five six])'
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1998065
+      results:
+        - test: grid-lanes-grid-template-columns-computed-withcontent.html
+          subtest: Property grid-template-columns value 'none'
