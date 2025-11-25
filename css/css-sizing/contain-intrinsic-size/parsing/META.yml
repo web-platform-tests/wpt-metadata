@@ -33,3 +33,43 @@ links:
       value
     test: from-element-valid.tentative.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1998891
+- product: firefox
+  results:
+  - subtest: Property contain-intrinsic-width value 'from-element'
+    test: from-element-computed.tentative.html
+  - subtest: Property contain-intrinsic-height value 'from-element'
+    test: from-element-computed.tentative.html
+  - subtest: Property contain-intrinsic-inline-size value 'from-element'
+    test: from-element-computed.tentative.html
+  - subtest: Property contain-intrinsic-block-size value 'from-element'
+    test: from-element-computed.tentative.html
+  - subtest: Property contain-intrinsic-size value 'from-element'
+    test: from-element-computed.tentative.html
+  - subtest: Property contain-intrinsic-size value 'from-element 200px'
+    test: from-element-computed.tentative.html
+  - subtest: e.style['contain-intrinsic-width'] = "from-element" should set the property
+      value
+    test: from-element-valid.tentative.html
+  - subtest: e.style['contain-intrinsic-height'] = "from-element" should set the property
+      value
+    test: from-element-valid.tentative.html
+  - subtest: e.style['contain-intrinsic-inline-size'] = "from-element" should set
+      the property value
+    test: from-element-valid.tentative.html
+  - subtest: e.style['contain-intrinsic-block-size'] = "from-element" should set the
+      property value
+    test: from-element-valid.tentative.html
+  - subtest: e.style['contain-intrinsic-size'] = "from-element 200px" should set the
+      property value
+    test: from-element-valid.tentative.html
+  - subtest: e.style['contain-intrinsic-size'] = "from-element" should set contain-intrinsic-height
+    test: from-element-valid.tentative.html
+  - subtest: e.style['contain-intrinsic-size'] = "from-element" should set contain-intrinsic-width
+    test: from-element-valid.tentative.html
+  - subtest: e.style['contain-intrinsic-size'] = "from-element" should not set unrelated
+      longhands
+    test: from-element-valid.tentative.html
+  - subtest: e.style['contain-intrinsic-size'] = "from-element 200px" should not set
+      unrelated longhands
+    test: from-element-valid.tentative.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2002207
