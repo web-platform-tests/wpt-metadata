@@ -2218,3 +2218,35 @@ links:
           subtest: Property color value 'color-mix(oklab(0.1 0.2 0.3 / 25%) 0%, oklab(none none none / 0.5))'
         - test: color-computed-color-mix-function.html
           subtest: Property color value 'color-mix(oklab(0.1 0.2 0.3 / 25%) 0%, oklab(0.5 none none / 0.5))'
+        - test: color-valid-color-mix-function.html
+          subtest: e.style['color'] = "color-mix(oklab(0.1 0.2 0.3), oklab(0.5 0.6 0.7))" should set the property value
+        - test: color-valid-color-mix-function.html
+          subtest: e.style['color'] = "color-mix(lab(10 20 30), lab(50 60 70))" should set the property value
+        - test: color-valid-color-mix-function.html
+          subtest: e.style['color'] = "color-mix(color(srgb .1 .2 .3), color(srgb .5 .6 .7))" should set the property value
+        - test: color-valid-color-mix-function.html
+          subtest: e.style['color'] = "color-mix(color(srgb-linear .1 .2 .3), color(srgb-linear .5 .6 .7))" should set the property value
+        - test: color-valid-color-mix-function.html
+          subtest: e.style['color'] = "color-mix(color(display-p3 .1 .2 .3), color(display-p3 .5 .6 .7))" should set the property value
+        - test: color-valid-color-mix-function.html
+          subtest: e.style['color'] = "color-mix(color(display-p3-linear .1 .2 .3), color(display-p3-linear .5 .6 .7))" should set the property value
+        - test: color-valid-color-mix-function.html
+          subtest: e.style['color'] = "color-mix(color(a98-rgb .1 .2 .3), color(a98-rgb .5 .6 .7))" should set the property value
+        - test: color-valid-color-mix-function.html
+          subtest: e.style['color'] = "color-mix(color(prophoto-rgb .1 .2 .3), color(prophoto-rgb .5 .6 .7))" should set the property value
+        - test: color-valid-color-mix-function.html
+          subtest: e.style['color'] = "color-mix(color(rec2020 .1 .2 .3), color(rec2020 .5 .6 .7))" should set the property value
+        - test: color-valid-color-mix-function.html
+          subtest: e.style['color'] = "color-mix(color(xyz .1 .2 .3), color(xyz .5 .6 .7))" should set the property value
+        - test: color-valid-color-mix-function.html
+          subtest: e.style['color'] = "color-mix(color(xyz-d50 .1 .2 .3), color(xyz-d50 .5 .6 .7))" should set the property value
+        - test: color-valid-color-mix-function.html
+          subtest: e.style['color'] = "color-mix(color(xyz-d65 .1 .2 .3), color(xyz-d65 .5 .6 .7))" should set the property value
+        - test: color-valid-color-mix-function.html
+          subtest: e.style['color'] = "color-mix(hsl(120deg 10% 20%), hsl(30deg 30% 40%))" should set the property value
+        - test: color-valid-color-mix-function.html
+          subtest: e.style['color'] = "color-mix(hwb(120deg 10% 20%), hwb(30deg 30% 40%))" should set the property value
+        - test: color-valid-color-mix-function.html
+          subtest: e.style['color'] = "color-mix(lch(10 20 30), lch(50 60 70))" should set the property value
+        - test: color-valid-color-mix-function.html
+          subtest: e.style['color'] = "color-mix(oklch(0.1 20 30), oklch(0.5 60 70))" should set the property value
