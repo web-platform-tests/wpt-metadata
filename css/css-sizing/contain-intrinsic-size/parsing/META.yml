@@ -73,3 +73,14 @@ links:
       unrelated longhands
     test: from-element-valid.tentative.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=2002207
+- product: firefox
+  results:
+  - subtest: Property contain-intrinsic-size value 'from-element none'
+    test: from-element-computed.tentative.html
+  - subtest: e.style['contain-intrinsic-size'] = "from-element none" should set the
+      property value
+    test: from-element-valid.tentative.html
+  - subtest: e.style['contain-intrinsic-size'] = "from-element none" should not set
+      unrelated longhands
+    test: from-element-valid.tentative.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2002530
