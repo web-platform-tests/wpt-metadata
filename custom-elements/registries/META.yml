@@ -43,10 +43,6 @@ links:
         - test: define.html
         - test: upgrade.html
     - product: chrome
-      url: https://crbug.com/717715
-      results:
-        - test: per-global.html
-    - product: chrome
       url: https://issues.chromium.org/issues/399124619
       results:
         - test: pseudo-class-defined.window.html
@@ -67,10 +63,10 @@ links:
         - test: CustomElementRegistry-upgrade.html
         - test: Document-createElement.html
         - test: Document-customElementRegistry.html
-        - test: per-global.html
         - test: scoped-registry-define-upgrade-criteria.html
         - test: ShadowRoot-init-customElementRegistry.html
         - test: template.window.html
+        - test: per-document.html
     - product: edge
       url: https://issues.chromium.org/issues/399124619
       results:
@@ -92,11 +88,15 @@ links:
         - test: CustomElementRegistry-upgrade.html
         - test: Document-createElement.html
         - test: Document-customElementRegistry.html
-        - test: per-global.html
         - test: scoped-registry-define-upgrade-criteria.html
         - test: ShadowRoot-init-customElementRegistry.html
         - test: template.window.html
+        - test: per-document.html
     - product: firefox
       url: https://bugzilla.mozilla.org/show_bug.cgi?id=1974274
       results:
         - test: valid-custom-element-names.html
+    - product: chrome
+      url: https://crbug.com/717715
+      results:
+        - test: per-document.html
