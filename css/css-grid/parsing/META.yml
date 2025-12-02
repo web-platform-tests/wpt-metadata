@@ -246,3 +246,74 @@ links:
       [four])" should set the property value
     test: grid-template-rows-repeat-intrinsic-valid.tentative.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1984455
+- product: firefox
+  results:
+  - subtest: Property grid-template-columns value '1px repeat(auto-fill, auto) 3px'
+    test: grid-template-columns-intrinsic-auto-repeat-computed-nogrid.tentative.html
+  - subtest: Property grid-template-columns value '1px repeat(auto-fit, auto) 3px'
+    test: grid-template-columns-intrinsic-auto-repeat-computed-nogrid.tentative.html
+  - subtest: Property grid-template-columns value '1px [a] repeat(auto-fill, min-content
+      max-content) [b] 4px'
+    test: grid-template-columns-intrinsic-auto-repeat-computed-nogrid.tentative.html
+  - subtest: Property grid-template-columns value '1px [a] repeat(auto-fit, min-content
+      max-content) [b] 4px'
+    test: grid-template-columns-intrinsic-auto-repeat-computed-nogrid.tentative.html
+  - subtest: Property grid-template-columns value '1px [a] repeat(auto-fill, [b] fit-content(200px)
+      [c]) [d] 3px'
+    test: grid-template-columns-intrinsic-auto-repeat-computed-nogrid.tentative.html
+  - subtest: Property grid-template-columns value '1px [a] repeat(auto-fit, [b] fit-content(200px)
+      [c]) [d] 3px'
+    test: grid-template-columns-intrinsic-auto-repeat-computed-nogrid.tentative.html
+  - subtest: Property grid-template-columns value '[a] 1px repeat(auto-fill, auto
+      [b] auto) 4px [d]'
+    test: grid-template-columns-intrinsic-auto-repeat-computed-nogrid.tentative.html
+  - subtest: Property grid-template-columns value '[a] 1px repeat(auto-fit, auto [b]
+      auto) 4px [d]'
+    test: grid-template-columns-intrinsic-auto-repeat-computed-nogrid.tentative.html
+  - subtest: Property grid-template-columns value '100% [a] repeat(auto-fill, [b]
+      min-content [c]) [d] 300%'
+    test: grid-template-columns-intrinsic-auto-repeat-computed-nogrid.tentative.html
+  - subtest: Property grid-template-columns value '100% [a] repeat(auto-fit, [b] min-content
+      [c]) [d] 300%'
+    test: grid-template-columns-intrinsic-auto-repeat-computed-nogrid.tentative.html
+  - subtest: Property grid-template-columns value '[a] 1em repeat(auto-fill, max-content
+      [b] auto) 4em [d]'
+    test: grid-template-columns-intrinsic-auto-repeat-computed-nogrid.tentative.html
+  - subtest: Property grid-template-columns value '[a] 1em repeat(auto-fit, max-content
+      [b] auto) 4em [d]'
+    test: grid-template-columns-intrinsic-auto-repeat-computed-nogrid.tentative.html
+  - subtest: Property grid-template-rows value '1px repeat(auto-fill, auto) 3px'
+    test: grid-template-rows-intrinsic-auto-repeat-computed-nogrid.tentative.html
+  - subtest: Property grid-template-rows value '1px repeat(auto-fit, auto) 3px'
+    test: grid-template-rows-intrinsic-auto-repeat-computed-nogrid.tentative.html
+  - subtest: Property grid-template-rows value '1px [a] repeat(auto-fill, min-content
+      max-content) [b] 4px'
+    test: grid-template-rows-intrinsic-auto-repeat-computed-nogrid.tentative.html
+  - subtest: Property grid-template-rows value '1px [a] repeat(auto-fit, min-content
+      max-content) [b] 4px'
+    test: grid-template-rows-intrinsic-auto-repeat-computed-nogrid.tentative.html
+  - subtest: Property grid-template-rows value '1px [a] repeat(auto-fill, [b] fit-content(200px)
+      [c]) [d] 3px'
+    test: grid-template-rows-intrinsic-auto-repeat-computed-nogrid.tentative.html
+  - subtest: Property grid-template-rows value '1px [a] repeat(auto-fit, [b] fit-content(200px)
+      [c]) [d] 3px'
+    test: grid-template-rows-intrinsic-auto-repeat-computed-nogrid.tentative.html
+  - subtest: Property grid-template-rows value '[a] 1px repeat(auto-fill, auto [b]
+      auto) 4px [d]'
+    test: grid-template-rows-intrinsic-auto-repeat-computed-nogrid.tentative.html
+  - subtest: Property grid-template-rows value '[a] 1px repeat(auto-fit, auto [b]
+      auto) 4px [d]'
+    test: grid-template-rows-intrinsic-auto-repeat-computed-nogrid.tentative.html
+  - subtest: Property grid-template-rows value '100% [a] repeat(auto-fill, [b] min-content
+      [c]) [d] 300%'
+    test: grid-template-rows-intrinsic-auto-repeat-computed-nogrid.tentative.html
+  - subtest: Property grid-template-rows value '100% [a] repeat(auto-fit, [b] min-content
+      [c]) [d] 300%'
+    test: grid-template-rows-intrinsic-auto-repeat-computed-nogrid.tentative.html
+  - subtest: Property grid-template-rows value '[a] 1em repeat(auto-fill, max-content
+      [b] auto) 4em [d]'
+    test: grid-template-rows-intrinsic-auto-repeat-computed-nogrid.tentative.html
+  - subtest: Property grid-template-rows value '[a] 1em repeat(auto-fit, max-content
+      [b] auto) 4em [d]'
+    test: grid-template-rows-intrinsic-auto-repeat-computed-nogrid.tentative.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2003502
