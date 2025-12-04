@@ -13,3 +13,16 @@ links:
   - test: stats.https.any.sharedworker.html
   - test: stats.https.any.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1881211
+- product: firefox
+  results:
+  - subtest: 'WebTransport interface: attribute protocol'
+    test: idlharness.https.any.sharedworker.html
+  - subtest: 'WebTransport interface: webTransport must inherit property "protocol"
+      with the proper type'
+    test: idlharness.https.any.sharedworker.html
+  - subtest: 'WebTransport interface: attribute protocol'
+    test: idlharness.https.any.worker.html
+  - subtest: 'WebTransport interface: webTransport must inherit property "protocol"
+      with the proper type'
+    test: idlharness.https.any.worker.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2003955
