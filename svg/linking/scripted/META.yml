@@ -1,11 +1,20 @@
 links:
-    - product: chrome
-      url: https://crbug.com/873988
-      results:
-        - test: a.rel-getter-01.svg
-        - test: rellist-feature-detection.svg
-    - product: chrome
-      url: https://bugs.chromium.org/p/chromium/issues/detail?id=1052202
-      results:
-        - test: href-animate-element.html
-        - test: href-mpath-element.html
+- product: chrome
+  results:
+  - test: a.rel-getter-01.svg
+  - test: rellist-feature-detection.svg
+  url: https://crbug.com/873988
+- product: chrome
+  results:
+  - test: href-animate-element.html
+  - test: href-mpath-element.html
+  url: https://bugs.chromium.org/p/chromium/issues/detail?id=1052202
+- product: firefox
+  results:
+  - subtest: XLink 'href' backwards compatibility, IDL href backed by "href" after
+      baseVal setter.
+    test: xlink-href-compat.html
+  - subtest: XLink 'href' backwards compatibility, IDL href reflects "href"; setAttribute(xlink:href)
+      does not override baseVal setter.
+    test: xlink-href-compat.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2005594
