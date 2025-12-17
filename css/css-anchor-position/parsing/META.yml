@@ -72,3 +72,20 @@ links:
         - test: position-try-computed.html
         - test: position-try-fallbacks-computed.html
         - test: position-try-fallbacks-parsing.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1989059
+      results:
+        - test: position-try-order-computed.html
+          subtest: Property position-try-order value 'normal'
+        - test: position-try-order-computed.html
+          subtest: Property position-try-order value 'most-width'
+        - test: position-try-order-computed.html
+          subtest: Property position-try-order value 'most-height'
+        - test: position-try-order-computed.html
+          subtest: Property position-try-order value 'most-block-size'
+        - test: position-try-order-computed.html
+          subtest: Property position-try-order value 'most-inline-size'
+        - test: position-try-order-computed.html
+          subtest: Property position-try-order does not inherit
+        - test: position-try-order-computed.html
+          subtest: Property position-try-order has initial value normal
