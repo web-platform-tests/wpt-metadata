@@ -72,3 +72,18 @@ links:
         - test: position-try-computed.html
         - test: position-try-fallbacks-computed.html
         - test: position-try-fallbacks-parsing.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1989059
+      results:
+        - test: position-try-computed.html
+          subtest: Property position-try value 'normal none'
+        - test: position-try-computed.html
+          subtest: Property position-try value 'most-width none'
+        - test: position-try-computed.html
+          subtest: Property position-try value 'most-height flip-block, flip-inline'
+        - test: position-try-computed.html
+          subtest: Property position-try value 'most-height flip-y, flip-x'
+        - test: position-try-computed.html
+          subtest: Property position-try value 'most-width --foo, --bar'
+        - test: position-try-computed.html
+          subtest: Property position-try value 'normal --foo'
