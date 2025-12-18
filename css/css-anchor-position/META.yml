@@ -5757,3 +5757,8 @@ links:
           subtest: 'Offsets for position-area: span-all center'
         - test: position-area-anchor-outside.html
           subtest: 'Offsets for position-area: center span-all'
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=2006804
+      results:
+        - test: position-try-fallbacks-limit.html
+          subtest: Try fallbacks which are not found are not part of the limit
