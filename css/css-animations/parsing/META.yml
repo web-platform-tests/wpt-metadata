@@ -610,3 +610,8 @@ links:
   - subtest: '''exit calc(60%)'' should be a valid keyframe selector'
     test: keyframe-selectors.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=2007780
+- product: firefox
+  results:
+  - subtest: Property animation-range value '10% calc(70% + 10% * sign(100em - 1px))'
+    test: animation-range-shorthand.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2007782
