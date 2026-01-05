@@ -1,15 +1,35 @@
 links:
-    - label: webperf
-      results:
-        - test: '*'
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1502168
-      results:
-        - test: beacon-basic.https.window.html
-    - product: chrome
-      url: https://bugs.chromium.org/p/chromium/issues/detail?id=1179244
-      results:
-        - test: beacon-basic.https.window.html
-          subtest: 'simple case: with null payload'
-        - test: beacon-basic.https.window.html
-          subtest: 'simple case: with no payload'
+- label: webperf
+  results:
+  - test: '*'
+- product: firefox
+  results:
+  - test: beacon-basic.https.window.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1502168
+- product: chrome
+  results:
+  - subtest: 'simple case: with null payload'
+    test: beacon-basic.https.window.html
+  - subtest: 'simple case: with no payload'
+    test: beacon-basic.https.window.html
+  url: https://bugs.chromium.org/p/chromium/issues/detail?id=1179244
+- product: firefox
+  results:
+  - subtest: 'Too large payload should be rejected: type = string'
+    test: beacon-basic.https.window.html
+  - subtest: 'Too large payload should be rejected: type = arraybuffer'
+    test: beacon-basic.https.window.html
+  - subtest: 'Too large payload should be rejected: type = form'
+    test: beacon-basic.https.window.html
+  - subtest: 'Too large payload should be rejected: type = blob'
+    test: beacon-basic.https.window.html
+  - subtest: 'Payload size restriction should be accumulated: type = string'
+    test: beacon-basic.https.window.html
+  - subtest: 'Payload size restriction should be accumulated: type = arraybuffer'
+    test: beacon-basic.https.window.html
+  - subtest: 'Payload size restriction should be accumulated: type = blob'
+    test: beacon-basic.https.window.html
+  - subtest: sendBeacon() with a stream does not work due to the keepalive flag being
+      set
+    test: beacon-basic.https.window.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2008613
