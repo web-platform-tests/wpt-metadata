@@ -11,3 +11,18 @@ links:
   - test: timeouts.py
   - test: unhandled_prompt_behavior.py
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1998965
+- product: firefox
+  results:
+  - subtest: test_timeouts[implicit-0]
+    test: timeouts.py
+  - subtest: test_timeouts[implicit-3000]
+    test: timeouts.py
+  - subtest: test_timeouts[pageLoad-0]
+    test: timeouts.py
+  - subtest: test_timeouts[pageLoad-3000]
+    test: timeouts.py
+  - subtest: test_timeouts[script-0]
+    test: timeouts.py
+  - subtest: test_timeouts[script-3000]
+    test: timeouts.py
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2008539
