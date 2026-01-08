@@ -260,3 +260,36 @@ links:
   - subtest: e.style['item-tolerance'] = "5vmin" should set the property value
     test: item-tolerance-valid.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=2001786
+- product: firefox
+  results:
+  - subtest: e.style['grid-lanes'] = "none" should set grid-template-areas
+    test: grid-lanes-shorthand-valid.html
+  - subtest: e.style['grid-lanes'] = "none" should set grid-template-columns
+    test: grid-lanes-shorthand-valid.html
+  - subtest: e.style['grid-lanes'] = "10px" should set grid-template-areas
+    test: grid-lanes-shorthand-valid.html
+  - subtest: e.style['grid-lanes'] = "10px" should set grid-template-columns
+    test: grid-lanes-shorthand-valid.html
+  - subtest: e.style['grid-lanes'] = "\"b a\" 20% 40% column" should set grid-lanes-direction
+    test: grid-lanes-shorthand-valid.html
+  - subtest: e.style['grid-lanes'] = "\"b a\" 20% 40% column" should set grid-template-areas
+    test: grid-lanes-shorthand-valid.html
+  - subtest: e.style['grid-lanes'] = "\"b a\" 20% 40% column" should set grid-template-columns
+    test: grid-lanes-shorthand-valid.html
+  - subtest: e.style['grid-lanes'] = "\"b b a\" 1fr 2fr 3fr row" should set grid-lanes-direction
+    test: grid-lanes-shorthand-valid.html
+  - subtest: e.style['grid-lanes'] = "\"b b a\" 1fr 2fr 3fr row" should set grid-template-areas
+    test: grid-lanes-shorthand-valid.html
+  - subtest: e.style['grid-lanes'] = "\"b b a\" 1fr 2fr 3fr row" should set grid-template-rows
+    test: grid-lanes-shorthand-valid.html
+  - subtest: e.style['grid-lanes'] = "repeat(2, auto) row-reverse" should set grid-lanes-direction
+    test: grid-lanes-shorthand-valid.html
+  - subtest: e.style['grid-lanes'] = "repeat(2, auto) row-reverse" should set grid-template-areas
+    test: grid-lanes-shorthand-valid.html
+  - subtest: e.style['grid-lanes'] = "repeat(2, auto) row-reverse" should set grid-template-rows
+    test: grid-lanes-shorthand-valid.html
+  - subtest: e.style['grid-lanes'] = "\"b a\" 20% 40% normal" should set grid-template-areas
+    test: grid-lanes-shorthand-valid.html
+  - subtest: e.style['grid-lanes'] = "\"b a\" 20% 40% normal" should set grid-template-columns
+    test: grid-lanes-shorthand-valid.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2009099
