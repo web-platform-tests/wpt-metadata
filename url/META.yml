@@ -1282,3 +1282,22 @@ links:
   - subtest: 'javascript: URL without an opaque path'
     test: javascript-urls.window.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1983733
+- product: firefox
+  results:
+  - subtest: 'Parsing origin: <https://0x.0x.0x.0x> against <about:blank>'
+    test: a-element-origin-xhtml.xhtml
+  - subtest: 'Parsing origin: <https://0x.0x.0x.0x> against <about:blank>'
+    test: a-element-origin.html
+  - subtest: 'Parsing: <https://0x.0x.0x.0x> against <about:blank>'
+    test: a-element-xhtml.xhtml?exclude=(file|javascript|mailto)
+  - subtest: 'Parsing: <https://0x.0x.0x.0x> against <about:blank>'
+    test: a-element.html?exclude=(file|javascript|mailto)
+  - subtest: 'Parsing: <https://0x.0x.0x.0x> without base'
+    test: url-constructor.any.html?exclude=(file|javascript|mailto)
+  - subtest: 'Parsing: <https://0x.0x.0x.0x> without base'
+    test: url-constructor.any.worker.html?exclude=(file|javascript|mailto)
+  - subtest: 'Origin parsing: <https://0x.0x.0x.0x> without base'
+    test: url-origin.any.html
+  - subtest: 'Origin parsing: <https://0x.0x.0x.0x> without base'
+    test: url-origin.any.worker.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2009602
