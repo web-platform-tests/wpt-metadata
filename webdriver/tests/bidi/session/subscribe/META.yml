@@ -1,6 +1,25 @@
 links:
-- label: chromium-bidi-2023
-  results:
-  - test: contexts.py
-  - test: events.py
-  - test: invalid.py
+    - label: chromium-bidi-2023
+      results:
+        - test: contexts.py
+        - test: events.py
+        - test: invalid.py
+    - product: firefox_android
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1877953
+      results:
+        - test: user_contexts.py
+          subtest: test_subscribe_one_user_context
+        - test: user_contexts.py
+          subtest: test_subscribe_default_user_context
+        - test: user_contexts.py
+          subtest: test_subscribe_multiple_user_contexts
+        - test: user_contexts.py
+          subtest: test_buffered_event
+        - test: user_contexts.py
+          subtest: test_subscribe_to_user_context_and_then_globally
+        - test: user_contexts.py
+          subtest: test_subscribe_to_user_context_and_then_to_browsing_context
+        - test: user_contexts.py
+          subtest: test_subscribe_globally_and_then_to_user_context
+        - test: user_contexts.py
+          subtest: test_subscribe_to_browsing_context_and_then_to_user_context
