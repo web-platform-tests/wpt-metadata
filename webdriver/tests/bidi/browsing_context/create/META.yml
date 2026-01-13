@@ -5,3 +5,14 @@ links:
         - test: invalid.py
         - test: reference_context.py
         - test: type.py
+    - product: firefox_android
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1877953
+      results:
+        - test: user_context.py
+          subtest: test_user_context[window]
+        - test: user_context.py
+          subtest: test_user_context[tab]
+        - test: user_context.py
+          subtest: test_overrides_user_context_from_reference_context
+        - test: user_context.py
+          subtest: test_user_context_nested_iframes
