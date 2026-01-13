@@ -1,30 +1,45 @@
 links:
-- label: chromium-bidi-2023
-  results:
-  - test: add_preload_script.py
-  - test: arguments.py
-  - test: invalid.py
-  - test: sandbox.py
-- product: firefox
-  results:
-  - subtest: test_script_order
-    test: add_preload_script.py
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1945627
-- results:
-  - test: execution_order_tentative.py
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1985997
-- product: firefox
-  results:
-  - subtest: test_preload_script_properties_available_immediately[popup-current_context_with_url]
-    test: execution_order_tentative.py
-  - subtest: test_preload_script_properties_available_immediately[popup-current_context_without_url]
-    test: execution_order_tentative.py
-  - subtest: test_preload_script_properties_available_immediately[popup-opener_context_with_url]
-    test: execution_order_tentative.py
-  - subtest: test_preload_script_properties_available_immediately[popup-opener_context_without_url]
-    test: execution_order_tentative.py
-  - subtest: test_preload_script_properties_available_immediately[iframe-opener_context_with_url]
-    test: execution_order_tentative.py
-  - subtest: test_preload_script_properties_available_immediately[iframe-opener_context_without_url]
-    test: execution_order_tentative.py
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1998964
+    - label: chromium-bidi-2023
+      results:
+        - test: add_preload_script.py
+        - test: arguments.py
+        - test: invalid.py
+        - test: sandbox.py
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1945627
+      results:
+        - test: add_preload_script.py
+          subtest: test_script_order
+    - url: https://bugzilla.mozilla.org/show_bug.cgi?id=1985997
+      results:
+        - test: execution_order_tentative.py
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1998964
+      results:
+        - test: execution_order_tentative.py
+          subtest: test_preload_script_properties_available_immediately[popup-current_context_with_url]
+        - test: execution_order_tentative.py
+          subtest: test_preload_script_properties_available_immediately[popup-current_context_without_url]
+        - test: execution_order_tentative.py
+          subtest: test_preload_script_properties_available_immediately[popup-opener_context_with_url]
+        - test: execution_order_tentative.py
+          subtest: test_preload_script_properties_available_immediately[popup-opener_context_without_url]
+        - test: execution_order_tentative.py
+          subtest: test_preload_script_properties_available_immediately[iframe-opener_context_with_url]
+        - test: execution_order_tentative.py
+          subtest: test_preload_script_properties_available_immediately[iframe-opener_context_without_url]
+    - product: firefox_android
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1877953
+      results:
+        - test: add_preload_script.py
+          subtest: test_add_preload_script_order_with_different_configuration[types5]
+        - test: add_preload_script.py
+          subtest: test_add_preload_script_order_with_different_configuration[types4]
+        - test: add_preload_script.py
+          subtest: test_add_preload_script_order_with_different_configuration[types3]
+        - test: add_preload_script.py
+          subtest: test_add_preload_script_order_with_different_configuration[types2]
+        - test: add_preload_script.py
+          subtest: test_add_preload_script_order_with_different_configuration[types1]
+        - test: add_preload_script.py
+          subtest: test_add_preload_script_order_with_different_configuration[types0]
