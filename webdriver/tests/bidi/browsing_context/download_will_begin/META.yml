@@ -1,6 +1,17 @@
 links:
-- product: firefox
-  results:
-  - subtest: test_unsubscribe
-    test: download_will_begin.py
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1956230
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1956230
+      results:
+        - test: download_will_begin.py
+          subtest: test_unsubscribe
+    - product: firefox_android
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1985252
+      results:
+        - test: download_will_begin.py
+          subtest: test_unsubscribe
+        - test: download_will_begin.py
+          subtest: test_download_attribute
+        - test: download_will_begin.py
+          subtest: test_content_disposition_header
+        - test: download_will_begin.py
+          subtest: test_redirect_to_content_disposition_header
