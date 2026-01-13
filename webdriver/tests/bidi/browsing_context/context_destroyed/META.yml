@@ -12,3 +12,10 @@ links:
       results:
         - test: context_destroyed.py
           subtest: test_nested_iframes_delete_top_iframe
+    - product: firefox_android
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1877953
+      results:
+        - test: context_destroyed.py
+          subtest: test_new_user_context[tab]
+        - test: context_destroyed.py
+          subtest: test_new_user_context[window]
