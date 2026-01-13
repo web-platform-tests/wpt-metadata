@@ -6,6 +6,11 @@ links:
         - test: reference_context.py
         - test: type.py
     - product: firefox_android
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1884142
+      results:
+        - test: type.py
+          subtest: test_type[tab]
+    - product: firefox_android
       url: https://bugzilla.mozilla.org/show_bug.cgi?id=1877953
       results:
         - test: reference_context.py
@@ -14,3 +19,4 @@ links:
           subtest: test_reference_context_with_no_user_context_set[window]
         - test: user_context.py
           subtest: test_user_context_default
+
