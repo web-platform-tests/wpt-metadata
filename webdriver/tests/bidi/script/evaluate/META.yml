@@ -14,24 +14,21 @@ links:
   - test: sandbox.py
   - test: strict_mode.py
   - test: user_activation.py
-- product: firefox
+- product: firefox_android
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1649374
   results:
-  - subtest: test_default_src_unsafe_inline[eval]
-    test: csp_tentative.py
-  - subtest: test_default_src_unsafe_inline[new Function]
-    test: csp_tentative.py
-  - subtest: test_default_src_unsafe_inline[eval from inline script]
-    test: csp_tentative.py
-  - subtest: test_default_src_unsafe_inline[eval from preload script]
-    test: csp_tentative.py
-  - subtest: test_default_src_unsafe_inline[eval from event handler]
-    test: csp_tentative.py
-  - subtest: test_default_src_unsafe_inline[nested eval]
-    test: csp_tentative.py
-  - subtest: test_default_src_unsafe_inline[nested new Function]
-    test: csp_tentative.py
-  - subtest: test_default_src_unsafe_inline[new Function nested in eval]
-    test: csp_tentative.py
-  - subtest: test_default_src_unsafe_inline[eval nested in new Function]
-    test: csp_tentative.py
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2001377
+    - test: csp_tentative.py
+      subtest: test_default_src_unsafe_inline[promise eval]
+    - test: csp_tentative.py
+      subtest: test_default_src_unsafe_inline[async eval]
+    - test: csp_tentative.py
+      subtest: test_default_src_unsafe_inline[async eval from preload script]
+- product: firefox
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1649374
+  results:
+    - test: csp_tentative.py
+      subtest: test_default_src_unsafe_inline[async eval]
+    - test: csp_tentative.py
+      subtest: test_default_src_unsafe_inline[promise eval]
+    - test: csp_tentative.py
+      subtest: test_default_src_unsafe_inline[async eval from preload script]
