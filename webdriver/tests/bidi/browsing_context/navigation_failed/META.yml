@@ -19,3 +19,21 @@ links:
   - subtest: test_with_beforeunload_prompt
     test: navigation_failed.py
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1989455
+- product: firefox_android
+  results:
+  - subtest: test_with_new_navigation
+    test: navigation_failed.py
+  - subtest: test_with_new_navigation_inside_page
+    test: navigation_failed.py
+  - subtest: test_close_context[tab]
+    test: navigation_failed.py
+  - subtest: test_close_context[window]
+    test: navigation_failed.py
+  - subtest: test_close_iframe
+    test: navigation_failed.py
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1874362
+- product: firefox_android
+  results:
+  - subtest: test_with_beforeunload_prompt
+    test: navigation_failed.py
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1879324
