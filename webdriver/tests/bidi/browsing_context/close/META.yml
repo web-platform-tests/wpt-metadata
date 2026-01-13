@@ -3,3 +3,10 @@ links:
       results:
         - test: close.py
         - test: invalid.py
+    - product: firefox_android
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1879324
+      results:
+        - test: prompt_unload.py
+          subtest: test_prompt_unload_triggering_dialog[window]
+        - test: prompt_unload.py
+          subtest: test_prompt_unload_triggering_dialog[tab]

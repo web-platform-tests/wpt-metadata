@@ -44,3 +44,15 @@ links:
       results:
         - test: realm.py
           subtest: test_realm[sandbox]
+    - product: firefox_android
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1799098
+      results:
+        - test: event_buffer.py
+          subtest: test_console_log_cached_message_after_refresh[console_api_log]
+        - test: event_buffer.py
+          subtest: test_console_log_cached_message_after_refresh[javascript_error]
+    - product: firefox_android
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1742589
+      results:
+        - test: realm.py
+          subtest: test_realm[sandbox]

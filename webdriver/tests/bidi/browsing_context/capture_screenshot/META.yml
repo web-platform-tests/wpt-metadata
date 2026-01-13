@@ -1,35 +1,32 @@
 links:
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1846740
-      results:
-        - test: clip.py
-          subtest: test_clip_element
-        - test: clip.py
-          subtest: test_clip_viewport
-    - url: ""
-      label: chromium-bidi-2023
+    - label: chromium-bidi-2023
       results:
         - test: capture_screenshot.py
         - test: clip.py
         - test: format.py
         - test: invalid.py
         - test: origin.py
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1861737
-      results:
-        - test: format.py
-          subtest: test_format_type
-        - test: format.py
-          subtest: test_format_quality
-        - test: invalid.py
-          subtest: test_params_format_invalid_value
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1761445
-      results:
-        - test: invalid.py
-          subtest: test_closed_frame
     - product: chrome
       url: https://crbug.com/355379067
       results:
         - test: frame_tentative.py
           subtest: test_iframe
+    - product: firefox_android
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1840084
+      results:
+        - test: capture_screenshot.py
+          subtest: test_capture_with_viewport[height smaller-width smaller]
+        - test: capture_screenshot.py
+          subtest: test_capture_with_viewport[height smaller-width larger]
+        - test: capture_screenshot.py
+          subtest: test_capture_with_viewport[height larger-width smaller]
+        - test: capture_screenshot.py
+          subtest: test_capture_with_viewport[height larger-width larger]
+        - test: capture_screenshot.py
+          subtest: test_capture_with_different_dpr[0.5]
+        - test: capture_screenshot.py
+          subtest: test_capture_with_different_dpr[2]
+        - test: clip.py
+          subtest: test_clip_with_different_dpr[0.5]
+        - test: clip.py
+          subtest: test_clip_with_different_dpr[2]
