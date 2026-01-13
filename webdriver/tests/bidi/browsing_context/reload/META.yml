@@ -1,17 +1,4 @@
 links:
-- product: firefox
-  results:
-  - test: reload.py
-  - test: wait.py
-  - test: frame.py
-  - test: invalid.py
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1830859
-- results:
-  - test: frame.py
-  - test: invalid.py
-  - test: reload.py
-  - test: wait.py
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1830859
 - label: chromium-bidi-2023
   results:
   - test: frame.py
@@ -28,4 +15,15 @@ links:
     test: invalid.py
   - subtest: test_params_ignore_cache_invalid_type[value3]
     test: invalid.py
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1945627
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1851561
+- product: firefox_android
+  results:
+  - subtest: test_params_ignore_cache_invalid_type[]
+    test: invalid.py
+  - subtest: test_params_ignore_cache_invalid_type[42]
+    test: invalid.py
+  - subtest: test_params_ignore_cache_invalid_type[value2]
+    test: invalid.py
+  - subtest: test_params_ignore_cache_invalid_type[value3]
+    test: invalid.py
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1851561
