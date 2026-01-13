@@ -1,7 +1,22 @@
 links:
-- label: chromium-bidi-2023
-  results:
-  - test: add_preload_script.py
-  - test: arguments.py
-  - test: invalid.py
-  - test: sandbox.py
+    - label: chromium-bidi-2023
+      results:
+        - test: add_preload_script.py
+        - test: arguments.py
+        - test: invalid.py
+        - test: sandbox.py
+    - product: firefox_android
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1877953
+      results:
+        - test: add_preload_script.py
+          subtest: test_add_preload_script_order_with_different_configuration[types5]
+        - test: add_preload_script.py
+          subtest: test_add_preload_script_order_with_different_configuration[types4]
+        - test: add_preload_script.py
+          subtest: test_add_preload_script_order_with_different_configuration[types3]
+        - test: add_preload_script.py
+          subtest: test_add_preload_script_order_with_different_configuration[types2]
+        - test: add_preload_script.py
+          subtest: test_add_preload_script_order_with_different_configuration[types1]
+        - test: add_preload_script.py
+          subtest: test_add_preload_script_order_with_different_configuration[types0]
