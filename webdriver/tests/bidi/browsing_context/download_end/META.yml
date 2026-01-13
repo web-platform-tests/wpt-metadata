@@ -1,19 +1,31 @@
 links:
-- product: firefox
-  results:
-  - subtest: test_unsubscribe[data]
-    test: download_end.py
-  - subtest: test_unsubscribe[http]
-    test: download_end.py
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1984042
-- product: firefox
-  results:
-  - subtest: test_subscribe[data]
-    test: download_end.py
-  - subtest: test_subscribe[http]
-    test: download_end.py
-  - subtest: test_status_complete
-    test: status.py
-  - subtest: test_status_canceled
-    test: status.py
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1989455
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1984042
+      results:
+        - test: download_end.py
+          subtest: test_unsubscribe[data]
+        - test: download_end.py
+          subtest: test_unsubscribe[http]
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1989455
+      results:
+        - test: download_end.py
+          subtest: test_subscribe[data]
+        - test: download_end.py
+          subtest: test_subscribe[http]
+        - test: status.py
+          subtest: test_status_complete
+        - test: status.py
+          subtest: test_status_canceled
+    - product: firefox_android
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1990259
+      results:
+        - test: status.py
+          subtest: test_status_complete
+        - test: status.py
+          subtest: test_status_canceled
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1990259
+      results:
+        - test: status.py
+          subtest: test_status_canceled
