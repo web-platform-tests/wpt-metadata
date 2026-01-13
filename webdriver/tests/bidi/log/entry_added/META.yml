@@ -1,4 +1,13 @@
 links:
+    - label: chromium-bidi-2023
+      results:
+        - test: console.py
+        - test: console_args.py
+        - test: event_buffer.py
+        - test: javascript.py
+        - test: realm.py
+        - test: stacktrace.py
+        - test: subscription.py
     - product: firefox
       url: https://bugzilla.mozilla.org/show_bug.cgi?id=1744705
       results:
@@ -25,15 +34,6 @@ links:
           subtest: test_subscribe_unsubscribe[javascript_error]
         - test: subscription.py
           subtest: test_subscribe_unsubscribe[console_api_log]
-    - label: chromium-bidi-2023
-      results:
-        - test: console.py
-        - test: console_args.py
-        - test: event_buffer.py
-        - test: javascript.py
-        - test: realm.py
-        - test: stacktrace.py
-        - test: subscription.py
     - product: firefox
       url: https://bugzilla.mozilla.org/show_bug.cgi?id=1866749
       results:
@@ -44,6 +44,11 @@ links:
       results:
         - test: realm.py
           subtest: test_realm[sandbox]
+    - product: firefox_android
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1866749
+      results:
+        - test: console.py
+          subtest: test_method_timeEnd
     - product: firefox_android
       url: https://bugzilla.mozilla.org/show_bug.cgi?id=1799098
       results:
@@ -56,3 +61,4 @@ links:
       results:
         - test: realm.py
           subtest: test_realm[sandbox]
+
