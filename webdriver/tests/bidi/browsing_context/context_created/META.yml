@@ -5,14 +5,11 @@ links:
     - product: firefox_android
       url: https://bugzilla.mozilla.org/show_bug.cgi?id=1877953
       results:
-        - test: subscribe_steps.py
-          subtest: test_existing_context_via_user_context[tab]
-        - test: subscribe_steps.py
-          subtest: test_existing_context_via_user_context[window]
-    - product: firefox_android
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1877953
-      results:
         - test: context_created.py
           subtest: test_new_user_context[tab]
         - test: context_created.py
           subtest: test_new_user_context[window]
+        - test: subscribe_steps.py
+          subtest: test_existing_context_via_user_context[tab]
+        - test: subscribe_steps.py
+          subtest: test_existing_context_via_user_context[window]
