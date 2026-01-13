@@ -1,27 +1,4 @@
 links:
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1945627
-      results:
-        - test: history_updated.py
-          subtest: test_history_url_update[-#foo-pushState]
-        - test: history_updated.py
-          subtest: test_history_url_update[#foo-#bar-pushState]
-        - test: history_updated.py
-          subtest: test_history_url_update[#foo-#foo-pushState]
-        - test: history_updated.py
-          subtest: test_history_url_update[#bar--pushState]
-        - test: history_updated.py
-          subtest: test_history_url_update[-#foo-replaceState]
-        - test: history_updated.py
-          subtest: test_history_url_update[#foo-#bar-replaceState]
-        - test: history_updated.py
-          subtest: test_history_url_update[#foo-#foo-replaceState]
-        - test: history_updated.py
-          subtest: test_history_url_update[#bar--replaceState]
-        - test: history_updated.py
-          subtest: test_history_state_update[pushState]
-        - test: history_updated.py
-          subtest: test_history_state_update[replaceState]
     - product: firefox_android
       url: https://bugzilla.mozilla.org/show_bug.cgi?id=1968705
       results:
