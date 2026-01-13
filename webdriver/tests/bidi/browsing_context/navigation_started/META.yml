@@ -13,20 +13,7 @@ links:
   results:
   - subtest: test_redirect_http_equiv
     test: navigation_started.py
-  - subtest: test_with_beforeunload_prompt[capabilities0]
-    test: navigation_started.py
-  - subtest: test_with_accepted_beforeunload_prompt[capabilities0]
-    test: navigation_started.py
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1945627
-- product: firefox
-  results:
-  - subtest: test_with_beforeunload_prompt[capabilities0-none]
-    test: navigation_started.py
-  - subtest: test_with_beforeunload_prompt[capabilities0-interactive]
-    test: navigation_started.py
-  - subtest: test_with_beforeunload_prompt[capabilities0-complete]
-    test: navigation_started.py
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1952946
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1859545
 - product: firefox
   results:
   - subtest: test_with_beforeunload_prompt[none]
@@ -35,9 +22,18 @@ links:
     test: navigation_started.py
   - subtest: test_with_beforeunload_prompt[complete]
     test: navigation_started.py
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1984042
-- product: firefox
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1879324
+- product: firefox_android
   results:
-  - subtest: test_multiple_events_for_interrupted_navigation[Interrupted on load]
-    test: navigation_interrupted.py
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1989455
+  - subtest: test_redirect_http_equiv
+    test: navigation_started.py
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1859545
+- product: firefox_android
+  results:
+  - subtest: test_with_beforeunload_prompt[none]
+    test: navigation_started.py
+  - subtest: test_with_beforeunload_prompt[interactive]
+    test: navigation_started.py
+  - subtest: test_with_beforeunload_prompt[complete]
+    test: navigation_started.py
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1879324
