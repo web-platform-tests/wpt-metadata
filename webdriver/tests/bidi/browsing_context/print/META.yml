@@ -11,7 +11,7 @@ links:
         - test: scale.py
         - test: shrink_to_fit.py
     - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1886382
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1984566
       results:
         - test: margin.py
           subtest: test_margin_same_as_page_dimension[top]
@@ -23,7 +23,16 @@ links:
           subtest: test_margin_same_as_page_dimension[bottom]
         - test: margin.py
           subtest: test_margin_same_as_page_dimension[all]
-        - test: invalid.py
-          subtest: test_params_page_invalid_value[page2]
-        - test: invalid.py
-          subtest: test_params_page_invalid_value[page3]
+    - product: firefox_android
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1984566
+      results:
+        - test: margin.py
+          subtest: test_margin_same_as_page_dimension[top]
+        - test: margin.py
+          subtest: test_margin_same_as_page_dimension[left]
+        - test: margin.py
+          subtest: test_margin_same_as_page_dimension[right]
+        - test: margin.py
+          subtest: test_margin_same_as_page_dimension[bottom]
+        - test: margin.py
+          subtest: test_margin_same_as_page_dimension[all]
