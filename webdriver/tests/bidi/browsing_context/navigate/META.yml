@@ -11,48 +11,12 @@ links:
         - test: navigate.py
         - test: wait.py
     - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1945627
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=2010126
       results:
         - test: navigate.py
           subtest: test_same_document_navigation_in_before_unload
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1947474
+    - product: firefox_android
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=2010126
       results:
         - test: navigate.py
-          subtest: test_navigate_with_beforeunload_prompt_in_iframe[capabilities0-False-interactive]
-        - test: navigate.py
-          subtest: test_navigate_with_beforeunload_prompt_in_iframe[capabilities0-False-complete]
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1952946
-      results:
-        - test: navigate.py
-          subtest: test_relative_url
-        - test: navigate_beforeunload.py
-          subtest: test_navigate_with_beforeunload_prompt_in_iframe[capabilities0-False-none]
-        - test: navigate_beforeunload.py
-          subtest: test_navigate_with_beforeunload_prompt_in_iframe[capabilities0-False-interactive]
-        - test: navigate_beforeunload.py
-          subtest: test_navigate_with_beforeunload_prompt_in_iframe[capabilities0-False-complete]
-        - test: wait.py
-          subtest: test_expected_url[none]
-        - test: wait.py
-          subtest: test_slow_image_blocks_load[none-False]
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1984042
-      results:
-        - test: navigate_beforeunload.py
-          subtest: test_navigate_with_beforeunload_prompt_in_iframe[False-none]
-        - test: navigate_beforeunload.py
-          subtest: test_navigate_with_beforeunload_prompt_in_iframe[False-interactive]
-        - test: navigate_beforeunload.py
-          subtest: test_navigate_with_beforeunload_prompt_in_iframe[False-complete]
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1985628
-      results:
-        - test: navigate.py
-          subtest: test_interrupted_navigation[interactive-Interrupted on DOMContentLoaded]
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1975796
-      results:
-        - test: navigate.py
-          subtest: test_relative_url
+          subtest: test_same_document_navigation_in_before_unload
