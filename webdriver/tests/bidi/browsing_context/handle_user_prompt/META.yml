@@ -3,3 +3,10 @@ links:
       results:
         - test: handle_user_prompt.py
         - test: invalid.py
+    - product: firefox_android
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1879324
+      results:
+        - test: handle_user_prompt.py
+          subtest: test_beforeunload[False]
+        - test: handle_user_prompt.py
+          subtest: test_beforeunload[True]
