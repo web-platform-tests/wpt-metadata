@@ -5,3 +5,10 @@ links:
         - test: invalid.py
         - test: reference_context.py
         - test: type.py
+    - product: firefox_android
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1877953
+      results:
+        - test: reference_context.py
+          subtest: test_reference_context_with_no_user_context_set[tab]
+        - test: reference_context.py
+          subtest: test_reference_context_with_no_user_context_set[window]
