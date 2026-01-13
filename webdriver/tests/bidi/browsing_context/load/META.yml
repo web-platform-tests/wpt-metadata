@@ -1,11 +1,18 @@
 links:
-- label: chromium-bidi-2023
-  results:
-  - test: load.py
-- product: firefox
-  results:
-  - subtest: test_new_context_not_emitted[tab]
-    test: load.py
-  - subtest: test_new_context_not_emitted[window]
-    test: load.py
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1945627
+  - label: chromium-bidi-2023
+    results:
+    - test: load.py
+  - product: firefox
+    url: https://bugzilla.mozilla.org/show_bug.cgi?id=1930594
+    results:
+      - test: load.py
+        subtest: test_new_context_not_emitted[tab]
+      - test: load.py
+        subtest: test_new_context_not_emitted[window]
+  - product: firefox_android
+    url: https://bugzilla.mozilla.org/show_bug.cgi?id=1930594
+    results:
+      - test: load.py
+        subtest: test_new_context_not_emitted[tab]
+      - test: load.py
+        subtest: test_new_context_not_emitted[window]
