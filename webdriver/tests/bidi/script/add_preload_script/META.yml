@@ -8,17 +8,6 @@ links:
     - product: firefox_android
       url: https://bugzilla.mozilla.org/show_bug.cgi?id=1877953
       results:
-        - test: user_contexts.py
-          subtest: test_add_preload_script_to_user_context
-        - test: user_contexts.py
-          subtest: test_add_preload_script_to_default_user_context
-        - test: user_contexts.py
-          subtest: test_add_preload_script_to_multiple_user_contexts
-        - test: user_contexts.py
-          subtest: test_identical_user_contexts
-    - product: firefox_android
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1877953
-      results:
         - test: add_preload_script.py
           subtest: test_add_preload_script_order_with_different_configuration[types5]
         - test: add_preload_script.py
@@ -31,3 +20,11 @@ links:
           subtest: test_add_preload_script_order_with_different_configuration[types1]
         - test: add_preload_script.py
           subtest: test_add_preload_script_order_with_different_configuration[types0]
+        - test: user_contexts.py
+          subtest: test_add_preload_script_to_user_context
+        - test: user_contexts.py
+          subtest: test_add_preload_script_to_default_user_context
+        - test: user_contexts.py
+          subtest: test_add_preload_script_to_multiple_user_contexts
+        - test: user_contexts.py
+          subtest: test_identical_user_contexts
