@@ -4,3 +4,8 @@ links:
         - test: context.py
         - test: delta.py
         - test: invalid.py
+    - product: firefox_android
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1762066
+      results:
+        - test: delta.py
+          subtest: test_navigate_special_protocols[file url]
