@@ -1,18 +1,21 @@
 links:
-- label: chromium-bidi-2023
-  results:
-  - test: context_destroyed.py
-- product: firefox
-  results:
-  - subtest: test_nested_iframes_delete_top_iframe
-    test: context_destroyed.py
-  - subtest: test_subscribe_to_one_context
-    test: context_destroyed.py
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1945627
-- product: firefox
-  results:
-  - subtest: test_client_window[tab]
-    test: context_destroyed.py
-  - subtest: test_client_window[window]
-    test: context_destroyed.py
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1960832
+    - label: chromium-bidi-2023
+      results:
+        - test: context_destroyed.py
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1860008
+      results:
+        - test: context_destroyed.py
+          subtest: test_nested_iframes_delete_top_iframe
+    - product: firefox_android
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1860008
+      results:
+        - test: context_destroyed.py
+          subtest: test_nested_iframes_delete_top_iframe
+    - product: firefox_android
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1877953
+      results:
+        - test: context_destroyed.py
+          subtest: test_new_user_context[tab]
+        - test: context_destroyed.py
+          subtest: test_new_user_context[window]
