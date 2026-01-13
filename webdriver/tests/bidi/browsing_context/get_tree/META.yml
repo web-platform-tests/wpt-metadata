@@ -5,3 +5,10 @@ links:
         - test: invalid.py
         - test: max_depth.py
         - test: root.py
+    - product: firefox_android
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1877953
+      results:
+        - test: frames.py
+          subtest: test_user_context[same_origin-new]
+        - test: frames.py
+          subtest: test_user_context[cross_origin-new]
