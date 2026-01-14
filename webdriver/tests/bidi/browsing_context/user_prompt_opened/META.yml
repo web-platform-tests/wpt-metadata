@@ -2,13 +2,12 @@ links:
     - label: chromium-bidi-2023
       results:
         - test: user_prompt_opened.py
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1964905
-      results:
-        - test: user_prompt_opened.py
-          subtest: test_iframe
     - product: firefox_android
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1964905
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1879324
+      results:
+        - test: beforeunload.py
+    - product: firefox_android
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=2007385
       results:
         - test: user_prompt_opened.py
           subtest: test_iframe
