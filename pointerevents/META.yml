@@ -410,3 +410,362 @@ links:
   - subtest: mouse events with change-slotname at pointerup
     test: pointerevent_after_target_removed_from_slot.html?mouse
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1998753
+- product: firefox
+  results:
+  - subtest: Capturing boundary event handler at DIV
+    test: capturing_boundary_event_handler_at_ua_shadowdom.html?pen
+  - subtest: Capturing boundary event handler at VIDEO
+    test: capturing_boundary_event_handler_at_ua_shadowdom.html?pen
+  - subtest: Capturing boundary event handler at INPUT
+    test: capturing_boundary_event_handler_at_ua_shadowdom.html?pen
+  - subtest: Coalesced list in boundary events
+    test: coalesced_events_attributes.https.html?pen
+  - subtest: Coalesced list in pointer-capture events
+    test: coalesced_events_attributes.https.html?pen
+  - subtest: Coalesced list in pointerdown/move/up events
+    test: coalesced_events_attributes.https.html?pen
+  - subtest: Coalesced list in pointerdown/move/up events
+    test: coalesced_events_attributes_on_redispatch.https.html?pen
+  - subtest: pointer events from pen received before/after child attached at pointerdown
+    test: pointerevent_after_target_appended.html?pen
+  - subtest: pointer events from pen received before/after child attached at pointerup
+    test: pointerevent_after_target_appended.html?pen
+  - subtest: pointer events from pen received before/after child moved at pointerdown
+    test: pointerevent_after_target_appended.html?pen
+  - subtest: pointer events from pen received before/after child moved at pointerup
+    test: pointerevent_after_target_appended.html?pen
+  - subtest: mouse events from pen received before/after child attached at mousedown
+    test: pointerevent_after_target_appended.html?pen
+  - subtest: mouse events from pen received before/after child attached at mouseup
+    test: pointerevent_after_target_appended.html?pen
+  - subtest: mouse events from pen received before/after child moved at mousedown
+    test: pointerevent_after_target_appended.html?pen
+  - subtest: mouse events from pen received before/after child moved at mouseup
+    test: pointerevent_after_target_appended.html?pen
+  - subtest: pointer events from touch received before/after child attached at pointerup
+    test: pointerevent_after_target_appended.html?touch
+  - subtest: pointer events from touch received before/after child moved at pointerdown
+    test: pointerevent_after_target_appended.html?touch
+  - subtest: pointer events from touch received before/after child moved at pointerup
+    test: pointerevent_after_target_appended.html?touch
+  - subtest: pointer events from pen received before/after child removal at pointerdown
+    test: pointerevent_after_target_removed.html?pen
+  - subtest: pointer events from pen received before/after child removal at pointerup
+    test: pointerevent_after_target_removed.html?pen
+  - subtest: mouse events from pen received before/after child removal at mousedown
+    test: pointerevent_after_target_removed.html?pen
+  - subtest: mouse events from pen received before/after child removal at mouseup
+    test: pointerevent_after_target_removed.html?pen
+  - subtest: mouse pointerover.fromElement value is null
+    test: pointerevent_attributes.html?mouse-right
+  - subtest: mouse pointerover.toElement value is null
+    test: pointerevent_attributes.html?mouse-right
+  - subtest: mouse pointerenter.fromElement value is null
+    test: pointerevent_attributes.html?mouse-right
+  - subtest: mouse pointerenter.toElement value is null
+    test: pointerevent_attributes.html?mouse-right
+  - subtest: mouse pointermove.fromElement value is null
+    test: pointerevent_attributes.html?mouse-right
+  - subtest: mouse pointermove.toElement value is null
+    test: pointerevent_attributes.html?mouse-right
+  - subtest: mouse pointerdown.fromElement value is null
+    test: pointerevent_attributes.html?mouse-right
+  - subtest: mouse pointerdown.toElement value is null
+    test: pointerevent_attributes.html?mouse-right
+  - subtest: mouse pointerup.fromElement value is null
+    test: pointerevent_attributes.html?mouse-right
+  - subtest: mouse pointerup.toElement value is null
+    test: pointerevent_attributes.html?mouse-right
+  - subtest: mouse pointerout.fromElement value is null
+    test: pointerevent_attributes.html?mouse-right
+  - subtest: mouse pointerout.toElement value is null
+    test: pointerevent_attributes.html?mouse-right
+  - subtest: mouse pointerleave.fromElement value is null
+    test: pointerevent_attributes.html?mouse-right
+  - subtest: mouse pointerleave.toElement value is null
+    test: pointerevent_attributes.html?mouse-right
+  - subtest: Inner Frame mouse pointerover.fromElement value is null
+    test: pointerevent_attributes.html?mouse-right
+  - subtest: Inner Frame mouse pointerover.toElement value is null
+    test: pointerevent_attributes.html?mouse-right
+  - subtest: Inner Frame mouse pointerenter.fromElement value is null
+    test: pointerevent_attributes.html?mouse-right
+  - subtest: Inner Frame mouse pointerenter.toElement value is null
+    test: pointerevent_attributes.html?mouse-right
+  - subtest: Inner Frame mouse pointermove.fromElement value is null
+    test: pointerevent_attributes.html?mouse-right
+  - subtest: Inner Frame mouse pointermove.toElement value is null
+    test: pointerevent_attributes.html?mouse-right
+  - subtest: Inner Frame mouse pointerdown.fromElement value is null
+    test: pointerevent_attributes.html?mouse-right
+  - subtest: Inner Frame mouse pointerdown.toElement value is null
+    test: pointerevent_attributes.html?mouse-right
+  - subtest: Inner Frame mouse pointerup.fromElement value is null
+    test: pointerevent_attributes.html?mouse-right
+  - subtest: Inner Frame mouse pointerup.toElement value is null
+    test: pointerevent_attributes.html?mouse-right
+  - subtest: Inner Frame mouse pointerout.fromElement value is null
+    test: pointerevent_attributes.html?mouse-right
+  - subtest: Inner Frame mouse pointerout.toElement value is null
+    test: pointerevent_attributes.html?mouse-right
+  - subtest: Inner Frame mouse pointerleave.fromElement value is null
+    test: pointerevent_attributes.html?mouse-right
+  - subtest: Inner Frame mouse pointerleave.toElement value is null
+    test: pointerevent_attributes.html?mouse-right
+  - subtest: Test pointer events in the main document
+    test: pointerevent_attributes.html?pen-right
+  - subtest: Test pointer events in an iframe
+    test: pointerevent_attributes.html?pen-right
+  - subtest: touch pointerover.fromElement value is null
+    test: pointerevent_attributes.html?touch
+  - subtest: touch pointerover.toElement value is null
+    test: pointerevent_attributes.html?touch
+  - subtest: touch pointerenter.fromElement value is null
+    test: pointerevent_attributes.html?touch
+  - subtest: touch pointerenter.toElement value is null
+    test: pointerevent_attributes.html?touch
+  - subtest: touch pointerdown.fromElement value is null
+    test: pointerevent_attributes.html?touch
+  - subtest: touch pointerdown.toElement value is null
+    test: pointerevent_attributes.html?touch
+  - subtest: touch pointermove.fromElement value is null
+    test: pointerevent_attributes.html?touch
+  - subtest: touch pointermove.toElement value is null
+    test: pointerevent_attributes.html?touch
+  - subtest: touch pointerup.fromElement value is null
+    test: pointerevent_attributes.html?touch
+  - subtest: touch pointerup.toElement value is null
+    test: pointerevent_attributes.html?touch
+  - subtest: touch pointerout.fromElement value is null
+    test: pointerevent_attributes.html?touch
+  - subtest: touch pointerout.toElement value is null
+    test: pointerevent_attributes.html?touch
+  - subtest: touch pointerleave.fromElement value is null
+    test: pointerevent_attributes.html?touch
+  - subtest: touch pointerleave.toElement value is null
+    test: pointerevent_attributes.html?touch
+  - subtest: Inner Frame touch pointerover.fromElement value is null
+    test: pointerevent_attributes.html?touch
+  - subtest: Inner Frame touch pointerover.toElement value is null
+    test: pointerevent_attributes.html?touch
+  - subtest: Inner Frame touch pointerenter.fromElement value is null
+    test: pointerevent_attributes.html?touch
+  - subtest: Inner Frame touch pointerenter.toElement value is null
+    test: pointerevent_attributes.html?touch
+  - subtest: Inner Frame touch pointerdown.fromElement value is null
+    test: pointerevent_attributes.html?touch
+  - subtest: Inner Frame touch pointerdown.toElement value is null
+    test: pointerevent_attributes.html?touch
+  - subtest: Inner Frame touch pointermove.fromElement value is null
+    test: pointerevent_attributes.html?touch
+  - subtest: Inner Frame touch pointermove.toElement value is null
+    test: pointerevent_attributes.html?touch
+  - subtest: Inner Frame touch pointerup.fromElement value is null
+    test: pointerevent_attributes.html?touch
+  - subtest: Inner Frame touch pointerup.toElement value is null
+    test: pointerevent_attributes.html?touch
+  - subtest: Inner Frame touch pointerout.fromElement value is null
+    test: pointerevent_attributes.html?touch
+  - subtest: Inner Frame touch pointerout.toElement value is null
+    test: pointerevent_attributes.html?touch
+  - subtest: Inner Frame touch pointerleave.fromElement value is null
+    test: pointerevent_attributes.html?touch
+  - subtest: Inner Frame touch pointerleave.toElement value is null
+    test: pointerevent_attributes.html?touch
+  - subtest: Test pointer events in the main document
+    test: pointerevent_attributes.html?pen
+  - subtest: Test pointer events in an iframe
+    test: pointerevent_attributes.html?pen
+  - subtest: mouse pointerover.fromElement value is null
+    test: pointerevent_attributes.html?mouse
+  - subtest: mouse pointerover.toElement value is null
+    test: pointerevent_attributes.html?mouse
+  - subtest: mouse pointerenter.fromElement value is null
+    test: pointerevent_attributes.html?mouse
+  - subtest: mouse pointerenter.toElement value is null
+    test: pointerevent_attributes.html?mouse
+  - subtest: mouse pointermove.fromElement value is null
+    test: pointerevent_attributes.html?mouse
+  - subtest: mouse pointermove.toElement value is null
+    test: pointerevent_attributes.html?mouse
+  - subtest: mouse pointerdown.fromElement value is null
+    test: pointerevent_attributes.html?mouse
+  - subtest: mouse pointerdown.toElement value is null
+    test: pointerevent_attributes.html?mouse
+  - subtest: mouse pointerup.fromElement value is null
+    test: pointerevent_attributes.html?mouse
+  - subtest: mouse pointerup.toElement value is null
+    test: pointerevent_attributes.html?mouse
+  - subtest: mouse pointerout.fromElement value is null
+    test: pointerevent_attributes.html?mouse
+  - subtest: mouse pointerout.toElement value is null
+    test: pointerevent_attributes.html?mouse
+  - subtest: mouse pointerleave.fromElement value is null
+    test: pointerevent_attributes.html?mouse
+  - subtest: mouse pointerleave.toElement value is null
+    test: pointerevent_attributes.html?mouse
+  - subtest: Inner Frame mouse pointerover.fromElement value is null
+    test: pointerevent_attributes.html?mouse
+  - subtest: Inner Frame mouse pointerover.toElement value is null
+    test: pointerevent_attributes.html?mouse
+  - subtest: Inner Frame mouse pointerenter.fromElement value is null
+    test: pointerevent_attributes.html?mouse
+  - subtest: Inner Frame mouse pointerenter.toElement value is null
+    test: pointerevent_attributes.html?mouse
+  - subtest: Inner Frame mouse pointermove.fromElement value is null
+    test: pointerevent_attributes.html?mouse
+  - subtest: Inner Frame mouse pointermove.toElement value is null
+    test: pointerevent_attributes.html?mouse
+  - subtest: Inner Frame mouse pointerdown.fromElement value is null
+    test: pointerevent_attributes.html?mouse
+  - subtest: Inner Frame mouse pointerdown.toElement value is null
+    test: pointerevent_attributes.html?mouse
+  - subtest: Inner Frame mouse pointerup.fromElement value is null
+    test: pointerevent_attributes.html?mouse
+  - subtest: Inner Frame mouse pointerup.toElement value is null
+    test: pointerevent_attributes.html?mouse
+  - subtest: Inner Frame mouse pointerout.fromElement value is null
+    test: pointerevent_attributes.html?mouse
+  - subtest: Inner Frame mouse pointerout.toElement value is null
+    test: pointerevent_attributes.html?mouse
+  - subtest: Inner Frame mouse pointerleave.fromElement value is null
+    test: pointerevent_attributes.html?mouse
+  - subtest: Inner Frame mouse pointerleave.toElement value is null
+    test: pointerevent_attributes.html?mouse
+  - subtest: auxclick using pen is a PointerEvent with correct properties
+    test: pointerevent_auxclick_is_a_pointerevent.html?pen
+  - subtest: auxclick using pen is a PointerEvent with correct properties when no
+      other PointerEvent listeners are present
+    test: pointerevent_auxclick_is_a_pointerevent.html?pen
+  - subtest: Boundary events around pointer capture and release
+    test: pointerevent_boundary_events_in_capturing.html?pen
+  - subtest: scroll should be received before the test finishes
+    test: pointerevent_change-touch-action-onpointerdown_touch.html
+  - subtest: click using pen is a PointerEvent with correct properties
+    test: pointerevent_click_is_a_pointerevent.html?pen
+  - subtest: click using pen is a PointerEvent with correct properties when no other
+      PointerEvent listeners are present
+    test: pointerevent_click_is_a_pointerevent.html?pen
+  - subtest: click using pen is a PointerEvent with correct properties in a subframe
+    test: pointerevent_click_is_a_pointerevent.html?pen
+  - test: pointerevent_disabled_form_control.html?pen
+  - subtest: pen pointerevent attributes
+    test: pointerevent_disabled_form_control.html?pen
+  - test: pointerevent_element_haspointercapture.html?pen
+  - subtest: hasPointerCapture
+    test: pointerevent_element_haspointercapture.html?pen
+  - test: pointerevent_element_haspointercapture_release_pending_capture.html?pen
+  - subtest: hasPointerCapture test after the pending pointer capture element releases
+      pointer capture
+    test: pointerevent_element_haspointercapture_release_pending_capture.html?pen
+  - subtest: touch pointerevent attributes
+    test: pointerevent_movementxy.html?touch
+  - subtest: pen pointerevent attributes
+    test: pointerevent_movementxy.html?pen
+  - subtest: pointercancel event received
+    test: pointerevent_pointercancel_touch.html
+  - subtest: 'Test penpointer capture in same-origin frame: Pointer down at inner
+      frame and set pointer capture.'
+    test: pointerevent_pointercapture_in_frame.html?pen
+  - subtest: 'Test penpointer capture in same-origin frame: Pointer down at inner
+      frame and set pointer capture to outer frame should not capture.'
+    test: pointerevent_pointercapture_in_frame.html?pen
+  - subtest: 'Test penpointer capture in same-origin frame: Pointer down at outer
+      frame body and set pointer capture.'
+    test: pointerevent_pointercapture_in_frame.html?pen
+  - subtest: 'Test penpointer capture in same-origin frame: Pointer down at outer
+      frame body and set pointer capture in inner frame should not capture.'
+    test: pointerevent_pointercapture_in_frame.html?pen
+  - subtest: 'Test penpointer capture in same-origin frame: Pointerdown with set capture
+      at inner frame, then release on next pointermove.'
+    test: pointerevent_pointercapture_in_frame.html?pen
+  - subtest: 'Test penpointer capture in same-origin frame: Pointerdown with set capture
+      at outer frame, then release on next pointermove.'
+    test: pointerevent_pointercapture_in_frame.html?pen
+  - subtest: 'Test touchpointer capture in same-origin frame: Pointer down at inner
+      frame and set pointer capture to outer frame should not capture.'
+    test: pointerevent_pointercapture_in_frame.html?touch
+  - subtest: 'Test touchpointer capture in same-origin frame: Pointer down at outer
+      frame body and set pointer capture in inner frame should not capture.'
+    test: pointerevent_pointercapture_in_frame.html?touch
+  - subtest: pointerleave event received
+    test: pointerevent_pointerleave_after_pointercancel_touch.html
+  - subtest: pointerout event received
+    test: pointerevent_pointerout_after_pointercancel_touch.html
+  - subtest: pointerout event received
+    test: pointerevent_pointerout_pen.html
+  - test: pointerevent_releasepointercapture_events_to_original_target.html?pen
+  - subtest: 'pen got/lost pointercapture: subsequent events to target'
+    test: pointerevent_releasepointercapture_events_to_original_target.html?pen
+  - subtest: mouse gotpointercapture.fromElement value is null
+    test: pointerevent_releasepointercapture_events_to_original_target.html?mouse
+  - subtest: mouse gotpointercapture.toElement value is null
+    test: pointerevent_releasepointercapture_events_to_original_target.html?mouse
+  - subtest: mouse lostpointercapture.fromElement value is null
+    test: pointerevent_releasepointercapture_events_to_original_target.html?mouse
+  - subtest: mouse lostpointercapture.toElement value is null
+    test: pointerevent_releasepointercapture_events_to_original_target.html?mouse
+  - subtest: touch gotpointercapture.fromElement value is null
+    test: pointerevent_releasepointercapture_events_to_original_target.html?touch
+  - subtest: touch gotpointercapture.toElement value is null
+    test: pointerevent_releasepointercapture_events_to_original_target.html?touch
+  - subtest: touch lostpointercapture.fromElement value is null
+    test: pointerevent_releasepointercapture_events_to_original_target.html?touch
+  - subtest: touch lostpointercapture.toElement value is null
+    test: pointerevent_releasepointercapture_events_to_original_target.html?touch
+  - subtest: pointer capture is released on pointercancel
+    test: pointerevent_releasepointercapture_onpointercancel_touch.html
+  - test: pointerevent_releasepointercapture_release_right_after_capture.html?pen
+  - subtest: Release pointer capture right after setpointercapture
+    test: pointerevent_releasepointercapture_release_right_after_capture.html?pen
+  - test: pointerevent_sequence_at_implicit_release_on_click.html?pen
+  - subtest: pen Boundary events are emitted after lostpointercapture
+    test: pointerevent_sequence_at_implicit_release_on_click.html?pen
+  - subtest: No extra events are emitted
+    test: pointerevent_sequence_at_implicit_release_on_click.html?pen
+  - subtest: touch Event sequence at implicit release on drag
+    test: pointerevent_sequence_at_implicit_release_on_drag.html
+  - test: pointerevent_setpointercapture_override_pending_capture_element.html?pen
+  - subtest: 'setPointerCapture: override the pending pointer capture element'
+    test: pointerevent_setpointercapture_override_pending_capture_element.html?pen
+  - subtest: A repeated setPointerCapture call does not redispatch capture events
+    test: pointerevent_setpointercapture_to_same_element_twice.html?pen
+  - subtest: A failed setPointerCapture call does not affect existing capture
+    test: pointerevent_setpointercapture_to_same_element_twice.html?pen
+  - subtest: Pointer events from pen to slotted element and shadow-host
+    test: pointerevent_to_slotted_target.html?pen
+  - subtest: touch-action attribute test
+    test: pointerevent_touch-action-inherit_child-pan-x-child-pan-x_touch.html
+  - subtest: touch-action attribute test
+    test: pointerevent_touch-action-pan-down-css_touch.html
+  - subtest: touch-action attribute test
+    test: pointerevent_touch-action-pan-left-css_touch.html
+  - subtest: touch-action attribute test
+    test: pointerevent_touch-action-pan-right-css_touch.html
+  - subtest: touch-action attribute test
+    test: pointerevent_touch-action-pan-up-css_touch.html
+  - subtest: touch-action attribute test
+    test: pointerevent_touch-action-pan-x-css_touch.html
+  - subtest: touch-action attribute test
+    test: pointerevent_touch-action-pan-x-pan-y-pan-y_touch.html
+  - subtest: touch-action attribute test
+    test: pointerevent_touch-action-pan-y-css_touch.html
+  - subtest: touch-action attribute test in element
+    test: pointerevent_touch-action-span-none-test_touch.html
+  - subtest: pointerup event from pen fired after pointerdown target is removed
+    test: pointerup_after_pointerdown_target_removed.html?pen
+  - subtest: Predicted list in boundary events
+    test: predicted_events_attributes.html?pen
+  - subtest: Predicted list in pointer-capture events
+    test: predicted_events_attributes.html?pen
+  - subtest: Predicted list in pointerdown/move/up events
+    test: predicted_events_attributes.html?pen
+  - subtest: touch-action:auto with right,down swipe
+    test: touch-action-with-swipe-dir-change.html?touch
+  - subtest: touch-action:auto with down,right swipe
+    test: touch-action-with-swipe-dir-change.html?touch
+  - subtest: touch-action:pan-x with right,down swipe
+    test: touch-action-with-swipe-dir-change.html?touch
+  - subtest: touch-action:pan-y with down,right swipe
+    test: touch-action-with-swipe-dir-change.html?touch
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2010646
