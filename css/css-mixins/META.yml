@@ -458,3 +458,26 @@ links:
   - subtest: '@scope (implicit) is valid in @mixin'
     test: mixin-parsing.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1997289
+- product: firefox
+  results:
+  - subtest: Can animate standard property in shadow
+    test: function-shadow-animations.html
+  - subtest: Can animate typed custom property in shadow
+    test: function-shadow-animations.html
+  - subtest: Can animate untyped custom property in shadow
+    test: function-shadow-animations.html
+  - subtest: Tree scope is respected for otherwise identical styles
+    test: function-shadow-cache.html
+  - subtest: ::part() can see inner named containers
+    test: function-shadow-container.html
+  - subtest: ::slotted() can see inner named containers
+    test: function-shadow-container.html
+  - subtest: Function with same name in different scopes
+    test: function-shadow.html
+  - subtest: Style in shadow DOM should have access to outside non-adopted mixins
+    test: mixin-shadow-dom.html
+  - subtest: Style in shadow DOM should have access to inside mixins
+    test: mixin-shadow-dom.html
+  - subtest: Style in shadow DOM should have access to mixins from adopted stylesheets
+    test: mixin-shadow-dom.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2011298
