@@ -1,0 +1,31 @@
+links:
+- product: firefox
+  results:
+  - subtest: '@font-face from shadow applies to :host'
+    test: font-face-007.html
+  - subtest: '@font-face from shadow applies to a slotted element'
+    test: font-face-008.html
+  - subtest: '@font-face from shadow applies to to :host::before/::after.'
+    test: font-face-009.html
+  - subtest: '":host-context(.a)" should be a valid selector'
+    test: host-context-parsing.html
+  - subtest: '":host-context(div.a)" should be a valid selector'
+    test: host-context-parsing.html
+  - subtest: 'CSS Scoping: :host(:host)'
+    test: host-in-host-selector.html
+  - subtest: '@keyframes from the document should apply in the shadow tree'
+    test: keyframes-002.html
+  - subtest: '@keyframes should not leak out of the shadow tree.'
+    test: keyframes-005.html
+  - test: css-scoping-shadow-host-namespace.html
+  - test: host-context-specificity-001.html
+  - test: host-context-specificity-002.html
+  - test: host-context-specificity-003.html
+  - test: host-has-002.tentative.html
+  - test: host-has-internal-001.html
+  - test: host-has-internal-002.html
+  - test: host-has-internal-003.html
+  - test: host-has-internal-004.html
+  - test: host-multiple-004.html
+  - test: scoped-reference-animation-002.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2011318
