@@ -1,0 +1,22 @@
+links:
+- product: firefox
+  results:
+  - test: interaction-with-nested-pseudo-class.html
+  - subtest: selector with ::part(original name) does not match from inner scope that
+      exports the part
+    test: multiple-scopes.html
+  - subtest: '"::part(mypart):future" should be a valid selector'
+    test: pseudo-classes-after-part.html
+  - subtest: '"::part(mypart):past" should be a valid selector'
+    test: pseudo-classes-after-part.html
+  - subtest: '"::part(mypart):picture-in-picture" should be a valid selector'
+    test: pseudo-classes-after-part.html
+  - subtest: '"::part(mypart)::grammar-error" should be a valid selector'
+    test: pseudo-elements-after-part.html
+  - subtest: '"::part(mypart)::spelling-error" should be a valid selector'
+    test: pseudo-elements-after-part.html
+  - subtest: computed style for ::part()::grammar-error
+    test: pseudo-elements-after-part.html
+  - subtest: computed style for ::part()::spelling-error
+    test: pseudo-elements-after-part.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2011321
