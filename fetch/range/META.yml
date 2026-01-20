@@ -20,3 +20,15 @@ links:
   - subtest: 'Fetch with range header will be sent with Accept-Encoding: identity'
     test: general.any.serviceworker.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1983947
+- product: firefox
+  results:
+  - subtest: Defer range header filter tests to service worker
+    test: sw.https.window.html
+  - subtest: Defer range header passthrough tests to service worker
+    test: sw.https.window.html
+  - subtest: Ranged response not allowed following no-cors ranged request
+    test: sw.https.window.html
+  - subtest: Non-opaque ranged response executed
+    test: sw.https.window.html
+  - test: sw-416.https.window.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2011366
