@@ -29,3 +29,117 @@ links:
   - test: host-multiple-004.html
   - test: scoped-reference-animation-002.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=2011318
+- product: firefox
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2011298
+  results:
+    - test: host-context-specificity-003.html
+    - test: css-scoping-shadow-host-namespace.html
+    - test: host-context-specificity-002.html
+    - test: host-has-internal-004.html
+    - test: keyframes-005.html
+      subtest: '@keyframes should not leak out of the shadow tree.'
+    - test: scoped-reference-animation-002.html
+    - test: host-context-specificity-001.html
+    - test: keyframes-002.html
+      subtest: '@keyframes from the document should apply in the shadow tree'
+- label: interop-2024-nesting
+  results:
+    - test: host-is-001.html
+    - test: host-is-005.html
+    - test: host-is-003.html
+    - test: host-is-004.html
+    - test: host-is-002.html
+- product: chrome
+  url: https://issues.chromium.org/40266948
+  results:
+    - test: host-is-001.html
+    - test: host-is-005.html
+    - test: host-is-002.html
+- product: firefox
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1884865
+  results:
+    - test: font-face-002.html
+      subtest: '@font-face from the document applies in the shadow tree'
+    - test: font-face-009.html
+      subtest: '@font-face from shadow applies to to :host::before/::after.'
+    - test: font-face-007.html
+      subtest: '@font-face from shadow applies to :host'
+    - test: font-face-008.html
+      subtest: '@font-face from shadow applies to a slotted element'
+- product: chrome
+  url: https://issues.chromium.org/390864970
+  results:
+    - test: has-slotted-query-selector.html
+- product: edge
+  url: https://issues.chromium.org/390864970
+  results:
+    - test: has-slotted-query-selector.html
+- product: firefox
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1911437
+  results:
+    - test: host-has-internal-003.html
+    - test: host-has-internal-001.html
+    - test: host-has-internal-002.html
+    - test: host-has-002.tentative.html
+- product: chrome
+  url: https://issues.chromium.org/issues/359758910
+  results:
+    - test: host-has-internal-003.html
+    - test: host-has-internal-001.html
+    - test: host-has-003.tentative.html
+    - test: host-has-001.tentative.html
+    - test: host-has-internal-002.html
+    - test: host-has-002.tentative.html
+- product: edge
+  url: https://issues.chromium.org/issues/359758910
+  results:
+    - test: host-has-internal-003.html
+    - test: host-has-internal-001.html
+    - test: host-has-003.tentative.html
+    - test: host-has-001.tentative.html
+    - test: host-has-internal-002.html
+    - test: host-has-002.tentative.html
+- product: firefox
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1952380
+  results:
+    - test: host-has-internal-003.html
+    - test: host-has-internal-001.html
+    - test: host-has-internal-002.html
+- product: safari
+  url: https://bugs.webkit.org/show_bug.cgi?id=282687
+  results:
+    - test: host-has-internal-003.html
+    - test: host-has-internal-001.html
+    - test: host-has-internal-004.html
+    - test: host-has-internal-002.html
+- product: firefox
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1698804
+  results:
+    - test: host-context-parsing.html
+      subtest: '":host-context(.a)" should be a valid selector'
+    - test: host-context-parsing.html
+      subtest: '":host-context(div.a)" should be a valid selector'
+- product: firefox
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1933816
+  results:
+    - test: slotted-parsing.html
+      subtest: '"::slotted(*)::details-content" should be a valid selector'
+- product: firefox
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1933771
+  results:
+    - test: host-in-host-selector.html
+      subtest: 'CSS Scoping: :host(:host)'
+- product: firefox
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1939896
+  results:
+    - test: host-multiple-004.html
+    - test: host-multiple-003.html
+- product: chrome
+  url: https://crbug.com/838526
+  results:
+    - test: keyframes-005.html
+    - test: keyframes-004.html
+- product: firefox
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1913095
+  results:
+    - test: host-has-002.tentative.html
