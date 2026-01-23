@@ -1,72 +1,93 @@
 links:
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=2010903
-      results:
-        - test: interaction-with-nested-pseudo-class.html
-        - test: pseudo-elements-after-part.html
-          subtest: '"::part(mypart)::search-text" should be a valid selector'
-        - test: pseudo-elements-after-part.html
-          subtest: computed style for ::part()::search-text
-    - product: chrome
-      url: https://crbug.com/1068419
-      results:
-        - test: host-part-001.html
-    - product: chrome
-      url: https://crbug.com/838526
-      results:
-        - test: animation-part.html
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1916273
-      results:
-        - test: pseudo-elements-after-part.html
-          subtest: '"::part(mypart)::grammar-error" should be a valid selector'
-        - test: pseudo-elements-after-part.html
-          subtest: '"::part(mypart)::spelling-error" should be a valid selector'
-        - test: pseudo-elements-after-part.html
-          subtest: computed style for ::part()::grammar-error
-        - test: pseudo-elements-after-part.html
-          subtest: computed style for ::part()::spelling-error
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1976354
-      results:
-        - test: pseudo-elements-after-part.html
-          subtest: '"::part(mypart)::details-content" should be a valid selector'
-        - test: pseudo-elements-after-part.html
-          subtest: |-
-            ::part styles with ::part(mypart)::details-content {
-                              height: 371px;
-                            } and <details part='mypart'><summary style="height:47px">summary</summary>details</details>
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1920246
-      results:
-        - test: multiple-scopes.html
-          subtest: selector with ::part(original name) does not match from inner scope that exports the part
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1917289
-      results:
-        - test: pseudo-classes-after-part.html
-          subtest: '"::part(mypart):active-view-transition" should be a valid selector'
-        - test: pseudo-classes-after-part.html
-          subtest: '"::part(mypart):active-view-transition-type(mytype)" should be a valid selector'
-        - test: pseudo-classes-after-part.html
-          subtest: '"::part(mypart):closed" should be a valid selector'
-        - test: pseudo-classes-after-part.html
-          subtest: '"::part(mypart):dir(ltr)" should be a valid selector'
-        - test: pseudo-classes-after-part.html
-          subtest: '"::part(mypart):future" should be a valid selector'
-        - test: pseudo-classes-after-part.html
-          subtest: '"::part(mypart):lang(en)" should be a valid selector'
-        - test: pseudo-classes-after-part.html
-          subtest: '"::part(mypart):open" should be a valid selector'
-        - test: pseudo-classes-after-part.html
-          subtest: '"::part(mypart):past" should be a valid selector'
-        - test: pseudo-classes-after-part.html
-          subtest: '"::part(mypart):paused" should be a valid selector'
-        - test: pseudo-classes-after-part.html
-          subtest: '"::part(mypart):picture-in-picture" should be a valid selector'
-        - test: pseudo-classes-after-part.html
-          subtest: '"::part(mypart):playing" should be a valid selector'
-        - test: pseudo-classes-after-part.html
-          subtest: '"::part(mypart):xr-overlay" should be a valid selector'
-        - test: pseudo-classes-after-part.html
-          subtest: '"::part(mypart):has(:hover)" should be an invalid selector'
+- product: firefox
+  results:
+  - test: interaction-with-nested-pseudo-class.html
+  - subtest: selector with ::part(original name) does not match from inner scope that
+      exports the part
+    test: multiple-scopes.html
+  - subtest: '"::part(mypart):future" should be a valid selector'
+    test: pseudo-classes-after-part.html
+  - subtest: '"::part(mypart):past" should be a valid selector'
+    test: pseudo-classes-after-part.html
+  - subtest: '"::part(mypart):picture-in-picture" should be a valid selector'
+    test: pseudo-classes-after-part.html
+  - subtest: '"::part(mypart)::grammar-error" should be a valid selector'
+    test: pseudo-elements-after-part.html
+  - subtest: '"::part(mypart)::spelling-error" should be a valid selector'
+    test: pseudo-elements-after-part.html
+  - subtest: computed style for ::part()::grammar-error
+    test: pseudo-elements-after-part.html
+  - subtest: computed style for ::part()::spelling-error
+    test: pseudo-elements-after-part.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2011321
+- product: firefox
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2010903
+  results:
+    - test: interaction-with-nested-pseudo-class.html
+    - test: pseudo-elements-after-part.html
+      subtest: '"::part(mypart)::search-text" should be a valid selector'
+    - test: pseudo-elements-after-part.html
+      subtest: computed style for ::part()::search-text
+- product: chrome
+  url: https://crbug.com/1068419
+  results:
+    - test: host-part-001.html
+- product: chrome
+  url: https://crbug.com/838526
+  results:
+    - test: animation-part.html
+- product: firefox
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1916273
+  results:
+    - test: pseudo-elements-after-part.html
+      subtest: '"::part(mypart)::grammar-error" should be a valid selector'
+    - test: pseudo-elements-after-part.html
+      subtest: '"::part(mypart)::spelling-error" should be a valid selector'
+    - test: pseudo-elements-after-part.html
+      subtest: computed style for ::part()::grammar-error
+    - test: pseudo-elements-after-part.html
+      subtest: computed style for ::part()::spelling-error
+- product: firefox
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1976354
+  results:
+    - test: pseudo-elements-after-part.html
+      subtest: '"::part(mypart)::details-content" should be a valid selector'
+    - test: pseudo-elements-after-part.html
+      subtest: |-
+        ::part styles with ::part(mypart)::details-content {
+                          height: 371px;
+                        } and <details part='mypart'><summary style="height:47px">summary</summary>details</details>
+- product: firefox
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1920246
+  results:
+    - test: multiple-scopes.html
+      subtest: selector with ::part(original name) does not match from inner scope that exports the part
+- product: firefox
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1917289
+  results:
+    - test: pseudo-classes-after-part.html
+      subtest: '"::part(mypart):active-view-transition" should be a valid selector'
+    - test: pseudo-classes-after-part.html
+      subtest: '"::part(mypart):active-view-transition-type(mytype)" should be a valid selector'
+    - test: pseudo-classes-after-part.html
+      subtest: '"::part(mypart):closed" should be a valid selector'
+    - test: pseudo-classes-after-part.html
+      subtest: '"::part(mypart):dir(ltr)" should be a valid selector'
+    - test: pseudo-classes-after-part.html
+      subtest: '"::part(mypart):future" should be a valid selector'
+    - test: pseudo-classes-after-part.html
+      subtest: '"::part(mypart):lang(en)" should be a valid selector'
+    - test: pseudo-classes-after-part.html
+      subtest: '"::part(mypart):open" should be a valid selector'
+    - test: pseudo-classes-after-part.html
+      subtest: '"::part(mypart):past" should be a valid selector'
+    - test: pseudo-classes-after-part.html
+      subtest: '"::part(mypart):paused" should be a valid selector'
+    - test: pseudo-classes-after-part.html
+      subtest: '"::part(mypart):picture-in-picture" should be a valid selector'
+    - test: pseudo-classes-after-part.html
+      subtest: '"::part(mypart):playing" should be a valid selector'
+    - test: pseudo-classes-after-part.html
+      subtest: '"::part(mypart):xr-overlay" should be a valid selector'
+    - test: pseudo-classes-after-part.html
+      subtest: '"::part(mypart):has(:hover)" should be an invalid selector'
