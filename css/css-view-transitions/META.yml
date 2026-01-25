@@ -228,9 +228,7 @@ links:
         - test: no-raf-while-render-blocked.html
           subtest: rAF is blocked until prepare callback
         - test: window-resize-aborts-transition-before-ready.html
-          subtest: '
-            View transitions: Resizing viewport before animating rejects the ready promise.
-            '
+          subtest: ' View transitions: Resizing viewport before animating rejects the ready promise. '
         - test: window-resize-aborts-transition.html
           subtest: 'View transitions: Resizing viewport skips the transition'
     - product: firefox
@@ -773,4 +771,9 @@ links:
       url: https://bugzilla.mozilla.org/show_bug.cgi?id=2008054
       results:
         - test: hit-test-unrelated-element.html
+          subtest: Test status
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=2012341
+      results:
+        - test: 3d-transform-incoming.html
           subtest: Test status
