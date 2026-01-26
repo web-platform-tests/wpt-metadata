@@ -1,13 +1,23 @@
 links:
-- product: firefox
-  results:
-  - test: navigation-supersedes-types-same-rule.html
-  - subtest: 'View transitions: types together with navigation:none doesn''t apply'
-    test: navigation-supersedes-types-same-rule.html
-  - test: navigation-supersedes-types-when-after.html
-  - subtest: 'View transitions: types are superseded by navigation:none'
-    test: navigation-supersedes-types-when-after.html
-  - test: types-in-pagereveal-and-pageswap.html
-  - subtest: 'View transitions: types from rule are reflected in pagereveal and pageswap'
-    test: types-in-pagereveal-and-pageswap.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1937918
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1937918
+      results:
+        - test: navigation-supersedes-types-same-rule.html
+        - test: navigation-supersedes-types-same-rule.html
+          subtest: 'View transitions: types together with navigation:none doesn''t apply'
+        - test: navigation-supersedes-types-when-after.html
+        - test: navigation-supersedes-types-when-after.html
+          subtest: 'View transitions: types are superseded by navigation:none'
+        - test: types-in-pagereveal-and-pageswap.html
+        - test: types-in-pagereveal-and-pageswap.html
+          subtest: 'View transitions: types from rule are reflected in pagereveal and pageswap'
+    - label: interop-2026-view-transitions
+      results:
+        - test: navigation-supersedes-types-same-rule.html
+        - test: navigation-supersedes-types-when-after.html
+        - test: types-in-pagereveal-and-pageswap.html
+        - test: at-rule-opt-in-auto-with-types-mutable.html
+        - test: at-rule-opt-in-auto-with-types-no-cascade.html
+        - test: at-rule-opt-in-auto-with-types.html
+        - test: at-rule-types-shared-elements.html
+        - test: at-rule-with-types-parsing.html
