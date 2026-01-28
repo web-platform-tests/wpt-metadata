@@ -37,3 +37,18 @@ links:
       results:
         - test: non-matching-range-response.html
           subtest: Range requests ignored (200 status) should succeed
+    - label: interop-2026-fetch
+      results:
+        - test: blob.any.html
+        - test: blob.any.worker.html
+        - test: cache-revalidate-construct-range-response.html
+        - test: data.any.html
+        - test: data.any.worker.html
+        - test: general.any.html
+        - test: general.any.serviceworker.html
+        - test: general.any.sharedworker.html
+        - test: general.any.worker.html
+        - test: general.window.html
+        - test: non-matching-range-response.html
+        - test: sw-416.https.window.html
+        - test: sw.https.window.html

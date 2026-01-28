@@ -253,3 +253,13 @@ links:
       results:
         - test: stream-response.any.html
           subtest: Stream response's body when content-type is not present
+    - label: interop-2026-fetch
+      results:
+        - test: request-upload.any.html
+        - test: request-upload.any.serviceworker.html
+        - test: request-upload.any.sharedworker.html
+        - test: request-upload.any.worker.html
+        - test: request-upload.h2.any.html
+        - test: request-upload.h2.any.serviceworker.html
+        - test: request-upload.h2.any.sharedworker.html
+        - test: request-upload.h2.any.worker.html
