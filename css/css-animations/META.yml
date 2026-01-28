@@ -240,3 +240,33 @@ links:
   results:
   - test: animation-name-in-nested-shadow.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=2011299
+- product: firefox
+  results:
+  - subtest: KeyframeEffect.getKeyframes() returns expected frames for an animation
+      with a 0% keyframe and no 100% keyframe
+    test: KeyframeEffect-getKeyframes.tentative.html
+  - subtest: KeyframeEffect.getKeyframes() returns expected frames for an animation
+      with a 100% keyframe and no 0% keyframe
+    test: KeyframeEffect-getKeyframes.tentative.html
+  - subtest: KeyframeEffect.getKeyframes() returns expected frames for an animation
+      with no 0% or 100% keyframe but with a 50% keyframe
+    test: KeyframeEffect-getKeyframes.tentative.html
+  - subtest: KeyframeEffect.getKeyframes() returns expected values for animations
+      with text-shadow properties and missing keyframes
+    test: KeyframeEffect-getKeyframes.tentative.html
+  - subtest: KeyframeEffect.getKeyframes() returns expected values for animations
+      with CSS variables as keyframe values
+    test: KeyframeEffect-getKeyframes.tentative.html
+  - subtest: KeyframeEffect.getKeyframes() returns expected values for animations
+      with CSS variables as keyframe values in a shorthand property
+    test: KeyframeEffect-getKeyframes.tentative.html
+  - subtest: KeyframeEffect.getKeyframes() returns expected values for animations
+      with a CSS variable which is overriden by the value in keyframe
+    test: KeyframeEffect-getKeyframes.tentative.html
+  - subtest: KeyframeEffect.getKeyframes() returns expected values for animations
+      with only custom property in a keyframe
+    test: KeyframeEffect-getKeyframes.tentative.html
+  - subtest: KeyframeEffect.getKeyframes() returns expected values for animations
+      with implicit values and a non-default timingfunction specified for 0% and 100%
+    test: KeyframeEffect-getKeyframes.tentative.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2013103
