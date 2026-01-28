@@ -163,3 +163,7 @@ links:
           subtest: e.style['position-try'] = "most-width flip-y flip-x, --foo, --bar" should set position-try-order
         - test: position-try-parsing.html
           subtest: e.style['position-try'] = "most-width flip-y flip-x, --foo, --bar" should not set unrelated longhands
+    - label: interop-2026-anchor-positioning
+      results:
+        - test: position-visibility-computed.html
+        - test: position-visibility-parsing.html
