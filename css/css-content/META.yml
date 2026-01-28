@@ -1,28 +1,34 @@
 links:
-    - product: chrome
-      url: https://crbug.com/1067277
-      results:
-        - test: element-replacement-on-replaced-element.tentative.html
-    - product: chrome
-      url: https://crbug.com/1335893
-      results:
-        - test: content-none-select-1.html
-    - product: safari
-      url: https://bugs.webkit.org/show_bug.cgi?id=243942
-      results:
-        - test: attr-case-sensitivity-002.html
-          subtest: Test status
-    - product: chrome
-      url: https://crbug.com/1353560
-      results:
-        - test: quotes-025.html
-        - test: quotes-027.html
-        - test: quotes-034.html
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1887080
-      results:
-        - test: quotes-first-letter-003.html
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1950927
-      results:
-        - test: quotes-lang-dynamic-001.html
+- product: chrome
+  results:
+  - test: element-replacement-on-replaced-element.tentative.html
+  url: https://crbug.com/1067277
+- product: chrome
+  results:
+  - test: content-none-select-1.html
+  url: https://crbug.com/1335893
+- product: safari
+  results:
+  - subtest: Test status
+    test: attr-case-sensitivity-002.html
+  url: https://bugs.webkit.org/show_bug.cgi?id=243942
+- product: chrome
+  results:
+  - test: quotes-025.html
+  - test: quotes-027.html
+  - test: quotes-034.html
+  url: https://crbug.com/1353560
+- product: firefox
+  results:
+  - test: quotes-first-letter-003.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1887080
+- product: firefox
+  results:
+  - test: quotes-lang-dynamic-001.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1950927
+- product: firefox
+  results:
+  - test: element-replacement-root-canvas-bg-from-body.html
+  - test: element-replacement-root-canvas-bg.html
+  - test: element-replacement-root.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2013095
