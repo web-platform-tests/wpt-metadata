@@ -148,3 +148,25 @@ links:
         - test: unreachable-snap-positions-003.html
         - test: snap-to-visible-areas-both-pseudo.html
         - test: unreachable-snap-positions-002.html
+    - product: firefox
+      results:
+      - subtest: Snap within a snap area which covers snapport on x selects a valid snap
+          position that avoids the overlapping areas at 800-1000 and 1400-1600.
+        test: overflowing-snap-areas-nested.html
+      - subtest: Snap within a snap area which covers snapport on y selects a valid snap
+          position that avoids the overlapping areas at 800-1000 and 1400-1600.
+        test: overflowing-snap-areas-nested.html
+      - subtest: snaps to bottom edge of large snap area that doesn't cover the snap port.
+        test: scroll-on-large-element-not-covering-snapport.html
+      - subtest: newly larger-than-snapport area is snapped to when straddled close to
+          bottom.
+        test: scroll-snap-nested-snap-area-layout-changed.html
+      - subtest: snapport remains within newly covering snap area when already in covering
+          position.
+        test: scroll-snap-nested-snap-area-layout-changed.html
+      - subtest: '`scroll-snap-stop: always` snap point is further than the scroll destination
+          and a snap area covers the snapport'
+        test: scroll-snap-stop-002-nested.html
+      - subtest: snap-into-covering-area
+        test: snap-into-covering-area.html
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=2013156
