@@ -1,10 +1,12 @@
 links:
-- product: firefox
-  results:
-  - subtest: Async modules only scheduling microtasks don't block execution of sibling
-      modules
-    test: sibling-imports-not-blocked.any.worker.html
-  - subtest: Async modules only scheduling microtasks don't block execution of sibling
-      modules
-    test: sibling-imports-not-blocked.any.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1866205
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1866205
+      results:
+        - test: sibling-imports-not-blocked.any.worker.html
+          subtest: Async modules only scheduling microtasks don't block execution of sibling modules
+        - test: sibling-imports-not-blocked.any.html
+          subtest: Async modules only scheduling microtasks don't block execution of sibling modules
+    - label: interop-2026-webcompat
+      results:
+        - test: sibling-imports-not-blocked.any.html
+        - test: sibling-imports-not-blocked.any.worker.html
