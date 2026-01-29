@@ -43,3 +43,9 @@ links:
         - test: resnap-on-overflowing-snap-area.html
         - test: resnap-on-reconstructing-frame.html
         - test: changing-scroll-snap-type-on-root-element.html
+    - product: firefox
+      results:
+      - subtest: Changing a large target's snap alignment shouldn't make the scroller
+          resnap if the scroller is already in a valid snap position.
+        test: changing-scroll-snap-align-nested.html
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=2013156
