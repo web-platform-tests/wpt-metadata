@@ -46,3 +46,10 @@ links:
           subtest: sRD(simulcast offer), addTrack, then rollback brings us back to having a single encoding
         - test: negotiation-encodings.https.html
           subtest: Rollback of sRD(reoffer) with a single rid results in all previous encodings
+    - label: interop-2026-webrtc
+      results:
+        - test: negotiation-encodings.https.html
+        - test: rid-manipulation.html
+        - test: screenshare.https.html
+        - test: vp9-scalability-mode.https.html
+        - test: h264.https.html
