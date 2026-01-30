@@ -814,7 +814,6 @@ links:
         - test: column-span-during-transition-doesnt-skip.html
         - test: document-active-view-transition.html
         - test: dynamic-stylesheet-animations-timing-function.html
-        # Carryover from Interop 2025
         - test: new-content-captures-clip-path.html
         - test: hit-test-unrelated-element.html
         - test: input-targets-root-while-render-blocked.html
@@ -1058,3 +1057,8 @@ links:
         - test: window-resize-aborts-transition-before-ready.html
         - test: web-animations-api-parse-pseudo-argument.html?first-pseudo=::view-transition-group( first
         - test: web-animations-api-parse-pseudo-argument.html?first-pseudo=::view-transition-group(first
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=2013634
+      results:
+        - test: capture-with-offscreen-child-translated.html
+          subtest: Test status
