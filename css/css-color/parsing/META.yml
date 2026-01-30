@@ -2304,3 +2304,8 @@ links:
           subtest: e.style['color'] = "color-mix(in oklab, oklab(0.1 0.2 0.3 / none), oklab(0.5 0.6 0.7 / 0.5))" should set the property value
         - test: color-valid-color-mix-function.html
           subtest: e.style['color'] = "color-mix(in oklab, oklab(0.1 0.2 0.3 / none), oklab(0.5 0.6 0.7 / none))" should set the property value
+    - label: interop-2026-contrast-color
+      results:
+        - test: color-computed-contrast-color-function.html
+        - test: color-invalid-contrast-color-function.html
+        - test: color-valid-contrast-color-function.html
