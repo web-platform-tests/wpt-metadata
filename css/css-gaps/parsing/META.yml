@@ -54,3 +54,40 @@ links:
   - subtest: rule-break shorthand computed from longhand values
     test: gap-decorations-bidirectional-shorthands.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1999376
+- product: firefox
+  results:
+  - subtest: rule-inset shorthand computed from longhand values
+    test: gap-decorations-bidirectional-shorthands.html
+  - subtest: Property column-rule-break value 'auto'
+    test: rule-break-computed.html
+  - subtest: Property row-rule-break value 'auto'
+    test: rule-break-computed.html
+  - subtest: Property rule-break value 'none'
+    test: rule-break-computed.html
+  - subtest: Property rule-break value 'intersection'
+    test: rule-break-computed.html
+  - subtest: Property rule-break value 'auto'
+    test: rule-break-computed.html
+  - subtest: e.style['rule-break'] = "intersection" should set column-rule-break
+    test: rule-break-shorthand.html
+  - subtest: e.style['rule-break'] = "intersection" should set row-rule-break
+    test: rule-break-shorthand.html
+  - subtest: e.style['rule-break'] = "intersection" should not set unrelated longhands
+    test: rule-break-shorthand.html
+  - subtest: e.style['rule-break'] = "none" should set column-rule-break
+    test: rule-break-shorthand.html
+  - subtest: e.style['rule-break'] = "none" should set row-rule-break
+    test: rule-break-shorthand.html
+  - subtest: e.style['rule-break'] = "none" should not set unrelated longhands
+    test: rule-break-shorthand.html
+  - subtest: e.style['column-rule-break'] = "auto" should set the property value
+    test: rule-break-valid.html
+  - subtest: e.style['row-rule-break'] = "auto" should set the property value
+    test: rule-break-valid.html
+  - subtest: e.style['rule-break'] = "none" should set the property value
+    test: rule-break-valid.html
+  - subtest: e.style['rule-break'] = "intersection" should set the property value
+    test: rule-break-valid.html
+  - subtest: e.style['rule-break'] = "auto" should set the property value
+    test: rule-break-valid.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2013651
