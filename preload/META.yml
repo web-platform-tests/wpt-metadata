@@ -3,43 +3,6 @@ links:
       results:
         - test: '*'
     - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1645098
-      results:
-        - test: modulepreload.html
-        - test: modulepreload.html
-          subtest: link rel=modulepreload as=script
-        - test: modulepreload.html
-          subtest: cross-origin link rel=modulepreload
-        - test: modulepreload.html
-          subtest: link rel=modulepreload with bad href attribute
-        - test: modulepreload.html
-          subtest: link rel=modulepreload with integrity mismatch
-        - test: modulepreload.html
-          subtest: link rel=modulepreload for a module with syntax error
-        - test: modulepreload.html
-          subtest: cross-origin link rel=modulepreload crossorigin=anonymous
-        - test: modulepreload.html
-          subtest: same-origin link rel=modulepreload crossorigin=anonymous
-        - test: modulepreload.html
-          subtest: link rel=modulepreload with integrity match
-        - test: modulepreload.html
-          subtest: link rel=modulepreload with invalid as= value
-        - test: modulepreload.html
-          subtest: same-origin link rel=modulepreload crossorigin=use-credentials
-        - test: modulepreload.html
-          subtest: cross-origin link rel=modulepreload crossorigin=use-credentials
-        - test: modulepreload.html
-          subtest: link rel=modulepreload for a module with network error
-        - test: modulepreload.html
-          subtest: link rel=modulepreload with submodules
-        - test: modulepreload.html
-          subtest: link rel=modulepreload
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1706585
-      results:
-        - test: modulepreload.html
-          subtest: link rel=modulepreload with integrity match2
-    - product: firefox
       url: https://bugzilla.mozilla.org/show_bug.cgi?id=1751835
       results:
         - test: subresource-integrity.html
@@ -73,11 +36,6 @@ links:
         - test: subresource-integrity.html
           subtest: <crossorigin='anonymous'> image with CORS-ineligible resource
     - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1759049
-      results:
-        - test: avoid-delaying-onload-link-modulepreload-exec.html
-        - test: avoid-delaying-onload-link-modulepreload.html
-    - product: firefox
       url: https://bugzilla.mozilla.org/show_bug.cgi?id=1760779
       results:
         - test: link-header-preload-non-html.html
@@ -91,18 +49,6 @@ links:
       results:
         - test: preload-dynamic-csp.html
           subtest: Makes sure that preload requests respect CSP directives that are added after the preload
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1761990
-      results:
-        - test: subresource-integrity.html
-          subtest: '[Tentative] Same-origin script with matching digest does not reuse preload with matching but stronger digest.'
-        - test: subresource-integrity.html
-          subtest: '[Tentative] Same-origin style with matching digest does not reuse preload with matching but stronger digest.'
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1765128
-      results:
-        - test: preload-resource-match.https.html
-          subtest: Loading font (same-origin) with link (same-origin) should reuse the preloaded response
     - product: firefox
       url: https://bugzilla.mozilla.org/show_bug.cgi?id=1766213
       results:
@@ -138,27 +84,12 @@ links:
         - test: preload-error.sub.html
           subtest: 'MIME-error (style): preload events'
     - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1773292
-      results:
-        - test: link-header-modulepreload.html
-        - test: link-header-modulepreload.html
-          subtest: test that a header-preloaded module is loaded and consumed
-    - product: firefox
       url: https://bugzilla.mozilla.org/show_bug.cgi?id=1777433
       results:
-        - test: dynamic-adding-preload-nonce.html
-          subtest: link preload with nonce attribute
         - test: link-header-on-subresource.html
           subtest: Makes sure that Link headers on subresources preload resources
-        - test: link-header-preload-nonce.html
-          subtest: with nonce
         - test: single-download-preload.html
           subtest: Makes sure that preloaded resources are not downloaded again when used
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1800560
-      results:
-        - test: link-header-preload.html
-          status: CRASH
     - product: firefox
       url: https://bugzilla.mozilla.org/show_bug.cgi?id=1800561
       results:
@@ -180,21 +111,10 @@ links:
         - test: prefetch-events.html
           subtest: Prefetch should fire the error event for network errors
     - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=modulepreload
-      results:
-        - test: modulepreload.html
-    - product: firefox
       url: https://bugzilla.mozilla.org/show_bug.cgi?id=1832930
       results:
         - test: prefetch-time-to-fetch.https.html
           subtest: Changing a prefetch href should trigger a fetch
-        - test: prefetch-time-to-fetch.https.html
-          subtest: Changing a prefetch crossorigin attribute should trigger a fetch
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1862162
-      results:
-        - test: modulepreload-as.html
-          subtest: Modulepreload with as="json"
     - product: safari
       url: https://bugs.webkit.org/show_bug.cgi?id=238547
       results:
