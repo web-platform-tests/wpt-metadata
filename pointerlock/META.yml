@@ -23,3 +23,12 @@ links:
   - subtest: Request pointer lock without user gesture should fail
     test: pointerlock-requires-gesture.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=2013641
+- product: firefox
+  results:
+  - subtest: Tests that mousemove events during pointer lock report correct button
+      state
+    test: pointerlock-maintains-mousedown.html?unadjustedmovement=false
+  - subtest: Tests that mousemove events during pointer lock report correct button
+      state
+    test: pointerlock-maintains-mousedown.html?unadjustedmovement=true
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2014003
