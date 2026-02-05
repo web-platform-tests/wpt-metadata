@@ -442,3 +442,15 @@ links:
       double)'
     test: idlharness.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1998079
+- product: firefox
+  results:
+  - subtest: 'elementsFromPoint for a point inside two rects that are inside an svg
+      element with pointer-events: bounding-box'
+    test: elementsFromPoint-svg.html
+  - subtest: elementsFromPoint for a point inside two rects that are inside a <g>
+    test: elementsFromPoint-svg.html
+  - subtest: elementsFromPoint for a point inside two images
+    test: elementsFromPoint-svg.html
+  - subtest: elementsFromPoint for a point inside transformed rects and <g>
+    test: elementsFromPoint-svg.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2014643
