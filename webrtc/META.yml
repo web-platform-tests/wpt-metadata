@@ -611,3 +611,14 @@ links:
         - test: RTCRtpSender-setParameters.html
         - test: RTCPeerConnection-setRemoteDescription-rollback.html
         - test: transfer-datachannel.html
+    - product: safari
+      url: https://bugs.webkit.org/show_bug.cgi?id=307223
+      results:
+        - test: RTCConfiguration-iceServers.html
+          subtest: new RTCPeerConnection(config) - with turns server and empty string username, credential should succeed
+        - test: RTCConfiguration-iceServers.html
+          subtest: setConfiguration(config) - with turns server and empty string username, credential should succeed
+        - test: RTCConfiguration-iceServers.html
+          subtest: new RTCPeerConnection(config) - with turn server and empty string username, credential should succeed
+        - test: RTCConfiguration-iceServers.html
+          subtest: setConfiguration(config) - with turn server and empty string username, credential should succeed
