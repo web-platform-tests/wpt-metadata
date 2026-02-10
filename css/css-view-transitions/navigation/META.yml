@@ -104,52 +104,93 @@ links:
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1976125
 - label: interop-2026-view-transitions
   results:
-    - test: pagereveal-microtask-sequence.html
-    - test: pagereveal-ready-promise.html
-    - test: root-element-transition-opt-in-removed-on-new.html
-    - test: at-rule-in-layer-cascade.html
-    - test: root-element-transition-no-opt-in-on-old.html
-    - test: skip-outbound-vt-before-reveal.html
-    - test: zero-named-elements.html
-    - test: at-rule-multiple-rules.html
-    - test: at-rule-opt-in-change-with-script.html
-    - test: pagereveal-no-view-transition-new-opt-out.html
-    - test: pagereveal-with-view-transition.html
-    - test: pageswap-ctor.html
-    - test: pageswap-fired-before-old-state-capture.html
-    - test: at-rule-in-layer.html
-    - test: at-rule-in-non-matching-media.html
-    - test: at-rule-opt-in-auto.html
-    - test: hide-before-reveal.html
-    - test: navigation-auto-excludes-reload.html
-    - test: pagereveal-updatecallbackdone-promise.html
-    - test: pageswap-skip-transition.html
-    - test: root-element-transition-no-opt-in-on-new.html
-    - test: pagereveal-no-view-transition.html
-    - test: pageswap-long-delay.html
-    - test: pageswap-traverse-navigation-no-bfcache.https.html
-    - test: root-element-transition-iframe-cross-origin.sub.html
-    - test: root-element-transition-iframe.html
-    - test: root-element-transition-opt-in-removed-on-old.html
-    - test: root-element-transition.html
-    - test: at-rule-in-layer-cascade-external-stylesheet.html
-    - test: at-rule-in-shadow-dom.html
-    - test: mismatched-snapshot-containing-block-size-skips.html
-    - test: pagereveal-finished-promise.html
-    - test: pageswap-push-from-click.html
-    - test: pageswap-push-navigation.html
-    - test: root-and-nested-element-transition.html
-    - test: at-rule-opt-in-none-in-old.html
-    - test: no-view-transition-with-cross-origin-redirect.sub.html
-    - test: opt-in-without-frame-crash.html
-    - test: pageswap-push-with-redirect.html
-    - test: at-rule-cssom.html
-    - test: old_vt_promises_bfcache.html
-    - test: pagereveal-setup-transition.html
-    - test: pageswap-in-hidden-doc-should-skip-transition.html
-    - test: pageswap-replace-navigation.html
-    - test: at-rule-in-matching-media.html
-    - test: at-rule-opt-in-none-in-new.html
-    - test: auto-name-from-id.html
-    - test: opt-in-removed-during-transition.html
-    - test: pagereveal-ctor.html
+  - test: pagereveal-microtask-sequence.html
+  - test: pagereveal-ready-promise.html
+  - test: root-element-transition-opt-in-removed-on-new.html
+  - test: at-rule-in-layer-cascade.html
+  - test: root-element-transition-no-opt-in-on-old.html
+  - test: skip-outbound-vt-before-reveal.html
+  - test: zero-named-elements.html
+  - test: at-rule-multiple-rules.html
+  - test: at-rule-opt-in-change-with-script.html
+  - test: pagereveal-no-view-transition-new-opt-out.html
+  - test: pagereveal-with-view-transition.html
+  - test: pageswap-ctor.html
+  - test: pageswap-fired-before-old-state-capture.html
+  - test: at-rule-in-layer.html
+  - test: at-rule-in-non-matching-media.html
+  - test: at-rule-opt-in-auto.html
+  - test: hide-before-reveal.html
+  - test: navigation-auto-excludes-reload.html
+  - test: pagereveal-updatecallbackdone-promise.html
+  - test: pageswap-skip-transition.html
+  - test: root-element-transition-no-opt-in-on-new.html
+  - test: pagereveal-no-view-transition.html
+  - test: pageswap-long-delay.html
+  - test: pageswap-traverse-navigation-no-bfcache.https.html
+  - test: root-element-transition-iframe-cross-origin.sub.html
+  - test: root-element-transition-iframe.html
+  - test: root-element-transition-opt-in-removed-on-old.html
+  - test: root-element-transition.html
+  - test: at-rule-in-layer-cascade-external-stylesheet.html
+  - test: at-rule-in-shadow-dom.html
+  - test: mismatched-snapshot-containing-block-size-skips.html
+  - test: pagereveal-finished-promise.html
+  - test: pageswap-push-from-click.html
+  - test: pageswap-push-navigation.html
+  - test: root-and-nested-element-transition.html
+  - test: at-rule-opt-in-none-in-old.html
+  - test: no-view-transition-with-cross-origin-redirect.sub.html
+  - test: opt-in-without-frame-crash.html
+  - test: pageswap-push-with-redirect.html
+  - test: at-rule-cssom.html
+  - test: old_vt_promises_bfcache.html
+  - test: pagereveal-setup-transition.html
+  - test: pageswap-in-hidden-doc-should-skip-transition.html
+  - test: pageswap-replace-navigation.html
+  - test: at-rule-in-matching-media.html
+  - test: at-rule-opt-in-none-in-new.html
+  - test: auto-name-from-id.html
+  - test: opt-in-removed-during-transition.html
+  - test: pagereveal-ctor.html
+- product: firefox
+  results:
+  - test: at-rule-opt-in-auto.html
+  - subtest: 'View Transitions: @view-transition opt in for auto'
+    test: at-rule-opt-in-auto.html
+  - subtest: 'View Transitions: @view-transition opt out in new document.'
+    test: at-rule-opt-in-none-in-new.html
+  - test: at-rule-opt-in-none-in-old.html
+  - subtest: 'View Transitions: @view-transition opt out in new document.'
+    test: at-rule-opt-in-none-in-old.html
+  - subtest: 'View transitions: basic cross-document navigation'
+    test: navigation-auto-excludes-reload.html
+  - test: no-view-transition-with-cross-origin-redirect.sub.html
+  - subtest: navigation with a  same-origin final url with cross-origin redirects
+    test: no-view-transition-with-cross-origin-redirect.sub.html
+  - test: opt-in-removed-during-transition.html
+  - subtest: 'View Transitions: @view-transition removing opt-in doesn''t skip active
+      transition'
+    test: opt-in-removed-during-transition.html
+  - test: pagereveal-finished-promise.html
+  - subtest: "\n  View transitions: Test pagereveal.finished and skipTransition\n"
+    test: pagereveal-finished-promise.html
+  - test: pagereveal-ready-promise.html
+  - subtest: 'View transitions: Test pagereveal.ready'
+    test: pagereveal-ready-promise.html
+  - test: pagereveal-setup-transition.html
+  - subtest: 'View transitions: setup transition from pagereveal'
+    test: pagereveal-setup-transition.html
+  - test: pageswap-fired-before-old-state-capture.html
+  - subtest: 'View transitions: Test pageswap fires before document capture'
+    test: pageswap-fired-before-old-state-capture.html
+  - test: root-element-transition-no-opt-in-on-new.html
+  - subtest: 'View transitions: basic cross-document navigation no opt-in on new page'
+    test: root-element-transition-no-opt-in-on-new.html
+  - subtest: 'View transitions: basic cross-document navigation opt-in removed on
+      new page'
+    test: root-element-transition-opt-in-removed-on-new.html
+  - test: root-element-transition-opt-in-removed-on-old.html
+  - subtest: 'View transitions: basic cross-document navigation opt-in removed'
+    test: root-element-transition-opt-in-removed-on-old.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2015899
