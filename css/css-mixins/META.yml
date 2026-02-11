@@ -481,3 +481,14 @@ links:
   - subtest: Style in shadow DOM should have access to mixins from adopted stylesheets
     test: mixin-shadow-dom.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=2011298
+- product: firefox
+  results:
+  - subtest: serialization of rule with @apply
+    test: mixin-cssom.tentative.html
+  - subtest: serialization of rule with @apply and contents argument
+    test: mixin-cssom.tentative.html
+  - subtest: '@layer (block) is invalid in @mixin'
+    test: mixin-parsing.html
+  - subtest: '@layer (anonymous) is invalid in @mixin'
+    test: mixin-parsing.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2016168
