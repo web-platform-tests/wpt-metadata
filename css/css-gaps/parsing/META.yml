@@ -91,3 +91,69 @@ links:
   - subtest: e.style['rule-break'] = "auto" should set the property value
     test: rule-break-valid.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=2013651
+- product: firefox
+  results:
+  - subtest: Property column-rule-visibility-items value 'all'
+    test: rule-visibility-items-computed.html
+  - subtest: Property column-rule-visibility-items value 'around'
+    test: rule-visibility-items-computed.html
+  - subtest: Property column-rule-visibility-items value 'between'
+    test: rule-visibility-items-computed.html
+  - subtest: Property row-rule-visibility-items value 'all'
+    test: rule-visibility-items-computed.html
+  - subtest: Property row-rule-visibility-items value 'around'
+    test: rule-visibility-items-computed.html
+  - subtest: Property row-rule-visibility-items value 'between'
+    test: rule-visibility-items-computed.html
+  - subtest: Property rule-visibility-items value 'all'
+    test: rule-visibility-items-computed.html
+  - subtest: Property rule-visibility-items value 'around'
+    test: rule-visibility-items-computed.html
+  - subtest: Property rule-visibility-items value 'between'
+    test: rule-visibility-items-computed.html
+  - subtest: e.style['rule-visibility-items'] = "all" should set column-rule-visibility-items
+    test: rule-visibility-items-shorthand.html
+  - subtest: e.style['rule-visibility-items'] = "all" should set row-rule-visibility-items
+    test: rule-visibility-items-shorthand.html
+  - subtest: e.style['rule-visibility-items'] = "all" should not set unrelated longhands
+    test: rule-visibility-items-shorthand.html
+  - subtest: e.style['rule-visibility-items'] = "around" should set column-rule-visibility-items
+    test: rule-visibility-items-shorthand.html
+  - subtest: e.style['rule-visibility-items'] = "around" should set row-rule-visibility-items
+    test: rule-visibility-items-shorthand.html
+  - subtest: e.style['rule-visibility-items'] = "around" should not set unrelated
+      longhands
+    test: rule-visibility-items-shorthand.html
+  - subtest: e.style['rule-visibility-items'] = "between" should set column-rule-visibility-items
+    test: rule-visibility-items-shorthand.html
+  - subtest: e.style['rule-visibility-items'] = "between" should set row-rule-visibility-items
+    test: rule-visibility-items-shorthand.html
+  - subtest: e.style['rule-visibility-items'] = "between" should not set unrelated
+      longhands
+    test: rule-visibility-items-shorthand.html
+  - subtest: e.style['column-rule-visibility-items'] = "all" should set the property
+      value
+    test: rule-visibility-items-valid.html
+  - subtest: e.style['column-rule-visibility-items'] = "around" should set the property
+      value
+    test: rule-visibility-items-valid.html
+  - subtest: e.style['column-rule-visibility-items'] = "between" should set the property
+      value
+    test: rule-visibility-items-valid.html
+  - subtest: e.style['row-rule-visibility-items'] = "all" should set the property
+      value
+    test: rule-visibility-items-valid.html
+  - subtest: e.style['row-rule-visibility-items'] = "around" should set the property
+      value
+    test: rule-visibility-items-valid.html
+  - subtest: e.style['row-rule-visibility-items'] = "between" should set the property
+      value
+    test: rule-visibility-items-valid.html
+  - subtest: e.style['rule-visibility-items'] = "all" should set the property value
+    test: rule-visibility-items-valid.html
+  - subtest: e.style['rule-visibility-items'] = "around" should set the property value
+    test: rule-visibility-items-valid.html
+  - subtest: e.style['rule-visibility-items'] = "between" should set the property
+      value
+    test: rule-visibility-items-valid.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2016289
