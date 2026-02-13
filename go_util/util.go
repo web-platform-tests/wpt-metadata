@@ -153,12 +153,14 @@ func DeleteTestFromMetadata(testPath string) shared.MetadataLinks {
 //
 // TODO(kyleju): https://github.com/web-platform-tests/wpt.fyi/issues/1957.
 func writeToFile(metadata shared.Metadata, f *os.File) {
-	metadataBytes, err := yaml.Marshal(metadata)
+	d, err := yaml.NewDumper(f, yaml.WithCompactSeqIndent(),
+	                         yaml.WithIndent(2))
 	if err != nil {
 		log.Fatal(err)
 	}
+	defer d.Close()
 
-	_, err = f.WriteAt(metadataBytes, 0)
+	err = d.Dump(metadata)
 	if err != nil {
 		log.Fatal(err)
 	}
