@@ -7,7 +7,7 @@ require (
 	github.com/google/go-github/v35 v35.3.0
 	github.com/stretchr/testify v1.11.1
 	github.com/web-platform-tests/wpt.fyi v0.0.0-20251020211133-900afe63cc5b
-	gopkg.in/yaml.v3 v3.0.1
+	go.yaml.in/yaml/v4 v4.0.0-rc.4
 )
 
 require (
@@ -57,4 +57,5 @@ require (
 	google.golang.org/genproto/googleapis/rpc v0.0.0-20251006185510-65f7160b3a87 // indirect
 	google.golang.org/grpc v1.76.0 // indirect
 	google.golang.org/protobuf v1.36.10 // indirect
+	gopkg.in/yaml.v3 v3.0.1 // indirect
 )

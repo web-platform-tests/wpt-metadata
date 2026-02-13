@@ -12,7 +12,7 @@ import (
 	"path"
 
 	"github.com/web-platform-tests/wpt.fyi/shared"
-	"gopkg.in/yaml.v3"
+	"go.yaml.in/yaml/v4"
 )
 
 func appendMetadataLink(testName string, link shared.MetadataLink, metadata *shared.Metadata) {
