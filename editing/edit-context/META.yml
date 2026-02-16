@@ -95,3 +95,11 @@ links:
       text input on the page
     test: edit-context-input.tentative.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1951639
+- product: firefox
+  results:
+  - subtest: Setting HTMLElement.editContext must throw a NotSupportedError for disallowed
+      elements
+    test: edit-context-property.tentative.html
+  - subtest: An EditContext can only be associated with one element at a time
+    test: edit-context-property.tentative.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2017054
