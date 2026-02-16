@@ -429,3 +429,14 @@ links:
   - subtest: 'CSSPseudoElement interface: operation pseudo(CSSOMString)'
     test: idlharness.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1998083
+- product: firefox
+  results:
+  - subtest: pseudo() returns null for unsupported pseudo-element types
+    test: CSSPseudoElement-geometry-edge-cases.tentative.html
+  - subtest: pseudo() returns null for invalid pseudo-element syntax
+    test: CSSPseudoElement-geometry-edge-cases.tentative.html
+  - subtest: pseudo() returns CSSPseudoElement even if pseudo not currently generated
+    test: CSSPseudoElement-geometry-edge-cases.tentative.html
+  - subtest: pseudo() returns cached CSSPseudoElement instance
+    test: CSSPseudoElement-geometry-edge-cases.tentative.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2017029
