@@ -123,3 +123,16 @@ links:
       property'
     test: variable-css-wide-keywords.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1910647
+- product: firefox
+  results:
+  - subtest: var(--unknown, revert-rule) in custom property
+    test: revert-rule-in-fallback.html
+  - subtest: var(--unknown, revert-rule) in shorthand
+    test: revert-rule-in-fallback.html
+  - subtest: var(--unknown, revert-rule) in shorthand observed via longhand
+    test: revert-rule-in-fallback.html
+  - subtest: var(--unknown, revert-rule) in longhand
+    test: revert-rule-in-fallback.html
+  - subtest: Using revert-rule to revert to a value containing var()
+    test: revert-rule-to-var.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2017307

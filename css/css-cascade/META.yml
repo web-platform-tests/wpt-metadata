@@ -384,3 +384,18 @@ links:
   - subtest: Insert a CSSNestedDeclarations rule directly in top-level @scope
     test: scope-nesting.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1993614
+- product: firefox
+  results:
+  - subtest: The revert-rule keyword rolls back to the previous rule
+    test: revert-rule-basic.html
+  - subtest: Cascade order determines the previous rule, not order of appearance
+    test: revert-rule-basic.html
+  - subtest: Reverting from style attribute reverts to regular rules
+    test: revert-rule-basic.html
+  - subtest: A chain of revert-rule works
+    test: revert-rule-basic.html
+  - subtest: The revert-rule keyword can cross layers
+    test: revert-rule-layer.html
+  - subtest: The revert-rule does not unconditionally cross layers
+    test: revert-rule-layer.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2017307
