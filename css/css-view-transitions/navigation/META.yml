@@ -1,192 +1,216 @@
 links:
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1895644
-      results:
-        - test: hide-before-reveal.html
-        - test: pagereveal-no-view-transition.html
-        - test: skip-outbound-vt-before-reveal.html
-        - test: skip-outbound-vt-before-reveal.html
-          subtest: when navigating away before revealing, never start a view transition
-        - test: at-rule-opt-in-none-in-new.html
-        - test: chromium-paint-holding-timeout.html
-        - test: navigation-auto-excludes-reload.html
-        - test: root-element-transition-opt-in-removed-on-new.html
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1915506
-      results:
-        - test: pageswap-ctor.html
-          subtest: Constructing pageswap event
-        - test: pageswap-ctor.html
-          subtest: Constructing pageswap event with a custom name
-        - test: pageswap-ctor.html
-          subtest: Constructing pageswap event with empty dictionary
-        - test: pageswap-ctor.html
-          subtest: Constructing pageswap event with a null viewTransition
-        - test: pageswap-ctor.html
-          subtest: Constructing pageswap event with a viewTransition
-        - test: pageswap-ctor.html
-          subtest: Constructing pageswap event with a viewTransition and activation
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1936886
-      results:
-        - test: at-rule-opt-in-change-with-script.html
-        - test: at-rule-opt-in-change-with-script.html
-          subtest: 'View Transitions: @view-transition opt-in programmatically.'
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1937918
-      results:
-        - test: at-rule-in-layer-cascade-external-stylesheet.html
-        - test: at-rule-in-layer-cascade-external-stylesheet.html
-          subtest: 'View Transitions: @view-transition cascaldes correclty with layers in separate external stylesheets.'
-        - test: at-rule-in-layer-cascade.html
-        - test: at-rule-in-layer-cascade.html
-          subtest: 'View Transitions: @view-transition cascaldes correclty with layers.'
-        - test: at-rule-in-layer.html
-        - test: at-rule-in-layer.html
-          subtest: 'View Transitions: @view-transition nested in a @layer rule.'
-        - test: at-rule-in-matching-media.html
-        - test: at-rule-in-matching-media.html
-          subtest: 'View Transitions: @view-transition nested in a matching @media rule.'
-        - test: at-rule-in-non-matching-media.html
-        - test: at-rule-in-non-matching-media.html
-          subtest: 'View Transitions: @view-transition nested in a non-matching @media rule.'
-        - test: at-rule-in-shadow-dom.html
-        - test: at-rule-in-shadow-dom.html
-          subtest: 'View Transitions: @view-transition not applied from shadow tree.'
-        - test: at-rule-multiple-rules.html
-        - test: at-rule-multiple-rules.html
-          subtest: 'View Transitions: Multiple @view-transition, last one wins.'
-        - test: hide-before-reveal.html
-          subtest: 'View transitions: pagereveal event provides viewTransition'
-        - test: mismatched-snapshot-containing-block-size-skips.html
-          subtest: |
+- product: firefox
+  results:
+  - test: hide-before-reveal.html
+  - test: pagereveal-no-view-transition.html
+  - test: skip-outbound-vt-before-reveal.html
+  - subtest: when navigating away before revealing, never start a view transition
+    test: skip-outbound-vt-before-reveal.html
+  - test: at-rule-opt-in-none-in-new.html
+  - test: chromium-paint-holding-timeout.html
+  - test: navigation-auto-excludes-reload.html
+  - test: root-element-transition-opt-in-removed-on-new.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1895644
+- product: firefox
+  results:
+  - subtest: Constructing pageswap event
+    test: pageswap-ctor.html
+  - subtest: Constructing pageswap event with a custom name
+    test: pageswap-ctor.html
+  - subtest: Constructing pageswap event with empty dictionary
+    test: pageswap-ctor.html
+  - subtest: Constructing pageswap event with a null viewTransition
+    test: pageswap-ctor.html
+  - subtest: Constructing pageswap event with a viewTransition
+    test: pageswap-ctor.html
+  - subtest: Constructing pageswap event with a viewTransition and activation
+    test: pageswap-ctor.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1915506
+- product: firefox
+  results:
+  - test: at-rule-opt-in-change-with-script.html
+  - subtest: 'View Transitions: @view-transition opt-in programmatically.'
+    test: at-rule-opt-in-change-with-script.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1936886
+- product: firefox
+  results:
+  - test: at-rule-in-layer-cascade-external-stylesheet.html
+  - subtest: 'View Transitions: @view-transition cascaldes correclty with layers in
+      separate external stylesheets.'
+    test: at-rule-in-layer-cascade-external-stylesheet.html
+  - test: at-rule-in-layer-cascade.html
+  - subtest: 'View Transitions: @view-transition cascaldes correclty with layers.'
+    test: at-rule-in-layer-cascade.html
+  - test: at-rule-in-layer.html
+  - subtest: 'View Transitions: @view-transition nested in a @layer rule.'
+    test: at-rule-in-layer.html
+  - test: at-rule-in-matching-media.html
+  - subtest: 'View Transitions: @view-transition nested in a matching @media rule.'
+    test: at-rule-in-matching-media.html
+  - test: at-rule-in-non-matching-media.html
+  - subtest: 'View Transitions: @view-transition nested in a non-matching @media rule.'
+    test: at-rule-in-non-matching-media.html
+  - test: at-rule-in-shadow-dom.html
+  - subtest: 'View Transitions: @view-transition not applied from shadow tree.'
+    test: at-rule-in-shadow-dom.html
+  - test: at-rule-multiple-rules.html
+  - subtest: 'View Transitions: Multiple @view-transition, last one wins.'
+    test: at-rule-multiple-rules.html
+  - subtest: 'View transitions: pagereveal event provides viewTransition'
+    test: hide-before-reveal.html
+  - subtest: '
 
-            View transitions: mismatched snapshot containing block size skips transition.
-        - test: pagereveal-microtask-sequence.html
-        - test: pagereveal-microtask-sequence.html
-          subtest: |
+      View transitions: mismatched snapshot containing block size skips transition.
 
-            View transition promise reactions in incoming page should resolve before
-            the rendering continues (rAF, style/layout etc)
-        - test: pagereveal-no-view-transition-new-opt-out.html
-        - test: pagereveal-no-view-transition-new-opt-out.html
-          subtest: |
+      '
+    test: mismatched-snapshot-containing-block-size-skips.html
+  - test: pagereveal-microtask-sequence.html
+  - subtest: '
 
-            View transitions: null event.viewTransition when new page removes opt-in
-            before pagereveal
-        - test: pagereveal-updatecallbackdone-promise.html
-        - test: pagereveal-updatecallbackdone-promise.html
-          subtest: |
+      View transition promise reactions in incoming page should resolve before
 
-            View transitions: Test pagereveal.updateCallbackDone promise is immediately resolved.
-        - test: pagereveal-with-view-transition.html
-        - test: pagereveal-with-view-transition.html
-          subtest: 'View transitions: pagereveal event provides viewTransition'
-        - test: pageswap-long-delay.html
-        - test: pageswap-long-delay.html
-          subtest: 'View transitions: long delay in pageswap aborts the transition'
-        - test: pageswap-skip-transition.html
-        - test: pageswap-skip-transition.html
-          subtest: 'View transitions: skipTransition() in pageswap aborts the transition'
-        - test: zero-named-elements.html
-        - test: zero-named-elements.html
-          subtest: transition finishes with no named elements
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1976125
-      results:
-        - test: old_vt_promises_bfcache.html
-          subtest: VT object created on the old Document is skipped before persisting in BFCache
-    - label: interop-2026-view-transitions
-      results:
-        - test: pagereveal-microtask-sequence.html
-        - test: pagereveal-ready-promise.html
-        - test: root-element-transition-opt-in-removed-on-new.html
-        - test: at-rule-in-layer-cascade.html
-        - test: skip-outbound-vt-before-reveal.html
-        - test: zero-named-elements.html
-        - test: at-rule-multiple-rules.html
-        - test: at-rule-opt-in-change-with-script.html
-        - test: pagereveal-no-view-transition-new-opt-out.html
-        - test: pagereveal-with-view-transition.html
-        - test: pageswap-ctor.html
-        - test: pageswap-fired-before-old-state-capture.html
-        - test: at-rule-in-layer.html
-        - test: at-rule-in-non-matching-media.html
-        - test: at-rule-opt-in-auto.html
-        - test: hide-before-reveal.html
-        - test: navigation-auto-excludes-reload.html
-        - test: pagereveal-updatecallbackdone-promise.html
-        - test: pageswap-skip-transition.html
-        - test: root-element-transition-no-opt-in-on-new.html
-        - test: pagereveal-no-view-transition.html
-        - test: pageswap-long-delay.html
-        - test: pageswap-traverse-navigation-no-bfcache.https.html
-        - test: root-element-transition-iframe-cross-origin.sub.html
-        - test: root-element-transition-iframe.html
-        - test: root-element-transition-opt-in-removed-on-old.html
-        - test: at-rule-in-layer-cascade-external-stylesheet.html
-        - test: at-rule-in-shadow-dom.html
-        - test: mismatched-snapshot-containing-block-size-skips.html
-        - test: pagereveal-finished-promise.html
-        - test: pageswap-push-from-click.html
-        - test: pageswap-push-navigation.html
-        - test: at-rule-opt-in-none-in-old.html
-        - test: no-view-transition-with-cross-origin-redirect.sub.html
-        - test: opt-in-without-frame-crash.html
-        - test: pageswap-push-with-redirect.html
-        - test: at-rule-cssom.html
-        - test: old_vt_promises_bfcache.html
-        - test: pagereveal-setup-transition.html
-        - test: pageswap-replace-navigation.html
-        - test: at-rule-in-matching-media.html
-        - test: at-rule-opt-in-none-in-new.html
-        - test: opt-in-removed-during-transition.html
-        - test: pagereveal-ctor.html
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=2015899
-      results:
-        - test: at-rule-opt-in-auto.html
-        - test: at-rule-opt-in-auto.html
-          subtest: 'View Transitions: @view-transition opt in for auto'
-        - test: at-rule-opt-in-none-in-new.html
-          subtest: 'View Transitions: @view-transition opt out in new document.'
-        - test: at-rule-opt-in-none-in-old.html
-        - test: at-rule-opt-in-none-in-old.html
-          subtest: 'View Transitions: @view-transition opt out in new document.'
-        - test: navigation-auto-excludes-reload.html
-          subtest: 'View transitions: basic cross-document navigation'
-        - test: no-view-transition-with-cross-origin-redirect.sub.html
-        - test: no-view-transition-with-cross-origin-redirect.sub.html
-          subtest: navigation with a  same-origin final url with cross-origin redirects
-        - test: opt-in-removed-during-transition.html
-        - test: opt-in-removed-during-transition.html
-          subtest: 'View Transitions: @view-transition removing opt-in doesn''t skip active transition'
-        - test: pagereveal-finished-promise.html
-        - test: pagereveal-finished-promise.html
-          subtest: |
+      the rendering continues (rAF, style/layout etc)
 
-            View transitions: Test pagereveal.finished and skipTransition
-        - test: pagereveal-ready-promise.html
-        - test: pagereveal-ready-promise.html
-          subtest: 'View transitions: Test pagereveal.ready'
-        - test: pagereveal-setup-transition.html
-        - test: pagereveal-setup-transition.html
-          subtest: 'View transitions: setup transition from pagereveal'
-        - test: pageswap-fired-before-old-state-capture.html
-        - test: pageswap-fired-before-old-state-capture.html
-          subtest: 'View transitions: Test pageswap fires before document capture'
-        - test: root-element-transition-no-opt-in-on-new.html
-        - test: root-element-transition-no-opt-in-on-new.html
-          subtest: 'View transitions: basic cross-document navigation no opt-in on new page'
-        - test: root-element-transition-opt-in-removed-on-new.html
-          subtest: 'View transitions: basic cross-document navigation opt-in removed on new page'
-        - test: root-element-transition-opt-in-removed-on-old.html
-        - test: root-element-transition-opt-in-removed-on-old.html
-          subtest: 'View transitions: basic cross-document navigation opt-in removed'
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=2016405
-      results:
-        - test: mismatched-snapshot-containing-block-size-skips.html
-          subtest: |
+      '
+    test: pagereveal-microtask-sequence.html
+  - test: pagereveal-no-view-transition-new-opt-out.html
+  - subtest: '
 
-            View transitions: mismatched snapshot containing block size skips transition.
+      View transitions: null event.viewTransition when new page removes opt-in
+
+      before pagereveal
+
+      '
+    test: pagereveal-no-view-transition-new-opt-out.html
+  - test: pagereveal-updatecallbackdone-promise.html
+  - subtest: '
+
+      View transitions: Test pagereveal.updateCallbackDone promise is immediately
+      resolved.
+
+      '
+    test: pagereveal-updatecallbackdone-promise.html
+  - test: pagereveal-with-view-transition.html
+  - subtest: 'View transitions: pagereveal event provides viewTransition'
+    test: pagereveal-with-view-transition.html
+  - test: pageswap-long-delay.html
+  - subtest: 'View transitions: long delay in pageswap aborts the transition'
+    test: pageswap-long-delay.html
+  - test: pageswap-skip-transition.html
+  - subtest: 'View transitions: skipTransition() in pageswap aborts the transition'
+    test: pageswap-skip-transition.html
+  - test: zero-named-elements.html
+  - subtest: transition finishes with no named elements
+    test: zero-named-elements.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1937918
+- product: firefox
+  results:
+  - subtest: VT object created on the old Document is skipped before persisting in
+      BFCache
+    test: old_vt_promises_bfcache.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1976125
+- label: interop-2026-view-transitions
+  results:
+  - test: pagereveal-microtask-sequence.html
+  - test: pagereveal-ready-promise.html
+  - test: root-element-transition-opt-in-removed-on-new.html
+  - test: at-rule-in-layer-cascade.html
+  - test: skip-outbound-vt-before-reveal.html
+  - test: zero-named-elements.html
+  - test: at-rule-multiple-rules.html
+  - test: at-rule-opt-in-change-with-script.html
+  - test: pagereveal-no-view-transition-new-opt-out.html
+  - test: pagereveal-with-view-transition.html
+  - test: pageswap-ctor.html
+  - test: pageswap-fired-before-old-state-capture.html
+  - test: at-rule-in-layer.html
+  - test: at-rule-in-non-matching-media.html
+  - test: at-rule-opt-in-auto.html
+  - test: hide-before-reveal.html
+  - test: navigation-auto-excludes-reload.html
+  - test: pagereveal-updatecallbackdone-promise.html
+  - test: pageswap-skip-transition.html
+  - test: root-element-transition-no-opt-in-on-new.html
+  - test: pagereveal-no-view-transition.html
+  - test: pageswap-long-delay.html
+  - test: pageswap-traverse-navigation-no-bfcache.https.html
+  - test: root-element-transition-iframe-cross-origin.sub.html
+  - test: root-element-transition-iframe.html
+  - test: root-element-transition-opt-in-removed-on-old.html
+  - test: at-rule-in-layer-cascade-external-stylesheet.html
+  - test: at-rule-in-shadow-dom.html
+  - test: mismatched-snapshot-containing-block-size-skips.html
+  - test: pagereveal-finished-promise.html
+  - test: pageswap-push-from-click.html
+  - test: pageswap-push-navigation.html
+  - test: at-rule-opt-in-none-in-old.html
+  - test: no-view-transition-with-cross-origin-redirect.sub.html
+  - test: opt-in-without-frame-crash.html
+  - test: pageswap-push-with-redirect.html
+  - test: at-rule-cssom.html
+  - test: old_vt_promises_bfcache.html
+  - test: pagereveal-setup-transition.html
+  - test: pageswap-replace-navigation.html
+  - test: at-rule-in-matching-media.html
+  - test: at-rule-opt-in-none-in-new.html
+  - test: opt-in-removed-during-transition.html
+  - test: pagereveal-ctor.html
+- product: firefox
+  results:
+  - test: at-rule-opt-in-auto.html
+  - subtest: 'View Transitions: @view-transition opt in for auto'
+    test: at-rule-opt-in-auto.html
+  - subtest: 'View Transitions: @view-transition opt out in new document.'
+    test: at-rule-opt-in-none-in-new.html
+  - test: at-rule-opt-in-none-in-old.html
+  - subtest: 'View Transitions: @view-transition opt out in new document.'
+    test: at-rule-opt-in-none-in-old.html
+  - subtest: 'View transitions: basic cross-document navigation'
+    test: navigation-auto-excludes-reload.html
+  - test: no-view-transition-with-cross-origin-redirect.sub.html
+  - subtest: navigation with a  same-origin final url with cross-origin redirects
+    test: no-view-transition-with-cross-origin-redirect.sub.html
+  - test: opt-in-removed-during-transition.html
+  - subtest: 'View Transitions: @view-transition removing opt-in doesn''t skip active
+      transition'
+    test: opt-in-removed-during-transition.html
+  - test: pagereveal-finished-promise.html
+  - subtest: '
+
+      View transitions: Test pagereveal.finished and skipTransition
+
+      '
+    test: pagereveal-finished-promise.html
+  - test: pagereveal-ready-promise.html
+  - subtest: 'View transitions: Test pagereveal.ready'
+    test: pagereveal-ready-promise.html
+  - test: pagereveal-setup-transition.html
+  - subtest: 'View transitions: setup transition from pagereveal'
+    test: pagereveal-setup-transition.html
+  - test: pageswap-fired-before-old-state-capture.html
+  - subtest: 'View transitions: Test pageswap fires before document capture'
+    test: pageswap-fired-before-old-state-capture.html
+  - test: root-element-transition-no-opt-in-on-new.html
+  - subtest: 'View transitions: basic cross-document navigation no opt-in on new page'
+    test: root-element-transition-no-opt-in-on-new.html
+  - subtest: 'View transitions: basic cross-document navigation opt-in removed on
+      new page'
+    test: root-element-transition-opt-in-removed-on-new.html
+  - test: root-element-transition-opt-in-removed-on-old.html
+  - subtest: 'View transitions: basic cross-document navigation opt-in removed'
+    test: root-element-transition-opt-in-removed-on-old.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2015899
+- product: firefox
+  results:
+  - subtest: '
+
+      View transitions: mismatched snapshot containing block size skips transition.
+
+      '
+    test: mismatched-snapshot-containing-block-size-skips.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2016405
+- product: firefox
+  results:
+  - subtest: "\n  View transitions: Test pagereveal.finished and skipTransition\n"
+    test: pagereveal-finished-promise.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2017998
