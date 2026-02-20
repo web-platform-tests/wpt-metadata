@@ -30,3 +30,14 @@ links:
   - subtest: '@supports at-rule 8'
     test: supports-at-rule.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1994307
+- product: firefox
+  results:
+  - subtest: ::picker-icon pseudo-element is supported
+    test: CSS-supports-selector-picker.html
+  - subtest: ::picker(select) pseudo-element is supported
+    test: CSS-supports-selector-picker.html
+  - subtest: ::picker-icon without element is supported
+    test: CSS-supports-selector-picker.html
+  - subtest: ::picker(select) without element is supported
+    test: CSS-supports-selector-picker.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2018331
