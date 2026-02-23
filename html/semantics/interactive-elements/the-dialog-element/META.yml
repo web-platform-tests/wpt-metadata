@@ -244,3 +244,8 @@ links:
         - test: dialog-popover-closedby-complex.html
         - test: dialog-popover-closedby-simple.html
         - test: dialog-closedby-bounds-clicking.html
+    - product: chrome
+      url: https://crbug.com/417571176
+      results:
+        - test: dialog-closedby-corner-cases.html
+          subtest: Clicking outside, when focusin calls showModal, modal
