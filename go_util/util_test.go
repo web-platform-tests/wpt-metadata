@@ -2,6 +2,8 @@ package go_util
 
 import (
 	"encoding/json"
+	"os"
+	"strings"
 	"testing"
 
 	"github.com/stretchr/testify/assert"
@@ -192,4 +194,62 @@ links:
 
 func TestGetYMLFilePath(t *testing.T) {
 	assert.Equal(t, "abc/META.yml", getYMLFilePath("abc/test.html"))
+}
+
+func TestWriteMetadataLink_FileIO_OverwritesCorrectly(t *testing.T) {
+	// 1. Set up a temporary test directory
+	tempDir := t.TempDir()
+
+	// Create a mock test path inside the temp directory
+	testPath := tempDir + "/a.html"
+	metaPath := tempDir + "/META.yml"
+
+	// 2. Write an initial META.yml file to disk
+	initialYAML := []byte(`links:
+  - product: chrome
+    url: https://external.com/item
+    results:
+    - test: a.html
+`)
+	err := os.WriteFile(metaPath, initialYAML, 0644)
+	assert.NoError(t, err)
+
+	// 3. Define the amendment we want to apply
+	var amendment shared.MetadataLink
+	json.Unmarshal([]byte(`
+		{
+			"url": "https://external.com/item",
+			"product": "chrome",
+			"results": [
+				{"test": "d.html"}
+			]
+		}
+	`), &amendment)
+
+	// 4. Execute the function that does the file I/O
+	WriteMetadataLink(testPath, amendment)
+
+	// 5. Read the file back from disk
+	finalBytes, err := os.ReadFile(metaPath)
+	assert.NoError(t, err)
+	finalStr := string(finalBytes)
+
+	// ASSERTS
+
+	// Bug 1: Writing Twice (The Original Bug)
+	// If the file pointer wasn't reset, "links:" would be written twice.
+	assert.Equal(t, 1, strings.Count(finalStr, "links:"), "The file should only contain 'links:' once. Did it append instead of overwrite?")
+
+	// Bug 2: Trailing Garbage (The Hidden WriteAt Bug)
+	// If the file wasn't truncated, and the new data was shorter than the old data,
+	// trailing bytes would remain, causing YAML parsing to fail.
+	var metadata shared.Metadata
+	err = yaml.Unmarshal(finalBytes, &metadata)
+	assert.NoError(t, err, "File should be valid YAML without trailing garbage bytes")
+
+	// Standard logic checks to ensure the data actually updated
+	assert.Equal(t, 1, len(metadata.Links))
+	assert.Equal(t, 2, len(metadata.Links[0].Results))
+	assert.Equal(t, "a.html", metadata.Links[0].Results[0].TestPath)
+	assert.Equal(t, "d.html", metadata.Links[0].Results[1].TestPath)
 }

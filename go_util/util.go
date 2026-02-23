@@ -84,6 +84,18 @@ func WriteMetadataLink(testName string, link shared.MetadataLink) {
 	}
 
 	appendMetadataLink(testName, link, &metadata)
+
+	// Prevents double writing as described in https://github.com/web-platform-tests/wpt-metadata/issues/8660.
+	// 1. Reset the cursor to the beginning of the file
+	if _, err := f.Seek(0, 0); err != nil {
+		log.Fatal(err)
+	}
+
+	// 2. Truncate the file to clear out the old data completely
+	if err := f.Truncate(0); err != nil {
+		log.Fatal(err)
+	}
+
 	writeToFile(metadata, f)
 }
 
@@ -154,7 +166,7 @@ func DeleteTestFromMetadata(testPath string) shared.MetadataLinks {
 // TODO(kyleju): https://github.com/web-platform-tests/wpt.fyi/issues/1957.
 func writeToFile(metadata shared.Metadata, f *os.File) {
 	d, err := yaml.NewDumper(f, yaml.WithCompactSeqIndent(),
-	                         yaml.WithIndent(2))
+		yaml.WithIndent(2))
 	if err != nil {
 		log.Fatal(err)
 	}
