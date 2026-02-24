@@ -1,0 +1,28 @@
+links:
+- product: firefox
+  results:
+  - subtest: Property display value 'grid-lanes'
+    test: display-computed.html
+  - subtest: Property display value 'block grid-lanes'
+    test: display-computed.html
+  - subtest: Property display value 'grid-lanes block'
+    test: display-computed.html
+  - subtest: Property display value 'inline-grid-lanes'
+    test: display-computed.html
+  - subtest: position absolute affects computed display
+    test: display-computed.html
+  - subtest: position fixed affects computed display
+    test: display-computed.html
+  - subtest: float left affects computed display
+    test: display-computed.html
+  - subtest: float right affects computed display
+    test: display-computed.html
+  - subtest: e.style['display'] = "grid-lanes" should set the property value
+    test: display-valid.html
+  - subtest: e.style['display'] = "block grid-lanes" should set the property value
+    test: display-valid.html
+  - subtest: e.style['display'] = "grid-lanes block" should set the property value
+    test: display-valid.html
+  - subtest: e.style['display'] = "inline-grid-lanes" should set the property value
+    test: display-valid.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2018873
