@@ -486,3 +486,10 @@ links:
   - subtest: ::picker(select) returns picker element style
     test: getComputedStyle-pseudo-picker.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=2018529
+- product: firefox
+  results:
+  - subtest: 'Unknown pseudo-element with a known identifier: grammar-error'
+    test: getComputedStyle-pseudo.html
+  - subtest: 'Unknown pseudo-element with a known identifier: spelling-error'
+    test: getComputedStyle-pseudo.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2018985
