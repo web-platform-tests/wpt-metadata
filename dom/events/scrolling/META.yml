@@ -1,115 +1,88 @@
 links:
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1655754
-      results:
-        - test: scrollend-event-fired-after-snap.html
-        - test: overscroll-event-fired-to-window.tentative.html
-        - test: overscroll-deltas.tentative.html
-        - test: overscroll-event-fired-to-document.tentative.html
-        - test: overscroll-event-fired-to-element-with-overscroll-behavior.tentative.html
-    - product: chrome
-      url: https://bugs.chromium.org/p/chromium/issues/detail?id=907601
-      results:
-        - test: iframe-chains.html
-        - test: input-text-scroll-event-when-using-arrow-keys.html
-        - test: scrollend-event-for-user-scroll.html
-    - product: chrome
-      url: https://crbug.com/1395298
-      results:
-        - test: scrollend-event-fired-to-element-with-overscroll-behavior.html
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1811135
-      results:
-        - test: scrollend-event-fired-after-snap.html
-          subtest: Tests that scrollend is fired after scroll snap animation completion.
-        - test: scrollend-event-fired-after-snap.html
-          subtest: Tests that scrollend is fired after fling snap animation completion.
-        - test: overscroll-event-fired-to-window.tentative.html
-          subtest: Tests that the window gets overscroll event when no element scrollsafter touch scrolling.
-        - test: overscroll-deltas.tentative.html
-          subtest: Tests that the document gets overscroll event with right deltaX/Y attributes.
-        - test: overscroll-event-fired-to-document.tentative.html
-          subtest: Tests that the document gets overscroll event when no element scrolls after touch scrolling.
-        - test: overscroll-event-fired-to-element-with-overscroll-behavior.tentative.html
-          subtest: Tests that the last element in the cut scroll chain gets overscroll event when no element scrolls by touch.
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1814530
-      results:
-        - test: scrollend-event-fired-after-sequence-of-scrolls.tentative.html
-          subtest: Move down, up and down again, receive scrollend event only once
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1814738
-      results:
-        - test: scrollend-event-fired-after-sequence-of-scrolls.tentative.html
-          subtest: Move right, left and right again, receive scrollend event only once
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1826912
-      results:
-        - test: scrollend-event-for-user-scroll.html
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1841327
-      results:
-        - test: scrollend-event-for-user-scroll.html
-          subtest: Tests that the target_div gets scrollend event when touch dragging.
-        - test: scrollend-event-for-user-scroll.html
-          subtest: Tests that the target_div gets scrollend event when mouse wheel scrolling.
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1850607
-      results:
-        - test: scrollend-event-fires-to-iframe-window.html
-          subtest: Tests that the target_div within iframe gets scrollend event when touch dragging.
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1801658
-      results:
-        - test: scrollend-event-fires-on-visual-viewport.html
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1884233
-      results:
-        - test: scrollend-event-fires-on-visual-viewport.html
-          subtest: scrollend fires when visual viewport is panned.
-    - label: interop-2025-scrollend
-      results:
-        - test: scrollend-event-fired-for-programmatic-scroll.html?include=subframe-scrollTo-auto
-        - test: scrollend-event-fired-for-scroll-attr-change.html?include=root-scrollLeft-auto
-        - test: scrollend-event-fired-for-scroll-attr-change.html?include=subframe-scrollTop-auto
-        - test: scrollend-event-fired-for-programmatic-scroll.html?include=root-scrollBy-smooth
-        - test: scrollend-event-not-fired-on-no-scroll.html
-        - test: scrollend-event-handler-content-attributes.html
-        - test: scrollend-event-fired-for-scroll-attr-change.html?include=root-scrollTop-smooth
-        - test: scrollend-fires-to-text-input.html
-        - test: scrollend-event-fired-for-mandatory-snap-point-after-load.html
-        - test: scrollend-event-fired-for-programmatic-scroll.html?include=root-scrollTo-auto
-        - test: scrollend-event-fired-for-scroll-attr-change.html?include=root-scrollTop-auto
-        - test: scrollend-event-fired-to-document.html
-        - test: scrollend-event-fired-to-window.html
-        - test: scrollend-event-fired-for-programmatic-scroll.html?include=subframe-scrollBy-auto
-        - test: scrollend-event-fired-for-programmatic-scroll.html?include=subframe-scrollBy-smooth
-        - test: scrollend-event-fired-for-programmatic-scroll.html?include=subframe-scrollTo-smooth
-        - test: scrollend-event-fired-for-scroll-attr-change.html?include=subframe-scrollTop-smooth
-        - test: scrollend-with-snap-on-fractional-offset.html
-        - test: scrollend-event-fired-for-programmatic-scroll.html?include=root-scrollBy-auto
-        - test: scrollend-event-fired-for-programmatic-scroll.html?include=root-scrollTo-smooth
-        - test: scrollend-event-fired-for-scroll-attr-change.html?include=root-scrollLeft-smooth
-        - test: scrollend-event-fired-for-scroll-attr-change.html?include=subframe-scrollLeft-auto
-        - test: scrollend-event-fired-for-scroll-attr-change.html?include=subframe-scrollLeft-smooth
-        - test: scrollend-event-fired-for-scrollIntoView.html?include=subframe-inline-end-block-end-behavior-auto
-        - test: scrollend-event-fired-for-scrollIntoView.html?include=subframe-inline-start-block-start-behavior-smooth
-        - test: scrollend-event-fired-for-scrollIntoView.html?include=root-inline-end-block-end-behavior-auto
-        - test: scrollend-event-fired-for-scrollIntoView.html?include=root-inline-start-block-start-behavior-smooth
-        - test: scrollend-event-fired-for-scrollIntoView.html?include=nested-scrollIntoView
-    - product: chrome
-      url: https://crbug.com/907601
-      results:
-        - test: overscroll-event-fired-to-scrolled-element.tentative.html
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1880674
-      results:
-        - test: overscroll-event-fired-to-scrolled-element.tentative.html
-          subtest: Tests that the scrolled element gets overscroll event after fully scrolling by touch.
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1845467
-      results:
-        - test: overscroll-deltas.tentative.html
-          subtest: testing, vertical
-        - test: overscroll-deltas.tentative.html
-          subtest: testing, horizontal
+- product: firefox
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1655754
+  results:
+  - test: scrollend-event-fired-after-snap.html
+- product: chrome
+  url: https://bugs.chromium.org/p/chromium/issues/detail?id=907601
+  results:
+  - test: iframe-chains.html
+  - test: input-text-scroll-event-when-using-arrow-keys.html
+  - test: scrollend-event-for-user-scroll.html
+- product: chrome
+  url: https://crbug.com/1395298
+  results:
+  - test: scrollend-event-fired-to-element-with-overscroll-behavior.html
+- product: firefox
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1811135
+  results:
+  - test: scrollend-event-fired-after-snap.html
+    subtest: Tests that scrollend is fired after scroll snap animation completion.
+  - test: scrollend-event-fired-after-snap.html
+    subtest: Tests that scrollend is fired after fling snap animation completion.
+- product: firefox
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1814530
+  results:
+  - test: scrollend-event-fired-after-sequence-of-scrolls.tentative.html
+    subtest: Move down, up and down again, receive scrollend event only once
+- product: firefox
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1814738
+  results:
+  - test: scrollend-event-fired-after-sequence-of-scrolls.tentative.html
+    subtest: Move right, left and right again, receive scrollend event only once
+- product: firefox
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1826912
+  results:
+  - test: scrollend-event-for-user-scroll.html
+- product: firefox
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1841327
+  results:
+  - test: scrollend-event-for-user-scroll.html
+    subtest: Tests that the target_div gets scrollend event when touch dragging.
+  - test: scrollend-event-for-user-scroll.html
+    subtest: Tests that the target_div gets scrollend event when mouse wheel scrolling.
+- product: firefox
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1850607
+  results:
+  - test: scrollend-event-fires-to-iframe-window.html
+    subtest: Tests that the target_div within iframe gets scrollend event when touch
+      dragging.
+- product: firefox
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1801658
+  results:
+  - test: scrollend-event-fires-on-visual-viewport.html
+- product: firefox
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1884233
+  results:
+  - test: scrollend-event-fires-on-visual-viewport.html
+    subtest: scrollend fires when visual viewport is panned.
+- label: interop-2025-scrollend
+  results:
+  - test: scrollend-event-fired-for-programmatic-scroll.html?include=subframe-scrollTo-auto
+  - test: scrollend-event-fired-for-scroll-attr-change.html?include=root-scrollLeft-auto
+  - test: scrollend-event-fired-for-scroll-attr-change.html?include=subframe-scrollTop-auto
+  - test: scrollend-event-fired-for-programmatic-scroll.html?include=root-scrollBy-smooth
+  - test: scrollend-event-not-fired-on-no-scroll.html
+  - test: scrollend-event-handler-content-attributes.html
+  - test: scrollend-event-fired-for-scroll-attr-change.html?include=root-scrollTop-smooth
+  - test: scrollend-fires-to-text-input.html
+  - test: scrollend-event-fired-for-mandatory-snap-point-after-load.html
+  - test: scrollend-event-fired-for-programmatic-scroll.html?include=root-scrollTo-auto
+  - test: scrollend-event-fired-for-scroll-attr-change.html?include=root-scrollTop-auto
+  - test: scrollend-event-fired-to-document.html
+  - test: scrollend-event-fired-to-window.html
+  - test: scrollend-event-fired-for-programmatic-scroll.html?include=subframe-scrollBy-auto
+  - test: scrollend-event-fired-for-programmatic-scroll.html?include=subframe-scrollBy-smooth
+  - test: scrollend-event-fired-for-programmatic-scroll.html?include=subframe-scrollTo-smooth
+  - test: scrollend-event-fired-for-scroll-attr-change.html?include=subframe-scrollTop-smooth
+  - test: scrollend-with-snap-on-fractional-offset.html
+  - test: scrollend-event-fired-for-programmatic-scroll.html?include=root-scrollBy-auto
+  - test: scrollend-event-fired-for-programmatic-scroll.html?include=root-scrollTo-smooth
+  - test: scrollend-event-fired-for-scroll-attr-change.html?include=root-scrollLeft-smooth
+  - test: scrollend-event-fired-for-scroll-attr-change.html?include=subframe-scrollLeft-auto
+  - test: scrollend-event-fired-for-scroll-attr-change.html?include=subframe-scrollLeft-smooth
+  - test: scrollend-event-fired-for-scrollIntoView.html?include=subframe-inline-end-block-end-behavior-auto
+  - test: scrollend-event-fired-for-scrollIntoView.html?include=subframe-inline-start-block-start-behavior-smooth
+  - test: scrollend-event-fired-for-scrollIntoView.html?include=root-inline-end-block-end-behavior-auto
+  - test: scrollend-event-fired-for-scrollIntoView.html?include=root-inline-start-block-start-behavior-smooth
+  - test: scrollend-event-fired-for-scrollIntoView.html?include=nested-scrollIntoView
