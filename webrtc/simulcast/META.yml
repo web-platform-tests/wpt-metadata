@@ -40,15 +40,15 @@ links:
     - product: chrome
       url: https://issues.chromium.org/344943234
       results:
-        - test: negotiation-encodings.https.html
+        - test: negotiation-encodings.https.html?rest
           subtest: addTrack, then rollback of sRD(simulcast offer), brings us back to having a single encoding without a rid
-        - test: negotiation-encodings.https.html
+        - test: negotiation-encodings.https.html?rest
           subtest: sRD(simulcast offer), addTrack, then rollback brings us back to having a single encoding
-        - test: negotiation-encodings.https.html
+        - test: negotiation-encodings.https.html?rest
           subtest: Rollback of sRD(reoffer) with a single rid results in all previous encodings
     - label: interop-2026-webrtc
       results:
-        - test: negotiation-encodings.https.html
+        - test: negotiation-encodings.https.html?interop-2026
         - test: rid-manipulation.html
         - test: screenshare.https.html
         - test: vp9-scalability-mode.https.html
