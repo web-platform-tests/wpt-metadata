@@ -3,7 +3,6 @@ links:
       url: https://bugzilla.mozilla.org/show_bug.cgi?id=1550493
       results:
         - test: RTCPeerConnection-setRemoteDescription-tracks.https.html
-        - test: RTCRtpTransceiver.https.html
     - product: firefox
       url: https://bugzilla.mozilla.org/show_bug.cgi?id=1525394
       results:
@@ -13,26 +12,6 @@ links:
       results:
         - test: getstats.html
           status: TIMEOUT
-    - product: chrome
-      url: https://crbug.com/674593
-      results:
-        - test: RTCConfiguration-iceServers.html
-          status: FAIL
-    - product: chrome
-      url: https://crbug.com/964184
-      results:
-        - test: RTCPeerConnection-addIceCandidate.html
-          status: FAIL
-    - product: chrome
-      url: https://crbug.com/1057527
-      results:
-        - test: RTCPeerConnection-setLocalDescription-parameterless.https.html
-          status: FAIL
-    - product: chrome
-      url: https://crbug.com/1035578
-      results:
-        - test: RTCDTMFSender-ontonechange.https.html
-          status: FAIL
     - product: chrome
       url: https://crbug.com/589489
       results:
@@ -45,10 +24,6 @@ links:
           status: FAIL
         - test: RTCPeerConnection-remote-track-mute.https.html
           status: FAIL
-        - test: idlharness.https.window.html
-          status: FAIL
-        - test: RTCPeerConnection-setRemoteDescription-offer.html
-        - test: RTCRtpTransceiver.https.html
     - product: chrome
       url: https://crbug.com/812552
       results:
@@ -66,10 +41,6 @@ links:
       url: https://crbug.com/944821
       results:
         - test: RTCPeerConnection-setRemoteDescription-simulcast.https.html
-    - product: chrome
-      url: https://crbug.com/1084006
-      results:
-        - test: RTCRtpSender-replaceTrack.https.html
     - product: safari
       url: https://bugs.webkit.org/show_bug.cgi?id=241006
       results:
@@ -87,14 +58,14 @@ links:
         - test: RTCCertificate-postMessage.html
           subtest: Check cross-origin RTCCertificate serialization
         - test: RTCConfiguration-iceCandidatePoolSize.html
-        - test: RTCPeerConnection-constructor.html
+        - test: RTCPeerConnection-constructor.html?interop-2026
           subtest: 'new RTCPeerConnection({ iceCandidatePoolSize: toNumberThrows })'
     - product: firefox
       url: https://bugzilla.mozilla.org/show_bug.cgi?id=1531810
       results:
-        - test: historical.html
+        - test: historical.html?rest
           subtest: RTCPeerConnection member getLocalStreams should not exist
-        - test: historical.html
+        - test: historical.html?rest
           subtest: RTCPeerConnection member getRemoteStreams should not exist
     - product: firefox
       url: https://bugzilla.mozilla.org/show_bug.cgi?id=1531087
@@ -113,17 +84,17 @@ links:
     - product: firefox
       url: https://bugzilla.mozilla.org/show_bug.cgi?id=1529588
       results:
-        - test: RTCConfiguration-iceServers.html
+        - test: RTCConfiguration-iceServers.html?rest
           subtest: new RTCPeerConnection(config) - with invalid turn url should throw SyntaxError
-        - test: RTCConfiguration-iceServers.html
+        - test: RTCConfiguration-iceServers.html?rest
           subtest: setConfiguration(config) - with invalid turn url should throw SyntaxError
-        - test: RTCConfiguration-iceServers.html
+        - test: RTCConfiguration-iceServers.html?interop-2026
           subtest: new RTCPeerConnection(config) - with invalid stun url should throw SyntaxError
-        - test: RTCConfiguration-iceServers.html
+        - test: RTCConfiguration-iceServers.html?interop-2026
           subtest: setConfiguration(config) - with invalid stun url should throw SyntaxError
-        - test: RTCConfiguration-iceServers.html
+        - test: RTCConfiguration-iceServers.html?rest
           subtest: new RTCPeerConnection(config) - with url field should throw TypeError
-        - test: RTCConfiguration-iceServers.html
+        - test: RTCConfiguration-iceServers.html?rest
           subtest: setConfiguration(config) - with url field should throw TypeError
     - product: firefox
       url: https://bugzilla.mozilla.org/show_bug.cgi?id=1728325
@@ -161,9 +132,9 @@ links:
     - product: firefox
       url: https://bugzilla.mozilla.org/show_bug.cgi?id=1247616
       results:
-        - test: RTCConfiguration-iceServers.html
+        - test: RTCConfiguration-iceServers.html?interop-2026
           subtest: setConfiguration(config) - with turns server, and object credential should throw InvalidAccessError
-        - test: RTCConfiguration-iceServers.html
+        - test: RTCConfiguration-iceServers.html?interop-2026
           subtest: new RTCPeerConnection(config) - with turns server, and object credential should throw InvalidAccessError
     - product: firefox
       url: https://bugzilla.mozilla.org/show_bug.cgi?id=1641026
@@ -179,26 +150,26 @@ links:
     - product: firefox
       url: https://bugzilla.mozilla.org/show_bug.cgi?id=1285683
       results:
-        - test: historical.html
+        - test: historical.html?interop-2026
           subtest: RTCDataChannel member reliable should not exist
     - product: firefox
       url: https://bugzilla.mozilla.org/show_bug.cgi?id=1531808
       results:
-        - test: historical.html
+        - test: historical.html?rest
           subtest: RTCPeerConnection member addStream should not exist
     - product: firefox
       url: https://bugzilla.mozilla.org/show_bug.cgi?id=1241291
       results:
-        - test: historical.html
+        - test: historical.html?rest
           subtest: RTCPeerConnection member onaddstream should not exist
     - product: firefox
       url: https://bugzilla.mozilla.org/show_bug.cgi?id=1531812
       results:
-        - test: historical.html
+        - test: historical.html?rest
           subtest: mozRTCIceCandidate interface should not exist
-        - test: historical.html
+        - test: historical.html?rest
           subtest: mozRTCPeerConnection interface should not exist
-        - test: historical.html
+        - test: historical.html?rest
           subtest: mozRTCSessionDescription interface should not exist
     - product: firefox
       url: https://bugzilla.mozilla.org/show_bug.cgi?id=1531875
@@ -215,16 +186,15 @@ links:
     - product: firefox
       url: https://bugzilla.mozilla.org/show_bug.cgi?id=1527916
       results:
-        - test: RTCError.html
-        - test: RTCPeerConnection-setRemoteDescription-offer.html
+        - test: RTCPeerConnection-setRemoteDescription-offer.html?rest
           subtest: setRemoteDescription(offer) with invalid SDP should reject with RTCError
-        - test: RTCPeerConnection-setRemoteDescription-offer.html
+        - test: RTCPeerConnection-setRemoteDescription-offer.html?rest
           subtest: setRemoteDescription(invalidOffer) from have-local-offer does not undo rollback
     - product: firefox
       url: https://bugzilla.mozilla.org/show_bug.cgi?id=1265827
       results:
         - test: RTCPeerConnection-connectionState.https.html
-        - test: RTCPeerConnection-constructor.html
+        - test: RTCPeerConnection-constructor.html?rest
           subtest: connectionState initial value
     - product: firefox
       url: https://bugzilla.mozilla.org/show_bug.cgi?id=1278299
@@ -248,7 +218,6 @@ links:
           subtest: RTCRtpSender/receiver/SCTP transport at the right time, with bundle policy max-bundle
         - test: RTCRtpSender-transport.https.html
           subtest: RTCRtpSender/receiver/SCTP transport at the right time, with bundle policy max-compat
-        - test: RTCSctpTransport-maxChannels.html
         - test: RTCSctpTransport-events.html
     - product: firefox
       url: https://bugzilla.mozilla.org/show_bug.cgi?id=1561441
@@ -262,25 +231,21 @@ links:
     - product: firefox
       url: https://bugzilla.mozilla.org/show_bug.cgi?id=1055080
       results:
-        - test: RTCPeerConnection-setLocalDescription-parameterless.https.html
+        - test: RTCPeerConnection-setLocalDescription-parameterless.https.html?rest
           subtest: Parameterless SLD() uses [[LastCreatedOffer]] if it is still valid
-        - test: RTCPeerConnection-setLocalDescription-parameterless.https.html
+        - test: RTCPeerConnection-setLocalDescription-parameterless.https.html?rest
           subtest: Parameterless SLD() uses [[LastCreatedAnswer]] if it is still valid
     - product: firefox
       url: https://bugzilla.mozilla.org/show_bug.cgi?id=1805474
       results:
-        - test: RTCPeerConnection-setRemoteDescription-rollback.html
+        - test: RTCPeerConnection-setRemoteDescription-rollback.html?rest
           subtest: explicit rollback of local offer should remove transceivers and transport
-        - test: RTCPeerConnection-setRemoteDescription-rollback.html
+        - test: RTCPeerConnection-setRemoteDescription-rollback.html?rest
           subtest: rollback of a local offer to negotiated stable state should enable applying of a remote offer
     - product: firefox
       url: https://bugzilla.mozilla.org/show_bug.cgi?id=1728335
       results:
         - test: RTCPeerConnectionIceErrorEvent.html
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1396922
-      results:
-        - test: RTCRtpTransceiver-setCodecPreferences.html
     - product: firefox
       url: https://bugzilla.mozilla.org/show_bug.cgi?id=1541471
       results:
@@ -292,11 +257,11 @@ links:
     - product: firefox
       url: https://bugzilla.mozilla.org/show_bug.cgi?id=1531464
       results:
-        - test: RTCRtpReceiver-getParameters.html
+        - test: RTCRtpReceiver-getParameters.html?interop-2026
           subtest: getParameters() with audio receiver
-        - test: RTCRtpReceiver-getParameters.html
+        - test: RTCRtpReceiver-getParameters.html?interop-2026
           subtest: getParameters() with video receiver
-        - test: RTCRtpReceiver-getParameters.html
+        - test: RTCRtpReceiver-getParameters.html?rest
           subtest: getParameters() with simulcast video receiver
     - product: firefox
       url: https://bugzilla.mozilla.org/show_bug.cgi?id=1510802
@@ -312,13 +277,9 @@ links:
         - test: RTCRtpSender-setStreams.https.html
           subtest: setStreams() fires InvalidStateError on a closed peer connection.
     - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1307994
-      results:
-        - test: RTCIceTransport.html
-    - product: firefox
       url: https://bugzilla.mozilla.org/show_bug.cgi?id=1728353
       results:
-        - test: RTCPeerConnection-iceGatheringState.html
+        - test: RTCPeerConnection-iceGatheringState.html?rest
           subtest: renegotiation that closes all transports should result in ICE gathering state "new"
     - product: firefox
       url: https://bugzilla.mozilla.org/show_bug.cgi?id=1531911
@@ -335,25 +296,25 @@ links:
     - product: firefox
       url: https://bugzilla.mozilla.org/show_bug.cgi?id=1803388
       results:
-        - test: RTCRtpParameters-transactionId.html
+        - test: RTCRtpParameters-transactionId.html?rest
           subtest: sender.setParameters() with transaction ID different from last getParameters() should reject with InvalidModificationError
-        - test: RTCRtpParameters-transactionId.html
+        - test: RTCRtpParameters-transactionId.html?interop-2026
           subtest: sender.setParameters() with transaction ID unset should reject with TypeError
-        - test: RTCRtpParameters-transactionId.html
+        - test: RTCRtpParameters-transactionId.html?interop-2026
           subtest: setParameters() twice with the same parameters should reject with InvalidStateError
-        - test: RTCRtpParameters-transactionId.html
+        - test: RTCRtpParameters-transactionId.html?rest
           subtest: setParameters() with parameters older than last getParameters() should reject with InvalidModificationError
-        - test: RTCRtpParameters-transactionId.html
+        - test: RTCRtpParameters-transactionId.html?rest
           subtest: setParameters() when the event loop has been relinquished since the last getParameters() should reject with InvalidStateError
-        - test: RTCRtpSender-setParameters.html
+        - test: RTCRtpSender-setParameters.html?interop-2026
           subtest: setParameters() with already used parameters should reject with InvalidStateError if the event loop has been relinquished
-        - test: RTCRtpParameters-encodings.html
+        - test: RTCRtpParameters-encodings.html?interop-2026
           subtest: sender.setParameters() with added encodings should reject with InvalidModificationError
-        - test: RTCRtpParameters-encodings.html
+        - test: RTCRtpParameters-encodings.html?interop-2026
           subtest: sender.setParameters() with removed encodings should reject with InvalidModificationError
-        - test: RTCRtpParameters-encodings.html
+        - test: RTCRtpParameters-encodings.html?rest
           subtest: sender.setParameters() with reordered encodings should reject with InvalidModificationError
-        - test: RTCRtpParameters-encodings.html
+        - test: RTCRtpParameters-encodings.html?rest
           subtest: setParameters() with modified encoding.rid field should reject with InvalidModificationError
     - product: firefox
       url: https://bugzilla.mozilla.org/show_bug.cgi?id=1531460
@@ -362,7 +323,7 @@ links:
     - product: firefox
       url: https://bugzilla.mozilla.org/show_bug.cgi?id=1620689
       results:
-        - test: RTCPeerConnection-operations.https.html
+        - test: RTCPeerConnection-operations.https.html?interop-2026
           subtest: sender.getStats does NOT use the operations chain
     - product: firefox
       url: https://bugzilla.mozilla.org/show_bug.cgi?id=1468993
@@ -380,14 +341,6 @@ links:
       results:
         - test: RTCDtlsTransport-getRemoteCertificates.html
     - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1531458
-      results:
-        - test: RTCRtpParameters-codecs.html
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1534687
-      results:
-        - test: RTCRtpParameters-codecs.html
-    - product: firefox
       url: https://bugzilla.mozilla.org/show_bug.cgi?id=1765851
       results:
         - test: RTCRtpParameters-headerExtensions.html
@@ -398,7 +351,7 @@ links:
     - product: firefox
       url: https://bugzilla.mozilla.org/show_bug.cgi?id=1767820
       results:
-        - test: RTCRtpTransceiver.https.html
+        - test: RTCRtpTransceiver.https.html?rest
           subtest: checkAddTransceiverThenAddTrackPairs
     - product: firefox
       url: https://bugzilla.mozilla.org/show_bug.cgi?id=1814485
@@ -496,41 +449,41 @@ links:
     - product: chrome
       url: https://issues.chromium.org/344943229
       results:
-        - test: RTCRtpParameters-encodings.html
+        - test: RTCRtpParameters-encodings.html?rest
           subtest: setParameters() with missing encoding.scaleResolutionDownBy field should succeed, and set the value back to 1
     - product: chrome
       url: https://issues.chromium.org/344950156
       results:
-        - test: RTCRtpParameters-encodings.html
+        - test: RTCRtpParameters-encodings.html?rest
           subtest: setParameters() with encoding.scaleResolutionDownBy field set to less than 1.0 should reject with RangeError
     - product: chrome
       url: https://issues.chromium.org/344943230
       results:
-        - test: RTCRtpParameters-encodings.html
+        - test: RTCRtpParameters-encodings.html?rest
           subtest: addTransceiver with invalid rid characters throws TypeError
-        - test: RTCRtpParameters-encodings.html
+        - test: RTCRtpParameters-encodings.html?rest
           subtest: addTransceiver with empty rid throws TypeError
-        - test: RTCRtpParameters-encodings.html
+        - test: RTCRtpParameters-encodings.html?rest
           subtest: addTransceiver with missing rid and multiple encodings throws TypeError
-        - test: RTCRtpParameters-encodings.html
+        - test: RTCRtpParameters-encodings.html?rest
           subtest: addTransceiver with duplicate rid and multiple encodings throws TypeError
     - product: safari
       url: https://bugs.webkit.org/show_bug.cgi?id=275829
       results:
-        - test: RTCRtpTransceiver-setCodecPreferences.html
+        - test: RTCRtpTransceiver-setCodecPreferences.html?rest
           subtest: setCodecPreferences should accept audio codecs regardless of mimeType case
-        - test: RTCRtpTransceiver-setCodecPreferences.html
+        - test: RTCRtpTransceiver-setCodecPreferences.html?rest
           subtest: setCodecPreferences should accept video codecs regardless of mimeType case
     - product: safari
       url: https://bugs.webkit.org/show_bug.cgi?id=276445
       results:
-        - test: RTCRtpTransceiver-stopping.https.html
+        - test: RTCRtpTransceiver-stopping.https.html?interop-2026
           subtest: '[audio] Locally stopped transceiver goes from stopping to stopped'
-        - test: RTCRtpTransceiver-stopping.https.html
+        - test: RTCRtpTransceiver-stopping.https.html?interop-2026
           subtest: '[video] Locally stopped transceiver goes from stopping to stopped'
-        - test: RTCRtpTransceiver.https.html
+        - test: RTCRtpTransceiver.https.html?interop-2026
           subtest: checkCurrentDirection
-        - test: RTCRtpTransceiver-stop.html
+        - test: RTCRtpTransceiver-stop.html?interop-2026
           subtest: If a transceiver is stopped, transceivers should end up in state stopped
         - test: RTCPeerConnection-transceivers.https.html
           subtest: Closing the PC stops the transceivers
@@ -539,86 +492,87 @@ links:
         - test: transfer-datachannel.html
     - label: interop-2026-webrtc
       results:
-        - test: RTCRtpParameters-transactionId.html
+        - test: RTCRtpParameters-transactionId.html?interop-2026
         - test: RTCRtpReceiver-audio-jitterBufferTarget-stats.https.html
-        - test: RTCRtpTransceiver-setCodecPreferences.html
-        - test: RTCIceTransport.html
-        - test: RTCPeerConnection-iceGatheringState.html
+        - test: RTCRtpTransceiver-setCodecPreferences.html?interop-2026
+        - test: RTCIceTransport.html?interop-2026
+        - test: RTCPeerConnection-iceGatheringState.html?interop-2026
         - test: RTCPeerConnection-remote-track-currentTime.https.html
-        - test: RTCRtpSender-replaceTrack.https.html
+        - test: RTCRtpSender-replaceTrack.https.html?interop-2026
         - test: RTCDataChannelInit-maxRetransmits-enforce-range.html
-        - test: RTCError.html
+        - test: RTCError.html?interop-2026
         - test: RTCPeerConnection-setDescription-transceiver.html
         - test: RTCPeerConnection-setLocalDescription-answer.html
-        - test: RTCPeerConnection-setLocalDescription-offer.html
+        - test: RTCPeerConnection-setLocalDescription-offer.html?interop-2026
         - test: RTCPeerConnection-setLocalDescription-pranswer.html
         - test: RTCPeerConnection-setRemoteDescription-pranswer.html
         - test: RTCPeerConnection-videoDetectorTest.html
-        - test: idlharness.https.window.html
-        - test: RTCPeerConnection-addIceCandidate.html
+        - test: idlharness.https.window.html?include=(RTCSessionDescription|RTCPeerConnectionIceErrorEvent|RTCRtpReceiver|RTCDtlsTransport|RTCIceTransport|RTCDTMFToneChangeEvent|RTCError|RTCErrorEvent)
+        - test: idlharness.https.window.html?exclude=(RTCSessionDescription|RTCPeerConnectionIceErrorEvent|RTCRtpReceiver|RTCDtlsTransport|RTCIceTransport|RTCDTMFToneChangeEvent|RTCError|RTCErrorEvent)
+        - test: RTCPeerConnection-addIceCandidate.html?interop-2026
         - test: RTCPeerConnection-mandatory-getStats.https.html
         - test: RTCRtpParameters-rtcp.html
-        - test: RTCRtpReceiver-getParameters.html
-        - test: RTCRtpReceiver-getStats.https.html
-        - test: RTCConfiguration-iceServers.html
+        - test: RTCRtpReceiver-getParameters.html?interop-2026
+        - test: RTCRtpReceiver-getStats.https.html?interop-2026
+        - test: RTCConfiguration-iceServers.html?interop-2026
         - test: RTCDataChannel-send-close-blob-negotiated.window.html
         - test: RTCPeerConnectionIceErrorEvent.html
-        - test: rtp-stats-lifetime.https.html
-        - test: RTCPeerConnection-createOffer.html
+        - test: rtp-stats-lifetime.https.html?interop-2026
+        - test: RTCPeerConnection-createOffer.html?interop-2026
         - test: RTCConfiguration-iceCandidatePoolSize.html
         - test: RTCDtlsTransport-getRemoteCertificates.html
         - test: RTCRtpReceiver-jitterBufferTarget.html
-        - test: RTCRtpTransceiver-stop.html
-        - test: RTCDataChannel-GC.html
+        - test: RTCRtpTransceiver-stop.html?interop-2026
+        - test: RTCDataChannel-GC.html?interop-2026
         - test: RTCDataChannel-send-close-string-negotiated.window.html
-        - test: RTCPeerConnection-constructor.html
+        - test: RTCPeerConnection-constructor.html?interop-2026
         - test: RTCRtpReceiver-getSynchronizationSources.https.html
-        - test: RTCSctpTransport-maxChannels.html
+        - test: RTCSctpTransport-maxChannels.html?interop-2026
         - test: RTCDataChannel-send-close-blob.window.html
-        - test: RTCPeerConnection-addTransceiver.https.html
-        - test: RTCPeerConnection-createDataChannel.html
+        - test: RTCPeerConnection-addTransceiver.https.html?interop-2026
+        - test: RTCPeerConnection-createDataChannel.html?interop-2026
         - test: RTCPeerConnection-transceivers.https.html
-        - test: RTCRtpParameters-codecs.html
-        - test: toJSON.html
+        - test: RTCRtpParameters-codecs.html?interop-2026
+        - test: toJSON.html?interop-2026
         - test: RTCRtpSender-getParameters.html
         - test: RTCSctpTransport-events.html
         - test: RTCDataChannel-close.html
         - test: RTCDataChannel-send-close-string.window.html
         - test: RTCPeerConnection-iceConnectionState.https.html
-        - test: RTCPeerConnection-setLocalDescription-parameterless.https.html
-        - test: historical.html
-        - test: RTCConfiguration-iceTransportPolicy.html
+        - test: RTCPeerConnection-setLocalDescription-parameterless.https.html?interop-2026
+        - test: historical.html?interop-2026
+        - test: RTCConfiguration-iceTransportPolicy.html?interop-2026
         - test: RTCDataChannel-send-close-array-buffer-negotiated.window.html
         - test: RTCPeerConnection-removeTrack.https.html
         - test: back-forward-cache-with-open-webrtc-connection.https.window.html
-        - test: RTCDTMFSender-ontonechange.https.html
-        - test: RTCPeerConnection-getStats.https.html
-        - test: RTCPeerConnection-operations.https.html
-        - test: RTCRtpParameters-codec.html
+        - test: RTCDTMFSender-ontonechange.https.html?interop-2026
+        - test: RTCPeerConnection-getStats.https.html?interop-2026
+        - test: RTCPeerConnection-operations.https.html?interop-2026
+        - test: RTCRtpParameters-codec.html?interop-2026
         - test: RTCRtpParameters-headerExtensions.html
         - test: RTCConfiguration-rtcpMuxPolicy.html
         - test: RTCDataChannel-send-close-array-buffer.window.html
         - test: RTCDataChannelInit-maxPacketLifeTime-enforce-range.html
-        - test: RTCPeerConnection-remote-track-properties.https.html
+        - test: RTCPeerConnection-remote-track-properties.https.html?interop-2026
         - test: RTCPeerConnection-transport-stats.https.html
-        - test: RTCRtpParameters-encodings.html
-        - test: RTCRtpTransceiver-stopping.https.html
-        - test: RTCRtpTransceiver.https.html
-        - test: RTCDtlsTransport-state.html
+        - test: RTCRtpParameters-encodings.html?interop-2026
+        - test: RTCRtpTransceiver-stopping.https.html?interop-2026
+        - test: RTCRtpTransceiver.https.html?interop-2026
+        - test: RTCDtlsTransport-state.html?interop-2026
         - test: RTCPeerConnection-ontrack.https.html
-        - test: RTCPeerConnection-setRemoteDescription-offer.html
+        - test: RTCPeerConnection-setRemoteDescription-offer.html?interop-2026
         - test: RTCRtpParameters-maxFramerate.html
-        - test: RTCRtpSender-setParameters.html
-        - test: RTCPeerConnection-setRemoteDescription-rollback.html
+        - test: RTCRtpSender-setParameters.html?interop-2026
+        - test: RTCPeerConnection-setRemoteDescription-rollback.html?interop-2026
         - test: transfer-datachannel.html
     - product: safari
       url: https://bugs.webkit.org/show_bug.cgi?id=307223
       results:
-        - test: RTCConfiguration-iceServers.html
+        - test: RTCConfiguration-iceServers.html?rest
           subtest: new RTCPeerConnection(config) - with turns server and empty string username, credential should succeed
-        - test: RTCConfiguration-iceServers.html
+        - test: RTCConfiguration-iceServers.html?rest
           subtest: setConfiguration(config) - with turns server and empty string username, credential should succeed
-        - test: RTCConfiguration-iceServers.html
+        - test: RTCConfiguration-iceServers.html?rest
           subtest: new RTCPeerConnection(config) - with turn server and empty string username, credential should succeed
-        - test: RTCConfiguration-iceServers.html
+        - test: RTCConfiguration-iceServers.html?rest
           subtest: setConfiguration(config) - with turn server and empty string username, credential should succeed
