@@ -14,13 +14,13 @@ links:
     - product: firefox
       url: https://bugzilla.mozilla.org/show_bug.cgi?id=1278299
       results:
-        - test: candidate-exchange.https.html
+        - test: candidate-exchange.https.html?interop-2026
           subtest: Adding only caller -> callee candidates gives a connection
-        - test: candidate-exchange.https.html
+        - test: candidate-exchange.https.html?interop-2026
           subtest: Adding only callee -> caller candidates gives a connection
-        - test: candidate-exchange.https.html
+        - test: candidate-exchange.https.html?interop-2026
           subtest: Explicit offer/answer exchange gives a connection
-        - test: candidate-exchange.https.html
+        - test: candidate-exchange.https.html?interop-2026
           subtest: Adding callee -> caller candidates from end-of-candidates gives a connection
         - test: crypto-suite.https.html
           subtest: tlsVersion is acceptable on data-only
@@ -51,7 +51,7 @@ links:
     - product: firefox
       url: https://bugzilla.mozilla.org/show_bug.cgi?id=1307996
       results:
-        - test: bundle.https.html
+        - test: bundle.https.html?rest
           subtest: not negotiating BUNDLE creates two separate ice and dtls transports
     - product: firefox
       url: https://bugzilla.mozilla.org/show_bug.cgi?id=1225723
@@ -84,43 +84,43 @@ links:
       results:
         - test: rtp-demuxing.html
           subtest: Can demux two video tracks with different payload types on a bundled connection
-        - test: h264-profile-levels.https.html
+        - test: h264-profile-levels.https.html?rest
           subtest: Level 1 H264 video is appropriately constrained
-        - test: h264-profile-levels.https.html
+        - test: h264-profile-levels.https.html?rest
           subtest: Level 2 H264 video is appropriately constrained
-        - test: h264-profile-levels.https.html
+        - test: h264-profile-levels.https.html?rest
           subtest: Level 3 H264 video is appropriately constrained
-        - test: h264-profile-levels.https.html
+        - test: h264-profile-levels.https.html?interop-2026
           subtest: Level 4 H264 video is appropriately constrained
-        - test: h264-profile-levels.https.html
+        - test: h264-profile-levels.https.html?interop-2026
           subtest: Level 5 H264 video is appropriately constrained
-        - test: h264-profile-levels.https.html
+        - test: h264-profile-levels.https.html?rest
           subtest: Level 6 H264 video is appropriately constrained
-        - test: h264-profile-levels.https.html
+        - test: h264-profile-levels.https.html?rest
           subtest: Level 1.1 H264 video is appropriately constrained
-        - test: h264-profile-levels.https.html
+        - test: h264-profile-levels.https.html?rest
           subtest: Level 1.2 H264 video is appropriately constrained
-        - test: h264-profile-levels.https.html
+        - test: h264-profile-levels.https.html?rest
           subtest: Level 1.3 H264 video is appropriately constrained
-        - test: h264-profile-levels.https.html
+        - test: h264-profile-levels.https.html?rest
           subtest: Level 2.1 H264 video is appropriately constrained
-        - test: h264-profile-levels.https.html
+        - test: h264-profile-levels.https.html?rest
           subtest: Level 2.2 H264 video is appropriately constrained
-        - test: h264-profile-levels.https.html
+        - test: h264-profile-levels.https.html?interop-2026
           subtest: Level 3.1 H264 video is appropriately constrained
-        - test: h264-profile-levels.https.html
+        - test: h264-profile-levels.https.html?interop-2026
           subtest: Level 3.2 H264 video is appropriately constrained
-        - test: h264-profile-levels.https.html
+        - test: h264-profile-levels.https.html?interop-2026
           subtest: Level 4.1 H264 video is appropriately constrained
-        - test: h264-profile-levels.https.html
+        - test: h264-profile-levels.https.html?interop-2026
           subtest: Level 4.2 H264 video is appropriately constrained
-        - test: h264-profile-levels.https.html
+        - test: h264-profile-levels.https.html?interop-2026
           subtest: Level 5.1 H264 video is appropriately constrained
-        - test: h264-profile-levels.https.html
+        - test: h264-profile-levels.https.html?interop-2026
           subtest: Level 5.2 H264 video is appropriately constrained
-        - test: h264-profile-levels.https.html
+        - test: h264-profile-levels.https.html?rest
           subtest: Level 6.1 H264 video is appropriately constrained
-        - test: h264-profile-levels.https.html
+        - test: h264-profile-levels.https.html?rest
           subtest: Level 6.2 H264 video is appropriately constrained
     - product: firefox
       url: https://bugzilla.mozilla.org/show_bug.cgi?id=1643050
@@ -140,12 +140,12 @@ links:
     - product: firefox
       url: https://bugzilla.mozilla.org/show_bug.cgi?id=1805480
       results:
-        - test: bundle.https.html
+        - test: bundle.https.html?interop-2026
           subtest: bundles on the first transport and closes the second
     - product: firefox
       url: https://bugzilla.mozilla.org/show_bug.cgi?id=1805484
       results:
-        - test: bundle.https.html
+        - test: bundle.https.html?rest
           subtest: max-bundle with an offer without bundle only negotiates the first m-line
     - product: firefox
       url: https://bugzilla.mozilla.org/show_bug.cgi?id=1808989
@@ -169,7 +169,7 @@ links:
     - product: firefox
       url: https://bugzilla.mozilla.org/show_bug.cgi?id=1806181
       results:
-        - test: rtp-payloadtypes.html
+        - test: rtp-payloadtypes.html?rest
           subtest: setRemoteDescription with a codec in the range 64-95 throws an InvalidAccessError
     - product: firefox
       url: https://bugzilla.mozilla.org/show_bug.cgi?id=1806185
@@ -184,38 +184,38 @@ links:
     - product: chrome
       url: https://issues.webrtc.org/issues/42224482
       results:
-        - test: h264-profile-levels.https.html
+        - test: h264-profile-levels.https.html?rest
           subtest: Level 2 H264 video is appropriately constrained
-        - test: h264-profile-levels.https.html
+        - test: h264-profile-levels.https.html?rest
           subtest: Level 3 H264 video is appropriately constrained
-        - test: h264-profile-levels.https.html
+        - test: h264-profile-levels.https.html?rest
           subtest: Level 2.1 H264 video is appropriately constrained
-        - test: h264-profile-levels.https.html
+        - test: h264-profile-levels.https.html?rest
           subtest: Level 2.2 H264 video is appropriately constrained
     - product: firefox
       url: https://bugzilla.mozilla.org/show_bug.cgi?id=1307994
       results:
-        - test: candidate-exchange.https.html
+        - test: candidate-exchange.https.html?interop-2026
           subtest: Adding only caller -> callee candidates gives a connection
-        - test: candidate-exchange.https.html
+        - test: candidate-exchange.https.html?interop-2026
           subtest: Adding only callee -> caller candidates gives a connection
-        - test: candidate-exchange.https.html
+        - test: candidate-exchange.https.html?interop-2026
           subtest: Adding callee -> caller candidates from end-of-candidates gives a connection
-        - test: candidate-exchange.https.html
+        - test: candidate-exchange.https.html?interop-2026
           subtest: Explicit offer/answer exchange gives a connection
     - label: interop-2026-webrtc
       results:
-        - test: h264-profile-levels.https.html
+        - test: h264-profile-levels.https.html?interop-2026
         - test: handover.html
-        - test: rtp-payloadtypes.html
-        - test: bundle.https.html
+        - test: rtp-payloadtypes.html?interop-2026
+        - test: bundle.https.html?interop-2026
         - test: rtp-demuxing.html
         - test: video-codecs.https.html
         - test: codecs-subsequent-offer.https.html
         - test: handover-datachannel.html
         - test: ice-ufragpwd.html
         - test: rtp-headerextensions.html
-        - test: candidate-exchange.https.html
+        - test: candidate-exchange.https.html?interop-2026
         - test: crypto-suite.https.html
         - test: dtls-setup.https.html
         - test: rtp-extension-support.html
