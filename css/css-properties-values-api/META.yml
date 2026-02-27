@@ -1135,3 +1135,20 @@ links:
   results:
   - test: registered-property-computation-color-005.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1966272
+- product: firefox
+  results:
+  - subtest: <color> values are computed correctly [color-mix(in srgb, currentcolor,
+      red)]
+    test: registered-property-computation.html
+  - subtest: '<color> values are computed correctly [color-mix(in srgb, currentcolor,
+      #ffffff 70%)]'
+    test: registered-property-computation.html
+  - subtest: '<color> values are computed correctly [color-mix(in srgb, currentcolor
+      20%, #ffffff 20%)]'
+    test: registered-property-computation.html
+  - subtest: <color> values are computed correctly [light-dark(currentcolor, red)]
+    test: registered-property-computation.html
+  - subtest: <color> values are computed correctly [color(from currentcolor srgb b
+      g r)]
+    test: registered-property-computation.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2019861
