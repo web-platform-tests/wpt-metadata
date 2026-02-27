@@ -1,124 +1,153 @@
 links:
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1704238
-      results:
-        - test: highlight-pseudo-computed.html
-          subtest: 'getComputedStyle() for ::highlight(foo): should be element''s default'
-        - test: highlight-pseudo-computed.html
-          subtest: getComputedStyle() for ::highlight(foo)) should be element's default
-        - test: highlight-pseudo-computed.html
-          subtest: getComputedStyle() for ::highlight(foo)( should be element's default
-        - test: highlight-pseudo-computed.html
-          subtest: getComputedStyle() for ::highlight should be element's default
-        - test: highlight-pseudo-computed.html
-          subtest: getComputedStyle() for ::highlight(foo)(foo) should be element's default
-        - test: highlight-pseudo-computed.html
-          subtest: getComputedStyle() for ::highlight(foo)() should be element's default
-        - test: highlight-pseudo-computed.html
-          subtest: getComputedStyle() for :::highlight(foo) should be element's default
-        - test: highlight-pseudo-computed.html
-          subtest: getComputedStyle() for ::highlight(foo). should be element's default
-        - test: highlight-pseudo-computed.html
-          subtest: getComputedStyle() for ::highlight(foo,bar) should be element's default
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1715034
-      results:
-        - test: idlharness.window.html
-          subtest: 'Highlight interface: existence and properties of interface object'
-        - test: idlharness.window.html
-          subtest: Highlight interface object name
-        - test: idlharness.window.html
-          subtest: 'Highlight interface: existence and properties of interface prototype object'
-        - test: idlharness.window.html
-          subtest: 'Highlight interface: existence and properties of interface prototype object''s "constructor" property'
-        - test: idlharness.window.html
-          subtest: 'Highlight interface: existence and properties of interface prototype object''s @@unscopables property'
-        - test: idlharness.window.html
-          subtest: 'Highlight interface: attribute priority'
-        - test: idlharness.window.html
-          subtest: Highlight must be primary interface of new Highlight(new Range())
-        - test: idlharness.window.html
-          subtest: Stringification of new Highlight(new Range())
-        - test: idlharness.window.html
-          subtest: 'Highlight interface: new Highlight(new Range()) must inherit property "priority" with the proper type'
-        - test: idlharness.window.html
-          subtest: 'HighlightRegistry interface: existence and properties of interface object'
-        - test: idlharness.window.html
-          subtest: HighlightRegistry interface object length
-        - test: idlharness.window.html
-          subtest: HighlightRegistry interface object name
-        - test: idlharness.window.html
-          subtest: 'HighlightRegistry interface: existence and properties of interface prototype object'
-        - test: idlharness.window.html
-          subtest: 'HighlightRegistry interface: existence and properties of interface prototype object''s "constructor" property'
-        - test: idlharness.window.html
-          subtest: 'HighlightRegistry interface: existence and properties of interface prototype object''s @@unscopables property'
-        - test: idlharness.window.html
-          subtest: HighlightRegistry must be primary interface of CSS.highlights
-        - test: idlharness.window.html
-          subtest: Stringification of CSS.highlights
-        - test: idlharness.window.html
-          subtest: 'CSS namespace: attribute highlights'
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1718818
-      results:
-        - test: Highlight-setlike.html
-          subtest: Highlight constructor behaves like a set when using equal ranges (using the following combination of ranges [[object Range], [object Range], [object Range]])
-        - test: Highlight-setlike.html
-          subtest: Highlight constructor behaves like a set when using equal ranges (using the following combination of ranges [[object StaticRange], [object StaticRange], [object StaticRange]])
-        - test: Highlight-setlike.html
-          subtest: Highlight constructor behaves like a set when using equal ranges (using the following combination of ranges [[object Range], [object StaticRange], [object Range]])
-        - test: Highlight-setlike.html
-          subtest: Highlight constructor behaves like a set when using equal ranges (using the following combination of ranges [[object StaticRange], [object Range], [object StaticRange]])
-        - test: HighlightRegistry-maplike.html
-          subtest: HighlightRegistry initializes as it should.
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1803951
-      results:
-        - test: Highlight-setlike-tampered-Set-prototype.html
-          subtest: Highlight is a setlike interface that works as expected even if Set.prototype is tampered.
-    - product: safari
-      url: https://bugs.webkit.org/show_bug.cgi?id=271360
-      results:
-        - test: idlharness.window.html
-          subtest: 'HighlightRegistry interface: existence and properties of interface object'
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1911716
-      results:
-        - test: highlight-image.html
-        - test: highlight-text-across-elements.html
-        - test: highlight-text-cascade.html
-        - test: highlight-text-decorations.html
-    - product: safari
-      url: https://bugs.webkit.org/show_bug.cgi?id=259594
-      results:
-        - test: HighlightRegistry-maplike-tampered-Map-prototype.html
-          subtest: Harness status
-    - label: interop-2026-custom-highlights
-      results:
-        - test: highlight-image.html
-        - test: Highlight-invalid-static-range-crash.html
-        - test: Highlight-iteration-with-modifications.html
-        - test: Highlight-iteration.html
-        - test: Highlight-multiple-type-attribute.html
-        - test: highlight-priority-painting.html
-        - test: highlight-priority.html
-        - test: highlight-pseudo-computed.html
-        - test: highlight-pseudo-from-font-computed.html
-        - test: highlight-pseudo-parsing.html
-        - test: Highlight-setlike-tampered-Set-prototype.html
-        - test: Highlight-setlike.html
-        - test: highlight-text-across-elements.html
-        - test: highlight-text-decorations.html
-        - test: highlight-text-dynamic.html
-        - test: highlight-text-replace.html
-        - test: highlight-text.html
-        - test: Highlight-type-attribute.tentative.html
-        - test: HighlightRegistry-highlightsFromPoint-ranges.html
-        - test: HighlightRegistry-highlightsFromPoint.html
-        - test: HighlightRegistry-iteration-with-modifications.html
-        - test: HighlightRegistry-iteration.html
-        - test: HighlightRegistry-maplike-tampered-Map-prototype.html
-        - test: HighlightRegistry-maplike.html
-        - test: historical.window.html
-        - test: idlharness.window.html
+- product: firefox
+  results:
+  - subtest: 'getComputedStyle() for ::highlight(foo): should be element''s default'
+    test: highlight-pseudo-computed.html
+  - subtest: getComputedStyle() for ::highlight(foo)) should be element's default
+    test: highlight-pseudo-computed.html
+  - subtest: getComputedStyle() for ::highlight(foo)( should be element's default
+    test: highlight-pseudo-computed.html
+  - subtest: getComputedStyle() for ::highlight should be element's default
+    test: highlight-pseudo-computed.html
+  - subtest: getComputedStyle() for ::highlight(foo)(foo) should be element's default
+    test: highlight-pseudo-computed.html
+  - subtest: getComputedStyle() for ::highlight(foo)() should be element's default
+    test: highlight-pseudo-computed.html
+  - subtest: getComputedStyle() for :::highlight(foo) should be element's default
+    test: highlight-pseudo-computed.html
+  - subtest: getComputedStyle() for ::highlight(foo). should be element's default
+    test: highlight-pseudo-computed.html
+  - subtest: getComputedStyle() for ::highlight(foo,bar) should be element's default
+    test: highlight-pseudo-computed.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1704238
+- product: firefox
+  results:
+  - subtest: 'Highlight interface: existence and properties of interface object'
+    test: idlharness.window.html
+  - subtest: Highlight interface object name
+    test: idlharness.window.html
+  - subtest: 'Highlight interface: existence and properties of interface prototype
+      object'
+    test: idlharness.window.html
+  - subtest: 'Highlight interface: existence and properties of interface prototype
+      object''s "constructor" property'
+    test: idlharness.window.html
+  - subtest: 'Highlight interface: existence and properties of interface prototype
+      object''s @@unscopables property'
+    test: idlharness.window.html
+  - subtest: 'Highlight interface: attribute priority'
+    test: idlharness.window.html
+  - subtest: Highlight must be primary interface of new Highlight(new Range())
+    test: idlharness.window.html
+  - subtest: Stringification of new Highlight(new Range())
+    test: idlharness.window.html
+  - subtest: 'Highlight interface: new Highlight(new Range()) must inherit property
+      "priority" with the proper type'
+    test: idlharness.window.html
+  - subtest: 'HighlightRegistry interface: existence and properties of interface object'
+    test: idlharness.window.html
+  - subtest: HighlightRegistry interface object length
+    test: idlharness.window.html
+  - subtest: HighlightRegistry interface object name
+    test: idlharness.window.html
+  - subtest: 'HighlightRegistry interface: existence and properties of interface prototype
+      object'
+    test: idlharness.window.html
+  - subtest: 'HighlightRegistry interface: existence and properties of interface prototype
+      object''s "constructor" property'
+    test: idlharness.window.html
+  - subtest: 'HighlightRegistry interface: existence and properties of interface prototype
+      object''s @@unscopables property'
+    test: idlharness.window.html
+  - subtest: HighlightRegistry must be primary interface of CSS.highlights
+    test: idlharness.window.html
+  - subtest: Stringification of CSS.highlights
+    test: idlharness.window.html
+  - subtest: 'CSS namespace: attribute highlights'
+    test: idlharness.window.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1715034
+- product: firefox
+  results:
+  - subtest: Highlight constructor behaves like a set when using equal ranges (using
+      the following combination of ranges [[object Range], [object Range], [object
+      Range]])
+    test: Highlight-setlike.html
+  - subtest: Highlight constructor behaves like a set when using equal ranges (using
+      the following combination of ranges [[object StaticRange], [object StaticRange],
+      [object StaticRange]])
+    test: Highlight-setlike.html
+  - subtest: Highlight constructor behaves like a set when using equal ranges (using
+      the following combination of ranges [[object Range], [object StaticRange], [object
+      Range]])
+    test: Highlight-setlike.html
+  - subtest: Highlight constructor behaves like a set when using equal ranges (using
+      the following combination of ranges [[object StaticRange], [object Range], [object
+      StaticRange]])
+    test: Highlight-setlike.html
+  - subtest: HighlightRegistry initializes as it should.
+    test: HighlightRegistry-maplike.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1718818
+- product: firefox
+  results:
+  - subtest: Highlight is a setlike interface that works as expected even if Set.prototype
+      is tampered.
+    test: Highlight-setlike-tampered-Set-prototype.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1803951
+- product: safari
+  results:
+  - subtest: 'HighlightRegistry interface: existence and properties of interface object'
+    test: idlharness.window.html
+  url: https://bugs.webkit.org/show_bug.cgi?id=271360
+- product: firefox
+  results:
+  - test: highlight-image.html
+  - test: highlight-text-across-elements.html
+  - test: highlight-text-cascade.html
+  - test: highlight-text-decorations.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1911716
+- product: safari
+  results:
+  - subtest: Harness status
+    test: HighlightRegistry-maplike-tampered-Map-prototype.html
+  url: https://bugs.webkit.org/show_bug.cgi?id=259594
+- label: interop-2026-custom-highlights
+  results:
+  - test: highlight-image.html
+  - test: Highlight-invalid-static-range-crash.html
+  - test: Highlight-iteration-with-modifications.html
+  - test: Highlight-iteration.html
+  - test: Highlight-multiple-type-attribute.html
+  - test: highlight-priority-painting.html
+  - test: highlight-priority.html
+  - test: highlight-pseudo-computed.html
+  - test: highlight-pseudo-from-font-computed.html
+  - test: highlight-pseudo-parsing.html
+  - test: Highlight-setlike-tampered-Set-prototype.html
+  - test: Highlight-setlike.html
+  - test: highlight-text-across-elements.html
+  - test: highlight-text-decorations.html
+  - test: highlight-text-dynamic.html
+  - test: highlight-text-replace.html
+  - test: highlight-text.html
+  - test: Highlight-type-attribute.tentative.html
+  - test: HighlightRegistry-highlightsFromPoint-ranges.html
+  - test: HighlightRegistry-highlightsFromPoint.html
+  - test: HighlightRegistry-iteration-with-modifications.html
+  - test: HighlightRegistry-iteration.html
+  - test: HighlightRegistry-maplike-tampered-Map-prototype.html
+  - test: HighlightRegistry-maplike.html
+  - test: historical.window.html
+  - test: idlharness.window.html
+- product: firefox
+  results:
+  - subtest: 'HighlightRegistry interface: operation highlightsFromPoint(float, float,
+      optional HighlightsFromPointOptions)'
+    test: idlharness.window.html
+  - subtest: 'HighlightRegistry interface: CSS.highlights must inherit property "highlightsFromPoint(float,
+      float, optional HighlightsFromPointOptions)" with the proper type'
+    test: idlharness.window.html
+  - subtest: 'HighlightRegistry interface: calling highlightsFromPoint(float, float,
+      optional HighlightsFromPointOptions) on CSS.highlights with too few arguments
+      must throw TypeError'
+    test: idlharness.window.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2020022
