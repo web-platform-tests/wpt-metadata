@@ -2967,3 +2967,10 @@ links:
   - subtest: element-shared random() should not be allowed in @font-face descriptors
     test: random-in-descriptors.tentative.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=2019274
+- product: firefox
+  results:
+  - subtest: random() should not be allowed in if() style() condition
+    test: random-in-if.tentative.html
+  - subtest: random() in var() should not be allowed in if() style() condition
+    test: random-in-if.tentative.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2019828
