@@ -1,0 +1,24 @@
+links:
+- product: firefox
+  results:
+  - subtest: '"::checkmark" should be a valid selector'
+    test: checkmark-pseudo-element.html
+  - subtest: '"*::checkmark" should be a valid selector'
+    test: checkmark-pseudo-element.html
+  - subtest: '"foo.bar[baz]::checkmark" should be a valid selector'
+    test: checkmark-pseudo-element.html
+  - subtest: '"::slotted(*)::checkmark" should be a valid selector'
+    test: checkmark-pseudo-element.html
+  - subtest: '"::part(foo)::checkmark" should be a valid selector'
+    test: checkmark-pseudo-element.html
+  - subtest: '"::picker-icon" should be a valid selector'
+    test: picker-icon-pseudo-element.html
+  - subtest: '"*::picker-icon" should be a valid selector'
+    test: picker-icon-pseudo-element.html
+  - subtest: '"foo.bar[baz]::picker-icon" should be a valid selector'
+    test: picker-icon-pseudo-element.html
+  - subtest: '"::slotted(*)::picker-icon" should be a valid selector'
+    test: picker-icon-pseudo-element.html
+  - subtest: '"::part(foo)::picker-icon" should be a valid selector'
+    test: picker-icon-pseudo-element.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2020189
