@@ -1,0 +1,16 @@
+links:
+- product: firefox
+  results:
+  - subtest: Measure target with value=content-height and wm=undefined
+    test: responsive-iframe-value.tentative.html?value=content-height,300,200
+  - subtest: Measure target with value=content-width and wm=undefined
+    test: responsive-iframe-value.tentative.html?value=content-width,400,150
+  - subtest: Measure target with value=content-inline-size and wm=vertical-rl
+    test: responsive-iframe-value.tentative.html?value=content-inline-size,300,200,vertical-rl
+  - subtest: Measure target with value=content-inline-size and wm=undefined
+    test: responsive-iframe-value.tentative.html?value=content-inline-size,400,150
+  - subtest: Measure target with value=content-block-size and wm=vertical-rl
+    test: responsive-iframe-value.tentative.html?value=content-block-size,400,150,vertical-rl
+  - subtest: Measure target with value=content-block-size and wm=undefined
+    test: responsive-iframe-value.tentative.html?value=content-block-size,300,200
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2020881
