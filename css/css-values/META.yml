@@ -2765,3 +2765,5 @@ links:
       results:
         - test: attr-all-types.html
           subtest: 'CSS Values and Units Test: attr 45'
+        - test: attr-security.html
+          subtest: '''--x: attr(data-foo type(<url>))'' with data-foo="url(https://does-not-exist.test/404.png)"'
