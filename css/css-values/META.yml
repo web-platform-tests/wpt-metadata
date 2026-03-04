@@ -2765,3 +2765,14 @@ links:
       results:
         - test: attr-all-types.html
           subtest: 'CSS Values and Units Test: attr 45'
+        - test: attr-security.html
+          subtest: '''--x: attr(data-foo type(<url>))'' with data-foo="url(https://does-not-exist.test/404.png)"'
+    - product: chrome
+      url: https://issues.chromium.org/issues/489670248
+      results:
+        - test: attr-security.html
+          subtest: '''background-image: src("https://does-not-exist.test/404.png")'' with data-foo="https://does-not-exist.test/404.png"'
+        - test: attr-security.html
+          subtest: '''background-image: src(string("https://does-not-exist.test/""404.png"))'' with data-foo="/404.png"'
+        - test: attr-security.html
+          subtest: '''background-image: image("https://does-not-exist.test/404.png")'' with data-foo="https://does-not-exist.test/404.png"'
