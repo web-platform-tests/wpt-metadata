@@ -1,60 +1,61 @@
 links:
 - product: safari
-  results:
-  - status: FAIL
-    test: css-image-fallbacks-and-annotations.html
-  - status: FAIL
-    test: css-image-fallbacks-and-annotations002.html
-  - status: FAIL
-    test: css-image-fallbacks-and-annotations003.html
-  - status: FAIL
-    test: css-image-fallbacks-and-annotations004.html
-  - status: FAIL
-    test: css-image-fallbacks-and-annotations005.html
   url: https://bugs.webkit.org/show_bug.cgi?id=200207
-- product: safari
   results:
-  - status: FAIL
-    test: gradients-with-transparent.html
+  - test: css-image-fallbacks-and-annotations.html
+    status: FAIL
+  - test: css-image-fallbacks-and-annotations002.html
+    status: FAIL
+  - test: css-image-fallbacks-and-annotations003.html
+    status: FAIL
+  - test: css-image-fallbacks-and-annotations004.html
+    status: FAIL
+  - test: css-image-fallbacks-and-annotations005.html
+    status: FAIL
+- product: safari
   url: https://bugs.webkit.org/show_bug.cgi?id=200208
-- product: safari
-  results:
-  - status: FAIL
-    test: multiple-position-color-stop-radial.html
-  url: https://bugs.webkit.org/show_bug.cgi?id=200209
-- product: webkitgtk
-  results:
-  - status: FAIL
-    test: css-image-fallbacks-and-annotations.html
-  - status: FAIL
-    test: css-image-fallbacks-and-annotations002.html
-  - status: FAIL
-    test: css-image-fallbacks-and-annotations003.html
-  - status: FAIL
-    test: css-image-fallbacks-and-annotations004.html
-  - status: FAIL
-    test: css-image-fallbacks-and-annotations005.html
-  url: https://bugs.webkit.org/show_bug.cgi?id=200207
-- product: webkitgtk
-  results:
-  - status: FAIL
-    test: gradients-with-transparent.html
-  url: https://bugs.webkit.org/show_bug.cgi?id=200208
-- product: webkitgtk
-  results:
-  - status: FAIL
-    test: multiple-position-color-stop-radial.html
-  url: https://bugs.webkit.org/show_bug.cgi?id=200209
-- product: safari
   results:
   - test: gradients-with-transparent.html
-  url: https://bugs.webkit.org/show_bug.cgi?id=150940
-- product: firefox
+    status: FAIL
+- product: safari
+  url: https://bugs.webkit.org/show_bug.cgi?id=200209
   results:
-  - subtest: 'CSS namespace: attribute elementSources'
-    test: idlharness.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1634399
+  - test: multiple-position-color-stop-radial.html
+    status: FAIL
+- product: webkitgtk
+  url: https://bugs.webkit.org/show_bug.cgi?id=200207
+  results:
+  - test: css-image-fallbacks-and-annotations.html
+    status: FAIL
+  - test: css-image-fallbacks-and-annotations002.html
+    status: FAIL
+  - test: css-image-fallbacks-and-annotations003.html
+    status: FAIL
+  - test: css-image-fallbacks-and-annotations004.html
+    status: FAIL
+  - test: css-image-fallbacks-and-annotations005.html
+    status: FAIL
+- product: webkitgtk
+  url: https://bugs.webkit.org/show_bug.cgi?id=200208
+  results:
+  - test: gradients-with-transparent.html
+    status: FAIL
+- product: webkitgtk
+  url: https://bugs.webkit.org/show_bug.cgi?id=200209
+  results:
+  - test: multiple-position-color-stop-radial.html
+    status: FAIL
+- product: safari
+  url: https://bugs.webkit.org/show_bug.cgi?id=150940
+  results:
+  - test: gradients-with-transparent.html
 - product: firefox
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1634399
+  results:
+  - test: idlharness.html
+    subtest: 'CSS namespace: attribute elementSources'
+- product: firefox
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1559276
   results:
   - test: object-fit-scale-down-svg-002o.html
   - test: object-fit-none-svg-001i.html
@@ -222,8 +223,8 @@ links:
   - test: object-fit-cover-svg-002p.html
   - test: object-fit-fill-svg-004i.html
   - test: object-fit-contain-svg-002o.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1559276
 - product: chrome
+  url: https://crbug.com/630597
   results:
   - test: css-image-fallbacks-and-annotations.html
   - test: css-image-fallbacks-and-annotations002.html
@@ -231,8 +232,8 @@ links:
   - test: css-image-fallbacks-and-annotations004.html
   - test: css-image-fallbacks-and-annotations005.html
   - test: tiled-gradients.html
-  url: https://crbug.com/630597
 - product: chrome
+  url: https://crbug.com/1174873
   results:
   - test: object-fit-cover-svg-003o.html
   - test: object-fit-cover-svg-004e.html
@@ -319,8 +320,8 @@ links:
   - test: object-fit-none-svg-003e.html
   - test: object-fit-scale-down-svg-002e.html
   - test: object-fit-scale-down-svg-006o.html
-  url: https://crbug.com/1174873
 - product: safari
+  url: https://bugs.webkit.org/show_bug.cgi?id=276681
   results:
   - test: object-fit-containcontainintrinsicsize-png-001e.tentative.html
   - test: object-fit-containcontainintrinsicsize-png-001p.tentative.html
@@ -330,8 +331,14 @@ links:
   - test: object-fit-containsize-png-001p.tentative.html
   - test: object-fit-containcontainintrinsicsize-png-001c.tentative.html
   - test: object-fit-containcontainintrinsicsize-png-001i.tentative.html
-  url: https://bugs.webkit.org/show_bug.cgi?id=276681
 - product: firefox
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1911717
   results:
   - test: svg-images-are-ignored.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1911717
+- product: chrome
+  url: https://crbug.com/489109710
+  results:
+  - test: color-stop-contrast-color-currentcolor-invalidation.html
+  - test: color-stop-light-dark-currentcolor-invalidation.html
+  - test: color-stop-relative-color-currentcolor-invalidation.html
+  - test: color-stop-color-mix-currentcolor-invalidation.html
