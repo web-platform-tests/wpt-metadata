@@ -1,5 +1,10 @@
 links:
 - product: firefox
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2003761
   results:
   - test: border-shape-overflow-solid-background.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2003761
+- product: firefox
+  results:
+  - subtest: bottom-right corner outside circle does not hit target
+    test: border-shape-stacking-context-hit-test.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2021228
