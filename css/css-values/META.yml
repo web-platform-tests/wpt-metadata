@@ -2776,3 +2776,9 @@ links:
           subtest: '''background-image: src(string("https://does-not-exist.test/""404.png"))'' with data-foo="/404.png"'
         - test: attr-security.html
           subtest: '''background-image: image("https://does-not-exist.test/404.png")'' with data-foo="https://does-not-exist.test/404.png"'
+    - product: chrome
+      url: https://issues.chromium.org/issues/387281256
+      results:
+        - test: attr-namespace-valid.xhtml
+        - test: attr-namespace-case-sensitivity.xhtml
+        - test: attr-namespace-non-existing.html
