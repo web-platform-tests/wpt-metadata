@@ -460,3 +460,44 @@ links:
       nested inline elements
     test: elementsFromPoint-inline-nested.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=2014938
+- product: firefox
+  results:
+  - subtest: scrollTo with 1 non-dictionary argument
+    test: element-scroll-arguments.html
+  - subtest: scrollTo with an invalid ScrollToOptions argument
+    test: element-scroll-arguments.html
+  - subtest: scroll with 1 non-dictionary argument
+    test: element-scroll-arguments.html
+  - subtest: scroll with an invalid ScrollToOptions argument
+    test: element-scroll-arguments.html
+  - subtest: scrollTo with 1 non-dictionary argument
+    test: window-scroll-arguments.html
+  - subtest: scrollTo with an invalid ScrollToOptions argument
+    test: window-scroll-arguments.html
+  - subtest: scroll with 1 non-dictionary argument
+    test: window-scroll-arguments.html
+  - subtest: scroll with an invalid ScrollToOptions argument
+    test: window-scroll-arguments.html
+  - subtest: scrollBy with 1 non-dictionary argument
+    test: window-scroll-arguments.html
+  - subtest: scrollBy with an invalid ScrollToOptions argument
+    test: window-scroll-arguments.html
+  - subtest: 'Window.scroll(auto): return type'
+    test: window-scroll-promises.html
+  - subtest: 'Window.scroll(instant): return type'
+    test: window-scroll-promises.html
+  - subtest: 'Window.scroll(smooth): return type'
+    test: window-scroll-promises.html
+  - subtest: 'Window.scrollTo(auto): return type'
+    test: window-scroll-promises.html
+  - subtest: 'Window.scrollTo(instant): return type'
+    test: window-scroll-promises.html
+  - subtest: 'Window.scrollTo(smooth): return type'
+    test: window-scroll-promises.html
+  - subtest: 'Window.scrollBy(auto): return type'
+    test: window-scroll-promises.html
+  - subtest: 'Window.scrollBy(instant): return type'
+    test: window-scroll-promises.html
+  - subtest: 'Window.scrollBy(smooth): return type'
+    test: window-scroll-promises.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2021649
