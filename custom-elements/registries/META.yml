@@ -137,3 +137,10 @@ links:
       results:
         - test: scoped-registry-registry-define-get-etc.html
         - test: CustomElementRegistry-multi-register.html
+    - product: chrome
+      url: https://crbug.com/486928691
+      results:
+        - test: ShadowRoot-init-declarative.html
+          subtest: Custom element inside 'shadowrootcustomelementregistry' declarative shadow root
+        - test: ShadowRoot-init-declarative.html
+          subtest: Built-in element inside 'shadowrootcustomelementregistry' declarative shadow root
