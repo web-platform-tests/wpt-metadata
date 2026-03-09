@@ -1,0 +1,12 @@
+links:
+- product: firefox
+  results:
+  - subtest: 'public to loopback: permission denied.'
+    test: iframe.tentative.https.window.html?include=from-public
+  - subtest: 'public to local: permission denied.'
+    test: iframe.tentative.https.window.html?include=from-public
+  - subtest: 'treat-as-public-address to loopback: permission denied.'
+    test: iframe.tentative.https.window.html?include=from-treat-as-public
+  - subtest: 'treat-as-public-address to local: permission denied.'
+    test: iframe.tentative.https.window.html?include=from-treat-as-public
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2021651
