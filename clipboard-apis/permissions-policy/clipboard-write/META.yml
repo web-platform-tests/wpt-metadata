@@ -1,0 +1,31 @@
+links:
+- product: firefox
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1652051
+  results:
+  - test: clipboard-write-enabled-by-permissions-policy.tentative.https.sub.html
+    subtest: Feature-Policy header clipboard-write "*" allows the top-level document.
+  - test: clipboard-write-enabled-on-self-origin-by-permissions-policy.tentative.https.sub.html
+    subtest: Feature-Policy header clipboard-write "self" allows the top-level document.
+- product: firefox
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1772896
+  results:
+  - test: clipboard-write-enabled-by-permissions-policy.tentative.https.sub.html
+    status: CRASH
+  - test: clipboard-write-enabled-on-self-origin-by-permissions-policy.tentative.https.sub.html
+    status: CRASH
+  - test: clipboard-write-enabled-by-permissions-policy-attribute-cross-origin-tentative.https.sub.html
+    status: CRASH
+  - test: clipboard-write-enabled-by-permissions-policy-cross-origin-tentative.https.sub.html
+    status: CRASH
+  - test: clipboard-write-enabled-by-permissions-policy-attribute-tentative.https.sub.html
+    status: CRASH
+- product: chrome
+  url: https://crbug.com/1105278
+  results:
+  - test: clipboard-write-enabled-on-self-origin-by-permissions-policy.tentative.https.sub.html
+- product: firefox
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1655754
+  results:
+  - test: clipboard-write-disabled-by-permissions-policy.tentative.https.sub.html
+    subtest: Feature-Policy header clipboard-write "none" disallows the top-level
+      document.
