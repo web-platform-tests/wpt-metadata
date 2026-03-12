@@ -9,3 +9,9 @@ links:
   results:
   - test: animation-trigger-disarmed-by-apis.tentative.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1974129
+- product: firefox
+  results:
+  - subtest: contain calc(0% + 100px) matches contain 100px at offset before range
+      under CSS zoom
+    test: animation-trigger-calc-with-zoom.tentative.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2022820
