@@ -82,11 +82,6 @@ links:
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1366966
 - product: firefox
   results:
-  - test: sync-xhr-supported-by-feature-policy.html
-  - test: xmlhttprequest-sync-default-feature-policy.sub.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1442689
-- product: firefox
-  results:
   - test: access-control-preflight-credential-async.htm
   - test: access-control-preflight-credential-sync.htm
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=580353
@@ -206,12 +201,3 @@ links:
       ;charset=gbk"
     test: overridemimetype-blob.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1915047
-- product: firefox
-  results:
-  - subtest: Feature policy "sync-xhr" can be disabled in cross-origin iframes using
-      "allow" attribute.
-    test: xmlhttprequest-sync-default-feature-policy.sub.html
-  - subtest: Feature policy "sync-xhr" can be disabled in same-origin iframes using
-      "allow" attribute.
-    test: xmlhttprequest-sync-default-feature-policy.sub.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2021635
