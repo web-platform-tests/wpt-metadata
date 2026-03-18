@@ -2782,3 +2782,10 @@ links:
         - test: attr-namespace-valid.xhtml
         - test: attr-namespace-case-sensitivity.xhtml
         - test: attr-namespace-non-existing.html
+    - product: chrome
+      url: https://issues.chromium.org/issues/488111037
+      results:
+        - test: random-computed.tentative.html
+          subtest: Property view-transition-name value 'ident("myident" random(30, 10))'
+        - test: random-computed.tentative.html
+          subtest: Shared by property 'view-transition-name' with values 'ident("myident" random(1, 100))', 'ident("myident" random(element-shared, 1, 100))'
