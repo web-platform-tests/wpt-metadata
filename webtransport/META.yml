@@ -102,3 +102,232 @@ links:
       with the proper type'
     test: idlharness.https.sub.any.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=2020021
+- product: firefox
+  results:
+  - subtest: Validate subprotocol headers sent
+    test: connect.https.any.sharedworker.html
+  - subtest: Validate subprotocol response header received
+    test: connect.https.any.sharedworker.html
+  - subtest: Validate subprotocol response header received with parameters handled
+      correctly
+    test: connect.https.any.sharedworker.html
+  - subtest: Validate subprotocol response header with non-offered protocol gets ignored
+    test: connect.https.any.sharedworker.html
+  - subtest: Validate subprotocol response header when no protocols were offered gets
+      ignored
+    test: connect.https.any.sharedworker.html
+  - subtest: Validate malformed subprotocol response header gets ignored
+    test: connect.https.any.sharedworker.html
+  - subtest: Validate subprotocol headers sent
+    test: connect.https.any.worker.html
+  - subtest: Validate subprotocol response header received
+    test: connect.https.any.worker.html
+  - subtest: Validate subprotocol response header received with parameters handled
+      correctly
+    test: connect.https.any.worker.html
+  - subtest: Validate subprotocol response header with non-offered protocol gets ignored
+    test: connect.https.any.worker.html
+  - subtest: Validate subprotocol response header when no protocols were offered gets
+      ignored
+    test: connect.https.any.worker.html
+  - subtest: Validate malformed subprotocol response header gets ignored
+    test: connect.https.any.worker.html
+  - subtest: Validate subprotocol headers sent
+    test: connect.https.any.serviceworker.html
+  - subtest: Validate subprotocol response header received
+    test: connect.https.any.serviceworker.html
+  - subtest: Validate subprotocol response header received with parameters handled
+      correctly
+    test: connect.https.any.serviceworker.html
+  - subtest: Validate subprotocol response header with non-offered protocol gets ignored
+    test: connect.https.any.serviceworker.html
+  - subtest: Validate subprotocol response header when no protocols were offered gets
+      ignored
+    test: connect.https.any.serviceworker.html
+  - subtest: Validate malformed subprotocol response header gets ignored
+    test: connect.https.any.serviceworker.html
+  - subtest: Validate subprotocol headers sent
+    test: connect.https.any.html
+  - subtest: Validate subprotocol response header received
+    test: connect.https.any.html
+  - subtest: Validate subprotocol response header received with parameters handled
+      correctly
+    test: connect.https.any.html
+  - subtest: Validate subprotocol response header with non-offered protocol gets ignored
+    test: connect.https.any.html
+  - subtest: Validate subprotocol response header when no protocols were offered gets
+      ignored
+    test: connect.https.any.html
+  - subtest: Validate malformed subprotocol response header gets ignored
+    test: connect.https.any.html
+  - subtest: WebTransport constructor should reject protocol list ''
+    test: constructor.https.sub.any.html
+  - subtest: "WebTransport constructor should reject protocol list '\u8AA4'"
+    test: constructor.https.sub.any.html
+  - subtest: WebTransport constructor should reject protocol list 'test,test'
+    test: constructor.https.sub.any.html
+  - subtest: WebTransport constructor should reject protocol list 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'
+    test: constructor.https.sub.any.html
+  - subtest: WebTransport constructor should reject protocol list ''
+    test: constructor.https.sub.any.serviceworker.html
+  - subtest: "WebTransport constructor should reject protocol list '\u8AA4'"
+    test: constructor.https.sub.any.serviceworker.html
+  - subtest: WebTransport constructor should reject protocol list 'test,test'
+    test: constructor.https.sub.any.serviceworker.html
+  - subtest: WebTransport constructor should reject protocol list 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'
+    test: constructor.https.sub.any.serviceworker.html
+  - subtest: WebTransport constructor should reject protocol list ''
+    test: constructor.https.sub.any.worker.html
+  - subtest: "WebTransport constructor should reject protocol list '\u8AA4'"
+    test: constructor.https.sub.any.worker.html
+  - subtest: WebTransport constructor should reject protocol list 'test,test'
+    test: constructor.https.sub.any.worker.html
+  - subtest: WebTransport constructor should reject protocol list 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'
+    test: constructor.https.sub.any.worker.html
+  - subtest: WebTransport constructor should reject protocol list ''
+    test: constructor.https.sub.any.sharedworker.html
+  - subtest: "WebTransport constructor should reject protocol list '\u8AA4'"
+    test: constructor.https.sub.any.sharedworker.html
+  - subtest: WebTransport constructor should reject protocol list 'test,test'
+    test: constructor.https.sub.any.sharedworker.html
+  - subtest: WebTransport constructor should reject protocol list 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'
+    test: constructor.https.sub.any.sharedworker.html
+  - subtest: Successfully reading datagrams with BYOB reader.
+    test: datagrams.https.any.serviceworker.html
+  - subtest: Reading datagrams with insufficient buffer should be rejected.
+    test: datagrams.https.any.serviceworker.html
+  - subtest: Datagram's outgoingHighWaterMark correctly regulates written datagrams
+    test: datagrams.https.any.serviceworker.html
+  - subtest: Successfully reading datagrams with BYOB reader.
+    test: datagrams.https.any.sharedworker.html
+  - subtest: Reading datagrams with insufficient buffer should be rejected.
+    test: datagrams.https.any.sharedworker.html
+  - subtest: Datagram's outgoingHighWaterMark correctly regulates written datagrams
+    test: datagrams.https.any.sharedworker.html
+  - subtest: Successfully reading datagrams with BYOB reader.
+    test: datagrams.https.any.worker.html
+  - subtest: Reading datagrams with insufficient buffer should be rejected.
+    test: datagrams.https.any.worker.html
+  - subtest: Datagram's outgoingHighWaterMark correctly regulates written datagrams
+    test: datagrams.https.any.worker.html
+  - subtest: Successfully reading datagrams with BYOB reader.
+    test: datagrams.https.any.html
+  - subtest: Reading datagrams with insufficient buffer should be rejected.
+    test: datagrams.https.any.html
+  - subtest: Datagram's outgoingHighWaterMark correctly regulates written datagrams
+    test: datagrams.https.any.html
+  - subtest: Datagrams read is less than or equal to the incomingHighWaterMark
+    test: datagrams.https.any.html
+  - subtest: WebTransport client should be able to provide stats after connection
+      has been established
+    test: stats.https.any.serviceworker.html
+  - subtest: WebTransport client should be able to provide stats after connection
+      has been closed
+    test: stats.https.any.serviceworker.html
+  - subtest: WebTransport client should be able to provide stats requested right before
+      connection has been closed
+    test: stats.https.any.serviceworker.html
+  - subtest: WebTransport client should be able to provide valid stats when requested
+      before connection established
+    test: stats.https.any.serviceworker.html
+  - subtest: WebTransport client should throw an error when stats are requested for
+      a failed connection
+    test: stats.https.any.serviceworker.html
+  - subtest: WebTransport client should be able to handle multiple concurrent stats
+      requests
+    test: stats.https.any.serviceworker.html
+  - subtest: WebTransport client should be able to handle multiple sequential stats
+      requests
+    test: stats.https.any.serviceworker.html
+  - subtest: WebTransport client should be able to provide droppedIncoming values
+      for datagrams
+    test: stats.https.any.serviceworker.html
+  - subtest: WebTransport client should be able to provide stats after connection
+      has been established
+    test: stats.https.any.worker.html
+  - subtest: WebTransport client should be able to provide stats after connection
+      has been closed
+    test: stats.https.any.worker.html
+  - subtest: WebTransport client should be able to provide stats requested right before
+      connection has been closed
+    test: stats.https.any.worker.html
+  - subtest: WebTransport client should be able to provide valid stats when requested
+      before connection established
+    test: stats.https.any.worker.html
+  - subtest: WebTransport client should throw an error when stats are requested for
+      a failed connection
+    test: stats.https.any.worker.html
+  - subtest: WebTransport client should be able to handle multiple concurrent stats
+      requests
+    test: stats.https.any.worker.html
+  - subtest: WebTransport client should be able to handle multiple sequential stats
+      requests
+    test: stats.https.any.worker.html
+  - subtest: WebTransport client should be able to provide droppedIncoming values
+      for datagrams
+    test: stats.https.any.worker.html
+  - subtest: WebTransport client should be able to provide stats after connection
+      has been established
+    test: stats.https.any.sharedworker.html
+  - subtest: WebTransport client should be able to provide stats after connection
+      has been closed
+    test: stats.https.any.sharedworker.html
+  - subtest: WebTransport client should be able to provide stats requested right before
+      connection has been closed
+    test: stats.https.any.sharedworker.html
+  - subtest: WebTransport client should be able to provide valid stats when requested
+      before connection established
+    test: stats.https.any.sharedworker.html
+  - subtest: WebTransport client should throw an error when stats are requested for
+      a failed connection
+    test: stats.https.any.sharedworker.html
+  - subtest: WebTransport client should be able to handle multiple concurrent stats
+      requests
+    test: stats.https.any.sharedworker.html
+  - subtest: WebTransport client should be able to handle multiple sequential stats
+      requests
+    test: stats.https.any.sharedworker.html
+  - subtest: WebTransport client should be able to provide droppedIncoming values
+      for datagrams
+    test: stats.https.any.sharedworker.html
+  - subtest: WebTransport client should be able to provide stats after connection
+      has been established
+    test: stats.https.any.html
+  - subtest: WebTransport client should be able to provide stats after connection
+      has been closed
+    test: stats.https.any.html
+  - subtest: WebTransport client should be able to provide stats requested right before
+      connection has been closed
+    test: stats.https.any.html
+  - subtest: WebTransport client should be able to provide valid stats when requested
+      before connection established
+    test: stats.https.any.html
+  - subtest: WebTransport client should throw an error when stats are requested for
+      a failed connection
+    test: stats.https.any.html
+  - subtest: WebTransport client should be able to handle multiple concurrent stats
+      requests
+    test: stats.https.any.html
+  - subtest: WebTransport client should be able to handle multiple sequential stats
+      requests
+    test: stats.https.any.html
+  - subtest: WebTransport client should be able to provide droppedIncoming values
+      for datagrams
+    test: stats.https.any.html
+  - subtest: Close and abort unidirectional stream
+    test: streams-close.https.any.worker.html
+  - subtest: RESET_STREAM coming from server
+    test: streams-close.https.any.worker.html
+  - subtest: Close and abort unidirectional stream
+    test: streams-close.https.any.sharedworker.html
+  - subtest: RESET_STREAM coming from server
+    test: streams-close.https.any.sharedworker.html
+  - subtest: Close and abort unidirectional stream
+    test: streams-close.https.any.serviceworker.html
+  - subtest: RESET_STREAM coming from server
+    test: streams-close.https.any.serviceworker.html
+  - subtest: Close and abort unidirectional stream
+    test: streams-close.https.any.html
+  - subtest: RESET_STREAM coming from server
+    test: streams-close.https.any.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2025092
