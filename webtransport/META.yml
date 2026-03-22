@@ -331,3 +331,26 @@ links:
   - subtest: RESET_STREAM coming from server
     test: streams-close.https.any.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=2025092
+- product: firefox
+  results:
+  - subtest: 'WebTransport interface: attribute protocol'
+    test: idlharness.https.sub.any.html
+  - subtest: 'WebTransport interface: webTransport must inherit property "protocol"
+      with the proper type'
+    test: idlharness.https.sub.any.html
+  - subtest: 'WebTransport interface: attribute protocol'
+    test: idlharness.https.sub.any.worker.html
+  - subtest: 'WebTransport interface: webTransport must inherit property "protocol"
+      with the proper type'
+    test: idlharness.https.sub.any.worker.html
+  - subtest: 'WebTransport interface: attribute protocol'
+    test: idlharness.https.sub.any.serviceworker.html
+  - subtest: 'WebTransport interface: webTransport must inherit property "protocol"
+      with the proper type'
+    test: idlharness.https.sub.any.serviceworker.html
+  - subtest: 'WebTransport interface: attribute protocol'
+    test: idlharness.https.sub.any.sharedworker.html
+  - subtest: 'WebTransport interface: webTransport must inherit property "protocol"
+      with the proper type'
+    test: idlharness.https.sub.any.sharedworker.html 
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2025151
