@@ -16,15 +16,15 @@ links:
 - product: firefox
   results:
   - subtest: 'WebTransport interface: attribute protocol'
-    test: idlharness.https.any.sharedworker.html
+    test: idlharness.https.sub.any.sharedworker.html
   - subtest: 'WebTransport interface: webTransport must inherit property "protocol"
       with the proper type'
-    test: idlharness.https.any.sharedworker.html
+    test: idlharness.https.sub.any.sharedworker.html
   - subtest: 'WebTransport interface: attribute protocol'
-    test: idlharness.https.any.worker.html
+    test: idlharness.https.sub.any.worker.html
   - subtest: 'WebTransport interface: webTransport must inherit property "protocol"
       with the proper type'
-    test: idlharness.https.any.worker.html
+    test: idlharness.https.sub.any.worker.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=2003955
 - label: interop-2026-webtransport
   results:
@@ -41,17 +41,17 @@ links:
   - test: connect.https.any.serviceworker.html
   - test: connect.https.any.sharedworker.html
   - test: connect.https.any.worker.html
-  - test: constructor.https.any.html
-  - test: constructor.https.any.serviceworker.html
-  - test: constructor.https.any.sharedworker.html
-  - test: constructor.https.any.worker.html
+  - test: constructor.https.sub.any.html
+  - test: constructor.https.sub.any.serviceworker.html
+  - test: constructor.https.sub.any.sharedworker.html
+  - test: constructor.https.sub.any.worker.html
   - test: csp-fail.https.window.html
   - test: csp-pass.https.window.html
   - test: datagram-bad-chunk.https.any.html
   - test: datagram-bad-chunk.https.any.serviceworker.html
   - test: datagram-bad-chunk.https.any.sharedworker.html
   - test: datagram-bad-chunk.https.any.worker.html
-  - test: datagram-cancel-crash.https.window.html
+  - test: datagram-cancel-crash.https.sub.window.html
   - test: datagrams.https.any.html
   - test: datagrams.https.any.serviceworker.html
   - test: datagrams.https.any.sharedworker.html
@@ -60,10 +60,10 @@ links:
   - test: echo-large-bidirectional-streams.https.any.serviceworker.html
   - test: echo-large-bidirectional-streams.https.any.sharedworker.html
   - test: echo-large-bidirectional-streams.https.any.worker.html
-  - test: idlharness.https.any.html
-  - test: idlharness.https.any.serviceworker.html
-  - test: idlharness.https.any.sharedworker.html
-  - test: idlharness.https.any.worker.html
+  - test: idlharness.https.sub.any.html
+  - test: idlharness.https.sub.any.serviceworker.html
+  - test: idlharness.https.sub.any.sharedworker.html
+  - test: idlharness.https.sub.any.worker.html
   - test: in-removed-iframe.https.html
   - test: sendorder.https.any.html
   - test: sendorder.https.any.serviceworker.html
@@ -92,13 +92,13 @@ links:
 - product: firefox
   results:
   - subtest: 'WebTransport interface: attribute protocol'
-    test: idlharness.https.any.serviceworker.html
+    test: idlharness.https.sub.any.serviceworker.html
   - subtest: 'WebTransport interface: webTransport must inherit property "protocol"
       with the proper type'
-    test: idlharness.https.any.serviceworker.html
+    test: idlharness.https.sub.any.serviceworker.html
   - subtest: 'WebTransport interface: attribute protocol'
-    test: idlharness.https.any.html
+    test: idlharness.https.sub.any.html
   - subtest: 'WebTransport interface: webTransport must inherit property "protocol"
       with the proper type'
-    test: idlharness.https.any.html
+    test: idlharness.https.sub.any.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=2020021
