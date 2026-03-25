@@ -399,3 +399,22 @@ links:
   - subtest: The revert-rule does not unconditionally cross layers
     test: revert-rule-layer.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=2017307
+- product: firefox
+  results:
+  - subtest: Scope-imported rule applies within implicit scope
+    test: scope-import-implicit.html
+  - subtest: '@scope within scope-imported stylesheet matches'
+    test: scope-import-inner-scope.html
+  - subtest: A stylesheet may be imported multiple times, and scoped differently
+    test: scope-import-multiple.html
+  - subtest: The & selector matches the scoping root
+    test: scope-import-parent-pseudo.html
+  - subtest: The & selector behaves like :scope
+    test: scope-import-parent-pseudo.html
+  - subtest: Scope-imported rule applies within scope, above limit
+    test: scope-import-scope-end.html
+  - subtest: The :scope pseudo-class works in imported stylesheets
+    test: scope-import-scope-pseudo.html
+  - subtest: Scope-imported rule applies within scope
+    test: scope-import-scope-start.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2026124
