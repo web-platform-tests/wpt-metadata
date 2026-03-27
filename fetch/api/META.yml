@@ -179,3 +179,26 @@ links:
       "body" with the proper type'
     test: idlharness.https.any.worker.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1992453
+- product: firefox
+  results:
+  - subtest: 'Request interface: attribute isReloadNavigation'
+    test: idlharness.https.any.sharedworker.html
+  - subtest: 'Request interface: new Request(''about:blank'') must inherit property
+      "isReloadNavigation" with the proper type'
+    test: idlharness.https.any.sharedworker.html
+  - subtest: 'Request interface: attribute isReloadNavigation'
+    test: idlharness.https.any.worker.html
+  - subtest: 'Request interface: new Request(''about:blank'') must inherit property
+      "isReloadNavigation" with the proper type'
+    test: idlharness.https.any.worker.html
+  - subtest: 'Request interface: attribute isReloadNavigation'
+    test: idlharness.https.any.html
+  - subtest: 'Request interface: new Request(''about:blank'') must inherit property
+      "isReloadNavigation" with the proper type'
+    test: idlharness.https.any.html
+  - subtest: 'Request interface: attribute isReloadNavigation'
+    test: idlharness.https.any.serviceworker.html
+  - subtest: 'Request interface: new Request(''about:blank'') must inherit property
+      "isReloadNavigation" with the proper type'
+    test: idlharness.https.any.serviceworker.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2027009
