@@ -174,3 +174,148 @@ links:
   - subtest: waiting for command to execute
     test: delete-at-start-boundary-of-div-containing-hidden-select-element-with-non-editable-node.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1962071
+- product: firefox
+  results:
+  - subtest: 'In <textarea>, execCommand("cut", false, null), ab[]c): The command
+      should not be enabled'
+    test: exec-command-with-text-editor.tentative.html?type=textarea
+  - subtest: 'In <textarea>, execCommand("cut", false, null), ab[]c): execCommand()
+      should return false'
+    test: exec-command-with-text-editor.tentative.html?type=textarea
+  - subtest: 'In <textarea>, execCommand("copy", false, null), abc[]d): The command
+      should not be enabled'
+    test: exec-command-with-text-editor.tentative.html?type=textarea
+  - subtest: 'In <textarea>, execCommand("copy", false, null), abc[]d): execCommand()
+      should return false'
+    test: exec-command-with-text-editor.tentative.html?type=textarea
+  - subtest: 'In <textarea>, execCommand("undo", false, null), a[b]c): The command
+      should be enabled'
+    test: exec-command-with-text-editor.tentative.html?type=textarea
+  - subtest: 'In <textarea>, execCommand("inserthtml", false, <b>inserted</b>), a[b]c):
+      The command should be enabled'
+    test: exec-command-with-text-editor.tentative.html?type=textarea
+  - subtest: 'In <textarea>, execCommand("inserthtml", false, <b>inserted</b>), a[b]c):
+      execCommand() should return true'
+    test: exec-command-with-text-editor.tentative.html?type=textarea
+  - subtest: 'In <textarea>, execCommand("inserthtml", false, <b>inserted</b>), a[b]c):
+      <textarea>.value should be "ainserted[]c"'
+    test: exec-command-with-text-editor.tentative.html?type=textarea
+  - subtest: 'In <textarea>, execCommand("inserthtml", false, <b>inserted</b>), a[b]c):
+      input.inputType should be insertText'
+    test: exec-command-with-text-editor.tentative.html?type=textarea
+  - subtest: 'In <textarea>, execCommand("inserthtml", false, <b>inserted</b>), a[b]c):
+      input.target should be [object HTMLTextAreaElement]'
+    test: exec-command-with-text-editor.tentative.html?type=textarea
+  - subtest: 'In <textarea>, execCommand("insertparagraph", false, null), a[b]c):
+      input.inputType should be insertParagraph'
+    test: exec-command-with-text-editor.tentative.html?type=textarea
+  - subtest: 'In <textarea>, execCommand("defaultParagraphSeparator", false, div),
+      a[b]c): defaultParagraphSeparator value should be "div" when <textarea> has
+      focus'
+    test: exec-command-with-text-editor.tentative.html?type=textarea
+  - subtest: 'In <textarea>, execCommand("defaultParagraphSeparator", false, div),
+      a[b]c): defaultParagraphSeparator value should be "div" when <textarea> does
+      not have focus'
+    test: exec-command-with-text-editor.tentative.html?type=textarea
+  - subtest: 'In <textarea> in contenteditable, execCommand("cut", false, null), ab[]c):
+      The command should not be enabled'
+    test: exec-command-with-text-editor.tentative.html?type=textarea
+  - subtest: 'In <textarea> in contenteditable, execCommand("cut", false, null), ab[]c):
+      execCommand() should return false'
+    test: exec-command-with-text-editor.tentative.html?type=textarea
+  - subtest: 'In <textarea> in contenteditable, execCommand("copy", false, null),
+      abc[]d): The command should not be enabled'
+    test: exec-command-with-text-editor.tentative.html?type=textarea
+  - subtest: 'In <textarea> in contenteditable, execCommand("copy", false, null),
+      abc[]d): execCommand() should return false'
+    test: exec-command-with-text-editor.tentative.html?type=textarea
+  - subtest: 'In <textarea> in contenteditable, execCommand("undo", false, null),
+      a[b]c): The command should be enabled'
+    test: exec-command-with-text-editor.tentative.html?type=textarea
+  - subtest: 'In <textarea> in contenteditable, execCommand("inserthtml", false, <b>inserted</b>),
+      a[b]c): The command should be enabled'
+    test: exec-command-with-text-editor.tentative.html?type=textarea
+  - subtest: 'In <textarea> in contenteditable, execCommand("inserthtml", false, <b>inserted</b>),
+      a[b]c): execCommand() should return true'
+    test: exec-command-with-text-editor.tentative.html?type=textarea
+  - subtest: 'In <textarea> in contenteditable, execCommand("inserthtml", false, <b>inserted</b>),
+      a[b]c): <textarea>.value should be "ainserted[]c"'
+    test: exec-command-with-text-editor.tentative.html?type=textarea
+  - subtest: 'In <textarea> in contenteditable, execCommand("inserthtml", false, <b>inserted</b>),
+      a[b]c): input.inputType should be insertText'
+    test: exec-command-with-text-editor.tentative.html?type=textarea
+  - subtest: 'In <textarea> in contenteditable, execCommand("inserthtml", false, <b>inserted</b>),
+      a[b]c): input.target should be [object HTMLTextAreaElement]'
+    test: exec-command-with-text-editor.tentative.html?type=textarea
+  - subtest: 'In <textarea> in contenteditable, execCommand("insertparagraph", false,
+      null), a[b]c): input.inputType should be insertParagraph'
+    test: exec-command-with-text-editor.tentative.html?type=textarea
+  - subtest: 'In <input type="text">, execCommand("cut", false, null), ab[]c): The
+      command should not be enabled'
+    test: exec-command-with-text-editor.tentative.html?type=text
+  - subtest: 'In <input type="text">, execCommand("cut", false, null), ab[]c): execCommand()
+      should return false'
+    test: exec-command-with-text-editor.tentative.html?type=text
+  - subtest: 'In <input type="text">, execCommand("copy", false, null), abc[]d): The
+      command should not be enabled'
+    test: exec-command-with-text-editor.tentative.html?type=text
+  - subtest: 'In <input type="text">, execCommand("copy", false, null), abc[]d): execCommand()
+      should return false'
+    test: exec-command-with-text-editor.tentative.html?type=text
+  - subtest: 'In <input type="text">, execCommand("undo", false, null), a[b]c): The
+      command should be enabled'
+    test: exec-command-with-text-editor.tentative.html?type=text
+  - subtest: 'In <input type="text">, execCommand("inserthtml", false, <b>inserted</b>),
+      a[b]c): The command should be enabled'
+    test: exec-command-with-text-editor.tentative.html?type=text
+  - subtest: 'In <input type="text">, execCommand("inserthtml", false, <b>inserted</b>),
+      a[b]c): execCommand() should return true'
+    test: exec-command-with-text-editor.tentative.html?type=text
+  - subtest: 'In <input type="text">, execCommand("inserthtml", false, <b>inserted</b>),
+      a[b]c): <input>.value should be "ainserted[]c"'
+    test: exec-command-with-text-editor.tentative.html?type=text
+  - subtest: 'In <input type="text">, execCommand("inserthtml", false, <b>inserted</b>),
+      a[b]c): input.inputType should be insertText'
+    test: exec-command-with-text-editor.tentative.html?type=text
+  - subtest: 'In <input type="text">, execCommand("inserthtml", false, <b>inserted</b>),
+      a[b]c): input.target should be [object HTMLInputElement]'
+    test: exec-command-with-text-editor.tentative.html?type=text
+  - subtest: 'In <input type="text">, execCommand("defaultParagraphSeparator", false,
+      div), a[b]c): defaultParagraphSeparator value should be "div" when <input> has
+      focus'
+    test: exec-command-with-text-editor.tentative.html?type=text
+  - subtest: 'In <input type="text">, execCommand("defaultParagraphSeparator", false,
+      div), a[b]c): defaultParagraphSeparator value should be "div" when <input> does
+      not have focus'
+    test: exec-command-with-text-editor.tentative.html?type=text
+  - subtest: 'In <input type="text"> in contenteditable, execCommand("cut", false,
+      null), ab[]c): The command should not be enabled'
+    test: exec-command-with-text-editor.tentative.html?type=text
+  - subtest: 'In <input type="text"> in contenteditable, execCommand("cut", false,
+      null), ab[]c): execCommand() should return false'
+    test: exec-command-with-text-editor.tentative.html?type=text
+  - subtest: 'In <input type="text"> in contenteditable, execCommand("copy", false,
+      null), abc[]d): The command should not be enabled'
+    test: exec-command-with-text-editor.tentative.html?type=text
+  - subtest: 'In <input type="text"> in contenteditable, execCommand("copy", false,
+      null), abc[]d): execCommand() should return false'
+    test: exec-command-with-text-editor.tentative.html?type=text
+  - subtest: 'In <input type="text"> in contenteditable, execCommand("undo", false,
+      null), a[b]c): The command should be enabled'
+    test: exec-command-with-text-editor.tentative.html?type=text
+  - subtest: 'In <input type="text"> in contenteditable, execCommand("inserthtml",
+      false, <b>inserted</b>), a[b]c): The command should be enabled'
+    test: exec-command-with-text-editor.tentative.html?type=text
+  - subtest: 'In <input type="text"> in contenteditable, execCommand("inserthtml",
+      false, <b>inserted</b>), a[b]c): execCommand() should return true'
+    test: exec-command-with-text-editor.tentative.html?type=text
+  - subtest: 'In <input type="text"> in contenteditable, execCommand("inserthtml",
+      false, <b>inserted</b>), a[b]c): <input>.value should be "ainserted[]c"'
+    test: exec-command-with-text-editor.tentative.html?type=text
+  - subtest: 'In <input type="text"> in contenteditable, execCommand("inserthtml",
+      false, <b>inserted</b>), a[b]c): input.inputType should be insertText'
+    test: exec-command-with-text-editor.tentative.html?type=text
+  - subtest: 'In <input type="text"> in contenteditable, execCommand("inserthtml",
+      false, <b>inserted</b>), a[b]c): input.target should be [object HTMLInputElement]'
+    test: exec-command-with-text-editor.tentative.html?type=text
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2026964
