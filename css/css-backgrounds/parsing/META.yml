@@ -243,3 +243,34 @@ links:
   - subtest: multiple backgrounds with varying values
     test: background-shorthand-serialization.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1994210
+- product: firefox
+  results:
+  - subtest: Property background-clip value 'border-area'
+    test: background-clip-computed.html
+  - subtest: Property background-clip value 'border-box, padding-box, content-box,
+      border-area'
+    test: background-clip-computed.html
+  - subtest: e.style['background-clip'] = "border-area" should set the property value
+    test: background-clip-valid.html
+  - subtest: e.style['background-clip'] = "border-box, padding-box, content-box, border-area"
+      should set the property value
+    test: background-clip-valid.html
+  - subtest: Property background-clip value 'content-box, border-box, border-area'
+    test: background-computed.html
+  - subtest: border-area text sets background-origin to border-box
+    test: background-shorthand-serialization.html
+  - subtest: e.style['background'] = "border-area text" should set background-attachment
+    test: background-valid.html
+  - subtest: e.style['background'] = "border-area text" should set background-image
+    test: background-valid.html
+  - subtest: e.style['background'] = "border-area text" should set background-origin
+    test: background-valid.html
+  - subtest: e.style['background'] = "border-area text" should set background-position
+    test: background-valid.html
+  - subtest: e.style['background'] = "border-area text" should set background-repeat
+    test: background-valid.html
+  - subtest: e.style['background'] = "border-area text" should set background-size
+    test: background-valid.html
+  - subtest: e.style['background'] = "border-area text" should not set unrelated longhands
+    test: background-valid.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2028091
