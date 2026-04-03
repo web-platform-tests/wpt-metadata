@@ -58,7 +58,7 @@ links:
         - test: RTCCertificate-postMessage.html
           subtest: Check cross-origin RTCCertificate serialization
         - test: RTCConfiguration-iceCandidatePoolSize.html
-        - test: RTCPeerConnection-constructor.html?interop-2026
+        - test: RTCPeerConnection-constructor.html
           subtest: 'new RTCPeerConnection({ iceCandidatePoolSize: toNumberThrows })'
     - product: firefox
       url: https://bugzilla.mozilla.org/show_bug.cgi?id=1531810
@@ -194,7 +194,7 @@ links:
       url: https://bugzilla.mozilla.org/show_bug.cgi?id=1265827
       results:
         - test: RTCPeerConnection-connectionState.https.html
-        - test: RTCPeerConnection-constructor.html?rest
+        - test: RTCPeerConnection-constructor.html
           subtest: connectionState initial value
     - product: firefox
       url: https://bugzilla.mozilla.org/show_bug.cgi?id=1278299
@@ -483,7 +483,7 @@ links:
           subtest: '[video] Locally stopped transceiver goes from stopping to stopped'
         - test: RTCRtpTransceiver.https.html?interop-2026
           subtest: checkCurrentDirection
-        - test: RTCRtpTransceiver-stop.html?interop-2026
+        - test: RTCRtpTransceiver-stop.html
           subtest: If a transceiver is stopped, transceivers should end up in state stopped
         - test: RTCPeerConnection-transceivers.https.html
           subtest: Closing the PC stops the transceivers
@@ -498,7 +498,7 @@ links:
         - test: RTCIceTransport.html?interop-2026
         - test: RTCPeerConnection-iceGatheringState.html?interop-2026
         - test: RTCPeerConnection-remote-track-currentTime.https.html
-        - test: RTCRtpSender-replaceTrack.https.html?interop-2026
+        - test: RTCRtpSender-replaceTrack.https.html
         - test: RTCDataChannelInit-maxRetransmits-enforce-range.html
         - test: RTCError.html?interop-2026
         - test: RTCPeerConnection-setDescription-transceiver.html
@@ -516,15 +516,15 @@ links:
         - test: RTCConfiguration-iceServers.html?interop-2026
         - test: RTCDataChannel-send-close-blob-negotiated.window.html
         - test: RTCPeerConnectionIceErrorEvent.html
-        - test: rtp-stats-lifetime.https.html?interop-2026
+        - test: rtp-stats-lifetime.https.html
         - test: RTCPeerConnection-createOffer.html?interop-2026
         - test: RTCConfiguration-iceCandidatePoolSize.html
         - test: RTCDtlsTransport-getRemoteCertificates.html
         - test: RTCRtpReceiver-jitterBufferTarget.html
-        - test: RTCRtpTransceiver-stop.html?interop-2026
-        - test: RTCDataChannel-GC.html?interop-2026
+        - test: RTCRtpTransceiver-stop.html
+        - test: RTCDataChannel-GC.html
         - test: RTCDataChannel-send-close-string-negotiated.window.html
-        - test: RTCPeerConnection-constructor.html?interop-2026
+        - test: RTCPeerConnection-constructor.html
         - test: RTCRtpReceiver-getSynchronizationSources.https.html
         - test: RTCSctpTransport-maxChannels.html?interop-2026
         - test: RTCDataChannel-send-close-blob.window.html
@@ -532,7 +532,7 @@ links:
         - test: RTCPeerConnection-createDataChannel.html?interop-2026
         - test: RTCPeerConnection-transceivers.https.html
         - test: RTCRtpParameters-codecs.html?interop-2026
-        - test: toJSON.html?interop-2026
+        - test: toJSON.html
         - test: RTCRtpSender-getParameters.html
         - test: RTCSctpTransport-events.html
         - test: RTCDataChannel-close.html
@@ -544,7 +544,7 @@ links:
         - test: RTCDataChannel-send-close-array-buffer-negotiated.window.html
         - test: RTCPeerConnection-removeTrack.https.html
         - test: back-forward-cache-with-open-webrtc-connection.https.window.html
-        - test: RTCDTMFSender-ontonechange.https.html?interop-2026
+        - test: RTCDTMFSender-ontonechange.https.html
         - test: RTCPeerConnection-getStats.https.html?interop-2026
         - test: RTCPeerConnection-operations.https.html?interop-2026
         - test: RTCRtpParameters-codec.html?interop-2026
@@ -557,7 +557,7 @@ links:
         - test: RTCRtpParameters-encodings.html?interop-2026
         - test: RTCRtpTransceiver-stopping.https.html?interop-2026
         - test: RTCRtpTransceiver.https.html?interop-2026
-        - test: RTCDtlsTransport-state.html?interop-2026
+        - test: RTCDtlsTransport-state.html
         - test: RTCPeerConnection-ontrack.https.html
         - test: RTCPeerConnection-setRemoteDescription-offer.html?interop-2026
         - test: RTCRtpParameters-maxFramerate.html
