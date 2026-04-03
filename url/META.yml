@@ -1301,3 +1301,10 @@ links:
   - subtest: 'Origin parsing: <https://0x.0x.0x.0x> without base'
     test: url-origin.any.worker.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=2009602
+- product: firefox
+  results:
+  - subtest: ToASCII("xn--xn--a--gua.pt") V4; V2 (ignored)
+    test: IdnaTestV2.any.html
+  - subtest: ToASCII("xn--xn---epa") V4; V2 (ignored)
+    test: IdnaTestV2.any.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2029098
