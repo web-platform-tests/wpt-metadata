@@ -94,7 +94,7 @@ links:
   - test: failure.html
   - test: historical.any.html
   - test: historical.any.worker.html
-  - test: IdnaTestV2.window.html
+  - test: IdnaTestV2.any.html
   - test: percent-encoding.window.html
   - test: url-constructor.any.html?exclude=(file|javascript|mailto)
   - test: url-constructor.any.worker.html?exclude=(file|javascript|mailto)
@@ -239,13 +239,13 @@ links:
 - product: firefox
   results:
   - subtest: "ToASCII(\"\xE4.\xAD.c\") A4_2 (ignored)"
-    test: IdnaTestV2.window.html
+    test: IdnaTestV2.any.html
   - subtest: "ToASCII(\"a\u0308.\xAD.c\") A4_2 (ignored)"
-    test: IdnaTestV2.window.html
+    test: IdnaTestV2.any.html
   - subtest: "ToASCII(\"A\u0308.\xAD.C\") A4_2 (ignored)"
-    test: IdnaTestV2.window.html
+    test: IdnaTestV2.any.html
   - subtest: "ToASCII(\"\xC4.\xAD.C\") A4_2 (ignored)"
-    test: IdnaTestV2.window.html
+    test: IdnaTestV2.any.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1845552
 - product: firefox
   results:
