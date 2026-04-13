@@ -3011,3 +3011,87 @@ links:
   results:
   - test: viewport-page-print.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=2026603
+- product: firefox
+  results:
+  - subtest: Property scale value 'random(10, 100, infinity)'
+    test: random-computed.tentative.html
+  - subtest: Property scale value 'calc(10 + random(10, 100, infinity))'
+    test: random-computed.tentative.html
+  - subtest: Property scale value on pseudo element '::before' 'random(1, 300000)'
+    test: random-computed.tentative.html
+  - subtest: Property scale value on pseudo element '::before' 'random(--bar, 1, 300000)'
+    test: random-computed.tentative.html
+  - subtest: Property scale value on pseudo element '::before' 'random(element-shared,
+      1, 300000)'
+    test: random-computed.tentative.html
+  - subtest: Property scale value on pseudo element '::before' 'random(element-shared
+      --foo, 1, 300000)'
+    test: random-computed.tentative.html
+  - subtest: Property border-image-slice value 'random(10%, 30%)'
+    test: random-computed.tentative.html
+  - subtest: Property font-size value 'random(10px * 10% / 1%, 0%)'
+    test: random-computed.tentative.html
+  - subtest: Property --percent value 'random(10%, 30%)'
+    test: random-computed.tentative.html
+  - subtest: Property width value 'random(fixed random(1, 2), 10px, 100px)'
+    test: random-computed.tentative.html
+  - subtest: Property translate value 'random(fixed random(-2, -1), 10%, 100%)'
+    test: random-computed.tentative.html
+  - subtest: Property font-palette value 'palette-mix(in lch, --blue calc(90% * random(1,
+      0)), --yellow 10%)'
+    test: random-computed.tentative.html
+  - subtest: Property font-palette value 'palette-mix(in lch, --blue random(90%, 10%),
+      --yellow 10%)'
+    test: random-computed.tentative.html
+  - subtest: Property corner-shape value 'superellipse(random(3, 1))'
+    test: random-computed.tentative.html
+  - subtest: Shared by property 'math-depth' with values 'add(random(1, 30000))',
+      'add(random(element-shared, 1, 30000))'
+    test: random-computed.tentative.html
+  - subtest: Shared by property 'aspect-ratio' with values 'random(1, 3000000, 1)
+      / random(3000000, 9000000, 1)', 'random(element-shared, 1, 3000000, 1) / random(element-shared,
+      3000000, 9000000, 1)'
+    test: random-computed.tentative.html
+  - subtest: Shared by property 'filter' with values 'drop-shadow(random(1px, 300000px)
+      random(1px, 600000px) random(1px, 900000px) black)', 'drop-shadow(random(element-shared,
+      1px, 300000px) random(element-shared, 1px, 600000px) random(element-shared,
+      1px, 900000px) black)'
+    test: random-computed.tentative.html
+  - subtest: Shared by property 'font-palette' with values 'palette-mix(in lch, --blue
+      calc(90% * random(0, 1)), --yellow)', 'palette-mix(in lch, --blue calc(90% *
+      random(element-shared, 0, 1)), --yellow)'
+    test: random-computed.tentative.html
+  - subtest: Shared by property 'font-palette' with values 'palette-mix(in lch, --blue
+      random(10%, 90%), --yellow)', 'palette-mix(in lch, --blue random(element-shared,
+      10%, 90%), --yellow)'
+    test: random-computed.tentative.html
+  - subtest: Shared by property 'animation-timeline' with values 'view(random(1px,
+      300000px) random(300000px, 600000px))', 'view(random(element-shared, 1px, 300000px)
+      random(element-shared, 300000px, 600000px))'
+    test: random-computed.tentative.html
+  - subtest: "Shared by property 'color' with values 'light-dark(rgb(random(10, 30)\
+      \ random(10, 60) random(10, 90)),  rgb(random(30, 10) random(60, 10) random(90,\
+      \ 10)))', 'light-dark(rgb(random(element-shared, 10, 30) random(element-shared,\
+      \ 10, 60) random(element-shared, 10, 90)),\n                               \
+      \            rgb(random(element-shared, 30, 10) random(element-shared, 60, 10)\
+      \ random(element-shared, 90, 10)))'"
+    test: random-computed.tentative.html
+  - subtest: 'Nested in fixed value random() function used for custom property: ''random(a,
+      b)'''
+    test: random-computed.tentative.html
+  - subtest: random() in different custom properties on the same element should not
+      be shared
+    test: random-computed.tentative.html
+  - subtest: 'Shared between elements within a property - shorthand: random(element-shared,
+      a, b)'
+    test: random-computed.tentative.html
+  - subtest: Custom property with random() inside transform() should not have 'fixed'
+    test: random-computed.tentative.html
+  - subtest: random() with percentages inside multiple nested functions should have
+      'fixed'
+    test: random-computed.tentative.html
+  - subtest: random(--identifier, ...) should be different between elements
+    test: random-computed.tentative.html
+  - subtest: random() shared by custom property in var()
+    test: random-computed.tentative.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2031432
