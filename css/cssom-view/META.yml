@@ -568,3 +568,16 @@ links:
   - subtest: 'Window.scrollBy(smooth): promise behavior'
     test: window-scroll-promises.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=2026966
+- product: firefox
+  results:
+  - subtest: Element.scrollTo uninterrupted by an unrelated non-promise scroll
+    test: element-scroll-promise-interruption.html
+  - subtest: Element.scrollBy uninterrupted by an unrelated non-promise scroll
+    test: element-scroll-promise-interruption.html
+  - subtest: 'Element.scrollTo: interrupted by smooth scroll'
+    test: element-scroll-promise-interruption.html
+  - subtest: 'Element.scrollBy: interrupted by smooth scroll'
+    test: element-scroll-promise-interruption.html
+  - subtest: 'Element.scrollIntoView: interrupted by smooth scroll'
+    test: element-scroll-promise-interruption.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2031866
