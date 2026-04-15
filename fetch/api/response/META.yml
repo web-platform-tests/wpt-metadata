@@ -144,3 +144,16 @@ links:
   - subtest: Check response clone use structureClone for teed ReadableStreams (Float16Arraychunk)
     test: response-clone.any.serviceworker.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1978135
+- product: firefox
+  results:
+  - subtest: Validate form data - onePartWithTransportPadding
+    test: response-form-data.html
+  - subtest: Validate form data - twoPartsWithTransportPadding
+    test: response-form-data.html
+  - subtest: Validate buggy form data - empty
+    test: response-form-data.html
+  - subtest: Validate buggy form data - dashes
+    test: response-form-data.html
+  - subtest: Empty form data
+    test: response-form-data.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2032004
