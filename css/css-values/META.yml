@@ -3095,3 +3095,50 @@ links:
   - subtest: random() shared by custom property in var()
     test: random-computed.tentative.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=2031432
+- product: firefox
+  results:
+  - subtest: Property scale value 'random(--foo, 3, 13)'
+    test: random-computed.tentative.html
+  - subtest: Property scale value 'random(--foo, 4, 14)'
+    test: random-computed.tentative.html
+  - subtest: Property scale value 'random(--foo, 20, 30, 5)'
+    test: random-computed.tentative.html
+  - subtest: Property scale value 'random(--foo, 30, 40, 5)'
+    test: random-computed.tentative.html
+  - subtest: Property scale value on pseudo element '::before' 'random(--foo, 1, 300000)'
+    test: random-computed.tentative.html
+  - subtest: Property translate value 'random(--identifier, 10%, 100%)'
+    test: random-computed.tentative.html
+  - subtest: Test collision with property name and identifier
+    test: random-computed.tentative.html
+  - subtest: random() should not be allowed in @font-palette-values base-palette descriptor
+    test: random-in-descriptors.tentative.html
+  - subtest: random() with different property names should not be shared in if() declaration
+      value
+    test: random-in-if.tentative.html
+  - subtest: e.style['width'] = "random(0px, 100px, 3px)" should set the property
+      value
+    test: random-serialize.tentative.html
+  - subtest: e.style['width'] = "random(fixed 0.5, 0px, 100px, 3px)" should set the
+      property value
+    test: random-serialize.tentative.html
+  - subtest: e.style['width'] = "random(auto, 0px, 100px, 3px)" should set the property
+      value
+    test: random-serialize.tentative.html
+  - subtest: e.style['width'] = "random(--foo, 0px, 100px, 3px)" should set the property
+      value
+    test: random-serialize.tentative.html
+  - subtest: e.style['width'] = "random(10px, 20%)" should set the property value
+    test: random-serialize.tentative.html
+  - subtest: e.style['math-depth'] = "add(random(0, 3))" should set the property value
+    test: random-serialize.tentative.html
+  - subtest: e.style['color'] = "rgb(random(0, 255) random(0, 255) random(0, 255))"
+      should set the property value
+    test: random-serialize.tentative.html
+  - subtest: e.style['color'] = "rgb(from blue r g random(b, (150 + b)))" should set
+      the property value
+    test: random-serialize.tentative.html
+  - subtest: e.style['color'] = "color-mix(in srgb, rgb(random(0, 255) 0 random(0,
+      255)), rgb(0 random(0, 255) 0))" should set the property value
+    test: random-serialize.tentative.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2031924
