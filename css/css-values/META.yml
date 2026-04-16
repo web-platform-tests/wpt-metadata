@@ -3142,3 +3142,9 @@ links:
       255)), rgb(0 random(0, 255) 0))" should set the property value
     test: random-serialize.tentative.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=2031924
+- product: firefox
+  results:
+  - subtest: '''--x: image-set(if(style(--condition-val >= attr(data-foo type(*))):
+      url(https://does-not-exist.test/404.png);))'' with data-foo="3"'
+    test: attr-security.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2032489
