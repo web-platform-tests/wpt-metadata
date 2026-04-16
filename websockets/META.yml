@@ -107,3 +107,9 @@ links:
       but close it in pagehide.
     test: back-forward-cache-with-open-websocket-connection-and-close-it-in-pagehide.window.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=2003986
+- product: firefox
+  results:
+  - subtest: Testing BFCache support for page with open WebSocket connection, where
+      the WebSocket connection is closed on BFCache.
+    test: back-forward-cache-closes-open-websocket-connection.tentative.window.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2032491
