@@ -352,5 +352,40 @@ links:
     test: idlharness.https.sub.any.sharedworker.html
   - subtest: 'WebTransport interface: webTransport must inherit property "protocol"
       with the proper type'
-    test: idlharness.https.sub.any.sharedworker.html 
+    test: idlharness.https.sub.any.sharedworker.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=2025151
+- product: firefox
+  results:
+  - subtest: Datagrams are echoed successfully
+    test: datagrams.https.any.sharedworker.html
+  - subtest: Sending and receiving datagrams is ready to use before session is established
+    test: datagrams.https.any.sharedworker.html
+  - subtest: Datagram MaxAge getters/setters work correctly
+    test: datagrams.https.any.sharedworker.html
+  - subtest: Datagrams are echoed successfully
+    test: datagrams.https.any.html
+  - subtest: Sending and receiving datagrams is ready to use before session is established
+    test: datagrams.https.any.html
+  - subtest: Datagram MaxAge getters/setters work correctly
+    test: datagrams.https.any.html
+  - subtest: Datagrams are echoed successfully
+    test: datagrams.https.any.serviceworker.html
+  - subtest: Sending and receiving datagrams is ready to use before session is established
+    test: datagrams.https.any.serviceworker.html
+  - subtest: Datagram MaxAge getters/setters work correctly
+    test: datagrams.https.any.serviceworker.html
+  - subtest: Datagrams are echoed successfully
+    test: datagrams.https.any.worker.html
+  - subtest: Sending and receiving datagrams is ready to use before session is established
+    test: datagrams.https.any.worker.html
+  - subtest: Datagram MaxAge getters/setters work correctly
+    test: datagrams.https.any.worker.html
+  - subtest: WebTransportDatagramDuplexStream#writable is removed
+    test: historical.https.sub.any.html
+  - subtest: WebTransportDatagramDuplexStream#writable is removed
+    test: historical.https.sub.any.sharedworker.html
+  - subtest: WebTransportDatagramDuplexStream#writable is removed
+    test: historical.https.sub.any.serviceworker.html
+  - subtest: WebTransportDatagramDuplexStream#writable is removed
+    test: historical.https.sub.any.worker.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2032999
