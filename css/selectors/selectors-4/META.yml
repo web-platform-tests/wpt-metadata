@@ -1,22 +1,29 @@
 links:
-    - label: interop-2026-dialogs-and-popovers
-      results:
-        - test: details-open-pseudo-001.html
-        - test: details-open-pseudo-002.html
-        - test: details-open-pseudo-003.html
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=2029358
-      results:
-        - test: lang-singleton-subtag-matching.html
-          subtest: :lang(fr-x) matches lang="fr-x" and lang="fr-x-xenomorph" (singleton "x" matches)
-        - test: lang-singleton-subtag-matching.html
-          subtest: :lang(fr-x) matches the correct elements
-        - test: lang-singleton-subtag-matching.html
-          subtest: :lang(fr-xenomorph) only matches lang="fr-xenomorph" (not lang="fr-x-xenomorph")
-        - test: lang-singleton-subtag-matching.html
-          subtest: :lang(zh-x) matches both lang="zh-x" and lang="zh-x-foobar"
-    - product: chrome
-      url: https://crbug.com/40811938
-      results:
-        - test: lang-singleton-subtag-matching.html
-          subtest: :lang(fr-xenomorph) only matches lang="fr-xenomorph" (not lang="fr-x-xenomorph")
+- label: interop-2026-dialogs-and-popovers
+  results:
+  - test: details-open-pseudo-001.html
+  - test: details-open-pseudo-002.html
+  - test: details-open-pseudo-003.html
+- product: firefox
+  results:
+  - subtest: :lang(fr-x) matches lang="fr-x" and lang="fr-x-xenomorph" (singleton
+      "x" matches)
+    test: lang-singleton-subtag-matching.html
+  - subtest: :lang(fr-x) matches the correct elements
+    test: lang-singleton-subtag-matching.html
+  - subtest: :lang(fr-xenomorph) only matches lang="fr-xenomorph" (not lang="fr-x-xenomorph")
+    test: lang-singleton-subtag-matching.html
+  - subtest: :lang(zh-x) matches both lang="zh-x" and lang="zh-x-foobar"
+    test: lang-singleton-subtag-matching.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2029358
+- product: chrome
+  results:
+  - subtest: :lang(fr-xenomorph) only matches lang="fr-xenomorph" (not lang="fr-x-xenomorph")
+    test: lang-singleton-subtag-matching.html
+  url: https://crbug.com/40811938
+- product: firefox
+  results:
+  - subtest: :lang(fr-x) matches lang="fr-x" and lang="fr-x-standard" (singleton "x"
+      matches)
+    test: lang-singleton-subtag-matching.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2033707
