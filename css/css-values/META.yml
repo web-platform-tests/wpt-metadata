@@ -3282,3 +3282,38 @@ links:
       the property value
     test: random-serialize.tentative.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=2034341
+- product: firefox
+  results:
+  - subtest: progress(sign(-10px) * 10px, (10px - 10px), 10px * progress(1deg, 0deg,
+      1deg)) should be used-value-equivalent to 0
+    test: progress-computed.html
+  - subtest: calc(progress(100px, 0px, 50px) * 10px + 100px) should be used-value-equivalent
+      to 110px
+    test: progress-computed.html
+  - subtest: calc(progress(100, 0, sign(50px))) should be used-value-equivalent to
+      1
+    test: progress-computed.html
+  - subtest: progress(1000em, 10em, 110em) should be used-value-equivalent to 1
+    test: progress-computed.html
+  - subtest: scale(progress(1000em, 10rem, 110em)) should be used-value-equivalent
+      to scale(1)
+    test: progress-computed.html
+  - subtest: calc(progress(sign(1001em - 10lh * progress(100px, 2rex, 10ex)) * 20em,
+      2rem, 12em) * 10) should be used-value-equivalent to 10
+    test: progress-computed.html
+  - subtest: calc(progress(sign(1001em - 10lh * progress(100px, 2rex, 10ex)) * 20em,
+      2rem, 12em) * 30) should be used-value-equivalent to 30
+    test: progress-computed.html
+  - subtest: calc(progress(sign(1001em - 10lh * progress(100px, 2rex, 10ex)) * 20em,
+      2rem, 12em) / 4) should be used-value-equivalent to 0.25
+    test: progress-computed.html
+  - subtest: calc(progress(sign(1001em - 10lh * progress(100px, 2rex, 10ex)) * 20em,
+      2rem, 12em) * 4) should be used-value-equivalent to 4
+    test: progress-computed.html
+  - subtest: calc(progress(sign(1001em - 10lh * progress(100px, 2rex, 10ex)) * 20em,
+      2rem, 12em) * 2) should be used-value-equivalent to 2
+    test: progress-computed.html
+  - subtest: calc(50% - 0px * clamp(0, progress(0cqw, 0px, 0px), 1)) should be used-value-equivalent
+      to 50px
+    test: progress-computed.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2034454
