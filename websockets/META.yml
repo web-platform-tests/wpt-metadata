@@ -113,3 +113,12 @@ links:
       the WebSocket connection is closed on BFCache.
     test: back-forward-cache-closes-open-websocket-connection.tentative.window.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=2032491
+- product: firefox
+  results:
+  - subtest: opening an insecure WebSocket in a secure context should fail
+    test: mixed-content.https.any.serviceworker.html
+  - subtest: opening an insecure WebSocket in a secure context should fail
+    test: mixed-content.https.any.worker.html
+  - subtest: opening an insecure WebSocket in a secure context should fail
+    test: mixed-content.https.any.sharedworker.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2034642
