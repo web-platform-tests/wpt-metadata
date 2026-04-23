@@ -3148,3 +3148,137 @@ links:
       url(https://does-not-exist.test/404.png);))'' with data-foo="3"'
     test: attr-security.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=2032489
+- product: firefox
+  results:
+  - subtest: Property scale value 'random(--foo element-scoped, 2, 12)'
+    test: random-computed.tentative.html
+  - subtest: Property scale value 'random(--foo element-scoped, 10, 20, 5)'
+    test: random-computed.tentative.html
+  - subtest: Property scale value on pseudo element '::before' 'random(--bar element-scoped,
+      1, 300000)'
+    test: random-computed.tentative.html
+  - subtest: Property scale value on pseudo element '::before' 'random(--ident property-index-scoped,
+      1, 300000)'
+    test: random-computed.tentative.html
+  - subtest: Shared by property 'color' with values 'color-mix(in srgb, rgb(from blue
+      random(10, 30) random(g, g + 30) random(b, b)), rgb(random(10, 90) 0 0))', 'color-mix(in
+      srgb, rgb(from blue random(--ident property-index-scoped, 10, 30) random(--ident
+      property-index-scoped, g, g + 30) random(--ident property-index-scoped, b, b)),
+      rgb(random(--ident property-index-scoped, 10, 90) 0 0))'
+    test: random-computed.tentative.html
+  - subtest: Shared by property 'math-depth' with values 'add(random(1, 30000))',
+      'add(random(--ident property-index-scoped, 1, 30000))'
+    test: random-computed.tentative.html
+  - subtest: Shared by property 'aspect-ratio' with values 'random(1, 3000000, 1)
+      / random(3000000, 9000000, 1)', 'random(--ident property-index-scoped, 1, 3000000,
+      1) / random(--ident property-index-scoped, 3000000, 9000000, 1)'
+    test: random-computed.tentative.html
+  - subtest: Shared by property 'filter' with values 'drop-shadow(random(1px, 300000px)
+      random(1px, 600000px) random(1px, 900000px) black)', 'drop-shadow(random(--ident
+      property-index-scoped, 1px, 300000px) random(--ident property-index-scoped,
+      1px, 600000px) random(--ident property-index-scoped, 1px, 900000px) black)'
+    test: random-computed.tentative.html
+  - subtest: Shared by property 'font-variation-settings' with values '"wght" random(100,
+      900)', '"wght" random(--ident property-index-scoped, 100, 900)'
+    test: random-computed.tentative.html
+  - subtest: Shared by property 'font-style' with values 'oblique random(10deg, 90deg)',
+      'oblique random(--ident property-index-scoped, 10deg, 90deg)'
+    test: random-computed.tentative.html
+  - subtest: Shared by property 'font-palette' with values 'palette-mix(in lch, --blue
+      calc(90% * random(0, 1)), --yellow)', 'palette-mix(in lch, --blue calc(90% *
+      random(--ident property-index-scoped, 0, 1)), --yellow)'
+    test: random-computed.tentative.html
+  - subtest: Shared by property 'font-palette' with values 'palette-mix(in lch, --blue
+      random(10%, 90%), --yellow)', 'palette-mix(in lch, --blue random(--ident property-index-scoped,
+      10%, 90%), --yellow)'
+    test: random-computed.tentative.html
+  - subtest: Shared by property 'animation-timeline' with values 'view(random(1px,
+      300000px) random(300000px, 600000px))', 'view(random(--ident property-index-scoped,
+      1px, 300000px) random(--ident property-index-scoped, 300000px, 600000px))'
+    test: random-computed.tentative.html
+  - subtest: "Shared by property 'color' with values 'light-dark(rgb(random(10, 30)\
+      \ random(10, 60) random(10, 90)),  rgb(random(30, 10) random(60, 10) random(90,\
+      \ 10)))', 'light-dark(rgb(random(--ident property-index-scoped, 10, 30) random(--ident\
+      \ property-index-scoped, 10, 60) random(--ident property-index-scoped, 10, 90)),\n\
+      \                                           rgb(random(--ident property-index-scoped,\
+      \ 30, 10) random(--ident property-index-scoped, 60, 10) random(--ident property-index-scoped,\
+      \ 90, 10)))'"
+    test: random-computed.tentative.html
+  - subtest: 'Shared by property name and value index: random(--ident property-index-scoped,
+      a, b)'
+    test: random-computed.tentative.html
+  - subtest: 'Shared by name within an element: ''random(--identifier element-scoped,
+      a, b)'''
+    test: random-computed.tentative.html
+  - subtest: 'Shared between elements within a property - shorthand: random(--ident
+      property-index-scoped, a, b)'
+    test: random-computed.tentative.html
+  - subtest: 'Shared globally: random(--identifier, a, b)'
+    test: random-computed.tentative.html
+  - subtest: 'Shared by property - shorthand and longhand: random(--ident property-index-scoped,
+      a, b)'
+    test: random-computed.tentative.html
+  - subtest: 'Shared by property - logical and physical property: random(--ident property-index-scoped,
+      a, b)'
+    test: random-computed.tentative.html
+  - subtest: random(--identifier element-scoped, ...) should be different between
+      elements
+    test: random-computed.tentative.html
+  - subtest: e.style['width'] = "random(--foo element-scoped, 0px, 100px)" should
+      set the property value
+    test: random-serialize.tentative.html
+  - subtest: e.style['width'] = "random(--foo element-scoped, 0px, 100px, 3px)" should
+      set the property value
+    test: random-serialize.tentative.html
+  - subtest: e.style['width'] = "random(--foo, 10px, 20%)" should set the property
+      value
+    test: random-serialize.tentative.html
+  - subtest: e.style['width'] = "random(--foo, 100px, 0px)" should set the property
+      value
+    test: random-serialize.tentative.html
+  - subtest: e.style['width'] = "random(--foo, -100px, -10px)" should set the property
+      value
+    test: random-serialize.tentative.html
+  - subtest: e.style['width'] = "random(--foo, -100px, -10px, -5px)" should set the
+      property value
+    test: random-serialize.tentative.html
+  - subtest: e.style['width'] = "random(--foo, 1em, 200rem)" should set the property
+      value
+    test: random-serialize.tentative.html
+  - subtest: e.style['width'] = "random(--foo, 10 * 100px, 200em / 2)" should set
+      the property value
+    test: random-serialize.tentative.html
+  - subtest: e.style['width'] = "calc(2 * random(--foo, 0px, 100px))" should set the
+      property value
+    test: random-serialize.tentative.html
+  - subtest: e.style['math-depth'] = "add(random(--foo, 0, 3))" should set the property
+      value
+    test: random-serialize.tentative.html
+  - subtest: e.style['color'] = "rgb(random(--foo, 0, 255) random(--foo, 0, 255) random(--foo,
+      0, 255))" should set the property value
+    test: random-serialize.tentative.html
+  - subtest: e.style['color'] = "rgb(from blue r g random(--foo, b, (150 + b)))" should
+      set the property value
+    test: random-serialize.tentative.html
+  - subtest: e.style['color'] = "color-mix(in srgb, rgb(random(--foo, 0, 255) 0 random(--foo,
+      0, 255)), rgb(0 random(--foo, 0, 255) 0))" should set the property value
+    test: random-serialize.tentative.html
+  - subtest: e.style['max-lines'] = "random(--foo, 25, 50)" should set the property
+      value
+    test: random-serialize.tentative.html
+  - subtest: e.style['max-lines'] = "random(--foo, 25, 50, 5)" should set the property
+      value
+    test: random-serialize.tentative.html
+  - subtest: e.style['scale'] = "random(--foo, 0.5, 2.5)" should set the property
+      value
+    test: random-serialize.tentative.html
+  - subtest: e.style['scale'] = "random(--foo, 0.5, 2.5, 0.1)" should set the property
+      value
+    test: random-serialize.tentative.html
+  - subtest: e.style['rotate'] = "random(--foo, 25deg, 1turn, 5deg)" should set the
+      property value
+    test: random-serialize.tentative.html
+  - subtest: e.style['transition-delay'] = "random(--foo, 25ms, 50s, 5s)" should set
+      the property value
+    test: random-serialize.tentative.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2034341
