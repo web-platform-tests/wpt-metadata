@@ -4,3 +4,10 @@ links:
   - test: url-image-cross-origin-anonymous.sub.html
   - test: url-image-cross-origin-use-credentials.sub.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=2033809
+- product: firefox
+  results:
+  - subtest: cross-origin(use-credentials) blocks cross-origin font loading without
+      ACAC
+    test: url-font-cross-origin-use-credentials-negative.sub.html
+  - test: url-image-set-cross-origin-anonymous.sub.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2035682
