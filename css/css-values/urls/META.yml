@@ -1,10 +1,99 @@
 links:
-    - product: chrome
-      url: https://bugs.chromium.org/p/chromium/issues/detail?id=1219803
-      results:
-        - test: '*'
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1730356
-      results:
-        - test: resolve-relative-to-base.sub.html
-          status: CRASH
+- product: chrome
+  results:
+  - test: '*'
+  url: https://bugs.chromium.org/p/chromium/issues/detail?id=1219803
+- product: firefox
+  results:
+  - status: CRASH
+    test: resolve-relative-to-base.sub.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1730356
+- product: firefox
+  results:
+  - subtest: cross-origin(anonymous) in @font-face src
+    test: url-request-modifiers-font-face-parsing.html
+  - subtest: referrer-policy(no-referrer) in @font-face src
+    test: url-request-modifiers-font-face-parsing.html
+  - subtest: integrity() in @font-face src
+    test: url-request-modifiers-font-face-parsing.html
+  - subtest: multiple modifiers in @font-face src
+    test: url-request-modifiers-font-face-parsing.html
+  - subtest: modifiers with format() in @font-face src
+    test: url-request-modifiers-font-face-parsing.html
+  - subtest: e.style['background-image'] = "url(\"http://web-platform.test:8000/css/support/1x1-green.png\"
+      cross-origin(anonymous))" should set the property value
+    test: url-request-modifiers-serialize.sub.html
+  - subtest: e.style['background-image'] = "url(\"http://web-platform.test:8000/css/support/1x1-green.png\"
+      cross-origin(use-credentials))" should set the property value
+    test: url-request-modifiers-serialize.sub.html
+  - subtest: e.style['background-image'] = "url(\"http://web-platform.test:8000/css/support/1x1-green.png\"
+      integrity(\"sha384-foobar\"))" should set the property value
+    test: url-request-modifiers-serialize.sub.html
+  - subtest: e.style['background-image'] = "url(\"http://web-platform.test:8000/css/support/1x1-green.png\"
+      integrity(\"\"))" should set the property value
+    test: url-request-modifiers-serialize.sub.html
+  - subtest: e.style['background-image'] = "url(\"http://web-platform.test:8000/css/support/1x1-green.png\"
+      referrer-policy(no-referrer))" should set the property value
+    test: url-request-modifiers-serialize.sub.html
+  - subtest: e.style['background-image'] = "url(\"http://web-platform.test:8000/css/support/1x1-green.png\"
+      referrer-policy(no-referrer-when-downgrade))" should set the property value
+    test: url-request-modifiers-serialize.sub.html
+  - subtest: e.style['background-image'] = "url(\"http://web-platform.test:8000/css/support/1x1-green.png\"
+      referrer-policy(same-origin))" should set the property value
+    test: url-request-modifiers-serialize.sub.html
+  - subtest: e.style['background-image'] = "url(\"http://web-platform.test:8000/css/support/1x1-green.png\"
+      referrer-policy(origin))" should set the property value
+    test: url-request-modifiers-serialize.sub.html
+  - subtest: e.style['background-image'] = "url(\"http://web-platform.test:8000/css/support/1x1-green.png\"
+      referrer-policy(strict-origin))" should set the property value
+    test: url-request-modifiers-serialize.sub.html
+  - subtest: e.style['background-image'] = "url(\"http://web-platform.test:8000/css/support/1x1-green.png\"
+      referrer-policy(origin-when-cross-origin))" should set the property value
+    test: url-request-modifiers-serialize.sub.html
+  - subtest: e.style['background-image'] = "url(\"http://web-platform.test:8000/css/support/1x1-green.png\"
+      referrer-policy(strict-origin-when-cross-origin))" should set the property value
+    test: url-request-modifiers-serialize.sub.html
+  - subtest: e.style['background-image'] = "url(\"http://web-platform.test:8000/css/support/1x1-green.png\"
+      referrer-policy(unsafe-url))" should set the property value
+    test: url-request-modifiers-serialize.sub.html
+  - subtest: e.style['background-image'] = "url(\"http://web-platform.test:8000/css/support/1x1-green.png\"
+      cross-origin(anonymous) integrity(\"sha384-foobar\"))" should set the property
+      value
+    test: url-request-modifiers-serialize.sub.html
+  - subtest: e.style['background-image'] = "url(\"http://web-platform.test:8000/css/support/1x1-green.png\"
+      integrity(\"sha384-foobar\") cross-origin(anonymous))" should set the property
+      value
+    test: url-request-modifiers-serialize.sub.html
+  - subtest: e.style['background-image'] = "url(\"http://web-platform.test:8000/css/support/1x1-green.png\"
+      integrity(\"sha384-foobar\") referrer-policy(no-referrer))" should set the property
+      value
+    test: url-request-modifiers-serialize.sub.html
+  - subtest: e.style['background-image'] = "url(\"http://web-platform.test:8000/css/support/1x1-green.png\"
+      referrer-policy(no-referrer) integrity(\"sha384-foobar\"))" should set the property
+      value
+    test: url-request-modifiers-serialize.sub.html
+  - subtest: e.style['background-image'] = "url(\"http://web-platform.test:8000/css/support/1x1-green.png\"
+      cross-origin(anonymous) referrer-policy(no-referrer))" should set the property
+      value
+    test: url-request-modifiers-serialize.sub.html
+  - subtest: e.style['background-image'] = "url(\"http://web-platform.test:8000/css/support/1x1-green.png\"
+      referrer-policy(no-referrer) cross-origin(anonymous))" should set the property
+      value
+    test: url-request-modifiers-serialize.sub.html
+  - subtest: e.style['background-image'] = "url(\"http://web-platform.test:8000/css/support/1x1-green.png\"
+      cross-origin(anonymous) integrity(\"sha384-foobar\") referrer-policy(no-referrer))"
+      should set the property value
+    test: url-request-modifiers-serialize.sub.html
+  - subtest: e.style['background-image'] = "url(\"http://web-platform.test:8000/css/support/1x1-green.png\"
+      integrity(\"sha384-foobar\") referrer-policy(no-referrer) cross-origin(anonymous))"
+      should set the property value
+    test: url-request-modifiers-serialize.sub.html
+  - subtest: e.style['background-image'] = "url(\"http://web-platform.test:8000/css/support/1x1-green.png\"
+      referrer-policy(no-referrer) cross-origin(anonymous) integrity(\"sha384-foobar\"))"
+      should set the property value
+    test: url-request-modifiers-serialize.sub.html
+  - subtest: e.style['background-image'] = "url(\"http://web-platform.test:8000/css/support/1x1-green.png\"
+      referrer-policy(no-referrer) integrity(\"sha384-foobar\") cross-origin(anonymous))"
+      should set the property value
+    test: url-request-modifiers-serialize.sub.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2037314
