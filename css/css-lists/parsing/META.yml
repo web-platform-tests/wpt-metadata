@@ -1,43 +1,38 @@
 links:
-- product: firefox
-  results:
-  - subtest: Property counter-increment value 'myCounter calc(10 + (sign(2cqw - 10px)
-      * 5))'
-    test: counter-increment-computed.html
-  - subtest: Property counter-increment value 'myCounter calc(10 + (sign(2cqw - 10px)
-      * 10)) otherCounter calc(15 + (sign(2cqw - 10px) * 5))'
-    test: counter-increment-computed.html
-  - subtest: Property counter-reset value 'myCounter calc(10 + (sign(2cqw - 10px)
-      * 5))'
-    test: counter-reset-computed.html
-  - subtest: Property counter-reset value 'myCounter calc(10 + (sign(2cqw - 10px)
-      * 5)) otherCounter calc(15 + (sign(2cqw - 10px) * 5))'
-    test: counter-reset-computed.html
-  - subtest: Property counter-set value 'myCounter calc(10 + (sign(2cqw - 10px) *
-      5))'
-    test: counter-set-computed.html
-  - subtest: Property counter-set value 'myCounter calc(10 + (sign(2cqw - 10px) *
-      5)) otherCounter calc(15 + (sign(2cqw - 10px) * 5))'
-    test: counter-set-computed.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1915980
-- product: firefox
-  results:
-  - subtest: e.style['counter-increment'] = "section calc(-2.5)" should set the property
-      value
-    test: counter-increment-valid.html
-  - subtest: e.style['counter-increment'] = "section calc(10 + (5 * sign(2cqw - 10px)))"
-      should set the property value
-    test: counter-increment-valid.html
-  - subtest: e.style['counter-reset'] = "section calc(-2.5)" should set the property
-      value
-    test: counter-reset-valid.html
-  - subtest: e.style['counter-reset'] = "section calc(10 + (5 * sign(2cqw - 10px)))"
-      should set the property value
-    test: counter-reset-valid.html
-  - subtest: e.style['counter-set'] = "section calc(-2.5)" should set the property
-      value
-    test: counter-set-valid.html
-  - subtest: e.style['counter-set'] = "section calc(10 + (5 * sign(2cqw - 10px)))"
-      should set the property value
-    test: counter-set-valid.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1939776
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1915980
+      results:
+        - test: counter-increment-computed.html
+          subtest: Property counter-increment value 'myCounter calc(10 + (sign(2cqw - 10px) * 5))'
+        - test: counter-increment-computed.html
+          subtest: Property counter-increment value 'myCounter calc(10 + (sign(2cqw - 10px) * 10)) otherCounter calc(15 + (sign(2cqw - 10px) * 5))'
+        - test: counter-reset-computed.html
+          subtest: Property counter-reset value 'myCounter calc(10 + (sign(2cqw - 10px) * 5))'
+        - test: counter-reset-computed.html
+          subtest: Property counter-reset value 'myCounter calc(10 + (sign(2cqw - 10px) * 5)) otherCounter calc(15 + (sign(2cqw - 10px) * 5))'
+        - test: counter-set-computed.html
+          subtest: Property counter-set value 'myCounter calc(10 + (sign(2cqw - 10px) * 5))'
+        - test: counter-set-computed.html
+          subtest: Property counter-set value 'myCounter calc(10 + (sign(2cqw - 10px) * 5)) otherCounter calc(15 + (sign(2cqw - 10px) * 5))'
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1939776
+      results:
+        - test: counter-increment-valid.html
+          subtest: e.style['counter-increment'] = "section calc(-2.5)" should set the property value
+        - test: counter-increment-valid.html
+          subtest: e.style['counter-increment'] = "section calc(10 + (5 * sign(2cqw - 10px)))" should set the property value
+        - test: counter-reset-valid.html
+          subtest: e.style['counter-reset'] = "section calc(-2.5)" should set the property value
+        - test: counter-reset-valid.html
+          subtest: e.style['counter-reset'] = "section calc(10 + (5 * sign(2cqw - 10px)))" should set the property value
+        - test: counter-set-valid.html
+          subtest: e.style['counter-set'] = "section calc(-2.5)" should set the property value
+        - test: counter-set-valid.html
+          subtest: e.style['counter-set'] = "section calc(10 + (5 * sign(2cqw - 10px)))" should set the property value
+    - product: chrome
+      url: https://crbug.com/510840009
+      results:
+        - test: counter-increment-computed.html
+          subtest: Property counter-increment value 'a 1 b 2 c 3 d 4 e 5'
+        - test: counter-increment-computed.html
+          subtest: Property counter-increment value 'a 1 b 2 c 3 a 4 b 5'
