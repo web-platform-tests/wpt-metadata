@@ -91,3 +91,12 @@ links:
   - subtest: SVG path 'd' attribute by animation with accumulate='sum'
     test: animate-path-by-animation-accumulate.tentative.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=2016047
+- product: firefox
+  results:
+  - subtest: SVG path 'd' additive animation with both-empty over non-empty base
+    test: animate-path-additive-sum-both-empty-over-base.tentative.html
+  - subtest: SVG path 'd' by-animation with empty base value
+    test: animate-path-by-animation-empty-base.tentative.html
+  - subtest: SVG path 'd' from-by animation with both values empty
+    test: animate-path-from-by-animation-both-empty.tentative.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2037748
