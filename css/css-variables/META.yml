@@ -136,3 +136,10 @@ links:
   - subtest: Using revert-rule to revert to a value containing var()
     test: revert-rule-to-var.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=2017307
+- product: firefox
+  results:
+  - subtest: CSS-wide keyword `revert-layer` after var() substitution
+    test: variable-css-wide-keywords-after-substitution.html
+  - subtest: revert-layer after var() substitution takes effect on the cascade
+    test: variable-css-wide-keywords-after-substitution.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2037738
