@@ -38,3 +38,675 @@ links:
   - subtest: .grid-lanes 6
     test: row-minimum-contribution-baseline-shim.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=2026240
+- product: firefox
+  results:
+  - subtest: 'auto min item ''grid-lanes'' with: grid-template-columns: 0fr;'
+    test: column-flex-track-intrinsic-sizes.html
+  - subtest: 'auto min item ''grid-lanes'' with: grid-template-columns: 1fr;'
+    test: column-flex-track-intrinsic-sizes.html
+  - subtest: 'auto min item ''grid-lanes'' with: grid-template-columns: 2fr;'
+    test: column-flex-track-intrinsic-sizes.html
+  - subtest: 'auto min item ''grid-lanes'' with: grid-template-columns: minmax(0,
+      0fr);'
+    test: column-flex-track-intrinsic-sizes.html
+  - subtest: 'auto min item ''grid-lanes'' with: grid-template-columns: minmax(0,
+      .5fr);'
+    test: column-flex-track-intrinsic-sizes.html
+  - subtest: 'auto min item ''grid-lanes'' with: grid-template-columns: minmax(0,
+      1fr);'
+    test: column-flex-track-intrinsic-sizes.html
+  - subtest: 'auto min item ''grid-lanes'' with: grid-template-columns: minmax(0,
+      2fr);'
+    test: column-flex-track-intrinsic-sizes.html
+  - subtest: 'auto min item ''grid-lanes'' with: grid-template-columns: minmax(75px,
+      1fr);'
+    test: column-flex-track-intrinsic-sizes.html
+  - subtest: 'auto min item ''grid-lanes'' with: grid-template-columns: 0fr 0fr;'
+    test: column-flex-track-intrinsic-sizes.html
+  - subtest: 'auto min item ''grid-lanes'' with: grid-template-columns: 0fr 1fr;'
+    test: column-flex-track-intrinsic-sizes.html
+  - subtest: 'auto min item ''grid-lanes'' with: grid-template-columns: 1fr 0fr;'
+    test: column-flex-track-intrinsic-sizes.html
+  - subtest: 'auto min item ''grid-lanes'' with: grid-template-columns: 1fr 1fr;'
+    test: column-flex-track-intrinsic-sizes.html
+  - subtest: 'auto min item ''grid-lanes'' with: grid-template-columns: 1fr 3fr;'
+    test: column-flex-track-intrinsic-sizes.html
+  - subtest: 'auto min item ''grid-lanes'' with: grid-template-columns: 0fr 0fr 1fr;'
+    test: column-flex-track-intrinsic-sizes.html
+  - subtest: 'auto min item ''grid-lanes'' with: grid-template-columns: minmax(0,
+      0fr) minmax(0, 0fr);'
+    test: column-flex-track-intrinsic-sizes.html
+  - subtest: 'auto min item ''grid-lanes'' with: grid-template-columns: minmax(0,
+      0fr) minmax(0, 1fr);'
+    test: column-flex-track-intrinsic-sizes.html
+  - subtest: 'auto min item ''grid-lanes'' with: grid-template-columns: minmax(15px,
+      0fr) minmax(0, 1fr);'
+    test: column-flex-track-intrinsic-sizes.html
+  - subtest: 'auto min item ''grid-lanes'' with: grid-template-columns: minmax(20px,
+      1fr) minmax(0, 1fr);'
+    test: column-flex-track-intrinsic-sizes.html
+  - subtest: 'auto min item ''grid-lanes'' with: grid-template-columns: minmax(40px,
+      1fr) minmax(0, 1fr);'
+    test: column-flex-track-intrinsic-sizes.html
+  - subtest: 'auto min item ''grid-lanes'' with: grid-template-columns: 0fr minmax(0,
+      0fr);'
+    test: column-flex-track-intrinsic-sizes.html
+  - subtest: 'auto min item ''grid-lanes'' with: grid-template-columns: 0fr minmax(0,
+      1fr);'
+    test: column-flex-track-intrinsic-sizes.html
+  - subtest: 'auto min item ''grid-lanes'' with: grid-template-columns: 1fr minmax(0,
+      1fr);'
+    test: column-flex-track-intrinsic-sizes.html
+  - subtest: 'auto min item ''grid-lanes'' with: grid-template-columns: 1fr minmax(25px,
+      1fr);'
+    test: column-flex-track-intrinsic-sizes.html
+  - subtest: 'auto min item ''grid-lanes'' with: grid-template-columns: 0fr min-content;'
+    test: column-flex-track-intrinsic-sizes.html
+  - subtest: 'auto min item ''grid-lanes'' with: grid-template-columns: 0fr auto;'
+    test: column-flex-track-intrinsic-sizes.html
+  - subtest: 'auto min item ''grid-lanes'' with: grid-template-columns: 0.5fr auto;'
+    test: column-flex-track-intrinsic-sizes.html
+  - subtest: 'auto min item ''grid-lanes'' with: grid-template-columns: 1fr auto;'
+    test: column-flex-track-intrinsic-sizes.html
+  - subtest: 'auto min item ''grid-lanes'' with: grid-template-columns: 1fr max-content;'
+    test: column-flex-track-intrinsic-sizes.html
+  - subtest: 'auto min item ''grid-lanes'' with: grid-template-columns: 1fr min-content;'
+    test: column-flex-track-intrinsic-sizes.html
+  - subtest: 'auto min item ''grid-lanes'' with: grid-template-columns: minmax(0,
+      0fr) min-content;'
+    test: column-flex-track-intrinsic-sizes.html
+  - subtest: 'auto min item ''grid-lanes'' with: grid-template-columns: minmax(0,
+      0fr) auto;'
+    test: column-flex-track-intrinsic-sizes.html
+  - subtest: 'auto min item ''grid-lanes'' with: grid-template-columns: minmax(0,
+      1fr) auto;'
+    test: column-flex-track-intrinsic-sizes.html
+  - subtest: 'auto min item ''grid-lanes'' with: grid-template-columns: minmax(25px,
+      0fr) auto;'
+    test: column-flex-track-intrinsic-sizes.html
+  - subtest: 'auto min item ''grid-lanes'' with: grid-template-columns: minmax(25px,
+      1fr) auto;'
+    test: column-flex-track-intrinsic-sizes.html
+  - subtest: 'min-content min item ''grid-lanes'' with: grid-template-columns: 0fr;'
+    test: column-flex-track-intrinsic-sizes.html
+  - subtest: 'min-content min item ''grid-lanes'' with: grid-template-columns: 1fr;'
+    test: column-flex-track-intrinsic-sizes.html
+  - subtest: 'min-content min item ''grid-lanes'' with: grid-template-columns: 2fr;'
+    test: column-flex-track-intrinsic-sizes.html
+  - subtest: 'min-content min item ''grid-lanes'' with: grid-template-columns: minmax(0,
+      0fr);'
+    test: column-flex-track-intrinsic-sizes.html
+  - subtest: 'min-content min item ''grid-lanes'' with: grid-template-columns: minmax(0,
+      .5fr);'
+    test: column-flex-track-intrinsic-sizes.html
+  - subtest: 'min-content min item ''grid-lanes'' with: grid-template-columns: minmax(0,
+      1fr);'
+    test: column-flex-track-intrinsic-sizes.html
+  - subtest: 'min-content min item ''grid-lanes'' with: grid-template-columns: minmax(0,
+      2fr);'
+    test: column-flex-track-intrinsic-sizes.html
+  - subtest: 'min-content min item ''grid-lanes'' with: grid-template-columns: minmax(75px,
+      1fr);'
+    test: column-flex-track-intrinsic-sizes.html
+  - subtest: 'min-content min item ''grid-lanes'' with: grid-template-columns: 0fr
+      0fr;'
+    test: column-flex-track-intrinsic-sizes.html
+  - subtest: 'min-content min item ''grid-lanes'' with: grid-template-columns: 0fr
+      1fr;'
+    test: column-flex-track-intrinsic-sizes.html
+  - subtest: 'min-content min item ''grid-lanes'' with: grid-template-columns: 1fr
+      0fr;'
+    test: column-flex-track-intrinsic-sizes.html
+  - subtest: 'min-content min item ''grid-lanes'' with: grid-template-columns: 1fr
+      1fr;'
+    test: column-flex-track-intrinsic-sizes.html
+  - subtest: 'min-content min item ''grid-lanes'' with: grid-template-columns: 1fr
+      3fr;'
+    test: column-flex-track-intrinsic-sizes.html
+  - subtest: 'min-content min item ''grid-lanes'' with: grid-template-columns: 0fr
+      0fr 1fr;'
+    test: column-flex-track-intrinsic-sizes.html
+  - subtest: 'min-content min item ''grid-lanes'' with: grid-template-columns: minmax(0,
+      0fr) minmax(0, 0fr);'
+    test: column-flex-track-intrinsic-sizes.html
+  - subtest: 'min-content min item ''grid-lanes'' with: grid-template-columns: minmax(0,
+      0fr) minmax(0, 1fr);'
+    test: column-flex-track-intrinsic-sizes.html
+  - subtest: 'min-content min item ''grid-lanes'' with: grid-template-columns: minmax(15px,
+      0fr) minmax(0, 1fr);'
+    test: column-flex-track-intrinsic-sizes.html
+  - subtest: 'min-content min item ''grid-lanes'' with: grid-template-columns: minmax(20px,
+      1fr) minmax(0, 1fr);'
+    test: column-flex-track-intrinsic-sizes.html
+  - subtest: 'min-content min item ''grid-lanes'' with: grid-template-columns: minmax(40px,
+      1fr) minmax(0, 1fr);'
+    test: column-flex-track-intrinsic-sizes.html
+  - subtest: 'min-content min item ''grid-lanes'' with: grid-template-columns: 0fr
+      minmax(0, 0fr);'
+    test: column-flex-track-intrinsic-sizes.html
+  - subtest: 'min-content min item ''grid-lanes'' with: grid-template-columns: 0fr
+      minmax(0, 1fr);'
+    test: column-flex-track-intrinsic-sizes.html
+  - subtest: 'min-content min item ''grid-lanes'' with: grid-template-columns: 1fr
+      minmax(0, 1fr);'
+    test: column-flex-track-intrinsic-sizes.html
+  - subtest: 'min-content min item ''grid-lanes'' with: grid-template-columns: 1fr
+      minmax(25px, 1fr);'
+    test: column-flex-track-intrinsic-sizes.html
+  - subtest: 'min-content min item ''grid-lanes'' with: grid-template-columns: 0fr
+      min-content;'
+    test: column-flex-track-intrinsic-sizes.html
+  - subtest: 'min-content min item ''grid-lanes'' with: grid-template-columns: 0fr
+      auto;'
+    test: column-flex-track-intrinsic-sizes.html
+  - subtest: 'min-content min item ''grid-lanes'' with: grid-template-columns: 0.5fr
+      auto;'
+    test: column-flex-track-intrinsic-sizes.html
+  - subtest: 'min-content min item ''grid-lanes'' with: grid-template-columns: 1fr
+      auto;'
+    test: column-flex-track-intrinsic-sizes.html
+  - subtest: 'min-content min item ''grid-lanes'' with: grid-template-columns: 1fr
+      max-content;'
+    test: column-flex-track-intrinsic-sizes.html
+  - subtest: 'min-content min item ''grid-lanes'' with: grid-template-columns: 1fr
+      min-content;'
+    test: column-flex-track-intrinsic-sizes.html
+  - subtest: 'min-content min item ''grid-lanes'' with: grid-template-columns: minmax(0,
+      0fr) min-content;'
+    test: column-flex-track-intrinsic-sizes.html
+  - subtest: 'min-content min item ''grid-lanes'' with: grid-template-columns: minmax(0,
+      0fr) auto;'
+    test: column-flex-track-intrinsic-sizes.html
+  - subtest: 'min-content min item ''grid-lanes'' with: grid-template-columns: minmax(0,
+      1fr) auto;'
+    test: column-flex-track-intrinsic-sizes.html
+  - subtest: 'min-content min item ''grid-lanes'' with: grid-template-columns: minmax(25px,
+      0fr) auto;'
+    test: column-flex-track-intrinsic-sizes.html
+  - subtest: 'min-content min item ''grid-lanes'' with: grid-template-columns: minmax(25px,
+      1fr) auto;'
+    test: column-flex-track-intrinsic-sizes.html
+  - subtest: '50px min item ''grid-lanes'' with: grid-template-columns: 0fr;'
+    test: column-flex-track-intrinsic-sizes.html
+  - subtest: '50px min item ''grid-lanes'' with: grid-template-columns: 1fr;'
+    test: column-flex-track-intrinsic-sizes.html
+  - subtest: '50px min item ''grid-lanes'' with: grid-template-columns: 2fr;'
+    test: column-flex-track-intrinsic-sizes.html
+  - subtest: '50px min item ''grid-lanes'' with: grid-template-columns: minmax(0,
+      0fr);'
+    test: column-flex-track-intrinsic-sizes.html
+  - subtest: '50px min item ''grid-lanes'' with: grid-template-columns: minmax(0,
+      .5fr);'
+    test: column-flex-track-intrinsic-sizes.html
+  - subtest: '50px min item ''grid-lanes'' with: grid-template-columns: minmax(0,
+      1fr);'
+    test: column-flex-track-intrinsic-sizes.html
+  - subtest: '50px min item ''grid-lanes'' with: grid-template-columns: minmax(0,
+      2fr);'
+    test: column-flex-track-intrinsic-sizes.html
+  - subtest: '50px min item ''grid-lanes'' with: grid-template-columns: minmax(75px,
+      1fr);'
+    test: column-flex-track-intrinsic-sizes.html
+  - subtest: '50px min item ''grid-lanes'' with: grid-template-columns: 0fr 0fr;'
+    test: column-flex-track-intrinsic-sizes.html
+  - subtest: '50px min item ''grid-lanes'' with: grid-template-columns: 0fr 1fr;'
+    test: column-flex-track-intrinsic-sizes.html
+  - subtest: '50px min item ''grid-lanes'' with: grid-template-columns: 1fr 0fr;'
+    test: column-flex-track-intrinsic-sizes.html
+  - subtest: '50px min item ''grid-lanes'' with: grid-template-columns: 1fr 1fr;'
+    test: column-flex-track-intrinsic-sizes.html
+  - subtest: '50px min item ''grid-lanes'' with: grid-template-columns: 1fr 3fr;'
+    test: column-flex-track-intrinsic-sizes.html
+  - subtest: '50px min item ''grid-lanes'' with: grid-template-columns: 0fr 0fr 1fr;'
+    test: column-flex-track-intrinsic-sizes.html
+  - subtest: '50px min item ''grid-lanes'' with: grid-template-columns: minmax(0,
+      0fr) minmax(0, 0fr);'
+    test: column-flex-track-intrinsic-sizes.html
+  - subtest: '50px min item ''grid-lanes'' with: grid-template-columns: minmax(0,
+      0fr) minmax(0, 1fr);'
+    test: column-flex-track-intrinsic-sizes.html
+  - subtest: '50px min item ''grid-lanes'' with: grid-template-columns: minmax(15px,
+      0fr) minmax(0, 1fr);'
+    test: column-flex-track-intrinsic-sizes.html
+  - subtest: '50px min item ''grid-lanes'' with: grid-template-columns: minmax(20px,
+      1fr) minmax(0, 1fr);'
+    test: column-flex-track-intrinsic-sizes.html
+  - subtest: '50px min item ''grid-lanes'' with: grid-template-columns: minmax(40px,
+      1fr) minmax(0, 1fr);'
+    test: column-flex-track-intrinsic-sizes.html
+  - subtest: '50px min item ''grid-lanes'' with: grid-template-columns: 0fr minmax(0,
+      0fr);'
+    test: column-flex-track-intrinsic-sizes.html
+  - subtest: '50px min item ''grid-lanes'' with: grid-template-columns: 0fr minmax(0,
+      1fr);'
+    test: column-flex-track-intrinsic-sizes.html
+  - subtest: '50px min item ''grid-lanes'' with: grid-template-columns: 1fr minmax(0,
+      1fr);'
+    test: column-flex-track-intrinsic-sizes.html
+  - subtest: '50px min item ''grid-lanes'' with: grid-template-columns: 1fr minmax(25px,
+      1fr);'
+    test: column-flex-track-intrinsic-sizes.html
+  - subtest: '50px min item ''grid-lanes'' with: grid-template-columns: 0fr min-content;'
+    test: column-flex-track-intrinsic-sizes.html
+  - subtest: '50px min item ''grid-lanes'' with: grid-template-columns: 0fr auto;'
+    test: column-flex-track-intrinsic-sizes.html
+  - subtest: '50px min item ''grid-lanes'' with: grid-template-columns: 0.5fr auto;'
+    test: column-flex-track-intrinsic-sizes.html
+  - subtest: '50px min item ''grid-lanes'' with: grid-template-columns: 1fr auto;'
+    test: column-flex-track-intrinsic-sizes.html
+  - subtest: '50px min item ''grid-lanes'' with: grid-template-columns: 1fr max-content;'
+    test: column-flex-track-intrinsic-sizes.html
+  - subtest: '50px min item ''grid-lanes'' with: grid-template-columns: 1fr min-content;'
+    test: column-flex-track-intrinsic-sizes.html
+  - subtest: '50px min item ''grid-lanes'' with: grid-template-columns: minmax(0,
+      0fr) min-content;'
+    test: column-flex-track-intrinsic-sizes.html
+  - subtest: '50px min item ''grid-lanes'' with: grid-template-columns: minmax(0,
+      0fr) auto;'
+    test: column-flex-track-intrinsic-sizes.html
+  - subtest: '50px min item ''grid-lanes'' with: grid-template-columns: minmax(0,
+      1fr) auto;'
+    test: column-flex-track-intrinsic-sizes.html
+  - subtest: '50px min item ''grid-lanes'' with: grid-template-columns: minmax(25px,
+      0fr) auto;'
+    test: column-flex-track-intrinsic-sizes.html
+  - subtest: '50px min item ''grid-lanes'' with: grid-template-columns: minmax(25px,
+      1fr) auto;'
+    test: column-flex-track-intrinsic-sizes.html
+  - subtest: '''grid-lanes'' with: grid-template-columns: auto;'
+    test: column-intrinsic-track-sizes.html
+  - subtest: '''grid-lanes'' with: grid-template-columns: min-content;'
+    test: column-intrinsic-track-sizes.html
+  - subtest: '''grid-lanes'' with: grid-template-columns: max-content;'
+    test: column-intrinsic-track-sizes.html
+  - subtest: '''grid-lanes'' with: grid-template-columns: minmax(0, auto);'
+    test: column-intrinsic-track-sizes.html
+  - subtest: '''grid-lanes'' with: grid-template-columns: minmax(0, min-content);'
+    test: column-intrinsic-track-sizes.html
+  - subtest: '''grid-lanes'' with: grid-template-columns: minmax(0, max-content);'
+    test: column-intrinsic-track-sizes.html
+  - subtest: '''grid-lanes'' with: grid-template-columns: minmax(auto, 10px);'
+    test: column-intrinsic-track-sizes.html
+  - subtest: '''grid-lanes'' with: grid-template-columns: minmax(min-content, 10px);'
+    test: column-intrinsic-track-sizes.html
+  - subtest: '''grid-lanes'' with: grid-template-columns: minmax(max-content, 10px);'
+    test: column-intrinsic-track-sizes.html
+  - subtest: '''grid-lanes'' with: grid-template-columns: auto auto;'
+    test: column-intrinsic-track-sizes.html
+  - subtest: '''grid-lanes'' with: grid-template-columns: min-content min-content;'
+    test: column-intrinsic-track-sizes.html
+  - subtest: '''grid-lanes'' with: grid-template-columns: max-content max-content;'
+    test: column-intrinsic-track-sizes.html
+  - subtest: '''grid-lanes'' with: grid-template-columns: minmax(0, auto) minmax(0,
+      auto);'
+    test: column-intrinsic-track-sizes.html
+  - subtest: '''grid-lanes'' with: grid-template-columns: minmax(0, min-content) minmax(0,
+      min-content);'
+    test: column-intrinsic-track-sizes.html
+  - subtest: '''grid-lanes'' with: grid-template-columns: minmax(0, max-content) minmax(0,
+      max-content);'
+    test: column-intrinsic-track-sizes.html
+  - subtest: '''grid-lanes'' with: grid-template-columns: minmax(auto, 4px) minmax(auto,
+      4px);'
+    test: column-intrinsic-track-sizes.html
+  - subtest: '''grid-lanes'' with: grid-template-columns: minmax(auto, 10px) minmax(auto,
+      10px);'
+    test: column-intrinsic-track-sizes.html
+  - subtest: '''grid-lanes'' with: grid-template-columns: minmax(min-content, 10px)
+      minmax(min-content, 10px);'
+    test: column-intrinsic-track-sizes.html
+  - subtest: '''grid-lanes'' with: grid-template-columns: minmax(max-content, 10px)
+      minmax(max-content, 10px);'
+    test: column-intrinsic-track-sizes.html
+  - subtest: '''grid-lanes'' with: grid-template-columns: 20px auto;'
+    test: column-intrinsic-track-sizes.html
+  - subtest: '''grid-lanes'' with: grid-template-columns: 20px min-content;'
+    test: column-intrinsic-track-sizes.html
+  - subtest: '''grid-lanes'' with: grid-template-columns: 20px max-content;'
+    test: column-intrinsic-track-sizes.html
+  - subtest: '''grid-lanes'' with: grid-template-columns: 20px minmax(0, auto);'
+    test: column-intrinsic-track-sizes.html
+  - subtest: '''grid-lanes'' with: grid-template-columns: 20px minmax(0, min-content);'
+    test: column-intrinsic-track-sizes.html
+  - subtest: '''grid-lanes'' with: grid-template-columns: 20px minmax(0, max-content);'
+    test: column-intrinsic-track-sizes.html
+  - subtest: '''grid-lanes'' with: grid-template-columns: 20px minmax(auto, 30px);'
+    test: column-intrinsic-track-sizes.html
+  - subtest: '''grid-lanes'' with: grid-template-columns: 20px minmax(min-content,
+      6px);'
+    test: column-intrinsic-track-sizes.html
+  - subtest: '''grid-lanes'' with: grid-template-columns: 20px minmax(min-content,
+      40px);'
+    test: column-intrinsic-track-sizes.html
+  - subtest: '''grid-lanes'' with: grid-template-columns: 20px minmax(max-content,
+      6px);'
+    test: column-intrinsic-track-sizes.html
+  - subtest: '''grid-lanes'' with: grid-template-columns: 20px minmax(max-content,
+      30px);'
+    test: column-intrinsic-track-sizes.html
+  - subtest: '''grid-lanes'' with: grid-template-columns: max-content min-content;'
+    test: column-intrinsic-track-sizes.html
+  - subtest: 'auto min item ''grid-lanes'' with: grid-template-rows: 0fr;'
+    test: row-flex-track-intrinsic-sizes.html
+  - subtest: 'auto min item ''grid-lanes'' with: grid-template-rows: 1fr;'
+    test: row-flex-track-intrinsic-sizes.html
+  - subtest: 'auto min item ''grid-lanes'' with: grid-template-rows: 2fr;'
+    test: row-flex-track-intrinsic-sizes.html
+  - subtest: 'auto min item ''grid-lanes'' with: grid-template-rows: minmax(0, 0fr);'
+    test: row-flex-track-intrinsic-sizes.html
+  - subtest: 'auto min item ''grid-lanes'' with: grid-template-rows: minmax(0, .5fr);'
+    test: row-flex-track-intrinsic-sizes.html
+  - subtest: 'auto min item ''grid-lanes'' with: grid-template-rows: minmax(0, 1fr);'
+    test: row-flex-track-intrinsic-sizes.html
+  - subtest: 'auto min item ''grid-lanes'' with: grid-template-rows: minmax(0, 2fr);'
+    test: row-flex-track-intrinsic-sizes.html
+  - subtest: 'auto min item ''grid-lanes'' with: grid-template-rows: minmax(75px,
+      1fr);'
+    test: row-flex-track-intrinsic-sizes.html
+  - subtest: 'auto min item ''grid-lanes'' with: grid-template-rows: 0fr 0fr;'
+    test: row-flex-track-intrinsic-sizes.html
+  - subtest: 'auto min item ''grid-lanes'' with: grid-template-rows: 0fr 1fr;'
+    test: row-flex-track-intrinsic-sizes.html
+  - subtest: 'auto min item ''grid-lanes'' with: grid-template-rows: 1fr 0fr;'
+    test: row-flex-track-intrinsic-sizes.html
+  - subtest: 'auto min item ''grid-lanes'' with: grid-template-rows: 1fr 1fr;'
+    test: row-flex-track-intrinsic-sizes.html
+  - subtest: 'auto min item ''grid-lanes'' with: grid-template-rows: 1fr 3fr;'
+    test: row-flex-track-intrinsic-sizes.html
+  - subtest: 'auto min item ''grid-lanes'' with: grid-template-rows: 0fr 0fr 1fr;'
+    test: row-flex-track-intrinsic-sizes.html
+  - subtest: 'auto min item ''grid-lanes'' with: grid-template-rows: minmax(0, 0fr)
+      minmax(0, 0fr);'
+    test: row-flex-track-intrinsic-sizes.html
+  - subtest: 'auto min item ''grid-lanes'' with: grid-template-rows: minmax(0, 0fr)
+      minmax(0, 1fr);'
+    test: row-flex-track-intrinsic-sizes.html
+  - subtest: 'auto min item ''grid-lanes'' with: grid-template-rows: minmax(15px,
+      0fr) minmax(0, 1fr);'
+    test: row-flex-track-intrinsic-sizes.html
+  - subtest: 'auto min item ''grid-lanes'' with: grid-template-rows: minmax(20px,
+      1fr) minmax(0, 1fr);'
+    test: row-flex-track-intrinsic-sizes.html
+  - subtest: 'auto min item ''grid-lanes'' with: grid-template-rows: minmax(40px,
+      1fr) minmax(0, 1fr);'
+    test: row-flex-track-intrinsic-sizes.html
+  - subtest: 'auto min item ''grid-lanes'' with: grid-template-rows: 0fr minmax(0,
+      0fr);'
+    test: row-flex-track-intrinsic-sizes.html
+  - subtest: 'auto min item ''grid-lanes'' with: grid-template-rows: 0fr minmax(0,
+      1fr);'
+    test: row-flex-track-intrinsic-sizes.html
+  - subtest: 'auto min item ''grid-lanes'' with: grid-template-rows: 1fr minmax(0,
+      1fr);'
+    test: row-flex-track-intrinsic-sizes.html
+  - subtest: 'auto min item ''grid-lanes'' with: grid-template-rows: 1fr minmax(25px,
+      1fr);'
+    test: row-flex-track-intrinsic-sizes.html
+  - subtest: 'auto min item ''grid-lanes'' with: grid-template-rows: 0fr min-content;'
+    test: row-flex-track-intrinsic-sizes.html
+  - subtest: 'auto min item ''grid-lanes'' with: grid-template-rows: 0fr auto;'
+    test: row-flex-track-intrinsic-sizes.html
+  - subtest: 'auto min item ''grid-lanes'' with: grid-template-rows: 0.5fr auto;'
+    test: row-flex-track-intrinsic-sizes.html
+  - subtest: 'auto min item ''grid-lanes'' with: grid-template-rows: 1fr auto;'
+    test: row-flex-track-intrinsic-sizes.html
+  - subtest: 'auto min item ''grid-lanes'' with: grid-template-rows: 1fr max-content;'
+    test: row-flex-track-intrinsic-sizes.html
+  - subtest: 'auto min item ''grid-lanes'' with: grid-template-rows: 1fr min-content;'
+    test: row-flex-track-intrinsic-sizes.html
+  - subtest: 'auto min item ''grid-lanes'' with: grid-template-rows: minmax(0, 0fr)
+      min-content;'
+    test: row-flex-track-intrinsic-sizes.html
+  - subtest: 'auto min item ''grid-lanes'' with: grid-template-rows: minmax(0, 0fr)
+      auto;'
+    test: row-flex-track-intrinsic-sizes.html
+  - subtest: 'auto min item ''grid-lanes'' with: grid-template-rows: minmax(0, 1fr)
+      auto;'
+    test: row-flex-track-intrinsic-sizes.html
+  - subtest: 'auto min item ''grid-lanes'' with: grid-template-rows: minmax(25px,
+      0fr) auto;'
+    test: row-flex-track-intrinsic-sizes.html
+  - subtest: 'auto min item ''grid-lanes'' with: grid-template-rows: minmax(25px,
+      1fr) auto;'
+    test: row-flex-track-intrinsic-sizes.html
+  - subtest: 'min-content min item ''grid-lanes'' with: grid-template-rows: 0fr;'
+    test: row-flex-track-intrinsic-sizes.html
+  - subtest: 'min-content min item ''grid-lanes'' with: grid-template-rows: 1fr;'
+    test: row-flex-track-intrinsic-sizes.html
+  - subtest: 'min-content min item ''grid-lanes'' with: grid-template-rows: 2fr;'
+    test: row-flex-track-intrinsic-sizes.html
+  - subtest: 'min-content min item ''grid-lanes'' with: grid-template-rows: minmax(0,
+      0fr);'
+    test: row-flex-track-intrinsic-sizes.html
+  - subtest: 'min-content min item ''grid-lanes'' with: grid-template-rows: minmax(0,
+      .5fr);'
+    test: row-flex-track-intrinsic-sizes.html
+  - subtest: 'min-content min item ''grid-lanes'' with: grid-template-rows: minmax(0,
+      1fr);'
+    test: row-flex-track-intrinsic-sizes.html
+  - subtest: 'min-content min item ''grid-lanes'' with: grid-template-rows: minmax(0,
+      2fr);'
+    test: row-flex-track-intrinsic-sizes.html
+  - subtest: 'min-content min item ''grid-lanes'' with: grid-template-rows: minmax(75px,
+      1fr);'
+    test: row-flex-track-intrinsic-sizes.html
+  - subtest: 'min-content min item ''grid-lanes'' with: grid-template-rows: 0fr 0fr;'
+    test: row-flex-track-intrinsic-sizes.html
+  - subtest: 'min-content min item ''grid-lanes'' with: grid-template-rows: 0fr 1fr;'
+    test: row-flex-track-intrinsic-sizes.html
+  - subtest: 'min-content min item ''grid-lanes'' with: grid-template-rows: 1fr 0fr;'
+    test: row-flex-track-intrinsic-sizes.html
+  - subtest: 'min-content min item ''grid-lanes'' with: grid-template-rows: 1fr 1fr;'
+    test: row-flex-track-intrinsic-sizes.html
+  - subtest: 'min-content min item ''grid-lanes'' with: grid-template-rows: 1fr 3fr;'
+    test: row-flex-track-intrinsic-sizes.html
+  - subtest: 'min-content min item ''grid-lanes'' with: grid-template-rows: 0fr 0fr
+      1fr;'
+    test: row-flex-track-intrinsic-sizes.html
+  - subtest: 'min-content min item ''grid-lanes'' with: grid-template-rows: minmax(0,
+      0fr) minmax(0, 0fr);'
+    test: row-flex-track-intrinsic-sizes.html
+  - subtest: 'min-content min item ''grid-lanes'' with: grid-template-rows: minmax(0,
+      0fr) minmax(0, 1fr);'
+    test: row-flex-track-intrinsic-sizes.html
+  - subtest: 'min-content min item ''grid-lanes'' with: grid-template-rows: minmax(15px,
+      0fr) minmax(0, 1fr);'
+    test: row-flex-track-intrinsic-sizes.html
+  - subtest: 'min-content min item ''grid-lanes'' with: grid-template-rows: minmax(20px,
+      1fr) minmax(0, 1fr);'
+    test: row-flex-track-intrinsic-sizes.html
+  - subtest: 'min-content min item ''grid-lanes'' with: grid-template-rows: minmax(40px,
+      1fr) minmax(0, 1fr);'
+    test: row-flex-track-intrinsic-sizes.html
+  - subtest: 'min-content min item ''grid-lanes'' with: grid-template-rows: 0fr minmax(0,
+      0fr);'
+    test: row-flex-track-intrinsic-sizes.html
+  - subtest: 'min-content min item ''grid-lanes'' with: grid-template-rows: 0fr minmax(0,
+      1fr);'
+    test: row-flex-track-intrinsic-sizes.html
+  - subtest: 'min-content min item ''grid-lanes'' with: grid-template-rows: 1fr minmax(0,
+      1fr);'
+    test: row-flex-track-intrinsic-sizes.html
+  - subtest: 'min-content min item ''grid-lanes'' with: grid-template-rows: 1fr minmax(25px,
+      1fr);'
+    test: row-flex-track-intrinsic-sizes.html
+  - subtest: 'min-content min item ''grid-lanes'' with: grid-template-rows: 0fr min-content;'
+    test: row-flex-track-intrinsic-sizes.html
+  - subtest: 'min-content min item ''grid-lanes'' with: grid-template-rows: 0fr auto;'
+    test: row-flex-track-intrinsic-sizes.html
+  - subtest: 'min-content min item ''grid-lanes'' with: grid-template-rows: 0.5fr
+      auto;'
+    test: row-flex-track-intrinsic-sizes.html
+  - subtest: 'min-content min item ''grid-lanes'' with: grid-template-rows: 1fr auto;'
+    test: row-flex-track-intrinsic-sizes.html
+  - subtest: 'min-content min item ''grid-lanes'' with: grid-template-rows: 1fr max-content;'
+    test: row-flex-track-intrinsic-sizes.html
+  - subtest: 'min-content min item ''grid-lanes'' with: grid-template-rows: 1fr min-content;'
+    test: row-flex-track-intrinsic-sizes.html
+  - subtest: 'min-content min item ''grid-lanes'' with: grid-template-rows: minmax(0,
+      0fr) min-content;'
+    test: row-flex-track-intrinsic-sizes.html
+  - subtest: 'min-content min item ''grid-lanes'' with: grid-template-rows: minmax(0,
+      0fr) auto;'
+    test: row-flex-track-intrinsic-sizes.html
+  - subtest: 'min-content min item ''grid-lanes'' with: grid-template-rows: minmax(0,
+      1fr) auto;'
+    test: row-flex-track-intrinsic-sizes.html
+  - subtest: 'min-content min item ''grid-lanes'' with: grid-template-rows: minmax(25px,
+      0fr) auto;'
+    test: row-flex-track-intrinsic-sizes.html
+  - subtest: 'min-content min item ''grid-lanes'' with: grid-template-rows: minmax(25px,
+      1fr) auto;'
+    test: row-flex-track-intrinsic-sizes.html
+  - subtest: '50px min item ''grid-lanes'' with: grid-template-rows: 0fr;'
+    test: row-flex-track-intrinsic-sizes.html
+  - subtest: '50px min item ''grid-lanes'' with: grid-template-rows: 1fr;'
+    test: row-flex-track-intrinsic-sizes.html
+  - subtest: '50px min item ''grid-lanes'' with: grid-template-rows: 2fr;'
+    test: row-flex-track-intrinsic-sizes.html
+  - subtest: '50px min item ''grid-lanes'' with: grid-template-rows: minmax(0, 0fr);'
+    test: row-flex-track-intrinsic-sizes.html
+  - subtest: '50px min item ''grid-lanes'' with: grid-template-rows: minmax(0, .5fr);'
+    test: row-flex-track-intrinsic-sizes.html
+  - subtest: '50px min item ''grid-lanes'' with: grid-template-rows: minmax(0, 1fr);'
+    test: row-flex-track-intrinsic-sizes.html
+  - subtest: '50px min item ''grid-lanes'' with: grid-template-rows: minmax(0, 2fr);'
+    test: row-flex-track-intrinsic-sizes.html
+  - subtest: '50px min item ''grid-lanes'' with: grid-template-rows: minmax(75px,
+      1fr);'
+    test: row-flex-track-intrinsic-sizes.html
+  - subtest: '50px min item ''grid-lanes'' with: grid-template-rows: 0fr 0fr;'
+    test: row-flex-track-intrinsic-sizes.html
+  - subtest: '50px min item ''grid-lanes'' with: grid-template-rows: 0fr 1fr;'
+    test: row-flex-track-intrinsic-sizes.html
+  - subtest: '50px min item ''grid-lanes'' with: grid-template-rows: 1fr 0fr;'
+    test: row-flex-track-intrinsic-sizes.html
+  - subtest: '50px min item ''grid-lanes'' with: grid-template-rows: 1fr 1fr;'
+    test: row-flex-track-intrinsic-sizes.html
+  - subtest: '50px min item ''grid-lanes'' with: grid-template-rows: 1fr 3fr;'
+    test: row-flex-track-intrinsic-sizes.html
+  - subtest: '50px min item ''grid-lanes'' with: grid-template-rows: 0fr 0fr 1fr;'
+    test: row-flex-track-intrinsic-sizes.html
+  - subtest: '50px min item ''grid-lanes'' with: grid-template-rows: minmax(0, 0fr)
+      minmax(0, 0fr);'
+    test: row-flex-track-intrinsic-sizes.html
+  - subtest: '50px min item ''grid-lanes'' with: grid-template-rows: minmax(0, 0fr)
+      minmax(0, 1fr);'
+    test: row-flex-track-intrinsic-sizes.html
+  - subtest: '50px min item ''grid-lanes'' with: grid-template-rows: minmax(15px,
+      0fr) minmax(0, 1fr);'
+    test: row-flex-track-intrinsic-sizes.html
+  - subtest: '50px min item ''grid-lanes'' with: grid-template-rows: minmax(20px,
+      1fr) minmax(0, 1fr);'
+    test: row-flex-track-intrinsic-sizes.html
+  - subtest: '50px min item ''grid-lanes'' with: grid-template-rows: minmax(40px,
+      1fr) minmax(0, 1fr);'
+    test: row-flex-track-intrinsic-sizes.html
+  - subtest: '50px min item ''grid-lanes'' with: grid-template-rows: 0fr minmax(0,
+      0fr);'
+    test: row-flex-track-intrinsic-sizes.html
+  - subtest: '50px min item ''grid-lanes'' with: grid-template-rows: 0fr minmax(0,
+      1fr);'
+    test: row-flex-track-intrinsic-sizes.html
+  - subtest: '50px min item ''grid-lanes'' with: grid-template-rows: 1fr minmax(0,
+      1fr);'
+    test: row-flex-track-intrinsic-sizes.html
+  - subtest: '50px min item ''grid-lanes'' with: grid-template-rows: 1fr minmax(25px,
+      1fr);'
+    test: row-flex-track-intrinsic-sizes.html
+  - subtest: '50px min item ''grid-lanes'' with: grid-template-rows: 0fr min-content;'
+    test: row-flex-track-intrinsic-sizes.html
+  - subtest: '50px min item ''grid-lanes'' with: grid-template-rows: 0fr auto;'
+    test: row-flex-track-intrinsic-sizes.html
+  - subtest: '50px min item ''grid-lanes'' with: grid-template-rows: 0.5fr auto;'
+    test: row-flex-track-intrinsic-sizes.html
+  - subtest: '50px min item ''grid-lanes'' with: grid-template-rows: 1fr auto;'
+    test: row-flex-track-intrinsic-sizes.html
+  - subtest: '50px min item ''grid-lanes'' with: grid-template-rows: 1fr max-content;'
+    test: row-flex-track-intrinsic-sizes.html
+  - subtest: '50px min item ''grid-lanes'' with: grid-template-rows: 1fr min-content;'
+    test: row-flex-track-intrinsic-sizes.html
+  - subtest: '50px min item ''grid-lanes'' with: grid-template-rows: minmax(0, 0fr)
+      min-content;'
+    test: row-flex-track-intrinsic-sizes.html
+  - subtest: '50px min item ''grid-lanes'' with: grid-template-rows: minmax(0, 0fr)
+      auto;'
+    test: row-flex-track-intrinsic-sizes.html
+  - subtest: '50px min item ''grid-lanes'' with: grid-template-rows: minmax(0, 1fr)
+      auto;'
+    test: row-flex-track-intrinsic-sizes.html
+  - subtest: '50px min item ''grid-lanes'' with: grid-template-rows: minmax(25px,
+      0fr) auto;'
+    test: row-flex-track-intrinsic-sizes.html
+  - subtest: '50px min item ''grid-lanes'' with: grid-template-rows: minmax(25px,
+      1fr) auto;'
+    test: row-flex-track-intrinsic-sizes.html
+  - subtest: '''grid-lanes'' with: grid-template-rows: auto;'
+    test: row-intrinsic-track-sizes.html
+  - subtest: '''grid-lanes'' with: grid-template-rows: min-content;'
+    test: row-intrinsic-track-sizes.html
+  - subtest: '''grid-lanes'' with: grid-template-rows: max-content;'
+    test: row-intrinsic-track-sizes.html
+  - subtest: '''grid-lanes'' with: grid-template-rows: minmax(0, auto);'
+    test: row-intrinsic-track-sizes.html
+  - subtest: '''grid-lanes'' with: grid-template-rows: minmax(0, min-content);'
+    test: row-intrinsic-track-sizes.html
+  - subtest: '''grid-lanes'' with: grid-template-rows: minmax(0, max-content);'
+    test: row-intrinsic-track-sizes.html
+  - subtest: '''grid-lanes'' with: grid-template-rows: minmax(auto, 10px);'
+    test: row-intrinsic-track-sizes.html
+  - subtest: '''grid-lanes'' with: grid-template-rows: minmax(min-content, 10px);'
+    test: row-intrinsic-track-sizes.html
+  - subtest: '''grid-lanes'' with: grid-template-rows: minmax(max-content, 10px);'
+    test: row-intrinsic-track-sizes.html
+  - subtest: '''grid-lanes'' with: grid-template-rows: auto auto;'
+    test: row-intrinsic-track-sizes.html
+  - subtest: '''grid-lanes'' with: grid-template-rows: min-content min-content;'
+    test: row-intrinsic-track-sizes.html
+  - subtest: '''grid-lanes'' with: grid-template-rows: max-content max-content;'
+    test: row-intrinsic-track-sizes.html
+  - subtest: '''grid-lanes'' with: grid-template-rows: minmax(0, auto) minmax(0, auto);'
+    test: row-intrinsic-track-sizes.html
+  - subtest: '''grid-lanes'' with: grid-template-rows: minmax(0, min-content) minmax(0,
+      min-content);'
+    test: row-intrinsic-track-sizes.html
+  - subtest: '''grid-lanes'' with: grid-template-rows: minmax(0, max-content) minmax(0,
+      max-content);'
+    test: row-intrinsic-track-sizes.html
+  - subtest: '''grid-lanes'' with: grid-template-rows: minmax(auto, 4px) minmax(auto,
+      4px);'
+    test: row-intrinsic-track-sizes.html
+  - subtest: '''grid-lanes'' with: grid-template-rows: minmax(auto, 10px) minmax(auto,
+      10px);'
+    test: row-intrinsic-track-sizes.html
+  - subtest: '''grid-lanes'' with: grid-template-rows: minmax(min-content, 10px) minmax(min-content,
+      10px);'
+    test: row-intrinsic-track-sizes.html
+  - subtest: '''grid-lanes'' with: grid-template-rows: minmax(max-content, 10px) minmax(max-content,
+      10px);'
+    test: row-intrinsic-track-sizes.html
+  - subtest: '''grid-lanes'' with: grid-template-rows: 20px auto;'
+    test: row-intrinsic-track-sizes.html
+  - subtest: '''grid-lanes'' with: grid-template-rows: 20px min-content;'
+    test: row-intrinsic-track-sizes.html
+  - subtest: '''grid-lanes'' with: grid-template-rows: 20px max-content;'
+    test: row-intrinsic-track-sizes.html
+  - subtest: '''grid-lanes'' with: grid-template-rows: 20px minmax(0, auto);'
+    test: row-intrinsic-track-sizes.html
+  - subtest: '''grid-lanes'' with: grid-template-rows: 20px minmax(0, min-content);'
+    test: row-intrinsic-track-sizes.html
+  - subtest: '''grid-lanes'' with: grid-template-rows: 20px minmax(0, max-content);'
+    test: row-intrinsic-track-sizes.html
+  - subtest: '''grid-lanes'' with: grid-template-rows: 20px minmax(auto, 30px);'
+    test: row-intrinsic-track-sizes.html
+  - subtest: '''grid-lanes'' with: grid-template-rows: 20px minmax(min-content, 6px);'
+    test: row-intrinsic-track-sizes.html
+  - subtest: '''grid-lanes'' with: grid-template-rows: 20px minmax(min-content, 40px);'
+    test: row-intrinsic-track-sizes.html
+  - subtest: '''grid-lanes'' with: grid-template-rows: 20px minmax(max-content, 6px);'
+    test: row-intrinsic-track-sizes.html
+  - subtest: '''grid-lanes'' with: grid-template-rows: 20px minmax(max-content, 30px);'
+    test: row-intrinsic-track-sizes.html
+  - subtest: '''grid-lanes'' with: grid-template-rows: max-content min-content;'
+    test: row-intrinsic-track-sizes.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2038844
