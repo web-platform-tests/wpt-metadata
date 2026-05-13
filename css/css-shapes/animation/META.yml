@@ -1,5 +1,182 @@
 links:
-    - product: safari
-      url: https://bugs.webkit.org/show_bug.cgi?id=235776
-      results:
-        - test: shape-outside-composition.html
+- product: safari
+  results:
+  - test: shape-outside-composition.html
+  url: https://bugs.webkit.org/show_bug.cgi?id=235776
+- product: firefox
+  results:
+  - subtest: 'CSS Transitions: property <shape-outside> from [inset(10% 20% 30% 40%)]
+      to [rect(50% 80% 70% 20%)] at (1) should be [inset(50% 20% 30% 20%)]'
+    test: shape-outside-interpolation.html
+  - subtest: 'CSS Transitions with transition: all: property <shape-outside> from
+      [inset(10% 20% 30% 40%)] to [rect(50% 80% 70% 20%)] at (1) should be [inset(50%
+      20% 30% 20%)]'
+    test: shape-outside-interpolation.html
+  - subtest: 'CSS Animations: property <shape-outside> from [inset(10% 20% 30% 40%)]
+      to [rect(50% 80% 70% 20%)] at (1) should be [inset(50% 20% 30% 20%)]'
+    test: shape-outside-interpolation.html
+  - subtest: 'Web Animations: property <shape-outside> from [inset(10% 20% 30% 40%)]
+      to [rect(50% 80% 70% 20%)] at (1) should be [inset(50% 20% 30% 20%)]'
+    test: shape-outside-interpolation.html
+  - subtest: 'CSS Transitions: property <shape-outside> from [inset(10% 20% 30% 40%)]
+      to [xywh(20% 50% 60% 20%)] at (1) should be [inset(50% 20% 30% 20%)]'
+    test: shape-outside-interpolation.html
+  - subtest: 'CSS Transitions with transition: all: property <shape-outside> from
+      [inset(10% 20% 30% 40%)] to [xywh(20% 50% 60% 20%)] at (1) should be [inset(50%
+      20% 30% 20%)]'
+    test: shape-outside-interpolation.html
+  - subtest: 'CSS Animations: property <shape-outside> from [inset(10% 20% 30% 40%)]
+      to [xywh(20% 50% 60% 20%)] at (1) should be [inset(50% 20% 30% 20%)]'
+    test: shape-outside-interpolation.html
+  - subtest: 'Web Animations: property <shape-outside> from [inset(10% 20% 30% 40%)]
+      to [xywh(20% 50% 60% 20%)] at (1) should be [inset(50% 20% 30% 20%)]'
+    test: shape-outside-interpolation.html
+  - subtest: 'CSS Transitions: property <shape-outside> from [rect(10% 80% 70% 40%)]
+      to [rect(50% 80% 70% 20%)] at (1) should be [inset(50% 20% 30% 20%)]'
+    test: shape-outside-interpolation.html
+  - subtest: 'CSS Transitions with transition: all: property <shape-outside> from
+      [rect(10% 80% 70% 40%)] to [rect(50% 80% 70% 20%)] at (1) should be [inset(50%
+      20% 30% 20%)]'
+    test: shape-outside-interpolation.html
+  - subtest: 'CSS Animations: property <shape-outside> from [rect(10% 80% 70% 40%)]
+      to [rect(50% 80% 70% 20%)] at (1) should be [inset(50% 20% 30% 20%)]'
+    test: shape-outside-interpolation.html
+  - subtest: 'Web Animations: property <shape-outside> from [rect(10% 80% 70% 40%)]
+      to [rect(50% 80% 70% 20%)] at (1) should be [inset(50% 20% 30% 20%)]'
+    test: shape-outside-interpolation.html
+  - subtest: 'CSS Transitions: property <shape-outside> from [rect(10% 80% 70% 40%)]
+      to [xywh(20% 50% 60% 20%)] at (1) should be [inset(50% 20% 30% 20%)]'
+    test: shape-outside-interpolation.html
+  - subtest: 'CSS Transitions with transition: all: property <shape-outside> from
+      [rect(10% 80% 70% 40%)] to [xywh(20% 50% 60% 20%)] at (1) should be [inset(50%
+      20% 30% 20%)]'
+    test: shape-outside-interpolation.html
+  - subtest: 'CSS Animations: property <shape-outside> from [rect(10% 80% 70% 40%)]
+      to [xywh(20% 50% 60% 20%)] at (1) should be [inset(50% 20% 30% 20%)]'
+    test: shape-outside-interpolation.html
+  - subtest: 'Web Animations: property <shape-outside> from [rect(10% 80% 70% 40%)]
+      to [xywh(20% 50% 60% 20%)] at (1) should be [inset(50% 20% 30% 20%)]'
+    test: shape-outside-interpolation.html
+  - subtest: 'CSS Transitions: property <shape-outside> from [xywh(40% 10% 40% 60%)]
+      to [rect(50% 80% 70% 20%)] at (1) should be [inset(50% 20% 30% 20%)]'
+    test: shape-outside-interpolation.html
+  - subtest: 'CSS Transitions with transition: all: property <shape-outside> from
+      [xywh(40% 10% 40% 60%)] to [rect(50% 80% 70% 20%)] at (1) should be [inset(50%
+      20% 30% 20%)]'
+    test: shape-outside-interpolation.html
+  - subtest: 'CSS Animations: property <shape-outside> from [xywh(40% 10% 40% 60%)]
+      to [rect(50% 80% 70% 20%)] at (1) should be [inset(50% 20% 30% 20%)]'
+    test: shape-outside-interpolation.html
+  - subtest: 'Web Animations: property <shape-outside> from [xywh(40% 10% 40% 60%)]
+      to [rect(50% 80% 70% 20%)] at (1) should be [inset(50% 20% 30% 20%)]'
+    test: shape-outside-interpolation.html
+  - subtest: 'CSS Transitions: property <shape-outside> from [xywh(40% 10% 40% 60%)]
+      to [xywh(20% 50% 60% 20%)] at (1) should be [inset(50% 20% 30% 20%)]'
+    test: shape-outside-interpolation.html
+  - subtest: 'CSS Transitions with transition: all: property <shape-outside> from
+      [xywh(40% 10% 40% 60%)] to [xywh(20% 50% 60% 20%)] at (1) should be [inset(50%
+      20% 30% 20%)]'
+    test: shape-outside-interpolation.html
+  - subtest: 'CSS Animations: property <shape-outside> from [xywh(40% 10% 40% 60%)]
+      to [xywh(20% 50% 60% 20%)] at (1) should be [inset(50% 20% 30% 20%)]'
+    test: shape-outside-interpolation.html
+  - subtest: 'Web Animations: property <shape-outside> from [xywh(40% 10% 40% 60%)]
+      to [xywh(20% 50% 60% 20%)] at (1) should be [inset(50% 20% 30% 20%)]'
+    test: shape-outside-interpolation.html
+  - subtest: 'CSS Transitions: property <shape-outside> from [inset(10% 20% 30% 40%)
+      border-box] to [rect(50% 80% 70% 20%) border-box] at (1) should be [inset(50%
+      20% 30% 20%) border-box]'
+    test: shape-outside-interpolation.html
+  - subtest: 'CSS Transitions with transition: all: property <shape-outside> from
+      [inset(10% 20% 30% 40%) border-box] to [rect(50% 80% 70% 20%) border-box] at
+      (1) should be [inset(50% 20% 30% 20%) border-box]'
+    test: shape-outside-interpolation.html
+  - subtest: 'CSS Animations: property <shape-outside> from [inset(10% 20% 30% 40%)
+      border-box] to [rect(50% 80% 70% 20%) border-box] at (1) should be [inset(50%
+      20% 30% 20%) border-box]'
+    test: shape-outside-interpolation.html
+  - subtest: 'Web Animations: property <shape-outside> from [inset(10% 20% 30% 40%)
+      border-box] to [rect(50% 80% 70% 20%) border-box] at (1) should be [inset(50%
+      20% 30% 20%) border-box]'
+    test: shape-outside-interpolation.html
+  - subtest: 'CSS Transitions: property <shape-outside> from [inset(10% 20% 30% 40%)
+      border-box] to [xywh(20% 50% 60% 20%) border-box] at (1) should be [inset(50%
+      20% 30% 20%) border-box]'
+    test: shape-outside-interpolation.html
+  - subtest: 'CSS Transitions with transition: all: property <shape-outside> from
+      [inset(10% 20% 30% 40%) border-box] to [xywh(20% 50% 60% 20%) border-box] at
+      (1) should be [inset(50% 20% 30% 20%) border-box]'
+    test: shape-outside-interpolation.html
+  - subtest: 'CSS Animations: property <shape-outside> from [inset(10% 20% 30% 40%)
+      border-box] to [xywh(20% 50% 60% 20%) border-box] at (1) should be [inset(50%
+      20% 30% 20%) border-box]'
+    test: shape-outside-interpolation.html
+  - subtest: 'Web Animations: property <shape-outside> from [inset(10% 20% 30% 40%)
+      border-box] to [xywh(20% 50% 60% 20%) border-box] at (1) should be [inset(50%
+      20% 30% 20%) border-box]'
+    test: shape-outside-interpolation.html
+  - subtest: 'CSS Transitions: property <shape-outside> from [rect(10% 80% 70% 40%)
+      border-box] to [rect(50% 80% 70% 20%) border-box] at (1) should be [inset(50%
+      20% 30% 20%) border-box]'
+    test: shape-outside-interpolation.html
+  - subtest: 'CSS Transitions with transition: all: property <shape-outside> from
+      [rect(10% 80% 70% 40%) border-box] to [rect(50% 80% 70% 20%) border-box] at
+      (1) should be [inset(50% 20% 30% 20%) border-box]'
+    test: shape-outside-interpolation.html
+  - subtest: 'CSS Animations: property <shape-outside> from [rect(10% 80% 70% 40%)
+      border-box] to [rect(50% 80% 70% 20%) border-box] at (1) should be [inset(50%
+      20% 30% 20%) border-box]'
+    test: shape-outside-interpolation.html
+  - subtest: 'Web Animations: property <shape-outside> from [rect(10% 80% 70% 40%)
+      border-box] to [rect(50% 80% 70% 20%) border-box] at (1) should be [inset(50%
+      20% 30% 20%) border-box]'
+    test: shape-outside-interpolation.html
+  - subtest: 'CSS Transitions: property <shape-outside> from [rect(10% 80% 70% 40%)
+      border-box] to [xywh(20% 50% 60% 20%) border-box] at (1) should be [inset(50%
+      20% 30% 20%) border-box]'
+    test: shape-outside-interpolation.html
+  - subtest: 'CSS Transitions with transition: all: property <shape-outside> from
+      [rect(10% 80% 70% 40%) border-box] to [xywh(20% 50% 60% 20%) border-box] at
+      (1) should be [inset(50% 20% 30% 20%) border-box]'
+    test: shape-outside-interpolation.html
+  - subtest: 'CSS Animations: property <shape-outside> from [rect(10% 80% 70% 40%)
+      border-box] to [xywh(20% 50% 60% 20%) border-box] at (1) should be [inset(50%
+      20% 30% 20%) border-box]'
+    test: shape-outside-interpolation.html
+  - subtest: 'Web Animations: property <shape-outside> from [rect(10% 80% 70% 40%)
+      border-box] to [xywh(20% 50% 60% 20%) border-box] at (1) should be [inset(50%
+      20% 30% 20%) border-box]'
+    test: shape-outside-interpolation.html
+  - subtest: 'CSS Transitions: property <shape-outside> from [xywh(40% 10% 40% 60%)
+      border-box] to [rect(50% 80% 70% 20%) border-box] at (1) should be [inset(50%
+      20% 30% 20%) border-box]'
+    test: shape-outside-interpolation.html
+  - subtest: 'CSS Transitions with transition: all: property <shape-outside> from
+      [xywh(40% 10% 40% 60%) border-box] to [rect(50% 80% 70% 20%) border-box] at
+      (1) should be [inset(50% 20% 30% 20%) border-box]'
+    test: shape-outside-interpolation.html
+  - subtest: 'CSS Animations: property <shape-outside> from [xywh(40% 10% 40% 60%)
+      border-box] to [rect(50% 80% 70% 20%) border-box] at (1) should be [inset(50%
+      20% 30% 20%) border-box]'
+    test: shape-outside-interpolation.html
+  - subtest: 'Web Animations: property <shape-outside> from [xywh(40% 10% 40% 60%)
+      border-box] to [rect(50% 80% 70% 20%) border-box] at (1) should be [inset(50%
+      20% 30% 20%) border-box]'
+    test: shape-outside-interpolation.html
+  - subtest: 'CSS Transitions: property <shape-outside> from [xywh(40% 10% 40% 60%)
+      border-box] to [xywh(20% 50% 60% 20%) border-box] at (1) should be [inset(50%
+      20% 30% 20%) border-box]'
+    test: shape-outside-interpolation.html
+  - subtest: 'CSS Transitions with transition: all: property <shape-outside> from
+      [xywh(40% 10% 40% 60%) border-box] to [xywh(20% 50% 60% 20%) border-box] at
+      (1) should be [inset(50% 20% 30% 20%) border-box]'
+    test: shape-outside-interpolation.html
+  - subtest: 'CSS Animations: property <shape-outside> from [xywh(40% 10% 40% 60%)
+      border-box] to [xywh(20% 50% 60% 20%) border-box] at (1) should be [inset(50%
+      20% 30% 20%) border-box]'
+    test: shape-outside-interpolation.html
+  - subtest: 'Web Animations: property <shape-outside> from [xywh(40% 10% 40% 60%)
+      border-box] to [xywh(20% 50% 60% 20%) border-box] at (1) should be [inset(50%
+      20% 30% 20%) border-box]'
+    test: shape-outside-interpolation.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2039426
