@@ -1,25 +1,206 @@
 links:
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1690775
-      results:
-        - test: lone-cr.window.html
-          status: CRASH
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1453318
-      results:
-        - test: resources-with-0x00-in-header.window.html
-          subtest: Expect network error for script with 0x00 in a header
-        - test: resources-with-0x00-in-header.window.html
-          subtest: Expect network error for image with 0x00 in a header
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1848808
-      results:
-        - test: lone-cr.window.html
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1848818
-      results:
-        - test: resources-with-0x00-in-header.window.html
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1687903
-      results:
-        - test: status-code.window.html
+- product: firefox
+  results:
+  - status: CRASH
+    test: lone-cr.window.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1690775
+- product: firefox
+  results:
+  - subtest: Expect network error for script with 0x00 in a header
+    test: resources-with-0x00-in-header.window.html
+  - subtest: Expect network error for image with 0x00 in a header
+    test: resources-with-0x00-in-header.window.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1453318
+- product: firefox
+  results:
+  - test: lone-cr.window.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1848808
+- product: firefox
+  results:
+  - test: resources-with-0x00-in-header.window.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1848818
+- product: firefox
+  results:
+  - test: status-code.window.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1687903
+- product: firefox
+  results:
+  - subtest: LF at <after-ver> should result in Network Error (fetch)
+    test: h1-parsing.tentative.html?include=after-ver
+  - subtest: CR at <after-ver> should result in Network Error (fetch)
+    test: h1-parsing.tentative.html?include=after-ver
+  - subtest: HTAB at <after-ver> should result in Network Error (fetch)
+    test: h1-parsing.tentative.html?include=after-ver
+  - subtest: SP at <after-ver> should result in Network Error (fetch)
+    test: h1-parsing.tentative.html?include=after-ver
+  - subtest: NUL at <after-ver> should result in Network Error (fetch)
+    test: h1-parsing.tentative.html?include=after-ver
+  - subtest: COLON at <after-ver> should result in Network Error (fetch)
+    test: h1-parsing.tentative.html?include=after-ver
+  - subtest: LF at <before-dot> should result in Network Error (fetch)
+    test: h1-parsing.tentative.html?include=before-dot
+  - subtest: LF at <before-dot> should result in Network Error frame
+    test: h1-parsing.tentative.html?include=before-dot
+  - subtest: CR at <before-dot> should result in Network Error (fetch)
+    test: h1-parsing.tentative.html?include=before-dot
+  - subtest: CR at <before-dot> should result in Network Error frame
+    test: h1-parsing.tentative.html?include=before-dot
+  - subtest: HTAB at <before-dot> should result in Network Error (fetch)
+    test: h1-parsing.tentative.html?include=before-dot
+  - subtest: HTAB at <before-dot> should result in Network Error frame
+    test: h1-parsing.tentative.html?include=before-dot
+  - subtest: SP at <before-dot> should result in Network Error (fetch)
+    test: h1-parsing.tentative.html?include=before-dot
+  - subtest: SP at <before-dot> should result in Network Error frame
+    test: h1-parsing.tentative.html?include=before-dot
+  - subtest: NUL at <before-dot> should result in Network Error (fetch)
+    test: h1-parsing.tentative.html?include=before-dot
+  - subtest: NUL at <before-dot> should result in Network Error frame
+    test: h1-parsing.tentative.html?include=before-dot
+  - subtest: COLON at <before-dot> should result in Network Error (fetch)
+    test: h1-parsing.tentative.html?include=before-dot
+  - subtest: COLON at <before-dot> should result in Network Error frame
+    test: h1-parsing.tentative.html?include=before-dot
+  - subtest: LF at <after-slash> should result in Network Error (fetch)
+    test: h1-parsing.tentative.html?include=after-slash
+  - subtest: LF at <after-slash> should result in Network Error frame
+    test: h1-parsing.tentative.html?include=after-slash
+  - subtest: CR at <after-slash> should result in Network Error (fetch)
+    test: h1-parsing.tentative.html?include=after-slash
+  - subtest: CR at <after-slash> should result in Network Error frame
+    test: h1-parsing.tentative.html?include=after-slash
+  - subtest: HTAB at <after-slash> should result in Network Error (fetch)
+    test: h1-parsing.tentative.html?include=after-slash
+  - subtest: HTAB at <after-slash> should result in Network Error frame
+    test: h1-parsing.tentative.html?include=after-slash
+  - subtest: SP at <after-slash> should result in Network Error (fetch)
+    test: h1-parsing.tentative.html?include=after-slash
+  - subtest: SP at <after-slash> should result in Network Error frame
+    test: h1-parsing.tentative.html?include=after-slash
+  - subtest: NUL at <after-slash> should result in Network Error (fetch)
+    test: h1-parsing.tentative.html?include=after-slash
+  - subtest: NUL at <after-slash> should result in Network Error frame
+    test: h1-parsing.tentative.html?include=after-slash
+  - subtest: COLON at <after-slash> should result in Network Error (fetch)
+    test: h1-parsing.tentative.html?include=after-slash
+  - subtest: COLON at <after-slash> should result in Network Error frame
+    test: h1-parsing.tentative.html?include=after-slash
+  - subtest: NUL at <after-reason> should result in Network Error (fetch)
+    test: h1-parsing.tentative.html?include=after-reason
+  - subtest: LF at <before-slash> should result in Network Error (fetch)
+    test: h1-parsing.tentative.html?include=before-slash
+  - subtest: LF at <before-slash> should result in Network Error frame
+    test: h1-parsing.tentative.html?include=before-slash
+  - subtest: CR at <before-slash> should result in Network Error (fetch)
+    test: h1-parsing.tentative.html?include=before-slash
+  - subtest: CR at <before-slash> should result in Network Error frame
+    test: h1-parsing.tentative.html?include=before-slash
+  - subtest: HTAB at <before-slash> should result in Network Error (fetch)
+    test: h1-parsing.tentative.html?include=before-slash
+  - subtest: HTAB at <before-slash> should result in Network Error frame
+    test: h1-parsing.tentative.html?include=before-slash
+  - subtest: SP at <before-slash> should result in Network Error (fetch)
+    test: h1-parsing.tentative.html?include=before-slash
+  - subtest: SP at <before-slash> should result in Network Error frame
+    test: h1-parsing.tentative.html?include=before-slash
+  - subtest: NUL at <before-slash> should result in Network Error (fetch)
+    test: h1-parsing.tentative.html?include=before-slash
+  - subtest: NUL at <before-slash> should result in Network Error frame
+    test: h1-parsing.tentative.html?include=before-slash
+  - subtest: COLON at <before-slash> should result in Network Error (fetch)
+    test: h1-parsing.tentative.html?include=before-slash
+  - subtest: COLON at <before-slash> should result in Network Error frame
+    test: h1-parsing.tentative.html?include=before-slash
+  - subtest: NUL at <in-name> should result in Network Error (fetch)
+    test: h1-parsing.tentative.html?include=in-name
+  - subtest: NUL at <in-name> should result in Network Error frame
+    test: h1-parsing.tentative.html?include=in-name
+  - subtest: LF at <in-http> should result in Network Error (fetch)
+    test: h1-parsing.tentative.html?include=in-http
+  - subtest: LF at <in-http> should result in Network Error frame
+    test: h1-parsing.tentative.html?include=in-http
+  - subtest: CR at <in-http> should result in Network Error (fetch)
+    test: h1-parsing.tentative.html?include=in-http
+  - subtest: CR at <in-http> should result in Network Error frame
+    test: h1-parsing.tentative.html?include=in-http
+  - subtest: HTAB at <in-http> should result in Network Error (fetch)
+    test: h1-parsing.tentative.html?include=in-http
+  - subtest: HTAB at <in-http> should result in Network Error frame
+    test: h1-parsing.tentative.html?include=in-http
+  - subtest: SP at <in-http> should result in Network Error (fetch)
+    test: h1-parsing.tentative.html?include=in-http
+  - subtest: SP at <in-http> should result in Network Error frame
+    test: h1-parsing.tentative.html?include=in-http
+  - subtest: NUL at <in-http> should result in Network Error (fetch)
+    test: h1-parsing.tentative.html?include=in-http
+  - subtest: NUL at <in-http> should result in Network Error frame
+    test: h1-parsing.tentative.html?include=in-http
+  - subtest: COLON at <in-http> should result in Network Error (fetch)
+    test: h1-parsing.tentative.html?include=in-http
+  - subtest: COLON at <in-http> should result in Network Error frame
+    test: h1-parsing.tentative.html?include=in-http
+  - subtest: LF at <before-num> should result in Network Error frame
+    test: h1-parsing.tentative.html?include=before-num
+  - subtest: CR at <before-num> should result in Network Error (fetch)
+    test: h1-parsing.tentative.html?include=before-num
+  - subtest: HTAB at <before-num> should result in Network Error (fetch)
+    test: h1-parsing.tentative.html?include=before-num
+  - subtest: SP at <before-num> should result in Network Error (fetch)
+    test: h1-parsing.tentative.html?include=before-num
+  - subtest: NUL at <before-num> should result in Network Error frame
+    test: h1-parsing.tentative.html?include=before-num
+  - subtest: COLON at <before-num> should result in Network Error frame
+    test: h1-parsing.tentative.html?include=before-num
+  - subtest: LF at <after-dot> should result in Network Error (fetch)
+    test: h1-parsing.tentative.html?include=after-dot
+  - subtest: CR at <after-dot> should result in Network Error (fetch)
+    test: h1-parsing.tentative.html?include=after-dot
+  - subtest: HTAB at <after-dot> should result in Network Error (fetch)
+    test: h1-parsing.tentative.html?include=after-dot
+  - subtest: SP at <after-dot> should result in Network Error (fetch)
+    test: h1-parsing.tentative.html?include=after-dot
+  - subtest: NUL at <after-dot> should result in Network Error (fetch)
+    test: h1-parsing.tentative.html?include=after-dot
+  - subtest: COLON at <after-dot> should result in Network Error (fetch)
+    test: h1-parsing.tentative.html?include=after-dot
+  - subtest: CR at <before-reason> should result in Network Error (fetch)
+    test: h1-parsing.tentative.html?include=before-reason
+  - subtest: NUL at <before-reason> should result in Network Error (fetch)
+    test: h1-parsing.tentative.html?include=before-reason
+  - subtest: CR at <after-num> should result in Network Error (fetch)
+    test: h1-parsing.tentative.html?include=after-num
+  - subtest: HTAB at <after-num> should result in Network Error (fetch)
+    test: h1-parsing.tentative.html?include=after-num
+  - subtest: NUL at <after-num> should result in Network Error frame
+    test: h1-parsing.tentative.html?include=after-num
+  - subtest: COLON at <after-num> should result in Network Error frame
+    test: h1-parsing.tentative.html?include=after-num
+  - subtest: HTAB at <first> should result in Network Error (fetch)
+    test: h1-parsing.tentative.html?include=first
+  - subtest: SP at <first> should result in Network Error (fetch)
+    test: h1-parsing.tentative.html?include=first
+  - subtest: NUL at <first> should result in Network Error (fetch)
+    test: h1-parsing.tentative.html?include=first
+  - subtest: COLON at <first> should result in Network Error (fetch)
+    test: h1-parsing.tentative.html?include=first
+  - subtest: CR at <leading> should result in Network Error (fetch)
+    test: h1-parsing.tentative.html?include=leading
+  - subtest: CR at <leading> should result in Network Error frame
+    test: h1-parsing.tentative.html?include=leading
+  - subtest: NUL at <leading> should result in Network Error (fetch)
+    test: h1-parsing.tentative.html?include=leading
+  - subtest: NUL at <leading> should result in Network Error frame
+    test: h1-parsing.tentative.html?include=leading
+  - subtest: CR at <after-value> should result in Network Error frame
+    test: h1-parsing.tentative.html?include=after-value
+  - subtest: HTAB at <before-colon> should result in Network Error frame
+    test: h1-parsing.tentative.html?include=before-colon
+  - subtest: SP at <before-colon> should result in Network Error frame
+    test: h1-parsing.tentative.html?include=before-colon
+  - subtest: NUL at <before-colon> should result in Network Error (fetch)
+    test: h1-parsing.tentative.html?include=before-colon
+  - subtest: NUL at <before-colon> should result in Network Error frame
+    test: h1-parsing.tentative.html?include=before-colon
+  - subtest: CR at <in-value> should result in Network Error (fetch)
+    test: h1-parsing.tentative.html?include=in-value
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2039811
