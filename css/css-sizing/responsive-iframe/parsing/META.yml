@@ -1,0 +1,26 @@
+links:
+- product: firefox
+  results:
+  - subtest: Property frame-sizing value 'auto'
+    test: frame-sizing-computed.html
+  - subtest: Property frame-sizing value 'content-width'
+    test: frame-sizing-computed.html
+  - subtest: Property frame-sizing value 'content-height'
+    test: frame-sizing-computed.html
+  - subtest: Property frame-sizing value 'content-inline-size'
+    test: frame-sizing-computed.html
+  - subtest: Property frame-sizing value 'content-block-size'
+    test: frame-sizing-computed.html
+  - subtest: e.style['frame-sizing'] = "auto" should set the property value
+    test: frame-sizing-valid.html
+  - subtest: e.style['frame-sizing'] = "content-width" should set the property value
+    test: frame-sizing-valid.html
+  - subtest: e.style['frame-sizing'] = "content-height" should set the property value
+    test: frame-sizing-valid.html
+  - subtest: e.style['frame-sizing'] = "content-inline-size" should set the property
+      value
+    test: frame-sizing-valid.html
+  - subtest: e.style['frame-sizing'] = "content-block-size" should set the property
+      value
+    test: frame-sizing-valid.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2040171
