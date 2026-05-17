@@ -1,30 +1,30 @@
 links:
 - product: firefox
-  results:
-  - subtest: Measure target with value=content-height and wm=undefined
-    test: responsive-iframe-value.tentative.html?value=content-height,300,200
-  - subtest: Measure target with value=content-width and wm=undefined
-    test: responsive-iframe-value.tentative.html?value=content-width,400,150
-  - subtest: Measure target with value=content-inline-size and wm=vertical-rl
-    test: responsive-iframe-value.tentative.html?value=content-inline-size,300,200,vertical-rl
-  - subtest: Measure target with value=content-inline-size and wm=undefined
-    test: responsive-iframe-value.tentative.html?value=content-inline-size,400,150
-  - subtest: Measure target with value=content-block-size and wm=vertical-rl
-    test: responsive-iframe-value.tentative.html?value=content-block-size,400,150,vertical-rl
-  - subtest: Measure target with value=content-block-size and wm=undefined
-    test: responsive-iframe-value.tentative.html?value=content-block-size,300,200
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=2020881
-- product: firefox
   results:
-  - test: responsive-iframe-dynamic-remove.tentative.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2031952
+  - test: responsive-iframe-value.tentative.html?value=content-height,300,200
+    subtest: Measure target with value=content-height and wm=undefined
+  - test: responsive-iframe-value.tentative.html?value=content-width,400,150
+    subtest: Measure target with value=content-width and wm=undefined
+  - test: responsive-iframe-value.tentative.html?value=content-inline-size,300,200,vertical-rl
+    subtest: Measure target with value=content-inline-size and wm=vertical-rl
+  - test: responsive-iframe-value.tentative.html?value=content-inline-size,400,150
+    subtest: Measure target with value=content-inline-size and wm=undefined
+  - test: responsive-iframe-value.tentative.html?value=content-block-size,400,150,vertical-rl
+    subtest: Measure target with value=content-block-size and wm=vertical-rl
+  - test: responsive-iframe-value.tentative.html?value=content-block-size,300,200
+    subtest: Measure target with value=content-block-size and wm=undefined
 - product: firefox
-  results:
-  - test: responsive-iframe-meta-after-head.tentative.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2031970
-- product: firefox
-  results:
-  - test: responsive-iframe-dom-content-loaded.tentative.html
-  - subtest: '`DOMContentLoaded` triggers resizing'
-    test: responsive-iframe-dom-content-loaded.tentative.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=2033704
+  results:
+  - test: responsive-iframe-dom-content-loaded.html
+  - test: responsive-iframe-dom-content-loaded.html
+    subtest: '`DOMContentLoaded` triggers resizing'
+- product: firefox
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2031952
+  results:
+  - test: responsive-iframe-dynamic-remove.html
+- product: firefox
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2031970
+  results:
+  - test: responsive-iframe-meta-after-head.html
