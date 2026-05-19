@@ -3322,3 +3322,10 @@ links:
   - subtest: calc(1px * pow(50% / 1px, 1)) should be used-value-equivalent to 50px
     test: typed_arithmetic.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=2036814
+- product: firefox
+  results:
+  - subtest: 'CSS Values and Units Test: attr 170'
+    test: attr-all-types.html
+  - subtest: '''--x: attr(data-foo type(<url>))'' with data-foo="url(https://does-not-exist.test/404.png)"'
+    test: attr-security.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2039691
