@@ -239,3 +239,14 @@ links:
   - subtest: e.style['max-lines'] = "6" should set the property value
     test: max-lines-valid.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=2040566
+- product: firefox
+  results:
+  - subtest: inline-start and left map to the same pseudo-element in horizontal LTR
+    test: getComputedStyle-scroll-button.html
+  - subtest: getComputedStyle() resolves properties when pseudo-element is not created
+      due to no content
+    test: getComputedStyle-scroll-button.html
+  - subtest: getComputedStyle() resolves properties when the originating element is
+      not a scroll container
+    test: getComputedStyle-scroll-button.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2041236
