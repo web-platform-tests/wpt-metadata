@@ -232,3 +232,10 @@ links:
       value
     test: line-clamp-valid.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=2036754
+- product: firefox
+  results:
+  - subtest: e.style['max-lines'] = "1" should set the property value
+    test: max-lines-valid.html
+  - subtest: e.style['max-lines'] = "6" should set the property value
+    test: max-lines-valid.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2040566
