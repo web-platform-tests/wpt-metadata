@@ -1,5 +1,6 @@
 links:
 - product: firefox
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2038513
   results:
   - test: balance-001.html
   - test: balance-002.html
@@ -19,45 +20,44 @@ links:
   - test: balance-min-line-count-003.html
   - test: balance-min-line-count-004.html
   - test: balance-min-line-count-005.html
-  - test: balance-negative-margin.html
   - test: balance-percentage-size-001.html
   - test: balance-percentage-size-002.html
-  - subtest: Property flex-line-count value '1'
-    test: flex-line-count-computed.html
-  - subtest: Property flex-line-count value '2'
-    test: flex-line-count-computed.html
-  - subtest: Property flex-line-count value 'round(up, calc(7/2))'
-    test: flex-line-count-computed.html
-  - subtest: e.style['flex-line-count'] = "1" should set the property value
-    test: flex-line-count-valid.html
-  - subtest: e.style['flex-line-count'] = "2" should set the property value
-    test: flex-line-count-valid.html
-  - subtest: Property flex-wrap value 'balance'
-    test: flex-wrap-computed.html
-  - subtest: Property flex-wrap value 'wrap balance'
-    test: flex-wrap-computed.html
-  - subtest: Property flex-wrap value 'wrap-reverse balance'
-    test: flex-wrap-computed.html
-  - subtest: Property flex-wrap value 'balance wrap'
-    test: flex-wrap-computed.html
-  - subtest: Property flex-wrap value 'balance wrap-reverse'
-    test: flex-wrap-computed.html
-  - subtest: e.style['flex-wrap'] = "balance" should set the property value
-    test: flex-wrap-valid.html
-  - subtest: e.style['flex-wrap'] = "wrap balance" should set the property value
-    test: flex-wrap-valid.html
-  - subtest: e.style['flex-wrap'] = "wrap-reverse balance" should set the property
+  - test: flex-line-count-computed.html
+    subtest: Property flex-line-count value '1'
+  - test: flex-line-count-computed.html
+    subtest: Property flex-line-count value '2'
+  - test: flex-line-count-computed.html
+    subtest: Property flex-line-count value 'round(up, calc(7/2))'
+  - test: flex-line-count-valid.html
+    subtest: e.style['flex-line-count'] = "1" should set the property value
+  - test: flex-line-count-valid.html
+    subtest: e.style['flex-line-count'] = "2" should set the property value
+  - test: flex-wrap-computed.html
+    subtest: Property flex-wrap value 'balance'
+  - test: flex-wrap-computed.html
+    subtest: Property flex-wrap value 'wrap balance'
+  - test: flex-wrap-computed.html
+    subtest: Property flex-wrap value 'wrap-reverse balance'
+  - test: flex-wrap-computed.html
+    subtest: Property flex-wrap value 'balance wrap'
+  - test: flex-wrap-computed.html
+    subtest: Property flex-wrap value 'balance wrap-reverse'
+  - test: flex-wrap-valid.html
+    subtest: e.style['flex-wrap'] = "balance" should set the property value
+  - test: flex-wrap-valid.html
+    subtest: e.style['flex-wrap'] = "wrap balance" should set the property value
+  - test: flex-wrap-valid.html
+    subtest: e.style['flex-wrap'] = "wrap-reverse balance" should set the property
       value
-    test: flex-wrap-valid.html
-  - subtest: e.style['flex-wrap'] = "balance wrap" should set the property value
-    test: flex-wrap-valid.html
-  - subtest: e.style['flex-wrap'] = "balance wrap-reverse" should set the property
+  - test: flex-wrap-valid.html
+    subtest: e.style['flex-wrap'] = "balance wrap" should set the property value
+  - test: flex-wrap-valid.html
+    subtest: e.style['flex-wrap'] = "balance wrap-reverse" should set the property
       value
-    test: flex-wrap-valid.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2038513
+  - test: balance-negative-margin-001.html
 - product: firefox
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2040109
   results:
   - test: balance-start-bias-001.html
   - test: balance-start-bias-002.html
   - test: balance-start-bias-003.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2040109

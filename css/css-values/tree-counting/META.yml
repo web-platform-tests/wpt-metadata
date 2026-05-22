@@ -113,3 +113,16 @@ links:
   - subtest: sibling-count() on root
     test: calc-sibling-function.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1977503
+- product: firefox
+  results:
+  - subtest: 'rotate property: cos() with runtime angle argument converts degrees
+      to radians'
+    test: trig-functions-with-runtime-angle-arguments.html
+  - subtest: 'rotate property: first element gets correct cos(30deg) value'
+    test: trig-functions-with-runtime-angle-arguments.html
+  - subtest: 'rotate property: last element gets correct cos(150deg) value'
+    test: trig-functions-with-runtime-angle-arguments.html
+  - subtest: 'transform rotate(): cos() with runtime angle argument converts degrees
+      to radians'
+    test: trig-functions-with-runtime-angle-arguments.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2039169
