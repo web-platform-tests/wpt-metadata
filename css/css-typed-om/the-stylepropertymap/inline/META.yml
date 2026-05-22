@@ -25,3 +25,14 @@ links:
   - subtest: Declared StylePropertyMap.get reflects changes in the inline style
     test: get.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1932747
+- product: firefox
+  results:
+  - subtest: attributeStyleMap.delete() triggers attributeChangedCallback
+    test: attribute-changed-callback.html
+  - subtest: attributeStyleMap.clear() triggers attributeChangedCallback
+    test: attribute-changed-callback.html
+  - subtest: attributeStyleMap.append() triggers attributeChangedCallback
+    test: attribute-changed-callback.html
+  - subtest: attributeStyleMap.delete() with custom property triggers attributeChangedCallback
+    test: attribute-changed-callback.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2038827
