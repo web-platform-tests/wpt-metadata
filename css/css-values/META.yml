@@ -3329,3 +3329,129 @@ links:
   - subtest: '''--x: attr(data-foo type(<url>))'' with data-foo="url(https://does-not-exist.test/404.png)"'
     test: attr-security.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=2039691
+- product: firefox
+  results:
+  - subtest: e.style['height'] = "random(auto, 0px, 100px)" should set the property
+      value
+    test: random-serialize.tentative.html
+  - subtest: e.style['width'] = "random(element-scoped, 0px, 100px)" should set the
+      property value
+    test: random-serialize.tentative.html
+  - subtest: e.style['font-size'] = "random(property-scoped, 0px, 100px)" should set
+      the property value
+    test: random-serialize.tentative.html
+  - subtest: e.style['font-size'] = "random(--foo property-scoped, 0px, 100px)" should
+      set the property value
+    test: random-serialize.tentative.html
+  - subtest: e.style['width'] = "random(property-index-scoped, 0px, 100px)" should
+      set the property value
+    test: random-serialize.tentative.html
+  - subtest: e.style['width'] = "random(--foo property-index-scoped, 0px, 100px)"
+      should set the property value
+    test: random-serialize.tentative.html
+  - subtest: e.style['width'] = "random(element-scoped property-scoped, 0px, 100px)"
+      should set the property value
+    test: random-serialize.tentative.html
+  - subtest: e.style['width'] = "random(--foo element-scoped property-scoped, 0px,
+      100px)" should set the property value
+    test: random-serialize.tentative.html
+  - subtest: e.style['height'] = "random(property-scoped element-scoped, 0px, 100px)"
+      should set the property value
+    test: random-serialize.tentative.html
+  - subtest: e.style['height'] = "random(--foo property-scoped element-scoped, 0px,
+      100px)" should set the property value
+    test: random-serialize.tentative.html
+  - subtest: e.style['width'] = "random(element-scoped property-index-scoped, 0px,
+      100px)" should set the property value
+    test: random-serialize.tentative.html
+  - subtest: e.style['width'] = "random(--foo element-scoped property-index-scoped,
+      0px, 100px)" should set the property value
+    test: random-serialize.tentative.html
+  - subtest: e.style['width'] = "random(property-index-scoped element-scoped , 0px,
+      100px)" should set the property value
+    test: random-serialize.tentative.html
+  - subtest: e.style['width'] = "random(--foo property-index-scoped element-scoped
+      , 0px, 100px)" should set the property value
+    test: random-serialize.tentative.html
+  - subtest: e.style['height'] = "random(0px, 100px, 3px)" should set the property
+      value
+    test: random-serialize.tentative.html
+  - subtest: e.style['width'] = "random(element-scoped, 0px, 100px, 3px)" should set
+      the property value
+    test: random-serialize.tentative.html
+  - subtest: e.style['width'] = "random(property-scoped, 0px, 100px, 3px)" should
+      set the property value
+    test: random-serialize.tentative.html
+  - subtest: e.style['width'] = "random(--foo property-scoped, 0px, 100px, 3px)" should
+      set the property value
+    test: random-serialize.tentative.html
+  - subtest: e.style['width'] = "random(property-index-scoped, 0px, 100px, 3px)" should
+      set the property value
+    test: random-serialize.tentative.html
+  - subtest: e.style['width'] = "random(--foo property-index-scoped, 0px, 100px, 3px)"
+      should set the property value
+    test: random-serialize.tentative.html
+  - subtest: e.style['width'] = "random(element-scoped property-scoped, 0px, 100px,
+      3px)" should set the property value
+    test: random-serialize.tentative.html
+  - subtest: e.style['width'] = "random(--foo element-scoped property-scoped, 0px,
+      100px, 3px)" should set the property value
+    test: random-serialize.tentative.html
+  - subtest: e.style['width'] = "random(property-scoped element-scoped , 0px, 100px,
+      3px)" should set the property value
+    test: random-serialize.tentative.html
+  - subtest: e.style['width'] = "random(--foo property-scoped element-scoped , 0px,
+      100px, 3px)" should set the property value
+    test: random-serialize.tentative.html
+  - subtest: e.style['width'] = "random(element-scoped property-index-scoped, 0px,
+      100px, 3px)" should set the property value
+    test: random-serialize.tentative.html
+  - subtest: e.style['width'] = "random(--foo element-scoped property-index-scoped,
+      0px, 100px, 3px)" should set the property value
+    test: random-serialize.tentative.html
+  - subtest: e.style['width'] = "random(property-index-scoped element-scoped , 0px,
+      100px, 3px)" should set the property value
+    test: random-serialize.tentative.html
+  - subtest: e.style['width'] = "random(--foo property-index-scoped element-scoped
+      , 0px, 100px, 3px)" should set the property value
+    test: random-serialize.tentative.html
+  - subtest: e.style['width'] = "random(--\\{ element-scoped, 0px, 100px, 3px)" should
+      set the property value
+    test: random-serialize.tentative.html
+  - subtest: e.style['width'] = "random(ua-width, 10px, 20%)" should set the property
+      value
+    test: random-serialize.tentative.html
+  - subtest: e.style['width'] = "random(--foo ua-width, 10px, 20%)" should set the
+      property value
+    test: random-serialize.tentative.html
+  - subtest: e.style['width'] = "random(ua-width-1, 10px, 20%)" should set the property
+      value
+    test: random-serialize.tentative.html
+  - subtest: e.style['width'] = "random(--foo ua-width-1, 10px, 20%)" should set the
+      property value
+    test: random-serialize.tentative.html
+  - subtest: e.style['width'] = "random(element-scoped ua-height-1, 10px, 20%)" should
+      set the property value
+    test: random-serialize.tentative.html
+  - subtest: e.style['width'] = "random(--foo element-scoped ua-height-1, 10px, 20%)"
+      should set the property value
+    test: random-serialize.tentative.html
+  - subtest: e.style['width'] = "random(ua-height-1 element-scoped, 10px, 20%)" should
+      set the property value
+    test: random-serialize.tentative.html
+  - subtest: e.style['width'] = "random(--foo ua-height-1 element-scoped, 10px, 20%)"
+      should set the property value
+    test: random-serialize.tentative.html
+  - subtest: e.style['width'] = "random(ua-x, 10px, 20%)" should set the property
+      value
+    test: random-serialize.tentative.html
+  - subtest: e.style['width'] = "random(--foo ua-x, 10px, 20%)" should set the property
+      value
+    test: random-serialize.tentative.html
+  - subtest: e.style['width'] = "random(ua-x element-scoped, 10px, 20%)" should set
+      the property value
+    test: random-serialize.tentative.html
+  - subtest: e.style['width'] = "random(--foo ua-x element-scoped, 10px, 20%)" should
+      set the property value
+    test: random-serialize.tentative.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2041386

@@ -1,30 +1,29 @@
 links:
 - product: firefox
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1811571
   results:
   - test: content-with-clip.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1811571
 - product: firefox
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1815787
   results:
   - test: named-element-with-fix-pos-child-new.html
   - test: named-element-with-fix-pos-child-old.html
-  - test: only-child-group.html
-    subtest: :only-child should match because ::view-transition-group is generated
+  - subtest: :only-child should match because ::view-transition-group is generated
       for root element only
-  - test: only-child-new.html
-    subtest: :only-child should match because ::view-transition-old is not generated
+    test: only-child-group.html
+  - subtest: :only-child should match because ::view-transition-old is not generated
       (none to root)
-  - test: only-child-new.html
-    subtest: :only-child should not match because ::view-transition-old is generated
+    test: only-child-new.html
+  - subtest: :only-child should not match because ::view-transition-old is generated
       (root to root)
-  - test: only-child-old.html
-    subtest: :only-child should match because ::view-transition-new is not generated
+    test: only-child-new.html
+  - subtest: :only-child should match because ::view-transition-new is not generated
       (root to none)
-  - test: only-child-old.html
-    subtest: :only-child should not match because ::view-transition-new is generated
+    test: only-child-old.html
+  - subtest: :only-child should not match because ::view-transition-new is generated
       (root to root)
+    test: only-child-old.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1815787
 - product: firefox
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1817261
   results:
   - test: break-inside-avoid-child.html
   - test: fractional-translation-from-position.html
@@ -32,8 +31,8 @@ links:
   - test: inline-child-with-filter.html
   - test: new-content-root-scrollbar-with-fixed-background.html
   - test: rtl-with-scrollbar.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1817261
 - product: firefox
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1819697
   results:
   - test: 3d-transform-incoming.html
   - test: content-visibility-auto-shared-element.html
@@ -77,145 +76,145 @@ links:
   - test: old-content-with-overflow.html
   - test: root-style-change-during-animation.html
   - test: set-universal-specificity.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1819697
 - product: firefox
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1820121
   results:
-  - test: web-animation-pseudo-incorrect-name.html
-    subtest: animation created with incorrect name
+  - subtest: animation created with incorrect name
+    test: web-animation-pseudo-incorrect-name.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1820121
 - product: firefox
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1825647
   results:
   - test: element-stops-grouping-after-animation.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1825647
 - product: firefox
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1825674
   results:
   - test: offscreen-element-modified-before-coming-onscreen.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1825674
 - product: firefox
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1825883
   results:
   - test: massive-element-on-top-of-viewport-offscreen-new.html
   - test: massive-element-on-top-of-viewport-offscreen-old.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1825883
 - product: firefox
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1825954
   results:
   - test: new-content-changes-overflow.html
   - test: new-content-with-object-view-box.html
   - test: old-content-with-object-view-box.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1825954
 - product: firefox
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1829466
   results:
   - test: animating-new-content-subset.html
   - test: animating-new-content.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1829466
 - product: firefox
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1832916
   results:
   - test: exit-transition-with-anonymous-layout-object.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1832916
 - product: firefox
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1832964
   results:
   - test: fractional-box-with-overflow-children-new.html
   - test: fractional-box-with-overflow-children-old.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1832964
 - product: firefox
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1839538
   results:
   - test: pseudo-rendering-invalidation.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1839538
 - product: firefox
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1842045
   results:
   - test: writing-mode-container-resize.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1842045
 - product: firefox
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1842695
   results:
   - test: group-animation-for-root-transition.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1842695
 - product: firefox
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1842710
   results:
   - test: group-animation-for-root-transition.html
   - test: web-animations-api.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1842710
 - product: firefox
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1846664
   results:
   - test: capture-with-opacity-zero-child.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1846664
 - product: firefox
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1852272
   results:
   - test: span-with-overflowing-text-hidden.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1852272
 - product: firefox
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1863822
   results:
   - test: block-with-overflowing-text.html
   - test: span-with-overflowing-text.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1863822
 - product: firefox
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1866380
   results:
-  - test: group-animation-for-root-transition.html
-    subtest: incorrect UA animations for root transition
-  - test: only-child-group.html
-    subtest: :only-child should not match because ::view-transition-group is generated
+  - subtest: incorrect UA animations for root transition
+    test: group-animation-for-root-transition.html
+  - subtest: :only-child should not match because ::view-transition-group is generated
       for multiple elements
-  - test: only-child-group.html
-    subtest: :only-child should match because ::view-transition-group is generated
+    test: only-child-group.html
+  - subtest: :only-child should match because ::view-transition-group is generated
       for sub element only
-  - test: only-child-group.html
-    subtest: :only-child should not match because ::view-transition-group is generated
+    test: only-child-group.html
+  - subtest: :only-child should not match because ::view-transition-group is generated
       for multiple sub elements
-  - test: only-child-image-pair.html
-    subtest: :only-child should always match for ::view-transition-image-pair
-  - test: only-child-new.html
-    subtest: :only-child should not match because ::view-transition-old is generated
+    test: only-child-group.html
+  - subtest: :only-child should always match for ::view-transition-image-pair
+    test: only-child-image-pair.html
+  - subtest: :only-child should not match because ::view-transition-old is generated
       (element to root)
-  - test: only-child-new.html
-    subtest: :only-child should match because ::view-transition-old is not generated
+    test: only-child-new.html
+  - subtest: :only-child should match because ::view-transition-old is not generated
       (none to element)
-  - test: only-child-new.html
-    subtest: :only-child should not match because ::view-transition-old is generated
+    test: only-child-new.html
+  - subtest: :only-child should not match because ::view-transition-old is generated
       (root to element)
-  - test: only-child-new.html
-    subtest: :only-child should not match because ::view-transition-old is generated
+    test: only-child-new.html
+  - subtest: :only-child should not match because ::view-transition-old is generated
       (element to element)
-  - test: only-child-old.html
-    subtest: :only-child should not match because ::view-transition-new is generated
+    test: only-child-new.html
+  - subtest: :only-child should not match because ::view-transition-new is generated
       (root to element)
-  - test: only-child-old.html
-    subtest: :only-child should match because ::view-transition-new is not generated
+    test: only-child-old.html
+  - subtest: :only-child should match because ::view-transition-new is not generated
       (element to none)
-  - test: only-child-old.html
-    subtest: :only-child should not match because ::view-transition-new is generated
+    test: only-child-old.html
+  - subtest: :only-child should not match because ::view-transition-new is generated
       (element to root)
-  - test: only-child-old.html
-    subtest: :only-child should not match because ::view-transition-new is generated
+    test: only-child-old.html
+  - subtest: :only-child should not match because ::view-transition-new is generated
       (element to element)
-  - test: only-child-on-root-element-with-view-transition.html
-    subtest: :only-child is not supported on view-transition
-  - test: only-child-view-transition.html
-    subtest: :only-child is not supported on view-transition
+    test: only-child-old.html
+  - subtest: :only-child is not supported on view-transition
+    test: only-child-on-root-element-with-view-transition.html
+  - subtest: :only-child is not supported on view-transition
+    test: only-child-view-transition.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1866380
 - product: firefox
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1867829
   results:
-  - test: no-crash-set-exception.html
-    subtest: An exception thrown during a transition shouldn't crash.
+  - subtest: An exception thrown during a transition shouldn't crash.
+    test: no-crash-set-exception.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1867829
 - product: firefox
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1870589
   results:
   - test: document-element-detached-crash.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1870589
 - product: firefox
+  results:
+  - subtest: style inheritance of pseudo elements
+    test: style-inheritance.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1871858
-  results:
-  - test: style-inheritance.html
-    subtest: style inheritance of pseudo elements
 - product: firefox
+  results:
+  - subtest: position property of pseudo elements
+    test: pseudo-get-computed-style.html
+  - subtest: properties of pseudo elements outside of transition
+    test: pseudo-get-computed-style.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1880786
-  results:
-  - test: pseudo-get-computed-style.html
-    subtest: position property of pseudo elements
-  - test: pseudo-get-computed-style.html
-    subtest: properties of pseudo elements outside of transition
 - product: firefox
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1886501
   results:
   - test: no-white-flash-before-activation.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1886501
 - product: firefox
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1888110
   results:
   - test: inline-element-size.html
   - test: massive-element-below-and-on-top-of-viewport-partially-onscreen-new.html
@@ -235,88 +234,88 @@ links:
   - test: no-root-capture.html
   - test: nothing-captured.html
   - test: snapshot-containing-block-absolute.html
-  - test: hit-test-unpainted-element-from-point.html
-    subtest: hit test should not hit unpainted element, but does hit pseudo and unrelated
+  - subtest: hit test should not hit unpainted element, but does hit pseudo and unrelated
       elements
-  - test: no-crash-view-transition-in-massive-iframe.html
-    subtest: startViewTransition in massive iframe shouldn't crash.
-  - test: no-css-animation-while-render-blocked.html
-    subtest: CSS animation is blocked until prepare callback
-  - test: no-raf-while-render-blocked.html
-    subtest: rAF is blocked until prepare callback
-  - test: window-resize-aborts-transition-before-ready.html
-    subtest: ' View transitions: Resizing viewport before animating rejects the ready
+    test: hit-test-unpainted-element-from-point.html
+  - subtest: startViewTransition in massive iframe shouldn't crash.
+    test: no-crash-view-transition-in-massive-iframe.html
+  - subtest: CSS animation is blocked until prepare callback
+    test: no-css-animation-while-render-blocked.html
+  - subtest: rAF is blocked until prepare callback
+    test: no-raf-while-render-blocked.html
+  - subtest: ' View transitions: Resizing viewport before animating rejects the ready
       promise. '
-  - test: window-resize-aborts-transition.html
-    subtest: 'View transitions: Resizing viewport skips the transition'
+    test: window-resize-aborts-transition-before-ready.html
+  - subtest: 'View transitions: Resizing viewport skips the transition'
+    test: window-resize-aborts-transition.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1888110
 - product: firefox
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1889542
   results:
-  - test: update-callback-timeout.html
-    subtest: View transition should have an implementation-defined timeout on the
+  - subtest: View transition should have an implementation-defined timeout on the
       update callback
+    test: update-callback-timeout.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1889542
 - product: firefox
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1892178
   results:
   - test: rotated-cat-off-top-edge.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1892178
 - product: firefox
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1892179
   results:
   - test: pseudo-element-preserve-3d.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1892179
 - product: firefox
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1893703
   results:
   - test: iframe-transition-destroyed-document-crash.html
   - test: root-element-display-none-during-transition-crash.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1893703
 - product: firefox
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1896075
   results:
-  - test: duplicate-tag-rejects-start.html
-    subtest: Two different elements with the same name in the new DOM should skip
+  - subtest: Two different elements with the same name in the new DOM should skip
       the transition
+    test: duplicate-tag-rejects-start.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1896075
 - product: firefox
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1901417
   results:
   - test: new-content-flat-transform-ancestor.html
   - test: new-content-preserve-3d-ancestor.html
   - test: new-content-transform-position-fixed.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1901417
 - product: firefox
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1901416
   results:
   - test: new-content-ancestor-clipped-2.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1901416
 - product: firefox
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1901657
   results:
   - test: new-content-root-scrollbar-with-fixed-background.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1901657
 - product: firefox
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1902802
   results:
   - test: active-view-transition-pseudo-class-match.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1902802
 - product: firefox
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1902734
   results:
   - test: reset-state-after-scrolled-view-transition.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1902734
 - product: firefox
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1903617
   results:
-  - test: hit-test-pseudo-element-element-from-point.html
-    subtest: Hit-testing view transition pseudo-elements should always return the
+  - subtest: Hit-testing view transition pseudo-elements should always return the
       document element
+    test: hit-test-pseudo-element-element-from-point.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1903617
 - product: firefox
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1906477
   results:
   - test: new-content-escapes-clip-with-abspos-child.html
   - test: old-content-escapes-clip-with-abspos-child.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1906477
 - product: firefox
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1906474
   results:
   - test: shadow-part-with-name-overridden-by-important.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1906474
 - product: firefox
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1910224
   results:
   - test: no-named-elements.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1910224
 - product: firefox
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1910662
   results:
   - test: pseudo-with-classes-entry.html
   - test: pseudo-with-classes-exit.html
@@ -333,44 +332,45 @@ links:
   - test: pseudo-with-classes-old-with-class-new-without.html
   - test: pseudo-with-classes-view-transition-group.html
   - test: pseudo-with-classes-view-transition-image-pair.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1910662
 - product: firefox
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1911215
   results:
   - test: massive-element-left-of-viewport-partially-onscreen-new.html
   - test: multiline-span-with-overflowing-text-and-box-decorations.html
   - test: span-with-overflowing-text-and-box-decorations.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1911215
 - product: firefox
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1913388
   results:
   - test: view-transition-types-reserved-mutation.html
   - test: view-transition-types-reserved.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1913388
 - product: firefox
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1916502
   results:
-  - test: transition-in-hidden-page.html
-    subtest: A view transition should be immediately skipped if started when document
+  - subtest: A view transition should be immediately skipped if started when document
       is hidden
-  - test: transition-in-hidden-page.html
-    subtest: A view transition should be skipped when a document becomes hidden while
+    test: transition-in-hidden-page.html
+  - subtest: A view transition should be skipped when a document becomes hidden while
       processing update callback
-  - test: transition-in-hidden-page.html
-    subtest: A view transition should be skipped when a document becomes hidden while
+    test: transition-in-hidden-page.html
+  - subtest: A view transition should be skipped when a document becomes hidden while
       animating
+    test: transition-in-hidden-page.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1916502
 - product: firefox
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1916817
   results:
   - test: update-callback-called-once.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1916817
 - product: firefox
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1920345
   results:
   - test: element-is-grouping-during-animation.html
   - test: transform-origin-view-transition-group.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1920345
 - product: firefox
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1924965
   results:
   - test: inline-child-with-overflow-shadow.html
   - test: nested-elements-in-overflow.html
   - test: outer-padding-inner-background.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1924965
 - label: interop-2025-view-transitions
   results:
   - test: new-content-captures-clip-path.html
@@ -630,203 +630,203 @@ links:
       first
   - test: web-animations-api-parse-pseudo-argument.html?first-pseudo=::view-transition-group(first
 - product: chrome
-  url: https://issuetracker.google.com/399098315
   results:
   - test: window-resize-aborts-transition-before-ready.html
+  url: https://issuetracker.google.com/399098315
 - product: chrome
-  url: https://issuetracker.google.com/399098139
   results:
   - test: transition-skipped-after-animation-started.html
+  url: https://issuetracker.google.com/399098139
 - product: chrome
-  url: https://issuetracker.google.com/399098430
   results:
   - test: pseudo-element-animations.html
+  url: https://issuetracker.google.com/399098430
 - product: chrome
-  url: https://issuetracker.google.com/399097364
   results:
   - test: only-child-group.html
+  url: https://issuetracker.google.com/399097364
 - product: chrome
-  url: https://issuetracker.google.com/399098233
   results:
   - test: no-painting-while-render-blocked.html
+  url: https://issuetracker.google.com/399098233
 - product: chrome
-  url: https://issuetracker.google.com/399098194
   results:
   - test: hit-test-pseudo-element-element-from-point.html
+  url: https://issuetracker.google.com/399098194
 - product: firefox
+  results:
+  - status: CRASH
+    test: start-view-transtion-skips-active.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1952366
-  results:
-  - test: start-view-transtion-skips-active.html
-    status: CRASH
 - product: firefox
+  results:
+  - subtest: Synchronously starting a view transition skips the previously active  transition.
+    test: start-view-transtion-skips-active.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1952367
-  results:
-  - test: start-view-transtion-skips-active.html
-    subtest: Synchronously starting a view transition skips the previously active  transition.
 - product: firefox
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1956636
   results:
   - test: auto-name-from-id.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1956636
 - product: firefox
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1957173
   results:
   - test: view-transition-types-matches-case-sensitive.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1957173
 - product: firefox
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1957174
   results:
   - test: active-view-transition-type-on-non-root.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1957174
 - product: firefox
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1957569
   results:
   - test: snapshot-containing-block-static.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1957569
 - product: firefox
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1958394
   results:
   - test: capture-with-offscreen-child-translated.html
   - test: capture-with-offscreen-child.html
   - test: capture-with-visibility-hidden-child.html
   - test: capture-with-visibility-mixed-descendants.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1958394
 - product: firefox
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1964188
   results:
-  - test: view-transition-types-mutable-no-document-element-crashtest.html
-    subtest: ViewTransitionTypeSet should not crash when documentElement is null
+  - subtest: ViewTransitionTypeSet should not crash when documentElement is null
+    test: view-transition-types-mutable-no-document-element-crashtest.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1964188
 - product: firefox
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1966905
   results:
   - test: content-with-transform-new-image.html
   - test: content-with-transform-old-image.html
   - test: inline-with-offset-from-containing-block.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1966905
 - product: firefox
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1968333
   results:
   - test: no-crash-set-exception.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1968333
 - product: firefox
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1968917
   results:
-  - test: auto-name-get-animations.html
-    subtest: Generated view-transition-names should be prefixed with -ua- in script
+  - subtest: Generated view-transition-names should be prefixed with -ua- in script
+    test: auto-name-get-animations.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1968917
 - product: firefox
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1973210
   results:
   - test: fractional-translation-from-transform.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1973210
 - product: firefox
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1976354
   results:
   - test: new-content-is-inline.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1976354
 - product: firefox
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1978360
   results:
   - test: column-span-during-transition-doesnt-skip.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1978360
 - product: firefox
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1980513
   results:
-  - test: finished-promise-defers-cleanup.html
-    subtest: View transition cleanup is deferred until after the frame where `finished`
+  - subtest: View transition cleanup is deferred until after the frame where `finished`
       promise resolves
+    test: finished-promise-defers-cleanup.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1980513
 - product: firefox
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1981263
   results:
-  - test: idlharness.html
-    subtest: 'ViewTransition interface: attribute types'
-  - test: idlharness.html
-    subtest: 'ViewTransition interface: document.startViewTransition() must inherit
+  - subtest: 'ViewTransition interface: attribute types'
+    test: idlharness.html
+  - subtest: 'ViewTransition interface: document.startViewTransition() must inherit
       property "types" with the proper type'
-  - test: idlharness.html
-    subtest: 'CSSViewTransitionRule interface: existence and properties of interface
+    test: idlharness.html
+  - subtest: 'CSSViewTransitionRule interface: existence and properties of interface
       object'
-  - test: idlharness.html
-    subtest: CSSViewTransitionRule interface object length
-  - test: idlharness.html
-    subtest: CSSViewTransitionRule interface object name
-  - test: idlharness.html
-    subtest: 'CSSViewTransitionRule interface: existence and properties of interface
+    test: idlharness.html
+  - subtest: CSSViewTransitionRule interface object length
+    test: idlharness.html
+  - subtest: CSSViewTransitionRule interface object name
+    test: idlharness.html
+  - subtest: 'CSSViewTransitionRule interface: existence and properties of interface
       prototype object'
-  - test: idlharness.html
-    subtest: 'CSSViewTransitionRule interface: existence and properties of interface
+    test: idlharness.html
+  - subtest: 'CSSViewTransitionRule interface: existence and properties of interface
       prototype object''s "constructor" property'
-  - test: idlharness.html
-    subtest: 'CSSViewTransitionRule interface: existence and properties of interface
+    test: idlharness.html
+  - subtest: 'CSSViewTransitionRule interface: existence and properties of interface
       prototype object''s @@unscopables property'
-  - test: idlharness.html
-    subtest: 'CSSViewTransitionRule interface: attribute navigation'
-  - test: idlharness.html
-    subtest: 'CSSViewTransitionRule interface: attribute types'
-  - test: idlharness.html
-    subtest: CSSViewTransitionRule must be primary interface of sheet.cssRules[0]
-  - test: idlharness.html
-    subtest: Stringification of sheet.cssRules[0]
-  - test: idlharness.html
-    subtest: 'CSSViewTransitionRule interface: sheet.cssRules[0] must inherit property
+    test: idlharness.html
+  - subtest: 'CSSViewTransitionRule interface: attribute navigation'
+    test: idlharness.html
+  - subtest: 'CSSViewTransitionRule interface: attribute types'
+    test: idlharness.html
+  - subtest: CSSViewTransitionRule must be primary interface of sheet.cssRules[0]
+    test: idlharness.html
+  - subtest: Stringification of sheet.cssRules[0]
+    test: idlharness.html
+  - subtest: 'CSSViewTransitionRule interface: sheet.cssRules[0] must inherit property
       "navigation" with the proper type'
-  - test: idlharness.html
-    subtest: 'CSSViewTransitionRule interface: sheet.cssRules[0] must inherit property
+    test: idlharness.html
+  - subtest: 'CSSViewTransitionRule interface: sheet.cssRules[0] must inherit property
       "types" with the proper type'
-  - test: idlharness.html
-    subtest: 'ViewTransitionTypeSet interface: existence and properties of interface
+    test: idlharness.html
+  - subtest: 'ViewTransitionTypeSet interface: existence and properties of interface
       object'
-  - test: idlharness.html
-    subtest: ViewTransitionTypeSet interface object length
-  - test: idlharness.html
-    subtest: ViewTransitionTypeSet interface object name
-  - test: idlharness.html
-    subtest: 'ViewTransitionTypeSet interface: existence and properties of interface
+    test: idlharness.html
+  - subtest: ViewTransitionTypeSet interface object length
+    test: idlharness.html
+  - subtest: ViewTransitionTypeSet interface object name
+    test: idlharness.html
+  - subtest: 'ViewTransitionTypeSet interface: existence and properties of interface
       prototype object'
-  - test: idlharness.html
-    subtest: 'ViewTransitionTypeSet interface: existence and properties of interface
+    test: idlharness.html
+  - subtest: 'ViewTransitionTypeSet interface: existence and properties of interface
       prototype object''s "constructor" property'
-  - test: idlharness.html
-    subtest: 'ViewTransitionTypeSet interface: existence and properties of interface
+    test: idlharness.html
+  - subtest: 'ViewTransitionTypeSet interface: existence and properties of interface
       prototype object''s @@unscopables property'
-  - test: idlharness.html
-    subtest: 'ViewTransitionTypeSet interface: setlike<DOMString>'
+    test: idlharness.html
+  - subtest: 'ViewTransitionTypeSet interface: setlike<DOMString>'
+    test: idlharness.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1981263
 - product: firefox
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1985764
   results:
   - test: view-transition-types-mutable-no-document-element-crashtest.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1985764
 - product: firefox
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1998081
   results:
-  - test: idlharness.html
-    subtest: 'ViewTransition interface: attribute transitionRoot'
-  - test: idlharness.html
-    subtest: 'ViewTransition interface: operation waitUntil(Promise<any>)'
-  - test: idlharness.html
-    subtest: 'ViewTransition interface: document.startViewTransition() must inherit
+  - subtest: 'ViewTransition interface: attribute transitionRoot'
+    test: idlharness.html
+  - subtest: 'ViewTransition interface: operation waitUntil(Promise<any>)'
+    test: idlharness.html
+  - subtest: 'ViewTransition interface: document.startViewTransition() must inherit
       property "transitionRoot" with the proper type'
-  - test: idlharness.html
-    subtest: 'ViewTransition interface: document.startViewTransition() must inherit
+    test: idlharness.html
+  - subtest: 'ViewTransition interface: document.startViewTransition() must inherit
       property "waitUntil(Promise<any>)" with the proper type'
-  - test: idlharness.html
-    subtest: 'ViewTransition interface: calling waitUntil(Promise<any>) on document.startViewTransition()
+    test: idlharness.html
+  - subtest: 'ViewTransition interface: calling waitUntil(Promise<any>) on document.startViewTransition()
       with too few arguments must throw TypeError'
-  - test: idlharness.html
-    subtest: 'Document interface: attribute activeViewTransition'
-  - test: idlharness.html
-    subtest: 'Document interface: document must inherit property "activeViewTransition"
+    test: idlharness.html
+  - subtest: 'Document interface: attribute activeViewTransition'
+    test: idlharness.html
+  - subtest: 'Document interface: document must inherit property "activeViewTransition"
       with the proper type'
-  - test: idlharness.html
-    subtest: 'Element interface: operation startViewTransition(optional (ViewTransitionUpdateCallback
+    test: idlharness.html
+  - subtest: 'Element interface: operation startViewTransition(optional (ViewTransitionUpdateCallback
       or StartViewTransitionOptions))'
+    test: idlharness.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1998081
 - product: firefox
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1999438
   results:
   - test: escaped-name.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1999438
 - product: firefox
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2008054
   results:
-  - test: hit-test-unrelated-element.html
-    subtest: Test status
+  - subtest: Test status
+    test: hit-test-unrelated-element.html
   - test: hit-test-unpainted-element.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2008054
 - product: firefox
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2012341
   results:
-  - test: 3d-transform-incoming.html
-    subtest: Test status
+  - subtest: Test status
+    test: 3d-transform-incoming.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2012341
 - product: firefox
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2012343
   results:
   - test: old-content-is-inline.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2012343
 - label: interop-2026-view-transitions
   results:
   - test: view-transition-types-match-early-mutation.html
@@ -1106,29 +1106,39 @@ links:
       first
   - test: web-animations-api-parse-pseudo-argument.html?first-pseudo=::view-transition-group(first
 - product: firefox
+  results:
+  - subtest: Test status
+    test: capture-with-offscreen-child-translated.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=2013634
-  results:
-  - test: capture-with-offscreen-child-translated.html
-    subtest: Test status
 - product: firefox
+  results:
+  - subtest: 'Element interface: attribute activeViewTransition'
+    test: idlharness.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=2016151
-  results:
-  - test: idlharness.html
-    subtest: 'Element interface: attribute activeViewTransition'
 - product: firefox
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2032995
   results:
-  - test: computed-style-no-active-transition.html
-    subtest: Value of inherited VT pseudo properties
+  - subtest: Value of inherited VT pseudo properties
+    test: computed-style-no-active-transition.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2032995
 - product: chrome
-  url: https://issuetracker.google.com/513199722
   results:
   - test: new-content-transform-change-001.html
+  url: https://issuetracker.google.com/513199722
 - product: chrome
-  url: https://issuetracker.google.com/513201972
   results:
   - test: pseudo-element-overflow-clip-with-border-radius.html
+  url: https://issuetracker.google.com/513201972
 - product: chrome
-  url: https://issues.chromium.org/issues/513199722
   results:
   - test: new-content-transform-change-001.html
+  url: https://issues.chromium.org/issues/513199722
+- product: firefox
+  results:
+  - test: transition-skipped-callback-from-detached-iframe.html
+  - subtest: Using a callback from a detached iframe should not crash
+    test: transition-skipped-callback-from-detached-iframe.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2041851
+- product: firefox
+  results:
+  - test: transition-in-removed-iframe.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2041290
