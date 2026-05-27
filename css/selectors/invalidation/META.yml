@@ -1327,3 +1327,42 @@ links:
       disabled toggles
     test: option-disabled-when-ancestor-changes.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=2038142
+- product: firefox
+  results:
+  - subtest: 'Initial colors: #has_heading_1'
+    test: heading-pseudo-class-in-has-with-headingoffset.html
+  - subtest: 'Initial colors: #has_heading_1_2'
+    test: heading-pseudo-class-in-has-with-headingoffset.html
+  - subtest: 'h1[headingoffset=1]: #has_heading_1_2'
+    test: heading-pseudo-class-in-has-with-headingoffset.html
+  - subtest: 'h1 with headingoffset removed: #has_heading_1'
+    test: heading-pseudo-class-in-has-with-headingoffset.html
+  - subtest: 'h1 with headingoffset removed: #has_heading_1_2'
+    test: heading-pseudo-class-in-has-with-headingoffset.html
+  - subtest: 'ancestor[headingoffset=1]: #has_heading_1_2'
+    test: heading-pseudo-class-in-has-with-headingoffset.html
+  - subtest: 'h1[headingreset] (cuts ancestor offset): #has_heading_1'
+    test: heading-pseudo-class-in-has-with-headingoffset.html
+  - subtest: 'h1[headingreset] (cuts ancestor offset): #has_heading_1_2'
+    test: heading-pseudo-class-in-has-with-headingoffset.html
+  - subtest: 'ancestor with headingoffset removed: #has_heading_1'
+    test: heading-pseudo-class-in-has-with-headingoffset.html
+  - subtest: 'ancestor with headingoffset removed: #has_heading_1_2'
+    test: heading-pseudo-class-in-has-with-headingoffset.html
+  - subtest: 'h1.headingOffset = 1: #has_heading_1_2'
+    test: heading-pseudo-class-in-has-with-headingoffset.html
+  - subtest: 'h1.headingOffset = 0: #has_heading_1'
+    test: heading-pseudo-class-in-has-with-headingoffset.html
+  - subtest: 'h1.headingOffset = 0: #has_heading_1_2'
+    test: heading-pseudo-class-in-has-with-headingoffset.html
+  - subtest: 'h1.headingReset = true: #has_heading_1'
+    test: heading-pseudo-class-in-has-with-headingoffset.html
+  - subtest: 'h1.headingReset = true: #has_heading_1_2'
+    test: heading-pseudo-class-in-has-with-headingoffset.html
+  - subtest: 'h1.slot = ''nonexistent'': #has_heading_1'
+    test: heading-pseudo-class-in-has-with-slot-reassignment.html
+  - subtest: 'slotA.name = ''c'': #has_heading_1'
+    test: heading-pseudo-class-in-has-with-slot-reassignment.html
+  - subtest: 'slotA.remove(): #has_heading_1'
+    test: heading-pseudo-class-in-has-with-slot-reassignment.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2043069
