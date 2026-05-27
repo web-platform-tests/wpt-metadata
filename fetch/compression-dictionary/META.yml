@@ -41,3 +41,15 @@ links:
   - subtest: Expired dictionary is not used
     test: dictionary-registration.tentative.https.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1972692
+- product: firefox
+  results:
+  - subtest: Decompresion using Brotli fails when dictionary hash mismatches
+    test: dictionary-decompression.tentative.https.html
+  - subtest: Decompresion using Zstandard fails when dictionary hash mismatches
+    test: dictionary-decompression.tentative.https.html
+  - subtest: Opaque responses resulting from cross-origin redirects in no-cors mode
+      do not register dictionary
+    test: dictionary-fetch-no-cors.tentative.https.html
+  - subtest: Dictionary with 1025 character dictionary ID is not registered
+    test: dictionary-registration.tentative.https.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2042620
