@@ -1515,3 +1515,12 @@ links:
   - subtest: Start matching style() query after container-name change
     test: style-query-container-name-change.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=2027807
+- product: firefox
+  results:
+  - subtest: multi-line var() fallback
+    test: custom-property-style-query-multiline-var.html
+  - subtest: newline before closing parentheses in var() fallback
+    test: custom-property-style-query-multiline-var.html
+  - subtest: newline before var() and around fallback
+    test: custom-property-style-query-multiline-var.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2043526

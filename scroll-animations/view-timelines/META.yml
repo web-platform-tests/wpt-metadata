@@ -1,72 +1,72 @@
 links:
 - product: safari
+  url: https://bugs.webkit.org/show_bug.cgi?id=285518
   results:
   - test: change-animation-range-updates-play-state.html
   - test: view-timeline-snapport.html
   - test: view-timeline-subject-size-changes.html
-  url: https://bugs.webkit.org/show_bug.cgi?id=285518
 - product: safari
+  url: https://bugs.webkit.org/show_bug.cgi?id=285750
   results:
   - test: view-timeline-inset.html
-  url: https://bugs.webkit.org/show_bug.cgi?id=285750
 - product: firefox
-  results:
-  - subtest: View timeline delay
-    test: intermediate-transform.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1948673
-- product: firefox
   results:
-  - subtest: View timeline  does not clamp end scroll offset at max scroll
-    test: block-view-timeline-current-time.tentative.html
-  - subtest: View timeline does not clamp end scroll offset at max scroll
-    test: inline-view-timeline-current-time.tentative.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1948851
+  - test: intermediate-transform.html
+    subtest: View timeline delay
 - product: firefox
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1948851
+  results:
+  - test: block-view-timeline-current-time.tentative.html
+    subtest: View timeline  does not clamp end scroll offset at max scroll
+  - test: inline-view-timeline-current-time.tentative.html
+    subtest: View timeline does not clamp end scroll offset at max scroll
+- product: firefox
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1949826
   results:
   - test: animation-events.html
-  - subtest: Changing the animation range updates the play state
-    test: change-animation-range-updates-play-state.html
-  - subtest: Fieldset is a valid source for a view timeline
-    test: fieldset-source.html
-  - subtest: View timeline attached to SVG graphics element
-    test: svg-graphics-element-001.html
-  - subtest: View timeline attached to SVG graphics element
-    test: svg-graphics-element-002.html
-  - subtest: Invalid timeline offset in programmatic keyframe throws
-    test: timeline-offset-in-keyframe.html
-  - subtest: Getting and setting the animation range
-    test: view-timeline-get-set-range.html
-  - subtest: View timeline with px based inset.
-    test: view-timeline-inset.html
-  - subtest: View timeline with percent based inset.
-    test: view-timeline-inset.html
-  - subtest: view timeline with inset auto.
-    test: view-timeline-inset.html
-  - subtest: view timeline with font relative inset.
-    test: view-timeline-inset.html
-  - subtest: 'element with display: none should have inactive viewtimeline'
-    test: view-timeline-on-display-none-element.html
-  - subtest: View timeline with range as <name> <percent> pair.
-    test: view-timeline-range.html
-  - subtest: View timeline with range and inferred name or offset.
-    test: view-timeline-range.html
-  - subtest: View timeline with range as <name> <px> pair.
-    test: view-timeline-range.html
-  - subtest: View timeline with range as <name> <percent+px> pair.
-    test: view-timeline-range.html
-  - subtest: View timeline with range as strings.
-    test: view-timeline-range.html
-  - subtest: Test view-timeline with document scrolling element.
-    test: view-timeline-root-source.html
-  - subtest: Default ViewTimeline is not affected by scroll-padding
-    test: view-timeline-snapport.html
-  - subtest: View timeline with subject size change after the creation of the animation
-    test: view-timeline-subject-size-changes.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1949826
+  - test: change-animation-range-updates-play-state.html
+    subtest: Changing the animation range updates the play state
+  - test: fieldset-source.html
+    subtest: Fieldset is a valid source for a view timeline
+  - test: svg-graphics-element-001.html
+    subtest: View timeline attached to SVG graphics element
+  - test: svg-graphics-element-002.html
+    subtest: View timeline attached to SVG graphics element
+  - test: timeline-offset-in-keyframe.html
+    subtest: Invalid timeline offset in programmatic keyframe throws
+  - test: view-timeline-get-set-range.html
+    subtest: Getting and setting the animation range
+  - test: view-timeline-inset.html
+    subtest: View timeline with px based inset.
+  - test: view-timeline-inset.html
+    subtest: View timeline with percent based inset.
+  - test: view-timeline-inset.html
+    subtest: view timeline with inset auto.
+  - test: view-timeline-inset.html
+    subtest: view timeline with font relative inset.
+  - test: view-timeline-on-display-none-element.html
+    subtest: 'element with display: none should have inactive viewtimeline'
+  - test: view-timeline-range.html
+    subtest: View timeline with range as <name> <percent> pair.
+  - test: view-timeline-range.html
+    subtest: View timeline with range and inferred name or offset.
+  - test: view-timeline-range.html
+    subtest: View timeline with range as <name> <px> pair.
+  - test: view-timeline-range.html
+    subtest: View timeline with range as <name> <percent+px> pair.
+  - test: view-timeline-range.html
+    subtest: View timeline with range as strings.
+  - test: view-timeline-root-source.html
+    subtest: Test view-timeline with document scrolling element.
+  - test: view-timeline-snapport.html
+    subtest: Default ViewTimeline is not affected by scroll-padding
+  - test: view-timeline-subject-size-changes.html
+    subtest: View timeline with subject size change after the creation of the animation
 - product: safari
+  url: https://bugs.webkit.org/show_bug.cgi?id=288781
   results:
   - test: view-timeline-source.tentative.html
-  url: https://bugs.webkit.org/show_bug.cgi?id=288781
 - label: interop-2026-scroll-driven-animations
   results:
   - test: animation-events.html
@@ -77,7 +77,6 @@ links:
   - test: get-keyframes-with-timeline-offset.html
   - test: inline-subject.html
   - test: intermediate-transform.html
-  - test: range-boundary.html
   - test: subject-br-crash.html
   - test: svg-graphics-element-001.html
   - test: svg-graphics-element-002.html
@@ -96,98 +95,97 @@ links:
   - test: view-timeline-sticky-inline.html
   - test: view-timeline-subject-size-changes.html
 - product: safari
+  url: https://bugs.webkit.org/show_bug.cgi?id=307788
   results:
   - test: contain-alignment.html
-  url: https://bugs.webkit.org/show_bug.cgi?id=307788
 - product: safari
-  results:
-  - test: range-boundary.html
-  url: https://bugs.webkit.org/show_bug.cgi?id=307789
-- product: safari
+  url: https://bugs.webkit.org/show_bug.cgi?id=307790
   results:
   - test: svg-graphics-element-003.html
-  url: https://bugs.webkit.org/show_bug.cgi?id=307790
 - product: safari
+  url: https://bugs.webkit.org/show_bug.cgi?id=307791
   results:
   - test: view-timeline-get-set-range.html
-  url: https://bugs.webkit.org/show_bug.cgi?id=307791
 - product: safari
+  url: https://bugs.webkit.org/show_bug.cgi?id=307792
   results:
   - test: view-timeline-inset.html
-  url: https://bugs.webkit.org/show_bug.cgi?id=307792
 - product: safari
+  url: https://bugs.webkit.org/show_bug.cgi?id=307793
   results:
   - test: view-timeline-snapport.html
-  url: https://bugs.webkit.org/show_bug.cgi?id=307793
 - product: firefox
-  results:
-  - test: range-boundary.html
-  - subtest: Stability of animated elements aligned to the bounds of a contain region
-    test: contain-alignment.html
-  - subtest: View timeline with container having vertical-rl layout
-    test: block-view-timeline-current-time-vertical-rl.tentative.html
-  - subtest: View timeline with start and end scroll offsets that do not align with
-      the scroll boundaries
-    test: block-view-timeline-current-time.tentative.html
-  - subtest: View timeline does not clamp starting scroll offset at 0
-    test: block-view-timeline-current-time.tentative.html
-  - subtest: View timeline with subject that is not a direct descendant of the scroll
-      container
-    test: block-view-timeline-nested-subject.tentative.html
-  - subtest: Report specified timeline offsets
-    test: get-keyframes-with-timeline-offset.html
-  - subtest: Computed offsets can be outside [0,1] for keyframes with timeline offsets
-    test: get-keyframes-with-timeline-offset.html
-  - subtest: Offsets can be outside [0%,100%] for keyframes with timeline range names
-    test: get-keyframes-with-timeline-offset.html
-  - subtest: Retain specified ordering of keyframes with timeline offsets
-    test: get-keyframes-with-timeline-offset.html
-  - subtest: Include unreachable keyframes
-    test: get-keyframes-with-timeline-offset.html
-  - subtest: Mix of computed and timeline offsets.
-    test: get-keyframes-with-timeline-offset.html
-  - subtest: View timeline with start and end scroll offsets that do not align with
-      the scroll boundaries
-    test: inline-view-timeline-current-time.tentative.html
-  - subtest: View timeline does not clamp starting scroll offset at 0
-    test: inline-view-timeline-current-time.tentative.html
-  - subtest: View timeline with container having RTL layout
-    test: inline-view-timeline-current-time.tentative.html
-  - subtest: Timeline offsets in programmatic keyframes
-    test: timeline-offset-in-keyframe.html
-  - subtest: String offsets in programmatic keyframes
-    test: timeline-offset-in-keyframe.html
-  - subtest: Timeline offsets in programmatic keyframes adjust for change in timeline
-    test: timeline-offset-in-keyframe.html
-  - subtest: Timeline offsets in programmatic keyframes resolved when updating the
-      animation effect
-    test: timeline-offset-in-keyframe.html
-  - subtest: Creating a view timeline with a subject that is not attached to the document
-      works as expected
-    test: unattached-subject-inset.html
-  - subtest: View timeline current time for named range
-    test: view-timeline-get-current-time-range-name.tentative.html
-  - subtest: view timeline with viewport relative insets.
-    test: view-timeline-inset.html
-  - subtest: view timeline inset as string
-    test: view-timeline-inset.html
-  - subtest: View timeline with range set via delays.
-    test: view-timeline-range-large-subject.html
-  - subtest: Default source for a View timeline is the nearest scroll ancestor to
-      the subject
-    test: view-timeline-source.tentative.html
-  - subtest: View timeline ignores explicitly set source
-    test: view-timeline-source.tentative.html
-  - subtest: View timeline source is null when display:none
-    test: view-timeline-source.tentative.html
-  - subtest: View timeline with sticky target, block axis.
-    test: view-timeline-sticky-block.html
-  - subtest: View timeline with sticky target, block axis.
-    test: view-timeline-sticky-inline.html
-  - subtest: Intrinsic iteration duration is non-negative
-    test: zero-intrinsic-iteration-duration.tentative.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=2039687
+  results:
+  - test: contain-alignment.html
+    subtest: Stability of animated elements aligned to the bounds of a contain region
+  - test: block-view-timeline-current-time-vertical-rl.tentative.html
+    subtest: View timeline with container having vertical-rl layout
+  - test: block-view-timeline-current-time.tentative.html
+    subtest: View timeline with start and end scroll offsets that do not align with
+      the scroll boundaries
+  - test: block-view-timeline-current-time.tentative.html
+    subtest: View timeline does not clamp starting scroll offset at 0
+  - test: block-view-timeline-nested-subject.tentative.html
+    subtest: View timeline with subject that is not a direct descendant of the scroll
+      container
+  - test: get-keyframes-with-timeline-offset.html
+    subtest: Report specified timeline offsets
+  - test: get-keyframes-with-timeline-offset.html
+    subtest: Computed offsets can be outside [0,1] for keyframes with timeline offsets
+  - test: get-keyframes-with-timeline-offset.html
+    subtest: Offsets can be outside [0%,100%] for keyframes with timeline range names
+  - test: get-keyframes-with-timeline-offset.html
+    subtest: Retain specified ordering of keyframes with timeline offsets
+  - test: get-keyframes-with-timeline-offset.html
+    subtest: Include unreachable keyframes
+  - test: get-keyframes-with-timeline-offset.html
+    subtest: Mix of computed and timeline offsets.
+  - test: inline-view-timeline-current-time.tentative.html
+    subtest: View timeline with start and end scroll offsets that do not align with
+      the scroll boundaries
+  - test: inline-view-timeline-current-time.tentative.html
+    subtest: View timeline does not clamp starting scroll offset at 0
+  - test: inline-view-timeline-current-time.tentative.html
+    subtest: View timeline with container having RTL layout
+  - test: timeline-offset-in-keyframe.html
+    subtest: Timeline offsets in programmatic keyframes
+  - test: timeline-offset-in-keyframe.html
+    subtest: String offsets in programmatic keyframes
+  - test: timeline-offset-in-keyframe.html
+    subtest: Timeline offsets in programmatic keyframes adjust for change in timeline
+  - test: timeline-offset-in-keyframe.html
+    subtest: Timeline offsets in programmatic keyframes resolved when updating the
+      animation effect
+  - test: unattached-subject-inset.html
+    subtest: Creating a view timeline with a subject that is not attached to the document
+      works as expected
+  - test: view-timeline-get-current-time-range-name.tentative.html
+    subtest: View timeline current time for named range
+  - test: view-timeline-inset.html
+    subtest: view timeline with viewport relative insets.
+  - test: view-timeline-inset.html
+    subtest: view timeline inset as string
+  - test: view-timeline-range-large-subject.html
+    subtest: View timeline with range set via delays.
+  - test: view-timeline-source.tentative.html
+    subtest: Default source for a View timeline is the nearest scroll ancestor to
+      the subject
+  - test: view-timeline-source.tentative.html
+    subtest: View timeline ignores explicitly set source
+  - test: view-timeline-source.tentative.html
+    subtest: View timeline source is null when display:none
+  - test: view-timeline-sticky-block.html
+    subtest: View timeline with sticky target, block axis.
+  - test: view-timeline-sticky-inline.html
+    subtest: View timeline with sticky target, block axis.
+  - test: zero-intrinsic-iteration-duration.tentative.html
+    subtest: Intrinsic iteration duration is non-negative
 - product: firefox
   results:
   - test: range-boundary.tentative.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=2043468
+- product: safari
+  url: https://bugs.webkit.org/show_bug.cgi?id=307789
+  results:
+  - test: range-boundary.tentative.html
