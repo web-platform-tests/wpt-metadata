@@ -1,7 +1,18 @@
 links:
-  - label: interop-2026-fetch
-    results:
-      - test: formdata.any.html
-      - test: formdata.any.worker.html
-      - test: mime-type.any.html
-      - test: mime-type.any.worker.html
+- label: interop-2026-fetch
+  results:
+  - test: formdata.any.html
+  - test: formdata.any.worker.html
+  - test: mime-type.any.html
+  - test: mime-type.any.worker.html
+- product: firefox
+  results:
+  - subtest: Request.textStream() on locked body throws TypeError
+    test: textstream.tentative.any.serviceworker.html
+  - subtest: Request.textStream() on locked body throws TypeError
+    test: textstream.tentative.any.html
+  - subtest: Request.textStream() on locked body throws TypeError
+    test: textstream.tentative.any.worker.html
+  - subtest: Request.textStream() on locked body throws TypeError
+    test: textstream.tentative.any.sharedworker.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2043595
