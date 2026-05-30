@@ -351,3 +351,74 @@ links:
   - subtest: Animation does not apply when timeline becomes inactive
     test: scroll-timeline-inactive.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=2036823
+- product: firefox
+  results:
+  - subtest: animation-timeline ignored after setting timeline with JS (null)
+    test: animation-timeline-ignored.tentative.html
+  - subtest: Change in scroll-timeline-name to match animation timeline updates animation.
+    test: animation-timeline-named-scroll-progress-timeline.tentative.html
+  - subtest: Change in scroll-timeline-name to no longer match animation timeline
+      updates animation.
+    test: animation-timeline-named-scroll-progress-timeline.tentative.html
+  - subtest: 'animation-timeline: view()'
+    test: animation-timeline-view-functional-notation.tentative.html
+  - subtest: 'animation-timeline: view(50px)'
+    test: animation-timeline-view-functional-notation.tentative.html
+  - subtest: 'animation-timeline: view(auto 50px)'
+    test: animation-timeline-view-functional-notation.tentative.html
+  - subtest: 'animation-timeline: view(inline)'
+    test: animation-timeline-view-functional-notation.tentative.html
+  - subtest: 'animation-timeline: view(x)'
+    test: animation-timeline-view-functional-notation.tentative.html
+  - subtest: 'animation-timeline: view(y)'
+    test: animation-timeline-view-functional-notation.tentative.html
+  - subtest: 'animation-timeline: view(x 50px)'
+    test: animation-timeline-view-functional-notation.tentative.html
+  - subtest: 'animation-timeline: view(), view(inline)'
+    test: animation-timeline-view-functional-notation.tentative.html
+  - subtest: 'animation-timeline: view(inline) changes to view(inline 50px)'
+    test: animation-timeline-view-functional-notation.tentative.html
+  - subtest: Keyframes with same easing and timeline offset are merged.
+    test: merge-timeline-offset-keyframes.html
+  - subtest: Keyframes with same timeline offset but different easing function are
+      not merged.
+    test: merge-timeline-offset-keyframes.html
+  - subtest: Slotted element can see scroll timeline within the shadow
+    test: scroll-timeline-name-shadow.html
+  - subtest: getKeyframes with timeline-offsets
+    test: timeline-offset-in-keyframe-change-timeline.tentative.html
+  - subtest: Keyframes with timeline-offsets ignored when timeline is inactive
+    test: timeline-offset-keyframes-hidden-subject.html
+  - subtest: Keyframes with timeline-offsets reported but not reachable when using
+      a document timeline
+    test: timeline-offset-keyframes-with-document-timeline.html
+  - subtest: Timeline offset in Animation Keyframes
+    test: timeline-range-name-offset-in-keyframes.tentative.html
+  - subtest: timeline-scope:all scopes all names (basic)
+    test: timeline-scope-all.html
+  - subtest: timeline-scope:all scopes all names (multiple)
+    test: timeline-scope-all.html
+  - subtest: Inner scope is isolated from outer scope
+    test: timeline-scope-all.html
+  - subtest: Dynamically detaching
+    test: timeline-scope.html
+  - subtest: Removing/inserting element with attaching timeline
+    test: timeline-scope.html
+  - subtest: A deferred timeline appearing dynamically in the ancestor chain
+    test: timeline-scope.html
+  - subtest: Dynamically changing view-timeline attachment
+    test: view-timeline-dynamic.html
+  - subtest: view-timeline-inset:auto, inline, vertical-rl, rtl
+    test: view-timeline-inset-animation.html
+  - subtest: view-timeline-inset:auto, inline, vertical-lr, rtl
+    test: view-timeline-inset-animation.html
+  - subtest: view-timeline-inset:auto, y, vertical-rl, rtl
+    test: view-timeline-inset-animation.html
+  - subtest: ViewTimeline with timeline offset keyframes outside [0,1]
+    test: view-timeline-keyframe-boundary-interpolation.html
+  - subtest: Slotted element can see view timeline within the shadow
+    test: view-timeline-name-shadow.html
+  - subtest: Animation with ranges [scroll 100px, scroll 800px]
+    test: view-timeline-range-animation.html
+  - test: deferred-timeline-composited.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2043862
