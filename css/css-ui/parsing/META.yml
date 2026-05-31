@@ -187,6 +187,18 @@ links:
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1943621
 - label: interop-2026-webcompat
   results:
-    - test: user-select-computed.html
-    - test: user-select-invalid.html
-    - test: user-select-valid.html
+  - test: user-select-computed.html
+  - test: user-select-invalid.html
+  - test: user-select-valid.html
+- product: firefox
+  results:
+  - subtest: e.style['cursor'] = "light-dark(url(\"https://example.com/light\"), url(\"https://example.com/dark\")),
+      pointer" should set the property value
+    test: cursor-valid.html
+  - subtest: e.style['cursor'] = "light-dark(url(\"https://example.com/light\"), url(\"https://example.com/dark\"))
+      5 6, grab" should set the property value
+    test: cursor-valid.html
+  - subtest: e.style['cursor'] = "url(\"https://example.com/\"), light-dark(url(\"https://example.com/light\"),
+      url(\"https://example.com/dark\")) 3 4, move" should set the property value
+    test: cursor-valid.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2043941
