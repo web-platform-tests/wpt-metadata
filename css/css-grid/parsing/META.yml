@@ -317,3 +317,9 @@ links:
       [b] auto) 4em [d]'
     test: grid-template-rows-intrinsic-auto-repeat-computed-nogrid.tentative.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=2003502
+- product: firefox
+  results:
+  - subtest: e.style['grid-column-start'] = "span calc(sibling-index() - 2)" should
+      set the property value
+    test: grid-area-valid.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2044207
