@@ -53,3 +53,10 @@ links:
   - subtest: Dictionary with 1025 character dictionary ID is not registered
     test: dictionary-registration.tentative.https.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=2042620
+- product: firefox
+  results:
+  - subtest: Decompression using Brotli fails when dictionary hash mismatches
+    test: dictionary-decompression.tentative.https.html
+  - subtest: Decompression using Zstandard fails when dictionary hash mismatches
+    test: dictionary-decompression.tentative.https.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2044570
