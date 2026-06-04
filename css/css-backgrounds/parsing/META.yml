@@ -274,3 +274,16 @@ links:
   - subtest: e.style['background'] = "border-area text" should not set unrelated longhands
     test: background-valid.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=2028091
+- product: firefox
+  results:
+  - subtest: Property background-clip value 'border-area text'
+    test: background-clip-computed.html
+  - subtest: Property background-clip value 'text border-area'
+    test: background-clip-computed.html
+  - subtest: background shorthand with 'border-area text' computes background-clip
+      correctly
+    test: background-computed.html
+  - subtest: background shorthand with 'text border-area' computes background-clip
+      correctly
+    test: background-computed.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2044914
