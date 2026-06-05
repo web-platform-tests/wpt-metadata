@@ -16,3 +16,94 @@ links:
   - subtest: Request.textStream() on locked body throws TypeError
     test: textstream.tentative.any.sharedworker.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=2043595
+- product: firefox
+  results:
+  - subtest: textStream method existence
+    test: textstream.any.serviceworker.html
+  - subtest: Response.textStream() basic functionality
+    test: textstream.any.serviceworker.html
+  - subtest: Request.textStream() basic functionality
+    test: textstream.any.serviceworker.html
+  - subtest: textStream() handles chunked byte stream input
+    test: textstream.any.serviceworker.html
+  - subtest: Request.textStream() on locked body throws TypeError
+    test: textstream.any.serviceworker.html
+  - subtest: Response.textStream() with null body
+    test: textstream.any.serviceworker.html
+  - subtest: Request.textStream() with null body
+    test: textstream.any.serviceworker.html
+  - subtest: Response.textStream() with empty body
+    test: textstream.any.serviceworker.html
+  - subtest: Response.textStream() ignores Content-Type charset (UTF-16LE)
+    test: textstream.any.serviceworker.html
+  - subtest: Request.textStream() ignores Content-Type charset (UTF-16LE)
+    test: textstream.any.serviceworker.html
+  - subtest: Response.textStream() ignores invalid Content-Type charset (invalid-charset)
+    test: textstream.any.serviceworker.html
+  - subtest: textStream method existence
+    test: textstream.any.html
+  - subtest: Response.textStream() basic functionality
+    test: textstream.any.html
+  - subtest: Request.textStream() basic functionality
+    test: textstream.any.html
+  - subtest: textStream() handles chunked byte stream input
+    test: textstream.any.html
+  - subtest: Request.textStream() on locked body throws TypeError
+    test: textstream.any.html
+  - subtest: Response.textStream() with null body
+    test: textstream.any.html
+  - subtest: Request.textStream() with null body
+    test: textstream.any.html
+  - subtest: Response.textStream() with empty body
+    test: textstream.any.html
+  - subtest: Response.textStream() ignores Content-Type charset (UTF-16LE)
+    test: textstream.any.html
+  - subtest: Request.textStream() ignores Content-Type charset (UTF-16LE)
+    test: textstream.any.html
+  - subtest: Response.textStream() ignores invalid Content-Type charset (invalid-charset)
+    test: textstream.any.html
+  - subtest: textStream method existence
+    test: textstream.any.worker.html
+  - subtest: Response.textStream() basic functionality
+    test: textstream.any.worker.html
+  - subtest: Request.textStream() basic functionality
+    test: textstream.any.worker.html
+  - subtest: textStream() handles chunked byte stream input
+    test: textstream.any.worker.html
+  - subtest: Request.textStream() on locked body throws TypeError
+    test: textstream.any.worker.html
+  - subtest: Response.textStream() with null body
+    test: textstream.any.worker.html
+  - subtest: Request.textStream() with null body
+    test: textstream.any.worker.html
+  - subtest: Response.textStream() with empty body
+    test: textstream.any.worker.html
+  - subtest: Response.textStream() ignores Content-Type charset (UTF-16LE)
+    test: textstream.any.worker.html
+  - subtest: Request.textStream() ignores Content-Type charset (UTF-16LE)
+    test: textstream.any.worker.html
+  - subtest: Response.textStream() ignores invalid Content-Type charset (invalid-charset)
+    test: textstream.any.worker.html
+  - subtest: textStream method existence
+    test: textstream.any.sharedworker.html
+  - subtest: Response.textStream() basic functionality
+    test: textstream.any.sharedworker.html
+  - subtest: Request.textStream() basic functionality
+    test: textstream.any.sharedworker.html
+  - subtest: textStream() handles chunked byte stream input
+    test: textstream.any.sharedworker.html
+  - subtest: Request.textStream() on locked body throws TypeError
+    test: textstream.any.sharedworker.html
+  - subtest: Response.textStream() with null body
+    test: textstream.any.sharedworker.html
+  - subtest: Request.textStream() with null body
+    test: textstream.any.sharedworker.html
+  - subtest: Response.textStream() with empty body
+    test: textstream.any.sharedworker.html
+  - subtest: Response.textStream() ignores Content-Type charset (UTF-16LE)
+    test: textstream.any.sharedworker.html
+  - subtest: Request.textStream() ignores Content-Type charset (UTF-16LE)
+    test: textstream.any.sharedworker.html
+  - subtest: Response.textStream() ignores invalid Content-Type charset (invalid-charset)
+    test: textstream.any.sharedworker.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2045256
