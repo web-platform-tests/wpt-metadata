@@ -77,17 +77,12 @@ links:
   - test: flexbox_computedstyle_order-negative.html
   - test: flexbox_computedstyle_order.html
 - product: safari
-  results:
-  - status: FAIL
-    test: flexbox_computedstyle_min-auto-size.html
   url: https://bugs.webkit.org/show_bug.cgi?id=209651
+  results:
+  - test: flexbox_computedstyle_min-auto-size.html
+    status: FAIL
 - product: webkitgtk
-  results:
-  - status: FAIL
-    test: flexbox_computedstyle_min-auto-size.html
   url: https://bugs.webkit.org/show_bug.cgi?id=209651
-- product: firefox
   results:
-  - subtest: first-line-computed-style
-    test: first-line-computed-style.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2033023
+  - test: flexbox_computedstyle_min-auto-size.html
+    status: FAIL
