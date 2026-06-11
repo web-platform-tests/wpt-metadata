@@ -60,3 +60,11 @@ links:
   - subtest: Decompression using Zstandard fails when dictionary hash mismatches
     test: dictionary-decompression.tentative.https.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=2044570
+- product: firefox
+  results:
+  - subtest: Dictionary with unknown match-dest is not used for fetch() API
+    test: dictionary-match.tentative.https.html
+  - subtest: Dictionary registration with dictionary ID (valid characters and backslash
+      escaping)
+    test: dictionary-registration.tentative.https.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2046976
