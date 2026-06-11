@@ -249,3 +249,8 @@ links:
       results:
         - test: dialog-closedby-corner-cases.html
           subtest: Clicking outside, when focusin calls showModal, modal
+    - product: chrome
+      url: https://issues.chromium.org/issues/522708357
+      results:
+        - test: dialog-requestclose-closedby.tentative.html
+          subtest: requestClose() should close the dialog even when computed closedby becomes none
