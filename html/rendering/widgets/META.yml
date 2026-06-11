@@ -29,3 +29,14 @@ links:
         - test: field-sizing-input-text.html
         - test: field-sizing-select.html
         - test: field-sizing-textarea.html
+    - product: chrome
+      url: https://issues.chromium.org/issues/522872455
+      results:
+        - test: shadow-dom.html
+          subtest: <video controls=""></video> has a shadow tree with no slots
+        - test: shadow-dom.html
+          subtest: <video></video> has a shadow tree with no slots
+        - test: shadow-dom.html
+          subtest: <audio></audio> has a shadow tree with no slots
+        - test: shadow-dom.html
+          subtest: <audio controls=""></audio> has a shadow tree with no slots
