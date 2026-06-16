@@ -52,3 +52,46 @@ links:
       10px 100px) content-box'
     test: border-shape-computed.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1997284
+- product: firefox
+  results:
+  - subtest: Property border-shape value 'circle(closest-corner at center)'
+    test: border-shape-computed.html
+  - subtest: Property border-shape value 'circle(closest-corner at 20px 50px)'
+    test: border-shape-computed.html
+  - subtest: Property border-shape value 'circle(farthest-corner at center)'
+    test: border-shape-computed.html
+  - subtest: Property border-shape value 'ellipse(closest-corner farthest-corner at
+      20px 50px)'
+    test: border-shape-computed.html
+  - subtest: Property border-shape value 'circle() border-box circle() padding-box'
+    test: border-shape-computed.html
+  - subtest: Property border-shape value 'circle(closest-corner) ellipse(farthest-corner
+      closest-corner)'
+    test: border-shape-computed.html
+  - subtest: Property border-shape value 'circle() border-box'
+    test: border-shape-computed.html
+  - subtest: Property border-shape value 'circle() half-border-box'
+    test: border-shape-computed.html
+  - subtest: Property border-shape value 'circle() half-border-box circle() half-border-box'
+    test: border-shape-computed.html
+  - subtest: Property border-shape value 'circle() border-box circle() border-box'
+    test: border-shape-computed.html
+  - subtest: e.style['border-shape'] = "circle(closest-corner at 20px 50px)" should
+      set the property value
+    test: border-shape-valid.html
+  - subtest: e.style['border-shape'] = "circle(farthest-corner at center)" should
+      set the property value
+    test: border-shape-valid.html
+  - subtest: e.style['border-shape'] = "ellipse(closest-corner farthest-corner at
+      20px 50px)" should set the property value
+    test: border-shape-valid.html
+  - subtest: e.style['border-shape'] = "circle(closest-corner) ellipse(farthest-corner
+      closest-corner)" should set the property value
+    test: border-shape-valid.html
+  - subtest: e.style['border-shape'] = "circle() border-box circle() content-box"
+      should set the property value
+    test: border-shape-valid.html
+  - subtest: e.style['border-shape'] = "circle() margin-box circle() view-box" should
+      set the property value
+    test: border-shape-valid.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2047796
