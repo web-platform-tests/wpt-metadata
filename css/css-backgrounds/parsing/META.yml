@@ -287,3 +287,24 @@ links:
       correctly
     test: background-computed.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=2044914
+- product: firefox
+  results:
+  - subtest: e.style['background-image'] = "cross-fade(50% url(http://www.example.com),
+      50% url(http://www.example.com))" should set the property value
+    test: background-image-valid.html
+  - subtest: e.style['background-image'] = "cross-fade(red 33%, white 33%, blue)"
+      should set the property value
+    test: background-image-valid.html
+  - subtest: e.style['background-image'] = "cross-fade( 1% red, green)" should set
+      the property value
+    test: background-image-valid.html
+  - subtest: e.style['background-image'] = "cross-fade(1% red , green)" should set
+      the property value
+    test: background-image-valid.html
+  - subtest: e.style['background-image'] = "cross-fade(1% red, green )" should set
+      the property value
+    test: background-image-valid.html
+  - subtest: e.style['background-image'] = "cross-fade(red 1%, cross-fade(red 2%,
+      green))" should set the property value
+    test: background-image-valid.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2048059
