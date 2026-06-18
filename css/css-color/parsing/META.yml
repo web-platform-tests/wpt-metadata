@@ -3016,3 +3016,40 @@ links:
       / (50deg * (180 / pi)))) + 1) * 50))'
     test: color-computed-relative-color.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=2041900
+- product: firefox
+  results:
+  - subtest: Property color value 'alpha(from red / 0.5)'
+    test: alpha-color-computed.html
+  - subtest: Property color value 'alpha(from blue / 0)'
+    test: alpha-color-computed.html
+  - subtest: Property color value 'alpha(from green / 1)'
+    test: alpha-color-computed.html
+  - subtest: Property color value 'alpha(from red / 50%)'
+    test: alpha-color-computed.html
+  - subtest: Property color value 'alpha(from red / 0%)'
+    test: alpha-color-computed.html
+  - subtest: Property color value 'alpha(from red)'
+    test: alpha-color-computed.html
+  - subtest: Property color value 'alpha(from rgba(255, 0, 0, 0.3))'
+    test: alpha-color-computed.html
+  - subtest: Property color value 'alpha(from red / none)'
+    test: alpha-color-computed.html
+  - subtest: Property color value 'alpha(from red / 2)'
+    test: alpha-color-computed.html
+  - subtest: Property color value 'alpha(from red / -1)'
+    test: alpha-color-computed.html
+  - subtest: Property color value 'alpha(from rgba(255, 0, 0, 0.3) / 0.8)'
+    test: alpha-color-computed.html
+  - subtest: Property color value 'alpha(from rgba(255, 0, 0, 0.8) / calc(alpha +
+      0.1))'
+    test: alpha-color-computed.html
+  - subtest: Property color value 'alpha(from green / calc(alpha / 1))'
+    test: alpha-color-computed.html
+  - subtest: Property color value 'alpha(from alpha(from red / 0.5) / calc(alpha +
+      0.25))'
+    test: alpha-color-computed.html
+  - subtest: Property color value 'alpha(from alpha(from green / 0%) / 100%)'
+    test: alpha-color-computed.html
+  - subtest: Property color value 'alpha(from rgb(from red r g b) / 0.8)'
+    test: alpha-color-computed.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2048047
