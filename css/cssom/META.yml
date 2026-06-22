@@ -514,3 +514,10 @@ links:
   - subtest: 'content: attr(foo, "")'
     test: serialize-values.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=2024151
+- product: firefox
+  results:
+  - subtest: appendMedium with a comma-separated list is a no-op
+    test: medialist-appendmedium-parse-single-and-dedup.html
+  - subtest: appendMedium with a comma-separated list leaves an existing list unchanged
+    test: medialist-appendmedium-parse-single-and-dedup.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2049437
