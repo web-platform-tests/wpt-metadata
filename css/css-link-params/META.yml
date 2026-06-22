@@ -1,7 +1,22 @@
 links:
-    - product: chrome
-      url: https://crbug.com/41482962
-      results:
-        - test: inheritance.html
-        - test: link-parameters-computed.html
-        - test: link-parameters-valid.html
+- product: chrome
+  results:
+  - test: inheritance.html
+  - test: link-parameters-computed.html
+  - test: link-parameters-valid.html
+  url: https://crbug.com/41482962
+- product: firefox
+  results:
+  - subtest: e.style['link-parameters'] = "param(--a)" should not set the property
+      value
+    test: link-parameters-invalid.html
+  - subtest: e.style['link-parameters'] = "param(--a), param(--b)" should not set
+      the property value
+    test: link-parameters-invalid.html
+  - subtest: e.style['link-parameters'] = "param(--a" should not set the property
+      value
+    test: link-parameters-invalid.html
+  - subtest: e.style['link-parameters'] = "param(--)" should not set the property
+      value
+    test: link-parameters-invalid.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2049338
