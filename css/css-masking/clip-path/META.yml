@@ -77,8 +77,7 @@ links:
         - test: clip-path-shape-003.html
         - test: clip-path-shape-004.html
         - test: clip-path-shape-001.html
-    - url: ""
-      label: interop-2023-cssmasking
+    - label: interop-2023-cssmasking
       results:
         - test: clip-path-strokeBox-1b.html
         - test: clip-path-borderBox-1a.html
@@ -286,3 +285,8 @@ links:
       url: https://bugzilla.mozilla.org/show_bug.cgi?id=1887269
       results:
         - test: clip-path-marginBox-1c.html
+    - product: chrome
+      url: https://crbug.com/526503299
+      results:
+        - test: clip-path-shape-011.html
+          subtest: Test status
