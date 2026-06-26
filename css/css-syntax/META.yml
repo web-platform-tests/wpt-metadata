@@ -320,3 +320,9 @@ links:
       " '/* comment */.
     test: serialize-consecutive-tokens.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1960046
+- product: firefox
+  results:
+  - subtest: Rules must be the same after serialization round-trip, even with escaped
+      characters
+    test: serialize-escape-identifiers.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2050697
