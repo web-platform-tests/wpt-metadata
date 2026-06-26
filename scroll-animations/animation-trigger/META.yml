@@ -35,3 +35,71 @@ links:
   - subtest: replay behavior restarts a finished animation
     test: animation-trigger-replay.tentative.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=2043457
+- product: firefox
+  results:
+  - subtest: Animation attached to tripped (default) trigger plays.
+    test: animation-trigger-addAnimation.tentative.html
+  - subtest: Animation attached to untripped trigger is paused initially.
+    test: animation-trigger-addAnimation.tentative.html
+  - subtest: Animation attached to tripped trigger is played immediately.
+    test: animation-trigger-addAnimation.tentative.html
+  - subtest: animation triggered via scroll() timeline.
+    test: animation-trigger-alternate.tentative.html
+  - subtest: animation triggered via view() timeline.
+    test: animation-trigger-alternate.tentative.html
+  - subtest: animation triggered via deferred (view) timeline.
+    test: animation-trigger-alternate.tentative.html
+  - subtest: triggered animation with event listener can trigger after target is removed.
+    test: animation-trigger-animation-target-removed-listener.tentative.html
+  - subtest: contain calc(0% + 100px) triggers at the same offset as contain 100px
+      under CSS zoom
+    test: animation-trigger-calc-with-zoom.tentative.html
+  - subtest: cancel disables animation trigger
+    test: animation-trigger-disarmed-by-apis.tentative.html
+  - subtest: late-attached trigger timeline plays animation
+    test: animation-trigger-late-attached-timeline.tentative.html
+  - subtest: Single trigger controls multiple animations
+    test: animation-trigger-multiple-animations.tentative.html
+  - subtest: Multiple triggers on same animation throws.
+    test: animation-trigger-multiple-triggers.tentative.html
+  - subtest: once trigger respects animation-play-state.
+    test: animation-trigger-once-play-state.tentative.html
+  - subtest: once animation triggered via scroll() timeline.
+    test: animation-trigger-once.tentative.html
+  - subtest: once animation triggered via view() timeline.
+    test: animation-trigger-once.tentative.html
+  - subtest: once animation triggered via deferred (view) timeline.
+    test: animation-trigger-once.tentative.html
+  - subtest: play-forwards plays a finished animation if reversing direction, and
+      does not restart it once finished
+    test: animation-trigger-play-forwards-backwards.tentative.html
+  - subtest: play-backwards plays a finished animation if reversing direction, and
+      does not restart it once finished
+    test: animation-trigger-play-forwards-backwards.tentative.html
+  - subtest: once animation triggered via deferred (view) timeline.
+    test: animation-trigger-state.tentative.html
+  - subtest: triggering stops when a trigger's timeline subject is removed and restarts
+      when reattached.
+    test: animation-trigger-timeline-subject-removed.tentative.html
+  - subtest: Toggling trigger on starts controlling attached animation; toggling off
+      stops
+    test: timeline-trigger-toggle.tentative.html
+  - subtest: In-scope target finds trigger of source; out-of-scope target does not.
+    test: trigger-scope-in-scope-source.tentative.html
+  - subtest: target within named trigger-scope finds trigger within scope; out-of-scope
+      target does not.
+    test: trigger-scope-named.tentative.html
+  - subtest: In-scope targets find trigger of oof source; out-of-scope targets do
+      not.
+    test: trigger-scope-oof.tentative.html
+  - subtest: trigger-scope prevents in-scope target from finding trigger outside scope;
+      target outside trigger-scope finds trigger
+    test: trigger-scope-out-of-scope-source.tentative.html
+  - subtest: Among in-scope triggers with same name, last in tree-order is selected.
+    test: trigger-scope-scoped-tree-order.tentative.html
+  - subtest: Among in-scope triggers with same name, last in tree-order is selected,
+      unless name occurs in ancestry before scope is reached.
+    test: trigger-scope-tree-order-ancestor-chain.tentative.html
+  - subtest: Among un-scoped triggers with same name, last in tree-order is selected.
+    test: trigger-scope-unscoped-tree-order.tentative.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2050715
