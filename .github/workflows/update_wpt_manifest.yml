@@ -20,6 +20,8 @@ jobs:
 
     - name: run main
       run: ./main
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
     - name: Create pull request
       id: cpr
