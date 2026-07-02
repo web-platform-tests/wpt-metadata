@@ -1,0 +1,43 @@
+name: 'Automated Merge Conflict Resolver'
+on:
+  push:
+    branches:
+      - master
+  workflow_dispatch:
+    inputs:
+      prNumber:
+        description: 'PR Number to resolve conflicts for'
+        required: false
+
+jobs:
+  resolve-conflicts:
+    runs-on: ubuntu-24.04
+    permissions:
+      pull-requests: write
+      contents: write
+    steps:
+    - uses: actions/checkout@v2
+      with:
+        fetch-depth: 0
+
+    - uses: actions/setup-go@v5
+      with:
+        go-version: 1.23.x
+
+    - name: Configure Git identity
+      run: |
+        git config user.name "wptmetadata-bot"
+        git config user.email "wptmetadata-github-bot@google.com"
+
+    - name: Resolve conflicts on open bot PRs or specified PR
+      env:
+        GH_TOKEN: ${{ secrets.WPTMETADATA_BOT_USER_PAT }}
+        PR_NUMBER: ${{ inputs.prNumber }}
+      run: |
+        if [ -n "$PR_NUMBER" ]; then
+          go run tools/resolve_conflicts/main.go --pr="$PR_NUMBER"
+        else
+          for pr in $(gh pr list --author "wptmetadata-bot" --state open --json number -q '.[].number'); do
+            go run tools/resolve_conflicts/main.go --pr="$pr" || true
+          done
+        fi
