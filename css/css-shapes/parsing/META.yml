@@ -23,3 +23,34 @@ links:
   - subtest: Property shape-outside value 'circle(at top 0% right calc(10% * sibling-index()))'
     test: shape-outside-computed.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1957695
+- product: firefox
+  results:
+  - subtest: Property shape-outside value 'path('M 10 10 h 80 v 80 h -80 Z')'
+    test: shape-outside-computed.html
+  - subtest: Property shape-outside value 'path('M10,10h80v80h-80z')'
+    test: shape-outside-computed.html
+  - subtest: Property shape-outside value 'path(evenodd, 'M10,10h80v80h-80zM25,25h50v50h-50z')'
+    test: shape-outside-computed.html
+  - subtest: Property shape-outside value 'path(nonzero, 'M10,10h80v80h-80z')'
+    test: shape-outside-computed.html
+  - subtest: Property shape-outside value 'path('M0,0L100,0L100,100Z')'
+    test: shape-outside-computed.html
+  - subtest: Property shape-outside value 'path('M0,0C30,60,70,60,100,0')'
+    test: shape-outside-computed.html
+  - subtest: Property shape-outside value 'path('M0,0Q50,100,100,0')'
+    test: shape-outside-computed.html
+  - subtest: Property shape-outside value 'path('M0,0A25,25,0,0,1,50,0')'
+    test: shape-outside-computed.html
+  - subtest: Property shape-outside value 'shape(from 20px 40px, line to 20px 30px)'
+    test: shape-outside-computed.html
+  - subtest: Property shape-outside value 'shape(from 0 0, line to 100% 100%)'
+    test: shape-outside-computed.html
+  - subtest: Property shape-outside value 'shape(from 20px 40px, smooth to center
+      20%)'
+    test: shape-outside-computed.html
+  - subtest: Property shape-outside value 'shape(from 20px 40px, line to 100px 40px,
+      line to 100px 100px, close)'
+    test: shape-outside-computed.html
+  - subtest: Property shape-outside value 'shape(from 1em 2em, line to 3em 1em)'
+    test: shape-outside-computed.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2052160
