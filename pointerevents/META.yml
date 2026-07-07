@@ -962,3 +962,10 @@ links:
   - subtest: 'WheelEvent interface: attribute momentum'
     test: idlharness.https.window.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=2049193
+- product: firefox
+  results:
+  - test: pointerevent_touch-action-overflow-hidden_touch.html
+  - subtest: 'overflow: hidden does not re-enable touch panning along either axis'
+    test: pointerevent_touch-action-overflow-hidden_touch.html
+  - test: pointerevent_touch-action-single-axis_touch.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2053014
