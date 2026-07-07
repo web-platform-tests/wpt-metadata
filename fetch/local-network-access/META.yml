@@ -10,3 +10,10 @@ links:
   - subtest: 'treat-as-public-address to local: permission denied.'
     test: iframe.tentative.https.window.html?include=from-treat-as-public
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=2021651
+- product: firefox
+  results:
+  - subtest: LNA Public to local http mixed content bypass
+    test: fetch.tentative.https.html
+  - subtest: LNA Public to loopback navigate iframe from opener without permission
+    test: iframe-opener.tentative.https.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2053026
