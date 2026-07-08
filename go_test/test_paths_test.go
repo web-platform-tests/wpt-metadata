@@ -38,9 +38,13 @@ func (f roundTripperFunc) RoundTrip(req *http.Request) (*http.Response, error) {
 	return f(req)
 }
 
+func isLiveManifestFallbackEnabled() bool {
+	return strings.ToLower(strings.TrimSpace(os.Getenv("CI"))) == "true"
+}
+
 func getLiveManifest() (*shared.Manifest, error) {
 	liveManifestOnce.Do(func() {
-		log.Println("Test path missing from local MANIFEST.json; fetching live WPT manifest from", liveManifestURL)
+		log.Println("[NOTICE] Retrieving live WPT manifest from", liveManifestURL, "(CI=true)...")
 		resp, err := httpClient.Get(liveManifestURL)
 		if err != nil {
 			liveManifestErr = fmt.Errorf("failed to fetch live manifest: %w", err)
@@ -132,12 +136,17 @@ func TestResultsTestPaths(t *testing.T) {
 								ok, err = manifest.ContainsTest(fullPath)
 							}
 							if !ok || err != nil {
-								if liveM, lErr := getLiveManifest(); lErr == nil && liveM != nil {
-									if result.TestPath == "*" {
-										ok, err = liveM.ContainsFile(absFileDir)
-									} else {
-										ok, err = liveM.ContainsTest(fullPath)
+								if isLiveManifestFallbackEnabled() {
+									log.Printf("[NOTICE] Test path %q not found in local MANIFEST.json. Attempting live manifest check (enabled via CI=true)...", fullPath)
+									if liveM, lErr := getLiveManifest(); lErr == nil && liveM != nil {
+										if result.TestPath == "*" {
+											ok, err = liveM.ContainsFile(absFileDir)
+										} else {
+											ok, err = liveM.ContainsTest(fullPath)
+										}
 									}
+								} else {
+									log.Printf("[NOTICE] Test path %q not found in local MANIFEST.json. Live manifest fallback is disabled. To check against live upstream WPT manifest locally, run with: CI=true go test ./...", fullPath)
 								}
 							}
 							assert.Nil(t, err)
@@ -200,5 +209,13 @@ func TestLiveManifestFallback_LiveNetwork(t *testing.T) {
 	ok, err := liveM.ContainsTest("xhr/send-redirect.htm")
 	assert.Nil(t, err)
 	assert.True(t, ok)
+}
+
+func TestIsLiveManifestFallbackEnabled(t *testing.T) {
+	t.Setenv("CI", "true")
+	assert.True(t, isLiveManifestFallbackEnabled())
+
+	t.Setenv("CI", "false")
+	assert.False(t, isLiveManifestFallbackEnabled())
 }
 
