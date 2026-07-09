@@ -1,59 +1,166 @@
 links:
 - product: firefox
+  results:
+  - subtest: 'CSS Mixins: @import with media queries'
+    test: mixin-from-import-with-media-queries.html
+  - subtest: 'CSS Mixins: Mixin from an imported stylesheet'
+    test: mixin-from-import.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1983647
-  results:
-  - test: mixin-from-import-with-media-queries.html
-    subtest: 'CSS Mixins: @import with media queries'
-  - test: mixin-from-import.html
-    subtest: 'CSS Mixins: Mixin from an imported stylesheet'
 - product: firefox
+  results:
+  - subtest: Can mix declarations into pseudo-elements
+    test: apply-nested-declarations.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1997273
-  results:
-  - test: apply-nested-declarations.html
-    subtest: Can mix declarations into pseudo-elements
 - product: firefox
+  results:
+  - subtest: '@layer (statement) is invalid in @mixin'
+    test: mixin-parsing.html
+  - subtest: style rule is valid in @mixin
+    test: mixin-parsing.html
+  - subtest: style rule (relative) is valid in @mixin
+    test: mixin-parsing.html
+  - subtest: '@media is valid in @mixin'
+    test: mixin-parsing.html
+  - subtest: '@supports is valid in @mixin'
+    test: mixin-parsing.html
+  - subtest: '@container is valid in @mixin'
+    test: mixin-parsing.html
+  - subtest: '@starting-style is valid in @mixin'
+    test: mixin-parsing.html
+  - subtest: '@scope is valid in @mixin'
+    test: mixin-parsing.html
+  - subtest: '@scope (implicit) is valid in @mixin'
+    test: mixin-parsing.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1997289
-  results:
-  - test: mixin-parsing.html
-    subtest: '@layer (statement) is invalid in @mixin'
-  - test: mixin-parsing.html
-    subtest: style rule is valid in @mixin
-  - test: mixin-parsing.html
-    subtest: style rule (relative) is valid in @mixin
-  - test: mixin-parsing.html
-    subtest: '@media is valid in @mixin'
-  - test: mixin-parsing.html
-    subtest: '@supports is valid in @mixin'
-  - test: mixin-parsing.html
-    subtest: '@container is valid in @mixin'
-  - test: mixin-parsing.html
-    subtest: '@starting-style is valid in @mixin'
-  - test: mixin-parsing.html
-    subtest: '@scope is valid in @mixin'
-  - test: mixin-parsing.html
-    subtest: '@scope (implicit) is valid in @mixin'
 - product: firefox
+  results:
+  - subtest: '@layer (block) is invalid in @mixin'
+    test: mixin-parsing.html
+  - subtest: '@layer (anonymous) is invalid in @mixin'
+    test: mixin-parsing.html
+  - subtest: serialization of rule with @apply
+    test: mixin-cssom.tentative.html
+  - subtest: serialization of rule with @apply and contents argument
+    test: mixin-cssom.tentative.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=2016168
-  results:
-  - test: mixin-parsing.html
-    subtest: '@layer (block) is invalid in @mixin'
-  - test: mixin-parsing.html
-    subtest: '@layer (anonymous) is invalid in @mixin'
-  - test: mixin-cssom.tentative.html
-    subtest: serialization of rule with @apply
-  - test: mixin-cssom.tentative.html
-    subtest: serialization of rule with @apply and contents argument
 - product: firefox
+  results:
+  - subtest: 'CSS Mixins: Basic test'
+    test: mixin-basic.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1983645
-  results:
-  - test: mixin-basic.html
-    subtest: 'CSS Mixins: Basic test'
 - product: firefox
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2011298
   results:
-  - test: mixin-shadow-dom.html
-    subtest: Style in shadow DOM should have access to outside non-adopted mixins
-  - test: mixin-shadow-dom.html
-    subtest: Style in shadow DOM should have access to inside mixins
-  - test: mixin-shadow-dom.html
-    subtest: Style in shadow DOM should have access to mixins from adopted stylesheets
+  - subtest: Style in shadow DOM should have access to outside non-adopted mixins
+    test: mixin-shadow-dom.html
+  - subtest: Style in shadow DOM should have access to inside mixins
+    test: mixin-shadow-dom.html
+  - subtest: Style in shadow DOM should have access to mixins from adopted stylesheets
+    test: mixin-shadow-dom.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2011298
+- product: firefox
+  results:
+  - subtest: 'CSS Mixins: Mixins depending on other mixins'
+    test: apply-within-mixin.html
+  - subtest: Can mix declarations into pseudo-elements via @contents
+    test: contents-nested-declarations-fallback.html
+  - subtest: Can mix declarations into pseudo-elements via @contents
+    test: contents-nested-declarations.html
+  - subtest: Simple @contents with no fallback
+    test: contents-rule.html
+  - subtest: Implicit semicolon after @contents, at end of block
+    test: contents-rule.html
+  - subtest: Block in @apply overrides fallback
+    test: contents-rule.html
+  - subtest: Fallback is used if @apply has no block
+    test: contents-rule.html
+  - subtest: Empty @contents block is allowed, but does nothing
+    test: contents-rule.html
+  - subtest: Empty @contents parameter does not crash
+    test: contents-rule.html
+  - subtest: '@container wrapping @result'
+    test: mixin-conditionals.html
+  - subtest: '@media and @supports wrapping locals'
+    test: mixin-conditionals.html
+  - subtest: '@container wrapping locals'
+    test: mixin-conditionals.html
+  - subtest: '@container wrapping locals with different container is not cached'
+    test: mixin-conditionals.html
+  - subtest: Bare locals overriding earlier conditional-wrapped locals
+    test: mixin-conditionals.html
+  - subtest: Nested @media and @container locals
+    test: mixin-conditionals.html
+  - subtest: 'CSS Mixins: Mixin from another stylesheet'
+    test: mixin-cross-stylesheet.html
+  - subtest: serialization of @mixin
+    test: mixin-cssom.tentative.html
+  - subtest: serialization of @mixin with @contents
+    test: mixin-cssom.tentative.html
+  - subtest: serialization of @mixin with parameters
+    test: mixin-cssom.tentative.html
+  - subtest: 'CSS Mixins: Cycles'
+    test: mixin-cycle.tentative.html
+  - subtest: 'CSS Mixins: Declarations directly in mixin'
+    test: mixin-declarations.html
+  - subtest: invalidation of @mixin from same stylesheet
+    test: mixin-invalidation.tentative.html
+  - subtest: invalidation of @mixin from different stylesheet
+    test: mixin-invalidation.tentative.html
+  - subtest: invalidation on adding @apply rule
+    test: mixin-invalidation.tentative.html
+  - subtest: Basic local support
+    test: mixin-locals.html
+  - subtest: Mixin is not cached if locals are different
+    test: mixin-locals.html
+  - subtest: Locals resolve against each other
+    test: mixin-locals.html
+  - subtest: Locals resolve against parameters
+    test: mixin-locals.html
+  - subtest: Parameters do not resolve against locals
+    test: mixin-locals.html
+  - subtest: Locals after @result are seen
+    test: mixin-locals.html
+  - subtest: 'CSS Mixins: Invalidates on negative media query becoming positive'
+    test: mixin-media-query-invalidation-2.html
+  - subtest: 'CSS Mixins: Media Queries and invalidation'
+    test: mixin-media-query-invalidation.html
+  - subtest: Mixins with invalid parameter lists are ignored
+    test: mixin-parameters.html
+  - subtest: Basic mixin parameter passing
+    test: mixin-parameters.html
+  - subtest: Mixins can be called multiple times with different parameters
+    test: mixin-parameters.html
+  - subtest: Too few parameters and no default ignores mixin
+    test: mixin-parameters.html
+  - subtest: Mixin argument parsing with arguments wrapped in {}
+    test: mixin-parameters.html
+  - subtest: Defaults in mixin parameters
+    test: mixin-parameters.html
+  - subtest: Fallback is ignored if argument is given
+    test: mixin-parameters.html
+  - subtest: Fallback is used with no parameter and no default
+    test: mixin-parameters.html
+  - subtest: var() can be accessed from attributes
+    test: mixin-parameters.html
+  - subtest: var() resolves typed parameters
+    test: mixin-parameters.html
+  - subtest: var() refuses illegal syntax parameters, but does not fail entire mixin
+    test: mixin-parameters.html
+  - subtest: var() can access parameters from outer mixins
+    test: mixin-parameters.html
+  - subtest: var() works inside if, in condition and true branch
+    test: mixin-parameters.html
+  - subtest: var() works inside if, in condition and false branch
+    test: mixin-parameters.html
+  - subtest: Mixin arguments are resolved at call site, not at use
+    test: mixin-parameters.html
+  - subtest: var() supports default parameters
+    test: mixin-parameters.html
+  - subtest: var() typed default parameters are resolved against the element
+    test: mixin-parameters.html
+  - subtest: '@layer (statement) within @result is valid in @mixin'
+    test: mixin-parsing.html
+  - subtest: '@layer (block) within @result is valid in @mixin'
+    test: mixin-parsing.html
+  - subtest: '@layer (anonymous) within @result is valid in @mixin'
+    test: mixin-parsing.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2053886
