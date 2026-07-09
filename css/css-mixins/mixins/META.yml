@@ -1,0 +1,59 @@
+links:
+- product: firefox
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1983647
+  results:
+  - test: mixin-from-import-with-media-queries.html
+    subtest: 'CSS Mixins: @import with media queries'
+  - test: mixin-from-import.html
+    subtest: 'CSS Mixins: Mixin from an imported stylesheet'
+- product: firefox
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1997273
+  results:
+  - test: apply-nested-declarations.html
+    subtest: Can mix declarations into pseudo-elements
+- product: firefox
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1997289
+  results:
+  - test: mixin-parsing.html
+    subtest: '@layer (statement) is invalid in @mixin'
+  - test: mixin-parsing.html
+    subtest: style rule is valid in @mixin
+  - test: mixin-parsing.html
+    subtest: style rule (relative) is valid in @mixin
+  - test: mixin-parsing.html
+    subtest: '@media is valid in @mixin'
+  - test: mixin-parsing.html
+    subtest: '@supports is valid in @mixin'
+  - test: mixin-parsing.html
+    subtest: '@container is valid in @mixin'
+  - test: mixin-parsing.html
+    subtest: '@starting-style is valid in @mixin'
+  - test: mixin-parsing.html
+    subtest: '@scope is valid in @mixin'
+  - test: mixin-parsing.html
+    subtest: '@scope (implicit) is valid in @mixin'
+- product: firefox
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2016168
+  results:
+  - test: mixin-parsing.html
+    subtest: '@layer (block) is invalid in @mixin'
+  - test: mixin-parsing.html
+    subtest: '@layer (anonymous) is invalid in @mixin'
+  - test: mixin-cssom.tentative.html
+    subtest: serialization of rule with @apply
+  - test: mixin-cssom.tentative.html
+    subtest: serialization of rule with @apply and contents argument
+- product: firefox
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1983645
+  results:
+  - test: mixin-basic.html
+    subtest: 'CSS Mixins: Basic test'
+- product: firefox
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2011298
+  results:
+  - test: mixin-shadow-dom.html
+    subtest: Style in shadow DOM should have access to outside non-adopted mixins
+  - test: mixin-shadow-dom.html
+    subtest: Style in shadow DOM should have access to inside mixins
+  - test: mixin-shadow-dom.html
+    subtest: Style in shadow DOM should have access to mixins from adopted stylesheets
