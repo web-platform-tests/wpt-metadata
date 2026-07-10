@@ -110,3 +110,12 @@ links:
   - subtest: Clone aborts with original controller
     test: general.any.worker.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1896590
+- product: firefox
+  results:
+  - subtest: Aborting rejects with abort reason when aborted after fetch() called
+    test: general.any.serviceworker.html
+  - subtest: Aborting rejects with abort reason when aborted after fetch() called
+    test: general.any.worker.html
+  - subtest: Aborting rejects with abort reason when aborted after fetch() called
+    test: general.any.sharedworker.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2054148
