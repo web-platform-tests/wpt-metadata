@@ -1308,3 +1308,30 @@ links:
   - subtest: ToASCII("xn--xn---epa") V4; V2 (ignored)
     test: IdnaTestV2.any.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=2029098
+- product: firefox
+  results:
+  - subtest: '<a>: Setting <https://example.com/>.host = ''xn--'''
+    test: url-setters-a-area.window.html?exclude=(file|javascript|mailto)
+  - subtest: '<area>: Setting <https://example.com/>.host = ''xn--'''
+    test: url-setters-a-area.window.html?exclude=(file|javascript|mailto)
+  - subtest: '<a>: Setting <https://example.com/>.hostname = ''xn--'''
+    test: url-setters-a-area.window.html?exclude=(file|javascript|mailto)
+  - subtest: '<area>: Setting <https://example.com/>.hostname = ''xn--'''
+    test: url-setters-a-area.window.html?exclude=(file|javascript|mailto)
+  - subtest: "<a>: Setting <https://domain.com:3000>.port = '\n\t80\n\t80\n\t'"
+    test: url-setters-a-area.window.html?exclude=(file|javascript|mailto)
+  - subtest: "<area>: Setting <https://domain.com:3000>.port = '\n\t80\n\t80\n\t'"
+    test: url-setters-a-area.window.html?exclude=(file|javascript|mailto)
+  - subtest: 'URL: Setting <https://example.com/>.host = ''xn--'''
+    test: url-setters.any.worker.html?exclude=(file|javascript|mailto)
+  - subtest: 'URL: Setting <https://example.com/>.hostname = ''xn--'''
+    test: url-setters.any.worker.html?exclude=(file|javascript|mailto)
+  - subtest: "URL: Setting <https://domain.com:3000>.port = '\n\n\t\t'"
+    test: url-setters.any.worker.html?exclude=(file|javascript|mailto)
+  - subtest: 'URL: Setting <https://example.com/>.host = ''xn--'''
+    test: url-setters.any.html?exclude=(file|javascript|mailto)
+  - subtest: 'URL: Setting <https://example.com/>.hostname = ''xn--'''
+    test: url-setters.any.html?exclude=(file|javascript|mailto)
+  - subtest: "URL: Setting <https://domain.com:3000>.port = '\n\n\t\t'"
+    test: url-setters.any.html?exclude=(file|javascript|mailto)
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2054889
