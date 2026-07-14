@@ -826,3 +826,22 @@ links:
   - subtest: ScrollTimeline current time is updated after programmatic animated scroll.
     test: scroll-timeline-snapshotting.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=2046991
+- product: firefox
+  results:
+  - subtest: Playing a running animation resets a sticky start time
+    test: play-animation.html
+  - subtest: Playing a finished animation restarts the animation aligned at the start
+    test: play-animation.html
+  - subtest: Playing a finished and reversed animation restarts the animation aligned
+      at the end
+    test: play-animation.html
+  - subtest: Playing a pause-pending but previously finished animation realigns with
+      the scroll position
+    test: play-animation.html
+  - subtest: Playing a finished animation clears the start time
+    test: play-animation.html
+  - subtest: Resuming an animation from paused realigns with scroll position.
+    test: play-animation.html
+  - subtest: A pending playback rate is used when determining timeline range alignment
+    test: play-animation.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2054851
