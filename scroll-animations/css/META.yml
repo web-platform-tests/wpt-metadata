@@ -441,3 +441,14 @@ links:
       results:
         - test: animation-inactive-outside-range-test.html
           subtest: Test status
+    - product: safari
+      url: https://bugs.webkit.org/show_bug.cgi?id=319493
+      results:
+        - test: view-timeline-shorthand.html
+          subtest: Shorthand contraction of view-timeline-name:--a, --b, --c:undefined;view-timeline-axis:inline, inline:undefined;view-timeline-inset:auto, auto:undefined
+        - test: view-timeline-shorthand.html
+          subtest: Shorthand contraction of view-timeline-name:--a, --b, --c, --d, --e, --f:undefined;view-timeline-axis:inline, x:undefined;view-timeline-inset:auto, 1px:undefined
+        - test: view-timeline-shorthand.html
+          subtest: Shorthand contraction of view-timeline-name:--a, --b:undefined;view-timeline-axis:inline, inline, inline:undefined;view-timeline-inset:auto, auto, auto:undefined
+        - test: view-timeline-shorthand.html
+          subtest: Shorthand contraction of view-timeline-name:--a, --b:undefined;view-timeline-axis:inline, inline:undefined;view-timeline-inset:auto, auto, auto:undefined
