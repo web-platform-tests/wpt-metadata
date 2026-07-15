@@ -2,15 +2,36 @@ package main
 
 import (
 	"context"
-	"fmt"
+	"encoding/json"
 	"io/ioutil"
 	"log"
 	"net/http"
+	"os"
 	"path"
+	"path/filepath"
+	"strings"
 
 	"github.com/google/go-github/v35/github"
 	"github.com/web-platform-tests/wpt-metadata/go_util"
+	"github.com/web-platform-tests/wpt.fyi/shared"
+	"go.yaml.in/yaml/v4"
 )
+
+type authTransport struct {
+	token string
+	base  http.RoundTripper
+}
+
+func (t *authTransport) RoundTrip(req *http.Request) (*http.Response, error) {
+	if t.token != "" {
+		req.Header.Set("Authorization", "Bearer "+t.token)
+	}
+	base := t.base
+	if base == nil {
+		base = http.DefaultTransport
+	}
+	return base.RoundTrip(req)
+}
 
 // This main() gets all the WPT test renaming and deletions between two WPT SHAs, then it deletes/renames
 // appropriately in the wpt-metadata repository. This program will roll in the latest WPT SHA once a day
@@ -34,19 +55,61 @@ func main() {
 
 	// Plumb the SHA information from a text file, WPT SHA rolls on a daily basis
 	renames, deletes := getChangesBetweenSHAs(context.Background(), shaBefore, shaAfter)
-	if renames == nil {
-		return
+	if renames != nil {
+		log.Println("Renaming WPT tests...")
+		for before, after := range renames {
+			renameMetadata(before, after)
+		}
+
+		log.Println("Deleting WPT tests...")
+		for _, delete := range deletes {
+			go_util.DeleteTestFromMetadata(delete)
+		}
 	}
 
-	fmt.Println("Renaming WPT tests...")
-	for before, after := range renames {
-		renameMetadata(before, after)
+	if manifestData, err := ioutil.ReadFile("go_test/MANIFEST.json"); err == nil {
+		var newManifest shared.Manifest
+		if err := json.Unmarshal(manifestData, &newManifest); err == nil {
+			sweepStaleMetadataAgainstManifest(&newManifest)
+		}
 	}
+}
 
-	fmt.Println("Deleting WPT tests...")
-	for _, delete := range deletes {
-		go_util.DeleteTestFromMetadata(delete)
-	}
+func sweepStaleMetadataAgainstManifest(manifest *shared.Manifest) {
+	log.Println("Sweeping repository for stale metadata against updated WPT manifest...")
+	filepath.Walk(".", func(filePath string, info os.FileInfo, err error) error {
+		if err != nil || info.IsDir() || strings.ToLower(info.Name()) != "meta.yml" {
+			return nil
+		}
+		fileDir := path.Dir(filePath)
+		data, err := ioutil.ReadFile(filePath)
+		if err != nil {
+			return nil
+		}
+		var metadata shared.Metadata
+		if err := yaml.Unmarshal(data, &metadata); err != nil {
+			return nil
+		}
+		for _, link := range metadata.Links {
+			for _, result := range link.Results {
+				if result.TestPath == "" {
+					continue
+				}
+				fullPath := path.Join(fileDir, result.TestPath)
+				var ok bool
+				if result.TestPath == "*" {
+					ok, _ = manifest.ContainsFile(fileDir)
+				} else {
+					ok, _ = manifest.ContainsTest(fullPath)
+				}
+				if !ok {
+					log.Printf("Pruning stale test path not found in latest manifest: %s", fullPath)
+					go_util.DeleteTestFromMetadata(fullPath)
+				}
+			}
+		}
+		return nil
+	})
 }
 
 // renameMetadata deletes the before WPT test and adds the after WPT test, if exists.
@@ -60,7 +123,7 @@ func renameMetadata(before, after string) {
 	// Rename the before test name to the after test name.
 	for linkIndex, link := range metadataLinks {
 		for resultIndex := range link.Results {
-			fmt.Println("Renaming", before, after)
+			log.Printf("Renaming %s to %s", before, after)
 			metadataLinks[linkIndex].Results[resultIndex].TestPath = afterTestname
 		}
 	}
@@ -75,15 +138,26 @@ func renameMetadata(before, after string) {
 // foo.any.html, foo.any.worker.html and foo.any.sharedworker.html. To perfectly rename/map all tests,
 // we need MANIFEST information.
 func getChangesBetweenSHAs(ctx context.Context, shaBefore, shaAfter string) (map[string]string, []string) {
-	fmt.Println("Getting WPT changes bewtween", shaBefore, "and", shaAfter)
+	log.Printf("Getting WPT changes between %s and %s", shaBefore, shaAfter)
 	if shaBefore == shaAfter {
-		fmt.Println("Nothing to do since the before/after SHAs are the same:", shaBefore)
+		log.Printf("Nothing to do since the before/after SHAs are the same: %s", shaBefore)
 		return nil, nil
 	}
-	githubClient := github.NewClient(nil)
+	token := os.Getenv("GITHUB_TOKEN")
+	if token == "" {
+		token = os.Getenv("GH_TOKEN")
+	}
+	if token == "" {
+		token = os.Getenv("WPTMETADATA_BOT_USER_PAT")
+	}
+	var tc *http.Client
+	if token != "" {
+		tc = &http.Client{Transport: &authTransport{token: token}}
+	}
+	githubClient := github.NewClient(tc)
 	comparison, _, err := githubClient.Repositories.CompareCommits(ctx, "web-platform-tests", "wpt", shaBefore, shaAfter)
 	if err != nil || comparison == nil {
-		fmt.Println("Failed to fetch diff for", shaBefore[:7], shaAfter[:7], ":", err.Error())
+		log.Printf("Failed to fetch diff for %s %s: %v", shaBefore[:7], shaAfter[:7], err)
 		return nil, nil
 	}
 
