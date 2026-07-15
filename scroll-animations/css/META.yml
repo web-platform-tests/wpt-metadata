@@ -452,3 +452,10 @@ links:
           subtest: Shorthand contraction of view-timeline-name:--a, --b:undefined;view-timeline-axis:inline, inline, inline:undefined;view-timeline-inset:auto, auto, auto:undefined
         - test: view-timeline-shorthand.html
           subtest: Shorthand contraction of view-timeline-name:--a, --b:undefined;view-timeline-axis:inline, inline:undefined;view-timeline-inset:auto, auto, auto:undefined
+    - product: safari
+      url: https://bugs.webkit.org/show_bug.cgi?id=319495
+      results:
+        - test: view-timeline-lookup.html
+          subtest: timeline-scope on ancestor sibling, resolve to last match in tree order
+        - test: view-timeline-lookup.html
+          subtest: ancestor search stops at timeline-scope
