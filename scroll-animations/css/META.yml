@@ -457,3 +457,14 @@ links:
       results:
         - test: view-timeline-dynamic.html
           subtest: Dynamically changing view-timeline attachment
+      url: https://bugs.webkit.org/show_bug.cgi?id=319495
+      results:
+        - test: view-timeline-lookup.html
+          subtest: timeline-scope on ancestor sibling, resolve to last match in tree order
+        - test: view-timeline-lookup.html
+          subtest: ancestor search stops at timeline-scope
+    - product: safari
+      url: https://bugs.webkit.org/show_bug.cgi?id=319497
+      results:
+        - test: timeline-scope.html
+          subtest: Dynamically detaching
