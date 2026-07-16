@@ -220,3 +220,10 @@ links:
   - test: root-element-transition-iframe-with-startVT-on-main.html
   - test: root-element-transition-iframe.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=2050723
+- product: firefox
+  results:
+  - test: reveal-after-aborted-navigation.html
+  - subtest: an aborted navigation while render-blocked still reveals the original
+      document
+    test: reveal-after-aborted-navigation.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2055556
