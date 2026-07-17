@@ -1,116 +1,111 @@
 links:
-- product: chrome
-  results:
-  - status: FAIL
-    test: 009.html
-  url: https://crbug.com/651762
 - product: firefox
-  results:
-  - subtest: COEP check precedes X-Frame-Options check
-    test: failure-check-sequence.https.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1661310
-- product: firefox
   results:
-  - subtest: 0041 set in src=""
-    test: javascript-url-return-value-handling-dynamic.html
-  - subtest: 0041 set in href="" targeting a frame and clicked
-    test: javascript-url-return-value-handling-dynamic.html
-  - subtest: 0080 00FF set in src=""
-    test: javascript-url-return-value-handling-dynamic.html
-  - subtest: 0080 00FF set in href="" targeting a frame and clicked
-    test: javascript-url-return-value-handling-dynamic.html
+  - test: failure-check-sequence.https.html
+    subtest: COEP check precedes X-Frame-Options check
+- product: firefox
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1717686
-- product: firefox
   results:
-  - subtest: cross-origin-domain but same-origin, setting src
-    test: javascript-url-security-check-failure.sub.html
-  - subtest: cross-origin-domain but same-origin, setting location.href
-    test: javascript-url-security-check-failure.sub.html
-  - subtest: Using iframeEl.src
-    test: javascript-url-security-check-multi-globals.sub.html
-  - test: javascript-url-security-check-same-origin-domain.sub.html
-  - subtest: 'javascript: URL security check for same-origin-domain but not same-origin'
-    test: javascript-url-security-check-same-origin-domain.sub.html
+  - test: javascript-url-return-value-handling-dynamic.html
+    subtest: 0041 set in src=""
+  - test: javascript-url-return-value-handling-dynamic.html
+    subtest: 0041 set in href="" targeting a frame and clicked
+  - test: javascript-url-return-value-handling-dynamic.html
+    subtest: 0080 00FF set in src=""
+  - test: javascript-url-return-value-handling-dynamic.html
+    subtest: 0080 00FF set in href="" targeting a frame and clicked
+- product: firefox
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1718318
-- product: firefox
   results:
-  - subtest: Loading an iframe with src=redirecting URL
-    test: redirect-to-data.html
-  - subtest: Navigating an iframe to a redirecting URL
-    test: redirect-to-data.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1730240
+  - test: javascript-url-security-check-failure.sub.html
+    subtest: cross-origin-domain but same-origin, setting src
+  - test: javascript-url-security-check-failure.sub.html
+    subtest: cross-origin-domain but same-origin, setting location.href
+  - test: javascript-url-security-check-multi-globals.sub.html
+    subtest: Using iframeEl.src
+  - test: javascript-url-security-check-same-origin-domain.sub.html
+  - test: javascript-url-security-check-same-origin-domain.sub.html
+    subtest: 'javascript: URL security check for same-origin-domain but not same-origin'
 - product: firefox
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1730240
+  results:
+  - test: redirect-to-data.html
+    subtest: Loading an iframe with src=redirecting URL
+  - test: redirect-to-data.html
+    subtest: Navigating an iframe to a redirecting URL
+- product: firefox
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1747146
   results:
   - test: child-navigates-parent-cross-origin.window.html
-  - subtest: Child document attempts to navigate cross-origin parent via location
-    test: child-navigates-parent-cross-origin.window.html
-  - subtest: Child document attempts to navigate cross-origin parent via location.hash
-    test: child-navigates-parent-cross-origin.window.html
-  - subtest: Child document attempts to navigate cross-origin parent via location.host
-    test: child-navigates-parent-cross-origin.window.html
-  - subtest: Child document attempts to navigate cross-origin parent via location.hostname
-    test: child-navigates-parent-cross-origin.window.html
-  - subtest: Child document attempts to navigate cross-origin parent via location.href
-    test: child-navigates-parent-cross-origin.window.html
-  - subtest: Child document attempts to navigate cross-origin parent via location.pathname
-    test: child-navigates-parent-cross-origin.window.html
-  - subtest: Child document attempts to navigate cross-origin parent via location.protocol
-    test: child-navigates-parent-cross-origin.window.html
-  - subtest: Child document attempts to navigate cross-origin parent via location.reload()
-    test: child-navigates-parent-cross-origin.window.html
-  - subtest: Child document attempts to navigate cross-origin parent via location.replace()
-    test: child-navigates-parent-cross-origin.window.html
-  - subtest: Child document attempts to navigate cross-origin parent via location.search
-    test: child-navigates-parent-cross-origin.window.html
-  - subtest: Child document attempts to navigate cross-origin parent via non-standard
+  - test: child-navigates-parent-cross-origin.window.html
+    subtest: Child document attempts to navigate cross-origin parent via location
+  - test: child-navigates-parent-cross-origin.window.html
+    subtest: Child document attempts to navigate cross-origin parent via location.hash
+  - test: child-navigates-parent-cross-origin.window.html
+    subtest: Child document attempts to navigate cross-origin parent via location.host
+  - test: child-navigates-parent-cross-origin.window.html
+    subtest: Child document attempts to navigate cross-origin parent via location.hostname
+  - test: child-navigates-parent-cross-origin.window.html
+    subtest: Child document attempts to navigate cross-origin parent via location.href
+  - test: child-navigates-parent-cross-origin.window.html
+    subtest: Child document attempts to navigate cross-origin parent via location.pathname
+  - test: child-navigates-parent-cross-origin.window.html
+    subtest: Child document attempts to navigate cross-origin parent via location.protocol
+  - test: child-navigates-parent-cross-origin.window.html
+    subtest: Child document attempts to navigate cross-origin parent via location.reload()
+  - test: child-navigates-parent-cross-origin.window.html
+    subtest: Child document attempts to navigate cross-origin parent via location.replace()
+  - test: child-navigates-parent-cross-origin.window.html
+    subtest: Child document attempts to navigate cross-origin parent via location.search
+  - test: child-navigates-parent-cross-origin.window.html
+    subtest: Child document attempts to navigate cross-origin parent via non-standard
       location property
-    test: child-navigates-parent-cross-origin.window.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1747146
 - product: firefox
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1779719
   results:
   - test: navigate-cross-origin-iframe-to-same-url-with-fragment-fire-load-event.html
-  - subtest: Changing the URL hash of a cross-origin iframe should fire a load event
-    test: navigate-cross-origin-iframe-to-same-url-with-fragment-fire-load-event.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1779719
+  - test: navigate-cross-origin-iframe-to-same-url-with-fragment-fire-load-event.html
+    subtest: Changing the URL hash of a cross-origin iframe should fire a load event
 - product: firefox
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1789710
   results:
   - test: redirect-to-unparseable-url.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1789710
 - product: firefox
-  results:
-  - subtest: Cross-origin top navigation is blocked without user activation
-    test: cross-origin-top-navigation-without-user-activation.window.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1793255
-- product: firefox
   results:
-  - subtest: Same-origin navigation started from unload handler must be ignored
-    test: navigation-unload-same-origin.window.html
+  - test: cross-origin-top-navigation-without-user-activation.window.html
+    subtest: Cross-origin top navigation is blocked without user activation
+- product: firefox
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1796536
-- product: firefox
   results:
-  - subtest: 'javascript: URL navigation to a string must create a HTML document using
-      the correct properties'
-    test: javascript-url-load-as-html.xhtml
+  - test: navigation-unload-same-origin.window.html
+    subtest: Same-origin navigation started from unload handler must be ignored
+- product: firefox
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1798248
-- product: firefox
   results:
-  - subtest: 'Navigating an iframe via location.href to a javascript: URL must not
-      fire beforeunload: string completion'
-    test: javascript-url-no-beforeunload.window.html
-  - subtest: 'Navigating an iframe via src="" to a javascript: URL after insertion
-      must not fire beforeunload: string completion'
-    test: javascript-url-no-beforeunload.window.html
-  - subtest: 'Navigating an opened window via location.href to a javascript: URL must
-      not fire beforeunload: string completion'
-    test: javascript-url-no-beforeunload.window.html
-  - subtest: 'Navigating an opened window with an iframe via location.href to a javascript:
-      URL must not fire beforeunload on the iframe: string completion'
-    test: javascript-url-no-beforeunload.window.html
+  - test: javascript-url-load-as-html.xhtml
+    subtest: 'javascript: URL navigation to a string must create a HTML document using
+      the correct properties'
+- product: firefox
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1799328
-- product: firefox
   results:
-  - subtest: unsafe-url referrer policy used to create the starting page
-    test: javascript-url-referrer.window.html
-  - subtest: origin referrer policy used to create the starting page
-    test: javascript-url-referrer.window.html
+  - test: javascript-url-no-beforeunload.window.html
+    subtest: 'Navigating an iframe via location.href to a javascript: URL must not
+      fire beforeunload: string completion'
+  - test: javascript-url-no-beforeunload.window.html
+    subtest: 'Navigating an iframe via src="" to a javascript: URL after insertion
+      must not fire beforeunload: string completion'
+  - test: javascript-url-no-beforeunload.window.html
+    subtest: 'Navigating an opened window via location.href to a javascript: URL must
+      not fire beforeunload: string completion'
+  - test: javascript-url-no-beforeunload.window.html
+    subtest: 'Navigating an opened window with an iframe via location.href to a javascript:
+      URL must not fire beforeunload on the iframe: string completion'
+- product: firefox
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1800200
+  results:
+  - test: javascript-url-referrer.window.html
+    subtest: unsafe-url referrer policy used to create the starting page
+  - test: javascript-url-referrer.window.html
+    subtest: origin referrer policy used to create the starting page
