@@ -491,3 +491,30 @@ links:
   - test: corner-shape-square-notch-mixed.html
   - test: corner-shape-square-notch-superellipse.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=2055108
+- product: firefox
+  results:
+  - subtest: Property corner-block-start value '0px round'
+    test: corner-block-start-computed.html
+  - subtest: Property corner value '0px round'
+    test: corner-computed.html
+  - subtest: Property corner value 'normal'
+    test: corner-computed.html
+  - subtest: Property corner value 'round 0rem'
+    test: corner-computed.html
+  - subtest: Property corner value 'round 0%'
+    test: corner-computed.html
+  - subtest: Property corner value '30px superellipse(0.4)'
+    test: corner-computed.html
+  - subtest: Property corner value ' 3% 5rem superellipse(0.4)'
+    test: corner-computed.html
+  - subtest: Property corner value '4px superellipse(3) / 2px superellipse(-0.3)'
+    test: corner-computed.html
+  - subtest: Property corner-top value '0px round'
+    test: corner-top-computed.html
+  - subtest: Property corner-top-left value '0px round'
+    test: corner-top-left-computed.html
+  - subtest: Property corner-top-left value 'normal'
+    test: corner-top-left-computed.html
+  - subtest: Property corner-top-left value 'superellipse(-0.5) 30% 10px'
+    test: corner-top-left-computed.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2056335
