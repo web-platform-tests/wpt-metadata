@@ -84,3 +84,8 @@ links:
   - subtest: match-dest presence takes priority over longer match patterns
     test: dictionary-match.tentative.https.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=2054271
+- product: firefox
+  results:
+  - subtest: link rel=compression-dictionary can be blocked via connect-src.
+    test: dictionary-fetch-with-link-connect-src.tentative.https.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2056003

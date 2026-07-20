@@ -1,10 +1,15 @@
 links:
 - product: chrome
-  url: https://crbug.com/6606
   results:
-  - test: integration-point-4.html
-    status: FAIL
+  - status: FAIL
+    test: integration-point-4.html
+  url: https://crbug.com/6606
 - product: chrome
-  url: https://crbug.com/1093840
   results:
   - test: math-global-event-handlers.html
+  url: https://crbug.com/1093840
+- product: firefox
+  results:
+  - status: CRASH
+    test: href-navigation.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2056273

@@ -6815,3 +6815,16 @@ links:
   results:
   - test: anchor-scroll-to-sticky-005.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=2047418
+- product: firefox
+  results:
+  - subtest: 'inner scrollable in y only: #outer''s x scroll is still compensated'
+    test: anchor-scroll-single-axis-default-anchor.html
+  - subtest: 'inner scrollable in x only: #outer''s y scroll is still compensated'
+    test: anchor-scroll-single-axis-default-anchor.html
+  - subtest: 'inner scrollable in y only: anchors share outer for x; both axes are
+      compensated'
+    test: anchor-scroll-single-axis-mixed-anchor.html
+  - subtest: 'inner scrollable in x only: anchors have different nearest x scroll
+      containers; only y scroll is compensated'
+    test: anchor-scroll-single-axis-mixed-anchor.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2055992

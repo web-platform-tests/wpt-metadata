@@ -4,3 +4,20 @@ links:
   - subtest: test_get_element_tag_name
     test: get.py
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=2026697
+- product: firefox
+  results:
+  - subtest: test_get_svg_element_tag_name
+    test: get.py
+  - subtest: test_get_element_tag_name_with_namespace_prefix
+    test: get.py
+  - subtest: test_get_element_tag_name_namespace_created_via_script[html upper]
+    test: get.py
+  - subtest: test_get_element_tag_name_namespace_created_via_script[svg upper]
+    test: get.py
+  - subtest: test_get_element_tag_name_namespace_created_via_script[svg upper prefixed]
+    test: get.py
+  - subtest: test_get_element_tag_name_namespace_created_via_script[svg mixed]
+    test: get.py
+  - subtest: test_get_element_tag_name_namespace_created_via_script[custom mixed]
+    test: get.py
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2056275
