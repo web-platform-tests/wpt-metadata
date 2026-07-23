@@ -89,3 +89,10 @@ links:
   - subtest: link rel=compression-dictionary can be blocked via connect-src.
     test: dictionary-fetch-with-link-connect-src.tentative.https.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=2056003
+- product: firefox
+  results:
+  - test: compressed-large-resources-002.tentative.https.html
+  - subtest: All <link rel=compression-dictionary> are blocked via CSP rule connect-src
+      'nonce-abc', even when they have a matching cryptographic nonce.
+    test: dictionary-fetch-with-link-connect-src-nonce.tentative.https.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2057188
