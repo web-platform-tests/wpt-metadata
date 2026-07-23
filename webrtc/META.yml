@@ -574,3 +574,10 @@ links:
           subtest: new RTCPeerConnection(config) - with turn server and empty string username, credential should succeed
         - test: RTCConfiguration-iceServers.html?rest
           subtest: setConfiguration(config) - with turn server and empty string username, credential should succeed
+    - product: firefox
+      url: https://github.com/w3c/webrtc-pc/issues/3129
+      results:
+        - test: RTCPeerConnection-setLocalDescription-answer.html
+          subtest: Calling setLocalDescription(answer) from stable state should reject with InvalidStateError
+        - test: RTCPeerConnection-setLocalDescription-answer.html
+          subtest: Calling setLocalDescription(answer) from have-local-offer state should reject with InvalidStateError
