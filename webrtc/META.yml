@@ -581,3 +581,14 @@ links:
           subtest: Calling setLocalDescription(answer) from stable state should reject with InvalidStateError
         - test: RTCPeerConnection-setLocalDescription-answer.html
           subtest: Calling setLocalDescription(answer) from have-local-offer state should reject with InvalidStateError
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=2037526
+      results:
+        - test: idlharness.https.window.html?include=(RTCSessionDescription|RTCPeerConnectionIceErrorEvent|RTCRtpReceiver|RTCDtlsTransport|RTCIceTransport|RTCDTMFToneChangeEvent|RTCError|RTCErrorEvent)
+          subtest: 'RTCIceTransport interface: operation getLocalCandidates()'
+        - test: idlharness.https.window.html?include=(RTCSessionDescription|RTCPeerConnectionIceErrorEvent|RTCRtpReceiver|RTCDtlsTransport|RTCIceTransport|RTCDTMFToneChangeEvent|RTCError|RTCErrorEvent)
+          subtest: 'RTCIceTransport interface: operation getRemoteCandidates()'
+        - test: idlharness.https.window.html?include=(RTCSessionDescription|RTCPeerConnectionIceErrorEvent|RTCRtpReceiver|RTCDtlsTransport|RTCIceTransport|RTCDTMFToneChangeEvent|RTCError|RTCErrorEvent)
+          subtest: 'RTCIceTransport interface: idlTestObjects.iceTransport must inherit property "getLocalCandidates()" with the proper type'
+        - test: idlharness.https.window.html?include=(RTCSessionDescription|RTCPeerConnectionIceErrorEvent|RTCRtpReceiver|RTCDtlsTransport|RTCIceTransport|RTCDTMFToneChangeEvent|RTCError|RTCErrorEvent)
+          subtest: 'RTCIceTransport interface: idlTestObjects.iceTransport must inherit property "getRemoteCandidates()" with the proper type'
