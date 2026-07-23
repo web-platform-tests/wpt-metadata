@@ -518,3 +518,17 @@ links:
   - subtest: Property corner-top-left value 'superellipse(-0.5) 30% 10px'
     test: corner-top-left-computed.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=2056335
+- product: firefox
+  results:
+  - test: corner-shape-bevel.html
+  - test: corner-shape-scoop.html
+  - test: corner-shape-superellipse-bevel.html
+  - test: corner-shape-superellipse-scoop.html
+  - test: render-corner-shape.html?border-radius=50&corner-shape=0&shadow-spread=10
+  - test: render-corner-shape.html?border-radius=40&corner-shape=-1.5&shadow-spread=10
+  - test: render-corner-shape.html?border-top-left-radius=50%&corner-shape=0.7&border-left-width=30&border-top-width=30
+  - test: render-corner-shape.html?corner-top-left-shape=0&corner-top-right-shape=notch&corner-bottom-right-shape=2&corner-bottom-left-shape=-1&border-width=20&shadow-spread=20&border-radius=50
+  - test: render-corner-shape.html?border-radius=5&corner-top-left-shape=0.5&corner-bottom-right-shape=-0.5&shadow-spread=10
+  - test: render-corner-shape.html?border-radius=40&corner-shape=-infinity&shadow-spread=10
+  - test: render-corner-shape.html?border-top-right-radius=100&corner-top-right-shape=0&shadow-spread=30
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2057196
