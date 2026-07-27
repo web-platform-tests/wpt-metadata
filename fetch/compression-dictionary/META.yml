@@ -96,3 +96,8 @@ links:
       'nonce-abc', even when they have a matching cryptographic nonce.
     test: dictionary-fetch-with-link-connect-src-nonce.tentative.https.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=2057188
+- product: firefox
+  results:
+  - subtest: <link rel=compression-dictionary> are fetched after DOM operations.
+    test: dictionary-fetch-timing-002.tentative.https.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2058123
