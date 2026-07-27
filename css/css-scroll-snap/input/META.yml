@@ -47,9 +47,14 @@ links:
       results:
         - test: snap-area-overflow-boundary-viewport-covering.html
     - product: firefox
-      results:
-      - subtest: Keyboard scrolling with vertical snap-area overflow
-        test: snap-area-overflow-boundary-viewport-covering.html
-      - subtest: Mouse-wheel scrolling with vertical snap-area overflow
-        test: snap-area-overflow-boundary-viewport-covering.html
       url: https://bugzilla.mozilla.org/show_bug.cgi?id=2013646
+      results:
+        - test: snap-area-overflow-boundary-viewport-covering.html
+          subtest: Keyboard scrolling with vertical snap-area overflow
+        - test: snap-area-overflow-boundary-viewport-covering.html
+          subtest: Mouse-wheel scrolling with vertical snap-area overflow
+    - product: safari
+      url: https://bugs.webkit.org/show_bug.cgi?id=320250
+      results:
+        - test: scroll-padding-paged.html
+          subtest: After page down, the scroll padding is also taken into account
