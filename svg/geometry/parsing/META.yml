@@ -1,54 +1,89 @@
 links:
-    - product: chrome
-      url: https://crbug.com/899074
-      results:
-        - test: ry-invalid.svg
-          subtest: e.style['ry'] = "10" should not set the property value
-        - test: rx-invalid.svg
-          subtest: e.style['rx'] = "10" should not set the property value
-        - test: r-invalid.svg
-          subtest: e.style['r'] = "10" should not set the property value
-        - test: x-invalid.svg
-        - test: y-invalid.svg
-        - test: cy-invalid.svg
-        - test: cx-invalid.svg
-    - product: chrome
-      url: https://bugs.chromium.org/p/chromium/issues/detail?id=1177498
-      results:
-        - test: width-computed.svg
-          subtest: 'SVG Geometry Properties: getComputedStyle().width, <svg> initial'
-        - test: width-computed.svg
-          subtest: 'SVG Geometry Properties: getComputedStyle().width, <svg> presentation attribute'
-        - test: width-computed.svg
-          subtest: 'SVG Geometry Properties: getComputedStyle().width, <svg> inline style (auto)'
-        - test: width-computed.svg
-          subtest: 'SVG Geometry Properties: getComputedStyle().width, <svg> inline style (percentage)'
-        - test: height-computed.svg
-          subtest: 'SVG Geometry Properties: getComputedStyle().height, <svg> initial'
-        - test: height-computed.svg
-          subtest: 'SVG Geometry Properties: getComputedStyle().height, <svg> presentation attribute'
-        - test: height-computed.svg
-          subtest: 'SVG Geometry Properties: getComputedStyle().height, <svg> inline style (auto)'
-        - test: height-computed.svg
-          subtest: 'SVG Geometry Properties: getComputedStyle().height, <svg> inline style (percentage)'
-    - product: chrome
-      url: https://bugs.chromium.org/p/chromium/issues/detail?id=467917
-      results:
-        - test: width-computed.svg
-          subtest: 'SVG Geometry Properties: getComputedStyle().width, <svg> initial'
-        - test: width-computed.svg
-          subtest: 'SVG Geometry Properties: getComputedStyle().width, <svg> presentation attribute'
-        - test: width-computed.svg
-          subtest: 'SVG Geometry Properties: getComputedStyle().width, <svg> inline style (auto)'
-        - test: width-computed.svg
-          subtest: 'SVG Geometry Properties: getComputedStyle().width, <svg> inline style (percentage)'
-        - test: width-computed.svg
-        - test: height-computed.svg
-        - test: height-computed.svg
-          subtest: 'SVG Geometry Properties: getComputedStyle().height, <svg> initial'
-        - test: height-computed.svg
-          subtest: 'SVG Geometry Properties: getComputedStyle().height, <svg> presentation attribute'
-        - test: height-computed.svg
-          subtest: 'SVG Geometry Properties: getComputedStyle().height, <svg> inline style (auto)'
-        - test: height-computed.svg
-          subtest: 'SVG Geometry Properties: getComputedStyle().height, <svg> inline style (percentage)'
+- product: chrome
+  results:
+  - subtest: e.style['ry'] = "10" should not set the property value
+    test: ry-invalid.svg
+  - subtest: e.style['rx'] = "10" should not set the property value
+    test: rx-invalid.svg
+  - subtest: e.style['r'] = "10" should not set the property value
+    test: r-invalid.svg
+  - test: x-invalid.svg
+  - test: y-invalid.svg
+  - test: cy-invalid.svg
+  - test: cx-invalid.svg
+  url: https://crbug.com/899074
+- product: chrome
+  results:
+  - subtest: 'SVG Geometry Properties: getComputedStyle().width, <svg> initial'
+    test: width-computed.svg
+  - subtest: 'SVG Geometry Properties: getComputedStyle().width, <svg> presentation
+      attribute'
+    test: width-computed.svg
+  - subtest: 'SVG Geometry Properties: getComputedStyle().width, <svg> inline style
+      (auto)'
+    test: width-computed.svg
+  - subtest: 'SVG Geometry Properties: getComputedStyle().width, <svg> inline style
+      (percentage)'
+    test: width-computed.svg
+  - subtest: 'SVG Geometry Properties: getComputedStyle().height, <svg> initial'
+    test: height-computed.svg
+  - subtest: 'SVG Geometry Properties: getComputedStyle().height, <svg> presentation
+      attribute'
+    test: height-computed.svg
+  - subtest: 'SVG Geometry Properties: getComputedStyle().height, <svg> inline style
+      (auto)'
+    test: height-computed.svg
+  - subtest: 'SVG Geometry Properties: getComputedStyle().height, <svg> inline style
+      (percentage)'
+    test: height-computed.svg
+  url: https://bugs.chromium.org/p/chromium/issues/detail?id=1177498
+- product: chrome
+  results:
+  - subtest: 'SVG Geometry Properties: getComputedStyle().width, <svg> initial'
+    test: width-computed.svg
+  - subtest: 'SVG Geometry Properties: getComputedStyle().width, <svg> presentation
+      attribute'
+    test: width-computed.svg
+  - subtest: 'SVG Geometry Properties: getComputedStyle().width, <svg> inline style
+      (auto)'
+    test: width-computed.svg
+  - subtest: 'SVG Geometry Properties: getComputedStyle().width, <svg> inline style
+      (percentage)'
+    test: width-computed.svg
+  - test: width-computed.svg
+  - test: height-computed.svg
+  - subtest: 'SVG Geometry Properties: getComputedStyle().height, <svg> initial'
+    test: height-computed.svg
+  - subtest: 'SVG Geometry Properties: getComputedStyle().height, <svg> presentation
+      attribute'
+    test: height-computed.svg
+  - subtest: 'SVG Geometry Properties: getComputedStyle().height, <svg> inline style
+      (auto)'
+    test: height-computed.svg
+  - subtest: 'SVG Geometry Properties: getComputedStyle().height, <svg> inline style
+      (percentage)'
+    test: height-computed.svg
+  url: https://bugs.chromium.org/p/chromium/issues/detail?id=467917
+- product: firefox
+  results:
+  - subtest: height="auto" should be an invalid attribute value (ignored)
+    test: height-attribute-invalid.svg
+  - subtest: height="none" should be an invalid attribute value (ignored)
+    test: height-attribute-invalid.svg
+  - subtest: height="10px 20px" should be an invalid attribute value (ignored)
+    test: height-attribute-invalid.svg
+  - subtest: height="garbage" should be an invalid attribute value (ignored)
+    test: height-attribute-invalid.svg
+  - subtest: height="5%" should be a valid attribute value
+    test: height-attribute-valid.svg
+  - subtest: width="auto" should be an invalid attribute value (ignored)
+    test: width-attribute-invalid.svg
+  - subtest: width="none" should be an invalid attribute value (ignored)
+    test: width-attribute-invalid.svg
+  - subtest: width="10px 20px" should be an invalid attribute value (ignored)
+    test: width-attribute-invalid.svg
+  - subtest: width="garbage" should be an invalid attribute value (ignored)
+    test: width-attribute-invalid.svg
+  - subtest: width="5%" should be a valid attribute value
+    test: width-attribute-valid.svg
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2058042
