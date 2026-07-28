@@ -1,0 +1,26 @@
+links:
+- product: firefox
+  results:
+  - subtest: e.style['reading-flow'] = "normal" should set the property value
+    test: reading-flow-valid.html
+  - subtest: e.style['reading-flow'] = "flex-visual" should set the property value
+    test: reading-flow-valid.html
+  - subtest: e.style['reading-flow'] = "flex-flow" should set the property value
+    test: reading-flow-valid.html
+  - subtest: e.style['reading-flow'] = "grid-rows" should set the property value
+    test: reading-flow-valid.html
+  - subtest: e.style['reading-flow'] = "grid-columns" should set the property value
+    test: reading-flow-valid.html
+  - subtest: e.style['reading-flow'] = "grid-order" should set the property value
+    test: reading-flow-valid.html
+  - subtest: e.style['reading-flow'] = "source-order" should set the property value
+    test: reading-flow-valid.html
+  - subtest: e.style['reading-order'] = "0" should set the property value
+    test: reading-order-valid.html
+  - subtest: e.style['reading-order'] = "123" should set the property value
+    test: reading-order-valid.html
+  - subtest: e.style['reading-order'] = "-45" should set the property value
+    test: reading-order-valid.html
+  - subtest: e.style['reading-order'] = "calc(34.1)" should set the property value
+    test: reading-order-valid.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2058548

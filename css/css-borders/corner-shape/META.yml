@@ -532,3 +532,120 @@ links:
   - test: render-corner-shape.html?border-radius=40&corner-shape=-infinity&shadow-spread=10
   - test: render-corner-shape.html?border-top-right-radius=100&corner-top-right-shape=0&shadow-spread=30
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=2057196
+- product: firefox
+  results:
+  - subtest: e.style['corner-block-start'] = "10px bevel" should set the property
+      value
+    test: corner-block-start-valid.html
+  - subtest: e.style['corner-block-start'] = "round 10% / 2rem squircle" should set
+      the property value
+    test: corner-block-start-valid.html
+  - subtest: e.style['corner-block-start'] = "normal" should set the property value
+    test: corner-block-start-valid.html
+  - subtest: e.style['corner-block-start'] = "4px 2% round / bevel 1em" should set
+      the property value
+    test: corner-block-start-valid.html
+  - subtest: e.style['corner-block-start'] = "10px bevel" should set border-start-end-radius
+    test: corner-block-start-valid.html
+  - subtest: e.style['corner-block-start'] = "10px bevel" should set border-start-start-radius
+    test: corner-block-start-valid.html
+  - subtest: e.style['corner-block-start'] = "10px bevel" should set corner-start-end-shape
+    test: corner-block-start-valid.html
+  - subtest: e.style['corner-block-start'] = "10px bevel" should set corner-start-start-shape
+    test: corner-block-start-valid.html
+  - subtest: e.style['corner-block-start'] = "10px bevel" should not set unrelated
+      longhands
+    test: corner-block-start-valid.html
+  - subtest: e.style['corner-block-start'] = "4px 2% round / 1em bevel" should set
+      border-start-end-radius
+    test: corner-block-start-valid.html
+  - subtest: e.style['corner-block-start'] = "4px 2% round / 1em bevel" should set
+      border-start-start-radius
+    test: corner-block-start-valid.html
+  - subtest: e.style['corner-block-start'] = "4px 2% round / 1em bevel" should set
+      corner-start-end-shape
+    test: corner-block-start-valid.html
+  - subtest: e.style['corner-block-start'] = "4px 2% round / 1em bevel" should set
+      corner-start-start-shape
+    test: corner-block-start-valid.html
+  - subtest: e.style['corner-block-start'] = "4px 2% round / 1em bevel" should not
+      set unrelated longhands
+    test: corner-block-start-valid.html
+  - subtest: e.style['corner-top-left'] = "round 30%" should set the property value
+    test: corner-top-left-valid.html
+  - subtest: e.style['corner-top-left'] = "10px bevel" should set the property value
+    test: corner-top-left-valid.html
+  - subtest: e.style['corner-top-left'] = "normal" should set the property value
+    test: corner-top-left-valid.html
+  - subtest: e.style['corner-top-left'] = "4px 2% round" should set the property value
+    test: corner-top-left-valid.html
+  - subtest: e.style['corner-top-left'] = "superellipse(-0.5) 30% 10px" should set
+      the property value
+    test: corner-top-left-valid.html
+  - subtest: e.style['corner-top-left'] = "10px bevel" should set border-top-left-radius
+    test: corner-top-left-valid.html
+  - subtest: e.style['corner-top-left'] = "10px bevel" should set corner-top-left-shape
+    test: corner-top-left-valid.html
+  - subtest: e.style['corner-top-left'] = "10px bevel" should not set unrelated longhands
+    test: corner-top-left-valid.html
+  - subtest: e.style['corner-top-left'] = "normal" should set border-top-left-radius
+    test: corner-top-left-valid.html
+  - subtest: e.style['corner-top-left'] = "normal" should set corner-top-left-shape
+    test: corner-top-left-valid.html
+  - subtest: e.style['corner-top-left'] = "normal" should not set unrelated longhands
+    test: corner-top-left-valid.html
+  - subtest: e.style['corner-top'] = "10px bevel" should set the property value
+    test: corner-top-valid.html
+  - subtest: e.style['corner-top'] = "round 10% / 2rem squircle" should set the property
+      value
+    test: corner-top-valid.html
+  - subtest: e.style['corner-top'] = "normal" should set the property value
+    test: corner-top-valid.html
+  - subtest: e.style['corner-top'] = "4px 2% round / bevel 1em" should set the property
+      value
+    test: corner-top-valid.html
+  - subtest: e.style['corner-top'] = "10px bevel" should set border-top-left-radius
+    test: corner-top-valid.html
+  - subtest: e.style['corner-top'] = "10px bevel" should set border-top-right-radius
+    test: corner-top-valid.html
+  - subtest: e.style['corner-top'] = "10px bevel" should set corner-top-left-shape
+    test: corner-top-valid.html
+  - subtest: e.style['corner-top'] = "10px bevel" should set corner-top-right-shape
+    test: corner-top-valid.html
+  - subtest: e.style['corner-top'] = "10px bevel" should not set unrelated longhands
+    test: corner-top-valid.html
+  - subtest: e.style['corner-top'] = "4px 2% round / 1em bevel" should set border-top-left-radius
+    test: corner-top-valid.html
+  - subtest: e.style['corner-top'] = "4px 2% round / 1em bevel" should set border-top-right-radius
+    test: corner-top-valid.html
+  - subtest: e.style['corner-top'] = "4px 2% round / 1em bevel" should set corner-top-left-shape
+    test: corner-top-valid.html
+  - subtest: e.style['corner-top'] = "4px 2% round / 1em bevel" should set corner-top-right-shape
+    test: corner-top-valid.html
+  - subtest: e.style['corner-top'] = "4px 2% round / 1em bevel" should not set unrelated
+      longhands
+    test: corner-top-valid.html
+  - subtest: e.style['corner'] = "round 30%" should set the property value
+    test: corner-valid.html
+  - subtest: e.style['corner'] = "10px bevel" should set the property value
+    test: corner-valid.html
+  - subtest: e.style['corner'] = "round 10% / 2rem squircle" should set the property
+      value
+    test: corner-valid.html
+  - subtest: e.style['corner'] = "notch 10px / squircle 30% 10px / 1rem bevel / 2px
+      round" should set the property value
+    test: corner-valid.html
+  - subtest: e.style['corner'] = "normal" should set the property value
+    test: corner-valid.html
+  - subtest: e.style['corner'] = "4px 2% round" should set the property value
+    test: corner-valid.html
+  - subtest: e.style['corner'] = "4px 2% round / bevel 1em / normal" should set the
+      property value
+    test: corner-valid.html
+  - subtest: e.style['corner'] = "normal / 1px round / normal / 3% squircle" should
+      set the property value
+    test: corner-valid.html
+  - subtest: e.style['corner'] = "normal / superellipse(-0.5) 30% 10px / 10px 1rem
+      notch" should set the property value
+    test: corner-valid.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2058547

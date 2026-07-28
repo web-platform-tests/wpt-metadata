@@ -1,26 +1,57 @@
 links:
-    - product: chrome
-      url: https://bugs.chromium.org/p/chromium/issues/detail?id=1208634
-      results:
-        - test: break-before-valid.html
-        - test: break-inside-computed.html
-        - test: break-inside-valid.html
-        - test: box-decoration-break-computed.html
-        - test: box-decoration-break-valid.html
-        - test: break-after-computed.html
-        - test: break-after-valid.html
-        - test: break-before-computed.html
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1840944
-      results:
-        - test: break-after-computed.html
-        - test: break-after-valid.html
-        - test: break-before-computed.html
-        - test: break-before-valid.html
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=137367
-      results:
-        - test: widows-valid.html
-        - test: orphans-computed.html
-        - test: orphans-valid.html
-        - test: widows-computed.html
+- product: chrome
+  results:
+  - test: break-before-valid.html
+  - test: break-inside-computed.html
+  - test: break-inside-valid.html
+  - test: box-decoration-break-computed.html
+  - test: box-decoration-break-valid.html
+  - test: break-after-computed.html
+  - test: break-after-valid.html
+  - test: break-before-computed.html
+  url: https://bugs.chromium.org/p/chromium/issues/detail?id=1208634
+- product: firefox
+  results:
+  - test: break-after-computed.html
+  - test: break-after-valid.html
+  - test: break-before-computed.html
+  - test: break-before-valid.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1840944
+- product: firefox
+  results:
+  - test: widows-valid.html
+  - test: orphans-computed.html
+  - test: orphans-valid.html
+  - test: widows-computed.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=137367
+- product: firefox
+  results:
+  - subtest: e.style['break-after'] = "avoid-page" should set the property value
+    test: break-after-valid.html
+  - subtest: e.style['break-after'] = "recto" should set the property value
+    test: break-after-valid.html
+  - subtest: e.style['break-after'] = "verso" should set the property value
+    test: break-after-valid.html
+  - subtest: e.style['break-after'] = "avoid-column" should set the property value
+    test: break-after-valid.html
+  - subtest: e.style['break-after'] = "column" should set the property value
+    test: break-after-valid.html
+  - subtest: e.style['break-before'] = "avoid-page" should set the property value
+    test: break-before-valid.html
+  - subtest: e.style['break-before'] = "recto" should set the property value
+    test: break-before-valid.html
+  - subtest: e.style['break-before'] = "verso" should set the property value
+    test: break-before-valid.html
+  - subtest: e.style['break-before'] = "avoid-column" should set the property value
+    test: break-before-valid.html
+  - subtest: e.style['break-before'] = "column" should set the property value
+    test: break-before-valid.html
+  - subtest: e.style['orphans'] = "1" should set the property value
+    test: orphans-valid.html
+  - subtest: e.style['orphans'] = "234" should set the property value
+    test: orphans-valid.html
+  - subtest: e.style['widows'] = "1" should set the property value
+    test: widows-valid.html
+  - subtest: e.style['widows'] = "234" should set the property value
+    test: widows-valid.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2058548
