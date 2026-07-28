@@ -308,3 +308,17 @@ links:
       green))" should set the property value
     test: background-image-valid.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=2048059
+- product: firefox
+  results:
+  - subtest: e.style['background-clip'] = "border-area text" should set the property
+      value
+    test: background-clip-valid.html
+  - subtest: e.style['background-clip'] = "text border-area" should set the property
+      value
+    test: background-clip-valid.html
+  - subtest: e.style['background-clip'] = "border-area text, content-box" should set
+      the property value
+    test: background-clip-valid.html
+  - subtest: e.style['background'] = "border-area text" should set background-clip
+    test: background-valid.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2058546

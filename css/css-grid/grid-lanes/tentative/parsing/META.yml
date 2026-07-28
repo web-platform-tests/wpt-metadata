@@ -260,3 +260,133 @@ links:
       longhands
     test: grid-lanes-shorthand-valid.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=2013650
+- product: firefox
+  results:
+  - subtest: e.style['flow-tolerance'] = "normal" should set the property value
+    test: flow-tolerance-valid.html
+  - subtest: e.style['flow-tolerance'] = "infinite" should set the property value
+    test: flow-tolerance-valid.html
+  - subtest: e.style['flow-tolerance'] = "initial" should set the property value
+    test: flow-tolerance-valid.html
+  - subtest: e.style['flow-tolerance'] = "0" should set the property value
+    test: flow-tolerance-valid.html
+  - subtest: e.style['flow-tolerance'] = "1px" should set the property value
+    test: flow-tolerance-valid.html
+  - subtest: e.style['flow-tolerance'] = "calc(2em + 3ex)" should set the property
+      value
+    test: flow-tolerance-valid.html
+  - subtest: e.style['flow-tolerance'] = "4%" should set the property value
+    test: flow-tolerance-valid.html
+  - subtest: e.style['flow-tolerance'] = "5vmin" should set the property value
+    test: flow-tolerance-valid.html
+  - subtest: e.style['grid-lanes-direction'] = "row" should set the property value
+    test: grid-lanes-direction-valid.html
+  - subtest: e.style['grid-lanes-direction'] = "row track-reverse" should set the
+      property value
+    test: grid-lanes-direction-valid.html
+  - subtest: e.style['grid-lanes-direction'] = "row fill-reverse" should set the property
+      value
+    test: grid-lanes-direction-valid.html
+  - subtest: e.style['grid-lanes-direction'] = "row track-reverse fill-reverse" should
+      set the property value
+    test: grid-lanes-direction-valid.html
+  - subtest: e.style['grid-lanes-direction'] = "row fill-reverse track-reverse" should
+      set the property value
+    test: grid-lanes-direction-valid.html
+  - subtest: e.style['grid-lanes-direction'] = "column" should set the property value
+    test: grid-lanes-direction-valid.html
+  - subtest: e.style['grid-lanes-direction'] = "column track-reverse" should set the
+      property value
+    test: grid-lanes-direction-valid.html
+  - subtest: e.style['grid-lanes-direction'] = "column fill-reverse" should set the
+      property value
+    test: grid-lanes-direction-valid.html
+  - subtest: e.style['grid-lanes-direction'] = "column track-reverse fill-reverse"
+      should set the property value
+    test: grid-lanes-direction-valid.html
+  - subtest: e.style['grid-lanes-direction'] = "column fill-reverse track-reverse"
+      should set the property value
+    test: grid-lanes-direction-valid.html
+  - subtest: e.style['grid-lanes-direction'] = "normal" should set the property value
+    test: grid-lanes-direction-valid.html
+  - subtest: e.style['grid-lanes-pack'] = "normal" should set the property value
+    test: grid-lanes-pack-valid.html
+  - subtest: e.style['grid-lanes-pack'] = "dense" should set the property value
+    test: grid-lanes-pack-valid.html
+  - subtest: 'grid-lanes: column fill-reverse "a" calc(10px) should be valid.'
+    test: grid-lanes-shorthand-valid.html
+  - subtest: 'grid-lanes: minmax(calc(30% + 5px), 200px) should be valid.'
+    test: grid-lanes-shorthand-valid.html
+  - subtest: 'grid-lanes: 1px 2px should be valid.'
+    test: grid-lanes-shorthand-valid.html
+  - subtest: 'grid-lanes: "a" 10px should be valid.'
+    test: grid-lanes-shorthand-valid.html
+  - subtest: 'grid-lanes: row 10px 20px "a b" should be valid.'
+    test: grid-lanes-shorthand-valid.html
+  - subtest: 'grid-lanes: 10px 20px "a b" should be valid.'
+    test: grid-lanes-shorthand-valid.html
+  - subtest: 'grid-lanes: column fill-reverse repeat(4, 10px) should be valid.'
+    test: grid-lanes-shorthand-valid.html
+  - subtest: e.style['grid-lanes'] = "none" should set grid-lanes-direction
+    test: grid-lanes-shorthand-valid.html
+  - subtest: e.style['grid-lanes'] = "none" should set grid-template-rows
+    test: grid-lanes-shorthand-valid.html
+  - subtest: e.style['grid-lanes'] = "10px" should set grid-lanes-direction
+    test: grid-lanes-shorthand-valid.html
+  - subtest: e.style['grid-lanes'] = "10px" should set grid-template-rows
+    test: grid-lanes-shorthand-valid.html
+  - subtest: e.style['grid-lanes'] = "\"b a\" 20% 40% column" should set grid-template-rows
+    test: grid-lanes-shorthand-valid.html
+  - subtest: e.style['grid-lanes'] = "\"b b a\" 1fr 2fr 3fr row" should set grid-template-columns
+    test: grid-lanes-shorthand-valid.html
+  - subtest: e.style['grid-lanes'] = "repeat(2, auto) row track-reverse fill-reverse"
+      should set grid-template-columns
+    test: grid-lanes-shorthand-valid.html
+  - subtest: e.style['grid-lanes'] = "\"b a\" 20% 40% normal" should set grid-template-rows
+    test: grid-lanes-shorthand-valid.html
+  - subtest: e.style['grid-lanes'] = "row fill-reverse 20% 40% \"b a\"" should set
+      grid-lanes-direction
+    test: grid-lanes-shorthand-valid.html
+  - subtest: e.style['grid-lanes'] = "row fill-reverse 20% 40% \"b a\"" should set
+      grid-template-areas
+    test: grid-lanes-shorthand-valid.html
+  - subtest: e.style['grid-lanes'] = "row fill-reverse 20% 40% \"b a\"" should set
+      grid-template-columns
+    test: grid-lanes-shorthand-valid.html
+  - subtest: e.style['grid-lanes'] = "row fill-reverse 20% 40% \"b a\"" should set
+      grid-template-rows
+    test: grid-lanes-shorthand-valid.html
+  - subtest: e.style['grid-lanes'] = "row fill-reverse 20% 40% \"b a\"" should not
+      set unrelated longhands
+    test: grid-lanes-shorthand-valid.html
+  - subtest: e.style['grid-lanes'] = "column track-reverse repeat(5, auto)" should
+      set grid-lanes-direction
+    test: grid-lanes-shorthand-valid.html
+  - subtest: e.style['grid-lanes'] = "column track-reverse repeat(5, auto)" should
+      set grid-template-areas
+    test: grid-lanes-shorthand-valid.html
+  - subtest: e.style['grid-lanes'] = "column track-reverse repeat(5, auto)" should
+      set grid-template-columns
+    test: grid-lanes-shorthand-valid.html
+  - subtest: e.style['grid-lanes'] = "column track-reverse repeat(5, auto)" should
+      set grid-template-rows
+    test: grid-lanes-shorthand-valid.html
+  - subtest: e.style['grid-lanes'] = "column track-reverse repeat(5, auto)" should
+      not set unrelated longhands
+    test: grid-lanes-shorthand-valid.html
+  - subtest: e.style['grid-lanes'] = "\"a b c\" row track-reverse 1fr 2fr 3fr" should
+      set grid-lanes-direction
+    test: grid-lanes-shorthand-valid.html
+  - subtest: e.style['grid-lanes'] = "\"a b c\" row track-reverse 1fr 2fr 3fr" should
+      set grid-template-areas
+    test: grid-lanes-shorthand-valid.html
+  - subtest: e.style['grid-lanes'] = "\"a b c\" row track-reverse 1fr 2fr 3fr" should
+      set grid-template-columns
+    test: grid-lanes-shorthand-valid.html
+  - subtest: e.style['grid-lanes'] = "\"a b c\" row track-reverse 1fr 2fr 3fr" should
+      set grid-template-rows
+    test: grid-lanes-shorthand-valid.html
+  - subtest: e.style['grid-lanes'] = "\"a b c\" row track-reverse 1fr 2fr 3fr" should
+      not set unrelated longhands
+    test: grid-lanes-shorthand-valid.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2058552

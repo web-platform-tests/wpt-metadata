@@ -1,8 +1,43 @@
 links:
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1887078
-      results:
-        - test: margin-computed.html
-        - test: float-computed.html
-        - test: clear-computed.html
-        - test: padding-computed.html
+- product: firefox
+  results:
+  - test: margin-computed.html
+  - test: float-computed.html
+  - test: clear-computed.html
+  - test: padding-computed.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1887078
+- product: firefox
+  results:
+  - subtest: e.style['margin-trim'] = "inline" should set the property value
+    test: margin-trim.html
+  - subtest: e.style['margin-trim'] = "inline-start" should set the property value
+    test: margin-trim.html
+  - subtest: e.style['margin-trim'] = "inline-end" should set the property value
+    test: margin-trim.html
+  - subtest: e.style['margin-trim'] = "block inline" should set the property value
+    test: margin-trim.html
+  - subtest: e.style['margin-trim'] = "inline-start inline-end" should set the property
+      value
+    test: margin-trim.html
+  - subtest: e.style['margin-trim'] = "inline-end inline-start" should set the property
+      value
+    test: margin-trim.html
+  - subtest: e.style['margin-trim'] = "block-start inline-start block-end inline-end"
+      should set the property value
+    test: margin-trim.html
+  - subtest: e.style['margin-trim'] = "block-start block-end inline-end inline-start"
+      should set the property value
+    test: margin-trim.html
+  - subtest: e.style['margin-trim'] = "block-start block-end inline-start inline-end"
+      should set the property value
+    test: margin-trim.html
+  - subtest: e.style['margin-trim'] = "inline-start block-end block-start inline-end"
+      should set the property value
+    test: margin-trim.html
+  - subtest: e.style['margin-trim'] = "inline-start inline-end block-start block-end"
+      should set the property value
+    test: margin-trim.html
+  - subtest: e.style['margin-trim'] = "inline-end block-end inline-start block-start"
+      should set the property value
+    test: margin-trim.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2058548
