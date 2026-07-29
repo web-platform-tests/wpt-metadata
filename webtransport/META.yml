@@ -489,3 +489,36 @@ links:
   - subtest: 'WebTransportSendGroup interface: operation getStats()'
     test: idlharness.https.sub.any.serviceworker.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=2036736
+- product: firefox
+  results:
+  - subtest: Testing BFCache support for page with open WebTransport connection.
+    test: back-forward-cache-with-open-webtransport-connection.https.window.html
+  - subtest: Datagram should reject when non-buffer-source data is written
+    test: datagram-bad-chunk.https.any.sharedworker.html
+  - subtest: Datagram should reject when non-buffer-source data is written
+    test: datagram-bad-chunk.https.any.serviceworker.html
+  - subtest: Datagram should reject when non-buffer-source data is written
+    test: datagram-bad-chunk.https.any.worker.html
+  - subtest: Datagram should reject when non-buffer-source data is written
+    test: datagram-bad-chunk.https.any.html
+  - subtest: Datagram MaxBufferedDatagrams getters/setters work correctly
+    test: datagrams.https.any.html
+  - subtest: Datagram MaxBufferedDatagrams getters/setters work correctly
+    test: datagrams.https.any.serviceworker.html
+  - subtest: Datagram MaxBufferedDatagrams getters/setters work correctly
+    test: datagrams.https.any.sharedworker.html
+  - subtest: Datagram MaxBufferedDatagrams getters/setters work correctly
+    test: datagrams.https.any.worker.html
+  - subtest: WebTransport client should be able to modify unset sendOrder after stream
+      creation
+    test: sendorder.https.any.html
+  - subtest: WebTransport client should be able to modify unset sendOrder after stream
+      creation
+    test: sendorder.https.any.serviceworker.html
+  - subtest: WebTransport client should be able to modify unset sendOrder after stream
+      creation
+    test: sendorder.https.any.sharedworker.html
+  - subtest: WebTransport client should be able to modify unset sendOrder after stream
+      creation
+    test: sendorder.https.any.worker.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2058871
