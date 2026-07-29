@@ -14,3 +14,8 @@ links:
           subtest: <svg:image> 'auto' sizing with default sized svg image, attributes width='60' height='60' and CSS 'width:auto'
         - test: svg-image-intrinsic-size-with-cssstyle-auto.html
           subtest: <svg:image> 'auto' sizing with default sized svg image, attributes width='60' height='60' and CSS 'height:auto'
+    - product: safari
+      url: https://bugs.webkit.org/show_bug.cgi?id=320456
+      results:
+        - test: svg-get-bounding-client-rect-in-non-rendered-elements.html
+          subtest: Get Bounding Client Rect
