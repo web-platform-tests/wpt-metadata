@@ -540,3 +540,25 @@ links:
   results:
   - test: oblique-last-resort-weight-selection.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=2033377
+- product: firefox
+  results:
+  - subtest: Property font-palette value 'palette-mix(in oklab, light 30%, light)'
+    test: palette-mix-computed.html
+  - subtest: Property font-palette value 'palette-mix(in oklab, light 50%, dark 50%)'
+    test: palette-mix-computed.html
+  - subtest: Property font-palette value 'palette-mix(in oklab, light, dark 50%)'
+    test: palette-mix-computed.html
+  - subtest: Property font-palette value 'palette-mix(in oklab, light 50%, dark)'
+    test: palette-mix-computed.html
+  - subtest: Property font-palette value 'palette-mix(in oklab, light, dark)'
+    test: palette-mix-computed.html
+  - subtest: Property font-palette value 'palette-mix(in oklab, light 50%, dark 70%)'
+    test: palette-mix-computed.html
+  - subtest: Property font-palette value 'palette-mix(in oklab, light 70%, dark 70%)'
+    test: palette-mix-computed.html
+  - subtest: Property font-palette value 'palette-mix(in oklab, light 10%, dark 40%)'
+    test: palette-mix-computed.html
+  - subtest: Property font-palette value 'palette-mix(in oklab, light calc(sign(1rem
+      - 1px) * 10%), dark calc(sign(1rem - 1px) * 40%))'
+    test: palette-mix-computed.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2059516
