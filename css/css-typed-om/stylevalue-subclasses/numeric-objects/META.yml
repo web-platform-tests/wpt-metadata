@@ -33,3 +33,156 @@ links:
   results:
   - test: arithmetic.tentative.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=2012861
+- product: firefox
+  results:
+  - subtest: Calling CSSUnitValue.add with no arguments returns itself
+    test: arithmetic.tentative.any.html
+  - subtest: Calling CSSMathValue.add with no arguments returns itself
+    test: arithmetic.tentative.any.html
+  - subtest: Calling CSSNumericValue.add with a single CSSNumericValue returns correct
+      type
+    test: arithmetic.tentative.any.html
+  - subtest: Calling CSSMathValue.add with a single CSSNumericValue returns correct
+      type
+    test: arithmetic.tentative.any.html
+  - subtest: Calling CSSNumericValue.add with more than one number CSSNumericValues
+      returns correct type
+    test: arithmetic.tentative.any.html
+  - subtest: Calling CSSNumericValue.add can take numberish values
+    test: arithmetic.tentative.any.html
+  - subtest: Calling CSSMathSum.add with number CSSUnitValues simplifies to a CSSUnitValue
+    test: arithmetic.tentative.any.html
+  - subtest: Calling CSSUnitValue.sub with no arguments returns itself
+    test: arithmetic.tentative.any.html
+  - subtest: Calling CSSMathValue.sub with no arguments returns itself
+    test: arithmetic.tentative.any.html
+  - subtest: Calling CSSNumericValue.sub with a single CSSNumericValue returns correct
+      type
+    test: arithmetic.tentative.any.html
+  - subtest: Calling CSSMathValue.sub with a single CSSNumericValue returns correct
+      type
+    test: arithmetic.tentative.any.html
+  - subtest: Calling CSSNumericValue.sub with more than one number CSSNumericValues
+      returns correct type
+    test: arithmetic.tentative.any.html
+  - subtest: Calling CSSNumericValue.sub can take numberish values
+    test: arithmetic.tentative.any.html
+  - subtest: Calling CSSMathSum.sub with number CSSUnitValues simplifies to a CSSUnitValue
+    test: arithmetic.tentative.any.html
+  - subtest: Calling CSSUnitValue.mul with no arguments returns itself
+    test: arithmetic.tentative.any.html
+  - subtest: Calling CSSMathValue.mul with no arguments returns itself
+    test: arithmetic.tentative.any.html
+  - subtest: Calling CSSNumericValue.mul with a single CSSNumericValue returns correct
+      type
+    test: arithmetic.tentative.any.html
+  - subtest: Calling CSSMathValue.mul with a single CSSNumericValue returns correct
+      type
+    test: arithmetic.tentative.any.html
+  - subtest: Calling CSSNumericValue.mul with more than one number CSSNumericValues
+      returns correct type
+    test: arithmetic.tentative.any.html
+  - subtest: Calling CSSNumericValue.mul can take numberish values
+    test: arithmetic.tentative.any.html
+  - subtest: Calling CSSMathProduct.mul with number CSSUnitValues simplifies to a
+      CSSUnitValue
+    test: arithmetic.tentative.any.html
+  - subtest: Calling CSSUnitValue.div with no arguments returns itself
+    test: arithmetic.tentative.any.html
+  - subtest: Calling CSSMathValue.div with no arguments returns itself
+    test: arithmetic.tentative.any.html
+  - subtest: Calling CSSNumericValue.div with a single CSSNumericValue returns correct
+      type
+    test: arithmetic.tentative.any.html
+  - subtest: Calling CSSMathValue.div with a single CSSNumericValue returns correct
+      type
+    test: arithmetic.tentative.any.html
+  - subtest: Calling CSSNumericValue.div with more than one number CSSNumericValues
+      returns correct type
+    test: arithmetic.tentative.any.html
+  - subtest: Calling CSSNumericValue.div can take numberish values
+    test: arithmetic.tentative.any.html
+  - subtest: Calling CSSMathProduct.div with number CSSUnitValues simplifies to a
+      CSSUnitValue
+    test: arithmetic.tentative.any.html
+  - subtest: Calling CSSUnitValue.min with no arguments returns itself
+    test: arithmetic.tentative.any.html
+  - subtest: Calling CSSMathValue.min with no arguments returns itself
+    test: arithmetic.tentative.any.html
+  - subtest: Calling CSSNumericValue.min with a single CSSNumericValue returns correct
+      type
+    test: arithmetic.tentative.any.html
+  - subtest: Calling CSSMathValue.min with a single CSSNumericValue returns correct
+      type
+    test: arithmetic.tentative.any.html
+  - subtest: Calling CSSNumericValue.min with more than one number CSSNumericValues
+      returns correct type
+    test: arithmetic.tentative.any.html
+  - subtest: Calling CSSNumericValue.min can take numberish values
+    test: arithmetic.tentative.any.html
+  - subtest: Calling CSSMathMin.min with number CSSUnitValues simplifies to a CSSUnitValue
+    test: arithmetic.tentative.any.html
+  - subtest: Calling CSSUnitValue.max with no arguments returns itself
+    test: arithmetic.tentative.any.html
+  - subtest: Calling CSSMathValue.max with no arguments returns itself
+    test: arithmetic.tentative.any.html
+  - subtest: Calling CSSNumericValue.max with a single CSSNumericValue returns correct
+      type
+    test: arithmetic.tentative.any.html
+  - subtest: Calling CSSMathValue.max with a single CSSNumericValue returns correct
+      type
+    test: arithmetic.tentative.any.html
+  - subtest: Calling CSSNumericValue.max with more than one number CSSNumericValues
+      returns correct type
+    test: arithmetic.tentative.any.html
+  - subtest: Calling CSSNumericValue.max can take numberish values
+    test: arithmetic.tentative.any.html
+  - subtest: Calling CSSMathMax.max with number CSSUnitValues simplifies to a CSSUnitValue
+    test: arithmetic.tentative.any.html
+  - subtest: Calling CSSUnitValue.add with CSSUnitValues with same unit simplifies
+      to a CSSUnitValue
+    test: arithmetic.tentative.any.html
+  - subtest: Calling CSSUnitValue.sub with CSSUnitValues with same unit simplifies
+      to a CSSUnitValue
+    test: arithmetic.tentative.any.html
+  - subtest: Calling CSSUnitValue.mul with all numbers simplifies to a CSSUnitValue
+    test: arithmetic.tentative.any.html
+  - subtest: Calling CSSUnitValue.mul with only one non-number simplifies to a CSSUnitValue
+    test: arithmetic.tentative.any.html
+  - subtest: Calling CSSUnitValue.mul with more than one non-number does not simplify
+      to a CSSUnitValue
+    test: arithmetic.tentative.any.html
+  - subtest: Calling CSSUnitValue.div with all numbers simplifies to a CSSUnitValue
+    test: arithmetic.tentative.any.html
+  - subtest: Calling CSSUnitValue.div on a non-number value simplifies to a CSSUnitValue
+    test: arithmetic.tentative.any.html
+  - subtest: Calling CSSUnitValue.div with a non-number value in the arguments does
+      not simplify to a CSSUnitValue
+    test: arithmetic.tentative.any.html
+  - subtest: Calling CSSUnitValue.min with CSSUnitValues with same unit simplifies
+      to a CSSUnitValue
+    test: arithmetic.tentative.any.html
+  - subtest: Calling CSSUnitValue.max with CSSUnitValues with same unit simplifies
+      to a CSSUnitValue
+    test: arithmetic.tentative.any.html
+  - subtest: Calling CSSNumericValue.sub negates all argument values
+    test: arithmetic.tentative.any.html
+  - subtest: Calling CSSNumericValue.div inverts all argument values
+    test: arithmetic.tentative.any.html
+  - subtest: Can not divide with CSSUnitValue which has zero value and number type
+    test: arithmetic.tentative.any.html
+  - subtest: CSSNumericValue.add should throw TypeError when the types are different.
+    test: arithmetic.tentative.any.html
+  - subtest: CSSNumericValue.sub should throw TypeError when the types are different.
+    test: arithmetic.tentative.any.html
+  - subtest: CSSNumericValue.max should throw TypeError when the types are different.
+    test: arithmetic.tentative.any.html
+  - subtest: CSSNumericValue.min should throw TypeError when the types are different.
+    test: arithmetic.tentative.any.html
+  - subtest: CSSNumericValue.mul should throw TypeError when the types are different.
+    test: arithmetic.tentative.any.html
+  - subtest: CSSNumericValue.div should throw TypeError when the types are different.
+    test: arithmetic.tentative.any.html
+  - subtest: Converting a CSSUnitValue to its own unit returns itself
+    test: to.tentative.any.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2059453
