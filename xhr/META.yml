@@ -224,3 +224,20 @@ links:
   - subtest: getAllResponseHeaders() must not return the previous response's headers
     test: getallresponseheaders-after-reuse.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=2059671
+- product: firefox
+  results:
+  - subtest: abort() during HEADERS_RECEIVED clears responseURL
+    test: responseurl-after-abort.any.html
+  - subtest: abort() during LOADING clears responseURL
+    test: responseurl-after-abort.any.html
+  - subtest: abort() during HEADERS_RECEIVED clears responseURL
+    test: responseurl-after-abort.any.worker.html
+  - subtest: abort() during LOADING clears responseURL
+    test: responseurl-after-abort.any.worker.html
+  - subtest: abort() during DONE clears responseURL (async)
+    test: responseurl-after-abort.any.worker.html
+  - subtest: abort() during DONE clears responseURL (sync)
+    test: responseurl-after-abort.any.worker.html
+  - subtest: responseURL reflects the new response after abort() and reuse
+    test: responseurl-after-abort.any.worker.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2059672
