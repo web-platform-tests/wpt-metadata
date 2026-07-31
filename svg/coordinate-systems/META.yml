@@ -1,18 +1,22 @@
 links:
-- product: safari
-  results:
-  - subtest: Dynamic update of transform; replaceItem()
-    test: svgtransformlist-replaceitem.html
-  url: https://bugs.webkit.org/show_bug.cgi?id=283879
-- product: firefox
-  results:
-  - test: viewBox-zero-disables-rendering-pattern.svg
-  - subtest: invalid (negative-width) viewBox attribute exposes baseVal {0, 0, 0,
-      0}
-    test: viewBox-invalid-attribute-baseval.tentative.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2057424
-- product: firefox
-  results:
-  - subtest: SVGTransformList interface, indexed setter
-    test: SVGTransformList.list-01.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2059426
+    - product: safari
+      url: https://bugs.webkit.org/show_bug.cgi?id=283879
+      results:
+        - test: svgtransformlist-replaceitem.html
+          subtest: Dynamic update of transform; replaceItem()
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=2057424
+      results:
+        - test: viewBox-zero-disables-rendering-pattern.svg
+        - test: viewBox-invalid-attribute-baseval.tentative.html
+          subtest: invalid (negative-width) viewBox attribute exposes baseVal {0, 0, 0, 0}
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=2059426
+      results:
+        - test: SVGTransformList.list-01.html
+          subtest: SVGTransformList interface, indexed setter
+    - product: safari
+      url: https://bugs.webkit.org/show_bug.cgi?id=315283
+      results:
+        - test: viewBox-synthesized-in-img-001.tentative.html
+          subtest: Test status
