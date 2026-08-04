@@ -67,3 +67,34 @@ links:
   - subtest: Responsive iframe preserves size during navigation
     test: responsive-iframe-navigation.html?origin=cross
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=2060684
+- product: firefox
+  results:
+  - test: responsive-iframe-meta-dynamic-append-to-doc.html
+  - test: responsive-iframe-meta-dynamic-append.html
+  - test: responsive-iframe-meta-dynamic-name-change.html
+  - test: responsive-iframe-meta-dynamic-write.html
+  - subtest: 'Allowed origins check: container=parent, origin=cross, allowed=parent'
+    test: responsive-iframe-allowed-origins.html?origin=cross,allowed=parent,expect=400
+  - subtest: 'Allowed origins check: container=parent, origin=subdomain, allowed=parent'
+    test: responsive-iframe-allowed-origins.html?origin=subdomain,allowed=parent,expect=400
+  - subtest: 'Allowed origins check: container=subdomain, origin=same, allowed=wildcard'
+    test: responsive-iframe-allowed-origins.html?container=subdomain,origin=same,allowed=wildcard,expect=400
+  - subtest: 'Allowed origins check: container=parent, origin=same, allowed=parent'
+    test: responsive-iframe-allowed-origins.html?origin=same,allowed=parent,expect=400
+  - subtest: 'Allowed origins check: container=subdomain, origin=cross, allowed=wildcard'
+    test: responsive-iframe-allowed-origins.html?container=subdomain,origin=cross,allowed=wildcard,expect=400
+  - subtest: 'Allowed origins check: container=parent, origin=same, allowed=http'
+    test: responsive-iframe-allowed-origins.html?origin=same,allowed=http,expect=400
+  - subtest: 'Allowed origins check: container=parent, origin=cross, allowed=star'
+    test: responsive-iframe-allowed-origins.html?origin=cross,allowed=star,expect=400
+  - subtest: 'Allowed origins check: container=parent, origin=same, allowed=multiple'
+    test: responsive-iframe-allowed-origins.html?origin=same,allowed=multiple,expect=400
+  - subtest: 'Allowed origins check: container=parent, origin=same, allowed=star'
+    test: responsive-iframe-allowed-origins.html?origin=same,allowed=star,expect=400
+  - subtest: 'Allowed origins check: container=parent, origin=subdomain, allowed=star'
+    test: responsive-iframe-allowed-origins.html?origin=subdomain,allowed=star,expect=400
+  - subtest: 'Allowed origins check: container=parent, origin=same, allowed=self'
+    test: responsive-iframe-allowed-origins.html?origin=same,allowed=self,expect=400
+  - subtest: IFRAME content should use the initial ICB to measure the natural size
+    test: responsive-iframe-icb.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2060685
