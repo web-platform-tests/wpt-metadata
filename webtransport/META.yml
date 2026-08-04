@@ -522,3 +522,42 @@ links:
       creation
     test: sendorder.https.any.worker.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=2058871
+- product: firefox
+  results:
+  - test: draining.https.any.sharedworker.html
+  - subtest: WebTransport.draining should resolve when server initiates draining
+    test: draining.https.any.sharedworker.html
+  - subtest: WebTransport should allow opening streams after server-initiated draining
+    test: draining.https.any.sharedworker.html
+  - subtest: draining does not settle closed
+    test: draining.https.any.sharedworker.html
+  - subtest: streams remain usable after draining
+    test: draining.https.any.sharedworker.html
+  - test: draining.https.any.worker.html
+  - subtest: WebTransport.draining should resolve when server initiates draining
+    test: draining.https.any.worker.html
+  - subtest: WebTransport should allow opening streams after server-initiated draining
+    test: draining.https.any.worker.html
+  - subtest: draining does not settle closed
+    test: draining.https.any.worker.html
+  - subtest: streams remain usable after draining
+    test: draining.https.any.worker.html
+  - test: draining.https.any.serviceworker.html
+  - subtest: WebTransport.draining should resolve when server initiates draining
+    test: draining.https.any.serviceworker.html
+  - subtest: WebTransport should allow opening streams after server-initiated draining
+    test: draining.https.any.serviceworker.html
+  - subtest: draining does not settle closed
+    test: draining.https.any.serviceworker.html
+  - subtest: streams remain usable after draining
+    test: draining.https.any.serviceworker.html
+  - test: draining.https.any.html
+  - subtest: WebTransport.draining should resolve when server initiates draining
+    test: draining.https.any.html
+  - subtest: WebTransport should allow opening streams after server-initiated draining
+    test: draining.https.any.html
+  - subtest: draining does not settle closed
+    test: draining.https.any.html
+  - subtest: streams remain usable after draining
+    test: draining.https.any.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2060688
