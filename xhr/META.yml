@@ -241,3 +241,12 @@ links:
   - subtest: responseURL reflects the new response after abort() and reuse
     test: responseurl-after-abort.any.worker.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=2059672
+- product: firefox
+  results:
+  - subtest: 'XMLHttpRequest.send(URLSearchParams): POST uses the URLSearchParams
+      MIME type when no Content-Type was set'
+    test: send-usp.any.worker.html
+  - subtest: 'XMLHttpRequest.send(URLSearchParams): POST replaces the charset parameter
+      of an author-set Content-Type'
+    test: send-usp.any.worker.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2060717
