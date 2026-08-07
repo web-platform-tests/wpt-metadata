@@ -1,21 +1,48 @@
 links:
-    - product: chrome
-      url: https://crbug.com/970944
-      results:
-        - test: svg-baseval-in-display-none.html
-    - product: safari
-      url: https://bugs.webkit.org/show_bug.cgi?id=194815
-      results:
-        - test: svg-image-intrinsic-size-with-cssstyle-auto.html
-          subtest: <svg:image> 'auto' sizing with default sized svg image viewBox='0 0 400 100', attributes width='60' height='60' and CSS 'width:auto; height:auto'
-        - test: svg-image-intrinsic-size-with-cssstyle-auto.html
-          subtest: <svg:image> 'auto' sizing with svg image width='200' viewBox='0 0 400 100', attributes width='60' height='60' and CSS 'width:auto; height:auto'
-        - test: svg-image-intrinsic-size-with-cssstyle-auto.html
-          subtest: <svg:image> 'auto' sizing with default sized svg image, attributes width='60' height='60' and CSS 'width:auto'
-        - test: svg-image-intrinsic-size-with-cssstyle-auto.html
-          subtest: <svg:image> 'auto' sizing with default sized svg image, attributes width='60' height='60' and CSS 'height:auto'
-    - product: safari
-      url: https://bugs.webkit.org/show_bug.cgi?id=320456
-      results:
-        - test: svg-get-bounding-client-rect-in-non-rendered-elements.html
-          subtest: Get Bounding Client Rect
+- product: chrome
+  results:
+  - test: svg-baseval-in-display-none.html
+  url: https://crbug.com/970944
+- product: safari
+  results:
+  - subtest: <svg:image> 'auto' sizing with default sized svg image viewBox='0 0 400
+      100', attributes width='60' height='60' and CSS 'width:auto; height:auto'
+    test: svg-image-intrinsic-size-with-cssstyle-auto.html
+  - subtest: <svg:image> 'auto' sizing with svg image width='200' viewBox='0 0 400
+      100', attributes width='60' height='60' and CSS 'width:auto; height:auto'
+    test: svg-image-intrinsic-size-with-cssstyle-auto.html
+  - subtest: <svg:image> 'auto' sizing with default sized svg image, attributes width='60'
+      height='60' and CSS 'width:auto'
+    test: svg-image-intrinsic-size-with-cssstyle-auto.html
+  - subtest: <svg:image> 'auto' sizing with default sized svg image, attributes width='60'
+      height='60' and CSS 'height:auto'
+    test: svg-image-intrinsic-size-with-cssstyle-auto.html
+  url: https://bugs.webkit.org/show_bug.cgi?id=194815
+- product: safari
+  results:
+  - subtest: Get Bounding Client Rect
+    test: svg-get-bounding-client-rect-in-non-rendered-elements.html
+  url: https://bugs.webkit.org/show_bug.cgi?id=320456
+- product: firefox
+  results:
+  - subtest: rect in <mask> has no box, getBoundingClientRect()
+    test: svg-geometry-apis-in-non-rendered-elements.html
+  - subtest: rect in <mask> has no box, getClientRects()
+    test: svg-geometry-apis-in-non-rendered-elements.html
+  - subtest: rect in <clipPath> has no box, getBoundingClientRect()
+    test: svg-geometry-apis-in-non-rendered-elements.html
+  - subtest: rect in <clipPath> has no box, getClientRects()
+    test: svg-geometry-apis-in-non-rendered-elements.html
+  - subtest: rect in <marker> has no box, getBoundingClientRect()
+    test: svg-geometry-apis-in-non-rendered-elements.html
+  - subtest: rect in <marker> has no box, getClientRects()
+    test: svg-geometry-apis-in-non-rendered-elements.html
+  - subtest: rect in <symbol> has no box, getBoundingClientRect()
+    test: svg-geometry-apis-in-non-rendered-elements.html
+  - subtest: rect in <symbol> has no box, getClientRects()
+    test: svg-geometry-apis-in-non-rendered-elements.html
+  - subtest: <g> in <defs> has no box, getBoundingClientRect()
+    test: svg-geometry-apis-in-non-rendered-elements.html
+  - subtest: <g> in <defs> has no box, getClientRects()
+    test: svg-geometry-apis-in-non-rendered-elements.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2061646
