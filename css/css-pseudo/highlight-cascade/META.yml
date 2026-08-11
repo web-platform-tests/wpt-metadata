@@ -260,3 +260,14 @@ links:
   - subtest: the custom property receives its initial value from a deferred registration
     test: highlight-cascade-010.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1936342
+- product: firefox
+  results:
+  - subtest: A highlight pseudo-element inherits from the parent's new style, not
+      its previous one
+    test: highlight-cascade-parent-style-change.html
+  - subtest: A highlight pseudo-element in a shadow tree inherits from the shadow
+      host's
+    test: highlight-cascade-shadow-boundary.html
+  - subtest: A highlight pseudo-element of slotted content inherits through the slot
+    test: highlight-cascade-shadow-boundary.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2062718
