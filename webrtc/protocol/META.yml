@@ -1,221 +1,231 @@
 links:
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1534687
-      results:
-        - test: video-codecs.https.html
-          subtest: H.264 and VP8 should be negotiated after handshake
-        - test: video-codecs.https.html
-          subtest: All H.264 codecs MUST include profile-level-id
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1534688
-      results:
-        - test: video-codecs.https.html
-          subtest: H.264 and VP8 should be supported in initial offer
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1278299
-      results:
-        - test: candidate-exchange.https.html?interop-2026
-          subtest: Adding only caller -> callee candidates gives a connection
-        - test: candidate-exchange.https.html?interop-2026
-          subtest: Adding only callee -> caller candidates gives a connection
-        - test: candidate-exchange.https.html?interop-2026
-          subtest: Explicit offer/answer exchange gives a connection
-        - test: candidate-exchange.https.html?interop-2026
-          subtest: Adding callee -> caller candidates from end-of-candidates gives a connection
-        - test: crypto-suite.https.html
-          subtest: tlsVersion is acceptable on data-only
-        - test: crypto-suite.https.html
-          subtest: tlsVersion is acceptable on video-only
-        - test: crypto-suite.https.html
-          subtest: dtlsCipher is acceptable on data-only
-        - test: crypto-suite.https.html
-          subtest: dtlsCipher is acceptable on video-only
-        - test: crypto-suite.https.html
-          subtest: srtpCipher is acceptable on data-only
-        - test: crypto-suite.https.html
-          subtest: srtpCipher is acceptable on video-only
-        - test: crypto-suite.https.html
-          subtest: tlsGroup is acceptable on data-only
-        - test: crypto-suite.https.html
-          subtest: tlsGroup is acceptable on video-only
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1557053
-      results:
-        - test: ice-state.https.html
-          subtest: PC should enter disconnected state when a failing candidate is sent
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1547036
-      results:
-        - test: simulcast-answer.html
-          subtest: createOffer() with multiple send encodings should create simulcast offer
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1307996
-      results:
-        - test: bundle.https.html?rest
-          subtest: not negotiating BUNDLE creates two separate ice and dtls transports
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1225723
-      results:
-        - test: dtls-setup.https.html
-          subtest: PC with setup=actpass should have a dtlsRole of client
-        - test: dtls-setup.https.html
-          subtest: PC with setup=active should have a dtlsRole of server
-        - test: dtls-setup.https.html
-          subtest: PC with setup=passive should have a dtlsRole of client
-        - test: dtls-setup.https.html
-          subtest: dtlsRole is `unknown` before negotiation of the DTLS handshake
-    - product: firefox
-      url: https://github.com/web-platform-tests/wpt/issues/37561
-      results:
-        - test: handover.html
-        - test: handover-datachannel.html
-          subtest: Handover with datachannel reinitiated from new callee completes
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1510802
-      results:
-        - test: msid-generate.html
-          subtest: SetStreams with a stream produces MSID with a stream ID
-        - test: msid-generate.html
-          subtest: SetStreams with two streams produces two MSID lines
-        - test: msid-generate.html
-          subtest: SetStreams with the stream twice produces single MSID with a stream ID
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1531460
-      results:
-        - test: rtp-demuxing.html
-          subtest: Can demux two video tracks with different payload types on a bundled connection
-        - test: h264-profile-levels.https.html?rest
-          subtest: Level 1 H264 video is appropriately constrained
-        - test: h264-profile-levels.https.html?rest
-          subtest: Level 2 H264 video is appropriately constrained
-        - test: h264-profile-levels.https.html?rest
-          subtest: Level 3 H264 video is appropriately constrained
-        - test: h264-profile-levels.https.html?interop-2026
-          subtest: Level 4 H264 video is appropriately constrained
-        - test: h264-profile-levels.https.html?interop-2026
-          subtest: Level 5 H264 video is appropriately constrained
-        - test: h264-profile-levels.https.html?rest
-          subtest: Level 6 H264 video is appropriately constrained
-        - test: h264-profile-levels.https.html?rest
-          subtest: Level 1.1 H264 video is appropriately constrained
-        - test: h264-profile-levels.https.html?rest
-          subtest: Level 1.2 H264 video is appropriately constrained
-        - test: h264-profile-levels.https.html?rest
-          subtest: Level 1.3 H264 video is appropriately constrained
-        - test: h264-profile-levels.https.html?rest
-          subtest: Level 2.1 H264 video is appropriately constrained
-        - test: h264-profile-levels.https.html?rest
-          subtest: Level 2.2 H264 video is appropriately constrained
-        - test: h264-profile-levels.https.html?interop-2026
-          subtest: Level 3.1 H264 video is appropriately constrained
-        - test: h264-profile-levels.https.html?interop-2026
-          subtest: Level 3.2 H264 video is appropriately constrained
-        - test: h264-profile-levels.https.html?interop-2026
-          subtest: Level 4.1 H264 video is appropriately constrained
-        - test: h264-profile-levels.https.html?interop-2026
-          subtest: Level 4.2 H264 video is appropriately constrained
-        - test: h264-profile-levels.https.html?interop-2026
-          subtest: Level 5.1 H264 video is appropriately constrained
-        - test: h264-profile-levels.https.html?interop-2026
-          subtest: Level 5.2 H264 video is appropriately constrained
-        - test: h264-profile-levels.https.html?rest
-          subtest: Level 6.1 H264 video is appropriately constrained
-        - test: h264-profile-levels.https.html?rest
-          subtest: Level 6.2 H264 video is appropriately constrained
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1643050
-      results:
-        - test: split.https.html
-          subtest: Connect audio and video to two independent PeerConnections
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1340372
-      results:
-        - test: rtp-extension-support.html
-          subtest: RTP header extension urn:3gpp:video-orientation is present in offer
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1531464
-      results:
-        - test: vp8-fmtp.html
-          subtest: setRemoteDescription parses max-fr and max-fs fmtp parameters
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1805480
-      results:
-        - test: bundle.https.html?interop-2026
-          subtest: bundles on the first transport and closes the second
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1805484
-      results:
-        - test: bundle.https.html?rest
-          subtest: max-bundle with an offer without bundle only negotiates the first m-line
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1808989
-      results:
-        - test: msid-generate.html
-          subtest: AddTrack with the stream twice produces single MSID with a stream ID
-        - test: msid-generate.html
-          subtest: AddTransceiver with the stream twice produces single MSID with a stream ID
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1617686
-      results:
-        - test: ice-ufragpwd.html
-          subtest: setRemoteDescription with a ice-ufrag containing a non-ice-char fails
-        - test: ice-ufragpwd.html
-          subtest: setRemoteDescription with a ice-pwd containing a non-ice-char fails
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1635922
-      results:
-        - test: dtls-fingerprint-validation.html
-          subtest: Connection fails if one side provides a wrong DTLS fingerprint
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1806181
-      results:
-        - test: rtp-payloadtypes.html?rest
-          subtest: setRemoteDescription with a codec in the range 64-95 throws an InvalidAccessError
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1806185
-      results:
-        - test: unknown-mediatypes.html
-          subtest: Unknown media types are rejected with the port set to 0
-    - product: chrome
-      url: https://issues.chromium.org/343086063
-      results:
-        - test: simulcast-answer.html
-          subtest: Using the ~rid SDP syntax in a remote offer does not control the local encodings active flag
-    - product: chrome
-      url: https://issues.webrtc.org/issues/42224482
-      results:
-        - test: h264-profile-levels.https.html?rest
-          subtest: Level 2 H264 video is appropriately constrained
-        - test: h264-profile-levels.https.html?rest
-          subtest: Level 3 H264 video is appropriately constrained
-        - test: h264-profile-levels.https.html?rest
-          subtest: Level 2.1 H264 video is appropriately constrained
-        - test: h264-profile-levels.https.html?rest
-          subtest: Level 2.2 H264 video is appropriately constrained
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1307994
-      results:
-        - test: candidate-exchange.https.html?interop-2026
-          subtest: Adding only caller -> callee candidates gives a connection
-        - test: candidate-exchange.https.html?interop-2026
-          subtest: Adding only callee -> caller candidates gives a connection
-        - test: candidate-exchange.https.html?interop-2026
-          subtest: Adding callee -> caller candidates from end-of-candidates gives a connection
-        - test: candidate-exchange.https.html?interop-2026
-          subtest: Explicit offer/answer exchange gives a connection
-    - label: interop-2026-webrtc
-      results:
-        - test: handover.html
-        - test: rtp-payloadtypes.html?interop-2026
-        - test: bundle.https.html?interop-2026
-        - test: rtp-demuxing.html
-        - test: video-codecs.https.html
-        - test: codecs-subsequent-offer.https.html
-        - test: handover-datachannel.html
-        - test: rtp-headerextensions.html
-        - test: candidate-exchange.https.html?interop-2026
-        - test: crypto-suite.https.html
-        - test: dtls-setup.https.html
-        - test: rtp-extension-support.html
-        - test: unknown-mediatypes.html
-        - test: additional-codecs.html
+- product: firefox
+  results:
+  - subtest: H.264 and VP8 should be negotiated after handshake
+    test: video-codecs.https.html
+  - subtest: All H.264 codecs MUST include profile-level-id
+    test: video-codecs.https.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1534687
+- product: firefox
+  results:
+  - subtest: H.264 and VP8 should be supported in initial offer
+    test: video-codecs.https.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1534688
+- product: firefox
+  results:
+  - subtest: Adding only caller -> callee candidates gives a connection
+    test: candidate-exchange.https.html?interop-2026
+  - subtest: Adding only callee -> caller candidates gives a connection
+    test: candidate-exchange.https.html?interop-2026
+  - subtest: Explicit offer/answer exchange gives a connection
+    test: candidate-exchange.https.html?interop-2026
+  - subtest: Adding callee -> caller candidates from end-of-candidates gives a connection
+    test: candidate-exchange.https.html?interop-2026
+  - subtest: tlsVersion is acceptable on data-only
+    test: crypto-suite.https.html
+  - subtest: tlsVersion is acceptable on video-only
+    test: crypto-suite.https.html
+  - subtest: dtlsCipher is acceptable on data-only
+    test: crypto-suite.https.html
+  - subtest: dtlsCipher is acceptable on video-only
+    test: crypto-suite.https.html
+  - subtest: srtpCipher is acceptable on data-only
+    test: crypto-suite.https.html
+  - subtest: srtpCipher is acceptable on video-only
+    test: crypto-suite.https.html
+  - subtest: tlsGroup is acceptable on data-only
+    test: crypto-suite.https.html
+  - subtest: tlsGroup is acceptable on video-only
+    test: crypto-suite.https.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1278299
+- product: firefox
+  results:
+  - subtest: PC should enter disconnected state when a failing candidate is sent
+    test: ice-state.https.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1557053
+- product: firefox
+  results:
+  - subtest: createOffer() with multiple send encodings should create simulcast offer
+    test: simulcast-answer.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1547036
+- product: firefox
+  results:
+  - subtest: not negotiating BUNDLE creates two separate ice and dtls transports
+    test: bundle.https.html?rest
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1307996
+- product: firefox
+  results:
+  - subtest: PC with setup=actpass should have a dtlsRole of client
+    test: dtls-setup.https.html
+  - subtest: PC with setup=active should have a dtlsRole of server
+    test: dtls-setup.https.html
+  - subtest: PC with setup=passive should have a dtlsRole of client
+    test: dtls-setup.https.html
+  - subtest: dtlsRole is `unknown` before negotiation of the DTLS handshake
+    test: dtls-setup.https.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1225723
+- product: firefox
+  results:
+  - test: handover.html
+  - subtest: Handover with datachannel reinitiated from new callee completes
+    test: handover-datachannel.html
+  url: https://github.com/web-platform-tests/wpt/issues/37561
+- product: firefox
+  results:
+  - subtest: SetStreams with a stream produces MSID with a stream ID
+    test: msid-generate.html
+  - subtest: SetStreams with two streams produces two MSID lines
+    test: msid-generate.html
+  - subtest: SetStreams with the stream twice produces single MSID with a stream ID
+    test: msid-generate.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1510802
+- product: firefox
+  results:
+  - subtest: Can demux two video tracks with different payload types on a bundled
+      connection
+    test: rtp-demuxing.html
+  - subtest: Level 1 H264 video is appropriately constrained
+    test: h264-profile-levels.https.html?rest
+  - subtest: Level 2 H264 video is appropriately constrained
+    test: h264-profile-levels.https.html?rest
+  - subtest: Level 3 H264 video is appropriately constrained
+    test: h264-profile-levels.https.html?rest
+  - subtest: Level 4 H264 video is appropriately constrained
+    test: h264-profile-levels.https.html?interop-2026
+  - subtest: Level 5 H264 video is appropriately constrained
+    test: h264-profile-levels.https.html?interop-2026
+  - subtest: Level 6 H264 video is appropriately constrained
+    test: h264-profile-levels.https.html?rest
+  - subtest: Level 1.1 H264 video is appropriately constrained
+    test: h264-profile-levels.https.html?rest
+  - subtest: Level 1.2 H264 video is appropriately constrained
+    test: h264-profile-levels.https.html?rest
+  - subtest: Level 1.3 H264 video is appropriately constrained
+    test: h264-profile-levels.https.html?rest
+  - subtest: Level 2.1 H264 video is appropriately constrained
+    test: h264-profile-levels.https.html?rest
+  - subtest: Level 2.2 H264 video is appropriately constrained
+    test: h264-profile-levels.https.html?rest
+  - subtest: Level 3.1 H264 video is appropriately constrained
+    test: h264-profile-levels.https.html?interop-2026
+  - subtest: Level 3.2 H264 video is appropriately constrained
+    test: h264-profile-levels.https.html?interop-2026
+  - subtest: Level 4.1 H264 video is appropriately constrained
+    test: h264-profile-levels.https.html?interop-2026
+  - subtest: Level 4.2 H264 video is appropriately constrained
+    test: h264-profile-levels.https.html?interop-2026
+  - subtest: Level 5.1 H264 video is appropriately constrained
+    test: h264-profile-levels.https.html?interop-2026
+  - subtest: Level 5.2 H264 video is appropriately constrained
+    test: h264-profile-levels.https.html?interop-2026
+  - subtest: Level 6.1 H264 video is appropriately constrained
+    test: h264-profile-levels.https.html?rest
+  - subtest: Level 6.2 H264 video is appropriately constrained
+    test: h264-profile-levels.https.html?rest
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1531460
+- product: firefox
+  results:
+  - subtest: Connect audio and video to two independent PeerConnections
+    test: split.https.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1643050
+- product: firefox
+  results:
+  - subtest: RTP header extension urn:3gpp:video-orientation is present in offer
+    test: rtp-extension-support.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1340372
+- product: firefox
+  results:
+  - subtest: setRemoteDescription parses max-fr and max-fs fmtp parameters
+    test: vp8-fmtp.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1531464
+- product: firefox
+  results:
+  - subtest: bundles on the first transport and closes the second
+    test: bundle.https.html?interop-2026
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1805480
+- product: firefox
+  results:
+  - subtest: max-bundle with an offer without bundle only negotiates the first m-line
+    test: bundle.https.html?rest
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1805484
+- product: firefox
+  results:
+  - subtest: AddTrack with the stream twice produces single MSID with a stream ID
+    test: msid-generate.html
+  - subtest: AddTransceiver with the stream twice produces single MSID with a stream
+      ID
+    test: msid-generate.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1808989
+- product: firefox
+  results:
+  - subtest: setRemoteDescription with a ice-ufrag containing a non-ice-char fails
+    test: ice-ufragpwd.html
+  - subtest: setRemoteDescription with a ice-pwd containing a non-ice-char fails
+    test: ice-ufragpwd.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1617686
+- product: firefox
+  results:
+  - subtest: Connection fails if one side provides a wrong DTLS fingerprint
+    test: dtls-fingerprint-validation.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1635922
+- product: firefox
+  results:
+  - subtest: setRemoteDescription with a codec in the range 64-95 throws an InvalidAccessError
+    test: rtp-payloadtypes.html?rest
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1806181
+- product: firefox
+  results:
+  - subtest: Unknown media types are rejected with the port set to 0
+    test: unknown-mediatypes.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1806185
+- product: chrome
+  results:
+  - subtest: Using the ~rid SDP syntax in a remote offer does not control the local
+      encodings active flag
+    test: simulcast-answer.html
+  url: https://issues.chromium.org/343086063
+- product: chrome
+  results:
+  - subtest: Level 2 H264 video is appropriately constrained
+    test: h264-profile-levels.https.html?rest
+  - subtest: Level 3 H264 video is appropriately constrained
+    test: h264-profile-levels.https.html?rest
+  - subtest: Level 2.1 H264 video is appropriately constrained
+    test: h264-profile-levels.https.html?rest
+  - subtest: Level 2.2 H264 video is appropriately constrained
+    test: h264-profile-levels.https.html?rest
+  url: https://issues.webrtc.org/issues/42224482
+- product: firefox
+  results:
+  - subtest: Adding only caller -> callee candidates gives a connection
+    test: candidate-exchange.https.html?interop-2026
+  - subtest: Adding only callee -> caller candidates gives a connection
+    test: candidate-exchange.https.html?interop-2026
+  - subtest: Adding callee -> caller candidates from end-of-candidates gives a connection
+    test: candidate-exchange.https.html?interop-2026
+  - subtest: Explicit offer/answer exchange gives a connection
+    test: candidate-exchange.https.html?interop-2026
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1307994
+- label: interop-2026-webrtc
+  results:
+  - test: handover.html
+  - test: rtp-payloadtypes.html?interop-2026
+  - test: bundle.https.html?interop-2026
+  - test: rtp-demuxing.html
+  - test: video-codecs.https.html
+  - test: codecs-subsequent-offer.https.html
+  - test: handover-datachannel.html
+  - test: rtp-headerextensions.html
+  - test: candidate-exchange.https.html?interop-2026
+  - test: crypto-suite.https.html
+  - test: dtls-setup.https.html
+  - test: rtp-extension-support.html
+  - test: unknown-mediatypes.html
+  - test: additional-codecs.html
+- product: firefox
+  results:
+  - status: CRASH
+    test: h264-profile-levels.https.html?rest
+  - status: CRASH
+    test: h264-profile-levels.https.html?interop-2026
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2063626
