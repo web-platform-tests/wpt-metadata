@@ -3549,3 +3549,14 @@ links:
       value should be equal
     test: random-in-if.tentative.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=2062996
+- product: firefox
+  results:
+  - subtest: random() in different registered <length> custom properties on the same
+      element should not be shared
+    test: random-computed.tentative.html
+  - subtest: random() in a custom property should be element-scoped by default
+    test: random-computed.tentative.html
+  - subtest: random() keyed on a custom property should not collide with an author
+      <dashed-ident> naming it
+    test: random-computed.tentative.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2063556
