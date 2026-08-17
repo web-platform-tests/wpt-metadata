@@ -1,6 +1,11 @@
 links:
-- product: firefox
-  results:
-  - subtest: test_authenticator_id_invalid_value
-    test: invalid.py
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2054068
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=2054068
+      results:
+        - test: invalid.py
+          subtest: test_authenticator_id_invalid_value
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=2064129
+      results:
+        - test: invalid.py
+          subtest: test_user_handle_missing_for_resident_credential
