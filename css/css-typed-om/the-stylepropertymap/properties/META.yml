@@ -258,3 +258,494 @@ links:
   - subtest: 'Can set ''border-end-end-radius'' to a length: calc(0px + 0em)'
     test: logical.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=2062590
+- product: firefox
+  results:
+  - subtest: 'Can set ''all'' to var() references:  var(--A)'
+    test: all.html
+  - subtest: 'Can set ''anchor-scope'' to the ''none'' keyword: none'
+    test: anchor-scope.html
+  - subtest: 'Can set ''anchor-scope'' to the ''all'' keyword: all'
+    test: anchor-scope.html
+  - subtest: 'Can set ''anchor-scope'' to the ''--a'' keyword: --a'
+    test: anchor-scope.html
+  - subtest: 'Can set ''animation-timing-function'' to the ''step-start'' keyword:
+      step-start'
+    test: animation-timing-function.html
+  - subtest: 'Can set ''animation-timing-function'' to the ''step-end'' keyword: step-end'
+    test: animation-timing-function.html
+  - subtest: 'Can set ''background-position'' to var() references:  var(--A)'
+    test: background-position.html
+  - subtest: 'Can set ''background'' to var() references:  var(--A)'
+    test: background.html
+  - subtest: 'Setting ''background'' to a length: 0px throws TypeError'
+    test: background.html
+  - subtest: 'Setting ''background'' to a length: -3.14em throws TypeError'
+    test: background.html
+  - subtest: 'Setting ''background'' to a length: 3.14cm throws TypeError'
+    test: background.html
+  - subtest: 'Setting ''background'' to a length: calc(0px + 0em) throws TypeError'
+    test: background.html
+  - subtest: 'Setting ''background'' to a percent: 0% throws TypeError'
+    test: background.html
+  - subtest: 'Setting ''background'' to a percent: -3.14% throws TypeError'
+    test: background.html
+  - subtest: 'Setting ''background'' to a percent: 3.14% throws TypeError'
+    test: background.html
+  - subtest: 'Setting ''background'' to a percent: calc(0% + 0%) throws TypeError'
+    test: background.html
+  - subtest: 'Can set ''border-image-repeat'' to the ''stretch'' keyword: stretch'
+    test: border-image-repeat.html
+  - subtest: 'Can set ''border-image-repeat'' to the ''repeat'' keyword: repeat'
+    test: border-image-repeat.html
+  - subtest: 'Can set ''border-image-repeat'' to the ''round'' keyword: round'
+    test: border-image-repeat.html
+  - subtest: 'Can set ''border-image-repeat'' to the ''space'' keyword: space'
+    test: border-image-repeat.html
+  - subtest: 'Can set ''border-top-left-radius'' to a length: 0px'
+    test: border-radius.html
+  - subtest: 'Can set ''border-top-left-radius'' to a length: -3.14em'
+    test: border-radius.html
+  - subtest: 'Can set ''border-top-left-radius'' to a length: 3.14cm'
+    test: border-radius.html
+  - subtest: 'Can set ''border-top-left-radius'' to a length: calc(0px + 0em)'
+    test: border-radius.html
+  - subtest: 'Can set ''border-top-left-radius'' to a percent: 0%'
+    test: border-radius.html
+  - subtest: 'Can set ''border-top-left-radius'' to a percent: -3.14%'
+    test: border-radius.html
+  - subtest: 'Can set ''border-top-left-radius'' to a percent: 3.14%'
+    test: border-radius.html
+  - subtest: 'Can set ''border-top-left-radius'' to a percent: calc(0% + 0%)'
+    test: border-radius.html
+  - subtest: 'Can set ''border-top-right-radius'' to a length: 0px'
+    test: border-radius.html
+  - subtest: 'Can set ''border-top-right-radius'' to a length: -3.14em'
+    test: border-radius.html
+  - subtest: 'Can set ''border-top-right-radius'' to a length: 3.14cm'
+    test: border-radius.html
+  - subtest: 'Can set ''border-top-right-radius'' to a length: calc(0px + 0em)'
+    test: border-radius.html
+  - subtest: 'Can set ''border-top-right-radius'' to a percent: 0%'
+    test: border-radius.html
+  - subtest: 'Can set ''border-top-right-radius'' to a percent: -3.14%'
+    test: border-radius.html
+  - subtest: 'Can set ''border-top-right-radius'' to a percent: 3.14%'
+    test: border-radius.html
+  - subtest: 'Can set ''border-top-right-radius'' to a percent: calc(0% + 0%)'
+    test: border-radius.html
+  - subtest: 'Can set ''border-bottom-left-radius'' to a length: 0px'
+    test: border-radius.html
+  - subtest: 'Can set ''border-bottom-left-radius'' to a length: -3.14em'
+    test: border-radius.html
+  - subtest: 'Can set ''border-bottom-left-radius'' to a length: 3.14cm'
+    test: border-radius.html
+  - subtest: 'Can set ''border-bottom-left-radius'' to a length: calc(0px + 0em)'
+    test: border-radius.html
+  - subtest: 'Can set ''border-bottom-left-radius'' to a percent: 0%'
+    test: border-radius.html
+  - subtest: 'Can set ''border-bottom-left-radius'' to a percent: -3.14%'
+    test: border-radius.html
+  - subtest: 'Can set ''border-bottom-left-radius'' to a percent: 3.14%'
+    test: border-radius.html
+  - subtest: 'Can set ''border-bottom-left-radius'' to a percent: calc(0% + 0%)'
+    test: border-radius.html
+  - subtest: 'Can set ''border-bottom-right-radius'' to a length: 0px'
+    test: border-radius.html
+  - subtest: 'Can set ''border-bottom-right-radius'' to a length: -3.14em'
+    test: border-radius.html
+  - subtest: 'Can set ''border-bottom-right-radius'' to a length: 3.14cm'
+    test: border-radius.html
+  - subtest: 'Can set ''border-bottom-right-radius'' to a length: calc(0px + 0em)'
+    test: border-radius.html
+  - subtest: 'Can set ''border-bottom-right-radius'' to a percent: 0%'
+    test: border-radius.html
+  - subtest: 'Can set ''border-bottom-right-radius'' to a percent: -3.14%'
+    test: border-radius.html
+  - subtest: 'Can set ''border-bottom-right-radius'' to a percent: 3.14%'
+    test: border-radius.html
+  - subtest: 'Can set ''border-bottom-right-radius'' to a percent: calc(0% + 0%)'
+    test: border-radius.html
+  - subtest: 'Can set ''break-after'' to the ''avoid-column'' keyword: avoid-column'
+    test: break.html
+  - subtest: 'Can set ''break-after'' to the ''avoid-page'' keyword: avoid-page'
+    test: break.html
+  - subtest: 'Can set ''break-after'' to the ''column'' keyword: column'
+    test: break.html
+  - subtest: 'Can set ''break-after'' to the ''recto'' keyword: recto'
+    test: break.html
+  - subtest: 'Can set ''break-after'' to the ''verso'' keyword: verso'
+    test: break.html
+  - subtest: 'Can set ''break-before'' to the ''avoid-column'' keyword: avoid-column'
+    test: break.html
+  - subtest: 'Can set ''break-before'' to the ''avoid-page'' keyword: avoid-page'
+    test: break.html
+  - subtest: 'Can set ''break-before'' to the ''column'' keyword: column'
+    test: break.html
+  - subtest: 'Can set ''break-before'' to the ''recto'' keyword: recto'
+    test: break.html
+  - subtest: 'Can set ''break-before'' to the ''verso'' keyword: verso'
+    test: break.html
+  - subtest: 'Can set ''column-count'' to a number: 0'
+    test: column-count.html
+  - subtest: 'Can set ''column-count'' to a number: -3.14'
+    test: column-count.html
+  - subtest: 'Can set ''column-count'' to a number: 3.14'
+    test: column-count.html
+  - subtest: 'Can set ''column-count'' to a number: calc(2 + 3)'
+    test: column-count.html
+  - subtest: 'Can set ''column-height'' to CSS-wide keywords: initial'
+    test: column-height.html
+  - subtest: 'Can set ''column-height'' to CSS-wide keywords: inherit'
+    test: column-height.html
+  - subtest: 'Can set ''column-height'' to CSS-wide keywords: unset'
+    test: column-height.html
+  - subtest: 'Can set ''column-height'' to CSS-wide keywords: revert'
+    test: column-height.html
+  - subtest: 'Can set ''column-height'' to var() references:  var(--A)'
+    test: column-height.html
+  - subtest: 'Can set ''column-height'' to the ''auto'' keyword: auto'
+    test: column-height.html
+  - subtest: 'Can set ''column-height'' to a length: 0px'
+    test: column-height.html
+  - subtest: 'Can set ''column-height'' to a length: -3.14em'
+    test: column-height.html
+  - subtest: 'Can set ''column-height'' to a length: 3.14cm'
+    test: column-height.html
+  - subtest: 'Can set ''column-height'' to a length: calc(0px + 0em)'
+    test: column-height.html
+  - subtest: 'Can set ''column-rule-style'' to the ''none'' keyword: none'
+    test: column-rule-style.html
+  - subtest: 'Can set ''column-rule-style'' to the ''hidden'' keyword: hidden'
+    test: column-rule-style.html
+  - subtest: 'Can set ''column-rule-style'' to the ''dotted'' keyword: dotted'
+    test: column-rule-style.html
+  - subtest: 'Can set ''column-rule-style'' to the ''dashed'' keyword: dashed'
+    test: column-rule-style.html
+  - subtest: 'Can set ''column-rule-style'' to the ''solid'' keyword: solid'
+    test: column-rule-style.html
+  - subtest: 'Can set ''column-rule-style'' to the ''double'' keyword: double'
+    test: column-rule-style.html
+  - subtest: 'Can set ''column-rule-style'' to the ''groove'' keyword: groove'
+    test: column-rule-style.html
+  - subtest: 'Can set ''column-rule-style'' to the ''ridge'' keyword: ridge'
+    test: column-rule-style.html
+  - subtest: 'Can set ''column-rule-style'' to the ''inset'' keyword: inset'
+    test: column-rule-style.html
+  - subtest: 'Can set ''column-rule-style'' to the ''outset'' keyword: outset'
+    test: column-rule-style.html
+  - subtest: 'Can set ''column-rule-width'' to the ''thin'' keyword: thin'
+    test: column-rule-width.html
+  - subtest: 'Can set ''column-rule-width'' to the ''medium'' keyword: medium'
+    test: column-rule-width.html
+  - subtest: 'Can set ''column-rule-width'' to the ''thick'' keyword: thick'
+    test: column-rule-width.html
+  - subtest: 'Can set ''column-rule-width'' to a length: 0px'
+    test: column-rule-width.html
+  - subtest: 'Can set ''column-rule-width'' to a length: -3.14em'
+    test: column-rule-width.html
+  - subtest: 'Can set ''column-rule-width'' to a length: 3.14cm'
+    test: column-rule-width.html
+  - subtest: 'Can set ''column-rule-width'' to a length: calc(0px + 0em)'
+    test: column-rule-width.html
+  - subtest: '''column-rule-width'' does not support ''thin'''
+    test: column-rule-width.html
+  - subtest: '''column-rule-width'' does not support ''medium'''
+    test: column-rule-width.html
+  - subtest: '''column-rule-width'' does not support ''thick'''
+    test: column-rule-width.html
+  - subtest: '''column-rule-width'' does not support ''2px'''
+    test: column-rule-width.html
+  - subtest: '''column-rule-width'' does not support ''3px'''
+    test: column-rule-width.html
+  - subtest: '''column-rule-width'' does not support ''4px, 5px'''
+    test: column-rule-width.html
+  - subtest: '''column-rule-width'' does not support ''thin, medium, thick'''
+    test: column-rule-width.html
+  - subtest: 'Can set ''counter-increment'' to the ''none'' keyword: none'
+    test: counter-increment.html
+  - subtest: 'Can set ''counter-reset'' to the ''none'' keyword: none'
+    test: counter-reset.html
+  - subtest: 'Can set ''counter-set'' to the ''none'' keyword: none'
+    test: counter-set.html
+  - subtest: '''display'' does not support setting ''inline math'''
+    test: display.html
+  - subtest: '''display'' does not support setting ''math inline'''
+    test: display.html
+  - subtest: '''display'' does not support ''block math'''
+    test: display.html
+  - subtest: '''display'' does not support ''math block'''
+    test: display.html
+  - subtest: 'Can set ''fill-opacity'' to a percent: 0%'
+    test: fill-opacity.html
+  - subtest: 'Can set ''fill-opacity'' to a percent: -3.14%'
+    test: fill-opacity.html
+  - subtest: 'Can set ''fill-opacity'' to a percent: 3.14%'
+    test: fill-opacity.html
+  - subtest: 'Can set ''flood-opacity'' to a percent: 0%'
+    test: flood-opacity.html
+  - subtest: 'Can set ''flood-opacity'' to a percent: -3.14%'
+    test: flood-opacity.html
+  - subtest: 'Can set ''flood-opacity'' to a percent: 3.14%'
+    test: flood-opacity.html
+  - subtest: 'Can set ''font-feature-settings'' to the ''normal'' keyword: normal'
+    test: font-feature-settings.html
+  - subtest: 'Can set ''font-language-override'' to the ''normal'' keyword: normal'
+    test: font-language-override.html
+  - subtest: 'Can set ''font-palette'' to the ''normal'' keyword: normal'
+    test: font-palette.html
+  - subtest: 'Can set ''font-palette'' to the ''light'' keyword: light'
+    test: font-palette.html
+  - subtest: 'Can set ''font-palette'' to the ''dark'' keyword: dark'
+    test: font-palette.html
+  - subtest: 'Can set ''font-style'' to the ''normal'' keyword: normal'
+    test: font-style.html
+  - subtest: 'Can set ''font-style'' to the ''italic'' keyword: italic'
+    test: font-style.html
+  - subtest: 'Can set ''font-style'' to the ''oblique'' keyword: oblique'
+    test: font-style.html
+  - subtest: 'Can set ''font-variant-alternates'' to the ''normal'' keyword: normal'
+    test: font-variant-alternates.html
+  - subtest: 'Can set ''font-variant-alternates'' to the ''historical-forms'' keyword:
+      historical-forms'
+    test: font-variant-alternates.html
+  - subtest: 'Can set ''font-variation-settings'' to the ''normal'' keyword: normal'
+    test: font-variation-settings.html
+  - subtest: 'Can set ''grid-row-start'' to the ''auto'' keyword: auto'
+    test: grid-start-end.html
+  - subtest: 'Setting ''grid-row-start'' to a number: calc(2 + 3) throws TypeError'
+    test: grid-start-end.html
+  - subtest: 'Can set ''grid-row-end'' to the ''auto'' keyword: auto'
+    test: grid-start-end.html
+  - subtest: 'Setting ''grid-row-end'' to a number: calc(2 + 3) throws TypeError'
+    test: grid-start-end.html
+  - subtest: 'Can set ''grid-column-start'' to the ''auto'' keyword: auto'
+    test: grid-start-end.html
+  - subtest: 'Setting ''grid-column-start'' to a number: calc(2 + 3) throws TypeError'
+    test: grid-start-end.html
+  - subtest: 'Can set ''grid-column-end'' to the ''auto'' keyword: auto'
+    test: grid-start-end.html
+  - subtest: 'Setting ''grid-column-end'' to a number: calc(2 + 3) throws TypeError'
+    test: grid-start-end.html
+  - subtest: '''grid'' does not support ''repeat(3, 80px) / auto-flow'''
+    test: grid.html
+  - subtest: 'Can set ''list-style-type'' to the ''none'' keyword: none'
+    test: list-style-type.html
+  - subtest: 'Can set ''list-style-type'' to the ''custom-ident'' keyword: custom-ident'
+    test: list-style-type.html
+  - subtest: 'Can set ''margin'' to var() references:  var(--A)'
+    test: margin.html
+  - subtest: 'Setting ''margin'' to a length: 0px throws TypeError'
+    test: margin.html
+  - subtest: 'Setting ''margin'' to a length: -3.14em throws TypeError'
+    test: margin.html
+  - subtest: 'Setting ''margin'' to a length: 3.14cm throws TypeError'
+    test: margin.html
+  - subtest: 'Setting ''margin'' to a length: calc(0px + 0em) throws TypeError'
+    test: margin.html
+  - subtest: 'Setting ''margin'' to a percent: 0% throws TypeError'
+    test: margin.html
+  - subtest: 'Setting ''margin'' to a percent: -3.14% throws TypeError'
+    test: margin.html
+  - subtest: 'Setting ''margin'' to a percent: 3.14% throws TypeError'
+    test: margin.html
+  - subtest: 'Setting ''margin'' to a percent: calc(0% + 0%) throws TypeError'
+    test: margin.html
+  - subtest: 'Can set ''opacity'' to a percent: 0%'
+    test: opacity.html
+  - subtest: 'Can set ''opacity'' to a percent: -3.14%'
+    test: opacity.html
+  - subtest: 'Can set ''opacity'' to a percent: 3.14%'
+    test: opacity.html
+  - subtest: 'Can set ''orphans'' to CSS-wide keywords: initial'
+    test: orphans.html
+  - subtest: 'Can set ''orphans'' to CSS-wide keywords: inherit'
+    test: orphans.html
+  - subtest: 'Can set ''orphans'' to CSS-wide keywords: unset'
+    test: orphans.html
+  - subtest: 'Can set ''orphans'' to CSS-wide keywords: revert'
+    test: orphans.html
+  - subtest: 'Can set ''orphans'' to var() references:  var(--A)'
+    test: orphans.html
+  - subtest: 'Can set ''orphans'' to a number: 0'
+    test: orphans.html
+  - subtest: 'Can set ''orphans'' to a number: -3.14'
+    test: orphans.html
+  - subtest: 'Can set ''orphans'' to a number: 3.14'
+    test: orphans.html
+  - subtest: 'Can set ''orphans'' to a number: calc(2 + 3)'
+    test: orphans.html
+  - subtest: 'Can set ''paint-order'' to the ''normal'' keyword: normal'
+    test: paint-order.html
+  - subtest: 'Can set ''paint-order'' to the ''fill'' keyword: fill'
+    test: paint-order.html
+  - subtest: 'Can set ''paint-order'' to the ''stroke'' keyword: stroke'
+    test: paint-order.html
+  - subtest: 'Can set ''paint-order'' to the ''markers'' keyword: markers'
+    test: paint-order.html
+  - subtest: 'Can set ''pointer-events'' to the ''bounding-box'' keyword: bounding-box'
+    test: pointer-events.html
+  - subtest: 'Can set ''quotes'' to the ''none'' keyword: none'
+    test: quotes.html
+  - subtest: 'Can set ''scroll-snap-type'' to the ''none'' keyword: none'
+    test: scroll-snap-type.html
+  - subtest: 'Can set ''scroll-snap-type'' to the ''x'' keyword: x'
+    test: scroll-snap-type.html
+  - subtest: 'Can set ''scroll-snap-type'' to the ''y'' keyword: y'
+    test: scroll-snap-type.html
+  - subtest: 'Can set ''scroll-snap-type'' to the ''block'' keyword: block'
+    test: scroll-snap-type.html
+  - subtest: 'Can set ''scroll-snap-type'' to the ''inline'' keyword: inline'
+    test: scroll-snap-type.html
+  - subtest: 'Can set ''scroll-snap-type'' to the ''both'' keyword: both'
+    test: scroll-snap-type.html
+  - subtest: 'Setting ''shape-image-threshold'' to a percent: 0% throws TypeError'
+    test: shape-image-threshold.html
+  - subtest: 'Setting ''shape-image-threshold'' to a percent: -3.14% throws TypeError'
+    test: shape-image-threshold.html
+  - subtest: 'Setting ''shape-image-threshold'' to a percent: 3.14% throws TypeError'
+    test: shape-image-threshold.html
+  - subtest: 'Setting ''shape-image-threshold'' to a percent: calc(0% + 0%) throws
+      TypeError'
+    test: shape-image-threshold.html
+  - subtest: 'Can set ''speak'' to CSS-wide keywords: initial'
+    test: speak.html
+  - subtest: 'Can set ''speak'' to CSS-wide keywords: inherit'
+    test: speak.html
+  - subtest: 'Can set ''speak'' to CSS-wide keywords: unset'
+    test: speak.html
+  - subtest: 'Can set ''speak'' to CSS-wide keywords: revert'
+    test: speak.html
+  - subtest: 'Can set ''speak'' to var() references:  var(--A)'
+    test: speak.html
+  - subtest: 'Can set ''stop-opacity'' to a percent: 0%'
+    test: stop-opacity.html
+  - subtest: 'Can set ''stop-opacity'' to a percent: -3.14%'
+    test: stop-opacity.html
+  - subtest: 'Can set ''stop-opacity'' to a percent: 3.14%'
+    test: stop-opacity.html
+  - subtest: 'Can set ''stroke-dasharray'' to a number: 0'
+    test: stroke-dasharray.html
+  - subtest: 'Can set ''stroke-dasharray'' to a number: -3.14'
+    test: stroke-dasharray.html
+  - subtest: 'Can set ''stroke-dasharray'' to a number: 3.14'
+    test: stroke-dasharray.html
+  - subtest: 'Can set ''stroke-dasharray'' to a number: calc(2 + 3)'
+    test: stroke-dasharray.html
+  - subtest: 'Can set ''stroke-dashoffset'' to a number: 0'
+    test: stroke-dashoffset.html
+  - subtest: 'Can set ''stroke-dashoffset'' to a number: -3.14'
+    test: stroke-dashoffset.html
+  - subtest: 'Can set ''stroke-dashoffset'' to a number: 3.14'
+    test: stroke-dashoffset.html
+  - subtest: 'Can set ''stroke-dashoffset'' to a number: calc(2 + 3)'
+    test: stroke-dashoffset.html
+  - subtest: 'Can set ''stroke-opacity'' to a percent: 0%'
+    test: stroke-opacity.html
+  - subtest: 'Can set ''stroke-opacity'' to a percent: -3.14%'
+    test: stroke-opacity.html
+  - subtest: 'Can set ''stroke-opacity'' to a percent: 3.14%'
+    test: stroke-opacity.html
+  - subtest: 'Can set ''stroke-width'' to a number: 0'
+    test: stroke-width.html
+  - subtest: 'Can set ''stroke-width'' to a number: -3.14'
+    test: stroke-width.html
+  - subtest: 'Can set ''stroke-width'' to a number: 3.14'
+    test: stroke-width.html
+  - subtest: 'Can set ''stroke-width'' to a number: calc(2 + 3)'
+    test: stroke-width.html
+  - subtest: 'Can set ''text-decoration-skip'' to var() references:  var(--A)'
+    test: text-decoration-skip.html
+  - subtest: 'Can set ''text-overflow'' to the ''clip'' keyword: clip'
+    test: text-overflow.html
+  - subtest: 'Can set ''text-overflow'' to the ''ellipsis'' keyword: ellipsis'
+    test: text-overflow.html
+  - subtest: 'Can set ''text-size-adjust'' to CSS-wide keywords: initial'
+    test: text-size-adjust.html
+  - subtest: 'Can set ''text-size-adjust'' to CSS-wide keywords: inherit'
+    test: text-size-adjust.html
+  - subtest: 'Can set ''text-size-adjust'' to CSS-wide keywords: unset'
+    test: text-size-adjust.html
+  - subtest: 'Can set ''text-size-adjust'' to CSS-wide keywords: revert'
+    test: text-size-adjust.html
+  - subtest: 'Can set ''text-size-adjust'' to var() references:  var(--A)'
+    test: text-size-adjust.html
+  - subtest: 'Can set ''text-size-adjust'' to the ''auto'' keyword: auto'
+    test: text-size-adjust.html
+  - subtest: 'Can set ''text-size-adjust'' to a percent: 0%'
+    test: text-size-adjust.html
+  - subtest: 'Can set ''text-size-adjust'' to a percent: 3.14%'
+    test: text-size-adjust.html
+  - subtest: 'Can set ''text-size-adjust'' to a percent: calc(0% + 0%)'
+    test: text-size-adjust.html
+  - subtest: 'Can set ''touch-action'' to the ''pan-left'' keyword: pan-left'
+    test: touch-action.html
+  - subtest: 'Can set ''touch-action'' to the ''pan-right'' keyword: pan-right'
+    test: touch-action.html
+  - subtest: 'Can set ''touch-action'' to the ''pan-up'' keyword: pan-up'
+    test: touch-action.html
+  - subtest: 'Can set ''touch-action'' to the ''pan-down'' keyword: pan-down'
+    test: touch-action.html
+  - subtest: '''touch-action'' does not support ''pan-x pan-down'''
+    test: touch-action.html
+  - subtest: '''touch-action'' does not support ''pan-down pinch-zoom pan-right'''
+    test: touch-action.html
+  - subtest: 'Can set ''transition-property'' to the ''none'' keyword: none'
+    test: transition-property.html
+  - subtest: 'Can set ''transition-timing-function'' to the ''step-start'' keyword:
+      step-start'
+    test: transition-timing-function.html
+  - subtest: 'Can set ''transition-timing-function'' to the ''step-end'' keyword:
+      step-end'
+    test: transition-timing-function.html
+  - subtest: 'Can set ''user-select'' to the ''contain'' keyword: contain'
+    test: user-select.html
+  - subtest: 'Can set ''text-wrap-style'' to the ''pretty'' keyword: pretty'
+    test: white-space.html
+  - subtest: 'Can set ''white-space-trim'' to CSS-wide keywords: initial'
+    test: white-space.html
+  - subtest: 'Can set ''white-space-trim'' to CSS-wide keywords: inherit'
+    test: white-space.html
+  - subtest: 'Can set ''white-space-trim'' to CSS-wide keywords: unset'
+    test: white-space.html
+  - subtest: 'Can set ''white-space-trim'' to CSS-wide keywords: revert'
+    test: white-space.html
+  - subtest: 'Can set ''white-space-trim'' to var() references:  var(--A)'
+    test: white-space.html
+  - subtest: 'Can set ''white-space-trim'' to the ''none'' keyword: none'
+    test: white-space.html
+  - subtest: 'Can set ''white-space-trim'' to the ''discard-before'' keyword: discard-before'
+    test: white-space.html
+  - subtest: 'Can set ''white-space-trim'' to the ''discard-after'' keyword: discard-after'
+    test: white-space.html
+  - subtest: 'Can set ''white-space-trim'' to the ''discard-inner'' keyword: discard-inner'
+    test: white-space.html
+  - subtest: '''white-space-trim'' does not support ''discard-before discard-after'''
+    test: white-space.html
+  - subtest: '''white-space-trim'' does not support ''discard-before discard-inner'''
+    test: white-space.html
+  - subtest: '''white-space-trim'' does not support ''discard-after discard-inner'''
+    test: white-space.html
+  - subtest: '''white-space-trim'' does not support ''discard-before discard-after
+      discard-inner'''
+    test: white-space.html
+  - subtest: 'Can set ''widows'' to CSS-wide keywords: initial'
+    test: widows.html
+  - subtest: 'Can set ''widows'' to CSS-wide keywords: inherit'
+    test: widows.html
+  - subtest: 'Can set ''widows'' to CSS-wide keywords: unset'
+    test: widows.html
+  - subtest: 'Can set ''widows'' to CSS-wide keywords: revert'
+    test: widows.html
+  - subtest: 'Can set ''widows'' to var() references:  var(--A)'
+    test: widows.html
+  - subtest: 'Can set ''widows'' to a number: 0'
+    test: widows.html
+  - subtest: 'Can set ''widows'' to a number: -3.14'
+    test: widows.html
+  - subtest: 'Can set ''widows'' to a number: 3.14'
+    test: widows.html
+  - subtest: 'Can set ''widows'' to a number: calc(2 + 3)'
+    test: widows.html
+  - subtest: '''will-change'' does not support ''scroll-position'''
+    test: will-change.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2064433
