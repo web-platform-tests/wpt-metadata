@@ -169,3 +169,12 @@ links:
   - subtest: '@apply with no block uses the @contents fallback'
     test: contents-rule.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=2056745
+- product: firefox
+  results:
+  - subtest: '!important is valid in mixin result declarations'
+    test: important.html
+  - subtest: '!important invalidates a mixin local declaration'
+    test: mixin-locals.html
+  - subtest: An invalid !important local does not define the variable
+    test: mixin-locals.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2064282
