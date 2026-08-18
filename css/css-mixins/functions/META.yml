@@ -724,3 +724,14 @@ links:
   - subtest: inherit() referring to typed value in parent frame
     test: local-inherit-substitution.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=2053886
+- product: firefox
+  results:
+  - subtest: '!important invalidates declarations in function bodies'
+    test: at-function-cssom.html
+  - subtest: '!important invalidates declarations in conditional function bodies'
+    test: at-function-cssom.html
+  - subtest: Indexed property getter
+    test: at-function-cssom.html
+  - subtest: CSSFunctionRule.cssText (--identy)
+    test: at-function-cssom.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2064282
