@@ -97,3 +97,19 @@ links:
   - subtest: document.activeViewTransition returns the active transition
     test: element-active-view-transition.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=2060625
+- product: firefox
+  results:
+  - test: active-pseudo.html
+  - test: ancestor-display-change.html
+  - test: centered-paint-offset.html
+  - test: clipper-non-containing-block.html
+  - test: implicit-contain.html
+  - test: overflow-excludes-pseudo.html
+  - test: paint-order.html
+  - test: pause-rendering-resize.html
+  - test: pause-rendering.html
+  - subtest: collision
+    test: collision.html
+  - subtest: A view-transition participant is not a valid target for hit testing
+    test: hit-testing.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2064947

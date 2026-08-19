@@ -108,3 +108,18 @@ links:
   - subtest: play behavior resumes a paused animation
     test: animation-trigger-play.tentative.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=2055005
+- product: firefox
+  results:
+  - subtest: play behavior restarts a finished animation
+    test: animation-trigger-play.tentative.html
+  - subtest: repeat animation triggered via scroll() timeline.
+    test: animation-trigger-repeat.tentative.html
+  - subtest: repeat animation triggered via view() timeline.
+    test: animation-trigger-repeat.tentative.html
+  - subtest: repeat animation triggered via deferred (view) timeline.
+    test: animation-trigger-repeat.tentative.html
+  - subtest: once animation triggered via scroll() timeline.
+    test: animation-trigger-state.tentative.html
+  - subtest: once animation triggered via view() timeline.
+    test: animation-trigger-state.tentative.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2064948
