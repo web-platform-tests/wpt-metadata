@@ -845,3 +845,15 @@ links:
   - subtest: A pending playback rate is used when determining timeline range alignment
     test: play-animation.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=2054851
+- product: firefox
+  results:
+  - subtest: Reversing an animation resets a sticky start time.
+    test: reverse-animation.html
+  - subtest: Reversing when when playbackRate == 0 should preserve the playback rate
+    test: reverse-animation.html
+  - subtest: Reversing an idle animation aligns startTime with the rangeEnd boundary
+    test: reverse-animation.html
+  - subtest: If scroll animation resizes its scroll timeline scroller, layout reruns
+      once per frame.
+    test: scroll-timeline-invalidation.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2064948
