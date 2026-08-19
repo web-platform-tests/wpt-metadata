@@ -3573,3 +3573,12 @@ links:
   - subtest: Property font-weight value 'calc(1em / 1px)'
     test: using-font-relative-units-in-font-properties.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=2063558
+- product: firefox
+  results:
+  - subtest: random-item() with a var()-derived <random-key> resolves
+    test: random-item-computed.html
+  - subtest: random-item() selecting var(--a) into a registered <length>
+    test: random-item-computed.html
+  - subtest: random-item() selecting var(--b) into a registered <length>
+    test: random-item-computed.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2064584
