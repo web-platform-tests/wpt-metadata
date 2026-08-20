@@ -561,3 +561,90 @@ links:
   - subtest: streams remain usable after draining
     test: draining.https.any.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=2060688
+- product: firefox
+  results:
+  - test: headers.https.any.html
+  - subtest: responseHeaders is null before the connection is established
+    test: headers.https.any.html
+  - subtest: responseHeaders is a Headers object after ready resolves
+    test: headers.https.any.html
+  - subtest: responseHeaders exposes server-sent response headers
+    test: headers.https.any.html
+  - subtest: wt-protocol is stripped from responseHeaders
+    test: headers.https.any.html
+  - subtest: Set-Cookie is stripped from responseHeaders
+    test: headers.https.any.html
+  - subtest: headers option forwards a custom header to the server, lowercased
+    test: headers.https.any.html
+  - subtest: wt-available-protocols header throws TypeError
+    test: headers.https.any.html
+  - subtest: wt-available-protocols header throws TypeError (upper case)
+    test: headers.https.any.html
+  - subtest: wt-available-protocols header throws TypeError (mixed case)
+    test: headers.https.any.html
+  - subtest: HeadersInit sequence with wrong inner length throws TypeError
+    test: headers.https.any.html
+  - test: headers.https.any.serviceworker.html
+  - subtest: responseHeaders is null before the connection is established
+    test: headers.https.any.serviceworker.html
+  - subtest: responseHeaders is a Headers object after ready resolves
+    test: headers.https.any.serviceworker.html
+  - subtest: responseHeaders exposes server-sent response headers
+    test: headers.https.any.serviceworker.html
+  - subtest: wt-protocol is stripped from responseHeaders
+    test: headers.https.any.serviceworker.html
+  - subtest: Set-Cookie is stripped from responseHeaders
+    test: headers.https.any.serviceworker.html
+  - subtest: headers option forwards a custom header to the server, lowercased
+    test: headers.https.any.serviceworker.html
+  - subtest: wt-available-protocols header throws TypeError
+    test: headers.https.any.serviceworker.html
+  - subtest: wt-available-protocols header throws TypeError (upper case)
+    test: headers.https.any.serviceworker.html
+  - subtest: wt-available-protocols header throws TypeError (mixed case)
+    test: headers.https.any.serviceworker.html
+  - subtest: HeadersInit sequence with wrong inner length throws TypeError
+    test: headers.https.any.serviceworker.html
+  - test: headers.https.any.sharedworker.html
+  - subtest: responseHeaders is null before the connection is established
+    test: headers.https.any.sharedworker.html
+  - subtest: responseHeaders is a Headers object after ready resolves
+    test: headers.https.any.sharedworker.html
+  - subtest: responseHeaders exposes server-sent response headers
+    test: headers.https.any.sharedworker.html
+  - subtest: wt-protocol is stripped from responseHeaders
+    test: headers.https.any.sharedworker.html
+  - subtest: Set-Cookie is stripped from responseHeaders
+    test: headers.https.any.sharedworker.html
+  - subtest: headers option forwards a custom header to the server, lowercased
+    test: headers.https.any.sharedworker.html
+  - subtest: wt-available-protocols header throws TypeError
+    test: headers.https.any.sharedworker.html
+  - subtest: wt-available-protocols header throws TypeError (upper case)
+    test: headers.https.any.sharedworker.html
+  - subtest: wt-available-protocols header throws TypeError (mixed case)
+    test: headers.https.any.sharedworker.html
+  - subtest: HeadersInit sequence with wrong inner length throws TypeError
+    test: headers.https.any.sharedworker.html
+  - test: headers.https.any.worker.html
+  - subtest: responseHeaders is null before the connection is established
+    test: headers.https.any.worker.html
+  - subtest: responseHeaders is a Headers object after ready resolves
+    test: headers.https.any.worker.html
+  - subtest: responseHeaders exposes server-sent response headers
+    test: headers.https.any.worker.html
+  - subtest: wt-protocol is stripped from responseHeaders
+    test: headers.https.any.worker.html
+  - subtest: Set-Cookie is stripped from responseHeaders
+    test: headers.https.any.worker.html
+  - subtest: headers option forwards a custom header to the server, lowercased
+    test: headers.https.any.worker.html
+  - subtest: wt-available-protocols header throws TypeError
+    test: headers.https.any.worker.html
+  - subtest: wt-available-protocols header throws TypeError (upper case)
+    test: headers.https.any.worker.html
+  - subtest: wt-available-protocols header throws TypeError (mixed case)
+    test: headers.https.any.worker.html
+  - subtest: HeadersInit sequence with wrong inner length throws TypeError
+    test: headers.https.any.worker.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2065081
