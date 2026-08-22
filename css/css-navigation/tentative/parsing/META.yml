@@ -1,0 +1,40 @@
+links:
+- product: firefox
+  results:
+  - subtest: '@navigation (at: --foo) {
+
+      } should be a valid rule'
+    test: navigation-rule-location-valid.html
+  - subtest: " @Navigation  (At:--foo ){  \n}  should be a valid rule"
+    test: navigation-rule-location-valid.html
+  - subtest: '@navigation (at: url-pattern("/a/")) {
+
+      } should be a valid rule'
+    test: navigation-rule-location-valid.html
+  - subtest: '@navigation (between: --a and --b) {
+
+      } should be a valid rule'
+    test: navigation-rule-location-valid.html
+  - subtest: "@Navigation  ( Between:--a  And  --b ){ \n}  should be a valid rule"
+    test: navigation-rule-location-valid.html
+  - subtest: '@navigation (between: url-pattern("/a/") and url-pattern("/b/")) {
+
+      } should be a valid rule'
+    test: navigation-rule-location-valid.html
+  - subtest: "@Navigation (Between:url-pattern( \"/a/\" )  And  url-pattern( \"/b/\"\
+      \ )){ \n } should be a valid rule"
+    test: navigation-rule-location-valid.html
+  - subtest: '@navigation ((from: --a) or (at: --b)) {
+
+      } should be a valid rule'
+    test: navigation-rule-location-valid.html
+  - subtest: "@Navigation  ( ( From:--a ) Or ( At:--b) ){ \n}  should be a valid rule"
+    test: navigation-rule-location-valid.html
+  - subtest: '@navigation ((between: --a and --b) or (at: --c)) {
+
+      } should be a valid rule'
+    test: navigation-rule-location-valid.html
+  - subtest: "@Navigation  ( ( Between:--a  And  --b ) Or ( At:--c) ){ \n}  should\
+      \ be a valid rule"
+    test: navigation-rule-location-valid.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2065758
