@@ -1,0 +1,10 @@
+links:
+- product: firefox
+  results:
+  - subtest: '"__Host-" without a Path attribute is not set'
+    test: __host.explicit-path.https.window.html
+  - subtest: '"__Host-" with an empty Path attribute is not set'
+    test: __host.explicit-path.https.window.html
+  - subtest: '"__Host-" with a valueless Path attribute is not set'
+    test: __host.explicit-path.https.window.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2066910
