@@ -611,3 +611,9 @@ links:
       view timeline current time is unresolved
     test: view-timeline-unresolved-current-time-at-effect-end.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=2067191
+- product: firefox
+  results:
+  - subtest: A zero-length attachment range yields unresolved computed keyframe offsets,
+      not infinite ones
+    test: timeline-offset-keyframes-zero-length-attachment-range.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2067256
