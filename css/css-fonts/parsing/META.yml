@@ -419,3 +419,26 @@ links:
       the property value
     test: font-family-valid.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=2058551
+- product: firefox
+  results:
+  - subtest: 'font-width: normal is valid'
+    test: font-face-width.html
+  - subtest: 'font-width: condensed is valid'
+    test: font-face-width.html
+  - subtest: 'font-width: 125% is valid'
+    test: font-face-width.html
+  - subtest: 'font-width: 75% 125% is valid'
+    test: font-face-width.html
+  - subtest: 'font-stretch: auto is valid'
+    test: font-face-width.html
+  - subtest: 'font-stretch: normal is valid'
+    test: font-face-width.html
+  - subtest: 'font-stretch: condensed is valid'
+    test: font-face-width.html
+  - subtest: 'font-stretch: 125% is valid'
+    test: font-face-width.html
+  - subtest: 'font-stretch: 75% 125% is valid'
+    test: font-face-width.html
+  - subtest: font-width and font-stretch address the same descriptor
+    test: font-face-width.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2067259
