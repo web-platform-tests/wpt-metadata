@@ -3334,3 +3334,10 @@ links:
           subtest: random(p-i-s) in typed arg and set in body, different function at different indexes
         - test: random-in-custom-function.tentative.html
           subtest: random(e-s) in typed arg and set in body, same function on different elements
+    - product: chrome
+      url: https://g-issues.chromium.org/issues/553046527
+      results:
+        - test: random-serialize.tentative.html
+          subtest: e.style['max-lines'] = "random(--foo, 25, 50, 5)" should set the property value
+        - test: random-serialize.tentative.html
+          subtest: e.style['max-lines'] = "random(--foo, 25, 50)" should set the property value
