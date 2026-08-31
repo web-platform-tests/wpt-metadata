@@ -76,3 +76,8 @@ links:
   - subtest: IFRAME content should use the initial ICB to measure the natural size
     test: responsive-iframe-icb.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=2060685
+- product: firefox
+  results:
+  - subtest: 'Allowed origins check: container=parent, origin=same, allowed=multiple'
+    test: responsive-iframe-allow-origins.html?origin=same,allowed=multiple,expect=400
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2067659
