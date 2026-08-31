@@ -735,3 +735,16 @@ links:
   - subtest: CSSFunctionRule.cssText (--identy)
     test: at-function-cssom.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=2064282
+- product: firefox
+  results:
+  - subtest: A local is untyped even where a registration of the same name exists
+    test: function-parameter-types.tentative.html
+  - subtest: Local shadows a registered custom property in if() condition
+    test: local-if-substitution.html
+  - subtest: Parameter shadows a registered custom property in if() condition
+    test: local-if-substitution.html
+  - subtest: Local shadows a registered custom property left at its initial value
+    test: local-if-substitution.html
+  - subtest: A name the function does not declare keeps the registration
+    test: local-if-substitution.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2067855
