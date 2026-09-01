@@ -753,3 +753,18 @@ links:
   - subtest: Argument calling the same function does not invalidate the inner call
     test: dashed-function-cycles.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=2067981
+- product: firefox
+  results:
+  - subtest: '@function --foo(--x: var(--y, 10px)) is valid'
+    test: at-function-parsing.html
+  - subtest: '@function --foo(--x <color>: rgb(1, 2, 3)) is valid'
+    test: at-function-parsing.html
+  - subtest: '@function --foo(--x: var(--y, 10px), --z: 2px) is valid'
+    test: at-function-parsing.html
+  - subtest: '@function --foo(--x <length>: clamp(1px, 2px, 3px)) is valid'
+    test: at-function-parsing.html
+  - subtest: '@function --foo(--x: {1px, 2px}) is valid'
+    test: at-function-parsing.html
+  - subtest: '@function --foo(--x: --bar(1px, 2px)) is valid'
+    test: at-function-parsing.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2068163
