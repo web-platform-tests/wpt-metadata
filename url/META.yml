@@ -1335,3 +1335,208 @@ links:
   - subtest: "URL: Setting <https://domain.com:3000>.port = '\n\n\t\t'"
     test: url-setters.any.html?exclude=(file|javascript|mailto)
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=2054889
+- product: firefox
+  results:
+  - subtest: 'Parsing origin: <http://a.b.c.xn--pokxncvks> against <about:blank>'
+    test: a-element-origin-xhtml.xhtml
+  - subtest: 'Parsing origin: <http://10.0.0.xn--pokxncvks> against <about:blank>'
+    test: a-element-origin-xhtml.xhtml
+  - subtest: 'Parsing origin: <http://a.b.c.XN--pokxncvks> against <about:blank>'
+    test: a-element-origin-xhtml.xhtml
+  - subtest: 'Parsing origin: <http://a.b.c.Xn--pokxncvks> against <about:blank>'
+    test: a-element-origin-xhtml.xhtml
+  - subtest: 'Parsing origin: <http://10.0.0.XN--pokxncvks> against <about:blank>'
+    test: a-element-origin-xhtml.xhtml
+  - subtest: 'Parsing origin: <http://10.0.0.xN--pokxncvks> against <about:blank>'
+    test: a-element-origin-xhtml.xhtml
+  - subtest: 'Parsing origin: <https://xn--/> against <about:blank>'
+    test: a-element-origin-xhtml.xhtml
+  - subtest: 'Parsing origin: <http://a.b.c.xn--pokxncvks> against <about:blank>'
+    test: a-element-origin.html
+  - subtest: 'Parsing origin: <http://10.0.0.xn--pokxncvks> against <about:blank>'
+    test: a-element-origin.html
+  - subtest: 'Parsing origin: <http://a.b.c.XN--pokxncvks> against <about:blank>'
+    test: a-element-origin.html
+  - subtest: 'Parsing origin: <http://a.b.c.Xn--pokxncvks> against <about:blank>'
+    test: a-element-origin.html
+  - subtest: 'Parsing origin: <http://10.0.0.XN--pokxncvks> against <about:blank>'
+    test: a-element-origin.html
+  - subtest: 'Parsing origin: <http://10.0.0.xN--pokxncvks> against <about:blank>'
+    test: a-element-origin.html
+  - subtest: 'Parsing origin: <https://xn--/> against <about:blank>'
+    test: a-element-origin.html
+  - subtest: 'Parsing: <..> against <file://x/C:/>'
+    test: a-element-xhtml.xhtml?include=file
+  - subtest: 'Parsing: <non-special:opaque  ?hi> against <about:blank>'
+    test: a-element-xhtml.xhtml?exclude=(file|javascript|mailto)
+  - subtest: 'Parsing: <non-special:opaque  #hi> against <about:blank>'
+    test: a-element-xhtml.xhtml?exclude=(file|javascript|mailto)
+  - subtest: "Parsing: <non-special:opaque \t\t  \t#hi> against <about:blank>"
+    test: a-element-xhtml.xhtml?exclude=(file|javascript|mailto)
+  - subtest: "Parsing: <non-special:opaque \t\t  #hi> against <about:blank>"
+    test: a-element-xhtml.xhtml?exclude=(file|javascript|mailto)
+  - subtest: "Parsing: <non-special:opaque\t\t  \r #hi> against <about:blank>"
+    test: a-element-xhtml.xhtml?exclude=(file|javascript|mailto)
+  - subtest: 'Parsing: <http://a.b.c.xn--pokxncvks> against <about:blank>'
+    test: a-element-xhtml.xhtml?exclude=(file|javascript|mailto)
+  - subtest: 'Parsing: <http://10.0.0.xn--pokxncvks> against <about:blank>'
+    test: a-element-xhtml.xhtml?exclude=(file|javascript|mailto)
+  - subtest: 'Parsing: <http://a.b.c.XN--pokxncvks> against <about:blank>'
+    test: a-element-xhtml.xhtml?exclude=(file|javascript|mailto)
+  - subtest: 'Parsing: <http://a.b.c.Xn--pokxncvks> against <about:blank>'
+    test: a-element-xhtml.xhtml?exclude=(file|javascript|mailto)
+  - subtest: 'Parsing: <http://10.0.0.XN--pokxncvks> against <about:blank>'
+    test: a-element-xhtml.xhtml?exclude=(file|javascript|mailto)
+  - subtest: 'Parsing: <http://10.0.0.xN--pokxncvks> against <about:blank>'
+    test: a-element-xhtml.xhtml?exclude=(file|javascript|mailto)
+  - subtest: 'Parsing: <..> against <abc://x/y/z/C:/>'
+    test: a-element-xhtml.xhtml?exclude=(file|javascript|mailto)
+  - subtest: 'Parsing: <foo://host/ !"$%&''()*+,-./:;<=>@[\]^_`{|}~> against <about:blank>'
+    test: a-element-xhtml.xhtml?exclude=(file|javascript|mailto)
+  - subtest: 'Parsing: <https://xn--/> against <about:blank>'
+    test: a-element-xhtml.xhtml?exclude=(file|javascript|mailto)
+  - subtest: 'Parsing: <\a> against <foo://foo/a>'
+    test: a-element-xhtml.xhtml?exclude=(file|javascript|mailto)
+  - subtest: 'Parsing: <\/a> against <foo://foo/a>'
+    test: a-element-xhtml.xhtml?exclude=(file|javascript|mailto)
+  - subtest: 'Parsing: <\\a> against <foo://foo/a>'
+    test: a-element-xhtml.xhtml?exclude=(file|javascript|mailto)
+  - subtest: 'Parsing: <non-special:opaque  ?hi> against <about:blank>'
+    test: a-element.html?exclude=(file|javascript|mailto)
+  - subtest: 'Parsing: <non-special:opaque  #hi> against <about:blank>'
+    test: a-element.html?exclude=(file|javascript|mailto)
+  - subtest: "Parsing: <non-special:opaque \t\t  \t#hi> against <about:blank>"
+    test: a-element.html?exclude=(file|javascript|mailto)
+  - subtest: "Parsing: <non-special:opaque \t\t  #hi> against <about:blank>"
+    test: a-element.html?exclude=(file|javascript|mailto)
+  - subtest: "Parsing: <non-special:opaque\t\t  \r #hi> against <about:blank>"
+    test: a-element.html?exclude=(file|javascript|mailto)
+  - subtest: 'Parsing: <http://a.b.c.xn--pokxncvks> against <about:blank>'
+    test: a-element.html?exclude=(file|javascript|mailto)
+  - subtest: 'Parsing: <http://10.0.0.xn--pokxncvks> against <about:blank>'
+    test: a-element.html?exclude=(file|javascript|mailto)
+  - subtest: 'Parsing: <http://a.b.c.XN--pokxncvks> against <about:blank>'
+    test: a-element.html?exclude=(file|javascript|mailto)
+  - subtest: 'Parsing: <http://a.b.c.Xn--pokxncvks> against <about:blank>'
+    test: a-element.html?exclude=(file|javascript|mailto)
+  - subtest: 'Parsing: <http://10.0.0.XN--pokxncvks> against <about:blank>'
+    test: a-element.html?exclude=(file|javascript|mailto)
+  - subtest: 'Parsing: <http://10.0.0.xN--pokxncvks> against <about:blank>'
+    test: a-element.html?exclude=(file|javascript|mailto)
+  - subtest: 'Parsing: <..> against <abc://x/y/z/C:/>'
+    test: a-element.html?exclude=(file|javascript|mailto)
+  - subtest: 'Parsing: <foo://host/ !"$%&''()*+,-./:;<=>@[\]^_`{|}~> against <about:blank>'
+    test: a-element.html?exclude=(file|javascript|mailto)
+  - subtest: 'Parsing: <https://xn--/> against <about:blank>'
+    test: a-element.html?exclude=(file|javascript|mailto)
+  - subtest: 'Parsing: <\a> against <foo://foo/a>'
+    test: a-element.html?exclude=(file|javascript|mailto)
+  - subtest: 'Parsing: <\/a> against <foo://foo/a>'
+    test: a-element.html?exclude=(file|javascript|mailto)
+  - subtest: 'Parsing: <\\a> against <foo://foo/a>'
+    test: a-element.html?exclude=(file|javascript|mailto)
+  - subtest: 'Parsing: <..> against <file://x/C:/>'
+    test: a-element.html?include=file
+  - subtest: 'Parsing: <..> against <file://x/C:/>'
+    test: url-constructor.any.html?include=file
+  - subtest: 'Parsing: <file://xn--/p> without base'
+    test: url-constructor.any.html?include=file
+  - subtest: 'Parsing: <non-special:opaque  ?hi> without base'
+    test: url-constructor.any.worker.html?exclude=(file|javascript|mailto)
+  - subtest: 'Parsing: <non-special:opaque  #hi> without base'
+    test: url-constructor.any.worker.html?exclude=(file|javascript|mailto)
+  - subtest: "Parsing: <non-special:opaque \t\t  \t#hi> without base"
+    test: url-constructor.any.worker.html?exclude=(file|javascript|mailto)
+  - subtest: "Parsing: <non-special:opaque \t\t  #hi> without base"
+    test: url-constructor.any.worker.html?exclude=(file|javascript|mailto)
+  - subtest: "Parsing: <non-special:opaque\t\t  \r #hi> without base"
+    test: url-constructor.any.worker.html?exclude=(file|javascript|mailto)
+  - subtest: 'Parsing: <http://a.b.c.xn--pokxncvks> without base'
+    test: url-constructor.any.worker.html?exclude=(file|javascript|mailto)
+  - subtest: 'Parsing: <http://10.0.0.xn--pokxncvks> without base'
+    test: url-constructor.any.worker.html?exclude=(file|javascript|mailto)
+  - subtest: 'Parsing: <http://a.b.c.XN--pokxncvks> without base'
+    test: url-constructor.any.worker.html?exclude=(file|javascript|mailto)
+  - subtest: 'Parsing: <http://a.b.c.Xn--pokxncvks> without base'
+    test: url-constructor.any.worker.html?exclude=(file|javascript|mailto)
+  - subtest: 'Parsing: <http://10.0.0.XN--pokxncvks> without base'
+    test: url-constructor.any.worker.html?exclude=(file|javascript|mailto)
+  - subtest: 'Parsing: <http://10.0.0.xN--pokxncvks> without base'
+    test: url-constructor.any.worker.html?exclude=(file|javascript|mailto)
+  - subtest: 'Parsing: <..> against <abc://x/y/z/C:/>'
+    test: url-constructor.any.worker.html?exclude=(file|javascript|mailto)
+  - subtest: 'Parsing: <foo://host/ !"$%&''()*+,-./:;<=>@[\]^_`{|}~> without base'
+    test: url-constructor.any.worker.html?exclude=(file|javascript|mailto)
+  - subtest: 'Parsing: <https://xn--/> without base'
+    test: url-constructor.any.worker.html?exclude=(file|javascript|mailto)
+  - subtest: 'Parsing: <\a> against <foo://foo/a>'
+    test: url-constructor.any.worker.html?exclude=(file|javascript|mailto)
+  - subtest: 'Parsing: <\/a> against <foo://foo/a>'
+    test: url-constructor.any.worker.html?exclude=(file|javascript|mailto)
+  - subtest: 'Parsing: <\\a> against <foo://foo/a>'
+    test: url-constructor.any.worker.html?exclude=(file|javascript|mailto)
+  - subtest: 'Parsing: <..> against <file://x/C:/>'
+    test: url-constructor.any.worker.html?include=file
+  - subtest: 'Parsing: <non-special:opaque  ?hi> without base'
+    test: url-constructor.any.html?exclude=(file|javascript|mailto)
+  - subtest: 'Parsing: <non-special:opaque  #hi> without base'
+    test: url-constructor.any.html?exclude=(file|javascript|mailto)
+  - subtest: "Parsing: <non-special:opaque \t\t  \t#hi> without base"
+    test: url-constructor.any.html?exclude=(file|javascript|mailto)
+  - subtest: "Parsing: <non-special:opaque \t\t  #hi> without base"
+    test: url-constructor.any.html?exclude=(file|javascript|mailto)
+  - subtest: "Parsing: <non-special:opaque\t\t  \r #hi> without base"
+    test: url-constructor.any.html?exclude=(file|javascript|mailto)
+  - subtest: 'Parsing: <http://a.b.c.xn--pokxncvks> without base'
+    test: url-constructor.any.html?exclude=(file|javascript|mailto)
+  - subtest: 'Parsing: <http://10.0.0.xn--pokxncvks> without base'
+    test: url-constructor.any.html?exclude=(file|javascript|mailto)
+  - subtest: 'Parsing: <http://a.b.c.XN--pokxncvks> without base'
+    test: url-constructor.any.html?exclude=(file|javascript|mailto)
+  - subtest: 'Parsing: <http://a.b.c.Xn--pokxncvks> without base'
+    test: url-constructor.any.html?exclude=(file|javascript|mailto)
+  - subtest: 'Parsing: <http://10.0.0.XN--pokxncvks> without base'
+    test: url-constructor.any.html?exclude=(file|javascript|mailto)
+  - subtest: 'Parsing: <http://10.0.0.xN--pokxncvks> without base'
+    test: url-constructor.any.html?exclude=(file|javascript|mailto)
+  - subtest: 'Parsing: <..> against <abc://x/y/z/C:/>'
+    test: url-constructor.any.html?exclude=(file|javascript|mailto)
+  - subtest: 'Parsing: <foo://host/ !"$%&''()*+,-./:;<=>@[\]^_`{|}~> without base'
+    test: url-constructor.any.html?exclude=(file|javascript|mailto)
+  - subtest: 'Parsing: <https://xn--/> without base'
+    test: url-constructor.any.html?exclude=(file|javascript|mailto)
+  - subtest: 'Parsing: <\a> against <foo://foo/a>'
+    test: url-constructor.any.html?exclude=(file|javascript|mailto)
+  - subtest: 'Parsing: <\/a> against <foo://foo/a>'
+    test: url-constructor.any.html?exclude=(file|javascript|mailto)
+  - subtest: 'Parsing: <\\a> against <foo://foo/a>'
+    test: url-constructor.any.html?exclude=(file|javascript|mailto)
+  - subtest: 'Origin parsing: <http://a.b.c.xn--pokxncvks> without base'
+    test: url-origin.any.worker.html
+  - subtest: 'Origin parsing: <http://10.0.0.xn--pokxncvks> without base'
+    test: url-origin.any.worker.html
+  - subtest: 'Origin parsing: <http://a.b.c.XN--pokxncvks> without base'
+    test: url-origin.any.worker.html
+  - subtest: 'Origin parsing: <http://a.b.c.Xn--pokxncvks> without base'
+    test: url-origin.any.worker.html
+  - subtest: 'Origin parsing: <http://10.0.0.XN--pokxncvks> without base'
+    test: url-origin.any.worker.html
+  - subtest: 'Origin parsing: <http://10.0.0.xN--pokxncvks> without base'
+    test: url-origin.any.worker.html
+  - subtest: 'Origin parsing: <https://xn--/> without base'
+    test: url-origin.any.worker.html
+  - subtest: 'Origin parsing: <http://a.b.c.xn--pokxncvks> without base'
+    test: url-origin.any.html
+  - subtest: 'Origin parsing: <http://10.0.0.xn--pokxncvks> without base'
+    test: url-origin.any.html
+  - subtest: 'Origin parsing: <http://a.b.c.XN--pokxncvks> without base'
+    test: url-origin.any.html
+  - subtest: 'Origin parsing: <http://a.b.c.Xn--pokxncvks> without base'
+    test: url-origin.any.html
+  - subtest: 'Origin parsing: <http://10.0.0.XN--pokxncvks> without base'
+    test: url-origin.any.html
+  - subtest: 'Origin parsing: <http://10.0.0.xN--pokxncvks> without base'
+    test: url-origin.any.html
+  - subtest: 'Origin parsing: <https://xn--/> without base'
+    test: url-origin.any.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2068028
