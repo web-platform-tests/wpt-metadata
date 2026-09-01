@@ -105,3 +105,22 @@ links:
   - subtest: <animateMotion> from/to animation with rotate=auto and no motion
     test: animateMotion-from-to-rotate-auto-no-motion.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=2045042
+- product: firefox
+  results:
+  - subtest: path="M 100 100" translates to the initial point of the path
+    test: animateMotion-path-moveto-only.html
+  - subtest: <mpath> referencing d="M 100 100" translates to the initial point of
+      the path
+    test: animateMotion-path-moveto-only.html
+  - subtest: accumulate="sum" on a single-moveto path adds the end of the path per
+      repeat
+    test: animateMotion-path-moveto-only.html
+  - subtest: path="M 200 100" with rotate="auto" uses a 0 degree angle, not the position
+      vector
+    test: animateMotion-path-moveto-only.html
+  - subtest: path="M 100 100 L 100 100" stays at the initial point, with a 0 degree
+      angle
+    test: animateMotion-path-zero-length-subpaths.html
+  - subtest: path="M 100 100 Z" stays at the initial point, with a 0 degree angle
+    test: animateMotion-path-zero-length-subpaths.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2067969
