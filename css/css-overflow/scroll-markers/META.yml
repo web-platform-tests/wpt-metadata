@@ -331,3 +331,25 @@ links:
   results:
   - test: targeted-column-scroll-marker-selection-004.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=2062468
+- product: firefox
+  results:
+  - subtest: ::scroll-marker activation focus behavior in links and tabs modes
+    test: scroll-marker-activation-retains-focus.html
+  - subtest: ::scroll-marker double activation behavior in links and tabs modes
+    test: scroll-marker-double-activation.html
+  - subtest: ::scroll-marker sets :focus-within on its ancestors in tabs mode, but
+      not in links mode
+    test: scroll-marker-focus-within.html
+  - subtest: document.activeElement for ::scroll-marker is document.body in links
+      mode, and scroller in tabs mode
+    test: scroll-markers-focus-active-element.html
+  - subtest: active ::scroll-marker doesn't have focus on scroll if previous ::scroll-marker
+      didn't have it in links mode
+    test: scroll-markers-focus-on-scrolling.html
+  - subtest: active ::scroll-marker does not save focus on scroll in links mode because
+      click does not focus the marker
+    test: scroll-markers-focus-on-scrolling.html
+  - subtest: active ::scroll-marker saves focus on scroll if previous ::scroll-marker
+      had it in tabs mode
+    test: scroll-markers-focus-on-scrolling.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2068048
