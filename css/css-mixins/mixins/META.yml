@@ -178,3 +178,30 @@ links:
   - subtest: An invalid !important local does not define the variable
     test: mixin-locals.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=2064282
+- product: firefox
+  results:
+  - subtest: Shared inline @apply contents use the correct mixin in each scope
+    test: mixin-shadow-dom.html
+  - subtest: Shared inline @apply contents do not depend on scope creation order
+    test: mixin-shadow-dom.html
+  - subtest: Shared constructed @apply sheet uses the correct mixin in each scope
+    test: mixin-shadow-dom.html
+  - subtest: Shared constructed @apply sheet does not depend on scope creation order
+    test: mixin-shadow-dom.html
+  - subtest: An @apply of an undefined mixin does not affect a scope that defines
+      it
+    test: mixin-shadow-dom.html
+  - subtest: An @apply of a defined mixin does not leak into a scope without it
+    test: mixin-shadow-dom.html
+  - subtest: A local mixin overrides a document mixin with the same name
+    test: mixin-shadow-dom.html
+  - subtest: Nested shadows use the nearest mixin along each tree branch
+    test: mixin-shadow-dom.html
+  - subtest: A shared stylesheet's @apply resolves to each document's own mixin
+    test: mixin-shared-across-documents.html
+  - subtest: A scope with no mixins does not affect @apply in a scope that declares
+      the mixin
+    test: mixin-shared-sheet-no-mixins-in-scope.html
+  - subtest: An applied mixin does not affect @apply in a scope that has no mixins
+    test: mixin-shared-sheet-no-mixins-in-scope.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2067972
