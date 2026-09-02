@@ -1,0 +1,56 @@
+links:
+- product: firefox
+  results:
+  - subtest: test_authenticator_id_invalid_value
+    test: invalid.py
+  - subtest: test_credential_id_invalid_value
+    test: invalid.py
+  - subtest: test_backup_eligibility_invalid_type[foo]
+    test: invalid.py
+  - subtest: test_backup_eligibility_invalid_type[123]
+    test: invalid.py
+  - subtest: test_backup_eligibility_invalid_type[backup_eligibility2]
+    test: invalid.py
+  - subtest: test_backup_eligibility_invalid_type[backup_eligibility3]
+    test: invalid.py
+  - subtest: test_backup_eligibility_invalid_type[None]
+    test: invalid.py
+  - subtest: test_backup_state_invalid_type[foo]
+    test: invalid.py
+  - subtest: test_backup_state_invalid_type[123]
+    test: invalid.py
+  - subtest: test_backup_state_invalid_type[backup_state2]
+    test: invalid.py
+  - subtest: test_backup_state_invalid_type[backup_state3]
+    test: invalid.py
+  - subtest: test_backup_state_invalid_type[None]
+    test: invalid.py
+  - subtest: test_sign_count_invalid_type[foo]
+    test: invalid.py
+  - subtest: test_sign_count_invalid_type[True]
+    test: invalid.py
+  - subtest: test_sign_count_invalid_type[sign_count2]
+    test: invalid.py
+  - subtest: test_sign_count_invalid_type[sign_count3]
+    test: invalid.py
+  - subtest: test_sign_count_invalid_type[1.5]
+    test: invalid.py
+  - subtest: test_sign_count_invalid_type[4294967296]
+    test: invalid.py
+  - subtest: test_set_backup_eligibility[True]
+    test: set.py
+  - subtest: test_set_backup_eligibility[False]
+    test: set.py
+  - subtest: test_set_backup_state[True]
+    test: set.py
+  - subtest: test_set_backup_state[False]
+    test: set.py
+  - subtest: test_set_sign_count[0]
+    test: set.py
+  - subtest: test_set_sign_count[42]
+    test: set.py
+  - subtest: test_set_sign_count[None]
+    test: set.py
+  - subtest: test_set_multiple_properties
+    test: set.py
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2068647
