@@ -648,3 +648,70 @@ links:
   - subtest: HeadersInit sequence with wrong inner length throws TypeError
     test: headers.https.any.worker.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=2065081
+- product: firefox
+  results:
+  - subtest: responseHeaders is immutable
+    test: headers.https.any.sharedworker.html
+  - subtest: Invalid header name throws TypeError
+    test: headers.https.any.sharedworker.html
+  - subtest: Header value containing CR/LF throws TypeError
+    test: headers.https.any.sharedworker.html
+  - subtest: HeadersInit sequence-of-sequences form sends every header
+    test: headers.https.any.sharedworker.html
+  - subtest: HeadersInit Headers object form sends every header
+    test: headers.https.any.sharedworker.html
+  - subtest: HeadersInit sequence with an empty inner sequence throws TypeError
+    test: headers.https.any.sharedworker.html
+  - subtest: HeadersInit sequence with one inner element throws TypeError
+    test: headers.https.any.sharedworker.html
+  - subtest: HeadersInit sequence with three inner elements throws TypeError
+    test: headers.https.any.sharedworker.html
+  - subtest: responseHeaders is immutable
+    test: headers.https.any.html
+  - subtest: Invalid header name throws TypeError
+    test: headers.https.any.html
+  - subtest: Header value containing CR/LF throws TypeError
+    test: headers.https.any.html
+  - subtest: HeadersInit sequence-of-sequences form sends every header
+    test: headers.https.any.html
+  - subtest: HeadersInit Headers object form sends every header
+    test: headers.https.any.html
+  - subtest: HeadersInit sequence with an empty inner sequence throws TypeError
+    test: headers.https.any.html
+  - subtest: HeadersInit sequence with one inner element throws TypeError
+    test: headers.https.any.html
+  - subtest: HeadersInit sequence with three inner elements throws TypeError
+    test: headers.https.any.html
+  - subtest: responseHeaders is immutable
+    test: headers.https.any.serviceworker.html
+  - subtest: Invalid header name throws TypeError
+    test: headers.https.any.serviceworker.html
+  - subtest: Header value containing CR/LF throws TypeError
+    test: headers.https.any.serviceworker.html
+  - subtest: HeadersInit sequence-of-sequences form sends every header
+    test: headers.https.any.serviceworker.html
+  - subtest: HeadersInit Headers object form sends every header
+    test: headers.https.any.serviceworker.html
+  - subtest: HeadersInit sequence with an empty inner sequence throws TypeError
+    test: headers.https.any.serviceworker.html
+  - subtest: HeadersInit sequence with one inner element throws TypeError
+    test: headers.https.any.serviceworker.html
+  - subtest: HeadersInit sequence with three inner elements throws TypeError
+    test: headers.https.any.serviceworker.html
+  - subtest: responseHeaders is immutable
+    test: headers.https.any.worker.html
+  - subtest: Invalid header name throws TypeError
+    test: headers.https.any.worker.html
+  - subtest: Header value containing CR/LF throws TypeError
+    test: headers.https.any.worker.html
+  - subtest: HeadersInit sequence-of-sequences form sends every header
+    test: headers.https.any.worker.html
+  - subtest: HeadersInit Headers object form sends every header
+    test: headers.https.any.worker.html
+  - subtest: HeadersInit sequence with an empty inner sequence throws TypeError
+    test: headers.https.any.worker.html
+  - subtest: HeadersInit sequence with one inner element throws TypeError
+    test: headers.https.any.worker.html
+  - subtest: HeadersInit sequence with three inner elements throws TypeError
+    test: headers.https.any.worker.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2068586
