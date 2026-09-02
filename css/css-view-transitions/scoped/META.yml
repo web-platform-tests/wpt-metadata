@@ -113,3 +113,13 @@ links:
   - subtest: A view-transition participant is not a valid target for hit testing
     test: hit-testing.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=2064947
+- product: firefox
+  results:
+  - subtest: startViewTransition on non-atomic inline (span) rejects ready with InvalidStateError
+    test: element-scoped-containment-invalid-state.html
+  - subtest: 'startViewTransition on display: contents rejects ready with InvalidStateError'
+    test: element-scoped-containment-invalid-state.html
+  - subtest: Element-scoped view transition is aborted if style changes to preclude
+      layout containment
+    test: element-scoped-containment-invalid-state.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2068731
