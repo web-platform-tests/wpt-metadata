@@ -715,3 +715,34 @@ links:
   - subtest: HeadersInit sequence with three inner elements throws TypeError
     test: headers.https.any.worker.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=2068586
+- product: firefox
+  results:
+  - subtest: Forbidden request-header names are silently dropped from the headers
+      option
+    test: headers.https.any.serviceworker.html
+  - subtest: Duplicate header names in sequence form are all sent, in order
+    test: headers.https.any.serviceworker.html
+  - subtest: Header names differing only in case are lowercased and both sent
+    test: headers.https.any.serviceworker.html
+  - subtest: Forbidden request-header names are silently dropped from the headers
+      option
+    test: headers.https.any.html
+  - subtest: Duplicate header names in sequence form are all sent, in order
+    test: headers.https.any.html
+  - subtest: Header names differing only in case are lowercased and both sent
+    test: headers.https.any.html
+  - subtest: Forbidden request-header names are silently dropped from the headers
+      option
+    test: headers.https.any.worker.html
+  - subtest: Duplicate header names in sequence form are all sent, in order
+    test: headers.https.any.worker.html
+  - subtest: Header names differing only in case are lowercased and both sent
+    test: headers.https.any.worker.html
+  - subtest: Forbidden request-header names are silently dropped from the headers
+      option
+    test: headers.https.any.sharedworker.html
+  - subtest: Duplicate header names in sequence form are all sent, in order
+    test: headers.https.any.sharedworker.html
+  - subtest: Header names differing only in case are lowercased and both sent
+    test: headers.https.any.sharedworker.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2068894
