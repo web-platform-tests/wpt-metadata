@@ -1,12 +1,33 @@
 links:
-    - product: chrome
-      url: https://bugs.chromium.org/p/chromium/issues/detail?id=1203498
-      results:
-        - test: width-valid.html
-        - test: height-valid.html
-        - test: max-height-valid.html
-        - test: max-width-valid.html
-        - test: min-height-invalid.html
-        - test: min-height-valid.html
-        - test: min-width-invalid.html
-        - test: min-width-valid.html
+- product: chrome
+  results:
+  - test: width-valid.html
+  - test: height-valid.html
+  - test: max-height-valid.html
+  - test: max-width-valid.html
+  - test: min-height-invalid.html
+  - test: min-height-valid.html
+  - test: min-width-invalid.html
+  - test: min-width-valid.html
+  url: https://bugs.chromium.org/p/chromium/issues/detail?id=1203498
+- product: firefox
+  results:
+  - subtest: e.style['size'] = "initial" should set the property value
+    test: size-valid.html
+  - subtest: e.style['size'] = "inherit" should set the property value
+    test: size-valid.html
+  - subtest: e.style['size'] = "revert" should set the property value
+    test: size-valid.html
+  - subtest: e.style['size'] = "revert-layer" should set the property value
+    test: size-valid.html
+  - subtest: e.style['size'] = "unset" should set the property value
+    test: size-valid.html
+  - subtest: e.style['size'] = "640px 480px" should set the property value
+    test: size-valid.html
+  - subtest: e.style['size'] = "8.5in 11in" should set the property value
+    test: size-valid.html
+  - subtest: e.style['size'] = "3in 10in" should set the property value
+    test: size-valid.html
+  - subtest: e.style['size'] = "auto" should set the property value
+    test: size-valid.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2068890
