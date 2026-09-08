@@ -202,3 +202,46 @@ links:
       "isReloadNavigation" with the proper type'
     test: idlharness.https.any.serviceworker.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=2027009
+- product: firefox
+  results:
+  - subtest: 'Request interface: operation textStream()'
+    test: idlharness.https.any.html
+  - subtest: 'Request interface: new Request(''about:blank'') must inherit property
+      "textStream()" with the proper type'
+    test: idlharness.https.any.html
+  - subtest: 'Response interface: operation textStream()'
+    test: idlharness.https.any.html
+  - subtest: 'Response interface: new Response() must inherit property "textStream()"
+      with the proper type'
+    test: idlharness.https.any.html
+  - subtest: 'Request interface: operation textStream()'
+    test: idlharness.https.any.sharedworker.html
+  - subtest: 'Request interface: new Request(''about:blank'') must inherit property
+      "textStream()" with the proper type'
+    test: idlharness.https.any.sharedworker.html
+  - subtest: 'Response interface: operation textStream()'
+    test: idlharness.https.any.sharedworker.html
+  - subtest: 'Response interface: new Response() must inherit property "textStream()"
+      with the proper type'
+    test: idlharness.https.any.sharedworker.html
+  - subtest: 'Request interface: operation textStream()'
+    test: idlharness.https.any.worker.html
+  - subtest: 'Request interface: new Request(''about:blank'') must inherit property
+      "textStream()" with the proper type'
+    test: idlharness.https.any.worker.html
+  - subtest: 'Response interface: operation textStream()'
+    test: idlharness.https.any.worker.html
+  - subtest: 'Response interface: new Response() must inherit property "textStream()"
+      with the proper type'
+    test: idlharness.https.any.worker.html
+  - subtest: 'Request interface: operation textStream()'
+    test: idlharness.https.any.serviceworker.html
+  - subtest: 'Request interface: new Request(''about:blank'') must inherit property
+      "textStream()" with the proper type'
+    test: idlharness.https.any.serviceworker.html
+  - subtest: 'Response interface: operation textStream()'
+    test: idlharness.https.any.serviceworker.html
+  - subtest: 'Response interface: new Response() must inherit property "textStream()"
+      with the proper type'
+    test: idlharness.https.any.serviceworker.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2070144
