@@ -131,3 +131,14 @@ links:
   - subtest: 'Removing a preceding sibling of #target reduces the sibling-index()'
     test: sibling-index-keyframe-palette-mix-dynamic.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=2059514
+- product: firefox
+  results:
+  - subtest: sibling-index() in an if() style() comparison
+    test: sibling-function-if-style-query.html
+  - subtest: sibling-index() inside mod() in an if() style() comparison
+    test: sibling-function-if-style-query.html
+  - subtest: sibling-index() compared against a registered custom property
+    test: sibling-function-if-style-query.html
+  - subtest: sibling-count() in an if() style() comparison
+    test: sibling-function-if-style-query.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2070455
