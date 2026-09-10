@@ -3927,3 +3927,22 @@ links:
   - subtest: Property color value 'color-mix(in hwb, oklch(0.2 0 0), hwb(11 33 44))'
     test: color-computed-powerless.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=2070995
+- product: firefox
+  results:
+  - subtest: Property color value 'hwb(none none none)'
+    test: color-computed-hwb.html
+  - subtest: Property color value 'hwb(none none none / none)'
+    test: color-computed-hwb.html
+  - subtest: Property color value 'hwb(120 none none)'
+    test: color-computed-hwb.html
+  - subtest: Property color value 'hwb(0 200% 100%)'
+    test: color-computed-hwb.html
+  - subtest: Property color value 'hwb(0 100% 200%)'
+    test: color-computed-hwb.html
+  - subtest: Property color value 'hwb(0 150% 50%)'
+    test: color-computed-hwb.html
+  - subtest: Property color value 'hwb(0 50% 150%)'
+    test: color-computed-hwb.html
+  - subtest: Property color value 'hwb(0 180% 120%)'
+    test: color-computed-hwb.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2071093
