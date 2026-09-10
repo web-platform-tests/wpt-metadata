@@ -123,3 +123,29 @@ links:
       layout containment
     test: element-scoped-containment-invalid-state.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=2068731
+- product: firefox
+  results:
+  - subtest: 'Scope with named child becoming display: none during update callback
+      skips transition and rejects ready'
+    test: scope-display-none.html
+  - subtest: 'Scope with named child becoming display: none during animation skips
+      transition'
+    test: scope-display-none.html
+  - subtest: 'Named scope becoming display: none during update callback skips transition
+      and rejects ready'
+    test: scope-display-none.html
+  - subtest: 'Named scope becoming display: none during animation skips transition'
+    test: scope-display-none.html
+  - subtest: startViewTransition without callback on disconnected element immediately
+      skips and rejects ready
+    test: start-view-transition-on-disconnected-element.html
+  - subtest: startViewTransition with callback on disconnected element runs callback,
+      resolves finished, and rejects ready
+    test: start-view-transition-on-disconnected-element.html
+  - subtest: startViewTransition with failing callback on disconnected element rejects
+      finished with callback error
+    test: start-view-transition-on-disconnected-element.html
+  - subtest: startViewTransition on element in disconnected subtree immediately skips
+      and rejects ready
+    test: start-view-transition-on-disconnected-element.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2071100
