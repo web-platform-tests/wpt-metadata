@@ -1,119 +1,125 @@
 links:
-    - product: safari
-      url: https://bugs.webkit.org/show_bug.cgi?id=167729
-      results:
-        - test: list-style-type-string-001a.html
-          status: FAIL
-        - test: list-style-type-string-001b.html
-          status: FAIL
-        - test: list-style-type-string-002.html
-          status: FAIL
-        - test: list-style-type-string-003.html
-          status: FAIL
-        - test: list-style-type-string-005a.html
-          status: FAIL
-        - test: list-style-type-string-005b.html
-          status: FAIL
-        - test: list-style-type-string-006.html
-          status: FAIL
-        - test: list-style-type-string-007.html
-          status: FAIL
-    - product: webkitgtk
-      url: https://bugs.webkit.org/show_bug.cgi?id=167729
-      results:
-        - test: list-style-type-string-001a.html
-          status: FAIL
-        - test: list-style-type-string-001b.html
-          status: FAIL
-        - test: list-style-type-string-002.html
-          status: FAIL
-        - test: list-style-type-string-003.html
-          status: FAIL
-        - test: list-style-type-string-005a.html
-          status: FAIL
-        - test: list-style-type-string-005b.html
-          status: FAIL
-        - test: list-style-type-string-006.html
-          status: FAIL
-        - test: list-style-type-string-007.html
-          status: FAIL
-    - product: chrome
-      url: https://crbug.com/1066577
-      results:
-        - test: li-value-reversed-005.html
-        - test: li-value-reversed-004.html
-        - test: li-value-reversed-003.html
-        - test: counter-reset-reversed-list-item-start.html
-        - test: counter-reset-reversed-list-item.html
-        - test: counter-reset-reversed-not-list-item-start.html
-        - test: counter-reset-reversed-not-list-item.html
-    - product: chrome
-      url: https://crbug.com/1123457
-      results:
-        - test: counter-list-item-2.html
-        - test: counter-list-item.html
-    - product: chrome
-      url: https://crbug.com/995106
-      results:
-        - test: list-style-type-string-005b.html
-        - test: inline-block-list-marker.html
-        - test: inline-block-list.html
-        - test: inline-list.html
-        - test: inline-list-with-table-child.html
-        - test: inline-list-marker.html
-    - product: chrome
-      url: https://crbug.com/1012289
-      results:
-        - test: list-style-type-string-005b.html
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1685800
-      results:
-        - test: list-style-image-zoom-dynamic.html
-    - product: chrome
-      url: https://crbug.com/947844
-      results:
-        - test: list-item-definition.html
-    - product: chrome
-      url: https://crbug.com/1270480
-      results:
-        - test: marker-webkit-text-fill-color.html
-    - product: chrome
-      url: https://crbug.com/1270483
-      results:
-        - test: li-value-counter-reset-001.html
-    - product: safari
-      url: https://bugs.webkit.org/show_bug.cgi?id=237642
-      results:
-        - test: inherit-overwrites.html
-        - test: li-counter-increment-computed-style.html
-    - product: chrome
-      url: https://crbug.com/1330383
-      results:
-        - test: counter-slot-order.html
-        - test: counter-list-item-slot-order.html
-        - test: counter-order-display-contents.html
-        - test: counter-slot-order-scoping.html
-    - product: safari
-      url: https://bugs.webkit.org/show_bug.cgi?id=249918
-      results:
-        - test: list-marker-symbol-bidi.html
-          subtest: Test status
-    - label: interop-2025-webcompat
-      results:
-        - test: list-style-position-001.html
-    - product: chrome
-      url: https://crbug.com/41241289
-      results:
-        - test: list-style-position-001.html
-          subtest: Test status
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1980215
-      results:
-        - test: nested-marker-styling.html
-          subtest: Test status
-    - product: chrome
-      url: https://crbug.com/40110559
-      results:
-        - test: marker-counter.html
-          subtest: Test status
-        - test: marker-quotes.html
+- product: safari
+  results:
+  - status: FAIL
+    test: list-style-type-string-001a.html
+  - status: FAIL
+    test: list-style-type-string-001b.html
+  - status: FAIL
+    test: list-style-type-string-002.html
+  - status: FAIL
+    test: list-style-type-string-003.html
+  - status: FAIL
+    test: list-style-type-string-005a.html
+  - status: FAIL
+    test: list-style-type-string-005b.html
+  - status: FAIL
+    test: list-style-type-string-006.html
+  - status: FAIL
+    test: list-style-type-string-007.html
+  url: https://bugs.webkit.org/show_bug.cgi?id=167729
+- product: webkitgtk
+  results:
+  - status: FAIL
+    test: list-style-type-string-001a.html
+  - status: FAIL
+    test: list-style-type-string-001b.html
+  - status: FAIL
+    test: list-style-type-string-002.html
+  - status: FAIL
+    test: list-style-type-string-003.html
+  - status: FAIL
+    test: list-style-type-string-005a.html
+  - status: FAIL
+    test: list-style-type-string-005b.html
+  - status: FAIL
+    test: list-style-type-string-006.html
+  - status: FAIL
+    test: list-style-type-string-007.html
+  url: https://bugs.webkit.org/show_bug.cgi?id=167729
+- product: chrome
+  results:
+  - test: li-value-reversed-005.html
+  - test: li-value-reversed-004.html
+  - test: li-value-reversed-003.html
+  - test: counter-reset-reversed-list-item-start.html
+  - test: counter-reset-reversed-list-item.html
+  - test: counter-reset-reversed-not-list-item-start.html
+  - test: counter-reset-reversed-not-list-item.html
+  url: https://crbug.com/1066577
+- product: chrome
+  results:
+  - test: counter-list-item-2.html
+  - test: counter-list-item.html
+  url: https://crbug.com/1123457
+- product: chrome
+  results:
+  - test: list-style-type-string-005b.html
+  - test: inline-block-list-marker.html
+  - test: inline-block-list.html
+  - test: inline-list.html
+  - test: inline-list-with-table-child.html
+  - test: inline-list-marker.html
+  url: https://crbug.com/995106
+- product: chrome
+  results:
+  - test: list-style-type-string-005b.html
+  url: https://crbug.com/1012289
+- product: firefox
+  results:
+  - test: list-style-image-zoom-dynamic.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1685800
+- product: chrome
+  results:
+  - test: list-item-definition.html
+  url: https://crbug.com/947844
+- product: chrome
+  results:
+  - test: marker-webkit-text-fill-color.html
+  url: https://crbug.com/1270480
+- product: chrome
+  results:
+  - test: li-value-counter-reset-001.html
+  url: https://crbug.com/1270483
+- product: safari
+  results:
+  - test: inherit-overwrites.html
+  - test: li-counter-increment-computed-style.html
+  url: https://bugs.webkit.org/show_bug.cgi?id=237642
+- product: chrome
+  results:
+  - test: counter-slot-order.html
+  - test: counter-list-item-slot-order.html
+  - test: counter-order-display-contents.html
+  - test: counter-slot-order-scoping.html
+  url: https://crbug.com/1330383
+- product: safari
+  results:
+  - subtest: Test status
+    test: list-marker-symbol-bidi.html
+  url: https://bugs.webkit.org/show_bug.cgi?id=249918
+- label: interop-2025-webcompat
+  results:
+  - test: list-style-position-001.html
+- product: chrome
+  results:
+  - subtest: Test status
+    test: list-style-position-001.html
+  url: https://crbug.com/41241289
+- product: firefox
+  results:
+  - subtest: Test status
+    test: nested-marker-styling.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1980215
+- product: chrome
+  results:
+  - subtest: Test status
+    test: marker-counter.html
+  - test: marker-quotes.html
+  url: https://crbug.com/40110559
+- product: firefox
+  results:
+  - subtest: Transition when an author-defined list-style-type moves to another tree
+      scope
+    test: list-style-type-transition-tree-scope-custom-ident.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2071190
