@@ -1267,3 +1267,14 @@ links:
   - subtest: Check that dynamic-range evaluates to true in the boolean context
     test: dynamic-range.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=2071402
+- product: firefox
+  results:
+  - subtest: 'Should be known: ''(resizable: true)'''
+    test: resizable.tentative.html
+  - subtest: 'Should be known: ''(resizable: false)'''
+    test: resizable.tentative.html
+  - subtest: 'Should be known: ''(resizable)'''
+    test: resizable.tentative.html
+  - subtest: Check that resizable evaluates in the boolean context
+    test: resizable.tentative.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2071526
