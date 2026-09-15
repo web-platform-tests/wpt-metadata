@@ -151,3 +151,19 @@ links:
       must throw TypeError'
     test: idlharness.window.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=2020022
+- product: firefox
+  results:
+  - subtest: ::highlight(\*) computed style is the escaped literal name's rule, merged
+      with the universal base
+    test: custom-highlight-universal-escaped-star.tentative.html
+  - subtest: '"::highlight(*)" should be a valid selector'
+    test: custom-highlight-universal-parsing-and-computed-style.tentative.html
+  - subtest: '"div::highlight(*)" should be a valid selector'
+    test: custom-highlight-universal-parsing-and-computed-style.tentative.html
+  - subtest: '":root::highlight(*)" should be a valid selector'
+    test: custom-highlight-universal-parsing-and-computed-style.tentative.html
+  - subtest: named highlight merges with the universal base on the same element
+    test: custom-highlight-universal-parsing-and-computed-style.tentative.html
+  - subtest: named highlight without its own rule falls back to the universal style
+    test: custom-highlight-universal-parsing-and-computed-style.tentative.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2072138
