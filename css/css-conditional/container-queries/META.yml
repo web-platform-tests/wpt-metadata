@@ -1542,3 +1542,10 @@ links:
   - subtest: vi, vb in container style queries respond to root writing mode change
     test: style-query-registered-custom-root-relative-units-change.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=2059278
+- product: firefox
+  results:
+  - subtest: hsl() hues are powerless when the saturation is zero
+    test: query-style-color-powerless.html
+  - subtest: hwb() hues are powerless when whiteness and blackness sum to 100
+    test: query-style-color-powerless.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2072742
