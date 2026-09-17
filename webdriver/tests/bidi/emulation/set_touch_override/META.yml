@@ -1,0 +1,20 @@
+links:
+- product: firefox
+  results:
+  - subtest: test_isolation[Default user context]
+    test: user_contexts.py
+  - subtest: test_isolation[Custom user context]
+    test: user_contexts.py
+  - subtest: test_frame[Default user context-same_origin]
+    test: user_contexts.py
+  - subtest: test_frame[Default user context-cross_origin]
+    test: user_contexts.py
+  - subtest: test_frame[Custom user context-same_origin]
+    test: user_contexts.py
+  - subtest: test_frame[Custom user context-cross_origin]
+    test: user_contexts.py
+  - subtest: test_overrides_global[Default user context]
+    test: user_contexts.py
+  - subtest: test_overrides_global[Custom user context]
+    test: user_contexts.py
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2073304
