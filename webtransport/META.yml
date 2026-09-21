@@ -746,3 +746,182 @@ links:
   - subtest: Header names differing only in case are lowercased and both sent
     test: headers.https.any.sharedworker.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=2068894
+- product: firefox
+  results:
+  - subtest: 'WebTransportDatagramDuplexStream interface: attribute incomingMaxBufferedDatagrams'
+    test: idlharness.https.sub.any.sharedworker.html
+  - subtest: 'WebTransportDatagramDuplexStream interface: attribute outgoingMaxBufferedDatagrams'
+    test: idlharness.https.sub.any.sharedworker.html
+  - subtest: 'WebTransport interface: operation exportKeyingMaterial(BufferSource,
+      BufferSource, unsigned long)'
+    test: idlharness.https.sub.any.sharedworker.html
+  - subtest: 'WebTransport interface: attribute anticipatedConcurrentIncomingUnidirectionalStreams'
+    test: idlharness.https.sub.any.sharedworker.html
+  - subtest: 'WebTransport interface: attribute anticipatedConcurrentIncomingBidirectionalStreams'
+    test: idlharness.https.sub.any.sharedworker.html
+  - subtest: 'WebTransport interface: attribute responseHeaders'
+    test: idlharness.https.sub.any.sharedworker.html
+  - subtest: 'WebTransport interface: webTransport must inherit property "anticipatedConcurrentIncomingUnidirectionalStreams"
+      with the proper type'
+    test: idlharness.https.sub.any.sharedworker.html
+  - subtest: 'WebTransport interface: webTransport must inherit property "anticipatedConcurrentIncomingBidirectionalStreams"
+      with the proper type'
+    test: idlharness.https.sub.any.sharedworker.html
+  - subtest: 'WebTransport interface: webTransport must inherit property "responseHeaders"
+      with the proper type'
+    test: idlharness.https.sub.any.sharedworker.html
+  - subtest: 'WebTransportSendStream interface: operation getWriter()'
+    test: idlharness.https.sub.any.sharedworker.html
+  - subtest: 'WebTransportWriter interface: existence and properties of interface
+      object'
+    test: idlharness.https.sub.any.sharedworker.html
+  - subtest: WebTransportWriter interface object length
+    test: idlharness.https.sub.any.sharedworker.html
+  - subtest: WebTransportWriter interface object name
+    test: idlharness.https.sub.any.sharedworker.html
+  - subtest: 'WebTransportWriter interface: existence and properties of interface
+      prototype object'
+    test: idlharness.https.sub.any.sharedworker.html
+  - subtest: 'WebTransportWriter interface: existence and properties of interface
+      prototype object''s "constructor" property'
+    test: idlharness.https.sub.any.sharedworker.html
+  - subtest: 'WebTransportWriter interface: existence and properties of interface
+      prototype object''s @@unscopables property'
+    test: idlharness.https.sub.any.sharedworker.html
+  - subtest: 'WebTransportWriter interface: operation atomicWrite(optional any)'
+    test: idlharness.https.sub.any.sharedworker.html
+  - subtest: 'WebTransportWriter interface: operation commit()'
+    test: idlharness.https.sub.any.sharedworker.html
+  - subtest: 'WebTransportDatagramDuplexStream interface: attribute incomingMaxBufferedDatagrams'
+    test: idlharness.https.sub.any.worker.html
+  - subtest: 'WebTransportDatagramDuplexStream interface: attribute outgoingMaxBufferedDatagrams'
+    test: idlharness.https.sub.any.worker.html
+  - subtest: 'WebTransport interface: operation exportKeyingMaterial(BufferSource,
+      BufferSource, unsigned long)'
+    test: idlharness.https.sub.any.worker.html
+  - subtest: 'WebTransport interface: attribute anticipatedConcurrentIncomingUnidirectionalStreams'
+    test: idlharness.https.sub.any.worker.html
+  - subtest: 'WebTransport interface: attribute anticipatedConcurrentIncomingBidirectionalStreams'
+    test: idlharness.https.sub.any.worker.html
+  - subtest: 'WebTransport interface: attribute responseHeaders'
+    test: idlharness.https.sub.any.worker.html
+  - subtest: 'WebTransport interface: webTransport must inherit property "anticipatedConcurrentIncomingUnidirectionalStreams"
+      with the proper type'
+    test: idlharness.https.sub.any.worker.html
+  - subtest: 'WebTransport interface: webTransport must inherit property "anticipatedConcurrentIncomingBidirectionalStreams"
+      with the proper type'
+    test: idlharness.https.sub.any.worker.html
+  - subtest: 'WebTransport interface: webTransport must inherit property "responseHeaders"
+      with the proper type'
+    test: idlharness.https.sub.any.worker.html
+  - subtest: 'WebTransportSendStream interface: operation getWriter()'
+    test: idlharness.https.sub.any.worker.html
+  - subtest: 'WebTransportWriter interface: existence and properties of interface
+      object'
+    test: idlharness.https.sub.any.worker.html
+  - subtest: WebTransportWriter interface object length
+    test: idlharness.https.sub.any.worker.html
+  - subtest: WebTransportWriter interface object name
+    test: idlharness.https.sub.any.worker.html
+  - subtest: 'WebTransportWriter interface: existence and properties of interface
+      prototype object'
+    test: idlharness.https.sub.any.worker.html
+  - subtest: 'WebTransportWriter interface: existence and properties of interface
+      prototype object''s "constructor" property'
+    test: idlharness.https.sub.any.worker.html
+  - subtest: 'WebTransportWriter interface: existence and properties of interface
+      prototype object''s @@unscopables property'
+    test: idlharness.https.sub.any.worker.html
+  - subtest: 'WebTransportWriter interface: operation atomicWrite(optional any)'
+    test: idlharness.https.sub.any.worker.html
+  - subtest: 'WebTransportWriter interface: operation commit()'
+    test: idlharness.https.sub.any.worker.html
+  - subtest: 'WebTransportDatagramDuplexStream interface: attribute incomingMaxBufferedDatagrams'
+    test: idlharness.https.sub.any.html
+  - subtest: 'WebTransportDatagramDuplexStream interface: attribute outgoingMaxBufferedDatagrams'
+    test: idlharness.https.sub.any.html
+  - subtest: 'WebTransport interface: operation exportKeyingMaterial(BufferSource,
+      BufferSource, unsigned long)'
+    test: idlharness.https.sub.any.html
+  - subtest: 'WebTransport interface: attribute anticipatedConcurrentIncomingUnidirectionalStreams'
+    test: idlharness.https.sub.any.html
+  - subtest: 'WebTransport interface: attribute anticipatedConcurrentIncomingBidirectionalStreams'
+    test: idlharness.https.sub.any.html
+  - subtest: 'WebTransport interface: attribute responseHeaders'
+    test: idlharness.https.sub.any.html
+  - subtest: 'WebTransport interface: webTransport must inherit property "anticipatedConcurrentIncomingUnidirectionalStreams"
+      with the proper type'
+    test: idlharness.https.sub.any.html
+  - subtest: 'WebTransport interface: webTransport must inherit property "anticipatedConcurrentIncomingBidirectionalStreams"
+      with the proper type'
+    test: idlharness.https.sub.any.html
+  - subtest: 'WebTransport interface: webTransport must inherit property "responseHeaders"
+      with the proper type'
+    test: idlharness.https.sub.any.html
+  - subtest: 'WebTransportSendStream interface: operation getWriter()'
+    test: idlharness.https.sub.any.html
+  - subtest: 'WebTransportWriter interface: existence and properties of interface
+      object'
+    test: idlharness.https.sub.any.html
+  - subtest: WebTransportWriter interface object length
+    test: idlharness.https.sub.any.html
+  - subtest: WebTransportWriter interface object name
+    test: idlharness.https.sub.any.html
+  - subtest: 'WebTransportWriter interface: existence and properties of interface
+      prototype object'
+    test: idlharness.https.sub.any.html
+  - subtest: 'WebTransportWriter interface: existence and properties of interface
+      prototype object''s "constructor" property'
+    test: idlharness.https.sub.any.html
+  - subtest: 'WebTransportWriter interface: existence and properties of interface
+      prototype object''s @@unscopables property'
+    test: idlharness.https.sub.any.html
+  - subtest: 'WebTransportWriter interface: operation atomicWrite(optional any)'
+    test: idlharness.https.sub.any.html
+  - subtest: 'WebTransportWriter interface: operation commit()'
+    test: idlharness.https.sub.any.html
+  - subtest: 'WebTransportDatagramDuplexStream interface: attribute incomingMaxBufferedDatagrams'
+    test: idlharness.https.sub.any.serviceworker.html
+  - subtest: 'WebTransportDatagramDuplexStream interface: attribute outgoingMaxBufferedDatagrams'
+    test: idlharness.https.sub.any.serviceworker.html
+  - subtest: 'WebTransport interface: operation exportKeyingMaterial(BufferSource,
+      BufferSource, unsigned long)'
+    test: idlharness.https.sub.any.serviceworker.html
+  - subtest: 'WebTransport interface: attribute anticipatedConcurrentIncomingUnidirectionalStreams'
+    test: idlharness.https.sub.any.serviceworker.html
+  - subtest: 'WebTransport interface: attribute anticipatedConcurrentIncomingBidirectionalStreams'
+    test: idlharness.https.sub.any.serviceworker.html
+  - subtest: 'WebTransport interface: attribute responseHeaders'
+    test: idlharness.https.sub.any.serviceworker.html
+  - subtest: 'WebTransport interface: webTransport must inherit property "anticipatedConcurrentIncomingUnidirectionalStreams"
+      with the proper type'
+    test: idlharness.https.sub.any.serviceworker.html
+  - subtest: 'WebTransport interface: webTransport must inherit property "anticipatedConcurrentIncomingBidirectionalStreams"
+      with the proper type'
+    test: idlharness.https.sub.any.serviceworker.html
+  - subtest: 'WebTransport interface: webTransport must inherit property "responseHeaders"
+      with the proper type'
+    test: idlharness.https.sub.any.serviceworker.html
+  - subtest: 'WebTransportSendStream interface: operation getWriter()'
+    test: idlharness.https.sub.any.serviceworker.html
+  - subtest: 'WebTransportWriter interface: existence and properties of interface
+      object'
+    test: idlharness.https.sub.any.serviceworker.html
+  - subtest: WebTransportWriter interface object length
+    test: idlharness.https.sub.any.serviceworker.html
+  - subtest: WebTransportWriter interface object name
+    test: idlharness.https.sub.any.serviceworker.html
+  - subtest: 'WebTransportWriter interface: existence and properties of interface
+      prototype object'
+    test: idlharness.https.sub.any.serviceworker.html
+  - subtest: 'WebTransportWriter interface: existence and properties of interface
+      prototype object''s "constructor" property'
+    test: idlharness.https.sub.any.serviceworker.html
+  - subtest: 'WebTransportWriter interface: existence and properties of interface
+      prototype object''s @@unscopables property'
+    test: idlharness.https.sub.any.serviceworker.html
+  - subtest: 'WebTransportWriter interface: operation atomicWrite(optional any)'
+    test: idlharness.https.sub.any.serviceworker.html
+  - subtest: 'WebTransportWriter interface: operation commit()'
+    test: idlharness.https.sub.any.serviceworker.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2074135
