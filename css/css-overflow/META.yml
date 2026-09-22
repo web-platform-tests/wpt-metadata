@@ -536,3 +536,13 @@ links:
       angle (no railing to Y)'
     test: scroll-axis-lock-none-touch.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=2071681
+- product: firefox
+  results:
+  - test: scroll-axis-lock-dynamic-change.html
+  - subtest: Dynamically setting to scroll-axis-lock between none and auto values
+      works for touch scroll.
+    test: scroll-axis-lock-dynamic-change.html
+  - subtest: Dynamically setting to scroll-axis-lock between none and auto values
+      works for wheel scroll.
+    test: scroll-axis-lock-dynamic-change.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2074492
