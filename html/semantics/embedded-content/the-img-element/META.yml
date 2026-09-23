@@ -66,3 +66,18 @@ links:
     - url: https://crbug.com/1357609
       results:
         - test: image-loading-lazy-zero-intersection-area.html
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=2074981
+      results:
+        - test: width-height-attribute-parsing.html
+          subtest: width and height attribute value "+10"
+        - test: width-height-attribute-parsing.html
+          subtest: width and height attribute value "50%"
+        - test: width-height-attribute-parsing.html
+          subtest: width and height attribute value "1.9"
+        - test: width-height-attribute-parsing.html
+          subtest: width and height attribute value "0.5"
+        - test: width-height-attribute-parsing.html
+          subtest: width and height attribute value "-0"
+        - test: width-height-attribute-parsing.html
+          subtest: width and height attribute value "-0.5"
