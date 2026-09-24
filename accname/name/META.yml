@@ -65,3 +65,14 @@ links:
       results:
         - test: comp_name_from_content.html
           subtest: heading name from content for each child including two nested links using aria-labelledby with nested image
+    - product: firefox
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=2075119
+      results:
+        - test: comp_name_from_pseudo_content_marker.tentative.html
+          subtest: name from ol > listitem with custom ::marker with empty alt text
+        - test: comp_name_from_pseudo_content_marker.tentative.html
+          subtest: name from ol > listitem with custom ::marker with explicit alt text
+        - test: comp_name_from_pseudo_content_marker.tentative.html
+          subtest: name from ul > listitem with custom ::marker with explicit empty alt text
+        - test: comp_name_from_pseudo_content_marker.tentative.html
+          subtest: name from ul > listitem with custom ::marker with explicit alt text
