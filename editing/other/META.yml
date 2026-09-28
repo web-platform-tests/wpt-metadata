@@ -319,3 +319,14 @@ links:
       false, <b>inserted</b>), a[b]c): input.target should be [object HTMLInputElement]'
     test: exec-command-with-text-editor.tentative.html?type=text
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=2026964
+- product: firefox
+  results:
+  - subtest: <textarea> is hidden by "beforeinput" event listener
+    test: edit-in-textcontrol-immediately-after-hidden.tentative.html?editor=textarea&hide-target=editor
+  - subtest: <textarea> is hidden by "beforeinput" event listener
+    test: edit-in-textcontrol-immediately-after-hidden.tentative.html?editor=textarea&hide-target=parent
+  - subtest: <input> is hidden by "beforeinput" event listener
+    test: edit-in-textcontrol-immediately-after-hidden.tentative.html?editor=input&hide-target=parent
+  - subtest: <input> is hidden by "beforeinput" event listener
+    test: edit-in-textcontrol-immediately-after-hidden.tentative.html?editor=input&hide-target=editor
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2076172
