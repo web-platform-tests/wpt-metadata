@@ -1,132 +1,147 @@
 links:
-    - product: chrome
-      url: https://crbug.com/366559
-      results:
-        - test: animateMotion-base.html
-        - test: animateMotion-circle.html
-        - test: animateMotion-ellipse.html
-        - test: animateMotion-line.html
-        - test: animateMotion-rect.html
-    - product: chrome
-      url: https://bugs.chromium.org/p/chromium/issues/detail?id=1148684
-      results:
-        - test: svglength-animation-invalid-value-1.html
-        - test: svglength-animation-invalid-value-2.html
-        - test: svglength-animation-invalid-value-3.html
-    - product: safari
-      url: https://bugs.webkit.org/show_bug.cgi?id=226336
-      results:
-        - test: keysplines-y-limits.html
-    - product: safari
-      url: https://bugs.webkit.org/show_bug.cgi?id=256956
-      results:
-        - test: animate-stop-currentcolor.html
-          subtest: Animating 'stop-color' from 'currentcolor'
-    - product: safari
-      url: https://bugs.webkit.org/show_bug.cgi?id=257907
-      results:
-        - test: animateMotion-from-to-rotate-auto.html
-    - product: safari
-      url: https://bugs.webkit.org/show_bug.cgi?id=264537
-      results:
-        - test: svglength-animation-invalid-value-2.html
-        - test: svglength-animation-invalid-value-3.html
-        - test: svglength-animation-invalid-value-1.html
-    - product: safari
-      url: https://bugs.webkit.org/show_bug.cgi?id=264540
-      results:
-        - test: syncbase-remove-add-while-running.html
-          subtest: Remove/Add syncbase while animation is running
-    - product: safari
-      url: https://bugs.webkit.org/show_bug.cgi?id=264541
-      results:
-        - test: seeking-events-8.html
-        - test: seeking-events-1.html
-        - test: seeking-events-2.html
-        - test: seeking-events-3.html
-        - test: seeking-events-4.html
-        - test: seeking-events-5.html
-        - test: seeking-events-6.html
-        - test: seeking-events-7.html
-    - product: safari
-      url: https://bugs.webkit.org/show_bug.cgi?id=266954
-      results:
-        - test: eventbase-non-svg-element.html
-          subtest: Non-SVGElements are allowed as event-bases
-    - product: safari
-      url: https://bugs.webkit.org/show_bug.cgi?id=98718
-      results:
-        - test: reinserting-svg-into-document.html
-          subtest: Reinserting SVG animation into document should continue the animation
-    - product: safari
-      url: https://bugs.webkit.org/show_bug.cgi?id=272602
-      results:
-        - test: animateMotion-keyPoints-001.html
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1959097
-      results:
-        - test: historical.html
-          subtest: SVGDiscardElement
-    - product: safari
-      url: https://bugs.webkit.org/show_bug.cgi?id=293862
-      results:
-        - test: animate-display-to-none-001.html
-          subtest: Test status
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1984172
-      results:
-        - test: end-of-time-001-crash.html
-          status: CRASH
-        - test: end-of-time-002-crash.html
-          status: CRASH
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1992328
-      results:
-        - test: svglength-additive-by-7.html
-          subtest: This tests by-animations adding to previous underlying values
-        - test: svglength-additive-by-8.html
-          subtest: This tests by-animations adding to previous underlying values
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=2016047
-      results:
-        - test: animate-path-by-animation-accumulate.tentative.html
-          subtest: SVG path 'd' attribute by animation with accumulate='sum'
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=2037748
-      results:
-        - test: animate-path-additive-sum-both-empty-over-base.tentative.html
-          subtest: SVG path 'd' additive animation with both-empty over non-empty base
-        - test: animate-path-by-animation-empty-base.tentative.html
-          subtest: SVG path 'd' by-animation with empty base value
-        - test: animate-path-from-by-animation-both-empty.tentative.html
-          subtest: SVG path 'd' from-by animation with both values empty
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=2045042
-      results:
-        - test: animateMotion-from-to-rotate-auto-no-motion.html
-          subtest: <animateMotion> from/to animation with rotate=auto and no motion
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=2067969
-      results:
-        - test: animateMotion-path-moveto-only.html
-          subtest: path="M 100 100" translates to the initial point of the path
-        - test: animateMotion-path-moveto-only.html
-          subtest: <mpath> referencing d="M 100 100" translates to the initial point of the path
-        - test: animateMotion-path-moveto-only.html
-          subtest: accumulate="sum" on a single-moveto path adds the end of the path per repeat
-        - test: animateMotion-path-moveto-only.html
-          subtest: path="M 200 100" with rotate="auto" uses a 0 degree angle, not the position vector
-        - test: animateMotion-path-zero-length-subpaths.html
-          subtest: path="M 100 100 L 100 100" stays at the initial point, with a 0 degree angle
-        - test: animateMotion-path-zero-length-subpaths.html
-          subtest: path="M 100 100 Z" stays at the initial point, with a 0 degree angle
-    - product: safari
-      url: https://bugs.webkit.org/show_bug.cgi?id=316383
-      results:
-        - test: animate-currentcolor-in-visited-link.html
-          subtest: SMIL animating 'currentcolor' on target within visited link
-    - product: safari
-      url: https://bugs.webkit.org/show_bug.cgi?id=309321
-      results:
-        - test: animate-pathLength.tentative.html
-          subtest: SMIL from-to animation of the 'pathLength' attribute
+- product: chrome
+  url: https://crbug.com/366559
+  results:
+  - test: animateMotion-base.html
+  - test: animateMotion-circle.html
+  - test: animateMotion-ellipse.html
+  - test: animateMotion-line.html
+  - test: animateMotion-rect.html
+- product: chrome
+  url: https://bugs.chromium.org/p/chromium/issues/detail?id=1148684
+  results:
+  - test: svglength-animation-invalid-value-1.html
+  - test: svglength-animation-invalid-value-2.html
+  - test: svglength-animation-invalid-value-3.html
+- product: safari
+  url: https://bugs.webkit.org/show_bug.cgi?id=226336
+  results:
+  - test: keysplines-y-limits.html
+- product: safari
+  url: https://bugs.webkit.org/show_bug.cgi?id=256956
+  results:
+  - test: animate-stop-currentcolor.html
+    subtest: Animating 'stop-color' from 'currentcolor'
+- product: safari
+  url: https://bugs.webkit.org/show_bug.cgi?id=257907
+  results:
+  - test: animateMotion-from-to-rotate-auto.html
+- product: safari
+  url: https://bugs.webkit.org/show_bug.cgi?id=264537
+  results:
+  - test: svglength-animation-invalid-value-2.html
+  - test: svglength-animation-invalid-value-3.html
+  - test: svglength-animation-invalid-value-1.html
+- product: safari
+  url: https://bugs.webkit.org/show_bug.cgi?id=264540
+  results:
+  - test: syncbase-remove-add-while-running.html
+    subtest: Remove/Add syncbase while animation is running
+- product: safari
+  url: https://bugs.webkit.org/show_bug.cgi?id=264541
+  results:
+  - test: seeking-events-8.html
+  - test: seeking-events-1.html
+  - test: seeking-events-2.html
+  - test: seeking-events-3.html
+  - test: seeking-events-4.html
+  - test: seeking-events-5.html
+  - test: seeking-events-6.html
+  - test: seeking-events-7.html
+- product: safari
+  url: https://bugs.webkit.org/show_bug.cgi?id=266954
+  results:
+  - test: eventbase-non-svg-element.html
+    subtest: Non-SVGElements are allowed as event-bases
+- product: safari
+  url: https://bugs.webkit.org/show_bug.cgi?id=98718
+  results:
+  - test: reinserting-svg-into-document.html
+    subtest: Reinserting SVG animation into document should continue the animation
+- product: safari
+  url: https://bugs.webkit.org/show_bug.cgi?id=272602
+  results:
+  - test: animateMotion-keyPoints-001.html
+- product: firefox
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1959097
+  results:
+  - test: historical.html
+    subtest: SVGDiscardElement
+- product: safari
+  url: https://bugs.webkit.org/show_bug.cgi?id=293862
+  results:
+  - test: animate-display-to-none-001.html
+    subtest: Test status
+- product: firefox
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1984172
+  results:
+  - test: end-of-time-001-crash.html
+    status: CRASH
+  - test: end-of-time-002-crash.html
+    status: CRASH
+- product: firefox
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1992328
+  results:
+  - test: svglength-additive-by-7.html
+    subtest: This tests by-animations adding to previous underlying values
+  - test: svglength-additive-by-8.html
+    subtest: This tests by-animations adding to previous underlying values
+- product: firefox
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2016047
+  results:
+  - test: animate-path-by-animation-accumulate.tentative.html
+    subtest: SVG path 'd' attribute by animation with accumulate='sum'
+- product: firefox
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2037748
+  results:
+  - test: animate-path-additive-sum-both-empty-over-base.tentative.html
+    subtest: SVG path 'd' additive animation with both-empty over non-empty base
+  - test: animate-path-by-animation-empty-base.tentative.html
+    subtest: SVG path 'd' by-animation with empty base value
+  - test: animate-path-from-by-animation-both-empty.tentative.html
+    subtest: SVG path 'd' from-by animation with both values empty
+- product: firefox
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2045042
+  results:
+  - test: animateMotion-from-to-rotate-auto-no-motion.html
+    subtest: <animateMotion> from/to animation with rotate=auto and no motion
+- product: firefox
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2067969
+  results:
+  - test: animateMotion-path-moveto-only.html
+    subtest: path="M 100 100" translates to the initial point of the path
+  - test: animateMotion-path-moveto-only.html
+    subtest: <mpath> referencing d="M 100 100" translates to the initial point of
+      the path
+  - test: animateMotion-path-moveto-only.html
+    subtest: accumulate="sum" on a single-moveto path adds the end of the path per
+      repeat
+  - test: animateMotion-path-moveto-only.html
+    subtest: path="M 200 100" with rotate="auto" uses a 0 degree angle, not the position
+      vector
+  - test: animateMotion-path-zero-length-subpaths.html
+    subtest: path="M 100 100 L 100 100" stays at the initial point, with a 0 degree
+      angle
+  - test: animateMotion-path-zero-length-subpaths.html
+    subtest: path="M 100 100 Z" stays at the initial point, with a 0 degree angle
+- product: safari
+  url: https://bugs.webkit.org/show_bug.cgi?id=316383
+  results:
+  - test: animate-currentcolor-in-visited-link.html
+    subtest: SMIL animating 'currentcolor' on target within visited link
+- product: safari
+  url: https://bugs.webkit.org/show_bug.cgi?id=309321
+  results:
+  - test: animate-pathLength.tentative.html
+    subtest: SMIL from-to animation of the 'pathLength' attribute
+- product: safari
+  url: https://bugs.webkit.org/show_bug.cgi?id=324767
+  results:
+  - test: animate-path-from-to-animation-mismatch-same-seg-count.tentative.html
+  - test: animate-path-to-animation-empty-base.tentative.html
+  - test: animate-path-from-by-animation-empty-from.tentative.html
+  - test: animate-path-from-by-animation-mismatch.tentative.html
+  - test: animate-path-from-to-animation-both-empty.tentative.html
+  - test: animate-path-from-to-animation-empty-from.tentative.html
+  - test: animate-path-from-to-animation-empty-to.tentative.html
+  - test: animate-path-from-to-animation-mismatch-diff-seg-counts.tentative.html
