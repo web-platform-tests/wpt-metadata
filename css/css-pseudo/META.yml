@@ -488,3 +488,10 @@ links:
   - subtest: Clicking on dialog's ::backdrop sets pseudoTarget to the CSSPseudoElement
     test: backdrop-pseudo-element-click.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=2071570
+- product: firefox
+  results:
+  - subtest: pseudo() returns null for ::scroll-button(*)
+    test: CSSPseudoElement-scroll-button.html
+  - subtest: Pseudo-elements don't have scroll buttons
+    test: CSSPseudoElement-scroll-button.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2077036
