@@ -749,3 +749,19 @@ links:
   - subtest: '''will-change'' does not support ''scroll-position'''
     test: will-change.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=2064433
+- product: firefox
+  results:
+  - subtest: 'Can set ''position-visibility'' to the ''anchor-valid'' keyword: anchor-valid'
+    test: position-visibility.html
+  - subtest: 'Can set ''position-visibility'' to the ''anchor-visible'' keyword: anchor-visible'
+    test: position-visibility.html
+  - subtest: '''position-visibility'' does not support ''anchor-valid anchor-visible'''
+    test: position-visibility.html
+  - subtest: '''position-visibility'' does not support ''anchor-valid no-overflow'''
+    test: position-visibility.html
+  - subtest: '''position-visibility'' does not support ''anchor-visible no-overflow'''
+    test: position-visibility.html
+  - subtest: '''position-visibility'' does not support ''anchor-valid anchor-visible
+      no-overflow'''
+    test: position-visibility.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2077366
