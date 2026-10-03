@@ -205,3 +205,36 @@ links:
   - subtest: An applied mixin does not affect @apply in a scope that has no mixins
     test: mixin-shared-sheet-no-mixins-in-scope.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=2067972
+- product: firefox
+  results:
+  - subtest: '@layer is dropped within @result (statement)'
+    test: mixin-parsing.html
+  - subtest: '@layer is dropped within @result (block)'
+    test: mixin-parsing.html
+  - subtest: '@layer is dropped within a nested style rule'
+    test: mixin-parsing.html
+  - subtest: '@layer is dropped within @media'
+    test: mixin-parsing.html
+  - subtest: '@layer is dropped within @supports'
+    test: mixin-parsing.html
+  - subtest: '@layer is dropped within @container'
+    test: mixin-parsing.html
+  - subtest: '@layer is dropped within @scope'
+    test: mixin-parsing.html
+  - subtest: '@layer is dropped within a body-level @media'
+    test: mixin-parsing.html
+  - subtest: '@layer is dropped within a body-level @supports'
+    test: mixin-parsing.html
+  - subtest: '@layer is dropped within a body-level @container'
+    test: mixin-parsing.html
+  - subtest: '@mixin and @keyframes are valid within @media'
+    test: mixin-parsing.html
+  - subtest: '@mixin and @keyframes are valid within @container'
+    test: mixin-parsing.html
+  - subtest: '@mixin and @keyframes are valid within @supports'
+    test: mixin-parsing.html
+  - subtest: '@mixin and @keyframes are valid within @navigation'
+    test: mixin-parsing.html
+  - subtest: '@mixin and @keyframes are valid within @layer'
+    test: mixin-parsing.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2077635
