@@ -285,3 +285,46 @@ links:
   results:
   - test: calc-size-flex-009.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=2005580
+- product: firefox
+  results:
+  - subtest: 'used width, width: calc-size(max-content, size + 20px)'
+    test: calc-size-out-of-flow.html
+  - subtest: 'used width, width: calc-size(min-content, size * 2)'
+    test: calc-size-out-of-flow.html
+  - subtest: 'used width, width: calc-size(fit-content, size + 10px)'
+    test: calc-size-out-of-flow.html
+  - subtest: "used width, width: calc-size(auto, size / 2); left: 0; right: 0 \u2014\
+      \ an auto basis with both insets set"
+    test: calc-size-out-of-flow.html
+  - subtest: "used width, width: calc-size(max-content, 30%) \u2014 a percentage resolves\
+      \ against the containing block"
+    test: calc-size-out-of-flow.html
+  - subtest: 'used width, minWidth: calc-size(max-content, size + 30px)'
+    test: calc-size-out-of-flow.html
+  - subtest: 'used width, width: 300px; maxWidth: calc-size(max-content, size + 20px)'
+    test: calc-size-out-of-flow.html
+  - subtest: "used width, width: calc-size(calc-size(min-content, size * 2), size\
+      \ + 5px) \u2014 nested: the outer size is the inner result"
+    test: calc-size-out-of-flow.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2077965
+- product: firefox
+  results:
+  - subtest: "used width, width: calc-size(max-content, 90px) \u2014 calculation never\
+      \ mentions size"
+    test: calc-size-replaced-element.html
+  - subtest: "shrink-to-fit parent, width: calc-size(max-content, 90px) \u2014 calculation\
+      \ never mentions size"
+    test: calc-size-replaced-element.html
+  - subtest: 'used height, height: calc-size(auto, size * 2)'
+    test: calc-size-replaced-element.html
+  - subtest: 'width from the aspect ratio, height: calc-size(auto, size * 2)'
+    test: calc-size-replaced-element.html
+  - subtest: 'used height, height: calc-size(max-content, size / 2)'
+    test: calc-size-replaced-element.html
+  - subtest: 'width from the aspect ratio, height: calc-size(max-content, size / 2)'
+    test: calc-size-replaced-element.html
+  - subtest: 'used height, height: calc-size(min-content, size + 10px)'
+    test: calc-size-replaced-element.html
+  - subtest: 'width from the aspect ratio, height: calc-size(min-content, size + 10px)'
+    test: calc-size-replaced-element.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2077968
