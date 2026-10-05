@@ -193,3 +193,45 @@ links:
       momentum fling
     test: scroll-snap-type-pair-007.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=2074463
+- product: firefox
+  results:
+  - subtest: 'Single-axis scroll container with overflow-y: clip propagates vertical
+      snap area to outer scroller'
+    test: single-axis-001.html
+  - subtest: 'Single-axis scroll container with overflow-x: clip propagates horizontal
+      snap area to outer scroller'
+    test: single-axis-001.html
+  - subtest: 'Single-axis scroll container with overflow-y: clip propagates column
+      pseudo element vertical snap area to outer scroller'
+    test: single-axis-003.html
+  - subtest: 'Single-axis scroll container with overflow-y: clip propagates vertical
+      snap area to outer scroller (vertical-lr)'
+    test: single-axis-004.html
+  - subtest: 'Single-axis scroll container with overflow-x: clip propagates horizontal
+      snap area to outer scroller (vertical-lr)'
+    test: single-axis-004.html
+  - subtest: 'Single-axis scroll container with overflow-y: clip propagates vertical
+      snap area to outer scroller (vertical-rl)'
+    test: single-axis-005.html
+  - subtest: 'Single-axis scroll container with overflow-x: clip propagates horizontal
+      snap area to outer scroller (vertical-rl)'
+    test: single-axis-005.html
+  - subtest: 'Single-axis scroll container with overflow-y: clip propagates vertical
+      snap area to outer scroller (sideways-rl RTL)'
+    test: single-axis-006.html
+  - subtest: 'Single-axis scroll container with overflow-x: clip propagates horizontal
+      snap area to outer scroller (sideways-rl RTL)'
+    test: single-axis-006.html
+  - subtest: Single-axis scroll container propagates snap area preserving DOM order
+      for same-position snap areas
+    test: single-axis-007.html
+  - subtest: 'Single-axis scroll container with overflow-y: clip propagates vertical
+      snap area using inner writing mode'
+    test: single-axis-008.html
+  - subtest: 'Single-axis scroll container with overflow-x: clip propagates horizontal
+      snap area using inner writing mode'
+    test: single-axis-008.html
+  - subtest: Outer scroller re-snaps to its previous y-axis snap target through a
+      single-axis scroller only while that snap area remains
+    test: single-axis-009.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2077026
