@@ -925,3 +925,166 @@ links:
   - subtest: 'WebTransportWriter interface: operation commit()'
     test: idlharness.https.sub.any.serviceworker.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=2074135
+- product: firefox
+  results:
+  - subtest: Anticipated incoming stream hints are null when omitted
+    test: anticipated-concurrent-incoming-streams.https.any.worker.html
+  - subtest: Anticipated incoming stream hints are null when explicitly null
+    test: anticipated-concurrent-incoming-streams.https.any.worker.html
+  - subtest: Constructor reflects stream hints 99/101
+    test: anticipated-concurrent-incoming-streams.https.any.worker.html
+  - subtest: Constructor reflects stream hints 0/65535
+    test: anticipated-concurrent-incoming-streams.https.any.worker.html
+  - subtest: Constructor reflects stream hints 65535/0
+    test: anticipated-concurrent-incoming-streams.https.any.worker.html
+  - subtest: WebTransport constructor rejects anticipatedConcurrentIncomingUnidirectionalStreams
+      value -1
+    test: anticipated-concurrent-incoming-streams.https.any.worker.html
+  - subtest: WebTransport constructor rejects anticipatedConcurrentIncomingUnidirectionalStreams
+      value 65536
+    test: anticipated-concurrent-incoming-streams.https.any.worker.html
+  - subtest: WebTransport constructor rejects anticipatedConcurrentIncomingUnidirectionalStreams
+      value Infinity
+    test: anticipated-concurrent-incoming-streams.https.any.worker.html
+  - subtest: WebTransport constructor rejects anticipatedConcurrentIncomingUnidirectionalStreams
+      value -Infinity
+    test: anticipated-concurrent-incoming-streams.https.any.worker.html
+  - subtest: WebTransport constructor rejects anticipatedConcurrentIncomingUnidirectionalStreams
+      value NaN
+    test: anticipated-concurrent-incoming-streams.https.any.worker.html
+  - subtest: WebTransport constructor rejects anticipatedConcurrentIncomingBidirectionalStreams
+      value -1
+    test: anticipated-concurrent-incoming-streams.https.any.worker.html
+  - subtest: WebTransport constructor rejects anticipatedConcurrentIncomingBidirectionalStreams
+      value 65536
+    test: anticipated-concurrent-incoming-streams.https.any.worker.html
+  - subtest: WebTransport constructor rejects anticipatedConcurrentIncomingBidirectionalStreams
+      value Infinity
+    test: anticipated-concurrent-incoming-streams.https.any.worker.html
+  - subtest: WebTransport constructor rejects anticipatedConcurrentIncomingBidirectionalStreams
+      value -Infinity
+    test: anticipated-concurrent-incoming-streams.https.any.worker.html
+  - subtest: WebTransport constructor rejects anticipatedConcurrentIncomingBidirectionalStreams
+      value NaN
+    test: anticipated-concurrent-incoming-streams.https.any.worker.html
+  - subtest: Anticipated incoming stream hints are null when omitted
+    test: anticipated-concurrent-incoming-streams.https.any.serviceworker.html
+  - subtest: Anticipated incoming stream hints are null when explicitly null
+    test: anticipated-concurrent-incoming-streams.https.any.serviceworker.html
+  - subtest: Constructor reflects stream hints 99/101
+    test: anticipated-concurrent-incoming-streams.https.any.serviceworker.html
+  - subtest: Constructor reflects stream hints 0/65535
+    test: anticipated-concurrent-incoming-streams.https.any.serviceworker.html
+  - subtest: Constructor reflects stream hints 65535/0
+    test: anticipated-concurrent-incoming-streams.https.any.serviceworker.html
+  - subtest: WebTransport constructor rejects anticipatedConcurrentIncomingUnidirectionalStreams
+      value -1
+    test: anticipated-concurrent-incoming-streams.https.any.serviceworker.html
+  - subtest: WebTransport constructor rejects anticipatedConcurrentIncomingUnidirectionalStreams
+      value 65536
+    test: anticipated-concurrent-incoming-streams.https.any.serviceworker.html
+  - subtest: WebTransport constructor rejects anticipatedConcurrentIncomingUnidirectionalStreams
+      value Infinity
+    test: anticipated-concurrent-incoming-streams.https.any.serviceworker.html
+  - subtest: WebTransport constructor rejects anticipatedConcurrentIncomingUnidirectionalStreams
+      value -Infinity
+    test: anticipated-concurrent-incoming-streams.https.any.serviceworker.html
+  - subtest: WebTransport constructor rejects anticipatedConcurrentIncomingUnidirectionalStreams
+      value NaN
+    test: anticipated-concurrent-incoming-streams.https.any.serviceworker.html
+  - subtest: WebTransport constructor rejects anticipatedConcurrentIncomingBidirectionalStreams
+      value -1
+    test: anticipated-concurrent-incoming-streams.https.any.serviceworker.html
+  - subtest: WebTransport constructor rejects anticipatedConcurrentIncomingBidirectionalStreams
+      value 65536
+    test: anticipated-concurrent-incoming-streams.https.any.serviceworker.html
+  - subtest: WebTransport constructor rejects anticipatedConcurrentIncomingBidirectionalStreams
+      value Infinity
+    test: anticipated-concurrent-incoming-streams.https.any.serviceworker.html
+  - subtest: WebTransport constructor rejects anticipatedConcurrentIncomingBidirectionalStreams
+      value -Infinity
+    test: anticipated-concurrent-incoming-streams.https.any.serviceworker.html
+  - subtest: WebTransport constructor rejects anticipatedConcurrentIncomingBidirectionalStreams
+      value NaN
+    test: anticipated-concurrent-incoming-streams.https.any.serviceworker.html
+  - subtest: Anticipated incoming stream hints are null when omitted
+    test: anticipated-concurrent-incoming-streams.https.any.sharedworker.html
+  - subtest: Anticipated incoming stream hints are null when explicitly null
+    test: anticipated-concurrent-incoming-streams.https.any.sharedworker.html
+  - subtest: Constructor reflects stream hints 99/101
+    test: anticipated-concurrent-incoming-streams.https.any.sharedworker.html
+  - subtest: Constructor reflects stream hints 0/65535
+    test: anticipated-concurrent-incoming-streams.https.any.sharedworker.html
+  - subtest: Constructor reflects stream hints 65535/0
+    test: anticipated-concurrent-incoming-streams.https.any.sharedworker.html
+  - subtest: WebTransport constructor rejects anticipatedConcurrentIncomingUnidirectionalStreams
+      value -1
+    test: anticipated-concurrent-incoming-streams.https.any.sharedworker.html
+  - subtest: WebTransport constructor rejects anticipatedConcurrentIncomingUnidirectionalStreams
+      value 65536
+    test: anticipated-concurrent-incoming-streams.https.any.sharedworker.html
+  - subtest: WebTransport constructor rejects anticipatedConcurrentIncomingUnidirectionalStreams
+      value Infinity
+    test: anticipated-concurrent-incoming-streams.https.any.sharedworker.html
+  - subtest: WebTransport constructor rejects anticipatedConcurrentIncomingUnidirectionalStreams
+      value -Infinity
+    test: anticipated-concurrent-incoming-streams.https.any.sharedworker.html
+  - subtest: WebTransport constructor rejects anticipatedConcurrentIncomingUnidirectionalStreams
+      value NaN
+    test: anticipated-concurrent-incoming-streams.https.any.sharedworker.html
+  - subtest: WebTransport constructor rejects anticipatedConcurrentIncomingBidirectionalStreams
+      value -1
+    test: anticipated-concurrent-incoming-streams.https.any.sharedworker.html
+  - subtest: WebTransport constructor rejects anticipatedConcurrentIncomingBidirectionalStreams
+      value 65536
+    test: anticipated-concurrent-incoming-streams.https.any.sharedworker.html
+  - subtest: WebTransport constructor rejects anticipatedConcurrentIncomingBidirectionalStreams
+      value Infinity
+    test: anticipated-concurrent-incoming-streams.https.any.sharedworker.html
+  - subtest: WebTransport constructor rejects anticipatedConcurrentIncomingBidirectionalStreams
+      value -Infinity
+    test: anticipated-concurrent-incoming-streams.https.any.sharedworker.html
+  - subtest: WebTransport constructor rejects anticipatedConcurrentIncomingBidirectionalStreams
+      value NaN
+    test: anticipated-concurrent-incoming-streams.https.any.sharedworker.html
+  - subtest: Anticipated incoming stream hints are null when omitted
+    test: anticipated-concurrent-incoming-streams.https.any.html
+  - subtest: Anticipated incoming stream hints are null when explicitly null
+    test: anticipated-concurrent-incoming-streams.https.any.html
+  - subtest: Constructor reflects stream hints 99/101
+    test: anticipated-concurrent-incoming-streams.https.any.html
+  - subtest: Constructor reflects stream hints 0/65535
+    test: anticipated-concurrent-incoming-streams.https.any.html
+  - subtest: Constructor reflects stream hints 65535/0
+    test: anticipated-concurrent-incoming-streams.https.any.html
+  - subtest: WebTransport constructor rejects anticipatedConcurrentIncomingUnidirectionalStreams
+      value -1
+    test: anticipated-concurrent-incoming-streams.https.any.html
+  - subtest: WebTransport constructor rejects anticipatedConcurrentIncomingUnidirectionalStreams
+      value 65536
+    test: anticipated-concurrent-incoming-streams.https.any.html
+  - subtest: WebTransport constructor rejects anticipatedConcurrentIncomingUnidirectionalStreams
+      value Infinity
+    test: anticipated-concurrent-incoming-streams.https.any.html
+  - subtest: WebTransport constructor rejects anticipatedConcurrentIncomingUnidirectionalStreams
+      value -Infinity
+    test: anticipated-concurrent-incoming-streams.https.any.html
+  - subtest: WebTransport constructor rejects anticipatedConcurrentIncomingUnidirectionalStreams
+      value NaN
+    test: anticipated-concurrent-incoming-streams.https.any.html
+  - subtest: WebTransport constructor rejects anticipatedConcurrentIncomingBidirectionalStreams
+      value -1
+    test: anticipated-concurrent-incoming-streams.https.any.html
+  - subtest: WebTransport constructor rejects anticipatedConcurrentIncomingBidirectionalStreams
+      value 65536
+    test: anticipated-concurrent-incoming-streams.https.any.html
+  - subtest: WebTransport constructor rejects anticipatedConcurrentIncomingBidirectionalStreams
+      value Infinity
+    test: anticipated-concurrent-incoming-streams.https.any.html
+  - subtest: WebTransport constructor rejects anticipatedConcurrentIncomingBidirectionalStreams
+      value -Infinity
+    test: anticipated-concurrent-incoming-streams.https.any.html
+  - subtest: WebTransport constructor rejects anticipatedConcurrentIncomingBidirectionalStreams
+      value NaN
+    test: anticipated-concurrent-incoming-streams.https.any.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2076568
