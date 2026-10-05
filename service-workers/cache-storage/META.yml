@@ -3,12 +3,29 @@ links:
       url: https://crbug.com/847357
       results:
         - test: cache-keys-attributes-for-service-worker.https.html
-    - url: https://issues.chromium.org/issues/41340002
+    - product: chrome
+      url: https://issues.chromium.org/issues/41340002
       results:
+        - test: cache-matchAll.https.any.worker.html
+        - test: cache-add.https.any.html
+        - test: cache-add.https.any.worker.html
         - test: cache-keys.https.any.serviceworker.html
+        - test: cache-matchAll.https.any.serviceworker.html
+        - test: cache-add.https.any.serviceworker.html
+        - test: cache-keys.https.any.html
         - test: cache-keys.https.any.sharedworker.html
         - test: cache-keys.https.any.worker.html
-        - test: cache-matchAll.https.any.serviceworker.html
-        - test: cache-matchAll.https.any.sharedworker.html
+        - test: cache-matchAll.https.any.html
+    - product: edge
+      url: https://issues.chromium.org/issues/41340002
+      results:
         - test: cache-matchAll.https.any.worker.html
+        - test: cache-add.https.any.sharedworker.html
+        - test: cache-matchAll.https.any.sharedworker.html
+        - test: cache-add.https.any.html
+        - test: cache-keys.https.any.serviceworker.html
+        - test: cache-add.https.any.serviceworker.html
         - test: cache-keys.https.any.html
+        - test: cache-keys.https.any.sharedworker.html
+        - test: cache-keys.https.any.worker.html
+        - test: cache-matchAll.https.any.html
