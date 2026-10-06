@@ -768,3 +768,10 @@ links:
   - subtest: '@function --foo(--x: --bar(1px, 2px)) is valid'
     test: at-function-parsing.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=2068163
+- product: firefox
+  results:
+  - subtest: :host resolves nested references of an outer-scope function
+    test: function-shadow.html
+  - subtest: :host resolves local var referencing nested function of outer-scope function
+    test: function-shadow.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2078577
