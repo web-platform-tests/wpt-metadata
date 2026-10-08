@@ -32,3 +32,14 @@ links:
   - subtest: em in an untyped result
     test: function-relative-units.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=2068039
+- product: firefox
+  results:
+  - subtest: em in argument uses the property calling context
+    test: function-property-context.html
+  - subtest: em in default uses the property calling context
+    test: function-property-context.html
+  - subtest: em in local uses the property calling context
+    test: function-property-context.html
+  - subtest: em in result uses the property calling context
+    test: function-property-context.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2079757
