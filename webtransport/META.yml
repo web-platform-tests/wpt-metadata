@@ -1088,3 +1088,42 @@ links:
       value NaN
     test: anticipated-concurrent-incoming-streams.https.any.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=2076568
+- product: firefox
+  results:
+  - test: export-keying-material.https.any.html
+  - subtest: exportKeyingMaterial returns the requested number of bytes
+    test: export-keying-material.https.any.html
+  - subtest: exportKeyingMaterial rejects a zero output length
+    test: export-keying-material.https.any.html
+  - subtest: exportKeyingMaterial rejects an output length over 4096 bytes
+    test: export-keying-material.https.any.html
+  - subtest: exportKeyingMaterial requires all three arguments
+    test: export-keying-material.https.any.html
+  - test: export-keying-material.https.any.serviceworker.html
+  - subtest: exportKeyingMaterial returns the requested number of bytes
+    test: export-keying-material.https.any.serviceworker.html
+  - subtest: exportKeyingMaterial rejects a zero output length
+    test: export-keying-material.https.any.serviceworker.html
+  - subtest: exportKeyingMaterial rejects an output length over 4096 bytes
+    test: export-keying-material.https.any.serviceworker.html
+  - subtest: exportKeyingMaterial requires all three arguments
+    test: export-keying-material.https.any.serviceworker.html
+  - test: export-keying-material.https.any.sharedworker.html
+  - subtest: exportKeyingMaterial returns the requested number of bytes
+    test: export-keying-material.https.any.sharedworker.html
+  - subtest: exportKeyingMaterial rejects a zero output length
+    test: export-keying-material.https.any.sharedworker.html
+  - subtest: exportKeyingMaterial rejects an output length over 4096 bytes
+    test: export-keying-material.https.any.sharedworker.html
+  - subtest: exportKeyingMaterial requires all three arguments
+    test: export-keying-material.https.any.sharedworker.html
+  - test: export-keying-material.https.any.worker.html
+  - subtest: exportKeyingMaterial returns the requested number of bytes
+    test: export-keying-material.https.any.worker.html
+  - subtest: exportKeyingMaterial rejects a zero output length
+    test: export-keying-material.https.any.worker.html
+  - subtest: exportKeyingMaterial rejects an output length over 4096 bytes
+    test: export-keying-material.https.any.worker.html
+  - subtest: exportKeyingMaterial requires all three arguments
+    test: export-keying-material.https.any.worker.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2080606
