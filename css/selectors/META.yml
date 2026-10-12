@@ -591,3 +591,12 @@ links:
   - subtest: User action pseudo-classes on dialog (non-modal)
     test: user-action-pseudo-top-layer.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=2025235
+- product: firefox
+  results:
+  - subtest: :host:has(.inner) matches the shadow host
+    test: featureless-006.html
+  - subtest: :not(:host:has(.nope)) matches the shadow host
+    test: featureless-006.html
+  - subtest: :not(:has(.nope):host) matches the shadow host
+    test: featureless-006.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2080673
