@@ -1,9 +1,68 @@
 links:
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=2081432
-      results:
-        - test: user_contexts.py
-        - test: contexts.py
-        - test: global.py
-        - test: invalid.py
-        - test: text_layout_mode.py
+- product: firefox
+  results:
+  - test: user_contexts.py
+  - test: contexts.py
+  - test: global.py
+  - test: invalid.py
+  - test: text_layout_mode.py
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2081432
+- product: firefox
+  results:
+  - subtest: test_params_contexts_invalid_type[42]
+    test: invalid.py
+  - subtest: test_params_contexts_invalid_type[False]
+    test: invalid.py
+  - subtest: test_params_contexts_invalid_type[None]
+    test: invalid.py
+  - subtest: test_params_contexts_invalid_type[foo]
+    test: invalid.py
+  - subtest: test_params_contexts_invalid_type[value4]
+    test: invalid.py
+  - subtest: test_params_contexts_empty_list
+    test: invalid.py
+  - subtest: test_params_contexts_entry_invalid_type[42]
+    test: invalid.py
+  - subtest: test_params_contexts_entry_invalid_type[False]
+    test: invalid.py
+  - subtest: test_params_contexts_entry_invalid_type[None]
+    test: invalid.py
+  - subtest: test_params_contexts_entry_invalid_type[value3]
+    test: invalid.py
+  - subtest: test_params_contexts_entry_invalid_type[value4]
+    test: invalid.py
+  - subtest: test_params_user_contexts_invalid_type[42]
+    test: invalid.py
+  - subtest: test_params_user_contexts_invalid_type[False]
+    test: invalid.py
+  - subtest: test_params_user_contexts_invalid_type[None]
+    test: invalid.py
+  - subtest: test_params_user_contexts_invalid_type[foo]
+    test: invalid.py
+  - subtest: test_params_user_contexts_invalid_type[value4]
+    test: invalid.py
+  - subtest: test_params_user_contexts_empty_list
+    test: invalid.py
+  - subtest: test_params_user_contexts_entry_invalid_type[42]
+    test: invalid.py
+  - subtest: test_params_user_contexts_entry_invalid_type[False]
+    test: invalid.py
+  - subtest: test_params_user_contexts_entry_invalid_type[None]
+    test: invalid.py
+  - subtest: test_params_user_contexts_entry_invalid_type[value3]
+    test: invalid.py
+  - subtest: test_params_user_contexts_entry_invalid_type[value4]
+    test: invalid.py
+  - subtest: test_params_text_layout_mode_missing
+    test: invalid.py
+  - subtest: test_params_text_layout_mode_invalid_type[42]
+    test: invalid.py
+  - subtest: test_params_text_layout_mode_invalid_type[False]
+    test: invalid.py
+  - subtest: test_params_text_layout_mode_invalid_type[value2]
+    test: invalid.py
+  - subtest: test_params_text_layout_mode_invalid_type[value3]
+    test: invalid.py
+  - subtest: test_params_text_layout_mode_invalid_value
+    test: invalid.py
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2081645
