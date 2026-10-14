@@ -3356,6 +3356,10 @@ links:
     - product: chrome
       url: https://crbug.com/573314321
       results:
+        - test: round-function.html
+          subtest: round(infinity, NaN) should be used-value-equivalent to calc(NaN)
+        - test: round-function.html
+          subtest: calc(-1 * round(infinity, NaN)) should be used-value-equivalent to calc(NaN)
         - test: hypot-pow-sqrt-computed.html
           subtest: pow(-1, infinity) should be used-value-equivalent to calc(NaN)
         - test: hypot-pow-sqrt-computed.html
