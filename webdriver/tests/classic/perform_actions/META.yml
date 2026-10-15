@@ -71,3 +71,18 @@ links:
   - subtest: test_move_to_position_in_viewport[default value]
     test: pointer_mouse.py
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=2073305
+- product: firefox
+  results:
+  - subtest: test_pointer_action_common_properties_dimensions_valid[width-pointerDown]
+    test: perform.py
+  - subtest: test_pointer_action_common_properties_dimensions_valid[width-pointerMove]
+    test: perform.py
+  - subtest: test_pointer_action_common_properties_dimensions_valid[width-pointerUp]
+    test: perform.py
+  - subtest: test_pointer_action_common_properties_dimensions_valid[height-pointerDown]
+    test: perform.py
+  - subtest: test_pointer_action_common_properties_dimensions_valid[height-pointerMove]
+    test: perform.py
+  - subtest: test_pointer_action_common_properties_dimensions_valid[height-pointerUp]
+    test: perform.py
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2082238
