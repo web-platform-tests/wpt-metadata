@@ -28,3 +28,14 @@ links:
   - subtest: '!important declaration is omitted'
     test: private-cssom-serialization.tentative.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=2068926
+- product: firefox
+  results:
+  - subtest: Trailing whitespace is omitted
+    test: private-cssom-serialization.tentative.html
+  - subtest: A variable without a value is omitted
+    test: private-cssom-serialization.tentative.html
+  - subtest: A typed variable without a value is omitted
+    test: private-cssom-serialization.tentative.html
+  - subtest: Shared stylesheets and detached rules preserve authored private names
+    test: private-shared-stylesheet.tentative.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2082700
