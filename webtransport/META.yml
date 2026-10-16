@@ -1127,3 +1127,38 @@ links:
   - subtest: exportKeyingMaterial requires all three arguments
     test: export-keying-material.https.any.worker.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=2080606
+- product: firefox
+  results:
+  - subtest: getStats() reports finalized incoming unidirectional stream counters
+    test: receive-stream-stats.https.any.worker.html
+  - subtest: getStats() reports finalized incoming bidirectional stream counters
+    test: receive-stream-stats.https.any.worker.html
+  - subtest: getStats() reports finalized client-initiated bidirectional stream counters
+    test: receive-stream-stats.https.any.worker.html
+  - subtest: getStats() preserves partial BYOB read counters after cancellation
+    test: receive-stream-stats.https.any.worker.html
+  - subtest: getStats() reports finalized incoming unidirectional stream counters
+    test: receive-stream-stats.https.any.serviceworker.html
+  - subtest: getStats() reports finalized incoming bidirectional stream counters
+    test: receive-stream-stats.https.any.serviceworker.html
+  - subtest: getStats() reports finalized client-initiated bidirectional stream counters
+    test: receive-stream-stats.https.any.serviceworker.html
+  - subtest: getStats() preserves partial BYOB read counters after cancellation
+    test: receive-stream-stats.https.any.serviceworker.html
+  - subtest: getStats() reports finalized incoming unidirectional stream counters
+    test: receive-stream-stats.https.any.html
+  - subtest: getStats() reports finalized incoming bidirectional stream counters
+    test: receive-stream-stats.https.any.html
+  - subtest: getStats() reports finalized client-initiated bidirectional stream counters
+    test: receive-stream-stats.https.any.html
+  - subtest: getStats() preserves partial BYOB read counters after cancellation
+    test: receive-stream-stats.https.any.html
+  - subtest: getStats() reports finalized incoming unidirectional stream counters
+    test: receive-stream-stats.https.any.sharedworker.html
+  - subtest: getStats() reports finalized incoming bidirectional stream counters
+    test: receive-stream-stats.https.any.sharedworker.html
+  - subtest: getStats() reports finalized client-initiated bidirectional stream counters
+    test: receive-stream-stats.https.any.sharedworker.html
+  - subtest: getStats() preserves partial BYOB read counters after cancellation
+    test: receive-stream-stats.https.any.sharedworker.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2082932
