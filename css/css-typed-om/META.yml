@@ -1040,3 +1040,42 @@ links:
   - subtest: colorSpace should not exist on CSSColorValue
     test: historical.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1979152
+- product: firefox
+  results:
+  - subtest: cqw can be added to px
+    test: container-length-units-type.html
+  - subtest: cqw cannot be added to a number
+    test: container-length-units-type.html
+  - subtest: cqw multiplied by cqw has length^2 type
+    test: container-length-units-type.html
+  - subtest: cqh can be added to px
+    test: container-length-units-type.html
+  - subtest: cqh cannot be added to a number
+    test: container-length-units-type.html
+  - subtest: cqh multiplied by cqh has length^2 type
+    test: container-length-units-type.html
+  - subtest: cqi can be added to px
+    test: container-length-units-type.html
+  - subtest: cqi cannot be added to a number
+    test: container-length-units-type.html
+  - subtest: cqi multiplied by cqi has length^2 type
+    test: container-length-units-type.html
+  - subtest: cqb can be added to px
+    test: container-length-units-type.html
+  - subtest: cqb cannot be added to a number
+    test: container-length-units-type.html
+  - subtest: cqb multiplied by cqb has length^2 type
+    test: container-length-units-type.html
+  - subtest: cqmin can be added to px
+    test: container-length-units-type.html
+  - subtest: cqmin cannot be added to a number
+    test: container-length-units-type.html
+  - subtest: cqmin multiplied by cqmin has length^2 type
+    test: container-length-units-type.html
+  - subtest: cqmax can be added to px
+    test: container-length-units-type.html
+  - subtest: cqmax cannot be added to a number
+    test: container-length-units-type.html
+  - subtest: cqmax multiplied by cqmax has length^2 type
+    test: container-length-units-type.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2083433
