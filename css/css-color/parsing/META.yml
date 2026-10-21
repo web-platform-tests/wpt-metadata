@@ -4046,3 +4046,319 @@ links:
       should set the property value
     test: color-valid-relative-color.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=2076232
+- product: firefox
+  results:
+  - subtest: Property color value 'hsl(from hwb(180 100% 25%) h s l)'
+    test: color-computed-powerless.html
+  - subtest: Property color value 'hsl(from hwb(180 25% 100%) h s l)'
+    test: color-computed-powerless.html
+  - subtest: Property color value 'hsl(from hwb(0 100% 25%) h s l)'
+    test: color-computed-powerless.html
+  - subtest: Property color value 'hsl(from hwb(180 100% 100%) h s l)'
+    test: color-computed-powerless.html
+  - subtest: Property color value 'hsl(from hwb(0 25% 100%) h s l)'
+    test: color-computed-powerless.html
+  - subtest: Property color value 'hsl(from hwb(0 100% 100%) h s l)'
+    test: color-computed-powerless.html
+  - subtest: Property color value 'hsl(from lch(20 0 180) h s l)'
+    test: color-computed-powerless.html
+  - subtest: Property color value 'hsl(from lch(0 0 180) h s l)'
+    test: color-computed-powerless.html
+  - subtest: Property color value 'hsl(from lch(20 0 0) h s l)'
+    test: color-computed-powerless.html
+  - subtest: Property color value 'hsl(from lch(0 0 0) h s l)'
+    test: color-computed-powerless.html
+  - subtest: Property color value 'hsl(from oklch(0.2 0 180) h s l)'
+    test: color-computed-powerless.html
+  - subtest: Property color value 'hsl(from oklch(0 0 180) h s l)'
+    test: color-computed-powerless.html
+  - subtest: Property color value 'hsl(from oklch(0.2 0 0) h s l)'
+    test: color-computed-powerless.html
+  - subtest: Property color value 'hsl(from oklch(0 0 0) h s l)'
+    test: color-computed-powerless.html
+  - subtest: Property color value 'hsl(from rgb(0 0 0) h s l)'
+    test: color-computed-powerless.html
+  - subtest: Property color value 'hsl(from color(display-p3 0 0 0) h s l)'
+    test: color-computed-powerless.html
+  - subtest: Property color value 'hsl(from lab(0 0 0) h s l)'
+    test: color-computed-powerless.html
+  - subtest: Property color value 'hsl(from oklab(0 0 0) h s l)'
+    test: color-computed-powerless.html
+  - subtest: Property color value 'color-mix(in hsl, lch(20 0 180), hsl(11 33 44))'
+    test: color-computed-powerless.html
+  - subtest: Property color value 'color-mix(in hsl, lch(20 0 0), hsl(11 33 44))'
+    test: color-computed-powerless.html
+  - subtest: Property color value 'color-mix(in hsl, hwb(180 100% 25%))'
+    test: color-computed-powerless.html
+  - subtest: Property color value 'color-mix(in hsl, hwb(180 25% 100%))'
+    test: color-computed-powerless.html
+  - subtest: Property color value 'color-mix(in hsl, hwb(0 100% 25%))'
+    test: color-computed-powerless.html
+  - subtest: Property color value 'color-mix(in hsl, hwb(180 100% 100%))'
+    test: color-computed-powerless.html
+  - subtest: Property color value 'color-mix(in hsl, hwb(0 25% 100%))'
+    test: color-computed-powerless.html
+  - subtest: Property color value 'color-mix(in hsl, hwb(0 100% 100%))'
+    test: color-computed-powerless.html
+  - subtest: Property color value 'color-mix(in hsl, lch(20 0 180))'
+    test: color-computed-powerless.html
+  - subtest: Property color value 'color-mix(in hsl, lch(20 0 0))'
+    test: color-computed-powerless.html
+  - subtest: Property color value 'color-mix(in hsl, oklch(0.2 0 180))'
+    test: color-computed-powerless.html
+  - subtest: Property color value 'color-mix(in hsl, oklch(0 0 180))'
+    test: color-computed-powerless.html
+  - subtest: Property color value 'color-mix(in hsl, oklch(0.2 0 0))'
+    test: color-computed-powerless.html
+  - subtest: Property color value 'color-mix(in hsl, oklch(0 0 0))'
+    test: color-computed-powerless.html
+  - subtest: Property color value 'color-mix(in hsl, rgb(0 0 0))'
+    test: color-computed-powerless.html
+  - subtest: Property color value 'color-mix(in hsl, color(display-p3 0 0 0))'
+    test: color-computed-powerless.html
+  - subtest: Property color value 'color-mix(in hsl, oklab(0 0 0))'
+    test: color-computed-powerless.html
+  - subtest: Property color value 'hwb(from hsl(180 0 50%) h w b)'
+    test: color-computed-powerless.html
+  - subtest: Property color value 'hwb(from hsl(180 50% 0) h w b)'
+    test: color-computed-powerless.html
+  - subtest: Property color value 'hwb(from hsl(0 0 50%) h w b)'
+    test: color-computed-powerless.html
+  - subtest: Property color value 'hwb(from hsl(180 0 0) h w b)'
+    test: color-computed-powerless.html
+  - subtest: Property color value 'hwb(from hsl(0 50% 0) h w b)'
+    test: color-computed-powerless.html
+  - subtest: Property color value 'hwb(from hsl(0 0 0) h w b)'
+    test: color-computed-powerless.html
+  - subtest: Property color value 'hwb(from hwb(180 99.999% none) h w b)'
+    test: color-computed-powerless.html
+  - subtest: Property color value 'hwb(from hwb(180 none 99.999%) h w b)'
+    test: color-computed-powerless.html
+  - subtest: Property color value 'hwb(from lch(20 0 180) h w b)'
+    test: color-computed-powerless.html
+  - subtest: Property color value 'hwb(from lch(0 0 180) h w b)'
+    test: color-computed-powerless.html
+  - subtest: Property color value 'hwb(from lch(20 0 0) h w b)'
+    test: color-computed-powerless.html
+  - subtest: Property color value 'hwb(from lch(0 0 0) h w b)'
+    test: color-computed-powerless.html
+  - subtest: Property color value 'hwb(from oklch(0.2 0 180) h w b)'
+    test: color-computed-powerless.html
+  - subtest: Property color value 'hwb(from oklch(0 0 180) h w b)'
+    test: color-computed-powerless.html
+  - subtest: Property color value 'hwb(from oklch(0.2 0 0) h w b)'
+    test: color-computed-powerless.html
+  - subtest: Property color value 'hwb(from oklch(0 0 0) h w b)'
+    test: color-computed-powerless.html
+  - subtest: Property color value 'hwb(from rgb(0 0 0) h w b)'
+    test: color-computed-powerless.html
+  - subtest: Property color value 'hwb(from color(display-p3 0 0 0) h w b)'
+    test: color-computed-powerless.html
+  - subtest: Property color value 'hwb(from lab(0 0 0) h w b)'
+    test: color-computed-powerless.html
+  - subtest: Property color value 'hwb(from oklab(0 0 0) h w b)'
+    test: color-computed-powerless.html
+  - subtest: Property color value 'color-mix(in hwb, lch(20 0 180), hwb(11 33 44))'
+    test: color-computed-powerless.html
+  - subtest: Property color value 'color-mix(in hwb, lch(20 0 0), hwb(11 33 44))'
+    test: color-computed-powerless.html
+  - subtest: Property color value 'color-mix(in hwb, hsl(180 0 50%))'
+    test: color-computed-powerless.html
+  - subtest: Property color value 'color-mix(in hwb, hsl(180 50% 0))'
+    test: color-computed-powerless.html
+  - subtest: Property color value 'color-mix(in hwb, hsl(0 0 50%))'
+    test: color-computed-powerless.html
+  - subtest: Property color value 'color-mix(in hwb, hsl(180 0 0))'
+    test: color-computed-powerless.html
+  - subtest: Property color value 'color-mix(in hwb, hsl(0 50% 0))'
+    test: color-computed-powerless.html
+  - subtest: Property color value 'color-mix(in hwb, hsl(0 0 0))'
+    test: color-computed-powerless.html
+  - subtest: Property color value 'color-mix(in hwb, hwb(180 99.999% none))'
+    test: color-computed-powerless.html
+  - subtest: Property color value 'color-mix(in hwb, hwb(180 none 99.999%))'
+    test: color-computed-powerless.html
+  - subtest: Property color value 'color-mix(in hwb, lch(20 0 180))'
+    test: color-computed-powerless.html
+  - subtest: Property color value 'color-mix(in hwb, lch(0 0 180))'
+    test: color-computed-powerless.html
+  - subtest: Property color value 'color-mix(in hwb, lch(20 0 0))'
+    test: color-computed-powerless.html
+  - subtest: Property color value 'color-mix(in hwb, lch(0 0 0))'
+    test: color-computed-powerless.html
+  - subtest: Property color value 'color-mix(in hwb, oklch(0.2 0 180))'
+    test: color-computed-powerless.html
+  - subtest: Property color value 'color-mix(in hwb, oklch(0 0 180))'
+    test: color-computed-powerless.html
+  - subtest: Property color value 'color-mix(in hwb, oklch(0.2 0 0))'
+    test: color-computed-powerless.html
+  - subtest: Property color value 'color-mix(in hwb, oklch(0 0 0))'
+    test: color-computed-powerless.html
+  - subtest: Property color value 'color-mix(in hwb, rgb(0 0 0))'
+    test: color-computed-powerless.html
+  - subtest: Property color value 'color-mix(in hwb, color(display-p3 0 0 0))'
+    test: color-computed-powerless.html
+  - subtest: Property color value 'color-mix(in hwb, lab(0 0 0))'
+    test: color-computed-powerless.html
+  - subtest: Property color value 'color-mix(in hwb, oklab(0 0 0))'
+    test: color-computed-powerless.html
+  - subtest: Property color value 'lch(from hsl(180 0 50%) l c h)'
+    test: color-computed-powerless.html
+  - subtest: Property color value 'lch(from hsl(180 50% 0) l c h)'
+    test: color-computed-powerless.html
+  - subtest: Property color value 'lch(from hsl(0 0 50%) l c h)'
+    test: color-computed-powerless.html
+  - subtest: Property color value 'lch(from hsl(180 0 0) l c h)'
+    test: color-computed-powerless.html
+  - subtest: Property color value 'lch(from hsl(0 50% 0) l c h)'
+    test: color-computed-powerless.html
+  - subtest: Property color value 'lch(from hsl(0 0 0) l c h)'
+    test: color-computed-powerless.html
+  - subtest: Property color value 'lch(from hsl(180 0.001% 50%) l c h)'
+    test: color-computed-powerless.html
+  - subtest: Property color value 'lch(from hsl(180 0.0011% 50%) l c h)'
+    test: color-computed-powerless.html
+  - subtest: Property color value 'lch(from hsl(180 0.001% 50%) l calc(c * 1000) h)'
+    test: color-computed-powerless.html
+  - subtest: Property color value 'lch(from hsl(180 0.0011% 50%) l calc(c * 1000)
+      h)'
+    test: color-computed-powerless.html
+  - subtest: Property color value 'lch(from hwb(180 100% 25%) l c h)'
+    test: color-computed-powerless.html
+  - subtest: Property color value 'lch(from hwb(180 25% 100%) l c h)'
+    test: color-computed-powerless.html
+  - subtest: Property color value 'lch(from hwb(0 100% 25%) l c h)'
+    test: color-computed-powerless.html
+  - subtest: Property color value 'lch(from hwb(180 100% 100%) l c h)'
+    test: color-computed-powerless.html
+  - subtest: Property color value 'lch(from hwb(0 25% 100%) l c h)'
+    test: color-computed-powerless.html
+  - subtest: Property color value 'lch(from hwb(0 100% 100%) l c h)'
+    test: color-computed-powerless.html
+  - subtest: Property color value 'lch(from hwb(180 99.999% 0%) l c h)'
+    test: color-computed-powerless.html
+  - subtest: Property color value 'lch(from hwb(180 49.999% 50%) l c h)'
+    test: color-computed-powerless.html
+  - subtest: Property color value 'lch(from hwb(180 99.999% 0%) l calc(c * 1000) h)'
+    test: color-computed-powerless.html
+  - subtest: Property color value 'lch(from hwb(180 49.999% 50%) l calc(c * 1000)
+      h)'
+    test: color-computed-powerless.html
+  - subtest: Property color value 'lch(from oklch(0.2 0 180) l c h)'
+    test: color-computed-powerless.html
+  - subtest: Property color value 'lch(from oklch(0 0 180) l c h)'
+    test: color-computed-powerless.html
+  - subtest: Property color value 'lch(from oklch(0.2 0 0) l c h)'
+    test: color-computed-powerless.html
+  - subtest: Property color value 'lch(from oklch(0 0 0) l c h)'
+    test: color-computed-powerless.html
+  - subtest: Property color value 'lch(from oklch(0.2 0.000004 180) l c h)'
+    test: color-computed-powerless.html
+  - subtest: Property color value 'lch(from oklch(0.2 0.0000041 180) l c h)'
+    test: color-computed-powerless.html
+  - subtest: Property color value 'lch(from oklch(0.2 0.000004 180) l calc(c * 1000)
+      h)'
+    test: color-computed-powerless.html
+  - subtest: Property color value 'lch(from oklch(0.2 0.0000041 180) l calc(c * 1000)
+      h)'
+    test: color-computed-powerless.html
+  - subtest: Property color value 'lch(from rgb(0 0 0) l c h)'
+    test: color-computed-powerless.html
+  - subtest: Property color value 'lch(from color(display-p3 0 0 0) l c h)'
+    test: color-computed-powerless.html
+  - subtest: Property color value 'lch(from lab(0 0 0) l c h)'
+    test: color-computed-powerless.html
+  - subtest: Property color value 'lch(from oklab(0 0 0) l c h)'
+    test: color-computed-powerless.html
+  - subtest: Property color value 'lch(from color(display-p3 0.18937027 0.189377662
+      0.189375638) l c h)'
+    test: color-computed-powerless.html
+  - subtest: Property color value 'color-mix(in lch, color(display-p3 0.18937027 0.189377662
+      0.189375638), lch(11 33 44))'
+    test: color-computed-powerless.html
+  - subtest: Property color value 'color-mix(in lch, color(display-p3 0.18937027 0.189377662
+      0.189375638))'
+    test: color-computed-powerless.html
+  - subtest: Property color value 'oklch(from hsl(180 0 50%) l c h)'
+    test: color-computed-powerless.html
+  - subtest: Property color value 'oklch(from hsl(180 50% 0) l c h)'
+    test: color-computed-powerless.html
+  - subtest: Property color value 'oklch(from hsl(0 0 50%) l c h)'
+    test: color-computed-powerless.html
+  - subtest: Property color value 'oklch(from hsl(180 0 0) l c h)'
+    test: color-computed-powerless.html
+  - subtest: Property color value 'oklch(from hsl(0 50% 0) l c h)'
+    test: color-computed-powerless.html
+  - subtest: Property color value 'oklch(from hsl(0 0 0) l c h)'
+    test: color-computed-powerless.html
+  - subtest: Property color value 'oklch(from hsl(180 0.001% 50%) l c h)'
+    test: color-computed-powerless.html
+  - subtest: Property color value 'oklch(from hsl(180 0.0011% 50%) l c h)'
+    test: color-computed-powerless.html
+  - subtest: Property color value 'oklch(from hsl(180 0.001% 50%) l calc(c * 1000)
+      h)'
+    test: color-computed-powerless.html
+  - subtest: Property color value 'oklch(from hsl(180 0.0011% 50%) l calc(c * 1000)
+      h)'
+    test: color-computed-powerless.html
+  - subtest: Property color value 'oklch(from hwb(180 100% 25%) l c h)'
+    test: color-computed-powerless.html
+  - subtest: Property color value 'oklch(from hwb(180 25% 100%) l c h)'
+    test: color-computed-powerless.html
+  - subtest: Property color value 'oklch(from hwb(0 100% 25%) l c h)'
+    test: color-computed-powerless.html
+  - subtest: Property color value 'oklch(from hwb(180 100% 100%) l c h)'
+    test: color-computed-powerless.html
+  - subtest: Property color value 'oklch(from hwb(0 25% 100%) l c h)'
+    test: color-computed-powerless.html
+  - subtest: Property color value 'oklch(from hwb(0 100% 100%) l c h)'
+    test: color-computed-powerless.html
+  - subtest: Property color value 'oklch(from hwb(180 99.999% 0%) l c h)'
+    test: color-computed-powerless.html
+  - subtest: Property color value 'oklch(from hwb(180 99.96% 0%) l c h)'
+    test: color-computed-powerless.html
+  - subtest: Property color value 'oklch(from hwb(180 99.999% 0%) l calc(c * 1000)
+      h)'
+    test: color-computed-powerless.html
+  - subtest: Property color value 'oklch(from hwb(180 99.96% 0%) l calc(c * 1000)
+      h)'
+    test: color-computed-powerless.html
+  - subtest: Property color value 'oklch(from lch(20 0 180) l c h)'
+    test: color-computed-powerless.html
+  - subtest: Property color value 'oklch(from lch(0 0 180) l c h)'
+    test: color-computed-powerless.html
+  - subtest: Property color value 'oklch(from lch(20 0 0) l c h)'
+    test: color-computed-powerless.html
+  - subtest: Property color value 'oklch(from lch(0 0 0) l c h)'
+    test: color-computed-powerless.html
+  - subtest: Property color value 'oklch(from lch(20 0.0015 180) l c h)'
+    test: color-computed-powerless.html
+  - subtest: Property color value 'oklch(from lch(20 0.01 180) l c h)'
+    test: color-computed-powerless.html
+  - subtest: Property color value 'oklch(from lch(20 0.01 180) l calc(c * 1000) h)'
+    test: color-computed-powerless.html
+  - subtest: Property color value 'oklch(from rgb(0 0 0) l c h)'
+    test: color-computed-powerless.html
+  - subtest: Property color value 'oklch(from color(display-p3 0 0 0) l c h)'
+    test: color-computed-powerless.html
+  - subtest: Property color value 'oklch(from lab(0 0 0) l c h)'
+    test: color-computed-powerless.html
+  - subtest: Property color value 'oklch(from oklab(0 0 0) l c h)'
+    test: color-computed-powerless.html
+  - subtest: Property color value 'oklch(from color(display-p3 0.08626827 0.08598627
+      0.08606127) l c h)'
+    test: color-computed-powerless.html
+  - subtest: Property color value 'color-mix(in oklch, hwb(180 99.96% 0%), oklch(0.11
+      0.33 0.44))'
+    test: color-computed-powerless.html
+  - subtest: Property color value 'color-mix(in oklch, lch(20 0.00151 180), oklch(0.11
+      0.33 0.44))'
+    test: color-computed-powerless.html
+  - subtest: Property color value 'color-mix(in oklch, hwb(180 99.96% 0%))'
+    test: color-computed-powerless.html
+  - subtest: Property color value 'color-mix(in oklch, lch(20 0.01 180))'
+    test: color-computed-powerless.html
+  - subtest: Property color value 'color-mix(in oklch, color(display-p3 0.08626827
+      0.08598627 0.08606127))'
+    test: color-computed-powerless.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2084587
