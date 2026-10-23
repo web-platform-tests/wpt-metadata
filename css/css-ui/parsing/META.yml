@@ -208,3 +208,28 @@ links:
       url(\"https://example.com/\")) 5 6, grab" should set the property value
     test: cursor-valid.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=2046326
+- product: firefox
+  results:
+  - subtest: Property caret-color value 'red rgb(0, 255, 0)'
+    test: caret-color-computed.html
+  - subtest: Property caret-color value 'currentcolor red'
+    test: caret-color-computed.html
+  - subtest: Property caret-color value 'rgb(0, 255, 0) auto'
+    test: caret-color-computed.html
+  - subtest: Property caret-color value 'currentcolor currentcolor'
+    test: caret-color-computed.html
+  - subtest: Property caret-color value 'red transparent'
+    test: caret-color-computed.html
+  - subtest: e.style['caret-color'] = "rgba(10, 20, 30, 0.4) auto" should set the
+      property value
+    test: caret-color-valid.html
+  - subtest: e.style['caret-color'] = "currentcolor currentcolor" should set the property
+      value
+    test: caret-color-valid.html
+  - subtest: e.style['caret-color'] = "transparent transparent" should set the property
+      value
+    test: caret-color-valid.html
+  - subtest: e.style['caret-color'] = "currentcolor auto" should set the property
+      value
+    test: caret-color-valid.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2085360
