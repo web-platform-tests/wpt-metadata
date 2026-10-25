@@ -99,3 +99,8 @@ links:
       results:
         - test: svg-root-border-radius.html
           subtest: SVG root with border-radius hit test
+    - product: safari
+      url: https://bugs.webkit.org/show_bug.cgi?id=314616
+      results:
+        - test: text-hittest-002.html
+          subtest: elementFromPoint(...) on <svg:text> with fill=none but fill=black descendants
