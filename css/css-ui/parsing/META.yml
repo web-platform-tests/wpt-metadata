@@ -233,3 +233,11 @@ links:
       value
     test: caret-color-valid.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=2085360
+- product: firefox
+  results:
+  - subtest: e.style['outline'] = "dashed thin" should set the property value
+    test: outline-valid.html
+  - subtest: e.style['outline'] = "3px ridge rgba(10, 20, 30, 0.4)" should set the
+      property value
+    test: outline-valid.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2086466
