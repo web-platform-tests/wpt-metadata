@@ -4362,3 +4362,16 @@ links:
       0.08598627 0.08606127))'
     test: color-computed-powerless.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=2084587
+- product: firefox
+  results:
+  - subtest: Property color value 'color-mix(in hwb, oklch(100% 0 0), blue)'
+    test: color-computed-color-mix-function.html
+  - subtest: Property color value 'rgb(from rgb(none none none) r g b)'
+    test: color-computed-relative-color.html
+  - subtest: Property color value 'rgb(from rgb(none none none / none) r g b / alpha)'
+    test: color-computed-relative-color.html
+  - subtest: Property color value 'rgb(from rgb(20% none 60%) r g b)'
+    test: color-computed-relative-color.html
+  - subtest: Property color value 'rgb(from rgb(20% 40% 60% / none) r g b / alpha)'
+    test: color-computed-relative-color.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2086494
