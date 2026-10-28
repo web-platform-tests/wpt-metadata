@@ -81,3 +81,8 @@ links:
   - subtest: 'Allow origins check: container=parent, origin=same, allow=multiple'
     test: responsive-iframe-allow-origins.html?origin=same,allow=multiple,expect=400
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=2067821
+- product: firefox
+  results:
+  - test: responsive-iframe-navigation.html?origin=same
+  - test: responsive-iframe-navigation.html?origin=cross
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2086367
