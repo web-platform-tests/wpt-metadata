@@ -133,19 +133,19 @@ links:
       longhands
     test: grid-lanes-shorthand-valid.html
   - subtest: Property item-tolerance value 'normal'
-    test: flow-tolerance-computed.html
+    test: fit-tolerance-computed.html
   - subtest: Property item-tolerance value 'infinite'
-    test: flow-tolerance-computed.html
+    test: fit-tolerance-computed.html
   - subtest: Property item-tolerance value '10px'
-    test: flow-tolerance-computed.html
+    test: fit-tolerance-computed.html
   - subtest: Property item-tolerance value '20%'
-    test: flow-tolerance-computed.html
+    test: fit-tolerance-computed.html
   - subtest: Property item-tolerance value 'calc(20% + 10px)'
-    test: flow-tolerance-computed.html
+    test: fit-tolerance-computed.html
   - subtest: Property item-tolerance value 'calc(-0.5em + 10px)'
-    test: flow-tolerance-computed.html
+    test: fit-tolerance-computed.html
   - subtest: Property item-tolerance value 'calc(0.5em + 10px)'
-    test: flow-tolerance-computed.html
+    test: fit-tolerance-computed.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=2001786
 - product: firefox
   results:
@@ -262,23 +262,23 @@ links:
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=2013650
 - product: firefox
   results:
-  - subtest: e.style['flow-tolerance'] = "normal" should set the property value
-    test: flow-tolerance-valid.html
-  - subtest: e.style['flow-tolerance'] = "infinite" should set the property value
-    test: flow-tolerance-valid.html
-  - subtest: e.style['flow-tolerance'] = "initial" should set the property value
-    test: flow-tolerance-valid.html
-  - subtest: e.style['flow-tolerance'] = "0" should set the property value
-    test: flow-tolerance-valid.html
-  - subtest: e.style['flow-tolerance'] = "1px" should set the property value
-    test: flow-tolerance-valid.html
-  - subtest: e.style['flow-tolerance'] = "calc(2em + 3ex)" should set the property
+  - subtest: e.style['fit-tolerance'] = "normal" should set the property value
+    test: fit-tolerance-valid.html
+  - subtest: e.style['fit-tolerance'] = "infinite" should set the property value
+    test: fit-tolerance-valid.html
+  - subtest: e.style['fit-tolerance'] = "initial" should set the property value
+    test: fit-tolerance-valid.html
+  - subtest: e.style['fit-tolerance'] = "0" should set the property value
+    test: fit-tolerance-valid.html
+  - subtest: e.style['fit-tolerance'] = "1px" should set the property value
+    test: fit-tolerance-valid.html
+  - subtest: e.style['fit-tolerance'] = "calc(2em + 3ex)" should set the property
       value
-    test: flow-tolerance-valid.html
-  - subtest: e.style['flow-tolerance'] = "4%" should set the property value
-    test: flow-tolerance-valid.html
-  - subtest: e.style['flow-tolerance'] = "5vmin" should set the property value
-    test: flow-tolerance-valid.html
+    test: fit-tolerance-valid.html
+  - subtest: e.style['fit-tolerance'] = "4%" should set the property value
+    test: fit-tolerance-valid.html
+  - subtest: e.style['fit-tolerance'] = "5vmin" should set the property value
+    test: fit-tolerance-valid.html
   - subtest: e.style['grid-lanes-direction'] = "row" should set the property value
     test: grid-lanes-direction-valid.html
   - subtest: e.style['grid-lanes-direction'] = "row track-reverse" should set the
