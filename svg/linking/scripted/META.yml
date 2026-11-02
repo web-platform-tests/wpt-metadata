@@ -1,37 +1,45 @@
 links:
-    - product: chrome
-      url: https://crbug.com/873988
-      results:
-        - test: a.rel-getter-01.svg
-        - test: rellist-feature-detection.svg
-    - product: chrome
-      url: https://bugs.chromium.org/p/chromium/issues/detail?id=1052202
-      results:
-        - test: href-animate-element.html
-        - test: href-mpath-element.html
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=2005594
-      results:
-        - test: xlink-href-compat.html
-          subtest: XLink 'href' backwards compatibility, IDL href backed by "href" after baseVal setter.
-        - test: xlink-href-compat.html
-          subtest: XLink 'href' backwards compatibility, IDL href reflects "href"; setAttribute(xlink:href) does not override baseVal setter.
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=2083942
-      results:
-        - test: a.target-dynamic-update.html
-          subtest: Clicking the original <a> uses the updated target
-    - product: safari
-      url: https://bugs.webkit.org/show_bug.cgi?id=314728
-      results:
-        - test: a-hyperlinkutils-getter.html
-        - test: a-hyperlinkutils-getter-setter.html
-    - product: safari
-      url: https://bugs.webkit.org/show_bug.cgi?id=298271
-      results:
-        - test: a-download-click.svg
-          subtest: Clicking on an <a> element with a download attribute must not throw an exception
-    - product: safari
-      url: https://bugs.webkit.org/show_bug.cgi?id=320555
-      results:
-        - test: href-animate-element.html
+- product: chrome
+  url: https://crbug.com/873988
+  results:
+  - test: a.rel-getter-01.svg
+  - test: rellist-feature-detection.svg
+- product: chrome
+  url: https://bugs.chromium.org/p/chromium/issues/detail?id=1052202
+  results:
+  - test: href-animate-element.html
+  - test: href-mpath-element.html
+- product: firefox
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2005594
+  results:
+  - test: xlink-href-compat.html
+    subtest: XLink 'href' backwards compatibility, IDL href backed by "href" after
+      baseVal setter.
+  - test: xlink-href-compat.html
+    subtest: XLink 'href' backwards compatibility, IDL href reflects "href"; setAttribute(xlink:href)
+      does not override baseVal setter.
+- product: firefox
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2083942
+  results:
+  - test: a.target-dynamic-update.html
+    subtest: Clicking the original <a> uses the updated target
+- product: safari
+  url: https://bugs.webkit.org/show_bug.cgi?id=314728
+  results:
+  - test: a-hyperlinkutils-getter.html
+  - test: a-hyperlinkutils-getter-setter.html
+- product: safari
+  url: https://bugs.webkit.org/show_bug.cgi?id=298271
+  results:
+  - test: a-download-click.svg
+    subtest: Clicking on an <a> element with a download attribute must not throw an
+      exception
+- product: safari
+  url: https://bugs.webkit.org/show_bug.cgi?id=320555
+  results:
+  - test: href-animate-element.html
+  - test: href-mpath-element.html
+- product: safari
+  url: https://bugs.webkit.org/show_bug.cgi?id=316487
+  results:
+  - test: xlink-href-compat.html
