@@ -448,3 +448,18 @@ links:
           subtest: Implicit @scope in a constructed stylesheet adopted by both a document and a shadow root
         - test: scope-implicit-constructed-document.html
           subtest: Implicit @scope in a constructed stylesheet stops matching once the document no longer adopts it
+    - product: chrome
+      url: https://crbug.com/570832596
+      results:
+        - test: layer-cssom-insert-after-style.html
+          subtest: Inserting a layer block reorders existing layers
+        - test: layer-cssom-insert-after-style.html
+          subtest: Inserting a layer statement reorders existing layers
+        - test: layer-cssom-insert-after-style.html
+          subtest: Inserting a dotted layer statement reorders existing sublayers
+        - test: layer-cssom-insert-after-style.html
+          subtest: Deleting a layer statement reorders existing layers
+        - test: layer-cssom-insert-after-style.html
+          subtest: Deleting a layer block reorders existing layers
+        - test: layer-cssom-insert-after-style.html
+          subtest: Inserting a layer block in a shadow tree reorders existing layers
