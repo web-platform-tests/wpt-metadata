@@ -423,3 +423,28 @@ links:
       results:
         - test: declaration-context.html
           subtest: '@scope cannot relax page declaration restrictions'
+    - product: chrome
+      url: https://crbug.com/580757654
+      results:
+        - test: scope-implicit-constructed-document.html
+          subtest: Implicit @scope in a constructed stylesheet adopted by a document matches descendants
+        - test: scope-implicit-constructed-document.html
+          subtest: Implicit @scope in a constructed stylesheet adopted by a document matches the root element
+        - test: scope-implicit-constructed-document.html
+          subtest: Explicit :scope with a descendant combinator in implicit @scope in a constructed stylesheet adopted by a document
+        - test: scope-implicit-constructed-document.html
+          subtest: '& with a descendant combinator in implicit @scope in a constructed stylesheet adopted by a document'
+        - test: scope-implicit-constructed-document.html
+          subtest: Child combinator in implicit @scope in a constructed stylesheet adopted by a document matches only the root element
+        - test: scope-implicit-constructed-document.html
+          subtest: Implicit @scope with a scope end in a constructed stylesheet adopted by a document
+        - test: scope-implicit-constructed-document.html
+          subtest: Implicit @scope in a constructed stylesheet adopted by a document wins over unscoped rules by proximity
+        - test: scope-implicit-constructed-document.html
+          subtest: Nested @scope inside implicit @scope in a constructed stylesheet adopted by a document
+        - test: scope-implicit-constructed-document.html
+          subtest: Implicit @scope in a constructed stylesheet adopted by a document does not match in shadow trees
+        - test: scope-implicit-constructed-document.html
+          subtest: Implicit @scope in a constructed stylesheet adopted by both a document and a shadow root
+        - test: scope-implicit-constructed-document.html
+          subtest: Implicit @scope in a constructed stylesheet stops matching once the document no longer adopts it
