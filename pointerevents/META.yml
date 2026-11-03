@@ -978,3 +978,14 @@ links:
       does not'
     test: touch-scroll-axis-lock-with-scroll-chain.html?touch
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=2060690
+- product: firefox
+  results:
+  - subtest: 'Parent to same-origin iframe: relatedTarget is exposed across documents'
+    test: pointerevent_boundary_events_cross_document_same_origin.tentative.html
+  - subtest: 'Same-origin iframe to parent: relatedTarget is exposed across documents'
+    test: pointerevent_boundary_events_cross_document_same_origin.tentative.html
+  - subtest: 'Sibling same-origin iframes: relatedTarget is exposed across documents'
+    test: pointerevent_boundary_events_cross_document_same_origin.tentative.html
+  - subtest: 'Nested same-origin iframes: relatedTarget is exposed across documents'
+    test: pointerevent_boundary_events_cross_document_same_origin.tentative.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2088452
