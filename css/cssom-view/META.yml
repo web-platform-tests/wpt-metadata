@@ -586,3 +586,42 @@ links:
   - subtest: Image Maps
     test: elementFromPoint.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=2066348
+- product: firefox
+  results:
+  - subtest: Element.scrollTo promise after scroller removal
+    test: element-scroll-promise-after-removal.html
+  - subtest: Element.scrollBy promise after scroller removal
+    test: element-scroll-promise-after-removal.html
+  - subtest: Element.scrollIntoView promise after outer scroller removal
+    test: element-scroll-promise-after-removal.html
+  - subtest: Element.scrollIntoView promise after inner scroller removal
+    test: element-scroll-promise-after-removal.html
+  - subtest: Element.scrollTo interrupted by a non-promise scroll
+    test: element-scroll-promise-interruption.html
+  - subtest: Element.scrollBy interrupted by a non-promise scroll
+    test: element-scroll-promise-interruption.html
+  - subtest: Element.scrollIntoView interrupted by a non-promise scroll
+    test: element-scroll-promise-interruption.html
+  - subtest: Element.scrollIntoView uninterrupted by an unrelated non-promise scroll
+    test: element-scroll-promise-interruption.html
+  - subtest: 'Element.scrollTo: interrupted by auto scroll'
+    test: element-scroll-promise-interruption.html
+  - subtest: 'Element.scrollBy: interrupted by auto scroll'
+    test: element-scroll-promise-interruption.html
+  - subtest: 'Element.scrollIntoView: interrupted by auto scroll'
+    test: element-scroll-promise-interruption.html
+  - subtest: 'Element.scrollIntoView: interrupted by inner scroll'
+    test: element-scroll-promise-interruption.html
+  - subtest: 'Element.scrollIntoView: interrupted by outer scroll'
+    test: element-scroll-promise-interruption.html
+  - subtest: 'Element.scrollIntoView(smooth): promise behavior'
+    test: element-scroll-promises.html
+  - subtest: 'Window.scrollTo: interruption by auto scroll call'
+    test: window-scroll-promise-interruption.html
+  - subtest: 'Window.scrollBy: interruption by auto scroll call'
+    test: window-scroll-promise-interruption.html
+  - subtest: 'Window.scrollTo: interruption by smooth scroll call'
+    test: window-scroll-promise-interruption.html
+  - subtest: 'Window.scrollBy: interruption by smooth scroll call'
+    test: window-scroll-promise-interruption.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2089062
