@@ -433,3 +433,12 @@ links:
   results:
   - test: box-decoration-break-clone-037.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=2061117
+- product: firefox
+  results:
+  - subtest: An empty inline box between two block level boxes does not add a line
+    test: box-decoration-break-clone-block-in-inline-001.html
+  - subtest: Two block level boxes with only an empty inline box in-between are adjacent
+    test: box-decoration-break-clone-block-in-inline-001.html
+  - subtest: The empty inline box between the two block level boxes has no size
+    test: box-decoration-break-clone-block-in-inline-001.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2088777
