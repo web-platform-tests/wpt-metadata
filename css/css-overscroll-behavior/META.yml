@@ -38,3 +38,18 @@ links:
       block horizontal chaining'
     test: overscroll-behavior-single-axis-keyboard.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=2048850
+- product: firefox
+  results:
+  - subtest: scrolling is not propagated from iframe to the main frame
+    test: overscroll-behavior-keyboard-scroll-child-frame.html
+  - subtest: 'overscroll-behavior-y: none prevents scroll propagation on y axis'
+    test: overscroll-behavior-keyboard-scroll.html
+  - subtest: 'overscroll-behavior-x: none prevents scroll propagation on x axis'
+    test: overscroll-behavior-keyboard-scroll.html
+  - subtest: 'overscroll-behavior-x: chain allows scroll propagation on x axis'
+    test: overscroll-behavior-keyboard-scroll.html
+  - subtest: 'overscroll-behavior-y: chain allows scroll propagation on y axis'
+    test: overscroll-behavior-keyboard-scroll.html
+  - subtest: overscroll-behavior allows inner scrolling when both axes are none
+    test: overscroll-behavior-keyboard-scroll.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2089060
