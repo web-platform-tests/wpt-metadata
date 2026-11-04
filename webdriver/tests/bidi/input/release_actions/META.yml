@@ -1,7 +1,12 @@
 links:
-    - label: chromium-bidi-2023
-      results:
-        - test: context.py
-        - test: invalid.py
-        - test: release.py
-        - test: sequence.py
+- label: chromium-bidi-2023
+  results:
+  - test: context.py
+  - test: invalid.py
+  - test: release.py
+  - test: sequence.py
+- product: firefox
+  results:
+  - subtest: test_release_char_sequence_with_modifier_sends_keyup_events_in_reverse
+    test: sequence.py
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2089058
