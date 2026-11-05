@@ -1157,3 +1157,8 @@ links:
   - subtest: syntax:'<image>', initialValue:'none' is invalid
     test: register-property-syntax-parsing.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=2036805
+- product: firefox
+  results:
+  - subtest: inherit() on a non-inherited custom property tracks the parent
+    test: custom-property-explicit-inherit-invalidation.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2089289
