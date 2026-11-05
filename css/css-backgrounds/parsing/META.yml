@@ -322,3 +322,12 @@ links:
   - subtest: e.style['background'] = "border-area text" should set background-clip
     test: background-valid.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=2058546
+- product: firefox
+  results:
+  - subtest: initial background-color
+    test: background-shorthand-serialization.html
+  - subtest: border-area text sets background-clip
+    test: background-shorthand-serialization.html
+  - subtest: text border-area serializes as border-area text
+    test: background-shorthand-serialization.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2089606
