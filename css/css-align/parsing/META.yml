@@ -101,3 +101,152 @@ links:
   - subtest: Property place-self value 'flow-start flow-end'
     test: place-self-computed.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=2076610
+- product: firefox
+  results:
+  - subtest: Property align-items value 'unsafe normal'
+    test: align-items-computed.html
+  - subtest: Property align-items value 'safe normal'
+    test: align-items-computed.html
+  - subtest: e.style['align-items'] = "unsafe normal" should set the property value
+    test: align-items-valid.html
+  - subtest: e.style['align-items'] = "safe normal" should set the property value
+    test: align-items-valid.html
+  - subtest: e.style['align-items'] = "flow-start" should set the property value
+    test: align-items-valid.html
+  - subtest: e.style['align-items'] = "flow-end" should set the property value
+    test: align-items-valid.html
+  - subtest: e.style['align-items'] = "safe flow-start" should set the property value
+    test: align-items-valid.html
+  - subtest: e.style['align-items'] = "unsafe flow-end" should set the property value
+    test: align-items-valid.html
+  - subtest: Property align-self value 'unsafe normal'
+    test: align-self-computed.html
+  - subtest: Property align-self value 'safe normal'
+    test: align-self-computed.html
+  - subtest: e.style['align-self'] = "unsafe normal" should set the property value
+    test: align-self-valid.html
+  - subtest: e.style['align-self'] = "safe normal" should set the property value
+    test: align-self-valid.html
+  - subtest: e.style['align-self'] = "flow-start" should set the property value
+    test: align-self-valid.html
+  - subtest: e.style['align-self'] = "flow-end" should set the property value
+    test: align-self-valid.html
+  - subtest: e.style['align-self'] = "safe flow-start" should set the property value
+    test: align-self-valid.html
+  - subtest: e.style['align-self'] = "unsafe flow-end" should set the property value
+    test: align-self-valid.html
+  - subtest: Property justify-items value 'unsafe normal'
+    test: justify-items-computed.html
+  - subtest: Property justify-items value 'safe normal'
+    test: justify-items-computed.html
+  - subtest: e.style['justify-items'] = "unsafe normal" should set the property value
+    test: justify-items-valid.html
+  - subtest: e.style['justify-items'] = "safe normal" should set the property value
+    test: justify-items-valid.html
+  - subtest: e.style['justify-items'] = "flow-start" should set the property value
+    test: justify-items-valid.html
+  - subtest: e.style['justify-items'] = "flow-end" should set the property value
+    test: justify-items-valid.html
+  - subtest: e.style['justify-items'] = "safe flow-start" should set the property
+      value
+    test: justify-items-valid.html
+  - subtest: e.style['justify-items'] = "unsafe flow-end" should set the property
+      value
+    test: justify-items-valid.html
+  - subtest: Property justify-self value 'unsafe normal'
+    test: justify-self-computed.html
+  - subtest: Property justify-self value 'safe normal'
+    test: justify-self-computed.html
+  - subtest: e.style['justify-self'] = "unsafe normal" should set the property value
+    test: justify-self-valid.html
+  - subtest: e.style['justify-self'] = "safe normal" should set the property value
+    test: justify-self-valid.html
+  - subtest: e.style['justify-self'] = "flow-start" should set the property value
+    test: justify-self-valid.html
+  - subtest: e.style['justify-self'] = "flow-end" should set the property value
+    test: justify-self-valid.html
+  - subtest: e.style['justify-self'] = "safe flow-start" should set the property value
+    test: justify-self-valid.html
+  - subtest: e.style['justify-self'] = "unsafe flow-end" should set the property value
+    test: justify-self-valid.html
+  - subtest: Property place-items value 'safe normal safe normal'
+    test: place-items-computed.html
+  - subtest: Property place-items value 'unsafe normal unsafe normal'
+    test: place-items-computed.html
+  - subtest: Property place-items value 'safe normal unsafe normal'
+    test: place-items-computed.html
+  - subtest: Property place-items value 'normal safe normal'
+    test: place-items-computed.html
+  - subtest: e.style['place-items'] = "safe normal" should set align-items
+    test: place-items-shorthand.html
+  - subtest: e.style['place-items'] = "safe normal" should set justify-items
+    test: place-items-shorthand.html
+  - subtest: e.style['place-items'] = "safe normal" should not set unrelated longhands
+    test: place-items-shorthand.html
+  - subtest: e.style['place-items'] = "safe normal unsafe normal" should set align-items
+    test: place-items-shorthand.html
+  - subtest: e.style['place-items'] = "safe normal unsafe normal" should set justify-items
+    test: place-items-shorthand.html
+  - subtest: e.style['place-items'] = "safe normal unsafe normal" should not set unrelated
+      longhands
+    test: place-items-shorthand.html
+  - subtest: e.style['place-items'] = "flow-start" should set the property value
+    test: place-items-valid.html
+  - subtest: e.style['place-items'] = "flow-start flow-end" should set the property
+      value
+    test: place-items-valid.html
+  - subtest: e.style['place-items'] = "safe normal safe normal" should set the property
+      value
+    test: place-items-valid.html
+  - subtest: e.style['place-items'] = "unsafe normal unsafe normal" should set the
+      property value
+    test: place-items-valid.html
+  - subtest: e.style['place-items'] = "safe normal unsafe normal" should set the property
+      value
+    test: place-items-valid.html
+  - subtest: e.style['place-items'] = "normal safe normal" should set the property
+      value
+    test: place-items-valid.html
+  - subtest: Property place-self value 'safe normal safe normal'
+    test: place-self-computed.html
+  - subtest: Property place-self value 'unsafe normal unsafe normal'
+    test: place-self-computed.html
+  - subtest: Property place-self value 'safe normal unsafe normal'
+    test: place-self-computed.html
+  - subtest: Property place-self value 'normal safe normal'
+    test: place-self-computed.html
+  - subtest: Property place-self value 'auto safe normal'
+    test: place-self-computed.html
+  - subtest: e.style['place-self'] = "safe normal" should set align-self
+    test: place-self-shorthand.html
+  - subtest: e.style['place-self'] = "safe normal" should set justify-self
+    test: place-self-shorthand.html
+  - subtest: e.style['place-self'] = "safe normal" should not set unrelated longhands
+    test: place-self-shorthand.html
+  - subtest: e.style['place-self'] = "safe normal unsafe normal" should set align-self
+    test: place-self-shorthand.html
+  - subtest: e.style['place-self'] = "safe normal unsafe normal" should set justify-self
+    test: place-self-shorthand.html
+  - subtest: e.style['place-self'] = "safe normal unsafe normal" should not set unrelated
+      longhands
+    test: place-self-shorthand.html
+  - subtest: e.style['place-self'] = "flow-start" should set the property value
+    test: place-self-valid.html
+  - subtest: e.style['place-self'] = "flow-start flow-end" should set the property
+      value
+    test: place-self-valid.html
+  - subtest: e.style['place-self'] = "safe normal safe normal" should set the property
+      value
+    test: place-self-valid.html
+  - subtest: e.style['place-self'] = "unsafe normal unsafe normal" should set the
+      property value
+    test: place-self-valid.html
+  - subtest: e.style['place-self'] = "safe normal unsafe normal" should set the property
+      value
+    test: place-self-valid.html
+  - subtest: e.style['place-self'] = "normal safe normal" should set the property
+      value
+    test: place-self-valid.html
+  - subtest: e.style['place-self'] = "auto safe normal" should set the property value
+    test: place-self-valid.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2089575
