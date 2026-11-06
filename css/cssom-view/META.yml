@@ -625,3 +625,8 @@ links:
   - subtest: 'Window.scrollBy: interruption by smooth scroll call'
     test: window-scroll-promise-interruption.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=2089062
+- product: firefox
+  results:
+  - subtest: Aborting a smooth scroll with a keyboard event that causes another scroll
+    test: user-scroll-interrupts-smooth-scroll.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2090178
