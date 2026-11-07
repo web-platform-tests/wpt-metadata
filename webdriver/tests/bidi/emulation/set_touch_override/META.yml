@@ -18,3 +18,22 @@ links:
   - subtest: test_overrides_global[Custom user context]
     test: user_contexts.py
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=2073304
+- product: firefox
+  results:
+  - subtest: test_max_touch_points_not_limited_by_event_storage_capacity[11]
+    test: contexts.py
+  - subtest: test_contexts_isolation
+    test: contexts.py
+  - subtest: test_frame[same_origin]
+    test: contexts.py
+  - subtest: test_frame[cross_origin]
+    test: contexts.py
+  - subtest: test_overrides_user_contexts[Default user context]
+    test: contexts.py
+  - subtest: test_overrides_user_contexts[Custom user context]
+    test: contexts.py
+  - subtest: test_overrides_global[Default user context]
+    test: contexts.py
+  - subtest: test_overrides_global[Custom user context]
+    test: contexts.py
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2090644
