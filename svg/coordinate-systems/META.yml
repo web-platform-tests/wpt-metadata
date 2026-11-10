@@ -1,22 +1,29 @@
 links:
-    - product: safari
-      url: https://bugs.webkit.org/show_bug.cgi?id=283879
-      results:
-        - test: svgtransformlist-replaceitem.html
-          subtest: Dynamic update of transform; replaceItem()
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=2057424
-      results:
-        - test: viewBox-zero-disables-rendering-pattern.svg
-        - test: viewBox-invalid-attribute-baseval.tentative.html
-          subtest: invalid (negative-width) viewBox attribute exposes baseVal {0, 0, 0, 0}
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=2059426
-      results:
-        - test: SVGTransformList.list-01.html
-          subtest: SVGTransformList interface, indexed setter
-    - product: safari
-      url: https://bugs.webkit.org/show_bug.cgi?id=315283
-      results:
-        - test: viewBox-synthesized-in-img-001.tentative.html
-          subtest: Test status
+- product: safari
+  results:
+  - subtest: Dynamic update of transform; replaceItem()
+    test: svgtransformlist-replaceitem.html
+  url: https://bugs.webkit.org/show_bug.cgi?id=283879
+- product: firefox
+  results:
+  - test: viewBox-zero-disables-rendering-pattern.svg
+  - subtest: invalid (negative-width) viewBox attribute exposes baseVal {0, 0, 0,
+      0}
+    test: viewBox-invalid-attribute-baseval.tentative.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2057424
+- product: firefox
+  results:
+  - subtest: SVGTransformList interface, indexed setter
+    test: SVGTransformList.list-01.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2059426
+- product: safari
+  results:
+  - subtest: Test status
+    test: viewBox-synthesized-in-img-001.tentative.html
+  url: https://bugs.webkit.org/show_bug.cgi?id=315283
+- product: firefox
+  results:
+  - subtest: transform="rotate(45, 10, 20)" on an outermost svg element computes to
+      translate(10px, 20px) rotate(45deg) translate(-10px, -20px)
+    test: outer-svg-transform-attribute-computed-style.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2091215
