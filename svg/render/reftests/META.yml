@@ -1,16 +1,20 @@
 links:
-    - product: safari
-      url: https://bugs.webkit.org/show_bug.cgi?id=201918
-      results:
-        - test: change-sync-for-nested-use.html
-          status: FAIL
-    - product: webkitgtk
-      url: https://bugs.webkit.org/show_bug.cgi?id=201918
-      results:
-        - test: change-sync-for-nested-use.html
-          status: FAIL
-    - product: safari
-      url: https://bugs.webkit.org/show_bug.cgi?id=206369
-      results:
-        - test: blending-001.svg
-          status: FAIL
+- product: safari
+  results:
+  - status: FAIL
+    test: change-sync-for-nested-use.html
+  url: https://bugs.webkit.org/show_bug.cgi?id=201918
+- product: webkitgtk
+  results:
+  - status: FAIL
+    test: change-sync-for-nested-use.html
+  url: https://bugs.webkit.org/show_bug.cgi?id=201918
+- product: safari
+  results:
+  - status: FAIL
+    test: blending-001.svg
+  url: https://bugs.webkit.org/show_bug.cgi?id=206369
+- product: firefox
+  results:
+  - test: visibility-hidden-container-mask-clip.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2091230
