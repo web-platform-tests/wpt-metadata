@@ -205,3 +205,22 @@ links:
   - subtest: SVGAngle.valueAsString normalizes -0 to 0
     test: SVGAngle-valueAsString.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=2090651
+- product: firefox
+  results:
+  - subtest: 'symbol: the rect child reports the geometry it would have if rendered'
+    test: SVGGraphicsElement.getBBox-06.html
+  - subtest: 'display:none <g>: the rect child reports the geometry it would have
+      if rendered'
+    test: SVGGraphicsElement.getBBox-06.html
+  - subtest: getBBox on rect inside defs returns the rect it would have if rendered
+    test: SVGGraphicsElement.getBBox-07.html
+  - subtest: getBBox on circle inside defs returns the circle it would have if rendered
+    test: SVGGraphicsElement.getBBox-07.html
+  - subtest: getBBox on rect inside group inside defs returns the rect it would have
+      if rendered
+    test: SVGGraphicsElement.getBBox-07.html
+  - subtest: getBBox on rect inside clipPath returns the rect it would have if rendered
+    test: SVGGraphicsElement.getBBox-07.html
+  - subtest: getBBox on rect inside mask returns the rect it would have if rendered
+    test: SVGGraphicsElement.getBBox-07.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2092074
