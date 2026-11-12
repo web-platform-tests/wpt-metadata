@@ -374,3 +374,52 @@ links:
       value
     test: text-fit-valid.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=2036796
+- product: firefox
+  results:
+  - subtest: Property white-space-trim value 'none'
+    test: white-space-trim-computed.html
+  - subtest: Property white-space-trim value 'discard-before'
+    test: white-space-trim-computed.html
+  - subtest: Property white-space-trim value 'discard-after'
+    test: white-space-trim-computed.html
+  - subtest: Property white-space-trim value 'discard-inner'
+    test: white-space-trim-computed.html
+  - subtest: Property white-space-trim value 'discard-before discard-after'
+    test: white-space-trim-computed.html
+  - subtest: Property white-space-trim value 'discard-before discard-after discard-inner'
+    test: white-space-trim-computed.html
+  - subtest: Property white-space-trim value 'discard-after discard-before'
+    test: white-space-trim-computed.html
+  - subtest: e.style['white-space-trim'] = "none" should set the property value
+    test: white-space-trim-valid.html
+  - subtest: e.style['white-space-trim'] = "discard-before" should set the property
+      value
+    test: white-space-trim-valid.html
+  - subtest: e.style['white-space-trim'] = "discard-after" should set the property
+      value
+    test: white-space-trim-valid.html
+  - subtest: e.style['white-space-trim'] = "discard-inner" should set the property
+      value
+    test: white-space-trim-valid.html
+  - subtest: e.style['white-space-trim'] = "discard-before discard-after" should set
+      the property value
+    test: white-space-trim-valid.html
+  - subtest: e.style['white-space-trim'] = "discard-before discard-inner" should set
+      the property value
+    test: white-space-trim-valid.html
+  - subtest: e.style['white-space-trim'] = "discard-after discard-inner" should set
+      the property value
+    test: white-space-trim-valid.html
+  - subtest: e.style['white-space-trim'] = "discard-before discard-after discard-inner"
+      should set the property value
+    test: white-space-trim-valid.html
+  - subtest: e.style['white-space-trim'] = "discard-after discard-before" should set
+      the property value
+    test: white-space-trim-valid.html
+  - subtest: e.style['white-space-trim'] = "discard-inner discard-before" should set
+      the property value
+    test: white-space-trim-valid.html
+  - subtest: e.style['white-space-trim'] = "discard-inner discard-after discard-before"
+      should set the property value
+    test: white-space-trim-valid.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2092052
