@@ -378,3 +378,29 @@ links:
   results:
   - test: white-space-trim-discard-inner.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=2092046
+- product: firefox
+  results:
+  - subtest: 'discard-before: max-content excludes the collapsed leading space'
+    test: white-space-trim-intrinsic-width.html
+  - subtest: 'discard-after: max-content excludes the collapsed trailing space'
+    test: white-space-trim-intrinsic-width.html
+  - subtest: 'discard-before: min-content merges the words (removes the wrap opportunity)'
+    test: white-space-trim-intrinsic-width.html
+  - subtest: 'discard-after: min-content merges the words (removes the wrap opportunity)'
+    test: white-space-trim-intrinsic-width.html
+  - test: white-space-trim-atomic-inline.html
+  - test: white-space-trim-block-in-inline.html
+  - test: white-space-trim-content.html
+  - test: white-space-trim-discard-after.html
+  - test: white-space-trim-discard-before-after.html
+  - test: white-space-trim-discard-before.html
+  - test: white-space-trim-dynamic.html
+  - test: white-space-trim-generated-content.html
+  - test: white-space-trim-inline-block-dynamic.html
+  - test: white-space-trim-inline-block.html
+  - test: white-space-trim-interaction.html
+  - test: white-space-trim-nested.html
+  - test: white-space-trim-rtl.html
+  - test: white-space-trim-white-space.html
+  - test: white-space-trim-wrap.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2092052
