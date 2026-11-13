@@ -1,17 +1,23 @@
 links:
-    - product: safari
-      url: https://bugs.webkit.org/show_bug.cgi?id=243942
-      results:
-        - test: empty-text-node-001.html
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1887258
-      results:
-        - test: inheritance.html
-          subtest: Property baseline-shift does not inherit
-        - test: inheritance.html
-          subtest: Property alignment-baseline does not inherit
-    - product: safari
-      url: https://bugs.webkit.org/show_bug.cgi?id=139258
-      results:
-        - test: inheritance.html
-          subtest: Property dominant-baseline inherits
+- product: safari
+  results:
+  - test: empty-text-node-001.html
+  url: https://bugs.webkit.org/show_bug.cgi?id=243942
+- product: firefox
+  results:
+  - subtest: Property baseline-shift does not inherit
+    test: inheritance.html
+  - subtest: Property alignment-baseline does not inherit
+    test: inheritance.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1887258
+- product: safari
+  results:
+  - subtest: Property dominant-baseline inherits
+    test: inheritance.html
+  url: https://bugs.webkit.org/show_bug.cgi?id=139258
+- product: firefox
+  results:
+  - subtest: An orthogonal inline-block contributes its block size and its left and
+      right margins (orthogonalInlineBlock, min-content)
+    test: atomic-inline-intrinsic-size-001.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2092389
