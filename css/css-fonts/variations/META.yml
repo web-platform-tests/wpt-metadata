@@ -187,3 +187,87 @@ links:
   - subtest: 'font-style(valid): ''auto'' keyword inside @font-face: auto'
     test: at-font-face-descriptors.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1972908
+- product: firefox
+  results:
+  - subtest: 'font-weight(invalid): ''lighter'' keyword inside @font-face: lighter'
+    test: at-font-face-descriptors.html
+  - subtest: 'font-weight(invalid): ''bolder'' keyword inside @font-face: bolder'
+    test: at-font-face-descriptors.html
+  - subtest: 'font-weight(invalid): Extra content after keyword: bold a'
+    test: at-font-face-descriptors.html
+  - subtest: 'font-weight(invalid): Values below minimum should be rejected: 0.999'
+    test: at-font-face-descriptors.html
+  - subtest: 'font-weight(invalid): Values below zero should be rejected: -100'
+    test: at-font-face-descriptors.html
+  - subtest: 'font-weight(invalid): Values above maximum should be rejected: 1000.001'
+    test: at-font-face-descriptors.html
+  - subtest: 'font-weight(invalid): Extra content after value: 100 a'
+    test: at-font-face-descriptors.html
+  - subtest: 'font-weight(invalid): Valid calc expression with units: calc(100.5px
+      + 50.5px)'
+    test: at-font-face-descriptors.html
+  - subtest: 'font-weight(valid): Simple range with equal upper and lower bounds:
+      500 500'
+    test: at-font-face-descriptors.html
+  - subtest: 'font-weight(invalid): Lower bound out of range: 0.9 100'
+    test: at-font-face-descriptors.html
+  - subtest: 'font-weight(invalid): Upper bound out of range: 100 1001'
+    test: at-font-face-descriptors.html
+  - subtest: 'font-weight(invalid): Extra content after upper bound: 100 200 300'
+    test: at-font-face-descriptors.html
+  - subtest: 'font-stretch(invalid): Extra content after value: expanded a'
+    test: at-font-face-descriptors.html
+  - subtest: 'font-stretch(invalid): Only percentages, not numbers allowed: 100'
+    test: at-font-face-descriptors.html
+  - subtest: 'font-stretch(invalid): Negative values are illegal: -1%'
+    test: at-font-face-descriptors.html
+  - subtest: 'font-stretch(invalid): Extra content after value: 100% a'
+    test: at-font-face-descriptors.html
+  - subtest: 'font-stretch(invalid): Unit-less calc value: calc(100)'
+    test: at-font-face-descriptors.html
+  - subtest: 'font-stretch(invalid): Calc value with units: calc(100px)'
+    test: at-font-face-descriptors.html
+  - subtest: 'font-stretch(valid): Simple range with equal upper and lower bounds:
+      100% 100%'
+    test: at-font-face-descriptors.html
+  - subtest: 'font-stretch(invalid): Lower bound out of range: -100% 100%'
+    test: at-font-face-descriptors.html
+  - subtest: 'font-stretch(invalid): Extra content after upper bound: 100% 200% 300%'
+    test: at-font-face-descriptors.html
+  - subtest: 'font-style(invalid): ''italic'' followed by angle: italic 20deg'
+    test: at-font-face-descriptors.html
+  - subtest: 'font-style(invalid): Extra content after keyword: italic a'
+    test: at-font-face-descriptors.html
+  - subtest: 'font-style(valid): ''oblique'' followed by angle in radians: oblique
+      0rad'
+    test: at-font-face-descriptors.html
+  - subtest: 'font-style(invalid): ''oblique'' followed by unit-less number: oblique
+      20'
+    test: at-font-face-descriptors.html
+  - subtest: 'font-style(invalid): ''oblique'' followed by non-angle: oblique 20px'
+    test: at-font-face-descriptors.html
+  - subtest: 'font-style(invalid): ''oblique'' followed by non-number: oblique a'
+    test: at-font-face-descriptors.html
+  - subtest: 'font-style(invalid): ''oblique'' followed by isolated minus: oblique
+      -'
+    test: at-font-face-descriptors.html
+  - subtest: 'font-style(invalid): ''oblique'' followed by minus and angle separated
+      by space: oblique - 20deg'
+    test: at-font-face-descriptors.html
+  - subtest: 'font-style(invalid): ''oblique'' followed by minus and non-number: oblique
+      -a'
+    test: at-font-face-descriptors.html
+  - subtest: 'font-style(valid): Simple range with equal upper and lower bounds: oblique
+      10deg 10deg'
+    test: at-font-face-descriptors.html
+  - subtest: 'font-style(valid): Simple range with equal upper and lower bounds: oblique
+      0deg 0deg'
+    test: at-font-face-descriptors.html
+  - subtest: 'font-style(invalid): Lower bound out of range: oblique -100deg 20deg'
+    test: at-font-face-descriptors.html
+  - subtest: 'font-style(invalid): Upper bound out of range: oblique 20deg 100deg'
+    test: at-font-face-descriptors.html
+  - subtest: 'font-style(invalid): Extra content after upper bound: oblique 10deg
+      20deg 30deg'
+    test: at-font-face-descriptors.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2092402
