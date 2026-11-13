@@ -529,3 +529,22 @@ links:
   - subtest: <object> of svg-width-0-height-100-viewBox-1-1.svg
     test: svg-intrinsic-size-zero-img-and-object.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=2090839
+- product: firefox
+  results:
+  - subtest: 'width: 40px; height: 30px; min-height: min-content'
+    test: image-min-max-content-intrinsic-size-change-009.html
+  - subtest: 'width: 40px; height: 30px; min-height: max-content'
+    test: image-min-max-content-intrinsic-size-change-009.html
+  - subtest: 'width: 70px; height: 80px; max-height: min-content'
+    test: image-min-max-content-intrinsic-size-change-009.html
+  - subtest: 'width: 70px; height: 80px; max-height: max-content'
+    test: image-min-max-content-intrinsic-size-change-009.html
+  - subtest: 'writing-mode: vertical-lr; height: 40px; width: 30px; min-width: min-content'
+    test: image-min-max-content-intrinsic-size-change-009.html
+  - subtest: 'writing-mode: vertical-lr; height: 40px; width: 30px; min-width: max-content'
+    test: image-min-max-content-intrinsic-size-change-009.html
+  - subtest: 'writing-mode: vertical-lr; height: 70px; width: 80px; max-width: min-content'
+    test: image-min-max-content-intrinsic-size-change-009.html
+  - subtest: 'writing-mode: vertical-lr; height: 70px; width: 80px; max-width: max-content'
+    test: image-min-max-content-intrinsic-size-change-009.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2092675
