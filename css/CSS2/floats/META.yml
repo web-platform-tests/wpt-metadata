@@ -1,53 +1,60 @@
 links:
-    - product: chrome
-      url: https://crbug.com/879829
-      results:
-        - test: float-nowrap-7.html
-        - test: float-nowrap-8.html
-        - test: float-nowrap-9.html
-    - product: chrome
-      url: https://bugs.chromium.org/p/chromium/issues/detail?id=1206443
-      results:
-        - test: floats-rule7-outside-right-001.xht
-        - test: floats-wrap-bfc-006.xht
-        - test: floats-rule3-outside-left-002.xht
-        - test: floats-rule3-outside-right-002.xht
-        - test: floats-rule7-outside-left-001.xht
-    - label: interop-2022-webcompat
-      results:
-        - test: floats-wrap-bfc-with-margin-001.html
-    - product: safari
-      url: https://bugs.webkit.org/show_bug.cgi?id=239976
-      results:
-        - test: floats-wrap-bfc-with-margin-003.tentative.html
-        - test: floats-wrap-bfc-with-margin-002.tentative.html
-        - test: floats-wrap-bfc-with-margin-004.html
-        - test: floats-wrap-bfc-with-margin-005.html
-        - test: floats-wrap-bfc-with-margin-001a.tentative.html
-    - product: safari
-      url: https://bugs.webkit.org/show_bug.cgi?id=258216
-      results:
-        - test: floats-rule3-outside-left-001.xht
-        - test: floats-rule3-outside-right-001.xht
-    - product: safari
-      url: https://bugs.webkit.org/show_bug.cgi?id=249100
-      results:
-        - test: floats-zero-height-wrap-002.xht
-          subtest: Test status
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1887474
-      results:
-        - test: float-root.html
-    - product: safari
-      url: https://bugs.webkit.org/show_bug.cgi?id=286882
-      results:
-        - test: computed-float-position-absolute.html
-          subtest: The computed value of float with absolute positioning when there is no box should be "none"
-    - product: safari
-      url: https://bugs.webkit.org/show_bug.cgi?id=286883
-      results:
-        - test: remove-block-between-inline-and-float.html
-    - product: safari
-      url: https://bugs.webkit.org/show_bug.cgi?id=286884
-      results:
-        - test: zero-width-floats-positioning.tentative.html
+- product: chrome
+  results:
+  - test: float-nowrap-7.html
+  - test: float-nowrap-8.html
+  - test: float-nowrap-9.html
+  url: https://crbug.com/879829
+- product: chrome
+  results:
+  - test: floats-rule7-outside-right-001.xht
+  - test: floats-wrap-bfc-006.xht
+  - test: floats-rule3-outside-left-002.xht
+  - test: floats-rule3-outside-right-002.xht
+  - test: floats-rule7-outside-left-001.xht
+  url: https://bugs.chromium.org/p/chromium/issues/detail?id=1206443
+- label: interop-2022-webcompat
+  results:
+  - test: floats-wrap-bfc-with-margin-001.html
+- product: safari
+  results:
+  - test: floats-wrap-bfc-with-margin-003.tentative.html
+  - test: floats-wrap-bfc-with-margin-002.tentative.html
+  - test: floats-wrap-bfc-with-margin-004.html
+  - test: floats-wrap-bfc-with-margin-005.html
+  - test: floats-wrap-bfc-with-margin-001a.tentative.html
+  url: https://bugs.webkit.org/show_bug.cgi?id=239976
+- product: safari
+  results:
+  - test: floats-rule3-outside-left-001.xht
+  - test: floats-rule3-outside-right-001.xht
+  url: https://bugs.webkit.org/show_bug.cgi?id=258216
+- product: safari
+  results:
+  - subtest: Test status
+    test: floats-zero-height-wrap-002.xht
+  url: https://bugs.webkit.org/show_bug.cgi?id=249100
+- product: firefox
+  results:
+  - test: float-root.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1887474
+- product: safari
+  results:
+  - subtest: The computed value of float with absolute positioning when there is no
+      box should be "none"
+    test: computed-float-position-absolute.html
+  url: https://bugs.webkit.org/show_bug.cgi?id=286882
+- product: safari
+  results:
+  - test: remove-block-between-inline-and-float.html
+  url: https://bugs.webkit.org/show_bug.cgi?id=286883
+- product: safari
+  results:
+  - test: zero-width-floats-positioning.tentative.html
+  url: https://bugs.webkit.org/show_bug.cgi?id=286884
+- product: firefox
+  results:
+  - subtest: A container with text-indent and nothing but floats (floatsOnlyWithTextIndent,
+      max-content)
+    test: floats-in-inline-content-intrinsic-size-001.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2092387

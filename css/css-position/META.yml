@@ -230,3 +230,47 @@ links:
   - subtest: 'abspos containing block, height: stretch, child bottom: 50%'
     test: position-relative-016.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=2042624
+- product: firefox
+  results:
+  - subtest: An absolutely positioned box in inline content is as wide as its own
+      content
+    test: out-of-flow-in-inline-content-intrinsic-size-001.html
+  - subtest: An absolutely positioned box between words (absoluteBetweenWords, min-content)
+    test: out-of-flow-in-inline-content-intrinsic-size-001.html
+  - subtest: An absolutely positioned box between words (absoluteBetweenWords, max-content)
+    test: out-of-flow-in-inline-content-intrinsic-size-001.html
+  - subtest: A fixed positioned box between words (fixedBetweenWords, min-content)
+    test: out-of-flow-in-inline-content-intrinsic-size-001.html
+  - subtest: A fixed positioned box between words (fixedBetweenWords, max-content)
+    test: out-of-flow-in-inline-content-intrinsic-size-001.html
+  - subtest: An absolutely positioned box does not split the word around it (absoluteInsideWord,
+      min-content)
+    test: out-of-flow-in-inline-content-intrinsic-size-001.html
+  - subtest: An absolutely positioned box does not split the word around it (absoluteInsideWord,
+      max-content)
+    test: out-of-flow-in-inline-content-intrinsic-size-001.html
+  - subtest: An absolutely positioned box after the line's trailing space (absoluteAfterTrailingSpace,
+      min-content)
+    test: out-of-flow-in-inline-content-intrinsic-size-001.html
+  - subtest: An absolutely positioned box after the line's trailing space (absoluteAfterTrailingSpace,
+      max-content)
+    test: out-of-flow-in-inline-content-intrinsic-size-001.html
+  - subtest: An absolutely positioned box inside an inline box with padding (absoluteInsideInlineBox,
+      min-content)
+    test: out-of-flow-in-inline-content-intrinsic-size-001.html
+  - subtest: An absolutely positioned box inside an inline box with padding (absoluteInsideInlineBox,
+      max-content)
+    test: out-of-flow-in-inline-content-intrinsic-size-001.html
+  - subtest: An absolutely positioned image in front of text that can break anywhere
+      (absoluteReplacedWithBreakAll, min-content)
+    test: out-of-flow-in-inline-content-intrinsic-size-001.html
+  - subtest: An absolutely positioned image in front of text that can break anywhere
+      (absoluteReplacedWithBreakAll, max-content)
+    test: out-of-flow-in-inline-content-intrinsic-size-001.html
+  - subtest: A container with text-indent and nothing but an absolutely positioned
+      box (absoluteOnlyWithTextIndent, min-content)
+    test: out-of-flow-in-inline-content-intrinsic-size-001.html
+  - subtest: A container with text-indent and nothing but an absolutely positioned
+      box (absoluteOnlyWithTextIndent, max-content)
+    test: out-of-flow-in-inline-content-intrinsic-size-001.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2092386
