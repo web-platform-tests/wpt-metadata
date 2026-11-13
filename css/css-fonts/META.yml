@@ -557,3 +557,34 @@ links:
   results:
   - test: cluster-matching-canonical-equivalence-002.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=2090936
+- product: firefox
+  results:
+  - subtest: All map iteration APIs preserve first name positions with the final parsed
+      values
+    test: font-feature-values-map-order.html
+  - subtest: Parsed names are case-sensitive and escaped spellings update the same
+      map entry
+    test: font-feature-values-map-order.html
+  - subtest: Character-variant blocks populate the characterVariant map in first name
+      order
+    test: font-feature-values-map-order.html
+  - subtest: An empty rule serializes with one space between its braces
+    test: font-feature-values-serialization-order.html
+  - subtest: Block types serialize in a fixed order rather than source order
+    test: font-feature-values-serialization-order.html
+  - subtest: Empty blocks are omitted without changing the order of nonempty blocks
+    test: font-feature-values-serialization-order.html
+  - subtest: Distinct names retain source order rather than alphabetical order
+    test: font-feature-values-serialization-order.html
+  - subtest: A repeated name takes its last value without moving its first position
+    test: font-feature-values-serialization-order.html
+  - subtest: Merging separated blocks preserves first name positions across and within
+      blocks
+    test: font-feature-values-serialization-order.html
+  - subtest: Invalid declarations neither reserve a name's position nor replace its
+      value
+    test: font-feature-values-serialization-order.html
+  - subtest: Names are case-sensitive and escaped spellings update the same name in
+      place
+    test: font-feature-values-serialization-order.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2092405
