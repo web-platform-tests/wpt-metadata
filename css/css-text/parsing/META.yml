@@ -423,3 +423,44 @@ links:
       should set the property value
     test: white-space-trim-valid.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=2092052
+- product: firefox
+  results:
+  - subtest: 'white-space: normal'
+    test: white-space-shorthand-longhands.html
+  - subtest: 'white-space: pre'
+    test: white-space-shorthand-longhands.html
+  - subtest: 'white-space: pre-wrap'
+    test: white-space-shorthand-longhands.html
+  - subtest: 'white-space: pre-line'
+    test: white-space-shorthand-longhands.html
+  - subtest: 'white-space: nowrap'
+    test: white-space-shorthand-longhands.html
+  - subtest: 'white-space: break-spaces'
+    test: white-space-shorthand-longhands.html
+  - subtest: 'white-space: collapse'
+    test: white-space-shorthand-longhands.html
+  - subtest: 'white-space: preserve'
+    test: white-space-shorthand-longhands.html
+  - subtest: 'white-space: preserve-breaks'
+    test: white-space-shorthand-longhands.html
+  - subtest: 'white-space: wrap'
+    test: white-space-shorthand-longhands.html
+  - subtest: 'white-space: discard-before'
+    test: white-space-shorthand-longhands.html
+  - subtest: 'white-space: discard-after'
+    test: white-space-shorthand-longhands.html
+  - subtest: 'white-space: discard-inner'
+    test: white-space-shorthand-longhands.html
+  - subtest: 'white-space: preserve nowrap discard-inner'
+    test: white-space-shorthand-longhands.html
+  - subtest: 'white-space: discard-before discard-after'
+    test: white-space-shorthand-longhands.html
+  - subtest: 'white-space: discard-inner discard-after discard-before'
+    test: white-space-shorthand-longhands.html
+  - subtest: 'white-space: collapse wrap discard-before discard-after discard-inner'
+    test: white-space-shorthand-longhands.html
+  - subtest: '`white-space` should overwrite a previously set `white-space-trim`'
+    test: white-space-shorthand-longhands.html
+  - subtest: '`white-space-trim` set after `white-space` should not be overwritten'
+    test: white-space-shorthand-longhands.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2092852
