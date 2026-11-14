@@ -1,0 +1,25 @@
+links:
+- label: interop-2023-cssborderimage
+  results:
+  - test: border-image-outset-valid.html
+  - test: border-image-outset-computed.html
+  - test: border-image-shorthand.sub.html
+  - test: border-image-repeat-computed.html
+  - test: border-image-invalid.html
+  - test: border-image-repeat-valid.html
+  - test: border-image-slice-computed.html
+  - test: border-image-repeat-invalid.html
+  - test: border-image-outset-invalid.html
+- product: firefox
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1915977
+  results:
+  - test: border-image-outset-computed.html
+    subtest: Property border-image-outset value 'calc(10 + (sign(2cqw - 10px) * 5))'
+  - test: border-image-outset-computed.html
+    subtest: Property border-image-outset value 'calc(10 + (sign(2cqw - 10px) * 5))
+      calc(20px + (sign(2cqw - 10px) * 5px)'
+  - test: border-image-slice-computed.html
+    subtest: Property border-image-slice value 'calc(10 + (sign(2cqw - 10px) * 5))'
+  - test: border-image-slice-computed.html
+    subtest: Property border-image-slice value 'calc(10 + (sign(2cqw - 10px) * 5))
+      calc(20% + (sign(2cqw - 10px) * 5%))'

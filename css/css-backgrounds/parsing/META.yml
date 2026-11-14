@@ -1,333 +1,310 @@
 links:
 - product: chrome
+  url: https://crbug.com/1065636
   results:
   - test: background-image-computed.sub.html
-  url: https://crbug.com/1065636
 - product: chrome
+  url: https://bugs.chromium.org/p/chromium/issues/detail?id=639228
   results:
   - test: background-position-x-valid.html
   - test: background-position-y-valid.html
-  url: https://bugs.chromium.org/p/chromium/issues/detail?id=639228
 - product: chrome
+  url: https://bugs.chromium.org/p/chromium/issues/detail?id=1047174
   results:
   - test: background-position-computed.html
   - test: background-position-x-computed.html
   - test: background-position-y-computed.html
-  url: https://bugs.chromium.org/p/chromium/issues/detail?id=1047174
 - product: chrome
-  results:
-  - subtest: e.style['border'] = "5px dotted blue" should set border-image-outset
-    test: border-shorthand.html
-  - subtest: e.style['border'] = "5px dotted blue" should set border-image-repeat
-    test: border-shorthand.html
-  - subtest: e.style['border'] = "5px dotted blue" should set border-image-slice
-    test: border-shorthand.html
-  - subtest: e.style['border'] = "5px dotted blue" should set border-image-source
-    test: border-shorthand.html
-  - subtest: e.style['border'] = "5px dotted blue" should set border-image-width
-    test: border-shorthand.html
-  - subtest: e.style['border-top'] = "thin" should set border-top-color
-    test: border-shorthand.html
-  - subtest: e.style['border-top'] = "thin" should set border-top-style
-    test: border-shorthand.html
-  - subtest: e.style['border-right'] = "double" should set border-right-color
-    test: border-shorthand.html
-  - subtest: e.style['border-right'] = "double" should set border-right-width
-    test: border-shorthand.html
-  - subtest: e.style['border-bottom'] = "green" should set border-bottom-style
-    test: border-shorthand.html
-  - subtest: e.style['border-bottom'] = "green" should set border-bottom-width
-    test: border-shorthand.html
   url: https://bugs.chromium.org/p/chromium/issues/detail?id=1188410
+  results:
+  - test: border-shorthand.html
+    subtest: e.style['border'] = "5px dotted blue" should set border-image-outset
+  - test: border-shorthand.html
+    subtest: e.style['border'] = "5px dotted blue" should set border-image-repeat
+  - test: border-shorthand.html
+    subtest: e.style['border'] = "5px dotted blue" should set border-image-slice
+  - test: border-shorthand.html
+    subtest: e.style['border'] = "5px dotted blue" should set border-image-source
+  - test: border-shorthand.html
+    subtest: e.style['border'] = "5px dotted blue" should set border-image-width
+  - test: border-shorthand.html
+    subtest: e.style['border-top'] = "thin" should set border-top-color
+  - test: border-shorthand.html
+    subtest: e.style['border-top'] = "thin" should set border-top-style
+  - test: border-shorthand.html
+    subtest: e.style['border-right'] = "double" should set border-right-color
+  - test: border-shorthand.html
+    subtest: e.style['border-right'] = "double" should set border-right-width
+  - test: border-shorthand.html
+    subtest: e.style['border-bottom'] = "green" should set border-bottom-style
+  - test: border-shorthand.html
+    subtest: e.style['border-bottom'] = "green" should set border-bottom-width
 - product: chrome
+  url: https://bugs.chromium.org/p/chromium/issues/detail?id=1188413
   results:
   - test: background-image-valid.html
-  url: https://bugs.chromium.org/p/chromium/issues/detail?id=1188413
 - product: chrome
-  results:
-  - subtest: e.style['background-image'] = "cross-fade(50% url(http://www.example.com),
-      50% url(http://www.example.com))" should set the property value
-    test: background-image-valid.html
-  - subtest: e.style['background-image'] = "cross-fade(33% red, 33% white, blue)"
-      should set the property value
-    test: background-image-valid.html
-  - subtest: e.style['background-image'] = "cross-fade(blue, linear-gradient(90deg,
-      rgb(2, 0, 36) 0%, rgb(0, 212, 255) 100%))" should set the property value
-    test: background-image-valid.html
   url: https://bugs.chromium.org/p/chromium/issues/detail?id=614906
-- product: firefox
   results:
-  - subtest: Property border-radius value '1px'
-    test: border-radius-computed.html
-  - subtest: Property border-radius value '1px 2% 3px 4%'
-    test: border-radius-computed.html
-  - subtest: Property border-radius value '5em / 1px 2% 3px 4%'
-    test: border-radius-computed.html
-  - subtest: Property border-radius value '1px 2% 3px 4% / 5em'
-    test: border-radius-computed.html
-  - subtest: Property border-radius value '1px 1px 1px 2% / 1px 2% 1px 2%'
-    test: border-radius-computed.html
-  - subtest: Property border-radius value '1px 1px 1px 1px / 1px 1px 2% 1px'
-    test: border-radius-computed.html
-  - subtest: Property border-radius value '1px 1px 2% 2%'
-    test: border-radius-computed.html
-  - subtest: Property border-radius value '1px 2% 1px 1px'
-    test: border-radius-computed.html
-  - subtest: Property border-radius value '1px 2% 2% 2% / 1px 2% 3px 2%'
-    test: border-radius-computed.html
+  - test: background-image-valid.html
+    subtest: e.style['background-image'] = "cross-fade(50% url(http://www.example.com),
+      50% url(http://www.example.com))" should set the property value
+  - test: background-image-valid.html
+    subtest: e.style['background-image'] = "cross-fade(33% red, 33% white, blue)"
+      should set the property value
+  - test: background-image-valid.html
+    subtest: e.style['background-image'] = "cross-fade(blue, linear-gradient(90deg,
+      rgb(2, 0, 36) 0%, rgb(0, 212, 255) 100%))" should set the property value
+- product: firefox
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1702143
+  results:
+  - test: border-radius-computed.html
+    subtest: Property border-radius value '1px'
+  - test: border-radius-computed.html
+    subtest: Property border-radius value '1px 2% 3px 4%'
+  - test: border-radius-computed.html
+    subtest: Property border-radius value '5em / 1px 2% 3px 4%'
+  - test: border-radius-computed.html
+    subtest: Property border-radius value '1px 2% 3px 4% / 5em'
+  - test: border-radius-computed.html
+    subtest: Property border-radius value '1px 1px 1px 2% / 1px 2% 1px 2%'
+  - test: border-radius-computed.html
+    subtest: Property border-radius value '1px 1px 1px 1px / 1px 1px 2% 1px'
+  - test: border-radius-computed.html
+    subtest: Property border-radius value '1px 1px 2% 2%'
+  - test: border-radius-computed.html
+    subtest: Property border-radius value '1px 2% 1px 1px'
+  - test: border-radius-computed.html
+    subtest: Property border-radius value '1px 2% 2% 2% / 1px 2% 3px 2%'
 - label: interop-2023-cssborderimage
   results:
-  - test: border-image-outset-invalid.html
   - test: border-image-width-computed.html
-  - test: border-image-invalid.html
   - test: border-image-source-computed.sub.html
   - test: border-image-width-invalid.html
   - test: border-image-slice-valid.html
-  - test: border-image-shorthand.sub.html
-  - test: border-image-slice-computed.html
   - test: border-image-slice-invalid.html
   - test: border-image-valid.html
   - test: border-image-width-valid.html
-  - test: border-image-repeat-computed.html
-  - test: border-image-outset-valid.html
-  - test: border-image-repeat-invalid.html
-  - test: border-image-repeat-valid.html
   - test: border-image-source-invalid.html
   - test: border-image-source-valid.html
-  - test: border-image-outset-computed.html
-  url: ''
 - product: firefox
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1887243
   results:
   - test: background-position-x-computed.html
   - test: background-position-y-computed.html
   - test: background-position-computed.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1887243
 - product: firefox
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1887244
   results:
   - test: background-size-computed.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1887244
 - product: firefox
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1887247
   results:
   - test: background-origin-computed.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1887247
 - product: firefox
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1887251
   results:
   - test: background-computed.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1887251
 - product: firefox
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1887248
   results:
   - test: background-clip-computed.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1887248
 - product: firefox
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1887249
   results:
   - test: background-attachment-computed.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1887249
 - product: firefox
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1887246
   results:
   - test: background-repeat-computed.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1887246
 - product: firefox
-  results:
-  - subtest: Property background-image value 'conic-gradient(red 0deg, gold 1turn)'
-    test: background-image-computed.sub.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1911808
-- product: firefox
   results:
-  - subtest: Property background-attachment value 'local'
-    test: background-computed.html
-  - subtest: Property background-attachment value 'scroll, fixed'
-    test: background-computed.html
-  - subtest: Property background-attachment value 'local, fixed, scroll, fixed'
-    test: background-computed.html
-  - subtest: Property background-clip value 'border-box'
-    test: background-computed.html
-  - subtest: Property background-clip value 'content-box, border-box'
-    test: background-computed.html
-  - subtest: Property background-clip value 'content-box, border-box, padding-box,
-      content-box'
-    test: background-computed.html
-  - subtest: Property background-origin value 'border-box'
-    test: background-computed.html
-  - subtest: Property background-origin value 'content-box, border-box'
-    test: background-computed.html
-  - subtest: Property background-origin value 'content-box, border-box, padding-box,
-      content-box'
-    test: background-computed.html
-  - subtest: Property background-position value '50% 6px'
-    test: background-computed.html
-  - subtest: Property background-position value '12px 13px, 50% 6px'
-    test: background-computed.html
-  - subtest: Property background-position value '12px 13px, 50% 6px, 30px -10px, -7px
-      8px'
-    test: background-computed.html
-  - subtest: Property background-position-x value '0.5em'
-    test: background-computed.html
-  - subtest: Property background-position-x value '-20%, 10px'
-    test: background-computed.html
-  - subtest: Property background-position-x value 'calc(10px - 0.5em), -20%, right,
-      15%'
-    test: background-computed.html
-  - subtest: Property background-position-y value '0.5em'
-    test: background-computed.html
-  - subtest: Property background-position-y value '-20%, 10px'
-    test: background-computed.html
-  - subtest: Property background-position-y value 'calc(10px - 0.5em), -20%, bottom,
-      15%'
-    test: background-computed.html
-  - subtest: Property background-repeat value 'round'
-    test: background-computed.html
-  - subtest: Property background-repeat value 'repeat-x, repeat'
-    test: background-computed.html
-  - subtest: Property background-repeat value 'repeat-y, round no-repeat, repeat-x,
-      repeat'
-    test: background-computed.html
-  - subtest: Property background-size value 'contain'
-    test: background-computed.html
-  - subtest: Property background-size value 'auto 1px, 2% 3%'
-    test: background-computed.html
-  - subtest: Property background-size value 'auto 1px, 2% 3%, contain'
-    test: background-computed.html
-  - subtest: Property background-size value 'auto 1px, 2% 3%, contain, 7px 8px'
-    test: background-computed.html
+  - test: background-image-computed.sub.html
+    subtest: Property background-image value 'conic-gradient(red 0deg, gold 1turn)'
+- product: firefox
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1914298
-- product: firefox
   results:
-  - subtest: e.style['background'] = "none" should set background-color
-    test: background-valid.html
+  - test: background-computed.html
+    subtest: Property background-attachment value 'local'
+  - test: background-computed.html
+    subtest: Property background-attachment value 'scroll, fixed'
+  - test: background-computed.html
+    subtest: Property background-attachment value 'local, fixed, scroll, fixed'
+  - test: background-computed.html
+    subtest: Property background-clip value 'border-box'
+  - test: background-computed.html
+    subtest: Property background-clip value 'content-box, border-box'
+  - test: background-computed.html
+    subtest: Property background-clip value 'content-box, border-box, padding-box,
+      content-box'
+  - test: background-computed.html
+    subtest: Property background-origin value 'border-box'
+  - test: background-computed.html
+    subtest: Property background-origin value 'content-box, border-box'
+  - test: background-computed.html
+    subtest: Property background-origin value 'content-box, border-box, padding-box,
+      content-box'
+  - test: background-computed.html
+    subtest: Property background-position value '50% 6px'
+  - test: background-computed.html
+    subtest: Property background-position value '12px 13px, 50% 6px'
+  - test: background-computed.html
+    subtest: Property background-position value '12px 13px, 50% 6px, 30px -10px, -7px
+      8px'
+  - test: background-computed.html
+    subtest: Property background-position-x value '0.5em'
+  - test: background-computed.html
+    subtest: Property background-position-x value '-20%, 10px'
+  - test: background-computed.html
+    subtest: Property background-position-x value 'calc(10px - 0.5em), -20%, right,
+      15%'
+  - test: background-computed.html
+    subtest: Property background-position-y value '0.5em'
+  - test: background-computed.html
+    subtest: Property background-position-y value '-20%, 10px'
+  - test: background-computed.html
+    subtest: Property background-position-y value 'calc(10px - 0.5em), -20%, bottom,
+      15%'
+  - test: background-computed.html
+    subtest: Property background-repeat value 'round'
+  - test: background-computed.html
+    subtest: Property background-repeat value 'repeat-x, repeat'
+  - test: background-computed.html
+    subtest: Property background-repeat value 'repeat-y, round no-repeat, repeat-x,
+      repeat'
+  - test: background-computed.html
+    subtest: Property background-size value 'contain'
+  - test: background-computed.html
+    subtest: Property background-size value 'auto 1px, 2% 3%'
+  - test: background-computed.html
+    subtest: Property background-size value 'auto 1px, 2% 3%, contain'
+  - test: background-computed.html
+    subtest: Property background-size value 'auto 1px, 2% 3%, contain, 7px 8px'
+- product: firefox
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1917052
-- product: firefox
   results:
-  - subtest: Property border-image-outset value 'calc(10 + (sign(2cqw - 10px) * 5))'
-    test: border-image-outset-computed.html
-  - subtest: Property border-image-outset value 'calc(10 + (sign(2cqw - 10px) * 5))
-      calc(20px + (sign(2cqw - 10px) * 5px)'
-    test: border-image-outset-computed.html
-  - subtest: Property border-image-slice value 'calc(10 + (sign(2cqw - 10px) * 5))'
-    test: border-image-slice-computed.html
-  - subtest: Property border-image-slice value 'calc(10 + (sign(2cqw - 10px) * 5))
-      calc(20% + (sign(2cqw - 10px) * 5%))'
-    test: border-image-slice-computed.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1915977
+  - test: background-valid.html
+    subtest: e.style['background'] = "none" should set background-color
 - product: firefox
-  results:
-  - subtest: border-area border-box
-    test: background-shorthand-serialization.html
-  - subtest: border-area padding-box
-    test: background-shorthand-serialization.html
-  - subtest: e.style['background'] = "border-box content-box" should set background-color
-    test: background-valid.html
-  - subtest: e.style['background'] = "border-area" should set background-attachment
-    test: background-valid.html
-  - subtest: e.style['background'] = "border-area" should set background-clip
-    test: background-valid.html
-  - subtest: e.style['background'] = "border-area" should set background-color
-    test: background-valid.html
-  - subtest: e.style['background'] = "border-area" should set background-image
-    test: background-valid.html
-  - subtest: e.style['background'] = "border-area" should set background-origin
-    test: background-valid.html
-  - subtest: e.style['background'] = "border-area" should set background-position
-    test: background-valid.html
-  - subtest: e.style['background'] = "border-area" should set background-repeat
-    test: background-valid.html
-  - subtest: e.style['background'] = "border-area" should set background-size
-    test: background-valid.html
-  - subtest: e.style['background'] = "border-area" should not set unrelated longhands
-    test: background-valid.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1994124
-- product: firefox
   results:
-  - subtest: background-size with non-initial background-position
-    test: background-shorthand-serialization.html
-  - subtest: multiple backgrounds with varying values
-    test: background-shorthand-serialization.html
+  - test: background-shorthand-serialization.html
+    subtest: border-area border-box
+  - test: background-shorthand-serialization.html
+    subtest: border-area padding-box
+  - test: background-valid.html
+    subtest: e.style['background'] = "border-box content-box" should set background-color
+  - test: background-valid.html
+    subtest: e.style['background'] = "border-area" should set background-attachment
+  - test: background-valid.html
+    subtest: e.style['background'] = "border-area" should set background-clip
+  - test: background-valid.html
+    subtest: e.style['background'] = "border-area" should set background-color
+  - test: background-valid.html
+    subtest: e.style['background'] = "border-area" should set background-image
+  - test: background-valid.html
+    subtest: e.style['background'] = "border-area" should set background-origin
+  - test: background-valid.html
+    subtest: e.style['background'] = "border-area" should set background-position
+  - test: background-valid.html
+    subtest: e.style['background'] = "border-area" should set background-repeat
+  - test: background-valid.html
+    subtest: e.style['background'] = "border-area" should set background-size
+  - test: background-valid.html
+    subtest: e.style['background'] = "border-area" should not set unrelated longhands
+- product: firefox
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1994210
-- product: firefox
   results:
-  - subtest: Property background-clip value 'border-area'
-    test: background-clip-computed.html
-  - subtest: Property background-clip value 'border-box, padding-box, content-box,
-      border-area'
-    test: background-clip-computed.html
-  - subtest: e.style['background-clip'] = "border-area" should set the property value
-    test: background-clip-valid.html
-  - subtest: e.style['background-clip'] = "border-box, padding-box, content-box, border-area"
-      should set the property value
-    test: background-clip-valid.html
-  - subtest: Property background-clip value 'content-box, border-box, border-area'
-    test: background-computed.html
-  - subtest: border-area text sets background-origin to border-box
-    test: background-shorthand-serialization.html
-  - subtest: e.style['background'] = "border-area text" should set background-attachment
-    test: background-valid.html
-  - subtest: e.style['background'] = "border-area text" should set background-image
-    test: background-valid.html
-  - subtest: e.style['background'] = "border-area text" should set background-origin
-    test: background-valid.html
-  - subtest: e.style['background'] = "border-area text" should set background-position
-    test: background-valid.html
-  - subtest: e.style['background'] = "border-area text" should set background-repeat
-    test: background-valid.html
-  - subtest: e.style['background'] = "border-area text" should set background-size
-    test: background-valid.html
-  - subtest: e.style['background'] = "border-area text" should not set unrelated longhands
-    test: background-valid.html
+  - test: background-shorthand-serialization.html
+    subtest: background-size with non-initial background-position
+  - test: background-shorthand-serialization.html
+    subtest: multiple backgrounds with varying values
+- product: firefox
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=2028091
-- product: firefox
   results:
-  - subtest: Property background-clip value 'border-area text'
-    test: background-clip-computed.html
-  - subtest: Property background-clip value 'text border-area'
-    test: background-clip-computed.html
-  - subtest: background shorthand with 'border-area text' computes background-clip
-      correctly
-    test: background-computed.html
-  - subtest: background shorthand with 'text border-area' computes background-clip
-      correctly
-    test: background-computed.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2044914
-- product: firefox
-  results:
-  - subtest: e.style['background-image'] = "cross-fade(50% url(http://www.example.com),
-      50% url(http://www.example.com))" should set the property value
-    test: background-image-valid.html
-  - subtest: e.style['background-image'] = "cross-fade(red 33%, white 33%, blue)"
+  - test: background-clip-computed.html
+    subtest: Property background-clip value 'border-area'
+  - test: background-clip-computed.html
+    subtest: Property background-clip value 'border-box, padding-box, content-box,
+      border-area'
+  - test: background-clip-valid.html
+    subtest: e.style['background-clip'] = "border-area" should set the property value
+  - test: background-clip-valid.html
+    subtest: e.style['background-clip'] = "border-box, padding-box, content-box, border-area"
       should set the property value
-    test: background-image-valid.html
-  - subtest: e.style['background-image'] = "cross-fade( 1% red, green)" should set
-      the property value
-    test: background-image-valid.html
-  - subtest: e.style['background-image'] = "cross-fade(1% red , green)" should set
-      the property value
-    test: background-image-valid.html
-  - subtest: e.style['background-image'] = "cross-fade(1% red, green )" should set
-      the property value
-    test: background-image-valid.html
-  - subtest: e.style['background-image'] = "cross-fade(red 1%, cross-fade(red 2%,
-      green))" should set the property value
-    test: background-image-valid.html
+  - test: background-computed.html
+    subtest: Property background-clip value 'content-box, border-box, border-area'
+  - test: background-shorthand-serialization.html
+    subtest: border-area text sets background-origin to border-box
+  - test: background-valid.html
+    subtest: e.style['background'] = "border-area text" should set background-attachment
+  - test: background-valid.html
+    subtest: e.style['background'] = "border-area text" should set background-image
+  - test: background-valid.html
+    subtest: e.style['background'] = "border-area text" should set background-origin
+  - test: background-valid.html
+    subtest: e.style['background'] = "border-area text" should set background-position
+  - test: background-valid.html
+    subtest: e.style['background'] = "border-area text" should set background-repeat
+  - test: background-valid.html
+    subtest: e.style['background'] = "border-area text" should set background-size
+  - test: background-valid.html
+    subtest: e.style['background'] = "border-area text" should not set unrelated longhands
+- product: firefox
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2044914
+  results:
+  - test: background-clip-computed.html
+    subtest: Property background-clip value 'border-area text'
+  - test: background-clip-computed.html
+    subtest: Property background-clip value 'text border-area'
+  - test: background-computed.html
+    subtest: background shorthand with 'border-area text' computes background-clip
+      correctly
+  - test: background-computed.html
+    subtest: background shorthand with 'text border-area' computes background-clip
+      correctly
+- product: firefox
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=2048059
-- product: firefox
   results:
-  - subtest: e.style['background-clip'] = "border-area text" should set the property
-      value
-    test: background-clip-valid.html
-  - subtest: e.style['background-clip'] = "text border-area" should set the property
-      value
-    test: background-clip-valid.html
-  - subtest: e.style['background-clip'] = "border-area text, content-box" should set
+  - test: background-image-valid.html
+    subtest: e.style['background-image'] = "cross-fade(50% url(http://www.example.com),
+      50% url(http://www.example.com))" should set the property value
+  - test: background-image-valid.html
+    subtest: e.style['background-image'] = "cross-fade(red 33%, white 33%, blue)"
+      should set the property value
+  - test: background-image-valid.html
+    subtest: e.style['background-image'] = "cross-fade( 1% red, green)" should set
       the property value
-    test: background-clip-valid.html
-  - subtest: e.style['background'] = "border-area text" should set background-clip
-    test: background-valid.html
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2058546
+  - test: background-image-valid.html
+    subtest: e.style['background-image'] = "cross-fade(1% red , green)" should set
+      the property value
+  - test: background-image-valid.html
+    subtest: e.style['background-image'] = "cross-fade(1% red, green )" should set
+      the property value
+  - test: background-image-valid.html
+    subtest: e.style['background-image'] = "cross-fade(red 1%, cross-fade(red 2%,
+      green))" should set the property value
 - product: firefox
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2058546
   results:
-  - subtest: initial background-color
-    test: background-shorthand-serialization.html
-  - subtest: border-area text sets background-clip
-    test: background-shorthand-serialization.html
-  - subtest: text border-area serializes as border-area text
-    test: background-shorthand-serialization.html
+  - test: background-clip-valid.html
+    subtest: e.style['background-clip'] = "border-area text" should set the property
+      value
+  - test: background-clip-valid.html
+    subtest: e.style['background-clip'] = "text border-area" should set the property
+      value
+  - test: background-clip-valid.html
+    subtest: e.style['background-clip'] = "border-area text, content-box" should set
+      the property value
+  - test: background-valid.html
+    subtest: e.style['background'] = "border-area text" should set background-clip
+- product: firefox
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=2089606
+  results:
+  - test: background-shorthand-serialization.html
+    subtest: initial background-color
+  - test: background-shorthand-serialization.html
+    subtest: border-area text sets background-clip
+  - test: background-shorthand-serialization.html
+    subtest: text border-area serializes as border-area text
