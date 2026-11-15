@@ -630,3 +630,15 @@ links:
   - subtest: Aborting a smooth scroll with a keyboard event that causes another scroll
     test: user-scroll-interrupts-smooth-scroll.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=2090178
+- product: firefox
+  results:
+  - subtest: Scrolling to the fragment of an HTML document in an <object> scrolls
+      the parent document to the <object>
+    test: scroll-target-into-view-fragment-in-same-origin-subframe.html
+  - subtest: Scrolling to the fragment of an HTML document in an <embed> scrolls the
+      parent document to the <embed>
+    test: scroll-target-into-view-fragment-in-same-origin-subframe.html
+  - subtest: Scrolling to the fragment of an HTML document in an <iframe> scrolls
+      the parent document to the <iframe>
+    test: scroll-target-into-view-fragment-in-same-origin-subframe.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2092993
