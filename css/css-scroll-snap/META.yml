@@ -246,3 +246,9 @@ links:
   - subtest: Snaps to ::column snap areas of an LTR multicol scroll snap container
     test: snap-to-column-scroll-origin.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=2089737
+- product: firefox
+  results:
+  - subtest: Don't snap to an area in negative overflow that can't be scrolled into
+      view, even when it is closer
+    test: snap-to-visible-areas-unreachable.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2093032
