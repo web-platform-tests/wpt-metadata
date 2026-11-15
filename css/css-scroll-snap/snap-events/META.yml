@@ -30,3 +30,9 @@ links:
       is inside a closed shadow root
     test: snap-events-with-shadow-dom.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=2089061
+- product: firefox
+  results:
+  - subtest: Snap events don't expose or crash on a snap target pseudo-element that
+      was disposed since the last layout
+    test: snap-events-with-disposed-pseudo-target.tentative.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2093045
