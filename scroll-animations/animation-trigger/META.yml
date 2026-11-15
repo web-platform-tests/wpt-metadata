@@ -128,3 +128,15 @@ links:
   - subtest: play behavior does not restart a finished animation
     test: animation-trigger-play.tentative.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=2089060
+- product: firefox
+  results:
+  - subtest: Timeline snapshot update handles trigger set and animation map shrinking
+      during OnValidateSnapshot while performing all original trigger actions
+    test: animation-trigger-removed-during-snapshot.tentative.html
+  - subtest: Timeline snapshot update handles timeline trigger set shrinking during
+      OnValidateSnapshot even when active trigger's animation map is unchanged
+    test: animation-trigger-removed-during-snapshot.tentative.html
+  - subtest: Timeline snapshot update handles trigger set shrinking during TimelineTrigger::Update
+      while performing all original trigger actions
+    test: animation-trigger-removed-during-snapshot.tentative.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2093041
