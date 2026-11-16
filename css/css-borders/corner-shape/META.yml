@@ -875,3 +875,24 @@ links:
   - test: corner-shape-superellipse-concave.html
   - test: render-corner-shape.html?corner-shape=bevel&border-top-right-radius=100%,50&border-width=10&border-top-width=40
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=2092887
+- product: firefox
+  results:
+  - subtest: e.style['corner'] = "10px bevel" should set border-bottom-left-radius
+    test: corner-valid.html
+  - subtest: e.style['corner'] = "10px bevel" should set border-bottom-right-radius
+    test: corner-valid.html
+  - subtest: e.style['corner'] = "10px bevel" should set border-top-left-radius
+    test: corner-valid.html
+  - subtest: e.style['corner'] = "10px bevel" should set border-top-right-radius
+    test: corner-valid.html
+  - subtest: e.style['corner'] = "10px bevel" should set corner-bottom-left-shape
+    test: corner-valid.html
+  - subtest: e.style['corner'] = "10px bevel" should set corner-bottom-right-shape
+    test: corner-valid.html
+  - subtest: e.style['corner'] = "10px bevel" should set corner-top-left-shape
+    test: corner-valid.html
+  - subtest: e.style['corner'] = "10px bevel" should set corner-top-right-shape
+    test: corner-valid.html
+  - subtest: e.style['corner'] = "10px bevel" should not set unrelated longhands
+    test: corner-valid.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2093685
