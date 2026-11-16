@@ -335,3 +335,94 @@ links:
   - subtest: MathML elements should preserve structure and content during copy-paste
     test: mathml-html-serializtion-on-copy.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=2088502
+- product: firefox
+  results:
+  - subtest: <p contenteditable style="display:inline-block; white-space:pre-line"><span
+      style="display:block;white-space:normal">a[]b</span></p>
+    test: insertparagraph-in-editing-host-cannot-have-div.tentative.html?host=p&white-space=pre-line&display=inline-block&command=insertParagraph
+  - subtest: <p contenteditable style="display:inline-block; white-space:pre-line"><span
+      style="display:block;white-space:normal">a[]b</span></p>
+    test: insertparagraph-in-editing-host-cannot-have-div.tentative.html?host=p&white-space=pre-line&display=inline-block&command=insertText
+  - subtest: <p contenteditable style="display:inline-block; white-space:pre-line"><div>a[]b</div></p>
+    test: insertparagraph-in-editing-host-cannot-have-div.tentative.html?host=p&white-space=pre-line&display=inline-block&command=insertText
+  - subtest: <p contenteditable style="display:block; white-space:pre"><span style="display:block;white-space:normal">a[]b</span></p>
+    test: insertparagraph-in-editing-host-cannot-have-div.tentative.html?host=p&white-space=pre&display=block&command=insertText
+  - subtest: <p contenteditable style="display:block; white-space:pre"><div>a[]b</div></p>
+    test: insertparagraph-in-editing-host-cannot-have-div.tentative.html?host=p&white-space=pre&display=block&command=insertText
+  - subtest: <p contenteditable style="display:inline; white-space:pre-line"><span
+      style="display:block;white-space:normal">a[]b</span></p>
+    test: insertparagraph-in-editing-host-cannot-have-div.tentative.html?host=p&white-space=pre-line&display=inline&command=insertParagraph
+  - subtest: <p contenteditable style="display:block; white-space:pre-line"><span
+      style="display:block;white-space:normal">a[]b</span></p>
+    test: insertparagraph-in-editing-host-cannot-have-div.tentative.html?host=p&white-space=pre-line&display=block&command=insertText
+  - subtest: <p contenteditable style="display:block; white-space:pre-line"><div>a[]b</div></p>
+    test: insertparagraph-in-editing-host-cannot-have-div.tentative.html?host=p&white-space=pre-line&display=block&command=insertText
+  - subtest: <p contenteditable style="display:inline-block; white-space:normal"><span
+      style="display:block;white-space:normal">a[]b</span></p>
+    test: insertparagraph-in-editing-host-cannot-have-div.tentative.html?host=p&white-space=normal&display=inline-block&command=insertText
+  - subtest: <p contenteditable style="display:inline-block; white-space:normal"><div>a[]b</div></p>
+    test: insertparagraph-in-editing-host-cannot-have-div.tentative.html?host=p&white-space=normal&display=inline-block&command=insertText
+  - subtest: <p contenteditable style="display:inline; white-space:normal"><span style="display:block;white-space:normal">a[]b</span></p>
+    test: insertparagraph-in-editing-host-cannot-have-div.tentative.html?host=p&white-space=normal&display=inline&command=insertParagraph
+  - subtest: <p contenteditable style="display:inline; white-space:pre"><span style="display:block;white-space:normal">a[]b</span></p>
+    test: insertparagraph-in-editing-host-cannot-have-div.tentative.html?host=p&white-space=pre&display=inline&command=insertText
+  - subtest: <p contenteditable style="display:inline; white-space:pre"><div>a[]b</div></p>
+    test: insertparagraph-in-editing-host-cannot-have-div.tentative.html?host=p&white-space=pre&display=inline&command=insertText
+  - subtest: <p contenteditable style="display:inline; white-space:pre-wrap"><span
+      style="display:block;white-space:normal">a[]b</span></p>
+    test: insertparagraph-in-editing-host-cannot-have-div.tentative.html?host=p&white-space=pre-wrap&display=inline&command=insertParagraph
+  - subtest: <p contenteditable style="display:inline-block; white-space:pre-wrap"><span
+      style="display:block;white-space:normal">a[]b</span></p>
+    test: insertparagraph-in-editing-host-cannot-have-div.tentative.html?host=p&white-space=pre-wrap&display=inline-block&command=insertText
+  - subtest: <p contenteditable style="display:inline-block; white-space:pre-wrap"><div>a[]b</div></p>
+    test: insertparagraph-in-editing-host-cannot-have-div.tentative.html?host=p&white-space=pre-wrap&display=inline-block&command=insertText
+  - subtest: <p contenteditable style="display:inline; white-space:pre-line"><span
+      style="display:block;white-space:normal">a[]b</span></p>
+    test: insertparagraph-in-editing-host-cannot-have-div.tentative.html?host=p&white-space=pre-line&display=inline&command=insertText
+  - subtest: <p contenteditable style="display:inline; white-space:pre-line"><div>a[]b</div></p>
+    test: insertparagraph-in-editing-host-cannot-have-div.tentative.html?host=p&white-space=pre-line&display=inline&command=insertText
+  - subtest: <p contenteditable style="display:block; white-space:pre-wrap"><span
+      style="display:block;white-space:normal">a[]b</span></p>
+    test: insertparagraph-in-editing-host-cannot-have-div.tentative.html?host=p&white-space=pre-wrap&display=block&command=insertParagraph
+  - subtest: <p contenteditable style="display:block; white-space:pre"><span style="display:block;white-space:normal">a[]b</span></p>
+    test: insertparagraph-in-editing-host-cannot-have-div.tentative.html?host=p&white-space=pre&display=block&command=insertParagraph
+  - subtest: <p contenteditable style="display:inline-block; white-space:normal"><span
+      style="display:block;white-space:normal">a[]b</span></p>
+    test: insertparagraph-in-editing-host-cannot-have-div.tentative.html?host=p&white-space=normal&display=inline-block&command=insertParagraph
+  - subtest: <p contenteditable style="display:inline-block; white-space:pre-wrap"><span
+      style="display:block;white-space:normal">a[]b</span></p>
+    test: insertparagraph-in-editing-host-cannot-have-div.tentative.html?host=p&white-space=pre-wrap&display=inline-block&command=insertParagraph
+  - subtest: <p contenteditable style="display:block; white-space:normal"><span style="display:block;white-space:normal">a[]b</span></p>
+    test: insertparagraph-in-editing-host-cannot-have-div.tentative.html?host=p&white-space=normal&display=block&command=insertParagraph
+  - subtest: <p contenteditable style="display:inline; white-space:normal"><span style="display:block;white-space:normal">a[]b</span></p>
+    test: insertparagraph-in-editing-host-cannot-have-div.tentative.html?host=p&white-space=normal&display=inline&command=insertText
+  - subtest: <p contenteditable style="display:inline; white-space:normal"><div>a[]b</div></p>
+    test: insertparagraph-in-editing-host-cannot-have-div.tentative.html?host=p&white-space=normal&display=inline&command=insertText
+  - subtest: <p contenteditable style="display:inline; white-space:pre-wrap"><span
+      style="display:block;white-space:normal">a[]b</span></p>
+    test: insertparagraph-in-editing-host-cannot-have-div.tentative.html?host=p&white-space=pre-wrap&display=inline&command=insertText
+  - subtest: <p contenteditable style="display:inline; white-space:pre-wrap"><div>a[]b</div></p>
+    test: insertparagraph-in-editing-host-cannot-have-div.tentative.html?host=p&white-space=pre-wrap&display=inline&command=insertText
+  - subtest: <p contenteditable style="display:block; white-space:pre-line"><span
+      style="display:block;white-space:normal">a[]b</span></p>
+    test: insertparagraph-in-editing-host-cannot-have-div.tentative.html?host=p&white-space=pre-line&display=block&command=insertParagraph
+  - subtest: <p contenteditable style="display:inline-block; white-space:pre"><span
+      style="display:block;white-space:normal">a[]b</span></p>
+    test: insertparagraph-in-editing-host-cannot-have-div.tentative.html?host=p&white-space=pre&display=inline-block&command=insertText
+  - subtest: <p contenteditable style="display:inline-block; white-space:pre"><div>a[]b</div></p>
+    test: insertparagraph-in-editing-host-cannot-have-div.tentative.html?host=p&white-space=pre&display=inline-block&command=insertText
+  - subtest: <p contenteditable style="display:block; white-space:pre-wrap"><span
+      style="display:block;white-space:normal">a[]b</span></p>
+    test: insertparagraph-in-editing-host-cannot-have-div.tentative.html?host=p&white-space=pre-wrap&display=block&command=insertText
+  - subtest: <p contenteditable style="display:block; white-space:pre-wrap"><div>a[]b</div></p>
+    test: insertparagraph-in-editing-host-cannot-have-div.tentative.html?host=p&white-space=pre-wrap&display=block&command=insertText
+  - subtest: <p contenteditable style="display:inline; white-space:pre"><span style="display:block;white-space:normal">a[]b</span></p>
+    test: insertparagraph-in-editing-host-cannot-have-div.tentative.html?host=p&white-space=pre&display=inline&command=insertParagraph
+  - subtest: <p contenteditable style="display:block; white-space:normal"><span style="display:block;white-space:normal">a[]b</span></p>
+    test: insertparagraph-in-editing-host-cannot-have-div.tentative.html?host=p&white-space=normal&display=block&command=insertText
+  - subtest: <p contenteditable style="display:block; white-space:normal"><div>a[]b</div></p>
+    test: insertparagraph-in-editing-host-cannot-have-div.tentative.html?host=p&white-space=normal&display=block&command=insertText
+  - subtest: <p contenteditable style="display:inline-block; white-space:pre"><span
+      style="display:block;white-space:normal">a[]b</span></p>
+    test: insertparagraph-in-editing-host-cannot-have-div.tentative.html?host=p&white-space=pre&display=inline-block&command=insertParagraph
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2093307
