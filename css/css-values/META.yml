@@ -3801,3 +3801,9 @@ links:
   - subtest: Property width value 'clamp(NaN * 1px, 50%, 100px)'
     test: calc-infinity-nan-computed.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=2092392
+- product: firefox
+  results:
+  - subtest: A taint-only destination change must rebuild an active registered-property
+      transition
+    test: attr-security-transition-retarget-taint.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2093221
