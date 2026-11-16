@@ -775,3 +775,16 @@ links:
   - subtest: :host resolves local var referencing nested function of outer-scope function
     test: function-shadow.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=2078577
+- product: firefox
+  results:
+  - subtest: Local variable with initial keyword, typed
+    test: dashed-function-eval.html
+  - subtest: Local variable with initial keyword, typed, defaulted
+    test: dashed-function-eval.html
+  - subtest: Local variable with initial keyword, typed, invalid argument
+    test: dashed-function-eval.html
+  - subtest: Local variable with initial keyword, typed, no value via IACVT-capture
+    test: dashed-function-eval.html
+  - subtest: Local variable with initial keyword, complex typed
+    test: dashed-function-eval.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2093217
