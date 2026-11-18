@@ -1,49 +1,59 @@
 links:
-    - product: chrome
-      url: https://crbug.com/708345
-      results:
-        - test: extra-height-given-to-all-row-groups-001.html
-        - test: extra-height-given-to-all-row-groups-003.html
-        - test: extra-height-given-to-all-row-groups-004.html
-        - test: extra-height-given-to-all-row-groups-005.html
-    - product: chrome
-      url: https://crbug.com/353580
-      results:
-        - test: percentage-sizing-of-table-cell-children-005.html
-    - product: chrome
-      url: https://bugs.chromium.org/p/chromium/issues/detail?id=1171616
-      results:
-        - test: percentage-sizing-of-table-cell-children.html
-    - product: chrome
-      url: https://bugs.chromium.org/p/chromium/issues/detail?id=1157330
-      results:
-        - test: computing-row-measure-0.html
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1720414
-      results:
-        - test: percentage-sizing-of-table-cell-007.html
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1855785
-      results:
-        - test: percentage-sizing-of-table-cell-children-002.html
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1855784
-      results:
-        - test: percentage-sizing-of-table-cell-replaced-children-001.html
-    - product: firefox
-      url: https://bugzilla.mozilla.org/show_bug.cgi?id=1855788
-      results:
-        - test: percentage-sizing-of-table-cell-children.html
-    - product: safari
-      url: https://bugs.webkit.org/show_bug.cgi?id=306592
-      results:
-        - test: computing-row-measure-0.html
-          subtest: Checking intermediate min-content height for span 1 (2)
-        - test: computing-row-measure-0.html
-          subtest: Checking intermediate min-content height for span 1 (4)
-    - product: safari
-      url: https://bugs.webkit.org/show_bug.cgi?id=306498
-      results:
-        - test: extra-height-given-to-all-row-groups-003.html
-        - test: extra-height-given-to-all-row-groups-001.html
-        - test: extra-height-given-to-all-row-groups-005.html
+- product: chrome
+  results:
+  - test: extra-height-given-to-all-row-groups-001.html
+  - test: extra-height-given-to-all-row-groups-003.html
+  - test: extra-height-given-to-all-row-groups-004.html
+  - test: extra-height-given-to-all-row-groups-005.html
+  url: https://crbug.com/708345
+- product: chrome
+  results:
+  - test: percentage-sizing-of-table-cell-children-005.html
+  url: https://crbug.com/353580
+- product: chrome
+  results:
+  - test: percentage-sizing-of-table-cell-children.html
+  url: https://bugs.chromium.org/p/chromium/issues/detail?id=1171616
+- product: chrome
+  results:
+  - test: computing-row-measure-0.html
+  url: https://bugs.chromium.org/p/chromium/issues/detail?id=1157330
+- product: firefox
+  results:
+  - test: percentage-sizing-of-table-cell-007.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1720414
+- product: firefox
+  results:
+  - test: percentage-sizing-of-table-cell-children-002.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1855785
+- product: firefox
+  results:
+  - test: percentage-sizing-of-table-cell-replaced-children-001.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1855784
+- product: firefox
+  results:
+  - test: percentage-sizing-of-table-cell-children.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1855788
+- product: safari
+  results:
+  - subtest: Checking intermediate min-content height for span 1 (2)
+    test: computing-row-measure-0.html
+  - subtest: Checking intermediate min-content height for span 1 (4)
+    test: computing-row-measure-0.html
+  url: https://bugs.webkit.org/show_bug.cgi?id=306592
+- product: safari
+  results:
+  - test: extra-height-given-to-all-row-groups-003.html
+  - test: extra-height-given-to-all-row-groups-001.html
+  - test: extra-height-given-to-all-row-groups-005.html
+  url: https://bugs.webkit.org/show_bug.cgi?id=306498
+- product: firefox
+  results:
+  - subtest: Percentages resolve based on the row height
+    test: percentage-sizing-of-table-cell-children.html
+  - subtest: Percentages resolve based on the final row height
+    test: percentage-sizing-of-table-cell-children.html
+  - subtest: Unresolvable percentage heights are resolved as 0px in first pass (scrollable
+      overflow)
+    test: percentage-sizing-of-table-cell-children.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2094750
