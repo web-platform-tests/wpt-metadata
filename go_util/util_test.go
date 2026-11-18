@@ -309,3 +309,17 @@ links:
 	assert.Equal(t, 2, len(metadata.Links[0].Results))
 	assert.Equal(t, "border-image-2.html", metadata.Links[0].Results[1].TestPath)
 }
+
+func TestSplitTestPath(t *testing.T) {
+	dir, name := SplitTestPath("a/b/c.html")
+	assert.Equal(t, "a/b", dir)
+	assert.Equal(t, "c.html", name)
+
+	dir, name = SplitTestPath("a/b/c.html?x=/y/z")
+	assert.Equal(t, "a/b", dir)
+	assert.Equal(t, "c.html?x=/y/z", name)
+}
+
+func TestGetYMLFilePath_Variant(t *testing.T) {
+	assert.Equal(t, "a/b/META.yml", getYMLFilePath("a/b/c.html?url=/d/e"))
+}

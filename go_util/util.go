@@ -10,6 +10,7 @@ import (
 	"log"
 	"os"
 	"path"
+	"strings"
 
 	"github.com/web-platform-tests/wpt.fyi/shared"
 	"go.yaml.in/yaml/v4"
@@ -46,7 +47,7 @@ func appendMetadataLink(testName string, link shared.MetadataLink, metadata *sha
 // Directories and META.yml files are created as needed, or an existing one may
 // be updated.
 func WriteMetadataLink(testName string, link shared.MetadataLink) {
-	dirpath := path.Dir(testName)
+	dirpath, _ := SplitTestPath(testName)
 	os.MkdirAll(dirpath, os.ModePerm)
 
 	// Open the META.yml file that we would write to, if it exists. In the case
@@ -141,7 +142,7 @@ func DeleteTestFromMetadata(testPath string) shared.MetadataLinks {
 		return shared.MetadataLinks{}
 	}
 
-	testname := path.Base(testPath)
+	_, testname := SplitTestPath(testPath)
 	newMetadata, metadataLinks := deleteMetadata(testname, *metadata)
 	// Nothing is deleted.
 	if len(metadataLinks) == 0 {
@@ -219,5 +220,18 @@ func removeMetadataFile(testPath string) {
 }
 
 func getYMLFilePath(testPath string) string {
-	return path.Dir(testPath) + "/META.yml"
+	dir, _ := SplitTestPath(testPath)
+	return dir + "/META.yml"
+}
+
+// SplitTestPath splits a WPT test path into its directory and its test name
+// as used in META.yml. Any variant query string stays part of the test name,
+// and slashes inside it are not treated as path separators; e.g.
+// "a/b.html?x=/y" splits into "a" and "b.html?x=/y".
+func SplitTestPath(testPath string) (dir, name string) {
+	filePath, query := testPath, ""
+	if i := strings.Index(testPath, "?"); i >= 0 {
+		filePath, query = testPath[:i], testPath[i:]
+	}
+	return path.Dir(filePath), path.Base(filePath) + query
 }
