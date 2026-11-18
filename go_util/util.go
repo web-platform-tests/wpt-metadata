@@ -21,7 +21,10 @@ func appendMetadataLink(testName string, link shared.MetadataLink, metadata *sha
 	// with it.
 	hasAdded := false
 	for index, existingLink := range metadata.Links {
-		if existingLink.URL == link.URL && link.Product.MatchesProductSpec(existingLink.Product) {
+		// Label links have no URL or product, so the label must match too;
+		// otherwise tests would be merged into an unrelated label.
+		if existingLink.URL == link.URL && existingLink.Label == link.Label &&
+			link.Product.MatchesProductSpec(existingLink.Product) {
 			fmt.Println("APPEND-LINK: for test", testName, "with url", link.URL)
 			metadata.Links[index].Results = append(existingLink.Results, link.Results...)
 			hasAdded = true
