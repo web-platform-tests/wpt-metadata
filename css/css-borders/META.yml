@@ -57,6 +57,9 @@ links:
   - test: border-image-slice-shorthand-reset.html
   - test: border-image-slice-percentage.html
   - test: border-image-repeat-round.html
+  - test: css3-border-image-repeat-repeat.html
+  - test: css3-border-image-repeat-stretch.html
+  - test: css3-border-image-source.html
 - product: firefox
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1819485
   results:
@@ -73,6 +76,8 @@ links:
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1820659
   results:
   - test: border-image-repeat-repeat-001.html
+    subtest: Test status
+  - test: css3-border-image-repeat-repeat.html
     subtest: Test status
 - product: chrome
   url: https://bugs.chromium.org/p/chromium/issues/detail?id=1175040
@@ -98,3 +103,15 @@ links:
   results:
   - test: border-image-repeat-005.html
     status: FAIL
+- product: firefox
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1635535
+  results:
+  - test: css-border-radius-001.html
+- product: firefox
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1825862
+  results:
+  - test: css-border-radius-001.html
+- label: interop-2023-color
+  results:
+  - test: color-mix-currentcolor-border-repaint-parent.html
+  - test: color-mix-currentcolor-border-repaint.html
