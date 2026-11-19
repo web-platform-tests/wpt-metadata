@@ -253,3 +253,73 @@ func TestWriteMetadataLink_FileIO_OverwritesCorrectly(t *testing.T) {
 	assert.Equal(t, "a.html", metadata.Links[0].Results[0].TestPath)
 	assert.Equal(t, "d.html", metadata.Links[0].Results[1].TestPath)
 }
+
+func TestAppendMetadataLink_DifferentLabelAddsNewLink(t *testing.T) {
+	var amendment shared.MetadataLink
+	json.Unmarshal([]byte(`
+		{
+			"label": "interop-2023-color",
+			"results": [
+				{"test": "color-mix.html"}
+			]
+		}
+	`), &amendment)
+
+	fileInBytes := []byte(`
+links:
+  - label: interop-2023-cssborderimage
+    results:
+    - test: border-image.html
+`)
+	var metadata shared.Metadata
+	yaml.Unmarshal(fileInBytes, &metadata)
+
+	appendMetadataLink("abc", amendment, &metadata)
+
+	assert.Equal(t, 2, len(metadata.Links))
+	assert.Equal(t, "interop-2023-cssborderimage", metadata.Links[0].Label)
+	assert.Equal(t, 1, len(metadata.Links[0].Results))
+	assert.Equal(t, "interop-2023-color", metadata.Links[1].Label)
+	assert.Equal(t, "color-mix.html", metadata.Links[1].Results[0].TestPath)
+}
+
+func TestAppendMetadataLink_SameLabelAppendsResult(t *testing.T) {
+	var amendment shared.MetadataLink
+	json.Unmarshal([]byte(`
+		{
+			"label": "interop-2023-cssborderimage",
+			"results": [
+				{"test": "border-image-2.html"}
+			]
+		}
+	`), &amendment)
+
+	fileInBytes := []byte(`
+links:
+  - label: interop-2023-cssborderimage
+    results:
+    - test: border-image.html
+`)
+	var metadata shared.Metadata
+	yaml.Unmarshal(fileInBytes, &metadata)
+
+	appendMetadataLink("abc", amendment, &metadata)
+
+	assert.Equal(t, 1, len(metadata.Links))
+	assert.Equal(t, 2, len(metadata.Links[0].Results))
+	assert.Equal(t, "border-image-2.html", metadata.Links[0].Results[1].TestPath)
+}
+
+func TestSplitTestPath(t *testing.T) {
+	dir, name := SplitTestPath("a/b/c.html")
+	assert.Equal(t, "a/b", dir)
+	assert.Equal(t, "c.html", name)
+
+	dir, name = SplitTestPath("a/b/c.html?x=/y/z")
+	assert.Equal(t, "a/b", dir)
+	assert.Equal(t, "c.html?x=/y/z", name)
+}
+
+func TestGetYMLFilePath_Variant(t *testing.T) {
+	assert.Equal(t, "a/b/META.yml", getYMLFilePath("a/b/c.html?url=/d/e"))
+}
