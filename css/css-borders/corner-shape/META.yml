@@ -896,3 +896,18 @@ links:
   - subtest: e.style['corner'] = "10px bevel" should not set unrelated longhands
     test: corner-valid.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=2093685
+- product: firefox
+  results:
+  - subtest: 'corner-shape: notch with shape-outside'
+    test: corner-shape-outside-left.html
+  - subtest: 'corner-shape: bevel with shape-outside'
+    test: corner-shape-outside-left.html
+  - subtest: 'corner-shape: notch bevel with shape-outside'
+    test: corner-shape-outside-left.html
+  - subtest: 'corner-shape: scoop with shape-outside'
+    test: corner-shape-outside-left.html
+  - subtest: 'corner-shape: superellipse(1.5) with shape-outside'
+    test: corner-shape-outside-left.html
+  - subtest: 'corner-shape: superellipse(-.8) with shape-outside'
+    test: corner-shape-outside-left.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2095512
