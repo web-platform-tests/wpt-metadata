@@ -269,3 +269,13 @@ links:
       value
     test: overflow-clip-margin.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=2070465
+- product: firefox
+  results:
+  - subtest: e.style['line-clamp'] = "3 ellipsis auto" should set the property value
+    test: line-clamp-valid.html
+  - subtest: e.style['line-clamp'] = "auto ellipsis 3" should set the property value
+    test: line-clamp-valid.html
+  - subtest: e.style['line-clamp'] = "3 ellipsis auto -webkit-legacy" should set the
+      property value
+    test: line-clamp-valid.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2095363
