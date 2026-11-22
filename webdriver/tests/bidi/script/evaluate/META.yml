@@ -15,20 +15,24 @@ links:
   - test: strict_mode.py
   - test: user_activation.py
 - product: firefox_android
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1649374
   results:
-    - test: csp_tentative.py
-      subtest: test_default_src_unsafe_inline[promise eval]
-    - test: csp_tentative.py
-      subtest: test_default_src_unsafe_inline[async eval]
-    - test: csp_tentative.py
-      subtest: test_default_src_unsafe_inline[async eval from preload script]
+  - subtest: test_default_src_unsafe_inline[promise eval]
+    test: csp_tentative.py
+  - subtest: test_default_src_unsafe_inline[async eval]
+    test: csp_tentative.py
+  - subtest: test_default_src_unsafe_inline[async eval from preload script]
+    test: csp_tentative.py
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1649374
 - product: firefox
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1649374
   results:
-    - test: csp_tentative.py
-      subtest: test_default_src_unsafe_inline[async eval]
-    - test: csp_tentative.py
-      subtest: test_default_src_unsafe_inline[promise eval]
-    - test: csp_tentative.py
-      subtest: test_default_src_unsafe_inline[async eval from preload script]
+  - subtest: test_default_src_unsafe_inline[async eval]
+    test: csp_tentative.py
+  - subtest: test_default_src_unsafe_inline[promise eval]
+    test: csp_tentative.py
+  - subtest: test_default_src_unsafe_inline[async eval from preload script]
+    test: csp_tentative.py
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=1649374
+- product: firefox
+  results:
+  - test: exception_serialization_tentative.py
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2096018
