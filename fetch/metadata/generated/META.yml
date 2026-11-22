@@ -52,3 +52,23 @@ links:
   - subtest: sec-fetch-storage-access - Cross-site
     test: worker-dedicated-importscripts.https.sub.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=1936389
+- product: firefox
+  results:
+  - test: audioworklet.https.sub.html
+  - subtest: sec-fetch-site - Cross-Site -> Cross-Site
+    test: audioworklet.https.sub.html
+  - subtest: sec-fetch-site - Same-Origin -> Same Origin
+    test: audioworklet.https.sub.html
+  - subtest: sec-fetch-site - Same-Site -> Same-Site
+    test: audioworklet.https.sub.html
+  - subtest: sec-fetch-mode
+    test: audioworklet.https.sub.html
+  - subtest: sec-fetch-dest
+    test: audioworklet.https.sub.html
+  - subtest: sec-fetch-user
+    test: audioworklet.https.sub.html
+  - subtest: sec-fetch-storage-access - Cross-site
+    test: audioworklet.https.sub.html
+  - subtest: sec-fetch-storage-access - Same site
+    test: audioworklet.https.sub.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2096184
