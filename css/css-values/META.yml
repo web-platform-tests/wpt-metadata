@@ -3813,3 +3813,8 @@ links:
       preserves attr taint
     test: attr-security-animation.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=2094486
+- product: firefox
+  results:
+  - subtest: ident() preserves animation taint so animation-name uses its fallback
+    test: ident-function-taint-animation.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2096066
