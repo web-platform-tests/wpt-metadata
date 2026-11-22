@@ -224,3 +224,20 @@ links:
   - subtest: getBBox on rect inside mask returns the rect it would have if rendered
     test: SVGGraphicsElement.getBBox-07.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=2092074
+- product: firefox
+  results:
+  - subtest: 'rect rx: valueAsString = "-20" does not throw'
+    test: SVGLength-invalid-value-no-throw.html
+  - subtest: 'rect ry: valueAsString = "-20" does not throw'
+    test: SVGLength-invalid-value-no-throw.html
+  - subtest: 'rect width: valueAsString = "-20" does not throw'
+    test: SVGLength-invalid-value-no-throw.html
+  - subtest: 'rect height: valueAsString = "-20" does not throw'
+    test: SVGLength-invalid-value-no-throw.html
+  - subtest: 'ellipse rx: valueAsString = "-20" does not throw'
+    test: SVGLength-invalid-value-no-throw.html
+  - subtest: 'ellipse ry: valueAsString = "-20" does not throw'
+    test: SVGLength-invalid-value-no-throw.html
+  - subtest: 'circle r: valueAsString = "-20" does not throw'
+    test: SVGLength-invalid-value-no-throw.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2096279
