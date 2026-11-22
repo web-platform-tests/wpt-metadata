@@ -169,3 +169,9 @@ links:
   - subtest: 'overflow: visible; ancestor overflow: hidden; transform: translateX(0)'
     test: hit-test-overflow-clipped-scope.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=2090802
+- product: firefox
+  results:
+  - subtest: '::part() rule with view-transition-name: auto does not use shadow element
+      id even when ShadowRoot is in shadowRoots'
+    test: shadow-roots-auto-and-match-element.tentative.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2096258
