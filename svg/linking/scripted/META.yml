@@ -1,45 +1,60 @@
 links:
 - product: chrome
-  url: https://crbug.com/873988
   results:
   - test: a.rel-getter-01.svg
   - test: rellist-feature-detection.svg
+  url: https://crbug.com/873988
 - product: chrome
-  url: https://bugs.chromium.org/p/chromium/issues/detail?id=1052202
   results:
   - test: href-animate-element.html
   - test: href-mpath-element.html
+  url: https://bugs.chromium.org/p/chromium/issues/detail?id=1052202
 - product: firefox
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2005594
   results:
-  - test: xlink-href-compat.html
-    subtest: XLink 'href' backwards compatibility, IDL href backed by "href" after
+  - subtest: XLink 'href' backwards compatibility, IDL href backed by "href" after
       baseVal setter.
-  - test: xlink-href-compat.html
-    subtest: XLink 'href' backwards compatibility, IDL href reflects "href"; setAttribute(xlink:href)
+    test: xlink-href-compat.html
+  - subtest: XLink 'href' backwards compatibility, IDL href reflects "href"; setAttribute(xlink:href)
       does not override baseVal setter.
+    test: xlink-href-compat.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2005594
 - product: firefox
-  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2083942
   results:
-  - test: a.target-dynamic-update.html
-    subtest: Clicking the original <a> uses the updated target
+  - subtest: Clicking the original <a> uses the updated target
+    test: a.target-dynamic-update.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2083942
 - product: safari
-  url: https://bugs.webkit.org/show_bug.cgi?id=314728
   results:
   - test: a-hyperlinkutils-getter.html
   - test: a-hyperlinkutils-getter-setter.html
+  url: https://bugs.webkit.org/show_bug.cgi?id=314728
 - product: safari
-  url: https://bugs.webkit.org/show_bug.cgi?id=298271
   results:
-  - test: a-download-click.svg
-    subtest: Clicking on an <a> element with a download attribute must not throw an
+  - subtest: Clicking on an <a> element with a download attribute must not throw an
       exception
+    test: a-download-click.svg
+  url: https://bugs.webkit.org/show_bug.cgi?id=298271
 - product: safari
-  url: https://bugs.webkit.org/show_bug.cgi?id=320555
   results:
   - test: href-animate-element.html
   - test: href-mpath-element.html
+  url: https://bugs.webkit.org/show_bug.cgi?id=320555
 - product: safari
-  url: https://bugs.webkit.org/show_bug.cgi?id=316487
   results:
   - test: xlink-href-compat.html
+  url: https://bugs.webkit.org/show_bug.cgi?id=316487
+- product: firefox
+  results:
+  - subtest: 'pathname setter, attributes: xlink, href read first'
+    test: a-hyperlinkutils-setter-href-xlink-href.html
+  - subtest: 'search setter, attributes: xlink, href read first'
+    test: a-hyperlinkutils-setter-href-xlink-href.html
+  - subtest: 'hash setter, attributes: xlink, href read first'
+    test: a-hyperlinkutils-setter-href-xlink-href.html
+  - subtest: 'pathname setter, attributes: xlink, xlink:href read first'
+    test: a-hyperlinkutils-setter-href-xlink-href.html
+  - subtest: 'search setter, attributes: xlink, xlink:href read first'
+    test: a-hyperlinkutils-setter-href-xlink-href.html
+  - subtest: 'hash setter, attributes: xlink, xlink:href read first'
+    test: a-hyperlinkutils-setter-href-xlink-href.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2096327
