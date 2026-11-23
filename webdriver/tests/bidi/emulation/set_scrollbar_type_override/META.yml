@@ -113,3 +113,20 @@ links:
           subtest: test_navigation[same_origin]
         - test: contexts.py
           subtest: test_navigation[cross_origin]
+        - test: scrollbar_type.py
+          subtest: test_scrollbar_type_overlay
+        - test: scrollbar_type.py
+          subtest: test_scrollbar_type_classic
+        - test: scrollbar_type.py
+          subtest: test_existing_page_scrollbar
+        - test: scrollbar_type.py
+          subtest: test_existing_element_scrollbar[scrollable]
+        - test: scrollbar_type.py
+          subtest: test_existing_element_scrollbar[not_scrollable]
+    - product: firefox_android
+      url: https://bugzilla.mozilla.org/show_bug.cgi?id=2017866
+      results:
+        - test: scrollbar_type.py
+          subtest: test_scrollbar_type_overlay
+        - test: scrollbar_type.py
+          subtest: test_scrollbar_type_classic
