@@ -289,3 +289,14 @@ links:
   results:
   - test: collapsed-border-background-inset.html
   url: https://bugzilla.mozilla.org/show_bug.cgi?id=2092279
+- product: firefox
+  results:
+  - subtest: 'start-inside: start-inside-second starts within start-inside-spanning'
+    test: col-offsetwidth-span-starting-inside-spanning-cell.html
+  - subtest: 'middle: last col matches middle-single'
+    test: col-offsetwidth-span-starting-inside-spanning-cell.html
+  - subtest: 'colgroup-children: colgroup-children-second starts within colgroup-children-spanning'
+    test: col-offsetwidth-span-starting-inside-spanning-cell.html
+  - subtest: 'colgroup-span: colgroup-span-second starts within colgroup-span-spanning'
+    test: col-offsetwidth-span-starting-inside-spanning-cell.html
+  url: https://bugzilla.mozilla.org/show_bug.cgi?id=2096861
