@@ -64,3 +64,10 @@ links:
       results:
         - test: shadow-relatedTarget.html
           subtest: relatedTarget should not leak at capturing phase, at window object.
+    - product: chrome
+      url: https://issues.chromium.org/issues/589879041
+      results:
+        - test: EventListener-handleEvent-not-callable-after-caught-exception.html
+          subtest: reports a TypeError when a previous listener caught an exception
+        - test: EventListener-handleEvent-not-callable-after-caught-exception.html
+          subtest: reports a TypeError when the handleEvent getter caught an exception before returning a non-callable value
